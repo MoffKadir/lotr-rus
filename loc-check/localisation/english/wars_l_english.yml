@@ -72,7 +72,7 @@
  CLAIMANT_WAR_NAME:2 "War for [CLAIMANT.GetTitledFirstNamePossessive] Claim on the [TITLE.GetBaseName]"
  depose_war:0 "Depose"
  claim_cb:0 "Claim"
- claim_cb_victory_desc_attacker_claimant:1 "You gain the contested [title|E]."         #LoTR
+ claim_cb_victory_desc_attacker_claimant:1 "You gain the contested [title|E]."
  claim_cb_victory_desc_attacker:1 "[claimant.GetShortUIName|U] gains the contested [title|E]."
  claim_cb_victory_desc:1 "[claimant.GetShortUIName|U] gains the contested [title|E]."
  claim_cb_white_peace_desc_defender:1 "You keep the contested [title|E]."
@@ -162,7 +162,7 @@
  de_jure_cb_defeat_desc_defender:0 "You keep the contested titles. [attacker.GetShortUIName|U] must pay you war reparations."
  de_jure_cb_defeat_desc_attacker:0 "[defender.GetShortUIName|U] keeps the contested titles. You must pay [defender.GetHerHim] war reparations."
  de_jure_cb_defeat_desc:0 "[defender.GetShortUIName|U] keeps the contested titles, and [attacker.GetShortUIName] must pay [defender.GetHerHim] war reparations."
- individual_county_de_jure_cb_victory_desc_attacker:0 "You gain the contested [county|E]."         #LoTR
+ individual_county_de_jure_cb_victory_desc_attacker:0 "You gain the contested [county|E]."
  individual_county_de_jure_cb_victory_desc:0 "[attacker.GetShortUIName|U] gains the contested [county|E]."
  individual_county_de_jure_cb_white_peace_desc_defender:0 "You keep the contested [county|E]."
  individual_county_de_jure_cb_white_peace_desc:0 "[defender.GetShortUIName|U] keeps the contested [county|E]."
@@ -325,7 +325,7 @@
  invasion_war_white_peace_desc:0 "[defender.GetShortUIName|U] keeps [defender.GetHerHis] titles."
  clan_invasion_war_victory_desc_attacker:0 "You vassalize all titles within [defender.GetShortUINamePossessive] realm belonging [de_jure|E] to the target title."
  clan_invasion_war_victory_desc:0 "[attacker.GetShortUIName|U] vassalizes all titles within [defender.GetShortUINamePossessive] realm belonging [de_jure|E] to the target title."
- invasion_war_warning_desc:1 "\n\n#X You may only attempt one invasion [war|E] against a [kingdom|E]-tier [title|E] per lifetime#!"
+ invasion_war_warning_desc:1 "\n\n#X You may only attempt one invasion [war|E] against a [kingdom|E]-tier [title|E] per lifetime."
  hungarian_invasion_war_victory_desc_attacker:0 "You seize all titles within [defender.GetShortUINamePossessive] realm in the Pannonian Basin. All lands outside of this will be abandoned."
  hungarian_invasion_war_victory_desc:0 "Seizes all titles within [defender.GetShortUINamePossessive] realm in the Pannonian Basin. All lands outside of this will be abandoned."
  hungarian_invasion_war_warning_desc:0 "\n\n#X The Migration may only be attempted once per campaign by anyone at all.#!"
@@ -537,6 +537,7 @@
 
  fp3_install_loyalist_cb: "Install Loyalist"
  fp3_install_loyalist_cb_cooldown_trigger: "You may only use this [casus_belli|E] once a year!"
+ fp3_install_loyalist_cb_no_valid_puppet: "@warning_icon! As there are no valid [vassals|E] to use as puppets, you will find a [Concept('lowborn','local')|E] leader to act as puppet! This will cost additional [prestige|E], and will increase friction within the [defender.GetPrimaryTitle.GetName|U]."
  fp3_install_loyalist_cb_victory_desc: "The [ruler|E] of [defender.GetPrimaryTitle.GetBaseName|U] is deposed and replaced with a [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] of the Caliph."
  fp3_install_loyalist_cb_defeat_desc: "[defender.GetPrimaryTitle.GetName|U] remains under the impartial rule of [defender.GetShortUIName|U]."
  cb_rejected_caliph_discount: "Rejected the Caliph's authority"
@@ -589,7 +590,7 @@
  fp3_seljuk_horde_army_title: "Nomadic Settler Group"
  fp3_seljuk_invasion_cb: "$fp3_seljuk_invasion_cb_name$"
  fp3_seljuk_invasion_cb_name: "Nomadic Invasion"
- fp3_seljuk_invasion_war_name: "Seljuk $fp3_seljuk_invasion_cb_name$ of [TITLE.GetNameNoTier]"
+ fp3_seljuk_invasion_war_name: "Seljuk $fp3_seljuk_invasion_cb_name$"
  #Seljuk Victory
  fp3_seljuk_invasion_cb_victory_desc: "The $fp3_seljuk_horde_title_title$ take the contested [titles|E] by force."
  fp3_seljuk_invasion_cb_victory_desc_attacker: "You take the contested [titles|E] by force."
