@@ -13,14 +13,14 @@
  innovation_numenorean_heritage_desc:0 "И хотя нам не достигнуть высот наших нуменорских праотцев, мы всё еще имеем преимущество перед остальными народами Средиземья."
  innovation_lesser_numenorean_heritage:0 "Угасшее нуменорское наследие"
  innovation_lesser_numenorean_heritage_desc:0 "Хотя эта культура и существенно отклонилась от образца жизни своих нуменорских праотцев, в ней по-прежнему сохраняется их мудрость, а знания жителей потерянного острова не утеряны."
- dunedain_rangers:0 "Следопыты дунэдайн"
- dunedain_rangers_flavor:0 "Воители мрачного образа, облаченные в серое с зеленым, следопыты севера — одни из немногих оставшихся дунэдайн на севере."
-  
-  #MaA 
-  
-  ### Gondor ### 
- #innovation_gondorian_soldiers:0 "Солдаты Гондора"
- #innovation_gondorian_soldiers_desc:0 "Гондорские солдаты отличаются отличной подготовкой и первоклассным снаряжением."
+
+ innovation_lords_of_the_westlands:0 "Владыки земель Запада"
+ innovation_lords_of_the_westlands_desc:0 "Восстав, как феникс из пепла, дунэдайн установили свое господство в землях Запада, и под их управлением наступила новая эра мира."
+ #MaA 
+
+ ### Gondor ### 
+ innovation_gondorian_soldiers:0 "Солдаты Гондора"
+ innovation_gondorian_soldiers_desc:0 "Гондорские солдаты отличаются отличной подготовкой и первоклассным снаряжением."
  #innovation_gondorian_soldiers_02:0 "Элитная гвардия Гондора"
  #innovation_gondorian_soldiers_02_desc:0 "Рыцари и рейнджеры Гондора отважно сражаются со всеми врагами своего королевства за каждую пядь гондорской земли."
  #innovation_gondorian_wardens_of_the_white_tower:0 "Стража Белой Башни"
@@ -31,7 +31,18 @@
  innovation_silver_swan_desc:0 "Закаленные клятвами и идеалами былых времен, Рыцари Серебряного Лебедя являются воплощением всех людских добродетелей."
  innovation_numenorean_warriors:0 "Солдаты Нуменора"
  innovation_numenorean_warriors_desc:0 "Солдаты Нуменора, благословленные мудростью и мастерством эльдар и учениями Эонвэ, стоили в бою двадцати простых людей. Их стальные луки внушали ужас противостоящим им, и немногие противники были способны пробить их броню."
-  
+
+ innovation_dunedain_warriors:0 "Soldiers of the Dúnedain"
+ innovation_dunedain_warriors_desc:0 "The Dúnedain retain much of the strength and wisdom of their Númenorean forefathers, and field among the fiercest armies in all of Middle-earth."
+ dunedain_archers:0 "Dúnedain Archers"
+ dunedain_archers_flavor:0 "Many wielding the steelbows of their forefathers, the Dúnedain unleash a hail of steel."
+ dunedain_knights:0 "Dúnedain Horsemen"
+ dunedain_knights_flavor:0 "In the wide plains of Middle-erath, the Dúnedain have taken up the bridle and now stand astride steeds bearing steel hides."
+ dunedain_soldiers:0 "Dúnedain Soldiers"
+ dunedain_soldiers_flavor:0 "With mighty swords and heavy armor, the Dúnedain march forth to ensure their place in Middle-earth."
+ dunedain_elites:0 "Araduir-i-Dúnedain"
+ dunedain_elites_flavor:0 "The High-Lords of the Dúnedain, their lineages ancient beyond count, stand as among the mightiest of Men in all of Middle-earth."
+
  gondorian_vale_archers:0 "Лучники Долины"
  gondorian_vale_archers_flavor:0 "Признанные мастера стрельбы из лука, лучники внутренних земель Гондора известны своими устрашающими залпами."
  #gondorian_knights:0 "Gondorian Knights"
@@ -133,12 +144,36 @@
  numenorean_elites_flavor:0 "Элитная гвардия Нуменора, в тяжелой броне и с мечами, исписанными заклятьями."
  numenorean_knights:0 "Рыцари Нуменора"
  numenorean_knights_flavor:0 "Рыцари Нуменора, в тяжелой броне, на породистых скакунах и с мечами, исписанными заклятьями."
-  
-  # Dunedain of Arnor 
+
+ # Arnorian 
+ innovation_arnorian_soldiers:0 "Soldiers of Arnor"
+ innovation_arnorian_soldiers_desc:0 "The soldiers of the North-Kingdom are fewer in number compared to those of Gondor, emphasizing defensive tactics."
+ arnorian_soldiers:0 "Arnorian Soldiers"
+ arnorian_soldiers_flavor:0 "The foot-soldiers of Arnor, these warriors are known for their heavy armor and ability with spear, shield, and sword."
+ arnorian_bowmen:0 "Arnorian Bowmen"
+ arnorian_bowmen_flavor:0 "Arnor possesses a long tradition of archery, in hunting, recreation, and in warfare. The most skilled and strong of the Arnorians are rumored to even wield heirloom steelbows."
+ arnorian_cavalry:0 "Arnorian Cavalry"
+ arnorian_cavalry_flavor:0 "In comparison to Gondor, the wide plains of Arnor led to a swift adopting of cavalry in both civil and military life. The cavalry of Arnor, while not the greatest in the world, is known for their fine breeding and well-equipped nature."
+ wardens_of_annuminas:0 "Wardens of Annúminas"
+ wardens_of_annuminas_flavor:0 "An elite of an elite, the Wardens of Annúminas are the guardians of the city of Elendil, pulling from the greatest warriors of the Dúnedain."
+ culture_parameter_unlock_maa_arnorian_soldiers:0 "Can recruit [GetMaA('arnorian_soldiers').GetName] as [men_at_arms|E]."
+ culture_parameter_unlock_maa_arnorian_bowmen:0 "Can recruit [GetMaA('arnorian_bowmen').GetName] as [men_at_arms|E]."
+ culture_parameter_unlock_maa_arnorian_cavalry:0 "Can recruit [GetMaA('arnorian_cavalry').GetName] as [men_at_arms|E]."
+ culture_parameter_unlock_maa_wardens_of_annuminas:0 "Rulers of [GetTitleByKey('e_arnor').GetNameNoTier] can recruit [GetMaA('wardens_of_annuminas').GetName] as [men_at_arms|E]."
+
+ # Dúnedain of Arnor
  grey_company:0 "Серая Дружина"
  grey_company_desc:0 "Возглавляемая Хальбарадом из рода Арагорна, Серая Дружина включает в себя отважнейших следопытов и воинов из северных дунэдайн. В их жилах течет истинная кровь нуменорцев, и те, кто хочет выжить, бегут перед лицом их гнева."
-  
-  
+ dunedain_rangers:0 "Следопыты дунэдайн"
+ dunedain_rangers_flavor:0 "Воители мрачного образа, облаченные в серое с зеленым, следопыты севера — одни из немногих оставшихся дунэдайн на севере."
+ dunedain_wardens:0 "Dúnedain Wardens"
+ dunedain_wardens_flavor:0 "With spear and shield in hand, these rangers keep foes at bay while their bow wielding brethren deal the killing strike."
+ dunedain_outriders:0 "Dúnedain Outriders"
+ dunedain_outriders_flavor:0 "Speed is required to patrol the vast and wild lands of Eriador. These Dúnedain are well suited to long and arduous journeys, with only their mounts for company."
+ 
+ innovation_dunedain_ranger_warfare:0 "Dúnedain Ranger Warfare"
+ innovation_dunedain_ranger_warfare_desc:0 "Grim in appearance and clad in grey and dark green, the Rangers of the North are amongst the last remnant of the Dúnedain of the North."
+
  #black_numenorean_knights:0 "Naru n'Aru Royal Knights"
  #black_numenorean_knights_flavor:0 "Knights of Númenor, bearing heavy armour, well bred horses, and weapons wrought with spells of power."
  #black_numenorean_elites:0 "Naru n'Aru Royal Guard"
@@ -207,8 +242,27 @@
  dunlending_axe_hunters_flavor:0 "Охота — необходимость, а не прихоть, но дичь в землях Дунланда редка и изворотлива. Эти охотники в равной мере умело обращаются с охотничьим ножом и метательным топором."
  dunlending_outriders:0 "Дунландские верховые"
  dunlending_outriders_flavor:0 "Дуннские верховые во многом не уступают всадникам Рохана. Они свирепы в своих молниеносных атаках."
-  
-  ### Gwaithurim ### 
+
+ ### hillmen ###
+ innovation_hillmen_warfare:0 "Hillmen Warfare"
+ innovation_hillmen_warfare_desc:0 "The hillmen of Rhudaur are well know for their combative nature. Wielding various axes with brutal efficientcy, they maintain their independant spirit under the harshest trials. and ruthlessly hack apart those who seek to dominate them."
+
+ innovation_advanced_hillmen_warfare:0 "Rhudaur Warfare"
+ innovation_advanced_hillmen_warfare_desc:0 "The armories of Cameth Brin equip the men of Rhudaur with a professional army. Adding some of the knowledge of the Dunedain to the ferocious might of the hills."
+
+ hillmen_heavy_infantry:0 "Hillman Berserkers"
+ hillmen_heavy_infantry_flavor:0 "Among the hillmen of Rhudaur, there are none more feared than these champions of the hills. Renowned for their strength and skill in the heat of battle. Few men chose to face them"
+ hillmen_heavy_infantry_unlock:0 "Rhudaur Footmen"
+ hillmen_heavy_infantry_unlock_flavor:0 "look at them there hill bois"
+ hillmen_light_cavalry:0 "Hill horse"
+ hillmen_light_cavalry_flavor:0 "E is on da orse an' in da hills"
+ hillmen_skirmishers:0 "Hillmen"
+ hillmen_skirmishers_flavor:0 "Tribal hosts of eager, axe wielding clansmen can be gathered by any would be lord of Rhudaur "
+ hillmen_pikemen:0 "Troll Hunters"
+ hillmen_pikemen_flavor:0 "The hills of Rhudaur are a monstrous wilderness. Wargs and trolls spill forth from the mountains and these brave men of the hills safeguard the homes of their people. Armed with longspears. The Troll Hunters slay any beast for the glory of Rhudaur"
+
+
+ ### Gwaithurim ### 
  innovation_gwathuirim_warriors:0 "Воины гватуирим"
  innovation_gwathuirim_warriors_desc:0 "Гватуирим, часто совершающие набеги на соседей, являются носителями воинственной культуры, способной взращивать настоящих бойцов. Каждый из них готов положить жизнь за свой дом."
  innovation_mountain_riders:0 "Всадники гор"
@@ -295,15 +349,15 @@
  gundabad_war_troll_flavor:0 "Эти массивные твари окованы грубым металлом и размахивают либо длинной деревянной дубиной, способной размазать даже самого сильного бойца в кашу, либо парой перчаток, острых как бритвы. Такими можно разрубить пополам не только человека, но и коня. Один вид столь яростного противника вселяет сомнение даже в самые отважные сердца."
  gundabad_ogres:0 "Гундабадские огры"
  gundabad_ogres_flavor:0 "Грубая монструозная порода, выведенная путём скрещивания малых троллей и крупных орков. Гундабадские огры служат в войсках Гундабада как ударные части. Эти чудовищные воины дерутся огромными деревянными дубинами, разбрасывая в стороны останки неудачливых врагов, которым довелось встать у них на пути."
-  
-  ### MILITARY ### 
-  
-  ### Umbar ### 
+
+ ### MILITARY ###
+
+ ### Umbar ### 
  innovation_corsair_traditions:0 "Пиратские традиции"
  innovation_corsair_traditions_desc:0 "Среди наших предков были как нуменорцы, так и народы Харада. Этот союз породил суровых мореплавателей, бич побережий!"
- culture_parameter_unlock_maa_black_numenorean_vanguard:0 "Могут нанимать [GetMaA('black_numenorean_vanguard').GetName] в качестве [Concept( 'men_at_arms', 'профессионалов' )|E]"
- black_numenorean_vanguard:0 "Авангард Черных нуменорцев"
- black_numenorean_vanguard_flavor:0 "Лучшие воинские части из Людей Короля, они несут свою службу до смерти и после."
+ # culture_parameter_unlock_maa_black_numenorean_vanguard:0 "Могут нанимать [GetMaA('black_numenorean_vanguard').GetName] в качестве [Concept( 'men_at_arms', 'профессионалов' )|E]"
+ # black_numenorean_vanguard:0 "Авангард Черных нуменорцев"
+ # black_numenorean_vanguard_flavor:0 "Лучшие воинские части из Людей Короля, они несут свою службу до смерти и после."
  culture_parameter_unlock_maa_corsair_warriors:0 "Могут нанимать [GetMaA('corsair_warriors').GetName] в качестве [Concept( 'men_at_arms', 'профессионалов' )|E]"
  corsair_warriors:0 "Корсары"
  corsair_warriors_flavor:0 "Для этих моряков-дебоширов, вооруженных короткими мечами и огненными бомбами нет другого начальника кроме звонкого кошелька."
@@ -353,7 +407,14 @@
  ### MORDOR ### 
  innovation_dark_servants:0 "Темные слуги"
  innovation_dark_servants_desc:0 "Темные слуги со всех уголков Средиземья."
-  
+
+ ## Goblins ##
+ innovation_goblin_warfare:0 "Goblin Tactics"
+ innovation_goblin_warfare_desc:0 "Goblins, or "Snagga" as they are often called by the larger orcs. Are a breed of small and gangly orcs. Often requiring guile and tact not seen in those of larger stature to win battles... Guile and numbers beyond counting."
+ goblin_skirmishers:0 "Snaga Stalkers"
+ goblin_skirmishers_flavor:0 "Quick, quiet and plentiful. The best and only good qualities of a Goblin. Quick enough to chase down any foe, quiet enough to slink through the dark with excellence and plentiful enough for there to always be more when failure befalls them."
+ goblin_warg_riders:0 "Warg Riders"
+ goblin_warg_riders_flavor:0 "Some Goblins are determined and reckless enough to convince Wargs to act as their mounts. A fair arangement. If the Goblins win, the Wargs have foes to eat. If the Goblins fail, no one will complain about a missing goblin body."
  ### BELLAKAR ### 
  #  innovation_bellakarean_warfare:0 "Bellakarean Warfare"
  #  innovation_bellakarean_warfare_desc:0 "Drawing upon Númenórean and indigenous military traditions, the Bellakari employ well-rounded armies drawing from every part of their multi-cultural society."
@@ -366,7 +427,7 @@
  culture_parameter_unlock_maa_bellanarud_auxiliaries:0 "Могут нанимать [GetMaA('bellanarud_auxiliaries').GetName] в качестве [Concept( 'men_at_arms', 'профессионалов' )|E]"
  bellanarud_auxiliaries:0 "Вспомогательные силы белланаруд"
  bellanarud_auxiliaries_flavor:0 "Сельское население Беллакара — белланаруд зачастую служит в качестве вспомогательного контингента во множестве ролей, дополняя профессиональное войско. Представители различных малых групп привносят свои лучшие умения и традиции."
-  
+ culture_parameter_can_make_oligarch_vassals:0 "Can turn Counts into Oligarch Vassals"
  ### TEDJIN ### 
  innovation_tedjin_warfare:0 "Военное дело теджин"
  innovation_tedjin_warfare_desc:0 "Теджин позаимствовали многое от своего восточного наследия и опыта наемников. В бою они предпочитают измотать соперника, а также зачастую используют точечные удары с последующим отступлением."
@@ -420,14 +481,22 @@
  innovation_druedain_warfare_desc:0 "В целом друэдайн — миролюбивый и незлобливый народ. Но если их спровоцировать, они готовы рвать и метать, защищая родную землю."
  innovation_honin_warfare:0 "Honin Warfare"
  innovation_honin_warfare_desc:0 "The Honin do not seek conflict with outsiders. They excel however, at defending the remnant of their home"
+ innovation_beffraen_warfare:0 "Beffraen Warfare"
+ innovation_beffraen_warfare_desc:0 "The Beffraen have long resented the men of the west for deforesting their once vast homeland. Slaying any who venture close to its remnants. Larger than other Druedain, due to past mixing with the Daen peoples, the Beffraen are willing and more than capable of violence that would leave their southern kin would be in awe."
  druedain_temple_guard:0 "Храмовая стража друэдайн"
  druedain_temple_guard_flavor:0 "Единственное место в землях друэдайн, где устанавливается постоянный караул — это храмы. Но эта стража носит скорее церемониальны, нежели практический характер."
  druedain_poison_archers:0 "Лучники-отравители друэдайн"
  druedain_poison_archers_flavor:0 "Если охотникам друэдайн предстоит стать лучниками в армии, они используют свое знание ядов и лесистой местности по максимуму. Не повезет врагу, который вторгнется в их земли."
  druedain_oku_tori:0 "Oku-Tori"
  druedain_oku_tori_flavor:0 "The Oku-Tori of the Suza Sumar are cruel and cunning predators. Ever hungering for heads, they venture across the vast jungle mimicking the sounds of creatures they hear to attract prey. They often fight alongside Honin willing to offer the skulls of the fallen. Their intelect and capacity for broken speach has led to many of the Honin that the Oku-Tori are divine fuzions of Honin and bird. Worshiping them as any divine being deserves."
-  
-  ### Rhun ### 
+ druedain_beffraen_skirmishers:0 "Beffraen Clansmen"
+ druedain_beffraen_skirmishers_flavor:0 "Violence is nearly always just around the corner in Eryn Vorn. Whether infighting amongst the clans, or slaying encroaching outsiders. The clans of the Beffraen are ever prepared for war."
+ druedain_beffraen_pikemen:0 "Beffraen Lurkers"
+ druedain_beffraen_pikemen_flavor:0 "Pioneered by the more dubious clans of the Beffraen, the Lurkers are called such by those foes lucky enough to survive. They wield wicked glaives, while concealed into their surroundings. Whether lone outrider, or noble knight, any rider would do well to watch themselves near Beffraen lands."
+ druedain_beffraen_heavy_infantry:0 "Eryn Vorn Champions"
+ druedain_beffraen_heavy_infantry_flavor:0 "Mixing with larger folk made the Beffraen large among Druedain. Those clansmen who live long enough, are tall enought and strong enough have been known to wield the weapons of their Gwathuirim neighbors. Claymores deadly enough when used by Saralain mercenaries and raiders, put to use by the best the Beffraen have to offer. Few see their approach and few who do fare any better."
+
+ ### Rhun ###
  innovation_warriors_rhun:0 "Warriors of Rhûn"
  innovation_warriors_rhun_desc:0 "The Easterlings who dwell around the Inland Sea of Rhûn have developed a rich history of warfare, favoring mobile cavalry in the wide plains supplemented by armored soldiery for occupation or pitched battle."
  easterling_pikemen:0 "Алебардисты истерлингов"
@@ -457,7 +526,19 @@
   
  innovation_spirits_pact:0 "Spirit Pact"
  innovation_spirits_pact_flavor:0 "Long ago this people made a pact with the spirits who dwelled in their lands, and now they dwell together in harmony, and work to enrich and defend their homes."
-  
-  ### Wastelands 
+
+ ### Dwarven Innovations ###
+ innovation_longbeard_warfare:0 "Longbeard Warfare"
+ innovation_longbeard_warfare_desc:0 "The Sigintarâg are Durin's house. Widely known as the strongest of the seven houses, awaking alone has done nothing to diminish their strength. The only house to adopt widespread usage of domesticated animals, the Longbeards field great ram riding cavalry and chariots. Their balanced approach to warfare lacks obvious weakness. Making the Sigintarâg a force to be feared."
+ innovation_firebeard_warfare:0 "Firebeard Warfare"
+ innovation_firebeard_warfare_desc:0 "The Sigintarâg are Durin's house. Widely known as the strongest of the seven houses, awaking alone has done nothing to diminish their strength. The only house to adopt widespread usage of domesticated animals, the Longbeards field great ram riding cavalry and chariots. Their balanced approach to warfare lacks obvious weakness. Making the Sigintarâg a force to be feared."
+ innovation_broadbeam_warfare:0 "Gabilgathol Traditions"
+ innovation_broadbeam_warfare_desc:0 ""Belegost" was one of the two great holds of the Blue Mountains. It has long been a crumbled and depopulated ruin and the days of wealth and opulence once overseen by legendary rulers like Azaghal are gone, yet those Dwarves to remain by their King must truly be worthy of respect both on and off the battlefield."
+ innovation_blacklock_warfare:0 "Naragzanât Eternal Vengeance"
+ innovation_blacklock_warfare_desc:0 "Blacklock Dwarves hold treachery close to heart. Their own treachery against their Stonefoot brothers and the treachery of Sauron that caused it. Blacklock society is geared for war. A war of vengeance that will only cease when the great enemy is destroyed, or the last Blacklock arrives in Aule's Halls."
+ innovation_stiffbeard_warfare:0 "Naragzanât Eternal Vengeance"
+ innovation_stiffbeard_warfare_desc:0 "Blacklock Dwarves hold treachery close to heart. Their own treachery against their Stonefoot brothers and the treachery of Sauron that caused it. Blacklock society is geared for war. A war of vengeance that will only cease when the great enemy is destroyed, or the last Blacklock arrives in Aule's Halls."
+
+ ### Wastelands
  tradition_wastelands_name:0 "Дикие земли"
  tradition_wastelands_desc:0 "Неиспользуемые земли, которые обратились в руины, были заброшены или заросли. Населения здесь почти нет, за исключением разве что нескольких пастухов, фермеров и рыбаков."

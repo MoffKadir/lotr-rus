@@ -83,6 +83,21 @@
  feature_brooch_adornment_tengwar:0 "в окружении кольца из [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('adornment_runed_ring_metal'))] с выгравированными [Concept( 'tengwar', 'тенгварскими' )|E] рунами"
  feature_brooch_adornment_cirth:0 "в окружении кольца из [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('adornment_runed_ring_metal'))] с выгравированными рунами [Concept( 'cirth', 'кирта' )|E]"
 
+ ### Crafting tools
+ 
+ artifact_crafting_tools_name:1 "$artifact_name_prefix$ Crafting Tools"
+ artifact_crafting_tools_description:3 "A set of crafting tools of [SCOPE.Custom('ArtifactQuality')] craftsmanship. [newly_created_artifact.Custom('ArtifactCraftingToolsHeadDescription')] [newly_created_artifact.Custom('ArtifactCraftingToolsShaftDescription')][newly_created_artifact.Custom('ArtifactCraftingToolsHandleDescription')]"
+ artifact_crafting_tools_head_undecorated:1 "The [ROOT.Artifact.GetFeatureText( 'head_metal' )] hammer head is mounted on"
+ artifact_crafting_tools_head_decorated:1 "The [ROOT.Artifact.GetFeatureText( 'head_metal' )] hammer head has been [ROOT.Artifact.GetFeatureText( 'head_decoration' )], and then mounted on"
+ artifact_crafting_tools_shaft_undecorated:1 "a sturdy [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] shaft."
+ artifact_crafting_tools_shaft_decorated:1 "an elegant [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] shaft that has been [ROOT.Artifact.GetFeatureText( 'shaft_decoration' )]."
+ artifact_crafting_tools_handle_undecorated:1 "It comes with a solid pair of tongs with [ROOT.Artifact.GetFeatureText( 'handle_metal' )] handles."
+ artifact_crafting_tools_handle_decorated:2 "It comes with an elegant pair of tongs with [ROOT.Artifact.GetFeatureText( 'handle_metal' )] handles that have been [ROOT.Artifact.GetFeatureText( 'metal_handle_decoration' )]."
+ 
+ inspiration_smith_type_crafting_tools:0 "set of crafting tools"
+ inspiration_smith_base_type_crafting_tools:0 "crafting tools"
+ artifact_crafting_tools:0 "Crafting tools"
+
  #LOTR books 
 
  feature_book_title_learning_ainulindale:0 "$artifact_name_prefix_artifact_scope$ [ainulindale|E]"
@@ -164,3 +179,11 @@
  feature_animal_hide_type_caragor:0 "свирепого карагора"
  feature_animal_skull_type_warg:0 "крупного острозубого варга"
  feature_animal_skull_type_caragor:0 "крупного острозубого карагора"
+
+### Triggers/Variables ###
+ artifact_has_ring_of_power_var:0 "Невозможно уничтожить [ringsofpower|E]."
+ artifact_has_silmaril_var:0 "Невозможно уничтожить [silmaril|E]"
+
+### New Slots ###
+
+ crafting_tools:0 "Инструменты"
