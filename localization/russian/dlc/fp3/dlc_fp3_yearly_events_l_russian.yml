@@ -463,8 +463,8 @@
  fp3_yearly.8033.c: "Вы правы. Я выделю золото на восстановление этих ледников."
  fp3_yearly.8033.d: "В следующий раз обращайтесь ко мне с #italic настоящими#! проблемами."
 
- fp3_yearly.8034.t: "Клад балхотов"
- fp3_yearly.8034.desc: "«Выслушайте меня, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleTierName], — молит меня [wronged_vassal.GetName]. — Месяц назад я [Select_CString(wronged_vassal.IsFemale, 'осматривала', 'осматривал' )] земли вдоль реки во владении [hephthalite_hoard_province.GetNameNoTier] и [Select_CString(wronged_vassal.IsFemale, 'наткнулась', 'наткнулся' )] на великолепный золотой клад. На монетах были изображены цари с удлиненными черепами. Должно быть, это сокровище было спрятано балхотами, возможно, царским кланом, которые правили этими землями в недавнем прошлом. Поскольку я [Select_CString(wronged_vassal.IsFemale, 'первой нашла', 'первым нашел' )] эти сокровища, думаю, я имею полное право забрать их себе. Но мой сюзерен [greedy_vassal.GetTitledFirstName] оспаривает мое право. [greedy_vassal.GetSheHe|U] пытается отнять у меня сокровища, заявляя, что является преемником балхотов по праву владения этими землями. Я прошу вас о поддержке»."
+ fp3_yearly.8034.t: "Клад балхот"
+ fp3_yearly.8034.desc: "«Выслушайте меня, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleTierName], — молит меня [wronged_vassal.GetName]. — Месяц назад я [Select_CString(wronged_vassal.IsFemale, 'осматривала', 'осматривал' )] земли вдоль реки во владении [hephthalite_hoard_province.GetNameNoTier] и [Select_CString(wronged_vassal.IsFemale, 'наткнулась', 'наткнулся' )] на великолепный золотой клад. На монетах были изображены цари с удлиненными черепами. Должно быть, это сокровище было спрятано балхот, возможно, царским кланом, которые правили этими землями в недавнем прошлом. Поскольку я [Select_CString(wronged_vassal.IsFemale, 'первой нашла', 'первым нашел' )] эти сокровища, думаю, я имею полное право забрать их себе. Но мой сюзерен [greedy_vassal.GetTitledFirstName] оспаривает мое право. [greedy_vassal.GetSheHe|U] пытается отнять у меня сокровища, заявляя, что является преемником балхот по праву владения этими землями. Я прошу вас о поддержке»."
  fp3_yearly.8034.a: "Проблема решается просто — #italic я#! заберу золото."
  fp3_yearly.8034.b: "Пусть [greedy_vassal.GetFirstNameNoTooltip] забирает себе сокровища."
  fp3_yearly.8034.c: "Нужен компромисс — отдайте сокровища жителям владения [hephthalite_hoard_province.GetNameNoTierNoTooltip]."
@@ -485,67 +485,82 @@
  fp3_yearly.8036.b: "Скорее покинем это место и поищем охрану..."
  fp3_yearly.8036.c: "Успокойтесь, [superstitious_councillor.GetFirstNameNoTooltip]. Это просто тени и пыль."
  fp3_yearly.8036.d: "Стоит прочесть молитву, на всякий случай."
+
  fp3_yearly.8037.t: "Лекарство от уныния"
  fp3_yearly.8037.desc: "Я бесцельно брожу по залитому лунным светом коридору, когда ко мне подходит [Select_CString(court_physician.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('court_physician'))] [court_physician.GetTitledFirstName].\n\n«[Select_CString(ROOT.Char.IsFemale, 'Великая', 'Великий' )] [ROOT.Char.GetTitleTierName], — говорит [court_physician.GetSheHe]. — В последнее время вы выглядите подавленно. Я не [Select_CString(court_physician.IsFemale, 'удержалась и попыталась', 'удержался и попытался' )] поставить вам диагноз... полагаю, вы страдаете от уныния, крайне неприятного и тоскливого состояния, которое часто охватывает отшельников и мудрецов. Но есть [Select_CString(persian_polymath.IsFemale, 'одна ученая, ее', 'один ученый, его' )] зовут [persian_polymath.GetName]. [persian_polymath.GetSheHe|U] превосходит меня как врач и недавно [Select_CString(persian_polymath.IsFemale, 'написала', 'написал' )] книгу о болезнях разума. Возможно, [persian_polymath.GetSheHe] сумеет вам помочь»."
  fp3_yearly.8037.a: "Пригласите [Select_CString(persian_polymath.IsFemale, 'ее', 'его' )] сюда и не жалейте средств."
  fp3_yearly.8037.b: "Оставьте меня в покое."
+
  fp3_yearly.8038.t: "Черная желчь"
- fp3_yearly.8038.desc: "Понаблюдав за мной какое-то время, [persian_polymath.GetFirstName] выносит диагноз.\n\n«Все дело в переизбытке черной желчи в мозгу, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleTierName|l]. Даже древние понимали причину этого состояния, но мыслители Хорасана и Хорезма уделили ей особое внимание. Мы назвали это состояние #italic «Малихулия»#!, и оно лишает вас радости и повергает в тоску. Некоторые пациенты теряют аппетит или уподобляются животным, но могут и просто обрести склонность к новаторству и размышлениям, что, пожалуй, уже не так плохо».\n\n«Но мы отклонились от темы... вы готовы попробовать диету из соленой рыбы и стеблей сельдерея? По моему опыту, это может помочь»."
+ fp3_yearly.8038.desc: "Понаблюдав за мной какое-то время, [persian_polymath.GetFirstName] выносит диагноз.\n\n«Все дело в переизбытке черной желчи в мозгу, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleTierName|l]. Даже древние понимали причину этого состояния, но мыслители [Concept( 'gondor', 'Гондора' )|E] уделили ей особое внимание. Мы назвали это состояние #italic «Наэргон»#!, и оно лишает вас радости и повергает в тоску. Некоторые пациенты теряют аппетит или уподобляются животным, но могут и просто обрести склонность к новаторству и размышлениям, что, пожалуй, уже не так плохо».\n\n«Но мы отклонились от темы... вы готовы попробовать диету из соленой рыбы и стеблей сельдерея? По моему опыту, это может помочь»."
  fp3_yearly.8038.a: "Хорошо, я попробую."
  fp3_yearly.8038.b: "#italic Это#! ваше лучшее лечение? Я поищу другого врача..."
  lackluster_diet.tt: "Вы не сможете использовать [Concept( 'decision', 'решение' )|E] «Предаться обжорству» во время диеты"
+
  fp3_yearly.8039.t: "Травы и гуморы"
  fp3_yearly.8039.desc: "[persian_polymath.GetFirstName] выглядит задумчиво. «Предписанная мной диета не оказала видимого воздействия, [ROOT.Char.GetLadyLord|l]. Но не спешите искать спасения в луне и звездах, в амулетах и прочих примитивных лекарствах. От них проку не будет. Я могу предложить вам каждый день употреблять определенные лекарственные травы: стебельки фенхеля, огурцы и ладан. Они могут помочь против черной желчи, восстановят баланс гуморов и укрепят ваши духовные силы, что пойдет вам только на пользу»."
  fp3_yearly.8039.a: "Стоит попытаться."
  fp3_yearly.8039.b: "Я верю в назначенную диету и предпочту поддерживать ее чуть дольше."
  fp3_yearly.8039.c: "Мне надоели ваши недействующие лекарства. Оставьте меня."
+
  fp3_yearly.8040.t: "Духовная сила"
  fp3_yearly.8040.desc: "«Увы, [ROOT.Char.GetLadyLord|l], — говорит [persian_polymath.GetFirstName], — хоть мы и наблюдаем улучшение вашего настроения и здравия, вашу меланхолию вылечить пока не удалось. Болезни разума легко не сдаются. Но у нас еще есть неопробованные методы. В своей книге я отмечаю, что человеческая душа является независимой системой, влияющей на телесный аспект. Мы должны укрепить вашу духовную силу, доказав вашему подсознанию, что дух вечен и неподвластен смерти. Проще говоря, вы должны подтвердить, что [ROOT.GetCharacter.GetFaith.HighGodNameAlternate] для вас превыше всего»."
- fp3_yearly.8040.a: "Я обращусь к суфийским учениям."
+ fp3_yearly.8040.a: "Я обращусь к мистическим учениям."
  fp3_yearly.8040.b: "[court_chaplain.GetTitledFirstName] даст мне совет."
  fp3_yearly.8040.c: "Моя вера непоколебима. За кого вы меня принимаете?"
  fp3_yearly.8040.d: "Это бесполезно. Уходите и продавайте свое «лечение» другим."
  fp3_refusing_faith_treatment_flavor: "Вы отказываетесь от лечения, но [persian_polymath.GetFirstNameNoTooltip] может продолжить попытки."
+
  fp3_yearly.8041.t: "Покой молчания"
- fp3_yearly.8041.desc: "«Это будет непростой путь», — объявляет [sufi_mystic.GetName], услышав о моих трудностях.\n\n«Традиции суфийской школы #italic тариката#! могут помочь вам познать себя и вселенную, но для этого требуется невероятная дисциплина. Я стою лишь в начале этого пути. Тем не менее, [ROOT.Char.GetTitleTierName], мы можем попытаться достичь медитативного состояния #italic фана#!, когда вы становитесь лишь каплей воды во сне [ROOT.GetCharacter.GetFaith.HighGodNameAlternatePossessive], ощущая раскинувшийся вокруг вас океан. Думаю, это поможет вам иначе взглянуть на эту мимолетную жизнь»."
+ fp3_yearly.8041.desc: "«Это будет непростой путь», — объявляет [sufi_mystic.GetName], услышав о моих трудностях.\n\n«Традиции мистиков могут помочь вам познать себя и вселенную, но для этого требуется невероятная дисциплина. Я стою лишь в начале этого пути. Тем не менее, [ROOT.Char.GetTitleTierName], мы можем попытаться достичь медитативного состояния, когда вы становитесь лишь каплей воды во сне [ROOT.GetCharacter.GetFaith.HighGodNameAlternatePossessive], ощущая раскинувшийся вокруг вас океан. Думаю, это поможет вам иначе взглянуть на эту мимолетную жизнь»."
  fp3_yearly.8041.a: "Я [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов' )]."
  fp3_yearly.8041.b: "Я лучше поищу другое лекарство..."
+
  fp3_yearly.8042.t: "Бессмертный дух"
  fp3_yearly.8042.desc: "«Истинно так, — говорит [Select_CString(court_chaplain.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('court_chaplain'))] [court_chaplain.GetFirstName], — тяготы и невзгоды нашей земной жизни преходящи, но ваш дух вечен. Но я пойму, [ROOT.Char.GetLadyLord|l], если одних этих слов будет мало, чтобы вас успокоить».\n\n[court_chaplain.GetSheHe|U] разворачивает свиток. «Это [ROOT.Char.GetFaith.ReligiousText2], малая часть, что записали святые [ROOT.Char.Custom('LevyMenWomen')], мудростью превосходящие нас. Здесь в красках описана посмертная жизнь, а в стихах могут содержаться намеки на смысл бытия. Я предлагаю вам ознакомиться с этим текстом, при необходимости несколько раз, чтобы успокоить вашу душу. Но если чтение вам не по нраву, возможно, [ROOT.Char.GetFaith.HouseOfWorship|l] станет отличным местом, чтобы услышать глас [ROOT.GetCharacter.GetFaith.HighGodNamePossessive]»."
  fp3_yearly.8042.a: "Хватит и текста."
  fp3_yearly.8042.b: "Пожалуй, [ROOT.Char.GetFaith.HouseOfWorship] мне больше по душе."
  fp3_yearly.8042.c: "Похоже, вы все же не сможете мне помочь."
+
  fp3_yearly.8043.t: "Конец лечения"
- fp3_yearly.8043.desc: "[persian_polymath.GetFirstName] уже несколько недель задумчиво наблюдает за мной.\n\n«Увы, [ROOT.Char.GetTitleTierName|l], у меня закончились идеи. Я [Select_CString(persian_polymath.IsFemale, 'использовала', 'использовал' )] все свои знания и умения, но, как я уже [Select_CString(persian_polymath.IsFemale, 'говорила', 'говорил' )], болезни разума вылечить очень сложно. Тем не менее я считаю, что мы достигли прогресса. Ваши гуморы пришли в равновесие, ваш дух стал сильнее. Если вы наберетесь терпения и продолжите употреблять разумное количество рыбы и предписанных мной трав, то, если [ROOT.GetCharacter.GetFaith.HighGodNameAlternate] пожелает, вы еще сможете победить #italic малихулию#!».\n\n«Мне же придется вас покинуть, меня ждут новые знания»."
+ fp3_yearly.8043.desc: "[persian_polymath.GetFirstName] уже несколько недель задумчиво наблюдает за мной.\n\n«Увы, [ROOT.Char.GetTitleTierName|l], у меня закончились идеи. Я [Select_CString(persian_polymath.IsFemale, 'использовала', 'использовал' )] все свои знания и умения, но, как я уже [Select_CString(persian_polymath.IsFemale, 'говорила', 'говорил' )], болезни разума вылечить очень сложно. Тем не менее я считаю, что мы достигли прогресса. Ваши гуморы пришли в равновесие, ваш дух стал сильнее. Если вы наберетесь терпения и продолжите употреблять разумное количество рыбы и предписанных мной трав, то, если [ROOT.GetCharacter.GetFaith.HighGodNameAlternate] пожелает, вы еще сможете победить #italic наэргон#!».\n\n«Мне же придется вас покинуть, меня ждут новые знания»."
  fp3_yearly.8043.a: "Я куплю вам все книги, какие захотите. Вы нужны мне."
  fp3_yearly.8043.b: "Возможно, дело было сразу безнадежно."
  fp3_polymath_stays_flavor: "[persian_polymath.GetFirstNameNoTooltip] останется у вас при дворе."
+
  fp3_yearly.8044.t: "Свет мира"
  fp3_yearly.8044.desc: "Мир давно стал тусклым и тоскливым. Былые радости стали лишь мимолетным отвлечением, пустым и бессмысленным. Мои мысли то и дело блуждают во тьме, а сны полны страхов. Но довлевшее надо мной отчаяние стало потихоньку ослабевать.\n\nГлядя на окружающие земли, я вижу свет, пронизывающий облака. Я вижу красоты земли и все ее тайны. Возможно, дело в лекарствах, которые [Select_CString(persian_polymath.IsFemale, 'назначила', 'назначил' )] мне [persian_polymath.GetFirstName], возможно, в чем-то другом. Правду я вряд ли узнаю. Но что-то внутри меня изменилось. Я вновь ощущаю себя [Select_CString(ROOT.Char.IsFemale, 'целой', 'целым' )]."
  fp3_yearly.8044.a: "Стоит ценить это чувство, оно может быть недолгим."
+
  #Sick Monkey Chain
  fp3_yearly.8045.t: "Таинственный сверток"
- fp3_yearly.8045.desc: "Во время ночной прогулки мне встречается [Select_CString(buzina_enthusiast.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('buzina_enthusiast'))], [buzina_enthusiast.GetName], [Select_CString(buzina_enthusiast.IsFemale, 'баюкающая', 'баюкающий' )] в руках сверток размером с младенца. Но внешний вид обманчив — сверток издает странные звуки, а [buzina_enthusiast.GetNameNoTooltip] носит на лице свежие царапины.\n\n«Это не ребенок, [ROOT.Char.GetLadyLord|l], это обезьяна, — шепчет [buzina_enthusiast.GetSheHe]. — Во время сбора налогов мне пришлось взять ее в уплату вместо золота. Говорят, она принадлежала великому восточному царю, который научил ее играть в шахматы. Увы, обезьяна заболела и стала... агрессивной».\n\n[buzina_enthusiast.GetSheHe|U] вручает мне сверток со словами. «Но наверняка у вас на попечении она быстро поправится»."
+ fp3_yearly.8045.desc: "Во время ночной прогулки мне встречается [Select_CString(buzina_enthusiast.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('buzina_enthusiast'))], [buzina_enthusiast.GetName], [Select_CString(buzina_enthusiast.IsFemale, 'баюкающая', 'баюкающий' )] в руках сверток размером с младенца. Но внешний вид обманчив — сверток издает странные звуки, а [buzina_enthusiast.GetNameNoTooltip] носит на лице свежие царапины.\n\n«Это не ребенок, [ROOT.Char.GetLadyLord|l], это обезьяна, — шепчет [buzina_enthusiast.GetSheHe]. — Во время сбора налогов мне пришлось взять ее в уплату вместо золота. Говорят, она принадлежала великому харадримскому царю, который научил ее играть в шахматы. Увы, обезьяна заболела и стала... агрессивной».\n\n[buzina_enthusiast.GetSheHe|U] вручает мне сверток со словами. «Но наверняка у вас на попечении она быстро поправится»."
  fp3_yearly.8045.a: "Вероятно, у моего врача найдется лекарство..."
  fp3_yearly.8045.b: "Я плачу вам за сбор золота, #EMP а не обезьян!#!"
  fp3_yearly.8045.c: "Меня терзают сомнения на этот счет..."
  sick_monkey_flavor_desc: "Обезьяна, умеющая играть в шахматы, наверняка развлечет меня"
  playing_with_monkey.tt: "Открывает [Concept( 'decision', 'решение' )|E] «Играть с обезьяной», пока она остается у вас"
  fp3_inspired_tax_collector: "[buzina_enthusiast.GetShortUIName] старается лучше собирать налоги"
+
  fp3_yearly.8046.t: "Лекарство для обезьяны"
  fp3_yearly.8046.desc: "«Насколько мне известно, — говорит [court_physician.GetName], — обезьяны являются порождениями Гайомарта, первого человека. Их тела похожи на наши, а возможно и души. По слухам, некоторые из них умеют говорить!»\n\n«Вероятно, мне удастся вылечить кроху от ее недуга, но лучшим лекарством станет отвар из дорогостоящих трав. Альтернативой будет диета из соленой рыбы и ладана...»\n\n[court_physician.GetSheHe|U] с тревогой смотрит на бритвенно-острые когти обезьяны."
  fp3_yearly.8046.a: "Не скупитесь."
  fp3_yearly.8046.b: "Она сильная, хватит просто здоровой диеты."
  fp3_wait_and_see.tt: "Только время покажет, подействует ли лечение"
  monkey_recover_better_chances_tt: "Шансы обезьяны на выздоровление вырастут"
+
  playing_chess_with_monkey.tt: "Вы можете использовать [Concept( 'interaction', 'взаимодействие' )|E] «Бросить вызов в настольной игре», пока обезьяна жива."
+
  fp3_yearly.8047.t: "Выздоровление"
  fp3_yearly.8047.desc: "Мой врач подходит ко мне, держа на руках обезьяну, которую ранее [Select_CString(buzina_enthusiast.IsFemale, 'принесла', 'принес' )] домой [Select_CString(buzina_enthusiast.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('buzina_enthusiast'))], [buzina_enthusiast.GetName].\n\n«Мой сюзерен, у меня отличные новости. К обезьяне вернулась ее жизнерадостность, а ее нрав успокоился. И хотя она не кажется #EMP мастером#! шахмат, ее точно обучали игре».\n\nДаже если обезьяна не является мастером игры, люди будут съезжаться отовсюду, чтобы взглянуть на такую диковинку..."
  fp3_yearly.8047.a: "Пора рассылать приглашения!"
+
  monkey_died_from_sickness_toast: "Ваша ручная обезьяна умерла от болезни"
+
  ##################################################
  #ZOROASTRIAN EVENTS
  ##################################################
+
  fp3_yearly.8050.t: "Участь мертвых"
  fp3_yearly.8050_zoroastrian.desc: "Мы [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip|l], и наш священный долг велит нам бороться с влиянием Насу, дэва тлена. В связи с этим [Select_CString(dakhma_enthusiast.IsFemale, 'моя', 'мой' )] [dakhma_enthusiast.GetCouncilTitle|l] [dakhma_enthusiast.GetFirstName] проявляет сильное беспокойство из-за новостей из владения [dakhma_county.GetName]."
  fp3_yearly.8050_unzoroastrian.desc: "Многие жалуются на погребальные практики моих зороастрийских подданных из владения [dakhma_county.GetName], и [Select_CString(dakhma_enthusiast.IsFemale, 'моя', 'мой' )] [dakhma_enthusiast.GetCouncilTitle|l] [dakhma_enthusiast.GetFirstName] проявляет особое беспокойство в связи с этим."
@@ -561,6 +576,7 @@
  fp3_cheap_architecture_flavor: "Чем дешевле, тем лучше!"
  fp3_silence_architecture_success_toast: "Вы успешно сэкономили"
  fp3_silence_architecture_failure_toast: "Конструкция #italic очень#! спорная"
+
  fp3_yearly.8051.t: "Чистейшее пламя"
  fp3_yearly.8051_opening.desc: "Священное пламя из храма во владении [sacred_fire_province.GetName] недавно"
  fp3_yearly.8051_torrential_rain: "было потушено ливнем, настолько сильным, что он просочился сквозь трещины в крыше храма и добрался до огня."
@@ -574,19 +590,24 @@
  fp3_yearly.8051.b: "Поищем вам огонь златокузнеца."
  fp3_yearly.8051.c: "Знамения меня не слишком волнуют. Хватит огня домашнего очага."
  fp3_yearly.8051_chasing_lightning.tt: "Вы ждете следующей грозы..."
+
  fp3_yearly.8052.t: "Погоня за облаками"
  fp3_yearly.8052.desc: "[ROOT.Char.GetFaith.AltPriestTermPlural] постоянно напоминают мне о моем обещании найти Огонь победы для храма во владении [sacred_fire_province.GetName]. Я, конечно, помню... мои разведчики всюду ищут грозы, знак от [ROOT.GetCharacter.GetFaith.HighGodNamePossessive]. Но молния остается неуловимой.\n\nНо сегодня я стою за стенами своей резиденции, слышу раскаты грома и наблюдаю вспышки молний среди темных облаков. Мои слуги суетятся вокруг, пытаясь поймать молнию длинными шестами, пока я осматриваю земли, силясь высмотреть проблески пламени. Наши попытки ни к чему не приводят — облака расходятся, и молния исчезает в небесах.\n\n[ROOT.GetCharacter.GetFaith.HighGodName], неужели такова твоя воля? Мне никогда не суждено найти желанный огонь?"
  fp3_yearly.8052.a: "Стоит просто принести в храм огонь златокузнеца..."
  fp3_yearly.8052.b: "Можно обойтись и огнем низкого уровня."
  fp3_give_up_the_quest.flavor: "Вы отказываетесь от поисков Победоносного огня... пока."
+
  fp3_yearly.8053.t: "Победоносный огонь"
  fp3_yearly.8053.desc: "Прошли дни и недели, мои разведчики рыщут по державе в поисках молний, но все напрасно. Мое отчаяние растет, как вдруг на горизонте появляются темные тучи, и раздается рокот грома. Я стремглав бегу навстречу буре в сопровождении слуг, а гроза движется навстречу мне, словно направляемая незримой рукой.\n\nЗатем, прямо у меня на глазах, тучи пронзает вспышка яркого света, и, словно [ROOT.Char.GetFaith.DivineRealm] обрушивает копье с небес, ударяет в одинокое дерево. Сухая древесина мгновенно вспыхивает белым пламенем, чистым, словно духи #italic фраваши#!. Вот он, Победоносный огонь. Он снизошел ко мне!"
  fp3_yearly.8053.a: "Глазам своим не верю..."
+
+
  ##################################################
  #SCHOLARSHIP EVENTS
  ##################################################
  fp3_scholarship.0001.t: "Прибытие ученого"
  fp3_scholarship.0001.desc: "[scholar.GetTitledFirstName] [Select_CString(scholar.IsFemale, 'прибыла', 'прибыл' )] к вам в поисках покровительства"
+
  fp3_scholarship.1000.t: "Второй Ариабхата"
  fp3_scholarship.1000.desc: "До меня дошли сведения о престиже индийских математиков, о чем говорят даже те, кто только начинает изучать арифметику. Если я заполню свои залы #L [nearby_indian_ruler.GetCulture.GetCollectiveNoun|l]ими#! учеными, то, возможно, [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] тоже сможет стать центром математики.\n\nЯ могу попросить, пусть [nearby_indian_ruler.GetTitledFirstName] пришлет мне нескольких таких ученых. Но будет ли принята моя просьба?"
  fp3_scholarship.1000.a: "[nearby_indian_ruler.GetSheHe|U] наверняка мне не откажет."
@@ -601,6 +622,7 @@
  fp3_scholarship.1001.desc: "[mathematician.GetTitledFirstName] [Select_CString(mathematician.IsFemale, 'была отправлена', 'был отправлен' )] к моему двору персонажем [nearby_indian_ruler.GetTitledFirstNameNoTooltip]."
  fp3_scholarship.1001.native.desc: "[mathematician.GetTitledFirstName] [Select_CString(mathematician.IsFemale, 'присоединилась', 'присоединился' )] к моему двору."
  fp3_scholarship.1000.d: "У меня на это нет ни времени, ни желания."
+
  fp3_scholarship.1010.t: "Одинокий маг"
  fp3_scholarship.1010.desc_dying_faith: "«Мы просто хотим спокойно исповедовать свою веру до конца своих дней. Обещайте нам это, и я лично буду служить вам до самой смерти».\n\nХотя #L [magus_faith.GetName|l]ая#! вера, несомненно, умирает, ее заблудшие последователи отчаянно цепляются за брошенные огненные храмы владения [magus_county.GetProvince.GetCounty.GetName]. Этот жрец отдал себя на волю моих воинов, умоляя о милосердии.\n\n"
  fp3_scholarship.1010.desc_living_faith: "«Смилостивьтесь! Мы просто хотим почтить своих предков. Защитите нас, и я обещаю служить вам до конца своих дней».\n\n#L [magus_faith.GetName|U]ая#! вера продолжает доставлять мне неприятности. Похоже, храмы владения [magus_county.GetProvince.GetCounty.GetName] вновь горят жарким пламенем под покровом ночи. Мои [ROOT.Char.Custom('KnightCultureNoTooltipLowercase')] и я сумели поймать мага-отступника за его загадочными ритуалами, но он решил не бежать, а храбро вверить мне свою судьбу."
@@ -608,59 +630,75 @@
  fp3_scholarship.1010.b: "Я дарую защиту владению [magus_county.GetNameNoTooltip]."
  fp3_scholarship.1010.b.tt: "[magus_county.GetNameNoTooltip] не сможет изменить конфессию 20 лет\n[magus.GetShortUINameNoTooltip] никогда не сменит конфессию"
  fp3_scholarship.1010.c: "Ничего не обещаю, но мы можем вас отпустить."
+
  fp3_scholarship.2000.t: "На вес золота"
  fp3_scholarship.2000.desc: "Поставки бумаги с востока практически прекратились, и менее известные поэты уже перешли на пальмовые листья и кору для записи своего творчества. Вскоре даже мой придворный ученый [court_scholar.GetTitledFirstName] лишится надежного доступа к этим драгоценным листам.\n\n«Полагаю, я могу вернуться к пергаменту, но его так сложно найти в наше время. Куда лучше было бы найти больше бумаги...»"
  fp3_scholarship.2000.a: "Вся бумага в державе будет конфискована для ваших целей."
  fp3_scholarship.2000.b: "Значит, нужно импортировать бумагу."
  fp3_scholarship.2000.c: "Вам придется довольствоваться тем, что есть."
+
  fp3_scholarship.2010.t: "Жидкая мудрость"
  fp3_scholarship.2010.desc: "Мои блюстители нравов сообщили мне, что мой придворный ученый [court_scholar.GetTitledFirstName] тайно выпивает с чужеземным ученым.\n\nВ любом другом случае это привело бы к разрыву общения и строгому выговору. [court_scholar.GetSheHe|U], однако, ведет просветленные беседы со своим собутыльником. Во всяком случае, так мне доложили."
  fp3_scholarship.2010.a: "Учение [ROOT.Char.GetFaith.HighGodNamePossessive] должно быть превыше всего."
  fp3_scholarship.2010.b: "Возможно, они пьют обычный чай?"
+
  fp3_scholarship.2020.t: "Мрачные откровения"
  fp3_scholarship.2020.desc: "«Мои исследования зашли в тупик, — [ROOT.Char.Custom2('QuirkAdverbPosOrNeg', court_scholar)] сообщает мне мой придворный ученый [court_scholar.GetTitledFirstNameNoTooltip]. — Книги всему не научат. Но если [specimen.GetTitledFirstName] какое-то время побудет у меня, мы наверняка сумеем совершить прорыв».\n\n[court_scholar.GetSheHe|U] не обещает, что [specimen.GetTitledFirstNameNoTooltip] не пострадает."
  fp3_scholarship.2020.a: "Даю вам полное разрешение."
  fp3_scholarship.2020.b: "Ограничьте свои извращенные эксперименты заметками и дневниками."
+
  fp3_scholarship.2030.t: "Публикация открытий"
  fp3_scholarship.2030.desc: "«...с огромным удовольствием сообщаю вам о росте моих познаний в такой теме, как [ROOT.Char.Custom('education_conversation_subject')]».\n\nПорой бывает сложно оправдать плату ученым. Их работа редко приносит очевидную выгоду державе.\nНесомненно, мой придворный ученый [court_scholar.GetName] прекрасно об этом знает. Сегодняшний доклад преподнесен с почти наигранным энтузиазмом."
  fp3_scholarship.2030.a: "Прогресс — это всегда хорошо"
  fp3_scholarship.2030.tt: "[court_scholar.GetNameNoTooltip] [Select_CString(court_scholar.IsFemale, 'получила', 'получил' )] поддержку от центров высшего образования в вашей державе."
+
  fp3_research_project_title: "Исследование:"
+
  fp3_scholarship_research_success_loss_effect: "[research_project|E] персонажа [inspiration_owner.GetShortUIName] получит #N меньший шанс#! успеха"
  fp3_scholarship_research_success_slight_loss_effect: "[research_project|E] персонажа [inspiration_owner.GetShortUIName] получит #N чуть меньший шанс#! успеха"
  fp3_scholarship_research_success_gain_effect: "[research_project|E] персонажа [inspiration_owner.GetShortUIName] получит #P больший шанс#! успеха"
  fp3_scholarship_research_success_slight_gain_effect: "[research_project|E] персонажа [inspiration_owner.GetShortUIName] получит #P чуть больший шанс#! успеха"
+
  fp3_scholarship.8000.t: "Новый исследовательский проект"
  fp3_scholarship.8000.desc: "Мой придворный ученый [court_scholar.GetName] спешно подходит ко мне. За [Select_CString(court_scholar.IsFemale, 'ней', 'ним' )] следуют слуги со стопками книг, свитков и древних пергаментов.\n\n«Кажется, я стою на пороге прорыва! Мне нужно лишь достаточно времени, средства и столько чернил, чтобы ими было впору перекрасить Инд»."
  fp3_scholarship.8000.a: "Все в ваших руках, [court_scholar.GetFirstNameNoTooltip]."
  fp3_scholarship.8000.b: "Возможно, в другой раз?"
  fp3_scholarship.8000.a.tt: "[court_scholar.GetFirstNameNoTooltip] начнет [Concept( 'research_project', 'исследовательский проект' )|E]"
+
  fp3_scholarship.8500.t: "Манящее золото"
  fp3_scholarship.8500.desc: "«Я [Select_CString(court_scholar.IsFemale, 'уверена', 'уверен' )], что смогу разгадать тайны самого мироздания, если вы предоставите мне подходящие инструменты и помощников!»\n\n[court_scholar.GetName], мой придворный ученый, говорит уже довольно долго. [court_scholar.GetSheHe|U] упрашивает меня позволить [Select_CString(court_scholar.IsFemale, 'ей', 'ему' )] потратить #EMP мое золото и серебро#! на попытки раскрыть тайны создания элементов, таких как #EMP золото#! и #EMP серебро#!.\n\n[court_scholar.GetFirstNameNoTooltip] не скрывает своего возбуждения, и меня действительно впечатлило, что [Select_CString(court_scholar.IsFemale, 'ей', 'ему' )] удалось расшифровать весьма запутанные тексты по этой теме, но пока неясно, будет ли это выгодно мне."
  fp3_scholarship.8500.a.tt: "[court_scholar.GetFirstNameNoTooltip] начнет алхимическое [Concept( 'inspiration', 'вдохновение' )|E]"
+
  fp3_scholarship.8600.t: "Что написано пером..."
  fp3_scholarship.8600.desc: "«Очень благородно и самоотверженно с вашей стороны продолжать поддерживать меня, но даже величайшие наблюдения рискуют быть забытыми, если их не записать! Кто узнает мои мысли, когда я умру и не смогу их излагать? Мир обеднеет, если мы не сохраним их».\n\n[court_scholar.GetName], мой придворный ученый, занимается новым проектом. [court_scholar.GetSheHe|U] хочет убедить меня поддержать написание новой книги. Это будет великолепный манускрипт, который, по [court_scholar.GetHerHis] словам, заставит моих соперников позеленеть от зависти.\nВозможно, эта идея принесет престиж не только мне, но и [Select_CString(court_scholar.IsFemale, 'ей', 'ему' )]. Но это не значит, что идея плоха..."
  fp3_scholarship.8600.a.tt: "[court_scholar.GetFirstNameNoTooltip] начнет [Concept( 'inspiration', 'вдохновение' )|E] по написанию книги"
+
  fp3_scholarship.8999.tt_failure: "[court_scholar.GetShortUINameNoTooltip] не добивается ничего полезного в своем исследовании"
  fp3_scholarship.8999.tt_success: "[court_scholar.GetShortUINameNoTooltip] совершает небольшое научное открытие в интересах дома [THIS.Char.GetHouse.GetNameNoTooltip]"
  fp3_scholarship.8999.tt_crit_success: "[court_scholar.GetShortUINameNoTooltip] открывает новую инновацию для #L [THIS.Char.GetCulture.GetCollectiveNoun|l]ой#! культуры"
+
  fp3_scholarship.8100.t: "$fp3_research_project_title$ лучшая библиотека"
  fp3_scholarship.8100.desc: "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] постоянно жалуется на удручающее состояние монаршей библиотеки, показывая мне груды пожелтевших свитков и выцветшие книги.\n\n«Некоторые из этих текстов устарели на столетия, а то и больше. Как прикажете проводить новейшие исследования со столь древними томами?»"
  fp3_scholarship.8100.a: "Монаршая библиотека будет обновлена на ваше усмотрение."
  fp3_scholarship.8100.b: "Монаршая библиотека уже идеальна."
+
  fp3_scholarship.9000.t: "$fp3_research_project_title$ провал"
  fp3_scholarship.9000.desc: "«Все бесполезно!» — плачется мне [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)]. [inspiration_owner.GetHerHis|U] глаза глубоко запали от множества бессонных ночей.\n\n«Я ничего не вижу в этом море чисел. Мне придется забросить проект, хотя бы на время»."
  fp3_scholarship.9000.a: "Что ж, хорошо."
  fp3_scholarship.9000.b: "Я плачу вам за исследования, а не за оправдания!"
+
  fp3_scholarship.9100.t: "$fp3_research_project_title$ новое открытие"
  fp3_scholarship.9100.desc: "«[ROOT.Char.Custom2('RelationToMeAddress', inspiration_owner)|U]! Моя работа завершена»\n\n[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] пускается в долгие рассуждения о своих открытиях и их влиянии на нашу державу. Я пытаюсь вставить хотя бы слово, но безуспешно.\n\nКогда [inspiration_owner.GetSheHe] наконец присаживается, я вижу в глазах придворных отражение собственного недоумения, но все равно даю единственный приличествующий ответ."
  fp3_scholarship.9100.a: "Хорошая работа, [inspiration_owner.GetShortUINameNoTooltip]."
+
  fp3_scholarship.9200.t: "$fp3_research_project_title$ новая инновация"
  fp3_scholarship.9200.desc: "«[ROOT.Char.Custom2('RelationToMeAddress', inspiration_owner)|U]!» — кричит мне [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)]. Я поворачиваюсь и вижу полные радости глаза и полные руки записей. [inspiration_owner.GetHerHis|U] труд завершен.\n\nЛишь много позже я осознаю значимость [inspiration_owner.GetHerHis] открытия и не доживу до того момента, когда оно повлияет на ход истории. Пока же можно сказать лишь одно:"
  fp3_scholarship.9200.a: "Отличная работа."
+
  fp3_scholarship.9900.t: "$fp3_research_project_title$ отмена"
  fp3_scholarship.9900.tt: "[court_scholar.GetShortUIName|U] [Select_CString(court_scholar.IsFemale, 'умерла', 'умер' )] и не может продолжать свои исследования."
  fp3_scholarship.9901.tt: "[court_scholar.GetShortUIName|U] больше не мой придворный ученый и не может продолжать свои исследования."
+
  #Al-Khul Event
  fp3_h_yearly.0001.t: "Манящий аль-кухуль"
  fp3_h_yearly.0001.desc.main: "Я отдыхаю в тихом уголке своей резиденции во владении [ROOT.GetCharacter.GetCurrentLocation.GetTitle.GetNameNoTierNoTooltip], и [ROOT.Char.Custom('RegionalAlcoholicDrink')] плещется в моем бокале, как вдруг ко мне подходит [Select_CString(ulema_member.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe', ulema_member)] [ulema_member.GetName] со строгим выражением на лице.\n\n«Ваше увлечение #italic аль-кухулем#! постыдно!\nПоловина ваших придворных уже перестала уважать вас, а вторая половина потеряла всякий стыд! Недовольные на улицах откровенно насмехаются над устоями нашей веры, отражая грехи своих господ, засевших в этом дворце!»\n\n[ulema_member.GetNameNoTooltip|U] вне себя от гнева, кричит и привлекает всеобщее внимание. Некоторые из придворных незаметно опускают собственные бокалы, желая избежать внимания разъяренного представителя духовенства."
@@ -677,6 +715,7 @@
  fp3_h_yearly.0001.c.failure: "[ulema_member.GetNameNoTooltip] отказывается от взятки"
  fp3_h_yearly.0001.d: "Я [Select_CString(ROOT.Char.IsFemale, 'грешница', 'грешник' )], но я попытаюсь исправиться."
  fp3_h_yearly.0001.e: "Молчать! Вы забыли, с кем разговариваете."
+
  #Seljuk story cycle
  fp3_story_cycle_seljuks_invasion_events.0001.t: "Отчаявшиеся кочевники"
  fp3_story_cycle_seljuks_invasion_events.0001.desc: "Кочевники-[lead_seljuk.GetCulture.GetNameNoTooltip|l] с пограничных земель прибыли ко мне с мольбой. Они желают поселиться во владении [fp3_seljuk_settle_target.GetNameNoTier]"
@@ -685,6 +724,7 @@
  fp3_story_cycle_seljuks_invasion_events.0001.a_liege: "Если вы обещаете ответить на зов сюзерена, владение [fp3_seljuk_settle_target.GetNameNoTierNoTooltip] ваше."
  fp3_story_cycle_seljuks_invasion_events.0001.a: "[fp3_seljuk_settle_target.GetNameNoTierNoTooltip] ваше, сосед!"
  fp3_story_cycle_seljuks_invasion_events.0001.b: "Ни за что! Я не позволю всякому сброду оккупировать мои земли!"
+
  #Zanj Rebellion
  fp3_story_cycle_zanj_rebellion_events.0002.t: "Смелый мятежник"
  fp3_story_cycle_zanj_rebellion_events.0002.desc: "[outspoken_rebel.GetName], [Select_CString(outspoken_rebel.IsFemale, 'харизматичная мятежница, прославившаяся', 'харизматичный мятежник, прославившийся' )] предыдущей попыткой поднять восстание в Бахрейне, [Select_CString(outspoken_rebel.IsFemale, 'была замечена', 'был замечен' )] во владении [outspoken_rebel.GetCurrentLocation.GetCounty.GetName].\n\n[Select_CString(outspoken_rebel.IsFemale, 'Эта самопровозглашенная', 'Этот самопровозглашенный' )] святоша бродит по соленым болотам и мутит воду среди местного населения. В их число входят зинджи порабощенные и вольные, выходцы из восточной части Африки, многие из которых работают здесь. Возможно, это наш шанс схватить и наказать [outspoken_rebel.GetHerHis]."
@@ -703,10 +743,12 @@
  fp3_story_cycle_zanj_rebellion_events.0004.a.success: "Вы доказываете, что [Select_CString(zanj_leader.IsFemale, 'она', 'он' )] лжет."
  fp3_story_cycle_zanj_rebellion_events.0004.a.failure: "Вы не в состоянии опровергнуть [zanj_leader.GetHerHis] заявления"
  fp3_story_cycle_zanj_rebellion_events.0004.b: "Я не стану обращать внимания на [Select_CString( zanj_leader.IsFemale, 'эту дуру', 'этого дурака' )]."
+
  fp3_story_cycle_zanj_rebellion_events.0006.t: "Обращение зинджи"
  fp3_story_cycle_zanj_rebellion_events.0006.desc.a: "[zanj_representative.GetName], предводитель рабочих-зинджей, занимающихся нескончаемой работой по осушению соленых болот Басры, приходит ко мне с просьбой об улучшении условий труда. Зинджи уже много поколений живут в этом регионе и составляют значительное меньшинство в Басре.\n\n"
  fp3_story_cycle_zanj_rebellion_events.0006.desc.b: "Я подозреваю, что [zanj_leader.GetName] и [zanj_leader.GetHerHis] мятеж как-то связаны с растущим недовольством.\n\n"
  fp3_story_cycle_zanj_rebellion_events.0006.desc.c: "«[Select_CString( ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsName|l], прошу, неужто [ROOT.Char.GetFaith.HighGodName] не ценит доброго отношения к рабочим независимо от их происхождения?»"
+
  fp3_story_cycle_zanj_rebellion_events.0006.a: "Вы получите награду за свой тяжкий труд."
  fp3_rival_gave_title_away: "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'отдали', Select_CString(CHARACTER.IsFemale, 'отдала', 'отдал' ))] земли, которыми ранее [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'владели', Select_CString(TARGET_CHARACTER.IsFemale, 'владела', 'владел' ))] [TARGET_CHARACTER.GetShortUIName]."
  fp3_landed_zanj_reason: "Обмен земель на мир"
@@ -714,9 +756,11 @@
  fp3_zanj_rebellion_interfered_with_my_workers: "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'вмешались', Select_CString(CHARACTER.IsFemale, 'вмешалась', 'вмешался' ))] от имени рабочих, которыми [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'владели', Select_CString(TARGET_CHARACTER.IsFemale, 'владела', 'владел' ))] [TARGET_CHARACTER.GetShortUIName]."
  fp3_story_cycle_zanj_rebellion_events.0006.c: "Такова участь зинджей."
  fp3_rival_stayed_out_of_my_business: "[CHARACTER.GetShortUIName|U] не [Select_CString(CHARACTER.IsLocalPlayer, 'стали', Select_CString(CHARACTER.IsFemale, 'стала', 'стал' ))] вмешиваться в то, как [TARGET_CHARACTER.GetShortUIName] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'ведете', 'ведет')] дела."
+
  fp3_story_cycle_zanj_rebellion_events.0008.t: "Восстания зинджей"
  fp3_story_cycle_zanj_rebellion_events.0008.desc.a: "До меня дошли сведения об открытом мятеже на соленых болотах Басры."
  fp3_story_cycle_zanj_rebellion_events.0008.desc.b: "[zanj_leader.GetName], [Select_CString( zanj_leader.IsFemale, 'которую', 'которого' )] многие считали безобидным шарлатаном, [Select_CString( zanj_leader.IsFemale, 'сумела', 'сумел' )] объединить недовольных рабочих-зинджей и мятежные арабские племена. Хотя [zanj_leader.GetName] принадлежит к #L [zanj_leader.GetCulture.GetCollectiveNoun|l]ому#! народу и не является зинджи, повстанцы видят в [Select_CString( zanj_leader.IsFemale, 'ней', 'нем' )] своего предводителя."
  fp3_story_cycle_zanj_rebellion_events.0008.desc.c: "[zanj_leader.GetName], особо [Select_CString( zanj_leader.IsFemale, 'недовольная', 'недовольный' )] зинджи, [Select_CString( zanj_leader.IsFemale, 'объединила', 'объединил' )] недовольных рабочих-зинджей и мятежные арабские племена. Хотя [zanj_leader.GetName] принадлежит к #L [zanj_leader.GetCulture.GetCollectiveNoun|l]ому#! народу и не является арабом, повстанцы видят в [Select_CString( zanj_leader.IsFemale, 'ней', 'нем' )] своего предводителя."
  fp3_story_cycle_zanj_rebellion_events.0008.desc.d: "\n\nМятежники погрузились на большую баржу и отправились вниз по реке к Басре, намереваясь перебить хозяев зинджей. Это открытый вызов моей власти."
+
  fp3_story_cycle_zanj_rebellion_events.0008.a: "Арванд покраснеет от крови."
