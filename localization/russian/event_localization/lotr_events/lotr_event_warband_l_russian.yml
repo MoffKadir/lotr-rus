@@ -13,9 +13,9 @@
  decision_lotr_warbands_desc_dwarrowhall_leofring:0 "После рискованного переселению на юг вдоль гор Ваш народ нашёл убежище в заброшенных шахтах Мории. В них теплее и нет злого ветра, бушующего снаружи - это поможет Вашему народу выжить."
  decision_lotr_warbands_desc_bandit_leofring:0 "Рыскающие по округе орки согнали Ваш народ с севера. Многие Ваши соплеменники выбрали стезю разбоя, нападая на рохирримов вдоль Андуина."
  decision_lotr_warbands_desc_eotheod:0 "Эотеод должен созвать кавалерию и готовиться к войне. Вперёд, всадники!"
- decision_lotr_warbands_desc_hill_dunlending:0 "The Rohirrim stole your land eons ago, but your people have rebuilt their lives in Dunland. Yet there is a power at work here, inciting warriors to take revenge of that old wound." !
+ decision_lotr_warbands_desc_adornaen:0 "The Rohirrim stole your land eons ago, but your people have rebuilt their lives in Dunland. Yet there is a power at work here, inciting warriors to take revenge of that old wound." !
  decision_lotr_warbands_desc_fisherfolk:0 "Ваш народ - простые рыбаки, но они будут яростно защищать своё отечество!"
- decision_lotr_warbands_desc_herdfolk_dunlending:0 "The Rohirrim drove your people into the hills to scratch a living off of rocks. Someone has gotta pay!" !
+ decision_lotr_warbands_desc_dunlending:0 "The Rohirrim drove your people into the hills to scratch a living off of rocks. Someone has gotta pay!" !
  decision_lotr_warbands_desc_gwathlo_estuary:0 "Свободные народы устья Гватло ещё помнят разрущение дунландского королевства Кардолан. Ваш народ пережил те события."
  decision_lotr_warbands_desc_gwathlo:0 "Горные племена и болотные кочевники, некогда вассалы дунландского королевства Кардолан, теперь они вынуждены сами защищать свои земли, стада и рыбацкие угодья от недругов."
  decision_lotr_warbands_desc_gondor_gwathuirim:0 "Представители древнего дома Халет, населявшего земли от Белых гор до самого моря. Когда нуменорские поселенцы прибыли из-за Великого моря, ваши судьбы оказались сломаны ими, ведь они отказались признать вас представителями одного из домов Эдайн.\n\nНе уважая ваше наследие, пришельцы-колонизаторы осквернили священные леса Гондора и Энедвейты. А за отказ биться с Тёмным лордом они прокляли вас."
@@ -78,7 +78,9 @@
  dunland_muster_troops:0 "Сбор Дунланда"
  enedhwaith_muster_troops:0 "Сбор Энедвайта"
  chiefs_harondor_troops:0 "Стража Харондора"
-  
+ gundabad_bois:0 "Gundabad Warhost"
+ grey_mountains_bois:0 "Grey Mountains Warhost"
+
   
   ### MODIFIERS ### 
  mercenary_contractor_modifier:0 "Подрядчик"
@@ -291,23 +293,13 @@
   
  abrakhan.0030.t:0 "Собирается военный совет Нафарата"
  abrakhan.0030.desc_tribal:0 "Я тихо вхожу в боевую хижину и стою у большого костра, глядя в него в поисках вдохновения. В частном порядке и [marshal.GetName], и [third_party.GetName] выразили свои опасения, и теперь я решу вопрос о войне с ожидающим советом."
- abrakhan.0030.desc_all_agree:0 "\n\nЭти двое смотрят друг на друга, и прежде чем один из них повернется ко мне, чтобы высказать свое мнение, я заявляю об их единодушной поддержке друг друга. [target_country_1.GetName] должен пасть перед мощью [root.highest_held_title_tier.GetName]"
+ abrakhan.0030.desc_all_agree:0 "\n\nЭти двое смотрят друг на друга, и прежде чем один из них повернется ко мне, чтобы высказать свое мнение, я заявляю об их единодушной поддержке друг друга. [target_country_1.GetName] должен пасть перед мощью [root.GetPrimaryTitle.GetName]"
   
  abrakhan.0030.desc_dont_agree:0 "\n\nВыбор:0 [target_country_1.GetName] и [target_country_2.GetName].\n\nНапугав этих двоих, когда они смотрят друг на друга, я встаю и объявляю, что я видел в огне."
- abrakhan.0030.a.all_agree:0 "Все согласны"
+ abrakhan.0030.a.all_agree:0 "Все согласились"
  abrakhan.0030.b.marshal:0 "Маршал"
  abrakhan.0030.c.third_party:0 "Третья сторона"
  abrakhan.0030.d.nope:0 "Неа"
-  
-  
-  
-  
- abrakhan.100:0 ""
-  
- abrakhan_subjugation.1001.b:0 ""
- abrakhan_subjugation.1001.b.tt:0 "$abrakhan_subjugation.1001.a.tt$"
- abrakhan_subjugation.1001.c:0 ""
- abrakhan_subjugation.1001.c.tt:0 "$abrakhan_subjugation.1001.a.tt$"
   
  decision_abrakhan_subjugation_dune_sea:0 "Порабощение:0 Дюнное море"
  decision_abrakhan_subjugation_dune_sea_tooltip:0 "Покорите Море дюн, используйте воинов пустыни в своих интересах."
