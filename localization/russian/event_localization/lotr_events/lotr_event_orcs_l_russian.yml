@@ -44,18 +44,18 @@
  orc_lifestyle.0030.e:0 "Я ненавижу желтое лицо в небе."
  orc_lifestyle.0030.e.tt:0 "Ты напрасно грозишь кулаком солнцу."
  orc_lifestyle.0030.f:0 "Лучше держать эту способность под контролем."
- orc_fell_ability_horrible_strength:0 "Падшая Способность:0 Ужасная Сила"
- orc_fell_ability_horrible_strength_desc:0 "“$orc_lifestyle.0030.a$”"
- orc_fell_ability_snake_like_speed:0 "Падшая Способность:0 Змееинная скорость"
- orc_fell_ability_snake_like_speed_desc:0 "“$orc_lifestyle.0030.b$”"
- orc_fell_ability_yell_of_triumph:0 "Падшая Способность:0 Крик триумфа"
- orc_fell_ability_yell_of_triumph_desc:0 "“$orc_lifestyle.0030.c$” $orc_lifestyle.0030.c.tt$"
- orc_fell_ability_hideous_toughness:0 "Падшая Способность:0 Отвратительная Жесткость"
- orc_fell_ability_hideous_toughness_desc:0 "“$orc_lifestyle.0030.d$”"
- orc_fell_ability_hate_of_sunlight:0 "Падшая Способность:0 Ненависть к солнечному свету"
- orc_fell_ability_hate_of_sunlight_desc:0 "“$orc_lifestyle.0030.e$”"
- orc_fell_ability_craven:0 "Падшая Способность:0 Трусливость"
- orc_fell_ability_craven_desc:0 "“$orc_lifestyle.0030.f$” $orc_lifestyle.0030.e.tt$"
+ orc_fell_ability_horrible_strength_modifier:0 "Падшая Способность:0 Ужасная Сила"
+ orc_fell_ability_horrible_strength_modifier_desc:0 "“$orc_lifestyle.0030.a$”"
+ orc_fell_ability_snake_like_speed_modifier:0 "Падшая Способность:0 Змееинная скорость"
+ orc_fell_ability_snake_like_speed_modifier_desc:0 "“$orc_lifestyle.0030.b$”"
+ orc_fell_ability_yell_of_triumph_modifier:0 "Падшая Способность:0 Крик триумфа"
+ orc_fell_ability_yell_of_triumph_modifier_desc:0 "“$orc_lifestyle.0030.c$” $orc_lifestyle.0030.c.tt$"
+ orc_fell_ability_hideous_toughness_modifier:0 "Падшая Способность:0 Отвратительная Жесткость"
+ orc_fell_ability_hideous_toughness_modifier_desc:0 "“$orc_lifestyle.0030.d$”"
+ orc_fell_ability_hate_of_sunlight_modifier:0 "Падшая Способность:0 Ненависть к солнечному свету"
+ orc_fell_ability_hate_of_sunlight_modifier_desc:0 "“$orc_lifestyle.0030.e$”"
+ orc_fell_ability_craven_modifier:0 "Падшая Способность:0 Трусливость"
+ orc_fell_ability_craven_modifier_desc:0 "“$orc_lifestyle.0030.f$” $orc_lifestyle.0030.e.tt$"
  wight_lifestyle.0035.t:0 "Падшая Способность"
  wight_lifestyle.0035.desc:0 "Нежить - это продирающий ужас для живых. Вы - один из таких ужасов, и у любого, кто сталкивается с вами, страх пробирается под кожу, а глаза вылезают из орбит.\n\nВы кривите злую улыбку, чувствуя прилив силы из неиспользованного источника внутри тебя, падшей способности."
  wight_lifestyle.0035.a:0 "Я нечестивый обитатель тьмы."
@@ -176,7 +176,7 @@
   
   ### Rebellious Slave ### 
  orcs.0014.t:0 "Мятежный Раб"
- orcs.0014.desc:0 "Мои воины приводят ко мне раба, которому ночью удалось сбежать из загонов. Совершив впечатляющий подвиг доблести, личинка убила двух моих самых сильных надзирателей во время своего побега. Но [escaped_slave.GetSheHe] не смогла уйти далеко, прежде чем моим следопытам удалось выследить [escaped_slave.GetHerHim].\n\n Какое послание мне адресовать этой личинке?"
+ orcs.0014.desc:0 "Мои воины приводят ко мне раба, которому ночью удалось сбежать из загонов. Совершив впечатляющий подвиг доблести, личинка убила двух моих самых сильных надзирателей во время своего побега. Но [escaped_slave.GetSheHe] не смогла уйти далеко, прежде чем моим следопытам удалось выследить [escaped_slave.GetHerHim].\n\nКакое послание мне адресовать этой личинке?"
  orcs.0014.a:0 "Закуйте [escaped_slave.GetHerHim] в цепи, я разберусь с этим позже"
  orcs.0014.b:0 "Я сам выпотрошу эту мерзкую личинку"
  orcs.0014.c:0 "Из твоей плоти получится прекрасный пир"
@@ -228,10 +228,12 @@
  orcs.4102.desc_warg:0 "\n\nРядом с вами крадется грустный старый варг, он принадлежал Мертвяку, но вы ему понравились. Он не собирается сдвинуться с места с вашей стороны."
  orcs.4102.a:0 "Оставить Мертвяка гнить, меч все еще в хорошем состоянии?"
  orcs.4102.b:0 "Ба! Побежден старым, конченым орком."
-  
-  
-  
-  
-  
-  
-  
+
+ orcs.4105.t:0 "The War for Goblin Town"
+ orcs.4105.desc:0 "After repulsing Mazog of Gundabad, it seemed like Gorkil's throne was secure. He set to rousing his raiding bands and gathering booty and food for himself and his followers. But though many goblins welcomed the new status quo, there were always going to be those that were looking to topple the newly crowned king. Skulking in the shadows, these squabbling and ambitious underlings saw a chance to take the greatest prize of all, the very throne of the reunified Goblin Town.\n\nNow, the conspirators have raised their banners and laid claim to Gorkil's throne, each one professing to the true title of 'Goblin King'. For his part, Gorkil welcomes the challenge, and fully plans to put each of these pretenders in their place. They will make a fitting chair..."
+ orcs.4105.a:0 "We shall crush their skulls!"
+
+ orcs.4106.t:0 "Lieutenant of the Eye"
+ orcs.4106.desc:0 "Long have I served the Dark Lord. Some say I have served ever since the Dark Tower rose again. Many serve Sauron, yet few know his mind so closely, nor are so trusted as I. When I speak, it can be asured that Sauron is in full assent."
+ orcs.4106.a:0 "I speak with his voice."
+ orcs.4106.b:0 "I speak with his voice."

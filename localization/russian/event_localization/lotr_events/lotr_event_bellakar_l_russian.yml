@@ -31,7 +31,7 @@
  ### WIP ### issue #229 -> Unite the Faithful Realms decision 
  #### bellakar is given a choice on joining Gondor or not (become Gondors vassal) #### after vasssals converted 
  bellakar.0202.t:0 "Объединение верующих?"
-  bellakar.0202.desc:0 "I find myself faced with a choice more difficult than any of my forebears since the Downfall. The waves of conversions to Erulaitalë have continued across Bellakar, and many now call for the Faithful to be united under the line of Elendil, both spiritually... and in a single realm. Many who feel profound loyalty to the Tumakveh see a king of Gondor with Tumakveh blood in his veins, and argue that there is no need to compromise between their faith and their allegiance. To deny them now risks civil war. But might civil war come anyway, if the traditionalists resist?\n\n[high_king_of_gondor.GetName] scries the chance to achieve what [elendil.GetName] could not, and has made a bold yet subtle offer:0 What if I were to give him homage and recognise him as my liege, and in exchange my heirs were to keep the throne of Bellakar and its vassals, while renouncing the kingship in exchange for the ancient title of 'Asapthubêth'? A loss of status yes, but perhaps Bellakar and the Tumakveh would carry on much as before... 
+ bellakar.0202.desc:0 "I find myself faced with a choice more difficult than any of my forebears since the Downfall. The waves of conversions to Erulaitalë have continued across Bellakar, and many now call for the Faithful to be united under the line of Elendil, both spiritually... and in a single realm. Many who feel profound loyalty to the Tumakveh see a king of Gondor with Tumakveh blood in his veins, and argue that there is no need to compromise between their faith and their allegiance. To deny them now risks civil war. But might civil war come anyway, if the traditionalists resist?\n\n[high_king_of_gondor.GetName] scries the chance to achieve what [elendil.GetName] could not, and has made a bold yet subtle offer: What if I were to give him homage and recognise him as my liege, and in exchange my heirs were to keep the throne of Bellakar and its vassals, while renouncing the kingship in exchange for the ancient title of 'Asapthubêth'? A loss of status yes, but perhaps Bellakar and the Tumakveh would carry on much as before..."
  bellakar.0202.a:0 "Время пришло. Новое царство, для новой эпохи"
  bellakar.0202.b:0 "Нет! Правление Беллакара принадлежит мне!"
   
@@ -109,13 +109,21 @@
   
  religious_decision.0103.t:0 "Выбор святого покровителя"
  religious_decision.0103.desc:0 "Наша вера почитает ряд великих святых, а также ряд второстепенных местных. Тем не менее, я не могу сказать, что нет людей, которые обладают особой привлекательностью для меня. Если бы я открыто посвятил себя явному поклонению в первую очередь одному из таких божеств, я, несомненно, привлек бы на свою сторону единомышленников. Какие бы благословения ни даровал мой святой покровитель, наличие подобного [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] может принести мне только здоровье, богатство и славу."
- religious_decision.0103.prophet:0 "Святой Изиндубет Пророк, Великий Пастырь нашего народа!"
- religious_decision.0103.militant:0 "Святой Тамарзир Воинствующий, Почтенный Святой Меч!"
- religious_decision.0103.wise:0 "Святой Эрухор Мудрый, Отец Фелайи!"
- religious_decision.0103.pilgrim:0 "Святой Бродабан, покровитель паломников!"
- religious_decision.0103.anointed:0 "Святой Бавабатор Помазанник, Пример для всех нас!"
- religious_decision.0103.chaste:0 "Святая Бахгаллея Целомудренная, Благочестивейшая из монахинь!"
- religious_decision.0103.reformer:0 "Святой Бор-Реформатор, Спаситель Теджина!"
+
+ #religious_decision.0103.prophet:0 "Святой Изиндубет Пророк, Великий Пастырь нашего народа!"
+ #religious_decision.0103.militant:0 "Святой Тамарзир Воинствующий, Почтенный Святой Меч!"
+ #religious_decision.0103.wise:0 "Святой Эрухор Мудрый, Отец Фелайи!"
+ #religious_decision.0103.pilgrim:0 "Святой Бродабан, покровитель паломников!"
+ #religious_decision.0103.anointed:0 "Святой Бавабатор Помазанник, Пример для всех нас!"
+ #religious_decision.0103.chaste:0 "Святая Бахгаллея Целомудренная, Благочестивейшая из монахинь!"
+ #religious_decision.0103.reformer:0 "Святой Бор-Реформатор, Спаситель Теджина!"
+
+ religious_decision.0103.prophet:0 "Святой [saintscope_prophet.GetFirstName] Пророк, Великий Пастырь нашего народа!"
+ religious_decision.0103.militant:0 "Святой [saintscope_militant.GetFirstName] Воинствующий, Почтенный Святой Меч!"
+ religious_decision.0103.wise:0 "Святой [saintscope_wise.GetFirstName] Мудрый, Отец Фелайи!"
+ religious_decision.0103.pilgrim:0 "Святой [saintscope_pilgrim.GetFirstName], покровитель паломников!"
+ religious_decision.0103.anointed:0 "Святой [saintscope_anointed.GetFirstName] Помазанник, Пример для всех нас!"
+ religious_decision.0103.chaste:0 "Святая [saintscope_chaste.GetFirstName] Целомудренная, Благочестивейшая из монахинь!"
+ religious_decision.0103.reformer:0 "Святой [saintscope_reformer.GetFirstName]-Реформатор, Спаситель Теджина!"
  religious_decision.0103.optout:0 "Столько святых..."
  religious_decision.0103.flavor:0 "Вы решаете пока не посвящать себя ни одному святому."
-  
