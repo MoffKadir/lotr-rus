@@ -1,28 +1,68 @@
 ﻿l_russian:
  LINE_BREAK:0 "\n"
-  
+
  SPECIAL_BUILDINGS_MAP:0 "Особые постройки"
  SIRO_SPECIAL_SLOT_MAP:0 "$game_concept_special_building$"
- SIRO_SPECIAL_SLOT_MAP_TOOLTIP:0 "#T Специальные постройки\n#!Shows все [special_buildings|E] на карте."
- SPECIAL_BUILD_DSC3:0 "#T [Localize(Concatenate('building_type_', ROOT.GetProvince.MakeScope.Var('special_build').GetFlagName) )] #![Localize('LINE_BREAK')][Localize(Concatenate( Объединить('тип_здания_', ROOT.GetProvince.MakeScope.Var('special_build').GetFlagName) , '_desc' ))]"
- #SPECIAL_BUILD_DSC3:0 "#T [GetBuilding(ROOT.GetProvince.MakeScope.Var('special_build').GetFlagName).GetNameNoTooltip] #![Localize('LINE_BREAK')][Localize(Concatenate( Объединить('тип_здания_', ROOT.GetProvince.MakeScope.Var('special_build').GetFlagName) , '_desc' ))]"
-  
+ SIRO_SPECIAL_SLOT_MAP_TOOLTIP:0 "#T Особые постройки\n#!Показывает все [special_buildings|El] на карте."
+ SPECIAL_BUILD_DSC3:"#T [Localize(Concatenate('building_type_', ROOT.GetProvince.MakeScope.Var('special_build').GetFlagName) )] #![Localize('LINE_BREAK')][Localize(Concatenate( Concatenate('building_type_', ROOT.GetProvince.MakeScope.Var('special_build').GetFlagName) , '_desc' ))]"
+ #SPECIAL_BUILD_DSC3:"#T [GetBuilding(ROOT.GetProvince.MakeScope.Var('special_build').GetFlagName).GetNameNoTooltip] #![Localize('LINE_BREAK')][Localize(Concatenate( Concatenate('building_type_', ROOT.GetProvince.MakeScope.Var('special_build').GetFlagName) , '_desc' ))]"
+
  REALMS_MAPMODES:0 "Королевства-в-Изгнании"
-  
+
  ALIGNMENT_MAP:0 "Приверженность"
  ALIGNMENT_MAP_TOOLTIP:0 "#T Приверженность\n#!Показывает приверженность [Concept( 'rulers', 'правителей' )|E] на карте."
-  
- TRIBUTARIES_MAP:0 "притоки"
- TRIBUTARIES_MAP_TOOLTIP:0 "#T Притоки\n#!Shows [tributaries|E] и их [suzerains|E] на карте."
-  
- RACIAL_HOMELANDS_MAP:0 "Родина"
- RACIAL_HOMELANDS_MAP_TOOLTIP:0 "#T Родины\n#!Shows [elven|E] расовые родины на карте."
-  
+ ALIGNMENT_MAP_MODE_TOOLTIP:0 "#T [ROOT.Province.GetCounty.GetTitle.GetName] предпочитает [ROOT.Province.MakeScope.Var('alignment_map_tooltip').GetFlagName]#!"
+ alignment_evil:0 "#V Зло"
+ alignment_dark:0 "#V Союз с Тьмой"
+ alignment_neutral:0 "#V Нейтралитет"
+ alignment_light:0 "#V Союз со Светом"
+ alignment_good:0 "#V Добро"
+
+ TRIBUTARIES_MAP:0 "Данники"
+ TRIBUTARIES_MAP_TOOLTIP:0 "#T Данники\n#!Показывает [Concept( 'tributaries', 'данников' )|E] и их [Concept( 'suzerains', 'сюзеренов' )|E] на карте."
+ TRIBUTARIES_MAP_MODE_TOOLTIP:0 "#T [ROOT.Province.GetCounty.GetCount.GetTopLiege.GetPrimaryTitle.GetNameNoTier] [ROOT.Province.MakeScope.Var('tributaries_map_tooltip').GetFlagName] [ROOT.Province.GetCounty.GetCount.GetTopLiege.MakeScope.Var('my_suzerain').Char.GetName|N]#!"
+
+ no_relationship:0 "не относится к данничеству"
+ tributary:0 "#N является государством-данником державы#!"
+ client:0 "#N является государством-клиентом державы#!"
+ protectorate:0 "#N является протекторатом державы#!"
+ suzerain:0 "#P - сюзерен#!"
+ protector:0 "#P - протектор#!"
+
+ RACIAL_HOMELANDS_MAP:0 "Родные земли"
+ RACIAL_HOMELANDS_MAP_TOOLTIP:0 "#T Родные земли\n#!Показывает на карте [Concept( 'elven', 'эльфийские' )|E] родные земли."
+
  TRADE_ROUTES_MAP:0 "Торговые пути"
- TRADE_ROUTES_MAP_TOOLTIP:0 "#T Торговые пути\n#!Shows торговые пути на карте."
-  
+ TRADE_ROUTES_MAP_TOOLTIP:0 "#T Торговые пути\n#!Показывает торговые пути на карте."
+
  RELICS_MAP:0 "Реликвии"
- RELICS_MAP_TOOLTIP:0 "#T Реликвии\n#!Highlights провинции, в которых находятся владельцы уникальных артефактов."
-  
- EYECANDY_MAP:0 "глазная конфета"
- EYECANDY_MAP_TOOLTIP:0 "#T Eyecandy\n#!Shows минимум информации на карте, чтобы лучше любоваться местностью."
+ RELICS_MAP_TOOLTIP:0 "#T Реликвии\n#!Подсвечивает провинции, в которых находятся владельцы уникальных артефактов."
+
+ EYECANDY_MAP:0 "Отрада для глаз"
+ EYECANDY_MAP_TOOLTIP:0 "#T Отрада для глаз\n#!Оставляет минимум информации на карте, чтобы лучше рассмотреть местность."
+
+ RESOURCES_MAP:0 "Ресурсы"
+ RESOURCES_MAP_TOOLTIP:0 "#T Ресурсы\n#!Показывает [mineral_resources|El], обнаруженные в ходе поисковых работ в высокогорьях Средиземья."
+ RESOURCES_MAP_MODE_TOOLTIP:0 "#T Баронство [ROOT.Province.GetName]:\n[ROOT.Province.MakeScope.Var('resource_map_tooltip').GetFlagName]#!\n[ROOT.Province.MakeScope.Var('mithril_common').GetFlagName][ROOT.Province.MakeScope.Var('gold_common').GetFlagName][ROOT.Province.MakeScope.Var('silver_common').GetFlagName][ROOT.Province.MakeScope.Var('lead_common').GetFlagName][ROOT.Province.MakeScope.Var('tin_common').GetFlagName][ROOT.Province.MakeScope.Var('copper_common').GetFlagName][ROOT.Province.MakeScope.Var('iron_common').GetFlagName][ROOT.Province.MakeScope.Var('diamond_common').GetFlagName][ROOT.Province.MakeScope.Var('ruby_common').GetFlagName][ROOT.Province.MakeScope.Var('sapphire_common').GetFlagName][ROOT.Province.MakeScope.Var('emerald_common').GetFlagName][ROOT.Province.MakeScope.Var('amethyst_common').GetFlagName][ROOT.Province.MakeScope.Var('onyx_common').GetFlagName][ROOT.Province.MakeScope.Var('peridot_common').GetFlagName][ROOT.Province.MakeScope.Var('quartz_common').GetFlagName][ROOT.Province.MakeScope.Var('mithril_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('gold_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('silver_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('lead_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('tin_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('copper_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('iron_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('diamond_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('ruby_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('sapphire_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('emerald_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('amethyst_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('onyx_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('peridot_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('quartz_uncommon').GetFlagName][ROOT.Province.MakeScope.Var('mithril_rare').GetFlagName][ROOT.Province.MakeScope.Var('gold_rare').GetFlagName][ROOT.Province.MakeScope.Var('silver_rare').GetFlagName][ROOT.Province.MakeScope.Var('lead_rare').GetFlagName][ROOT.Province.MakeScope.Var('tin_rare').GetFlagName][ROOT.Province.MakeScope.Var('copper_rare').GetFlagName][ROOT.Province.MakeScope.Var('iron_rare').GetFlagName][ROOT.Province.MakeScope.Var('diamond_rare').GetFlagName][ROOT.Province.MakeScope.Var('ruby_rare').GetFlagName][ROOT.Province.MakeScope.Var('sapphire_rare').GetFlagName][ROOT.Province.MakeScope.Var('emerald_rare').GetFlagName][ROOT.Province.MakeScope.Var('amethyst_rare').GetFlagName][ROOT.Province.MakeScope.Var('onyx_rare').GetFlagName][ROOT.Province.MakeScope.Var('peridot_rare').GetFlagName][ROOT.Province.MakeScope.Var('quartz_rare').GetFlagName]"
+
+ no_resources:0 "#V Нет ресурсов#!"
+ not_yet_prospected:0 "#V Неизведанные ресурсы:#!"
+ mithril:0 "#P Мифрил#!"
+ gold:0 "#P Золото#!"
+ silver:0 "#P Серебро#!"
+ iron:0 "#P Железо#!"
+ copper:0 "#P Медь#!"
+ tin:0 "#P Олово#!"
+ lead:0 "#P Свинец#!"
+ diamond:0 "#P Алмазы#!"
+ ruby:0 "#P Рубины#!"
+ sapphire:0 "#P Сапфиры#!"
+ emerald:0 "#P Изумруды#!"
+ amethyst:0 "#P Аметисты#!"
+ onyx:0 "#P Ониксы#!"
+ peridot:0 "#P Хризолит#!"
+ quartz:0 "#P Кварц#!"
+
+ no_text_appears:0 ""
+
+#  RESOURCES_MAP_MODE_TOOLTIP:0 "#T County [control|e] of [ROOT.Province.GetTag]: [ROOT.Province.GetCounty.GetControlLevelOutOfMax]#!\n[ROOT.Province.GetCounty.GetCountyControlEffectsDesc]\n\n[ROOT.Province.GetCounty.GetCountyControlIncreaseDesc]"
