@@ -1,21 +1,26 @@
 ﻿l_russian:
-  ### Additions to Vanilla ### 
- steward_convince_dejure_potential_county_faith_alignment_tt:0 "They view our faith as [faith_hostile|E] or [faith_evil|E]"
-  
-  ### Game Mechanics ### 
- NUMENOREAN_BLOOD_HIGHER_TIER_REASON:0 "Нуменорская кровь вашего Кандидата сильнее:0 $VALUE|=+0$"
- NUMENOREAN_BLOOD_LOWER_TIER_REASON:0 "Нуменорская кровь вашего Кандидата слабее:0 $VALUE|=+0$"
- TOO_YOUNG_TO_MARRY:0 "Возраст персонажа [secondary_recipient.GetShortUIName|U] слишком низок для заключения брака:0 $VALUE|=+0$"
-  
- offer_vassalization_interaction_aibehavior_different_religion_tt:0 "You are of a different [religion|E]:0 $VALUE|=+0$"
-  
-  
- offer_vassalization_khand_vracarath_tt:0 "You are the ruler of $e_khand$:0 $VALUE|=+0$"
- offer_vassalization_lower_khand_vracarath_tt:0 "You are the ruler of $k_lower_khand$:0 $VALUE|=+0$"
- offer_vassalization_upper_khand_vracarath_tt:0 "You are the ruler of $k_upper_khand$:0 $VALUE|=+0$"
-  
- WESTRON_LINGUA_FRANCA:0 "Общепринятый язык в западных землях:0 $VALUE|=+0$"
-  
+ ### Additions to Vanilla ###
+ steward_convince_dejure_potential_county_faith_alignment_tt:0 "Они считают нашу конфессию [Concept( 'faith_hostile', 'врагами' )|E] или [Concept( 'faith_evil', 'воплощённым злом' )|E]"
+ nomad_war_band: "Наём кочевого отряда"
+ nomad_war_band_desc: "Этот персонаж нанял банду кочевников для обучения своих войск, что повергло в ужас некоторых его вассалов."
+
+ rebuffed_nomad_war_band: "Отпор кочевым воинам"
+ rebuffed_nomad_war_band_desc: "Во время странствий этот персонаж нагло обошёл большой отряд кочевых воинов в невероятном испытании на храбрость."
+
+ ### Game Mechanics ###
+ NUMENOREAN_BLOOD_HIGHER_TIER_REASON:0 "Нуменорская кровь вашего кандидата более чиста: $VALUE|=+0$"
+ NUMENOREAN_BLOOD_LOWER_TIER_REASON:0 "Нуменорская кровь вашего кандидата слабее: $VALUE|=+0$"
+ TOO_YOUNG_TO_MARRY:0 "[secondary_recipient.GetShortUIName|U] ещё слишком [Select_CString(secondary_recipient.IsFemale, 'молода', 'молод' )], чтобы [Select_CString(secondary_recipient.IsFemale, 'выходить замуж', 'жениться' )]: $VALUE|=+0$"
+
+ offer_vassalization_interaction_aibehavior_different_religion_tt:0 "У вас другая [religion|El]:0 $VALUE|=+0$"
+
+
+ offer_vassalization_khand_vracarath_tt:0 "Вы правите державой $e_khand$:0 $VALUE|=+0$"
+ offer_vassalization_lower_khand_vracarath_tt:0 "Вы правите державой $k_lower_khand$:0 $VALUE|=+0$"
+ offer_vassalization_upper_khand_vracarath_tt:0 "Вы правите державой $k_upper_khand$:0 $VALUE|=+0$"
+
+ WESTRON_LINGUA_FRANCA:0 "Общепринятый язык в западных землях: $VALUE|=+0$"
+
  slave_influx_modifier_county:0 "Приток рабов"
  slave_influx_modifier_county_desc:0 "В провинции наблюдается наплыв новых рабов, захваченных в последней экспедиции. В основном они трудятся на строительстве или обрабатывают поля."
  slave_influx_modifier_duchy:0 "Приток рабов"
@@ -24,86 +29,86 @@
  slave_influx_modifier_kingdom_desc:0 "В провинции наблюдается наплыв новых рабов, захваченных в последней экспедиции. В основном они трудятся на строительстве или обрабатывают поля."
  slave_influx_modifier_empire:0 "Приток рабов"
  slave_influx_modifier_empire_desc:0 "В провинции наблюдается наплыв новых рабов, захваченных в последней экспедиции. В основном они трудятся на строительстве или обрабатывают поля."
-  
-  ### Elves ### 
+
+ ### Elves ###
  elves_in_edhellond:0 "Эльфийское влияние"
- bustling_elven_harbour:0 "Bustling elven harbour"
-  
-  
-  ### Dúnedain Modifiers ### 
+ bustling_elven_harbour:0 "Оживлённая эльфийская гавань"
+
+
+ ### Dúnedain Modifiers ###
  anduril_modifier:0 "Андуриль"
- anduril_modifier_desc:0 "Перекованный и восстановленный из обломков [narsil|E], "[flameofthewest|E]" символизирует воодушевление и силу дунэдайн."
+ anduril_modifier_desc:0 "Перекованный и восстановленный из обломков [Concept( 'narsil', 'Нарсиля' )|E], «[flameofthewest|E]» символизирует воодушевление и силу дунэдайн."
  princely_house_of_dol_amroth:0 "Княжеский дом Дол Амрота"
- princely_house_of_dol_amroth_desc:0 "Из-за их связи с Элендилом эта династия была удостоена княжеской чести."
- princely_house_of_ithilien:0 "Княжеский дом Итилиэн"
+ princely_house_of_dol_amroth_desc:0 "Из-за их связи с Элендилем эта династия была удостоена княжеской чести."
+ princely_house_of_ithilien:0 "Княжеский дом Итилиэна"
  princely_house_of_ithilien_desc:0 "Благодаря их верному служению королям Гондора, этот дом был удостоен княжеской чести."
  princely_house_of_cardolan:0 "Княжеский дом Кардолана"
  princely_house_of_cardolan_desc:0 "Из-за их готовности признать истинных королей Арнора этому дому была дарована княжеская честь."
  siege_of_gondor:0 "Осада Гондора"
- siege_of_gondor_desc:0 "Гондор оказывается в тяжелом положении со стороны своих многочисленных врагов. И все же доблесть Гондора не истощается и сплачивается, чтобы защитить себя."
+ siege_of_gondor_desc:0 "Гондор оказывается в тяжелом положении со стороны своих многочисленных врагов. И всё же доблесть Гондора не истощается и сплачивается, чтобы защитить себя."
  return_of_the_king_modifier:0 "Возвращение короля"
- return_of_the_king_modifier_desc:0 "Возвращение их короля обновило боевой дух [gondorian|E]. Теперь он сплачивает их для последнего удара по Темному Лорду и его прислужникам."
-  
-  ### War Misc ### 
- lotr_conquering_modifier:0 "Great Conquerors"
- lotr_conquering_modifier_desc:0 "Whether out of need or desire for glory, members of this house intend on immortalising their name, worthy amongst even the most revered of their ancestors through blood and iron."
-  
-  ### Dorwinion Factions ### 
- winelords:0 "Винные Лорды"
- winelords_desc:0 "Эта династия встала на сторону Винных Лордов."
- master_merchants:0 "Великие Купцы"
- master_merchants_desc:0 "Эта династия относит себя к Великим Купцам."
-  
-  ### Rhovanion Modifiers ### 
+ return_of_the_king_modifier_desc:0 "Возвращение их короля обновило боевой дух [Concept( 'gondorian', 'гондорцев' )|E]. Теперь он сплачивает их для последнего удара по Тёмному Властелину и его прислужникам."
+
+ ### War Misc ###
+ lotr_conquering_modifier:0 "Великие завоеватели"
+ lotr_conquering_modifier_desc:0 "Из нужды или жажды славы члены этого дома намерены увековечить свое имя, достойное даже самых почитаемых предков, с помощью крови и стали."
+
+ ### Dorwinion Factions ###
+ winelords:0 "Винные лорды"
+ winelords_desc:0 "Эта династия встала на сторону Винных лордов."
+ master_merchants:0 "Великие купцы"
+ master_merchants_desc:0 "Эта династия встала на сторону Великих купцов."
+
+ ### Rhovanion Modifiers ###
  heir_of_vidugavia:0 "Наследник Видугавии"
- heir_of_vidugavia_desc:0 "Стойкое лидерство этой династии привело к восстановлению Королевства Рованион, и их народ надеется, что они продолжат вести их в будущее."
+ heir_of_vidugavia_desc:0 "Стойкое лидерство этой династии привело к восстановлению королевства Рованион, и их народ надеется, что они продолжат вести их в будущее."
  savior_of_rhovanion:0 "Спаситель Рованиона"
  savior_of_rhovanion_desc:0 "Этот персонаж отвоевал равнины Рованиона для своего народа, а процветание и размеры их владений превосходят даже легендарную Видугавию. Они уже становятся персонажами легенд и фольклора, почитаемыми и почитаемыми своим народом."
-  
-  ### Rhun Modifiers ### 
- rising_star_medloshukain:0 "Rising Star of Medlóshûkain"
- rising_star_medloshukain_desc:0 "Due to their personal prowess and popularity with their peers, this lord seems like a shoe-in to the position of Loke-kan"
-  
-  ### Anduin Vale ### 
+
+ ### Rhun Modifiers ###
+ rising_star_medloshukain:0 "Восходящая звезда Медлошукайна"
+ rising_star_medloshukain_desc:0 "Благодаря своей личной доблести и популярности среди подданных, этот персонаж, кажется, может занять трон Локе-кана."
+
+ ### Anduin Vale ###
  aladegan:0 "Аледеган"
- aladegan_desc:0 "Эта династия признаётся в качестве дома Аледегана, полноправных правителей Леса и Долины"
-  
-  ### Khand ### 
- ascendant_khand:0 "Лидеры возрождающегося Кханда"
+ aladegan_desc:0 "Эта династия признаётся в качестве законного дома Аледеган, владык Леса и Долины"
+
+ ### Khand ###
+ ascendant_khand:0 "Предводители возрождающегося Кханда"
  ascendant_khand_desc:0 "Эта династия привела Кханд в золотую эру расцвета, силы и единения. И хотя, как правило, Кханд после смерти правителя распадается на малые части, эта династия столь известна и любима, что ей, возможно, удасться предотвратить скорый распад."
-  
-  ### Dunedain Widowhood ### 
+
+ ### Dúnedain Widowhood ###
  refused_widowhood_modifier:0 "Отказ от вдовства"
  refused_widowhood_modifier_desc:0 "Этот персонаж решил не соблюдать традиции своего народа и отказался исполнить свои священные обязательства о верности одному человеку в браке даже в посмертии."
-  
-  ### Oath of Eorl ### 
+
+ ### Oath of Eorl ###
  raised_large_oath_host_modifier:0 "Поднял большое воинство"
- raised_large_oath_host_modifier_desc:0 "Этот персонаж выполнил свою Клятву и послал большое войско в поддержку своего союзника."
+ raised_large_oath_host_modifier_desc:0 "Этот персонаж выполнил свою клятву и послал большое войско в поддержку своего союзника."
  raised_small_oath_host_modifier:0 "Поднял малое воинство"
- raised_small_oath_host_modifier_desc:0 "Этот персонаж выполнил свою Клятву и послал небольшое войско в поддержку своего союзника."
+ raised_small_oath_host_modifier_desc:0 "Этот персонаж выполнил свою клятву и послал небольшое войско в поддержку своего союзника."
  muster_of_rohan_modifier:0 "Рохан собирает войска"
- muster_of_rohan_modifier_desc:0 "Этот персонаж ответил на призы сюзерена и отправил ему в поддержку эоред."
-  
-  ### Isengard ### 
+ muster_of_rohan_modifier_desc:0 "Этот персонаж ответил на призыв сюзерена и отправил ему в поддержку эоред."
+
+ ### Isengard ###
  friend_of_the_dunlendings_character_modifier:0 "Друг дунландцев"
  friend_of_the_dunlendings_character_modifier_desc:0 "Этот персонаж работал над объединением дунландцев под властью их собственного народа, заслужив их благодарность."
  enemy_of_the_dunlendings_character_modifier:0 "Враг дунландцев"
  enemy_of_the_dunlendings_character_modifier_desc:0 "Этот персонаж несправедливо претендовал на земли Дунланда и стремился заставить его жителей преклонить колени против их воли."
  unifier_of_the_dunlendings_character_modifier:0 "Объединитель дунландцев"
  unifier_of_the_dunlendings_character_modifier_desc:0 "Этот персонаж сумел объединить свой раздробленный народ под единым знаменем, заслужив их любовь."
- herdfolk_dunlending_opinion:0 "Herdfolk Dunlending Opinion" !
- hill_dunlending_opinion:0 "Hill Dunlending Opinion" !
- isengard_dunlending_opinion:0 "Мнение Изенгарда Дунландца"
+ dunlending_opinion:0 "Мнение дунландцев-скотоводов"
+ adornaen_opinion:0 "Мнение холмовых дунландцев"
+ isengard_dunlending_opinion:0 "Мнение изенгардских дунландцев"
  gondorian_opinion:0 "Гондорское мнение"
  rohirrim_opinion:0 "Мнение Рохиррим"
  loyal_dunlendings_of_isengard_county_modifier:0 "Верные дунландские гарнизоны"
- loyal_dunlendings_of_isengard_county_modifier_desc:0 "Гарнизон в этой провинции был поддержан группой верных воинов Дунландца."
- stripped_of_raw_resources_county_modifier:0 "Исчерпаны природные ресурсы"
+ loyal_dunlendings_of_isengard_county_modifier_desc:0 "Гарнизон в этой провинции был поддержан группой верных воинов из Дунланда."
+ stripped_of_raw_resources_county_modifier:0 "Исчерпанные природные ресурсы"
  stripped_of_raw_resources_county_modifier_desc:0 "Многие естественные запасы камня и древесины были истощены за пределами Изенгарда, чтобы удовлетворить постоянно растущие потребности промышленности."
  shoddy_steel_character_modifier:0 "Низкокачественная сталь"
  shoddy_steel_character_modifier_desc:0 "Этот персонаж не смог обеспечить свои кузницы ресурсами, необходимыми для правильной работы, что привело к более низкому качеству стали для вооружения отрядов под их командованием."
- mustered_rohirrim_character_modifier:0 "Эоэрэ Собрана"
- mustered_rohirrim_character_modifier_desc:0 "Этот персонаж собрал большую часть своих войск, чтобы сформировать Эохэрэ для защиты Риддермарка."
+ mustered_rohirrim_character_modifier:0 "Созванная Эохере"
+ mustered_rohirrim_character_modifier_desc:0 "Этот персонаж созвал большую часть своих войск, чтобы сформировать Эохере для защиты Риддермарка."
  ineffective_agents_character_modifier:0 "Неэффективные агенты"
  ineffective_agents_character_modifier_desc:0 "Агенты этого персонажа недавно доказали свою неэффективность в проведении интриг и коварства."
  industrialised_isengard_1_county_modifier:0 "Мастерские Изенгарда"
@@ -113,239 +118,241 @@
  industrialised_isengard_3_county_modifier:0 "Промышленный комплекс Изенгарда"
  industrialised_isengard_3_county_modifier_desc:0 "Орки под командованием Сарумана разграбили древние нуменорские сады Изенгарда и вырыли подземный промышленный лабиринт, питая постоянно растущую военную машину волшебника."
  industrialised_isengard_1_province_modifier:0 "Ямы Изенгарда"
- industrialised_isengard_1_province_modifier_desc:0 "Эти ямы дали свежий камень и металл под ныне опустошенными садами Изенгарда."
+ industrialised_isengard_1_province_modifier_desc:0 "Эти ямы дали свежий камень и металл под ныне опустошёнными садами Изенгарда."
  industrialised_isengard_2_province_modifier:0 "Копи Изенгарда"
  industrialised_isengard_2_province_modifier_desc:0 "Богатства земли выкапываются из глубин Изенгарда как орками, так и людьми."
  industrialised_isengard_3_province_modifier:0 "Лабиринт Изенгарда"
- industrialised_isengard_3_province_modifier_desc:0 "Рабочие трудятся в постоянно растущей сети лабиринтов туннелей и пещер, добывая все ценное из земли под Изенгардом."
- westfold_raided_county_modifier:0 "Рейды в Вестфолде"
- westfold_raided_county_modifier_desc:0 "Эта провинция недавно подверглась набегам, и ее жители были разорены бандой организованных орков и дунландцев."
- seat_of_the_new_dark_lord_county_modifier:0 "Престол Нового Темного Лорда"
- seat_of_the_new_dark_lord_county_modifier_desc:0 "Эта провинция была укреплена Саруманом как место его власти в качестве нового Темного Лорда Средиземья."
- dunland_capital_modifier:0 "Место Верховного Короля"
- dunland_capital_modifier_desc:0 "Верховный король Дунланда выбрал эту провинцию своей столицей, и она принимает множество поселенцев-дунландцев."
- academy_tuition_fees_modifier_1:0 "Стоимость обучения"
- academy_tuition_fees_modifier_1_desc:0 "Этот персонаж получает регулярный доход от учеников, посещающих их академию."
- academy_tuition_fees_modifier_2:0 "Стоимость обучения"
- academy_tuition_fees_modifier_2_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих их академии."
- academy_tuition_fees_modifier_3:0 "Стоимость обучения"
- academy_tuition_fees_modifier_3_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих их академии."
- academy_tuition_fees_modifier_4:0 "Стоимость обучения"
- academy_tuition_fees_modifier_4_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих их академии."
- academy_tuition_fees_modifier_5:0 "Стоимость обучения"
- academy_tuition_fees_modifier_5_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих их академии."
- academy_tuition_fees_modifier_6:0 "Стоимость обучения"
- academy_tuition_fees_modifier_6_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих их академии."
- academy_tuition_fees_modifier_7:0 "Стоимость обучения"
- academy_tuition_fees_modifier_7_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих их академии."
- academy_tuition_fees_modifier_8:0 "Стоимость обучения"
- academy_tuition_fees_modifier_8_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих их академии."
- academy_tuition_fees_modifier_9:0 "Стоимость обучения"
- academy_tuition_fees_modifier_9_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих их академии."
- academy_tuition_fees_modifier_10:0 "Стоимость обучения"
- academy_tuition_fees_modifier_10_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих их академии."
-  ### Elf Modifiers ### 
- elf_childraising_modifier:0 "Воспитание ребенка"
+ industrialised_isengard_3_province_modifier_desc:0 "Рабочие трудятся в постоянно растущей сети лабиринтов туннелей и пещер, добывая всё ценное из земли под Изенгардом."
+ westfold_raided_county_modifier:0 "Налёты в Вестфолде"
+ westfold_raided_county_modifier_desc:0 "Эта провинция недавно подверглась набегам, и её жители были разорены бандой организованных орков и дунландцев."
+ seat_of_the_new_dark_lord_county_modifier:0 "Престол нового Тёмного Властелина"
+ seat_of_the_new_dark_lord_county_modifier_desc:0 "Эта провинция была укреплена Саруманом как оплот его власти в качестве нового Темного Властелина Средиземья."
+ dunland_capital_modifier:0 "Трон Верховного короля"
+ dunland_capital_modifier_desc:0 "Верховный король Дунланда выбрал эту провинцию своей столицей, и в неё стекается множество поселенцев-дунландцев."
+ academy_tuition_fees_modifier_1:0 "Плата за обучение"
+ academy_tuition_fees_modifier_1_desc:0 "Этот персонаж получает регулярный доход от учеников, посещающих его академию."
+ academy_tuition_fees_modifier_2:0 "Плата за обучение"
+ academy_tuition_fees_modifier_2_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих его академии."
+ academy_tuition_fees_modifier_3:0 "Плата за обучение"
+ academy_tuition_fees_modifier_3_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих его академии."
+ academy_tuition_fees_modifier_4:0 "Плата за обучение"
+ academy_tuition_fees_modifier_4_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих его академии."
+ academy_tuition_fees_modifier_5:0 "Плата за обучение"
+ academy_tuition_fees_modifier_5_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих его академии."
+ academy_tuition_fees_modifier_6:0 "Плата за обучение"
+ academy_tuition_fees_modifier_6_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих его академии."
+ academy_tuition_fees_modifier_7:0 "Плата за обучение"
+ academy_tuition_fees_modifier_7_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих его академии."
+ academy_tuition_fees_modifier_8:0 "Плата за обучение"
+ academy_tuition_fees_modifier_8_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих его академии."
+ academy_tuition_fees_modifier_9:0 "Плата за обучение"
+ academy_tuition_fees_modifier_9_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих его академии."
+ academy_tuition_fees_modifier_10:0 "Плата за обучение"
+ academy_tuition_fees_modifier_10_desc:0 "Этот персонаж получает регулярный доход от студентов, посещающих его академии."
+ ### Elf Modifiers ###
+ elf_childraising_modifier:0 "Воспитание ребёнка"
  elf_childraising_modifier_desc:0 "Этот персонаж и его супруг духовно привержены воспитанию своего ребенка до зрелости."
  elf_child_limit_modifier:0 "Закончили воспитывать детей"
- elf_child_limit_modifier_desc:0 "Этот эльф завершил часть своей жизни, связанную с воспитанием детей, и их желание производить потомство прекратилось.\n\nХотя они всегда будут оглядываться на те дни с большой любовью, теперь они направили свои силы тела и разума на другие задачи и искусства."
-  
+ elf_child_limit_modifier_desc:0 "Этот эльф завершил часть своей жизни, связанную с воспитанием детей, и его желание производить потомство прекратилось.\n\nХотя он всегда будут оглядываться на те дни с большой любовью, теперь он направили свои силы тела и разума на другие задачи и искусства."
+
  elven_homeland_county_modifier:0 "Родина эльфов"
- elven_homeland_county_modifier_desc:0 "Это графство является традиционной родиной эльфов и может стать целью Elven Restoration Casus Belli."
-  
+ elven_homeland_county_modifier_desc:0 "Это графство является традиционной родиной эльфов и может стать целью казус белли «Эльфийское возвращение»."
+
  valar_ban_modifier:0 "Запрет Валар"
- valar_ban_modifier_desc:0 "Из-за их мятежа, гордыни или отказа покаяться этот персонаж находится под запретом Валар, лишенным права плавать в Валинор."
-  
- hidden_elven_refugees_modifier:0 "Скрытые эльфийские беженцы"
- hidden_elven_refugees_modifier_desc:0 "Хотя подавляющее большинство эльфов, которые когда-то жили здесь, бежали, все же остались некоторые упрямые противники, наносящие удары по оккупантам их земли из скрытых убежищ."
-  
- marauding_orc_drags_modifier:0 "Мародерство орков"
- marauding_orc_drags_modifier_desc:0 "Хотя орки, которые когда-то населяли эту землю, обычно либо бежали, либо были преданы мечу, некоторые банды орков все еще бродят по земле, грабя и преследуя жителей."
-  
+ valar_ban_modifier_desc:0 "Из-за своего мятежа, гордыни или отказа покаяться этот персонаж находится под запретом Валар и лишён права отплыть в Валинор."
+
+ hidden_elven_refugees_modifier:0 "Скрытые эльфийские убежища"
+ hidden_elven_refugees_modifier_desc:0 "Хотя подавляющее большинство эльфов, которые когда-то жили здесь, бежали, всё же остались некоторые упрямые противники, наносящие удары по оккупантам их земли из скрытых убежищ."
+
+ marauding_orc_drags_modifier:0 "Орки-мародёры"
+ marauding_orc_drags_modifier_desc:0 "Хотя орки, которые когда-то населяли эту землю, обычно либо бежали, либо были преданы мечу, некоторые банды орков всё ещё бродят по окрестностям, грабя и преследуя жителей."
+
  legacy_of_oropher_modifier:0 "Наследие Орофера"
  light_of_the_forest_modifier:0 "Свет леса"
-  
-  ### Route Modifiers ### 
-  
- rhun_road_province_modifier:0 "Рун Роуд"
+
+ ### Route Modifiers ###
+
+ rhun_road_province_modifier:0 "Дорога Руна"
  rhun_road_province_modifier_desc:0 "Эта провинция лежит на «Дороге Руна», главном торговом пути с востока на запад в северном Средиземье."
- rhun_road_income_character_modifier_1:0 "Плата за проезд по Рун-Роуд (I)"
- rhun_road_income_character_modifier_1_desc:0 "Этот персонаж контролирует небольшой участок Рунской дороги, способный взимать мизерные пошлины с караванов и путешественников."
- rhun_road_income_character_modifier_2:0 "Плата за проезд Рун-Роуд (II)"
- rhun_road_income_character_modifier_2_desc:0 "Этот персонаж контролирует средний сегмент Рунской дороги, способный взимать небольшую плату с караванов и путешественников."
- rhun_road_income_character_modifier_3:0 "Плата за проезд Рун-Роуд (III)"
- rhun_road_income_character_modifier_3_desc:0 "Этот персонаж контролирует примерно треть Рунской дороги, способный взимать приличную сумму пошлин с караванов и путешественников."
+ rhun_road_income_character_modifier_1:0 "Плата за проезд по дороге Руна (I)"
+ rhun_road_income_character_modifier_1_desc:0 "Этот персонаж контролирует небольшой участок дороги Руна и может взимать мизерные пошлины с караванов и путешественников."
+ rhun_road_income_character_modifier_2:0 "Плата за проезд по дороге Руна (II)"
+ rhun_road_income_character_modifier_2_desc:0 "Этот персонаж контролирует средний сегмент дороги Руна и может взимать небольшую плату с караванов и путешественников."
+ rhun_road_income_character_modifier_3:0 "Плата за проезд по дороге Руна (III)"
+ rhun_road_income_character_modifier_3_desc:0 "Этот персонаж контролирует примерно треть дороги Руна и может взимать приличную сумму пошлин с караванов и путешественников."
  rhun_road_income_character_modifier_4:0 "Плата за проезд по Рун-Роуд (IV)"
- rhun_road_income_character_modifier_4_desc:0 "Этот персонаж контролирует чуть менее половины Рунской дороги, способной взимать солидные пошлины с караванов и путешественников."
- rhun_road_income_character_modifier_5:0 "Плата за проезд Рун-Роуд (V)"
- rhun_road_income_character_modifier_5_desc:0 "Этот персонаж контролирует примерно половину Рун-роуд, способный взимать значительную плату с караванов и путешественников."
- rhun_road_income_character_modifier_6:0 "Плата за проезд Рун-Роуд (VI)"
- rhun_road_income_character_modifier_6_desc:0 "Этот персонаж контролирует большую часть Рунской дороги и может взимать значительную плату с караванов и путешественников."
- rhun_road_income_character_modifier_7:0 "Плата за проезд Рун-Роуд (VII)"
- rhun_road_income_character_modifier_7_desc:0 "Этот персонаж контролирует большую часть Рунской дороги и может взимать огромные суммы с караванов и путешественников."
- rhun_road_income_character_modifier_8:0 "Плата за проезд Рун-Роуд (VIII)"
- rhun_road_income_character_modifier_8_desc:0 "Этот персонаж контролирует три четверти Рунской дороги и может взимать большие пошлины с караванов и путешественников."
- rhun_road_income_character_modifier_9:0 "Плата за проезд Рун-Роуд (IX)"
+ rhun_road_income_character_modifier_4_desc:0 "Этот персонаж контролирует чуть менее половины дороги Руна и может взимать солидные пошлины с караванов и путешественников."
+ rhun_road_income_character_modifier_5:0 "Плата за проезд по дороге Руна (V)"
+ rhun_road_income_character_modifier_5_desc:0 "Этот персонаж контролирует примерно половину дороги Руна и может взимать значительную плату с караванов и путешественников."
+ rhun_road_income_character_modifier_6:0 "Плата за проезд по дороге Руна (VI)"
+ rhun_road_income_character_modifier_6_desc:0 "Этот персонаж контролирует большую часть дороги Руна и может взимать значительную плату с караванов и путешественников."
+ rhun_road_income_character_modifier_7:0 "Плата за проезд по дороге Руна (VII)"
+ rhun_road_income_character_modifier_7_desc:0 "Этот персонаж контролирует большую часть дороги Руна и может взимать огромные суммы с караванов и путешественников."
+ rhun_road_income_character_modifier_8:0 "Плата за проезд по дороге Руна (VIII)"
+ rhun_road_income_character_modifier_8_desc:0 "Этот персонаж контролирует три четверти дороги Руна и может взимать большие пошлины с караванов и путешественников."
+ rhun_road_income_character_modifier_9:0 "Плата за проезд по дороге Руна (IX)"
  rhun_road_income_character_modifier_9_desc:0 "Этот персонаж контролирует почти всю Рунскую дорогу, способную взимать прибыль с караванов и путешественников."
- rhun_road_income_character_modifier_10:0 "Плата за проезд Рун-Роуд (X)"
- rhun_road_income_character_modifier_10_desc:0 "Этот персонаж контролирует всю Рунскую дорогу, способный диктовать любые пошлины караванам и путешественникам, которые они пожелают."
-  
-  ### Orc Modifiers ### 
+ rhun_road_income_character_modifier_10:0 "Плата за проезд по дороге Руна (X)"
+ rhun_road_income_character_modifier_10_desc:0 "Этот персонаж контролирует всю Рунскую дорогу и может диктовать любые пошлины караванам и путешественникам, которые он пожелает."
+
+ ### Orc Modifiers ###
  berserker_training_modifier:0 "Путь берсеркера"
  berserker_training_modifier_desc:0 "Этот персонаж тренируется, чтобы стать берсеркером."
-  
+
  orc_traitor_modifier:0 "Орк-предатель"
  orc_traitor_modifier_desc:0 "Этот персонаж — предатель, который свернул с истинного орочьего пути."
-  
+
  orc_challenge_retired_modifier:0 "Грязный трус"
  orc_challenge_retired_modifier_desc:0 "Этот персонаж — трус, который не явился на бой, который сам же и спровоцировал."
-  
+
  orc_challenge_rejected_modifier:0 "Отклонил бой насмерть"
  orc_challenge_rejected_modifier_desc:0 "Этот персонаж отклонил вызов на смертельную схватку."
-  
- orc_challenge_win_modifier:0 "Достойный лидер орков"
- orc_challenge_win_modifier_desc:0 "Этот персонаж одержал верх в схватке на смерть и утвердил собственное лидерство."
-  
+
+ orc_challenge_win_modifier:0 "Достойный предводитель орков"
+ orc_challenge_win_modifier_desc:0 "Этот персонаж одержал верх в схватке насмерть и утвердил собственное лидерство."
+
  orc_great_warchief_modifier:0 "Великий вождь"
  orc_great_warchief_modifier_desc:0 "Этот персонаж объединил орков под своими знамёнами с помощью силы и жестокости, послужив вестником новой эры доминирования орков."
-  
+
  orc_champion_bodyguard_modifier:0 "Орочий воин-телохранитель"
  orc_champion_bodyguard_modifier_desc:0 "Этот персонаж нанял на службу могучего орка-воителя."
-  
+
  orcs_morgai_fly_master_modifier:0 "Моргайский муховод"
- orcs_morgai_fly_master_modifier_desc:0 "Самопровозглашённый дрессировщик жутких и опасных Моргайских мух. В этом персонаже мухи организовали своё гнездо. На него неприятно смотреть, а сойтись с ним в бою – и вовсе страшно. Но жить ему осталось, вероятно, недолго..."
-  
+ orcs_morgai_fly_master_modifier_desc:0 "Самопровозглашённый дрессировщик жутких и опасных Моргайских мух. В этом персонаже мухи устроили своё гнездо. На него неприятно смотреть, а сойтись с ним в бою – и вовсе страшно. Но жить ему осталось, вероятно, недолго..."
+
  orcs_ghul_kin_modifier:0 "Любитель гулей"
  orcs_ghul_kin_modifier_desc:0 "Этот орк восхищается и вдохновляется отвратительными вредителями Мордора, известными как гули. Персонаж живёт с ними, спит среди них и идёт с ними в бой. Пусть другие орки его сторонятся и отталкивают, его это мало волнует, поскольку у него уже есть новая «семья»."
-  
-  ### Corsair Modifiers ### 
- lotr_corsair_modifier:0 "Корсар"
+
+ ### Corsair Modifiers ###
+ lotr_corsair_modifier:0 "Пират"
  lotr_corsair_modifier_desc:0 "Всем известно, что этот персонаж не проявит жалости к тем, кого в море постигло несчастье."
  lotr_sea_aid_modifier:0 "Матросы-рекруты"
  lotr_sea_aid_modifier_desc:0 "Этот персонаж набрал несколько матросов-рекрутов после спасения их в море."
  lotr_sea_left_modifier:0 "Покинул моряков"
  lotr_sea_left_modifier_desc:0 "Всем суждено умереть, а море ничуть не хуже дыры в земле."
-  
-  ### Umbar Modifiers ### 
+
+ ### Umbar Modifiers ###
  political_violence:0 "Политические беспорядки"
  political_violence_desc:0 "В этой провинции происходят жестокие политические беспорядки"
-  
-  ### Rohirrim Modifiers 
+
+ ### Rohirrim Modifiers
  lotr_tracked_orcs_modifier:0 "Выследил орков"
  lotr_tracked_orcs_modifier_desc:0 "Этот персонаж вместе со своим отрядом выяснил местоположение крупного лагеря орков. Король, получив информацию, быстро уничтожил его."
  lotr_rohan_orcslayer_modifier:0 "Убийца орков"
  lotr_rohan_orcslayer_modifier_desc:0 "Этот персонаж снискал честь и уважение для себя и своего отряда, уничтожив крупный орочий патруль в Королевских землях, что не осталось незамеченным..."
-  
+
  rohirrim_settlement:0 "Поселения рохиррим"
  rohirrim_settlement_desc:0 "В этом регионе наблюдается приток поселенцев рохиррим, что приводит к росту населения и активному строительству. Местные, однако, не в восторге от этих пришельцев."
-  
- meara_story_modifier:0 "Meara Rider"
- meara_story_modifier_desc:0 "This individual rides one of the Mearas, the kings of horses descended from Felaróf, the legendary mount of Eorl the Young"
-  
- bonded_with_meara_modifier:0 "Meara Friend"
- bonded_with_meara_modifier_desc:0 "This individual has bonded with their Meara mount, they now move and fight as one."
-  
- resurgent_eotheod:0 "Resurgent Éotheod"
- resurgent_eotheod_desc:0 "The Éotheod have recently begun to increase in numbers and are starting to rebuild and reorganize."
-  
+
+ meara_story_modifier:0 "Наездник меарха" #меарас мн.ч., меарх ед.ч. по вики
+ meara_story_modifier_desc:0 "Этот персонаж ездит верхом на одном из меарас, вожаках всех коней, происходящих от Феларофа, легендарного скакуна Эорла Юного."
+
+ bonded_with_meara_modifier:0 "Друг меарха"
+ bonded_with_meara_modifier_desc:0 "Этот персонаж сблизился со своим скакуном-меархом, и теперь они скачут и сражаются как единое целое."
+
+ resurgent_eotheod:0 "Возрождённый эотеод"
+ resurgent_eotheod_desc:0 "В последнее время численность эотеода возросла, и он начинает перестраиваться и реорганизовываться."
+
  rider_of_the_mark:0 "Всадник Марки"
-  
+
  wisdom_of_brego:0 "Мудрость Брего"
   
  blood_eorl_the_young:0 "Кровь Эорла Юного"
-  
-  # Haradrim Modifiers 
- jelut_unifier_modifier:0 "Собиратель Джелут"
- jelut_unifier_modifier_desc:0 "This character has united the disparate Jelut tribes under their Kingdom."
-  
-  ### Druedain Modifiers ### 
- honnin_resettlements:0 "Создание хоннинских сообществ"
- honnin_resettlements_desc:0 "Сообщества хоннинов организовываются на этой территории как часть программы повторного заселения их древних земель"
-  
-  ### Bellakar Modifiers ### 
- northernfocus:0 "Внимание на север"
- northernfocus_desc:0 "Понимая, что настоящие сражения ждут на севере, этот персонаж поручил уделить особое внимание флоту и способствовать экспансии в северном направлении"
- southernfocus:0 "Защита Родины"
- southernfocus_desc:0 "Осознавая, что в первую очередь необходимо выступить на защиту Родины, этот персонаж отдал приказ подготовить силы к вторжению извне."
-  
-   ### Cult of Saints Modifiers ### 
- patron_saint_prophet_modifier:0 "Посвящается Изиндубету Пророку"
- patron_saint_prophet_modifier_desc:0 "Этот персонаж посвящает свое поклонение Изиндубету Пророку. Его обычно считают основателем Батан ан-Изинди, и он получал видения от Единого."
- patron_saint_militant_modifier:0 "Посвящается святому Тамарзиру Воинствующему"
- patron_saint_militant_modifier_desc:0 "Этот персонаж посвящает свое поклонение Святому Тамарзиру Воинствующему, великому Святому Мечу, который защитил веру от язычников в трудную минуту."
- patron_saint_wise_modifier:0 "Посвящается Святому Эрухору Мудрому"
- patron_saint_wise_modifier_desc:0 "Этот персонаж посвящает свое поклонение Святому Эрухору Мудрому, одному из величайших ученых и политиков Фелайи. Его религиозное учение укрепило уникальную индивидуальность и независимость Фелаи от Беллакара."
- patron_saint_pilgrim_modifier:0 "Посвящается святому Бредабану, покровителю паломников."
- patron_saint_pilgrim_modifier_desc:0 "Этот персонаж посвящает свое поклонение святому Бродабану, покровителю паломников, святому человеку, который путешествовал по миру, чтобы увидеть красоту, созданную [valargods|E], распространяя веру посредством паломничества."
- patron_saint_anointed_modifier:0 "Посвящается святому Бавабатору Помазаннику."
- patron_saint_anointed_modifier_desc:0 "Этот персонаж посвящает свое поклонение Святому Бавабатору II Помазаннику, Первому Лорду Фелаи, который был настолько набожным и добродетельным, что его следует помнить как пример для всех будущих правителей Фелаи."
- patron_saint_chaste_modifier:0 "Посвящается Святой Бахгаллее Целомудренной"
- patron_saint_chaste_modifier_desc:0 "Этот персонаж посвящает свое поклонение святой Балгалейе Целомудренной, благочестивой и добродетельной монахине, посвятившей свою жизнь раздаче милостыни бедным."
- patron_saint_reformer:0 "Посвящается Святому Бору Реформатору"
- patron_saint_reformer_desc:0 "Этот персонаж посвящает свое поклонение Святому Бору Реформатору, новейшему Святому. Бор был амбициозным правителем, который преобразовал Теджин и показал своему народу истинную веру."
-  
-  ### Magic Modifiers ### 
+
+ # Haradrim Modifiers
+ jelut_unifier_modifier:0 "Объединитель джелут"
+ jelut_unifier_modifier_desc:0 "Этот персонаж объединил разрозненные племена джелут в единое королевство."
+ arysori_dynasty_modifier:0 "Короли караванов"
+ arysori_dynasty_modifier_desc:0 "Этот клан укрепил королевство Арисор, которое стало процветающим маяком межконтинентальной торговли, где можно увидеть множество чудес из самых дальних уголков [Concept( 'middleearth', 'Средиземья' )|E]."
+
+ ### Druedain Modifiers ###
+ honnin_resettlements:0 "Созданные хоннинские общины"
+ honnin_resettlements_desc:0 "Общины хоннинов собираются на этих землях в рамках повторного заселения их древних земель."
+
+ ### Bellakar Modifiers ###
+ northernfocus:0 "Внимание на севере"
+ northernfocus_desc:0 "Понимая, что настоящие сражения ждут на севере, этот персонаж поручил уделить особое внимание флоту и способствовать экспансии в северном направлении."
+ southernfocus:0 "Защита родины"
+ southernfocus_desc:0 "Осознавая, что в первую очередь необходимо выступить на защиту родины, этот персонаж отдал приказ подготовить силы к вторжению извне."
+
+ ### Cult of Saints Modifiers ###
+ patron_saint_prophet_modifier:0 "Последователь Изиндубета Пророка"
+ patron_saint_prophet_modifier_desc:0 "Этот персонаж посвящает свои молитвы Изиндубету Пророку. Его обычно считают основателем Батан ан-Изинди, и он получал видения от Единого."
+ patron_saint_militant_modifier:0 "Последователь святого Тамарзира Воинствующего"
+ patron_saint_militant_modifier_desc:0 "Этот персонаж посвящает свои молитвы святому Тамарзиру Воинствующему, великому Святому Мечу, который защитил веру от язычников в трудную минуту."
+ patron_saint_wise_modifier:0 "Последователь святого Эрухора Мудрого"
+ patron_saint_wise_modifier_desc:0 "Этот персонаж посвящает свои молитвы святому Эрухору Мудрому, одному из величайших учёных и политиков Фелайи. Его религиозное учение укрепило уникальную индивидуальность и независимость Фелаи от Беллакара."
+ patron_saint_pilgrim_modifier:0 "Последователь святого Бредабана, покровителя паломников."
+ patron_saint_pilgrim_modifier_desc:0 "Этот персонаж посвящает свои молитвы святому Бредабану, покровителю паломников, святому человеку, который путешествовал по миру, чтобы увидеть красоту, созданную [valargods|El], распространяя веру посредством паломничества."
+ patron_saint_anointed_modifier:0 "Последователь святого Бавабатора Помазанника."
+ patron_saint_anointed_modifier_desc:0 "Этот персонаж посвящает свои молитвы Святому Бавабатору II Помазаннику, первому Владыке Фелаи, который был настолько набожным и добродетельным, что его следует помнить как пример для всех будущих правителей Фелаи."
+ patron_saint_chaste_modifier:0 "Последователь святой Балгалейи Целомудренной"
+ patron_saint_chaste_modifier_desc:0 "Этот персонаж посвящает свои молитвы святой Балгалейе Целомудренной, благочестивой и добродетельной монахине, посвятившей свою жизнь раздаче милостыни бедным."
+ patron_saint_reformer:0 "Последователь святого Бора Реформатора"
+ patron_saint_reformer_desc:0 "Этот персонаж посвящает свои молитвы святому Бору Реформатору, новейшему святому. Бор был амбициозным правителем, который преобразовал теджин и показал своему народу истинную веру."
+
+ ### Magic Modifiers ###
  morgul_corruption_modifier:0 "Моргульская порча"
- morgul_corruption_modifier_desc:0 "Это место было осквернено грязными ритуалами [nazgulcharacter|E]."
-  
+ morgul_corruption_modifier_desc:0 "Это место было осквернено грязными ритуалами [nazgulcharacter|El]."
+
  fading_morgul_corruption_modifier:0 "Слабеющая Моргульская порча"
  fading_morgul_corruption_modifier_desc:0 "Хотя эти земли удалось очистить от сил тьмы, в них остаются следы их былого правления. Люди здесь не живут."
-  
-  ### Dale Modifiers ### 
+
+ ### Dale Modifiers ###
  thriving_dwarf_trade:0 "Процветающая торговля с гномами"
  thriving_dwarf_trade_desc:0 "Местный народ тесно связан со своими соседями-гномами, как экономически, так и политически. Эта связь привела к экономическому росту и притоку населения."
  minor_dwarf_trade:0 "Умеренная торговля с гномами"
  minor_dwarf_trade_desc:0 "Местные жители заключает небольшие торговые сделки с гномами, но в остальном стараются держаться от них подальше. Экономический рост носит ограниченный характер."
  collapsing_dwarf_trade:0 "Сниженная торговля с гномами"
  collapsing_dwarf_trade_desc:0 "Исторически местные жители вели активную торговлю с гномами, но по какой-то причине в последнее время её уровень упал, а местами и вовсе полностью сошёл на нет, от чего местная экономика пришла в упадок"
-  # add 'lagging' trade, 'restored' trade, and an intermediate trade at a later date, and make contingent on the actual dwarves nearby 
-  
-  # Abrakhan Modifiers 
- decision_ballakaze_auxiliaries_troops:0 "Bellakaze Auxiliary Troops"
-  
-  ### Other Event Modifiers ### 
-  
- reconverted_tedjin_modifier:0 "Возвращенный теджин"
- reconverted_tedjin_modifier_desc:0 "Возвращенный теджин"
- reconverted_tedjin_liege_modifier:0 "Возвращенный сюзерен теджин"
- reconverted_tedjin_liege_modifier_desc:0 "Возвращенный сюзерен теджин"
- tedjin_moderate_modifier:0 "Умеренные теджин"
- tedjin_moderate_modifier_desc:0 "Умеренные теджин"
- tedjin_reformer_modifier:0 "Реформатор теджин"
- tedjin_reformer_modifier_desc:0 "Реформатор теджин"
- IS_SICK_REASON:0 "Переживает тяжелое заболевание!"
-  
-  #Khand 
- khand_heir_0_successes:0 "Совершенно непригодный для правления"
- khand_heir_0_successes_desc:0 "Лорды клана Варяг широко считают этого персонажа совершенно непригодным для управления ими."
- khand_heir_1_successes:0 "Непригодный для правления"
- khand_heir_1_successes_desc:0 "Лорды клана Варяг считают этого персонажа неподходящим для управления ими."
+ # add 'lagging' trade, 'restored' trade, and an intermediate trade at a later date, and make contingent on the actual dwarves nearby 
+
+ # Abrakhan Modifiers
+ decision_ballakaze_auxiliaries_troops:0 "Беллаказские вспомогательные войска"
+
+ ### Other Event Modifiers ###
+
+ reconverted_tedjin_modifier:0 "Возвращённый теджин"
+ reconverted_tedjin_modifier_desc:0 "Возвращённый теджин"
+ reconverted_tedjin_liege_modifier:0 "Возвращённый сюзерен-теджин"
+ reconverted_tedjin_liege_modifier_desc:0 "Возвращённый сюзерен-теджин"
+ tedjin_moderate_modifier:0 "Умеренный теджин"
+ tedjin_moderate_modifier_desc:0 "Умеренный теджин"
+ tedjin_reformer_modifier:0 "Реформатор-теджин"
+ tedjin_reformer_modifier_desc:0 "Реформатор-теджин"
+ IS_SICK_REASON:0 "Переживает тяжёлое заболевание!"
+
+ #Khand
+ khand_heir_0_successes:0 "Совершенно недостоин правления"
+ khand_heir_0_successes_desc:0 "Повелители вариагских кланов считают этого персонажа совершенно непригодным для правления ими."
+ khand_heir_1_successes:0 "Недостоин правления"
+ khand_heir_1_successes_desc:0 "Повелители вариагских кланов считают этого персонажа неподходящим для правления ими."
  khand_heir_2_successes:0 "Не хватает потенциала"
- khand_heir_2_successes_desc:0 "Лорды клана Варяг считают, что этому персонажу не хватает потенциала в качестве будущего правителя."
+ khand_heir_2_successes_desc:0 "Повелители вариагских кланов считают, что этому персонажу не хватает потенциала в качестве будущего правителя."
  khand_heir_3_successes:0 "Лидерский потенциал"
- khand_heir_3_successes_desc:0 "Лорды клана Варяг считают, что этот персонаж демонстрирует некоторый потенциал в качестве будущего правителя."
- khand_heir_4_successes:0 "Соответствовать правилу"
- khand_heir_4_successes_desc:0 "Лорды клана Варяг считают этого персонажа подходящим для своего будущего правителя."
+ khand_heir_3_successes_desc:0 "Повелители вариагских кланов считают, что этот персонаж демонстрирует некоторый потенциал в качестве будущего правителя."
+ khand_heir_4_successes:0 "Достоин править"
+ khand_heir_4_successes_desc:0 "Повелители вариагских кланов считают этого персонажа подходящим в качестве своего будущего правителя."
  khand_heir_5_successes:0 "Естественный преемник"
- khand_heir_5_successes_desc:0 "Лорды клана Варяг широко считают этого персонажа естественным и бесплатным будущим правителем."
-  
-  ### Ring of Men event chain modifiers 
-  
- peasants_spooked_by_nazgul_modifier:0 "Крестьяне боятся Назгулов"
- peasants_spooked_by_nazgul_modifier_desc:0 "Ваши крестьяне не раз сталкивались с грозными черными всадниками и неохотно покидают свои дома после наступления темноты."
-  
- precious_obsession_modifier:0 "Драгоценный потерянный"
- precious_obsession_modifier_desc:0 "Драгоценное навсегда потеряно для вас, все, что вы можете сделать, это попытаться жить с этой зияющей раной внутри вас."
-  
-  ### Hold court modifiers 
+ khand_heir_5_successes_desc:0 "Повелители вариагских кланов считают этого персонажа естественным и неоспоримым будущим правителем."
+
+ ### Ring of Men event chain modifiers
+
+ peasants_spooked_by_nazgul_modifier:0 "Крестьяне боятся назгул"
+ peasants_spooked_by_nazgul_modifier_desc:0 "Ваши крестьяне не раз сталкивались с грозными чёрными всадниками и неохотно покидают свои дома после наступления темноты."
+
+ precious_obsession_modifier:0 "Потерянная Прелесть"
+ precious_obsession_modifier_desc:0 "Прелесть навсегда потеряна для вас, всё, что вы можете сделать, это попытаться жить с этой зияющей раной внутри вас."
+
+ ### Hold court modifiers
  hold_court_physician_attending_vassal_modifier:0 "Врач, посещающий вассала"
  hold_court_physician_attending_vassal_modifier_desc:0 "Этот персонаж в настоящее время лечит неизлечимо больного пациента и имеет ограниченное время для выполнения других обязанностей."
-  
- hold_court_physician_teaching_modifier:0 "Преподавание врача"
+
+ hold_court_physician_teaching_modifier:0 "Врачебное обучение"
  hold_court_physician_teaching_modifier_desc:0 "Этот персонаж в настоящее время обучает коллегу-человека тому, что он может, о способах эльфийского исцеления, и у него ограниченное время, чтобы заняться другими обязанностями."
-  
- ### Filler event modifiers 
-  
+
+ ### Filler event modifiers
+
  # saved_great_elk_filler_modifier:0 "Большой лось спасен"
  # saved_great_elk_filler_modifier_desc:0 "С помощью волшебника, известного как Радагаст, вам удалось вылечить одного из заболевших Великих Лосей."
   
@@ -364,17 +371,101 @@
  # helped_the_soldiers_modifier:0 "Солдатская поддержка"
  # helped_the_soldiers_modifier_desc:0 "Вы использовали золото, полученное от дорогого друга, для поддержки своих солдат."
   
- ### Umbar modifiers 
- castamiri_claim_failed:0 "Не удалось нажать Castamiri Claim"
-  
- ### Travel 
-  
- caverns_travel_danger:0 "[GetTerrain( 'caverns' ).GetName] [travel_danger|E]"
- halls_travel_danger:0 "[GetTerrain( 'halls' ).GetName] [travel_danger|E]"
- pathsofthedead_travel_danger:0 "[GetTerrain( 'pathsofthedead' ).GetName] [travel_danger|E]"
- red_desert_travel_danger:0 "[GetTerrain( 'red_desert' ).GetName] [travel_danger|E]"
- dune_sea_travel_danger:0 "[GetTerrain( 'dune_sea' ).GetName] [travel_danger|E]"
- saltflats_travel_danger:0 "[GetTerrain( 'saltflats' ).GetName] [travel_danger|E]"
- volcanic_plains_travel_danger:0 "[GetTerrain( 'volcanic_plains' ).GetName] [travel_danger|E]"
- deep_forest_travel_danger:0 "[GetTerrain( 'deep_forest' ).GetName] [travel_danger|E]"
- mallorn_forest_travel_danger:0 "[GetTerrain( 'mallorn_forest' ).GetName] [travel_danger|E]"
+ ### Umbar modifiers
+ castamiri_claim_failed:0 "False Heir of Castamir"
+ castamiri_claim_failed_desc:0 "This character attempted to reclaim [gondor|E] as a descendant of Castamir, but failed."
+ dynasty_castamiri_claim_failed_modifier:0 "Recently failed to Press the Casamiri Claim"
+ dynasty_castamiri_claim_failed_modifier_desc:0 "The descendants of Castamir recently attempted to claim [gondor|E], but failed"
+
+ ### Travel
+
+ halls_travel_danger:0 "[Concept( 'travel_danger', 'Опасность' )|E]: [GetTerrain( 'halls' ).GetName]"
+ red_desert_travel_danger:0 "[Concept( 'travel_danger', 'Опасность' )|E]: [GetTerrain( 'red_desert' ).GetName]"
+ dune_sea_travel_danger:0 "[Concept( 'travel_danger', 'Опасность' )|E]: [GetTerrain( 'dune_sea' ).GetName]"
+ saltflats_travel_danger:0 "[Concept( 'travel_danger', 'Опасность' )|E]: [GetTerrain( 'saltflats' ).GetName]"
+ volcanic_plains_travel_danger:0 "[Concept( 'travel_danger', 'Опасность' )|E]: [GetTerrain( 'volcanic_plains' ).GetName]"
+ deep_forest_travel_danger:0 "[Concept( 'travel_danger', 'Опасность' )|E]: [GetTerrain( 'deep_forest' ).GetName]"
+ mallorn_forest_travel_danger:0 "[Concept( 'travel_danger', 'Опасность' )|E]: [GetTerrain( 'mallorn_forest' ).GetName]"
+
+### Wastelands modifiers
+# Aragorn gets this modifier if he defeats Sauron
+ easy_arnor_settle:0 "Repopulation of the Dúnedain"
+ easy_arnor_settle_desc:0 "Due to [sauroncharacter|E] being defeated, the Dúnedain have started to increase in numbers."
+
+# Modifier gets applied to wilderness counties if settler has above ^^^ modifier
+ arnor_settler_influx:0 "Influx of settlers"
+ arnor_settler_influx_desc:0 "Due to an increase in the population, this realm is finding it easier to [colonise|E] [wilderness|E] counties"
+
+# Terrain
+ halls_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ in Subterranean ([terrain|E])"
+ halls_tax_mult:1 "[holding|E] [taxes|E] in Subterranean"
+ 
+ ## Dwarven modifiers
+ recently_shaved:0 "Recently Shaved"
+ recently_shaved_desc:0 "This character has been shaved so recently that the skin on their cheeks is still visible. The shame of it!"
+ 
+ reflection_of_durin:0 "Reflection of Durin"
+ reflection_of_durin_desc:0 "While all of Durin's house are known for their longevity among Dwarfs, Some reach the typical age of greying unaltered. Maintaining their vigor for another century, as if a tiny reflection of their legendary father"
+ 
+ reflection_of_uri:0 "Reflection of Úri"
+ reflection_of_uri_desc:0 "Firebeards are famously stubborn and uncompromising among Dwarfs. Perhaps emulating those characteristics of Úri is what empowers some rare Firebeards to stay standing when their peers have succumed to age."
+
+ reflection_of_thrar:0 "Reflection of Thrár"
+ reflection_of_thrar_desc:0 "Thrár is famous, first and foremost for his sheer pride and arrogance. Traits deserved, for his great realm of Bizarûldûm and his stature as senior king over the father of the Stonefoots. Could this character's worthy acomplishments and unfaultering pride in their worth, provide them with the strength to keep Aule's halls waiting?"
+
+ thorins_tomb_modifier:0 "Thorin's Tomb"
+ thorins_tomb_modifier_desc:0 "Thorin Oakenshield rests embalmed on stone, clutching the Arkenstone and the sword Orcrist"
+ 
+ plundered_thorins_tomb_orcrist_modifier:0 "Thorin's Tomb plundered - Orcrist missing"
+ plundered_thorins_tomb_orcrist_modifier_desc:0 "Thorin's tomb has been plundered and the sword Orcrist is missing. The Dwarves of Erebor will not rest until the artifact is recovered."
+ 
+ plundered_thorins_tomb_arkenstone_modifier:0 "Thorin's Tomb plundered - Arkenstone missing"
+ plundered_thorins_tomb_arkenstone_modifier_desc:0 "Thorin's tomb has been plundered and the Arkenstone is missing. The Dwarves of Erebor will not rest until the artifact is recovered."
+ 
+ plundered_thorins_tomb_modifier:0 "Plundered Thorin's Tomb"
+ plundered_thorins_tomb_modifier_desc:0 "This character has plundered the tomb of Thorin Oakenshield and earned the undying enmity of Dwarfkind"
+ 
+ kept_thorins_artifact_modifier:0 "Kept Thorin's artifacts"
+ kept_thorins_artifact_modifier_desc:0 "This character has decided not to return Thorin's artifacts to his tomb and has brought upon himself the resentment of Dwarves"
+ 
+ dwarf_friend_modifier:0 "Dwarf-friend"
+ dwarf_friend_modifier_desc:0 "This character has been named a friend to all Dwarfkind for their amicable actions"
+ 
+ unifier_durins_folk:0 "High Kings of Durin's Folk"
+ unifier_durins_folk_desc:0 "The line of Durin has unified the disparate groups of Longbeards under one High King, and has ushered in an age of unparalleled prosperity for their people."
+
+
+ ## Faith conversion modifier
+ faith_conversion_cost_slave_to_saurons_will:0 "Slave to Sauron's will"
+ faith_conversion_cost_gold_sickness:0 "Gold sickness"
+ 
+ lotr_munchies_sated_modifier:0 "Overate"
+ lotr_munchies_sated_modifier_desc:0 "This character overindulged after being overcome by a sudden hunger."
+
+ lotr_vanquished_modifier:0 "Vanquished"
+ lotr_vanquished_modifier_desc:0 "This character has been vanquished and will take some time before they can manage their own realm again"
+
+ ## Great Fat One Faith Modifiers
+ the_fat_one_well_fed_tier_1:0 "Nourished"
+ the_fat_one_well_fed_tier_1_desc:0 "This character has enough food to keep them going, and not much more."
+ the_fat_one_well_fed_tier_2:0 "Well-fed"
+ the_fat_one_well_fed_tier_2_desc:0 "This character eats hearty meals, giving them the strength to pursue their ambitions."
+ the_fat_one_well_fed_tier_3:0 "Plump"
+ the_fat_one_well_fed_tier_3_desc:0 "This character is known to eat large and varied meals, and their figure has grown plump and protective."
+ the_fat_one_well_fed_tier_4:0 "Bulging"
+ the_fat_one_well_fed_tier_4_desc:0 "This character eats great quantities of food, and their hulking figure is an imposing form of muscle and fat."
+ the_fat_one_well_fed_tier_5:0 "Obese"
+ the_fat_one_well_fed_tier_5_desc:0 "Eating a truly monumental quantity of food, this goliath of fat is able to pack it away like no other. Come not between them and their food, lest you be broken by their weight!"
+
+ ### Gundabad Decision Modifiers ###
+ gundabad_rising_character_modifier:0 "Gundabad Rising"
+ gundabad_rising_character_modifier_desc:0 "This character has overseen the consolidation of Gundabad and is organising large-scale efforts to restore its former power."
+
+ gundabad_war_forges_character_modifier:0 "War Forges of Gundabad"
+ gundabad_war_forges_character_modifier_desc:0 "This character has fired up the ancient dwarven forges of Gundabad, driving great industry to fuel their great war machine." 
+
+ gundabad_ravaged_lands_county_modifier:0 "Ravaged Lands"
+ gundabad_ravaged_lands_county_modifier_desc:0 "This county's native population has been ravaged by vengeful orc bands of Gundabad, who slaughtered and burned anything and anyone that dared to resist them." 
+
+ durins_bane_modifier:0 "Durin's Bane"
+ durins_bane_modifier_desc:0 "Durin's Bane slumbers in the depths of Khazad-dum. It may yet awaken once more..."

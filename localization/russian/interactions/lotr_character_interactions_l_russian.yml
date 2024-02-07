@@ -5,25 +5,32 @@
  EXECUTION_SACRIFICED_IN_DARK_RITUAL:0 "Принести ритуальное жертвоприношение"
  EXECUTION_DROWNED_AT_SEA:0 "Утопить в море"
  EXECUTION_TRAMPLED_BY_HORSES:0 "Затоптать лошадьми"
- EXECUTION_ABANDONED_IN_THE_DUNE_SEA:0 "Бросить в Море Дюн"
+ EXECUTION_ABANDONED_IN_THE_DUNE_SEA:0 "Бросить в море Дюн"
  EXECUTION_THROWN_INTO_SNAKE_PIT:0 "Бросить в змеиную яму"
  EXECUTION_RITUAL_SUICIDE:0 "Ритуальное самоубийство"
  #  EXECUTION_GLADIATORIAL_EXECUTION:0 "Send to the arena"
-  
- ai_numenorean_under_age_will_not_seduce:0 "[owner.GetFirstName] has [numenorean|E] Blood, extending [owner.GetHerHis] lifespan, and is too young to be interested in Seduction"
- ai_numenorean_under_age_will_not_be_seduced:0 "[target.GetFirstName] has [numenorean|E] Blood, extending [target.GetHerHis] lifespan, and is too young to be interested in Seduction"
-  
-  
- arrange_betrothal_interaction:0 "Arrange Betrothal"
- arrange_betrothal_interaction_desc_ruler_at_own_court:0 "Arrange a [betrothal|E] between two characters at your own [court|E]"
- arrange_betrothal_interaction_desc_both_rulers_can_marry:0 "Suggest a [betrothal|E] involving either:\n$EFFECT_LIST_BULLET$Yourself\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]\nto:\n$EFFECT_LIST_BULLET$[recipient.GetShortUINameNoTooltip]\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] children\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] [courtiers|E]"
- arrange_betrothal_interaction_desc_both_rulers_recipient_only_can_marry:0 "Suggest a [betrothal|E] involving either:\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]\nto:\n$EFFECT_LIST_BULLET$[recipient.GetShortUINameNoTooltip]\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] children\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] [courtiers|E]"
- arrange_betrothal_interaction_desc_both_rulers_recipient_neither_can_marry:0 "Suggest a [marriage|E] involving either:\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]\nto:\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] children\n$EFFECT_LIST_BULLET$One of [recipient.GetHerHis] [courtiers|E]"
- arrange_betrothal_interaction_desc_one_ruler_can_marry:0 "Suggest a [betrothal|E] between [recipient.GetShortUINameNoTooltip] and either:\n$EFFECT_LIST_BULLET$Yourself\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]"
- arrange_betrothal_interaction_desc_recipient_one_ruler_cannot_marry:0 "Suggest a [marriage|E] between [recipient.GetShortUINameNoTooltip] and either:\n$EFFECT_LIST_BULLET$One of your children\n$EFFECT_LIST_BULLET$One of your [courtiers|E]"
+
+ ai_numenorean_under_age_will_not_seduce:0 "[owner.GetFirstName] имеет [Concept( 'numenorean', 'нуменорскую' )|E] кровь, что увеличивает [owner.GetHerHis] продолжительность жизни, и [owner.GetSheHe] слишком [Select_CString(owner.IsFemale, 'молода', 'молод' )], чтобы интересоваться соблазнением"
+ ai_numenorean_under_age_will_not_be_seduced:0 "[target.GetFirstName] имеет [Concept( 'numenorean', 'нуменорскую' )|E] кровь, что увеличивает [target.GetHerHis] продолжительность жизни, и [target.GetSheHe] слишком [Select_CString(target.IsFemale, 'молода', 'молод' )], чтобы интересоваться соблазнением"
+
+
+ arrange_betrothal_interaction:0 "Устроить помолвку"
+ arrange_betrothal_interaction_desc_ruler_at_own_court:0 "Устроить [Concept( 'betrothal', 'помолвку' )|E] между двумя персонажами при вашем [Concept( 'court', 'дворе' )|E]"
+ arrange_betrothal_interaction_desc_both_rulers_can_marry:0 "Предложить [Concept( 'betrothal', 'помолвку' )|E], которую заключат:\n$EFFECT_LIST_BULLET$Вы\n$EFFECT_LIST_BULLET$Один из ваших детей\n$EFFECT_LIST_BULLET$Один из ваших [Concept( 'courtiers', 'придворных' )|E]\nи:\n$EFFECT_LIST_BULLET$[recipient.GetShortUINameNoTooltip]\n$EFFECT_LIST_BULLET$Один из [recipient.GetHerHis] детей\n$EFFECT_LIST_BULLET$Один из [recipient.GetHerHis] [Concept( 'courtiers', 'придворных' )|E]"
+ arrange_betrothal_interaction_desc_both_rulers_recipient_only_can_marry:0 "Предложить [Concept( 'betrothal', 'помолвку' )|E], которую заключат:\n$EFFECT_LIST_BULLET$Один из ваших детей\n$EFFECT_LIST_BULLET$Один из ваших детей [Concept( 'courtiers', 'придворных' )|E]\nи:\n$EFFECT_LIST_BULLET$[recipient.GetShortUINameNoTooltip]\n$EFFECT_LIST_BULLET$Один из [recipient.GetHerHis] детей\n$EFFECT_LIST_BULLET$Один из [recipient.GetHerHis] [Concept( 'courtiers', 'придворных' )|E]"
+ arrange_betrothal_interaction_desc_both_rulers_recipient_neither_can_marry:0 "Предложить [Concept( 'marriage', 'брак' )|E], в который вступят:\n$EFFECT_LIST_BULLET$Один из ваших детей\n$EFFECT_LIST_BULLET$Один из ваших [Concept( 'courtiers', 'придворных' )|E]\nи:\n$EFFECT_LIST_BULLET$Один из [recipient.GetHerHis] детей\n$EFFECT_LIST_BULLET$Один из [recipient.GetHerHis] [Concept( 'courtiers', 'придворных' )|E]"
+ arrange_betrothal_interaction_desc_one_ruler_can_marry:0 "Предложить [Concept( 'betrothal', 'помолвку' )|E], которую заключат [recipient.GetShortUINameNoTooltip] и:\n$EFFECT_LIST_BULLET$Вы\n$EFFECT_LIST_BULLET$Один из ваших детей\n$EFFECT_LIST_BULLET$Один из ваших [Concept( 'courtiers', 'придворных' )|E]"
+ arrange_betrothal_interaction_desc_recipient_one_ruler_cannot_marry:0 "Предложить [Concept( 'marriage', 'брак' )|E], в который вступят [recipient.GetShortUINameNoTooltip] и:\n$EFFECT_LIST_BULLET$Один из ваших детей\n$EFFECT_LIST_BULLET$Один из ваших [Concept( 'courtiers', 'придворных' )|E]"
  actor_secondary_arrange_betrothal_interaction:0 "[spouse|E]"
-  
- betrothe_interaction:0 "Betrothe"
- betrothe_interaction_desc:0 "Find a betrothed for [secondary_actor.GetShortUINameNoTooltip]"
- betrothe_send:0 "Arrange Betrothal"
+
+ betrothe_interaction:0 "Найти суженого/суженую"
+ betrothe_interaction_desc:0 "Найти [Select_CString(secondary_actor.IsFemale, 'суженого', 'суженую' )] для персонажа [secondary_actor.GetShortUINameNoTooltip]"
+ betrothe_send:0 "Устроить помолвку"
  actor_secondary_betrothe_interaction:0 "[spouse|E]"
+
+ shave_interaction:0 "Обрить"
+ shave_interaction_desc:0 "Сбрить бороду персонажа [recipient.GetShortUINameNoTooltip] и сделать [recipient.GetHerHis] [Select_CString(recipient.IsFemale, 'безбородой', 'безбородым' )] ([GetTrait('beardless').GetName( GetPlayer )])"
+
+ buy_resource_interaction:0 "Купить ресурсы"
+ buy_resource_interaction_desc:0 "Попытаться купить [Concept( 'metal_lists', 'металлы' )|E] или [Concept( 'gem_list', 'драгоценные камни' )|E] у персонажа [recipient.GetName]"
+ buy_resource_interaction_accept_tt:0 "Вы начинаете торговое взаимодействие с персонажем [recipient.GetName]"
