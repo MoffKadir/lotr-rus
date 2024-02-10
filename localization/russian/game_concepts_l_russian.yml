@@ -32,7 +32,7 @@
  game_concept_de_jure_drift_drift:0 "Изменение"
  game_concept_de_jure_drift_desc:0 "$game_concept_de_jure_drift_desc_part_1$\n\n$game_concept_de_jure_drift_desc_part_2$"
  game_concept_de_jure_drift_desc_part_1:0 "Продолжительный процесс, при котором [title|El] меняет подданство [de_jure|El] и земли уже законным образом получает новый [liege|El]. Процесс этот происходит сам по себе, если над [Concept( 'duchy', 'герцогством' )|E] или [Concept( 'kingdom', 'королевством' )|E] безраздельно властвует [ruler|El], не являющийся де-юре сюзереном.\n\nДля ускорения процесса ваш [chancellor|El] должен взяться за соответствующее [councillor_task|El] #weak  ($task_integrate_title$)#!. $game_concept_de_jure_drift$ у герцогства может происходить только в сторону королевства, а королевство могут заполучить только [empires|El].\n\nЕсли титулы изменяют де-юре статус и превращаются в ваш [primary_title|El] — это хороший способ избавиться от штрафа «[rightful_liege|El]»."
- game_concept_de_jure_drift_desc_part_2:0 "#weak Пример:0 герцогство $d_northumberland$ де-юре — $k_england$, но фактически им владеет $k_scotland$. Так как король Шотландии не имеет власти в Англии, в герцогстве начинается $game_concept_de_jure_drift$, в результате которого земли могут окончательно войти в состав Шотландии.#!"
+ game_concept_de_jure_drift_desc_part_2:0 "#weak Пример: герцогство Нортумберленд де-юре — Англия, но фактически им владеет Шотландия. Так как король Шотландии не имеет власти в Англии, в герцогстве начинается $game_concept_de_jure_drift$, в результате которого земли могут окончательно войти в состав Шотландии.#!"
  game_concept_primary_title:0 "Первый титул"
  game_concept_primary_titles:0 "Первые титулы"
  game_concept_primary_title_desc:0 "$game_concept_primary_title$ — это самый значительный [title|El] [rulerpossessive|El], с которым этот властитель чаще всего отождествляется и от которого зависят герб и название [realms|El].\n\nПри наличии нескольких титулов одного уровня вы сами выбираете $game_concept_primary_title$."
@@ -53,10 +53,10 @@
  game_concept_contract:0 "Договор"
  game_concept_feudal_contract_desc:0 "$game_concept_contract$ определяет [obligations|El], которые берут на себя [vassal|El] и его [liege|El]. Только феодальная и клановая [government_forms|El] позволяют каждому вассалу отдельно обговаривать условия договора.\n\nОсобые договоры, такие как #V $special_contract_march_short$#!, #V $special_contract_scutage_short$#! или #V $special_contract_palatinate_short$#!, доступны только вассалам в ранге не ниже [Concept( 'duchy', 'герцога' )|E]."
  game_concept_crown_authority:0 "Авторитет короны"
- game_concept_crown_authority_desc:0 "$game_concept_crown_authority$ — показатель власти, которую [ruler|El] имеет над своими [Concept( 'vassals', 'вассалами' )|E].\n\n$game_concept_crown_authority$ имеет четыре ступени:0 [autonomous_vassals|El], [limited|El], [high|El] и [absolute|El]. Чтобы повысить $game_concept_crown_authority$, потребуются [prestige|El] (его количество определяется уровнем авторитета) и [learning_skill|El] правителя.\n\n#weak Чем выше $game_concept_crown_authority$, тем сильнее недовольны вассалы, поэтому [factions|El], для которых важнейшая цель — свобода, стараются как можно скорее его снизить.#!"
+ game_concept_crown_authority_desc:0 "$game_concept_crown_authority$ — показатель власти, которую [ruler|El] имеет над своими [Concept( 'vassals', 'вассалами' )|E].\n\n$game_concept_crown_authority$ имеет четыре ступени: [autonomous_vassals|El], [limited|El], [high|El] и [absolute|El]. Чтобы повысить $game_concept_crown_authority$, потребуются [prestige|El] (его количество определяется уровнем авторитета) и [learning_skill|El] правителя.\n\n#weak Чем выше $game_concept_crown_authority$, тем сильнее недовольны вассалы, поэтому [factions|El], для которых важнейшая цель — свобода, стараются как можно скорее его снизить.#!"
  game_concept_autonomous_vassals:0 "Свободные вассалы"
- game_concept_autonomous_vassals_crown_authority:0 "Авторитет короны:0 свободные вассалы"
- game_concept_autonomous_vassals_crown_authority_desc:0 "Уровень «$game_concept_autonomous_vassals$» отражает самый низкий [crown_authority|El]. На этом уровне [opinion|El] [Concept( 'vassals', 'вассалов' )|E] о [Concept( 'liege', 'сюзерене' )|E] не снижается:0 он имеет над ними минимальную власть."
+ game_concept_autonomous_vassals_crown_authority:0 "Авторитет короны: свободные вассалы"
+ game_concept_autonomous_vassals_crown_authority_desc:0 "Уровень «$game_concept_autonomous_vassals$» отражает самый низкий [crown_authority|El]. На этом уровне [opinion|El] [Concept( 'vassals', 'вассалов' )|E] о [Concept( 'liege', 'сюзерене' )|E] не снижается: он имеет над ними минимальную власть."
  game_concept_limited:0 "Ограниченный"
  game_concept_limited_crown_authority:0 "Ограниченный авторитет короны"
  game_concept_limited_crown_authority_desc:0 "$game_concept_limited_crown_authority$ — все еще достаточно низкий уровень. [opinion|E] [Concept( 'vassals', 'вассалов' )|El] о [Concept( 'liege', 'сюзерене' )|El] снижается на #N 10#! ед., а сюзерен при этом может [revoke|El] [Concept( 'titles', 'титулов' )|El] и [retract|El] вассалов своих вассалов."
@@ -67,10 +67,10 @@
  game_concept_absolute_crown_authority:0 "Абсолютный авторитет короны"
  game_concept_absolute_crown_authority_desc:0 "$game_concept_absolute_crown_authority$ — высочайший уровень власти. [opinion|E] [Concept( 'vassals', 'вассалов' )|El] о [Concept( 'liege', 'сюзерене' )|El] снижается на #N 30#! ед.\n\nНа этом уровне действуют все эффекты, которые дают [high|El] и [limited|El] уровни авторитета короны. Правитель может назначать [Concept( 'heir', 'наследника' )|El], затрачивая на это [prestige|El].\n\nКроме того, вассалы не могут объявлять войну иностранным правителям."
  game_concept_tribal_authority:0 "Авторитет вождя"
- game_concept_tribal_authority_desc:0 "$game_concept_tribal_authority$ отражает влияние, которое [tribal|El] [ruler|El] имеет над своими [Concept( 'vassals', 'вассалами' )|E]. По сравнению с [Concept( 'crown_authority', 'авторитетом короны' )|E] это не очень сильный авторитет:0 на более высоких уровнях он дает меньше власти.\n\n$game_concept_tribal_authority$ имеет четыре ступени:0 [disparate_tribes|El], [limited_tribal|El], [high_tribal|El] и [absolute_tribal|El]. Чтобы повысить $game_concept_tribal_authority$, потребуются [prestige|El] (количество зависит от уровня авторитета) и [learning_skill|El] правителя. Такое повышение стоит, как правило, выше, чем повышение авторитета короны.\n\n#weak  Чем выше $game_concept_tribal_authority$, тем сильнее недовольны вассалы, поэтому [liberty_faction|E] всегда старается его снизить.#!"
+ game_concept_tribal_authority_desc:0 "$game_concept_tribal_authority$ отражает влияние, которое [tribal|El] [ruler|El] имеет над своими [Concept( 'vassals', 'вассалами' )|E]. По сравнению с [Concept( 'crown_authority', 'авторитетом короны' )|E] это не очень сильный авторитет: на более высоких уровнях он дает меньше власти.\n\n$game_concept_tribal_authority$ имеет четыре ступени: [disparate_tribes|El], [limited_tribal|El], [high_tribal|El] и [absolute_tribal|El]. Чтобы повысить $game_concept_tribal_authority$, потребуются [prestige|El] (количество зависит от уровня авторитета) и [learning_skill|El] правителя. Такое повышение стоит, как правило, выше, чем повышение авторитета короны.\n\n#weak  Чем выше $game_concept_tribal_authority$, тем сильнее недовольны вассалы, поэтому [liberty_faction|E] всегда старается его снизить.#!"
  game_concept_disparate_tribes:0 "Разобщенные племена"
- game_concept_disparate_tribes_tribal_authority:0 "Авторитет вождя:0 разобщенные племена"
- game_concept_disparate_tribes_tribal_authority_desc:0 "Уровень «$game_concept_disparate_tribes$» отражает самый низкий [tribal_authority|El]. На этом уровне [opinion|El] [Concept( 'vassals', 'вассалов' )|E] о [Concept( 'liege', 'сюзерене' )|E] не снижается:0 единственная власть, которую он имеет над ними, — это право требовать [taxes|El] и [levies|El]."
+ game_concept_disparate_tribes_tribal_authority:0 "Авторитет вождя: разобщенные племена"
+ game_concept_disparate_tribes_tribal_authority_desc:0 "Уровень «$game_concept_disparate_tribes$» отражает самый низкий [tribal_authority|El]. На этом уровне [opinion|El] [Concept( 'vassals', 'вассалов' )|E] о [Concept( 'liege', 'сюзерене' )|E] не снижается: единственная власть, которую он имеет над ними, — это право требовать [taxes|El] и [levies|El]."
  game_concept_limited_tribal:0 "Ограниченный"
  game_concept_limited_tribal_authority:0 "Ограниченный авторитет вождя"
  game_concept_limited_tribal_authority_desc:0 "$game_concept_limited_tribal_authority$ — все еще достаточно низкий [tribal_authority|El]. [opinion|E] [Concept( 'vassals', 'вассалов' )|E] о [Concept( 'liege', 'сюзерене' )|E] снижается на #N 10#! ед., а сюзерен при этом может [Concept( 'imprison', 'заключать в тюрьму' )|E] [Concept( 'characters', 'персонажей' )|E] в собственной [Concept( 'realm', 'державе' )|E]."
@@ -128,7 +128,7 @@
  game_concept_council_desc:0 "$game_concept_council$ [realms|El] состоит из шести [Concept( 'councillor', 'советников' )|E], которым [ruler|El] поручает управление делами. Каждый советник возглавляет свое ведомство и выполняет важные [councillor_tasks|El]."
  game_concept_councillor:0 "Советник"
  game_concept_councillors:0 "Советники"
- game_concept_councillor_desc:0 "Любой [ruler|El] полагается на мнение советников. В [Concept( 'council', 'совете' )|E] шесть должностей:0 [chancellor|El], [marshal|El], [steward|El], [spymaster|El], [court_chaplain|El] (или [realm_priest|El]) и, наконец, [spouse|El] правителя.\n\nКаждый советник в ответе за свое ведомство и получает различные [councillor_tasks|El].\n\n[powerful_vassals|El] опечалятся, если не получат одну из этих должностей, поэтому зачастую приходится выбирать:0 задобрить могущественного вассала или назначить по-настоящему компетентного советника.\n\nСлужба в совете у [Concept( 'liege', 'сюзерена' )|E] дает вам бонусы, увеличивающиеся с ростом [Concept( 'rank', 'ранга' )|E] сюзерена."
+ game_concept_councillor_desc:0 "Любой [ruler|El] полагается на мнение советников. В [Concept( 'council', 'совете' )|E] шесть должностей: [chancellor|El], [marshal|El], [steward|El], [spymaster|El], [court_chaplain|El] (или [realm_priest|El]) и, наконец, [spouse|El] правителя.\n\nКаждый советник в ответе за свое ведомство и получает различные [councillor_tasks|El].\n\n[powerful_vassals|El] опечалятся, если не получат одну из этих должностей, поэтому зачастую приходится выбирать: задобрить могущественного вассала или назначить по-настоящему компетентного советника.\n\nСлужба в совете у [Concept( 'liege', 'сюзерена' )|E] дает вам бонусы, увеличивающиеся с ростом [Concept( 'rank', 'ранга' )|E] сюзерена."
  game_concept_councillor_task:0 "Задание совета"
  game_concept_councillor_tasks:0 "Задания совета"
  game_concept_councillor_task_desc:0 "$game_concept_councillor_tasks$ — важные дела, которыми занимаются ваши [Concept( 'councillors', 'советники' )|E]. Задания могут носить общий характер, а могут затрагивать определенное [Concept( 'county', 'графство' )|E] или [Concept( 'court', 'двор' )|E].\n\nВ зависимости от ваших [Concept( 'relation', 'отношений' )|E] с советником время выполнения задания может увеличиваться или уменьшаться.\n\n#weak Следует учесть, что советники не выполняют задания лично, а лишь координируют процесс.#!"
@@ -245,10 +245,10 @@
  game_concept_culture_desc:0 "$game_concept_culture$ представляет язык и обычаи персонажа или [Concept( 'county', 'графства' )|E].\n\n[opinions|E] персонажей разных культур друг о друге всегда ниже. Штраф можно снизить, увеличив [Concept( 'cultural_acceptance', 'терпимость культур' )|E]."
  game_concept_religion:0 "Религия"
  game_concept_religions:0 "Религии"
- game_concept_religion_desc:0 "Одна $game_concept_religion$ может делиться на несколько течений, которые называются [Concept( 'faith', 'конфессиями' )|E]. Также существует три [religious_families|El], каждая из которых объединяет несколько религий:0 [GetReligionFamily('rf_abrahamic').GetName], [GetReligionFamily('rf_eastern').GetName] и [GetReligionFamily('rf_pagan').GetName]."
+ game_concept_religion_desc:0 "Одна $game_concept_religion$ может делиться на несколько течений, которые называются [Concept( 'faith', 'конфессиями' )|E]. Также существует три [religious_families|El], каждая из которых объединяет несколько религий: [GetReligionFamily('rf_eruhini').GetName], [GetReligionFamily('rf_darkness').GetName] и [GetReligionFamily('rf_forceofevil').GetName]."
  game_concept_heresy:0 "Ересь"
  game_concept_heresies:0 "Ереси"
- game_concept_heresy_desc:0 "Иногда при низком уровне [Concept( 'fervor', 'рвения' )|E] в [faiths|El] рождается ересь. При этом [ruler|El], принадлежащий к такой конфессии, обратится в новую веру и получит свойство «[GetTrait('heresiarch').GetName( GetNullCharacter )]». Он начнет распространять новую веру в своих [Concept( 'counties', 'графствах' )|E] и среди [Concept( 'vassals', 'вассалов' )|E].\n\nЕсли вспышка ереси невелика, на этом она и остановится. Если же она велика, то другие правители этой области тоже начнут обращаться в новую веру. Если ваши владения также находятся в этой области, вам будет предложен выбор:0 обратиться или сохранить прежнюю веру."
+ game_concept_heresy_desc:0 "Иногда при низком уровне [Concept( 'fervor', 'рвения' )|E] в [faiths|El] рождается ересь. При этом [ruler|El], принадлежащий к такой конфессии, обратится в новую веру и получит свойство «[GetTrait('heresiarch').GetName( GetNullCharacter )]». Он начнет распространять новую веру в своих [Concept( 'counties', 'графствах' )|E] и среди [Concept( 'vassals', 'вассалов' )|E].\n\nЕсли вспышка ереси невелика, на этом она и остановится. Если же она велика, то другие правители этой области тоже начнут обращаться в новую веру. Если ваши владения также находятся в этой области, вам будет предложен выбор: обратиться или сохранить прежнюю веру."
  game_concept_faith:0 "Конфессия"
  game_concept_faiths:0 "Конфессии"
  game_concept_faithpossessive:0 "Конфессии"
@@ -281,7 +281,7 @@
  game_concept_rightful_liege:0 "Законный сюзерен"
  game_concept_rightful_liege_desc:0 "$game_concept_rightful_liege_desc_part1$\n\n$game_concept_rightful_liege_desc_part2$"
  game_concept_rightful_liege_desc_part1:0 "$game_concept_rightful_liege$ [Concept( 'vassal', 'вассала' )|E] — это [Concept( 'ruler', 'правитель' )|E], владеющий [Concept( 'title', 'титулом' )|E] прямого [Concept( 'de_jure', 'де-юре' )|E] [Concept( 'liege', 'сюзерена' )|E] [Concept( 'primary_title', 'первого титула' )|E] данного [Concept( 'vassal', 'вассала' )|E]. Если [Concept( 'vassal', 'вассалом' )|E] правит не его [Concept( 'rightful_liege', 'законный сюзерен' )|E], то это снижает собираемые [Concept( 'taxes', 'налоги' )|E] и [Concept( 'levies', 'ополчение' )|E], а также [Concept( 'opinion', 'мнение' )|E] о [Concept( 'liege', 'сюзерене' )|E]. [Concept( 'de_jure', 'Де-юре' )|E] [Concept( 'title', 'титул' )|E] более [Concept( 'title_tier', 'высокого уровня' )|E] снижает штрафы.\n\nИсключением из этого правила являются [Concept( 'duke', 'герцоги' )|E], входящие в [Concept( 'de_jure', 'де-юре' )|E] иерархию [Concept( 'empire', 'империи' )|E] и являющиеся вассалами непосредственно [Concept( 'emperor', 'императора' )|E]. Они вносят полный вклад, как если бы [Concept( 'emperor', 'император' )|E] владел [Concept( 'de_jure', 'де-юре' )|E] [Concept( 'title', 'титулом' )|E] их [Concept( 'kingdom', 'королевства' )|E]."
- game_concept_rightful_liege_desc_part2:0 "#weak Пример:0 граф $c_dunbar$ский — прямой вассал английского короля. Король не является герцогом $d_lothian$а, королем Шотландии или императором Британии, поэтому граф $c_dunbar$а отправляет ему лишь ничтожную долю налогов и ополчения.\n\nГраф $c_norfolk$ский также является прямым вассалом английского короля. Король не владеет герцогством $d_norfolk$, поэтому граф также присылает меньше налогов и ополчения. Однако $c_norfolk$ является де-юре частью королевства $k_england$, поэтому граф $c_norfolk$ский все равно присылает значительно больше налогов и ополчения, чем граф $c_dunbar$ский.#!"
+ game_concept_rightful_liege_desc_part2:0 "#weak Пример: граф Данбарский — прямой вассал английского короля. Король не является герцогом Лотиана, королем Шотландии или императором Британии, поэтому граф Данбара отправляет ему лишь ничтожную долю налогов и ополчения.\n\nГраф Норфолкский также является прямым вассалом английского короля. Король не владеет герцогством Норфолк, поэтому граф также присылает меньше налогов и ополчения. Однако Норфолк является де-юре частью королевства Англия, поэтому граф Норфолкский все равно присылает значительно больше налогов и ополчения, чем граф Данбарский.#!"
  game_concept_megaduke_penalty:0 "Превышение"
  game_concept_megaduke_penalty_desc:0 "Если вы [duke|El], и [counties|El] вашей [realms|El] числом превышают [GetDefine('NCharacter', 'MAX_COUNTIES_IN_REALM_AS_DUKE')], вы получите штраф за [Concept( 'megaduke_penalty', 'превышение' )|E], и поступающие [taxes|El] уменьшаются.\n\nСтав [Concept( 'king', 'королем' )|E] или [Concept( 'emperor', 'императором' )|E], вы снимете этот штраф со своих земель."
  game_concept_top_liege:0 "Верховный сюзерен"
@@ -317,7 +317,7 @@
  game_concept_holding_desc:0 "$game_concept_holding$ — центральное поселение [Concept( 'barony', 'баронства' )|E] или [Concept( 'county_capital', 'столица графства' )|E].\n\n[holding_type|E] определяет, какие [taxes|El] и [levies|El] получит [holder|El]. Совокупность владений, которыми лично распоряжается [ruler|E], называется [Concept( 'domain', 'доменом' )|E]."
  game_concept_holding_type:0 "Тип владений"
  game_concept_holding_types:0 "Типы владений"
- game_concept_holding_type_desc:0 "[holdings|E] делятся на четыре типа:0 [castles|El], [cities|El], [tribes|E] и [temples|El]. Для каждого типа характерны особые [buildings|El]. [government_form|E] [rulerpossessive|El] определяет, какие типы владений он может иметь в личном распоряжении без получения штрафов. В случае с храмами немалую роль играют и [doctrines|El] их [Concept( 'faith', 'конфессии' )|E]."
+ game_concept_holding_type_desc:0 "[holdings|E] делятся на четыре типа: [castles|El], [cities|El], [tribes|E] и [temples|El]. Для каждого типа характерны особые [buildings|El]. [government_form|E] [rulerpossessive|El] определяет, какие типы владений он может иметь в личном распоряжении без получения штрафов. В случае с храмами немалую роль играют и [doctrines|El] их [Concept( 'faith', 'конфессии' )|E]."
  game_concept_castle_holding:0 "Замковые владения"
  game_concept_castle:0 "Замок"
  game_concept_castles:0 "Замки"
@@ -340,7 +340,7 @@
  game_concept_city_holding_desc:0 "Города — самый богатый [holding_type|El], который делает упор не на [levies|El], а на [taxes|El]. Они становятся доменами персонажей-[Concept( 'republican', 'республиканцев' )|E]. Доступные игроку [government_forms|El] не позволяют владеть городами без штрафов."
  game_concept_rally_point:0 "Точка сбора"
  game_concept_rally_points:0 "Точки сбора"
- game_concept_rally_point_desc:0 "$game_concept_rally_point$ — место, где под ваше командование собираются [levies|El] и [men_at_arms|El].\n\nКогда идет [war|El], вы можете призвать [Concept( 'soldiers', 'солдат' )|E] к точке сбора:0 так возникнет [army|El].\n\nОполченцы, призванные к точке сбора, приходят из вашего собственного [Concept( 'domain', 'домена' )|E] или их присылают ваши [vassals|El]. Точки сбора можно перемещать, разделять и объединять."
+ game_concept_rally_point_desc:0 "$game_concept_rally_point$ — место, где под ваше командование собираются [levies|El] и [men_at_arms|El].\n\nКогда идет [war|El], вы можете призвать [Concept( 'soldiers', 'солдат' )|E] к точке сбора: так возникнет [army|El].\n\nОполченцы, призванные к точке сбора, приходят из вашего собственного [Concept( 'domain', 'домена' )|E] или их присылают ваши [vassals|El]. Точки сбора можно перемещать, разделять и объединять."
  game_concept_piety:0 "Благочестие"
  game_concept_pious:0 "Благочестивый"
  game_concept_piety_i:0 "[GetLocalPlayerPietyTextIcon]"
@@ -379,8 +379,13 @@
  game_concept_house_desc:0 "$game_concept_house$ — ветвь на генеалогическом древе [dynasties|El]. Дома создают [rulers|El], которые не желают, чтобы над ними и далее властвовал [house_head|El], и пытаются стать главами новых домов.\n\nУ каждого дома есть имя и герб, но [dynasty_prestige|El] у них все равно общий с династией, а [Concept( 'player_heir', 'наследники-игроки' )|E] могут быть представителями других ветвей династии."
  game_concept_house_head:0 "Глава дома"
  game_concept_house_heads:0 "Главы дома"
+ game_concept_house_heads_possessive:0 "Главы дома"
  game_concept_house_head_head:0 "Глава"
- game_concept_house_head_desc:0 "Каждый [house|El] [dynasties|El] возглавляет $game_concept_house_head$, имеющий определенную власть над остальными его представителями.\n\nПримечательно, что глава дома может узаконивать [Concept( 'bastard', 'бастардов' )|E], созывать членов дома, если начнется [war|El], и требовать от них обращения. Глава дома получает [weak_hook|El] над всеми новорожденными представителями своего дома."
+ game_concept_house_head_desc:0 "Каждый [house|El] [dynasties|El] находится под управлением главы дома, имеющего определенную власть над остальными его представителями.\n\nПримечательно, что глава дома может узаконивать [Concept( 'bastard', 'бастардов' )|E], созывать членов дома, если начнется [war|El], и требовать обращения [Concept( 'landed', 'землевладельцев' )]. Глава дома получает [weak_hook|El] над всеми новорожденными представителями своего дома.\n\nУ [Concept( 'clan_house_heads', 'глав клановых домов' )|E] свои правила и привилегии."
+ game_concept_clan_house_head:0 "Глава кланового дома"
+ game_concept_clan_house_heads:0 "Главы кланового дома"
+ game_concept_clan_house_head_head:0 "$game_concept_house_head_head$"
+ game_concept_clan_house_head_desc:0 "Глава кланового дома во многом аналогичен обычному [Concept( 'house_head', 'главе дома' )|E], но есть и несколько важных отличий.\n\nГлава кланового дома не получает [Concept( 'weak_hook', 'слабое влияние' )|E] на всех представителей своего [Concept( 'house', 'дома' )|E]. У него больше влияния на [Concept( 'house_unity', 'единство дома' )|E], чем у других его представителей. Кроме того, любой представитель дома может бросить вызов его главе, чтобы узурпировать его место."
  game_concept_denounce:0 "Отвергнуть"
  game_concept_denouncement:0 "Отвержение"
  game_concept_denounce_desc:0 "[dynast|E] может потратить [dynasty_prestige|El], чтобы отвергнуть члена [dynasties|El].\n\nВсе члены этой династии (включая ее главу) получат [imprisonment_reason|El] отвергнутого персонажа."
@@ -388,20 +393,20 @@
  game_concept_hooks:0 "Влияние"
  game_concept_hooked:0 "На крючке"
  game_concept_hook_i:0 "@cs_weak_hook_icon!"
- game_concept_hook_desc:0 "«$game_concept_hook$» — расхожее выражение, говорящее о том, что один персонаж имеет власть над другим.\n\nЕсть два типа такой власти:0 [weak_hooks|El] и [strong_hooks|El], добиваются которых по-разному.\n\n$game_concept_hooks$ помогает добиться многого:0 например, заключить [marriage|El] или изменить [feudal_contract|El]."
+ game_concept_hook_desc:0 "«$game_concept_hook$» — расхожее выражение, говорящее о том, что один персонаж имеет власть над другим.\n\nЕсть два типа такой власти: [weak_hooks|El] и [strong_hooks|El], добиваются которых по-разному.\n\n$game_concept_hooks$ помогает добиться многого: например, заключить [marriage|El] или изменить [feudal_contract|El]."
  game_concept_weak_hook:0 "Слабое влияние"
  game_concept_weak_hooks:0 "Слабое влияние"
  game_concept_weak_hook_desc:0 "$game_concept_weak_hook$ — весьма распространенный способ [Concept( 'hook', 'влиять' )|E] на персонажа, который чем-то вам обязан или введен вами в заблуждение.\n\nЕсть много способов использовать влияние (например, сделать предложение о [Concept( 'marriage', 'браке' )|E]), но оно не поможет сделать кого-то [Concept( 'agent', 'заговорщиком' )|E], если вы замышляете [GetScheme('murder').GetTypeName|l], и не даcт пассивных выгод #weak (для этого необходимо [Concept( 'strong_hook', 'сильное влияние' )|E]).#!\n\n[Concept( 'house_head', 'Глава дома' )|E] имеет влияние на каждого отпрыска [Concept( 'noble', 'дворянского' )|E] [Concept( 'house', 'дома' )|E] с рождения.\n\nЕсли влияние использовано, оно утрачивается.#!"
  game_concept_perpetual_hook:0 "Вечное влияние"
  game_concept_perpetual_hooks:0 "Вечное влияние"
  game_concept_perpetual_hook_desc:0 "Вечное [hook|El] можно получить в ситуации, когда персонаж чем-то вам обязан или введен вами в заблуждение.\n\nТакой тип влияния нельзя использовать, чтобы заставить персонажа стать [Concept( 'agent', 'соучастником' )|E] в происках «[GetScheme('murder').GetTypeName]», и он не предоставляет пассивных преимуществ #weak (для этого требуется [strong_hook|El]).#!\n\nВечное влияние не тратится при использовании, но чтобы повторно им воспользоваться, придется подождать определенное время.#!"
-  
+
  game_concept_strong_hook:0 "Сильное влияние"
  game_concept_strong_hooks:0 "Сильное влияние"
  game_concept_strong_hook_desc:0 "$game_concept_strong_hook$ — самый сильный способ держать [hook|El] персонажа, которому не посчастливилось стать жертвой вашего [Concept( 'blackmail', 'шантажа' )|E].\n\n$game_concept_strong_hooks$ гораздо сильнее, чем [weak_hooks|El], и позволяет принуждать людей к ужасным поступкам и даже становиться [Concept( 'agent', 'соучастниками' )|E], когда вы замышляете [GetScheme('murder').GetTypeName|l] #weak  (также оно дает доступ к тем же преимуществам, что и $game_concept_weak_hook$)!#!\n\nКроме того, $game_concept_strong_hook$ не позволяет цели предпринимать враждебные действия по отношению к шантажисту.\n\n$game_concept_strong_hooks$ не исчезает после использования, но, чтобы повторно им воспользоваться, придется подождать определенное время. Пассивный эффект после использования не пропадает."
  game_concept_favor:0 "Обязательство"
  game_concept_favors:0 "Обязательства"
- game_concept_favor_desc:0 "У персонажа могут быть $game_concept_favors$, при которых тоже считается, что он «[hook|El]».\n\nПерсонаж может остаться у вас в долгу в различных ситуациях, но чаще всего это происходит в результате сюжетных событий. [Concept( 'noble', 'Знатные' )|E] [Concept( 'house', 'дома' )|E] блюдут традицию:0 [house_head|El] имеет влияние на каждого рожденного в доме ребенка, и те изначально в долгу перед ним."
+ game_concept_favor_desc:0 "У персонажа могут быть $game_concept_favors$, при которых тоже считается, что он «[hook|El]».\n\nПерсонаж может остаться у вас в долгу в различных ситуациях, но чаще всего это происходит в результате сюжетных событий. [Concept( 'noble', 'Знатные' )|E] [Concept( 'house', 'дома' )|E] блюдут традицию: [house_head|El] имеет влияние на каждого рожденного в доме ребенка, и те изначально в долгу перед ним."
  game_concept_blackmail:0 "Шантаж"
  game_concept_blackmailed:0 "Жертва шантажа"
  game_concept_blackmailing:0 "Шантаж"
@@ -522,7 +527,7 @@
  game_concept_peace:0 "Мир"
  game_concept_peace_offer:0 "Предложение о перемирии"
  game_concept_peace_offers:0 "Предложения о перемирии"
- game_concept_peace_desc:0 "Оканчивается [war|El], когда наступает один из трех вариантов $game_concept_peace$а:0 [victory|El], [defeat|El] или [white_peace|El].\n\nЕсли [war_score|El] вырос до #V 100%#!, противная сторона не сможет отклонить предложение о перемирии и обязана принять [defeat|El].\n\nПоследствия, которые влекут за собой $game_concept_victory$ и $game_concept_defeat$, зависят от [casus_belli|El], использованного для объявления войны, и от того, какая была выбрана [Concept( 'war_target', 'цель войны' )|E]."
+ game_concept_peace_desc:0 "Оканчивается [war|El], когда наступает один из трех вариантов $game_concept_peace$а: [victory|El], [defeat|El] или [white_peace|El].\n\nЕсли [war_score|El] вырос до #V 100%#!, противная сторона не сможет отклонить предложение о перемирии и обязана принять [defeat|El].\n\nПоследствия, которые влекут за собой $game_concept_victory$ и $game_concept_defeat$, зависят от [casus_belli|El], использованного для объявления войны, и от того, какая была выбрана [Concept( 'war_target', 'цель войны' )|E]."
  game_concept_victory:0 "Победа"
  game_concept_win:0 "Победить"
  game_concept_wins:0 "Победы"
@@ -558,13 +563,13 @@
  game_concept_army_desc:0 "Армии выигрывают [wars|El] в [Concept( 'battle', 'битвах' )|El] с другими армиями, устраивают [sieges|El] и могут [occupy|El] вражеские [Concept( 'fortified_holdings', 'укрепленные владения' )|El]. Для объединения армий используются [rally_points|El]. В войско входят преимущественно [levies|El] и [men_at_arms|El], но иногда к армиям примыкают [mercenaries|El] и [holy_orders|El].\n\nАрмии могут двигаться по воде, оплачивая переправу [Concept( 'gold', 'золотом' )|El]. Если местное [county|El] не может предоставить им [supply|El] в достаточном количестве, армия несет [attrition|El]."
  game_concept_holy_order:0 "Священный орден"
  game_concept_holy_orders:0 "Священные ордена"
- game_concept_holy_order_desc:0 "$game_concept_holy_orders$ — независимые военные организации, которые действуют ради защиты и роста влияния своей [faiths|El].\n\nНа их силу влияют [leases|El] — [holdings|El], которые отдают им в наем [rulers|El].\n\nПравители, принадлежащие к той же конфессии, что и $game_concept_holy_order$, могут тратить [Concept( 'piety', 'благочестие' )|El], чтобы нанять солдат ордена:0 те будут сражаться с религиозными врагами как [Concept( 'mercenary', 'наемники' )|El].\n\n$game_concept_holy_order$ может иметь [Concept( 'holy_order_patron', 'покровителя' )|El], который не обязан платить за найм."
+ game_concept_holy_order_desc:0 "$game_concept_holy_orders$ — независимые военные организации, которые действуют ради защиты и роста влияния своей [faiths|El].\n\nНа их силу влияют [leases|El] — [holdings|El], которые отдают им в наем [rulers|El].\n\nПравители, принадлежащие к той же конфессии, что и $game_concept_holy_order$, могут тратить [Concept( 'piety', 'благочестие' )|El], чтобы нанять солдат ордена: те будут сражаться с религиозными врагами как [Concept( 'mercenary', 'наемники' )|El].\n\n$game_concept_holy_order$ может иметь [Concept( 'holy_order_patron', 'покровителя' )|El], который не обязан платить за найм."
  game_concept_holy_order_patron:0 "Покровитель"
  game_concept_holy_order_patron_desc:0 "[holy_order|E] может иметь $game_concept_holy_order_patron$а — короля или императора, который принадлежит той же [faiths|El] и на территории [realms|El] которого располагается столица ордена.\n\n$game_concept_holy_order_patron$ может бесплатно призвать $game_concept_holy_order$ на помощь в сражении с религиозным врагом, не затрачивая [Concept( 'piety', 'благочестия' )|El].\n\nНе каждый $game_concept_holy_order$ имеет $game_concept_holy_order_patron$а."
  game_concept_mercenary_company:0 "Отряд наемников"
  game_concept_mercenaries:0 "Наемники"
  game_concept_mercenary:0 "Наемник"
- game_concept_mercenary_company_desc:0 "[mercenaries|E] — [soldiers|El], которые нанимаются в армии за [gold|El]. [armies|E] наемников бывают разного размера, в них состоит [men_at_arms|El] разных типов и некоторые [knights|El].\n\nНаемники заключают контракты на #V [GetDefine('NMercenary', 'HIRE_MONTHS')] мес.#!, затем их можно продлить еще на #V [GetDefine('NMercenary', 'HIRE_MONTHS')] мес.#!, если [war|El] еще не окончена. Контракты наемников сохраняются даже после роспуска их полка:0 солдат можно призвать вновь без дополнительных затрат.\n\nДля привлечения наемников вы можете взять [debt|El] #weak (на время до [GetDefine('NMercenary', 'ALLOWED_DEBT_MONTHS')] мес.)#!."
+ game_concept_mercenary_company_desc:0 "[mercenaries|E] — [soldiers|El], которые нанимаются в армии за [gold|El]. [armies|E] наемников бывают разного размера, в них состоит [men_at_arms|El] разных типов и некоторые [knights|El].\n\nНаемники заключают контракты на #V [GetDefine('NMercenary', 'HIRE_MONTHS')] мес.#!, затем их можно продлить еще на #V [GetDefine('NMercenary', 'HIRE_MONTHS')] мес.#!, если [war|El] еще не окончена. Контракты наемников сохраняются даже после роспуска их полка: солдат можно призвать вновь без дополнительных затрат.\n\nДля привлечения наемников вы можете взять [debt|El] #weak (на время до [GetDefine('NMercenary', 'ALLOWED_DEBT_MONTHS')] мес.)#!."
  game_concept_mercenary_contract:0 "Контракт с наемниками"
  game_concept_mercenary_contract_desc:0 "Заключив договор с [Concept( 'mercenary', 'наемниками' )|E], вы должны сразу заплатить им за услуги, после чего вы сможете использовать их войска в течение #V [GetDefine('NMercenary', 'HIRE_MONTHS')] месяцев#!."
  game_concept_hired_troops:0 "Наемные солдаты"
@@ -574,13 +579,13 @@
  game_concept_army_commanders:0 "Армейские командиры"
  game_concept_commanding:0 "Командование"
  game_concept_army_commander:0 "Армейский командир"
- game_concept_army_commander_desc:0 "$game_concept_army_commander$ — персонаж, стоящий во главе [armies|El]. Все ваши [courtiers|El] или прямые [vassals|El] могут назначаться командирами (критерии:0 возраст, [health|El] и [doctrines|El]).\n\nВ [Concept( 'battle', 'битвах' )|El] [martial_skill|El] командира сильно влияет на [advantage|El]. Наличие командира позволяет сделать дополнительные [rolls|El], чтобы увеличить $game_concept_advantage$.\n\nКроме того, [commander_traits|El] дают армии немало полезных эффектов как в сражении, так и вне поля боя."
+ game_concept_army_commander_desc:0 "$game_concept_army_commander$ — персонаж, стоящий во главе [armies|El]. Все ваши [courtiers|El] или прямые [vassals|El] могут назначаться командирами (критерии: возраст, [health|El] и [doctrines|El]).\n\nВ [Concept( 'battle', 'битвах' )|El] [martial_skill|El] командира сильно влияет на [advantage|El]. Наличие командира позволяет сделать дополнительные [rolls|El], чтобы увеличить $game_concept_advantage$.\n\nКроме того, [commander_traits|El] дают армии немало полезных эффектов как в сражении, так и вне поля боя."
  game_concept_commander_trait:0 "Свойство командира"
  game_concept_commander_traits:0 "Свойства командира"
  game_concept_commander_trait_desc:0 "$game_concept_commander_traits$ — особые [traits|El], соответствующие навыкам, которые персонаж может применять во время [Concept( 'commander', 'командования' )|E] [Concept( 'army', 'армиями' )|E].\n\nКомандирские свойства обычно приобретают дети, [education_focus|El] которых — военное дело, но также его можно получить, если у персонажа [martial_lifestyle|El], или другими способами."
  game_concept_battle_advantage:0 "Боевое преимущество"
  game_concept_advantage:0 "Преимущество"
- game_concept_battle_advantage_desc:0 "Когда начинается [battle|El], $game_concept_battle_advantage$ увеличивает наносимый урон:0 чем сильнее $game_concept_advantage$, тем больше урона наносят [soldiers|El].\n\nОбычно в начале битвы одной из сторон дают преимущество [terrain|El], [martial_skill|El] и [commander_traits|El] [Concept( 'commander', 'командира' )|El]. [rolls|E] $game_concept_commander$а могут дать дополнительное $game_concept_advantage$ любой из сторон."
+ game_concept_battle_advantage_desc:0 "Когда начинается [battle|El], $game_concept_battle_advantage$ увеличивает наносимый урон: чем сильнее $game_concept_advantage$, тем больше урона наносят [soldiers|El].\n\nОбычно в начале битвы одной из сторон дают преимущество [terrain|El], [martial_skill|El] и [commander_traits|El] [Concept( 'commander', 'командира' )|El]. [rolls|E] $game_concept_commander$а могут дать дополнительное $game_concept_advantage$ любой из сторон."
  game_concept_education_trait:0 "Свойство образования"
  game_concept_education_traits:0 "Свойства образования"
  game_concept_education_trait_desc:0 "[Concept( 'adulthood', 'Взрослея' )|E], персонажи получают [Concept( 'education_trait', 'свойства образования' )|E].\n\nЕсть пять типов образования, каждый из которых связан с определенным [Concept( 'skill', 'навыком' )|E].\n\nУровень получаемого [Concept( 'trait', 'свойства' )|E] зависит от того, насколько [Concept( 'childhood_trait', 'детский талант' )|E] соответствует [Concept( 'education_focus', 'фокусу образования' )|E] и соответствующему навыку [Concept( 'guardian', 'опекуна' )|E].\n\n$game_concept_education_trait$ персонажа увеличивают скорость, с которой развивается его [Concept( 'lifestyle', 'образ жизни' )|E]."
@@ -590,7 +595,7 @@
  game_concept_educate:0 "Учить"
  game_concept_educated:0 "Учится"
  game_concept_education_focus_short:0 "Фокус"
- game_concept_education_focus_desc:0 "[children|E] от #V 6#! до #V 9#! лет могут получить [Concept( 'education_focus', 'фокус образования' )|E], направленный на развитие одного из пяти [Concept( 'skill', 'навыков' )|E].\n\nПосле окончания учебы наступает [adulthood|El] персонажа:0 у него формируется [education_trait|El].\n\nКачество образования зависит от того, насколько [childhood_trait|El] совпадает с фокусом образования. Кроме того, на образование влияет соответствующий навык [Concept( 'guardian', 'опекуна' )|El].\n\nПри выборе фокуса образования вы можете указать, будет ли ребенок воспитываться в рамках [faiths|El] и [cultures|El] [Concept( 'guardian', 'опекуна' )|El]."
+ game_concept_education_focus_desc:0 "[children|E] от #V 6#! до #V 9#! лет могут получить [Concept( 'education_focus', 'фокус образования' )|E], направленный на развитие одного из пяти [Concept( 'skill', 'навыков' )|E].\n\nПосле окончания учебы наступает [adulthood|El] персонажа: у него формируется [education_trait|El].\n\nКачество образования зависит от того, насколько [childhood_trait|El] совпадает с фокусом образования. Кроме того, на образование влияет соответствующий навык [Concept( 'guardian', 'опекуна' )|El].\n\nПри выборе фокуса образования вы можете указать, будет ли ребенок воспитываться в рамках [faiths|El] и [cultures|El] [Concept( 'guardian', 'опекуна' )|El]."
  game_concept_childhood_trait:0 "Детский талант"
  game_concept_childhood_trait_desc:0 "Каждый ребенок в процессе взросления получает детский талант, например [GetTrait('rowdy').GetName( GetNullCharacter )] или [GetTrait('charming').GetName( GetNullCharacter )].\n\nПолученный талант указывает на то, какой [education_focus|El] будет наиболее удачным."
  game_concept_diplomacy:0 "Дипломатия"
@@ -618,7 +623,7 @@
  game_concept_prowess:0 "Доблесть"
  game_concept_prowess_i:0 "@skill_prowess_icon!"
  game_concept_prowess_skill:0 "Навык «Доблесть»"
- game_concept_prowess_skill_desc:0 "$game_concept_prowess$ — второстепенный [skill|El], отражающий личную боевую подготовку персонажа.\n\nПерсонажи с высоким показателем доблести имеют больше шансов на выживание и в [Concept( 'battles', 'битвах' )|E], где сражаются как [Concept( 'knights', 'рыцари' )|E], и в [Concept( 'single_combat_duel_plural', 'поединках' )|E].\n\nКаждое очко доблести дает рыцарю:\n$BULLET_WITH_TAB$[damage|E]:0 #V [GetDefine('NCombat', 'KNIGHT_DAMAGE_PER_PROWESS')]#!\n$BULLET_WITH_TAB$[toughness|E]:0 #V [GetDefine('NCombat', 'KNIGHT_TOUGHNESS_PER_PROWESS')]#!\n\n$PROWESS_MUSCLE_INFO$"
+ game_concept_prowess_skill_desc:0 "$game_concept_prowess$ — второстепенный [skill|El], отражающий личную боевую подготовку персонажа.\n\nПерсонажи с высоким показателем доблести имеют больше шансов на выживание и в [Concept( 'battles', 'битвах' )|E], где сражаются как [Concept( 'knights', 'рыцари' )|E], и в [Concept( 'single_combat_duel_plural', 'поединках' )|E].\n\nКаждое очко доблести дает рыцарю:\n$BULLET_WITH_TAB$[damage|E]: #V [GetDefine('NCombat', 'KNIGHT_DAMAGE_PER_PROWESS')]#!\n$BULLET_WITH_TAB$[toughness|E]: #V [GetDefine('NCombat', 'KNIGHT_TOUGHNESS_PER_PROWESS')]#!\n\n$PROWESS_MUSCLE_INFO$"
  game_concept_natural_prowess:0 "Естественная доблесть"
  game_concept_lifestyle:0 "Образ жизни"
  game_concept_lifestyles:0 "Образы жизни"
@@ -638,8 +643,8 @@
  game_concept_decision:0 "Решение"
  game_concept_decisions:0 "Решения"
  game_concept_decide:0 "Решить"
- game_concept_decision_desc:0 "$game_concept_decision$ — особое действие, которое [character|El] может совершить на досуге.\n\nУ каждого решения могут быть особые эффекты:0 от незначительных до сотрясающих целые [Concept( 'empire', 'империи' )|El].\n\nРешения, в результате которых персонаж временно перемещается в определенное место, называются [Concept( 'activities', 'занятиями' )|El]."
-  
+ game_concept_decision_desc:0 "$game_concept_decision$ — особое действие, которое [character|El] может совершить на досуге.\n\nУ каждого решения могут быть особые эффекты: от незначительных до сотрясающих целые [Concept( 'empire', 'империи' )|El].\n\nРешения, в результате которых персонаж временно перемещается в определенное место, называются [Concept( 'activities', 'занятиями' )|El]."
+
  game_concept_activity:0 "Занятие"
  game_concept_activities:0 "Занятия"
  game_concept_activity_desc:0 "$game_concept_activity$ — это особое событие, которое проводится по определенному поводу (например, [GetActivityType( 'activity_hunt' ).GetName|l] помогает сбросить [Concept( 'stress', 'стресс' )|E]).\n\n[activity_host_short|E] проводит занятие в определенной [Concept( 'location', 'области' )|E], куда должны [Concept( 'travel', 'отправиться' )|E] все участники. Место проведения занятия по-своему на него влияет.\n\nВсе участники занятия взаимодействуют друг с другом, объявляя о своих [Concept( 'intent', 'намерениях и планах' )|E].[SelectLocalization( HasDlcFeature( 'advanced_activities' ), 'game_concept_activity_desc_GRAND_ACTIVITY_DLC', '' )]"
@@ -652,7 +657,7 @@
  game_concept_activity_type_desc:0 "У некоторых [Concept( 'activities', 'занятий' )|E] и [Concept( 'grand_activities', 'грандиозных занятий' )|E] есть разные типы, связанные с особыми вариантами проведения.\n\nНапример, охота может быть обычной, соколиной и легендарной. Выбрать тот или иной тип можно, если вы отвечаете соответствующим требованиям."
  game_concept_activity_phase:0 "Фаза занятия"
  game_concept_activity_phases:0 "Фазы занятия"
- game_concept_activity_phase_desc:0 "Активная фаза занятия:0 [Concept( 'contest', 'состязание' )|E] на Большом турнире, [Concept( 'stop', 'остановка' )|E] во время [Concept( 'tour', 'тура' )|E] или пункт назначения во время [Concept( 'pilgrimage', 'паломничества' )|E]."
+ game_concept_activity_phase_desc:0 "Активная фаза занятия: [Concept( 'contest', 'состязание' )|E] на Большом турнире, [Concept( 'stop', 'остановка' )|E] во время [Concept( 'tour', 'тура' )|E] или пункт назначения во время [Concept( 'pilgrimage', 'паломничества' )|E]."
  game_concept_activity_phase_action:0 "Действие фазы занятия"
  game_concept_activity_phase_action_desc:0 "Раз в #V 7#! дней во время [Concept( 'activity', 'занятия' )|E] существует вероятность, что произойдет #EMP что-то#! помимо регулярных событий. Эти действия показываются в правом верхнем углу окна занятия.\n\nКонкретные действия зависят от [Concept( 'activity_type', 'типа занятия' )|E], например, [Concept( 'activity_host', 'устроитель занятия' )|E] может получить [Concept( 'prestige', 'престиж' )|E] или улучшить [Concept( 'opinion', 'мнение' )|E] [Concept( 'activity_guest', 'гостя' )|E], если идет [GetActivityType('activity_feast').GetName|l].\n\nВсегда есть шанс, что ничего не произойдет, особенно если занятие еще не перешло в [Concept( 'activity_state_active', 'активную' )|E] [Concept( 'activity_phase', 'фазу' )|E]."
  game_concept_activity_state_passive:0 "Пассивное"
@@ -671,11 +676,11 @@
  game_concept_intent:0 "Намерение"
  game_concept_intents:0 "Намерения"
  game_concept_intent_desc:0 "$game_concept_intent$ показывает, чего персонаж хочет достичь во время [Concept( 'activity', 'занятия' )|E]. И у устроителя, и у гостей есть свои намерения."
-  
+
  game_concept_location:0 "Место"
  game_concept_locations:0 "Места"
  game_concept_location_desc:0 "Каждый [Concept( 'character', 'персонаж' )|E] находится в каком-то определенном месте. Чтобы переместиться из одного места в другое, вам следует отправиться в [Concept( 'travel', 'путешествие' )|E]."
-  
+
  game_concept_feast:0 "$activity_feast$"
  game_concept_feast_desc:0 "Правители и их придворные собираются… в сущности, по любому удобному поводу. Это и есть [activity|El].\n\nУ участников встречи снижается [stress|El], а [opinion|El] об организаторе растет. Конечно, при таком крупном сборище людей без происшествий не обходится.\n\n$activity_feast$ — это [activity|El], на которое правитель приглашает своего [Concept( 'liege', 'сюзерена' )|El] и [Concept( 'vassals', 'вассалов' )|El] (а также различных [Concept( 'courtiers', 'придворных' )|El])."
  game_concept_hunt_success_chance:0 "Шанс успеха охоты"
@@ -686,7 +691,7 @@
  game_concept_hunt_dangerous:0 "Опасный"
  game_concept_hunt_danger_desc:0 "Непредсказуемость даже самой безобидной дичи и неразбериха погони убили не одного могучего воина.\n\nЧем опаснее зверь, тем больше [prestige_i|E][Concept( 'prestige', 'престижа' )|E] он принесет охотнику.\n\nПри выборе гостей не стоит забывать о том, что охота проходит в глухих местах и возможности на ней возникают самые разные..."
  game_concept_playdate:0 "$activity_playdate$"
- game_concept_playdate_desc:0 "[activity|E], когда молодые правители и их придворные собираются для игр, чтобы отвлечься от серых будней. \n\nУ участников встречи снижается [stress|El], а [opinion|El] об организаторе улучшается. Конечно, при таком крупном сборище детей без происшествий не обходится.\n\n$activity_playdate$ — это событие, на которое [ruler|El] приглашает гостей:0 среди них и [liege|El], и [vassals|El] (и разные [courtiers|El])."
+ game_concept_playdate_desc:0 "[activity|E], когда правители и их придворные, не достигшие [EmptyScope.ScriptValue('less_than_two_years_to_adulthood_value')|0V] лет, собираются для игр, чтобы отвлечься от серых будней.\n\nУ участников встречи снижается [stress|El], а [opinion|El] об организаторе улучшается. Конечно, при таком крупном сборище детей без происшествий не обходится.\n\n$activity_playdate$ — это событие, на которое [ruler|El] приглашает гостей: среди них и [liege|El], и [vassals|El] (и разные [courtiers|El])."
  game_concept_wedding_ceremony:0 "Церемония"
  game_concept_wedding_ceremony_desc:0 "Когда [GetActivityType('activity_wedding').GetName] доходит до этой [Concept( 'activity_phase', 'фазы' )|E], [Concept( 'spouses', 'супруги' )|El] клянутся друг другу в верности и [Concept( 'married', 'женятся' )|E]."
  game_concept_wedding_banquet:0 "Банкет"
@@ -700,45 +705,46 @@
  game_concept_taxes:0 "Налоги"
  game_concept_tax:0 "Налог"
  game_concept_taxation:0 "Налогообложение"
- game_concept_taxes_desc:0 "$game_concept_taxes$ являются важнейшим ежемесячным источником [Concept( 'gold', 'золота' )|E] для [Concept( 'rulers', 'правителей' )|E].\n\nКаждое [Concept( 'holding', 'владение' )|E] правителя ежемесячно предоставляет ему часть [Concept( 'domain_taxes', 'налогов домена' )|E]. Кроме того, у большинства [Concept( 'vassals', 'вассалов' )|E] есть [Concept( 'obligations', 'обязательства' )|E] перед [Concept( 'liege', 'сюзереном' )|E]:0 они должны передать часть собранных податей в виде [Concept( 'liege_taxes', 'налогов сюзерену' )|E]."
+ game_concept_taxes_desc:0 "$game_concept_taxes$ являются важнейшим ежемесячным источником [Concept( 'gold', 'золота' )|E] для [Concept( 'rulers', 'правителей' )|E].\n\nКаждое [Concept( 'holding', 'владение' )|E] правителя ежемесячно предоставляет ему часть [Concept( 'domain_taxes', 'налогов домена' )|E]. Кроме того, у большинства [Concept( 'vassals', 'вассалов' )|E] есть [Concept( 'obligations', 'обязательства' )|E] перед [Concept( 'liege', 'сюзереном' )|E]: они должны передать часть собранных податей в виде [Concept( 'liege_taxes', 'налогов сюзерену' )|E]."
  game_concept_dread:0 "Ужас"
  game_concept_dreadful:0 "Ужасающ"
  game_concept_dreaded:0 "В ужасе"
- game_concept_dread_desc:0 "$game_concept_dread$ отражает, насколько сильный страх внушает [Concept( 'ruler', 'правитель' )|E].\n\nПравители повышают [Concept( 'dread', 'ужас' )|E], совершая жестокие и отвратительные деяния, такие как пытки и казни [Concept( 'prisoner', 'пленников' )|E].\n\nУжас способствует игре за [Concept( 'tyrant', 'тирана' )|E]:0 неуправляемых [Concept( 'vassals', 'вассалов' )|El] можно [Concept( 'intimidated', 'запугать' )|El] или [Concept( 'cowed', 'устрашить' )|El], чтобы они боялись выступить против вас.\n\nУровень ужаса может меняться от 0 до 100. Со временем ужас будет изменяться в сторону естественного ужаса, определяемого [Concept( 'traits', 'свойствами' )|E] персонажа.\n\n#high Ужасающий [Concept( 'ruler', 'правитель' )|E] получает следующие выгоды:0 #!\n$BULLET_WITH_TAB$ [Concept( 'vassals', 'Вассалы' )|E] не хотят вступать во [factions|El]\n$BULLET_WITH_TAB$ [Concept( 'vassals', 'Вассалы' )|E] не хотят плести [scheming|El]\n$BULLET_WITH_TAB$ Повышается принятие вассалов #weak (например, при лишении титулов)#!\n$BULLET_WITH_TAB$ Повышается принятие [Concept( 'offer_vassalization', 'предложения вассализации' )|El]\n$BULLET_WITH_TAB$ Голоса [Concept( 'electors', 'выборщиков' )|El] чаще согласуются с вашим мнением\n$BULLET_WITH_TAB$ Вассалы реже сопротивляются изменениям [Concept( 'law', 'законов' )|El]\n\n#weak Отважные и дерзкие [Concept( 'vassals', 'вассалы' )|El] менее подвержены влиянию ужаса!#!"
+ game_concept_dread_desc:0 "$game_concept_dread$ отражает, насколько сильный страх внушает [Concept( 'ruler', 'правитель' )|E].\n\nПравители повышают [Concept( 'dread', 'ужас' )|E], совершая жестокие и отвратительные деяния, такие как пытки и казни [Concept( 'prisoner', 'пленников' )|E].\n\nУжас способствует игре за [Concept( 'tyrant', 'тирана' )|E]: неуправляемых [Concept( 'vassals', 'вассалов' )|El] можно [Concept( 'intimidated', 'запугать' )|El] или [Concept( 'cowed', 'устрашить' )|El], чтобы они боялись выступить против вас.\n\nУровень ужаса может меняться от 0 до 100. Со временем ужас будет изменяться в сторону естественного ужаса, определяемого [Concept( 'traits', 'свойствами' )|E] персонажа.\n\n#high Ужасающий [Concept( 'ruler', 'правитель' )|E] получает следующие выгоды: #!\n$BULLET_WITH_TAB$ [Concept( 'vassals', 'Вассалы' )|E] не хотят вступать во [factions|El]\n$BULLET_WITH_TAB$ [Concept( 'vassals', 'Вассалы' )|E] не хотят плести [scheming|El]\n$BULLET_WITH_TAB$ Повышается принятие вассалов #weak (например, при лишении титулов)#!\n$BULLET_WITH_TAB$ Повышается принятие [Concept( 'offer_vassalization', 'предложения вассализации' )|El]\n$BULLET_WITH_TAB$ Голоса [Concept( 'electors', 'выборщиков' )|El] чаще согласуются с вашим мнением\n$BULLET_WITH_TAB$ Вассалы реже сопротивляются изменениям [Concept( 'law', 'законов' )|El]\n\n#weak Отважные и дерзкие [Concept( 'vassals', 'вассалы' )|El] менее подвержены влиянию ужаса!#!"
  game_concept_truce:0 "Перемирие"
  game_concept_truces:0 "Перемирия"
- game_concept_truce_desc:0 "Каждая [war|El] заканчивается $game_concept_truce$м:0 периодом, в течение которого нападающий не может вновь выступить против того же [rulerpossessive|El] (у защищавшегося таких ограничений нет).\n\nНарушение перемирия приводит к серьезным штрафам."
+ game_concept_truce_desc:0 "Каждая [war|El] заканчивается $game_concept_truce$м: периодом, в течение которого нападающий не может вновь выступить против того же [rulerpossessive|El] (у защищавшегося таких ограничений нет).\n\nНарушение перемирия приводит к серьезным штрафам."
  game_concept_government:0 "Правительство"
  game_concept_governments:0 "Правительства"
  game_concept_government_form:0 "Форма правления"
  game_concept_government_forms:0 "Формы правления"
- game_concept_government_desc:0 "$game_concept_government_form$ [Concept( 'ruler', 'правителя' )|E] определяет доступные [Concept( 'laws', 'законы' )|E] и [Concept( 'obligations', 'обязательства' )|E] по отношению к [Concept( 'liege', 'сюзерену' )|E], если правитель не [Concept( 'independent', 'независим' )|E].\n\nФормы правления:0 [feudal|El], [tribal|El], [clan|El], [theocracy|El] и [republic|El]."
+ game_concept_government_desc:0 "$game_concept_government_form$ [Concept( 'ruler', 'правителя' )|E] определяет доступные [Concept( 'laws', 'законы' )|E] и [Concept( 'obligations', 'обязательства' )|E] по отношению к [Concept( 'liege', 'сюзерену' )|E], если правитель не [Concept( 'independent', 'независим' )|E].\n\nФормы правления: [feudal|El], [tribal|El], [clan|El], [theocracy|El] и [republic|El]."
  game_concept_feudal:0 "Феодальные"
  game_concept_feudal_government:0 "Феодальный строй"
  game_concept_feudalism:0 "Феодализм"
- game_concept_feudal_desc:0 "Феодальная [government_form|El]:0 [land|El] [Concept( 'liege', 'сюзерена' )|E] передается [Concept( 'vassals', 'вассалам' )|E] в обмен на [levies|El] и [taxes|El]. Вассал и сюзерен заключают [feudal_contracts|El], где оговорены все условия."
+ game_concept_feudal_desc:0 "Феодальная [government_form|El]: [land|El] [Concept( 'liege', 'сюзерена' )|E] передается [Concept( 'vassals', 'вассалам' )|E] в обмен на [levies|El] и [taxes|El]. Вассал и сюзерен заключают [feudal_contracts|El], где оговорены все условия."
  game_concept_tribal:0 "Племенные"
  game_concept_tribal_government:0 "Племенной строй"
  game_concept_tribal_desc:0 "Слабое [development|El] племенных держав позволяет использовать только [innovations|El], сделанные не позже племенной эры. Такие державы не могут создавать новые [holding|El] и обычно не могут менять [succession_law|El].\n\nТем не менее [prestige|El] у них ценится больше, чем [gold|El], при строительстве, и именно престижа требует [men_at_arms|El]. Племенные державы имеют больше [casus_belli|El], чем [feudal|El]. На их территории у враждебных армий снижается [supply_limit|El]."
-  
+
  game_concept_clan:0 "Клановые"
+ game_concept_clans:0 "Кланы"
  game_concept_clan_government:0 "Клановый строй"
- game_concept_clan_desc:0 "Кланы — [government_form|El], при которой [levies|El] и [taxes|El], которые [Concept( 'liege', 'сюзерену' )|El] присылают [vassals|El], зависят от [opinions|El] вассалов о сюзерене. При этом [crown_authority|El] повышает минимальный уровень податей независимо от мнения."
+ game_concept_clan_desc:0 "Кланы — [government_form|El], при которой [levies|El] и [taxes|El], которые [Concept( 'liege', 'сюзерену' )|El] присылают [vassals|El], зависят от [Concept( 'aptitude', 'пригодности' )|E] [Concept( 'tax_collector', 'сборщика налогов' )|E], назначенного сюзереном. Кланы также используют механику [Concept( 'house_unity', 'единства дома' )|E]."
  game_concept_theocracy:0 "Теократия"
  game_concept_theocracies:0 "Теократии"
  game_concept_theocratic:0 "Теократический"
  game_concept_theocratic_government:0 "Теократический строй"
  game_concept_theocracy_government:0 "Теократический строй"
  game_concept_theocracy_desc:0 "$game_concept_theocracy$ — неигровая [government_form|El], которую используют некоторые [faiths|El] в соответствии с [Concept( 'doctrine', 'доктринами' )|El]. Обычно во главе их стоит [head_of_faith|El] или [realm_priest|El]-[landed|El]. Иногда [independent|El] теократический правитель — это епископ в своем праве."
-  
+
  game_concept_republic:0 "Республика"
  game_concept_republics:0 "Республики"
  game_concept_republican:0 "Республиканский"
  game_concept_republic_government:0 "Республиканский строй"
- game_concept_republic_desc:0 "$game_concept_republic_government$ — неигровая [government_form|El], при которой избранный гражданин правит всю жизнь. Эту форму правления особенно ценят бюргеры и торговцы.\n\nУ [Concept( 'vassal', 'вассала' )|E]-республиканца неизменяемые [Concept( 'obligations', 'обязательства' )|E]:0 он отправляет [levies|El] и [taxes|El] без перебоев и в заранее известных количествах."
+ game_concept_republic_desc:0 "$game_concept_republic_government$ — неигровая [government_form|El], при которой избранный гражданин правит всю жизнь. Эту форму правления особенно ценят бюргеры и торговцы.\n\nУ [Concept( 'vassal', 'вассала' )|E]-республиканца неизменяемые [Concept( 'obligations', 'обязательства' )|E]: он отправляет [levies|El] и [taxes|El] без перебоев и в заранее известных количествах."
  game_concept_skill:0 "Навык"
  game_concept_skills:0 "Навыки"
- game_concept_skills_desc:0 "Навыки персонажа определяют его опыт в различных делах.\n\nПять основных навыков:0 [diplomacy|El], [martial|El], [stewardship|El], [intrigue|El], [learning|El]."
+ game_concept_skills_desc:0 "Навыки персонажа определяют его опыт в различных делах.\n\nПять основных навыков: [diplomacy|El], [martial|El], [stewardship|El], [intrigue|El], [learning|El]."
  game_concept_building:0 "Здание"
  game_concept_buildings:0 "Здания"
  game_concept_building_desc:0 "$game_concept_buildings$ — улучшения, которые можно строить во [Concept( 'holdings', 'владениях' )|El].\n\nСтроить многие типы зданий можно только в специальных [Concept( 'baronies', 'баронствах' )|El], для других же необходим определенный [terrain|El].\n\nВо всех владениях есть ограниченное количество ячеек для строительства, поэтому построить все типы зданий невозможно. [county_capitals|E] имеют дополнительную ячейку для строительства.\n\n[duchy_buildings|E] и [special_buildings|El] строятся в особых ячейках."
@@ -757,7 +763,7 @@
  game_concept_fortification_building:0 "Оборонительная постройка"
  game_concept_fortification_buildings:0 "Оборонительные постройки"
  game_concept_fortification_building_desc:0 "$game_concept_fortification_buildings$ — [buildings|El], главная задача которых — повышать [fort_level|El] владельца или давать дополнительное [advantage|El] защитникам."
-  
+
  game_concept_battle:0 "Битва"
  game_concept_battles:0 "Битвы"
  game_concept_battle_desc:0 "$game_concept_battles$ начинаются, когда две противоборствующие [armies|El] входят в одно [barony|El].\n\nКогда начинается $game_concept_battle$, у каждой стороны есть [advantage|El], которое дают такие факторы, как [terrain|El], [commander|El] и [commander_traits|El].\n\nАрмии несут [casualties|El] в соответствии с полученным [Concept( 'damage', 'уроном' )|El]. Когда на одной из сторон не остается [soldier|El], $game_concept_battle$ заканчивается и рассчитываются [aftermath|El].\n\nБоевой счет победителя возрастает в соответствии со значимостью победы."
@@ -848,7 +854,7 @@
  game_concept_wanderer:0 "Скиталец"
  game_concept_wanderers:0 "Скитальцы"
  game_concept_wanderer_desc:0 "Персонажей, которые не служат при [Concept( 'court', 'дворе' )|El] и не владеют [Concept( 'titles', 'титулами' )|El], называют скитальцами. Странствуя по свету, они иногда останавливаются [Concept( 'guests', 'погостить' )|El] при дворах правителей. Скитальцы становятся капитанами [Concept( 'mercenary', 'наемников' )|El] и владетелями [Concept( 'city', 'городов' )|El], возглавляют [holy_orders|El] и вступают в ряды [Concept( 'clergy', 'духовенства' )|El]."
-  
+
  game_concept_court_host:0 "Хозяин двора"
  game_concept_court_host_desc:0 "$game_concept_court_host$ — [Concept( 'ruler', 'правитель' )|E], который не является сюзереном персонажа, но принимает его при [Concept( 'court', 'дворе' )|E].\n\nГости появляются при дворе по разным причинам. Так, правителя могут посетить [Concept( 'wanderers', 'скитальцы' )|E], а [Concept( 'wards', 'подопечные' )|E] живут при том же дворе, что и их [Concept( 'guardian', 'опекун' )|E]."
  game_concept_host:0 "Гостеприимец"
@@ -882,8 +888,8 @@
  game_concept_criminal:0 "Преступник"
  game_concept_criminals:0 "Преступники"
  game_concept_crime_i:0 "@crime_icon!"
- game_concept_crime_desc:0 "$game_concept_crimes$ — это действия, которые общество не одобряет настолько, что считает достойными наказания.\n\nПреступления могут быть как светскими (например, [Concept( 'revolting', 'восстание' )|E] [Concept( 'vassals', 'вассалов' )|E] против своего [Concept( 'liege', 'сюзерена' )|E]), так и религиозными (любые примеры [Concept( 'shunned', 'порицаемого' )|E] поведения, незаконного с точки зрения [Concept( 'doctrine', 'доктрины' )|E]). Наказывать за светские преступления могут только пострадавшие персонажи, но любой [Concept( 'ruler', 'правитель' )|E] имеет право наказывать подданных за религиозные преступления.\n\nВсе преступления дают правителю законный повод [Concept( 'imprison', 'заточить' )|E] [Concept( 'criminals', 'преступников' )|E] в темницу и, в зависимости от тяжести преступления, [Concept( 'revoke', 'отнять' )|E] их [Concept( 'titles', 'титулы' )|E], [Concept( 'banish', 'изгнать' )|E], [Concept( 'torture', 'подвергнуть пыткам' )|E] или [Concept( 'execute', 'казнить' )|E]. За каждое преступление можно наказать лишь единожды, но некоторые злодеяния испортят преступнику [Concept( 'fame_trait', 'репутацию' )|E]:0 приобретенное негативное свойство репутации не смывается до самой смерти.\n\nИногда персонажам удается скрыть преступления, и те становятся [Concept( 'secrets', 'секретами' )|E]. Другие персонажи могут раскрыть такой секрет и использовать его для [Concept( 'blackmail', 'шантажа' )|E]."
-  
+ game_concept_crime_desc:0 "$game_concept_crimes$ — это действия, которые общество не одобряет настолько, что считает достойными наказания.\n\nПреступления могут быть как светскими (например, [Concept( 'revolting', 'восстание' )|E] [Concept( 'vassals', 'вассалов' )|E] против своего [Concept( 'liege', 'сюзерена' )|E]), так и религиозными (любые примеры [Concept( 'shunned', 'порицаемого' )|E] поведения, незаконного с точки зрения [Concept( 'doctrine', 'доктрины' )|E]). Наказывать за светские преступления могут только пострадавшие персонажи, но любой [Concept( 'ruler', 'правитель' )|E] имеет право наказывать подданных за религиозные преступления.\n\nВсе преступления дают правителю законный повод [Concept( 'imprison', 'заточить' )|E] [Concept( 'criminals', 'преступников' )|E] в темницу и, в зависимости от тяжести преступления, [Concept( 'revoke', 'отнять' )|E] их [Concept( 'titles', 'титулы' )|E], [Concept( 'banish', 'изгнать' )|E], [Concept( 'torture', 'подвергнуть пыткам' )|E] или [Concept( 'execute', 'казнить' )|E]. За каждое преступление можно наказать лишь единожды, но некоторые злодеяния испортят преступнику [Concept( 'fame_trait', 'репутацию' )|E]: приобретенное негативное свойство репутации не смывается до самой смерти.\n\nИногда персонажам удается скрыть преступления, и те становятся [Concept( 'secrets', 'секретами' )|E]. Другие персонажи могут раскрыть такой секрет и использовать его для [Concept( 'blackmail', 'шантажа' )|E]."
+
  game_concept_shunned:0 "Недостойные"
  game_concept_shunned_desc:0 "У многих [Concept( 'faiths', 'конфессий' )|E] есть [Concept( 'doctrines', 'доктрины' )|E], порицающие определенное поведение. В зависимости от доктрины такое поведение может считаться [Concept( 'criminal', 'настоящим преступлением' )|E].\n\nПерсонажи, уличенные в действиях, порицаемых их конфессией, теряют [Concept( 'prestige_level', 'уровень репутации' )|E] и получают соответствующее [Concept( 'fame_trait', 'свойство репутации' )|E]. Это свойство будет портить мнение всех персонажей, чья конфессия считает подобное поведение недостойным или преступным.\n\nПримеры недостойного поведения включают в себя:\n$EFFECT_LIST_BULLET$ [GetTrait('fornicator').GetName( GetNullCharacter )]\n$EFFECT_LIST_BULLET$ [GetTrait('adulterer').GetName( GetNullCharacter )]\n$EFFECT_LIST_BULLET$ [GetTrait('deviant').GetName( GetNullCharacter )]\n$EFFECT_LIST_BULLET$ [GetTrait('sodomite').GetName( GetNullCharacter )]\n$EFFECT_LIST_BULLET$ [GetTrait('kinslayer_3').GetName( GetNullCharacter )]\n$EFFECT_LIST_BULLET$ [GetTrait('witch').GetName( GetNullCharacter )]"
  game_concept_refuse_conversion_crime:0 "Отказаться от обращения"
@@ -922,7 +928,7 @@
  game_concept_banish:0 "Изгонять"
  game_concept_banished:0 "Изгнан"
  game_concept_banishment:0 "Изгнание"
- game_concept_banishment_desc:0 "[Concept( 'imprisoned', 'Заключенные' )|E] персонажи могут быть [Concept( 'banished', 'изгнаны' )|E] из [realms|El]. Это одно из самых суровых наказаний:0 все их [gold|El] и [titles|El] конфискуются, а потомки лишаются наследства.\n\nИзгнание без причины (которой может быть некое тяжкое [crime|El]) считается проявлением крайней степени [Concept( 'tyrant', 'тирании' )|E]."
+ game_concept_banishment_desc:0 "[Concept( 'imprisoned', 'Заключенные' )|E] персонажи могут быть [Concept( 'banished', 'изгнаны' )|E] из [realms|El]. Это одно из самых суровых наказаний: все их [gold|El] и [titles|El] конфискуются, а потомки лишаются наследства.\n\nИзгнание без причины (которой может быть некое тяжкое [crime|El]) считается проявлением крайней степени [Concept( 'tyrant', 'тирании' )|E]."
  game_concept_revoke:0 "Лишить"
  game_concept_revoked:0 "Лишенный"
  game_concept_revoking:0 "Лишается"
@@ -1112,8 +1118,8 @@
  game_concept_culture_pillar:0 "Культурный столп"
  game_concept_culture_pillars:0 "Культурные столпы"
  game_concept_culture_pillar_desc:0 "[SelectLocalization( HasDlcFeature( 'reform_culture' ), 'game_concept_culture_pillar_desc_REFORM_DLC', 'game_concept_culture_pillar_desc_NO_REFORM_DLC' )]"
- game_concept_culture_pillar_desc_REFORM_DLC:0 "Столпы представляют собой качества, отражающие происхождение [Concept( 'culture', 'культуры' )|E].\n\nВсего существует 4 столпа:\n$EFFECT_LIST_BULLET$[heritage|E]\n$EFFECT_LIST_BULLET$[language|E]\n$EFFECT_LIST_BULLET$[martial_custom|E]\n$EFFECT_LIST_BULLET$Эстетика\n\n[culture_head|E] может изменить язык и военные традиции при помощи [Concept( 'reformation', 'реформации' )|E]."
- game_concept_culture_pillar_desc_NO_REFORM_DLC:0 "Столпы представляют собой неизменные качества, отражающие происхождение [Concept( 'culture', 'культуры' )|E].\n\nВсего существует 4 столпа:\n$EFFECT_LIST_BULLET$[heritage|E]\n$EFFECT_LIST_BULLET$[language|E]\n$EFFECT_LIST_BULLET$[martial_custom|E]\n$EFFECT_LIST_BULLET$Эстетика"
+ game_concept_culture_pillar_desc_REFORM_DLC:0 "Столпы представляют собой качества, отражающие происхождение [Concept( 'culture', 'культуры' )|E].\n\nВсего существует 4 столпа:\n$EFFECT_LIST_BULLET$[heritage|E]\n$EFFECT_LIST_BULLET$[language|E]\n$EFFECT_LIST_BULLET$[martial_custom|E]\n$EFFECT_LIST_BULLET$Эстетика\n\n[culture_head|E] может изменить моральные принципы, язык и военные традиции при помощи [Concept( 'reformation', 'реформации' )|E]."
+ game_concept_culture_pillar_desc_NO_REFORM_DLC:0 "Столпы представляют собой неизменные качества, отражающие происхождение [Concept( 'culture', 'культуры' )|E].\n\nВсего существует 4 столпа:\n$EFFECT_LIST_BULLET$[heritage|E]\n$EFFECT_LIST_BULLET$[language|E]\n$EFFECT_LIST_BULLET$[martial_custom|E]\n$EFFECT_LIST_BULLET$Эстетика"
  game_concept_culture_tradition:0 "Культурные традиции"
  game_concept_culture_traditions:0 "Культурные традиции"
  game_concept_tradition:0 "Традиция"
@@ -1121,7 +1127,7 @@
  game_concept_culture_tradition_desc:0 "Традиции представляют собой обряды, привычки, ценности и моральные принципы отдельных [Concept( 'cultures', 'культур' )|E].\n\nКаждая традиция предоставляет особые бонусы или возможности [Concept( 'characters', 'персонажам' )|E] и [Concept( 'counties', 'графствам' )|E] этой культуры.\n\n[SelectLocalization( HasDlcFeature( 'reform_culture' ), 'game_concept_culture_tradition_desc_REFORM_DLC', 'game_concept_culture_tradition_desc_NO_REFORM_DLC' )]\n\n$game_concept_cultures$ могут иметь до 6 традиций, но в большинстве случаев их меньше."
  game_concept_culture_tradition_desc_REFORM_DLC:0 "[culture_head|E] может устанавливать новые традиции или заменять существующие при помощи [Concept( 'reformation', 'реформации' )|E]."
  game_concept_culture_tradition_desc_NO_REFORM_DLC:0 "[culture_head|E] может устанавливать новые традиции, расходуя на это [Concept( 'prestige', 'престиж' )|E]."
-  
+
  game_concept_ethos:0 "Моральные принципы"
  game_concept_ethos_desc:0 "Моральные принципы [Concept( 'culture', 'культуры' )|E] определяют ее главные ценности, руководящие принципы и отношение к жизни в целом.\n\nКроме этого, моральные принципы значительно влияют на стоимость принятия новых [Concept( 'traditions', 'традиций' )|E] [Concept( 'culture_head', 'культурным идеологом' )|E].[SelectLocalization( HasDlcFeature( 'reform_culture' ), 'game_concept_ethos_desc_REFORM_DLC', '' )]"
  game_concept_ethos_desc_REFORM_DLC:0 "\n\n[culture_head|E] может устанавливать или заменять существующие [Concept( 'ethos', 'моральные принципы' )|E] при помощи [Concept( 'reformation', 'реформации' )|E]."
@@ -1142,7 +1148,7 @@
  game_concept_culture_head_desc_REFORM_DLC:0 "$game_concept_culture_head$ может частично [Concept( 'reform', 'реформировать' )|E] свою культуру."
  game_concept_culture_head_desc_NO_REFORM_DLC:0 "$game_concept_culture_head$ может устанавливать новые [Concept( 'traditions', 'традиции' )|E] своей культуры."
  game_concept_county_opinion:0 "Народное мнение"
- game_concept_county_opinion_desc:0 "У обычных жителей [Concept( 'county', 'графства' )|E] есть свое [Concept( 'opinion', 'мнение' )|E] о [Concept( 'character', 'персонаже' )|E], который ими правит. Если люди несчастны, они могут собрать [Concept( 'peasant_faction', 'крестьянскую фракцию' )|E] или [Concept( 'popular_faction', 'фракцию популистов' )|E]. Фракции обоих типов могут быстро распространиться по всем уголкам [Concept( 'realm', 'державы' )|E].\n\nУ владетеля должны быть те же [culture|El] и [faith|El], что у народа:0 это простейший способ контролировать $game_concept_county_opinion$.\n\n$game_concept_county_opinion$ о владельце другой конфессии определяется [Concept( 'faith_hostility', 'враждебностью' )|E] конфессии графства и ее религиозным [Concept( 'fervor', 'рвением' )|E], линейно меняясь от 0 до 100 [Concept( 'fervor', 'рвения' )|E]."
+ game_concept_county_opinion_desc:0 "У обычных жителей [Concept( 'county', 'графства' )|E] есть свое [Concept( 'opinion', 'мнение' )|E] о [Concept( 'character', 'персонаже' )|E], который ими правит. Если люди несчастны, они могут собрать [Concept( 'peasant_faction', 'крестьянскую фракцию' )|E] или [Concept( 'popular_faction', 'фракцию популистов' )|E]. Фракции обоих типов могут быстро распространиться по всем уголкам [Concept( 'realm', 'державы' )|E].\n\nУ владетеля должны быть те же [culture|El] и [faith|El], что у народа: это простейший способ контролировать $game_concept_county_opinion$.\n\n$game_concept_county_opinion$ о владельце другой конфессии определяется [Concept( 'faith_hostility', 'враждебностью' )|E] конфессии графства и ее религиозным [Concept( 'fervor', 'рвением' )|E], линейно меняясь от 0 до 100 [Concept( 'fervor', 'рвения' )|E]."
  game_concept_core_tenet:0 "Догмат"
  game_concept_core_tenet_desc:0 "В то время как [doctrines|El] представляют собой утверждения, на которых зиждется [faith|El], $game_concept_core_tenets$ описывают уникальные особенности и обряды конфессии."
  game_concept_core_tenets:0 "Догматы"
@@ -1158,7 +1164,7 @@
  game_concept_directed_great_holy_war_desc:0 "Направленную священную войну объявляет [head_of_faith|El], исповедующей $doctrine_temporal_head_name$, чтобы подчинить себе [kingdom|El].\n\n[rulers|E], принадлежащие той же [faiths|El], могут помочь главе и получить за это награды (среди прочего — [Concept( 'piety', 'благочестие' )|El]! и возможность получить [Concept( 'land', 'земельные' )|El] наделы для своей [dynasties|El] в завоеванном королевстве).\n\nПравители, чья [religion|El] стала целью войны, могут объединяться, не заключая [alliance|El]."
  game_concept_undirected_great_holy_war:0 "Всеобщая священная война"
  game_concept_undirected_great_holy_wars:0 "Всеобщие священные войны"
- game_concept_undirected_great_holy_war_desc:0 "Всеобщую священную войну объявляет [head_of_faith|El], исповедующей $doctrine_spiritual_head_name$, чтобы подчинить [kingdom|El] своей [faiths|El].\n\n$game_concept_undirected_great_holy_wars$ начинаются не сразу:0 первой запускается [preparation_phase|El].\n\nДо и во время войны правители нападающей конфессии могут жертвовать [gold|El] в [war_chest|El].\n\nВ случае победы атакованное королевство будет захвачено и отдано члену напавшей конфессии. Среди прочего атакующие могут получить [Concept( 'piety', 'благочестие' )|El]! и [Concept( 'land', 'земельные' )|El] наделы для своей [dynasties|El] в завоеванном королевстве."
+ game_concept_undirected_great_holy_war_desc:0 "Всеобщую священную войну объявляет [head_of_faith|El], исповедующей $doctrine_spiritual_head_name$, чтобы подчинить [kingdom|El] своей [faiths|El].\n\n$game_concept_undirected_great_holy_wars$ начинаются не сразу: первой запускается [preparation_phase|El].\n\nДо и во время войны правители нападающей конфессии могут жертвовать [gold|El] в [war_chest|El].\n\nВ случае победы атакованное королевство будет захвачено и отдано члену напавшей конфессии. Среди прочего атакующие могут получить [Concept( 'piety', 'благочестие' )|El]! и [Concept( 'land', 'земельные' )|El] наделы для своей [dynasties|El] в завоеванном королевстве."
  game_concept_preparation_phase:0 "Стадия подготовки"
  game_concept_preparation_phase_desc:0 "Прежде чем будет объявлена [undirected_great_holy_war|E], проходит [Concept( 'preparation_phase', 'стадия подготовки' )|E].\n\nНа этой стадии [rulers|El] нападающей [faiths|El] принимают решения отправить свои войска на войну и/или сделать взнос в [Concept( 'war_chest', 'военную казну' )|E].\n\n$game_concept_preparation_phase$ заканчивается по истечении определенного времени, и затем начинается война.\n\nПравители-адепты атакуемой [religions|El] в это время могут собирать войска для защиты — при этом силы обеих сторон подсчитываются постоянно."
  game_concept_war_chest:0 "Военная казна"
@@ -1201,18 +1207,18 @@
  game_concept_cultural_exposure:0 "Культурное направление"
  game_concept_exposure:0 "Сосредоточение"
  game_concept_exposed:0 "Сосредотачивается"
- game_concept_cultural_exposure_desc:0 "Контакт с другой [Concept( 'culture', 'культурой' )|E], открывшей [Concept( 'innovations', 'инновации' )|E], приведет к тому, что одна из этих [Concept( 'innovations', 'инноваций' )|E] будет изучаться куда быстрее. Любое [Concept( 'exposure', 'сосредоточение' )|E] ускоряет исследования точно так же:0 дополнительное [Concept( 'exposure', 'сосредоточение' )|E] не усилит этого эффекта."
+ game_concept_cultural_exposure_desc:0 "Контакт с другой [Concept( 'culture', 'культурой' )|E], открывшей [Concept( 'innovations', 'инновации' )|E], приведет к тому, что одна из этих [Concept( 'innovations', 'инноваций' )|E] будет изучаться куда быстрее. Любое [Concept( 'exposure', 'сосредоточение' )|E] ускоряет исследования точно так же: дополнительное [Concept( 'exposure', 'сосредоточение' )|E] не усилит этого эффекта."
  game_concept_congenital:0 "Врожденные"
  game_concept_congenital_trait:0 "Врожденное свойство"
  game_concept_congenital_traits:0 "Врожденные свойства"
- game_concept_congenital_desc:0 "Некоторые [traits|El] являются врожденными и могут передаваться по наследству. Внимательно спланированное [breeding|El] позволяет даже усилить некоторые свойства.\n\nНапример, если у обоих родителей есть свойство «[GetTrait('intellect_good_1').GetName( GetNullCharacter )]», их дети с высокой вероятностью получат более развитое свойство «[GetTrait('intellect_good_2').GetName( GetNullCharacter )]».\n\nБазовые [skills|El] не являются врожденными.\n\n#V Обратите внимание, что свойства категории [bloodofnumenor|E] хотя и являются наследуемыми, регулируются собственными правилами наследования.#!"
+ game_concept_congenital_desc:0 "Некоторые [traits|El] являются врожденными и могут передаваться по наследству. Внимательно спланированное [breeding|El] позволяет даже усилить некоторые свойства.\n\nНапример, если у обоих родителей есть свойство «[GetTrait('intellect_good_1').GetName( GetNullCharacter )]», их дети с высокой вероятностью получат более развитое свойство «[GetTrait('intellect_good_2').GetName( GetNullCharacter )]».\n\nБазовые [skills|El] не являются врожденными.\n\n#V Обратите внимание, что свойства из группы «[bloodofnumenor|E]», будучи врождёнными, следуют своим собственным правилам наследования.#!" #LotR
  game_concept_breeding:0 "Деторождение"
  game_concept_bred:0 "Рожден"
  game_concept_breed:0 "Рожать детей"
  game_concept_breeding_desc:0 "Если у персонажей хорошие [congenital|El] [traits|El], то в [Concept( 'marriage', 'браках' )|E] между ними могут рождаться дети с теми же свойствами. Если отпрыску повезет, его свойства проявятся даже сильнее.\n\nВпрочем, то же касается и отрицательных врожденных свойств, таких как «[GetTrait('beauty_bad_2').GetName( GetNullCharacter )]».\n\nСколь бы привлекательной ни казалась идея устроить брак между близкими родственниками, чтобы дети получили лучшие свойства, не стоит забывать о риске, который несет [inbreeding|El]."
  game_concept_inbreeding:0 "Кровосмешение"
  game_concept_inbred:0 "Плод кровосмешения"
- game_concept_inbreeding_desc:0 "[children|E] двух близких родственников могут получить [congenital|El] дефекты, самым серьезным из которых является [trait|El] «[GetTrait('inbred').GetName( GetNullCharacter )]».\n\nВ первом поколении он возникает редко, однако каждое последующее [Concept( 'inbreeding', 'кровосмешение' )|E] повышает риски.\n\nВпрочем, через несколько поколений [Concept( 'inbreeding', 'кровосмесительных связей' )|E] есть вероятность появления [Concept( 'trait', 'свойства' )|E] «[GetTrait('pure_blooded').GetName( GetNullCharacter )]», которое при наличии у обоих родителей дает отпрыску невосприимчивость к врожденным дефектам:0 они будут попросту [Concept( 'bred', 'искоренены' )|E] в роду."
+ game_concept_inbreeding_desc:0 "[children|E] двух близких родственников могут получить [congenital|El] дефекты, самым серьезным из которых является [trait|El] «[GetTrait('inbred').GetName( GetNullCharacter )]».\n\nВ первом поколении он возникает редко, однако каждое последующее [Concept( 'inbreeding', 'кровосмешение' )|E] повышает риски.\n\nВпрочем, через несколько поколений [Concept( 'inbreeding', 'кровосмесительных связей' )|E] есть вероятность появления [Concept( 'trait', 'свойства' )|E] «[GetTrait('pure_blooded').GetName( GetNullCharacter )]», которое при наличии у обоих родителей дает отпрыску невосприимчивость к врожденным дефектам: они будут попросту [Concept( 'bred', 'искоренены' )|E] в роду."
  game_concept_cadet_branching:0 "Отделение младших"
  game_concept_cadet_branch:0 "Младшая линия"
  game_concept_cadet_branches:0 "Младшие линии"
@@ -1227,7 +1233,7 @@
  game_concept_toughness:0 "Выносливость"
  game_concept_toughness_desc:0 "Выносливость [Concept( 'soldier', 'солдата' )|El] определяет, сколько [Concept( 'damage', 'урона' )|El] он может выдержать во время [battles|El], прежде чем падет, пополнив число потерь.\n\n[levy|E] обладает [GetDefine('NCombat', 'LEVY_TOUGHNESS')] ед. выносливости."
  game_concept_pursuit:0 "Преследование"
- game_concept_pursuit_desc:0 "Когда наступают [aftermath|El] [battles|El], победившая [army|El] увеличивает [casualties|El] врага в соответствии с общим показателем преследования:0 [Concept( 'routed_soldiers', 'обращенные в бегство' )|E] солдаты превратятся в [Concept( 'dead_soldiers', 'убитых' )|E]."
+ game_concept_pursuit_desc:0 "Когда наступают [aftermath|El] [battles|El], победившая [army|El] увеличивает [casualties|El] врага в соответствии с общим показателем преследования: [Concept( 'routed_soldiers', 'обращенные в бегство' )|E] солдаты превратятся в [Concept( 'dead_soldiers', 'убитых' )|E]."
  game_concept_screen:0 "Скрытность"
  game_concept_screen_desc:0 "Когда наступают [aftermath|El] [battles|El], проигравшая [army|El] снижает свои [casualties|El] в соответствии с общим показателем скрытности."
  game_concept_siege_progress:0 "Прогресс осады"
@@ -1238,7 +1244,7 @@
  game_concept_completely_controls:0 "Полностью под контролем"
  game_concept_completely_control:0 "Полностью под контролем"
  game_concept_completely_controlled:0 "Полностью под контролем"
-  
+
  game_concept_complete_control:0 "Полный контроль"
  game_concept_complete_control_desc:0 "Это состояние достигается, когда все требуемые [de_jure|El] [titles|El] вассалов принадлежат или их [Concept( 'ruler', 'правителю' )|El], или их [Concept( 'vassal', 'вассалам' )|El] и ни одно графство не занято вражеской [Concept( 'armies', 'армией' )|El]."
  game_concept_complete_control_region:0 "Полный контроль"
@@ -1267,8 +1273,8 @@
  game_concept_knight_desc_TOTO_DLC:0 "Вы получаете [Concept( 'prestige', 'престиж' )|E] каждый раз, когда ваши рыцари будут [Concept( 'contest_qualifies', 'проходить отбор' )|E] на [Concept( 'contest', 'состязания' )|E] (например, [GetActivityType( 'activity_tournament' ).GetName]) или одерживать на них победу.\n\n"
  game_concept_knight_desc_NO_TOTO_DLC:0 ""
  game_concept_knight_desc_ACCOLADE_DLC:0 "Рыцари, прошедшие церемонию [Concept( 'accolade', 'акколада' )|E], становятся [Concept( 'acclaimed_knights', 'именитыми рыцарями' )|E].\n\n"
-  
-  
+
+
  game_concept_knight_effectiveness:0 "Эффективность рыцарей"
  game_concept_knight_effectiveness_desc:0 "Эффективность рыцарей [Concept( 'ruler', 'правителя' )|El] определяет, насколько эффективны его [knights|El] в [Concept( 'battle', 'битве' )|El].\n\nПри 100% рыцари сражаются как обычно, зато при 200% их [prowess|El] увеличивается вдвое."
  game_concept_short_reign:0 "Недолгое правление"
@@ -1289,7 +1295,6 @@
  game_concept_papal_recipient_desc:0 "Если главная цель [Concept( 'great_holy_war', 'Великой священной войны' )|E] уже имеет владельца или на нее претендует член конфессии агрессора, тот законным образом получит завоеванный титул, если только участник, внесший самый крупный вклад в войну, не передаст право первенства своему [Concept( 'beneficiary', 'бенефициару' )|E]."
  game_concept_end_date:0 "Дата окончания"
  game_concept_end_date_desc:0 "Игра закончится в 1453 году."
-  
  game_concept_realm_size:0 "Размер владений"
  game_concept_realm_size_desc:0 "$game_concept_realm_size$ персонажа зависит от того, сколькими [Concept( 'counties', 'графствами' )|El] владеет он и его [vassals|El]."
  game_concept_voter_strength:0 "Сила избирателя"
@@ -1302,15 +1307,12 @@
  game_concept_stress_level_desc:0 "За каждые 100 ед. [Concept( 'stress', 'стресса' )|E] персонаж получает уровень стресса, от 1-го к 3-му уровню последовательно. От стресса ухудшаются [fertility|El] и [health|El] персонажа.\n\nКроме того, даже при 1-м уровне стресса может произойти [mental_break|El]."
  game_concept_mental_break:0 "Нервный срыв"
  game_concept_mental_breaks:0 "Нервные срывы"
- game_concept_mental_break_desc:0 "Когда персонаж не может справиться со [Concept( 'stress', 'стрессом' )|E], происходит нервный срыв — кризис, при котором персонаж любой ценой пытается снять стресс.\n\nУ персонажа есть несколько способов избавиться от нервного срыва, хотя многие из них имеют отрицательные последствия.\n\nНизкие [stress_levels|El] позволяют решить проблему малыми усилиями, и полученный ущерб обычно легко исправить. Но с ростом уровня стресса последствия становятся все более значительными:0 персонажу грозит безумие или даже смерть."
+ game_concept_mental_break_desc:0 "Когда персонаж не может справиться со [Concept( 'stress', 'стрессом' )|E], происходит нервный срыв — кризис, при котором персонаж любой ценой пытается снять стресс.\n\nУ персонажа есть несколько способов избавиться от нервного срыва, хотя многие из них имеют отрицательные последствия.\n\nНизкие [stress_levels|El] позволяют решить проблему малыми усилиями, и полученный ущерб обычно легко исправить. Но с ростом уровня стресса последствия становятся все более значительными: персонажу грозит безумие или даже смерть."
  stress_icon_tooltip:0 "$game_concept_mental_break_desc$"
-  
  game_concept_clergy_opinion:0 "Мнение духовенства"
  game_concept_clergy_opinion_desc:0 "Это [opinion|El] влияет только на [clergy|El] вашей [faiths|El]."
-  
  game_concept_secular_opinion:0 "Мнение мирян"
  game_concept_secular_opinion_desc:0 "Это [opinion|El] влияет только на персонажей, #Emphasis не#! входящих в [clergy|El]."
-  
  game_concept_title_allegiance:0 "Верность титулу"
  game_concept_title_allegiance_desc:0 "[vassals|E] могут клясться в верности определенному [Concept( 'title', 'титулу' )|El], а не личности [Concept( 'liege', 'сюзерена' )|El]. Это возможно только в том случае, если у титула есть собственный [succession_law|El]. Когда происходит [succession|El], сюзереном таких вассалов становится новый [holder|El] титула."
  game_concept_nominate:0 "Выдвинуть"
@@ -1347,12 +1349,10 @@
  game_concept_incest:0 "Инцест"
  game_concept_incestuous:0 "Инцест"
  game_concept_incest_desc:0 "Термин «инцест» обозначает сексуальную связь близких родственников.\nКакие отношения считать инцестом, определяет $doctrine_consanguinity_name$ [doctrine|El], которую исповедует [faith|El] персонажа."
-  
  game_concept_relation:0 "Особые отношения"
  game_concept_relations:0 "Особые отношения"
  game_concept_relationship:0 "Особые отношения"
  game_concept_relation_desc:0 "$game_concept_relation$ — отношения персонажа, не касающиеся семьи или [Concept( 'vassalage', 'вассальных' )|El] отношений. Такие $game_concept_relations$ определяют [character_modifiers|El], затронутого отношениями, и событий, которые могут между этими персонажами произойти.\n\nОбычные отношения:\n$EFFECT_LIST_BULLET$ [friend|El]\n$EFFECT_LIST_BULLET$ [lover|El]\n$EFFECT_LIST_BULLET$ [rival|El]\n$EFFECT_LIST_BULLET$ [guardian|El]\n$EFFECT_LIST_BULLET$ [ward|El]\n$EFFECT_LIST_BULLET$ [mentor|El]\n$EFFECT_LIST_BULLET$ [student|El]\n\nСильные отношения:\n$EFFECT_LIST_BULLET$ [best_friend|El]\n$EFFECT_LIST_BULLET$ [soulmate|El]\n$EFFECT_LIST_BULLET$ [nemesis|El]\n\nДетские отношения:\n$EFFECT_LIST_BULLET$ [bully|El]\n$EFFECT_LIST_BULLET$ [victim|El]\n$EFFECT_LIST_BULLET$ [crush|El]"
-  
  game_concept_lover:0 "Любовник/любовница"
  game_concept_lovers:0 "Любовники"
  game_concept_lover_possessive:0 "Любовника"
@@ -1363,20 +1363,17 @@
  game_concept_soulmate_possessive:0 "Родственной души"
  game_concept_soulmates_possessive:0 "Родственные души"
  game_concept_soulmate_desc:0 "$game_concept_soulmate$ — это $game_concept_relation$, подразумевающие глубокую, искреннюю любовь. Родственная душа — нечто гораздо большее, чем просто [lover|E]. $game_concept_soulmate$ у персонажа может быть только одна."
-  
  game_concept_friend:0 "Друг"
  game_concept_friends:0 "Друзья"
  game_concept_friend_possessive:0 "Друг"
  game_concept_friends_possessive:0 "Друзья"
  game_concept_friendship:0 "Дружба"
  game_concept_friend_desc:0 "«$game_concept_friend$» — это $game_concept_relation$, свидетельствующие о близкой дружбе и поддержке. Такая связь может возникать как между [Concept( 'children', 'детьми' )|E], так и между [Concept( 'adults', 'взрослыми' )|E].\n\n$game_concept_friends$ с глубокой связью могут стать [Concept( 'best_friends', 'лучшими друзьями' )|E]."
-  
  game_concept_best_friend:0 "Лучший друг"
  game_concept_best_friends:0 "Лучшие друзья"
  game_concept_best_friend_possessive:0 "Лучший друг"
  game_concept_best_friends_possessive:0 "Лучшие друзья"
  game_concept_best_friend_desc:0 "$game_concept_best_friend$ — это $game_concept_relation$, свидетельствующие о том, что персонажи преданы друг другу до гроба и будут поддерживать друг друга всегда. Это более сильный тип отношений, чем [Concept( 'friend', 'дружба' )|E]."
-  
  game_concept_rival:0 "Соперник"
  game_concept_rivals:0 "Соперники"
  game_concept_rivalries:0 "Соперничество"
@@ -1384,103 +1381,81 @@
  game_concept_rival_possessive:0 "Соперник"
  game_concept_rivals_possessive:0 "Соперники"
  game_concept_rival_desc:0 "$game_concept_rival$ — это $game_concept_relation$, основанное на длительной неприязни, даже ненависти.\n\n$game_concept_rivals$, искренне ненавидящие друг друга, могут стать заклятыми врагами. У персонажа может быть только один [Concept( 'nemesis', 'заклятый враг' )|E]."
-  
  game_concept_nemesis:0 "Заклятый враг"
  game_concept_nemeses:0 "Заклятые враги"
  game_concept_nemesis_possessive:0 "Заклятый враг"
  game_concept_nemeses_possessive:0 "Заклятые враги"
  game_concept_nemesis_desc:0 "$game_concept_nemesis$ — это $game_concept_relation$, свидетельствующие о глубочайшем взаимном презрении и ненависти. Это более сильный тип отношений, чем [Concept( 'rival', 'соперничество' )|E]. У персонажа может быть только один [Concept( 'nemesis', 'заклятый враг' )|E]."
-  
  game_concept_guardian:0 "Опекун"
  game_concept_guardians:0 "Опекуны"
  game_concept_guardian_possessive:0 "Опекун"
  game_concept_guardians_possessive:0 "Опекуны"
  game_concept_guardianship:0 "Опекунство"
  game_concept_guardian_desc:0 "Опекун — [Concept( 'character', 'персонаж' )|E], которому предстоит [educate|E] [Concept( 'child', 'ребенка' )|E] (ребенок получит статус «[ward|E]»).\n\nОпекуны обычно передают подопечным свои [personality_traits|E]. Также передаются [culture|E] и/или принадлежность к [Concept( 'faith', 'конфессии' )|E], если это предусматривает фокус образования.\n\nОпекун может находиться при другом [Concept( 'court', 'дворе' )|E]. Если другой [Concept( 'ruler', 'правитель' )|E] становится покровителем вашего [Concept( 'close_family', 'близкого родственника' )|E], [opinion|E] этого властителя о вас растет."
-  
  game_concept_ward:0 "Подопечный"
  game_concept_wards:0 "Подопечные"
  game_concept_ward_possessive:0 "Подопечный"
  game_concept_wards_possessive:0 "Подопечные"
  game_concept_ward_desc:0 "$game_concept_ward$ — [child|El], который [Concept( 'educated', 'учится' )|El] у [Concept( 'guardian', 'опекуна' )|El]. На одного опекуна может приходиться до двух подопечных."
-  
  game_concept_mentor:0 "Наставник"
  game_concept_mentors:0 "Наставник"
  game_concept_mentor_possessive:0 "Наставник"
  game_concept_mentors_possessive:0 "Наставники"
  game_concept_mentor_desc:0 "$game_concept_mentors$ — [characters|El], помогающие [Concept( 'student', 'ученикам' )|El] улучшать [skills|El]. Наставников нанимают во время событий, когда в вашем [Concept( 'lifestyle', 'образе жизни' )|El] [Concept( 'focus', 'преобладает' )|El] какой-либо $game_concept_skill$."
-  
  game_concept_student:0 "Ученик"
  game_concept_students:0 "Ученики"
  game_concept_student_possessive:0 "Ученик"
  game_concept_students_possessive:0 "Ученики"
  game_concept_student_desc:0 "$game_concept_students$ — [characters|El], которым [mentor|El] помогает развивать [skills|El]. $game_concept_mentors$ нанимаются во время событий, когда в вашем [Concept( 'lifestyle', 'образе жизни' )|El] [Concept( 'focus', 'преобладает' )|El] какой-либо $game_concept_skill$."
-  
  game_concept_bully:0 "Обидчик"
  game_concept_bullies:0 "Обидчики"
  game_concept_bully_possessive:0 "Обидчик"
  game_concept_bullies_possessive:0 "Обидчики"
  game_concept_bully_desc:0 "$game_concept_bully$ — жестокий [child|El], от нападок которого страдает другой $game_concept_child$ ([victim|El]). Издевается обидчик ради развлечения, выгоды или просто от скуки. Когда наступает [adulthood|El], $game_concept_bully$ может стать [Concept( 'rival', 'соперником' )|El], или детская агрессия с возрастом развеется."
-  
  game_concept_victim:0 "Жертва"
  game_concept_victims:0 "Жертва"
  game_concept_victim_possessive:0 "Жертва"
  game_concept_victims_possessive:0 "Жертвы"
  game_concept_victim_desc:0 "$game_concept_victim$ — [child|El] ребенок, страдающий от нападок другого ребенка. Причина такой агрессии часто бывает неизвестна жертве. Когда наступает [adulthood|El], жертва и агрессор могут стать [Concept( 'rival', 'соперниками' )|El] или оставить детские распри в прошлом."
-  
  game_concept_crush:0 "Увлечение"
  game_concept_crushes:0 "Увлечения"
  game_concept_crush_possessive:0 "Увлечение"
  game_concept_crushes_possessive:0 "Увлечения"
  game_concept_crush_desc:0 "$game_concept_crush$ — первая более чем дружеская симпатия, которую один [child|El] испытывает к другому (обычно эти чувства кажутся детям пугающими и даже болезненными). Когда наступает [adulthood|El], взаимное $game_concept_crush$ может перерасти в более сильные чувства, и персонажи станут [Concept( 'lovers', 'любовниками' )|El], или же детские симпатии останутся в прошлом."
-  
  game_concept_modifier:0 "Модификатор"
  game_concept_modifiers:0 "Модификаторы"
  game_concept_modifier_desc:0 "$game_concept_modifier$ — эффект, значение которого меняется в течение долгого времени. Например, он может повлиять на [skills|El] персонажа или [success_chance|El], с которым реализуются [scheme|El].\n\nОбычно модификаторы действуют на персонажей, происки или [counties|El]."
-  
  game_concept_character_modifier:0 "Модификатор персонажа"
  game_concept_character_modifiers:0 "Модификаторы персонажа"
  game_concept_character_modifier_desc:0 "[modifiers|E] персонажа влияют на его личность, [Concept( 'skills', 'навыки' )|El] и даже [Concept( 'income', 'доход' )|El]. В отличие от [Concept( 'traits', 'свойств' )|El], [Concept( 'modifiers', 'модификаторы' )|El] зачастую отражают временные эффекты."
-  
  game_concept_critical_failure:0 "Абсолютный провал"
  game_concept_critically_fail:0 "Полностью провалиться"
  game_concept_critical_failure_desc:0 "Некоторые [scheme|El] могут $game_concept_critically_fail$ во время исполнения.\n\nРезультаты могут быть разными, но чаще всего неудавшиеся происки имеют эффект прямо противоположный задуманному или заговорщик на время лишается возможности повторить те же происки против той же цели."
-  
  game_concept_espionage:0 "$task_find_secrets$"
  game_concept_espionage_desc:0 "$game_concept_espionage$ — [councillor_task|El], которое выполняет [spymaster|El].\n\nОбъектом задания становится [court|El] [rulerpossessive|El], а целью — [secrets|El] состоящих при нем персонажей."
-  
  game_concept_disrupt_schemes:0 "$task_disrupt_schemes$"
  game_concept_disrupt_schemes_desc:0 "$game_concept_disrupt_schemes$ — [Concept( 'councillor_task', 'задание' )|E], которое выполняет [Concept( 'spymaster', 'тайный советник' )|E].\n\nОно увеличивает [Concept( 'scheme_discovery_chance', 'шанс обнаружения происков' )|E] и затрудняет враждебные действия чужих тайных советников, например [Concept( 'espionage', 'шпионаж' )|E]."
-  
  game_concept_increase_control:0 "$task_increase_control$"
  game_concept_increase_control_desc:0 "$game_concept_increase_control$ — [councillor_task|El], которое выполняет [marshal|El].\n\nОбъектом задания становится [county|El], где в результате воздействия постепенно повышается [control|El] и снижается [county_corruption|El]."
-  
  game_concept_manage_guards:0 "$task_manage_guards$"
  game_concept_manage_guards_desc:0 "$game_concept_increase_control$ — [Concept( 'councillor_task', 'задание советника' )|E], которое выполняет [Concept( 'marshal', 'маршал' )|E].\n\nЭто задание увеличивает [Concept( 'knight_effectiveness', 'эффективность рыцарей' )|E] и снижает [Concept( 'success_chance', 'шанс успеха' )|E] [Concept( 'hostile_scheme', 'враждебных происков' )|E] против [Concept( 'liege', 'сюзерена' )|E] советника."
-  
  game_concept_collect_taxes:0 "$task_collect_taxes$"
  game_concept_collect_taxes_desc:0 "$game_concept_collect_taxes$ — [councillor_task|E], которое выполняет [steward|E].\n\nЕго цель — повышение доходов с налогов в [Concept( 'domain', 'домене' )|E] персонажа."
-  
  game_concept_promote_culture:0 "$task_promote_culture$"
  game_concept_promote_culture_desc:0 "$game_concept_promote_culture$ — [councillor_task|El], которое выполняет [steward|El].\n\nПосле его завершения [county|El] принимает [Concept( 'culture', 'культуру' )|El] правителя."
-  
  game_concept_accept_culture:0 "$task_accept_culture$"
  game_concept_promoting_cultural_acceptance:0 "Повышает терпимость"
  game_concept_accept_culture_desc:0 "$game_concept_accept_culture$ — [Concept( 'councillor_task', 'задание советника' )|E], которое выполняет [Concept( 'steward', 'управляющий' )|E].\n\nЭто задание увеличивает [Concept( 'cultural_acceptance', 'терпимость' )|E] между выбранной [Concept( 'culture', 'культурой' )|E] и [Concept( 'culture', 'культурой' )|E] [Concept( 'rulerpossessive', 'правителя' )|E]."
-  
  game_concept_theocratic_vassal:0 "Теократический вассал"
  game_concept_theocratic_vassals:0 "Теократические вассалы"
  game_concept_theocratic_vassal_desc:0 "Вассалы, установившие у себя [theocratic_government|El].\n\nИх уклад определяют [doctrines|El] [faiths|El]."
-  
  game_concept_ducal_conquest_casus_belli:0 "Казус белли «Захват герцогства»"
  game_concept_ducal_conquest:0 "Завоевание герцогства"
  game_concept_ducal_conquest_casus_belli_desc:0 "[casus_belli|E], который позволяет захватывать [counties|El], чтобы создать [Concept( 'uncreated_title', 'несозданное' )|E] [Concept( 'duchy', 'герцогство' )|E]."
-  
  game_concept_vassalize_casus_belli:0 "Казус белли «Насильная вассализация»"
  game_concept_vassalization_casus_belli:0 "Насильственная вассализация"
  game_concept_vassalized_casus_belli:0 "Насильственная вассализация"
  game_concept_vassalize_casus_belli_desc:0 "[casus_belli|E], разрешающий насильно [Concept( 'vassalization', 'вассализировать' )|El] независимого соседнего [Concept( 'ruler', 'правителя' )|El] более низкого ранга. Для разблокирования необходимо [perk|El] «[GetPerk( 'forced_vassalage_perk' ).GetName( GetPlayer )]».\n\nМожно вассализировать любого правителя, количество [Concept( 'counties', 'графств' )|El] которого не превышает #V [EmptyScope.ScriptValue('vassalize_default_size')|0]#!.\n\nЭтот максимум увеличивается на #P +[EmptyScope.ScriptValue('vassalize_growth_per_innovation')|0]#! за каждую из следующих инноваций:\n$EFFECT_LIST_BULLET$#V $innovation_casus_belli$#!\n$EFFECT_LIST_BULLET$#V $innovation_chronicle_writing$#!\n$EFFECT_LIST_BULLET$#V $innovation_divine_right$#!\n$EFFECT_LIST_BULLET$#V $innovation_rightful_ownership$#!"
-  
  game_concept_title_creation:0 "Создание титула"
  game_concept_create:0 "Создать"
  game_concept_created:0 "Создан"
@@ -1488,205 +1463,152 @@
  game_concept_created_title:0 "Титул создан"
  game_concept_uncreated_title:0 "Титул не создан"
  game_concept_title_creation_desc:0 "[rulers|E], контролирующие большую часть [de_jure|El] не существующей территории [titlepossessive|El], могут его создать. При создании титула расходуется [gold|El], но растет [prestige|El].\n\nСоздавать можно только титулы «[duchy|El]», «[kingdom|El]» или «[empire|El]».\n\nВ виджете «Важное» есть список титулов, которые вы можете создать в данный момент."
-  
  game_concept_foreign_affairs:0 "$task_foreign_affairs$"
  game_concept_foreign_affairs_desc:0 "[councillor_task|E], которое выполняет [chancellor|El].\nЕсли цель — [independent|El] [ruler|El], мнение других независимых правителей о нем повышается. Если цель — вассал, то мнение о нем повышается у прочих вассалов того же [Concept( 'liege', 'сюзерена' )|El]."
-  
  game_concept_domestic_affairs:0 "$task_domestic_affairs$"
  game_concept_domestic_affairs_desc:0 "[councillor_task|E], которое выполняет [chancellor|El]. Его цель — повысить мнение [Concept( 'vassal', 'вассалов' )|El] [realms|El] о [Concept( 'liege', 'сюзерене' )|El]."
-  
  game_concept_bestow_royal_favor:0 "$task_bestow_royal_favor$"
  game_concept_bestow_royal_favor_desc:0 "[councillor_task|E], которое выполняет [Concept( 'chancellor', 'канцлер' )|E]. Его цель — повысить мнение отдельных [Concept( 'vassals', 'вассалов' )|E] [Concept( 'realm', 'державы' )|E] о [Concept( 'liege', 'сюзерене' )|E]."
-  
  game_concept_fabricate_claim:0 "$task_fabricate_claim$"
  game_concept_fabricate_claim_short:0 "Подделать претензию"
  game_concept_fabricated_claims_short:0 "Сфабрикованные претензии"
  game_concept_fabricating_claims:0 "Фабрикует претензии"
  game_concept_fabricate_claim_desc:0 "[councillor_task|E], которое выполняет [court_chaplain|El].\nЦель — [county|El], и когда разработка завершится на все 100%, вы сможете создать [Concept( 'claim', 'претензия' )|El] за [gold|El]."
-  
  game_concept_religious_relations:0 "$task_religious_relations$"
  game_concept_religious_relations_desc:0 "[councillor_task|E], которое выполняет [court_chaplain|El].\nКаждый затронутый [theocratic|El] правитель той же [faiths|El] повышает мнение о персонаже, а ежемесячный прирост денег на благочестие повышается."
-  
  game_concept_interaction:0 "Взаимодействие"
  game_concept_interactions:0 "Взаимодействия"
  game_concept_character_interaction:0 "Взаимодействие персонажа"
  game_concept_interaction_desc:0 "Действия одного персонажа по отношению к другому. Они служат для достижения самых разных целей и эффектов.\n\nДля некоторых взаимодействий требуется одобрение цели, другие же производятся независимо от воли объекта.\n\nОбычно для доступа к взаимодействию достаточно щелкнуть цель правой кнопкой мыши и открыть соответствующее меню. Некоторые типы взаимодействия доступны в специальных окнах."
-  
  game_concept_offer_vassalization:0 "Предложить вассализацию"
  game_concept_offer_vassalization_interaction:0 "Предложить вассализацию (взаимодействие)"
  game_concept_offer_vassalization_desc:0 "[independent|E] [ruler|El], чей [title_rank|El] ниже вашего, получает предложение о [Concept( 'vassalage', 'вассалитете' )|El] и мирно присоединяется к державе."
-  
  game_concept_extort_subjects_decision:0 "Решение о вымогательстве"
  game_concept_extort_subjects:0 "Вымогательство"
  game_concept_extort_subjects_decision_desc:0 "Это [decision|El] позволяет требовать дополнительное [gold|El] у подданных различными способами и с различными условиями..."
-  
  game_concept_sell_titles_decision:0 "Решение о продаже титулов"
  game_concept_sell_titles:0 "Продажа титулов"
  game_concept_sell_titles_decision_desc:0 "[decision|E], позволяющее продавать малые титулы, имеющие сугубо символическое значение. Приносит [Concept( 'gold', 'золото' )|E] в обмен на [Concept( 'prestige', 'престиж' )|E]."
-  
  game_concept_embrace_celibacy:0 "Принять целибат"
  game_concept_embrace_celibacy_decision:0 "Решение о принятии целибата"
  game_concept_embrace_celibacy_desc:0 "Это [decision|El] позволяет персонажу по желанию получить «[GetTrait('celibate').GetName( GetPlayer )]»."
-  
  game_concept_abandon_celibacy:0 "Прекратить целибат"
  game_concept_abandon_celibacy_decision:0 "Решение о прекращении целибата"
  game_concept_abandon_celibacy_desc:0 "Это [decision|El] позволяет персонажу по желанию избавиться от [traits|El] «[GetTrait('celibate').GetName( GetPlayer )]»."
-  
  game_concept_convert_county:0 "$task_conversion$"
  game_concept_convert_county_desc:0 "[councillor_task|E], которое выполняет [court_chaplain|El], направлено на [county|El] с вероисповеданием иным, чем у [Concept( 'liege', 'сюзерена' )|El].\nПрогресс растет с каждым месяцем, и при достижении 100% большая часть населения графства переходит в конфессию сюзерена.\n\nНа скорость обращения влияет множество факторов, в том числе [learning_skill|El] [Concept( 'councillor', 'советника' )|El] и [fervor|El] обеих конфессий."
-  
+ game_concept_convert:0 "Обратить"
+ game_concept_converted:0 "Обращение"
+ game_concept_converting:0 "Обращение"
  game_concept_commission_epic:0 "$commission_epic_decision$"
- game_concept_commission_epic_decision:0 "Решение:0 $commission_epic_decision$"
+ game_concept_commission_epic_decision:0 "Решение: $commission_epic_decision$"
  game_concept_commission_epic_desc:0 "Это [decision|El] позволяет персонажу продавать семейные реликвии и получать [gold|El] в обмен на [prestige|El]."
-  
  game_concept_exceptional_epic:0 "Выдающийся эпос"
  game_concept_exceptional_epic_desc:0 "Семейный эпос, созданный по решению $commission_epic_decision$, с некоторой вероятностью может стать выдающимся и таким образом принести более значительные бонусы, чем обычный эпос.\n\nНа вероятность получить выдающийся эпос могут влиять ваши решения во время событий."
-  
  game_concept_demand_payment:0 "Потребовать платы"
  game_concept_demand_payment_decision:0 "Потребовать платы (взаимодействие)"
  game_concept_demand_payment_desc:0 "Дипломатическое взаимодействие, позволяющее персонажу требовать [gold|El] у персонажей, которые у него [hook|El], в обмен на влияние."
-  
  game_concept_independence_faction:0 "Фракция сепаратистов"
  game_concept_independence_factions:0 "Фракции сепаратистов"
  game_concept_faction_independence:0 "Независимость"
  game_concept_independence_faction_desc:0 "$game_concept_independence_faction$ добивается [Concept( 'independent', 'независимости' )|El] всех своих членов от [Concept( 'liege', 'сюзерена' )|El]."
-  
  game_concept_liberty_faction:0 "$liberty_faction$"
  game_concept_faction_liberty:0 "Свобода"
  game_concept_liberty_factions:0 "Фракции свободы"
  game_concept_liberty_faction_desc:0 "$game_concept_liberty_faction$ добивается снижения [Concept( 'crown_authority', 'авторитета короны' )|El] и, по возможности, создания собственных [Concept( 'feudal_contracts', 'феодальных договоров' )|El]. Если они преуспеют, [liege|El] временно потеряет возможность влиять на авторитет короны в [Concept( 'realm', 'державе' )|El]."
-  
  game_concept_claimant_faction:0 "$claimant_faction$"
  game_concept_claimant_factions:0 "Фракции в поддержку претендента"
  game_concept_claimant_faction_desc:0 "$game_concept_claimant_faction$ добивается возведения определенного [Concept( 'claimant', 'претендента' )|El] на престол [Concept( 'title', 'титула' )|El] своего [Concept( 'liege', 'сюзерена' )|El]. Если они преуспеют, сюзерен откажется от титула в пользу претендента, и [Concept( 'vassal', 'вассальная' )|El] структура претерпит соответствующие изменения. Все члены фракции получат [Concept( 'hook', 'влияние' )|El] на претендента."
-  
  game_concept_peasant_faction:0 "$peasant_faction$"
  game_concept_peasant_factions:0 "Крестьянские фракции"
  game_concept_peasant_faction_desc:0 "$game_concept_peasant_faction$ объединяет [counties|El] с низким [Concept( 'county_opinion', 'мнением' )|El] о графстве. В отличие от других фракций, эта поднимает мятеж даже при низкой [Concept( 'faction_military_power', 'силе армии' )|El] из-за оптимизма и неграмотности крестьян... Успешные крестьянские восстания значительно снижают контроль в вашей [Concept( 'realm', 'державе' )|El]."
-  
  game_concept_popular_faction:0 "$populist_faction$"
  game_concept_popular_factions:0 "Фракции популистов"
  game_concept_popular_faction_desc:0 "$game_concept_popular_faction$ объединяет [counties|El] с низким [Concept( 'county_opinion', 'мнением' )|El], имеющие общий элемент, например [Concept( 'culture', 'культуру' )|El] или [Concept( 'faith', 'веру' )|El]. Они жаждут освободиться и выбрать нового [Concept( 'ruler', 'правителя' )|El] в соответствии со своими обычаями или конфессией. Это очень опасный тип восстаний."
-  
  game_concept_buy_claim:0 "$buy_claim_interaction$"
  game_concept_buy_claim_interaction:0 "$buy_claim_interaction$ (взаимодействие)"
  game_concept_buy_claim_desc:0 "Это взаимодействие позволяет персонажу получить [Concept( 'unpressed_claim', 'слабую претензию' )|El] в обмен на [Concept( 'piety', 'благочестие' )|El].\n\n$EFFECT_LIST_BULLET$ [vassal|E] не может купить претензию на [titles|El] [Concept( 'liege', 'сюзерена' )|E], а сюзерен не может купить претензию на титулы любого вассала.\n$EFFECT_LIST_BULLET$ [king|E] или [emperor|El] не может покупать претензии на королевские титулы, а император не может купить претензию на другие империи.\n$EFFECT_LIST_BULLET$ Никто не может купить претензию на титул [Concept( 'head_of_faith', 'главы конфессии' )|E]."
-  
  game_concept_develop_county:0 "$task_develop_county$"
  game_concept_develop_county_desc:0 "[councillor_task|E], которое выполняет [steward|El]. Оно повышает [development_growth|El] [counties|El] и снижает время постройки каждого [buildings|El]."
-  
  game_concept_convince_dejure:0 "$task_convince_dejure$"
  game_concept_convince_dejure_desc:0 "[councillor_task|E], которое выполняет [Concept( 'steward', 'управляющий' )|E]. Его целью является [Concept( 'county', 'графство' )|E], [Concept( 'de_jure', 'де-юре' )|E] входящее в державу [Concept( 'liege', 'сюзерена' )|E] советника и принадлежащее [Concept( 'independent', 'независимому' )|E] [Concept( 'ruler', 'правителю' )|E]. После успешного убеждения жители попросят [Concept( 'ruler', 'правителя' )|E] передать их [Concept( 'de_jure', 'де-юре' )|E] [Concept( 'liege', 'сюзерену' )|E]."
-  
  game_concept_hostile_army:0 "Враждебные"
  game_concept_hostile_army_desc:0 "Вы можете нападать на враждебные [armies|El], словно идет [war|El] с их владельцами, однако [war_score|El] при этом открываться не будет.\n\nВраждебными считаются армии, у которых есть конфликт интересов с вашим персонажем:\n$BULLET_WITH_TAB$ Враги вашего [Concept( 'liege', 'сюзерена' )|El]\n$BULLET_WITH_TAB$ [vassals|E] ваших врагов\n$BULLET_WITH_TAB$ Правители #Emphasis нападают#! на одного и того же врага"
-  
  game_concept_war_leaders:0 "Военные лидеры"
  game_concept_war_leader:0 "Военный лидер"
  game_concept_war_leaders_desc:0 "Основной нападающий и основной защитник во время [wars|El]. Обычно это персонаж, который начинает войну, и [top_liege|El] персонажа, владения которого — [war_target|El].\n\nЕсть несколько [casus_belli|El] для самых разных вариантов войны, для некоторых из них $game_concept_war_leaders$ должны быть определенными персонажами."
-  
  game_concept_offensive_war_opinion:0 "Мнение о наступательной войне"
  game_concept_offensive_war_opinion_short:0 "Наступательная война"
  game_concept_offensive_war_opinion_desc:0 "Если вы главный агрессор в войне, через [GetDefine('NCharacterOpinion', 'OFFENSIVE_WAR_PENALTY_GRACE_PERIOD')] мес. [vassals|El] начнут постепенно терять к вам расположение. Это не распространяется на [civil_wars|El] и [great_holy_wars|El]. После прекращения боевых действий штраф начинает снижаться и со временем пропадает."
-  
  game_concept_at_peace_opinion:0 "Мнение о мирной жизни"
  game_concept_at_peace_opinion_short:0 "Мирная жизнь"
  game_concept_at_peace_opinion_desc:0 "Персонажи, чей [core_tenet|El] [faiths|El] — «[GetFaithDoctrine('tenet_warmonger').GetBaseName]», получают штраф «$game_concept_at_peace_opinion$» вместо штрафа «[offensive_war_opinion|El]».\n\nЕсли вы слишком долго живете мирной жизнью, [vassals|El] начинают хуже к вам относиться #weak (если принадлежат к той же конфессии, что и вы).#!"
-  
  game_concept_character:0 "Персонаж"
  game_concept_characters:0 "Персонажи"
  game_concept_character_possessive:0 "Персонажа"
  game_concept_characters_possessive:0 "Персонажей"
- game_concept_character_desc:0 "Персонажи бывают самыми разными:0 [nobles|El] или [lowborn|El], [landed|El] или [unlanded|El]. У каждого — свои [skills|El] и [traits|El], цели и мотивации. К числу персонажей относятся [rulers|El], [courtiers|El] и [guests|El]. Если позволяет [diplomatic_range|El], с ними можно взаимодействовать."
-  
+ game_concept_character_desc:0 "Персонажи бывают самыми разными: [nobles|El] или [lowborn|El], [landed|El] или [unlanded|El]. У каждого — свои [skills|El] и [traits|El], цели и мотивации. К числу персонажей относятся [rulers|El], [courtiers|El] и [guests|El]. Если позволяет [diplomatic_range|El], с ними можно взаимодействовать."
  game_concept_highlighted_text:0 "Выделенный текст"
  game_concept_highlighted_text_desc:0 "Если вы теряетесь в игровой терминологии, эта информация поможет разобраться.\n\n#TUT Вы можете получить дополнительную информацию, наведя курсор на #EMP эту#! подсказку! [highlighted_text_example|E]#!"
  game_concept_highlighted_text_example:0 "Мило!"
  game_concept_highlighted_text_example_desc:0 "Крутота!"
-  
- #game_concept_camera:0 ""
- #game_concept_camera_desc:0 ""
-  
  game_concept_detail_zoom:0 "$ZOOM_LEVEL_DETAILS$"
  game_concept_detail_zoom_desc:0 "$ZOOM_LEVEL_DETAILS_TOOLTIP$"
  game_concept_political_zoom:0 "$ZOOM_LEVEL_POLITICAL$"
  game_concept_political_zoom_desc:0 "$ZOOM_LEVEL_POLITICAL_TOOLTIP$"
  game_concept_paper_zoom:0 "$ZOOM_LEVEL_PAPER_MAP$"
  game_concept_paper_zoom_desc:0 "$ZOOM_LEVEL_PAPER_MAP_TOOLTIP$"
- #game_concept_world_realms_zoom:0 ""
- #game_concept_world_realms_zoom_desc:0 ""
-  
  game_concept_tutorial_education_trait:0 "Свойство образования"
  game_concept_tutorial_education_trait_i:0 "@tutorial_education_trait_icon!"
  game_concept_tutorial_education_trait_desc:0 "Король Мурхад (ваш [character|El]) решил [Concept( 'education_trait', 'изучать' )|El] — [martial|El]. Достигнув совершеннолетия, он получил свойство «Опытный тактик»."
-  
  game_concept_organized:0 "Организованная конфессия"
  game_concept_organized_desc:0 "В организованной [faiths|El] есть религиозная иерархия. Богослужения и практики более упорядочены, а каноны формализованы и унифицированы.\n\n[GetFaithDoctrine('unreformed_faith_doctrine').GetBaseName] [GetReligionFamily('rf_pagan').GetName|l] конфессия становятся организованной после реформирования. Прочие конфессии всегда считаются организованными."
-  
  game_concept_flowery_war:0 "Набег за пленными"
  game_concept_flowery_wars:0 "Набеги за пленными"
  game_concept_flowery_warring:0 "Идет набег за пленными"
- game_concept_flowery_war_desc:0 "Особая [war|El], которую начинает [ruler|El], [faith|El] которого практикует человеческие жертвоприношения. $game_concept_flowery_warring$ преследует две цели:0 сражение и захват [Concept( 'prisoners', 'пленных' )|El] для принесения в жертву, поэтому [war_score|El] каждой стороны может вырасти до необходимого уровня даже без [sieges|El].\n\nКогда [war|El] заканчивается, а [faith|El] победителя (даже если это обороняющаяся сторона) практикует человеческие жертвоприношения, победитель берет нескольких придворных проигравшей стороны в плен. $game_concept_flowery_war$, где сходятся адепты одной и той же веры, считается священной, и проигравшая сторона также получает [Concept( 'piety', 'благочестие' )|El], хотя и в меньшем количестве.\n\n$game_concept_flowery_war$ не может быть начата или продолжена, если у вас в [Concept( 'dungeon', 'темнице' )|El] сидят [Concept( 'prisoners', 'пленные' )|E], захваченные при победе в цветочной войне."
-  
+ game_concept_flowery_war_desc:0 "Особая [war|El], которую начинает [ruler|El], [faith|El] которого практикует человеческие жертвоприношения. $game_concept_flowery_warring$ преследует две цели: сражение и захват [Concept( 'prisoners', 'пленных' )|El] для принесения в жертву, поэтому [war_score|El] каждой стороны может вырасти до необходимого уровня даже без [sieges|El].\n\nКогда [war|El] заканчивается, а [faith|El] победителя (даже если это обороняющаяся сторона) практикует человеческие жертвоприношения, победитель берет нескольких придворных проигравшей стороны в плен. $game_concept_flowery_war$, где сходятся адепты одной и той же веры, считается священной, и проигравшая сторона также получает [Concept( 'piety', 'благочестие' )|El], хотя и в меньшем количестве.\n\n$game_concept_flowery_war$ не может быть начата или продолжена, если у вас в [Concept( 'dungeon', 'темнице' )|El] сидят [Concept( 'prisoners', 'пленные' )|E], захваченные при победе в цветочной войне."
  game_concept_partition_share:0 "Разделение земель"
  game_concept_partition_share_desc:0 "Любой [succession_law|El], где [Concept( 'realm_heir', 'наследников державы')|E] несколько, $game_concept_partition_share$ [character_possessive|El] определяет, какие [titles|El] получит каждый $game_concept_heir$. Обычно в дележе участвуют дети [Concept( 'ruler', 'правителя' )|El] или (реже) их сиблинги.\n\nОбычно, в зависимости от типа [Concept( 'succession', 'наследования' )|El], $game_concept_titles$ поровну делятся между разными [Concept( 'realms', 'державами' )|El], делятся поровну в пределах одной державы или большую их часть получает главный $game_concept_heir$, а остальные поровну делятся между всеми оставшимися наследниками."
-  
  game_concept_banish_reason:0 "Повод для изгнания"
  game_concept_banish_reasons:0 "Поводы для изгнания"
  game_concept_banish_reason_desc:0 "$game_concept_banish_reason$ дает [Concept( 'liege', 'сюзерену' )|El] возможность свободно [banish|El] любого подданного, заключенного в [Concept( 'dungeon', 'темницу' )|El]. Обычно такие поводы дают [criminals|El]."
-  
  game_concept_imprisonment_reason:0 "Повод для заточения"
  game_concept_imprisonment_reasons:0 "Поводы для заточения"
  game_concept_imprisonment_reason_desc:0 "$game_concept_imprisonment_reason$ дает [Concept( 'liege', 'сюзерену' )|El] возможность свободно [imprison|El] любого подданного. Обычно такой повод дают [criminals|El]."
-  
  game_concept_revoke_title_reason:0 "Повод для лишения титула"
  game_concept_revoke_title_reasons:0 "Поводы для лишения титула"
  game_concept_revoke_title_reason_desc:0 "$game_concept_revoke_title_reason$ дает [Concept( 'liege', 'сюзерену' )|E] возможность свободно [revoke|El] [Concept( 'title', 'титула' )|E] любого подданного. Обычно такие поводы дают [criminals|E]."
-  
  game_concept_execute_reason:0 "Повод для казни"
  game_concept_execute_reasons:0 "Поводы для казни"
  game_concept_execute_reason_desc:0 "$game_concept_execute_reason$ дает [Concept( 'liege', 'сюзерену' )|E] возможность свободно [execute|E] подданного, сидящего в [Concept( 'dungeon', 'темнице' )|E]. Обычно такие поводы дают [criminals|E]."
-  
  game_concept_movement_lock:0 "Запрет передвижений"
  game_concept_movement_locked:0 "Передвижение запрещено"
  game_concept_movement_locked_desc:0 "Если [army|El] преодолела более половины намеченного пути, изменить его будет невозможно до прибытия к цели."
-  
  game_concept_extramarital_sex:0 "Внебрачный секс"
  game_concept_extramarital_sex_sleeping_with:0 "спит с персонажем"
  game_concept_extramarital_sex_desc:0 "Если о внебрачной связи двух персонажей узнают, последствия зависят от [Concept( 'doctrines', 'доктрин' )|El] их [Concept( 'faith', 'конфессий' )|El].\n\n$EFFECT_LIST_BULLET$ Они получат статус [GetTrait('fornicator').GetName( GetNullCharacter )] или [GetTrait('adulterer').GetName( GetNullCharacter )] — в зависимости от их семейного положения\n$EFFECT_LIST_BULLET$ Если мужчина и женщина спят вместе, у них может родиться [bastard|El]\n$EFFECT_LIST_BULLET$ Если оба персонажа одного пола, последствия определяет соответствующая доктрина конфессии («$doctrine_homosexuality_name$»)\n$EFFECT_LIST_BULLET$ Если один из персонажей болен каким-либо [Concept( 'diseases', 'заболеванием' )|El], передающимся половым путем, второй может заразиться"
-  
  game_concept_titular_title:0 "Номинальный титул"
  game_concept_titular_title_desc:0 "$game_concept_titular_title$ — [title|El], не имеющий [de_jure|El] территории на карте. [de_jure_drift|El] может превратить обычный титул в номинальный.\n\nТитулы «[mercenary|El]», «[head_of_faith|El]» и «[holy_order|El]» чаще всего номинальны."
-  
  game_concept_pilgrimage:0 "Паломничество"
  game_concept_pilgrimages:0 "Паломничества"
  game_concept_pilgrimage_desc:0 "В большинстве [Concept( 'faiths', 'конфессий' )|E] персонаж может [Concept( 'activity', 'отправиться' )|E] в паломничество к [Concept( 'holy_site', 'святым местам' )|E]. Каждое святое место можно посетить повторно через определенное количество дней.\n\nТакое путешествие открывает немало возможностей, но может быть опасным. По достижении цели [Concept( 'piety', 'благочестие' )|E] персонажей растет, возможны и другие награды."
-  
  game_concept_hajj:0 "Хадж"
  game_concept_hajjes:0 "Хаджи"
  game_concept_hajj_desc:0 "В большинстве исламских [Concept( 'faiths', 'конфессий' )|E] персонаж может раз в год [Concept( 'activity', 'совершить' )|E] хадж в Мекку согласно [Concept( 'doctrines', 'доктрине' )|E] «Паломничество».\n\nТакое путешествие открывает немало возможностей, но может быть опасным. По достижении священного города [Concept( 'piety', 'благочестие' )|E] персонажей растет, возможны и другие награды."
-  
  game_concept_faith_righteous:0 "Праведники"
  game_concept_faith_righteous_desc:0 "Эта [faith|El] считается законной.\nРаспространены межконфессиональные браки.\n\n#S Эффекты:\n#![GetHostilityDescription( '(int32)0' )]"
-  
  game_concept_faith_astray:0 "Заблудшие"
  game_concept_faith_astray_desc:0 "Эта [faith|El] имеет незначительные отличия.\nМежконфессиональные браки все еще возможны.\n\n#S Эффекты:\n#![GetHostilityDescription( '(int32)1' )]"
-  
  game_concept_faith_hostile:0 "Враги"
  game_concept_faith_hostile_desc:0 "Эта [faith|El] имеет значительные отличия.\nМежконфессиональные браки иногда встречаются, возможны [holy_wars|El].\n\n#S Эффекты:\n#![GetHostilityDescription( '(int32)2' )]"
-  
  game_concept_faith_evil:0 "Воплощенное зло"
  game_concept_faith_evil_desc:0 "Эта [faith|El] предана анафеме.\nМежконфессиональные браки заключаются крайне редко, возможны [holy_wars|El].\n\n#S Эффекты:\n#![GetHostilityDescription( '(int32)3' )]"
-  
  game_concept_faith_hostility:0 "Враждебность конфессии"
- game_concept_faith_hostility_desc:0 "Отношение каждой [faiths|El] к любой другой конфессии зависит от степени их родства.\n\nЕго близость определяется несколькими факторами:0 например, общие ли у них [religion|El], [religious_family|El] или особые [doctrines|El].\n\nЕсли конфессии слишком различаются, между ними может произойти [holy_war|El].\n\nВ зависимости от типа конфессии, ее последователи могут восприниматься по-разному:0 как [faith_righteous|L], [faith_astray|L], [faith_hostile|L] или как [faith_evil|L]."
-  
+ game_concept_faith_hostility_desc:0 "Отношение каждой [faiths|El] к любой другой конфессии зависит от степени их родства.\n\nЕго близость определяется несколькими факторами: например, общие ли у них [religion|El], [religious_family|El] или особые [doctrines|El].\n\nЕсли конфессии слишком различаются, между ними может произойти [holy_war|El].\n\nВ зависимости от типа конфессии, ее последователи могут восприниматься по-разному: как [faith_righteous|L], [faith_astray|L], [faith_hostile|L] или как [faith_evil|L]."
  game_concept_command_modifier:0 "Модификатор командования"
  game_concept_command_modifier_desc:0 "Этот [Concept( 'modifier', 'модификатор' )|E] активен только у [Concept( 'commanders', 'командиров' )|E].\n\nЕсли персонаж с модификатором командования возглавляет [Concept( 'army', 'армию' )|E], то на нее будет действовать этот эффект."
  game_concept_command_modifier_i:0 "@command_modifier_icon!"
-  
  #game_concept_pic:0 "@test_flower!"
-  
  game_concept_nickname:0 "Прозвище"
  game_concept_epithet:0 "Эпитет"
  game_concept_cognomen:0 "Прозвание"
@@ -1694,69 +1616,52 @@
  game_concept_epithets:0 "Эпитеты"
  game_concept_cognomens:0 "Прозвания"
  game_concept_nickname_desc:0 "$game_concept_nicknames$, [Concept( 'epithets', 'эпитеты' )|E] и [Concept( 'cognomens', 'прозвания' )|E] — все это вторые имена, принятые намеренно или полученные от подданных (например, Карл Лысый). $game_concept_nicknames$ носят сугубо эстетический характер, хотя обстоятельства их получения могут быть весьма драматичными или значимыми.\n\nХорошие [Concept( 'nicknames', 'прозвища' )|E] иногда могут заменить собой плохие (как, например, Вильгельм Бастард стал Вильгельмом Завоевателем)."
-  
  game_concept_main_phase:0 "Основная фаза"
  game_concept_main_phase_desc:0 "В основной фазе [Concept( 'battle', 'битвы' )|El] [soldiers|El] и [knights|El] обеих сторон сражаются между собой.\n\nОсновная фаза заканчивается, когда с одной стороны не остается бойцов, а есть лишь [casualties|El] или одна сторона начинает [retreat|El].\n\nПосле основной фазы боя вычисляются его [aftermath|El]."
-  
  game_concept_personality_trait:0 "Свойство личности"
  game_concept_personality_traits:0 "Свойства личности"
  game_concept_personality_trait_desc:0 "$game_concept_personality_trait$ определяет мировоззрение персонажа и предпочтительный образ действий. Они также влияют на [Concept( 'opinion', 'мнение' )|E] других персонажей. При жизни персонаж может как терять свойства, так и получать новые. Поступки, противоречащие внутренним устремлениям, приводят к накоплению [Concept( 'stress', 'стресса' )|E]."
-  
  game_concept_lifestyle_trait:0 "Приобретенное свойство"
  game_concept_lifestyle_traits:0 "Приобретенные свойства"
  game_concept_lifestyle_trait_desc:0 "$game_concept_lifestyle_trait$ возникает, когда вы выбираете определенные достоинства [Concept( 'lifestyle', 'образа жизни' )|E], [Concept( 'decisions', 'решения' )|E] или [Concept( 'interactions', 'взаимодействия' )|E].\n\nНекоторые приобретенные свойства можно улучшать по мере совершенствования навыка. Уровни меняются от 1 до 3, и текущий уровень можно определить по количеству звезд на значке свойства."
-  
  game_concept_physical_trait:0 "Физическое свойство"
  game_concept_physical_traits:0 "Физические свойства"
  game_concept_physical_trait_desc:0 "$game_concept_physical_trait$ описывают физические [Concept( 'traits', 'свойства' )|E], связанные с внешним видом, поведением или уровнем интеллекта персонажа. Многие из физических особенностей влияют на [Concept( 'attracted', 'влечение' )|E] со стороны других персонажей.\n\nЧасто они являются [Concept( 'congenital', 'врожденными' )|E], то есть даются при рождении и остаются на всю жизнь."
-  
  game_concept_fame_trait:0 "Свойство репутации"
  game_concept_fame_trait_desc:0 "$game_concept_fame_trait$ — особое [Concept( 'traits', 'свойство' )|E], которое можно получить при определенных обстоятельствах. Оно влияет на [Concept( 'opinion', 'мнение' )|E] других персонажей. Некоторые из этих свойств можно получить за добрые деяния или раскрыв свои темные [Concept( 'secrets', 'секреты' )|E]. Другие же связаны с обстоятельствами рождения персонажа."
-  
  game_concept_health_trait:0 "Свойство здоровья"
  game_concept_health_trait_desc:0 "$game_concept_health_trait$ непосредственно влияет на физическое и душевное [Concept( 'health', 'здоровье' )|E]. Примером могут служить [Concept( 'diseases', 'болезни' )|E]. Временные свойства, влияющие на способности персонажей, например беременность или раны, также попадают в эту категорию."
-  
  game_concept_modifier_contribution:0 "Вклад"
  game_concept_modifier_contributions:0 "Вклад"
  game_concept_modifier_contributes:0 "Вклады"
  game_concept_modifier_contribution_desc:0 "[modifier|E] может изменить [Concept( 'modifier_contribution', 'вклад' )|E] от [Concept( 'obligations', 'обязательств' )|E] ваших [Concept( 'vassals', 'вассалов' )|E]. Это не то же самое, что [Concept( 'modifier_base_contribution', 'базовые налоги с вассала' )|E].\n\nЕсли у вас есть [Concept( 'vassal', 'вассал' )|E], который платит вам #V 1#! [Concept( 'gold', 'золотой' )|E] в месяц и вы получите [Concept( 'modifier', 'модификатор' )|E], увеличивающий [Concept( 'modifier_contribution', 'вклад' )|E] на #V 10%#!, то [Concept( 'vassal', 'вассал' )|E] будет платить вам #V 1,1#! [Concept( 'gold', 'золотых' )|E]."
-  
  game_concept_modifier_base_contribution:0 "Базовый вклад"
  game_concept_modifier_base_contributions:0 "Базовый вклад"
  game_concept_modifier_base_contributes:0 "Базовые выплаты"
  game_concept_modifier_base_contribution_desc:0 "[modifier|E] может изменить [Concept( 'modifier_base_contribution', 'базовые налоги с вассала' )|E] по сравнению с [Concept( 'obligations', 'обязательствами' )|E] ваших [Concept( 'vassals', 'вассалов' )|E]. Это не то же самое, что [Concept( 'modifier_contribution', 'вклад' )|E] вассала.\n\nЕсли у вас есть [Concept( 'vassal', 'вассал' )|E], [Concept( 'income', 'доход' )|E] которого равен #V 10#! [Concept( 'gold', 'золотым' )|E] и который платит вам #V 1#! [Concept( 'gold', 'золотой' )|E] в месяц, а вы получите [Concept( 'modifier', 'модификатор' )|E], увеличивающие [Concept( 'modifier_base_contribution', 'базовые налоги с вассала' )|E] на #V 10%#!, то [Concept( 'vassal', 'вассал' )|E] будет платить вам #V 2#! [Concept( 'gold', 'золотых' )|E]."
-  
  game_concept_maneuver:0 "Маневрирование"
  game_concept_maneuver_desc:0 "Фаза [Concept( 'maneuver', 'маневрирования' )|E] происходит в начале [Concept( 'battle', 'сражения' )|E] и обозначает время до начала [Concept( 'main_phase', 'основной фазы' )|E], когда [Concept( 'armies', 'войска' )|E] сходятся в бою."
-  
  game_concept_combat_phase:0 "Фазы битвы"
- game_concept_combat_phase_desc:0 "$game_concept_combat_phase$ — это один из этапов [Concept( 'battle', 'сражения' )|E]. Сражения делятся на три фазы:0 [Concept( 'maneuver', 'маневрирование' )|E], [Concept( 'main_phase', 'основная фаза' )|E] и [Concept( 'aftermath', 'последствия' )|E]."
-  
+ game_concept_combat_phase_desc:0 "$game_concept_combat_phase$ — это один из этапов [Concept( 'battle', 'сражения' )|E]. Сражения делятся на три фазы: [Concept( 'maneuver', 'маневрирование' )|E], [Concept( 'main_phase', 'основная фаза' )|E] и [Concept( 'aftermath', 'последствия' )|E]."
  game_concept_unreformed_pagan_combat_bonus:0 "Боевое преимущество нереформированного язычества"
  game_concept_unreformed_pagan_combat_bonus_desc:0 "[GetFaithDoctrine('unreformed_faith_doctrine').GetBaseName] [GetReligionFamily('rf_pagan').GetName|l] [faith|El] имеет [Concept( 'battle', 'боевое' )|E] [Concept( 'advantage', 'преимущество' )|E] в [Concept( 'counties', 'графствах' )|E] той же конфессии."
-  
  game_concept_personality:0 "Личность"
  game_concept_character_personality:0 "Личность персонажа"
  game_concept_personalities:0 "Личности"
  game_concept_personality_desc:0 "Личность определяет, как персонаж будет поступать в отношении вас и других людей. На поведение в первую очередь влияют личностные [personality_traits|El]."
-  
  game_concept_economical_archetype:0 "Экономический архетип"
  game_concept_economical_archetype_desc:0 "Экономический архетип [Concept( 'rulerpossessive', 'правителя' )|E] в основном определяется его [Concept( 'traits', 'свойствами' )|E] и влияет на то, как он тратит [gold_i][gold|El].\n\n#low Экономический архетип правителя может быть:#!\n$EFFECT_LIST_BULLET$[ai_warlike_personality|E]\n$EFFECT_LIST_BULLET$[ai_cautious_personality|E]\n$EFFECT_LIST_BULLET$[ai_economical_boom_personality|E]\n$EFFECT_LIST_BULLET$[ai_economical_unpredictable_personality|E]"
-  
  game_concept_gift:0 "Подарок"
  game_concept_gifts:0 "Подарки"
  game_concept_send_gift:0 "Отправить подарок"
  game_concept_gift_desc:0 "Отправка подарка другому персонажу улучшит его [Concept( 'opinion', 'мнение' )|E] о вас в обмен на [Concept( 'gold', 'золото' )|E][gold_i].\n\nЖадность получателя определяет количество отправляемого ему золота и прирост мнения.\n\nЧем выше ваш навык [Concept( 'diplomacy', 'дипломатии' )|E], тем больше мнения вы получите."
-  
  game_concept_vote_strength:0 "Сила выборщика"
-  
  game_concept_valuable_prisoner:0 "Ценный узник"
  game_concept_valuable_prisoners:0 "Ценные узники"
  game_concept_valuable_prisoner_desc:0 "Ценный узник — это [prisoner|El], захваченный во время [Concept( 'war', 'войны' )|E], который повышает [war_score|El].\n\nДействительно ценным узником может быть только наследник первого титула военного лидера, чье место в очереди наследование не ниже третьего.\n\nВ отличие от [Concept( 'prisoners_of_war', 'военнопленных' )|E], ценных узников отпускают по окончании войны."
  game_concept_prisoner_of_war:0 "Военнопленный"
  game_concept_prisoners_of_war:0 "Военнопленные"
- game_concept_prisoner_of_war_desc:0 "$game_concept_prisoner_of_war$ — [prisoner|El], захваченный во время [Concept( 'war', 'войны' )|E], но недостаточно значимый, чтобы повлиять на [war_score|El].\n\nВ отличие от [Concept( 'hostages', 'заложников' )|E], военнопленных не отпускают по окончании войны, но их можно выкупить."
-  
+ game_concept_prisoner_of_war_desc:0 "Военнопленный — [prisoner|El], захваченный во время [Concept( 'war', 'войны' )|E], но недостаточно значимый, чтобы повлиять на [war_score|El].\n\nВ отличие от [Concept( 'valuable_prisoners', 'ценных узников' )|E], военнопленных не отпускают по окончании войны, но их можно выкупить."
  game_concept_single_combat_fight:0 "Бой один на один"
  game_concept_single_combat_duel:0 "Поединок"
  game_concept_single_combat_fight_plural:0 "Бои один на один"
@@ -1774,14 +1679,11 @@
  game_concept_single_combat_prowess_bonus_desc:0 "Когда [Concept( 'characters', 'персонажи' )|E] [Concept( 'single_combat_duel', 'ведут поединок' )|E], они могут получить временные преимущества, например воспользовавшись [Concept( 'terrain', 'местностью' )|E] или получив особые [Concept( 'traits', 'свойства' )|E]. Это повышает их [Concept( 'prowess', 'доблесть' )|E] до конца текущего поединка.\n\nПротивовесом [Concept( 'single_combat_prowess_bonus', 'бонуса преимущества' )|E] является [Concept( 'single_combat_prowess_malus', 'штраф к преимуществу в поединке' )|E]."
  game_concept_single_combat_prowess_malus:0 "Штраф к преимуществу в поединке"
  game_concept_single_combat_prowess_malus_desc:0 "Когда [Concept( 'characters', 'персонажи' )|E] [Concept( 'single_combat_duel', 'ведут поединок' )|E], они могут получить временные штрафы, зачастую вызванные тем, что противнику удалось сильно ранить или запугать их. Это снижает их [Concept( 'prowess', 'доблесть' )|E] до конца поединка, но после она тут же восстанавливается.\n\nПротивовесом [Concept( 'single_combat_prowess_malus', 'штрафа к преимуществу в поединке' )|E] является [Concept( 'single_combat_prowess_bonus', 'бонус преимущества' )|E]."
-  
  game_concept_game_over:0 "Конец игры"
  game_concept_game_over_desc:0 "Игра заканчивается после гибели текущей династии.\n\nНо даже после этого вы можете продолжить игру за любого другого [Concept( 'ruler', 'правителя' )|E].\n\nИгра заканчивается в двух случаях:\n$BULLET_WITH_TAB$Если вы умерли, не имея [Concept( 'player_heir', 'наследника-игрока' )|E]\n$BULLET_WITH_TAB$Если вы достигли 1453 года"
-  
  game_concept_de_jure_partition:0 "Де-юре раздел"
  game_concept_de_jure_partitioned:0 "Де-юре раздел"
  game_concept_de_jure_partition_desc:0 "[realms|E] после [Concept( 'de_jure_partitioned', 'де-юре раздела' )|E] оказываются разбиты на два [Concept( 'titles', 'титула' )|E] одного [Concept( 'title_tier', 'ранга' )|E], однако их целостность легко восстановить.\n\nЛюбой из [Concept( 'title', 'титулов' )|E] при помощи [Concept( 'decision', 'решений' )|E] может мгновенно [Concept( 'de_jure_drift_drift', 'изменять де-юре статус' )|E] [Concept( 'completely_controlled', 'полностью контролируемых' )|E] [Concept( 'duchies', 'герцогств' )|E], принадлежащих другому [Concept( 'title', 'титулу' )|E].\n\nЕсли один из [Concept( 'title', 'титулов' )|E] оказывается уничтоженным или теряет последнее из своих [Concept( 'de_jure', 'де-юре' )|E] [Concept( 'counties', 'графств' )|E], то второй [Concept( 'title', 'титул' )|E] поглощает все его [Concept( 'de_jure', 'де-юре' )|E] владения."
-  
  game_concept_hybrid_culture:0 "Гибридная культура"
  game_concept_hybrid_cultures:0 "Гибридные культуры"
  game_concept_hybridize:0 "Создать гибрид"
@@ -1797,67 +1699,51 @@
  game_concept_divergent_culture_desc:0 "[SelectLocalization( HasDlcFeature( 'diverge_culture' ), 'game_concept_divergent_culture_desc_DLC', 'game_concept_divergent_culture_desc_NO_DLC' )]"
  game_concept_divergent_culture_desc_DLC:0 "$game_concept_divergent_culture$ — это ответвление существующей [Concept( 'culture', 'культуры' )|E], созданное [Concept( 'ruler', 'правителем' )|E].\n\n$game_concept_divergent_culture$ сохранит свое [Concept( 'heritage', 'наследие' )|E], но прочие аспекты можно изменить.\n\nКультуре, от которой вы пытаетесь отделиться, должно быть не меньше [EmptyScope.ScriptValue('culture_divergence_cooldown')|0] лет, а затраты [Concept( 'prestige', 'престижа' )|E] зависят от [Concept( 'realm_size', 'размера державы' )|E] правителя.\n\nНовые культуры также могут возникнуть в результате [Concept( 'hybrid_culture', 'смешения' )|E]."
  game_concept_divergent_culture_desc_NO_DLC:0 "$game_concept_divergent_culture$ — это ответвление существующей [Concept( 'culture', 'культуры' )|E]\n\nНовые культуры также могут возникнуть в результате [Concept( 'hybrid_culture', 'смешения' )|E]."
-  
  game_concept_winter:0 "Зимний мороз"
  game_concept_winter_desc:0 "Зима постепенно расходует [Concept( 'supply', 'припасы' )|E], из-за чего армии теряют припасы, находясь в баронствах, подверженных влиянию зимы. Штраф к припасам растет в зависимости от зимних морозов. Зимние морозы могут быть [Concept( 'winter_severity_mild', 'мягкими' )|E], [Concept( 'winter_severity_normal', 'обычнымиl' )|E] и [Concept( 'winter_severity_harsh', 'суровыми' )|E]."
  game_concept_winter_severity_mild:0 "Мягкая зима"
- game_concept_winter_severity_mild_desc:0 "[GetModifier( 'winter_mild_modifier' ).GetDesc]"
+ game_concept_winter_severity_mild_desc:0 "[GetModifier( 'winter_mild_modifier' ).GetDescWithEffects]"
  game_concept_winter_severity_normal:0 "Нормальная зима"
- game_concept_winter_severity_normal_desc:0 "[GetModifier( 'winter_normal_modifier' ).GetDesc]"
+ game_concept_winter_severity_normal_desc:0 "[GetModifier( 'winter_normal_modifier' ).GetDescWithEffects]"
  game_concept_winter_severity_harsh:0 "Суровая зима"
- game_concept_winter_severity_harsh_desc:0 "[GetModifier( 'winter_harsh_modifier' ).GetDesc]"
-  
+ game_concept_winter_severity_harsh_desc:0 "[GetModifier( 'winter_harsh_modifier' ).GetDescWithEffects]"
  game_concept_deceitful_progress_hostile_schemes_decision:0 "$deceitful_progress_hostile_schemes_decision$ (решение)"
  game_concept_deceitful_progress_hostile_schemes_decision_desc:0 "[decision|E], позволяющее повысить эффективность [Concept( 'hostile_scheme', 'враждебных происков' )|E]. Увеличивает [Concept( 'success_chance', 'шанс успеха' )|E] и [Concept( 'scheme_power', 'силу происков' )|E] ценой роста [Concept( 'stress', 'стресса' )|E]."
-  
  game_concept_diligent_development_focus_decision:0 "$diligent_development_focus_decision$ (решение)"
  game_concept_diligent_development_focus_decision_desc:0 "[decision|E], позволяющее улучшить свою [Concept( 'capital', 'столицу' )|E]. Увеличивает [Concept( 'development', 'развитие' )|E] ценой роста [Concept( 'stress', 'стресса' )|E]."
-  
  game_concept_impatient_rushing_all_schemes_decision:0 "$impatient_rushing_all_schemes_decision$ (решение)"
  game_concept_impatient_rushing_all_schemes_decision_desc:0 "[decision|E], позволяющее ускорить [Concept( 'scheme', 'происки' )|E]. Увеличивает прогресс происков ценой роста [Concept( 'stress', 'стресса' )|E]."
-  
  game_concept_dismiss_strong_hook_interaction:0 "$dismiss_strong_hook_interaction$ (взаимодействие)"
  game_concept_dismiss_strong_hook_interaction_desc:0 "[interaction|E], позволяющее соскочить с [Concept( 'hook', 'крючка' )|E] в обмен на [Concept( 'prestige', 'престиж' )|E]."
-  
  game_concept_abandon_hook_interaction:0 "$abandon_hook_interaction$ (взаимодействие)"
  game_concept_abandon_hook_interaction_desc:0 "[interaction|E], позволяющее отказаться от [Concept( 'hook', 'влияния' )|E] на другого персонажа и понизить свой [stress_loss_i][Concept( 'stress', 'стресс' )|E]."
-  
  game_concept_force_duel_criminals_interaction:0 "$force_duel_criminals_interaction$ (взаимодействие)"
  game_concept_force_duel_criminals_interaction_desc:0 "[interaction|E], позволяющее вам [Concept( 'single_combat_duel', 'вызывать на поединок' )|E] преступников, находясь в состоянии [Concept( 'stress', 'стресса' )|E]."
-  
  game_concept_force_duel_anyone_interaction:0 "$force_duel_anyone_interaction$ (взаимодействие)"
  game_concept_force_duel_anyone_interaction_desc:0 "[interaction|E], позволяющее вам [Concept( 'single_combat_duel', 'вызывать на поединок' )|E] кого угодно, находясь в состоянии [Concept( 'stress', 'стресса' )|E]."
-  
  game_concept_artifact_rarity:0 "Редкость артефакта"
  game_concept_rarity:0 "Редкость"
  game_concept_artifact_rarity_desc:0 "Характеристика «Редкость» определяет, насколько уникальным является [artifact|El].\n\nУровни редкости по возрастанию:\n$BULLET_WITH_TAB$Обычный (не отображается, так как назначается по умолчанию)\n$BULLET_WITH_TAB$$masterwork$\n$BULLET_WITH_TAB$$famed$\n$BULLET_WITH_TAB$$illustrious$"
-  
- game_concept_promote_other_culture_development_decision:0 "Решение:0 $promote_other_culture_development_decision_name$"
+ game_concept_promote_other_culture_development_decision:0 "Решение: $promote_other_culture_development_decision_name$"
  game_concept_promote_other_culture_development_decision_desc:0 "[decision|E], позволяющее улучшить [development|El], [control|El], снизить затраты на [building|El], а также получить большее [advantage|El] в [Concept( 'counties', 'графствах' )|E] от разных [Concept( 'cultures', 'культур' )|E] с [Concept( 'cultural_acceptance', 'терпимостью' )|E] не менее #V 75%#!.\n\nПриняв это решение вы также повысите [prestige|El] [prestige_i] и число [Concept( 'levies', 'ополченцев' )|E].\n\nДействует на все графства [realms|El]. Затраты [Concept( 'gold', 'золота' )|E] увеличиваются в зависимости от количества задействованных графств."
-  
  game_concept_reform:0 "Реформировать"
  game_concept_reformation:0 "Реформация"
  game_concept_reformation_desc:0 "[culture_head|E] может изменить определенные аспекты своей [Concept( 'culture', 'культуры' )|E] посредством [Concept( 'reformation', 'реформации' )|E]. Этот процесс занимает много времени, и отменить его невозможно. \n\nРеформировать можно:\n$BULLET_WITH_TAB$[traditions|E]\n$BULLET_WITH_TAB$[ethos|E]\n$BULLET_WITH_TAB$[martial_custom|E]"
-  
  game_concept_buy_artifact_claim:0 "$buy_artifact_claim_interaction$"
  game_concept_buy_artifact_claim_interaction:0 "$buy_artifact_claim_interaction$ (взаимодействие)"
  game_concept_buy_artifact_claim_desc:0 "Взаимодействие, позволяющее персонажу покупать [Concept( 'personal_artifact_claims', 'претензии на личные артефакты' )|E] в обмен на [Concept( 'piety', 'благочестие' )|E] или [Concept( 'prestige', 'престиж' )|E]"
-  
  game_concept_vassal_contract:0 "Вассальный договор"
  game_concept_vassal_contracts:0 "Вассальные договоры"
  game_concept_vassal_contract_desc:0 "$game_concept_vassal_contract$ определяет [Concept( 'obligations', 'обязательства' )|E], которые берут на себя [Concept( 'feudal', 'феодальный' )|E] [Concept( 'vassal', 'вассал' )|E] и его [Concept( 'liege', 'сюзерен' )|E].\n\nОсобые договоры, такие как #V $special_contract_march_short$#!, #V $special_contract_scutage_short$#! или #V $special_contract_palatinate_short$#!, доступны только [Concept( 'vassal', 'вассалам' )|E] в ранге не ниже [Concept( 'duchy', 'герцога' )|E]."
-  
  game_concept_board_game_match:0 "Матч"
  game_concept_board_game:0 "Настольная игра"
  game_concept_board_games:0 "Настольные игры"
  game_concept_board_game_game:0 "Игра"
  game_concept_board_game_match_desc:0 "В настольной игре двое участников испытывают удачу и проявляют смекалку, стараясь перехитрить друг друга. Матчи могут быть дружескими, но также в них могут быть ставки разной ценности.\n\n#weak Есть разные [board_game_types|El], но пути к [Concept( 'board_game_win', 'победе' )|E] и принципы игры всегда одинаковы. Различаются лишь необходимые навыки.#!"
-  
  game_concept_board_game_winning:0 "Победа"
  game_concept_board_game_win:0 "Победить"
  game_concept_board_game_winning_sudden_death:0 "Дополнительный раунд"
  game_concept_board_game_winning_desc:0 "Победа в [Concept( 'board_game', 'настольной игре' )|E] достигается двумя способами:\n$EFFECT_LIST_BULLET$ Значительное превосходство по очкам над противником.\n$EFFECT_LIST_BULLET$ Защищающийся игрок всегда считается победителем, если исход неясен по истечении [EmptyScope.ScriptValue('bg_round_cap_value')|0] раунда."
-  
  game_concept_board_game_type:0 "Тип настольной игры"
  game_concept_board_game_types:0 "Типы настольных игр"
  game_concept_board_game_type_counter:0 "шашка"
@@ -1872,48 +1758,69 @@
  game_concept_board_game_type_hnefatafl_desc:0 "$game_concept_board_game_type_desc_guts$\n\n$game_concept_board_game_type_hnefatafl$:\n$EFFECT_LIST_BULLET$ [Concept( 'intrigue', 'интриги' )|E] [Concept( 'board_game_type_counter', 'противодействуют' )|E] [Concept( 'martial', 'военному делу' )|E]\n$EFFECT_LIST_BULLET$ [martial|E] [Concept( 'board_game_type_counter', 'противодействует' )|E] [Concept( 'prowess', 'доблести' )|E]\n$EFFECT_LIST_BULLET$ [prowess|E] [Concept( 'board_game_type_counter', 'противодействует' )|E] [Concept( 'intrigue', 'интригам' )|E]"
  game_concept_board_game_type_tabula:0 "Табула"
  game_concept_board_game_type_tabula_desc:0 "$game_concept_board_game_type_desc_guts$\n\n$game_concept_board_game_type_tabula$:\n$EFFECT_LIST_BULLET$ [Concept( 'intrigue', 'интриги' )|E] [Concept( 'board_game_type_counter', 'противодействуют' )|E] [Concept('learning', 'учености' )|E]\n$EFFECT_LIST_BULLET$ [learning|E] [Concept( 'board_game_type_counter', 'противодействует' )|E] [Concept( 'stewardship', 'управлению' )|E]\n$EFFECT_LIST_BULLET$ [stewardship|E] [Concept( 'board_game_type_counter', 'противодействует' )|E] [Concept( 'intrigue', 'интригам' )|E]"
+ game_concept_house_unity:0 "Единство дома"
+ game_concept_unity:0 "Единство"
+ game_concept_house_unity_i:0 "@dynasty_house_unity!"
+ game_concept_house_unity_desc:0 "Единство дома является показателем отношений внутри [Concept( 'clan', 'кланового' )|E] [Concept( 'house', 'дома' )|E] и мнения его представителей друг о друге.\n\nСуществует несколько [Concept( 'house_unity_levels', 'уровней единства' )|E], каждый из которых предоставляет членам дома ряд преимуществ и штрафов.\n\nЕдинство меняется в зависимости от действий представителей дома по отношению друг к другу. [house_unity_unifying_actions|E] зачастую будут повышать единство, а [house_unity_devisive_actions|El] будут его снижать. [house_head|E], как правило, имеет больше возможностей влиять на единство дома."
+ game_concept_house_unity_level:0 "Уровень единства дома"
+ game_concept_house_unity_levels:0 "Уровни единства дома"
+ game_concept_house_unity_level_desc:0 "Уровень единства дома — это текущее [Concept( 'house_unity', 'единство дома' )|E]. Уровень меняется по мере того, как единство увеличивается при помощи [Concept( 'house_unity_unifying_actions', 'объединяющих действий' )|E] или снижается посредством [Concept( 'house_unity_devisive_actions', 'разобщающих' )|E], и каждый уровень предоставляет всем членам [Concept( 'house', 'дома' )|E] различные преимущества и штрафы.\n\nВсего доступно пять уровней единства:\n[GetCurrentHouseUnityStagesDescForLocalPlayer]\n\nС каждым уровнем связан свой [Concept( 'succession_law', 'закон о наследовании' )|E]."
+ game_concept_house_unity_unifying_actions:0 "Объединяющие действия"
+ game_concept_house_unity_unifying_actions_desc:0 "Объединяющие действия в отношении представителей вашего [Concept( 'house', 'дома' )|E] увеличат его [Concept( 'house_unity', 'единство' )|E].\n\n[house_heads|E] могут использовать [Concept( 'decision', 'решение' )|E] #V $unity_steer_house_direction_decision$#! и [Concept( 'interaction', 'взаимодействие' )|E] #V $extoll_virtuousness_interaction$#!, чтобы значительно увеличить единство.\n\n#weak Примерами объединяющих действий могут служить: $house_unity_increase_examples$#!"
+ game_concept_house_unity_devisive_actions:0 "Разобщающие действия"
+ game_concept_house_unity_devisive_actions_desc:0 "Разобщающие действия в отношении представителей вашего [Concept( 'house', 'дома' )|E] снизят его [Concept( 'house_unity', 'единство' )|E].\n\n[house_heads|E] могут использовать [Concept( 'decision', 'решение' )|E] #V $unity_steer_house_direction_decision$#! и [Concept( 'interaction', 'взаимодействие' )|E] #V $accuse_of_decandence_interaction$#!, чтобы значительно снизить единство.\n\n#weak Примерами разобщающих действий могут служить: $house_unity_decrease_examples$#!"
+ game_concept_house_succession_law:0 "Закон о наследовании дома"
+ game_concept_house_succession_law_desc:0 "В [Concept( 'realms', 'державах' )|E] с формой правления «[GetGovernment('clan_government').GetName]» [Concept( 'succession_law', 'закон о наследовании' )|E] определяется [Concept( 'house_unity_level', 'уровнем единства дома' )|E].\n\nКланы могут перейти на закон о наследовании «$SUCCESSION_LAW_CHANGE_WINDOW_SINGLE_HEIR_LAWS$», что избавит их от влияния [Concept( 'house_unity', 'единства дома' )|E], но сделать это сложнее обычного."
+ house_unity_increase_examples:0 "\n$EFFECT_LIST_BULLET$ $negotiate_alliance_interaction$\n$EFFECT_LIST_BULLET$ $join_war_interaction$\n$EFFECT_LIST_BULLET$ $gift_artifact_interaction$\n$EFFECT_LIST_BULLET$ $pay_ransom_interaction$\n$EFFECT_LIST_BULLET$ $offer_guardianship_interaction$\n$EFFECT_LIST_BULLET$ $send_to_holy_order_interaction$\n$EFFECT_LIST_BULLET$ $restore_inheritance_interaction$\n$EFFECT_LIST_BULLET$ $abandon_hook_interaction$\n$EFFECT_LIST_BULLET$ $stop_attacker_vassal_war_interaction$\n$EFFECT_LIST_BULLET$ $fund_inspiration_interaction$\n$EFFECT_LIST_BULLET$ $propose_best_friendship_interaction$"
+ house_unity_decrease_examples:0 "\n$EFFECT_LIST_BULLET$ $revoke_title_interaction$\n$EFFECT_LIST_BULLET$ $declare_war_interaction$\n$EFFECT_LIST_BULLET$ $imprison_interaction$\n$EFFECT_LIST_BULLET$ $move_to_dungeon_interaction$\n$EFFECT_LIST_BULLET$ $force_join_faction_interaction$\n$EFFECT_LIST_BULLET$ $disinherit_interaction$\n$EFFECT_LIST_BULLET$ $denounce_interaction$\n$EFFECT_LIST_BULLET$ $expose_secret_interaction$\n$EFFECT_LIST_BULLET$ $blackmail_interaction$\n$EFFECT_LIST_BULLET$ $break_betrothal_interaction$\n$EFFECT_LIST_BULLET$ $join_independence_faction_interaction$\n$EFFECT_LIST_BULLET$ $sumptuary_law_debate_interaction$\n$EFFECT_LIST_BULLET$ $vassal_claim_liege_title_interaction$"
+ game_concept_dreams:0 "Сны"
+ game_concept_dreams_desc:0 "Персонажи, исповедующие конфессию с догматом предсказаний, могут время от времени видеть сны. Мистик может истолковать значение этих снов, что может привести к самым разным последствиям, как хорошим, так и плохим."
  game_concept_board_game_type_go:0 "Го"
  game_concept_board_game_type_go_desc:0 "$game_concept_board_game_type_desc_guts$\n\nГо:\n$EFFECT_LIST_BULLET$ [Concept( 'learning', 'Ученость' )|E] противодействует [Concept( 'martial', 'военному делу' )|E]\n$EFFECT_LIST_BULLET$ [Concept( 'martial', 'Военное дело' )|E] противодействует [Concept( 'intrigue', 'интригам' )]\n$EFFECT_LIST_BULLET$ [Concept( 'intrigue', 'Интриги' )] противодействуют [Concept( 'learning', 'учености' )|E]"
  game_concept_board_game_type_fidchell:0 "Фидхелл"
  game_concept_board_game_type_fidchell_desc:0 "$game_concept_board_game_type_desc_guts$\n\n$game_concept_board_game_type_fidchell$:\n$EFFECT_LIST_BULLET$ [Concept( 'learning', 'ученость' )|E] $game_concept_board_game_type_counters$ [Concept( 'prowess', 'доблесть' )|E]\n$EFFECT_LIST_BULLET$ [Concept( 'prowess', 'доблесть' )|E] $game_concept_board_game_type_counters$ [Concept( 'diplomacy', 'дипломатию' )|E]\n$EFFECT_LIST_BULLET$ [Concept( 'diplomacy', 'дипломатия' )|E] $game_concept_board_game_type_counters$ [Concept( 'learning', 'ученость' )|E]"
-  
-  
- #### DIARCHY/REGENCIES 
+ #### DIARCHY/REGENCIES
  game_concept_strife:0 "Недовольство"
  game_concept_strife_opinion:0 "Недовольство"
  game_concept_strife_desc:0 "$game_concept_strife$ — это штраф к [Concept( 'opinion', 'мнению' )|E] [Concept('vassals', 'вассалов' )|E] о [Concept( 'diarch', 'диархе' )|E].\n\nНедовольство могут вызвать такие поступки диарха, как использование [Concept( 'diarch_powers', 'возложенных полномочий' )|E], а также связанные с [Concept( 'mandate', 'мандатом' )|E] события, так как диарх не располагает тем же влиянием, что и их [Concept( 'liege', 'сюзерен' )|E]"
-  
  game_concept_diarchy:0 "Наделение полномочиями"
  game_concept_diarchies:0 "Наделение полномочиями"
  game_concept_sharing_power:0 "Передача полномочий"
  game_concept_power_sharing:0 "Разделение полномочий"
  game_concept_diarchy_desc:0 "Разделение полномочий возникает, когда [Concept( 'ruler', 'правитель' )|E] делится своей властью с одним из собственных [Concept('vassals', 'вассалов' )|E] или [Concept( 'courtiers', 'придворных' )|E], возвышая того до ранга [Concept( 'diarch', 'диарха' )|E].\n\nПравитель, разделивший свои полномочия, может выдавать [Concept( 'mandates', 'мандаты' )|E] диарху, а диарх может использовать особые [Concept( 'diarch_powers', 'возложенные полномочия' )|E]\n\n[Concept( 'scales_of_power', 'Равновесие сил' )|E] показывает, у кого больше власти — у правителя или диарха."
-  
  game_concept_diarch:0 "Диарх"
  game_concept_diarchs:0 "Диархи"
  game_concept_diarch_possessive:0 "Диарха"
  game_concept_diarchs_possessive:0 "Диархов"
  game_concept_diarch_desc:0 "Выступая в качестве младшего партнера, [Concept( 'diarchy', 'наделенного полномочиями' )|E], диарх помогает своему [Concept( 'liege', 'сюзерену' )|E] править [Concept( 'realm', 'державой' )|E].\n\nДиархи имеют [Concept( 'diarch_powers', 'возложенные полномочия' )|E], и их власть растет, когда [Concept( 'scales_of_power', 'равновесие сил' )|E] меняется в их пользу."
-  
  game_concept_regent:0 "Регент"
  game_concept_regents:0 "Регенты"
  game_concept_regent_possessive:0 "Регента"
  game_concept_regents_possessive:0 "Регентов"
  game_concept_regent_desc:0 "Регентом называют [Concept( 'diarch', 'диарха' )|E] в период  [Concept( 'regency', 'регентства' )|E].\n\n[Concept( 'ruler', 'Правитель' )|E] может назначить регента заранее, в противном случае им сразу же становится кандидат, у которого больше всего [Concept( 'regent_succession_score', 'очков наследования' )|E]."
-  
+ #For stapling to the bottom of new diarchy types.
+ variant_diarchs_replace_regents_boilerplate:0 "#WEAK Поскольку у правителя не может быть больше одного диарха единовременно, текущий диарх сохранит свое положение, если начнется [Concept( 'regency', 'регентство' )|E].#!"
+ game_concept_vizier:0 "Визирь"
+ game_concept_viziers:0 "Визири"
+ game_concept_vizierate:0 "Визирство"
+ game_concept_vizier_desc:0 "Визирь — это [Concept( 'diarch', 'диарх' )|E], которого [Concept( 'clan', 'клановые' )|E] [Concept(  'rulers', 'правители' )|E] при желании могут назначить, чтобы увеличить свои [Concept( 'income', 'доходы' )|E]. У визирей меньше [Concept( 'diarch_powers', 'полномочий' )|E], но их сложнее снять с должности.\n\nВизирь предоставляет [Concept( 'liege', 'сюзерену' )|E] дополнительные [Concept( 'tax_jurisdictions', 'налоговые юрисдикции' )|E] в зависимости от своего навыка [Concept( 'stewardship', 'управления' )|E] и увеличивает [Concept( 'aptitude', 'пригодность' )|E] [Concept( 'tax_collectors', 'сборщиков налогов' )|E] в зависимости от того, как сильно сдвинуто [Concept( 'scales_of_power', 'равновесие сил' )|E] в пользу визиря.\n\nОсобенно важно отметить, что сюзерен может отнять у визиря [gold_i][gold|El] с помощью [Concept( 'interaction', 'взаимодействия' )|E] «$mulct_vizier_interaction$».\n\n#WEAK Визири по своей сути являются чиновниками с обширными полномочиями, а потому эта должность, несмотря на прилагающееся к ней влияние, не считается престижной среди [Concept( 'nobles', 'дворян' )|E]. Преемник на должность визиря определяется в соответствии с [Concept( 'vizier_succession_score', 'очками наследования визиря' )|E].#!\n\n$variant_diarchs_replace_regents_boilerplate$"
+ game_concept_vizier_succession_score:0 "Очки наследования визиря"
+ game_concept_vizier_succession_score_desc:0 "В [Concept( 'vizierate', 'визирстве' )|E] следующий визирь выбирается исходя из того, кто из кандидатов обладает наибольшим количеством очков наследования.\n\nВозможные кандидаты могут попытать убедить [Concept( 'ruler', 'правителя' )|E] позволить им заменить действующего визиря в обмен на [Concept( 'gold', 'золото' )|E].\n\n#WEAK Эту должность могут занимать только безземельные [Concept( 'characters', 'персонажи' )|E] или [Concept( 'baron', 'бароны' )|E], и предпочтение отдается персонажам с развитыми навыками [Concept( 'diplomacy', 'дипломатии' )|E], [Concept( 'stewardship', 'управления' )|E] и [Concept( 'intrigue', 'интриг' )|E], а также со [Concept( 'traits', 'свойствами' )|E], подходящими для службы чиновником.\n\n[relations|E] с действующим визирем, [Concept( 'spouses', 'супругами' )|E], [Concept( 'concubines', 'наложницами' )|E] и [Concept( 'adult', 'взрослыми' )|E] безземельными [Concept( 'children', 'детьми' )|E] [Concept( 'liege', 'сюзерена' )|E] также сильно влияют на очки наследования.#!"
+ game_concept_vizier_extravagance:0 "Излишество визиря"
+ game_concept_vizier_extravagances:0 "Излишества визиря"
+ game_concept_vizier_extravagance_extravagance:0 "Излишество"
+ game_concept_vizier_extravagance_extravagances:0 "Излишества"
+ game_concept_vizier_extravagance_desc:0 "Занимая свой пост, [viziers|El] будут тратить [Concept( 'gold', 'золото' )|E] на все более замысловатые [modifiers|El] излишеств, балуя себя и элиту общества в [Concept( 'capital', 'столице' )|E] [Concept( 'liege', 'сюзерена' )|E].\n\nСюзерен может разорить эти модификаторы с помощью [Concept( 'interaction', 'взаимодействия' )|E] «$mulct_vizier_interaction$», превратив их в золото, которое визирь должен будет выплатить.\n\n#WEAK Когда визирь лишается [Concept( 'sharing_power', 'полномочий' )|E], он теряет возможность поддерживать свой полный излишеств образ жизни, и все оставшиеся модификаторы будут потеряны.\n\nРазорение более высоких уровней приносит больше золота. Всего в игре четыре уровня излишеств:\n$EFFECT_LIST_BULLET$ $vizier_extravagance_t1_title$\n$EFFECT_LIST_BULLET$ $vizier_extravagance_t2_title$\n$EFFECT_LIST_BULLET$ $vizier_extravagance_t3_title$\n$EFFECT_LIST_BULLET$ $vizier_extravagance_t4_title$#!"
  game_concept_regency:0 "Регентство"
  game_concept_regencies:0 "Регентства"
  game_concept_regency_possessive:0 "Регентства"
  game_concept_regencies_possessive:0 "Регентств"
- game_concept_regency_desc:0 "Регентство — это особая форма [Concept( 'diarchy', 'наделения полномочиями' )|E], когда [Concept( 'ruler', 'правитель' )|E] не в силах править [Concept( 'realm', 'державой' )|E] самостоятельно.\n\nКак правило, регентство требуется, когда правитель — [Concept( 'child', 'ребенок' )|E], [Concept( 'imprisoned', 'в заключении' )|E], [GetTrait('incapable').GetName(GetPlayer)] или посещает [Concept( 'activity', 'занятие' )|E] за пределами своей державы.\n\nРегентство, которое длится слишком долго, может стать [Concept( 'entrenched_regency', 'укоренившимся регентством' )|E]."
-  
+ game_concept_regency_desc:0 "Регентство — это особая форма [Concept( 'diarchy', 'наделения полномочиями' )|E], когда [Concept( 'ruler', 'правитель' )|E] не в силах править [Concept( 'realm', 'державой' )|E] самостоятельно.\n\nКак правило, регентство требуется, когда правитель — [Concept( 'child', 'ребенок' )|E], [Concept( 'imprisoned', 'в заключении' )|E], имеет [GetTrait('incapable').GetName(GetPlayer)|l] или посещает [Concept( 'activity', 'занятие' )|E] за пределами своей державы.\n\nРегентство, которое длится слишком долго, может стать [Concept( 'entrenched_regency', 'укоренившимся регентством' )|E]."
  game_concept_regency_veto:0 "Вето диархии"
  game_concept_veto:0 "Вето"
  game_concept_regency_veto_desc:0 "Когда [Concept( 'diarch', 'диарх' )|E] использует [Concept( 'diarch_powers', 'возложенные на него полномочия' )|E], [Concept( 'liege', 'сюзерен' )|E] может наложить вето на решение диарха, потратив для этого очки [Concept( 'prestige', 'престижа' )|E]"
-  
  game_concept_regent_succession_score:0 "Очки наследования регента"
- game_concept_regent_succession_score_desc:0 "В случае наступления [Concept( 'regency', 'регентства' )|E] следующим [Concept( 'regent', 'регентом' )|E] становится кандидат с самым большим количеством очков наследования регента.\n\nКроме того, [Concept( 'ruler', 'правитель' )|E] [Concept( 'realm', 'державы' )|E] может самостоятельно выбрать регента, изменив тем самым обычный порядок наследования."
-  
+ game_concept_regent_succession_score_desc:0 "В случае наступления [Concept( 'regency', 'регентства' )|E] следующим [Concept( 'regent', 'регентом' )|E] становится кандидат с самым большим количеством очков наследования регента.\n\nКроме того, [Concept( 'ruler', 'правитель' )|E] [Concept( 'realm', 'державы' )|E] может самостоятельно выбрать регента, изменив тем самым обычный порядок наследования.\n\n#WEAK Предпочтение отдается [Concept( 'characters', 'персонажам' )|E], состоящим в родстве с правителем, особенно политически подкованным безземельным членам [Concept( 'family', 'семьи' )|E], находящимся при [Concept( 'court', 'дворе' )|E].#!"
  game_concept_diarch_power:0 "Возложенные полномочия"
  game_concept_diarch_powers:0 "Возложенные полномочия"
  game_concept_diarch_power_power:0 "Полномочия"
@@ -1923,30 +1830,23 @@
  game_concept_diarch_power_power_possessive:0 "Полномочий"
  game_concept_diarch_power_powers_possessive:0 "Полномочий"
  game_concept_diarch_power_desc:0 "[Concept( 'diarch', 'Диарх' )|E], наделенный [Concept( 'sharing_power', 'разделеными полномочиями' )|E], может использовать особые $game_concept_diarch_powers$.\n\nЭто особые [Concept( 'character_interaction', 'взаимодействия персонажа' )|E], похожие на доступные [Concept( 'liege', 'сюзерену' )|E] решения или другие способы использования власти. В их числе можно назвать [Concept( 'revoking', 'лишение' )|E] [Concept( 'titles', 'титула' )|E] другого [Concept('vassals', 'вассала' )|E] или выкачивание [Concept( 'gold', 'золота' )|E] из казны сюзерена.\n\n$game_concept_diarch_powers$ нередко могут быть заблокированы сюзереном с помощью права [Concept( 'veto', 'вето' )|E]."
-  
  game_concept_mandate:0 "Мандат"
  game_concept_mandates:0 "Мандаты"
  game_concept_mandate_possessive:0 "Мандата"
  game_concept_mandates_possessive:0 "Мандатов"
  game_concept_mandate_desc:0 "$game_concept_mandates$ — это ценные поручения, которые [liege|El] может дать [Concept( 'diarch', 'диарху' )|E] при передаче ему части [Concept( 'sharing_power', 'полномочий' )|E].\n\nПо аналогии с [Concept( 'councillor_tasks', 'заданиями совета' )|E], сюзерен выбирает мандат, а затем постепенно получает преимущества от него.\n\nКогда диарх хорошо справляется с работой, он перетягивает [scales_of_power|El] на себя #EMP и#! увеличивает [strife|El] со стороны других [Concept( 'vassals', 'вассалов' )|E].\n\nВыгода сюзерена зависит от [Concept( 'diarch_aptitude', 'пригодности' )|E] и [Concept( 'diarch_loyalty', 'верности' )|E] диарха."
-  
  game_concept_diarch_aptitude:0 "Пригодность диарха"
  game_concept_diarch_aptitude_desc:0 "$game_concept_diarch_aptitude$ показывает, насколько хорошо [Concept( 'diarch', 'диарх' )|E] справится с исполнением [Concept( 'mandate', 'мандата' )|E], полученного от [Concept( 'liege', 'сюзерена' )|E].\n\nСвою роль в этом сыграют как [Concept( 'skills', 'навыки' )|E], так и [Concept( 'personality_traits', 'личностные свойства' )|E]. Например, диарх со свойством [GetTrait('greedy').GetName(GetNullCharacter)|l], которому поручено наполнить сундуки, может передать гораздо меньше [Concept( 'gold', 'золота' )|E] своему сюзерену.\n\n#WEAK [Concept( 'diarchs', 'Диархи' )|E] хорошо подходят для исполнения мандата, если их пригодность составляет 40+.#!"
-  
  game_concept_diarch_loyalty:0 "Верность"
  game_concept_diarch_loyalty_explicit:0 "Верность диарха"
  game_concept_diarch_loyal:0 "Верный"
  game_concept_diarch_loyalty_desc:0 "Верность [Concept( 'diarch', 'диарха' )|E] показывает, насколько он склонен поступать в своих интересах в ущерб интересам своего [Concept( 'liege', 'сюзерена' )|E] (или своей [Concept( 'realm', 'державы' )|E]).\n\nПерсонаж бескорыстен — диарх воздерживается использовать [diarch_powers|El], старается добросовестно выполнять свой [Concept( 'mandate', 'мандат' )] и без сопротивления отдает полномочия, если его об этом попросить.\n\nПерсонаж корыстен — диарх активно использует возложенные полномочия, выполняет мандат, чтобы склонить [Concept( 'scales_of_power', 'равновесие сил' )|E] в свою сторону, и может отказаться отдавать власть, если равновесие склонилось далеко в его сторону.\n\nПерсонаж действует по обстоятельствам — диарх иногда использует возложенные полномочия, как правило — делит преимущества мандата со своим сюзереном или вовсе игнорирует мандат. И в случае, если равновесие сил склонится в его сторону, может потребовать взятку за то, чтобы оставить свой пост."
-  
- game_concept_diarch_succession:0 "Наследование"
+ game_concept_diarch_succession:0 "Преемственность"
  game_concept_diarch_succession_explicit:0 "Преемственность диархии"
  game_concept_diarch_succession_desc:0 "Преемственность диархии определяет, кто из [Concept( 'vassals', 'вассалов' )|E] или [Concept( 'courtiers', 'придворных' )|E] [Concept( 'liege', 'сюзерена' )|E] автоматически становится [Concept( 'diarch', 'диархом' )|E] в случае необходимости.\n\nЭто происходит при начале [Concept( 'diarchy', 'диархии' )|E] у сюзерена или после смерти или отстранения действующего диарха.\n\n#weak Порядок наследования может определяться по-разному в зависимости от типа разделения полномочий. Например, в случае [Concept( 'regency', 'регентства' )|E] у власти чаще оказываются безземельные [characters|El], близкие сюзерену.\n\nЗнание [Concept( 'language', 'языка' )|E] сюзерена (и [Concept( 'court_language', 'придворного языка' )|E], если таковой имеется) обязательно в большинстве случаев.#!"
-  
  game_concept_scales_of_power:0 "Равновесие сил"
  game_concept_scales_of_power_scales:0 "Равновесие"
  game_concept_scales_of_power_desc:0 "При [Concept( 'sharing_power', 'разделении полномочий' )|E] в основе отношений [Concept( 'liege', 'сюзерена' )|E] и [Concept( 'diarch', 'диарха' )|E] лежит равновесие сил.\n\nЕсли равновесие сдвигается в сторону диарха, он получает больше [Concept( 'diarch_powers', 'полномочий' )|E], из-за чего сюзерену становится сложнее выполнять [Concept( 'diarch_affected_actions', 'обычные действия' )|E]. Если равновесие сдвигается в сторону сюзерена, ему становится проще избавиться от [Concept( 'diarchy', 'диархии' )|E].\n\nРавновесие можно сдвинуть:\n$EFFECT_LIST_BULLET$Используя [Concept( 'character_interaction', 'взаимодействие персонажа' )|E] «$swing_scales_currency_interaction$» против противоположной стороны\n$EFFECT_LIST_BULLET$[Concept( 'diarch', 'Диарх' )|E], может прислуживать своему [Concept( 'liege', 'сюзерену' )|E], как положено (и со всем цинизмом) в событиях, связанных с [Concept( 'mandate', 'мандатом' )|E]"
-  
-  
  game_concept_entrenched_regency:0 "Укоренившееся регентство"
  game_concept_entrenched_regency_entrenched:0 "Укоренившееся"
  game_concept_entrenched_regency_regency:0 "Регентство"
@@ -1955,26 +1855,20 @@
  game_concept_entrenched_regency_entrench:0 "Укорениться"
  game_concept_entrenched_regencies:0 "Укоренившиеся регентства"
  game_concept_entrenched_regency_desc:0 "Если [Concept( 'regency', 'регентство' )|E] длится слишком долго, оно может укорениться, и [Concept( 'regent', 'регент' )|E] может даже стать могущественнее своего [Concept( 'liege', 'сюзерена' )|E].\n\nПреимущества, получаемые [Concept( 'regent', 'регентом' )|E] от сложившегося [Concept( 'scales_of_power', 'равновесия сил' )|E], также увеличатся.\n\nЧтобы положить конец укоренившемуся регентству, либо регент должен принять дар от сюзерен, либо сам сюзерен должен склонить равновесие сил в свою пользу."
-  
  game_concept_diarch_affected_actions:0 "Обычные действия"
  game_concept_diarch_affected_actions_desc:0 "Когда [Concept( 'scales_of_power', 'равновесие сил' )|E] во время [Concept( 'sharing_power', 'разделения полномочий' )|E] складывается в пользу [Concept( 'diarch', 'диарха' )|E], некоторые [Concept( 'interactions', 'взаимодействия' )|E] начинают требовать от [Concept( 'liege', 'сюзерена' )|E] больше [Concept( 'prestige', 'престижа' )|E].\n\nЭто распространяется на следующие действия:\n$EFFECT_LIST_BULLET$[Concept( 'revoking', 'Лишение' )|E] [Concept( 'title', 'титула' )|E]\n$EFFECT_LIST_BULLET$[Concept( 'retracting', 'Отзыв' )|E] [Concept( 'vassal', 'вассала' )|E]\n$EFFECT_LIST_BULLET$[Concept( 'imprisoning', 'Арест' )|E] [Concept( 'characters', 'персонажей' )|E]\n$EFFECT_LIST_BULLET$[Concept( 'executing', 'Казнь' )|E] персонажей #weak (если [faith|El] сюзерена не практикует человеческие жертвоприношения)#!"
-  
-  
-  ######## GRAND ACTIVITIES ETC 
-  
+ ######## GRAND ACTIVITIES ETC
  game_concept_grand_activity:0 "Грандиозное занятие"
  game_concept_grand_activities:0 "Грандиозные занятия"
  game_concept_grand_activity_desc:0 "Грандиозные занятия — роскошные демонстрации богатства и великолепия, которые по сути своей масштабнее и #EMP внушительнее,#! чем обычные [Concept( 'activities', 'занятия' )|E]. Они могут проводиться в несколько [Concept( 'activity_phases', 'фаз' )|E], имеют больше вариантов и требуют более тщательной подготовки.\n\nТуры позволяют посетить несколько [Concept('vassals', 'вассалов' )|E] вашей [Concept( 'realm', 'державы' )|E], а турниры позволяют провести различные [Concept( 'contests', 'состязания' )|E]."
-  
  game_concept_special_guest:0 "Особый гость"
  game_concept_special_guests:0 "Особые гости"
  game_concept_honorary_guest:0 "Почетный гость"
  game_concept_honorary_guest_desc:0 "$honorary_guest_desc$"
  game_concept_special_guest_desc:0 "Особым гостям отведены почетные места на [Concept( 'grand_activities', 'грандиозных занятиях' )|E]. Чествуйте кого-то, пока идет [GetActivityType( 'activity_feast' ).GetName], или устройте [GetActivityType( 'activity_tournament' ).GetName] и выберите воителя, который будет представлять вас!\n\nОсобые гости с большей вероятностью примут ваше приглашение. Все занятия, в которых должны принять участие особые гости, начнутся только после их прибытия."
-  
  game_concept_contest:0 "Состязание"
  game_concept_contests:0 "Состязания"
- game_concept_contest_desc:0 "[GetActivityType( 'activity_tournament' ).GetName|U] состоит из нескольких состязаний, выбранных [Concept( 'activity_host', 'устроителем' )|E], где [Concept( 'contest_qualifying', 'прошедшие отбор' )|E] [Concept( 'contestants', 'участники' )|E] могут состязаться друг с другом за [Concept( 'prizes', 'призы' )|E] и другие награды.\n\nПобеда в каждом из состязаний определяется одним из следующих способов:0 [Concept( 'contest_category_versus', 'борьба на вылет' )|E], [Concept( 'contest_category_turn', 'состязание по очкам' )|E], [Concept( 'contest_category_team', 'командное состязание' )|E] и [Concept( 'contest_category_race', 'скачки' )|E].\n\nВероятность победить в состязании зависит от ваших [Concept( 'skills', 'навыков' )|E], [Concept( 'traits', 'свойств' )|E], подготовки и других факторов. Возможность участия в физических состязаниях зависит от состояния здоровья и пола, исходя из [Concept( 'culture', 'культуры' )|E] и [Concept( 'faith', 'конфессии' )|E] [Concept( 'activity_host', 'устроителя' )|E]."
+ game_concept_contest_desc:0 "[GetActivityType( 'activity_tournament' ).GetName|U] состоит из нескольких состязаний, выбранных [Concept( 'activity_host', 'устроителем' )|E], где [Concept( 'contest_qualifying', 'прошедшие отбор' )|E] [Concept( 'contestants', 'участники' )|E] могут состязаться друг с другом за [Concept( 'prizes', 'призы' )|E] и другие награды.\n\nПобеда в каждом из состязаний определяется одним из следующих способов: [Concept( 'contest_category_versus', 'борьба на вылет' )|E], [Concept( 'contest_category_turn', 'состязание по очкам' )|E], [Concept( 'contest_category_team', 'командное состязание' )|E] и [Concept( 'contest_category_race', 'скачки' )|E].\n\nВероятность победить в состязании зависит от ваших [Concept( 'skills', 'навыков' )|E], [Concept( 'traits', 'свойств' )|E], подготовки и других факторов. Возможность участия в физических состязаниях зависит от состояния здоровья и пола, исходя из [Concept( 'culture', 'культуры' )|E] и [Concept( 'faith', 'конфессии' )|E] [Concept( 'activity_host', 'устроителя' )|E]."
  game_concept_prize:0 "Приз"
  game_concept_prizes:0 "Призы"
  game_concept_prize_desc:0 "Призы — это [Concept( 'artifacts', 'артефакты' )|El], которые выдаются по окончании [Concept( 'contest', 'состязаний' )|El], где предусматривается один победитель.\n\nКачество приза зависит от принятых [Concept( 'activity_host', 'устроителем' )|E] решений и [Concept( 'era', 'эпохи' )|E]."
@@ -1988,7 +1882,7 @@
  game_concept_contest_category_race_desc:0 "Победителем [Concept( 'contests', 'состязания' )|E] по скачкам становится [contest_qualifying|El] [contestant|El], чья лошадь занимает первое место в конце скачек.\n\nСкачки:\n$EFFECT_LIST_BULLET$Конные состязания"
  game_concept_contest_round:0 "Этап состязания"
  game_concept_contest_rounds:0 "Этапы состязания"
- game_concept_contest_round_desc:0 "В [Concept( 'contests', 'состязаниях' )|E] [contest_category_versus|El] [Concept( 'contest_qualifying', 'прошедшие отбор' )|E] [contestants|El] сходятся один на один в поединках с вылетом проигравших, пока не останется один единственный победитель.\n\nСостязание проходит в три этапа:0 четвертьфинал, полуфинал и финал."
+ game_concept_contest_round_desc:0 "В [Concept( 'contests', 'состязаниях' )|E] [contest_category_versus|El] [Concept( 'contest_qualifying', 'прошедшие отбор' )|E] [contestants|El] сходятся один на один в поединках с вылетом проигравших, пока не останется один единственный победитель.\n\nСостязание проходит в три этапа: четвертьфинал, полуфинал и финал."
  game_concept_contest_qualification:0 "Прохождение отбора"
  game_concept_contest_qualify:0 "Проходить отбор"
  game_concept_contest_qualifier:0 "Отборочный тур"
@@ -2004,18 +1898,14 @@
  game_concept_spectating:0 "Наблюдает"
  game_concept_spectate:0 "Наблюдать"
  game_concept_spectator_desc:0 "Любой персонаж, не имеющий права участвовать в [Concept( 'contest', 'состязании' )|E], становится [Concept( 'spectator', 'зрителем' )|E].\n\nПотенциальные [contestants|El] также могут отказаться от участия в состязании."
-  
  game_concept_progress_to_victory:0 "Прогресс победы"
  game_concept_progress_to_victory_desc:0 "Абстрактное представление ваших шансов на победу в данном [Concept( 'contest', 'состязании' )|E] относительно других участников, исходя из ваших [Concept( 'skills', 'навыков' )|E], [Concept( 'health', 'здоровья' )|E] и [Concept( 'traits', 'свойств' )|E]. Например, персонаж со свойством «[GetTrait('giant').GetName( GetNullCharacter )]» и большой [Concept( 'prowess', 'доблестью' )|El] обладает преимуществом в пеших состязаниях, вроде борьбы.\n\nДля [Concept( 'contest_qualification', 'прохождения отбора' )|E] на участие в [Concept( 'contest', 'состязании' )|E] необходим минимальный прогресс победы. Посещайте различные [Concept( 'locales', 'места' )|E], чтобы повысить свои шансы и получить возможность навредить соперникам.\n\nВ #V таблице лидеров#! турнира указан прогресс победы всех участников."
  game_concept_progress_to_victory_locale_tt:0 "Посещайте различные [Concept( 'locales', 'места' )|E], чтобы повысить свои шансы и получить возможность навредить соперникам."
-  
  game_concept_contest_aptitude:0 "Состязательные способности"
- game_concept_contest_aptitude_desc:0 "Разные [contests|El] требуют от участников разных талантов:0 умений спешенного боя, верховой езды, стрельбы из лука, ловкости ума или комбинации всего вышеперечисленного.\n\nВаши способности определяются, исходя из ваших [Concept( 'skills', 'навыков' )|E], [Concept( 'health', 'здоровья' )|E], [Concept( 'traits', 'свойств' )|E] и [Concept( 'trait_level_track_xp', 'пути развития свойства' )|E] «[GetTrait('tourney_participant').GetName( GetNullCharacter )]».\n\nНапример, персонаж со свойством «[GetTrait('giant').GetName( GetNullCharacter )]» и высокой [Concept( 'prowess', 'доблестью' )|E] обладает природным преимуществом в состязаниях по борьбе."
-  
+ game_concept_contest_aptitude_desc:0 "Разные [contests|El] требуют от участников разных талантов: умений спешенного боя, верховой езды, стрельбы из лука, ловкости ума или комбинации всего вышеперечисленного.\n\nВаши способности определяются, исходя из ваших [Concept( 'skills', 'навыков' )|E], [Concept( 'health', 'здоровья' )|E], [Concept( 'traits', 'свойств' )|E] и [Concept( 'trait_level_track_xp', 'пути развития свойства' )|E] «[GetTrait('tourney_participant').GetName( GetNullCharacter )]».\n\nНапример, персонаж со свойством «[GetTrait('giant').GetName( GetNullCharacter )]» и высокой [Concept( 'prowess', 'доблестью' )|E] обладает природным преимуществом в состязаниях по борьбе."
  game_concept_locale:0 "Места"
  game_concept_locales:0 "Места"
  game_concept_locale_desc:0 "[GetActivityType( 'activity_tournament').GetName] уже собирается, но [contests|El] еще не начались. Значит, пока что можно погулять по месту проведения мероприятия.\n\nВ каждом из мест у вас будет возможность пообщаться с гостями, повысить [progress_to_victory|El] и навредить [Concept( 'contestants', 'соперникам' )|E].\n\nЕсли вы не знаете, куда отправиться, место будет выбрано случайно."
-  
  game_concept_travel:0 "Путешествие"
  game_concept_travels:0 "Путешествия"
  game_concept_traveling:0 "Путешествия"
@@ -2031,10 +1921,8 @@
  game_concept_travel_speed_desc:0 "Высокая скорость в [Concept( 'traveling', 'пути' )|E] поможет вам быстрее добраться до места назначения. Ваша скорость зависит от ваших [Concept( 'skills', 'навыков' )|E], а также от навыков вашего [GetCourtPositionType('travel_leader_court_position').GetName()]."
  game_concept_entourage:0 "Свита"
  game_concept_entourage_desc:0 "Путешествовать в одиночку опасно, поэтому соберите свою свиту и отправляйтесь в путь. Все, кто [Concept( 'travels', 'путешествует' )|E] вместе с вами, будут считаться частью свиты и разделят с вами тяготы пути.\n\nВаш [GetCourtPositionType('travel_leader_court_position').GetName()] будет руководить свитой и составлять план путешествия.\n\nКогда вы планируете путешествие, некоторые [Concept( 'characters', 'персонажи' )|E] сразу же собираются в путь вместе с вами. [Concept( 'travel_options', 'Варианты путешествия' )|E] и [Concept( 'activity_options', 'варианты занятий' )|E] позволят добавить в свиту новых персонажей."
-  
  game_concept_point_of_interest:0 "Точка интереса"
  game_concept_point_of_interest_desc:0 "Точка интереса — это место в мире, которое стоит посетить. При первом визите туда вы получите определенные бонусы, связанные с местом."
-  
  game_concept_vassal_stance:0 "Взгляды вассала"
  game_concept_vassal_stances:0 "Взгляды вассалов"
  game_concept_preferred_heir:0 "Предпочтительный наследник"
@@ -2042,7 +1930,6 @@
  game_concept_preferred_heirs:0 "Предпочтительные наследники"
  game_concept_unpreferred_heirs:0 "Нежелательные наследники"
  game_concept_vassal_stance_desc:0 "Каждый [vassal|El] придерживается определенных взглядов, которые влияют на его [opinion|El] о вас как [Concept( 'liege', 'сюзерене' )|E] и на предпочтения относительно [Concept( 'heir', 'наследника' )|E] [Concept( 'realm', 'державы' )|E].\n\nВассалам с одинаковыми взглядами будет нравиться и не нравиться одно и то же. Например, если вассал [GetVassalStance( 'glory_hound' ).GetTextIcon][GetVassalStance( 'glory_hound' ).GetName], ему не понравится поражение в [Concept( 'wars', 'войне' )|E].\n\nВассалы с одинаковыми взглядами предпочитают одного конкретного наследника. При наследовании предпочтительные наследники получат бонус к мнению. Если [primary_heir|El] не предпочтительный, он получит штраф к мнению.\n\n#low Существуют следующие взгляды:#!\n$EFFECT_LIST_BULLET$[GetVassalStance( 'courtly' ).GetTextIcon][GetVassalStance( 'courtly' ).GetName]\n$EFFECT_LIST_BULLET$[GetVassalStance( 'parochial' ).GetTextIcon][GetVassalStance( 'parochial' ).GetName]\n$EFFECT_LIST_BULLET$[GetVassalStance( 'glory_hound' ).GetTextIcon][GetVassalStance( 'glory_hound' ).GetName]\n$EFFECT_LIST_BULLET$[GetVassalStance( 'zealot' ).GetTextIcon][GetVassalStance( 'zealot' ).GetName]\n$EFFECT_LIST_BULLET$[GetVassalStance( 'minority' ).GetTextIcon][GetVassalStance( 'minority' ).GetName]\n$EFFECT_LIST_BULLET$[GetVassalStance( 'barons_and_minor_landholders' ).GetTextIcon][GetVassalStance( 'barons_and_minor_landholders' ).GetName]"
-  
  game_concept_personality_i:0 "@personality_icon!"
  game_concept_warlike_i:0 "@warlike_icon!"
  game_concept_unpredictable_i:0 "@unpredictable_icon!"
@@ -2056,28 +1943,23 @@
  game_concept_ai_economical_boom_personality_desc:0 "Строитель хочет вкладывать [gold|El] в [Concept( 'realm', 'державу' )|E]. Такой правитель опустошит свою сокровищницу ради постройки [Concept( 'buildings', 'зданий' )|E] и найма [Concept( 'men_at_arms', 'профессиональной армии' )|E], часто отдавая предпочтение [Concept( 'economic_buildings', 'экономическим постройкам' )|E] и [Concept( 'holdings', 'владениям' )|E]. Он будет копить золото только при непосредственной угрозе, например, со стороны сильной [Concept( 'faction', 'фракции' )|E].\n\nСтроителями часто становятся храбрые правители, склонные к строительству и не особо заинтересованные в войне.\nУ них часто встречаются свойства «[GetTrait('calm').GetName( GetNullCharacter )]», «[GetTrait('patient').GetName( GetNullCharacter )]», «[GetTrait('diligent').GetName( GetNullCharacter )]», «[GetTrait('generous').GetName( GetNullCharacter )]», «[GetTrait('stubborn').GetName( GetNullCharacter )]», «[GetTrait('profligate').GetName( GetNullCharacter )]» и «[GetTrait('improvident').GetName( GetNullCharacter )]». Правители с фокусом «[GetFocus('stewardship_domain_focus').GetName]» также зачастую становятся строителями."
  game_concept_ai_economical_unpredictable_personality:0 "Непредсказуемый"
  game_concept_ai_economical_unpredictable_personality_desc:0 "$game_concept_ai_economical_unpredictable_personality$ [ruler|El] не имеет [Concept( 'traits', 'свойств' )|E], подталкивающих его к определенному экономическому архетипу, и может выбирать любую стратегию.\n\nТакой правитель может какое-то время активно вкладываться в [Concept( 'buildings', 'здания' )|E], как [ai_economical_boom_personality|El], или медленно развивать [Concept( 'realm', 'державу' )|E], накапливая запасы [Concept( 'gold', 'золото' )|E]. [Concept( 'war', 'Войны' )|E] ведутся в обычном темпе."
-  
  game_concept_trait_level_track:0 "Направление свойства"
  game_concept_trait_level_track_desc:0 "Некоторые [traits|El] можно развивать в разных направлениях.\n\nДля развития свойства в том или ином направлении необходимо зарабатывать [trait_level_track_xp|El]."
  game_concept_trait_level_track_xp:0 "Опыт свойства"
  game_concept_trait_level_track_xp_desc:0 "Опыт, необходимый для развития того или иного [Concept( 'trait', 'свойства' )|E] в выбранном [Concept( 'trait_level_track', 'направлении' )|El] и получения соответствующих бонусов. "
-  
  game_concept_hunt_sighting:0 "Обнаружение дичи"
  game_concept_hunt_sightings:0 "Случаи обнаружения дичи"
  game_concept_hunt_sighting_no_prefix:0 "Обнаружение"
  game_concept_hunt_sightings_no_prefix:0 "Случаи обнаружения"
  game_concept_hunt_sighting_desc:0 "$game_concept_hunt_sighting$ — это сообщение об обнаружении в том или ином [Concept( 'county', 'графстве' )|E] некоего ценного зверя, на которого может быть устроена [GetActivityType('activity_hunt').GetName|l].\n\nЗа обнаружение дичи отвечает [Concept( 'court_position', 'придворный' )|E] [GetCourtPositionType('master_of_hunt_court_position').GetName()|l]."
-  
-  
  game_concept_stationed_regiment:0 "Размещенный полк"
- game_concept_stationed_regiment_desc:0 "Если разместить [regiment|El] [Concept( 'men_at_arms', 'профессиональных солдат' )|El] во [Concept( 'holding', 'владении' )|El], он получит бонусы к эффективности.\n\nУсилить эти бонусы могут [buildings|El]:0 иногда они действуют для всех типов профессиональных солдат, но чаще для одного-двух. Так, [GetBuilding('stables_01').GetName] дают бонус расположенным во владении [Concept( 'light_cavalry', 'легкой кавалерии' )|E] и [Concept( 'heavy_cavalry', 'тяжелым всадникам' )|E].\n\nРазмещать [Concept( 'men_at_arms', 'профессиональных солдат' )|El] можно в любое время, кроме случаев войны или [Concept( 'occupied', 'захвата' )|El] владения врагом. Если владение будет потеряно, все размещенные в нем профессиональные полки потеряют свой размещенный статус."
+ game_concept_stationed_regiment_desc:0 "Если разместить [regiment|El] [Concept( 'men_at_arms', 'профессиональных солдат' )|El] во [Concept( 'holding', 'владении' )|El], он получит бонусы к эффективности.\n\nУсилить эти бонусы могут [buildings|El]: иногда они действуют для всех типов профессиональных солдат, но чаще для одного-двух. Так, [GetBuilding('stables_01').GetName] дают бонус расположенным во владении [Concept( 'light_cavalry', 'легкой кавалерии' )|E] и [Concept( 'heavy_cavalry', 'тяжелым всадникам' )|E].\n\nРазмещать [Concept( 'men_at_arms', 'профессиональных солдат' )|El] можно в любое время, кроме случаев войны или [Concept( 'occupied', 'захвата' )|El] владения врагом. Если владение будет потеряно, все размещенные в нем профессиональные полки потеряют свой размещенный статус."
  game_concept_stationed:0 "Размещен"
  game_concept_station:0 "Разместить"
  game_concept_station_regiment:0 "Разместить полк"
  game_concept_stationed_holding:0 "Владение с полком"
-  
  game_concept_tour:0 "Тур"
- game_concept_tour_desc:0 "[Concept( 'grand_activity', 'Грандиозное занятие' )|E], в рамках которого [liege|El] устраивает поездку по землям своих [Concept( 'vassals', 'вассалов' )|E] и получает от них выгоды:0 собирает с них [gold|El], внушает им [dread|El], повышает их [opinion|El] о себе, укрепляет [control|El] или культивирует [cultural_acceptance|El]."
+ game_concept_tour_desc:0 "[Concept( 'grand_activity', 'Грандиозное занятие' )|E], в рамках которого [liege|El] устраивает поездку по землям своих [Concept( 'vassals', 'вассалов' )|E] и получает от них выгоды: собирает с них [gold|El], внушает им [dread|El], повышает их [opinion|El] о себе, укрепляет [control|El] или культивирует [cultural_acceptance|El]."
  game_concept_tours:0 "Туры"
  game_concept_royal_tour:0 "Монарший тур"
  game_concept_royal_tours:0 "Монаршие туры"
@@ -2114,64 +1996,69 @@
  game_concept_intimidation_tour_desc:0 "[Concept( 'tour_type', 'Тип тура' )|E], в котором вы пытаетесь запугать своих [Concept( 'vassals', 'вассалов' )|E], нагнать на них [dread|El] и заставить их выйти из [Concept( 'factions', 'фракций' )|E]."
  game_concept_taxation_tour:0 "Тур за налогами"
  game_concept_taxation_tour_desc:0 "[Concept( 'tour_type', 'Тип тура' )|E], в котором вы пытаетесь заставить своих [Concept( 'vassals', 'вассалов' )|E] поделиться с вами богатством и собрать с них побольше [Concept( 'gold', 'золота' )|E]."
-  
  game_concept_accolade:0 "Акколада"
  game_concept_accolades:0 "Акколады"
  game_concept_accolade_desc:0 "Акколада — это почетная церемония, в которой участвуют [Concept( 'knights', 'рыцари' )|E] и их [Concept( 'liege', 'сюзерен' )|E].\n\nРыцарь, в честь которого проводится акколада, становится [Concept( 'acclaimed_knight', 'именитым рыцарем' )|E].\n\nКогда именитый рыцарь стяжает [Concept( 'glory', 'славу' )|E], [Concept( 'accolade_rank', 'ранг' )|E] его [Concept( 'accolade_types', 'типа акколады' )|E] увеличивается, что приносит сюзерену рыцаря дополнительные преимущества.\n\nКогда именитый рыцарь умирает, его заменяет [Concept( 'accolade_succession', 'наследник' )|E].\n\n[Concept( 'innovations', 'Инновации' )|E] и более высокий [Concept( 'title_tiers', 'ранг' )|E] позволяют [Concept( 'rulers', 'правителям' )|E] одновременно иметь больше акколад."
-  
  game_concept_acclaimed_knight:0 "Именитый рыцарь"
  game_concept_acclaimed_knights:0 "Именитые рыцари"
  game_concept_acclaimed_knight_desc:0 "[Concept( 'knight', 'Рыцарь' )|E], прошедший [Concept( 'accolade', 'акколаду' )|E].\n\nЧтобы стать именитым рыцарем, рыцарь должен быть [Concept( 'unlanded', 'безземельным' )|E] или [Concept( 'baron', 'бароном' )|E], а его [Concept( 'prowess', 'доблесть' )|E] должна быть не меньше [EmptyScope.ScriptValue('accolade_prowess_requirement_value')|0V].\n\nИменитый рыцарь должен отвечать требованиям двух [Concept( 'accolade_types', 'атрибутов акколады' )|E], ни одна из которых не может принадлежать другому именитому рыцарю этого же [Concept( 'liege', 'сюзерена' )|E]."
-  
  game_concept_accolade_type:0 "Атрибут акколады"
  game_concept_accolade_types:0 "Атрибуты акколады"
  game_concept_accolade_type_desc:0 "[Concept( 'accolade', 'Акколада' )|E] имеет основной и второстепенный атрибуты, которые с ростом [Concept( 'accolade_rank', 'ранга акколады' )|E] обеспечивают различные преимущества.\n\nВсе потенциальные [Concept( 'acclaimed_knight', 'именитые рыцари' )|E] могут быть связаны лишь с определенными атрибутами, что определяется в большинстве своем их личными [Concept( 'traits', 'свойствами' )|E]. В случае [Concept( 'accolade_succession', 'наследования акколады' )|E] новый рыцарь должен отвечать требованиями основного атрибута, при этом можно изменить второстепенный атрибут, потратив для этого [Concept( 'glory', 'славу' )|E]. Кроме того, если атрибут открывает доступ к определенной [Concept( 'retinue_maa', 'свите из профессионалов' )|E], воспользоваться ей можно будет лишь в том случае, когда этот атрибут является основным. \n\nУ каждой акколады должно быть два уникальных атрибута. Сюзерен #high не может#! дважды использовать один атрибут."
-  
  game_concept_accolade_succession:0 "Наследование акколады"
  game_concept_accolade_succession_desc:0 "Наследование акколады происходит, когда [Concept( 'acclaimed_knight', 'именитый рыцарь' )|E], прошедший церемонию [Concept( 'accolade', 'акколады' )|E], погибает или не может более исполнять свой рыцарский долг.\n\nТогда на смену именитому рыцарю приходит его наследник, который должен соответствовать основному [Concept( 'accolade_type', 'типу акколады' )|E]. Второстепенный атрибут можно изменить за счет [Concept( 'glory', 'славы' )|E].\n\nЕсли при дворе нет достойного преемника, можно воспользоваться решением #high $call_for_acclaimed_knight_candidates_decision$#! для поиска подходящих кандидатов."
-  
  game_concept_accolade_rank:0 "Ранг акколады"
  game_concept_accolade_ranks:0 "Ранги акколады"
  game_concept_accolade_rank_short:0 "Ранг"
  game_concept_accolade_rank_desc:0 "У [Concept( 'accolade', 'акколады' )|E] есть #value 6#! последовательных рангов, каждый из которых обеспечивает соответствующие [Concept( 'accolade_types', 'типу акколады' )|E] преимущества, например [knight_army_modifiers|E].\n\nЧтобы получить доступ к новому рангу, требуется [glory|E], причем при потере очков славы также будет потерян и ранг акколады.\n\nГлавные атрибуты акколады открываются при достижении нечетных рангов, а дополнительные — при достижении четных."
-  
  game_concept_inactive_accolade:0 "Недействительная акколада"
  game_concept_inactive_accolade_desc:0 "[Concept( 'accolade', 'Акколады' )|E], утратившие силу, становятся неактивными.\n\nЭто происходит в следующих ситуациях:\n$EFFECT_LIST_BULLET$The [Concept( 'acclaimed_knight', 'Именитый рыцарь' )|E] или [Concept( 'ruler', 'правитель' )|E] рыцаря более не соответствуют требованиям [Concept( 'accolade_type', 'типа акколады' )|E]\n$EFFECT_LIST_BULLET$Именитый рыцарь погибает или покидает [Concept( 'court', 'двор' )|E] правителя, не оставив наследника\n$EFFECT_LIST_BULLET$[Concept( 'ruler', 'Правитель' )|E] лично отменяет акколаду"
-  
  game_concept_glory:0 "Слава"
- game_concept_glory_desc:0 "Уровень славы [Concept( 'accolade', 'акколады' )|E] увеличивает её [Concept( 'accolade_rank', 'ранг' )|E].\n\n[Concept( 'acclaimed_knight', 'Именитый рыцарь' )|E] может покрыть свое имя славой, побеждая в [Concept( 'battles', 'битвах' )|E], поражая воинов, участвуя в [GetActivityType( 'activity_tournament' ).GetName] [Concept( 'contests', 'состязаниях' )|E] и посещая [Concept( 'activities', 'занятия' )|E].\n\nКроме того, именитый рыцарь может снизить уровень славы акколады, если потерпит поражение в битве или при [Concept( 'accolade_succession', 'наследовании акколады' )|e], а также если акколада станет [Concept( 'inactive_accolade', 'неактивной' )|E]."
-  
+ game_concept_glory_desc:0 "Уровень славы [Concept( 'accolade', 'акколады' )|E] увеличивает её [Concept( 'accolade_rank', 'ранг' )|E].\n\n[Concept( 'acclaimed_knight', 'Именитый рыцарь' )|E] может покрыть свое имя славой, побеждая в [Concept( 'battles', 'битвах' )|E], поражая воинов, участвуя в [GetActivityType( 'activity_tournament' ).GetName] [Concept( 'contests', 'состязаниях' )|E] и посещая [Concept( 'activities', 'занятия' )|E].\n\nКроме того, именитый рыцарь может снизить уровень славы акколады, если потерпит поражение в битве или при [Concept( 'accolade_succession', 'наследовании акколады' )|E], а также если акколада станет [Concept( 'inactive_accolade', 'неактивной' )|E]."
+ game_concept_tax_collector:0 "Сборщик налогов"
+ game_concept_tax_collector_desc:0 "Сборщик налогов позволяет использовать [Concept( 'tax_jurisdictions', 'налоговые юрисдикции' )|E].\n\nЕго [Concept( 'aptitude', 'пригодность' )|E] определяет количество [Concept( 'taxes', 'налогов' )|E] и [Concept( 'levies', 'ополчения' )|E], собираемых для [Concept( 'liege', 'сюзерена' )|E]."
+ game_concept_tax_collectors:0 "Сборщики налогов"
+ game_concept_tax_decree:0 "Налоговый указ"
+ game_concept_tax_decree_desc:0 "Каждой [Concept( 'tax_jurisdiction', 'налоговой юрисдикции' )|E] доступно несколько указов, которые изменяют количество [Concept( 'taxes', 'налогов' )|E] и [Concept( 'levies', 'ополчения' )|E], предоставляемое [Concept( 'taxpayers', 'налогоплательщиками' )|E].\n\nВ большинстве случаев налоговые указы изменяют [Concept( 'obligations', 'обязательства' )|E], взамен накладывая штраф или бонус."
+ game_concept_tax_decrees:0 "Налоговые указы"
+ game_concept_tax_jurisdiction:0 "Налоговая юрисдикция"
+ game_concept_tax_jurisdictions:0 "Налоговые юрисдикции"
+ game_concept_tax_jurisdiction_desc:0 "Налоговая юрисдикция включает в себя группу [Concept( 'taxpayers', 'налогоплательщиков' )|E] из числа [Concept( 'clan', 'клановых' )|E] [Concept('vassals', 'вассалов' )|E]. Каждая юрисдикция поддерживает до #V 12#! налогоплательщиков.\n\nДля любой из юрисдикций можно издать [Concept( 'tax_decree', 'налоговый указ' )|E].\n\nКоличество доступных налоговых юрисдикций зависит от [Concept( 'rank', 'ранга' )|E], [Concept( 'traditions', 'традиций' )|E] и [Concept( 'innovations', 'инноваций' )|E].\n\nК каждой юрисдикции необходимо приписать [Concept( 'tax_collector', 'сборщика налогов' )|E]."
+ game_concept_untaxed_jurisdiction:0 "Не облагаемая налогами юрисдикция"
+ game_concept_untaxed_jurisdictions:0 "Не облагаемые налогами юрисдикции"
+ game_concept_untaxed_jurisdiction_short:0 "Без налогов"
+ game_concept_untaxed_jurisdiction_desc:0 "Юрисдикцией без налогов считается [Concept( 'tax_jurisdiction', 'налоговая юрисдикция' )|E], не имеющая [Concept( 'tax_collector', 'сборщика налогов' )|E]. Это означает, что приписанные к ней [Concept( 'taxpayers', 'налогоплательщики' )|E] не платят [Concept( 'taxes', 'налоги' )|E] и не предоставляют [Concept( 'levies', 'ополчение' )|E] [Concept( 'liege', 'сюзерену' )|E]."
+ game_concept_taxpayer:0 "Налогоплательщик"
+ game_concept_taxpayers:0 "Налогоплательщики"
+ game_concept_taxpayer_desc:0 "Налогоплательщики — это [Concept( 'clan', 'клановые' )|E] [Concept('vassals', 'вассалы' )|E], приписанные к [Concept( 'tax_jurisdiction', 'налоговой юрисдикции' )|E]. Они будут предоставлять ежемесячный доход от [Concept( 'tax', 'налогов' )|E] и [Concept( 'levies', 'ополчение' )|E] при условии, что вы назначили [Concept( 'tax_collector', 'сборщика налогов' )|E]."
+ game_concept_taxpayer_i:0 "@tax_collector_icon!"
+ game_concept_unassigned_vassal:0 "Вассал без налогов"
+ game_concept_unassigned_vassals:0 "Вассалы без налогов"
+ game_concept_unassigned_vassal_short:0 "Без налогов"
+ game_concept_unassigned_vassal_desc:0 "Вассалами без налогов называются [Concept( 'clan', 'клановые' )|E] [Concept('vassals', 'вассалы' )|E], не приписанные к [Concept( 'tax_jurisdiction', 'налоговой юрисдикции' )|E] в качестве [Concept( 'taxpayers', 'налогоплательщиков' )|E], а потому не передающие сюзерену [Concept( 'taxes', 'налоги' )|E] и [Concept( 'levies', 'ополчение' )|E].\n\nОни начнут делать ежемесячные выплаты, если приписать их в юрисдикции со [Concept( 'tax_collector', 'сборщиком налогов' )|E]."
  game_concept_retinue_maa:0 "Свита профессионалов"
  game_concept_retinue_maa_desc:0 "Некоторые [Concept( 'accolade_types', 'типы акколад' )|E] позволяют нанять [Concept( 'men_at_arms', 'профессионалов' )|E]. Такая возможность появляется, когда [Concept( 'acclaimed_knight', 'именитый рыцарь' )|E] достигает определенного прогресса в [Concept( 'trait_level_track', 'направлении свойства' )|E] «[GetTrait('tourney_participant').GetName( GetNullCharacter )]» соответствующем [Concept( 'commander_trait', 'свойстве командира' )|E].\n\n$game_concept_men_at_arms|U$ в свите ограничены одним [Concept( 'regiment', 'полком' )|E], их количество не может превышать определенное значение. Они в два раза эффективнее других [Concept( 'men_at_arms', 'профессионалов' )|E] и становятся всё лучше с каждой эпохой."
-  
  game_concept_knight_army_modifier:0 "Модификатор армии рыцаря"
  game_concept_knight_army_modifiers:0 "Модификаторы армии рыцаря"
  game_concept_knight_army_modifier_desc:0 "Этот эффект применяется к любой [Concept( 'army', 'армии' )|E], в которой #high есть#! подходящий [acclaimed_knight|E].\n\nЧтобы данный эффект вступил в силу, [knight|E] #high не должен#! [Concept( 'commander', 'командовать' )|E] своей армией."
-  
  game_concept_piety_level_impact:0 "Влияние уровня набожности"
  game_concept_piety_level_impact_desc:0 "Влияние уровня набожности проявляется в увеличении или снижении [Concept( 'modifiers', 'модификаторов' )|E], связанных с текущим [Concept( 'piety_level', 'уровнем набожности' )|E]."
-  
  game_concept_prestige_level_impact:0 "Влияние уровня репутации"
  game_concept_prestige_level_impact_desc:0 "Влияние уровня репутации проявляется в увеличении или снижении [Concept( 'modifiers', 'модификаторов' )|E], связанных с текущим [Concept( 'prestige_level', 'уровнем репутации' )|E]."
-  
  game_concept_hostage:0 "Заложник"
  game_concept_hostages:0 "Заложники"
  game_concept_hostages_possessive:0 "Заложника"
- game_concept_hostage_desc:0 "$game_concept_hostage$ — это [prisoner|El], захваченный во время [Concept( 'war', 'войны' )|E], который повышает [war_score|El].\n\nДостойным заложником может быть только наследник первого титула военного лидера, чье место в очереди наследование не ниже третьего.\n\nВ отличие от [Concept( 'prisoners_of_war', 'военнопленных' )|E], заложников отпускают по окончании войны."
-  
+ game_concept_hostage_desc:0 "[Concept( 'close_family_member', 'Близкий родственник' )|E] [Concept( 'ruler', 'правителя' )|E], отправленный прочь с [Concept( 'home_court', 'родного двора' )|E] в качестве гарантии мира или покорности.\n\nРепутация правителя, объявившего [Concept( 'war', 'войну' )|E] несмотря на отправленного или полученного заложника, серьезно пострадает, и принимающая сторона может безнаказанно казнить заложников своих врагов.\n\nЗаложники, с которыми хорошо обращаются, вполне могут стать лояльными к принимающей стороне, попасть на [Concept( 'hook', 'крючок' )|E] или и вовсе [Concept( 'friends', 'подружиться' )|E].\n\nЗаложниками могут быть только безземельные дети, братья, сестры, племянники, племянницы или внуки правителя.\n\nВ зависимости от личности, мнения и количества лет при дворе, принимающая сторона может получить [perpetual_hook|El] на заложника, когда тот повзрослеет.."
  game_concept_home_court:0 "Родной двор"
  game_concept_home_courts:0 "Родные дворы"
  game_concept_home_courts_possessive:0 "Родного двора"
  game_concept_home_court_desc:0 "[ruler|E], являющийся [Concept( 'close_family_member', 'близким родственником' )|E] [Concept( 'hostage', 'заложника' )|E] и отправивший его [Concept( 'warden', 'принимающей стороне' )|E] как гарантию мира или покорности."
-  
  game_concept_warden:0 "Принимающая сторона"
  game_concept_wardens:0 "Принимающая сторона"
  game_concept_wardens_possessive:0 "Принимающей стороны"
  game_concept_warden_desc:0 "[ruler|E], которому прислали [Concept( 'hostage', 'заложника' )|E] с иноземного [Concept( 'home_court', 'двора' )|E] как гарантию мира или покорности.\n\n[warden|E] будет постепенно получать [prestige_i|E][prestige|El] за каждого [Concept( 'hostage', 'заложника' )|E] при [Concept( 'court', 'дворе' )|E]."
-  
  game_concept_goliardic_shenanigans:0 "Вагантские проделки"
  game_concept_goliardic_shenanigans_desc:0 "Персонаж в занятии «[GetActivityType('activity_adult_education').GetName]» может заниматься самыми разными проделками, окунувшись в студенческую жизнь. Последствия таких приключений непредсказуемы и включают в себя получение очков [Concept( 'skill', 'навыков' )|E], [Concept( 'traits', 'свойств' )|E], связанных с образом жизни и стрессом, опыта образа жизни, болезней и ранений."
-  
  game_concept_adoption:0 "Усыновление"
  game_concept_adopt:0 "Усыновить"
  game_concept_adopts:0 "Усыновляет"
