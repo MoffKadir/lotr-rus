@@ -22,9 +22,9 @@
  wage_war_disallowed_short:0 "Запрещен"
  scutage:0 "Щитовые деньги"
  scutage_enabled_short:0 "Вкл."
- scutage_enabled:0 "$scutage$:0 $scutage_enabled_short$"
+ scutage_enabled:0 "$scutage$: $scutage_enabled_short$"
  scutage_disabled_short:0 "Выкл."
- scutage_disabled:0 "$scutage$:0 $scutage_enabled_short$"
+ scutage_disabled:0 "$scutage$: $scutage_enabled_short$"
  scutage_levies_overwrite_postfix:0 " #weak (перезаписать)#!"
  feudal_government_taxes:0 "[GetGovernment( 'feudal_government' ).GetAdjectiveNoTooltip]ые [taxes|l]"
  feudal_tax_exempt:0 "[Concept( 'tax', 'Налоговые' )] льготы"
@@ -48,7 +48,7 @@
  feudal_levies_high_short:0 "Большое"
  feudal_levies_extortionate:0 "Огромное [Concept( 'levy', 'ополчение' )]"
  feudal_levies_extortionate_short:0 "Огромное"
-  
+
  special_contract:0 "#color_black [Concept( 'feudal_contract', 'Особый договор' )|BU]#!"
  special_contract_none:0 "Нет особого договора"
  special_contract_scutage:0 "Договор о щитовых деньгах"
@@ -61,42 +61,42 @@
  special_contract_scutage_short:0 "Щитовые деньги"
  special_contract_march_short:0 "Марка"
  special_contract_palatinate_short:0 "Пфальцграфство"
-  
+
  religious_rights:0 "Свобода веры"
  religious_rights_none:0 "Религиозная беззащитность"
  religious_rights_none_short:0 "Нет"
  religious_rights_protected:0 "Религиозная защита"
  religious_rights_protected_desc:0 "#emphasis #bold Привилегии [Concept( 'vassal', 'вассала' )|E]:#!#!\n[liege|E] не может [Concept( 'demand_conversion', 'требовать обращения' )|E] [Concept( 'vassal', 'вассала' )|E]\n[liege|E] не может [Concept( 'convert_county', 'обращать графства' )|E] в землях [Concept( 'vassal', 'вассала' )|E]\n[liege|E] не может использовать различия в [Concept( 'faith', 'конфессии' )|E], чтобы избежать получения [Concept( 'tyranny', 'тирании' )|E] при отъеме титулов\n\n#flavor [vassal|E] получает особую защиту, а держава официально признает его право на свободу [Concept( 'faith', 'вероисповедания' )|E].#!"
  religious_rights_protected_short:0 "Обеспечена"
-  
+
  fortification_rights:0 "Право на укрепления"
  fortification_rights_none:0 "$fortification_rights$ отсутствует"
  fortification_rights_none_short:0 "Нет"
  fortification_rights_granted:0 "Получено $fortification_rights$"
  fortification_rights_granted_desc:0 "#flavor [vassal] получает право на постройку новых замков и укреплений при поддержке [Concept( 'liege', 'сюзерена' )|E]. На практике эта поддержка означает, что $feudal_government_taxes$ вассала снижаются на #high [EmptyScope.ScriptValue('fortification_rights_contract_taxes_tooltip')|0]%#!.#!"
  fortification_rights_granted_short:0 "Даровано"
-  
+
  succession_rights:0 "Право наследования"
  succession_rights_default:0 "$succession_rights$ по умолчанию"
  succession_rights_default_short:0 "По умолчанию"
  succession_rights_forced_partition:0 "Только раздел"
- succession_rights_forced_partition_desc:0 "#emphasis #bold Ограничения [Concept( 'vassal', 'вассала' )|El]:#!#!\n[vassal|E] имеет только одно право на наследование — «Разделение»\n[vassal|E] меняет [succession_law|El] на «Разделение»\n[vassal|E] платит на #high [EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0]%#! больше [Concept( 'prestige', 'престижа' )|El] за смену [Concept( 'laws', 'законов' )|El]\n\n#flavor Вассалу запрещается применять в своей [Concept( 'realm', 'державе' )|El] любые формы наследования, кроме разделения. В качестве административной меры стоимость законов для вассалов повышается на #high [EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0]%.#!#!"
+ succession_rights_forced_partition_desc:0 "#emphasis #bold Ограничения [Concept( 'vassal', 'вассала' )|E]:#!#!\n[vassal|E] имеет только одно право на наследование — «Разделение»\n[vassal|E] меняет [succession_law|E] на «Разделение»\n[vassal|E] платит на #high [EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0]%#! больше [Concept( 'prestige', 'престижа' )|E] за смену [Concept( 'laws', 'законов' )|E]\n\n#flavor Вассалу запрещается применять в своей [Concept( 'realm', 'державе' )|E] любые формы наследования, кроме разделения. В качестве административной меры стоимость законов для вассалов повышается на #high [EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0]%.#!#!"
  succession_rights_forced_partition_short:0 "Только раздел"
-  
+
  coinage_rights:0 "Право чеканки монет"
  coinage_rights_none:0 "$coinage_rights$ отсутствует"
  coinage_rights_none_short:0 "Нет"
  coinage_rights_granted:0 "Получено $coinage_rights$"
  coinage_rights_granted_desc:0 "#flavor [vassal] получает право чеканить и использовать новые монеты, ускоряя [development|El] за счет [Concept( 'liege', 'сюзерена' )|El].#!"
  coinage_rights_granted_short:0 "Передано в дар"
-  
+
  war_declaration_rights:0 "Объявление войны"
  war_declaration_rights_default:0 "$war_declaration_rights$ по умолчанию"
  war_declaration_rights_default_short:0 "По умолчанию"
  war_declaration_rights_allowed:0 "$war_declaration_rights$ разрешено"
  war_declaration_rights_allowed_desc:0 "#emphasis #bold Привилегии [Concept( 'vassal', 'вассала' )|El]:#!#!\n[vassal|E] может объявлять [Concept( 'war', 'войну' )|El] независимо от [Concept( 'crown_authority', 'авторитета' )|El] [Concept( 'liege', 'сюзерена' )|El] \nВ пределах [Concept( 'realms', 'державы' )|El] стоимость [casus_bellis|El] для вассала снижается на #high [EmptyScope.ScriptValue('war_declaration_rights_allowed_cost_reduction_tooltip')|0]%#!\n\n#flavor Если [crown_authority|El] мешает вассалу развязать войну, он не обязан тратить [Concept( 'hook', 'влияние' )|El]. Благодаря этому вассалу проще развязать войну в пределах державы — стоимость снижается на #high [EmptyScope.ScriptValue('war_declaration_rights_allowed_cost_reduction_tooltip')|0]%#!.#!"
  war_declaration_rights_allowed_short:0 "Разрешено"
-  
+
  council_rights:0 "Право советника"
  council_rights_none:0 "$council_rights$ отсутствует"
  council_rights_none_desc:0 "#flavor [vassal] не получает особенных прав в [Concept( 'council', 'совете' )|El].#!"
@@ -104,14 +104,14 @@
  council_rights_guaranteed:0 "Гарантированное $council_rights$"
  council_rights_guaranteed_desc:0 "#emphasis #bold Привилегии [Concept( 'vassal', 'вассала' )|E]:#!#!\nВзаимодействие #high $force_onto_council$#! можно использовать в любое время\n\n#flavor [vassal] получает особые привилегии в [Concept( 'council', 'совете' )|E] и уверен, что сохранит место навсегда. Если слишком много вассалов получают эту привилегию, [powerful_vassals] [Concept( 'realms', 'державы' )|E] будут недовольны.#!"
  council_rights_guaranteed_short:0 "Гарантированное"
-  
+
  title_revocation_rights:0 "Лишение титула"
  title_revocation_rights_default:0 "$title_revocation_rights$ по умолчанию"
  title_revocation_rights_default_short:0 "По умолчанию"
  title_revocation_rights_protected:0 "$title_revocation_rights$ невозможно"
  title_revocation_rights_protected_desc:0 "#emphasis #bold Привилегии [Concept( 'vassal', 'вассала' )|E]:#!#!\n[liege|E] не может лишить [vassals_possessive|El] [Concept( 'titles', 'титулов' )|El]\n\n#flavor Вассалу гарантируется неотъемлемое право на титулы, и [liege|El] не может отнять их, даже если у него есть [revoke_title_reason].#!"
  title_revocation_rights_protected_short:0 "Невозможно"
-  
+
  clan_government:0 "Клан"
  clan_government_adjective:0 "Кланов"
  clan_government_realm:0 "Клан"
@@ -122,7 +122,7 @@
  clan_government_levies_contribution_postfix:0 " (максимум — [FixedPointToProgressbarValue(EmptyScope.ScriptValue('clan_government_levies_max_possible'))|1V])"
  clan_government_unclamped_contribution_label:0 "В зависимости от [opinions|El] обо мне"
  clan_government_min_contribution_label:0 "Минимальный [crown_authority|El]"
-  
+
  republic_government:0 "Республика"
  republic_government_adjective:0 "Республиканск"
  republic_government_realm:0 "Республика"
@@ -130,18 +130,18 @@
  republic_government_vassals_label:0 "Все [vassals|El] имеют равные [obligations|El]"
  republic_government_obligations:0 "Республиканские [obligations|El]"
  republican_vassals_pay_more_parameter:0 "От [Concept( 'culture_traditions', 'культурных традиций' )|E] [Concept( 'liege', 'сюзерена' )|El]"
-  
+
  tribal_government:0 "Племя"
  tribal_government_adjective:0 "Племенн"
  tribal_government_realm:0 "Племя"
  tribal_government_desc:0 "$game_concept_tribal_desc$\n\n#F В племени все решает сила. Чтобы держава развивалась, а армия крепла, вождь должен быть не столько богатым, сколь известным и уважаемым.#!"
-  
+
  tribal_government_obligations:0 "За [prestige_level|El] [Concept( 'liege', 'сюзерена' )|El]"
  tribal_government_vassals_label:0 "Племенные [obligations|El] определяются [Concept( 'prestige_level', 'уровнем репутации' )|El] [Concept( 'liege', 'сюзерена' )|El]"
  tribal_liege_inefficiency_plus_perk:0 "[Concept( 'tribal', 'Племенные' )|E] [Concept( 'liege', 'сюзерены' )|El] обладают достоинством «[GetPerk( 'detailed_ledgers_perk' ).GetName( GetPlayer )]»"
  tribal_liege_inefficiency:0 "[Concept( 'tribal', 'Племенной' )|E] [Concept( 'liege', 'сюзерен' )|El]"
  has_detailed_ledgers_perk:0 "Достоинство [Concept( 'liege', 'сюзерена' )|E] — [GetPerk( 'detailed_ledgers_perk' ).GetName( GetPlayer )]"
-  
+
  theocracy_government:0 "Теократия"
  theocracy_government_adjective:0 "Теократическ"
  theocracy_government_realm:0 "Теократия"
@@ -150,21 +150,21 @@
  theocracy_government_obligations:0 "Теократические [obligations|El]"
  theocracy_government_vassal_contribution_wrong_faith:0 "@warning_icon!#X [liege|E] не принадлежит к нужной [faiths|El]#!."
  theocracy_government_vassal_contribution_piety_level:0 "Уровень набожности [Concept( 'liege', 'сюзерена' )|E] — [GetPietyLevelName(liege.GetPietyLevel)|L]"
-  
+
  holy_order_government:0 "Священный орден"
  holy_order_government_desc:0 "Воины орденов посвятили жизнь сражениям с неверными и служению своей вере. Они могут владеть замками, которые жалуют им благочестивые землевладельцы. Из членов ордена выбирается его глава."
  holy_order_government_adjective:0 "Священноорденск"
  holy_order_government_realm:0 "Священный орден"
-  
+
  mercenary_government:0 "Отряд наемников"
  mercenary_government_realm:0 "Отряд наемников"
  mercenary_government_desc:0 "Отряды наемников рыщут по всей земле в поисках нанимателя и сражаются за того, кто больше платит. Верность — залог хорошей репутации, но она заканчивается одновременно с контрактом. Предводитель наемников выбирается из числа членов отряда."
  mercenary_government_adjective:0 "Наемническ"
-  
+
  create_cadet_branches_trigger:0 "Создание [Concept( 'cadet_branch', 'младших линий' )|E]"
  create_cadet_branches_rule:0 "Создавать [Concept( 'cadet_branch', 'младшие линии' )|E]"
- GOVERNMENT_RULE_INFO:0 "— Разрешено $RULE|Vl$"
- GOVERNMENT_HOLDING_INFO:0 "— Можно включать [holding|El]:0 [HOLDING_TYPE.GetName|V]"
+ GOVERNMENT_RULE_INFO:0 "$EFFECT_LIST_BULLET$ Разрешено $RULE|V$"
+ GOVERNMENT_HOLDING_INFO:0 "$EFFECT_LIST_BULLET$ Можно включать [holding|El]: [HOLDING_TYPE.GetName|V]"
  GOVERNMENT_CLAN_NOT_ALLIED:0 "Не заключен [alliance|El] с клановым #E [vassal|l]ом#!"
  GOVERNMENT_CLAN_NOT_ALLIED_POWERFUL:0 "Нет [Concept( 'alliance', 'союза' )|E] с могущественным клановым [Concept( 'vassal', 'вассалом' )|E]"
  government_can_raid_rule:0 "[Concept( 'government', 'Форма правления' )|E] разрешает [Concept( 'raiding', 'совершать налеты' )|E] на чужеземные [counties|El] ради [Concept( 'raid_loot', 'добычи' )|E]"
@@ -175,37 +175,233 @@
  government_is_tribal:0 "Форма [Concept( 'government', 'правления' )|E] — [GetGovernment( 'tribal_government' ).GetName|l]"
  government_is_mercenary:0 "Форма [Concept( 'government', 'правления' )|E] — [GetGovernment( 'mercenary_government' ).GetName|l]"
  government_is_holy_order:0 "Форма [Concept( 'government', 'правления' )|E] — [GetGovernment( 'holy_order_government' ).GetName|l]"
-  
+ may_appoint_viziers:0 "Можно назначать [Concept( 'viziers', 'визирей' )|E]"
+
  SUPPLY_MULT_DIFERENT_GOVERNMENT:0 "[GOVERNMENT_TYPE.GetAdjective]ие земли"
-  
+
  CONTRACT_LIEGE_SIGNATURE:0 "Сюзерен,\n[VassalContract.GetLiege.GetTitledFirstNameNoTooltip]\nдома [VassalContract.GetLiege.GetHouse.GetBaseNameNoTooltip]"
  CONTRACT_VASSAL_SIGNATURE:0 "Вассал,\n[VassalContract.GetVassal.GetTitledFirstNameNoTooltip]\nдома [VassalContract.GetVassal.GetHouse.GetBaseNameNoTooltip]"
-  
-  
- jizya_special_rights:0 "Статус автономии"
- jizya_special_rights_default:0 "$jizya_special_rights$ по умолчанию"
- jizya_special_rights_default_short:0 "По умолчанию"
- jizya_special_rights_granted:0 "$jizya_special_rights$ навязан"
- jizya_special_rights_granted_desc:0 "#emphasis #bold Привилегии [Concept( 'vassal', 'вассала' )|E]:#!#!\n[liege|E] не может [Concept( 'demand_conversion', 'требовать обращения' )|E] [Concept( 'vassal', 'вассала' )|E]\n[liege|E] не может [Concept( 'convert_county', 'обращать графства' )|E] в землях [Concept( 'vassal', 'вассала' )|E]\n[liege|E] не может использовать различия в [Concept( 'faith', 'конфессии' )|E], чтобы избежать получения [Concept( 'tyranny', 'тирании' )|E] при отъеме титулов\n[liege|E] не может лишить [Concept( 'vassal', 'вассала' )|E] [Concept( 'titles', 'титулов' )|E]\n\n#flavor [Concept( 'vassal', 'Вассалу' )|E] гарантируется неотъемлемое право на титулы, и [Concept( 'liege', 'сюзерен' )|E] не может отнять их, даже если у него есть [revoke_title_reason|El].\n [vassal|E] получает особую защиту, а держава официально признает его право на свободу [Concept( 'faith', 'вероисповедания' )|E].#!"
- jizya_special_rights_granted_short:0 "Даровано"
-  
- iqta_special_rights:0 "Вспомогательный статус"
- iqta_special_rights_default:0 "$iqta_special_rights$ по умолчанию"
- iqta_special_rights_default_short:0 "По умолчанию"
- iqta_special_rights_granted:0 "Дарован $iqta_special_rights$"
- iqta_special_rights_granted_desc:0 "#flavor У [Concept( 'vassal', 'вассала' )|E] меньше обязательств, но он помогает содержать [Concept( 'men_at_arms', 'профессиональные полки' )|E] [Concept( 'liege', 'сюзерена' )|E].#!"
- iqta_special_rights_granted_short:0 "Даровано"
-  
- ghazi_special_rights:0 "Статус полководца"
- ghazi_special_rights_default:0 "$ghazi_special_rights$ по умолчанию"
- ghazi_special_rights_default_short:0 "По умолчанию"
- ghazi_special_rights_granted:0 "Дарован $ghazi_special_rights$"
- ghazi_special_rights_granted_desc:0 "#emphasis #bold Привилегии [Concept( 'vassal', 'вассала' )|E]:#!#!\n[vassal|E] тратит меньше [Concept( 'piety', 'благочестия' )|E] на [casus_bellis|El] «[holy_war|E]», но больше [prestige_i][Concept( 'prestige', 'престижа' )|E] на другие [casus_bellis|El] \n\n#flavor [liege|E] объявляет [Concept( 'vassal', 'вассала' )|E] защитником [Concept( 'faith', 'веры' )|E], которому вменяется расширять границы посредством [Concept( 'holy_war', 'священной войны' )|E].#!"
- ghazi_special_rights_granted_short:0 "Даровано"
-  
+
  marriage_favor_rights:0 "Брачное обязательство"
  marriage_favor_rights_default:0 "$marriage_favor_rights$ по умолчанию"
  marriage_favor_rights_default_short:0 "По умолчанию"
  marriage_favor_rights_granted:0 "Даровано $marriage_favor_rights$"
  marriage_favor_rights_granted_desc:0 "#emphasis #bold Привилегии [Concept( 'vassal', 'вассала' )|E]:#!#!\n[liege|E] обещает устроить брак одного из близких членов своей семьи раньше любого другого брака.\n\n#flavor [vassal|E] числится в любимчиках у [Concept( 'liege', 'сюзерена' )|E] и может скрепить союз браком.#!"
  marriage_favor_rights_granted_short:0 "Даровано"
+
+ antagonistic:0 "Враждебность"
+ antagonistic_desc:0 "Мало что мотивирует людей так, как соперничество или зависть. В этом доме лучше быть начеку, чтобы никто не попытался всадить вам нож в спину."
+ competitive:0 "Конкуренция"
+ competitive_desc:0 "Конкуренция в семье может приносить пользу. Она заставляет представителей дома соревноваться друг с другом во всём, будь то ратные подвиги или защита трона..."
+ impassive:0 "Безразличие"
+ impassive_desc:0 "Зачем тратить время и силы на то, чем заняты остальные члены семьи? Представители этого дома склонны заботиться прежде всего о себе."
+ friendly:0 "Дружелюбие"
+ friendly_desc:0 "Представители этого дома иногда не сходятся во взглядах, но всегда сохраняют теплые отношения."
+ harmonious:0 "Гармоничность"
+ harmonious_desc:0 "Этот дом живет в полной гармонии. Его представители делают всё возможное, чтобы сохранить единство, и всегда помогают друг другу."
+ antagonistic_house_approves_war_victory:0 "Все [vassals|El], принадлежащие к тому же [Concept( 'house', 'дому' )|E], что и [attacker.GetShortUIName], повышают [opinion|El] о [Select_CString(attacker.IsFemale, 'ней', 'нем' )] на #P 10#! на #V 10 лет#! #weak (впечатляющая победа в наступательной войне)#!"
+ antagonistic_house_approves_war_victory_defensive:0 "Все [vassals|El], принадлежащие к тому же [Concept( 'house', 'дому' )|E], что и [defender.GetShortUIName], повышают [opinion|El] о [Select_CString(defender.IsFemale, 'ней', 'нем' )] на #P 15#! на #V 10 лет#! #weak (впечатляющая победа в оборонительной войне)#!"
+ antagonistic_house_disapproves_war_white_peace:0 "Все [vassals|El], принадлежащие к тому же [Concept( 'house', 'дому' )|E], что и [attacker.GetShortUIName], снижают [opinion|El] о [Select_CString(attacker.IsFemale, 'ней', 'нем' )] на #N 10#! на #V 10 лет#! #weak (считает белый мир признаком слабости)#!"
+ antagonistic_house_disapproves_war_white_peace_defender:0 "Все [vassals|El], принадлежащие к тому же [Concept( 'house', 'дому' )|E], что и [defender.GetShortUIName], снижают [opinion|El] о [Select_CString(defender.IsFemale, 'ней', 'нем' )] на #N 10#! на #V 10 лет#! #weak (считает белый мир признаком слабости)#!"
+ antagonistic_house_disapproves_war_defeat:0 "Все [vassals|El], принадлежащие к тому же [Concept( 'house', 'дому' )|E], что и [attacker.GetShortUIName], снижают [opinion|El] о [Select_CString(attacker.IsFemale, 'ней', 'нем' )] на #N 20#! на #V 10 лет#! #weak (позорное поражение)#!"
+ antagonistic_house_disapproves_war_defeat_defender:0 "Все [vassals|El], принадлежащие к тому же [Concept( 'house', 'дому' )|E], что и [defender.GetShortUIName], снижают [opinion|El] о [Select_CString(defender.IsFemale, 'ней', 'нем' )] на #N 20#! на #V 10 лет#! #weak (позорное поражение)#!"
+
+ house_unity_parameter_unity_antagonistic_cb_cost:0 "Стоимость [casus_belli|El]: @war_icon!#P [EmptyScope.ScriptValue('unity_antagonistic_cb_cost_display_value')|0]%#!"
+ house_unity_parameter_unity_competitive_cb_cost:0 "Стоимость [casus_belli|El]: @war_icon!#P [EmptyScope.ScriptValue('unity_competitive_cb_cost_display_value')|0]%#!"
+ house_unity_parameter_unity_friendly_cb_cost:0 "Стоимость [casus_belli|El]: @war_icon!#N +[EmptyScope.ScriptValue('unity_friendly_cb_cost_display_value')|0]%#!"
+ house_unity_parameter_unity_harmonious_cb_cost:0 "Стоимость [casus_belli|El]: @war_icon!#N +[EmptyScope.ScriptValue('unity_harmonious_cb_cost_display_value')|0]%#!"
+ house_unity_parameter_unity_less_likely_factions:0 "[Concept('vassals', 'Вассалы' )|E] из числа членов [Concept( 'house', 'дома' )|E] с #P меньшей вероятностью#! будут создавать [factions|El]"
+ house_unity_parameter_unity_significantly_less_likely_factions:0 "[Concept('vassals', 'Вассалы' )|E] из числа членов [Concept( 'house', 'дома' )|E] с #P намного меньшей вероятностью#! будут создавать [factions|El]"
+ CB_UNITY_COST:0 "[Concept( 'house_unity', 'Единство' )|E] вашего дома"
+ house_unity_parameter_unity_multiple_invasions:0 "[rulers|E] могут использовать [casus_belli|El] «#high Вторжение#!» раз в [EmptyScope.ScriptValue('unity_antagonistic_invasion_cooldown_value')|V0]#! л."
+ house_unity_parameter_unity_unlimited_invasions:0 "[rulers|E] получают ограниченный доступ к [casus_belli|El] «#high Вторжение#!»"
+ house_unity_parameter_unity_lower_prestige_requirements:0 "Требования к [Concept( 'prestige_level', 'уровню репутации' )|E] для [Concept( 'casus_bellis', 'казус белли' )|E] снижена на единицу"
+ house_unity_parameter_unity_war_opinion:0 "[victory|E], [white_peace|El] и [defeat|El] будут по-разному влиять на [opinion|El] [Concept( 'vassal', 'вассалов' )|E] из вашего [Concept( 'house', 'дома' )|E]"
+ house_unity_parameter_unity_disable_invasions:0 "[Concept( 'rulers', 'Правители' )] не могут использовать [casus_belli|El] #high «Вторжение»#!"
+ house_unity_parameter_unity_more_likely_claimant_factions:0 "[Concept('vassals', 'Вассалы' )|E] из числа членов [Concept( 'house', 'дома' )|E] с #N большей вероятностью#! будут создавать [claimant_factions|El]"
+ house_unity_parameter_unity_significantly_more_likely_claimant_factions:0 "[Concept('vassals', 'Вассалы' )|E] из числа членов [Concept( 'house', 'дома' )|E] с #N намного большей вероятностью#! будут создавать [claimant_factions|El]"
+ house_unity_parameter_vassal_house_members_more_upset_without_alliance:0 "Штраф к [Concept( 'opinion', 'мнению' )|E] за отсутствие [Concept( 'alliance', 'союза' )|E] выше для [Concept( 'vassals', 'вассалов' )|E] из того же [Concept( 'house', 'дома' )|E]"
+ house_unity_parameter_unity_unlock_fabricate_hooks:0 "Члены [Concept( 'house', 'дома' )|E] могут использовать [scheme|El] «[GetScheme('fabricate_hook').GetTypeName]» в отношении друг друга"
+ house_unity_parameter_unity_unlock_befriend_scheme:0 "Члены [Concept( 'house', 'дома' )|E] могут использовать происки «[GetScheme('befriend').GetTypeName]» в отношении друг друга"
+ house_unity_parameter_unity_can_challenge_house_head:0 "Члены [Concept( 'house', 'дома' )|E] могут бросить вызов [Concept( 'house_head', 'главе дома' )|E], чтобы занять его место"
+ house_unity_parameter_unity_can_create_cadet_branches:0 "[Concept( 'independent', 'Независимые' )|E] члены [Concept( 'house', 'дома' )|E] могут создавать [cadet_branches|El]"
+ house_unity_can_create_cadet_branches_tt:0 "[house_unity|E] — @dynasty_house_unity_antagonistic! $antagonistic$"
+
+ house_unity_parameter_unity_succession_clan_antagonistic_partition_succession:0 "[house_succession_law|E] — [GetLaw('clan_antagonistic_partition_succession_law').GetName]"
+ house_unity_parameter_unity_succession_clan_competitive_partition_succession:0 "[house_succession_law|E] — [GetLaw('clan_competitive_partition_succession_law').GetName]"
+ house_unity_parameter_unity_succession_clan_impassive_partition_succession:0 "[house_succession_law|E] — [GetLaw('clan_impassive_partition_succession_law').GetName]"
+ house_unity_parameter_unity_succession_clan_friendly_partition_succession:0 "[house_succession_law|E] — [GetLaw('clan_friendly_partition_succession_law').GetName]"
+ house_unity_parameter_unity_succession_clan_harmonious_partition_succession:0 "[house_succession_law|E] — [GetLaw('clan_harmonious_partition_succession_law').GetName]"
+
+ house_unity_parameter_unity_has_liberate_house_members_cb:0 "Разблокирует [casus_belli|El] «[fp3_free_house_member_cb|E]»"
+ unity_has_liberate_house_members_cb_name:0 "[fp3_free_house_member_cb|E]"
+
+ house_unity_parameter_unity_has_unify_house_cb:0 "Разблокирует [casus_belli|El] «[fp3_unify_house_cb|E]»"
+ unity_has_unify_house_cb_name:0 "[fp3_unify_house_cb|E]"
+
+ HAS_HOUSE_UNITY_STAGE_GLOBAL:0 "[house_unity|E] — @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V]"
+ I_HAVE_HOUSE_UNITY_STAGE_GLOBAL:0 "[Concept( 'house_unity', 'Единство' )|E] моего дома — @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V]"
+ THEY_HAVE_HOUSE_UNITY_STAGE_GLOBAL:0 "[Concept( 'house_unity', 'Единство' )|E] дома [DYNASTY_HOUSE.GetBaseName|V] — @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V]"
+ NOT_HAS_HOUSE_UNITY_STAGE_GLOBAL:0 "[house_unity|E] — #bold не#! @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V]"
+ NOT_I_HAVE_HOUSE_UNITY_STAGE_GLOBAL:0 "[Concept( 'house_unity', 'Единство' )|E] моего дома — #bold не#! @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V]"
+ NOT_THEY_HAVE_HOUSE_UNITY_STAGE_GLOBAL:0 "[Concept( 'house_unity', 'Единство' )|E] дома [DYNASTY_HOUSE.GetBaseName|V] — #bold не#! @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V]"
+
+ active_unity_level_description_tt:0 "#weak Причиной является ваш [Concept( 'house_unity_level', 'уровень единства дома' )|E]#!"
+
+ ADD_UNITY_VALUE_GLOBAL:0 "[Concept( 'house_unity', 'Единство' )|E] [Concept( 'house', 'дома' )|E] [DynastyHouse.GetBaseName|V] изменилось на $VALUE|=+0$ @dynasty_house_unity!"
+ AI_HOUSE_UNITY:0 "[Concept( 'house_unity', 'Единство' )|E] вашего дома: $VALUE|=+0$"
+
+ unity_reinforce_army_decision:0 "Пополнить армию верными офицерами"
+ unity_reinforce_army_decision_desc:0 "Сила армии — в офицерах, что командуют ею. Запросив умелых солдат у представителей своего дома, я получу бойцов с огромным опытом, которых можно назначить на руководящие должности и повысить боеспособность войск. Все члены семьи действуют во имя интересов дома, и все в выигрыше!"
+ unity_reinforce_army_decision_tooltip:0 "Попросить представителей вашего дома прислать вам талантливых солдат"
+ unity_reinforce_army_decision_confirm:0 "Отдать приказы."
+
+ unity_establish_network_decision:0 "Организовать сеть интриг"
+ unity_establish_network_decision_desc:0 "Все представители моего дома по-своему хитры. Под моим руководством мы можем сплести паутину интриг, в которую попадется даже самый коварный чужак."
+ unity_establish_network_decision_tooltip:0 "Привлечь представителей своего дома к реализации коварных замыслов и защите от происков врагов"
+ unity_establish_network_decision_confirm:0 "Отправить и сжечь эдикт"
+
+ unity_improve_taxation_decision:0 "Улучшить налогообложение"
+ unity_improve_taxation_decision_desc:0 "Многие представители моего дома умеют собирать налоги и управлять державой. Если мы будем делиться идеями и опытными людьми, то весь дом выиграет от повышения доходов."
+ unity_improve_taxation_decision_tooltip:0 "Сотрудничать с представителями своего дома, чтобы улучшить налогообложение и доход державы"
+ unity_improve_taxation_decision_confirm:0 "Давайте устроим собрание"
+
+ unity_search_for_administrators_decision:0 "Поиск сборщиков налогов"
+ unity_search_for_administrators_decision_desc:0 "Налоги — основа любой державы. Время на поиск опытных администраторов и бывших солдат, которым можно доверить сбор налогов, окупится сполна."
+ unity_search_for_administrators_decision_tooltip:0 "Найти хороших управляющих и солдат, чтобы повысить ранги сборщиков налогов"
+ unity_search_for_administrators_decision_confirm:0 "Приказать начать поиски"
+ search_administors_decision.tt:0 "К вашему [Concept( 'court', 'двору' )] присоединятся не более трех [Concept( 'characters', 'персонажей' )|E] с разными навыками."
+ unity_search_for_administrators_decision.msg.t:0 "Администратор прибыл"
+ unity_search_for_administrators_decision.msg.desc:0 "[Select_CString(new_administrator.IsFemale, 'Новая', 'Новый' )] [Select_CString(new_administrator.IsFemale, 'управляющая', 'управляющий' )] по имени [new_administrator.GetName] [Select_CString(new_administrator.IsFemale, 'прибыла', 'прибыл' )] к вашему двору и [Select_CString(new_administrator.IsFemale, 'готова', 'готов' )] приступить к работе."
+
+ unity_send_bailiffs_decision:0 "Отправить бейлифов"
+ unity_send_bailiffs_decision_desc:0 "Представители моего дома готовы сотрудничать, и из этого можно извлечь пользу. Если отправить к ним бейлифов, которые будут исполнять мои приказы, я смогу поддерживать мир в державе."
+ unity_send_bailiffs_decision_tooltip:0 "Сотрудничать с представителями дома, чтобы усилить контроль над державой."
+ unity_send_bailiffs_decision_confirm:0 "Послать за бейлифами"
+
+ unity_placate_vassals_decision:0 "Успокоить вассалов"
+ unity_placate_vassals_decision_desc:0 "Испытания не обходят стороной даже мирные владения. Воспользовавшись своим положением главы дома, я могу потушить искры общественного недовольства, пока они не начали разгораться."
+ unity_placate_vassals_decision_tooltip:0 "Напомнить представителям дома о своей власти сюзерена"
+ unity_placate_vassals_decision_confirm:0 "Успокоить вассалов"
+
+ unity_organize_house_for_war_decision:0 "Подготовить представителей дома к войне"
+ unity_organize_house_for_war_decision_desc:0 "Развитие державы требует упорства, и без многочисленных завоеваний обычно не обойтись. Издав особые эдикты и объединив представителей дома под своим началом, я смогу убедить их вести войны и захватывать новые земли."
+ unity_organize_house_for_war_decision_tooltip:0 "Убедить представителей вашего дома чаще вести войны"
+ unity_organize_house_for_war_decision_confirm:0 "Поддержать войны и конфликты!"
+
+ unity_encourage_house_economy_decision:0 "Порекомендовать представителям дома развивать экономику"
+ unity_encourage_house_economy_decision_desc:0 "Успех державы определяется благосостоянием ее земель. Нужно убедиться, что все представители дома могут потратить необходимые средства для укрепления нашей державы."
+ unity_encourage_house_economy_decision_tooltip:0 "Убедить представителей вашего дома сосредоточиться на экономике"
+ unity_encourage_house_economy_decision_confirm:0 "Порекомендовать развитие экономики!"
+
+ unity_promote_development_decision:0 "Поддержать развитие"
+ unity_promote_development_decision_desc:0 "Наша культура давно славится отличными навыками управления. На благо нашего дома работает много опытных кураторов и руководителей. Это преимущество можно использовать для дальнейшего развития державы."
+ unity_promote_development_decision_tooltip:0 "Поддержать развитие державы силами представителей дома"
+ unity_promote_development_decision_confirm:0 "Поддержать развитие"
+
+ unity_improve_logistics_decision:0 "Потребовать объединить логистику"
+ unity_improve_logistics_decision_desc:0 "Исход войны определяется целым рядом причин. Хорошая логистика и поставки не менее важны, чем опытные солдаты. Можно установить новую политику, обязав всех представителей своего дома объединить поставки припасов и снаряжения. Это существенно увеличит возможности армии."
+ unity_improve_logistics_decision_tooltip:0 "Обязать представителей дома объединить поставки и припасы, чтобы лучше учитывать нужды армии"
+ unity_improve_logistics_decision_confirm:0 "Потребовать объединить логистику"
+
+ unity_steer_house_direction_decision:0 "Изменить единство дома"
+ unity_steer_house_direction_decision_desc:0 "Слово главы дома имеет огромный вес. Подобрав подходящие слова и приняв нужные меры, я смогу подтолкнуть представителей своего дома к определенным действиям, что значительно повысит наше единство."
+ unity_steer_house_direction_decision_confirm:0 "$unity_steer_house_direction_decision$"
+ unity_steer_house_direction_decision_tooltip:0 "Выберите направление для укрепления [Concept( 'house_unity', 'единства дома' )|E]"
+ unity_steer_house_direction_decision_second_tooltip:0 "$DESC$\n"
+ CHOOSE_UNITY_DIRECTION:0 "Выбрать направление"
+ STEER_HOUSE_UNITY_SELECT_DIRECTION_TITLE:0 "Выбрать направление, чтобы повысить [Concept( 'unity', 'единство' )|E]"
+ steer_unity_towards_harmonious_desc:0 "Воспользуйтесь своим положением [Concept( 'house_head', 'главы дома' )|E] и сдвиньте [house_unity|El] в сторону #V гармоничности#!"
+ steer_unity_towards_harmonious_name:0 "Направить дом в сторону #V гармоничности#!\n#low Увеличивает [house_unity|El]#!"
+ steer_unity_towards_harmonious_tooltip:0 "$unity_steer_house_direction_decision_second_tooltip$"
+ steer_unity_towards_harmonious_tt:0 "#X [Concept( 'house_unity_level', 'Уровень единства' )|E] вашего [Concept( 'house', 'дома' )|E] уже #V гармоничный#!#!"
+ steer_unity_towards_harmonious_passive_gain_tt:0 "[house_unity|E] ежегодно #P увеличивается#! на протяжении следующих #V 10#! лет"
+ steer_unity_towards_harmonious_toast:0 "[ROOT.Char.GetShortUINameNoTooltip|U] [Select_CString(ROOT.Char.IsLocalPlayer, 'сдвинули', Select_CString(ROOT.Char.IsFemale, 'сдвинула', 'сдвинул' ))] [Concept( 'house_unity', 'единство дома' )|E] в сторону гармоничности"
+ steer_unity_towards_antagonistic_desc:0 "Воспользуйтесь своим положением [Concept( 'house_head', 'главы дома' )|E] и сдвиньте [house_unity|El] в сторону #V враждебности#!"
+ steer_unity_towards_antagonistic_name:0 "Направить дом в сторону #V враждебности#!\n#low Снижает [house_unity|El]#!"
+ steer_unity_towards_antagonistic_tooltip:0 "$unity_steer_house_direction_decision_second_tooltip$"
+ steer_unity_towards_antagonistic_tt:0 "#X [Concept( 'house_unity_level', 'Уровень единства' )|E] вашего [Concept( 'house', 'дома' )|E] уже #V враждебный#!#!"
+ steer_unity_towards_antagonistic_passive_loss_tt:0 "[house_unity|E] ежегодно #N снижается#! на протяжении следующих #V 10#! лет"
+ steer_unity_towards_antagonistic_toast:0 "[ROOT.Char.GetShortUINameNoTooltip|U] [Select_CString(ROOT.Char.IsLocalPlayer, 'сдвинули', Select_CString(ROOT.Char.IsFemale, 'сдвинула', 'сдвинул' ))] [Concept( 'house_unity', 'единство дома' )|E] в сторону враждебности"
+ steer_unity_notification_title:0 "[house_head|E] изменил [Concept( 'unity', 'единство' )|E]"
+
+ unity_consult_house_decision:0 "Дать советы представителям дома"
+ unity_consult_house_decision_desc:0 "Сплоченный совет действует быстро и эффективно. Если я дам пару рекомендаций представителям своего дома, они лучше справятся с ролью советников."
+ unity_consult_house_decision.tt_house_council_bonus:0 "Базовый прогресс и влияние [Concept( 'skill', 'навыков' )|E] на [councillor_tasks|El]: #P +10%#! для представителей [Concept( 'house', 'дома' )|E], служащих в вашем [Concept( 'council', 'совете' )|E]"
+ unity_consult_house_decision.tt_no_unity_change:0 "Назначение представителей [Concept( 'house', 'дома' )|E] в [Concept( 'council', 'совет' )|E] и их увольнение больше не влияет на [Concept( 'house_unity', 'единство дома' )|E]"
+ unity_consult_house_decision.tt_lifetime:0 "Эффект будет действовать до смерти персонажа"
+ unity_consult_house_decision.tt_cooldown:0 "Вы уже получили совет от членов своего [Concept( 'house', 'дома' )|E]"
+ unity_consult_house_decision_tooltip:0 "Помочь членам своего дома стать более эффективными советниками"
+ unity_consult_house_decision_confirm:0 "Провести совет с представителями дома"
+ unity_consulted_house_member_desc:0 "Проведен совет с представителями дома"
+
+ unity_establish_futuwaa_lodges_decision:0 "Создать дома футуввы"
+ unity_establish_futuwaa_lodges_decision_desc_intro:0 "Молодые"
+ unity_establish_futuwaa_lodges_decision_desc_outro:0 "владения [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] не знают, куда деть переполняющую их энергию, бродят по столице и сбиваются в стихийные шайки. Можно открыть дома #italic футуввы#! по всей столице, чтобы они могли тратить свободное время на развитие воинской доблести и нравственности."
+ unity_establish_futuwaa_lodges_decision.tt_intro:0 "Вся молодежь, не состоящая в браке"
+ unity_establish_futuwaa_lodges_decision.tt_outro:0 "и живущая в вашей [Concept( 'capital', 'столице' )|E], может повысить [Concept( 'skills', 'навыки' )|E] [Concept( 'martial', 'военного дела' )|E] и [Concept( 'prowess', 'доблести' )|E] или получить [Concept( 'virtuous', 'добродетельное' )|E] [Concept( 'trait', 'свойство' )|E] на протяжении следующих 20 лет"
+ unity_establish_futuwaa_lodges_decision.tt_people:0 "$unity_establish_futuwaa_lodges_decision.tt_intro$ $unity_establish_futuwaa_lodges_decision.tt_outro$"
+ unity_establish_futuwaa_lodges_decision.tt_women:0 "$unity_establish_futuwaa_lodges_decision.tt_intro$ $unity_establish_futuwaa_lodges_decision.tt_outro$"
+ unity_establish_futuwaa_lodges_decision.tt_men:0 "$unity_establish_futuwaa_lodges_decision.tt_intro$ $unity_establish_futuwaa_lodges_decision.tt_outro$"
+ unity_establish_futuwaa_lodges_decision.tt_num_intro:0 "Сейчас, #V [SCOPE.ScriptValue('number_of_futuwaa_members')]#!"
+ unity_establish_futuwaa_lodges_decision.tt_num_outro:0 "в вашей столице выиграют от этого решения"
+ unity_establish_futuwaa_lodges_decision.tt_num_people:0 "$unity_establish_futuwaa_lodges_decision.tt_num_intro$ молодых людей $unity_establish_futuwaa_lodges_decision.tt_num_outro$"
+ unity_establish_futuwaa_lodges_decision.tt_num_women:0 "$unity_establish_futuwaa_lodges_decision.tt_num_intro$ молодых женщин $unity_establish_futuwaa_lodges_decision.tt_num_outro$"
+ unity_establish_futuwaa_lodges_decision.tt_num_men:0 "$unity_establish_futuwaa_lodges_decision.tt_num_intro$ молодых мужчин $unity_establish_futuwaa_lodges_decision.tt_num_outro$"
+ unity_establish_futuwaa_lodges_decision_tooltip:0 "Привить добродетели и доблесть молодежи в вашей столице"
+ unity_establish_futuwaa_lodges_decision_confirm:0 "Поддержать дома"
+
+ unity_educate_youth_in_madrasas_decision.t_intro:0 "Отправить молодежь обучаться в"
+ unity_educate_youth_in_madrasas_decision.t_madrasas:0 "мадрасы"
+ unity_educate_youth_in_madrasas_decision.t_houses_of_worship:0 "[ROOT.Char.GetFaith.HouseOfWorshipPlural|l]"
+ unity_educate_youth_in_madrasas_decision_desc_intro:0 "Из-за установившегося в державе мира молодые"
+ unity_educate_youth_in_madrasas_decision_desc_outro:0 "владения [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] ведут вялый образ жизни и слоняются без цели. Я могу распорядиться, чтобы [ROOT.Char.GetFaith.HouseOfWorshipPlural|l] открыли школы и учили молодежь философии и медицине в свободное время."
+ unity_educate_youth_in_madrasas_decision.tt_intro:0 "Вся молодежь,"
+ unity_educate_youth_in_madrasas_decision.tt_outro:0 "живущая в вашей [Concept( 'capital', 'столице' )|E], может увеличить свой [Concept( 'skill', 'навык' )|E] [Concept( 'learning', 'учености' )|E] и получить [Concept( 'experience', 'опыт' )|E] свойства «[GetTrait('lifestyle_physician').GetName(GetNullCharacter)]» на протяжении следующих 20 лет"
+ unity_educate_youth_in_madrasas_decision.tt_people:0 "$unity_educate_youth_in_madrasas_decision.tt_intro$ $unity_educate_youth_in_madrasas_decision.tt_outro$"
+ unity_educate_youth_in_madrasas_decision.tt_women:0 "$unity_educate_youth_in_madrasas_decision.tt_intro$ $unity_educate_youth_in_madrasas_decision.tt_outro$"
+ unity_educate_youth_in_madrasas_decision.tt_men:0 "$unity_educate_youth_in_madrasas_decision.tt_intro$ $unity_educate_youth_in_madrasas_decision.tt_outro$"
+ unity_educate_youth_in_madrasas_decision.tt_num_intro:0 "Сейчас, #V [SCOPE.ScriptValue('number_of_madrasa_pupils')]#!"
+ unity_educate_youth_in_madrasas_decision.tt_num_outro:0 "в вашей столице выиграют от этого решения"
+ unity_educate_youth_in_madrasas_decision.tt_num_people:0 "$unity_educate_youth_in_madrasas_decision.tt_num_intro$ молодых людей $unity_educate_youth_in_madrasas_decision.tt_num_outro$"
+ unity_educate_youth_in_madrasas_decision.tt_num_women:0 "$unity_educate_youth_in_madrasas_decision.tt_num_intro$ молодых женщин $unity_educate_youth_in_madrasas_decision.tt_num_outro$"
+ unity_educate_youth_in_madrasas_decision.tt_num_men:0 "$unity_educate_youth_in_madrasas_decision.tt_num_intro$ молодых мужчин $unity_educate_youth_in_madrasas_decision.tt_num_outro$"
+ unity_educate_youth_in_madrasas_decision_tooltip:0 "Обучить молодежь в столице философии и медицине"
+ unity_educate_youth_in_madrasas_decision_confirm:0 "[ROOT.Char.GetFaith.PriestNeuterPlural|U] должны узнать об этом"
+
+ default_tax_collector:0 "Базовые налоги"
+ default_tax_collector_desc:0 "Применяются базовые [Concept( 'obligations', 'обязательства' )|E], исходя из [Concept( 'aptitude', 'пригодности' )|E] назначенного [Concept( 'tax_collector', 'сборщика налогов' )|E]"
+ default_tax_collector_flavor_desc:0 "Стандартный налог. Налогоплательщики платят заранее оговоренную сумму — ни больше, ни меньше."
+
+ jizya_special_rights_tax_collector:0 "Религиозная защита" #LotR
+ jizya_special_rights_tax_collector_desc:0 "#emphasis #bold Привилегии [Concept( 'vassal', 'вассала' )|E]:#!#!\n[liege|E] не может [Concept( 'demand_conversion', 'требовать обращения' )|E] [Concept( 'vassal', 'вассала' )|E]\n[liege|E] не может [Concept( 'convert_county', 'обращать графства' )|E] в землях [Concept( 'vassal', 'вассала' )|E]\n[liege|E] не может использовать различия в [Concept( 'faith', 'конфессии' )|E], чтобы избежать получения [Concept( 'tyranny', 'тирании' )|E] при отъеме титулов\n[liege|E] не может лишить [Concept( 'vassal', 'вассала' )|E] [Concept( 'titles', 'титулов' )|E]\n\n#flavor [Concept( 'vassal', 'Вассалу' )|E] гарантируется неотъемлемое право на титулы, и [Concept( 'liege', 'сюзерен' )|E] не может отнять их, даже если у него есть [revoke_title_reason|El].\n Вассал получает особую защиту, а держава официально признает его право на свободу [Concept( 'faith', 'вероисповедания' )|E].#!"
+ jizya_special_rights_tax_collector_flavor_desc:0 "Налог на защиту религии налагается на религиозные меньшинства, в обмен на привилегию мирно исповедовать свою неправильную конфессию." #LotR
+ unlock_jizya_contract_name:0 "[core_tenet|E] «[GetFaithDoctrine('tenet_tax_nonbelievers').GetBaseName]»"
+
+
+ iqta_special_rights_tax_collector:0 "Малое дворянство" #LotR
+ iqta_special_rights_tax_collector_desc:0 "У [Concept( 'vassal', 'вассала' )|E] меньше обязательств, но он помогает содержать [Concept( 'men_at_arms', 'профессиональные полки' )|E] [Concept( 'liege', 'сюзерена' )|E]."
+ iqta_special_rights_tax_collector_flavor_desc:0 "При системе откупа налогов под контролем малого дворянства местные дворяне получают широкие полномочия по сбору налогов от имени государства. Взамен они должны пополнить армию своего сюзерена." #LotR
+
+
+ ghazi_special_rights_tax_collector:0 "Священные воины" #LotR
+ ghazi_special_rights_tax_collector_desc:0 "#emphasis #bold Привилегии [Concept( 'vassal', 'вассала' )|E]:#!#!\n[vassal|E] тратит меньше [Concept( 'piety', 'благочестия' )|E] на [casus_bellis|El] «[holy_war|E]», но больше [prestige_i][Concept( 'prestige', 'престижа' )|E] на другие [casus_bellis|El] \n\n#flavor [liege|E] объявляет [Concept( 'vassal', 'вассала' )|E] защитником [Concept( 'faith', 'веры' )|E], которому вменяется расширять границы посредством [Concept( 'holy_war', 'священной войны' )|E].#!"
+ ghazi_special_rights_tax_collector_flavor_desc:0 "Воины конфессии, защищающие рубежи державы, ведут бесконечную войну против религиозных врагов государства, зарабатывая на жизнь мародерством и грабежом." #LotR
+
+
+ deqhan_special_rights_tax_collector:0 "Делегирование прав" #LotR
+ deqhan_special_rights_tax_collector_flavor_desc:0 "Делегирование прав предлагает децентрализованную систему сбора налогов, передавая контроль местным магнатам, что они тщательно контролировали свои земли, чтобы получать больше дохода и поддерживать собственную репутацию." #LotR
+
+ maguh_special_rights_tax_collector:0 "Прямые вложения" #LotR
+ maguh_special_rights_tax_collector_flavor_desc:0 "Более прямая система местного управления, при которых часть поступивших налогов вкладывается в местное развитие, что приводит к снижению поступления налогов в казну государства." #LotR
+
+ muqata_special_rights_tax_collector:0 "Местная автономия" #LotR
+ muqata_special_rights_tax_collector_flavor_desc:0 "Местная автономия — система налогообложения, при которой отдаленные земли получают большую самостоятельность и платят меньше налогов. Она способствует стабильности и долгосрочному развитию." #LotR
+
+ strict_taxation_tax_collector:0 "Налог на роскошь" #LotR
+ strict_taxation_tax_collector_flavor_desc:0 "Налог на роскошь, который обычно взимается с богатых людей для дополнительного дохода в казну и помощи нуждающимся." #LotR
+
+ clan_tax_slot:0 "Налоговая юрисдикция"
+
+ has_house_unity_parameter:0 "Имеет $PARAMETER_NAME$"
+ not_has_house_unity_parameter:0 "$PARAMETER_NAME$ — не доступно"
