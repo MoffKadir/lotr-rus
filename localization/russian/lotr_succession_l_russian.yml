@@ -1,49 +1,49 @@
 ﻿l_russian:
   
- ##Aristocratic Elective 
+ ##Aristocratic Elective
  aristocratic_elective_succession_law:0 "Выборная система истерлингов"
  aristocratic_elective_succession_law_subname:0 "Акхил-Шура"
- aristocratic_elective_succession_law_effects:0 "The [ruler|E] and all [direct_vassals|E] above the [rank|E] of [baron|E] can nominate a [title_heir|E] from among themselves, the [close_family|E] of the ruler, and any other valid [claimant|E]."
+ aristocratic_elective_succession_law_effects:0 "[ruler|E] и все [direct_vassals|El], чей [rank|El] превышает [Concept( 'baron', 'баронский' )|E], могут выбирать [Concept( 'title_heir', 'наследника титула' )|E] из своего числа, [Concept( 'close_family', 'близких родственников' )|E] правителя или же [Concept( 'claimant', 'претендентов' )|E]."
  aristocratic_elective_electors:0 "Правитель и прямые вассалы"
- aristocratic_elective_electors_tooltip:0 "В отличие от других форм выборного наследования, все прямые вассалы ранга [count|E] и выше — [electors|E] при выборной аристократии."
+ aristocratic_elective_electors_tooltip:0 "В отличие от других форм выборного наследования при выборной аристократии [Concept( 'elector', 'выборщиками' )|E] являются все прямые вассалы [Concept( 'count', 'графского' )|E] ранга и выше."
  aristocratic_elective_candidates:0 "Близкие родственники, претенденты и выборщики"
- aristocratic_elective_candidates_tooltip:0 "Чтобы при выборной аристократии являться действительным кандидатом, персонаж должен выполнить одно из следующих условий:\n$EFFECT_LIST_BULLET$Быть членом [close_family|E] действующего правителя, не являющимся потенциальным наследником владений теократического или республиканского типа. Дети кандидата не могут быть номинированы.\n$EFFECT_LIST_BULLET$Быть [Concept( 'claimant', 'претендентом' )|E] на титул и не являться потенциальным наследником владений теократического или республиканского типа.\n$EFFECT_LIST_BULLET$Быть действительным аристократическим [Concept( 'elector', 'выборщиком' )|E] для указанного титула."
- FACTION_POWER_ARISTOCRATIC_ELECTIVE:0 "Aristocratic Elective:0 #V +$VALUE|0$#!"
+ aristocratic_elective_candidates_tooltip:0 "Чтобы при выборной аристократии являться действительным кандидатом, персонаж должен выполнить одно из следующих условий:\n$EFFECT_LIST_BULLET$Быть [Concept( 'close_family', 'близким родственником' )|E] данного правителя и не являться потенциальным теократическим или республиканским наследником. Дети кандидата не могут быть избраны.\n$EFFECT_LIST_BULLET$Быть [Concept( 'claimant', 'претендентом' )|E] на титул и не являться потенциальным теократическим или республиканским наследником.\n$EFFECT_LIST_BULLET$Быть действительным аристократическим [Concept( 'elector', 'выборщиком' )|E] для указанного титула."
+ FACTION_POWER_ARISTOCRATIC_ELECTIVE:0 "Аристократические выборы:0 #V +$VALUE|0$#!"
  #Feudal Elective AI behavior 
   
  #Imperial Elective, Voting Strength 
- tooltip_aristocratic_elective_is_incumbant:0 "[ROOT.Char.GetSheHe|U] является действующим правителем:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_powerful_vassal:0 "[ROOT.Char.GetSheHe|U] является [Concept( 'powerful_vassal', 'могущественным вассалом' )|E]:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_military_1:0 "Размер [ROOT.Char.GetHerHis|U] [Concept( 'army', 'армии' )|E] достаточен:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_military_2:0 "Размер [ROOT.Char.GetHerHis|U] [Concept( 'army', 'армии' )|E] примечателен:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_military_3:0 "Размер [ROOT.Char.GetHerHis|U] [Concept( 'army', 'армии' )|E] значителен:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_fame_3:0 "[prestige_level|E] [ROOT.Char.GetHerHis|U] [dynast|E] Великих Купцов [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_fame_4:0 "[prestige_level|E] [ROOT.Char.GetHerHis|U] [dynast|E] Великих Купцов [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L] или выше:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_fame_5:0 "[ROOT.Char.GetHerHis|U] [prestige_level|E] [GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L]:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_diplo_education_3:0 "[ROOT.Char.GetSheHe|U] имеет черту [GetTrait('education_diplomacy_3').GetName( GetNullCharacter )]:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_diplo_education_4:0 "[ROOT.Char.GetSheHe|U] имеет черту [GetTrait('education_diplomacy_4').GetName( GetNullCharacter )]:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_is_councillor:0 "[ROOT.Char.GetSheHe|U] заседает в [Concept( 'council', 'совете' )|E]:0 $VALUE|=+0$"
- tooltip_aristocratic_elective_historic_rhunic_dynasty:0 "[ROOT.Char.GetHerHis|U] [dynasty|E] когда-то владела великой [Concept( 'empire', 'империей' )|E] Рун:0 $VALUE|=+0$"
+ tooltip_aristocratic_elective_is_incumbant:0 "[ROOT.Char.GetSheHe|U] является действующим правителем: $VALUE|=+0$"
+ tooltip_aristocratic_elective_powerful_vassal:0 "[ROOT.Char.GetSheHe|U] является [Concept( 'powerful_vassal', 'могущественным вассалом' )|E]: $VALUE|=+0$"
+ tooltip_aristocratic_elective_military_1:0 "Размер [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] [Concept( 'army', 'армии' )|E] достаточен: $VALUE|=+0$"
+ tooltip_aristocratic_elective_military_2:0 "Размер [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] [Concept( 'army', 'армии' )|E] примечателен: $VALUE|=+0$"
+ tooltip_aristocratic_elective_military_3:0 "Размер [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] [Concept( 'army', 'армии' )|E] значителен: $VALUE|=+0$"
+ tooltip_aristocratic_elective_fame_3:0 "[Select_CString(ROOT.Char.IsFemale, 'Ее', 'Его' )] [prestige_level|El] — [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]: $VALUE|=+0$"
+ tooltip_aristocratic_elective_fame_4:0 "[Select_CString(ROOT.Char.IsFemale, 'Ее', 'Его' )] [prestige_level|El] — [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L] или выше: $VALUE|=+0$"
+ tooltip_aristocratic_elective_fame_5:0 "[Select_CString(ROOT.Char.IsFemale, 'Ее', 'Его' )] [prestige_level|El] — [GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L]: $VALUE|=+0$"
+ tooltip_aristocratic_elective_diplo_education_3:0 "[ROOT.Char.GetSheHe|U] — [GetTrait('education_diplomacy_3').GetName( GetNullCharacter )|l]: $VALUE|=+0$"
+ tooltip_aristocratic_elective_diplo_education_4:0 "[ROOT.Char.GetSheHe|U] — [GetTrait('education_diplomacy_4').GetName( GetNullCharacter )|l]: $VALUE|=+0$"
+ tooltip_aristocratic_elective_is_councillor:0 "[ROOT.Char.GetSheHe|U] заседает в [Concept( 'council', 'совете' )|E]: $VALUE|=+0$"
+ tooltip_aristocratic_elective_historic_rhunic_dynasty:0 "[Select_CString(ROOT.Char.IsFemale, 'Ее', 'Его' )] [dynasty|El] когда-то владела великой [Concept( 'empire', 'империей' )|E] Рун: $VALUE|=+0$"
   
   ##Oligarchic Elective 
  oligarchic_elective_succession_law:0 "Выборная олигархия"
  oligarchic_elective_electors:0 "Правитель и де-юре вассалы"
- oligarchic_elective_electors_tooltip:0 "Чтобы при выборной олигархии являться действительным [Concept( 'elector', 'выборщиком' )|E], электор должен быть [de_jure|E] вассалом с титулярным рангом [count|E] или выше."
+ oligarchic_elective_electors_tooltip:0 "Чтобы являться действительным [Concept( 'elector', 'выборщиком' )|E] при выборной олигархии, необходимо быть [de_jure|El] вассалом [Concept( 'count', 'графского' )|E] ранга и выше."
  oligarchic_elective_candidates:0 "Близкие родственники, претенденты и выборщики"
- oligarchic_elective_candidates_tooltip:0 "Чтобы при выборной олигархии являться действительным кандидатом, персонаж должен выполнить одно из следующих условий:\n$EFFECT_LIST_BULLET$Быть членом [close_family|E] действующего правителя, не являющимся потенциальным наследником владений теократического или республиканского типа. Дети кандидата не могут быть номинированы.\n$EFFECT_LIST_BULLET$Быть [Concept( 'claimant', 'претендентом' )|E] на титул и не являться потенциальным наследником владений теократического или республиканского типа.\n$EFFECT_LIST_BULLET$Быть действительным феодальным [Concept( 'elector', 'выборщиком' )|E] для указанного титула."
+ oligarchic_elective_candidates_tooltip:0 "Чтобы при выборной олигархии являться действительным кандидатом, персонаж должен выполнить одно из следующих условий:\n$EFFECT_LIST_BULLET$Быть [Concept( 'close_family', 'близким родственником' )|E] данного правителя и не являться потенциальным теократическим или республиканским наследником. Дети кандидата не могут быть избраны.\n$EFFECT_LIST_BULLET$Быть [Concept( 'claimant', 'претендентом' )|E] на титул и не являться потенциальным теократическим или республиканским наследником.\n$EFFECT_LIST_BULLET$Быть действительным феодальным [Concept( 'elector', 'выборщиком' )|E] для указанного титула."
   
   #Oligarchic Elective, Voting Strength 
- tooltip_oligarchic_elective_development:0 "Общее [development|E] [Concept( 'counties', 'графств' )|E] в [ROOT.Char.GetHerHis] подчинении в рамках [de_jure|E] [Concept( 'title', 'титула' )|E]:0 $VALUE|=+0$"
- tooltip_oligarchic_merchant_dynast_wealth_1:0 "У [ROOT.Char.GetHerHis|U] [dynast|E] Великих Купцов достаточный [income|E]:0 $VALUE|=+0$"
- tooltip_oligarchic_merchant_dynast_wealth_2:0 "У [ROOT.Char.GetHerHis|U] [dynast|E] Великих Купцов внушительный [income|E]:0 $VALUE|=+0$"
- tooltip_oligarchic_merchant_dynast_wealth_3:0 "У [ROOT.Char.GetHerHis|U] [dynast|E] Великих Купцов высокий [income|E]:0 $VALUE|=+0$"
- tooltip_oligarchic_merchant_dynast_fame_2:0 "[prestige_level|E] [ROOT.Char.GetHerHis|U] [dynast|E] Великих Купцов [GetModifier( 'prestige_level_2' ).GetNameWithTooltip|L]:0 $VALUE|=+0$"
- tooltip_oligarchic_elective_fame_3:0 "[ROOT.Char.GetHerHis|U] Master Merchant [dynast|E] has a [prestige_level|E] of [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]:0 $VALUE|=+0$" !
- tooltip_oligarchic_elective_fame_4:0 "[ROOT.Char.GetHerHis|U] Master Merchant [dynast|E] has a [prestige_level|E] of [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L] or higher:0 $VALUE|=+0$" !
- tooltip_oligarchic_merchant_dynast_stewardship:0 "[ROOT.Char.GetHerHis|U] навык [stewardship|E] как Великого Купца:0 $VALUE|=+0$"
+ tooltip_oligarchic_elective_development:0 "Общее [development|El] [Concept( 'counties', 'графств' )|E] в [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] [de_jure|El] [Concept( 'title', 'титуле' )|E]: $VALUE|=+0$"
+ tooltip_oligarchic_merchant_dynast_wealth_1:0 "У [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] достаточный [income|El]: $VALUE|=+0$"
+ tooltip_oligarchic_merchant_dynast_wealth_2:0 "У [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] внушительный [income|El]: $VALUE|=+0$"
+ tooltip_oligarchic_merchant_dynast_wealth_3:0 "У [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] высокий [income|El]: $VALUE|=+0$"
+ tooltip_oligarchic_merchant_dynast_fame_2:0 "[prestige_level|E] [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] — [GetModifier( 'prestige_level_2' ).GetNameWithTooltip|L]: $VALUE|=+0$"
+ tooltip_oligarchic_elective_fame_3:0 "[prestige_level|E] [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] — [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]: $VALUE|=+0$"
+ tooltip_oligarchic_elective_fame_4:0 "[prestige_level|E] [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] — [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L] или выше: $VALUE|=+0$"
+ tooltip_oligarchic_merchant_dynast_stewardship:0 "[Select_CString(ROOT.Char.IsFemale, 'Ее', 'Его' )] навык [Concept( 'stewardship', 'управления' )|E] как великого купца: $VALUE|=+0$"
   
   #Oligarchic Elective, Voting Behavior 
- tooltip_oligarchic_merchants_hate_winelords:0 "[candidate.GetSheHe|U] принадлежит к фракции Винных Лордов:0 $VALUE|=+0$"
- tooltip_oligarchic_winelords_hate_merchants:0 "[candidate.GetSheHe|U] принадлежит к фракции Великих Купцов:0 $VALUE|=+0$"
- tooltip_oligarchic_winelords_like_winelords:0 "[candidate.GetSheHe|U] является собратом Винным Лордом:0 $VALUE|=+0$"
- tooltip_oligarchic_merchants_like_merchants:0 "[candidate.GetSheHe|U] является собратом Великим Купцом:0 $VALUE|=+0$"
+ tooltip_oligarchic_merchants_hate_winelords:0 "[candidate.GetSheHe|U] принадлежит к фракции винных лордов: $VALUE|=+0$"
+ tooltip_oligarchic_winelords_hate_merchants:0 "[candidate.GetSheHe|U] принадлежит к фракции великих купцов: $VALUE|=+0$"
+ tooltip_oligarchic_winelords_like_winelords:0 "[candidate.GetSheHe|U] является собратом винным лордом: $VALUE|=+0$"
+ tooltip_oligarchic_merchants_like_merchants:0 "[candidate.GetSheHe|U] является собратом великим купцом: $VALUE|=+0$"
