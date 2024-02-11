@@ -4,7 +4,7 @@
  partition_succession_law:0 "Разделение"
  partition_succession_law_subname:0 "Все дети получают равное наследство"
  partition_succession_law_effects:0 "\n#V $partition_succession_law$ предполагает, что при [Concept( 'succession', 'наследовании' )] ваши [titles|l] будут равно поделены между вашими детьми.#!\n\n#weak $partition_base_desc$#!"
- partition_base_desc:0 "#weak При наследовании все [titles|El], которыми владел покойный [ruler|El], поделят между собой [eligible_children|El], при этом [Concept( 'player_heir', 'наследнику-игроку' )|El] всегда достаются [primary_title|El], [realm_capital|El] и все соответствующие [de_jure|El] титулы.\n\nМладшие дети получат титулы, начиная с равных по [Concept( 'rank', 'рангу' )|El] первому, а если таковых нет, то титулы более низкого уровня. Ваши наследники-игроки могут получать до срока только те титулы, которые перешли бы им по наследству.\n#!"
+ partition_base_desc:0 "#weak При наследовании все [Concept( 'titles', 'титулы' )|E], которыми владел покойный [Concept( 'ruler', 'правитель' )|E], поделят между собой [Concept( 'eligible_children', 'привилегированные дети' )|E], при этом [Concept( 'player_heir', 'наследнику-игроку' )|E] всегда достаются [Concept( 'primary_title', 'первый титул' )|E], [Concept( 'realm_capital', 'столица державы' )|E] и все соответствующие [Concept( 'de_jure', 'де-юре' )|E] титулы.\n\nМладшие дети получат титулы, начиная с равных по [Concept( 'rank', 'рангу' )|E] первому, а если таковых нет, то титулы более низкого уровня. Ваши наследники-игроки могут получать до срока только те титулы, которые перешли бы им по наследству.\n#!"
  high_partition_succession_law:0 "Приоритетное разделение"
  high_partition_succession_law_subname:0 "Все дети получают наследство"
  high_partition_succession_law_effects:0 "\n#V $high_partition_succession_law$ предполагает, что львиную долю ваших [Concept( 'titles', 'титулов' )|E] получит [player_heir|El], остальное поделят между собой ваши дети.#!\n\n#weak $partition_base_desc$\nНаследник-игрок #emp всегда#! наследует не менее половины титулов покойного правителя.\n#!"
@@ -63,46 +63,46 @@
  princely_elective_succession_law:0 "Княжеские выборы"
  feudal_elective_succession_law_effects:0 "[ruler|E] и все [de_jure|El] прямые [vassals|El] на один или два [Concept( 'rank', 'ранга' )|El] ниже [Concept( 'title', 'титула' )|El] могут выбрать [Concept( 'title_heir', 'наследника титула' )|E], которым может стать кто-то из них или [close_family_members|El] правителя."
  princely_elective_succession_law_effects:0 "Император и семь курфюрстов предлагают кандидатуру [Concept( 'title_heir', 'наследника титула' )|E], которым может стать кто-то из них, любой [legitimate|El] или сиблинг [rulerpossessive|El], а также любой [de_jure|El] [vassal|El] Империи. Если историческим [Concept( 'title', 'титулом')|El] выборщика владеют неверные или таковой не существует, кандидатурой становится [de_jure|El] следующий вассал. На такой [succession_law|El] серьезно влияют [faith|El] и [Concept( 'piety', 'благочестие' )|El].\n\nВыборные титулы этой державы — графства Кельн, Майнц и Трир и герцогства Богемия, Восточная Франкония, Остфалия и Восточная марка."
- gaelic_elective_succession_law:0 "Даэн Факультативный"
- gaelic_elective_succession_law_subname:0 "Танистрия"
+ gaelic_elective_succession_law:0 "Даэнские выборы" #LotR
+ gaelic_elective_succession_law_subname:0 "Танистри" #LotR
  gaelic_elective_succession_law_effects:0 "[ruler|E] и все [Concept( 'vassals', 'вассалы' )|E] [Concept( 'rank', 'рангом' )|E] выше [Concept( 'baron', 'барона' )|E] и на один-два ранга ниже [Concept( 'title', 'титула' )|E] могут предлагать [Concept( 'title_heir', 'наследника титула' )|E] — Таниста — из числа членов [Concept( 'dynasty', 'династии' )|E] правителя. Вассалы обычно предпочитают старых дальних родственников, а не [Concept( 'close_family', 'членов семьи' )|E]."
- saxon_elective_succession_law:0 "Эотеод по выбору"
- saxon_elective_succession_law_subname:0 "Элдормот"
+ saxon_elective_succession_law:0 "Выборы эотеод" #LotR
+ saxon_elective_succession_law_subname:0 "Эалдормот" #LotR
  saxon_elective_succession_law_effects:0 "[ruler|E] и все [de_jure|El] прямые вассалы на один или два [Concept( 'rank', 'ранга' )|El] ниже [Concept( 'title', 'титула' )|El], достигшие совершеннолетия, могут предложить [Concept( 'title_heir', 'наследника титула' )|E], которым может стать наиболее [powerful_vassal|El] из их числа, [legitimate|El] правителя и любой другой законный [claimant|El]."
- scandinavian_elective_succession_law:0 "Нортрон Факультативный"
- scandinavian_elective_succession_law_subname:0 "Гемиттинг"
+ scandinavian_elective_succession_law:0 "Нортронские выборы" #LotR
+ scandinavian_elective_succession_law_subname:0 "Геммитинг"
  scandinavian_elective_succession_law_effects:0 "[ruler|E] и все [de_jure|El] [vassals|El] (кроме баронов) могут предложить кандидатуру [Concept( 'title_heir', 'наследника титула' )|E]. На наследство могут претендовать [Concept( 'extended_family', 'дальние родственники' )|El] правителя и любые законные [claimants|El]. Этот [succession_law|El] подразумевает, что [voting_power|El] зависит от размера [Concept( 'domain', 'домена' )|El] [Concept( 'elector', 'выборщика' )|El]. Кроме того, на него влияют [county_development|El] и [county_opinion|El]."
-  
+
  feudal_elective_candidates:0 "Близкие родственники, претенденты и выборщики"
  feudal_elective_candidates_tooltip:0 "Следующие персонажи имеют законное право на участие в феодальных выборах:\n$EFFECT_LIST_BULLET$Законнорожденные [Concept( 'close_family', 'близкие родственники' )|E] текущего правителя, не претендующие на наследование теократии или республики. Дети кандидата не могут участвовать в выборах в качестве кандидатов.\n$EFFECT_LIST_BULLET$[claimants|E] на титул, не претендующие на наследование теократии или республики\n$EFFECT_LIST_BULLET$Персонажи, имеющие право называться феодальными [Concept( 'elector', 'выборщиками' )|E] титула."
  feudal_elective_electors:0 "Правители и вассалы"
  feudal_elective_electors_tooltip:0 "Право называться [Concept( 'elector', 'выборщиками' )|E] на феодальных выборах имеют вассалы, отвечающие следующим критериям:\n$EFFECT_LIST_BULLET$ [de_jure|E] вассал титула\n$EFFECT_LIST_BULLET$ Прямой вассал титула \n$EFFECT_LIST_BULLET$ Вассал на один или два [Concept( 'rank', 'ранга' )|E] ниже [Concept( 'title', 'титула' )|E]"
-  
+
  princely_elective_candidates:0 "$feudal_elective_candidates$"
  princely_elective_candidates_tooltip:0 "Следующие персонажи имеют законное право на участие в княжеских выборах:\n$EFFECT_LIST_BULLET$Законнорожденные [Concept( 'close_family', 'близкие родственники' )|E] текущего правителя, не претендующие на наследование теократии или республики. Дети кандидата не могут участвовать в выборах в качестве кандидатов.\n$EFFECT_LIST_BULLET$[claimants|E] на титул, не претендующие на наследование теократии или республики\n$EFFECT_LIST_BULLET$Персонажи, имеющие право называться феодальными [Concept( 'elector', 'выборщиками' )|E] титула."
  princely_elective_electors:0 "Курфюрсты"
- princely_elective_electors_tooltip:0 "Не только [SuccessionElectionWindow.GetTitle.GetHolder.GetTitleAsNameNoTooltip|l], но и владельцы следующих [Concept( 'titles', 'титулов' )|E] получают приоритет при назначении [Concept( 'electors', 'выборщиками' )|E] при законе наследования «[SuccessionElectionWindow.GetSuccessionLaw.GetName]»:0 [SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector1')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector2')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector3')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector4')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector5')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector6')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector7')]"
-  
+ princely_elective_electors_tooltip:0 "Не только [SuccessionElectionWindow.GetTitle.GetHolder.GetTitleAsNameNoTooltip|l], но и владельцы следующих [Concept( 'titles', 'титулов' )|E] получают приоритет при назначении [Concept( 'electors', 'выборщиками' )|E] при законе наследования «[SuccessionElectionWindow.GetSuccessionLaw.GetName]»: [SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector1')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector2')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector3')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector4')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector5')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector6')][SuccessionElectionWindow.GetTitle.Custom('GetPrincelyElector7')]"
+
  gaelic_elective_candidates:0 "Члены династии"
  gaelic_elective_candidates_tooltip:0 "Право быть кандидатом танистри имеют все законные члены [dynasties|El] текущего правителя, не стоящие в линии наследования теократии или республики. Дети кандидата не могут участвовать в выборах в качестве кандидатов."
  gaelic_elective_electors:0 "$feudal_elective_electors$"
  gaelic_elective_electors_tooltip:0 "Право называться [Concept( 'elector', 'выборщиками' )|El] на танистри выборах имеют вассалы, отвечающие следующим критериям:\n$EFFECT_LIST_BULLET$ [de_jure|E] вассал титула\n$EFFECT_LIST_BULLET$ Вассал на один или два [Concept( 'rank', 'ранга' )|El] ниже титула"
-  
+
  saxon_elective_candidates:0 "Дети, претенденты и вассалы"
  saxon_elective_candidates_tooltip:0 "Право быть кандидатами на витенгамоте имеют следующие персонажи:\n$EFFECT_LIST_BULLET$Законнорожденные дети текущего правителя, не претендующие на наследование теократии или республики\n$EFFECT_LIST_BULLET$[claimants|E] на титул, не претендующие на наследование теократии или республики. Дети кандидата не могут участвовать в выборах в качестве кандидатов.\n$EFFECT_LIST_BULLET$[Concept( 'powerful_vassal', 'Могущественные' )|E] [de_jure] феодальные вассалы титула"
  saxon_elective_electors:0 "$feudal_elective_electors$"
  saxon_elective_electors_tooltip:0 "Право называться [Concept( 'elector', 'выборщиками' )|E] на витенгамоте имеют вассалы, отвечающие следующим критериям:\n$EFFECT_LIST_BULLET$ [de_jure|E] вассал титула\n$EFFECT_LIST_BULLET$ Прямой вассал титула \n$EFFECT_LIST_BULLET$ Взрослые\n$EFFECT_LIST_BULLET$ Дееспособные"
-  
+
  scandinavian_elective_candidates:0 "Дальние родственники и претенденты"
  scandinavian_elective_candidates_tooltip:0 "Следующие персонажи имеют законное право на участие в тинге:\n$EFFECT_LIST_BULLET$Законнорожденные [Concept( 'extended_family', 'дальние родственники' )|E] текущего правителя, не претендующие на наследование теократии или республики. Дети кандидата не могут участвовать в выборах в качестве кандидатов.\n$EFFECT_LIST_BULLET$[claimants|E] на титул, не претендующие на наследование теократии или республики"
  scandinavian_elective_electors:0 "$feudal_elective_electors$"
  scandinavian_elective_electors_tooltip:0 "Право называться [Concept( 'elector', 'выборщиками' )|E] на тинге имеют вассалы, отвечающие следующим критериям:\n$EFFECT_LIST_BULLET$ Прямой вассал титула\n$EFFECT_LIST_BULLET$ НЕ барон"
-  
+
  succession_laws_must_have_organised_government_tooltip:0 "У меня не [Concept( 'feudal', 'феодальный' )|E] и не [Concept( 'clan', 'клановый' )|E] [Concept( 'government', 'строй' )|E]"
  succession_laws_must_not_be_forced_partition:0 "Мой [feudal_contract|El] не обязывает меня выбирать [succession|El] посредством разделения"
- succession_laws_must_have_valid_tanistry_culture:0 "У вас #bold нет#! $goidelic_group_collective_noun$ого или $brythonic_group_collective_noun$ого [Concept( 'heritage', 'наследия' )|E]."
+ succession_laws_must_have_valid_tanistry_culture:0 "У вас #bold нет#! $goidelic_group$ого или $brythonic_group$ого [Concept( 'heritage', 'наследия' )|E]."
  number_of_election_votes:0 "Количество голосов на выборах"
-  
+
  get_hre_elector_1:0 "\n$EFFECT_LIST_BULLET$[ROOT.Var('hre_elector_1').GetLandedTitle.GetName]"
  get_hre_elector_2:0 "\n$EFFECT_LIST_BULLET$[ROOT.Var('hre_elector_2').GetLandedTitle.GetName]"
  get_hre_elector_3:0 "\n$EFFECT_LIST_BULLET$[ROOT.Var('hre_elector_3').GetLandedTitle.GetName]"
@@ -110,4 +110,37 @@
  get_hre_elector_5:0 "\n$EFFECT_LIST_BULLET$[ROOT.Var('hre_elector_5').GetLandedTitle.GetName]"
  get_hre_elector_6:0 "\n$EFFECT_LIST_BULLET$[ROOT.Var('hre_elector_6').GetLandedTitle.GetName]"
  get_hre_elector_7:0 "\n$EFFECT_LIST_BULLET$[ROOT.Var('hre_elector_7').GetLandedTitle.GetName]"
-  
+
+ #FP3 addition:
+
+ tribal_elective_succession_law:0 "Племенные выборы"
+ tribal_elective_succession_law_subname:0 "Джирга"
+ tribal_elective_succession_law_effects:0 "[ruler|E] и все [de_jure|El] [vassals|El], которые либо [Concept( 'house_heads', 'главы дома' )|E], либо взрослые с [Concept( 'piety_level', 'уровнем набожности' )|E] 2 и выше, могут предложить кандидатуру [Concept( 'title_heir', 'наследника титула' )|E]. На наследство могут претендовать [Concept( 'extended_family', 'дальние родственники' )|El] правителя, [Concept( 'direct_vassals', 'прямые вассалы' )|E] и любые законные [claimants|El]. Этот [succession_law|El] подразумевает, что [voting_power|El] зависит от размера [Concept( 'domain', 'домена' )|El] [Concept( 'elector', 'выборщика' )|El]. Кроме того, на него влияют [county_development|El] и [county_opinion|El]."
+
+ tribal_elective_candidates:0 "Дальние родственники, вассалы и претенденты"
+ tribal_elective_candidates_tooltip:0 "Следующие персонажи имеют законное право на участие в джирге:\n$EFFECT_LIST_BULLET$Законнорожденные представители[Concept( 'dynasty', 'династии' )|E] текущего правителя, не претендующие на наследование теократии или республики. Дети кандидата не могут участвовать в выборах в качестве кандидатов.\n$EFFECT_LIST_BULLET$[claimants|E] на титул, не претендующие на наследование теократии или республики.\n$EFFECT_LIST_BULLET$[Concept( 'direct_vassal', 'Прямой вассал' )|E] носителя титула."
+ tribal_elective_electors:0 "$feudal_elective_electors$"
+ tribal_elective_electors_tooltip:0 "Чтобы иметь право быть [Concept( 'elector', 'выборщиком' )|E] в джирге, персонаж должен являться [Concept( 'de_jure', 'номинальным' )|E] вассалом держателя титула и удовлетворять #italic любому#! из следующих условий:\n$EFFECT_LIST_BULLET$Быть [Concept( 'house_head', 'главой дома' )|E].\n$EFFECT_LIST_BULLET$Быть взрослым с [Concept( 'piety_level', 'уровнем набожности' )|E] 2 и выше."
+
+
+ clan_antagonistic_partition_succession_law:0 "Враждебное наследование"
+ clan_antagonistic_partition_succession_law_subname:0 "Все дети получают равное наследство"
+ clan_antagonistic_partition_succession_law_effects:0 "\n#V $clan_antagonistic_partition_succession_law$ предполагает, что при [Concept( 'succession', 'наследовании' )|E] ваши титулы будут равно поделены между вашими детьми.#!\n\n[Concept('vassals', 'Вассалы' )|E] из вашего [Concept( 'house', 'дома' )|E] получают [Concept( 'claim', 'претензию' )|E] на ваш [Concept( 'primary_title', 'первый титул' )|E].#!\n\n#weak $partition_base_desc$#!"
+
+ clan_competitive_partition_succession_law:0 "Конкурентное наследование"
+ clan_competitive_partition_succession_law_subname:0 "Все дети получают равное наследство"
+ clan_competitive_partition_succession_law_effects:0 "\n#V $clan_competitive_partition_succession_law$ предполагает, что при [Concept( 'succession', 'наследовании' )|E] ваши титулы будут равно поделены между вашими детьми.#!\n\n[Concept('vassals', 'Вассалы' )|E] из вашего [Concept( 'house', 'дома' )|E] получают [Concept( 'claim', 'претензию' )|E] на ваш [Concept( 'primary_title', 'первый титул' )|E].\n\n#weak $partition_base_desc$#!"
+
+ clan_impassive_partition_succession_law:0 "Безучастное наследование"
+ clan_impassive_partition_succession_law_subname:0 "Все дети получают наследство"
+ clan_impassive_partition_succession_law_effects:0 "\n#V $clan_impassive_partition_succession_law$ предполагает, что львиную долю ваших [Concept( 'titles', 'титулов' )|E] получит [player_heir|El], остальное поделят между собой ваши дети.#!\n\n#weak $partition_base_desc$\n#!Наследник-игрок #emp всегда#! наследует не менее четверти титулов покойного правителя.\n#!"
+
+ clan_friendly_partition_succession_law:0 "Дружественное наследование"
+ clan_friendly_partition_succession_law_subname:0 "Все дети получают наследство"
+ clan_friendly_partition_succession_law_effects:0 "\n#V $clan_friendly_partition_succession_law$ предполагает, что львиную долю ваших [Concept( 'titles', 'титулов' )|E] получит [player_heir|El], остальное поделят между собой ваши дети.#!\n\n#weak $partition_base_desc$\n#!Наследник-игрок #emp всегда#! наследует не менее половины титулов покойного правителя.\n#!"
+
+ clan_harmonious_partition_succession_law:0 "Гармоничное наследование"
+ clan_harmonious_partition_succession_law_subname:0 "Все дети получают наследство"
+ clan_harmonious_partition_succession_law_effects:0 "\n#V $clan_harmonious_partition_succession_law$ предполагает, что львиную долю ваших [Concept( 'titles', 'титулов' )|E] получит [player_heir|El], остальное поделят между собой ваши дети.#!\n\n#weak $partition_base_desc$\n#!Наследник-игрок #emp всегда#! наследует не менее трех четвертей титулов покойного правителя.\n#!"
+
+ SUCCESSION_TITLE_LAW_WARNING:0 "@alert_icon! Любой титул с особым [Concept( 'title_succession', 'законом о наследовании' )|E] будет наследоваться в обход [Concept( 'succession_law', 'закона' )|E] державы"
