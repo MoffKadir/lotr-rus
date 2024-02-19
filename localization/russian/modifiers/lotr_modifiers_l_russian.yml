@@ -1,23 +1,23 @@
 ﻿l_russian:
  ### Additions to Vanilla ###
  steward_convince_dejure_potential_county_faith_alignment_tt:0 "Они считают нашу конфессию [Concept( 'faith_hostile', 'врагами' )|E] или [Concept( 'faith_evil', 'воплощённым злом' )|E]"
- nomad_war_band: "Наём кочевого отряда"
- nomad_war_band_desc: "Этот персонаж нанял банду кочевников для обучения своих войск, что повергло в ужас некоторых его вассалов."
+ nomad_war_band:0 "Наём кочевого отряда"
+ nomad_war_band_desc:0 "Этот персонаж нанял банду кочевников для обучения своих войск, что повергло в ужас некоторых его вассалов."
 
- rebuffed_nomad_war_band: "Отпор кочевым воинам"
- rebuffed_nomad_war_band_desc: "Во время странствий этот персонаж нагло обошёл большой отряд кочевых воинов в невероятном испытании на храбрость."
+ rebuffed_nomad_war_band:0 "Отпор кочевым воинам"
+ rebuffed_nomad_war_band_desc:0 "Во время странствий этот персонаж нагло обошёл большой отряд кочевых воинов в невероятном испытании на храбрость."
 
  ### Game Mechanics ###
  NUMENOREAN_BLOOD_HIGHER_TIER_REASON:0 "Нуменорская кровь вашего кандидата более чиста: $VALUE|=+0$"
  NUMENOREAN_BLOOD_LOWER_TIER_REASON:0 "Нуменорская кровь вашего кандидата слабее: $VALUE|=+0$"
  TOO_YOUNG_TO_MARRY:0 "[secondary_recipient.GetShortUIName|U] ещё слишком [Select_CString(secondary_recipient.IsFemale, 'молода', 'молод' )], чтобы [Select_CString(secondary_recipient.IsFemale, 'выходить замуж', 'жениться' )]: $VALUE|=+0$"
 
- offer_vassalization_interaction_aibehavior_different_religion_tt:0 "У вас другая [religion|El]:0 $VALUE|=+0$"
+ offer_vassalization_interaction_aibehavior_different_religion_tt:0 "У вас другая [religion|El]: $VALUE|=+0$"
 
 
- offer_vassalization_khand_vracarath_tt:0 "Вы правите державой $e_khand$:0 $VALUE|=+0$"
- offer_vassalization_lower_khand_vracarath_tt:0 "Вы правите державой $k_lower_khand$:0 $VALUE|=+0$"
- offer_vassalization_upper_khand_vracarath_tt:0 "Вы правите державой $k_upper_khand$:0 $VALUE|=+0$"
+ offer_vassalization_khand_vracarath_tt:0 "Вы правите державой $e_khand$: $VALUE|=+0$"
+ offer_vassalization_lower_khand_vracarath_tt:0 "Вы правите державой $k_lower_khand$: $VALUE|=+0$"
+ offer_vassalization_upper_khand_vracarath_tt:0 "Вы правите державой $k_upper_khand$: $VALUE|=+0$"
 
  WESTRON_LINGUA_FRANCA:0 "Общепринятый язык в западных землях: $VALUE|=+0$"
 
@@ -47,7 +47,7 @@
  siege_of_gondor:0 "Осада Гондора"
  siege_of_gondor_desc:0 "Гондор оказывается в тяжелом положении со стороны своих многочисленных врагов. И всё же доблесть Гондора не истощается и сплачивается, чтобы защитить себя."
  return_of_the_king_modifier:0 "Возвращение короля"
- return_of_the_king_modifier_desc:0 "Возвращение их короля обновило боевой дух [Concept( 'gondorian', 'гондорцев' )|E]. Теперь он сплачивает их для последнего удара по Тёмному Властелину и его прислужникам."
+ return_of_the_king_modifier_desc:0 "Возвращение их короля обновило боевой дух [Concept( 'gondorian', 'гондорцев' )|E]. Теперь он сплачивает их для последнего удара по Темному Властелину и его прислужникам."
 
  ### War Misc ###
  lotr_conquering_modifier:0 "Великие завоеватели"
@@ -126,7 +126,7 @@
  industrialised_isengard_3_province_modifier_desc:0 "Рабочие трудятся в постоянно растущей сети лабиринтов туннелей и пещер, добывая всё ценное из земли под Изенгардом."
  westfold_raided_county_modifier:0 "Налёты в Вестфолде"
  westfold_raided_county_modifier_desc:0 "Эта провинция недавно подверглась набегам, и её жители были разорены бандой организованных орков и дунландцев."
- seat_of_the_new_dark_lord_county_modifier:0 "Престол нового Тёмного Властелина"
+ seat_of_the_new_dark_lord_county_modifier:0 "Престол нового Темного Властелина"
  seat_of_the_new_dark_lord_county_modifier_desc:0 "Эта провинция была укреплена Саруманом как оплот его власти в качестве нового Темного Властелина Средиземья."
  dunland_capital_modifier:0 "Трон Верховного короля"
  dunland_capital_modifier_desc:0 "Верховный король Дунланда выбрал эту провинцию своей столицей, и в неё стекается множество поселенцев-дунландцев."
@@ -373,10 +373,10 @@
  # helped_the_soldiers_modifier_desc:0 "Вы использовали золото, полученное от дорогого друга, для поддержки своих солдат."
   
  ### Umbar modifiers
- castamiri_claim_failed:0 "False Heir of Castamir"
- castamiri_claim_failed_desc:0 "This character attempted to reclaim [gondor|E] as a descendant of Castamir, but failed."
- dynasty_castamiri_claim_failed_modifier:0 "Recently failed to Press the Casamiri Claim"
- dynasty_castamiri_claim_failed_modifier_desc:0 "The descendants of Castamir recently attempted to claim [gondor|E], but failed"
+ castamiri_claim_failed:0 "Лже-наследник Кастамира"
+ castamiri_claim_failed_desc:0 "Этот персонаж пытался вернуть [gondor|E] как потомок Кастамира, но потерпел неудачу."
+ dynasty_castamiri_claim_failed_modifier:0 "Провальное выдвижение претензии Кастамира"
+ dynasty_castamiri_claim_failed_modifier_desc:0 "Потомки Кастамира недавно попытались захватить [gondor|E], но потерпели неудачу."
 
  ### Travel
 
@@ -390,104 +390,104 @@
 
 ### Wastelands modifiers
 # Aragorn gets this modifier if he defeats Sauron
- easy_arnor_settle:0 "Repopulation of the Dúnedain"
- easy_arnor_settle_desc:0 "Due to [sauroncharacter|E] being defeated, the Dúnedain have started to increase in numbers."
+ easy_arnor_settle:0 "Заселение дунэдайн"
+ easy_arnor_settle_desc:0 "После поражения [Concept('sauroncharacter', 'Саурона')|E] численность дунэдайн начала расти."
 
 # Modifier gets applied to wilderness counties if settler has above ^^^ modifier
- arnor_settler_influx:0 "Influx of settlers"
- arnor_settler_influx_desc:0 "Due to an increase in the population, this realm is finding it easier to [colonise|E] [wilderness|E] counties"
+ arnor_settler_influx:0 "Приток поселенцев"
+ arnor_settler_influx_desc:0 "Из-за увеличения численности населения этой державе всё легче [Concept('colonise', 'колонизировать')|E] [Concept('wilderness', 'дикие земли')|E]"
 
 # Terrain
- halls_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ in Subterranean ([terrain|E])"
- halls_tax_mult:1 "[holding|E] [taxes|E] in Subterranean"
- 
+ halls_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ под землёй ([terrain|E])"
+ halls_tax_mult:1 "[taxes|E] с подземных [Concept('holding', 'владений')|E]"
+
  ## Dwarven modifiers
- recently_shaved:0 "Recently Shaved"
- recently_shaved_desc:0 "This character has been shaved so recently that the skin on their cheeks is still visible. The shame of it!"
- 
- reflection_of_durin:0 "Reflection of Durin"
- reflection_of_durin_desc:0 "While all of Durin's house are known for their longevity among Dwarfs, Some reach the typical age of greying unaltered. Maintaining their vigor for another century, as if a tiny reflection of their legendary father"
- 
- reflection_of_uri:0 "Reflection of Úri"
- reflection_of_uri_desc:0 "Firebeards are famously stubborn and uncompromising among Dwarfs. Perhaps emulating those characteristics of Úri is what empowers some rare Firebeards to stay standing when their peers have succumed to age."
+ recently_shaved:0 "Недавнее обритие"
+ recently_shaved_desc:0 "Этот персонаж был недавно обрит. На его щеках всё ещё видна кожа. Стыд и срам!"
 
- reflection_of_thrar:0 "Reflection of Thrár"
- reflection_of_thrar_desc:0 "Thrár is famous, first and foremost for his sheer pride and arrogance. Traits deserved, for his great realm of Bizarûldûm and his stature as senior king over the father of the Stonefoots. Could this character's worthy acomplishments and unfaultering pride in their worth, provide them with the strength to keep Aule's halls waiting?"
+ reflection_of_durin:0 "Отражение Дурина"
+ reflection_of_durin_desc:0 "Хотя все представители клана Дурина известны своим долголетием среди гномов, некоторые из них достигают старости без особых изменений. Они сохраняют бодрость ещё на протяжении столетия, словно крошечное отражение своего легендарного праотца"
 
- thorins_tomb_modifier:0 "Thorin's Tomb"
- thorins_tomb_modifier_desc:0 "Thorin Oakenshield rests embalmed on stone, clutching the Arkenstone and the sword Orcrist"
- 
- plundered_thorins_tomb_orcrist_modifier:0 "Thorin's Tomb plundered - Orcrist missing"
- plundered_thorins_tomb_orcrist_modifier_desc:0 "Thorin's tomb has been plundered and the sword Orcrist is missing. The Dwarves of Erebor will not rest until the artifact is recovered."
- 
- plundered_thorins_tomb_arkenstone_modifier:0 "Thorin's Tomb plundered - Arkenstone missing"
- plundered_thorins_tomb_arkenstone_modifier_desc:0 "Thorin's tomb has been plundered and the Arkenstone is missing. The Dwarves of Erebor will not rest until the artifact is recovered."
- 
- plundered_thorins_tomb_modifier:0 "Plundered Thorin's Tomb"
- plundered_thorins_tomb_modifier_desc:0 "This character has plundered the tomb of Thorin Oakenshield and earned the undying enmity of Dwarfkind"
- 
- kept_thorins_artifact_modifier:0 "Kept Thorin's artifacts"
- kept_thorins_artifact_modifier_desc:0 "This character has decided not to return Thorin's artifacts to his tomb and has brought upon himself the resentment of Dwarves"
- 
- dwarf_friend_modifier:0 "Dwarf-friend"
- dwarf_friend_modifier_desc:0 "This character has been named a friend to all Dwarfkind for their amicable actions"
- 
- restored_thorins_tomb_modifier:0 "Thorin's Tomb"
- restored_thorins_tomb_modifier_desc:0 "Thorin Oakenshield can rest peacefully now that his tomb has been restored to its original state."
+ reflection_of_uri:0 "Отражение Ори"
+ reflection_of_uri_desc:0 "Огнебороды прославились среди гномов своим упрямством и бескомпромиссностью. Возможно, именно подражение этим качествам Ори позволяют некоторым Огнебородым сохранять стойкость, когда их родичи теряют силы в преклонном возрасте."
 
- unifier_durins_folk:0 "High Kings of Durin's Folk"
- unifier_durins_folk_desc:0 "The line of Durin has unified the disparate groups of Longbeards under one High King, and has ushered in an age of unparalleled prosperity for their people."
+ reflection_of_thrar:0 "Отражение Трара"
+ reflection_of_thrar_desc:0 "Прежде всего, Трар знаменит своей гордыней и высокомерием. Эти свойства заслужены его великим королевством Бизарулдум и положением старшего короля над отцами Камненогов. Могут ли достойные достижения этого персонажа и его непоколебимая гордость за свои достоинства дать ему место в Чертогах Аулэ?"
+
+ thorins_tomb_modifier:0 "Гробница Торина"
+ thorins_tomb_modifier_desc:0 "Торин Дубощит покоится на камне, сжимая в руках Аркенстон и клинок Оркрист"
+
+ plundered_thorins_tomb_orcrist_modifier:0 "Гробница Торина разграблена - Оркрист пропал"
+ plundered_thorins_tomb_orcrist_modifier_desc:0 "Гробница Торина разграблена, а меч Оркрист пропал. Гномы Эребора не успокоятся, пока не найдут артефакт."
+
+ plundered_thorins_tomb_arkenstone_modifier:0 "Гробница Торина разграблена - Аркенстон пропал"
+ plundered_thorins_tomb_arkenstone_modifier_desc:0 "Гробница Торина разграблена, а Аркенстон пропал. Гномы Эребора не успокоятся, пока не найдут артефакт."
+
+ plundered_thorins_tomb_modifier:0 "Разграбил гробницу Торина"
+ plundered_thorins_tomb_modifier_desc:0 "Этот персонаж разграбил гробницу Торина Дубощита и заслужил неугасающую ненависть гномьего рода"
+
+ kept_thorins_artifact_modifier:0 "Хранит артефакты Торина"
+ kept_thorins_artifact_modifier_desc:0 "Этот персонаж решил не возвращать артефакты Торина в его гробницу и навлёк на себя недовольство гномов"
+
+ dwarf_friend_modifier:0 "Друг гномов"
+ dwarf_friend_modifier_desc:0 "Этот персонаж был назван другом всего гномьего рода за свои дружелюбные действия"
+
+ restored_thorins_tomb_modifier:0 "Гробница Торина"
+ restored_thorins_tomb_modifier_desc:0 "Теперь Торин Дубощит может спокойно продолжать почивать, ведь его гробница восстановлена в первозданном виде."
+
+ unifier_durins_folk:0 "Верховные короли Народа Дурина"
+ unifier_durins_folk_desc:0 "Потомки Дурина объединили разрозненных Длиннобородов под властью одного верховного короля и положили начало эпохе небывалого процветания их народа."
 
 
  ## Faith conversion modifier
- faith_conversion_cost_slave_to_saurons_will:0 "Slave to Sauron's will"
- faith_conversion_cost_gold_sickness:0 "Gold sickness"
- 
- lotr_munchies_sated_modifier:0 "Overate"
- lotr_munchies_sated_modifier_desc:0 "This character overindulged after being overcome by a sudden hunger."
+ faith_conversion_cost_slave_to_saurons_will:0 "Раб воли Саурона"
+ faith_conversion_cost_gold_sickness:0 "Золотой недуг"
 
- lotr_vanquished_modifier:0 "Vanquished"
- lotr_vanquished_modifier_desc:0 "This character has been vanquished and will take some time before they can manage their own realm again"
+ lotr_munchies_sated_modifier:0 "Переедание"
+ lotr_munchies_sated_modifier_desc:0 "Этот персонаж переел, когда его одолел внезапный голод."
+
+ lotr_vanquished_modifier:0 "Развоплощение"
+ lotr_vanquished_modifier_desc:0 "Этот персонаж был побеждён, и пройдёт некоторое время, прежде чем он снова сможет управлять своей державой"
 
  ## Great Fat One Faith Modifiers
- the_fat_one_well_fed_tier_1:0 "Nourished"
- the_fat_one_well_fed_tier_1_desc:0 "This character has enough food to keep them going, and not much more."
- the_fat_one_well_fed_tier_2:0 "Well-fed"
- the_fat_one_well_fed_tier_2_desc:0 "This character eats hearty meals, giving them the strength to pursue their ambitions."
- the_fat_one_well_fed_tier_3:0 "Plump"
- the_fat_one_well_fed_tier_3_desc:0 "This character is known to eat large and varied meals, and their figure has grown plump and protective."
- the_fat_one_well_fed_tier_4:0 "Bulging"
- the_fat_one_well_fed_tier_4_desc:0 "This character eats great quantities of food, and their hulking figure is an imposing form of muscle and fat."
- the_fat_one_well_fed_tier_5:0 "Obese"
- the_fat_one_well_fed_tier_5_desc:0 "Eating a truly monumental quantity of food, this goliath of fat is able to pack it away like no other. Come not between them and their food, lest you be broken by their weight!"
+ the_fat_one_well_fed_tier_1:0 "Сытый"
+ the_fat_one_well_fed_tier_1_desc:0 "У этого персонажа достаточно еды, чтобы продержаться, и не более того."
+ the_fat_one_well_fed_tier_2:0 "Хорошо откормлен"
+ the_fat_one_well_fed_tier_2_desc:0 "Этот персонаж питается сытно, что придаёт ему силы для реализации своих амбиций."
+ the_fat_one_well_fed_tier_3:0 "Пухлый"
+ the_fat_one_well_fed_tier_3_desc:0 "Этот персонаж известен тем, что ест много и разнообразно, а его фигура стала пухлой и защищённой."
+ the_fat_one_well_fed_tier_4:0 "Пузатый"
+ the_fat_one_well_fed_tier_4_desc:0 "Этот персонаж потребляет большое количество пищи, и его громадная фигура представляет собой внушительное сочетание мышц и жира."
+ the_fat_one_well_fed_tier_5:0 "Тучный"
+ the_fat_one_well_fed_tier_5_desc:0 "Съедая поистине колоссальное количество пищи, этот толстяк способен запастись ею как никто другой. Не вставайте между ним и его едой, чтобы он не случайно не раздавил вас!"
 
  ### Gundabad Decision Modifiers ###
- gundabad_rising_character_modifier:0 "Gundabad Rising"
- gundabad_rising_character_modifier_desc:0 "This character has overseen the consolidation of Gundabad and is organising large-scale efforts to restore its former power."
+ gundabad_rising_character_modifier:0 "Возвышение Гундабада"
+ gundabad_rising_character_modifier_desc:0 "Этот персонаж следит за укреплением Гундабада и прилагает немало усилий для восстановления его былого могущества."
 
- gundabad_war_forges_character_modifier:0 "War Forges of Gundabad"
- gundabad_war_forges_character_modifier_desc:0 "This character has fired up the ancient dwarven forges of Gundabad, driving great industry to fuel their great war machine." 
+ gundabad_war_forges_character_modifier:0 "Военные кузни Гундабада"
+ gundabad_war_forges_character_modifier_desc:0 "Этот персонаж разжёг древние гномьи кузни Гундабада, создав великую индустрию для подпитки своей великой военной машины."
 
- gundabad_ravaged_lands_county_modifier:0 "Ravaged Lands"
- gundabad_ravaged_lands_county_modifier_desc:0 "This county's native population has been ravaged by vengeful orc bands of Gundabad, who slaughtered and burned anything and anyone that dared to resist them." 
+ gundabad_ravaged_lands_county_modifier:0 "Разорённые земли"
+ gundabad_ravaged_lands_county_modifier_desc:0 "Коренное население графства было уничтожено мстительными отрядами орков Гундабада, которые истребляли и сжигали всех, кто осмеливался им сопротивляться." 
 
- durins_bane_modifier:0 "Durin's Bane"
- durins_bane_modifier_desc:0 "Durin's Bane slumbers in the depths of Khazad-dum. It may yet awaken once more..."
+ durins_bane_modifier:0 "Проклятие Дурина"
+ durins_bane_modifier_desc:0 "Проклятие Дурина дремлет в глубинах Кхазад-дума. Возможно, оно ещё пробудится..."
 
- bear_on_shrooms_loose:0 "Shroomed Bear"
- bear_on_shrooms_loose_desc:0 "A bear high on some of the local produce is terrorising this county"
+ bear_on_shrooms_loose:0 "Грибной медведь"
+ bear_on_shrooms_loose_desc:0 "Медведь, наевшийся местных грибов, наводит ужас на графство"
 
- lotr_harrowing_tales:0 "Harrowing Tales"
- lotr_harrowing_tales_desc:0 "You jump at every corner, expecting monstrous beings to jump out at"
+ lotr_harrowing_tales:0 "Ужасающие истории"
+ lotr_harrowing_tales_desc:0 "Вы ожидаете, что из каждого угла на вас набросятся чудовища"
 
- lotr_sprite_in_mines:0 "Mischievous Sprite"
- lotr_sprite_in_mines_desc:0 "A Sprite is stealing items from your mine, causing the locals to be suspicious of each other"
+ lotr_sprite_in_mines:0 "Озорной дух"
+ lotr_sprite_in_mines_desc:0 "Дух крадёт предметы из вашей шахты, заставляя местных шахтёров подозревать друг друга"
 
- lotr_sprite_driven_away:0 "Sprite driven away"
- lotr_sprite_driven_away_desc:0 "The locals claim that you have driven away a mischievous sprite that has been plagueing them"
+ lotr_sprite_driven_away:0 "Дух изгнан"
+ lotr_sprite_driven_away_desc:0 "Местные шахтёры утверждают, что вы прогнали озорного духа, который досаждал им"
 
- lotr_death_flower:0 "Death Flower"
- lotr_death_flower_desc:0 "This character has recieved a legendary 'death flower', causing unforseen effects"
+ lotr_death_flower:0 "Цветок смерти"
+ lotr_death_flower_desc:0 "Этот персонаж получил легендарный «цветок смерти», вызывающий непредвиденные эффекты"
 
- lotr_homegrown_food:0 "Homegrown Flowers"
- lotr_homegrown_food_desc:0 "This county has discovered a veritable feast in a few homegrown flowers"
+ lotr_homegrown_food:0 "Домашние цветы"
+ lotr_homegrown_food_desc:0 "В этом графстве организован настоящий праздник из нескольких домашних цветов"

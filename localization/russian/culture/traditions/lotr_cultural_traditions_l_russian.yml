@@ -12,8 +12,8 @@
  tradition_protectors_of_the_deep_desc:0 "Защитники Пади."
  culture_parameter_unlock_maa_guard_of_abrakhan:0 "Доступны [men_at_arms|El] - [GetMaA('guard_of_abrakhan').GetName]"
  culture_parameter_unlock_maa_risen_carrion:0 "Доступны [men_at_arms|El] - [GetMaA('risen_carrion').GetName]"
- culture_parameter_city_holding_fort_level_in_red_desert_bonus:0 "[fort_level|E] для [Concept( 'cities', 'городов' )|E] в [Concept( 'terrain', 'местности' )|E] Красная Пустыня:0 [fort_level_i]#P +[EmptyScope.ScriptValue('castle_holding_fort_level_in_jungle_bonus_value')|0]#!"
- culture_parameter_castle_holding_fort_level_in_red_desert_bonus:0 "[fort_level|E] для [Concept( 'castles', 'замков' )|E] в [Concept( 'terrain', 'местности' )|E] Красная Пустыня:0 [fort_level_i]#P +[EmptyScope.ScriptValue('castle_holding_fort_level_in_jungle_bonus_value')|0]#!"
+ culture_parameter_city_holding_fort_level_in_red_desert_bonus:0 "[fort_level|E] для [Concept( 'cities', 'городов' )|E] в [Concept( 'terrain', 'местности' )|E] Красная Пустыня: [fort_level_i]#P +[EmptyScope.ScriptValue('castle_holding_fort_level_in_jungle_bonus_value')|0]#!"
+ culture_parameter_castle_holding_fort_level_in_red_desert_bonus:0 "[fort_level|E] для [Concept( 'castles', 'замков' )|E] в [Concept( 'terrain', 'местности' )|E] Красная Пустыня: [fort_level_i]#P +[EmptyScope.ScriptValue('castle_holding_fort_level_in_jungle_bonus_value')|0]#!"
  tradition_dune_sea_warfare_name:0 "Военное дело Моря Дюн"
  tradition_dune_sea_warfare_desc:0 "Обитатели Моря Дюн адаптировались к палящему солнцу и безжалостным пескам неприветливой пустыни. На поле боя они представлены небольшими но подвижными отрядами, которые извлекают максимальную выгоду из местности, нанося молниеносные удары, чтобы затем отступить..."
  culture_parameter_unlock_maa_hasharin:0 "Доступны [men_at_arms|El] - [GetMaA('hasharin').GetName]"
@@ -59,7 +59,7 @@
  tradition_elf_friends_desc:0 "This culture has a history of being friends with elves."
 
  tradition_orcish_society_name:0 "Орочье сообщество"
- tradition_orcish_society_desc:0 "Грубые, жестокие и мелочные — три прилагательных, которыми можно описать «цивилизацию» построенную орками. Оркам, в принципе, всё равно с кем воевать:0 внешние враги и собственные сородичи в равной мере подвергаются убийствам, грабежам и предательству, невзирая на расу. В равной мере жестокие и хитрые, орки также отличаются нерациональностью, недальновидностью и исключительной алчностью. Случаи, когда орки объединялись ради общей великой цели можно посчитать по пальцам одной руки, да и тогда этого союза не хватало надолго."
+ tradition_orcish_society_desc:0 "Грубые, жестокие и мелочные — три прилагательных, которыми можно описать «цивилизацию» построенную орками. Оркам, в принципе, всё равно с кем воевать: внешние враги и собственные сородичи в равной мере подвергаются убийствам, грабежам и предательству, невзирая на расу. В равной мере жестокие и хитрые, орки также отличаются нерациональностью, недальновидностью и исключительной алчностью. Случаи, когда орки объединялись ради общей великой цели можно посчитать по пальцам одной руки, да и тогда этого союза не хватало надолго."
   
   ### Regional Traditions ### 
  tradition_riders_of_the_mark_name:0 "Всадники Марки"
@@ -137,7 +137,7 @@
  ### Harad Traditions ###
  culture_in_nafarati_desc:0 "Хотя бы #V 40%#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] должны располагаться в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('custom_nafarati').GetName]"
  tradition_nafarati_belligerence_name:0 "Воинственность Нафарати"
- tradition_nafarati_belligerence_desc:0 "Велике Джунгли Харада не пережили испытания временем. С их исчезновением и уменьшением обитаемых земель, Нафарати вынуждены были селиться все ближе и ближе к рекам, что стали им домом. Это не могло не ожесточить их общество и не привести к повышенной агрессивности. Зачастую они сталкиваются лбами:0 как с соседями, так и друг с другом."
+ tradition_nafarati_belligerence_desc:0 "Велике Джунгли Харада не пережили испытания временем. С их исчезновением и уменьшением обитаемых земель, Нафарати вынуждены были селиться все ближе и ближе к рекам, что стали им домом. Это не могло не ожесточить их общество и не привести к повышенной агрессивности. Зачастую они сталкиваются лбами: как с соседями, так и друг с другом."
   
  culture_in_bellakar_desc:0 "Хотя бы #V 40%#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] должны располагаться в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('custom_bellakar').GetName]"
  tradition_bellakarean_cities_name:0 "Города Беллакари"
@@ -156,10 +156,10 @@
  tradition_gorgoroth_plain_dwellers_desc:0 "Эти сухие, опустошённые вулканические плато формируют северо-западную треть Мордора. Они граничат с кряжами Эред Литуи и Эфель Дуат. Ландшафт Горгорота кардинально отличается от окружающих земель. Он может показаться иным миром по сравнению с тем же Итилиэном. К нормальной жизни здесь приспособлены лишь орки, что населяют местные равнины."
   
  tradition_mende_anduya_name:0 "Мэнде Андуйа"
- tradition_mende_anduya_desc:0 "«Кто такие дунэдайн? Что делает нуменорца таковым?»\n\nЭтот вопрос не раз занимал мудрецов Королевств-в-Изгнании. Может быть культурные особенности? Или что-то наследственное? Ответ, в зависимости от места и времени мог разниться, но факт оставался фактом:0 неугасающая мечта сохранить укоренившиеся традиции Нуменора непоколебима. Они нечасто заключают браки с представителями других культур, предпочитая укреплять своё древнее наследие."
- culture_parameter_dislikes_marrying_outside_of_cultural_heritage:0 "Согласие на [Concept( 'marriage', 'брак' )|E] с представителями других [Concept( 'cultures', 'культур' )|E]:0 #N -75#!"
+ tradition_mende_anduya_desc:0 "«Кто такие дунэдайн? Что делает нуменорца таковым?»\n\nЭтот вопрос не раз занимал мудрецов Королевств-в-Изгнании. Может быть культурные особенности? Или что-то наследственное? Ответ, в зависимости от места и времени мог разниться, но факт оставался фактом: неугасающая мечта сохранить укоренившиеся традиции Нуменора непоколебима. Они нечасто заключают браки с представителями других культур, предпочитая укреплять своё древнее наследие."
+ culture_parameter_dislikes_marrying_outside_of_cultural_heritage:0 "Согласие на [Concept( 'marriage', 'брак' )|E] с представителями других [Concept( 'cultures', 'культур' )|E]: #N -75#!"
  culture_parameter_ai_doesnt_marry_outside_cultural_heritage:0 "Крайне маловероятно заключить [Concept( 'marriages', 'брак' )|E] с представителями других [Concept( 'cultures', 'культур' )|E]"
- TRADITION_PENALTY_DUNEDAIN:0 "Другое [Concept( 'cultural', 'культурное' )|E] [heritage|E]:0 $VALUE|+=0$"
+ TRADITION_PENALTY_DUNEDAIN:0 "Другое [Concept( 'cultural', 'культурное' )|E] [heritage|E]: $VALUE|+=0$"
   
  tradition_blacknumenorean_legacy_name:0 "Наследие чёрных нуменорцев"
  tradition_blacknumenorean_legacy_desc:0 "Чёрыми нуменорцами, что первоначально именовались просто Людьми Короля, называют падшую группу потомков нуменорцев, сохранивших верность нуменорскому скипетру, но выступивших против Валар и взаимоотношений с эльфами. Они расселились по своим материковым колониям в Средиземье, став тиранами и поработителями по отношению к покорённым людям, которых считали более примитивными. Некоторые из этих Людей Короля, колонизировавшие континент, пережили Низвержение Нуменора и впредь назывались Чёрными нуменорцами."
@@ -228,13 +228,13 @@
 
  # Orc traditions 
  tradition_legions_of_gundabad_name:0 "Легионы Гундабада"
- tradition_legions_of_gundabad_desc:0 "Легионами Гундабада называют орочьи племена, которые захватили древний гномий город Гундабад. Они оказались под властью Ангмара около 1300 года Т.Э. Под влиянием Ангмара, они выработали более организованную армейскую структуру, которой управлял Король-чародей. И хотя Ангмару было суждено пасть, орки Гундабада сохранили свои воинственные традиции и стремились управлять горными орками севера, смяв их под подошвой своих тёмных легионов."
+ tradition_legions_of_gundabad_desc:0 "Легионами Гундабада называют орочьи племена, которые захватили древний гномий город Гундабад. Они оказались под властью Ангмара около 1300 года Т.Э. Под влиянием Ангмара, они выработали более организованную армейскую структуру, которой управлял Король-чародей. И хотя Ангмару было суждено пасть, орки Гундабада сохранили свои воинственные традиции и стремились управлять горными орками севера, смяв их под подошвой своих темных легионов."
  culture_parameter_unlock_maa_hunter_orcs_on_fell_wargs:0 "Доступны [men_at_arms|El] - [GetMaA('hunter_orcs_on_fell_wargs').GetName]"
  #culture_parameter_unlock_maa_gundabad_blackshields:0 "Can recruit [GetMaA('gundabad_blackshields').GetName] as [men_at_arms|E]"
  #culture_parameter_unlock_maa_gundabad_war_troll:0 "Can recruit [GetMaA('gundabad_war_troll').GetName] as [men_at_arms|E]"
   
  tradition_dush_hai_cabal_name:0 "Тайное общество Душ-хай"
- tradition_dush_hai_cabal_desc:0 "Те в рядах орков, кто практикует тёмные искусства, зовутся душ-хай. В обществе орков таких весьма и весьма немного. В тех нечастых случаях, когда их услуги не требовались вождям, они собирались вместе и формировали собственные тайные общества. Эти общества были довольно закрыты, а их участники ревностно охраняли даже малейшие успехи в своих познаниях тёмных искусств, но обладали великой силой, где бы общества не формировались."
+ tradition_dush_hai_cabal_desc:0 "Те в рядах орков, кто практикует темные искусства, зовутся душ-хай. В обществе орков таких весьма и весьма немного. В тех нечастых случаях, когда их услуги не требовались вождям, они собирались вместе и формировали собственные тайные общества. Эти общества были довольно закрыты, а их участники ревностно охраняли даже малейшие успехи в своих познаниях темных искусств, но обладали великой силой, где бы общества не формировались."
 
  # Dwarven traditions
  tradition_mining_fervour_name:0 "Mining Fervour"
@@ -254,7 +254,7 @@
  gwathuirim_heritage_trigger:0 "[culture|E] должна обладать гватуиримским [Concept( 'heritage', 'наследием' )|E]"
  hadorim_heritage_trigger:0 "[culture|E] должна обладать хадоримским [Concept( 'heritage', 'наследием' )|E]"
  northron_heritage_trigger:0 "[culture|E] должна обладать нортронским [Concept( 'heritage', 'наследием' )|E]"
- northern_horse_lord_heritages_trigger:0 "[culture|E] должна обладать [Concept( 'heritage', 'наследием' )|E] северных повелителей коней:0 хадоримским или дунландским"
+ northern_horse_lord_heritages_trigger:0 "[culture|E] должна обладать [Concept( 'heritage', 'наследием' )|E] северных повелителей коней: хадоримским или дунландским"
  horse_lord_heritages_trigger:0 "[culture|E] должна обладать [Concept( 'heritage', 'наследием' )|E] повелителей коней: хадоримским, дунландским или йориагским"
 
  # Fierce Independence Realms additional trigger

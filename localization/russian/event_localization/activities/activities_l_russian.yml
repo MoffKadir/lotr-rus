@@ -2,7 +2,7 @@
  # GUI
  ACTIVITY_WAITING_TOOLTIP:0 "[CHARACTER.GetName] приглашает.\nОжидание ответов на все приглашения.\n$DESC|F$\n\n#I Нажмите, чтобы показать подробности#! "
  ACTIVITY_TIME_LEFT:0 "#D Начало через $TIME|V$ дн#!"
- ACTIVITY_OWNED_BY:0 "#D Владелец:0 $NAME$#!"
+ ACTIVITY_OWNED_BY:0 "#D Владелец: $NAME$#!"
  ACTIVITY_FULL_NAME:0 "[ActivityType.GetNameNoTooltip] персонажа [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetNamePossessiveOrMy][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )]"
  ACTIVITY_SHORT_NAME:0 "[ActivityType.GetNameNoTooltip]"
   
@@ -10,53 +10,53 @@
 
  ACTIVITY_OPTION_TOOLTIP:0 "#T [ActivityOption.GetName]#![AddLine(ActivityOption.GetIsValidDesc( GetPlayer, ActivityPlanner.GetSelectedSpecialOption ))]\n[ActivityOption.GetDescription]"
  #Ugly hack, ActivityPlanner needs to be used before ActivityOption for the contexts to work properly, for some reason.
- ACTIVITY_OPTION_DESC: "[ActivityPlanner.NoOp][ActivityOption.GetDescription]"
+ ACTIVITY_OPTION_DESC:0 "[ActivityPlanner.NoOp][ActivityOption.GetDescription]"
   
  activity_special_type:0 "[Activity.Custom('GetActivitySpecialType')]"
  activity_special_type_desc:0 "[Activity.Custom('GetActivitySpecialTypeDesc')]"
 
  #Debug Strings 
  ## Personality Values 
- debug_gui.activity_weight.ai_value.sociability:0 "Моя общительность:0 $VALUE|+0$"
- debug_gui.activity_weight.ai_value.greed:0 "Моя жадность:0 $VALUE|+0$"
- debug_gui.activity_weight.ai_value.rationality:0 "Моя рациональность:0 $VALUE|+0$"
- debug_gui.activity_weight.ai_value.boldness:0 "Моя храбрость:0 $VALUE|+0$"
+ debug_gui.activity_weight.ai_value.sociability:0 "Моя общительность: $VALUE|+0$"
+ debug_gui.activity_weight.ai_value.greed:0 "Моя жадность: $VALUE|+0$"
+ debug_gui.activity_weight.ai_value.rationality:0 "Моя рациональность: $VALUE|+0$"
+ debug_gui.activity_weight.ai_value.boldness:0 "Моя храбрость: $VALUE|+0$"
  ## Traits 
  ### Personality 
- debug_gui.activity_weight.trait.gluttonous:0 "Мое свойство — [GetTrait('gluttonous').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.ambitious:0 "Мое свойство — [GetTrait('ambitious').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.greedy:0 "Мое свойство — [GetTrait('greedy').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.generous:0 "Мое свойство — [GetTrait('generous').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.temperate:0 "У меня есть свойство «[GetTrait('temperate').GetName( GetNullCharacter )]»:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.humble:0 "Мое свойство — [GetTrait('humble').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.arrogant:0 "Мое свойство — [GetTrait('arrogant').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.gregarious:0 "Мое свойство — [GetTrait('gregarious').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.shy:0 "Мое свойство — [GetTrait('shy').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
+ debug_gui.activity_weight.trait.gluttonous:0 "Мое свойство — [GetTrait('gluttonous').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.ambitious:0 "Мое свойство — [GetTrait('ambitious').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.greedy:0 "Мое свойство — [GetTrait('greedy').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.generous:0 "Мое свойство — [GetTrait('generous').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.temperate:0 "У меня есть свойство «[GetTrait('temperate').GetName( GetNullCharacter )]»: $VALUE|+0$"
+ debug_gui.activity_weight.trait.humble:0 "Мое свойство — [GetTrait('humble').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.arrogant:0 "Мое свойство — [GetTrait('arrogant').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.gregarious:0 "Мое свойство — [GetTrait('gregarious').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.shy:0 "Мое свойство — [GetTrait('shy').GetName( GetNullCharacter )|l]: $VALUE|+0$"
   ### Stress 
- debug_gui.activity_weight.trait.comfort_eater:0 "Мое свойство — [GetTrait('comfort_eater').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.profligate:0 "Мое свойство — [GetTrait('profligate').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.improvident.giving_circumstances:0 "Мое свойство — [GetTrait('improvident').GetName( GetNullCharacter )|l], а свое присутствие я считаю даром:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.inappetetic:0 "Мое свойство — [GetTrait('inappetetic').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.drunkard:0 "Мое свойство — [GetTrait('drunkard').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.trait.hashishiyah:0 "Мое свойство — [GetTrait('comfort_eater').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
+ debug_gui.activity_weight.trait.comfort_eater:0 "Мое свойство — [GetTrait('comfort_eater').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.profligate:0 "Мое свойство — [GetTrait('profligate').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.improvident.giving_circumstances:0 "Мое свойство — [GetTrait('improvident').GetName( GetNullCharacter )|l], а свое присутствие я считаю даром: $VALUE|+0$"
+ debug_gui.activity_weight.trait.inappetetic:0 "Мое свойство — [GetTrait('inappetetic').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.drunkard:0 "Мое свойство — [GetTrait('drunkard').GetName( GetNullCharacter )|l]: $VALUE|+0$"
+ debug_gui.activity_weight.trait.hashishiyah:0 "Мое свойство — [GetTrait('comfort_eater').GetName( GetNullCharacter )|l]: $VALUE|+0$"
   ### Lifestyle 
- debug_gui.activity_weight.trait.lifestyle_reveler:0 "Мое свойство — [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )|l]:0 $VALUE|+0$"
+ debug_gui.activity_weight.trait.lifestyle_reveler:0 "Мое свойство — [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )|l]: $VALUE|+0$"
   ## Modifiers 
- debug_gui.activity_weight.modifier.losing_weight:0 "Я пытаюсь сбросить вес:0 $VALUE|+0$"
- debug_gui.activity_weight.modifier.gaining_weight:0 "Я пытаюсь набрать вес:0 $VALUE|+0$"
+ debug_gui.activity_weight.modifier.losing_weight:0 "Я пытаюсь сбросить вес: $VALUE|+0$"
+ debug_gui.activity_weight.modifier.gaining_weight:0 "Я пытаюсь набрать вес: $VALUE|+0$"
   ## Stress Level 
- debug_gui.activity_weight.stress.more_than_low:0 "Я [Concept( 'stressed', 'нервничаю' )|E]:0 $VALUE|+0$"
+ debug_gui.activity_weight.stress.more_than_low:0 "Я [Concept( 'stressed', 'нервничаю' )|E]: $VALUE|+0$"
   ## Faith 
   ### Tenets 
- debug_gui.activity_weight.faith.tenet_ritual_celebrations:0 "В моей [Concept( 'faith', 'конфессии' )|E] есть [GetFaithDoctrine('tenet_ritual_celebrations').GetBaseName|l]:0 $VALUE|+0$"
- debug_gui.activity_weight.faith.tenet_hedonistic:0 "В моей [Concept( 'faith', 'конфессии' )|E] есть [GetFaithDoctrine('tenet_hedonistic').GetBaseName|l]:0 $VALUE|+0$"
+ debug_gui.activity_weight.faith.tenet_ritual_celebrations:0 "В моей [Concept( 'faith', 'конфессии' )|E] есть [GetFaithDoctrine('tenet_ritual_celebrations').GetBaseName|l]: $VALUE|+0$"
+ debug_gui.activity_weight.faith.tenet_hedonistic:0 "В моей [Concept( 'faith', 'конфессии' )|E] есть [GetFaithDoctrine('tenet_hedonistic').GetBaseName|l]: $VALUE|+0$"
   ## Gold 
- debug_gui.activity_weight.gold.prefers_cheapness:0 "У меня мало свободного [Concept( 'gold', 'золота' )|E]:0 $VALUE|+0$"
- debug_gui.activity_weight.gold.prefers_middling:0 "У меня достаточно [Concept( 'gold', 'золота' )|E] на что-нибудь приличное:0 $VALUE|+0$"
- debug_gui.activity_weight.gold.prefers_expense:0 "У меня много свободного [Concept( 'gold', 'золота' )|E]:0  $VALUE|+0$"
+ debug_gui.activity_weight.gold.prefers_cheapness:0 "У меня мало свободного [Concept( 'gold', 'золота' )|E]: $VALUE|+0$"
+ debug_gui.activity_weight.gold.prefers_middling:0 "У меня достаточно [Concept( 'gold', 'золота' )|E] на что-нибудь приличное: $VALUE|+0$"
+ debug_gui.activity_weight.gold.prefers_expense:0 "У меня много свободного [Concept( 'gold', 'золота' )|E]:  $VALUE|+0$"
   ## Struggles 
- debug_gui.activity_weight.struggle.wants_to_escalate:0 "Я хочу усилить [Concept( 'struggle', 'борьбу' )|E]:0 $VALUE|+0$"
- debug_gui.activity_weight.struggle.wants_to_deescalate:0 "Я хочу ослабить [Concept( 'struggle', 'борьбу' )|E]:0 $VALUE|+0$"
+ debug_gui.activity_weight.struggle.wants_to_escalate:0 "Я хочу усилить [Concept( 'struggle', 'борьбу' )|E]: $VALUE|+0$"
+ debug_gui.activity_weight.struggle.wants_to_deescalate:0 "Я хочу ослабить [Concept( 'struggle', 'борьбу' )|E]: $VALUE|+0$"
 
 
 
@@ -89,7 +89,7 @@
  honorary_guest_regular:0 "$honorary_guest$"
  honorary_guest_regular_for_host:0 "$honorary_guest$"
  honorary_guest_desc:0 "На [GetActivityType('activity_feast').GetName] может прийти $honorary_guest$, и это будет особо отмечено на празднестве. Главная часть банкета — тост — поднимет его [Concept( 'prestige', 'престиж' )|E]. Но будьте осторожны — это может оказаться ловушкой. Если организатор замыслил $feast_type_murder$, почетного гостя могут убить."
- honorary_guest_desc_for_host:0 "Без почетного гостя кровавых пиров не бывает. Организатор тщательно выбирает жертву и решает, погибнет только она или умрет вся свита. Но необходимо быть начеку:0 если кто-то упустит жертву, последствия могут быть совсем иными."
+ honorary_guest_desc_for_host:0 "Без почетного гостя кровавых пиров не бывает. Организатор тщательно выбирает жертву и решает, погибнет только она или умрет вся свита. Но необходимо быть начеку: если кто-то упустит жертву, последствия могут быть совсем иными."
  honorary_guest_regular_desc:0 "$honorary_guest_desc$"
  honorary_guest_regular_desc_for_host:0 "$honorary_guest_desc$"
  activity_window_character_honorary_guest:0 "[SelectLocalization( ObjectsEqual(Activity.GetHost.Self, GetPlayer), '$honorary_guest_for_host$', '[honorary_guest|E]' )]\n[Character.GetShortUINameNoTooltip|U]"
@@ -181,7 +181,7 @@
  activity_gruesome_festival_selection_tooltip:0 "Вы приглашаете своих подданных принять участие в весьма дорогостоящем священном ритуале"
  activity_gruesome_festival_desc:0 "Пора всем жителям державы [GetPlayer.GetPrimaryTitle.GetNameNoTierNoTooltip] собраться для жертвоприношения. Эти ритуалы не только объединяют верующих, но и лишний раз подтверждают, что я [GetPlayer.GetTitleAsNameNoTooltip|l] всех этих земель."
  activity_gruesome_festival_owner:0 "Организатор"
- activity_gruesome_festival_host_desc:0 "\nВы устраиваете [GetPlayer.Custom('GruesomeFestivalName')], что подразумевает:\n#indent_newline:0 $EFFECT_LIST_BULLET$ Необходимость определиться с размахом празднества\n#indent_newline:0 $EFFECT_LIST_BULLET$ Необходимость выбрать жертвенных животных, среди которых могут быть даже [Concept( 'prisoners', 'узники' )|E], что будут принесены в жертву как [designate_chief_sacrifice_chief_sacrifice|El]\n#indent_newline:0 $EFFECT_LIST_BULLET$ Улучшение или ухудшение [Concept( 'county_opinion', 'мнения графства' )|E] и [Concept( 'opinion', 'мнения' )|E] [Concept( 'character', 'персонажа' )|E] в зависимости от [Concept( 'core_tenets', 'основных догматов' )|E] [Concept( 'faith', 'конфессии' )|E] ваших подданных."
+ activity_gruesome_festival_host_desc:0 "\nВы устраиваете [GetPlayer.Custom('GruesomeFestivalName')], что подразумевает:\n#indent_newline: $EFFECT_LIST_BULLET$ Необходимость определиться с размахом празднества\n#indent_newline: $EFFECT_LIST_BULLET$ Необходимость выбрать жертвенных животных, среди которых могут быть даже [Concept( 'prisoners', 'узники' )|E], что будут принесены в жертву как [designate_chief_sacrifice_chief_sacrifice|El]\n#indent_newline: $EFFECT_LIST_BULLET$ Улучшение или ухудшение [Concept( 'county_opinion', 'мнения графства' )|E] и [Concept( 'opinion', 'мнения' )|E] [Concept( 'character', 'персонажа' )|E] в зависимости от [Concept( 'core_tenets', 'основных догматов' )|E] [Concept( 'faith', 'конфессии' )|E] ваших подданных."
  activity_gruesome_festival_guest_help_text:0 "Приглашенные [Concept( 'guests', 'гости' )|E] примут участие в жертвоприношении и последующем пиру. Их [Concept( 'opinion', 'мнение' )|E] о вас либо вырастет, либо упадет в зависимости от [Concept( 'core_tenets', 'догматов' )|E] [Concept( 'faith', 'конфессии' )|E]."
  activity_gruesome_festival_province_desc:0 "$gruesome_festival_size_small_desc$"
  activity_gruesome_festival_fallback_name:0 "Ритуальное жертвоприношение"
@@ -228,7 +228,7 @@
  activity_invite_rule_landless_lovers:0 "$activity_invite_rule_lovers$ без земель"
  activity_invite_rule_landless_close_family:0 "$activity_invite_rule_close_family$ без земель"
  activity_invite_rule_player_heir:0 "Наследник"
- activity_invite_rule_hof:0 "Глава конфессии / Гэндальф (только Эруини)" #LotR
+ activity_invite_rule_hof:0 "Глава конфессии / Гэндальф (только Эрухини)" #LotR
  activity_invite_rule_all_lieges:0 "Все сюзерены"
  activity_invite_spouses_close_family:0 "Близкие родственники супругов"
  activity_invite_spouses_extended_family:0 "Дальние родственники супругов"
@@ -254,7 +254,7 @@
   
  is_healthy_tt:0 "Пышет здоровьем"
   
- hunt_rampage_bodyguard_log_title:0 "#D TODO_CD:0 hunt_rampage_bodyguard_log_title#!"
+ hunt_rampage_bodyguard_log_title:0 "#D TODO_CD: hunt_rampage_bodyguard_log_title#!"
  level_5_reward_tt_title:0 "Конец тура"
  level_4_reward_tt_title:0 "$level_5_reward_tt_title$"
  level_3_reward_tt_title:0 "$level_5_reward_tt_title$"
@@ -282,8 +282,8 @@
  tournament_recital_contest_cost_discount_desc:0 "$tournament_board_games_contest_cost_discount_desc$"
  tournament_recital_contest_cost_low_discount_desc:0 "$tournament_board_games_contest_cost_low_discount_desc$"
   # EP2 Era Tooltips 
- increased_activity_cost:0 "Стоимость [Concept( 'activities', 'занятий' )|E]:0 [gold_i]#negative_value +25%#!"
- activity_cost_scale_by_era_desc:0 "Эпоха:0 [GetPlayer.GetCulture.GetCultureEra.GetNameNoTooltip]"
+ increased_activity_cost:0 "Стоимость [Concept( 'activities', 'занятий' )|E]: [gold_i]#negative_value +25%#!"
+ activity_cost_scale_by_era_desc:0 "Эпоха: [GetPlayer.GetCulture.GetCultureEra.GetNameNoTooltip]"
  activity_cost_scale_by_tier_desc:0 "[GetPlayer.GetPrimaryTitle.GetTierAsNameNoTooltip]"
   
   # Predicted Cost descs shown in UI for each activity 
