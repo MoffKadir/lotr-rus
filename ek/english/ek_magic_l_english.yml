@@ -154,7 +154,7 @@
  ##  Magicka  ##
  ##  Flat  ##
  magicka_arcana:0 "[arcana|E]"
- magicka_ritual:0 "[rituals|E]]"
+ magicka_ritual:0 "[rituals|E]"
 
  ##  Upkeep  ##
  magicka_flat_ritual:0 "[ritual|E]: [GetModifier(Concatenate('modifier_ritual_', Scope.GetFlagName)).GetNameWithTooltip]"
@@ -258,6 +258,11 @@
  TRAIT_FLAG_DESC_add_ritual_slot_1:0 "Ritual Slots: #P +1#!"
  TRAIT_FLAG_DESC_add_ritual_slot_2:0 "Ritual Slots: #P +2#!"
 
+ TRAIT_FLAG_DESC_add_praxis_5:0 "[praxis|E]: [praxis_i]#P +5#!"
+ TRAIT_FLAG_DESC_add_praxis_10:0 "[praxis|E]: [praxis_i]#P +10#!"
+ TRAIT_FLAG_DESC_subtract_praxis_15:0 "[praxis|E]: [praxis_i]#N -15#!"
+ TRAIT_FLAG_DESC_subtract_praxis_30:0 "[praxis|E]: [praxis_i]#N -30#!"
+
  stage_1:0 "Novice"
  stage_2:0 "Apprentice"
  stage_3:0 "Journeyman"
@@ -306,7 +311,7 @@
  spell_name:0 "[Localize( Concatenate( Scope.GetFlagName, '_name' ) )]"
  spell_cost:0 "#size:11 [magicka_i] #! [EmptyScope.ScriptValue(Concatenate( Scope.GetFlagName, '_cost' ))|0]"
  spell_hostile:0 "#N [Localize( Concatenate( Scope.GetFlagName, '_name' ) )] is considered hostile#!"
- spell_province:0 "[Localize( Concatenate( Scope.GetFlagName, '_name' ) )] is cast on a [county|E]"
+ spell_province:0 "[Localize( Concatenate( Scope.GetFlagName, '_name' ) )] is cast on a [county|E].\n\nTo cast it you must personally be present at the location, through [travel|E] or by leading an [army|E]."
  spell_tier:0 "[Localize( Concatenate( Scope.GetFlagName, '_name' ) )] is a $spell_tier_name$ level spell"
  spell_tier_name:0 "[AddTextIf( EqualTo_CFixedPoint( EmptyScope.ScriptValue(Concatenate(Scope.GetFlagName, '_level') ), '(CFixedPoint)1' ), '$spell_tier_1$')][AddTextIf( EqualTo_CFixedPoint( EmptyScope.ScriptValue(Concatenate(Scope.GetFlagName, '_level')), '(CFixedPoint)2' ), '$spell_tier_2$')][AddTextIf( EqualTo_CFixedPoint( EmptyScope.ScriptValue(Concatenate(Scope.GetFlagName, '_level')), '(CFixedPoint)3' ), '$spell_tier_3$')][AddTextIf( EqualTo_CFixedPoint( EmptyScope.ScriptValue(Concatenate(Scope.GetFlagName, '_level')), '(CFixedPoint)4' ), '$spell_tier_4$')][AddTextIf( EqualTo_CFixedPoint( EmptyScope.ScriptValue(Concatenate(Scope.GetFlagName, '_level')), '(CFixedPoint)5' ), '$spell_tier_5$')]"
  spell_tier_1:0 "Novice"
@@ -495,7 +500,7 @@
  spell_cure_disease_desc:0 "Cures all [greater_illnesses|E] the target suffers from"
  spell_mend_wound_desc:0 "Mends wounds and makes infections disappear"
  spell_remedy_illness_desc:0 "Remedies all [lesser_illness|E], not having any effect on [greater_illnesses|E]"
- spell_increase_wounds_desc:0 "Uses elemental magic to inflict wounds upon a distant target\n\n#N"
+ spell_increase_wounds_desc:0 "Uses elemental magic to inflict wounds upon a distant target"
  spell_dispel_desc:0 "Removes the effect of hostile [spells|E] cast upon you"
  spell_remove_curse_desc:0 "Remove a terrible [curse|E] placed by malevolent forces"
 

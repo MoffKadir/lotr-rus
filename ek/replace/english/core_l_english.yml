@@ -4,12 +4,13 @@
  GOLD_COST_LONG:0 "Gold Drakes: [gold_i] $VALUE|0$" # EK EDIT
  GOLD_TEXT:0 "$VALUE|0$ Gold Drakes" # EK EDIT
  SCOPE_DYNASTY:1 "[dynasty|E] [ROOT.Dynasty.GetBaseName]:"
- GAME_DATE_STRING:0 "$DAY|O$ of $MONTH$, [Select_CString( GreaterThan_int32( '(int32)$YEAR$', '(int32)2920' ), '2E', '1E' )] [Subtract_int32( '(int32)$YEAR$', Multiply_int32( Subtract_int32( BoolTo1And2( GreaterThan_int32( '(int32)$YEAR$', '(int32)2920' ) ), '(int32)1' ), '(int32)2920' ) )]"
- GAME_DATE_STRING_SHORT:0 "$DAY$ $MONTH_SHORT$ [Select_CString( GreaterThan_int32( '(int32)$YEAR$', '(int32)2920' ), '2E', '1E' )] [Subtract_int32( '(int32)$YEAR$', Multiply_int32( Subtract_int32( BoolTo1And2( GreaterThan_int32( '(int32)$YEAR$', '(int32)2920' ) ), '(int32)1' ), '(int32)2920' ) )]" # EK Era System
- GAME_DATE_STRING_LONG:2 "$DAY|O$ of $MONTH$, [Select_CString( GreaterThan_int32( '(int32)$YEAR$', '(int32)2920' ), '2E', '1E' )] [Subtract_int32( '(int32)$YEAR$', Multiply_int32( Subtract_int32( BoolTo1And2( GreaterThan_int32( '(int32)$YEAR$', '(int32)2920' ) ), '(int32)1' ), '(int32)2920' ) )]"
+ GAME_DATE_STRING:0 "$DAY|O$ of $MONTH$, $ERA_STRING_YEAR_IG_CONCAT$"
+ GAME_DATE_STRING_SHORT:0 "$DAY$ $MONTH_SHORT$ $ERA_STRING_YEAR_IG_CONCAT$ "
+ GAME_DATE_STRING_LONG:2 "$DAY|O$ of $MONTH$, $ERA_STRING_YEAR_IG_CONCAT$ "
  2E_DATE:0 "2E [Subtract_int32( GetCurrentDate.GetYear, '(int32)2920' )]" # EK Era System
  
  game_concept_barony:0 "Lordship"
  game_concept_baronies:0 "Lordships"
  game_concept_barons:0 "Lords"
  game_concept_baron:0 "Lord"
+ game_concept_barony_desc:0 "$game_concept_baronies$ are the lowest ranked [titles|E] and have the smallest footprint on the map, organized into larger [counties|E].\n\n$game_concept_barony$ Titles must always have a [holder|E] if they contain a [holding|E]."

@@ -179,6 +179,12 @@
  join_cote_decision_faith_hostility:0 "Your [faith|E] gets #P -5#! [faith_hostility|E] with faiths with the Council of the Eight as [head_of_faith|E]"
  faith_not_considered_evil:0 "Your [faith|E] is not considered [faith_evil|E] by the Arch-Primate"
 
+ consult_xarxeans_decision:0 "Consult the Xarxeans"
+ consult_xarxeans_decision_desc:0 "Succession within a ceremoniarchal framework can be a complicated thing, taking into consideration factors as varied as true descent, purity of conduct, alignment with sacred numbers and so much more... unforeseen inheritance has been known to happen once or twice.\n\nBut the Priesthood of Xarxes, entrusted with the secret formulae and the task of ancestry-keeping, can always tell me who among my scions is most eligible."
+ consult_xarxeans_decision_tt:0 "Who will our next Ceremoniarch be?"
+ consult_xarxeans_decision_effect:0 "You will be told, should [succession|E] take place at this moment, who your [heir|E] would be."
+ consult_xarxeans_decision_confirm:0 "Oh, scribes of Auri-El!"
+
 # Artifacts
 
  crown_verity_decision:0 "Judgement of Verity"
@@ -303,10 +309,24 @@
  abdicate_decision_desc_old_age:0 "I can feel the burden of my age growing heavier with every passing day and I can't deny that I am no longer the [ROOT.Char.GetWomanMan] I once was. Am I really the best choice to rule about my realm any longer? Perhaps it is time to make place for someone younger than me."
  abdicate_decision_desc_long_rule:0 "I have ruled this for a long time now and I sometimes wonder if I really want to bear the burden of my titles any longer. My fate is chained to that of my realm and there are days when I feel weighted down by my responsibilities. Do I really have to continue like that?"
  abdicate_decision_tooltip:2 "Resign form your titles and let your heir take over."
- abdicate_decision_effect_tooltip:0 "@warning_icon! You will remove yourself as a ruler and continue the game as your heir."
+ abdicate_decision_effect_tooltip:0 "@warning_icon! You will remove yourself as a ruler and continue the game as your heir"
  abdicate_decision_confirm:0 "It's for the best of the realm."
- abdicate_old_age:0 "You have an [aging_modifier|E] equvivalent of 75 human years or older."
+ abdicate_old_age:0 "You have an [ek_age_modifier|E] equivalent of 75 human years or older"
  abdicate_long_rule:0 "You have ruled for 50 years or longer."
- abdicate_old_age_infirm:0 "You have an [aging_modifier|E] equvivalent of 60 human years or older."
+ abdicate_old_age_infirm:0 "You have an [ek_age_modifier|E] equivalent of 60 human years or older"
  abdicate_long_rule_infirm:0 "You have ruled for 40 years or longer."
  abdicate_scales_of_power:0 "Your regent does not oppose your abdication."
+
+# Secret revelation
+ reveal_vampire_secret_decision:0 "Reveal as a Vampire"
+ reveal_vampire_secret_decision_desc:0 "Long have I lived in secrecy, hiding my true nature as a creature of the night. Now I find myself in company of the likeminded, people from whom I need not hide. Is it then time for me to come forth into the open?"
+ reveal_vampire_secret_decision_tooltip:0 "Reveal your true nature"
+ reveal_vampire_secret_decision_confirm:0 "#italic Dramatic Cape Swish#!"
+ reveal_vampire_secret_decision_effect:0 "Reveal yourself to the world as a [GetTrait('vampire_character').GetName(GetNullCharacter)]"
+
+ reveal_lycan_secret_decision:0 "Reveal as a Lycanthrope"
+ reveal_lycan_secret_decision_desc:0 "Long have I lived in secrecy, hiding my true nature as a manbeast. Now I find myself in company of the likeminded, people from whom I need not hide. Is it then time for me to come forth into the open?"
+ reveal_lycan_secret_decision_tooltip:0 "Reveal your true nature"
+ reveal_lycan_secret_decision_confirm:0 "#italic Howl at the moons#!"
+ reveal_lycan_secret_decision_effect:0 "Reveal yourself to the world as a [GetTrait('lycan_character').GetName(GetNullCharacter)]"
+ 

@@ -29,6 +29,12 @@
  culture_parameter_peasant_mystic_revolts_more_common:0 "Same-[culture|E] [peasant_factions|E] are more common and are often led by mystics"
  culture_parameter_tolerant_of_pariahs:0 "Cannot use the #V 'Expel Monsters'#! [casus_belli|E] against [pariahs|E] or [pariah_discriminate|E] them without it being considered [tyranny|E]"
  culture_parameter_danger_sense_save:0 "Characters of this [culture|E] are more likely to survive [GetScheme('murder').GetTypeName] [intrigue_i] attempts"
+ culture_parameter_can_join_legion:0 "[SelectLocalization( HasDlcFeature( 'the_northern_lords' ), 'can_join_legion_dlc_yes', 'can_join_legion_dlc_no' )]"
+ can_join_legion_dlc_yes:0 "Characters of this [culture|E] may use the #V Send to the Imperial Legion#! [dynast_interaction|E]"
+ can_join_legion_dlc_no:0 ""
+ culture_parameter_can_be_legion_holder:0 "[SelectLocalization( HasDlcFeature( 'the_northern_lords' ), 'can_hold_legion_dlc_yes', 'can_hold_legion_dlc_no' )]"
+ can_hold_legion_dlc_yes:0 "While a Character of this [culture|E] holds [GetTitleByKey('c_bastion').GetNameNoTier], the #V Send to the Imperial Legion#! [dynast_interaction|E] is active"
+ can_hold_legion_dlc_no:0 ""
 
 ## GOVERNMENT PARAMETERS
  culture_parameter_unlocks_feudal_government:0 "Unlocks the [feudal_government|E] for [autocratic|E] [rulers|E]"
@@ -69,8 +75,12 @@
  can_not_host_recital_contests_custom_effect_description_NO_TOTO_DLC:0 ""
 
 ## LEGACY PARAMETERS
- culture_parameter_unlock_pillage_legacy:0 "A [dynast|E] of this [culture|E] can use the #V $fp1_pillage_legacy_track_name$#! [dynasty_perk|E]"
- culture_parameter_unlock_urbanism_legacy:0 "A [dynast|E] of this [culture|E] can use the #V $fp2_urbanism_legacy_track_name$#! [dynasty_perk|E] if the #V Fate of Iberia#! DLC is #P Active#!"
+ culture_parameter_unlock_pillage_legacy:0 "[SelectLocalization( HasDlcFeature( 'the_northern_lords' ), 'unlock_pillage_legacy_dlc_yes', 'unlock_pillage_legacy_dlc_no' )]"
+ unlock_pillage_legacy_dlc_yes:0 "A [dynast|E] of this [culture|E] can use the #V $fp1_pillage_legacy_track_name$#! [dynasty_perk|E]"
+ unlock_pillage_legacy_dlc_no:0 ""
+ culture_parameter_unlock_urbanism_legacy:0 "[SelectLocalization( HasDlcFeature( 'the_fate_of_iberia' ), 'unlock_urbanism_legacy_dlc_yes', 'unlock_urbanism_legacy_dlc_no' )]"
+ unlock_urbanism_legacy_dlc_yes:0 "A [dynast|E] of this [culture|E] can use the #V $fp2_urbanism_legacy_track_name$#! [dynasty_perk|E]"
+ unlock_urbanism_legacy_dlc_no:0 ""
 
 ## MAA PARAMETERS
 # Innovation parameters
@@ -78,7 +88,7 @@
  culture_parameter_unlock_innovation_corsair_traditions:0 "Unlocks the $innovation_corsair_traditions$ [innovation|E] which allows the recruiting of [GetMaA('abecean_pirates').GetName] [men_at_arms|E]"
 
 # Tradition parameters
- culture_parameter_unlock_maa_nedic_headhunters:0 "Can recruit [GetMaA('south_nedic_headhunters').GetName], [GetMaA('central_nedic_headhunters').GetName] or [GetMaA('north_nedic_headhunters').GetName] as [men_at_arms|E] depending on the branch of the Nedic [heritage|E] they belong to."
+ culture_parameter_unlock_maa_nedic_headhunters:0 "Can recruit [GetMaA('south_nedic_headhunters').GetName], [GetMaA('central_nedic_headhunters').GetName] or [GetMaA('north_nedic_headhunters').GetName] as [men_at_arms|E] depending on the branch of the Nedic [heritage|E] they belong to or descend from."
  culture_parameter_unlock_maa_jungle_peltasts:0 "Can recruit [GetMaA('jungle_peltasts').GetName] as [men_at_arms|E]"
  culture_parameter_unlock_maa_winged_avengers:0 "Can recruit [GetMaA('winged_avengers').GetName] as [men_at_arms|E]"
  culture_parameter_unlock_maa_dunmer_oathmen:0 "Can recruit [GetMaA('dunmer_oathmen').GetName] as [men_at_arms|E]"
@@ -531,3 +541,4 @@
 
  tradition_cyrodiil_legacy_trigger_desc:0 "Is NOT #V $Cyrodiilic$#! [heritage|E] and holds the Empires of Tamriel or Cyrodiil as a primary title."
 
+ culture_parameter_reduced_acceptance_to_convert_counties_to_other_cultures:0 "[counties|E] can be converted to [valid_conversion_culture_medium|E] of a different [heritage|E] at [EmptyScope.ScriptValue('ek_culture_conversion_acceptance_threshold_reduced')] rather than [EmptyScope.ScriptValue('ek_culture_conversion_acceptance_threshold_normal')] [cultural_acceptance|E]"

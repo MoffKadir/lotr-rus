@@ -91,8 +91,20 @@
 
  game_concept_culture_revival:0 "Culture Revival"
  game_concept_culture_revived:0 "Revived"
- game_concept_culture_revival_desc:0 "Cultures that are considered dead, marked by the #V Dead Culture#! Innovation, may be revived under certain conditions. When revived they will be able to act like any other culture and regain the ability to Culture Convert provinces. For a culture to be able to be revived, the following is required:\n\n• There must exist another culture of the same [heritage|E] that is #italic not#! dead\n• The dead culture must have a [nativity_region|E]\n• A Ruler of the same [heritage|E] must completely control the [nativity_region|E] of the dead culture\n\nIf these requirements cannot be fulfilled, the dead culture cannot be revived.\n\nCultures with the #V Extinct Race#! Innovation may however never be revived."
-
+ game_concept_culture_revival_desc:0 "Cultures that are considered [dead_culture_short|E], marked by the #V Dead Culture#! [innovation|E], may be revived under certain conditions. When revived they will be able to act like any other culture and regain the ability to [promote_culture|E]. For a culture to be able to be revived, the following is required:\n\n• There must exist another culture of the same [heritage|E] that is #italic not#! dead\n• The dead culture must have a [nativity_region|E]\n• A Ruler of the same [heritage|E] must completely control the [nativity_region|E] of the dead culture\n\nIf these requirements cannot be fulfilled, the dead culture cannot be revived.\n\nCultures with the #V Extinct Race#! Innovation may however never be revived."
+ 
+ game_concept_living_culture:0 "Living Culture"
+ game_concept_living_culture_short:0 "Alive"
+ game_concept_living_culture_desc:0 "Living Cultures are [valid_conversion_culture_short|E] to spread to new [counties|E] via [promote_culture|E]. A [culture|E] is living if there is at least one [county|E] of that culture."
+ 
+ game_concept_dead_culture:0 "Dead Culture"
+ game_concept_dead_culture_short:0 "Dead"
+ game_concept_dead_culture_desc:0 "Dead Cultures are not [valid_conversion_culture_short|E] to spread to new [counties|E] via [promote_culture|E]. A [culture|E] dies when there are no remaining [counties|E] of that culture. Dead Cultures may be [culture_revived|E] under certain conditions."
+ 
+ game_concept_valid_conversion_culture:0 "Valid Culture for Conversion"
+ game_concept_valid_conversion_culture_short:0 "Valid"
+ game_concept_valid_conversion_culture_medium:0 "Valid Cultures"
+ game_concept_valid_conversion_culture_desc:0 "For a [culture|E] to be [valid_conversion_culture_short|E] for conversion via [promote_culture|E], it must be:\n\n$EFFECT_LIST_BULLET$Your own [culture|E], a [native|E] [culture|E] or [nomadic|E] [culture|E]\n$EFFECT_LIST_BULLET$A [living_culture|E]\n$EFFECT_LIST_BULLET$Of the same [heritage|E] as or have sufficiently high [cultural_acceptance|E] with your [culture|E]"
 
  game_concept_meritocratic:0 "Meritocratic"
  game_concept_meritocratic_desc:0 "Under the $game_concept_meritocratic$ [succession_law|E], each [county|E] decides if it follows the former ruler's [heir|E], or if they elect one of their own to rule them. The county having a high [county_opinion|E] will help secure it during succession."
@@ -129,6 +141,7 @@
  game_concept_ceremoniarchy_desc:0 "Ceremoniarchy is a complicated system of rites and customs centering around the pursuit of #LORE [compendium_aldmeris]#!. A ruler has to manage their [praxis|E] and ensure that the traditions are respected - some rulers however might want to set tradition aside and adapt to this changing world...\n#weak Only rulers whose faith has the [GetFaithDoctrine('tenet_legalism').GetBaseName] and the [GetFaithDoctrine('tenet_divine_purity').GetBaseName] [core_tenets|E] can adopt the Ceremoniarchy.#!"
 
  game_concept_praxis:0 "Praxis"
+ game_concept_praxis_i:0 "@praxis_icon!"
  game_concept_praxis_desc:0 "Praxis is the measurement of a character's conformity to the strict standards of 'The Path to Alaxon' - an Altmeri philsophy emphasising the search for perfection. \n\nConforming to these social expectations ensures harmony within realm. Those who stray from the path may have an easier personal life - but risk social ostracism. \n\nA ruler will be judged for their Praxis by their behaviour at public events such as attending a feast or holding court."
 
  game_concept_might_makes_right:0 "Might Makes Right"

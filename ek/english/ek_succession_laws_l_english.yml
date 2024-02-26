@@ -1,7 +1,7 @@
 ﻿l_english:
  pirate_succession_law:0 "Pirate Share"
  pirate_succession_law_subname:0 "Each county decides what is best"
- pirate_succession_law_effects:0 "\n#V Under $pirate_succession_law$ [succession], each [county|E] will decide if they follow your [heir|E], or if they decide their own course.#!\n\n#weak $pirate_succession_base_desc$#!"
+ pirate_succession_law_effects:0 "\n#V Under $pirate_succession_law$ [succession|E], each [county|E] will decide if they follow your [heir|E], or if they decide their own course.#!\n\n#weak $pirate_succession_base_desc$#!"
  pirate_succession_base_desc:0 "#weak Upon succession, all [counties|E] held by the late [ruler|E] will have a chance to put a local ruler in charge, depending on their [county_opinion|E] and [income|E]. Commanders that have a similar [culture|E] or [faith|E] might be chosen to lead them, and if there isn't any a new governor will be generated.\n\nCounties that have a high enough [county_opinion|E] will stay with the late ruler's primary heir.\n\nYour capital county will always be given to your heir.\n#!"
  
  pirate_elective_succession_law:0 "Pirate Council Elective"
@@ -15,7 +15,7 @@
 
  merit_succession_law:0 "Meritocratic"
  merit_succession_law_subname:0 "Your Conclave convenes to elect a fitting successor"
- merit_succession_law_effects:0 "\n#V Under $merit_succession_law$ [succession], each member of your [council|E] will cast a vote to appoint an [heir|E], they will choose a candidate from among their own ranks based on their ability to lead ( [martial|E], [intrigue|E] and age).#!\n\n#weak $merit_succession_base_desc$#!"
+ merit_succession_law_effects:0 "\n#V Under $merit_succession_law$ [succession|E], each member of your [council|E] will cast a vote to appoint an [heir|E], they will choose a candidate from among their own ranks based on their ability to lead ( [martial|E], [intrigue|E] and age).#!\n\n#weak $merit_succession_base_desc$#!"
  merit_succession_base_desc:0 "#weak Upon succession, all [counties|E] held by the late [ruler|E] will have a chance to break away from your rule, depending on their [control|E]. \n\nCounties that have a high enough [control|E] will stay with the late ruler's primary heir.\n\nYour capital county will always be given to your heir.\n#!"
  
  merit_elective_candidates:0 "Military Council Members"
@@ -30,8 +30,13 @@
  
  rule_by_might_succession_law:0 "Rule by Might"
  rule_by_might_succession_law_subname:0 "Only the strongest shall lead us"
- rule_by_might_succession_law_effects:0 "\n#V Under $rule_by_might_succession_law$ [succession], the strongest child can inherit.\n#N Children might push their claim before the ruler's death if they feel strong enough.#!\n\n$rule_by_might_succession_law_base_desc$"
+ rule_by_might_succession_law_effects:0 "\n#V Under $rule_by_might_succession_law$ [succession|E], the strongest child can inherit.\n#N Children might push their claim before the ruler's death if they feel strong enough.#!\n\n$rule_by_might_succession_law_base_desc$"
  rule_by_might_succession_law_base_desc:0 "#weak Under $rule_by_might_succession_law$ [succession], the current ruler designates their [primary_heir|E] among all the eligible children.\n\nUpon succession, other children with a similar or higher [prowess|E] can challenge the new ruler, or leave in exile.\n\nChildren of non-eligible genders can contest the succession if their [prowess|E] is high enough.#!"
+
+ xarxean_investiture_succession_law:0 "Xarxean Investiture"
+ xarxean_investiture_succession_law_subname:0 "Divine Numerology"
+ xarxean_investiture_succession_law_effects:0 "\n#V Under $xarxean_investiture_succession_law$, the child who most strictly adhere to the ancestral teachings of [ceremoniarchy|E] inherits all your [titles].\n\nBy using the 'Consult the Xarxeans' [decision|E] you will learn who your likely next [heir|E] will be. Otherwise this is revealed upon [succession|E].\n\n[empire|E] tier [ceremoniarchy_government|E] realms are automatically given this [law|E].#!\n\n#weak Upon succession, all of the late Ruler's [titles|e] will be given to the [player_heir|E], which is their [eligible_child|E] with the highest [praxis|E]. Other children will receive nothing. If there is no [eligible_child|E], grandchildren, great grandchildren, siblings and then other relatives may inherit, ordered by [praxis|E].\n#!
+
 
 #Miscenalleous 
  tooltip_feudal_elector_vote_knighthood:0 "Warrior of our people: $VALUE|=+0$"
@@ -108,6 +113,23 @@
  tooltip_dunmeri_elector_vote_house_values_education_1:0 "[candidate.GetSheHe|U] suits our [great_house_value|E]: $VALUE|=+0$"
  tooltip_dunmeri_elector_vote_house_values_education_2:0 "[candidate.GetSheHe|U] suits our [great_house_value|E] well: $VALUE|=+0$"
  tooltip_dunmeri_elector_vote_founding_dynasty:0 "[candidate.GetSheHe|U] belongs to the founding [dynasty|E]: $VALUE|=+0$"
+
+# Praxis Succession Law
+ altmeri_elective_succession_law:0 "Praxis Elective"
+ altmeri_elective_succession_law_subname:0 "Ceremoniarchy Succession"
+ altmeri_elective_succession_law_effects:0 "\n#V Under $altmeri_elective_succession_law$, your relative who most strictly adhere to the ancestral teachings of [ceremoniarchy|E] inherits. This succession favours candidates with high [praxis|E] and positive [congenital_traits|E]. All relatives of the current ruler are valid candidates, though their children are prioritised over others.\n\n[kingdom|E] tier [ceremoniarchy_government|E] realms are automatically given this [title_law|E]."
+ altmeri_elective_candidates:0 "Close and Extended Family"
+ altmeri_elective_candidates_tooltip:0 "In order to be a valid Candidate under Ceremoniarchy Succession, a character must fulfill one of the following conditions:\n$EFFECT_LIST_BULLET$Be a legitimate member of the ruler's [extended_family|E], who is not in line to inherit a Theocracy or Republic. Children of a candidate cannot be nominated\n$EFFECT_LIST_BULLET$Be a [claimant|E] to the title, who is not in line to inherit a Theocracy or Republic"
+ altmeri_elective_electors:0 "$feudal_elective_electors$"
+ altmeri_elective_electors_tooltip:0 "$feudal_elective_electors_tooltip$"
+ tooltip_altmeri_elector_vote_praxis:0 "Their understanding of [praxis|E]: $VALUE|=+0$"
+ tooltip_altmeri_elector_vote_beauty_good:0 "[candidate.GetSheHe|U] is a beautiful [candidate.GetWomanMan]: $VALUE|=+0$"
+ tooltip_altmeri_elector_vote_beauty_bad:0 "[candidate.GetSheHe|U] is an ugly [candidate.GetWomanMan]: $VALUE|=+0$"
+ tooltip_altmeri_elector_vote_physique_bad:0 "[candidate.GetSheHe|U] is a weak [candidate.GetWomanMan]: $VALUE|=+0$"
+ tooltip_altmeri_elector_vote_impurity:0 "[candidate.GetSheHe|U] is [impure|E]: $VALUE|=+0$"
+ tooltip_altmeri_elector_vote_dislikes_apraxic:0 "Dislikes low [praxis|E]: $VALUE|=+0$"
+ tooltip_altmeri_elector_vote_dislikes_praxic:0 "Dislikes high [praxis|E]: $VALUE|=+0$"
+ tooltip_altmeri_elector_vote_prioritises_children:0 "Is [child|E] of current ruler: $VALUE|=+0$"
 
  get_skyrim_elector_1:0 "\n$EFFECT_LIST_BULLET$[ROOT.Var('skyrim_elector_1').GetLandedTitle.GetName]"
  get_skyrim_elector_2:0 "\n$EFFECT_LIST_BULLET$[ROOT.Var('skyrim_elector_2').GetLandedTitle.GetName]"
