@@ -257,6 +257,8 @@
  activity_mining_destination_selection:0 "Тип, редкость и ценность подземных [Concept('resources', 'ресурсов')|E] в разных уголках [Concept('middleearth', 'Средиземья')|E] отличаются.\n\nШанс успеха в добыче зависит от вашего [GetTrait('lifestyle_miner').GetName( GetNullCharacter )]ского мастерства, но и от цели вашей экспедиции."
 
  culture_parameter_can_use_mining_activity:0 "Могут проводить [activities|El] «[GetActivityType('activity_mining').GetName]»"
+ culture_parameter_can_appoint_ootm:0 "Доступна [Concept( 'court_position', 'придворная должность' )|E] #high  [GetCourtPositionType('overseer_of_the_mines_court_position').GetName()]#!"
+ can_use_mining_activity_name:0 "[GetCultureTradition('tradition_miners').GetName]"
  culture_parameter_unlock_full_delving:0 "Могут строить подземные владения выше 4 уровня"
 
  # Options
@@ -445,6 +447,7 @@
  hosted_mining_opinion:0 "Сюзерен проводит шахтёрскую экспедицию"
  mining_distracted_opinion:0 "Отвлечённый шахтёр"
  mining_released_opportunists_opinion:0 "Освобождение незаконных шахтёров"
+ mining_not_allowed_activity_tt:0 "Вы не можете участвовать в шахтёрской экспедиции до: [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'not_allowed_mining_activity') )]"
 
  mining_every_miner_attendee_tt:0 "Все участники со свойством «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
 
@@ -513,8 +516,8 @@
 
   # Guest Description
    
-  activity_expedition_guest_desc_realm:0 "$BULLET_WITH_TAB$Participants will travel alongside you and join you at your new court\n"
-  activity_expedition_guest_desc_satellite:0 "$BULLET_WITH_TAB$Participants will travel with you to help establish the satellite hold\n"
+  activity_expedition_guest_desc_realm:0 "$BULLET_WITH_TAB$Участники будут путешествовать вместе с вами и присоединятся к вам в вашем новом дворе\n"
+  activity_expedition_guest_desc_satellite:0 "$BULLET_WITH_TAB$Участники отправятся вместе с вами, чтобы помочь в создании вассального владения\n"
 
   TRAVEL_NAME_FOR_activity_expedition:0 "Путешествие [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetNamePossessiveOrMy][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )] в графство [Character.MakeScope.Var('dwarven_expedition').GetFlagName]" # тесты
   var_expedition_type_standard:0 "новая держава"

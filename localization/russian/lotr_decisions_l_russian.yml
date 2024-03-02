@@ -451,6 +451,12 @@
  dark_lord_is_gone.tt:0 "[sauronthedarklordcharacter|E] is vanquished and the looming threat of [mordor|E] is no more"
  gondorian_ethos_courtly_tt:0 "[gondorian_culture.GetCollectiveNoun]ая культура принимает [ethos|El] «$ethos_courtly_name$»"
 
+ decision_claim_gondor_kingship:0 "Claim the Kingship of Gondor"
+ decision_claim_gondor_kingship_desc:0 "With the loss of Eärnur and the end of the direct line of Anárion, the Kingship of Gondor fell into dispute. Many claimants existed in whom flowed the blood of Anárion, though weaker and from female lines. Fearing another [kinstrife|E], none of these were crowned, with the Stewards to reign until the King should return.\n\nYet the throne remains empty. If we could gather unanimous support from the Lords of Gondor and establish our control of the realm, we could claim the throne for our own, restoring the Kingdom of Gondor."
+ decision_claim_gondor_kingship_stewards_desc:0 "With the loss of Eärnur and the end of the direct line of Anárion, the Kingship of Gondor fell into dispute. Many claimants existed in whom flowed the blood of Anárion, though weaker and from female lines. Fearing another [kinstrife|E], none of these were crowned, with the Stewards to reign until the King should return.\n\nYet the throne remains as of yet empty. How long a time must past ere a Steward may become a king, if the King returns not? Some would say not 10,000 years would suffice. Yet perhaps the time has come for the Stewards to acknowledge reality. We are the Kings in all but name already, we should claim the throne ourselves!"
+ decision_claim_gondor_kingship_confirm:0 "Now come the days of the King!"
+ decision_claim_gondor_kingship_tooltip:0 "Restore the Kingdom of Gondor"
+
  decision_claim_enedhwaith:0 "Claim Enedhwaith"
  decision_claim_enedhwaith_desc:0 ""
  decision_claim_enedhwaith_confirm:0 ""
@@ -1160,18 +1166,18 @@
  
  decision_plunder_thorins_tomb:0 "Plunder Thorin's Tomb"
  decision_plunder_thorins_tomb_tooltip:0 "Steal the treasures from Thorin's Tomb"
- decision_plunder_thorins_tomb_desc:0 "Thorin has rested under the Mountain since his death in the Battle of Five Armies, clutching the Arkestone and the sword Orcrist against his breath. Maybe it is time to return those to good use."
+ decision_plunder_thorins_tomb_desc:0 "Thorin has rested under the Mountain since his death in the Battle of Five Armies, clutching the Arkestone and the sword Orcrist against his breast. Maybe it is time to return those to good use."
  decision_plunder_thorins_tomb_confirm:0 "Crack it open!"
  
  decision_return_thorins_artifacts:0 "Return Thorin's Artifacts"
  decision_return_thorins_artifacts_tooltip:0 "Retun the treasures from Thorin's Tomb"
- decision_return_thorins_artifacts_desc:0 "Thorin has rested under the Mountain since his death in the Battle of Five Armies, clutching the Arkestone and the sword Orcrist against his breath. Until his rest was troubled and his tomb desecrated. We should return the artifacts to their rightful owners."
+ decision_return_thorins_artifacts_desc:0 "Thorin has rested under the Mountain since his death in the Battle of Five Armies, clutching the Arkestone and the sword Orcrist against his breast. Until his rest was troubled and his tomb desecrated. We should return the artifacts to their rightful owners."
  decision_return_thorins_artifacts_confirm:0 "Return the artifacts"
  
  decision_restore_thorins_tomb:0 "Restore Thorin's Tomb"
  decision_restore_thorins_tomb_tooltip:0 "Retun the treasures to Thorin's Tomb"
- decision_restore_thorins_tomb_desc:0 "Thorin has rested under the Mountain since his death in the Battle of Five Armies, clutching the Arkestone and the sword Orcrist against his breath. Until his rest was troubled and his tomb desecrated. We should return the artifacts to his tomb and restore it to its former solemnity."
- HAS_THORINS_ARTIFACT:0 "You are in possession of one of Thorin's artifacts"
+ decision_restore_thorins_tomb_desc:0 "Thorin has rested under the Mountain since his death in the Battle of Five Armies, clutching the Arkestone and the sword Orcrist against his breast. Until his rest was troubled and his tomb desecrated. We should return the artifacts to his tomb and restore it to its former solemnity."
+ HAS_THORINS_ARTIFACTS:0 "You are in possession of one of Thorin's artifacts"
  decision_restore_thorins_tomb_confirm:0 "Restore the tomb"
 
  decision_unify_durins_folk:0 "Unify Durin's Folk"
@@ -1181,11 +1187,17 @@
  control_percentage_of_misty_desc:1 "Control at least #V 90%#! of the [counties|E] of the [GetTitleByKey('e_misty_mountains').GetName]"
  control_percentage_of_iron_desc:1 "Control at least #V 90%#! of the [counties|E] of the [GetTitleByKey('e_iron_mountains').GetName]"
 
+ decision_restore_thakalgund:0 "Restore Thakalgund"
+ decision_restore_thakalgund_tooltip:0 "Rebuild the Dwarven Hold in the Grey Mountains"
+ decision_restore_thakalgund_desc:0 "Through fire and war, Thakalgund was lost. After the War of Dwarves and Dragons the Grey Mountains were largely abandoned and Thakalgund was left to ruin. Later infested by Goblins it seemed any hope of restoring was lost. Yet now with the hold finally in our possession we can see about restoring this once glorious hold."
+ decision_restore_thakalgund_confirm:0 "Restore our Home"
+
  #####################################
  #### Artifact Crafting Decisions ####
  #####################################
 
  transmute_metal_decision:0 "Transmutation"
+ transmute_metal_decision_tooltip:0 "Try to change one metal into another."
  transmute_metal_decision_desc:0 "Transmutation is a little understood art, but supposedly it allows one to change one metal to another. How it works, or even if it does work, is not truly known. Those who claim to have done it before keep their secrets close to their chests. \n\nBut with the right regnants and equipment, perhaps I can figure out how its done..."
  transmute_metal_decision_effect_tt:0 "By trial and error, art and science, attempt to change one metal crafting element into another random metal crafting element."
  transmute_metal_decision_confirm:0 "Here goes nothing..."
@@ -1199,3 +1211,31 @@
  decision_gorge_on_food_tooltip:0 "Indulge in food in pursuit of the perfect figure!"
  decision_gorge_on_food_desc:0 "We seek an ideal, a form of fat fashioned by a feast of food. To achieve this end, we must eat, feast, drink, and revel. We must consume, ever more until we reach that distant dream! Summon the cooks, set the table, and ignite the cooking fires - it's time to gorge!"
  decision_gorge_on_food_confirm:0 "Om-nom-nom!"
+
+ ###################################
+ ######### Balrog Struggle #########
+ ###################################
+
+ balrog_struggle_ending_decision_correct_involvement_tt:1 "Вы [Concept( 'struggle_involved', 'участвуете в' )|E] [Concept( 'balrog_struggle', 'борьбе с Проклятием Дурина' )|E]"
+
+ struggle_balrog_ending_kill_balrog:0 "Убить балрога"
+ struggle_balrog_ending_kill_balrog_desc:0 "С момента пробуждения [balrog|El] из [Concept( 'moria', 'Мории' )|E] не даёт покоя королевству. Он опустошает регион, убил сотни, если не тысячи, и изгнал [Concept( 'dwarves', 'гномов' )|E] из их горных чертогов. Мы должны навсегда покончить с его мерзким существованием."
+ struggle_balrog_ending_kill_balrog_tooltip:0 "Вы попытаетесь убить балрога"
+ struggle_balrog_ending_kill_balrog_confirm:0 "Багровый огонь не поможет тебе, Пламя Удуна!"
+ struggle_balrog_ending_kill_balrog_decision_correct_phase_tt:0 "$balrog_struggle_ending_decision_correct_involvement_tt$ и текущая [struggle_phase|El] - [struggle_balrog_phase_dormant|E]"
+ struggle_balrog_ending_kill_balrog_strong_friend:0 "У вас есть [friend|El]-[Concept( 'elven', 'эльф' )|E] или [maiargods|E], чья [prowess|El] равна или выше [prowess_i|E]30"
+ struggle_balrog_ending_kill_balrog_decision_effect_1:0 "Вы попытаетесь убить балрога. На шанс успеха влияют следующие факторы, вплоть до 50%:\n$BULLET_WITH_TAB$Высокий показатель [Concept( 'prowess', 'доблести' )|E] и [Concept( 'martial', 'военного дела' )|E].\n$BULLET_WITH_TAB$Количество контролируемых провинции в пределах [Concept( 'moria', 'Мории' )|E].\n$BULLET_WITH_TAB$Наличие [Concept( 'friend', 'друга' )|E]-эльфа\n$BULLET_WITH_TAB$Владение Шлемом Дурина ([artifact|El])"
+
+ struggle_balrog_ending_serve_balrog:0 "Служить балрогу"
+ struggle_balrog_ending_serve_balrog_desc:0 "[balrog|E] слишком могуч, чтобы с ним бороться. Но мы научились обходить его стороной и даже иногда использовать в своих интересах. Если мы официально оформим наши отношения и построим наше государство на служении Балрогу, возможно, мы сможем прийти к какому-то сосуществованию."
+ struggle_balrog_ending_serve_balrog_confirm:0 "Мы будем служить тёмному пламени!"
+ struggle_balrog_ending_serve_balrog_tooltip:0 "Вы попытаетесь служить Балрогу"
+ struggle_balrog_ending_serve_balrog_decision_correct_phase_tt:0 "$balrog_struggle_ending_decision_correct_involvement_tt$ и текущая [struggle_phase|El] - [struggle_balrog_phase_active|E]"
+ struggle_balrog_ending_serve_balrog_minimum_region_control:0 "Ваша [realm|El] контролирует по крайней мере 18 [Concept( 'counties', 'графств' )|E] в пределах [Concept( 'struggle_region', 'области борьбы' )|E]"
+ struggle_balrog_ending_serve_balrog_decision_consolidated_realm:0 "В [Concept( 'struggle_region', 'области борьбы' )|E] нет других [Concept( 'independent_ruler', 'независимых правителей' )|E] с [Concept( 'orc', 'орочьей' )|E] [Concept( 'culture', 'культурой' )|E]"
+ struggle_balrog_ending_serve_balrog_minimum_piety:0 "[piety_level|E] не ниже, чем [GetModifier( 'piety_level_4' ).GetNameWithTooltip|L]"
+ struggle_balrog_ending_serve_balrog_no_dwarf_counties:0 "В [Concept( 'struggle_region', 'области борьбы' )|E] нет [Concept( 'counties', 'графств' )|E] с [Concept( 'dwarf', 'гномьей' )|E] [Concept( 'culture', 'культурой' )|E]"
+ struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_1:0 "Вы попытаетесь установить мирное сосуществование с балрогом с помощью [diplomacy_i|E] [Concept( 'diplomacy', 'дипломатии' )|E] или [learning_i|E] [Concept( 'learning', 'учёности' )|E]."
+ struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_2:0 "Если вы преуспеете, то получите [title|El] [Concept( 'empire', 'империи' )|E], станете неуязвимы для негативных событий балрога в ходе [Concept( 'struggle', 'борьбы' )|E], получите уникальных [Concept( 'men_at_arms', 'профессионалов' )|E], создадите новую конфессию, а балрог будет время от времени выдвигать вам требования."
+ struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_3:0 "В случае неудачи вы погибнете."
+ struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_4:0 "Независимо от исхода, [struggle|El] продолжится."

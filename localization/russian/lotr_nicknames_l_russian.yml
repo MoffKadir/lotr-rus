@@ -18,7 +18,9 @@
  nick_the_wise_dwarf:0 "[Select_CString(CHARACTER.IsFemale, 'Мудрая', 'Мудрый' )]"
  nick_the_proud_dwarf:0 "[Select_CString(CHARACTER.IsFemale, 'Гордая', 'Гордый' )]"
  nick_ironfoot:0 "Железностоп" # Dain II
+ nick_ironfoot_desc:0 "Присутствие [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] ощущается с каждым шагом, из-за чего [Select_CString( CHARACTER.IsLocalPlayer, 'вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'заслужили', Select_CString(CHARACTER.IsFemale, 'заслужила', 'заслужил' ))] прозвище «Железностоп»."
  nick_stonehelm:0 "Камнешлем" # Thorin son of Dain
+ nick_stonehelm_desc:0 "[CHARACTER.GetFirstNameNoTooltip|U] [Select_CString( CHARACTER.IsLocalPlayer, 'заслужили', Select_CString(CHARACTER.IsFemale, 'заслужила', 'заслужил' ))] своё прозвище в юном возрасте после предполагаемого происшествия, в котором камень и [Select_CString( CHARACTER.IsLocalPlayer, 'ваша', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] голова столкнулись друг с другом. Камень проиграл."
  nick_oakenshield:0 "Дубощит" # Thorin son of Thrain
  nick_oakenshield_desc:0 "[CHARACTER.GetFirstNameNoTooltip|U] [Select_CString( CHARACTER.IsLocalPlayer, 'заслужили', Select_CString(CHARACTER.IsFemale, 'заслужила', 'заслужил' ))] своё прозвище в 2799 году Т.Э. во время битвы при Азанулбизаре, в решающий момент Войны [Concept( 'dwarves', 'гномов' )|E] и [Concept( 'orcs', 'орков' )|E]. В какой-то момент битвы [Select_CString( CHARACTER.IsLocalPlayer, 'ваш', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] щит сломался, и, используя в качестве щита найденную на земле дубовую ветвь, [Select_CString( CHARACTER.IsLocalPlayer, 'вы заслужили', Select_CString(CHARACTER.IsFemale, 'она заслужила', 'он заслужил' ))] прозвище «Дубощит»."
  nick_bravesoul_unique:0 "Отважная Душа"
@@ -227,7 +229,9 @@
  nick_the_tall:0 "[Select_CString(CHARACTER.IsFemale, 'Высокая', 'Высокий' )]"
  nick_the_tall_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'заслужили', Select_CString(CHARACTER.IsFemale, 'заслужила', 'заслужил' ))] прозвище «[Select_CString(CHARACTER.IsFemale, 'Высокая', 'Высокий' )]» за свой исключительный рост."
  nick_the_minstrel:0 "Менестрель"
+ nick_the_minstrel_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U], как известно, [Select_CString( CHARACTER.IsLocalPlayer, 'наделены', Select_CString(CHARACTER.IsFemale, 'наделена', 'наделён' ))] мастерством поэзии и песни, и мало кто из [eldar|El] может сравниться с [Select_CString( CHARACTER.IsLocalPlayer, 'вами', Select_CString(CHARACTER.IsFemale, 'ней', 'ним' ))]."
  nick_felagund:0 "Фелагунд"
+ nick_felagund_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были прозваны', Select_CString(CHARACTER.IsFemale, 'была прозвана', 'был прозван' ))] Фелагунд, «[Select_CString(CHARACTER.IsFemale, 'Вырубающей', 'Вырубающим' )] пещеры», почётным именем, данным [Select_CString( CHARACTER.IsLocalPlayer, 'вам', Select_CString(CHARACTER.IsFemale, 'ей', 'ему' ))] [Concept( 'dwarves', 'гномами' )|E] [Concept( 'bluemountains', 'Синих гор' )|E]."
  nick_the_white_lady:0 "Белая Леди"
  nick_the_wise_elven:0 "[Select_CString(CHARACTER.IsFemale, 'Мудрая', 'Мудрый' )]"
  nick_the_wise_elven_desc:0 "$nick_the_wise_desc$"
@@ -235,6 +239,7 @@
  nick_the_dark_elven:0 "[Select_CString(CHARACTER.IsFemale, 'Тёмная', 'Тёмный' )]"
  nick_ambarussa:0 "Амбарусса"
  nick_the_shipwright:0 "Корабел"
+ nick_the_shipwright_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'известны', Select_CString(CHARACTER.IsFemale, 'известна', 'известен' ))] на весь мир как мастер по строительству и управлению кораблями, за что [Select_CString( CHARACTER.IsLocalPlayer, 'заслужили', Select_CString(CHARACTER.IsFemale, 'заслужила', 'заслужил' ))] прозвище «Корабел»."
  nick_greycloak:0 "Серый Плащ"
  nick_swan_maiden:0 "Дева-лебедь"
  nick_the_elvenking:0 "[Select_CString(CHARACTER.IsFemale, 'Королева', 'Король' )] эльфов"
@@ -246,6 +251,7 @@
  nick_eluchil:0 "Элухил"
  nick_ardamire:0 "Ардамирэ"
  nick_athrad_gillith:0 "Атрад"
+ nick_athrad_gillith_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] - мастер игры на арфе, [Select_CString(CHARACTER.IsFemale, 'способная', 'способный' )] создавать чудесную музыку, которая завораживает даже самые суровые сердца."
  nick_lordlady_of_light:0 "[CHARACTER.GetLadyLord|U] Света"
  nick_the_bulwark_of_the_glades:0 "Оплот полян"
  nick_telpemaite:0 "Тельпемайтэ"
@@ -254,6 +260,8 @@
  nick_the_pale_elf_desc:0 "[CHARACTER.GetFirstNameNoTooltip|U] [Select_CString( CHARACTER.IsLocalPlayer, 'имеете', 'имеет')] очень светлый цвет лица, предпочитая держаться подальше от длительного солнечного света."
  nick_the_garden_gnome:0 "Садовый гном"
  nick_the_garden_gnome_desc:0 "[CHARACTER.GetFirstNameNoTooltip|U] [Select_CString( CHARACTER.IsLocalPlayer, 'любите', 'любит')] заниматься садоводством, в отличие от большинства нолдор."
+ nick_halfelven:0 "[Select_CString(CHARACTER.IsFemale, 'Полуэльфийка', 'Полуэльф' )]" #Elrond
+ nick_halfelven_desc:0 "Из-за своего полуэльфийского наследия [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'выбрали', Select_CString(CHARACTER.IsFemale, 'выбрала', 'выбрал' ))] судьбу [Concept( 'elves', 'эльфов' )|E] после Войны Гнева."
 
  ### Maiar ###
  nick_lord_of_the_rings:0 "Властелин Колец"
@@ -543,7 +551,9 @@
   nick_the_outcast_mazog:0 "the Outcast"
   nick_the_outcast_mazog_desc:0 "[CHARACTER.GetFirstNameNoTooltip|U] grew tired of his brother's rule and attempted to seize power in [gundabad|E] by force. After he failed he fled south, deeper into the [mistymountains|E]. There he began to gather a new host with the intent to take over [moria|E], which he perceived as his birthright as an heir to Azog."
   
-  ### Orcs Nicknames ### 
+ ### Orcs Nicknames ###
+ nick_flamesworn:0 "Огненная клятва"
+ nick_flamesworn_desc:0 "[CHARACTER.GetFirstNameNoTooltip|U] defied the odds and managed to placate the Balrog of Moria, securing a peaceful co-existence with it and leading the cult that worships it."
  nick_ash_skin:0 "Пепельная кожа"
  nick_red_eyes:0 "Красноглазый"
  nick_blood_eyes:0 "Кровавые глаза"
