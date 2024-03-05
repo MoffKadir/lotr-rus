@@ -220,7 +220,7 @@
 
  tenet_sky_burials_name:0 "Воздушные погребения"
  tenet_sky_burials_desc:0 "Мертвецов следует не заточать под землю, но отдавать на съедение стервятникам: так умершие могут отблагодарить мир, кормивший их при жизни, и накормить его в ответ."
- doctrine_parameter_sky_burials_active:0 "[rulers|E] могут совершать воздушные погребения предков, получая [Concept( 'piety', 'благочестие' )|El] и одобрение [Concept( 'vassals', 'вассалов' )|El]"
+ doctrine_parameter_sky_burials_active:0 "[Concept( 'rulers', 'Правители' )|E] могут совершать воздушные погребения предков, получая [Concept( 'piety', 'благочестие' )|E] и одобрение [Concept( 'vassals', 'вассалов' )|E]\n$EFFECT_LIST_BULLET$Доступна [Concept( 'duchy_building', 'герцогская постройка' )|E] «Мавзолей»"
  can_build_towers_of_silence_active_name:0 "способность использовать [Concept( 'duchy_building', 'постройку' )|E]: [GetBuilding('tower_of_silence_01').GetName]"
  doctrine_parameter_can_build_towers_of_silence_active:0 "[Concept('vassals', 'Вассалы' )|E] могут воздвигнуть [Concept( 'duchy_building', 'постройку' )|E] [GetBuilding('tower_of_silence_01').GetName], чтобы повысить рвение [Concept( 'county', 'округа' )|E] — #EMP если#! [Concept( 'faith', 'вера' )|E] их [Concept( 'liege', 'сюзерена' )|E] не предусматривает воздушные погребения."
 
@@ -345,9 +345,9 @@
 
  tenet_exaltation_of_pain_name:0 "Экзальтация от боли"
  tenet_exaltation_of_pain_desc:0 "Боль — универсальная эмоция, а насилие — универсальный язык. Причинить боль другому значит благословить его, а испытать боль значит обрести милость."
- doctrine_parameter_torturing_prisoners_grants_piety:0 "#D Пытки [Concept( 'prisoner', 'пленников' )|E] увеличивают [Concept( 'piety', 'благочестие' )|E], а не тратят его#!"
- doctrine_parameter_reduced_stress_from_torture:0 "#D Последователи невосприимчивы к негативным последствиям пыток#!"
- doctrine_parameter_self_mutilation_active:0 "#D Можно [decide|El] провести самоистязание, получив [Concept( 'piety', 'благочестие' )|El] и [trait|El] «[GetTrait('wounded_1').GetName( GetPlayer )]»#!"
+ doctrine_parameter_torturing_prisoners_grants_piety:0 "Пытки [Concept( 'prisoner', 'пленников' )|E] увеличивают [Concept( 'piety', 'благочестие' )|E], а не тратят его"
+ doctrine_parameter_reduced_stress_from_torture:0 "Последователи невосприимчивы к негативным последствиям пыток"
+ doctrine_parameter_self_mutilation_active:0 "Можно [decide|El] провести самоистязание, получив [Concept( 'piety', 'благочестие' )|El] и [trait|El] «[GetTrait('wounded_1').GetName( GetPlayer )]»"
 
  tenet_sacred_shadows_name:0 "Святая ложь"
  tenet_sacred_shadows_desc:0 "Ложь — наиболее сложное из существующих искусств. Те, чья ложь кажется правдой, святые. Тот же, кто может успешно лгать самому себе, поистине непобедим."
