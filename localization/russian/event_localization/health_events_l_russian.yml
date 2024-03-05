@@ -48,21 +48,22 @@
 
  #Disease Contraction, by Mathilda Bjarnehed
  health.1001.t:0 "[SCOPE.Custom('EventTitleDisease')]: мое смертное тело"
- health.1001.desc:0 "[ROOT.Char.GetTitleTierName] или простолюдин, богач или бедняк — все это не важно, мы все смертны. Мне напомнили об этом утренний приступ кашля и тупая боль в голове и горле."
- health.1001.court_physician.desc:0 "\n\n«Похоже, вы простудились, [ROOT.Char.GetLadyLord]. Я знаю подходящие лекарства»."
+ health.1001.desc:0 "[ROOT.Char.GetTitleTierName] или простолюдин, богач или бедняк — все это не важно, мы все смертны.\n\nМне напомнили об этом утренний приступ кашля и тупая боль в голове и горле. Мое тело истерзано дрожью и слабостью, а изо всех отверстий в голове текут жидкости.\n\n"
+ health.1001.nophysician.desc:0 "Наверняка в державе найдется кто-то, кто сможет излечить это состояние..."
+ health.1001.court_physician.desc:0 "«Я [Select_CString(physician.IsFemale, 'слышала', 'слышал' )] этот хрип с другого конца коридора, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord], — выглядывает из-за двери [Select_CString(physician.IsFemale, 'моя', 'мой' )] врач [physician.GetFirstName]. — Если пожелаете, у меня есть несколько подходящих лекарств»."
  health.1001.a:0 "Я просто хочу полежать..."
  health.1001.b:0 "Мне нужно #EMP срочно#! вернуться домой!"
 
  health.1002.t:0 "[SCOPE.Custom('EventTitleDisease')]: острая как нож"
  health.1002.desc:0 "Дыхание — такая простая и восхитительная вещь, маленькое чудо, о котором мы редко задумываемся. Теперь же, когда я с трудом могу дышать ровно, а приступы кашля сопровождаются острой болью в груди, эта мысль постоянно вертится у меня в голове."
- health.1002.court_physician.desc:0 "\n\n«Это легочная болезнь, [ROOT.Char.GetLadyLord]. Дело серьезное... Как нам следует поступить?»"
+ health.1002.court_physician.desc:0 "\n\n[Select_CString(physician.IsFemale, 'Моя', 'Мой' )] врач [physician.GetFirstName] осматривает меня. «Это легочная болезнь, [ROOT.Char.GetLadyLord]. Дело серьезное... Как нам следует поступить?»"
  health.1002.a:0 "Пожалуйста, я не хочу умирать!"
 
  health.1003.t:0 "[SCOPE.Custom('EventTitleDisease')]: цена положения"
  health.1003.court_amenities_gout.desc:0 "Мой двор славится безудержными и непрекращающимися пирами. Боль в моей ноге намекает, что многим из нас стоит готовиться и к непрекращающейся боли."
- health.1003.desc:0 "Они называют это «болезнью королей», словно моим распухшим, изнывающим от боли суставам кто-то может позавидовать. Когда боль становится невыносимой, я начинаю жалеть, что я не из простолюдинов."
- health.1003.court_physician.desc:0 "\n\n«Я вам сочувствую, [ROOT.Char.GetLadyLord]. У меня есть мысли о том, как облегчить симптомы вашей подагры»."
- health.1003.a:0 "Принесите мне льда! Быстрее!"
+ health.1003.desc:0 "Они называют это «болезнью королей», словно моим распухшим, изнывающим от боли суставам кто-то может позавидовать. Большой палец особенно раздулся и заставляет меня хромать. Когда боль становится невыносимой, я начинаю жалеть, что я не из простолюдинов."
+ health.1003.court_physician.desc:0 "\n\n[Select_CString(physician.IsFemale, 'Моя', 'Мой' )] врач [physician.GetFirstName] выставляет рядом со мной лечебные бальзамы. «Я вам сочувствую, [ROOT.Char.GetLadyLord]. У меня есть мысли о том, как облегчить симптомы вашей подагры»."
+ health.1003.a:0 "Принесите мне лечебные бальзамы! Быстрее!"
 
  health.1004.t:0 "[SCOPE.Custom('EventTitleDisease')]: взгляды в сторону"
  health.1004.desc:0 "Первые симптомы были незначительными, на них было так просто не обращать внимания. Пожалуй, мне было страшно взглянуть правде в глаза. Эта жуткая отметина на моем лице, болячки... Я больше не могу это игнорировать.\n\nПодданные исполняют мои приказы, но что-то изменилось в том, как они смотрят на меня. В их глазах появился страх? Жалость? Или это отвращение?"
@@ -80,7 +81,7 @@
  health.1006.a:0 "Это моя судьба? Медленно угасать?"
 
  health.1007.t:0 "[SCOPE.Custom('EventTitleDisease')]: посторонний внутри"
- health.1007.desc:0 "Внутри меня есть нечто чужое. Оно проедает себе путь сквозь мою плоть, питается моей жизненной силой и становится сильнее, пока я слабну.\n\nЯ давлю растущую опухоль под кожей, до боли в пальцах пытаюсь вырвать ее. Меня тошнит от одной только мысли о том, что она растет внутри меня."
+ health.1007.desc:0 "Внутри меня есть нечто чужое. Оно проедает себе путь сквозь мою плоть, питается моей жизненной силой и становится сильнее, пока я слабну.\n\nЯ давлю растущую опухоль под кожей, и мне до боли в пальцах хочется вырвать ее. Меня тошнит от одной только мысли о том, что она растет внутри меня."
  health.1007.court_physician.desc:0 "\n\n«Да, к сожалению, это рак. Я знаю только один эффективный метод лечения...»"
  health.1007.a:0 "В борьбе с этим врагом победа невозможна."
 
@@ -110,10 +111,10 @@
  health.1011.court_physician.desc:0 "\n\n«[ROOT.Char.GetLadyLord|U], я сделаю все, что в моих силах, но вам стоит готовиться к худшему...»"
  health.1011.a:0 "[ROOT.Char.GetFaith.HealthGodName], спаси меня от этого кошмара!"
 
- health.1015.t:1 "[SCOPE.Custom('EventTitleDisease')]: Чёрное дыхание"
- health.1015.desc:0 "С тех пор как я столкнулся с этим Темным Всадником, я не чувствую себя прежней. Всё вокруг напоминает кошмарный сон:\n\nцвета не такие яркие, как раньше, солнце не греет кожу, и я чувствую, как из меня вытекают все силы. Всё, что я хочу, - это спать.\n\nЯ боюсь, что меня коснулось ужасное Чёрное дыхание, от которого нет лечения."
- health.1015.court_physician.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], я сделаю всё, что в моих силах, но было бы разумно подготовиться к худшему...»"
- health.1015.a:1 "О, [ROOT.Char.GetFaith.HealthGodName]! Спаси меня от этого кошмара!"
+ health.1099.t:1 "[SCOPE.Custom('EventTitleDisease')]: Чёрное дыхание"
+ health.1099.desc:0 "С тех пор как я столкнулся с этим Темным Всадником, я не чувствую себя прежней. Всё вокруг напоминает кошмарный сон:\n\nцвета не такие яркие, как раньше, солнце не греет кожу, и я чувствую, как из меня вытекают все силы. Всё, что я хочу, - это спать.\n\nЯ боюсь, что меня коснулось ужасное Чёрное дыхание, от которого нет лечения."
+ health.1099.court_physician.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], я сделаю всё, что в моих силах, но было бы разумно подготовиться к худшему...»"
+ health.1099.a:1 "О, [ROOT.Char.GetFaith.HealthGodName]! Спаси меня от этого кошмара!"
 
  #Travel loc if you get ill on the road
  health.travel.t:0 "[SCOPE.Custom('EventTitleDisease')]: конец пути?"
@@ -122,7 +123,7 @@
  health.travel.option.continue:0 "Мы должны терпеть."
  #Recover from diseases, by Mathilda Bjarnehed
  health.1101.t:0 "[SCOPE.Custom('EventTitleDisease')]: стать самим собой"
- health.1101.desc:0 "Проснувшись утром и глядя на первые лучи солнца, я внезапно осознаю, что впервые за эти недели мне удалось хорошо выспаться. Приступы кашля не тревожили меня ночью!"
+ health.1101.desc:0 "Проснувшись утром и глядя на первые лучи солнца, я внезапно осознаю, что впервые за эти недели мне удалось хорошо выспаться. Приступы кашля не тревожили меня ночью!\n\nВозвращение здоровья было долгим, но я вновь ощущаю себя в его теплых объятиях."
  health.1101.a:0 "Как хорошо снова быть в порядке."
 
  health.1102.t:0 "[SCOPE.Custom('EventTitleDisease')]: силы возвращаются"
@@ -142,7 +143,7 @@
  health.1106.a:0 "Пора покорить мир!"
 
  health.1107.t:0 "[SCOPE.Custom('EventTitleDisease')]: чудо медицины"
- health.1107.desc:0 "Они сказали мне, что это подлинное чудо. Люди не вылечиваются от такого. И все же я прекрасно себя чувствую, опухоль исчезла. Вывод однозначный — мне удалось исцелиться от рака."
+ health.1107.desc:0 "Они сказали мне, что это подлинное чудо. Люди не вылечиваются от такого.\n\nИ все же я прекрасно себя чувствую, опухоль исчезла. Вывод однозначный — мне удалось исцелиться от рака."
  health.1107.a:0 "Я буду жить полной жизнью!"
 
  health.1109.t:0 "[SCOPE.Custom('EventTitleDisease')]: великое избавление"
@@ -200,6 +201,16 @@
  health.2101.smallpox_spreads.desc:0 "Еще один несчастный пострадал от оспы."
  health.2101.bubonic_plague_outbreak.desc:0 "[ROOT.Char.GetFaith.DeathDeityName] заносит косу над моей страной — обнаружен случай смертельной чумы!"
  health.2101.bubonic_plague_spreads.desc:0 "Еще один несчастный стоит на пороге смерти, и жуткие бубоны покрывают его кожу."
+ health.2101.typhus_outbreak.desc:0 "Двор поразил тяжелый случай лагерной лихорадки. Заболевшие страдают от сыпи, кашля и жара."
+ health.2101.typhus_spreads.desc:0 "Тиф в очередной раз поднял голову."
+ health.2101.consumption_outbreak.desc:0 "Всюду при дворе звучит надсадный кашель. Чахотка бродит по коридорам, уже забрав свою первую жертву."
+ health.2101.consumption_spreads.desc:0 "Все больше бедолаг оказывается во власти чахотки."
+ health.2101.measles_outbreak.desc:0 "На сыпь, образовавшуюся на коже зараженных, больно смотреть: при дворе обнаружена корь."
+ health.2101.measles_spreads.desc:0 "Заболевших становится все больше, их кожу покрывает красноватая сыпь, свидетельствующая о присутствии кори."
+ health.2101.dysentery_outbreak.desc:0 "Царящий вокруг запах говорит сам за себя. При дворе обнаружили дизентерию."
+ health.2101.dysentery_spreads.desc:0 "Продолжают всплывать все новые случаи дизентерии, уборные не пустуют ни днем, ни ночью."
+ health.2101.ergotism_outbreak.desc:0 "При дворе появился эрготизм, и дерганные движения жертвы делают его присутствие очевидным."
+ health.2101.ergotism_spreads.desc:0 "Эрготизм продолжает разить жертв, заставляя их конечности пылать под кожей."
  health.2101.imporant.desc:0 "[Select_CString(sick_character.IsFemale, 'Моя бедная', 'Мой бедный' )] [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sick_character'))|l] [sick_character.GetFirstName] борется за жизнь."
  health.2101.prisoner.desc:0 "На этот раз [Select_CString(sick_character.IsFemale, 'невезучей', 'невезучим' )] оказывается [Select_CString(sick_character.IsFemale, 'узница', 'узник' )] — [sick_character.GetTitledFirstName]."
  health.2101.courtier_or_guest.desc:0 "Несчастная жертва — [Select_CString(sick_character.IsFemale, 'моя', 'мой' )] [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sC('sick_character'))|l] [sick_character.GetTitledFirstName]."
@@ -212,7 +223,7 @@
 
  #Important character has dangerous disease events, by Mathilda Bjarnehed
  health.2201.t:0 "[SCOPE.Custom('EventTitleDisease')]: [Select_CString(sick_character.IsFemale, 'моя бедная', 'мой бедный' )] [ROOT.GetCharacter.Custom2('RelationToMeShort' , SCOPE.sC('sick_character'))]"
- health.2201.start.desc:0 "Сегодня до меня дошли печальные новости. [Select_CString(sick_character.IsFemale, 'Моя', 'Мой' )] [ROOT.GetCharacter.Custom2('RelationToMe', SCOPE.sC('sick_character'))] [sick_character.GetFirstName] [Select_CString(sick_character.IsFemale, 'больна', 'болен' )]"
+ health.2201.start.desc:0 "До меня дошли печальные новости. [Select_CString(sick_character.IsFemale, 'Моя', 'Мой' )] [ROOT.GetCharacter.Custom2('RelationToMe', SCOPE.sC('sick_character'))] [sick_character.GetFirstName] [Select_CString(sick_character.IsFemale, 'больна', 'болен' )]"
  disease_ill_article:0 "н[SCOPE.sC('sick_character').GetHerHis]"
  disease_ill:0 "простудой."
  disease_pneumonic:0 "легочной болезнью."
@@ -227,11 +238,14 @@
  disease_smallpox:0 "оспой."
  disease_bubonic_plague:0 "чумой."
  disease_black_breath:0 "Чёрным дыханием."
+ disease_measles:0 "корью."
+ disease_ergotism:0 "священным огнем."
+ disease_dysentery:0 "дизентерией."
  missing_illness:0 "#D Нет болезни #!"
  health.2201.minor_disease.desc:0 "\n\nОбычно такое незначительное заболевание не вызывает особого беспокойства, но [SCOPE.sC('sick_character').GetFirstName] отличается слабым здоровьем и, возможно, не переживет этого."
  health.2201.leprosy.desc:0 "\n\nВозможно, [sick_character.GetSheHe] проживет еще многие годы, но [sick_character.GetHerHis] будут сторониться и опасаться из-за уродства. Даже я не могу подавить отвращения при мысли о нарывах, растущих по всей [sick_character.GetHerHis] коже..."
- health.2201.lethal_disease.desc:0 "\n\nБоюсь, это конец: [SCOPE.sC('sick_character').GetHerHis] может спасти только чудо."
- health.2201.major_disease.desc:0 "\n\nБудущее неясно. Смерть стоит у [sick_character.GetHerHis] изголовья, и все же есть надежда, что [sick_character.GetSheHe] выживет. Только [ROOT.Char.GetFaith.FateGodName] знает наверняка."
+ health.2201.lethal_disease.desc:0 "\n\nЭто заболевание убивает без жалости, разя молодых и старых, богатых и бедных, мужчин и женщин. Боюсь, это конец: [Select_CString(sick_character.IsFemale, 'ее', 'его' )] может спасти только чудо."
+ health.2201.major_disease.desc:0 "\n\nБудущее неясно. Смерть стоит у [Select_CString(sick_character.IsFemale, 'ее', 'его' )] изголовья, но еще не все потеряно. Если повезет, [sick_character.GetFirstNameNoTooltip] еще может выжить.\n\nТолько [ROOT.Char.GetFaith.FateGodName] знает [Select_CString(sick_character.IsFemale, 'ее', 'его' )] судьбу."
  health.2201.court_physician.desc:0 "\n\nВрач спрашивает, какое лечение будет получать [Select_CString(sick_character.IsFemale, 'моя', 'мой' )] [ROOT.GetCharacter.Custom2('RelationToMeShort', SCOPE.sC('sick_character'))]."
  health.2201.court_physician.desc_sick_physician:0 "\n\n[sick_character.GetSheHe|U] мой врач, но все равно ищет совета у меня."
  health.2201.a:0 "Я не могу защитить [SCOPE.sC('sick_character').GetHerHis] от этого врага."
@@ -256,7 +270,11 @@
  health.2102.a.surviving.tt:0 "[THIS.Char.GetShortUIName] [Select_CString(THIS.Char.IsFemale, 'заболела', 'заболел' )] во время вспышки заболевания, но [Select_CString(THIS.Char.IsFemale, 'выздоровела', 'выздоровел' )]"
 
  health.2202.t:0 "[SCOPE.Custom('EventTitleDisease')]: баланс гуморов"
- health.2202.desc:0 "[Select_CString(sick_character.IsFemale, 'Моя', 'Мой' )] [ROOT.GetCharacter.Custom2('RelationToMe', SCOPE.sC('sick_character'))] [sick_character.GetFirstName] [Select_CString(sick_character.IsFemale, 'здорова', 'здоров' )] — [SCOPE.sC('sick_character').GetHerHim] не страшна даже"
+ health.2202.desc:0 "Я иду по коридору, как вдруг слышу приглушенный смех. Этот голос... нечасто услышишь его столь ясным и громким.\n\nЯ распахиваю полуоткрытую дверь, и прямо передо мной [Select_CString(sick_character.IsFemale, 'моя', 'мой' )] [ROOT.GetCharacter.Custom2('RelationToMe', SCOPE.sC('sick_character'))] [sick_character.GetFirstName], по-видимому, уже не [Select_CString(sick_character.IsFemale, 'болеющая', 'болеющий' )]"
+ health.2202.desc.happy:0 "\n\n[Select_CString(sick_character.IsFemale, 'Моя ненаглядная', 'Мой ненаглядный' )] [ROOT.GetCharacter.Custom2('RelationToMe', SCOPE.sC('sick_character'))] снова в порядке! Сложно сдержать слезы радости..."
+ health.2202.desc.angry:0 "\n\nКак такое могло произойти? [ROOT.Char.GetFaith.HealthGodName], почему я? #EMP Почему?!#!"
+ health.2202.desc.relieved:0 "\n\nОгромный камень падает с моей души, когда [Select_CString(sick_character.IsFemale, 'она', 'он' )] приветствует меня, и от облегчения я с трудом сдерживаю слезы."
+ health.2202.desc.neutral:0 "\n\nЯ с серьезным видом киваю [Select_CString(sick_character.IsFemale, 'ей', 'ему' )]."
  health.2202.a.happy:0 "Восхитительные новости! Да славится [ROOT.Char.GetFaith.HealthGodName]!"
  health.2202.a.angry:0 "Как неудачно..."
  health.2202.a.relieved:0 "Мой двор стал чуть безопаснее."
@@ -304,19 +322,21 @@
 
  #Disease treatment, by Mathilda Bjarnehed & Milla Isaksson
  health.3101.t:0 "[SCOPE.Custom('EventTitleDisease')]: время для лечения"
- health.3101.start.desc:0 "«Пришло время излечить ваше заболевание"
+ health.3101.start.desc:0 "Жутковатый запах кипящих отваров и перетертых мазей обрушивается на меня, едва я вхожу в комнату, где работает [physician.GetFirstName]. [Select_CString(physician.IsFemale, 'Она', 'Он' )] переводит взгляд с мази, над которой работает, на меня.\n\n«Время пришло, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord]. Я знаю несколько процедур, которым может подвергнуться "
  health.3101.safe_recommendation.desc:0 "И хотя я не сомневаюсь, что хватит простой настойки,"
  health.3101.risky_recommendation.desc:0 "Я советую более радикальные методы, но"
  health.3101.mystic_recommendation.desc:0 "Не сочтите за дерзость, мне бы хотелось порекомендовать вам... альтернативное лечение. Но"
- health.3101.end.desc:0 "выбор за вами»."
+ health.3101.end.desc:0 "выбор за вами, только за вами», — [Select_CString(physician.IsFemale, 'она', 'он' )] кривится.\n\n«Процедура будет не из приятных»."
  health.3101.a:0 "Не делай ничего сверх необходимого."
  health.3101.b:0 "Слишком поздно, чтобы соблюдать осторожность!"
  health.3101.c:0 "Я могу... попробовать что-нибудь новое."
  health.3101.d:0 "Оставь меня в покое!"
  health.3101.e:0 "Пошлите за врачом! Немедленно!"
+ health.3101.e.already_looking:0 "Скоро! Помощь уже в пути!"
  health.3101.e_sick_physician:0 "Мне требуется новый врач!"
  health.3101.e.tt:0 "Мои слуги попытаются найти пригодных кандидатов на должность «[GetCourtPositionType('court_physician_court_position').GetName()]»"
  health.3101.f:0 "О, [ROOT.Char.GetFaith.HighGodName], неужели я вот так умру?!"
+ health_3101_already_looking_tt:0 "Вы уже ищете кандидата на должность «[GetCourtPositionType('court_physician_court_position').GetName()]»"
 
  safe_diseaste_treatment.tt:0 "Безопасное лечение может на время ослабить симптомы и несет небольшой риск"
  risky_diseaste_treatment.tt:0 "Рискованное лечение может дать поразительные результаты — или привести к усугублению симптомов или увечьям"
@@ -329,8 +349,10 @@
  pick_own_treatment_effect.child.tt:0 "Врач решит, какое лечение получит [sick_character.GetTitledFirstName]"
 
  health.3102.t:0 "[SCOPE.Custom('EventTitleDisease')]: [ROOT.GetCharacter.Custom2('RelationToMeShort', SCOPE.sC('sick_character'))|U] болеет"
- health.3102.start.desc:0 "«Вы и [SCOPE.sC('sick_character').GetFirstName] должны решить, какое лечение получит [SCOPE.sC('sick_character').GetHerHis]"
- health.3102.start.desc_sick_physician:0 "«Время решить, какое лечение получит "
+ health.3102.preamble:0 "Мрак помещения немного отступает в свете пляшущего пламени. На врачебном столе лежит [sick_character.GetFirstName], застыв в напряженном ожидании.\n\n"
+ health.3102.start.desc:0 "Вы и [sick_character.GetFirstName] должны решить, какое лечение получит [Select_CString(sick_character.IsFemale, 'ее', 'его' )]"
+ health.3102.start.desc_sick_physician:0 "Время решить, какое лечение получит "
+ health.3102.treatment:0 "Есть несколько возможных методов лечения, от распространенных до весьма нетрадиционных. Мне решать, какое из них получит [sick_character.GetFirstNameNoTooltip]."
  health.3102.a:0 "Будьте осторожны. Не делайте ничего сверх необходимого."
  health.3102.b:0 "Пришло время для решительных действий."
  health.3102.c:0 "Теперь [SCOPE.sC('sick_character').GetHerHis] может спасти только вмешательство высших сил."
@@ -497,10 +519,11 @@
  #Notification messages
  ########################
 
- disease_contraction_feed_message.t:0 "[message_receiver.Custom2('RelationToMeShort', SCOPE.sC('sick_character'))|U] заболевает"
+ disease_contraction_feed_message.t:0 "[message_receiver.Custom2( 'RelationToMeShort', CHARACTER.Self )|U] заболевает"
+ disease_contraction_feed_message.d_1:0 "[LEFT_CHARACTER.GetShortUIName|U] [Select_CString(LEFT_CHARACTER.IsFemale, 'получила', 'получил' )] [Concept( 'trait', 'свойство' )|E] «[disease_trait.GetName( CHARACTER.Self )|LV]»"
+ disease_contraction_feed_message.d_2:0 "[LEFT_CHARACTER.GetShortUIName|U] и [RIGHT_CHARACTER.GetShortUIName] получили [Concept( 'trait', 'свойство' )|E] «[disease_trait.GetName( CHARACTER.Self )|LV]»"
+ disease_contraction_feed_message.d:0 "[LEFT_CHARACTER.GetShortUIName|U], [RIGHT_CHARACTER.GetShortUIName] и $message_consolidation_others$ получили [Concept( 'trait', 'свойство' )|E] «[disease_trait.GetName( LEFT_CHARACTER.Self )|LV]»"
  disease_recovery_feed_message.t:0 "[message_receiver.Custom2('RelationToMeShort', SCOPE.sC('sick_character'))|U] выздоравливает"
- health_smallpox_spreads_message:0 "Вспышка оспы"
- health_bubonic_plague_spreads_message:0 "Вспышка чумы"
 
 
 

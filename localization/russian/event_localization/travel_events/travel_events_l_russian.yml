@@ -234,7 +234,7 @@ l_russian:
  travel_events.4022.c:0 "Я хочу присоединиться к празднеству!"
  cultural_acceptance_participated_in_festival:0 "Вы участвовали в празднестве"
 
- travel_events.4023.t:0 "Путешествие: потерянные [prester_john_scope.GetFaith.GetAdherentNamePluralNoTooltip|l]" #TODO_CD_EP2, AdherentName for religions doesn't work. Talk to code.
+ travel_events.4023.t:0 "Путешествие: Потерянные [prester_john_scope.GetFaith.GetReligion.GetAdherentNamePluralNoTooltip|l]"
  travel_events.4023.desc.intro:0 "До меня доходили легенды, будто далекая #L [ROOT.Char.GetFaith.GetReligion.GetName|l]ая#! земля [prester_john_scope.GetPrimaryTitle.GetTierAsNameNoTooltip] окружена еретиками и неверными. И будто однажды [Select_CString(prester_john_scope.IsFemale, 'легендарная', 'легендарный' )] [prester_john_scope.GetTitleAsNameNoTooltip|l] этой земли воспылает праведным гневом, пойдет войной на это зло и сокрушит его!\n\n"
  travel_events.4023.desc.mid.john:0 "В легендах его называют «Пресвитер Иоанн», и"
  travel_events.4023.desc.mid.joan:0 "В легендах его называют «Пресвитер Иоанн», но, возможно, правильнее будет «Пресвитер Иоанна»! Как бы там ни было,"
@@ -257,7 +257,7 @@ l_russian:
 
  travel_events.4025.t:0 "Путешествие: Взяться за священный меч"
  travel_events.4025.desc.mid:0 "[foreign_visitor.GetSheHe|U] утверждает, что я — легендарная личность, которой предначертано разить неверных огнем и мечом, да благословит меня [ROOT.Char.GetFaith.HighGodName], ибо [ROOT.Char.GetFaith.NegativeAfterLife] ждет несчастных слишком давно.\n\nУ меня немало соседей самых разных верований, но неужели [ROOT.Char.GetFaith.HighGodName] действительно хочет, чтобы мои руки несли боль и страдания во исполнение высшей воли?"
- travel_events.4025.a:0 "Конечно да!"
+ travel_events.4025.a:0 "Конечно!"
  travel_events.4025.b:0 "[ROOT.Char.GetFaith.PositiveAfterlife] открывается множеством ключей."
  travel.visitor_rejected_me:0 "[prester_john_scope.GetName] отказывается карать еретиков"
  travel_events.4025.different_religion_neighbors_and_vassals:0 "Все [vassals|El] и соседние [rulers|El] других [Concept( 'religion', 'религий' )|E]"
@@ -466,3 +466,10 @@ l_russian:
  insisting_on_norms_modifier_desc:0 "Все придворные под наблюдением, любые иноземные или непривычные традиции запрещены."
 
  custom.every_same_culture_courtier:0 "Каждый [courtier|El] той же [Concept( 'culture', 'культуры' )|E]"
+
+ travel_events.5001.t:0 "Нашептанные истории"
+ travel_events.5001.desc:0 "Уже третий раз за сегодня я слышу, как местные, мимо которых мы проезжаем, обсуждают какую-то историю. [travelling_character.GetFirstName] видит мое недоумение.\n\n«Это местное предание, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord]. Они называют его „[potential_legend.GetName]“», — объясняет [Select_CString(travelling_character.IsFemale, 'она', 'он' )].\n\nЧто ж, звучит это довольно интересно..."
+ travel_events.5001.a:0 "Я распространю эту историю!"
+ travel_events.5001.b:0 "Наверняка я и [Select_CString(ROOT.Char.IsFemale, 'сама', 'сам' )] буду о ней рассуждать."
+ travel_events.5001.b.flavor:0 "По крайней мере, из этого выйдет забавная история, которую я смогу рассказывать встречным путникам!"
+ travel_events.5001.c:0 "Чушь какая-то."

@@ -2,11 +2,11 @@
   ### SETUP 
  activity_pilgrimage:0 "Паломничество"
  activity_pilgrimage_desc:0 "$game_concept_pilgrimage_desc$"
- activity_pilgrimage_host_desc:0 "$BULLET_WITH_TAB$[piety_i|E][Concept( 'piety', 'Благочестие' )|E]\n$BULLET_WITH_TAB$Снижение [stress_loss_i][Concept( 'stress', 'стресса' )|E]\n[GetPlayer.Custom('GetPilgrimOrHajjiTrait')]"
+ activity_pilgrimage_host_desc:0 "$BULLET_WITH_TAB$Повышение [piety_i|E][Concept( 'piety', 'благочестия' )|E]\n$BULLET_WITH_TAB$Прирост [legitimacy_i] [Concept('legitimacy', 'легитимности')|E]\n$BULLET_WITH_TAB$[stress_loss_i]Снижение [Concept( 'stress', 'стресса' )|E]\n[GetPlayer.Custom('GetPilgrimOrHajjiTrait')]"
  activity_pilgrimage_pilgrim_custom_host_desc:0 "$BULLET_WITH_TAB$ [Concept( 'trait', 'Свойство' )|E] «[GetTrait('pilgrim').GetName( GetNullCharacter )]» / [Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] «[GetTrait('pilgrim').GetName( GetNullCharacter )]»"
  activity_pilgrimage_hajjaj_custom_host_desc:0 "$BULLET_WITH_TAB$[Concept( 'trait', 'Свойство' )|E] «[GetTrait('hajjaj').GetName( GetNullCharacter )]»"
-  
- activity_pilgrimage_selection_tooltip:0 "Совершить [Concept( 'pilgrimage', 'паломничество' )|E], чтобы [GetPlayer.GetFaith.PantheonTerm] увидели мою преданность\n\nОжидаемые награды:\n$BULLET_WITH_TAB$[piety_i] [Concept( 'piety', 'Благочестие' )|E]\n$BULLET_WITH_TAB$[stress_loss_i] Потеря [Concept( 'stress', 'стресса' )|E]"
+
+ activity_pilgrimage_selection_tooltip:0 "Совершить [Concept( 'pilgrimage', 'паломничество' )|E], чтобы [GetPlayer.GetFaith.PantheonTerm] увидели мою преданность [opinion|E]\n\nОжидаемая награда:\n$BULLET_WITH_TAB$Снижение [stress_loss_i] [Concept( 'stress', 'стресса' )|E]\n$BULLET_WITH_TAB$Прирост [piety_i] [Concept( 'piety', 'благочестия' )|E]\n$BULLET_WITH_TAB$Прирост [legitimacy_i] [Concept('legitimacy', 'легитимности' )|E]"
  activity_pilgrimage_destination_selection:0 "Чем больше расстояние между вашей столицей и местом назначения, тем больше [GetPlayer.GetFaith.PantheonTerm] замечают вашу преданность, и тем выше ваше [Concept( 'piety', 'благочестие' )|E]."
  activity_pilgrimage_owner:0 "Пилигрим"
  activity_pilgrimage_name:0 "Паломничество"
@@ -109,7 +109,7 @@
   ### PHASES 
  pilgrimage_phase_solo:0 "Паломничество"
  pilgrimage_phase_solo_desc:0 "Паломничество — это духовное путешествие в мир собственных верований. Успех паломничества в равной мере определяется решениями, принятыми в пути, и теми, что приняты у цели путешествия."
- activity_pilgrimage_guest_desc:0 "$BULLET_WITH_TAB$Участники могут получить [Concept( 'piety', 'благочестие' )|E]\n$BULLET_WITH_TAB$Участники могут потерять [stress_loss_i][Concept( 'stress', 'стресс' )|E]\n$BULLET_WITH_TAB$Участники могут получить [Concept( 'trait', 'свойство' )|E] «[GetTrait('pilgrim').GetName( GetNullCharacter )]»"
+ activity_pilgrimage_guest_desc:0 "$BULLET_WITH_TAB$Участники могут получить [Concept( 'piety', 'благочестие' )|E]\n$BULLET_WITH_TAB$[legitimacy_i] [legitimacy|E] участников может повыситься\n$BULLET_WITH_TAB$Участники могут потерять [stress_loss_i][Concept( 'stress', 'стресс' )|E]\n$BULLET_WITH_TAB$Участники могут получить [Concept( 'trait', 'свойство' )|E] «[GetTrait('pilgrim').GetName( GetNullCharacter )]»"
   
   ### OPTIONS 
   #Type of Pilgrimage [Special Type] Option 

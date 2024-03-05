@@ -98,6 +98,12 @@
  tour_travel.9030.desc.outro:0 "\n\n«[drunky_entourage.GetFaith.HighGodName] мне свидетелем, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], здесь неподалеку есть чудесное гнездо порока. Давай пойдем туда и забудемся в веселье и кутеже!»"
  tour_travel.9030.a:0 "Веселье и кутеж, я иду к вам!"
  tour_travel.9030.b:0 "Нам нельзя отвлекаться."
+ tour_travel.9040.t:0 "Величайший герой"
+ tour_travel.9040.desc:0 "Мой отряд ненадолго останавливается, чтобы передохнуть, и я забредаю в некое сомнительное заведение, чтобы познакомиться с местными. Не раскрывая своей личности, я подслушиваю шумные беседы простолюдинов.\n\n[Select_CString(peasant.IsFemale, 'Одна крестьянка', 'Один крестьянин' )] веселится с товарищами, обмениваясь историями о героях любимых легенд. «...а что [Select_CString(ROOT.Char.GetPromotedLegend.GetProtagonist.IsFemale, 'эта', 'этот' )], [ROOT.Char.GetPromotedLegend.GetProtagonist.GetName]? Я даже не знаю, [Select_CString(ROOT.Char.GetPromotedLegend.GetProtagonist.IsFemale, 'была ли она', 'был ли он' )], не говоря уж об остальных проделках, что описывает '[ROOT.Char.GetPromotedLegend.GetName]!»"
+ tour_travel.9040.a:0 "Нужно защитить свою легенду!"
+ tour_travel.9040.a.success:0 "Крестьяне восхваляют ваш рассказ"
+ tour_travel.9040.a.failure:0 "Вы осмеяны"
+ tour_travel.9040.b:0 "Явно эта история слишком сложна для [Select_CString(peasant.IsFemale, 'нее', 'него' )]."
 
  #Tour Arriving at a Stop
  #Vassal: Liege arrival event
@@ -1504,6 +1510,12 @@
  cultural_festival.9050.desc:0 "Меня ждет очередное очаровательное развлечение. Все затихли в предвкушении, и эту тишину разрывает грохот барабанов, напоминающий биение сердца.\n\nИз-за кулис выходит [Select_CString(sexy_dancer.IsFemale, 'великолепная женщина, ее', 'великолепный мужчина, его' )] тело изгибается одновременно непристойно и волнующе. [Select_CString(sexy_dancer.IsFemale, 'Она', 'Он' )] подходит ко мне возмутительно близко и украдкой подмигивает, а затем возвращается к восторженным зрителям."
  cultural_festival.9050.a:0 "[Select_CString(sexy_dancer.IsFemale, 'Она должна', 'Он должен' )] стать [Select_CString(sexy_dancer.IsFemale, 'моей', 'моим' )]!"
  cultural_festival.9050.b:0 "Как необычно!"
+ cultural_festival.9060.t:0 "Легендарное представление"
+ cultural_festival.9060.desc:0 "В приподнятом настроении я хожу среди празднующего люда и в конечном счете натыкаюсь на труппу актеров. Похоже, они репетируют, и по одному их исполнению я могу сказать, что меня ждет хорошее развлечение.\n\nМеня посещает мысль, что труппе не помешало бы знакомство с новым материалом. И правда, [ROOT.Char.GetPromotedLegend.GetName] станет отличным вдохновением для столь талантливых актеров."
+ cultural_festival.9060.a:0 "Они должны исполнить мою легенду!"
+ cultural_festival.9060.a.success:0 "[stop_host_scope.GetFirstName] видит представление"
+ cultural_festival.9060.a.failure:0 "Представление проходит неплохо"
+ cultural_festival.9060.b:0 "Стоит просто наслаждаться тем, что они могут предложить."
 
  lover_enchanting_dancing:0 "[Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][TARGET_CHARACTER.GetNamePossessiveOrMy|U][Select_CString(TARGET_CHARACTER.IsLocalPlayer, ' персонаж', '' )] очаровал [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] эротическим танцем"
  lover_enchanting_dancing_corresponding:0 "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsFemale, 'очаровала', 'очаровал' )] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] эротическим танцем"
