@@ -1,6 +1,6 @@
 ﻿l_russian:
- tried_to_subjugate_me:0 "В своём высокомерии, персонаж [TARGET_CHARACTER.GetShortUIName|U] потребовал подчинения персонажа [CHARACTER.GetShortUINamePossessiveNoTooltip]."
- tried_to_subjugate_me_corresponding:0 "В своём высокомерии, [TARGET_CHARACTER.GetShortUIName|U] отказался подчиниться требованиям [CHARACTER.GetShortUINamePossessiveNoTooltip]."
+ tried_to_subjugate_me:0 "В своём высокомерии, [TARGET_CHARACTER.GetShortUIName|U] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'потребовали', Select_CString(TARGET_CHARACTER.IsFemale, 'потребовала', 'потребовал' ))] подчинения [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )]."
+ tried_to_subjugate_me_corresponding:0 "В своём высокомерии, [TARGET_CHARACTER.GetShortUIName|U] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'отказались', Select_CString(TARGET_CHARACTER.IsFemale, 'отказалась', 'отказался' ))] подчиниться требованиям [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )]."
  saruman_betrayal:0 "[TARGET_CHARACTER.GetShortUIName] принёс клятву верности персонажу [CHARACTER.GetShortUIName], а затем нарушил её."
  saruman_betrayal_corresponding:0 "[CHARACTER.GetShortUIName|U] принёс клятву верности персонажу [TARGET_CHARACTER.GetShortUIName], а затем нарушил её."
  banished_from_rohan:0 "[TARGET_CHARACTER.GetShortUIName|U] изгнал персонажа [CHARACTER.GetShortUIName] из своей державы."
