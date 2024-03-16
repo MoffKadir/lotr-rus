@@ -1,10 +1,10 @@
 ﻿l_russian:
 
- ############################################## 
- #Theocracy titles, religious (group) localization. 
+ ##############################################
+ #Theocracy titles, religious (group) localization.
 
- ############################################## 
- # Special cultural titles (sorted by culture, then government type). 
+ ##############################################
+ # Special cultural titles (sorted by culture, then government type).
 
  #### EVIL BEINGS ####
  # Feudal
@@ -343,9 +343,8 @@
  ## NURNIAG ##
 
  ### Easterlings ###
- count_igath_male:0 "Иш'тада"
- count_igath_female:0 "Иш'тада"
- duke_igath_male:0 "Шазада"
+ count_igath:0 "Иш'тада"
+ duke_igath:0 "Шазада"
  duke_igath_female:0 "Шазада"
  king_igath_male:0 "Тикайя"
  king_igath_female:0 "Тикайя"
@@ -357,8 +356,38 @@
  kingdom_igath:0 "А'тра"
  empire_igath:0 "Укхдана"
 
- duke_dragon_knights:0 "Мастер ордена"
- duchy_dragon_knights:0 "Орден"
+ ## Dragon Knights
+ king_dragon_knights:0 "Чёрный дракон"
+ kingdom_dragon_knights:0 "Орден"
+ count_vassal_dragon_knights_male:0 "Рыцарь-дракон"
+ duke_vassal_dragon_knights_male:0 "Магистр ордена"
+
+ county_vassal_dragon_knights:0 "Отряд"
+ duchy_vassal_dragon_knights:0 "Орден"
+
+ custom_dragon_knight_loremaster:0 "Библиарий"
+
+ count_igath_male:0 "[CHARACTER.Custom('easterling_count')]"
+ count_igath_female:0 "[CHARACTER.Custom('easterling_count')]"
+ duke_igath_male:0 "[CHARACTER.Custom('easterling_duke')]"
+ duke_igath_female_2:0 "[CHARACTER.Custom('easterling_duke')]"
+
+ duchy_easterling:0 "[CHARACTER.Custom('easterling_duchy')]"
+ county_easterling:0 "[CHARACTER.Custom('easterling_county')]"
+
+ # vassal titles #
+ count_oligarchy_male:0 "[CHARACTER.Custom('count_oligarchy_male')]"
+ count_oligarchy_male_vassal:0 "Советник"
+ count_oligarchy_female:0 "[CHARACTER.Custom('count_oligarchy_female')]"
+ count_oligarchy_female_vassal:0 "Советница"
+ duke_oligarchy_male:0 "[CHARACTER.Custom('duke_oligarchy_male')]"
+ duke_oligarchy_male_vassal:0 "Высокий советник"
+ duke_oligarchy_female:0 "[CHARACTER.Custom('duke_oligarchy_female')]"
+ duke_oligarchy_female_vassal:0 "Высокая советница"
+ king_oligarchy_male:0 "[CHARACTER.Custom('king_oligarchy_male')]"
+ king_oligarchy_male_vassal:0 "Представитель"
+ king_oligarchy_female:0 "[CHARACTER.Custom('king_oligarchy_female')]"
+ king_oligarchy_female_vassal:0 "Представительница"
 
  count_feudal_male_ioriag:0 "Осводег"
  count_feudal_female_ioriag:0 "Осводега"
@@ -444,26 +473,12 @@
  duchy_oligarchy:0 "Округ"
  kingdom_oligarchy:0 "Олигархия"
  independant_king_oligarch:0 "Олигарх"
- emperor_oligarchy_male:0 "Председатель"
- emperor_oligarchy_female:0 "Председательница"
- empire_oligarchy:0 "Великая ассамблея"
+ emperor_oligarchy_male:0 "Верховный куратор"
+ emperor_oligarchy_female:0 "Верховный куратор"
+ empire_oligarchy:0 "Фригольд"
 
  independant_oligarchy_council_master:0 "Магистр совета"
  oligarch:0 "Магистр совета"
-
- # vassal titles #
- count_oligarchy_male:0 "[CHARACTER.Custom('count_oligarchy_male')]"
- count_oligarchy_male_vassal:0 "Советник"
- count_oligarchy_female:0 "[CHARACTER.Custom('count_oligarchy_female')]"
- count_oligarchy_female_vassal:0 "Советница"
- duke_oligarchy_male:0 "[CHARACTER.Custom('duke_oligarchy_male')]"
- duke_oligarchy_male_vassal:0 "Высокий советник"
- duke_oligarchy_female:0 "[CHARACTER.Custom('duke_oligarchy_female')]"
- duke_oligarchy_female_vassal:0 "Высокая советница"
- king_oligarchy_male:0 "[CHARACTER.Custom('king_oligarchy_male')]"
- king_oligarchy_male_vassal:0 "Представитель"
- king_oligarchy_female:0 "[CHARACTER.Custom('king_oligarchy_female')]"
- king_oligarchy_female_vassal:0 "Представительница"
 
  ## Daen ##
  baron_daen_male:0 "Арди"

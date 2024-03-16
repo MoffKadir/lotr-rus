@@ -111,7 +111,12 @@
  health.1011.court_physician.desc:0 "\n\n«[ROOT.Char.GetLadyLord|U], я сделаю все, что в моих силах, но вам стоит готовиться к худшему...»"
  health.1011.a:0 "[ROOT.Char.GetFaith.HealthGodName], спаси меня от этого кошмара!"
 
- health.1099.t:1 "[SCOPE.Custom('EventTitleDisease')]: Чёрное дыхание"
+ health.1098.t:1 "[SCOPE.Custom('EventTitleDisease')]: Потерянная гордость"
+ health.1098.desc:0 "Страх потерять бороду был моим постоянным спутником на протяжении всей жизни. В детстве няня рассказывала мне на ночь жуткие истории о зудящем подбородке, выпадающих волосах и кровавых волдырях на коже.\n\nНо бородная гниль больше не просто страшная история. Осторожно я прикасаюсь к остаткам некогда великолепной бороды. Тёмная и разрушительная сила портит мою бороду, поглощая её, пока я ещё дышу."
+ health.1098.court_physician.desc:0 "\n\n«[ROOT.Char.GetLadyLord], я сделаю все, что в моих силах, но вам стоит готовиться к худшему...»"
+ health.1098.a:1 "О, [ROOT.Char.GetFaith.HealthGodName]! Спаси меня от этого кошмара!"
+
+ health.1099.t:1 "[SCOPE.Custom('EventTitleDisease')]: Касание Кольценосца"
  health.1099.desc:0 "С тех пор как я столкнулся с этим Темным Всадником, я не чувствую себя прежней. Всё вокруг напоминает кошмарный сон:\n\nцвета не такие яркие, как раньше, солнце не греет кожу, и я чувствую, как из меня вытекают все силы. Всё, что я хочу, - это спать.\n\nЯ боюсь, что меня коснулось ужасное Чёрное дыхание, от которого нет лечения."
  health.1099.court_physician.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], я сделаю всё, что в моих силах, но было бы разумно подготовиться к худшему...»"
  health.1099.a:1 "О, [ROOT.Char.GetFaith.HealthGodName]! Спаси меня от этого кошмара!"
@@ -163,6 +168,10 @@
  health.1115.t:1 "[SCOPE.Custom('EventTitleDisease')]: Вопреки всему"
  health.1115.desc:0 "Все выглядит так, словно [ROOT.Char.GetFaith.DeathDeityName] входит в мою дверь, присаживается на мою постель, но все-таки решает оставить меня в живых. Я никогда не забуду, сколь мучительным было [ROOT.Char.GetFaith.DeathDeityHerHis|U] прикосновение, и все же [ROOT.Char.GetFaith.DeathDeitySheHe|U] открывает мне глаза на то, как прекрасна жизнь.\n\nЧёрное дыхание забрало много душ, но не мою."
  health.1115.a:1 "[ROOT.Char.GetFaith.HealthGodName], благодарю Тебя за это чудо!"
+
+ health.1116.t:1 "[SCOPE.Custom('EventTitleDisease')]: Вопреки всему"
+ health.1116.desc:0 "Все выглядит так, словно [ROOT.Char.GetFaith.DeathDeityName] входит в мою дверь, присаживается на мою постель, но все-таки решает оставить меня в живых. Я никогда не забуду, сколь мучительным было [ROOT.Char.GetFaith.DeathDeityHerHis|U] и всё же [ROOT.Char.GetFaith.DeathDeitySheHe|U] открывает мне глаза на то, как прекрасна жизнь.\n\nБородная гниль забрала много душ, но не мою."
+ health.1116.a:1 "Praise [ROOT.Char.GetFaith.HealthGodName] for this miracle!"
 
  #STD events, by Mathilda Bjarnehed
  health.2001.t:0 "[SCOPE.Custom('EventTitleDisease')]: неприятный сюрприз"
@@ -241,6 +250,7 @@
  disease_measles:0 "корью."
  disease_ergotism:0 "священным огнем."
  disease_dysentery:0 "дизентерией."
+ disease_beardless_plague:0 "бородной гнилью."
  missing_illness:0 "#D Нет болезни #!"
  health.2201.minor_disease.desc:0 "\n\nОбычно такое незначительное заболевание не вызывает особого беспокойства, но [SCOPE.sC('sick_character').GetFirstName] отличается слабым здоровьем и, возможно, не переживет этого."
  health.2201.leprosy.desc:0 "\n\nВозможно, [sick_character.GetSheHe] проживет еще многие годы, но [sick_character.GetHerHis] будут сторониться и опасаться из-за уродства. Даже я не могу подавить отвращения при мысли о нарывах, растущих по всей [sick_character.GetHerHis] коже..."

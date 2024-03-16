@@ -19,24 +19,45 @@
 
  activity_feast_province_desc_elven_agriculture:0 "#P + $building_type_elven_agriculture_01$#!\n"
  activity_feast_province_desc_slave_farms:0 "#P + $building_type_slave_farms_01$#!\n"
+ activity_feast_province_desc_dwarven_ale_house:1 "#P + $building_type_dwarven_ale_house_01$#!\n"
+ activity_feast_province_desc_dwarven_fungal_farm:1 "#P + $building_type_dwarven_fungal_farm_01$#!\n"
+ activity_feast_province_desc_dwarven_terrace_farm:1 "#P + $building_type_dwarven_terrace_farm_01$#!\n"
+ 
+ activity_feast_province_desc_legendary_palace:1 "#P +++ $building_type_legendary_palace$#!\n"
  activity_feast_province_desc_wonder_palace_of_ithilien:0 "#P +++ $building_type_wonder_palace_of_ithilien$#!\n"
  activity_feast_province_desc_wonder_edoras:0 "#P +++ $building_type_wonder_edoras_01$#!\n"
  activity_feast_province_desc_wonder_palace_of_haruzan:0 "#P +++ $building_type_wonder_palace_of_haruzan_01$#!\n"
  activity_feast_province_desc_wonder_aradhrynd:0 "#P +++ $building_type_wonder_aradhrynd$#!\n"
  activity_feast_province_desc_wonder_palace_joam:0 "#P +++ $building_type_wonder_palace_joam_01$#!\n"
  activity_feast_province_desc_wonder_zekhetz_palace_complex:0 "#P +++ $building_type_wonder_zekhetz_palace_complex_01$#!\n"
+ activity_feast_province_desc_wonder_annuminas:1 "#P +++ $building_type_wonder_annuminas_01$#!\n"
+ activity_feast_province_desc_wonder_argond:1 "#P +++ $building_type_wonder_argond_01$#!\n"
+ activity_feast_province_desc_wonder_harlond:1 "#P +++ $building_type_wonder_harlond_01$#!\n"
+ activity_feast_province_desc_wonder_nogrod_rebuilt:1 "#P +++ $building_type_wonder_nogrod_rebuilt$#!\n"
+ activity_feast_province_desc_wonder_belegost_rebuilt:1 "#P +++ $building_type_wonder_belegost_rebuilt$#!\n"
+
 
 
  feast_cost_discount_elven_agriculture:0 "В этом месте есть $building_type_elven_agriculture_01$#!"
  feast_cost_discount_slave_farms:0 "В этом месте есть $building_type_slave_farms_01$#!"
+ feast_cost_discount_dwarven_ale_house:1 "В этом месте есть $building_type_dwarven_ale_house_01$#!\n"
+ feast_cost_discount_dwarven_fungal_farm:1 "В этом месте есть $building_type_dwarven_fungal_farm_01$#!\n"
+ feast_cost_discount_dwarven_terrace_farm:1 "В этом месте есть $building_type_dwarven_terrace_farm_01$#!\n"
+ 
+ feast_cost_discount_legendary_palace:1 "В этом месте есть $building_type_legendary_palace$#!\n"
  feast_cost_discount_wonder_palace_of_ithilien:0 "В этом месте есть $building_type_wonder_palace_of_ithilien$#!"
  feast_cost_discount_wonder_edoras:0 "В этом месте есть $building_type_wonder_edoras_01$#!"
  feast_cost_discount_wonder_palace_of_haruzan:0 "В этом месте есть $building_type_wonder_palace_of_haruzan_01$#!"
  feast_cost_discount_wonder_aradhrynd:0 "В этом месте есть $building_type_wonder_aradhrynd$#!"
  feast_cost_discount_wonder_palace_joam:0 "В этом месте есть $building_type_wonder_palace_joam_01$#!"
  feast_cost_discount_wonder_zekhetz_palace_complex:0 "В этом месте есть $building_type_wonder_zekhetz_palace_complex_01$#!"
+ feast_cost_discount_wonder_annuminas:1 "В этом месте есть $building_type_wonder_annuminas_01$#!\n"
+ feast_cost_discount_wonder_argond:1 "В этом месте есть $building_type_wonder_argond_01$#!\n"
+ feast_cost_discount_wonder_harlond:1 "В этом месте есть $building_type_wonder_harlond_01$#!\n"
+ feast_cost_discount_wonder_nogrod_rebuilt:1 "В этом месте есть $building_type_wonder_nogrod_rebuilt$#!\n"
+ feast_cost_discount_wonder_belegost_rebuilt:1 "В этом месте есть $building_type_wonder_belegost_rebuilt$#!\n"
 
- wedding_type_murder_elf_tt:1 "Вы или один из новобрачных - [elf|El] и не можете проводить такое занятие, как кровавая [GetActivityType('activity_wedding').GetName]."
+ wedding_type_murder_elf_tt:1 "Вы или один из новобрачных - [elf|El] и не можете проводить такое занятие, как кровавая [GetActivityType('activity_wedding').GetName|l]."
 
  ################# 
  # Hunt Activity # 
@@ -69,6 +90,13 @@
  activity_tournament_province_snaga_warrens_01_desc:0 "#P + $building_type_snaga_warrens_01$#!"
  activity_tournament_province_elven_forges_01_desc:0 "#P + $building_type_elven_forges_01$#!"
  activity_tournament_province_heavy_armoury_01_desc:0 "#P + $building_type_heavy_armoury_01$#!"
+ activity_tournament_province_military_specialization_01_desc:2 "#P + $building_type_military_specialization_01$#!"
+ activity_tournament_province_dwarven_archer_barracks_01_desc:2 "#P + $dwarven_archer_barracks_01$#!"
+ activity_tournament_province_dwarven_armory_01_desc:2 "#P + $dwarven_armory_01$#!"
+ activity_tournament_province_dwarven_kings_armory_military_01_desc:2 "#P + $dwarven_kings_armory_military_01$#!"
+ activity_tournament_province_dwarven_pike_barracks_01_desc:2 "#P + $dwarven_pike_barracks_01$#!"
+ activity_tournament_province_dwarven_hi_barracks_01_desc:2 "#P + $dwarven_hi_barracks_01$#!"
+ activity_tournament_province_dwarven_skirmisher_barracks_01_desc:2 "#P + $dwarven_skirmisher_barracks_01$#!"
 
 
  ################################## 
@@ -91,11 +119,11 @@
  explore_history_type_standard:0 "Исследование истории"
  explore_history_type_standard_desc:0 "$EFFECT_LIST_BULLET$ Вы можете улучшить свои личные [skills|El] и извлечь уроки из прошлого.\n\n#weak В пыльных фолиантах и ​​старинных рукописях скрыта древняя мудрость. Уроки прошлого могут научить нас, как строить лучшее будущее, чтобы не допустить повторения истории.#"
  explore_history_type_adunaic_propaganda:0 "Спонсировать адунаикскую пропаганду"
- explore_history_type_adunaic_propaganda_desc:0 "$EFFECT_LIST_BULLET$ Вы можете улучшить свои личные навыки и пытаться влиять на восприятие вашими подданными вашего правления.\n$EFFECT_LIST_BULLET$ Грубая пропаганда может не понравиться вашим подданным.\n\n#weak Это неопровержимая истина, что потомки Высших людей Анадунэ долгое время безраздельно властвовали как повелители всех людей в Средиземье. Однако с годами многие забыли эту истину и вместо этого недовольно ропщут против нашего правления. Мы должны убедиться, что все наши подданные знают о нашем божественном праве управлять ими.#!"
+ explore_history_type_adunaic_propaganda_desc:0 "$EFFECT_LIST_BULLET$ Вы можете улучшить свои личные навыки, повысить [legitimacy|El] и пытаться повлиять на восприятие вашими подданными вашего правления.\n$EFFECT_LIST_BULLET$ Грубая пропаганда может не понравиться вашим подданным.\n\n#weak Это неопровержимая истина, что потомки Высших людей Анадунэ долгое время безраздельно властвовали как повелители всех людей в Средиземье. Однако с годами многие забыли эту истину и вместо этого недовольно ропщут против нашего правления. Мы должны убедиться, что все наши подданные знают о нашем божественном праве управлять ими.#!"
 
  activity_explore_history_host_desc_trait_xp:0 "$BULLET_WITH_TAB$Участники могут получить [Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n"
  activity_explore_history_host_desc_trait:0 "$BULLET_WITH_TAB$Участники могут получить [trait|El] «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n"
- activity_explore_history_host_desc_antiquarian:0 "\n@warning_icon! #negative_value У вас отсутствует [GetCourtPositionType('antiquarian_court_position').GetName()]"
+ activity_explore_history_host_desc_chronicler:0 "\n@warning_icon! #negative_value У вас отсутствует [GetCourtPositionType('chronicler_court_position').GetName()]"
 
  explore_history_scholars:0 "Учёные"
  explore_history_no_scholars:0 "Нет учёных"
@@ -231,7 +259,7 @@
  history_book_toast_desc:0 "Вы получили [Artifact.GetNameNoTooltip]"
 
  # Conclusion Window Loc 
- activity_window_character_antiquarian:0 "Историк\n[Character.GetShortUINameNoTooltip|U]"
+ activity_window_character_chronicler:0 "Хронист\n[Character.GetShortUINameNoTooltip|U]"
  activity_window_character_court_chaplain:0 "[court_chaplain.GetCouncilTitle|U]\n[Character.GetShortUINameNoTooltip|U]"
 
  #Guest Rules 

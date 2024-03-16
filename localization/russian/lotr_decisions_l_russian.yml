@@ -265,6 +265,16 @@
  decision_reunify_dunedain_vassals_custom:1 "Каждый $arnorian_collective_noun$ий и $gondorian_collective_noun$ий [vassal|El]"
  decision_reunify_dunedain_counties_custom:1 "Каждое $arnorian_collective_noun$ое и $gondorian_collective_noun$ое [county|El] в вашей [Concept('realm', 'державе')|E]"
 
+
+ decision_reclaim_royal_lineage:0 "Восстановить королевский род дунэдайн"
+ decision_reclaim_royal_lineage_tooltip:0 "Проследить свою родословную до Элендиля"
+ decision_reclaim_royal_lineage_desc:0 "На протяжении всей [Concept('thirdage', 'Третьей Эпохи')|E] прямые мужские линии потомков [Concept('isildur', 'Исильдура')|E] и Анариона прервались, а троны [Concept('arnor', 'Арнора')|E] и [Concept('gondor', 'Гондора')|E] оставались вакантными. Хотя наш род не всегда переходил от отца к сыну, но разве сам [elendil|E] не происходил от дочери короля? Если бы мы смогли доказать наше королевское происхождение, мало кто смог бы возразить против справедливости наших притязаний."
+ decision_reclaim_royal_lineage_confirm:0 "Искать в записях"
+ reclaim_royal_lineage_aranbor_tooltip:0 "#T #V Претендовать на происхождение от Аранбора#! #!\n\nАранбор был младшим сыном Арведуи, последнего короля [Concept('arthedain', 'Артедайна')|E]. Хотя наш дом долгое время довольствовался управлением Эмин Виалем, мы имеем законные притязания на титул верховных королей дунэдайн."
+ reclaim_royal_lineage_silivnir_tooltip:0 "#T #V Претендовать на происхождение от Силивнира#! #!\n\nСиливнир был младшим сыном Валандиля, третьего короля [Concept('arnor', 'Арнора')|E]. На протяжении большей части [Concept('thirdage', 'Третьей Эпохи')|E] наш дом хранил исторический порт Селернен, но наши притязания на титул верховных королей дунэдайн столь же справедливы, как и любые другие."
+ finished_isildur_legend_tt:0 "Член вашего дома завершил [Concept('legend_mythical', 'мифическую')|E] [Concept('legend', 'легенду')|E] $legend_isildur$"
+ unlock_reclaim_dunedain_royal_lineage_tt:0 "Открывает [decision|El] #EMP $decision_reclaim_royal_lineage$#!"
+
  ##########################
  #### Move the Capital ####
  ##########################
@@ -457,6 +467,9 @@
  decision_claim_gondor_kingship_confirm:0 "Наступили времена королей!"
  decision_claim_gondor_kingship_tooltip:0 "Возродить королевство Гондор"
  decision_claim_gondor_kingship_tt.1:0 "[GetTitleByKey('e_gondor_steward').GetName] не существует"
+ finished_anarion_legend_tt:0 "Член вашего дома завершил [Concept('legend_mythical', 'мифическую')|E] [Concept('legend', 'легенду')|E] $legend_anarion$"
+ unlock_claim_gondor_kingship_tt:0 "Открывает [decision|El] #EMP $decision_claim_gondor_kingship$#!"
+
 
  decision_claim_enedhwaith:0 "Претендовать на Энедвайт"
  decision_claim_enedhwaith_desc:0 ""
@@ -557,6 +570,9 @@
  press_castamiri_claim_tooltip:0 "Вы начнёте вторжение в Гондор, чтобы возвести на его трон кровь Кастамира."
  decision_castamir_claim_already_pressed_tooltip:0 "За всю свою жизнь вы ещё не предъявляли претензии Кастамира."
  decision_castamir_claim_recently_failed.tt:0 "Кастамирцы недавно не сумели продавить свои претензии!"
+ finished_castamiri_legend_tt:0 "Член вашего дома завершил [Concept('legend_mythical', 'мифическую')|E] [Concept('legend', 'легенду')|E] $legend_castamir$"
+ unlock_castamiri_claim_tt:0 "Открывает [decision|E] #EMP $decision_castamir_claim$#!"
+
  decision_turn_to_piracy:0 "Обратиться к пиратству"
  decision_turn_to_piracy_AI:0 "Обратиться к пиратству (ИИ)"
  decision_turn_to_piracy.desc:0 "Мы долго притворялись цивилизованными и слабыми. Мы - гордые сыновья берега, и мы обратимся к жизни налётчиков, и наших парусов будут бояться на всем побережье Белегаэра!"
@@ -1019,6 +1035,8 @@
  decision_margoz_prepare_easterling_host:0 "Золотое воинство игат"
  decision_margoz_prepare_easterling_host_tooltip:0 "Сокровищница в пути"
  decision_margoz_prepare_easterling_host_desc:0 "Мой предшественник добился значительных успехов в создании большого войска, с которым можно было бы отправиться в поход на виночерпиев [Concept( 'dorwinion', 'Дорвиниона' )|E]. Однако его эгоистичный и недальновидный наследник сохранил этих людей для своих собственных нелояльных целей. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] завершить работу предыдущего Локе-Кана на западе, прежде чем смогу отвоевать Сзрел-Каин у [dorwinrim|El]."
+
+
  decision_margoz_prepare_easterling_host_confirm:0 "Старинные вина и багровая кровь потекут как единое целое"
 
  decision_margoz_attack_dale:0 "Вторгнуться в Дэйл"
@@ -1026,6 +1044,32 @@
  decision_margoz_attack_dale_desc:0 "Варвары [Concept( 'dale', 'Дэйла' )|E] уже достаточно долго томятся в захолустье [Concept( 'rhovanion', 'Рованиона' )|E]. Славный дракон Смауг указал им их место. Но они убили его во всей его божественной славе и возвели злодея в короли! Их солнце взойдёт красным от сожжения их земель!"
  decision_margoz_attack_dale_confirm:0 "Стереть память Рованиона"
  huz_army_10000:0 "Размер армии - 10,000 воинов"
+
+ decision_margoz_election_choice:0 "Правление Золотым королевством"
+ decision_margoz_election_choice_tooltip:0 "Что движет моим правлением?"
+ decision_margoz_election_choice_desc:0 "После того как выборы состоялись, я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] открыто заявить о своих намерениях Золотому королевству. Так или иначе, но запад падёт. Поведу ли я наши позолоченные войска в Дэйл, пока патриции Дорвиниона"
+ decision_margoz_election_choice_confirm:0 "Каким бы ни был выбор, я уже [Select_CString(ROOT.Char.IsFemale, 'выиграла', 'выиграл' )]"
+ huz_makes_choice_tooltip:0 "Определить будущее Золотого королевства и вашей семьи"
+
+ decision_margoz_conspire_patrician:0 "Обратиться к патрициям"
+ decision_margoz_conspire_patrician_hover_tooltip:0 "Огню нужна только искра"
+ decision_margoz_conspire_patrician_desc:0 "Патриции Дорвиниона должны стать моими друзьями и убивать за меня"
+ decision_margoz_conspire_patrician_confirm:0 "В скрипучее колесо попадает масло"
+ decision_margoz_conspire_patrician_tooltip:0 "Когда вы это сделаете, то убьете смешного человека с бородой в стране вина и его невестку. Серьезный игровой ход"
+
+ decision_settle_central_rhovanion:0 "Усмирить центральный Рованион"
+ decision_settle_central_rhovanion_tooltip:0 "Привести границу к порядку"
+ decision_settle_central_rhovanion_desc:0 "Мне нужно владеть средней частью, чтобы подойти и скорчить рожу дэйлца в короне Рованиона."
+ decision_settle_central_rhovanion_confirm:0 "Призвать рыцарей-драконов!"
+
+ decision_war_in_the_north:0 "Война на Севере"
+ decision_war_in_the_north_tooltip:0 "gamer move"
+ decision_war_in_the_north_desc:0 "gonna kill em'"
+ decision_war_in_the_north_confirm:0 "dey ain't got no chance"
+ decision_war_in_the_north_effect_1:0 ""
+
+ war_in_the_north_cb:0 "Война на Севере"
+ huz_colonized_rhovanion:0 "Решение «Усмирить центральный Рованион» завершено"
 
  decision_margoz_dale_crushed:0 "Дэйл сокрушён"
  decision_margoz_dale_crushed_tooltip:0 "Они преклонили колени"
@@ -1240,3 +1284,12 @@
  struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_2:0 "Если вы преуспеете, то получите [title|El] [Concept( 'empire', 'империи' )|E], станете неуязвимы для негативных событий балрога в ходе [Concept( 'struggle', 'борьбы' )|E], получите уникальных [Concept( 'men_at_arms', 'профессионалов' )|E], создадите новую конфессию, а балрог будет время от времени выдвигать вам требования."
  struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_3:0 "В случае неудачи вы погибнете."
  struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_4:0 "Независимо от исхода, [struggle|El] продолжится."
+
+ ##########################
+ ### Breeland Decisions ###
+ ##########################
+
+ decision_reaffirm_breeland:0 "Укрепить земли Бри"
+ decision_reaffirm_breeland_tooltip:0 "Расширить границы земель Бри."
+ decision_reaffirm_breeland_desc:0 "Со времён тьмы, когда пали старые короли, ближайшие земли, окружающие Бри, по большому счету, были малонаселёнными. Возможно, настало время колонизировать эти дебри и официально подчинить их нашей юрисдикции."
+ decision_reaffirm_breeland_confirm:0 "Мудрое начинание"
