@@ -31,14 +31,51 @@
 
 
  ### Dwarven Reincarnation Events
+ dwarven.5002.t:0 "[my_dorfdad.GetFirstNameNoTooltip]: сходства"
+ dwarven.5002.desc:0 "Чем старше я становлюсь, тем больше я замечаю, что я и [my_dorfdad.GetFirstName], описанный в легендах [Concept( 'dwarves', 'гномов' )|E], имеем много общего. И в характере, и во внешности я, кажется, унаследовал некоторые черты его характера."
+ dwarven.5002.durin:0 "Мне снится тёмное озеро..."
+ dwarven.5002.durin.tt:0 "В отражении которого звёзды выстроились в корону."
+ dwarven.5002.uri:0 "Мне снится огонь..."
+ dwarven.5002.uri.tt:0 "Горящий в кузне, жаркий и яростный."
+ dwarven.5002.dwalin:0 "Мне снятся знания..."
+ dwarven.5002.dwalin.tt:0 "Сокрытые в подземных хранилищах."
+ dwarven.5002.thrar:0 "Мне снится гора..."
+ dwarven.5002.thrar.tt:0 "Вечно непреклонная, непоколебимая и гордая."
+ dwarven.5002.sindri:0 "Мне снится золото..."
+ dwarven.5002.sindri.tt:0 "Горы богатств, принадлежащих лишь мне."
+ dwarven.5002.thulin:0 "Мне снится дракон..."
+ dwarven.5002.thulin.tt:0 "Его череп висит на стене."
+ dwarven.5002.bavor:0 "Мне снятся семь самоцветов..."
+ dwarven.5002.bavor.tt:0 "Украшающих великолепно сделанное ожерелье"
+ dwarven.5002.fallback:0 "Мне снится молот..."
+ dwarven.5002.fallback.tt:0 "Высоко поднятый над головой ремесленника с грустью в глазах."
+
+ dwarven.5003.t:0 "Беря пример с праотца"
+ dwarven.5003.desc:0 "Юный [new_dorfdad.GetFirstName], похоже, берёт пример с праотца своего клана, коим был [my_dorfdad.GetFirstNameNicknamed]! Он становится довольно многообещающим молодым [Concept( 'dwarf', 'гномом' )|E].\n\nБудь то природа или воспитание, в нём сияет сила народа, которому положил начало [my_dorfdad.GetFirstNameNoTooltip]."
+ dwarven.5003.a:0 "Интересно..."
+
  dwarven.5100.t:0 "[my_dorfdad.GetFirstNameNoTooltip] [Select_CString(my_dorfdad.IsFemale, 'Возродившаяся', 'Возродившийся' )]"
- dwarven.5100.desc:0 "Сначала были сны и обрывочные воспоминания, едва различимые, словно в тумане. Теперь, я полностью [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] - я [my_dorfdad.GetFirstNameNoTooltip], [Select_CString(ROOT.Char.IsFemale, 'возродившаяся', 'возродившийся' )], чтобы вновь вести наш народ!"
+ dwarven.5100.desc:0 "Сначала были сны и обрывочные воспоминания, едва различимые, словно в тумане. Теперь, я полностью [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )].\n\nЯ - [my_dorfdad.GetFirstNameNoTooltip], [Select_CString(ROOT.Char.IsFemale, 'возродившаяся', 'возродившийся' )] милостью [Concept( 'mahalcharacter', 'Махала' )|E], чтобы вновь вести наш народ!"
  dwarven.5100.a:0 "Мне нужно рассказать семье"
  
  dwarven.5101.t:0 "[my_dorfdad.GetFirstNameNoTooltip] [Select_CString(my_dorfdad.IsFemale, 'Возродившаяся', 'Возродившийся' )]"
- dwarven.5101.desc:0 "До меня дошли вести и том, что [new_dorfdad.GetFirstName] - это [Select_CString(my_dorfdad.IsFemale, 'наша возродившаяся прамать', 'наш возродившийся праотец' )], [my_dorfdad.GetFirstNameNoTooltip] reborn!"
- dwarven.5101.a:0 "[Select_CString(new_dorfdad.IsFemale, 'Моя собственная', 'Мой собственный' )] [THIS.Char.Custom2('RelationToMeShort', SCOPE.sC('new_dorfdad'))]!"
- dwarven.5101.b:0 "Наш отец, вновь возродившийся!"
+ dwarven.5101.desc.intro:0 "До меня дошли вести и том, что [new_dorfdad.GetFirstName] - это [Select_CString(my_dorfdad.IsFemale, 'наша возродившаяся прамать', 'наш возродившийся праотец' )], [my_dorfdad.GetFirstNameNoTooltip] [Select_CString(my_dorfdad.IsFemale, 'возродившаяся', 'возродившийся' )]!"
+ dwarven.5101.desc.longbeard:0 "[longbeards|E]"
+ dwarven.5101.desc.firebeard:0 "[firebeards|E]"
+ dwarven.5101.desc.broadbeam:0 "[broadbeams|E]"
+ dwarven.5101.desc.blacklock:0 "[blacklocks|E]"
+ dwarven.5101.desc.ironfist:0 "[ironfists|E]"
+ dwarven.5101.desc.stiffbeard:0 "[stiffbeards|E]"
+ dwarven.5101.desc.stonefoot:0 "[stonefoots|E]"
+ dwarven.5101.desc.fallback:0 "[Concept( 'dwarf', 'Гномы' )|E]"
+ dwarven.5101.desc.outro:0 " узнают радостную новость - наш отец снова ходит среди нас."
+ dwarven.5101.a.close:0 "[Select_CString(new_dorfdad.IsFemale, 'Моя собственная', 'Мой собственный' )] [THIS.Char.Custom2('RelationToMeShort', SCOPE.sC('new_dorfdad'))]!"
+ dwarven.5101.a:0 "Наш отец, вновь возродившийся!"
+ dwarven.5101.a.tt:0 "Возродившиеся праотцы гномов имеют преимущественное право при [Concept( 'succession', 'наследовании' )|E]"
+
+ dwarven.5102.t:0 "[new_dorfdad.GetFirstNameNoTooltip] умер" #Event could use better loc
+ dwarven.5102.desc:0 "[new_dorfdad.GetFirstNameNoTooltip], возрождённый [GetTrait('dwarf_father').GetName( GetNullCharacter )] нашего клана, умер. После его смерти наступил период общей скорби, когда мы ожидаем его возвращения."
+ dwarven.5102.a:0 "Спи спокойно, отец."
 
  ### High King of Durin's Folk Trait events
  dwarven.6001.t:0 "Укхзад"
