@@ -116,8 +116,8 @@
  tournament_activity_champion_appointed:0 "$champion_court_position$ назначен"
   
   ### TOOLTIPS 
- activity_intent_target_arrival_title:0 "[intent_targeter.GetInvolvedActivityIntent.GetName] — цель прибыла"
- activity_intent_target_arrival_desc:0 "[intent_targeter.GetInvolvedActivityIntent.GetName] — Ваша цель, [intent_targetee.GetUIName], прибыла во владение [intent_targeter.GetInvolvedActivity.GetCurrentPhase.GetLocation.GetBaronyNameExplicitly] для участия в мероприятии [intent_targeter.GetInvolvedActivity.GetName]"
+ activity_intent_target_arrival_title:0 "Цель ваших намерений на [intent_targeter.GetInvolvedActivityIntent.GetName|l] прибыла"
+ activity_intent_target_arrival_desc:0 "[intent_targetee.GetUIName], цель ваших намерений на [intent_targeter.GetInvolvedActivityIntent.GetName|l], прибыла прибыла во владение [intent_targeter.GetInvolvedActivity.GetCurrentPhase.GetLocation.GetBaronyNameExplicitly] для участия в мероприятии «[intent_targeter.GetInvolvedActivity.GetName]»"
   
   ### Costs 
  tournament_base_cost:0 "[GetActivityType( 'activity_tournament' ).GetName]: базовая стоимость"
@@ -134,20 +134,20 @@
  tournament_versus_semifinals:0 "Полуфинал"
  tournament_versus_final:0 "Финал"
  tournament_qualify_title:0 "Отбор"
- tournament_qualify_desc:0 "Вы присоединяетесь к состязанию [activity.GetCurrentPhase.GetPhase.GetName], которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
+ tournament_qualify_desc:0 "Вы присоединяетесь к состязанию «[activity.GetCurrentPhase.GetPhase.GetName]», которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
  tournament_champion_qualify_title:0 "Чемпион проходит отбор"
  tournament_champion_qualify_desc:0 "Ваш воитель [contest_champion.GetTitledFirstName] присоединяется к состязанию «[activity.GetCurrentPhase.GetPhase.GetName]», которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
  tournament_champion_qualify_multi_title:0 "Чемпион проходит отбор"
- tournament_champion_qualify_multi_desc:0 "Ваш воитель [contest_champion.GetTitledFirstName] и ваши $knight_culture_player_plural_no_tooltip$ в количестве [qualification_liege.MakeScope.Var('qualified_knights_count').GetValue|0V] чел. присоединяются к состязанию [activity.GetCurrentPhase.GetPhase.GetName], которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
+ tournament_champion_qualify_multi_desc:0 "Ваш воитель [contest_champion.GetTitledFirstName] и ваши $knight_culture_player_plural_no_tooltip$ в количестве [qualification_liege.MakeScope.Var('qualified_knights_count').GetValue|0V] чел. присоединяются к состязанию «[activity.GetCurrentPhase.GetPhase.GetName]», которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
  tournament_knight_qualify_title:0 "Рыцарь проходит отбор"
  tournament_knight_qualify_desc:0 "Ваш $knight_culture_player$ [knight_1.GetTitledFirstName] присоединяется к состязанию «[activity.GetCurrentPhase.GetPhase.GetName]», которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
  tournament_knight_qualify_multi_title:0 "$knight_culture_player_plural_no_tooltip$ проходят отбор"
  tournament_knight_qualify_multi_desc:0 "[knight_1.GetTitledFirstName] и прочие ваши $knight_culture_player_plural_no_tooltip$ в количестве [qualification_liege.MakeScope.Var('qualified_knights_count').GetValue|0V] чел. присоединяются к состязанию [activity.GetCurrentPhase.GetPhase.GetName], которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
- tournament_qualify_fail_title:0 "Недопуск до участия в состязании [activity.GetCurrentPhase.GetPhase.GetName]"
- tournament_qualify_fail_desc:0 "Вы не прошли отбор на состязание [activity.GetCurrentPhase.GetPhase.GetName], которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
+ tournament_qualify_fail_title:0 "Недопуск до участия в состязании «[activity.GetCurrentPhase.GetPhase.GetName]»"
+ tournament_qualify_fail_desc:0 "Вы не прошли отбор на состязание «[activity.GetCurrentPhase.GetPhase.GetName]», которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
  tournament_champion_qualify_fail_title:0 "Чемпион не допущен"
- tournament_champion_qualify_fail_desc:0 "Ваш воитель [contest_champion.GetTitledFirstName] не проходит отбор на состязание [activity.GetCurrentPhase.GetPhase.GetName], которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
- tournament_qualify_race_desc:0 "Ваша лошадь допущена к состязанию [activity.GetCurrentPhase.GetPhase.GetName], которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
+ tournament_champion_qualify_fail_desc:0 "Ваш воитель [contest_champion.GetTitledFirstName] не проходит отбор на состязание «[activity.GetCurrentPhase.GetPhase.GetName]», которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
+ tournament_qualify_race_desc:0 "Ваша лошадь допущена к состязанию «[activity.GetCurrentPhase.GetPhase.GetName]», которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
  tournament_qualify_fail_race_desc:0 "Ваш участник не прошел отбор на состязание [activity.GetCurrentPhase.GetPhase.GetName], которое [Select_CString(host.IsLocalPlayer, 'устраиваете', 'устраивает' )] [host.GetShortUIName]"
   ### LOCALES 
  locale_window_knights_button_tooltip:0 "# Еще не добавлено#!"

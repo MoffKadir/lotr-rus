@@ -1,10 +1,10 @@
 ﻿l_russian:
-  
+
  NO_CHARACTERS_TO_SELECT_MARRIAGE:0 "[SelectLocalization(GetScriptedGui('uses_consensual_marriages').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End),'NO_CHARACTERS_TO_SELECT_CONSENSUAL','NO_CHARACTERS_TO_SELECT_POLITICAL')]"
- NO_CHARACTERS_TO_SELECT_CONSENSUAL:0 "#weak Подходящий персонаж не найден.\n\nПо причине вашего [Concept( 'culture', 'культурного' )|E] [Concept( 'heritage', 'наследия' )|E] или [Concept( 'traditions', 'традиций' )|E], вам необходимы определённые [relations|E] чтобы вступить в брак другими персонажами:\n$setting_marriage_consent_desc$\n\nИспользуйте взаимодействие «Начать ухаживания» по отношению к другому правителю, чтобы установить эти отношения.#!"
+ NO_CHARACTERS_TO_SELECT_CONSENSUAL:0 "#weak Подходящий персонаж не найден.\n\nПо причине вашего [Concept( 'culture', 'культурного' )|E] [Concept( 'heritage', 'наследия' )|E] или [Concept( 'traditions', 'традиций' )|E], вам необходимы определённые [relations|El] чтобы вступить в брак другими персонажами:\n$setting_marriage_consent_desc$\n\nИспользуйте взаимодействие «Начать ухаживания» по отношению к другому правителю, чтобы установить эти отношения.#!"
  NO_CHARACTERS_TO_SELECT_POLITICAL:0 "#weak Подходящий персонаж не найден#!"
-  
-  
+
+
  arrange_courtship:0 "Начать ухаживания"
  arrange_courtship_desc:0 "Начать период ухаживаний, который может привести к формированию отношений и дальнейшей возможности заключить брак между выбранными персонажами и с их согласия.\n$setting_marriage_consent_desc$\n#F (Определяется правилами игры и/или [Concept('doctrines', 'доктринами')|E])#!"
  actor_secondary_arrange_courtship:0 "Поклонник"
@@ -19,34 +19,34 @@
  setting_marriage_consent:0 "Полное согласие"
  setting_marriage_political_desc:0 "Правители всегда решают кто и с кем заключит брак. У персонажей нет права выбора."
  arrange_courtship_outcome:0 "$arrange_courtship$ Результат"
- arrange_courtship_success:0 "[owner.GetTitledFirstNamePossessive] [scheme.GetSchemeType.GetTypeName] ухаживания за [target.GetTitledFirstName] увенчались успехом!"
- arrange_courtship_failure:0 "[owner.GetTitledFirstNamePossessive] [scheme.GetSchemeType.GetTypeName] ухаживания за [target.GetTitledFirstName] провалились!"
- arrange_courtship_inconclusive:0 "[owner.GetTitledFirstNamePossessive] [scheme.GetSchemeType.GetTypeName] ухаживания за [target.GetTitledFirstName] не принесли плодов!"
- arrange_courtship_invalidated:0 "[owner.GetTitledFirstNamePossessive] [scheme.GetSchemeType.GetTypeName] ухаживания за [target.GetTitledFirstName] стали невозможны!"
+ arrange_courtship_success:0 "[scheme.GetSchemeType.GetTypeName] ухаживания персонажа [owner.GetTitledFirstNamePossessive] за персонажем [target.GetTitledFirstName] увенчались успехом!"
+ arrange_courtship_failure:0 "[scheme.GetSchemeType.GetTypeName] ухаживания персонажа[owner.GetTitledFirstNamePossessive] за персонажем [target.GetTitledFirstName] провалились!"
+ arrange_courtship_inconclusive:0 "[scheme.GetSchemeType.GetTypeName] ухаживания персонажа [owner.GetTitledFirstNamePossessive] за персонажем [target.GetTitledFirstName] не принесли плодов!"
+ arrange_courtship_invalidated:0 "[scheme.GetSchemeType.GetTypeName] ухаживания персонажа [owner.GetTitledFirstNamePossessive] за персонажем [target.GetTitledFirstName] стали невозможны!"
  SCHEME_WINDOW_ITEM_ARRANGED_COURTSHIP_NAME:0 "[Scheme.GetOwner.GetFirstName] пытается $SCHEME_WINDOW_ITEM_NAME$"
-  
+
  arrange_marriage_consent_desc:0 "\n\nПо причине #V Браков по согласию#!, $setting_marriage_consent_desc$\n\nИх можно заключать через взаимодействие #V Начать ухаживания#!."
  canon_spouse_smodifier:0 "Канонично: $VALUE|+=0$"
  wok_ai_wants_marriable_relations_smodifier:0 "[target.GetTitledFirstName] мечтает найти партнёра: $VALUE|+=0$"
-  
+
  BOTTOMBAR_ARRANGED_COURTSHIP_TOOLTIP:0 "#T Начаты ухаживания #!\nПоклонник: [Scheme.GetOwner.GetFullName]\n[Scheme.GetTooltip]"
  SCHEME_WINDOW_ARRANGED_COURTSHIPS:0 "Начаты ухаживания"
- SCHEME_WINDOW_NO_ARRANGED_COURTSHIPS:0 "#EMP Нет начатых ухаживаний\nНачните их, взаимодействую с другим [Concept( 'rulers', 'правителем' )|E]#!"
- setting_marriage_doctrinal_desc:0 "[doctrines|E] [Concept( 'faith', 'конфессий' )|E] определяют будет ли правитель контролировать браки или персонажи смогут ухаживать друг за другом."
- setting_marriage_consent_desc:0 "Для [Concept( 'adults', 'взрослых' )|E] персонажей требуются отношения типа [soulmate|E] для заключения брака."
+ SCHEME_WINDOW_NO_ARRANGED_COURTSHIPS:0 "#EMP Нет начатых ухаживаний\nНачните их, взаимодействуя с другим [Concept( 'rulers', 'правителем' )|E]#!"
+ setting_marriage_doctrinal_desc:0 "[doctrines|E] [Concept( 'faith', 'конфессий' )|E] определяют, будет ли правитель контролировать браки или персонажи смогут ухаживать друг за другом."
+ setting_marriage_consent_desc:0 "Для [Concept( 'adults', 'взрослых' )|E] персонажей требуются отношения типа «[soulmate|E]» для заключения брака."
  NOT_IS_ATTRACTED_TO_TRIGGER:0 "[TARGET_CHARACTER.GetShortUIName] не привлекает персонажа"
- THEY_ARE_NOT_ATTRACTED_TO_TRIGGER:0 "[CHARACTER.GetShortUIName] не влечёт к персонажу [TARGET_CHARACTER.GetShortUIName]"
-  
+ THEY_ARE_NOT_ATTRACTED_TO_TRIGGER:0 "Персонажа [CHARACTER.GetShortUIName] не влечёт к персонажу [TARGET_CHARACTER.GetShortUIName]"
+
  doctrine_marriage_consent_type_name:0 "Право на заключение браков"
  doctrine_marriage_consent_name:0 "Браки по согласию"
- doctrine_marriage_consent_desc:0 "Без независимости нет места и страсти.\n#EMP Bavadin Adoda Mishim#!"
+ doctrine_marriage_consent_desc:0 "Без независимости нет места и страсти.\n#EMP Бавадин Адода Мушим#!"
  doctrine_parameter_needs_marriage_consent:0 "$setting_marriage_consent_desc$\nРазблокирует взаимодействие #V Начать ухаживания#!."
- doctrine_marriage_political_name:0 "Political Marriages"
- doctrine_marriage_political_desc:0 "#EMP Моя#! Корона позволяет мне решать кто залезет к #EMP тебе#! в трусики."
+ doctrine_marriage_political_name:0 "Политические браки"
+ doctrine_marriage_political_desc:0 "#EMP Моя#! корона позволяет мне решать кто залезет к #EMP тебе#! в панталоны."
  doctrine_parameter_political_marriages:0 "$setting_marriage_political_desc$"
-  
+
  wok_courtship.1001.t:0 "$court_event_title$ Скорейший способ"
- wok_courtship.1001.desc:0 "Я и [target.GetFirstName] сегодня отвечаем за готовку к сегодняшнему вечеру, и мне хотелось бы удивить [target.GetHerHim], "
+ wok_courtship.1001.desc:0 "Я и [target.GetFirstName] сегодня отвечаем за готовку к сегодняшнему вечеру, и мне хотелось бы удивить [target.GetHerHis], "
  wok_courtship.1001.desc_arrogant:0 "продемонстрировав все свои способности!"
  wok_courtship.1001.desc_humble:0 "показав, что я не такой уж и плохой повар!"
  wok_courtship.1001.desc_compassionate:0 "приготовив то, что [target.GetSheHe] любит!"
@@ -63,43 +63,43 @@
  wok_courtship.1001.fish_flavor:0 "Вы готовите лучшее блюдо из рыбы во всём Рошаре!"
  signature_weapon_shardblade:0 "Осколок"
  signature_weapon_honorblade:0 "Честь"
-  
+
  wokc_1001_success:0 "Блюдо хорошо приняли"
  wokc_1001_mediocre:0 "Блюдо получилось удовлетворительным"
  wokc_1001_failure:0 "Блюдо — настоящая катастрофа"
-  
+
  wok_courtship_1001_success_character_modifier:0 "Приятное насыщение"
  wok_courtship_1001_failure_character_modifier:0 "Расстройство желудка"
  wok_courtship_1001_success_scheme_modifier:0 "Превосходный повар"
  wok_courtship_1001_failure_scheme_modifier:0 "Ужасный повар"
  wok_courtship_1001_considerate_scheme_modifier:0 "Внимательный повар"
-  
+
  msg_wok_courtship_1001_success_title:0 "Отменная готовка"
  msg_wok_courtship_1001_mediocre_title:0 "Обыденная готовка"
  msg_wok_courtship_1001_failure_title:0 "Жуткая стряпня"
-  
- wok_courtship.1002.reaction_joy:0 "«Это было великолепно! Почти так же здорово как [target.Custom('FavoriteTreat')]!» – [target.GetSheHe|U] расплывается в широкой улыбке. «Мне правда очень понравилось!»"
+
+ wok_courtship.1002.reaction_joy:0 "«Это было великолепно! Почти так же здорово, как [target.Custom('FavoriteTreat')]!», – [target.GetSheHe] расплывается в широкой улыбке. «Мне правда очень понравилось!»"
  wok_courtship.1002.reaction_stubborn:0 "«Я даже не знаю что сказать. Возможно [target.Custom('FavoriteTreat')] – больше не моё любимое блюдо». [target.GetSheHe|U] серьёзно хмурит брови. «Мне казалось, что такое попросту невозможно»."
- wok_courtship.1002.reaction_arrogant:0 "«Неплохо! Прямо таки неплохо. [target.Custom('FavoriteTreat')] конечно вкуснее, но и это очень даже вкусно!»"
+ wok_courtship.1002.reaction_arrogant:0 "«Неплохо! Прямо таки неплохо. [target.Custom('FavoriteTreat')], конечно, вкуснее, но и это очень даже вкусно!»"
  wok_courtship.1002.reaction_callous:0 "«Претензий не имею! Получилось весьма сносно! Твоих рук дело?»"
- wok_courtship.1002.reaction_paranoid:0 "«Это ещё что?» [target.GetFirstName] неловко поднимает брови. «А от этого не бывает привыкания? Нельзя приготовить чего-то столь вкусного не добавив туда чего-нибудь этакого...»"
-  
+ wok_courtship.1002.reaction_paranoid:0 "«Это ещё что?» [target.GetFirstName] неловко поднимает брови. «А от этого не бывает привыкания? Нельзя приготовить чего-то столь вкусного, не добавив туда чего-нибудь этакого...»"
+
  wok_courtship.1003.reaction_diplomatic:0 "«Это было #EMP неплохо#!, но если честно [target.Custom('FavoriteTreat')] мне больше по душе»."
  wok_courtship.1003.reaction_cold:0 "«Да вроде ничего, наверное. Но на будущее — мне больше нравится [target.Custom('FavoriteTreat')]»"
  wok_courtship.1003.reaction_apathetic:0 "«Ерунда какая-то. А вот на [target.Custom('FavoriteTreat')] аппетит проснулся»."
- wok_courtship.1003.reaction_paranoid:0 "Ага. На вкус ровно так же как и на вид. Спасибо."
-  
+ wok_courtship.1003.reaction_paranoid:0 "Ага. На вкус ровно так же, как и на вид. Спасибо."
+
  wok_courtship.1004.reaction_diplomatic:0 "«Если уж говорить откровенно, то получилось совсем плохо. Спасибо, конечно, за усердие, но [target.Custom('FavoriteTreat')] для следующего раза подойдёт куда лучше»."
  wok_courtship.1004.reaction_blargh:0 "«#EMP Гадость!#! Вот как это называется». [target.GetFirstName] словно пробует это слово на вкус. «Определённо, лучше чем #EMP гадость#! слова и не придумаешь»."
  wok_courtship.1004.reaction_fickle:0 "«Это было #EMP отвратительно#! Того кто сотворил это нужно отправить обратно на кулинарные курсы!» [target.GetFirstName] на миг замирает. «Такие ведь бывают? Если честно, я даже и не знаю...»"
  wok_courtship.1004.reaction_sadistic:0 "«Это было #EMP отвратительно#! Стража, казните повара за преступления против кулинарного искусства!»"
- wok_courtship.1004.reaction_paranoid:0 "«Меня что, попытались #EMP отравить#! !?» [target.GetFirstName] с подозрением смотрит на меня, а затем, засунув два пальца в рот, вызывает приступ рвоты. «Или это какая-то чудовищная шутка? По вашему мне сейчас смешно!?»"
-  
+ wok_courtship.1004.reaction_paranoid:0 "«Меня что, попытались #EMP отравить#!!?» [target.GetFirstName] с подозрением смотрит на меня, а затем, засунув два пальца в рот, вызывает приступ рвоты. «Или это какая-то чудовищная шутка? По вашему мне сейчас смешно!?»"
+
  wok_courtship.1004.reaction_fallback:0 "«Это было ужасно. Давайте больше не называть это едой»."
-  
+
  wok_courtship.poop.t:0 "$court_event_title$ Неожиданный вопрос"
- wok_courtship.poop.intro:0 "[target.GetTitledFirstName] увлечённо слушает мою историю, которую я уже наверное раз сто рассказывал другим, повествуя о собственном героизме в бою."
- wok_courtship.poop.prompt:0 "\n\n«А что если кому-то захочется в туалет?» [target.GetFirstName] наклоняет голову. «Битвы, похоже, могут длиться и не по часу. Что делать, если природа зовёт?»"
+ wok_courtship.poop.intro:0 "[target.GetTitledFirstName] увлечённо слушает мою историю, которую я уже наверное раз сто [Select_CString(ROOT.Char.IsFemale, 'рассказывала', 'рассказывал' )] другим, повествуя о собственном героизме в бою."
+ wok_courtship.poop.prompt:0 "\n\n«А что, если кому-то захочется в уборную?» [target.GetFirstName] наклоняет голову. «Битвы, похоже, могут длиться и не по часу. Что делать, если природа зовёт?»"
  #wok_courtship.poop.outro:0 "\n\nТишина, что повисла в воздухе, поистине оглушала."
  wok_courtship.poop.truth:0 "Лучше, пожалуй, опозориться, чем проститься с жизнью!"
  wok_courtship.poop.truth_flavor:0 "Вы рассказываете всю правду о реалиях войны"
@@ -120,35 +120,35 @@
  wok_courtship.poop.justification_singer:0 "«Приукрашенные фантазий о собственном героизме я могу послушать в трактирных балладах, но вы то за свою жизнь повидали #EMP всякого#!!»"
  wok_courtship.poop.justification_literate:0 "«О ваших героических похождениях я узнаю из хроник, а мне хочется услышать чего-то #EMP реального#!!»"
  wok_courtship.poop.justification_illiterate:0 "«О вашем героизме прекрасно расскажут писари, а я хочу услышать от вас чего-то #EMP реального#!!»"
-  
+
  wok_courtship.poop.expand_explanation:0 "Что же, задавайте свои вопрос и получите самый искренний ответ."
  wok_courtship.poop.extra_truth_flavor:0 "Искреннее общение — ключ к здоровым отношениям"
  wok_courtship.poop.refuse_to_elaborate:0 "Я отказываюсь обсуждать это и дальше."
  wok_courtship.poop.abandon_scheme:0 "Давайте-ка больше не будем об этом!"
-  
- wok_courtship.poop.attempt_resume:0 "Я пытаюсь вернуться к теме собственного героизма, но [target.GetFirstName] похоже не хочет об этом слушать."
- wok_courtship.poop.admitted_but_ignored_rebuttal:0 "«Конечно-конечно, отвага, честь и всё такое...» [target.GetSheHe] закатывает глаза, говоря это. «Тому кто после этого отмывал ваши доспехи тоже наверняка пришлось весьма несладко!»"
-  
+
+ wok_courtship.poop.attempt_resume:0 "Я пытаюсь вернуться к теме собственного героизма, но [target.GetFirstName], похоже, не хочет об этом слушать."
+ wok_courtship.poop.admitted_but_ignored_rebuttal:0 "«Конечно-конечно, отвага, честь и всё такое...» [target.GetSheHe] закатывает глаза, говоря это. «Тому, кто после этого отмывал ваши доспехи, тоже наверняка пришлось весьма несладко!»"
+
  wok_courtship_poop_success_scheme_modifier:0 "Искренность в общении"
  wok_courtship_poop_ignored_scheme_modifier:0 "Табу на телесность"
  wok_courtship_poop_demonstration_positive_scheme_modifier:0 "Общий фетиш"
  wok_courtship_poop_demonstration_negative_scheme_modifier:0 "Жидкая обманка"
-  
+
  wok_courtship.poop.demonstration.success:0 "[target.GetFirstName] в восторге"
  wok_courtship.poop.demonstration.failure:0 "[target.GetFirstName] смотрит с отвращением"
  wok_courtship.poop.demonstration.msg_title:0 "Реакция на демонстрацию"
  wok_courtship.poop.demonstration.msg_good:0 "[target.GetFirstName] с удовольствием смотрит на демонстрацию"
  wok_courtship.poop.demonstration.msg_bad:0 "[target.GetFirstName] смотрит с отвращением!"
-  
+
  wok_courtship.poop.demonstration.intro:0 "С наслаждением я выпускаю тонкий шепоток промеж моих булок, прекрасный как весенняя капель, а следом тонкой струйкой проявляется сюрприз.\n\n"
  wok_courtship.poop.demonstration.deviant:0 "[target.GetFirstNamePossessive] расплывается в широкой улыбке, подражая моим движениям и сбрасывая с себя одежду."
- wok_courtship.poop.demonstration.normal:0 "target.GetFirstNamePossessive] быстро теряет улыбку, с ужасом осознавая, что это вовсе не шутка: запах выдал меня с поличным.\n\nА стоило подумать, прежде чем брать #EMP меня#! на слабо, со своими неуместными вопросами!"
+ wok_courtship.poop.demonstration.normal:0 "[target.GetFirstNamePossessive] быстро теряет улыбку, с ужасом осознавая, что это вовсе не шутка: запах выдал меня с поличным.\n\nА стоило подумать, прежде чем брать #EMP меня#! на слабо, со своими неуместными вопросами!"
  wok_courtship.poop.demonstration.a:0 "Вот так и выглядит настоящая любовь."
-  
+
  wok_courtship.poop.admission:0 "Мне приходится признаться, что [GetPlayer.Custom('HowManyTimesIPooped')]\n\n"
- wok_courtship.poop.once:0 "Я, [GetPlayer.GetFullNameNoTooltip], обделался прямо в доспехи. Пусть всего раз, но сделано это было намеренно."
- wok_courtship.poop.twice:0 "Я, [GetPlayer.GetFullNameNoTooltip], обделался прямо в доспехи. Дважды, и оба раза по собственной воле."
- wok_courtship.poop.more_than_twice:0 "Я, [GetPlayer.GetFullNameNoTooltip], обделался прямо в доспехи.[GetPlayer.MakeScope.Var('poop_events_counter').GetValue|0V] раз, всегда намеренно."
+ wok_courtship.poop.once:0 "я, [GetPlayer.GetFullNameNoTooltip], [Select_CString(ROOT.Char.IsFemale, 'обделалась', 'обделался' )] прямо в доспехи. Пусть всего раз, но сделано это было намеренно."
+ wok_courtship.poop.twice:0 "я, [GetPlayer.GetFullNameNoTooltip], [Select_CString(ROOT.Char.IsFemale, 'обделалась', 'обделался' )] прямо в доспехи. Дважды, и оба раза по собственной воле."
+ wok_courtship.poop.more_than_twice:0 "я, [GetPlayer.GetFullNameNoTooltip], [Select_CString(ROOT.Char.IsFemale, 'обделалась', 'обделался' )] прямо в доспехи [GetPlayer.MakeScope.Var('poop_events_counter').GetValue|0V] раз, всегда намеренно."
  wok_courtship.poop.none:0 "Мне лично никогда не приходилось, но другие вокруг меня порой попадали впросак."
  wok_courtship.poop.truth.desc_intro_extra:0 "Я немало времени провожу, рассказывая своему собеседнику о своих приключениях на поле боя, не упуская тех нелицеприятных подробностей, что обычно не упоминаются в вежливых беседах."
  #wok_courtship.poop.truth.desc:0 ""

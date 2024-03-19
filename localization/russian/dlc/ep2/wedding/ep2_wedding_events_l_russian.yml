@@ -298,7 +298,7 @@
  ep2_wedding.1122.d:0 "Это возмутительно!"
  #Secret Whispers
  ep2_wedding.1130.t:0 "Тайный шепот"
- ep2_wedding.1130.desc:0 "Церемония в разгаре, но я никак не могу сосредоточиться на том, что происходит #EMP передо мной#!, ибо #EMP сзади#! доносится нескончаемое бормотание. Если хорошенько прислушаться, становится ясно, что гости и слуги устроили самый настоящий базар сплетен. #EMP«А вы слышали...» «Не может быть!» «А как насчет...» «...не знали?!»#!\n\n"
+ ep2_wedding.1130.desc:0 "Церемония в разгаре, но я никак не могу сосредоточиться на том, что происходит #EMP передо мной#!, ибо #EMP сзади#! доносится нескончаемое бормотание. Если хорошенько прислушаться, становится ясно, что гости и слуги устроили самый настоящий базар сплетен. #EMP «А вы слышали...» «Не может быть!» «А как насчет...» «...не знали?!»#!\n\n"
  ep2_wedding.1130.desc_continue:0 "Я сердито оборачиваюсь и вижу, что в центре суеты самодовольно ухмыляется [1130_knows.GetTitledFirstName]. «А вам есть чем поделиться, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord]?"
  wedding_secret_revealed_log:0 "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] раскрыл на церемонии секрет [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )], вызвав суматоху."
  wedding_secret_revealed_log_title:0 "$wedding_child_fuss_secret_log_title$"
@@ -1001,7 +1001,7 @@
  ep2_wedding.3420.k.health:0 "Похоже, [help_guest.GetFirstNameNoTooltip] нуждается в помощи…"
  ep2_wedding.3420.k.fallback:0 "Похоже, [help_guest.GetFirstNameNoTooltip] вот-вот заснет прямо здесь…"
  ep2_wedding.3420.k.flavor:0 "Ну-ка #EMP поднимаемся#!… Идем-идем…"
- ep2_wedding.3420.l:0 "[host.GetFaith.HouseOfWorship|l] вот-вот закроется на ночь…"
+ ep2_wedding.3420.l:0 "[host.GetFaith.HouseOfWorship|U] вот-вот закроется на ночь…"
  ep2_wedding.3420.l.flavor:0 "[ROOT.Char.GetFaith.HighGodName], благослови их брак и даруй им счастье."
  secret_discovered_toast:0 "Тайна раскрыта"
 
@@ -1078,7 +1078,7 @@
  ep2_wedding.2020.c.failure:0 "Несмотря на все ваши старания, [drunk_guest.GetFirstNameNoTooltip] не упал в колодец"
  ep2_wedding.2020.c.death:0 "[drunk_guest.GetFirstNameNoTooltip] погибает, упав в колодец"
  
- ep2_wedding.wedding_intent.success.tt:0 "Ваш [THIS.Char.GetInvolvedActivityIntent.GetName] достигает успеха"
+ ep2_wedding.wedding_intent.success.tt:0 "Вам удается исполнить [THIS.Char.GetInvolvedActivityIntent.GetName|l]"
  
  ep2_wedding.2000.t:0 "Друг друга"
  ep2_wedding.2000.desc.intro:0 "Немного понаблюдав издали, я прихожу к выводу, что [diplo_target.GetTitledFirstName] не будет болтать со мной о погоде, о медицине или о войне, и уж конечно, из этого не вырастет союз.\n\nНо вскоре я замечаю, что рядом находится [target_friend.Custom2('MyCharacterIntroduction', ROOT.Char)], в чью глотку кубок за кубком льется [ROOT.Char.Custom('RegionalAlcoholicDrink')], — а ведь все знают, что [target_friend.GetTitledFirstName] и [diplo_target.GetFirstNameNoTooltip] друзья.\n\n«Скажите, чем интересуется [diplo_target.GetFirstNameNoTooltip]?» — спрашиваю я, целиком превращаясь в слух.\n\n"
