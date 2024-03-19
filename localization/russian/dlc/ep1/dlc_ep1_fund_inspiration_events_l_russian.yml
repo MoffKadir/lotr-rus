@@ -1,22 +1,22 @@
 ﻿l_russian:
-  #TODO_CD_L: remove this after testing 
+ #TODO_CD_L: remove this after testing
  fund_inspiration.9999.t:0 "Прилив вдохновения"
  fund_inspiration.9999.desc:0 ""
  fund_inspiration.9999.a:0 "Ощутите вдохнове-е-ение-е-е!"
-  
-  #Tooltips that can be used in all inspiration start-events 
+
+ #Tooltips that can be used in all inspiration start-events
  fund_inspiration.you_decide_option_tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] создаст [Concept( 'artifact', 'артефакт' )|E], следуя вашим указаниям"
  fund_inspiration.they_decide_option_tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] сообщит вам о готовности [Concept( 'artifact', 'артефакта' )|E]."
-  
-  
+
+
  fund_inspiration.0001.t:0 "Подпитка вдохновения"
-  
- # Weapon 
+
+ #Weapon
  fund_inspiration.0011.desc:0 "[inspiration_owner.GetTitledFirstName] [ROOT.Char.Custom2('QuirkPresentPosOrNeg', SCOPE.sC('inspiration_owner'))], а затем низко кланяется. «Для меня будет честью и привилегией выковать для вас оружие», — произносит [inspiration_owner.GetSheHe], не теряя собственного достоинства, но блеск энтузиазма в глазах выдает [inspiration_owner.GetHerHis].\n\n«Поведайте, как вы предпочитаете использовать оружие в бою? Я хочу, чтобы моя работа идеально подходила вам»."
  fund_inspiration.0011.a:0 "Что-нибудь, чтобы можно было рубить и колоть."
  fund_inspiration.0011.b:0 "Я хочу оружие, которое позволит в полной мере использовать мою силу!"
  fund_inspiration.0011.c:0 "Предпочитаю держать противника на расстоянии."
-  
+
  fund_inspiration.0011.tooltip_action:0 "[inspiration_owner.GetFirstNameNoTooltip] начинает работу. В [SCOPE.sC('inspiration_owner').GetHerHis] планах —"
  fund_inspiration.0011.tooltip_axe:0 "$fund_inspiration.0011.tooltip_action$ $signature_weapon_axe$"
  fund_inspiration.0011.tooltip_axe.tt:0 "По окончании работы у вас появится новое оружие: $signature_weapon_axe$"
@@ -32,11 +32,11 @@
  fund_inspiration.0011.tooltip_bow.tt:0 "По окончании работы у вас появится лук"
  fund_inspiration.0011.tooltip_sword:0 "$fund_inspiration.0011.tooltip_action$ — $signature_weapon_sword$"
  fund_inspiration.0011.tooltip_sword.tt:0 "По окончании работы у вас появится новое оружие: $signature_weapon_sword$"
-  
-  
+
+
  fund_inspiration.0012.t:0 "Поддержка оружейного проекта"
-  
- # Armor 
+
+ #Armor
  fund_inspiration.0021.desc:0 "«Вы не пожалеете о своем решении поддержать меня, [ROOT.Char.GetLadyLord]!»\n\n[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] заверяет меня, что создаст шедевр, но [inspiration_owner.GetSheHe] также хочет знать мое мнение. «Скажите, какой тип брони вы хотели бы получить?»"
  fund_inspiration.0021.mail:0 "Я хочу гибкую кольчугу."
  fund_inspiration.0021.mail.tt:0 "Что-нибудь простое, но надежное."
@@ -50,10 +50,10 @@
  fund_inspiration.0021.laminar.tt:0 "Прочный и надежный доспех"
  fund_inspiration.0021.brigandine:0 "Мне нужен пластинчатый доспех."
  fund_inspiration.0021.brigandine.tt:0 "Гибкий и нарядно выглядящий доспех"
-  
+
  fund_inspiration.0022.t:0 "Поддержка вдохновения на доспех"
-  
- # Book 
+
+ #Book
  fund_inspiration.0031.desc:0 "«Спасибо, что поверили в меня, [ROOT.Char.GetLadyLord]!» — [ROOT.Char.Custom2('QuirkAdverbPosOrNeg', inspiration_owner)] улыбается [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] и отвешивает поклон.\n\n«Но я не знаю, о чем именно написать. В последнее время меня интересует [SCOPE.Custom('ArtifactBookSubject')], как вы думаете, хорошая ли это тема для книги?»"
  fund_inspiration.0031.education:0 "Темой книги станет [ROOT.Char.Custom('education_focus')]."
  fund_inspiration.0031.lifestyle_reveler:0 "Давай напишем о радости, о #EMP жизни#!, о пирушках!"
@@ -84,22 +84,22 @@
  fund_inspiration.0031.d:0 "Мое творение! [created_title.GetName]! Вот достойная тема."
  fund_inspiration.0031.e:0 "Напишем о моем большом успехе. [restored_title.GetName] — достойная тема для книги!"
  fund_inspiration.0031.f:0 "Я доверяю твоему мнению."
-  
+
  fund_inspiration.0032.t:0 "Поддержка вдохновения на книгу"
-  
- # Tapestry 
+
+ #Tapestry
  fund_inspiration.0041.desc:0 "«Спасибо, что доверились мне, [ROOT.Char.GetLadyLord]! — [inspiration_owner.GetTitledFirstName] улыбается и продолжает. — Вы не пожалеете об этом, ведь я [Select_CString(inspiration_owner.IsFemale, 'потратила', 'потратил' )] годы, оттачивая свое мастерство, и [Select_CString(inspiration_owner.IsFemale, 'выткала', 'выткал' )] немало ковров и занавесок».\n\n«Но для вас лучше всего подойдет гобелен, ведь хороший гобелен привлекает внимание и подчеркивает достоинства своего владельца. Вопрос лишь в том, что выткать на нем?»"
  fund_inspiration.0041.option_battle:0 "Напоминание о моей победе в битве у владения [ROOT.Var('epic_battle_location').Province.GetNameNoTooltip]."
  fund_inspiration.0041.option_abstract:0 "Абстрактные узоры."
  fund_inspiration.0041.option_nature:0 "Что-нибудь о красоте природы."
  fund_inspiration.0041.option_history:0 "Что-нибудь, связанное с историей державы [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip]."
  fund_inspiration.0041.option_life:0 "Картины из жизни в моей державе."
-  
+
  #fund_inspiration.0042.desc:0 ""Thank you for putting your trust in me, my [ROOT.Char.GetLadyLord]! [inspiration_owner.GetTitledFirstName] smiles and continues "The idea I have for [inspiration_owner.Custom('InspirationTypeDescription')] is glorious indeed, and is sure to impress all of your courtiers and foreign guests!"\n\n"As soon as I am done, I shall send word to you so that you may be the first to gaze upon my work."
-  
+
  fund_inspiration.0042.t:0 "Поддержка ткацкого вдохновения"
-  
- # Adventurer 
+
+ #Adventurer
  fund_inspiration.0051.desc:0 "«Не стоит волноваться, [Select_CString(ROOT.Char.IsFemale, 'моя великая', 'мой великий' )] [ROOT.Char.GetTitleTierName]», — [inspiration_owner.GetTitledFirstName] отвешивает драматичный поклон и [ROOT.Char.Custom2('QuirkPresentPosOrNeg', SCOPE.sC('inspiration_owner'))].\n\n«Я отправлюсь в путь и исследую мир от вашего имени, пока вы будете править своей державой. Я вернусь с такими историями, что вы буквально почувствуете, как они #EMP исходят#! напоминаниями о моих приключениях!»\n\nВыдержав краткую паузу, [inspiration_owner.GetSheHe] продолжает. «И раз уж мы говорим о путешествии, какая часть света интересует вас, [ROOT.Char.GetLadyLord]?»"
  fund_inspiration.0051.beleriand:0 "Следуйте в остатки Белерианда!"
  fund_inspiration.0051.beleriand_forlindon:0 "Посетите нолдорские твердыни Форлиндона!"
@@ -165,9 +165,9 @@
  fund_inspiration.0051.d:0 "Всё Средиземье принадлежит вам, [Select_CString(inspiration_owner.IsFemale, 'моя дорогая подруга', 'мой дорогой друг' )]!"
 
  fund_inspiration.0052.t:0 "Поддержка вдохновения на приключение"
-  
+
  activity_adventure:0 "Приключения"
-  
+
  #Artisan
  fund_inspiration.0061.desc:0 "«Спасибо, что поддержали мою идею, [ROOT.Char.GetLadyLord]», — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] пытается сохранить хладнокровие, но я вижу восторг в [inspiration_owner.GetHerHis] глазах.\n\n«Шкатулки, скульптуры и даже #EMP трон#!... Я столько всего могу сделать! Какие у вас есть пожелания?»"
  fund_inspiration.0061.chest:0 "Великолепный сундук для хранения вещей."
@@ -179,9 +179,9 @@
  fund_inspiration.0061.throne:0 "Создайте величественный трон под стать моим залам!"
  fund_inspiration.0061.scientific_apparatus:0 "Пожалуй, лучше создать нечто для учебы и постижения наук."
  fund_inspiration.0061.urn:0 "В моих залах неплохо смотрелась бы декоративная урна."
-  
+
  fund_inspiration.0062.t:0 "Поддержка ремесленного вдохновения"
-  
+
  #(Metal)Smith
  fund_inspiration.0071.desc:0 "«Спасибо, что поддержали мою идею, [ROOT.Char.GetLadyLord]! — \n\n[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] пытается сохранить хладнокровие, но я успеваю заметить восторг в [inspiration_owner.GetHerHis] глазах, прежде чем [inspiration_owner.GetSheHe] продолжает. — Я могу сотворить #EMP чудеса#! из металла. Какие у вас есть пожелания?»"
  fund_inspiration.0071.brooch:0 "Я хочу красивую брошь!"
@@ -193,7 +193,7 @@
  fund_inspiration.0071.incense_burner_sculpture:0 "Изящная курительница благовоний."
 
  fund_inspiration.0072.t:0 "Поддержка вдохновения художественной ковки"
-  
+
  #Alchemist
  fund_inspiration.0081.desc:0 "«Вы не пожалеете о решении поддержать меня, [ROOT.Char.GetLadyLord]!» — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] кланяется мне, а затем [inspiration_owner.Custom('quirk_pos_pp')].\n\n«А теперь не могли бы вы обеспечить меня сосудами и серой? Мне многое предстоит изучить. Чему, по вашему мнению, мне стоит уделить внимание?»"
  fund_inspiration.0081.elixirs:0 "До меня доходили слухи о волшебных эликсирах!"
@@ -202,23 +202,23 @@
  fund_inspiration.0081.immortality:0 "Я хочу жить вечно."
  fund_inspiration.0081.you_decide_option_tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] займется изысканиями и создаст [Concept( 'artifact', 'артефакт' )|E], исходя из ваших пожеланий"
  fund_inspiration.0081.they_decide_option_tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] займется изысканиями и создаст [Concept( 'artifact', 'артефакт' )|E] по своему усмотрению"
-  
+
  fund_inspiration.0082.t:0 "Поддержка алхимического вдохновения"
-  
-  
+
+
  ##########################
  #INSPIRATION COMPLETED
  fund_inspiration.1001.t:0 "Плоды вдохновения"
  fund_inspiration.1001.desc:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord]! — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] подходит ко мне с широкой улыбкой на лице. — Много дней и ночей я [Select_CString(inspiration_owner.IsFemale, 'работала', 'работал' )] не покладая рук, и наконец все готово.\n\n[inspiration_owner.GetSheHe|U] преподносит мне тряпичный сверток. Я разворачиваю его, и глаза мои округляются.\n\n"
  fund_inspiration.1001.a:0 "Какая прелесть!"
-  
+
  fund_inspiration.1011.desc:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord]! — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] подходит ко мне с широкой улыбкой на лице, утирая с лица пот и сажу. — Много дней и ночей я [Select_CString(inspiration_owner.IsFemale, 'работала', 'работал' )] в кузнице не покладая рук, и наконец все готово.\n\n[inspiration_owner.GetSheHe|U] преподносит мне тряпичный сверток. Я разворачиваю его, и глаза мои округляются.\n\n"
-  
+
  fund_inspiration.1021.desc_opening_1:0 "«[ROOT.Char.GetLadyLord|U]! — машет мне [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)], широко улыбаясь, и жестом приглашает меня подойти к закрытому стенду для доспеха. — Много дней и ночей я [Select_CString(inspiration_owner.IsFemale, 'работала', 'работал' )] в кузнице не покладая рук, и наконец все готово!»"
  fund_inspiration.1021.desc_opening_2:0 "«[ROOT.Char.GetLadyLord|U]!» — машет мне [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)], приглашая подойти к закрытому стенду для доспеха. [inspiration_owner.GetSheHe|U] пытается сохранять профессиональную выдержку, но я вижу, как горят [inspiration_owner.GetHerHis] глаза, когда [inspiration_owner.GetSheHe] сообщает мне о завершении работы."
  fund_inspiration.1021.desc:0 "\n\nШироким жестом [inspiration_owner.GetSheHe] отбрасывает ткань, и мои глаза невольно расширяются.\n\n"
  fund_inspiration.1021.a:0 "Великолепно!"
-  
+
  fund_inspiration.1031.desc_opening:0 "«[ROOT.Char.GetLadyLord|U]!» — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] улыбается и жестом перемазанной чернилами руки приглашает меня подойти."
  fund_inspiration.1031.desc_crime:0 "«Возможно, тема книги покажется противоречивой, но это шедевр. Взгляните!»\n\n"
  fund_inspiration.1031.desc_soulmate_died:0 "«Да, [Select_CString(soulmate.IsFemale, 'ваша возлюбленная', 'ваш возлюбленный' )] [soulmate.GetTitledFirstName] [Select_CString(soulmate.IsFemale, 'умерла', 'умер' )], но эта книга станет символом вашей любви».\n\n"
@@ -228,17 +228,17 @@
  fund_inspiration.1031.desc_low_content_quality:0 "«Книга написана. Надеюсь, размах труда затмевает мое недостаточное знание предмета. Пожалуйста, взгляните!»\n\n"
  fund_inspiration.1031.desc:0 "«Моя книга — мой #EMP шедевр#! — написана! Узрите!»\n\n"
  fund_inspiration.1031.a:0 "Впечатляет!"
-  
+
  fund_inspiration.1032.t:0 "Записанные чувства"
  fund_inspiration.1032.desc:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.Custom('LoverPetName')], у меня для тебя сюрприз!»\n\n[inspiration_sponsor.Custom2('MyCharacterIntroduction', ROOT.Char)|U] преподносит мне прекрасную книгу, и, листая ее страницы, я не могу поверить своим глазам. [inspiration_sponsor.GetSheHe|U] [Select_CString(inspiration_sponsor.IsFemale, 'заказала', 'заказал' )] книгу о #EMP нас#!!\n\n«Переплет меркнет рядом с твоей красотой, а слова не заменят твоего общества, но эти страницы хранят мою любовь к тебе»."
  fund_inspiration.1032.a:0 "О , [Select_CString(adultery_lover.IsFemale, 'моя', 'мой' )] [inspiration_sponsor.Custom('LoverPetName')]!"
-  
+
  fund_inspiration.1033.desc:0 "«У меня для тебя сюрприз!»\n\n[inspiration_sponsor.Custom2('MyCharacterIntroduction', ROOT.Char)|U] преподносит мне прекрасную книгу, но, листая страницы, я не могу поверить своим глазам. [inspiration_sponsor.GetSheHe|U] [Select_CString(inspiration_sponsor.IsFemale, 'заказала', 'заказал' )] книгу, только чтобы опорочить #EMP меня#!!\n\n«Никакими словами не выразить мое презрение, ни одна картина не сможет отдать должное твоей уродливой физиономии. Все прочтут это и узнают о твоей зловредности»."
  fund_inspiration.1033.a:0 "Вот же [inspiration_sponsor.Custom('InsultNoun')]!"
  fund_inspiration.1033.a_proud:0 "Но они #EMP узнают#! обо мне!"
-  
+
  fund_inspiration.1041.desc:0 "«Сюда, [ROOT.Char.GetLadyLord]!» — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] жестом указывает на дверь своей ткацкой мастерской, в которой [inspiration_owner.GetSheHe] несколько месяцев [Select_CString(inspiration_owner.IsFemale, 'трудилась', 'трудился' )] над моим заказом. Я захожу внутрь, и от увиденного у меня перехватывает дыхание.\n\n"
-  
+
  fund_inspiration.1051.desc:0 "«[ROOT.Char.GetLadyLord|U]!» — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] сообщает о своем прибытии на удивление громким голосом. [inspiration_owner.GetSheHe|U] гордо держит в руках сверток, для большей сохранности обернутый одеждой.\n\n«Я возвращаюсь из своего путешествия с артефактом!»\n\nЯ беру в руки массивный сверток и ослабляю завязки, а затем убираю ткань слой за слоем. Внутри находится"
  fund_inspiration.1051_throne.desc:0 "«[ROOT.Char.GetLadyLord|U]!» — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] возвещает о своем прибытии непривычно громким голосом. [inspiration_owner.GetSheHe|U] гордо возглавляет процессию к вашему трону. Следом катится тележка.\n\n«Я [Select_CString(inspiration_owner.IsFemale, 'вернулась', 'вернулся' )] из путешествия в земли, известные как [inspiration_owner.Custom('InspirationAdventureDestination')], и [Select_CString(inspiration_owner.IsFemale, 'привезла', 'привез' )] с собой символ монаршего достоинства!»\n\nКогда повозка подъезжает ближе, я понимаю, что на ней находится трон."
  fund_inspiration.1051_ark_covenant.desc:0 "«[ROOT.Char.GetLadyLord|U]!» — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] возвещает о своем прибытии непривычно громким голосом. [inspiration_owner.GetSheHe|U] гордо возглавляет процессию к вашему трону. Следом несколько помощников несут нечто, напоминающее огромный ящик.\n\n«Я [Select_CString(inspiration_owner.IsFemale, 'вернулась', 'вернулся' )] из путешествия в земли, известные как [inspiration_owner.Custom('InspirationAdventureDestination')], и [Select_CString(inspiration_owner.IsFemale, 'привезла', 'привез' )] с собой нечто ценное!»\n\nЯ подхожу к ящику, и один из помощников убирает доски, которыми укрыто сокровище. Внутри"
@@ -261,10 +261,10 @@
  fund_inspiration.1051.desc.necklace:0 "лежит ожерелье.\n\n[inspiration_owner.GetFirstNameNoTooltip] с нескрываемой радостью преподносит его вам в дар, но не желает сообщать историю происхождения ожерелья."
  fund_inspiration.1051.a:0 "Это великолепно!"
  fund_inspiration.1051.b:0 "За этим должны присматривать лучшие из лучших"
-  
+
  fund_inspiration.1061.desc_floor_bound_artifact:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord]! — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] с широкой улыбкой на лице указывает мне на сверток ткани. — Много дней и ночей я [Select_CString(inspiration_owner.IsFemale, 'работала', 'работал' )] не покладая рук, и наконец все готово.\n\n[inspiration_owner.GetSheHe|U] срывает обертку, и глаза мои округляются, когда я вижу, что находится под ней.\n\n"
  fund_inspiration.1061.desc:0 "«Сюда, [ROOT.Char.GetLadyLord]! — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] машет мне рукой с широкой улыбкой на лице. — Много дней и ночей я [Select_CString(inspiration_owner.IsFemale, 'работала', 'работал' )] не покладая рук, и наконец все готово.\n\n[inspiration_owner.GetSheHe|U] преподносит мне тряпичный сверток. Я снимаю ткань, и глаза мои округляются.\n\n"
-  
+
  fund_inspiration.1081.desc_opening:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord]!» — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] жестом приглашает меня к укрытому тканью столу, и с [inspiration_owner.GetHerHis] лица не сходит широкая улыбка."
  fund_inspiration.1081.immortality_fail_desc_opening:0 "«Я помню, что [Select_CString(inspiration_owner.IsFemale, 'обещала', 'обещал' )] вам вечную жизнь, но, увы, этому не суждено было случиться."
  fund_inspiration.1081.immortality_fail_desc_young:0 "Однако мне удалось изготовить эликсир, который замедлит ваше старение! В какой-то степени. Прошу, попробуйте или хотя бы осмотрите результат моих трудов».\n\n"
@@ -295,7 +295,7 @@
  fund_inspiration.9001.desc_research:0 "Теперь я никогда не узнаю, какие открытия [inspiration_owner.GetSheHe] [Select_CString(inspiration_owner.IsFemale, 'могла', 'мог' )] бы совершить..."
  fund_inspiration.9001.a:0 "Какая трагедия!"
  fund_inspiration.9001.a_tt:0 "Вы прекратили поддерживать вдохновение персонажа [inspiration_owner.GetTitledFirstName]"
-  
+
  fund_inspiration.9002.desc:0 "Катастрофа! [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] в плену и больше не может работать над воплощением своей мечты"
  fund_inspiration.9002.desc_weapon:0 "выковать оружие."
  fund_inspiration.9002.desc_armor:0 "изготовить доспех."
@@ -306,22 +306,22 @@
  fund_inspiration.9002.desc_smith:0 "выковать шедевр."
  fund_inspiration.9002.desc_alchemy:0 "открыть тайны мироздания"
  fund_inspiration.9002.desc_research:0 "дальнейшие научные инновации."
-  
+
  fund_inspiration.9003.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] больше не служит у меня при дворе, поэтому я больше не могу поддерживать [inspiration_owner.GetHerHis] мечту"
-  
+
  fund_inspiration.9004.desc:0 "[inspiration_owner.GetTitledFirstName] возвращается ко мне вскоре после своего отъезда."
  fund_inspiration.9004.desc_adventurer_tired_of_westlands:0 "\n\nВновь ступая по моему двору, [inspiration_owner.GetSheHe] склоняется и целует сначала землю, а затем мою обувь. «[ROOT.Char.GetLadyLord|U], я навеки в долгу перед вами за то, что вы позволили мне вернуться к цивилизации... вдали от этих мрачных и неприятных земель, именуемых Европой»."
  fund_inspiration.9004.desc_adventurer_stuck_in_swamp:0 "В мой зал вваливается шатающаяся куча грязи и листьев. Я понимаю, мое время пришло. Возможно, стоило почаще молиться. Но затем слуги выливают на кучу ведро воды, и под слоем стекающей на пол грязи обнаруживается [inspiration_owner.GetTitledFirstName], прямиком из болот. [inspiration_owner.GetSheHe|U] немедленно бросается поцеловать мою ногу. «Это было невыносимо, как же приятно вернуться к цивилизации».\n\nТаким образом,"
  fund_inspiration.9004.desc_adventurer_scared_of_lorien:0 "\n\nКогда [inspiration_owner.GetSheHe] возвращается ко двору, [inspiration_owner.GetSheHe] целует сперва пол, а затем и мою обувь. «[Select_CString(ROOT.Char.IsFemale, 'Миледи', 'Милорд' )], я всю жизнь буду у вас в долгу. Спасибо, что разрешили мне вернуться в цивилизацию... Подальше от этих проклятых эльфов и их Чародейки»."
  fund_inspiration.9004.a:0 "Приведите себя в порядок."
-  
+
  change_artifact_quality_effect_gain:0 "Качество [Concept( 'artifact', 'артефакта' )|E], который [Select_CString(inspiration_owner.IsFemale, 'создала', 'создал' )] [artifact_quality_scope.GetShortUIName|U], испытав [inspiration.GetName], будет #P выше#!"
  change_artifact_quality_effect_slight_gain:0 "Качество [Concept( 'artifact', 'артефакта' )|E], который [Select_CString(inspiration_owner.IsFemale, 'создала', 'создал' )] [artifact_quality_scope.GetShortUIName], испытав [inspiration.GetName], может быть #P немного выше#!"
  change_artifact_quality_effect_loss:0 "Качество [Concept( 'artifact', 'артефакта' )|E], который [Select_CString(inspiration_owner.IsFemale, 'создала', 'создал' )] [artifact_quality_scope.GetShortUINamePossessive|U], испытав [inspiration.GetName], будет #N ниже#!"
  change_artifact_quality_effect_slight_loss:0 "Качество [Concept( 'artifact', 'артефакта' )|E], который [Select_CString(artifact_quality_scope.IsFemale, 'создала', 'создал' )] [artifact_quality_scope.GetShortUIName|U], испытав [inspiration.GetName], может быть #N немного ниже#!"
  change_artifact_book_content_quality_effect_gain:0 "Книга-[Concept( 'artifact', 'артефакт' )|E], вероятно, будет написана #P более качественно#!"
  change_artifact_book_content_quality_effect_loss:0 "Книга-[Concept( 'artifact', 'артефакт' )|E], вероятно, будет написана #N менее качественно#!"
-  
+
  fund_inspiration.9005.t:0 "Незаконченное дело"
  fund_inspiration.9005.desc_intro:0 "В разгар суеты, связанной с наследством, [inherited_insp_owner.GetTitledFirstName], [Select_CString(inherited_insp_owner.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('inherited_insp_owner'))], просит аудиенции. \n\nПо [Select_CString(inherited_insp_owner.IsFemale, 'ее', 'его' )] словам, перед смертью [old_ruler.GetTitledFirstNameRegnal] [Select_CString(old_ruler.IsFemale, 'сделала', 'сделал' )] [Select_CString(inherited_insp_owner.IsFemale, 'ей', 'ему' )] заказ. И [Select_CString(inherited_insp_owner.IsFemale, 'она', 'он' )] вовсю [inherited_insp_owner.Custom('InspirationTypeDescription')] для [Select_CString(old_ruler.IsFemale, 'нее', 'него' )]».\n\n"
  fund_inspiration.9005.desc_multiple:0 "«Прочие мастера тоже трудились не покладая рук, и хотелось бы знать, станете ли вы оплачивать наши труды»."
@@ -330,7 +330,7 @@
  fund_inspiration.9005.b:0 "Пора прекратить размениваться на пустяки."
  inherited_inspiration_continue_tt:0 "Вы оплатите заказ, который [Select_CString(old_ruler.IsFemale, 'сделала', 'сделал' )] [old_ruler.GetTitledFirstNamePossessiveRegnal]"
  inherited_inspiration_end_tt:0 "#X Вложения будут потеряны#!"
-  
+
  ###########################
  #INSPIRATION ONGOING
  fund_inspiration.title:0 "Вдохновение:"
@@ -338,7 +338,7 @@
  fund_inspiration.2001.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] уверяет, что средств, которые я [inspiration_owner.GetHerHim] предоставляю, недостаточно для создания артефакта, достойного столь знатной персоны.\n\n«Еще толику золота — и я создам нечто #EMP по-настоящему#! великое!»"
  fund_inspiration.2001.a:0 "Все, что угодно!"
  fund_inspiration.2001.b:0 "Довольствуйся тем, что имеешь."
-  
+
  fund_inspiration.2002.t:0 "$fund_inspiration.title$ Просьба предоставить... материал"
  fund_inspiration.2002.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] решается пригласить меня в свою тошнотворную вонючую комнату.\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], работа идет, но мне нужны кое-какие части... #EMP человеческие#!, и тогда я смогу создать нечто #EMP поистине ошеломляющее#!. Человек мне нужен живым, хотя бы сначала».\n\nКогда [inspiration_owner.GetFirstName] заканчивает свою просьбу, "
  fund_inspiration.2002.desc.fingernails:0 "мой взгляд падает на окровавленные инструменты и вырванные ногти, разбросанные по [inspiration_owner.GetHerHis] столу."
@@ -350,7 +350,7 @@
  fund_inspiration.2002.toast_outcome.negative:0 "Улики указывают на вашу причастность к пропаже крестьян"
  fund_inspiration.2002.toast_outcome.positive:0 "Никто не подозревает о вашей причастности к похищениям"
  fund_inspiration.2002.d:0 "Отклонить просьбу."
-  
+
  fund_inspiration.2003.t:0 "$fund_inspiration.title$ Помехи"
  fund_inspiration.2003.desc:0 "«О #EMP [inspiration_owner.GetFaith.HighGodName]#!, [previous_inspired.GetWomanMan]! Оставь меня в покое!»\n\n[inspiration_owner.GetFirstName] нарушает своим криком атмосферу покоя, врываясь во двор. [previous_inspired.GetFirstName] следует по пятам, но останавливается, завидев меня.\n\n«[ROOT.Char.Custom2('RelationToMeAddress', previous_inspired)|U], помогите, пусть [inspiration_owner.GetFirstNameNoTooltip] наконец поймет! Я пытаюсь помочь [inspiration_owner.GetHerHim], ведь мой опыт может улучшить [inspiration_owner.GetHerHis] работу!»"
  fund_inspiration.2003.a:0 "Убедить, что [inspiration_owner.GetFirstNameNoTooltip] [Select_CString(inspiration_owner.IsFemale, 'должна', 'должен' )] слушать, что говорит [previous_inspired.GetFirstNameNoTooltip]."
@@ -359,7 +359,7 @@
  fund_inspiration.2003.toast_outcome.positive:0 "[inspiration_owner.GetFirstNameNoTooltip] слушает, что советует [previous_inspired.GetFirstNameNoTooltip]"
  fund_inspiration.2003.toast_outcome.refusal:0 "[inspiration_owner.GetFirstNameNoTooltip] отказывается слушать"
  fund_inspiration.2003.toast_outcome.negative:0 "[previous_inspired.GetFirstNameNoTooltip] дает нелестные отзывы"
-  
+
  fund_inspiration.2004.t:0 "$fund_inspiration.title$ высшего качества"
  fund_inspiration.2004.desc_metal:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], только взгляните на этот металл! Впервые вижу столь превосходное качество»."
  fund_inspiration.2004.desc_fabric:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], только взгляните на эту ткань! Какие прочные волокна, какой глубокий цвет... Впервые вижу столь превосходное качество»."
@@ -377,7 +377,7 @@
  fund_inspiration.2004.b.failure:0 "Торговец не хочет снижать цену"
  fund_inspiration.2004.c:0 "Не возражаю. Стража, заберите все, в чем нуждается [inspiration_owner.GetFirstNameNoTooltip]."
  fund_inspiration.2004.d:0 "Я что, по-твоему, купаюсь в деньгах?"
-  
+
  fund_inspiration.2005.t:0 "$fund_inspiration.title$ Новая кузница"
  fund_inspiration.2005.desc_opening:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] приближается с гнутой железкой в руках, глядя на меня из-под насупленных и сильно опаленных бровей.\n\n«Простите за прямоту, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord], но ваша кузница..."
  fund_inspiration.2005.desc_weapon:0 "Скажем так: [inspiration_owner.Custom('ArtifactWeaponType')] нормального качества"
@@ -386,21 +386,21 @@
  fund_inspiration.2005.desc_ending:0 "в ней не создать. Нужна новая»."
  fund_inspiration.2005.a:0 "Конечно, все что угодно!"
  fund_inspiration.2005.b:0 "Это превосходная кузница!"
-  
+
  fund_inspiration.2006.t:0 "$fund_inspiration.title$ Странствующий ученый"
  fund_inspiration.2006.desc:0 "Мой алхимик [inspiration_owner.GetTitledFirstName], буквально сияя от восторга, приходит ко мне в сопровождении [Select_CString(scholar_character.IsFemale, 'незнакомой мне женщины', 'незнакомого мне мужчины' )].\n\n«Это [scholar_character.GetTitledFirstName], [Select_CString(scholar_character.IsFemale, 'ученая, пользующаяся', 'ученый, пользующийся' )] уважением в наших кругах».\n\n[scholar_character.GetWomanMan|U] кланяется, сохраняя при этом вид одновременно довольный и застенчивый. «Прошу вас, в этом нет необходимости. Я здесь для того, чтобы предложить вам свои услуги, [ROOT.Char.GetLadyLord], если вы того пожелаете»."
  fund_inspiration.2006.a:0 "Желаю. Думаю, [inspiration_owner.GetFirstNameNoTooltip] не откажется от вашей помощи."
  fund_inspiration.2006.b:0 "Несомненно. Вы станете [Select_CString(scholar_character.IsFemale, 'моей личной наставницей', 'моим личным наставником' )]."
  fund_inspiration.2006.c:0 "Здесь тебе места нет."
-  
+
  fund_inspiration.2021.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] настаивает, что для изготовления доспехов, которые может носить [ROOT.Char.GetTitleAsNameNoTooltip|l] с моей репутацией, [inspiration_owner.GetSheHe] нуждается в дополнительном финансировании.\n\n«[inspiration_owner.Custom('ArtifactArmorTypeLowercase')|U] стоит дорого в изготовлении, одних только материалов... Сейчас не время для бережливости, [ROOT.Char.GetLadyLord]!»"
  fund_inspiration.2021.a:0 "Вы получите деньги."
  fund_inspiration.2021.b:0 "Вы не получите ни золотым больше."
-  
+
  fund_inspiration.2030.t:0 "$fund_inspiration.title$ Слово друга"
  fund_inspiration.2030.desc:0 "[Select_CString(friend.IsFemale, 'Моя подруга', 'Мой друг' )] [friend.GetTitledFirstName] встречает меня в коридоре ослепительной улыбкой. \n\n«Ах, #EMP вот#! ты где, [ROOT.Char.GetFirstNameNoTooltip]! А мне как раз [Select_CString(inspiration_owner.IsFemale, 'встретилась', 'встретился' )] [inspiration_owner.GetTitledFirstName]! Говорят, [inspiration_owner.Custom('InspirationTypeDescriptionFuturePresent')] для тебя. Так вот, я не [Select_CString(friend.IsFemale, 'удержалась и навестила', 'удержался и навестил' )] [inspiration_owner.GetHerHis] — вот это, скажу я тебе, [inspiration_owner.Custom('GetInspirationTypeRoom')]! \n\nЯ [Select_CString(friend.IsFemale, 'объяснила', 'объяснил' )], что нужно делать, чтобы не разочаровать тебя, так что результат просто обязан тебе понравиться!»"
  fund_inspiration.2030.a:0 "«О! Спасибо,[friend.GetFirstNameNoTooltip]!»"
-  
+
  fund_inspiration.2040.t:0 "$fund_inspiration.title$ Вредительство"
  fund_inspiration.2040.desc:0 "[inspiration_owner.GetTitledFirstName] нарушает тишину сердитыми воплями: «Я же [inspiration_owner.Custom('InspirationTypeDescription')]! Как можно работать, если [inspiration_owner.Custom('GetInspirationTypeTool')] постоянно пропадает?!» \n\n[inspiration_owner.GetSheHe|U] устремляется ко мне. «[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], всякий раз, стоит мне хоть немного продвинуться, что-то обязательно идет не так! Совершенно очевидно, что кто-то при дворе нарочно мне мешает!» \n\n[inspiration_owner.Custom('GetInspirationOwnerType')] сердито сопит, что [inspiration_owner.GetHerHis] ждет [inspiration_owner.Custom('GetInspirationTypeRoom')], и убегает прочь."
  fund_inspiration.2040.a:0 "Что за неумеха."
@@ -412,12 +412,12 @@
  fund_inspiration.2040.c.failure:0 "Вредитель ускользает"
  ep1_fund_inspiration_2040_scheme_modifier:0 "Темные дела"
  ep1_fund_inspiration_2040_scheme_modifier_desc:0 "Этот персонаж привык действовать украдкой."
-  
+
  fund_inspiration.2041.desc:0 "После ужина мы с небольшой группой стражников устраиваем засаду рядом с покоями, где живет [inspiration_owner.GetTitledFirstName]. [ROOT.Char.Custom('FortifiedBuilding')] все глубже погружается в вечерний полумрак, но мы не утрачиваем бдительности. \n\nКогда мне кажется, что ждать уже не имеет смысла, в коридоре внезапно появляется дрожащее пятно света, а следом и закутанный в плащ силуэт.\n\nТемная фигура толкает дверь, за которой скрывается [inspiration_owner.Custom('GetInspirationTypeRoom')], и украдкой озирается. В этот момент пламя масляного фонаря озаряет [rival.GetHerHis] лицо: [rival.GetTitledFirstName]!"
  fund_inspiration.2041.a:0 "«Ага! В темницу!»"
  fund_inspiration.2041.b:0 "«Вышвырнуть [rival.GetHerHis] прочь! [ROOT.Char.Custom('FortifiedBuilding')] — не место для таких, как [SCOPE.sCharacter('rival').GetSheHe]!»"
  fund_inspiration.2041.c:0 "Я разберусь с этим по-своему..."
-  
+
  fund_inspiration.2050.t:0 "$fund_inspiration.title$ Весомое мнение"
  fund_inspiration.2050.desc:0 "[Select_CString(inspiration_owner.IsFemale, 'Моя', 'Мой' )] [inspiration_owner.Custom('GetInspirationOwnerType')] [inspiration_owner.GetTitledFirstName] рассказывает, как продвигается работа. Пока мои мысли занимает исключительно [inspiration_owner.Custom('GetInspirationTypeObject')], [SCOPE.sCharacter('inspiration_owner').GetSheHe] мешает обдумывать грандиозные планы, непрерывно бубня, что [inspiration_owner.Custom('GetInspirationTypeTool')] и [inspiration_owner.Custom('GetInspirationTypeStation')] страшно [inspiration_owner.GetHerHis] ограничивают... \n\n[inspiration_owner.Custom('GetInspirationTypeVerb')|U], конечно, не самая сильная #EMP моя#! сторона, но я же имею право на мнение, когда речь идет о моих собственных деньгах!"
  fund_inspiration.2050.a:0 "У меня есть пара предложений..."
@@ -430,13 +430,13 @@
  fund_inspiration.2050.failure:0 "Ваши идеи бесполезны"
  fund_inspiration_half_refund_tt:0 "Половина ваших вложений будет возвращена:"
  fund_inspiration_quarter_refund_tt:0 "Четверть ваших вложений будет возвращена:"
-  
+
  fund_inspiration.2060.t:0 "$fund_inspiration.title$ [ROOT.Char.GetTitleAsNamePossessiveNoTooltip] и [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] сокровище"
  fund_inspiration.2060.desc.religious:0 "Моя набожность — пример для всех, от могущественного короля до последнего попрошайки. Это привлекает последователей."
  fund_inspiration.2060.desc.fame:0 "О моих деяниях говорят с почтением и завистью во всем мире — от чужеземных дворов до деревенских трактиров. Многие хотят меня поддержать."
  fund_inspiration.2060.desc.court:0 "Моим процветающим двором восхищаются во всем мире — все мечтают достичь такого же великолепия. Многие восхищаются мной."
  fund_inspiration.2060.desc:0 "\n\nСегодня предо мной предстает [donator.GetTitledFirstName], чья вотчина — "
-  
+
  fund_inspiration.2060.desc.brotherhood:0 "небольшая [donator.GetFaith.GetNameNoTooltip|l]ая обитель в местечке [barony_scope.GetNameNoTierNoTooltip], [barony_scope.GetDeJureLiege.GetNameNoTier].\n\n"
  fund_inspiration.2060.desc.abbey:0 "[donator.GetFaith.HouseOfWorship], — [barony_scope.GetAdjectiveNoTooltip|l]ая [donator.GetFaith.GetNameNoTooltip|l]ая обитель в провинции [barony_scope.GetDeJureLiege.GetNameNoTier].\n\n"
  fund_inspiration.2060.desc.mercenary:0 "небольшой отряд [donator.GetCulture.GetCollectiveNounNoTooltip|l]их наемников из провинции [barony_scope.GetNameNoTierNoTooltip], [barony_scope.GetDeJureLiege.GetNameNoTier].\n\n"
@@ -452,14 +452,14 @@
  fund_inspiration.2060.b.religious:0 "«Нет, прошу тебя, [Select_CString(donator.IsFemale, 'добрая', 'добрый' )] [donator.Custom('NunMonk')], оставь их себе»."
  fund_inspiration.2060.b.prestige:0 "«Нет, я против! Оставь их, друг!»"
  fund_inspiration.2060.c:0 "«И это всё?»"
-  
+
  ep1_fund_inspiration_2070_accept_modifier:0 "Принятый подарок"
  ep1_fund_inspiration_2070_accept_modifier_desc:0 "Жители этого графства рады быть причастными к роскошным артефактам правителя."
  ep1_fund_inspiration_2070_refuse_modifier:0 "Отвергнутый подарок"
  ep1_fund_inspiration_2070_refuse_modifier_desc:0 "Жители этого графства опечалены тем, что их подарки отвергнуты, зато не испытывают недостатка в средствах."
  ep1_fund_inspiration_2070_mock_modifier:0 "Осмеянный подарок"
  ep1_fund_inspiration_2070_mock_modifier_desc:0 "Жители этого графства расстроены, что правитель посмеялся над их дарами."
-  
+
  fund_inspiration.2070.t:0 "$fund_inspiration.title$ Самоцвет с изъяном"
  fund_inspiration.2070.desc:0 "Я так глубоко погружаюсь в придворные дела, сообщения, которые присылает [Select_CString(inspiration_owner.IsFemale, 'моя', 'мой' )] [inspiration_owner.Custom('GetInspirationOwnerType')], [inspiration_owner.GetTitledFirstName], все дольше остаются без внимания."
  fund_inspiration.2070.desc.stalled:0 "И вот [inspiration_owner.Custom('GetInspirationTypeObject')] остается без внимания, работа останавливается. Но, похоже, вина в этом не только моя... \n\n"
@@ -483,7 +483,7 @@
  fund_inspiration.2070.b:0 "«Я знаю, что ты стараешься изо всех сил, [inspiration_owner.GetFirstNameNoTooltip]»."
  fund_inspiration.2070.c:0 "«Это должен быть шедевр. И я жду его как можно скорее»."
  fund_inspiration.2070.d:0 "«Прочь, прощелыга! [ROOT.Char.Custom('FortifiedBuilding')|U] закрывается для тебя навсегда!»"
-  
+
  fund_inspiration.2080.t:0 "$fund_inspiration.title$ Свобода творчества"
  fund_inspiration.2080.antiquarian:0 "«Это просто нелепо! — протестует [rival.GetTitledFirstName]. — [ROOT.Char.GetTitleAsNameNoTooltip] доверяет мне уход за своими артефактами, и я [Select_CString(rival.IsFemale, 'должна', 'должен' )] лично убедиться в качестве вашей работы!»"
  fund_inspiration.2080.artificer:0 "«Какая нелепица! — восклицает [rival.GetTitledFirstName], — я уважаемый мастер, мне доверяет [ROOT.Char.GetTitleAsNameNoTooltip|l]! Я хочу помочь, но для начала должен увидеть творение ваших рук собственными глазами!»"
@@ -493,14 +493,14 @@
  fund_inspiration.2080.success:0 "[antiquarian.GetFirstNameNoTooltip] старается не зря: [SCOPE.sC('antiquarian').GetHerHim] удается улучшить то, что [Select_CString(inspiration_owner.IsFemale, 'сделала', 'сделал' )] [inspiration_owner.GetFirstNameNoTooltip]"
  fund_inspiration.2080.failure:0 "[antiquarian.GetFirstNameNoTooltip] только мешает: [inspiration_owner.GetFirstNameNoTooltip] не может работать в должном темпе"
  fund_inspiration.2080.c:0 "Пора передохнуть."
-  
+
  fund_inspiration.2090.t:0 "$fund_inspiration.title$ Супружеское прикосновение"
  fund_inspiration.2090.desc:0 "Я вижу, как [Select_CString(event_spouse.IsFemale, 'моя', 'мой' )] [event_spouse.GetWifeHusband] и [inspiration_owner.GetTitledFirstName] оживленно разговаривают, и [event_spouse.GetFirstName] сыплет идеями и предположениями, как будет выглядеть [inspiration_owner.Custom('GetInspirationTypeObject')] по готовности. [Select_CString(inspiration_owner.IsFemale, 'Моя', 'Мой' )] [inspiration_owner.Custom('GetInspirationOwnerType')] с трудом скрывает неприязнь, непрошеные советы [inspiration_owner.GetHerHis] заметно злят. \n\n«И когда [inspiration_owner.Custom('InspirationTypeDescription')], — продолжает [event_spouse.GetSheHe], — может получиться практически [inspiration_owner.Custom('GetInspirationTypeObject')]  — точь в точь по заветам предков» \n\nКажется, [inspiration_owner.GetFirstNameNoTooltip] испытывает страшные душевные муки."
  fund_inspiration.2090.a:0 "«Слушай внимательно, [inspiration_owner.GetFirstNameNoTooltip], [event_spouse.GetWifeHusband] говорит мудрые вещи!»"
  fund_inspiration.2090.b:0 "«Пойдем, любовь моя, оставим дело знатокам»."
  fund_inspiration.2090.success:0 "[event_spouse.GetFirstNameNoTooltip] старается не зря: [SCOPE.sC('event_spouse').GetHerHim] удается улучшить то, что [Select_CString(inspiration_owner.IsFemale, 'сделала', 'сделал' )] [inspiration_owner.GetFirstNameNoTooltip]"
  fund_inspiration.2090.failure:0 "[event_spouse.GetFirstNameNoTooltip] только мешает: [inspiration_owner.GetFirstNameNoTooltip] не может работать в должном темпе"
-  
+
  fund_inspiration.2100.t:0 "$fund_inspiration.title$ Завистливый ремесленник"
  fund_inspiration.2100.desc:0 "[inspiration_owner.GetTitledFirstName], [Select_CString(inspiration_owner.IsFemale, 'моя', 'мой' )] [inspiration_owner.Custom('GetInspirationOwnerType')], за обедом пристально следит, что делает [other_inspiration_owner.GetTitledFirstName] — еще один соискатель моего покровительства. \n\nИ хотя обычно [inspiration_owner.GetFirstNameNoTooltip] держится так уединенно, что кажется, будто [inspiration_owner.Custom('GetInspirationTypeStation')] — [inspiration_owner.GetHerHis] единственный друг, [inspiration_owner.GetSheHe] умеет испортить аппетит. \n\nПохоже, сегодня все-таки грянет гром:"
  fund_inspiration.2100.desc.funds:0 "«Почему [other_inspiration_owner.GetFirstNameNoTooltip] получает больше меня? Подумаешь, [other_inspiration_owner.Custom('InspirationTypeDescriptionFuturePresent')|U]! Ну и что?»"
@@ -514,7 +514,7 @@
  fund_inspiration.2100.c.worse:0 "[inspiration_owner.GetFirstNameNoTooltip] теряет мотивацию"
  fund_inspiration.2100.success:0 "Вам удается сгладить углы"
  fund_inspiration.2100.failure:0 "Вы усиливаете вражду"
-  
+
  fund_inspiration.2110.t:0 "$fund_inspiration.title$ Как ценитель ценителю"
  fund_inspiration.2110.desc:0 "Меня приветствует [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('generous_vassal'))], [generous_vassal.GetTitledFirstName]: «Какая встреча, [generous_vassal.Custom2('RelationToMeShort', ROOT.Char)]! Говорят, [inspiration_owner.Custom('GetInspirationOwnerType')] [inspiration_owner.GetFirstName] удобно [Select_CString(inspiration_owner.IsFemale, 'устроилась', 'устроился' )] у вас под крылом? Поговаривают, будто [inspiration_owner.GetSheHe] — [inspiration_owner.Custom('InspirationTypeDescription')], [Select_CString(inspiration_owner.IsFemale, 'которой', 'которым' )] может гордиться даже [ROOT.Char.GetTitleAsNameNoTooltip|l]». \n\nПрошу, возьмите это и передайте [inspiration_owner.GetHerHim]. "
  fund_inspiration.2110.desc.part.2:0 "Я ни за что не упущу возможность поучаствовать в сотворении шедевра! \n\n"
@@ -553,7 +553,7 @@
  fund_inspiration.2120.l:0 "«Стой... как ты #EMP смеешь#!?!»"
  fund_inspiration.2120.m:0 "«Убери руки, грешная душа!»"
  fund_inspiration.2120.leave_flavor:0 "Вы спешно удаляетесь"
-  
+
  fund_inspiration.2130.t:0 "$fund_inspiration.title$ Мимолетный порыв"
  fund_inspiration.2130.desc:0 "Со мной сталкивается [inspiration_owner.GetTitledFirstName], [Select_CString(inspiration_owner.IsFemale, 'моя', 'мой' )] [inspiration_owner.Custom('GetInspirationOwnerType')]. Надеюсь, [inspiration_owner.GetSheHe] не собирается сообщить дурные вести о том, что [inspiration_owner.Custom('GetInspirationTypeObject')] будет у меня не так скоро, как [inspiration_owner.GetSheHe] в последнее время обещает. \n\n«Ах вот вы где, мой сюзерен... Моя работа встала — никаких крупных прорывов! Давление растет, и от этого идеи иссякают. [inspiration_owner.GetSheHe|U] нервно посмеивается. \n\n«Мне бы лишь толику... вдохновения! О [ROOT.Char.GetTitleAsNameNoTooltip|l], нельзя ли мне изучить какие-нибудь... старые образцы, если таковые у вас имеются?»"
  fund_inspiration.2130.a.library:0 "«В библиотеку!»"
@@ -572,7 +572,7 @@
  fund_inspiration.2130.c.dead:0 "«[inspiration_owner.GetFirstNameNoTooltip] падает замертво»"
  fund_inspiration.2130.c.flavor:0 "Где там эта красная бутылка..."
  fund_inspiration.2130.d:0 "«Истинное вдохновение идет изнутри»."
-  
+
  fund_inspiration.2131.t:0 "$fund_inspiration.title$ Долой старое"
  fund_inspiration.2131.desc_library_unused:0 "С последним ударом [inspiration_owner.GetTitledFirstName] и я вваливаемся в мою пыльную библиотеку — комнату, куда меня влечет крайне редко.\n\n"
  fund_inspiration.2131.desc_library:0 "Следом за мной [inspiration_owner.GetTitledFirstName] входит в мою ухоженную библиотеку и указывает на несколько внушительных томов и зелий, стоящих на виду.\n\n"
@@ -599,7 +599,7 @@
  fund_inspiration.2131.d.terrible:0 "[second.GetNameNoTooltip] находит материал — это [inspiration_owner.Custom('GetInspirationMaterialType')], но в плачевном состоянии"
  fund_inspiration.2131.e:0 "«[second.GetFirstNameNoTooltip]! Есть предложения?»"
  fund_inspiration.2131.f:0 "«Только время тратим!»"
-  
+
  fund_inspiration.3001.t:0 "$fund_inspiration.title$ Нечестивые письмена"
  fund_inspiration.3001.desc_opening:0 "[court_chaplain.Custom2('MyCharacterIntroduction', ROOT.Char)|U] врывается ко мне, потрясая кипой бумаг, а следом бежит [inspiration_owner.GetTitledFirstName] и пытается вырвать письмена у н[court_chaplain.GetHerHis] из рук.\n\n"
  fund_inspiration.3001.desc_witch:0 "«[Select_CString(inspiration_owner.IsFemale, 'Эта', 'Этот' )] [inspiration_owner.GetWomanMan] пишет о [ROOT.Char.GetFaith.WitchGodNamePossessive]. #EMP [ROOT.Char.GetFaith.WitchGodName]#!!"
@@ -612,7 +612,7 @@
  fund_inspiration.3001.a_tt:0 "[inspiration_owner.GetShortUIName] будет писать о вере. Конечно, [inspiration_owner.Custom('ArtifactBookSubject')] — неподобающая тема для книги."
  fund_inspiration.3001.b:0 "Разумеется? Это ты, разумеется, оставишь [SCOPE.sC('inspiration_owner').GetHerHis] в покое!"
  fund_inspiration.3001.c:0 "Какие тусклые иллюстрации. Возьми золотой, купи новые чернила."
-  
+
  fund_inspiration.3011.t:0 "$fund_inspiration.title$ Военные темы"
  fund_inspiration.3011.desc_opening_1:0 "Я обнаруживаю, что [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] сидит в окружении свитков и манускриптов, яростно листая страницы.\n\n"
  fund_inspiration.3011.desc_opening_2:0 "Я обнаруживаю, что [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] сидит в окружении свитков и манускриптов, схватившись за голову.\n\n"
@@ -624,28 +624,28 @@
  fund_inspiration.3011.b.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] в своих текстах сосредоточится на вопросах рыцарства и доблести"
  fund_inspiration.3011.d:0 "Какую тему нашептывает вам муза?"
  fund_inspiration.3011.d.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] выберет тему по своему усмотрению"
-  
+
  fund_inspiration.3012.t:0 "$fund_inspiration.title$ Дипломатические темы"
  fund_inspiration.3012.desc:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord]! В дипломатии есть столько вопросов, достойных внимания. Вежливость, отношения, #EMP поэзия#!... я даже не знаю, с чего начать!»"
  fund_inspiration.3012.a:0 "Возможно, стоит рассказать о придворной жизни."
  fund_inspiration.3012.a.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] в своих текстах сосредоточится на вопросах союзов и красноречия"
  fund_inspiration.3012.b:0 "Я хочу, чтобы книга была интересной!"
  fund_inspiration.3012.b.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] в своих текстах сосредоточится на вопросах приключений и развлечений"
-  
+
  fund_inspiration.3013.t:0 "$fund_inspiration.title$ Научные темы"
  fund_inspiration.3013.desc:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord]! Столько вопросов достойны внимания. Религия, образование... не говоря уж о самом искусстве письма!»"
  fund_inspiration.3013.a:0 "Этот текст должен прославлять [ROOT.Char.GetFaith.HighGodNamePossessive]!"
  fund_inspiration.3013.a.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] в своих текстах сосредоточится на вопросах теологии и молитв"
  fund_inspiration.3013.b:0 "Я хочу, чтобы книга была поучительной или хотя бы интересной!"
  fund_inspiration.3013.b.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] в своих текстах сосредоточится на вопросах истории и поэзии"
-  
+
  fund_inspiration.3014.t:0 "$fund_inspiration.title$ Управленческие темы"
  fund_inspiration.3014.desc:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord]! В управлении есть столько вопросов, достойных внимания. Законы, торговля, #EMP деньги#!... я даже не знаю, с чего начать!»"
  fund_inspiration.3014.a:0 "Сосредоточьтесь на вопросах управления державой."
  fund_inspiration.3014.a.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] в своих текстах сосредоточится на вопросах законов и управления"
  fund_inspiration.3014.b:0 "Меня интересует развитие!"
  fund_inspiration.3014.b.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] в своих текстах сосредоточится на вопросах строительства и налогообложения"
-  
+
  fund_inspiration.3015.t:0 "$fund_inspiration.title$ Темы интриг"
  fund_inspiration.3015.desc:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord]! В интригах есть столько вопросов, достойных внимания. Происки, соблазнение, манипуляции... я даже не знаю, с чего начать!»"
  fund_inspiration.3015.a:0 "Я хочу на шаг опережать #EMP любого#!!"
@@ -655,7 +655,7 @@
  fund_inspiration.3015.b_both:0 "Я хочу быть предметом всеобщего обожания!"
  fund_inspiration.3015.b_none:0 "Я хочу в совершенстве овладеть искусством соблазнения."
  fund_inspiration.3015.b.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] в своих текстах сосредоточится на вопросах похоти и искусства соблазнения"
-  
+
  fund_inspiration.3030.t:0 "$fund_inspiration.title$ Остывающая ненависть"
  fund_inspiration.3030.desc_opening:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] [Select_CString(inspiration_owner.IsFemale, 'пригласила', 'пригласил' )] меня обсудить тему книги, которую [inspiration_owner.GetSheHe] пишет для меня.\n\n"
  fund_inspiration.3030.desc:0 "«Не могу не заметить, что вы и [prev_nemesis.Custom2('YourCharacterIntroduction', ROOT.Char)] несколько охладели в своей взаимной вражде. Вы все еще хотите посвятить эту книгу своей ненависти по отношению к н[prev_nemesis.GetHerHim]?»"
@@ -663,19 +663,19 @@
  fund_inspiration.3030.a:0 "Моя ненависть не настолько остыла."
  fund_inspiration.3030.a.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] продолжает писать о вашей ненависти к персонажу [prev_nemesis.GetTitledFirstName]"
  fund_inspiration.3030.b:0 "[prev_nemesis.GetSheHe|U] не стоит усилий."
-  
+
  fund_inspiration.3031.t:0 "$fund_inspiration.title$ Увядающая любовь"
  fund_inspiration.3031.desc:0 "«Не могу не заметить, что [prev_soulmate.Custom2('YourCharacterIntroduction', ROOT.Char)] уже не пользуется прежней симпатией у вас, [ROOT.Char.GetLadyLord]. Вы все еще хотите посвятить эту книгу своей любви по отношению к н[prev_soulmate.GetHerHim]?»"
  fund_inspiration.3031.desc_dead:0 "«Боль от того, что [prev_soulmate.Custom2('YourCharacterIntroduction', ROOT.Char)] [Select_CString(prev_soulmate.IsFemale, 'умерла', 'умер' )], еще свежа... Вы действительно хотите посвятить эту книгу своей любви по отношению к н[prev_soulmate.GetHerHim]?»"
  fund_inspiration.3031.a:0 "Что есть любовь без тоски и потерь?"
  fund_inspiration.3031.a.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] продолжает писать о любви, что испытывали друг к другу вы и [prev_soulmate.GetTitledFirstName]"
  fund_inspiration.3031.b:0 "[prev_soulmate.GetSheHe|U] не стоит усилий."
-  
+
  fund_inspiration.4001.t:0 "$fund_inspiration.title$ Нить и стежок"
  fund_inspiration.4001.desc:0 "«[inspiration_owner.Custom2('YourCharacterIntroduction', ROOT.Char)|U] #EMP [Select_CString(inspiration_owner.IsFemale, 'испортила', 'испортил' )]#! мой новый наряд!»\n\n[courtier.Custom2('MyCharacterIntroduction', ROOT.Char)|U] врывается ко мне в сопровождении [Select_CString(inspiration_owner.IsFemale, 'ткачихи', 'ткача' )]. Груда ткани у н[courtier.GetHerHis] в руках превратилась в такие лохмотья, что невозможно понять, чем она была прежде.\n\n«Вы преувеличиваете! Я просто [Select_CString(inspiration_owner.IsFemale, 'изучала', 'изучал' )] характер стежков — это очень важно для моего проекта»."
  fund_inspiration.4001.a:0 "Ты заходишь слишком далеко. Собственную одежду изучай, если так хочется!"
  fund_inspiration.4001.b:0 "Если [inspiration_owner.GetSheHe] говорит, что так нужно, значит, иначе никак."
-  
+
  #Weaver is being too much of a modernist
  fund_inspiration.4010.t:0 "$fund_inspiration.title$ Хорошо сочетаются красный, синий и [ROOT.Char.GetTitleAsNameNoTooltip|U]"
  fund_inspiration.4010.desc:0 "Я заглядываю в ткацкую мастерскую, чтобы узнать, как продвигается работа над гобеленом. Внутри я обнаруживаю несколько придворных. Они внимательно изучают стены, сложив руки за спину. Вывешенные гобелены представляют собой любопытные сочетания цветов. Один из них покрыт пятнами непонятной формы. Другой белый с нарисованными квадратами. На другом изображен клубок переплетающихся линий. Что это за искусство такое?\n\n[artistic_courtier_1.GetTitledFirstNameNoTooltip] указывает на часть гобелена, которая выглядит как грязное пятно. «Вам не кажется, что этот грязно-коричневый цвет на белом символизирует жестокость, живущую в людях?»\n\n[artistic_courtier_2.GetTitledFirstNameNoTooltip] кивает. «Думаю, это [inspiration_owner.GetTitledFirstNameNoTooltip] бунтует против своего детства. Пятно по форме похоже на [inspiration_owner.GetHerHis] мать»."
@@ -683,68 +683,68 @@
  fund_inspiration.4010.b:0 "«Отвратительно! Пойду посмотрю на традиционное искусство»."
  fund_inspiration.4010.b.tt:0 "Проект отменен, вы возвращаете расходы на него"
  fund_inspiration.4010.c:0 "«Такое может изобразить даже [child.GetTitledFirstNameNoTooltip]!»"
-  
+
  fund_inspiration.5011.desc:0 "«Мне пора отправляться на поиски приключений, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleTierName]», — [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] кланяется насколько это возможно под весом багажа.\n\n«Но для начала скажите мне, на что мне стоит обратить внимание в своих странствиях?»"
  fund_inspiration.5011.a:0 "Привезите мне шкуру или череп экзотического животного в качестве трофея."
  fund_inspiration.5011.b:0 "Я хочу украшение из материалов, которых нет в наших землях."
  fund_inspiration.5011.c:0 "Гобелен или картину, чтобы мне тоже захотелось там побывать."
  fund_inspiration.5011.d:0 "Я верю, что вы сможете привезти мне что-то достойное."
  fund_inspiration.5011.e:0 "Я хочу обладать чем-то поистине уникальным!"
-  
+
  fund_inspiration.5021.t:0 "$fund_inspiration.title$ Смена направления"
  fund_inspiration.5021.desc:0 "Ко мне привели путника, уверяющего, что [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] [Select_CString(inspiration_owner.IsFemale, 'наняла', 'нанял' )] его для совместного путешествия и [Select_CString(inspiration_owner.IsFemale, 'велела', 'велел' )] доставить мне послание.\n\n«Не тревожьтесь, [ROOT.Char.GetLadyLord], [inspiration_owner.GetTitledFirstNameNoTooltip] в добром здравии. Я здесь, чтобы сообщить вам о возможности поддержать еще более грандиозное приключение! Понимаете, [inspiration_owner.GetTitledFirstNameNoTooltip] где-то не там [Select_CString(inspiration_owner.IsFemale, 'свернула', 'свернул' )] и теперь находится около владения [adventuring_location.GetNameNoTier]».\n\nПутник достает грязную карту и показывает, где они очутились. «У н[inspiration_owner.GetHerHis] достаточно средств, чтобы возобновить запланированное путешествие, но [inspiration_owner.GetSheHe] считает, что с дополнительными деньгами сможет изучить местные слухи и вернуться домой с великим артефактом!»"
  fund_inspiration.5021.a:0 "Что за нелепость! Я не собираюсь оплачивать этот #EMP эгоистичный поход#!!"
  fund_inspiration.5021.a.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] возвращается на прежний маршрут."
  fund_inspiration.5021.b:0 "Жизнь — это приключение, отыщите артефакты в тех землях!"
  fund_inspiration.5021.b.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] исследует владение [adventuring_location.GetNameNoTierNoTooltip]."
-  
+
  ## Postcards from your Adventurer by Isabella Welch
-  
- #Rhûn 
-  
+
+ #Rhûn
+
  fund_inspiration.6001.t:0 "Степь и скачка в седле радостно отзываются в моем сердце,"
  fund_inspiration.6001.desc:0 "Я путешествую верхом уже несколько месяцев. Мой зад никогда не оправится от такого! Мне пришлись по вкусу забродившее кобылье молоко и сон под открытым небом.\n\nВместе с гонцом я посылаю вам морин хуур — декоративную лошадиную голову, которая помещается на гриф инструмента. Возможно, она вам пригодится."
  fund_inspiration.6001.a:0 "Я оставлю ее себе!"
  fund_inspiration.6001.b:0 "Отдайте эту вещь придворному музыканту."
-  
- #Harad Jungles 
-  
+
+ #Harad Jungles
+
  fund_inspiration.6002.t:0 "Моя поездка сквозь джунгли продолжается!"
  fund_inspiration.6002.desc:0 "Мои глаза почти ослепли от блеска драгоценных камней при дворах местных правителей. Очень часто я ловлю себя на том, что тоскую по дорожной пыли.\n\nЯ посылаю к вам гонца с одним из особенно безвкусных даров — это кольцо с узором в форме головы мумака и самоцветами вместо глаз. Вы когда-нибудь видели что-то столь же аляповатое?"
  fund_inspiration.6002.a:0 "А мне нравится."
  fund_inspiration.6002.b:0 "Отвратительно! Разобрать и продать камни."
-  
- #Harad Deserts 
-  
+
+ #Harad Deserts
+
  fund_inspiration.6003.t:0 "Мне снится пустыня,"
  fund_inspiration.6003.desc:0 "Мой сюзерен, я путешествую по пустыням Харадвайта с караваном верблюдов, пересекающих ее обширные земли.\n\nЯ посылаю вам драгоценность, подаренную мне одним из моих спутников. Это хрупкое ожерелье с бусами из скорлупы страусиных яиц. Думаю, вы ни разу в жизни не видели страуса."
  fund_inspiration.6003.a:0 "Отличная находка! Я лично буду носить его."
  fund_inspiration.6003.b:0 "Ожерелье получит [spouse.GetTitledFirstNameNoTooltip]."
-  
- #Gondor 
-  
+
+ #Gondor
+
  fund_inspiration.6004.t:0 "Дорогами Южного королевства"
  fund_inspiration.6004.desc:0 "В своих странствиях по Гондору мне в основном приходится проезжать мимо бесчисленных руин вдоль дорог.\n\nЧасто, обыскивая их в поисках загадок, я натыкаюсь на множество безделушек. Я посылаю вам гонца с набором таких вещиц. Возможно, они позабавят вас."
  fund_inspiration.6004.a:0 "Какой прок в искателе приключений, который идет по проторенным дорогам?"
  fund_inspiration.6004.b:0 "Это довольно симпатичные вещицы..."
-  
- #Westlands 
-  
+
+ #Westlands
+
  fund_inspiration.6005.t:0 "Мои приключения не слишком интересны,"
  fund_inspiration.6005.desc:0 "Сюзерен, мне удалось найти несколько обшарпанных реликвий, которые я посылаю с гонцом, но я не знаю, что еще мне удастся обнаружить.\n\nЭти жители Запада — самые дурнопахнущие создания из всех, что мне доводилось встречать. В детстве меня посещали образы зеленых и приятных лужаек, но сейчас я твердо верю, что половина этого мира покрыта грязью. Если в вас есть хоть капля милосердия, отзовите меня обратно."
  fund_inspiration.6005.a:0 "Вы не на отдыхе! Ищите дальше!"
  fund_inspiration.6005.b:0 "Бедняга, полагаю, мне хватит и этих находок."
  fund_inspiration.6005.b.tt:0 "Вы позволяете, чтобы [inspiration_owner.GetTitledFirstName] [Select_CString(inspiration_owner.IsFemale, 'вернулась', 'вернулся' )] домой."
-  
- #Rhovanion 
-  
+
+ #Rhovanion
+
  fund_inspiration.6006.t:0 "Приветствую вас из Рованиона,"
  fund_inspiration.6006.desc:0 "Во время странствий по Рованиону мне пришлись по вкусу медовые пряники и эсгаротская щука. Я посылаю вам рецепты с гонцом.\n\nОдин из местных правителей одарил меня золотой брошью с морским коньком, ее я также посылаю вам. Наверняка в своих путешествиях я рано или поздно найду еще больше чудес."
  fund_inspiration.6006.a:0 "Прикажите поварам немедленно приготовить эти блюда!"
  fund_inspiration.6006.b:0 "[inspiration_owner.GetSheHe|U] получает слишком много удовольствия от путешествия..."
-  
-  #Elven Woods 
-  
+
+ #Elven Woods
+
  fund_inspiration.6007.t:0 "Загадочные эльфийские земли,"
  fund_inspiration.6007.desc:0 "Моё путешествие по землям эльфов одновременно дурманило и сбивало с толку. И хотя мне ещё не довелось встретить ни одного из этих чарующих и таинственных созданий, я часто слышу их песни, что доносятся из крон деревьев, а также нахожу их следы.\n\nК посланию прикладываю серебряную цепочку, что мне удалось найти на обочине. Наверняка работа эльфов."
  fund_inspiration.6007.a:0 "Какой прекрасный подарок! Я буду её носить."
@@ -758,22 +758,22 @@
 
 
  #Miniature furniture events by Isabella Welch
-  
+
  #Artisan gives you a tiny chest and loses the tiny key
  fund_inspiration.6100.t:0 "$fund_inspiration.title$ Прообраз для правителя"
  fund_inspiration.6100.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] с написанным на лице восторгом подзывает меня. «[ROOT.Char.GetLadyLord|U], я [Select_CString(inspiration_owner.IsFemale, 'закончила', 'закончил' )] работу над прообразом заказанного вами сундука, с рабочим замком».\n\n[inspiration_owner.GetSheHe|U] протягивает ладонь, в которой лежит крошечный сундук с золотым листом и ключом размером с зернышко.\n\n«Внутри лежит самоцвет. Попробуйте, откройте», — когда [inspiration_owner.GetSheHe] передает мне сундук, ключ проскальзывает между [inspiration_owner.GetHerHis] пальцами и падает на пол. Несмотря на поиски, [inspiration_owner.GetSheHe] никак не может найти его."
  fund_inspiration.6100.a:0 "Заканчивайте этот фарс. Сломайте сундук и верните мне мой камень!"
  fund_inspiration.6100.b:0 "Но выглядит симпатично. Пожалуй, я оставлю этот сундучок."
-  
+
  #The tiny box
-  
+
  fund_inspiration.6101.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] протягивает мне крошечную шкатулку, покрытую узорами толщиной с волос. «Прообраз вашего заказа. Не хочу его выбрасывать. Мы могли бы найти применение этой вещице».\n\n[antiquarian.Custom2('MyCharacterIntroduction', ROOT.Char)|U] резко оживляется. «Мы могли бы поместить в нее реликвию из нашего времени и где-нибудь закопать — оставить напоминание для наших потомков!»"
  fund_inspiration.6101.a:0 "Я спрячу внутри свой миниатюрный портрет."
  fund_inspiration.6101.b:0 "Я напишу небольшую поэму и спрячу внутри."
  fund_inspiration.6101.c:0 "Я лучше оставлю ее себе."
-  
+
  #Stepping on the tiny sculpture
-  
+
  fund_inspiration.6102.desc:0 "Я готовлюсь ко сну, когда мою ногу пронзает острая боль.\n\nОсмотрев ногу, я замечаю миниатюрную фигурку, впившуюся мне в подошву так глубоко, что снаружи осталась только нога.\n\n[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] опасливо поглядывает на меня из-за ближайшей двери. «Я прошу прощения, это прообраз вашего нового заказа. Должно быть, я его [Select_CString(inspiration_owner.IsFemale, 'обронила', 'обронил' )]»."
  fund_inspiration.6102.a:0 "«Вытащите и уберите эту вещь с глаз моих долой!»"
  fund_inspiration.6102.b:0 "«Этим стоит заняться врачу»."
@@ -781,27 +781,27 @@
  fund_inspiration.6102.cure_toast:0 "Миниатюра успешно извлечена"
  fund_inspiration.6102.failure_toast:0 "Упрямая миниатюра"
  fund_inspiration.6102.failure_toast_desc:0 "Кусок руки застрял в вашей ноге"
-  
+
  #Being shown the tiny cabinet
-  
-  
+
+
  fund_inspiration.6103.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] кланяется. «Я не прочь услышать ваши замечания насчет шкафчика, который я как раз изготавливаю для вас, [ROOT.Char.GetLadyLord]».\n\n[inspiration_owner.GetSheHe|U] отводит меня в свою мастерскую, где, к моему немалому беспокойству, нет ничего, кроме пыльного побитого шкафа.\n\n«Нет-нет, это не он», — [inspiration_owner.GetSheHe] открывает потертый шкаф, внутри которого нет ничего, кроме миниатюрной модели шкафчика — украшенной, с камнями и позолотой, но высотой всего в мой палец. «Что скажете?»"
  fund_inspiration.6103.a:0 "Ради вашего же блага, пусть это будет лишь прообраз."
  fund_inspiration.6103.b:0 "Превосходно! Я в восхищении!"
-  
+
  #Artisan gives you the tiny throne
-  
+
  fund_inspiration.6104.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] приносит небольшой ящик и с довольной улыбкой вручает его мне.\n\nОткрыв его, я ожидаю увидеть ювелирное изделие, кольцо или гравюру, но к моему изумлению внутри находится миниатюрный трон, настолько маленький, что на нем не усидела бы даже мышь.\n\n«Это прообраз вашего нового трона, [ROOT.Char.GetLadyLord]. Мне казалось, что вам это покажется занятным»."
  fund_inspiration.6104.a:0 "Очаровательно! Я оставлю его себе!"
  fund_inspiration.6104.b:0 "Выглядит хорошо, но вернитесь к своему проекту."
  fund_inspiration.6104.c:0 "Я уже #EMP давно#! не в том возрасте, чтобы играть в игрушки."
-  
+
  #Artisan and ROOT play with their miniatures
-  
+
  fund_inspiration.6105.desc:0 "Я с гордостью несу свой ящик с миниатюрной мебелью по коридорам, раздумывая, где бы ее разместить, когда мне на пути вдруг попадается [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)].\n\nЗаглянув в ящик, [inspiration_owner.GetSheHe] не может сдержать слез радости. «Вы [ROOT.Char.GetWomanMan] высокой культуры. Пойдемте со мной».\n\n[inspiration_owner.GetSheHe|U] отводит меня в свою мастерскую и вытаскивает потайной ящик. В нем лежат десятки миниатюр, фигуры и местность. «Я [Select_CString(inspiration_owner.IsFemale, 'придумала', 'придумал' )] игру, в ней нужно вести осаду. Не хотите сыграть со мной?»"
  fund_inspiration.6105.a:0 "Мне казалось, вы уже и не спросите!"
  fund_inspiration.6105.b:0 "Эм, пожалуй в другой раз."
-  
+
  #Weaver is being too much of a modernist
  fund_inspiration.6200.t:0 "$fund_inspiration.title$ Хорошо сочетаются красный, синий и [ROOT.Char.GetTitleAsNameNoTooltip|U]"
  fund_inspiration.6200.desc:0 "Я заглядываю в ткацкую мастерскую, чтобы узнать, как продвигается работа над гобеленом. Внутри я обнаруживаю несколько придворных. Они внимательно изучают стены, сложив руки за спину. Вывешенные гобелены представляют собой любопытные сочетания цветов. Один из них покрыт пятнами непонятной формы. Другой белый с нарисованными квадратами. На другом изображен клубок переплетающихся линий. Что это за искусство такое?\n\n[artistic_courtier_1.GetTitledFirstName] указывает на часть гобелена, которая выглядит как грязное пятно. «Вам не кажется, что этот грязно-коричневый цвет на белом символизирует жестокость, живущую в людях?»\n\n[artistic_courtier_2.GetTitledFirstNameNoTooltip] кивает. «Думаю, это [ROOT.Char.GetTitledFirstNameNoTooltip] бунтует против своего детства. Пятно по форме похоже на [ROOT.Char.GetHerHis] мать»."
@@ -809,10 +809,10 @@
  fund_inspiration.6200.b:0 "«Отвратительно! Пойду посмотрю на традиционное искусство»."
  fund_inspiration.6200.b.tt:0 "Проект отменен, вы возвращаете расходы на него"
  fund_inspiration.6200.c:0 "«Такое может изобразить даже [child.GetTitledFirstNameNoTooltip]!»"
-  
-  
+
+
  #Poet is uninspired, does not feel they understand love at the moment by Isabella Welch
-  
+
  fund_inspiration.6300.t:0 "$fund_inspiration.title$ Неудачный куплет"
  fund_inspiration.6300.intro:0 "Мне попадается [inspiration_owner.GetTitledFirstName] за своим столом в окружении исчерканных черновиков.\n\n"
  fund_inspiration.6300.no_relationship_desc:0 "«Мысль о том, что кто-то может любить меня, кажется невозможной. Никогда мне не удавалось прошептать о своих чувствах и услышать слова взаимности».\n\n«Поэтому я вам не пишу, я просто считаю вечера, проведенные в одиночестве, и впадаю в отчаяние»."
@@ -826,9 +826,9 @@
  fund_inspiration.6300.d:0 "Но любовью надо жить."
  fund_inspiration.6300.e:0 "Пишите правду, я благословляю всех муз."
  fund_inspiration.6300.f:0 "Придумайте что-нибудь! О любви пишут лишь лжецы."
-  
+
  #Poet sends you a book on same sex love if you requested it, as a side project by Isabella Welch
-  
+
  #fund_inspiration.6301.lover_t:0 "My [ROOT.Custom('LoverPetName')],"
  #fund_inspiration.6301.friend_t:0 "My dearest ally,"
  fund_inspiration.6301.t:0 "$fund_inspiration.title$ Дорогой компаньон,"
@@ -847,7 +847,7 @@
  fund_inspiration.6400.a.success:0 "Вам удается убедить [Select_CString(inspiration_owner.IsFemale, 'авантюристку', 'авантюриста' )] прийти в себя"
  fund_inspiration.6400.a.success_continue:0 "Приключение продолжается!"
  fund_inspiration.6400.a.failure:0 "[Select_CString(inspiration_owner.IsFemale, 'Авантюристка', 'Авантюрист' )] удирает, прихватив золото!"
-  
+
  fund_inspiration.6500.t:0 "$fund_inspiration.title$ Музыка в джунглях"
  fund_inspiration.6500.introduction:0 "Я получаю письмо от искателя приключений, написанное столь красочно, что я вижу [inspiration_owner.GetHerHis] в своем воображении."
  fund_inspiration.6500.desc:0 "\n\n«Я иду сквозь джунгли. Голова раскалывается от пугающих птичьих криков. Немногочисленные местные говорят, что находят эти крики самой приятной музыкой. Им явно не доводилось слышать, что творит [court_musician.GetTitledFirstNameNoTooltip]».\n\n«За попытку наиграть [court_musician.GetHerHis] мелодию на дудочке местные прогнали меня прочь из города и ударили отравленным клинком. Мне удалось избежать смерти, но меня не покидала мысль о том, что я умру, принеся музыку в джунгли!»"
@@ -861,7 +861,7 @@
  fund_inspiration.6500.b.failure:0 "Авантюрист убегает, но слишком медленно"
  fund_inspiration.6500.c.tt:0 "Авантюрист помогает отбиться от леопарда"
  fund_inspiration.6500.c.tt_failure:0 "Авантюрист получает рану при попытке бегства"
-  
+
  fund_inspiration.6501.t:0 "$fund_inspiration.title$ Путешествие по суше"
  fund_inspiration.6501.desc:0 "\n\n«Мы плыли по реке, вьющейся меж холмов. Местные сообщили, что выше по течению река пересохла».\n\n«Но мы не сдались, а решили совершить невозможное. По моему распоряжению команда проложила полозья и изготовила блоки. Мы начали перетаскивать корабль по суше в сторону ближайшей реки. Корабль плыл по морю из травы и маргариток»."
  fund_inspiration.6501.a:0 "Надеюсь, вы вернулись и избежали больших потерь."
@@ -869,19 +869,19 @@
  fund_inspiration.6501.b.success:0 "Авантюрист тянет корабль по склону"
  fund_inspiration.6501.b.failure:0 "Авантюрист тратит время на починку поврежденного корабля"
  fund_inspiration.6501.c:0 "Местные пожалели вас и по дешевке продали новый корабль."
-  
+
  fund_inspiration.6502.t:0 "$fund_inspiration.title$ Жгучая жажда"
  fund_inspiration.6502.desc:0 "\n\n«Я не в пустыне, я в царстве грез. Сплю я или бодрствую — все едино. Проводник говорит, что мне мерещатся мои самые заветные желания. Рай, водоем, сияющий словно алмаз, а берега его усыпаны сокровищами».\n\n«Но нет, [ROOT.Char.GetLadyLord], я вижу лишь вас, здесь, со мной. Вы всегда на одну дюну впереди меня. Умоляете меня идти дальше. И мне очень тяжело от осознания, что каждый шаг в сторону миража отдаляет меня от вас»."
  fund_inspiration.6502.a:0 "Даже мне пить захотелось, хоть я и не в пустыне."
  fund_inspiration.6502.b:0 "Я подумаю о вашем внимании, если привезете мне ценный дар."
  fund_inspiration.6502.c:0 "Это все жара виновата. Я сожгу эти слова."
-  
+
  fund_inspiration.6503.t:0 "$fund_inspiration.title$ Шёпот Руна"
  fund_inspiration.6503.desc:0 "\n\n«Я ухожу в глубь кургана, древнего могильника времен балхот. Сотни давно погибших лошадей, набитых, мумифицированных и прислоненных к стенам, чтобы могли стоять, и каждой отведено отдельное помещение. Это конюшня проклятых, потерявшихся во времени».\n\n«Зная, что долг велит мне искать знания для державы, я решаю похитить для вас реликвию, пока мой проводник отвернулся»."
  fund_inspiration.6503.a:0 "Вы присвоили один из орнаментов."
  fund_inspiration.6503.b:0 "Вы доставили одно из седел для изучения."
  fund_inspiration.6503.c:0 "Вы не посмели беспокоить усопших."
-  
+
  fund_inspiration.6504.t:0 "$fund_inspiration.title$ Любовь [inspiration_owner.GetLadyLord|U] [inspiration_owner.GetFirstNamePossessiveNoTooltip]"
  fund_inspiration.6504.desc:0 "\n\n«Эм, [ROOT.Char.GetLadyLord], в моих странствиях мне попалась ферма, которой владеет [adventurer_lover.GetTitledFirstName]."
  fund_inspiration.6504.pregnant:0 "\n\n«На ферме мне удалось изготовить отличный артефакт! Ребенка! Хоть это тянет на обман, [adventurer_lover.GetTitledFirstName] не в том состоянии, чтобы путешествовать со мной. [adventurer_lover.GetSheHe|U] почти без гроша, и я надеюсь, мы сможем оказать [adventurer_lover.GetHerHim] гостеприимство при дворе»."
@@ -894,7 +894,7 @@
  fund_inspiration.6504.b:0 "Я позволю, но не вините меня в скандале."
  fund_inspiration.6504.c:0 "Ребенок не заслуживает жизни в нищете."
  fund_inspiration.6504.d:0 "КРЕСТЬЯНЕ? При МОЕМ дворе? НЕ БЫВАТЬ ЭТОМУ."
-  
+
  fund_inspiration.6505.t:0 "$fund_inspiration.title$ Пляжный эпизод"
  fund_inspiration.6505.desc:0 "\n\n«Во время блуждания по пустыне мне встретился источник чистейшей воды, один вид которого заставил меня сбросить с себя всю одежду. Мой проводник не обиделся, а понимающе посмеялся и начал делать с меня набросок. Наши спутники размахивали пальмовыми листьями, чтобы охладить меня, прислуживая мне забавы ради».\n\n«Мы провели немало радостных часов в брызгах воды. В следующей деревне ткач по моей просьбе запечатлел этот райский момент на полотне, которое я посылаю вам в память об этом приключении»."
  fund_inspiration.6505.a:0 "Мои глаза! Мои глаза!"
@@ -903,15 +903,15 @@
  fund_inspiration.6505.b:0 "Я повешу это в своей спальне!"
  fund_inspiration.6505.c:0 "Весь двор должен узнать об этом необычном времяпрепровождении!"
  fund_inspiration.6505.d:0 "Это станет священным образом для нашего народа!"
-  
-  
+
+
  #Adventurer unhappy about being in the swamp
  fund_inspiration.6506.t:0 "$fund_inspiration.title$ Вполне оправданная грязь"
  fund_inspiration.6506.introduction:0 "От моего искателя приключений приходит депеша. Она настолько заляпана грязью, что приходится выковыривать ее ножом.\n\n"
  fund_inspiration.6506.desc:0 "[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], я нахожусь посреди болот, и к такому меня жизнь не готовила. Денно и нощно я пробираюсь через вязкую трясину. Прошлой ночью мне снились любящие объятия, а под утро оказалось, что это тритон бегал по моим губам».\n\n«Мне хотелось бы знать, есть ли хоть малейший шанс, что вы отправите меня в более #EMP цивилизованные#! места? В доказательство того, насколько отвратительно это место, я посылаю вам сосуд с лягушачьим отпрыском, которого мне пришлось вылавливать из своего промокшего сапога»."
  fund_inspiration.6506.a:0 "Зато как закаляет характер!"
  fund_inspiration.6506.b:0 "Вы можете отправиться в более обустроенные земли."
-  
+
  #Adventurer gets bee'd in a meadow
  fund_inspiration.6507.t:0 "$fund_inspiration.title$ Только не пчелы!"
  fund_inspiration.6507.introduction:0 "Я получаю послание от искателя приключений с пятнами крови поверх написанных строк."
@@ -919,7 +919,7 @@
  fund_inspiration.6507.a:0 "Я напишу [grumpy_liege.GetHerHim] письмо с выговором!"
  fund_inspiration.6507.b:0 "За это я отрублю [grumpy_liege.GetHerHim] голову!"
  fund_inspiration.6507.c:0 "Эти шрамы вам к лицу!"
-  
+
  #Adventurer studying beavers in the Taiga
  fund_inspiration.6508.t:0 "$fund_inspiration.title$ Природные архитекторы"
  fund_inspiration.6508.introduction:0 "Я получаю гонца от искателя приключений, что находится среди таежных лесов.\n\n"
@@ -930,7 +930,7 @@
  fund_inspiration.6508.b.tt:0 "[court_architect.GetTitledFirstName] немного повышает свою пригодность для роли архитектора"
  fund_inspiration.6508.c:0 "Какие #EMP очаровательные#! животные! [child.GetFirstName] получит эту книгу!"
  fund_inspiration.6508.d:0 "Хорошая работа, я отправлю вам денег на дальнейшее путешествие."
-  
+
  #Adventurer massively exaggerating what an alligator looks like-floodplains
  fund_inspiration.6509.t:0 "$fund_inspiration.title$ Шепотом о чудовище"
  fund_inspiration.6509.intro_desc:0 "Я получаю депешу от искателя приключений, что путешествует по поймам реки на плоту."
@@ -938,9 +938,9 @@
  fund_inspiration.6509.a:0 "Мы удивим гостей двора гобеленом с этим чудовищем!"
  fund_inspiration.6509.b:0 "Это слишком страшно, чтобы быть правдой!"
  fund_inspiration.6509.c:0 "Дурачина, я знаю, как выглядит крокодил!"
-  
+
  #Adventurer meeting a vigilante band who hide in the forest
-  
+
  fund_inspiration.6510.t:0 "$fund_inspiration.title$ Мужчины в трико"
  fund_inspiration.6510.intro_desc:0 "Я получаю депешу от искателя приключений, что путешествует по лесам."
  fund_inspiration.6510.desc:0 "\n\n«Прошу прощения, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord], но в лесу мне встретился отряд мстителей, которые грабят людей вроде вас. Им противостоит местный тиран [enemy_liege.GetTitledFirstName], и они крадут столько, сколько смогут, нападая из засады на дворян. Эта шайка пришлась мне по душе, и я не думаю, что вернусь к вашему двору».\n\n«А еще их трико смотрятся куда лучше ваших придворных одежд и весьма мне к лицу»."
@@ -951,18 +951,18 @@
  fund_inspiration.6510.b.toast_outcome.positive.flee:0 "[inspiration_owner.GetSheHe|U] бежит с вашего двора"
  fund_inspiration.6510.b.toast_outcome.refusal:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] не обращает внимания на ваши слова"
  fund_inspiration.6510.c:0 "Наслаждайтесь жизнью в грязи!"
-  
- #Old or sick adventurer dies on a mountain 
-  
+
+ #Old or sick adventurer dies on a mountain
+
  fund_inspiration.6511.t:0 "$fund_inspiration.title$ Скиталец в море снегов"
  fund_inspiration.6511.intro_desc:0 "Я получаю послание от искателя приключений, и с первых строк становится ясно, что это последнее письмо."
  fund_inspiration.6511.old_age:0 "\n\n«К своему преклонному возрасту мне довелось повидать немало чудес. Я пишу это письмо с заснеженной горной вершины, единственное живое существо посреди моря тумана. Я знаю, что больше мне не удастся увидеть подобную красоту».\n\n«У меня и в мыслях не было возвращаться с горы, и вы можете с уверенностью считать, что я где-то там, среди льдов. Не оплакивайте меня, иной судьбы мне не хотелось. Меня ждет [inspiration_owner.GetFaith.PositiveAfterLife], и я движусь туда медленно и неизбежно, словно ледник»."
  fund_inspiration.6511.poor_health:0 "\n\n«Я искаженное подобие человека, здоровье и тело предают меня. Но мне и в голову не приходило, что в таком состоянии я смогу увидеть это заснеженное королевство, эти облака и туман с вершины горы. Увядающий цветок не заслуживает подобной красоты».\n\n«Я знаю, что мне осталось недолго, и оставляю свое тело на милость льду. Возможно, холод сохранит мою внешность нетронутой»."
  fund_inspiration.6511.winter:0 "\n\n«Я на вершине горы в худшие мгновения своей жизни. Каждая снежинка — словно жестокий смех злодейки-зимы. Мне не чужды битвы, но нет более жестокого боя, чем против крови в собственном теле. Моя ведущая рука еще двигается, чтобы писать эти слова, но вторая уже нет».\n\n«Знайте, мне радостно было повидать мир, и я считаю прочих людей бедняками в сравнении со мной»."
  fund_inspiration.6511.a:0 "Это самое романтичное описание опасности из всех!"
-  
- #Adventurer wants you to name a mountain 
-  
+
+ #Adventurer wants you to name a mountain
+
  fund_inspiration.6512.t:0 "$fund_inspiration.title$ [ROOT.Char.GetTitleAsNameNoTooltip|U] горы"
  fund_inspiration.6512.intro_desc:0 "Я получаю письмо от искателя приключений, покрытое красноватой пылью пустынных гор."
  fund_inspiration.6512.desc:0 "\n\n«Взбираясь на очередную скалу среди бесчисленного множества плато, я не замечаю никаких следов пребывания здесь других людей. Сегодняшняя вершина превосходит все покоренные мною ранее».\n\n«Думаю, эта скала заслуживает достойного названия в память о достижении, которое поддерживает [ROOT.Char.GetTitleAsNameNoTooltip|l], что не знает себе равных»."
@@ -975,73 +975,73 @@
  fund_inspiration.6512.g:0 "Монарший жезл!"
  fund_inspiration.6512.h:0 "Погибель врагов!"
  fund_inspiration.6512.i:0 "Забудьте об этом и привезите мне камней!"
-  
- #Adventurer decides to join the Mundburgians 
-  
+
+ #Adventurer decides to join the Mundburgians
+
  fund_inspiration.6514.t:0 "$fund_inspiration.title$ Арнальт Мундбургский"
- fund_inspiration.6514.introduction:0 "Я получаю письмо от своего посланника, скрепленное печатью со странным символом: семь концентрических кругов, пересечённых вертикальной чертой."
- fund_inspiration.6514.desc:0 "\n\n«[ROOT.Char.GetLadyLord], я добрался до великолепного Минас Тирита. В одной из многочисленных местных таверн на первом уровне цитадели, мне повстречался занимательный человек: Арнальт, капитан Мундбургского эореда. По его словам, ему приходилось заниматься многим: он был и управляющим при дворе великого короля и держал пасеку, а теперь, вот, служит с Мундбуржцами.\n\nЭоред является элитным кавалерийским подразделением, в котором преимущественно состоят предприимчивые северяне на службе Гондору. Арнальт, однако, был так впечатлён моим боевым духом, что предложил вступить в их ряды! Надеюсь, вы как никто другой понимаете, что от таких предложений не отказываются...»"
- fund_inspiration.6514.a:0 "Думаю, ты куда больше пригодишься в качестве моего полководца."
- fund_inspiration.6514.b:0 "Если останешься там, то я прикажу доставить тебя ко мне в колодках!"
+ fund_inspiration.6514.introduction:0 "Я получаю письмо от своего авантюриста, скреплённое печатью со странным символом: семь концентрических кругов, пересечённых вертикальной чертой."
+ fund_inspiration.6514.desc:0 "\n\n«[ROOT.Char.GetLadyLord], я [Select_CString(inspiration_owner.IsFemale, 'добралась', 'добрался' )] до великолепного [Concept('minastirith', 'Минас Тирита')|E]. В одной из многочисленных местных таверн на первом ярусе цитадели, мне повстречался занимательный человек: Арнальт, капитан Мундбургского эореда. По его словам, ему приходилось заниматься многим: он был и управляющим при дворе великого короля и держал пасеку, а теперь, вот, служит с мундбуржцами.\n\nЭоред является элитным кавалерийским подразделением, в котором преимущественно состоят предприимчивые северяне на службе Гондора. Арнальт, однако, был так впечатлён моим боевым духом, что предложил вступить в их ряды! Надеюсь, вы как никто другой понимаете, что от таких предложений не отказываются...»"
+ fund_inspiration.6514.a:0 "Думаю, вы куда больше пригодитесь в качестве моего полководца."
+ fund_inspiration.6514.b:0 "Если останетесь там, то я прикажу доставить вас ко мне в колодках!"
  fund_inspiration.6514.b.toast_outcome.positive:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] в ужасе"
  fund_inspiration.6514.b.toast_outcome.positive.continue:0 "Приключение продолжается"
  fund_inspiration.6514.b.toast_outcome.positive.flee:0 "[inspiration_owner.GetSheHe|U] покидает ваш двор."
  fund_inspiration.6514.b.toast_outcome.refusal:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] не под впечатлением"
- fund_inspiration.6514.c:0 "Пусть остаётся со своими новыми друзьями. У меня больше нет на него планов."
-  
-  #Adventurer got fleeced in Umbar 
-  
+ fund_inspiration.6514.c:0 "Пусть остаётся со своими новыми друзьями. У меня больше нет на н[inspiration_owner.GetHerHis] планов."
+
+ #Adventurer got fleeced in Umbar
+
  fund_inspiration.6515.t:0 "$fund_inspiration.title$ Изменившее счастье"
- fund_inspiration.6515.introduction:0 "От своего посланника я получаю письмо, местами помятое и запятнанное. Кроме того, от него просто несёт пивом и дешёвым ромом."
- fund_inspiration.6515.desc:0 "\n\n«О, [ROOT.Char.GetTitleAsNameNoTooltip], ваше величие и щедрость не знают границ. Мне довелось оказаться в неловкой ситуации. Погрузившись в великолепие Умбара, как вы и поручили, я решил пообщаться с местными, разузнать кое-какие слухи о возможных сокровищах, что были бы достойны вашего величия.\n\nИ хотя мне удалось узнать об одних занятных нуменорских руинах, которые я теперь и планирую посетить, я растратил всё золото, которое вы так мудро вручили мне. Клянусь вам, местные играли нечестно, поскольку ни с одной раздачей мне не повезло, а это не возможно!\n\nНе могли бы вы направить дополнительные средства на продолжение моей миссии?»"
+ fund_inspiration.6515.introduction:0 "От своего авантюриста я получаю письмо, местами помятое и запятнанное. Кроме того, от него просто несёт пивом и дешёвым ромом."
+ fund_inspiration.6515.desc:0 "\n\n«О, [ROOT.Char.GetTitleAsNameNoTooltip], ваше величие и щедрость не знают границ. Мне довелось оказаться в неловкой ситуации. Погрузившись в великолепие Умбара, как вы и поручили, я [Select_CString(inspiration_owner.IsFemale, 'решила', 'решил' )] пообщаться с местными, разузнать кое-какие слухи о возможных сокровищах, что были бы достойны вашего величия.\n\nИ хотя мне удалось узнать об одних занятных нуменорских руинах, которые я теперь и планирую посетить, я [Select_CString(inspiration_owner.IsFemale, 'растратила', 'растратил' )] всё золото, которое вы так мудро вручили мне. Клянусь вам, местные жульничали, поскольку ни с одной раздачей мне не повезло, а это не возможно!\n\nНе могли бы вы направить дополнительные средства на продолжение моей миссии?»"
  fund_inspiration.6515.a:0 "Надеюсь эта информация стоила потраченных денег. Я вышлю дополнительные средства."
  fund_inspiration.6515.b:0 "Деньги были не на карты, тебе придётся выиграть их обратно."
  fund_inspiration.6515.b.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] возвращает проигранные деньги"
- fund_inspiration.6515.b.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] проигрывает всё до последних трусов"
+ fund_inspiration.6515.b.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] проигрывает всё до последнего гроша"
  fund_inspiration.6515.c:0 "Вернись к ним и забери мои деньги!"
  fund_inspiration.6515.c.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] возвращает ваши деньги"
  fund_inspiration.6515.c.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] проигрывает в схватке"
-  
-  #Adventurer meets Knights of Ni 
-  
+
+ #Adventurer meets Knights of Ni
+
  fund_inspiration.6516.t:0 "$fund_inspiration.title$ Эксцентричная выходка"
- fund_inspiration.6516.desc:0 "\n\n«Милорд, я пишу вам из этого темного леса, чтобы сообщить о совершенно необычайной встрече. В чащобе мне повстречалась группа очень высоких рыцарей, с длинными усами и высокими рогатыми шлемами.\n\nОни представились Рыцарями Репы, и стали угрожать, что если я не пожертвую им немного клумб, то будут повторять «Репа» раз за разом.\n\nИ хотя прежде мне не доводилось слышать об этом загадочном рыцарском ордене, а необычная угроза застала меня врасплох, я определённо был в меньшинстве.»"
+ fund_inspiration.6516.desc:0 "\n\n«Мой сюзерен, я пишу вам из этого тёмного леса, чтобы сообщить о совершенно необычайной встрече. В чащобе мне повстречалась группа очень высоких рыцарей, с длинными усами и высокими рогатыми шлемами.\n\nОни представились Рыцарями Репы, и стали угрожать, что если я не пожертвую им немного клумб, то будут повторять «Репа» раз за разом.\n\nИ хотя прежде мне не доводилось слышать об этом загадочном рыцарском ордене, а необычная угроза застала меня врасплох, я определённо в меньшинстве.»"
  fund_inspiration.6516.a:0 "Это же очевидно! Нужно найти ближайшую клумбу и нарвать немного кустарника."
  fund_inspiration.6516.b:0 "Всего то и нужно, что найти самое высокое дерево и срубить его селёдкой!"
- fund_inspiration.6516.c:0 "Вы решаете что терпеть эту ерунду не стоит, и двинулись дальше."
+ fund_inspiration.6516.c:0 "Вы решаете, что терпеть эту ерунду не стоит, и двинулись дальше."
  fund_inspiration.6516.c.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] умудряется убраться восвояси в целости и сохранности."
- fund_inspiration.6516.c.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] «заРепали» до бессилия."
-  
-  #Adventurer gets captured and brought to Edoras 
-  
- fund_inspiration.6517.t:0 "$fund_inspiration.title$ Пленник в Эдорасе"
- fund_inspiration.6517.introduction:0 "Я получаю письмо от своего посланника, написанное в спешке на грубом куске пергамента из лошадиной кожи."
- fund_inspiration.6517.desc:0 "«Ми[ROOT.Char.GetLadyLord], мне требуется ваша помощь. Пересекая равнины Рохана, отряд всадников окружил меня и приказал следовать за ними в Эдорас.\n\nИх предводитель сказал следующее: «Согласно нашим законам чужеземцам не дозволяется путешествовать по окрестным землям без дозволения Короля Рохана».\n\nУже скоро меня призовут в Медусельд, и ваша помощь мне бы очень пригодилась»."
+ fund_inspiration.6516.c.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] «[Select_CString(inspiration_owner.IsFemale, 'зареплена', 'зареплен' )]» до бессилия."
+
+ #Adventurer gets captured and brought to Edoras
+
+ fund_inspiration.6517.t:0 "$fund_inspiration.title$ [Select_CString(inspiration_owner.IsFemale, 'Пленница', 'Пленник' )] в Эдорасе"
+ fund_inspiration.6517.introduction:0 "Я получаю письмо от своего авантюриста, написанное в спешке на грубом куске пергамента из лошадиной кожи."
+ fund_inspiration.6517.desc:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], мне требуется ваша помощь. Пересекая равнины Рохана, отряд всадников окружил меня и приказал следовать за ними в Эдорас.\n\nИх предводитель сказал следующее: «Согласно нашим законам чужеземцам не дозволяется путешествовать по окрестным землям без дозволения короля Рохана».\n\nУже скоро меня призовут в Медусельд, и ваша помощь мне бы очень пригодилась»."
  fund_inspiration.6517.a:0 "Напомни [rohanking.GetHerHim], что вы сражаетесь на одной стороне."
- fund_inspiration.6517.b:0 "Высылаю тебе золото. Его должно хватить, чтобы выкупить свою свободу."
- fund_inspiration.6517.c:0 "Напомни [rohanking.GetHerHim] кто тебя послал. Пусть убоится моего гнева!"
+ fund_inspiration.6517.b:0 "Высылаю вам золото. Его должно хватить, чтобы выкупить свободу."
+ fund_inspiration.6517.c:0 "Напомни [rohanking.GetHerHim], кто вас послал. Пусть убоится моего гнева!"
  fund_inspiration.6517.c.success:0 "[rohanking.GetTitledFirstNameNoTooltip] поддаётся на ваши угрозы."
- fund_inspiration.6517.c.failure:0 "[rohanking.GetTitledFirstNameNoTooltip] приказывает казнить [inspiration_owner.GetTitledFirstNameNoTooltip]."
-  
-  #Adventurer assaulted by a gigantic bear 
-  
- fund_inspiration.6518.t:0 "$fund_inspiration.title$ Едва живой"
- fund_inspiration.6518.introduction:0 "I receive a missive from my adventurer, who has been sailing up the Anduin."
- fund_inspiration.6518.desc:0 "\n\n«Ми[ROOT.Char.GetTitleAsNameNoTooltip], я пишу вам, едва собравшись с мыслями.\n\nНаслаждаясь заслуженным отдыхом после долгого сплава по Андуину, недалеко от огромной скалы, которую местные называют Каррок, я услышал ужасающий рёв позади.\n\nОбернувшись, я увидел огромнейшего медведя, какого мне доводилось видеть. Раза в два больше обычного — он пёр прямо на меня»."
- fund_inspiration.6518.a:0 "Тебе едва удалось убежать, не так ли?"
- fund_inspiration.6518.b:0 "Ты сразился с гигантским медведем."
+ fund_inspiration.6517.c.failure:0 "[rohanking.GetTitledFirstNameNoTooltip] приказывает казнить персонажа [inspiration_owner.GetTitledFirstNameNoTooltip]."
+
+ #Adventurer assaulted by a gigantic bear
+
+ fund_inspiration.6518.t:0 "$fund_inspiration.title$ Едва [Select_CString(inspiration_owner.IsFemale, 'живая', 'живой' )]"
+ fund_inspiration.6518.introduction:0 "Я получаю письмо от авантюриста, плывшего вверх по Андуину."
+ fund_inspiration.6518.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip], я пишу вам, едва собравшись с мыслями.\n\nНаслаждаясь заслуженным отдыхом после долгого сплава по Андуину, недалеко от огромной скалы, которую местные называют Каррок, я [Select_CString(inspiration_owner.IsFemale, 'услышала', 'услышал' )] ужасающий рёв позади.\n\nОбернувшись, я [Select_CString(inspiration_owner.IsFemale, 'увидела', 'увидел' )] огромнейшего медведя, какого мне доводилось видеть. Раза в два больше обычного — он нёсся прямо на меня»."
+ fund_inspiration.6518.a:0 "Вам едва удалось убежать, не так ли?"
+ fund_inspiration.6518.b:0 "Вы сразились с гигантским медведем."
  fund_inspiration.6518.b.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] успешно отгоняет медведя"
- fund_inspiration.6518.b.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] получает от медведя ранение"
+ fund_inspiration.6518.b.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] получает ранение в схватке с медведем"
  fund_inspiration.6518.b.critical_failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] погибает в схватке с медведем"
-  
-  #Orc adventurer sneaks upon a Tark camp 
-  
+
+ #Orc adventurer sneaks upon a Tark camp
+
  fund_inspiration.6519.t:0 "$fund_inspiration.title$ Тарки, тарки, тарки! Тарки повсюду!"
  fund_inspiration.6519.desc:0 "\n\n«[ROOT.Char.GetTitleAsNameNoTooltip], это место кишит тарками, они же повсюду! И каждый из них хочет спустить с меня шкуру!»\n\n«Двоих с захода солнца мне уже удалось прикончить, а теперь я вижу кое-что интересное: слабо охраняемый лагерь тарков. Возможно там есть что-то ценное, а может какая-нибудь информация».\n\n«Я на изготовке. Можно ворваться в лагерь и перерезать глотки страже»."
- fund_inspiration.6519.a:0 "Убей всех и забери всё что найдёшь"
+ fund_inspiration.6519.a:0 "Убейте всех и заберите всё что найдёте"
  fund_inspiration.6519.a.critical_success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] настигает цель"
  fund_inspiration.6519.a.boil_skull:0 "[adventurer.GetFirstNameNoTooltip] вываривает и очищает череп: [guard.GetFirstNamePossessiveNoTooltip] будет неплохо смотреться при дворе в качестве трофея"
- artifact_guard_skull:0 "Стражник [killed.GetLadyLord|U] [killed.GetTitledFirstName] был убит. [creator.GetTitledFirstName] подготовил череп и отправил его ко двору. Владельцем артефакта становится [owner.GetTitledFirstName]. Улыбка у него довольно жуткая, а отверстия глаз пусты."
+ artifact_guard_skull:0 "[killed.GetLadyLord|U]-[Select_CString(killed.IsFemale, 'стражница', 'страж' )] [killed.GetTitledFirstName] [Select_CString(killed.IsFemale, 'была убита', 'был убит' )]. [creator.GetTitledFirstName] [Select_CString(creator.IsFemale, 'выварила', 'выварил' )] череп и [Select_CString(creator.IsFemale, 'отправила', 'отправил' )] его ко двору. Владельцем артефакта становится [owner.GetTitledFirstName]. Улыбка у него довольно жуткая, а отверстия глаз пусты."
  fund_inspiration.6519.a.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] распугивает стражу"
  fund_inspiration.6519.a.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] получает ранение от стражи"
  fund_inspiration.6519.a.critical_failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] погибает в схватке со стражниками"
@@ -1049,62 +1049,62 @@
  fund_inspiration.6519.b.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] прокрадывается мимо стражников"
  fund_inspiration.6519.b.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] попадает в поле зрения стражи"
  fund_inspiration.6519.c:0 "Не нужно рисковать, шансов предоставится ещё немало"
-  
-  #Adventurer meets escaped slave in Nurn 
-  
+
+ #Adventurer meets escaped slave in Nurn
+
  fund_inspiration.6520.t:0 "$fund_inspiration.title$ Прирождённый беглец"
- fund_inspiration.6520.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord], в путешествиях по сельскохозяйственным равнинам моря [nurn|E] мне повстречалась группа беглых рабов».\n\n«Их лидером был бывший надсмотрщик: [slave.GetTitledFirstNameNoTooltip]. Он подаёт надежды и просит разрешение присодениться к вашему двору».\n\n«Что мне с ним делать?»"
- fund_inspiration.6520.a:0 "Отправьте [slave.GetHerHim] к моему двору, мне всегда пригодятся умелые придворные"
- fund_inspiration.6520.b:0 "Верните беглеца владельцу, за вознаграждение"
- fund_inspiration.6520.c:0 "Не волнуют меня беглые рабы и их владельцы"
-  
-  #Adventurer gets offered electrum nugget in Bellakar 
-  
+ fund_inspiration.6520.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], в путешествиях по сельскохозяйственным равнинам моря [Concept('nurn', 'Нурна')|E] мне повстречалась группа беглых рабов».\n\n«Их возглавляет [Select_CString(slave.IsFemale, 'бывшая надсмотрщица', 'бывший надсмотрщик' )]: [slave.GetTitledFirstNameNoTooltip]. [Select_CString(slave.IsFemale, 'Она', 'Он' )] подаёт надежды и просит разрешения присоединиться к вашему двору».\n\n«Что мне с [Select_CString(slave.IsFemale, 'ней', 'ним' )] делать?»"
+ fund_inspiration.6520.a:0 "Отправьте [slave.GetHerHis] к моему двору, мне всегда пригодятся умелые придворные"
+ fund_inspiration.6520.b:0 "Верните беглых рабов хозяину, за вознаграждение"
+ fund_inspiration.6520.c:0 "Меня не волнуют беглые рабы и их хозяева"
+
+ #Adventurer gets offered electrum nugget in Bellakar
+
  fund_inspiration.6521.t:0 "$fund_inspiration.title$ Электрумовая лихорадка"
- fund_inspiration.6521.introduction:0 "Я получаю письмо от своего посланника, который в данный момент находится в Беллакаре."
- fund_inspiration.6521.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord], мне удалось добраться до региона [bellakar|E], также известного как Золотое царство»\n\n«В одной из прокопченных комнатушек таверны, где я останавливаюсь, ко мне приближается пара местных изыскателей, которые ищут в окрестностях электрумовую руду. В городе они чтобы продать свои находки и пополнить припасы».\n\n«В окончание прекрасного вечера они подарили мне довольно крупный электрумовый самородок, с знак дружбы. Разумеется, я передаю его вам»."
+ fund_inspiration.6521.introduction:0 "Я получаю письмо от своего авантюриста, который в данный момент находится в Беллакаре."
+ fund_inspiration.6521.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], мне удалось добраться до [Concept('bellakar', 'Беллакара')|E], также известного как Золотое королевство»\n\n«В одной из прокопчённых комнатушек таверны, где я останавливаюсь, ко мне приближается пара местных изыскателей, которые ищут в окрестностях электрумовую руду. В городе они чтобы продать свои находки и пополнить припасы».\n\n«В окончание прекрасного вечера они подарили мне довольно крупный электрумовый самородок, в знак дружбы. Разумеется, я передаю его вам»."
  fund_inspiration.6521.a:0 "Конечно присылайте, в моих чертогах он будет смотреться просто прекрасно"
  fund_inspiration.6521.b:0 "Продайте его и используйте прибыль для продолжения странствий"
  fund_inspiration.6521.c:0 "Плевать мне на электрум, лучше золота пришлите"
-  
-  # Adventurer meets spice traders in Bozisha-Miraz 
-  
+
+ # Adventurer meets spice traders in Bozisha-Miraz
+
  fund_inspiration.6522.t:0 "$fund_inspiration.title$ Да польются специи рекой"
- fund_inspiration.6522.introduction:0 "Я получаю письмо от своего посланника. От пергамента исходит стойкий аромат экзотических специй."
- fund_inspiration.6522.desc:0 "\n\n\n\n«[ROOT.Char.GetTitleAsNameNoTooltip], после долгих странствий по густым джунглям Божиша-Мираз, мне удалось достичь крупного процветающего поселения»\n\n«Здесь все торговцы богаты и горды, но больше всех пафоса – у торговцев специями. Их прилавки ломятся от разнообразия цветов и ароматов, а бесчисленные перстни на их пальцах не уступают пестротой павлиньим хвостам».\n\n«На одну из их специй я предлагаю обратить особое внимание, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord]: Кох-Фэй, по слухам, укрепляет рассудок и помогает навигатором ориентироваться в открытом море»."
+ fund_inspiration.6522.introduction:0 "Я получаю письмо от своего авантюриста. От пергамента исходит стойкий аромат экзотических специй."
+ fund_inspiration.6522.desc:0 "\n\n\n\n«[ROOT.Char.GetTitleAsNameNoTooltip], после долгих странствий по густым джунглям Бозиша-Мираза, мне удалось достичь крупного процветающего поселения»\n\n«Здесь все торговцы богаты и горды, но больше всех пафоса – у торговцев специями. Их прилавки ломятся от разнообразия цветов и ароматов, а бесчисленные перстни на их пальцах не уступают пестротой павлиньим хвостам».\n\n«На одну из их специй я предлагаю обратить особое внимание, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord]: Кох-Фэй, по слухам, укрепляет рассудок и помогает навигатором ориентироваться в открытом море»."
  fund_inspiration.6522.a:0 "От торговой сделки с этими купцами можно неплохо выиграть"
  fund_inspiration.6522.a.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] заключает выгодную торговую сделку"
- fund_inspiration.6522.a.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] заключает справедливую торговую сделку"
+ fund_inspiration.6522.a.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] заключает посредственную торговую сделку"
  fund_inspiration.6522.b:0 "Вышлите мне ящик этого Кох-Фэя, да и себе на чашечку оставьте"
  fund_inspiration.6522.c:0 "Постарайтесь раздобыть эту специю, и чтоб незаметно"
  fund_inspiration.6522.c.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] похищает ящик Кох-Фэя"
  fund_inspiration.6522.c.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] попадается с поличным"
-  
-  # Adventurer develops an interest for herbs in Ithilien 
-  
+
+ # Adventurer develops an interest for herbs in Ithilien
+
  fund_inspiration.6523.t:0 "$fund_inspiration.title$ Сады Гондора"
- fund_inspiration.6523.introduction:0 "Я получаю письмо от своего посланника. При открытии из конверта выпадают сосновые иглы и засушенные травы."
- fund_inspiration.6523.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord], ах как бы мне хотелось, чтобы вы увидели Итилиэн собственными глазами. Это дикие, но прекрасные земли».\n\n«Людей здесь днём с огнём не сыщешь, поэтому у меня быстро закончились припасы. В этой связи мне пришлось заняться охотой. Я готовлю на костре и широко использую местные травы, которыми окрестные леса просто изобилуют».\n\n«Мне также удалось отыскать невероятно полезное растение: «Королевский лист». Поговаривают, что он помогает исцелять не только тело, но и разум»."
+ fund_inspiration.6523.introduction:0 "Я получаю письмо от своего авантюриста. При открытии из конверта выпадают сосновые иглы и засушенные травы."
+ fund_inspiration.6523.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], ах как бы мне хотелось, чтобы вы увидели Итилиэн собственными глазами. Это дикие, но прекрасные земли».\n\n«Людей здесь днём с огнём не сыщешь, поэтому у меня быстро закончились припасы. В этой связи мне пришлось заняться охотой. Я готовлю на костре и широко использую местные травы, которыми окрестные леса просто изобилуют».\n\n«Мне также удалось отыскать невероятно полезное растение: «Королевский лист». Поговаривают, что он помогает исцелять не только тело, но и разум»."
  fund_inspiration.6523.a:0 "Купите себе припасов и перестаньте тратить время"
  fund_inspiration.6523.b:0 "Торопиться некуда, ваши новые навыки наверняка пригодятся"
  fund_inspiration.6523.c:0 "Отправьте-ка мне этих травок, думаю придворному врачу они пригодятся"
-  
-  # Adventurer discovers Edhellond 
-  
+
+ # Adventurer discovers Edhellond
+
  fund_inspiration.6524.t:0 "$fund_inspiration.title$ Где же эльфы?"
- fund_inspiration.6524.introduction:0 "Я получаю письмо от моего посланника, а из складок бумаги выпадает несколько крупиц серебристого песка."
- fund_inspiration.6524.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], мне удалось добраться до побережья Бухты Бельфалас, что в прибрежных землях [Concept( 'gondor', 'Гондора' )|E]. Местные жители указали мне на загадочное место, заброшенное, но почитаемое окрестным населением».\n\n«Нечасто простому путнику удаётся посетить древнюю эльфийскую гавань Эдэллонд, а ощущения мои трудно передать словами. Её невероятно утончённая архитектура, представленная элегантными текущими строениями сохранилась в едва ли не первозданном виде, однако неясно за счёт чего: мастерства ли давно покинувших эти места [sindarelves|E] или бережливого отношения [Concept( 'gondorians', 'гондорцев' )|E]».\n\n«На стенах нередко присутствуют гравировки, в которых запечатлены ландшафты, труд корабелов или моряков. Быть может стоит здесь задержаться и изучить их?»"
+ fund_inspiration.6524.introduction:0 "Я получаю письмо от моего авантюриста, а из складок бумаги выпадает несколько крупиц серебристого песка."
+ fund_inspiration.6524.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], мне удалось добраться до побережья бухты Бельфалас, что в прибрежных землях [Concept( 'gondor', 'Гондора' )|E]. Местные жители указали мне на загадочное место, заброшенное, но почитаемое окрестным населением».\n\n«Нечасто простому путнику удаётся посетить древнюю эльфийскую гавань Эдэллонд, а ощущения мои трудно передать словами. Её невероятно утончённая архитектура, представленная элегантными текущими строениями сохранилась в едва ли не первозданном виде, однако неясно за счёт чего: мастерства ли давно покинувших эти места [sindarelves|El] или бережливого отношения [Concept( 'gondorians', 'гондорцев' )|E]».\n\n«На стенах нередко присутствуют гравировки, в которых запечатлены ландшафты, труд корабелов или моряков. Быть может стоит здесь задержаться и изучить их?»"
  fund_inspiration.6524.a:0 "Обыщите это место в поисках карты местности, быть может здесь есть и другие секреты"
  fund_inspiration.6524.a.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] находит фреску с указаниями не местонахождение забытых руин"
  fund_inspiration.6524.a.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] не находит в городе ничего полезного"
  fund_inspiration.6524.b:0 "Постарайтесь узнать что нибудь о секретах кораблестроения"
  fund_inspiration.6524.c:0 "Да там уже сто лет как всё разграбили, собирайтесь в путь"
-  
-  # Adventurer goes on a pubcrawl in Dorwinion 
-  
+
+ # Adventurer goes on a pubcrawl in Dorwinion
+
  fund_inspiration.6525.t:0 "$fund_inspiration.title$ Крепкая марка"
- fund_inspiration.6525.introduction:0 "Я получаю письмо от своего посланника, которое, судя по запаху, запятнано дорогущим вином."
- fund_inspiration.6525.desc:0 "\n\n«Ми[ROOT.Char.GetLadyLord], вам наверняка не раз доводилось слышать о знаменитых винах [Concept( 'dorwinion', 'Дорвиниона' )|E]. Его дегустируют по всему северу и высоко ценят при дворах [Concept( 'dale', 'Дэйла')|E], [Concept( 'erebor', 'Эребора' )|E] и [Concept( 'mirkwood', 'Лихолесья' )|E]».\n\n«Поговаривают, что даже [Concept( 'elves', 'эльфам' )|E] оно бьёт в голову. И как ваш посланник, я не мог не проверить эти расхожие слухи».\n\n«После ночи дегустаций в ряде лучших местных питейных заведений, я очнулся с осознанием двух абсолютных истин: все эти слухи есть ни что иное как чистая правда, а денег у меня больше нет»."
+ fund_inspiration.6525.introduction:0 "Я получаю письмо от своего авантюриста, которое, судя по запаху, запятнано дорогущим вином."
+ fund_inspiration.6525.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], вам наверняка не раз доводилось слышать о знаменитых винах [Concept( 'dorwinion', 'Дорвиниона' )|E]. Его дегустируют по всему северу и высоко ценят при дворах [Concept( 'dale', 'Дэйла')|E], [Concept( 'erebor', 'Эребора' )|E] и [Concept( 'mirkwood', 'Лихолесья' )|E]».\n\n«Поговаривают, что даже [Concept( 'elves', 'эльфам' )|E] оно бьёт в голову. И как ваш авантюрист, я не [Select_CString(inspiration_owner.IsFemale, 'могла', 'мог' )] не проверить эти расхожие слухи».\n\n«После ночи дегустаций в ряде лучших местных питейных заведений, я [Select_CString(inspiration_owner.IsFemale, 'очнулась', 'очнулся' )] с осознанием двух абсолютных истин: все эти слухи есть ни что иное как чистая правда, а денег у меня больше нет»."
  fund_inspiration.6525.a:0 "Придётся восстановить картину произошедшего и вернуть утраченные средства"
  fund_inspiration.6525.a.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] находит свой потерянный кошель"
  fund_inspiration.6525.a.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] не может отыскать деньги"
@@ -1112,47 +1112,47 @@
  fund_inspiration.6525.b.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] возмещает утраченные средства"
  fund_inspiration.6525.b.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] попадается с поличным"
  fund_inspiration.6525.c:0 "И знать ничего не хочу. Вот вам ещё деньги и в этот раз не пропейте!"
-  
-  # Adventurer is attacked by giant spiders in Mirkwood 
-  
+
+ # Adventurer is attacked by giant spiders in Mirkwood
+
  fund_inspiration.6526.t:0 "$fund_inspiration.title$ Арахнофобия"
- fund_inspiration.6526.introduction:0 "От посланника приходит письмо, местами покрытое толстым слоем паутины."
- fund_inspiration.6526.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], я достиг бескрайних и мрачных лесов [Concept( 'mirkwood', 'Лихолесья' )|E]. Им нет ни конца ни края, а двуногих опасности здесь поджидают на каждом шагу».\n\n«Но хуже всего – гигантские пауки. Здесь всё кишит этими отвратительными тварями, их коварные сети расставлены для глупых и невнимательных».\n\n«Пишу я вам постольку, что повстречал самого чудовищного из таких вот пауков»."
- fund_inspiration.6526.a:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] должно быть проскакивает мимо паука"
+ fund_inspiration.6526.introduction:0 "От авантюриста приходит письмо, местами покрытое толстым слоем паутины."
+ fund_inspiration.6526.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], я [Select_CString(inspiration_owner.IsFemale, 'достигла', 'достиг' )] бескрайних и мрачных лесов [Concept( 'mirkwood', 'Лихолесья' )|E]. Им нет ни конца ни края, а двуногих опасности здесь поджидают на каждом шагу».\n\n«Но хуже всего – гигантские пауки. Здесь всё кишит этими отвратительными тварями, их коварные сети расставлены для глупых и невнимательных».\n\n«Пишу я вам постольку, что [Select_CString(inspiration_owner.IsFemale, 'повстречала', 'повстречал' )] самого чудовищного из таких вот пауков»."
+ fund_inspiration.6526.a:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] проскочит мимо паука"
  fund_inspiration.6526.a.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] обводит паука вокруг пальца"
  fund_inspiration.6526.a.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] попадается"
- fund_inspiration.6526.b:0 "Наверняка мой посланник сразил чудовище?"
+ fund_inspiration.6526.b:0 "Наверняка мой авантюрист сразил чудовище?"
  fund_inspiration.6526.b.success:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] убивает паука"
  fund_inspiration.6526.b.failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] получает ранение"
  fund_inspiration.6526.b.critical_failure:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] становится ужином паука"
  fund_inspiration.6526.c:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] прячется в зарослях и ждёт, пока паук отправится восвояси"
-  
-  # Adventurer visits the Market of Dale 
-  
+
+ # Adventurer visits the Market of Dale
+
  fund_inspiration.6527.t:0 "$fund_inspiration.title$ Базарный день"
  fund_inspiration.6527.introduction:0 "Я получаю письмо, скреплённое печатью с луком и звёздами Дэйла."
- fund_inspiration.6527.desc:0 "\n\n«Ми[ROOT.Char.GetLadyLord], мне удалось добраться до города [dale|E], а также посетить его ярмарку. Совершив обход достопримечательностей, я выбираю то, что могло бы вас заинтересовать:»\n\n«Заводная деревянная игрушка со знаменитой ярмарки игрушек Дэйла, утончённая брошь гномьей работы с клеймом кузнецов [Concept( 'erebor', 'Эребора' )|E], или один из множества сыров на продаже в Гильдии Сыроваров»\n\n«Если что-то из перечисленного вас заинтересует – пожалуйста направьте средства на приобретение. По торговому законодательству гномов, которое здесь применяется, в течение двух недель вы можете вернуть товар и получить деньги назад."
- fund_inspiration.6527.a:0 "Будь я ребёнком – непременно прикупил бы такую"
+ fund_inspiration.6527.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetLadyLord], мне удалось добраться до города [dale|E], а также посетить его ярмарку. Совершив обход достопримечательностей, я выбираю то, что могло бы вас заинтересовать:»\n\n«Заводная деревянная игрушка со знаменитой ярмарки игрушек Дэйла, утончённая брошь гномьей работы с клеймом кузнецов [Concept( 'erebor', 'Эребора' )|E], или один из множества сыров на продаже в Гильдии сыроваров»\n\n«Если что-то из перечисленного вас заинтересует – пожалуйста, направьте средства на приобретение. По торговому законодательству гномов, которое здесь применяется, в течение двух недель вы можете вернуть товар и получить деньги назад."
+ fund_inspiration.6527.a:0 "Будь я ребёнком – непременно [Select_CString(ROOT.Char.IsFemale, 'прикупила', 'прикупил' )] бы такую"
  fund_inspiration.6527.b:0 "Привезите мне эту брошь. Меня всегда восхищала гномья работа"
- fund_inspiration.6527.c:0 "Прикуплю ка я сыр, будем хранить его в своих погребах"
- fund_inspiration.6527.d:0 "Я что, по-твоему, купаюсь в деньгах? А ну за работу!"
+ fund_inspiration.6527.c:0 "Прикуплю-ка я сыр, будем хранить его в своих погребах"
+ fund_inspiration.6527.d:0 "Я что, по-вашему, купаюсь в деньгах? А ну за работу!"
  fund_inspiration.6527.d_tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] продолжает своё путешествие"
-  
-  # Elven adventurer loses track of time in Caras Galadhon 
-  
+
+ # Elven adventurer loses track of time in Caras Galadhon
+
  fund_inspiration.6528.t:0 "$fund_inspiration.title$ Время замерло"
- fund_inspiration.6528.introduction:0 "Я получаю письмо от моего посланника, который везёт лист Мэллорна из [Concept( 'lothlorien', 'Лотлориэна' )|E]."
- fund_inspiration.6528.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], я стою у города Карас Галадон, сердца эльфийских земель [Concept( 'middleearth', 'Средиземья' )|E]. Это поистине стоящее зрелище, а время здесь, кажется, течёт ощутимо медленнее, чем во внешнем мире. Мне с трудом верится, что прошло уже три месяца!»'\n\n«Мне повстречался учёный, который предложил вместе изучить древние свитки в поисках забытых реликвий, а также охотничий отряд, любезно пригласивший меня присоединиться к их охоте. Чьё приглашение мне принять, ми[ROOT.Char.GetLadyLord]?»"
- fund_inspiration.6528.a:0 "Ты и без того уже долго прохлаждаешься! Пора в путь!"
+ fund_inspiration.6528.introduction:0 "Я получаю письмо от моего авантюриста, что везёт лист мэллорна из [Concept( 'lothlorien', 'Лотлориэна' )|E]."
+ fund_inspiration.6528.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], я стою у города Карас Галадон, сердца эльфийских земель [Concept( 'middleearth', 'Средиземья' )|E]. Это поистине стоящее зрелище, а время здесь, кажется, течёт ощутимо медленнее, чем во внешнем мире. Мне с трудом верится, что прошло уже три месяца!»\n\n«Мне повстречался учёный, который предложил вместе изучить древние свитки в поисках забытых реликвий, а также охотничий отряд, любезно пригласивший меня присоединиться к их охоте. Чьё приглашение мне принять, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetLadyLord]?»"
+ fund_inspiration.6528.a:0 "Вы и без того уже долго прохлаждаетесь! Пора в путь!"
  fund_inspiration.6528.a_tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] продолжает своё путешествие"
- fund_inspiration.6528.b:0 "Отправляйся с учёным и привези что-нибудь полезное"
+ fund_inspiration.6528.b:0 "Отправляйтесь с учёным и привезите что-нибудь полезное"
  fund_inspiration.6528.c:0 "Славная охота наверняка поможет собраться с мыслями для предстоящего пути"
 
- #Evil adventurer is rightly scared of Galadriel 
-  
+ #Evil adventurer is rightly scared of Galadriel
+
  fund_inspiration.6529.t:0 "$fund_inspiration.title$ Ведьма Золотого Леса"
- fund_inspiration.6529.desc:0 "\n\n\n\n«Передо мной опушка проклятого Золотого Леса, [Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip]. Местные говорят, что живым отсюда ещё никто не возвращался. Я конечно не трус, но опасаюсь, что с магией Королевы Ведьм мне не справиться.\n\nПожалуйста, позвольте мне вернуться ко двору, где живым я пригожусь больше, чем мёртвым»."
- fund_inspiration.6529.a:0 "Думаю, живым от тебя будет больше пользы..."
+ fund_inspiration.6529.desc:0 "\n\n\n\n«Передо мной опушка проклятого Золотого Леса, [Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l]. Местные говорят, что живым отсюда ещё никто не возвращался. Я конечно не страшусь, но опасаюсь, что с магией Королевы Ведьм мне не справиться.\n\nПрошу, позвольте мне вернуться ко двору, где [Select_CString(inspiration_owner.IsFemale, 'живой', 'живым' )] я пригожусь больше, чем [Select_CString(inspiration_owner.IsFemale, 'мёртвой', 'мёртвым' )]»."
+ fund_inspiration.6529.a:0 "Думаю, [Select_CString(inspiration_owner.IsFemale, 'живой', 'живым' )] от вас будет больше пользы..."
  fund_inspiration.6529.a.tt:0 "[inspiration_owner.GetTitledFirstName] получит ваше разрешение вернуться домой."
  fund_inspiration.6529.b:0 "Хорошо, но лучше бы изучить окрестные земли, чтобы деньги не пропадали зря!"
  fund_inspiration.6529.b.tt:0 "[inspiration_owner.GetTitledFirstName] исследует окрестности Лориэна."
@@ -1160,52 +1160,52 @@
  fund_inspiration.6529.c.tt:0 "[inspiration_owner.GetTitledFirstName] попытается проникнуть в лес."
 
  # Attack of the Drake hehe
- 
- fund_inspiration.6530.t:0 "$fund_inspiration.title$ A Unexpected Visitor"
- fund_inspiration.6530.desc:0 "\n\n'While we where traversing the Grey Mountains, suddenly the cliffs echoed with a terrible roar, as if a spawn of the very Angband was coming for us.\n\nAnd then it appeared.. A Drake of the frozen north had come for us and was swiftly coming down the mountain to end our lives and turn us into its morning snack.'"
- fund_inspiration.6530.a:0 "Fly you fools!"
- fund_inspiration.6530.a.success:0 "[inspiration_owner.GetTitledFirstName] succesfully escaped the Drake without being harmed"
- fund_inspiration.6530.a.failure:0 "[inspiration_owner.GetTitledFirstName] escaped succesfully but not quite unharmed"
- fund_inspiration.6530.b:0 "Stand and fight!"
- fund_inspiration.6530.b.success:0 "[inspiration_owner.GetTitledFirstName] succesfully managed to slay the Drake"
- fund_inspiration.6530.b.failure:0 "[inspiration_owner.GetTitledFirstName] managed to fend of the Drake but not without getting harmed"
- fund_inspiration.6530.b.critical_failure:0 "[inspiration_owner.GetTitledFirstName] was burned alive by the Drake"
- 
+
+ fund_inspiration.6530.t:0 "$fund_inspiration.title$ Неожиданный посетитель"
+ fund_inspiration.6530.desc:0 "\n\n«Когда мы пересекали Серые горы, внезапно скалы отозвались жутким ревом, словно за нами явилось порождение самого Ангбанда.\n\nИ тогда оно появилось... Великий змей с замёрзшего севера пришёл за нами и стремительно спускался с горы, чтобы покончить с нашими жизнями и превратить нас в свою утреннюю закуску»."
+ fund_inspiration.6530.a:0 "Бегите, глупцы!"
+ fund_inspiration.6530.a.success:0 "[inspiration_owner.GetTitledFirstName] успешно спасается от змей без вреда"
+ fund_inspiration.6530.a.failure:0 "[inspiration_owner.GetTitledFirstName] успешно спасается, но получает ранение"
+ fund_inspiration.6530.b:0 "Стойте и сражайтесь!"
+ fund_inspiration.6530.b.success:0 "[inspiration_owner.GetTitledFirstName] успешно повергает змея"
+ fund_inspiration.6530.b.failure:0 "[inspiration_owner.GetTitledFirstName] отбивается от змея, но получает ранение"
+ fund_inspiration.6530.b.critical_failure:0 "[inspiration_owner.GetTitledFirstName] заживо [Select_CString(inspiration_owner.IsFemale, 'сожжена', 'сожжён' )] змеем"
+
  #Adventurer mistakes fat lizard for a drake in the Grey Mountains
 
- fund_inspiration.6531.t:0 "$fund_inspiration.title$ The Largest Drake Ever"
- fund_inspiration.6531.introduction:0 "I receive a letter from my adventurer, who has been hiking through the frozen Grey Mountains."
- fund_inspiration.6531.desc:0 "\n\n'My [ROOT.Char.GetTitleAsNameNoTooltip], I send you a royal gift: the hide from the largest of the fearsome drakes that roam the north.\n\nIt sprang on me with a vicious roar, its teeth like giant knives aiming for my throat. But my lightning-quick reflexes allowed me to plunge my sword into its belly and slay it.\n\nI have not yet fully recovered from the dreadful experience, and will need some peace and quiet before I can start again on my adventures.'"
- fund_inspiration.6531.a:0 "How...nice. Many thanks"
- fund_inspiration.6531.a.tt:0 "You allow [inspiration_owner.GetTitledFirstName] to rest awhile."
- fund_inspiration.6531.b:0 "You'd better find something better than this, and fast!"
- fund_inspiration.6531.b.tt:0 "You order [inspiration_owner.GetTitledFirstName] back on the trail immediately."
- fund_inspiration.6531.b.success:0 "[inspiration_owner.GetTitledFirstName] is scared enough to start exploring again"
- fund_inspiration.6531.b.failure:0 "[inspiration_owner.GetTitledFirstName] is not impressed"
+ fund_inspiration.6531.t:0 "$fund_inspiration.title$ Огромнейший змей"
+ fund_inspiration.6531.introduction:0 "Я получаю письмо от моего авантюриста, отправившегося в поход по замёрзшим Серым горам."
+ fund_inspiration.6531.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], посылаю вам королевский дар: шкуру самого большого из страшных змеев что бродят по северу.\n\nОн бросился на меня со злобным рёвом, его зубы, как огромные ножи, нацелились на моё горло. Но мои молниеносные рефлексы позволили мне вонзить меч в его брюхо и убить его.\n\nЯ еще не полностью [Select_CString(inspiration_owner.IsFemale, 'оправилась', 'оправился' )] от этого ужасного опыта, и мне нужен покой и тишина, прежде чем я смогу снова начать свои приключения»."
+ fund_inspiration.6531.a:0 "Как... мило. Большое спасибо"
+ fund_inspiration.6531.a.tt:0 "Вы разрешаете персонажу [inspiration_owner.GetTitledFirstName] немного отдохнуть."
+ fund_inspiration.6531.b:0 "Вам лучше найти что-нибудь получше этого, и побыстрее!"
+ fund_inspiration.6531.b.tt:0 "Вы приказываете персонажу [inspiration_owner.GetTitledFirstName] немедленно вернуться к путешествию."
+ fund_inspiration.6531.b.success:0 "[inspiration_owner.GetTitledFirstName] достаточно [Select_CString(inspiration_owner.IsFemale, 'напугана', 'напуган' )], чтобы снова отправиться на поиски"
+ fund_inspiration.6531.b.failure:0 "[inspiration_owner.GetTitledFirstName] не [Select_CString(inspiration_owner.IsFemale, 'впечатлена', 'впечатлён' )]"
 
  #Adventurer in the Barrow Downs
 
- fund_inspiration.6532.t:0 "$fund_inspiration.title$ The Barrow-Downs"
- fund_inspiration.6532.introduction:0 "I receive a letter from my adventurer, who has been roaming the no-man's lands of Cardolan."
- fund_inspiration.6532.desc:0 "\n\n'My [ROOT.Char.GetTitleAsNameNoTooltip], I have reached a series of hills that the locals call "Barrow-Downs". Though it looks perfectly ordinary in the sun, my heart warns me against it.\n\nNight fell as I arrived in front of the entrance to the largest mound. You can probably guess what I did...'"
- fund_inspiration.6532.a:0 "[inspiration_owner.GetSheHe|U]'d better have searched it thoroughly!"
- fund_inspiration.6532.a.success:0 "[inspiration_owner.GetTitledFirstName] searched the barrow without incident"
- fund_inspiration.6532.a.failure:0 "[inspiration_owner.GetTitledFirstName] was terrified by what he found, and fled"
- fund_inspiration.6532.a.dead:0 "[inspiration_owner.GetTitledFirstName] was never seen again"
- fund_inspiration.6532.b:0 "I hope [inspiration_owner.GetSheHe] didn't do anything foolish"
- 
+ fund_inspiration.6532.t:0 "$fund_inspiration.title$ Могильники"
+ fund_inspiration.6532.introduction:0 "Я получаю письмо от моего авантюриста, что бродит по ничейным землям Кардолана."
+ fund_inspiration.6532.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], я [Select_CString(inspiration_owner.IsFemale, 'добралась', 'добрался' )] до ряда холмов, которые местные жители называют «Могильниками». Хотя на солнце они выглядят совершенно обычно, моё сердце предостерегает меня от этого.\n\nНаступила ночь, когда я [Select_CString(inspiration_owner.IsFemale, 'оказалась', 'оказался' )] перед входом в самый большой курган. Вы, наверное, догадываетесь, что я [Select_CString(inspiration_owner.IsFemale, 'сделала', 'сделал' )]...»"
+ fund_inspiration.6532.a:0 "Лучше бы [inspiration_owner.GetSheHe] тщательно [Select_CString(inspiration_owner.IsFemale, 'обыскала', 'обыскал' )] его!"
+ fund_inspiration.6532.a.success:0 "[inspiration_owner.GetTitledFirstName] обыскивает курган без происшествий"
+ fund_inspiration.6532.a.failure:0 "[inspiration_owner.GetTitledFirstName] в ужасе от найденного и [Select_CString(inspiration_owner.IsFemale, 'сбежала', 'сбежал' )]"
+ fund_inspiration.6532.a.dead:0 "[inspiration_owner.GetTitledFirstName] [Select_CString(inspiration_owner.IsFemale, 'пропала', 'пропал' )]"
+ fund_inspiration.6532.b:0 "Надеюсь, [inspiration_owner.GetSheHe] не [Select_CString(inspiration_owner.IsFemale, 'натворила', 'натворил' )] глупостей"
+
  #Overground adventurer lost underground
 
- fund_inspiration.6533.t:0 "$fund_inspiration.title$ Alone In The Dark"
- fund_inspiration.6533.introduction:0 "I receive a letter from my adventurer, smudged with clay, written in a shaky hand."
- fund_inspiration.6533.desc:0 "\n\n'I have been wandering underground for what feels like an eternity. I have lost any sense of time and am at a loss, in front of yet another cross-roads in these endless halls. I hear nothing but the sound of my footsteps and the distant echo of a war-drum. I am utterly lost, and the oil in my lantern is almost gone. Will I ever find a way out?'\n\nIn a steadier hand, a note says 'I finally made it out, you can probably guess how I did it.'"
- fund_inspiration.6533.a:0 "You forged ahead followed your nose"
- fund_inspiration.6533.a.success:0 "[inspiration_owner.GetTitledFirstName] found [inspiration_owner.GetHerHis] way out"
- fund_inspiration.6533.a.success.gem:0 "[inspiration_owner.GetTitledFirstName] found a precious gem on their way"
- fund_inspiration.6533.a.failure:0 "[inspiration_owner.GetTitledFirstName] followed the road into a dead-end"
- fund_inspiration.6533.b:0 "You turned around and went back"
- fund_inspiration.6533.b.success:0 "[inspiration_owner.GetTitledFirstName] retraces [inspiration_owner.GetHerHis] steps succesfully"
- fund_inspiration.6533.b.failure:0 "[inspiration_owner.GetTitledFirstName] got lost on the way back"
+ fund_inspiration.6533.t:0 "$fund_inspiration.title$ [Select_CString(inspiration_owner.IsFemale, 'Одна', 'Один' )] во тьме"
+ fund_inspiration.6533.introduction:0 "Я получаю письмо от своего авантюриста, измазанное глиной и написанное трясущейся рукой."
+ fund_inspiration.6533.desc:0 "\n\n«Я блуждаю под землёй уже, кажется, целую вечность. Я [Select_CString(inspiration_owner.IsFemale, 'потеряла', 'потерял' )] всякое чувство времени и нахожусь в растерянности перед очередным перекрестком в этих бесконечных залах. Я не слышу ничего, кроме звука своих шагов и отдалённого эха военного барабана. Я окончательно [Select_CString(inspiration_owner.IsFemale, 'заблудилась', 'заблудился' )], а масло в моем фонаре почти закончилось. Найду ли я когда-нибудь выход?»\n\nБолее твердой рукой написана записка: «Я наконец-то [Select_CString(inspiration_owner.IsFemale, 'выбралась', 'выбрался' )], и вы, наверное, догадываетесь, как я это [Select_CString(inspiration_owner.IsFemale, 'сделала', 'сделал' )]»."
+ fund_inspiration.6533.a:0 "Вы шли вперёд, следуя своему чутью."
+ fund_inspiration.6533.a.success:0 "[inspiration_owner.GetTitledFirstName] [Select_CString(inspiration_owner.IsFemale, 'нашла', 'нашёл' )] выход"
+ fund_inspiration.6533.a.success.gem:0 "[inspiration_owner.GetTitledFirstName] [Select_CString(inspiration_owner.IsFemale, 'нашла', 'нашёл' )] драгоценный самоцвет на своём пути"
+ fund_inspiration.6533.a.failure:0 "[inspiration_owner.GetTitledFirstName] [Select_CString(inspiration_owner.IsFemale, 'пошла', 'пошёл' )] по дороге, ведущей в тупик"
+ fund_inspiration.6533.b:0 "Вы развернулись и пошли обратно"
+ fund_inspiration.6533.b.success:0 "[inspiration_owner.GetTitledFirstName] успешно [Select_CString(inspiration_owner.IsFemale, 'проследила', 'проследил' )] свой путь"
+ fund_inspiration.6533.b.failure:0 "[inspiration_owner.GetTitledFirstName] [Select_CString(inspiration_owner.IsFemale, 'заблудилась', 'заблудился' )] на обратном пути"
 
 
  #Artifact modifications: dedication
@@ -1289,9 +1289,9 @@
  fund_inspiration.7110.g.tt:0 "Ваш артефакт может получить модификатор мнения придворных."
  #Artifact modification: choose modifiers - sculptures and thrones
  fund_inspiration.7120.a:0 "Узаконить мою власть."
-  
+
  fund_inspiration.7120.a.tt:0 "Ваш артефакт может получить модификатор недолгого правления."
-  
+
  #Alchemy
  fund_inspiration.8001.t:0 "$fund_inspiration.title$ Интерес к металлу"
  fund_inspiration.8001.desc:0 "Я замечаю, как [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] склоняется над сосудом с занятным желтым порошком. Вокруг все завалено кусками пергамента и образцами какой-то руды.\n\n«[ROOT.Char.GetLadyLord|U]! Прошу вас, взгляните. Видите, как сера меняет цвет? Это признак трансмутации. В результате можно получить серебро или даже золото! А вот здесь, видите, как она взаимодействует с ртутью? Потрясающе... А вот это руда, она мышьяковистая, а это значит... простите, [ROOT.Char.GetLadyLord]. Столько всего надо изучить! Возможно, даже слишком много»."
@@ -1303,13 +1303,13 @@
  fund_inspiration.8001.c.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] посвятит свои изыскания ртути"
  fund_inspiration.8001.d:0 "Говорите, мышьяк?"
  fund_inspiration.8001.d.tt:0 "[inspiration_owner.GetTitledFirstNameNoTooltip] посвятит свои изыскания мышьяку"
-  
+
  fund_inspiration.8011.t:0 "$fund_inspiration.title$ Золотые мечты"
  fund_inspiration.8011.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] [Select_CString(inspiration_owner.IsFemale, 'пригласила', 'пригласил' )] меня в свою лабораторию, безостановочно рассуждая о прорыве в своих исследованиях.\n\n«[ROOT.Char.GetLadyLord|U], вы здесь! Отлично. Прошу вас, выпейте», — [inspiration_owner.GetFirstNameNoTooltip] провожает меня в комнату и отводит к столу, заваленному пергаментом и сосудами. Из одного из таких сосудов, содержащего в себе золотистого цвета жидкость, [inspiration_owner.GetSheHe] и просит меня испить. «Разумеется, работа еще не завершена, но полученный результат #EMP должен#! возыметь поразительный эффект!»\n\nНесколько часов ожидания, и я не ощущаю ничего, кроме головной боли, тошноты и головокружения."
  fund_inspiration.8011.a:0 "Надеюсь, этот фарс дал вам что-то стоящее."
  fund_inspiration.8011.b:0 "Бросьте [Select_CString(inspiration_owner.IsFemale, 'эту шарлатанку', 'этого шарлатана' )] в темницу!"
  fund_inspiration.8011.c:0 "Вы посмели отравить меня?! На виселицу!"
-  
+
  fund_inspiration.8012.t:0 "$fund_inspiration.title$ Церковь и шарлатаны"
  fund_inspiration.8012.desc:0 "Прислонившись к столу, я слушаю, как мой алхимик [inspiration_owner.GetTitledFirstName] рассказывает про свой недавний опыт, как вдруг в комнату врывается [court_chaplain.Custom2('MyCharacterIntroduction', ROOT.Char)].\n\n«Значит, это правда, и вы #EMP действительно#! проводите время в обществе [Select_CString(inspiration_owner.IsFemale, 'этой... этой', 'этого... этого' )] #EMP [Select_CString(inspiration_owner.IsFemale, 'язычницы', 'язычника' )]#!!» — [court_chaplain.GetFirstNameNoTooltip] окидывает взглядом чаши и иллюстрации, разложенные перед нами, и [court_chaplain.GetHerHis] взгляд становится еще холоднее.\n\n«Этому нужно положить конец, [ROOT.Char.GetLadyLord]. [Select_CString(inspiration_owner.IsFemale, 'Эта шарлатанка', 'Этот шарлатан' )] сбивает вас с пути истинного!»"
  fund_inspiration.8012.a:0 "Это правда? Как вы могли?! Прочь из моих земель."
@@ -1317,7 +1317,7 @@
  fund_inspiration.8012.b.success:0 "[court_chaplain.GetFirstNameNoTooltip] верит вам"
  fund_inspiration.8012.b.failure:0 "[court_chaplain.GetFirstNameNoTooltip] не [Select_CString(court_chaplain.IsFemale, 'убеждена', 'убежден' )]"
  fund_inspiration.8012.c:0 "[inspiration_owner.GetSheHe|U] точно этого не делает."
-  
+
  fund_inspiration.8013.t:0 "$fund_inspiration.title$ Алхимическое сокровище"
  fund_inspiration.8013.desc:0 "«[ROOT.Char.GetLadyLord|U]», — мой алхимик практически врезается в меня, светясь от радости, словно ребенок.\n\n«Я [Select_CString(inspiration_owner.IsFemale, 'нашла', 'нашел' )] эту книгу на рынке во владении [barony_market.GetName]. Ее авторство приписывается Джабиру ибн Хайяну — величайшему алхимику! Во всяком случае, так сказал торговец.... Неважно, просто представьте, какие бесценные знания в ней таятся!»"
  fund_inspiration.8013.a:0 "Спасибо, я изучу ее."
@@ -1325,29 +1325,29 @@
  fund_inspiration.8013.b:0 "Наверняка вы с умом воспользуетесь ею."
  fund_inspiration.8013.b_tt:0 "Книгу забирает [inspiration_owner.GetShortUINameNoTooltip]"
  fund_inspiration.8013.c:0 "Какая удачная находка! Наверняка ее можно с выгодой продать."
-  
+
  fund_inspiration.8014.t:0 "$fund_inspiration.title$ [inspiration_owner.GetWomanMan|U]-философ"
  fund_inspiration.8014.desc:0 "[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] в принципе не проводит экспериментов и не ведет записей. [inspiration_owner.GetSheHe|U] просто сидит у окна и сутки напролет смотрит в него.\n\nКогда я требую знать, за что именно плачу, [inspiration_owner.GetSheHe] просто пожимает плечами и указывает рукой на окно. «Я размышляю о природе мира, [ROOT.Char.GetLadyLord]. Мир большой, тут есть над чем подумать!»"
  fund_inspiration.8014.a:0 "Я плачу вам не за то, чтобы вы просто сидели тут!"
  fund_inspiration.8014.b:0 "Не спешите."
  fund_inspiration.8014.c:0 "Я не стану тратить свое золото на подобную чепуху!"
  fund_inspiration.8014.c.tt:0 "Вы продаете все купленное алхимическое оборудование"
-  
+
  fund_inspiration.8015.t:0 "$fund_inspiration.title$ Скорбь"
  fund_inspiration.8015.desc:0 "«Алхимик властен над всей материей и способен творить чудеса, так чем же отличается жизнь? Чем отличается [loved_one.GetFirstName]?!»\n\n[inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)|U] просто покачивает головой, не зная, чем ответить на мое горе. В чем польза науки, если она не может исполнить мое единственное желание?\n\n«Я не в силах сотворить подобное чудо, [ROOT.Char.GetLadyLord]. Но я знаю, что слушатель сам по себе может стать чудом в борьбе с печалью. Пожалуйста, присядьте»."
  fund_inspiration.8015.a:0 "Но... я... Вы правы. Спасибо."
  fund_inspiration.8015.b:0 "Нет. Вы вернете мне [loved_one.GetHerHis]!"
  fund_inspiration.8015.b.tt:0 "[inspiration_owner.GetShortUINameNoTooltip] попытается совершить невозможное"
-  
+
  fund_inspiration.8016.desc:0 "Я словно на крыльях лечу в лабораторию, где работает [inspiration_owner.GetTitledFirstName]. О [loved_one.GetFirstName], наконец-то я снова увижу тебя! Но когда [inspiration_owner.GetTitledFirstNameNoTooltip] открывает дверь, мое сердце уходит в пятки от одного только взгляда на [inspiration_owner.GetHerHis] лицо. И почему [inspiration_owner.GetSheHe] не дает мне заглянуть в комнату?\n\n«Я [Select_CString(inspiration_owner.IsFemale, 'подвела', 'подвел' )] вас, [ROOT.Char.GetLadyLord]. Пожалуйста, не...»\n\nОттолкнув [inspiration_owner.GetHerHis], я врываюсь в лабораторию, и моим глазам предстает... нечто, уму не постижимое. Сухожилия, куски мяса, порошки и травы, и все это покрыто кровью и разложено в центре начерченного на полу круга. И все это венчает локон волос, точь-в-точь таких же, какие [Select_CString(loved_one.IsFemale, 'имела', 'имел' )] [loved_one.GetFirstNameNoTooltip]."
  fund_inspiration.8016.a:0 "Я... меня сейчас стошнит."
  fund_inspiration.8016.b:0 "Вы посмели насмехаться над моей скорбью? Стража! Взять [inspiration_owner.GetHerHis]!"
-  
+
  fund_inspiration.8017.t:0 "$fund_inspiration.title$ Объединение умов"
  fund_inspiration.8017.desc:0 "Я замечаю, что [inspiration_owner.Custom2('MyCharacterIntroduction', ROOT.Char)] и [court_tutor.Custom2('MyCharacterIntroduction', ROOT.Char)] склонились над столом, сравнивая между собой что-то, внешне напоминающее просто кучу камней.\n\n«Видите, — говорит [inspiration_owner.GetFirstNameNoTooltip], — когда вы нагреваете этот порошок, он сначала чернеет, но #EMP потом#!... Добрый день, [ROOT.Char.GetLadyLord]».\n\n[court_tutor.GetFirstNameNoTooltip] смотрит на меня и [Select_CString(court_tutor.IsFemale, 'ей', 'ему' )] хватает совести изобразить смущение. Вообще-то [court_tutor.GetSheHe] [Select_CString(court_tutor.IsFemale, 'должна', 'должен' )] готовиться к завтрашним лекциям."
  fund_inspiration.8017.a:0 "Хорошо, что вы делитесь знаниями."
  fund_inspiration.8017.b:0 "Как вам не стыдно, возвращайтесь к работе!"
-  
+
  fund_inspiration.9000.t:0 "$fund_inspiration.title$ Бандиты на дороге"
  fund_inspiration.9000.desc:0 "«Сюзерен, искатель приключений [adventurer.GetFirstName] пишет вам послание!» — объявляет слуга, держа в руках письмо.\n\n«Десять дней и ночей наш отряд скрывается. Предводитель местных разбойников, [bandit.GetFirstName], стоит у нас на пути. Каков будет ваш совет? Проявить осторожность? Или атаковать в надежде, что [adventurer.GetFaith.HighGodName] защитит нас? Подписано собственноручно, [adventurer.GetFirstName]», — гласит послание.\n\nПохоже [adventurer.GetSheHe] в затруднительном положении."
  fund_inspiration.9000.a:0 "Продолжайте прятаться, рано или поздно бандиты уйдут."
@@ -1362,7 +1362,7 @@
  fund_inspiration.9000.a.critical_success:0 "[adventurer.GetFirstNameNoTooltip] сбегает под покровом ночи... и крадет бандитское золото"
  fund_inspiration.9000.a.success:0 "[adventurer.GetFirstNameNoTooltip] сбегает под покровом ночи"
  fund_inspiration.9000.a.failure:0 "[adventurer.GetFirstNameNoTooltip] [Select_CString(adventurer.IsFemale, 'схвачена', 'схвачен' )] при попытке проскользнуть через лагерь"
-  
+
  fund_inspiration.9100.t:0 "$fund_inspiration.title$: [background_wilderness_scope.Custom('TerrainTypeProvince')|U] и [adventurer.Custom('GetAnimalPlural')|U], что там обитают. До чего [adventurer.Custom('GetAnimalAdjective')|U] зверь!.."
  fund_inspiration.9100.desc:0 "«Сюзерен, искатель приключений [adventurer.GetFirstName] пишет вам послание!» — объявляет слуга, вручая мне свиток.\n\n«Поиски привели меня во владение [background_wilderness_scope.GetName], где повсюду [background_wilderness_scope.Custom('TerrainTypeProvince')]. Еще здесь за каждым кустом [adventurer.Custom('GetAnimalType')], но у меня есть причины считать, что я почти у цели! Ожидайте моего скорого возвращения. Подписано собственноручно, [adventurer.GetFirstNameNoTooltip]», — гласит свиток.\n\n[adventurer.GetSheHe|U] не [Select_CString(adventurer.IsFemale, 'лишена', 'лишен' )] амбиций, раз [Select_CString(adventurer.IsFemale, 'выбрала', 'выбрал' )] такой опасный путь..."
  fund_inspiration.9100.a:0 "[adventurer.GetFirstNameNoTooltip] знает, что делает, и сможет сберечь себя..."
