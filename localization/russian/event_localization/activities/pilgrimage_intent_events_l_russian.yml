@@ -1,5 +1,5 @@
 ﻿l_russian:
-  # Missionary, console a local 
+ #Missionary, console a local
  pilgrimage_intent.1000.t:0 "$zealotry_intent_header$ Кризис веры"
  pilgrimage_intent.1000.desc:0 "Продолжая свой путь в святые места, я [Select_CString(ROOT.Char.IsFemale, 'повстречала', 'повстречал' )] у дороги [Select_CString(sad_peasant.IsFemale, 'женщину', 'мужчину' )] в грязи и слезах.\n\n«Ну, теперь-то ты радуешься? У меня больше ничего нет! Как мне жить в мире, которым правит такое жестокое создание, как [sad_peasant.GetFaith.HighGodName|U]?»\n\nОчевидно, [Select_CString(sad_peasant.IsFemale, 'она', 'он' )] в отчаянии и переживает кризис веры."
  pilgrimage_intent.1000.a:0 "«[ROOT.Char.GetFaith.HealthGodName|U] — вот ответ на твои вопросы»."
@@ -14,7 +14,7 @@
  pilgrimage_intent.1000.b.not_joined.t:0 "Приглашение отклонено"
  pilgrimage_intent.1000.b.not_joined.desc:0 "[Select_CString(sad_peasant.IsFemale, 'Она', 'Он' )] не [Select_CString(sad_peasant.IsFemale, 'убеждена', 'убежден' )]"
  pilgrimage_intent.1000.c:0 "Это слезы, что роняет [ROOT.Char.GetFaith.TricksterGodName|U]."
-  # Missionary, convert a child 
+ #Missionary, convert a child
  pilgrimage_intent.1001.t:0 "$zealotry_intent_header$ Впечатлительная молодежь"
  pilgrimage_intent.1001.desc:0 "На своем пути в святые места мы уже видели немало странных верований. Кругом [ROOT.Char.GetCurrentLocation.GetName], и мы замечаем группку детей, играющих на обочине.\n\nДети сразу же прекращают игру и смотрят на нас с любопытством, как на какую-то диковину. Неужто [ROOT.Char.GetFaith.GetAdherentNameNoTooltip] для них в новинку? Один ребенок явно из благородной семьи. Возможно, [ROOT.Char.GetFaith.ReligiousText] впечатлит его?"
  pilgrimage_intent.1001.a:0 "«Я научу тебя»."
@@ -23,7 +23,7 @@
  pilgrimage_intent.1001.a.conversion_failed.t:0 "$pilgrimage_intent.1000.a.conversion_failed.t$"
  pilgrimage_intent.1001.a.conversion_failed.desc:0 "Вам не удается обратить ребенка в свою веру"
  pilgrimage_intent.1001.b:0 "Идем дальше."
-  # Local courtier is passing by, convert them and bring them on your pilgrimage! 
+ #Local courtier is passing by, convert them and bring them on your pilgrimage!
  pilgrimage_intent.1010.t:0 "$zealotry_intent_header$ Проходящие мимо путники"
  pilgrimage_intent.1010.desc:0 "Мы продолжаем свой путь. Кругом [ROOT.Char.GetCurrentLocation.GetName]. Мы устали, наши ноги болят.\n\nВпереди мы замечаем [Select_CString(convertable_courtier.IsFemale, 'придворную аристократку', 'придворного аристократа' )]. [Select_CString(convertable_courtier.IsFemale, 'она', 'он' )] подъезжает к нам.\n\n«Мне кажется, ты [Select_CString(ROOT.Char.IsFemale, 'заблудилась', 'заблудился' )]. Это же [ROOT.Char.GetCurrentLocation.GetNameNoTooltip], что здесь может делать [ROOT.Char.GetFaith.GetAdherentNameNoTooltip]?»"
  pilgrimage_intent.1010.a:0 "«Мы идем в святые места. Присоединяйся к нам»."
@@ -32,7 +32,7 @@
  pilgrimage_intent.1010.a.conversion_failed.t:0 "$pilgrimage_intent.1000.a.conversion_failed.t$"
  pilgrimage_intent.1010.a.conversion_failed.desc:0 "Вы не смогли обратить [Select_CString(convertable_courtier.IsFemale, 'ее', 'его' )] в свою веру."
  pilgrimage_intent.1010.b:0 "«Тебя это не касается!»"
-  # Fellow pilgrims of a different faith are on your path 
+ #Fellow pilgrims of a different faith are on your path
  pilgrimage_intent.1020.t:0 "$zealotry_intent_header$ Незнакомые паломники"
  pilgrimage_intent.1020.desc:0 "Нам в пути повстречалось много паломников [ROOT.Char.GetFaith.GetNameNoTooltip]ой веры, все они были набожны, и [ROOT.Char.GetFaith.HighGodName|U] для них важнее всего.\n\nВскоре, однако, мы наткнулись на группу странных путников из далеких земель. Они представились, как [pilgrim_character.GetFaith.GetAdherentNamePlural|l], и сказали, что этот путь священен и для них."
  pilgrimage_intent.1020.a:0 "«Лишь [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip|l] могут идти по этому пути»."
@@ -43,14 +43,14 @@
  pilgrimage_intent.1020.b:0 "«Расскажите, что для вас значит [pilgrim_character.GetFaith.HighGodName|U]»."
  pilgrimage_intent.1020.c:0 "Мы с ними похожи. Пусть они пойдут с нами!"
  cheaper_to_convert_to_pilgrim_faith_tt:0 "Вы получите #P 50%#! скидку на обращение в [THIS.Char.GetFaith.GetAdjective|l]"
-  # You see a particularly calming clearing along your way and stop to meditate 
+ #You see a particularly calming clearing along your way and stop to meditate
  pilgrimage_intent.1030.t:0 "$reflections_intent_header$ Спокойная поляна"
  pilgrimage_intent.1030.desc:0 "Вокруг меня [ROOT.Char.GetCurrentLocation.GetName], и здесь, на обочине тихой тропы, я чувствую такой мир и спокойствие, каких не чувствовал никогда раньше.\n\nЗа небольшим перевалом показалась полянка, куда словно бы десятилетия не ступала ничья нога. Я чувствую здесь присутствие [ROOT.Char.GetFaith.HighGodNamePossessive|U]. Возможно, стоит задержаться на этой полянке для размышлений и созерцания."
  pilgrimage_intent.1030.desc_sea:0 "Здесь, в море, когда стоит спокойная погода, а на горизонте не видно и полоски суши, тебя охватывают тишина и покой. Присутствие [ROOT.Char.GetFaith.HighGodNamePossessive|U] особенно сильно ощущается здесь, и оно переполняет меня.\n\nВозможно, мы должны воспользоваться случаем задержаться здесь подольше, чтобы спокойно предаваться размышлениям?"
  pilgrimage_intent.1030.a:0 "Этого хочет [ROOT.Char.GetFaith.HighGodName|U]."
  pilgrimage_intent.1030.b:0 "Задерживаться нельзя!"
   
-  # You spot an animal, follow it for an omen? 
+ #You spot an animal, follow it for an omen?
  pilgrimage_intent.1040.t:0 "$reflections_intent_header$ Вещий зверь"
  pilgrimage_intent.1040.desc.intro:0 "Мы идем по священному пути, но вдруг нам приходится остановиться — перед нами на дорогу выходит зверь."
  pilgrimage_intent.1040.desc.mid.pred:0 "Это [ROOT.Char.Custom('GetAnimalType')|l]. Могучий зверь стоит между мной и святой землей."
@@ -60,32 +60,32 @@
  pilgrimage.you_lose_the_animal.t:0 "Зверь потерян"
  pilgrimage.you_lose_the_animal.desc:0 "[ROOT.Char.Custom('GetAnimalType')|U] скрывается из виду."
  pilgrimage_intent.1040.b:0 "Нельзя отвлекаться."
-  # Good omen (predator) 
+ #Good omen (predator)
  pilgrimage_intent.1041.t:0 "Вещий зверь: удачная охота"
  pilgrimage_intent.1041.desc.intro:0 "Я прилежно следую за зверем, делая все, чтобы [ROOT.Char.Custom('GetAnimalType')] не [Select_CString(ROOT.Char.IsFemale, 'заметила', 'заметил' )] меня. В итоге зверь обнаруживает добычу — маленькую птичку."
  pilgrimage_intent.1041.desc.mid:0 "[ROOT.Char.Custom('GetAnimalType')|U] атакует и молниеносно разрывает птичку на части, превращая в облачко перьев."
  pilgrimage_intent.1041.desc.outro:0 "\n\nЧто мне хочет сказать этим [ROOT.Char.GetFaith.HighGodName|U]?"
  pilgrimage_intent.1041.a:0 "Я преуспею в войнах!"
  pilgrimage_intent.1041.b:0 "Мои враги падут предо мной!"
-  # Bad omen (predator) 
+ #Bad omen (predator)
  pilgrimage_intent.1042.t:0 "Вещий зверь: неудачная охота"
  pilgrimage_intent.1042.desc.mid:0 "[ROOT.Char.Custom('GetAnimalType')|U] выжидает удачного момента и бросается на птицу, но та ускользает и улетает."
  pilgrimage_intent.1042.a:0 "Я [ROOT.Char.Custom('GetAnimalType')|l], и мои враги одолеют меня."
  pilgrimage_intent.1042.b:0 "Я птица, и я избегну дурной судьбы!"
-  # Good omen (prey) 
+ #Good omen (prey)
  pilgrimage_intent.1043.t:0 "Вещий зверь: счастливая семья"
  pilgrimage_intent.1043.desc.intro:0 "[ROOT.Char.Custom('GetAnimalType')|U] уходит все дальше, и я следую за животным, стараясь не спугнуть. Вскоре на просеке к объекту моей слежки присоединяется другое животное. Вероятно, они — пара?\n\n"
  pilgrimage_intent.1043.desc.mid:0 "Два зверя слегка бодаются лбами, затем начинают обнюхивать друг друга и вместе исчезают в зарослях."
  pilgrimage_intent.1043.a:0 "У меня скоро будет ребенок!"
  pilgrimage_intent.1043.b:0 "Я обращу своих врагов в друзей."
  pilgrimage_intent.1043.c:0 "Нужно ставить на первое место семью."
-  # Bad omen (prey) 
+ #Bad omen (prey)
  pilgrimage_intent.1044.t:0 "Вещий зверь: мрачное зрелище"
  pilgrimage_intent.1044.desc.mid:0 "Два зверя приближаются друг к другу, но прежде чем они успевают встретиться, из ниоткуда выпрыгивает темная фигура и разрывает животное в кровавые клочья прямо на глазах у партнера."
  pilgrimage_intent.1044.a:0 "Меня подстерегает опасность!"
  pilgrimage_intent.1044.b:0 "Я уничтожу своих врагов так, что они и не заметят!"
  you_follow_the_animal_tt:0 "Вы следуете за животным дальше..."
-  # You stop to contemplate on your age 
+ #You stop to contemplate on your age
  pilgrimage_intent.1050.t:0 "$reflections_intent_header$ Мирские размышления"
  pilgrimage_intent.1050.desc.intro:0 "По пути в святую землю мне попадались самые разные паломники, как юные, так и старые. Передо мной словно встают картины из моей собственной жизни.\n\n"
  pilgrimage_intent.1050.desc.mid.old:0 "Седые волосы, морщинистая кожа — все это казалось таким далеким, пока не пришло лично ко мне. Я не могу удержаться от чувства, что это паломничество может стать для меня последним, а потом — [ROOT.Char.GetFaith.PositiveAfterLife|U]."
@@ -95,7 +95,7 @@
  pilgrimage_intent.1050.a:0 "Я возьму от оставшейся жизни все."
  pilgrimage_intent.1050.b:0 "У меня еще так много всего впереди!"
  pilgrimage_intent.1050.c:0 "От этих идей у меня болит сердце."
-  # You stop to contemplate ancient civilizations 
+ #You stop to contemplate ancient civilizations
  pilgrimage_intent.1060.t:0 "$reflections_intent_header$ Империи минувших лет"
  pilgrimage_intent.1060.desc.intro:0 "На этом пути мне часто попадались напоминания о тех, кто был здесь до меня.\n\nКругом [ROOT.Char.GetCurrentLocation.GetNameNoTooltip],"
  #pilgrimage_intent.1060.desc.mid.rome:0 "и мне встретились останки святилища древнеримского пантеона. [GetFaithByKey('hellenic_pagan').FertilityGodName|U] во всей свое красоте улыбается мне надтреснутым ртом, а лицо [GetFaithByKey('hellenic_pagan').HighGodNamePossessive] разъедено почти до неузнаваемости."
@@ -104,14 +104,14 @@
  pilgrimage_intent.1060.desc.mid.persia:0 "и мне попадаются осколки древних цивилизаций сасанидов, парфян и селевкидов. Бесчисленное множество империй зарождалось и умирало здесь, в Персии, сама же Персия осталась. По всей стране приходят в запустение зороастрийские храмы, и, быть может, однажды даже наши священные города обратятся в пыль."
  pilgrimage_intent.1060.desc.mid.ashokas_pillars:0 "и я нахожу еще одну из колонн Ашоки, воздвигнутых в давние времена. Все они исписаны эдиктами, что много сотен лет назад издал император Ашока. Эти дхармические монументы расставлены по всей территории империи Маурьев, сама же империя рассыпалась в прах."
  pilgrimage_intent.1060.desc.mid.kush:0 "и я вижу остатки многих империй, появлявшихся и исчезавших здесь, вдоль Нила. Пирамиды царства Куш, аксумские храмы — куда ни кинь взгляд, всюду здесь обломки прошлого."
-  
-  # Ancient LotR empires 
- pilgrimage_intent.1060.desc.mid.gondor:0 "Я заметил много заброшенных сторожевых башен [gondorian|E], которые теперь обветрились и рушатся. Хотя Южное Королевство еще может существовать, оно утратило былую благодать."
- pilgrimage_intent.1060.desc.mid.southernconfederacy:0 "Я наткнулся на большой каменный квадрат, частично утонувший в песках. Это место восходит к Южной Конфедерации, Конфедерации племен [haradrim|E], которая процветала во времена Золотого века [gondor|E]. Он давно распался из-за междоусобиц, и пути племен разошлись, остались только руины мест встреч, где разные племена собирались вместе для переговоров и дискуссий."
- pilgrimage_intent.1060.desc.mid.numenor:0 "Я наткнулся на развалины руин [numenorean|E], давно заброшенных и безмолвных. [downfallofnumenor|E] оказал огромное влияние на судьбу [middleearth|E], и его наследие, несомненно, ощущается до сих пор."
- pilgrimage_intent.1060.desc.mid.rhun:0 "Я продолжаю находить напоминания о древнем Шрелдоре, Наездниках на Колесницах и Балкотах. Бесчисленные империи пришли и ушли сюда в [rhun|E], но пустые равнины остались. Старые рунские храмы стоят в запустении по всей стране, и, возможно, однажды даже наши священные города рассыплются в прах."
-  
-  
+
+ # Ancient LotR empires
+ pilgrimage_intent.1060.desc.mid.gondor:0 "и я замечаю много заброшенных [Concept( 'gondorian', 'гондорских' )|E] сторожевых башен, которые теперь обветрились и рушатся. Хотя Южное королевство всё ещё существует, оно утратило былую благодать."
+ pilgrimage_intent.1060.desc.mid.southernconfederacy:0 "и я натыкаюсь на большой каменный квадрат, частично утонувший в песках. Это место восходит к Южной конфедерации, конфедерации племён [haradrim|El], которая процветала во времена Золотого века [Concept( 'gondor', 'Гондора' )|E]. Она давно распалась из-за междоусобиц, и пути племён разошлись, остались только руины мест встреч, где разные племена собирались вместе для переговоров и дискуссий."
+ pilgrimage_intent.1060.desc.mid.numenor:0 "и я натыкаюсь на развалины [Concept( 'numenorean', 'нуменорских' )|E] руин, давно заброшенных и безмолвных. [downfallofnumenor|E] оказало огромное влияние на судьбу [Concept( 'middleearth', 'Средиземья' )|E], и его наследие, несомненно, ощущается до сих пор."
+ pilgrimage_intent.1060.desc.mid.rhun:0 "и я продолжаю находить напоминания о древнем Сзрелдоре, Людей Повозок и балхот. Бесчисленные империи возвышались и распадались здесь, в [Concept( 'rhun', 'Руне' )|E], но всё же пустые равнины остались. Старые рунские храмы стоят в запустении по всей стране, и, возможно, однажды даже наши священные города рассыплются в прах."
+
+
  pilgrimage_intent.1060.desc.mid.fallback:0 "и я вижу, что осталось от тех, кто населял эту землю задолго до нас. Старые храмы, сломанное оружие, осколки каких-то уже неузнаваемых предметов. Время побеждает все. И наши божества, и то, как мы им поклоняемся, — все это постоянно меняется."
  pilgrimage_intent.1060.desc.outro:0 "\n\nВозможно, однажды кто-нибудь другой пройдет этим путем и будет размышлять: вот когда-то здесь [Select_CString(ROOT.Char.IsFemale, 'правила', 'правил' )] [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] и процветало [ROOT.Char.GetFaith.GetAdjectiveNoTooltip|l]."
  pilgrimage_intent.1060.a:0 "Я буду размышлять о старых империях."
@@ -128,13 +128,13 @@
  pilgrimage.godly_meditation.desc:0 "Вы размышляете о божественной природе"
  pilgrimage.failed_contemplation.t:0 "Бесплодное размышление"
  pilgrimage.failed_contemplation.desc:0 "Ваши размышления не дали результатов"
-  #Personal reflections 
+ #Personal reflections
  pilgrimage_intent.1100.t:0 "$reflections_intent_header$ Звездное небо"
  pilgrimage_intent.1100.desc:0 "Глубокой ночью, вдали от всего, я иногда размышляю, глядя на звезды. В чем смысл жизни?\n\nВидят ли меня [ROOT.Char.GetFaith.PantheonTerm], когда я так далеко от дома? Зачем я все это делаю?"
  pilgrimage_intent.1100.a:0 "Конечно же, это мой священный долг!"
  pilgrimage_intent.1100.b:0 "Чего я по-настоящему хочу, так это познать и изучить другие культуры."
  pilgrimage_intent.1100.c:0 "Я не делаю ничего сверх того, что требуется на моем посту."
-  #Sea legs 
+ #Sea legs
  pilgrimage_intent.1110.t:0 "Привычка к морю"
  pilgrimage_intent.1110.t_altruism:0 "$altruism_intent_header$ $pilgrimage_intent.1110.t$"
  pilgrimage_intent.1110.t_reflection:0 "$reflections_intent_header$ $pilgrimage_intent.1110.t$"
@@ -148,7 +148,7 @@
  pilgrimage_intent.1110.c:0 "Нужно помолиться об исцелении."
  pilgrimage_intent.1110.d:0 "У меня должны быть травы на этот случай."
  pilgrimage_intent.1110.e:0 "Хорошо, что не я на [Select_CString(affected_pilgrim.IsFemale, 'ее', 'его' )] месте."
-  #A local heathen is smitten with one of your entourage members and asks to marry them 
+ #A local heathen is smitten with one of your entourage members and asks to marry them
  pilgrimage_intent.9000.t:0 "$zealotry_intent_header$ Языческая любовь"
  pilgrimage_intent.9000.desc:0 "[background_market_scope.GetName]. На местном рынке мы видим [Select_CString(smitten_heathen.IsFemale, 'знакомую нам женщину', 'знакомого нам мужчину' )], что идет за нами уже несколько дней.\n\nГлядя на меня умоляющим взором, [smitten_heathen.GetSheHe] восклицает: «[Select_CString(ROOT.Char.IsFemale, 'Моя госпожа', 'мой господин' )], [Select_CString(entourage_to_marry_2.IsFemale, 'твоя', 'твой' )], [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('entourage_to_marry_2'))], [entourage_to_marry_2.GetFirstName], — полюбит ли [Select_CString(entourage_to_marry_2.IsFemale, 'она', 'он' )] меня когда-нибудь? Ведь [Select_CString(entourage_to_marry_2.IsFemale, 'она', 'он' )] [entourage_to_marry_2.GetFaith.GetAdherentName|l], а я исповедую [smitten_heathen.GetFaith.GetAdjective|l]. Есть ли у меня шанс?»\n\n[Select_CString(smitten_heathen.IsFemale, 'Вопрошающая явно влюблена', 'Вопрошающий явно влюблен' )] до безумия, [entourage_to_marry_2.GetFirstNameNoTooltip] же не выказывает особого энтузиазма. Что скажет [ROOT.Char.GetFaith.HighGodName] о таком союзе?"
  pilgrimage_intent.9000.seducer:0 "Сейчас я покажу тебе, как надо!"
