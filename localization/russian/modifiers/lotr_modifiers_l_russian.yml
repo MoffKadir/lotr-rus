@@ -13,11 +13,13 @@
  TOO_YOUNG_TO_MARRY:0 "[secondary_recipient.GetShortUIName|U] ещё слишком [Select_CString(secondary_recipient.IsFemale, 'молода', 'молод' )], чтобы [Select_CString(secondary_recipient.IsFemale, 'выходить замуж', 'жениться' )]: $VALUE|=+0$"
 
  offer_vassalization_interaction_aibehavior_different_religion_tt:0 "У вас другая [religion|El]: $VALUE|=+0$"
-
+ offer_vassalization_interaction_aibehavior_different_race_tt:0 "У вас другая [conceptrace|El]: $VALUE|=+0$"
+ offer_vassalization_interaction_aibehavior_dunedain_chief_tt:0 "Вожди [dunedain|El] не преклоняют колен: $VALUE|=+0$"
 
  offer_vassalization_khand_vracarath_tt:0 "Вы правите державой $e_khand$: $VALUE|=+0$"
  offer_vassalization_lower_khand_vracarath_tt:0 "Вы правите державой $k_lower_khand$: $VALUE|=+0$"
  offer_vassalization_upper_khand_vracarath_tt:0 "Вы правите державой $k_upper_khand$: $VALUE|=+0$"
+
 
  WESTRON_LINGUA_FRANCA:0 "Общепринятый язык в западных землях: $VALUE|=+0$"
 
@@ -396,6 +398,12 @@
 # Modifier gets applied to wilderness counties if settler has above ^^^ modifier
  arnor_settler_influx:0 "Приток поселенцев"
  arnor_settler_influx_desc:0 "Из-за увеличения численности населения этой державе всё легче [Concept('colonise', 'колонизировать')|E] [Concept('wilderness', 'дикие земли')|E]"
+
+ banned_bear_fighting:0 "Запрет медвежьих боёв"
+ banned_bear_fighting_desc:0 "Население провинции [obstacle_province.GetName] возмущено недавним запретом на проведение медвежьих боёв в ямах."
+
+ permitted_bear_fighting:0 "Разрешённые медвежьи бои"
+ permitted_bear_fighting_desc:0 "Население провинции [obstacle_province.GetName] радо узакониванию проведения медвежьих боёв в ямах."
 
 # Terrain
  halls_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ под землёй ([terrain|E])"
