@@ -180,6 +180,9 @@
  ritual_suicide_decision_tooltip:0 "Вы совершите самоубийство, добровольно отдав свою жизнь."
  ritual_suicide_decision_confirm:0 "В горе мы уходим, но не в отчаянии!"
 
+ lotr_lay_down_life_decision:0 "Уйти из жизни"
+ lotr_lay_down_life_decision_desc:0 "Моя жизнь была долгой и насыщенной, но мне не суждено было стать [Select_CString(ROOT.Char.IsFemale, 'вечной', 'вечным' )]. Я [Select_CString(ROOT.Char.IsFemale, 'выбрала', 'выбрал' )] смертную жизнь и смертную судьбу. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] уйти из жизни и позволить править следующему поколению."
+
  ########################
  ### Gondor Decisions ###
  ########################
@@ -1261,7 +1264,6 @@
  decision_gorge_on_food_confirm:0 "Ом-ном-ном!"
 
  ###################################
- ######### Balrog Struggle #########
  ###################################
 
  balrog_struggle_ending_decision_correct_involvement_tt:1 "Вы [Concept( 'struggle_involved', 'участвуете в' )|E] [Concept( 'balrog_struggle', 'борьбе с Проклятием Дурина' )|E]"
@@ -1272,10 +1274,12 @@
  struggle_balrog_ending_kill_balrog_confirm:0 "Багровый огонь не поможет тебе, Пламя Удуна!"
  struggle_balrog_ending_kill_balrog_decision_correct_phase_tt:0 "$balrog_struggle_ending_decision_correct_involvement_tt$ и текущая [struggle_phase|El] - [struggle_balrog_phase_dormant|E]"
  struggle_balrog_ending_kill_balrog_strong_friend:0 "У вас есть [friend|El]-[Concept( 'elven', 'эльф' )|E] или [maiargods|E], чья [prowess|El] равна или выше [prowess_i|E]30"
- struggle_balrog_ending_kill_balrog_decision_effect_1:0 "Вы попытаетесь убить балрога. На шанс успеха влияют следующие факторы, вплоть до 50%:\n$BULLET_WITH_TAB$Высокий показатель [Concept( 'prowess', 'доблести' )|E] и [Concept( 'martial', 'военного дела' )|E].\n$BULLET_WITH_TAB$Количество контролируемых провинции в пределах [Concept( 'moria', 'Мории' )|E].\n$BULLET_WITH_TAB$Наличие [Concept( 'friend', 'друга' )|E]-эльфа\n$BULLET_WITH_TAB$Владение Шлемом Дурина ([artifact|El])"
-
+ struggle_balrog_ending_kill_balrog_decision_effect_1:0 "Вы попытаетесь убить [Concept( 'balrog', 'балрога' )|E]. На шанс успеха влияют следующие факторы, вплоть до 50%:\n$BULLET_WITH_TAB$Высокий показатель [Concept( 'prowess', 'доблести' )|E] и [Concept( 'martial', 'военного дела' )|E].\n$BULLET_WITH_TAB$Количество контролируемых провинции в пределах [Concept( 'struggle_region', 'области борьбы' )|E].\n$BULLET_WITH_TAB$Наличие [Concept( 'friend', 'друга' )|E]-эльфа\n$BULLET_WITH_TAB$Владение Шлемом Дурина ([artifact|El])"
+ struggle_balrog_ending_kill_balrog_decision_effect_2:0 "Если вы #N потерпите неудачу#!, вы #N ПОГИБНЕТЕ!#!"
+ struggle_balrog_ending_kill_balrog_decision_effect_3:0 "Если вы #P добьётесь успеха#!, вы всё равно можете #N погибнуть#!, и тогда произойдёт следующее:\n"
+ struggle_balrog_ending_kill_balrog_decision_effect_4:0 "[balrog_struggle|E] подойдёт к концу"
  struggle_balrog_ending_serve_balrog:0 "Служить балрогу"
- struggle_balrog_ending_serve_balrog_desc:0 "[balrog|E] слишком могуч, чтобы с ним бороться. Но мы научились обходить его стороной и даже иногда использовать в своих интересах. Если мы официально оформим наши отношения и построим наше государство на служении Балрогу, возможно, мы сможем прийти к какому-то сосуществованию."
+ struggle_balrog_ending_serve_balrog_desc:0 "[balrog|E] слишком могуч, чтобы с ним бороться. Но мы научились обходить его стороной и даже иногда использовать в своих интересах. Если мы официально оформим наши отношения и построим наше государство на служении балрогу, возможно, мы сможем прийти к какому-то сосуществованию."
  struggle_balrog_ending_serve_balrog_confirm:0 "Мы будем служить тёмному пламени!"
  struggle_balrog_ending_serve_balrog_tooltip:0 "Вы попытаетесь служить Балрогу"
  struggle_balrog_ending_serve_balrog_decision_correct_phase_tt:0 "$balrog_struggle_ending_decision_correct_involvement_tt$ и текущая [struggle_phase|El] - [struggle_balrog_phase_active|E]"
@@ -1283,9 +1287,9 @@
  struggle_balrog_ending_serve_balrog_decision_consolidated_realm:0 "В [Concept( 'struggle_region', 'области борьбы' )|E] нет других [Concept( 'independent_ruler', 'независимых правителей' )|E] с [Concept( 'orc', 'орочьей' )|E] [Concept( 'culture', 'культурой' )|E]"
  struggle_balrog_ending_serve_balrog_minimum_piety:0 "[piety_level|E] не ниже, чем [GetModifier( 'piety_level_4' ).GetNameWithTooltip|L]"
  struggle_balrog_ending_serve_balrog_no_dwarf_counties:0 "В [Concept( 'struggle_region', 'области борьбы' )|E] нет [Concept( 'counties', 'графств' )|E] с [Concept( 'dwarf', 'гномьей' )|E] [Concept( 'culture', 'культурой' )|E]"
- struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_1:0 "Вы попытаетесь установить мирное сосуществование с балрогом с помощью [diplomacy_i|E] [Concept( 'diplomacy', 'дипломатии' )|E] или [learning_i|E] [Concept( 'learning', 'учёности' )|E]."
- struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_2:0 "Если вы преуспеете, то получите [title|El] [Concept( 'empire', 'империи' )|E], станете неуязвимы для негативных событий балрога в ходе [Concept( 'struggle', 'борьбы' )|E], получите уникальных [Concept( 'men_at_arms', 'профессионалов' )|E], станете [Concept( 'head_of_faith', 'главой конфессии' )|E], а балрог будет время от времени выдвигать вам требования."
- struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_3:0 "В случае неудачи вы погибнете."
+ struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_1:0 "Вы попытаетесь установить сосуществование с [Concept( 'balrog', 'балрогом' )|E] с помощью [Concept( 'skill', 'навыков' )|E] [diplomacy_i|E] [Concept( 'diplomacy', 'дипломатии' )|E] или [learning_i|E] [Concept( 'learning', 'учёности' )|E]."
+ struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_2:0 "Если вы преуспеете, то получите [title|El] [Concept( 'empire', 'империи' )|E], станете неуязвимы для негативных событий [Concept( 'balrog', 'балрога' )|E] в ходе [Concept( 'struggle', 'борьбы' )|E], получите уникальных [Concept( 'men_at_arms', 'профессионалов' )|E], станете [Concept( 'head_of_faith', 'главой конфессии' )|E], а балрог будет время от времени выдвигать вам требования."
+ struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_3:0 "В случае неудачи вы #N ПОГИБНЕТЕ!#!."
  struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_4:0 "Независимо от исхода, [struggle|El] продолжится."
 
  ##########################
