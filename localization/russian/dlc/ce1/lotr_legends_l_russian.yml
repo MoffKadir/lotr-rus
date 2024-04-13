@@ -4,9 +4,6 @@
  ### Pre-Existing (Always available) Legend Seeds ####
  #####################################################
 
- ### Ask to promote legend interaction
- lotr_legend_recipient_opposite_alignment_tt:0 "[recipient.GetFirstNameNoTooltip] придерживается иного мировоззрения."
-
  ### Legitimacy Legends ###
 
  legend_castamir:0 "Наследники Кастамира"
@@ -35,7 +32,7 @@
  must_be_just_august_administrator_tt:0 "У вас должно быть одно из следующих свойств: [GetTrait('just').GetName(GetNullCharacter)], [GetTrait('august').GetName(GetNullCharacter)] или [GetTrait('administrator').GetName(GetNullCharacter)]."
 
  legend_shoreborn:0 "Отпрыски Великого моря"
- legend_shoreborn_desc:0 "От Андраста до Дреля наши флоты промышляют грабежом. Но есть и другая причина, по которой наше имя знают и боятся все, кто живёт у берегов. Многие называют [greatsea|E] своим домом, но мы - истинные азриялайцы. Мы - отпрыски самого [Concept( 'belegaer', 'Белегаэра' )|E], зачатые и выброшенные на берег Малициамом и Юнинез в их страстной борьбе!"
+ legend_shoreborn_desc:0 "От Андраста до Дреля наши флоты промышляют грабежом. Но есть и другая причина, по которой наше имя знают и боятся все, кто живёт у берегов. Многие называют [greatsea|E] своим домом, но мы - истинные азриялайцы. Мы - отпрыски самого [Concept( 'belegaer_sea', 'Белегаэра' )|E], зачатые и выброшенные на берег Малициамом и Юнинез в их страстной борьбе!"
 
  legend_serkhoz:0 "Наследники Шеркоза"
  legend_serkhoz_desc:0 "Шеркоз Великий, известный недостойным слабакам как [ancestor.GetFirstNameNicknamed], был славным основателем первой и самой могущественной из держав [Concept( 'rhun', 'Руна' )|E], империи [title.GetNameNoTier]. Его держава господствовало над внутренним [Concept( 'seaofrhun', 'Морем Рун' )|E] и все народы степи трепетали и выражали почтение ему и его дому. Именно он отнял богатые земли [Concept( 'dorwinion', 'Дорвиниона' )|E] у их недостойных хозяев, сразил древесных демонов и распространил весть об Истинном боге."
@@ -47,7 +44,7 @@
  legend_bahharkan_desc:0 "В жилах этой династии течёт кровь благословенного Бахаркана, первого короля державы [title.GetNameNoTier]."
 
  legend_blanco:0 "Кровь Бланко"
- legend_blanco_desc:0 "[ancestor.GetFirstName] был [Concept( 'hobbits', 'хоббитом' )|E] из Бри из племени Светлоликов, который вместе со своим братом Марко привёл Мохноногов в то место, которое стало известно как Шир, и получил разрешение короля Аргелеба II поселиться там."
+ legend_blanco_desc:0 "Бланко был [Concept( 'hobbits', 'хоббитом' )|E] из Бри из племени Светлоликов, который вместе со своим братом Марко привёл Мохноногов в то место, которое стало известно как Шир, и получил разрешение короля Аргелеба II поселиться там."
 
  legend_gerontius:0 "Кровь Старого Тука"
  legend_gerontius_desc:0 "[ancestor.GetFirstName] Тук был очень старым и уважаемым таном Шира. Известный своими многочисленными детьми, преклонным возрастом и долгим пребыванием на посту тана, Геронтиус является прямым предком многих известных [Concept( 'hobbits', 'хоббитов' )|E]."
@@ -129,15 +126,17 @@
  legend_durinIII_desc:0 "[ancestor.GetFirstNameRegnal] правил [Concept('khazaddum', 'Кхазад-думом')|E] во времена его расцвета и был хорошим другом [Concept('celebrimbor', 'Келебримбора')|E] и [Concept('elves', 'эльфов')|E] [Concept('eregion', 'Эрегиона')|E]. Когда [sauroncharacter|E] раскрыл свою истинную природу и разрушил Эрегион, Дурин послал великую армию гномов, чтобы почтить эту дружбу. И хотя он не смог спасти самого Келебримбора, благодаря его защите беженцы сумели отступить в [imladris|E]."
 
  legend_telchar:0 "Благословенные руки Тельхара"
- legend_telchar_desc:0 "Говорят, когда [ancestor.GetFirstName] выковал свой первый молот, [mahalcharacter|E] посмотрел на его работу и остался доволен. После этого Создатель благословил его руки мастерством, недоступным смертным, с помощью которого он создавал чудеса из металлов и драгоценных камней. О его величайших творениях ходят легенды: Драконий шлем Дор-ломина, кинжал Ангрист, срезавший [silmaril|E] с железной короны [Concept('morgothcharacter', 'Моргота')|E], и меч [narsil|E], повергший [Concept('sauronthedarklordcharacter', 'Тёмного Властелина Саурона')|E]."
+ legend_telchar_desc:0 "Говорят, когда Тельхар выковал свой первый молот, [mahalcharacter|E] посмотрел на его работу и остался доволен. После этого Создатель благословил его руки мастерством, недоступным смертным, с помощью которого он создавал чудеса из металлов и драгоценных камней. О его величайших творениях ходят легенды: Драконий шлем Дор-ломина, кинжал Ангрист, срезавший [silmaril|E] с железной короны [Concept('morgothcharacter', 'Моргота')|E], и меч [narsil|E], повергший [Concept('sauronthedarklordcharacter', 'Тёмного Властелина Саурона')|E]."
 
  legend_narvi:0 "Благословенные руки Нарви"
- legend_narvi_desc:0 "[ancestor.GetFirstName] был мастером, творившим чудеса как из металла, так и из камня. С ним заговорил [mahalcharacter|E] и вдохновил его на создание чудес в [Concept('khazaddum', 'Кхазад-думе')|E]. С помощью других учеников Создателя, [noldorelves|El] [Concept('eregion', 'Эрегиона')|E], он изобрёл итильдин - металл, отражающий только свет луны и звёзд. Они использовал его для украшения великих врат, возведённых для Дварроудельфа. Открытые для друзей, но непроницаемые для чужаков."
-
+ legend_narvi_desc:0 "Нарви был мастером, творившим чудеса как из металла, так и из камня. С ним заговорил [mahalcharacter|E] и вдохновил его на создание чудес в [Concept('khazaddum', 'Кхазад-думе')|E]. С помощью других учеников Создателя, [noldorelves|El] [Concept('eregion', 'Эрегиона')|E], он изобрёл итильдин - металл, отражающий только свет луны и звёзд. Они использовал его для украшения великих врат, возведённых для Дварроудельфа. Открытые для друзей, но непроницаемые для чужаков."
 
  ############################
  ### Legends you can Earn ###
  ############################
+
+ legend_elven_descent_name:0 "Эльфийская кровь"
+ legend_elven_descent_desc:0 "Среди моих предков есть [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')], прекрасный и могучий эльф."
 
  legend_of_ovatha_name:0 "Наследие [Select_CString(founder.IsFemale, 'королевы Овайжи', 'короля Оваты' )]" #[founder.GetFirstNameRegnal]
  legend_of_ovatha_desc:0 "[founder.GetFirstNameNicknamedRegnal] вновь [Select_CString(founder.IsFemale, 'объединила', 'объединил' )] вариагов [Concept('khand', 'Кханда')|E] и [Select_CString(founder.IsFemale, 'стала последней', 'стал последним' )] в длинной череде избранных правителей, продолжая наследие Оваты I." #[founder.GetTitleAsNameNoTooltip|U]
@@ -156,6 +155,64 @@
 
  legend_balrog_warlord_name:0 "Вестники Тёмного Пламени"
  legend_balrog_warlord_desc:0 "[founder.GetFirstNameNicknamedRegnal] [Select_CString(founder.IsFemale, 'столкнулась', 'столкнулся' )] с [Concept('balrog', 'балрогом')|E] в глубинах [Concept('moria', 'Мории')|E]. Воплощение Тёмного Пламени сочло [ROOT.Legend.GetProtagonist.GetHerHis] [Select_CString(founder.IsFemale, 'достойной стать вестницей, призванной', 'достойным стать вестником, призванным' )] нести огонь и смерть всему [Concept('middleearth', 'Средиземью')|E]."
+
+ reached_westernesse_legend:0 "Blessed Voyage to Westernesse"
+ reached_anadune_legend:0 "Great Voyage to Anadûnê"
+ reached_numenor_legend:0 "Blessed Voyage to Númenor"
+ reached_numenor_legend_desc:0 "[founder.GetFirstName] went on a long and dangerous voyage across the [belegaer_sea|E] and achieved the impossible: [founder.GetSheHe|U] found the last remnant of the lost isle of [numenor|E] and beheld it from afar. Thought lost in the [downfall|E], the peak of the [meneltarma|E] remains above the waves, a tragic reminder of the folly of [men|E]."
+
+ climbed_meneltarma_legend:0 "Last Ascent of the Meneltarma"
+ climbed_meneltarma_legend_desc:0 "[founder.GetFirstName] went on a long and dangerous voyage across the [belegaer_sea|E] and achieved the impossible: [founder.GetSheHe|U] found the peak of the [meneltarma|E], the last remnant of the lost isle of [numenor|E], and ascended the Holy Mountain, knowing [founder.GetSheHe] would be the last of the [numenorean|E] to ever witness its beauty. On its peak, [founder.GetSheHe] received a vision of [aman|E]."
+
+ # Legend chapters
+ legend_chapter_discovery_befriended_troll:0 "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'проявила', 'проявил' )] себя как друг всех экзотических и необычных странников, подружившись даже с огромным раздражительным троллем!"
+ legend_chapter_discovery_troll:0 "Во время своих путешествий [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'она повстречала', 'он повстречал' )] самых необычных и экзотических людей, даже доказав существование могучих троллей!"
+
+ legend_chapter_opening_inspiring_hero:0 "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'вдохновилась', 'вдохновился' )] великими деяниями такой легендарной личности, как [ROOT.Legend.Custom('GetAncestorNamePossessiveNoTooltip')]. На примере одного из величайших героев древности, стоит ли сомневаться, что [ROOT.Legend.GetProtagonist.GetSheHe] совершит множество великих дел?"
+ legend_chapter_motivation_inspiring_hero:0 "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] никогда не [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'сомневалась', 'сомневался' )] в том, что [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ей', 'ему' )] предстояло совершить такой подвиг, который сравнится с незапятнанной славой, которой покрыл себя [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')]. Вскоре все поймут, что раса героев вернулась в [middleearth|E]."
+ legend_chapter_extra_deed_inspiring_hero:0 "Точно так же, как сражались [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')] и коварный [Localize( antagonist )], [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'сражалась и отгоняла', 'сражался и отгонял' )] разбойников, бандитов и чудищ, терзающих жизнь мирных подданных под [ROOT.Legend.GetProtagonist.GetHerHis] защитой."
+ legend_chapter_conclusion_inspiring_hero:0 "Путешествие было полным опасностей, но учитывая, сколь многое [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'сделала', 'сделал' )] для своего народа, какие могут быть сомнения, что [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm|U] избрали [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] для правления? Всюду, и в городах, и в скромных лачугах, все в едином порыве восклицают «[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]»!"
+
+ legend_chapter_opening_elven_descent:0 "Как и все представители семейства [ROOT.Legend.GetProtagonist.GetDynastyNameNoTooltip] до [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'нее', 'него' )], [ROOT.Legend.GetProtagonist.GetNameNoTooltip] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'была рождена', 'был рожден' )] с той же [Concept( 'elven', 'эльфийской' )|E] кровью, что и [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')]. Столь необычное происхождение возвышает [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] над прочими и обрекает на величие."
+ legend_chapter_famous_deed_elven_descent:0 "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'была ранена', 'был ранен' )] в великом сражении со злодеем, который посмел оспорить [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] происхождение, и [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] [Concept( 'elven', 'эльфийская' )|E] кровь пролилась на поле боя. Кровь сияла и переливалась подобно самоцветам, и всего через несколько дней негостеприимная земля проросла великолепными цветами, невиданными ранее за пределами эльфийских земель."
+ legend_chapter_extra_deed_elven_descent:0 "Но история на этом не закончилась, ибо многие продолжали сомневаться в божественности [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] крови. Воспользовавшись своим могуществом, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'обрушила', 'обрушил' )] на сомневающихся полчища зверей, заполнив их дворцы и дома лаем и криками, ибо [ROOT.Legend.GetProtagonist.GetSheHe], подобно своим [Concept( 'elven', 'эльфийским' )|E] родичам, [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'могла', 'мог' )] говорить с ними на их языке."
+
+ legend_chapter_opening_sailed_to_numenor:0 "The [ROOT.Legend.GetProperty( 'founder' ).Char.GetDynastyNameNoTooltip] were the greatest sailors of the [thirdage|E], for one of their own successfully charted a course to [numenor|E] using an ancient [numenorean|E] map, and then sailed to the last remnant of the lost isle."
+
+ legend_chapter_motivation_sailed_to_numenor:0 "The legend of [ROOT.Legend.GetProtagonist.GetNameNoTooltip] began at home, where [ROOT.Legend.GetProtagonist.GetSheHe] received a vision of the lost isle of [numenor|E]. [ROOT.Legend.GetProtagonist.GetSheHe] soon set out to find the lost isle, ancestral home of [ROOT.Legend.GetProtagonist.GetHerHis] forefathers. As [ROOT.Legend.GetProtagonist.GetSheHe] was a great and mighty sailor, [ROOT.Legend.GetProtagonist.GetSheHe] successfully charted a course using an ancient [numenorean|E] map and set sail."
+ legend_chapter_famous_deed_sailed_to_numenor:0 "In the culmination of this grand journey, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] found the ancient isle and [ROOT.Legend.GetProtagonist.GetHerHis] crew cheered as they perceived the remnant of long lost [numenor|E]. Seeing [ROOT.Legend.GetProtagonist.GetHerHis] peoples' ancient home, lost since the [downfall|E], warmed [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip]'s heart and reinvigorated [ROOT.Legend.GetProtagonist.GetHerHis] soul."
+ legend_chapter_extra_deed_sailed_to_numenor:0 "During a tumultuous thunderstorm, far out on the [belegaer_sea|E], [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] encountered ten terrible sea serpents, whom they defeated in a grand naval battle."
+ legend_chapter_conclusion_sailed_to_numenor:0 "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] would never forget this legendary journey to [numenor|E], for it forever changed [ROOT.Legend.GetProtagonist.GetHerHis] life."
+
+ legend_chapter_famous_deed_climbed_the_meneltarma:0 "[ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] legend culminates in their great naval journey across the Great Sea, to find the lost isle of [numenor|E]. Amazingly, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] found the ancient isle. But [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] did not stop there, and set foot on the sacred shores, to ascend the [meneltarma|E]. [ROOT.Legend.GetProtagonist.GetHerHis] holy pilgrimage ended at the summit of the Holy Mountain, where the [valargods|E] granted [ROOT.Legend.GetProtagonist.GetHerHim] a vision of [aman|E]."
+
+ ### Additional Event Loc/ Tooltips ###
+
+ lotr_legend_recipient_opposite_alignment_tt:0 "[recipient.GetFirstNameNoTooltip] придерживается иного мировоззрения."
+
+ legend_events.0001.desc.mid.elven_descent:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|U], я [Select_CString(chronicler.IsFemale, 'просмотрела', 'просмотрел' )] записи и [Select_CString(chronicler.IsFemale, 'нашла', 'нашёл' )] информацию, что [Select_CString(legend_character.IsFemale, '[Concept( 'elven', 'эльфийская' )|E] дворянка', '[Concept( 'elven', 'эльфийский' )|E] дворянин' )] [legend_character.GetName] действительно является [Select_CString(legend_character.IsFemale, 'основательницей', 'основателем' )] вашей линии!"
+
+ lotr_legend_spread_events.5210.t: "Огромный разбойник"
+ lotr_legend_spread_events.5210.desc: "«Это правда? — [ROOT.Char.Custom('GetWritingMaterial')] опять заканчивается, и [chronicler.GetFirstName] тянется, чтобы достать еще, и, пользуясь перерывом, задает вопрос. — Говорят, вы повстречали весьма мерзкое существо».\n\n«До меня доходили слухи, что это было массивное создание с одним глазом. Могучий тролль!»"
+ lotr_legend_spread_events.5210.a: "И оно приняло меня за другого тролля!"
+
+ unlock_beren_legend_tt:0 "Доступна [legend_seed|El] $legend_beren$"
+ unlock_turin_legend_tt:0 "Доступна [legend_seed|El] $legend_turin$"
+ unlock_tuor_legend_tt:0 "Доступна [legend_seed|El] $legend_tuor$"
+
+ balrog_slayer_legend.tt:0 "Вы получите [Concept( 'legend_mythical', 'мифическую' )|E] [Concept( 'legend_seed', 'зарождающуюся легенду' )|E] «Убийца балрога»!"
+ balrog_warlord_legend.tt:0 "Вы получите [Concept( 'legend_mythical', 'мифическую' )|E] [Concept( 'legend_seed', 'зарождающуюся легенду' )|E] «Вестники Тёмного Пламени»!"
+ legend_spread_events.0010.balrog:0 "БАЛРОГ!"
+
+ ### Legend Properties ###
+ glaurung:0 "Глаурунг"
+ sauron:0 "[sauroncharacter|E]"
+ morgoth:0 "[morgothcharacter|E]"
+ thevalar:0 "[valargods|E]"
+ bolg:0 "Больг"
+ wulf:0 "Вульф"
+ carcharoth: "Кархарот"
+ forcesofmorgoth: "полчища [Concept( 'morgothcharacter', 'Моргота' )|E]"
 
  # Legendary locations
  lotr_great_eagles:0 "Гнездо Великих Орлов"
@@ -196,42 +253,4 @@
  lotr_yellow_mountains:0 "Жёлтые горы"
  lotr_echoing_mountains:0 "Перекликающиеся горы"
  lotr_red_mountains:0 "Красные горы"
-
-
- # Legend chapters
- legend_chapter_discovery_befriended_troll:0 "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'проявила', 'проявил' )] себя как друг всех экзотических и необычных странников, подружившись даже с огромным раздражительным троллем!"
- legend_chapter_discovery_troll:0 "Во время своих путешествий [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'она повстречала', 'он повстречал' )] самых необычных и экзотических людей, даже доказав существование могучих троллей!"
-
- legend_chapter_opening_inspiring_hero:0 "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'вдохновилась', 'вдохновился' )] великими деяниями такой легендарной личности, как [ROOT.Legend.Custom('GetAncestorNamePossessiveNoTooltip')]. На примере одного из величайших героев древности, стоит ли сомневаться, что [ROOT.Legend.GetProtagonist.GetSheHe] совершит множество великих дел?"
- legend_chapter_motivation_inspiring_hero:0 "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] никогда не [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'сомневалась', 'сомневался' )] в том, что [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ей', 'ему' )] предстояло совершить такой подвиг, который сравнится с незапятнанной славой, которой покрыл себя [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')]. Вскоре все поймут, что раса героев вернулась в [middleearth|E]."
- legend_chapter_extra_deed_inspiring_hero:0 "Точно так же, как сражались [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')] и коварный [Localize( antagonist )], [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'сражалась и отгоняла', 'сражался и отгонял' )] разбойников, бандитов и чудищ, терзающих жизнь мирных подданных под [ROOT.Legend.GetProtagonist.GetHerHis] защитой."
- legend_chapter_conclusion_inspiring_hero:0 "Путешествие было полным опасностей, но учитывая, сколь многое [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'сделала', 'сделал' )] для своего народа, какие могут быть сомнения, что [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm|U] избрали [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] для правления? Всюду, и в городах, и в скромных лачугах, все в едином порыве восклицают «[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]»!"
-
- legend_elven_descent_name:0 "Эльфийская кровь"
- legend_elven_descent_desc:0 "Среди моих предков есть [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')], могучий эльф."
- legend_chapter_opening_elven_descent:0 "Как и все представители семейства [ROOT.Legend.GetProtagonist.GetDynastyNameNoTooltip] до [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'нее', 'него' )], [ROOT.Legend.GetProtagonist.GetNameNoTooltip] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'была рождена', 'был рожден' )] с той же [Concept( 'elven', 'эльфийской' )|E] кровью, что и [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')]. Столь необычное происхождение возвышает [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] над прочими и обрекает на величие."
- legend_chapter_famous_deed_elven_descent:0 "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'была ранена', 'был ранен' )] в великом сражении со злодеем, который посмел оспорить [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] происхождение, и [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] [Concept( 'elven', 'эльфийская' )|E] кровь пролилась на поле боя. Кровь сияла и переливалась подобно самоцветам, и всего через несколько дней негостеприимная земля проросла великолепными цветами, невиданными ранее за пределами эльфийских земель."
- legend_chapter_extra_deed_elven_descent:0 "Но история на этом не закончилась, ибо многие продолжали сомневаться в божественности [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'ее', 'его' )] крови. Воспользовавшись своим могуществом, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'обрушила', 'обрушил' )] на сомневающихся полчища зверей, заполнив их дворцы и дома лаем и криками, ибо [ROOT.Legend.GetProtagonist.GetSheHe], подобно своим [Concept( 'elven', 'эльфийским' )|E] родичам, [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'могла', 'мог' )] говорить с ними на их языке."
- legend_events.0001.desc.mid.elven_descent:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|U], я [Select_CString(chronicler.IsFemale, 'просмотрела', 'просмотрел' )] записи и [Select_CString(chronicler.IsFemale, 'нашла', 'нашёл' )] информацию, что [Select_CString(legend_character.IsFemale, '[Concept( 'elven', 'эльфийская' )|E] дворянка', '[Concept( 'elven', 'эльфийский' )|E] дворянин' )] [legend_character.GetName] действительно является [Select_CString(legend_character.IsFemale, 'основательницей', 'основателем' )] вашей линии!"
-
- lotr_legend_spread_events.5210.t: "Огромный разбойник"
- lotr_legend_spread_events.5210.desc: "«Это правда? — [ROOT.Char.Custom('GetWritingMaterial')] опять заканчивается, и [chronicler.GetFirstName] тянется, чтобы достать еще, и, пользуясь перерывом, задает вопрос. — Говорят, вы повстречали весьма мерзкое существо».\n\n«До меня доходили слухи, что это было массивное создание с одним глазом. Могучий тролль!»"
- lotr_legend_spread_events.5210.a: "И оно приняло меня за другого тролля!"
-
- #Legend Properties
- glaurung:0 "Глаурунг"
- sauron:0 "[sauroncharacter|E]"
- morgoth:0 "[morgothcharacter|E]"
- thevalar:0 "[valargods|E]"
- bolg:0 "Больг"
- wulf:0 "Вульф"
- carcharoth: "Кархарот"
- forcesofmorgoth: "полчища [Concept( 'morgothcharacter', 'Моргота' )|E]"
-
- #Tooltips
- unlock_beren_legend_tt:0 "Доступна [legend_seed|El] $legend_beren$"
- unlock_turin_legend_tt:0 "Доступна [legend_seed|El] $legend_turin$"
- unlock_tuor_legend_tt:0 "Доступна [legend_seed|El] $legend_tuor$"
- balrog_slayer_legend.tt:0 "Вы получите [Concept( 'legend_mythical', 'мифическую' )|E] [Concept( 'legend_seed', 'зарождающуюся легенду' )|E] «Убийца балрога»!"
- balrog_warlord_legend.tt:0 "Вы получите [Concept( 'legend_mythical', 'мифическую' )|E] [Concept( 'legend_seed', 'зарождающуюся легенду' )|E] «Вестники Тёмного Пламени»!"
- legend_spread_events.0010.balrog:0 "БАЛРОГ!"
+ lotr_darkest_depths:0 "Непроглядная глубь"
