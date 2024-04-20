@@ -390,8 +390,23 @@
  deep_forest_travel_danger:0 "[Concept( 'travel_danger', 'Опасность' )|E]: [GetTerrain( 'deep_forest' ).GetName]"
  mallorn_forest_travel_danger:0 "[Concept( 'travel_danger', 'Опасность' )|E]: [GetTerrain( 'mallorn_forest' ).GetName]"
 
-### Wastelands modifiers
-# Aragorn gets this modifier if he defeats Sauron
+ ### Wastelands modifiers
+ fostered_hunt_clubs:0 "Wolf-hunting fostered"
+ fostered_hunt_clubs_desc:0 "Wolf-hunting was fostered in this province"
+ uncontrolled_hunting:0 "Uncontrolled Wolf-hunting"
+ uncontrolled_hunting_desc:0 "Wolf-hunting went out of control in this province during the settlement of this province"
+ ruled_by_bandits_modifier:0 "Ruled by bandits"
+ ruled_by_bandits_modifier_desc:0 "This province is controlled by bandits"
+ local_hero_gone:0 "Local hero gone"
+ local_hero_gone_desc:0 "You let a local hero gone from this province"
+ settlers_tempted:0 "Artifact temptation"
+ settlers_tempted_desc:0 "Settlers are tempted by ancient noldo artifacts in the region"
+
+ ### Ettenmoors
+ trolls_from_the_ettenmoors_modifier:0 "Trolls from the Ettenmoors!"
+ trolls_from_the_ettenmoors_modifier_desc:0 "This province has been raided by trolls from the Ettenmoors!"
+
+ # Aragorn gets this modifier if he defeats Sauron
  easy_arnor_settle:0 "Заселение дунэдайн"
  easy_arnor_settle_desc:0 "После поражения [Concept('sauroncharacter', 'Саурона')|E] численность дунэдайн начала расти."
 
@@ -405,7 +420,10 @@
  permitted_bear_fighting:0 "Разрешённые медвежьи бои"
  permitted_bear_fighting_desc:0 "Население провинции [obstacle_province.GetName] радо узакониванию проведения медвежьих боёв в ямах."
 
-# Terrain
+ fostered_wolf_hunting:0 "Wolf-hunter fosterer"
+ fostered_wolf_hunting_desc:0 "You foster hunts on wolves"
+
+ # Terrain
  halls_development_growth_factor:1 "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ под землёй ([terrain|E])"
  halls_tax_mult:1 "[taxes|E] с подземных [Concept('holding', 'владений')|E]"
 

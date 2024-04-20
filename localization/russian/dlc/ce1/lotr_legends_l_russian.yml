@@ -195,13 +195,17 @@
  lotr_legend_spread_events.5210.t:0 "Огромный разбойник"
  lotr_legend_spread_events.5210.desc:0 "«Это правда? — [ROOT.Char.Custom('GetWritingMaterial')] опять заканчивается, и [chronicler.GetFirstName] тянется, чтобы достать еще, и, пользуясь перерывом, задает вопрос. — Говорят, вы повстречали весьма мерзкое существо».\n\n«До меня доходили слухи, что это было массивное создание с одним глазом. Могучий тролль!»"
  lotr_legend_spread_events.5210.a:0 "И оно приняло меня за другого тролля!"
+ lotr_legend_spread_events.5420.desc: "[chronicler.GetFirstName] продолжает записывать все новые истории, которыми полнится [ROOT.Char.GetPromotedLegend.GetName], но затем останавливается, и на [Select_CString(chronicler.IsFemale, 'ее', 'его' )] губах появляется хитрая улыбка.\n\n«Мне доводилось слышать #EMP одну#! любопытную историю, — медленно начинает [Select_CString(chronicler.IsFemale, 'она', 'он' )]. — Хотите верьте, хотите нет, но в ней говорится о состязании по выпивке с энтом! Это же какой статью надо обладать, чтобы перепить такое создание! Возможно, наглядная демонстрация позволит мне в полной мере оценить подобный подвиг?»\n\nНе знаю, откуда взялась эта история, но моя гордость сразу дает о себе знать..."
+
+ lotr_legend_spread_events.5410.a: "«По ту сторону лежит великий континент, над которым не властны смерть и тлен...»"
+ legend_chapter_discovery_valinor: "В своих странствиях [ROOT.Legend.GetProtagonist.GetFirstName] [Select_CString(ROOT.Legend.GetProtagonist.IsFemale, 'обнаружила', 'обнаружил' )] земли, которые раньше считались лишь слухами. Мифический [valinor|E], земля [valargods|E], оказался не только настоящим, но еще и обитаемым! Легенды пополнились новой историей, героем которой является [ROOT.Legend.GetProtagonist.GetFirstName]."
 
  unlock_beren_legend_tt:0 "Доступна [legend_seed|El] $legend_beren$"
  unlock_turin_legend_tt:0 "Доступна [legend_seed|El] $legend_turin$"
  unlock_tuor_legend_tt:0 "Доступна [legend_seed|El] $legend_tuor$"
 
- balrog_slayer_legend.tt:0 "Вы получите [Concept( 'legend_mythical', 'мифическую' )|E] [Concept( 'legend_seed', 'зарождающуюся легенду' )|E] «Убийца балрога»!"
- balrog_warlord_legend.tt:0 "Вы получите [Concept( 'legend_mythical', 'мифическую' )|E] [Concept( 'legend_seed', 'зарождающуюся легенду' )|E] «Вестники Тёмного Пламени»!"
+ balrog_slayer_legend.tt:0 "Вы получите [Concept( 'legend_mythical', 'мифическую' )|E] [Concept( 'legend_seed', 'зарождающуюся легенду' )|E] «$legend_balrog_slayer_name$»!"
+ balrog_warlord_legend.tt:0 "Вы получите [Concept( 'legend_mythical', 'мифическую' )|E] [Concept( 'legend_seed', 'зарождающуюся легенду' )|E] «legend_balrog_warlord_name»!"
  legend_spread_events.0010.balrog:0 "БАЛРОГ!"
 
  ### Legend Properties ###
