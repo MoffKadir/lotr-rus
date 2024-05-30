@@ -1,5 +1,4 @@
 ﻿l_russian:
-
  ####################################
  ###### Overarching Categories ######
  ####################################
@@ -423,7 +422,8 @@
  game_concept_dwarffathersshort:0 "Праотцы"
  game_concept_dwarffathershort:0 "Праотец"
  game_concept_dwarffather:0 "Праотец гномов"
- game_concept_dwarffathers_desc:0 "Праотцы гномов - первые семь гномов, созданных [Concept('mahalcharacter', 'Махалом')|E] и наделённых душой [eru|E] при [Concept('dwarfcreation', 'создании гномов')|E]. \nПраотцами гномов являлись: \n\nДурин Бессмертный, праотец [Concept('longbeards', 'Длиннобородов')|E] \nОри Покрытый шрамами, праотец [Concept('firebeards', 'Огнебородов')|E] \nДвалин Мудрый, праотец [Concept('broadbeams', 'Широкозадов')|E] \nСиндри Богатый, праотец [Concept('ironfists', 'Железноруков')|E] \nТулин Стремительный, праотец [Concept('stiffbeards', 'Жесткобородов')|E] \nТрар Гордый, праотец [Concept('blacklocks', 'Черновласов')|E] \nБавор Холодный, праотец [Concept('stonefoots', 'Камненогов')|E]"
+ game_concept_dwarffathers_pluralshort:0 "Праотцы гномов"
+ game_concept_dwarffathers_desc:0 "Праотцы гномов - первые семь [Concept('dwarves', 'гномов')|E], созданных [Concept('mahalcharacter', 'Махалом')|E] и наделённых душой [eru|E] при [Concept('dwarfcreation', 'создании гномов')|E]. \nПраотцами гномов являлись: \n\nДурин Бессмертный, праотец [Concept('longbeards', 'Длиннобородов')|E] \nОри Покрытый шрамами, праотец [Concept('firebeards', 'Огнебородов')|E] \nДвалин Мудрый, праотец [Concept('broadbeams', 'Широкозадов')|E] \nСиндри Богатый, праотец [Concept('ironfists', 'Железноруков')|E] \nТулин Стремительный, праотец [Concept('stiffbeards', 'Жесткобородов')|E] \nТрар Гордый, праотец [Concept('blacklocks', 'Черновласов')|E] \nБавор Холодный, праотец [Concept('stonefoots', 'Камненогов')|E]"
 
  game_concept_durin:0 "Дурин"
  game_concept_durindeathless:0 "Дурин Бессмертный"
@@ -835,6 +835,7 @@
 
  game_concept_adunaic:0 "Адунаический"
  game_concept_adunai:0 "Адунай"
+ game_concept_adunaim:0 "Адунаим"
  game_concept_black_numenorean:0 "Чёрный нуменорец"
  game_concept_black_numenoreans:0 "Чёрные нуменорцы"
  game_concept_adunai_desc:0 "Адунайцы - это, с лингвистической точки зрения, эквивалент [Concept( 'numenorean', 'нуменорцев' )|E] в языке простонародья [Concept( 'numenor', 'Нуменора' )|E]: адунайском. Оба обозначают одну и ту же группу. На практике, однако, они относятся к двум связанным, но разным группам. Термин «[Concept( 'numenorean', 'нуменорцы' )|E]» используется для обозначения всех людей [Concept( 'numenor', 'Нуменора' )|E] до [Concept( 'downfallofnumenor', 'Низвержения' )|E], в то время как [adunai|El] используется для обозначения потомков [Concept( 'kingsmen', 'Людей Короля' )|E] после [Concept( 'downfallofnumenor', 'Низвержения Нуменора' )|E]. На вестроне их часто называют [Concept( 'black_numenoreans', 'чёрными нуменорцами' )|E], что является уничижительным термином.\n\n[adunai|E] - потомки [Concept( 'kingsmen', 'Людей Короля' )|E], заселивших обширную [Concept( 'numenorean', 'Нуменорскую' )|E] империю за пределами [Concept( 'westlands', 'земель Запада' )|E], таких как [umbar|E] и [anbalkumagan|E]. Хотя с самого начала они были гораздо более развиты, чем [Concept( 'conceptracemen', 'люди' )|E] [Concept( 'middleearth', 'Средиземья' )|E], и жили долго - хотя и короче, чем [dunedain|El] - их знания и культура убывали быстрее, расходясь на культуры-преемники, многие из которых полностью утратили благословение [Concept( 'numenor', 'Нуменора' )|E]."
@@ -1399,7 +1400,7 @@
  game_concept_additional_settlement_upkeep_desc:0 "Дополнительное содержание означает снижение ежемесячного дохода из-за владения большим количеством [Concept('settlement_holding', 'владений-поселений')|E].\n\nПравители могут #V забросить#! свои владения-поселения, если содержание начинает разрушать экономику [Concept('realm', 'державы')|E]"
  game_concept_settlement_holding_limit:0 "Текущие колонии"
  game_concept_gui_settlement_holding_limit:0 "Предел поселений"
- game_concept_settlement_holding_limit_desc:0 "Количество поселений, которыми [ruler|El] может владеть в определённый момент, определяется уровнем его титула.\n\nНапример:\n\n$EFFECT_LIST_BULLET$ #bold [count|E] #!может владеть 1 [Concept('settlement_holding', 'владением-поселением')|E] без повышения [Concept('additional_settlement_upkeep', 'дополнительного содержания')|E] поселения.\n\n$EFFECT_LIST_BULLET$ #bold [duke|E] #!может владеть 2 [Concept('settlement_holding', 'владениями-поселениями')|E] без повышения  [Concept('additional_settlement_upkeep', 'дополнительного содержания')|E] поселения.\n\n$EFFECT_LIST_BULLET$A #bold [king|E] #!может владеть 3 [Concept('settlement_holding', 'владениями-поселениями')|E] без повышения [Concept('additional_settlement_upkeep', 'дополнительного содержания')|E] поселения.\n\n$EFFECT_LIST_BULLET$ #bold [emperor|E] #!может владеть 4 [Concept('settlement_holding', 'владениями-поселениями')|E] без повышения [Concept('additional_settlement_upkeep', 'дополнительного содержания')|E] поселения.\n\n#V Ежемесячное содержание увеличивается в #X 3 раза#! { 1 + 3 + ... } за каждое владение-поселение, превышающее ваш предел владений.#!"
+ game_concept_settlement_holding_limit_desc:0 "Количество поселений, которыми [ruler|El] может владеть в определённый момент, определяется уровнем его титула.\n\nНапример:\n\n$EFFECT_LIST_BULLET$ #bold [count|E] #!может владеть 1 [Concept('settlement_holding', 'владением-поселением')|E] без повышения [Concept('additional_settlement_upkeep', 'дополнительного содержания')|E] поселения.\n\n$EFFECT_LIST_BULLET$ #bold [duke|E] #!может владеть 2 [Concept('settlement_holding', 'владениями-поселениями')|E] без повышения  [Concept('additional_settlement_upkeep', 'дополнительного содержания')|E] поселения.\n\n$EFFECT_LIST_BULLET$A #bold [king|E] #!может владеть 3 [Concept('settlement_holding', 'владениями-поселениями')|E] без повышения [Concept('additional_settlement_upkeep', 'дополнительного содержания')|E] поселения.\n\n$EFFECT_LIST_BULLET$ #bold [emperor|E] #!может владеть 4 [Concept('settlement_holding', 'владениями-поселениями')|E] без повышения [Concept('additional_settlement_upkeep', 'дополнительного содержания')|E] поселения."
 
  ##########################
  #######   Mining   #######

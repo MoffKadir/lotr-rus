@@ -1,4 +1,19 @@
 ﻿l_russian:
+ # [CHARACTER.GetShortUINameNoTooltipNoFormat]
+ # [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat]
+ # 
+ # [CharYouSheHe(CHARACTER)]
+ # [CharYourHerHis(CHARACTER)]
+ # [CharYouHerHim(CHARACTER)]
+ # [CharYourHerHimself(CHARACTER)]
+ # 
+ # [CharAreIs(CHARACTER)]
+ # [CharWereWas(CHARACTER)]
+ # [_s(CHARACTER)]
+ # [CHARACTER.GetWomanMan]
+ # 
+ # (theres more check the vanilla file)
+ # remember to add |U at the end to capitalize the start of a sentence!
 
  ### Dwarven Nicknames ###
  nick_the_slug_unique:0 "Далат 'азм-марх"
@@ -63,6 +78,10 @@
  nick_long_hom_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] это прозвище из-за своего значительного роста, необычного для хоббита."
  nick_the_greenhanded:0 "[Select_CString(CHARACTER.IsFemale, 'Зеленорукая', 'Зеленорукий' )]"
  nick_the_greenhanded_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] это прозвище благодаря своему мастерству и страсти к растениям, фруктам и деревьям, а также всему, что связано с садоводством."
+ nick_old_noakes:0 "[Select_CString(CHARACTER.IsFemale, 'Старушка', 'Старый' )] Ноукс"
+ nick_old_noakes_desc:0 "Это прозвище было дано [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажу ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'ему персонажу', '' )] в связи с [Select_CString( CHARACTER.IsLocalPlayer, 'вашим', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] почтенным возрастом."
+ nick_daddy:0 "[Select_CString(CHARACTER.IsFemale, 'Мамуля', 'Папуля' )]"
+ nick_daddy_desc:0 "Это прозвище было дано [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажу ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'ему персонажу', '' )] в качестве жеста привязанности за [Select_CString( CHARACTER.IsLocalPlayer, 'вашу', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] явную доброту."
 
  ### Eotheod Nicknames ###
  nick_the_hapless:0 "[Select_CString(CHARACTER.IsFemale, 'Несчастная', 'Несчастный' )]"
@@ -215,11 +234,11 @@
  nick_parmaite_desc:0 "Пармайтэ - прозвище Элендиля, четвёртого короля [Concept( 'numenor', 'Нуменора' )|E]. На [quenya|El] оно означает «Книжник»."
  nick_star_watcher:0 "Элентирмо"
  nick_star_watcher_desc:0 "Элентирмо - прозвище Менельдура, пятого короля [Concept( 'numenor', 'Нуменора' )|E]. На [quenya|El] оно означает «Наблюдающий за звёздами»."
- nick_the_mariner:0 "Морестранник"
- nick_the_mariner_desc:0 "Тар-Алдарион был шестым королём [Concept( 'numenor', 'Нуменора' )|E]. Благодаря расширению морских традиций Нуменора и исследованиям в [middleearth|E] он заслужил прозвище «Морестранник»."
- nick_the_vigilant:0 "Тиритэ"
+ nick_the_mariner_elros:0 "Морестранник"
+ nick_the_mariner_elros_desc:0 "Тар-Алдарион был шестым королём [Concept( 'numenor', 'Нуменора' )|E]. Благодаря расширению морских традиций Нуменора и исследованию побережий [Concept( 'middleearth', 'Средиземья' )|E] он заслужил прозвище «Морестранник»."
+ nick_the_vigilant_elros:0 "Тиритэ"
  nick_the_vigilant_elros_desc:0 "Тиритэ - прозвище Тар-Минастира, одиннадцатого короля [Concept( 'numenor', 'Нуменора' )|E]. Во времена [Select_CString( CHARACTER.IsLocalPlayer, 'вашего', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] правления [Concept( 'numenoreans', 'нуменорцы' )|E] начали основывать постоянные поселения в [middleearth|E]. В переводе с [quenya|El] означает «Бдительный»."
- nick_ship_builder:0 "Кирьятамо"
+ nick_ship_builder_elros:0 "Кирьятамо"
  nick_ship_builder_elros_desc:0 "Тар-Кирьятан, известный как Ар-Балкумаган на [Concept( 'adunaic', 'адунайском' )|E], был двенадцатым королём [Concept( 'numenor', 'Нуменора' )|E]. Во времена его правления [Concept( 'numenoreans', 'нуменорцы' )|E] впервые начали открыто выступать против [Concept( 'banofthevalar', 'Запрета Валар' )|E]. На материке его правление было отмечено ростом колониализма. Он значительно расширил нуменорский флот, заслужив прозвище «Кирьятамо», что в переводе с [quenya|El] означает «Кораблестроитель»."
  nick_bright_sword:0 "Ар-Бельзагар"
  nick_bright_sword_desc:0 "Калмакиль был сыном Тар-Алькарина. Он был великим военачальником Нуменора и в молодости завоевал обширные земли вдоль побережья Средиземья. Вследствие этого Саурон отступил от побережья и стал строить свою власть на Востоке, вдали от берегов. Во время его правления люди короля называли его Ар-Бельзагар, что на [Concept( 'adunaic', 'адунайском' )|E] языке означало «Яркий Меч». Это был первый случай, когда короля [Concept( 'numenor', 'Нуменора' )|E] прозвали [Concept( 'adunaic', 'адунайским' )|E] именем."
