@@ -21,7 +21,7 @@
  is_suzerain_warning:0 "#R [suzerain|E]: Может получить поддержку от своих [Concept( 'tributaries', 'данников' )|E]#!"
   
  action_can_establish_protectorate:0 "Соседнее государство может стать вашим протекторатом"
- action_can_establish_protectorate_label:0 "[recipient.GetShortUINameNoTooltip] станет вашим протекторатом"
+ action_can_establish_protectorate_label:0 "[recipient.GetShortUINameNoTooltip] может стать вашим протекторатом"
  action_can_establish_protectorate_desc:0 "[Select_CString(recipient.IsFemale, 'Соседняя', 'Соседний' )] [ruler|El][Select_CString(recipient.IsFemale, 'ница', '' )], [recipient.GetUIName], надеется на вашу защиту и [Select_CString(recipient.IsFemale, 'готова', 'готов' )] принять ваше предложение о [Concept( 'protectorate', 'протекторате' )|E].\n\n$ESTABLISH_PROTECTORATE_HELP$"
  action_can_establish_protectorate_combined_group_name:0 "Соседние государства могут стать вашими протекторатами"
  action_can_establish_protectorate_combined_group_label:0 "Соседние государства могут стать вашими протекторатами"
@@ -32,11 +32,11 @@
 
  set_relation_tributary_protector:0 "станет вашим протекторатом" ###Does not seem to work [recipient.GetUIName]
 
- GET_PROTECTOR:0 "Становится протекторатом персонажа [TARGET_CHARACTER.GetShortUINamePossessive]"
+ GET_PROTECTOR:0 "Становится протекторатом [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  I_GET_PROTECTOR:0 "[TARGET_CHARACTER.GetShortUIName|U] становится вашим протектором"
  I_GOT_PROTECTOR:0 "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString(TARGET_CHARACTER.IsFemale, 'стала', 'стал' )] вашим протектором"
- THEY_GET_PROTECTOR:0 "[CHARACTER.GetShortUIName] становится протекторатом персонажа [TARGET_CHARACTER.GetShortUIName|U]"
- THEY_GOT_PROTECTOR:0 "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'стала', 'стал' )] протекторатом персонажа [TARGET_CHARACTER.GetShortUIName|U]"
+ THEY_GET_PROTECTOR:0 "[CHARACTER.GetShortUIName] становится протекторатом [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ THEY_GOT_PROTECTOR:0 "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'стала', 'стал' )] протекторатом [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
  loss_of_suzerainship.tt:0 "[defender.GetShortUINameNoTooltip] перестанет быть вашим [Concept( 'client_state', 'клиентским государством' )|E]."
  loss_of_protectorate.tt:0 "[defender.GetShortUINameNoTooltip] перестанет быть вашим [Concept( 'protectorate', 'протекторатом' )|E]."
