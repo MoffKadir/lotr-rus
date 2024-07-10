@@ -22,13 +22,31 @@
  catalyst_held_a_feast_in_moria:0 "[struggle_catalyst_catalyst|E]: [GetActivityType('activity_feast').GetName]"
  catalyst_held_a_feast_in_moria_desc:0 "[GetActivityType('activity_feast').GetName] в [Concept( 'struggle_region', 'области борьбы' )|E]"
  catalyst_declared_a_war:0 "[struggle_catalyst_catalyst|E]: объявить [Concept( 'war', 'войну' )|E] в качестве атакующей стороны"
- catalyst_declared_a_war_desc:0 "Объявить [Concept( 'war', 'войну' )|E] в качестве атакующей стороны"
+ catalyst_declared_a_war_desc:0 "Объявить [Concept('war', 'войну')|E] в качестве атакующей стороны"
  catalyst_declared_war_upon:0 "[struggle_catalyst_catalyst|E]: объявить [Concept( 'war', 'войну' )|E] в качестве защитника"
  catalyst_declared_war_upon_desc:0 "Объявить [Concept( 'war', 'войну' )|E] в качестве защитника"
+ catalyst_involved_ruler_lost_war:0 "[Concept('struggle_involved', 'Вовлечённый в борьбу')|E] [Concept('ruler', 'правитель')|E] проиграл [Concept('war', 'войну')|E]"
+ catalyst_involved_ruler_lost_war_desc:0 "[Concept('struggle_involved', 'Вовлечённый в борьбу')|E] [Concept('ruler', 'правитель')|E] проиграл [Concept('war', 'войну')|E] против [Concept('struggle_interloper', 'вмешавшегося в борьбу')|E] или непричастного [Concept('ruler', 'правителя')|E]"
  catalyst_balrog_event_calm:0 "[struggle_catalyst_catalyst|E]: Успокаивающие действия в событиях персонажа"
  catalyst_balrog_event_calm_desc:0 "Успокаивающие действия в событиях персонажа"
  catalyst_balrog_event_anger:0 "[struggle_catalyst_catalyst|E]: Раздражающие действия в событиях персонажа"
  catalyst_balrog_event_anger_desc:0 "Раздражающие действия в событиях персонажа"
+ catalyst_sway_scheme:0 "Влияние на [Concept('struggle_involved', 'вовлечённого в борьбу')|E] [Concept('ruler', 'правителя')|E]"
+ catalyst_sway_scheme_desc:0 "Повлиять на [Concept('struggle_involved', 'вовлечённого в борьбу')|E] [Concept('ruler', 'правителя')|E]"
+ catalyst_cheat_in_tournaments:0 "Использование нечестных приёмов на турнире"
+ catalyst_cheat_in_tournaments_desc:0 "Использовать нечестные приёмы на турнире"
+ catalyst_duel_fought:0 "Поединок между [Concept('struggle_involved', 'вовлечёнными в борьбу')|E] [Concept('ruler', 'правителями')|E]"
+ catalyst_duel_fought_desc:0 "Устроить поединок с другим [Concept('struggle_involved', 'вовлечённым')|E] [Concept('ruler', 'правителем')|E] за [Concept('struggle_involved', 'вовлечённого в борьбу')|E] [Concept('ruler', 'правителя')|E]"
+ catalyst_abduct_scheme:0 "Похищение [Concept('struggle_involved', 'вовлечённого в борьбу')|E] [Concept('character', 'персонажа')|E]"
+ catalyst_abduct_scheme_desc:0 "Похитить [Concept('struggle_involved', 'вовлечённого в борьбу')|E] [Concept('character', 'персонажа')|E]"
+ catalyst_marriage_between_characters:0 "[Concept('marriage', 'Брак')|E] между двумя важными [Concept('dynasties', 'династиями')|E]"
+ catalyst_marriage_between_characters_desc:0 "Заключить [Concept('marriage', 'брак')|E] между двумя важными [Concept('dynasties', 'династиями')|E]"
+ catalyst_mysterious_dissapearance_involved_character:0 "Таинственное исчезновение [Concept('struggle_involved', 'вовлечённого в борьбу')|E] [Concept('character', 'персонажа')|E]"
+ catalyst_mysterious_dissapearance_involved_character_desc:0 "[Concept('struggle_involved', 'Вовлечённый в борьбу')|E] [Concept('character', 'персонаж')|E] таинственно пропал"
+ catalyst_fabricated_hook_scheme:0 "Сфабриковано [Concept('hook', 'влияние')|E] на [Concept('struggle_involved', 'вовлечённого в борьбу')|E] [Concept('character', 'персонажа')|E]"
+ catalyst_fabricated_hook_scheme_desc:0 "Сфабриковать [Concept('hook', 'влияние')|E] на [Concept('struggle_involved', 'вовлечённого в борьбу')|E] [Concept('character', 'персонажа')|E]"
+ catalyst_controls_too_large_area:0 "[Concept('struggle_involved', 'Вовлечённый')|E] либо [Concept('struggle_interloper', 'вмешавшийся в борьбу')|E] [Concept('ruler', 'правитель')|E] слишком силён"
+ catalyst_controls_too_large_area_desc:0 "[Concept('struggle_involved', 'Вовлечённый')|E] или [Concept('struggle_interloper', 'вмешавшийся в борьбу')|E] [Concept('ruler', 'правитель')|E] контролирует 30% области борьбы"
 
  # Effects
  struggle_parameter_balrog_struggle_no_events:0 "#p В [Concept( 'struggle_region', 'области борьбы' )|E] не происходит никаких негативных событий, связанных с балрогом#!"
@@ -297,3 +315,36 @@
  balrog_struggle.4001.t:0 "Ярость балрога - конец близок"
  balrog_struggle.4001.desc:0 "Для владения [selected_county.GetNameNoTier] нет никакой надежды. [balrog|E] пылает гневом, и теперь он прокладывает себе путь через залы, уничтожая всё, что хоть немного намекает на наше присутствие в провинции. Кровь моего народа льётся реками, отчаявшиеся беженцы бегут толпами. Залы опалены адским жаром демона и разрушаются страшным топотом и губительным клинком. \n\nМы слышим его ужасный рёв даже издалека. Он приближается. Даже если нам удастся спастись сегодня, его ярость не утихнет! Почему мы поступили так, как поступили? Мы должны были действовать более осторожно, чтобы избежать этого гнева!"
  balrog_struggle.4001.a:0 "[ROOT.Char.GetFaith.HighGodName], избавь нас от этого!"
+
+
+ ##############################
+ #                            #
+ #    Thani-Hazad Struggle    #
+ #                            #
+ ##############################
+
+
+ thani_hazad_struggle:0 "Происки Балан-лай"
+ thani_hazad_struggle_desc:0 "TODO"
+ struggle_thani_hazad_phase_disintegration:0 "Разобщённость"
+ struggle_thani_hazad_phase_disintegration_desc:0 "TODO Disunity"
+ struggle_thani_hazad_phase_confederation:0 "Статус-кво"
+ struggle_thani_hazad_phase_confederation_desc:0 "TODO Status Quo"
+ struggle_thani_hazad_phase_unification:0 "Единство"
+ struggle_thani_hazad_phase_unification_desc:0 "TODO Unity"
+
+ struggle_parameter_unlikely_to_accept_vassalisation:0 "[Concept('struggle_involved', 'Вовлечённые в борьбу')|E] [Concept('characters', 'персонажи')|E] с меньшей вероятностью примут [Concept('interactions', 'взаимодействие')|E] $offer_vassalization_interaction$"
+ struggle_parameter_wars_more_expensive:0 "Объявление [Concept('war', 'войн')|E] против [Concept('struggle_involved', 'вовлечённых в борьбу')|E] [Concept('characters', 'персонажей')|E] стоит дороже"
+ struggle_parameter_involved_rulers_can_join_other_involved_rulers:0 "[Concept('struggle_involved', 'Вовлечённые в борьбу')|E] [Concept('rulers', 'правители')|E] могут присоединиться к оборонительным [Concept('wars', 'войнам')|E] других [Concept('struggle_involved', 'вовлечённых')|E] [Concept('rulers', 'правителей')|E]"
+ struggle_parameter_blacklock_mercenaries_more_expensive:0 "Взаимодействие «Нанять наёмников из клана Черновласов» на #N +10%#! дороже"
+ struggle_parameter_blacklock_mercenaries_less_expensive:0 "Взаимодействие «Нанять наёмников из клана Черновласов» на #P -20%#! дешевле"
+ struggle_parameter_harder_to_convert_culture_as_kharadunai:0 "#N -90%#! к скорости смены культуры за [Concept('struggle_involved', 'вовлечённых в борьбу')|E] [Concept('characters', 'персонажей')|E]"
+ struggle_parameter_harder_to_convert_faith_as_kharadunai:0 "#N -90%#! к скорости обращения графств за [Concept('struggle_involved', 'вовлечённых в борьбу')|E] [Concept('characters', 'персонажей')|E]"
+ THANI_HAZAD_STRUGGLE_ADDITIONAL_WAR_COST:0 "Текущая фаза - [struggle_thani_hazad_phase_confederation|E]"
+
+ thani_hazad_struggle_vassalization_reason:0 "[recipient.GetSheHe|U] участвует в [Concept('thani_hazad_struggle', 'Происках Балан-лай')|E]: $VALUE|=+0$"
+
+ ### Modifiers ###
+
+ old_order_triumphant_th_struggle_modifier:0 "Триумф старого порядка"
+ old_order_triumphant_th_struggle_modifier_desc:0 "Порядок - краеугольный камень успеха, и наша династия обеспечила этот успех"

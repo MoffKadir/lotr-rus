@@ -775,6 +775,14 @@
  decision_empire_angmar_restore_desc:0 "Железная корона Ангмара была одним из самых могущественных государств, возвысившихся на севере Средиземья. На протяжении веков она враждовала с королевством [arnor|E] и даже одержала над ним победу. Однако вскоре она была уничтожена, а её народ уничтожен возмездием людей [Concept('gondor', 'Гондора')|E] и [Concept('elves', 'эльфами')|E]. Однако память о ней осталась. Если мы сможем установить контроль над очагами древнего королевства Ангмар, как к востоку, так и к западу от горы Гундабад, мы сможем объявить о его возрождении."
  decision_empire_angmar_restore_confirm:0 "Железная корона вновь возвысится!"
 
+ decision_angmar_integrate_counties_custom:0 "Каждое [county|El] в ваших новых землях"
+
+ decision_annex_east_forodwaith:0 "Интегрировать Восточный Фородвайт"
+ decision_annex_east_forodwaith_tooltip:0 "Включить западные марки в состав нашей державы"
+ decision_annex_east_forodwaith_desc:0 "Народы Восточного Фородвайта имеют глубокие связи с ангмаррим. Теперь, когда они признают мою власть, мы должны полностью подчинить их себе. Они должны научиться служить и бояться меня так же, как их сородичи."
+ decision_annex_east_forodwaith_confirm:0 "Их законное место!"
+
+
  decision_subjugate_the_ettenmoors:0 "Покорить Эттенмурс"
  decision_subjugate_the_ettenmoors_tooltip:0 "Вы заметили, что в Эттенмурсе бродят холмовые тролли. Возможно, они могли бы послужить более важной цели..."
  decision_subjugate_the_ettenmoors_desc:0 "Когда холодные ветры владения [GetTitleByKey('c_baruk_zigil').GetName] в [Concept( 'angmar', 'Ангмаре' )|E] уступают место мрачным простором владения [GetTitleByKey('c_ettenmoors').GetName], вы решительно отправляетесь в путь, устремив взор к грандиозным целям. Ваши советники и вы отправляетесь в экспедицию в Эттенмурс, чтобы подчинить себе обитающих там троллей. Во главе с вашими самыми хитрыми спутниками у вас есть возможность укрепить свои силы за счёт привлечения в свои тёмные ряды устрашающих троллей."
@@ -931,6 +939,11 @@
  decision_integrate_tulwang_tooltip:0 "Реинтегрировать Тулванг, одно из Семи владычеств Тани-Хазада"
  decision_integrate_tulwang_desc:0 "Слишком долго королевства Тани-Хазада были отдельными мелкими вотчинами, препирающимися и воюющими друг с другом, но теперь, когда я [Select_CString(ROOT.Char.IsFemale,'объединила','объединил')] Семь земель, важно восстановить интеграцию тех земель, которые вышли из-под нашего контроля. Тулванг - седьмое королевство Тани-Хазада, но сегодня многие считают его продолжением большого королевства Бозишнаруд, поэтому теперь, когда мы установили прочную власть в Тулванге, важно, чтобы весь мир признал этот регион нашим."
  decision_integrate_tulwang_confirm:0 "Объединённые Семь земель"
+
+ decision_murder_bellakar:0 "Вторгнуться в Беллакар"
+ decision_murder_bellakar_tooltip:0 "Pretty Self Explanitory"
+ decision_murder_bellakar_desc:0 "Слишком долго Беллакар противостоял мощи Грозовых воевод. Пришло время сокрушить этих лже-адунай."
+ decision_murder_bellakar_confirm:0 "Разрушим их города"
 
  #################################
  #### Sauron/Mordor Decisions ####
@@ -1260,9 +1273,21 @@
 
  decision_restore_hillmen_rhudaur:0 "Восстановить королевство горцев Рудаура"
  decision_restore_hillmen_rhudaur_tooltip:0 "Пришло время вернуть королевство Рудаур его законным владыкам!"
- decision_hillmen_new_tradition:0 "Доступ к кузням Камета Брин позволяет создать новую формальную армию"
+ decision_hillmen_new_tradition:0 "Доступ к кузням Камет Брин позволяет создать новую формальную армию"
  decision_restore_hillmen_rhudaur_desc:0 "Слишком долго народ Ной Треван жил разрозненно, скрываясь в холмах к северу от нашего некогда великого королевства. Довольно! Пришло время сыновьям Рудаура восстать и вернуть себе былую славу под единым знаменем и с [Select_CString(ROOT.Char.IsFemale, 'единой королевой', 'единым королём' )]!"
  decision_restore_hillmen_rhudaur_confirm:0 "За народы Ной Треван!"
+
+ # Hwaldar's Succession - Secure Strong Heir
+
+ decision_affirm_rhudaur_succession:0 "Защитить наследие Рудаура"
+ decision_affirm_rhudaur_succession_desc:0 "Я [Select_CString(ROOT.Char.IsFemale, 'завоевала', 'завоевал' )] своё королевство силой оружия и умением держать непокорный народ в узде. Я [Select_CString(ROOT.Char.IsFemale, 'предводительница', 'вождь' )] вождей - и мой наследник должен стать достойным преемником! \n\nЕсли этого не сделать, моя держава распадётся на части, когда меня не станет!"
+ decision_affirm_rhudaur_succession_tooltip:0 "Я обеспечу свою преемственность, если у меня будет сильный и способный наследник."
+ decision_affirm_rhudaur_succession_confirm:0 "Народ холмов, узри своего будущего правителя!"
+ decision_affirm_rhudaur_succession_success:0 "Вы не дадите своей державе распасться после вашей смерти."
+ player_heir_prowess:0 "Базовая [prowess_i|E] доблесть вашего [Concept('player_heir', 'наследника-игрока')|E] равна или выше 7"
+ player_heir_martial:0 "Базовый [martial_i|E] военный навык вашего [Concept('player_heir', 'наследника-игрока')|E] равен или выше 7"
+ player_heir_diplomacy:0 "Базовый [diplomacy_i|E] навык дипломатии вашего [Concept('player_heir', 'наследника-игрока')|E] равен или выше 5"
+
 
  #########################
  #### Donan Decisions ####
@@ -1399,6 +1424,35 @@
  struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_2:0 "Если вы преуспеете, то получите [title|El] [Concept( 'empire', 'империи' )|E], станете неуязвимы для негативных событий [Concept( 'balrog', 'балрога' )|E] в ходе [Concept( 'struggle', 'борьбы' )|E], получите уникальных [Concept( 'men_at_arms', 'профессионалов' )|E], станете [Concept( 'head_of_faith', 'главой конфессии' )|E], а балрог будет время от времени выдвигать вам требования."
  struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_3:0 "В случае неудачи вы #N ПОГИБНЕТЕ!#!."
  struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_4:0 "Независимо от исхода, [struggle|El] продолжится."
+
+ ### Thani-Hazad Struggle ###
+ struggle_thani_hazad_dissolution:0 "Dissolution Title"
+ struggle_thani_hazad_dissolution_description:0 "Bionicle presents the annual bionicle buffet, a three day event featuring an all-you-can-eat smorgus board of pies and pasteries and pizza and grilled salmon and hustle crabs and dumplings and cakes and sandwiches and protodermus and stuffed peppers and mutton and brisket and rusty nails and coins and disk launchers and meat balls and fresh squeezed lemonade and lithium batteries and cigarettes and finger nails clippings and devilled eggs and bicycle chains and corn snails and acorns and scorpions and cactus needles and rubber bands and pencil shavings and grilled salmon and egg rolls and spoiled yogurt in staples in which you degrubs in pee chips and rocky cheese and battery acid"
+ struggle_thani_hazad_dissolution_select_tooltip:0 "Dissolution Select Tooltip"
+ struggle_thani_hazad_dissolution_confirm:0 "Confirm Text - Placeholder"
+ struggle_thani_hazad_dissolution_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_disintegration|E]"
+ struggle_thani_hazad_dissolution_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 60%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+ struggle_thani_hazad_dissolution_effect_involved:0 "Титул [GetTitleByKey('e_thani_hazad').GetName] станет недоступным для создания"
+
+ struggle_thani_hazad_confederation:0 "Триумф старого порядка"
+ struggle_thani_hazad_confederation_description:0 "Пути Балан-лай выдержали испытание временем. Регион борьбы остаётся активным, но теперь имеет большую тенденцию к сохранению стадии конфедерации."
+ struggle_thani_hazad_confederation_select_tooltip:0 "Confederation Select Tooltip"
+ struggle_thani_hazad_confederation_confirm:0 "Confirm Text - Placeholder"
+ struggle_thani_hazad_confederation_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_confederation|E]"
+ struggle_thani_hazad_confederation_valid_culture_tooltip:0 "Вы принадлежите к #L [kharadunaimculture.GetCollectiveNoun]ой#! или происходящей от неё культуре"
+ struggle_thani_hazad_confederation_valid_modifier_tooltip:0 "У вашей династии нет модификатора «[GetModifier('old_order_triumphant_th_struggle_modifier').GetNameWithTooltip]»"
+ struggle_thani_hazad_confederation_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+
+ struggle_thani_hazad_unification:0 "Единство цели"
+ struggle_thani_hazad_unification_description:0 "Принцы объединились против чужеземцев - в регионе борьбы не осталось независимых вмешавшихся правителей."
+ struggle_thani_hazad_unification_select_tooltip:0 "Unification Select Tooltip"
+ struggle_thani_hazad_unification_confirm:0 "Confirm Text - Placeholder"
+ struggle_thani_hazad_unification_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_unification|E]"
+ struggle_thani_hazad_unification_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+
+ struggle_thani_hazad_struggle_ends:0 "Вы завершите борьбу «[thani_hazad_struggle|E]»"
+
+ struggle_thani_hazad_has_ended_trigger:0 "Борьба «[thani_hazad_struggle|E]» подходит к концу"
 
  ##########################
  ### Breeland Decisions ###

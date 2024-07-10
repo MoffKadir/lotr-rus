@@ -41,9 +41,25 @@
  tooltip_oligarchic_elective_fame_3:0 "[prestige_level|E] [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] — [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]: $VALUE|=+0$"
  tooltip_oligarchic_elective_fame_4:0 "[prestige_level|E] [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] — [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L] или выше: $VALUE|=+0$"
  tooltip_oligarchic_merchant_dynast_stewardship:0 "[Select_CString(ROOT.Char.IsFemale, 'Ее', 'Его' )] навык [Concept( 'stewardship', 'управления' )|E] как великого купца: $VALUE|=+0$"
-  
-  #Oligarchic Elective, Voting Behavior 
+
+ #Oligarchic Elective, Voting Behavior 
  tooltip_oligarchic_merchants_hate_winelords:0 "[candidate.GetSheHe|U] принадлежит к фракции винных лордов: $VALUE|=+0$"
  tooltip_oligarchic_winelords_hate_merchants:0 "[candidate.GetSheHe|U] принадлежит к фракции великих купцов: $VALUE|=+0$"
- tooltip_oligarchic_winelords_like_winelords:0 "[candidate.GetSheHe|U] является собратом винным лордом: $VALUE|=+0$"
- tooltip_oligarchic_merchants_like_merchants:0 "[candidate.GetSheHe|U] является собратом великим купцом: $VALUE|=+0$"
+ tooltip_oligarchic_winelords_like_winelords:0 "[candidate.GetSheHe|U] также является членом фракции винных лордов: $VALUE|=+0$"
+ tooltip_oligarchic_merchants_like_merchants:0 "[candidate.GetSheHe|U] также является членом фракции великих купцов: $VALUE|=+0$"
+
+ ##Vassal Conclave Dynastic Elective 
+ vassal_conclave_dynastic_elective_succession_law:0 "Династические выборы Конклава вассалов"
+ vassal_conclave_dynastic_elective_electors:0 "Правитель и де-юре вассалы"
+ vassal_conclave_dynastic_elective_electors_tooltip:0 "Право называться [Concept('elector', 'выборщиками')|El] на династических выборах Конклава вассалов имеют [de_jure|El] вассалы с титулом уровня [Concept('count', 'графа')|El] и выше."
+ vassal_conclave_dynastic_elective_candidates:0 "Члены династии"
+ vassal_conclave_dynastic_elective_candidates_tooltip:0 "Право быть кандидатом танистри имеют все законные члены [dynasties|El] текущего правителя, не стоящие в линии наследования теократии или республики."
+
+ tooltip_vassal_conclave_dynastic_elective_votes_ruler_legitimacy:0 "[legitimacy_level|E] персонажа [ROOT.Char.GetTitledFirstName]: $VALUE|=+0$"
+ tooltip_vassal_conclave_dynastic_elective_votes_vassal_total_development:0 "Общее [development|El] принадлежащих [Concept('counties', 'графств')|E] в [de_jure|El] границах державы [title.GetNameNoTier]: $VALUE|=+0$"
+ tooltip_vassal_conclave_dynastic_elective_votes_ruler_any_same_heritage_vassals:0 "Имеет [Concept('vassals', 'вассалов')|E] своего [Concept('heritage', 'наследия')|E] в державе [title.GetNameNoTier]: $VALUE|=+0$"
+
+ balan_lai_elective_succession_law:0 "Выборы Балан-лай"
+ balan_lai_elective_succession_law_effects:0 "Глава Балан-лай и прочие члены Балан-лай могут назначить [Concept('title_heir', 'наследника титула')|E] из своего числа или основного наследника императора."
+ tooltip_diplomacy_vote_strength_balan_lai:0 "Дипломатический вклад #P +[SCOPE.ScriptValue('diplomacy_vote_strength_balan_lai')|0]#!"
+ tooltip_intrigue_vote_strength_balan_lai:0 "Вклад в интриги #P +[SCOPE.ScriptValue('intrigue_vote_strength_balan_lai')|0]#!"
