@@ -247,10 +247,35 @@
 
  ### Flies and Spiders ###
  lotr_travel_events.0015.t:0 "Мухи и пауки"
- lotr_travel_events.0015.desc:0 "Раз уж мы решили пройти под могучими ветвями [Concept('mirkwood', 'Лихолесья')|E], мы вынуждены пересечь [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] владения [ROOT.Char.GetCurrentLocation.GetNameNoTooltip]. Путешествие в основном неприятное, так как густой полог над нами, кажется, затмевает большинство источников света, будь то солнце или луна. \n\nМои спутники чувствуют себя неспокойно, и многие держат оружие наготове. «Во мраке за нами наблюдают глаза», - говорит мне тихим шёпотом предводитель каравана [caravan_leader.GetFirstName], поворачивая голову с одной стороны тропы на другую.\n\nКак бы в подтверждение [caravan_leader.GetHerHis] слов, подлесок справа от нас на секунду раздвигается, обнажая пугающе большого паука..."
+ lotr_travel_events.0015.desc:0 "Раз уж мы решили пройти под могучими ветвями [Concept('mirkwood', 'Лихолесья')|E], мы вынуждены пересечь [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] владения [ROOT.Char.GetCurrentLocation.GetNameNoTooltip]. Путешествие в основном неприятное, так как густой полог над нами, кажется, затмевает большинство источников света, будь то солнце или луна. \n\nМои спутники чувствуют себя неспокойно, и многие держат оружие наготове. «Во мраке за нами наблюдают глаза», - говорит мне тихим шёпотом [Select_CString(caravan_leader.IsFemale, 'караванщица', 'караванщик' )] [caravan_leader.GetFirstName], поворачивая голову с одной стороны тропы на другую.\n\nКак бы в подтверждение [caravan_leader.GetHerHis] слов, подлесок справа от нас на секунду раздвигается, обнажая пугающе большого паука..."
  lotr_travel_events.0015.a:0 "Это существо может стать полезным союзником, если мы его захватим."
  lotr_travel_events.0015.b:0 "Лучше постараться двигаться незаметно до конца нашего путешествия."
  lotr_travel_events.0015.c:0 "Враги настигают нас! К оружию!"
  lotr_travel_events.0015.d:0 "Не сходить с тропы! Что бы ни случилось, не сходить с тропы!"
  lotr_travel_events.0015.e:0 "Мы... подождём здесь, пока оно не исчезнет..."
  lotr_travel_events.0015.f:0 "Рубить лес, чтобы проложить новый путь вокруг него!"
+
+ ### Haunted Ruins in Eregion ###
+ lotr_travel_events.0016.t:0 "Руины с привидениями"
+ lotr_travel_events.0016.desc:0 "Когда мы останавливаемся на привал, пересекая [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] владения [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip], я замечаю, что [Select_CString(caravan_leader.IsFemale, 'караванщица', 'караванщик' )]  [caravan_leader.GetFirstName] [Select_CString(caravan_leader.IsFemale, 'уставилась', 'уставился' )] на карту и обеспокоенно бормочет про себя.\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetNameRegnal], я [Select_CString(caravan_leader.IsFemale, 'просматривала', 'просматривал' )] наш маршрут, когда [Select_CString(caravan_leader.IsFemale, 'поняла', 'понял' )], что наш лагерь сегодня будет разбит прямо у границ древнего [Concept('elven', 'эльфийского')|E] поселения, ныне лежащего в руинах», - говорит [caravan_leader.GetSheHe]. «Я [Select_CString(caravan_leader.IsFemale, 'слышала', 'слышал' )] много историй о древних призраках, которые до сих пор преследуют эти руины, охотясь на ничего не подозревающих путников!»\n\n[caravan_leader.GetSheHe] успокаивается, а затем продолжает. «Я [Select_CString(caravan_leader.IsFemale, 'нашла', 'нашёл' )] более длинный, альтернативный маршрут, который обходит руины стороной! Прошу вас, [Select_CString(ROOT.Char.IsFemale, 'госпожа', 'господин' )], не стоит беспокоить этих древних призраков»."
+ lotr_travel_events.0016.a:0 "Вы правы, лучше не рисковать."
+ lotr_travel_events.0016.b:0 "Такие трусы, как вы в моём окружении, будут жестоко наказаны."
+ lotr_travel_events.0016.b.tt:0 "Вы отчитываете [Select_CString(caravan_leader.IsFemale, 'свою проводницу', 'своего проводника' )] за трусость и решаете разбить лагерь у руин"
+ lotr_travel_events.0016.c:0 "Не глупите, это будет совершенно безопасно."
+ lotr_travel_events.0016.c.neutral:0 "Вы хорошо выспались"
+ lotr_travel_events.0016.c.failure:0 "Вы слышите жуткие звуки ночью"
+ lotr_travel_events.0016.c.critical.failure:0 "В руинах до сих пор царит ужас"
+
+ ### Shuddering Earth ###
+ lotr_travel_events.0017.t:0 "$travel_danger_prefix$ The Shuddering Earth"
+ lotr_travel_events.0017.desc:0 "The ashen plains of [mordor|E] stretch as far as the eye can see, its pits spitting noxious fumes that obscure the dreary, dark horizon. Yet as we travel through [ROOT.Char.GetCurrentLocation.GetNameNoTooltip], the monotony is suddenly broken.\n\nThe black earth shudders, jolting alive and throwing us all back. We can barely get to our feet as the ground rumbles violently, and around us new pits and chasms are formed rapidly, joining the already-existing ones that now spew forth even more vile and putrid substances high into the air. We have precious little time to act."
+ lotr_travel_events.0017.a:0 "All of you, get down and brace!"
+ lotr_travel_events.0017.b:0 "We must seek higher, more stable ground!"
+ lotr_travel_events.0017.b.success:0 "You manage to find sturdy ground"
+ lotr_travel_events.0017.b.success.tt:0 "You escape the earthquake's onslaught"
+ lotr_travel_events.0017.b.failure:0 "You do not manage to get to sturdy ground"
+ lotr_travel_events.0017.b.failure.tt:0 "You do not escape the earthquake's onslaught"
+ lotr_travel_events.0017.c:0 "Oh mighty [darklord|E], I kneel before thee!"
+ lotr_travel_events.0017.c.tt:0 "You shamefully cast some of your belongings into the pits as a sacrifice to [sauroncharacter|E], hoping for respite."
+ lotr_travel_events.0017.d:0 "O [ROOT.Char.GetFaith.HighGodName], accept my prostration and sacrifice!"
+ lotr_travel_events.0017.d.tt:0 "You pray and cast some of your belongings into the pits as a sacrifice, hoping for a respite."

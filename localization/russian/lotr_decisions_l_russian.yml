@@ -1289,7 +1289,6 @@
  ###################################
 
  # Restore Hillmen Kingdom of Rhudaur
-
  decision_restore_hillmen_rhudaur:0 "Восстановить королевство горцев Рудаура"
  decision_restore_hillmen_rhudaur_tooltip:0 "Пришло время вернуть королевство Рудаур его законным владыкам!"
  decision_hillmen_new_tradition:0 "Доступ к кузням Камет Брин позволяет создать новую формальную армию"
@@ -1297,7 +1296,6 @@
  decision_restore_hillmen_rhudaur_confirm:0 "За народы Ной Треван!"
 
  # Hwaldar's Succession - Secure Strong Heir
-
  decision_affirm_rhudaur_succession:0 "Защитить наследие Рудаура"
  decision_affirm_rhudaur_succession_desc:0 "Я [Select_CString(ROOT.Char.IsFemale, 'завоевала', 'завоевал' )] своё королевство силой оружия и умением держать непокорный народ в узде. Я [Select_CString(ROOT.Char.IsFemale, 'предводительница', 'вождь' )] вождей - и мой наследник должен стать достойным преемником! \n\nЕсли этого не сделать, моя держава распадётся на части, когда меня не станет!"
  decision_affirm_rhudaur_succession_tooltip:0 "Я обеспечу свою преемственность, если у меня будет сильный и способный наследник."
@@ -1306,6 +1304,12 @@
  player_heir_prowess:0 "Базовая [prowess_i|E] доблесть вашего [Concept('player_heir', 'наследника-игрока')|E] равна или выше 7"
  player_heir_martial:0 "Базовый [martial_i|E] военный навык вашего [Concept('player_heir', 'наследника-игрока')|E] равен или выше 7"
  player_heir_diplomacy:0 "Базовый [diplomacy_i|E] навык дипломатии вашего [Concept('player_heir', 'наследника-игрока')|E] равен или выше 5"
+
+ # Follow the Cult of the Winter King 
+ decision_worship_witchking:0 "Начать почитать Короля Зимы"
+ decision_worship_witchking_desc:0 "Многие горцы стали последователями культа, который, похоже, зародился в [Concept('angmar', 'Ангмаре')|E] - культа Короля Зимы. Очевидно, что объектом их почитания является не кто иной, как [witchkingshort|E], Владыка Железной короны, могущественный король-колдун. \n\nПоклонение его культу может оказаться выгодным в грядущих войнах..."
+ decision_worship_witchking_tooltip:0 "Вы обратите свои племена в культ Короля Зимы."
+ decision_worship_witchking_confirm:0 "Мы служим Королю Зимы!"
 
 
  #########################
@@ -1454,7 +1458,7 @@
  struggle_thani_hazad_dissolution_effect_involved:0 "Титул [GetTitleByKey('e_thani_hazad').GetName] станет недоступным для создания"
 
  struggle_thani_hazad_confederation:0 "Триумф старого порядка"
- struggle_thani_hazad_confederation_description:0 "Пути Балан-лай выдержали испытание временем. Регион борьбы остаётся активным, но теперь имеет большую тенденцию к сохранению стадии конфедерации."
+ struggle_thani_hazad_confederation_description:0 "Пути Балан-Лай выдержали испытание временем. Регион борьбы остаётся активным, но теперь имеет большую тенденцию к сохранению стадии конфедерации."
  struggle_thani_hazad_confederation_select_tooltip:0 "Confederation Select Tooltip"
  struggle_thani_hazad_confederation_confirm:0 "Confirm Text - Placeholder"
  struggle_thani_hazad_confederation_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_confederation|E]"
@@ -1499,3 +1503,19 @@
  decision_form_sea_dragon_host_confirm:0 "Горизонт неустанно зовёт нас к свободе"
  realm_size_below_15_sea_dragon_decision:0 "Размер державы не менее 15 владений"
  have_only_sea_counties_sea_dragon_decision:0 "В вашей державе есть только прибрежные графства"
+ decision_sea_dragon_host_formation:0 "Создано Воинство Морского Дракона"
+ decision_form_sea_dragon_host_tooltip:0 "Претендовать на мантию «Морского змея»"
+
+ #############################
+ ###   Dune Sea Decisions  ###
+ #############################
+
+ decision_aukar_annexation:0 "Претендовать на Сарву"
+ decision_aukar_annexation_tooltip:0 "Включить Сарву в состав Аукара"
+ decision_aukar_annexation_desc:0 "Сарва - земля двух народов: в то время как бозишнаруды, населяющие города, господствуют на побережье, наши сородичи аукуаги занимают внутренние районы. Если бы мы смогли завоевать путь к её побережью по [Concept('bayoftulwang', 'заливу Тулванг')|E], это принесло бы величие нашему народу!"
+ decision_aukar_annexation_confirm:0 "У моря погода намного приятнее..."
+
+ decision_aukuag_empire:0 "Создать Унав"
+ decision_aukuag_empire_tooltip:0 "Создать империю Унав"
+ decision_aukuag_empire_desc:0 "Поскольку народы аукуагов и карсагов теперь контролируют все земли от Ауз-Ульджи до [Concept('bayoftulwang', 'залива Тулванг')|E], остаётся только одно направление для экспансии - на запад. Объединив аукуагов и карсагов и завоевав долину Сиреш, мы сможем объединить нашу древнюю родину Унав!"
+ decision_aukuag_empire_confirm:0 "Народ песков должен получить своё!"

@@ -1,5 +1,5 @@
 ﻿l_russian:
-  
+
  ##Aristocratic Elective
  aristocratic_elective_succession_law:0 "Выборная система истерлингов"
  aristocratic_elective_succession_law_subname:0 "Акхил-Шура"
@@ -9,9 +9,9 @@
  aristocratic_elective_candidates:0 "Близкие родственники, претенденты и выборщики"
  aristocratic_elective_candidates_tooltip:0 "Чтобы при выборной аристократии являться действительным кандидатом, персонаж должен выполнить одно из следующих условий:\n$EFFECT_LIST_BULLET$Быть [Concept( 'close_family', 'близким родственником' )|E] данного правителя и не являться потенциальным теократическим или республиканским наследником. Дети кандидата не могут быть избраны.\n$EFFECT_LIST_BULLET$Быть [Concept( 'claimant', 'претендентом' )|E] на титул и не являться потенциальным теократическим или республиканским наследником.\n$EFFECT_LIST_BULLET$Быть действительным аристократическим [Concept( 'elector', 'выборщиком' )|E] для указанного титула."
  FACTION_POWER_ARISTOCRATIC_ELECTIVE:0 "Аристократические выборы: #V +$VALUE|0$#!"
- #Feudal Elective AI behavior 
-  
- #Imperial Elective, Voting Strength 
+ #Feudal Elective AI behavior
+
+ #Imperial Elective, Voting Strength
  tooltip_aristocratic_elective_is_incumbant:0 "[ROOT.Char.GetSheHe|U] является действующим правителем: $VALUE|=+0$"
  tooltip_aristocratic_elective_powerful_vassal:0 "[ROOT.Char.GetSheHe|U] является [Concept( 'powerful_vassal', 'могущественным вассалом' )|E]: $VALUE|=+0$"
  tooltip_aristocratic_elective_military_1:0 "Размер [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] [Concept( 'army', 'армии' )|E] достаточен: $VALUE|=+0$"
@@ -24,15 +24,15 @@
  tooltip_aristocratic_elective_diplo_education_4:0 "[ROOT.Char.GetSheHe|U] — [GetTrait('education_diplomacy_4').GetName( GetNullCharacter )|l]: $VALUE|=+0$"
  tooltip_aristocratic_elective_is_councillor:0 "[ROOT.Char.GetSheHe|U] заседает в [Concept( 'council', 'совете' )|E]: $VALUE|=+0$"
  tooltip_aristocratic_elective_historic_rhunic_dynasty:0 "[Select_CString(ROOT.Char.IsFemale, 'Ее', 'Его' )] [dynasty|El] когда-то владела великой [Concept( 'empire', 'империей' )|E] Рун: $VALUE|=+0$"
-  
-  ##Oligarchic Elective 
+
+  ##Oligarchic Elective
  oligarchic_elective_succession_law:0 "Выборная олигархия"
  oligarchic_elective_electors:0 "Правитель и де-юре вассалы"
  oligarchic_elective_electors_tooltip:0 "Чтобы являться действительным [Concept( 'elector', 'выборщиком' )|E] при выборной олигархии, необходимо быть [de_jure|El] вассалом [Concept( 'count', 'графского' )|E] ранга и выше."
  oligarchic_elective_candidates:0 "Близкие родственники, претенденты и выборщики"
- oligarchic_elective_candidates_tooltip:0 "Чтобы при выборной олигархии являться действительным кандидатом, персонаж должен выполнить одно из следующих условий:\n$EFFECT_LIST_BULLET$Быть [Concept( 'close_family', 'близким родственником' )|E] данного правителя и не являться потенциальным теократическим или республиканским наследником. Дети кандидата не могут быть избраны.\n$EFFECT_LIST_BULLET$Быть [Concept( 'claimant', 'претендентом' )|E] на титул и не являться потенциальным теократическим или республиканским наследником.\n$EFFECT_LIST_BULLET$Быть действительным феодальным [Concept( 'elector', 'выборщиком' )|E] для указанного титула."
-  
-  #Oligarchic Elective, Voting Strength 
+ oligarchic_elective_candidates_tooltip:0 "Право быть кандидатом выборной олигархии имеют персонажи, соответствующие одному из следующих условий:\n$EFFECT_LIST_BULLET$Быть [Concept( 'close_family', 'близким родственником' )|E] данного правителя и не являться потенциальным теократическим или республиканским наследником. Дети кандидата не могут быть избраны.\n$EFFECT_LIST_BULLET$Быть [Concept( 'claimant', 'претендентом' )|E] на титул и не являться потенциальным теократическим или республиканским наследником.\n$EFFECT_LIST_BULLET$Быть действительным феодальным [Concept( 'elector', 'выборщиком' )|E] для указанного титула."
+
+ #Oligarchic Elective, Voting Strength
  tooltip_oligarchic_elective_development:0 "Общее [development|El] [Concept( 'counties', 'графств' )|E] в [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] [de_jure|El] [Concept( 'title', 'титуле' )|E]: $VALUE|=+0$"
  tooltip_oligarchic_merchant_dynast_wealth_1:0 "У [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] достаточный [income|El]: $VALUE|=+0$"
  tooltip_oligarchic_merchant_dynast_wealth_2:0 "У [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] внушительный [income|El]: $VALUE|=+0$"
@@ -42,16 +42,16 @@
  tooltip_oligarchic_elective_fame_4:0 "[prestige_level|E] [Select_CString(ROOT.Char.IsFemale, 'ее', 'его' )] великого купца [Concept( 'dynast', 'династа' )|E] — [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L] или выше: $VALUE|=+0$"
  tooltip_oligarchic_merchant_dynast_stewardship:0 "[Select_CString(ROOT.Char.IsFemale, 'Ее', 'Его' )] навык [Concept( 'stewardship', 'управления' )|E] как великого купца: $VALUE|=+0$"
 
- #Oligarchic Elective, Voting Behavior 
+ #Oligarchic Elective, Voting Behavior
  tooltip_oligarchic_merchants_hate_winelords:0 "[candidate.GetSheHe|U] принадлежит к фракции винных лордов: $VALUE|=+0$"
  tooltip_oligarchic_winelords_hate_merchants:0 "[candidate.GetSheHe|U] принадлежит к фракции великих купцов: $VALUE|=+0$"
  tooltip_oligarchic_winelords_like_winelords:0 "[candidate.GetSheHe|U] также является членом фракции винных лордов: $VALUE|=+0$"
  tooltip_oligarchic_merchants_like_merchants:0 "[candidate.GetSheHe|U] также является членом фракции великих купцов: $VALUE|=+0$"
 
  ##Vassal Conclave Dynastic Elective 
- vassal_conclave_dynastic_elective_succession_law:0 "Династические выборы Конклава вассалов"
+ vassal_conclave_dynastic_elective_succession_law:0 "Династические выборы Конклава"
  vassal_conclave_dynastic_elective_electors:0 "Правитель и де-юре вассалы"
- vassal_conclave_dynastic_elective_electors_tooltip:0 "Право называться [Concept('elector', 'выборщиками')|El] на династических выборах Конклава вассалов имеют [de_jure|El] вассалы с титулом уровня [Concept('count', 'графа')|El] и выше."
+ vassal_conclave_dynastic_elective_electors_tooltip:0 "Право называться [Concept('elector', 'выборщиками')|El] на династических выборах Конклава имеют [de_jure|El] вассалы с титулом уровня [Concept('count', 'графа')|El] и выше."
  vassal_conclave_dynastic_elective_candidates:0 "Члены династии"
  vassal_conclave_dynastic_elective_candidates_tooltip:0 "Право быть кандидатом танистри имеют все законные члены [dynasties|El] текущего правителя, не стоящие в линии наследования теократии или республики."
 
@@ -59,7 +59,15 @@
  tooltip_vassal_conclave_dynastic_elective_votes_vassal_total_development:0 "Общее [development|El] принадлежащих [Concept('counties', 'графств')|E] в [de_jure|El] границах державы [title.GetNameNoTier]: $VALUE|=+0$"
  tooltip_vassal_conclave_dynastic_elective_votes_ruler_any_same_heritage_vassals:0 "Имеет [Concept('vassals', 'вассалов')|E] своего [Concept('heritage', 'наследия')|E] в державе [title.GetNameNoTier]: $VALUE|=+0$"
 
- balan_lai_elective_succession_law:0 "Выборы Балан-лай"
- balan_lai_elective_succession_law_effects:0 "Глава Балан-лай и прочие члены Балан-лай могут назначить [Concept('title_heir', 'наследника титула')|E] из своего числа или основного наследника императора."
+ ##Balan Lai leader Elective
+ balan_lai_leader_elective_succession_law:0 "Конклав Балан-Лай"
+ balan_lai_leader_elective_electors:0 "Члены Балан-Лай"
+ balan_lai_leader_elective_electors_tooltip:0 "Право называться [Concept( 'elector', 'выборщиками' )|E] на Конклаве [balan_lai|E] имеют персонажи, являющиеся [Concept('independent_ruler', 'независимыми правителями')|E] со [Concept('trait', 'свойством')|E] [GetTrait('balan_lai_member').GetName( GetNullCharacter )] и принадлежащие к харадунаимской или происходящей от неё [Concept('culture', 'культуре')|E]."
+ balan_lai_leader_elective_candidates:0 "Первый наследник главы совета и члены Балан-Лай"
+ balan_lai_leader_elective_candidates_tooltip:0 "Право быть кандидатами на лидерство в Конклаве [balan_lai|E] имеет [primary_heir|El] текущего главы совета или [Concept('independent_ruler', 'независимые правители')|E] со [Concept('trait', 'свойством')|E] [GetTrait('balan_lai_member').GetName( GetNullCharacter )]. Все кандидаты также должны быть представителями харадунаимской или происходящей от неё [Concept('culture', 'культуры')|E]."
+
+ #Balan Lai HRE Elective 
+ balan_lai_elective_succession_law:0 "Выборы Балан-Лай"
+ balan_lai_elective_succession_law_effects:0 "Глава Балан-Лай и прочие члены Балан-Лай могут назначить [Concept('title_heir', 'наследника титула')|E] из своего числа или основного наследника императора."
  tooltip_diplomacy_vote_strength_balan_lai:0 "Дипломатический вклад #P +[SCOPE.ScriptValue('diplomacy_vote_strength_balan_lai')|0]#!"
  tooltip_intrigue_vote_strength_balan_lai:0 "Вклад в интриги #P +[SCOPE.ScriptValue('intrigue_vote_strength_balan_lai')|0]#!"
