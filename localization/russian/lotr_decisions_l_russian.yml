@@ -324,6 +324,17 @@
  decision_gondor_x_bellakar_custom_tooltip_b:0 "Вы вновь включили [GetTitleByKey('k_umbar').GetNameNoTier] в состав своей державы" # Feel free to replace @ Red/Vector
  decision_gondor_x_bellakar_custom_effect:0 "В заключите союз с державой [GetTitleByKey('e_bellakar').GetNameNoTier], пообещав возобновить его в случае смерти одного из правителей."
 
+ decision_recreate_watch_on_mordor:0 "Основать дозор в Мордоре"
+ decision_recreate_watch_on_mordor_desc:0 "[sauroncharacter|E] пал, и большая часть его злобы ушла вместе с ним. Но земля [Concept('mordor', 'Мордора')|E] веками несла на себе его отпечаток. Такую землю, давно омрачённую Тьмой, нельзя оставлять без защиты. Тёмный Властелин ушел, но кто может знать, какое зло ещё скрывается в самых тёмных уголках Страны теней? \n\nБыло бы разумно обезопасить себя от новых потенциальных угроз, которые могут появиться из Мордора, как бы маловероятно это ни казалось нам сейчас. Пора основать дозор в Мордоре."
+ decision_recreate_watch_on_mordor_desc_tooltip:0 "Вы учредите [GetTitleByKey('d_watch_on_mordor').GetNameNoTier]."
+ decision_recreate_watch_on_mordor_confirm:0 "Никогда больше землям моего народа не будет угрожать Тьма!"
+
+ decision_abandon_watch_on_mordor:0 "Покинуть дозор в Мордоре"
+ decision_abandon_watch_on_mordor_desc:0 "Мы достаточно долго поддерживали дозор в [Concept('mordor', 'Мордоре')|E]. Воины нужны в других местах. Нет никаких признаков новых угроз, исходящих из Страны теней. Безусловно, [sauroncharacter|E] действительно ушёл навсегда, и наш дозор на его земле больше не нужен."
+ decision_abandon_watch_on_mordor_desc_tooltip:0 "Вы покинете дозор в [Concept('mordor', 'Мордоре')|E]."
+ decision_abandon_watch_on_mordor_confirm:0 "Дозор окончен."
+ decision_abandon_watch_on_mordor_custom_desc:0 "[GetTitleByKey('d_watch_on_mordor').GetNameNoTier] подошёл к концу, его воины присоединятся к вашим войскам."
+
  ##################################
  ### Reunited Kingdom Decisions ###
  ##################################
@@ -1455,7 +1466,10 @@
  struggle_thani_hazad_dissolution_confirm:0 "Confirm Text - Placeholder"
  struggle_thani_hazad_dissolution_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_disintegration|E]"
  struggle_thani_hazad_dissolution_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 60%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
- struggle_thani_hazad_dissolution_effect_involved:0 "Титул [GetTitleByKey('e_thani_hazad').GetName] станет недоступным для создания"
+ struggle_thani_hazad_dissolution_effect_involved:0 "Титул [GetTitleByKey('e_thani_hazad').GetName] станет недоступным для создания персонажам со свойством [GetTrait('balan_lai_member').GetName( GetNullCharacter )] на #N 50#! лет"
+ struggle_thani_hazad_dissolution_duchy_effect:0 "Каждое [duchy|El], полностью контролируемое [Concept('ruler', 'правителем')|E] с титулом [Concept('kingdom', 'королевского')|E] уровня, будет передано [de_jure|El] владельцу"
+ struggle_thani_hazad_dissolution_claim_effect:0 "Каждый [Concept('struggle_involved', 'вовлечённый в борьбу')|E] [ruler|El] получит [Concept('claim', 'претензии')|E] на всех вовлечённых правителей, граничащих с ним"
+ struggle_thani_hazad_dissolution_dynasty_modifier_effect:0 "Каждая [Concept('struggle_involved', 'вовлечённая в борьбу')|E] [dynasty|El] получит модификатор [GetModifier('cant_form_thani_hazad_modifier').GetNameWithTooltip]"
 
  struggle_thani_hazad_confederation:0 "Триумф старого порядка"
  struggle_thani_hazad_confederation_description:0 "Пути Балан-Лай выдержали испытание временем. Регион борьбы остаётся активным, но теперь имеет большую тенденцию к сохранению стадии конфедерации."
@@ -1464,7 +1478,9 @@
  struggle_thani_hazad_confederation_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_confederation|E]"
  struggle_thani_hazad_confederation_valid_culture_tooltip:0 "Вы принадлежите к #L [kharadunaimculture.GetCollectiveNoun]ой#! или происходящей от неё культуре"
  struggle_thani_hazad_confederation_valid_modifier_tooltip:0 "У вашей династии нет модификатора «[GetModifier('old_order_triumphant_th_struggle_modifier').GetNameWithTooltip]»"
+ struggle_thani_hazad_confederation_valid_total_land_held:0 "Вы контролируете по крайней мере #V 20%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
  struggle_thani_hazad_confederation_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+ struggle_thani_hazad_confederation_valid_previous_phase_tooltip:0 "Предыдущая фаза [Concept('thani_hazad_struggle', 'Происков Балан-Лай')|E] - [struggle_thani_hazad_phase_confederation|E]"
 
  struggle_thani_hazad_unification:0 "Единство цели"
  struggle_thani_hazad_unification_description:0 "Принцы объединились против чужеземцев - в регионе борьбы не осталось независимых вмешавшихся правителей."
@@ -1476,6 +1492,7 @@
  struggle_thani_hazad_struggle_ends:0 "Вы завершите борьбу «[thani_hazad_struggle|E]»"
 
  struggle_thani_hazad_has_ended_trigger:0 "Борьба «[thani_hazad_struggle|E]» подходит к концу"
+ struggle_thani_hazad_disunity_end_trigger:0 "Ваша династия не может объединить [GetTitleByKey('e_thani_hazad').GetName]"
 
  ##########################
  ### Breeland Decisions ###
@@ -1513,8 +1530,6 @@
  decision_conquest_of_pel:0 "Завоевание Пэла"
  decision_conquest_of_pel_desc:0 "На протяжении бесчисленных лет магрийский народ желал присоединить Пэл к своим королевствам-близнецам. Завоевав королевство, мы сможем закрепить его в качестве основной части королевства Двух корон."
  decision_conquest_of_pel_confirm:0 "От двух корон - к трём"
- realm_size_below_15_sea_dragon_decision:0 "Размер державы не менее 15 владений"
- have_only_sea_counties_sea_dragon_decision:0 "В вашей державе есть только прибрежные графства"
  decision_conquest_of_pel_tooltip:0 "От двух корон - к трём"
 
  #############################

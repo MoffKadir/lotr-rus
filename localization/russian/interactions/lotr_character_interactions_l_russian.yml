@@ -59,4 +59,17 @@
 
  defensive_alliance_is_valid_failure:0 "Вы уже заключили [alliance|El] с персонажем [recipient.GetTitledFirstName]"
 
- LOTR_ASK_FOR_CONVERSION_HARDER_TO_CONVERT:0 "[recipient.GetFaith.GetName|U]ий [core_tenet|El] - Сыновья берегов: $VALUE|=+0$"
+ LOTR_ASK_FOR_CONVERSION_HARDER_TO_CONVERT:0 "#L [recipient.GetFaith.GetName|U]ий#! [core_tenet|El] - Сыновья берегов: $VALUE|=+0$"
+
+ release_as_tributary_interaction:0 "Освободить вассала в качестве данника"
+ lotr_release_as_protectorate_state_effect_tt:0 "[recipient.GetTitledFirstName] станет вашим [Concept('protectorate', 'протекторатом')|E]"
+ lotr_release_as_tributary_state_effect_tt:0 "[recipient.GetTitledFirstName] станет вашим [Concept('tributary_state', 'данником')|E]"
+ lotr_release_as_client_state_effect_tt:0 "[recipient.GetTitledFirstName] станет вашим [Concept('client_state', 'сателлитом')|E]"
+ lotr_can_send_release_as_tributary_tt:0 "Выберите один из доступных вариантов"
+ client_state:0 "Сателлит #weak (Временный [Concept('client_state','данник')|E])#!"
+ tributary_state:0 "Государство-данник #weak (Постоянный [Concept('tributary_state','данник')|E])#!"
+ protectorate_state:0 "Государство-протекторат #weak (Опциональный [Concept('protectorate','данник')|E])#!"
+
+ settle_wilderness_immediately_interaction:0 "Колонизировать все [Concept('colony', 'колониальные')|E] владения"
+
+ ally_with_tributary_ruler:0 "[recipient.GetTitledFirstName] будет [Select_CString(recipient.IsFemale, 'освобождена', 'освобождён' )] в качестве [Concept('tributary', 'данника')|E]"
