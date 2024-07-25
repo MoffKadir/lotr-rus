@@ -2,8 +2,56 @@
 
  lotr_thani_hazad.0001.t:0 "Воля Повелителя Бурь"
  lotr_thani_hazad.0001.desc:0 "Воля Повелителя Бурь известна, приказ разгромить королевство Беллакар получен, и скоро адунайские мечи запоют."
- lotr_thani_hazad.0001.a:0 "Пусть развеваются знамена и звучат боевые горны"
+ lotr_thani_hazad.0001.a:0 "Пусть развеваются знамёна и звучат боевые горны"
 
  lotr_thani_hazad.0002.t:0 "Королевства-близнецы выковали новую корону"
  lotr_thani_hazad.0002.desc:0 "We took the thing and thats pretty swell."
  lotr_thani_hazad.0002.a:0 "three chears and a hip hip huray and all that"
+
+ ## Spy at Balan-lai Court event chain ##
+ lotr_thani_hazad.1001.t:0 "Приятная встреча"
+ lotr_thani_hazad.1001.desc:0 "Я устраиваю небольшой праздник при дворе, на который приглашены мои близкие родственники и большинство придворных. Вечер тёплый, небо чистое, над нами сверкают звёзды, и гости веселятся, как и я. \n\nВ разгар вечеринки ко мне подходит [stormhost_spy.GetFirstName], [Select_CString(stormhost_spy.IsFemale, 'один', 'одна' )] из моих придворных. «[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsName], какое это радостное событие», - начинает [stormhost_spy.GetSheHe]. «Если вы согласны, я хочу показать вам кое-что, что сделает этот вечер ещё прекраснее!» \n\n[stormhost_spy.GetFirstName] желает, чтобы я [Select_CString(ROOT.Char.IsFemale, 'следовала', 'следовал' )] за [Select_CString(stormhost_spy.IsFemale, 'ней', 'ним' )], с восторженным выражением на [stormhost_spy.GetHerHis] лице."
+ lotr_thani_hazad.1001.a:0 "Очень хорошо, [stormhost_spy.GetFirstName], покажи мне, что там ты [Select_CString(stormhost_spy.IsFemale, 'приготовила', 'приготовил' )]."
+ lotr_thani_hazad.1001.b:0 "Разве ты не видишь, что я сейчас очень [Select_CString(ROOT.Char.IsFemale, 'занята', 'занят' )] и наслаждаюсь собой?"
+ lotr_thani_hazad.1001.c:0 "Пойти за тобой в какой-то тёмный угол? Думаю, #italic нет!#! Стража!"
+ lotr_thani_hazad.1001.d:0 "А как насчёт веселья и танцев?"
+
+ lotr_thani_hazad.1020.t:0 "Изысканное дорвинионское вино"
+ lotr_thani_hazad.1020.desc:0 "Когда толпа расступается, чтобы я и [stormhost_spy.GetFirstName] могли пройти, я замечаю небольшой столик, на котором стоит непочатая бутылка вина. Должно быть, это и есть то, что [Select_CString(stormhost_spy.IsFemale, 'хотела', 'хотел' )] показать мне [Select_CString(stormhost_spy.IsFemale, 'моя придворная', 'мой придворный' )]? \n\n«Это из далёкого [Concept('dorwinion', 'Дорвиниона')|E], [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleAsName]», - охотно объясняет [stormhost_spy.GetFirstName]. «Говорят, это одно из лучших вин в тех краях. Могу ли я соблазнить вас попробовать его?»  \n\n[stormhost_spy.GetFirstName] кажется, искренне [Select_CString(stormhost_spy.IsFemale, 'рада', 'рад' )] этому."
+ lotr_thani_hazad.1020.a:0 "Очень хорошо! Давайте выпьем по паре бокалов!"
+ lotr_thani_hazad.1020.b:0 "Лёгкий, достойный вкус, и не более того."
+ lotr_thani_hazad.1020.c:0 "Это мне не нравится, [stormhost_spy.GetFirstName]."
+
+ lotr_thani_hazad.1030.t:0 "Искусный портрет"
+ lotr_thani_hazad.1030.desc:0 "Мы покидаем главный зал моего двора и входим в помещение поменьше, где меня встречает мужчина, стоящий возле пустого холста. Очевидно, он ждал нас. \n\n«Славный портрет для [Select_CString(ROOT.Char.IsFemale, 'славной правительницы', 'славного правителя' )]», - объясняет [Select_CString(stormhost_spy.IsFemale, 'моя придворная', 'мой придворный' )] [stormhost_spy.GetFirstName]. Их глаза обращены ко мне, ожидая ответа или реакции. \n\nВозможно, это дорогое предложение, и всё же - для [Select_CString(ROOT.Char.IsFemale, 'такой правительницы', 'такого правителя' )], как я, оно вполне может подойти..."
+ lotr_thani_hazad.1030.a:0 "Отличная идея!"
+ lotr_thani_hazad.1030.b:0 "Привилегия изобразить #italic меня#! должна быть достаточной наградой."
+ lotr_thani_hazad.1030.c:0 "Это мне не нравится, [stormhost_spy.GetFirstName]."
+
+ lotr_thani_hazad.1040.t:0 "Экзотическая птица"
+ lotr_thani_hazad.1040.desc:0 "Когда [Select_CString(stormhost_spy.IsFemale, 'моя придворная', 'мой придворный' )] [stormhost_spy.GetFirstName] ведёт меня на другую сторону зала, я замечаю впереди вспышку ярких красок. Это сидящая в клетке певчая птица, каких я никогда раньше не [Select_CString(ROOT.Char.IsFemale, 'видела', 'видел' )]. Создание спокойно встречает мой взгляд, а затем издаёт краткое мелодичное щебетание. \n\n«Я [Select_CString(stormhost_spy.IsFemale, 'была уверена', 'был уверен' )], что вам понравится общество такой благородной птицы, как эта», - охотно объясняет [Select_CString(stormhost_spy.IsFemale, 'моя придворная', 'мой придворный' )]. \n\nМне кажется, [stormhost_spy.GetSheHe] [Select_CString(stormhost_spy.IsFemale, 'рада', 'рад' )], но, конечно, эта певчая птица обойдётся мне в целое состояние?"
+ lotr_thani_hazad.1040.a:0 "Поистине чудесное создание!"
+ lotr_thani_hazad.1040.b:0 "Такое #italic восхитительное#! зрелище! Это должно принадлежать мне!"
+ lotr_thani_hazad.1040.c:0 "Это мне не нравится, [stormhost_spy.GetFirstName]."
+
+ lotr_thani_hazad.1101.t:0 "Смелая просьба"
+ lotr_thani_hazad.1101.desc:0 "Когда я вхожу в свой большой зал, чтобы выдать поручения своим слугам, ко мне обращается [stormhost_spy.GetFirstName]. «Минутку вашего времени, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleAsName]?» - спрашивает [stormhost_spy.GetSheHe], и я киваю в знак согласия. \n\n«Я преданно [Select_CString(stormhost_spy.IsFemale, 'служила', 'служил' )] вам, мой сюзерен, и хочу сделать больше. Прошу вас оказать мне честь стать [Select_CString(stormhost_spy.IsFemale, 'вашей тайной советницей', 'вашим тайным советником' )]». \n\nЯ [Select_CString(ROOT.Char.IsFemale, 'удивлена', 'удивлён' )], возможно, даже немного [Select_CString(ROOT.Char.IsFemale, 'ошеломлена', 'ошеломлён' )] такой дерзкой просьбой. Это не то решение, которое я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] принимать легкомысленно..."
+ lotr_thani_hazad.1101.a:0 "Очень хорошо... служи мне верой и правдой, [stormhost_spy.GetFirstName]."
+ lotr_thani_hazad.1101.b:0 "У меня уже есть довольно способный тайный советник."
+ lotr_thani_hazad.1101.c:0 "Я не доверяю тебе... и никогда не [Select_CString(ROOT.Char.IsFemale, 'доверяла', 'доверял' )]!"
+
+ lotr_thani_hazad.1150.t:0 "Шепот в моих ушах"
+ lotr_thani_hazad.1150.desc:0 "Прошло некоторое время с тех пор, как [stormhost_spy.GetFirstName] [Select_CString(stormhost_spy.IsFemale, 'получила', 'получил' )] должность [Select_CString(stormhost_spy.IsFemale, 'тайной советницы', 'тайного советника' )]. За последние несколько дней [stormhost_spy.GetSheHe] часто [Select_CString(stormhost_spy.IsFemale, 'подходила', 'подходил' )] ко мне, желая побеседовать со мной. \n\n«Мои донесения показывают, что [GetTitleByKey('e_thon_an_kharlokh').GetName] наращивает свою мощь день за днём, [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleAsName]», - заявляет [stormhost_spy.GetSheHe]. «Возможно, [stormking.GetName] не вторгнется в нашу державу, если мы выплатим [Select_CString(stormking.IsFemale, 'ей', 'ему' )] дань?» \n\nК такому предложению не стоит относиться легкомысленно..."
+ lotr_thani_hazad.1150.desc.new:0 "Ко мне вновь обращается [Select_CString(stormhost_spy.IsFemale, 'моя придворная', 'мой придворный' )] [stormhost_spy.GetFirstName], повторяя свой совет. «[stormking.GetName] из державы [GetTitleByKey('e_thon_an_kharlokh').GetName] оставит нас в покое, если мы станем их данниками». \n\n«Так будет лучше для державы», - настаивает [stormhost_spy.GetSheHe]."
+ lotr_thani_hazad.1150.a:0 "Возможно, это действительно мудрое решение..."
+ event_thani_hazad_1155_a:0 "[stormking.GetName] становится вашим [Concept('suzerain', 'сюзереном')|E]."
+ lotr_thani_hazad.1150.b:0 "Это #italic ужасная#! идея!"
+ lotr_thani_hazad.1150.c:0 "Предлагать подобное... это #italic измена#!."
+ lotr_thani_hazad.1150.d:0 "Не предлагайте больше таких глупостей!"
+
+ lotr_thani_hazad.1200.t:0 "Тайна раскрыта"
+ lotr_thani_hazad.1200.desc:0 "Поздно вечером ко мне обращается [Select_CString(spymaster.IsFemale, 'моя тайная советница', 'мой тайный советник' )], [spymaster.GetFirstName]. \n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsName], у меня тяжкие новости», - начинает [spymaster.GetSheHe]. «Я [Select_CString(spymaster.IsFemale, 'обнаружила', 'обнаружил' )], что [stormking.GetName] получает из нашего двора тайные письма с донесениями, к которым [Select_CString(stormhost_spy.IsFemale, 'приложила', 'приложил' )] свою печать [stormhost_spy.GetFirstName], [Select_CString(stormhost_spy.IsFemale, 'ваша придворная', 'ваш придворный' )]! [stormhost_spy.GetSheHe] - [Select_CString(stormhost_spy.IsFemale, 'шпионка', 'шпион' )]!» \n\nЯ [Select_CString(ROOT.Char.IsFemale, 'потрясена', 'потрясён' )] этим открытием. Шпионы при моём дворе? Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] отреагировать соответствующим образом и немедленно."
+ lotr_thani_hazad.1200.desc.new:0 "Когда я веду придворный приём в своём большом зале, ко мне подходит [Select_CString(spymaster.IsFemale, 'моя тайная советница', 'мой тайный советник' )] [spymaster.GetFirstName]. «У меня новости касательно [Select_CString(stormhost_spy.IsFemale, 'вашей узницы', 'вашего узника' )]. [stormhost_spy.GetFirstName]...», - начинает [spymaster.GetSheHe]. «Проведя некоторое время в подземелье, [stormhost_spy.GetFirstName] наконец [Select_CString(stormhost_spy.IsFemale, 'признала', 'признал' )] правду: [stormhost_spy.GetSheHe] - [Select_CString(stormhost_spy.IsFemale, 'шпионка, которую', 'шпион, которого' )] [Select_CString(stormking.IsFemale, 'подослала', 'подослал' )] к нам [stormking.GetName]!» \n\nХотя это откровение и шокирует, оно подтверждает мои подозрения. Учитывая тяжесть проступков, которые [Select_CString(stormhost_spy.IsFemale, 'могла', 'мог' )] совершить [stormhost_spy.GetFirstName]... Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] разобраться с [Select_CString(stormhost_spy.IsFemale, 'ней', 'ним' )] соответствующим образом и немедленно."
+ lotr_thani_hazad.1200.a:0 "За измену надо платить... отрубить [stormhost_spy.GetHerHim] голову!"
+ lotr_thani_hazad.1200.b:0 "Я проявлю милосердие. [stormhost_spy.GetFirstName], ты будешь [Select_CString(stormhost_spy.IsFemale, 'изгнана', 'изгнан' )]."
+ lotr_thani_hazad.1200.c:0 "Если я пощажу тебя, ты [Select_CString(stormhost_spy.IsFemale, 'должна', 'должен' )] предать своего хозяина и стать моим агентом."
