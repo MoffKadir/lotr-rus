@@ -1,5 +1,9 @@
 ﻿l_english:
  EXECUTION_ENTHRALL:0 "Turn into Undead Thrall"
+
+ NO_TORTURING_UNDEAD:0 "Undead can't be tortured"
+
+ can_not_recruit_undead:0 "Only a necromancer can recruit undead characters"
  
  extract_blood_price_interaction:0 "Extract the Blood Price"
  extract_blood_price_interaction_desc:0 "[prisoner.GetFirstNameNoTooltip] can not be paid with gold or time. Only blood will satisfy us."
@@ -47,8 +51,8 @@
  DUEL_FOR_CLAIM_TITLE_TIER:0 "Dueling for a [target.GetTierAsName]: #P +$VALUE|0$#!"
  DUEL_FOR_CLAIM_DE_JURE_LIEGE:0 "[recipient.GetShortUINameNoTooltip] is the [de_jure|E] Liege of [target.GetNameNoTier]: #P +$VALUE|0$#!"
  DUEL_FOR_CLAIM_LAST_TITLE:0 "[recipient.GetShortUINameNoTooltip] would become unlanded if [recipient.GetSheHe] refused: #P +$VALUE|0$#!"
- DUEL_FOR_CLAIM_INFIRM:0 "[recipient.GetShortUINameNoTooltip] has the trait [infirm|E]: #P +$VALUE|0$#!"
- DUEL_FOR_CLAIM_INCAPABLE:0 "[recipient.GetShortUINameNoTooltip] has the trait [incapable|E]: #P +$VALUE|0$#!"
+ DUEL_FOR_CLAIM_INFIRM:0 "[recipient.GetShortUINameNoTooltip] has the trait [GetTrait('infirm').GetName( GetNullCharacter )]: #P +$VALUE|0$#!"
+ DUEL_FOR_CLAIM_INCAPABLE:0 "[recipient.GetShortUINameNoTooltip] has the trait [GetTrait('incapable').GetName( GetNullCharacter )]: #P +$VALUE|0$#!"
  
  prowess_claim_interaction:0 "Claim Land via Prowess"
  prowess_claim_interaction_desc:0 "[claim|E] a [title|E] held by [recipient.GetShortUINameNoTooltip], using your superior [prowess|E] and [prestige|E]."
@@ -61,6 +65,10 @@
  disrupt_arcana_interaction:0 "Disrupt"
  disrupt_arcana_interaction_desc:0 "Make [recipient.GetShortUINameNoTooltip]'s [arcana|E] Affinity closer to [GetTrait('arcana_bad_3').GetName( GetPlayer )]"
  
+ adopt_hatchling_interaction:0 "Adopt Hatchling"
+ adopt_hatchling_interaction_desc:0 "Adopt [recipient.GetShortUINameNoTooltip] into your own [dynasty|E]"
+ adopt_hatchling_interaction.tt:0 "[recipient.GetShortUINameNoTooltip] will leave the prison and be adopted as your [recipient.Custom('GetDaughterSon')]"
+
  no_obligations:0 "No Obligations"
  no_obligations_tt:0 "[feudal_contract|E] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_none' )]"
  CONTRACT_NO_OBLIGATIONS_REASON:0 "No Obligations: $VALUE|=+0$"
@@ -89,9 +97,10 @@
  EDUCATE_ME_OPTION_TRAIN_ARCANA_LEARNING_FOCUS_EFFECT:1 "I am studying the [learning|E] Education and will receive a better #V Student of Magicka#! [trait|E]"
  EDUCATE_CHILD_OPTION_TRAIN_ARCANA_LEARNING_FOCUS_EFFECT:1 "Is studying the [learning|E] Education and will receive a better #V Student of Magicka#! [trait|E]"
  EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_1:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has a [tradition|E] unlocking Magic education, or the child's [dynasty|E] has the #V $magicka_legacy_3_name$#! [dynasty_perk|E], you need to find a Tutor with a #V $trait_education_magical_ability$#! or #V $trait_arcana_good$#! [trait|E]"
- EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_2:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has a the #V $innovation_schools_of_magic$#! [innovation|E], you need to find a Tutor with a #V $trait_education_magical_ability$#! or #V $trait_arcana_good$#! [trait|E]"
- EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_3:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has a the #V $innovation_magical_studies$#! [innovation|E], you need to find a Tutor with a #V $trait_arcana_good$#! [trait|E]"
- EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_4:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture neither has the #V $innovation_magical_studies$#! or #V $innovation_schools_of_magic$#! [innovation|E], does not have a [tradition|E] unlocking Magic education, and their [dynasty|E] does not have the #V $magicka_legacy_3_name$#! [dynasty_perk|E], Magical education is #N impossible#!."
+ EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_2:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has the #V $innovation_schools_of_magic$#! [innovation|E], you need to find a Tutor with a #V $trait_education_magical_ability$#! or #V $trait_arcana_good$#! [trait|E]"
+ EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_3:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has the #V $innovation_magical_studies$#! or #V $innovation_lunar_mysteries$#! [innovation|E], you need to find a Tutor with a #V $trait_arcana_good$#! [trait|E]"
+ EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_4:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture neither has the #V $innovation_magical_studies$#!, #V $innovation_lunar_mysteries$#! or #V $innovation_schools_of_magic$#! [innovation|E], does not have a [tradition|E] unlocking Magic education, and their [dynasty|E] does not have the #V $magicka_legacy_3_name$#! [dynasty_perk|E], Magical education is #N impossible#!."
+
 
  consume_interaction:0 "Consume"
  consume_interaction_desc:0 "Consume [recipient.GetShortUINameNoTooltip] in the endeavor to increase [tsaescence|E] and possibly changing your [personality_traits|E] and [skills|E]!"
@@ -158,3 +167,8 @@
  BLACKMAIL_NOTIFICATION_SECRET_VAMPIRE:0 "\nI have evidence of your thirst for blood!"
  BLACKMAIL_NOTIFICATION_SECRET_LYCAN:0 "\nI have evidence of you true beastly form!"
  BLACKMAIL_NOTIFICATION_SECRET_NECROMANCER:0 "\nI have evidence of your defilement of life and death!"
+
+ # Holding Interactions
+ destroy_hist_holding_interaction:0 "Destroy Hist"
+ destroy_hist_holding_interaction_desc:0 "Destroy all [buildings|E] in this [holding|E] and turn it into a temple"
+ destroy_hist_holding_interaction_notification:0 "Destroyed Hist"

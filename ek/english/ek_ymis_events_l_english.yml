@@ -8,7 +8,7 @@
  ek_ymis_events.0001.b:0 "Why don’t you fight [combatant.GetFirstName]? I’m sure [combatant.GetSheHe] will best you."
  ek_ymis_events.0001.b.tt:0 "[combatant.GetFirstName] and [old_orc.GetFirstName] will fight in a duel to the death."
  ek_ymis_events.0001.c:0 "It will be an honor to grant you this wish."
- ek_ymis_events.0001.c.tt:0 "[old_orc.GetFirstName] and you will fight in a duel to the death."
+ ek_ymis_events.0001.c.tt:0 "@death_icon! [old_orc.GetFirstName] and you will fight in a duel to the death."
  ek_ymis_events.0001.d:0 "Seek your glorious death elsewhere, you won't find it here."
 
  ek_ymis_events.0003.t:0 "The Old Orc: Still Seeking his Death"
@@ -32,13 +32,13 @@
  ek_ymis_events.0007.desc:0 "[old_orc.GetFirstName] and [combatant.GetFirstName] dash at each other before my very eyes, their weapons drawn. The old Orc did not lie: he is a fierce duelist, and he certainly doesn’t want to die without giving his very best in his last fight. But [combatant.GetFirstName] doesn’t want to die at all, and [old_orc.GetFirstName] finds himself both outmatched and outmaneuvered by [combatant.GetHerHis] skill. With a fast and precise attack, [combatant.GetSheHe] shatters [old_orc.GetFirstName]’s guard and takes his life. The old Orc dies with a relieved smile.\n\nNow I have to decide what to do with his bulky yet impressive armor."
  ek_ymis_events.0007.a:0 "[combatant.GetFirstName] shall take it. [combatant.GetSheHe|U] deserves it."
  ek_ymis_events.0007.b:0 "I will claim it for myself."
- ek_ymis_events.0007.a.tt:0 "[combatant.GetFirstName] gains [old_orc.GetFirstNameNoToolTip]'s Armor"
- ek_ymis_events.0007.b.tt:0 "You gain [old_orc.GetFirstNameNoToolTip]'s Armor"
+ ek_ymis_events.0007.a.tt:0 "[combatant.GetFirstName] gains [old_orc.GetFirstNameNoTooltip]'s Armor"
+ ek_ymis_events.0007.b.tt:0 "You gain [old_orc.GetFirstNameNoTooltip]'s Armor"
 
  ek_ymis_events.0008.t:0 "The Old Orc: Finally at Peace" 
  ek_ymis_events.0008.desc:0 "[old_orc.GetFirstName] did not lie: he is a fierce duelist, and he certainly doesn’t want to die without giving his very best in his last fight. But in the end, he was no match for my skill. Moments before I delivered the final blow, for but a split of a second a relieved smile appeared on the old Orc's face.\n\nAs he lies dead at my feet, I notice the bulky yet impressive armor he was wearing. Certainly a fitting reward for sending his soul to his god."
  ek_ymis_events.0008.a:0 "Well, he won’t need it anymore."
- ek_ymis_events.0008.a.tt:0 "You claim [old_orc.GetFirstNameNoToolTip]'s Armor."
+ ek_ymis_events.0008.a.tt:0 "You claim [old_orc.GetFirstNameNoTooltip]'s Armor."
 
  ek_ymis_events.0009.t:0 "The Would-Be Artist"
  ek_ymis_events.0009.desc:0 "My [wannabe_artist.Custom('GetDaughterSon')] approaches me, hands shaking and eyes darting across the room. “Please hear me out,” [wannabe_artist.GetSheHe] says. “I can’t bear this life anymore. All this formality, all these pointless rituals. I want to be free. Let me join the House of Reveries where I can start anew and be whom my heart always desired to be: an artist. Freed of the burden of my lineage and my name.” \n\nI am startled. My own [wannabe_artist.Custom('GetDaughterSon')] wants to join an artist troupe and leave [wannabe_artist.GetHerHis] old life behind? How should I react?"
@@ -164,7 +164,7 @@
  ek_ymis_events.0029b:0 "This is too dangerous."
 
  ek_ymis_events.0030.t:0 "Necromancy: Exchange Expertise"
- ek_ymis_events.0030.desc:0 "Studying and practicing necromancy can be a lonely pursuit. Likeminded magicians are few and far between, and there is no one to really discuss new theories with or share past experiences on this matter.\n\nSo, it might be a good idea to reach out to someone with similar interests and abilities. [necromancer_contact.GetFirstName] could be a suitable candidate for this endeavor. Should I write [necromancer_contact.GetHerHim] a letter proposing a joint venture?\n\nWe could both benefit from it, but [necromancer_contact.GetFirstNameNoToolTip] might perceive it as an affront."
+ ek_ymis_events.0030.desc:0 "Studying and practicing necromancy can be a lonely pursuit. Likeminded magicians are few and far between, and there is no one to really discuss new theories with or share past experiences on this matter.\n\nSo, it might be a good idea to reach out to someone with similar interests and abilities. [necromancer_contact.GetFirstName] could be a suitable candidate for this endeavor. Should I write [necromancer_contact.GetHerHim] a letter proposing a joint venture?\n\nWe could both benefit from it, but [necromancer_contact.GetFirstNameNoTooltip] might perceive it as an affront."
  ek_ymis_events.0030a:0 "This would benefit us both."
  ek_ymis_events.0030a.tt.success:0 "[necromancer_contact.GetFirstName|U] gladly shares his knowledge with you."
  ek_ymis_events.0030a.tt.failure:0 "[necromancer_contact.GetFirstName|U] is insulted by your request."
@@ -172,8 +172,8 @@
  ek_ymis_events.0030c:0 "My knowledge is for myself!"
 
  ek_ymis_events.0031.t:0 "An Exchange of Expertise"
- ek_ymis_events.0031.opening:0 "[sender.necromancer_contact_seeker('AppropriateGreeting', ROOT.Char)]"
- ek_ymis_events.0031.desc:0 "Dear [necromancer_contact.GetFirstNameNoToolTip],\nsince you share my interest in the fascinating and valuable art of necromancy, I want to propose an exchange of knowledge on this matter. To combine our resources and insights about the more hidden aspects of this art will surely benefit us both. I am sincerely looking forward to your response." 
+ ek_ymis_events.0031.opening:0 "[sender.Custom2('AppropriateGreeting', ROOT.Char)]"
+ ek_ymis_events.0031.desc:0 "Dear [necromancer_contact.GetFirstNameNoTooltip],\nsince you share my interest in the fascinating and valuable art of necromancy, I want to propose an exchange of knowledge on this matter. To combine our resources and insights about the more hidden aspects of this art will surely benefit us both. I am sincerely looking forward to your response." 
 
  ek_ymis_events.0032.t:0 "Necromancy: A Gifted Child"
  ek_ymis_events.0032.desc:0 "The older [necromancy_ward.GetFirstName] gets, the more blatant [necromancy_ward.GetHerHis] magical abilities become. While it is a joy to see such a talented child growing up under my guidance, it also feels like a wasted opportunity to not teach [necromancy_ward.GetHerHim] everything I know, including the dark art of necromancy.\n\nIt could be beneficial to have such a young and skilled adept at my side, and just thinking of the things [necromancy_ward.GetSheHe] could be capable of after years of experience sends curious shivers down my spine.\n\nMaybe I should try to convince the child that there is so much to learn about magic if [necromancy_ward.GetSheHe] follows me down the path of necromancy."
@@ -229,7 +229,7 @@
  ek_ymis_events.0050.t:0 "Fruitless Transmutation"
  ek_ymis_events.0050.desc:0 "I am eagerly awaiting the large sum of gold I ordered [court_mage.GetFirstName] to transmute for me, but instead of the pile of shiny metal I was expecting, there is just a small heap. [court_mage.GetSheHe|U] is standing behind it, a sorry look on [court_mage.GetHerHis] face.\n\n"My liege, I must confess that my attempts to transmute base metals into gold have proven unsuccessful this time. As you can see, I could only create a small amount. But I am confident that together, we can overcome this setback and continue to prosper. Please accept my sincerest apologies for my failure. I will do everything in my power to make amends and regain your trust.""
  ek_ymis_events.0050a:0 "I am sure, you did the best you could."
- ek_ymis_events.0050b:0 "What if [court_mage.GetFirstSheHe] is lying? I must investigate this further."
+ ek_ymis_events.0050b:0 "What if [court_mage.GetSheHe] is lying? I must investigate this further."
  ek_ymis_events.0050b.tt:0 "Who knows what you will find?"
  ek_ymis_events.0050b.success:0 "You may uncover the truth."
  ek_ymis_events.0050b.failure:0 "Your investigation will fail."

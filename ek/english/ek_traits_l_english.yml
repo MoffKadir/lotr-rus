@@ -23,14 +23,17 @@
  trait_guild_fighters_traits:0 "Fighters Guild"
  
  trait_pirate:0 "Pirate"
- trait_pirate_desc:0 "This character is a Pirate. Arrrr matey!"
+ trait_pirate_desc:0 "This character is a Pirate. Arrrr matey!\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with [pirate_government|E].#!"
  trait_pirate_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a Pirate. Arrrr matey!"
 
  trait_plunderer:0 "Plunderer"
  trait_plunderer_desc:0 "True power can only be achieved by seizing what is rightfully yours. And the whole world and its riches are rightfully yours."
 
+ trait_crimeboss:0 "Crimeboss"
+ trait_crimeboss_desc:0 "There are many dark forces and malicious factions at play in the lands of Tamriel and this character has decided to use them to their advantage."
+
  trait_necromancer:0 "Necromancer"
- trait_necromancer_desc:0 "This character is known to defile the corpses of the dead, manipulating their souls and raising their bodies to do their bidding."
+ trait_necromancer_desc:0 "This character is known to defile the corpses of the dead, manipulating their souls and raising their bodies to do their bidding.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game as a secret necromancer.#!"
  trait_necromancer_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is known to defile the corpses of the dead, manipulating their souls and raising their bodies to do [ROOT.GetCharacter.GetHerHis] bidding."
 
  trait_reclusive_vampire:0 "Reclusive"
@@ -40,9 +43,10 @@
  trait_vampire_player_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is secretly a vampire, an undead creature cursed to drink the blood of the living and to shun sunlight."
 
  trait_vampire_character:0 "Vampire"
- trait_vampire_character_desc:0 "This character is a vampire, an undead creature cursed to drink the blood of the living and to shun sunlight."
+ trait_vampire_character_desc:0 "This character is a vampire, an undead creature cursed to drink the blood of the living and to shun sunlight.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game as a secret vampire.#!"
  trait_vampire_character_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a vampire, an undead creature cursed to drink the blood of the living and to shun sunlight." #character_character
 
+# Diseases
  trait_sanguinare_vampiris:0 "Sanguinare Vampiris"
  trait_sanguinare_vampiris_desc:0 "This character has contracted Sanguinare Vampiris, a disease contracted by coming into contact with vampires that causes weakness during the day and thirst by night. If it is not treated soon, its consequences may be dire."
  trait_sanguinare_vampiris_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has contracted Sanguinare Vampiris, a disease contracted by coming into contact with vampires that causes weakness during the day and thirst by night. If it is not treated soon, its consequences may be dire." #character_character
@@ -53,6 +57,17 @@
  trait_sanies_lupinus_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has contracted Sanies Lupinus, a disease contracted by coming into contact lycanthropes that causes drowsiness. If it is not treated soon, its consequences may be dire." #character_character
  disease_sanies_lupinus:0 "Sanies Lupinus."
 
+ trait_chrondiasis:0 "Chrondiasis"
+ trait_chrondiasis_desc:0 "This character has contracted Chrondiasis, a magical disease that only affects those capable of the arcane. It slowly consumes a person's intelligence and magicka and can leave the victim feebleminded or even dead."
+ trait_chrondiasis_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has contracted Chrondiasis, a magical disease that only affects those capable of the arcane. It slowly consumes a persons' intelligence and magicka and can leave the victim feebleminded or even dead."
+ disease_chrondiasis:0 "Chrondiasis."
+
+ trait_peryite_affliction:0 "Peryite's Affliction"
+ trait_peryite_affliction_desc:0 "This character has contracted Peryite's Affliction, a Daedric disease sent by the Prince of Pestilence themself. The infection nests in the host's body for a long time. On some days it is barely noticeable, on others it causes violent febrile convulsions and vomiting of corrosive slime."
+ trait_peryite_affliction_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has contracted Peryite's Affliction, a daedric disease sent by the Prince of Pestilence themself. The infection nests in the host's body for a long time. On some days it is barely noticeable, on others it causes violent febrile convulsions and vomiting of corrosive slime."
+ disease_peryite_affliction:0 "Peryite's Affliction."
+
+ # Transformations
  trait_irritable_lycan:0 "Irritable"
  trait_irritable_lycan_desc:0 "Stress has made this character prone to frequent outbursts and tantrums."
  trait_irritable_lycan_character_desc:0 "Stress has made [ROOT.GetCharacter.GetFirstNameNoTooltip] prone to frequent outbursts and tantrums."
@@ -60,7 +75,7 @@
  trait_lycan_player_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is secretly a lycanthrope, an unnatural cross between a beast and their original race."
 
  trait_lycan_character:0 "Lycanthrope"
- trait_lycan_character_desc:0 "This character is a lycanthrope, a creature cursed to shift forms under the influence of Nirn's moons."
+ trait_lycan_character_desc:0 "This character is a lycanthrope, a creature cursed to shift forms under the influence of Nirn's moons.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game as a secret lycanthrope.#!"
  trait_lycan_character_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a lycanthrope, a creature cursed to shift forms under the influence of Nirn's moons." #character_character
 
 
@@ -103,6 +118,9 @@
  trait_education_magical_ability_4:0 "Master Mage"
  trait_education_magical_ability_4_desc:0 "This character was taught by some of the best wizards in Tamriel, and displays both an impressive natural arcana and a willingness to learn all there is about the magical arts."
  trait_education_magical_ability_4_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] was taught by some of the best wizards in Tamriel, and displays both an impressive natural arcana and a willingness to learn all there is about the magical arts."
+ trait_education_magical_ability_5:0 "Supreme Magus"
+ trait_education_magical_ability_5_desc:0 "This character only learned from the most powerful and knowledgeable wizards and has reached the pinnacle of magical understanding. The boundaries of reality itself are no longer a match for such abilities."
+ trait_education_magical_ability_5_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] only learned from the most powerful and knowledgeable wizards and has reached the pinnacle of magical understanding. The boundaries of reality itself are no longer a match for such abilities."
 
  trait_unmourned_blood:0 "Unmourned Blood"
  trait_unmourned_blood_desc:0 "This character seems to have something off about their lineage, but the true nature of it remains a mystery."
@@ -150,6 +168,8 @@
 
  trait_bagarn:0 "Last of His Kind"
  trait_bagarn_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is the last of [ROOT.GetCharacter.GetHerHis] kind. There is no hope for [ROOT.GetCharacter.GetHerHim] to ever see [ROOT.GetCharacter.GetHerHis] peers again."
+ trait_bagarn_alive_desc:0 "For millennia [ROOT.GetCharacter.GetFirstNameNoTooltip] was the last of [ROOT.GetCharacter.GetHerHis] kind, until through a miracle the Dwemer returned to existence. A long and lonely life has however forever scarred [ROOT.GetCharacter.GetFirstNameNoTooltip], mentally and physically, and [ROOT.GetCharacter.GetSheHe] will never be quite the same again."
+ trait_bagarn_cannot_grant_land:0 "[recipient.GetFullName] has [GetTrait('bagarn').GetName( recipient.Self )], and no $heritage_dwemeri_name$ [culture|E] is considered [living_culture_short|E]"
 
  trait_line_of_x:0 "Line of [ROOT.Char.GetFirstNameNoTooltip]" # assume named Line of X
  trait_line_of_x_null:0 "Line of X" # incase character doesnt exist
@@ -159,24 +179,24 @@
  trait_lifespan:0 "[gc_lifespan|E]"
  
  trait_lifespan_1:1 "Lifespan I #italic ([gc_lifespan|E])#!"
- trait_lifespan_1_character_desc:1 "By means of nature or magicka, it is expected that [ROOT.GetCharacter.GetFirstNameNoTooltip] will live into [ROOT.GetCharacter.GetHerHis] early 100s. Women with this trait will become infertile at around age 65."
- trait_lifespan_1_desc:1 "By means of nature or magicka, it is expected that this character will live into their early 100s. Women with this trait will become infertile at around age 65."
+ trait_lifespan_1_desc:1 "By means of nature or magicka, this character might live into their early 100s. Women with this trait will become infertile at around age 85."
+ trait_lifespan_1_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] early 100s. Women with this trait will become infertile at around age 85."
  
  trait_lifespan_2:1 "Lifespan II #italic ([gc_lifespan|E])#!"
- trait_lifespan_2_character_desc:1 "By means of nature or magicka, it is expected that [ROOT.GetCharacter.GetFirstNameNoTooltip] will live into [ROOT.GetCharacter.GetHerHis] mid 100s. Women with this trait will become infertile at around age 105."
- trait_lifespan_2_desc:1 "By means of nature or magicka, it is expected that this character will live into their mid 100s. Women with this trait will become infertile at around age 105."
+ trait_lifespan_2_desc:1 "By means of nature or magicka, this character might live into their mid 100s. Women with this trait will become infertile at around age 115."
+ trait_lifespan_2_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 100s. Women with this trait will become infertile at around age 115."
  
  trait_lifespan_3:1 "Lifespan III #italic ([gc_lifespan|E])#!"
- trait_lifespan_3_desc:1 "By means of nature or magicka, it is expected that this character will live into their mid 200s. Women with this trait will become infertile at around age 160."
- trait_lifespan_3_character_desc:1 "By means of nature or magicka, it is expected that [ROOT.GetCharacter.GetFirstNameNoTooltip] will live into [ROOT.GetCharacter.GetHerHis] mid 200s. Women with this trait will become infertile at around age 160."
+ trait_lifespan_3_desc:1 "By means of nature or magicka, this character might live into their mid 200s. Women with this trait will become infertile at around age 150."
+ trait_lifespan_3_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 200s. Women with this trait will become infertile at around age 150."
  
  trait_lifespan_4:1 "Lifespan IV #italic ([gc_lifespan|E])#!"
- trait_lifespan_4_desc:1 "By means of nature or magicka, it is expected that this character will live into their mid 300s. Women with this trait will become infertile at around age 215."
- trait_lifespan_4_character_desc:1 "By means of nature or magicka, it is expected that [ROOT.GetCharacter.GetFirstNameNoTooltip] will live into [ROOT.GetCharacter.GetHerHis] mid 300s. Women with this trait will become infertile at around age 215."
+ trait_lifespan_4_desc:1 "By means of nature or magicka, this character might live into their mid 300s. Women with this trait will become infertile at around age 215."
+ trait_lifespan_4_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 300s. Women with this trait will become infertile at around age 215."
  
  trait_lifespan_5:1 "Lifespan V #italic ([gc_lifespan|E])#!"
- trait_lifespan_5_desc:1 "By means of nature or magicka, it is expected that this character will live into their 550s. Women with this trait will become infertile at around age 335."
- trait_lifespan_5_character_desc:1 "By means of nature or magicka, it is expected that [ROOT.GetCharacter.GetFirstNameNoTooltip] will live into [ROOT.GetCharacter.GetHerHis] 550s. Women with this trait will become infertile at around age 335."
+ trait_lifespan_5_desc:1 "By means of nature or magicka, this character might live into their mid 500s. Women with this trait will become infertile at around age 340."
+ trait_lifespan_5_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 500s. Women with this trait will become infertile at around age 340."
  
  trait_lifespan_6:1 "Immortality #italic ([gc_lifespan|E])#!"
  trait_lifespan_6_desc:1 "This character will not die of old age, but that comes at a cost to both their body and mind."
@@ -186,8 +206,8 @@
  
  trait_clan_mother:0 "Clan-Mother"
  trait_clan_father:0 "Clan-Father"
- trait_clan_parent_desc:0 "This character's wisdom and old age let them hold a sizeable amount of respect and autority among their tribe and family."
- trait_clan_parent_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]'s wisdom and old age let [ROOT.GetCharacter.GetHerHim] hold a sizeable amount of respect and autority among their tribe and family."
+ trait_clan_parent_desc:0 "This character's wisdom and old age let them hold a sizeable amount of respect and authority among their tribe and family."
+ trait_clan_parent_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip]'s wisdom and old age let [ROOT.GetCharacter.GetHerHim] hold a sizeable amount of respect and authority among their tribe and family."
 
  trait_wilderking:0 "The Wilderking"
  trait_wilderking_desc:0 "The Wilderking is a self-proclaimed spirit of the forests of Valenwood, which operates through the bodies of mortals born with a special connection to the land."
@@ -195,53 +215,53 @@
 
  # Crimes
  trait_azura_worshipper:0 "Worshipper of $azura$"
- trait_azura_worshipper_desc:0 "This character secretly served $azura$, the $azura_alt$, an act that is considered sacrilegeous by many faiths."
- trait_azura_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $azura$, the $azura_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_azura_worshipper_desc:0 "This character served $azura$, the $azura_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_azura_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $azura$, the $azura_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_boethiah_worshipper:0 "Worshipper of $boethiah$"
- trait_boethiah_worshipper_desc:0 "This character secretly served $boethiah$, the $boethiah_alt$, an act that is considered sacrilegeous by many faiths."
- trait_boethiah_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $boethiah$, the $boethiah_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_boethiah_worshipper_desc:0 "This character served $boethiah$, the $boethiah_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_boethiah_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $boethiah$, the $boethiah_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_clavicus_worshipper:0 "Worshipper of $clavicus$"
- trait_clavicus_worshipper_desc:0 "This character secretly served $clavicus$, the $clavicus_alt$, an act that is considered sacrilegeous by many faiths."
- trait_clavicus_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $clavicus$, the $clavicus_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_clavicus_worshipper_desc:0 "This character served $clavicus$, the $clavicus_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_clavicus_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $clavicus$, the $clavicus_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_hermaeus_worshipper:0 "Worshipper of $hermaeus$"
- trait_hermaeus_worshipper_desc:0 "This character secretly served $hermaeus$, the $hermaeus_alt$, an act that is considered sacrilegeous by many faiths."
- trait_hermaeus_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $hermaeus$, the $hermaeus_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_hermaeus_worshipper_desc:0 "This character served $hermaeus$, the $hermaeus_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_hermaeus_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $hermaeus$, the $hermaeus_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_hircine_worshipper:0 "Worshipper of $hircine$"
- trait_hircine_worshipper_desc:0 "This character secretly served $hircine$, the $hircine_alt$, an act that is considered sacrilegeous by many faiths."
- trait_hircine_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $hircine$, the $hircine_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_hircine_worshipper_desc:0 "This character served $hircine$, the $hircine_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_hircine_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $hircine$, the $hircine_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_malacath_worshipper:0 "Worshipper of $malacath$"
- trait_malacath_worshipper_desc:0 "This character secretly served $malacath$, the $malacath_alt$, an act that is considered sacrilegeous by many faiths."
- trait_malacath_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $malacath$, the $malacath_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_malacath_worshipper_desc:0 "This character served $malacath$, the $malacath_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_malacath_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $malacath$, the $malacath_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_mehrunes_worshipper:0 "Worshipper of $mehrunes$"
- trait_mehrunes_worshipper_desc:0 "This character secretly served $mehrunes$, the $mehrunes_alt$, an act that is considered sacrilegeous by many faiths."
- trait_mehrunes_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $mehrunes$, the $mehrunes_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_mehrunes_worshipper_desc:0 "This character served $mehrunes$, the $mehrunes_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_mehrunes_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $mehrunes$, the $mehrunes_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_mephala_worshipper:0 "Worshipper of $mephala$"
- trait_mephala_worshipper_desc:0 "This character secretly served $mephala$, the $mephala_alt$, an act that is considered sacrilegeous by many faiths."
- trait_mephala_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $mephala$, the $mephala_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_mephala_worshipper_desc:0 "This character served $mephala$, the $mephala_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_mephala_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $mephala$, the $mephala_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_meridia_worshipper:0 "Worshipper of $meridia$"
- trait_meridia_worshipper_desc:0 "This character secretly served $meridia$, the $meridia_alt$, an act that is considered sacrilegeous by many faiths."
- trait_meridia_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $meridia$, the $meridia_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_meridia_worshipper_desc:0 "This character served $meridia$, the $meridia_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_meridia_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $meridia$, the $meridia_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_molag_worshipper:0 "Worshipper of $molag$"
- trait_molag_worshipper_desc:0 "This character secretly served $molag$, the $molag_alt$, an act that is considered sacrilegeous by many faiths."
- trait_molag_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $molag$, the $molag_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_molag_worshipper_desc:0 "This character served $molag$, the $molag_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_molag_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $molag$, the $molag_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_namira_worshipper:0 "Worshipper of $namira$"
- trait_namira_worshipper_desc:0 "This character secretly served $namira$, the $namira_alt$, an act that is considered sacrilegeous by many faiths."
- trait_namira_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $namira$, the $namira_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_namira_worshipper_desc:0 "This character served $namira$, the $namira_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_namira_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $namira$, the $namira_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_nocturnal_worshipper:0 "Worshipper of $nocturnal$"
- trait_nocturnal_worshipper_desc:0 "This character secretly served $nocturnal$, the $nocturnal_alt$, an act that is considered sacrilegeous by many faiths."
- trait_nocturnal_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $nocturnal$, the $nocturnal_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_nocturnal_worshipper_desc:0 "This character served $nocturnal$, the $nocturnal_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_nocturnal_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $nocturnal$, the $nocturnal_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_peryite_worshipper:0 "Worshipper of $peryite$"
- trait_peryite_worshipper_desc:0 "This character secretly served $peryite$, the $peryite_alt$, an act that is considered sacrilegeous by many faiths."
- trait_peryite_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $peryite$, the $peryite_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_peryite_worshipper_desc:0 "This character served $peryite$, the $peryite_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_peryite_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $peryite$, the $peryite_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_sanguine_worshipper:0 "Worshipper of $sanguine$"
- trait_sanguine_worshipper_desc:0 "This character secretly served $sanguine$, the $sanguine_alt$, an act that is considered sacrilegeous by many faiths."
- trait_sanguine_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $sanguine$, the $sanguine_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_sanguine_worshipper_desc:0 "This character served $sanguine$, the $sanguine_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_sanguine_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $sanguine$, the $sanguine_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_sheogorath_worshipper:0 "Worshipper of $sheogorath$"
- trait_sheogorath_worshipper_desc:0 "This character secretly served $sheogorath$, the $sheogorath_alt$, an act that is considered sacrilegeous by many faiths."
- trait_sheogorath_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $sheogorath$, the $sheogorath_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_sheogorath_worshipper_desc:0 "This character served $sheogorath$, the $sheogorath_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_sheogorath_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $sheogorath$, the $sheogorath_alt$, in secret, an act that is considered sacrilegeous within many faiths."
  trait_vaermina_worshipper:0 "Worshipper of $vaermina$"
- trait_vaermina_worshipper_desc:0 "This character secretly served $vaermina$, the $vaermina_alt$, an act that is considered sacrilegeous by many faiths."
- trait_vaermina_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] secretly served $vaermina$, the $vaermina_alt$, an act that is considered sacrilegeous within many faiths."
+ trait_vaermina_worshipper_desc:0 "This character served $vaermina$, the $vaermina_alt$, in secret, an act that is considered sacrilegeous by many faiths.\n\n#I Picking this trait in the Ruler Designer will trigger an event at game start, allowing you to start the game with a secret faith.#!"
+ trait_vaermina_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] served $vaermina$, the $vaermina_alt$, in secret, an act that is considered sacrilegeous within many faiths."
 
  trait_champion_sanguine:0 "Champion of $sanguine$"
  trait_champion_sanguine_desc:0 "This character is the appointed champion of $sanguine$, the $sanguine_alt$."
@@ -329,66 +349,109 @@
 
  #Furstocks
 
- #trait_furstock_cathay:0 "Cathay"
- trait_furstock_cathay:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Cathay' )]"
- trait_furstock_cathay_desc:0 "Cathay are slightly larger and stronger than Suthay-raht, born when Masser is waxing and Secunda is full, they have plantigrade legs."
+ trait_furstock_cathay_loc:0 "Cathay #italic ([furstock|E])#!"
+ trait_furstock_cathay:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_cathay_loc') )]"
+ trait_furstock_cathay_desc:0 "Born when Masser is waxing and Secunda is full, the Cathay are slightly larger and stronger than Suthay-Raht, except they have plantigrade legs."
 
- #trait_furstock_cathay_raht:0 "Cathay-Raht"
- trait_furstock_cathay_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Cathay-Raht' )]"
- trait_furstock_cathay_raht_desc:0 "Cathay-Raht were nicknamed 'Jaguar-men' by the Imperial Geographical Society for their stature and ferocity. They are said to possess phallic barbs."
+ trait_furstock_cathay_raht_loc:0 "Cathay-Raht #italic ([furstock|E])#!"
+ trait_furstock_cathay_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_cathay_raht_loc') )]"
+ trait_furstock_cathay_raht_desc:0 "Born when both Masser and Secunda are waxing, Cathay-Raht were nicknamed 'Jaguar-men' by the Imperial Geographical Society for their stature and ferocity."
 
- #trait_furstock_dagi:0 "Dagi"
- trait_furstock_dagi:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Dagi' )]"
- trait_furstock_dagi_desc:0 "Dagi facial features typically resemble that of lynxes. They prefer to live among the trees rather than on the ground due to their stature and light frame. They are said to be gifted in magic."
+ trait_furstock_dagi_loc:0 "Dagi #italic ([furstock|E])#!"
+ trait_furstock_dagi:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_dagi_loc') )]"
+ trait_furstock_dagi_desc:0 "Born when Masser is waning and Secunda is new, Dagi facial features typically resemble that of lynxes. They prefer to live among the trees rather than on the ground due to their stature and light frame. They are said to be gifted in magic. "
 
- #trait_furstock_dagi_raht:0 "Dagi-Raht"
- trait_furstock_dagi_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Dagi-Raht' )]"
- trait_furstock_dagi_raht_desc:0 "Dagi-raht facial features typically resemble that of lynxes. They prefer to live among the trees rather than on the ground due to their stature and light frame. They are said to be gifted in magic."
+ trait_furstock_dagi_raht_loc:0 "Dagi-Raht #italic ([furstock|E])#!"
+ trait_furstock_dagi_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_dagi_raht_loc') )]"
+ trait_furstock_dagi_raht_desc:0 "Born when both Masser and Secunda are waning, Dagi-Raht are slightly larger than the Dagi, but otherwise quite similar."
  
- #trait_furstock_ohmes:0 "Ohmes"
- trait_furstock_ohmes:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Ohmes' )]"
+ trait_furstock_ohmes_loc:0 "Ohmes #italic ([furstock|E])#!"
+ trait_furstock_ohmes:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_ohmes_loc') )]"
  trait_furstock_ohmes_desc:0 "Born when Masser is new and Secunda is full, Ohmes have been described as man-like and man-faced, with distinct Elven features, resembling Bosmer, though they are sometimes shorter. To avoid being mistaken as such, many Ohmes tattoo or paint their faces to resemble their brethren."
 
- #trait_furstock_ohmes_raht:0 "Ohmes-Raht"
- trait_furstock_ohmes_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Ohmes-Raht' )]"
- trait_furstock_ohmes_raht_desc:0 "Ohmes-Raht can easily be mistaken as elves or men, but the body of an Ohmes-raht is covered by light fur, and they do have a tail. They tattoo or paint their faces to resemble their brethren."
+ trait_furstock_ohmes_raht_loc:0 "Ohmes-Raht #italic ([furstock|E])#!"
+ trait_furstock_ohmes_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_ohmes_raht_loc') )]"
+ trait_furstock_ohmes_raht_desc:0 "Born when Masser is new and Secunda is waxing, Ohmes-Raht can easily be mistaken as elves or men, but the body of an Ohmes-Raht is covered by light fur, and they do have a tail. They tattoo or paint their faces to resemble their brethren."
 
- #trait_furstock_pahmar:0 "Pahmar"
- trait_furstock_pahmar:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Pahmar' )]"
- trait_furstock_pahmar_desc:0 "Pahmar are a giant bipedal furstock and resemble Senche-Tigers who are born when Masser is full and Secunda is new."
+ trait_furstock_pahmar_loc:0 "Pahmar #italic ([furstock|E])#!"
+ trait_furstock_pahmar:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_pahmar_loc') )]"
+ trait_furstock_pahmar_desc:0 "Born when Masser is full and Secunda is new, Pahmar are a giant bipedal furstock and resemble Senche-Tigers "
 
- #trait_furstock_pahmar_raht:0 "Pahmar-Raht"
- trait_furstock_pahmar_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Pahmar-Raht' )]"
- trait_furstock_pahmar_raht_desc:0 "Born when Masser is full and Secunda is waning, the Pahmar-raht are a giant bipedal furstock. Due to them being the strongest of furstocks, they are usually deployed as bodyguards and warriors. They resemble Senche-Tigers, but Pahmar-raht differ in that they are larger and more dangerous, with plantigrade legs and massive stature."
+ trait_furstock_pahmar_raht_loc:0 "Pahmar-Raht #italic ([furstock|E])#!"
+ trait_furstock_pahmar_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_pahmar_raht_loc') )]"
+ trait_furstock_pahmar_raht_desc:0 "Born when Masser is full and Secunda is waning, the Pahmar-raht are a giant bipedal furstock. Due to them being the strongest of furstocks, they are usually deployed as bodyguards and warriors. They resemble Senche-Tigers, but Pahmar-Raht differ in that they are larger and more dangerous, with plantigrade legs and massive stature."
 
- #trait_furstock_suthay:0 "Suthay"
- trait_furstock_suthay:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Suthay' )]"
- trait_furstock_suthay_desc:0 "Similar to their bigger brothers, the Suthay-raht, they are bipedal and have digitigrade legs. Suthay are born when Masser and Secunda are new."
+ trait_furstock_suthay_loc:0 "Suthay #italic ([furstock|E])#!"
+ trait_furstock_suthay:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_suthay_loc') )]"
+ trait_furstock_suthay_desc:0 "Born when both Masser and Secunda are new, the Suthay, similarly to their larger brethren the Suthay-Raht, are bipedal and have digitigrade legs."
 
- #trait_furstock_suthay_raht:0 "Suthay-Raht"
- trait_furstock_suthay_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Suthay-Raht' )]"
- trait_furstock_suthay_raht_desc:0 "The Suthay-raht are sometimes, incomprehensibly for Khajiit themselves, nicknamed "ja'khajiit". Being born when Masser is new and Secunda is waning, they are similar in height and build to the races of man, differing only in their digitigrade legs and phallic barbs. Completely covered in fur of different colours and patterns, Suthay-Rahts are known to be good jumpers, agile, sneaky and bold spirited. This makes them good adventurers and traders."
+ trait_furstock_suthay_raht_loc:0 "Suthay-Raht #italic ([furstock|E])#!"
+ trait_furstock_suthay_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_suthay_raht_loc') )]"
+ trait_furstock_suthay_raht_desc:0 "Born when Masser is new and Secunda is waning, Suthay-Raht are sometimes, incomprehensibly for Khajiit themselves, nicknamed "ja'khajiit". They are similar in height and build to the races of man, differing only in their digitigrade legs. Completely covered in fur of different colours and patterns, Suthay-Raht are known to be agile, sneaky and bold spirited."
 
- #trait_furstock_tojay:0 "Tojay"
- trait_furstock_tojay:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Tojay' )]"
+ trait_furstock_tojay_loc:0 "Tojay #italic ([furstock|E])#!"
+ trait_furstock_tojay:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_tojay_loc') )]"
  trait_furstock_tojay_desc:0 "Born when Masser is waxing and Secunda is new, the Tojay are one of the most mysterious of furstocks. Little is known about them, except that they live in the southern marshes and jungle regions of Elsweyr, as well as the Tenmar Forest."
  
- #trait_furstock_tojay_raht:0 "Tojay-Raht"
- trait_furstock_tojay_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Tojay-Raht' )]" 
- trait_furstock_tojay_raht_desc:0 "Born when Masser is waxing and Secunda is waning, little else is known of the Tojay-raht, except that they evidently are bipedal and have digitigrade legs."
+ trait_furstock_tojay_raht_loc:0 "Tojay-Raht #italic ([furstock|E])#!"
+ trait_furstock_tojay_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_tojay_raht_loc') )]" 
+ trait_furstock_tojay_raht_desc:0 "Born when Masser is waxing and Secunda is waning, little else is known of the Tojay-Raht, except that they evidently are bipedal and have digitigrade legs."
 
- #trait_furstock_mane:0 "Mane"
- trait_furstock_mane:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', 'Mane' )]" 
+ trait_furstock_mane_loc:0 "Mane #italic ([furstock|E])#!"
+ trait_furstock_mane:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_mane_loc') )]" 
  trait_furstock_mane_desc:0 "During a rare alignment of Masser and Secunda, a mystical Third Moon is said to appear in the sky. Those born under this moon are named Mane, by ancient tradition the spiritual leaders of the Khajiit." #PH placeholder
-
+ 
+ # Argonian
  trait_laid_egg:0 "Laid Egg"
  trait_laid_egg_desc:0 "This character laid an egg recently."
  trait_laid_egg_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] laid an egg recently."
- 
- trait_argonian_behemoth:0 "Behemoth"
- trait_argonian_behemoth_desc:0 "This character is a big chonker Behemoth"
- trait_lich_argonian_behemoth_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a big chonker Behemoth"
 
+ trait_shadowscale:0 "Shadowscale"
+ trait_shadowscale_desc:0 "This character is a member of a secretive order of assassins in service to the elusive King of Argonia and his shadowy Royal Court."
+ trait_shadowscale_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a member of a secretive order of assassins in service to the elusive King of Argonia and his shadowy Royal Court."
+ 
+ trait_amber_blessed:0 "Amber Blessed"
+ trait_amber_blessed_1:0 "Amber Touched"
+ trait_amber_blessed_1_desc:0 "This character not only survived the first contact with Amber Plasm unscathed but also emerged strengthened from it."
+ trait_amber_blessed_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] not only survived the first contact with Amber Plasm unscathed but also emerged strengthened from it."
+ trait_amber_blessed_2:0 "Amber Soaked"
+ trait_amber_blessed_2_desc:0 "This character carries an amount of powerful Amber Plasm in their veins that would drive others mad."
+ trait_amber_blessed_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] carries an amount of powerful Amber Plasm in their veins that would drive others mad."
+ trait_amber_blessed_3:0 "Amber Blessed"
+ trait_amber_blessed_3_desc:0 "This character is truly chosen by Tsono-Xuhil and is able to harness the full power of its Amber Plasm."
+ trait_amber_blessed_3_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is truly chosen by Tsono-Xuhil and is able to harness the full power of its Amber Plasm."
+ trait_sun_blessed:0 "Sun Blessed"
+ trait_sun_blessed_1:0 "Sun Warmed"
+ trait_sun_blessed_1_desc:0 "This character has received the sun's initial blessing, emerging with empowered magical abilities."
+ trait_sun_blessed_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has received the sun's initial blessing, emerging with empowered magical abilities."
+ trait_sun_blessed_2:0 "Sun Empowered"
+ trait_sun_blessed_2_desc:0 "This character is infused with an intense amount of solar energy, radiating a power that others find overwhelming."
+ trait_sun_blessed_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is infused with an intense amount of solar energy, radiating a power that others find overwhelming."
+ trait_sun_blessed_3:0 "Sun Blessed"
+ trait_sun_blessed_3_desc:0 "This character is a true conduit of the sun's power, capable of wielding immense arcane strength."
+ trait_sun_blessed_3_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a true conduit of the sun's power, capable of wielding immense arcane strength."
+ trait_ghost_scale:0 "Ghost Scale"
+ trait_ghost_scale_1:0 "Ghost Bound"
+ trait_ghost_scale_1_desc:0 "This character has taken on a ghostly pallor, becoming more elusive and unsettling to others."
+ trait_ghost_scale_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has taken on a ghostly pallor, becoming more elusive and unsettling to others."
+ trait_ghost_scale_2:0 "Ghost Veiled"
+ trait_ghost_scale_2_desc:0 "This character's presence is shrouded in eerie mystery, a gift by the pale Ghost Hist."
+ trait_ghost_scale_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is shrouded in eerie mystery, a gift by the pale Ghost Hist."
+ trait_ghost_scale_3:0 "Ghost Scale"
+ trait_ghost_scale_3_desc:0 "This character embodies the essence of a ghost, moving unseen and inspiring fear in those who sense their presence."
+ trait_ghost_scale_3_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] embodies the essence of a ghost, moving unseen and inspiring fear in those who sense their presence."
+ trait_argonian_behemoth:0 "Argonian Behemoth"
+ trait_argonian_behemoth_1:0 "Argonian Behemoth"
+ trait_argonian_behemoth_1_desc:0 "This character has begun to transform into a Behemoth, gaining significant physical strength at the cost of some mental acuity."
+ trait_argonian_behemoth_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has begun to transform into a Behemoth, gaining significant physical strength at the cost of some mental acuity."
+ trait_argonian_behemoth_2:0 "Soaring Behemoth"
+ trait_argonian_behemoth_2_desc:0 "This character's transformation progresses, their strength growing to beastly proportions while their intellect wanes."
+ trait_argonian_behemoth_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] undergoes further transformation, their strength growing to beastly proportions while their intellect wanes."
+ trait_argonian_behemoth_3:0 "Feral Behemoth"
+ trait_argonian_behemoth_3_desc:0 "This character has fully embraced their behemoth form, possessing immense strength in cost of their clear consciousness."
+ trait_argonian_behemoth_3_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has fully embraced their behemoth form, possessing immense strength in cost of their clear consciousness."
+
+ 
  ### PRAXIS
  # PLACEHOLDER
  trait_praxis_negative_3:0 "Apraxic III"
@@ -423,11 +486,7 @@
  trait_battlemage_character_desc:2 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a wizard-warrior, trained in both lethal spellcasting and heavily armored combat. [ROOT.GetCharacter.GetSheHe|U] sacrifices mobility and versatility for the ability to supplement melee and ranged attacks with elemental damage and summoned creatures."
 
 ### Misc traits
- trait_shadowscale:0 "Shadowscale"
- trait_shadowscale_desc:0 "This character is a member of a secretive order of assassins in service to the elusive King of Argonia and his shadowy Royal Court."
- trait_shadowscale_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a member of a secretive order of assassins in service to the elusive King of Argonia and his shadowy Royal Court."
- 
- trait_house_of_reveries:0 "House of Reveries"
+  trait_house_of_reveries:0 "House of Reveries"
  trait_house_of_reveries_desc:0 "This character is a member of the House of Reveries, an artist group that renounced every aspect of worldy power and fame. They live for artistry alone and are therefore capable court musicians, poets and jesters."
  trait_house_of_reveries_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a member of the House of Reveries, an artist group that renounced every aspect of worldy power and fame. They live for artistry alone and are therefore capable court musicians, poets and jesters."
  

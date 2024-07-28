@@ -1,0 +1,51 @@
+﻿l_english:
+
+#1000: Mark & Recall
+
+ ek_intrigue_scheme_ongoing_events.1000.t:0 "Mark & Recall"
+ ek_intrigue_scheme_ongoing_events.1000.desc.start:0 "My plans for [target.GetName] could undoubtedly benefit from a Mark spell. Cast in the [defender.Custom('TerrainType')] of [scheme_location.GetName], it would leave a magical imprint to which my agents could undetectedly Recall, and thereby strengthen my scheme's subtilty.\n\nMy agents have found a local portal mage, [alteration_mage.GetFirstName], who could, in exchange for payment, cast the Mark."
+ ek_intrigue_scheme_ongoing_events.1000.desc.court_mage_or_self_cast:0 "However, any mage proficient in portal spells could perform the task."
+ ek_intrigue_scheme_ongoing_events.1000.a:0 "I will pay the spellcaster."
+ ek_intrigue_scheme_ongoing_events.1000.a.success:0 "The mage remains undetected"
+ ek_intrigue_scheme_ongoing_events.1000.a.failure:0 "The mage is found out"
+ ek_intrigue_scheme_ongoing_events.1000.b:0 "My Court Mage shall handle this."
+ ek_intrigue_scheme_ongoing_events.1000.b.1:0 "It goes smoothly"
+ ek_intrigue_scheme_ongoing_events.1000.b.2:0 "A bump in the road"
+ ek_intrigue_scheme_ongoing_events.1000.b.3:0 "The spell proves challenging"
+ ek_intrigue_scheme_ongoing_events.1000.c:0 "I shall cast the Mark personally."
+ ek_intrigue_scheme_ongoing_events.1000.c.success:0 "And all goes to plan"
+ ek_intrigue_scheme_ongoing_events.1000.c.soft_failure:0 "But the casting fails"
+ ek_intrigue_scheme_ongoing_events.1000.c.hard_failure:0 "Your magicka is wasted"
+ ek_intrigue_scheme_ongoing_events.1000.d:0 "It is not worth the effort."
+
+#1001: Mark & Recall Detection
+ ek_intrigue_scheme_ongoing_events.1001.t:0 "The Mark"
+ ek_intrigue_scheme_ongoing_events.1001.desc:0 "My guards have come before me with a mage who was found wandering the grounds of [scheme_location.GetName]. Apparently, [alteration_mage.GetName] was paid to cast a spell of Mark — an anchor for teleportation spells — within my walls by individuals [alteration_mage.GetSheHe] claims were "shadowy agents".\n\nThis confession can connote only one thing: sneaky schemers surely seek to strike slyly and subtly at my subjects or myself. But it is within my power and purview, perhaps, to prevent this perfidious plot and punish its pathetic perpetrators prior to their impending attempt at treason."
+ ek_intrigue_scheme_ongoing_events.1001.a:0 "I must be watchful."
+ ek_intrigue_scheme_ongoing_events.1001.b:0 "Arrest that mage!"
+ ek_intrigue_scheme_ongoing_events.1001.c:0 "[ek_intrigue_scheme_ongoing_events_1000_mage.GetSheHe|U] will tell me #italic everything#! [ek_intrigue_scheme_ongoing_events_1000_mage.GetSheHe] knows..."
+ ek_intrigue_scheme_ongoing_events.1001.c.tt:0 "A [scheme_hostile|E] or otherwise malicious [scheme|E] is exposed"
+ ek_intrigue_scheme_ongoing_events.1001.toast:0 "Scheme exposed"
+
+#1010: Invisibility Potions
+ ek_intrigue_scheme_ongoing_events.1010.t:0 "Invisibility Potions"
+ ek_intrigue_scheme_ongoing_events.1010.desc:0 "It is concerning to imagine my agents around [target.GetName] seen by those who would foil my plans. But what if they were not seen? Alchemists are not uncommon, and it could be trivial to obtain a batch of invisibility potions for my agents. Perhaps I could even try making it myself.\n\nWith these potions, my agents could travel undetected or escape watched rooms. This would certainly secure the secrecy and success of my scheme."
+ ek_intrigue_scheme_ongoing_events.1010.a:0 "I will buy the potions I need."
+ ek_intrigue_scheme_ongoing_events.1010.a.success:0 "Nobody notices you buying invisibility potions by the barrel"
+ ek_intrigue_scheme_ongoing_events.1010.a.failure:0 "Your big buy of potions becomes well known"
+ ek_intrigue_scheme_ongoing_events.1010.b:0 "I'll try making the potions myself."
+ ek_intrigue_scheme_ongoing_events.1010.b.success:0 "You manage to make the potions"
+ ek_intrigue_scheme_ongoing_events.1010.b.failure:0 "Your experiment with alchemy goes abysmally"
+ ek_intrigue_scheme_ongoing_events.1010.c:0 "Fetch some Nirnroot! I am doing this myself."
+ ek_intrigue_scheme_ongoing_events.1010.d:0 "What good is invisibility? The agents will still be there."
+
+#9990: Argonians without Shadowscales are pressed to hire one
+ ek_intrigue_scheme_ongoing_events.9990.t:0 "Time for a Shadowscale?"
+ ek_intrigue_scheme_ongoing_events.9990.desc:0 "No Argonian outside the Shadowscales can compete with their legendary skill in the arts of assassination, for they are trained from infancy with skill and subtilty nonpareil. Compared to these professional murderers, my coordination of the murder of [target.GetName] is lacklustre at best — and mine agents know it.\n\nSome of them are apparently so dissatisfied by this state of affairs that they have taken it upon themselves to seek a Shadowscale for me to employ. Once at my court, the Shadowscale will be able to oversee this scheme, and all my future plots."
+ ek_intrigue_scheme_ongoing_events.9990.a:0 "It is time I employ a Shadowscale."
+ ek_intrigue_scheme_ongoing_events.9990.b:0 "I will not have petty killers send me a worse one."
+
+#9980: Argonians with a Shadowscale murdering someone who refused to give the Shadowscales their child receives a bonus:
+ ek_intrigue_scheme_ongoing_events.9980.t:0 "The Shadowscale's Endorsement"
+ ek_intrigue_scheme_ongoing_events.9980.desc:0 "In the deepest shadows darkest corners of [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTier], [ek_intrigue_scheme_ongoing_events_9980_court_shadowscale.GetName] suddenly emerges behind me. I whirl around, but I can barely see [ek_intrigue_scheme_ongoing_events_9980_court_shadowscale.GetHerHim], and [ek_intrigue_scheme_ongoing_events_9980_court_shadowscale.GetHerHis] voice is so quiet that I have to lean close to hear [ek_intrigue_scheme_ongoing_events_9980_court_shadowscale.GetHerHim].\n\n#italic "Listen to me. I have discussed your scheme to murder [target.GetName] with my superiors. [target.GetSheHe|U] has wronged us greatly: [target.GetSheHe] kept for [target.GetHerHim]self a Shadowborn hatchling which was rightfully ours. In doing so, [target.GetSheHe] incurred the wrath of our King.\n\nTherefore, [ROOT.Char.GetTitledFirstNameNoTooltip], the Shadowscales have extended to you our full support in this scheme. Do not fail us."#!"
+ ek_intrigue_scheme_ongoing_events.9980.a:0 "I understand."

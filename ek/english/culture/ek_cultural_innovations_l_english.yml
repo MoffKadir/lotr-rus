@@ -89,6 +89,7 @@
  innovation_pariah_folk:0 "Pariah Folk"
  innovation_pariah_folk_desc:0 "Just because we are who we are, others view our lives as expendable, our existence as a blemish. In the hearts of the "civilized", our name invokes disgust, derision, scorn, persecution. For now, with our hearts and hides hardened to abuse, we endure, until one blessed day we cast off this cursed lot."
  innovation_pariah_folk_can_be_removed:0 "This [innovation|E] can be removed by a prestigious [cultural_head|E] that has proven their people to be equal to other races, by enacting the #V 'Cast off Pariah Status'#! [decision|E]"
+ innovation_pariah_folk_cultural_acceptance:0 "Gains #p +20#! [cultural_acceptance|E] with [pariah|E] [cultures|E]"
  innovation_pariah_folk_marriage:0 "Characters of a culture with this [innovation|E] get reduced Marriage Acceptance with characters of non-[pariah|E] cultures"
  innovation_pariah_folk_revocation:0 "Characters of a culture with this [innovation|E] may be [imprisoned|E], [executed|E] or [revoked|E] from by non-[pariah|E] lieges without it being considered [tyranny|E], unless they are a [vassal|E] with the [GetVassalContractType( 'cultural_rights' ).GetObligationName( 'cultural_rights_protected' )] [vassal_contract|E]"
  innovation_pariah_folk_persecution:0 "Characters of a culture with this [innovation|E] may be targeted using the $EXPEL_MONSTERS_DUCHY_NAME$ [casus_belli|E]"
@@ -116,6 +117,7 @@
  innovation_daedric_race_imprisonment:0 "[recipient.GetShortUIName|U] is a [demon_race|E], allowing [Select_CString( actor.IsLocalPlayer, 'you', 'them' )] to imprison [Select_CString( recipient.IsLocalPlayer, 'your', recipient.GetHerHim )] without being viewed as a [tyrant|E]"
  innovation_daedric_race_execution:0 "[recipient.GetShortUIName|U] is a [demon_race|E], allowing [Select_CString( actor.IsLocalPlayer, 'you', 'them' )] to execute [Select_CString( recipient.IsLocalPlayer, 'your', recipient.GetHerHim )] without being viewed as a [tyrant|E]"
  task_promote_culture_daedric_race:0 "We cannot use this task as we are [daedric_race|E], who are not native to the mortal realm and cannot maintain a stable population here. \n\nSee the #V $innovation_daedric_race$#! [innovation|E]."
+ innovation_cannot_be_removed:0 "#N This innovation cannot be removed#!"
 
  ### Early Interregnum
  # Military
@@ -132,7 +134,7 @@
  # Military
  innovation_schools_of_magic:0 "Schools of Magic"
  innovation_schools_of_magic_desc:0 "Most of the effects of magicka can be classified into a handful of 'Schools', such as Restoration, Destruction, or Conjuration. Following these Schools will allow us to train new mages at an almost unprecedented pace, and will allow them to have a much deeper understanding of their power."
- education_magical_ability_available_2:0 "Children education by a character with a #V $trait_arcana_good$#! or #V $trait_education_magical_ability$#! [trait|E] will gain a #V $trait_education_magical_ability$#! [trait|E], with the ability to cast spells and rituals"
+ education_magical_ability_available_2:0 "Children educated by a character with a #V $trait_arcana_good$#! or #V $trait_education_magical_ability$#! [trait|E] will gain a #V $trait_education_magical_ability$#! [trait|E], with the ability to cast spells and rituals"
  unlock_high_medieval_academy_buildings:0 "Unlocks all $culture_era_high_medieval$ Era Academy [buildings|E]"
  innovation_restoration_squads:0 "Restoration Squads"
  innovation_restoration_squads_desc:0 "While requesting that some mages be left out of the battlefield may seem counter-intuitive, Restoration mages dedicated to taking care of the wounded in the army camps will ensure that soldiers who would be otherwise too wounded to fight can receive the care they need."
@@ -156,7 +158,7 @@
  innovation_integrated_guilds:0 "Integrated Guilds"
  innovation_integrated_guilds_desc:0 "While they traditionally stayed outside of politics, it might be time to establish close ties between local rulers and the leaders of close guild chapters."
  unlock_late_medieval_academy_buildings:0 "Unlocks all $culture_era_late_medieval$ Era Academy [buildings|E]"
- unlocks_empire_conquest_cb_mmr:0 "Unlocks the #V Empire Conquest#! [casus_belli|E] for characters with a [prestige_level|E] equal or superior to [GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L] #weak (follows the other [might_makes_right|E] mechanics)#!"
+ unlocks_empire_conquest_cb_mmr:0 "Unlocks the #V High Kingdom Conquest#! [casus_belli|E] for characters with a [prestige_level|E] equal or superior to [GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L] #weak (follows the other [might_makes_right|E] mechanics)#!"
  
  ### Special
  nativity_region_hack_tooltip_desc:0 "This innovation cannot be researched like the others. The trigger below is here only to show you the extent of the nativity region."
@@ -309,6 +311,8 @@
  no_county_culture_conversion:0 "#N This culture cannot be used to [promote_culture|E]#!"
  culture_can_be_revived:0 "This culture may in some cases be [culture_revived|E]"
  task_promote_culture_culture_within_heritage_alive:0 "We cannot use this task as there is no valid [culture|E] within our [heritage|E].\nAll these cultures, including our own, are considered #V Dead#! (see the #V $innovation_dead_culture$#! or #V $innovation_extinct_race$#! [innovations|E]) and cannot be used to convert a [county|E].\nThere is currently no way to revive a completely #V Dead#! or #V Extinct#! Heritage."
+ culture_cannot_be_educated:0 "#N This culture cannot be passed on to [wards|E]#!"
+ dead_culture_cannot_educate:0 "[guardian_possessive|E] [culture|E] must be considered a [living_culture|E]"
 
  innovation_extinct_race:0 "Extinct Race"
  innovation_extinct_race_desc:0 "This culture belongs to a race long gone, with no living relatives who could ever hope to reclaim their cultural practices and resettle their ancestral lands. While some long since disappeared peoples may hope for a revitalisation, this culture cannot ever again walk on Nirn."

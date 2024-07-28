@@ -6,7 +6,7 @@
  spellblades:2 "[spellblades|E]"
  game_concept_spellblades:0 "Spellblades"
  game_concept_spellblades_desc:0 "Spellblades are [men_at_arms|E] who fight on foot with sword and sorcery.\n\nWhile each kind of Spellblade is unique, they generally [counter|E] [mages|E] and [skirmishers|E], and are in turn Countered by [light_cavalry|E]"
- dragon:2 "[dragon|E]"
+ dragon_maa:2 "[dragon|E]"
  game_concept_dragon:0 "Dragon"
  game_concept_dragon_desc:0 "Dragons are [men_at_arms|E] who soar through the air on great wings, raining fire and death upon any foe.\n\nDragons ignore terrain effects, and is only Countered by specific [men_at_arms|E].\n\nDragons are represented by a small men-at-arms regiment of 10 men."
  
@@ -32,8 +32,20 @@
  welkynar_knights:0 "Welkynar Knights"
  welkynar_knights_flavor:0 "#F The champions among the warriors of Alinor, a military order based out of the mountains of Eton Nir. Bonded to their mounts from the moment they hatch, the Welkynar are one with the gryphons they ride, and capable of heroic feats.#!"
  # Argonian
- saxhleel_reel_ka:0 "Saxhleel Reel-Ka"
- saxhleel_reel_ka_flavor:0 "#F The defenders of the Saxhleel, tasked with protecting their root-siblings and the Hist. Having bested the trials of the Ka-Deelith, the Reel-Ka are peerless in navigating the treacherous swamps of Black Marsh and ambushing those who can not.#!"
+ argonian_war_mages:0 "Hist Menders"
+ argonian_war_mages_flavor:0 "#F Tasked with the protection and care of their hist-tree these mages will only go to battle if there is no other choice. They possess some offensive capabilities but they prefer to heal and protect their people so they can vanish unscathed after a fight.#!"
+ argonian_spellblades:0 "Thunder Scales"
+ argonian_spellblades_flavor:0 "#F These spellblades may not possess a traditional education in battle magic, but they compensate that with a fierce utilization of magicka, drawing inspiration from the mightiest beasts of Black Marsh itself.#!"
+ argonian_skirmishers:0 "Saxhleel Haj-Ka"
+ argonian_skirmishers_flavor:0 "#F These 'hidden' warriors of the Saxhleel are masterful ambushers and guerilla fighters. They strike fast and are often able to retreat back into the marshes before the enemy was even able to spot them.#!"
+ argonian_spear_infantry:0 "Saxhleel Reel-Ka"
+ argonian_spear_infantry_flavor:0 "#F The defenders of the Saxhleel, tasked with protecting their root-siblings and the Hist. Having bested the trials of the Ka-Deelith, the Reel-Ka are peerless in navigating the treacherous swamps of Black Marsh and ambushing those who can not.#!"
+ argonian_archers:0 "Saxhleel Mota-Ka"
+ argonian_archers_flavor:0 "#F These Saxhleel are not called 'hunter-warriors' without a reason. Compared to them, most other inhabitants of Black Marsh are just prey and they are ready to use their abilities against foreign invaders too, should it be necessary.#!" 
+ argonian_heavy_infantry:0 "Saxhleel Krona-Ka"
+ argonian_heavy_infantry_flavor:0 "#F Often recruited from the biggest members of a tribe the Krona-Ka are proudly wearing much heavier weapons and armor than most other Saxhleel troops. Thus they can best nearly everyone who dares to challenge them to a fight.#!"
+ argonian_light_cavalry:0 "Saxhleel Guar-Riders"
+ argonian_light_cavalry_flavor:0 "#F There is a special bond between the Guars and the Saxhleel inhabiting Black Marsh. Since both of them are perfectly adapted to the swamps they become a fearsome force once they combine their abilities.#!" 
  shellback_phalanx:0 "Shellback Phalanx"
  shellback_phalanx_flavor:0 "#F The Shellback are our elite warriors, the finest the Ka-Deelith trials produce. Heavily armed and armored, these soldiers can be trusted to stop enemy incursions into Black Marsh dead in the tracks and to launch assaults into well-defended positions alike.#!"
  winged_avengers:0 "Winged Avengers"
@@ -93,12 +105,12 @@
  falmer_battleragers:0 "Falmer Battleragers"
  falmer_battleragers_flavor:0 "The strongest Betrayed fight in tight infantry formations. Clad from head to toes in Chaurus chitin, they can give the toughest soldiers a run for their money."
  # Imga
- imga_scouts:0 "Imga Scouts"
- imga_scouts_flavor:0 "#F These troops are used to pave the way for the heavier Imga forces. They are quick and nimble, perfectly suited for a life in the jungle, where they often hide in the canopies until it is time to attack.#!"
- imga_slingers:0 "Imga Slingers"
- imga_slingers_flavor:0 "#F Imga are not really fond of bows, and they don't need to be. A simple sling can be just as deadly if used in the right way, and these troops certainly know how to do so - hurling all kinds of nasty things onto their enemies."#!"
- imga_guards:0 "Imga Guards"
- imga_guards_flavor:0 "#F Normally assigned to protect Imga settlements and sacred places, these apemen prove to be surprisingly sturdy troops on a battlefield. The combined reach of their pikes and long arms lets them counter most cavalry charges with ease.#!"
+ imga_skirmishers:0 "Imga Scouts"
+ imga_skirmishers_flavor:0 "#F These troops are used to pave the way for the heavier Imga forces. They are quick and nimble, perfectly suited for a life in the jungle, where they often hide in the canopies until it is time to attack.#!"
+ imga_archers:0 "Imga Slingers"
+ imga_archers_flavor:0 "#F Imga are not really fond of bows, and they don't need to be. A simple sling can be just as deadly if used in the right way, and these troops certainly know how to do so - hurling all kinds of nasty things onto their enemies."#!"
+ imga_pike_infantry:0 "Imga Guards"
+ imga_pike_infantry_flavor:0 "#F Normally assigned to protect Imga settlements and sacred places, these apemen prove to be surprisingly sturdy troops on a battlefield. The combined reach of their pikes and long arms lets them counter most cavalry charges with ease.#!"
  imga_frenzied:0 "Imga Frenzied"
  imga_frenzied_flavor:0 "#F The heaviest, strongest, and wildest Imga are often assembled in special battle groups. Together, they create a force of fur and muscle that can break through any defensive line, shattering their enemies' bones and fighting spirit alike.#!"
  # Goblin-ken
@@ -128,22 +140,29 @@
  durzog_riders_flavor:0 "#F Goblinken have raised durzogs for war, company and for hunting down their victims for millenia. These "sludgepuppies" are fierce and intelligent, and are also bred for their hides, meat and even guts for bowstrings.#!"
  
  # Khajiiti
- alfiq:0 "Alfiq War Mages"
- alfiq_flavor:0 "#F The smallest form of Khajiit, the Alfiq are predisposed for the arts of magicka and are often seen sitting in a shoulder harness worn by one of their bigger brethren.#!"
- tojay:0 "Tojay Spellblades"
- tojay_flavor:0 "#F The mysterious Tojay live deep in the jungles of southern Elsweyr. They have an affinity towards magic and combine this with their agility and strength.#!"
- cathay:0 "Cathay Skirmishers"
- cathay_flavor:0 "#F Out of all furstocks the Cathay are the ones seen most frequently out of Elsweyr. They are flexible in nature which is mirrored by their fighting abilities.#!"
- suthay:0 "Suthay Bowcats"
- suthay_flavor:0 "#F While still humanoid the Suthay have stronger feline features then their other bipedal kin. Thanks to their sharp senses they are efficient archers.#!"
- ohmes:0 "Ohmes Spearcats"
- ohmes_flavor:0 "#F Heaving fewer feline features compared to the other forms of Khajiits, the Ohmes tend to tattoo or paint their faces to avoid being mistaken for a human or a Bosmer.#!"
- pahmar:0 "Pahmar Heavy Infantry"
- pahmar_flavor:0 "#F The Pahmar are the largest form of two-legged Khajiits, and are as such equipped with heavy armor and large weapons.#!"
- senche:0 "Senche Cavalry"
- senche_flavor:0 "#F The four-legged form of the Khajiits, the Senche can carry their lighter brethren on their back and serve as a part of the Khajiiti cavalry.#!"
- senche_raht:0 "Senche-Raht Battlecats"
- senche_raht_flavor:0 "#F The largest form of Khajiit, the Senche-Raht are both as intelligent as their smaller brethren, and capable of acting as war mounts and companions to their brothers and sisters on foot.#!"
+ khajiit_war_mages:0 "Alfiq War Mages"
+ khajiit_war_mages_flavor:0 "#F The smallest form of Khajiit, the Alfiq are predisposed for the arts of magicka and are often seen sitting in a shoulder harness worn by one of their bigger brethren.#!"
+ khajiit_spellblades:0 "Tojay Spellblades"
+ khajiit_spellblades_flavor:0 "#F The mysterious Tojay live deep in the jungles of southern Elsweyr. They have an affinity towards magic and combine this with their agility and strength.#!"
+ khajiit_skirmishers:0 "Cathay Skirmishers"
+ khajiit_skirmishers_flavor:0 "#F Out of all furstocks the Cathay are the ones seen most frequently out of Elsweyr. They are flexible in nature which is mirrored by their fighting abilities.#!"
+ khajiit_archers:0 "Suthay Bowcats"
+ khajiit_archers_flavor:0 "#F While still humanoid the Suthay have stronger feline features then their other bipedal kin. Thanks to their sharp senses they are efficient archers.#!"
+ khajiit_pike_infantry:0 "Ohmes Spearcats"
+ khajiit_pike_infantry_flavor:0 "#F Heaving fewer feline features compared to the other forms of Khajiits, the Ohmes tend to tattoo or paint their faces to avoid being mistaken for a human or a Bosmer.#!"
+ khajiit_heavy_infantry:0 "Pahmar Heavy Infantry"
+ khajiit_heavy_infantry_flavor:0 "#F The Pahmar are the largest form of two-legged Khajiits, and are as such equipped with heavy armor and large weapons.#!"
+ khajiit_light_cavalry:0 "Senche Cavalry"
+ khajiit_light_cavalry_flavor:0 "#F The four-legged form of the Khajiits, the Senche can carry their lighter brethren on their back and serve as a part of the Khajiiti cavalry.#!"
+ khajiit_heavy_cavalry:0 "Senche-Raht Battlecats"
+ khajiit_heavy_cavalry_flavor:0 "#F The largest form of Khajiit, the Senche-Raht are both as intelligent as their smaller brethren, and capable of acting as war mounts and companions to their brothers and sisters on foot.#!"
+
+ # Lilmothiit
+ soul_trappers:0 "Soul Trappers"
+ soul_trappers_flavor:0 "Generally, Soul Trappers don't train for war, but these well-prepared, weathered rangers who make it their life's trade to hunt the myriad of Black Marsh's great beasts for their souls will find soldiers less threatening and easier to hunt than most of their usual quarry."
+ walk_worm_cavalry:0 "Walk-Worm Cavalry"
+ walk_worm_cavalry_flavor:0 "While these giant centipedes usually host entire Lilmothiit settlements on their backs, much smaller juvenile Walk-Worms are docile, naturally armored in chitin plates, and surprisingly nimble on flooded, uneven terrain — making excellent (if unorthodox) mounts for scouting and pursuit across the Marsh."
+ 
  # Nedic
  witch_knight:0 "Witch Knights"
  witch_knight_flavor:0 "#F A frightening sight, the Witch Knights of the Reach descend on their enemies and crush their spirit and body with terrifying speed.#!"
@@ -151,7 +170,7 @@
  deathlands_slayers_flavor:0 "#F The Deathlands are a harsh place, training the Slayers to mercilessly dispatch all threats to their kin.#!"
 
  south_nedic_headhunters:0 "Headhunters"
- south_nedic_headhunters_flavor:0 "#F These glory-seeking South Nedes are experts in turning treacherous marshes into a death zone. With fiery destruction in one hand and cold steel in another, even [GetMaA('saxhleel_reel_ka').GetName] are wary of such foes.#!"
+ south_nedic_headhunters_flavor:0 "#F These glory-seeking South Nedes are experts in turning treacherous marshes into a death zone. With fiery destruction in one hand and cold steel in another, even [GetMaA('argonian_spear_infantry').GetName] are wary of such foes.#!"
  north_nedic_headhunters:0 "Witchblades"
  north_nedic_headhunters_flavor:0 "#F Enemy [GetMaA('war_mages').GetName] can only take disastrous losses when faced with Witchblades. North Nedic spellblades have become experts at using broken terrain and hills to dispatch the most venerable battlemages#!"
  central_nedic_headhunters:0 "Mageslayers"
@@ -166,8 +185,6 @@
  # Orsimer
  orc_marauders:0 "Orc Marauders"
  orc_marauders_flavor:0 "#F Equipped with strong yet graceful weapons, and clad head to toe in a rigic carapace of orichalcum created by the master smiths of orc fortresses, our marauders are each one equal to a hundred enemy soldiers.#!"
- bear_cavalry:0 "Bear Cavalry"
- bear_cavalry_flavor:0 "#F Ferocious bears equipped with heavy plate and mounted by an equally ferocious warrior. Their charge will break almost any formation, and both the bear and the rider can fight side by side on foot.#!"
  # Yoku
  yokudan_way_of_the_sword:0 "Yokudan Swordmasters"
  yokudan_way_of_the_sword_flavor:0 "#F Trained in ancient schools built by the Sword-Singers, those who follow the Way of the Sword try to follow their teachings, even if they cannot manifest their Shehai anymore. Mere [GetMaA('redguard_way_of_the_sword').GetName] cannot hold a candle to them...#!"
@@ -185,7 +202,7 @@
  risen_dead_flavor:0 "#F Skeletons, zombies, and other low forms of undead make the bulk of these forces. They are slow and stupid, but they will fight until they either win, or their corpse is destroyed.#!"
 
  razak_army:0 "Razak's Opus"
- razak_army_flavour:0 "#F A loyal steam-powered Dwarven army, fueled by magicka from a soul gem that will last for eras.#!"
+ razak_army_flavor:0 "#F A loyal steam-powered Dwarven army, fueled by magicka from a soul gem that will last for eras.#!"
  
  war_mammoth:0 "War Mammoths" 
  war_mammoth_flavor:0 "#F Almost impossible to stop, these huge beasts have dominated the fields of Skyrim and Atmora for centuries.#!"
@@ -202,6 +219,9 @@
  hollows:0 "The Hollow"
  hollows_flavor:0 "#F Walking husks of stone, unable to feel pain, fear or exhuastion. They are a terrible foe, incredible hard to destroy and able to tear down walls with their bare hands.#!"
 
+ alkosh_pride:0 "Pride of Alkosh"
+ alkosh_pride_flavor:0 "#F Recruited solely from forgotten manes and trained in the art of various clawdances, these monks are able to beat most trained warriors with ease.#!"
+
  minotaurs:0 "Minotaurs"
  minotaurs_flavor:0 "#F While Minotaurs are treated as beasts by most of Tamriel, it is said that those who worship them or someone close to them can convince a handful of Bull-Men to fight with them.#!"
  
@@ -210,6 +230,9 @@
 
  bone_walker:0 "Bone Walker"
  bone_walker_flavor:0 "#F This fearsome construct is the result of dark necromantic magic, bringing death and horror to any battlefield - especially for enemy infantry.#!"
+ 
+ cultists:0 "Cultists"
+ cultists_flavor:0 "#F These fanatics have sworn their entire lives to the service of their master. Armed with crude weapons and dark magic, they are even prepared to go into battle if their mission demands it.#!"
  
  accolade_maa_mages:0 "Retinue Mages"
  accolade_maa_mages_flavor:1 "[retinue_maa|E]\n#F Armed with their wands and arsenal of spells, they will rain hellfire magic upon their enemies.#!"

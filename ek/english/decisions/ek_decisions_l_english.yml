@@ -45,6 +45,11 @@
  commune_with_loved_one_soulmate_decision_tooltip:0 "I know it is selfish, but I miss [ROOT.Var('soulmate_to_commune').Char.GetHerHim]..."
  commune_with_loved_one_soulmate_decision_confirm:0 "Bind [ROOT.Var('soulmate_to_commune').Char.GetHerHis] soul to this world, if only for a few moments"
  commune_with_loved_one_soulmate_tooltip:0 "I will attempt to summon the soul of the love of my life, to finally mourn them and tell them one last time how much I love and miss them.\n\nIt might not be without risk however, as the soul I will try to summon may want to be left alone..."
+
+ use_extra_perk_decision:0 "Repurpose Knowledge"
+ use_extra_perk_decision_desc:0 "I have dedicated myself to a single field of knowledge before considering to pledge myself to a new one. Now I have extensive experience in that particular field, yet I feel somewhat inadequate for there is nothing more to learn in there.\n\nI wonder if there is some way for me to take advantage of that excess..."
+ use_extra_perk_decision_tooltip:0 "Use one of your excess perk points and obtain a reward based on your traits and new lifestyle, in exchange for some stress."
+ use_extra_perk_decision_confirm:0 "Let's Review!"
  
  # Religious
 
@@ -158,6 +163,12 @@
  learn_liturgical_language_decision_confirm:0 "I will master [ROOT.Char.Custom('GetLiturgicalLanguage')]!"
  learn_liturgical_language_decision_tooltip:0 "Start a [scheme|E] to master your [faith|E]'s [liturgical_language|E]"
 
+ recruit_priest_scaled_court_decision:0 "Request a new Realm Priest"
+ recruit_priest_scaled_court_decision_desc:0 "Those who wish to serve as [ROOT.Char.GetFaith.PriestNeuter] are expected to be favored by the Celestial Serpent. If we lack such talent in our midst, we can ask the priesthood to release a suitable individual into our service."
+ recruit_priest_scaled_court_decision.tt:0 "A priest born under [sign_serpent|E] will be summoned to your [court|E]."
+ recruit_priest_scaled_court_decision_confirm:0 "Summon the [ROOT.Char.GetFaith.PriestNeuter]!"
+ recruit_priest_scaled_court_decision_tooltip:0 "Recruit a [ROOT.Char.GetFaith.PriestNeuter] from a local [ROOT.Char.GetFaith.HouseOfWorship] to fill the void in your court"
+
  champion_conversion_decision:0 "Devote yourself to your Prince"
  champion_conversion_decision_desc:0 "While you are your Prince's champion, you do not openly follow a faith worthy of it. This can change now."
  champion_conversion_decision_confirm:0 "I'm now devoted to you, my Prince!"
@@ -185,7 +196,25 @@
  consult_xarxeans_decision_effect:0 "You will be told, should [succession|E] take place at this moment, who your [heir|E] would be."
  consult_xarxeans_decision_confirm:0 "Oh, scribes of Auri-El!"
 
+ claim_d_worm_kingdom:0 "Claim the Worm Cult Leadership"
+ claim_d_worm_kingdom_desc:0 "After the ascension of our Lord Mannimarco, the Worm Cult was scattered, with no central cult leadership to direct its efforts. As a powerful and greatly respected member, I can fill that vacancy."
+ claim_d_worm_kingdom_tt:0 "Anchorites, hear me and obey!" 
+ claim_d_worm_kingdom_effect:0 "[worm_kingdom.GetName] is restored with you as its holder"
+ claim_d_worm_kingdom_confirm:0 "The Order is reforged!"
+
+ proclaim_disease_decision:0 "Proclaim a Disease"
+ proclaim_disease_decision_desc:0 "In this imperfect world, diseases are a constant reminder of the frailty and transient nature of all mortal life. But the Prince of Pestilence calls us to confront our vulnerabilities and accept them as a catalyst for change. Thus, my cough shall speak to the masses, rashes will cloak me like a regal mantle, and I will radiate fever to enlighten those untouched by Peryite's power.\n\nThe time is ripe to once again participate in the profound cycle of decay and renewal and offer myself as a vessel for the Lord of Abundant Pus and Bountiful Vomit."
+ proclaim_disease_decision_tt:0 "Prove your devotion by inflicting a disease upon yourself"
+ proclaim_disease_decision_effect_tt:0 "Peryite will grant your request."
+ proclaim_disease_decision_confirm:0 "Bless me, Blighted Lord!"
+
 # Artifacts
+
+ commission_banner_decision:0 "Commission Banner"
+ commission_banner_decision_desc:0 "What is the point of being a [ROOT.Char.GetTitleAsNameNoTooltip] if I don't have nice things to show for it? Something to hang on my walls would be nice..."
+ commission_banner_decision_effect:0 "A local weaver with a sponsored [project|E] arrives at your court"
+ commission_banner_decision_confirm:0 "Hire A Local Weaver"
+ commission_banner_decision_tooltip:0 "Hire a local weaver to create a wall ornament [artifact|E] for you"
 
  crown_verity_decision:0 "Judgement of Verity"
  crown_verity_decision_desc:0 "As is tradition since the crowning of Kjoric the White, every Nord ruler that possesses the Crown of Verity shall face the Judgement of Verity, which will define whether said ruler is apt or not to wear the Crown of their forefathers."
@@ -261,7 +290,7 @@
  recruit_shadowscale_decision_tooltip:0 "Seek a Shadowscale to join your [court|E] as your [GetCourtPositionType('shadowscale_court_position').GetName()]"
  recruit_shadowscale_decision_confirm:0 "Dread Father, send me your servant!"
  recruit_shadowscale_decision_desc:0 "The Shadowscales are an enigmatic order found in Black Marsh, made up of People-of-the-Root hatched under the sign of the Shadow and trained from birth in the art of stealth and substerfuge. As a respected Saxhleel ruler, I may recruit one into my service."
- recruit_shadowscale_decision_trigger:0 "You have not spurned the Shadowscale traditions"
+ recruit_shadowscale_decision_trigger:0 "You have not spurned the Shadowscale traditions by refusing to give up a Shadowborn hatchling"
  recruit_shadowscale_decision_effect:0 "A Shadowscale will shortly present themselves and join your [court|E]"
 
 
@@ -275,6 +304,19 @@
  hire_mage_decision_confirm:0 "Start the search"
  ek_court_position.0001.t:0 "Court Mage"
  ek_court_position.0001.desc:0 "This world is full of dangers, even to a [ROOT.Char.GetTitleTierName] and [ROOT.Char.GetHerHis] court. As per my request, my servants have inquired after recommendations. Now they have assembled a few options to chose from."
+
+# Invite Criminals
+ invite_criminals_decision:0 "Invite Criminals"
+ invite_criminals_decision_tooltip:3 "The word will be spread that your court is open to infamous individuals who may be unable to find another place suitable for their special... talents"
+ invite_criminals_decision_desc:1 "I can always use additional henchmen to carry out my will, especially ones with unusual gifts. It may be time to gather some of them at my court and look among them for those who are the most promising."
+ invite_criminals_decision_effect_tooltip:4 "You will be presented with a selection of outlaws and other shunned characters who are willing to join your court for free."
+ invite_criminals_decision_confirm:0 "All are welcome!"
+ ek_court_position.0005.t:0 "New Henchmen"
+ ek_court_position.0005.desc:0 "My call did not stay unanswered as it was expected. There are enough individuals in Nirn willing to serve a [ROOT.Char.GetTitleTierName] like myself.\n\nNow it is my turn to decide if my court is going to grow today or not."
+ ek_court_position.0005.a:0 "[first_option.GetFirstName|U] looks promising."
+ ek_court_position.0005.b:0 "[second_option.GetFirstName|U] will surely serve me well."
+ ek_court_position.0005.c:0 "Both of them are allowed to join my ranks."
+ ek_court_position.0005.d:0 "What a waste of time. Out of my sight!"
 
 # Adoption
  adopt_child_decision:0 "Visit Orphanage"
