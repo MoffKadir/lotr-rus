@@ -57,40 +57,150 @@
  lotr_thani_hazad.1200.c:0 "Если я пощажу тебя, ты [Select_CString(stormhost_spy.IsFemale, 'должна', 'должен' )] предать своего хозяина и стать моим агентом."
 
  ### The Stormhost Tandi Rebellion ###
+ lotr_thani_hazad.2000.t:0 "Враги Бури"
+ lotr_thani_hazad.2000.desc:0 "Вот уже два с половиной тысячелетия анбалукхори правят этими землями, и за это время между нами, [Concept('adunai', 'адунайцами')|E], и нашими подданными происходило несметное количество сражений. И так было всегда, ибо мы - отпрыски [Concept('numenor', 'Нуменора')|E], призванные держать в услужении дикие народы мира.\n\nПоэтому мы часто воевали с нашими непокорными подданными, и раз за разом выходили победителями. Поэтому нет ничего удивительного в том, что ко мне в суд приходят письма с предупреждениями о том, что [Select_CString(outspoken_rebel.IsFemale, 'некая', 'некий' )] [outspoken_rebel.GetName], [Select_CString(outspoken_rebel.IsFemale, 'красноречивая', 'красноречивый' )] выскочка, затевает мятеж, не имея особого происхождения и судьбы.\n\nОднако час близится. Скоро мои войска выступят в поход против [Concept('bellakar', 'Беллакара')|E], и многие погибнут в буре. Возможно, чтобы выжить, мы должны измениться. Может, настало время наладить связи, а не создавать врагов из наших подданных?"
+ lotr_thani_hazad.2000.a:0 "Законные отпрыски [Concept('numenor', 'Нуменора')|E] никогда не склонятся перед оборванными дикарями!"
+ lotr_thani_hazad.2000.a.tt:0 "Вы попытаетесь сокрушить [Select_CString(outspoken_rebel.IsFemale, 'эту бунтарку', 'этого бунтаря' )]."
+ ## Option B: Reform: Unimplemented
+
+
  lotr_thani_hazad.2001.t: "Беспокойный выскочка"
- lotr_thani_hazad.2001.desc: "[outspoken_rebel.GetName], [Select_CString(outspoken_rebel.IsFemale, 'харизматичная мятежница, прославившаяся', 'харизматичный мятежник, прославившийся' )] предыдущей попыткой поднять восстание, [Select_CString(outspoken_rebel.IsFemale, 'была замечена', 'был замечен' )] во владении [outspoken_rebel.GetCurrentLocation.GetCounty.GetName].\n\n[Select_CString(outspoken_rebel.IsFemale, 'Эта самопровозглашенная вестница', 'Этот самопровозглашенный вестник' )] воли тандитского пантеона бродит по сёлам и мутит воду среди местного населения. В их число входят порабощенные и свободные, многие из которых работают здесь. Возможно, это наш шанс схватить и наказать [outspoken_rebel.GetHerHis]."
+ lotr_thani_hazad.2001.desc: "До меня дошли вести о [Select_CString(outspoken_rebel.IsFemale, 'харизматичной предводительнице', 'харизматичном вожде' )] племён, [Select_CString(outspoken_rebel.IsFemale, 'известной', 'известном' )] как [outspoken_rebel.GetName]. Мои шпионы прознали о [outspoken_rebel.GetHerHis] присутствии в предгорьях владения [outspoken_rebel.GetCurrentLocation.GetCounty.GetName], где [outspoken_rebel.GetSheHe] стремится привлечь больше сторонников в своё восстание.\n\n[Select_CString(outspoken_rebel.IsFemale, 'Эта харизматичная самопровозглашенная вестница', 'Этот харизматичный самопровозглашенный вестник' )] воли тандитского пантеона бродит по сёлам и мутит воду среди местного населения. Ночью пропали рабы, что, несомненно, дело рук этих мятежных отбросов. Возможно, нам стоит избавиться от проблемы, пока она не стала слишком большой."
  lotr_thani_hazad.2001.a: "Мы устроим на н[outspoken_rebel.GetHerHis] засаду."
- lotr_thani_hazad.2001.a.success: "Вы арестовываете смутьяна"
+ lotr_thani_hazad.2001.a.success: "Вы арестовываете [Select_CString(outspoken_rebel.IsFemale, 'смутьянку', 'смутьяна' )]"
  lotr_thani_hazad.2001.a.failure: "[outspoken_rebel.GetSheHe|U] избегает вашей западни"
  lotr_thani_hazad.2001.a.failure.tt: "[outspoken_rebel.GetHerHis|U] дело привлечёт новых сторонников"
- lotr_thani_hazad.2001.c: "Не обращать на н[outspoken_rebel.GetHerHis] внимания, [outspoken_rebel.GetSheHe] не представляет опасности."
+ lotr_thani_hazad.2001.c: "У нас есть более важные проблемы, о которых стоит беспокоиться."
  lotr_tandi_rebellion_events_cause_strengthened_tt: "[outspoken_rebel.GetName] получает поддержку"
  lotr_tandi_rebellion_events_cause_greatly_strengthened_tt: "[outspoken_rebel.GetName] получает значительную поддержку"
  lotr_tandi_rebellion_opressed_me: "Угнетение с вашей стороны"
  lotr_tandi_rebellion_leaves_for_tayalima: "[outspoken_rebel.GetName] отправляется во владение [GetTitleByKey('c_tayalima').GetName]"
 
- lotr_thani_hazad.2003.t: "Активность мятежников"
- lotr_thani_hazad.2003.desc: "[tandi_leader.GetName], [Select_CString(tandi_leader.IsFemale, 'известная смутьянка, появилась', 'известный смутьян, появился' )] во владении [GetTitleByKey('c_tayalima').GetName]. [tandi_leader.GetSheHe|U] [Select_CString(tandi_leader.IsFemale, 'бежала', 'бежал' )] из владения [GetTitleByKey('c_trulsa').GetNameNoTier] после неудачной попытки поднять мятеж. В своей заносчивости [Select_CString(tandi_leader.IsFemale, 'она', 'он' )] утверждает, что действует от имени местных богов, желая освободить свой народ от гнёта Грозового воинства.\n\nНесмотря на нелепость подобных заявлений, мои противники могут счесть их удобным поводом, чтобы оспорить мое право на власть."
- lotr_thani_hazad.2003.a: "Я докажу ошибочность [tandi_leader.GetHersHis|l] притязаний."
+
+
+ lotr_thani_hazad.2003.t: "Растущая активность мятежников"
+ lotr_thani_hazad.2003.desc: "И вновь на моём столе появляется имя [Select_CString(tandi_leader.IsFemale, 'этой сопливой дурочки, известной', 'этого сопливого дурачка, известного' )] как [tandi_leader.GetFirstName]. [Select_CString(tandi_leader.IsFemale, 'Известная смутьянка появилась', 'Известный смутьян появился' )] во владении [GetTitleByKey('c_tayalima').GetName]. [tandi_leader.GetSheHe|U] [Select_CString(tandi_leader.IsFemale, 'бежала', 'бежал' )] из владения [GetTitleByKey('c_trulsa').GetNameNoTier] после неудачной попытки поднять мятеж. В своей заносчивости, как и многие до [Select_CString(tandi_leader.IsFemale, 'неё', 'него' )], [Select_CString(tandi_leader.IsFemale, 'она', 'он' )] утверждает, что действует от имени местных богов, желая освободить свой народ от гнёта Грозового воинства.\n\nХотя я сомневаюсь, что [tandi_leader.GetSheHe] многого добьется, было бы разумно выкорчевать всех сторонников мятежа из этого района в качестве предупреждения для всех потенциальных смутьянов."
+ lotr_thani_hazad.2003.a: "Высоко подвесить гниющие головы врагов Бури!"
  lotr_thani_hazad.2003.a.success: "Ваша демонстрация силы запугала сторонников мятежа."
  lotr_thani_hazad.2003.a.failure: "Вы не состоянии запугать сторонников восстания"
  lotr_thani_hazad.2003.b: "Я не стану обращать внимания на [Select_CString(tandi_leader.IsFemale, 'эту дуру', 'этого дурака' )]."
+ lotr_tandi_rebellion_leaves_for_asukis:0 "[outspoken_rebel.GetName] leaves for [GetTitleByKey('c_asukis').GetName]"
+
 
  lotr_thani_hazad.2006.t: "Недовольство среди рабочих"
- lotr_thani_hazad.2006.desc.a: "[tandi_representative.GetName], предводитель рабочих, занимающихся нескончаемой работой в шахтах и полях владения [GetTitleByKey('c_trulsa').GetNameNoTier], приходит ко мне с просьбой об улучшении условий труда. Они являются коренными жителями этого региона и управляются элитным классом адунайских владык.\n\n"
+ lotr_thani_hazad.2006.desc.a: "Перед моим троном гордо стоит [tandi_representative.GetName], [Select_CString(tandi_representative.IsFemale, 'немытая, но широкоплечая и высокая', 'немытый, но широкоплечий и высокий' )]. [Select_CString(tandi_representative.IsFemale, 'Она представилась как посланница', 'Он представился как посланник' )] так называемого «вождя тандитов».\n\n«Я из владения [GetTitleByKey('c_trulsa').GetNameNoTier], о [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )]-тиран, земли, где ваши родичи в древности омыли поля кровью моего рода». [Select_CString(tandi_representative.IsFemale, 'Она', 'Он' )] говорит спокойно. «Я [Select_CString(tandi_representative.IsFemale, 'пришла', 'пришёл' )] к вам во имя справедливости и чести, хотя и не знаю, есть ли они у вас. Освободите моих родичей и соседей, обращайтесь с нами достойно, и я обещаю, что мы не станем поднимать против вас оружие».\n\n"
  lotr_thani_hazad.2006.desc.b: "Я подозреваю, что [tandi_leader.GetName] и [tandi_leader.GetHerHis] мятеж как-то связаны с растущим недовольством.\n\n"
- lotr_thani_hazad.2006.desc.c: "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsName], прошу, неужто [ROOT.Char.GetFaith.HighGodName] не ценит доброго отношения к рабочим независимо от их происхождения?»"
- lotr_thani_hazad.2006.a: "Вы получите награду за свой тяжкий труд."
+ lotr_thani_hazad.2006.desc.c: "«Об этом я умоляю вас, ибо мы ищем не насилия и не возмездия, а свободы»."
+ lotr_thani_hazad.2006.a: "Я сделаю вам некоторые уступки, хотя и не [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] этого делать."
  lotr_rival_gave_title_away: "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'отдали', Select_CString(CHARACTER.IsFemale, 'отдала', 'отдал' ))] земли, которыми ранее [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'владели', Select_CString(TARGET_CHARACTER.IsFemale, 'владела', 'владел' ))] [TARGET_CHARACTER.GetShortUIName]."
  lotr_landed_tandi_reason: "Обмен земель на мир"
- lotr_thani_hazad.2006.b: "Я могу пойти на небольшие уступки..."
+ lotr_thani_hazad.2006.b: "Таков ваш удел, живите с этим..."
  lotr_tandi_rebellion_interfered_with_my_workers: "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'вмешались', Select_CString(CHARACTER.IsFemale, 'вмешалась', 'вмешался' ))] от имени рабочих, которыми [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'владели', Select_CString(TARGET_CHARACTER.IsFemale, 'владела', 'владел' ))] [TARGET_CHARACTER.GetShortUIName]."
- lotr_thani_hazad.2006.c: "Таков удел рабочих."
+ lotr_thani_hazad.2006.c: "Я не терплю нелояльных мерзавцев."
  lotr_rival_stayed_out_of_my_business: "[CHARACTER.GetShortUIName|U] не [Select_CString(CHARACTER.IsLocalPlayer, 'стали', Select_CString(CHARACTER.IsFemale, 'стала', 'стал' ))] вмешиваться в то, как [TARGET_CHARACTER.GetShortUIName] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'ведете', 'ведет')] дела."
 
- lotr_thani_hazad.2008.t: "Восстания тандитов"
- lotr_thani_hazad.2008.desc.a: "До меня дошли сведения об открытом мятеже во владении [GetTitleByKey('c_trulsa').GetName]."
- lotr_thani_hazad.2008.desc.b: "[tandi_leader.GetName], [Select_CString(tandi_leader.IsFemale, 'которую', 'которого' )] многие считали безобидным шарлатаном, [Select_CString(tandi_leader.IsFemale, 'сумела', 'сумел' )] объединить недовольных рабочих-тандитов и местные мятежные племена. Хотя [tandi_leader.GetName] принадлежит к #L [tandi_leader.GetCulture.GetCollectiveNoun|l]ому#! народу, повстанцы видят в [Select_CString(tandi_leader.IsFemale, 'ней', 'нем' )] своего предводителя."
- lotr_thani_hazad.2008.desc.c: "[tandi_leader.GetName], особо [Select_CString(tandi_leader.IsFemale, 'недовольная', 'недовольный' )] танди, [Select_CString(tandi_leader.IsFemale, 'объединила', 'объединил' )] недовольных рабочих-тандитов и местные мятежные племена. Хотя [tandi_leader.GetName] принадлежит к #L [tandi_leader.GetCulture.GetCollectiveNoun|l]ому#! народу, повстанцы видят в [Select_CString(tandi_leader.IsFemale, 'ней', 'нем' )] своего предводителя."
- lotr_thani_hazad.2008.desc.d: "\n\nМятежники погрузились на большую баржу и отправились вниз по реке к владению [GetTitleByKey('c_trulsa').GetNameNoTier], намереваясь перебить хозяев рабочих. Это открытый вызов моей власти."
- lotr_thani_hazad.2008.a: "Реки покраснеют от крови предателей."
+ lotr_thani_hazad.2008.t: "Налётчики в ночи"
+ lotr_thani_hazad.2008.desc:0 "С чела склонившегося передо мной посланника стекают бисеринки пота, и он глубоко дышит, передавая мне информацию.\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsName], я пришёл от имени владения [GetTitleByKey('c_asukis').GetName]. Боюсь, что угроза, которую предоставляет [tandi_leader.GetName], всё ещё сохраняется. Стражники и солдаты, размещённые во владении [GetTitleByKey('c_asukis').GetName], были найдены мёртвыми, убитыми ночью, а склады снабжения и поместья подверглись набегам. Я не думаю, что это какая-то маленькая сила, но и слишком большой она быть не может. Кто знает, какой ущерб они могут нанести, если соберут ещё больше сил?»"
+ lotr_thani_hazad.2008.a:0 "Разберитесь с этим сами."
+ lotr_thani_hazad.2008.a.tt:0 "Вы пренебрегаете борьбой с повстанцами, позволяя им ещё больше укрепиться."
+ lotr_thani_hazad.2008.b:0 "Изолировать провинцию! Я хочу, чтобы [tandi_leader.GetName] [Select_CString(tandi_leader.IsFemale, 'была мертва', 'был мёртв' )], #italic немедленно#!!"
+ lotr_thani_hazad.2008.b.tt:0 "Вероятность того, что [tandi_leader.GetName] погибнет, крайне маловероятна."
+
+
+ lotr_thani_hazad.2009.t:0 "В горы"
+ lotr_thani_hazad.2009.desc:0 "[title:c_asukis.holder.GetName], [Select_CString(title:c_asukis.holder.IsFemale, 'правительница', 'правитель' )] владения [GetTitleByKey('c_asukis').GetName], склоняется передо мной, в [Select_CString(title:c_asukis.holder.IsFemale, 'её', 'его' )] глазах страх. [Select_CString(title:c_asukis.holder.IsFemale, 'Она', 'Он' )] глотает воздух, поднимаясь на ноги.\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsName], прошу прощения, но следов мятежников не обнаружено. Мои воины обыскали всё, что могли, но горные долины огромны, и есть бесконечное множество мест, где они могли бы спрятаться», - говорит [Select_CString(title:c_asukis.holder.IsFemale, 'она', 'он' )]. Я не отвечаю. \n\n«Мы искали бесчисленное количество дней, и многие мои солдаты погибли от холода. Мы не могли больше продолжать поиски,  [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )] [ROOT.Char.GetTitleAsName], пожалуйста, простите меня».\n\nМятежники, вероятно, уже давно скрылись, выжидая время."
+ lotr_thani_hazad.2009.a:0 "Вы подвели меня однажды. Второго раза не будет."
+ lotr_thani_hazad.2009.b:0 "Теперь уже ничего не поделаешь. Уходите."
+
+
+
+
+
+ lotr_thani_hazad.2011.t:0 "Утихание бури"
+ lotr_thani_hazad.2011.desc.a:0 "Посланцы прибывают на рассвете, измученные, их лошади на пределе возможностей, и они приносят дурные вести, ибо на востоке развеваются знамёна восстания."
+ lotr_thani_hazad.2011.desc.b:0 "[tandi_leader.GetName], [Select_CString(tandi_leader.IsFemale, 'эта проклятая дикарка, сумела', 'этот проклятый дикарь, сумел' )] объединить под своими знамёнами коалицию недовольных #L [tandi_leader.GetCulture.GetCollectiveNoun]их#! рабочих, рабов и различных мятежных туземных племён. \n\n[Select_CString(tandi_leader.IsFemale, 'Глупая и надменная', 'Глупый и надменный' )] выскочка [Select_CString(tandi_leader.IsFemale, 'укрепила', 'укрепил' )] свою власть, а мятежники стали видеть в [Select_CString(tandi_leader.IsFemale, 'ней', 'нём' )] настоящего лидера, и поэтому они словно мухи роятся перед [Select_CString(tandi_leader.IsFemale, 'её', 'его' )] знаменем."
+ lotr_thani_hazad.2011.desc.c:0 "[Select_CString(tandi_leader.IsFemale, 'Проклятая', 'Проклятый' )] [tandi_leader.GetName], [Select_CString(tandi_leader.IsFemale, 'отъявленная и свирепая представительница', 'отъявленный и свирепый представитель' )] #L [tandi_leader.GetCulture.GetCollectiveNoun]ого#! народа, [Select_CString(tandi_leader.IsFemale, 'объединила', 'объединил' )] под своим знаменем бесчисленное множество безродных рабочих, рабов и мятежных туземных племён. [Select_CString(tandi_leader.IsFemale, 'Эта глупая и самонадеянная выскочка укрепила', 'Этот глупый и самонадеянный выскочка укрепил' )] свою власть, а мятежники стали считать [tandi_leader.GetHerHis] настоящим лидером."
+ lotr_thani_hazad.2011.desc.d:0 "\n\nУлицы владения [GetTitleByKey('c_trulsa').GetNameNoTier] окрасились в красный цвет, а не его воротах возвышаются отрубленные головы их праведных повелителей. Пришло время им отведать [Concept('adunaic', 'адунайской')|E] стали."
+ lotr_thani_hazad.2011.a:0 "Реки покраснеют от крови изменников."
+
+ lotr_thani_hazad.2101.t:0 "Неприятности в Грозовом воинстве"
+ lotr_thani_hazad.2101.desc:0 "PLACEHOLDER - Mordor can send aid to StormHost"
+ lotr_thani_hazad.2101.a:0 "Small Army"
+ lotr_thani_hazad.2101.b:0 "Large Army"
+ lotr_thani_hazad.2101.c:0 "Chastize"
+
+ lotr_thani_hazad.2102.t:0 "Помощь из Мордора"
+ lotr_thani_hazad.2102.desc:0 "PLACEHOLDER - Small Army from Mordor"
+ lotr_thani_hazad.2102.a:0 "Accept"
+ lotr_thani_hazad.2102.b:0 "Deny"
+
+ lotr_thani_hazad.2103.t:0 "Великое воинство из Мордора"
+ lotr_thani_hazad.2103.desc:0 "PLACEHOLDER - Large Army from Mordor"
+ lotr_thani_hazad.2103.a:0 "Accept"
+ lotr_thani_hazad.2103.b:0 "Deny"
+
+ lotr_thani_hazad.2104.t:0 "Гнев Башни"
+ lotr_thani_hazad.2104.desc:0 "PLACEHOLDER - Sauron chastizes StormKing"
+ lotr_thani_hazad.2104.a:0 "Sorry"
+
+
+ lotr_thani_hazad.2105.t:0 "Золотая буря"
+ lotr_thani_hazad.2105.desc:0 "PLACEHOLDER - Nykkea can send aid to StormHost"
+ lotr_thani_hazad.2105.a:0 "Accept"
+ lotr_thani_hazad.2105.b:0 "Deny"
+
+ lotr_thani_hazad.2106.t:0 "Предложение пиратов"
+ lotr_thani_hazad.2106.desc:0 "PLACEHOLDER - Nykkea offers aid"
+ lotr_thani_hazad.2106.a:0 "Accept"
+ lotr_thani_hazad.2106.b:0 "Deny"
+
+
+ lotr_thani_hazad.2107.t:0 "Враг нашего врага"
+ lotr_thani_hazad.2107.desc:0 "PLACEHOLDER - Bellakar can offer aid to rebels"
+ lotr_thani_hazad.2107.a:0 "Small Army"
+ lotr_thani_hazad.2107.b:0 "Large Army"
+ lotr_thani_hazad.2107.c:0 "Nah"
+
+ lotr_thani_hazad.2108.t:0 "Помощь из Нилулондэ"
+ lotr_thani_hazad.2108.desc:0 "PLACEHOLDER - Bellakar offers a small army"
+ lotr_thani_hazad.2108.a:0 "Accept"
+ lotr_thani_hazad.2108.b:0 "Deny"
+
+
+ lotr_thani_hazad.2109.t:0 "Воинство Беллакара"
+ lotr_thani_hazad.2109.desc:0 "PLACEHOLDER - Bellakar offers a large army"
+ lotr_thani_hazad.2109.a:0 "Accept"
+ lotr_thani_hazad.2109.b:0 "Deny"
+
+ lotr_thani_hazad.2110.t:0 "Проклятие тирана"
+ lotr_thani_hazad.2110.desc:0 "PLACEHOLDER - Felaya can offer aid to rebels"
+ lotr_thani_hazad.2110.a:0 "Small Army"
+ lotr_thani_hazad.2110.b:0 "Large Army"
+ lotr_thani_hazad.2110.c:0 "Nah"
+
+ lotr_thani_hazad.2111.t:0 "Помощь от Первого лорда"
+ lotr_thani_hazad.2111.desc:0 "PLACEHOLDER - Felaya offers a small army"
+ lotr_thani_hazad.2111.a:0 "Accept"
+ lotr_thani_hazad.2111.b:0 "Deny"
+
+ lotr_thani_hazad.2112.t:0 "Воинство Фелайи"
+ lotr_thani_hazad.2112.desc:0 "PLACEHOLDER - Felaya offers a large army"
+ lotr_thani_hazad.2112.a:0 "Accept"
+ lotr_thani_hazad.2112.b:0 "Deny"
+
+
+ lotr_thani_hazad.2113.t:0 "Повстанцы на севере"
+ lotr_thani_hazad.2113.desc:0 "PLACEHOLDER - Holzoreth can offer aid to rebels"
+ lotr_thani_hazad.2113.a:0 "Small Army"
+ lotr_thani_hazad.2113.b:0 "Large Army"
+ lotr_thani_hazad.2113.c:0 "Nah"
+
+ lotr_thani_hazad.2114.t:0 "Помощь из Холзорета"
+ lotr_thani_hazad.2114.desc:0 "PLACEHOLDER - Holzoreth offers a small army"
+ lotr_thani_hazad.2114.a:0 "Accept"
+ lotr_thani_hazad.2114.b:0 "Deny"
+
+ lotr_thani_hazad.2115.t:0 "Воинство Холзорета"
+ lotr_thani_hazad.2115.desc:0 "PLACEHOLDER - Holzoreth offers a large army"
+ lotr_thani_hazad.2115.a:0 "Accept"
+ lotr_thani_hazad.2115.b:0 "Deny"
