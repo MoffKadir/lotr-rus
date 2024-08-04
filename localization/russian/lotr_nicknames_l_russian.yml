@@ -155,6 +155,8 @@
  nick_mist_child:0 "Дитя Тумана"
  nick_first_among_equals:0 "[Select_CString(CHARACTER.IsFemale, 'Первая среди равных', 'Первый среди равных' )]"
  nick_thornheart:0 "Колючее Сердце"
+ nick_bloodspear:0 "Кровавое Копьё"
+ nick_bloodspear_desc:0 "Когда [Select_CString( CHARACTER.IsLocalPlayer, 'ваш', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] отец был отравлен, [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажу ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'ему персонажу', '' )] пришлось объединить племя Дунландфеллс, что [Select_CString( CHARACTER.IsLocalPlayer, 'вы и сделали', Select_CString(CHARACTER.IsFemale, 'она и сделала', 'он и сделал' ))], орудуя копьём, с которого почти всегда капала кровь [Select_CString( CHARACTER.IsLocalPlayer, 'ваших', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] врагов."
 
  ### Gwaithurim Nicknames ###
  nick_the_mad_dog:0 "[Select_CString(CHARACTER.IsFemale, 'Бешеная Собака', 'Бешеный Пёс' )]"
@@ -166,6 +168,8 @@
  nick_the_riverlord:0 "[Select_CString(CHARACTER.IsFemale, 'Речная владычица', 'Речной владыка' )]"
  nick_the_mountainfather:0 "[Select_CString(CHARACTER.IsFemale, 'Мать', 'Отец' )] Гор"
  nick_the_mountainfather_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] [Select_CString(CHARACTER.IsFemale, 'великим матриархом', 'великим патриархом' )], [Select_CString(CHARACTER.IsFemale, 'породившей', 'породившим' )] много сильных детей и [Select_CString(CHARACTER.IsFemale, 'заботившейся', 'заботившимся' )] о своей семье."
+ nick_brazen_brigant:0 "the Brazen Brigant"
+ nick_brazen_brigant_desc:0 "[CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] was a notorious raider who often took to the sea to pillage along the coastlines of [enedhwaith|E], sometimes even passing beyond the cape of [andrast|E] for the riches of [gondor|E]."
 
  ### Angmar Nicknames ###
  nick_the_merciless_angmar:0 "[Select_CString(CHARACTER.IsFemale, 'Неумолимая', 'Неумолимый' )]"
@@ -223,6 +227,8 @@
  nick_the_outlander_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были изгнаны', Select_CString(CHARACTER.IsFemale, 'была изгнана', 'был изгнан' ))] из родных мест в [Concept('rhudaur', 'Рудауре')|E], когда королевство пало под ударами горцев и [Concept('angmar', 'Ангмара')|E] в [Concept('thirdage', 'Третью Эпоху')|E] и некоторое время [Select_CString( CHARACTER.IsLocalPlayer, 'скитались', Select_CString(CHARACTER.IsFemale, 'скиталась', 'скитался' ))] по пустошам, прежде чем закончить свою жизнь на службе у короля [Concept('arthedain', 'Артедайна')|E]."
  nick_son_of_rhudaur:0 "[Select_CString(CHARACTER.IsFemale, 'Дочь', 'Сын' )] Рудаура"
  nick_son_of_rhudaur_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] неоднократно [Select_CString( CHARACTER.IsLocalPlayer, 'доказывали', Select_CString(CHARACTER.IsFemale, 'доказывала', 'доказывал' ))] свою доблесть и верность наследнику [Concept('isildur', 'Исильдура')|E], как [Select_CString(CHARACTER.IsFemale, 'истинная', 'истинный' )] дунэдайн. Истинная сила [Concept('rhudaur', 'Рудаура')|E] жива и поныне."
+ nick_avenging_swan:0 "Мстительный Лебедь"
+ nick_avenging_swan_desc:0 "Когда морские налётчики из [Concept('enedhwaith', 'Энедвайта')|E] совершили набег на побережье [Concept('anfalas', 'Анфаласа')|E], [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] лично отомстить, возглавив карательную экспедицию в Лонд Ангрен."
 
  ### Defender against Wildmen Nicknames ###
  nick_the_unyielding:0 "[Select_CString(CHARACTER.IsFemale, 'Непреклонная', 'Непреклонный' )]"
@@ -558,7 +564,7 @@
  nick_vatra_acolu:0 "Ватра Аколу"
  nick_the_flame_tender:0 "[Select_CString(CHARACTER.IsFemale, 'Заклинательница', 'Заклинатель' )] Пламени"
  nick_storm_queller:0 "[Select_CString(CHARACTER.IsFemale, 'Усмирившая', 'Усмиривший' )] Бурю"
- nick_storm_queller_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'известны', Select_CString(CHARACTER.IsFemale, 'известна', 'известен' ))] своей ненавистью к правителям [Concept('anbalkumagan', 'Ан-Балкумагана')|E] и Грозового Воинства, желая положить конец их правлению."
+ nick_storm_queller_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'известны', Select_CString(CHARACTER.IsFemale, 'известна', 'известен' ))] своим выступлением против Грозового Воинства, пытаясь положить конец их правлению."
 
  ### Lossoth Nicknames ###
  nick_assistant_unique:0 "[Select_CString(CHARACTER.IsFemale, 'Помощница', 'Помощник' )]"

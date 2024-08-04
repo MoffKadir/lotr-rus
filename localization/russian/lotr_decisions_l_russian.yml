@@ -94,7 +94,7 @@
 
  decision_annihilate_dol_guldur:0 "Уничтожить Дол Гулдур"
  decision_annihilate_dol_guldur_tooltip:0 "Стереть пятно [Concept('sauroncharacter', 'Саурона')|E] в южном [greenwood|E]"
- decision_annihilate_dol_guldur_desc:0 "С тех пор как Орофер отступил на север, его народ постепенно покинул южные земли [Concept('greenwood', 'Зеленолесья')|E]. Вслед за ними пришла тьма, и лес превратился в место ужаса и страха. На месте бывшего Амон Ланка возвысилась страшная крепость, известная теперь как Дол Гулдур, Колдовской холм. Искажённое эхо Тол-ин-Гаурхота, она распространяет заклятие, запятнавшее весь [Concept('rhovanion_kingdom', 'Рованион')|E] и угрожающее всем, кто там обитает.\n\nМы уничтожим этот бастион Тьмы и обезопасим земли Рованиона."
+ decision_annihilate_dol_guldur_desc:0 "С тех пор как Орофер отступил на север, его народ постепенно покинул южные земли [Concept('greenwood', 'Зеленолесья')|E]. Вслед за ними пришла тьма, и лес превратился в место ужаса и страха. На месте бывшего Амон Ланка возвысилась страшная крепость, известная теперь как Дол Гулдур, Колдовской холм. Искажённое эхо Тол-ин-Гаурхота, она распространяет заклятие, запятнавшее весь [Concept('rhovanion', 'Рованион')|E] и угрожающее всем, кто там обитает.\n\nМы уничтожим этот бастион Тьмы и обезопасим земли Рованиона."
  decision_annihilate_dol_guldur_confirm:0 "У нас нет Лутиэн, но это и не Тол-ин-Гаурхот." 
  decision_annihilate_dol_guldur_is_valid_tt:0 "Вы выплатили долг Азагала."
  decision_annihilate_dol_guldur_effect_tt:0 "Объявить [Concept('war', 'войну')|E] державе [GetTitleByKey('k_amon_lanc').GetHolder.GetName] за титул [GetTitleByKey('k_amon_lanc').GetName]"
@@ -140,7 +140,7 @@
  decision_reclamation_of_moria:0 "Возвращение Кхазад-дума"
  decision_reclamation_of_moria_tooltip:0 "Отвоевать [GetTitleByKey('k_khazad_dum').GetName], величайшее королевство [Concept( 'dwarves', 'гномов' )|E] в [middleearth|E]."
  decision_reclamation_of_moria_valid_tt:0 "В границах державы [GetTitleByKey('k_khazad_dum').GetName] не осталось [Concept('goblins', 'гоблинов')|E] или [Concept('orcs', 'орков')|E]."
- decision_reclamation_of_moria_desc:0 "[GetTitleByKey('k_khazad_dum').GetName] был самым могущественным королевством [Concept('dwarves', 'гномов')|E] в [middleearth|E]. С падением [Concept('balrog', 'балрога')|E] величайшее препятствие для возвращения гномов в него было устранено.\n\nОднако в его глубинах по-прежнему скрывается множество [Concept('goblins', 'гоблинов')|E] или [Concept('orcs', 'орков')|E]. Мы должны очистить эти глубины, позволив [Concept('longbeards', 'Длиннобородам')|E] вернуться в свою древнюю твердыню. Их сила понадобится в грядущих войнах."
+ decision_reclamation_of_moria_desc:0 "[khazaddum|E] был самым могущественным королевством [Concept('dwarves', 'гномов')|E] в [middleearth|E]. С падением [Concept('balrog', 'балрога')|E] величайшее препятствие для возвращения гномов в него было устранено.\n\nОднако в его глубинах по-прежнему скрывается множество [Concept('goblins', 'гоблинов')|E] или [Concept('orcs', 'орков')|E]. Мы должны очистить эти глубины, позволив [Concept('longbeards', 'Длиннобородам')|E] вернуться в свою древнюю твердыню. Их сила понадобится в грядущих войнах."
  decision_reclamation_of_moria_confirm:0 "Пусть величайшая твердыня вновь возвысится!"
  decision_reclamation_of_moria_title_tt:0 "\n$BULLET_WITH_TAB$[GetTitleByKey('k_khazad_dum').GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('d_zirakzigil').GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('d_barazinbar').GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('d_bundushathur').GetName]"
  decision_reclamation_of_moria_troops_tt:0 "Вы заключите [alliance|El] с [Concept('dwarves', 'гномами')|E] для [Concept('battle', 'сражений')|E] против [Concept('sauroncharacter', 'Саурона')|E], время от времени получая войска, связанные с [dwarf_in_moria.GetCulture.GetCollectiveNoun]ой [Concept('culture', 'культурой')|E]\n"
@@ -951,9 +951,9 @@
  decision_greater_faithful_tedjin_kingdom_desc:0 "Хотя пираты пали, рядом с нами остается ещё больше земель, где закрепились враги Верных. Если мы хотим построить истинный дом, где Верные могли бы жить свободно и безопасно, мы должны расширить наши границы и захватить их земли."
  decision_greater_faithful_tedjin_kingdom_confirm:0 "До самого Кханда, если придётся"
 
- #################################
+ ###############################
  #### Thâni-Hazâd Decisions ####
- #################################
+ ###############################
 
  decision_anbalkumagan_empire:0 "Восстановить державу Анбалукхор"
  decision_anbalkumagan_empire_tooltip:0 "Вернуть землям Анбалукхора их былую славу до Войны Отступников"
@@ -974,6 +974,27 @@
  decision_murder_bellakar_tooltip:0 "Pretty Self Explanitory"
  decision_murder_bellakar_desc:0 "Слишком долго Беллакар противостоял мощи Грозовых воевод. Пришло время сокрушить этих лже-адунай."
  decision_murder_bellakar_confirm:0 "Разрушим их города"
+
+ decision_ask_to_join_balan_lai:0 "Seek to Join the Bâlan-Lâi"
+ decision_ask_to_join_balan_lai_tooltip:0 "Appeal to current members of the Bâlan-Lâi to join their ranks"
+ decision_ask_to_join_balan_lai_desc:0 "The time has come for me to seek a place among the esteemed ranks of the [balan_lai|E]. I will make a formal appeal to its current members, making the case for my investiture as the newest hereditary member of the Council.\n\nI will state my intention to honor our traditions, bring fresh perspectives, and contribute to the enduring legacy of the Valdali and our people."
+ decision_ask_to_join_balan_lai_confirm:0 "Aglar Kharadûnâi!"
+ decision_ask_to_join_balan_lai_culture_derived_from_karadunaim:0 "Your [culture|E] descends from the Kharadûnâi"
+ decision_ask_to_join_balan_lai_mispir_not_in_realm:0 "The [GetTitleByKey('c_mispir').GetName] is not a part of your [realm|E]"
+ decision_ask_to_join_balan_lai_effect:0 "Every [GetTrait('balan_lai_member').GetName( GetNullCharacter )] will have an opportunity to veto."
+ decision_ask_to_join_balan_lai_effect2:0 "If no veto is used, you become a [GetTrait('balan_lai_member').GetName( GetNullCharacter )]."
+
+ #  decision_call_meeting_of_the_balan_lai:0 "Call a Meeting of the Bâlan-Lâi"
+ #  decision_call_meeting_of_the_balan_lai_tooltip:0 "Assemble the members of the Bâlan-Lâi to discuss an issue of your choice"
+ #  decision_call_meeting_of_the_balan_lai_desc:0 "The time has come for me to seek a place among the esteemed ranks of the [balan_lai|E]. I will make a formal appeal to its current members, making the case for my investiture as the newest hereditary member of the Council.\n\nI will state my intention to honor our traditions, bring fresh perspectives, and contribute to the enduring legacy of the Valdali and our people."
+ #  CHOOSE_DISCUSSION_TOPIC_NEXT_STEP_BUTTON:0 "Choose issue to discuss"
+ #  decision_balan_lai_northern_tithe:0 "Review Northern Tithe"
+ #  decision_balan_lai_building:0 "Building Efforts"
+ #  decision_balan_lai_control:0 "Enforce Order"
+ #  decision_balan_lai_military_training:0 "Training Exercises"
+ #  decision_balan_lai_faith_conversion:0 "Encourage Proselytism"
+ #  decision_balan_lai_culture_conversion:0 "Native Integration"
+ #  decision_call_meeting_of_the_balan_lai_confirm:0 "Send the missives!"
 
  #################################
  #### Sauron/Mordor Decisions ####
@@ -1393,7 +1414,7 @@
  decision_restore_thorins_tomb_confirm:0 "Восстановить гробницу"
 
  decision_unify_durins_folk:0 "Объединить Народ Дурина"
- decision_unify_durins_folk_desc:0 "С тех пор как [durindeathless|E] основал Кхазад-дум, его потомки претендовали на власть над всеми [Concept( 'longbeards', 'Длиннобородами' )|E]. Однако напрямую управлять дальними королевствами своего народа было нецелесообразно, и поэтому они оставляли их на произвол судьбы. Только в случае крайней необходимости они собирались и действовали под непосредственным командованием короля.\n\n[longbeards|E] на протяжении веков заселяли многие области, такие как Железные холмы, Серые горы и вплоть до Залов Торина. Если бы все эти далёкие регионы удалось объединить под одним знаменем, гномы Народа Дурина не только сравнялись бы со своими праотцами, но и превзошли бы их."
+ decision_unify_durins_folk_desc:0 "С тех пор как [durindeathless|E] основал [khazaddum|E], его потомки претендовали на власть над всеми [Concept( 'longbeards', 'Длиннобородами' )|E]. Однако напрямую управлять дальними королевствами своего народа было нецелесообразно, и поэтому они оставляли их на произвол судьбы. Только в случае крайней необходимости они собирались и действовали под непосредственным командованием короля.\n\n[longbeards|E] на протяжении веков заселяли многие области, такие как Железные холмы, Серые горы и вплоть до Залов Торина. Если бы все эти далёкие регионы удалось объединить под одним знаменем, гномы Народа Дурина не только сравнялись бы со своими праотцами, но и превзошли бы их."
  decision_unify_durins_folk_tooltip:0 "Наша слава бессмертна!"
  decision_unify_durins_folk_confirm:0 "Наша слава бессмертна!"
  control_percentage_of_misty_desc:1 "Контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_misty_mountains').GetName]"
