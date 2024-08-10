@@ -229,8 +229,8 @@
  nick_son_of_rhudaur_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] неоднократно [Select_CString( CHARACTER.IsLocalPlayer, 'доказывали', Select_CString(CHARACTER.IsFemale, 'доказывала', 'доказывал' ))] свою доблесть и верность наследнику [Concept('isildur', 'Исильдура')|E], как [Select_CString(CHARACTER.IsFemale, 'истинная', 'истинный' )] дунэдайн. Истинная сила [Concept('rhudaur', 'Рудаура')|E] жива и поныне."
  nick_avenging_swan:0 "Мстительный Лебедь"
  nick_avenging_swan_desc:0 "Когда морские налётчики из [Concept('enedhwaith', 'Энедвайта')|E] совершили набег на побережье [Concept('anfalas', 'Анфаласа')|E], [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] лично отомстить, возглавив карательную экспедицию в Лонд Ангрен."
- nick_the_pale:0 "the Pale"
- nick_the_pale_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharWereWas(CHARACTER)] know for [CharYourHerHis(CHARACTER)] pale skin and fair complexion, being admired by many for [CharYourHerHis(CHARACTER)] subtle beauty."
+ nick_the_pale:0 "[Select_CString(CHARACTER.IsFemale, 'Бледная', 'Бледный' )]"
+ nick_the_pale_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'известны', Select_CString(CHARACTER.IsFemale, 'известна', 'известен' ))] своей бледной кожей и светлым цветом лица. Многие восхищаются  [Select_CString( CHARACTER.IsLocalPlayer, 'вашей', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] утончённой красотой."
 
  ### Defender against Wildmen Nicknames ###
  nick_the_unyielding:0 "[Select_CString(CHARACTER.IsFemale, 'Непреклонная', 'Непреклонный' )]"
@@ -544,7 +544,7 @@
 
  ### Thâni-Hazâd Nicknames ###
  nick_the_rebuilder_thani:0 "[Select_CString(CHARACTER.IsFemale, 'Восстановительница', 'Восстановитель' )]"
- nick_the_rebuilder_thani_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U]'s efforts saw [anbalkumagan|E] recover from the devastating losses of the Last Armada."
+ nick_the_rebuilder_thani_desc:0 "Благодаря усилиям [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] [anbalkumagan|E] оправился от опустошительных потерь Последней Армады."
  nick_the_daring:0 "[Select_CString(CHARACTER.IsFemale, 'Дерзкая', 'Дерзкий' )]"
  nick_the_resplendent:0 "[Select_CString(CHARACTER.IsFemale, 'Блистательная', 'Блистательный' )]"
  nick_the_mystic:0 "Мистик"
@@ -556,11 +556,11 @@
  nick_the_witch_doctor_unique:0 "[Select_CString(CHARACTER.IsFemale, 'Знахарка', 'Знахарь' )]"
  nick_the_witch_doctor_unique_desc:0 "Легенды северных адена рассказывают о [Select_CString(CHARACTER.IsFemale, 'мудрой и могущественной шаманке', 'мудром и могущественном шамане' )]. Говорят, что [Select_CString(CHARACTER.IsFemale, 'эта «Знахарка»', 'этот «Знахарь»' )] скрывается в самых глубинах болот. Однако местные жители отказываются сообщать адунайским владыкам [Select_CString(CHARACTER.IsFemale, 'её', 'его' )] точное местонахождение. Говорят только, что однажды [Select_CString(CHARACTER.IsFemale, 'она', 'он' )] освободит адена от их деспотичных владык."
  nick_the_bandit_king_unique:0 "[Select_CString(CHARACTER.IsFemale, 'Королева-разбойница', 'Король-разбойник' )]"
- nick_the_bandit_king_unique_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharWereWas(CHARACTER)] driven to action by the disasterous council that shattered the Principality of , helped and hindered in equal measure by his giving nature. [CharYouSheHe(CHARACTER)] swore an oath that [CharYourHerHis(CHARACTER)] people would see freedom from all tyranny or [CharYouSheHe(CHARACTER)] would die trying."
- nick_the_moonflower:0 "the Moonflower"
- nick_the_moonflower_desc:0 "It was said [CHARACTER.GetShortUINameNoTooltipNoFormat] shunned the daylight, only ever coming out of [CharYourHerHis(CHARACTER)] chambers during the night."
- nick_the_intrigrant:0 "the Intrigrant"
- nick_the_intrigrant_desc:0 "Thorough [CharYourHerHis(CHARACTER)] life, [CHARACTER.GetShortUINameNoTooltipNoFormat] maintained a reputable and generally benevolent public image. It was only after his death that rumors about his enormous spy network, connection to a countless number of mysterious disappearances, and other shadowy plots started to circulate."
+ nick_the_bandit_king_unique_desc:0 "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] побудил к действию катастрофический совет, разрушивший княжество Пэл, которому в равной степени помогала и мешала жертвенная натура. [Select_CString( CHARACTER.IsLocalPlayer, 'Вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'принесли', Select_CString(CHARACTER.IsFemale, 'принесла', 'принёс' ))] клятву, что [Select_CString( CHARACTER.IsLocalPlayer, 'ваш', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] народ освободится от тирании или погибнет, пытаясь обрести свободу."
+ nick_the_moonflower:0 "Лунный цветок"
+ nick_the_moonflower_desc:0 "Говорят, что [CHARACTER.GetShortUINameNoTooltipNoFormat] [Select_CString( CHARACTER.IsLocalPlayer, 'избегаете', 'избегает')] дневного света, покидая свои покои только по ночам."
+ nick_the_intrigrant:0 "[Select_CString(CHARACTER.IsFemale, 'Интриганка', 'Интриган' )]"
+ nick_the_intrigrant_desc:0 "Всю свою жизнь [CHARACTER.GetShortUINameNoTooltipNoFormat] [Select_CString( CHARACTER.IsLocalPlayer, 'поддерживали', Select_CString(CHARACTER.IsFemale, 'поддерживала', 'поддерживал' ))] репутацию авторитетной и в целом благожелательной личности. Только после [Select_CString( CHARACTER.IsLocalPlayer, 'вашей', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] смерти стали распространяться слухи о [Select_CString( CHARACTER.IsLocalPlayer, 'вашей', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] огромной шпионской сети, связи с бесчисленным количеством таинственных исчезновений и других теневых заговорах."
 
  ### Ray and Tulwang Nicknames ###
  nick_the_fierce_blade:0 "Свирепый Клинок"
@@ -576,8 +576,8 @@
  ### Lossoth Nicknames ###
  nick_assistant_unique:0 "[Select_CString(CHARACTER.IsFemale, 'Помощница', 'Помощник' )]"
  nick_assistant_unique_desc:0 "«Я не Кристина и не ваша помощница!»"
- nick_the_whaler:0 "the Whaler"
- nick_the_whaler_desc:0 "Having spent most of his youth out on the icy sea of the cape of Forochel, [CHARACTER.GetFirstNamePossessiveNoTooltip] desire to slay the White Dread, an enormous whale, earned him this nickname."
+ nick_the_whaler:0 "Китобой"
+ nick_the_whaler_desc:0 "Проведя большую часть своей юности на ледяном море у мыса Форохель, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] это прозвище благодаря своему желанию сразить Белого Ужаса, огромного кита."
 
  ### Event Nicknames ###
  nick_serpent_slayer:0 "Убийца Змея"
