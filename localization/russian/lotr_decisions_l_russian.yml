@@ -817,6 +817,7 @@
  decision_annex_east_forodwaith_confirm:0 "Их законное место!"
 
 
+
  decision_subjugate_the_ettenmoors:0 "Покорить Эттенмурс"
  decision_subjugate_the_ettenmoors_tooltip:0 "Вы заметили, что в Эттенмурсе бродят холмовые тролли. Возможно, они могли бы послужить более важной цели..."
  decision_subjugate_the_ettenmoors_desc:0 "Когда холодные ветры владения [GetTitleByKey('c_baruk_zigil').GetName] в [Concept( 'angmar', 'Ангмаре' )|E] уступают место мрачным простором владения [GetTitleByKey('c_ettenmoors').GetName], вы решительно отправляетесь в путь, устремив взор к грандиозным целям. Ваши советники и вы отправляетесь в экспедицию в Эттенмурс, чтобы подчинить себе обитающих там троллей. Во главе с вашими самыми хитрыми спутниками у вас есть возможность укрепить свои силы за счёт привлечения в свои тёмные ряды устрашающих троллей."
@@ -978,6 +979,10 @@
  decision_murder_bellakar_tooltip:0 "Pretty Self Explanitory"
  decision_murder_bellakar_desc:0 "Слишком долго Беллакар противостоял мощи Грозовых воевод. Пришло время сокрушить этих лже-адунай."
  decision_murder_bellakar_confirm:0 "Разрушим их города"
+
+ #############################
+ #### Balan-Lai Decisions ####
+ #############################
 
  decision_ask_to_join_balan_lai:0 "Попытаться присоединиться к Балан-Лай"
  decision_ask_to_join_balan_lai_tooltip:0 "Обратиться к нынешним членам Балан-Лай с просьбой вступить в их ряды"
@@ -1208,6 +1213,7 @@
  decision_margoz_prepare_easterling_host:0 "Золотое воинство игат"
  decision_margoz_prepare_easterling_host_tooltip:0 "Сокровищница в пути"
  decision_margoz_prepare_easterling_host_desc:0 "Мой предшественник добился значительных успехов в создании большого войска, с которым можно было бы отправиться в поход на виночерпиев [Concept( 'dorwinion', 'Дорвиниона' )|E]. Однако его эгоистичный и недальновидный наследник сохранил этих людей для своих собственных нелояльных целей. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] завершить работу предыдущего Локе-Кана на западе, прежде чем смогу отвоевать Сзрел-Каин у [dorwinrim|El]."
+
 
 
  decision_margoz_prepare_easterling_host_confirm:0 "Старинные вина и багровая кровь потекут как единое целое"
@@ -1455,8 +1461,11 @@
  decision_gorge_on_food_desc:0 "Мы гонимся за идеалом, формой жира, созданной пиршеством жратвы. Чтобы достичь этой цели, мы должны есть, пировать, пить и веселиться. Мы должны потреблять всё больше и больше, пока не достигнем этой далёкой мечты! Зовите поваров, накрывайте на стол и разжигайте костры - пришло время ужинать!"
  decision_gorge_on_food_confirm:0 "Ом-ном-ном!"
 
- ###################################
- ###################################
+ ##########################
+ ### Struggle Decisions ###
+ ##########################
+
+ ### Balrog Struggle ###
 
  balrog_struggle_ending_decision_correct_involvement_tt:1 "Вы [Concept( 'struggle_involved', 'участвуете в' )|E] [Concept( 'balrog_struggle', 'борьбе с Проклятием Дурина' )|E]"
 
@@ -1485,10 +1494,11 @@
  struggle_balrog_ending_serve_balrog_decision_effect_approach_balrog_4:0 "Независимо от исхода, [struggle|El] продолжится."
 
  ### Thani-Hazad Struggle ###
- struggle_thani_hazad_dissolution:0 "Dissolution Title"
- struggle_thani_hazad_dissolution_description:0 "Bionicle presents the annual bionicle buffet, a three day event featuring an all-you-can-eat smorgus board of pies and pasteries and pizza and grilled salmon and hustle crabs and dumplings and cakes and sandwiches and protodermus and stuffed peppers and mutton and brisket and rusty nails and coins and disk launchers and meat balls and fresh squeezed lemonade and lithium batteries and cigarettes and finger nails clippings and devilled eggs and bicycle chains and corn snails and acorns and scorpions and cactus needles and rubber bands and pencil shavings and grilled salmon and egg rolls and spoiled yogurt in staples in which you degrubs in pee chips and rocky cheese and battery acid"
- struggle_thani_hazad_dissolution_select_tooltip:0 "Dissolution Select Tooltip"
- struggle_thani_hazad_dissolution_confirm:0 "Confirm Text - Placeholder"
+
+ struggle_thani_hazad_dissolution:0 "Dissolve the Balan-Lai"
+ struggle_thani_hazad_dissolution_description:0 "For too long has this land been trapped in the frozen order of the princes! They have grown fat on the plenty of the land, while denying all others opportunity for rank or honor. Well, no longer. We shall shatter their cherished council, and truly free this land to find a new destiny."
+ struggle_thani_hazad_dissolution_select_tooltip:0 "Dissolve the [balan_lai|E], end the [struggle|E], and forge a new path for the region."
+ struggle_thani_hazad_dissolution_confirm:0 "Confine it to history!"
  struggle_thani_hazad_dissolution_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_disintegration|E]"
  struggle_thani_hazad_dissolution_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 60%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
  struggle_thani_hazad_dissolution_effect_involved:0 "Титул [GetTitleByKey('e_thani_hazad').GetName] станет недоступным для создания персонажам со свойством [GetTrait('balan_lai_member').GetName( GetNullCharacter )] на #N 50#! лет"
@@ -1497,9 +1507,9 @@
  struggle_thani_hazad_dissolution_dynasty_modifier_effect:0 "Каждая [Concept('struggle_involved', 'вовлечённая в борьбу')|E] [dynasty|El] получит модификатор [GetModifier('cant_form_thani_hazad_modifier').GetNameWithTooltip]"
 
  struggle_thani_hazad_confederation:0 "Триумф старого порядка"
- struggle_thani_hazad_confederation_description:0 "Пути Балан-Лай выдержали испытание временем. Регион борьбы остаётся активным, но теперь имеет большую тенденцию к сохранению стадии конфедерации."
- struggle_thani_hazad_confederation_select_tooltip:0 "Confederation Select Tooltip"
- struggle_thani_hazad_confederation_confirm:0 "Confirm Text - Placeholder"
+ struggle_thani_hazad_confederation_description:0 "The ways of the Bâlan-Lâi have stood the tests of time, and will endure long yet. We shall ensure it.\n\n#I The [struggle_region|E] will remain active, but now has a heavy tendency towards maintaining the Status Quo/Confederation stage.#!"
+ struggle_thani_hazad_confederation_select_tooltip:0 "Strengthen the old order, ensuring that it will endure for many years yet, as well as gain potent bonuses so long as it does."
+ struggle_thani_hazad_confederation_confirm:0 "The Old, the True!"
  struggle_thani_hazad_confederation_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_confederation|E]"
  struggle_thani_hazad_confederation_valid_culture_tooltip:0 "Вы принадлежите к #L [kharadunaimculture.GetCollectiveNoun]ой#! или происходящей от неё культуре"
  struggle_thani_hazad_confederation_valid_modifier_tooltip:0 "У вашей династии нет модификатора «[GetModifier('old_order_triumphant_th_struggle_modifier').GetNameWithTooltip]»"
@@ -1508,9 +1518,9 @@
  struggle_thani_hazad_confederation_valid_previous_phase_tooltip:0 "Предыдущая фаза [Concept('thani_hazad_struggle', 'Происков Балан-Лай')|E] - [struggle_thani_hazad_phase_confederation|E]"
 
  struggle_thani_hazad_unification:0 "Единство цели"
- struggle_thani_hazad_unification_description:0 "Принцы объединились против чужеземцев - в регионе борьбы не осталось независимых вмешавшихся правителей."
- struggle_thani_hazad_unification_select_tooltip:0 "Unification Select Tooltip"
- struggle_thani_hazad_unification_confirm:0 "Confirm Text - Placeholder"
+ struggle_thani_hazad_unification_description:0 "Though the [balan_lai|E] has stood against foreigners, we have just as often stood at odds with our own. No longer! The Princes are at last united in both spirit and purpose. \n\nThough it will require much negotiation and work, the time has come for us to form an ever closer union, where we are truly one nation."
+ struggle_thani_hazad_unification_select_tooltip:0 "Unify the [balan_lai|E] into a single state, gaining the [GetTitleByKey('e_thani_hazad').GetName], vassalizing the Princes, and applying a unique [succession_law|E].
+ struggle_thani_hazad_unification_confirm:0 "Out of many, one. Ceura Altarnieva!" # Ceura Altarnieva - 'Renewal of the Empire, Quenya transliteration for Renovatio Imperii'
  struggle_thani_hazad_unification_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_unification|E]"
  struggle_thani_hazad_unification_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
 
