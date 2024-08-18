@@ -276,6 +276,9 @@
  activity_balan_lai_desc:0 "Созыв заседания [balan_lai|E] объединяет самых влиятельных принцев [Concept('thanihazad', 'Тани-Хазада')|E] для обсуждения насущных проблем и выработки общей политики.\n\nЭто время для представления и обсуждения стратегий, направленных на общее благо, а также возможность укрепить альянсы, выявить соперничество и принять участие в тонком танце политических интриг.\n\nЗаседания совета становятся ареной, где сосуществуют единство и амбиции, где каждый член стремится придать форму будущему, защищая при этом свои собственные интересы."
  activity_balan_lai_selection_tooltip:1 "TODO"
 
+ activity_balan_lai_not_on_member_cooldown:0 "Вы - [GetTrait('balan_lai_member').GetName( GetNullCharacter )|l] и последнее заседание проведено более 10 лет назад"
+ activity_balan_lai_not_on_leader_cooldown:0 "Вы - [GetTitleByKey('d_balan_lai_leader').GetNameNoTier] и последнее заседание проведено более 5 лет назад"
+
  TRAVEL_NAME_FOR_activity_balan_lai:0 "Путешествие [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetNamePossessiveOrMy][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )] на заседание Балан-Лай"
 
  # Province Descs
@@ -334,8 +337,21 @@
  balan_lai_foreign_capital_additional_cost:0 "Проведение в чужеземной столице"
  balan_lai_member_cost_modifier_desc:0 "Опыт свойства"
 
+ # Activity Window Labels
+ activity_window_character_member:0 "Член совета"
+ activity_window_character_leader:0 "Глава Балан-Лай"
+
+ # Phases
+ mingling_phase:0 "Фаза общения"
+ mingling_phase_desc:0 "Период, когда члены совета общаются, ведут неофициальные переговоры и наслаждаются развлечениями, устроенных хозяином перед началом основных заседаний."
+ voting_phase:0 "Фаза собрания"
+ voting_phase_desc:0 "Структурированная процедура, направленная на тщательный обмен идеями, аргументами и стратегиями, что приводит к решающим голосованиям, которые определяют будущее держав."
+
  # Host
  activity_balan_lai_host_desc:0 "$BULLET_WITH_TAB$TBD"
+
+ # Activity Window
+ proposal_momentum_bar:0 "[balan_lai_momentum|E]"
 
  ########################
  # Mining activity #
