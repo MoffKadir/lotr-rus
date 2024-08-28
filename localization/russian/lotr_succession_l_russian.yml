@@ -1,5 +1,24 @@
 ﻿l_russian:
 
+ ##############################
+ #### REALM SUCCESSION LAWS ###
+ ##############################
+ tamska_succession_law:0 "Сэнул Тамскайу" # Search for the Tamska
+ tamska_succession_law_subname:0 "Наследует следующее воплощение"
+ tamska_succession_law_effects:0 "\n#V $tamska_succession_law$ подразумевает, что все [titles|El] [Concept('succession', 'унаследует')|E] следующее воплощение [Concept('tamska', 'Тамски')|E], [GetTrait('tamska_heir').GetName( GetNullCharacter )].#!\n\n#weak При наследовании все [titles|El] [Concept('tamska', 'Тамски')|E] получит Тамсканги, реинкарнация Тамски. Каждый год совет старейшин будет искать [GetTrait('tamska_heir').GetName( GetNullCharacter )], и когда она будет найдена, ее автоматически усыновит нынешняя [tamska|E].\nЕсли на момент смерти [GetTrait('tamska_heir').GetName( GetNullCharacter )] не будет найдена, наследницей станет старшая дочь.\n#!"
+ LOTR_MUST_HAVE_TAMSKA_SUCCESSION_TRIGGER:0 "На меня распространяется [succession_law|El] «[GetLaw('tamska_succession_law').GetName]»"
+ LOTR_MUST_NOT_HAVE_TAMSKA_SUCCESSION_TRIGGER:0 "На меня распространяется [succession_law|El] «[GetLaw('tamska_succession_law').GetName]»"
+
+ # The Tamska System       = Ânji Tamskul
+ # Search for the Tamska   = Sênul Tamskayu
+ # Little Tamska           = Tamskangi
+ # 
+ # 
+
+ ##############################
+ #### TITLE SUCCESSION LAWS ###
+ ##############################
+
  ##Aristocratic Elective
  aristocratic_elective_succession_law:0 "Выборная система истерлингов"
  aristocratic_elective_succession_law_subname:0 "Акхил-Шура"
