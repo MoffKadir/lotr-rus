@@ -1051,6 +1051,8 @@
  decision_invade_gondor_confirm:0 "Весь Восток собран"
  invade_gondor_decision:0 "Начать последний штурм, чтобы разбить Гондор и взять Минас Тирит"
 
+ ### Orc Descisions
+
  decision_challenge_the_orc_leader:0 "Бросить вызов вождю"
  decision_challenge_the_orc_leader_tooltip:0 "Вы вызовете своего сюзерена на смертельный поединок. В случае победы вы заберёте все его титулы у его окровавленного трупа"
  decision_challenge_the_orc_leader_desc:0 "Это возмутительно, что мы служим такому слабаку. Сильные должны править, а слабые - подчиняться им, а не наоборот! Ни один орк не достоин своего положения, если он недостаточно силён, чтобы удержать его... Возможно, вы сможете показать этому выскочке, что такое настоящая сила"
@@ -1287,7 +1289,7 @@
  decision_demand_submission_to_dol_guldur.check_evil_trigger:0 "В пределах [GetTitleByKey('k_amon_lanc').GetNameNoTier] есть по крайней мере один [ruler|El] с [Concept( 'faith', 'конфессией' )|E] Зла"
 
  decision_demand_submission_of_neighboring_evil_leofring:0 "Подчинить Увядающий Двор"
- decision_demand_submission_of_neighboring_evil_leofring_desc:0 "Долгие годы [dolguldur|E] использовал своё злое влияние, пытаясь развратить людей, живущих вблизи Колдовского холма. Наибольшего успеха мы добились с обездоленными леофрингами, многие из которых были обращены в жестокую веру Увядшей пущи с её нечестивыми обрядами человеческих жертвоприношений. В результате они оказались готовы к порабощению. Настало время призвать их под свои знамена и заставить подчиниться в качестве вассалов Дол Гулдура."
+ decision_demand_submission_of_neighboring_evil_leofring_desc:0 "Долгие годы [dolguldur|E] использовал своё злое влияние, пытаясь развратить людей, живущих вблизи Колдовского холма. Наибольшего успеха мы добились с обездоленными леофрингами, многие из которых были обращены в жестокую веру Увядшего двора с её нечестивыми обрядами человеческих жертвоприношений. В результате они оказались готовы к порабощению. Настало время призвать их под свои знамена и заставить подчиниться в качестве вассалов Дол Гулдура."
  decision_demand_submission_of_neighboring_evil_leofring_confirm:0 "Потребовать подчинения"
  decision_demand_submission_of_neighboring_evil_leofring_tooltip:0 "Потребовать подчинения соседних злых леофрингов"
  decision_demand_submission_of_neighboring_evil_leofring.send_message:0 "[Concept( 'independent', 'Независимым' )|E] [Concept( 'rulers', 'правителям' )|E] с [Concept( 'faith', 'конфессиями' )|E] Зла и леофрингской [Concept( 'culture', 'культурой' )|E] будет предъявлен ультиматум с требованием стать вашими [Concept( 'vassal', 'вассалами' )|E]. Если они откажутся, вы получите [Concept( 'unpressed_claims', 'слабые претензии' )|E] на все их [titles|El]."
@@ -1520,7 +1522,7 @@
  struggle_thani_hazad_unification:0 "Единство цели"
  struggle_thani_hazad_unification_description:0 "Несмотря на то, что [balan_lai|E] противостоял чужеземцам, мы так же часто враждовали между собой. Не бывать этому! Наконец-то принцы объединились как по духу, так и по цели. \n\nХотя это потребует тщательных переговоров и работы, для нас настало время создать ещё более тесный союз, в котором мы действительно станем одной нацией."
  struggle_thani_hazad_unification_select_tooltip:0 "Объединить [balan_lai|E] в единое государство, получив титул [GetTitleByKey('e_thani_hazad').GetName], подчинив принцев и приняв уникальный [succession_law|El]."
- struggle_thani_hazad_unification_confirm:0 "Из многих - одно. Кэура Алтарниэва!" # Ceura Altarnieva - 'Renewal of the Empire, Quenya transliteration for Renovatio Imperii'
+ struggle_thani_hazad_unification_confirm:0 "Из многих - одно. Саттамаган Тани!" # Ceura Altarnieva - 'Renewal of the Empire, Quenya transliteration for Renovatio Imperii' # Replaced with Adunaic "Sattamagân Thâni" "Reunification of the Realm" by Trig (Quenya would be Envinyatale Turmeno)
  struggle_thani_hazad_unification_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_unification|E]"
  struggle_thani_hazad_unification_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
 
@@ -1572,6 +1574,38 @@
  decision_summon_princes_imrazor_confirm:0 "Созвать Балан-Лай!"
  decision_summon_princes_imrazor_tooltip:0 "Созвать голосование Балан-Лай."
  decision_summon_princes_imrazor.tt:0 "Вы созовёте заседание совета Балан-Лай."
+
+ decision_expel_from_balan_lai:0 "TEMPORARY"
+ decision_expel_from_balan_lai_tooltip:0 "TEMPORARY"
+ decision_expel_from_balan_lai_desc:0 "TEMPORARY"
+ decision_expel_from_balan_lai_confirm:0 "TEMPORARY"
+ attempt_a_unanimous_vote_to_expel_a_member:0 "TEMPORARY"
+
+ decision_stabalise_pel:0 "Стабилизировать Пэл"
+ decision_stabalise_pel_desc:0 "PLACEHOLDER"
+ decision_stabalise_pel_confirm:0 "Unified, we proceed"
+ decision_stabalise_pel_tooltip:0 "Unified, we proceed"
+ stabalised_pel:0 "Your vassals like you"
+
+ decision_beat_mag:0 "Отбросить магров"
+ decision_beat_mag_desc:0 "PLACEHOLDER"
+ decision_beat_mag_confirm:0 "Искоренить угрозу"
+ decision_beat_mag_tooltip:0 "You consider options to remove the bandits"
+
+ decision_beat_bandits:0 "Уничтожить разбойников"
+ decision_beat_bandits_desc:0 "PLACEHOLDER"
+ decision_beat_bandits_confirm:0 "Мы очистим эти земли!"
+ decision_beat_bandits_tooltip:0 "You consider options to remove the bandits"
+
+ decision_beat_barasi:0 "Усмирить Бараси"
+ decision_beat_barasi_desc:0 "PLACEHOLDER"
+ decision_beat_barasi_confirm:0 "Мы очистим эти земли!"
+ decision_beat_barasi_tooltip:0 "You consider options to remove the bandits"
+
+
+
+
+
 
  #############################
  ###   Dune Sea Decisions  ###
