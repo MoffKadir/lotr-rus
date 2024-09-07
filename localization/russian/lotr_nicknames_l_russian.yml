@@ -44,6 +44,8 @@
  nick_durin_bane_bane_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'сразили', Select_CString(CHARACTER.IsFemale, 'сразила', 'сразил' ))] [Concept( 'balrog', 'балрога' )|E], обитавшего в глубинах [Concept( 'khazaddum', 'Кхазад-дума' )|E]."
  nick_the_turncoat:0 "[Select_CString(CHARACTER.IsFemale, 'Перебежчица', 'Перебежчик' )]"
  nick_the_turncoat_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'попытались', Select_CString(CHARACTER.IsFemale, 'попыталась', 'попытался' ))] занять трон своего брата после смерти предыдущего короля [Concept('khazaddum', 'Кхазад-дума')|E] и [Select_CString( CHARACTER.IsLocalPlayer, 'были изгнаны', Select_CString(CHARACTER.IsFemale, 'была изгнана', 'был изгнан' ))] за свои преступления."
+ nick_roadwalker:0 "[Select_CString(CHARACTER.IsFemale, 'Путница', 'Путник' )]"
+ nick_roadwalker_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были известны', Select_CString(CHARACTER.IsFemale, 'была известна', 'был известен' ))] тем, что умело [Select_CString( CHARACTER.IsLocalPlayer, 'поддерживали', Select_CString(CHARACTER.IsFemale, 'поддерживала', 'поддерживал' ))] гномий тракт, проходивший через [greenwoodshort|E] и мимо [Concept('erebor', 'Эребора')|E], соединяя [khazaddum|E] с Железными холмами."
 
  ### Hobbit Nicknames ###
  nick_fatty:0 "[Select_CString(CHARACTER.IsFemale, 'Толстушка', 'Толстяк' )]"
@@ -266,7 +268,8 @@
  nick_shore_son:0 "Сын берегов"
  nick_star_flame:0 "Звёздный Огонь"
  nick_star_flame_desc:0 "Ар-Гимильзор был самым непримиримым из врагов [Concept( 'faithful', 'Верных' )|E]. Он полностью запретил использование эльфийских языков. Кроме того, он запретил [eldar|El] посещать [numenor|E] и карал тех, кто приветствовал эльфийские корабли, тайно приплывавшие из Эрессеа к западным берегам Нуменора, где жило большинство Верных, ибо считал эльфов «шпионами [valar|E]» и надеялся скрыть от Валар свои деяния и замыслы. В конце концов, недоверие Ар-Гимильзора к Верным заставило его изгнать всех уличённых Верных на восток Нуменора, к гавани Роменна. Так за ними следили днём и ночью. Тем не менее в Свитке Королей была записана форма его имени на [quenya|El] - Тар-Телемнар."
- nick_the_far_sighted:0 "Дальновидный"
+ nick_the_far_sighted:0 "Ар-Инзиладун" #Epiteth of Tar-Palantir, 24th king of numenor
+ nick_the_far_sighted_desc:0 "Инзиладун - [Concept('adunaic', 'адунайское')|E] имя, данное Тар-Палантиру, двадцать четвёртому королю [Concept('numenor', 'Нуменора')|E], при рождении его отцом. Оно означало «Цветок Запада». Когда Инзиладун принял Скипетр, в Нуменоре наступило время великой тьмы. Со времен правления Тар-Атанамира каждый король выступал против [valar|E] и ставил под сомнение их Запрет на отплытие нуменорцев в [aman|E]. По мере того как росли богатство и могущество Нуменора, рос и страх перед смертью, а радости и времени становилось все меньше. Он попытался раскаяться в деяниях своих предшественников и принял королевское имя на эльфийском языке [quenya|El] по традиции своих предков - Тар-Палантир. Как следствие, он позволил Верным жить в мире."
  nick_the_golden_pharazon:0 "Золотой"
  nick_the_golden_pharazon_desc:0 "Ар-Фаразон был последним королём [Concept('numenor', 'Нуменора')|E]. Его прозвали «Золотым» из-за его великих проявлений богатства и власти. Он собрал величайшую армию, которую когда-либо видело [middleearth|E] и его действия привели к [Concept('akallabeth', 'Акаллабету')|E]."
 
@@ -572,6 +575,21 @@
  nick_the_peoples_prince_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'издали', Select_CString(CHARACTER.IsFemale, 'издала', 'издал' ))] несколько указов, предоставляющих больше прав простолюдинам Алсариаса, что значительно повысило [Select_CString( CHARACTER.IsLocalPlayer, 'вашу', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] популярность за счёт противодействия местной аристократии."
  nick_the_conqueror_thani:0 "[Select_CString(CHARACTER.IsFemale, 'Завоевательница', 'Завоеватель' )]"
  nick_the_conqueror_thani_desc:0 "Хотя [CHARACTER.GetShortUINameNoTooltipNoFormat] никогда не [Select_CString( CHARACTER.IsLocalPlayer, 'завоёвывали', Select_CString(CHARACTER.IsFemale, 'завоёвывала', 'завоёвывал' ))] чужие земли, [Select_CString( CHARACTER.IsLocalPlayer, 'вас', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] в шутку окрестили так [Select_CString( CHARACTER.IsLocalPlayer, 'ваши', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] придворные из-за [Select_CString( CHARACTER.IsLocalPlayer, 'вашей', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] любви к стратегическим настольным играм."
+ nick_the_stranded_unique:0 "[Select_CString(CHARACTER.IsFemale, 'Странствующая', 'Странствующий' )]"
+ nick_the_stranded_unique_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat] - [Concept('numenorean', 'нуменорский')|E] морской офицер, [Select_CString(CHARACTER.IsFemale, 'которой', 'которому' )] было поручено доставить домой дань с Далёкого Юга. Когда произошло [downfall|E], [Select_CString( CHARACTER.IsLocalPlayer, 'вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'пополняли', Select_CString(CHARACTER.IsFemale, 'пополняла', 'пополнял' ))] запасы флота во владении [GetTitleByKey('c_ayahopa').GetBaseNameNoTier], а [Select_CString( CHARACTER.IsLocalPlayer, 'ваши', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] оставшиеся корабли были сожжены непокорным местным населением в ходе последовавшего хаоса."
+
+ ### Mag and Tûmag Nicknames ###
+ nick_the_first_tamska:0 "[Select_CString(CHARACTER.IsFemale, 'Первая', 'Первый' )]"
+ nick_the_first_tamska_desc:0 "Хотя [Select_CString( CHARACTER.IsLocalPlayer, 'вашим', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] народом уже много веков правили женщины-монархи, [CHARACTER.GetShortUINameNoTooltipNoFormat] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] первой [Concept('tamska', 'Тамской')|E] державы [GetTitleByKey('k_tumag').GetBaseNameNoTier]. [Select_CString( CHARACTER.IsLocalPlayer, 'Вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'питали', Select_CString(CHARACTER.IsFemale, 'питала', 'питал' ))] лютую ненависть к королевству [GetTitleByKey('k_mag').GetBaseNameNoTier] и [Select_CString( CHARACTER.IsLocalPlayer, 'возглавили', Select_CString(CHARACTER.IsFemale, 'возглавила', 'возглавил' ))] вторжение против них, которое продолжалось девять лет."
+ nick_the_goddess_of_light:0 "[Select_CString(CHARACTER.IsFemale, 'Богиня', 'Бог' )] Света"
+ nick_the_goddess_of_light_desc:0 ""
+ nick_the_azure:0 "[Select_CString(CHARACTER.IsFemale, 'Лазурная', 'Лазурный' )]"
+ nick_the_azure_desc:0 ""
+ nick_the_unworthy_tamska:0 "[Select_CString(CHARACTER.IsFemale, 'Недостойная', 'Недостойный' )]"
+ nick_the_unworthy_tamska_desc:0 ""
+ nick_the_crimson_tamska:0 "[Select_CString(CHARACTER.IsFemale, 'Алая', 'Алый' )]"
+ nick_the_crimson_tamska:0 ""
+ nick_the_winged_jackal:0 "Крылатый шакал"
 
  ### Ray and Tulwang Nicknames ###
  nick_the_fierce_blade:0 "Свирепый Клинок"
@@ -592,7 +610,7 @@
 
  ### Event Nicknames ###
  nick_serpent_slayer:0 "Убийца Змея"
- nick_serpent_slayer_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString(CHARACTER.IsFemale, 'прославилась', 'прославился' )] тем, что [Select_CString(CHARACTER.IsFemale, 'убила', 'убил' )] меньшего морского [Concept( 'serpent', 'змея' )|E]."
+ nick_serpent_slayer_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString(CHARACTER.IsFemale, 'прославилась', 'прославился' )] тем, что [Select_CString(CHARACTER.IsFemale, 'убила', 'убил' )] меньшего морского [Concept('serpent', 'змея')|E]."
  nick_rhudaur_explorer:0 "[Select_CString(CHARACTER.IsFemale, 'Исследовательница', 'Исследователь' )] Рудаура"
  nick_rhudaur_explorer_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'исследовали', Select_CString(CHARACTER.IsFemale, 'исследовала', 'исследовал' ))] безмолвные холмы и долины [Concept( 'rhudaur', 'Рудаура' )|E]."
  nick_troll_seeker:0 "[Select_CString(CHARACTER.IsFemale, 'Искательница', 'Искатель' )] троллей"
