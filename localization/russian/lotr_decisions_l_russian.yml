@@ -339,6 +339,11 @@
  decision_abandon_watch_on_mordor_confirm:0 "Дозор окончен."
  decision_abandon_watch_on_mordor_custom_desc:0 "[GetTitleByKey('d_watch_on_mordor').GetNameNoTier] подошёл к концу, его воины присоединятся к вашим войскам."
 
+ decision_rebuild_royal_road:0 "Восстановить Королевский тракт"
+ decision_rebuild_royal_road_desc:0 "Королевский тракт, известный некоторым как Дорога с севера на юг или Зеленая дорога, давно пришла в упадок после гибели королевства [arnor|E]. \n\nЕсли бы дорога была восстановлена, из северных земель вновь хлынул бы торговый поток, приносящий пользу как [Concept('eriador', 'Эриадору')|E], так и [Concept('gondor', 'Гондору')|E]."
+ decision_rebuild_royal_road_tooltip:0 "Вы начнете восстанавливать Королевский тракт."
+ decision_rebuild_royal_road_confirm:0 "Пусть дорога будет восстановлена!"
+
  ##################################
  ### Reunited Kingdom Decisions ###
  ##################################
@@ -1443,6 +1448,11 @@
  decision_restore_durin_throne_confirm:0 "Наша слава возрождена"
  durin_hall_upgrade_holding_tooltip:0 "Подземное владение в провинции [GetTitleByKey('b_durins_hall').GetNameNoTier] будет улучшено на два уровня. Если оно не может быть улучшено, то за каждый уровень, которое оно могло бы получить, владение [GetTitleByKey('c_durins_hall').GetNameNoTier] получит 5 [Concept( 'development', 'развития' )|E]."
 
+ decision_reunite_yellow_mountains:0 "TEMP Title"
+ decision_reunite_yellow_mountains_desc:0 "TEMP Desc"
+ decision_reunite_yellow_mountains_tooltip:0 "TEMP Tooltip"
+ decision_reunite_yellow_mountains_confirm:0 "TEMP Confirm"
+
  #####################################
  #### Artifact Crafting Decisions ####
  #####################################
@@ -1522,7 +1532,7 @@
  struggle_thani_hazad_unification:0 "Единство цели"
  struggle_thani_hazad_unification_description:0 "Несмотря на то, что [balan_lai|E] противостоял чужеземцам, мы так же часто враждовали между собой. Не бывать этому! Наконец-то принцы объединились как по духу, так и по цели. \n\nХотя это потребует тщательных переговоров и работы, для нас настало время создать ещё более тесный союз, в котором мы действительно станем одной нацией."
  struggle_thani_hazad_unification_select_tooltip:0 "Объединить [balan_lai|E] в единое государство, получив титул [GetTitleByKey('e_thani_hazad').GetName], подчинив принцев и приняв уникальный [succession_law|El]."
- struggle_thani_hazad_unification_confirm:0 "Из многих - одно. Саттамаган Тани!" # Ceura Altarnieva - 'Renewal of the Empire, Quenya transliteration for Renovatio Imperii' # Replaced with Adunaic "Sattamagân Thâni" "Reunification of the Realm" by Trig (Quenya would be Envinyatale Turmeno)
+ struggle_thani_hazad_unification_confirm:0 "Из многих - одно. Саттамаган Тани!" # Ceura Altarnieva - 'Renewal of the Empire, Quenya transliteration for Renovatio Imperii' Replaced with Adunaic "Sattamagân Thâni" "Reunification of the Realm" by Trig (Quenya would be Envinyatale Turmeno)
  struggle_thani_hazad_unification_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_unification|E]"
  struggle_thani_hazad_unification_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
 
@@ -1586,21 +1596,27 @@
  decision_stabalise_pel_confirm:0 "Unified, we proceed"
  decision_stabalise_pel_tooltip:0 "Unified, we proceed"
  stabalised_pel:0 "Your vassals like you"
+ stabalised_pel_effect:0 "Объединившись, теперь вы можете двигаться дальше, реализуя свои западные планы..."
 
  decision_beat_mag:0 "Отбросить магров"
  decision_beat_mag_desc:0 "PLACEHOLDER"
  decision_beat_mag_confirm:0 "Искоренить угрозу"
- decision_beat_mag_tooltip:0 "You consider options to remove the bandits"
+ decision_beat_mag_tooltip:0 "Вы рассматриваете варианты изгнания магрийских захватчиков"
+ beat_mag:0 "Вы готовы изгнать варваров из своих земель"
+ beat_mag_effect:0 "Вы рассматриваете варианты изгнания магрийских захватчиков"
 
  decision_beat_bandits:0 "Уничтожить разбойников"
  decision_beat_bandits_desc:0 "PLACEHOLDER"
  decision_beat_bandits_confirm:0 "Мы очистим эти земли!"
- decision_beat_bandits_tooltip:0 "You consider options to remove the bandits"
+ decision_beat_bandits_tooltip:0 "Вы рассматриваете варианты устранения разбойников"
+ beat_bandits_effect:0 "Вы рассматриваете варианты устранения разбойников"
+ beat_bandits:0 "Вы готовы очистить округу от преступности"
 
  decision_beat_barasi:0 "Усмирить Бараси"
  decision_beat_barasi_desc:0 "PLACEHOLDER"
- decision_beat_barasi_confirm:0 "Мы очистим эти земли!"
- decision_beat_barasi_tooltip:0 "You consider options to remove the bandits"
+ decision_beat_barasi_confirm:0 "Возмездие!"
+ decision_beat_barasi_tooltip:0 "Они вернулись на своё законное место"
+ beat_barasi_effect:0 "Вы должны решить, как поступить с этими мятежниками"
 
 
 

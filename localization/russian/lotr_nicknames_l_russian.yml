@@ -47,6 +47,15 @@
  nick_roadwalker:0 "[Select_CString(CHARACTER.IsFemale, 'Путница', 'Путник' )]"
  nick_roadwalker_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были известны', Select_CString(CHARACTER.IsFemale, 'была известна', 'был известен' ))] тем, что умело [Select_CString( CHARACTER.IsLocalPlayer, 'поддерживали', Select_CString(CHARACTER.IsFemale, 'поддерживала', 'поддерживал' ))] гномий тракт, проходивший через [greenwoodshort|E] и мимо [Concept('erebor', 'Эребора')|E], соединяя [khazaddum|E] с Железными холмами."
 
+ nick_the_young_thrar_II:0 "[Select_CString(CHARACTER.IsFemale, 'Юная', 'Юный' )]"
+ nick_the_young_thrar_II_desc:0 "TEMP"
+ nick_the_bloodstained_thrar_III:0 "[Select_CString(CHARACTER.IsFemale, 'Окровавленная', 'Окровавленный' )]"
+ nick_the_bloodstained_thrar_III_desc:0 "TEMP"
+ nick_three_day_king_thrar_IV:0 "[Select_CString(CHARACTER.IsFemale, 'Королева', 'Король' )]-на-три-дня"
+ nick_three_day_king_thrar_IV_desc:0 "TEMP"
+ nick_the_rebuilder_thrar_V:0 "[Select_CString(CHARACTER.IsFemale, 'Восстановительница', 'Восстановитель' )]"
+ nick_the_rebuilder_thrar_V_desc:0 "TEMP"
+
  ### Hobbit Nicknames ###
  nick_fatty:0 "[Select_CString(CHARACTER.IsFemale, 'Толстушка', 'Толстяк' )]"
  nick_fatty_desc:0 "Широко распространено мнение, что обхват [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] больше, чем [Select_CString( CHARACTER.IsLocalPlayer, 'ваш', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] рост."
@@ -118,6 +127,8 @@
  ### Northmen Nicknames
  nick_the_last:0 "[Select_CString(CHARACTER.IsFemale, 'Последняя', 'Последний' )]"
  nick_the_last_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] [Select_CString(CHARACTER.IsFemale, 'последней правительницей', 'последним правителем' )] в своём роду."
+ nick_the_outrider:0 "[Select_CString(CHARACTER.IsFemale, 'Наездница', 'Наездник' )]"
+ nick_the_outrider_desc:0 "Известно, что [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'жили', Select_CString(CHARACTER.IsFemale, 'жила', 'жил' ))] в седле и [Select_CString( CHARACTER.IsLocalPlayer, 'посещали', Select_CString(CHARACTER.IsFemale, 'посещала', 'посещал' ))] своей державы только в том случае, если [Select_CString( CHARACTER.IsLocalPlayer, 'ваше', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] присутствие было необходимо."
 
  ### Dorwinion Nicknames ###
  nick_gwinaran:0 "Гвинаран"
@@ -579,8 +590,8 @@
  nick_the_stranded_unique_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat] - [Concept('numenorean', 'нуменорский')|E] морской офицер, [Select_CString(CHARACTER.IsFemale, 'которой', 'которому' )] было поручено доставить домой дань с Далёкого Юга. Когда произошло [downfall|E], [Select_CString( CHARACTER.IsLocalPlayer, 'вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'пополняли', Select_CString(CHARACTER.IsFemale, 'пополняла', 'пополнял' ))] запасы флота во владении [GetTitleByKey('c_ayahopa').GetBaseNameNoTier], а [Select_CString( CHARACTER.IsLocalPlayer, 'ваши', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] оставшиеся корабли были сожжены непокорным местным населением в ходе последовавшего хаоса."
 
  ### Mag and Tûmag Nicknames ###
- nick_the_first_tamska:0 "[Select_CString(CHARACTER.IsFemale, 'Первая', 'Первый' )]"
- nick_the_first_tamska_desc:0 "Хотя [Select_CString( CHARACTER.IsLocalPlayer, 'вашим', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] народом уже много веков правили женщины-монархи, [CHARACTER.GetShortUINameNoTooltipNoFormat] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] первой [Concept('tamska', 'Тамской')|E] державы [GetTitleByKey('k_tumag').GetBaseNameNoTier]. [Select_CString( CHARACTER.IsLocalPlayer, 'Вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'питали', Select_CString(CHARACTER.IsFemale, 'питала', 'питал' ))] лютую ненависть к королевству [GetTitleByKey('k_mag').GetBaseNameNoTier] и [Select_CString( CHARACTER.IsLocalPlayer, 'возглавили', Select_CString(CHARACTER.IsFemale, 'возглавила', 'возглавил' ))] вторжение против них, которое продолжалось девять лет."
+ nick_the_first_tamska:0 "[Select_CString(CHARACTER.IsFemale, 'Первая', 'Первый' )] Тамска"
+ nick_the_first_tamska_desc:0 "Хотя [Select_CString( CHARACTER.IsLocalPlayer, 'вашим', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] народом уже много веков правили женщины-монархи, [CHARACTER.GetShortUINameNoTooltipNoFormat] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] первой [Concept('tamska', 'Тамской')|E] державы [GetTitleByKey('k_tumag').GetBaseNameNoTier]. [Select_CString( CHARACTER.IsLocalPlayer, 'Вы', CHARACTER.GetSheHe)|U] [Select_CString( CHARACTER.IsLocalPlayer, 'возглавили', Select_CString(CHARACTER.IsFemale, 'возглавила', 'возглавил' ))] вторжение в королевство [GetTitleByKey('k_mag').GetBaseNameNoTier], продлившееся девять лет, которое привело к созданию новой державы [GetTitleByKey('e_mag_tumag').GetBaseName]."
  nick_the_goddess_of_light:0 "[Select_CString(CHARACTER.IsFemale, 'Богиня', 'Бог' )] Света"
  nick_the_goddess_of_light_desc:0 ""
  nick_the_azure:0 "[Select_CString(CHARACTER.IsFemale, 'Лазурная', 'Лазурный' )]"
@@ -588,8 +599,13 @@
  nick_the_unworthy_tamska:0 "[Select_CString(CHARACTER.IsFemale, 'Недостойная', 'Недостойный' )]"
  nick_the_unworthy_tamska_desc:0 ""
  nick_the_crimson_tamska:0 "[Select_CString(CHARACTER.IsFemale, 'Алая', 'Алый' )]"
- nick_the_crimson_tamska:0 ""
+ nick_the_crimson_tamska_desc:0 ""
  nick_the_winged_jackal:0 "Крылатый шакал"
+ nick_the_winged_jackal_desc:0 ""
+ nick_the_strange_tamska:0 "[Select_CString( CHARACTER.IsFemale, 'Помешанная', 'Помешанный' )]"
+ nick_the_strange_tamska_desc:0 "Тамска Айяка была довольно эксцентричной и, по некоторым сведениям, несколько неуравновешенной. Вместо того, чтобы учиться, чтобы стать следующей [Concept('tamska', 'Тамской')|E] под бдительным присмотром совета старейшин, она сбежала из храма вскоре после того, как её выбрали, но вскоре была поймана. Затем она убегала ещё пять раз, и каждый раз её находили и возвращали обратно. После седьмой попытки она исчезла, по-видимому, бесследно. Её поиски продолжались семь лет, и в конце концов её объявили мёртвой. Семь лет спустя, когда старейшины ещё не нашли новую наследницу, она неожиданно вернулась, утверждая, что путешествовала по миру и видела «солнце внутри горы», «вотчину сыновей Намура» и «страну, где спят высокие короли»."
+ nick_omgeg:0 "Омгег" # Mag. Rhino
+ nick_omgeg_desc:0 ""
 
  ### Ray and Tulwang Nicknames ###
  nick_the_fierce_blade:0 "Свирепый Клинок"
@@ -690,6 +706,8 @@
  nick_brittlebrains_desc:0 "Разговор с жабой принёс бы лучшие результаты."
  nick_the_despoiler:0 "[Select_CString(CHARACTER.IsFemale, 'Опустошительница', 'Опустошитель' )]"
  nick_the_despoiler_desc:0 "[Select_CString(CHARACTER.IsFemale, 'Вдохновлённая', 'Вдохновлённый' )] устрашающим прозвищем Азога или, возможно, производным от него, [CHARACTER.GetShortUINameNoTooltipNoFormat] [Select_CString( CHARACTER.IsLocalPlayer, 'стали известны', Select_CString(CHARACTER.IsFemale, 'стала известна', 'стал известен' ))] как «[Select_CString(CHARACTER.IsFemale, 'Опустошительница', 'Опустошитель' )]» после своего триумфа над северными королевствами людей, гномов и эльфов."
+ nick_champion_of_dragons:0 "[Select_CString( CHARACTER.IsFemale, 'Поборница', 'Поборник' )] драконов"
+ nick_champion_of_dragons_desc:0 "Полагая, что [Select_CString( CHARACTER.IsLocalPlayer, 'вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'избраны', Select_CString(CHARACTER.IsFemale, 'избрана', 'избран' ))] [Concept('dragons', 'драконами')|E] Иссохшей пустоши и руководствуясь их волей, [CHARACTER.GetShortUINameNoTooltipNoFormat] [Select_CString( CHARACTER.IsLocalPlayer, 'стремились', Select_CString(CHARACTER.IsFemale, 'стремилась', 'стремился' ))] подчинить земли Севера своей власти."
 
  ### Orcs Nicknames ###
  nick_flamesworn:0 "[Select_CString(CHARACTER.IsFemale, 'Присягнувшая', 'Присягнувший' )] пламени"
