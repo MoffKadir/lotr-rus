@@ -378,6 +378,12 @@
  finished_isildur_legend_tt:0 "Член вашего дома завершил [Concept('legend_mythical', 'мифическую')|E] [Concept('legend', 'легенду')|E] $legend_isildur$"
  unlock_reclaim_dunedain_royal_lineage_tt:0 "Открывает [decision|El] #EMP $decision_reclaim_royal_lineage$#!"
 
+ decision_claim_gondor_arassuil:0 "Претендовать на трон Гондора"
+ decision_claim_gondor_arassuil_desc:0 "Долгое время наследники [Concept('isildur', 'Исильдура')|E] укрывались в дебрях [Concept('arnor', 'Арнора')|E], ожидая своего часа. \n\n[ROOT.Char.GetFirstName] [Select_CString(ROOT.Char.IsFemale, 'доказала', 'доказал' )], что обладает ожидаемыми качествами и является [Select_CString(ROOT.Char.IsFemale, 'достойной претенденткой', 'достойным претендентом' )] на пустующий трон [Concept('gondor', 'Гондора')|E]. \n\nВозможно, пришло время Возвращения [Select_CString(ROOT.Char.IsFemale, 'королевы', 'короля' )]?"
+ decision_claim_gondor_arassuil_confirm:0 "Пусть народ Гондора станет свидетелем моих притязаний!"
+ claim_gondor_arassuil_tooltip:0 "Выдвинуть претензии на трон Гондора."
+ decision_claim_gondor_arassuil.tt:0 "Вы восстановите державу [GetTitleByKey('e_gondor').GetName] и станете его [Select_CString(ROOT.Char.IsFemale, 'правительницей', 'правителем' )]."
+
  ##########################
  #### Move the Capital ####
  ##########################
@@ -1619,7 +1625,31 @@
  decision_beat_barasi_tooltip:0 "Они вернулись на своё законное место"
  beat_barasi_effect:0 "Вы должны решить, как поступить с этими мятежниками"
 
+ #####################################
+ ### Yellow Mountain Orc Decisions ###
+ #####################################
 
+ decision_yellow_mountains_spider_duchy:0 "Усмирить Паутинную пустошь"
+ decision_yellow_mountains_spider_duchy_desc:0 "Большинство наших сородичей избегают глубоких туннелей, опасаясь того, что в них обитает. Они не знают того, что знаем мы: кишащие пауками норы Амазуна - это затененный рай, который только и ждет, чтобы его усмирили."
+ decision_yellow_mountains_spider_duchy_confirm:0 "По воле Энанагосни"
+ decision_yellow_mountains_spider_duchy_tooltip:0 "Укрепить владения в Амазуне"
+ decision_yellow_mountains_spider_duchy_tt:0 "Мгновенно завершает строительство всех колоний в герцогстве Амазун."
+ 
+ decision_settle_lowlands:0 "Заселить Низины"
+ decision_settle_lowlands_desc:0 "На протяжении половины эпохи мы довольствовались лишь случайными вылазками в Тантурак, предпочитая обитать в горах. Теперь же мы все чаще и чаще заселяем низины. Возможно, настало время принять наш новый дом."
+ decision_settle_lowlands_confirm:0 "Заселить Низины"
+ decision_settle_lowlands_tooltip:0 "Отказаться от жизни в горах"
+ decision_remove_rukhashai_tradition_1:0 "Теряет [Concept('tradition', 'традицию')|E] «[GetCultureTradition('tradition_mountaineers').GetName]»"
+ decision_rukhashai_new_tradition_1:0 "Получит [Concept('tradition', 'традицию')|E] «[GetCultureTradition('tradition_jungle_dwellers').GetName]»"
+ 
+ decision_volcano_forges:0 "Овладеть Высокими кузнями"
+ decision_volcano_forges_desc:0 "Пламя Улхаша горит под Гундузандой. Овладеть этой силой - значит изменить само наше войско: теперь это не сброд налетчиков, а воины, облачённые в обсидиан."
+ decision_volcano_forges_confirm:0 "Возрождённые в пламени"
+ decision_volcano_forges_tooltip:0 "Усилить вашу тяжёлую пехоту"
+ decision_remove_ulkhash_tradition_1:0 "Теряет [Concept('tradition', 'традицию')|E] «[GetCultureTradition('tradition_strength_in_numbers').GetName]»"
+ decision_ulkhash_new_tradition_1:0 "Получит [Concept('tradition', 'традицию')|E] «[GetCultureTradition('tradition_metalworkers').GetName]»"
+ decision_volcano_forges_tt_a:0 "Мгновенно завершает строительство всех колоний в герцогстве Узним"
+ decision_volcano_forges_tt_b:0 "Получить доступ к Обсидиановым воинам ([men_at_arms|El])"
 
 
 
