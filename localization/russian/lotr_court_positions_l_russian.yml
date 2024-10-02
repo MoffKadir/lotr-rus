@@ -1,13 +1,27 @@
 ﻿l_russian:
 
+ # Overseer of the Mines
  overseer_of_the_mines_court_position:0 "Смотритель шахт"
  overseer_of_the_mines_custom_effect_description:3 "[GetActivityType('activity_mining').GetName] увеличивает шанс успешного завершения в зависимости от [Concept( 'aptitude', 'пригодности' )|E]"
- overseer_of_the_mines_court_position_desc:1 "$overseer_of_the_mines_court_position$ руководит всеми горнодобывающими операциями в королевстве, начиная от самого маленького карьера на склоне холма и заканчивая самыми глубокими шахтными стволами."
+ overseer_of_the_mines_court_position_desc:1 "$overseer_of_the_mines_court_position$ руководит всеми горнодобывающими операциями в державе, начиная от самого маленького карьера на склоне холма и заканчивая самыми глубокими шахтными стволами."
+ overseer_of_the_mines_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'overseer_of_the_mines_court_position' ) )]"
+ overseer_of_the_mines_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'overseer_of_the_mines_court_position' ) )] #weak ([old_holder.GetFirstName] - [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'overseer_of_the_mines_court_position' ) )])#!"
+ overseer_of_the_mines_salary_tooltip:0 "[GetCourtPositionType( 'overseer_of_the_mines_court_position' ).GetName()] получает ежемесячное жалованье — [SCOPE.ScriptValue('medium_court_position_salary')|2] [gold_i]"
 
+ # Stone Singer
  stone_singer_court_position:0 "Каменный певец"
  stone_singer_custom_effect_description:3 "[GetActivityType('activity_mining').GetName] увеличивает шанс успешного завершения в зависимости от [Concept( 'aptitude', 'пригодности' )|E]"
  stone_singer_court_position_desc:1 "$stone_singer_court_position$ знает тайные песни, которыми можно воззвать к камню, и умеет услышать ответную песню. Этому тайному искусству [Concept( 'dwarves', 'гномов' )|E] обучил сам [mahalcharacter|E]."
+ stone_singer_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'stone_singer_court_position' ) )]"
+ stone_singer_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'stone_singer_court_position' ) )] #weak ([old_holder.GetFirstName] - [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'stone_singer_court_position' ) )])#!"
+ stone_singer_salary_tooltip:0 "[GetCourtPositionType( 'stone_singer_court_position' ).GetName()] получает ежемесячное жалованье — [SCOPE.ScriptValue('medium_court_position_salary')|2] [gold_i]"
 
  court_position_miner_3_trait:1 "$court_position_miner_1_trait$"
  court_position_miner_2_trait:1 "$court_position_miner_1_trait$"
  court_position_miner_1_trait:1 "[GetTrait('lifestyle_miner').GetName( ROOT.Char )]"
+
+ second_marshal_of_rohan_position:0 "Второй маршал Риддермарка"
+ second_marshal_of_rohan_position_desc:0 "Одно из высших воинских званий среди всадников Рохана."
+
+ third_marshal_of_rohan_position:0 "Третий маршал Риддермарка"
+ third_marshal_of_rohan_position_desc:0 "Одно из высших воинских званий среди всадников Рохана."
