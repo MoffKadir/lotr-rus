@@ -78,9 +78,12 @@
  tenet_blood_of_the_ancestors_desc:0 "Our forebears watch over us from beyond, guiding us and showing us the way forward. For this we must respect and honour them."
  tenet_right_of_the_hall_name:0 "Right of the Hall"
  tenet_right_of_the_hall_desc:0 "Those that pass the front step of the hall, be they friend or foe, are granted the honour of coming in the same peace with which they approached."
- tenet_adunaic_birthright_name:0 "Birthright of the Adûnai"
- tenet_adunaic_birthright_desc:0 "The [adunaim|E], scions of the greatest nation which [arda|E] ever saw, were born with a glorious destiny. All of [middleearth|E] is our inheritance, to do with as we will, and beneath our rule it shall prosper. Let all know and acknowledge this truth."
- INCOMPATIBLE_TENET_ADUNAIC_BIRTHRIGHT_TRIGGER:0 "Incompatible with the [core_tenet|E] [GetFaithDoctrine('tenet_adunaic_birthright').GetName( GetPlayer.GetFaith )]"
+ tenet_adunaic_birthright_name:0 "Birthright of the Adûnâi"
+ tenet_adunaic_birthright_desc:0 "The Adûnâi, scions of the greatest nation which this world has ever seen, were born with a glorious destiny. All of Middle-earth is our inheritance, to do with as we will, and beneath our rule it shall prosper. Let all know and acknowledge this truth."
+ tenet_adunaic_mandate_name:0 "Mandate of the Adûnâi"
+ tenet_adunaic_mandate_desc:0 "The Adûnâi by nature stand above all the Men of Middle-earth, entrusted with a mandate to order the world for the good of all. Yet this lofty position comes with responsibilities; to rule fairly, if sternly; to guide and uplift those lesser than us; to show graciousness, restraint and patience."
+ INCOMPATIBLE_TENET_ADUNAIC_MANDATE_TRIGGER:1 "Incompatible with the [core_tenet|E] [GetFaithDoctrine('tenet_adunaic_mandate').GetName( GetPlayer.GetFaith )]"
+ INCOMPATIBLE_TENET_ADUNAIC_BIRTHRIGHT_TRIGGER:1 "Incompatible with the [core_tenet|E] [GetFaithDoctrine('tenet_adunaic_birthright').GetName( GetPlayer.GetFaith )]"
  tenet_dune_covens_name:0 "Witch Covens" #juke note: set up to be used as a generic witch coven tenet
  tenet_dune_covens_desc:0 "The world works in mysterious ways, harboring many mysteries and strange powers. It is only natural to seek out those powers, to learn from the shadow and to relish in it."
  doctrine_parameter_summon_witch_active:0 "Gain a [decision|E] to recruit a [GetTrait('witch').GetName( GetNullCharacter )] to your court."
@@ -92,7 +95,19 @@
  doctrine_parameter_faith_can_raid_overseas:0 "Unlocks the ability to [raid|E] overseas, if you can already [raid|E]"
  doctrine_parameter_lotr_extra_raid_loot:0 "Gain 20% of your loot in [piety|E] when [raiding|E]"
  doctrine_parameter_lotr_harder_to_convert:0 "More difficult to [demand_conversion|E] from adherents"
-
+ 
+ tenet_tamska_main_name:0 "Ânji Tamskul" # The Tamska System
+ tenet_tamska_main_desc:0 "The [tamska|E], or Great Queens, are the rightful rulers of our people, appointed by divine authority. Embowed with divine essence, they will always guide our people on the path to salvation, as they are incarnations of the very gods themselves.Through rituals and ceremonies, the Tamski pay homage to the Tamska, seeking her guidance and blessings in all aspects of life. Our faith is woven deeply into the fabric of our society, shaping our customs, traditions, and collective identity as a people united under the divine authority of the Great Queens."
+ COMPATIBLE_TENET_RITE_TRIGGER:0 "Compatible with the [core_tenet|E] [GetFaithDoctrine('tenet_rite').GetName( GetPlayer.GetFaith )]"
+ INCOMPATIBLE_TENET_RITE_TRIGGER:0 "Incompatible with the [core_tenet|E] [GetFaithDoctrine('tenet_rite').GetName( GetPlayer.GetFaith )]"
+ DOCTRINE_NOT_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER:0 "Does not require the [doctrine|E] [temporal_head_of_faith|E]"
+ DOCTRINE_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER:0 "Requires the [doctrine|E] [temporal_head_of_faith|E]"
+ DOCTRINE_NOT_REQUIRED_FEMALE_CLERGY_TRIGGER:0 "Does not require the [doctrine|E] [doctrine_clerical_gender_female_only|E]"
+ DOCTRINE_REQUIRED_FEMALE_CLERGY_TRIGGER:0 "Requires the [doctrine|E] [doctrine_clerical_gender_female_only|E]"
+ doctrine_parameter_lotr_tamska_hof:0 "The [temporal_head_of_faith|E] uses the special [GetLaw('tamska_succession_law').GetName] [realm|E] [succession_law|E]."
+ doctrine_parameter_lotr_hold_court_piety_reward:0 "Holding Court grants an additional [piety|E] reward"
+ hold_court_gain_piety_tooltip:0 "You will gain [piety|E]"
+ 
 # Forces of Evil Tenets
  tenet_dark_tower_subjugation_name:0 "Subjugation Beneath the Dark Tower"
  tenet_dark_tower_subjugation_desc:0 "The Dark Tower exacts a heavy price from all who live within [sauronthedarklord|E]'s [empire|E] - all shall pay their just due in the fulfillment of the Great Eye's designs!"
@@ -108,9 +123,11 @@
  tenet_dark_worship_syncretism_name:0 "The Dark Worship"
  tenet_dark_worship_syncretism_desc:0 "The Dark Worship or "Moriaistale" in Quenya, "Dungortist" in Sindarin and "Boshfai" in Melkian was the continued veneration throughout the ages, by [men|E], [orcs|E] and darker beings and in whatever form of shamanistic sagas, cults and shrines of a Dark Lord as a great god-like being. Said Dark Lord was seen as the highest form of authority, often in a highly tyranical manner."
  tenet_dragon_boshfai_name:0 "Dragon Boshfai"
- tenet_dragon_boshfai_desc:0 "Dragon Boshfai or "reverence" is a practice among some orcish tribes. These orcs usually live around and defends a mighty Dragon's lair and pay tribute to them, in return they gain protection from it's shadow, for who is foolish enouth to attack lands where a mighty dragon dwell?"
+ tenet_dragon_boshfai_desc:0 "Dragon Boshfai or "reverence" is a practice among some orcish tribes. These orcs usually live around and defends a mighty Dragon's lair and pay tribute to them, in return they gain protection from it's shadow, for who is foolish enough to attack lands where a mighty dragon dwell?"
  INCOMPATIBLE_TENET_DRAGON_BOSHFAI_TRIGGER:0 "Incompatible with the [core_tenet|E] [GetFaithDoctrine('tenet_dragon_boshfai').GetName( GetPlayer.GetFaith )]"
 
+ tenet_offbrand_tulkas_name:0 "Sacrosanct Strife" # Not too happy with the name but we can change it idk
+ tenet_offbrand_tulkas_desc:0 "Survival is a continuous struggle against nature, foes and the world itself. But this primal truth is not a tragedy to be upset about, but instead a fundamental and cherished part of existence - Through great effort, anyone can overcome adversity and come out on top.\n\nIn practice, challenges and friendly competitions are a common practice of this faith, though they can at times turn heated and fierce. The reoccurring theme of a 'God of Struggles' seems to be heavily inspired by that of the [valagod|E] [tulkascharactershort|E]."
  # Other LOTR Tenets
  tenet_gold_veneration_name:0 "Veneration of Gold"
  tenet_gold_veneration_desc:0 "The believers of this faith hold that gold is, in and of itself, of divine origin, worthy of veneration and coveting. They hoard and jealously guard their gold, allowing only those of similar disposition to even look upon their great hoards, in which they hold dwells shards of the divine."

@@ -1,23 +1,33 @@
 ﻿l_english:
 
+  explore_history_cost_discount_effect_desc:0 "$unlocks_building_desc$Reduced Cost for hosting [GetActivityType('activity_explore_history').GetTextIcon][GetActivityType('activity_explore_history').GetName] in this [holding|E]: "
+  explore_history_cost_discount_min_desc:0 "$explore_history_cost_discount_effect_desc$[EmptyScope.ScriptValue('explore_history_activity_cost_discount_min_value')|P0%]"
+  explore_history_cost_discount_medium_desc:0 "$explore_history_cost_discount_effect_desc$[EmptyScope.ScriptValue('explore_history_activity_cost_discount_medium_value')|P0%]"
+  explore_history_cost_discount_max_desc:0 "$explore_history_cost_discount_effect_desc$[EmptyScope.ScriptValue('explore_history_activity_cost_discount_max_value')|P0%]"
+
   #### ELVEN BUILDINGS ####
   # Elven Refuge Holdings
   building_type_elven_settlement_01:0 "Elven Refuge"
   building_type_elven_settlement_01_desc:0 "A secluded [elven_refuge|E], hidden away from the wider world."
-  building_elven_settlement_01:0 "#H Elven Sanctuary#!"
+  building_elven_settlement_01:0 "#high Elven Sanctuary#!"
   building_elven_settlement_01_desc:0 "Though the [elves|E] which dwell here are few in number, this [elven_sanctuary|E] bears the mark of their dwelling regardless, with plants in bloom and birds in song."
-  building_elven_settlement_02:0 "#H Vibrant Elven Sanctuary#!"
+  building_elven_settlement_02:0 "#high Vibrant Elven Sanctuary#!"
   building_elven_settlement_02_desc:0 "Small groups of [elvish|E] dwellings can be found dotted across the landscape surrounding this [elven_sanctuary|E], the presence of the Elves in the region increasingly obvious, with roads carrying travelers and traders."
-  building_elven_settlement_03:0 "#H Elven Stronghold#!"
+  building_elven_settlement_03:0 "#high Elven Stronghold#!"
   building_elven_settlement_03_desc:0 "An [elven_stronghold|E], many of the more sophisticated parts of [elvish|E] civilization flourish here, with fine estates, libraries, and halls accompanied by fountains and gardens."
-  building_elven_settlement_04:0 "#H Notable Elven Stronghold#!"
+  building_elven_settlement_04:0 "#high Notable Elven Stronghold#!"
   building_elven_settlement_04_desc:0 "An [elven_stronghold|E] of some renown, its name has begun to be synonymous with the surrounding region, as more Elves increasingly begin to establish their homes here."
-  building_elven_settlement_05:0 "#H Great Elven Stronghold#!"
+  building_elven_settlement_05:0 "#high Great Elven Stronghold#!"
   building_elven_settlement_05_desc:0 "With stout walls and tall towers, the [elves|E] of the region have built a truly impressive [elven_stronghold|E]. Within its walls are many works of peerless worth and ancient lore."
-  building_elven_settlement_06:0 "#H Elven City#!"
+  building_elven_settlement_06:0 "#high Elven City#!"
   building_elven_settlement_06_desc:0 "A jewel of the [elves|E], this [elven_city|E] is a true loci of power and wisdom. The number of Elves that can be found here is rivaled by few others in [middleearth|E]."
-  building_elven_settlement_07:0 "#H Legendary Elven City#!"
+  building_elven_settlement_07:0 "#high Legendary Elven City#!"
   building_elven_settlement_07_desc:0 "Unparalleled in its size and majesty, few cities of [ardaconcept|E] can hope to compare to this [elven_city|E], a shining exemplar of [elvish|E] civilization."
+
+  building_holding_ruins:0 "Ruins"
+  building_holding_ruins_desc:0 "Only animals wander here these days."
+  building_type_holding_ruins:0 "Ruins"
+  building_type_holding_ruins_desc:0 "Only animals wander here these days."
   
   # Elven Agriculture (Econ Building)
   building_type_elven_agriculture_01:0 "Elven Agriculture" 
@@ -254,7 +264,6 @@
   building_elven_barracks_07_desc:0 "A set of smithies, barracks, and marshalling grounds of truly great size, the number of troops which train here on a regular basis are truly boggling."
   building_elven_barracks_08:0 "Dispersed Barracks Complexes"
   building_elven_barracks_08_desc:0 "Throughout the city, barracks, stables, and marshalling grounds are placed at regular intervals, accompanied by dedicated smithies. The guard is always alert and on patrol, and the ways kept safe by their vigilance."
-  heavy_infantry_screen_mult:0 "[heavy_infantry|E] [screen|E]"
   pikemen_screen_mult:0 "[spearmen|E] [screen|E]"
 
   # Elven Fletchers
@@ -330,7 +339,8 @@
   building_elvenking_treasury_02:0 "Relic Treasury"
   building_elvenking_treasury_02_desc:0 "The treasury is no mere repository of gold and silver - it also holds peerless works of art, great jewels, weaponry and armor of ages past."
   
-  #### DÚNEDAIN BUILDINGS ####
+#### DÚNEDAIN BUILDINGS ####
+ ############################
   # Garrison Tower
   building_type_garrison_tower_01:0 "Garrison Tower"
   building_type_garrison_tower_01_desc:0 "The [dunedain|E] honoured those men and women trained in the defence of their city. The garrison tower houses a company of soldiers, healers and staff for the kitchen, armoury and storehouse. When on duty, the Guards of the Citadel are not permitted to leave their post for any cause, save at the command of their lord."
@@ -414,8 +424,8 @@
   building_stoneworker_03_desc:0 "The descendants of Númenor have an exceptional affinity with stone, their masons achieve beautiful works that those who bear presence to them will stand silently in awe."
 
   # Dúnedain Houses of Healing
-  building_houses_of_healing:0 "Dúnedain Houses of Healing"
-  building_houses_of_healing_desc:0 "All life is doomed to fade, yet here, in the Houses of Healing surrounded by gardens, hurts are tended, and life is restored."
+  building_numenorean_houses_of_healing:0 "Dúnedain Houses of Healing"
+  building_numenorean_houses_of_healing_desc:0 "All life is doomed to fade, yet here, in the Houses of Healing surrounded by gardens, hurts are tended, and life is restored."
   # NOTE Alternative text: "The [dunedain|E] are experts in many arts, one of which is the art of healing. They construct dedicated houses for the sick and injured; schools for those training to become healers are nearby." - edited from John Henry Eden
 
 
@@ -550,13 +560,14 @@
   stationed_monster_toughness_add:0 "[stationed|E] [monster|E] [toughness|E]"
   stationed_monster_pursuit_add:0 "[stationed|E] [monster|E] [pursuit|E]"
   stationed_monster_screen_add:0 "[stationed|E] [monster|E] [screen|E]"
+
   # Zekhetz Palace Complex
   building_type_wonder_zekhetz_palace_complex_01:0 "Zekhetz Abrakhân Palace Complex"
   building_type_wonder_zekhetz_palace_complex_01_desc:0 "Countless towers sit under the great golden dome of the palace complex, the Zekhetz Abrakhân. Each of those towers are lined with dark windows, draped over with scarlet and black fabrics. The empty and ignored western palace complex has three towers collapsed onto the central structure, yet those who dwell there disregard the ruined section."
   building_wonder_zekhetz_palace_complex_01:0 "Crumbling Palace"
   building_wonder_zekhetz_palace_complex_01_desc:0 "$building_type_wonder_zekhetz_palace_complex_01_desc$\nThe eastern complex hosts a large set of pools at the gate. Constantly replenished, they offer a moment of respite against the Abrakhân sun."
   building_wonder_zekhetz_palace_complex_02:0 "Restored Western Palace"
-  building_wonder_zekhetz_palace_complex_02_desc:0 "Countless towers sit under the great golden dome of the palace complex, the Zekhetz Abrakhân. Each of those towers are lined with dark windows, draped over with scarlet and black fabrics. The western palace complex has been completely restored and its three towers watch over the scorched hills, filling those who approach with dread.\nThose who dwell within the haunted halls speak quietly and quickly, lest the walls hear their secrets."
+  building_wonder_zekhetz_palace_complex_02_desc:0 "Countless towers sit under the great golden dome of the palace complex, the Zekhetz Abrakhân. Each of those towers are lined with dark windows, draped over with scarlet and black fabrics. The western palace complex has been completely restored and its three towers watch over the scorched hills, filling those who approach with dread.\n\nThose who dwell within the haunted halls speak quietly and quickly, lest the walls hear their secrets."
   building_wonder_zekhetz_palace_complex_03:0 "Dark Citadel"
   building_wonder_zekhetz_palace_complex_03_desc:0 "Countless towers sit under the great golden dome of the palace complex, the Zekhetz Abrakhân. Each of those towers are lined with dark windows, draped over with scarlet and black fabrics. The western palace complex has been completely restored and its three towers watch over the scorched hills, filling those who approach with dread.\nIn the center of the complex sits its' Dark Citadel, a nexus of evil. Inside, dark deeds are committed and the influence of the shadow can be felt even atop the great towers."
   # Abrakhân Bazaar Complex
@@ -674,9 +685,9 @@
   building_type_stockades_01_desc:0 "Basic stockades form a simple barrier between a settlement and the wilderness beyond, but they offer limited protection from organised attacks and raids."
 
   building_trading_outposts_01:0 "Trading Outposts"
-  building_trading_outposts_01_desc:0 "Trading outposts offer the opportunity for settlers and traders to meet and barter for goods produced and demanded by the colony."
+  building_trading_outposts_01_desc:0 "Trading outposts offer the opportunity for settlers and traders to meet and barter for goods produced and demanded by the [colony|E]."
   building_type_trading_outposts_01:0 "Trading Outposts"
-  building_type_trading_outposts_01_desc:0 "Trading outposts offer the opportunity for settlers and traders to meet and barter for goods produced and demanded by the colony."
+  building_type_trading_outposts_01_desc:0 "Trading outposts offer the opportunity for settlers and traders to meet and barter for goods produced and demanded by the [colony|E]."
 
   building_local_militia_01:0 "Local Militia"
   building_local_militia_01_desc:0 "Rugged frontiersmen, the local militia trains and stores its weapons in this location. Though not always many, they are fierce and possessing of stout hearts."
@@ -684,9 +695,9 @@
   building_type_local_militia_01_desc:0 "Rugged frontiersmen, the local militia trains and stores its weapons in this location. Though not always many, they are fierce and possessing of stout hearts."
 
   building_construction_guilds_01:0 "Construction Guilds"
-  building_construction_guilds_01_desc:0 "Skilled builders and craftsmen set up shop in the colony, bringing their expertise and helping to develop settlements from the ground up."
+  building_construction_guilds_01_desc:0 "Skilled builders and craftsmen set up shop in the [colony|E], bringing their expertise and helping to develop settlements from the ground up."
   building_type_construction_guilds_01:0 "Construction Guilds"
-  building_type_construction_guilds_01_desc:0 "Skilled builders and craftsmen set up shop in the colony, bringing their expertise and helping to develop settlements from the ground up."
+  building_type_construction_guilds_01_desc:0 "Skilled builders and craftsmen set up shop in the [colony|E], bringing their expertise and helping to develop settlements from the ground up."
 
   building_tribal_stockades_01:0 "$building_stockades_01$"
   building_tribal_stockades_01_desc:0 "$building_stockades_01_desc$"
@@ -775,7 +786,7 @@
   building_collapsed_ceiling_cleared_desc:0 "The rubble has been cleared out and the ceilings of these rooms have been reinforced to avoid any further cave-ins.\n\n#V Clearing [colonisation_blockers|E] allows your settlement to upgrade.#!"
 
   building_flooded_tunnels:0 "Flooded Tunnels"
-  building_flooded_tunnels_desc:0 "A large part of this area lies submerged in dark, murky water. We need to find a way to redirect it as it restricts our access to the colony."
+  building_flooded_tunnels_desc:0 "A large part of this area lies submerged in dark, murky water. We need to find a way to redirect it as it restricts our access to the [colony|E]."
   building_type_flooded_tunnels:0 "Flooded Tunnels"
   building_flooded_tunnels_cleared:0 "Drained Tunnels"
   building_flooded_tunnels_cleared_desc:0 "The water has been successfully drained from these tunnels, allowing us access to them.\n\n#V Clearing [colonisation_blockers|E] allows your settlement to upgrade.#!"
@@ -791,6 +802,12 @@
   building_type_stale_air:0 "Stale Air"
   building_stale_air_cleared:0 "Breathable Air"
   building_stale_air_cleared_desc:0 "Whether through setting up a ventilation system or by simply painting warning signs in front of dangerous rooms, we have made this area now possible to navigate.\n\n#V Clearing [colonisation_blockers|E] allows your settlement to upgrade.#!"
+  
+  building_shadow_of_mordor:0 "Shadow of Mordor"
+  building_shadow_of_mordor_desc:0 "The taint of the Dark Lord lies heavy upon this land. Settlers are uneasy, sleep comes only intricately, and there have been reports of people going missing from time to time. It is uncertain if the dread and gloom of [mordor|E] can be quelled - but try we must nontheless.."
+  building_type_shadow_of_mordor:0 "Shadow of Mordor"
+  building_shadow_of_mordor_cleared:0 "Fleeting Shadows"
+  building_shadow_of_mordor_cleared_desc:0 "After great efforts have been dedicated to the cleansing of this land, the Shadow of [mordor|E] is finally passing. \n\n#V Clearing [colonisation_blockers|E] allows your settlement to upgrade.#!"
 
   building_strange_creatures:0 "Strange Creatures"
   building_strange_creatures_desc:0 "Our settlers tell tales of strange creatures that lurk in the shadowy corners and dark crevices of the underground complex. Their descriptions vary wildly, but there have been reports of ambushes on our scouts and raids on our supplies. We need to clear these creatures out to secure the future of ours settlement."
@@ -798,10 +815,10 @@
   building_strange_creatures_cleared:0 "Creatures Subdued"
   building_strange_creatures_cleared_desc:0 "Reports of the strange creatures have waned and our efforts to increase security seem to have been successful. Whatever they were, they are gone now, likely having retreated to deeper corners of the subterranean.\n\n#V Clearing [colonisation_blockers|E] allows your settlement to upgrade.#!"
 
-  building_troll_cave:0 "Troll cave"
+  building_troll_cave:0 "Troll Cave"
   building_troll_cave_desc:0 "Deep within the shadowy woods, where the air is thick with moss and decay, lies the lair of the trolls—a dank cave network filled with bioluminescent fungi and the remnants of past victims, where the trolls wait in darkness for unsuspecting travelers to stumble into their domain."
-  building_type_troll_cave:0 "Troll cave"
-  building_troll_cave_cleared:0 "Troll cave cleared"
+  building_type_troll_cave:0 "Troll Cave"
+  building_troll_cave_cleared:0 "Troll Cave Cleared"
   building_troll_cave_cleared_desc:0 "The reports of these menacing creatures have dwindled, suggesting that our intensified security measures have indeed proven effective. Whatever these beings were, they are now gone.\n\n#V Clearing [colonisation_blockers|E] allows your settlement to upgrade.#!"
 
   building_wonder_ettenmoors_01:0 "The Ettenmoors"
@@ -812,7 +829,7 @@
   building_wonder_ettenmoors_02_desc:0 "In the northern reaches lies the desolate expanse known as the Ettenmoors. This eerie and mist-shrouded landscape comprises marshy lowlands hemmed by rolling hills, perpetually draped in a pall of fog. The Ettenmoors, with their treacherous terrain and lurking perils, but its source of dread and peril recounted in tales has been surmounted."
   building_type_wonder_ettenmoors_02:0 "The Ettenmoors"
 
-  ### ORCISH STANDARD BUILDINGS ###
+### ORCISH STANDARD BUILDINGS ###
   # Slave Farms
   building_type_slave_farms_01:0 "Slave Farms"
   building_type_slave_farms_01_desc:0 "Where there's a whip, there's a will, and these farms #emphasis will#! feed our orcs, from the meagre Snaga to the hulky Uruk-hai. The farms are worked by tithed thralls and slaves snatched from our enemies."
@@ -1120,7 +1137,8 @@
 
 
 
-  ### GONDOR WONDERS ###
+### GONDOR WONDERS ###
+
   # Minas Tirith
   building_type_wonder_minas_anor_01:0 "Minas Anor"
   building_type_wonder_minas_anor_01_desc:0 "[minasanor|E], Tower of the Sun, was a city-fortress of [gondor|E], and sister-city to [minasithil|E]. It was composed of seven levels of concentric rings, with the only way to reach the next level to completely travel one ring. Its lowest wall was made of the same black stone which formed [angrenost|E]."
@@ -1143,6 +1161,10 @@
   building_wonder_minas_ithil_02_desc:0 "Corrupted and defiled by the foul magics of the Witch-King, [minasithil|E] fell in the year T.A. 2002, after two years of siege. Now, it is the greatest of the Nazgul's home, renamed [minasmorgul|E] - the Tower of Sorcery."
   building_wonder_minas_ithil_03:0 "Minas Ithil: Gardens of the Moon"
   building_wonder_minas_ithil_03_desc:0 "[minasithil|E] has sat silent and empty since it was retaken, by decree of the King. He said that Minas Ithil would need many years to recover from the vile acts done there. But now at last the city of [isildur|E] is healing, and the gardens of the moon shine silver beneath the gaze of the tower."
+  building_type_wonder_minas_ithil_original:0 "Minas Ithil"
+  building_type_wonder_minas_ithil_original_desc:0 "[minasithil|E], Tower of the Moon, was a city-fortress of [gondor|E], and sister-city to Minas Anor. It was the seat of [isildur|E], and the original home of the White Tree before it was sacked in S.A. 3429."
+  building_wonder_minas_ithil_original:0 "Minas Ithil"
+  building_wonder_minas_ithil_original_desc:0 "[minasithil|E], Tower of the Moon, was a city-fortress of [gondor|E], and sister-city to Minas Anor. It was the seat of [isildur|E], and the original home of the White Tree before it was sacked in S.A. 3429. A sapling was recovered at great cost and planted in Minas Anor. Afterwards, it was recovered and maintained as a fortress of [gondor|E] into the middle [thirdage|E]."
   
   # Rammas Echor
   building_type_wonder_rammas_echor_01:0 "Rammas Echor"
@@ -1162,6 +1184,12 @@
   building_wonder_port_of_pelargir_03:0 "Eithel Ulmo"
   building_wonder_port_of_pelargir_03_desc:0 "One of the few holy sites of the [dunedain|E], the [eithel_ulmo|E] refers to a shallow pool of water deep within the base of the tower of the Sealord. Sealed behind mighty iron doors that only the greatest loremasters and the Sealord himself can open, the pool is a dwelling place for the presence of the Lord of the Deep, [ulmocharacter|E]. \n\nHere he might whisper advice to those who come seeking his counsel, and his continuing presence is a memory of the pact between the Lord of the Deep and the [numenorean|E] sailors of old."
   
+  #Port of Hyarpende
+  building_type_wonder_port_of_hyarpende_01:0 "The Port of Hyarpendë"
+  building_type_wonder_port_of_hyarpende_01_desc:0 "Hyarpendë (Q. Southern Slope) was a Númenórean heaven built in S.A. 2432 opposite Pelargir on what was originally a ferry station that linked Pelargir with Hyarmentië (Q. Southern Way). Hyarpendë growth grew accodingly to Pelargir's, and was life in the city was intimately connected with that of Pelargir. By the late second age the city had grown from a lazy village into a bustling gate to the lands east of the Anduin.\n\n Much like Pelargir, Hyarpendë had in its early days been a only a few miles away from the coasts, but after the Downfall of Númenor the coasts along the Bay of Belfalas had retreated a great distance and the city was left far inland. Hyarpendë remained the biggest city on the lands which would become Ithilien until the founding of Minas Ithil in S.A. 3320."
+  building_wonder_port_of_hyarpende_01:0 "The Port of Hyarpendë"
+  building_wonder_port_of_hyarpende_01_desc:0 "Hyarpendë (Q. Southern Slope) was a Númenórean heaven built in S.A. 2432 opposite Pelargir on what was originally a ferry station that linked Pelargir with Hyarmentië (Q. Southern Way). Hyarpendë growth grew accodingly to Pelargir's, and was life in the city was intimately connected with that of Pelargir. By the late second age the city had grown from a lazy village into a bustling gate to the lands east of the Anduin.\n\n Much like Pelargir, Hyarpendë had in its early days been a only a few miles away from the coasts, but after the Downfall of Númenor the coasts along the Bay of Belfalas had retreated a great distance and the city was left far inland. Hyarpendë remained the biggest city on the lands which would become Ithilien until the founding of Minas Ithil in S.A. 3320."
+
   # Dol Amroth
   building_type_wonder_dol_amroth_01:0 "Dol Amroth"
   building_type_wonder_dol_amroth_01_desc:0 "The capital of Dor-en-Ernil, among the greatest of [gondor|E]'s cities."
@@ -1182,7 +1210,7 @@
   building_type_wonder_tharagrondost_01:0 "Tharagrondost"
   building_type_wonder_tharagrondost_02_desc:0 "The mighty citadel of Tharagrondost, the western berth of the [gondorian|E] Navy."
   building_wonder_tharagrondost_01:0 "Tharagrond"
-  building_wonder_tharagrondost_01_desc:0 "[numenorean|E] colonists first founded Tharagrond c. SA 2300. Set upon a steep spire of rock overlooking a small cove near the base of the Cape of Andrast, its formidable defenses were designed to protect it from the indigenous population. However, the settlement of Pelargir as the centre of Faithful immigration to the bay of Belfalas a few decades later quickly led to Tharagrond becoming something of an isolated backwater."
+  building_wonder_tharagrondost_01_desc:0 "[numenorean|E] colonists first founded Tharagrondost c. SA 2300. Set upon a steep spire of rock overlooking a small cove near the base of the Cape of Andrast, its formidable defenses were designed to protect it from the indigenous population. However, the settlement of Pelargir as the centre of Faithful immigration to the bay of Belfalas a few decades later quickly led to Tharagrondost becoming something of an isolated backwater."
 
   building_wonder_tharagrondost_02:0 "Citadel of Tharagrondost"
   building_wonder_tharagrondost_02_desc:0 "Built in T.A. 1652 to defend western [gondor|E] from sea-raiders, the Citadel of Tharagrondost is the western haven of the Royal Navy. Originally supplied by a grail-doll from Anfalas, the havens were eventually changed from a royal garrison to a fiefdom under the Lords of Andrast. \n\nHowever, [gondorian|E] control of the region remains largely in name, with the Citadel of Tharagrondost standing as a testament to their claims in a hinterland with few [dunedain|E]. Even with this lack of control of the land, Tharagrondost fulfills its duty of guarding the western seas."
@@ -1190,25 +1218,25 @@
   #City of Serelond
   building_type_wonder_serelond:0 "Serelond"
   building_wonder_serelond:0 "City of Serelond"
-  building_wonder_serelond_desc:0 "Serelond was founded in the S.A 2903 by enterprising merchants from the Pelargirian League, an outpost to serve as an entrepot to the inland regions. However, in time the entrepot became a full colony, and Serelond became a common place for the politically defeated or disgraced of the League to retire to.\n\nIndeed, after the Pelargirian League came to its agreement with Isildur and Anarion to swear fealty, the premier members of the effort opposing fealty relocated to Serelond, where the power of the Kings was minimal. While on paper Serelond swore fealty to [gondor|E] - as did all the Dunedain realms on the Bay of Belfalas, in practice the realms in Anfalas and Andrast functioned as independent city-states, with little oversight and paying only lip service to their fealty.\n\nThis would ultimately be ended by Tarannon Falastur's westward expansion, when he curbed the independence of these old coastal city-states, forcing them to honor their obligations and vows, ending their autonomy and incorporating them as proper provinces of Gondor."
+  building_wonder_serelond_desc:0 "Serelond was founded in the S.A 2903 by enterprising merchants from the Pelargirian League, an outpost to serve as an entrepot to the inland regions. However, in time the entrepot became a full [colony|E], and Serelond became a common place for the politically defeated or disgraced of the League to retire to.\n\nIndeed, after the Pelargirian League came to its agreement with [isildur|E] and Anarion to swear fealty, the premier members of the effort opposing fealty relocated to Serelond, where the power of the Kings was minimal. While on paper Serelond swore fealty to [gondor|E] - as did all the Dunedain realms on the Bay of Belfalas, in practice the realms in Anfalas and Andrast functioned as independent city-states, with little oversight and paying only lip service to their fealty.\n\nThis would ultimately be ended by Tarannon Falastur's westward expansion, when he curbed the independence of these old coastal city-states, forcing them to honor their obligations and vows, ending their autonomy and incorporating them as proper provinces of Gondor."
 
   # Annon Drúin
   building_type_wonder_annondrun:0 "Annon Drúin"
-#  building_type_wonder_annondrun_desc:0 ""
+  #building_type_wonder_annondrun_desc:0 ""
   building_wonder_annondrun:0 "Annon Drúin"
   building_wonder_annondrun_desc:0 "Annon Drúin was one of the oldest sites of [numenorean|E] activity on Belfalas Bay, having been established in the early [secondage|E] by Aldarion the Mariner, who used the haven as an outpost in his unending search for ship-timber. Like other settlements along the coast of northern Belfalas it was fortified against the threat of indigenous raiders.\n\nFollowing the the dissolution of the Guild of Venturers Annon Drúin became a permanent settlement for the Faithful. Though it was ever a small town, never outgrowing its ancient walls, it grew somewhat in prominence during the reign of the Ship-kings."
   
   # Stone of Erech
   building_type_wonder_erech:0 "Stone of Erech"
-  building_type_wonder_erech_desc:0 "A stone of mysterious origin, brought out of Númenor by Isildur."
+  building_type_wonder_erech_desc:0 "A stone of mysterious origin, brought out of [numenor|E] by [isildur|E]."
   building_wonder_erech:0 "Stone of Erech"
-  building_wonder_erech_desc:0 "Brought out of Númenor, the stone of Erech is a perfectly spherical black orb, half-submerged in the ground. What is above ground is easily as tall as a man. Upon this stone did the Men of the Mountains swear to fight for Isildur, and when they broke their oath, he cursed them with undeath."
+  building_wonder_erech_desc:0 "Brought out of [numenor|E], the stone of Erech is a perfectly spherical black orb, half-submerged in the ground. What is above ground is easily as tall as a man. Upon this stone did the Men of the Mountains swear to fight for Isildur, and when they broke their oath, he cursed them with undeath."
   
   #Bar Morthil
   building_type_wonder_barmorthil_01:0 "Bar Morthil"
-#  building_type_wonder_barmorthil_01_desc:0 ""
+  #building_type_wonder_barmorthil_01_desc:0 ""
   building_wonder_barmorthil_01:0 "Beacon of Ulond"
-  building_wonder_barmorthil_01_desc:0 "Built in S.A. 1912 to guide the ships of Númenor around the dangerous cape of Ras Morthil. The beacon was kept by a warden who was at first appointed by the Guild of Venturers, and later jointly by the administrations of Tharbad and Pelargir. \n\nThe warden had a small staff and a nominal garrison to keep watch on the indigenous population, but their appointments were short and no permanent settlement was ever created."
+  building_wonder_barmorthil_01_desc:0 "Built in S.A. 1912 to guide the ships of [numenor|E] around the dangerous cape of Ras Morthil. The beacon was kept by a warden who was at first appointed by the Guild of Venturers, and later jointly by the administrations of Tharbad and Pelargir. \n\nThe warden had a small staff and a nominal garrison to keep watch on the indigenous population, but their appointments were short and no permanent settlement was ever created."
   building_wonder_barmorthil_02:0 "Retreat of the Kings"
   building_wonder_barmorthil_02_desc:0 "A royal estate situated on the very tip of Andrast. It was the westernmost habitation in all of [gondor|E] at its height. At times the kings withdrew here for solitude or meditation, far from the courts of Osgiliath or Minas Anor. \n\nBar Morthil was founded by Isildur & Anarion in S.A. 3332 as a memorial to lost Westernesse. The westward-facing promontory on which the manor was built was considered to be a hallowed place, because it offered the observer the most westerly vantage-point for recalling the Land of Gift and the Meneltarma."
 
@@ -1225,6 +1253,9 @@
   building_wonder_osgiliath_04_desc:0 "Osgiliath, city of the Kings of [gondor|E], at last has been almost restored to its former glory. Dilapidated buildings have been repaired, roads replaced, and citizens fill the great marketplaces. The bridges across [anduin|E] are now slowly being rebuilt to their former splendour."
   building_wonder_osgiliath_05:0 "Osgiliath, Citadel of the Host of Stars"
   building_wonder_osgiliath_05_desc:0 "Osgiliath, so long in ruins, now stands once more as the greatest city of [gondor|E], eclipsing all others. The great bridges have been restored, and after great effort and summoning all the ingenuity of the heirs of Númenor, the Dome of the Stars has been wrought anew. A new age is dawning on Osgiliath, one of restored splendour and glory."
+  building_type_wonder_osgiliath_original:0 "Osgiliath"
+  building_wonder_osgiliath_original:0 "Osgiliath"
+  building_wonder_osgiliath_original_desc:0 "Osgiliath, the Jewel of [gondor|E] and seat of the royal government, was founded by the sons of [elendil|E], [isildur|E] and Anárion. The Dome of Stars, a wondrous marvel of [numenorean|E] architecture, rises at its centre - a true symbol of the glory and prosperity of the South Kingdom."
   
   # Walls of Linhir
   building_type_wonder_walls_linhir:0 "Walls of Linhir"
@@ -1236,7 +1267,7 @@
   building_type_wonder_henneth_annun:0 "Henneth Annûn"
   building_type_wonder_henneth_annun_desc:0 "The hidden refuge of the rangers of Ithilien, Henneth Annûn."
   building_wonder_henneth_annun:0 "Henneth Annûn"
-  building_wonder_henneth_annun_desc:0 "“This is the Window of the Sunset, Henneth Annûn, fairest of all the falls of Ithilien, land of many fountains.” Faramir \n\nLongest lasting of all the refuges in Ithilien, Henneth Annûn was created by the Steward Turin II circa T.A. 2901 in response to orc incursions from Mordor. It is still maintained and guarded as the headquarters of the Ithilien Rangers, even to this day. It is a hidden cave complex, whose entrance is guarded by a waterfall which flows into the forbidden pool."
+  building_wonder_henneth_annun_desc:0 "“This is the Window of the Sunset, Henneth Annûn, fairest of all the falls of Ithilien, land of many fountains.” Faramir \n\nLongest lasting of all the refuges in Ithilien, Henneth Annûn was created by the Steward Turin II circa T.A. 2901 in response to orc incursions from [mordor|E]. It is still maintained and guarded as the headquarters of the Ithilien Rangers, even to this day. It is a hidden cave complex, whose entrance is guarded by a waterfall which flows into the forbidden pool."
   
   building_type_wonder_palace_of_ithilien:0 "Palace of Ithilien"
   building_type_wonder_palace_of_ithilien_desc:0 "The palatial dwelling of the Prince of Ithilien, bearing unparalleled gardens."
@@ -1249,7 +1280,7 @@
   building_wonder_citadel_cairos_01:0 "The Ruins of Cairos (Citadel of Cair Andros)"
   building_wonder_citadel_cairos_01_desc:0 "The Citadel of Cairos was first established T.A. 1248 by Minalcar, regent to King Narmacil I, following his defeat of the Easterlings. It was southernmost of a chain of fortifications along the Anduin reaching as far north as the Limlight. \n\nIn the year 2900, Steward Túrin II restored the dilapidated fortifications to protect Anórien against the growing orcish threat in Ithilien. By the end of the [thirdage|E] the citadel was again largely ruinous, but if manned its surviving curtain walls created an additional barrier to any foe attempting to cross the Anduin via Cair Andros."
   building_wonder_citadel_cairos_02:0 "The Cairos (Citadel of Cair Andros)"
-  building_wonder_citadel_cairos_02_desc:0 "The Cairos (Citadel of Cair Andros)’. The Cairos has been restored with great labour. Its gleaming citadel once again rises high above the island of Cair Andros, and its garrison forms a backbone to the defences of both Northern Ithilien and Anórien."
+  building_wonder_citadel_cairos_02_desc:0 "The Cairos has been restored with great labour. Its gleaming citadel once again rises high above the island of Cair Andros, and its garrison forms a backbone to the defences of both Northern Ithilien and Anórien."
 
   # Edhellond
   building_type_wonder_edhellond_01:0 "Haven of Edhellond"
@@ -1261,11 +1292,11 @@
   building_wonder_edhellond_03:0 "Edhellond Reborn"
   building_wonder_edhellond_03_desc:0 "Restored and reborn in the hands of the [elves|E], Edhellond once more resounds with the sounds of elven-song, elven-tongue, and the baying of ships in the quays."
   
-  ### MORDOR WONDERS ###
+### MORDOR WONDERS ###
   
   #Barad-Dur
   building_type_wonder_baraddur:0 "Barad-dûr"
-  building_type_wonder_baraddur_desc:0 "The great fortress of the Dark Lord Sauron, a black citadel from which malevolence throngs."
+  building_type_wonder_baraddur_desc:0 "The great fortress of the Dark Lord [sauroncharacter|E], a black citadel from which malevolence throngs."
   building_wonder_baraddur:0 "Barad-dûr"
   building_wonder_baraddur_desc:0 "Barad-dûr is the great fortress of the Dark Lord [sauroncharacter|E], rising high above the plains of Gorgoroth in [mordor|E]. Piercing into the sky as a black pillar, it is surely supported by the power of the Dark Lord, for no building could remain intact at such a height. In its immensity are endless storehouses, torture chambers, and smithies, with all its effort focused on fulfilling Sauron's fell visions. \n\nAtop the tower, burning as fire, the Great Eye surveys his dominions and plots his next move. Here, if nowhere else, Sauron's power is absolute."
   building_wonder_baraddur_01:0 "Foundations"
@@ -1307,7 +1338,7 @@
   building_wonder_black_gate:0 "The Black Gate of Mordor"
   building_wonder_black_gate_desc:0 "The Black Gate, or 'Morannon', was the gate of Udûn in north-western [mordor|E], and the most fortified and direct entrance into [sauroncharacter|E]'s realm. It was set in an impregnable wall of iron and black stone which stretched from the Mountains of Ash in the north to the Ephel Duath in the west. \n\nRaised by Sauron in the [secondage|E], the Black Gate was further fortified by the [dunedain|E] in the early [thirdage|E] to help maintain the watch on Mordor. Nowadays, the works of the [dunedain|E] have been turned against them, for the Black Gates are shut fast against all foes of the Dark Lord."
   
-  ### HARAD WONDERS ###
+### HARAD WONDERS ###
   
   #Haruzan/Amrun
   building_type_wonder_palace_of_haruzan_01:0 "Grand Palace of Haruzan"
@@ -1329,9 +1360,9 @@
   
   #Ramlond
   building_type_wonder_ramlond:0 "Walled Haven of Ramlond"
-  building_type_wonder_ramlond_desc:0 "Originally founded by Tar-Ancalimon, Ramlond, unlike its sister-city of Mirlond, was established foremost as a military fortification and penal colony, with prisoners being sent there to work off their sentences rowing the great galleys berthed there. Regardless of who has held the city, this function has remained largely unchanged."
+  building_type_wonder_ramlond_desc:0 "Originally founded by Tar-Ancalimon, Ramlond, unlike its sister-city of Mirlond, was established foremost as a military fortification and penal [colony|E], with prisoners being sent there to work off their sentences rowing the great galleys berthed there. Regardless of who has held the city, this function has remained largely unchanged."
   building_wonder_ramlond:0 "Walled Haven of Ramlond"
-  building_wonder_ramlond_desc:0 "The first thing anyone who visits Ramlond notices is the great 50-foot-tall walls, known as Pharazon's wall. Originally founded by Tar-Ancalimon, Ramlond, unlike its sister-city of Mirlond, was established foremost as a military fortification and penal colony, with prisoners being sent there to work off their sentences rowing the great galleys berthed there. Regardless of who has held the city, this function has remained largely unchanged."
+  building_wonder_ramlond_desc:0 "The first thing anyone who visits Ramlond notices is the great 50-foot-tall walls, known as Pharazon's wall. Originally founded by Tar-Ancalimon, Ramlond, unlike its sister-city of Mirlond, was established foremost as a military fortification and penal [colony|E], with prisoners being sent there to work off their sentences rowing the great galleys berthed there. Regardless of who has held the city, this function has remained largely unchanged."
   
   #Ancalimon
   building_type_wonder_ancalimon:0 "Bronze Statue of Tar-Ancalimon"
@@ -1354,13 +1385,13 @@
   building_wonder_hron_tumrakhi_desc:0 "At the core of the grand temple complex of Hrôn Tûmrakhi, the Seat of the Vracarath (Ati'Vracarathi, literally 'Throne of the Vracaraths') is the oldest building in the complex, yet also the most grand. All those of sufficient rank among the faithful are expected to donate to its upkeep and its continual renovation. Here the High Vracarath lives, recieves visitors, and makes proclamations to the faithful. The archives of [khand|E] located here are some of the most comprehensive in central [middleearth|E], but are available to only a few.\n\nSome say that in its walls are hidden secret libraries, bearing dark secrets of magic and lore."
   
   
-  ### UMBAR WONDERS ###
+### UMBAR WONDERS ###
   
   #Havens of Umbar
   building_type_wonder_umbar_01:0 "Great Haven of Umbar"
   building_type_wonder_umbar_01_desc:0 "One of the greatest colonial cities of [numenor|E], [umbar|E]'s fortunes have waxed and waned throughout the [thirdage|E]. However, it remains an important regional center, and might rise once more to one of the greatest cities in the world."
   building_wonder_umbar_01:0 "Great Haven of Umbar"
-  building_wonder_umbar_01_desc:0 "One of the great realms-in-exile, [umbar|E]'s capital displays the splendour of [numenor|E] of old. It has changed hands multiple times, from a [black_numenorean|E] kingdom to a [gondorian|E] province, a rogue Gondorian state, and finally a strange mixed [black_numenorean|E]-[haradrim|E] state. \n\nDespite all these changes, the opulence of the city still remains to be seen, and trading fleets continue to visit the port for valuable good from inland [harad|E]."
+  building_wonder_umbar_01_desc:0 "One of the great realms-in-exile, [umbar|E]'s capital displays the splendour of [numenor|E] of old. It has changed hands multiple times, from a [black_numenorean|E] kingdom to a [gondorian|E] province, a rogue Gondorian state, and finally a strange mixed [black_numenorean|E]-[haradrim|E] state. \n\nDespite all these changes, the opulence of the city still remains to be seen, and trading fleets continue to visit the port for valuable goods from inland [harad|E]."
   building_wonder_umbar_02:0 "Palaces of the Sea-Lords"
   building_wonder_umbar_02_desc:0 "Once, [umbar|E] was ruled by the Sea-Lords, which were Military-Governors chosen by [numenor|E]. During the time of Númenor they bore the responsibility for maintaining the [numenorean|E] fleet berthed there. During their long reign, many graceful and beautiful palaces were built in [umbar|E], funded using the trade and tribute extracted from the hinterlands of [harad|E]. While some of these are still occupied to this day by prominent families of [umbar|E], we could convert the remaining palaces, currently sitting empty, into governmental buildings."
   building_wonder_umbar_03:0 "Fortified Harbor"
@@ -1390,12 +1421,12 @@
   building_type_wonder_citadel_hyarmendacil_01:0 "Citadel of Hyarmendacil"
   building_type_wonder_citadel_hyarmendacil_01_desc:0 "An ancient fortification of [gondor|E], sitting at the border of where Gondor and [bellakar|E] met at their heights."
   building_wonder_citadel_hyarmendacil_01:0 "Citadel of Hyarmendacil"
-  building_wonder_citadel_hyarmendacil_01_desc:0 "Originally founded as the [numenorean|E] colony of Dûsalan by the adventurer Dâirukhôr in S.A 3194, the settlement was renamed Badharkân in the late [thirdage|E] after Badharkân of Harad, a legendary ruler. A vigorous market town on the Gondeithel estuary, on the ancient frontier between [umbar|E] and Bellakar, Dûsalan was captured by [gondor|E] during the reign of the Ship Kings. There Hyarmendacil built a citadel, which the local Umbaredain called Hyarmendilost, and other fortifications to secure his southern border, which were maintained during the days of Gondor’s might. \n\nIn later years the fortress passed through many hands, often alternating between the Tedjin and the Corsairs. Though the outer defenses of the town are now ruinous, the citadel remains a useful bulwark for any determined defender."
+  building_wonder_citadel_hyarmendacil_01_desc:0 "Originally founded as the [numenorean|E] [colony|E] of Dûsalan by the adventurer Dâirukhôr in S.A 3194, the settlement was renamed Badharkân in the late [thirdage|E] after Badharkân of Harad, a legendary ruler. A vigorous market town on the Gondeithel estuary, on the ancient frontier between [umbar|E] and Bellakar, Dûsalan was captured by [gondor|E] during the reign of the Ship Kings. There Hyarmendacil built a citadel, which the local Umbaredain called Hyarmendilost, and other fortifications to secure his southern border, which were maintained during the days of Gondor’s might. \n\nIn later years the fortress passed through many hands, often alternating between the Tedjin and the Corsairs. Though the outer defenses of the town are now ruinous, the citadel remains a useful bulwark for any determined defender."
   building_wonder_citadel_hyarmendacil_02:0 "Fortified Citadel of Hyarmendacil"
   building_wonder_citadel_hyarmendacil_02_desc:0 "The ancient citadel of the Sea-King has been reinforced and enhanced with additional fortifications. Advanced earthworks guard the approaches to the citadel, and newly built walls provide overlapping degrees of fire, funneling any who approach into kill zones where artillery can be reigned down on them. While the new additions are not quite up to the levels of ancient [numenorean|E] or even [gondorian|E] construction, it is a solid and well-built defensive complex."
   
   
-  ### DUNE SEA WONDERS ###
+### DUNE SEA WONDERS ###
 
   #Great Souk of Mazharath
   building_type_wonder_souk_mazharath:0 "Great Souk of Mazharath"
@@ -1403,7 +1434,7 @@
   building_wonder_souk_mazharath:0 "Great Souk of Mazharath"
   building_wonder_souk_mazharath_desc:0 "From across [harad|E] and beyond, trader caravans crossing the great desert must pass through the oasis town of Mazharath. Indeed without its palm-shaded waters the journey would be impossible, and the town’s markets and bazaars have flourished for centuries, regardless of the wars that have often rolled over it. \n\nLargest and most ancient is the Great Souk, where goods from as far afield as [khand|E], [thanihazad|E] and the [anduinvale|E] are exchanged. The local potentate always takes their cut of the profits, by ancient right."
 
-  ### ARNOR WONDERS ###
+### ARNOR WONDERS ###
   # Fornost
   building_wonder_fornost:0 "Fornost Erain"
   building_wonder_fornost_desc:0 ""
@@ -1426,17 +1457,25 @@
   # NOTE ^ edited from John Henry Eden
   building_wonder_amon_sul_reunited:0 "Great Watch"
   building_wonder_amon_sul_reunited_desc:0 "After the [northernkingdom|E] was restored to its former glory, Amon Sûl  was built anew as an important defence of [eriador|E]. The tolls collected from the Great East Road support its watch over the land."
+  building_wonder_amon_sul_original:0 "Amon Súl"
+  building_wonder_amon_sul_original_desc:0 "One of the strongest citadels of the [northernkingdom|E], the watchtower of Amon Sûl was built as an important defence of [eriador|E]. It is said that [elendil|E] once stood atop the spire to await the arrival of the host of his ally, Gil-galad the High King of [lindon|E]."
   # ^ edited from John Henry Eden
 
   # Cameth Brin
   building_type_wonder_cameth_brin_01:0 "Cameth Brin"
   building_type_wonder_cameth_brin_01_desc:0 "One of the oldest [dunedain|E] fortifications in [middleearth|E], Cameth Brin has a deep and storied history."
   building_wonder_cameth_brin_01:0 "Cameth Brin"
-  building_wonder_cameth_brin_01_desc:0 "In the later centuries of the [secondage|E], even in [eriador|E] many new settlers were somewhat rapacious and keen to rule over lesser [conceptracemen|E] . These they found in the northeast, where a small [numenorean|E] elite, ruling from fortified manors, subjugated the Hillmen tribes. \n\nThe oldest and greatest Númenórean settlement in the area was Amon Raen - the Twisted HIll - known to the Hillmen as ‘Cameth Brin’. A tall citadel was built atop the hill, from which the lands thereabout could be surveyed and controlled over a great distance.\n\nAbsorbed into [arnor|E] upon the coming of Elendil, in later years Cameth Brin became the capital of the breakaway kingdom of [rhudaur|E], whose strength was undermined by the legacy of difficult relations with the Hillmen. It remained one of the last areas of [dunedain|E] settlement in that petty kingdom before all was swept away by the machinations of the [witchkingshort|E] of [angmar|E], whose Hillmen puppet-kings took their revenge and made Cameth Brin a place of fear, it’s great storerooms converted to dungeons of terrible repute."
+  building_wonder_cameth_brin_01_desc:0 "In the later centuries of the [secondage|E], even in [eriador|E] many new settlers were somewhat rapacious and keen to rule over lesser [conceptracemen|E] . These they found in the northeast, where a small [numenorean|E] elite, ruling from fortified manors, subjugated the Hillmen tribes. \n\nThe oldest and greatest Númenórean settlement in the area was Amon Raen - the Twisted Hill - known to the Hillmen as ‘Cameth Brin’. A tall citadel was built atop the hill, from which the lands thereabout could be surveyed and controlled over a great distance.\n\nAbsorbed into [arnor|E] upon the coming of Elendil, in later years Cameth Brin became the capital of the breakaway kingdom of [rhudaur|E], whose strength was undermined by the legacy of difficult relations with the Hillmen. It remained one of the last areas of [dunedain|E] settlement in that petty kingdom before all was swept away by the machinations of the [witchkingshort|E] of [angmar|E], whose Hillmen puppet-kings took their revenge and made Cameth Brin a place of fear, its great storerooms converted to dungeons of terrible repute."
   building_wonder_cameth_brin_02:0 "Ruins of Cameth Brin"
   building_wonder_cameth_brin_02_desc:0 "Now abandoned for long centuries, Cameth Brin is little more than a shell. Yet it remains the mightiest of the castles that scatter the hills of [rhudaur|E], and being built by the [dunedain|E] in their prime its walls remain proud and uncrumbling, even if its dark and empty windows give it an evil aspect."
   building_wonder_cameth_brin_03:0 "Cameth Brin Renewed"
   building_wonder_cameth_brin_03_desc:0 "Once again the ancient tower of Cameth Brin is a centre of power and culture for the [dunedainnorth|E], a lynchpin for administration, learning and military might across [rhudaur|E]."
+  building_type_wonder_cameth_brin_original_01:0 "Cameth Brin"
+  building_type_wonder_cameth_brin_original_01_desc:0 "One of the oldest [dunedain|E] fortifications in [middleearth|E], Cameth Brin has a deep and storied history."
+  building_wonder_cameth_brin_original_01:0 "Cameth Brin"
+  building_wonder_cameth_brin_original_01_desc:0 "In the later centuries of the [secondage|E], even in [eriador|E] many new settlers were somewhat rapacious and keen to rule over lesser [conceptracemen|E] . These they found in the northeast, where a small [numenorean|E] elite, ruling from fortified manors, subjugated the Hillmen tribes. \n\nThe oldest and greatest Númenórean settlement in the area was Amon Raen - the Twisted Hill - known to the Hillmen as ‘Cameth Brin’. A tall citadel was built atop the hill, from which the lands thereabout could be surveyed and controlled over a great distance.\n\nAbsorbed into [arnor|E] upon the coming of Elendil, in later years Cameth Brin became the capital of the breakaway kingdom of [rhudaur|E], whose strength was undermined by the legacy of difficult relations with the Hillmen. It remained one of the last areas of [dunedain|E] settlement in that petty kingdom before all was swept away by the machinations of the [witchkingshort|E] of [angmar|E], whose Hillmen puppet-kings took their revenge and made Cameth Brin a place of fear, its great storerooms converted to dungeons of terrible repute."
+  building_wonder_cameth_brin_original_02:0 "Amon Raen Renewed"
+  building_wonder_cameth_brin_original_02_desc:0 "Once again the ancient tower of Amon Raen is a centre of power and culture for the [dunedainnorth|E], a lynchpin for administration, learning and military might across [rhudaur|E]."
 
   # Athaircuile
   building_type_wonder_athaircuile_01:0 "Athaircuile"
@@ -1453,10 +1492,12 @@
   building_wonder_barrow_downs_02_desc:0 "Following the Great Plague, which wiped out much of the remaining population of [cardolan|E], the [witchkingshort|E] sent cruel wights - undead slaves to his will - to infest the barrows. The Barrow Downs became an accursed place, oft-shrouded in mysterious fogs, and the terror created by the unquiet dead thwarted the attempts of [arthedain|E] to recolonise Cardolan. Even now they are a byword for evil, and the few travellers who pass this way risk being lured to their deaths in the silent tombs."
   building_wonder_barrow_downs_03:0 "The Cleansed Barrows"
   building_wonder_barrow_downs_03_desc:0 "Finally the Barrow Downs are cleansed again, a holy place of peace and contemplation, and a burial place for the most honoured dead."
+  building_type_wonder_barrow_downs_original:0 "Tyrn Gorthad"
+  building_wonder_barrow_downs_original:0 "Tyrn Gorthad (The Barrow Downs)"
+  building_wonder_barrow_downs_original_desc:0 "In the [firstage|E], before the Edain crossed into [beleriand|E], their forefathers tarried long in [eriador|E]. Many of their leaders were buried in great barrows in a westerly offshoot of the South Downs, as were those of their kin who remained in [eriador|E]. Why they chose this site remains unclear, though it may have been motivated by legends of a benevolent spirit living in the nearby Old Forest. \n\nWhen the [numenoreans|E] returned to [middleearth|E] they recognised their kinship with these Edainic peoples, and considered the Barrow Downs to be a sacred site, resting place of their common ancestors. After the [downfall|E], [dunedain|E] of high honour were also sometimes buried here, including the princely line of [cardolan|E]."
 
   # Palace of Thalion
   building_type_wonder_thalion_01:0 "The Palace of Thalion"
-  #building_type_wonder_cameth_brin_01_desc:0 ""
   building_wonder_thalion_01:0 "The Mansion of Thalion"
   building_wonder_thalion_01_desc:0 "Though the earliest [numenorean|E] settlers in [eriador|E] made their homes in the upper Baranduin valley, so as to be closer to the [elves|E] of [lindon|E] and the surviving Edainic peoples, the Baranduin was too shallow for good navigation, and the incomers desired a route into central [eriador|E] that was not reliant on the good will of Gil-galad. \n\nThey therefore made use of the Gwathló, and made a port at Tharbad from where roads were made into the north. In time Minhiriath itself became settled, and among the first and principal towns was Thalion, which lay at the junction of what would become the Greenway and the Redway. \n\nUnlike the older settlements further north, which were not formal colonies of the [numenorean|E] crown, or the autonomous settler-fiefs of Minhiriath, Thalion was controlled directly by the governor at Tharbad. Here was built an impressive summer mansion for the governor, which was regarded as one of the most elegant architectural achievements of the [eriadorcolonisation|E], despite being less grand and imposing than the strongholds of the great settler families."
   building_wonder_thalion_02:0 "The Palace of Thalion"
@@ -1465,16 +1506,24 @@
   building_wonder_thalion_03_desc:0 "Thalion was not built with war in mind, and while its location was of great strategic importance it was not easily defendable. Sacked repeatedly during the internecine wars between the [arnorian|E] successor states, it was thoroughly razed during the invasion by [angmar|E] in T.A. 1409, after which the capital of [cardolan|E]’s remnant principality was moved. The Palace of Thalion was never reoccupied, and gradually its great structures were largely buried under loam."
   building_wonder_thalion_04:0 "Thalion Restored"
   building_wonder_thalion_04_desc:0 "With great toil a new palace has been raised on the ruined foundations of Thalion, in memory of the great halls of old. Though crafted with hands of lesser skill than those of their forefathers, the palace is once again a source of pride for the [dunedainnorth|E], and a key centre of administration for the southlands of [arnor|E]."
+  building_type_wonder_thalion_original_01:0 "The Palace of Thalion"
+  building_wonder_thalion_original_01:0 "The Mansion of Thalion"
+  building_wonder_thalion_original_01_desc:0 "Though the earliest [numenorean|E] settlers in [eriador|E] made their homes in the upper Baranduin valley, so as to be closer to the [elves|E] of [lindon|E] and the surviving Edainic peoples, the Baranduin was too shallow for good navigation, and the incomers desired a route into central [eriador|E] that was not reliant on the good will of Gil-galad. \n\nThey therefore made use of the Gwathló, and made a port at Tharbad from where roads were made into the north. In time Minhiriath itself became settled, and among the first and principal towns was Thalion, which lay at the junction of what would become the Greenway and the Redway. \n\nUnlike the older settlements further north, which were not formal colonies of the [numenorean|E] crown, or the autonomous settler-fiefs of Minhiriath, Thalion was controlled directly by the governor at Tharbad. Here was built an impressive summer mansion for the governor, which was regarded as one of the most elegant architectural achievements of the [eriadorcolonisation|E], despite being less grand and imposing than the strongholds of the great settler families."
+  building_wonder_thalion_original_02:0 "The Palace of Thalion"
+  building_wonder_thalion_original_02_desc:0 "After the [downfall|E] Thalion became part of the royal lands of the House of [isildur|E], and in 480 of the [thirdage|E] King Tarcil of [arnor|E] converted and extended the colonial mansion into a grand palace, as beautiful as it was sprawling. Its great stone halls and pavilions were the pride of southern [arnor|E]."
 
   # Argond
   building_type_wonder_argond_01:0 "Argond"
   #building_type_wonder_argond_01_desc:0 ""
   building_wonder_argond_01:0 "Argond"
-  building_wonder_argond_01_desc:0 "Argond was perhaps the grandest example of the fortified palaces founded and embellished by the great houses of colonial Minhiriath during the [secondage|E]. While the families that settled in this period remained [faithfulshort|E], many were in some part influenced by the beliefs of the [kingsmen|E] and became imperious and domineering, ruling through great landed estates (this distinction from their more solidly-Faithful northern kin was one seed of the emergence of an independent [cardolan|E] in the [thirdage|E]). \n\nHouse Caladir was no exception to this, yet their wealthy founder - having taken a local Eriadorim woman to wife - left a dynasty forever tainted in the eyes of the [kingsmen|E]. Exiled to [middleearth|E], House Caladir built Argond in the image of their lost estate in Andustar. It became the capital of the eponymous colony of Dol Caladir, which swore fealty to [elendil|E] following the [downfall|E]."
+  building_wonder_argond_01_desc:0 "Argond was perhaps the grandest example of the fortified palaces founded and embellished by the great houses of colonial Minhiriath during the [secondage|E]. While the families that settled in this period remained [faithful|E], many were in some part influenced by the beliefs of the [kingsmen|E] and became imperious and domineering, ruling through great landed estates (this distinction from their more solidly-Faithful northern kin was one seed of the emergence of an independent [cardolan|E] in the [thirdage|E]). \n\nHouse Caladir was no exception to this, yet their wealthy founder - having taken a local Eriadorim woman to wife - left a dynasty forever tainted in the eyes of the [kingsmen|E]. Exiled to [middleearth|E], House Caladir built Argond in the image of their lost estate in Andustar. It became the capital of the eponymous [colony|E] of Dol Caladir, which swore fealty to [elendil|E] following the [downfall|E]."
   building_wonder_argond_02:0 "Ruins of Argond"
   building_wonder_argond_02_desc:0 "Argond became the capital of [cardolan|E] following House Caladir’s inheritance of the throne in 1255, after the death of the last male-line descendant of the House of [isildur|E]. It was badly damaged during the Battle of the Keep in 1409, during the conflict which saw the death of the last Prince of Cardolan and the end of the ancient House Caladir in the male line, after which the capital was moved north to Iarond and Cardolan was re-incorporated into [arthedain|E]. \n\nWhile still sizeably populated even thereafter, the decline of Cardolan could not be stemmed, and Argond was abandoned after the Great Plague struck Minhiriath in 1637. Erosion caused by centuries of weather and wind kept the ruined citadel from being buried under mounds of grass, and its bleak walls still loomed over the Gwathló valley at the end of the [thirdage|E]."
   building_wonder_argond_03:0 "Argond Restored"
   building_wonder_argond_03_desc:0 "In memory of House Caladir, the great palace and stronghold of Argond has been restored to its former glory as the center of [cardolan|E]. Its great walls and mansions are both a reminder of the storied history of the [dunedainnorth|E], and a symbol of their renewal."
+  building_type_wonder_argond_original:0 "Argond"
+  building_wonder_argond_original:0 "Argond"
+  building_wonder_argond_original_desc:0 "Argond was perhaps the grandest example of the fortified palaces founded and embellished by the great houses of colonial Minhiriath during the [secondage|E]. While the families that settled in this period remained [faithful|E], many were in some part influenced by the beliefs of the [kingsmen|E] and became imperious and domineering, ruling through great landed estates (this distinction from their more solidly-Faithful northern kin was one seed of the emergence of an independent [cardolan|E] in the [thirdage|E]). \n\nHouse Caladir was no exception to this, yet their wealthy founder - having taken a local Eriadorim woman to wife - left a dynasty forever tainted in the eyes of the [kingsmen|E]. Exiled to [middleearth|E], House Caladir built Argond in the image of their lost estate in Andustar. It became the capital of the eponymous [colony|E] of Dol Caladir, which swore fealty to [elendil|E] following the [downfall|E]."
 
   building_type_wonder_lond_daer_01:0 "Lond Daer"
   #building_type_wonder_lond_daer_01_desc:0 ""
@@ -1488,27 +1537,36 @@
   building_type_wonder_tharbad_01:0 "Tharbad"
   #building_type_wonder_tharbad_01_desc:0 ""
   building_wonder_tharbad_01:0 "Tharbad"
-  building_wonder_tharbad_01_desc:0 "Tharbad lay at the confluence of the Gwathló and Glanduin, a place of great marshes known as Nîn-in-Eilph. It was the furthest upstream that the river was ever navigable, and it was here that Aldarion of [numenor|E] met Galadriel.\n\nDuring the years of [numenorean|E] forestry in the Gwathló basin (S.A. c.800-1695) it was the site of the last in a chain of forts built to guard the great timber stores of the Guild of Venturers, and destroyed in S.A. 1697 during [sauroncharacter|E]’s invasion of [eriador|E], along with the forests themselves.\n\nTharbad was refounded as a permanent haven in S.A. 1912 following the similar refounding of Lond Daer in the previous century. It became a major entry-point for settlers heading for the settlements in the Baranduin valley and beyond, and later Minhiriath itself, during the [eriadorcolonisation|E].\n\nLater, when Minhirath became a formal [numenorean|E] colony, it became the administrative capital and a major settlement in its own right. At the arrival of [elendil|E] Tharbad in theory became a Crown Territory, but in practice remained governed by a local Guild Administration with great autonomy and privilege."
+  building_wonder_tharbad_01_desc:0 "Tharbad lay at the confluence of the Gwathló and Glanduin, a place of great marshes known as Nîn-in-Eilph. It was the furthest upstream that the river was ever navigable, and it was here that Aldarion of [numenor|E] met Galadriel.\n\nDuring the years of [numenorean|E] forestry in the Gwathló basin (S.A. c.800-1695) it was the site of the last in a chain of forts built to guard the great timber stores of the Guild of Venturers, and destroyed in S.A. 1697 during [sauroncharacter|E]’s invasion of [eriador|E], along with the forests themselves.\n\nTharbad was refounded as a permanent haven in S.A. 1912 following the similar refounding of Lond Daer in the previous century. It became a major entry-point for settlers heading for the settlements in the Baranduin valley and beyond, and later Minhiriath itself, during the [eriadorcolonisation|E].\n\nLater, when Minhirath became a formal [numenorean|E] [colony|E], it became the administrative capital and a major settlement in its own right. At the arrival of [elendil|E] Tharbad in theory became a Crown Territory, but in practice remained governed by a local Guild Administration with great autonomy and privilege."
   building_wonder_tharbad_02:0 "The Great Docks of Tharbad"
-  building_wonder_tharbad_02_desc:0 "In the fourth century of the [thirdage|E], during the reigns of Arnadil of [gondor|E] and Arantar of [arnor|E], Tharbad was transformed into the lynchpin of communication between the [realms_in_exile|E]. An enormous drainage project, alongside construction of causeways, quays, and great bridge to carry the North-South Road, created a significant trading centre. This allowed Tharbad to be expanded south of the river for the first time.\n\nThough garrisoned and in theory jointly-administered by both [gondor|E] and [arnor|E], in practice governance of both sides of the city was delegated to the ancient Guild Administration. The [arnorian|E] and later [cardolani|E] garrison on the north bank became increasingly drawn from the populace of Tharbad and its immediate environs, until it was effectively a local militia.\n\nAs the most outward-looking city in [arnor|E], Tharbad was never entirely reconciled to the Cardolani secession, regarding it as bad for business. They were dismayed at the waste and destruction of the wars between the kingdoms, and chafed at the reduction in local autonomy that followed the Cardolani civil war. Nor were they were fulsome in their recognition of the Caladir succession, and despite sympathy with Arthedain's unification strategy they resented their sons being sent to their deaths against the growing number of Angmarrim raids in the north, and increasingly withheld levies and taxes."
+  building_wonder_tharbad_02_desc:0 "In the fourth century of the [thirdage|E], during the reigns of Arnadil of [gondor|E] and Arantar of [arnor|E], Tharbad was transformed into the lynchpin of communication between the [realms_in_exile|E]. An enormous drainage project, alongside construction of causeways, quays, and a great bridge to carry the North-South Road, created a significant trading centre. This allowed Tharbad to be expanded south of the river for the first time.\n\nThough garrisoned and in theory jointly-administered by both [gondor|E] and [arnor|E], in practice governance of both sides of the city was delegated to the ancient Guild Administration. The [arnorian|E] and later [cardolani|E] garrison on the north bank became increasingly drawn from the populace of Tharbad and its immediate environs, until it was effectively a local militia.\n\nAs the most outward-looking city in [arnor|E], Tharbad was never entirely reconciled to the Cardolani secession, regarding it as bad for business. They were dismayed at the waste and destruction of the wars between the kingdoms, and chafed at the reduction in local autonomy that followed the Cardolani civil war. Nor were they were fulsome in their recognition of the Caladir succession, and despite sympathy with Arthedain's unification strategy they resented their sons being sent to their deaths against the growing number of Angmarrim raids in the north, and increasingly withheld levies and taxes."
   building_wonder_tharbad_03:0 "The Ruins of Tharbad"
   building_wonder_tharbad_03_desc:0 "Tharbad refused to contribute troops during the [devastationofcardolan|E] in 1409, arguing that they needed to look to the defence of the haven (while secretly suspecting that Angmar would avoid drawing [gondor|E] into the conflict), and thereafter effectively seceded from [arthedain|E]'s new [cardolani|E] administration based at Iarond.\n\nTharbad effectively became a city state under [gondorian|E] protection, but the latter's garrison was reduced until it became mostly ceremonial, and it was eventually withdrawn after the Great Plague of T.A. 1636 which left Minhirath deserted and Tharbad heavily depopulated.\n\nWith the Fall of [arnor|E] in T.A. 1974 Tharbad was left entirely isolated. The fenlands slowly crept back and the city fell into ruin. By T.A. 2050 the great bridge had fallen, replaced by a dangerous ford. Thereafter Tharbad continued to decline, with more and more mercenaries, bandits, and ruffians (typically from Dunland) making it their abode and extorting tolls on the few traders that still came up the Greenway. The Fell Winter of T.A. 2912 finally killed or dispersed the few remaining inhabitants."
   building_wonder_tharbad_04:0 "Tharbad Restored"
   building_wonder_tharbad_04_desc:0 "After centuries of ruin and decrepitude the ancient port of Tharbad has been restored to some semblance of its earlier glory.\n\nYears of labour have seen the river dredged and the marshes tamed. The causeways have been repaired, and astride the river newly-built arches once again curve over the giant [numenorean|E] piles. The quays throng with sailors from ports as far away as Belfalas and even [umbar|E], and the north-south road hums with traffic seeking the legendary entrepot of the Gwathló."
+  building_type_wonder_tharbad_original_01:0 "Tharbad"
+  building_wonder_tharbad_original_01:0 "Tharbad"
+  building_wonder_tharbad_original_01_desc:0 "Tharbad lay at the confluence of the Gwathló and Glanduin, a place of great marshes known as Nîn-in-Eilph. It was the furthest upstream that the river was ever navigable, and it was here that Aldarion of [numenor|E] met Galadriel.\n\nDuring the years of [numenorean|E] forestry in the Gwathló basin (S.A. c.800-1695) it was the site of the last in a chain of forts built to guard the great timber stores of the Guild of Venturers, and destroyed in S.A. 1697 during [sauroncharacter|E]’s invasion of [eriador|E], along with the forests themselves.\n\nTharbad was refounded as a permanent haven in S.A. 1912 following the similar refounding of Lond Daer in the previous century. It became a major entry-point for settlers heading for the settlements in the Baranduin valley and beyond, and later Minhiriath itself, during the [eriadorcolonisation|E].\n\nLater, when Minhirath became a formal [numenorean|E] [colony|E], it became the administrative capital and a major settlement in its own right. At the arrival of [elendil|E] Tharbad in theory became a Crown Territory, but in practice remained governed by a local Guild Administration with great autonomy and privilege."
+  building_wonder_tharbad_original_02:0 "The Great Docks of Tharbad"
+  building_wonder_tharbad_original_02_desc:0 "In the fourth century of the [thirdage|E], during the reigns of Arnadil of [gondor|E] and Arantar of [arnor|E], Tharbad was transformed into the lynchpin of communication between the [realms_in_exile|E]. An enormous drainage project, alongside construction of causeways, quays, and great bridge to carry the North-South Road, created a significant trading centre. This allowed Tharbad to be expanded south of the river for the first time.\n\nThough garrisoned and in theory jointly-administered by both [gondor|E] and [arnor|E], in practice governance of both sides of the city was delegated to the ancient Guild Administration. The [arnorian|E] and later [cardolani|E] garrison on the north bank became increasingly drawn from the populace of Tharbad and its immediate environs, until it was effectively a local militia.\n\nAs the most outward-looking city in [arnor|E], Tharbad was never entirely reconciled to the Cardolani secession, regarding it as bad for business. They were dismayed at the waste and destruction of the wars between the kingdoms, and chafed at the reduction in local autonomy that followed the Cardolani civil war. Nor were they were fulsome in their recognition of the Caladir succession, and despite sympathy with Arthedain's unification strategy they resented their sons being sent to their deaths against the growing number of Angmarrim raids in the north, and increasingly withheld levies and taxes."
 
   building_type_wonder_mistalonde_01:0 "Mistalondë"
-  building_type_wonder_tharbad_01_desc:0 "A great haven built opposite the ruins of Lond Daer, to replace that ancient port on the estuary of the Gwathló."
+  building_type_wonder_mistalonde_01_desc:0 "A great haven built opposite the ruins of Lond Daer, to replace that ancient port on the estuary of the Gwathló."
   building_wonder_mistalonde_01:0 "Mistalondë"
   building_wonder_mistalonde_01_desc:0 "Mistalondë was one of the great works of [elendil|E], founded on the site of a small [numenorean|E] harbour in the province of Ethir Gwathló opposite Lond Daer, to replace the latter port which had been overthrown and its harbour silted by the Great Wave that followed the [downfall|E].\n\nIt was long a key haven for ocean-going ships travelling between [gondor|E] and [arnor|E]. However, the great works of the fourth century of the [thirdage|E] allowed all but the largest vessels to sail up the Gwathló as far as Tharbad, reducing the importance of Mistalonde and beginning its long decline."
   building_wonder_mistalonde_02:0 "Súthure "
   building_wonder_mistalonde_02_desc:0 "House Gunion supported Turendur of [cardolan|E] in the [cardolan_succession_crisis|E] (T.A. 1235-1244). As a result their capital port of Mistalondë was eventually besieged, and though it was not breached and sacked Mistalondë was stripped of much of its former autonomy by the victorious King Tarcil, which accelerated its decline of fortune and population.\n\nCommencing in T.A. 1360 various Enedhwaithrim clans emigrated over the river into Ethir Gwathló, where they were recruited as feudatories. However these feudatories gradually grew in strength just as the [dunedain|E] population declined, with their leaders asserting control over more and more of the province until House Guinion ruled in name only. After the Devastation of 1409 they evicted the last lord of Mistalondë from his ancestral seat.\n\nRenamed ‘Súthure’ in their tongue, Mistalondë became the capital of the Saralain kingdom that emerged as Cardolan’s control evaporated. Though much diminished, and largely ruined by time and centuries of fighting among the people of Saralain, Súthure remains one of the few significant settlements of [eriador|E].\n\nIts harbour and markets remain the centre of the limited trade of coastal [enedhwaith|E] and Minhiriath, and while its ancient walls have long since toppled, a smaller defensive ring has been raised from the broken stonework of many a collapsed hall and warehouse."
   building_wonder_mistalonde_03:0 "Mistalondë Reclaimed"
   building_wonder_mistalonde_03_desc:0 "Once again in [dunedain|E] hands, Mistalondë has been raised from the ruins. A cornerstone of the renewed Gwathló trade, the harbours, walls and warehouses of [elendil|E]’s port have been restored, and its wide streets echo with the songs of sailors in myriad tongues."
+  building_type_wonder_mistalonde_original:0 "Mistalondë"
+  building_type_wonder_mistalonde_original_desc:0 "A great haven built opposite the ruins of Lond Daer, to replace that ancient port on the estuary of the Gwathló."
+  building_wonder_mistalonde_original:0 "Mistalondë"
+  building_wonder_mistalonde_original_desc:0 "Mistalondë was one of the great works of [elendil|E], founded on the site of a small [numenorean|E] harbour in the province of Ethir Gwathló opposite Lond Daer, to replace the latter port which had been overthrown and its harbour silted by the Great Wave that followed the [downfall|E].\n\nIt was long a key haven for ocean-going ships travelling between [gondor|E] and [arnor|E]. However, the great works of the fourth century of the [thirdage|E] allowed all but the largest vessels to sail up the Gwathló as far as Tharbad, reducing the importance of Mistalonde and beginning its long decline."
 
   building_type_wonder_nelvorin_01:0 "Nelvorin"
   #building_type_wonder_nelvorin_01_desc:0 ""
   building_wonder_nelvorin_01:0 "Nelvorin"
-  building_wonder_nelvorin_01_desc:0 "Though little-known outside of the north, Nelvorin was among the most ancient settlements of [eriador|E], the site of an ancient shrine that later became an archive and library for the local [faithfulshort|E]. Originally named Bar-en-Nêlbórath (Sindarin: "Home of the Three Faithful Ones"), it lay near the source of the river Uialduin where it emerged from the Hills of Evendim. \n\nThe origins of Nelvorin were mysterious. Evidence of [firstage|E] elven occupation could be seen in the stonework reused in the construction of Nelvorin’s early [secondage|E] Edanic shrine. These stones were decorated with ancient Nandorin carvings, seemingly overlaid with later [sindarin|E] lettering of obscure origin and meaning. At a later time numerous Edainic barrows were constructed near the shrine, in number second only to Tyrn Gorthad. \n\nA key site of early [numenorean|E] contact, the eponymous ‘Three Faithful’ were according to legend Númenórean mariners who remained among the indigenous people of Evendim, long before any concerted attempt at settlement. \n\nAfter the arrival of the [numenoreans|E] Nelvorin became a centre of learning, and a symbol of the ancient and continuous presence of the Edainic peoples and their descendants in the Emyn Uial. For long before Beor heard the harping of Finrod his ancestors looked west from Nelvorin, and many of their descendants crossed not the Ered Luin but remained content in the rolling hills, in time mingling with their returning [dunedain|E] kin, and there they remained even unto the end of the [thirdage|E]."
+  building_wonder_nelvorin_01_desc:0 "Though little-known outside of the north, Nelvorin was among the most ancient settlements of [eriador|E], the site of an ancient shrine that later became an archive and library for the local [faithful|E]. Originally named Bar-en-Nêlbórath (Sindarin: "Home of the Three Faithful Ones"), it lay near the source of the river Uialduin where it emerged from the Hills of Evendim. \n\nThe origins of Nelvorin were mysterious. Evidence of [firstage|E] elven occupation could be seen in the stonework reused in the construction of Nelvorin’s early [secondage|E] Edanic shrine. These stones were decorated with ancient Nandorin carvings, seemingly overlaid with later [sindarin|E] lettering of obscure origin and meaning. At a later time numerous Edainic barrows were constructed near the shrine, in number second only to Tyrn Gorthad. \n\nA key site of early [numenorean|E] contact, the eponymous ‘Three Faithful’ were according to legend Númenórean mariners who remained among the indigenous people of Evendim, long before any concerted attempt at settlement. \n\nAfter the arrival of the [numenoreans|E] Nelvorin became a centre of learning, and a symbol of the ancient and continuous presence of the Edainic peoples and their descendants in the Emyn Uial. For long before Beor heard the harping of Finrod his ancestors looked west from Nelvorin, and many of their descendants crossed not the Ered Luin but remained content in the rolling hills, in time mingling with their returning [dunedain|E] kin, and there they remained even unto the end of the [thirdage|E]."
 
   building_type_wonder_caras_celairnen_01:0 "Caras Celairnen"
   #building_type_wonder_caras_celairnen_01_desc:0 ""
@@ -1539,15 +1597,25 @@
   building_wonder_fornost_03_desc:0 "Though the fortunes of [arthedain|E] and Fornost occasionally waxed, they mostly waned, and the long war with Angmar gradually bled the Northern [dunedain|E] of their strength. The death-blow came in T.A. 1974, when the Witch King finally captured and sacked the city after a brutal siege. There ended both Fornost and the North Kingdom.\n\nThereafter the city slowly disappeared under grassy mounds, and men referred to it as Deadmen's Dike and feared to go there. Yet the Rangers of the North went there, and kept an encampment in the ruins of the great hall where once the King had held court."
   building_wonder_fornost_04:0 "Fornost Renewed"
   building_wonder_fornost_04_desc:0 "With towering walls and high towers, Fornost Erain once more gleams as the shield of the north. In its mighty bastion throng many a soul, soldier and civilian alike, the great city-fortress coming to life once more. A beacon of security and prosperity, the renewal of Fornost is a signal to all of the reborn prosperity of the region."
+  
+  building_type_wonder_fornost_original_01:0 "Fornost"
+  building_wonder_fornost_original_01:0 "Fornost"
+  building_wonder_fornost_original_01_desc:0 "The Northtower was built as a cornerstone of the eastern marches built by [elendil|E] after the foundation of [arnor|E]. This he did not because they marked the eastern boundary of his realm, but because of the dubious loyalties of his eastern subjects, predominantly Hillmen and the proud descendants of ambitious [dunedain|E] adventurers. He knew that should he face rebellion, or invasion from the eastern mountains, the North Downs and Weather Hills would provide a robust line of defence. In this he proved sadly prescient.\n\nFornost was more than a mere tower. Much like [minastirith|E] and [minasithil|E] in the south, it was a fortified city in its own right, with myriad halls, markets and gathering places secure behind its great walls and bastions. The garrison at Fornost was responsible for a chain of subordinate fortresses guarding the length of the North Downs, and for protecting the plain separating Fornost from the Weather Hills."
+  building_wonder_fornost_original_02:0 "Fornost Erain"
+  building_wonder_fornost_original_02_desc:0 "Following the sundering of [arnor|E] and the sad decline of Annúminas, the capital of the successor-state of [arthedain|E] (and with it that city’s [seeingstone|E]) was moved east to Fornost, which became known as Fornost Erain, the Northtower of Kings.\n\nThe presence of the Royal Court drew many people to the city, especially from peripheral provinces that had begun to suffer a decline in population and prosperity, and for a time Fornost thrived such that hope was kindled that the North Kingdom might yet undergo a renaissance."
 
   building_type_wonder_amon_sul_01:0 "Amon Sûl"
-  #building_type_wonder_barad_girithlin_01_desc:0 "The keystone of the defensive marches built by Elendil"
   building_wonder_amon_sul_01:0 "Amon Sul"
-  building_wonder_amon_sul_01_desc:0 "Amon Sûl was the keystone of the defensive marches built by Elendil, linking Fornost in the north via a chain of subordinate fortifications that stretched through the North Downs and Weather Hills. A beautifully-crafted tower of great height atop an already lofty hill, from its battlements an enemy could be spied approaching many leagues away - even without the palantír that Elendil set here to help maintain communication across his vast kingdom.\n\nAt the base of the tower was a great door within a mighty archway, on which was carved “Here did Elendil witness the coming of Gil-galad Elven King”. For it was from Amon Sûl that the combined armies of the north marched south to the aid of the South-Kingdom.\n\nFollowing the sundering of [arnor|E] Amon Sûl was much disputed between the successor kingdoms, but remained in the hands of [arthedain|E]. The fortification was oft-tested during the wars with Angmar."
+  building_wonder_amon_sul_01_desc:0 "Amon Sûl was the keystone of the defensive marches built by Elendil, linking Fornost in the north via a chain of subordinate fortifications that stretched through the North Downs and Weather Hills. A beautifully-crafted tower of great height atop an already lofty hill, from its battlements an enemy could be spied approaching many leagues away - even without the palantír that Elendil set here to help maintain communication across his vast kingdom.\n\nAt the base of the tower was a great door within a mighty archway, on which was carved “Here did Elendil witness the coming of Gil-galad Elven King”. For it was from Amon Sûl that the combined armies of the north marched south to the aid of the South-Kingdom.\n\nFollowing the sundering of [arnor|E] Amon Sûl was much disputed between the successor kingdoms, but remained in the hands of [arthedain|E]. The fortification was oft-tested during the wars with [angmar|E]."
   building_wonder_amon_sul_02:0 "Ruins of Amon Sul"
   building_wonder_amon_sul_02_desc:0 "Despite surviving Angmar’s siege in the war of T.A. 1356-7, Amon Sûl could not withstand the renewed assault of 1409. Greater numbers than ever before were brought out of the north, and no army could resist the onslaught. Though the palantír of Amon Sûl was saved and removed to Fornost, the great tower was overthrown, and King Arveleg slain.\n\nHis son Araphor, aided by forces from Lindon & Rivendell, was able to drive the enemy back in a victory so great that Angmar would not be able to offer a substantial threat to [arthedain|E] for centuries. But reconstructing the tower was by then beyond the resources of that kingdom, even if they had the skill, and though its strategic location was still advantageous to a defending force it was no longer the defensive keystone of earlier centuries."
   building_wonder_amon_sul_03:0 "Amon Sûl Restored"
   building_wonder_amon_sul_03_desc:0 "The fall of Amon Sûl was a great blow to the dignity and defences of the North Kingdom of old. Now at last it has risen again. With long labour the tower has been rebuilt atop its ancient foundations, in many places using the original stone rescued from the hillside. Though not as tall or skillfully decorated as its predecessor, it is once again a key bastion of the [dunedainnorth|E]."
+  building_type_wonder_amon_sul_original_01:0 "Amon Sûl"
+  building_wonder_amon_sul_original_01:0 "Amon Sul"
+  building_wonder_amon_sul_original_01_desc:0 "Amon Sûl was the keystone of the defensive marches built by [elendil|E], linking Fornost in the north via a chain of subordinate fortifications that stretched through the North Downs and Weather Hills. A beautifully-crafted tower of great height atop an already lofty hill, from its battlements an enemy could be spied approaching many leagues away - even without the palantír that Elendil set here to help maintain communication across his vast kingdom.\n\nAt the base of the tower was a great door within a mighty archway, on which was carved “Here did Elendil witness the coming of Gil-galad Elven King”. For it was from Amon Sûl that the combined armies of the north marched south to the aid of the South-Kingdom.\n\nFollowing the sundering of [arnor|E] Amon Sûl was much disputed between the successor kingdoms, but remained in the hands of [arthedain|E]. The fortification was oft-tested during the wars with [angmar|E]."
+  building_wonder_amon_sul_original_02:0 "Citadel of Ost Sul"
+  building_wonder_amon_sul_original_02_desc:0 "The original watchtower built by [elendil|E] has been extended with an additional, outer wall of hardened stone, and its fortifications have been strengthened by the [numenorean|E] architects of [arthedain|E]. Its barracks can now hold many more men and withstand an ever greater amount of foes in the event of a siege \n\nThe Citadel of Ost Súl, with Elendil's watchtower at its centre, now commands a nigh unassailable position at the southern end of Arthedain's line of defence against the evils of [angmar|E]."
 
  ### LINDON SPECIAL BUILDINGS ###
 
@@ -1560,6 +1628,7 @@
   #building_type_wonder_mithlond_south_01_desc:0 ""
   building_wonder_mithlond_south_01:0 "Mithlond (South Haven)"
   building_wonder_mithlond_south_01_desc:0 "The twin havens of [mithlond|E], the Grey Havens, were together the capital and heartland of [lindon|E]. It was from Mithlond that [elves|E] who finally tired of mortal lands departed for [valinor|E] .\n\nWhereas in [forlindon|E] and [harlindon|E] (formed from remnants of drowned [beleriand|E]) there remained some indigenous Elves such as the Laegrim, or returning [noldorelvesexiles|E] such as the Fëanorian [noldorelves|E] of Helevorn, Mithlond’s geography was newly-wrought during the tremulations of the War of Wrath, and became home to Elven exiles drawn from the many peoples of the sundered Firstborn.\n\nThe havens were founded by Gil-galad, last High King of the [noldorelves|E], in the immediate aftermath of the War. Bringing with him the diverse exiles of the Isle of Balar, he gathered to him those who chose to remain in [middleearth|E] rather than immediately accept the Pardon of the [valar|E]. In this he had the aid of Cirdan, who settled his own folk at Mithlond and its environs, giving the Havens a distinctly [falathrim|E] character.\n\nThe southern of the two havens was the abode of Cirdan and his shipwrights, and home to the great drydocks whence came the ships that sailed into the [uttermostwest|E]."
+
   building_type_wonder_harlond_01:0 "Haven of Harlond"
   #building_type_wonder_harlond_01_desc:0 ""
   building_wonder_harlond_01:0 "Haven of Harlond"
@@ -1575,7 +1644,7 @@
   building_type_wonder_himring_01:0 "Himring"
   #building_type_wonder_himring_01_desc:0 ""
   building_wonder_himring_01:0 "Fortress of Himring"
-  building_wonder_himring_01_desc:0 "The Fortress of Himring was a masterpiece of Noldorin defensive design, built atop the hill of the same name. Ringed with bastions and thick crenellated walls, its square keep was said to be impregnable so long as any remained within to defend it.\n\nBuilt by Maedhros, it was the keystone of the defensive line maintained by the sons of Fëanor known as the March of Maedhros. The forces of [morgothcharacter|E] never took it in battle, but after the disaster of the Nirnaeth Arnoediad the Fëanorians no longer had the numbers to hold the March, and they fled south to Amon Ereb. The dread reputation of Maedhros made all but the most brave of [orcs|E] or Morgoth’s lieutenants unwilling to approach the abandoned tower, which remained unspoiled in the following years.\n\nFollowing the Drowning of [beleriand|E] the crown of the hill and its fortress remained above the waves, and was soon reoccupied by Fëanorian [noldorelves|E], some from their holdout on Dol Ereb and others escaping Morgoth’s thralldom." 
+  building_wonder_himring_01_desc:0 "The Fortress of Himring was a masterpiece of Noldorin defensive design, built atop the hill of the same name. Ringed with bastions and thick crenellated walls, its square keep was said to be impregnable so long as any remained within to defend it.\n\nBuilt by Maedhros, it was the keystone of the defensive line maintained by the sons of Fëanor known as the March of Maedhros. The forces of [morgothcharacter|E] never took it in battle, but after the disaster of the Nirnaeth Arnoediad the Fëanorians no longer had the numbers to hold the March, and they fled south to Amon Ereb. The dread reputation of Maedhros made all but the most brave of [orcs|E] or Morgoth’s lieutenants unwilling to approach the abandoned tower, which remained unspoiled in the following years.\n\nFollowing the Drowning of [beleriand|E] the crown of the hill and its fortress remained above the waves, and was soon reoccupied by Fëanorian [noldorelves|E], some from their holdout on Amon Ereb and others escaping Morgoth’s thralldom." 
 
   building_type_wonder_barad_caranthir_01:0 "Barad Caranthir"
   #building_type_wonder_barad_caranthir_01_desc:0 ""
@@ -1602,20 +1671,20 @@
   building_wonder_elostirion_01:0 "Elostirion"
   building_wonder_elostirion_01_desc:0 "The White Towers were built on the Emyn Beraid as a gift to [elendil|E]. Tallest and westernmost of them was Elostirion, and in its upmost chamber Elendil set one of the [palantir|E] that he had brought over the sea.\n\nUnlike the other seeing-stones this [palantirone|E] could not communicate with the others, but rather looked westward across the Sundering Seas, and the worthy could catch in it a glimpse of fair [toleressea|E].\n\nEven into the last years of the [thirdage|E] Elostirion would be visited by wandering companies of [elves|E] seeking to gaze towards [valinor|E]."
   
-  ### IMLADRIS ###
+### IMLADRIS ###
   building_type_wonder_house_of_elrond:0 "Imladris"
   building_type_wonder_house_of_elrond_desc:0 ""
   building_wonder_house_of_elrond:0 "House of Elrond"
   building_wonder_house_of_elrond_desc:0 "#TOLKIENQUOTE: “That house was, as Bilbo had long ago reported, 'a perfect house, whether you like food or sleep, or story-telling or singing, or just sitting and thinking best, or a pleasant mixture of them all'. Merely to be there was a cure for weariness, fear, and sadness.” #!\n\n#QUOTEDCHARACTER ― The Fellowship of the Ring, "Many Meetings"#!\n\nThe Last Homely House east of the Sea, the House of Elrond was constructed as the abode of the Elven-lord of the same name, Elrond Halfelven. Situated among the vale of Imladris and its waterfalls, the House was a place of respite, learning, and lore. Constructed with all the wisdom of the High-Elves of the Uttermost West, it seemed an echo of the peace of [valinor|E] itself.\n\nThroughout the Second and the Third Ages, the House endured, despite Imladris's own waxing and waning. Even in the Fourth Age, when its gardens stood abandoned, the [dunedain|E] held it in high reverence, and it was long a memory of the wisdom of the Elder Days."
 
-  ### Eregion ###
+### Eregion ###
   building_type_wonder_mirdairond:0 "Ost-in-Edhil"
   building_type_wonder_mirdairond_desc:0 "'City of the Eldar', Ost-in-Edhil was the great city of the [noldorelves|E] in eastern [eriador|E], the capital of the realm of [eregion|E]. Founded originally by [celebrimbor|E] and his followers around [secondage|E] 750, the city was never truly finished, but kept growing throughout its entire existence. \n\nAn orderly city, it could be divided into many different districts. Of these the most well-known was the Ardhlarem (High-City), located in the center and on its highest hill. Here was located the greatest homes of the city, government buildings, Durin's Estate, the Prince's House, as well as the Mírdairond.\n\nThe city was destroyed by [sauroncharacter|E] in the [waroftheelvesandsauron|E], leaving only ruins and memories behind."
   building_wonder_mirdairond:0 "Mírdairond"
   building_wonder_mirdairond_desc:0 "The Mírdairond (Halls of the Jewel-Smiths) was sometimes considered a 'city within the city'. Located in the Ardhlarem district at Eregion's heart, it was a sprawling palatial complex of libraries, laboratories, debate halls, classrooms, forges and craftsmen shops. Many claimed that there was never before or since such a gathering of the craftsmen of the Eldar in the Hither Lands, for this was the home of the legendary Gwaith-i-Mírdain.\n\nTheir halls were open to all aspirants, and it was considered one of the greatest honors to be awarded a place among their number. The Mírdain hosted classes and debates for all who wished to join them, and fostered a vibrant and dynamic intellectual center. It was not uncommon to find apprentices running to and fro, or to find Dwarves from nearby [khazaddum|E] in its halls.\n\nPatronized, established, and led by [celebrimbor|E] himself, the works wrought in these halls are of no less legend than the makers themselves, and created fabulous wealth and prestige for all involved."
 
 
-  ### SHIRE & BREELAND WONDERS ###
+### SHIRE & BREELAND WONDERS ###
   # The Prancing Pony
   building_wonder_prancing_pony:0 "The Prancing Pony"
   building_type_wonder_prancing_pony:0 "The Prancing Pony"
@@ -1624,7 +1693,7 @@
 
 
 
-  ### ROHAN WONDERS ###
+### ROHAN WONDERS ###
   # Edoras
   building_type_wonder_edoras_01:0 "Edoras"
   building_type_wonder_edoras_01_desc:0 "The capital of [rohan|E] for generations, Edoras remains the seat of the House of Eorl."
@@ -1700,7 +1769,11 @@
   building_wonder_wulfborg_03:0 "Tower of Tapestries"
   building_wonder_wulfborg_03_desc:0 "An imposing tower which looms over the great hall and keep, the Tower of Tapestries contain many fine threadworks which detail the history of the hall and the Frecalings. In it as well are many great banners and wall-rugs that show the wide range of tributes that flow into Wulfborg from the other chieftains of Dunland - and beyond."
   
-  
+  #Red Dragon's Shrine
+  building_type_wonder_dunland_shrine:0 "Shrine of the Red Dragon"
+  building_type_wonder_dunland_shrine_desc:0 "A wooden shrine dedicated to a mysterious red-scaled [dragon|El] that is said to once have haunted the vale of Thrór's Coomb."
+  building_wonder_dunland_shrine:0 "Shrine of the Red Dragon"
+  building_wonder_dunland_shrine_desc:0 "Legends and old tales tell of a [dragon|El] that, in ages long past, haunted the vale of Thrór's Coomb. The name of this dragon has been lost to time. Now, the mighty creature is simply know as "The Red" among those few who visit the shrine and tend to it, lest it fall into disrepair. "
   
   ### WHITE MOUNTAINS WONDERS ###
   # Paths of the Dead
@@ -1731,12 +1804,12 @@
   building_wonder_nilulonde_02:0 "Nîlûlondê, Seat of the Bâitha’n-Kadîr"
   building_wonder_nilulonde_02_desc:0 "For years a decentralized body summoned ad-hoc in different cities for matters concerning the whole kingdom, at last the capital holds a building sufficient for the great [baitha|E], the [bellakari|E] Senate. In its vast halls are immense bureaucratic and administrative apparatuses, all working to order and lead the realm of [bellakar|E] in conjunction with the King."
   building_wonder_nilulonde_03:0 "Nîlûlondê, Silver Jewel of Bellakar"
-  building_wonder_nilulonde_03_desc:0 "Though the mending be longer than the making or the marring, Nîlûlondê stands triumphant, a beacon and beddrock of hope in the possibility of [conceptmankind|E] - to walk forward hand in hand into the future, no longer divided. Their differences sunder not the people of [bellakar|E], but unite and strengthen them, united in their vision for a better world. The dream of Bellakar shall never fail, so long as that ideal lives on."
+  building_wonder_nilulonde_03_desc:0 "Though the mending be longer than the making or the marring, Nîlûlondê stands triumphant, a beacon and bedrock of hope in the possibility of [conceptmankind|E] - to walk forward hand in hand into the future, no longer divided. Their differences sunder not the people of [bellakar|E], but unite and strengthen them, united in their vision for a better world. The dream of Bellakar shall never fail, so long as that ideal lives on."
   
   building_type_wonder_urud_an_khibil_monestary:0 "Monastery of Urud an-Khibil"
   building_type_wonder_urud_an_khibil_monestary_desc:0 "The monestary founded by Imrathôr, the first Izindubêth, is one of the most revered in the Batan an-Izindi."
   building_wonder_urud_an_khibil_monestary:0 "Monestary of Urud an-Khibil"
-  building_wonder_urud_an_khibil_monestary_desc:0 "The monastery founded by Imrathôr, the first Izindubêth, this site is one of the most revered by the pious of the Batan an-Izindi. Within its high walls, those who wish to dedicate themselves to contemplation of [erutheone|E] seclude themselves, and the great library contains the writings of Imrathôr. The highest chambers are held by the current Izindubêth, with those seeking his counsels and judgements arriving daily. From here theology is discussed, debated, and dissemenated to the [faithfulshort|E]."
+  building_wonder_urud_an_khibil_monestary_desc:0 "The monastery founded by Imrathôr, the first Izindubêth, this site is one of the most revered by the pious of the Batan an-Izindi. Within its high walls, those who wish to dedicate themselves to contemplation of [erutheone|E] seclude themselves, and the great library contains the writings of Imrathôr. The highest chambers are held by the current Izindubêth, with those seeking his counsels and judgements arriving daily. From here theology is discussed, debated, and dissemenated to the [faithful|E]."
   
   building_type_wonder_ishtra_shrine:0 "High Shrine of Îshtra"
   building_type_wonder_ishtra_shrine_desc:0 "The High Shrine of Îshtra is the centre of the Cult of Îshtra and of life in Bur Esmer."
@@ -1749,7 +1822,7 @@
   building_wonder_palace_joam_desc:0 "Once built upon plunder and exortation, the glorious palace of Joam-Tuv now rises once more upon the city which bears his name. In it, the nobility of Qadjajar feast, laugh, and play games, and its many halls and tall spires are a symbol of resurgent Tedjin power."
   
   building_type_wonder_rophazan_mines:0 "Rôphazan Mines" # Rôphazan is a rough approximation for 'whitegold', Electrum
-  building_type_wonder_rophazan_mines_desc:0 "In the ancient days, [bellakar|E] was also known informally to the colonial [numenoreans|E] as Pharazain, 'the Golden Land'. However, this is slight misnomure, as the metal harvested in the mountains of southern Bellakar is more electrum, known also as whitegold, Rôphazan. However, while many veins have been utterly plumbed in the long millenia of settlement and colonization, our engineers believe with proper investment, the production of electrum could be revived here."
+  building_type_wonder_rophazan_mines_desc:0 "In the ancient days, [bellakar|E] was also known informally to the colonial [numenoreans|E] as Pharazâin, 'the Golden Land'. However, this is a slight misnomer, as the metal harvested in the mountains of southern Bellakar is more electrum, known also as whitegold, Rôphazan. However, while many veins have been utterly plumbed in the long millenia of settlement and colonization, our engineers believe with proper investment, the production of electrum could be revived here."
   building_wonder_rophazan_mines:0 "Rôphazan Mining Complex"
   building_wonder_rophazan_mines_desc:0 "A great complex of mine shafts, carts, and advanced metallurgy furnaces to refine the ore, the Rôphazan mines churn forth great quantities of whitegold, a seeming never-ending vein." 
   
@@ -1761,7 +1834,7 @@
   building_type_wonder_beacon_sornomar:0 "Beacon of Sornomar"
   building_type_wonder_beacon_sornomar_desc:0 "Built high upon nigh-impregnable rock, the Beacon of Sornomar has long been warning and welcome to weary sailors approaching the Cape of Mardruak."
   building_wonder_beacon_sornomar:0 "Beacon of Sornomar"
-  building_wonder_beacon_sornomar_desc:0 "Once the Númenórean colony of Sornomar, Narîk-Zadan holds a strategic position on the Cape of Mardrûak, built high on the impregnable rock that allowed it to survive the [downfall|E]. During the reign of Tar-Ancalimon a great lighthouse was raised with much toil on a coastal islet. \n\nConstructed from a gleaming red stone, its ingenious crown contains walls of reflective glass that can be seen for many a league. It has remained as a welcome and warning to sailors across the centuries, unbroken and unweathered. A stout stone bastion at its base, added by the Corsairs, defends the harbour of Narîk-Zadan."
+  building_wonder_beacon_sornomar_desc:0 "Once the [numenorean|E] [colony|E] of Sornomar, Narîk-Zadan holds a strategic position on the Cape of Mardrûak, built high on the impregnable rock that allowed it to survive the [downfall|E]. During the reign of Tar-Ancalimon a great lighthouse was raised with much toil on a coastal islet. \n\nConstructed from a gleaming red stone, its ingenious crown contains walls of reflective glass that can be seen for many a league. It has remained as a welcome and warning to sailors across the centuries, unbroken and unweathered. A stout stone bastion at its base, added by the Corsairs, defends the harbour of Narîk-Zadan."
 
   building_type_wonder_shipyards_nykkea:0 "Shipyards of Nykkea"
   building_type_wonder_shipyards_nykkea_desc:0 "A centuries-old Corsair haven, originally founded by Umbarean craftsmen under the direction of the occupying Tedjin. Many a ship harassing the trade fleets crossing the Great [belegaer_sea|E] were first laid down in the nefarious shipyards of Nykkea."
@@ -1776,12 +1849,12 @@
   building_type_wonder_haven_korlea:0 "Great Haven of Korlea"
   building_type_wonder_haven_korlea_desc:0 "The vast quays of Korlea, built on the drowned ruins of the original city, from which the Tumakveh kings project their naval power in times of need."
   building_wonder_haven_korlea:0 "Great Haven of Korlea"
-  building_wonder_haven_korlea_desc:0 "The foundations of Korlea were laid in 1975 of the [secondage|E], making it among the earliest Númenórean havens in [bellakar|E]. The city’s strategic location on the Bay of Tulwang allowed it to amass great wealth and influence throughout the region, and its role as a royal garrison made it the primary centre for the [kingsmen|E] and [melkorcharacter|E]-worship in Bellakar. \n\nKorlea was destroyed in the tulmet of the [downfall|E], and was subsequently resettled by [faithfulshort|E] Adûnâi from across Bellakar, remaining a key centre of the Adûnâic culture and old Faithful traditions into the late [thirdage|E]. Upon the partly drowned ruins of the old city great quays were built, from which the Tumakveh kings project their naval power in times of need."
+  building_wonder_haven_korlea_desc:0 "The foundations of Korlea were laid in 1975 of the [secondage|E], making it among the earliest Númenórean havens in [bellakar|E]. The city’s strategic location on the Bay of Tulwang allowed it to amass great wealth and influence throughout the region, and its role as a royal garrison made it the primary centre for the [kingsmen|E] and [melkorcharacter|E]-worship in Bellakar. \n\nKorlea was destroyed in the tulmet of the [downfall|E], and was subsequently resettled by [faithful|E] Adûnâi from across Bellakar, remaining a key centre of the Adûnaic culture and old Faithful traditions into the late [thirdage|E]. Upon the partly drowned ruins of the old city great quays were built, from which the Tumakveh kings project their naval power in times of need."
 
   building_type_wonder_pillar_urez:0 "Pillar of Ûrêzâyaneth"
   building_type_wonder_pillar_urez_desc:0 "A great marble pillar overlooking the sea, raised by the citizens of Ûrêzâyaneth after the [downfall|E] as a sign of their submission to [manwecharactershort|E] and in memory of their drowned homeland."
   building_wonder_pillar_urez:0 "Pillar of Ûrêzâyaneth"
-  building_wonder_pillar_urez_desc:0 "Founded as Osto Nórëanarva in 1644 of the [secondage|E], Ûrêzâyaneth became the jewel of the [bellakari|E] coast. The main entrepôt for the trade route from Nîlûlondê, Ûrêzâyaneth’s Adûnâim accumulated such wealth that even the facades of their grand buildings would often be clad in whitegold from the Rôphazan Mines. All this was brought to ruin by the earthquakes that accompanied the [downfall|E]. \n\nÛrêzâyaneth was restored in reduced form, it's stonework raised by craftsmen of lesser skill. And though the Adûnâim remained prideful, as a sign of their submission to [manwecharactershort|E] and in memory of their drowned homeland they raised a great marble pillar overlooking the [belegaer_sea|E]. This was surmounted by an eagle facing West, cast from whitegold recovered from the ruins of the old city. Even now the pillar remains, a source of great pride to the [faithful|E] of [bellakar|E]."
+  building_wonder_pillar_urez_desc:0 "Founded as Osto Nórëanarva in 1644 of the [secondage|E], Ûrêzâyaneth became the jewel of the [bellakari|E] coast. The main entrepôt for the trade route from Nîlûlondê, Ûrêzâyaneth’s Adûnâi accumulated such wealth that even the facades of their grand buildings would often be clad in whitegold from the Rôphazan Mines. All this was brought to ruin by the earthquakes that accompanied the [downfall|E]. \n\nÛrêzâyaneth was restored in reduced form, it's stonework raised by craftsmen of lesser skill. And though the Adûnâi remained prideful, as a sign of their submission to [manwecharactershort|E] and in memory of their drowned homeland they raised a great marble pillar overlooking the [belegaer_sea|E]. This was surmounted by an eagle facing West, cast from whitegold recovered from the ruins of the old city. Even now the pillar remains, a source of great pride to the [faithful|E] of [bellakar|E]."
 
   ### Bozisha-Miraz WONDERS ###
   building_type_wonder_bozisha_dar_port_01:0 "The Bôzisha-Dâr"
@@ -1799,9 +1872,9 @@
   building_type_wonder_temple_city_of_pred_01:0 "Temple-City of Prêd"
   building_type_wonder_temple_city_of_pred_01_desc:0 "The ancient temple-city of Prêd has been since time immemorial the heart of the Ônu shaman orders. In the days of their height, the Honnin Druedain raised great temples of shining white stone here in the names of the gods. Though much knowledge has been lost, the temples remain, though much consumed by the jungle, and the Ônu still gather here."
   building_wonder_temple_city_of_pred_01:0 "Consumed by the Jungle"
-  building_wonder_temple_city_of_pred_01_desc:0 "Prêd's great temples remain ensnarled in the jungle, but some of them remain usable. The Ônu carefully preserve what remains free of the jungle."
+  building_wonder_temple_city_of_pred_01_desc:0 "Prêd's great temples remain ensnarled in the forest, but some of them remain usable. The Ônu carefully preserve what remains free of the jungle."
   building_wonder_temple_city_of_pred_02:0 "Reclaimed from the Jungle"
-  building_wonder_temple_city_of_pred_02_desc:0 "With much labour and work, the ancient temples of Prêd have been reclaimed from the jungle's grip. The rites of the Ônu resound day and night throughout the city, the Honnin rejoicing in their worship of the gods restored to their ancient glory."
+  building_wonder_temple_city_of_pred_02_desc:0 "With much labour and work, the ancient temples of Prêd have been reclaimed from the forest's grip. The rites of the Ônu resound day and night throughout the city, the Honnin rejoicing in their worship of the gods restored to their ancient glory."
   building_wonder_temple_city_of_pred_03:0 "Prêd, the Heart of the Honnin"
   building_wonder_temple_city_of_pred_03_desc:0 "A thing once thought impossible, the Honnin have recovered to the point where Prêd is not merely reclaimed, but actually growing in size once more. The once dwindling Honnin people now throng the streets, and the Ônu consecrate new temples. For the first time in over 3000 years, the Druedain are erecting new buildings of stone."
   
@@ -1809,16 +1882,16 @@
   building_type_wonder_lighthouse_of_adunazain:0 "Grand Lighthouse of Adûnazâin"
   building_type_wonder_lighthouse_of_adunazain_desc:0 "The ancient Númenórean lighthouse that dominates the approach into the port of Kadar an-Khâradûn"
   building_wonder_lighthouse_of_adunazain:0 "Silverine Lighthouse"
-  building_wonder_lighthouse_of_adunazain_desc:0 "Made of marble with hints of silver running through it, the lighthouse of Adûnazâin is one of the most imposing examples of colonial Númenórean arcitechture to have survived since the late [secondage|E]. Built in S.A. 2251 to commemorate the 1000 years anniversary of the establishment of Londë Anárionva (Kadar an-Khâradûn), it is built on an artifical island in the bay of Kurryian. \n\nDespite the sacking of Kadar an-Khâradûn in the Second Soriyan War (1257-1258 T.A.), the lighthouse was spared the destruction on account of its monumental size and lack of threat to the Soriyan corsairs."
+  building_wonder_lighthouse_of_adunazain_desc:0 "Made of marble with hints of silver running through it, the lighthouse of Adûnazâin is one of the most imposing examples of colonial [numenorean|E] architecture to have survived since the late [secondage|E]. Built in S.A. 2551 to commemorate the one thousand year anniversary of the establishment of Londë Anárionva (Kadar an-Khâradûn), it is built on an artifical island in the bay of Kurryian. \n\nDespite the sacking of Kadar an-Khâradûn in the Second Soriyan War (1257-1258 T.A.), the lighthouse was spared the destruction on account of its monumental size and lack of threat to the Soriyan corsairs."
   
-  building_type_wonder_marath_kharadune_01:0 "Marath Kharadûne"
+  building_type_wonder_marath_kharadune_01:0 "Marath Kharadûnê"
   building_type_wonder_marath_kharadune_01_desc:0 "The ancient citadel of Zadan an-Adûn built upon the city heights is a twice-walled fortress with an imposing tower rising from the centre, containing enough buildings to be a city district in and of itself."
-  building_wonder_marath_kharadune_01:0 "Marath Kharadûne In Disrepair"
-  building_wonder_marath_kharadune_01_desc:0 "Unfortunately, as [anbalkumagan|E]'s fortunes have waxed and waned, the once mighty citadel which was the seat of its kings and military leaders has fallen into disrepair. While still usable, it would be hard-pressed in the event of a siege, and is an embarrassment to the pride of the Anbalûkkhôri. \n\nThe general public tends to avoid it, and only those required to spend their time here."
-  building_wonder_marath_kharadune_02:0 "District of Marath Kharadûne"
-  building_wonder_marath_kharadune_02_desc:0 "Before the fortress proper can be rehabilitated, the population of the capital must stop avoiding the district. Through proper financial incentivies and... impressing... upon the nobility the importance of having abodes in the district, we have managed to revitalize the town which surrounds and inhabits the first ring of the fortress. While far from restored to its former glory, at least it is no longer an abandoned husk, a testament to fallen glory."
+  building_wonder_marath_kharadune_01:0 "Marath Kharadûnê In Disrepair"
+  building_wonder_marath_kharadune_01_desc:0 "Unfortunately, as [anbalkumagan|E]'s fortunes have waxed and waned, the once mighty citadel which was the seat of its kings and military leaders has fallen into disrepair. While still usable, it would be hard-pressed in the event of a siege, and is an embarrassment to the pride of the Anbalûkkhôri. \n\nThe general public tends to avoid it, and any activity in the district consists only of individuals who are required to spend their time here."
+  building_wonder_marath_kharadune_02:0 "District of Marath Kharadûnê"
+  building_wonder_marath_kharadune_02_desc:0 "Before the fortress proper can be rehabilitated, the population of the capital must stop avoiding the district. Through proper financial incentivies and... impressing... upon the nobility the importance of having abodes in the district, we have managed to revitalize the town which surrounds and inhabits the first ring of the fortress. While far from being restored to its former glory, at least it is no longer an abandoned husk, a testament to fallen glory."
   building_wonder_marath_kharadune_03:0 "The Red Citadel"
-  building_wonder_marath_kharadune_03_desc:0 "Made of red stone, the imposing citadel of Zadan an-Adûn is fortress, palace, and public forum all in one. Within the first wall is located public areas - markets, libraries, theaters, and other important facilities of public life. The highest nobility of the realm maintain palaces in this district, and competition is fierce.\n\nWithin the second wall can be found buildings housing the offices of royal officials and suites for visiting dignataries in luxurious comfort. \n\nWithin the citadel tower itself, rising 300 feat above the ground, the throne room can be found, as well as the libraries and armouries bearing relics of [anbalkumagan|E]'s [numenorean|E] heritage."
+  building_wonder_marath_kharadune_03_desc:0 "Made of red stone, the imposing citadel of Zadan an-Adûn is fortress, palace, and public forum all in one. Within the first wall are located the public areas - markets, libraries, theaters, and other important facilities of public life. The highest nobility of the realm maintain palaces in this district, and competition is fierce.\n\nWithin the second wall, buildings housing the offices of royal officials and luxurious suites for visiting dignataries can be found. \n\nWithin the citadel tower itself, rising 300 feet above the ground, the throne room can be found, as well as the libraries and armouries bearing relics of [anbalkumagan|E]'s [numenorean|E] heritage."
   
   ### Tulwang WONDERS ###
 
@@ -1862,6 +1935,10 @@
   building_wonder_dale_01_desc:0 "Dale was situated in the valley between the south-western and south-eastern arms of the Lonely Mountain, nestled in as sharp U-shaped bend of the River Running. It was known as a merry town that traded, mainly in food-supplies for the skills and craft-pieces of the Dwarves. Dale's toy market was the wonder of the North, and the town was renowned for its bells."
   # building_type_wonder_framsburg_01:0 ""
   # building_wonder_framsburg_01_desc:0 ""
+  
+  building_type_wonder_four_winds_hall:0 "Hall of the Four Winds"
+  building_wonder_four_winds_hall:0 "Hall of the Four Winds"
+  building_wonder_four_winds_hall_desc:0 "Built by the most influencial of the chieftains amongst the Gramas tribesmen, the Hall of the Four Winds sits atop a natural cliff overlooking the highlands east of the Lonely Mountain. \n\nIt is said that once a year, the Four Winds - North, South, East and West - gather here to lend their wisdom to those who would dare to listen."
 
   ### Anduin Vale Wonders ###
   # The Carrock
@@ -1950,14 +2027,14 @@
   building_wonder_amarthrynd_02:0 "Ungolthrynd"
   building_wonder_amarthrynd_02_desc:0 "After the abandonment of Amarthrynd during Thranduil’s evacuation to the northeast of the forest, the once light-filled caverns have become a dank and foetid place, inhabited only by giant spiders. \n\nWhere once there was song, there is now only the chittering of chelicerae. The fragrant passages where the Elvenking Oropher once walked are now deep in accumulated filth, and the hall that once held his throne is now a brood-chamber piled-high with pulsating egg-sacs."
   building_wonder_amarthrynd_03:0 "Amarthrynd Renewed"
-  building_wonder_amarthrynd_03_desc:0 "Amarthrynd has been renewed, and is once again a beacon and stronghold of the Woodland Folk of [greenwoodshort|E]. The last of the great spiders have been driven from the caverns, their webs put to the torch, and with great labour the elves have cleansed and hallowed this place in honour of Oropher. \n\nThe great and glimmering ‘Caves of Fate’, sacred to the [silvanelves|E] [elves|E] long before the arrival of the Elvenkings, are once again a site of pilgrimage -  for there are those who believe that within them can be heard an echo of the Great Song from which the [ainurgods|E] spun the very world."
+  building_wonder_amarthrynd_03_desc:0 "Amarthrynd has been renewed, and is once again a beacon and stronghold of the Woodland Folk of [greenwoodshort|E]. The last of the great spiders have been driven from the caverns, their webs put to the torch, and with great labour the elves have cleansed and hallowed this place in honour of Oropher. \n\nThe great and glimmering ‘Caves of Fate’, sacred to the [silvanelves|E] long before the arrival of the Elvenkings, are once again a site of pilgrimage -  for there are those who believe that within them can be heard an echo of the Great Song from which the [ainurgods|E] spun the very world."
 
 
   #Aradhrynd
   building_type_wonder_aradhrynd:0 "Aradhrynd"
   building_type_wonder_aradhrynd_desc:0 "The Halls of the Elvenking, built in the image of Menegroth of old."
   building_wonder_aradhrynd:0 "Aradhrynd"
-  building_wonder_aradhrynd_desc:0 "Oropher came among the [silvanelves|E] [elves|E] of [greenwoodshort|E] determined to distance himself from the legacy of the Great Journey, and resume the simple lifestyle practised by the Elves before the [valargods|E] called them West. Yet at heart the Elvenking and his heir Thranduil remained [sindarelves|E] of Doriath. When the time came for Thranduil to build a capital in the north of [greenwoodshort|E] it was Elu Thingol’s great halls of Menegroth that inspired him. And like the Greycloak, Thranduil enlisted the [dwarves|E] to delve and shape his subterranean capital. \n\nProtected by stone doors secured by cunning magic, Aradhyrnd is both a mighty refuge and the heart of the Woodland Realm. Its many halls, supported by pillars of living rock, contain great store of goods and treasure. Beneath them lie dungeons in which unwanted visitors can be forgotten, and cellars built over streams leading into the Forest River, giving Aradhyrnd access to the river trade with [dale|E] and beyond."
+  building_wonder_aradhrynd_desc:0 "Oropher came among the [silvanelves|E] of [greenwoodshort|E] determined to distance himself from the legacy of the Great Journey, and resume the simple lifestyle practised by the Elves before the [valargods|E] called them West. Yet at heart the Elvenking and his heir Thranduil remained [sindarelves|E] of Doriath. When the time came for Thranduil to build a capital in the north of [greenwoodshort|E] it was Elu Thingol’s great halls of Menegroth that inspired him. And like the Greycloak, Thranduil enlisted the [dwarves|E] to delve and shape his subterranean capital. \n\nProtected by stone doors secured by cunning magic, Aradhyrnd is both a mighty refuge and the heart of the Woodland Realm. Its many halls, supported by pillars of living rock, contain great store of goods and treasure. Beneath them lie dungeons in which unwanted visitors can be forgotten, and cellars built over streams leading into the Forest River, giving Aradhyrnd access to the river trade with [dale|E] and beyond."
 
   ### Lothlorien Wonders ###
   
@@ -2060,12 +2137,12 @@
   building_type_wonder_zelemabkan:0 "Zelemabkhan"
   building_type_wonder_zelemabkan_desc:0 ""
   building_wonder_zelemabkan:0 "Zelemabkhan"
-  building_wonder_zelemabkan_desc:0 " "Zelemabkhan" or "The Litany of Stone" refers to a monastery atop Mount Dolmed, the birthplace of the Broadbeams and Firebeards. Pilgrims who brave the arduous journey up the 1000 steps can pay respects to the Greybeards, Master Stone-Singers and caretakers of the holy mountain. Prospective Stone-Singers make the trek from all over Dwarfdom to learn at the feet of these masters."
+  building_wonder_zelemabkan_desc:0 "'Zelemabkhan' or "The Litany of Stone" refers to a monastery atop Mount Dolmed, the birthplace of the Broadbeams and Firebeards. Pilgrims who brave the arduous journey up the 1000 steps can pay respects to the Greybeards, Master Stone-Singers and caretakers of the holy mountain. Prospective Stone-Singers make the trek from all over Dwarfdom to learn at the feet of these masters."
 
   building_type_wonder_sunset_caverns:0 "Sunset Caverns"
   building_type_wonder_sunset_caverns_desc:0 ""
   building_wonder_sunset_caverns:0 "Sunset Caverns"
-  building_wonder_sunset_caverns_desc:0 "'Ibriz-Garân' or the Sunset Caverns was discovered by Khathzâ "The Watcher", one of the first of Uri's house, in the days of The [twotrees|E]. As the sunlight flows through the cracks it refracts off the transparent crystals native to the cave, bathing the caverns in a resplendent golden hue. It is said that this spectacle moved Khathzâ to tears of awe, driving him to make his home in the caverns. From that day forward he and his kin took the house name, "Khathzâ-Ibriz" translated as "Eternal Sunset". "
+  building_wonder_sunset_caverns_desc:0 "'Ibriz-Garân' or "The Sunset Caverns" was discovered by Khathzâ "The Watcher", one of the first of Uri's house, in the days of The [twotrees|E]. As the sunlight flows through the cracks it refracts off the transparent crystals native to the cave, bathing the caverns in a resplendent golden hue. It is said that this spectacle moved Khathzâ to tears of awe, driving him to make his home in the caverns. From that day forward he and his kin took the house name, "Khathzâ-Ibriz" translated as "Eternal Sunset". "
 
   building_type_wonder_belegost_broken:0 "Belegost Broken"
   building_type_wonder_belegost_broken_desc:0 ""
@@ -2110,7 +2187,7 @@
   building_type_wonder_caverns_of_farewell:0 "Caverns of Farewell"
   building_type_wonder_caverns_of_farewell_desc:0 ""
   building_wonder_caverns_of_farewell:0 "Caverns of Farewell"
-  building_wonder_caverns_of_farewell_desc:0 "Stiffbeard Dwarves hold the belief that the only way to enter the halls of [mahalcharacter|E] for their body to be intered in the ancestral mountain of their house. Following their exile from the royal family, the Stiffbeards of the Iron Hills have devised a series of waystations on a funerary procession back to the home of their ancestors. The Caverns of Farewell serve as the last stop before the treacherous journey to the ancestral mountain, as well as the final chance for family members to bid farewell."
+  building_wonder_caverns_of_farewell_desc:0 "Stiffbeard Dwarves hold the belief that the only way to enter the halls of [mahalcharacter|E] is for their body to be interred in the ancestral mountain of their house. Following their exile from the royal family, the Stiffbeards of the Iron Hills have devised a series of waystations on a funerary procession back to the home of their ancestors. The Caverns of Farewell serve as the last stop before the treacherous journey to the ancestral mountain, as well as the final chance for family members to bid farewell."
 
   building_type_wonder_endless_stairs:0 "Endless Stairs"
   building_type_wonder_endless_stairs_desc:0 ""
@@ -2123,7 +2200,7 @@
   building_wonder_mirrormere_desc:0 "Kheled-zâram, in the common tongue Mirrormere, was a deep dark lake located in the Dimrill Dale, less than a mile below the East-gate of [khazaddum|E]. The lake was long and oval with a shape like a great spear-head. The deep water of Mirrormere was dark blue like a clear evening sky seen from a lamp-lit room and had a still surface. \n\nClose to the southern end of the lake stood a column inscribed with runes with a broken top, which was called Durin's Stone. This stone was erected by [durin|E], built on the spot where he gazed into the lake and saw a vision of stars set in a crown above his head. \n\nA short distance below the lake was a spring with clear ice-cold water that was the source of the Celebrant."
 
   building_type_wonder_doors_of_durin:0 "West-gate of Moria"
-  building_type_wonder_doors_of_durin_desc:0 "While the eastern gate of [khazaddum|E] has always been the primary entry into the realm, there are arguments to be made a western gate would be of great use to facilitate trade with the lands of [eriador|E].]
+  building_type_wonder_doors_of_durin_desc:0 "While the eastern gate of [khazaddum|E] has always been the primary entry into the realm, there are arguments to be made a western gate would be of great use to facilitate trade with the lands of [eriador|E]."
   building_wonder_doors_of_durin:0 "Doors of Durin"
   building_wonder_doors_of_durin_desc:0 "$game_concept_doorsofdurin_desc$"
 
@@ -2136,55 +2213,11 @@
   building_type_wonder_durin_throne_desc:0 "The ancient seat of Durin's Folk, from here the Kings of the Longbeards reigned over the great mountain-kingdom of [khazaddum|E]."
   building_wonder_durin_throne:0 "Throne of Durin"
   building_wonder_durin_throne_desc:0 "The original throne of Durin was simple, carved from the very mountain itself when the great hall was excavated. Legend says that upon it, Durin could commune with Zirakzigil and even Mahal himself.\n\nAs the Longbeards grew in numbers and prosperity, the Throne too grew, becoming ever larger and grander, set upon a great dais. Beneath it were thrones for the Queen, as well as the Princes of Durin's Folk. It was adorned with the most splendid of jewels, mithril, ancient wood from the depths of the Greenwood, and marvelous colorful stones from the distant reaches of the world.\n\nThis glorious throne was destroyed in the awakening of the Balrog, which would broke no such place of authority in its realm. Yet legend says that the original throne endured, scorched and stripped of ostentation. Awaiting the day when Durin would return to it."
-
-  ### Below is some old unused stuff from the mod's earliest days than can now probably be deleted - RedArkady ###
   
-  ### STABLES ###
-  # NOTE from Matt: the base game should have stables.
-  #  building_type_stables_01:0 "Stables"
-  #  building_type_stables_01_desc:0 "#F Stables are sturdy buildings with the sole purpose of housing and readying horses bred for war.#!"
-  #  # NOTE ^ edited from John Henry Eden
-  #  building_stables_01:0 "Wooden Stables"
-  #  building_stables_01_desc:0 "These suitable wooden stables are better than the houses of the local levies and are warm and dry when it rains. The adjoining shed is solely for the care of horses, supplied with sundry brushes and grooming tools."
-  #  # NOTE ^ written by Coffing
-  #  building_stables_02:0 "Horse Breeders"
-  #  building_stables_02_desc:0 "More than the buildings, the strength of a people’s horses is in their breed. To maintain and strengthen that bloodline a new corral is built along with structures for pregnant mares."
-  #  # NOTE ^ written by Coffing
-  #  building_stables_03:0 "Training Arena"
-  #  building_stables_03_desc:0 "A specialised corral for breaking wild stallions and training colts and fillies for use in war."
-  #  # NOTE ^ written by Coffing
-  #  building_stables_04:0 "Farrier"
-  #  building_stables_04_desc:0 "A small smithy for the production of horseshoes and the fitting and shoeing thereof."
-  #  # NOTE ^ written by Coffing
-  #  building_stables_05:0 "Armourer"
-  #  building_stables_05_desc:0 "The production of armour and shields to outfit riders for war is made possible through the construction of an armourer."
-  #  # NOTE ^ written by Coffing
-  #  # NOTE Alternative text: "Smithies in the employment of the crown forge weapons and armour for the royal guard and heavy horsemen, ensuring a steady supply of superior armaments." - edited from John Henry Eden
-  #  building_stables_06:0 "Riding Grounds"
-  #  building_stables_06_desc:0 "Riding grounds allow for young riders to gain experience in the art of war and acclimates horses to the stress of the battlefield."
-  #  # NOTE ^ written by Coffing
-  #  # NOTE Alternative text: "By having dedicated grounds for training and showcasing equestrian stunts in organised competitions, more riders are encouraged to train and join our banners." - edited from John Henry Eden
-  #  building_stables_07:0 "Smithies"
-  #  building_stables_07_desc:0 "The farrier and the armourer are expanded to include a general-purpose smithy for the production of weaponry and elaborate saddles."
-  #  # NOTE ^ written by Coffing
-  #  building_stables_08:0 "Royal Stables"
-  #  building_stables_08_desc:0 "A complex of buildings with dedicated rooms for each horse, a hall for their meals, rooms for equipment and stable hands and many racks filled with elaborate saddles and fine rugs for their warmth during winter."
-  #  # NOTE ^ edited from Coffing's and John Henry Eden's texts
-
-
-  # KHAND
-  #  building_type_caravanserai_01:0 "Small Caravanserai"
-  #  building_type_caravanserai_01_desc:0 "Minor caravan post, supporting the flow of commerce, information and people across the network of trade routes covering Khand and Harad."
-  #  building_type_caravanserai_02:0 "Medium Caravanserai"
-  #  building_type_caravanserai_02_desc:0 "Medium caravan post, supporting the flow of commerce, information and people across the network of trade routes covering Khand and Harad."
-  #  building_type_caravanserai_03:0 "Large Caravanserai"
-  #  building_type_caravanserai_03_desc:0 "Large caravan post, supporting the flow of commerce, information and people across the network of trade routes covering Khand and Harad."
-  #  building_caravanserai_01:0 "Small Caravanserai"
-  #  building_caravanserai_01_desc:0 "Minor caravan post, supporting the flow of commerce, information and people across the network of trade routes covering Khand and Harad."
-  #  building_caravanserai_02:0 "Medium Caravanserai"
-  #  building_caravanserai_02_desc:0 "Medium caravan post, supporting the flow of commerce, information and people across the network of trade routes covering Khand and Harad."
-  #  building_caravanserai_03:0 "Large Caravanserai"
-  #  building_caravanserai_03_desc:0 "Large caravan post, supporting the flow of commerce, information and people across the network of trade routes covering Khand and Harad."
+  building_type_wonder_greywatch:0 "Grey Bastion"
+  building_type_wonder_greywatch_desc:0 ""
+  building_wonder_greywatch:0 "Grey Bastion"
+  building_wonder_greywatch_desc:0 "When the [dwarves|E] first settled the northern mountains during the [firstage|E], they built a strong tower garrisoned by keen-eyed scouts to guard their mines against orcish raids. \n\nOver the centuries, the Grey Bastion was continuously maintained and extended, guarding the northern passage into the Iron Hills against any foe."
 
 ### Dwarven Buildings ###
 #Localization by Jauffre/Cairo/Nemcraft#
@@ -2510,7 +2543,8 @@
  #Dwarven Spears#
  building_type_dwarven_pike_barracks_01:0 "Pike Barracks"
  building_type_dwarven_pike_barracks_01_desc:0 "While the confines of the a delving are generally bereft of mounted riders to counter, [dwarves|E] have discovered another use for the spear wall as a means to deny access to a chokepoint."
- building_dwarven_pike_barracks_01:0 "Defensive Formations training"
+ #building_dwarven_pike_barracks_01:0 "Defensive Formations Training"
+ building_dwarven_pike_barracks_01:0 "Lockstep Formations"
  building_dwarven_pike_barracks_01_desc:0 "In the tight quarters of an underground tunnel, a spear formation can lock down an area and prevent entry into more vulnerable sections of a hold. By training speardwarves in this style of defense, they can maximize the effectiveness of their warriors."
  building_dwarven_pike_barracks_02:0 "A Keen Edge"
  building_dwarven_pike_barracks_02_desc:0 "[dwarven|E] craftsmen are renowned for their ability to hone a mere metal ingot into a lethal weapon of exacting sharpness. The edge of such a spear is able to pierce flesh and leather in a single thrust."
@@ -2548,7 +2582,7 @@
  building_dwarven_hi_barracks_06_desc:0 "The Blacksmiths of this hold have begun to slope armor in sch a way that most enemy attacks slide off it with ease."
  building_dwarven_hi_barracks_07:0 "Advanced Tactics"
  building_dwarven_hi_barracks_07_desc:0 "Commanders of this hold have been educated in the best way to utilize the combination of the shield wall and the Axedwarves, wringing the most effectiveness possible out of the combination."
- building_dwarven_hi_barracks_08:0 "Axes Honed, Swords Sharpened"
+ building_dwarven_hi_barracks_08:0 "Arms Honed and Sharp"
  building_dwarven_hi_barracks_08_desc:0 "Fierce training and maintenance has yielded a unit that is ready to defend the hold at a minutes notice."
  building_dwarven_hi_barracks_09:0 "Dwarven Steel"
  building_dwarven_hi_barracks_09_desc:0 "Blacksmiths of this hold have begun producing swords and axes woven with powerful magic and durability. The blades forged have a strange wavy design in the steel, the edges of these blades stay sharp for much longer than their less developed counterparts."
@@ -2594,7 +2628,7 @@
  building_dwarven_skirmisher_barracks_05_desc:0 "The Blacksmiths of this Hold on request have created lighter, thinner curved blades that can be held in one hand. These swords significantly increase the fighting capabilities of Skirmishers."
  building_dwarven_skirmisher_barracks_06:0 "Open Order"
  building_dwarven_skirmisher_barracks_06_desc:0 "The men have become skilled enough that they can operate on their own initiative, and are able to make quick decisions to turn the tide of battle."
- building_dwarven_skirmisher_barracks_07:0 "Daggers"
+ building_dwarven_skirmisher_barracks_07:0 "Standard Issue Daggers"
  building_dwarven_skirmisher_barracks_07_desc:0 "The troops have also been equipped with Dwarven Steel daggers, which enable more effective combat in close quarters."
  building_dwarven_skirmisher_barracks_08:0 "Advanced Surveys"
  building_dwarven_skirmisher_barracks_08_desc:0 "By scouting out the terrain beforehand, the Skirmishers maintain a great advantage in any battle."
@@ -2888,6 +2922,41 @@
  building_type_diamond_mines_01:0 "Diamond Mines"
  building_type_diamond_mines_01_desc:0 "Diamond, the hardest gem, sparkles with unparalleled brilliance. Representing endurance and invincibility, diamonds are prized for their rarity and resilience. Adorning the most exquisite creations, diamonds endure as enduring symbols of eternal love and unyielding strength."
 
+ ## Dwarven Building Effect Loc ##
+ dwarven_toolmaker_guild_01_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_01').GetName] [building|E]\N"
+ dwarven_toolmaker_guild_02_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_02').GetName] [building|E]\N"
+ dwarven_toolmaker_guild_03_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_03').GetName] [building|E]\N"
+ dwarven_toolmaker_guild_04_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_04').GetName] [building|E]\N"
+ dwarven_toolmaker_guild_05_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_05').GetName] [building|E]\N"
+ dwarven_toolmaker_guild_06_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_06').GetName] [building|E]\N"
+ dwarven_toolmaker_guild_07_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_07').GetName] [building|E]\N"
+ dwarven_toolmaker_guild_08_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_08').GetName] [building|E]\N"
+ dwarven_toolmaker_guild_09_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_09').GetName] [building|E]\N"
+ dwarven_toolmaker_guild_10_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_armory_10').GetName] [building|E]\N"
+ 
+ dwarven_armory_01_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_01').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_01').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_01').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_01').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_siege_workshop_01').GetName] [building|E]\N"
+ dwarven_armory_02_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_02').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_02').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_02').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_02').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_siege_workshop_02').GetName] [building|E]\N"
+ dwarven_armory_03_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_03').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_03').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_03').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_03').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_siege_workshop_03').GetName] [building|E]\N"
+ dwarven_armory_04_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_04').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_04').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_04').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_04').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_siege_workshop_04').GetName] [building|E]\N"
+ dwarven_armory_05_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_05').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_05').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_05').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_05').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_siege_workshop_05').GetName] [building|E]\N"
+ dwarven_armory_06_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_06').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_06').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_06').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_06').GetName] [building|E]\N"
+ dwarven_armory_07_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_07').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_07').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_07').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_07').GetName] [building|E]\N"
+ dwarven_armory_08_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_08').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_08').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_08').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_08').GetName] [building|E]\N"
+ dwarven_armory_09_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_09').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_09').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_09').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_09').GetName] [building|E]\N"
+ dwarven_armory_10_effects_desc:0 "Constructing the [GetBuilding('dwarven_hi_barracks_10').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_pike_barracks_10').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_archer_barracks_10').GetName] [building|E]\NConstructing the [GetBuilding('dwarven_skirmisher_barracks_10').GetName] [building|E]\N"
+ 
+ military_specialization_01_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_kings_armory_military_01').GetName] [building|E]\N"
+ military_specialization_02_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_kings_armory_military_02').GetName] [building|E]\N"
+ military_specialization_03_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_kings_armory_military_03').GetName] [building|E]\N"
+ 
+ economic_specialization_01_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_bank_economic_01').GetName] [building|E]\N"
+ economic_specialization_02_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_bank_economic_02').GetName] [building|E]\N"
+ economic_specialization_03_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_bank_economic_03').GetName] [building|E]\N"
+ 
+ glory_specialization_01_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_grand_library_01').GetName] [building|E]\N"
+ glory_specialization_02_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_grand_library_02').GetName] [building|E]\N"
+ glory_specialization_03_effects_desc:0 "$unlocks_building_desc$Constructing the [GetBuilding('dwarven_grand_library_03').GetName] [building|E]\N"
+ 
  ## Associated triggers ##
  has_mines_01_or_higher:0 "Has any [mineral_resource|E] Mine [building|E]"
  has_mines_02_or_higher:0 "Has any [mineral_resource|E] Mine [building|E] of Level II or higher"
@@ -3208,3 +3277,131 @@
  building_emerald_mines_10_desc:0 "$building_dwarven_mine_10_desc$"
  building_diamond_mines_10:0 "$building_dwarven_mine_10$"
  building_diamond_mines_10_desc:0 "$building_dwarven_mine_10_desc$"
+
+#Thâni-Hazâd wonders(rest of Thâni-Hazâd)
+ 
+  
+ building_type_wonder_hall_of_tiralaen:0 "Royal Halls of The Cuind"
+ building_type_wonder_hall_of_tiralaen_desc:0 ""
+ building_wonder_hall_of_tiralaen:0 "Royal Halls of The Cuind"
+ building_wonder_hall_of_tiralaen_desc:0 "The Cilulend, or Flows of Beauty, are the great halls and city of the [cuind|E]. Established by King Terilaen, the halls were built as the [cuind|E] consolidated southwards. As [conceptracemen|E] migrated into the [harad|E], the [cuind|E] began to feel enclosed in the narrow lands by the sea, and retreated southward before the oncoming tribes. Eventually, King Meglasûl brought the greater part of his people to the utter south and the Cape of Drel, and began the construction of the capital of his new realm. But even ere the foundations had been completed, he wearied of his new confines and the ever-growing presence of men, and sailed west over sea in hope of the wider lands beyond.\n\n His son, Terilaen, was of other mood, and sought friendship and cooperation with the Secondborn of the area. Under his rule, the [cuind|E] tutored them in herblore and handicrafts, and some were even permitted to survey the hidden halls of Cilulend. Amidst the many-branching waterfalls and fountains of the Royal Halls, they there beheld the many wonderous works of the [avari|E], many-threaded webs, goblets of carven wood and crystal, brews and potions of great power, crafted in secret at the heart of the wood though years uncounted. The streets and paths of Cilulend wander among the falls, up and down the cliffside, spilling out onto the forest floor below. Domes and doors lie hidden between the trees, unseen but by a passing glimpse, enmeshed and sheltered by the wood. Throughout all, the pale trees reflect the light of the sparkling waters, and the hushed sound of the springs fills the air. In the centre of the city, at the foot of the greatest of the pools, stands the Royal Hall itself, it's vaulted cover a canopy of woven trees, pillared by silver trunks and lit by many-faced crystal, set in streams and fountains flowing along the aisles. Here the Hidden King receives his guests in splendour, but more often his high seat sits empty, as he wanders amongst the mortals he loves so well."
+ 
+ building_type_wonder_citadel_of_azarideth:0 "Great Citadel of Azarîdêth"
+ building_type_wonder_citadel_of_azarideth_desc:0 "Rising like a formidable sentinel against the backdrop of the Yellow Mountains, the Great Citadel of Azarîdêth stands as a testament to both architectural prowess and strategic foresight. The oldest parts of the castle date back to 2107 of the Second Age, built as a bulwark of the Kharadûnê colony. Nestled within a narrow passageway between the imposing peaks and the vast expanse of the sea, this citadel commands a pivotal position along a crucial arterial trading route in the [thanihazad|E].\n\nThe Great Citadel of Azarîdêth is more than just a fortress; it is a symbol of strength, resilience, and the enduring spirit of those who call this ancient city home. Its presence serves as a constant reminder of the importance of safeguarding the realm's prosperity and maintaining vigilance against any who would seek to threaten its peace."
+ building_wonder_citadel_of_azarideth:0 "Great Citadel of Azarîdêth"
+ building_wonder_citadel_of_azarideth_desc:0 "$building_type_wonder_citadel_of_azarideth_desc$"
+ 
+ building_type_wonder_star_fort:0 "The Star-fort of Gimileth"
+ building_type_wonder_star_fort_desc:0 "The 'Star-fort', as it is named, was in origin a fortification against the rumored [cuind|E] of Drêl, built in S.A. 2222 as the [elves|E] began to be looked on with envy or fear. However, following the [downfall|E], the fortress became a beacon of Drêl itself. Alone of all the cities of the [numenoreans|E] in the region does it bear a hint of Elven grace, as it is rumored that Elves visit time and again, to experience life among the transient Secondborn before returning to their forest homes."
+ building_wonder_star_fort:0 "The Star-fort of Gimileth"
+ building_wonder_star_fort_desc:0 "$building_type_wonder_star_fort_desc$"
+ building_type_wonder_tol_turgal:0 "Fortress of Tol Turgal"
+ building_type_wonder_tol_turgal_desc:0 "Founded in S.A. 3256 to guard the Bay of Drêl, Tol Turgal is surmounted by an island fortress of black stone which has purportedly never been taken by siege or storm. Within its depths are armories, food stores, and other necessities for a siege. However, it is not just a military fortification, but is also a palatial retreat fit for any Prince of the [adunai|E], with fine dining rooms, richly adorned halls, and fine bedrooms."
+ building_wonder_tol_turgal:0 "Fortress of Tol Turgal"
+ building_wonder_tol_turgal_desc:0 "$building_type_wonder_tol_turgal_desc$"
+ building_type_wonder_haven_of_inzilloni:0 "Haven of Inzillôni"
+ building_type_wonder_haven_of_inzilloni_desc:0 "$building_wonder_haven_of_inzilloni_desc$"
+ building_wonder_haven_of_inzilloni:0 "Haven of Inzillôni"
+ building_wonder_haven_of_inzilloni_desc:0 "Inzillôni is the greatest port in the [thanihazad|E], home to the greatest merchant fleet of the south. Originally founded in S.A. 1870 as Lótëlondë during the reign of Tar-Minastir by settlers from Kadar an-Khâradûn (Q. Londë Anárionva) to exploit timber in Olmord Vale.\n\nLótëlondë remained loyal to the Line of Elros during the War of the Renegades, and was besieged by the rebellious lord of Ciryatanórë. Following the war the city was given an [adunaic|E] name and removed from the administration of An-Balkûmagân. The King rewarded the city for its loyalty by giving it its own colonial charter to act autonomously under the new colony of [zimrathani|E]. Thus the city grew to match the splendour of the cities of [anbalkumagan|E] and [bellakar|E], drawing many Adûnaic settlers, yet this prosperity would not last, as the foundation of many other cities in Zimrathâni and Gimilthâni led to ferocious competition between the cities, which gave rise to a powerful mercantile culture and a reputation of fierce sailors and shrewd merchants.\n\nThe merchant fleets of the city have purportedly gone as far north as the ancient havens of Pelargir and [umbar|E], brining back many goods back to the city, to the benefit of the mercantile families, which have grown powerful enough that some would say dominate the city, and that the Princes do so only in name."
+ building_type_wonder_uruloni:0 "Great City of Uruloni"
+ building_type_wonder_uruloni_desc:0 "Founded in SA 1552, and therefore the oldest [numenorean|E] settlement in the former Princedom of [zimrathani|E], Uruloni sits high in the rocks of the Kor Bawiba. It alone of all the cities of the region is truly [numenorean|E], and its appearance recalls the cities of Ondostar in [numenor|E].\n\nUruloni is the pride of the Kharadûnâim, both as a symbol of their ancient heritage and as the bastion of their strength."
+ building_wonder_uruloni:0 "Great City of Uruloni"
+ building_wonder_uruloni_desc:0 "$building_type_wonder_uruloni_desc$"
+ building_type_wonder_urulomik:0 "City of Urulomik"
+ building_type_wonder_urulomik_desc:0 "'Little Uruloni', Urulomik sits in the lowlands beneath the ancient city of Uruloni and acts as the artery which connects it to the outside world. As a result, Urulomik is decidely more multicultural and economically dynamic than the highland city it supplies, and is home to many of the servants and iterant laborers of the great city."
+ building_wonder_urulomik:0 "City of Urulomik"
+ building_wonder_urulomik_desc:0 "$building_type_wonder_urulomik_desc$"
+ building_type_wonder_mispir:0 "Haven of Mispir"
+ building_type_wonder_mispir_desc:0 "The city of Mispir has existed as a neutral zone in the games of the [balan_lai|E] since its founding in the seventy-seventh year of the [thirdage|E], excepting a brief period of annexation under the Kingdom of Gimilthâni. Mispír hosts the great hall of the Bâlan-Lâi, the meeting place of the Princes. As such, it is also a den of both diplomacy and vice, and many covert meetings here have decided the fates of the great and the small."
+ 
+ building_wonder_mispir:0 "Haven of Mispir"
+ building_wonder_mispir_desc:0 "$building_type_wonder_mispir_desc$"
+ building_type_wonder_arpel_01:0 "Colony of Hísiëlondë"
+ building_type_wonder_arpel_01_desc:0 "The Ancient Colony of Hísiëlondë."
+ building_wonder_arpel_01:0 "Colony of Hísiëlondë"
+ building_wonder_arpel_01_desc:0 "Lôni Hîsekhôr, originally founded as Hísiëlondë in S.A. 2304 during the reign of Tar-Ancalimon to serve both as a waystop for ships travelling to the new [colony|E] of Tantûrak (S. Lond Hallacar) and to maintain control over the hinterlands of Pél and the [numenorean|E] tributary kingdoms there. The colony prospered greatly from the tribute that it received from its tributaries, and the tariffs it imposed on trade, as it had an advantageous position between the Eastern trade routes and the Western trade routes of [ardaconcept|E]. It would also receive many of the ships from Ardinâk when the island fell in S.A. 2548, sharing the responsability of the eastern Númenórean fleet with Anarikê, which gained them prestige and wealth. However, Lôni Hîsekhôr was not as thoroughly settled as the other colonies of the [thanihazad|E], with the few Númenórean settlers forming the elite of the colony, ruling over the local Pél people, which would cause some cultural friction.\n\nWhen Tantûrak rebelled in the later [secondage|E] with aid from the Empire of Mûmakan, they dismembered the Republic of Kôronânde, bringing most of the south in league with them, and hostile to [numenor|E], causing trade to come to a halt, damaging Lôni Hîsekhôr source of revenue. When Ar-Pharazôn finally took action against Tantûraks rebellion by commanding the Colonies of the Thâni-Hazâd and Anarikê to crush the rebellion, Lôni Hîsekhôr became an important waypoint for the fleets of [zimrathani|E], which saw revenue flowing into the colony once more.\n\nAfter the rebellion was crushed, Ar-Pharazôn set his mind on building a Great Armament to invade the [undyinglands|E], and Lôni Hîsekhôr was not spared from having to supply it, further weakening the struggling colony. This left them in a precarious situation following the [akallabeth|E], as there was not the manpower nor the will to rebuild the city. This caused the Númenórean colonial elite of the city to relocate to the western Thâni-Hazâd, leaving the ancient city as a ruin."
+ building_type_wonder_arpel_02:0 "City of Arpél"
+ building_type_wonder_arpel_02_desc:0 "Arpél, capital of Pél"
+ building_wonder_arpel_02:0 "City of Arpél"
+ building_wonder_arpel_02_desc:0 "Following the [akallabeth|E], the ancient [colony|E] of Lôni Hîsekhôr laid abandoned for centuries. Eventually, the former tributary kingdoms of Pél, now independent, gave the name Arpél to the ancient ruins. However, during the domination of the twin crowns of Mag and Tûmag, the ancient ruins were renamed to Katerre, and utilised as a natural harbour to ensure their control over the Pél people and their continued subjugation.\n\nThis all changed in T.A. 1203, when a coalition of Pél rebels invited the [balan_lai|E] to aid them in their rebellion in exchange for fealty under their authority, though under their terms and with significant autonomy. This surprised the Balân-lâi, as they had long held the belief that Pél was a land better left independent, as it was too isolated and underdeveloped to be worth ruling. However, after much deliberation, it was agreed that they would aid the rebels and in exchange an [adunaic|E] noble would take the mantle of Prince of Pél. Thus the Balân-lâi aided the rebels, and Sapazûr Agathôhin, a supposed descendant of an old colonial noble of Lôni Hîsekhôr and of no connection to the other Kharadûnai dynasties was chosen as Prince. Lôni Hîsekhôr was afterwards rebuilt, although the name of Arpél had gained much popularity, it was decided to utilise the old colonial name as well, to appease the Kharadûnaic princes that had sent supplies and soldiers to kick out the twin crowns of Mag and Tûmag.\n\nThe newly rebuilt Arpél would house the Council of Pél, in which all the tribes of the Princedom would sent a representative to govern alongside the Adûnaic prince. This meant that the new Princedom, and its capital, would stay away from the intrigue and conflicts of the [thanihazad|E]. It would also be home to the restored and expanded Harbour of Arpél, which would be utilised to aid the ships of the realms of Thâni-Hazâd in trading with the eastern realms of [ardaconcept|E]."
+ 
+ # Mag and Tûmag #
+ building_type_wonder_akos:0 "$building_wonder_akos$"
+ building_type_wonder_akos_desc:0 "$building_wonder_akos_desc$"
+ building_wonder_akos:0 "Audaj's Perch"
+ building_wonder_akos_desc:0 "Outside the city walls of Akos, the greatest city of Mag, lays [audaj|E]'s Perch, a tall stone structure surrounded by tall trees. It serves as the ceremonial center of the great proving grounds around it.Every few years, aspiring warriors and hunters from across the twin realms gather here to prove their mettle in great contests of skill.\n\nThis tradition has its origins in the unification of Mag and Tûmag by the [tamska|E]. After they were united, the martially inclined tribes of Mag sought a new way to settle their disputes. By the late [thirdage|E], they had, at least for the most part, exchanged their raids and petty skirmishes for friendly contests between tribes, and a chance to prove ones worth under the watchful eye of the Lord of the Wilds."
+ 
+ building_type_wonder_ayahopa_01:0 "$building_wonder_ayahopa_01$"
+ building_type_wonder_ayahopa_01_desc:0 "$building_wonder_ayahopa_01_desc$"
+ building_wonder_ayahopa_01:0 "Walled Temple of Ayahopa"
+ building_wonder_ayahopa_01_desc:0 "The Walled Temple in the center of the city functions as the spiritual and administrative capital of the Twin crowns. It was built on the foundation of the [numenorean|E] outpost of Aphanalôni (ad. Bliss-Haven), and is notable for its four towers that serve as both places of worship and, should the need arise, imposing defensive fortifications.\n\nThe [tamska|E] traditionally holds court in her grand throneroom, where the most important ceremonies are also held. Her administrative duties are deeply interwoven with her spiritual ones, and the complex priestly etiquette has confused many a petitioner."
+ building_wonder_ayahopa_02:0 "Royal Citadel of Ayahopa"
+ building_wonder_ayahopa_02_desc:0 "By the late [thirdage|E], the old capital had become too small to hold the administration surrounding the Court of the [tamska|E]. During the reign of Tamska Kuyugo II, the Walled Temple in the center of the city was rennovated and greatly expanded into what would become known as the Royal Citadel of Ayahopa.\n\nThe complex was expanded to make space for the many priests, bureaucrats, scholars, and noblemen vieing for the Tamska's attention, and additional defensive fortifications were built to ensure the safety and continued stability of her rule."
+ 
+ building_type_wonder_korul_archives_01:0 "$building_wonder_korul_archives_01$"
+ building_type_wonder_korul_archives_01_desc:0 "$building_wonder_korul_archives_01_desc$"
+ building_wonder_korul_archives_01:0 "Sanctum of Kôrul"
+ building_wonder_korul_archives_01_desc:0 "The Sanctum of Kôrul is one of the oldest temples in Mag and Tûmag. It contains records dating back to the [secondage|E], including first hand accounts of the War of Six Tribes that resulted in the Tûmag splitting off from the Mag. It is said to be the greatest repository of knowledge in the Twin Realms, but it may only be accessed by selected members of the priesthood, as they are the only ones allowed to enter the temple.\n\nIn modern times, this is where the next [tamska|E] is chosen and educated."
+ building_wonder_korul_archives_02:0 "Grand Archives of Kôrul"
+ building_wonder_korul_archives_02_desc:0 "The Grand Archives of Kôrul are the greatest repository of knowledge in the Twin realms. After a long uphill battle against the staunch council of elders, the archives have been opened by decree of the [tamska|E], and all who respect its ancient rules may access it.\n\nAs the wisdom held within is no longer being selfishly hoarded by the small sect of priests tasked with maintaining them, the archives have become a sprawling beacon of intellectual discourse, attracting many preachers, historians, foreign scholars and pilgrims."
+ 
+ building_type_wonder_namur_temple_01:0 "$building_wonder_namur_temple_02$"
+ building_type_wonder_namur_temple_01_desc:0 "$building_wonder_namur_temple_02_desc$"
+ building_wonder_namur_temple_01:0 "Derelict Temple Complex"
+ building_wonder_namur_temple_01_desc:0 "Though a small community of priests remains at its entrance, most of the derelict temple complex has fallen into silence, and many of its chambers, expertly carved into the rock in ages past, have collapsed entirely.\n\nThe once great Mountain Temple of [namur|E] have been mostly abandoned over the course of the [thirdage|E]. As the [tamska|E]'s importance grew, the attention of the Mag and the Tûmag shifted away from their old centers of worship, and their ancient sanctuaries at the edge of the world fell into decline."
+ building_wonder_namur_temple_02:0 "Mountain Temple of Namur"
+ building_wonder_namur_temple_02_desc:0 "This ancient temple complex, expertly carved into rock itself, houses a great congregation of priests, workers and soldiers. Its rock-cut facade welcomes any worshippers to step deeper into this holy sanctum, and serves as a center of worship, culture and protection for the surrounding region."
+ NOT_holy_site_magrin_or_holy_site_trigger:0 "The holder must be $magrin_religion$ or consider this a [holy_site|E]"
+ 
+ building_type_wonder_lake_jak:0 "$building_wonder_lake_jak_01$"
+ building_type_wonder_lake_jak_desc:0 "$building_wonder_lake_jak_01_desc$"
+ building_wonder_lake_jak:0 "Lake Jak"
+ building_wonder_lake_jak_desc:0 "Lake Jak (mag. Chika Jag) is an ancient lake located in the northernmost reaches of Tûmag, at the foot of the Yellow Mountains. It has been a holy place for the Mag and Tûmag ever since the six tribes migrated into the area, and its waters are said to have special healing property.\n\nLaunching any naval vessel upon the holy lake is considered taboo to anyone except the [tamska|E]. As the daughter of [namur|E], hers alone is the privilege to sail a small ceremonial vessel into the mists, where she can commune with the gods by interpreting the reflections upon the waters' surface."
+ 
+ building_type_wonder_tumag_waterfall:0 "$building_wonder_tumag_waterfall$"
+ building_type_wonder_tumag_waterfall_desc:0 "$building_wonder_tumag_waterfall_desc$"
+ building_wonder_tumag_waterfall:0 "Alagik ikog Yêlogu"
+ building_wonder_tumag_waterfall_desc:0 "The Alagik ikog Yêlogu (Falls of the Crocodile) are a series of great waterfalls located in the northern reaches of Tûmag. Due to their natural beauty, they have always been considered sacred, and they are said to be fuelled by the tears of a long forgotten goddess, grieving her lost husband high in the peaks of the Yellow Mountains."
+
+ building_type_wonder_kinnlai_sanctum_of_the_valiant_01:0 "Sanctum of the Valiant"
+ building_type_wonder_kinnlai_sanctum_of_the_valiant_01_desc:0 "The Sanctum of the Valiant serves as a revered place for the Disciples of [astald_maktal|E], dedicated to both the physical and spiritual practices of martial arts. Here, each movement and contest transcends mere combat, transforming into a sacred act that draws the disciples closer to the essence of their master, fostering strength of body, mind, and spirit."
+ building_wonder_kinnlai_sanctum_of_the_valiant_01:0 "Revered Ruins"
+ building_wonder_kinnlai_sanctum_of_the_valiant_01_desc:0 "The Sanctum lies in a state of poignant abandonment, consumed by the encroaching jungle. Vines coil around the once-majestic arches, and the air is thick with the whispers of ancient mantras. Though cracked and faded, the intricate carvings of [astald_maktal|E]'s victories still hold an otherworldly light.\n\nAmidst the decay, the disciples sense the presence of their master, inspiring quiet reflection and reverence. The gentle rustle of leaves serves as a reminder of the spiritual connection that once thrived here, urging them to restore this sacred place."
+ building_wonder_kinnlai_sanctum_of_the_valiant_02:0 "Burgeoning Retreat"
+ building_wonder_kinnlai_sanctum_of_the_valiant_02_desc:0 "Slowly, the disciples breathe life back into the Sanctum. The vibrant greenery surrounding the structure is carefully tended, symbolising their commitment to renewal. As they clear the debris and restore the carvings, echoes of laughter and strength reverberate through the air.\n\nSparring matches and rituals of strength reemerge, framed by a deepening spiritual awareness. In each movement, they strive to channel [astald_maktal|E]’s spirit, feeling his guidance as they grapple not just with each other but with their own inner battles.\n\nThe environment hums with a sense of purpose, where physical prowess intertwines with meditation, reinforcing their bond with the Valiant Warrior."
+ building_wonder_kinnlai_sanctum_of_the_valiant_03:0 "Sanctum of the Valiant"
+ building_wonder_kinnlai_sanctum_of_the_valiant_03_desc:0 "The Ascendant Hall of the Valiant stands as a beacon of strength and spirituality, radiating the essence of [astald_maktal|E]. Enveloped by lush flora, its architecture harmoniously blends with nature, incorporating natural elements that celebrate the jungle's vibrant life. Disciples gather here, their movements fluid and purposeful, embodying the principles of strength, grace, and resilience.\n\nInside, the hall is adorned with symbols of their master’s legacy—sculptures, murals, and offerings that honor his spirit. Sunlight filters through the canopy above, casting a serene glow that enhances the meditative atmosphere. The air hums with energy, echoing the laughter and encouragement of their revered warrior, guiding them toward personal mastery and spiritual enlightenment."
+ 
+ # Tanturak #
+ building_type_wonder_ardinak_01:0 "Ardinâk"
+ building_type_wonder_ardinak_01_desc:0 "Island of Ardinâk"
+ building_wonder_ardinak_01:0 "Shân-ta-Rhôn"
+ building_wonder_ardinak_01_desc:0 "The island now known as Ardinâk was first settled by the Kinn-lai Avari, who gave it the name Dirsulinor. Yet the lands of Middle-earth were not free of the shadow of Morgoth, even so far from the seat of his power. Many of Morgoth's soldiers had been scattered to the winds in the Battle of the Powers, awaiting their master's return. And one such fled to the isolated island which would later be known as Ardinaak. Here it bided its time, but the coming of the Kinn-lai alarmed it, and it prepared to strike them in turn. This was no Balrog, or even mighty servant, but it was subtle and long prepared, making poisons and other foul arts in the depths of the isle. King Tainalânn came to investigate the seemingly cursed isle, and though he slew the beast, he was slain in turn. And in its death throes it laid a ruinous curse on the isle, and the Kinn-lai fled.\n\nLong years later in the [secondage|E] came the [numenoreans|E], who claimed the isle for their own. The Númenóreans established Ardinâk as a naval outpost, and in time, it grew in might, casting the shadow of their dominion over much of the northeastern reaches of the Bay of Ûsakan. Upon the island, they raised the citadel of Ardinâk, also called the Shân-ta-Rhôn, a stronghold wrought from black marble and steel, a symbol of [numenor|E]'s strength and mastery of the seas.\n\nYet doom befell Ardinâk. In the year S.A. 1888, a great and terrible plague swept over the island, laying low its people. Those who could fled to the mainland, while others perished in agony, leaving the once-proud citadel abandoned to ruin. From that time forth, Ardinâk was deemed accursed by all who heard the tale of its fall. The Númenórean colony of Tantûrak, which had once held the navy's power, fell into decline, for the fleet was withdrawn and sent either to Anarikê or to Zimrathâni. Tantûrak, bereft of its former importance, grew neglected, and its loyalty to the motherland of Númenor waned with the passing of years."
+ building_type_wonder_ardinak_02:0 "Ardinâk the Cleansed"
+ building_type_wonder_ardinak_02_desc:0 "Long has a dark power cursed the isle of Ardinâk. Yet we have finally overcome it." 
+ building_wonder_ardinak_02:0 "Shân-ta-Rhôn Rebuilt"
+ building_wonder_ardinak_02_desc:0 "We have done the impossible, while countless have failed to restore life to the island of Ardinâk, we have finally accomplished it. The old citadel of Shân-ta-Rhôn has been restored to its former splendour, and now shines with the glory of our dominion, being a beacon of our grandiour across the south, our enemies shall now tremble at our feet, for they will know, the power of old Tantûrak is revived!"
+
+ building_type_wonder_sarul_01:0 "Grand City of Sarûl"
+ building_type_wonder_sarul_01_desc:0 "The Great Capital"
+ building_wonder_sarul_01:0 "City of Sarûl"
+ building_wonder_sarul_01_desc:0 "The city of Sarûl is a monument to unfulfilled ambitions. Originally a hastily constructed outpost after the evacuation of Ardinâk, it grew in fits and starts, organic but not efficient. After Ar-Kinyârn declared his independence from [numenor|E], it did not bring his native subjects the relief they had hoped. Instead, Ar-Kinyârn utilized the taxes and forced labor which had formerly gone to the homeland in order to refurbish his capital. The old cramped streets were done away with, grand imperial boulevards taking their place, designed after those of [armenelos|E] itself. The buildings were replaced, their stones repurposed for new, more grander ones, all finely ornated (though much of these were stripped when the [numenoreans|E] exacted their retribution on their rebellious [colony|E]). It was to be the beating heart of a new imperial realm, one that would hold the entirety of the south in its thrall."
+ building_type_wonder_sarul_rebuilt_01:0 "Sarûl"
+ building_type_wonder_sarul_rebuilt_01_desc:0 "The Ancient Capital" 
+ building_wonder_sarul_rebuilt_01:0 "Sarûl in Ruins"
+ building_wonder_sarul_rebuilt_01_desc:0 "The dream never came to pass, and as such, Sarûl's grand streets and imposing buildings became testaments to arrogance. There were not enough people to populate all its halls, and so the indolent nobility concentrated into the city's core, with the outer districts left to rot. After the fall of Tantûrak to native revolt in T.A. 1450, the city further degraded. What remains of its infastructure and buildings are still somewhat usable, but it is a pale shadow of what its designer dreamed and many parts are long overgrown, with the new populace wondering what many of these ancient houses once housed, and who lived in them."
+ building_wonder_sarul_rebuilt_02:0 "Sarûl Restored"
+ building_wonder_sarul_rebuilt_02_desc:0 "Sarûl has been restored to its ancient glory, the decayed buildings have been restored and ornated with the wealth of our land, the grand imperial boulevards have been restored and expanded, and the centres of commerce are once again full of life, Sarûl is once more the jewel of the South."
+ 
+### GENERIC WONDERS ###
+  # Mountain Pass
+ building_type_mountain_pass_01:0 "Mountain Pass"
+ building_type_mountain_pass_01_desc:0 "A narrow, rugged corridor cutting through towering mountains, this pass is a natural gateway between distant lands.\n\nThe pass offers strategic potential for those who would seek to control the flow of goods, armies, and travelers."
+ building_mountain_pass_01:0 "Wild Mountain Pass"
+ building_mountain_pass_01_desc:0 "A rugged, untamed passage through the mountains. Difficult to traverse and fraught with dangers from the wild, it is a naturally defensible route but perilous for those who dare to cross."
+ building_mountain_pass_02:0 "Guarded Trail"
+ building_mountain_pass_02_desc:0 "A mountain pass with a small garrison providing protection to travelers and merchants. The trail is secured by watchful guards, controlling access and offering safer passage through the mountains."
+ building_mountain_pass_03:0 "Fortified Crossing"
+ building_mountain_pass_03_desc:0 "A heavily guarded passage through the mountains, reinforced with walls and watchtowers. The presence of a permanent military force ensures the security of trade routes and the strategic control of movement through the mountains."
+ building_mountain_pass_04:0 "Citadel of the Pass"
+ building_mountain_pass_04_desc:0 "A formidable fortress dominating the mountain pass. This citadel projects its power over the nearby region, tightly controlling the flow of trade and travelers while serving as an impregnable barrier and gateway between lands."
