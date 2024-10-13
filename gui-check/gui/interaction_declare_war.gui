@@ -94,7 +94,8 @@ window = {
 			widget = {
 
 				layoutpolicy_horizontal = expanding
-				size = { 0 220 }
+				#LotR
+				size = { 0 245 }
 
 				background = {
 					using = Background_Area_Dark
@@ -642,13 +643,9 @@ window = {
 							margin_top = 2
 							margin_bottom = -5
 
-							warning_icon = {
-								size = { 25 25 }
-							}
-
 							text_multi = {
 								text = "[DeclareWarInteractionWindow.WriteAdditionalWarningMessage]"
-								max_width = 350
+								max_width = 520
 								autoresize = yes
 							}
 						}
@@ -737,7 +734,9 @@ window = {
 
 							warning_icon = {
 								name = "player_cost_ignore"
-								visible = "[And(DeclareWarInteractionWindow.HasSelectedCasusBelli, Or( Or( Not( DeclareWarInteractionWindow.CanAffordCosts ), DeclareWarInteractionWindow.IsBreakingTruce), DeclareWarInteractionWindow.IsBreakingAlliance))]"
+								#LotR
+								visible = "[And(DeclareWarInteractionWindow.HasSelectedCasusBelli, Or( Or( Or( Not( DeclareWarInteractionWindow.CanAffordCosts ), DeclareWarInteractionWindow.IsBreakingTruce), DeclareWarInteractionWindow.IsBreakingAlliance),GetScriptedGui( 'is_defensively_allied_to_someone' ).IsValid( GuiScope.SetRoot( DeclareWarInteractionWindow.GetAttackerCharacter.GetCharacter.MakeScope ).AddScope('defender_char', DeclareWarInteractionWindow.GetDefenderCharacter.GetCharacter.MakeScope).End)))]"
+								# visible = "[And(DeclareWarInteractionWindow.HasSelectedCasusBelli, Or( Or( Not( DeclareWarInteractionWindow.CanAffordCosts ), DeclareWarInteractionWindow.IsBreakingTruce), DeclareWarInteractionWindow.IsBreakingAlliance))]"
 								size = { 30 30 }
 							}
 						}
@@ -922,6 +921,19 @@ types DeclareWarTypes
 				raw_text = "@dynasty_prestige_icon![DeclareWarInteractionWindow.GetSpecificCost( 'renown' )|0]"
 				align = nobaseline
 				using = Font_Size_Big
+				default_format = "#high"
+
+				tooltipwidget = { widget_value_breakdown_tooltip = {} }
+			}
+
+			text_single = {
+				name = "influence"
+				datacontext = "[DeclareWarInteractionWindow.GetCostBreakdown( 'influence' )]"
+				visible = "[NotEqualTo_CFixedPoint( DeclareWarInteractionWindow.GetSpecificCost( 'influence' ), '(CFixedPoint)0' )]"
+
+				raw_text = "@influence_icon![DeclareWarInteractionWindow.GetSpecificCost( 'influence' )|0]"
+				using = Font_Size_Big
+				align = nobaseline
 				default_format = "#high"
 
 				tooltipwidget = { widget_value_breakdown_tooltip = {} }

@@ -7,7 +7,7 @@ window = {
 	datacontext = "[CultureWindow.GetCulture]"
 	datacontext = "[Culture.GetReformation]"
 	widgetid = "culture_window"
-	layer = windows_layer
+	layer = middle
 	movable = no
 
 	using = Window_Size_Sidebar
@@ -36,6 +36,8 @@ window = {
 
 	vbox = {
 		using = Window_Margins_Sidebar
+
+		visible = "[Not(Culture.MakeScope.Var('culture_invis').IsSet)]"
 
 		header_pattern = {
 			layoutpolicy_horizontal = expanding
