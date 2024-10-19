@@ -82,6 +82,7 @@
  tenet_adunaic_birthright_desc:0 "[adunaim|E] рождены с великим предназначением. Они потомки величайшего народа, который когда-либо видела [arda|E]. Всё [middleearth|E] — наше наследие, распоряжаться которым мы вольны по собственному желанию, и под нашим владычеством она будет процветать. Пусть все осознают и примут эту истину."
  tenet_adunaic_mandate_name:0 "Мандат адунай"
  tenet_adunaic_mandate_desc:0 "Адунай по своей природе стоят выше всех людей Средиземья, им поручено упорядочить мир во имя всеобщего блага. Однако это высокое положение налагает на них ответственность: править справедливо, хотя и сурово; направлять и возвышать тех, кто ниже нас; проявлять милосердие, сдержанность и терпение."
+ INCOMPATIBLE_TENET_ADUNAIC_MANDATE_TRIGGER:1 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_adunaic_mandate').GetName( GetPlayer.GetFaith )]"
  INCOMPATIBLE_TENET_ADUNAIC_BIRTHRIGHT_TRIGGER:0 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_adunaic_birthright').GetName( GetPlayer.GetFaith )]"
  tenet_dune_covens_name:0 "Ведьминские ковены" #juke note: set up to be used as a generic witch coven tenet
  tenet_dune_covens_desc:0 "Мир устроен загадочным образом, таит в себе множество тайн и странных сил. Отправляться на поиски этих сил, учиться у тени и наслаждаться ею — естественное желание."
@@ -97,8 +98,11 @@
 
  tenet_tamska_main_name:0 "Андзи Тамскул" # The Tamska System
  tenet_tamska_main_desc:0 "[tamska|E], или Великие королевы, - законные правительницы нашего народа, назначенные божественной властью. Наделенные божественной сущностью, они всегда будут вести наш народ по пути к спасению, поскольку являются воплощениями самих богов. Посредством ритуалов и церемоний тамскиты отдают дань уважения Тамске, ища ее руководства и благословения во всех аспектах жизни. Наша вера глубоко вплетена в ткань нашего общества, формируя наши обычаи, традиции и коллективную идентичность как народа, объединенного под божественной властью Великих королев."
+ COMPATIBLE_TENET_RITE_TRIGGER:0 "Совместимый [core_tenet|El] - [GetFaithDoctrine('tenet_rite').GetName( GetPlayer.GetFaith )]"
  INCOMPATIBLE_TENET_RITE_TRIGGER:0 "Несовместимый [core_tenet|El] - [GetFaithDoctrine('tenet_rite').GetName( GetPlayer.GetFaith )]"
+ DOCTRINE_NOT_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER:0 "Не требуется [doctrine|El] «[temporal_head_of_faith|E]»"
  DOCTRINE_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER:0 "Требуется [doctrine|El] «[temporal_head_of_faith|E]»"
+ DOCTRINE_NOT_REQUIRED_FEMALE_CLERGY_TRIGGER:0 "Не требуется [doctrine|El] «[doctrine_clerical_gender_female_only|E]»"
  DOCTRINE_REQUIRED_FEMALE_CLERGY_TRIGGER:0 "Требуется [doctrine|El] «[doctrine_clerical_gender_female_only|E]»"
  doctrine_parameter_lotr_tamska_hof:0 "[temporal_head_of_faith|E] использует особый [succession_law|El] [Concept('realm', 'державы')|E] «[GetLaw('tamska_succession_law').GetName]»."
  doctrine_parameter_lotr_hold_court_piety_reward:0 "Проведение придворных приёмов даёт дополнительную награду в виде [Concept('piety', 'благочестия')|E]"

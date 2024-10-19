@@ -104,3 +104,5 @@
  kurgan_ornament_description:0 "Каменная фигура, которую [inspiration_owner.GetTitledFirstName] [Select_CString(inspiration_owner.IsFemale, 'добыла', 'добыл' )] в древнего кургана балхот."
  kurgan_saddle_name:0 "Седло из кургана"
  kurgan_saddle_description:1 "Седло, которое [inspiration_owner.GetTitledFirstName] [Select_CString(inspiration_owner.IsFemale, 'добыла', 'добыл' )] в кургане балхот. Ему более тысячи лет, но оно хорошо сохранилось в гробнице без доступа воздуха, в окружении дюжин мумифицированных лошадей. Возможно, так мы сможем понять искусство древних всадников."
+
+ DLC_BUTTON_TOOLTIP:1 "#T [DlcItem.GetDlc.GetName]#!\n[DlcItem.GetDlc.GetDesc]\n\n#low [SelectLocalization( Or( DlcItem.GetDlc.IsEnabled, EqualTo_string(DlcItem.GetDlc.GetName, Localize('realms_dlc') ) ), 'DLC_ENABLED', 'DLC_NOT_ENABLED' )]#![AddTextIf( Not( EqualTo_string(DlcItem.GetDlc.GetName, Localize('realms_dlc') ) ), '\n#I Щелкните, чтобы посетить магазин#!' )]"

@@ -31,19 +31,19 @@
  martial_authority.2042.b:0 "Вот бардак..."
 
  martial_authority.2050.t:0 "Рука помощи"
- martial_authority.2050.desc.opening:0 "Несмотря на всю свою власть, я как [ROOT.Char.GetTitleAsNameNoTooltip|l] не могу быть всюду разом. Всегда находятся те, кто «забывает» исполнять мои приказы, стоит мне отвлечься на что-нибудь еще.\n\nИ в этом мне, пожалуй, поможет [right_hand_person.Custom2('MyCharacterIntroduction', ROOT.Char)], всегда честно [Select_CString(right_hand_person.IsFemale, 'исполнявшая', 'исполнявший' )] мои приказы"
+ martial_authority.2050.desc.opening: "Несмотря на всю свою власть, я как [ROOT.Char.GetTitleAsNameNoTooltip|l] не могу быть всюду разом. Всегда находятся те, кто «забывает» исполнять мои приказы, стоит мне отвлечься на что-нибудь еще.\n\nИ в этом мне, пожалуй, поможет [right_hand_person.Custom2('MyCharacterIntroduction', ROOT.Char)], всегда честно [Select_CString(right_hand_person.IsFemale, 'исполнявшая', 'исполнявший' )] мои приказы"
  martial_authority.2050.desc.vassal:0 "в своем домене."
  martial_authority.2050.desc.knight:0 "во время путешествий по деревням."
- martial_authority.2050.desc.courtier:0 "при дворе."
- martial_authority.2050.desc.ending:0 "Может ли [right_hand_person.GetSheHe] стать моей правой рукой и принимать более активное участие в управлении державой?"
+ martial_authority.2050.desc.courtier: "[ROOT.Char.Custom('GetCourt_RU_Where')]."
+ martial_authority.2050.desc.ending: "Может ли [right_hand_person.GetSheHe] стать моей правой рукой и принимать более активное участие в управлении [ROOT.Char.Custom('GetRealmOrDomicile_RU_Ins')|l]?"
  martial_authority.2050.a:0 "Да, [right_hand_person.GetSheHe] хорошо мне послужит!"
  martial_authority.2050.a.tt:0 "Вы и [right_hand_person.GetShortUIName] станете больше времени проводить вместе"
- martial_authority.2050.b:0 "[marshal.Custom2('MyCharacterIntroduction', ROOT.Char)|U] может разобраться с этими трудностями."
+ martial_authority.2050.b: "[Select_CString(marshal.IsFemale,'Моя','Мой')] [marshal.Custom2('RelationToMeShort', ROOT.Char)] [marshal.GetFirstNameNoTooltip] может разобраться с этими трудностями."
  martial_authority.2050.c:0 "Я могу справиться и без посторонней помощи, если буду работать усерднее!"
  martial_authority.2050.toast.title:0 "[right_hand_person.GetShortUIName] теперь ваша правая рука"
 
  martial_authority.2051.t:0 "Рука помощи"
- martial_authority.2051.desc:0 "Пока [Select_CString(right_hand_person.IsFemale, 'она помогала', 'он помогал' )] мне управлять державой, [right_hand_person.GetTitledFirstName] и я обнаружили, что у нас много общего!\n\nЗа время совместной работы у нас сложилось полное взаимопонимание, и я порой задумываюсь, к чему это может привести..."
+ martial_authority.2051.desc: "Пока [Select_CString(right_hand_person.IsFemale, 'она помогала', 'он помогал' )] мне управлять [ROOT.Char.Custom('GetRealmOrDomicile_RU_Ins')], [right_hand_person.GetTitledFirstName] и я обнаружили, что у нас много общего!\n\nЗа время совместной работы у нас сложилось полное взаимопонимание, и я порой задумываюсь, к чему это может привести..."
  martial_authority.2051.a:0 "Мы станем хорошими друзьями!"
  martial_authority.2051.b:0 "Я вижу искру чего-то большего?"
  martial_authority.2051.c:0 "Пусть наши отношения останутся сугубо профессиональными."
@@ -106,7 +106,7 @@
 
  martial_authority_special.1503.desc_execution:0 "У дезертиров есть только одна надежда: что палач милостив и у него острый клинок.\n\nНеобходимость принимать столь суровые решения помогла мне осознать тяготы командирской жизни... куда лучше."
  martial_authority_special.1503.desc_latrine:0 "Проведя несколько месяцев среди нечистот, дезертиры при первой же возможности возвращаются в строй.\n\nНаблюдая за реакцией наказанных дезертиров, а также остальных солдат, испугавшихся похожего наказания, я начинаю лучше понимать свои войска."
- martial_authority_special.1503.desc_diplomacy:0 "Вдохновленные моей речью, утомленные долгой ночью и благодарные за мое милосердие, дезертиры возвращаются в казармы с новым огнем в глазах.\n\nВдохновив своих солдат подобным образом, я еще раз убеждаюсь, что командиру нужна не только сила рук."
+ martial_authority_special.1503.desc_diplomacy: "Вдохновленные моей речью, утомленные долгой ночью и благодарные за мое милосердие, дезертиры возвращаются в [Select_CString(IsLandlessAdventurer(ROOT.Char),'tents','barracks')] с новым огнем в глазах.\n\nВдохновив своих солдат подобным образом, я еще раз убеждаюсь, что командиру нужна не только сила рук."
  martial_authority_special.1503.a.tt_execution:0 "[deserting_soldier.GetTitledFirstNameNoTooltip] [Select_CString(deserting_soldier.IsFemale, 'казнена', 'казнен' )] за свои преступления."
  martial_authority_special.1503.a:0 "Наконец-то все закончилось."
 
@@ -116,7 +116,7 @@
  martial_authority_special.1504.a:0 "По крайней мере, эта история закончилась."
 
  martial_authority_special.3000.t:0 "Демонстрация власти"
- martial_authority_special.3000.desc:0 "[martial_authority_friend.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)|U] в последнее время часто появляется на собраниях моего совета. Зная о [martial_authority_friend.GetHerHis] интересе к вопросам руководства, я не могу избавиться от ощущения, что [martial_authority_friend.GetSheHe] ждет от меня каких-то удивительных действий.\n\nВозможно, я могу вовлечь [martial_authority_friend.GetHerHis] в обсуждение. С другой стороны, [martial_authority_friend.GetHerHim] может быть полезнее просто смотреть, как я взаимодействую со своими людьми, — я могу хотя бы #EMP притворяться#!, что знаю всех их в лицо."
+ martial_authority_special.3000.desc: "[martial_authority_friend.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)|U] в последнее время часто появляется на собраниях моего совета. Зная о [martial_authority_friend.GetHerHis] интересе к вопросам руководства, я не могу избавиться от ощущения, что [martial_authority_friend.GetSheHe] ждет от меня каких-то удивительных действий.\n\nВозможно, я могу вовлечь [martial_authority_friend.GetHerHis] в обсуждение. С другой стороны, [martial_authority_friend.GetHerHim] может быть полезнее просто смотреть, как я и мои [ROOT.Char.Custom('WomenMenPeople_GenderPreference')] взаимодействуем, — я могу хотя бы #EMP притворяться#!, что знаю всех их в лицо."
  martial_authority_special.3000.a:0 "Нам следует обсудить, как лучше делиться наблюдениями."
  martial_authority_special.3000.b:0 "Нужно пойти поприветствовать рекрутов!"
  respected_figurehead:0 "Уважаемая фигура"

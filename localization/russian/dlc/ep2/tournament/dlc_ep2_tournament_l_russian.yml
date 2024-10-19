@@ -296,7 +296,7 @@
   
   
   ### Tooltips 
- contest_planner_contest_tooltip:0 "#T [ActivityPhase.GetName]#![AddLine( ActivityPhase.CanPickDescriptionBlockers( GetPlayer, ActivityPlanner.GetSingleLocationPhase.GetLocation, ActivityPlanner.GetSelectedSpecialOption ) )][AddTextIf( Not( ActivityPlanner.CanPlanMorePhasesOfType( ActivityPhase.Self ) ), AddLine( '$ACTIVITY_PLANNER_CANNOT_PICK_MORE_OF_PHASE$' ) )][AddLine( ActivityPhase.GetDescription )]"
+ contest_planner_contest_tooltip: "#T [ActivityPhase.GetName]#![AddLine( ActivityPhase.CanPickDescriptionBlockers( GetPlayer, ActivityPlanner.GetSingleLocationPhase.GetLocation, ActivityPlanner.GetSelectedSpecialOption ) )][AddTextIf( Not( ActivityPlanner.CanPlanMorePhasesOfType( ActivityPhase.Self ) ), AddLine( '$ACTIVITY_PLANNER_CANNOT_PICK_MORE_OF_PHASE|q$' ) )][AddLine( ActivityPhase.GetDescription )]"
  contest_planner_contest_selected_tooltip:0 "#T [ActivityPhase.GetName]#![AddLine( ActivityPhase.CanPickDescriptionBlockers( GetPlayer, ActivityPlanner.GetSingleLocationPhase.GetLocation, ActivityPlanner.GetSelectedSpecialOption ) )][AddLine( ActivityPhase.GetDescription )]"
  contest_planner_remove_contest_tooltip:0 "#T Убрать: «[ActivityPhase.GetName]»#!"
  contest_planner_add_contest_tooltip:0 "#T Добавить состязание#!"
@@ -689,7 +689,7 @@
  tournament_men_at_arms_reward_modifier:0 "Укрепление гарнизона"
  tournament_men_at_arms_reward_modifier_desc:0 "Благодаря притоку участников и гостей турнира местные вооруженные силы воспользовались возможностью пополнить свои ряды и попрактиковаться."
  tournament_qualifier_dies_toast:0 "Смерть участника"
- tournament_quailfier_dies_tt:0 "[dead_contestant.GetShortUIName] [dead_contestant.GetDeathReason]\n[new_qualifier.GetShortUIName] [Select_CString(new_qualifier.IsLocalPlayer, 'занимаете', 'занимает' )] [dead_contestant.GetHerHis] место в состязании [activity.GetCurrentPhase.GetPhase.GetName]"
+ tournament_quailfier_dies_tt: "[dead_contestant.GetShortUIName|U] [dead_contestant.GetDeathReason]\n[versus_match.GetShortUIName|U] автоматически [Select_CString(versus_match.IsLocalPlayer, 'проходите', 'проходит' )] дальше в состязании [activity.GetCurrentPhase.GetPhase.GetName]"
  contest_ai_base:0 "Базовое значение"
  contest_foot_aptitude_value:0 "Пригодность к пешим видам спорта"
  contest_archery_aptitude_value:0 "Пригодность к стрельбе из лука"

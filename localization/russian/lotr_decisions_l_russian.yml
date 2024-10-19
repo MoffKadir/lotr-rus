@@ -862,9 +862,9 @@
  ##### Pharazain Decisions #####
  ###############################
  decision_proclaim_pharazain:0 "Провозгласить доминион Фаразайна"
- decision_proclaim_pharazain_tooltip:0 "Объединить адунаим Юга"
+ decision_proclaim_pharazain_tooltip:0 "Объединить адунай Юга"
  decision_proclaim_pharazain_desc:0 "Во времена [Concept( 'numenorean', 'Нуменорской' )|E] империи земли к югу от [Concept( 'umbar', 'Умбара' )|E] носили множество названий, но самое известное из них - Фаразайн - Золотые земли. Точное происхождение этого названия неясно, возможно, оно связано с белым золотом беллакарских гор или прибыльными месторождениями полезных ископаемых в Орид-Фаразайн, или даже с большими урожаями зерна на полях Зимратани.\n\nНезависимо от происхождения, название прижилось, хотя и использовалось только в самых неопределённых выражениях, как термин для обозначения колоний на юго-западном побережье, откуда богатства стекались обратно на остров звезды. Со времён [Concept( 'downfallofnumenor', 'Низвержения Нуменора' )|E] эти земли враждовали, воюя друг с другом. Беллакар процветал, а Ан-Балкумаган бушевал, Тани-Хазад стремился сохранить застывший, вечный порядок. Но в конце концов, разве всё это не [Concept( 'adunai', 'адунайское' )|E] королевство?\n\nКонечно, вместе мы сильнее, чем порознь. Если мы сможем объединить эти давно враждующие земли под одним знаменем, возможно, это туманное, но древнее имя сможет родиться заново, с целью и силой."
- decision_proclaim_pharazain_confirm:0 "Родина адунаим!"
+ decision_proclaim_pharazain_confirm:0 "Родина адунай!"
  control_of_pharazain_desc:0 "Вы должны контролировать по крайней мере #V 85%#! [Concept( 'counties', 'графств' )|E] [Concept( 'region', 'региона' )|E] [GetGeographicalRegion('special_pharazain').GetName]"
 
  ################################
@@ -888,7 +888,7 @@
 
  decision_revive_gundabad:0 "Возродить Гундабад"
  decision_revive_gundabad_tooltip:0 "Восстановить великое королевство орков Гундабад"
- decision_revive_gundabad_desc:0 "Гундабад остаётся лишь тенью себя прежнего. Некогда могущественнейшее королевство орков в землях Запада, разграбление Гундабада и Битва Пяти Воинств погубили нас. Наша численность уменьшилась, наши армии утратили былую мощь. Мы должны обратить это падение вспять, чтобы когда-нибудь отомстить людям, эльфам и гномам!\n\nПервым шагом будет приведение в порядок наших внутренних земель, где возвысились мелкие вождества гоблинов и орков. Мы должны заставить их встать на колени, и их силой мы восстановим себя."
+ decision_revive_gundabad_desc:0 "[gundabad|E] остаётся лишь тенью себя прежнего. Некогда могущественнейшее королевство [Concept('orc', 'орков')|E] в [Concept('westlands', 'землях Запада')|E], разграбление Гундабада и Битва Пяти Воинств погубили нас. Наша численность уменьшилась, наши армии утратили былую мощь. Мы должны обратить это падение вспять, чтобы когда-нибудь отомстить [Concept('men', 'людям')|E], [Concept('elves', 'эльфам')|E] и [Concept('dwarves', 'гномам')|E]!\n\nПервым шагом будет приведение в порядок наших внутренних земель, где возвысились мелкие вождества гоблинов и орков. Мы должны заставить их встать на колени, и их силой мы восстановим себя."
  decision_revive_gundabad_confirm:0 "Напомнить им о нашей силе!"
 
  decision_gundabad_ignite_the_forges:0 "Разжечь кузни Гундабада"
@@ -943,6 +943,16 @@
  decision_reclaim_ray_desc:0 "В первые дни наш народ творил могучие дела, учась у Древних, что проснулись под звёздами, и у духов, что обитали среди нас. Затем с востока пришли Чужаки. Некоторое время мы жили в гармонии, но они стали недоверять и ненавидеть нас, оттесняя в леса Суза-Сумар с их постоянно растущим числом. Мы забыли многое из того, что знали когда-то, и стали простым народом, едва способным поддерживать великие каменные здания, которые мы когда-то возвели. Но, возможно, если мы сможем дать отпор захватчикам, мы сможем вернуть себе утраченный авторитет..."
  decision_reclaim_ray_confirm:0 "Сузуш Агхор - наша родина!"
 
+ decision_recreate_zajantak:0 "Recreate the Kingdom of Zajantak"
+ decision_recreate_zajantak_tooltip:0 "Restore the War-kingdom of the Forest by taking back its heartlands, and prepare a mighty blow against the Stormhost"
+ decision_recreate_zajantak_desc:0 "In long years past, we were a simple people - the folk of our tribes, living as savages in the forest, lived and died as they could, worthy of no song or tale. Then the Sea-kings sailed up the river Zaja, and united us into one great kingdom - Zajantak, the Forest of Zaja. For long years have we fought against the descendants of the Sea-kings - the Thôn an-Khârlôkh, who have enslaved our miserable kin - but now we are scattered, with petty chieftains vying for some little semblance of power. But the forest must unite once more - under my rule, Zajantak shall be restored. Never again shall we be slaves!"
+ decision_recreate_zajantak_confirm:0 "There was a dream that once was [GetTitleByKey('k_zajantak').GetNameNoTier]..."
+
+ decision_break_stormhost_power:0 "Free your kinsmen from the Stormhost"
+ decision_break_stormhost_power_tooltip:0 "Set your forces against the Stormhost to free a portion of your peoples from the Adûnâi"
+ decision_break_stormhost_power_desc:0 "Zajantak is restored, and the Stormhost quavers. Without the power of the Storm-Sorceror, the Adûnâim have grown weak and impotent, and yet they still clutch onto the yoke with the last vestiges of their strength. More and worse, they have grown crueler since the restoration of our kingdom, and whatever of our kinsmen that have not been destroyed by their new deprativies are bleeding from a sharper lash, keen with new sadism.\n\nWe cannot assail the Stormhost in entire - but we shall chip away at the chains that hold our kinsmen. Vengeance comes, and with bloody blade!"
+ decision_break_stormhost_power_confirm:0 "Never again shall we be slaves!"
+
  ################################
  ####### Tedjin Decisions #######
  ################################
@@ -985,11 +995,17 @@
  decision_integrate_tulwang_tooltip:0 "Реинтегрировать Тулванг, одно из Семи владычеств Тани-Хазада"
  decision_integrate_tulwang_desc:0 "Слишком долго королевства Тани-Хазада были отдельными мелкими вотчинами, препирающимися и воюющими друг с другом, но теперь, когда я [Select_CString(ROOT.Char.IsFemale,'объединила','объединил')] Семь земель, важно восстановить интеграцию тех земель, которые вышли из-под нашего контроля. Тулванг - седьмое королевство Тани-Хазада, но сегодня многие считают его продолжением большого королевства Бозишнаруд, поэтому теперь, когда мы установили прочную власть в Тулванге, важно, чтобы весь мир признал этот регион нашим."
  decision_integrate_tulwang_confirm:0 "Объединённые Семь земель"
+ decision_integrate_tulwang_an_balkumagan_priamry_title:0 "Either [GetTitleByKey('e_anbalkumagan').GetNameNoTier] or [GetTitleByKey('e_pharazain').GetNameNoTier] is your primary title"
 
  decision_murder_bellakar:0 "Вторгнуться в Беллакар"
  decision_murder_bellakar_tooltip:0 "Pretty Self Explanitory"
  decision_murder_bellakar_desc:0 "Слишком долго Беллакар противостоял мощи Грозовых воевод. Пришло время сокрушить этих лже-адунай."
  decision_murder_bellakar_confirm:0 "Разрушим их города"
+
+ decision_destroy_zajantak:0 "Destroy the Kingdom of Zajantak"
+ decision_destroy_zajantak_tooltip:0 "Marshal your power against the Men of the Forest, and break their new kingdom"
+ decision_destroy_zajantak_desc:0 "We have been too generous to the simple people of the forest. We let them live on their own, in their minor polities and squabbling tribes, and now they talk about a King in the Forest, and resistance. And we have seen it spread to our own servants - but I will not let this stand.\n\nFor too long have we stood upon these western shores, proud and noble, under the service of the King of Men. We are the Adûnâi, and our strength comes from Zigûr himself. We are the Masters of the World. We will not allow these upstarts to humble us - we shall put them in their place!"
+ decision_destroy_zajantak_confirm:0 "I bid you stand, Men of the West!"
 
  #############################
  #### Balan-Lai Decisions ####
@@ -1454,10 +1470,10 @@
  decision_restore_durin_throne_confirm:0 "Наша слава возрождена"
  durin_hall_upgrade_holding_tooltip:0 "Подземное владение в провинции [GetTitleByKey('b_durins_hall').GetNameNoTier] будет улучшено на два уровня. Если оно не может быть улучшено, то за каждый уровень, которое оно могло бы получить, владение [GetTitleByKey('c_durins_hall').GetNameNoTier] получит 5 [Concept( 'development', 'развития' )|E]."
 
- decision_reunite_yellow_mountains:0 "TEMP Title"
- decision_reunite_yellow_mountains_desc:0 "TEMP Desc"
- decision_reunite_yellow_mountains_tooltip:0 "TEMP Tooltip"
- decision_reunite_yellow_mountains_confirm:0 "TEMP Confirm"
+ decision_reunite_yellow_mountains:0 "Unite the Yellow Mountains"
+ decision_reunite_yellow_mountains_desc:0 "For many years, we [blacklocks|E] have settled in the Yellow Mountains, fighting against the [goblins|E] and other filth that infested the Mountains. Although we have in the past attempted to united both the southern and northern parts of these mountains, the attempt was short-lived and unsuccesful. Yet that attempt was made centuries ago, and once more the opportunity presents itself to us. Let the mighty sons of Thrár the Proud who have inhabited these ancient mountains for untold years be at last united!"
+ decision_reunite_yellow_mountains_tooltip:0 "The Yellow Mountains shall be united!"
+ decision_reunite_yellow_mountains_confirm:0 "No longer divided, but one!"
 
  #####################################
  #### Artifact Crafting Decisions ####
@@ -1518,7 +1534,8 @@
  struggle_thani_hazad_dissolution_select_tooltip:0 "Распустить [balan_lai|E], положив конец [Concept('struggle', 'борьбе')|E] и проложить новый путь для региона."
  struggle_thani_hazad_dissolution_confirm:0 "Это станет лишь сноской в истории!"
  struggle_thani_hazad_dissolution_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_disintegration|E]"
- struggle_thani_hazad_dissolution_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 60%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+ struggle_thani_hazad_dissolution_valid_tooltip_condition_1:0 "Вы контролируете по крайней мере #V 60%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+ struggle_thani_hazad_dissolution_valid_tooltip_condition_2:0 "Вы контролируете по крайней мере #V 50%#! региона [GetGeographicalRegion('custom_mannish_thani_hazad').GetName]"
  struggle_thani_hazad_dissolution_effect_involved:0 "Титул [GetTitleByKey('e_thani_hazad').GetName] станет недоступным для создания персонажам со свойством [GetTrait('balan_lai_member').GetName( GetNullCharacter )] на #N 50#! лет"
  struggle_thani_hazad_dissolution_duchy_effect:0 "Каждое [duchy|El], полностью контролируемое [Concept('ruler', 'правителем')|E] с титулом [Concept('kingdom', 'королевского')|E] уровня, будет передано [de_jure|El] владельцу"
  struggle_thani_hazad_dissolution_claim_effect:0 "Каждый [Concept('struggle_involved', 'вовлечённый в борьбу')|E] [ruler|El] получит [Concept('claim', 'претензии')|E] на всех вовлечённых правителей, граничащих с ним"
@@ -1542,6 +1559,13 @@
  ### Ceura Altarnieva - 'Renewal of the Empire, Quenya transliteration for Renovatio Imperii' Replaced with Adunaic "Sattamagân Thâni" "Reunification of the Realm" by Trig (Quenya would be Envinyatale Turmeno) ###
  struggle_thani_hazad_unification_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_unification|E]"
  struggle_thani_hazad_unification_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+
+ struggle_thani_hazad_interloper_dissolution:0 "Dissolve the Balan-Lai"
+ struggle_thani_hazad_interloper_dissolution_desc:0 "For too long has this land been trapped in the frozen order of the princes! They have grown fat on the plenty of the land, while denying all others opportunity for rank or honor. Well, no longer. We shall shatter their cherished council, and truly free this land to find a new destiny."
+ struggle_thani_hazad_interloper_dissolution_tooltip:0 "Dissolve the [balan_lai|E], end the [thani_hazad_struggle|E] [struggle|E], and forge a new path for the region."
+ struggle_thani_hazad_interloper_dissolution_confirm:0 "Confine it to history!" 
+
+ struggle_thani_hazad_character_is_involved:0 "You are [struggle_involved|E] in the [thani_hazad_struggle|E] struggle"
 
  struggle_thani_hazad_struggle_ends:0 "Вы завершите борьбу «[thani_hazad_struggle|E]»"
 
@@ -1611,6 +1635,8 @@
  decision_beat_mag_tooltip:0 "Вы рассматриваете варианты изгнания магрийских захватчиков"
  beat_mag:0 "Вы готовы изгнать варваров из своих земель"
  beat_mag_effect:0 "Вы рассматриваете варианты изгнания магрийских захватчиков"
+ defeated_bandits_via_decision:0 "You have completed the #V Eliminate the Bandits#! decision"
+ defeated_bandits_via_normal_mechanics:0 "You have hold the [GetTitleByKey('c_obishamba').GetNameNoTier] county"
 
  decision_beat_bandits:0 "Уничтожить разбойников"
  decision_beat_bandits_desc:0 "PLACEHOLDER"

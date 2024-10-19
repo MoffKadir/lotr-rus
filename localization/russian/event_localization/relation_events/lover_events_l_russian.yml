@@ -22,7 +22,7 @@
  lover.0002.dislike.lustful:0 "К моему удивлению, когда [first_lover.GetTitledFirstName] [Select_CString(first_lover.IsFemale, 'сказала', 'сказал' )], что все кончено, меня охватило облегчение. Наконец-то можно было признать, что [first_lover.GetSheHe] больше не может удовлетворять мои желания."
  lover.0002.like.understanding:0 "И хотя [first_lover.GetTitledFirstName] с трудом [Select_CString(first_lover.IsFemale, 'подбирала', 'подбирал' )] слова, мне сразу стало ясно, что ничего хорошего меня не ждет. Мне пришлось сдержать печаль, чтобы не усложнять все еще больше. Моя рука нежно сжала [first_lover.GetHersHis], и тогда [first_lover.GetHersHis] слова полились, словно водопад, подтвердив мои самые потаенные страхи."
  lover.0002.dislike.understanding:0 "Что бы ни [Select_CString(first_lover.IsFemale, 'хотела', 'хотел' )] сказать [first_lover.GetTitledFirstName], [first_lover.GetHersHis] это явно тяготило. И хотя мои чувства к н[first_lover.GetHerHim] ослабли, мне все равно было больно видеть [first_lover.GetHerHis] в таком состоянии.\n\nПосле моих заверений, что все будет хорошо, [first_lover.GetSheHe] наконец [Select_CString(first_lover.IsFemale, 'сказала', 'сказал' )], что между нами все кончено."
- lover.0002.like.angry:0 "После того как [first_lover.GetTitledFirstName] [Select_CString(first_lover.IsFemale, 'мялась', 'мялся' )] добрый час, [first_lover.GetHerHis] признание не стало для меня неожиданностью. Но вот моя собственная реакция меня удивила. Злые слова хлынули из моего рта подобно лаве, и мне даже не хотелось прекращать их поток. Мне хотелось, чтобы [first_lover.GetFirstName] [Select_CString(first_lover.IsFemale, 'ощутила', 'ощутил' )] ту же боль, что и я.\n\nЯрость защищала меня, пока [first_lover.GetFirstName] не [Select_CString(first_lover.IsFemale, 'выбежала', 'выбежал' )] из комнаты. А потом у меня не осталось ничего, кроме мучительного осознания, что меня отвергли."
+ lover.0002.like.angry: "После того как [first_lover.GetTitledFirstName] [Select_CString(ROOT.from.IsFemale, 'мялась', 'мялся' )] добрый час, [first_lover.GetHerHis] признание не стало для меня неожиданностью. Но вот моя собственная реакция меня удивила. Злые слова хлынули из моего рта подобно лаве, и мне даже не хотелось прекращать их поток. Мне хотелось, чтобы [first_lover.GetFirstName] [Select_CString(ROOT.from.IsFemale, 'ощутила', 'ощутил' )] ту же боль, что и я.\n\nЯрость защищала меня, пока [ROOT.From.Char.GetFirstName] не [Select_CString(ROOT.from.IsFemale, 'выбежала', 'выбежал' )] из [ROOT.Char.Custom('GetRoom_RU_Gen')]. А потом у меня не осталось ничего, кроме мучительного осознания, что меня отвергли."
  lover.0002.dislike.angry:0 "После того как [first_lover.GetTitledFirstName] [Select_CString(first_lover.IsFemale, 'мялась', 'мялся' )] добрый час, у меня уже не было сил сдерживать свою ярость. Все язвительные слова, что мне когда-либо хотелось высказать, вырвались из моего рта подобно лаве.\n\nБоль в [first_lover.GetHersHis] глазах придала мне сил, и, когда [first_lover.GetTitledFirstName] наконец [Select_CString(first_lover.IsFemale, 'прошептала', 'прошептал' )], что между нами все кончено, стало окончательно ясно, что победа за мной."
  lover.0002.like.paranoid:0 "Когда [first_lover.GetTitledFirstName] [Select_CString(first_lover.IsFemale, 'сказала', 'сказал' )], что больше не хочет меня, это не стало сюрпризом. Уже давно это было видно по [first_lover.GetHerHis] глазам, по неуверенности [first_lover.GetHerHis] прикосновений. На прямые вопросы [first_lover.GetSheHe] не [Select_CString(first_lover.IsFemale, 'отвечала', 'отвечал' )], но, похоже, уже не [Select_CString(first_lover.IsFemale, 'могла', 'мог' )] скрывать своих чувств. Или [first_lover.GetHerHim] просто приятно было смотреть на мои страдания..."
  lover.0002.dislike.paranoid:0 "Когда [first_lover.GetTitledFirstName] [Select_CString(first_lover.IsFemale, 'сказала', 'сказал' )] мне, что больше не хочет меня, это не стало сюрпризом. Мне уже давно было ясно, что это конец, пусть [first_lover.GetSheHe] и [Select_CString(first_lover.IsFemale, 'отрицала', 'отрицал' )] это. Возможно, [first_lover.GetSheHe] [Select_CString(first_lover.IsFemale, 'затеяла', 'затеял' )] весь этот роман, просто чтобы наказать меня... Да, без сомнения, [Select_CString(first_lover.IsFemale, 'эта мерзавка', 'этот мерзавец' )] в восторге от моих страданий!"
@@ -161,22 +161,22 @@
 
 
  lover.1001.t:0 "Слухи и предположения"
- lover.1001.desc:0 "[Select_CString(lover.IsFemale, 'Моя', 'Мой' )] [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sCharacter('snoopy_lover') )] [snoopy_lover.GetTitledFirstName] многое слышит при дворе.\n\nНедавно до н[snoopy_lover.GetHerHis] дошла прелюбопытная история о том, чем занимается [Select_CString(secret_holder.IsFemale, 'моя', 'мой' )] [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sCharacter('secret_holder') )] [secret_holder.GetTitledFirstName], когда никто не видит..."
+ lover.1001.desc: "[Select_CString(snoopy_lover.IsFemale, 'Моя', 'Мой' )] [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sCharacter('snoopy_lover') )] [snoopy_lover.GetTitledFirstName] знает, чем живет [ROOT.Char.Custom('GetCourt')|l].\n\nНедавно до [Select_CString(snoopy_lover.IsFemale, 'нее', 'него' )] дошла прелюбопытная история о том, чем занимается [Select_CString(secret_holder.IsFemale, 'моя', 'мой' )] [ROOT.GetCharacter.Custom2('RelationToMe' , SCOPE.sCharacter('secret_holder') )] [secret_holder.GetTitledFirstName], когда никто не видит..."
  lover.1001.a:0 "Это очень полезные сведения, [ROOT.GetCharacter.Custom('LoverPetName')]."
 
  lover.1002.t:0 "Потянуть за ниточки"
- lover.1002.desc:0 "[Select_CString(lover.IsFemale, 'Моя', 'Мой' )] [ROOT.GetCharacter.Custom('LoverPetName')] [lover.GetTitledFirstName] многое знает о том, как продираться сквозь хитросплетения придворных отношений. [Select_CString(lover.IsFemale, 'Она', 'Он' )] предлагает использовать эти навыки в переговорах, целью которых является [target.GetTitledFirstName]."
+ lover.1002.desc: "[Select_CString(lover.IsFemale, 'Моя', 'Мой' )] [ROOT.GetCharacter.Custom('LoverPetName')] [lover.GetTitledFirstName] многое знает о том, как продираться сквозь хитросплетения отношений, которыми живет [ROOT.Char.Custom('GetCourt')|l]. [Select_CString(lover.IsFemale, 'Она', 'Он' )] предлагает использовать эти навыки в переговорах, целью которых является [target.GetTitledFirstName]."
  lover.1002.a:0 "Отличная идея!"
  lover.1002.b:0 "Я не могу допустить, чтобы [lover.GetFirstNameNoTooltip] [Select_CString(lover.IsFemale, 'участвовала', 'участвовал' )] в этом."
 
  lover.1003.t:0 "Любящие объятия"
- lover.1003.desc:0 "[ROOT.Char.GetTitleTierName] — бремя, что давит на меня все сильнее, и только теплые объятия, что раскрывает мне [Select_CString(lover.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe' , SCOPE.sC('lover') )] [lover.GetTitledFirstName], помогают облегчить его.\n\n«Пожалуйста, [ROOT.Char.Custom('LoverPetName')], позволь помочь тебе расслабиться»."
+ lover.1003.desc: "[ROOT.Char.GetTitleAsNameNoTooltip] — бремя, что давит на меня все сильнее, и только теплые объятия, что раскрывает мне [Select_CString(lover.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe' , SCOPE.sC('lover') )] [lover.GetTitledFirstName], помогают облегчить его.\n\n«Пожалуйста, [ROOT.Char.Custom('LoverPetName')], позволь помочь тебе расслабиться»."
  lover.1003.a:0 "Что бы мы делали друг без друга, любовь моя?"
  lover.1003.b:0 "То что нужно!"
 
  lover.1004.t:0 "Давай сбежим"
  lover.1004.desc:0 "[Select_CString(lover.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.Custom2('RelationToMe' , SCOPE.sCharacter('lover') )] [lover.GetTitledFirstName] [lover.Custom('quirk_pos_adverb')] улыбается, обнимая меня, и я вновь вспоминаю, почему так дорожу [Select_CString(lover.IsFemale, 'ей', 'им' )].\n\nКак хорошо было бы на какое-то время уехать, только мы вдвоем..."
- lover.1004.a:0 "Мне говорили, что графство [county.GetNameNoTier] — прекрасное место в это время года."
+ lover.1004.a: "Мне говорили, что графство [county.GetNameNoTier] — прекрасное место в это время года."
  lover.1004.a.tt:0 "#F Романтическое путешествие... Кто знает, что может произойти?#!"
  lover.1004.b:0 "Спальня — вполне захватывающий конечный пункт!"
 
@@ -217,12 +217,12 @@
  lover.2001.a:0 "Никто не знает. Точно говорю."
 
  lover.2002.t:0 "Бремя любви"
- lover.2002.desc:0 "Я горю от страсти к н[lover.GetHerHim], но [lover.GetTitledFirstName] требует столько внимания и заботы, а это нелегко в такие времена!\n[Select_CString(lover.IsFemale, 'Она', 'Он' )] знает, что я [ROOT.Char.Custom('my_title')], что у меня масса обязательств и дел и я, разумеется, не могу провести весь оставшийся день с [Select_CString(lover.IsFemale, 'ней', 'ним' )]!"
+ lover.2002.desc: "Я горю от страсти к [Select_CString(lover.IsFemale, 'ней', 'нему' )], но [lover.GetTitledFirstName] требует столько внимания и заботы, а это нелегко в такие времена!\n[Select_CString(lover.IsFemale, 'Она', 'Он' )] знает, что я [ROOT.Char.GetTitleAsNameNoTooltip|l], что у меня масса обязательств и дел и я, разумеется, не могу провести весь оставшийся день с [Select_CString(lover.IsFemale, 'ней', 'ним' )]!"
  lover.2002.secret:0 "\n\nДаже сохранить наш роман в тайне оказалось непросто!"
  lover.2002.a:0 "Нет, [ROOT.GetCharacter.Custom('LoverPetName')], дело не в том, что мне все равно!"
 
  lover.2003.t:0 "«Бремя» любви"
- lover.2003.desc:0 "[Select_CString(lover.IsFemale, 'Она', 'Он' )] винит во всем свои обязательства и дела — [first_lover.GetSheHe] же [first_lover.Custom('my_title')]! — но кажется, что [first_lover.GetTitledFirstName] уже не смотрит на меня как раньше.\n\nНеужели я так много прошу? Я просто хочу, чтобы [Select_CString(lover.IsFemale, 'та', 'тот' )], кто говорит, что любит меня, [Select_CString(lover.IsFemale, 'нашла', 'нашел' )] для меня немного времени."
+ lover.2003.desc: "[Select_CString(first_lover.IsFemale, 'Она', 'Он' )] винит во всем свои обязательства и дела — [Select_CString(first_lover.IsFemale, 'она', 'он' )] же [first_lover.GetTitledFirstName]! — но кажется, что [first_lover.GetTitledFirstName] уже не смотрит на меня как раньше.\n\nНеужели я так много прошу? Я просто хочу, чтобы [Select_CString(first_lover.IsFemale, 'та', 'тот' )], кто говорит, что любит меня, [Select_CString(first_lover.IsFemale, 'нашла', 'нашел' )] для меня немного времени."
  lover.2003.a:0 "Я заслуживаю лучшего."
 
  lover.2004.t:0 "Нарушенное обещание"
@@ -353,9 +353,9 @@
  lover.3214.a:0 "А-ха-ха... ага. Шутка."
 
  lover.3215.t:0 "Пропой свою хвалу"
- lover.3215.desc:0 "Поскольку я и [Select_CString(lover.IsFemale, 'моя любимая', 'мой любимый' )] [SCOPE.sC('lover').GetTitledFirstName] не можем быть вместе, я боюсь, что [lover.GetSheHe] забудет, сколь сильны мои чувства к н[lover.GetHerHim].\n\nЕсли [lover.Custom('MusicalPerformer')] отправится представлять меня в деле куртуазной любви, очаровывая [SCOPE.sC('lover').GetHerHis] поэмами, песнями и сладкими речами в мою честь, то это точно напомнит [lover.GetHerHim] о моих чувствах!"
+ lover.3215.desc: "Поскольку я и [Select_CString(lover.IsFemale, 'моя любимая', 'мой любимый' )] [lover.GetTitledFirstName] не можем быть вместе, я боюсь, что [Select_CString(lover.IsFemale, 'она', 'он' )] забудет, сколь сильны мои чувства к [Select_CString(lover.IsFemale, 'ней', 'нему' )].\n\nЕсли [lover.Custom('MusicalPerformer')] отправится представлять меня в деле куртуазной любви, очаровывая [Select_CString(lover.IsFemale, 'ее', 'его' )] поэмами, песнями и сладкими речами в мою честь, то это точно напомнит [Select_CString(lover.IsFemale, 'ей', 'ему' )] о моих чувствах!"
  lover.3215.a:0 "Я немедленно отправлю лучшего из лучших!"
- lover.3215.a.tt:0 "[lover.Custom('MusicalPerformer')] из числа моих придворных переместится ко двору во владении [court_location.GetNameNoTier]"
+ lover.3215.a.tt: "[lover.Custom('MusicalPerformer')], что служит мне, переместится [THIS.Char.Custom('GetCourt_RU_6')] во владении [court_location.GetNameNoTier]"
  lover.3215.b:0 "Да с этим каждый справится, разве нет?"
  lover.3215.c:0 "Я не буду полагаться на какого-то менестреля в вопросах ухаживания."
  lover.3215.c.tt:0 "#F Наверняка мне представятся другие, более личные возможности#!"
@@ -420,7 +420,7 @@
  lover.7003.b:0 "Наверное, это отвращение."
 
  lover.7004.t:0 "[Select_CString(proposing_rival.IsFemale, 'Моя', 'Мой' )] [SCOPE.sC('proposing_rival').Custom('InsultAdjective')] [Select_CString(proposing_rival.IsFemale, 'соперница', 'соперник' )]"
- lover.7004.desc_opening:0 "Посреди захватывающей дискуссии, предметом которой является [ROOT.Char.Custom('subject_of_interest')], я вижу, как хмурится [proposing_rival.GetTitledFirstName] на другом конце комнаты.\n\n"
+ lover.7004.desc_opening: "Посреди захватывающей дискуссии, предметом которой является [ROOT.Char.Custom('subject_of_interest')], я вижу, как хмурится [proposing_rival.GetTitledFirstName] на другом конце [ROOT.Char.Custom('GetRoom_RU_2')].\n\n"
  lover.7004.desc_potential_lover_is_go:0 "Наши взгляды встречаются, и, к моему удивлению, [proposing_rival.GetSheHe] [proposing_rival.Custom('quirk_pos_adverb')] улыбается. Как мне раньше удавалось не замечать, что [proposing_rival.GetSheHe] [Select_CString(proposing_rival.IsFemale, 'такая', 'такой' )] [proposing_rival.Custom2('ComplimentAdjective', ROOT.Char)][Select_CString(proposing_rival.IsFemale, 'ая', 'ый' )] [proposing_rival.GetWomanMan]?"
  lover.7004.desc_not:0 "Наши взгляды встречаются, [SCOPE.sCharacter('proposing_rival').GetSheHe] хмурится и быстро отворачивается. Вот [SCOPE.sC('proposing_rival').Custom('InsultNoun')]!"
  lover.7004.a:0 "Я улыбаюсь в ответ?.."
