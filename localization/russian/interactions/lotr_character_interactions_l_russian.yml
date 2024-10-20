@@ -39,7 +39,10 @@
  buy_blacklock_mercentary_interaction:0 "Нанять наёмников из клана Черновласов"
  buy_blacklock_mercentary_interaction_desc:0 "Попытаться нанять наёмников из гномьего клана [Concept('blacklocks', 'Черновласов')|E]"
  buy_blacklock_mercentary_interaction_accept_tt:0 "Вы попытаетесь нанять наёмников из клана [Concept('blacklocks', 'Черновласов')|E] у персонажа [recipient.GetName]"
- buy_blacklock_mercentary_interaction_alignment_tt:0 "Нельзя нанять наёмников у персонажа с противоположным мировоззрением"
+ buy_blacklock_mercentary_interaction_opposite_alignment_tt:0 "Opposite alignemnt: $VALUE|=+0$"
+ buy_blacklock_mercentary_interaction_non_opposite_alignment_tt:0 "Non-opposite alignemnt: $VALUE|=+0$"
+ buy_blacklock_mercentary_interaction_already_has_blacklock_mercenaries:0 "Has a standing retinue of Blacklocks: $VALUE|=+0$"
+ RECIPIENT_IS_CONTENT:0 "[recipient.GetTitledFirstName] is [GetTrait('content').GetName( GetPlayer )]: $VALUE|=+0$"
  minor_mercenaries:0 "Небольшой отряд наёмников"
  medium_mercenaries:0 "Средний отряд наёмников"
  large_mercenaries:0 "Крупный отряд наёмников"
@@ -71,3 +74,5 @@
 
  ally_with_tributary_ruler:0 "[recipient.GetTitledFirstName] будет [Select_CString(recipient.IsFemale, 'освобождена', 'освобождён' )] в качестве [Concept('tributary', 'данника')|E]"
  balan_lai_hesitant_to_fight_other_balan_lai:0 "[recipient.GetTitledFirstName] is hesitant to fight against another Balan-Lai member"
+
+ need_three_dwarven_patrons_to_request_troops:0 "#V You#! need at least #bold 5#! dwarven patrons!"

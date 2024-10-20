@@ -343,6 +343,7 @@
  decision_rebuild_royal_road_desc:0 "Королевский тракт, известный некоторым как Дорога с севера на юг или Зеленая дорога, давно пришла в упадок после гибели королевства [arnor|E]. \n\nЕсли бы дорога была восстановлена, из северных земель вновь хлынул бы торговый поток, приносящий пользу как [Concept('eriador', 'Эриадору')|E], так и [Concept('gondor', 'Гондору')|E]."
  decision_rebuild_royal_road_tooltip:0 "Вы начнете восстанавливать Королевский тракт."
  decision_rebuild_royal_road_confirm:0 "Пусть дорога будет восстановлена!"
+ decision_rebuild_royal_road_tooltip_condition:0 "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('special_royal_road').GetName]"
 
  ##################################
  ### Reunited Kingdom Decisions ###
@@ -1718,6 +1719,21 @@
  ############################
  ### Adventurer Decisions ###
  ############################
+ settle_wilderness_county_or_duchy_decision:0 "Settle Region"
+ settle_wilderness_county_or_duchy_decision_desc:0 "Settle the local region, becoming a landed ruler and leaving behind your adventuring days."
+ settle_wilderness_county_or_duchy_decision_tooltip:0 "Settle the local region, becoming a landed [ruler|E]"
+ settle_one_county:0 "Settle the immediate [county|E]"
+ settle_one_county_tooltip:0 "$settle_one_county$"
+ settle_one_county_desc:0 ""
+ settle_duchy:0 "Attempt to settle the [duchy|E]"
+ settle_duchy_tooltip:0 "$settle_duchy$"
+ settle_duchy_desc:0 ""
+ settle_wilderness_county_or_duchy_decision_confirm:0 "It is time to make a home..."
+ settle_wilderness_county_or_duchy_basic_effect:0 "For every #V 500#! Men-at-Arms, you will settle #P 1#! [county|E]"
+ settle_wilderness_county_or_duchy_current_settle_limit_effect:0 "Current counties that can be settled: #V [GetPlayer.MakeScope.ScriptValue('lotr_settle_wilderness_as_adventurer_county_limit')]#!"
+ settle_wilderness_county_or_duchy_destroy_maa_effect:0 "#V 50%#! of your Men-at-Arms will be destroyed!"
+ settle_wilderness_county_or_duchy_not_enough_maa_tt:0 "You do not have enough Men-at-Arms"
+
  ### start_city_construction_decision
  county_is_wilderness_culture_tt:0 "Графство не заселено"
 

@@ -23,6 +23,7 @@
  ##### Missing Vanilla Localisation #####
 
  #IS_ALIVE_TRIGGER_GLOBAL:0 "Жив"
+ NOT_is_alive_filter:0 "[CHARACTER.GetShortUIName|V] [Select_CString( CHARACTER.IsLocalPlayer, 'мертвы', Select_CString(CHARACTER.IsFemale, 'мертва', 'мёртв' ))]"
  NOT_IS_ALIVE_TRIGGER_GLOBAL:0 "[Select_CString(CHARACTER.IsFemale, 'Мертва', 'Мёртв' )]"
  IS_ALIVE_TRIGGER_FIRST:0 "Вы живы"
  NOT_IS_ALIVE_TRIGGER_FIRST:0 "Вы мертвы"
@@ -86,7 +87,9 @@
  CHARACTER_IS_REALM_NEIGHBOR_TRIGGER_THIRD:0 "[TARGET_CHARACTER.GetShortUIName] граничит с [Concept('realm', 'державой')|E] персонажа [CHARACTER.GetShortUINamePossessive]"
  NOT_CHARACTER_IS_REALM_NEIGHBOR_TRIGGER_THIRD:0 "[TARGET_CHARACTER.GetShortUIName] не граничит с [Concept('realm', 'державой')|E] персонажа [CHARACTER.GetShortUINamePossessive]"
 
-#####
+ DEBUG_I_HAVE_MORE_GOLD_TRIGGER:0 "Недостаточно [Concept('gold', 'золота')|E]"
+
+ #####
 
  IS_TRIBUTARY_TRIGGER_GLOBAL:0 "Является государством-данником или протекторатом"
  NOT_IS_TRIBUTARY_TRIGGER_GLOBAL:0 "#bold Не#! является государством-данником или протекторатом"

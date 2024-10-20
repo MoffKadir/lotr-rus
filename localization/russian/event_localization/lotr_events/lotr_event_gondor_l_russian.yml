@@ -811,8 +811,10 @@
 
  gondor.4002.t:0 "Покидая Мордорский дозор"
  gondor.4002.desc:0 "Пришло время отправить в отставку воинов, стоящих на страже земель [Concept('mordor', 'Мордора')|E], ибо они нужны в другом месте. Эти выносливые люди верно служили [Select_CString(ROOT.Char.IsFemale, 'своей госпоже', 'своему господину' )] и теперь могут помочь державе в других местах. \n\n[Select_CString(watch_commander.IsFemale, 'Последняя командующая', 'Последний командующий' )] ордена [GetTitleByKey('d_watch_on_mordor').GetNameNoTier], [watch_commander.GetName], также будет [Select_CString(watch_commander.IsFemale, 'освобождена', 'освобождён' )] от своих обязанностей. [watch_commander.GetSheHe] [Select_CString(watch_commander.IsFemale, 'выполнила', 'выполнил' )] возложенную задачу с верностью и долгом, и будет [Select_CString(watch_commander.IsFemale, 'вознаграждена', 'вознаграждён' )] по заслугам..."
+ gondor.4002.desc.self:0 "The time has come to retire the soldiers keeping watch on the land of [mordor|E], for they are needed elsewhere. These hardy men have served their Lord faithfully and may now help the realm in other places. \n\nI shall retire as commander of [GetTitleByKey('d_watch_on_mordor').GetNameNoTier], as such an institution seems to be no longer required..."
  gondor.4002.a:0 "При моём дворе для вас найдётся место."
  gondor.4002.b:0 "Средства Дозора - ваши. Ступайте и живите в мире."
+ gondor.4002.c:0 "Ныне мой дозор окончен."
  mordor_watchmen:0 "Войска Мордорского дозора"
 
  ### Enter/Leave Realm Events - Gondor ###
