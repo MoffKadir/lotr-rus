@@ -47,4 +47,4 @@
  lotr_bonded_over_caves:0 "[CHARACTER.GetShortUIName|U] и [TARGET_CHARACTER.GetShortUIName] сблизились из-за природной красоты обширных пещерных сетей [Concept('middleearth', 'Средиземья')|E]."
  lotr_bonded_over_caves_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U] и [CHARACTER.GetShortUIName] сблизились из-за природной красоты обширных пещерных сетей [Concept('middleearth', 'Средиземья')|E]."
 
- grudge_over_book_of_grudges:0 "[CHARACTER.GetShortUIName|U] came to despise [TARGET_CHARACTER.GetShortUIName] for attempting to steal [CHARACTER.GetHerHis] book of grudges."
+ grudge_over_book_of_grudges:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'стали', Select_CString(CHARACTER.IsFemale, 'стала', 'стал' ))] презирать [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] за попытку украсть [Select_CString( CHARACTER.IsLocalPlayer, 'вашу', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] книгу обид."

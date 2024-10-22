@@ -811,25 +811,25 @@
 
  gondor.4002.t:0 "Покидая Мордорский дозор"
  gondor.4002.desc:0 "Пришло время отправить в отставку воинов, стоящих на страже земель [Concept('mordor', 'Мордора')|E], ибо они нужны в другом месте. Эти выносливые люди верно служили [Select_CString(ROOT.Char.IsFemale, 'своей госпоже', 'своему господину' )] и теперь могут помочь державе в других местах. \n\n[Select_CString(watch_commander.IsFemale, 'Последняя командующая', 'Последний командующий' )] ордена [GetTitleByKey('d_watch_on_mordor').GetNameNoTier], [watch_commander.GetName], также будет [Select_CString(watch_commander.IsFemale, 'освобождена', 'освобождён' )] от своих обязанностей. [watch_commander.GetSheHe] [Select_CString(watch_commander.IsFemale, 'выполнила', 'выполнил' )] возложенную задачу с верностью и долгом, и будет [Select_CString(watch_commander.IsFemale, 'вознаграждена', 'вознаграждён' )] по заслугам..."
- gondor.4002.desc.self:0 "The time has come to retire the soldiers keeping watch on the land of [mordor|E], for they are needed elsewhere. These hardy men have served their Lord faithfully and may now help the realm in other places. \n\nI shall retire as commander of [GetTitleByKey('d_watch_on_mordor').GetNameNoTier], as such an institution seems to be no longer required..."
+ gondor.4002.desc.self:0 "Пришло время отправить в отставку солдат, стоящих на страже земель [Concept('mordor', 'Мордора')|E], ибо они нужны в другом месте. Эти выносливые люди верно служили своему лорду и теперь могут помочь королевству в других местах. \n\nЯ ухожу с поста командующего, поскольку [GetTitleByKey('d_watch_on_mordor').GetNameNoTier], похоже, изжил себя..."
  gondor.4002.a:0 "При моём дворе для вас найдётся место."
  gondor.4002.b:0 "Средства Дозора - ваши. Ступайте и живите в мире."
  gondor.4002.c:0 "Ныне мой дозор окончен."
  mordor_watchmen:0 "Войска Мордорского дозора"
 
  ### Enter/Leave Realm Events - Gondor ###
- gondor.6001.t:0 "Holding the Morannon"
- gondor.6001.desc:0 "The Black Gate, once guarded by the Watch on Mordor from the Towers of the Teeth, had long been under the control of the Shadow of [mordor|E]. Now, with our recent victories, it is once again in gondorian hands. \n\nWe shall keep safe the realm by keeping the darkness lockep up within the Black Land, with the Morannon ensuring that nothing slips past our watch. Let the Towers of the Teeth be the eyes of Gondor once more, and let the foul denizens of Mordor tremble at the wrath of the righteous men of the West!"
- gondor.6001.a:0 "A wrong put right!"
+ gondor.6001.t:0 "Захват Мораннона"
+ gondor.6001.desc:0 "Черные Врата, некогда охраняемые Мордорским дозором с Башен Зуба, долгое время находились под контролем Тени [Concept('mordor', 'Мордора')|E]. Теперь, после наших недавних побед, они снова в руках гондорцев. \n\nМы обеспечим безопасность державы, удерживая тьму на замке в Тёмных землях, а Мораннон проследит, чтобы ничто не ускользнуло от нашего присмотра. Пусть Башни Зуба вновь станут глазами Гондора, и пусть нечестивые обитатели Мордора трепещут перед гневом праведных людей Запада!"
+ gondor.6001.a:0 "Ошибка исправлена!"
  
- gondor.6002.t:0 "The Fall of the White City"
- gondor.6002.desc:0 "Minas Tirith burns. The White City, capital of the realm of [gondor|E], has been taken by her enemies; her seven gates breached and her seven walls overcome. \n\nThis is a catastrophe for the Men of Gondor. We must gather what strength we have left to cleanse the White City of the foes that now occupy her, and wipe clean the stain upon Gondor's honour. \n\nMinas Tirith #italic must #! be retaken!"
- gondor.6002.a:0 "Anárion's city, lost to or foes..."
+ gondor.6002.t:0 "Падение Белого города"
+ gondor.6002.desc:0 "Минас Тирит в огне. Белый город, столица королевства [gondor|E], захвачен врагами - семь ворот пробиты, семь стен преодолены. \n\nЭто катастрофа для людей Гондора. Мы должны собрать все оставшиеся силы, чтобы очистить Белый город от врагов, которые теперь занимают его, и стереть пятно с чести Гондора. \n\nМинас Тирит #italic должен быть#! возвращен!"
+ gondor.6002.a:0 "Город Анариона захвачен врагами..."
  
- gondor.6003.t:0 "Minas Tirith Reclaimed"
- gondor.6003.desc:0 "It is with great joy that I am finally able to inform my council that the White City, jewel and capital of [gondor|E] has finally been reclaimed by her rightful ruler. \n\nAfter its fall, Anárion's city has endured much hardship, occupied and defiled by unworthy invaders. Now, I shall spare no expense to see her glory and splendour restored."
- gondor.6003.a:0 "Never again shall it fall into enemy hands!"
+ gondor.6003.t:0 "Минас Тирит отвоёван"
+ gondor.6003.desc:0 "С великой радостью я могу сообщить своему совету, что Белый город, жемчужина и столица [Concept('gondor', 'Гондора')|E], наконец-то возвращен законному правителю. \n\nПосле своего падения город Анариона пережил немало лишений, захваченный и оскверненный недостойными захватчиками. Теперь я не пожалею средств, чтобы вернуть ему славу и великолепие."
+ gondor.6003.a:0 "Никогда больше он не попадет в руки врагов!"
  
- gondor.6004.t:0 "The Conquest of Umbar"
- gondor.6004.desc:0 "The Corsairs are defeated. [umbar|E], old haven of [numenor|E] and for long years the southermost port of [gondor|E], has been conquered, and its traitorous occupiers have been put to flight. \n\nLet us do the memory of King Eärnil, the Umbardacil proud, and fortify this city so it can never become a harbour of pirates ever again. \n\nThe reach of Gondor's navy expands, and with it, the restoration of all gondorian lands can continue..."
- gondor.6004.a:0 "Umbar is once again a city of the Faithful."
+ gondor.6004.t:0 "Завоевание Умбара"
+ gondor.6004.desc:0 "Пираты побеждены. [umbar|E], древняя гавань [Concept('numenor', 'Нуменора')|E] и издавна самый южный порт [Concept('gondor', 'Гондора')|E], завоеван, а его вероломные обитатели обращены в бегство. \n\nВоспоем же память короля Эарниля, Умбардакиля, и укрепим этот город, чтобы он никогда больше не стал пиратской гаванью. \n\nФлот Гондора расширяется, а вместе с ним близится и возвращение всех гондорских земель..."
+ gondor.6004.a:0 "Умбар вновь стал городом Верных."

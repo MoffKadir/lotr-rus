@@ -1472,7 +1472,7 @@
  durin_hall_upgrade_holding_tooltip:0 "Подземное владение в провинции [GetTitleByKey('b_durins_hall').GetNameNoTier] будет улучшено на два уровня. Если оно не может быть улучшено, то за каждый уровень, которое оно могло бы получить, владение [GetTitleByKey('c_durins_hall').GetNameNoTier] получит 5 [Concept( 'development', 'развития' )|E]."
 
  decision_reunite_yellow_mountains:0 "Объединить Жёлтые горы"
- decision_reunite_yellow_mountains_desc:0 "For many years, we [blacklocks|E] have settled in the Yellow Mountains, fighting against the [goblins|E] and other filth that infested the Mountains. Although we have in the past attempted to united both the southern and northern parts of these mountains, the attempt was short-lived and unsuccesful. Yet that attempt was made centuries ago, and once more the opportunity presents itself to us. Let the mighty sons of Thrár the Proud who have inhabited these ancient mountains for untold years be at last united!"
+ decision_reunite_yellow_mountains_desc:0 "Долгие годы мы, [blacklocks|E]Черновласы, жили в Жёлтых горах, сражаясь с [goblins|E]гоблинами и прочей нечистью, заполонившей эти горы. Хотя в прошлом мы пытались объединить южную и северную половины этих гор, попытки были недолгими и безуспешными. Однако эта попытка была предпринята много веков назад, и вот снова нам представляется возможность. Пусть же могучие сыны Трара Гордого, населявшие эти древние горы на протяжении несметных лет, наконец объединятся!"
  decision_reunite_yellow_mountains_tooltip:0 "Желтые горы будут едины!"
  decision_reunite_yellow_mountains_confirm:0 "Больше не разделены, а едины!"
 
@@ -1561,12 +1561,12 @@
  struggle_thani_hazad_unification_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_unification|E]"
  struggle_thani_hazad_unification_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
 
- struggle_thani_hazad_interloper_dissolution:0 "Dissolve the Balan-Lai"
- struggle_thani_hazad_interloper_dissolution_desc:0 "For too long has this land been trapped in the frozen order of the princes! They have grown fat on the plenty of the land, while denying all others opportunity for rank or honor. Well, no longer. We shall shatter their cherished council, and truly free this land to find a new destiny."
- struggle_thani_hazad_interloper_dissolution_tooltip:0 "Dissolve the [balan_lai|E], end the [thani_hazad_struggle|E] [struggle|E], and forge a new path for the region."
- struggle_thani_hazad_interloper_dissolution_confirm:0 "Confine it to history!" 
+ struggle_thani_hazad_interloper_dissolution:0 "Распустить Балан-лай"
+ struggle_thani_hazad_interloper_dissolution_desc:0 "Слишком долго эта земля находилась в ловушке закостенелых княжеских порядков! Они жирели на изобилии земли, отказывая всем остальным в возможности получить звание или почет. С этим покончено. Мы разрушим их заветный совет и по-настоящему освободим эту землю, чтобы она обрела новую судьбу."
+ struggle_thani_hazad_interloper_dissolution_tooltip:0 "Распустить [balan_lai|E], положить конец [Concept('struggle', 'борьбе')|E] «[thani_hazad_struggle|E]» и выковать новый путь для региона."
+ struggle_thani_hazad_interloper_dissolution_confirm:0 "Сделать сноску в истории!" 
 
- struggle_thani_hazad_character_is_involved:0 "You are [struggle_involved|E] in the [thani_hazad_struggle|E] struggle"
+ struggle_thani_hazad_character_is_involved:0 "Вы [Concept('struggle_involved', 'вовлечены')|E] в борьбу «[thani_hazad_struggle|E]»"
 
  struggle_thani_hazad_struggle_ends:0 "Вы завершите борьбу «[thani_hazad_struggle|E]»"
 
@@ -1719,20 +1719,20 @@
  ############################
  ### Adventurer Decisions ###
  ############################
- settle_wilderness_county_or_duchy_decision:0 "Settle Region"
- settle_wilderness_county_or_duchy_decision_desc:0 "Settle the local region, becoming a landed ruler and leaving behind your adventuring days."
- settle_wilderness_county_or_duchy_decision_tooltip:0 "Settle the local region, becoming a landed [ruler|E]"
- settle_one_county:0 "Settle the immediate [county|E]"
+ settle_wilderness_county_or_duchy_decision:0 "Заселить регион"
+ settle_wilderness_county_or_duchy_decision_desc:0 "Заселить местный регион, став землевладельцем и оставив позади дни, проведенные в странствиях."
+ settle_wilderness_county_or_duchy_decision_tooltip:0 "Заселить местный регион, став [Concept('ruler', 'землевладельцем')|E]"
+ settle_one_county:0 "Заселить ближайшее [Concept('county', 'графство')|E]"
  settle_one_county_tooltip:0 "$settle_one_county$"
  settle_one_county_desc:0 ""
- settle_duchy:0 "Attempt to settle the [duchy|E]"
+ settle_duchy:0 "Попытаться заселить [Concept('duchy', 'герцогство')|E]"
  settle_duchy_tooltip:0 "$settle_duchy$"
  settle_duchy_desc:0 ""
- settle_wilderness_county_or_duchy_decision_confirm:0 "It is time to make a home..."
- settle_wilderness_county_or_duchy_basic_effect:0 "For every #V 500#! Men-at-Arms, you will settle #P 1#! [county|E]"
- settle_wilderness_county_or_duchy_current_settle_limit_effect:0 "Current counties that can be settled: #V [GetPlayer.MakeScope.ScriptValue('lotr_settle_wilderness_as_adventurer_county_limit')]#!"
- settle_wilderness_county_or_duchy_destroy_maa_effect:0 "#V 50%#! of your Men-at-Arms will be destroyed!"
- settle_wilderness_county_or_duchy_not_enough_maa_tt:0 "You do not have enough Men-at-Arms"
+ settle_wilderness_county_or_duchy_decision_confirm:0 "Пришло время обустроить дом..."
+ settle_wilderness_county_or_duchy_basic_effect:0 "Вы заселите #P 1#! [Concept('county', 'графство')|E] за каждых #V 500#! профессионалов"
+ settle_wilderness_county_or_duchy_current_settle_limit_effect:0 "Текущие графства могут быть заселены: #V [GetPlayer.MakeScope.ScriptValue('lotr_settle_wilderness_as_adventurer_county_limit')]#!"
+ settle_wilderness_county_or_duchy_destroy_maa_effect:0 "#V 50%#! ваших профессионалов будет распущено!"
+ settle_wilderness_county_or_duchy_not_enough_maa_tt:0 "У вас недостаточно профессионалов"
 
  ### start_city_construction_decision
  county_is_wilderness_culture_tt:0 "Графство не заселено"
