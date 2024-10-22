@@ -7,10 +7,10 @@
  travel_danger_events.6020.b:0 "НЕ СНОВА!"
 
  # Won't Be Missed
- ep3_travel_events.8010.desc.dwarven:0 "As we continue through [location.GetName], I stumble upon an old chamber of [dwarven|E] origin. The tomb appears to be old, very old, likely from the [secondage|E]. From within, I see the glimmer of some unknown treasure.\n\nNone but my party appear to be around, and surely whomever once owned the contents of this tomb would not cast judgement on me for taking what would go otherwise unused?"
- ep3_travel_events.8010.desc.elven:0 "As we continue through [location.GetName], I come across an elegantly constructed, partially collapsed [elven|E] ruin, likely abandoned since the [secondage|E]. Could this be some sort of tomb? From within I see the glimmer of some unknown treasure.\n\nNone but my party appear to be around, and surely whomever once owned the contents of this tomb would not cast judgement on me for taking what would go otherwise unused?"
- ep3_travel_events.8010.desc.dunedain:0 "As we continue through [location.GetName], I spot an old ruined structure, likely a [dunedain|E] tomb. I've heard tales of great treasure within some of these ancient sites, but is it worth the risk?\n\nNone but my party appear to be around, and surely whomever once owned the contents of this tomb would not cast judgement on me for taking what would go otherwise unused?"
- ep3_travel_events.8010.a.wastelands:0 "You feel a fell presence and quickly retreat"
+ ep3_travel_events.8010.desc.dwarven:0 "Продолжая путь через владение [location.GetName], я натыкаюсь на старую [Concept('dwarven', 'гномью')|E] гробницу. Гробница, похоже, старая, очень старая, скорее всего, из [Concept('secondage', 'Второй Эпохи')|E]. Внутри я вижу отблески каких-то неизвестных сокровищ.\n\nНикого, кроме моего отряда, поблизости нет, и, конечно, тот, кому когда-то принадлежало содержимое этой гробницы, не осудит меня за то, что я [Select_CString(ROOT.Char.IsFemale, 'взяла', 'взял' )] то, что в противном случае осталось бы брошенным?"
+ ep3_travel_events.8010.desc.elven:0 "Продолжая путь через владение [location.GetName], я натыкаюсь на элегантно построенные, частично разрушенные [Concept('elven', 'эльфийские')|E] руины, вероятно, заброшенные со времён [Concept('secondage', 'Второй Эпохи')|E]. Может быть, это какая-то гробница? Внутри я вижу отблеск неизвестных сокровищ.\n\nНикого, кроме моего отряда, поблизости нет, и, конечно, тот, кому когда-то принадлежало содержимое этой гробницы, не осудит меня за то, что я [Select_CString(ROOT.Char.IsFemale, 'взяла', 'взял' )] то, что в противном случае осталось бы брошенным?"
+ ep3_travel_events.8010.desc.dunedain:0 "Когда мы продолжаем путь через владение [location.GetName], я замечаю старое разрушенное строение, вероятно, гробницу [dunedain|El]. Я [Select_CString(ROOT.Char.IsFemale, 'слышала', 'слышал' )] рассказы о несметных сокровищах в некоторых из этих древних мест, но стоит ли рисковать?\n\nНикого, кроме моего отряда, поблизости нет, и, конечно, тот, кому когда-то принадлежало содержимое этой гробницы, не осудит меня за то, что я [Select_CString(ROOT.Char.IsFemale, 'взяла', 'взял' )] то, что в противном случае осталось бы брошенным?"
+ ep3_travel_events.8010.a.wastelands:0 "Вы чувствуете некое присутствие и быстро отступаете"
 
  #########################
  ### Points of Interest ##
@@ -237,7 +237,7 @@
  ### Call of the Sea ###
  lotr_travel_events.0013.t:0 "Зов моря"
  lotr_travel_events.0013.desc:0 "Когда мы приближаемся к побережью, мой взгляд обращается к морю. На него приятно смотреть. \n\n[Select_CString(caravan_leader.IsFemale, 'Моя караванщица', 'Мой караванщик' )], [caravan_leader.GetFirstName], подходит ко мне. «Неплохое зрелище, не правда ли?», - спрашивает [caravan_leader.GetSheHe]. \n\nЯ размышляю, что ответить."
- lotr_travel_events.0013.desc.solo:0 "As we travel near the coast, my eyes turn to the sea. It is a marvel to look at. I find myself wondering how much water it would take to fill even a small portion of the sea our ship is currently passing through. \n\n"Quite the sight," I mutter to myself."
+ lotr_travel_events.0013.desc.solo:0 "Когда мы приближаемся к побережью, мой взгляд обращается к морю. Оно поражает воображение. Я думаю о том, сколько воды нужно, чтобы заполнить хотя бы малую часть моря, через которое сейчас проходит наш корабль. \n\n«Невероятное зрелище», - бормочу я про себя."
  lotr_travel_events.0013.a:0 "Как же я хочу снова командовать своим кораблём..."
  lotr_travel_events.0013.b:0 "Я... глубоко [Select_CString(ROOT.Char.IsFemale, 'тронута', 'тронут' )] зовом чаек..."
  lotr_travel_events.0013.c:0 "Это действительно прекрасное зрелище! Я хочу остаться здесь ещё на некоторое время."
