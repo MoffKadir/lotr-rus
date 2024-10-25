@@ -217,16 +217,16 @@
 
  ##### Imrazôr & Arimîth event chain #####
 
- imrazor_vote_tally:0 "Current Vote Tally:"
- imrazor_vote_in_favour:0 "Princes expected to vote in your favour: #P [THIS.Var('imrazor_favour_count').GetValue|0]#!"
- imrazor_vote_against:0 "Princes expected to vote against you: #N [THIS.Var('imrazor_against_count').GetValue|0]#!"
- 
- lotr_thani_hazad.3000.t:0 "A Matter of Romance"
- lotr_thani_hazad.3000.desc_arimith:0 "Long has [imrazor.GetName], my northern neighbour, striven to win my affection. Which I reciprocated only a few months ago, having grown romantic feelings towards him myself. \n\nOur relationship places us in a delicate predicament. Naturally, we wish to announce our union and let our hands be joined in marriage. This, however, is not likely to be accepted by the [balan_lai|E], our fellow rulers of the [GetTitleByKey('e_thani_hazad').GetName]. \n\nI must decide whether I shall focus on the desires of my heart and attempt to see our match through, even against the opposition of the other Balan-lai. \n...or if it would be wiser to remain as lovers in secret."
- lotr_thani_hazad.3000.desc_imrazor:0 "My heart has longed for the company of [arimith.GetName], the sweet songbird of my dreams since our first meeting many years ago. \n\nIt was just a few months ago that she finally shifted her countenance towards me, exceeding my hope by letting me know that romantic feelings are mutual! \n\nOf course, we both now wish to announce our union to the public, and let our hands be joined in marriage, as we tire of keeping the relationship a secret. This, however, is not likely to be accepted by the [balan_lai|E], our fellow rulers of the [GetTitleByKey('e_thani_hazad').GetName]. \n\nI must decide whether I shall focus on the desires of my heart and attempt to see our match through, even against the opposition of the other Balan-lai. \n...or if it would be wiser to remain as lovers in secret."
- lotr_thani_hazad.3000.a:0 "I will convince the princes to allow this match!"
- lotr_thani_hazad.3000.b:0 "They would never accept the two of us together..." 
- 
+ imrazor_vote_tally:0 "Текущий итог голосования:"
+ imrazor_vote_in_favour:0 "Принцы, которые предположительно проголосуют в вашу пользу: #P [THIS.Var('imrazor_favour_count').GetValue|0]#!"
+ imrazor_vote_against:0 "Принцы, которые предположительно проголосуют против вас: #N [THIS.Var('imrazor_against_count').GetValue|0]#!"
+
+ lotr_thani_hazad.3000.t:0 "Вопрос любви"
+ lotr_thani_hazad.3000.desc_arimith:0 "Долгое время [imrazor.GetName], [Select_CString(imrazor.IsFemale, 'моя северная соседка, стремилась', 'мой северный сосед, стремился' )] завоевать моё расположение. И я [Select_CString(ROOT.Char.IsFemale, 'ответила', 'ответил' )] [Select_CString(imrazor.IsFemale, 'ей', 'ему' )] взаимностью, лишь несколько месяцев назад проникнувшись к [Select_CString(imrazor.IsFemale, 'ней', 'нему' )] романтическими чувствами. \n\nНаши отношения ставят нас в затруднительное положение. Разумеется, мы хотим объявить о нашем союзе и соединить наши сердца в браке. Однако вряд ли [balan_lai|E], наши соправители державы [GetTitleByKey('e_thani_hazad').GetName], одобрят это. \n\nЯ [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] решить, стоит ли мне сосредоточиться на желаниях своего сердца и попытаться довести наш брак до конца, даже вопреки противодействию других членов совета. \n...или будет мудрее остаться тайными любовниками."
+ lotr_thani_hazad.3000.desc_imrazor:0 "Моё сердце жаждет общества [arimith.GetName], милой певчей птички моей мечты, с момента нашей первой встречи много лет назад. \n\nВсего несколько месяцев назад она, наконец, обратила на меня свой взор, превзойдя мои надежды и дав понять, что романтические чувства взаимны! \n\nРазумеется, теперь мы оба хотим объявить о нашем союзе во всеуслышание и соединить наши сердца в браке, поскольку устали держать отношения в тайне. Однако вряд ли [balan_lai|E], наши соправители державы [GetTitleByKey('e_thani_hazad').GetName], одобрят это. \n\nЯ [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] решить, стоит ли мне сосредоточиться на желаниях своего сердца и попытаться довести наш брак до конца, даже вопреки противодействию других членов совета. \n...или будет мудрее остаться тайными любовниками."
+ lotr_thani_hazad.3000.a:0 "Я уговорю принцев разрешить этот брак!"
+ lotr_thani_hazad.3000.b:0 "Они никогда не позволят нам быть вместе..."
+
  lotr_thani_hazad.3001.t:0 "Lovers Apart"
  lotr_thani_hazad.3001.desc_arimith:0 "It is with heavy heart and hand that I sit down to pen a letter to my beloved, [imrazor.GetFirstName]. \n\n#EMP My sweet prince,#! \n\n#EMP I fear that there's now no way for our dreams of marriage to come to fruition.#! \n\nI put down my quill, pausing for a moment to think about the next words I wish to write down. \n\nWhat shall now become of my relationship with the Prince of my dreams?"
  lotr_thani_hazad.3001.desc_imrazor:0 "Sorrow fills my heart as I sit down to pen a letter to my beloved, [arimith.GetFirstName]. \n\n#EMP My radiant flower,#! \n\n#EMP I fear that there's now no way for our dreams of marriage to come to fruition.#! \n\nWith tears in my eyes, I put down my quill, hesitating to think about the next words I wish to write down. \n\nWhat shall now become of my relationship with the woman of my dreams?"
