@@ -70,9 +70,18 @@
  tributary_state:0 "Государство-данник #weak (Временный [Concept('tributary_state','данник')|E])#!"
  protectorate_state:0 "Государство-протекторат #weak (Опциональный [Concept('protectorate','протекторат')|E])#!"
 
+ interaction_debug_realms_in_exile:0 "#D DEBUG: #BER: Realms in Exile"
  settle_wilderness_immediately_interaction:0 "Колонизировать все [Concept('colony', 'колониальные')|E] владения"
+ make_tributary_immediately_interaction:0 "Сделать этого [Concept('ruler', 'правителя')|E] вашим [Concept('tributary', 'данником')|E]"
 
  ally_with_tributary_ruler:0 "[recipient.GetTitledFirstName] будет [Select_CString(recipient.IsFemale, 'освобождена', 'освобождён' )] в качестве [Concept('tributary', 'данника')|E]"
  balan_lai_hesitant_to_fight_other_balan_lai:0 "[recipient.GetTitledFirstName] не решается сражаться с другим членом Балан-лай"
 
  need_three_dwarven_patrons_to_request_troops:0 "#V Вам#! нужно как минимум #bold 5#! покровителей-гномов!"
+ need_one_racial_patron:0 "#V Вам#! нужен как минимум #bold 1#! покровитель из числа представителей местной расы!"
+
+ WONT_ATTACK_FREE_PEOPLES_REASON:0 "Нападение на Свободные народы: $VALUE|=+0$"
+ WILL_ATTACK_OPPOSITE_ALIGNMENT_REASON:0 "Нападение на врага с противоположным мировоззрением: $VALUE|=+0$"
+ WONT_JOIN_EVIL_REASON:0 "Не будет сражаться вместе со слугами Тьмы: $VALUE|=+0$"
+ WONT_JOIN_NON_EVIL_REASON:0 "Не будет сражаться вместе с врагами Тьмы: $VALUE|=+0$"
+ WONT_ATTACK_SAURON_REASON:0 "Нападение на Тёмного Властелина: $VALUE|=+0$"
