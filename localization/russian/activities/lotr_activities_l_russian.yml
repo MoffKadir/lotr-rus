@@ -147,7 +147,7 @@
  activity_explore_history_destination_selection:0 "Посещение места с большой библиотекой повысит ваши шансы на успех."
  activity_explore_history_province_desc:0 "Вы проводите историческое изыскание в графстве [ROOT.Province.GetName]\nНа ваши шансы на успех влияют различные факторы\n"
  activity_explore_history.is_location_valid.wrong_holder_faith:0 "#N Вы не можете обращаться к архивам правителя, мировоззрение которого противоположно вашему."
- activity_explore_history.is_location_valid.not_in_list:0 "#N Эта провинция находится за пределами владений вашего верховного сюзерена и не содержит значительных записей."
+ activity_explore_history.is_location_valid.not_in_list:0 "#N Эта провинция находится за пределами [Concept('realm', 'державы')|E] вашего [Concept('top_liege_possessive', 'верховного сюзерена')|E], не принадлежит ни одному из ваших грамотных [Concept('contact_list_contacts', 'покровителей')|E] и не содержит значительных записей."
 
  activity_explore_history_province_desc_wonder_angrenost_upgraded:0 "#P +++ $building_wonder_angrenost_02_storehouses$#!\n"
  activity_explore_history_province_desc_wonder_minas_anor_upgraded:0 "#P +++ $building_wonder_minas_anor_02$#!\n"
@@ -176,6 +176,8 @@
  activity_explore_history_province_desc_wonder_wonder_forlond_upgraded:1 "#P +++ $building_wonder_forlond_02$#!\n" 
  activity_explore_history_province_desc_wonder_harlond:1 "#P +++ $building_wonder_harlond_01$#!\n"
  activity_explore_history_province_desc_wonder_mirdairond:1 "#P +++ $building_wonder_mirdairond$#!\n"
+ activity_explore_history_province_desc_wonder_uruloni:1 "#P +++ $building_wonder_urulonid$#!\n"
+ activity_explore_history_province_desc_wonder_hall_of_tiralaen:1 "#P +++ $building_wonder_hall_of_tiralaen$#!\n"
 
  activity_explore_history_province_desc_wonder_angrenost:0 "#P++ $building_wonder_angrenost_01$#!\n"
  activity_explore_history_province_desc_wonder_minas_anor:0 "#P++ $building_wonder_minas_anor_01$#!\n"
@@ -189,6 +191,8 @@
  activity_explore_history_province_desc_wonder_marath_kharadune:0 "#P++ $building_wonder_marath_kharadune_01$#!\n"
  activity_explore_history_province_desc_wonder_lighthouse_of_adunazain:0 "#P++ $building_type_wonder_lighthouse_of_adunazain$#!\n"
  activity_explore_history_province_desc_wonder_forlond:1 "#P ++ $building_wonder_forlond_01$#!\n"
+ activity_explore_history_province_desc_wonder_haven_of_inzilloni:1 "#P ++ $building_wonder_haven_of_inzilloni$#!\n"
+ activity_explore_history_province_desc_wonder_mispir:1 "#P ++ $building_wonder_mispir$#!\n"
 
  activity_explore_history_province_desc_library:0 "#P + $building_type_elven_library_01$#!\n"
  activity_explore_history_province_desc_military_academy:0 "#P + $building_type_military_academy_01$#!\n"
@@ -226,7 +230,10 @@
  explore_history_cost_discount_wonder_mithlond_south:0 "В этом месте есть $building_wonder_mithlond_south_01$#!"
  explore_history_cost_discount_wonder_forlond_upgraded:0 "В этом месте есть $building_wonder_forlond_02$#!"
  explore_history_cost_discount_wonder_harlond:0 "В этом месте есть $building_wonder_wonder_harlond_01$#!"
- explore_history_cost_discount_wonder_mirdairond:0 "В этом месте есть $building_wonder_wonder_mirdairond1$#!"
+ explore_history_cost_discount_wonder_mirdairond:0 "В этом месте есть $building_wonder_wonder_mirdairond$#!"
+ explore_history_cost_discount_wonder_uruloni:0 "В этом месте есть $building_wonder_wonder_uruloni$#!"
+ explore_history_cost_discount_wonder_hall_of_tiralaen:0 "В этом месте есть $building_wonder_hall_of_tiralaen$#!"
+
 
  explore_history_cost_discount_wonder_angrenost:0 "В этом месте есть $building_wonder_angrenost_01$#!"
  explore_history_cost_discount_wonder_minas_anor:0 "В этом месте есть $building_wonder_minas_anor_01$#!"
@@ -239,6 +246,8 @@
  explore_history_cost_discount_wonder_marath_kharadune:0 "В этом месте есть $building_wonder_marath_kharadune_01$#!"
  explore_history_cost_discount_wonder_lighthouse_of_adunazain:0 "В этом месте есть $building_type_wonder_lighthouse_of_adunazain$#!"
  explore_history_cost_discount_wonder_forlond:0 "В этом месте есть $building_wonder_forlond_01$#!"
+ explore_history_cost_discount_wonder_haven_of_inzilloni:0 "В этом месте есть $building_wonder_haven_of_inzilloni$#!"
+ explore_history_cost_discount_wonder_mispir:0 "В этом месте есть $building_wonder_mispir$#!"
 
  explore_history_cost_discount_library:0 "В этом месте есть $building_type_elven_library_01$#!"
  explore_history_cost_discount_military_academy:0 "В этом месте есть $building_type_military_academy_01$#!"
@@ -504,7 +513,7 @@
  ###############################
 
   activity_expedition:0 "Экспедиция гномов"
-  activity_expedition_desc:0 "Основать новую державу или поддержать создание вассального владения"
+  activity_expedition_desc:0 "Основать новую державу или поддержать создание вассального владения."
 
   activity_expedition_valid_location_wastelands:0 "Это графство не является пустошью"
   activity_expedition_valid_location_occupied:0 "Это графство граничит с занятым графством"
@@ -516,7 +525,7 @@
   
   expedition_variable_trigger:0 "Это занятие нельзя использовать в течение [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'expedition_type_cooldown') )]"
   ### Host ###
-  activity_expedition_host_desc:0 "\n#L Перемещение державы:#!\n$EFFECT_LIST_BULLET$ Вы покидаете свою [Concept('realm', 'державу')|E], оставив вместо себя другого [Concept('dwarf', 'гнома')|E]-правителя, основав\n    новую державу в другом месте на своё усмотрение.\n\n#L Основать вассальное владение:#!\n$EFFECT_LIST_BULLET$ Вы выбираете [Concept('dwarf', 'гнома')|E], который начнёт основание форпоста в отдалённом\n   заброшенном [Concept('delving', 'подземном владении')|E].\n$EFFECT_LIST_BULLET$ Вассальное владение может стать вашим полноценным [Concept('vassal', 'вассалом')|E] по прошествии\n   определённого времени."
+  activity_expedition_host_desc:0 "\n#L Перемещение державы:#!\n$EFFECT_LIST_BULLET$ Вы покидаете свою [Concept('realm', 'державу')|E], оставив вместо себя другого [Concept('dwarf', 'гнома')|E]-правителя, основав\n   новую державу в другом месте на своё усмотрение.\n\n#L Основать вассальное владение:#!\n$EFFECT_LIST_BULLET$ Вы выбираете [Concept('dwarf', 'гнома')|E], который начнёт основание форпоста в отдалённом\n   заброшенном [Concept('delving', 'подземном владении')|E].\n$EFFECT_LIST_BULLET$ Вассальное владение может стать вашим полноценным [Concept('vassal', 'вассалом')|E] по\n   прошествии определённого времени."
 
   ### Province Descs ###
   
@@ -761,7 +770,7 @@
  lotr_horse_race_preparations_extensive: "Обширная"
  lotr_horse_race_preparations_extensive_desc: "$EFFECT_LIST_BULLET$У вашего [Concept('house', 'дома')|E] будет #P больше#! шансов выиграть скачки\n\n#weak Если мы хотим победить в этом соревновании, мы должны сделать все возможное и невозможное, чтобы наши всадники и лошади вышли победителями.#!"
  lotr_horse_race_banner_phase: "Скачки"
- lotr_horse_race_race_phase_desc: "Захватывающие скачки для всех желающих!"
+ lotr_horse_race_banner_phase_desc: "Захватывающие скачки для всех желающих!"
  lotr_horse_race_fun_intent_header: "Отдых:"
  lotr_horse_race_fun_intent: "Отдохнуть"
  lotr_horse_race_fun_intent_desc: "Окунуться в атмосферу веселья и восторга. Потерять больше [stress_loss_i|E] [Concept('stress', 'стресса')|E]."
