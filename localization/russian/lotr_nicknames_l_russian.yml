@@ -130,6 +130,8 @@
  nick_the_last_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] [Select_CString(CHARACTER.IsFemale, 'последней правительницей', 'последним правителем' )] в своём роду."
  nick_the_outrider:0 "[Select_CString(CHARACTER.IsFemale, 'Наездница', 'Наездник' )]"
  nick_the_outrider_desc:0 "Известно, что [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'жили', Select_CString(CHARACTER.IsFemale, 'жила', 'жил' ))] в седле и [Select_CString( CHARACTER.IsLocalPlayer, 'посетили', Select_CString(CHARACTER.IsFemale, 'посетила', 'посетил' ))] столицу своей державы только в том случае, если [Select_CString( CHARACTER.IsLocalPlayer, 'ваше', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] присутствие было необходимо."
+ nick_the_steadfast_shield:0 "Стойкий Щит"
+ nick_the_steadfast_shield_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были известны', Select_CString(CHARACTER.IsFemale, 'была известна', 'был известен' ))] непоколебимой верностью своим традициям и вере, даже в море переселений и перемен вокруг изменчивых равнин Рованиона."
 
  ### Dorwinion Nicknames ###
  nick_gwinaran:0 "Гвинаран"
@@ -471,7 +473,7 @@
  nick_windrider:0 "[Select_CString(CHARACTER.IsFemale, 'Всадница', 'Всадник' )] ветра"
  nick_windrider_desc:0 "В молодости [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были известны', Select_CString(CHARACTER.IsFemale, 'была известна', 'был известен' ))] как хитрый, но очень безрассудный лидер. Его люди прозвали его «Всадником ветра» за то, что сконструировал деревянное транспортное средство, которое ездило по пескам с помощью большого паруса. Он использовал его несколько раз за время своего правления, в основном для того, чтобы произвести впечатление на своих вассалов, но в итоге это стоило ему ноги."
  nick_scorpion_king:0 "Король-скорпион"
- nick_scorpion_king_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] показал себя способным предводителем, взяв на себя роль вождя кочевников Моря Дюн. За это, а также за увлечение огромными скорпионами, он получил титул «Король-скорпион»."
+ nick_scorpion_king_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'являетесь', 'является')] прославленным вождём, взявшим на себя роль вождя кочевников Моря Дюн. За это, а также за увлечение огромными скорпионами, [Select_CString( CHARACTER.IsLocalPlayer, 'вы получили', Select_CString(CHARACTER.IsFemale, 'она получила', 'он получил' ))] титул «Король-скорпион»."
  nick_mother_of_shades:0 "Мать теней"
  nick_mother_of_shades_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U], прозванная «Матерью теней», окружена множеством мифов. Самый распространённый из них - сказка о [Concept( 'the_girl_and_the_spider', 'Девушке и Пауке' )|E], повествующая о её молодости и руководстве культом Санбайза. Предводители многих племён, служащих великому пауку, утверждают, что происходят от неё."
  nick_the_evil_dunesea:0 "[Select_CString(CHARACTER.IsFemale, 'Злая', 'Злой' )]"
@@ -523,9 +525,9 @@
  ### Womarin Nicknames
  # Vulmaw Nicknames
  nick_dragon_at_world_end:0 "Дракон на краю света"
- nick_dragon_at_world_end_desc:0 "Почувствовав возможность, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'возвысились', Select_CString(CHARACTER.IsFemale, 'возвысилась', 'возвысился' ))] среди вулмавских пиратов при поддержке своего близкого друга Балрима. Вместе [CHARACTER.GetShortUINameNoTooltipNoFormat|U] собрали флот и отправились в место, известное вулмавам как «Край света». Там [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'попытались', Select_CString(CHARACTER.IsFemale, 'попыталась', 'попытался' ))] воспользоваться слабостью разгромленного княжества Пэл."
+ nick_dragon_at_world_end_desc:0 "Почувствовав возможность, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'возвысились', Select_CString(CHARACTER.IsFemale, 'возвысилась', 'возвысился' ))] среди вулмавских пиратов при поддержке своего близкого друга Балрима. Вместе [CHARACTER.GetShortUINameNoTooltipNoFormat|U] и Балрим собрали флот и отправились в место, известное вулмавам как «Край света». Там [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'попытались', Select_CString(CHARACTER.IsFemale, 'попыталась', 'попытался' ))] воспользоваться слабостью разгромленного княжества Пэл."
  nick_scarlet_sword:0 "Алый клинок"
- nick_scarlet_sword_desc:0 "Говорят, что единственным человеком, знавшим Балрима ближе, чем его жертвы, был его близкий друг Зоран."
+ nick_scarlet_sword_desc:0 "Говорят, что единственным человеком, знавшим [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )], печально [Select_CString(CHARACTER.IsFemale, 'известной', 'известного' )] наслаждением страданиями врагов ближе, чем [Select_CString( CHARACTER.IsLocalPlayer, 'ваши', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] жертвы, был [Select_CString( CHARACTER.IsLocalPlayer, 'ваш', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] близкий друг Зоран."
 
  ### Bellakarean Nicknames
  nick_ironhand:0 "Железная Рука"
@@ -627,6 +629,7 @@
 
  ### Ray and Tulwang Nicknames ###
  nick_the_fierce_blade:0 "Свирепый Клинок"
+ nick_the_fierce_blade_desc:0 "Взяв пример со своего отца, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'являетесь', 'является')] [Select_CString(CHARACTER.IsFemale, 'блестящей фехтовальщицей', 'блестящим фехтовальщиком' )], и мало кто может противостоять [Select_CString( CHARACTER.IsLocalPlayer, 'вашему', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] грозному клинку."
  nick_golden_nose:0 "Золотой Нос"
  nick_the_jaguar:0 "Ягуар"
  nick_the_herald_of_the_sun:0 "[Select_CString(CHARACTER.IsFemale, 'Вестница', 'Вестник' )] Солнца"
@@ -636,7 +639,9 @@
  nick_storm_queller:0 "[Select_CString(CHARACTER.IsFemale, 'Усмирившая', 'Усмиривший' )] Бурю"
  nick_storm_queller_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'известны', Select_CString(CHARACTER.IsFemale, 'известна', 'известен' ))] своим выступлением против Грозового Воинства, пытаясь положить конец их правлению."
  nick_the_war_king:0 "[Select_CString(CHARACTER.IsFemale, 'Королева', 'Король' )] войны"
- nick_the_war_king_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'восстановили', Select_CString(CHARACTER.IsFemale, 'восстановила', 'восстановил' ))] древнее королевство Заджантак, сохранив наследие #L [CHARACTER.GetCulture.GetCollectiveNounNoTooltip]ого#! народа. Теперь [Select_CString( CHARACTER.IsLocalPlayer, 'вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'готовы', Select_CString(CHARACTER.IsFemale, 'готова', 'готов' ))] к войне против Грозового Воинства."
+ nick_the_war_king_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'основали', Select_CString(CHARACTER.IsFemale, 'основала', 'основал' ))] королевство Заджантак, укрепив наследие #L [CHARACTER.GetCulture.GetCollectiveNounNoTooltip]ого#! народа. Теперь [Select_CString( CHARACTER.IsLocalPlayer, 'вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'готовы', Select_CString(CHARACTER.IsFemale, 'готова', 'готов' ))] к войне против Грозового Воинства."
+ nick_west_conquerer:0 "[Select_CString(CHARACTER.IsFemale, 'Покорительница', 'Покоритель' )] запада"
+ nick_west_conquerer_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'поднялись', Select_CString(CHARACTER.IsFemale, 'поднялась', 'поднялся' ))] из своего смиренного положения и [Select_CString( CHARACTER.IsLocalPlayer, 'возвели', Select_CString(CHARACTER.IsFemale, 'возвела', 'возвел' ))] державу Мимита вдоль реки Заджа, продвигаясь на запад, в более процветающие земли."
 
  ### Lossoth Nicknames ###
  nick_assistant_unique:0 "[Select_CString(CHARACTER.IsFemale, 'Помощница', 'Помощник' )]"
