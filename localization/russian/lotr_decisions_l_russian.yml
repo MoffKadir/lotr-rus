@@ -774,6 +774,11 @@
  rohan.0002.a:0 "Мы будем одним народом, едиными эотеод."
  rohan.0002.b:0 "Никогда... Я не откажусь от наших путей!"
 
+ # decision_visit_dwimordene:0 "Visit the Dwimordene"
+ # decision_visit_dwimordene_desc:0 "The Dwimordene is an enchanted forest, shrouded in mists. Some say, a powerful fey rules these lands. Some even suggest visiting this forest in order to receive the fey's guidance..."
+ # decision_visit_dwimordene_tooltip:0 "Travel to the Golden Wood and meet its ruler."
+ # decision_visit_dwimordene_confirm:0 "I shall make for the Dwimordene."
+
  ###################################
  ####### Enedwaith Decisions #######
  ###################################
@@ -1125,6 +1130,7 @@
  decision_harnen_submission_tooltip:0 "Отвоевать устье Харнена у гордых умбарцев"
  decision_harnen_submission_desc:0 "Умбарцы слишком долго свободно властвовали над устьем Харнена. Они облагают налогом нашу торговлю из него и, возможно, даже полностью закроют его для нас. Если мы хотим восстановить нашу гегемонию над Ближним Харадом, нам придётся поставить их на место"
  decision_harnen_submission_confirm:0 "Харнен - мой!"
+ decision_harnen_submission.tt:0 "Умбарцы вдоль Харнена получат ваши требования..."
 
  decision_repulse_khand_lurmsakun:0 "Пресечь притязания Кханда на Лурмсакун"
  decision_repulse_khand_lurmsakun_tooltip:0 "Отсечь Лурмсакун от Кханда и передать его Харадвайту"
@@ -1147,6 +1153,11 @@
  decision_arysor_trade_dominance_desc:0 "На протяжении большей части нашей истории арисоры довольствовались жизнью, разделённой по границам кланов, в лучшем случае объединяясь в слабую, децентрализованную конфедерацию. Но с ростом известности моей семьи и значительным увеличением торговли через наши земли появилась возможность прочно утвердить себя и [GetTitleByKey('k_arysis').GetName] в качестве полноценной монархии, более похожей на наших северных родичей из Харнена."
  decision_arysor_trade_dominance_tooltip:0 "Вы возвысите [GetTitleByKey('k_arysis').GetNameNoTier] до централизованного торгового королевства в сердце восточных [Concept( 'haradric', 'харадских' )|E] торговых путей, с собой в качестве [Select_CString(ROOT.Char.IsFemale, 'её королевы', 'его короля' )]."
  decision_arysor_trade_dominance_confirm:0 "Объединившись, мы будем процветать."
+
+ decision_restore_ancient_lurmsakun:0 "Восстановить древний Лурмсакун"
+ decision_restore_ancient_lurmsakun_tooltip:0 "Восстановить древние границы Лурмсакуна"
+ decision_restore_ancient_lurmsakun_desc:0 "На протяжении бесчисленных поколений Лурмсакун страдал от жестоких набегов и владычества Кханда. Однако после переселения теджин наши предки свергли своих кхандских владык и создали великое королевство, которое просуществовало несколько веков. Если мы вернем древние границы Лурмсакуна, мы восстановим былую славу этого королевства и, возможно, наконец-то положим конец притязаниям Кханда на владычество над этим регионом."
+ decision_restore_ancient_lurmsakun_confirm:0 "Никогда более не преклоним колен!"
 
  recruit_witch_decision:0 "Нанять чародея"
  recruit_witch_decision_desc:0 "Нанять к своему двору чародея, чтобы он служил вам советником из теней."
@@ -1543,7 +1554,7 @@
  struggle_thani_hazad_dissolution_dynasty_modifier_effect:0 "Каждая [Concept('struggle_involved', 'вовлечённая в борьбу')|E] [dynasty|El] получит модификатор [GetModifier('cant_form_thani_hazad_modifier').GetNameWithTooltip]"
 
  struggle_thani_hazad_confederation:0 "Триумф старого порядка"
- struggle_thani_hazad_confederation_description:0 "Пути Балан-Лай выдержали испытания временем и продержатся ещё много веков. Мы добьемся этого.\n\n#I [struggle_region|E] останется активным, но впредь будет иметь сильную тенденцию к сохранению этапов Статус-кво и Конфедерация.#!"
+ struggle_thani_hazad_confederation_description:0 "Пути Балан-Лай выдержали испытания временем и продержатся ещё много веков. Мы добьемся этого.\n\n#I [struggle_region|E] останется активной, но впредь будет иметь сильную тенденцию к сохранению этапов Статус-кво и Конфедерация.#!"
  struggle_thani_hazad_confederation_select_tooltip:0 "Укрепить старый порядок, гарантируя, что он продержится ещё много лет, а также получать мощные бонусы, пока он существует."
  struggle_thani_hazad_confederation_confirm:0 "Старый, верный!"
  struggle_thani_hazad_confederation_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_confederation|E]"
