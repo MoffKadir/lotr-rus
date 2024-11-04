@@ -14,6 +14,7 @@
  #Province Description
  activity_pilgrimage_province_unvisited_desc:0 "\n#positive_value Непосещенное священное место#!"
  activity_pilgrimage_province_unique_desc:0 "\n#positive_value + Уникальное [GetPlayer.GetFaith.GetReligion.GetNameNoTooltip|l]ое священное место#!"
+ activity_pilgrimage_province_desc_inspection_modifier: "\n#positive_value ++ Священное место под защитой #!"
  #Pros/Cons + Cost at the end
  activity_pilgrimage_province_desc:0 "Вы начнете паломничество в провинцию [ROOT.Province.GetName]\nРасстояние влияет на стоимость и награды"
  activity_pilgrimage_province_very_short_desc:0 "\n#positive_value + Очень короткое расстояние#!\n\nДополнительные траты: нет"
@@ -901,7 +902,7 @@
  pilgrimage.6530.e:0 "Я не пойду."
  #Fishy guide not so fishy actually
  pilgrimage.6531.t:0 "Скрытая божественность"
- pilgrimage.6531.desc_wellspring:0 "Когда [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTierNoTooltip] остается уже далеко позади, мы внезапно останавливаемся. Наш проводник [local_guide.GetTitledFirstName] ведет нас в скрытый проход, и мы оказываемся в небольшой пещере, освещаемой солнцем через отверстие в склоне.\n\nЧерез это же отверстие струится поистине замечательный родник. Вода, переливаясь, светится, ее брызги окрашивают воздух радугами."
+ pilgrimage.6531.desc_wellspring: "Когда [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTierNoTooltip] остается уже далеко позади, мы внезапно останавливаемся. Наш проводник [local_guide.GetTitledFirstName] ведет нас в скрытый проход, и мы оказываемся в небольшой пещере, освещаемой солнцем через отверстие в склоне.\n\nЧерез это же отверстие струится поистине замечательный родник. Вода, переливаясь, светится, ее брызги окрашивают воздух радугами."
  pilgrimage.6531.desc_crystal_cavern:0 "Когда я уже начинаю спрашивать себя — а прибудем ли мы вообще в место назначения? — наш проводник [local_guide.GetTitledFirstName] внезапно резко уходит влево, и вскоре мы оказываемся в незаметной снаружи пещере.\n\nНаши пожитки начинают отражать слабое свечение, со временем оно становится все сильнее. Мы не спеша входим в большой грот, покрытый сотнями кристаллов. Кристаллы отражают свет из отверстия в потолке, и вся наша компания, не исключая и меня, издает восхищенные вздохи."
  pilgrimage.6531.desc_non_cynical:0 "\n\nЯ нигде еще не [Select_CString(ROOT.Char.IsFemale, 'ощущала', 'ощущал' )] присутствие [ROOT.Char.GetFaith.HighGodNamePossessive] так сильно, как здесь."
  pilgrimage.6531.desc_cynical:0 "\n\nДа, впечатляющее творение природы."
@@ -987,7 +988,7 @@
  pilgrimage.6780.b.failure.desc:0 "[stolen_courtier.GetShortUIName] не принимает ваше предложение"
  pilgrimage.6780.c:0 "[current_employer.GetTitledFirstNameNoTooltip] будет в ярости. Риск того не стоит."
  obligation_hook_salary:0 "Оговоренное жалование"
- obligation_hook_tt:0 "Наем персонажей с влиянием #EMP Обязательство#! обходится дешевле"
+ obligation_hook_tt: "[Concept('hooks','Влияние')|E] #EMP Обязательство#! снижает [Concept('court_position','придворные')|E] жалования на [gold_i]#P -50%#!"
  generic_cp_discount: "Снижение стоимости контракта"
  #Meet local guru - trait flipping event
  pilgrimage.6790.t:0 "Духовное пробуждение во владении [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTierNoTooltip]"
