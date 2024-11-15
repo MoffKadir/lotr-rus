@@ -1,6 +1,36 @@
 ﻿l_russian: 
 
- laamp_lotr_4001_contract: "Исцелить хворых"
+ laamp_lotr_3011_contract: "$laamp_lotr_3011_contract_scheme$"
+ laamp_lotr_3011_request: "$laamp_request_boilerplate_intrigue_scheme$"
+
+ laamp_lotr_contract_schemes.3011.t: "Прореживание вражеских рядов"
+ laamp_lotr_contract_schemes.3011.desc: "«[target.GetTitledFirstName] [Select_CString(target.IsFemale, 'отправила', 'отправил' )] многих из наших лучших воинов в объятия [employer.GetFaith.DeathDeityNamePossessive], слишком многих. Кто-то должен положить этому конец, а то, как это произойдёт, не имеет особого значения», - мрачно произносит [employer.GetTitledFirstName].\n\nЯ киваю. Больше сказать нечего — [target.GetSheHe] слишком [Select_CString(target.IsFemale, 'смертоносна', 'смертоносен' )], чтобы оставлять [Select_CString(target.IsFemale, 'её', 'его' )] на службе у врага, и [Select_CString(employer.IsFemale, 'моя нанимательница предпочла', 'мой наниматель предпочёл' )] бы обратиться к профессионалу.\n\nОдна жизнь оборвётся, чтобы спасти многих."
+ laamp_lotr_contract_schemes.3011.orc.desc: "«[target.GetFirstNameNoTooltip] и [target.GetHerHis] воины изрубили слишком много моих мелких снага, [root.GetFirstNameNoTooltip]! Так у нас скоро не останется войск», - [employer.GetFirstNameNoTooltip] с пеной у рта бьёт кинжалом по столу. Очевидно, [employer.GetSheHe] более чем [Select_CString(employer.IsFemale, 'взбешена', 'взбешен' )], и вы пожимаете плечами.\n\n[employer.GetSheHe] поднимает кинжал и направляет его на вас, а на [employer.GetHerHis] губах расплывается жестокая улыбка. «Вот почему #italic ты#!, моя славная личинка, [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] принести мне [target.GetHerHis] голову, и как можно скорее! Иначе я развяжу твои вонючие кишки от Душгоя до Лугбурза!» Вы поняли, что к чему, и быстро уходите."
+ laamp_lotr_contract_schemes.3011.a: "$laamp_base_contract_schemes.0000.generic_option.success_chance$"
+ laamp_lotr_contract_schemes.3011.b: "$laamp_base_contract_schemes.0000.generic_option.speed$"
+ laamp_lotr_contract_schemes.3011.c: "$laamp_base_contract_schemes.0000.generic_option.secrecy$"
+ laamp_lotr_contract_schemes.3011.d: "$laamp_base_contract_schemes.0000.generic_option.nothing$"
+ laamp_lotr_contract_schemes.3011.d.tt: "$laamp_base_contract_schemes.0000.d.no_starting_bonus$"
+
+ laamp_lotr_contract_schemes.3012.t: "$laamp_lotr_contract_schemes.3011.t$: успех!"
+ laamp_lotr_contract_schemes.3012.desc: "«Дело сделано, [employer.GetTitleAsNameNoTooltip]», - говорю я, опуская похищенный знак отличия на стол, у которого сидит [employer.GetFirstNameNicknamedPossessive]. Ткань испещрена тёмными пятнами, но нет сомнений, что [target.GetTitledFirstNamePossessive] [Select_CString(target.IsFemale, 'причастна', 'причастен' )] к этому.\n\n«Вы оказали нам всем услугу», - мрачно произносит [employer.GetSheHe]. «Дни, когда [target.GetTitledFirstName] [Select_CString(target.IsFemale, 'наводила', 'наводил' )] ужас на наших воинов, остались позади. Хорошая работа. Ваша плата у слуги снаружи».\n\nЯ почтительно склоняю голову и ухожу."
+ laamp_lotr_contract_schemes.3012.orc.desc: "«Вот, [employer.GetTitleAsNameNoTooltip]», - говорю я, опуская свёрток на стол, у которого сидит [employer.GetFirstNameNicknamedPossessive]. Свёрток перевязан и покрыт тёмно-красными пятнами, но он достаточно круглый, чтобы подтвердить то, что все знают.\n\n«Отличная работая, мой удачливый мелкий слизняк», - мрачно произносит [employer.GetSheHe]. «Хорошая работа! Говорят, Великая война скоро закончится, и не в последнюю очередь благодаря тебе и отрубанию голов. Ха! Ха! Теперь... куда тебя прикрепить, [target.GetTitledFirstName]?» - [employer.GetFirstNameNoTooltip] держит свёрток, как ребёнка, и кружится вокруг него со злобным ликованием, а вы ждёте и смотрите, и через некоторое время прочищаете горло. [Select_CString(employer.IsFemale, 'Орчиха', 'Орк' )] смотрит на вас, сузив глаза. «Твои вонючие монеты снаружи, мелкая крыса! Убирайся с глаз моих!» \n\nЯ быстро ухожу, прихватив мешок с золотом у одного из орков снаружи."
+ laamp_lotr_contract_schemes.3012.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.neutral$"
+
+ laamp_lotr_contract_schemes.3013.t: "$laamp_lotr_contract_schemes.3011.t$: провал!"
+ laamp_lotr_contract_schemes.3013.desc: "«Значит, теперь [target.GetTitledFirstName] знает, что кто-то охотится за [target.GetHerHis] головой? [Select_CString(ROOT.Char.IsFemale, 'Дура', 'Глупец' )]!» - рычит [employer.GetTitledFirstName], «И зачем я вам #EMP доверился#!? Га!»\n\nЯ пожимаю плечами, открываю рот, чтобы объяснить... ошибку, из-за которой наша цель избежала гибели, но [employer.GetFirstNamePossessiveNoTooltip] вытягивает руку, указывая пальцем на двор снаружи.\n\n«Вам не заплатят за проваленную работу. Убирайтесь, [employer.Custom('FortifiedBuilding')] больше примет вас, иначе я вымещу своё разочарование на #EMP вас#!»."
+ laamp_lotr_contract_schemes.3013.orc.desc: "«Ты хочешь сказать, мелкий жалкий червяк, что [target.GetTitledFirstName] знает об ударе? И это произошло из-за #italic твоей#! ошибки?» - рычит [employer.GetTitledFirstName], выхватывая грубый изогнутый меч, пока [employer.GetHerHis] стражники кладут руки на рукоять своих оружий.\n\nЯ протягиваю руки в знак мольбы, открывая рот, чтобы объяснить... ошибку, из-за которой наша добыча избежала гибели, но тут поднимается сжатый кулак, и я быстро замолкаю. [employer.GetFirstNamePossessiveNoTooltip] начинает топать руками и сопеть, и я медленно отступаю. «Убирайся! Убирайся с глаз долой, пока я не [Select_CString(employer.IsFemale, 'забрала', 'забрал' )] твою голову взамен [target.GetHerHis]! Беги, мелкая личинка! Беги!»\n\nГде-то снаружи рычат варги, мерцают огоньки свечей, и орки выхватывают свои коварные клинки. Я очень быстро ухожу."
+ laamp_lotr_contract_schemes.3013.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.negative.light$"
+
+ laamp_lotr_3011_contract_scheme: "Уничтожить врага"
+ laamp_lotr_3011_contract_scheme_action: "Уничтожить врага"
+ laamp_lotr_3011_contract_scheme_desc: "Бывают времена, когда [Concept('contractor', 'нанимателю')|E] нужна чья-то смерть, но он не хочет рисковать и заниматься этим лично, либо слишком занят другими делами. К счастью, убийство легко можно поручить кому-либо заинтересованному.$laamp_contract_scheme_desc_general_boilerplate$"
+ laamp_lotr_3011_contract_scheme_desc_general: "$laamp_lotr_3011_contract_scheme_desc$"
+ laamp_lotr_3011_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
+ laamp_lotr_3011_desc_title: "Честолюбивым наёмникам с твёрдой волей,"
+ laamp_lotr_3011_desc: "[TaskContract.GetEmployer.GetPrimaryTitle.GetAdjective][Select_CString(TaskContract.GetEmployer.IsFemale, 'ая', 'ий' )] [TaskContract.GetEmployer.GetTitleAsNameNoTooltip|l] предлагает щедрую награду в безупречные и проверенные руки за тонкую, сложную работу."
+
+ laamp_lotr_4001_contract: "$laamp_lotr_4001_contract_scheme$"
  laamp_lotr_4001_request: "Этот [Concept( 'task_contract', 'договор' )|E] требует от вас успешного завершения [Concept( 'scheme', 'происков' )|E] типа «[GetScheme('laamp_lotr_4001_contract_scheme').GetTypeName]»"
 
  laamp_lotr_4001_contract_scheme: "Исцелить хворых"
