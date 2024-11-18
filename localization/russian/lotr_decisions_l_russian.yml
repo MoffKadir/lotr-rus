@@ -81,6 +81,11 @@
  decision_claim_high_kingship_confirm:0 "Пусть Верховные короли вновь противостоят Тени"
  decision_claim_high_kingship_effect_tooltip:0 "Каждый [elf|El] в [Concept('lindon', 'Линдоне')|E] станет вашим вассалом."
 
+ convert_to_elven_government_decision: "Принять эльфийскую форму правления"
+ convert_to_elven_government_decision_desc: "Эльфы правят не так, мы должны вернуться к нашему традиционному образу жизни."
+ convert_to_elven_government_decision_tooltip: "Принять эльфийскую форму правления"
+ convert_to_elven_government_decision_confirm: "Вернуться к эльфийскому образу жизни"
+
  ### Maglor Decision ###
  decision_annihilate_abhorred:0 "Уничтожить Саурона Отвратительного"
  decision_annihilate_abhorred_tooltip:0 "Раз и навсегда уничтожить слугу Мелькора"
@@ -356,7 +361,6 @@
  control_percentage_of_gondor_desc:1 "Вы контролируете по крайней мере #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('e_gondor').GetName]"
  control_percentage_of_arnor_desc:1 "Вы контролируете по крайней мере #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('e_arnor').GetName]"
 
-
  decision_solidify_reunited_kingdom:0 "Укрепить Воссоединённое королевство"
  decision_solidify_reunited_kingdom_desc:0 "Провозгласив [GetTitleByKey('e_reunitedkingdom').GetNameNoTier], мы, однако, не решили многие проблемы. Отсутствие контроля над всеми территориями королевств [arnor|E] и [gondor|E] заставляет некоторых с сомнением относиться к нашим притязаниям на положение владык истинного Воссоединённого королевства и всех [dunedain|El]. Если бы мы смогли развеять эти сомнения, установив контроль над всеми землями, входящими в состав королевства, мы смогли бы окончательно подавить все проявления регионализма и окончательно укрепить его как единое целое."
  decision_solidify_reunited_kingdom_tooltip:0 "Никогда больше мы не будем разделены!"
@@ -562,7 +566,6 @@
  decision_reclaim_dor_rhunen_desc:0 "Великий Ромендакиль захватил эти земли для [Concept( 'gondor', 'Гондора' )|E], но постепенно они были потеряны из-за пренебрежения и козней Врага. После долгих раздоров они снова наши; обширные земли, готовые к заселению и укреплению. \n\nНужно закрепить наш контроль и объявить всем, что Дор Рунен отныне и навсегда под властью Скипетра!"
  decision_reclaim_dor_rhunen_confirm:0 "Дор Рунен вновь принадлежит Гондору!"
  reclaim_dor_rhunen_decision:0 "Великая восточная провинция Гондора будет официально возвращена под власть Скипетра."
-
 
  decision_gondorian_renaissance:0 "Содействовать гондорскому возрождению"
  decision_gondorian_renaissance_desc:0 "Теперь, когда Тень наконец-то побеждена, держава [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] будет свободна. Новый век искусства и открытий ожидает [dunedain|El], отныне не обременённых тяготами.\n\n#TOLKIENQUOTE «Грядёт новый день! И когда засветит Солнце, оно будет светить ещё ярче!»#!"
@@ -832,8 +835,6 @@
  decision_annex_east_forodwaith_tooltip:0 "Включить западные марки в состав нашей державы"
  decision_annex_east_forodwaith_desc:0 "Народы Восточного Фородвайта имеют глубокие связи с ангмаррим. Теперь, когда они признают мою власть, мы должны полностью подчинить их себе. Они должны научиться служить и бояться меня так же, как их сородичи."
  decision_annex_east_forodwaith_confirm:0 "Их законное место!"
-
-
 
  decision_subjugate_the_ettenmoors:0 "Покорить Эттенмурс"
  decision_subjugate_the_ettenmoors_tooltip:0 "Вы заметили, что в Эттенмурсе бродят холмовые тролли. Возможно, они могли бы послужить более важной цели..."
@@ -1193,7 +1194,6 @@
  decision_khand_stabilise_successions_ruled_for_three_generations:0 "Три последних [Concept( 'rulers', 'правителя' )|E] державы [GetTitleByKey('e_khand').GetName] принадлежали к вашей [Concept( 'dynasty', 'династии' )|E]"
  EFFECT_REMOVE_VARIAG_SUCCESSION:0 "Ваша [culture|El] заменит [Concept( 'tradition', 'традицию' )|E] «[GetCultureTradition('tradition_variag_succession').GetName]» на «[GetCultureTradition('tradition_variag_succession_stable').GetName]»."
 
-
  ###############################
  #### Anduin Vale Decisions ####
  ###############################
@@ -1254,8 +1254,6 @@
  decision_margoz_prepare_easterling_host:0 "Золотое воинство игат"
  decision_margoz_prepare_easterling_host_tooltip:0 "Сокровищница в пути"
  decision_margoz_prepare_easterling_host_desc:0 "Мой предшественник добился значительных успехов в создании большого войска, с которым можно было бы отправиться в поход на виночерпиев [Concept( 'dorwinion', 'Дорвиниона' )|E]. Однако его эгоистичный и недальновидный наследник сохранил этих людей для своих собственных нелояльных целей. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] завершить работу предыдущего Локе-Кана на западе, прежде чем смогу отвоевать Сзрел-Каин у [dorwinrim|El]."
-
-
 
  decision_margoz_prepare_easterling_host_confirm:0 "Старинные вина и багровая кровь потекут как единое целое"
 
@@ -1359,7 +1357,6 @@
  decision_dominion_of_the_sorcerer.check_evil_trigger:0 "В пределах [GetTitleByKey('k_amon_lanc').GetNameNoTier] есть по крайней мере один [ruler|El] с [Concept( 'faith', 'конфессией' )|E] Зла"
  DESECRATE_CARAS_GALADHON_DONE:0 "[decision|E] «Осквернить Карас Галадон» завершено"
  DESECRATE_ARADHRYND_DONE:0 "[decision|E] «Осквернить Арадринд» завершено"
-
 
  decision_subjugate_mount_gundabad:0 "Подчинить гору Гундабад"
  decision_subjugate_mount_gundabad_desc:0 "Когда-то орки [Concept( 'gundabad', 'Гундабада' )|E] и люди Лангвелла оказывали почести [Concept( 'witchking', 'Королю-чародею' )|E] [Concept( 'angmar', 'Ангмара' )|E], снабжая его войска воинами и припасами. В те дни эти земли стали известны как [eastangmar|E]. Теперь пришло время им признать другого повелителя."
@@ -1486,6 +1483,16 @@
  decision_reunite_yellow_mountains_desc:0 "Долгие годы мы, [blacklocks|E]Черновласы, жили в Жёлтых горах, сражаясь с [goblins|E]гоблинами и прочей нечистью, заполонившей эти горы. Хотя в прошлом мы пытались объединить южную и северную половины этих гор, попытки были недолгими и безуспешными. Однако эта попытка была предпринята много веков назад, и вот снова нам представляется возможность. Пусть же могучие сыны Трара Гордого, населявшие эти древние горы на протяжении несметных лет, наконец объединятся!"
  decision_reunite_yellow_mountains_tooltip:0 "Желтые горы будут едины!"
  decision_reunite_yellow_mountains_confirm:0 "Больше не разделены, а едины!"
+
+ decision_colonise_erebor:0 "Вернуться в Эребор"
+ decision_colonise_erebor_tooltip:0 "Восстановить Одинокую Гору"
+ decision_colonise_erebor_desc:0 "Клан Длиннобородов потерял чертог за чертогом. Гундузбад, где пробудился Дурин, Кхазад-дум - средоточие нашей власти при правлении Дурина, а теперь и Эребор, Одинокую Гору. \n"
+ decision_colonise_erebor_pre_smaug:0 "Нас изгнали из горы, но мы никогда не забудем о ней. Мы потеряли Эребор, но мы его вернём! \n\n"
+ decision_colonise_erebor_post_smaug:0 "Изгнанные Смаугом из горы, потерявшие дом и короля, мы пали духом, но никогда не забудем нашу гору. Мы вернём себе Эребор! \n\n"
+ decision_colonise_erebor_post_thorin:0 "Мы вновь изгнаны из Эребора! Мы потеряли нашу гору из-за Смауга и Торин отбил её. Лишь для того, чтобы потерять её во второй раз. Но мы не сдадимся! Мы вернём себе Одинокую Гору! \n\n"
+ decision_colonise_erebor_outro:0 "Мы вернём наш дом! Мы - гномы Народа Дурина, а наш король - Король-под-Горой!"
+ decision_colonise_erebor_confirm:0 "Вернуть Гору!"
+ colonises_erebor:0 "[GetTitleByKey('b_throne_of_erebor').GetNameNoTier] переходит к вам"
 
  #####################################
  #### Artifact Crafting Decisions ####
@@ -1618,7 +1625,7 @@
  ##########################
 
  decision_conquest_of_pel:0 "Завоевание Пэла"
- decision_conquest_of_pel_desc:0 "На протяжении бесчисленных лет магрийский народ желал присоединить Пэл к своим королевствам-близнецам. Завоевав королевство, мы сможем закрепить его в качестве основной части королевства Двух корон."
+ decision_conquest_of_pel_desc:0 "На протяжении бесчисленных лет магрийцы боролись за Пэл, ещё до того, как адунайцы пришли на эти земли. Теперь, когда королевство находится в крепкой хватке, мы можем вновь провозгласить его частью Двух корон."
  decision_conquest_of_pel_confirm:0 "От двух корон - к трём"
  decision_conquest_of_pel_tooltip:0 "От двух корон - к трём"
 

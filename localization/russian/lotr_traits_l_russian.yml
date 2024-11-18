@@ -59,7 +59,7 @@
  trait_elf_pregnant_4:0 "Майтафэа (Отдача)"
  trait_elf_pregnant_4_desc:0 "Майтафэа (квенья: Заботливый дух) используется для обозначения периода беременности у эльфов. Беременность у эльфов значительно отличается от человеческой - в частности своей продолжительностью, а также тем, что оба родителя принимают полное участие в процессе вынашивания.\n\nВ течение этого периода они делятся душевной энергией со своим ребёнком, устанавливая прочную эмоциональную связь и способствуя росту и развитию. Молодой эльф, потерявший одного из родителей в ходе этого процесса наверняка получит эмоциональную травму, а иногда может и вовсе угаснуть от горя."
  trait_half_elf:0 "Полуэльф"
- trait_half_elf_desc:0 "Этот персонаж родился в союзе эльфа и человека, что наделило его особыми чертами обоих племён."
+ trait_half_elf_desc:0 "Этот персонаж родился в союзе [Concept('elves', 'эльфа')|E] и [Concept('conceptracemen', 'человека')|E], что наделило его особыми чертами обоих племён."
  trait_twotreeslight:0 "Свет Двух Древ"
  trait_twotreeslight_desc:0 "Этот персонаж узрел свет [Concept( 'twotrees', 'Двух Древ' )|E] до их уничтожения, запомнив свет, что существовал до солнца и луны."
  trait_veteran_of_palisor:0 "Ветеран Палисора"
@@ -98,6 +98,10 @@
  dwarf_mother_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] является реинкарнацией одного из легендарных семи [Concept( 'dwarffathers', 'гномьих праотцов' )|E]. Каждый из них был благословлен [aulecharacter|E] на периодическое перерождение в своей семье, пока не проживет семь жизней. По странному стечению обстоятельств в этот раз праотец вернулся в женском обличии."
  dwarf_father_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] является реинкарнацией одного из легендарных семи [Concept( 'dwarffathers', 'гномьих праотцов' )|E]. Каждый из них был благословлен [aulecharacter|E] на периодическое перерождение в своей семье, пока не проживет семь жизней."
 
+ trait_durin_unify: "Укхзад"
+ trait_durin_unify_desc: "Этот персонаж — текущий правитель верховного королевства Народа Дурина и требует к себе почтения, соответствующего столь высокому положению."
+ trait_durin_unify_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] — текущий правитель Верховного королевства Народа Дурина и требует к себе почтения, соответствующего столь высокому положению."
+
  tamska:0 "Тамска"
  born_tamska:0 "Рождённая Тамска"
  found_tamska:0 "Найденная Тамска"
@@ -124,7 +128,10 @@
  trait_horse_master:0 "Мастер-наездник"
  trait_horse_master_desc:0 "Для этого персонажа верховая езда стала второй натурой."
  trait_cavalry_leader:0 "Лидер всадников"
- trait_cavalry_leader_desc:0 "Этот персонаж — отличный наездник, способный вести войну на любом поле боя и командовать большим отрядом кавалерии."
+ trait_cavalry_leader_orc:0 "Наездник на варге"
+ trait_cavalry_leader_desc:0 "Этот персонаж — отличный наездник, способный вести войну на любом поле боя и командовать большим отрядом всадников."
+ trait_cavalry_leader_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.GetCharacter.IsFemale, 'отличная наездница, способная', 'отличный наездник, способный' )] вести войну на любом поле боя и командовать большим отрядом всадников."
+ trait_cavalry_leader_orc_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.GetCharacter.IsFemale, 'наездница на варге, способная', 'наездник на варге, способный' )] вести войну на любом поле боя и командовать большим отрядом зверей."
 
  trait_urukhai_berserker:0 "Орк-берсерк"
  trait_urukhai_berserker_desc:0 "Жизнь не имеет значения для этого гневного урука, который с радостью отдал бы свою жизнь во имя крови и злобы."
@@ -203,6 +210,13 @@
  trait_giant_hobbit_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] возвышается над остальными [Concept( 'hobbit', 'хоббитами' )|E] и даже может оседлать лошадь!"
  trait_giant_goblin_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] возвышается над остальными [Concept( 'goblin', 'гоблинами' )|E] и даже может сойти за паршивого [Concept( 'orc', 'орка' )|E]."
  trait_giant_druedain_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] выше остальных друэдайн, но всё равно ниже большинства [Concept( 'men', 'людей' )|E]."
+
+ trait_holy_warrior_darkness:0 "Воин Тьмы"
+ trait_holy_warrior_mahal:0 "Воин Махала"
+ trait_holy_warrior_free_peoples:0 "Воин Свободных народов"
+ trait_holy_warrior_darkness_desc:0 "Пылая тёмным рвением, [ROOT.GetCharacter.GetFirstNameNoTooltip] не успокоится, пока Тьма не падёт на все народы [Concept('middleearth', 'Средиземья')|E]."
+ trait_holy_warrior_mahal_desc:0 "Пылая [Concept('dwarven', 'гномьим')|E] рвением, [ROOT.GetCharacter.GetFirstNameNoTooltip] будет сражаться за Детей [Concept('mahalcharacter', 'Махала')|E]."
+ trait_holy_warrior_free_peoples_desc:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Преисполненная', 'Преисполненный' )] надежды и решимости, [ROOT.GetCharacter.GetFirstNameNoTooltip] будет защищать Свободные народы [Concept('middleearth', 'Средиземья')|E]."
 
  ### SAURON TRAITS ###
  trait_sauron_ringless:0 "Потеря Единого Кольца"
