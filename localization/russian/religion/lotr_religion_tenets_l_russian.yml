@@ -36,7 +36,6 @@
  tenet_birthright_eldar_name:0 "Право первородства эльдар"
  tenet_birthright_eldar_desc:0 "[eldar|E], первые и старшие из Детей Илуватара, стоят на страже естественного порядка мира. Они должны быть учителями - и, если потребуется, судьями - Последышей. Они не должны покидать земли, где родились, и своё право первородства."
  INCOMPATIBLE_TENET_ELVEN_MEDITATION_TRIGGER:1 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_elven_meditation').GetName( GetPlayer.GetFaith )]"
- doctrine_parameter_adunaic_propaganda_active_desc:0 "Последователи могут улучшить свои [skills|El] и влиять на историю, путём #high поддержки адунаикской пропаганды#!"
 
  # Free Peoples Tenets
  tenet_druedain_isolation_name:0 "Изоляция друэдайн"
@@ -76,14 +75,29 @@
  tenet_unquiet_waters_desc:0 "Тёмные воды мира вселяют страх. Недремлющее зло таится в этих глубинах."
  tenet_blood_of_the_ancestors_name:0 "Кровь предков"
  tenet_blood_of_the_ancestors_desc:0 "Наши предки взирают на нас с загробного мира, наставляют и указывают нам путь. Мы должны уважать и чтить их за это."
+ tenet_ancestor_worship_scions_of_anadune_name:0 "Отпрыски Анадунэ"
+ tenet_ancestor_worship_scions_of_anadune_desc:0 "Великолепие и мощь [anadune|E] были непревзойденными, и даже спустя века после [akallabeth|E] ее наследие продолжает жить в ее детях. Мы - преемники этого наследия, и мы будем чтить наших предшественников должным образом."
+ tenet_ancestor_worship_scions_of_westernesse_name:0 "Отпрыски Вестернессе"
+ tenet_ancestor_worship_scions_of_westernesse_desc:0 "Благодать и великолепие [westernesse|E] были непревзойденными, и даже спустя долгое время после его разложения и [Concept('downfall', 'Низвержения')|E] мы не забудем урок этой трагедии. Наше наследие - это Верные и их борьба с растущей тьмой, и мы будем чтить их за храбрость перед лицом преследований."
  tenet_right_of_the_hall_name:0 "Право чертога"
  tenet_right_of_the_hall_desc:0 "Те, кто переступают порог этого зала, будь то друзья или враги, удостаиваются чести войти с тем же миром, с которым пришли."
+
  tenet_adunaic_birthright_name:0 "Право первородства Адунай"
- tenet_adunaic_birthright_desc:0 "[adunaim|E] рождены с великим предназначением. Они потомки величайшего народа, который когда-либо видела [arda|E]. Всё [middleearth|E] — наше наследие, распоряжаться которым мы вольны по собственному желанию, и под нашим владычеством она будет процветать. Пусть все осознают и примут эту истину."
+ tenet_adunaic_birthright_desc:0 "[adunai|E] - отпрыски величайшего народа, который когда-либо видел этот мир, были рождены со славным предназначением. Всё [middleearth|E] — наше наследие, распоряжаться которым мы вольны по собственному желанию, и под нашим владычеством она будет процветать. Пусть все осознают и примут эту истину."
  tenet_adunaic_mandate_name:0 "Мандат адунай"
- tenet_adunaic_mandate_desc:0 "Адунай по своей природе стоят выше всех людей Средиземья, им поручено упорядочить мир во имя всеобщего блага. Однако это высокое положение налагает на них ответственность: править справедливо, хотя и сурово; направлять и возвышать тех, кто ниже нас; проявлять милосердие, сдержанность и терпение."
+ tenet_adunaic_mandate_desc:0 "[adunai|E] по своей природе стоят выше всех [Concept('men', 'людей')|E] [Concept('middleearth', 'Средиземья')|E], им поручено упорядочить мир во имя всеобщего блага. Однако это высокое положение налагает на них ответственность: править справедливо, хотя и сурово; направлять и возвышать тех, кто ниже нас; проявлять милосердие, сдержанность и терпение."
+ doctrine_parameter_adunaic_propaganda_active_desc:0 "Последователи могут улучшить свои [skills|El] и влиять на историю, путём #high поддержки адунаикской пропаганды#!"
  INCOMPATIBLE_TENET_ADUNAIC_MANDATE_TRIGGER:1 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_adunaic_mandate').GetName( GetPlayer.GetFaith )]"
  INCOMPATIBLE_TENET_ADUNAIC_BIRTHRIGHT_TRIGGER:0 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_adunaic_birthright').GetName( GetPlayer.GetFaith )]"
+ INCOMPATIBLE_TENET_COMMUNAL_IDENTITY_TRIGGER:1 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_communal_identity').GetName( GetPlayer.GetFaith )]"
+ doctrine_parameter_conversion_buff_adunai_religion:0 "Скорость обращения [Concept('counties', 'графств')|E], исповедующих #L [GetReligionByKey('adunai_religion').GetName|l]ие#! [Concept('religion', 'конфессии')|E]: #P +30%#!"
+ doctrine_parameter_conversion_nerf_outside_numenorean_group:0 "Скорость обращения [Concept('counties', 'графств')|E], не входящих в [Concept('heritage_group', 'группу')|E] #V [Concept('numenorean', 'нуменорского')|E]#! наследия: #N -50%#!"
+ COURT_CHAPLAIN_CONVERSION_ADUNAIC_BIRTHRIGHT_PENALTY_MODIFIER:0 "[councillor.GetFaith.GetAdjective] — [GetFaithDoctrine('tenet_adunaic_birthright').GetBaseName]"
+ COURT_CHAPLAIN_CONVERSION_ADUNAIC_MANDATE_PENALTY_MODIFIER:0 "[councillor.GetFaith.GetAdjective] — [GetFaithDoctrine('tenet_adunaic_mandate').GetBaseName]"
+ COURT_CHAPLAIN_CONVERSION_ADUNAIC_BIRTHRIGHT_BONUS_MODIFIER:0 "[councillor.GetFaith.GetAdjective] — [GetFaithDoctrine('tenet_adunaic_birthright').GetBaseName]"
+ COURT_CHAPLAIN_CONVERSION_ADUNAIC_MANDATE_BONUS_MODIFIER:0 "[councillor.GetFaith.GetAdjective] — [GetFaithDoctrine('tenet_adunaic_mandate').GetBaseName]"
+
+
  tenet_dune_covens_name:0 "Ведьминские ковены" #juke note: set up to be used as a generic witch coven tenet
  tenet_dune_covens_desc:0 "Мир устроен загадочным образом, таит в себе множество тайн и странных сил. Отправляться на поиски этих сил, учиться у тени и наслаждаться ею — естественное желание."
  doctrine_parameter_summon_witch_active:0 "Персонажей со [Concept('trait','свойством')|E] «[GetTrait('witch').GetName( GetNullCharacter )]» можно пригласить к вашему двору через [decision|El]."
