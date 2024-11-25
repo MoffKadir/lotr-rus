@@ -51,7 +51,14 @@
  expedition.0008.b:0 "Какие у нас есть причины отказываться от своей независимости?"
 
  # Letter to player suzerain asking to vassalize #
- expedition.0009.opening:0 "[sender.Custom2('AppropriateGreeting', ROOT.Char)]"
+ expedition.0009.opening:0 "[tributary.Custom2('AppropriateGreeting', ROOT.Char)]"
  expedition.0009.desc:0 "Хотя изначально мы были лишь сателлитами главной крепости, многие в нашем владении желают присягнуть на верность и присоединиться к родным владениям в качестве верных вассалов. Мы ждём вашего ответа, затаив дыхание. Я прошу вас предоставить нам все права и привилегии вассала, позвольте нам вновь воссоединиться с нашими родичами."
  expedition.0009.a:0 "Блудные дети должны воссоединиться с родной крепостью."
  expedition.0009.b:0 "Мы не можем управлять такими далёкими друг от друга владениями."
+ expedition.0009.b.tt:0 "[tributary.GetName] остаётся вашим [Concept('tributary', 'данником')|E]"
+ 
+ # Completing the satellite hold 
+ expedition.0010.t:0 "Основание новой гномьей крепости"
+ expedition.0010.desc:0 "После долгих трудов новое гномье владение [current_location.GetNameNoTier] готово. Подземные залы были вырублены в скале, и установлены врата.\n\n[Select_CString(new_dwarven_ruler.IsFemale, 'Правительница', 'Правитель' )] нового владения, [new_dwarven_ruler.GetFirstName] предстанет перед трудной работой, пока [Concept('dwarves', 'гномы')|E] обретут здесь процветание, но я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )], что это новое владение ждет светлое будущее."
+ expedition.0010.a:0 "Удачи вам, [new_dwarven_ruler.GetFirstName]!"
+ expedition.0010.a.tt:0 "   Становится вашим [Concept('tributary', 'данником')|E]"
