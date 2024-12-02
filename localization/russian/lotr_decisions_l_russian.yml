@@ -349,6 +349,8 @@
  decision_rebuild_royal_road_tooltip:0 "Вы начнете восстанавливать Королевский тракт."
  decision_rebuild_royal_road_confirm:0 "Пусть дорога будет восстановлена!"
  decision_rebuild_royal_road_tooltip_condition:0 "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('special_royal_road').GetName]"
+ rebuild_royal_road_tt1:0 "Вы начнёте строительство Королевского тракта. Это займёт до двух лет"
+ rebuild_royal_road_tt2:0 "После завершения [capital.GetNameNoTier], [GetTitleByKey('c_tharbad').GetNameNoTier], [GetTitleByKey('c_fornost').GetNameNoTier], [GetTitleByKey('c_riverwatch').GetNameNoTier], [GetTitleByKey('c_bree').GetNameNoTier] и [GetTitleByKey('c_galtrev').GetNameNoTier] получат [modifier|El] «[GetModifier('royal_road_rebuilt_county_modifier').GetNameWithTooltip]»"
 
  ##################################
  ### Reunited Kingdom Decisions ###
@@ -1413,7 +1415,7 @@
  donan_formation_western_drift_tooltip:0 "При полном контроле герцогства Аннун и Дориант станут де-юре частью королевства"
  decision_create_donan_empire:0 "Создать великую державу Белдонат"
  decision_create_donan_empire_tooltip:0 "Создать державу, посвящённую обеим Белам"
- decision_create_donan_empire_desc:0 "Когда-то наш народ был практически уничтожен. Однако тысячелетия борьбы между королевствами-в-изгнании, Тенью и народом Харада сделали нас не менее стойкими. Теперь, когда наши сородичи в горах, на холмах и даже на окраинах Итилиэна объединились, мы наконец-то можем почувствовать облегчение, охватившее наш народ. Мы едины, мы в безопасности, и всё это по воле великих Белов."
+ decision_create_donan_empire_desc:0 "Когда-то наш народ был практически уничтожен. Однако тысячелетия борьбы между [Concept('realms_in_exile', 'королевствами-в-изгнании')|E], Тьмой и народами [Concept('harad', 'Харада')|E] сделали нас не менее стойкими. Теперь, когда наши сородичи в горах, на холмах и даже на окраинах Итилиэна объединились, мы наконец-то можем почувствовать облегчение. Мы едины, мы в безопасности, и всё это по воле великих Белов."
  decision_create_donan_empire_confirm:0 "Так решили великие Белы"
  donan_formation_empire_drift_tooltip:0 "Все предыдущие герцогства, которые могли быть добавлены к Кобадонату или Келдонату, но не были добавлены, будут добавлены, наряду с герцогствами Аэгард, Лаэргаладрин и Эредир, которые будут добавлены к Казидонату"
 
@@ -1423,16 +1425,32 @@
 
  # Unify Harad
  decision_unify_harad:0 "Объединить королевства Харада"
- decision_unify_harad_tooltip:0 "Верховные королевства Харада могут быть объединены в один большой титул."
- decision_unify_harad_desc:0 "Слишком долго харадрим жили разрозненными, сломленными, простыми пешками в больших играх! Будь то Саурон или Нуменор, мы были вынуждены склоняться перед внешними владыками. Больше не надо! Пришло время сынам Харада отбросить свои разногласия и объединиться под единым знаменем и под властью единого престола"
+ decision_unify_harad_tooltip:0 "Верховные королевства [Concept('harad', 'Харада')|E] могут быть объединены в один большой титул."
+ decision_unify_harad_desc:0 "Слишком долго [haradrim|El] жили разрозненными, сломленными, простыми пешками в больших играх! Будь то [sauroncharacter|E] или [numenor|E], мы были вынуждены склоняться перед внешними владыками. Довольно! Пришло время сынам [Concept('harad', 'Харада')|E] отбросить свои разногласия и объединиться под единым знаменем и под властью единого престола."
  decision_unify_harad_confirm:0 "Мы едины!"
 
  # Númenor-in-Exile
  decision_numenor_in_exile:0 "Принять мантию Нуменора-в-изгнании"
- decision_numenor_in_exile_tooltip:0 "Объединить государства-наследников Нуменора"
- decision_numenor_in_exile_desc:0 "Со времён Низвержения наследники Нуменора уменьшались и уменьшались, сражаясь между собой. Когда-то пламя было маяком для всего человечества, теперь от него остались лишь угли. Но угли, если их собрать, могут разжечь пламя заново."
+ decision_numenor_in_exile_tooltip:0 "Объединить государства-наследники Нуменора"
+ decision_numenor_in_exile_desc:0 "Со времён [Concept('downfall', 'Низвержения')|E] наследники [Concept('numenor', 'Нуменора')|E] угасали и уменьшались, сражаясь между собой. Когда-то пламя было маяком для всего [Concept('mankind', 'человечества')|E], теперь от него остались лишь угли. Но угли, если их собрать, могут разжечь пламя заново."
  decision_numenor_in_exile_confirm:0 "Пусть Нуменор потерян, но нуменорцы выстоят!"
 
+ control_of_nie_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('special_nie').GetName]"
+ control_of_colonial_minhiriath_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_colonial_minhiriath').GetName]"
+ control_of_gondorian_heartlands_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_gondorian_heartlands').GetName]"
+ control_of_umbar_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('middleearth_haradwaith_near_umbar').GetName]"
+ control_of_bellakar_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_bellakar').GetName]"
+ control_of_anbalkumagan_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_anbalkumagan').GetName]"
+ control_of_colonial_thani_hazad_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_colonial_thani_hazad').GetName]"
+
+ numenor_in_exile_titles_tt:0 "Каждый [Concept('kingdom', 'королевский')|E] [Concept('title', 'титул')|E] в пределах бывших [Concept('numenorean', 'нуменорских')|E] колоний станет [de_jure|El] частью державы [empire_nie.GetName]"
+ numenor_in_exile_acceptance_tt:0 "Каждая [Concept('culture', 'культура')|E] державы, разделяющая #V [Concept('numenorean', 'нуменорскую')|E]#! [Concept('heritage_group', 'группу наследия')|E], повысит [Concept('cultural_acceptance', 'терпимость')|E] на #p 20%#!"
+ numenor_in_exile_innovation_tt:0 "Каждая [Concept('culture', 'культура')|E] державы, разделяющая #V [Concept('numenorean', 'нуменорскую')|E]#! [Concept('heritage_group', 'группу наследия')|E], вновь откроет [Concept('innovations', 'инновации')|E] #V Нуменорская архитектура#!"
+ cultural_acceptance_gain_numenor_in_exile:0 "Возрождённая [Concept('numenorean', 'нуменорская')|E] идентичность"
+ numenor_in_exile_thani_struggle_tt:0 "[GetStruggle('thani_hazad_struggle').GetName] подойдут к концу"
+ numenor_in_exile_thani_struggle_toast:0 "[GetStruggle('thani_hazad_struggle').GetName] закончились!"
+ numenor_in_exile_thani_struggle_toast_desc:0 "[nie_founder.GetShortUIName|U] [Select_CString( nie_founder.IsLocalPlayer, 'положите', 'положит')] конец борьбе «[GetStruggle('thani_hazad_struggle').GetName]»"
+ numenor_in_exile_legend.tt:0 "Вы получите [Concept('legend_illustrious', 'выдающуюся')|E] [Concept('legend_seed', 'зарождающуюся легенду')|E] #V $legend_nie_name$#!!"
 
  ##########################
  #### Goblin Decisions ####
@@ -1654,8 +1672,8 @@
  decision_beat_mag_tooltip:0 "Вы рассматриваете варианты изгнания магрийских захватчиков"
  beat_mag:0 "Вы готовы изгнать варваров из своих земель"
  beat_mag_effect:0 "Вы рассматриваете варианты изгнания магрийских захватчиков"
- defeated_bandits_via_decision:0 "You have completed the #V Eliminate the Bandits#! decision"
- defeated_bandits_via_normal_mechanics:0 "You have hold the [GetTitleByKey('c_obishamba').GetNameNoTier] county"
+ defeated_bandits_via_decision:0 "Вы приняли решение #V Уничтожить разбойников#!"
+ defeated_bandits_via_normal_mechanics:0 "Вы владеете графством [GetTitleByKey('c_obishamba').GetNameNoTier]"
 
  decision_beat_bandits:0 "Уничтожить разбойников"
  decision_beat_bandits_desc:0 "PLACEHOLDER"
