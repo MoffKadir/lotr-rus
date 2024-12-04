@@ -724,6 +724,16 @@
  decision_wildman_invasion_tooltip:0 "Дикари рассмотрят предложение о начале [Concept('varangian_adventure', 'приключения')|E]"
  decision_wildman_invasion_tooltip_2:0 "Они могут воспользоваться нашим предложением, решив не вторгаться в Гондор, а выбрать более слабое королевство - Энедвайт, Рохан, Андуин или Эриадор."
 
+ decision_claim_the_sacred_isles:0 "Претендовать на Священные острова"
+ decision_claim_the_sacred_isles_desc:0 "Легенда рассказывает о сотворении четырех священных островов, созданных самим [ulmocharacter|E]. Первой была создана Узкая гавань, расположенная далеко на юге и ближе всего к владениям Владыки приливов. Затем были воздвигнуты острова-близнецы Одинокий и Пеликаний, украсившие побережье Мардруака. И последним из четырех сестер был создан Бесплодный остров, где на берег выбрасываются ракушки, которые, как говорят, говорят голосом владыки моря...\n\nМы заявим претензии на эти священные острова, чтобы доказать свое превосходство над всеми, кто осмелится бороздить дикие воды Великого моря."
+ decision_claim_the_sacred_isles_tooltip:0 "Получить сильные претензии на каждый из пиратских Священных островов."
+ decision_claim_the_sacred_isles_confirm:0 "Острова будут моими!"
+
+ decision_unite_the_sacred_isles:0 "Объединить Священные острова"
+ decision_unite_the_sacred_isles_desc:0 "Захватив все четыре Священных острова, пришло время закрепить мою власть над ними.\n\nПусть все корсары узнают мое имя и будут потрясены великолепием [Select_CString(ROOT.Char.IsFemale, 'объединительницы', 'объединителя' )] Священных островов!"
+ decision_unite_the_sacred_isles_tooltip:0 "Создать новое королевство на основе четырех Священных островов."
+ decision_unite_the_sacred_isles_confirm:0 "Все признают мою славу!"
+
  ##############################
  ### Oath of Eorl Decisions ###
  ##############################
@@ -779,10 +789,10 @@
  rohan.0002.a:0 "Мы будем одним народом, едиными эотеод."
  rohan.0002.b:0 "Никогда... Я не откажусь от наших путей!"
 
- # decision_visit_dwimordene:0 "Visit the Dwimordene"
- # decision_visit_dwimordene_desc:0 "The Dwimordene is an enchanted forest, shrouded in mists. Some say, a powerful fey rules these lands. Some even suggest visiting this forest in order to receive the fey's guidance..."
- # decision_visit_dwimordene_tooltip:0 "Travel to the Golden Wood and meet its ruler."
- # decision_visit_dwimordene_confirm:0 "I shall make for the Dwimordene."
+ decision_visit_dwimordene:0 "Посетить Двиморден"
+ decision_visit_dwimordene_desc:0 "Двиморден - заколдованный лес, окутанный туманом. Некоторые говорят, что этими землями правит могущественные фэй. Некоторые даже советуют посетить этот лес, чтобы получить наставления фэй..."
+ decision_visit_dwimordene_tooltip:0 "Отправиться в Золотой лес и встретиться с его властителями."
+ decision_visit_dwimordene_confirm:0 "Я отправлюсь в Двиморден."
 
  ###################################
  ####### Enedwaith Decisions #######
@@ -1589,6 +1599,7 @@
  struggle_thani_hazad_confederation_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
  struggle_thani_hazad_confederation_valid_previous_phase_tooltip:0 "Предыдущая фаза [Concept('thani_hazad_struggle', 'Происков Балан-Лай')|E] - [struggle_thani_hazad_phase_confederation|E]"
 
+
  struggle_thani_hazad_unification:0 "Единство цели"
  struggle_thani_hazad_unification_description:0 "Несмотря на то, что [balan_lai|E] противостоял чужеземцам, мы так же часто враждовали между собой. Не бывать этому! Наконец-то принцы объединились как по духу, так и по цели. \n\nХотя это потребует тщательных переговоров и работы, для нас настало время создать ещё более тесный союз, в котором мы действительно станем одной нацией."
  struggle_thani_hazad_unification_select_tooltip:0 "Объединить [balan_lai|E] в единое государство, получив титул [GetTitleByKey('e_thani_hazad').GetName], подчинив принцев и приняв уникальный [succession_law|El]."
@@ -1781,7 +1792,7 @@
  settle_duchy_tooltip:0 "$settle_duchy$"
  settle_duchy_desc:0 ""
  settle_wilderness_county_or_duchy_decision_confirm:0 "Пришло время обустроить дом..."
- settle_wilderness_county_or_duchy_basic_effect:0 "Вы заселите #P 1#! [Concept('county', 'графство')|E] за каждых #V 100#! [Concept('men_at_arms', 'профессионалов')|E] типа [GetMaA('laamp_settler_maa').GetName] "
+ settle_wilderness_county_or_duchy_basic_effect:0 "Вы заселите #P 1#! [Concept('county', 'графство')|E] за каждых #V 100#! [Concept('men_at_arms', 'профессионалов')|E] типа [GetMaA('laamp_settler_maa').GetName]"
  settle_wilderness_county_or_duchy_current_settle_limit_effect:0 "Текущие графства могут быть заселены: #V [GetPlayer.MakeScope.ScriptValue('lotr_settle_wilderness_as_adventurer_county_limit')]#!"
  settle_wilderness_county_or_duchy_destroy_maa_effect:0 "[men_at_arms|E]-[GetMaA('laamp_settler_maa').GetName] будут распущены!"
  settle_wilderness_county_or_duchy_not_enough_maa_tt:0 "У вас недостаточно профессионалов"
