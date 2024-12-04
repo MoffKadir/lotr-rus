@@ -112,13 +112,15 @@
 
  tenet_tamska_main_name:0 "Андзи Тамскул" # The Tamska System
  tenet_tamska_main_desc:0 "[tamska|E], или Великие королевы, - законные правительницы нашего народа, назначенные божественной властью. Наделенные божественной сущностью, они всегда будут вести наш народ по пути к спасению, поскольку являются воплощениями самих богов. Посредством ритуалов и церемоний тамскиты отдают дань уважения Тамске, ища ее руководства и благословения во всех аспектах жизни. Наша вера глубоко вплетена в ткань нашего общества, формируя наши обычаи, традиции и коллективную идентичность как народа, объединенного под божественной властью Великих королев."
- COMPATIBLE_TENET_RITE_TRIGGER:0 "Совместимый [core_tenet|El] - [GetFaithDoctrine('tenet_rite').GetName( GetPlayer.GetFaith )]"
- INCOMPATIBLE_TENET_RITE_TRIGGER:0 "Несовместимый [core_tenet|El] - [GetFaithDoctrine('tenet_rite').GetName( GetPlayer.GetFaith )]"
- DOCTRINE_NOT_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER:0 "Не требуется [doctrine|El] «[temporal_head_of_faith|E]»"
- DOCTRINE_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER:0 "Требуется [doctrine|El] «[temporal_head_of_faith|E]»"
- DOCTRINE_NOT_REQUIRED_FEMALE_CLERGY_TRIGGER:0 "Не требуется [doctrine|El] «[doctrine_clerical_gender_female_only|E]»"
- DOCTRINE_REQUIRED_FEMALE_CLERGY_TRIGGER:0 "Требуется [doctrine|El] «[doctrine_clerical_gender_female_only|E]»"
+ COMPATIBLE_TENET_RITE_TRIGGER:0 "Совместимый [core_tenet|El] - [GetFaithDoctrine('tenet_rite').GetBaseName]"
+ INCOMPATIBLE_TENET_RITE_TRIGGER:0 "Несовместимый [core_tenet|El] - [GetFaithDoctrine('tenet_rite').GetBaseName]"
+ DOCTRINE_NOT_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER:0 "Не требуется [doctrine|El] «[GetFaithDoctrine('doctrine_temporal_head').GetBaseName]»"
+ DOCTRINE_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER:0 "Требуется [doctrine|El] $doctrine_head_of_faith_name$ - [GetFaithDoctrine('doctrine_temporal_head').GetBaseName]"
+ DOCTRINE_NOT_REQUIRED_FEMALE_CLERGY_TRIGGER:0 "Не требуется [doctrine|El] $doctrine_clerical_gender_name$ - [GetFaithDoctrine('doctrine_clerical_gender_female_only').GetBaseName]"
+ DOCTRINE_REQUIRED_FEMALE_CLERGY_TRIGGER:0 "Требуется [doctrine|El] $doctrine_clerical_gender_name$ - [GetFaithDoctrine('doctrine_clerical_gender_female_only').GetBaseName]"
  doctrine_parameter_lotr_tamska_hof:0 "[temporal_head_of_faith|E] использует особый [succession_law|El] [Concept('realm', 'державы')|E] «[GetLaw('tamska_succession_law').GetName]»."
+ lotr_faith_conversion_cost_conversion_blocked_tamska_hof:0 "Вы - [tamska|E] и выбранная [faith|El] не имеет [Concept('core_tenet', 'догмата')|E] «[GetFaithDoctrine('tenet_tamska_main').GetBaseName]»"
+ lotr_faith_creation_blocked_tamska_hof:0 "Вы - [tamska|E] и новая [faith|El] не имеет [Concept('core_tenet', 'догмата')|E] «[GetFaithDoctrine('tenet_tamska_main').GetBaseName]»"
  doctrine_parameter_lotr_hold_court_piety_reward:0 "Проведение придворных приёмов даёт дополнительную награду в виде [Concept('piety', 'благочестия')|E]"
  hold_court_gain_piety_tooltip:0 "Вы получите [piety|El]"
 

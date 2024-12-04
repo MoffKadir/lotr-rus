@@ -89,7 +89,7 @@
  ### Maglor Decision ###
  decision_annihilate_abhorred:0 "Уничтожить Саурона Отвратительного"
  decision_annihilate_abhorred_tooltip:0 "Раз и навсегда уничтожить слугу Мелькора"
- decision_annihilate_abhorred_desc:0 "Хотя Моргот был свергнут и изгнан из мира, его зло осталось, чтобы осквернять [Concept('ardaconcept', 'Арду')|E] в дальнейшем. Величайшее из них - [sauroncharacter|E], его сильнейший слуга. Мучитель Маэдроса и Финрода, губитель Келебримбора, убийца Гиль-галада - одних только злодеяний против [noldorelves|El] у него множество, не говоря уже о других бесчисленных прегрешениях. Его могущество возросло в эту эпоху упадка, но он не непобедим и не неприступен. Нас меньше, чем в великом [Concept('lastallianceshort', 'Последнем союзе')|E], но даже так - мы наконец-то победим Отвратительного и его творения."
+ decision_annihilate_abhorred_desc:0 "Хотя Моргот был свергнут и изгнан из мира, его зло осталось, чтобы осквернять [Concept('ardaconcept', 'Арду')|E] в дальнейшем. Величайшее из них - [sauroncharacter|E], его сильнейший слуга. Мучитель Маэдроса и Финрода, искуситель Келебримбора, убийца Гиль-галада - одних только злодеяний против [noldorelves|El] у него множество, не говоря уже о других бесчисленных прегрешениях. Его могущество возросло в эту эпоху упадка, но он не непобедим и не неприступен. Нас меньше, чем в великом [Concept('lastallianceshort', 'Последнем союзе')|E], но даже так - мы наконец-то победим Отвратительного и его творения."
  decision_annihilate_abhorred_confirm:0 "Аурэ энтулува! Аута и ломэ!"
  decision_annihilate_abhorred_defensive_azaghal:0 "Долг Азагала выплачен"
  decision_annihilate_abhorred_defensive_mirkwood:0 "Колдун из Лихолесья убит"
@@ -349,6 +349,8 @@
  decision_rebuild_royal_road_tooltip:0 "Вы начнете восстанавливать Королевский тракт."
  decision_rebuild_royal_road_confirm:0 "Пусть дорога будет восстановлена!"
  decision_rebuild_royal_road_tooltip_condition:0 "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('special_royal_road').GetName]"
+ rebuild_royal_road_tt1:0 "Вы начнёте строительство Королевского тракта. Это займёт до двух лет"
+ rebuild_royal_road_tt2:0 "После завершения [capital.GetNameNoTier], [GetTitleByKey('c_tharbad').GetNameNoTier], [GetTitleByKey('c_fornost').GetNameNoTier], [GetTitleByKey('c_riverwatch').GetNameNoTier], [GetTitleByKey('c_bree').GetNameNoTier] и [GetTitleByKey('c_galtrev').GetNameNoTier] получат [modifier|El] «[GetModifier('royal_road_rebuilt_county_modifier').GetNameWithTooltip]»"
 
  ##################################
  ### Reunited Kingdom Decisions ###
@@ -400,7 +402,7 @@
  decision_new_capital.t.fallback:0 "Перенести правительство"
 
  decision_new_capital.desc.gondor:0 "За свою историю [gondor|E] уже однажды менял [Concept('capital', 'столицу')|E]. Когда старая столица [GetTitleByKey('c_osgiliath').GetNameNoTier] пришла в упадок, короли перенесли свой двор в [GetTitleByKey('c_minas_tirith').GetNameNoTier]. Если отвоевать его у [nazgulcharacter|El] и очистить от их порчи, [GetTitleByKey('c_minas_ithil').GetNameNoTier] тоже может стать достойным центром власти. Во время [Concept('kinstrife', 'Распри Родичей')|E] Кастамир, по слухам, подумывал перенести столицу в [GetTitleByKey('c_pelargir').GetNameNoTier], который, возможно, был средоточием власти Гондора во времена правления [Concept('shipkings', 'Морских Королей')|E].\n\nЕсли мы сочтём нашу нынешнюю столицу неподобающей, мы могли бы перенести её в другое место."
- decision_new_capital.desc.castamir:0 "За свою историю [gondor|E] не раз менял [Concept('capital', 'столицу')|E]. Когда старая столица [GetTitleByKey('c_osgiliath').GetNameNoTier] пришла в упадок, короли перенесли свой двор в [GetTitleByKey('c_minas_tirith').GetNameNoTier]. Если отвоевать его у [nazgulcharacter|El] и очистить от их порчи, [GetTitleByKey('c_minas_ithil').GetNameNoTier] тоже может стать достойным центром власти. Во время [Concept('kinstrife', 'Распри Родичей')|E] Кастамир, по слухам, подумывал перенести столицу в [GetTitleByKey('c_pelargir').GetNameNoTier], хотя он так и не сумел осуществить свою мечту. Наконец, после того как наши предки были изгнаны ложными королями при Эльдакаре, Трон законных королей был перенесён в [GetTitleByKey('c_umbar').GetNameNoTier] в связи с необходимостью, где он и оставался, пока мы не вернули себе то, что издавна должно было принадлежать нам по праву рождения.\n\nЕсли мы сочтём нашу нынешнюю столицу неподобающей, мы могли бы перенести её в другое место"
+ decision_new_capital.desc.castamir:0 "На протяжении всей своей истории [gondor|E] не раз менял [Concept('capital', 'столицу')|E]. Когда старая столица [GetTitleByKey('c_osgiliath').GetNameNoTier] пришла в упадок, короли перенесли свой двор в [GetTitleByKey('c_minas_tirith').GetNameNoTier]. Если отвоевать его у [nazgulcharacter|El] и очистить от их порчи, [GetTitleByKey('c_minas_ithil').GetNameNoTier] тоже может стать достойным центром власти. Во время [Concept('kinstrife', 'Распри Родичей')|E] Кастамир, по слухам, подумывал перенести столицу в [GetTitleByKey('c_pelargir').GetNameNoTier], хотя он так и не сумел осуществить свою мечту. Наконец, после того как наши предки были изгнаны ложными королями при Эльдакаре, Трон законных королей был перенесён в [GetTitleByKey('c_umbar').GetNameNoTier] в связи с необходимостью, где он и оставался, пока мы не вернули себе то, что издавна должно было принадлежать нам по праву рождения.\n\nЕсли мы сочтём нашу нынешнюю столицу неподобающей, мы могли бы перенести её в другое место"
  decision_new_capital.desc.arnor:0 "Традиционной [Concept( 'capital', 'столицей' )|E] [Concept( 'arnor', 'Арнора' )|E] когда-то был [GetTitleByKey('c_annuminas').GetNameNoTier], но он пришёл в упадок, когда королевство распалось и короли [Concept( 'arthedain', 'Артедайна' )|E] перебрались в [GetTitleByKey('c_fornost').GetNameNoTier]. [GetTitleByKey('c_cameth_brin').GetNameNoTier], столица [Concept( 'rhudaur', 'Рудаура' )|E] и [GetTitleByKey('c_thalion').GetNameNoTier], столица [Concept( 'cardolan', 'Кардолана' )|E], также были бы приемлемыми вариантами. Наконец, [GetTitleByKey('c_tharbad').GetNameNoTier] когда-то был одним из важнейших городов [Concept( 'eriador', 'Эриадора' )|E] и тоже мог бы стать подходящим кандидатом, если бы мы снова захотели перенести нашу столицу."
  decision_new_capital.desc.rk:0 "Двумя столицами [Concept( 'gondor', 'Гондора' )|E] и [Concept( 'arnor', 'Арнора' )|E] когда-то были [GetTitleByKey('c_osgiliath').GetNameNoTier] и [GetTitleByKey('c_annuminas').GetNameNoTier], пока оба не были в конце концов заброшены. Теперь, когда два королевства вновь едины, я могу выбрать один из нескольких центров власти. [GetTitleByKey('c_tharbad').GetNameNoTier] также может стать интересным выбором, поскольку он когда-то находился под совместным управлением двух [Concept( 'realms_in_exile', 'королевств-в-изгнании' )|E]."
  decision_new_capital.desc.nie:0 "До [Concept( 'downfall', 'Низвержения' )|E] короли [Concept( 'numenor', 'Нуменора' )|E] правили из [Concept( 'armenelos', 'Арменелоса' )|E] Золотого, Города королей. Поскольку он был давно утерян, я могу выбрать один из многих вариантов на роль [Concept( 'capital', 'столицы' )|E] [Concept( 'realms_in_exile', 'королевства-в-изгнании' )|E]."
@@ -722,6 +724,16 @@
  decision_wildman_invasion_tooltip:0 "Дикари рассмотрят предложение о начале [Concept('varangian_adventure', 'приключения')|E]"
  decision_wildman_invasion_tooltip_2:0 "Они могут воспользоваться нашим предложением, решив не вторгаться в Гондор, а выбрать более слабое королевство - Энедвайт, Рохан, Андуин или Эриадор."
 
+ decision_claim_the_sacred_isles:0 "Претендовать на Священные острова"
+ decision_claim_the_sacred_isles_desc:0 "Легенда рассказывает о сотворении четырех священных островов, созданных самим [ulmocharacter|E]. Первой была создана Узкая гавань, расположенная далеко на юге и ближе всего к владениям Владыки приливов. Затем были воздвигнуты острова-близнецы Одинокий и Пеликаний, украсившие побережье Мардруака. И последним из четырех сестер был создан Бесплодный остров, где на берег выбрасываются ракушки, которые, как говорят, говорят голосом владыки моря...\n\nМы заявим претензии на эти священные острова, чтобы доказать свое превосходство над всеми, кто осмелится бороздить дикие воды Великого моря."
+ decision_claim_the_sacred_isles_tooltip:0 "Получить сильные претензии на каждый из пиратских Священных островов."
+ decision_claim_the_sacred_isles_confirm:0 "Острова будут моими!"
+
+ decision_unite_the_sacred_isles:0 "Объединить Священные острова"
+ decision_unite_the_sacred_isles_desc:0 "Захватив все четыре Священных острова, пришло время закрепить мою власть над ними.\n\nПусть все корсары узнают мое имя и будут потрясены великолепием [Select_CString(ROOT.Char.IsFemale, 'объединительницы', 'объединителя' )] Священных островов!"
+ decision_unite_the_sacred_isles_tooltip:0 "Создать новое королевство на основе четырех Священных островов."
+ decision_unite_the_sacred_isles_confirm:0 "Все признают мою славу!"
+
  ##############################
  ### Oath of Eorl Decisions ###
  ##############################
@@ -777,10 +789,10 @@
  rohan.0002.a:0 "Мы будем одним народом, едиными эотеод."
  rohan.0002.b:0 "Никогда... Я не откажусь от наших путей!"
 
- # decision_visit_dwimordene:0 "Visit the Dwimordene"
- # decision_visit_dwimordene_desc:0 "The Dwimordene is an enchanted forest, shrouded in mists. Some say, a powerful fey rules these lands. Some even suggest visiting this forest in order to receive the fey's guidance..."
- # decision_visit_dwimordene_tooltip:0 "Travel to the Golden Wood and meet its ruler."
- # decision_visit_dwimordene_confirm:0 "I shall make for the Dwimordene."
+ decision_visit_dwimordene:0 "Посетить Двиморден"
+ decision_visit_dwimordene_desc:0 "Двиморден - заколдованный лес, окутанный туманом. Некоторые говорят, что этими землями правит могущественные фэй. Некоторые даже советуют посетить этот лес, чтобы получить наставления фэй..."
+ decision_visit_dwimordene_tooltip:0 "Отправиться в Золотой лес и встретиться с его властителями."
+ decision_visit_dwimordene_confirm:0 "Я отправлюсь в Двиморден."
 
  ###################################
  ####### Enedwaith Decisions #######
@@ -1413,7 +1425,7 @@
  donan_formation_western_drift_tooltip:0 "При полном контроле герцогства Аннун и Дориант станут де-юре частью королевства"
  decision_create_donan_empire:0 "Создать великую державу Белдонат"
  decision_create_donan_empire_tooltip:0 "Создать державу, посвящённую обеим Белам"
- decision_create_donan_empire_desc:0 "Когда-то наш народ был практически уничтожен. Однако тысячелетия борьбы между королевствами-в-изгнании, Тенью и народом Харада сделали нас не менее стойкими. Теперь, когда наши сородичи в горах, на холмах и даже на окраинах Итилиэна объединились, мы наконец-то можем почувствовать облегчение, охватившее наш народ. Мы едины, мы в безопасности, и всё это по воле великих Белов."
+ decision_create_donan_empire_desc:0 "Когда-то наш народ был практически уничтожен. Однако тысячелетия борьбы между [Concept('realms_in_exile', 'королевствами-в-изгнании')|E], Тьмой и народами [Concept('harad', 'Харада')|E] сделали нас не менее стойкими. Теперь, когда наши сородичи в горах, на холмах и даже на окраинах Итилиэна объединились, мы наконец-то можем почувствовать облегчение. Мы едины, мы в безопасности, и всё это по воле великих Белов."
  decision_create_donan_empire_confirm:0 "Так решили великие Белы"
  donan_formation_empire_drift_tooltip:0 "Все предыдущие герцогства, которые могли быть добавлены к Кобадонату или Келдонату, но не были добавлены, будут добавлены, наряду с герцогствами Аэгард, Лаэргаладрин и Эредир, которые будут добавлены к Казидонату"
 
@@ -1423,16 +1435,32 @@
 
  # Unify Harad
  decision_unify_harad:0 "Объединить королевства Харада"
- decision_unify_harad_tooltip:0 "Верховные королевства Харада могут быть объединены в один большой титул."
- decision_unify_harad_desc:0 "Слишком долго харадрим жили разрозненными, сломленными, простыми пешками в больших играх! Будь то Саурон или Нуменор, мы были вынуждены склоняться перед внешними владыками. Больше не надо! Пришло время сынам Харада отбросить свои разногласия и объединиться под единым знаменем и под властью единого престола"
+ decision_unify_harad_tooltip:0 "Верховные королевства [Concept('harad', 'Харада')|E] могут быть объединены в один большой титул."
+ decision_unify_harad_desc:0 "Слишком долго [haradrim|El] жили разрозненными, сломленными, простыми пешками в больших играх! Будь то [sauroncharacter|E] или [numenor|E], мы были вынуждены склоняться перед внешними владыками. Довольно! Пришло время сынам [Concept('harad', 'Харада')|E] отбросить свои разногласия и объединиться под единым знаменем и под властью единого престола."
  decision_unify_harad_confirm:0 "Мы едины!"
 
  # Númenor-in-Exile
  decision_numenor_in_exile:0 "Принять мантию Нуменора-в-изгнании"
- decision_numenor_in_exile_tooltip:0 "Объединить государства-наследников Нуменора"
- decision_numenor_in_exile_desc:0 "Со времён Низвержения наследники Нуменора уменьшались и уменьшались, сражаясь между собой. Когда-то пламя было маяком для всего человечества, теперь от него остались лишь угли. Но угли, если их собрать, могут разжечь пламя заново."
+ decision_numenor_in_exile_tooltip:0 "Объединить государства-наследники Нуменора"
+ decision_numenor_in_exile_desc:0 "Со времён [Concept('downfall', 'Низвержения')|E] наследники [Concept('numenor', 'Нуменора')|E] угасали и уменьшались, сражаясь между собой. Когда-то пламя было маяком для всего [Concept('mankind', 'человечества')|E], теперь от него остались лишь угли. Но угли, если их собрать, могут разжечь пламя заново."
  decision_numenor_in_exile_confirm:0 "Пусть Нуменор потерян, но нуменорцы выстоят!"
 
+ control_of_nie_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('special_nie').GetName]"
+ control_of_colonial_minhiriath_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_colonial_minhiriath').GetName]"
+ control_of_gondorian_heartlands_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_gondorian_heartlands').GetName]"
+ control_of_umbar_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('middleearth_haradwaith_near_umbar').GetName]"
+ control_of_bellakar_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_bellakar').GetName]"
+ control_of_anbalkumagan_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_anbalkumagan').GetName]"
+ control_of_colonial_thani_hazad_desc:0 "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_colonial_thani_hazad').GetName]"
+
+ numenor_in_exile_titles_tt:0 "Каждый [Concept('kingdom', 'королевский')|E] [Concept('title', 'титул')|E] в пределах бывших [Concept('numenorean', 'нуменорских')|E] колоний станет [de_jure|El] частью державы [empire_nie.GetName]"
+ numenor_in_exile_acceptance_tt:0 "Каждая [Concept('culture', 'культура')|E] державы, разделяющая #V [Concept('numenorean', 'нуменорскую')|E]#! [Concept('heritage_group', 'группу наследия')|E], повысит [Concept('cultural_acceptance', 'терпимость')|E] на #p 20%#!"
+ numenor_in_exile_innovation_tt:0 "Каждая [Concept('culture', 'культура')|E] державы, разделяющая #V [Concept('numenorean', 'нуменорскую')|E]#! [Concept('heritage_group', 'группу наследия')|E], вновь откроет [Concept('innovations', 'инновации')|E] #V Нуменорская архитектура#!"
+ cultural_acceptance_gain_numenor_in_exile:0 "Возрождённая [Concept('numenorean', 'нуменорская')|E] идентичность"
+ numenor_in_exile_thani_struggle_tt:0 "[GetStruggle('thani_hazad_struggle').GetName] подойдут к концу"
+ numenor_in_exile_thani_struggle_toast:0 "[GetStruggle('thani_hazad_struggle').GetName] закончились!"
+ numenor_in_exile_thani_struggle_toast_desc:0 "[founder.GetShortUIName|U] [Select_CString( founder.IsLocalPlayer, 'положите', 'положит')] конец борьбе «[GetStruggle('thani_hazad_struggle').GetName]»"
+ numenor_in_exile_legend.tt:0 "Вы получите [Concept('legend_illustrious', 'выдающуюся')|E] [Concept('legend_seed', 'зарождающуюся легенду')|E] #V $legend_nie_name$#!!"
 
  ##########################
  #### Goblin Decisions ####
@@ -1571,13 +1599,30 @@
  struggle_thani_hazad_confederation_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
  struggle_thani_hazad_confederation_valid_previous_phase_tooltip:0 "Предыдущая фаза [Concept('thani_hazad_struggle', 'Происков Балан-Лай')|E] - [struggle_thani_hazad_phase_confederation|E]"
 
+
  struggle_thani_hazad_unification:0 "Единство цели"
  struggle_thani_hazad_unification_description:0 "Несмотря на то, что [balan_lai|E] противостоял чужеземцам, мы так же часто враждовали между собой. Не бывать этому! Наконец-то принцы объединились как по духу, так и по цели. \n\nХотя это потребует тщательных переговоров и работы, для нас настало время создать ещё более тесный союз, в котором мы действительно станем одной нацией."
  struggle_thani_hazad_unification_select_tooltip:0 "Объединить [balan_lai|E] в единое государство, получив титул [GetTitleByKey('e_thani_hazad').GetName], подчинив принцев и приняв уникальный [succession_law|El]."
- struggle_thani_hazad_unification_confirm:0 "Из многих - одно. Саттамаган Тани!"
+ struggle_thani_hazad_unification.second_step:0 "Лепесток или шип?"
+ balan_lai_united_cunning:0 "Единство через хитрость"
+ balan_lai_united_cunning_tooltip:0 "Вы попытаетесь использовать свое положение главы [balan_lai|E] в своих интересах. Вы будете мирить, убеждать, льстить, подкупать, подговаривать и строить происки, пока остальные принцы не объединятся под вашим началом."
+ balan_lai_united_cunning_desc:0 "$balan_lai_united_cunning_tooltip$"
+ balan_lai_united_might:0 "Единство через силу"
+ balan_lai_united_might_tooltip:0 "Вы попытаетесь использовать свое положение самого могущественного из княжеств. С помощью превосходства в силе, политической власти, угроз и запугивания остальные принцы подчинятся."
+ balan_lai_united_might_desc:0 "$balan_lai_united_might_tooltip$"
+ struggle_thani_hazad_unification_confirm:0 "Саттамаган Тани!"
  ### Ceura Altarnieva - 'Renewal of the Empire, Quenya transliteration for Renovatio Imperii' Replaced with Adunaic "Sattamagân Thâni" "Reunification of the Realm" by Trig (Quenya would be Envinyatale Turmeno) ###
  struggle_thani_hazad_unification_valid_tooltip:0 "Текущая фаза - [struggle_thani_hazad_phase_unification|E]"
+ balan_lai_united_might_region_realm_size_desc:0 "Вы контролируете самую [Concept('realm_size', 'большую державу')|E] из всех членов [balan_lai|E]"
+ balan_lai_united_might_region_control_desc:0 "Вы должны контролировать не менее #V 30%#! [Concept('counties', 'графств')|E] [Concept('region', 'региона')|E] [GetGeographicalRegion('custom_mannish_thani_hazad').GetName]"
+ lotr_i_have_hook:0 "Находится у #V вас#! [Concept('hook', 'на крючке')|E]"
+ lotr_i_have_strong_hook:0 "Находится под #V вашим#! [Concept('strong_hook', 'сильным влиянием')|E]"
+ lotr_is_tributary_of_me:0 "Является вашим [Concept('tributary', 'данником')|E]"
+ lotr_is_in_regency:0 "Находится в состоянии [Concept('regency', 'регентства')|E]"
+ balan_lai_united_might_military_strength_min:0 "Ваша текущая военная мощь составляет не менее #V 5000#! @soldier_icon! [Concept('soldiers', 'солдат')|E]"
+ balan_lai_united_might_greater_military_strength:0 "Ваша текущая военная мощь должна быть выше, чем у всех остальных членов [balan_lai|E]\n#help (В это число #warning не#! входят ваши [Concept('allies', 'союзники')|E], [Concept('tributaries', 'данники')|E] или [Concept('prisoners', 'пленники')|E])#!"
  struggle_thani_hazad_unification_valid_tooltip_interloper:0 "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+ balan_lai_united_might.dread.tt:0 "Ваш подход снискал вам плохую репутацию..."
 
  struggle_thani_hazad_interloper_dissolution:0 "Распустить Балан-лай"
  struggle_thani_hazad_interloper_dissolution_desc:0 "Слишком долго эта земля находилась в ловушке закостенелых княжеских порядков! Они жирели на изобилии земли, отказывая всем остальным в возможности получить звание или почет. С этим покончено. Мы разрушим их заветный совет и по-настоящему освободим эту землю, чтобы она обрела новую судьбу."
@@ -1654,8 +1699,8 @@
  decision_beat_mag_tooltip:0 "Вы рассматриваете варианты изгнания магрийских захватчиков"
  beat_mag:0 "Вы готовы изгнать варваров из своих земель"
  beat_mag_effect:0 "Вы рассматриваете варианты изгнания магрийских захватчиков"
- defeated_bandits_via_decision:0 "You have completed the #V Eliminate the Bandits#! decision"
- defeated_bandits_via_normal_mechanics:0 "You have hold the [GetTitleByKey('c_obishamba').GetNameNoTier] county"
+ defeated_bandits_via_decision:0 "Вы приняли решение #V Уничтожить разбойников#!"
+ defeated_bandits_via_normal_mechanics:0 "Вы владеете графством [GetTitleByKey('c_obishamba').GetNameNoTier]"
 
  decision_beat_bandits:0 "Уничтожить разбойников"
  decision_beat_bandits_desc:0 "PLACEHOLDER"
@@ -1747,9 +1792,9 @@
  settle_duchy_tooltip:0 "$settle_duchy$"
  settle_duchy_desc:0 ""
  settle_wilderness_county_or_duchy_decision_confirm:0 "Пришло время обустроить дом..."
- settle_wilderness_county_or_duchy_basic_effect:0 "Вы заселите #P 1#! [Concept('county', 'графство')|E] за каждых #V 500#! профессионалов"
+ settle_wilderness_county_or_duchy_basic_effect:0 "Вы заселите #P 1#! [Concept('county', 'графство')|E] за каждых #V 100#! [Concept('men_at_arms', 'профессионалов')|E] типа [GetMaA('laamp_settler_maa').GetName]"
  settle_wilderness_county_or_duchy_current_settle_limit_effect:0 "Текущие графства могут быть заселены: #V [GetPlayer.MakeScope.ScriptValue('lotr_settle_wilderness_as_adventurer_county_limit')]#!"
- settle_wilderness_county_or_duchy_destroy_maa_effect:0 "#V 50%#! ваших профессионалов будет распущено!"
+ settle_wilderness_county_or_duchy_destroy_maa_effect:0 "[men_at_arms|E]-[GetMaA('laamp_settler_maa').GetName] будут распущены!"
  settle_wilderness_county_or_duchy_not_enough_maa_tt:0 "У вас недостаточно профессионалов"
  settle_wilderness_duchy_has_underground_counties:0 "В этом [Concept('duchy', 'герцогстве')|E] есть подземные графства, которые #N не#! будут заселены."
 
