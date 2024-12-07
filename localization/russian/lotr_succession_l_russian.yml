@@ -93,8 +93,8 @@
  tooltip_intrigue_vote_strength_balan_lai:0 "Вклад в интриги #P +[SCOPE.ScriptValue('intrigue_vote_strength_balan_lai')|0]#!"
 
  ##Tamska Elective 
- tamska_elective_succession_law:0 "Вознесение Тамски"
- tamska_elective_succession_law_effects:0 "[ruler|E] и все [de_jure|El] [Concept('vassals', 'вассалы')|E] могут назначить [Concept('title_heir', 'наследника титула')|E] из числа дочерей текущего правителя и любых выявленных [GetTrait('tamska_heir').GetName( GetNullCharacter )]."
+ tamska_elective_succession_law:0 "$tamska_succession_law$"
+ tamska_elective_succession_law_effects:0 "[tamska|E] и все [de_jure|El] [Concept('vassals', 'вассалы')|E] должны признать выявленную [GetTrait('tamska_heir').GetName( GetNullCharacter )] как [Concept('title_heir', 'наследницу титула')|E] или выбрать одну из дочерей [Concept('tamska', 'Тамски')|E]."
  tamska_elective_electors:0 "Правители в де-юре границах титула"
  tamska_elective_electors_tooltip:0 "Право называться [Concept('elector', 'выборщиками')|E] в Вознесении Тамски имеют текущая Тамска или [Concept('ruler', 'правители')|E] в [de_jure|El] границах титула, исповедующие [Concept('faith', 'конфессию')|E] с [Concept('core_tenet', 'догматом')|E] «[GetFaithDoctrine('tenet_tamska_main').GetBaseName]»."
  tamska_elective_candidates:0 "Выявленные [GetTrait('tamska_heir').GetName( GetNullCharacter )], дочери правителя и [Concept('vassals', 'вассалы')|E]-женщины"
