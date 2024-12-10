@@ -196,6 +196,10 @@
  ###########################
  ### Activities Decision ###
  ###########################
+ decision_rhudaur_troll_orc_hunting.t:0 "Выследить блуждающих врагов в Рудауре"
+ decision_rhudaur_troll_orc_hunting_tooltip:0 "Организовать патрули вокруг своих владений, чтобы сражаться с врагами, пришедшими с севера."
+ decision_rhudaur_troll_orc_hunting.desc:0 "В тенистых дебрях [Concept( 'rhudaur', 'Рудаура' )|E] нависла опасность, когда вы обнаружили бродячие отряды врагов, приближающихся с севера. Быстро сев на своего коня, вы отправляетесь в решительную поездку по этим суровым землям с четкой миссией: перехватить и победить любого врага - будь то орк, тролль или кто-то еще - прежде чем они смогут вторгнуться дальше в [eriador|E].\n\n"
+ decision_rhudaur_troll_orc_hunting.a:0 "Поскачем!"
 
  explore_history_decision:0 "Изучение хроник"
  explore_history_decision_desc:0 "В пыльных томах и древних рукописях сокрыта древняя мудрость. Уроки прошлого могут указать нам, как строить лучшее будущее, чтобы мы не повторили ошибок наших предков."
@@ -220,30 +224,6 @@
  set_sail_decision_confirm:0 "Поднять якорь!"
  activity_sailing_name:0 "Морское странствие"
 
- dark_ritual_decision:0 "Тёмный ритуал"
- dark_ritual_decision_desc:0 "Пришло время использовать тёмное колдовство в своих интересах"
- dark_ritual_decision_tooltip:0 "Начать тёмный ритуал"
- dark_ritual_decision_desc_activity:0 "Вы начнёте #high тёмный ритуал#!"
- dark_ritual_decision_desc_benefits:0 "Вы начнёте тёмный ритуал в проклятом месте по вашему выбору"
- dark_ritual_decision_confirm:0 "Я взываю к тёмным искусствам!"
-
- activity_learn_sorcery:0 "Обучение колдовству"
- activity_learn_sorcery_name:0 "Обучение колдовству"
- learn_sorcery_decision:0 "$activity_learn_sorcery$"
- learn_sorcery_decision_desc:0 "Не все народы и существа в этом [middleearth|E] обладают наследственной способностью к магии. Путём великих жертв и общения с тёмными силами я отправлюсь на поиски самых тёмных искусств и порочных знаний, чтобы обрести колдовские способности."
- learn_sorcery_decision_tooltip:0 "Вы начнете своё опасное обучение, чтобы стать [Concept('sorcerer', '[Select_CString(ROOT.Char.IsFemale, 'тёмной колдуньей', 'тёмным колдуном' )]')|E]."
- #learn_sorcery_decision_desc_activity:0 "You dedicate time to #high learn sorcery#!"
- learn_sorcery_decision_desc_benefits:0 "Вы можете стать [Concept('sorcerer', '[Select_CString(ROOT.Char.IsFemale, 'колдуньей', 'колдуном' )]')|E] и получить [trait|El] «Чародей-неофит»"
- learn_sorcery_decision_desc_warnings:0 "Это решение может стать #high смертельным#! и иметь #high опасные последствия#! для вашего уровня стресса, здоровья и дерңавы. Если вы планируете учиться у мастера колдовства, то подготовьтесь перед принятием этого решения: повысьте его мнение о вас. Если вы решите использовать заключённого в темницу мастера-колдуна, то после принятия этого решения появится возможность начать происки по похищению, но вы можете заранее начать происки по пленению."
- learn_sorcery_decision_confirm:0 "Это моя судьба"
-
- shadow_library_decision:0 "Улучшение колдовства: Библиотека теней"
- shadow_library_decision_desc:0 "Я отправлюсь на поиски самых тёмных знаний."
- shadow_library_decision_tooltip:0 "Вы отправитесь в скрытую Долину Ворона"
- shadow_library_decision_desc_activity:0 "Вы посвятите время #high улучшению своих колдовских навыков#!"
- shadow_library_decision_desc_benefits:0 "Вы можете улучшить свойство колдуна"
- shadow_library_decision_confirm:0 "Моё путешествие начинается!"
-
  beorning_decision:0 "Смена облика"
  beorning_decision_desc:0 "Высвободить [Select_CString(ROOT.Char.IsFemale, 'свою внутреннюю медведицу', 'своего внутреннего медведя' )]! Вас ждёт серия неожиданных приключений!"
  beorning_decision_tooltip:0 "Вы принимаете облик [Select_CString(ROOT.Char.IsFemale, 'медведицы', 'медведя' )], вызвав особые приключения для оборотней"
@@ -251,6 +231,11 @@
  beorning_decision_desc_benefits:0 "Вызывает приключение, которое может привести к положительным результатам!"
  beorning_decision_confirm:0 "Гррррр!"
  activity_beorning_name:0 "Смена облика"
+
+ decision_palantir:0 "Взглянуть в палантир"
+ decision_palantir_tooltip:0 "Вы будете стремиться расширить свои знания о мире."
+ decision_palantir_desc:0 "В самой верхней башне вашего замка на мраморном столбе покоится покрытая чёрной тканью сфера. Палантир может стать мощным оружием, но стоит ли рисковать?"
+ decision_palantir_confirm:0 "Ни одна тайна не останется скрытой."
 
  #################################
  ### Minor Lifestyle Decisions ###
@@ -273,19 +258,16 @@
  lotr_lay_down_life_decision:0 "Уйти из жизни"
  lotr_lay_down_life_decision_desc:0 "Моя жизнь была долгой и насыщенной, но мне не суждено было стать [Select_CString(ROOT.Char.IsFemale, 'вечной', 'вечным' )]. Я [Select_CString(ROOT.Char.IsFemale, 'выбрала', 'выбрал' )] смертную жизнь и смертную судьбу. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] уйти из жизни и позволить править следующему поколению."
 
- ########################
- ### Gondor Decisions ###
- ########################
+ ##########################
+ ### Dunedain Decisions ###
+ ##########################
+
+ ### Gondorian Decision Subset ###
 
  decision_search_orthanc:0 "Обыскать Ортанк"
  decision_search_orthanc_desc_tooltip:0 "Вы будете искать в башне [orthanc|E] скрытые сокровища и тайны"
  decision_search_orthanc_desc:0 "Башня [orthanc|E] веками служила жилищем [Concept( 'sarumancharacter', 'Сарумана' )|E], в результате чего в ней, вероятно, хранится множество странных и диковинных вещей. Нам следует собрать поисковый отряд, чтобы узнать, что он мог спрятать в этих мрачных, древних залах"
  decision_search_orthanc_confirm:0 "Не оставлять камня на камне!"
-
- decision_palantir:0 "Взглянуть в палантир"
- decision_palantir_tooltip:0 "Вы будете стремиться расширить свои знания о мире."
- decision_palantir_desc:0 "В самой верхней башне вашего замка на мраморном столбе покоится покрытая чёрной тканью сфера. Палантир может стать мощным оружием, но стоит ли рисковать?"
- decision_palantir_confirm:0 "Ни одна тайна не останется скрытой."
 
  decision_palantir_minas_anor_2:0 "Взглянуть в палантир Минас Анора"
  decision_palantir_minas_anor_2_tooltip:0 "Вы будете стремиться расширить свои знания о мире."
@@ -352,9 +334,32 @@
  rebuild_royal_road_tt1:0 "Вы начнёте строительство Королевского тракта. Это займёт до двух лет"
  rebuild_royal_road_tt2:0 "После завершения [capital.GetNameNoTier], [GetTitleByKey('c_tharbad').GetNameNoTier], [GetTitleByKey('c_fornost').GetNameNoTier], [GetTitleByKey('c_riverwatch').GetNameNoTier], [GetTitleByKey('c_bree').GetNameNoTier] и [GetTitleByKey('c_galtrev').GetNameNoTier] получат [modifier|El] «[GetModifier('royal_road_rebuilt_county_modifier').GetNameWithTooltip]»"
 
- ##################################
- ### Reunited Kingdom Decisions ###
- ##################################
+
+ decision_oath_of_eorl_gondor:0 "Воззвать к клятве Эорла"
+ decision_oath_of_eorl_gondor_tooltip:0 "Обратиться за военной помощью к Рохану"
+ decision_oath_of_eorl_gondor_desc:0 "Много поколений назад наместник Кирион даровал Каленардон эотеод и их королю Эорлу с одним условием. У эотеод будут те же друзья и враги, что и у Гондора, и наоборот. И наместник, и король дали великую клятву о дружбе и союзе, которая сохранилась до наших дней.\n\nНыне мы в тяжёлом положении и нуждаемся в каждой крупице силы. Призовём ли мы рохиррим и пошлём ли Красную Стрелу ещё раз?"
+ decision_oath_of_eorl_gondor_confirm:0 "Послать всадника со всей поспешностью в Эдорас со стрелой"
+ call_on_rohan_for_aid_effect:0 "Вы призовёте Рохан предоставить [Concept('men_at_arms', 'профессионалов')|E], чтобы помочь вам в ваших войнах или присоединиться ко всем [Concept('war', 'войнам')|E] против чужеземных [Concept('kingdoms', 'королевств')|E] и [Concept('empires', 'империй')|E]"
+ rohan_will_join_your_wars:0 "Рохан присоединится ко всем вашим [Concept('wars', 'войнам')|E] против [Concept('kingdoms', 'королевств')|E] или [Concept('empires', 'империй')|E]"
+ oath_of_eorl_host_gondor_large:0 "Северное войско"
+ oath_of_eorl_host_gondor_small:0 "Отряд Итилиэна"
+ LOTR_NOT_ALREADY_FIGHTING_ALONGSIDE_ROHAN_TRIGGER:0 "Вы уже не участвуете в [Concept('war', 'войне')|E] вместе с Роханом."
+
+ ### Arnorian Decision Subset ###
+
+ decision_adopt_arnorian_culture:0 "Принять арнорскую культуру"
+ decision_adopt_arnorian_culture_desc:0 "Когда-то люди Арнора собирали могучие войска и создавали великие королевства. Увы, упадок и войны заставили нас стать теми, кем мы являемся сейчас, - странниками в дебрях, неизвестными многим и вызывающими уважение у немногих. Хотя это и спасло нас, но в то же время заставило потерять связь с путями наших предков. Если бы мы смогли восстановить своё государство, мы могли бы способствовать культурному возрождению древних путей Арнора."
+ decision_adopt_arnorian_culture_confirm:0 "Восстаньте, сыны Арнора!"
+ decision_adopt_arnorian_culture_tooltip:0 "Принять арнорскую культуру"
+ decision_adopt_arnorian_culture_vassal_custom:1 "Все $dunedain_ranger_collective_noun$ие [vassals|El]"
+ decision_adopt_arnorian_culture_province_custom:1 "Каждое $dunedain_ranger_collective_noun$ое [county|El] в пределах вашей [Concept('realm', 'державы')|E]"
+
+ decision_integrate_the_northern_provinces:0 "Реинтегрировать северные провинции"
+ decision_integrate_the_northern_provinces_desc:0 "Самый дальний север лишь номинально входил в состав Северного королевства, а после Войны Последнего союза у Арнора не хватило сил заявить о своих притязаниях. Именно в этом вакууме Король-чародей создал ужасающее королевство Ангмар.\n\nЕсли северные пустоши наконец-то окажутся под контролем дунэдайн, их можно будет подчинить Скипетру как в теории, так и на практике, а любая угроза с севера будет отведена навеки."
+ decision_integrate_the_northern_provinces_tooltip:0 "Включить северные пустоши в свои де-юре территории"
+ decision_integrate_the_northern_provinces_confirm:0 "От Форохеля до Фородвайта!"
+
+ ### Reunited Kingdom Decision Subset ###
 
  decision_reunited_kingdom:0 "Провозгласить Воссоединённое королевство"
  decision_reunited_kingdom_desc:0 "Когда-то [dunedain|El] [Concept('middleearth', 'Средиземья')|E] были объединены под властью одного Верховного короля, [Concept('elendil', 'Элендиля')|E]. [isildur|E] унаследовал этот титул после смерти отца, но из-за различий между двумя королевствами после его смерти он де-факто перестал существовать, и Менельдиль стал править в [Concept('gondor', 'Гондоре')|E], а Валандиль - в [Concept('arnor', 'Арноре')|E]. Королевства [GetTitleByKey('e_arnor').GetNameNoTier] и [GetTitleByKey('e_gondor').GetNameNoTier] с тех пор шли разными путями и имели разные судьбы. Однако факт остаётся фактом - хотя это два королевства, северное и южное, когда-то они были едины. Если бы короны обоих королевств были собраны вместе, возможно, два [Concept('realms_in_exile', 'королевства-в-изгнании')|E] смогли бы воссоединиться в единое целое, как им и было предначертано."
@@ -394,6 +399,7 @@
  ##########################
  #### Move the Capital ####
  ##########################
+
  decision_new_capital.t.invocate:0 "Перенести Трон Призывателя" #Seat of the Invocate?
  decision_new_capital.t.steward:0 "Перенести Кресло Наместников"
  decision_new_capital.t.prince:0 "Перенести княжеский двор"
@@ -630,21 +636,6 @@
  decision_calenardhon_calemmir_tooltip:0 "Вновь сделать Калеммир столицей Каленардона."
  decision_calenardhon_calemmir.tt:0 "Город [GetTitleByKey('c_aldburg').GetNameNoTier] станет столицей провинции [GetTitleByKey('k_rohan').GetNameNoTier]."
 
- ############################
- ###### Arnor Decisions #####
- ############################
- decision_adopt_arnorian_culture:0 "Принять арнорскую культуру"
- decision_adopt_arnorian_culture_desc:0 "Когда-то люди Арнора собирали могучие войска и создавали великие королевства. Увы, упадок и войны заставили нас стать теми, кем мы являемся сейчас, - странниками в дебрях, неизвестными многим и вызывающими уважение у немногих. Хотя это и спасло нас, но в то же время заставило потерять связь с путями наших предков. Если бы мы смогли восстановить своё государство, мы могли бы способствовать культурному возрождению древних путей Арнора."
- decision_adopt_arnorian_culture_confirm:0 "Восстаньте, сыны Арнора!"
- decision_adopt_arnorian_culture_tooltip:0 "Принять арнорскую культуру"
- decision_adopt_arnorian_culture_vassal_custom:1 "Все $dunedain_ranger_collective_noun$ие [vassals|El]"
- decision_adopt_arnorian_culture_province_custom:1 "Каждое $dunedain_ranger_collective_noun$ое [county|El] в пределах вашей [Concept('realm', 'державы')|E]"
-
- decision_integrate_the_northern_provinces:0 "Реинтегрировать северные провинции"
- decision_integrate_the_northern_provinces_desc:0 "Самый дальний север лишь номинально входил в состав Северного королевства, а после Войны Последнего союза у Арнора не хватило сил заявить о своих притязаниях. Именно в этом вакууме Король-чародей создал ужасающее королевство Ангмар.\n\nЕсли северные пустоши наконец-то окажутся под контролем дунэдайн, их можно будет подчинить Скипетру как в теории, так и на практике, а любая угроза с севера будет отведена навеки."
- decision_integrate_the_northern_provinces_tooltip:0 "Включить северные пустоши в свои де-юре территории"
- decision_integrate_the_northern_provinces_confirm:0 "От Форохеля до Фородвайта!"
-
  ##########################
  ### Dol Amroth Reforms ###
  ##########################
@@ -747,33 +738,6 @@
  decision_unite_the_sacred_isles_tooltip:0 "Создать новое королевство на основе четырех Священных островов."
  decision_unite_the_sacred_isles_confirm:0 "Все признают мою славу!"
 
- ##############################
- ### Oath of Eorl Decisions ###
- ##############################
-
- decision_oath_of_eorl_gondor:0 "Воззвать к клятве Эорла"
- decision_oath_of_eorl_gondor_tooltip:0 "Обратиться за военной помощью к Рохану"
- decision_oath_of_eorl_gondor_desc:0 "Много поколений назад наместник Кирион даровал Каленардон эотеод и их королю Эорлу с одним условием. У эотеод будут те же друзья и враги, что и у Гондора, и наоборот. И наместник, и король дали великую клятву о дружбе и союзе, которая сохранилась до наших дней.\n\nНыне мы в тяжёлом положении и нуждаемся в каждой крупице силы. Призовём ли мы рохиррим и пошлём ли Красную Стрелу ещё раз?"
- decision_oath_of_eorl_gondor_confirm:0 "Послать всадника со всей поспешностью в Эдорас со стрелой"
- call_on_rohan_for_aid_effect:0 "Вы призовёте Рохан предоставить [Concept('men_at_arms', 'профессионалов')|E], чтобы помочь вам в ваших войнах или присоединиться ко всем [Concept('war', 'войнам')|E] против чужеземных [Concept('kingdoms', 'королевств')|E] и [Concept('empires', 'империй')|E]"
- rohan_will_join_your_wars:0 "Рохан присоединится ко всем вашим [Concept('wars', 'войнам')|E] против [Concept('kingdoms', 'королевств')|E] или [Concept('empires', 'империй')|E]"
-
-
- decision_oath_of_eorl_rohan:0 "Воззвать к клятве Кириона"
- decision_oath_of_eorl_rohan_tooltip:0 "Обратиться за военной помощью к Гондору"
- decision_oath_of_eorl_rohan_desc:0 "Много поколений назад мы поселились в Каленардоне по велению наместника Кириона, с условием, что будем жить там вечно, оставаясь друзьями Гондора. Наш король, Эорл, дал великую клятву о союзе и помощи, чтобы скрепить это, и наместник Кирион принёс такую же клятву. Обе стороны уже много раз приходили друг другу на помощь благодаря этой клятве.\n\nНыне мы оказались в тяжёлом положении и нуждаемся в помощи. Призовём ли мы гондорцев и снова обратимся к клятве Кириона?"
- decision_oath_of_eorl_rohan_confirm:0 "Послать гонца в Минас Тирит. Рохан призывает на помощь!"
- call_on_gondor_for_aid_effect:0 "Вы призовёте Гондор предоставить [Concept('men_at_arms', 'профессионалов')|E], чтобы помочь вам в ваших войнах или присоединиться ко всем [Concept('war', 'войнам')|E] против [Concept('kingdoms', 'королевств')|E] и [Concept('empires', 'империй')|E]"
- gondor_will_join_your_wars:0 "Гондор присоединится ко всем вашим [Concept('wars', 'войнам')|E] против [Concept('kingdoms', 'королевств')|E] или [Concept('empires', 'империй')|E]"
-
- oath_of_eorl_host_gondor_large:0 "Северное войско"
- oath_of_eorl_host_gondor_small:0 "Отряд Итилиэна"
- oath_of_eorl_host_rohan_large:0 "Всадники Рохана"
- oath_of_eorl_host_rohan_small:0 "Вспомогательные отряды Рохана"
- is_in_defensive_war_vs_empire:0 "Вы в состоянии оборонительной [Concept('war', 'войны')|E] против [Concept('kingdom', 'королевства')|E] или [Concept('empire', 'империи')|E]"
- LOTR_NOT_ALREADY_FIGHTING_ALONGSIDE_ROHAN_TRIGGER:0 "Вы уже не участвуете в [Concept('war', 'войне')|E] вместе с Роханом."
- LOTR_NOT_ALREADY_FIGHTING_ALONGSIDE_GONDOR_TRIGGER:0 "Вы уже не участвуете в [Concept('war', 'войне')|E] вместе с Гондором."
-
  ###############################
  ####### Rohan Decisions #######
  ###############################
@@ -788,6 +752,17 @@
  decision_invite_dwarves_whitemountains_desc:0 "Белые горы, граничащие с моей державой, во все эпохи мира никогда не были заселены, даже крепким народом топора и ремесла, выносливыми [Concept('dwarves', 'гномами')|E].\n\nХотя нам самим не хватает ловкости, чтобы одолеть эти грозные вершины и беспросветные пещеры, в гномьих королевствах этого мира наверняка найдутся отважные герои, готовые принять вызов, если у них будет достаточно мотивации."
  decision_invite_dwarves_whitemountains_confirm:0 "Обратимся к владыкам гномов!"
  decision_invite_dwarves_whitemountains_tt:0 "Гномы будут приглашены для заселения Белых гор"
+
+ decision_oath_of_eorl_rohan:0 "Воззвать к клятве Кириона"
+ decision_oath_of_eorl_rohan_tooltip:0 "Обратиться за военной помощью к Гондору"
+ decision_oath_of_eorl_rohan_desc:0 "Много поколений назад мы поселились в Каленардоне по велению наместника Кириона, с условием, что будем жить там вечно, оставаясь друзьями Гондора. Наш король, Эорл, дал великую клятву о союзе и помощи, чтобы скрепить это, и наместник Кирион принёс такую же клятву. Обе стороны уже много раз приходили друг другу на помощь благодаря этой клятве.\n\nНыне мы оказались в тяжёлом положении и нуждаемся в помощи. Призовём ли мы гондорцев и снова обратимся к клятве Кириона?"
+ decision_oath_of_eorl_rohan_confirm:0 "Послать гонца в Минас Тирит. Рохан призывает на помощь!"
+ call_on_gondor_for_aid_effect:0 "Вы призовёте Гондор предоставить [Concept('men_at_arms', 'профессионалов')|E], чтобы помочь вам в ваших войнах или присоединиться ко всем [Concept('war', 'войнам')|E] против [Concept('kingdoms', 'королевств')|E] и [Concept('empires', 'империй')|E]"
+ gondor_will_join_your_wars:0 "Гондор присоединится ко всем вашим [Concept('wars', 'войнам')|E] против [Concept('kingdoms', 'королевств')|E] или [Concept('empires', 'империй')|E]"
+ oath_of_eorl_host_rohan_large:0 "Всадники Рохана"
+ oath_of_eorl_host_rohan_small:0 "Вспомогательные отряды Рохана"
+ LOTR_NOT_ALREADY_FIGHTING_ALONGSIDE_GONDOR_TRIGGER:0 "Вы уже не участвуете в [Concept('war', 'войне')|E] вместе с Гондором."
+ is_in_defensive_war_vs_empire:0 "Вы в состоянии оборонительной [Concept('war', 'войны')|E] против [Concept('kingdom', 'королевства')|E] или [Concept('empire', 'империи')|E]"
 
  #################################
  ####### Hadorim Decisions #######
@@ -1666,14 +1641,6 @@
  decision_reaffirm_breeland_tooltip:0 "Расширить границы земель Бри."
  decision_reaffirm_breeland_desc:0 "Со времён тьмы, когда пали старые короли, ближайшие земли, окружающие Бри, по большому счету, были малонаселёнными. Возможно, настало время колонизировать эти дебри и официально подчинить их нашей юрисдикции."
  decision_reaffirm_breeland_confirm:0 "Мудрое начинание"
-
- ##########################
- ###      RHUDAUR        ##
- ##########################
- decision_rhudaur_troll_orc_hunting.t:0 "Выследить блуждающих врагов в Рудауре"
- decision_rhudaur_troll_orc_hunting_tooltip:0 "Организовать патрули вокруг своих владений, чтобы сражаться с врагами, пришедшими с севера."
- decision_rhudaur_troll_orc_hunting.desc:0 "В тенистых дебрях [Concept( 'rhudaur', 'Рудаура' )|E] нависла опасность, когда вы обнаружили бродячие отряды врагов, приближающихся с севера. Быстро сев на своего коня, вы отправляетесь в решительную поездку по этим суровым землям с четкой миссией: перехватить и победить любого врага - будь то орк, тролль или кто-то еще - прежде чем они смогут вторгнуться дальше в [eriador|E].\n\n"
- decision_rhudaur_troll_orc_hunting.a:0 "Поскачем!"
 
  ##########################
  ###      Vulmaw        ###
