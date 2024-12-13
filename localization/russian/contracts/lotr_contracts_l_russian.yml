@@ -41,6 +41,38 @@
  msg_cleared_stragglers.title: "Лазутчики зачищены"
  msg_cleared_stragglers.desc: "[task_contract_taker.GetShortUIName] [Select_CString(task_contract_taker.IsFemale, 'помогла', 'помог' )] нам разобраться с лазутчиками"
 
+ lotr_laamp_1011_contract_scheme: "Напасть на вражескую колонну"
+ lotr_laamp_1011_contract_scheme_action: "Напасть"
+ lotr_laamp_1011_contract_scheme_desc: "Когда [Concept('contractor', 'нанимателю')|E] нужно незаметно и быстро устроить засаду на подступающие вражеские силы, следопыт может действовать гораздо более осмотрительно, чем обычные солдаты.$laamp_contract_scheme_desc_general_boilerplate$"
+ lotr_laamp_1011_contract_scheme_desc_general: "$lotr_laamp_1011_contract_scheme_desc$"
+ lotr_laamp_1011_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
+ lotr_laamp_1011_desc_title: "Прославленным следопытам,"
+ lotr_laamp_1011_desc: "[TaskContract.GetEmployer.GetPrimaryTitle.GetAdjective][Select_CString(TaskContract.GetEmployer.IsFemale, 'ая', 'ий' )] [TaskContract.GetEmployer.GetTitleAsNameNoTooltip] срочно ищёт незаметных солдат для быстрого, но опасного задания. За быструю и чистую работу полагается солидное вознаграждение."
+ lotr_laamp_1011_contract: "$lotr_laamp_1011_contract_scheme$"
+ lotr_laamp_1011_request: "$laamp_request_boilerplate_martial_scheme$"
+
+ lotr_laamp_contract_schemes.1011.t: "Напасть на вражескую колонну"
+ lotr_laamp_contract_schemes.1011.desc: "«Мои нужды просты», - объясняет [employer.GetFirstName], - «мои разведчики сообщили о колонне войск, которыми командует [assault_target.GetTitledFirstNamePossessive], пересекающих мои земли. Мы не можем позволить им свободно разгуливать. Мои войска могли бы выступить против них напрямую, но люди с вашим особым талантом лучше всего подходят для того, чтобы застать их врасплох на марше».\n\nЯ недоверчиво провожу большим пальцем по шее.\n\n«Да», - уточняет [Select_CString(employer.IsFemale, 'моя нанимательница', 'мой наниматель' )]. «Убейте столько, сколько сможете, каждый погибший солдат уменьшит численность врагов на поле боя».\n\nКажется, всё просто."
+ lotr_laamp_contract_schemes.1011.a: "$laamp_base_contract_schemes.0000.generic_option.success_chance$"
+ lotr_laamp_contract_schemes.1011.b: "$laamp_base_contract_schemes.0000.generic_option.speed$"
+ lotr_laamp_contract_schemes.1011.c: "$laamp_base_contract_schemes.0000.generic_option.progress$"
+ lotr_laamp_contract_schemes.1011.d: "$laamp_base_contract_schemes.0000.generic_option.nothing$"
+ lotr_laamp_contract_schemes.1011.d.tt: "$laamp_base_contract_schemes.0000.d.no_starting_bonus$"
+
+ lotr_laamp_contract_schemes.1012.t: "$lotr_laamp_contract_schemes.1011.t$: успех!"
+ lotr_laamp_contract_schemes.1012.desc: "«Прекрасная работа, [ROOT.Char.GetFirstNameNoTooltip]! [employer.GetCapitalLocation.GetTitle.GetAdjective]ие земли снова обрели покой, и я смогу спокойно спать по ночам».\n\n[employer.GetSheHe|U] бросает мне мешочек с серебром.\n\n«Пожалуйста, остановитесь у нас в следующий раз, когда будете проезжать через эти земли. Я [Select_CString(employer.IsFemale, 'уверена', 'уверен' )], что такой предприимчивый [ROOT.Char.Custom2('GetYoungOld',employer)] [ROOT.Char.Custom('GetLaampDescribeTypeSelf')], как вы, всегда найдёт у нас достойную постель, не говоря уже о подходящей #EMP работе#!»."
+ lotr_laamp_contract_schemes.1012.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.neutral$"
+ lotr_laamp_1011_heavy_losses: "Профессионалы персонажа [assault_target.GetTitledFirstNamePossessive] понесли тяжёлые потери"
+ lotr_laamp_1011_catastrophic_losses: "Профессионалы персонажа [assault_target.GetTitledFirstNamePossessive] понесли катастрофические потери"
+
+ lotr_laamp_contract_schemes.1013.t: "$lotr_laamp_contract_schemes.1011.t$: провал!"   
+ lotr_laamp_contract_schemes.1013.desc: "«У вас была одна задача, [ROOT.Char.GetFirstNameNoTooltip]», - вздыхает [employer.GetFirstNameNoTooltip]. «Найти вражескую колонну, убить как можно больше, а потом вернуться и забрать своё серебро».\n\nМоё [ROOT.Char.Custom('MaskFace')] остаётся невозмутимым. Может, это и неприятно, но будет лучше, если [employer.GetTitleAsNameNoTooltip] выразит своё недовольство словесно, чтобы [employer.GetSheHe] не [Select_CString(employer.IsFemale, 'прибегала', 'прибегал' )] к силе оружия.\n\n«Возможно, я [Select_CString(employer.IsFemale, 'сама сглупила', 'сам сглупил' )], ожидая, что такой [ROOT.Char.Custom('GetLaampDescribeTypeInsult')] окажется лучше. Что ж, ничего не поделаешь».\n\nНаступает пауза... я жду, не скажет ли [employer.GetWomanMan] что-нибудь ещё.\n\n«Вы можете идти. #EMP Сейчас же#!, если угодно»."
+ lotr_laamp_contract_schemes.1013.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.negative.light$"
+ lotr_laamp_1011_light_losses: "Профессионалы персонажа [assault_target.GetTitledFirstNamePossessive] понесли незначительные потери"
+ lotr_laamp_1011_light_losses_own: "Ваши профессионалы понесли незначительные потери"
+
+
+
  lotr_laamp_3011_contract: "$lotr_laamp_3011_contract_scheme$"
  lotr_laamp_3011_request: "$laamp_request_boilerplate_intrigue_scheme$"
 
