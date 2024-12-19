@@ -861,6 +861,31 @@
  decision_subjugate_the_ettenmoors.b_cennmoin_is_a_wilderness:0 "[GetTitleByKey('b_cennmoin').GetName] является дебрями"
  decision_subjugate_the_ettenmoors.not_ai_or_not_lore_friendly:0 "Это решение ПРОТИВОРЕЧИТ правилам. Это означает, что оно срабатывает при отключенном правиле соответствия канону или при использовании игроком."
 
+ decision_gram_destroy_rangers:0 "Ослабить Следопытов"
+ decision_gram_destroy_rangers_tooltip:0 "Основать заставы налётчиков в Эриадоре"
+ decision_gram_destroy_rangers_desc:0 "Долгое время Следопыты [dunedain|El] оберегали земли древнего [Concept('arnor', 'Арнора')|E]. Говорят, что за их щитом скрываются большие богатства. Если бы мы смогли пробить брешь в их обороне, богатства Шира стали бы нашими."
+ decision_gram_destroy_rangers_confirm:0 "Смерть дунэдайн!"
+
+ decision_stabilize_gram:0 "Стабилизировать гору Грам"
+ decision_stabilize_gram_tooltip:0 "Покончить с безвластием на горе Грам"
+ decision_stabilize_gram_desc:0 "Гольфимбул потерпел неудачу, его набег на Шир обернулся катастрофой. Наш капитан мертв, а вместе с ним и большая часть наших боевых сил. Теперь рабы восстают, и каждая жалкая снага видит себя на троне горы Грам. Кровь свободно льется по закоулкам, а банды разбойников и отступников режут друг друга в открытую. Чтобы положить конец этому безумию, нужен сильный лидер."
+ decision_stabilize_gram_confirm:0 "И это буду я!"
+
+ decision_stabilize_gram_non_orc:0 "Стабилизировать гору Грам"
+ decision_stabilize_gram_non_orc_tooltip:0 "Покончить с безвластием на горе Грам"
+ decision_stabilize_gram_non_orc_desc:0 "Когда мы прибыли к горе Грам, то обнаружили, что орки настолько заняты истреблением друг друга, что почти не оказывают сопротивления."
+ decision_stabilize_gram_non_orc_confirm:0 "По крайней мере, сейчас всё закончится."
+
+ decision_gram_avenge_greenfields:0 "Отомстить за поражение на Зелёных Полях"
+ decision_gram_avenge_greenfields_tooltip:0 "Уничтожить жалких полуросликов"
+ decision_gram_avenge_greenfields_desc:0 "Гольфимбул, вождь горы Грам, был убит «Бычьим Ревом» Туком и унижен [Concept('hobbits', 'хоббитами')|E] из Шира. Хотя мы не его родичи, все, кто живет в этих горах, носят на себе пятно этого позора - [Concept('orcs', 'орки')|E], побеждённые полуросликами! Мы должны отомстить за это поражение."
+ decision_gram_avenge_greenfields_confirm:0 "За Гольфимбула, за гору Грам!"
+ decision_gram_avenge_greenfields_kill_tooks:0 "Бандобрас «Бычий Рёв» Тук мёртв"
+ decision_gram_avenge_greenfields_destroy_rangers:0 "Вы сломили оборону Следопытов"
+ decision_gram_avenge_greenfields_stabilize_gram:0 "Вы стабилизировали анархию на горе Грам"
+ decision_avenge_greenfields_scour_shire:0 "Вы разорите Шир, уничтожив титул и разграбив графства."
+
+
  ################################
  ###### Bellakar Decisions ######
  ################################
@@ -1260,6 +1285,20 @@
  decision_reclaim_rhovanion_plains_confirm:0 "Равнины снова наши!"
 
  rhovanion_resettlement_culture_counties_custom:0 "Каждое [county|El] с истерлингским и северным [Concept( 'heritage', 'наследием' )|E] в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('custom_plains_rhovanion').GetName]"
+
+ ########################
+ #### Dale Decisions ####
+ ########################
+
+ decision_integrate_drakkenvast:0 "Интегрировать Драккенваст"
+ decision_integrate_drakkenvast_tooltip:0 "Полностью интегрировать северное пограничье в королевство"
+ decision_integrate_drakkenvast_desc:0 "За Одинокой горой лежит равнина Драккенваст, которая до сих пор была лишь слегка заселена. Теперь, когда наш народ начал расширяться к подножию Серых гор, настало время объявить о нашей власти над этими землями, чтобы все признали это."
+ decision_integrate_drakkenvast_confirm:0 "Север будет защищён!"
+
+ decision_strengthen_eastern_border:0 "Укрепить восточную границу"
+ decision_strengthen_eastern_border_tooltip:0 "Вложиться в оборону восточных марок"
+ decision_strengthen_eastern_border_desc:0 "Вдоль нашей восточной границы протекает река Карнен, которую защищают форпосты [GetTitleByKey('c_carnedir').GetNameNoTier] и [GetTitleByKey('c_khunandar').GetNameNoTier]. Учитывая нашу недавнюю экспансию в этот регион и угрозы с востока, было бы разумно вложить средства в оборону этого важного приграничья."
+ decision_strengthen_eastern_border_confirm:0 "Наше бдение на востоке будет возобновлено!"
 
  ################################
  ####   Saralain Decisions   ####
@@ -1932,3 +1971,18 @@
  bestow_heirloom_decision_unattached_artifact_tt: "не привязан к титулу"
  bestow_heirloom_decision_artifact_attached_to_secondary_title_tt: "привязан к одному из ваших второстепенных титулов"
  bestow_heirloom_decision_silmaril_rop_tt: "не Сильмариль или [ringofpower|E]"
+
+ #####################################
+ ### War of the Rohirrim Decisions ###
+ #####################################
+
+ decision_wulf_marriage_saralain:0 "Заключить союз с Саралайном"
+ decision_wulf_marriage_saralain_tooltip:0 "Оказать военную помощь Петрогу из Саралайна, чтобы добиться руки его дочери."
+ decision_wulf_marriage_saralain_desc:0 "Дядя Керит рассказал о своём кузене Петроге, владыке Саралайна, и о заботах, которые на него навалились. Его амбиции смелы: он хочет повелевать обоими берегами Гватло, но его южные соседи объединились и своими союзами преграждают ему путь.\n\nКерит считает, что если я помогу ему выйти из тупика, Петрог отдаст мне руку своей дочери, скрепив союз кровью и браком.\n\nХотя Саралайн давно отделён от дунландцев, наши народы связывают родственные узы, и есть мудрость в создании как внутренних, так и внешних союзов."
+
+ decision_wulf_conversion:0 "Вопрос веры"
+ decision_wulf_conversion_tooltip:0 "Принять одну из главенствующих конфессий Дунланда в ходе грандиозного публичного ритуала обращения или подтвердить свою приверженность верованиям рохиррим."
+ decision_wulf_conversion_desc:0 "Воды Лок-Тиара мерцают под лунным светом - священное место, где, по преданию, обитают духи Дунланда. Хотя теперь я владею этим местом, люди все еще видят во мне чужака с чуждыми суевериями. Если я хочу возглавить этот народ, я должен доказать свою преданность.\n\nШаманы у озера призывают меня сделать выбор. #V Турталис#!, северный дух туманов, который направляет и защищает, чьи последователи ценят мир и узы доверия. Или #V Храбназер#!, южный дух бурь, чей призыв к мести и славе на поле боя будоражит кровь воинов.\n\nВыбор определит мое будущее, так же как и верность тех, кто последует за мной."
+ convert_to_turthalis:0 "Принять веру во владыку туманов, #V Турталиса#!"
+ convert_to_khrabnazerh:0 "Принять веру в повелителя бурь, #V Храбназера#!"
+ retain_rohirric_faith:0 "Укрепить мою веру в #V Оромэ и Йаванну#!"
