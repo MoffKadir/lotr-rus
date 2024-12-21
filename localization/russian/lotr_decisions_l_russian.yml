@@ -1248,6 +1248,12 @@
  decision_khand_stabilise_successions_ruled_for_three_generations:0 "Три последних [Concept( 'rulers', 'правителя' )|E] державы [GetTitleByKey('e_khand').GetName] принадлежали к вашей [Concept( 'dynasty', 'династии' )|E]"
  EFFECT_REMOVE_VARIAG_SUCCESSION:0 "Ваша [culture|El] заменит [Concept( 'tradition', 'традицию' )|E] «[GetCultureTradition('tradition_variag_succession').GetName]» на «[GetCultureTradition('tradition_variag_succession_stable').GetName]»."
 
+ decision_unite_upper_khand_ovatha:0 "Объединить Верхний Кханд"
+ decision_unite_upper_khand_ovatha_tooltip:0 "Создать из враждующих держав Верхнего Кханда единое [Concept('kingdom', 'королевство')|E]"
+ decision_unite_upper_khand_ovatha_desc:0 "С растущей угрозой истерлингов на севере мы должны отбросить наши мелкие дрязги и объединиться под единым знаменем.\n\nПод #Italic моим#! знаменем!"
+ decision_unite_upper_khand_ovatha_confirm:0 "Верхний Кханд будет моим!"
+ decision_unite_upper_khand_ovatha_tt:0 "Вы потребуете подчинения от властителей Верхнего Кханда"
+
  ###############################
  #### Anduin Vale Decisions ####
  ###############################
@@ -1984,21 +1990,21 @@
  decision_wulf_marriage_saralain:0 "Заключить союз с Саралайном"
  decision_wulf_marriage_saralain_tooltip:0 "Оказать военную помощь Адорн из Саралайна, чтобы добиться руки его дочери."
  decision_wulf_marriage_saralain_desc:0 "Дядя Керит рассказал о своём кузене, владыке Саралайна, и о заботах, с которыми столкнулся [GetTitleByKey('k_saralain').GetHolder.GetFirstName]. Его амбиции смелы: он хочет повелевать обоими берегами Гватло, но его южные соседи объединились и своими союзами преграждают ему путь.\n\nКерит считает, что если я помогу ему выйти из тупика, Петрог отдаст мне руку своей дочери, скрепив союз кровью и браком.\n\nХотя Саралайн давно отделён от дунландцев, наши народы связывают родственные узы, и есть мудрость в создании как внутренних, так и внешних союзов."
- decision_wulf_marriage_saralain_confirm:0 "Gather the men, we ride for Súthure!"
- decision_wulf_marriage_saralain_effects1:0 "#V You#! and #V [GetTitleByKey('k_saralain').GetHolder.GetName]#! start "County Conquest" [wars|E] against his neighbours to secure the #V [GetTitleByKey('d_nen_gwathlo').GetName]#!."
- decision_wulf_marriage_saralain_effects2:0 "If successful, you will be given his daughter's hand in [marriage|E], securing an [alliance|E] with the #V [GetTitleByKey('k_saralain').GetName]#!."
+ decision_wulf_marriage_saralain_confirm:0 "Собирайте людей, мы отправляемся в Сутурэ!"
+ decision_wulf_marriage_saralain_effects1:0 "#V Вы#! и #V [GetTitleByKey('k_saralain').GetHolder.GetName]#! начинаете [Concept('wars', 'войны')|E] за завоевание графств против его соседей, чтобы захватить #V [GetTitleByKey('d_nen_gwathlo').GetName]#!."
+ decision_wulf_marriage_saralain_effects2:0 "В случае успеха вы получите руку его дочери в [Concept('marriage', 'жёны')|E], закрепив [Concept('alliance', 'союз')|E] с державой #V [GetTitleByKey('k_saralain').GetName]#!."
 
- decision_wulf_marriage_eredrim:0 "Secure an Alliance with the Eredrim"
- decision_wulf_marriage_eredrim_tooltip:0 "Send a messenger to Adorn of the Eredrim to secure his daughter's betrothal."
- decision_wulf_marriage_eredrim_desc:0 "My father once spoke of the Eredrim, the proud mountain lords who dwelt on the western borders of his realm. Among them, none were as feared or respected as [GetTitleByKey('d_hairavercien').GetHolder.GetFirstNameNicknamed] - a man of towering stature and unyielding will, whose name is known even beyond the White Mountains.\n\nAdorn has a daughter, young Aliz, barely more than a child but already spoken of for her sharp wit and promising strength. A marriage to her would be one of opportunity, not love. The years between us, and the vast differences in our ways, would make such a union challenging.\n\nWinning Adorn’s favour would bring a powerful ally to my cause, but it is no easy feat. The Eredrim’s scorn for outsiders runs deep, and Adorn’s respect is earned only through trials that would humble lesser men. Yet, if I am to rise, even the highest mountain must be climbed."
- decision_wulf_marriage_eredrim_confirm:0 "Send a missive, tell him to wear warm furs."
- decision_wulf_marriage_eredrim_effects1:0 "#V You#! send a messager to #V [GetTitleByKey('d_hairavercien').GetHolder.GetName]#! to request the betrothal, though is likely to require some convincing."
- decision_wulf_marriage_eredrim_effects2:0 "If successful, you will be given his daughter's hand in [marriage|E], securing an [alliance|E] with the #V [GetTitleByKey('d_hairavercien').GetName]#!."
+ decision_wulf_marriage_eredrim:0 "Заключить союз с эредрим"
+ decision_wulf_marriage_eredrim_tooltip:0 "Отправить гонца к Адорну из эредрим, чтобы заручиться его согласием на помолвку с его дочерью."
+ decision_wulf_marriage_eredrim_desc:0 "Когда-то мой отец рассказывал об эредрим, гордых горных владыках, обитавших на западных границах его владений. Среди них никто не пользовался таким страхом и уважением, как [GetTitleByKey('d_hairavercien').GetHolder.GetFirstNameNicknamed] - человек огромного роста и непреклонной воли, чье имя известно даже за пределами Белых гор.\n\nУ Адорна есть дочь, юная Ализ, едва вышла детского возраста, но о ней уже говорят как об остроумной и многообещающей силе. Брак с ней - это возможность, а не любовь. Годы, разделяющие нас, и огромные различия в наших путях сделают такой союз непростым.\n\nЗавоевав расположение Адорна, я получу могущественного союзника, но это нелегко. Эредрим глубоко презирают чужаков, а уважение Адорна можно заслужить только через испытания, которые смирили бы меньших людей. Но если я хочу возвыситься, даже на самую высокую гору придется взобраться."
+ decision_wulf_marriage_eredrim_confirm:0 "Послать гонца, пусть наденет теплые меха."
+ decision_wulf_marriage_eredrim_effects1:0 "#V Вы#! пошлёте гонца к персонажу #V [GetTitleByKey('d_hairavercien').GetHolder.GetName]#! с просьбой о помолвке, хотя, скорее всего, его придётся убеждать."
+ decision_wulf_marriage_eredrim_effects2:0 "В случае успеха вы получите руку его дочери в [Concept('marriage', 'жёны')|E], закрепив [Concept('alliance', 'союз')|E] с державой #V [GetTitleByKey('d_hairavercien').GetName]#!."
 
  decision_wulf_declare_king_of_dunland:0 "Объединить дунландцев"
- decision_wulf_declare_king_of_dunland_tooltip:0 "Whether through persuasion or the clash of steel, unite the Dunlendings under your banner."
+ decision_wulf_declare_king_of_dunland_tooltip:0 "Объединить дунландцев под своим знаменем убеждением или звоном стали."
  decision_wulf_declare_king_of_dunland_desc:0 "Чтобы поставить Рохан на колени, я должен объединить дунландцев - древних врагов Марки, разрозненных и разделённых враждой и старыми обидами.\n\nОни должны встать плечом к плечу, связанные одной целью, будь то убеждение или лязг стали. Только тогда у меня хватит сил бросить вызов Рохану, сокрушить его гордыню и захватить его трон."
- decision_wulf_declare_king_of_dunland_confirm:0 "Our time is now!"
+ decision_wulf_declare_king_of_dunland_confirm:0 "Наше время настало!"
  is_friends_with_wulf:0 "Является #V вашим#! [Concept('friend', 'другом')|E]"
  is_an_ally_of_wulf:0 "Является #V вашим#! [Concept('ally', 'союзником')|E]"
  is_hooked_by_wulf:0 "Находится под #V вашим#! [Concept('hooked', 'влиянием')|E]"
@@ -2019,4 +2025,4 @@
  retain_rohirric_faith_desc:0 "$retain_rohirric_faith_tooltip$"
  you_keep_your_rohirric_faith:0 "Вы сохраните свою [GetFaithByKey('faith_rohirric').GetName|l]ую [Concept('faith', 'конфессию')|E]"
 
- TO_BE_ADDED_WIP:0 "WORK IN PROGRESS - TO BE CONTINUED"
+ TO_BE_ADDED_WIP:0 "WORK IN PROGRESS - ПРОДОЛЖЕНИЕ СЛЕДУЕТ"
