@@ -229,6 +229,13 @@
  set_sail_decision_confirm:0 "Поднять якорь!"
  activity_sailing_name:0 "Морское странствие"
 
+ set_sail_landless:0 "Отправиться в плаванье"
+ set_sail_landless_desc:0 "Тайны и приключения диких открытых морей манят меня! Кто я [Select_CString(ROOT.Char.IsFemale, 'такая', 'такой' )], чтобы игнорировать их зов?"
+ set_sail_landless_tooltip:0 "Вы #high отправитесь в плавание#! по открытому морю"
+ set_sail_landless_confirm:0 "Поднять якорь!"
+ set_sail_landless_desc_activity:0 "Вы #high отправитесь в плавание#! из случайного порта."
+ set_sail_landless_desc_benefits:0 "Вы получите возможность улучшить свои [Concept('skills', 'навыки')|E] как [GetTrait('lifestyle_mariner').GetName(GetNullCharacter)]."
+
  beorning_decision:0 "Смена облика"
  beorning_decision_desc:0 "Высвободить [Select_CString(ROOT.Char.IsFemale, 'свою внутреннюю медведицу', 'своего внутреннего медведя' )]! Вас ждёт серия неожиданных приключений!"
  beorning_decision_tooltip:0 "Вы принимаете облик [Select_CString(ROOT.Char.IsFemale, 'медведицы', 'медведя' )], вызвав особые приключения для оборотней"
