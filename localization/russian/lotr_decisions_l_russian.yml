@@ -1982,10 +1982,10 @@
  search_usakan_tooltip:0 "Юсакан"
 
  ### Artifact Decisions ###
- make_heirloom_decision:0 "Подарить реликвию наследнику"
- make_heirloom_decision_tooltip:0 "Издать указ о том, что один из ваших артефактов станет вечной реликвией наследников"
- make_heirloom_decision_desc:1 "#F По обычаю, великие короли и императоры дарят своим наследникам престижные артефакты, чтобы их признали и почитали как хранителей [Concept('heirlooms', 'реликвий')|E].#!"
- make_heirloom_decision_confirm:1 "Мне нужна опись!"
+ bestow_heirloom_decision:0 "Подарить реликвию наследнику"
+ bestow_heirloom_decision_tooltip:0 "Издать указ о том, что один из ваших артефактов станет вечной реликвией наследников"
+ bestow_heirloom_decision_desc:1 "#F По обычаю, великие короли и императоры дарят своим наследникам престижные артефакты, чтобы их признали и почитали как хранителей [Concept('heirlooms', 'реликвий')|E].#!"
+ bestow_heirloom_decision_confirm:1 "Мне нужна опись!"
  bestow_heirloom_decision_unattached_artifact_tt: "не привязан к титулу"
  bestow_heirloom_decision_artifact_attached_to_secondary_title_tt: "привязан к одному из ваших второстепенных титулов"
  bestow_heirloom_decision_silmaril_rop_tt: "не Сильмариль или [ringofpower|E]"
@@ -1993,6 +1993,13 @@
  #####################################
  ### War of the Rohirrim Decisions ###
  #####################################
+
+ decision_wulf_marriage_rohan:0 "Заручиться поддержкой маршала Торна"
+ decision_wulf_marriage_rohan_tooltip:0 "Оказать военную помощь Адорну из Саралайна, чтобы добиться руки его дочери."
+ decision_wulf_marriage_rohan_desc:0 "Среди разрозненных властителей Рохана мало кто так внимательно следит за изменчивыми потоками власти, как Торн из Волда. Маршал северной границы - человек тихих амбиций и острой хитрости, его земли суровы и далеки от взора короля. Хотя его силы скромны, Торн не питает особой любви к Хельму и может многое выиграть, если Риддермарк падет.\n\nВ душе Торн - оппортунист. Если я объявлю войну Рохану и одержу верх, он может перейти на мою сторону без дополнительных стимулов. Однако я могу заручиться его лояльностью уже сейчас, пообещав ему большую власть под моим правлением и скрепив узы брака с его семьей.\n\nЛеофвинн, его дочь, славится своей красотой. Женитьба на ней не только заручится поддержкой Торна, но и укрепит мои притязания на трон. Невеста из рохиррим утихомирит сомнения властителей Марки и придаст моему правлению легитимность старых родословных, которые я хочу вернуть."
+ decision_wulf_marriage_rohan_confirm:0 "Наши интересы совпадают, как он сможет отказать?"
+ #decision_wulf_marriage_rohan_effects1:0 "#V You#! and #V [GetTitleByKey('k_saralain').GetHolder.GetName]#! start "County Conquest" [wars|E] against his neighbours to secure the #V [GetTitleByKey('d_nen_gwathlo').GetName]#!."
+ #decision_wulf_marriage_rohan_effects2:0 "If successful, you will be given his daughter's hand in [marriage|E], securing an [alliance|E] with the #V [GetTitleByKey('k_saralain').GetName]#!."
 
  decision_wulf_marriage_saralain:0 "Заключить союз с Саралайном"
  decision_wulf_marriage_saralain_tooltip:0 "Оказать военную помощь Адорн из Саралайна, чтобы добиться руки его дочери."
