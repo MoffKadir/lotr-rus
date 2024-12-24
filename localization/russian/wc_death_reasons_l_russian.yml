@@ -7,6 +7,8 @@
 
  death_plague:0 "[Select_CString(CHARACTER.IsFemale, 'умерла', 'умер' )] от чумы [Concept( 'Scourge', 'Плети' )|E]"
 
+ death_horde:0 "was killed by the Horde"
+
  death_arcane_explosion:0 "[Select_CString(CHARACTER.IsFemale, 'погибла', 'погиб' )] в результате странного и неуправяемого магического взрыва"
 
  death_adventurers:0 "[Select_CString(CHARACTER.IsFemale, 'была убита', 'был убит' )] искателями приключений"
@@ -14,3 +16,7 @@
 
  death_merge:0 "[Select_CString(CHARACTER.IsFemale, 'слилась', 'слился' )] воедино"
  death_merge_killer:0 "[Select_CString(CHARACTER.IsFemale, 'слилась', 'слился' )] воедино с [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажем ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'им персонажем', '' )]"
+
+ death_mana_starved:0 "died of mana starvation"
+
+ override_death_effect_tt:0 "[CharYouFirstName(death_recipient)] [Select_CString( death_recipient.IsLocalPlayer, 'serve', 'serves' )] an important role in the future of Azeroth, and so, a greater power intervenes in [CharYourFirstNames(death_recipient)] death!"

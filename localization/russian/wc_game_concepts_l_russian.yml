@@ -34,7 +34,7 @@
 
  game_concept_grim_religion:0 "Зловещая религия"
  game_concept_grim_religions:0 "Зловещие религии"
- game_concept_grim_religion_desc:0 "[religion|E] настолько тёмная и злая, что противостоит остальному миру. Они отказываются искать внешних союзников и никогда не остановятся, пока не достигнут своей конечной цели.\n\nТакими религиями являются:\n$EFFECT_LIST_BULLET$$deathbringer_adj$\n$EFFECT_LIST_BULLET$$doombringer_adj$\n$EFFECT_LIST_BULLET$$shathgral_adj$"
+ game_concept_grim_religion_desc:0 "[religion|E] настолько тёмная и злая, что противостоит остальному миру. Они отказываются искать внешних союзников и никогда не остановятся, пока не достигнут своей конечной цели.\n\nТакими религиями являются:\n$EFFECT_LIST_BULLET$$deathbringer_adj$\n$EFFECT_LIST_BULLET$$doombringer_adj$\n$EFFECT_LIST_BULLET$$shathgral_religion_adj$"
  
  game_concept_dark_authority:0 "Тёмная власть"
  game_concept_dark_authority_desc:1 "Заменяет [crown_authority|El] для [Concept('dark_governments', 'тёмных правительств')|E].\n\n$game_concept_dark_authority$ меняет свои законы автоматически, когда правитель соберёт достаточно [Concept('dark_frenzy', 'тёмного безумия')|E], следовательно, оно не может быть изменено вручную.\n\nВысокая $game_concept_dark_authority$ предоставляет бонусы, в то время как низкая власть предоставляют штрафы. У каждого [Concept('dark_government', 'тёмного правительства')|E] есть уникальный набор бонусов и штрафов."
@@ -121,3 +121,7 @@
  game_concept_thunder_king:0 "Властелин Грома"
  game_concept_the_thunder_king:0 "Властелин Грома"
  game_concept_the_thunder_king_desc:0 "Одно из малозначимых [Concept( 'crises', 'бедствий' )|E] на Азероте. [GetTrait('thunder_king').GetName( GetNullCharacter )] Лэй Шэнь был первым императором империи могу. Он вобрал в себя силы хранителя титанов Ра-дена, став одним из самых могущественных существ на Азероте, и завоевал всю Пандарию, основав тиранический режим, который продержался тысячи лет. В конце концов он был убит вместе со своими союзниками-зандаларами при попытке захватить Кузню Созидания в Ульдуме.\n\nПо слухам, тролли-зандалары владеют секретным ритуалом его воскрешения. Если легенды правдивы, воскресший Властелин Грома не станет тратить время на то, чтобы собрать кланы [GetTrait('creature_mogu').GetName( GetNullCharacter )], чтобы восстановить господство своей древней [Concept( 'empire', 'империи' )|E] над Пандарией.\n\nКак [ongoing_crisis|El], Властелину Грома доступен [casus_belli|El] «[great_invasion|E]», но в целом он не будет расширяться за пределы Пандарии."
+
+ game_concept_purge_population:0 "Purge Population"
+ game_concept_genocide:0 "$game_concept_purge_population$"
+ game_concept_purge_population_desc:0 "A [councillor_task|E] performed by the [marshal|E] which targets a [county|E] of a different [culture|E] or [faith|E] than the [liege|E]\nProgress increases each month, and at 100%, the Target County has changed from their previous Culture and Faith to the Liege's.\n\nConversion speed is affected by many factors, including the [councillor|E]'s [martial_skill|E], the strength of the Liege's unraised [army|E], the County's [development|E], and the [fervor|E] of the two Faiths."
