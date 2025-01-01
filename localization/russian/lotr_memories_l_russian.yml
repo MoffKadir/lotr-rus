@@ -2,10 +2,10 @@
  #Descs
 
  house_feud_started_head_shaved:0 "[attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'обрила', 'обрил' )] мою бороду"
- house_feud_started_family_shaved:0 "[Select_CString(victim.IsFemale, 'Моя', 'Мой' )] [owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))], [victim.GetFirstName], [Select_CString(victim.IsFemale, 'была обрита', 'был обрит' )] персонажем [attacker.GetFirstName]"
+ house_feud_started_family_shaved:0 "[Select_CString(victim.IsFemale, 'Моя', 'Мой' )] [owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))], [victim.GetFirstName], [Select_CString(victim.IsFemale, 'была обрита', 'был обрит' )] [Select_CString(attacker.IsLocalPlayer, '', 'персонажем ' )][attacker.GetShortUINamePossessive][Select_CString(attacker.IsLocalPlayer, 'им персонажем', '' )]"
 
  house_feud_started_head_shaved_second_perspective:0 "[attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'обрила', 'обрил' )] вас"
- house_feud_started_family_shaved_second_perspective:0 "[Select_CString(victim.IsFemale, 'Ваша', 'Ваш' )] [owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))], [victim.GetFirstName], [Select_CString(victim.IsFemale, 'была обрита', 'был обрит' )] персонажем [attacker.GetFirstName]"
+ house_feud_started_family_shaved_second_perspective:0 "[Select_CString(victim.IsFemale, 'Ваша', 'Ваш' )] [owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))], [victim.GetFirstName], [Select_CString(victim.IsFemale, 'была обрита', 'был обрит' )] [Select_CString(attacker.IsLocalPlayer, '', 'персонажем ' )][attacker.GetShortUINamePossessive][Select_CString(attacker.IsLocalPlayer, 'им персонажем', '' )]"
 
- house_feud_shaved_head_third_perspective:0 "[attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'обрила', 'обрил' )] персонажа [owner.GetTitledFirstName]"
- house_feud_started_family_shaved_third_perspective:0 "[owner.GetTitledFirstName], [owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))], [victim.GetFirstName], [Select_CString(victim.IsFemale, 'была обрита', 'был обрит' )] персонажем [attacker.GetFirstName]"
+ house_feud_shaved_head_third_perspective:0 "[attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'обрила', 'обрил' )] [Select_CString(owner.IsLocalPlayer, '', 'персонажа ' )][owner.GetShortUINamePossessive][Select_CString(owner.IsLocalPlayer, 'его персонажа', '' )]"
+ house_feud_started_family_shaved_third_perspective:0 "[owner.GetTitledFirstName], [owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))], [victim.GetFirstName], [Select_CString(victim.IsFemale, 'была обрита', 'был обрит' )] [Select_CString(attacker.IsLocalPlayer, '', 'персонажем ' )][attacker.GetShortUINamePossessive][Select_CString(attacker.IsLocalPlayer, 'им персонажем', '' )]"

@@ -1,29 +1,49 @@
 ﻿l_russian:
 
  ### BOUNTIG EVENTS ###
-  
- bountig_event_chain.0010.t:0 "Temp Title"
- bountig_event_chain.0010.desc:0 "Temp Desc"
- bountig_event_chain.0010.a:0 "Option A"
- bountig_event_chain.0010.b:0 "Option B"
+ bountig_special_raid_for_captives_cb:0 "Налёт на Рохан"
+ #Bountig accepts the contract in the East
+ bountig_event_chain.0003.t:0 "March to War"
+ bountig_event_chain.0003.desc:0 "I have heeded the call, and now begin my long trek westward. In my wake, I leave behind my childhood, my love, my innocence, and all that I have ever known. To what do I march? To glory? To death? Or to some other destiny that I do not yet know?"
+ bountig_event_chain.0003.a:0 "There is naught but forward."
 
- bountig_event_chain.0015.t:0 "Temp Title"
- bountig_event_chain.0015.desc:0 "Temp Desc"
- bountig_event_chain.0015.a:0 "Option A"
- bountig_event_chain.0015.a.tt:0 "#V Вы#! выходите из войны #V Налёт за пленными#! против персонажа [GetTitleByKey('k_rohan').GetHolder.GetName]"
+ #Bountig gets offered land or gold, either ending or boosting his story line
+ bountig_event_chain.0005.t:0 "Victory in the Green Plains"
+ bountig_event_chain.0005.desc:0 "It was a near thing, but somehow we have prevailed. The horsemen have retreated - though they shall likely return in time. We have established a foothold in this land, and [sponsor] now bequeaths us our rewards. Many of my fellows died in the fray, but that means those of us who survived have an even greater prize. In recognition of my skill and vital role, [attacker.GetName] has offered me my choice of reward. He has offered me many things - gold, a choice position in his court, or even a title and domain of my own, if I wish."
+ bountig_event_chain.0005.a:0 "Gold and glory are just currencies in pursuit of a greater goal."
+ bountig_event_chain.0005.b:0 "I shall make a new home here."
+ bountig_event_chain.0005.b.tt:0 "#N Это завершит сюжет персонажа [bountigmedlokan.GetName]!#!"
+
+ #Eastern Rohan vassals get opportunity to join war
+ bountig_event_chain.0010.t:0 "The Eastern Threat Returns"
+ bountig_event_chain.0010.desc:0 "For many years now, the lands to our east have been ones of chaos. Since the days when Eorl slew the foul Balchoth Emperor, his former subjects have squabbled like vultures over the corpse of the lands which once formed his realm. It was inevitable that the chaos would spread, and like a blight, it encroaches upon all lands the Easterling touch. Many a raid have the foolish and the hardy aimed against our eastern walls, seeking plunder and land both.\n\nSo it is once again. We have heard messages of an incoming Easterling force - unusually substantial in size and equipment. Thus, we have been summoned to send whatever forces we can spare to ensure that once the foe is defeated, they do not escape into the countryside to pillage while we hunt them down."
+ bountig_event_chain.0010.a:0 "I will answer the summons myself!"
+ bountig_event_chain.0010.b:0 "[GetTitleByKey('k_rohan').GetHolder.GetNamePossessiveRegnal] normal levies shall suffice"
+
+ #Bountig is forced to travel southwards after losing the war
+ bountig_event_chain.0011.t:0 "Defeat in the Green Plains"
+ bountig_event_chain.0011.desc:0 "I should have known better. So young, so foolish still! Blinded by gold and glory alike, I could only watch in horror as the horsemen of the green plains scattered my fellows and slaughtered them near to a man. What few survived nigh begged for death. Only by the grace of the Gods did I survive, slipping away in the chaos as the battle turned ill.\n\nShaking as a leaf, I abandon my armor. Frantically, I think back to the meetings before it all went wrong, and those maps - such small scraps of paper, and yet now my only survival! At last calming my breath, I open my eyes once more, and find the sun. The hour is late now, and as such I can tell east from west. Death alone awaits me if I go east, west, or north, for the Horsemen were many, and I know they went those ways. So the south alone remains.\n\nA different terror is upon me now. Legends speak of the south - and of those who live there. Men tall as giants, demons of hate made flesh. Our foes of old, it is said. Builders of monumental houses and fortresses my people cannot dream of. Their gazes pierce the mind and read the hearts of those who come before them. If I dare this road, will they slay me? Will they know me? Yet I have no other choice. This is the only path left to me."
+ bountig_event_chain.0011.a:0 "I master my fear, and walk to an unknown Doom."
+ bountig_event_chain.0011.a.tt:0 "Отправиться в провинцию [gondor_ruler.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier]"
+
+ #Bountig arrives in Minas Tirith
+ bountig_event_chain.0012.t:0 "Temp Title"
+ bountig_event_chain.0012.desc:0 "Temp Desc"
+ bountig_event_chain.0012.a:0 "Option A"
+ bountig_event_chain.0012.b:0 "Option B"
 
 
  ### KHAND & OVATHA EVENTS ###
 
  bountig_event_chain.5001.t:0 "Слухи из Мистранда"
- bountig_event_chain.5001.desc:0 "Просматривая различные донесения моих шпионов и дозорных, я [Select_CString(ROOT.Char.IsFemale, 'наткнулась', 'наткнулся' )] на подробное описание недавних событий при дворе владения [GetTitleByKey('c_mistrand').GetNameNoTier], далеко на севере.\n\nЭтот город, расположенный в восточной бухте [Concept('seaofrhun', 'Моря Рун')|E] и и являющийся домом для богатых купцов, находится в самом сердце земель истерлингов, чьи многочисленные племена враждуют между собой уже столько веков, что эта эпоха стала известна как Кровавое время.\n\nВ отчете говорится о заметных переменах в этом отношении. В нем говорится о выдающемся советнике по имени [bountigmedlokan.GetName], который путешествует от двора к двору, способствуя единству между враждующими племенами и правителями.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'потрясена', 'потрясен' )] этим открытием. Если истерлинги объединятся под единым знаменем, кто сможет помешать им вторгнуться в Кханд, который сейчас так же разделен, как и земли Руна?"
+ bountig_event_chain.5001.desc:0 "Мистранд. Сердце [Concept('rhun', 'Руна')|E]. Расположенный на восточном берегу [Concept('seaofrhun', 'Моря Рун')|E], его высокие стены отбрасывают длинные тени на золотые равнины, а через его ворота проходят как купцы, так и наемники. Как и в любом городе, в тени и на шумных рынках происходят интриги, которые, в общем-то, не имеют к нам никакого отношения. Ведь истерлинги разобщены, и препирательства бесчисленных враждующих кланов и племен раскололи Рун. Так было много лет, и нам это только на руку.\n\nНо с севера странствующие купцы и торговцы приносят мне все более тревожные слухи. [Select_CString(bountigmedlokan.IsFemale, 'Некая', 'Некий' )] [bountigmedlokan.GetFirstName], [Select_CString(bountigmedlokan.IsFemale, 'бывшая наемница, набравшая', 'бывший наемник, набравший' )] популярность среди жителей и властителей #L [GetTitleByKey('c_mistrand').GetNameNoTier]а#!, вместо этого проповедует единство среди владык истерлингов, призывая их объединить силы против чужеземных врагов и владык.\n\nВ том числе и нас. Разрозненность земель истерлингов открывает широкие возможности для грабежа и дани, но если этот северный дикарь преуспеет в своем стремлении, то новое королевство истерлингов может не только лишить нас дани, но и создать угрозу существованию."
  bountig_event_chain.5001.a:0 "Отправить моих лучших шпионов в [GetTitleByKey('c_mistrand').GetNameNoTier] для дальнейшего расследования!"
  bountig_event_chain.5001.a.tt:0 "По истечении некоторого времени вы получите донесение, касающееся персонажа [bountigmedlokan.GetFirstName]"
  bountig_event_chain.5001.b:0 "Эта рунская шавка не представляет для нас никакой угрозы."
  bountig_event_chain.5001.b.tt:0 "Вы решаете игнорировать возвышение персонажа [bountigmedlokan.GetFirstName]"
 
- bountig_event_chain.5002.t:0 "Тревожные вести с севера"
- bountig_event_chain.5002.desc:0 "Прошло много дней с тех пор, как я [Select_CString(ROOT.Char.IsFemale, 'отправила', 'отправил' )] шпионов в Рун, чтобы расследовать слухи о том, что некий [bountigmedlokan.GetName], вожак истерлингов, намеревается уладить вражду племенами Руна между [Concept('seaofrhun', 'Морем Рун')|E] и западными равнинами.\n\nНе все мои люди покинули [GetTitleByKey('c_mistrand').GetNameNoTier] невредимыми, а некоторые и вовсе не вернулись. Те же, кто вернулся, сообшают одно и то же: [bountigmedlokan.GetFirstName] пользуется высоким авторитетом среди истерлингов и активно использует свое влияние, чтобы объединить раздробленные державы Руна в единое королевство.\n\nЯ сразу понимаю, какую опасность может представлять такое объединенное королевство. Народы [Concept('khand', 'Кханда')|E] так же разобщены, как и истерлинги, и их ссорящиеся вожди станут легкой добычей для любого объединенного королевства Руна - гораздо более заманчивой мишенью, чем могущественный [gondor|E] далеко на западе.\n\nС этой страшной угрозой в голове я прихожу к единственному логическому выводу: именно я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] объединить людей Кханда, чтобы предотвратить вторжение дикарей с севера..."
+ bountig_event_chain.5002.t:0 "Угроза истерлингов"
+ bountig_event_chain.5002.desc:0 "Несколько дней назад я [Select_CString(ROOT.Char.IsFemale, 'отправила', 'отправил' )] своих всадников в [GetTitleByKey('c_mistrand').GetNameNoTier], надеясь собрать больше информации о том, как [bountigmedlokan.GetFirstName] стремится объединить разрозненные племена истерлингов. Не все из них возвращаются, а многие приходят окровавленными и избитыми. Все они подтверждают то, что я уже [Select_CString(ROOT.Char.IsFemale, 'подозревала', 'подозревал' )] в своем сердце.\n\nЭтот Бунтиг добился больших успехов в своих странствиях, больше, чем многие предполагали, и его влияние велико как среди простолюдинов, так и среди знати [Concept('rhun', 'Руна')|E]. Нельзя недооценивать угрозу, которую он представляет для наших интересов и самого существования.\n\nКханд также разобщен, как и Рун; боюсь, в этом вариаги и истерлинги - одно целое. Если мы хотим выстоять перед угрозой этих северных дикарей, Кханд должен быть единым. Я считаю это своим долгом, ибо только сила всех вариагов может сдержать орды истерлингов.\n\n #Italic Я#! [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] сделать это."
  bountig_event_chain.5002.a:0 "Я не позволю истерлингам поработить нас!"
  bountig_event_chain.5002.a.tt:0 "Открывает [decision|El] по объединению державы [GetTitleByKey('k_upper_khand').GetNameNoTier] от вашего имени"
 
