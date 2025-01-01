@@ -197,6 +197,11 @@
  decision_dorwinion_abolish_elections_desc:0 "For generations, the lords of our kingdom have selected a leader from among their number to guide our people into the future. While noble in its aims, this practice has lead to factionalisation and disunity.\n\nI am well respected and the kingdom prospers under the leadership of my [dynasty|E]. Why should we risk losing it all when I finally come to pass? Perhaps the time has come to reassess the value of our elective system..."
  decision_dorwinion_abolish_elections_confirm:0 "My family alone shall rule"
  decision_dorwinion_abolish_elections_title_heir_is_your_heir:0 "Your [player_heir|E] is [heir|E] to the [GetTitleByKey('k_dorwinion').GetName]"
+ 
+ decision_fortify_southern_pass:0 "Fortify the Southern Pass"
+ decision_fortify_southern_pass_tooltip:0 "Build a stronghold in the mountain pass leading to Rhûn"
+ decision_fortify_southern_pass_desc:0 "Beyond the city of [GetTitleByKey('c_caras_sant').GetNameNoTier] lies a mountain pass leading into the lands held by the Easterlings of [GetTitleByKey('e_rhun').GetNameNoTier]. While the Men of [rhun|E] have often traded with us, they are just as likely to invade our lands if the opportunity arises.\n\nIn order to safeguard against any threat from the south, we should fortify our borders south of Caras Sant, building a stronghold right at the exit of the mountain pass - creating an easily defensible chokepoint."
+ decision_fortify_southern_pass_confirm:0 "Begin construction immediately!"
 
  ###########################
  ### Activities Decision ###
@@ -611,7 +616,7 @@
  gondor_kingship_tt_dynasty:0 "#P;bold 3 Points:#! You are a member of the [CHARACTER.GetDynastyName] or the [TARGET_CHARACTER.GetDynastyName] [dynasty|E]"
  finished_anarion_legend_tt:0 "#P;bold 3 Points:#! A member of your [house|E] completed the #bold $legend_anarion$#! [legend|E] with [legend_mythical|E] [legend_quality|E]."
  unlock_claim_gondor_kingship_tt:0 "Gain #P;bold 3 Points:#! towards the #EMP $decision_claim_gondor_kingship$#! [decision|E]"
- gondor_kingship_tt_dark_lord:0 "#P;bold 3 Points:#! You defeated [sauronthedarklordcharacter|El] using the #bold $decision_destroy_mordor$#! [decision|E]"
+ gondor_kingship_tt_dark_lord:0 "#P;bold 3 Points:#! You defeated [sauronthedarklordcharacter|E] using the #bold $decision_destroy_mordor$#! [decision|E]"
  gondor_kingship_tt_parents_dynasty:0 "#P;bold 2 Points:#! Though you are not, one of your parents was a member of the [CHARACTER.GetDynastyName] or the [TARGET_CHARACTER.GetDynastyName] [dynasty|E]"
  gondor_kingship_tt_claim_on_kingship:0 "#P;bold 2 Points:#! You have a [claim|E] on the [GetTitleByKey('e_gondor').GetName]"
  gondor_kingship_tt_osgiliath:0 "#P;bold 2 Points:#! Both sides of [GetTitleByKey('c_osgiliath').GetNameNoTier] have been restored"
@@ -1137,6 +1142,35 @@
  decision_invade_gondor_desc:0 "Gondor has stood defiant against your will, Great Lord, for far too long. If we can secure Ithilien as a point of attack against it, we could amass such an army that even Minas Tirith itself could not resist. And if Minas Tirith falls, then Gondor shall be leaderless, and fracture."
  decision_invade_gondor_confirm:0 "All the East is gathered"
  invade_gondor_decision:0 "Launch the final assault to shatter Gondor and take Minas Tirith"
+ 
+ decision_strengthen_mordor_defences:0 "Strengthen Fortifications"
+ decision_strengthen_mordor_defences_tooltip:0 "Forfity the defences at the main entrances into [mordor|E]."
+ decision_strengthen_mordor_defences_desc:0 "The Mountains of Shadow and the Mountains of Ash form a natural barrier that shields [mordor|E] against any attack coming from our west or north. But there exist two entrances that allow invaders to bypass the unscalable mountain ranges: the passes of Cirith Gorgor and Cirith Ungol.\n\nIn order to ensure the safety of Mordor against any attack from [gondor|E] or her northern allies we must build or remake the fortifications at the Black Gate and at Minas Morgul."
+ decision_strengthen_mordor_defences_confirm:0 "None shall enter [mordor|E] without my leave."
+ 
+ decision_new_breed_of_orcs:0 "Raise the Host of Morgul"
+ decision_new_breed_of_orcs_tooltip:0 "Breed and train the [orcs|E] of [mordor|E] into a true fighting force"
+ decision_new_breed_of_orcs_desc:0 "Strife and infighting has always been a large part of [orc|E] culture. But now, we need the full strength of the orcs of [mordor|E]. When [sauronthedarklordcharacter|E] returns, he will require an army worthy of a Dark Lord!\n\nWe will drill and breed the orcs into a true fighting force with which the frail hosts of the West shall be put to flight. Let all fear the rise of the Morgul-host!"
+ decision_new_breed_of_orcs_confirm:0 "My Morgul-host shall march at my command!"
+ decision_new_breed_of_orcs_tt:0 "Unlocks recruitment of Mordor Uruk Men-at-Arms regiments"
+ host_of_morgul:0 "The Morgul-host"
+ 
+ decision_despoil_ithilien:0 "Despoil Ithilien"
+ decision_despoil_ithilien_tooltip:0 "Send forth your raiders into Ithilien to harvest its rich timber ressources"
+ decision_despoil_ithilien_desc:0 "Directly to the west of Minas Morgul lies the so-called Garden of [gondor|E], the lush forests of Ithilien. This land is ripe for plundering and its ressources will be put to good use in the war machinery of [mordor|E]\n\nLet us send forth raiders into Ithilien and establish great logging camps from which we can harvest wood and timber!"
+ decision_despoil_ithilien_confirm:0 "Burn them all!"
+ 
+ decision_reorganize_nurn:0 "Reorganize the Slave Economy"
+ decision_reorganize_nurn_tooltip:0 "Humble the proud Núrniags by assuming more direct control of Núrn"
+ decision_reorganize_nurn_desc:0 "The Núrniags have styled themselves [king|E]s of Núrn for a time, but that will now change. There is only one true King of Mordor - and all of [middleearth|E], and He does not share his power.\n\nLet us remind the Núrniags of their place and assume direct control of the slave economy that feeds the armies of the Black Lands. With direct oversight, a much better production rate will be enforced in due time."
+ decision_reorganize_nurn_confirm:0 "All shall serve the Dark Lord!"
+ nurn_reorganized:0 "Núrn Reorganized"
+ 
+ decision_return_of_sauron:0 "Return of Sauron"
+ decision_return_of_sauron_tooltip:0 "Finish preparations for the Dark Lord to emerge from hiding and rebuilding the Dark Tower"
+ decision_return_of_sauron_desc:0 "Long have we laboured in order to prepare [mordor|E] for our Master's return. Now, all is finished.\n\nOne of the Nine shall be dispatched to [sauronthedarklordcharacter|E]'s hidden abode. Soon, the Dark Tower shall rise once more and Mordor shall becoome the Lord of the Ring's domain for all eternity."
+ decision_return_of_sauron_confirm:0 "Let the Lord of the Black Land return!"
+ decision_return_of_sauron_tt:0 "[sauronthedarklordcharacter|E] will return to claim [mordor|E]"
 
 ### Orc Descisions ###
  
@@ -1175,6 +1209,11 @@
  decision_demand_orc_submission_confirm:0 "The Mountains are MINE!"
  decision_demand_orc_submission_is_azog:0 "You are the Pale Orc"
  decision_demand_orc_submission_tt:0 "All [orcs|E] in the Misty Mountains must react to your demand"
+ 
+ decision_uldona_spine_orc:0 "Claim the Uldona Spine"
+ decision_uldona_spine_orc_tooltip:0 "Forge a kingdom beneath the peaks of the Uldona Spine"
+ decision_uldona_spine_orc_desc:0 "These mountains are ours. The stinking beardlings that lived here have taken their last breaths long ago. Those terrible lizards, the Dragons, possessed of awful power and terror, are also gone. But we are here - the fighting Orcs! We will claim the Uldona Spine, and all Rhûn will tremble at my might!"
+ decision_uldona_spine_orc_confirm:0 "And we won't let anyone remove us..."
 
  ##############################
  #### Near Harad Decisions ####
@@ -1228,6 +1267,14 @@
  recruit_witch_decision_confirm:0 "Start the Search"
  witch_recruited.t:0 "Witch Recruited"
  witch_recruited.desc:0 "A shadowy courtier arrives..."
+
+ decision_harrying_of_the_coasts:0 "Harry the Coasts of Gondor"
+ decision_harrying_of_the_coasts_tooltip:0 "Lauch a massive invasion and raid of Gondor"
+ decision_harrying_of_the_coasts_desc:0 "PLACEHOLDER - you've been preping, not that way "
+ decision_harrying_of_the_coasts_confirm:0 "Full sail!"
+ decision_harrying_of_the_coasts_tt:0 "You will launch a war for Harondor, in which all occupied counties will loose development and controll"
+ first_fleet:0 "First Fleet - Kas Shadoul"
+ third_fleet:0 "Third Fleet - Kas Marzûk"
 
  ################################
  #### Khand/Variag Decisions ####
@@ -1400,6 +1447,11 @@
  decision_margoz_cleanse_nelornieth_tooltip:0 "Burn Every spirit we find"
  decision_margoz_cleanse_nelornieth_desc:0 "The forest of evil spirits has been cleansed of their taint. The so called "[penni|E]" driven from their hidden abodes within the woods, just as my ancestors did long ago to the [entwives|E]. This land shall take time to heal from their corrupting presence. New settlers from Mistrand and Lest will restore the region in time. Now with my devotion to Kerkassk proven, I can already begin to feel his divine power at work in me. Soon all will fear my power!"
  decision_margoz_cleanse_nelornieth_confirm:0 "I am Szrel the cruel reborn"
+ 
+ decision_fortify_northern_pass:0 "Fortify the Northern Pass"
+ decision_fortify_northern_pass_tooltip:0 "Build a stronghold in the mountain pass leading to [dorwinion|E]"
+ decision_fortify_northern_pass_desc:0 "Beyond the castle of [GetTitleByKey('c_dargeca').GetNameNoTier] lies a mountain pass leading into the lands held by the Men of [GetTitleByKey('k_dorwinion').GetNameNoTier]. While the Men of [dorwinion|E] have often traded with us, they are just as likely to invade our lands if the opportunity arises.\n\nIn order to safeguard against any threat from the north, we should fortify our borders north of Dargeca, building a stronghold right at the exit of the mountain pass - creating an easily defensible chokepoint."
+ decision_fortify_northern_pass_confirm:0 "Begin construction immediately!"
 
  ##############################
  #### Dol Guldur Decisions ####
@@ -1622,14 +1674,27 @@
  
  decision_colonise_erebor:0 "Return to Erebor"
  decision_colonise_erebor_tooltip:0 "Restore the Lonely Mountain"
- decision_colonise_erebor_desc:0 "The Longbeard people have lost home after home. Gunduzbad; The waking spot of Durin. Khazad-Dum; The home our people ruled from under Durin and now Erebor; The Lonely Mountain. \n"
- decision_colonise_erebor_pre_smaug:0 "Ousted from the mountain but never forgetting it. We may have lost Erebor but we will retake it! \n\n"
- decision_colonise_erebor_post_smaug:0 "Ousted from the mountain by Smaug, having lost our home and our King, our spirits are low but we will never forget our mountain. We will retake Erebor! \n\n"
- decision_colonise_erebor_post_thorin:0 "Ousted from Erebor again! We lost our mountain to Smaug and Thorin took it back. Only for us to lose it a second time. But we will not give up! We will retake the Lonely Mountain! \n\n"
- decision_colonise_erebor_outro:0 "We will take back our home! We are the Dwarves of Durin and our King is the King Under the Mountain!"
+ decision_colonise_erebor_desc:0 "The Dwarves of Durin's house have lost home after home. Gunduzbad, the waking spot of Durin. Then we lost Khazad-Dum, the home our people ruled from under Durin, and now we have lost the Lonely Mountain, Erebor, one of our greatest halls. \n"
+ decision_colonise_erebor_pre_smaug:0 "We have been ousted from the Mountain but we have never forgotten it. Erebor is our home, and we shall hold it once more! \n\n"
+ decision_colonise_erebor_post_smaug:0 ""We have been ousted from the Mountain by Smaug the great Fire-Drake. We have lost our home and our King, but we will never forget our mountain. We will retake Erebor! \n\n"
+ decision_colonise_erebor_post_thorin:0 "We have been ousted from the Mountain once more - once by Smaug, and now this! But we will not give up! Erebor is our home, and we shall hold it once more! \n\n"
+ decision_colonise_erebor_outro:0 "We will take back the Lonely Mountain, tallest and grandest of all jewels of the North! We are the Dwarves of Durin's Folk, and our King is the King Under the Mountain!"
  decision_colonise_erebor_confirm:0 "Reclaim the Mountain!"
 
  colonises_erebor:0 "The [GetTitleByKey('b_throne_of_erebor').GetNameNoTier] is reclaimed by you"
+
+ restore_king_title:0 "Reclaim Ancestral Rule"
+ restore_king_title_tooltip:0 "Proclaim Yourself King"
+ restore_king_title_durin:0 "We are the Longbeards, The folk of Durin, our king woke first of all fathers. We ruled from Khazad-dûm to the Grey Mountains, and far-away, to Erebor. Under the line of Durin, my forefathers and their fathers before them, our mansions grew wealthy in gem and hoard, and the very earth marvelled at the riches we had pulled from it and honed to beauty and perfection.\n\nBut though our kingdom may not span the same distance as it once did, the line of Durin holds the title of King of Durin's Folk, no matter where they rule from. I am the heir of Durin - I am King of the Longbeards, and I proclaim it now! I will honour my fallen kin and rule, in all the glory and might of the line of Durin!"
+ restore_king_title_dwalin:0 "We are the Broadbeams, Dwálin's folk, who was renowned for his wisdom and mercy. We rule from Belegost in the Blue Mountains, and long have our crafts been enriched with the arts of Elvenesse - indeed, we have been the friends of the Eldar for many long years.\n\nBut though our Kingdom may be diminished, the line of Dwálin still rules all the Broadbeams, no matter where we dwell. I am the heir of the line of Dwálin, sage and kind in their measure, lord of the Broadbeams and those who have pledged theirselves to my line. I am King of the Broadbeams and I proclaim it now - I shall honour my fallen kin and rule as they have, with compassion and intelligence."
+ restore_king_title_uri:0 "We are the Firebeards, the Dwarves of Úri. Long have we held our memories close, and we have not forgotten the grudges that we hold, and the divisions that once separated us. Our greatest hall was mighty Tumunzahar, Nogrod in the Elvish tongues, though more recently we have ruled from majestic and mighty Buzra-dûm. But though our kingdom may be diminished, and Nogrod lost for many long years, the heir of Úri's folk is the King of all the Firebeards, no matter where they be and which hall they hold. I am the heir of Úri the scarred, King of the Firebeards and I proclaim it now! I will honour those who have fallen, and rule my folk as they were meant to be ruled - never again separated!"
+ restore_king_title_thrar:0 "We are the Blacklocks, servants of the line of Thrár, proudest of all the dwarves. Our hairs are luscious and dark, and our mattocks bite through orc steel and flesh! In elder days, we ruled from Nargubraz, but our folk delved great and greater halls - lost Bizarûldûm and great Mablad-dum, and finally mighty Barazimabûl, in the Yellow Mountains. But though our peoples have been divided and far-flung into east and south, our King is the King of all Blacklocks no matter which corner of Middle-Earth they name home. I am the heir of Thrár and King of the Blacklocks! I will honour my sundered kin and rule in the glory befitting my folk!"
+ restore_king_title_confirm:0 "I am the King of my people!"
+ 
+ decision_uldona_spine_dwarf:0 "Reclaim the Uldona Spine"
+ decision_uldona_spine_dwarf_tooltip:0 "Reestablish the kingdom beneath the peaks of the Uldona Spine"
+ decision_uldona_spine_dwarf_desc:0 "These mountains were once the home of the Ironfists. The Dragons that ousted them and Goblins that pillaged them in have been pushed back, and the Dwarves have returned!"
+ decision_uldona_spine_dwarf_confirm:0 "A Royal hall reclaimed!"
 
  #####################################
  #### Artifact Crafting Decisions ####
@@ -1898,7 +1963,7 @@
  settle_wilderness_county_or_duchy_basic_effect:0 "For every #V 100#! [GetMaA('laamp_settler_maa').GetName] [men_at_arms|E], you will settle #P 1#! [county|E]"
  settle_wilderness_county_or_duchy_current_settle_limit_effect:0 "Current counties that can be settled: #V [GetPlayer.MakeScope.ScriptValue('lotr_settle_wilderness_as_adventurer_county_limit')]#!"
  settle_wilderness_county_or_duchy_destroy_maa_effect:0 "The [GetMaA('laamp_settler_maa').GetName] [men_at_arms|E] will be destroyed!"
- settle_wilderness_county_or_duchy_not_enough_maa_tt:0 "You do not have enough Men-at-Arms"
+ settle_wilderness_county_or_duchy_not_enough_maa_tt:0 "You do not have enough Men-at-Arms\n#low Need at least 300 [GetMaA('laamp_settler_maa').GetName] [men_at_arms|E]#!"
  settle_wilderness_duchy_has_underground_counties:0 "There are underground counties in this [duchy|E] which will #N not#! be settled."
 
  ### start_city_construction_decision
@@ -1994,8 +2059,15 @@
  ### War of the Rohirrim Decisions ###
  #####################################
 
+ decision_wulf_marriage_rohan:0 "Secure the Allegiance of Marshal Thorne"
+ decision_wulf_marriage_rohan_tooltip:0 "Convince Marshal Thorne of your cause to secure his daughter's hand and his allegiance."
+ decision_wulf_marriage_rohan_desc:0 "Among the scattered lords of Rohan, few watch the shifting tides of power as closely as Thorne of the Wold. A marshal of the northern frontier, he is a man of quiet ambition and sharp cunning, his lands rugged and far from the King’s gaze. While his strength is modest, Thorne harbours little love for Helm and has much to gain should the Riddermark fall.\n\nThorne is an opportunist at heart. Should I declare war on Rohan and show the upper hand, he may well defect to my side without further incentive. Yet, I could secure his loyalty now by promising him greater power under my rule and forging a bond through marriage to his family.\n\nLeofwynn, his daughter, is renowned for her beauty. Marrying her would not only win me Thorne’s support but also strengthen my claim to the throne. A Rohirrim bride would quiet doubts among the lords of the Mark, lending my rule the legitimacy of the old bloodlines I seek to reclaim."
+ decision_wulf_marriage_rohan_confirm:0 "Our interests align, how could he say no?"
+#  decision_wulf_marriage_rohan_effects1:0 "#V You#! and #V [GetTitleByKey('k_saralain').GetHolder.GetName]#! start "County Conquest" [wars|E] against his neighbours to secure the #V [GetTitleByKey('d_nen_gwathlo').GetName]#!."
+#  decision_wulf_marriage_rohan_effects2:0 "If successful, you will be given his daughter's hand in [marriage|E], securing an [alliance|E] with the #V [GetTitleByKey('k_saralain').GetName]#!."
+
  decision_wulf_marriage_saralain:0 "Secure an Alliance with the Saralain"
- decision_wulf_marriage_saralain_tooltip:0 "Provide military aid to Adorn of the Saralain to secure his daughter's hand in marriage."
+ decision_wulf_marriage_saralain_tooltip:0 "Provide military aid to Pedrogh of the Saralain to secure his daughter's hand in marriage."
  decision_wulf_marriage_saralain_desc:0 "Uncle Cerith has spoken of his cousin [GetTitleByKey('k_saralain').GetHolder.GetFirstName], lord of the Saralain, and the troubles that press upon him. His ambition is bold - seeking to command both banks of the Gwathló - but his southern neighbours have united, their alliances blocking his path.\n\nIf I were to help him break the deadlock, Cerith believes Pedrogh would grant me his daughter’s hand, sealing an alliance through blood and marriage.\n\nAlthough the Saralain have long been sundered from the Dunlendings, our people share a kindred bond, and there is wisdom in forging alliances both beyond and within."
  decision_wulf_marriage_saralain_confirm:0 "Gather the men, we ride for Súthure!"
  decision_wulf_marriage_saralain_effects1:0 "#V You#! and #V [GetTitleByKey('k_saralain').GetHolder.GetName]#! start "County Conquest" [wars|E] against his neighbours to secure the #V [GetTitleByKey('d_nen_gwathlo').GetName]#!."
