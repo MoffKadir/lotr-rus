@@ -1,16 +1,22 @@
 ﻿l_russian:
+ ###########################
+ ### Bountig Event Chain ###
+ ###########################
 
- ### BOUNTIG EVENTS ###
  bountig_special_raid_for_captives_cb:0 "Налёт на Рохан"
+ bountig_gains_xp_in_special_trait.t:0 "Получен опыт свойства «[GetTrait('bountig_story_trait').GetName( GetNullCharacter )]»"
+ bountig_gains_xp_in_special_trait.desc:0 "Проведя время в провинции [bountig.GetCurrentLocation.GetCounty.GetTitle.GetHolder.GetName], вы получили особый опыт свойства «[GetTrait('bountig_story_trait').GetName( GetNullCharacter )]»"
  #Bountig accepts the contract in the East
  bountig_event_chain.0003.t:0 "Поход на войну"
  bountig_event_chain.0003.desc:0 "Я [Select_CString(ROOT.Char.IsFemale, 'вняла', 'внял' )] призыву и теперь начинаю свой долгий путь на запад. Я оставляю позади свое детство, свою любовь, свою невинность и все, что я когда-либо [Select_CString(ROOT.Char.IsFemale, 'знала', 'знал' )]. Навстречу чему я иду? К славе? К смерти? Или к какой-то другой судьбе, о которой я еще не знаю?"
  bountig_event_chain.0003.a:0 "Только вперёд, другого пути нет."
+ bountig_event_chain.0003.a.tt:0 "Вы отправитесь в столицу персонажа [employer.GetNamePossessive] со своим #high лагерем#!"
 
  #Bountig gets offered land or gold, either ending or boosting his story line
  bountig_event_chain.0005.t:0 "Победа на зеленых равнинах"
- bountig_event_chain.0005.desc:0 "Это было очень непросто, но каким-то образом мы одержали верх. Всадники отступили - хотя со временем, вероятно, вернутся. Мы закрепились на этой земле, и теперь [Select_CString(attacker.IsFemale, 'нанимательница', 'наниматель' )] делит между нами награду. Многие из моих товарищей погибли в бою, но это означает, что те из нас, кто выжил, получат еще большую награду. В знак признания моего мастерства и важной роли [attacker.GetName] [Select_CString(attacker.IsFemale, 'предложила', 'предложил' )] мне выбрать награду. [Select_CString(attacker.IsFemale, 'Она предложила', 'Он предложил' )] мне многое - золото, должность при дворе или даже собственный титул и домен, если я пожелаю."
+ bountig_event_chain.0005.desc:0 "Это было очень непросто, но каким-то образом мы одержали верх. Всадники отступили - хотя со временем, вероятно, вернутся. Мы закрепились на этой земле, и теперь [Select_CString(attacker.IsFemale, 'нанимательница', 'наниматель' )] делит между нами награду. Многие из моих товарищей погибли в бою, но это означает, что те из нас, кто выжил, получат еще большую награду.\n\nВ знак признания моего мастерства и важной роли [attacker.GetName] [Select_CString(attacker.IsFemale, 'предложила', 'предложил' )] мне выбрать награду. [Select_CString(attacker.IsFemale, 'Она предложила', 'Он предложил' )] мне многое - золото, должность при дворе или даже собственный титул и домен, если я пожелаю."
  bountig_event_chain.0005.a:0 "Золото и слава - это всего лишь средства для достижения великой цели."
+ bountig_event_chain.0005.a.tt:0 "Вы отправитесь в столицу персонажа [GetTitleByKey('c_minas_tirith').GetHolder.GetNamePossessive] со своим #high лагерем#!"
  bountig_event_chain.0005.b:0 "Здесь я обрету новый дом."
  bountig_event_chain.0005.b.tt:0 "#N Это завершит сюжет персонажа [bountigmedlokan.GetName]!#!"
 
@@ -27,10 +33,10 @@
  bountig_event_chain.0011.a.tt:0 "Отправиться в провинцию [gondor_ruler.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier]"
 
  #Bountig arrives in Minas Tirith
- bountig_event_chain.0012.t:0 "Temp Title"
- bountig_event_chain.0012.desc:0 "Temp Desc"
- bountig_event_chain.0012.a:0 "Option A"
- bountig_event_chain.0012.b:0 "Option B"
+ bountig_event_chain.0012.t:0 "Странный край"
+ bountig_event_chain.0012.desc:0 "Несмотря на весь ужас, мне удалось попасть в земли юга, избежав встречи со всадниками зеленых равнин. Как гласят легенды, многие из здешних жителей действительно высоки ростом, некоторые из них на голову и плечи выше меня. Однако я не [Select_CString(ROOT.Char.IsFemale, 'нашла', 'нашёл' )] здесь ни одного демона. Их языки странные, и я пока не понимаю их. Но, похоже, они едят пищу, смеются и плачут, как и мои соплеменники. Но на этом сходство заканчивается. Большие каменные дома стоят вдоль дорог, вымощенных камнем. Богатые рынки оглашаются криками торговцев. И все же среди них я не вижу ни одного оружия, хотя изредка встречаются стражники и солдаты в царственном серебре, стоящие на страже.\n\nЧестно говоря, это ошеломляет. Я [Select_CString(ROOT.Char.IsFemale, 'видела', 'видел' )] здесь больше богатств, чем за все свои дни, и это еще до того, как я [Select_CString(ROOT.Char.IsFemale, 'вошла', 'вошел' )] в ворота великих городов, которые я [Select_CString(ROOT.Char.IsFemale, 'видела', 'видел' )] издалека! Хотя некоторые смотрят на меня с опаской, другие не обращают на меня внимания, и поэтому я могу пройти без вреда.\n\nЧерез несколько дней мне удается встретить торговца, который знает мой язык (хотя бы приблизительно) и готов сообщить мне, есть ли работа, которая может мне помочь. Пока я жду его слов, мой разум с удивлением разглядывает окружающие меня земли - возможно, мне всегда было суждено прийти сюда. У меня такое чувство, будто мои глаза открылись, и передо мной лежит целый мир."
+ bountig_event_chain.0012.a:0 "Я продолжу путь - уже не в страхе, а с рвением к будущему."
+ bountig_event_chain.0012.a.tt:0 "Я увижу все чудеса этого огромного мира.\n#weak #P Оставаясь в империи, в которую вы прибыли, вы будете медленно набирать опыт в соответствующих путях развития свойства «[GetTrait('bountig_story_trait').GetName( GetNullCharacter )]».\n\nПокинув империю, вы больше #high не сможете#! получать опыт!#!#!\n"
 
 
  ### KHAND & OVATHA EVENTS ###
@@ -65,3 +71,31 @@
  bountig_event_chain.5006.desc:0 "Ваши запугивания и подкуп станут вашей погибелью. Мы отвергаем ваши притязания и останемся независимыми."
  bountig_event_chain.5006.a:0 "Если перо не убедит их, то меч..."
  bountig_event_chain.5006.b:0 "Мне не нужны эти никчемные глупцы."
+
+ bountig_event_chain.5007.t:0 "Our Fears Come To Pass"
+ bountig_event_chain.5007.desc:0 "Terrible news reaches my court from the north. As I predicted, the enigmatic [bountigmedlokan.GetFirstName]'s message has spread ever farther. It appears my peaceful overtures to my neighbors have caused alarm in [rhun|E], and more lords have flocked to [bountigmedlokan.GetHisHer] banner. Now the Easterlings have begun to put aside their differences, inaugurating their Grand Alliance.\n\nIf I do not act now, the northern savages will start attacking our enterprising travelers, and ignoring our tolls and the rightful tribute we are owed!\n\nI find new resolve as I raise myself from my throne. I have united [GetTitleByKey('k_upper_khand').GetNameNoTier]. My will and determination are as strong as ever. The task to save my people is mine!\n\nI will set out to rally all of [GetTitleByKey('e_khand').GetNameNoTier] into a single realm, able to sweep away the Easterlings like leaves in the wind!"
+ bountig_event_chain.5007.a:0 "I will call all Khandish men to my banner!"
+ bountig_event_chain.5007.a.tt:0 "Unlocks a [decision] to unite all of [GetTitleByKey('e_khand').GetNameNoTier] in your name"
+
+ bountig_event_chain.5008.t:0 "The High King of Khand"
+ bountig_event_chain.5008.desc:0 "To my surprise, swaying the remaining independent rulers of [GetTitleByKey('e_khand').GetNameNoTier] to join my cause proved to be easier than anticipated. All have since heard of the meteoric rise of [bountigmedlokan.GetFirstName] and his Grand Alliance, and most of them understand what threat now looms on our northern borders.\n\nThey have bent the knee before me, confirming me as the sole ruler of all of Khand! And I shall not forget my promises to them; I shall lead them to glorious victory! Gold and plunder shall flow as it has the past two centuries, and [rhun|E] shall remember its place - beneath the hoof of [GetTitleByKey('e_khand').GetNameNoTier]!\n\nAs it befits my new rank, there is only one name for me to adopt upon accepting the crown..."
+ bountig_event_chain.5008.a:0 "#Italic I am Ovatha reborn!#!"
+ bountig_event_chain.5008.a.tt:0 "You will demand fealty from the rulers of [GetTitleByKey('e_khand').GetNameNoTier]"
+
+ bountig_event_chain.5009.opening:0 "Noble Lord of [GetTitleByKey('e_khand').GetNameNoTier],"
+ bountig_event_chain.5009.desc:0 "It is with a heavy heart that I pen this missive. The threat from the north grows with every passing day, and soon the savage Easterlings will unite and make slaves of our wives and children - if we do not defeat them first!\n\nBut together we can avert this terrible fate. Swear your fealty to me and I shall grant you protection and keep your lands and loved ones safe!"
+ bountig_event_chain.5009.a:0 "You have my sword, my liege."
+ bountig_event_chain.5009.b:0 "I will be fine on my own."
+  
+ bountig_event_chain.5010.opening:0 "My Valorous Liege,"
+ bountig_event_chain.5010.desc:0 "Your claim is just and your goals are noble. Together, we shall throw the barbaric Easterlings into the [seaofrhun|E]!"
+ bountig_event_chain.5010.a:0 "Excellent."
+
+ bountig_event_chain.5011.opening:0 "False Pretender,"
+ bountig_event_chain.5011.desc:0 "Your fearmongering and bribery will be your doom. We reject your claim and will remain independent."
+ bountig_event_chain.5011.a:0 "If the pen won't convince them, the sword might..."
+ bountig_event_chain.5011.b:0 "I have no need of these worthless fools."
+
+ bountig_event_chain.5012.t:0 "The Final Foray"
+ bountig_event_chain.5012.desc:0 "The time has come! The united armies of [GetTitleByKey('e_khand').GetNameNoTier] march at my command; and they shall march north into [rhun|E] in a preemptive strike against [bountigmedlokan.GetName] and his followers.\n\nHarden your hearts, men! Show no quarter, for none will be given to you! We will drive the Easterlings before us until they are swept into the [seaofrhun|E] and meet their end beneath the waves! Burn every village, town and castle, and spare only those who yield their weapons! We will neither rest nor falter until their Grand Alliance is broken, and [GetTitleByKey('e_rhun') remembers it's place beneath [GetTitleByKey('e_khand').GetNameNoTier]!"
+ bountig_event_chain.5012.a:0 "We must be as lions who tear apart their prey."
