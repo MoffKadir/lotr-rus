@@ -1,11 +1,11 @@
 ﻿l_russian: 
 
- lotr_laamp_1001: "Выследить лазутчиков"
+ lotr_laamp_1001_contract: "Выследить лазутчиков"
  lotr_laamp_1001_desc_title: "Именитым бойцам,"
  lotr_laamp_1001_desc: "[TaskContract.GetTarget.GetPrimaryTitle.GetNameNoTierNoTooltip] страдает от выживших вражеских лазутчиков, сеющих ужас и хаос. Любой, кто захочет уничтожить их, будет вознаграждён."
  lotr_laamp_1001_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы [Concept('travel', 'отправились')|E] в [Concept('counties', 'графства')|E] [Concept('contractor_possessive', 'заказчика')|E] с уцелевшим вражеским населением"
 
- lotr_laamp_contract_schemes.1001.t: "$contract_event_prefix$ $lotr_laamp_1001$"
+ lotr_laamp_contract_schemes.1001.t: "$contract_event_prefix$ $lotr_laamp_1001_contract$"
  lotr_laamp_contract_schemes.1001.desc: "[task_contract_councillor.GetName], [task_contract_councillor_liege.GetPrimaryTitle.GetNameNoTierPossessive]ий [task_contract_councillor.GetCouncilTitle|l], гостит в моём лагере целый день. Как только мы остаёмся одни, [task_contract_councillor.GetSheHe] начинает бормотать.\n\n«Стыдно признаться... но мне нужна ваша помощь, чтобы разобраться с хаосом во владении [task_contract_destination.GetName]». [task_contract_councillor.GetCouncilTitle] хмыкает и хмурится.\n\n"
  lotr_laamp_contract_schemes.1001.desc_orcs: "«Орки продолжают жечь и грабить поселения, как только наши воины отходят!»"
  lotr_laamp_contract_schemes.1001.desc_elves: "«Фэй приходят по ночам, их глаза сверкают ужасным светом. Многие наши воины и командиры были обнаружены со стрелой, торчащей из глаза, или с кинжалом в шее!»"
@@ -21,7 +21,6 @@
  lotr_laamp_contract_schemes.1002.b: "Мы будем следовать тонкому подходу."
  lotr_laamp_contract_schemes.1002.a_win: "Вы поможете обеспечить присутствие персонажа [task_contract_councillor.GetCouncilTitleFirstNamePossessive]"
  lotr_laamp_contract_schemes.1002.a_lose: "Но вам придётся оставить немало [Select_CString(ROOT.Char.IsFemale, 'женщин', 'мужчин' )]"
- #every_lowborn_follower: "Каждый [Concept('lowborn', 'низкородный')|E] [Concept('follower', 'спутник')|E]" #Already defined in vanilla
  lotr_laamp_contract_schemes.1003.t: "$lotr_laamp_contract_schemes.1001.t$"
  lotr_laamp_contract_schemes.1003.desc: "Когда изнурительные усилия по выслеживанию разбойников завершены, мы снова отправляемся в путь. [task_contract_councillor.GetName] говорит о нашем следующем пункте назначения.\n\n«Мы отправимся во владение [corrupt_province.GetName], к добру или к худу. Местные главари вызывают серьёзные опасения»."
  lotr_laamp_contract_schemes.1003.desc_orcs: "$lotr_laamp_contract_schemes.1001.desc_orcs$"
@@ -149,19 +148,19 @@
  lotr_bountig_story_eastern_rhovanion_war_request: "Этот [Concept('task_contract', 'контракт')|E] потребует от вас помощи в [Concept('war', 'войне')|E]"
 
  lotr_bountig_story_gondor_cities_contract: "$lotr_bountig_story_gondor_cities$"
- lotr_bountig_story_gondor_cities: "Title"
- lotr_bountig_story_gondor_cities_desc: "Description"
+ lotr_bountig_story_gondor_cities: "Исследовать регион [TaskContract.GetTaker.MakeScope.Var('gondor_target_province').Province.GetName]"
+ lotr_bountig_story_gondor_cities_desc: "В этих далёких землях, далёких от моей родины, есть бесчисленное множество новых мест, которые можно увидеть, и впечатлений, которые можно получить. До меня дошли слухи о регионе [TaskContract.GetTaker.MakeScope.Var('gondor_target_province').Province.GetName] - похоже, там есть работа, достаточная, чтобы прокормить меня какое-то время. Это может быть ценно для меня и в других отношениях..."
  lotr_bountig_story_gondor_cities_desc_title: "$lotr_bountig_story_gondor_cities$"
- lotr_bountig_story_gondor_cities_request: "What does contract do"
+ lotr_bountig_story_gondor_cities_request: "$lotr_bountig_story_gondor_cities$"
 
  lotr_bountig_story_harwan_cities_contract: "$lotr_bountig_story_harwan_cities$"
- lotr_bountig_story_harwan_cities: "Title"
+ lotr_bountig_story_harwan_cities: "Исследовать регион [TaskContract.GetTaker.MakeScope.Var('harwan_target_province').Province.GetName]"
  lotr_bountig_story_harwan_cities_desc: "Description"
- lotr_bountig_story_harwan_cities_desc_title: "$lotr_bountig_story_gondor_cities$"
+ lotr_bountig_story_harwan_cities_desc_title: "$lotr_bountig_story_harwan_cities$"
  lotr_bountig_story_harwan_cities_request: "What does contract do"
 
  lotr_bountig_story_umbar_cities_contract: "$lotr_bountig_story_umbar_cities$"
- lotr_bountig_story_umbar_cities: "Title"
+ lotr_bountig_story_umbar_cities: "Исследовать регион [TaskContract.GetTaker.MakeScope.Var('umbar_target_province').Province.GetName]"
  lotr_bountig_story_umbar_cities_desc: "Description"
- lotr_bountig_story_umbar_cities_desc_title: "$lotr_bountig_story_gondor_cities$"
+ lotr_bountig_story_umbar_cities_desc_title: "$lotr_bountig_story_umbar_cities$"
  lotr_bountig_story_umbar_cities_request: "What does contract do"
