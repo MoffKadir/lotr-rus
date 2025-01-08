@@ -376,6 +376,12 @@
  decision_integrate_the_northern_provinces_tooltip:0 "Включить северные пустоши в свои де-юре территории"
  decision_integrate_the_northern_provinces_confirm:0 "От Форохеля до Фородвайта!"
 
+ decision_rivendell_arassuil:0 "Обратиться за советом к Эльронду"
+ decision_rivendell_arassuil_tooltip:0 "Отправиться в Последний домашний приют Эльронда Полуэльфа"
+ decision_rivendell_arassuil_desc:0 "Настали тёмные времена. Орки Мглистых гор размножились в своих темных пещерах и теперь достаточно смелы, чтобы совершать дерзкие набеги в [eriador|E].\n\nВо главе этих тварей стоит особенно хитрый и жестокий вождь. Если мы хотим устроить ловушку для нашего врага, мы можем попросить помощи у [Concept('elves', 'эльфов')|E] [Concept('imladris', 'Имладриса')|E], где живёт Эльронд Полуэльф, давний друг [Concept('dunedainnorth', 'дунэдайн Севера')|E]."
+ decision_rivendell_arassuil_confirm:0 "Пересечём Бруинен."
+ decision_rivendell_arassuil.tt:0 "Вы отправитесь в Ривенделл"
+
  ### Reunited Kingdom Decision Subset ###
 
  decision_reunited_kingdom:0 "Провозгласить Воссоединённое королевство"
@@ -1017,6 +1023,14 @@
  ################################
  ####### Tedjin Decisions #######
  ################################
+
+ decision_found_tedjin_confederacy:0 "Объединить народ теджин"
+ decision_found_tedjin_confederacy_tooltip:0 "Объединить теджин под одним знаменем"
+ decision_found_tedjin_confederacy_desc:0 ""
+ decision_found_tedjin_confederacy_confirm:0 "Над теджин восходит новый день."
+ found_tedjin_confederacy_tt:0 "Все теджинские правители в регионе [GetGeographicalRegion('custom_reform_tedjin_confederacy').GetName]:\n$BULLET_WITH_TAB$В настоящее время #V [GetPlayer.MakeScope.ScriptValue('lotr_form_tedjin_confederacy_total_convinced')]#! из #V [GetPlayer.MakeScope.ScriptValue('lotr_form_tedjin_confederacy_total')]#! удовлетворяют этим требованиям\n$BULLET_WITH_TAB$Одно из следующего:\n$TAB$$BULLET_WITH_TAB$Является #V вашим#! [Concept('friend', 'другом')|E]\n$TAB$$BULLET_WITH_TAB$Является #V вашим#! [Concept('ally', 'союзником')|E]\n$TAB$$BULLET_WITH_TAB$Находится под #V вашим#! [Concept('hooked', 'влиянием')|E]"
+ found_tedjin_confederacy.effect1:0 "Все [Concept('independent', 'независимые')|E] теджинские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами."
+ found_tedjin_confederacy.effect2:0 "#V Все [Concept('independent', 'независимые')|E] теджинские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами:#!"
 
  decision_refound_qadjajar:0 "Восстановить Каджаджарский катаджат"
  decision_refound_qadjajar_tooltip:0 "Привести северный Беллакар под власть теджин и восстановить павший Каджаджарский катаджат"
@@ -2170,10 +2184,12 @@
  decision_wulf_declare_king_of_dunland.effect1:0 "Все [Concept('independent', 'независимые')|E] дунландские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами."
  decision_wulf_declare_king_of_dunland.effect2:0 "#V Все [Concept('independent', 'независимые')|E] дунландские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами:#!"
  decision_wulf_declare_king_of_dunland_confirm:0 "Наше время настало!"
- is_friends_with_wulf:0 "Является #V вашим#! [Concept('friend', 'другом')|E]"
- is_an_ally_of_wulf:0 "Является #V вашим#! [Concept('ally', 'союзником')|E]"
- is_hooked_by_wulf:0 "Находится под #V вашим#! [Concept('hooked', 'влиянием')|E]"
+ is_friends_with_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('friend', 'другом')|E]"
+ is_lovers_with_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('lover', 'любовником')|E]"
+ is_an_ally_of_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('ally', 'союзником')|E]"
+ is_hooked_by_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] находится под #V вашим#! [Concept('hooked', 'влиянием')|E]"
  is_wulf:0 "Это #V вы#!"
+ is_not_daen_lintis:0 "Не разделяет [Concept('cultural', 'культурное')|E] [Concept('heritage', 'наследие')|E] с дунландцами"
 
  decision_wulf_conversion:0 "Вопрос веры"
  decision_wulf_conversion_tooltip:0 "Принять одну из главенствующих конфессий Дунланда в ходе грандиозного публичного ритуала обращения или подтвердить свою приверженность верованиям рохиррим."
