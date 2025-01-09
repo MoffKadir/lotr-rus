@@ -1524,17 +1524,17 @@
  decision_fortify_northern_pass_desc:0 "За замком [GetTitleByKey('c_dargeca').GetNameNoTier] лежит горный перевал, ведущий в земли, принадлежащие людям [GetTitleByKey('k_dorwinion').GetNameNoTier]а. Хотя люди [Concept('dorwinion', 'Дорвиниона')|E] часто торговали с нами, с такой же вероятностью они вторгнутся в наши земли, если представится возможность.\n\nЧтобы защититься от любой угрозы с севера, мы должны укрепить наши границы к северу от Даргеки, построив крепость прямо на выходе из горного перевала, создав легко обороняемую точку пересечения."
  decision_fortify_northern_pass_confirm:0 "Немедленно начать строительство!"
 
- decision_return_to_mistrand: "Title"
- decision_return_to_mistrand_tooltip: "Tooltip"
- decision_return_to_mistrand_desc: "Desc"
- decision_return_to_mistrand_confirm: "Confirm"
+ decision_return_to_mistrand: "Return to Mistrand"
+ decision_return_to_mistrand_tooltip: "Return to Mistrand"
+ decision_return_to_mistrand_desc: "Bountig returns to Mistrand"
+ decision_return_to_mistrand_confirm: "Return to Mistrand"
  decision_return_to_mistrand_tt: "Отправиться в провинцию [GetTitleByKey('c_mistrand').GetName] со своим #high лагерем#!"
 
- decision_convince_easterling_lord: ""
- decision_convince_easterling_lord_tooltip: ""
- decision_convince_easterling_lord_desc: ""
- decision_convince_easterling_lord_confirm: ""
- decision_convince_easterling_lord_tt: ""
+ decision_convince_easterling_lord: "Visit an Easterling Lord"
+ decision_convince_easterling_lord_tooltip: "Visit an Easterling Lord"
+ decision_convince_easterling_lord_desc: "You decide to visit an Easterling Lord, to convince them to not wage war against other easterling lords"
+ decision_convince_easterling_lord_confirm: "Visit an Easterling Lord"
+ decision_convince_easterling_lord_tt: "Visit an Easterling Lord"
 
  ##############################
  #### Dol Guldur Decisions ####
@@ -2188,6 +2188,7 @@
  is_lovers_with_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('lover', 'любовником')|E]"
  is_an_ally_of_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('ally', 'союзником')|E]"
  is_hooked_by_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] находится под #V вашим#! [Concept('hooked', 'влиянием')|E]"
+ is_a_tributary_of_wulf:0 "Персонаж является #V вашим#! [Concept('tributary', 'данником')|E]"
  is_wulf:0 "Это #V вы#!"
  is_not_daen_lintis:0 "Не разделяет [Concept('cultural', 'культурное')|E] [Concept('heritage', 'наследие')|E] с дунландцами"
 
@@ -2215,3 +2216,12 @@
  decision_wulf_declare_war_for_rohan_desc:0 "Годы изгнания и борьбы привели меня к этому моменту. Из теней поражения я создал силу, объединив кланы Дунланда под одним знаменем и найдя союзников там, где раньше была только вражда. Пришло время вернуть кровный долг дому Эорла.\n\nЯ видел страдания дунландцев - народа, поколениями раздавленного под пятой рохиррим. Их участь - моя собственная, их раны столь же незаживающие, как и те, что я ношу в себе. Эта война - не просто месть, это война за справедливость, за прекращение их и моей боли.\n\nМои союзники готовы, мои войска в предвкушении, а воля Дунланда остра, как любой клинок. Риддермарк падет, и я возьму его корону - не как захватчик, а как законный правитель."
  decision_wulf_declare_war_for_rohan_confirm:0 "«Никакой пощады! Никакой капитуляции!»"
  wulf_rohan_claim_cb:0 "Мщение"
+
+ decision_wulf_gather_oathsworn_warriors:0 "The Swearing of Oaths"
+ decision_wulf_gather_oathsworn_warriors_tooltip:0 "Invade Rohan to claim its throne and seek vengeance for the death of your father at the hands of Helm."
+ decision_wulf_gather_oathsworn_warriors_desc:0 "The time draws near to confront Rohan, but loyalty must be sealed in blood and stone. The Uchoryow of Dunland will be summoned to ancient runestones, where their ancestors’ deeds are etched into the past, and the old gods of the wild watch in silence.\n\nThere, they will swear on the honour of their forebears, pledging their warriors to my cause and vowing a blood feud against the house of Eorl. Though I am an outsider, this oath binds them to me as they bind themselves to their shared hatred of Rohan.\n\nThe stones will stand as witness to the vows made this day, as will the spirits of their ancestors, and the gods who dwell in the mountains and the wind."
+ decision_wulf_gather_oathsworn_warriors_confirm:0 "Let the stones bear witness."
+ decision_wulf_gather_oathsworn_warriors_effects1:0 "[GetTitleByKey('d_dunlandfells').GetHolder.GetTitledFirstName] will grant you a number of [GetMaA('dunlending_huscarl').GetName] based on [GetTitleByKey('d_dunlandfells').GetHolder.GetHerHis] opinion of you."
+ decision_wulf_gather_oathsworn_warriors_effects2:0 "[GetTitleByKey('d_dunfearan').GetHolder.GetTitledFirstName] will grant you a number of [GetMaA('dunlending_axe_hunters').GetName] based on [GetTitleByKey('d_dunfearan').GetHolder.GetHerHis] opinion of you."
+ decision_wulf_gather_oathsworn_warriors_effects3:0 "[GetTitleByKey('d_dathabha').GetHolder.GetTitledFirstName] will grant you a number of [GetMaA('dunlending_outriders').GetName] based on [GetTitleByKey('d_dathabha').GetHolder.GetHerHis] opinion of you."
+ is_daen_lintis:0 "Shares a [cultural|E] [heritage|E] with the Dunlendings"
