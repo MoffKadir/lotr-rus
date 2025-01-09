@@ -1534,7 +1534,8 @@
  decision_convince_easterling_lord_tooltip: "Visit an Easterling Lord"
  decision_convince_easterling_lord_desc: "You decide to visit an Easterling Lord, to convince them to not wage war against other easterling lords"
  decision_convince_easterling_lord_confirm: "Visit an Easterling Lord"
- decision_convince_easterling_lord_tt: "Visit an Easterling Lord"
+ decision_convince_easterling_lord_tt: "Selected an Easterling Lord to visit"
+ decision_convince_easterling_lord_effect.t1: "Отправиться в столицу персонажа [GetPlayer.MakeScope.Var('selected_character').Char.GetNamePossessive] #bold без#! вашего #V лагеря#!"
 
  ##############################
  #### Dol Guldur Decisions ####
@@ -2217,11 +2218,11 @@
  decision_wulf_declare_war_for_rohan_confirm:0 "«Никакой пощады! Никакой капитуляции!»"
  wulf_rohan_claim_cb:0 "Мщение"
 
- decision_wulf_gather_oathsworn_warriors:0 "The Swearing of Oaths"
- decision_wulf_gather_oathsworn_warriors_tooltip:0 "Invade Rohan to claim its throne and seek vengeance for the death of your father at the hands of Helm."
- decision_wulf_gather_oathsworn_warriors_desc:0 "The time draws near to confront Rohan, but loyalty must be sealed in blood and stone. The Uchoryow of Dunland will be summoned to ancient runestones, where their ancestors’ deeds are etched into the past, and the old gods of the wild watch in silence.\n\nThere, they will swear on the honour of their forebears, pledging their warriors to my cause and vowing a blood feud against the house of Eorl. Though I am an outsider, this oath binds them to me as they bind themselves to their shared hatred of Rohan.\n\nThe stones will stand as witness to the vows made this day, as will the spirits of their ancestors, and the gods who dwell in the mountains and the wind."
- decision_wulf_gather_oathsworn_warriors_confirm:0 "Let the stones bear witness."
- decision_wulf_gather_oathsworn_warriors_effects1:0 "[GetTitleByKey('d_dunlandfells').GetHolder.GetTitledFirstName] will grant you a number of [GetMaA('dunlending_huscarl').GetName] based on [GetTitleByKey('d_dunlandfells').GetHolder.GetHerHis] opinion of you."
- decision_wulf_gather_oathsworn_warriors_effects2:0 "[GetTitleByKey('d_dunfearan').GetHolder.GetTitledFirstName] will grant you a number of [GetMaA('dunlending_axe_hunters').GetName] based on [GetTitleByKey('d_dunfearan').GetHolder.GetHerHis] opinion of you."
- decision_wulf_gather_oathsworn_warriors_effects3:0 "[GetTitleByKey('d_dathabha').GetHolder.GetTitledFirstName] will grant you a number of [GetMaA('dunlending_outriders').GetName] based on [GetTitleByKey('d_dathabha').GetHolder.GetHerHis] opinion of you."
- is_daen_lintis:0 "Shares a [cultural|E] [heritage|E] with the Dunlendings"
+ decision_wulf_gather_oathsworn_warriors:0 "Соблюдение клятв"
+ decision_wulf_gather_oathsworn_warriors_tooltip:0 "Вторгнуться в Рохан, чтобы занять его трон и отомстить за смерть своего отца от рук Хельма."
+ decision_wulf_gather_oathsworn_warriors_desc:0 "Близится время противостояния Рохану, но верность должна быть скреплена кровью и камнем. Укорьовы Дунланда будут призваны к древним рунным камням, где деяния их предков высечены в прошлом, а старые боги дикой природы молча наблюдают за происходящим.\n\nТам они поклянутся честью своих предков, посвятив своих воинов моему делу и поклявшись в кровной мести дому Эорла. Хотя я чужак, эта клятва свяжет их со мной, как они связывают себя общей ненавистью к Рохану.\n\nКамни будут свидетельствовать о клятвах, данных в этот день, как и духи их предков, и боги, обитающие в горах и ветре."
+ decision_wulf_gather_oathsworn_warriors_confirm:0 "Пусть камни будут свидетелями."
+ decision_wulf_gather_oathsworn_warriors_effects1:0 "[GetTitleByKey('d_dunlandfells').GetHolder.GetTitledFirstName] представит вам некоторое количество профессионалов ([GetMaA('dunlending_huscarl').GetName]) в зависимости от своего мнения о вас."
+ decision_wulf_gather_oathsworn_warriors_effects2:0 "[GetTitleByKey('d_dunfearan').GetHolder.GetTitledFirstName] представит вам некоторое количество профессионалов ([GetMaA('dunlending_axe_hunters').GetName]) в зависимости от своего мнения о вас."
+ decision_wulf_gather_oathsworn_warriors_effects3:0 "[GetTitleByKey('d_dathabha').GetHolder.GetTitledFirstName] представит вам некоторое количество профессионалов ([GetMaA('dunlending_outriders').GetName]) в зависимости от своего мнения о вас."
+ is_daen_lintis:0 "Имеет общее [Concept('cultural', 'культурное')|E] [Concept('heritage', 'наследие')|E] с дунландцами"
