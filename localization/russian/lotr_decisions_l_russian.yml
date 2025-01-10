@@ -169,7 +169,7 @@
  decision_retire_to_himring:0 "Вернуться в Химринг"
  decision_retire_to_himring_tooltip:0 "Моя задача выполнена - пришло время вернуться в Химринг"
  decision_retire_to_himring_desc:0 "Я выступил на войну, чтобы победить Тень, и теперь она повержена. Но я устал и изнемог за долгие годы печали, и время и память тяготят меня. Море зовёт меня, хотя путь к нему закрыт! Но на Химринге тихо, ибо там живут воспоминания о давних днях.\n\nСделав свое дело, я вернусь на Химринг, чтобы отдыхать и петь, пока мир не будет уничтожен и отстроен заново, или пока я не развеюсь песней по ветру."
- decision_retire_to_himring_confirm:0 "Нолдолантэ получит ещё один куплет..."
+ decision_retire_to_himring_confirm:0 "[Glossary('Нолдолантэ','noldolante_gloss')] получит ещё один куплет..."
 
  decision_vanquish_sauron_as_valinor:0 "PLACEHOLDER - Attack Sauron as Host of Valinor" #VectorHelp
  decision_vanquish_sauron_as_valinor_tooltip:0 "PLACEHOLDER - Attack Sauron as Host of Valinor" #VectorHelp
@@ -378,9 +378,26 @@
 
  decision_rivendell_arassuil:0 "Обратиться за советом к Эльронду"
  decision_rivendell_arassuil_tooltip:0 "Отправиться в Последний домашний приют Эльронда Полуэльфа"
- decision_rivendell_arassuil_desc:0 "Настали тёмные времена. Орки Мглистых гор размножились в своих темных пещерах и теперь достаточно смелы, чтобы совершать дерзкие набеги в [eriador|E].\n\nВо главе этих тварей стоит особенно хитрый и жестокий вождь. Если мы хотим устроить ловушку для нашего врага, мы можем попросить помощи у [Concept('elves', 'эльфов')|E] [Concept('imladris', 'Имладриса')|E], где живёт Эльронд Полуэльф, давний друг [Concept('dunedainnorth', 'дунэдайн Севера')|E]."
+ decision_rivendell_arassuil_desc:0 "Настали тёмные времена. [Concept('orcs', 'Орки')|E] [Concept('mistymountains', 'Мглистых гор')|E] размножились в своих темных пещерах и теперь достаточно смелы, чтобы совершать дерзкие набеги в [eriador|E].\n\nВо главе этих тварей стоит особенно хитрый и жестокий вождь. Если мы хотим устроить ловушку для нашего врага, мы можем попросить помощи у [Concept('elves', 'эльфов')|E] [Concept('imladris', 'Имладриса')|E], где живёт Эльронд Полуэльф, давний друг [Concept('dunedainnorth', 'дунэдайн Севера')|E]."
  decision_rivendell_arassuil_confirm:0 "Пересечём Бруинен."
  decision_rivendell_arassuil.tt:0 "Вы отправитесь в Ривенделл"
+
+ decision_deal_with_azog_arassuil:0 "Ответить на угрозу орков"
+ decision_deal_with_azog_arassuil_tooltip:0 "Решить, как ответить на угрозу [Concept('orcs', 'орков')|E] [Concept('mistymountains', 'Мглистых гор')|E]."
+ decision_deal_with_azog_arassuil_desc:0 "Мирным народам [Concept('eriador', 'Эриадора')|E] грозит серьёзная опасность со стороны [Concept('orcs', 'орков')|E] [Concept('mistymountains', 'Мглистых гор')|E], которые, кажется, становятся все смелее с каждым днем. Теперь, когда я [Select_CString(ROOT.Char.IsFemale, 'выяснила', 'выяснил' )], кто их возглавляет, я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] решить, как ответить на эту угрозу.\n\nПо совету владыки Эльронда из [Concept('imladris', 'Имладриса')|E] передо мной открывается множество путей. Я не могу медлить долго, чтобы этот враг не стал силой, превосходящей мои возможности."
+ decision_deal_with_azog_arassuil_confirm:0 "Я знаю, какой путь мне предстоит пройти."
+ arassuil_lay_a_trap:0 "Устроить ловушку"
+ arassuil_lay_a_trap_tooltip:0 "Мы, [dunedainnorth|El], знаем дебри [Concept('eriador', 'Эриадора')|E] как никто другой. Если мы предоставим предводителю орков достаточную приманку, то сможем выманить его из пещеры и заманить в ловушку на открытом месте, где его можно будет убить. \n\n#N Этот выбор станет испытанием ваших навыков интриг.#!"
+ arassuil_lay_a_trap_desc:0 "$arassuil_lay_a_trap_tooltip$"
+ arassuil_face_the_long_dark:0 "Столкнуться с долгой тьмой"
+ arassuil_face_the_long_dark_tooltip:0 "[Concept('orcs', 'Орки')|E] кишат в тёмных залах [Concept('moria', 'Мории')|E]. И все же, возможно, нам удастся проникнуть в эту тьму и сразить их предводителя в решающем поединке. Если мы сможем открыть западные ворота [Concept('khazaddum', 'Кхазад-дума')|E], то вызов будет брошен, и поединок состоится.\n\n#N Этот выбор станет испытанием вашей доблести.#!"
+ arassuil_face_the_long_dark_desc:0 "$arassuil_face_the_long_dark_tooltip$"
+ arassuil_start_war:0 "Созвать знамёна"
+ arassuil_start_war_tooltip:0 "У нас мало людей, готовых отправиться на войну, но мы не лишены союзников. Если мы сможем убедить эльфов [Concept('imladris', 'Имладриса')|E] и [Concept('lorien', 'Лориэна')|E] присоединиться к нам в этом начинании, то, возможно, нам даже удастся очистить [Concept('moria', 'Морию')|E] от присутствия орков - по крайней мере, на время.\n\n#N Этот выбор станет испытанием ваших навыков военного дела.#!"
+ arassuil_start_war_desc:0 "$arassuil_start_war_tooltip$"
+ arassuil_lay_a_trap_tt:0 "Вы попытаетесь выманить вождя орков на открытое пространство"
+ arassuil_face_the_long_dark_tt:0 "Вы отправитесь к западным воротам [Concept('moria', 'Мории')|E], чтобы бросить вызов предводителю орков"
+ arassuil_start_war_desc_tt:0 "Ваша цель - изгнать орков из их залов"
 
  ### Reunited Kingdom Decision Subset ###
 
@@ -1395,6 +1412,11 @@
  decision_eotheod_confirm:0 "Вперёд, фрамлинги!"
 
  decision_eotheod.langwell_renamed_eotheod:0 "[GetTitleByKey('k_langwell').GetName] будет переименовано в Королевство эотеод"
+
+ decision_integrate_twainmantle:0 "Интегрировать Твейнмантл"
+ decision_integrate_twainmantle_tooltip:0 "Полностью интегрировать северные предгорья в свое королевство"
+ decision_integrate_twainmantle_desc:0 "Веками мы бродили по предгорьям Серых гор, но никогда не претендовали на них. Теперь, когда мы воссоздали свое королевство, мы должны доказать, что наша держава действительно способна существовать!"
+ decision_integrate_twainmantle_confirm:0 "Пусть наши рога отдаются в холмах!"
 
  #############################
  #### Rhovanion Decisions ####
