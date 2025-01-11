@@ -1045,9 +1045,10 @@
  decision_found_tedjin_confederacy_tooltip:0 "Объединить теджин под одним знаменем"
  decision_found_tedjin_confederacy_desc:0 ""
  decision_found_tedjin_confederacy_confirm:0 "Над теджин восходит новый день."
- found_tedjin_confederacy_tt:0 "Все теджинские правители в регионе [GetGeographicalRegion('custom_reform_tedjin_confederacy').GetName]:\n$BULLET_WITH_TAB$В настоящее время #V [GetPlayer.MakeScope.ScriptValue('lotr_form_tedjin_confederacy_total_convinced')]#! из #V [GetPlayer.MakeScope.ScriptValue('lotr_form_tedjin_confederacy_total')]#! удовлетворяют этим требованиям\n$BULLET_WITH_TAB$Одно из следующего:\n$TAB$$BULLET_WITH_TAB$Является #V вашим#! [Concept('friend', 'другом')|E]\n$TAB$$BULLET_WITH_TAB$Является #V вашим#! [Concept('ally', 'союзником')|E]\n$TAB$$BULLET_WITH_TAB$Находится под #V вашим#! [Concept('hooked', 'влиянием')|E]"
- found_tedjin_confederacy.effect1:0 "Все [Concept('independent', 'независимые')|E] теджинские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами."
- found_tedjin_confederacy.effect2:0 "#V Все [Concept('independent', 'независимые')|E] теджинские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами:#!"
+ found_tedjin_confederacy_tt:0 "Все прочие теджинские правители в регионе [GetGeographicalRegion('custom_reform_tedjin_confederacy').GetName]:\n$BULLET_WITH_TAB$В настоящее время #V [GetPlayer.MakeScope.ScriptValue('lotr_form_tedjin_confederacy_total_convinced')]#! из #V [GetPlayer.MakeScope.ScriptValue('lotr_form_tedjin_confederacy_total')]#! удовлетворяют этим требованиям\n$BULLET_WITH_TAB$Одно из следующего:\n$TAB$$BULLET_WITH_TAB$Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('friend', 'другом')|E]$TAB$$BULLET_WITH_TAB$Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('lover', 'любовником')|E]\n$TAB$$TAB$$BULLET_WITH_TAB$Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('ally', 'союзником')|E]\n$TAB$$BULLET_WITH_TAB$Персонаж или его [Concept('regent', 'регент')|E] находится под #V вашим#! [Concept('hooked', 'влиянием')|E]\n$TAB$$BULLET_WITH_TAB$Персонаж является #V вашим#! [Concept('tributary', 'данником')|E]"
+ found_tedjin_confederacy.effect1:0 "Все [Concept('independent', 'независимые')|E] [Concept('friends', 'друзья')|E], [Concept('lovers', 'любовники')|E], [Concept('allies', 'союзники')|E], [Concept('tributaries', 'данники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] с теджинским наследием станут вашими вассалами."
+ found_tedjin_confederacy.effect2:0 "#V Все [Concept('independent', 'независимые')|E] [Concept('friends', 'друзья')|E], [Concept('lovers', 'любовники')|E], [Concept('allies', 'союзники')|E], [Concept('tributaries', 'данники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] с теджинским наследием станут вашими вассалами#!"
+ fervor_nationalist_unity: "Теджин объединились под знаменем Маладума."
 
  decision_refound_qadjajar:0 "Восстановить Каджаджарский катаджат"
  decision_refound_qadjajar_tooltip:0 "Привести северный Беллакар под власть теджин и восстановить павший Каджаджарский катаджат"
@@ -1556,7 +1557,8 @@
  decision_convince_easterling_lord_tooltip: "Visit an Easterling Lord"
  decision_convince_easterling_lord_desc: "You decide to visit an Easterling Lord, to convince them to not wage war against other easterling lords"
  decision_convince_easterling_lord_confirm: "Visit an Easterling Lord"
- decision_convince_easterling_lord_tt: "Selected an Easterling Lord to visit"
+ decision_convince_easterling_lord_tt.1: "Selected an Easterling Lord to visit"
+ decision_convince_easterling_lord_tt.2: "[GetPlayer.MakeScope.Var('selected_character').Char.GetName] is available"
  decision_convince_easterling_lord_effect.t1: "Отправиться в столицу персонажа [GetPlayer.MakeScope.Var('selected_character').Char.GetNamePossessive] #bold без#! вашего #V лагеря#!"
 
  ##############################
