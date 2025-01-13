@@ -148,19 +148,19 @@
  lotr_bountig_story_eastern_rhovanion_war_request: "Этот [Concept('task_contract', 'контракт')|E] потребует от вас помощи в [Concept('war', 'войне')|E]"
 
  lotr_bountig_story_gondor_cities_contract: "$lotr_bountig_story_gondor_cities$"
- lotr_bountig_story_gondor_cities: "Исследовать регион [TaskContract.GetTaker.MakeScope.Var('gondor_target_province').Province.GetName]"
- lotr_bountig_story_gondor_cities_desc: "В этих далёких землях, далёких от моей родины, есть бесчисленное множество новых мест, которые можно увидеть, и впечатлений, которые можно получить. До меня дошли слухи о регионе [TaskContract.GetTaker.MakeScope.Var('gondor_target_province').Province.GetName] - похоже, там есть работа, достаточная, чтобы прокормить меня какое-то время. Это может быть ценно для меня и в других отношениях..."
+ lotr_bountig_story_gondor_cities: "Исследовать регион [SelectLocalization(TaskContract.GetTaker.MakeScope.Var('gondor_target_province').IsSet,TaskContract.GetTaker.MakeScope.Var('gondor_target_province').Province.GetName,'')]"
+ lotr_bountig_story_gondor_cities_desc: "В этих далёких землях, далёких от моей родины, есть бесчисленное множество новых мест, которые можно увидеть, и впечатлений, которые можно получить. До меня дошли слухи о регионе [SelectLocalization(TaskContract.GetTaker.MakeScope.Var('gondor_target_province').IsSet,TaskContract.GetTaker.MakeScope.Var('gondor_target_province').Province.GetName,'')] - похоже, там есть работа, достаточная, чтобы прокормить меня какое-то время. Это может быть ценно для меня и в других отношениях..."
  lotr_bountig_story_gondor_cities_desc_title: "$lotr_bountig_story_gondor_cities$"
  lotr_bountig_story_gondor_cities_request: "$lotr_bountig_story_gondor_cities$"
 
  lotr_bountig_story_harwan_cities_contract: "$lotr_bountig_story_harwan_cities$"
- lotr_bountig_story_harwan_cities: "Исследовать регион [TaskContract.GetTaker.MakeScope.Var('harwan_target_province').Province.GetName]"
+ lotr_bountig_story_harwan_cities: "Исследовать регион [SelectLocalization(TaskContract.GetTaker.MakeScope.Var('harwan_target_province').IsSet,TaskContract.GetTaker.MakeScope.Var('harwan_target_province').Province.GetName,'')]"
  lotr_bountig_story_harwan_cities_desc: "Description"
  lotr_bountig_story_harwan_cities_desc_title: "$lotr_bountig_story_harwan_cities$"
  lotr_bountig_story_harwan_cities_request: "What does contract do"
 
  lotr_bountig_story_umbar_cities_contract: "$lotr_bountig_story_umbar_cities$"
- lotr_bountig_story_umbar_cities: "Исследовать регион [TaskContract.GetTaker.MakeScope.Var('umbar_target_province').Province.GetName]"
+ lotr_bountig_story_umbar_cities: "Исследовать регион [SelectLocalization(TaskContract.GetTaker.MakeScope.Var('umbar_target_province').IsSet,TaskContract.GetTaker.MakeScope.Var('umbar_target_province').Province.GetName,'')]"
  lotr_bountig_story_umbar_cities_desc: "Description"
  lotr_bountig_story_umbar_cities_desc_title: "$lotr_bountig_story_umbar_cities$"
  lotr_bountig_story_umbar_cities_request: "What does contract do"
