@@ -169,7 +169,7 @@
  decision_retire_to_himring:0 "Вернуться в Химринг"
  decision_retire_to_himring_tooltip:0 "Моя задача выполнена - пришло время вернуться в Химринг"
  decision_retire_to_himring_desc:0 "Я выступил на войну, чтобы победить Тень, и теперь она повержена. Но я устал и изнемог за долгие годы печали, и время и память тяготят меня. Море зовёт меня, хотя путь к нему закрыт! Но на Химринге тихо, ибо там живут воспоминания о давних днях.\n\nСделав свое дело, я вернусь на Химринг, чтобы отдыхать и петь, пока мир не будет уничтожен и отстроен заново, или пока я не развеюсь песней по ветру."
- decision_retire_to_himring_confirm:0 "Нолдолантэ получит ещё один куплет..."
+ decision_retire_to_himring_confirm:0 "[Glossary('Нолдолантэ','noldolante_gloss')] получит ещё один куплет..."
 
  decision_vanquish_sauron_as_valinor:0 "PLACEHOLDER - Attack Sauron as Host of Valinor" #VectorHelp
  decision_vanquish_sauron_as_valinor_tooltip:0 "PLACEHOLDER - Attack Sauron as Host of Valinor" #VectorHelp
@@ -375,6 +375,29 @@
  decision_integrate_the_northern_provinces_desc:0 "Самый дальний север лишь номинально входил в состав Северного королевства, а после Войны Последнего союза у Арнора не хватило сил заявить о своих притязаниях. Именно в этом вакууме Король-чародей создал ужасающее королевство Ангмар.\n\nЕсли северные пустоши наконец-то окажутся под контролем дунэдайн, их можно будет подчинить Скипетру как в теории, так и на практике, а любая угроза с севера будет отведена навеки."
  decision_integrate_the_northern_provinces_tooltip:0 "Включить северные пустоши в свои де-юре территории"
  decision_integrate_the_northern_provinces_confirm:0 "От Форохеля до Фородвайта!"
+
+ decision_rivendell_arassuil:0 "Обратиться за советом к Эльронду"
+ decision_rivendell_arassuil_tooltip:0 "Отправиться в Последний домашний приют Эльронда Полуэльфа"
+ decision_rivendell_arassuil_desc:0 "Настали тёмные времена. [Concept('orcs', 'Орки')|E] [Concept('mistymountains', 'Мглистых гор')|E] размножились в своих темных пещерах и теперь достаточно смелы, чтобы совершать дерзкие набеги в [eriador|E].\n\nВо главе этих тварей стоит особенно хитрый и жестокий вождь. Если мы хотим устроить ловушку для нашего врага, мы можем попросить помощи у [Concept('elves', 'эльфов')|E] [Concept('imladris', 'Имладриса')|E], где живёт Эльронд Полуэльф, давний друг [Concept('dunedainnorth', 'дунэдайн Севера')|E]."
+ decision_rivendell_arassuil_confirm:0 "Пересечём Бруинен."
+ decision_rivendell_arassuil.tt:0 "Вы отправитесь в Ривенделл"
+
+ decision_deal_with_azog_arassuil:0 "Ответить на угрозу орков"
+ decision_deal_with_azog_arassuil_tooltip:0 "Решить, как ответить на угрозу [Concept('orcs', 'орков')|E] [Concept('mistymountains', 'Мглистых гор')|E]."
+ decision_deal_with_azog_arassuil_desc:0 "Мирным народам [Concept('eriador', 'Эриадора')|E] грозит серьёзная опасность со стороны [Concept('orcs', 'орков')|E] [Concept('mistymountains', 'Мглистых гор')|E], которые, кажется, становятся все смелее с каждым днем. Теперь, когда я [Select_CString(ROOT.Char.IsFemale, 'выяснила', 'выяснил' )], кто их возглавляет, я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] решить, как ответить на эту угрозу.\n\nПо совету владыки Эльронда из [Concept('imladris', 'Имладриса')|E] передо мной открывается множество путей. Я не могу медлить долго, чтобы этот враг не стал силой, превосходящей мои возможности."
+ decision_deal_with_azog_arassuil_confirm:0 "Я знаю, какой путь мне предстоит пройти."
+ arassuil_lay_a_trap:0 "Устроить ловушку"
+ arassuil_lay_a_trap_tooltip:0 "Мы, [dunedainnorth|El], знаем дебри [Concept('eriador', 'Эриадора')|E] как никто другой. Если мы предоставим предводителю орков достаточную приманку, то сможем выманить его из пещеры и заманить в ловушку на открытом месте, где его можно будет убить. \n\n#N Этот выбор станет испытанием ваших навыков интриг.#!"
+ arassuil_lay_a_trap_desc:0 "$arassuil_lay_a_trap_tooltip$"
+ arassuil_face_the_long_dark:0 "Столкнуться с долгой тьмой"
+ arassuil_face_the_long_dark_tooltip:0 "[Concept('orcs', 'Орки')|E] кишат в тёмных залах [Concept('moria', 'Мории')|E]. И все же, возможно, нам удастся проникнуть в эту тьму и сразить их предводителя в решающем поединке. Если мы сможем открыть западные ворота [Concept('khazaddum', 'Кхазад-дума')|E], то вызов будет брошен, и поединок состоится.\n\n#N Этот выбор станет испытанием вашей доблести.#!"
+ arassuil_face_the_long_dark_desc:0 "$arassuil_face_the_long_dark_tooltip$"
+ arassuil_start_war:0 "Созвать знамёна"
+ arassuil_start_war_tooltip:0 "У нас мало людей, готовых отправиться на войну, но мы не лишены союзников. Если мы сможем убедить эльфов [Concept('imladris', 'Имладриса')|E] и [Concept('lorien', 'Лориэна')|E] присоединиться к нам в этом начинании, то, возможно, нам даже удастся очистить [Concept('moria', 'Морию')|E] от присутствия орков - по крайней мере, на время.\n\n#N Этот выбор станет испытанием ваших навыков военного дела.#!"
+ arassuil_start_war_desc:0 "$arassuil_start_war_tooltip$"
+ arassuil_lay_a_trap_tt:0 "Вы попытаетесь выманить вождя орков на открытое пространство"
+ arassuil_face_the_long_dark_tt:0 "Вы отправитесь к западным воротам [Concept('moria', 'Мории')|E], чтобы бросить вызов предводителю орков"
+ arassuil_start_war_desc_tt:0 "Ваша цель - изгнать орков из их залов"
 
  ### Reunited Kingdom Decision Subset ###
 
@@ -1018,6 +1041,15 @@
  ####### Tedjin Decisions #######
  ################################
 
+ decision_found_tedjin_confederacy:0 "Объединить народ теджин"
+ decision_found_tedjin_confederacy_tooltip:0 "Объединить теджин под одним знаменем"
+ decision_found_tedjin_confederacy_desc:0 ""
+ decision_found_tedjin_confederacy_confirm:0 "Над теджин восходит новый день."
+ found_tedjin_confederacy_tt:0 "Все прочие теджинские правители в регионе [GetGeographicalRegion('custom_reform_tedjin_confederacy').GetName]:\n$BULLET_WITH_TAB$В настоящее время #V [GetPlayer.MakeScope.ScriptValue('lotr_form_tedjin_confederacy_total_convinced')]#! из #V [GetPlayer.MakeScope.ScriptValue('lotr_form_tedjin_confederacy_total')]#! удовлетворяют этим требованиям\n$BULLET_WITH_TAB$Одно из следующего:\n$TAB$$BULLET_WITH_TAB$Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('friend', 'другом')|E]$TAB$$BULLET_WITH_TAB$Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('lover', 'любовником')|E]\n$TAB$$TAB$$BULLET_WITH_TAB$Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('ally', 'союзником')|E]\n$TAB$$BULLET_WITH_TAB$Персонаж или его [Concept('regent', 'регент')|E] находится под #V вашим#! [Concept('hooked', 'влиянием')|E]\n$TAB$$BULLET_WITH_TAB$Персонаж является #V вашим#! [Concept('tributary', 'данником')|E]"
+ found_tedjin_confederacy.effect1:0 "Все [Concept('independent', 'независимые')|E] [Concept('friends', 'друзья')|E], [Concept('lovers', 'любовники')|E], [Concept('allies', 'союзники')|E], [Concept('tributaries', 'данники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] с теджинским наследием станут вашими вассалами."
+ found_tedjin_confederacy.effect2:0 "#V Все [Concept('independent', 'независимые')|E] [Concept('friends', 'друзья')|E], [Concept('lovers', 'любовники')|E], [Concept('allies', 'союзники')|E], [Concept('tributaries', 'данники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] с теджинским наследием станут вашими вассалами#!"
+ fervor_nationalist_unity: "Теджин объединились под знаменем Маладума."
+
  decision_refound_qadjajar:0 "Восстановить Каджаджарский катаджат"
  decision_refound_qadjajar_tooltip:0 "Привести северный Беллакар под власть теджин и восстановить павший Каджаджарский катаджат"
  decision_refound_qadjajar_desc:0 "Более 2000 лет назад Каджаджарский катаджат пал перед восставшим Беллакаром. Хотя мы живём в относительном мире с момента его падения, наш народ никогда не достиг процветания и богатства того короткого славного часа, когда весь Беллакар пал перед нашими армиями, и даже Тумаквэ бежали перед нами. Однако теперь мы наконец-то в состоянии вернуть себе наследие давно забытого катаджата и провозгласить восстановленный Каджаджар!"
@@ -1207,13 +1239,58 @@
  decision_demand_orc_submission_tooltip:0 "Все орки преклонят колено или будут уничтожены."
  decision_demand_orc_submission_desc:0 "Мое правление будет абсолютным и неоспоримым. Никто не посмеет выступить против меня, [Select_CString(ROOT.Char.IsFemale, 'повелительницы', 'повелителя' )] всех вершин и пещер!\n\nЯ потребую верности от любого орка, который все еще думает править независимо. Любой, кто осмелится бросить мне вызов, будет уничтожен!"
  decision_demand_orc_submission_confirm:0 "Горы принадлежат МНЕ!"
- decision_demand_orc_submission_is_azog:0 "Вы являетесь Бледным орком"
+ decision_demand_orc_submission_is_azog:0 "Вы являетесь Азогом"
  decision_demand_orc_submission_tt:0 "Все [Concept('orcs', 'орки')|E] в Мглистых горах отреагируют на ваше требование"
+
+ decision_solidify_moria:0 "Укрепить контроль над Морией"
+ decision_solidify_moria_tooltip:0 "Утвердить неоспоримое господство над всей Чёрной Бездной."
+ decision_solidify_moria_desc:0 "PLACEHOLDER I must make sure there are no challengers to my rule."
+ decision_solidify_moria_confirm:0 "Чёрная Бездна - моя!"
+ decision_solidify_moria_tt:0 "Меньшие правители Мории присягнут на верность"
 
  decision_uldona_spine_orc:0 "Претендовать на Ульдонский хребет"
  decision_uldona_spine_orc_tooltip:0 "Создать королевство под вершинами Ульдонского хребта."
  decision_uldona_spine_orc_desc:0 "Эти горы принадлежат нам. Вонючие бородачи, обитавшие здесь, давно испустили последний вздох. Ужасные змеи, драконы, наделенные страшной силой и ужасом, тоже исчезли. Но мы здесь - сражающиеся орки! Мы захватим Ульдонский хребет, и весь Рун будет трепетать перед моей мощью!"
  decision_uldona_spine_orc_confirm:0 "И мы никому не позволим изгнать нас..."
+
+ decision_infiltrate_whitemountains:0 "Проникнуть в Белые горы"
+ decision_infiltrate_whitemountains_tooltip:0 "Послать нескольких своих доверенных лакеев, чтобы они попытались проникнуть в Белые горы."
+ decision_infiltrate_whitemountains_desc:0 "Между землями белокожих и каменным народом находятся Белые горы. Немногие [Concept('orcs', 'орки')|E] когда-либо ступали на эти дикие, нетронутые земли. Кто знает, какие богатства скрываются под их вершинами!\n\nЕсли бы мы создали тайный форпост, мы могли бы начать собирать свои силы там, скрытые от посторонних глаз, пока не будем готовы разграбить богатые земли, лежащие внизу..."
+ decision_infiltrate_whitemountains_confirm:0 "Мы должны быть хитрыми и проворными."
+ decision_infiltrate_whitemountains_tt:0 "Вы попытаетесь тайно отправить кого-нибудь в Белые горы"
+
+ decision_azog_raid_eriador:0 "Устроить налёт на Эриадор"
+ decision_azog_raid_eriador_tooltip:0 "Отправить отряд налётчиков в [eriador|E]."
+ decision_azog_raid_eriador_desc:0 "Земли [Concept('eriador', 'Эриадора')|E] менее населены, чем края к востоку от Мглистых гор, но, в свою очередь, они менее защищены.\n\nЯ отправлю отряд налётчиков, чтобы вырвать все, что можно, у людей, живущих на краю Диких земель!"
+ decision_azog_raid_eriador_confirm:0 "Собрать моих налётчиков!"
+ decision_azog_raid_eriador_tt:0 "Вы выберете цель налёта"
+
+ decision_azog_raid_rhovanion:0 "Устроить налёт на Рованион"
+ decision_azog_raid_rhovanion_tooltip:0 "Отправить отряд налётчиков в Рованион."
+ decision_azog_raid_rhovanion_desc:0 "Земли, лежащие к востоку от Мглистых гор, населены [Concept('elves', 'эльфами')|E] и людьми. Полагаю, там найдется добыча и богатство для любого смелого [Concept('orc', 'орка')|E]!\n\nЯ отправлю отряд налётчиков, чтобы вырвать все, что можно, у обитателей диких земель в Долине Андуина!"
+ decision_azog_raid_rhovanion_confirm:0 "Собрать моих налётчиков!"
+ decision_azog_raid_rhovanion_tt:0 "Вы выберете цель налёта"
+
+ decision_azog_summoned_by_sauron:0 "Внять призыву Тёмного Властелина"
+ decision_azog_summoned_by_sauron_desc:0 "PLACEHOLDER The Necromancer has summoned me to his side in Dol Guldur."
+ decision_azog_summoned_by_sauron_tooltip:0 "Отправиться в Дол Гулдур, чтобы ответить на призов Некроманта"
+ decision_azog_summoned_by_sauron_confirm:0 "Приведите моего варга!"
+ decision_azog_summoned_by_sauron_tt:0 "Вы отправитесь в Дол Гулдур в южном [mirkwood|E]"
+
+ decision_azog_ulukai_search:0 "Найти Улукай"
+ decision_azog_ulukai_search_desc:0 "Улукай, древний и таинственный темный камень, долгое время был символом власти Ашдурбука - истинного лидера Гундабада. Он был утерян на протяжении многих веков.\n\nЕсли самоцвет будет найден, я смогу использовать его, чтобы присвоить себе титул Ашдурбука и укрепить свои притязания на Гундабад..."
+ decision_azog_ulukai_search_tooltip:0 "Начать поиски самоцвета Улукай, давно утраченного во времени."
+ decision_azog_ulukai_search_confirm:0 "Немедленно начать поиски!"
+ decision_azog_ulukai_search_tt:0 "Вы будете искать Улукай, пока он не будет найден"
+ decision_azog_ulukai_short_search:0 "Самоцвет быстро найден"
+ decision_azog_ulukai_medium_search:0 "Поиск занимает некоторое время"
+ decision_azog_ulukai_long_search:0 "Поиски долгие и трудные"
+ decision_azog_ulukai_verylong_search:0 "Вы начинаете бояться, что самоцвет никогда не будет найден"
+
+ decision_azog_claim_final_victory:0 "Завладеть неограниченной властью"
+ decision_azog_claim_final_victory_desc:0 "PLACEHOLDER I have won. None are left to challenge me. I am the Tyrant of the North!"
+ decision_azog_claim_final_victory_tooltip:0 "Пусть все узнают о вашей окончательной победе."
+ decision_azog_claim_final_victory_confirm:0 "Меня ничто не остановит."
 
  ##############################
  #### Near Harad Decisions ####
@@ -1308,6 +1385,20 @@
  decision_unite_upper_khand_ovatha_confirm:0 "Верхний Кханд будет моим!"
  decision_unite_upper_khand_ovatha_tt:0 "Вы потребуете подчинения от властителей Верхнего Кханда"
 
+ decision_ovatha_unite_empire_khand:0 "Объединить вариагов против Руна"
+ decision_ovatha_unite_empire_khand_tooltip:0 "Потребовать подчинения от всех властителей Кханда"
+ decision_ovatha_unite_empire_khand_desc:0 "Наши худшие опасения, кажется, сбываются на наших глазах. Давно разобщенные истерлинги наконец, похоже, отбросили свои разногласия, и в Мистранде зарождается великий союз. Скоро они вспомнят о своей силе, и добыча последних двух столетий будет потеряна для нас!\n\nНо, похоже, мои собратья не видят этого! Поэтому я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] действовать. Я разожгу их гнев и страх, соберу их вместе и положу конец этому союзу прежде, чем он сможет стать чем-то большим! Рун должен запомнить свое положение ниже Кханда!"
+ decision_ovatha_unite_empire_khand_confirm:0 "Все люди Кханда должны объединиться!"
+ decision_ovatha_unite_empire_khand_tt:0 "Вы потребуете подчинения от всех правителей в Кханде"
+
+ decision_ovatha_attack_rhun:0 "Нанести удар по Великому союзу"
+ decision_ovatha_attack_rhun_tooltip:0 "Начать решающую войну, чтобы расколоть Золотое королевство Рун"
+ decision_ovatha_attack_rhun_desc:0 "Наконец-то вариаги прислушались к голосу разума! Наши войска собрались и теперь готовы вновь навести страх на Кханд и Рун. Их так называемый «Великий союз» распадется, когда их вожди падут перед натиском нашей кавалерии!"
+ decision_ovatha_attack_rhun_confirm:0 "Война!"
+ decision_ovatha_attack_rhun_tt:0 "Вы подготовитесь к войне с истерлингами"
+ bountig_and_khand_invasion_war: "Вторжение в [seaofrhun|E]"
+ victory_bountig_and_khand_invasion_war_desc: "Титул Великого альянса уничтожен, и любой мир между истерлингами разрушен."
+ defeat_bountig_and_khand_invasion_war_desc: "[GetTitleByKey('e_khand').GetName] уничтожено, и альянс истерлингов получает возможность создать Медлошукайн."
  ###############################
  #### Anduin Vale Decisions ####
  ###############################
@@ -1324,6 +1415,11 @@
  decision_eotheod_confirm:0 "Вперёд, фрамлинги!"
 
  decision_eotheod.langwell_renamed_eotheod:0 "[GetTitleByKey('k_langwell').GetName] будет переименовано в Королевство эотеод"
+
+ decision_integrate_twainmantle:0 "Интегрировать Твейнмантл"
+ decision_integrate_twainmantle_tooltip:0 "Полностью интегрировать северные предгорья в свое королевство"
+ decision_integrate_twainmantle_desc:0 "Веками мы бродили по предгорьям Серых гор, но никогда не претендовали на них. Теперь, когда мы воссоздали свое королевство, мы должны доказать, что наша держава действительно способна существовать!"
+ decision_integrate_twainmantle_confirm:0 "Пусть наши рога отдаются в холмах!"
 
  #############################
  #### Rhovanion Decisions ####
@@ -1452,6 +1548,20 @@
  decision_fortify_northern_pass_tooltip:0 "Построить крепость на горном перевале, ведущем в [dorwinion|E]"
  decision_fortify_northern_pass_desc:0 "За замком [GetTitleByKey('c_dargeca').GetNameNoTier] лежит горный перевал, ведущий в земли, принадлежащие людям [GetTitleByKey('k_dorwinion').GetNameNoTier]а. Хотя люди [Concept('dorwinion', 'Дорвиниона')|E] часто торговали с нами, с такой же вероятностью они вторгнутся в наши земли, если представится возможность.\n\nЧтобы защититься от любой угрозы с севера, мы должны укрепить наши границы к северу от Даргеки, построив крепость прямо на выходе из горного перевала, создав легко обороняемую точку пересечения."
  decision_fortify_northern_pass_confirm:0 "Немедленно начать строительство!"
+
+ decision_return_to_mistrand: "Вернуться в Мистранд"
+ decision_return_to_mistrand_tooltip: "Вернуться в Мистранд"
+ decision_return_to_mistrand_desc: "Bountig returns to Mistrand"
+ decision_return_to_mistrand_confirm: "Вернуться в Мистранд."
+ decision_return_to_mistrand_tt: "Отправиться в провинцию [GetTitleByKey('c_mistrand').GetName] со своим #high лагерем#!"
+
+ decision_convince_easterling_lord: "Посетить истерлингского властителя"
+ decision_convince_easterling_lord_tooltip: "Посетить истерлингского властителя"
+ decision_convince_easterling_lord_desc: "You decide to visit an Easterling Lord, to convince them to not wage war against other easterling lords"
+ decision_convince_easterling_lord_confirm: "Посетить истерлингского властителя"
+ decision_convince_easterling_lord_tt.1: "Выберите истерлингского властителя для визита"
+ decision_convince_easterling_lord_tt.2: "Персонаж [GetPlayer.MakeScope.Var('selected_character').Char.GetName] доступен"
+ decision_convince_easterling_lord_effect.t1: "Отправиться в столицу персонажа [GetPlayer.MakeScope.Var('selected_character').Char.GetNamePossessive] #bold без#! вашего #V лагеря#!"
 
  ##############################
  #### Dol Guldur Decisions ####
@@ -1691,10 +1801,17 @@
  restore_king_title_thrar:0 "Мы - Черновласы, слуги рода Трара, самого гордого из всех гномов. Наши волосы пышны и темны, а наши мотыги пронзают сталь и плоть орков! В давние времена мы правили из Наргубраза, но наш народ высекал великие и обширные чертоги - затерянный Бизарулдум, великий Маблад-дум и, наконец, могучий Баразимабул в Желтых горах. Но хотя наши народы разделены и разбросаны далеко на восток и юг, [Select_CString(ROOT.Char.IsFemale, 'наша королева - королева', 'наш король - король' )] всех Черновласов, независимо от того, какой уголок Средиземья они называют своим домом. Я - [Select_CString(ROOT.Char.IsFemale, 'наследница', 'наследник' )] Трара и [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] Чернокнижников! Я буду чтить свой разделенный род и править во славе, подобающей моему народу!"
  restore_king_title_confirm:0 "Я - [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] моего народа!"
 
+ cant_give_title:0 "Эти гномьи титулы не могут быть переданы"
+
  decision_uldona_spine_dwarf:0 "Вернуть Ульдонский хребет"
  decision_uldona_spine_dwarf_tooltip:0 "Восстановить королевство под вершинами Ульдонского хребта"
  decision_uldona_spine_dwarf_desc:0 "Когда-то эти горы были домом клана Железноруков. Драконы, изгнавшие гномов, и гоблины, разграбившие чертоги, были оттеснены, и гномы вернулись!"
  decision_uldona_spine_dwarf_confirm:0 "Королевский чертог снова наш!"
+
+ decision_kill_smaug:0 "Вернуть Эребор"
+ decision_kill_smaug_tooltip:0 "Начать экспедицию, чтобы убить Смауга"
+ decision_kill_smaug_desc:0 "Дракон слишком долго пролежал в нашей горе. За это время он, должно быть, ослаб и обленился. Многие признаки указывают на влияние Смауга на горные водопады. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] воспользоваться этим шансом и вернуть себе Одинокую гору!"
+ decision_kill_smaug_confirm:0 "Вернуть Одинокую гору!"
 
  #####################################
  #### Artifact Crafting Decisions ####
@@ -2059,17 +2176,19 @@
  ### War of the Rohirrim Decisions ###
  #####################################
 
- decision_wulf_marriage_dunlending:0 "Усилить позиции в Дунланде"
+ decision_wulf_marriage_dunlending:0 "Попытаться усилить позиции в Дунланде"
  decision_wulf_marriage_dunlending_tooltip:0 "Помочь Эйре из Датхабхы отомстить и взять в жены ее дочь, чтобы получить союзника среди дунландцев."
  decision_wulf_marriage_dunlending_desc:0 "История провинции [GetTitleByKey('d_dathabha').GetNameNoTier] - это история потерь и несправедливости. Когда-то здесь правил Айддан, благородный владыка дунландцев, но его земли пришли в упадок после того, как [GetTitleByKey('c_isengard').GetHolder.GetFirstName] убил его, устроив засаду. Узурпатор теперь правит из башни в уединенной долине [GetTitleByKey('c_isengard').GetNameNoTier]. Он оставил после себя двоих детей - сына, слишком юного, чтобы поднять клинок, и дочь Брину, уже достигшую совершеннолетия. Их мать, [GetTitleByKey('d_dathabha').GetHolder.GetMother.GetFirstName], горит жаждой мести, желая вернуть украденное и увидеть, как Хаэд понесет наказание за свое предательство, но у нее не хватает сил, чтобы довести дело до конца.\n\nПредложив свою поддержку в походе на Изенгард, я мог бы в качестве части сделки потребовать оплот Хаэда себе. Взамен я мог бы заключить союз с Бриной, связав наши роды.\n\nТакой союз укрепил бы мое положение среди дунландцев и закрепил бы оплот на границах Рохана - краеугольный камень моих будущих планов."
  decision_wulf_marriage_dunlending_confirm:0 "Я захвачу Изенгард и получу руку Брины."
+ decision_wulf_marriage_dunlending_effects1:0 "#V Вы#! и #V [GetTitleByKey('d_dathabha').GetHolder.GetName]#! начнёте [Concept('war', 'войну')|E] за завоевание провинций #V [GetTitleByKey('c_riverwatch').GetName]#! и #V [GetTitleByKey('c_isengard').GetName]#!."
+ decision_wulf_marriage_dunlending_effects2:0 "В случае успеха вы получите контроль над провинцией #V [GetTitleByKey('d_isengard').GetName]#! и руку Брины в [Concept('marriage', 'браке')|E], заключив [Concept('alliance', 'союз')|E] с державой #V [GetTitleByKey('d_dathabha').GetName]#!."
 
  decision_wulf_marriage_rohan:0 "Заручиться поддержкой маршала Торна"
  decision_wulf_marriage_rohan_tooltip:0 "Убедить маршала Торна в своей правоте, чтобы добиться руки его дочери и его верности."
- decision_wulf_marriage_rohan_desc:0 "Среди разрозненных властителей Рохана мало кто так внимательно следит за изменчивыми потоками власти, как Торн из Волда. Маршал северной границы - человек тихих амбиций и острой хитрости, его земли суровы и далеки от взора короля. Хотя его силы скромны, Торн не питает особой любви к Хельму и может многое выиграть, если Риддермарк падет.\n\nВ душе Торн - оппортунист. Если я объявлю войну Рохану и одержу верх, он может перейти на мою сторону без дополнительных стимулов. Однако я могу заручиться его лояльностью уже сейчас, пообещав ему большую власть под моим правлением и скрепив узы брака с его семьей.\n\nЛеофвинн, его дочь, славится своей красотой. Женитьба на ней не только заручится поддержкой Торна, но и укрепит мои притязания на трон. Невеста из рохиррим утихомирит сомнения властителей Марки и придаст моему правлению легитимность старых родословных, которые я хочу вернуть."
+ decision_wulf_marriage_rohan_desc:0 "Среди разрозненных властителей Рохана мало кто так внимательно следит за изменчивыми потоками власти, как Торн из Волда. Маршал северной границы - человек тихих амбиций и острой хитрости, его земли суровы и далеки от взора короля. Хотя его силы скромны, Торн не питает особой любви к Хельму и может многое выиграть, если Риддермарк падет.\n\nВ душе Торн - оппортунист. Если я объявлю войну Рохану и одержу верх, он может перейти на мою сторону без дополнительных стимулов. Однако я могу заручиться его лояльностью уже сейчас, пообещав ему большую власть под моим правлением и скрепив узы брака с его семьей.\n\nЛеофвин, его дочь, славится своей красотой. Женитьба на ней не только заручится поддержкой Торна, но и укрепит мои притязания на трон. Невеста из рохиррим утихомирит сомнения властителей Марки и придаст моему правлению легитимность старых родословных, которые я хочу вернуть."
  decision_wulf_marriage_rohan_confirm:0 "Наши интересы совпадают, как он сможет отказать?"
- #decision_wulf_marriage_rohan_effects1:0 "#V You#! and #V [GetTitleByKey('k_saralain').GetHolder.GetName]#! start "County Conquest" [wars|E] against his neighbours to secure the #V [GetTitleByKey('d_nen_gwathlo').GetName]#!."
- #decision_wulf_marriage_rohan_effects2:0 "If successful, you will be given his daughter's hand in [marriage|E], securing an [alliance|E] with the #V [GetTitleByKey('k_saralain').GetName]#!."
+ decision_wulf_marriage_rohan_effects1:0 "#V Вы#! попытаетесь заключить тайный союз с персонажем #V [GetTitleByKey('d_thewold').GetHolder.GetName]#!, который встанет на вашу сторону в будущей войне за Рохан."
+ decision_wulf_marriage_rohan_effects2:0 "В рамках этих переговоров вы можете попытаться жениться на его дочери, Леофвин."
 
  decision_wulf_marriage_saralain:0 "Заключить союз с Саралайном"
  decision_wulf_marriage_saralain_tooltip:0 "Оказать военную помощь Петрогу из Саралайна, чтобы добиться руки его дочери."
@@ -2081,23 +2200,29 @@
  decision_wulf_marriage_eredrim:0 "Заключить союз с эредрим"
  decision_wulf_marriage_eredrim_tooltip:0 "Отправить гонца к Адорну из эредрим, чтобы заручиться его согласием на помолвку с его дочерью."
  decision_wulf_marriage_eredrim_desc:0 "Когда-то мой отец рассказывал об эредрим, гордых горных владыках, обитавших на западных границах его владений. Среди них никто не пользовался таким страхом и уважением, как [GetTitleByKey('d_hairavercien').GetHolder.GetFirstNameNicknamed] - человек огромного роста и непреклонной воли, чье имя известно даже за пределами Белых гор.\n\nУ Адорна есть дочь, юная Ализ, едва вышла детского возраста, но о ней уже говорят как об остроумной и многообещающей силе. Брак с ней - это возможность, а не любовь. Годы, разделяющие нас, и огромные различия в наших путях сделают такой союз непростым.\n\nЗавоевав расположение Адорна, я получу могущественного союзника, но это нелегко. Эредрим глубоко презирают чужаков, а уважение Адорна можно заслужить только через испытания, которые смирили бы меньших людей. Но если я хочу возвыситься, даже на самую высокую гору придется взобраться."
- decision_wulf_marriage_eredrim_confirm:0 "Послать гонца, пусть наденет теплые меха."
- decision_wulf_marriage_eredrim_effects1:0 "#V Вы#! пошлёте гонца к персонажу #V [GetTitleByKey('d_hairavercien').GetHolder.GetName]#! с просьбой о помолвке, хотя, скорее всего, его придётся убеждать."
+ decision_wulf_marriage_eredrim_confirm:0 "Собрать свиту, пусть оденутся потеплее."
+ decision_wulf_marriage_eredrim_effects1:0 "#V Вы#! отправитесь на встречу с персонажем #V [GetTitleByKey('d_hairavercien').GetHolder.GetName]#! с просьбой о помолвке, хотя, скорее всего, его придётся убеждать."
  decision_wulf_marriage_eredrim_effects2:0 "В случае успеха вы получите руку его дочери в [Concept('marriage', 'жёны')|E], закрепив [Concept('alliance', 'союз')|E] с державой #V [GetTitleByKey('d_hairavercien').GetName]#!."
 
  decision_wulf_marriage_hold_out_for_hera:0 "Ждать брака с Герой"
  decision_wulf_marriage_hold_out_for_hera_tooltip:0 "Отказаться от возможности взять жену в пользу брака с Герой"
  decision_wulf_marriage_hold_out_for_hera_desc:0 "Гера, дочь короля #L [GetTitleByKey('k_rohan').GetHolder.GetFirstName]а#!, когда-то была моей самой близкой подругой. В детстве мы вместе играли на золотых полях Марки, и наш смех эхом разносился по холмам. Те дни давно прошли, но воспоминания остались, не тронутые последующими горькими годами. Я до сих пор очень люблю ее, хотя, боюсь, она этого не разделяет.\n\nТеперь между нами огромная пропасть. Ее отец - мой заклятый враг, человек, проливший кровь моего отца. Моя жажда мести мало чем помогла мне в отношениях с ней, и все же я не могу отказаться от надежды, что однажды ее сердце смягчится.\n\nЭтот путь не даст ни союзников, ни силы в настоящем, но жениться на Гере означало бы вступить в брак с самим королевским родом Эорла. Если бы я смог совершить невозможное и добиться ее руки, это дало бы мне легитимность, с которой не сравнится ни клинок, ни войско."
  decision_wulf_marriage_hold_out_for_hera_confirm:0 "Я найду подход к Гере."
+ decision_wulf_marriage_hold_out_for_hera_effects:0 "Вы даете безмолвную клятву отвергнуть любое другое предложение [Concept('marriage', 'брака')|E], чтобы добиться руки Геры, как только вы захватите Рохан."
 
  decision_wulf_declare_king_of_dunland:0 "Объединить дунландцев"
  decision_wulf_declare_king_of_dunland_tooltip:0 "Объединить дунландцев под своим знаменем убеждением или звоном стали."
  decision_wulf_declare_king_of_dunland_desc:0 "Чтобы поставить Рохан на колени, я должен объединить дунландцев - древних врагов Марки, разрозненных и разделённых враждой и старыми обидами.\n\nОни должны встать плечом к плечу, связанные одной целью, будь то убеждение или лязг стали. Только тогда у меня хватит сил бросить вызов Рохану, сокрушить его гордыню и захватить его трон."
+ decision_wulf_declare_king_of_dunland.effect1:0 "Все [Concept('independent', 'независимые')|E] дунландские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами."
+ decision_wulf_declare_king_of_dunland.effect2:0 "#V Все [Concept('independent', 'независимые')|E] дунландские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами:#!"
  decision_wulf_declare_king_of_dunland_confirm:0 "Наше время настало!"
- is_friends_with_wulf:0 "Является #V вашим#! [Concept('friend', 'другом')|E]"
- is_an_ally_of_wulf:0 "Является #V вашим#! [Concept('ally', 'союзником')|E]"
- is_hooked_by_wulf:0 "Находится под #V вашим#! [Concept('hooked', 'влиянием')|E]"
+ is_friends_with_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('friend', 'другом')|E]"
+ is_lovers_with_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('lover', 'любовником')|E]"
+ is_an_ally_of_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('ally', 'союзником')|E]"
+ is_hooked_by_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] находится под #V вашим#! [Concept('hooked', 'влиянием')|E]"
+ is_a_tributary_of_wulf:0 "Персонаж является #V вашим#! [Concept('tributary', 'данником')|E]"
  is_wulf:0 "Это #V вы#!"
+ is_not_daen_lintis:0 "Не разделяет [Concept('cultural', 'культурное')|E] [Concept('heritage', 'наследие')|E] с дунландцами"
 
  decision_wulf_conversion:0 "Вопрос веры"
  decision_wulf_conversion_tooltip:0 "Принять одну из главенствующих конфессий Дунланда в ходе грандиозного публичного ритуала обращения или подтвердить свою приверженность верованиям рохиррим."
@@ -2107,11 +2232,28 @@
  convert_to_turthalis_tooltip:0 "[GetFaithByKey('faith_dunlending_turthalis').GetAdjective] почитает дух туманов, путеводное присутствие, почитаемое дунландцами на севере. Его последователи ценят гостеприимство, дипломатию и единство, веря, что Турталис приносит ясность тем, кто заблудился в тумане.\n\n#P Приняв эту конфессию, я могу завоевать доверие северных кланов и попытаться заключить союз путём мира и переговоров.#!\n\n#N Однако её упор на созерцание и сдержанность может оттолкнуть воинов южных границ Рохана, жаждущих действий и хранящих давнюю обиду на своих врагов - рохиррим.#!"
  convert_to_turthalis_desc:0 "$convert_to_turthalis_tooltip$"
  convert_to_khrabnazerh:0 "Принять веру в повелителя бурь, #V [GetFaithByKey('faith_dunlending_khrabnazerh').GetAdjective|l]#!"
- convert_to_khrabnazerh_tooltip:0 "[GetFaithByKey('faith_dunlending_khrabnazerh').GetName]ие последователи поклоняются хищному духу горных бурь, силе мести и славы, почитаемой дунландцами на юге. Они свирепы и непреклонны, ценят силу, войну и разрешение старых обид.\n\n#P Приняв Храбназера, я мог бы сплотить воинов Дунланда, создав войско, движимое общей яростью и целью.#!\n\n#N Однако этот выбор чреват углублением разногласий с более умеренными кланами севера и полным отторжением рохиррим, в результате чего я стану скорее разжигателем войны, чем объединителем.#!"
+ convert_to_khrabnazerh_tooltip:0 "#L [GetFaithByKey('faith_dunlending_khrabnazerh').GetName]ие#! последователи поклоняются хищному духу горных бурь, силе мести и славы, почитаемой дунландцами на юге. Они свирепы и непреклонны, ценят силу, войну и разрешение старых обид.\n\n#P Приняв Храбназера, я мог бы сплотить воинов Дунланда, создав войско, движимое общей яростью и целью.#!\n\n#N Однако этот выбор чреват углублением разногласий с более умеренными кланами севера и полным отторжением рохиррим, в результате чего я стану скорее разжигателем войны, чем объединителем.#!"
  convert_to_khrabnazerh_desc:0 "$convert_to_khrabnazerh_tooltip$"
  retain_rohirric_faith:0 "Оживить мои #V [GetFaithByKey('faith_rohirric').GetName|l]ие#! убеждения"
- retain_rohirric_faith_tooltip:0 "Древние [GetFaithByKey('faith_rohirric').GetName|l]ие боги [bemacharacter|E] и [foldewyncharacter|E] представляют дикую охоту и щедрость земли.\n\n#P Хотя дунландцы отвергают эту веру как чуждую, моя продолжающаяся преданность ей может укрепить мои притязания среди рохиррийских властителей, которые станут моими вассалами, и продемонстрировать моё намерение вернуть себе утраченное право крови.#!\n\n#N Однако этот путь, скорее всего, снискает мне мало друзей среди дунландцев, заставит их скептически относиться к моим истинным убеждениям, что может ослабить их поддержку и оставить меня в изоляции в землях, которые я стремлюсь возглавить.#!"
+ retain_rohirric_faith_tooltip:0 "Древние #L [GetFaithByKey('faith_rohirric').GetName|l]ие#! боги [bemacharacter|E] и [foldewyncharacter|E] представляют дикую охоту и щедрость земли.\n\n#P Хотя дунландцы отвергают эту веру как чуждую, моя продолжающаяся преданность ей может укрепить мои притязания среди рохиррийских властителей, которые станут моими вассалами, и продемонстрировать моё намерение вернуть себе утраченное право крови.#!\n\n#N Однако этот путь, скорее всего, снискает мне мало друзей среди дунландцев, заставит их скептически относиться к моим истинным убеждениям, что может ослабить их поддержку и оставить меня в изоляции в землях, которые я стремлюсь возглавить.#!"
  retain_rohirric_faith_desc:0 "$retain_rohirric_faith_tooltip$"
- you_keep_your_rohirric_faith:0 "Вы сохраните свою [GetFaithByKey('faith_rohirric').GetName|l]ую [Concept('faith', 'конфессию')|E]"
+ you_keep_your_rohirric_faith:0 "Вы сохраните свою #L [GetFaithByKey('faith_rohirric').GetName|l]ую#! [Concept('faith', 'конфессию')|E]"
+ decision_wulf_conversion.you_may_make_a_friend:0 "Вы можете завести [Concept('friend', 'друзей')|E]"
 
+ decision_wulf_marriage_pursuing_goal:0 "Вы уже пытаетесь заключить другой брак."
  TO_BE_ADDED_WIP:0 "WORK IN PROGRESS - ПРОДОЛЖЕНИЕ СЛЕДУЕТ"
+
+ decision_wulf_declare_war_for_rohan:0 "Вторгнуться в Рохан"
+ decision_wulf_declare_war_for_rohan_tooltip:0 "Вторгнуться в Рохан, чтобы занять его трон и отомстить за смерть вашего отца от рук Хельма."
+ decision_wulf_declare_war_for_rohan_desc:0 "Годы изгнания и борьбы привели меня к этому моменту. Из теней поражения я создал силу, объединив кланы Дунланда под одним знаменем и найдя союзников там, где раньше была только вражда. Пришло время вернуть кровный долг дому Эорла.\n\nЯ видел страдания дунландцев - народа, поколениями раздавленного под пятой рохиррим. Их участь - моя собственная, их раны столь же незаживающие, как и те, что я ношу в себе. Эта война - не просто месть, это война за справедливость, за прекращение их и моей боли.\n\nМои союзники готовы, мои войска в предвкушении, а воля Дунланда остра, как любой клинок. Риддермарк падет, и я возьму его корону - не как захватчик, а как законный правитель."
+ decision_wulf_declare_war_for_rohan_confirm:0 "«Никакой пощады! Никакой капитуляции!»"
+ wulf_rohan_claim_cb:0 "Мщение"
+
+ decision_wulf_gather_oathsworn_warriors:0 "Соблюдение клятв"
+ decision_wulf_gather_oathsworn_warriors_tooltip:0 "Вторгнуться в Рохан, чтобы занять его трон и отомстить за смерть своего отца от рук Хельма."
+ decision_wulf_gather_oathsworn_warriors_desc:0 "Близится время противостояния Рохану, но верность должна быть скреплена кровью и камнем. Укорьовы Дунланда будут призваны к древним рунным камням, где деяния их предков высечены в прошлом, а старые боги дикой природы молча наблюдают за происходящим.\n\nТам они поклянутся честью своих предков, посвятив своих воинов моему делу и поклявшись в кровной мести дому Эорла. Хотя я чужак, эта клятва свяжет их со мной, как они связывают себя общей ненавистью к Рохану.\n\nКамни будут свидетельствовать о клятвах, данных в этот день, как и духи их предков, и боги, обитающие в горах и ветре."
+ decision_wulf_gather_oathsworn_warriors_confirm:0 "Пусть камни будут свидетелями."
+ decision_wulf_gather_oathsworn_warriors_effects1:0 "[GetTitleByKey('d_dunlandfells').GetHolder.GetTitledFirstName] представит вам некоторое количество профессионалов ([GetMaA('dunlending_huscarl').GetName]) в зависимости от своего мнения о вас."
+ decision_wulf_gather_oathsworn_warriors_effects2:0 "[GetTitleByKey('d_dunfearan').GetHolder.GetTitledFirstName] представит вам некоторое количество профессионалов ([GetMaA('dunlending_axe_hunters').GetName]) в зависимости от своего мнения о вас."
+ decision_wulf_gather_oathsworn_warriors_effects3:0 "[GetTitleByKey('d_dathabha').GetHolder.GetTitledFirstName] представит вам некоторое количество профессионалов ([GetMaA('dunlending_outriders').GetName]) в зависимости от своего мнения о вас."
+ is_daen_lintis:0 "Имеет общее [Concept('cultural', 'культурное')|E] [Concept('heritage', 'наследие')|E] с дунландцами"

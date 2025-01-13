@@ -1,7 +1,16 @@
 ﻿l_russian:
+ # Additional Vanilla Loc
+ court_position_unyielding_defender_trait:0 "[GetTrait('unyielding_defender').GetName( ROOT.Char )]" #Missing in Vanilla
+ court_position_crafting_trait:0 "[GetTrait('lifestyle_artifact_crafting').GetName( ROOT.Char )]"
 
  # Overseer of the Mines
  overseer_of_the_mines_court_position:0 "Смотритель шахт"
+ relation_overseer_of_the_mines_male:0 "Смотритель шахт"
+ relation_overseer_of_the_mines_female:0 "Смотрительница шахт"
+ relation_overseer_of_the_mines_male_possessive:0 "смотрителя шахт"
+ relation_overseer_of_the_mines_female_possessive:0 "смотрительницы шахт"
+ court_position_desc_overseer_of_the_mines:0 "надзирать за добычей полезных ископаемых в нашей державе"
+ court_position_subject_overseer_of_the_mines:0 "шахты"
  overseer_of_the_mines_custom_effect_description:3 "[GetActivityType('activity_mining').GetName] увеличивает шанс успешного завершения в зависимости от [Concept( 'aptitude', 'пригодности' )|E]"
  overseer_of_the_mines_court_position_desc:1 "$overseer_of_the_mines_court_position$ руководит всеми горнодобывающими операциями в державе, начиная от самого маленького карьера на склоне холма и заканчивая самыми глубокими шахтными стволами."
  overseer_of_the_mines_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'overseer_of_the_mines_court_position' ) )]"
@@ -10,28 +19,60 @@
 
  # Stone Singer
  stone_singer_court_position:0 "Каменный певец"
+ relation_stone_singer_male:0 "$stone_singer_court_position$"
+ relation_stone_singer_female:0 "$stone_singer_court_position$"
+ relation_stone_singer_male_possessive:0 "каменного певца"
+ relation_stone_singer_female_possessive:0 "каменного певца"
+ court_position_desc_stone_singer:0 "раскрывать сокровенные тайны глубин"
+ court_position_subject_stone_singer:0 "камни и галька"
  stone_singer_custom_effect_description:3 "[GetActivityType('activity_mining').GetName] увеличивает шанс успешного завершения в зависимости от [Concept( 'aptitude', 'пригодности' )|E]"
  stone_singer_court_position_desc:1 "$stone_singer_court_position$ знает тайные песни, которыми можно воззвать к камню, и умеет услышать ответную песню. Этому тайному искусству [Concept( 'dwarves', 'гномов' )|E] обучил сам [mahalcharacter|E]."
  stone_singer_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'stone_singer_court_position' ) )]"
  stone_singer_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'stone_singer_court_position' ) )] #weak ([old_holder.GetFirstName] - [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'stone_singer_court_position' ) )])#!"
  stone_singer_salary_tooltip:0 "[GetCourtPositionType( 'stone_singer_court_position' ).GetName()] получает ежемесячное жалованье — [SCOPE.ScriptValue('medium_court_position_salary')|2] [gold_i]"
-
  court_position_miner_3_trait:1 "$court_position_miner_1_trait$"
  court_position_miner_2_trait:1 "$court_position_miner_1_trait$"
  court_position_miner_1_trait:1 "[GetTrait('lifestyle_miner').GetName( ROOT.Char )]"
 
- second_marshal_of_rohan_position:0 "Второй маршал Риддермарка"
- second_marshal_of_rohan_position_desc:0 "Одно из высших воинских званий среди всадников Рохана."
+ # Second Marshal of Rohan
+ second_marshal_of_rohan_court_position:0 "Второй маршал Риддермарка"
+ relation_second_marshal_of_rohan_male:0 "Второй маршал"
+ relation_second_marshal_of_rohan_female:0 "Второй маршал"
+ relation_second_marshal_of_rohan_male_possessive:0 "второго маршала"
+ relation_second_marshal_of_rohan_female_possessive:0 "второго маршала"
+ court_position_desc_second_marshal_of_rohan:0 "уверенно возглавлять всадников [Concept('rohan', 'Рохана')|E]"
+ court_position_subject_second_marshal_of_rohan:0 "командование кавалерией"
+ second_marshal_of_rohan_court_position_desc:0 "Одно из высших воинских званий среди всадников Рохана."
+ second_marshal_of_rohan_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'second_marshal_of_rohan_court_position' ) )]"
+ second_marshal_of_rohan_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'second_marshal_of_rohan_court_position' ) )] #weak ([old_holder.GetFirstName] — [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'second_marshal_of_rohan_court_position' ) )])#!"
+ second_marshal_of_rohan_salary_tooltip:0 "[GetCourtPositionType( 'second_marshal_of_rohan_court_position' ).GetName()] получает ежемесячное жалованье — [SCOPE.ScriptValue('medium_court_position_salary')|2] [gold_i]"
+ diarch_loyalty_score.regency.second_marshal:0 "[GetCourtPositionType('second_marshal_of_rohan_court_position').GetName()]"
 
- third_marshal_of_rohan_position:0 "Третий маршал Риддермарка"
- third_marshal_of_rohan_position_desc:0 "Одно из высших воинских званий среди всадников Рохана."
+ # Third Marshal of Rohan
+ third_marshal_of_rohan_court_position:0 "Третий маршал Риддермарка"
+ relation_third_marshal_of_rohan_male:0 "Третий маршал"
+ relation_third_marshal_of_rohan_female:0 "Третий маршал"
+ relation_third_marshal_of_rohan_male_possessive:0 "третьего маршала"
+ relation_third_marshal_of_rohan_female_possessive:0 "третьего маршала"
+ court_position_desc_third_marshal_of_rohan:0 "$court_position_desc_second_marshal_of_rohan$"
+ court_position_subject_third_marshal_of_rohan:0 "$court_position_subject_second_marshal_of_rohan$"
+ third_marshal_of_rohan_court_position_desc:0 "Одно из высших воинских званий среди всадников [Concept('mark', 'Марки')|E]."
+ third_marshal_of_rohan_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'third_marshal_of_rohan_court_position' ) )]"
+ third_marshal_of_rohan_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'third_marshal_of_rohan_court_position' ) )] #weak ([old_holder.GetFirstName] — [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'third_marshal_of_rohan_court_position' ) )])#!"
+ third_marshal_of_rohan_salary_tooltip:0 "[GetCourtPositionType( 'third_marshal_of_rohan_court_position' ).GetName()] получает ежемесячное жалованье — [SCOPE.ScriptValue('medium_court_position_salary')|2] [gold_i]"
+ diarch_loyalty_score.regency.third_marshal:0 "[GetCourtPositionType('third_marshal_of_rohan_court_position').GetName()]"
 
+ # Warden of the Keys of Minas Tirith
  warden_of_the_keys_court_position:0 "Хранитель ключей"
- #warden_of_the_keys_court_position_desc:0 "The $warden_of_the_keys_court_position$ is a high office of [minastirith|E]. To fulfil their duty, they are traditionally given the ceremonial silver keys to the city as part of their appointment. The Warden is responsible for overseeing the Great Gate of the city, as well as organizing the guard patrols of its garrison. In times of strife, they may be ordered to temporarily assume control of the [whitecity|E] in the absense of its ruler. Among the [dunedain|E] of [gondor|E] it is considered a title of exceptional prestige and honour."
- warden_of_the_keys_court_position_desc:0 "$warden_of_the_keys_court_position$ - высокая должность [Concept('minastirith', 'Минас Тирита')|E], отвечающая за надзор за великими городскими вратами, а также за организацию дозорных патрулей его гарнизона. Во времена раздоров им может быть приказано временно взять на себя управление [Concept('whitecity', 'Белым городом')|E] в отсутствие его правителя. Среди [dunedain|El] [Concept('gondor', 'Гондора')|E] это считается исключительной честью." # Juke note: Shortened
+ relation_warden_of_the_keys_male:0 "$warden_of_the_keys_court_position$"
+ relation_warden_of_the_keys_female:0 "Хранительница ключей"
+ relation_warden_of_the_keys_male_possessive:0 "хранителя ключей"
+ relation_warden_of_the_keys_female_possessive:0 "хранительницы ключей"
+ court_position_desc_warden_of_the_keys:0 "тщательно организует надзор в [Concept('whitecity', 'Белом городе')|E]"
+ court_position_subject_warden_of_the_keys:0 "ключи"
+ warden_of_the_keys_court_position_desc:0 "$warden_of_the_keys_court_position$ - высокая должность [Concept('minastirith', 'Минас Тирита')|E], отвечающая за надзор за великими городскими вратами, а также за организацию дозорных патрулей его гарнизона. Во времена раздоров им может быть приказано временно взять на себя управление [Concept('whitecity', 'Белым городом')|E] в отсутствие его правителя. Среди [dunedain|El] [Concept('gondor', 'Гондора')|E] это считается исключительной честью."
  warden_of_the_keys_custom_effect_description:0 "[Concept('aptitude', 'Пригодность')|E] снижает шанс успеха враждебных происков"
  warden_of_the_keys_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'warden_of_the_keys_court_position' ) )]"
  warden_of_the_keys_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'warden_of_the_keys_court_position' ) )] #weak ([old_holder.GetFirstName] - [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'warden_of_the_keys_court_position' ) )])#!"
  warden_of_the_keys_salary_tooltip:0 "[GetCourtPositionType( 'warden_of_the_keys_court_position' ).GetName()] получает ежемесячное жалованье — [gold_i][SCOPE.ScriptValue('minor_court_position_salary')|2]"
-
- court_position_unyielding_defender_trait:0 "[GetTrait('unyielding_defender').GetName( ROOT.Char )]"
+ diarch_loyalty_score.regency.warden_of_the_keys:0 "[GetCourtPositionType('warden_of_the_keys_court_position').GetName()]"
