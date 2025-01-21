@@ -171,11 +171,6 @@
  decision_retire_to_himring_desc:0 "Я выступил на войну, чтобы победить Тень, и теперь она повержена. Но я устал и изнемог за долгие годы печали, и время и память тяготят меня. Море зовёт меня, хотя путь к нему закрыт! Но на Химринге тихо, ибо там живут воспоминания о давних днях.\n\nСделав свое дело, я вернусь на Химринг, чтобы отдыхать и петь, пока мир не будет уничтожен и отстроен заново, или пока я не развеюсь песней по ветру."
  decision_retire_to_himring_confirm:0 "[Glossary('Нолдолантэ','noldolante_gloss')] получит ещё один куплет..."
 
- decision_vanquish_sauron_as_valinor:0 "PLACEHOLDER - Attack Sauron as Host of Valinor" #VectorHelp
- decision_vanquish_sauron_as_valinor_tooltip:0 "PLACEHOLDER - Attack Sauron as Host of Valinor" #VectorHelp
- decision_vanquish_sauron_as_valinor_desc:0 "PLACEHOLDER - Attack Sauron as Host of Valinor" #VectorHelp
- decision_vanquish_sauron_as_valinor_confirm:0 "PLACEHOLDER - Attack Sauron as Host of Valinor" #VectorHelp
-
  ###########################
  ### Dorwinion Decisions ###
  ###########################
@@ -238,7 +233,8 @@
  set_sail_landless_desc:0 "Тайны и приключения диких открытых морей манят меня! Кто я [Select_CString(ROOT.Char.IsFemale, 'такая', 'такой' )], чтобы игнорировать их зов?"
  set_sail_landless_tooltip:0 "Вы #high отправитесь в плавание#! по открытому морю"
  set_sail_landless_confirm:0 "Поднять якорь!"
- set_sail_landless_desc_activity:0 "Вы #high отправитесь в плавание#! из случайного порта."
+ set_sail_landless_tt:0 "Ваш [Concept('camp', 'лагерь')|E] расположен в прибрежной провинции"
+ set_sail_landless_desc_activity:0 "Вы #high отправитесь в плавание#! из текущего местоположения [Concept('camp', 'лагеря')|E]."
  set_sail_landless_desc_benefits:0 "Вы получите возможность улучшить свои [Concept('skills', 'навыки')|E] как [GetTrait('lifestyle_mariner').GetName(GetNullCharacter)]."
 
  beorning_decision:0 "Смена облика"
@@ -368,8 +364,8 @@
  decision_adopt_arnorian_culture_desc:0 "Когда-то люди Арнора собирали могучие войска и создавали великие королевства. Увы, упадок и войны заставили нас стать теми, кем мы являемся сейчас, - странниками в дебрях, неизвестными многим и вызывающими уважение у немногих. Хотя это и спасло нас, но в то же время заставило потерять связь с путями наших предков. Если бы мы смогли восстановить своё государство, мы могли бы способствовать культурному возрождению древних путей Арнора."
  decision_adopt_arnorian_culture_confirm:0 "Восстаньте, сыны Арнора!"
  decision_adopt_arnorian_culture_tooltip:0 "Принять арнорскую культуру"
- decision_adopt_arnorian_culture_vassal_custom:1 "Все $dunedain_ranger_collective_noun$ие [vassals|El]"
- decision_adopt_arnorian_culture_province_custom:1 "Каждое $dunedain_ranger_collective_noun$ое [county|El] в пределах вашей [Concept('realm', 'державы')|E]"
+ decision_adopt_arnorian_culture_vassal_custom:1 "Каждый [vassal|El] с происходящей от арнорской культурой."
+ decision_adopt_arnorian_culture_province_custom:1 "Каждое [county|El] в пределах вашей [Concept('realm', 'державы')|E] с происходящей от арнорской культурой."
 
  decision_integrate_the_northern_provinces:0 "Реинтегрировать северные провинции"
  decision_integrate_the_northern_provinces_desc:0 "Самый дальний север лишь номинально входил в состав Северного королевства, а после Войны Последнего союза у Арнора не хватило сил заявить о своих притязаниях. Именно в этом вакууме Король-чародей создал ужасающее королевство Ангмар.\n\nЕсли северные пустоши наконец-то окажутся под контролем дунэдайн, их можно будет подчинить Скипетру как в теории, так и на практике, а любая угроза с севера будет отведена навеки."
@@ -398,6 +394,12 @@
  arassuil_lay_a_trap_tt:0 "Вы попытаетесь выманить вождя орков на открытое пространство"
  arassuil_face_the_long_dark_tt:0 "Вы отправитесь к западным воротам [Concept('moria', 'Мории')|E], чтобы бросить вызов предводителю орков"
  arassuil_start_war_desc_tt:0 "Ваша цель - изгнать орков из их залов"
+
+ decision_moria_war_arassuil:0 "Поход на Морию"
+ decision_moria_war_arassuil_tooltip:0 "Призвать своих воинов на войну с [Concept('moria', 'Морией')|E]"
+ decision_moria_war_arassuil_desc:0 "Тьма в [Concept('moria', 'Мории')|E] растет с каждым днем. Мы собрали наших воинов и заручились обещаниями [Concept('elves', 'эльфов')|E] и [Concept('dwarves', 'гномов')|E] помочь нам в этом стремлении. Пришло время принести свет в Черную бездну!"
+ decision_moria_war_arassuil_confirm:0 "Мы выступим на рассвете."
+ decision_moria_war_arassuil_tt:0 "Вы начнёте войну против орков Мории"
 
  ### Reunited Kingdom Decision Subset ###
 
@@ -792,11 +794,14 @@
  decision_westmarch_integration_desc:0 "Как определено в Даре Кириона, Вестмарк - треугольник между реками Изен и Адорн - является законной частью Риддермарка. Но лояльность его жителей смешанного дунландского и рохирримского происхождения давно вызывает сомнения, и в последние годы они де-факто независимы от Эдораса. Мы должны укрепить наш контроль над регионом и вернуть его под власть дома Эорла"
  decision_westmarch_integration_confirm:0 "Западная граница Риддермарка в безопасности!"
 
- decision_invite_dwarves_whitemountains:0 "Пригласить гномов в Белые горы"
- decision_invite_dwarves_whitemountains_tooltip:0 "Побудить [Concept('dwarves', 'гномов')|E] начать заселение Белых гор"
+ decision_invite_dwarves_whitemountains_northern:0 "Пригласить гномов в северные Белые горы"
+ decision_invite_dwarves_whitemountains_northern_tooltip:0 "Побудить [Concept('dwarves', 'гномов')|E] начать заселение Белых гор (с северного отрога)"
+ decision_invite_dwarves_whitemountains_southern:0 "Пригласить гномов в южные Белые горы"
+ decision_invite_dwarves_whitemountains_southern_tooltip:0 "Побудить [Concept('dwarves', 'гномов')|E] начать заселение Белых гор (с южного отрога)"
  decision_invite_dwarves_whitemountains_desc:0 "Белые горы, граничащие с моей державой, во все эпохи мира никогда не были заселены, даже крепким народом топора и ремесла, выносливыми [Concept('dwarves', 'гномами')|E].\n\nХотя нам самим не хватает ловкости, чтобы одолеть эти грозные вершины и беспросветные пещеры, в гномьих королевствах этого мира наверняка найдутся отважные герои, готовые принять вызов, если у них будет достаточно мотивации."
  decision_invite_dwarves_whitemountains_confirm:0 "Обратимся к владыкам гномов!"
- decision_invite_dwarves_whitemountains_tt:0 "Гномы будут приглашены для заселения Белых гор"
+ decision_invite_dwarves_whitemountains_northern_tt:0 "Гномы будут приглашены для заселения Белых гор с северного отрога"
+ decision_invite_dwarves_whitemountains_southern_tt:0 "Гномы будут приглашены для заселения Белых гор с южного отрога"
 
  decision_oath_of_eorl_rohan:0 "Воззвать к клятве Кириона"
  decision_oath_of_eorl_rohan_tooltip:0 "Обратиться за военной помощью к Гондору"
@@ -1244,7 +1249,7 @@
 
  decision_solidify_moria:0 "Укрепить контроль над Морией"
  decision_solidify_moria_tooltip:0 "Утвердить неоспоримое господство над всей Чёрной Бездной."
- decision_solidify_moria_desc:0 "PLACEHOLDER I must make sure there are no challengers to my rule."
+ decision_solidify_moria_desc:0 "Черная Бездна будет моей и только моей! Я должен убедиться, что на мое правление не найдется претендентов, устранив тех, кто все еще занимает властное положение в этих разрушающихся залах. Никто не устоит против меня и не будет упорствовать!"
  decision_solidify_moria_confirm:0 "Чёрная Бездна - моя!"
  decision_solidify_moria_tt:0 "Меньшие правители Мории присягнут на верность"
 
@@ -1272,8 +1277,8 @@
  decision_azog_raid_rhovanion_tt:0 "Вы выберете цель налёта"
 
  decision_azog_summoned_by_sauron:0 "Внять призыву Тёмного Властелина"
- decision_azog_summoned_by_sauron_desc:0 "PLACEHOLDER The Necromancer has summoned me to his side in Dol Guldur."
- decision_azog_summoned_by_sauron_tooltip:0 "Отправиться в Дол Гулдур, чтобы ответить на призов Некроманта"
+ decision_azog_summoned_by_sauron_desc:0 "В Дол-Гулдуре возвышается новая сила - судя по зловещему посланию, которое я [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )], и словам моих разведчиков, его имя - или возможно лишь титул - Некромант. Его сила крепнет с каждым часом.\n\nДаже если я не хочу унижаться, склоняясь перед его властью, я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] хотя бы узнать, что он может предложить..."
+ decision_azog_summoned_by_sauron_tooltip:0 "Отправиться в Дол Гулдур, чтобы ответить на зов этого Некроманта"
  decision_azog_summoned_by_sauron_confirm:0 "Приведите моего варга!"
  decision_azog_summoned_by_sauron_tt:0 "Вы отправитесь в Дол Гулдур в южном [mirkwood|E]"
 
@@ -1288,7 +1293,7 @@
  decision_azog_ulukai_verylong_search:0 "Вы начинаете бояться, что самоцвет никогда не будет найден"
 
  decision_azog_claim_final_victory:0 "Завладеть неограниченной властью"
- decision_azog_claim_final_victory_desc:0 "PLACEHOLDER I have won. None are left to challenge me. I am the Tyrant of the North!"
+ decision_azog_claim_final_victory_desc:0 "Я победил. Не осталось никого, кто мог бы бросить мне вызов: все орки славят мое имя, а все Свободные народы дрожат, прячась в своих норах и убежищах! Мои войска стоят на склонах гор, крепкие, как камень! Я - повелитель! Я - тиран Севера!"
  decision_azog_claim_final_victory_tooltip:0 "Пусть все узнают о вашей окончательной победе."
  decision_azog_claim_final_victory_confirm:0 "Меня ничто не остановит."
 
@@ -1345,13 +1350,31 @@
  witch_recruited.t:0 "Чародей нанят"
  witch_recruited.desc:0 "Прибывает мрачный придворный..."
 
- decision_harrying_of_the_coasts:0 "Разорить побережье Гондора"
- decision_harrying_of_the_coasts_tooltip:0 "Начать масштабное вторжение и набег на Гондор"
- decision_harrying_of_the_coasts_desc:0 "PLACEHOLDER - you've been preping, not that way "
- decision_harrying_of_the_coasts_confirm:0 "Полный вперёд!"
- decision_harrying_of_the_coasts_tt:0 "Вы начнете войну за Харондор, в ходе которой все захваченные графства потеряют развитие и контроль"
+ decision_harrying_of_the_coasts: "Разорить побережье Гондора"
+ decision_harrying_of_the_coasts_tooltip: "Начать масштабное вторжение и набег на Гондор"
+ decision_harrying_of_the_coasts_desc: "На протяжении долгих лет Гондор был великим врагом народов Харада. Мои предки признали этот факт и, проявив дальновидность, начали подготовку великих флотов, чтобы изгнать угрозу с наших берегов. И вот, наконец, время пришло, мои армии готовы, мои флоты в полной готовности. Пришло время нанести удар и захватить эти берега себе!"
+ decision_harrying_of_the_coasts_confirm: "Полный вперёд!"
+ decision_harrying_of_the_coasts_tt: "Вы начнете войну за Харондор, в ходе которой все захваченные графства потеряют развитие и контроль"
  first_fleet:0 "Первый флот - Кас Шадул"
  third_fleet:0 "Третий флот - Кас Марзук"
+ fourth_fleet: "Четвёртый флот - Амакуд"
+
+ decision_further_preparations: "Продолжить дальнейшую подготовку"
+ decision_further_preparations_tooltip: "Выделить больше ресурсов на вторжение в Гондор"
+ decision_further_preparations_desc: "Несмотря на все труды, затраченные на предстоящее вторжение в Гондор, мое сердце все еще боится нашей неудачи. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] посвятить еще больше времени подготовке к вторжению, чтобы не допустить катастрофы."
+ decision_further_preparations_confirm: "Пусть никто не останется без дела!"
+ decision_further_preparations_tt: "Вы получите еще один флот по событию, когда объявите войну [Concept('gondor', 'Гондору')|E]."
+
+ decision_consolidate_harondor: "Объединить Харондор"
+ decision_consolidate_harondor_tooltip: "Привести в порядок границы Харондора"
+ decision_consolidate_harondor_desc: "Когда власть [Concept('gondor', 'Гондора')|E] ослабела в Харондоре, местные правители восстали, чтобы заполнить образовавшуюся пустоту. Разделенные на множество ущемленных владений, разнообразные правители Харондора являются лишь помехой моим планам в отношении этого региона. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] подчинить их себе и восстановить безопасность и мир в этих землях - под знаменем Харвана."
+ decision_consolidate_harondor_confirm: "Вперёд, к победе!"
+ decision_consolidate_harondor_tt: "Вы объявите войну всем независимым правителям в Харондоре."
+
+ decision_unite_the_dunes:0 "Объединить дюны"
+ decision_unite_the_dunes_tooltip:0 "Интегрировать королевство Дарсалан в Море Дюн"
+ decision_unite_the_dunes_desc:0 "Море Дюн - суровая родина, но она воспитала немало стойких воинов. На востоке лежат земли Дарсалана, где королевства поднимаются и падают так же быстро, как песчаная буря проносится над засушливыми землями.\n\nНастало время объединиться! Я скреплю эти земли в единое королевство и принесу мир, свободу, справедливость и безопасность в мою новую империю."
+ decision_unite_the_dunes_confirm:0 "Во имя процветания аранийцев!"
 
  ################################
  #### Khand/Variag Decisions ####
@@ -1551,13 +1574,13 @@
 
  decision_return_to_mistrand: "Вернуться в Мистранд"
  decision_return_to_mistrand_tooltip: "Вернуться в Мистранд"
- decision_return_to_mistrand_desc: "Bountig returns to Mistrand"
- decision_return_to_mistrand_confirm: "Вернуться в Мистранд."
+ decision_return_to_mistrand_desc: "После долгих лет скитаний по чужим землям мое сердце и разум все больше склоняются к землям моего народа. Они бесконечно ссорятся, но я верю, что они могут обрести величие, если отбросят свои обиды.\n\nЕсть только одно место, где я могу приступить к делу, - Мистранд, великий город моего народа. Под его могучими стенами теснится множество душ, и если мое послание найдет там почву, оно сможет распространиться."
+ decision_return_to_mistrand_confirm: "Пришло время положить конец скитаниям."
  decision_return_to_mistrand_tt: "Отправиться в провинцию [GetTitleByKey('c_mistrand').GetName] со своим #high лагерем#!"
 
  decision_convince_easterling_lord: "Посетить истерлингского властителя"
  decision_convince_easterling_lord_tooltip: "Посетить истерлингского властителя"
- decision_convince_easterling_lord_desc: "You decide to visit an Easterling Lord, to convince them to not wage war against other easterling lords"
+ decision_convince_easterling_lord_desc: "Мое послание начало распространяться по всей земле, но не все властители готовы прислушаться к нему. Возможно, если они услышат его из моих собственных уст, это поможет вдохновить и убедить их в праведности моего дела?"
  decision_convince_easterling_lord_confirm: "Посетить истерлингского властителя"
  decision_convince_easterling_lord_tt.1: "Выберите истерлингского властителя для визита"
  decision_convince_easterling_lord_tt.2: "Персонаж [GetPlayer.MakeScope.Var('selected_character').Char.GetName] доступен"
@@ -1778,16 +1801,16 @@
  durin_hall_upgrade_holding_tooltip:0 "Подземное владение в провинции [GetTitleByKey('b_durins_hall').GetNameNoTier] будет улучшено на два уровня. Если оно не может быть улучшено, то за каждый уровень, которое оно могло бы получить, владение [GetTitleByKey('c_durins_hall').GetNameNoTier] получит 5 [Concept( 'development', 'развития' )|E]."
 
  decision_reunite_yellow_mountains:0 "Объединить Жёлтые горы"
- decision_reunite_yellow_mountains_desc:0 "Долгие годы мы, [blacklocks|E]Черновласы, жили в Жёлтых горах, сражаясь с [goblins|E]гоблинами и прочей нечистью, заполонившей эти горы. Хотя в прошлом мы пытались объединить южную и северную половины этих гор, попытки были недолгими и безуспешными. Однако эта попытка была предпринята много веков назад, и вот снова нам представляется возможность. Пусть же могучие сыны Трара Гордого, населявшие эти древние горы на протяжении несметных лет, наконец объединятся!"
+ decision_reunite_yellow_mountains_desc:0 "Долгие годы мы, [Concept('blacklocks', 'Черновласы')|E], жили в Жёлтых горах, сражаясь с [Concept('goblins', 'гоблинами')|E] и прочей нечистью, заполонившей эти горы. Хотя в прошлом мы пытались объединить южную и северную половины этих гор, попытки были недолгими и безуспешными. Однако эта попытка была предпринята много веков назад, и вот снова нам представляется возможность. Пусть же могучие сыны Трара Гордого, населявшие эти древние горы на протяжении несметных лет, наконец объединятся!"
  decision_reunite_yellow_mountains_tooltip:0 "Желтые горы будут едины!"
  decision_reunite_yellow_mountains_confirm:0 "Больше не разделены, а едины!"
 
  decision_colonise_erebor:0 "Вернуться в Эребор"
  decision_colonise_erebor_tooltip:0 "Восстановить Одинокую Гору"
- decision_colonise_erebor_desc:0 "Гномы из дома Дурина потеряли чертог за чертогом. Гундузбад, где пробудился Дурин. Затем мы потеряли Кхазад-дум - средоточие нашей власти при правлении Дурина, а теперь мы потеряли и Одинокую гору, Эребор один из величайших чертогов. \n"
- decision_colonise_erebor_pre_smaug:0 "Мы были изгнаны из горы, но мы никогда не забывали о ней. Эребор - наш дом, и мы снова будем владеть им! \n\n"
- decision_colonise_erebor_post_smaug:0 "Мы были изгнаны из горы Смаугом, великим огненным змеем. Мы потеряли дом и короля, мы пали духом, но никогда не забудем нашу гору. Мы вернём себе Эребор! \n\n"
- decision_colonise_erebor_post_thorin:0 "Мы снова были изгнаны с горы - сперва Смаугом, а теперь вот это! Но мы не сдадимся! Эребор - наш дом, и мы снова будем владеть им! \n\n"
+ decision_colonise_erebor_desc:0 "[Concept('dwarves', 'Гномы')|E] из линии Дурина потеряли чертог за чертогом. Мы потеряли [gunduzbad|E], где пробудился [durin|E], [khazaddum|E], могущественнейшее из гномьих королевств, которое когда либо видел мир; а теперь мы потеряли и Одинокую гору, Эребор - один из величайших чертогов.\n"
+ decision_colonise_erebor_pre_smaug:0 "Мы были изгнаны из горы, но мы никогда не забывали о ней. Эребор - наш дом, и мы вернемся в него снова, и заселим его золотые залы!\n\n"
+ decision_colonise_erebor_post_smaug:0 "Нас вытеснил с горы Смауг Ужасный, великий огненный змей, и мы потеряли дом, родню и короля, но мы никогда не забудем нашу гору. Топорами гномов Эребор снова станет нашим!\n\n"
+ decision_colonise_erebor_post_thorin:0 "Мы снова были изгнаны с горы - сперва Смаугом, а теперь вот это! Но мы не сдадимся! Эребор - наш дом, и мы снова будем владеть им!\n\n"
  decision_colonise_erebor_outro:0 "Мы вернём Одинокую гору, самую высокую и величественную из всех жемчужин Севера! Мы - гномы Народа Дурина, а наш король - Король-под-Горой!"
  decision_colonise_erebor_confirm:0 "Вернуть Гору!"
 
@@ -2216,6 +2239,7 @@
  decision_wulf_declare_king_of_dunland.effect1:0 "Все [Concept('independent', 'независимые')|E] дунландские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами."
  decision_wulf_declare_king_of_dunland.effect2:0 "#V Все [Concept('independent', 'независимые')|E] дунландские [Concept('friends', 'друзья')|E], [Concept('allies', 'союзники')|E] или персонажи [Concept('hooked', 'под влиянием')|E] станут вашими вассалами:#!"
  decision_wulf_declare_king_of_dunland_confirm:0 "Наше время настало!"
+ is_friendly_with_wulf:0 "[opinion|E] персонажа или его [Concept('regent', 'регента')|E] #V о вашем персонаже#! больше или равно #V 70#!"
  is_friends_with_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('friend', 'другом')|E]"
  is_lovers_with_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('lover', 'любовником')|E]"
  is_an_ally_of_wulf:0 "Персонаж или его [Concept('regent', 'регент')|E] является #V вашим#! [Concept('ally', 'союзником')|E]"
