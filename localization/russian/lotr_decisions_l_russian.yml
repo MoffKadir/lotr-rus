@@ -671,6 +671,7 @@
  decision_restore_defeated_gondor_tooltip:0 "Начать войну за освобождение [Concept('gondor', 'Гондора')|E]."
  decision_restore_defeated_gondor_tt1:0 "Минас Тирит пал"
  decision_restore_defeated_gondor.tt2:0 "В случае победы вы выберете нового правителя королевства Гондор"
+ IS_TRIBUTARY_OF_SAURON:0 "Вы не являетесь [Concept('tributary', 'данником')|E] Саурона"
 
  decision_calenardhon_calemmir:0 "Востановить столицу Каленардона"
  decision_calenardhon_calemmir_desc:0 "Во времена правления королей из рода Анариона провинция [GetTitleByKey('k_rohan').GetNameNoTier] управлялась из города [GetTitleByKey('c_aldburg').GetNameNoTier]. Теперь, когда провинция снова в руках гондорцев, мы можем вернуть Калеммиру его прежний статус столицы северных земель."
@@ -1354,7 +1355,7 @@
  decision_harrying_of_the_coasts_tooltip: "Начать масштабное вторжение и набег на Гондор"
  decision_harrying_of_the_coasts_desc: "На протяжении долгих лет Гондор был великим врагом народов Харада. Мои предки признали этот факт и, проявив дальновидность, начали подготовку великих флотов, чтобы изгнать угрозу с наших берегов. И вот, наконец, время пришло, мои армии готовы, мои флоты в полной готовности. Пришло время нанести удар и захватить эти берега себе!"
  decision_harrying_of_the_coasts_confirm: "Полный вперёд!"
- decision_harrying_of_the_coasts_tt: "Вы начнете войну за Харондор, в ходе которой все захваченные графства потеряют развитие и контроль"
+ decision_harrying_of_the_coasts_tt: "Вы начнете войну за [GetTitleByKey('k_harondor').GetNameNoTier], в ходе которой все захваченные графства потеряют [Concept('development', 'развитие')|E] и [Concept('control', 'контроль')|E]"
  first_fleet:0 "Первый флот - Кас Шадул"
  third_fleet:0 "Третий флот - Кас Марзук"
  fourth_fleet: "Четвёртый флот - Амакуд"
@@ -2263,6 +2264,7 @@
  retain_rohirric_faith_desc:0 "$retain_rohirric_faith_tooltip$"
  you_keep_your_rohirric_faith:0 "Вы сохраните свою #L [GetFaithByKey('faith_rohirric').GetName|l]ую#! [Concept('faith', 'конфессию')|E]"
  decision_wulf_conversion.you_may_make_a_friend:0 "Вы можете завести [Concept('friend', 'друзей')|E]"
+ your_liege_has_dunfearnshaws:0 "[GetTitleByKey('c_dunfearnshaws').GetNameNoTier] входит в [Concept('realm', 'державу')|E] вашего [Concept('top_liege_possessive', 'верховного сюзерена')|E]"
 
  decision_wulf_marriage_pursuing_goal:0 "Вы уже пытаетесь заключить другой брак."
  TO_BE_ADDED_WIP:0 "WORK IN PROGRESS - ПРОДОЛЖЕНИЕ СЛЕДУЕТ"
