@@ -408,11 +408,17 @@
  mining_prospecting_begun_log_title:0 "Поиски начинаются"
  #hunt_quarry_selected_log:1 "[CHARACTER.GetShortUIName|U] decided the party will be hunting [CHARACTER.GetInvolvedActivity.Custom('GetAnimalArticle')] [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
  mining_completed_success_log_title:0 "Итоги шахтёрской экспедиции"
- mining_completed_success_log:0 "Шахтёрская экспедиция персонажа [CHARACTER.GetShortUINamePossessive|U] прошла успешно" #разделение
+ mining_completed_success_log:0 "Шахтёрская экспедиция [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] прошла успешно"
  mining_completed_failure_log_title:0 "$mining_completed_success_log_title$"
- mining_completed_failure_log:0 "Шахтёрская экспедиция персонажа [CHARACTER.GetShortUINamePossessive|U] потерпела неудачу"
+ mining_completed_failure_log:0 "Шахтёрская экспедиция [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] потерпела неудачу"
  history_completed_log_title:0 "Итог исследований хроник"
- history_completed_log:0 "Изучение хроник персонажа [CHARACTER.GetShortUINamePossessive|U] завершено"
+ history_completed_log:0 "Изучение хроник [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] завершено"
+ donated_books_log_title:0 "Окончательный выбор книги"
+ chose_book1_log_title:0 "Окончательный выбор книги"
+ chose_book2_log_title:0 "Окончательный выбор книги"
+ donated_books_log:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] пожертвовать книги в архив"
+ chose_book1_log:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] оставить [book_1.GetName]"
+ chose_book2_log:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] оставить [book_2.GetName]"
 
  # Triggers
  activity_mining_location_does_not_have_a_deposit:0 "В этом [Concept('barony', 'баронстве')|E] нет обнаруженных|E] [Concept('resources', 'ресурсов')|E] для добычи."
