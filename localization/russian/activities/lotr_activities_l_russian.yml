@@ -419,12 +419,6 @@
  mining_completed_failure_log:0 "Шахтёрская экспедиция [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] потерпела неудачу"
  history_completed_log_title:0 "Итог исследований хроник"
  history_completed_log:0 "Изучение хроник [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] завершено"
- #donated_books_log_title:0 "Окончательный выбор книги"
- #chose_book1_log_title:0 "Окончательный выбор книги"
- #chose_book2_log_title:0 "Окончательный выбор книги"
- #donated_books_log:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] пожертвовать книги в архив"
- #chose_book1_log:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] оставить [book_1.GetName]"
- #chose_book2_log:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] оставить [book_2.GetName]"
 
  # Triggers
  activity_mining_location_does_not_have_a_deposit:0 "В этом [Concept('barony', 'баронстве')|E] нет обнаруженных|E] [Concept('resources', 'ресурсов')|E] для добычи."
@@ -530,66 +524,66 @@
  # Dwarven Expedition activity #
  ###############################
 
-  activity_expedition:0 "Экспедиция гномов"
-  activity_expedition_desc:0 "Основать новую державу или поддержать создание вассального владения."
+ activity_expedition:0 "Экспедиция гномов"
+ activity_expedition_desc:0 "Основать новую державу или поддержать создание вассального владения."
 
-  activity_expedition_valid_location_wastelands:0 "Это графство не является пустошью"
-  activity_expedition_valid_location_occupied:0 "Это графство граничит с занятым графством"
+ activity_expedition_valid_location_wastelands:0 "Это графство не является пустошью"
+ activity_expedition_valid_location_occupied:0 "Это графство граничит с занятым графством"
 
-  expedition_type_standard:0 "Перемещение державы"
-  expedition_type_standard_desc:0 "$EFFECT_LIST_BULLET$ Переместить свою [Concept('realm', 'державу')|E], оставив после себя правителя по своему усмотрению.\n\n#weak Поселиться в заброшенном подземном владении.#!"
-  expedition_type_satellite:0 "Вассальное владение"
-  expedition_type_satellite_desc:0 "$EFFECT_LIST_BULLET$ Основать гномье вассальное владение, создав [client_state|El], из которого можно черпать ресурсы.\n\n#weak Отправить надёжного друга, чтобы расширить вашу державу.#!"
+ expedition_type_standard:0 "Перемещение державы"
+ expedition_type_standard_desc:0 "$EFFECT_LIST_BULLET$ Переместить свою [Concept('realm', 'державу')|E], оставив после себя правителя по своему усмотрению.\n\n#weak Поселиться в заброшенном подземном владении.#!"
+ expedition_type_satellite:0 "Вассальное владение"
+ expedition_type_satellite_desc:0 "$EFFECT_LIST_BULLET$ Основать гномье вассальное владение, создав [client_state|El], из которого можно черпать ресурсы.\n\n#weak Отправить надёжного друга, чтобы расширить вашу державу.#!"
   
-  expedition_variable_trigger:0 "Это занятие нельзя использовать в течение [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'expedition_type_cooldown') )]"
-  ### Host ###
-  activity_expedition_host_desc:0 "\n#L Перемещение державы:#!\n$EFFECT_LIST_BULLET$ Вы покидаете свою [Concept('realm', 'державу')|E], оставив вместо себя другого [Concept('dwarf', 'гнома')|E]-правителя, основав\n   новую державу в другом месте на своё усмотрение.\n\n#L Основать вассальное владение:#!\n$EFFECT_LIST_BULLET$ Вы выбираете [Concept('dwarf', 'гнома')|E], который начнёт основание форпоста в отдалённом\n   заброшенном [Concept('delving', 'подземном владении')|E].\n$EFFECT_LIST_BULLET$ Вассальное владение может стать вашим полноценным [Concept('vassal', 'вассалом')|E] по\n   прошествии определённого времени."
+ expedition_variable_trigger:0 "Это занятие нельзя использовать в течение [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'expedition_type_cooldown') )]"
+ ### Host ###
+ activity_expedition_host_desc:0 "\n#L Перемещение державы:#!\n$EFFECT_LIST_BULLET$ Вы покидаете свою [Concept('realm', 'державу')|E], оставив вместо себя другого [Concept('dwarf', 'гнома')|E]-правителя, основав\n   новую державу в другом месте на своё усмотрение.\n\n#L Основать вассальное владение:#!\n$EFFECT_LIST_BULLET$ Вы выбираете [Concept('dwarf', 'гнома')|E], который начнёт основание форпоста в отдалённом\n   заброшенном [Concept('delving', 'подземном владении')|E].\n$EFFECT_LIST_BULLET$ Вассальное владение может стать вашим полноценным [Concept('vassal', 'вассалом')|E] по\n   прошествии определённого времени."
 
-  ### Province Descs ###
+ ### Province Descs ###
   
-  activity_expedition_province_desc:1 "Вы решили начать экспедицию в провинцию [ROOT.Province.GetName]\n"
-  activity_expedition_realm_province_desc:1 "с целью перенести свою державу на новое место\n\n"
-  activity_expedition_satellite_province_desc:1 "с целью создания вассального владения в заброшенном графстве\n\n"
+ activity_expedition_province_desc:1 "Вы решили начать экспедицию в провинцию [ROOT.Province.GetName]\n"
+ activity_expedition_realm_province_desc:1 "с целью перенести свою державу на новое место\n\n"
+ activity_expedition_satellite_province_desc:1 "с целью создания вассального владения в заброшенном графстве\n\n"
 
-  expedition_option_party_size:0 "Размер экспедиционного отряда"
-  expedition_party_size_few:0 "Небольшой отряд"
-  expedition_party_size_few_desc:1 "$BULLET_WITH_TAB$К вам присоединятся только ваши [spouses|El], [friends|El], [lovers|El] и [knights|El]\n\n$BULLET_WITH_TAB$#weak К вам присоединится небольшой отряд гномов, которым вы доверяете.#!"
-  expedition_party_size_normal:0 "Весомый отряд"
-  expedition_party_size_normal_desc:1 "$BULLET_WITH_TAB$К вам присоединятся персонажи, занимающие [court_positions|El], и авантюрные придворные \n\n#weak С вами отправится внушительный отряд гномов.#!"
-  expedition_party_size_many:0 "Значительный отряд"
-  expedition_party_size_many_desc:1 "$BULLET_WITH_TAB$К вам присоединятся все [courtiers|El]\n\n#weak Обширная часть двора, державы и её окрестностей.#!"
+ expedition_option_party_size:0 "Размер экспедиционного отряда"
+ expedition_party_size_few:0 "Небольшой отряд"
+ expedition_party_size_few_desc:1 "$BULLET_WITH_TAB$К вам присоединятся только ваши [spouses|El], [friends|El], [lovers|El] и [knights|El]\n\n$BULLET_WITH_TAB$#weak К вам присоединится небольшой отряд гномов, которым вы доверяете.#!"
+ expedition_party_size_normal:0 "Весомый отряд"
+ expedition_party_size_normal_desc:1 "$BULLET_WITH_TAB$К вам присоединятся персонажи, занимающие [court_positions|El], и авантюрные придворные \n\n#weak С вами отправится внушительный отряд гномов.#!"
+ expedition_party_size_many:0 "Значительный отряд"
+ expedition_party_size_many_desc:1 "$BULLET_WITH_TAB$К вам присоединятся все [courtiers|El]\n\n#weak Обширная часть двора, державы и её окрестностей.#!"
 
-  expedition_option_gold_investment:0 "Вложения золота"
-  expedition_gold_investment_low:0 "Небольшие вложения"
-  expedition_gold_investment_low_desc:1 "$BULLET_WITH_TAB$По завершении экспедиция может получить здание."
-  expedition_gold_investment_medium:0 "Средние вложения"
-  expedition_gold_investment_medium_desc:1 "$BULLET_WITH_TAB$Будет построено дополнительное здание"
-  expedition_gold_investment_high:0 "Крупные вложения"
-  expedition_gold_investment_high_desc:1 "$BULLET_WITH_TAB$Построенные здания будут иметь повышенный уровень.#!"
+ expedition_option_gold_investment:0 "Вложения золота"
+ expedition_gold_investment_low:0 "Небольшие вложения"
+ expedition_gold_investment_low_desc:1 "$BULLET_WITH_TAB$По завершении экспедиция может получить здание."
+ expedition_gold_investment_medium:0 "Средние вложения"
+ expedition_gold_investment_medium_desc:1 "$BULLET_WITH_TAB$Будет построено дополнительное здание"
+ expedition_gold_investment_high:0 "Крупные вложения"
+ expedition_gold_investment_high_desc:1 "$BULLET_WITH_TAB$Построенные здания будут иметь повышенный уровень.#!"
 
-  # Phases
-  expedition_phase:0 "Экспедиция гномов"
-  expedition_phase_desc:0 "Основать новую колонию в подземном графстве."
+ # Phases
+ expedition_phase:0 "Экспедиция гномов"
+ expedition_phase_desc:0 "Основать новую колонию в подземном графстве."
 
-  # Conclusion
-  activity_expedition_conclusion_desc_realm:0 "Вы основали новую державу, передав старую под управление другого гнома."
-  activity_expedition_conclusion_desc_satellite:0 "Вы основали вассальный форпост в надежде расширить сферу влияния своей державы."
-  activity_expedition_conclusion_desc_standard:0 "Вы отправились на далёкий подземный форпост"
+ # Conclusion
+ activity_expedition_conclusion_desc_realm:0 "Вы основали новую державу, передав старую под управление другого гнома."
+ activity_expedition_conclusion_desc_satellite:0 "Вы основали вассальный форпост в надежде расширить сферу влияния своей державы."
+ activity_expedition_conclusion_desc_standard:0 "Вы отправились на далёкий подземный форпост"
 
-  # Guest Description
+ # Guest Description
    
-  activity_expedition_guest_desc_realm:0 "$BULLET_WITH_TAB$Участники будут путешествовать вместе с вами и присоединятся к вам в вашем новом дворе\n"
-  activity_expedition_guest_desc_satellite:0 "$BULLET_WITH_TAB$Участники отправятся вместе с вами, чтобы помочь в создании вассального владения\n"
+ activity_expedition_guest_desc_realm:0 "$BULLET_WITH_TAB$Участники будут путешествовать вместе с вами и присоединятся к вам в вашем новом дворе\n"
+ activity_expedition_guest_desc_satellite:0 "$BULLET_WITH_TAB$Участники отправятся вместе с вами, чтобы помочь в создании вассального владения\n"
 
-  TRAVEL_NAME_FOR_activity_expedition:0 "Путешествие [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetNamePossessiveOrMy][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )] в графство [Character.MakeScope.Var('dwarven_expedition').GetFlagName]" # тесты
-  var_expedition_type_standard:0 "новая держава"
-  var_expedition_type_satellite:0 "вассальное владение"
+ TRAVEL_NAME_FOR_activity_expedition:0 "Путешествие [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetNamePossessiveOrMy][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )] в графство [Character.MakeScope.Var('dwarven_expedition').GetFlagName]" # тесты
+ var_expedition_type_standard:0 "новая держава"
+ var_expedition_type_satellite:0 "вассальное владение"
 
-  activity_window_character_attendant:0 "Участник\n[Character.GetShortUINameNoTooltip|U]"
-  activity_window_character_leader_of_expedition:0 "Предводитель экспедиции\n[Character.GetShortUINameNoTooltip|U]"
+ activity_window_character_attendant:0 "Участник\n[Character.GetShortUINameNoTooltip|U]"
+ activity_window_character_leader_of_expedition:0 "Предводитель экспедиции\n[Character.GetShortUINameNoTooltip|U]"
 
-  activity_expedition_selection_tooltip:0 "Создать [Concept('realm', 'державу')|E] в ранее заброшенном владении"
-  activity_expedition_destination_selection:0 "Места, которые вы можете выбрать, отображаются на карте.\nДля создания вассальных владений больше подходят определённые места, где меньше окружающих правителей."
+ activity_expedition_selection_tooltip:0 "Создать [Concept('realm', 'державу')|E] в ранее заброшенном владении"
+ activity_expedition_destination_selection:0 "Места, которые вы можете выбрать, отображаются на карте.\nДля создания вассальных владений больше подходят определённые места, где меньше окружающих правителей."
 
  #########################
  # Wine Tasting Activity #
