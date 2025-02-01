@@ -376,7 +376,7 @@ widget = {
 				parentanchor = top
 				size = { 590 90 }
 				position = { 0 80  }
-
+			
 				state = {
 					name = "bookmark_group_change"
 					next = "fadein"
@@ -423,7 +423,7 @@ widget = {
 					delay = 0.58
 					duration = 0.15
 				}
-
+				
 				background = {
 					texture = "gfx/interface/bookmarks/top_bar_panel.dds"
 					margin_top = 10
@@ -750,8 +750,24 @@ widget = {
 										spacing = 128
 										allow_outside = yes
 										item = {
-											widget = {
+											icon = {
 												allow_outside = yes
+												icon = {
+													size = { 65 65 }
+													texture = "gfx/interface/component_masks/mask_fade_circle.dds"
+													parentanchor = center
+													position = { 18 17 }
+													visible = "[EqualTo_string(BookmarkGroup.GetName, 'Война Кольца')]"
+													
+												}
+												
+												icon = {
+													size = { 40 55 }
+													texture = "gfx/interface/component_masks/mask_fade_circle.dds"
+													parentanchor = center
+													position = { 17 17 }
+													visible = "[EqualTo_string(BookmarkGroup.GetName, 'Долгая Зима')]"
+												}
 
 												button_radio = { # Major Dates
 													size = { 35 35 }
@@ -764,8 +780,8 @@ widget = {
 													alwaystransparent = "[GameSetup.IsBookmarkGroupSelected( BookmarkGroup.Self )]"
 													tooltip = "[BookmarkGroup.GetName]"
 													# tooltipwidget = { start_date_tooltip = {} }
-													enabled = "[EqualTo_string(BookmarkGroup.GetName, 'The War of the Ring')]"
-													visible = "[Or(EqualTo_string(BookmarkGroup.GetName, 'The War of the Ring'), Or(EqualTo_string(BookmarkGroup.GetName, Localize('bm_group_1349TA')),EqualTo_string(BookmarkGroup.GetName, Localize('bm_group_3320SA'))))]"
+													enabled = "[EqualTo_string(BookmarkGroup.GetName, 'Война Кольца')]"
+													visible = "[Or(EqualTo_string(BookmarkGroup.GetName, 'Война Кольца'), Or(EqualTo_string(BookmarkGroup.GetName, Localize('bm_group_1349TA')),EqualTo_string(BookmarkGroup.GetName, Localize('bm_group_3320SA'))))]"
 													frame = 1
 													button_radio = {
 														size = { 35 35 }
@@ -787,8 +803,8 @@ widget = {
 													alwaystransparent = "[GameSetup.IsBookmarkGroupSelected( BookmarkGroup.Self )]"
 													tooltip = "[BookmarkGroup.GetName]"
 													# tooltipwidget = { start_date_tooltip = {} }
-													enabled = "[EqualTo_string(BookmarkGroup.GetName, 'The War of the Ring')]"
-													visible = "[Not(Or(EqualTo_string(BookmarkGroup.GetName, 'The War of the Ring'), Or(EqualTo_string(BookmarkGroup.GetName, Localize('bm_group_1349TA')),EqualTo_string(BookmarkGroup.GetName, Localize('bm_group_3320SA')))))]"
+													enabled = "[EqualTo_string(BookmarkGroup.GetName, 'Долгая Зима')]"
+													visible = "[Not(Or(EqualTo_string(BookmarkGroup.GetName, 'Война Кольца'), Or(EqualTo_string(BookmarkGroup.GetName, Localize('bm_group_1349TA')),EqualTo_string(BookmarkGroup.GetName, Localize('bm_group_3320SA')))))]"
 													frame = 1
 													lotr_button_radio_diamond = {
 														size = { 35 35 }
@@ -796,8 +812,9 @@ widget = {
 														visible = "[GameSetup.IsBookmarkGroupSelected( BookmarkGroup.Self )]"
 														alpha = 1
 														alwaystransparent = yes
-													}						
+													}
 												}
+												
 												state = {
 													name = "_mouse_enter"
 													on_start = "[PdxGuiWidget.FindChild('bookmarks_button').TriggerAnimation('mouse_enter')]"
@@ -2326,6 +2343,41 @@ widget = {
 														layoutpolicy_horizontal = expanding
 														visible = "[EqualTo_string(BookmarkCharacter.GetReligionName,Localize('faith_anballukhor'))]"
 														text = "BOOKMARK_CHARACTER_RELIGION_anballukhor"
+														autoresize = no
+														align = nobaseline
+													}
+													text_single = {
+														layoutpolicy_horizontal = expanding
+														visible = "[EqualTo_string(BookmarkCharacter.GetReligionName,Localize('way_of_strength'))]"
+														text = "BOOKMARK_CHARACTER_RELIGION_way_of_strength"
+														autoresize = no
+														align = nobaseline
+													}
+													text_single = {
+														layoutpolicy_horizontal = expanding
+														visible = "[EqualTo_string(BookmarkCharacter.GetReligionName,Localize('faith_rhun_pantheistic'))]"
+														text = "BOOKMARK_CHARACTER_RELIGION_rhun_pantheistic"
+														autoresize = no
+														align = nobaseline
+													}
+													text_single = {
+														layoutpolicy_horizontal = expanding
+														visible = "[EqualTo_string(BookmarkCharacter.GetReligionName,Localize('faith_thani_hazad'))]"
+														text = "BOOKMARK_CHARACTER_RELIGION_thani_hazad"
+														autoresize = no
+														align = nobaseline
+													}
+													text_single = {
+														layoutpolicy_horizontal = expanding
+														visible = "[EqualTo_string(BookmarkCharacter.GetReligionName,Localize('cult_of_zigur'))]"
+														text = "BOOKMARK_CHARACTER_RELIGION_cult_of_zigur"
+														autoresize = no
+														align = nobaseline
+													}
+													text_single = {
+														layoutpolicy_horizontal = expanding
+														visible = "[EqualTo_string(BookmarkCharacter.GetReligionName,Localize('faith_cuind'))]"
+														text = "BOOKMARK_CHARACTER_RELIGION_cuind"
 														autoresize = no
 														align = nobaseline
 													}
