@@ -115,7 +115,7 @@
 
  activity_explore_history:0 "Изучение хроник"
  activity_explore_history_desc:0 "Хороший правитель использует уроки прошлого, чтобы направлять свои действия. Пора браться за книги!"
- activity_explore_history_host_desc:0 "$BULLET_WITH_TAB$Участники могут получить [Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$Возможное улучшение [Concept( 'opinion', 'мнения' )|E] [GetVassalStance( 'zealot' ).GetTextIcon]фанатичных [vassal|El]ов\n\n$BULLET_WITH_TAB$Вы можете получить [artifacts|El]-книги\n$BULLET_WITH_TAB$Вы можете получить уникальные [Concept( 'legend_seeds', 'зарождающиеся легенды' )|E]\n"
+ activity_explore_history_host_desc:0 "$BULLET_WITH_TAB$Участники могут получить [Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] @archivist_trait_icon! «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$Возможное улучшение [Concept( 'opinion', 'мнения' )|E] [GetVassalStance( 'zealot' ).GetTextIcon]фанатичных [vassal|El]ов\n\n$BULLET_WITH_TAB$Вы можете получить [artifacts|El]-книги\n$BULLET_WITH_TAB$Вы можете получить уникальные [Concept( 'legend_seeds', 'зарождающиеся легенды' )|E]\n"
  activity_explore_history_selection_tooltip:0 "Погрузитесь в архивы, изучите или перепишите историю\n\nОжидаемые награды:\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]"
  activity_explore_history_guest_help_text:0 "У [Concept( 'activity_guests', 'гостей' )|E] будет возможность пообщаться и улучшить свои качества архивариуса.\n[GetVassalStance( 'zealot' ).GetTextIcon]Фанатичные [vassals|El] оценят чтение и улучшат [opinion|El].\n"
 
@@ -124,8 +124,8 @@
  explore_history_type_adunaic_propaganda:0 "Спонсировать адунаикскую пропаганду"
  explore_history_type_adunaic_propaganda_desc:0 "$EFFECT_LIST_BULLET$ Вы можете улучшить свои личные навыки, повысить [legitimacy|El] и пытаться повлиять на восприятие вашими подданными вашего правления.\n$EFFECT_LIST_BULLET$ Грубая пропаганда может не понравиться вашим подданным.\n\n#weak Это неопровержимая истина, что потомки Высших людей Анадунэ долгое время безраздельно властвовали как повелители всех [Concept( 'conceptracemen', 'людей' )|E] в [middleearth|E]. Однако с годами многие забыли эту истину и вместо этого недовольно ропщут против нашего правления. Мы должны убедиться, что все наши подданные знают о нашем божественном праве управлять ими.#!"
 
- activity_explore_history_host_desc_trait_xp:0 "$BULLET_WITH_TAB$Участники могут получить [Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n"
- activity_explore_history_host_desc_trait:0 "$BULLET_WITH_TAB$Участники могут получить [trait|El] «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n"
+ activity_explore_history_host_desc_trait_xp:0 "$BULLET_WITH_TAB$Участники могут получить [Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] @archivist_trait_icon! «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n"
+ activity_explore_history_host_desc_trait:0 "$BULLET_WITH_TAB$Участники могут получить [trait|El] @archivist_trait_icon! «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n"
  activity_explore_history_host_desc_chronicler:0 "\n@warning_icon! #negative_value У вас отсутствует [GetCourtPositionType('chronicler_court_position').GetName()]"
  activity_explore_history_host_desc_antiquarian:0 "\n@warning_icon! #negative_value У вас отсутствует [GetCourtPositionType('antiuarian_court_position').GetName()]"
 
@@ -275,6 +275,12 @@
  activity_window_character_chronicler:0 "Хронист\n[Character.GetShortUINameNoTooltip|U]"
  activity_window_character_antiquarian:0 "Антиквар\n[Character.GetShortUINameNoTooltip|U]"
  activity_window_character_court_chaplain:0 "[court_chaplain.GetCouncilTitle|U]\n[Character.GetShortUINameNoTooltip|U]"
+ donated_books_log_title:0 "Окончательный выбор книги"
+ chose_book1_log_title:0 "Окончательный выбор книги"
+ chose_book2_log_title:0 "Окончательный выбор книги"
+ donated_books_log:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] пожертвовать книги в архив"
+ chose_book1_log:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] оставить [book_1.GetName]"
+ chose_book2_log:0 "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] оставить [book_2.GetName]"
 
  #Guest Rules 
  #activity_invite_other_elven_rulers:0 "Elven Rulers"
@@ -408,10 +414,11 @@
  mining_prospecting_begun_log_title:0 "Поиски начинаются"
  #hunt_quarry_selected_log:1 "[CHARACTER.GetShortUIName|U] decided the party will be hunting [CHARACTER.GetInvolvedActivity.Custom('GetAnimalArticle')] [CHARACTER.GetInvolvedActivity.Custom('GetAnimalType')]"
  mining_completed_success_log_title:0 "Итоги шахтёрской экспедиции"
- mining_completed_success_log:0 "Шахтёрская экспедиция персонажа [CHARACTER.GetShortUINamePossessive|U] прошла успешно" #разделение
+ mining_completed_success_log:0 "Шахтёрская экспедиция [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] прошла успешно"
  mining_completed_failure_log_title:0 "$mining_completed_success_log_title$"
- mining_completed_failure_log:0 "Шахтёрская экспедиция персонажа [CHARACTER.GetShortUINamePossessive|U] потерпела неудачу"
-
+ mining_completed_failure_log:0 "Шахтёрская экспедиция [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] потерпела неудачу"
+ history_completed_log_title:0 "Итог исследований хроник"
+ history_completed_log:0 "Изучение хроник [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] завершено"
 
  # Triggers
  activity_mining_location_does_not_have_a_deposit:0 "В этом [Concept('barony', 'баронстве')|E] нет обнаруженных|E] [Concept('resources', 'ресурсов')|E] для добычи."
@@ -517,66 +524,66 @@
  # Dwarven Expedition activity #
  ###############################
 
-  activity_expedition:0 "Экспедиция гномов"
-  activity_expedition_desc:0 "Основать новую державу или поддержать создание вассального владения."
+ activity_expedition:0 "Экспедиция гномов"
+ activity_expedition_desc:0 "Основать новую державу или поддержать создание вассального владения."
 
-  activity_expedition_valid_location_wastelands:0 "Это графство не является пустошью"
-  activity_expedition_valid_location_occupied:0 "Это графство граничит с занятым графством"
+ activity_expedition_valid_location_wastelands:0 "Это графство не является пустошью"
+ activity_expedition_valid_location_occupied:0 "Это графство граничит с занятым графством"
 
-  expedition_type_standard:0 "Перемещение державы"
-  expedition_type_standard_desc:0 "$EFFECT_LIST_BULLET$ Переместить свою [Concept('realm', 'державу')|E], оставив после себя правителя по своему усмотрению.\n\n#weak Поселиться в заброшенном подземном владении.#!"
-  expedition_type_satellite:0 "Вассальное владение"
-  expedition_type_satellite_desc:0 "$EFFECT_LIST_BULLET$ Основать гномье вассальное владение, создав [client_state|El], из которого можно черпать ресурсы.\n\n#weak Отправить надёжного друга, чтобы расширить вашу державу.#!"
+ expedition_type_standard:0 "Перемещение державы"
+ expedition_type_standard_desc:0 "$EFFECT_LIST_BULLET$ Переместить свою [Concept('realm', 'державу')|E], оставив после себя правителя по своему усмотрению.\n\n#weak Поселиться в заброшенном подземном владении.#!"
+ expedition_type_satellite:0 "Вассальное владение"
+ expedition_type_satellite_desc:0 "$EFFECT_LIST_BULLET$ Основать гномье вассальное владение, создав [client_state|El], из которого можно черпать ресурсы.\n\n#weak Отправить надёжного друга, чтобы расширить вашу державу.#!"
   
-  expedition_variable_trigger:0 "Это занятие нельзя использовать в течение [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'expedition_type_cooldown') )]"
-  ### Host ###
-  activity_expedition_host_desc:0 "\n#L Перемещение державы:#!\n$EFFECT_LIST_BULLET$ Вы покидаете свою [Concept('realm', 'державу')|E], оставив вместо себя другого [Concept('dwarf', 'гнома')|E]-правителя, основав\n   новую державу в другом месте на своё усмотрение.\n\n#L Основать вассальное владение:#!\n$EFFECT_LIST_BULLET$ Вы выбираете [Concept('dwarf', 'гнома')|E], который начнёт основание форпоста в отдалённом\n   заброшенном [Concept('delving', 'подземном владении')|E].\n$EFFECT_LIST_BULLET$ Вассальное владение может стать вашим полноценным [Concept('vassal', 'вассалом')|E] по\n   прошествии определённого времени."
+ expedition_variable_trigger:0 "Это занятие нельзя использовать в течение [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'expedition_type_cooldown') )]"
+ ### Host ###
+ activity_expedition_host_desc:0 "\n#L Перемещение державы:#!\n$EFFECT_LIST_BULLET$ Вы покидаете свою [Concept('realm', 'державу')|E], оставив вместо себя другого [Concept('dwarf', 'гнома')|E]-правителя, основав\n   новую державу в другом месте на своё усмотрение.\n\n#L Основать вассальное владение:#!\n$EFFECT_LIST_BULLET$ Вы выбираете [Concept('dwarf', 'гнома')|E], который начнёт основание форпоста в отдалённом\n   заброшенном [Concept('delving', 'подземном владении')|E].\n$EFFECT_LIST_BULLET$ Вассальное владение может стать вашим полноценным [Concept('vassal', 'вассалом')|E] по\n   прошествии определённого времени."
 
-  ### Province Descs ###
+ ### Province Descs ###
   
-  activity_expedition_province_desc:1 "Вы решили начать экспедицию в провинцию [ROOT.Province.GetName]\n"
-  activity_expedition_realm_province_desc:1 "с целью перенести свою державу на новое место\n\n"
-  activity_expedition_satellite_province_desc:1 "с целью создания вассального владения в заброшенном графстве\n\n"
+ activity_expedition_province_desc:1 "Вы решили начать экспедицию в провинцию [ROOT.Province.GetName]\n"
+ activity_expedition_realm_province_desc:1 "с целью перенести свою державу на новое место\n\n"
+ activity_expedition_satellite_province_desc:1 "с целью создания вассального владения в заброшенном графстве\n\n"
 
-  expedition_option_party_size:0 "Размер экспедиционного отряда"
-  expedition_party_size_few:0 "Небольшой отряд"
-  expedition_party_size_few_desc:1 "$BULLET_WITH_TAB$К вам присоединятся только ваши [spouses|El], [friends|El], [lovers|El] и [knights|El]\n\n$BULLET_WITH_TAB$#weak К вам присоединится небольшой отряд гномов, которым вы доверяете.#!"
-  expedition_party_size_normal:0 "Весомый отряд"
-  expedition_party_size_normal_desc:1 "$BULLET_WITH_TAB$К вам присоединятся персонажи, занимающие [court_positions|El], и авантюрные придворные \n\n#weak С вами отправится внушительный отряд гномов.#!"
-  expedition_party_size_many:0 "Значительный отряд"
-  expedition_party_size_many_desc:1 "$BULLET_WITH_TAB$К вам присоединятся все [courtiers|El]\n\n#weak Обширная часть двора, державы и её окрестностей.#!"
+ expedition_option_party_size:0 "Размер экспедиционного отряда"
+ expedition_party_size_few:0 "Небольшой отряд"
+ expedition_party_size_few_desc:1 "$BULLET_WITH_TAB$К вам присоединятся только ваши [spouses|El], [friends|El], [lovers|El] и [knights|El]\n\n$BULLET_WITH_TAB$#weak К вам присоединится небольшой отряд гномов, которым вы доверяете.#!"
+ expedition_party_size_normal:0 "Весомый отряд"
+ expedition_party_size_normal_desc:1 "$BULLET_WITH_TAB$К вам присоединятся персонажи, занимающие [court_positions|El], и авантюрные придворные \n\n#weak С вами отправится внушительный отряд гномов.#!"
+ expedition_party_size_many:0 "Значительный отряд"
+ expedition_party_size_many_desc:1 "$BULLET_WITH_TAB$К вам присоединятся все [courtiers|El]\n\n#weak Обширная часть двора, державы и её окрестностей.#!"
 
-  expedition_option_gold_investment:0 "Вложения золота"
-  expedition_gold_investment_low:0 "Небольшие вложения"
-  expedition_gold_investment_low_desc:1 "$BULLET_WITH_TAB$По завершении экспедиция может получить здание."
-  expedition_gold_investment_medium:0 "Средние вложения"
-  expedition_gold_investment_medium_desc:1 "$BULLET_WITH_TAB$Будет построено дополнительное здание"
-  expedition_gold_investment_high:0 "Крупные вложения"
-  expedition_gold_investment_high_desc:1 "$BULLET_WITH_TAB$Построенные здания будут иметь повышенный уровень.#!"
+ expedition_option_gold_investment:0 "Вложения золота"
+ expedition_gold_investment_low:0 "Небольшие вложения"
+ expedition_gold_investment_low_desc:1 "$BULLET_WITH_TAB$По завершении экспедиция может получить здание."
+ expedition_gold_investment_medium:0 "Средние вложения"
+ expedition_gold_investment_medium_desc:1 "$BULLET_WITH_TAB$Будет построено дополнительное здание"
+ expedition_gold_investment_high:0 "Крупные вложения"
+ expedition_gold_investment_high_desc:1 "$BULLET_WITH_TAB$Построенные здания будут иметь повышенный уровень.#!"
 
-  # Phases
-  expedition_phase:0 "Экспедиция гномов"
-  expedition_phase_desc:0 "Основать новую колонию в подземном графстве."
+ # Phases
+ expedition_phase:0 "Экспедиция гномов"
+ expedition_phase_desc:0 "Основать новую колонию в подземном графстве."
 
-  # Conclusion
-  activity_expedition_conclusion_desc_realm:0 "Вы основали новую державу, передав старую под управление другого гнома."
-  activity_expedition_conclusion_desc_satellite:0 "Вы основали вассальный форпост в надежде расширить сферу влияния своей державы."
-  activity_expedition_conclusion_desc_standard:0 "Вы отправились на далёкий подземный форпост"
+ # Conclusion
+ activity_expedition_conclusion_desc_realm:0 "Вы основали новую державу, передав старую под управление другого гнома."
+ activity_expedition_conclusion_desc_satellite:0 "Вы основали вассальный форпост в надежде расширить сферу влияния своей державы."
+ activity_expedition_conclusion_desc_standard:0 "Вы отправились на далёкий подземный форпост"
 
-  # Guest Description
+ # Guest Description
    
-  activity_expedition_guest_desc_realm:0 "$BULLET_WITH_TAB$Участники будут путешествовать вместе с вами и присоединятся к вам в вашем новом дворе\n"
-  activity_expedition_guest_desc_satellite:0 "$BULLET_WITH_TAB$Участники отправятся вместе с вами, чтобы помочь в создании вассального владения\n"
+ activity_expedition_guest_desc_realm:0 "$BULLET_WITH_TAB$Участники будут путешествовать вместе с вами и присоединятся к вам в вашем новом дворе\n"
+ activity_expedition_guest_desc_satellite:0 "$BULLET_WITH_TAB$Участники отправятся вместе с вами, чтобы помочь в создании вассального владения\n"
 
-  TRAVEL_NAME_FOR_activity_expedition:0 "Путешествие [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetNamePossessiveOrMy][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )] в графство [Character.MakeScope.Var('dwarven_expedition').GetFlagName]" # тесты
-  var_expedition_type_standard:0 "новая держава"
-  var_expedition_type_satellite:0 "вассальное владение"
+ TRAVEL_NAME_FOR_activity_expedition:0 "Путешествие [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetNamePossessiveOrMy][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )] в графство [Character.MakeScope.Var('dwarven_expedition').GetFlagName]" # тесты
+ var_expedition_type_standard:0 "новая держава"
+ var_expedition_type_satellite:0 "вассальное владение"
 
-  activity_window_character_attendant:0 "Участник\n[Character.GetShortUINameNoTooltip|U]"
-  activity_window_character_leader_of_expedition:0 "Предводитель экспедиции\n[Character.GetShortUINameNoTooltip|U]"
+ activity_window_character_attendant:0 "Участник\n[Character.GetShortUINameNoTooltip|U]"
+ activity_window_character_leader_of_expedition:0 "Предводитель экспедиции\n[Character.GetShortUINameNoTooltip|U]"
 
-  activity_expedition_selection_tooltip:0 "Создать [Concept('realm', 'державу')|E] в ранее заброшенном владении"
-  activity_expedition_destination_selection:0 "Места, которые вы можете выбрать, отображаются на карте.\nДля создания вассальных владений больше подходят определённые места, где меньше окружающих правителей."
+ activity_expedition_selection_tooltip:0 "Создать [Concept('realm', 'державу')|E] в ранее заброшенном владении"
+ activity_expedition_destination_selection:0 "Места, которые вы можете выбрать, отображаются на карте.\nДля создания вассальных владений больше подходят определённые места, где меньше окружающих правителей."
 
  #########################
  # Wine Tasting Activity #
@@ -731,6 +738,81 @@
  lotr_wine_tasting_good_readings:0 "Найдена хорошая книга в библиотеке усадьбы"
  lotr_wine_tasting_chess_matches:0 "Весёлые шахматные матчи на экскурсии в винограднике"
  lotr_wine_tasting_enjoyed_great:0 "Приглашение на отличный совместный отдых"
+
+ #########################
+ ### SAILING ACTIVVITY ###
+ #########################
+
+ activity_sailing:0 "Морское путешествие"
+ activity_sailing_desc:0 "Тайны и приключения диких открытых морей манят меня! Разве я могу игнорировать их зов?"
+ activity_sailing_selection_tooltip:0 "Вы отправитесь в #high путешествие#! по открытым морям. Вас ждёт множество приключений!"
+ activity_sailing_host_desc:0 "\n$BULLET_WITH_TAB$@sailor_trait_icon! Участники могут получить [Concept('trait', 'свойство')|E] и [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @sailor_trait_icon! «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$Участники могут потерять [stress_loss_i|E][Concept('stress', 'стресс')|E]\n$BULLET_WITH_TAB$Участники могут получить [Concept('gold', 'золото')|E] или [Concept('artifacts', 'артефакты')|E]\n"
+ activity_sailing_guest_desc:0 "\n$BULLET_WITH_TAB$@sailor_trait_icon! Участники могут получить [Concept('trait', 'свойство')|E] и [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @sailor_trait_icon! «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$Участники могут потерять [stress_loss_i|E][Concept('stress', 'стресс')|E]\n$BULLET_WITH_TAB$Участники могут получить [Concept('gold', 'золото')|E] или [Concept('artifacts', 'артефакты')|E]\n"
+ activity_sailing_province_desc:0 "Вы решили отплыть из порта в провинции [ROOT.Province.GetName]\n"
+ activity_sailing_explore_province_desc:0 "с намерением исследовать берега и реки [Concept('middleearth', 'Средиземья')|E]\n"
+ activity_sailing_raid_province_desc:0 "с намерением отправиться в морской налёт\n"
+ activity_sailing_meneltarma_province_desc:0 "с намерением найти легендарную Менельтарму\n"
+ activity_sailing_conclusion_desc:0 "Морское путешествие возвращает ваш в порт"
+ sailing_type_explore:0 "Исследовательское путешествие"
+ sailing_type_explore_desc:0 "Отправимся исследовать обширные берега, заливы и реки [Concept('middleearth', 'Средиземья')|E]!\n\n$EFFECT_LIST_BULLET$Участники могут получить или улучшить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]» и осмотреть чудеса мира!\n\nВы можете выбрать исследование #high побережий#! или #high рек#!."
+ sailing_type_raid:0 "Морской налёт"
+ sailing_type_raid_desc:0 "Мы вновь поплывём под чёрным парусом. Разорим вражеские берега!\n\nУчастники могут получить [Concept('gold', 'золото')|E] и получить или улучшить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]».\n\nВы можете выбрать между #high разорением берегов#! или #high морским патрулём#!."
+ sailing_type_meneltarma:0 "Поиски Менельтармы"
+ sailing_type_meneltarma_desc:0 "В легендах говорится об острове Менельтарма, последнем осколке [Concept('numenor', 'Нуменора')|E]. Найти его будет подвигом, не имеющим равных.\n\nУчастники могут получить редкие [Concept('artifacts', 'артефакты')|E], уникальный [Concept('modifier', 'модификатор')|E] и [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»\n\n#N Это опасное путешествие. Неподготовленных может ждать гибель в морях.#!"
+ sailing_option_ship_choice:0 "Корабль"
+ sailing_charter:0 "Нанять корабль"
+ sailing_charter_desc:0 "Вы заплатите за найм корабля с командой."
+ sailing_charter_ship:0 "Небольшой корабль"
+ sailing_small_ship:0 "Купить небольшой корабль"
+ sailing_small_ship_desc:0 "Оплатить строительство или покупку уже имеющегося небольшого корабля для путешествия."
+ sailing_select_small_ship:0 "Средний корабль"
+ sailing_big_ship:0 "Купить большой корабль"
+ sailing_big_ship_desc:0 "Оплатить строительство или покупку уже имеющегося большого корабля для путешествия."
+ sailing_select_big_ship:0 "Большой корабль"
+ sailing_option_guests:0 "Пассажиры"
+ sailing_guests_none:0 "Нет"
+ sailing_guests_none_desc:0 "Во время путешествия вас не будут сопровождать дополнительные пассажиры."
+ sailing_guests_none_amount:0 "Без дополнительных пассажиров"
+ sailing_guests_few:0 "Мало"
+ sailing_guests_few_desc:0 "Во время путешествия вас будет сопровождать лишь несколько пассажиров."
+ sailing_guests_few_amount:0 "Мало пассажиров"
+ sailing_guests_many:0 "Много"
+ sailing_guests_many_desc:0 "Во время путешествия вас будет сопровождать множество дополнительных пассажиров."
+ sailing_guests_many_amount:0 "Много пассажиров"
+ sailing_province_requirement_landless:0 "Вы должны выбрать населённую прибрежную [Concept('province', 'провинцию')|E] в пределах вашего дипломатического радиуса."
+ sailing_province_requirement_landed:0 "Вы должны контролировать хотя бы одно прибрежное графство с завершённым владением."
+ sailing_phase:0 "Путешествие"
+ sailing_phase_desc:0 "Самое время отправиться в плавание по открытым морям."
+ sailing_completed_log_title:0 "Морское путешествие подходит к концу"
+ gained_sailor_trait_log_title:0 "Получено [Concept('trait', 'свойство')|E] @sailor_trait_icon! «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»"
+ gained_sailor_xp_log_title:0 "Получен [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @sailor_trait_icon! «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»"
+ sailing_had_sexual_encounter_title:0 "Романтическая встреча"
+ sailing_gained_concubine_log_title:0 "Получен последователь"
+ gained_sailor_trait_log:0 "[host.GetName] [Select_CString(host.IsFemale, 'получила', 'получил' )] [Concept('trait', 'свойство')|E] @sailor_trait_icon! «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»"
+ gained_sailor_xp_log:0 "[host.GetName] [Select_CString(host.IsFemale, 'получила', 'получил' )] [Concept('trait_level_track_xp', 'опыт пути развития')|E] [Concept('trait', 'свойства')|E] @sailor_trait_icon! «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»"
+ TRAVEL_NAME_FOR_activity_sailing:0 "$activity_sailing$ [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetShortUINamePossessive][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )]"
+ SAILING_RAID_ENABLED:0 "Ваша [Concept('culture', 'культура')|E] имеет [Concept('tradition', 'традиции')|E] #high Мореходы#! или #high Пираты Умбара#!"
+ SAILING_MENELTARMA_ENABLED:0 "У вас есть [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»"
+ SAILING_FAILED_NAVIGATION:0 "Путь к Менельтарме открыт"
+ activity_sailing_guest_help_text: "$activity_sailing$"
+ owns_big_ship:0 "Владеет флагманом"
+ owns_big_ship_desc:0 "Ваш [Concept('house', 'дом')|E] владеет большим флагманом"
+ owns_small_ship:0 "Владеет личным кораблём"
+ owns_small_ship_desc:0 "Ваш [Concept('house', 'дом')|E] владеет личным кораблём"
+ sailing_owns_big_ship_desc:0 "Ваш [Concept('house', 'дом')|E] владеет большим флагманом"
+ sailing_owns_small_ship_desc:0 "Ваш [Concept('house', 'дом')|E] владеет личным кораблём"
+
+ opinion_attended_sailing_trip_guest:0 "Приглашение на морское путешествие"
+ opinion_attended_sailing_trip_host:0 "Участие в морском путешествии"
+
+ activity_sailing_province_desc_common_tradeport_minor:0 "#P + $building_type_common_tradeport_01$#! ([building|El])\n"
+ activity_sailing_province_desc_common_tradeport_medium:0 "#P ++ $building_type_common_tradeport_01$#! ([building|El])\n"
+ activity_sailing_province_desc_common_tradeport_major:0 "#P +++ $building_type_common_tradeport_01$#! ([building|El])\n"
+ activity_sailing_province_desc_elven_port_minor:0 "#P + $building_type_elven_port_01$#! ([building|El])\n"
+ activity_sailing_province_desc_elven_port_medium:0 "#P ++ $building_type_elven_port_01$#! ([building|El])\n"
+ activity_sailing_province_desc_elven_port_major:0 "#P +++ $building_type_elven_port_01$#! ([building|El])\n"
+ activity_sailing_province_desc_special_building_minor:0 "#P +++ Особая постройка#! ([building|El])\n"
+ activity_sailing_province_desc_special_building_major:0 "#P +++ Особая постройка#! ([building|El])\n"
 
  #############################
  ### HORSE RACING ACTIVITY ###
