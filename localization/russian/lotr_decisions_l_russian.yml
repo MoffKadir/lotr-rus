@@ -91,6 +91,13 @@
  decision_integrate_nanduhirion_tooltip:0 "Расширить границы Лориэна на запад"
  decision_integrate_nanduhirion_confirm:0 "Нандуирион станет частью Золотого леса."
 
+ decision_reveal_necromancer:0 "Раскрыть Некроманта из Дол Гулдура"
+ decision_reveal_necromancer_desc:0 "На протяжении многих веков из [GetTitleByKey('c_amon_lanc').GetNameNoTier] расползается тьма. Многие рассказывают о появлении некроманта, который обитает в древних руинах на вершине холма, стремясь осквернить [mirkwood|E] и ослабить ближайшие [Concept('elven', 'эльфийские')|E] королевства. Некоторые подозревают, что этот некромант - обычный человек, погрязший в темных искусствах, но мы, [Concept('elves', 'эльфы')|E], знаем, что это большее зло.\n\nХотя вход в мрачный лес - дело опасное, это необходимо сделать, чтобы раскрыть истинную природу тени, которая теперь обитает в Дол Гулдуре. Если мы сможем преодолеть расстояние, истина будет раскрыта."
+ decision_reveal_necromancer_tooltip:0 "Раскрыть истинную природу тьмы в Дол Гулдуре"
+ decision_reveal_necromancer_confirm:0 "Он больше не может прятаться."
+ decision_reveal_necromancer_tt:0 "Ваша держава граничит с провинцией [GetTitleByKey('c_amon_lanc').GetNameNoTier]"
+ decision_reveal_necromancer_tt_2:0 "Некромант владеет Дол Гулдуром"
+
  ### Maglor Decision ###
  decision_annihilate_abhorred:0 "Уничтожить Саурона Отвратительного"
  decision_annihilate_abhorred_tooltip:0 "Раз и навсегда уничтожить слугу Моргота"
@@ -486,7 +493,7 @@
  new_capital_dol_amroth_tooltip:0 "[dol_amroth|E] - легендарная вотчина принцев Дол Амрота. Это величественный замок [dunedain|El] и ключевой культурный центр южного [Concept( 'gondor', 'Гондора' )|E]."
 
  decision_new_capital.tt.new_capital_methir:0 "[GetTitleByKey('c_methir').GetNameNoTier]" 
- new_capital_methir_tooltip:0 "Метир - одно из крупнейших поселений [Concept( 'harondor', 'Харондора' )|E]. Хотя к концу [Concept( 'thirdage', 'Третьей Эпохи' )|E] он сильно пришёл в упадок, его можно остроить заново."
+ new_capital_methir_tooltip:0 "Метир - одно из крупнейших поселений Харондора. Хотя к концу [Concept('thirdage', 'Третьей Эпохи')|E] он сильно пришёл в упадок, его можно остроить заново."
 
  decision_new_capital.tt.new_capital_mirlond:0 "[GetTitleByKey('c_mirlond').GetNameNoTier]" 
  new_capital_mirlond_tooltip:0 "Мирлонд - северная из гаваней-близнецов, расположенная в устье Харнена. Это древнее [Concept( 'numenorean', 'нуменорское' )|E] поселение, долгое время соперничавшее со своим южным близнецом, Рамлондом."
@@ -1217,6 +1224,12 @@
  slave_economy_reorganized:0 "Уровень производства на рабских фермах повышен"
  khand_has_no_empire:0 "[khand|E] не является единой [Concept('empire', 'империей')|E]"
  hussamakir_is_dead:0 "[GetScriptedCharacterByHistoryID( 'lineofafalku11a' ).GetName] #italic мёртв#!"
+
+ decision_sauron_reveal_yourself:0 "Раскрыть себя"
+ decision_sauron_reveal_yourself_tooltip:0 "Сбросить обличье Некроманта из Дол Гулдура"
+ decision_sauron_reveal_yourself_desc:0 "Я спрятался от зорких глаз Мудрых, приняв хитроумное обличье Некроманта из Дол Гулдура. Хотя это и ограничивало мои возможности вести войну и контролировать земли вокруг моей обители, но давало мне время, необходимое для восстановления сил после поражения от рук [Concept('elves', 'эльфов')|E] и людей. Но мир меняется. Может быть, пришло время провозгласить мое возвращение, чтобы все увидели?"
+ decision_sauron_reveal_yourself_confirm:0 "Я снова Властелин земли."
+ decision_sauron_reveal_yourself_tt:0 "Открывает обычные казус белли и экспансию"
 
  ### Orc Descisions ###
 
@@ -2333,12 +2346,12 @@
 
  decision_wulf_affirm_descent_from_freawine:0 "Утвердить происхождение от Фреавине"
  decision_wulf_affirm_descent_from_freawine_tooltip:0 "Раз и навсегда утвердить, что Фрекалинги происходят из королевской линии Эорла."
- decision_wulf_affirm_descent_from_freawine_desc:0 "Вот уже много лет мой дом заявляет о том, чего не хотят признать сомневающиеся и клеветники: что [GetScriptedCharacterByHistoryID( 'lineprefreca2' ).GetFirstName], основатель нашего рода, был бастардом #L [GetScriptedCharacterByHistoryID( 'lineofeorl5' ).GetFirstName]а#!, пятого короля Рохана. Кровь #L [GetScriptedCharacterByHistoryID( 'lineofeorl1' ).GetFirstName]а#! течет и в моих жилах, хотя гордые и надменные люди долгое время отрицали это.\n\nТеперь, когда трон #L [GetTitleByKey('k_rohan').GetNameNoTier]а#! принадлежит мне, а #L [ROOT.Char.GetHouse.GetName]и#! возвысились, у меня есть власть установить истину. Я объявлю это истиной, навсегда закрепив имя Фреки в королевском роду."
+ decision_wulf_affirm_descent_from_freawine_desc:0 "Вот уже много лет мой дом заявляет о том, чего не хотят признать сомневающиеся и клеветники: что [GetScriptedCharacterByHistoryID( 'lineprefreca2' ).GetFirstName], основатель нашего рода, был бастардом [GetScriptedCharacterByHistoryID( 'lineofeorl5' ).GetFirstName], пятого короля Рохана. Кровь #L [GetScriptedCharacterByHistoryID( 'lineofeorl1' ).GetFirstName]а#! течет и в моих жилах, хотя гордые и надменные люди долгое время отрицали это.\n\nТеперь, когда трон #L [GetTitleByKey('k_rohan').GetNameNoTier]а#! принадлежит мне, а #L [ROOT.Char.GetHouse.GetName]и#! возвысились, у меня есть власть установить истину. Я объявлю это истиной, навсегда закрепив имя Фреки в королевском роду."
  decision_wulf_affirm_descent_from_freawine_confirm:0 "Пусть те, кто сомневался в нас, подавятся своей гордыней."
  you_are_illustrious:0 "Ваш [Concept('prestige_level', 'уровень репутации')|E] - @prestige_level_3_icon! [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L] или выше"
  your_dynasty_is_illustrious:0 "[Concept('dynasty_prestige_level','Уровень величия')|E] вашей династии - @dynasty_prestige_icon! #V [dynasty_prestige_level_3|L]#! или выше"
- decision_wulf_affirm_descent_from_freawine_effects1:0 "Вы можете сделать всех членов [Concept('dynasty', 'династии')|E] [GetScriptedCharacterByHistoryID( 'lineprefreca2' ).GetDynasty.GetName] частью [Concept('dynasty', 'династии')|E] [GetScriptedCharacterByHistoryID( 'lineofeorl1' ).GetDynasty.GetName] [dynasty|E]"
- decision_wulf_affirm_descent_from_freawine_effects2:0 "Или вы можете остаться членом [Concept('dynasty', 'династии')|E] [GetScriptedCharacterByHistoryID( 'lineprefreca2' ).GetDynasty.GetName] получить @dynasty_prestige_icon! #P 500#! [Concept('dynasty_prestige', 'признания')|E]"
+ decision_wulf_affirm_descent_from_freawine_effects1:0 "Вы можете сделать всех членов [Concept('dynasty', 'династии')|E] [GetScriptedCharacterByHistoryID( 'lineprefreca2' ).GetDynasty.GetName] частью [Concept('dynasty', 'династии')|E] [GetScriptedCharacterByHistoryID( 'lineofeorl1' ).GetDynasty.GetName]"
+ decision_wulf_affirm_descent_from_freawine_effects2:0 "Или вы можете остаться членом [Concept('dynasty', 'династии')|E] [GetScriptedCharacterByHistoryID( 'lineprefreca2' ).GetDynasty.GetName] и получить @dynasty_prestige_icon! #P 500#! [Concept('dynasty_prestige', 'признания')|E]"
 
  decision_invite_saruman_to_isengard:0 "Передать Саруману ключи от Изенгарда"
  decision_invite_saruman_to_isengard_tooltip:0 "Вы передадите управление башней Ортанк Саруману Белому."
