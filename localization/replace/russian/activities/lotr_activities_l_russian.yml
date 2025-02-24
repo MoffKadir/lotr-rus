@@ -756,9 +756,9 @@
  sailing_type_explore:0 "Исследовательское путешествие"
  sailing_type_explore_desc:0 "Отправимся исследовать обширные берега, заливы и реки [Concept('middleearth', 'Средиземья')|E]!\n\n$EFFECT_LIST_BULLET$Участники могут получить или улучшить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]» и осмотреть чудеса мира!\n\nВы можете выбрать исследование #high побережий#! или #high рек#!."
  sailing_type_raid:0 "Морской налёт"
- sailing_type_raid_desc:0 "Мы вновь поплывём под чёрным парусом. Разорим вражеские берега или отправимся на охотиться на морских обитателей, завоевав славу и добычу!\n\nУчастники могут получить [Concept('gold', 'золото')|E] и получить или улучшить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]».\n\nВы можете выбрать между #high пиратским налётом#! или #high морской охотой#!."
+ sailing_type_raid_desc:0 "Мы вновь поплывём под чёрным парусом. Разорим вражеские берега или отправимся на охотиться на морских обитателей, завоевав славу и добычу!\n\nУчастники могут получить [Concept('gold', 'золото')|E] и получить или улучшить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]».\n\nВы можете выбрать между #high пиратским налётом#! или #high морской охотой#!.\n\n#weak Не может быть выбран для [Concept('seaofrhun', 'Моря Рун')|E]#!"
  sailing_type_meneltarma:0 "Поиски Менельтармы"
- sailing_type_meneltarma_desc:0 "В легендах говорится об острове Менельтарма, последнем осколке [Concept('numenor', 'Нуменора')|E]. Найти его будет подвигом, не имеющим равных.\n\nУчастники могут получить редкие [Concept('artifacts', 'артефакты')|E], уникальный [Concept('modifier', 'модификатор')|E] и [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»\n\n#N Это опасное путешествие. Неподготовленных может ждать гибель в морях.#!"
+ sailing_type_meneltarma_desc:0 "В легендах говорится об острове Менельтарма, последнем осколке [Concept('numenor', 'Нуменора')|E]. Найти его будет подвигом, не имеющим равных.\n\nУчастники могут получить редкие [Concept('artifacts', 'артефакты')|E], уникальный [Concept('modifier', 'модификатор')|E] и [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»\n\n#N Это опасное путешествие. Неподготовленных может ждать гибель в морях.#!\n\n#weak Не может быть выбран для [Concept('seaofrhun', 'Моря Рун')|E]#!"
  sailing_option_ship_choice:0 "Корабль"
  sailing_charter:0 "Нанять корабль"
  sailing_charter_desc:0 "Вы заплатите за найм корабля с командой."
@@ -792,8 +792,10 @@
  gained_sailor_xp_log:0 "[host.GetName] [Select_CString(host.IsFemale, 'получила', 'получил' )] [Concept('trait_level_track_xp', 'опыт пути развития')|E] [Concept('trait', 'свойства')|E] @sailor_trait_icon! «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»"
  TRAVEL_NAME_FOR_activity_sailing:0 "$activity_sailing$ [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetShortUINamePossessive][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )]"
  SAILING_RAID_ENABLED:0 "У вас имеется свойство «[GetTrait('lifestyle_hunter').GetName( GetNullCharacter )]» или \nваша [Concept('culture', 'культура')|E] имеет [Concept('tradition', 'традиции')|E] #high Мореходы#! или #high Пираты Умбара#!"
- SAILING_MENELTARMA_ENABLED:0 "У вас есть [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»"
+ SAILING_RAID_NO_RHUN:0 "#weak Не может быть выбран для [Concept('seaofrhun', 'Моря Рун')|E]#!"
+ SAILING_MENELTARMA_ENABLED:0 "У вас есть не менее 50 [Concept('trait_level_track_xp', 'опыта пути развития')|E] [Concept('trait', 'свойства')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]»"
  SAILING_FAILED_NAVIGATION:0 "Путь к Менельтарме открыт"
+ SAILING_MENELTARMA_NO_RHUN:0 "#weak Не может быть выбран для [Concept('seaofrhun', 'Моря Рун')|E]#!"
  activity_sailing_guest_help_text: "$activity_sailing$"
  owns_big_ship:0 "Владеет флагманом"
  owns_big_ship_desc:0 "Ваш [Concept('house', 'дом')|E] владеет большим флагманом"
@@ -813,6 +815,9 @@
  activity_sailing_province_desc_elven_port_major:0 "#P +++ $building_type_elven_port_01$#! ([building|El])\n"
  activity_sailing_province_desc_special_building_minor:0 "#P +++ Особая постройка#! ([building|El])\n"
  activity_sailing_province_desc_special_building_major:0 "#P +++ Особая постройка#! ([building|El])\n"
+
+ sailing_sabotaged_port_modifier:0 "Саботированный порт"
+ sailing_sabotaged_port_modifier_desc:0 "Порт этого графства недавно подвергся саботажу со стороны неизвестных врагов."
 
  #############################
  ### HORSE RACING ACTIVITY ###
