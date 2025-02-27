@@ -72,7 +72,7 @@
 
  lotr_laamp_2001_contract_scheme: "Перехватить военные припасы"
  lotr_laamp_2001_contract_scheme_action: "Перехватить припасы"
- lotr_laamp_2001_contract_scheme_desc: "Когда [Concept('contractor', 'нанимателю')|E] нужно незаметно и быстро устроить засаду на подступающие вражеские силы, следопыт может действовать гораздо более осмотрительно, чем обычные солдаты.$laamp_contract_scheme_desc_general_boilerplate$"
+ lotr_laamp_2001_contract_scheme_desc: "Говорят, что армию движет вперёд полное брюхо. Если напасть на вражеский склад снабжения, лишив его провизии, половина битвы уже выиграна.$laamp_contract_scheme_desc_general_boilerplate$"
  lotr_laamp_2001_contract_scheme_desc_general: "$lotr_laamp_2001_contract_scheme_desc$"
  lotr_laamp_2001_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
  lotr_laamp_2001_desc_title: "Прославленным следопытам,"
@@ -81,22 +81,21 @@
  lotr_laamp_2001_request: "$laamp_request_boilerplate_steward_scheme$"
 
  lotr_laamp_contract_schemes.2001.t: "Перехватить военные припасы"
- lotr_laamp_contract_schemes.2001.desc: "Placeholder : Boss we found a depot, let's goooooo."
- lotr_laamp_contract_schemes.2001.desc.outro: "\n\nPlaceholder : ooooo."
- laamp_base_contract_schemes.0034.tt.destination_list: "Вы немедленно [Concept('traveling', 'отправитесь')|E] в провинцию [supply_depot.GetNameNoTier]"
+ lotr_laamp_contract_schemes.2001.desc: "[employer.GetFirstName] разворачивает передо мной карту местности, в углу которой есть красная отметка. [employer.GetSheHe] указывает на нее.\n\n«Здесь находится вражеский склад снабжения, в котором они хранят свою еду. Я хочу, чтобы #EMP вы#! остановили их поток провизии. Сожгите его, отравите, мне все равно. Пусть враг сражается с пустым брюхом!»"
+ lotr_laamp_contract_schemes.2001.desc.outro: "\n\nЯ кланяюсь и ухожу."
+ lotr_laamp_contract_schemes.2001.tt.destination_list: "Вы немедленно [Concept('traveling', 'отправитесь')|E] в провинцию [supply_depot.GetNameNoTier]"
  lotr_laamp_contract_schemes.2001.a: "$travel.stationary_domicile.option.t$"
  lotr_laamp_contract_schemes.2001.b: "$travel.mobile_domicile.option.t$"
- lotr_laamp_contract_schemes.2001.c: "Placeholder: Intrigue Challenge"
- lotr_laamp_contract_schemes.2001.tt.destination_list:0 "Placeholder: Destination List"
+ lotr_laamp_contract_schemes.2001.c: "In and out in a blaze of glory!"
 
  lotr_laamp_contract_schemes.2002.t: "$lotr_laamp_contract_schemes.2001.t$: Расставляя ловушку"
- lotr_laamp_contract_schemes.2002.desc: "Placeholder : boss we're here, let's goooo."
- lotr_laamp_contract_schemes.2002.desc.outro: "\n\nPlaceholder : oooooo."
- lotr_laamp_contract_schemes.2002.a: "График движения конвоев несложно определить."
- lotr_laamp_contract_schemes.2002.b: "Думаю, я смогу решить эту проблему..."
+ lotr_laamp_contract_schemes.2002.desc: "Я стою на гребне, с которого открывается вид на склад снабжения, обнесенный деревянным частоколом и сторожевыми башнями. В ночи мерцают факелы, и через регулярные промежутки времени здесь проходят колонны с припасами. Я наблюдаю за передвижениями стражников и думаю про себя."
+ lotr_laamp_contract_schemes.2002.desc.outro: "\n\nКонечно, мы можем напасть на сам склад, уничтожив все запасы одним махом; но в качестве альтернативы можно устроить засаду на конвои, находящиеся дальше, что окажется менее рискованным."
+ lotr_laamp_contract_schemes.2002.a: "График движения конвоев легко оценить; атаковать их по частям очень просто."
+ lotr_laamp_contract_schemes.2002.b: "Устраивать засады на конвои может быть утомительно, но это лучшее решение."
  lotr_laamp_contract_schemes.2002.b.tt.success: "Вам удается отобрать значительное количество припасов."
  lotr_laamp_contract_schemes.2002.b.tt.failure: "Вам не удается перехватить ни одного припаса."
- lotr_laamp_contract_schemes.2002.c: "Хорошо подготовленная засада никогда не подводит."
+ lotr_laamp_contract_schemes.2002.c: "Нападем прямо и незаметно и покончим с этим!"
  lotr_laamp_contract_schemes.2002.d.sacrifice_exists: "[sacrifice.GetFirstNameNoTooltip|U] останется, чтобы организовать регулярный перехват поставок."
  lotr_laamp_contract_schemes.2002.d.sacrifice_unexists: "Увы, у меня нет достаточно опытных слуг, чтобы позаботиться об этом вместо меня."
  lotr_laamp_contract_schemes.2002.d.no_valid_char: "У вас нет доступного [Concept('follower', 'последователя')|E] с навыком [Concept('intrigue', 'интриг')|E] не ниже [EmptyScope.ScriptValue('laamp_base_contract_schemes_2661_other_skill_threshold_value')|0] для временного назначения ко [Concept('court', 'двору')|E] персонажа [employer.GetFirstNamePossessive]"
@@ -106,13 +105,13 @@
  #lotr_laamp_contract_schemes.2002.f: "A chance for enlightened debate you say!"
  lotr_laamp_contract_schemes.2002.g: "Я могу решить любую проблему, если приложу к этому усилия!"
 
- lotr_laamp_contract_schemes.2003.t: "Placeholder : Victory"
- lotr_laamp_contract_schemes.2003.desc: "Placeholder : Yay we won"
- lotr_laamp_contract_schemes.2003.a: "Placeholder : :)"
+ lotr_laamp_contract_schemes.2003.t: "$lotr_laamp_contract_schemes.2001.t$: успех!"
+ lotr_laamp_contract_schemes.2003.desc: "Когда я вхожу в комнату, [employer.GetFirstNameNicknamedPossessive] поворачивается ко мне, оторвавшись от разбросанных по столу страниц.\n\n«Отличная работа!», - говорит [employer.GetSheHe], ухмыляясь. «Судя по тому, что докладывают мои разведчики, враг находится в полном смятении! Что ж, [Select_CString(employer.IsFemale, 'уверена', 'уверен' )], они еще больше обрадуются, когда поймут, что все, что им осталось съесть, - это несколько капустных голов и их сапоги».\n\n[employer.GetTitleAsNameNoTooltip] даёт знак, и один из слуг выходит вперед, протягивая небольшую шкатулку, наполненную золотом. Я беру ее, кланяюсь и бесшумно выхожу."
+ lotr_laamp_contract_schemes.2003.a: "Отличная работа!"
 
- lotr_laamp_contract_schemes.2004.t: "Placeholder : Defeat"
- lotr_laamp_contract_schemes.2004.desc: "Placeholder : Boo we failed"
- lotr_laamp_contract_schemes.2004.a: "Placeholder : :("
+ lotr_laamp_contract_schemes.2004.t: "$lotr_laamp_contract_schemes.2001.t$: провал!"
+ lotr_laamp_contract_schemes.2004.desc: "Я вхожу в комнату с низко опущенной головой, и [employer.GetFirstNameNicknamedPossessive] встречает меня разочарованным взглядом.\n\n«Я [Select_CString(employer.IsFemale, 'ожидала', 'ожидал' )] большего», - говорит [employer.GetSheHe] через стол, разрезая кусок фрукта. «Особенно от кого-то с вашей репутацией. Я [Select_CString(employer.IsFemale, 'думала', 'думал' )], это простая работа, но увы! А теперь проваливайте».\n\nЯ бесшумно выхожу из комнаты."
+ lotr_laamp_contract_schemes.2004.a: "Вот так."
 
  lotr_laamp_3011_contract: "$lotr_laamp_3011_contract_scheme$"
  lotr_laamp_3011_request: "$laamp_request_boilerplate_intrigue_scheme$"
@@ -213,6 +212,8 @@
  #######################
  ### Story Contracts ###
  #######################
+
+ ### Bountig Contracts ###
  lotr_bountig_story_eastern_rhovanion_war_contract: "$lotr_bountig_story_eastern_rhovanion_war$"
  lotr_bountig_story_eastern_rhovanion_war: "Наёмным мечникам,"
  lotr_bountig_story_eastern_rhovanion_war_desc: "[TaskContract.GetTaker.GetName], до меня доходила молва о том, что у вас сильная рука и острый ум. Я собираю войско в западных землях, чтобы найти новое, безопасное место для нашего поселения.\n\nНе стану отрицать, это будет трудно - всадники зеленых равнин сильны, но я не сомневаюсь в нашей победе. Присоединяйтесь к нам, и я сделаю вас капитаном и предоставлю право выбора трофеев - возможно, даже земли, если вам будет угодно?"
@@ -249,6 +250,7 @@
  FIND_ASTEREL_OWNER_INTRIGUE: "Ваш навык [Concept('intrigue', 'интриг')|E]: $VALUE|=+0$"
  FIND_ASTEREL_SPYMASTER_INTRIGUE: "Навык [Concept('intrigue', 'интриг')|E] вашего тайного советника: $VALUE|=+0$"
 
+ ### Arphazel Contracts ###
  lotr_arphazel_contract_mirlond:0 "Помочь Мирлонду"
  lotr_arphazel_contract_mirlond_contract:0 "$lotr_arphazel_contract_mirlond$"
  lotr_arphazel_contract_mirlond_desc:0 "\nНа севере лежит великая гавань [GetTitleByKey('c_mirlond').GetNameNoTier], известная разрозненным людям #L [GetTitleByKey('k_harondor').GetNameNoTier]а#! как #italic Мирлонд#!. Владыка Мирлонда прислал мне послание, приглашая в свою резиденцию для обсуждения выгодного контракта. Детали пока неясны, но в послании ясно сказано, что от исхода этого контракта будет зависеть судьба всего города..."
@@ -278,3 +280,11 @@
  lotr_arphazel_contract_tolfalas_desc:0 "\nЯ получила таинственное сообщение от незнакомца, предлагающего мне «уникальную возможность», которая скоро истечет. Незнакомец хочет встретиться со мной в доках на южной оконечности острова [GetTitleByKey('d_tolfalas').GetNameNoTier], обещая очень необычную награду."
  lotr_arphazel_contract_tolfalas_desc_title:0 "$lotr_arphazel_contract_tolfalas$"
  lotr_arphazel_contract_tolfalas_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы посетили остров [GetTitleByKey('d_tolfalas').GetNameNoTier]."
+
+ ### Eradan Contracts ###
+
+ lotr_eradan_contract_fornost:0 "Форност: Тьма внутри"
+ lotr_eradan_contract_fornost_contract:0 "$lotr_eradan_contract_fornost$"
+ lotr_eradan_contract_fornost_desc:0 "\nДонесения других [Concept('dunedainnorth', 'дунэдайн севера')|E] говорят о том, что в разрушенном городе [GetTitleByKey('c_fornost').GetNameNoTier] творится что-то недоброе. Вождь Арагорн поручил мне и моим спутникам расследовать эту тьму и устранить ее источник."
+ lotr_eradan_contract_fornost_desc_title:0 "$lotr_eradan_contract_fornost$"
+ lotr_eradan_contract_fornost_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы исследовали руины #L [GetTitleByKey('c_fornost').GetNameNoTier]а#!."
