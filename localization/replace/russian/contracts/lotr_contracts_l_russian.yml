@@ -3,7 +3,7 @@
  lotr_laamp_1001_contract: "Выследить лазутчиков"
  lotr_laamp_1001_desc_title: "Именитым бойцам,"
  lotr_laamp_1001_desc: "[TaskContract.GetTarget.GetPrimaryTitle.GetNameNoTierNoTooltip] страдает от выживших вражеских лазутчиков, сеющих ужас и хаос. Любой, кто захочет уничтожить их, будет вознаграждён."
- lotr_laamp_1001_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы [Concept('travel', 'отправились')|E] в [Concept('counties', 'графства')|E] [Concept('contractor_possessive', 'заказчика')|E] с уцелевшим вражеским населением"
+ lotr_laamp_1001_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы [Concept('travel', 'отправились')|E] в [Concept('counties', 'графства')|E] [Concept('contractor_possessive', 'заказчика')|E] с уцелевшим вражеским населением"
 
  lotr_laamp_contract_schemes.1001.t: "$contract_event_prefix$ $lotr_laamp_1001_contract$"
  lotr_laamp_contract_schemes.1001.desc: "[task_contract_councillor.GetName], [task_contract_councillor_liege.GetPrimaryTitle.GetNameNoTierPossessive]ий [task_contract_councillor.GetCouncilTitle|l], гостит в моём лагере целый день. Как только мы остаёмся одни, [task_contract_councillor.GetSheHe] начинает бормотать.\n\n«Стыдно признаться... но мне нужна ваша помощь, чтобы разобраться с хаосом во владении [task_contract_destination.GetName]». [task_contract_councillor.GetCouncilTitle] хмыкает и хмурится.\n\n"
@@ -28,8 +28,8 @@
  lotr_laamp_contract_schemes.1003.a: "Поспешим!"
  lotr_laamp_contract_schemes.1003.b: "Я перенесу туда свой лагерь." 
  lotr_laamp_contract_schemes.1003.c: "[task_contract_employer.GetFirstNamePossessiveNoTooltip], с меня хватит ваших проблем."
- lotr_laamp_contract_schemes.1003_success: "Вам удалось выполнить [Concept('task_contract', 'договор')|E] «[task_contract.GetType.GetName]»: вы помогли персонажу [task_contract_employer.GetShortUIName] восстановить мир на [task_contract_employer.GetHerHis] землях"
- lotr_laamp_contract_schemes.1003_fail: "Вы провалили [Concept('task_contract', 'договор')|E] «[task_contract.GetType.GetName]»: вы не смогли восстановить мир на землях персонажа [task_contract_employer.GetShortUIName]"
+ lotr_laamp_contract_schemes.1003_success: "Вам удалось выполнить [Concept('task_contract', 'контракт')|E] «[task_contract.GetType.GetName]»: вы помогли персонажу [task_contract_employer.GetShortUIName] восстановить мир на [task_contract_employer.GetHerHis] землях"
+ lotr_laamp_contract_schemes.1003_fail: "Вы провалили [Concept('task_contract', 'контракт')|E] «[task_contract.GetType.GetName]»: вы не смогли восстановить мир на землях персонажа [task_contract_employer.GetShortUIName]"
  lotr_laamp_contract_schemes.1003.travel_without_domicile: "Вас ждет [Concept('travel', 'путешествие')|E] в провинцию [corrupt_province.GetName] без переноса [Concept('camp', 'лагеря')|E]"
  lotr_laamp_contract_schemes.1003.travel_with_domicile: "Вы отправитесь в [Concept('travel', 'путешествие')|E] в провинцию [corrupt_province.GetName] вместе с вашим [Concept('camp', 'лагерем')|E]"
 
@@ -255,31 +255,37 @@
  lotr_arphazel_contract_mirlond_contract:0 "$lotr_arphazel_contract_mirlond$"
  lotr_arphazel_contract_mirlond_desc:0 "\nНа севере лежит великая гавань [GetTitleByKey('c_mirlond').GetNameNoTier], известная разрозненным людям #L [GetTitleByKey('k_harondor').GetNameNoTier]а#! как #italic Мирлонд#!. Владыка Мирлонда прислал мне послание, приглашая в свою резиденцию для обсуждения выгодного контракта. Детали пока неясны, но в послании ясно сказано, что от исхода этого контракта будет зависеть судьба всего города..."
  lotr_arphazel_contract_mirlond_desc_title:0 "$lotr_arphazel_contract_mirlond$"
- lotr_arphazel_contract_mirlond_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы помогли правителю советом."
+ lotr_arphazel_contract_mirlond_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы помогли правителю советом."
 
  lotr_arphazel_contract_harfalas:0 "Помочь Харфаласу"
  lotr_arphazel_contract_harfalas_contract:0 "$lotr_arphazel_contract_harfalas$"
  lotr_arphazel_contract_harfalas_desc:0 "\nВдоль побережья #L [GetTitleByKey('k_harondor').GetNameNoTier]а#! расположено множество небольших портов, которые часто переходили из рук в руки во время войн между [Concept('gondor', 'Гондором')|E] и харадрим. Один из них - [GetTitleByKey('c_harfalas').GetNameNoTier], которым в настоящее время правит властитель харондорим. Узнав о моих успехах в Мирлонде, владыка Харфаласа попросил меня о помощи в одном деликатном деле, пригласив нанести визит при первой же возможности..."
  lotr_arphazel_contract_harfalas_desc_title:0 "$lotr_arphazel_contract_harfalas$"
- lotr_arphazel_contract_harfalas_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы помогли правителю советом."
+ lotr_arphazel_contract_harfalas_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы помогли правителю советом."
 
  lotr_arphazel_contract_linhir:0 "Призыв в Линхир"
  lotr_arphazel_contract_linhir_contract:0 "$lotr_arphazel_contract_linhir$"
  lotr_arphazel_contract_linhir_desc:0 "\nВ мой лагерь прибывает письмо от леди Фириэн из #L [GetTitleByKey('c_linhir').GetNameNoTier]а#!, чью жизнь я спасла во время пребывания в городе [GetTitleByKey('c_harfalas').GetNameNoTier]. Она приглашает меня посетить двор ее отца, чтобы должным образом отблагодарить меня за спасение и обсудить новые возможности для меня в [Concept('gondor', 'Гондоре')|E]..." 
  lotr_arphazel_contract_linhir_desc_title:0 "$lotr_arphazel_contract_linhir$"
- lotr_arphazel_contract_linhir_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы посетили правителя."
+ lotr_arphazel_contract_linhir_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы посетили правителя."
 
  lotr_arphazel_contract_ramlond:0 "Помочь Рамлонду"
  lotr_arphazel_contract_ramlond_contract:0 "$lotr_arphazel_contract_ramlond$"
  lotr_arphazel_contract_ramlond_desc:0 "\nЧерез устье реки Харнен лежит обнесенная стеной гавань [GetTitleByKey('c_ramlond').GetNameNoTier]. Ко мне пришло письмо от местного властителя с просьбой о помощи. О сути дела умалчивается, вероятно, из-за опасений, что послание будет перехвачено..."
  lotr_arphazel_contract_ramlond_desc_title:0 "$lotr_arphazel_contract_ramlond$"
- lotr_arphazel_contract_ramlond_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы отправились ко двору правителя."
+ lotr_arphazel_contract_ramlond_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы отправились ко двору правителя."
 
  lotr_arphazel_contract_tolfalas:0 "Таинственное послание"
  lotr_arphazel_contract_tolfalas_contract:0 "$lotr_arphazel_contract_tolfalas$"
  lotr_arphazel_contract_tolfalas_desc:0 "\nЯ получила таинственное сообщение от незнакомца, предлагающего мне «уникальную возможность», которая скоро истечет. Незнакомец хочет встретиться со мной в доках на южной оконечности острова [GetTitleByKey('d_tolfalas').GetNameNoTier], обещая очень необычную награду."
  lotr_arphazel_contract_tolfalas_desc_title:0 "$lotr_arphazel_contract_tolfalas$"
- lotr_arphazel_contract_tolfalas_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы посетили остров [GetTitleByKey('d_tolfalas').GetNameNoTier]."
+ lotr_arphazel_contract_tolfalas_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы посетили остров [GetTitleByKey('d_tolfalas').GetNameNoTier]."
+
+ lotr_arphazel_contract_andrast:0 "Требуются умелые руки"
+ lotr_arphazel_contract_andrast_contract:0 "$lotr_arphazel_contract_andrast$"
+ lotr_arphazel_contract_andrast_desc:0 "\nВладыка #L [GetTitleByKey('c_serelond').GetNameNoTier]а#! связался со мной, прося помощи в строительстве нового порта на дальней стороне мыса Андраст. Моя помощь нужна для того, чтобы помочь этому поселению стать полноценным городом."
+ lotr_arphazel_contract_andrast_desc_title:0 "$lotr_arphazel_contract_andrast$"
+ lotr_arphazel_contract_andrast_request: "Этот [Concept('task_contract', 'контракт')|E] требует от вас помощи в строительстве новой колонии."
 
  ### Eradan Contracts ###
 
@@ -287,16 +293,16 @@
  lotr_eradan_contract_fornost_contract:0 "$lotr_eradan_contract_fornost$"
  lotr_eradan_contract_fornost_desc:0 "\nДонесения других [Concept('dunedainnorth', 'дунэдайн севера')|E] говорят о том, что в разрушенном городе [GetTitleByKey('c_fornost').GetNameNoTier] творится что-то недоброе. Вождь Арагорн поручил мне и моим спутникам расследовать эту тьму и устранить ее источник."
  lotr_eradan_contract_fornost_desc_title:0 "$lotr_eradan_contract_fornost$"
- lotr_eradan_contract_fornost_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы исследовали руины #L [GetTitleByKey('c_fornost').GetNameNoTier]а#!."
+ lotr_eradan_contract_fornost_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы исследовали руины #L [GetTitleByKey('c_fornost').GetNameNoTier]а#!."
 
  lotr_eradan_contract_barrowdowns:0 "Могильники: Пропавшие следопыты"
  lotr_eradan_contract_barrowdowns_contract:0 "$lotr_eradan_contract_barrowdowns$"
  lotr_eradan_contract_barrowdowns_desc:0 "\nДва следопыта из числа [Concept('dunedainnorth', 'дунэдайн севера')|E] пропали в Могильниках, древнем месте упокоения предков эдайн. Хальбарад попросил нас расследовать исчезновения, пока мы следуем в [imladris|E], чтобы сообщить [Concept('elrond', 'Эльронду')|E] о событиях, произошедших в #L [GetTitleByKey('c_fornost').GetNameNoTier]е#!."
  lotr_eradan_contract_barrowdowns_desc_title:0 "$lotr_eradan_contract_barrowdowns$"
- lotr_eradan_contract_barrowdowns_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы нашли двух пропавших следопытов в [GetTitleByKey('c_dol_daergorthad').GetNameNoTier]."
+ lotr_eradan_contract_barrowdowns_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы нашли двух пропавших следопытов в [GetTitleByKey('c_dol_daergorthad').GetNameNoTier]."
 
  lotr_eradan_contract_rivendell:0 "Ривенделл: Последний домашний приют"
  lotr_eradan_contract_rivendell_contract:0 "$lotr_eradan_contract_rivendell$"
  lotr_eradan_contract_rivendell_desc:0 "\nНайдя двух пропавших следопытов в Могильниках, мы должны продолжить нашу первоначальную миссию, порученную Хальбарадом, отправившись в [imladris|E] и сообщив [Concept('elrond', 'Эльронду')|E] о событиях, произошедших в #L [GetTitleByKey('c_fornost').GetNameNoTier]е#!."
  lotr_eradan_contract_rivendell_desc_title:0 "$lotr_eradan_contract_rivendell$"
- lotr_eradan_contract_rivendell_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы отправились в [imladris|E], чтобы поговорить с [Concept('elrond', 'Эльрондом')|E]."
+ lotr_eradan_contract_rivendell_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы отправились в [imladris|E], чтобы поговорить с [Concept('elrond', 'Эльрондом')|E]."

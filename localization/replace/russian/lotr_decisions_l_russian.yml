@@ -13,7 +13,7 @@
  decision_sail_to_valinor_tooltip:0 "Покинуть [middleearth|E] и присоединиться к своему народу в [Concept( 'valinor', 'Валиноре' )|E]"
  decision_sail_to_valinor_desc:0 "Долгие годы после разделения мира наш народ отправлялся по Прямому Пути, отплывая на запад, через Разделяющие моря, из Сфер [Concept( 'ardaconcept', 'Арды' )|E], навстречу нашему народу в [Concept( 'valinor', 'Валиноре' )|E].\n\nИ пусть моя жизнь сложилась в [middleearth|E], и многое здесь мне ещё можно было бы сделать, я не могу унять этот зов души, что тянет меня в великий поход на запад."
  decision_sail_to_valinor_confirm:0 "Время пришло"
- sail_to_valinor:0 "Ваш предыдущий персонаж станет неиграбельным"
+ sail_to_valinor:0 "Вы отправляетесь в путешествие на запад, в Валинор.\n\nПо прибытии вы будете свергнуты, а ваш предыдущий персонаж станет неиграбельным"
  trait_sailed_west:0 "Уплыл на запад"
  trait_sailed_west_desc:0 "Этот персонаж отправился по тайному Прямому Пути из Сфер [Concept( 'ardaconcept', 'Арды' )|E], чтобы присоединиться к своему народу в [Concept( 'undyinglands', 'Бессмертных землях' )|E]."
  trait_sailed_west_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] по тайному Прямому Пути из Сфер Арды, чтобы присоединиться к своему народу в Бессмертных землях."
@@ -1885,6 +1885,10 @@
  decision_kill_smaug_tooltip:0 "Начать экспедицию, чтобы убить Смауга"
  decision_kill_smaug_desc:0 "Дракон слишком долго пролежал в нашей горе. За это время он, должно быть, ослаб и обленился. Многие признаки указывают на влияние Смауга на горные водопады. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] воспользоваться этим шансом и вернуть себе Одинокую гору!"
  decision_kill_smaug_confirm:0 "Вернуть Одинокую гору!"
+ decision_kill_smaug_decision_effect_1: "Вы попытаетесь убить [Concept('dragon', 'дракона')|E] Смауга. Следующие факторы будут влиять на шанс успеха, вплоть до 80%\n$BULLET_WITH_TAB$Член династии Айвадиюрия, живущий или правящий Озёрным городом\n$BULLET_WITH_TAB$Правитель Озёрного города с высокой [Concept('prowess', 'доблестью')|E].\n$BULLET_WITH_TAB$Владение [Concept('elven', 'эльфийским')|E] мечом из [Concept('firstage', 'Первой эпохи')|E].\n$BULLET_WITH_TAB$Владение гномьим шлемом из Первой эпохи.\n$BULLET_WITH_TAB$У вас есть подручный-хоббит, чей навык [Concept('intrigue', 'интриг')|E] [intrigue_i|E]15 или выше.\n$BULLET_WITH_TAB$Правитель Озёрного города владеет драконоборческим [Concept('artifact', 'артефактом')|E], например, Чёрной стрелой или Снарядом стреломёта."
+ decision_kill_smaug_decision_effect_1_a: "Вы попытаетесь убить [Concept('dragon', 'дракона')|E] Смауга. Следующие факторы будут влиять на шанс успеха, вплоть до 50%\n$BULLET_WITH_TAB$Правитель Озёрного города с высокой [Concept('prowess', 'доблестью')|E].\n$BULLET_WITH_TAB$Владение [Concept('elven', 'эльфийским')|E] мечом из [Concept('firstage', 'Первой эпохи')|E].\n$BULLET_WITH_TAB$Владение гномьим шлемом из Первой эпохи.\n$BULLET_WITH_TAB$У вас есть подручный-хоббит, чей навык [Concept('intrigue', 'интриг')|E] [intrigue_i|E]15 или выше.\n$BULLET_WITH_TAB$Правитель Озёрного города владеет драконоборческим [Concept('artifact', 'артефактом')|E], например, Чёрной стрелой или Снарядом стреломёта."
+ decision_kill_smaug_decision_effect_2: "Если вы #N потерпите неудачу#!, вы #N УМРЁТЕ!#!, а Эсгарот обратится в руины"
+ decision_kill_smaug_decision_effect_3: "Если вы #P добьетесь успеха#!, то вернете себе Одинокую гору, а дракон умрёт!"
 
  #####################################
  #### Artifact Crafting Decisions ####
@@ -1919,7 +1923,7 @@
  struggle_balrog_ending_kill_balrog_tooltip:0 "Вы попытаетесь убить балрога"
  struggle_balrog_ending_kill_balrog_confirm:0 "Багровый огонь не поможет тебе, Пламя Удуна!"
  struggle_balrog_ending_kill_balrog_decision_correct_phase_tt:0 "$balrog_struggle_ending_decision_correct_involvement_tt$ и текущая [struggle_phase|El] - [struggle_balrog_phase_dormant|E]"
- struggle_balrog_ending_kill_balrog_strong_friend:0 "У вас есть [friend|El]-[Concept( 'elven', 'эльф' )|E] или [maiargods|E], чья [prowess|El] равна или выше [prowess_i|E]30"
+ struggle_balrog_ending_kill_balrog_strong_friend:0 "У вас есть [friend|El]-[Concept( 'elven', 'эльф' )|E] или [maiargods|E], чья [prowess|El] равна или выше [prowess_i|E]60"
  struggle_balrog_ending_kill_balrog_decision_effect_1:0 "Вы попытаетесь убить [Concept( 'balrog', 'балрога' )|E]. На шанс успеха влияют следующие факторы, вплоть до 50%:\n$BULLET_WITH_TAB$Высокий показатель [Concept( 'prowess', 'доблести' )|E] и [Concept( 'martial', 'военного дела' )|E].\n$BULLET_WITH_TAB$Количество контролируемых провинции в пределах [Concept( 'struggle_region', 'области борьбы' )|E].\n$BULLET_WITH_TAB$Наличие [Concept( 'friend', 'друга' )|E]-эльфа\n$BULLET_WITH_TAB$Владение Шлемом Дурина ([artifact|El])"
  struggle_balrog_ending_kill_balrog_decision_effect_2:0 "Если вы #N потерпите неудачу#!, вы #N ПОГИБНЕТЕ!#!"
  struggle_balrog_ending_kill_balrog_decision_effect_3:0 "Если вы #P добьётесь успеха#!, вы всё равно можете #N погибнуть#!, и тогда произойдёт следующее:\n"
@@ -2374,7 +2378,7 @@
 
  decision_wulf_affirm_descent_from_freawine:0 "Утвердить происхождение от Фреавине"
  decision_wulf_affirm_descent_from_freawine_tooltip:0 "Раз и навсегда утвердить, что Фрекалинги происходят из королевской линии Эорла."
- decision_wulf_affirm_descent_from_freawine_desc:0 "Вот уже много лет мой дом заявляет о том, чего не хотят признать сомневающиеся и клеветники: что [GetScriptedCharacterByHistoryID( 'lineprefreca2' ).GetFirstName], основатель нашего рода, был бастардом [GetScriptedCharacterByHistoryID( 'lineofeorl5' ).GetFirstName], пятого короля Рохана. Кровь #L [GetScriptedCharacterByHistoryID( 'lineofeorl1' ).GetFirstName]а#! течет и в моих жилах, хотя гордые и надменные люди долгое время отрицали это.\n\nТеперь, когда трон #L [GetTitleByKey('k_rohan').GetNameNoTier]а#! принадлежит мне, а #L [ROOT.Char.GetHouse.GetName]и#! возвысились, у меня есть власть установить истину. Я объявлю это истиной, навсегда закрепив имя Фреки в королевском роду."
+ decision_wulf_affirm_descent_from_freawine_desc:0 "Вот уже много лет мой дом заявляет о том, чего не хотят признать сомневающиеся и клеветники: что [GetScriptedCharacterByHistoryID( 'lineprefreca2' ).GetFirstName], основатель нашего рода, был бастардом [GetScriptedCharacterByHistoryID( 'lineofeorl6' ).GetFirstName], пятого короля Рохана. Кровь #L [GetScriptedCharacterByHistoryID( 'lineofeorl1' ).GetFirstName]а#! течет и в моих жилах, хотя гордые и надменные люди долгое время отрицали это.\n\nТеперь, когда трон #L [GetTitleByKey('k_rohan').GetNameNoTier]а#! принадлежит мне, а #L [ROOT.Char.GetHouse.GetName]и#! возвысились, у меня есть власть установить истину. Я объявлю это истиной, навсегда закрепив имя Фреки в королевском роду."
  decision_wulf_affirm_descent_from_freawine_confirm:0 "Пусть те, кто сомневался в нас, подавятся своей гордыней."
  you_are_illustrious:0 "Ваш [Concept('prestige_level', 'уровень репутации')|E] - @prestige_level_3_icon! [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L] или выше"
  your_dynasty_is_illustrious:0 "[Concept('dynasty_prestige_level','Уровень величия')|E] вашей династии - @dynasty_prestige_icon! #V [dynasty_prestige_level_3|L]#! или выше"
