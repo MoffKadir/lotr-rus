@@ -1,0 +1,86 @@
+# EK ADDITION: Added new entries for the arcane clash
+# Put widgets we reuse within the tournament plugin widgets here.
+#
+types EKTournamentWidgetTypes
+{
+   ### EK EDIT
+    ### Brief: hbox_contest_type_affinies_magic
+	# Has the following blocks:
+	#
+	#	"icon_sizes"
+	#		The size of the icons. Usage:
+	#			size = { 24 24 }
+	#
+	type hbox_contest_type_affinies_magic = hbox {
+		visible = "[IsMagicContest]"
+
+		icon = {
+			texture = "gfx/interface/icons/trait_level_tracks/magic.dds"
+			block "icon_sizes"
+			{
+				size = { 20 20 }
+			}
+			tooltip = "MAGIC_EXPERIENCE_GREATER_TOOLTIP"
+		}
+
+		icon_contest_type_favoured = {
+			block "icon_sizes"
+			{
+				size = { 14 14 }
+			}
+			visible = no # Add here if some are added at any point
+			tooltip = "MAGIC_EXPERIENCE_REGULAR_TOOLTIP"
+		}
+
+		widget_contest_type_most_favoured = {
+			block "icon_sizes"
+			{
+				size = { 14 14 }
+			}
+			visible = "[IsContestType( 'tournament_phase_arcane_clash' )]"
+			tooltip = "MAGIC_EXPERIENCE_GREATER_TOOLTIP"
+		}
+	}
+	
+	#EK EDIT: added magic aptitude type
+	type vbox_character_magic_contest_aptitude = vbox_character_contest_aptitude {
+
+		tooltip = character_contest_type_aptitude_magic
+
+		blockoverride "contest_affinity_icon"
+		{
+			icon_contest_affinity_magic = {
+				size = { 32 32 }
+			}
+		}
+
+		blockoverride "contest_affinity_datamodel"
+		{
+			# values for progress bar (blocks under icon); max, current, target
+			datamodel = "[GetSegmentedProgressTargetBar( '(int32)5', FixedPointToInt( GuiScope.SetRoot( GetPlayer.MakeScope).ScriptValue('contest_type_aptitude_magic') ), FixedPointToInt( GuiScope.SetRoot( GetPlayer.MakeScope).ScriptValue('contest_type_aptitude_magic') )  )]"
+		}
+	}
+	
+	type hbox_character_magic_contest_aptitude = hbox_character_contest_aptitude {
+
+		tooltip = character_contest_type_aptitude_magic
+
+		blockoverride "contest_affinity_icon"
+		{
+			icon_contest_affinity_magic = {
+				size = { 26 26 }
+			}
+		}
+
+		blockoverride "contest_affinity_datamodel"
+		{
+			datamodel = "[GetSegmentedProgressTargetBar( '(int32)5', FixedPointToInt( GetWitContestTypeAptitude ), FixedPointToInt( GetWitContestTypeAptitude ) )]"
+		}
+	}
+	
+    # EK ADDITION: Added new entries for the arcane clash
+    type icon_contest_affinity_magic = icon_contest_affinity_base {
+		datacontext = "[GetTrait( 'tourney_participant' ).GetTraitTrackByKey( 'magic' )]"
+		texture = "gfx/interface/window_activities/tournament/icon_tournament_skill_magic.dds"
+	}
+}

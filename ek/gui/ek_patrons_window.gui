@@ -1,0 +1,92 @@
+types PatronConfirm  {
+	type patron_confirm = window {
+		name = "patron_confirm" #1.5 move to scripted widget, use attach_to and inherit datacontext
+		parentanchor = center
+		#widgetanchor = center
+		#alwaystransparent = no
+		layer = confirmation
+
+		visible = "[GetPlayer.MakeScope.Var('patron_sel').IsSet]"
+		datacontext = "[GetPlayer.MakeScope.Var('patron_sel')]"
+		datacontext = "[GetTrait(Concatenate('p', Select_CString( GetPlayer.MakeScope.Var('patron_sel').IsSet, Scope.GetFlagName, '_dv_akatosh') ))]"
+
+		using = Window_Size_MainTab
+		using = Window_Background
+		using = Window_Decoration_Spike
+
+		state = {
+			name = _show
+			using = Animation_FadeIn_Quick
+			using = Sound_WindowShow_Standard
+		}
+
+		state = {
+			name = _hide
+			using = Animation_FadeOut_Quick
+			using = Sound_WindowHide_Standard
+		}
+
+		vbox = {
+			set_parent_size_to_minimum = yes
+			using = Window_Margins
+
+			hbox = {
+				margin_bottom = -10
+				layoutpolicy_horizontal = expanding
+
+				header_pattern_interaction = {
+					layoutpolicy_horizontal = expanding
+					minimumsize = { 100% 0 }
+
+					blockoverride "header_text" {
+						text = CONFIRM_PATRON
+					}
+
+					blockoverride "button_close"
+					{
+						onclick = "[GetScriptedGui('faith_set_patron').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('trait', MakeScopeFlag(Scope.GetFlagName) ).AddScope('patron_sel', MakeScopeBool('(bool)no') ).End)]"
+					}
+
+					icon = {
+						size = { 48 48 }
+						position = { 0 0 }
+						texture = "[Trait.GetIcon(GetNullCharacter)]"
+					}
+				}
+			}
+
+			hbox = {
+				margin = { 20 10 }
+				text_single = {
+					multiline = yes
+					max_width = 300
+					align = center
+					text = CONFIRM_PATRON_DESC
+				}
+			}
+
+			## Send Button
+			hbox = {
+				name = "patron_confirm_button"
+				margin = { 20 10 }
+				margin_bottom = 15
+				spacing = 3
+
+				button_primary_big = {
+					text = CONFIRM_PATRON_BUTTON
+
+					onclick = "[GetScriptedGui('faith_set_patron').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('trait', MakeScopeFlag(Scope.GetFlagName) ).AddScope('patron_sel', MakeScopeBool('(bool)yes') ).End)]"
+
+					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_confirm"
+				}
+
+				button_standard = {
+					visible = "[InDebugMode]"
+					size = { 42 42 }
+					raw_text = "#D R#!"
+					raw_tooltip = "patron_sel: [GetPlayer.MakeScope.Var('patron_sel').GetFlagName]"
+				}
+			}
+		}
+	}
+}

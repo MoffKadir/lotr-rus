@@ -1,0 +1,129 @@
+types CharWindow
+{
+	type ek_magicka = icon
+	{
+		visible = "[And( Not( Character.IsDeadAndValid ), Character.MakeScope.Var('magicka').IsSet )]"
+		size = { 23 23 }
+		texture = "gfx/interface/icons/icon_magicka.dds"
+		#tooltip = magicka_value_char_view
+		tooltipwidget = {
+			magicka_breakdown_widget = {
+				datacontext = "[CharacterWindow.GetCharacter]"
+			}
+		}
+	}
+	type ek_arcana = vbox
+	{
+		tooltipwidget = {
+			arcana_breakdown_widget = { #yay script value breakdown
+				datacontext = "[CharacterWindow.GetCharacter]"
+			}
+		}
+		using = tooltip_ne
+
+		spacing = -3
+
+		using = Animation_Character_Window_Refresh
+
+		icon = {
+			name = "arcana_icon"
+			size = { 32 32 }
+			texture = "gfx/interface/icons/icon_arcana.dds"
+		}
+
+		text_single = {
+			name = "arcana_value"
+			text = "[CharacterWindow.GetCharacter.MakeScope.ScriptValue('arcana')|0]"
+			align = nobaseline
+		}
+	}
+	type ek_praxis = vbox
+	{
+		visible = "[Character.MakeScope.Var('state_praxis').IsSet]"
+		tooltipwidget =  {
+			praxis_breakdown_widget = {
+			datacontext = "[CharacterWindow.GetCharacter]"
+			}
+		 }
+		using = tooltip_ne
+
+		spacing = -3
+		margin_left = 5
+
+		using = Animation_Character_Window_Refresh
+
+		icon = {
+			name = "praxis_icon"
+			size = { 30 30 }
+			texture = "gfx/interface/icons/icon_praxis.dds"
+		}
+
+		text_single = {
+			name = "state_praxis"
+			text = "[Character.MakeScope.Var('state_praxis').GetValue]"
+			default_format = "#high"
+			align = center|nobaseline
+			fontsize_min = 12
+			max_width = 50
+		}	
+	}
+	type ek_important_character = button_normal
+	{
+		name = "important_char_info" #tt wiget and store char id in sys var on show/create
+		visible = "[StringIsEmpty(Localize(Concatenate( 'imp_char_', Character.GetSlowHistoryIdForDebug )))]"
+
+		size = { 35 35 }
+
+		datacontext = "[Character]"
+		using = tooltip_es
+
+		tooltipwidget = {
+			object_tooltip_pop_out = {
+
+				state = {
+					name = _show
+					on_start = "[GetVariableSystem.Set('imp_char', Character.GetSlowHistoryIdForDebug)]"
+				}
+
+				#blockoverride "header_tt" {}
+
+				# blockoverride "header_additions" {
+				# 	margin = { 10 18 }
+				# }
+
+				blockoverride "title_text" {
+					text = important_character_name
+					using = Font_Type_Flavor
+					using = Font_Size_Big
+					margin = { 0 10 }
+					#align = top
+				}
+
+				blockoverride "concept_link" {
+					text = "[important_character|E]"
+					#align = top
+				}
+
+				blockoverride "description_text" {
+					text = important_character_desc
+					max_width = 450
+				}
+
+				blockoverride "bg_texture"
+				{
+					texture = "gfx/interface/tooltips/tooltip_bg_gameconcept.dds"
+				}
+			}
+		}
+
+		icon = {
+			texture = "gfx/interface/buttons/button_lifestyles_base.dds"
+			size = { 100% 100% }
+		}
+
+		highlight_icon = {
+			texture = "gfx/interface/window_character/important_character.dds"
+			size = { 100% 100% }
+		}
+	}
+}

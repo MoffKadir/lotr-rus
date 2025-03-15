@@ -1,0 +1,116 @@
+# Event window widget for selecting culture to convert county to
+# By Javan
+
+vbox = {
+	name = "event_window_widget_culture_conversion"
+	layoutpolicy_horizontal = expanding
+	minimumsize = { 240 -1 }
+	ignoreinvisible = yes
+	margin = { 5 0 }
+	margin_bottom = 5
+	spacing = 3
+
+	datacontext = "[GetPlayer]"
+	
+	flowcontainer = {
+		direction = vertical
+		text_multi = {
+			layoutpolicy_horizontal = expanding
+			#margin_bottom = 3
+			#default_format = "#bold"
+			text = ek_culture_conversion_widget_title
+			align = center
+			parentanchor = hcenter|top
+			autoresize = yes
+			max_width = 300
+		}
+		text_multi = {
+			layoutpolicy_horizontal = expanding
+			#margin_bottom = 3
+			#default_format = "#bold"
+			text = ek_culture_conversion_widget_desc
+			align = center
+			parentanchor = hcenter|top
+			autoresize = yes
+			max_width = 480
+		}
+		scrollbox = {
+			name = "culture_conversion_scrollarea"
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			#size = {100% 100%}
+			size = { 480 80 }
+
+			blockoverride "scrollbox_content"
+			{
+				dynamicgridbox = {
+					datacontext = "[GetPlayer]"
+					#allow_outside = yes
+					maxhorizontalslots = 100
+					maxverticalslots = 100
+					datamodel_wrap = 3
+					flipdirection = yes
+					block "datamodel" {
+						datamodel = "[Character.MakeScope.GetList('culture_conversion_options')]"
+					}
+					#spacing = 10
+					
+					item = {	
+						widget = {
+							datacontext = "[Scope.Culture]"
+							block "size" {
+								size = { 155 35 } 
+							}
+							button_standard_list = {
+								size = { 150 30 }
+								onclick = "[GetScriptedGui('ek_select_culture_to_convert_to').Execute( GuiScope.SetRoot( Character.MakeScope ).AddScope('selected_culture', Culture.MakeScope).End ) ]"
+								enabled = "[GetScriptedGui('ek_select_culture_to_convert_to').IsValid( GuiScope.SetRoot( Character.MakeScope ).AddScope('selected_culture', Culture.MakeScope).End ) ]"
+								tooltip =  "[GetScriptedGui('ek_select_culture_to_convert_to').BuildTooltip( GuiScope.SetRoot( Character.MakeScope ).AddScope('selected_culture', Culture.MakeScope).End ) ]"
+								down = "[ObjectsEqual(Character.MakeScope.Var('culture_to_convert').Culture,Scope.Culture)]"
+								
+								icon = {
+									name = "native_culture"
+									parentanchor = left|vcenter
+									visible = "[GetScriptedGui('ek_culture_is_native').IsShown( GuiScope.SetRoot( Character.MakeScope.Var('county_to_convert').Title.MakeScope ).AddScope('selected_culture', Culture.MakeScope).End ) ]"
+									position = { 5 0 }
+									size = { 25 25 }
+									texture = "gfx/interface/icons/struggle_effects/culture.dds"
+									tooltip = ek_culture_conversion_native_tooltip
+								}
+								icon = {
+									name = "nomadic_culture"
+									parentanchor = left|vcenter
+									visible = "[GetScriptedGui('ek_culture_is_nomadic').IsShown( GuiScope.SetRoot( Character.MakeScope.Var('county_to_convert').Title.MakeScope ).AddScope('selected_culture', Culture.MakeScope).End ) ]"
+									position = { 5 0 }
+									size = { 25 25 }
+									texture = "gfx/interface/icons/portraits/pilgrimage.dds"
+									tooltip = ek_culture_conversion_nomadic_tooltip
+								}								
+								icon = {
+									name = "non_native_culture"
+									parentanchor = left|vcenter
+									visible = "[GetScriptedGui('ek_culture_is_non_native').IsShown( GuiScope.SetRoot( Character.MakeScope.Var('county_to_convert').Title.MakeScope ).AddScope('selected_culture', Culture.MakeScope).End ) ]"
+									position = { 5 0 }
+									size = { 25 25 }
+									texture = "gfx/interface/icons/struggle_effects/culture_disable.dds"
+									tooltip = ek_culture_conversion_non_native_tooltip
+								}
+								
+								text_multi = {
+									layoutpolicy_horizontal = expanding
+									margin_bottom = 3
+									#default_format = "#bold"
+									raw_text = "[Culture.GetName]"
+									align = center
+									parentanchor = hcenter|vcenter
+									autoresize = yes
+									max_width = 150
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+﻿types Praxis
+{
+	type praxis_breakdown_widget = widget {
+		alwaystransparent = no
+		using = GeneralTooltipSetup
+		widget = {
+			name = "background"
+			using = DefaultTooltipBackground
+			size = { 100% 100% }
+			alwaystransparent = no
+		}
+		# Natural Praxis breakdown
+		vbox = {
+			datacontext = "[GuiScope.SetRoot(Character.MakeScope).GetScriptValueBreakdown('natural_praxis')]"
+			set_parent_size_to_minimum = yes
+			margin = { 20 10 }
+			margin_bottom = 20
+			spacing = 3
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				text = "praxis_title"
+				align = left
+			}
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				alwaystransparent = no
+
+				text_single = { #separate as it has a different format
+					name = "base"
+					layoutpolicy_horizontal = expanding
+					text = natural_praxis
+					margin_bottom = -1
+				}
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					datamodel = "[ValueBreakdown.GetSubValues]"
+					margin_left = 30
+
+					text_single = { #separate as it has a different format
+						name = "base"
+						layoutpolicy_horizontal = expanding
+						text = praxis_base
+						margin_bottom = -1
+					}
+
+					item = {
+						hbox = {
+							name = "value_breakdown"
+							visible = "[Not(EqualTo_string( ValueBreakdown.GetName, 'natural_praxis' ))]"
+
+							layoutpolicy_horizontal = expanding
+
+							text_single = {
+								name = "name"
+								raw_text = "[ValueBreakdown.GetName]:"
+							}
+
+							text_single = {
+								name = "value_with_no_tooltip"
+								layoutpolicy_horizontal = expanding
+								raw_text = " [ValueBreakdown.GetFixedPointValue|+=0]"
+							}
+						}
+					}
+				}
+				vbox = {
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						text = "monthly_praxis_change_title"
+						align = left
+					}
+				}
+			}
+		}
+	}
+}

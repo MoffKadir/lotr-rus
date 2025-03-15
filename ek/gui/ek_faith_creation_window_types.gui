@@ -1,0 +1,121 @@
+types EKFaithCreationWindow
+{
+	type ek_pantheon_selection = vbox
+	{
+		layoutpolicy_horizontal = expanding
+		spacing = 10
+		ignoreinvisible = yes
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			#margin_right = 15
+			text_label_left = {
+				layoutpolicy_horizontal = expanding
+				text = "FAITH_DOCTRINES_PANTHEON"
+				default_format = "#low"
+			}
+		}
+
+		fixedgridbox = {
+			name = "doctrines_grid_pantheon"
+			datamodel = "[FaithCreationWindow.GetGroupingHelper( 'pantheon' ).GetGrouping]"
+			datacontext = "[GetScriptedGui('show_second_pantheon_doctrines')]"
+			ignoreinvisible = yes
+			flipdirection = yes
+			addcolumn = 270
+			addrow = 65
+			datamodel_wrap = 2
+
+			item = {
+				widget_doctrine_selection_item = {
+					#visible = "[And( Not( And( Not( FaithCreationWindow.HasParameter( 'uses_monolatry_aspect_active' )), EqualTo_string(FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith ), Localize('doctrine_pantheon_no_aspect_name')) )), Not( And( FaithCreationWindow.HasParameter( 'no_secondary_pantheon_active' ), EqualTo_string(FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith ), Localize('doctrine_sp_no_deity_name')) )))]"
+					blockoverride "doctrine_icon_texture"
+					{
+						texture = "[FaithDoctrine.GetIcon]"
+					}
+				}
+			}
+		}
+
+		fixedgridbox = {
+			name = "doctrines_grid_secondary_pantheon"
+			datamodel = "[FaithCreationWindow.GetGroupingHelper( 'secondary_pantheon' ).GetGrouping]"
+			datacontext = "[GetScriptedGui('show_second_pantheon_doctrines')]"
+
+			flipdirection = yes
+			addcolumn = 270
+			addrow = 65
+			datamodel_wrap = 2
+
+			item = {
+				widget_doctrine_selection_item = {
+					visible = "[And( Not( And( Not( FaithCreationWindow.HasParameter( 'uses_monolatry_aspect_active' )), EqualTo_string(FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith ), Localize('doctrine_pantheon_no_aspect_name')) )), Not( And( FaithCreationWindow.HasParameter( 'no_secondary_pantheon_active' ), EqualTo_string(FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith ), Localize('doctrine_sp_no_deity_name')) )))]"
+					blockoverride "doctrine_icon_texture"
+					{
+						texture = "[FaithDoctrine.GetIcon]"
+					}
+				}
+			}
+		}
+	}
+	
+	type ek_daedra_selection = vbox {
+		layoutpolicy_horizontal = expanding
+		spacing = 10
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			#margin_right = 15
+			text_label_left = {
+				layoutpolicy_horizontal = expanding
+				text = "FAITH_DOCTRINES_DAEDRIC_PRINCES"
+				default_format = "#low"
+			}
+		}
+
+		fixedgridbox = {
+			name = "doctrines_grid_daedric_princes"
+			visible = "[Not(VariableSystem.Exists('show_hide_daedric_princes'))]"
+			datamodel = "[FaithCreationWindow.GetGroupingHelper( 'daedric_princes' ).GetGrouping]"
+
+			flipdirection = yes
+			addcolumn = 270
+			addrow = 65
+			datamodel_wrap = 2
+
+			item = {
+				widget_doctrine_selection_item = {}
+			}
+		}	
+	}
+	
+	type ek_virtue_sin_selection = vbox {
+		layoutpolicy_horizontal = expanding
+		spacing = 10
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			#margin_right = 15
+			text_label_left = {
+				layoutpolicy_horizontal = expanding
+				text = "FAITH_DOCTRINES_VIRTUES_SINS"
+				default_format = "#low"
+			}
+		}
+
+		fixedgridbox = {
+			name = "doctrines_grid_virtues_sins"
+			datamodel = "[FaithCreationWindow.GetGroupingHelper( 'virtues_sins' ).GetGrouping]"
+
+			flipdirection = yes
+			addcolumn = 270
+			addrow = 65
+			datamodel_wrap = 2
+
+			item = {
+				widget_doctrine_selection_item = {}
+			}
+		}
+	}
+}
+
