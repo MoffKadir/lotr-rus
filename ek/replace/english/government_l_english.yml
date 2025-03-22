@@ -1,5 +1,5 @@
 ﻿l_english:
- feudal_government_desc:1 "- [vassals|E] [obligations|E] are tied to the [feudal_contract|E], and are separated in discrete tiers for both [taxes|E] and [levies|E] [obligations|E]\n- [control|E] growth is tied to the [crown_authority|E]\n- The [crown_authority|E] regulates the amount of potentially [tyrannical|E] changes to the [feudal_contract|E] the [liege|E] can make\n\n#F In direct opposition of the mostly fluid vassal-liege relationship used in most of Tamriel, the strictly defined and bound by contracts nature of Feudalism is only used by a handful of cultures.#!"
+ feudal_government_desc: "\n$game_concept_feudal_desc$\n\n#F Feudalism is a form of government derived from the ancient Elven peoples, whose sophisticated bureaucracies have echoed to the present as formalised relationships with permanent promises. Their dominance over castles regulates obligations of [taxes|E] and [soldiers|E].#!"
  tribal_government_desc:1 "- [vassals|E] [obligations|E] are tied to the [prestige_level|E] of their [liege|E]\n- [control|E] growth is tied to the owner's [prestige_level|E]\n- Rulers have an [expected_prestige_level|E] depending on their rank\n- Rulers recruit and maintain [men_at_arms|E] [regiments|E] with [prestige|E] instead of [gold|E]\n\n#F In the tribe, strength means everything. A tribal leader depends on respect and renown rather than coin to develop their realm and bolster their armies.#!\n\n[expected_prestige_level|E]"
  
 
@@ -12,3 +12,40 @@
  ghazi_special_rights:0 "Champion of Faith"
  ghazi_special_rights_granted:0 "Proclaimed Champion of Faith"
  ghazi_special_rights_granted_short:0 "Proclaimed"
+
+  #Tax decrees
+
+ jizya_special_rights_tax_collector: "Religious Tax"
+ jizya_special_rights_tax_collector_desc: "#emphasis #bold [vassal|E] Privileges:#!#!\nThe [liege|E] cannot [demand_conversion|E] of the [vassal|E]\nThe [liege|E] cannot use [convert_county|E] in the [vassals|E]' lands\nThe [liege|E] cannot use [faith|E] as a reason to avoid [tyranny|E] when revoking titles\nThe [liege|E] cannot revoke the [vassals_possessive|E] [titles|E]\n\n#flavor The [vassal|E] is guaranteed ownership of their [titles], preventing the [liege|E] from revoking them – regardless of the $game_concept_liege$ having a [revoke_title_reason|E] or not.\n\nThe $game_concept_vassal$ is also granted a special protected status, with the realm officially recognizing their right to practice their own [faith|E].#!"
+ jizya_special_rights_tax_collector_flavor_desc: "A special tax assigned to religious minorities, in return for the privilege to practice their errant faith in peace."
+ unlock_jizya_contract_name: "[GetFaithDoctrine('tenet_tax_nonbelievers').GetBaseName] [core_tenet|E]"
+
+ jizya_special_rights:0 "$jizya_special_rights_tax_collector$" 
+ jizya_special_rights_default:0 "Default $jizya_special_rights$" 
+ jizya_special_rights_default_short:0 "Default" 
+ jizya_special_rights_granted:0 "Enforced $jizya_special_rights$" 
+ jizya_special_rights_granted_desc:0 "$jizya_special_rights_tax_collector_desc$" 
+ jizya_special_rights_granted_short:0 "Granted"
+
+
+ iqta_special_rights_tax_collector: "Tax Farming"
+ iqta_special_rights_tax_collector_desc: "The [vassal|E] has lower obligations but helps contributing [men_at_arms|E] to the [liege|E]."
+ iqta_special_rights_tax_collector_flavor_desc: "A tax farming system where local rulers are given wide authority to collect taxes on behalf of the state."
+
+
+ ghazi_special_rights_tax_collector: "Champion of Faith"
+ ghazi_special_rights_tax_collector_desc: "#emphasis #bold [vassal|E] Privilege:#!#!\nThe [vassal|E] pays less [piety|E] to use [holy_war|E] [casus_bellis|E] but more [prestige_i][prestige|E] for any other [casus_bellis|E] \n\n#flavor The [vassal|E] is chosen as a warrior of the [faith|E] by the [liege|E], charged with carrying the borders outwards through [holy_war|E].#!"
+ ghazi_special_rights_tax_collector_flavor_desc: "Warriors of the faith and the frontier, the Champions of Faith collect income from plunder and brigandage, and wage a never-ending war against the religious enemies of the state."
+
+
+ deqhan_special_rights_tax_collector: "Decentralized Tax"
+ deqhan_special_rights_tax_collector_flavor_desc: "A decentralized tax collection system, where the rulers closely manage their lands to promote productivity - and their own prestige."
+
+ maguh_special_rights_tax_collector: "Council Rights"
+ maguh_special_rights_tax_collector_flavor_desc: "Local representatives are given exemptions to assist the governance of their lands, and their councils thus mediate between ruler and ruled."
+
+ muqata_special_rights_tax_collector: "Frontier, Conquest"
+ muqata_special_rights_tax_collector_flavor_desc: "The frontiers cannot be held indefinitely. The most distant lands are allowed autonomy and withholding of income, to promote stability, loyalty, and development."
+ 
+ strict_taxation_tax_collector: "Luxury Tax"
+ strict_taxation_tax_collector_flavor_desc: "A luxury tax, usually enforced upon the wealthy as a means to provide additional income for the state and to help those in need."

@@ -10,6 +10,8 @@ activity_feast_province_desc_blue_palace:1 "#P +++ $building_type_blue_palace_01
 activity_feast_province_desc_jorrvaskr:1 "#P +++ $building_type_jorrvaskr_01$#!"
 activity_feast_province_desc_thorn_palace:0 "#P +++ $building_type_thorn_palace_01$#!"
 activity_feast_province_desc_potentate_retreat:0 "#P +++ $building_type_potentate_retreat_01$#!"
+activity_feast_province_desc_graht_manors: "#P ++ $building_type_graht_manors_01$#!"
+activity_feast_province_desc_pact_provisions: "#P + $building_type_pact_provisions_01$#!"
 
 feast_cost_discount_castle_wayrest:0 "Location has $building_type_castle_wayrest_01$"
 feast_cost_discount_castle_daggerfall:0 "Location has $building_type_castle_daggerfall_01$"
@@ -54,9 +56,9 @@ activity_education.is_location_valid.at_war:0 "You are at war with the holder of
 
  activity_hist_communion_province_desc:0 "You hold a [GetActivityType( 'activity_hist_communion' ).GetName] at the [hist_tree|E] in [ROOT.Province.GetName]\nAn older tree promises greater rewards.\n"
  activity_hist_communion_no_hist_tree:0 "This province does not have a [hist_tree|E]"
- activity_hist_communion_hist_tree_sapling:0 "A [GetActivityType( 'activity_hist_communion' ).GetName] can not be held in a province with only a $building_hist_01$ [hist|E]."
+ activity_hist_communion_hist_tree_sapling:0 "A [GetActivityType( 'activity_hist_communion' ).GetName] cannot be held in a province with only a $building_hist_01$ [hist|E]."
  activity_hist_communion_hist_tree_faith:0 "This province is not of your [faith|E]"
- activity_hist_communion_destination_selection:0 "You can only host a $activity_hist_communion$ in provinces with a [hist_tree|E]."
+ activity_hist_communion_destination_selection:0 "You can only host a $activity_hist_communion$ in provinces of your faith that has a [hist_tree|E]."
 
  activity_hist_communion_guest_help_text:0 "$activity_hist_communion_desc$"
  hist_communion_base_cost:0 "Base Cost"
@@ -82,15 +84,16 @@ activity_education.is_location_valid.at_war:0 "You are at war with the holder of
 
  hist_communion_needs_hist:0 "You need to have a [hist_holding|E] of your own [faith|E] with at least a $building_hist_02$ ([building|E]) in your realm to start this activity" 
  hist_communion_phase_solo:0 "Communion"
- hist_communion_phase_solo_desc:0 "The communion is a spiritual journey into the connection every argonian has with the Hist. A communion's success is governed by choices made at the destination aswell as influence of the local Hist."
+ hist_communion_phase_solo_desc:0 "The communion is a spiritual journey into the connection every argonian has with the Hist. A communion's success is governed by choices made at the destination as well as influence of the local Hist."
  hist_communion_completed_log_title:0 "Hist Communion Completed"
  hist_communion_completed_log:0 "[CHARACTER.GetShortUIName|U] completed [CHARACTER.GetHerHis] Hist communion at [PROVINCE.GetBaronyNameExplicitly]"
  hist_infirm_healing_reward.tt:0 "You will lose the [GetTrait('infirm').GetName( GetNullCharacter )] [trait|E] at the end of the [activity|E]"
  hist_limb_healing_reward.tt:0 "Your body will regrow into a healthy state at the end of the [activity|E]"
  hist_mental_healing_reward.tt:0 "Your mind will be freed by all liabilites at the end of the [activity|E]"
- hist_disrupted_healing_reward.tt:0 "You will looe the [GetTrait('disrupted').GetName( GetNullCharacter )] [trait|E] at the end of the [activity|E]"
- hist_communion.blessing.tt:0 "You will receive the [GetPlayer.Custom('GetHistBlessingTrait')] at the end of the [activity|E]"
- hist_communion.behemoth.tt:0 "You will receive the [GetPlayer.Custom('GetArgonianBehemothTrait')] at the end of the [activity|E]"
+ hist_disrupted_healing_reward.tt:0 "You will lose the [GetTrait('disrupted').GetName( GetNullCharacter )] [trait|E] at the end of the [activity|E]"
+ hist_communion.blessing.tt:0 "You will receive the [GetPlayer.Custom('GetHistBlessingTrait')] [trait|E] at the end of the [activity|E]"
+ hist_communion.behemoth.tt:0 "You will receive the [GetPlayer.Custom('GetArgonianBehemothTrait')] [trait|E] at the end of the [activity|E]"
+ hist_communion.behemoth.tt.danger:0 "You will receive the [GetPlayer.Custom('GetArgonianBehemothTrait')] [trait|E] at the end of the [activity|E].\n\n#warning @warning_icon! Becoming a [GetTrait('argonian_behemoth_3').GetName(GetNullCharacter)] will make you [mindless|E] @ek_mindless_icon!, unable to rule or perform most tasks, and you will be [deposed|E]#!\n"
 
  ### INTENTS
  hist_blessing_intent_header:0 "Blessings:"
@@ -108,3 +111,43 @@ activity_education.is_location_valid.at_war:0 "You are at war with the holder of
  apa_wounds_healed_title:0 "[first.GetShortUIName|U] received healing by the Hist in [province.GetNameNoTooltip]"
  apa_hist_sap_title:0 "[first.GetShortUIName|U] licked Hist Sap"
  apa_silent_prayer_title:0 "[first.GetShortUIName|U] engaged in silent prayer to the Hist"
+
+ ### Adult Education
+ adult_education_option_mundane: "Mundane Education"
+ adult_education_option_mundane_desc: "$EFFECT_LIST_BULLET$ Chance to increase your [education_trait|E]\n\n#weak To expand one's mind, explore new ideas and unfamiliar thoughts — could there be any thrill more profound?#!"
+ adult_education_option_arcane: "Arcane Education"
+ adult_education_option_arcane_desc: "$EFFECT_LIST_BULLET$ Some event options will allow magical actions\n$EFFECT_LIST_BULLET$ Chance to increase your [magical_education_trait|E]\n\n#weak To understand the arcane is to master it. So let's delve into its mysteries and untangle the delicate threads of all things magical.#!"
+ activity_adult_education_location_magic_university_tt: "There is no magic education center here!"
+ activity_adult_education_location_only_magic_university_tt: "This place only offers arcane education!"
+ activity_adult_education_location_daedra_tolerated_tt: "This place does not tolerate Daedra!"
+ adult_education_can_magic_tt: "You must be able to cast magic"
+ adult_education_no_max_magic_tt: "You already have the [GetTrait('education_magic_5').GetName( GetNullCharacter )] [trait|E]"
+ adult_education_no_max_education_tt: "You already have the highest [education_trait|E]"
+
+ adult_education_has_magic_university_desc: "\n#P ++++ [arcana_i] Special Building#!"
+ adult_education_modest_academy_desc: "\n#P + $building_academy_01$#! ([building|E])"
+ adult_education_stately_academy_desc: "\n#P ++ $building_academy_02$#! ([building|E])"
+ adult_education_expansive_academy_desc: "\n#P +++ $building_academy_03$#! ([building|E])"
+ adult_education_grand_academy_desc: "\n#P ++++ $building_academy_04$#! ([building|E])"
+
+ magic_culture_desc: "Culture has magic related [tradition|E]"
+ magic_trait_desc: "[GetTrait('arcana_good').GetName( GetNullCharacter )]"
+ negative_magic_trait_desc: "[GetTrait('arcana_bad').GetName( GetNullCharacter )] or [GetTrait('disrupted').GetName( GetNullCharacter )]"
+
+ activity_arcane_education_magic_1_desc: "[GetTrait('education_magic_1').GetName( GetNullCharacter )] [trait|E]"
+ activity_arcane_education_magic_2_desc: "[GetTrait('education_magic_2').GetName( GetNullCharacter )] [trait|E]"
+ activity_arcane_education_magic_3_desc: "[GetTrait('education_magic_3').GetName( GetNullCharacter )] [trait|E]"
+ activity_arcane_education_magic_4_desc: "[GetTrait('education_magic_4').GetName( GetNullCharacter )] [trait|E]"
+ activity_arcane_education_magic_5_desc: "[GetTrait('education_magic_5').GetName( GetNullCharacter )] [trait|E]"
+
+ #Arcane Reward
+ activity_adult_education_special_type_bar_arcane_reward_0: "#t Decent Studies (Tier 1)#!\nYou gain some [lifestyle_experience|E]\nLow chance to upgrade your [education_trait|E]"
+ activity_adult_education_special_type_bar_arcane_reward_1: "#t Average Studies (Tier 2)#!\nYou gain a major amount [lifestyle_experience|E]\nMedium chance to upgrade your [education_trait|E]"
+ activity_adult_education_special_type_bar_arcane_reward_2: "#t Good Studies (Tier 3)#!\nYou gain a massive amount of [lifestyle_experience|E]\nHigh chance to upgrade your [education_trait|E]"
+ activity_adult_education_special_type_bar_arcane_reward_3: "#t Perfect Studies (Tier 4)#!\nYou gain a tremendous amount of [lifestyle_experience|E]\nVery high chance to upgrade your [education_trait|E]"
+ 
+ #Mundane Reward
+ activity_adult_education_special_type_bar_mundane_reward_0: "#t Decent Studies (Tier 1)#!\nYou gain [lifestyle_experience|E]\nLow chance to upgrade your [education_trait|E]"
+ activity_adult_education_special_type_bar_mundane_reward_1: "#t Average Studies (Tier 2)#!\nYou gain #P 1#! [perk|E] point\nMedium chance to upgrade your [education_trait|E]"
+ activity_adult_education_special_type_bar_mundane_reward_2: "#t Good Studies (Tier 3)#!\nYou gain #P 2#! [perk|E] points\nHigh chance to upgrade your [education_trait|E]"
+ activity_adult_education_special_type_bar_mundane_reward_3: "#t Perfect Studies (Tier 4)#!\nYou gain #P 3#! [perk|E] points\nVery high chance to upgrade your [education_trait|E]"

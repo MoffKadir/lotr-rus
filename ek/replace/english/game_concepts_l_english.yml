@@ -6,12 +6,6 @@
  
  game_concept_raid_desc:0 "[armies|E] can be raised as $game_concept_raiders$ from [rally_points|E]. $game_concept_raiders$ can move into neighboring lands and pillage them for [gold|E].\n\nIn order to $game_concept_raid$, a Raiding Army must stop in a [holding|E] owned by a foreign [ruler|E] and choose to start Raiding — upon doing so they will be stuck Raiding for a some time, after which they will get Gold and pillage the Holding.\n\nGold will be stored on the Army, and only added to the treasury when they arrive home. If you defeat a Raiding Army carrying Gold you will take it, and they will be unable to Raid you for some time.\n\nOnly some Rulers are allowed to $game_concept_raid$, most notably [tribal|E] and [pirate|E] Rulers.\nThe Plunderer perk tree also enables raiding."
  
- game_concept_feudal_contract:0 "Vassal Contract"
- game_concept_feudal_contracts:0 "Vassal Contracts"
- game_concept_contract:0 "Contract"
- game_concept_feudal_contract_desc:1 "A $game_concept_feudal_contract$ specifies the [obligations|E] between a [vassal|E] and their [liege|E]. The contract specifies to what the vassal Obligations are tied to, and can include special clauses such as #V Religious Freedom#! or #V Sanctioned War Declaration Rights#!.\n\nFeudal vassals (in [cultures|E] with the #V Hereditary Hierarchy#! [tradition|El]) can negotiate their Obligations individually.\n\nSpecial contracts, such as #V $special_contract_march_short$#!, #V $special_contract_scutage_short$#! or #V $special_contract_palatinate_short$#! contracts, can only be held by [duchy|E]-tier [vassals|E] or above."
- # game_concept_feudal_contract_desc:1 "A $game_concept_feudal_contract$ specifies the [obligations|E] between a [vassal|E] and their [liege|E]. Only the Feudal [government_form|E] allows each Vassal to negotiate their Obligations individually.\n\nSpecial contracts, such as #V $special_contract_march_short$#!, #V $special_contract_scutage_short$#! or #V $special_contract_palatinate_short$#! contracts, can only be held by [duchy|E]-tier [vassals|E] or above."
- 
  game_concept_faith_righteous:0 "Righteous"
  game_concept_faith_righteous_desc:0 "This [faith|E] is considered legitimate.\nIntermarriage is common.\n\n#S Effects:\n#![GetHostilityDescription( '(int32)0' )]"
 
@@ -62,3 +56,33 @@
 
 
  game_concept_end_date_desc:0 "2E 896 is the End Date, and upon reaching it the game will end."
+ 
+ #EK EDIT: renamed co-emperor to High Chancellor
+ game_concept_co_emperor: "High Chancellor" #Replaced co-emperor
+ game_concept_co_emperors: "High Chancellors" #Replaced co-emperors
+ co_emperorship_diarch_title: "High Chancellor" #Replaced co-emperor
+ game_concept_duumvirate_desc: "A $game_concept_duumvirate$ is the rule of one [empire|E] by two [characters|E]. An emperor (the [liege|E]), and co-emperor (the $game_concept_co_emperor$).\n\nThey generate passive [influence|E] for both themselves and their emperor. How much exactly scales up every [EmptyScope.ScriptValue('co_emperor_scale_years_in_job_value')|0] years in the job, including any time they spent as [junior_emperor|E].\n\nIn practice, most power still rests in the hands of the $game_concept_liege$ who actually holds the imperial title rather than their [diarch|E], but the $game_concept_co_emperor$ does have access to several powerful ways to affect the [realm|E] & is a cheaper candidate to promote for [administrative|E] positions.\n\nNotably, $game_concept_co_emperors$ can use the [imperial_expedition_cb|E] [casus_belli|E] at higher levels of [scales_of_power|E] swing.\n\n#WEAK $game_concept_co_emperors$ are able to [usurp|E] their senior emperor via ritually maiming them.#!"
+ 
+ game_concept_theme: "Province" #Replaced Theme
+ game_concept_themes: "Provinces" #Replaced Themes
+ game_concept_thematic: "Provincial" #Replaced Thematic
+ THEME_DUCHY_SORT_THEME_TROOPS: "Province Troops" #Replaced Theme
+ 
+ game_concept_imperial_family: "Ruling Family" #Replaced Imperial
+
+ #EK EDIT: Including these in blanked-out form since the logs complain when they mention commented-out game concepts.
+ game_concept_harrying_widget_i: ""
+ game_concept_harrying_widget: ""
+ game_concept_harrying_widget_desc: ""
+ game_concept_harrying_resistance: ""
+ game_concept_harrying_resistance_desc: ""
+ game_concept_harrying_pacification: ""
+ game_concept_harrying_pacification_desc: ""
+
+ #EK EDIT: replaced clan with autocracy
+ game_concept_tax_jurisdiction_desc: "A $game_concept_tax_jurisdiction$ is a group of [taxpayers|E] made up of [autocracy|E] [vassals|E]. Each $game_concept_tax_jurisdiction$ supports up to #V 12#! $game_concept_taxpayers$.\n\nEach $game_concept_tax_jurisdiction$ can have a [tax_decree|E].\n\nThe number of available $game_concept_tax_jurisdictions$ is determined by [rank|E], [traditions|E], and [innovations|E].\n\nA $game_concept_tax_jurisdiction$ requires a [tax_collector|E] to be appointed."
+ 
+ game_concept_untaxed_jurisdiction_desc: "An $game_concept_untaxed_jurisdiction$ is a [tax_jurisdiction|E] that do not have a [tax_collector|E] appointed. This means that the assigned [taxpayers|E] won't give any [taxes|E] or [levies|E] to their [liege|E]."
+ game_concept_taxpayer_desc: "$game_concept_taxpayers$ are [autocracy|E] [vassals|E] that have been assigned to a [tax_jurisdiction|E], and will contribute monthly [tax|E] Income and [levies|E] as long as a [tax_collector|E] is appointed."
+ 
+ game_concept_unassigned_vassal_desc: "$game_concept_unassigned_vassals$ are [autocracy|E] [vassals|E] who are not assigned to a [tax_jurisdiction|E] as [taxpayers|E], and therefore not contributing [taxes|E] or [levies|E].\n\nOnce assigned to a $game_concept_tax_jurisdiction$ with a [tax_collector|E], they will start paying monthly."

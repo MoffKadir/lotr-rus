@@ -63,10 +63,10 @@
  attrebus_secure_heartlands_decision_tooltip:0 "Secure the Heartlands for the Elder Council"
  attrebus_secure_heartlands_decision_confirm:0 "The Heartlands are ours!"
  attrebus_secure_heartlands_decision_vassal_heartlands_positive_opinion:0 "Every direct vassal in the Heartlands has a #P positive#! opinion of you"
- attrebus_secure_heartlands_decision_full_control_imperial_isle:0 "Every county in the Imperial Isle must have a [control|E] of 100"
+ attrebus_secure_heartlands_decision_full_control_imperial_isle:0 "Every county in the Imperial Isle must have a [control|E] of 90 or more"
  attrebus_secure_heartlands_desc:0 "The Heartlands will be secured, and the Elder Council reassured as their chambers are out of the reach of any invader"
  attrebus_potentate_required_task_3_fulfilled_desc:0 "You #P fulfilled#! the third [required_task|E], [required_task_3|E]"
- attrebus_potentate_ec_control_heartlands_desc:0 "The Elder Councill will keep all of the Heartlands under their power once they rule the Imperial Isle"
+ attrebus_potentate_ec_control_heartlands_desc:0 "The Elder Council will keep all of the Heartlands under their power once they rule the Imperial Isle"
  
  attrebus_a_militant_faith_decision:0 "A Militant Faith"
  attrebus_a_militant_faith_decision_desc:0 "For centuries our faith, the [ROOT.Char.GetFaith.GetName], has co-existed with various minor cults and other religions. While this is a point of pride for most of our faithful, some parts of our clergy instead point how in the times to come, we need our faith to be strong. While I am not part of the clergy, I know that many would follow my lead..."
@@ -80,25 +80,7 @@
  potentate_control_heartlands_decision_tooltip:0 "Our people will find their home in the heart of the Empire!"
  potentate_control_heartlands_decision_effect:0 "Our [culture|E] will be [native|E] to the [GetGeographicalRegion('mundus_tamriel_cyrodiil_heartlands').GetName]"
  potentate_control_heartlands_decision_confirm:0 "A new home!"
- 
- destroy_bridges_leyawiin_decision:0 "Destroy the Bridges of Leyawiin"
- destroy_bridges_leyawiin_decision_desc_vassal:0 "The Bridges of Leyawiin allow whoever owns the city to let or prevent any ship from crossing the Topal Bay into the Rumare. If the Rumare banks are to freely flourish and prosper without being at the whim of the city's owner, the bridges have to be destroyed."
- destroy_bridges_leyawiin_decision_desc_direct:0 "The Bridges of Leyawiin allow whoever owns the city to let or prevent any ship from crossing the Topal Bay into the Rumare.\nWhile it has been a boon for Leyawiin, it might be beneficial to willingly destroy the bridges."
- destroy_bridges_leyawiin_decision_disables_bridges_leyawiin_01_ct:0 "The $building_type_bridges_leyawiin_01$ building will be disabled, and its effects negated"
- destroy_bridges_leyawiin_decision_enables_buildings_imperial_isle_ct:0 "The $building_type_imperial_city_harbor_01$ and $building_type_port_hestra_01$ buildings will be re-enabled"
- destroy_bridges_leyawiin_decision_enables_port_buildings_rumare_ct:0 "The Tradeport building line will once again be accessible to coastal counties along the Rumare"
- repair_destroy_bridges_leyawiin_wait_a_month_ct:0 "#weak A month needs to pass before the effects of this decision can be felt#!"
- destroy_bridges_leyawiin_decision_confirm: "Destroy the bridges!"
- destroy_bridges_leyawiin_decision_tooltip: "The stranglehold Leyawiin has over trade in the Rumare is unnaceptable."
- 
- repair_bridges_leyawiin_decision:0 "Repair the Bridges of Leyawiin"
- repair_bridges_leyawiin_decision_desc:0 "The prosperity of Leyawiin is tied to its great bridges, which allow to city to extract a toll from any merchant ship that wishes to sail through the Rumare from the Topal Bay. These bridges have been destroyed years ago, and it is time to rebuild them, for the prosperity of the city."
- repair_bridges_leyawiin_decision_enables_bridges_leyawiin_01_ct:0 "The $building_type_bridges_leyawiin_01$ building will be enabled"
- repair_bridges_leyawiin_decision_disables_buildings_imperial_isle_ct:0 "The $building_type_imperial_city_harbor_01$ and $building_type_port_hestra_01$ buildings will be disabled, and their effect negated"
- repair_bridges_leyawiin_decision_disables_port_buildings_rumare_ct:0 "The Tradeport building line will be inaccessible to coastal counties along the Rumare"
- repair_bridges_leyawiin_decision_confirm: "Rebuild the bridges!"
- repair_bridges_leyawiin_decision_tooltip: "Leyawiin will again control the Niben."
- 
+  
  ### Orsinium
  create_orsinium_decision:0 "Reestablish Orsinium"
  create_orsinium_decision_desc:0 "The Kingdom of Orsinium has been established, razed and reestablished many times in Tamriel's history. A sufficiently powerful Orsimer ruler could claim to be the new King of the Orcs and restore the old kingdom of the Pariah Folk. \n \n( #S Note#!: If you're a [duke|E], you'll only be able to expand Orsinium's [de_jure|E] borders within the De Jure [kingdom|E] you reestablish it in)."
@@ -136,7 +118,7 @@
  reintegrate_orsinium_decision_confirm:0 "Orsinium is no more!"
  reintegrate_orsinium_decision_cd:0 "Control Orsinium's capital [duchy|E]"
  no_orsimer_king_vassal_cd:0 "Orsinium isn't held by an Orsimer vassal"
- mountain_orc_regains_pariah_status:0 "The [mountain_orc.GetName] culture regains their status as [pariah|E], signified by them regaining the #V Pariah Folk#! [innovation|E]"
+ orsinium_culture_regains_pariah_status:0 "The [regained_pariah_culture.GetName] culture regains their status as [pariah|E], signified by them regaining the #V Pariah Folk#! [innovation|E]"
  
  ### Nibenay
  establish_new_nibenay_kingdom_decision:0 "Found a New Kingdom in Eastern Nibenay"
@@ -189,3 +171,10 @@
  establish_lingua_tamrielis_decision_confirm:0 "The [ROOT.Char.GetCulture.GetNameNoTooltip] reign supreme!"
  every_county_your_culture_gets_modifier:0 "Every [county|E], both in and outside your realm, of your culture"
  completely_controls_two_empires_ct:0 "You [completely_control|E] two [empires|E] with [de_jure|E] land"
+
+ ###Nedic Confederation
+ restore_nedic_kingdom_decision: "Unite Nedes"
+ restore_nedic_kingdom_decision_desc: "Before the Ra Gada came, our people were united in a loose confederation of tribes, swearing fealty to the High King in Skyreach. Although it is a distant memory for our people, I could claim to be an heir of that realm by returning our ancient lands."
+ restore_nedic_kingdom_decision_tooltip: "You will create a new [empire|E] for Nedic people"
+ restore_nedic_kingdom_decision_confirm: "Never again shall we be subjugated!"
+ form_nedic_kingdom_scripted_effect_de_jure_tt: "All kingdoms within the [region|E] of [GetGeographicalRegion('ek_nedic_kingdom_region').GetName] will become [de_jure|E] vassals of [nedic_confederation.GetNameNoTier]"

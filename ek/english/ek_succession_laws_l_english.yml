@@ -30,31 +30,16 @@
  
  rule_by_might_succession_law:0 "Rule by Might"
  rule_by_might_succession_law_subname:0 "Only the strongest shall lead us"
- rule_by_might_succession_law_effects:0 "\n#V Under $rule_by_might_succession_law$ [succession|E], the strongest child can inherit.\n#N Children might push their claim before the ruler's death if they feel strong enough.#!\n\n$rule_by_might_succession_law_base_desc$"
+ rule_by_might_succession_law_effects:0 "\n#V Under $rule_by_might_succession_law$ [succession|E], the strongest child can inherit.#!\n#N Children might push their claim before the ruler's death if they feel strong enough.#!\n\n$rule_by_might_succession_law_base_desc$"
  rule_by_might_succession_law_base_desc:0 "#weak Under $rule_by_might_succession_law$ [succession], the current ruler designates their [primary_heir|E] among all the eligible children.\n\nUpon succession, other children with a similar or higher [prowess|E] can challenge the new ruler, or leave in exile.\n\nChildren of non-eligible genders can contest the succession if their [prowess|E] is high enough.#!"
 
  xarxean_investiture_succession_law:0 "Xarxean Investiture"
  xarxean_investiture_succession_law_subname:0 "Divine Numerology"
- xarxean_investiture_succession_law_effects:0 "\n#V Under $xarxean_investiture_succession_law$, the child who most strictly adhere to the ancestral teachings of [ceremoniarchy|E] inherits all your [titles].\n\nBy using the 'Consult the Xarxeans' [decision|E] you will learn who your likely next [heir|E] will be. Otherwise this is revealed upon [succession|E].\n\n[empire|E] tier [ceremoniarchy_government|E] realms are automatically given this [law|E].#!\n\n#weak Upon succession, all of the late Ruler's [titles|e] will be given to the [player_heir|E], which is their [eligible_child|E] with the highest [praxis|E]. Other children will receive nothing. If there is no [eligible_child|E], grandchildren, great grandchildren, siblings and then other relatives may inherit, ordered by [praxis|E].\n#!"
+ xarxean_investiture_succession_law_effects:0 "\n#V Under $xarxean_investiture_succession_law$, the child who most strictly adhere to the ancestral teachings of [ceremoniarchy|E] inherits all your [titles].\n\nBy using the 'Consult the Xarxeans' [decision|E] you will learn who your likely next [heir|E] will be. Otherwise this is revealed upon [succession|E].\n\n[empire|E] tier [ceremoniarchy|E] realms are automatically given this [law|E].#!\n\n#weak Upon succession, all of the late Ruler's [titles|e] will be given to the [player_heir|E], which is their [eligible_child|E] with the highest [praxis|E]. Other children will receive nothing. If there is no [eligible_child|E], grandchildren, great grandchildren, siblings and then other relatives may inherit, ordered by [praxis|E].\n#!"
 
 
 #Miscenalleous 
  tooltip_feudal_elector_vote_knighthood:0 "Warrior of our people: $VALUE|=+0$"
- tooltip_feudal_elector_vote_conceded_election:0 "[candidate.GetSheHe|U] has no desire to be elected: $VALUE|=+0$"
- tooltip_feudal_elector_vote_conceded_election_myself:0 "I have no desire to be elected: $VALUE|=+0$"
-
- concede_election_decision:0 "Abstain from Elections"
- concede_election_decision_desc:0 "#F Electors may like me, but I don't want any elective titles.#!"
- concede_election_decision_tooltip:0 "I renounce any pretentions to rule new titles by election"
- concede_election_decision_confirm:0 "Free from electoral politics!"
- participate_election_decision:0 "Participate in Elections"
- participate_election_decision_desc:0 "#F Neglecting elections has not been a wise choice, I should reconsider...#!"
- participate_election_decision_tooltip:0 "I will now be a viable option for electors to pick"
- participate_election_decision_confirm:0 "Electors, here I come!"
- concede_election_effect:0 "@warning_icon! Should you be a candidate in the election of any elective title, electors will no longer vote for you"
- participate_election_effect:0 "@warning_icon! Should you be a candidate in the election of any elective title, electors will again vote for you"
- msg_conceded_election:0 "Abstaining from Elections"
- msg_participate_election:0 "Participating in Elections"
 
 #Moot Sucession Law
  moot_elective_succession_law:0 "Moot Elective"
@@ -117,7 +102,7 @@
 # Praxis Succession Law
  altmeri_elective_succession_law:0 "Praxis Elective"
  altmeri_elective_succession_law_subname:0 "Ceremoniarchy Succession"
- altmeri_elective_succession_law_effects:0 "\n#V Under $altmeri_elective_succession_law$, your relative who most strictly adhere to the ancestral teachings of [ceremoniarchy|E] inherits. This succession favours candidates with high [praxis|E] and positive [congenital_traits|E]. All relatives of the current ruler are valid candidates, though their children are prioritised over others.\n\n[kingdom|E] tier [ceremoniarchy_government|E] realms are automatically given this [title_law|E]."
+ altmeri_elective_succession_law_effects:0 "\n#V Under $altmeri_elective_succession_law$, your relative who most strictly adhere to the ancestral teachings of [ceremoniarchy|E] inherits. This succession favours candidates with high [praxis|E] and positive [congenital_traits|E]. All relatives of the current ruler are valid candidates, though their children are prioritised over others.\n\n[kingdom|E] tier [ceremoniarchy|E] realms are automatically given this [title_law|E]."
  altmeri_elective_candidates:0 "Close and Extended Family"
  altmeri_elective_candidates_tooltip:0 "In order to be a valid Candidate under Ceremoniarchy Succession, a character must fulfill one of the following conditions:\n$EFFECT_LIST_BULLET$Be a legitimate member of the ruler's [extended_family|E], who is not in line to inherit a Theocracy or Republic. Children of a candidate cannot be nominated\n$EFFECT_LIST_BULLET$Be a [claimant|E] to the title, who is not in line to inherit a Theocracy or Republic"
  altmeri_elective_electors:0 "$feudal_elective_electors$"
@@ -145,4 +130,21 @@
  mage_magocratic_succession_law:0 "Magocratic"
  mage_magocratic_succession_law_effects:0 "In a Mage Academy or College a senior Master-Wizard is selected to serve as Arch-Mage of the Institution."
  mage_magocratic_succession_law_base_desc:0 "In a Mage Academy or College a senior Master-Wizard is selected to serve as Arch-Mage of the Institution."
- 
+
+ #Admin modifiers
+ necromancer_and_criminal_desc: "[GetTrait('necromancer').GetName( GetNullCharacter )] #weak (considered [criminal|E])#!"
+ lycan_and_criminal_desc: "[GetTrait('lycan_character').GetName( GetNullCharacter )] #weak (considered [criminal|E])#!"
+ vampire_and_criminal_desc: "[GetTrait('vampire_character').GetName( GetNullCharacter )] #weak (considered [criminal|E])#!"
+ ek_imperial_same_dynasty_desc: "Same [dynasty|E]"
+ arcana_skills_desc: "Magical skill"
+ ek_auriel_dynasty_desc: "[GetModifier('auriels_heirs_dynasty_modifier').GetNameWithTooltip]"
+ ek_syrabane_dynasty_desc: "[GetModifier('syrabane_heirs_dynasty_modifier').GetNameWithTooltip]"
+ ek_phynaster_dynasty_desc: "[GetModifier('phynaster_heirs_dynasty_modifier').GetNameWithTooltip]"
+ ek_xarxes_dynasty_desc: "[GetModifier('xarxes_heirs_dynasty_modifier').GetNameWithTooltip]"
+ ek_chosen_by_xarxeans_desc: "Chosen by Xarxeans"
+ admin_vote_praxis_desc: "Their understanding of [praxis|E]"
+ admin_vote_beauty_good_desc: "Is beautiful"
+ admin_vote_beauty_bad_desc: "Is ugly"
+ admin_vote_physique_good_desc: "Is strong"
+ admin_vote_physique_bad_desc: "Is weak"
+ admin_vote_impurity_desc: "Is [impure|E]"

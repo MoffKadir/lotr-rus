@@ -2,3 +2,11 @@
  wet_nurse_court_position: "[SelectLocalization(EqualTo_string(GetPlayer.GetCulture.GetLanguage.GetNameNoTooltip, Localize('language_jel_name')), 'EK_wet_nurse_ARG', 'EK_wet_nurse')]"
  EK_wet_nurse_ARG:0 "Egg-Tender"
  EK_wet_nurse:0 "Wet Nurse"
+ akolouthos_court_position:0 "Grand Marshal" #EK EDIT
+ akolouthos_employer_custom_effect_description: "$BULLET$Increases [GetTrait('varangian').GetName( GetNullCharacter )] [GetCourtPositionType('bodyguard_court_position').GetName()] [aptitude|E] (based on [aptitude|E])\n$BULLET$More eligible [courtiers|E] gain the [GetTrait('varangian').GetName( GetNullCharacter )] and [GetTrait('loyal').GetName( GetNullCharacter )] [traits|E]\n$BULLET$More Legionaries will appear" #EK EDIT: renamed varangians, removed pillaging part 
+ akolouthos_court_position_desc: "The $akolouthos_court_position$ commands the Emperor's armies in accordance with Remanic tradition and the Dragonfire Covenant, bound by oaths of honourable service and loyalty."
+
+ court_position_akolouthos_bonus: "[GetCourtPositionType('akolouthos_court_position').GetName()]"
+
+ chief_qadi_court_position:0 "High Justiciar"
+ chief_qadi_court_position_desc:0 "The $chief_qadi_court_position$ is the ultimate judge of the realm, responsible for applying divine law in various disputes and legal matters."

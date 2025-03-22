@@ -1,4 +1,19 @@
 ﻿l_english:
+ #MARRIAGE
+ MARRIAGE_NO_OFFSPRING_REASON:0 "This union wouldn't produce a child: $VALUE|+0$"
+ MARRIAGE_DIFFERENT_HERITAGE_REASON:0 "Different [heritage|E]: $VALUE|+0$"
+ MARRIAGE_DIFFERENT_CULTURE_REASON:0 "Different [culture|E]: $VALUE|+0$"
+ MARRIAGE_INSULAR_CULTURE_REASON:0 "Their union would be considered culturally innapropriate: $VALUE|+0$"
+ MARRIAGE_LIFESPAN_REASON:0 "Different expected lifespan: $VALUE|+0$"
+ MARRIAGE_HEIRESS_MATRILINEAL_REASON:0 "[secondary_recipient.GetShortUIName|U] is an heiress and [recipient.GetShortUIName|U] would prefer a [matrilineal|E] marriage: $VALUE|+0$"
+ MARRIAGE_MONSTER_REASON:0 "Will not marry a [monster|E]: $VALUE|+0$"
+ MARRIAGE_FORMER_PARIAH_REASON:0 "Will not marry a former [pariah|E]: $VALUE|+0$"
+ MARRIAGE_CRYSTAL_TOWER_REASON:0 "[GetBuilding('crystal_tower_01').GetName]: #P +10#!"
+ #RELIGION
+ ASK_FOR_CONVERSION_CROWN_FOREBEAR:0 "[recipient.GetCulture.GetName|E] dislikes your [actor.GetCulture.GetName] ways: $VALUE|+0$."
+ #MISC
+ summoned_undead:0 "Summoned Undead"
+
  EXECUTION_ENTHRALL:0 "Turn into Undead Thrall"
 
  NO_TORTURING_UNDEAD:0 "Undead can't be tortured"
@@ -16,10 +31,6 @@
 
  ###Disrupt Arcana Interaction
  recently_disrupted:0 "Recently Disrupted"
- 
- make_clan_parent_interaction:0 "Make Clan-Mother"
- make_clan_parent_interaction_desc:0 "[recipient.GetFirstName] has seen much of the world during [recipient.GetHerHis] life, and [recipient.GetHerHis] wisdom will guide us..."
- make_clan_parent_interaction_one_clan_parent_per_court_tt:0 "As long as [recipient.GetFirstName] is alive, you won't be able to declare any other [courtier|E] a Clan-Mother!"
  
  challenge_to_single_combat_interaction.on_decline_low_learning.tt:0 "As [actor.GetShortUINamePossessive] [learning|E] is too low #N (below 10)#! [recipient.GetShortUIName] can refuse the duel without penalty!"
  ek_perk_interaction.0100.t:0 "The [recipient.GetCulture.GetName] Dueling Traditions"
@@ -70,34 +81,36 @@
  adopt_hatchling_interaction.tt:0 "[recipient.GetShortUINameNoTooltip] will leave the prison and be adopted as your [recipient.Custom('GetDaughterSon')]"
 
  no_obligations:0 "No Obligations"
- no_obligations_tt:0 "[feudal_contract|E] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_none' )]"
+ no_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_none' )]"
  CONTRACT_NO_OBLIGATIONS_REASON:0 "No Obligations: $VALUE|=+0$"
  opinion_obligations:0 "Regular Obligations (Opinion)"
- opinion_obligations_tt:0 "[feudal_contract|E] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_opinion' )]"
+ opinion_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_opinion' )]"
  devotion_obligations:0 "Regular Obligations (Devotion)"
- devotion_obligations_tt:0 "[feudal_contract|E] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_devotion' )]"
+ devotion_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_devotion' )]"
  devotion_obligations_requirement:0 "#V [vassal.GetTitledFirstName]#! does #bold not#! have #V [GetGovernment( 'theocracy_government' ).GetName]#! government or you do #bold not#! have #V [GetGovernment( 'hierocracy_government' ).GetName]#! government"
  fame_obligations:0 "Regular Obligations (Fame)"
- fame_obligations_tt:0 "[feudal_contract|E] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_fame' )]"
+ fame_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_fame' )]"
  arcana_obligations:0 "Regular Obligations (Arcana)"
- arcana_obligations_tt:0 "[feudal_contract|E] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_arcana' )]"
+ arcana_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_arcana' )]"
  arcana_obligations_requirement:0 "You do #bold not#! have the #V Sorcerous Rule#! [dynasty_perk|E] or a [culture|E] with the [GetCultureTradition('tradition_sorcerer_kings').GetName|V] [tradition|E]"
  prowess_obligations:0 "Regular Obligations (Prowess)"
- prowess_obligations_tt:0 "[feudal_contract|E] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_Prowess' )]"
+ prowess_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_Prowess' )]"
  prowess_obligations_requirement:0 "Your [faith|E] does #bold not#! have the [GetFaithDoctrine('tenet_contempt_for_the_weak').GetBaseName] Tenet"
  cultural_protection:0 "Cultural Protection"
  CONTRACT_CULTURAL_PROTECTION_REASON:0 "Cultural Protection: $VALUE|=+0$"
  cultural_religious_privilege:0 "Cultural and Religious Privilege"
  CONTRACT_CULTURAL_RELIGIOUS_PRIVILEGE_REASON:0 "Cultural and Religious Privilege: $VALUE|=+0$"
- cultural_protection_tt:0 "[feudal_contract|E] starts with [GetVassalContractType( 'cultural_rights' ).GetObligationName( 'cultural_rights_protected' )]"
+
  great_house_vassalage_reason:0 "[recipient.GetHerHis|U] [culture|E] does not wish to be part of a Great House: $VALUE|+=0$"
+ white_gold_tower_vassalage_reason:0 "[GetBuilding('white_gold_tower_01').GetName]: #P +10#!"
+ adamantine_tower_invite_reason:0 "[GetBuilding('crystal_tower_01').GetName]: #P +25#!"
  EDUCATE_ME_OPTION_TRAIN_ARCANA_EFFECT:1 "I will be trained into the arts of Magicka, and receive a #V Student of Magicka#! [trait|E]"
  EDUCATE_CHILD_OPTION_TRAIN_ARCANA_EFFECT:1 "Will be trained into the arts of Magicka, and receive a #V Student of Magicka#! [trait|E]"
  
- EDUCATE_ME_OPTION_TRAIN_ARCANA_LEARNING_FOCUS_EFFECT:1 "I am studying the [learning|E] Education and will receive a better #V Student of Magicka#! [trait|E]"
- EDUCATE_CHILD_OPTION_TRAIN_ARCANA_LEARNING_FOCUS_EFFECT:1 "Is studying the [learning|E] Education and will receive a better #V Student of Magicka#! [trait|E]"
- EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_1:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has a [tradition|E] unlocking Magic education, or the child's [dynasty|E] has the #V $magicka_legacy_3_name$#! [dynasty_perk|E], you need to find a Tutor with a #V $trait_education_magical_ability$#! or #V $trait_arcana_good$#! [trait|E]"
- EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_2:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has the #V $innovation_schools_of_magic$#! [innovation|E], you need to find a Tutor with a #V $trait_education_magical_ability$#! or #V $trait_arcana_good$#! [trait|E]"
+ EDUCATE_ME_OPTION_TRAIN_ARCANA_LEARNING_FOCUS_EFFECT:1 "I am studying the [learning|E] Education and will receive a better [magical_education_trait|E] [trait|E]"
+ EDUCATE_CHILD_OPTION_TRAIN_ARCANA_LEARNING_FOCUS_EFFECT:1 "Is studying the [learning|E] Education and will receive a better [magical_education_trait|E] [trait|E]"
+ EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_1:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has a [tradition|E] unlocking Magic education, or the child's [dynasty|E] has the #V $magicka_legacy_3_name$#! [dynasty_perk|E], you need to find a Tutor with a #V $trait_education_magic$#! or #V $trait_arcana_good$#! [trait|E]"
+ EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_2:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has the #V $innovation_schools_of_magic$#! [innovation|E], you need to find a Tutor with a #V $trait_education_magic$#! or #V $trait_arcana_good$#! [trait|E]"
  EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_3:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture has the #V $innovation_magical_studies$#! or #V $innovation_lunar_mysteries$#! [innovation|E], you need to find a Tutor with a #V $trait_arcana_good$#! [trait|E]"
  EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_4:0 "Will #N not#! be trained in the arts of Magicka.\nAs the child's culture neither has the #V $innovation_magical_studies$#!, #V $innovation_lunar_mysteries$#! or #V $innovation_schools_of_magic$#! [innovation|E], does not have a [tradition|E] unlocking Magic education, and their [dynasty|E] does not have the #V $magicka_legacy_3_name$#! [dynasty_perk|E], Magical education is #N impossible#!."
 
@@ -107,7 +120,7 @@
 
  thralldom_interaction:0 "Turn into Thrall"
  thralldom_interaction_desc:0 "You will kill [recipient.GetShortUINameNoTooltip] to raise [recipient.GetHerHis] corpse under your command."
- get_undead_thrall:0 "You will turn [recipient.GetShortUINameNoTooltip]'s corpse into a mindless but loyal thrall."
+ get_undead_thrall:0 "You will turn [recipient.GetShortUINameNoTooltip]'s corpse into a mindless but loyal [GetTrait('undead_character').GetName(GetNullCharacter)] thrall."
 
  skull_corruption_interaction:0 "Use the Skull of Corruption"
  skull_corruption_desc:0 "Use the Skull of Corruption on [recipient.GetShortUINameNoTooltip] to make [recipient.GetHerHim] battle a duplicate!"
@@ -172,3 +185,6 @@
  destroy_hist_holding_interaction:0 "Destroy Hist"
  destroy_hist_holding_interaction_desc:0 "Destroy all [buildings|E] in this [holding|E] and turn it into a temple"
  destroy_hist_holding_interaction_notification:0 "Destroyed Hist"
+
+ #Co-emperor (replaces vanilla)
+ valid_co_emperor_powerful_family_trigger: "Only [house_heads|E] of [powerful_families|E] may be [co_emperors|E]"

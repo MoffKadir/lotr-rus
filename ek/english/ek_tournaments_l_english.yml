@@ -6,7 +6,7 @@
  tournament_contest_type_magic:0 "Magic"
  tourney_participant_magic:1 "[GetTrait('tourney_participant').GetName( GetNullCharacter )] Magic [trait_level_track_xp|E]"
  arcana_concept:1 "[arcana|E] Skill"
- trait_education_magic:1 "Magic [education|E]"
+ has_education_magic:1 "Magic [education|E]"
  character_contest_type_aptitude_magic:1 "#T $character_contest_type_aptitude_start$ $tournament_contest_type_magic$ [contest_aptitude|E]: [Character.Custom('GetContestTypeMagicAptitude')]#![AddTextIf( Not( StringIsEmpty( Character.MakeScope.GetScriptValueDesc('contest_type_aptitude_magic') ) ), Concatenate( '\n', Character.MakeScope.GetScriptValueDesc('contest_type_aptitude_magic') ) )]"
 
  MAGIC_EXPERIENCE_REGULAR_TOOLTIP:0 "$tournament_contest_favoured_skill_tooltip$ $tourney_participant_magic$"

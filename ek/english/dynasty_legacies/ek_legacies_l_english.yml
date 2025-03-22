@@ -44,13 +44,33 @@
  GOOD_ARCANA_GENETIC_TRAIT_PERK_BONUS:0 "[children|E] have a high chance of getting a #V $trait_arcana_good$#! trait"
  magicka_legacy_2_name:0 "Magical Drills"
  magicka_legacy_3_name:0 "Thaumaturgic Heritage"
- CAN_EDUCATE_MAGICAL_ARTS_NO_INNOVATION_PERK_BONUS:0 "[children|E] can receive a #V $trait_education_magical_ability$#! trait if their [guardian|E] has a #V $trait_arcana_good$#! or #V $trait_education_magical_ability$#! trait"
- MAGICAL_ARTS_EDUCATION_RESULT_BONUS_WITH_INNOVATION_PERK_BONUS:0 "#weak Innovations unlocking similar abilities will instead lead to better results#!"
+ CAN_EDUCATE_MAGICAL_ARTS_NO_INNOVATION_PERK_BONUS:0 "[children|E] can receive a #V $trait_education_magic$#! trait if their [guardian|E] has a #V $trait_arcana_good$#! or #V $trait_education_magic$#! trait"
+ MAGICAL_ARTS_EDUCATION_RESULT_BONUS:0 "Children tend to do better in the [magic_lifestyle|E] [education|E]"
+ SELECT_DYNASTY_MAGIC_SCHOOL_SPECIALIZATION:0 "Can select a school from the [magic_lifestyle|E] to specialize in, granting reduced [spell|E] [magicka|E] cost, and making [dynasty|E] members more likely to spend [perks|E] in that school"
  magicka_legacy_4_name:0 "Sorcerous Rule"
- UNLOCKS_MAGICAL_COURT_TYPE_PERK_BONUS:0 "Unlocks the #V $court_magical$#! [court_type|E]\n[court_grandeur|E] bonus when in a #V $court_magical$#!: #P +5#!\n$culture_parameter_magic_elective_enabled$\n As a Vassal, you can request Arcana [obligations|E] from your Liege"
+ UNLOCKS_MAGICAL_COURT_TYPE_PERK_BONUS:0 "Unlocks the #V $court_magical$#! [court_type|E]\n[court_grandeur|E] bonus when in a #V $court_magical$#!: #P +5#!\n$culture_parameter_magic_elective_enabled$"
  magicka_legacy_5_name:0 "Perennial Rites"
  ADDITIONAL_RITUAL_PERK_BONUS:0 "Allows one additional Permanent Ritual"
+ TIER_5_MAGIC_EDUCATION:0 "[dynasty|E] members may gain a rank five [magic_lifestyle|E] [education_trait|E]"
  magicka_legacy_trigger:0 "\n#weak Picking this Legacy requires being able to use [magic|E]!#!"
+ 
+ magicka_legacy_necromancy_focus:0 "Master Necromancers"
+ magicka_legacy_necromancy_focus_desc:0 "Necromancy [spell|E] cost: [magicka_i]#P -10%#!\n[dynasty|E] members more likely to select Necromancy [perks|E]\n[dynasty|E] members start with a number of [perks|E] in Necromancy equal to their #V $trait_education_magic$#! [trait|E] level"
+
+magicka_legacy_conjuration_focus:0 "Master Conjurers"
+magicka_legacy_conjuration_focus_desc:0 "Conjuration [spell|E] cost: [magicka_i]#P -10%#!\n[dynasty|E] members more likely to select Conjuration [perks|E]\n[dynasty|E] members start with a number of [perks|E] in Conjuration equal to their #V $trait_education_magic$#! [trait|E] level"
+
+magicka_legacy_destruction_focus:0 "Master Elementalists"
+magicka_legacy_destruction_focus_desc:0 "Destruction [spell|E] cost: [magicka_i]#P -10%#!\n[dynasty|E] members more likely to select Destruction [perks|E]\n[dynasty|E] members start with a number of [perks|E] in Destruction equal to their #V $trait_education_magic$#! [trait|E] level"
+
+magicka_legacy_restoration_focus:0 "Master Healers"
+magicka_legacy_restoration_focus_desc:0 "Restoration [spell|E] cost: [magicka_i]#P -10%#!\n[dynasty|E] members more likely to select Restoration [perks|E]\n[dynasty|E] members start with a number of [perks|E] in Restoration equal to their #V $trait_education_magic$#! [trait|E] level"
+
+magicka_legacy_illusion_focus:0 "Master Illusionists"
+magicka_legacy_illusion_focus_desc:0 "Illusion [spell|E] cost: [magicka_i]#P -10%#!\n[dynasty|E] members more likely to select Illusion [perks|E]\n[dynasty|E] members start with a number of [perks|E] in Illusion equal to their #V $trait_education_magic$#! [trait|E] level"
+
+magicka_legacy_alteration_focus:0 "Master Alterationists"
+magicka_legacy_alteration_focus_desc:0 "Alteration [spell|E] cost: [magicka_i]#P -10%#!\n[dynasty|E] members more likely to select Alteration [perks|E]\n[dynasty|E] members start with a number of [perks|E] in Alteration equal to their #V $trait_education_magic$#! [trait|E] level"
 
 # Edit to vanilla Blood Legacy
  blood_legacy_trigger:0 "\n#weak Picking this Legacy requires your [faith|E] having the [GetFaithDoctrine('tenet_divine_purity').GetBaseName] Tenet!#!"

@@ -1,8 +1,13 @@
 ﻿l_english:
 
 # EK EDIT: made loc more accurate to how unis work in EK
- #Adult Education#
- adult_education_has_university_desc: "\n#P +++ [learning_i] Point of Interest#!"
- adult_education_has_religious_center_desc: "\n#P +++ Holy Site Special Building of your Faith#!"
- adult_education_has_academy_desc:0 "\n#P +++ Academy#!"
- activity_adult_education_destination_selection: "You can only start a [GetActivityType('activity_adult_education').GetName] in provinces with an [academy|E], [learning_i][learning|E] [point_of_interest|E] or a [holy_site|E] [special_building|E] of your Faith."
+ #Adult Education
+ adult_education_has_university_desc: "\n#P ++++ [learning_i] Special Building#!"
+ activity_adult_education_destination_selection: "You can only start a [GetActivityType('activity_adult_education').GetName] in provinces with an [academy|E] or a [special_building|E] that is either connected to arcane or mundane education."
+
+ #Adult Education Reward
+ activity_adult_education_special_type_bar_segment_tt_0: "#t Decent Studies (Tier 1)#!\n[GetPlayer.Custom('GetArcaneOrMundaneRewardTier0')]"
+ activity_adult_education_special_type_bar_segment_tt_1: "#t Great Studies (Tier 2)#!\n[GetPlayer.Custom('GetArcaneOrMundaneRewardTier1')]"
+ activity_adult_education_special_type_bar_segment_tt_2: "#t Extraordinary Studies (Tier 3)#!\n[GetPlayer.Custom('GetArcaneOrMundaneRewardTier2')]"
+ activity_adult_education_special_type_bar_segment_tt_3: "#t Perfect Studies (Tier 4)#!\n[GetPlayer.Custom('GetArcaneOrMundaneRewardTier3')]"
+ 

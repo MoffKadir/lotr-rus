@@ -1,4 +1,5 @@
 ﻿l_english:
+ decision_group_type_ek_sb: "Special Buildings Decisions"
  # Coping mechanisms
  stress_loss_skooma_drinker_decision:1 "Smoke or Drink Skooma"
  stress_loss_skooma_drinker_decision_desc:1 "As I light up my pipe I can already smell the refined moonsugar's odor filling up the room. I smile, as it is exactly what I need..."
@@ -50,6 +51,22 @@
  use_extra_perk_decision_desc:0 "I have dedicated myself to a single field of knowledge before considering to pledge myself to a new one. Now I have extensive experience in that particular field, yet I feel somewhat inadequate for there is nothing more to learn in there.\n\nI wonder if there is some way for me to take advantage of that excess..."
  use_extra_perk_decision_tooltip:0 "Use one of your excess perk points and obtain a reward based on your traits and new lifestyle, in exchange for some stress."
  use_extra_perk_decision_confirm:0 "Let's Review!"
+
+ diplomacy_all_perks:0 "You have unlocked all Diplomacy lifestyle perks"
+ intrigue_all_perks:0 "You have unlocked all Intrigue lifestyle perks"
+ stewardship_all_perks:0 "You have unlocked all Stewardship lifestyle perks"
+ learning_all_perks:0 "You have unlocked all Learning lifestyle perks"
+ martial_all_perks:0 "You have unlocked all Martial lifestyle perks"
+ magic_all_perks:0 "You have unlocked all Magic lifestyle perks"
+ dark_arts_all_perks:0 "You have unlocked all Dark Arts lifestyle perks"
+
+ diplomacy_extra_perk_points:0 "You have excess Diplomacy lifestyle perk points"
+ intrigue_extra_perk_points:0 "You have excess Intrigue perk lifestyle points"
+ stewardship_extra_perk_points:0 "You have excess Stewardship lifestyle perk points"
+ learning_extra_perk_points:0 "You have excess Learning perk lifestyle points"
+ martial_extra_perk_points:0 "You have excess Martial perk lifestyle points"
+ magic_extra_perk_points:0 "You have excess Magic perk lifestyle points"
+ dark_arts_extra_perk_points:0 "You have excess Dark Arts lifestyle perk points"
  
  # Religious
 
@@ -297,13 +314,14 @@
 
 # Courtier
 
- hire_mage_decision:0 "Search for Court Mage"
- hire_mage_decision_tooltip:3 "Your servants will suggest a number of suitable candidates for the position of [GetCourtPositionType('court_mage_position').GetName()]"
- hire_mage_decision_desc:1 "A court mage is essential to cast spells and incantations for the good of the realm. I will ask my servants to bring forth a number of suitable candidates."
- hire_mage_decision_effect_tooltip:4 "You will be presented with a group of [GetCourtPositionType('court_mage_position').GetName()] candidates and may hire one of them for a fee"
- hire_mage_decision_confirm:0 "Start the search"
- ek_court_position.0001.t:0 "Court Mage"
- ek_court_position.0001.desc:0 "This world is full of dangers, even to a [ROOT.Char.GetTitleTierName] and [ROOT.Char.GetHerHis] court. As per my request, my servants have inquired after recommendations. Now they have assembled a few options to chose from."
+ hire_court_mage_decision: "Search for Court Mage"
+ hire_court_mage_decision_tooltip: "Your servants will suggest a number of suitable candidates for the position of [GetCourtPositionType('court_mage_court_position').GetName()]"
+ hire_court_mage_decision_desc: "A court mage is essential to cast spells and incantations for the good of the realm. I will ask my servants to bring forth a number of suitable candidates."
+ hire_court_mage_cooldown_tt: "Recruiting a [GetCourtPositionType('court_mage_court_position').GetName] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_court_mage_cooldown' ))]"
+ hire_court_mage_decision_effect_tooltip: "You will be presented with a group of [GetCourtPositionType('court_mage_court_position').GetName()] candidates and may hire one of them for a fee"
+ hire_court_mage_decision_confirm: "Start the search"
+ ek_court_position.0001.t: "Court Mage"
+ ek_court_position.0001.desc: "This world is full of dangers, even to a [ROOT.Char.GetTitleTierName] and [ROOT.Char.GetHerHis] court. As per my request, my servants have inquired after recommendations. Now they have assembled a few options to chose from."
 
 # Invite Criminals
  invite_criminals_decision:0 "Invite Criminals"
