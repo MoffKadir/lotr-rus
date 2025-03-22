@@ -621,7 +621,7 @@ types ActivityPlannerTypes
 
 							visible_at_creation = no # required to make sure we trigger the '_show' state
 
-							state = { 
+							state = {
 								name = _show
 								on_start = "[ActivityPlanner.RemoveGuestFromPlanningGuestSubset(PlannedActivityPhase.AccessSelf, GetPlayer, 'spectator')]"
 								on_start = "[ActivityPlanner.AddGuestToPlanningGuestSubset(PlannedActivityPhase.AccessSelf, GetPlayer, 'contestant')]"
@@ -634,7 +634,7 @@ types ActivityPlannerTypes
 
 							visible_at_creation = no # required to make sure we trigger the '_show' state
 
-							state = { 
+							state = {
 								name = _show
 								on_start = "[ActivityPlanner.RemoveGuestFromPlanningGuestSubset(PlannedActivityPhase.AccessSelf, GetPlayer, 'contestant')]"
 								on_start = "[ActivityPlanner.AddGuestToPlanningGuestSubset(PlannedActivityPhase.AccessSelf, GetPlayer, 'spectator')]"

@@ -37,9 +37,8 @@ types CharWindow
 			align = nobaseline
 		}
 	}
-	type ek_praxis = vbox
+	type ek_praxis = hbox
 	{
-		visible = "[Character.MakeScope.Var('state_praxis').IsSet]"
 		tooltipwidget =  {
 			praxis_breakdown_widget = {
 			datacontext = "[CharacterWindow.GetCharacter]"
@@ -47,8 +46,9 @@ types CharWindow
 		 }
 		using = tooltip_ne
 
-		spacing = -3
-		margin_left = 5
+		divider_light = {
+			layoutpolicy_vertical = expanding
+		}
 
 		using = Animation_Character_Window_Refresh
 
@@ -70,7 +70,7 @@ types CharWindow
 	type ek_important_character = button_normal
 	{
 		name = "important_char_info" #tt wiget and store char id in sys var on show/create
-		visible = "[StringIsEmpty(Localize(Concatenate( 'imp_char_', Character.GetSlowHistoryIdForDebug )))]"
+		visible = "[StringIsEmpty(Localize(Concatenate( 'imp_char_', Character.GetHistoryId )))]"
 
 		size = { 35 35 }
 
@@ -82,7 +82,7 @@ types CharWindow
 
 				state = {
 					name = _show
-					on_start = "[GetVariableSystem.Set('imp_char', Character.GetSlowHistoryIdForDebug)]"
+					on_start = "[GetVariableSystem.Set('imp_char', Character.GetHistoryId)]"
 				}
 
 				#blockoverride "header_tt" {}

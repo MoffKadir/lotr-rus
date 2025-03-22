@@ -335,7 +335,7 @@ window = {
 						text_multi = {
 							# EK EDIT: Account for Arcana
 							#text = "[Artifact.GetModifierEffects]"
-							raw_text = "[Artifact.GetModifierEffects][AddTextIf( Artifact.MakeScope.Var('arcana_modifier').IsSet, Localize('artifact_arcana_modifier') )][AddTextIf( Artifact.MakeScope.Var('magicka_modifier_flat').IsSet, Localize('artifact_magicka_modifier_flat') )][AddTextIf( Artifact.MakeScope.Var('magicka_modifier_mult').IsSet, Localize('artifact_magicka_modifier_mult') )][AddTextIf( Artifact.MakeScope.Var('necromancy_spell_cost_modifier').IsSet, Localize('artifact_necromancy_spell_cost_modifier') )][AddTextIf( Artifact.MakeScope.Var('bloodworm_helmet_effect').IsSet, Localize('bloodworm_helmet_effect') )][AddTextIf( Artifact.MakeScope.Var('staff_worms_effect').IsSet, Localize('staff_worms_effect') )]"
+							raw_text = "[Artifact.GetModifierEffects][AddTextIf( Artifact.MakeScope.Var('arcana_modifier').IsSet, Localize('artifact_arcana_modifier') )][AddTextIf( Artifact.MakeScope.Var('magicka_modifier_flat').IsSet, Localize('artifact_magicka_modifier_flat') )][AddTextIf( Artifact.MakeScope.Var('magicka_modifier_mult').IsSet, Localize('artifact_magicka_modifier_mult') )][AddTextIf( Artifact.MakeScope.Var('necromancy_spell_cost_modifier').IsSet, Localize('artifact_necromancy_spell_cost_modifier') )][AddTextIf( Artifact.MakeScope.Var('conjuration_spell_cost_modifier').IsSet, Localize('artifact_conjuration_spell_cost_modifier') )][AddTextIf( Artifact.MakeScope.Var('bloodworm_helmet_effect').IsSet, Localize('bloodworm_helmet_effect') )][AddTextIf( Artifact.MakeScope.Var('staff_worms_effect').IsSet, Localize('staff_worms_effect') )]"
 							margin_bottom = 10
 							margin_top = 5
 							max_width = 410
@@ -672,33 +672,32 @@ window = {
 
 											margin = { 0 6 }
 
-												hbox = {
-													spacing = 6
+											hbox = {
+												spacing = 6
 
-													icon = {
-														name = "icon_soldier"
-														size = { 25 25 }
-														texture = "gfx/interface/icons/icon_soldier.dds"
-													}
-
-													text_single = {
-														text = "[ArmyComposition.GetSoldierCountString]"
-														using = Font_Size_Medium
-														default_format = "#high"
-														align = nobaseline
-													}
-
-													army_quality_icon = {}
+												icon = {
+													name = "icon_soldier"
+													size = { 25 25 }
+													texture = "gfx/interface/icons/icon_soldier.dds"
 												}
 
-												progressbar_standard = {
-													name = "soldiers_max"
-													size = { 40 8 }
-
-													min = 0
-													max = "[IntToFloat(ArmyComposition.GetMaxNumberOfSoldiers)]"
-													value = "[IntToFloat(ArmyComposition.GetCurrentNumberOfSoldiers)]"
+												text_single = {
+													text = "[ArmyComposition.GetSoldierCountString]"
+													using = Font_Size_Medium
+													default_format = "#high"
+													align = nobaseline
 												}
+
+												army_quality_icon = {}
+											}
+
+											progressbar_standard = {
+												name = "soldiers_max"
+												size = { 40 8 }
+
+												min = 0
+												max = "[IntToFloat(ArmyComposition.GetMaxNumberOfSoldiers)]"
+												value = "[IntToFloat(ArmyComposition.GetCurrentNumberOfSoldiers)]"
 											}
 										}
 									}

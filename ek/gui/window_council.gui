@@ -1,4 +1,3 @@
-# EK NOTE: added text blurb about feudal councils
 
 ######################################################
 ################## COUNCIL WINDOW ####################
@@ -53,20 +52,6 @@ window = {
 						onclick = "[CouncilWindow.Close]"
 					}
 				}
-
-				# EK ADDITION: added a small text to explain council position eligibilty for feudals
-				### Feudalism: CA dictates which vassals can join the council
-				text_multi = {
-					visible = "[GetPlayer.GetGovernment.IsType('feudal_government')]"
-					max_width = 550
-					margin = { 15 15 }
-					text = "FEUDAL_COUNCIL_CHOICES_GUI"
-					align = center
-					multiline = yes
-					autoresize = yes
-					fontsize = 15
-				}
-				# EK ADDITION END
 
 				hbox = {
 					layoutpolicy_horizontal = expanding
@@ -577,7 +562,7 @@ types CouncilWindow
 
 					text_single = {
 						layoutpolicy_horizontal = expanding
-						text = "[Character.GetShortUINameNoTooltip]"
+						text = "[Character.GetShortUINameNoTooltip|U]"
 						default_format = "#high"
 						align = nobaseline
 						autoresize = no
@@ -685,20 +670,13 @@ types CouncilWindow
 					using = Animation_FadeIn_Quick
 				}
 
-				text_multi = {
-					margin_left = 10
-					margin_bottom = 10
-					margin_right = 5
-					autoresize = yes
-					max_width = 180
+				icon = {
+					size = { 40 40 }
+					parentanchor = top|right
+					position = { -4 8 }
+					texture = "gfx/interface/icons/modifiers/council_positive.dds"
+					tooltip = "ON_COUNCIL_EFFECTS"
 					visible = "[Character.IsLocalPlayer]"
-					align = bottom|left
-					parentanchor = bottom|left
-					text = "ON_COUNCIL_EFFECTS"
-					background = {
-						using = Background_Area_Dark
-					}
-					fontsize = 14
 				}
 
 				portrait_opinion = {
