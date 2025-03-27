@@ -815,7 +815,9 @@
  THEY_LOSE_PIETY_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] потеряет $VALUE|V0$ [Concept( 'piety_levels', 'ур. набожности' )|E]"
  BREAKING_TRUCE: "\n#S Нарушение [Concept( 'truce', 'перемирия' )|E]#!"
  ATTACKING_ALLY: "\n#S Нападение на [Concept( 'ally', 'союзника' )|E]#!"
+
  WAR_BREAKING_BETROTHAL: "\n#S Разрыв помолвки с большой свадьбой#!"
+
  SET_CULTURE_GLOBAL: "Принимает [TARGET_CULTURE.GetCollectiveNoun|Vl]#V #L ую#!#! культуру"
  SET_CULTURE_FIRST: "Вы принимаете [TARGET_CULTURE.GetCollectiveNoun|Vl]#V #L ую#!#! культуру"
  SET_CULTURE_THIRD: "[CHARACTER.GetShortUIName|U] принимает [TARGET_CULTURE.GetCollectiveNoun|Vl]#V #L ую#!#! культуру"
@@ -824,6 +826,7 @@
  SET_CULTURE_THIRD_PAST: "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsFemale, 'приняла', 'принял' )] [TARGET_CULTURE.GetCollectiveNoun|Vl]#V #L ую#!#! культуру"
  SET_CULTURE_OF_CHARACTER_SAME_AS: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] меняет свою культуру на культуру [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] ([TARGET_CHARACTER.GetCulture.GetCollectiveNoun|V]#V #L ая#!#!)"
  SAT_CUTLURE_OF_CHARACTER_SAME_AS: "[CHARACTER.GetShortUINamePossessive] [Select_CString(CHARACTER.IsFemale, 'изменила', 'изменил' )] свою культуру на культуру [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] (#V #L [TARGET_CHARACTER.GetCulture.GetCollectiveNoun]ая#!#!)"
+
  SKILL_CHALLENGE_LIST_ITEM: "@$SKILL_ICON$!$SKILL$"
  SKILL_CHALLENGE_SINGLE: "Состязание в навыке $SKILL_LIST$"
  SKILL_CHALLENGE_MULTI: "Состязание в навыках $SKILL_LIST$"
@@ -831,6 +834,7 @@
  VARIABLE_CHALLENGE_SINGLE: "Проверка ($VARIABLE_LIST$)"
  VARIABLE_CHALLENGE_MULTI: "Суммарная проверка ($VARIABLE_LIST$)"
  SKILL_AND_VARIABLE_CHALLENGE: "Суммарная проверка ($SKILL_LIST$ и $VARIABLE_LIST$)"
+
  I_ENTERED_CHALLENGE_EFFECT: "$SKILL_CHALLENGE$"
  THEY_ENTERED_CHALLENGE_EFFECT: "[CHARACTER.GetShortUIName|U]:\n $SKILL_CHALLENGE$"
  ENTERED_CHALLENGE_EFFECT: "$SKILL_CHALLENGE$"
@@ -1048,6 +1052,7 @@
  CHANGE_COUNTY_CONTROL_THIRD_NEG: "[TITLE.GetName]: уровень [Concept('control', 'контроля')|E] снизится на $VALUE|-0$"
  CHANGE_COUNTY_CONTROL_PAST_NEG: "Уровень [Concept('control', 'контроля')|E] снизился на $VALUE|-0$"
  CHANGE_COUNTY_CONTROL_THIRD_PAST_NEG: "[TITLE.GetName]: уровень [Concept('control', 'контроля')|E] снизился на $VALUE|-0$"
+
  IT_RECEIVES_COUNTY_MODIFIER: "[TITLE.GetName] [Select_CString(CHARACTER.IsLocalPlayer, 'получите', 'получит' )] $MODIFIER|V$"
  RECEIVES_COUNTY_MODIFIER: "Получит $MODIFIER|V$"
  IT_RECEIVED_COUNTY_MODIFIER: "[TITLE.GetName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $MODIFIER|V$"
@@ -1247,10 +1252,12 @@
  CLEAR_DESIGNATED_HEIR_GLOBAL: "Больше не будет [Concept('designated_heir','предопределенного наследника')|E]"
  CLEAR_DESIGNATED_HEIR_FIRST: "У вас больше не будет [Concept('designated_heir','предопределенного наследника')|E]"
  CLEAR_DESIGNATED_HEIR_THIRD: "[CHARACTER.GetShortUIName|U] больше не [Select_CString(CHARACTER.IsLocalPlayer, 'будете','будет')] иметь [Concept('designated_heir','предопределенного наследника')|E]"
+
  set_designated_heir_unsafe_global: "$SET_DESIGNATED_HEIR_GLOBAL$"
  set_designated_heir_unsafe_first: "$SET_DESIGNATED_HEIR_FIRST$"
  set_designated_heir_unsafe_first_past: "$SET_DESIGNATED_HEIR_FIRST_PAST$"
  set_designated_heir_unsafe_third: "$SET_DESIGNATED_HEIR_THIRD$"
+
  DIVORCE_GLOBAL: "И [TARGET_CHARACTER.GetUIName] разводятся"
  DIVORCE_FIRST: "Вы и [TARGET_CHARACTER.GetUIName] разводитесь"
  DIVORCE_THIRD: "[CHARACTER.GetShortUIName|U] и [TARGET_CHARACTER.GetUIName] разводятся"
@@ -1636,7 +1643,7 @@
  CASUS_BELLI_COST_PERK_REDUCTION: "Стоимость [casus_belli|El]: #P -[EmptyScope.ScriptValue('bellum_justum_discount_percentage')|0]%#!"
  CASUS_BELLI_COST_DYNASTY_PERK_REDUCTION: "Стоимость [casus_belli|El]: #P -20%#!"
  BETTER_KNIGHTS_DYNASTY_PERK_REDUCTION: "Меньше вероятность того, что члены [Concept( 'dynasty', 'династии' )|E] погибнут или будут ранены в [Concept( 'battle', 'бою' )|E]. Они также с большой вероятностью могут увеличить свою [Concept( 'prowess', 'доблесть' )|E], служа в качестве [Concept( 'knights', 'рыцарей' )|E]"
- PERK_CAN_SIGN_ALLIANCE: "Можно предложить один [alliance|El] без [Concept( 'marriage', 'брака' )|E]"
+ PERK_CAN_SIGN_ALLIANCE: "Можно предложить один [Concept('alliance', 'союз')|E] без [Concept( 'marriage', 'брака' )|E]\nОткрывает [Concept('interaction', 'взаимодействие')|E] «#V Купить перемирие#!»"
  PERK_TRUCE_BREAKING_COST_REDUCTION: "Более короткие [truces|El] и отсутствие штрафа к [Concept( 'prestige', 'престижу' )|E] за их разрыв"
  EACH_ALLIANCE_GRANTS_DIPLOMACY: "Каждый [Concept( 'alliance', 'союз' )|E] дает: [diplomacy_i]#P +1#! (Максимум [EmptyScope.ScriptValue('embassies_max')|0])"
  FABRICATE_CLAIM_SPEED_GAIN: "Скорость [Concept( 'fabricate_claim', 'подделки претензии' )|E]: #P +[EmptyScope.ScriptValue('accomplished_forger_percentage')|0]%#!\nОткрывает [buy_artifact_claim_interaction|El]"
