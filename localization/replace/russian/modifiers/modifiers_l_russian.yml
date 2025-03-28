@@ -791,6 +791,7 @@
  MOD_MONTHLY_DEVELOPMENT_GROWTH: "Прирост [Concept( 'development', 'развития' )|E]"
  MOD_MONTHLY_DEVELOPMENT_DECLINE: "Спад [Concept( 'development', 'развития' )|E]"
  MOD_CHARACTER_CAPITAL_MONTHLY_DEVELOPMENT_GROWTH_ADD: "Прирост [Concept( 'development', 'развития' )|E] в столице"
+ MOD_CHARACTER_CAPITAL_MONTHLY_CONTROL_ADD: "[Concept('control', 'Контроль')|E] в [Concept('realm_capital','столице державы')|E]"
  MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR: "Прирост [Concept( 'development', 'развития' )|El]"
  MOD_MONTHLY_DEVELOPMENT_DECLINE_FACTOR: "Спад [Concept( 'development', 'развития' )|E]"
  plains_development_growth: "$MOD_MONTHLY_DEVELOPMENT_GROWTH$ на равнинах ([Concept('terrain','тип местности')|E])"
@@ -886,7 +887,9 @@
  MOD_COUNCILLOR_OPINION: "Мнение [Concept( 'councillor', 'советников' )|E]"
  MOD_REALM_PRIEST_OPINION: "Мнение [Concept( 'realm_priest', 'державного священника' )|E]"
  MOD_POWERFUL_VASSAL_OPINION: "Мнение [Concept( 'powerful_vassal', 'могущественных вассалов' )|E]"
- MOD_COURTIER_OPINION: "Мнение [Concept( 'courtier', 'придворных' )|E]"
+ MOD_COURTIER_OPINION: "Мнение: [SelectLocalization(IsLandlessAdventurer( GetPlayer ), 'mod_follower_opinion_desc', 'mod_courtier_opinion_desc')]"
+ mod_courtier_opinion_desc: "[Concept('courtier', 'Придворный')E]"
+ mod_follower_opinion_desc: "[Concept( 'follower', 'Последователь' )|E]"
  MOD_GUEST_OPINION: "Мнение [Concept( 'guest', 'гостей' )|E]"
  MOD_COURTIER_AND_GUEST_OPINION: "Мнение [Concept( 'courtier', 'придворных' )|E] и [Concept( 'guest', 'гостей' )|E]"
  MOD_PRISONER_OPINION: "Мнение [Concept( 'prisoner', 'пленников' )|E]"
@@ -1191,7 +1194,7 @@
  prestige_level_4_laamp_desc: "Открывает:\n\t#weak [Concept('casus_belli','Казус белли')|E] «$EP3_LAAMP_INVASION_CB_KINGDOM_NAME$» и ниже\n\t[Concept('interaction','Взаимодействие')|E] «$purchase_land_interaction$» в отношении [Concept('duchies','герцогств')|E] и [Concept('counties','графств')|E] с увеличенной терпимостью\n\tНаграда в виде [Concept('county','графства')|E] или [Concept('duchy','герцогства')|E] за действие «$hire_laamp_mercenaries_interaction$»\n\t[Concept('scheme','Происки')|E] «$seize_realm$» за [Concept('kingdoms','королевства')|E] и ниже\n\t[Concept('interaction','Взаимодействие')|E] «$request_laamp_invasion_sponsorship_interaction$»#!"
  prestige_level_5_laamp_desc: "Открывает:\n\t#weak «$EP3_LAAMP_INVASION_CB_EMPIRE_NAME$» и ниже\n\t[Concept('interaction','Взаимодействие')|E] «$purchase_land_interaction$» в отношении [Concept('duchies','герцогств')|E] и [Concept('counties','графств')|E] с увеличенной терпимостью\n\tНаграда в виде [Concept('county','графства')|E] или [Concept('duchy','герцогства')|E] за действие «$hire_laamp_mercenaries_interaction$»\n\t[Concept('scheme','Происки')|E] «$seize_realm$» за [Concept('empires','империи')|E] и ниже\n\t[Concept('interaction','Взаимодействие')|E] «$request_laamp_invasion_sponsorship_interaction$»#!"
 
- influence_level_0: "[Select_CString(CHARACTER.IsFemale, 'Бессильная', 'Бессильный' )]"
+ influence_level_0: "Бессилие"
  influence_level_0_desc: "$influence_level_0$ — самый низкий [influence_level|El]. Следующий уровень — [GetModifier( 'influence_level_1' ).GetNameWithTooltip|L].\nЭффекты:\n[GetInfluenceLevelDesc( '(int32)0' )]"
  influence_level_1: "Влиятельность"
  influence_level_1_desc: "$influence_level_1$ — второй [influence_level|El]. Следующий уровень — [GetModifier( 'influence_level_2' ).GetNameWithTooltip|L].\nЭффекты:\n[GetInfluenceLevelDesc( '(int32)1' )]"
@@ -1301,6 +1304,8 @@
  trait_track_hunter_xp_gain_mult: "Прирост [Concept( 'trait_level_track_xp', 'опыта пути развития свойства' )|E] «Венатор» #weak ([GetTrait('lifestyle_hunter').GetName( GetNullCharacter )])#!"
  trait_track_falconer_xp_gain_mult: "Прирост [Concept( 'trait_level_track_xp', 'опыта пути развития свойства' )|E] «Сокольничий»#weak ([GetTrait('lifestyle_hunter').GetName( GetNullCharacter )])#!"
 
+ lifestyle_mystic_xp_gain_mult: "Прирост [Concept( 'trait_level_track_xp', 'опыта для развития свойства' )|E] «[GetTrait('lifestyle_mystic').GetName( GetNullCharacter )]»"
+
  trait_track_travel_xp_gain_mult: "Прирост [Concept('trait_level_track_xp','опыта пути развития свойства')|E] «Скиталец»#weak ([GetTrait('lifestyle_traveler').GetName( GetNullCharacter )])#!"
  trait_track_danger_xp_gain_mult: "Прирост [Concept('trait_level_track_xp','опыта пути развития свойства')|E] «Закалка»#weak ([GetTrait('lifestyle_traveler').GetName( GetNullCharacter )])#!"
 
@@ -1312,6 +1317,8 @@
 
  trait_track_lifestyle_blademaster_xp_gain_mult: "[Concept( 'trait_level_track_xp', 'Опыт пути развития свойства' )|E] «[GetTrait('lifestyle_blademaster').GetName( GetNullCharacter )]»"
  lifestyle_blademaster_xp_gain_mult: "Прирост [Concept( 'trait_level_track_xp', 'опыта пути развития свойства' )|E] «[GetTrait('lifestyle_blademaster').GetName( GetNullCharacter )]»"
+
+ lifestyle_physician_xp_gain_mult: "Прирост [Concept( 'trait_level_track_xp', 'опыта для развития свойства' )|E] «[GetTrait('lifestyle_physician').GetName( GetNullCharacter )]»"
 
  pilgrim_xp_degradation_mult: "Ежемесячная убыль [Concept( 'trait_level_track_xp', 'опыта пути развития свойства' )|E] «[GetTrait('pilgrim').GetName( GetNullCharacter )]»"
  governor_xp_degradation_mult: "Ежемесячная убыль [Concept( 'trait_level_track_xp', 'опыта для развития свойства' )|E] «[GetTrait('governor').GetName( GetNullCharacter )]»"
@@ -1382,6 +1389,8 @@
  MODIFIER_DEFINITION_VALUE_PER_GOVERNANCE_TIER: " \t#weak Увеличивается с каждым [Concept('governance_issue_tier','уровнем управленческой задачи')|E]#!"
  MODIFIER_DEFINITION_ESTATE_SCALING_DESC: "Этот модификатор увеличивается в зависимости от вашего [Concept( 'estate', 'поместья' )|E] ($MULTIPLIER|+=0$)"
  MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS: "\t#weak Увеличивается за счет дополнительного фактора#!"
+ MODIFIER_DEFINITION_MAIN_DESC_EPARCH_APTITUDE: "Этот модификатор увеличивает [Concept('aptitude', 'пригодность')|E] ($MULTIPLIER|+=0$)"
+ MODIFIER_DEFINITION_VALUE_EPARCH_APTITUDE: "\t#weak Увеличивается за каждый уровень [Concept( 'aptitude', 'пригодности' )|E]#!"
  MOD_DOMICILE_MONTHLY_GOLD_ADD: "[Concept('income','Доход')|E] от [Concept('domicile','имения')|E]"
  MOD_DOMICILE_MONTHLY_PRESTIGE_ADD: "[Concept('prestige','Престиж')|E] от [Concept('domicile','имения')|E]"
  MOD_DOMICILE_MONTHLY_PIETY_ADD: "[Concept('piety','Благочестие')|E] от [Concept('domicile','имения')|E]"
@@ -1424,3 +1433,8 @@
 
  #BP3
  black_sea_coast_region_development_growth: "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ в #L #ONCLICK:GEOGRAPHICAL_REGION,black_sea_coast_region #TOOLTIP:GEOGRAPHICAL_REGION,black_sea_coast_region Черноморском#!#!#! [Concept('region','регионе')|E]"
+
+ charioteer_blue_xp_gain_mult: "Прирост [Concept( 'trait_level_track_xp', 'опыта пути развития свойства' )|E] «[GetTrait('charioteer_blue').GetName( GetNullCharacter )]»"
+ charioteer_green_xp_gain_mult: "Прирост [Concept( 'trait_level_track_xp', 'опыта пути развития свойства' )|E] «[GetTrait('charioteer_green').GetName( GetNullCharacter )]»"
+ charioteer_white_xp_gain_mult: "Прирост [Concept( 'trait_level_track_xp', 'опыта пути развития свойства' )|E] «[GetTrait('charioteer_white').GetName( GetNullCharacter )]»"
+ charioteer_red_xp_gain_mult: "Прирост [Concept( 'trait_level_track_xp', 'опыта пути развития свойства' )|E] «[GetTrait('charioteer_red').GetName( GetNullCharacter )]»"
