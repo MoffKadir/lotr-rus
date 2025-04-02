@@ -379,6 +379,8 @@
  decision_integrate_the_northern_provinces_tooltip: "Включить северные пустоши в свои де-юре территории"
  decision_integrate_the_northern_provinces_confirm: "От Форохеля до Фородвайта!"
 
+ ### Dúnedain Rangers Decisions ###
+
  decision_rivendell_arassuil: "Обратиться за советом к Эльронду"
  decision_rivendell_arassuil_tooltip: "Отправиться в Последний домашний приют Эльронда Полуэльфа"
  decision_rivendell_arassuil_desc: "Настали тёмные времена. [Concept('orcs', 'Орки')|E] [Concept('mistymountains', 'Мглистых гор')|E] размножились в своих темных пещерах и теперь достаточно смелы, чтобы совершать дерзкие набеги в [eriador|E].\n\nВо главе этих тварей стоит особенно хитрый и жестокий вождь. Если мы хотим устроить ловушку для нашего врага, мы можем попросить помощи у [Concept('elves', 'эльфов')|E] [Concept('imladris', 'Имладриса')|E], где живёт Эльронд Полуэльф, давний друг [Concept('dunedainnorth', 'дунэдайн Севера')|E]."
@@ -414,6 +416,12 @@
  decision_eradan_bree_desc: "[dunedainnorth|E] пристально следят за [Concept('eriador', 'Эриадором')|E] и Широм. Во главе со своим вождём они неустанно трудятся, чтобы обеспечить невинных обитателей северных земель.\n\nЭрадан, следопыт Севера, был вызван в город Бри своим сюзереном Арагорном. Ответит ли Эрадан на этот призыв?"
  decision_eradan_bree_confirm: "Мне нужно поговорить с вождём."
  decision_eradan_bree.tt: "Вы отправитесь в Бри, чтобы встретиться с Арагорном"
+
+ decision_continue_adventure_eradan:0 "Продолжить приключения"
+ decision_continue_adventure_eradan_tooltip:0 "#italic Если ваш текущий сюжетный [Concept('task_contract', 'контракт')|E] исчез, вы можете восстановить его через это решение."
+ decision_continue_adventure_eradan_desc:0 "У меня и моих спутников ещё много работы. Мы не успокоимся, пока [eriador|E] не станет безопасным.\n\n#N Принимайте это решение только в том случае, если вы потеряли свой текущий сюжетный контракт#!!"
+ decision_continue_adventure_eradan_confirm:0 "Приключения зовут."
+ decision_continue_adventure_eradan_tt:0 "Ваш текущий сюжетный [Concept('task_contract', 'контракт')|E] восстановлен"
 
  decision_talk_to_locals_sarnford: "Побеседовать с местными: Брод Сарн"
  decision_talk_to_locals_sarnford_tooltip: "Поговорить с кем-нибудь из местных жителей, пока вы отдыхаете от своих приключений"
@@ -1949,7 +1957,7 @@
  struggle_balrog_ending_kill_balrog_tooltip: "Вы попытаетесь убить балрога"
  struggle_balrog_ending_kill_balrog_confirm: "Багровый огонь не поможет тебе, Пламя Удуна!"
  struggle_balrog_ending_kill_balrog_decision_correct_phase_tt: "$balrog_struggle_ending_decision_correct_involvement_tt$ и текущая [struggle_phase|El] - [struggle_balrog_phase_dormant|E]"
- struggle_balrog_ending_kill_balrog_strong_friend: "У вас есть [friend|El]-[Concept( 'elven', 'эльф' )|E] или [maiargods|E], чья [prowess|El] равна или выше [prowess_i|E]60"
+ struggle_balrog_ending_kill_balrog_strong_friend: "У вас есть [friend|El] c [Concept('elven', 'эльфийской')|E] или [Concept('maiargods', 'майарской')|E] [Concept('culture', 'культурой')|E], чья [prowess|El] равна или выше [prowess_i|E]60"
  struggle_balrog_ending_kill_balrog_decision_effect_1: "Вы попытаетесь убить [Concept( 'balrog', 'балрога' )|E]. На шанс успеха влияют следующие факторы, вплоть до 50%:\n$BULLET_WITH_TAB$Высокий показатель [Concept( 'prowess', 'доблести' )|E] и [Concept( 'martial', 'военного дела' )|E].\n$BULLET_WITH_TAB$Количество контролируемых провинции в пределах [Concept( 'struggle_region', 'области борьбы' )|E].\n$BULLET_WITH_TAB$Наличие [Concept( 'friend', 'друга' )|E]-эльфа\n$BULLET_WITH_TAB$Владение Шлемом Дурина ([artifact|El])"
  struggle_balrog_ending_kill_balrog_decision_effect_2: "Если вы #N потерпите неудачу#!, вы #N ПОГИБНЕТЕ!#!"
  struggle_balrog_ending_kill_balrog_decision_effect_3: "Если вы #P добьётесь успеха#!, вы всё равно можете #N погибнуть#!, и тогда произойдёт следующее:\n"
