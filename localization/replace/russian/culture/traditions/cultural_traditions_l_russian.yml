@@ -419,6 +419,7 @@
  culture_parameter_can_recruit_winter_specialist: "Получено [Concept( 'decision', 'решение' )|E] для найма [Concept( 'commanders', 'командиров' )|E] с бонусами к сражениям зимой"
  culture_parameter_can_recruit_forest_specialist: "Получено [Concept( 'decision', 'решение' )|E] для найма [Concept( 'commanders', 'командиров' )|E] с бонусами к сражениям в лесах"
  culture_parameter_can_recruit_open_specialist: "Получено [Concept( 'decision', 'решение' )|E] для найма [Concept( 'commanders', 'командиров' )|E] с бонусами к сражениям на открытой местности"
+ culture_parameter_can_recruit_halls_specialist: "Получено [Concept('decision', 'решение')|E] для найма [Concept('commanders', 'командиров')|E] с бонусами к сражениям в глубинах"
  culture_parameter_unlock_horse_pastures_building: "Можно всегда строить здание #V $building_type_horse_pastures_01$#! во [Concept('holdings','владениях')|E] этой [Concept('culture','культуры')|E]"
  culture_parameter_can_recruit_mountain_specialist: "Получено [Concept( 'decision', 'решение' )|E] для найма [Concept( 'commanders', 'командиров' )|E] с бонусами к сражениям в горах"
  culture_parameter_can_recruit_dry_specialist: "Получено [Concept( 'decision', 'решение' )|E] для найма [Concept( 'commanders', 'командиров' )|E] с бонусами к сражениям в засушливых землях"
@@ -610,6 +611,12 @@
  recruit_hill_specialist_decision.tt: "[commander|E] с высоким значением [Concept( 'martial', 'военного дела' )|E] и [Concept( 'trait', 'свойством' )|E] «[GetTrait('rough_terrain_expert').GetName( GetNullCharacter )]» присоединится к вашему [Concept( 'court', 'двору' )|E]"
  recruit_hill_specialist_decision_tooltip: "$recruit_hill_specialist_decision.tt$"
  recruit_hill_specialist_decision_confirm: "$invite_knights_decision_confirm$"
+
+ recruit_halls_specialist_decision: "Нанять специалиста по войне в глубинах"
+ recruit_halls_specialist_decision_desc: "Подземные сражения - это отдельная дисциплина, которой мы, [ROOT.Char.GetCulture.GetName|l], овладевали на протяжении многих поколений. Среди моего народа есть много тех, кто преуспел в подземной войне, и некоторые из них, возможно, захотят возглавить мои армии."
+ recruit_halls_specialist_decision.tt: "[commander|E] с высоким значением [Concept('martial', 'военного дела')|E] и [Concept('trait', 'свойством')|E] «[GetTrait('cavern_commander').GetName( GetNullCharacter )]» присоединится к вашему [Concept('court', 'двору')|E]"
+ recruit_halls_specialist_decision_tooltip: "$recruit_halls_specialist_decision.tt$"
+ recruit_halls_specialist_decision_confirm: "$invite_knights_decision_confirm$"
 
  recruit_jungle_specialist_decision: "Нанять специалиста по войне в джунглях"
  recruit_jungle_specialist_decision_desc: "Джунгли безжалостны и коварны, но мой народ, [ROOT.Char.GetCulture.GetName|l], прекрасно ориентируется в них. Опытные исследователи и проводники всегда к моим услугам, если мне понадобится провести войска через эти пышные и смертельно опасные леса."
