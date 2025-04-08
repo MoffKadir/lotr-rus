@@ -114,8 +114,9 @@ types ModifyVassalContractsShared
 
 		vbox_clan_negotiation = {
 			name = "clan_vassal_paper_contract"
-			#EK EDIT: taxes for autocracy and hierocracy
-			visible = "[Or(Or(Character.GetGovernment.IsType('clan_government'), Character.GetGovernment.IsType('autocracy_government')), Or(Character.GetGovernment.IsType('hierocracy_government'), Character.GetGovernment.IsType('tribal_government')))]"
+			#EK EDIT: taxes for others than feudal and admin (see above and below)
+			#visible = "[Character.GetGovernment.IsType('clan_government')]"
+			visible = "[Not(Or( Character.GetGovernment.IsType('feudal_government'), IsAdministrativeRuler( Character ) ))]"
 			layoutpolicy_horizontal = expanding
 			layoutpolicy_vertical = expanding
 			margin = { 20 20 }
