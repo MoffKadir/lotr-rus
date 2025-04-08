@@ -86,7 +86,7 @@
  add_thief:0 "You gain the [GetTrait('sign_thief').GetName( GetNullCharacter )] [trait|E]"
  ek_travel_events.0005.a.tt_fail.thief:0 "[ROOT.Char.Custom('GetConstellationNameThief')] rejects you"
  ek_travel_events.0005.t.thief_reachfolk:0 "$travel_event_prefix$ Mundus Stone: The Hunter"
- ek_travel_events.0005.desc.thief_reachfolk:0 "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Hunter Sky_Tale.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
+ ek_travel_events.0005.desc.thief_reachfolk:0 "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Hunter Sky Tale.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
 
  ek_travel_events.0005.t.tower:0 "$travel_event_prefix$ Mundus Stone: The Tower"
  ek_travel_events.0005.desc.tower:0 "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Tower Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
@@ -228,9 +228,19 @@
  ek_travel_events.0075.diplomacy:0 "I feel like I can end any war!"
  ek_travel_events.0075.c:0 "Very shiny, but let's get on with this."
 
+ ek_travel_events.0080.t: "$travel_event_prefix$ The Skeever Trainer"
+ ek_travel_events.0080.desc: "As I make my way through [ROOT.Char.GetCurrentLocation.GetName], a scruffy traveler catches sight of my skeever and gives an approving nod. "That’s a sturdy little creature you’ve got there. Ever thought about teaching it new tricks? With the right training, you could use it to carry supplies."\n\n[skeever_trainer.GetName] gestures to [skeever_trainer.GetHerHis] own skeever, which scurries beside with a small satchel fastened to its back. "It’s not hard to teach if you know what you’re doing. I could show you how - for a fair price, of course. What do you say?""
+ ek_travel_events.0080.a: "I would love that!"
+ ek_travel_events.0080.b: "Sounds good, but a bit expensive..."
+ ek_travel_events.0080.b.success: "You successfully haggle"
+ ek_travel_events.0080.b.failure: "[skeever_trainer.GetName] is insulted and leaves"
+ ek_travel_events.0080.c: "Join me and teach me on the way"
+ ek_travel_events.0080.d: "A Pack Skeever? That's ridiculous"
+ ek_travel_events.0080.d.tt: "You will refuse the offer and continue your journey"
+
 # General Danger
  ek_travel_events.4000.t:0 "$travel_danger_prefix$ Horror from the Deep"
- ek_travel_events.4000.desc:0 "[current_location.GetName|U]'s name is whispered by the frightened lips of the locals who seem wary of the place. It is, after all, home to a very strange cult rumored to dabble in human sacrifice called [brethren_leader.GetFaith.GetName].\n\n[brethren_leader.GetName], however, welcomes me warmly, as the leader of the local [brethren_leader.GetFaith.GetAdjective] and offers me to join them at their chapel for a "Gathering". Surely, those rumors of human sacrifice are nothing but baseless...\n\nWait. Where is [kidnapped_character.GetFirstName]?"
+ ek_travel_events.4000.desc:0 "[current_location.GetName]'s name is whispered by the frightened lips of the locals who seem wary of the place. It is, after all, home to a very strange cult rumored to dabble in human sacrifice called [brethren_leader.GetFaith.GetName].\n\n[brethren_leader.GetName], however, welcomes me warmly, as the leader of the local [brethren_leader.GetFaith.GetAdjective] and offers me to join them at their chapel for a "Gathering". Surely, those rumors of human sacrifice are nothing but baseless...\n\nWait. Where is [kidnapped_character.GetFirstName]?"
  ek_travel_events.4000.a:0 "Quickly, let's leave this place!"
  ek_travel_events.4000.b:0 "I will make you regret this, you [brethren_leader.Custom('InsultNoun')]!"
  ek_travel_events.4000.b.success:0 "You fend off the [brethren_leader.GetFaith.GetNameNoTooltip] and save [kidnapped_character.GetFirstNameNoTooltip]"
@@ -352,7 +362,7 @@
  ek_travel_events.4030.b:0 "Burn in my cleansing magic!"
  ek_travel_events.4030.c: "They will serve me, now!"
  ek_travel_events.4030.d: "Retreat, in the name [ROOT.GetCharacter.GetFaith.HighGodName]."
- ek_travel_events.4030.d.tt: "You flee through the ranks of the undead, leaving your compaions behind."
+ ek_travel_events.4030.d.tt: "You flee through the ranks of the undead, leaving your companions behind."
 
  ek_travel_events.4035.t:0 "$travel_danger_prefix$ Sandstorm!"
  ek_travel_events.4035.desc:0 "For those who brave the desert, peril lurks beyond hungry creatures, the scorching sun, and unrelenting thirst - it's the very sand itself. Suspended in the air by an abrupt storm, it carries the potential to engulf anything in its path, whether it be a structure, a caravan, or a solitary wanderer. I stand in awe, my heart pounding, as I behold such a tempest on the distant horizon, hurtling toward my location like a ferocious beast.\n\nIt may be wise the seek immediate shelter. However, waiting for it to subside might entail a lengthy delay in my travels."
@@ -363,7 +373,7 @@
  ek_travel_events.4035.b:0 "Build a shelter and wait till the storm is over."
 
  ek_travel_events.4040.t: "$travel_danger_prefix$ Heavy Rain"
- ek_travel_events.4040.intro: "Dark clouds have gathered over [current_location.GetName|U], and what starts as a light drizzle suddenly turns into a torrential downpour. Visibility fades, and all of Mundus seems to be swallowed by the storm.\n\n"
+ ek_travel_events.4040.intro: "Dark clouds have gathered over [current_location.GetName], and what starts as a light drizzle suddenly turns into a torrential downpour. Visibility fades, and all of Mundus seems to be swallowed by the storm.\n\n"
  ek_travel_events.4040.woodland: "The dense canopy above offers little protection as heavy raindrops drip through the leaves, soaking everything below. The scent of wet moss and bark fills the air, and the sound of water rushing through the undergrowth drowns out all else."
  ek_travel_events.4040.highland: "The winds howl through the rocky crags, and every step on the uneven terrain risks a slip or fall. Far below, streams swell into raging torrents, carving fresh paths through the valleys."
  ek_travel_events.4040.wetland: "The downpour quickly floods the marshes, turning shallow pools into deep, murky waters. The ground beneath my feet becomes a treacherous sludge, sucking at my boots with every step."
@@ -381,7 +391,7 @@
  ek_travel_events.4045.c: "I will catch that beast myself."
  ek_travel_events.4045.c.tt: "Catching the Skeever may lead to additional choices."
 
- ek_travel_events.4046.t: "Captured Rodent."
+ ek_travel_events.4046.t: "Captured Rodent"
  ek_travel_events.4046.desc: "After keeping watch near the supplies for some time, I finally manage to confront the culprit - a scrawny skeever, just as I suspected - and drive it into a corner. It scurries frantically but finds no escape.\n\nDespite its reputation as a filthy pest, there’s something oddly endearing about the little creature as it trembles, its whiskers twitching nervously."
  ek_travel_events.4046.a: "Actually... I want to tame it."
  ek_travel_events.4046.b: "Just end it's life."
@@ -409,7 +419,7 @@
  ek_travel_events.4055.e: "You won't take me alive!"
  ek_travel_events.4055.duel.tt:0 "@death_icon! [bountyhunter.GetFirstName] and you will fight to the death."
 
- ek_travel_events.4056.t: "Bountyhunters End"
+ ek_travel_events.4056.t: "Bountyhunter's End"
  ek_travel_events.4056.desc: "The fight is over. [bountyhunter.GetName] lies motionless, [bountyhunter.GetHerHis] weapon slipping from [bountyhunter.GetHerHis] grasp. It was a hard-fought duel, but in the end, only one of us could walk away.\n\nI take a deep breath, steadying myself. The bounty hunter’s pursuit ends here."
  ek_travel_events.4056.a: "[bountyhunter.GetSheHE|U] put up a good fight."
 
@@ -442,7 +452,7 @@
  ek_travel_events_highrock.4005.b:0 "Guards, clear the way!"
  ek_travel_events_highrock.4005.b.t:0 "The mercenaries you hired are going to take care of the problem."
  ek_travel_events_highrock.4005.c:0 "Blast them away!"
- ek_travel_events_highrock.4005.c.flavor:0 "Use your destrcution magic to chase them off."
+ ek_travel_events_highrock.4005.c.flavor:0 "Use your destruction magic to chase them off."
  ek_travel_events_highrock.4005.d:0 "Quickly, run away!"
 
 # Highrock Location
@@ -457,7 +467,7 @@
  ek_travel_events_highrock.8005.a:0 "Truly one of the cities of our time."
 
  ek_travel_events_highrock.8010.t:0 "$travel_event_prefix$ Glorious Balamath"
- ek_travel_events_highrock.8010.desc:0 "As I journeyed through the lands of [ROOT.Char.GetCurrentLocation.GetName], the echoes of its history sang in the winds. The great winds stirred among gnarled boughs and ancient stones, whispering the tales of long-departed scholar-kings. Unburdened columns and Welkynd relics stood as testaments to their wisdom, defying time's passage.\n\nHere, standing beneath arches like drawn bows, I looked at the endless sky stretching above. Within its depths, storms raged with thunderous might, like untamed beasts yearning to be quelled. In this place, the hidden canyon cradled secrets of ancient #LORE [compendium_aldmeris]#!, concealed within its forgotten depths."
+ ek_travel_events_highrock.8010.desc:0 "As I journeyed through the lands of [ROOT.Char.GetCurrentLocation.GetName], the echoes of its history sang in the winds. The great winds stirred among gnarled boughs and ancient stones, whispering the tales of long-departed scholar-kings. Unburdened columns and Welkynd relics stood as testaments to their wisdom, defying time's passage.\n\nHere, standing beneath arches like drawn bows, I looked at the endless sky stretching above. Within its depths, storms raged with thunderous might, like untamed beasts yearning to be quelled. In this place, the hidden canyon cradled secrets of ancient [Glossary( 'Aldmeris', 'ALDMERIS_GLOSS' )], concealed within its forgotten depths."
  ek_travel_events_highrock.8010.a:0 "I would love to explore those secrets!"
  ek_travel_events_cyrodiil.8005.b:0 "Sadly, I don't have the time."
 
@@ -536,7 +546,7 @@
  ek_travel_events_hammerfell.8000.c:0 "Maybe on the way back..."
 
  ek_travel_events_hammerfell.8005.t:0 "$travel_event_prefix$ The Jewel of Alik'r"
- ek_travel_events_hammerfell.8005.desc:0 "In ancient times, the Ra Gada Forebears arrived in Hammerfell from Yokuda, landing first at Hegathe, which they liberated from hostile inhabitants. They then explored the coast and discovered the future site of Sentinel, a prosperous port with abundant fruit trees.\n\nGrandee Yaghoub decided to make it their home, founding Sentinel and employing locals to build it into a mighty city.\n\nToday, Sentinel's banner bears a crescent moon in honor of Yaghoub, celebrated on Koomu Alezer'i Yaghoub with shared pomegranates."
+ ek_travel_events_hammerfell.8005.desc:0 "In ancient times, the [Glossary( 'Ra Gada', 'RAGADA_GLOSS' )] arrived in Hammerfell from Yokuda, landing first at Hegathe, which they liberated from hostile inhabitants. They then explored the coast and discovered the future site of Sentinel, a prosperous port with abundant fruit trees.\n\nGrandee Yaghoub decided to make it their home, founding Sentinel and employing locals to build it into a mighty city.\n\nToday, Sentinel's banner bears a crescent moon in honor of Yaghoub, celebrated on Koomu Alezer'i Yaghoub with shared pomegranates."
  ek_travel_events_hammerfell.8005.a:0 "Abundant fruit trees? Sounds interesting."
  ek_travel_events_hammerfell.8005.b:0 "Ra Gada tactics could be useful..."
  ek_travel_events_hammerfell.8005.c:0 "I'm more interested in continuing my journey."

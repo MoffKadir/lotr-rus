@@ -26,8 +26,8 @@
  small_blood_price_modifier:0 "Paid the Blood Price"
  small_blood_price_modifier_desc:0 "This character had to pay the Blood Price to be freed from imprisonment. Fortunately for them, their crime was not significant, and they have been able to escape with only a small portion of their blood being taken."
  extract_blood_price_effect_imprisonment_reason_tooltip:0 "As you have an imprisonment reason against [prisoner.GetFirstName], the blood you will extract will wound [prisoner.GetHerHim]."
- extract_blood_price_effect_execution_reason_tooltip:0 "As you have an execution reason against [prisoner.GetFirstName], you will extract a heavy price, maiming [prisoner.GetHerHim]."
- extract_blood_price_effect_survival_release_tooltip:0 "If [prisoner.GetFirstName] survives [prisoner.GetSheHe] will be liberated from prison."
+ extract_blood_price_effect_execution_reason_tooltip:0 "As you have an execution reason against [prisoner.GetFirstName], you will extract a heavy price."
+ extract_blood_price_effect_survival_release_tooltip:0 "If [prisoner.GetFirstName] survives [prisoner.GetSheHe] will be released from prison."
 
  ###Disrupt Arcana Interaction
  recently_disrupted:0 "Recently Disrupted"
@@ -177,6 +177,12 @@
  I_CANNOT_BLACKMAIL_ANOTHER_LYCAN:1 "You cannot blackmail another [GetTrait('lycan_character').GetName( CHARACTER.Self )] for being a Lycanthrope"
  I_CANNOT_BLACKMAIL_ANOTHER_NECROMANCER:1 "You cannot blackmail another [GetTrait('necromancer').GetName( CHARACTER.Self )] for being a Necromancer"
 
+ CHARACTER_INTERACTION_VAMP_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "The holder of [GetTitleByKey('c_bastion').GetNameNoTier] considers Vampirism [GetFaithDoctrine('doctrine_vampirism_outlawed').GetBaseName]"
+
+ CHARACTER_INTERACTION_LYCAN_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "The holder of  [GetTitleByKey('c_bastion').GetNameNoTier] considers Lycanthropy [GetFaithDoctrine('doctrine_lycanthropy_outlawed').GetBaseName]"
+
+ CHARACTER_INTERACTION_NECROMANCER_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "The holder of  [GetTitleByKey('c_bastion').GetNameNoTier] considers Necromancy [GetFaithDoctrine('doctrine_necromancy_outlawed').GetBaseName]"
+
  BLACKMAIL_NOTIFICATION_SECRET_VAMPIRE:0 "\nI have evidence of your thirst for blood!"
  BLACKMAIL_NOTIFICATION_SECRET_LYCAN:0 "\nI have evidence of you true beastly form!"
  BLACKMAIL_NOTIFICATION_SECRET_NECROMANCER:0 "\nI have evidence of your defilement of life and death!"
@@ -188,3 +194,8 @@
 
  #Co-emperor (replaces vanilla)
  valid_co_emperor_powerful_family_trigger: "Only [house_heads|E] of [powerful_families|E] may be [co_emperors|E]"
+
+ #weak_rulers_contest_rule version of house head challenge
+ ek_challenge_house_head_strong_interaction: "Challenge House Head"
+ ek_challenge_house_head_strong_interaction.actor_default_victory.tt: "[actor.GetShortUIName|U] will become the [actor.GetHouse.GetBaseName] [house_head|E]"
+ ek_challenge_house_head_weak_interaction: "Challenge House Head"

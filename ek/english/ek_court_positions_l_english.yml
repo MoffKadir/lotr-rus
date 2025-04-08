@@ -18,8 +18,10 @@
 ##Forge-Wife
  forgewife_court_position:0 "Forge-Wife"
  forgewife_court_position_desc:0 "Traditionally responsible for the Orcish art of smithing, the $forgewife_court_position$ is the most skilled blacksmith of a stronghold. She is usually the second one the stronghold chieftain marries."
+##Hearth-Wife
  hearthwife_court_position:0 "Hearth-Wife"
  hearthwife_court_position_desc:0 "The $hearthwife_court_position$ manages the household of the chief and ensures the daily affairs run smoothly. She is usually the closest confidante of the Chieftain."
+ SPOUSE_OF_CHARACTER_COURT_POSITION: "They are your [spouse|E]"
 ##Shadowscale
  shadowscale_court_position:0 "Shadowscale"
  shadowscale_employer_custom_effect_description:1 "@warning_icon!#X Powerful [agent|E] in [hostile_schemes|E] against you#!"
@@ -32,8 +34,9 @@
  clan_mother_court_position: "Clan-Mother"
  clan_mother_court_position_desc: "The $clan_mother_court_position$ is a respected matriarch and may appear alongside their liege in Court, and speak on their behalf."
  clan_mother_employer_custom_effect_description:1 "Can take your place in some [diplomacy|E] challenges"
- can_appoint_clan_mother_tt: "[liege|E]'s [culture|E] has one of the following [traditions|E]:\n\t$EFFECT_LIST_BULLET$[GetCultureTradition('tradition_moonsugar_plantations').GetName]\n\t$EFFECT_LIST_BULLET$[GetCultureTradition('tradition_beasts_of_war').GetName]"
-
+ NOT_MARRIED_COURT_POSITION: "They are #bold not#! married"
+ ABOVE_45_COURT_POSITION: "They are at least #V 45#! years old"
+ 
 ##Enforcer
  enforcer_court_position:0 "Enforcer"
  enforcer_court_position_desc:0 "An $enforcer_court_position$ oversees the buzzling cities of a realm and makes sure that their liege receives the appropriate respect in every street and corner, especially if this respect is expressed in coin."
@@ -46,7 +49,7 @@
  court_mage_field_mage_desc:0 "The $court_mage_field_mage$ is an adept of the magickal arts tasked with finding solutions to magic-related problems, casting spells on behalf of their master, presiding over arcane studies and assisting the camp with enchantments, alchemicals, and simple advice on complex mystical matters."
  court_mage_clever_man_desc:0 "The $court_mage_clever_man$ is an adept of the magickal arts tasked with finding solutions to magic-related problems, casting spells on behalf of their liege, presiding over arcane studies in the realm and assisting the court with enchantments, alchemicals, and simple advice on complex mystical matters."
  court_mage_court_position_possessive:0 "$court_mage_court_position$'s"
- court_mage_employer_custom_effect_description:2 "Can cast [spells|E] for their [liege|E]#!\n@warning_icon!#X Powerful [agent|E] in [hostile_schemes|E] against you#!"
+ court_mage_employer_custom_effect_description:2 "Can cast [spells|E] for their [liege|E]\n@warning_icon!#X Powerful [agent|E] in [hostile_schemes|E] against you#!"
  court_position_skill_arcana:0 "[arcana|E] Skill"
  court_position_necomancer_trait:0 "[GetTrait('necromancer').GetName( ROOT.Char )]"
  court_position_battlemage_trait:0 "[GetTrait('battlemage').GetName( ROOT.Char )]"
@@ -92,6 +95,16 @@
  court_position_necromancy_journeyman_perk:0 "[GetPerk('necromancy_journeyman_perk').GetName( ROOT.Char )]"
  court_position_necromancy_expert_perk:0 "[GetPerk('necromancy_expert_perk').GetName( ROOT.Char )]"
  court_position_necromancy_master_perk:0 "[GetPerk('necromancy_master_perk').GetName( ROOT.Char )]"
+
+ #Powerful agents
+ SCHEME_AGENT_IS_COURT_MAGE:0 "[target.GetShortUINamePossessiveNoTooltip] $court_mage_court_position$"
+ SCHEME_AGENT_IS_HOUSECARL:0 "[target.GetShortUINamePossessiveNoTooltip] $court_housecarl_court_position$"
+ SCHEME_AGENT_IS_SHADOWSCALE:0 "[target.GetShortUINamePossessiveNoTooltip] $shadowscale_court_position$"
+
+ # Court Position Tasks
+ court_mage_instruct:0 "Instruct Mage"
+ court_mage_instruct_desc:0 "This character will use their magical abilities according to the command of their employer."
+ court_mage_instruct_tt:0 "Give orders to your mage, managing how they cast [spells|E] and what type of [magic|E] they will focus on."
 
  #Qadi
  court_chief_qadi_requirement.tt: "Must use [praxis|E]"
