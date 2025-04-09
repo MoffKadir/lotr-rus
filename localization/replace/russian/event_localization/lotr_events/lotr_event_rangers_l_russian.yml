@@ -165,8 +165,8 @@
  rangers.0378.a.tt:0 "Вы можете выбрать новый подход к борьбе с орочьей угрозой."
 
  ### Eradan Events ###
- eradan_end_of_content:0 "#high Вы достигли конца текущего повествовательного сюжета Эрадана#!"
- eradan_safe_locations_tt:0 "#high Находясь в безопасном месте, например у брода Сарн, Бри или Имладрисе, вы получаете доступ к второстепенному [Concept('decision', 'решению')|E], позволяющему вам побеседовать с местными персонажами и получить информацию о следующей миссии.#!"
+ eradan_end_of_content:0 "#high Вы достигли конца текущего повествовательного сюжета Эрадана#!\n"
+ eradan_safe_locations_tt:0 "#P Находясь в безопасном месте, например у брода Сарн, Бри, Имладрисе или Нординбаде, вы получаете доступ к второстепенному [Concept('decision', 'решению')|E], позволяющему вам побеседовать с местными персонажами и получить информацию о следующей миссии.#!\n"
 
  rangers.0400.t:0 "Призыв вождя"
  rangers.0400.desc:0 "Во время нашего пребывания у брода Сарн мы встречаемся с #L [halbarad.GetFirstName]ом#!, командиром местных Следопытов. Он передает мне письмо от нашего вождя. #S «Эрадан, друг мой, встреться со мной в «Гарцующем пони», как только сможешь»#!, - говорится в послании.\n\n«Призыв от вождя?», - заметила Андриэль, читая через мое плечо. «Это должно быть интересно», - говорит Фарин, держа топор наготове.\n\n«Счастливого пути, друзья мои», - добавляет Халбарад. «А пока мои люди позаботятся о том, чтобы эти броды были безопасны, а земли полуросликов были защищены. Если сможете, доложите мне, как только поговорите с Арагорном».\n\nЯ смотрю на север. Бри совсем рядом. Как только мы будем готовы к отъезду, мы поспешим."
@@ -179,7 +179,7 @@
  rangers.0401.t:0 "Темные слухи с севера"
  rangers.0401.desc:0 "Прибыв в город Бри, мы поспешили в «Гарцующий пони», старейший и самый известный трактир города. Внутри мы находим #L [aragorn.GetFirstName]а#!, моего вождя, в укромном уголке.\n\n«Рад видеть вас, друзья мои», - приветствует нас Арагорн. «Мне нужны ваши таланты. К северу отсюда находится Форност, некогда столица [Concept('arnor', 'Арнора')|E]. Одно из близлежащих поселений, [GetTitleByKey('c_rhunlest').GetNameNoTier], лежит в запустении со времён [Concept('angmar_wars', 'Ангмарских войн')|E]. Я слышал тревожные сообщения об активности гоблинов в этих руинах. Я бы и сам отправился, но у меня есть другое важное дело, которое я не могу отложить на потом».\n\nНе раздумывая, мы принимаем задание вождя. Бри - хорошая отправная точка для подготовки, ведь иметь дело с гоблинами может быть опасно..."
  rangers.0401.a:0 "Как прикажете, вождь."
- rangers.0401.a.tt:0 "#S Открывает сюжетный [Concept('task_contract', 'контракт')|E] в Рунлесте#!"
+ rangers.0401.a.tt:0 "#S Открывает сюжетный [Concept('task_contract', 'контракт')|E] в Рунлесте#!\n"
 
  rangers.0402.t:0 "Рунлест: Прибытие"
  rangers.0402.desc:0 "Мы подошли к разрушенным вратам #L [GetTitleByKey('c_rhunlest').GetNameNoTier]а#!, некогда оживлённого города, расположенного недалеко от столицы [Concept('arnor', 'Арнора')|E]. Время от времени [Concept('dunedainarnor', 'дунэдайн Арнора')|E] посещают эти руины, чтобы присматривать за могилами своих предков, но большую часть времени заброшенное поселение остается безмолвным и пустым.\n\nКогда мы приближаемся ко входу, [farin.GetFirstName] останавливается и принюхивается. «Гоблинский запах на ветру», - констатирует он и достает свой топор. «Что они делают здесь, так далеко от [Concept('mistymountains', 'Мглистых гор')|E], да еще и средь бела дня?» «Ничего хорошего, я полагаю», - отвечает [andriel.GetFirstName], приготовив посох.\n\n«Держите себя в руках, друзья», - напоминаю я им, не выпуская из рук клинок. Мы осторожно движемся вперед, через обрушенную арку главных городских ворот."
@@ -239,7 +239,7 @@
  rangers.0411.t:0 "Возвращение к бродам"
  rangers.0411.desc:0 "Мы входим в лагерь #L [halbarad.GetFirstName]а#!, спрятанный в холмах у брода Сарн, и рассказываем ему о событиях, произошедших в #L [GetTitleByKey('c_rhunlest').GetNameNoTier]е#!. Похоже, он сильно обеспокоен нашим описанием темного посланника. «Даже сыновья [Concept('elrond', 'Эльронда')|E] не смогли одолеть его? Это довольно тревожно».\n\n«В конце концов они бы одолели его, если бы он не сбежал, - замечает [andriel.GetFirstName], - но я разделяю ваше беспокойство. [eriador|E] может быть в опасности...»\n\n«Нет, если мы сможем найти этого незнакомца и положить конец его планам, - говорит [farin.GetFirstName] со свойственной ему уверенностью, и я соглашаюсь со своим крепким спутником. Мы не успокоимся, пока не покончим с этой угрозой."
  rangers.0411.a:0 "[eriador|E] должен быть в безопасности."
- rangers.0411.a.tt:0 "#weak Ваш сюжетный [Concept('task_contract', 'договор')|E] завершается успехом#!"
+ rangers.0411.a.tt:0 "#weak Ваш сюжетный [Concept('task_contract', 'договор')|E] завершается успехом#!\n"
 
  rangers.0412.t:0 "Могильники: Неестественный туман"
  rangers.0412.desc:0 "Поначалу мы весьма успешно продвигались по заброшенным холмам Тирн-Гортада. Но после того как мы прошли мимо темного стоячего камня, найденного на вершине бесплодного холма, начал подниматься густой туман, заслоняя почти весь солнечный свет.\n\n«На ветру дурные предвестия», - говорит [andriel.GetFirstName]. «Да», - соглашается [farin.GetFirstName]. «Воздух вдруг стал холодным». «Не теряйте бдительности, друзья мои, - напоминаю я им, - и не спускайте глаз с пропавших следопытов. Что бы ни вызвало этот неестественный внезапный подъем тумана, это не к добру».\n\nЯ шагаю вперед с обнаженным клинком в руке. В голове возникает ощущение холода, словно недружелюбные глаза следят за каждым нашим шагом..."
@@ -297,7 +297,7 @@
  rangers.0421.t:0 "Последний домашний приют"
  rangers.0421.desc:0 "Многие мили пути по [Concept('eriador', 'Эриадору')|E] остались позади, и безмятежная долина [imladris|E] наконец-то приветствует нас. Скрытые эльфийские дозорные позволили нам пройти в долину, где живет [elrond|E] и его народ, и где стоит Последний домашний приют.\n\nВладыка Имладриса принимает нас в своей библиотеке и терпеливо слушает, как мы по очереди рассказываем ему о событиях в Рунлесте и в Могильниках. «Кое-что из того, что вы рассказали мне, я уже слышал от своих сыновей», - наконец отвечает Эльронд. «Но я рад, что вы пришли сюда, друзья. Есть задание, которое я намерен поручить вам, и о нем мы скоро поговорим. А пока отдохните здесь столько, сколько пожелаете. Вы, должно быть, устали после своих странствий»."
  rangers.0421.a:0 "Мы благодарим вас, владыка Эльронд."
- rangers.0421.a.tt:0 "#weak Ваш сюжетный [Concept('task_contract', 'договор')|E] завершается успехом#!"
+ rangers.0421.a.tt:0 "#weak Ваш сюжетный [Concept('task_contract', 'договор')|E] завершается успехом#!\n"
 
  rangers.0422.t:0 "Троллье плато: Прибытие"
  rangers.0422.desc:0 "Путешествие по дебрям [Concept('rhudaur', 'Рудаура')|E] было нелёгким. Холмы и овраги этой земли делают передвижение по прямой почти невозможным. Но вот мы наконец-то стоим на краю провинции [GetTitleByKey('c_ettenmoors').GetNameNoTier] - суровой земли, печально известной тем, что в ней обитает множество каменных троллей.\n\nМестность здесь пустынная. По сравнению с густо поросшими лесом холмами Рудаура здесь мало растительности. Сильный ветер гуляет по каменистым скалам и расщелинам. Вдалеке виднеется одинокая черная птица, которая взлетает при нашем приближении.\n\n«В этих землях несложно найти великана», - говорит [andriel.GetFirstName], всматриваясь вдаль. «Да», - соглашается [farin.GetFirstName]. «Проследим за ним!»"
@@ -356,7 +356,7 @@
  rangers.0431.t:0 "Возвращение в Ривенделл"
  rangers.0431.desc:0 "Когда взору предстает сокрытая долина [Concept('imladris', 'Имладрис')|E], я вздыхаю с глубоким облегчением. Позади остались долгие мили и тяжелые битвы, и здесь, в Последнем домашнем приюте, мы наконец-то сможем по-настоящему отдохнуть и восстановить силы.\n\nНайдя #L [elrond.GetFirstName]а#! в его библиотеке, мы передаём ему знак, найденный нами на последнем из [Concept('orcs', 'орков')|E]. Он нахмуривает брови, изучая эмблему. «Это из [Concept('gundabad', 'Гундабада')|E]», - объясняет Эльронд после недолгого молчания. «Боюсь, этот улей орков в самых северных горах снова пробудился. После битвы при [Concept('erebor', 'Эреборе')|E] мы надеялись, что Гундабад затихнет на долгие годы. Если они искали каменного великана, которого вы выследили, у них наверняка был замысел на этот счет».\n\nЭльронд делает паузу и смотрит каждому из нас в глаза. «Если мы хотим расшифровать смысл всего этого, вам придётся отправиться в Гундабад»."
  rangers.0431.a:0 "Гундабад... это не сулит ничего хорошего."
- rangers.0431.a.tt:0 "#weak Вы успешно завершаете [Concept('task_contract', 'контракт')|E] в Ривенделле#!"
+ rangers.0431.a.tt:0 "#weak Вы успешно завершаете [Concept('task_contract', 'контракт')|E] в Ривенделле#!\n"
 
  rangers.0432.t:0 "Гундабад: Выступившее воинство"
  rangers.0432.desc:0 "Путь на север, в грозные [Concept('mistymountains', 'Мглистые горы')|E], был нелёгким, но наконец мы достигли самых северных вершин этой горной цепи, где она встречается с горами [Concept('angmar', 'Ангмара')|E] на западе и Серыми горами на востоке.\n\nМы поднимаемся по заснеженному склону, как вдруг нас удивляет звук боевых рогов. В долине внизу большое войско орочьих налётчиков покинуло своё подземное логово и вышло на перевал. Похоже, удача была на нашей стороне и позволила нам избежать их обнаружения.\n\nНаблюдая за уходящим отрядом с безопасного расстояния, мы понимаем, что это может означать, что сам [Concept('gundabad', 'Гундабад')|E] будет охраняться менее строго."
@@ -402,7 +402,7 @@
  rangers.0440.t:0 "Скрытое святилище"
  rangers.0440.desc:0 "Нординбад - последняя уцелевшая гномья твердыня в Серых горах. Это небольшая гномья крепость, вырезанная прямо в горах и спрятанная за тайной тропой, известной лишь ее немногочисленным обитателям.\n\nКогда мы входим в твердыню, нас встречает отец [nordri.GetFirstName], [gorin.GetName]. Он приветствует нас и благодарит за помощь сыну во время его миссии в [Concept('gundabad', 'Гундабаде')|E].\n\n«Меня беспокоит известие о столь активной активности орков в Гундабаде», - добавляет гномий владыка. «Нам придётся внимательно следить за ними и их армиями. Но пока что вы трое можете наслаждаться безопасностью моих чертогов»."
  rangers.0440.a:0 "Желанная возможность для отдыха."
- rangers.0440.a.tt:0 "#weak Вы успешно завершили [Concept('task_contract', 'контракт')|E], начатый в Ривенделле#!"
+ rangers.0440.a.tt:0 "#weak Вы успешно завершили [Concept('task_contract', 'контракт')|E], начатый в Ривенделле#!\n"
 
  ### Talk to the Locals Events ###
  rangers.0701.t:0 "Беседа с местными жителями: Брод Сарн"
@@ -490,3 +490,32 @@
  rangers.0725.desc:0 "Когда я подхожу к [arwen.GetFirstName], дочери #L [elrond.GetFirstName]а#!, я с удивлением замечаю, что рядом с ней стоит знакомая фигура. Это [aragorn.GetFirstName], мой вождь, с которым мы в последний раз виделись в «Гарцующем Пони» в Бри.\n\n«Рад снова видеть вас, друзья мои», - приветствует нас Арагорн и представляет леди, стоящую рядом с ним. Арвен улыбается [andriel.GetFirstName], ведь они давно знакомы, и грациозно кивает, узнав имена #L [farin.GetFirstName]а#! и моё.\n\n«Такие воины, как вы трое, долго хранили север», - говорит она с уважением. «Я понимаю, что впереди вас ждёт большая опасность. Но если вы останетесь верны друг другу, вы победите»."
  rangers.0725.a:0 "Благодарю за поддержку, леди Арвен."
  rangers.0725.b:0 "Мы победим, но нам нужны припасы."
+
+ rangers.0731.t:0 "Беседа с местными: Нординбад"
+ rangers.0731.desc:0 "After the [dragon|E]s drove the [dwarves|E] of Durin's Folk from the Grey Mountain, it was long believed that no dwarven presence remained so far north. And yet, the holding of [GetTitleByKey('c_nordinbad').GetNameNoTier] prevailed, surviving until this very day.\n\nThe city is very small. It was carved directly into the sheer rock of the large mountain that shelters it. Deep beneath lies the scared lake of Azan-zâram, the beauty of which was ever its greatest treasure.\n\nWe have been granted access to this hidden holdout, and are free to explore its halls. There are a few of the dwarves here that we could speak with..."
+ rangers.0731.a:0 "I'll speak with Nordinbad's Lord, [gorin.GetFirstName]."
+ rangers.0731.a.tt:0 "You decide to speak with [gorin.GetName]"
+ rangers.0731.b:0 "We should see what [nordri.GetFirstName] is up to."
+ rangers.0731.b.tt:0 "You decide to speak with [nordri.GetFirstName]"
+ rangers.0731.c:0 "Let us see if [gundri.GetFirstName] has recovered from the trip."
+ rangers.0731.c.tt:0 "You decide to speak with [gundri.GetFirstName]"
+ rangers.0731.d:0 "We're done here."
+ rangers.0731.d.tt:0 "You return to your adventures"
+ 
+ rangers.0732.t:0 "Беседа с местными: Горин"
+ rangers.0732.desc:0 "[gorin.GetName] has ruled Nordinbad for a great many years. A scion of the Grey Mountains of old, he is a proud and wise dwarven ruler.\n\nAs I approach the Lord of Nordinbad, he thanks me once more for the rescue of his son, [nordri.GetFirstName]. He readily tells me more of the history of his hidden mountain-hold and tells me the tale of how the dwarves of Nordinbad have sworn to forever keep the sacred lake of Azan-zâram safe, until the line of Durin returned to the North."
+ rangers.0732.a:0 "It is astonishing that Nordinbad managed to survive the Dragons."
+ rangers.0732.b:0 "Do you have a contract for me?"
+ rangers.0732.b.tt:0 "#weak A new generic [task_contract|E] becomes available#!" 
+ 
+ rangers.0733.t:0 "Беседа с местными: Нордри"
+ rangers.0733.desc:0 "Near the forges of Nordinbad, we come across [nordri.GetFirstName], who is hard at work crafting a new blade for himself. Among [dwarves|E], he tells me, it is not out of the ordinary for even princes and sons of lords to learn the art of hammer and anvil, and the making of arms and armour.\n\n"If you wish it, you could grab a new weapon for one of your companions from our armories," [nordri.GetFirstName] offers. "It would make a fine reward for your assistance in [gundabad|E]!""
+ rangers.0733.a:0 "[farin.GetFirstName] should get a new axe!"
+ rangers.0733.a.tt:0 "Farin gains a weapon artifact"
+ rangers.0733.b:0 "A new staff for [andriel.GetFirstName] would be great."
+ rangers.0733.b.tt:0 "Andriel gains a weapon artifact"
+
+ rangers.0734.t:0 "Беседа с местными: Гундри"
+ rangers.0734.desc:0 "After a short search, we come across [gundri.GetFirstName] in one of the many hallways of Nordinbad. The old warrior seems to be deep in thought and only notices us as [farin.GetFirstName] speaks his name.\n\n"Good to see you, my new friends. Have you come to ask for my help on your next adventure, wherever it may take you?" "We would never force you away from your home," [farin.GetFirstName] replies. "But if you could spare an hour or two, your sage advice would surely come in handy...""
+ rangers.0734.a:0 "Fighting underground must be a dwarven speciality!"
+ rangers.0734.b:0 "Is it possible to learn your technique?"
