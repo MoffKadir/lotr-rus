@@ -81,16 +81,15 @@
  lotr_laamp_2001_request: "$laamp_request_boilerplate_steward_scheme$"
 
  lotr_laamp_contract_schemes.2001.t: "Перехватить военные припасы"
- lotr_laamp_contract_schemes.2001.desc: "[employer.GetFirstName] разворачивает передо мной карту местности, в углу которой есть красная отметка. [employer.GetSheHe] указывает на нее.\n\n«Здесь находится вражеский склад снабжения, в котором они хранят свою еду. Я хочу, чтобы #EMP вы#! остановили их поток провизии. Сожгите его, отравите, мне все равно. Пусть враг сражается с пустым брюхом!»"
- lotr_laamp_contract_schemes.2001.desc.outro: "\n\nЯ кланяюсь и ухожу."
+ lotr_laamp_contract_schemes.2001.desc: "[officer.GetFirstName] разворачивает передо мной карту местности, в углу которой красным отмечена точка, соединённая пунктирной линией. [officer.GetSheHe] указывает на нее.\n\n«Здесь находится вражеский склад снабжения, в котором они хранят продовольствие и оружие, а это - маршрут снабжениях. Если мы застанем их врасплох, то сможем обратить эти товары себе на пользу!»"
+ lotr_laamp_contract_schemes.2001.desc.outro: "\n\nЯ киваю и ухожу."
  lotr_laamp_contract_schemes.2001.tt.destination_list: "Вы немедленно [Concept('traveling', 'отправитесь')|E] в провинцию [supply_depot.GetNameNoTier]"
  lotr_laamp_contract_schemes.2001.a: "$travel.stationary_domicile.option.t$"
  lotr_laamp_contract_schemes.2001.b: "$travel.mobile_domicile.option.t$"
- lotr_laamp_contract_schemes.2001.c: "In and out in a blaze of glory!"
 
  lotr_laamp_contract_schemes.2002.t: "$lotr_laamp_contract_schemes.2001.t$: Расставляя ловушку"
  lotr_laamp_contract_schemes.2002.desc: "Я стою на гребне, с которого открывается вид на склад снабжения, обнесенный деревянным частоколом и сторожевыми башнями. В ночи мерцают факелы, и через регулярные промежутки времени здесь проходят колонны с припасами. Я наблюдаю за передвижениями стражников и думаю про себя."
- lotr_laamp_contract_schemes.2002.desc.outro: "\n\nКонечно, мы можем напасть на сам склад, уничтожив все запасы одним махом; но в качестве альтернативы можно устроить засаду на конвои, находящиеся дальше, что окажется менее рискованным."
+ lotr_laamp_contract_schemes.2002.desc.outro: "\n\nКонечно, мы можем напасть на сам склад, разграбив все запасы одним махом; но в качестве альтернативы можно устроить засаду на конвои, находящиеся дальше, что окажется менее рискованным."
  lotr_laamp_contract_schemes.2002.a: "График движения конвоев легко оценить; атаковать их по частям очень просто."
  lotr_laamp_contract_schemes.2002.b: "Устраивать засады на конвои может быть утомительно, но это лучшее решение."
  lotr_laamp_contract_schemes.2002.b.tt.success: "Вам удается отобрать значительное количество припасов."
@@ -106,12 +105,12 @@
  lotr_laamp_contract_schemes.2002.g: "Я могу решить любую проблему, если приложу к этому усилия!"
 
  lotr_laamp_contract_schemes.2003.t: "$lotr_laamp_contract_schemes.2001.t$: успех!"
- lotr_laamp_contract_schemes.2003.desc: "Когда я вхожу в комнату, [employer.GetFirstNameNicknamedPossessive] поворачивается ко мне, оторвавшись от разбросанных по столу страниц.\n\n«Отличная работа!», - говорит [employer.GetSheHe], ухмыляясь. «Судя по тому, что докладывают мои разведчики, враг находится в полном смятении! Что ж, [Select_CString(employer.IsFemale, 'уверена', 'уверен' )], они еще больше обрадуются, когда поймут, что все, что им осталось съесть, - это несколько капустных голов и их сапоги».\n\n[employer.GetTitleAsNameNoTooltip] даёт знак, и один из слуг выходит вперед, протягивая небольшую шкатулку, наполненную золотом. Я беру ее, кланяюсь и бесшумно выхожу."
+ lotr_laamp_contract_schemes.2003.desc: "[officer.GetFirstName] возвращается из экспедиции, [officer.GetHerHis] лицо в синяках, но светится от гордости.\n\n«Мы сделали это!» говорит [officer.GetSheHe], ухмыляясь. «Мы раздели врага догола, и теперь они будут сражаться в сандалиях и есть старый, червивый хлеб!»\n\nОдин из моих спутников выходит вперёд, протягивая небольшую шкатулку, наполненную золотом. «А вот небольшой бонус, который мы нашли спрятанным в одной из повозок»."
  lotr_laamp_contract_schemes.2003.a: "Отличная работа!"
 
  lotr_laamp_contract_schemes.2004.t: "$lotr_laamp_contract_schemes.2001.t$: провал!"
- lotr_laamp_contract_schemes.2004.desc: "Я вхожу в комнату с низко опущенной головой, и [employer.GetFirstNameNicknamedPossessive] встречает меня разочарованным взглядом.\n\n«Я [Select_CString(employer.IsFemale, 'ожидала', 'ожидал' )] большего», - говорит [employer.GetSheHe] через стол, разрезая кусок фрукта. «Особенно от кого-то с вашей репутацией. Я [Select_CString(employer.IsFemale, 'думала', 'думал' )], это простая работа, но увы! А теперь проваливайте».\n\nЯ бесшумно выхожу из комнаты."
- lotr_laamp_contract_schemes.2004.a: "Вот так."
+ lotr_laamp_contract_schemes.2004.desc: "[officer.GetFirstName] возвращается из экспедиции, [officer.GetHerHis] лицо в синяках и красное от стыда.\n\n«Не могу поверить, всё было готово, наш план был идеален, а мы потерпели поражение! Мы были отброшены назад и вернулись ранеными и с пустыми руками»."
+ lotr_laamp_contract_schemes.2004.a: "Какой позор."
 
 
 
