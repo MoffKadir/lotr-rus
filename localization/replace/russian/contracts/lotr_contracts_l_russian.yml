@@ -81,16 +81,15 @@
  lotr_laamp_2001_request: "$laamp_request_boilerplate_steward_scheme$"
 
  lotr_laamp_contract_schemes.2001.t: "Перехватить военные припасы"
- lotr_laamp_contract_schemes.2001.desc: "[employer.GetFirstName] разворачивает передо мной карту местности, в углу которой есть красная отметка. [employer.GetSheHe] указывает на нее.\n\n«Здесь находится вражеский склад снабжения, в котором они хранят свою еду. Я хочу, чтобы #EMP вы#! остановили их поток провизии. Сожгите его, отравите, мне все равно. Пусть враг сражается с пустым брюхом!»"
- lotr_laamp_contract_schemes.2001.desc.outro: "\n\nЯ кланяюсь и ухожу."
+ lotr_laamp_contract_schemes.2001.desc: "[officer.GetFirstName] разворачивает передо мной карту местности, в углу которой красным отмечена точка, соединённая пунктирной линией. [officer.GetSheHe] указывает на нее.\n\n«Здесь находится вражеский склад снабжения, в котором они хранят продовольствие и оружие, а это - маршрут снабжениях. Если мы застанем их врасплох, то сможем обратить эти товары себе на пользу!»"
+ lotr_laamp_contract_schemes.2001.desc.outro: "\n\nЯ киваю и ухожу."
  lotr_laamp_contract_schemes.2001.tt.destination_list: "Вы немедленно [Concept('traveling', 'отправитесь')|E] в провинцию [supply_depot.GetNameNoTier]"
  lotr_laamp_contract_schemes.2001.a: "$travel.stationary_domicile.option.t$"
  lotr_laamp_contract_schemes.2001.b: "$travel.mobile_domicile.option.t$"
- lotr_laamp_contract_schemes.2001.c: "In and out in a blaze of glory!"
 
  lotr_laamp_contract_schemes.2002.t: "$lotr_laamp_contract_schemes.2001.t$: Расставляя ловушку"
  lotr_laamp_contract_schemes.2002.desc: "Я стою на гребне, с которого открывается вид на склад снабжения, обнесенный деревянным частоколом и сторожевыми башнями. В ночи мерцают факелы, и через регулярные промежутки времени здесь проходят колонны с припасами. Я наблюдаю за передвижениями стражников и думаю про себя."
- lotr_laamp_contract_schemes.2002.desc.outro: "\n\nКонечно, мы можем напасть на сам склад, уничтожив все запасы одним махом; но в качестве альтернативы можно устроить засаду на конвои, находящиеся дальше, что окажется менее рискованным."
+ lotr_laamp_contract_schemes.2002.desc.outro: "\n\nКонечно, мы можем напасть на сам склад, разграбив все запасы одним махом; но в качестве альтернативы можно устроить засаду на конвои, находящиеся дальше, что окажется менее рискованным."
  lotr_laamp_contract_schemes.2002.a: "График движения конвоев легко оценить; атаковать их по частям очень просто."
  lotr_laamp_contract_schemes.2002.b: "Устраивать засады на конвои может быть утомительно, но это лучшее решение."
  lotr_laamp_contract_schemes.2002.b.tt.success: "Вам удается отобрать значительное количество припасов."
@@ -106,16 +105,17 @@
  lotr_laamp_contract_schemes.2002.g: "Я могу решить любую проблему, если приложу к этому усилия!"
 
  lotr_laamp_contract_schemes.2003.t: "$lotr_laamp_contract_schemes.2001.t$: успех!"
- lotr_laamp_contract_schemes.2003.desc: "Когда я вхожу в комнату, [employer.GetFirstNameNicknamedPossessive] поворачивается ко мне, оторвавшись от разбросанных по столу страниц.\n\n«Отличная работа!», - говорит [employer.GetSheHe], ухмыляясь. «Судя по тому, что докладывают мои разведчики, враг находится в полном смятении! Что ж, [Select_CString(employer.IsFemale, 'уверена', 'уверен' )], они еще больше обрадуются, когда поймут, что все, что им осталось съесть, - это несколько капустных голов и их сапоги».\n\n[employer.GetTitleAsNameNoTooltip] даёт знак, и один из слуг выходит вперед, протягивая небольшую шкатулку, наполненную золотом. Я беру ее, кланяюсь и бесшумно выхожу."
+ lotr_laamp_contract_schemes.2003.desc: "[officer.GetFirstName] возвращается из экспедиции, [officer.GetHerHis] лицо в синяках, но светится от гордости.\n\n«Мы сделали это!» говорит [officer.GetSheHe], ухмыляясь. «Мы раздели врага догола, и теперь они будут сражаться в сандалиях и есть старый, червивый хлеб!»\n\nОдин из моих спутников выходит вперёд, протягивая небольшую шкатулку, наполненную золотом. «А вот небольшой бонус, который мы нашли спрятанным в одной из повозок»."
  lotr_laamp_contract_schemes.2003.a: "Отличная работа!"
 
  lotr_laamp_contract_schemes.2004.t: "$lotr_laamp_contract_schemes.2001.t$: провал!"
- lotr_laamp_contract_schemes.2004.desc: "Я вхожу в комнату с низко опущенной головой, и [employer.GetFirstNameNicknamedPossessive] встречает меня разочарованным взглядом.\n\n«Я [Select_CString(employer.IsFemale, 'ожидала', 'ожидал' )] большего», - говорит [employer.GetSheHe] через стол, разрезая кусок фрукта. «Особенно от кого-то с вашей репутацией. Я [Select_CString(employer.IsFemale, 'думала', 'думал' )], это простая работа, но увы! А теперь проваливайте».\n\nЯ бесшумно выхожу из комнаты."
- lotr_laamp_contract_schemes.2004.a: "Вот так."
+ lotr_laamp_contract_schemes.2004.desc: "[officer.GetFirstName] возвращается из экспедиции, [officer.GetHerHis] лицо в синяках и красное от стыда.\n\n«Не могу поверить, всё было готово, наш план был идеален, а мы потерпели поражение! Мы были отброшены назад и вернулись ранеными и с пустыми руками»."
+ lotr_laamp_contract_schemes.2004.a: "Какой позор."
+
+
 
  lotr_laamp_3011_contract: "$lotr_laamp_3011_contract_scheme$"
  lotr_laamp_3011_request: "$laamp_request_boilerplate_intrigue_scheme$"
- lotr_laamp_3011_contract_scheme_desc_general: "$lotr_laamp_3011_contract_scheme_desc$"
 
  lotr_laamp_contract_schemes.3011.t: "Прореживание вражеских рядов"
  lotr_laamp_contract_schemes.3011.desc: "«[target.GetTitledFirstName] [Select_CString(target.IsFemale, 'отправила', 'отправил' )] многих из наших лучших воинов в объятия [employer.GetFaith.DeathDeityNamePossessive], слишком многих. Кто-то должен положить этому конец, а то, как это произойдёт, не имеет особого значения», - мрачно произносит [employer.GetTitledFirstName].\n\nЯ киваю. Больше сказать нечего — [target.GetSheHe] слишком [Select_CString(target.IsFemale, 'смертоносна', 'смертоносен' )], чтобы оставлять [Select_CString(target.IsFemale, 'её', 'его' )] на службе у врага, и [Select_CString(employer.IsFemale, 'моя нанимательница предпочла', 'мой наниматель предпочёл' )] бы обратиться к профессионалу.\n\nОдна жизнь оборвётся, чтобы спасти многих."
@@ -135,6 +135,14 @@
  lotr_laamp_contract_schemes.3013.desc: "«Значит, теперь [target.GetTitledFirstName] знает, что кто-то охотится за [target.GetHerHis] головой? [Select_CString(ROOT.Char.IsFemale, 'Дура', 'Глупец' )]!» - рычит [employer.GetTitledFirstName], «И зачем я вам #EMP доверился#!? Га!»\n\nЯ пожимаю плечами, открываю рот, чтобы объяснить... ошибку, из-за которой наша цель избежала гибели, но [employer.GetFirstNamePossessiveNoTooltip] вытягивает руку, указывая пальцем на двор снаружи.\n\n«Вам не заплатят за проваленную работу. Убирайтесь, [employer.Custom('FortifiedBuilding')] больше примет вас, иначе я вымещу своё разочарование на #EMP вас#!»."
  lotr_laamp_contract_schemes.3013.orc.desc: "«Ты хочешь сказать, мелкий жалкий червяк, что [target.GetTitledFirstName] знает об ударе? И это произошло из-за #italic твоей#! ошибки?» - рычит [employer.GetTitledFirstName], выхватывая грубый изогнутый меч, пока [employer.GetHerHis] стражники кладут руки на рукоять своих оружий.\n\nЯ протягиваю руки в знак мольбы, открывая рот, чтобы объяснить... ошибку, из-за которой наша добыча избежала гибели, но тут поднимается сжатый кулак, и я быстро замолкаю. [employer.GetFirstNamePossessiveNoTooltip] начинает топать руками и сопеть, и я медленно отступаю. «Убирайся! Убирайся с глаз долой, пока я не [Select_CString(employer.IsFemale, 'забрала', 'забрал' )] твою голову взамен [target.GetHerHis]! Беги, мелкая личинка! Беги!»\n\nГде-то снаружи рычат варги, мерцают огоньки свечей, и орки выхватывают свои коварные клинки. Я очень быстро ухожу."
  lotr_laamp_contract_schemes.3013.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.negative.light$"
+
+ lotr_laamp_3011_contract_scheme: "Уничтожение врага"
+ lotr_laamp_3011_contract_scheme_action: "Уничтожить врага"
+ lotr_laamp_3011_contract_scheme_desc: "Бывают случаи, когда [Concept('contractor', 'нанимателю')|E] нужна чья-то смерть, но он не хочет рисковать и заниматься этим лично, либо слишком занят другими делами. К счастью, убийство можно легко поручить кому-либо другому.$laamp_contract_scheme_desc_general_boilerplate$"
+ lotr_laamp_3011_contract_scheme_desc_general: "$lotr_laamp_3011_contract_scheme_desc$"
+ lotr_laamp_3011_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
+ lotr_laamp_3011_desc_title: "Честным наёмникам с твёрдой волей,"
+ lotr_laamp_3011_desc: "[TaskContract.GetEmployer.GetPrimaryTitle.GetAdjective][Select_CString(TaskContract.GetEmployer.IsFemale, 'ая', 'ий' )] [TaskContract.GetEmployer.GetTitleAsNameNoTooltip] предлагает щедрую награду за тонкую, сложную работу."
 
  lotr_laamp_contract_schemes.3051.t: "Охота на чудовище"
  lotr_laamp_contract_schemes.3051.desc: "Когда я прибываю в чертог, [employer.GetName] приветствует меня и быстро переходит к делу. «Некое злое существо нападает на путников в моих землях. Следопыты призваны поддерживать мир, не так ли? Разберитесь с этим чудовищем, и вы будете вознаграждены за это».\n\nЗадача просто. Нужно выследить и уничтожить тёмную тварь, терзающую эту провинцию."
@@ -313,3 +321,9 @@
  lotr_eradan_contract_ettenmoors_desc:0 "\n[elrond|E] услышал тревожные новости из провинции [GetTitleByKey('c_ettenmoors').GetNameNoTier]. Каменный великан спустился с [Concept('mistymountains', 'Мглистых гор')|E] и бесчинствует в дебрях. Это существо необходимо остановить любой ценой, пока оно не добралось до обитаемых земель [Concept('eriador', 'Эриадора')|E]..."
  lotr_eradan_contract_ettenmoors_desc_title:0 "$lotr_eradan_contract_ettenmoors$" 
  lotr_eradan_contract_ettenmoors_request: "Этот [Concept('task_contract', 'контракт')|E] потребует от вас расследовать появление каменного великана в провинции [GetTitleByKey('c_ettenmoors').GetNameNoTier]."
+
+ lotr_eradan_contract_gundabad:0 "Гундабад: Возвышение орков"
+ lotr_eradan_contract_gundabad_contract:0 "$lotr_eradan_contract_gundabad$"
+ lotr_eradan_contract_gundabad_desc:0 "\nПо заданию [Concept('elrond', 'Эльронда')|E] мне предстоит проникнуть в [Concept('orc', 'орочью')|E] твердыню [GetTitleByKey('c_gundabad').GetNameNoTier] и узнать их планы относительно вторжения северные земли..."
+ lotr_eradan_contract_gundabad_desc_title:0 "$lotr_eradan_contract_gundabad$" 
+ lotr_eradan_contract_gundabad_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы раскрыли планы [Concept('orcs', 'орков')|E] #L [GetTitleByKey('c_gundabad').GetNameNoTier]а#!."
