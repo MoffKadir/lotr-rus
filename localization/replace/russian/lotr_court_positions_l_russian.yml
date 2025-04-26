@@ -34,6 +34,19 @@
  court_position_miner_2_trait:1 "$court_position_miner_1_trait$"
  court_position_miner_1_trait:1 "[GetTrait('lifestyle_miner').GetName( ROOT.Char )]"
 
+ # Raven Keeper
+ raven_keeper_court_position:0 "Хранитель воронов"
+ relation_raven_keeper_male:0 "$raven_keeper_court_position$"
+ relation_raven_keeper_female:0 "$raven_keeper_court_position$"
+ relation_raven_keeper_male_possessive:0 "хранителя воронов"
+ relation_raven_keeper_female_possessive:0 "хранителя воронов"
+ court_position_desc_raven_keeper:0 "заботиться о воронах Эребора"
+ court_position_subject_raven_keeper:0 "мудрейшие из птиц"
+ raven_keeper_court_position_desc:1 "Заботясь и оказывая почтение воронам Эребора, $raven_keeper_court_position$ заботится об их нуждах и толкует их предзнаменования. Эта почетная должность сохраняет старый союз между [Concept('durinsfolk', 'Народом Дурина')|E] и мудрыми птицами Горы."
+ raven_keeper_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'raven_keeper_court_position' ) )]"
+ raven_keeper_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'raven_keeper_court_position' ) )] #weak ([old_holder.GetFirstName] — [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'raven_keeper_court_position' ) )])#!"
+ raven_keeper_salary_tooltip:0 "[GetCourtPositionType( 'raven_keeper_court_position' ).GetName()] получает ежемесячное жалованье — [SCOPE.ScriptValue('medium_court_position_salary')|2] [gold_i]"
+
  # Second Marshal of Rohan
  second_marshal_of_rohan_court_position:0 "Второй маршал Риддермарка"
  relation_second_marshal_of_rohan_male:0 "Второй маршал"

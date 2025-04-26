@@ -733,7 +733,7 @@
  decision_calenardhon_calemmir.tt: "Город [GetTitleByKey('c_aldburg').GetNameNoTier] станет столицей провинции [GetTitleByKey('k_rohan').GetNameNoTier]."
 
  decision_establish_the_ithilien_rangers: "Основать следопытов Итилиэна"
- decision_establish_the_ithilien_rangers_desc: "Один из оплотов [Concept('gondor', 'Гондора')|E], Итилиэн пал перед вражеским натиском. Наш народ бежал, земля опустела, и теперь силы зла угрожают Андуину, жизненно важному для [Concept('gondor', 'Гондора')|E].\n\nНо мы всё ещё можем сопротивляться. Среди тех, кто ушёл, есть немало тех, кто досконально знает тайные тропы и скрытые пути Итилиэна, и чьи сердца горят желанием отомстить за потерянный дом. Мы можем набрать этих людей и создать элитный партизанский отряд, чтобы отстоять леса и степи Итилиэна от надвигающейся тени."
+ decision_establish_the_ithilien_rangers_desc: "Некогда сад [Concept('gondor', 'Гондора')|E], Итилиэн пал перед вражеским натиском. Наш народ бежал, земля опустела, и теперь силы зла угрожают Андуину, жизненно важному для [Concept('gondor', 'Гондора')|E].\n\nНо мы всё ещё можем сопротивляться. Среди тех, кто ушёл, есть немало тех, кто досконально знает тайные тропы и скрытые пути Итилиэна, и чьи сердца горят желанием отомстить за потерянный дом. Мы можем набрать этих людей и создать элитный партизанский отряд, чтобы отстоять леса и степи Итилиэна от надвигающейся тени."
  decision_establish_the_ithilien_rangers_tt: "Основать следопытов Итилиэна"
  decision_establish_the_ithilien_rangers_confirm: "Мы защитим эти земли!"
  decision_establish_the_ithilien_rangers.tt: "Вы получите доступ к профессионалам - следопытам Итилиэна"
@@ -1426,15 +1426,27 @@
  decision_jelut_empire_confirm: "И снова мы объединились."
  jelut_are_independent: "Нет других независимых [jelutculture.GetCollectiveNoun]их правителей"
 
- decision_arysor_trade_dominance: "Объединить торговые королевства Аризиса"
- decision_arysor_trade_dominance_desc: "На протяжении большей части нашей истории арисоры довольствовались жизнью, разделённой по границам кланов, в лучшем случае объединяясь в слабую, децентрализованную конфедерацию. Но с ростом известности моей семьи и значительным увеличением торговли через наши земли появилась возможность прочно утвердить себя и [GetTitleByKey('k_arysis').GetName] в качестве полноценной монархии, более похожей на наших северных родичей из Харнена."
- decision_arysor_trade_dominance_tooltip: "Вы возвысите [GetTitleByKey('k_arysis').GetNameNoTier] до централизованного торгового королевства в сердце восточных [Concept( 'haradric', 'харадских' )|E] торговых путей, с собой в качестве [Select_CString(ROOT.Char.IsFemale, 'её королевы', 'его короля' )]."
- decision_arysor_trade_dominance_confirm: "Объединившись, мы будем процветать."
-
  decision_restore_ancient_lurmsakun: "Восстановить древний Лурмсакун"
  decision_restore_ancient_lurmsakun_tooltip: "Восстановить древние границы Лурмсакуна"
  decision_restore_ancient_lurmsakun_desc: "На протяжении бесчисленных поколений Лурмсакун страдал от жестоких набегов и владычества Кханда. Однако после переселения теджин наши предки свергли своих кхандских владык и создали великое королевство, которое просуществовало несколько веков. Если мы вернем древние границы Лурмсакуна, мы восстановим былую славу этого королевства и, возможно, наконец-то положим конец притязаниям Кханда на владычество над этим регионом."
  decision_restore_ancient_lurmsakun_confirm: "Никогда более не преклоним колен!"
+
+ decision_siaken_kingdom: "Стать [Select_CString(ROOT.Char.IsFemale, 'королевой', 'королём' )] сиакенов"
+ decision_siaken_kingdom_tooltip: "Провозгласить себя [Select_CString(ROOT.Char.IsFemale, 'королевой', 'королём' )] сиакенов, возвысив свой народ."
+ decision_siaken_kingdom_desc: "Одинокие среди народов [Concept('nearharad', 'Ближнего Харада')|E], мы, сиакены, исторически не имели своего собственного королевства. Наше королевство всегда считалось младшим братом стойкого #L $k_lurmsakun$а#! и богатого #L $k_arysis$а#!, и его редко признавали равным.\n\nИ всё же мы воспитали младшего брата и вырастили его сильным и гордым. Мой народ смотрит на меня с восхищением, и пришло время нам самим встать на ноги - как королям сиакенов.\n\nЭто гипотетическое королевство на протяжении истории носило несколько названий, и среди нас нет единого мнения. Сиакан, Сиакор, Сирис или Сиразан? Если я буду вести нас, то выбор за мной."
+ decision_siaken_kingdom.second_step: "Я - [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )]..."
+ decision_siaken_kingdom_confirm: "И вот мы возвышаемся."
+ decision_siaken_kingdom.tt.siakan: "$k_siakan$"
+ kingdom_name_siakan_tooltip: "Моя новая держава будет называться #P $k_siakan$#!"
+ decision_siaken_kingdom.tt.siakor: "$k_siakor$"
+ kingdom_name_siakor_tooltip: "Моя новая держава будет называться #P $k_siakor$#!"
+ decision_siaken_kingdom.tt.sirysis: "$k_sirysis$"
+ kingdom_name_sirysis_tooltip: "Моя новая держава будет называться #P $k_sirysis$#!"
+ decision_siaken_kingdom.tt.siakun: "$k_siakun$"
+ kingdom_name_siakun_tooltip: "Моя новая держава будет называться #P $k_siakun$#!"
+ decision_siaken_kingdom.tt.sirazan: "$k_sirazan$"
+ kingdom_name_sirazan_tooltip: "Моя новая держава будет называться #P $k_sirazan$#!"
+ cultural_acceptance_gain_siaken_recognition:0 "Впечатление от [GetTitleByKey('k_siakan').GetNameNoTooltip]а"
 
  recruit_witch_decision: "Нанять чародея"
  recruit_witch_decision_desc: "Нанять к своему двору чародея, чтобы он служил вам советником из теней."
@@ -1469,6 +1481,164 @@
  decision_unite_the_dunes_tooltip: "Интегрировать королевство Дарсалан в Море Дюн"
  decision_unite_the_dunes_desc: "Море Дюн - суровая родина, но она воспитала немало стойких воинов. На востоке лежат земли Дарсалана, где королевства поднимаются и падают так же быстро, как песчаная буря проносится над засушливыми землями.\n\nНастало время объединиться! Я скреплю эти земли в единое королевство и принесу мир, свободу, справедливость и безопасность в мою новую империю."
  decision_unite_the_dunes_confirm: "Во имя процветания аранийцев!"
+
+ ##################################
+ #### Arysis / Maresh Decisions ###
+ ##################################
+ maresh_decision_header: "#M Мареш:#! "
+ maresh_prosperity_capital_shift_tt: "Due to the rising prominence of [GetTitleByKey('c_maresh').GetNameNoTier] as a regional center of trade, it will replace [old_capital.GetNameNoTier] as the [de_jure|E] [capital|E] of [GetTitleByKey('k_arysis').GetNameNoTier]"
+ decision_maresh_resolve_conflicts: "Resolve Maresh's Long-Standing Conflicts"
+ decision_maresh_resolve_conflicts_tooltip: "Civil strife has plagued the oasis of Maresh for too long!"
+ decision_maresh_resolve_conflicts_desc: "For many moons, Maresh has suffered constant factionalism and civil war. Many locals are growing tired of this, and I believe it is time to establish a more permanent peace. We need a system to resolve the conflicts between the many different peoples and caravans that meet at this nexus of [trans_haradric_trade|E]."
+ decision_maresh_resolve_conflicts_effect_tooltip: "The level of [maresh_prosperity|E] #P increases#!"
+ decision_maresh_resolve_conflicts_effect_tooltip_2: "Unlocks the [decisions|E] to #V $decision_maresh_establish_mints$#!, #V $decision_maresh_divert_rysis_river$#!, and #V $decision_maresh_wall_the_oasis$#!"
+ decision_maresh_resolve_conflicts_confirm: "Gather prominent locals - it's time to meet."
+ maresh_prosperity_1_requirement_desc: "[maresh_prosperity|E] must be #M 1 or higher#!"
+ maresh_prosperity_2_requirement_desc: "[maresh_prosperity|E] must be #M 2 or higher#!"
+ maresh_prosperity_3_requirement_desc: "[maresh_prosperity|E] must be #M 3 or higher#!"
+ maresh_prosperity_4_requirement_desc: "[maresh_prosperity|E] must be #M 4 or higher#!"
+ 
+ decision_maresh_establish_mints: "Establish the Mints of Maresh"
+ decision_maresh_establish_mints_tooltip: "Order the construction of mints to produce coins."
+ decision_maresh_establish_mints_desc: "Maresh is an important nexus of Dune Sea trade. Merchants from [nearharad|E], [bellakar|E], the [ray|E], Khy and Sîrayn all meet here, transporting great quantities of gold. Combined with the rich copper deposits in the hills of Arysis, this makes [GetTitleByKey('b_arsasak').GetNameNoTier] an excellent candidate for a future mint."
+ decision_maresh_establish_mints_effect_tooltip_1: "Can now construct the [GetBuilding('arsasan_mints_01').GetName] [special_building|E] in [GetTitleByKey('b_arsasak').GetNameNoTier]"
+ decision_maresh_establish_mints_effect_tooltip_2: "$decision_maresh_resolve_conflicts_effect_tooltip$"
+ decision_maresh_establish_mints_dynasty_perk_req: "Your [dynasty|E] has unlocked the [GetDynastyPerk('lotr_haradrim_legacy_2').GetName] [dynasty_perk|E]"
+ decision_maresh_establish_mints_copper_mine_req: "A #V $building_type_copper_mines_01$#! must be built somewhere in [GetGeographicalRegion('middleearth_harad_dunesea_arysis').GetName] as part of your [realm|E]"
+ decision_maresh_establish_mints_confirm: "Lets lay the groundwork."
+
+ decision_maresh_divert_rysis_river: "Divert and Dam the Rysis River"
+ decision_maresh_divert_rysis_river_tooltip: "Controlling the flow of the Rysis River may have its advantages."
+ decision_maresh_divert_rysis_river_desc: "The inhabitants of Maresh have continuously expanded its water resources over the years. Now, my engineers have presented new ideas for several hydraulic projects that would allow us to better control the Rysis River that flows through Maresh. This will maximize arable land and provide even more water to the locals, though some may resent me for it for religious reasons."
+ decision_maresh_divert_rysis_river_effect_tooltip: "$decision_maresh_resolve_conflicts_effect_tooltip$"
+ decision_maresh_divert_rysis_river_confirm: "Let's coordinate these efforts."
+ piety_loss_because_of_sacred_waters_effect: "This may upset those whose [faith|E] has the [GetFaithDoctrine('tenet_sacred_waters').GetBaseName] [core_tenet|E]"
+
+ decision_maresh_wall_the_oasis: "Wall the Maresh Oasis"
+ decision_maresh_wall_the_oasis_tooltip: "We need adequate defenses around the Maresh area."
+ decision_maresh_wall_the_oasis_desc: "Although Maresh's defenses are nothing to scoff at, they can be improved even further. Locals are recommending that we expand the city's fortifications to surround much of the Maresh Oasis."
+ decision_maresh_wall_the_oasis_effect_tooltip: "$decision_maresh_resolve_conflicts_effect_tooltip$"
+ decision_maresh_wall_the_oasis_requirement: "Your [dynasty|E] has unlocked the [GetDynastyPerk('lotr_haradrim_legacy_3').GetName] [dynasty_perk|E]"
+ decision_maresh_wall_the_oasis_confirm: "It shall be done."
+ 
+ decision_maresh_attract_settlers: "Attract Settlers to Maresh"
+ decision_maresh_attract_settlers_tooltip: "Maresh is a promising location for trade...."
+ decision_maresh_attract_settlers_desc: "Lately, various conflicts have driven many people from elsewhere to flee to [GetTitleByKey('k_arysis').GetNameNoTier]. Perhaps I can encourage some of these adventurers, merchants, refugees, and more to settle in Maresh. Despite their differences, their diverse perspectives can help the city grow and prosper. The oasis shows much promise as a potential trade center, so dominating the Dune Sea trade routes in this manner would be quite advantageous!" 
+ decision_maresh_attract_settlers_effect_tooltip_1: "Unlocks the [maresh_prosperity|E] mechanic for [GetTitleByKey('c_maresh').GetNameNoTier]"
+ decision_maresh_attract_settlers_effect_tooltip_2: "$decision_maresh_resolve_conflicts_effect_tooltip_2$"
+ decision_maresh_attract_settlers_confirm: "Let's do this!"
+ decision_maresh_attract_settlers_req: "Your [dynasty|E] has unlocked the [GetDynastyPerk('lotr_haradrim_legacy_1').GetName] [dynasty_perk|E]"
+ 
+ decision_maresh_arysor_trade_dominance: "Объединить торговые королевства Аризиса"
+ decision_maresh_arysor_trade_dominance_desc: "На протяжении большей части нашей истории арисоры довольствовались жизнью, разделённой по границам кланов, в лучшем случае объединяясь в слабую, децентрализованную конфедерацию. Но с ростом известности моей семьи и значительным увеличением торговли через наши земли появилась возможность прочно утвердить себя и [GetTitleByKey('k_arysis').GetName] в качестве полноценной монархии, более похожей на наших северных родичей из Харнена."
+ decision_maresh_arysor_trade_dominance_tooltip: "Вы возвысите [GetTitleByKey('k_arysis').GetNameNoTier] до централизованного торгового королевства в сердце восточных [Concept('haradric', 'харадских')|E] торговых путей, с собой в качестве [Select_CString(ROOT.Char.IsFemale, 'её королевы', 'его короля' )]."
+ decision_maresh_arysor_trade_dominance_confirm: "Объединившись, мы будем процветать."
+ must_be_arysori_or_child_culture: "Must be [arysisani_culture.GetName] or of a descending [culture|E]"
+ arysor_trade_dominance_decision_requirement_desc: "All other [decisions|E] relating to [maresh_prosperity|E] must have been completed."
+ arysor_trade_dominance_gain_innovations_khy: "[myculture.GetName] discovers #P up to three#! [innovations|E] from [cultures|E] located in [GetGeographicalRegion('middleearth_harad_bayoformal_khy').GetName]"
+ arysor_trade_dominance_gain_innovations_sirayn: "[myculture.GetName] discovers #P up to three#! [innovations|E] from [cultures|E] located in [GetGeographicalRegion('middleearth_harad_bayoformal_sirayn').GetName]"
+ arysor_trade_dominance_gain_innovations_haradwaith: "[myculture.GetName] discovers #P up to three#! [innovations|E] from [cultures|E] located in [GetGeographicalRegion('middleearth_harad_near_harnen').GetName]"
+
+
+
+ #####################################
+ #### Harad Minor Flavor Decisions ###
+ #####################################
+ 
+ # Network with Trans-Haradric Merchants Minor Decision
+ decision_network_with_trans_haradric_merchants: "Network with Trans-Haradric Merchants"
+ decision_network_with_trans_haradric_merchants_tooltip: "Build better relations with local traders"
+ decision_network_with_trans_haradric_merchants_desc: "Many merchants travel along the Dune Sea trade routes in our territories, so we should take time to network with them. Building fruitful relationships with interested, ambitious [Concept('haradrim', 'Haradron')|E] merchants can benefit us both."
+ decision_network_with_trans_haradric_merchants_effect_tooltip: "There is a high chance that a [trans_haradric_merchant|E] will spawn in your court and offer you a business deal in the next 5 years for as long as the [character_modifier|E] lasts (or until a merchant spawns). This chance varies depending on your [traits|E], [skills|E], and other factors."
+ decision_network_with_trans_haradric_merchants_confirm: "It's time to network!"
+ RICE_network_trans_haradric_decision_region_requirement: "Own a [county|E] in [GetGeographicalRegion('middleearth_harad').GetName]"
+ lotr_network_dynasty_perk_requirement: "Your [dynasty|E] has unlocked the [GetDynastyPerk('lotr_haradrim_legacy_4').GetName] [dynasty_perk|E]"
+ lotr_network_no_ongoing_trade_deal_requirement:0 "You do not have a #V Networking with $game_concept_trans_haradric_merchants$#! Modifier"
+ lotr_trade_networks_decision_once_requirement: "Has not taken this [decision|E] yet"
+ 
+ # Employ Mud Masons Minor Decision
+ decision_employ_mud_masons: "Employ Mud Masons"
+ decision_employ_mud_masons_tooltip: "The [mud_masons|E] of our [realm|E] can help us with construction projects"
+ decision_employ_mud_masons_desc: "The [GetPlayer.GetCulture.GetName] people have a long tradition of [mud_masonry|E]. I can, and should, call upon the guild of [mud_masons|E] in my realm to assist me with various construction projects. Their architectural and spiritual knowledge will ensure our buildings stand the test of time!"
+ decision_employ_mud_masons_desc_not_culture: "Some inhabitants of my [realm|E] hail from a [culture|E] with a long tradition of [mud_masonry|E]. I can, and should, call upon their guild of [mud_masons|E] to assist me with various construction projects. Their architectural and spiritual knowledge will ensure our buildings stand the test of time!"
+ decision_employ_mud_masons_effect_tooltip_1: "You gain a [character_modifier|E] reducing the cost and time to construct [buildings|E]"
+ decision_employ_mud_masons_effect_tooltip_2: "Depending on the [holdings|E] in your [realm|E], you can choose what [holdings|E] these bonuses apply to"
+ decision_employ_mud_masons_effect_tooltip_3: "Because you have access to the [GetBuilding('selena_mud_masons_01').GetName], you will receive more powerful versions of the [modifiers|E]"
+ decision_employ_mud_masons_confirm: "Contact the masons!"
+ mud_masonry_work_type: "Choose projects for the masons to work on"
+ mud_masonry_work_type_gui: "Choose what kind of [holdings|E] the [mud_masons|E] will work on"
+ lotr_mud_masons_general_option: "All [holdings|E]"
+ lotr_mud_masons_general_option_desc: "Evenly focus on all [holdings|E]"
+ lotr_mud_masons_general_option_tooltip: "Gain [prestige_i|E] #V 50#! and [piety_i|E] #V 50#!, and the [GetModifier('lotr_mud_masons_general_modifier').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+ lotr_mud_masons_castle_option: "[castle_holdings|E]"
+ lotr_mud_masons_castle_option_desc: "Focus on [castle_holdings|E]"
+ lotr_mud_masons_castle_option_tooltip: "Gain [prestige_i|E] #V 100#!, and the [GetModifier('lotr_mud_masons_castle_modifier').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+ lotr_mud_masons_city_option: "[city_holdings|E]"
+ lotr_mud_masons_city_option_desc: "Evenly focus on all [city_holdings|E]"
+ lotr_mud_masons_city_option_tooltip: "Gain [prestige_i|E] #V 50#! and [piety_i|E] #V 50#!, and the [GetModifier('lotr_mud_masons_city_modifier').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+ lotr_mud_masons_church_option: "[church_holdings|E]"
+ lotr_mud_masons_church_option_desc: "Evenly focus on all [church_holdings|E]"
+ lotr_mud_masons_church_option_tooltip: "Gain [piety_i|E] #V 100#!, and the [GetModifier('lotr_mud_masons_church_modifier').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+ lotr_mud_masons_settlement_option: "[settlement_holdings|E]"
+ lotr_mud_masons_settlement_option_desc: "Evenly focus on all [settlement_holdings|E]"
+ lotr_mud_masons_settlement_option_tooltip: "Gain [prestige_i|E] #V 100#!, and the [GetModifier('lotr_mud_masons_settlement_modifier').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+ lotr_mud_masons_general_jenne_option: "All [holdings|E]"
+ lotr_mud_masons_general_jenne_option_desc: "Evenly focus on all [holdings|E]"
+ lotr_mud_masons_general_jenne_option_tooltip: "Gain [prestige_i|E] #V 50#! and [piety_i|E] #V 50#!, and the [GetModifier('lotr_mud_masons_general_modifier_jenne').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+ lotr_mud_masons_castle_jenne_option: "[castle_holdings|E]"
+ lotr_mud_masons_castle_jenne_option_desc: "Focus on [castle_holdings|E]"
+ lotr_mud_masons_castle_jenne_option_tooltip: "Gain [prestige_i|E] #V 100#!, and the [GetModifier('lotr_mud_masons_castle_modifier_jenne').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+ lotr_mud_masons_city_jenne_option: "[city_holdings|E]"
+ lotr_mud_masons_city_jenne_option_desc: "Evenly focus on all [city_holdings|E]"
+ lotr_mud_masons_city_jenne_option_tooltip: "Gain [prestige_i|E] #V 50#! and [piety_i|E] #V 50#!, and the [GetModifier('lotr_mud_masons_city_modifier_jenne').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+ lotr_mud_masons_church_jenne_option: "[church_holdings|E]"
+ lotr_mud_masons_church_jenne_option_desc: "Evenly focus on all [church_holdings|E]"
+ lotr_mud_masons_church_jenne_option_tooltip: "Gain [piety_i|E] #V 100#!, and the [GetModifier('lotr_mud_masons_church_modifier_jenne').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+ lotr_mud_masons_settlement_jenne_option: "[settlement_holdings|E]"
+ lotr_mud_masons_settlement_jenne_option_desc: "Evenly focus on all [settlement_holdings|E]"
+ lotr_mud_masons_settlement_jenne_option_tooltip: "Gain [prestige_i|E] #V 100#!, and the [GetModifier('lotr_mud_masons_settlement_modifier_jenne').GetNameWithTooltip] [character_modifier|E] for #V 10#! years."
+
+
+####################################
+### Namâlo Spice Trade Decisions ###
+####################################
+
+ # Yield the Spice Trade to the Namâlo
+ decision_yield_the_spice_trade: "Yield the Spice Trade to the Namâlo"
+ decision_yield_the_spice_trade_tooltip: "Recognize and promote the [namalo|E] to facilitate the spice trade with [farharad|E]"
+ decision_yield_the_spice_trade_desc: "A group of merchants called the [namalo|E] are slowly gaining influence in [GetGeographicalRegion('middleearth_harad_bayoformal_sirayn').GetName]. If we officially recognized them, and tasked them with managing the spice trade through their merchant networks, we could mutually benefit, as they can transport our spices into [farharad|E] and beyond."
+ decision_yield_the_spice_trade_effect_tooltip_1: "Other [cultures|E] in [GetGeographicalRegion('special_region_innovation_namalo').GetName] [region|E] can now unlock the #V $innovation_namalo$#! [innovation|E] if their [culture_head|E] takes the [decision|E] to #V Integrate Namâlo into Local Communities#!"
+ decision_yield_the_spice_trade_effect_tooltip_2: "The #V $innovation_namalo$#! [innovation|E] in turn unlocks the [decision|E] to #V $decision_namalo_synergy$#!"
+ decision_yield_the_spice_trade_confirm: "The spice must flow!"
+
+ # Integrate the Namâlo
+ decision_integrate_namalo: "Integrate Namâlo into [ROOT.Char.GetCulture.GetNameNoTooltip] Communities"
+ decision_integrate_namalo_tooltip: "The [namalo|E] could help our communities greatly."
+ decision_integrate_namalo_desc: "The [namalo|E] merchants originally controlled the spice trade from Sîrayn, but they have diversified their business over the years by expanding into other lands, to trade in many other goods. We should take the initiative to have them integrate [ROOT.Char.GetCulture.GetName] communities into their networks."
+ decision_integrate_namalo_effect_tooltip_1: "[THIS.Char.GetCulture.GetName] [rulers|E] will now be able to access other [namalo|E] mechanics, like the [decision|E] to $decision_namalo_synergy$"
+ decision_integrate_namalo_confirm: "The Namâlo are welcome in [ROOT.Char.GetCulture.GetNameNoTooltip] lands!"
+ 
+ # Namâlo Synergy Flavor Decision
+ decision_namalo_synergy: "Synergize with the Namâlo"
+ decision_namalo_synergy_tooltip: "The [namalo|E] could contribute much to our civilization."
+ decision_namalo_synergy_desc: "The [namalo|E] have embedded themselves in [ROOT.Char.GetCulture.GetName] communities for quite some time now. [ROOT.Char.GetPrimaryTitle.GetNameNoTier] benefits much from their mercantile enterprise, but if we can find other opportunities to work with the [namalo|E], we could benefit even more!"
+ decision_namalo_synergy_effect_tooltip_1: "You will choose between different types of synergy"
+ decision_namalo_synergy_effect_tooltip_2: "Your [capital|E] and every held [county|E] with the #V $innovation_namalo$#! [innovation|E] get a [county_modifier|E] depending on what type of synergy you choose, and a small, random amount of [development_growth|E]"
+ decision_namalo_synergy_effect_tooltip_3: "You will also gain a related [character_modifier|E]"
+ decision_namalo_synergy_confirm: "They offer more than just spices"
+ lotr_namalo_synergy_type: "Choose how to work with the Namâlo"
+ lotr_namalo_synergy_type_gui: "Choose how to work with the [namalo|E]"
+ lotr_namalo_synergy_political_option: "#V #Bold Political Synergy#!#!"
+ lotr_namalo_synergy_political_option_desc: "Administrative and bureaucratic improvements"
+ lotr_namalo_synergy_political_option_tooltip: "$EFFECT_LIST_BULLET$Gain the [GetModifier('lotr_namalo_political_synergy').GetNameWithTooltip] [character_modifier|E] for #V 10#! years.\n$EFFECT_LIST_BULLET$Your [capital|E] and every held [county|E] with the #V $innovation_namalo$#! [innovation|E] get the [GetModifier('lotr_namalo_political_synergy_county').GetNameWithTooltip] [county_modifier|E] for #V 10#! years."
+ lotr_namalo_synergy_commercial_option: "#V #Bold Commercial Synergy#!#!"
+ lotr_namalo_synergy_commercial_option_desc: "Encouraging the growth of trade"
+ lotr_namalo_synergy_commercial_option_tooltip: "$EFFECT_LIST_BULLET$Gain the [GetModifier('lotr_namalo_commercial_synergy').GetNameWithTooltip] [character_modifier|E] for #V 10#! years.\n$EFFECT_LIST_BULLET$Your [capital|E] and every held [county|E] with the #V $innovation_namalo$#! [innovation|E] get the [GetModifier('lotr_namalo_commercial_synergy_county').GetNameWithTooltip] [county_modifier|E] for #V 10#! years."
+ lotr_namalo_synergy_cultural_option: "#V #Bold Cultural Synergy#!#!"
+ lotr_namalo_synergy_cultural_option_desc: "Investing in artistic and academic work"
+ lotr_namalo_synergy_cultural_option_tooltip: "$EFFECT_LIST_BULLET$Gain the [GetModifier('lotr_namalo_cultural_synergy').GetNameWithTooltip] [character_modifier|E] for #V 10#! years.\n$EFFECT_LIST_BULLET$Your [capital|E] and every held [county|E] with the #V $innovation_namalo$#! [innovation|E] get the [GetModifier('lotr_namalo_cultural_synergy_county').GetNameWithTooltip] [county_modifier|E] for #V 10#! years."
+
+
 
  ################################
  #### Khand/Variag Decisions ####
@@ -1589,6 +1759,13 @@
  decision_buy_armour_from_the_dwarves_tooltip: "Купить для своих войск выкованные гномами Эребора доспехи."
  decision_buy_armour_from_the_dwarves_desc: "Во времена до прихода Дракона наши предки часто торговали с [Concept('dwarves', 'гномами')|E] Одинокой горы, поставляя им продукты питания в обмен на их превосходное оружие и доспехи. Мы могли бы возродить эту традицию и снабдить наших солдат доспехами, выкованными гномами, что дало бы им преимущество в грядущих войнах."
  decision_buy_armour_from_the_dwarves_confirm: "Послать весточку в Эребор!"
+
+ decision_help_rebuild_erebor: "Помочь в восстановлении Эребора"
+ decision_help_rebuild_erebor_tooltip: "Послать помощь гномам из Народа Дурина, чтобы они смогли восстановить Эребор."
+ decision_help_rebuild_erebor_desc: "Одинокая гора, некогда процветающее королевство [Concept('dwarves', 'гномов')|E] из Народа Дурина, теперь не более чем руины с привидениями. Пустые коридоры и тёмные туннели сменили яркие пещеры и оживлённые залы с тех пор, как гномы были изгнаны из своего дома.\n\nНо Дэйл, который всегда был в союзе с сынами Дурина, всё ещё стоит на ногах. Это даёт нам возможность оказать помощь гномам, чтобы они снова смогли вернуть Одинокую гору."
+ decision_help_rebuild_erebor_confirm: "За Одинокую гору!"
+ tom_holds_erebor_desc: "Эребор пал"
+ helps_dwarves_colonise_erebor: "Народ Дурина восстановит Эребор"
 
  ################################
  ####   Saralain Decisions   ####
@@ -1739,7 +1916,6 @@
  decision_subjugate_mount_gundabad_desc: "Когда-то орки [Concept( 'gundabad', 'Гундабада' )|E] и люди Лангвелла оказывали почести [Concept( 'witchking', 'Королю-чародею' )|E] [Concept( 'angmar', 'Ангмара' )|E], снабжая его войска воинами и припасами. В те дни эти земли стали известны как [eastangmar|E]. Теперь пришло время им признать другого повелителя."
  decision_subjugate_mount_gundabad_confirm: "Они вновь будут служить Тьме."
  decision_subjugate_mount_gundabad_tooltip: "Подчинить гору Гундабад"
- #decision_subjugate_mount_gundabad_tooltip: "Subjugate Mount Gundabad"
  DOMINION_OF_THE_SORCERER_DONE: "[decision|E] «Владения колдуна» завершено"
 
  ###################################
@@ -1947,6 +2123,12 @@
  decision_kill_smaug_decision_effect_2: "Если вы #N потерпите неудачу#!, вы #N УМРЁТЕ!#!, а Эсгарот обратится в руины"
  decision_kill_smaug_decision_effect_3: "Если вы #P добьетесь успеха#!, то вернете себе Одинокую гору, а дракон умрёт!"
  decision_enter_erebor_chances: "Вы попытаетесь пробраться в [Concept('lonelymountain', 'Одинокую гору')|E].\n$BULLET_WITH_TAB$Ваши навыки [Concept('intrigue', 'интриг')|E][intrigue_i|E] и [Concept('prowess', 'доблести')|E][prowess_i|E] повлияют на ваши шансы на успех\n"
+
+ decision_usurp_dynast: "[ROOT.Char.GetDynasty.GetNameNoTooltip]: Узурпировать трон"
+ decision_usurp_dynast_tooltip: "Узурпировать трон"
+ decision_usurp_dynast_desc: "Лжеправитель слишком долго занимал трон нашего народа, и пришло время другому занять его место."
+ decision_usurp_dynast_confirm: "Отправить весть о моём правлении"
+ army_bigger: "У вас больше войск, чем у главы вашего дома"
 
  #####################################
  #### Artifact Crafting Decisions ####
@@ -2352,6 +2534,36 @@
  decision_request_orthanc_keys_confirm: "Послать весточку в Гондор."
  decision_request_orthanc_keys_tt: "Вы войдёте в башню Ортанк и получите доступ к её тайнам"
 
+ ####################
+ ### Bay of Ormal ###
+ ####################
+
+ decision_sakal_an_khar_title: "Провозгласить Сакал ан-Кхар"
+ decision_sakal_an_khar_tooltip: "Нуменор возродится благодаря нам!"
+ decision_sakal_an_khar_desc: "Ормальский залив - богатый и прибыльный регион, но во время нашего возвышения адунайцы владели лишь небольшой его частью. За пределами Анарикэ и разбросанных по нему городов наша власть была слаба. Но если мы сможем объединить их, то провозгласим могущественное королевство, которое напомнит о великолепии утраченного Анадунэ.\n\nДокажем своё превосходство, объединим весь залив под законным правлением адунайцев и провозгласим Сакал-ан-Хар!"
+ decision_sakal_an_khar_confirm: "Нуменор возродится благодаря нам!"
+ decision_sakal_an_khar_effect.tt: "Все вассалы, которые #V не#! принадлежат к вашему #EMP наследию#! и #EMP религии#! получат #N -100#! штрафа к мнению о вас."
+ decision_sakal_an_khar_trigger.tt_1: "Принадлежит к вашей культуре ([GetPlayer.GetCulture.GetName])"
+ decision_sakal_an_khar_trigger.tt_2: "Принадлежит к вашей конфессии ([GetPlayer.GetFaith.GetAdjective])"
+ decision_sakal_an_khar_prestige_trigger: "Ваш уровень [Concept('prestige', 'престижа')|E] - [GetPrestigeLevelName( '(int32)4' )]"
+ decision_sakal_an_khar_piety_trigger: "Ваш уровень [Concept('piety', 'благочестия')|E] - [GetPietyLevelName( '(int32)4' )]"
+
+ decision_restore_harshandatt_title: "Восстановить Харшандатт"
+ decision_restore_harshandatt_tooltip: "Восстановить былое величие Харшандатта"
+ decision_restore_harshandatt_desc: "Вот уже несколько столетий древнее великолепие #L [GetTitleByKey('e_harshandatt').GetNameNoTier]а#! хранится в памяти. Ни один нхазад не правил с давно минувших дней, а старые устои постепенно канули в небытие, впитавшись в окружающие народы и державы [GetTitleByKey('e_khy').GetNameNoTier] и [GetTitleByKey('e_sirayn').GetNameNoTier].\n\nНо если бы мы смогли вернуть себе старые земли, как южное королевство [GetTitleByKey('k_harshandatt').GetNameNoTier], так и северное [GetTitleByKey('k_mejhanir').GetNameNoTier], мы могли бы наконец короновать нового нхазада, [Select_CString(ROOT.Char.IsFemale, 'правительницу', 'правителя' )] истинно восстановленного #L [GetTitleByKey('e_harshandatt').GetNameNoTier]а#!!"
+ decision_restore_harshandatt_confirm: "Наконец-то мы восстанем заново!"
+
+ decision_chennacatti_animal_sacrifice_title: "Принести в жертву животных для умиротворения умерших"
+ decision_chennacatti_animal_sacrifice_tooltip: "Привести жрецов и животных!"
+ decision_chennacatti_animal_sacrifice_desc: "Хотя мы не употребляем в пищу плоть животных, каждый раз, когда умирает кто-то из нашего народа, в жертву приносят выращенный им скот, чтобы его духи могли сопровождать своих бывших хозяев даже в смерти. Этот ритуал практиковался на протяжении бесчисленных поколений, и он приобретает особую важность, когда уходит из жизни человек, занимающий высокое положение или пользующийся известностью. Возможно, настало время мне организовать эту церемонию."
+ decision_chennacatti_animal_sacrifice_confirm: "Привести жрецов и животных!"
+
+ decision_favor_overseers: "Стабилизировать Сирайн"
+ decision_favor_overseers_tooltip: "Усмирить Сирайн, назначив верных надзирателей"
+ decision_favor_overseers_desc: "По мере расширения Грозового воинства его подданных нужно держать в узде, при необходимости - мечом. Создав касту верных блюстителей и надзирателей позволит сохранить стабильность в Сирайне, пока воинство Южного дракона продолжает свой поход."
+ decision_favor_overseers_confirm: "К кому же мне обратиться?"
+ decision_favor_overseers_effect.tt: "Получить доступ к уникальным [Concept('men_at_arms', 'профессионалам')|E] и положительным модификаторам, объединившись с булганами, чёрными нуменорцами или орками."
+
  #####################################
  ### War of the Rohirrim Decisions ###
  #####################################
@@ -2453,3 +2665,10 @@
  decision_invite_saruman_to_isengard_tooltip: "Вы передадите управление башней Ортанк Саруману Белому."
  decision_invite_saruman_to_isengard_desc: "[GetBuilding('wonder_angrenost_01').GetName] стоит как страж в самом сердце #L [GetTitleByKey('c_isengard').GetNameNoTier]а#!, его черный камень возвышается над окружающим кольцом гор. Когда-то он был гордым бастионом #L [GetTitleByKey('e_gondor').GetNameNoTier]а#!, но его слава померкла, а предназначение было утрачено со временем. Теперь появилась новая возможность - та, которая может вернуть Изенгарду былое величие.\n\n[GetScriptedCharacterByHistoryID( 'lineofsaruman' ).GetFirstNameNicknamed], мудрейший из [istariconcept|E], выразил желание сделать [orthanc|E] средоточием своей власти. Его знания древних преданий и мастерство ремесла могут превратить древнюю твердыню в маяк силы и мудрости для [Concept('west', 'Запада')|E].\n\nПредоставив Саруману контроль над Изенгардом, вы добьетесь благосклонности одного из [Concept('thewise', 'Мудрых')|E] и скрепите узы с фигурой, обладающей огромным влиянием."
  decision_invite_saruman_to_isengard_confirm: "Пусть те, кто сомневался в нас, подавятся своей гордыней."
+
+
+
+ decision_pakirh_evangelize_the_faith: "Обратить местных"
+ decision_pakirh_evangelize_the_faith_tooltip: "Принести свет Юнаста"
+ decision_pakirh_evangelize_the_faith_desc: "DESC"
+ decision_pakirh_evangelize_the_faith_confirm: "Все преклонятся перед небесным светом!"
