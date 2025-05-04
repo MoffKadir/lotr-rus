@@ -128,3 +128,84 @@
  dwarven.9810.t: "Мои усилия не увенчались успехом"
  dwarven.9810.desc: "[king.GetFirstName] всё ещё правит нашим народом как [king.Custom('GetQueenKing')], я [Select_CString(ROOT.Char.IsFemale, 'была побеждена', 'был побеждён' )].\n\n[Concept('mahalcharacter', 'Махал')|E] по-прежнему на [king.GetHerHis] стороне, это моя собственная глупость довела меня до этого, я [Select_CString(ROOT.Char.IsFemale, 'погубила', 'погубил' )] наш народ ради своих эгоистичных желаний."
  dwarven.9810.a: "Желать чужого трона - глупость."
+
+ dwarven.9901.t: "Почтение предков: В архивы"
+ dwarven.9901.desc: "[realm_priest.GetCouncilTitle] [realm_priest.GetFirstName] ведёт меня в нижние залы, где воздух сух и неподвижен. Полки с бухгалтерскими книгами и потрепанными свитками занимают всю комнату, на каждой из них хранятся обрывки давно забытых воспоминаний.\n\nНе говоря ни слова, [realm_priest.GetSheHe] начинает изучать печати и пометки, двигаясь с лёгкостью [Select_CString(realm_priest.IsFemale, 'той', 'того' )], кто точно знает, где искать. Вскоре [realm_priest.GetSheHe] находит то, что [realm_priest.GetHerHim] нужно, и протягивает мне свиток.\n\nЯ беру его и сажусь. Рукопись состарилась, края стали хрупкими, но слова остались чёткими."
+ dwarven.9901.a: "Прочитать его, не отвлекаясь."
+
+ dwarven.9911.t: "Почтение предков: Нарви из Мории"
+ dwarven.9911.desc: "Свиток, который я разворачиваю, повествует о [GetScriptedCharacterByHistoryID( 'lineofnarvi' ).GetFirstName], мастере-ремесленнике, возвысившемся во времена славы [Concept('khazaddum', 'Кхазад-дума')|E]. Заключив неожиданный союз с #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('linefinwe18').GetID] #L Келебримбором#!#!#!, [Concept('elven', 'эльфийским')|E] владыкой [Concept('eregion', 'доходом')|E]Эрегиона, Нарви создал могучие [Concept('doorsofdurin', 'Врата Дурина')|E], величественный вход, охранявший западные врата #L [GetTitleByKey('k_khazad_dum').GetNameNoTier]а#!.\n\nЕго узы с эльфийским мастером остаются легендарными, являясь символом сотрудничества между двумя гордыми народами. Вместе они создали шедевр не только мастерства, но и дружбы, которая выдержала время.\n\nИ всё же сейчас, читая о его достижениях, я задаюсь вопросом: что осталось от его наследия в эту эпоху?"
+ dwarven.9911.a: "Мы восстановим дружбу, которая когда-то связывала Нарви и эльфов."
+ dwarven.9911.b: "Что за чушь! Я скорее умру, чем мы вступим в союз с эльфами!"
+
+ dwarven.9912.t: "Почтение предков: Азагал из Белегоста"
+ dwarven.9912.desc: "Я разворачиваю потрепанный временем свиток, в котором рассказывается о доблестных деяниях #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdwalin5').GetID] #L Азагала#!#!#!, владыки [Concept('belegost', 'Белегоста')|E]. Признанный среди [Concept('broadbeams', 'Широкозадов')|E], его правление в [Concept('firstage', 'Первую эпоху')|E] оставило неизгладимый след в истории [Concept('dwarven', 'гномов')|E].\n\nВ нём рассказывается, как он заключил союз с #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('linefinwe10').GetID] #L Маэдросом#!#!#! из [Concept('houseoffeanor', 'дома Феанора')|E], после того как [Concept('elven', 'эльфийский')|E] принц спас его из [Concept('orc', 'орочьей')|E] засады. В благодарность Азагал подарил ему Драконий шлем Дор-ломина, шедевр, созданный #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineoftelchar1').GetID] #L Тельхаром#!#!#! из [Concept('nogrod', 'Ногрода')|E].\n\nСвиток заканчивается Нирнаэт Арноэдиад, также известной как Битва Бесчисленных слёз, в которой Азагал и его воины сразились с ужасным [Concept('dragon', 'драконом')|E] Глаурунгом. Смертельно раненный, Азагал нанёс последний удар, который заставил чудовище отступить."
+ dwarven.9912.a: "Доблесть Азагала вдохновляет нас на подвиги."
+ dwarven.9912.b: "Подобно тому, как он создавал узы с эльфами, так и нам стоит."
+ dwarven.9912.c: "Азагал возвысился в своё время. В своё время я превзойду его."
+
+ dwarven.9913.t: "Почтение предков: Тельхар из Ногрода"
+ dwarven.9913.desc: "Свиток повествует о #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineoftelchar1').GetID] #L Тельхаре#!#!#!, мастере-кузнеце из [Concept('nogrod', 'Ногрода')|E] и ученике #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofgamilzirak').GetID] #L Гамиля#!#!#! Зирака.   Среди его величайших творений - Ангрист, кинжал, разрезающий металл, словно дерево, который [GetScriptedCharacterByHistoryID( 'lineofbeor32' ).GetFirstName] использовал, чтобы срезать [Concept('silmaril', 'сильмариль')|E] с короны [Concept('morgothcharacter', 'Моргота')|E]; [Concept('narsil', 'Нарсиль')|E], легендарный меч, с которым [GetScriptedCharacterByHistoryID( 'lineofelendil' ).GetFirstName] выступил против [Concept('sauroncharacter', 'Саурона')|E] и Драконий шлем Дор-ломина, созданный для #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdwalin5').GetID] #L Азагала#!#!#!, владыки [Concept('belegost', 'Белегоста')|E].\n\nАзагал подарил шлем #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('linefinwe10').GetID] #L Маэдросу#!#!#!, когда принц [Concept('houseoffeanor', 'дома Феанора')|E] спас его из засады [Concept('orc', 'орков')|E], но шлем оказался слишком тяжёлым и большим для [Concept('elf', 'эльфа')|E]. Даже [Concept('men', 'люди')|E] не могли носить его, и только у #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofhador1').GetID] #L Хадора#!#!#! и некоторых его потомков хватило сил носить его.\n\nЕго работы несли в себе силу, историю и легенду в равной степени. Как мне почтить такое наследие ремесла и могущества?"
+ dwarven.9913.a: "Тельхар был прежде всего легендарным ремесленником."
+ dwarven.9913.b: "Наследие Тельхара - это прежде всего великие победы."
+ dwarven.9913.c: "Тельхар понимал, что знание предшествует мастерству."
+
+ dwarven.9921.t: "Почтение предков: Дурин I Бессмертный"
+ dwarven.9921.desc: "The record speaks of [durindeathless|E]. First to awaken beneath the mountains, eldest of the Seven [dwarffathers|E], and first of the [longbeards|E]. Alone he journeyed through lands where none had walked, naming the hills and dells in a world still young, as the [songofdurin|E] recalls.\n\nIn time, [GetScriptedCharacterByHistoryID( 'lineofdurin1' ).GetFirstName] came to the Mirrormere, where strange stars crowned the water's surface — a sign, he believed, of his purpose. There he raised Durin's Stone and founded [khazaddum|E] above the lake, hewing halls from the mountain that would become the pride of all Dwarfkind.\n\nHe eventually founded the House of Durin, a people whose line would echo across the Ages.\n\nHe lived exceptionally long for a Dwarf and passed some time before the [firstage|E]'s end. His tomb lies deep within [GetTitleByKey('k_khazad_dum').GetNameNoTier], but his memory lies deeper still — in every stone shaped by Dwarven hands."
+ dwarven.9921.a: "Пусть мои деяния чтят его память, как его память породила мою."
+ dwarven.9921.b: "Правление Дурина было великим, но моё станет легендарным."
+
+ #dwarven.9922.t: "Venerate the Ancestors: Durin II"
+ #dwarven.9922.desc: ""
+ #dwarven.9922.a: ""
+ #dwarven.9922.b: ""
+
+ #dwarven.9923.t: "Venerate the Ancestors: Durin III"
+ #dwarven.9923.desc: ""
+ #dwarven.9923.a: ""
+ #dwarven.9923.b: ""
+
+ #dwarven.9924.t: "Venerate the Ancestors: Durin IV"
+ #dwarven.9924.desc: ""
+ #dwarven.9924.a: ""
+ #dwarven.9924.b: ""
+
+ #dwarven.9925.t: "Venerate the Ancestors: Durin V"
+ #dwarven.9925.desc: ""
+ #dwarven.9925.a: ""
+ #dwarven.9925.b: ""
+
+ #dwarven.9926.t: "Venerate the Ancestors: Durin VI"
+ #dwarven.9926.desc: ""
+ #dwarven.9926.a: ""
+ #dwarven.9926.b: ""
+
+ dwarven.9931.t: "Почтение предков: Ори I Покрытый шрамами"
+ dwarven.9931.desc: "As I unfurl the ancient scroll, the script reveals the tale of [uriscarred|E], [dwarffather|E] of the [firebeards|E] who awoke in the [bluemountains|E] along with [dwalinwise|E] of the [broadbeams|E]. [GetScriptedCharacterByHistoryID( 'lineofuri0' ).GetFirstName] was the founder of proud [nogrod|E] (Kh. Tumunzahar) and the House of Úri.\n\nI read of the day he stood beneath a great pillar as it came crashing down, holding it aloft with unyielding might to shield a young dwarfling. This act not only earned him his moniker and scar, but also the undying reverence of his kin.\n\nThe words speak not only of his strength and fiery spirit, but also of a fierce devotion to his people and halls. Among the [elves|E], he was known as 'Barin', 'Remembrance of Home', a name echoing his deep-rooted love of Nogrod, which he only left out of necessity."
+ dwarven.9931.a: "We must protect our kin as he did."
+ dwarven.9931.b: "Stories and scars won't keep us fed."
+
+ dwarven.9941.t: "Почтение предков: Двалин I Мудрый"
+ dwarven.9941.desc: "The scroll's script reveals the tale of [dwalinwise|E], [dwarffather|E] of the [broadbeams|E] who awoke in the [bluemountains|E] along with [uriscarred|E] of the [firebeards|E]. [GetScriptedCharacterByHistoryID( 'lineofdwalin0' ).GetFirstName] was the founder of ancient [belegost|E] (Kh. Gabilgathol) and the House of Dwálin.\n\nThe scroll speaks of his calm counsel and solemn bearing; how he led his folk not only in toil, but in song, as they shaped the caverns of Menegroth for [GetScriptedCharacterByHistoryID( 'lineofelwe3' ).GetFirstName] of [GetTitleByKey('k_doriath').GetNameNoTier], beneath the trees of [beleriand|E]. For this, the [elves|E] named him 'Linnar', 'the Singer'.\n\nThrough his leadership, the [dwarves|E] of Belegost earned the trust of the Elves, forging kinship through craft."
+ dwarven.9941.a: "Let us build as he built — with wisdom and song."
+ dwarven.9941.b: "Stone and song don't shield us from steel."
+
+ #dwarven.9951.t: "Venerate the Ancestors: Sindri the Rich"
+ #dwarven.9951.desc: ""
+ #dwarven.9951.a: ""
+ #dwarven.9951.b: ""
+
+ #dwarven.9961.t: "Venerate the Ancestors: Thúlin the Swift"
+ #dwarven.9961.desc: ""
+ #dwarven.9961.a: ""
+ #dwarven.9961.b: ""
+
+ dwarven.9971.t: "Почтение предков: Трар I Гордый"
+ dwarven.9971.desc: "The scroll bears the tale of [thrarproud|E], [dwarffather|E] of the [blacklocks|E], who first awoke in the northern [orocarni|E] alongside [bavorcold|E] of the [stonefoots|E], in the vaulted deeps of Baruzkhizdin, the 'Great North Hall'.\n\nWith a loud, booming voice and pride to match, [GetScriptedCharacterByHistoryID('lineofthrar1').GetFirstName] founded the mansion of Nargubraz and the House of Thrár.\n\nHe sought not only wealth but a greatness beyond gold. Under his bold hand, the [blacklocks|E] flourished until great calamities after his passing forced them to scatter to distant corners of the world, founding halls wherever the mountains could shelter them.\n\nThe Avari named him 'Druin', 'the Fierce', while the Easterlings called him 'Sadal', 'the Rude'. To history, he remains Thrár — fierce and ever resolute."
+ dwarven.9971.a: "Let our deeds resound louder than his voice."
+ dwarven.9971.b: "Even pride must kneel before wisdom."
+
+ #dwarven.9981.t: "Venerate the Ancestors: Bavór the Cold"
+ #dwarven.9981.desc: ""
+ #dwarven.9981.a: ""
+ #dwarven.9981.b: ""
