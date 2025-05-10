@@ -1,5 +1,49 @@
 ﻿l_russian:
 
+ ### VANILLA TRAIT ADDITIONS ###
+ trait_dwarf_khazad_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )] даже по меркам [Concept( 'dwarven', 'гномов' )|E]!"
+ trait_dwarf_hobbit_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )] даже по меркам [Concept( 'hobbit', 'хоббитов' )|E]!"
+ trait_dwarf_goblin_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )] даже по меркам [Concept( 'goblin', 'гоблинов' )|E]!"
+ trait_dwarf_orc_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )], ростом напоминает скорее [Concept('goblin', 'гоблина')|E], чем [Concept('orc', 'орка')|E]."
+ trait_dwarf_druedain_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )] даже по меркам друэдайн!"
+
+ trait_giant_khazad_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] возвышается над остальными [Concept( 'dwarven', 'гномами' )|E] и даже может сойти за [Concept( 'men', 'человека' )|E]."
+ trait_giant_hobbit_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] возвышается над остальными [Concept( 'hobbit', 'хоббитами' )|E] и даже может оседлать лошадь!"
+ trait_giant_goblin_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] возвышается над остальными [Concept( 'goblin', 'гоблинами' )|E] и даже может сойти за паршивого [Concept( 'orc', 'орка' )|E]."
+ trait_giant_druedain_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] выше остальных друэдайн, но всё равно ниже большинства [Concept( 'men', 'людей' )|E]."
+
+ trait_intellect_bad_1_elf: "Незаинтересованность"
+ trait_intellect_bad_1_elf_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] мало интересуется делами [Concept('middleearth', 'Средиземья')|E]."
+
+ trait_intellect_bad_2_elf: "Безразличность"
+ trait_intellect_bad_2_elf_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] редко заботится о мирских делах."
+
+ trait_intellect_bad_3_elf: "Апатичность"
+ trait_intellect_bad_3_elf_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] совершенно не заботится о будущем [Concept('middleearth', 'Средиземья')|E]."
+
+ trait_dull_elf: "Невнимательность"
+ trait_dull_elf_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] часто кажется [Select_CString(ROOT.GetCharacter.IsFemale, 'отстранённой', 'отстранённым' )], редко сосредотачиваясь на поставленной задаче."
+
+ trait_holy_warrior_darkness:0 "Воин Тьмы"
+ trait_holy_warrior_mahal:0 "Воин Махала"
+ trait_holy_warrior_free_peoples:0 "Воин Свободных народов"
+ trait_holy_warrior_darkness_desc:0 "Пылая тёмным рвением, [ROOT.GetCharacter.GetFirstNameNoTooltip] не успокоится, пока Тьма не падёт на все народы [Concept('middleearth', 'Средиземья')|E]."
+ trait_holy_warrior_mahal_desc:0 "Пылая непоколебимой решимостью, [ROOT.GetCharacter.GetFirstNameNoTooltip] будет сражаться за Детей [Concept('mahalcharacter', 'Махала')|E]."
+ trait_holy_warrior_free_peoples_desc:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Преисполненная', 'Преисполненный' )] надежды и решимости, [ROOT.GetCharacter.GetFirstNameNoTooltip] будет защищать Свободные народы [Concept('middleearth', 'Средиземья')|E]."
+
+ trait_pilgrim_gurzil:0 "Путеходец"
+ trait_pilgrim_2_gurzil:0 "Опытный путеходец"
+ trait_pilgrim_3_gurzil:0 "Отличный путеходец"
+ trait_pilgrim_gurzil_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'побывала', 'побывал' )] в далеких землях."
+ trait_pilgrim_2_gurzil_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'побывала', 'побывал' )] во множестве мест и [Select_CString(ROOT.GetCharacter.IsFemale, 'ее', 'его' )] опыт ценится среди соратников."
+ trait_pilgrim_3_gurzil_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'обошла', 'обошел' )] весь мир. Другие путеходцы часто обращаются к [Select_CString(ROOT.GetCharacter.IsFemale, 'ней', 'нему' )] за наставлением как в духовных, так и в логистических вопросах."
+
+ trait_adventurer_thorins_company:0 "Предводитель Отряда Торина"
+ trait_adventurer_thorins_company_desc:0 "[ROOT.GetCharacter.GetFirstNameNicknamedNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была предводительницей', 'был предводителем' )] #Bold Отряда Торина#!. [ROOT.GetCharacter.GetSheHe|U] [Select_CString(ROOT.GetCharacter.IsFemale, 'повела', 'повёл' )] тринадцать [Concept('dwarves', 'гномов')|E] и одного [Concept('hobbit', 'хоббита')|E] в поход, чтобы отбить [Concept('lonelymountain', 'Одинокую гору')|E] у [Concept('dragon', 'дракона')|E] Смауга, кульминацией которого стала [Concept('battle_of_the_five_armies', 'Битва Пяти воинств')|E] и восстановление [Concept('kingdomunderthemountain', 'королевства-под-Горой')|E].\n\nЧленами отряда были:\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin83' ).GetFirstNameNicknamed]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin95' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofdurin96' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin98' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofdurin99' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin86' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofdurin87' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin104' ).GetFirstName], [GetScriptedCharacterByHistoryID( 'lineofdurin105' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofdurin106' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofbifur' ).GetFirstName], [GetScriptedCharacterByHistoryID( 'lineofbomfur2' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofbomfur1' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofbaggins12' ).GetFirstName]"
+
+ trait_adventurer_follower_thorins_company:0 "Член Отряда Торин"
+ trait_adventurer_follower_thorins_company_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была', 'был' )] членом #Bold Отряда Торина#!. [ROOT.GetCharacter.GetSheHe|U] [Select_CString(ROOT.GetCharacter.IsFemale, 'сопровождала', 'сопровождал' )] #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина Дубощита#!#!#! в походе, чтобы отбить [Concept('lonelymountain', 'Одинокую гору')|E] у [Concept('dragon', 'дракона')|E] Смауга, кульминацией которого стала [Concept('battle_of_the_five_armies', 'Битва Пяти воинств')|E] и восстановление [Concept('kingdomunderthemountain', 'королевства-под-Горой')|E].\n\nЧленами отряда были:\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin83' ).GetFirstNameNicknamed]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin95' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofdurin96' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin98' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofdurin99' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin86' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofdurin87' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofdurin104' ).GetFirstName], [GetScriptedCharacterByHistoryID( 'lineofdurin105' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofdurin106' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofbifur' ).GetFirstName], [GetScriptedCharacterByHistoryID( 'lineofbomfur2' ).GetFirstName] и [GetScriptedCharacterByHistoryID( 'lineofbomfur1' ).GetFirstName]\n$BULLET_WITH_TAB$[GetScriptedCharacterByHistoryID( 'lineofbaggins12' ).GetFirstName]"
+
  ### BLOOD OF NÚMENOR ###
  trait_blood_of_numenor:0 "Кровь Нуменора"
  trait_blood_of_numenor_desc:0 "#Z Использует механики наследования свойства [Concept( 'bloodofnumenor', 'нуменорской крови' )|E].#!\n\nВ жилах этого персонажа течёт [Concept( 'bloodofnumenor', 'нуменорская кровь' )|E], в большей или меньшей степени."
@@ -210,32 +254,6 @@
  trait_excavator:0 "Землекоп"
  trait_excavator_desc:0 "Этот персонаж не боится запачкать руки и использует все грязные трюки, чтобы максимизировать свою прибыль."
  trait_excavator_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] не боится запачкать руки и использует все грязные трюки, чтобы максимизировать свою прибыль."
-
- trait_pilgrim_gurzil:0 "Путеходец"
- trait_pilgrim_2_gurzil:0 "Опытный путеходец"
- trait_pilgrim_3_gurzil:0 "Отличный путеходец"
- trait_pilgrim_gurzil_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'побывала', 'побывал' )] в далеких землях."
- trait_pilgrim_2_gurzil_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'побывала', 'побывал' )] во множестве мест и [Select_CString(ROOT.GetCharacter.IsFemale, 'ее', 'его' )] опыт ценится среди соратников."
- trait_pilgrim_3_gurzil_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'обошла', 'обошел' )] весь мир. Другие путеходцы часто обращаются к [Select_CString(ROOT.GetCharacter.IsFemale, 'ней', 'нему' )] за наставлением как в духовных, так и в логистических вопросах."
-
- ### RACE-SPECIFIC TRAIT LOC ###
- trait_dwarf_khazad_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )] даже по меркам [Concept( 'dwarven', 'гномов' )|E]!"
- trait_dwarf_hobbit_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )] даже по меркам [Concept( 'hobbit', 'хоббитов' )|E]!"
- trait_dwarf_goblin_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )] даже по меркам [Concept( 'goblin', 'гоблинов' )|E]!"
- trait_dwarf_orc_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )], ростом напоминает скорее [Concept('goblin', 'гоблина')|E], чем [Concept('orc', 'орка')|E]."
- trait_dwarf_druedain_desc:0 "$trait_dwarf_character_desc$ \n[ROOT.GetCharacter.GetSheHe|U] невероятно [Select_CString(ROOT.GetCharacter.IsFemale, 'мала', 'мал' )] даже по меркам друэдайн!"
-
- trait_giant_khazad_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] возвышается над остальными [Concept( 'dwarven', 'гномами' )|E] и даже может сойти за [Concept( 'men', 'человека' )|E]."
- trait_giant_hobbit_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] возвышается над остальными [Concept( 'hobbit', 'хоббитами' )|E] и даже может оседлать лошадь!"
- trait_giant_goblin_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] возвышается над остальными [Concept( 'goblin', 'гоблинами' )|E] и даже может сойти за паршивого [Concept( 'orc', 'орка' )|E]."
- trait_giant_druedain_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] выше остальных друэдайн, но всё равно ниже большинства [Concept( 'men', 'людей' )|E]."
-
- trait_holy_warrior_darkness:0 "Воин Тьмы"
- trait_holy_warrior_mahal:0 "Воин Махала"
- trait_holy_warrior_free_peoples:0 "Воин Свободных народов"
- trait_holy_warrior_darkness_desc:0 "Пылая тёмным рвением, [ROOT.GetCharacter.GetFirstNameNoTooltip] не успокоится, пока Тьма не падёт на все народы [Concept('middleearth', 'Средиземья')|E]."
- trait_holy_warrior_mahal_desc:0 "Пылая [Concept('dwarven', 'гномьим')|E] рвением, [ROOT.GetCharacter.GetFirstNameNoTooltip] будет сражаться за Детей [Concept('mahalcharacter', 'Махала')|E]."
- trait_holy_warrior_free_peoples_desc:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Преисполненная', 'Преисполненный' )] надежды и решимости, [ROOT.GetCharacter.GetFirstNameNoTooltip] будет защищать Свободные народы [Concept('middleearth', 'Средиземья')|E]."
 
  ### SAURON TRAITS ###
  trait_sauron_ringless:0 "Потеря Единого Кольца"
