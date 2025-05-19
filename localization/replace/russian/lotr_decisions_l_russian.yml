@@ -360,7 +360,7 @@
  decision_rebuild_royal_road_confirm: "Пусть дорога будет восстановлена!"
  decision_rebuild_royal_road_tooltip_condition: "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('special_royal_road').GetName]"
  rebuild_royal_road_tt1: "Вы начнёте строительство Королевского тракта. Это займёт до двух лет"
- rebuild_royal_road_tt2: "После завершения [capital.GetNameNoTier], [GetTitleByKey('c_tharbad').GetNameNoTier], [GetTitleByKey('c_fornost').GetNameNoTier], [GetTitleByKey('c_riverwatch').GetNameNoTier], [GetTitleByKey('c_bree').GetNameNoTier] и [GetTitleByKey('c_galtrev').GetNameNoTier] получат [modifier|El] «[GetModifier('royal_road_rebuilt_county_modifier').GetNameWithTooltip]»"
+ rebuild_royal_road_tt2: "После завершения [capital.GetNameNoTier] и все графства вдоль тракта получат [modifier|El] «[GetModifier('royal_road_rebuilt_county_modifier').GetNameWithTooltip]»"
 
 
  decision_oath_of_eorl_gondor: "Воззвать к клятве Эорла"
@@ -392,6 +392,45 @@
  decision_reintegrate_shire_confirm: "Север будет единым."
  decision_reintegrate_shire_tooltip: "Предложить Ширу вернуться под власть королевства Арнор"
  decision_reintegrate_shire_tt: "Хоббиты вновь поклянутся вам в верности"
+
+ decision_establish_thalion_city: "Отреставрировать дворец Талиона"
+ decision_establish_thalion_city_desc: "Когда-то Талион был столицей правителей Кардолана, а затем и его ранних королей, его расположение на широких равнинах делало его доступным - как для друзей, так и для врагов. Исторически сложилось так, что город был открыт для нападений и много раз подвергался разграблению. Но сейчас в Талионе мирное время, границы надежно защищены - и пока дворец отстраивается, возможно, настало время сделать его таким, каким он всегда мог быть, - по-настоящему великим городом?"
+ decision_establish_thalion_city_tooltip: "Основать город вокруг дворца Талиона"
+ decision_establish_thalion_city_confirm: "Привести зодчих!"
+
+ decision_establish_nelvorin_university: "Основать университет Нэлворина"
+ decision_establish_nelvorin_university_desc: "Нэлворин давно стал центром обучения в [Concept('eriador', 'Эриадоре')|E]; однако ему никогда не оказывали должной поддержки и внимания, чтобы он стал настоящим центром обучения для всего Средиземья. Теперь у нас есть возможность изменить это положение. Пришло время основать на севере настоящий университет, который будет служить маяком для обучения на всём западе."
+ decision_establish_nelvorin_university_tooltip: "Основать университет Нэлворина"
+ decision_establish_nelvorin_university_confirm: "Привести зодчих!"
+
+ decision_expand_barad_girithlin: "Построить город-крепость Гиритлин"
+ decision_expand_barad_girithlin_desc: "Барад Гиритлин долгое время был перевалочной базой вдоль Барандуина и служил главной пограничной крепостью между [Concept('cardolan', 'Кардоланом')|E] и [Concept('arthedain', 'Артэдайном')|E]. Однако по мере того, как регион становится всё более важным для нашей экономики и стал больше, мы должны позаботиться об обороне региона и увеличить наши вложения в него."
+ decision_expand_barad_girithlin_tooltip: "Построить город-крепость Гиритлин"
+ decision_expand_barad_girithlin_confirm: "Привести зодчих!"
+
+ decision_silver_caras_celairnen: "Построить Серебряный город Селернен"
+ decision_silver_caras_celairnen_desc: "Расположенный в месте слияния Уиалдуина и Луна город Карас Селернен всегда был одним из богатейших торговых центров севера. С улучшением отношений с [Concept('elves', 'эльфами')|E], город стал по-настоящему роскошным, и с небольшими вложениями мы можем сделать его примером того, чего могут достичь люди и эльфы, когда работают вместе."
+ decision_silver_caras_celairnen_tooltip: "Построить Серебряный город Селернен"
+ decision_silver_caras_celairnen_confirm: "Привести зодчих!"
+
+ decision_establish_amon_raen_city: "Восстановить башню Амон Раэн"
+ decision_establish_amon_raen_city_desc: "[Concept('rhudaur', 'Рудаур')|E] всегда был самым малым и незначительным из королевств-преемников [Concept('arnor', 'Арнора')|E], не имея ни одного настоящего города в своих границах, но теперь это не так. С охраной границ и ростом населения Рудаура мы наконец-то сможем создать по-настоящему великий город для нашего народа."
+ decision_establish_amon_raen_city_tooltip: "Основать город на Камет Брине"
+ decision_establish_amon_raen_city_confirm: "Привести зодчих!"
+
+ decision_rhudaur_urbanization: "Вложиться в инфраструктуру Рудаура"
+ decision_rhudaur_urbanization_desc: "Исторически Рудаур был захолустьем Арнора. Здесь не было настоящих городов, даже столица Камет Брин была весьма скромных размеров, скорее крепость, чем настоящий город, способный соперничать с Артэдайном или Кардоланом. За исключением разбросанных по территории поместий и замков дунэдайн, земля в основном по-прежнему была заселена племенами горцев с несуществующей инфраструктурой. Однако при достаточных вложениях Рудаур, возможно, начнёт избавляться от этой репутации. Это потребует значительных вложений, но, по крайней мере, положит начало процессу приведения региона в соответствие с остальным Арнором."
+ decision_rhudaur_urbanization_tooltip: "Вложиться в инфраструктура Рудаура"
+ decision_rhudaur_urbanization_confirm: "Созвать каменщиков!"
+ rhudaur_urbanization_01: "Все графства [Concept('rhudaur', 'Рудаура')|E] получат модификатор [GetModifier('infrastructure_campaign_modifier').GetNameWithTooltip]."
+ rhudaur_urbanization_02: "В [Concept('rhudaur', 'Рудауре')|E] будут построены 3 города"
+ rhudaur_urbanization_03: "Все графства #L [GetTitleByKey('k_rhudaur').GetNameNoTier]а#! имеют развитие выше 5 ед."
+ rhudaur_urbanization_04: "Три графства #L [GetTitleByKey('k_rhudaur').GetNameNoTier]а#! имеют развитие выше 10 ед."
+
+ decision_raze_carn_dum: "Разрушить грозную крепость Карн Дум"
+ decision_raze_carn_dum_desc: "[Concept('angmar', 'Ангмар')|E] был уничтожен, но память о нём жива. Король-чародей сплотил народы далёкого севера под своими знамёнами и едва не погубил всех нас. Нельзя допустить повторения этих событий. Ангмар нужно не просто уничтожить, его нужно истребить. Мы последуем примеру [Concept('isildur', 'Исильдура')|E], разрушим башню до основания и установим дозор на её руинах."
+ decision_raze_carn_dum_tooltip: "Разрушить Карн Дум и построить башню для наблюдения за регионом"
+ decision_raze_carn_dum_confirm: "Очистим эти земли!"
 
  ### Dúnedain Rangers Decisions ###
 
