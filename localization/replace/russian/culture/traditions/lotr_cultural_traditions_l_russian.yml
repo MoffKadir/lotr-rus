@@ -88,11 +88,29 @@
  rhovanion_royal_guard: "Королевская гвардия Рованиона"
  rhovanion_royal_guard_flavor: "Королевская гвардия - оплот королей [Concept('rhovanion', 'Рованиона')|E] - носит доспехи и оружие, выкованные в [Concept('dwarven', 'гномьих')|E] кузнях, и является самой элитной пешей ратью в королевстве."
 
+ tradition_the_people_of_the_plains_old_name: "Жители равнин"
+ tradition_the_people_of_the_plains_old_desc: "Единая с дикими и продуваемыми ветрами равнинами [Concept('rhovanion', 'Рованиона')|E], эта культура насчитывает столько же, сколько и травинок, гордых и свободных людей. Рождённые ездить верхом, они едины со своими благородными конями, далеко разбросанными по открытым равнинам."
+ culture_in_rhovanion_desc: "Не менее #V 60%#! [Concept('counties', 'графств')|E] этой [Concept('culture', 'культуры')|E] должны находиться в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_plains_rhovanion').GetName]"
+
  tradition_defended_enclosures_name: "Оборонительные сооружения"
  tradition_defended_enclosures_desc: "Люди Долины, также известные как Люди [Concept('anduin', 'Андуина')|E], живут в разрозненных, но хорошо охраняемых поселениях вдоль реки Андуин, вблизи лесов или у подножья холмов в [Concept('mistymountains', 'Мглистых горах')|E]."
+ culture_in_anduin_desc: "Не менее #V 60%#! [Concept('counties', 'графств')|E] этой [Concept('culture', 'культуры')|E] должны находиться в [Concept('region', 'регионе')|E] [GetGeographicalRegion('middleearth_west_rhovanion_anduin').GetName]"
+
+ tradition_dale_bow_culture_name: "Народ лука"
+ tradition_dale_bow_culture_desc: "Ещё задолго до Барда с его Чёрной стрелой [Concept('northmen', 'северяне')|E] верхнего Кельдуина прежде всего славились своим лучным мастерством. В первую очередь они охотились ради пропитания, а во вторую – вставали на защиту своих земель. В землях Дэйла лучное мастерство считается благородным умением."
+ culture_in_dalelands_desc: "Хотя бы #V 60%#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] должны располагаться в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('middleearth_west_rhovanion_dalelands').GetName]"
+
+ tradition_warriors_of_fame_and_field_name: "Воины славы и полей"
+ tradition_warriors_of_fame_and_field_desc: "Воины дорвинрим отражают разнообразие своего общества, объединяя всё лучшее, что есть в их богатстве, знати и простолюдинах, для борьбы с врагами."
+ culture_in_dorwinion_desc: "Не менее #V 60%#! [Concept('counties', 'графств')|E] этой [Concept('culture', 'культуры')|E] должны находиться в [Concept('region', 'регионе')|E] [GetGeographicalRegion('middleearth_rhun_dorwinion').GetName]"
+
+ culture_parameter_unlock_maa_vintner_court_knights: "Доступны [men_at_arms|El] - [GetMaA('vintner_court_knights').GetName]"
+ culture_parameter_unlock_maa_thorn_guard: "Доступны [men_at_arms|El] - [GetMaA('thorn_guard').GetName]"
+ culture_parameter_unlock_maa_vineyard_bowmen: "Доступны [men_at_arms|El] - [GetMaA('vineyard_bowmen').GetName]"
 
  tradition_hidden_refuges_name: "Скрытые убежища"
  tradition_hidden_refuges_desc: "Лесной народ возводит города на огромных платформах, что строят на деревьях. Это архитектурное новшество предоставляет им значительную защиту от опасностей [Concept('mirkwood', 'Лихолесья')|E]."
+ culture_in_forest_more_desc: "Не менее #V 40%#! [Concept('counties', 'графств')|E] этой [Concept('culture', 'культуры')|E] должны находиться в лесах, чащах, лесах мэллорнов или тайге"
 
  tradition_prized_perfection_name: "Неоспоримое превосходство"
  tradition_prized_perfection_desc: "Среди представителей этой культуры превыше всего ценится физическое превосходство как символ чистоты культуры, крови и воспитания. Увечья и прочие физические несовершенства не позволяют несчастным наследовать высоких титулов, ведь они предназначены исключительно для эталонных представителей расы."
@@ -108,6 +126,20 @@
 
  tradition_dune_sea_nomads_name: "Кочевники Моря Дюн"
  tradition_dune_sea_nomads_desc: "Скитания по обдуваемым всеми ветрами пескам Моря Дюн — задача не из лёгких. Представители этой культуры, однако, как никто другой адаптировались к испытанию палящим солнцем и научились даже извлекать выгоду из этих нечеловеческих условий существования."
+
+ tradition_trans_haradric_traders_name: "Золото, соль и специи" #Originally Gold Dust Traders
+ tradition_trans_haradric_traders_desc: "Представители этой культуры принимают активное участие в [Concept('trans_haradric_trade', 'торговой')|E] сети внутреннего [Concept('harad', 'Харада')|E]. Независимо от их роли в торговле, они являются основными участниками торговых, политических и культурных сетей, окружающих [GetGeographicalRegion('middleearth_harad_dunesea').GetName], и известны торговлей золотом, специями, солью, рабами и другими товарами."
+ culture_parameter_unlock_trans_haradric_travel_option: "$trans_haradric_travel_perk_effect$"
+ culture_parameter_unlock_trans_haradric_merchant_decision: "$innovation_unlock_trans_haradric_networking_tt$"
+ culture_parameter_unlock_trans_haradric_merchant_better_chances: "$lotr_haradrim_legacy_1_effect_1$"
+
+ tradition_masters_of_the_nuar_name: "Владыки Нуара"
+ tradition_masters_of_the_nuar_desc: "Цивилизация этой культуры всегда была тесно связана с рекой Нуар и её притоками, по которым они плавают и ловят рыбу. В результате они обладают естественным пониманием её поведения и «настроения». Эта связь настолько глубока, что мореплаватели обычно обращаются к Нуару напрямую, как к близкому другу, делясь с ним своей обыденной жизнью и недавними событиями."
+ culture_in_harshandatt_trigger_desc: "Не менее #V 40%#! [Concept('counties', 'графств')|E] этой [Concept('culture', 'культуры')|E] должны находиться в регионе [GetGeographicalRegion('special_region_nuar_river_valley').GetName]"
+
+ tradition_mud_masons_name: "Глинобитная кладка"
+ tradition_mud_masons_desc: "[Concept('mud_masons', 'Глинобитщики')|E] этой культуры славятся своими сложными постройками из глины. Они объединены в гильдии со сложной иерархической структурой, которая обеспечивает соблюдение традиционных религиозных ритуалов, связанных с их трудом, и гарантирует, что их древние навыки глинобитщиков передаются из поколения в поколение надлежащим образом."
+ culture_parameter_unlock_mud_mason_decision: "Открывает [Concept('decision', 'решение')|E] #V Нанять сирайнских [Concept('mud_masons', 'глинобитщиков')|E]#!, снижающее стоимость и время строительства [Concept('buildings', 'зданий')|E] для представителей этой [Concept('culture', 'культуры')|E] или правителей [Concept('counties', 'графств')|E] этой [Concept('culture', 'культуры')|E]"
 
  culture_in_central_fiefs_desc: "Хотя бы #V 40%#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] должны располагаться в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('middleearth_west_gondor_central_fiefdoms').GetName]"
  tradition_belfalathrim_chivalry_name: "Рыцарство бельфалатрим"
@@ -196,16 +228,6 @@
  culture_parameter_cannot_hybridize: "[culture|E] не может [Concept( 'hybridize', 'гибридизироваться' )|E]"
  culture_parameter_cannot_diverge: "[culture|E] не может [Concept( 'diverge', 'отделяться' )|E]"
 
- tradition_dale_bow_culture_name: "Народ лука"
- tradition_dale_bow_culture_desc: "Ещё задолго до Барда с его Чёрной стрелой [Concept('northmen', 'северяне')|E] верхнего Кельдуина прежде всего славились своим лучным мастерством. В первую очередь они охотились ради пропитания, а во вторую – вставали на защиту своих земель. В землях Дэйла лучное мастерство считается благородным умением."
- culture_in_dalelands_desc: "Хотя бы #V 60%#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] должны располагаться в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('middleearth_west_rhovanion_dalelands').GetName]"
-
- tradition_warriors_of_fame_and_field_name: "Воины славы и полей"
- tradition_warriors_of_fame_and_field_desc: "Воины дорвинрим отражают разнообразие своего общества, объединяя всё лучшее, что есть в их богатстве, знати и простолюдинах, для борьбы с врагами."
- culture_parameter_unlock_maa_vintner_court_knights: "Доступны [men_at_arms|El] - [GetMaA('vintner_court_knights').GetName]"
- culture_parameter_unlock_maa_thorn_guard: "Доступны [men_at_arms|El] - [GetMaA('thorn_guard').GetName]"
- culture_parameter_unlock_maa_vineyard_bowmen: "Доступны [men_at_arms|El] - [GetMaA('vineyard_bowmen').GetName]"
-
  tradition_dorwinion_vineyards_name: "Непревзойдённые виноделы"
  tradition_dorwinion_vineyards_desc: "Эта культура довела процесс виноделия до совершенства. Их первоклассные вина экспортируются во все уголки [Concept('middleearth', 'Средиземья')|E] как роскошь, пользующаяся большим спросом. О детях часто говорят, что они «выросли на винограднике», а фермеры этой культуры известны своими «зелёными пальцами», способными заставить процветать всё, что угодно. Среди аристократии производство вина высочайшего качества считается невероятно престижным и имеет первостепенное значение для хорошей репутации."
  culture_parameter_unlock_wine_tasting_activity: "Позволяет проводить [Concept( 'activities', 'занятия' )|E] по #V проведению дегустации вин#! и #V посещению виноградников#!"
@@ -289,6 +311,7 @@
  northron_heritage_trigger: "[culture|E] должна обладать нортронским [Concept( 'heritage', 'наследием' )|E]"
  northern_horse_lord_heritages_trigger: "[culture|E] должна обладать [Concept( 'heritage', 'наследием' )|E] северных повелителей коней: хадоримским или дунландским"
  horse_lord_heritages_trigger: "[culture|E] должна обладать [Concept( 'heritage', 'наследием' )|E] повелителей коней: хадоримским, дунландским или йориагским"
+ culture_in_volcanic_plains_desc: "У вас должно быть графство с вулканической местностью"
 
  # Fierce Independence Realms additional trigger
  fewer_that_20_culture_counties: "Имеет более 20 [Concept( 'counties', 'графств' )|E] с этой [Concept( 'culture', 'культурой' )|E]"

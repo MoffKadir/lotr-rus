@@ -1,29 +1,36 @@
 ﻿l_russian:
  lotr_haradrim_legacy_track_name:0 "Наследие харадрим"
  lotr_haradrim_legacy_track_desc:0 "[GetPlayer.GetDynasty.GetBaseNameNoTooltip] свирепы. Глаза их глубоки, а одежды и кожа убраны золотом."
-  
+
  lotr_haradrim_legacy_1_name:0 "Гавани юга"
  lotr_haradrim_legacy_1_name_desc:0 ""
  lotr_haradrim_legacy_1_modifier_name:0 "[GetDynastyPerk('lotr_haradrim_legacy_1').GetName]"
-  
+ lotr_haradrim_legacy_1_effect_1: "Повышает вероятность появление [Concept('trans_haradric_merchants', 'харадских купцов')|E] при вашем [Concept('court', 'дворе')|E], если ваша [Concept('realm_capital', 'столица')|E] расположена в регионе [GetGeographicalRegion('middleearth_harad').GetName]"
+ lotr_haradrim_legacy_1_effect_2: "Повышает вероятность событий сделок, а значит и [Concept('gold', 'золота')|E], при использовании [Concept('travel_option', 'варианта путешествия')|E] [GetTravelOption('trans_haradric_merchants_option').GetName]"
+
  lotr_haradrim_legacy_2_name:0 "Песнопения южан"
  lotr_haradrim_legacy_2_name_desc:0 "Экзотичное наречие харадрим многим кажется грубым, в частности из-за обилия гортанных звуков. Их красивые песнопения отдают чем-то зловещим, а тексты могут на многое открыть глаза тем, кто готов вслушиваться."
  legacy_southron_chanting_cultural_effect:0 "Положительное мнение для харадрим. Отрицательное мнение для Свободных народов."
  lotr_haradrim_legacy_2_modifier_name:0 "[GetDynastyPerk('lotr_haradrim_legacy_2').GetName]"
-  
+ lotr_haradrim_legacy_2_effect: "Доступно [Concept('decision', 'решение')|E] #V $decision_network_with_trans_haradric_merchants$#!"
+
  lotr_haradrim_legacy_3_name:0 "Торговая империя"
  lotr_haradrim_legacy_3_name_desc:0 "Богатство наше превосходит сокровища гномов. Равно как короли, даже простые пехотинцы украшают свои красочными туниками, бронзовыми доспехами и золотыми кольцами."
- legacy_bazaar_building_effect:0 "Разблокирует строительство базара."
  lotr_haradrim_legacy_3_modifier_name:0 "[GetDynastyPerk('lotr_haradrim_legacy_3').GetName]"
-  
+ lotr_haradrim_legacy_3_effect_1:0 "Открывает [Concept('duchy_building', 'герцогскую постройку')|E] [GetBuilding('bazaar_of_middle_earth_01').GetName]"
+ lotr_haradrim_legacy_3_effect_2: "Повышает шанс получить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_trans_haradric_merchant').GetName( GetPlayer )]» при использовании [Concept('travel_option', 'варианта путешествия')|E] [GetTravelOption('trans_haradric_merchants_option').GetName]"
+
  lotr_haradrim_legacy_4_name:0 "Военное дело пустыни"
  lotr_haradrim_legacy_4_name_desc:0 ""
  lotr_haradrim_legacy_4_modifier_name:0 "[GetDynastyPerk('lotr_haradrim_legacy_4').GetName]"
-  
+ lotr_haradrim_legacy_4_effect: "[Concept('decision', 'Решение')|E] #V $decision_network_with_trans_haradric_merchants$#! может быть принято многократно"
+
  lotr_haradrim_legacy_5_name:0 "Повелители мумакил"
  lotr_haradrim_legacy_5_name_desc:0 "В качестве испытания эта династия может попытаться оседлать и приручить мумака."
- legacy_mumakil_dynasty_effect:0 "Для данной династии доступна активность по приручению Мумакил."
  lotr_haradrim_legacy_5_modifier_name:0 "[GetDynastyPerk('lotr_haradrim_legacy_5').GetName]"
+ legacy_mumakil_dynasty_effect:0 "Этой династии доступно занятие по приручению мумакил."
+ lotr_haradrim_legacy_5_effect_1: "Проще получить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_trans_haradric_merchant').GetName( GetPlayer )]» при использовании [Concept('travel_option', 'варианта путешествия')|E] [GetTravelOption('trans_haradric_merchants_option').GetName]"
+
 
 
  lotr_khazad_legacy_track_name:0 "Кхазад"
@@ -80,7 +87,6 @@
  lotr_elven_legacy_5_modifier_name:0 "[GetDynastyPerk('lotr_elven_legacy_5').GetName]"
  lotr_elven_legacy_5_effect_1_desc:0 "Количество Фэа становится видимым в события рождения детей у эльфов"
  lotr_elven_legacy_5_effect_2_desc:0 "Увеличение количества Феа для новых родителей этой [Concept( 'dynasty', 'династии' )|E]"
-
 
  lotr_northron_legacy_track_name:0 "Наследие северян"
  lotr_northron_legacy_track_desc:0 "Семья [GetPlayer.GetDynasty.GetBaseNameNoTooltip] - гордые потомки древних северян."

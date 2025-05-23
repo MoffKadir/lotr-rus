@@ -197,10 +197,6 @@
 
  trait_urukhai_berserker:0 "Орк-берсерк"
  trait_urukhai_berserker_desc:0 "Жизнь не имеет значения для этого гневного урука, который с радостью отдал бы свою жизнь во имя крови и злобы."
- trait_nafarati_berserker:0 "Берсерк нафарати"
- trait_nafarati_berserker_desc:0 "Отменный бесстрашный воин, пропитанный маслами и магией нафарати, что наносит глубокие раны."
- trait_terror_of_nafarat:0 "Ужас Нафарата"
- trait_terror_of_nafarat_desc:0 "Золотой король превратил этого вождя нафарати в своего жестокого воителя."
  trait_mundburgian:0 "Мундбуржец"
  trait_mundburgian_desc:0 "Этот персонаж служил в войске Гондора как часть Мундбургского эореда."
  trait_mundburgian_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'служила', 'служил' )] в войске Гондора как часть Мундбургского эореда."
@@ -254,6 +250,18 @@
  trait_excavator:0 "Землекоп"
  trait_excavator_desc:0 "Этот персонаж не боится запачкать руки и использует все грязные трюки, чтобы максимизировать свою прибыль."
  trait_excavator_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] не боится запачкать руки и использует все грязные трюки, чтобы максимизировать свою прибыль."
+
+ trait_lifestyle_trans_haradric_merchant: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Харадская купчиха', 'Харадский купец' )]"
+ trait_lifestyle_trans_haradric_merchant_desc: "Этот персонаж - [Concept('trans_haradric_merchant', 'купец')|E] на торговых путях Моря Дюн, пересекающих [Concept('harad', 'Харад')|E]. У него есть опыт в искусстве торговли, путешествий и переговоров."
+ trait_lifestyle_trans_haradric_merchant_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] - [Concept('trans_haradric_merchant', 'купец')|E] на торговых путях Моря Дюн, пересекающих [Concept('harad', 'Харад')|E]. У н[ROOT.GetCharacter.GetHerHis] есть опыт в искусстве торговли, путешествий и переговоров."
+ trait_lifestyle_trans_haradric_merchant_2: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Опытная харадская купчиха', 'Опытный харадский купец' )]"
+ trait_lifestyle_trans_haradric_merchant_2_desc: "Этот персонаж - видный [Concept('trans_haradric_merchant', 'купец')|E], ведущий караваны по торговым путям [Concept('harad', 'Харада')|E] в Море Дюн. Способный в делах, он заработал немало золота."
+ trait_lifestyle_trans_haradric_merchant_2_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] - видный [Concept('trans_haradric_merchant', 'купец')|E], ведущий караваны по торговым путям [Concept('harad', 'Харада')|E] в Море Дюн. [Select_CString(ROOT.GetCharacter.IsFemale, 'Способная', 'Способный' )] в делах, [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'заработала', 'заработал' )] немало золота."
+ trait_lifestyle_trans_haradric_merchant_3: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Известная харадская купчиха', 'Известный харадский купец' )]"
+ trait_lifestyle_trans_haradric_merchant_3_desc: "Этот персонаж - видный [Concept('trans_haradric_merchant', 'купец')|E], ведущий караваны по торговым путям [Concept('harad', 'Харада')|E] в Море Дюн. Считаясь одним из великих купцов современности, он сколотил немалое состояние."
+ trait_lifestyle_trans_haradric_merchant_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] - видный [Concept('trans_haradric_merchant', 'купец')|E], ведущий караваны по торговым путям [Concept('harad', 'Харада')|E] в Море Дюн. Считаясь [Select_CString(ROOT.GetCharacter.IsFemale, 'одной из великих купчих', 'одним из великих купцов' )] современности, [Select_CString(ROOT.GetCharacter.IsFemale, 'она сколотила', 'он сколотил' )] немалое состояние."
+ trait_track_lifestyle_trans_haradric_merchant: "$trait_lifestyle_trans_haradric_merchant$"
+ trait_track_lifestyle_trans_haradric_merchant_desc: "От саванн до пустынь и лесов, [Concept('harad', 'Харад')|E] - щедрая земля, с множеством возможностей для мудрых и хитрых, которые хорошо знают её народы, королевства и рынки."
 
  ### SAURON TRAITS ###
  trait_sauron_ringless:0 "Потеря Единого Кольца"
