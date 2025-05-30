@@ -217,7 +217,7 @@
  ###########################
  decision_rhudaur_troll_orc_hunting.t: "Выследить блуждающих врагов в Рудауре"
  decision_rhudaur_troll_orc_hunting_tooltip: "Организовать патрули вокруг своих владений, чтобы сражаться с врагами, пришедшими с севера."
- decision_rhudaur_troll_orc_hunting.desc: "В тенистых дебрях [Concept( 'rhudaur', 'Рудаура' )|E] нависла опасность, когда вы обнаружили бродячие отряды врагов, приближающихся с севера. Быстро сев на своего коня, вы отправляетесь в решительную поездку по этим суровым землям с четкой миссией: перехватить и победить любого врага - будь то орк, тролль или кто-то еще - прежде чем они смогут вторгнуться дальше в [eriador|E].\n\n"
+ decision_rhudaur_troll_orc_hunting.desc: "В тенистых дебрях [Concept( 'rhudaur', 'Рудаура' )|E] нависла опасность, когда вы обнаружили бродячие отряды врагов, приближающихся с севера. Быстро сев на своего коня, вы отправляетесь в решительную поездку по этим суровым землям с четкой миссией: перехватить и победить любого врага - будь то [Concept('orc', 'орк')|E], тролль или кто-то еще - прежде чем они смогут вторгнуться дальше в [eriador|E].\n\n"
  decision_rhudaur_troll_orc_hunting.a: "Поскачем!"
 
  explore_history_decision: "Изучение хроник"
@@ -485,6 +485,12 @@
  decision_eradan_bree_confirm: "Мне нужно поговорить с вождём."
  decision_eradan_bree.tt: "Вы отправитесь в Бри, чтобы встретиться с Арагорном"
 
+ decision_avenge_nordinbad: "Отомстить за Нординбад"
+ decision_avenge_nordinbad_tooltip: "Начать войну против владыки Гундабада, который разрушил Нординбад"
+ decision_avenge_nordinbad_desc: "У [Concept('dwarves', 'гномов')|E] долгая память, говорит мне Фарин. И они никогда не забывают тех, кто причинил им зло. У меня тоже есть память о великом несчастье. Мне и моим друзьям пришлось наблюдать, как горит [Concept('nordinbad', 'Нординбад')|E], и мы едва спаслись от гибели. Но если мы соберем наших союзников и силы, то сможем отплатить извергу, который стал причиной всего этого. Мы сможем отомстить за Нординбад!"
+ decision_avenge_nordinbad_confirm: "Гундабад будет разгромлен!"
+ avenge_nordinbad_desc: "Вы решите судьбу Гундабада и Нординбада"
+
  decision_continue_adventure_eradan:0 "Продолжить приключения"
  decision_continue_adventure_eradan_tooltip:0 "#italic Если ваш текущий сюжетный [Concept('task_contract', 'контракт')|E] исчез, вы можете восстановить его через это решение."
  decision_continue_adventure_eradan_desc:0 "У меня и моих спутников ещё много работы. Мы не успокоимся, пока [eriador|E] не станет безопасным.\n\n#N Принимайте это решение только в том случае, если вы потеряли свой текущий сюжетный контракт#!!"
@@ -513,7 +519,7 @@
  decision_talk_to_locals_nordinbad_tooltip:0 "Поговорить с кем-нибудь из местных жителей, пока вы отдыхаете от своих приключений"
  decision_talk_to_locals_nordinbad_desc:0 "Пока вы находитесь в безопасном месте и отдыхаете от своих приключений, вы можете поговорить с местными жителями и узнать о них больше."
  decision_talk_to_locals_nordinbad_confirm:0 "Хорошо."
- decision_talk_to_locals_nordinbad_tt:0 "Вы входите в крепость Нординбад."
+ decision_talk_to_locals_nordinbad_tt:0 "Вы входите в крепость [Concept('nordinbad', 'Нординбад')|E]."
 
  decision_talk_to_locals_rhosgobel: "Побеседовать с местными: Росгобель"
  decision_talk_to_locals_rhosgobel_tooltip: "Поговорить с кем-нибудь из местных жителей, пока вы отдыхаете от своих приключений"
@@ -534,6 +540,24 @@
  decision_fortify_weather_hills_desc: "За Погодные холмы долгое время велись сражения, и мы закрепили их за собой." # PLACEHOLDER
  decision_fortify_weather_hills_confirm: "Приступим." # PLACEHOLDER
  decision_fortify_weather_hills_tt: "Вы укрепите Погодные холмы" # PLACEHOLDE
+
+ ### Tharbad Decisions ###
+
+ decision_soldify_tharbad_city: "Основать вольный город Тарбад"
+ decision_soldify_tharbad_city_desc: "Тарбад в древности являлся кондоминиумом между [Concept('gondor', 'Гондором')|E] и [Concept('arnor', 'Арнором')|E]. Оба королевства совместно управляли им как центром сотрудничества между севером и югом, но настало время сделать это официально. Тарбад и прилегающая к нему территория уникальны и требуют отдельного внимания по сравнению с владениями [GetTitleByKey('d_minhiriath').GetNameNoTier] и [GetTitleByKey('d_swanfell').GetNameNoTier]. Пришло время отразить это в наших законах."
+ decision_soldify_tharbad_city_tooltip: "Основать вольный город Тарбад"
+ decision_soldify_tharbad_city_confirm: "Гватло принадлежит нам!"
+
+ decision_invite_settlers: "Расселить беженцев"
+ decision_invite_settlers_desc: "Возможно, Тарбад и не был самой безопасной гаванью в [Concept('eriador', 'Эриадоре')|E], но он по-прежнему остается одним из крупнейших городов, и, в отличие от [Concept('nelvorin', 'Нэлворина')|E] или Сутурэ, не подчиняется никаким владыкам или королям. Руины старого города служат как легкодоступным источником строительных материалов, так и готовым убежищем для новых жителей. После Долгой зимы на севере осталось много беженцев, и Тарбад как нельзя лучше подходит для их размещения. Все, что нам нужно сделать, - это открыть ворота."
+ decision_invite_settlers_tooltip: "Привлечь беженцев, чтобы восстановить население"
+ decision_invite_settlers_confirm: "Приходите все!"
+
+ decision_restore_dunedain_beleifs: "Вернуть истинную веру"
+ decision_restore_dunedain_beleifs_desc: "За долгие годы, прошедшие после падения [Concept('northernkingdom', 'Северного королевства')|E], жители Тарбада утратили представление об истинном поклонении [Concept('eru', 'Эру')|E] и [Concept('valar', 'Валар')|E]. Наша обязанность - вернуть их к свету, пусть люди Тарбада вновь примут свет Валар!"
+ decision_restore_dunedain_beleifs_tooltip: "Вернуть истинную веру"
+ decision_restore_dunedain_beleifs_confirm: "Вернёмся к свету!"
+ decision_restore_dunedain_beleifs_trigger: "Большая часть державы не исповедует [Concept('religion', 'религию')|E] [Concept('dunedain', 'дунэдайн')|E]"
 
  ### Reunited Kingdom Decision Subset ###
 
@@ -1918,9 +1942,9 @@
  invite_dwarves_target_erebor_desc: "$invite_dwarves_target_erebor$"
  invite_dwarves_target_erebor_tt: "Предложить создать колонию в [Concept('lonelymountain', 'Одинокой горе')|E]"
  invite_dwarves_target_iron_hills: "Железные холмы"
- invite_dwarves_target_iron_hills_tooltip: "В Железных холмах [Concept('dwarven', 'гномьи')|E] поселения существовали тысячелетиями, начиная с мифической [Concept('firstage', 'Первой эпохи')|E], и, похоже, гномье присутствие там будет всегда."
+ invite_dwarves_target_iron_hills_tooltip: "В [Concept('ironhills', 'Железных холмах')|E] [Concept('dwarven', 'гномьи')|E] поселения существовали тысячелетиями, начиная с мифической [Concept('firstage', 'Первой эпохи')|E], и, похоже, гномье присутствие там будет всегда."
  invite_dwarves_target_iron_hills_desc: "$invite_dwarves_target_iron_hills$"
- invite_dwarves_target_iron_hills_tt: "Предложить создать колонию на Железных холмах"
+ invite_dwarves_target_iron_hills_tt: "Предложить создать колонию на [Concept('ironhills', 'Железных холмах')|E]"
  invite_dwarves_target_uldona_spine: "Хребет Ульдоны"
  invite_dwarves_target_uldona_spine_tooltip: "Некогда богатые владения [Concept('ironfists', 'Железноруков')|E], их пещеры на хребте Ульдоны были разграблены огненным змеем и превратились в оскверненное гнездо [Concept('goblins', 'гоблинов')|E]. Если ситуация изменится, это принесет много пользы."
  invite_dwarves_target_uldona_spine_desc: "$invite_dwarves_target_uldona_spine$"
@@ -2265,7 +2289,7 @@
  decision_restore_thorins_tomb_confirm: "Восстановить гробницу"
 
  decision_unify_durins_folk: "Объединить Народ Дурина"
- decision_unify_durins_folk_desc: "С тех пор как [durindeathless|E] основал [khazaddum|E], его потомки претендовали на власть над всеми [Concept( 'longbeards', 'Длиннобородами' )|E]. Однако напрямую управлять дальними королевствами своего народа было нецелесообразно, и поэтому они оставляли их на произвол судьбы. Только в случае крайней необходимости они собирались и действовали под непосредственным командованием короля.\n\n[longbeards|E] на протяжении веков заселяли многие области, такие как Железные холмы, [Concept('greymountains', 'Серые горы')|E] и вплоть до Залов Торина. Если бы все эти далёкие регионы удалось объединить под одним знаменем, гномы Народа Дурина не только сравнялись бы со своими праотцами, но и превзошли бы их."
+ decision_unify_durins_folk_desc: "С тех пор как [durindeathless|E] основал [khazaddum|E], его потомки претендовали на власть над всеми [Concept( 'longbeards', 'Длиннобородами' )|E]. Однако напрямую управлять дальними королевствами своего народа было нецелесообразно, и поэтому они оставляли их на произвол судьбы. Только в случае крайней необходимости они собирались и действовали под непосредственным командованием короля.\n\n[longbeards|E] на протяжении веков заселяли многие области, такие как [Concept('ironhills', 'Железные холмы')|E], [Concept('greymountains', 'Серые горы')|E] и вплоть до Залов Торина. Если бы все эти далёкие регионы удалось объединить под одним знаменем, гномы Народа Дурина не только сравнялись бы со своими праотцами, но и превзошли бы их."
  decision_unify_durins_folk_tooltip: "Наша слава бессмертна!"
  decision_unify_durins_folk_confirm: "Наша слава бессмертна!"
  control_percentage_of_misty_desc: "Контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_misty_mountains').GetName]"
@@ -2787,12 +2811,17 @@
  decision_sikentr_empire_expand_ray_desc: "Последняя война Сикентра велась в Бозиша-Миразе. Хотя он захватил Заджантак и Райшул, ему не удалось одолеть Раю и всех её союзников. Старая коалиция распалась, и теперь у нас есть шанс нанести удар."
  decision_sikentr_empire_expand_ray_confirm: "Наконец-то запад пал."
 
-
  decision_favor_overseers: "Стабилизировать Сирайн"
  decision_favor_overseers_tooltip: "Усмирить Сирайн, назначив верных надзирателей"
  decision_favor_overseers_desc: "По мере расширения Грозового воинства его подданных нужно держать в узде, при необходимости - мечом. Создав касту верных блюстителей и надзирателей позволит сохранить стабильность в Сирайне, пока воинство Южного дракона продолжает свой поход."
  decision_favor_overseers_confirm: "К кому же мне обратиться?"
  decision_favor_overseers_effect.tt: "Получить доступ к уникальным [Concept('men_at_arms', 'профессионалам')|E] и положительным модификаторам, объединившись с булганами, чёрными нуменорцами или орками."
+
+ decision_rebuild_lynerian_league: "Восстановить Линерийскую лигу"
+ decision_rebuild_lynerian_league_tooltip: "Помочь раздробленным линерийским городам-государствам объединиться"
+ decision_rebuild_lynerian_league_desc: "Линерия раздроблена. Города-государства ссорятся между собой из-за границ, древних обид и обыденных провокаций. Они не могут объединиться сами по себе. Если мы окажем дипломатическую помощь, починим разрушенные мосты, восстановим доверие и установим новые дружеские отношения, то, возможно, сможем способствовать восстановлению былой Линерии, получив при этом могущественного союзника."
+ decision_rebuild_lynerian_league_confirm: "Отправить сановников."
+ decision_rebuild_lynerian_league_tt: "Вы повлияете на выбор нового правителя Линерийской лиги."
 
  #####################################
  ### War of the Rohirrim Decisions ###
