@@ -553,11 +553,16 @@
  decision_invite_settlers_tooltip: "Привлечь беженцев, чтобы восстановить население"
  decision_invite_settlers_confirm: "Приходите все!"
 
- decision_restore_dunedain_beleifs: "Вернуть истинную веру"
- decision_restore_dunedain_beleifs_desc: "За долгие годы, прошедшие после падения [Concept('northernkingdom', 'Северного королевства')|E], жители Тарбада утратили представление об истинном поклонении [Concept('eru', 'Эру')|E] и [Concept('valar', 'Валар')|E]. Наша обязанность - вернуть их к свету, пусть люди Тарбада вновь примут свет Валар!"
- decision_restore_dunedain_beleifs_tooltip: "Вернуть истинную веру"
- decision_restore_dunedain_beleifs_confirm: "Вернёмся к свету!"
- decision_restore_dunedain_beleifs_trigger: "Большая часть державы не исповедует [Concept('religion', 'религию')|E] [Concept('dunedain', 'дунэдайн')|E]"
+ decision_restore_dunedain_beliefs: "Вернуть истинную веру"
+ decision_restore_dunedain_beliefs_desc: "За долгие годы, прошедшие после падения [Concept('northernkingdom', 'Северного королевства')|E], жители Тарбада утратили представление об истинном поклонении [Concept('eru', 'Эру')|E] и [Concept('valar', 'Валар')|E]. Наша обязанность - вернуть их к свету, пусть люди Тарбада вновь примут свет Валар!"
+ decision_restore_dunedain_beliefs_tooltip: "Вернуть истинную веру"
+ decision_restore_dunedain_beliefs_confirm: "Вернёмся к свету!"
+ decision_restore_dunedain_beliefs_trigger: "Большая часть державы не исповедует [Concept('religion', 'религию')|E] [Concept('dunedain', 'дунэдайн')|E]"
+
+ decision_invade_saralain: "Destroy Saralain"
+ decision_invade_saralain_desc: "Saralain has long been a plague on [eriador|E]. Ever since they crossed the Gwathló, they have raided and pillaged across the region. only the Great Plague and [witchking|E] have done more harm to Eriador. It's time we drove them back across the river and back into the wastes from whence they came!"
+ decision_invade_saralain_tooltip: "Invade Saralain"
+ decision_invade_saralain_confirm: "We've tolerated this far to long."
 
  ### Reunited Kingdom Decision Subset ###
 
@@ -2822,6 +2827,20 @@
  decision_rebuild_lynerian_league_desc: "Линерия раздроблена. Города-государства ссорятся между собой из-за границ, древних обид и обыденных провокаций. Они не могут объединиться сами по себе. Если мы окажем дипломатическую помощь, починим разрушенные мосты, восстановим доверие и установим новые дружеские отношения, то, возможно, сможем способствовать восстановлению былой Линерии, получив при этом могущественного союзника."
  decision_rebuild_lynerian_league_confirm: "Отправить сановников."
  decision_rebuild_lynerian_league_tt: "Вы повлияете на выбор нового правителя Линерийской лиги."
+
+ decision_form_powa_kingdom_title: "TEMP"
+ decision_form_powa_kingdom_tooltip: "TEMP"
+ decision_form_powa_kingdom_desc: "TEMP"
+ decision_form_powa_kingdom_confirm: "TEMP"
+ decision_form_powa_kingdom_effect_tt_1: "Every vassal in de jure [GetTitleByKey('k_poa').GetNameNoTier] has a 60% of becoming [feudal|E]"
+ decision_form_powa_kingdom_effect_tt_2: "You own #V 50%#! of [GetTitleByKey('k_poa').GetNameNoTier]\n$BULLET_WITH_TAB$Currently owned: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_martial_route')|2]%#!"
+ decision_form_powa_kingdom_diplo_trigger_tt: "Current: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_value_normalized')|2]%#!\nAt least #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required')|0]%#! of independent rulers in [GetTitleByKey('k_poa').GetNameNoTier] are:\n$BULLET_WITH_TAB$Your friend\n$BULLET_WITH_TAB$Your lover\n$BULLET_WITH_TAB$Your Vassal\n$BULLET_WITH_TAB$In the same Confederation\n$BULLET_WITH_TAB$Hooked by #v You#!\n[Select_CString(EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required'),'(CFixedPoint)80'),'\nWith Pôwa under your control, the bar of support lowers—just #V 50%#! need be swayed.','')]"
+
+ decision_make_powa_mercantile_center_title: "TEMP"
+ decision_make_powa_mercantile_center_tooltip: "TEMP"
+ decision_make_powa_mercantile_center_desc: "TEMP"
+ decision_make_powa_mercantile_center_confirm: "TEMP"
+ decision_make_powa_mercantile_center_effect_tt_1: "Current: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_neighboring_rulers_count')]#!\nYou have at least #V 5#! neighboring rulers fulfilling the following:\n$BULLET_WITH_TAB$Your lover\n$BULLET_WITH_TAB$Your friend\n$BULLET_WITH_TAB$Your tributary\n$BULLET_WITH_TAB$Hooked by #v You#!"
 
  #####################################
  ### War of the Rohirrim Decisions ###
