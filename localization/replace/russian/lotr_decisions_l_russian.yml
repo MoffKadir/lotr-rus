@@ -373,6 +373,41 @@
  oath_of_eorl_host_gondor_small: "Отряд Итилиэна"
  LOTR_NOT_ALREADY_FIGHTING_ALONGSIDE_ROHAN_TRIGGER: "Вы уже не участвуете в [Concept('war', 'войне')|E] вместе с Роханом."
 
+
+ decision_invite_northron_settlers: "Пригласить северных поселенцев"
+ decision_invite_northron_settlers_tooltip: "Пригласить [Concept('northmen', 'северян')|E] заселить вашу [Concept('realm', 'державу')|E]"
+ decision_invite_northron_settlers_desc: "[Concept('shipkings', 'Морские короли')|E] привели [Concept('gondor', 'Гондор')|E] к золотому веку, но рост его населения застопорился. [Concept('northmen', 'Северяне')|E] из региона [GetGeographicalRegion('middleearth_west_rhovanion').GetName], наши дальние родичи, хорошо известны своей силой и доблестью. Я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы пригласить в провинцию [GetPlayer.GetPrimaryTitle.GetNameNoTier] более сговорчивых [Concept('northron_settlers', 'северных поселенцев')|E], чтобы они помогли мне в различных делах."
+ decision_invite_northron_settlers_desc_norse: "Мои соратники-[Concept('northmen', 'северяне')|E] путешествовали по всему свету, узнали много нового о мире и завоевали грозную репутацию во многих землях. Используя свои связи, я могу привлечь в провинцию [GetPlayer.GetPrimaryTitle.GetNameNoTier] [Concept('northron', 'северных')|E] поселенцев, чтобы они помогли мне в различных делах."
+ decision_invite_northron_settlers_effect_tooltip_1: "Вы сможете выбрать между полезными [Concept('character_modifiers', 'модификаторами персонажа')|E], [Concept('county_modifiers', 'модификаторами графства')|E], новыми [Concept('courtier', 'придворными')|E] или [Concept('special_troops', 'особыми войсками')|E]"
+ decision_invite_northron_settlers_effect_tooltip_2: "[Concept('northron_settlers', 'Северные поселенцы')|E] могут потребовать дополнительное [Concept('gold', 'золото')|E] или даже [Concept('titles', 'титулы')|E] и плохо отреагируют, если переговоры провалятся!"
+ decision_invite_northron_settlers_effect_tooltip_3: "Это [Concept('decision', 'решение')|E] стоит дороже и имеет более длительный период восстановлениия, если ваша [Concept('capital', 'столица')|E] находится в регионе [GetGeographicalRegion('custom_western_gondor').GetName], а не в регионе [GetGeographicalRegion('custom_eastern_gondor').GetName]"
+ decision_invite_northron_settlers_confirm: "Отправить гонца в Рованион!"
+ RICE_every_county_in_capital_duchy: "Каждое [Concept('county', 'графство')|E], которым вы владеете в [Concept('duchy', 'герцогстве')|E] вашей [Concept('capital', 'столицы')|E]"
+ lotr_invite_northron_type: "Выберите, каких северных поселенцев пригласить"
+ lotr_invite_northron_type_gui: "Выберите, каких [Concept('northron_settlers', 'северных поселенцев')|E] пригласить в вашу [Concept('realm', 'державу')|E]"
+ lotr_invite_northron_colonists_option: "#Bold Колонисты#!"
+ lotr_invite_northron_colonists_option_desc: "Пригласить северных колонистов"
+ lotr_invite_northron_colonists_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('lotr_northron_settlers_large_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$Все [Concept('counties', 'графства')|E], которым вы владеете в [Concept('duchy', 'герцогстве')|E] вашей [Concept('capital', 'столицы')|E], получат небольшое количество [Concept('development', 'развития')|E] и [Concept('control', 'контроля')|E] и [Concept('county_modifier', 'модификатор графства')|E] [GetModifier('northron_colonists_modifier').GetNameWithTooltip] от #V 10#! до #V 25#! лет\n$EFFECT_LIST_BULLET$Вы можете получить [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('northron_reinforcements_modifier').GetNameWithTooltip|L] в зависимости от ваших навыков [intrigue_i|E] [Concept('intrigue', 'интриг')|E]"
+ lotr_invite_northron_courtiers_option: "#Bold Придворные#!"
+ lotr_invite_northron_courtiers_option_desc: "Пригласить северных придворных"
+ lotr_invite_northron_courtiers_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('lotr_northron_settlers_small_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$При вашем [Concept('court', 'дворе')|E] появятся двое [Concept('courtiers', 'придворных')|E] с высоким значением хотя бы одного [Concept('skill', 'навыка')|E], чаще всего [Concept('martial', 'военного дела')|E] и [Concept('prowess', 'доблести')|E]; вы можете выбрать одного или обоих. Они могут прибыть с [Concept('family', 'семьями')|E]\n$EFFECT_LIST_BULLET$Вы можете получить [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('northron_reinforcements_modifier').GetNameWithTooltip|L] в зависимости от ваших навыков [diplomacy_i|E] [Concept('diplomacy', 'дипломатии')|E]"
+ lotr_invite_northron_mercenaries_option: "#Bold Наёмники#!"
+ lotr_invite_northron_mercenaries_option_desc: "Пригласить северных наёмников"
+ lotr_invite_northron_mercenaries_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('lotr_northron_settlers_large_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$Вы получите от #V 200#! до #V 1000#! [Concept('special_troops', 'особых войск')|E], в числе которых будет как минимум один [Concept('regiment', 'полк')|E] [Concept('men_at_arms', 'профессионалов')|E]-северян\n$EFFECT_LIST_BULLET$Вы также можете получить [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('northron_reinforcements_modifier').GetNameWithTooltip|L] в зависимости от ваших навыков [martial_i|E] [Concept('martial', 'военного дела')|E]"
+ lotr_invite_northron_traders_option: "#Bold Торговцы#!"
+ lotr_invite_northron_traders_option_desc: "Пригласить северных торговцев"
+ lotr_invite_northron_traders_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('lotr_northron_settlers_large_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$Вы получите [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('northron_traders_modifier').GetNameWithTooltip] на срок от #V 10#! до #V 25#! лет\n$EFFECT_LIST_BULLET$Вы также можете получить [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('northron_reinforcements_modifier').GetNameWithTooltip|L] в зависимости от ваших навыков [stewardship_i|E] [Concept('stewardship', 'управления')|E]"
+ lotr_invite_northron_rulers_option: "#Bold Правители#!"
+ lotr_invite_northron_rulers_option_desc: "Пригласить северных правителей"
+ lotr_invite_northron_rulers_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('lotr_northron_settlers_large_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$Случайное [Concept('county', 'графство')|E], которым вы владеете, будет передано [Concept('ruler', 'правителю')|E]-[Concept('northron', 'северянину')|E]\n$EFFECT_LIST_BULLET$Вы гарантированно получите [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('northron_reinforcements_modifier').GetNameWithTooltip|L] на срок от #V 10#! до #V 25#! лет"
+
+ LOTR_MUST_OWN_MORE_THAN_ONE_COUNTY_NOT_COLONY: "Вы должны владеть более чем одним [Concept('county', 'графством')|E], который не является [Concept('colony', 'колонией')|E]"
+ LOTR_ADMIN_TYPE_MILITARY_FRONTIER_IMPERIAL: "[GetPlayer.Custom('GetProvinceConcept')] должна иметь [GetSubjectContractType( 'administrative_themes' ).GetObligationName( 'admin_theme_military' )], [GetSubjectContractType( 'administrative_themes' ).GetObligationName( 'admin_theme_frontier' )] или [GetSubjectContractType( 'administrative_themes' ).GetObligationName( 'admin_theme_imperial' )]"
+ LOTR_ADMIN_TYPE_BALANCED_CIVILIAN_IMPERIAL: "[GetPlayer.Custom('GetProvinceConcept')] должна иметь [GetSubjectContractType( 'administrative_themes' ).GetObligationName( 'admin_theme_balanced' )], [GetSubjectContractType( 'administrative_themes' ).GetObligationName( 'admin_theme_civilian' )] или [GetSubjectContractType( 'administrative_themes' ).GetObligationName( 'admin_theme_imperial' )]"
+ lotr_northron_settler_truce: "\nЗаключено перемирие. [granter.GetTitledFirstName] уступает, а [courtier_1.GetTitledFirstName] получает [Concept('county', 'графство')|E] [award_county.GetNameNoTier]"
+ northron_settlers_spawn_event_troops_tooltip: "Вы получите некоторое количество [Concept('special_troops', 'особых войск')|E], включая по крайней мере один [Concept('regiment', 'полк')|E] [Concept('men_at_arms', 'профессионалов')|E]"
+ lotr_northron_settlers_troops: "Северные подкрепления"
+
  ### Arnorian Decision Subset ###
 
  decision_adopt_arnorian_culture: "Принять арнорскую культуру"
@@ -559,10 +594,10 @@
  decision_restore_dunedain_beliefs_confirm: "Вернёмся к свету!"
  decision_restore_dunedain_beliefs_trigger: "Большая часть державы не исповедует [Concept('religion', 'религию')|E] [Concept('dunedain', 'дунэдайн')|E]"
 
- decision_invade_saralain: "Уничтожить Саралайн"
- decision_invade_saralain_desc: "Саралайн давно стал чумой для [Concept('eriador', 'Эриадора')|E]. С тех пор как они пересекли Гватло, они совершали набеги и грабежи по всему региону. Только Великая чума и [Concept('witchking', 'Король-чародей')|E] причинили Эриадору больше вреда. Пришло время загнать их обратно за реку и в пустоши, откуда они пришли!"
- decision_invade_saralain_tooltip: "Вторгнуться в Саралайн"
- decision_invade_saralain_confirm: "Мы слишком долго терпели это."
+ #decision_invade_saralain: "Уничтожить Саралайн"
+ #decision_invade_saralain_desc: "Саралайн давно стал чумой для [Concept('eriador', 'Эриадора')|E]. С тех пор как они пересекли Гватло, они совершали набеги и грабежи по всему региону. Только Великая чума и [Concept('witchking', 'Король-чародей')|E] причинили Эриадору больше вреда. Пришло время загнать их обратно за реку и в пустоши, откуда они пришли!"
+ #decision_invade_saralain_tooltip: "Вторгнуться в Саралайн"
+ #decision_invade_saralain_confirm: "Мы слишком долго терпели это."
 
  ### Reunited Kingdom Decision Subset ###
 
