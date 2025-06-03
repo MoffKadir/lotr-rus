@@ -61,61 +61,61 @@
  harad_0016_severe_heatwave_modifier_desc:0 "Графство страдает от губительной жары."
 
  ### Lódenûly Dates Flavor Events ###
- harad.0017.t: "Dates of Lódenûly"
- harad.0017.desc: "Today I am enjoying some dates, fresh from the [GetModifier('lodenuly_date_farms_modifier').GetNameWithTooltip]. The area is known for its abundance of dates of all kinds, said to be the sweetest in all of [GetGeographicalRegion('middleearth_bayoformal_khy').GetName] and imported by the nobility at ludicrous prices.\n\nJust savoring their delicious sweetness makes me feel like I'm in paradise! Perhaps there is some truth to the rumors of them granting eternal youth?"
- harad.0017.a: "Let me grab a few more to eat, or maybe a lot more!"
+ harad.0017.t: "Финики Лоденули"
+ harad.0017.desc: "Сегодня я наслаждаюсь финиками, которые выращивают в таком месте, как [GetModifier('lodenuly_date_farms_modifier').GetNameWithTooltip]. Эта местность славится обилием всевозможных фиников, которые считаются самыми сладкими во всём регионе [GetGeographicalRegion('middleearth_bayoformal_khy').GetName] и импортируются дворянами по смехотворным ценам.\n\nПросто смакуя их восхитительную сладость, я чувствую себя как в раю! Возможно, в слухах о том, что они даруют вечную молодость, есть доля правды?"
+ harad.0017.a: "Возьму ещё несколько, чтобы съесть, а может, и много!"
 
- harad.0018.t: "Fresh Date Harvest"
- harad.0018.desc.early: "It's a miracle! Normally, they wouldn't be in season for several more months, but this year we have been blessed with a second harvest!"
- harad.0018.desc.late: "It's a miracle! The trees just keep producing this year, seemingly to no end. We have been blessed with an exceptionally large harvest this year!"
- harad.0018.desc: ", the [date_farmer.GetWomanMan] in front of me proclaims.\n\nFarmers from the famed [GetModifier('lodenuly_date_farms_modifier').GetNameWithTooltip] have come before me, to report that they are especially productive this year. The baskets of Lódenûly dates they have brought to me are worth a small fortune, and now I must decide what to do with them."
- harad.0018.a: "Tomorrow we feast!"
- harad.0018.b: "Dry and sell the dates"
- harad.0018.c: "Distribute them to the commoners"
+ harad.0018.t: "Свежий урожай фиников"
+ harad.0018.desc.early: "Это просто чудо! Обычно они не поспевают ещё несколько месяцев, но в этом году мы получили второй урожай!"
+ harad.0018.desc.late: "Это просто чудо! В этом году деревья продолжают плодоносить, кажется, без конца. В этом году мы получили необычайно большой урожай!"
+ harad.0018.desc: ", - провозглашает [Select_CString(date_farmer.IsFemale, 'стоящая', 'стоящий' )] рядом со мной [Select_CString(date_farmer.IsFemale, 'женщина', 'мужчина' )].\n\nФермеры, которые работают в таком прославленном месте, как [GetModifier('lodenuly_date_farms_modifier').GetNameWithTooltip], предстали передо мной, что урожай в этом году особенно богат. Корзины с финиками из Лоденули, которые которые они принесли мне, стоят целое состояние, и теперь я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] решить, что с ними делать."
+ harad.0018.a: "Завтра мы пируем!"
+ harad.0018.b: "Высушить и продать финики."
+ harad.0018.c: "Раздать их простолюдинам."
 
  ### Sîrayni Hide Trader ###
- harad.0019.t: "Antelope Hides"
- harad.0019.desc: "Recently, I have acquainted myself with [trans_haradric_merchant_spawn.GetFirstName], a [trans_haradric_merchant|E] selling leather and hides, in particular the hardy hide made from the great antelopes native to [GetGeographicalRegion('middleearth_harad_bayoformal_sirayn').GetName] and [GetGeographicalRegion('middleearth_uttersouth_twinkingdoms').GetName].\n\n"Their hides are so tough that they are used to make shields and armor!", [trans_haradric_merchant_spawn.GetSheHe] boasts, "I could be convinced to part with some of this # emp fine#! stock of hides for a good price. It would do well to provide some of your troops with protection made from this….""
- harad.0019.a: "I think I’ll pass. My troops are fine as is."
- harad.0019.b: "Yes, I will buy some of your hides."
- harad.0019.c: "Surely you can give me a better price."
- 
- ### Arani Outposts ###
- harad.0020.t: "[arani_county.GetNameNoTierNoTooltip]: Arani Outposts"
- harad.0020.desc: "The Arani tribes that inhabit [GetGeographicalRegion('middleearth_harad_dunesea').GetName] are some of the toughest survivalists [harad|E] has to offer. Though some raid the caravans, many support them as guards, guides and suppliers.\n\nIn [arani_county.GetNameNoTier], what started as a supply outpost of a local trade route has developed into a small community of sandfolk, who now patrol the area, escort merchant caravans, and hunt bandits against a small fee. Their fortified holdouts are essential in protecting the [trans_haradric_trade|E] routes that cross the desert."
- harad.0020.desc.arani: "Living in the [GetGeographicalRegion('middleearth_harad_dunesea').GetName] has made our tribes some of the toughest survivalists [harad|E] has to offer. Though some raid the caravans, many support them as guards, guides and suppliers. In [arani_county.GetNameNoTier], what started as a supply outpost of a local trade route has developed into a small independent community of Arani sandfolk, who now patrol the area, escort merchant caravans, and hunt bandits against a small fee. Their fortified holdouts are essential in protecting the [trans_haradric_trade|E] routes that cross the desert."
- harad.0020.a: "It means more caravans will pass through safely, I hope!"
- 
- ### Qanat Flavor Events ###
- harad.0021.t: "[qanat_county.GetNameNoTierNoTooltip]: New Qanat"
- harad.0021.desc: "A new #italic qanat#! has been constructed in [qanat_county.GetNameNoTier] under the direction of some local leaders.\n\nThese channels, some underground, have been in use across [harad|E] for centuries, and distribute much needed water - typically from rivers or springs - to drier parts of the settled regions. We can expect the area that this #italic qanat#! serves to expand in terms of its agricultural productivity."
- harad.0021.a: "Let us hope this #italic qanat#! will do what it's designed to do."
+ harad.0019.t: "Шкуры антилоп"
+ harad.0019.desc: "Недавно я [Select_CString(ROOT.Char.IsFemale, 'познакомилась', 'познакомился' )] с [Concept('trans_haradric_merchant', 'харадским купцом')|E] по имени [trans_haradric_merchant_spawn.GetFirstName], [Select_CString(trans_haradric_merchant_spawn.IsFemale, 'торгующей', 'торгующим' )] кожей и шкурами, в частности, прочными шкурами больших антилоп, обитающих в регионах [GetGeographicalRegion('middleearth_harad_bayoformal_sirayn').GetName] и [GetGeographicalRegion('middleearth_uttersouth_twinkingdoms').GetName].\n\n«Их шкуры настолько прочны, что из них делают щиты и доспехи!», - хвастается [trans_haradric_merchant_spawn.GetSheHe], - «Меня можно убедить расстаться с некоторыми из этих #emp прекрасных#! шкур за хорошую цену. Было бы неплохо снабдить часть ваших войск защитой, сделанной из них...»"
+ harad.0019.a: "Думаю, мне стоит отказаться. Мои войска и так в отличном состоянии."
+ harad.0019.b: "Да, я куплю несколько твоих шкур."
+ harad.0019.c: "[Select_CString(ROOT.Char.IsFemale, 'Уверена', 'Уверен' )], ты можешь предложить цену получше."
 
- harad.0022.t: "[qanat_county.GetNameNoTierNoTooltip]: Qanat Repairs"
- harad.0022.desc: "I just received a report from an official that one of the #italic qanats#! in [qanat_county.GetNameNoTier] has recently dried up. These water channels or aqueducts have been used across [harad|E] for centuries, so there are many of them, some used and some unused like this one. Although this one is not essential per se, it supplements another #italic qanat#! nearby, and lending some funds to repair it to be functional again might be a nice gesture."
- harad.0022.a: "If it's not needed, then why bother?"
- harad.0022.b: "A good idea. Let's get the repairs going."
- harad.0022.c: "I'll not only repair it, but fund building another."
+ ### Arani Outposts ###
+ harad.0020.t: "[arani_county.GetNameNoTierNoTooltip]: Аранийские аванпосты"
+ harad.0020.desc: "Аранийские племена, населяющие [GetGeographicalRegion('middleearth_harad_dunesea').GetName], - одни из самых выносливых жителей [Concept('harad', 'Харада')|E]. Хотя некоторые из них совершают набеги на караваны, многие помогают им в качестве стражников, проводников и поставщиков.\n\nВо владении [arani_county.GetNameNoTier] то, что начиналось как аванпост снабжения местного торгового пути, превратилось в небольшую общину народа песков, которые теперь патрулируют местность, сопровождают торговые караваны и охотятся на разбойников за небольшую плату. Их укрепленные пункты необходимы для защиты [Concept('trans_haradric_trade', 'харадских торговых')|E] путей, пересекающих пустыню."
+ harad.0020.desc.arani: "Жизнь в [GetGeographicalRegion('middleearth_harad_dunesea').GetName] сделала наши племена одними из самых выносливых в вопросах выживания в [Concept('harad', 'Хараде')|E]. Хотя некоторые из них совершают набеги на караваны, многие помогают им в качестве стражников, проводников и поставщиков. Во владении [arani_county.GetNameNoTier] то, что начиналось как аванпост снабжения местного торгового пути, превратилось в небольшую общину аранийского народа песков, которые теперь патрулируют местность, сопровождают торговые караваны и охотятся на разбойников за небольшую плату. Их укрепленные пункты необходимы для защиты [Concept('trans_haradric_trade', 'харадских торговых')|E] путей, пересекающих пустыню."
+ harad.0020.a: "Надеюсь, это означает, что больше караванов будут пересекать границу безопасно!"
+
+ ### Qanat Flavor Events ###
+ harad.0021.t: "[qanat_county.GetNameNoTierNoTooltip]: Новый кяриз"
+ harad.0021.desc: "Во владении [qanat_county.GetNameNoTier] под руководством местных лидеров был построен новый #italic кяриз#!.\n\nЭти каналы, некоторые из которых находятся под землей, использовались по всему [Concept('harad', 'Хараду')|E] на протяжении веков и распределяли столь необходимую воду - обычно из рек или источников - в более сухие части заселенных регионов. Можно ожидать, что территория, которую обслуживает этот #italic кяриз#!, будет расширяться с точки зрения сельскохозяйственной продуктивности."
+ harad.0021.a: "Будем надеяться, что этот #italic кяриз#! будет выполнять то, для чего он предназначен."
+
+ harad.0022.t: "[qanat_county.GetNameNoTierNoTooltip]: Ремонт кяриза"
+ harad.0022.desc: "Я только что [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] сообщение от чиновника, что один из #italic кяризов#! во владении [qanat_county.GetNameNoTier] недавно пересох. Эти водные каналы или акведуки использовались по всему [Concept('harad', 'Хараду')|E] на протяжении веков, поэтому их много, некоторые используются, а некоторые не используются, как этот. Хотя этот канал не является важным как таковым, он дополняет другой #italic кяриз#! поблизости, и выделение средств на его ремонт, чтобы он снова стал функциональным, было бы хорошим жестом."
+ harad.0022.a: "Если он не нужен, то зачем беспокоиться?"
+ harad.0022.b: "Хорошая идея. Приступайте к ремонту."
+ harad.0022.c: "Я не только отремонтирую его, но и оплачу строительство другого."
 
  ### Ksar Flavor Events ###
- harad.0023.t: "[ksar_county.GetNameNoTierNoTooltip]: An Imposing Ksar"
- harad.0023.desc: "I am visiting a prominent #italic ksar#! in [ksar_county.GetNameNoTier] today. These kinds of fortified villages, typically made from adobe and occasionally stone, have been built over centuries to safeguard the locals and any [trans_haradric_merchants|E] passing through.\n\nAs I inspect the structure in all its grandness, I am impressed with the seamless way all the buildings are attached to each other, from the houses to the granaries to the shops, baths, and local temples."
- harad.0023.a: "Imposing! Only a fool would attack this place."
- harad.0023.b: "These outposts secure our trade."
+ harad.0023.t: "[ksar_county.GetNameNoTierNoTooltip]: Впечатляющий ксар"
+ harad.0023.desc: "Сегодня я наведаюсь в один из выдающихся #italic ксаров#! во владении [ksar_county.GetNameNoTier]. Такие деревни-крепости, обычно из саманной глины, а иногда и из камня, строились веками, чтобы защитить местных жителей и всех [Concept('trans_haradric_merchants', 'харадских купцов')|E], проезжающих через них.\n\nКогда я осматриваю это сооружение во всем его величии, меня поражает то, как органично все здания примыкают друг к другу: и дома, и амбары, и магазины, и бани, и местные храмы."
+ harad.0023.a: "Впечатляет! Только глупец нападёт на это место."
+ harad.0023.b: "Эти форпосты обеспечивают безопасность нашей торговли."
 
- harad.0024.t: "[ksar_county.GetNameNoTierNoTooltip]: Ksar Maintenance"
- harad.0024.desc: "I’ve received an alarming report from an official that several of the #italic ksars#! in [ksar_county.GetNameNoTier] are in need of dire repairs. These fortified villages, common in Inner [harad|E], are typically made of raw earth, and are thus susceptible to the elements - wind, rain, and more - meaning they require constant maintenance.\n\nWhile the locals are able to continuing maintaining their #italic ksars#! as needed, their time and resources can be limited. As these villages are important in protecting local trade routes and ensuring order and stability in the area, my official tells me it would be prudent to assist the locals by providing them the resources and manpower from elsewhere that they do not necessarily have here."
- harad.0024.a: "If they can do it themselves, I don’t see the need to divert resources to them."
- harad.0024.b: "It’s crucial these remain in good shape - I’ll provide the resources as suggested."
+ harad.0024.t: "[ksar_county.GetNameNoTierNoTooltip]: Содержание ксара"
+ harad.0024.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] тревожное сообщение от чиновника, что несколько #italic ксаров#! во владении [ksar_county.GetNameNoTier] нуждаются в серьезном ремонте. Эти укрепленные деревни, распространенные во Внутреннем [Concept('harad', 'Хараде')|E], обычно построены из сырой земли и поэтому подвержены воздействию стихий - ветра, дождя и прочего, - а значит, требуют постоянного ухода.\n\nХотя местные жители могут продолжать поддерживать свои #italic ксары#! по мере необходимости, их время и ресурсы могут быть ограничены. Поскольку эти деревни играют важную роль в защите местных торговых путей и обеспечении порядка и стабильности в регионе, мой чиновник говорит мне, что было бы разумно помочь местным жителям, предоставив им ресурсы и рабочую силу из других мест, которых у них здесь нет."
+ harad.0024.a: "Если они могут сделать это сами, я не вижу необходимости направлять им ресурсы."
+ harad.0024.b: "Очень важно, чтобы они оставались в хорошем состоянии - я предоставлю ресурсы, как и было предложено."
 
- harad.0025.t: "[ksar_county.GetNameNoTierNoTooltip]: Inside a Ksar"
- harad.0025.desc: "I am paying a visiting to a larger #italic ksars#! in [ksar_county.GetNameNoTier] today. These fortified settlements, consisting of interconnected and attached adobe structures and alleyways, have served as a bedrock of the [trans_haradric_trade|E] routes, protecting the areas they are in from bandits and invaders. As I walk through the winding streets, I almost enter one, when the guides accompanying me warn me not to turn that way.\n\n“That’s where… #italic those#! kinds of outsiders live,” one tells me, when I ask why. “The ones who do the unclean jobs. We haven’t pooled together the funds to erect a gate to separate them from more respectable folk, so we apologise.”"
- harad.0025.a: "It’s good to enforce boundaries."
- harad.0025.b: "They still live here, so I’ll visit them too."
- harad.0025.c: "Not enough funds for the gate, you say?"
+ harad.0025.t: "[ksar_county.GetNameNoTierNoTooltip]: Внутри ксара"
+ harad.0025.desc: "Сегодня я наведаюсь в большой #italic ксар#! во владении [ksar_county.GetNameNoTier]. Эти укрепленные поселения, состоящие из соединенных между собой саманных построек и переулков, служили основой маршрутов [Concept('trans_haradric_trade', 'харадской торговли')|E], защищая земли, на которых они расположены, от разбойников и захватчиков. Прогуливаясь по извилистым улочкам, я уже почти [Select_CString(ROOT.Char.IsFemale, 'вошла', 'вошёл' )] в одну из них, когда сопровождающие меня проводники предупредили, чтобы я не [Select_CString(ROOT.Char.IsFemale, 'сворачивала', 'сворачивал' )] в ту сторону.\n\n«Там живут... #italic те#! чужаки», - говорит мне один из них, когда я спрашиваю, почему. «Те, кто выполняет нечистую работу. Мы не собрали средств, чтобы возвести ворота, отделяющие их от более уважаемых людей, так что мы извиняемся»."
+ harad.0025.a: "Хорошо, когда границы соблюдаются."
+ harad.0025.b: "Они все еще живут здесь, так что я навещу и их."
+ harad.0025.c: "Не хватает средств на ворота, говорите?"
 
  ### Maresh Flavor Events ###
- harad.0026.t: "Mekhor"
+ harad.0026.t: "Мехор"
  harad.0026.desc: "Today I am inspecting the #italic Mekhor#!, the old, main canal that flows directly [GetTitleByKey('c_maresh').GetNameNoTier]. At the end of the canal is a sizable oasis with the same name. Anyhow, this canal has been an important source of water and used for a variety of purposes, such as irrigating nearby agriculture for centuries.\n\nI listen carefully as some of the specialists in charge of maintaining the canal explain some of the current issues with ensuring the canal remains in good condition. Apparently, they are worried about the state of the canal in the next few years, and are requesting I provide some additional resources - more than already allocated - to assist with the canal’s continued operation."
  harad.0026.a: "I believe the existing resources are sufficient. The city has other needs."
  harad.0026.b: "Very well, you shall have those resources - put them to good use!"
