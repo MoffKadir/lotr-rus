@@ -91,19 +91,18 @@
  tharbad_story.0130.desc: "Город Мисталондэ почти такой же древний, как и Тарбад, оба были [Concept('numenorean', 'нуменорскими')|E] гаванями, построенными до [Concept('downfall', 'Низвержения')|E]. Оба позже стали частью королевства [Concept('cardolan', 'Кардолан')|E]. Мисталондэ, переименованный новыми обитателями в Сутурэ, остался населенным и крупным городским центром вокруг устья Гватло. [GetTitleByKey('k_saralain').GetName], выросшее из энедвайтримских федератов Кардолана, - ближайшие родственники нынешнего населения, и они веками были и налетчиками, и торговцами в этом регионе. Остаётся лишь надеяться, что они согласятся на союз."
  tharbad_story.0130.a: "Мы смиренно просим..."
 
- tharbad_story.0131.t: "TEMP Tharbad Requests an Alliance"
- tharbad_story.0131.desc: "TEMP The Ancient City of [GetTitleByKey('d_tharbad_titular').GetNameNoTier], One of the last bastions of light in [eriador|E], has requested an alliance with us. We sent a small force of rangers to help reestablish order after their recent revolution. They seem to think that means we would be interested in allying with them against the other threats in the region. The city was once a major haven and trade port on the Gwathló. If we were to ally with them, we could help restore them to their former status, and they would help us secure our ancient birthright."
- tharbad_story.0131.a: "TEMP We Accept Their Alliance"
- tharbad_story.0131.b: "TEMP We Are Not Intrested at This Time"
+ tharbad_story.0131.t: "Тарбад просит защиты"
+ tharbad_story.0131.desc: "Древний город [GetTitleByKey('d_tharbad_titular').GetNameNoTier] попросил защиты от наших набегов, предлагая стать [Concept('tributary', 'данниками')|E], чтобы избежать наших повторных налётов на город. Мы получаем значительное количество ресурсов от набегов на Тарбад, поэтому отказ от них был бы значительной ценой. Такой, которою мы можем лишиться, если они станут данниками."
+ tharbad_story.0131.a: "Мы принимаем их предложение."
+ tharbad_story.0131.b: "В данный момент мы не заинтересованы."
 
- tharbad_story.0132.t: "TEMP [ranger_leader.GetFirstName] accepts our alliance!"
- tharbad_story.0132.desc: "TEMP [ranger_leader.GetFirstName] has accepted our offer of alliance on behalf of the [GetTitleByKey('d_northern_dunedain').GetNameNoTier]. We are now bound in an alliance against any other powers who try to raid, pillage, or destroy us. Together, we will build a stronger future!"
- tharbad_story.0132.a: "TEMP Huzzah!"
- alliance_saralain: "TEMP We have formed an alliance with [ranger_leader.GetFirstName]"
- 
- tharbad_story.0133.t: "TEMP [ranger_leader.GetFirstName] rejects our alliance!"
- tharbad_story.0133.desc: "TEMP [ranger_leader.GetFirstName] has rejected our offer of alliance, stating they are unable to help protect us. the [dunedainnorth|E] are now too weak to commit to any wars or alliances with larger powers and were honest enough not to commit them when they knew they weren't able to commit. While we respect their honesty, it leaves us with a problem."
- tharbad_story.0133.a: "TEMP Time to Pick a New Destination"
+ tharbad_story.0132.t: "[saralain_leader.GetFirstName] принимает наше предложение"
+ tharbad_story.0132.desc: "[saralain_leader.GetFirstName] [Select_CString(saralain_leader.IsFemale, 'приняла', 'принял' )] наше предложение стать [Concept('tributary', 'данниками')|E]. Хотя это не было нашим лучшим выбором для прекращения набегов, это должно ослабить постоянное давление на наш город."
+ tharbad_story.0132.a: "Будем надеяться, что они сдержат своё слово."
+
+ tharbad_story.0133.t: "[saralain_leader.GetFirstName] отвергает наше предложение!"
+ tharbad_story.0133.desc: "[saralain_leader.GetFirstName] [Select_CString(saralain_leader.IsFemale, 'отвергла', 'отверг' )] наше предложение стать [Concept('tributary', 'данниками')|E]. Мы можем ожидать продолжения набегов, так как они посчитали, что грабеж принесёт больше прибыли, чем постоянный поток дани."
+ tharbad_story.0133.a: "Нам нужно как можно скорее усилить оборону."
  
  tharbad_story.0140.t: "TEMP Arrival in Dunland"
  tharbad_story.0140.desc: "TEMP the city of Mistalonde is almost as old as Tharbad both were [numenorean|E] havens constructed before the [downfall|E]. both later became part of the kingdom of [cardolan|E] Mistalonde, renamed Suthure by its new inhabitiants, has remained populated and a major urban center around the mounth of the Gwathló. the [GetTitleByKey('k_saralain').GetName] that grew out of the Enedhwaithrim foederati of Cardolan are the closest relatives the current population has and they have been both raiders and traders in the region for centuries. Hopefully they are willing to accept an alliance."
@@ -121,3 +120,7 @@
  tharbad_story.0143.t: "TEMP [ranger_leader.GetFirstName] rejects our alliance!"
  tharbad_story.0143.desc: "TEMP [ranger_leader.GetFirstName] has rejected our offer of alliance, stating they are unable to help protect us. the [dunedainnorth|E] are now too weak to commit to any wars or alliances with larger powers and were honest enough not to commit them when they knew they weren't able to commit. While we respect their honesty, it leaves us with a problem."
  tharbad_story.0143.a: "TEMP Time to Pick a New Destination"
+
+ tharbad_story.1000.t: "Вольный город Тарбад!"
+ tharbad_story.1000.desc: "Тарбад долгое время находился под совместным управлением [Concept('arnor', 'Арнора')|E] и [Concept('gondor', 'Гондора')|E], являясь буквальным мостом между двумя королевствами. Но юридическая реальность долгое время отличалась от фактического статуса. Сегодня это изменилось. Вольный город Тарбад теперь раз и навсегда принадлежит самому себе. Мы по-прежнему обязаны подчиняться [Concept('dunedain', 'дунэдайн')|E], но мы больше не подданные владык из владений [GetTitleByKey('d_minhiriath').GetNameNoTier] или [GetTitleByKey('d_swanfell').GetNameNoTier]. Мы не подчиняемся никому, кроме королей!"
+ tharbad_story.1000.a: "Пора смириться с реальностью."

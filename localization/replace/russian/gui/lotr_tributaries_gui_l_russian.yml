@@ -10,9 +10,7 @@
  offer_protection_interaction_desc:0 "Предложить защиту державе [recipient.GetShortUINameNoTooltip], гарантируя [recipient.GetHerHis] независимость в качестве [Concept( 'protectorate', 'протектората' )|E]."
  break_protectorate_interaction:0 "Отозвать протекторат"
  break_protectorate_interaction_desc:0 "Отозвать договор о [Concept( 'protectorate', 'протекторате' )|E] между державами [actor.GetShortUINameNoTooltip] и [recipient.GetShortUINameNoTooltip], лишая получателя любых гарантий."
- release_tributary_interaction:0 "Освободить государство-данника"
- release_tributary_interaction_desc:0 "Освободить державу [recipient.GetShortUINameNoTooltip] от вашего сюзеренитета."
- release_tributary_interaction.tt:0 "[recipient.GetShortUINameNoTooltip] больше не будет вашим [Concept( 'tributary', 'данником' )|E]."
+ release_tributary_interaction.tt:0 "[recipient.GetShortUINameNoTooltip] больше не будет вашим [Concept('tributary', 'данником')|E]."
 
  protectorate_trib:0 "Протекторат"
 
@@ -74,20 +72,22 @@
  tributary_vassalised_suzerain.toast:0 "Ваша статус сюзерена более не актуален"
  tributary_vassalised_suzerain.tt:0 "Ваше государство-данник было вассализировано"
 
+ is_your_protectorate_trigger: "Вы являетесь протектором этой державы"
+
  CB_COST_RULES_DUCHY:0 "Правит герцогством"
 
- tributary_war_cb:0 "Подчинить силой как [tributary_state|El]"
- trib_war_cb:0 "Подчинить силой как [tributary_state|El]"
- trib_on_victory_desc:0 "[defender.GetShortUIName|U] станет [Concept( 'tributary_states', 'государством-данником' )|E]"
- trib_on_victory_desc_attacker:0 "[defender.GetShortUIName|U] станет [Concept( 'tributary_states', 'государством-данником' )|E]"
- trib_on_victory_desc_defender:0 "[defender.GetShortUIName|U] станет [Concept( 'tributary_states', 'государством-данником' )|E]"
+ tributary_war_cb:0 "Подчинить как [Concept('tributary', 'данника')|E]"
+ trib_war_cb:0 "Подчинить как [Concept('tributary', 'данника')|E]"
+ trib_on_victory_desc:0 "[defender.GetShortUIName|U] станет [Concept('tributary', 'данником')|E]"
+ trib_on_victory_desc_attacker:0 "[defender.GetShortUIName|U] станет [Concept('tributary', 'данником')|E]"
+ trib_on_victory_desc_defender:0 "[defender.GetShortUIName|U] станет [Concept('tributary', 'данником')|E]"
  trib_on_white_peace_desc:0 "[defender.GetShortUIName|U] сохранит [Concept( 'independent_ruler', 'независимость' )|E]"
  trib_on_white_peace_desc_attacker:0 "[defender.GetShortUIName|U] сохранит [Concept( 'independent_ruler', 'независимость' )|E]"
  trib_on_white_peace_desc_defender:0 "[defender.GetShortUIName|U] сохранит [Concept( 'independent_ruler', 'независимость' )|E]"
  trib_on_defeat_desc:0 "[defender.GetShortUIName|U] сохранит [Concept( 'independent_ruler', 'независимость' )|E]"
  trib_on_defeat_desc_attacker:0 "[defender.GetShortUIName|U] сохранит [Concept( 'independent_ruler', 'независимость' )|E]"
  trib_on_defeat_desc_defender:0 "[defender.GetShortUIName|U] сохранит [Concept( 'independent_ruler', 'независимость' )|E]"
- trib_on_invalidated_desc:0 "Война за превращение [defender.GetShortUIName|U] в [tributary_state|El] недействительна"
+ trib_on_invalidated_desc:0 "Война за превращение персонажа [defender.GetShortUIName|U] в [Concept('tributary', 'данника')|E] недействительна"
 
  permanent_tributary_war_cb:0 "Подчинить силой как [client_state|El]"
  perma_trib_war_cb:0 "Подчинить силой как [client_state|El]"
