@@ -6,7 +6,7 @@
 
  tharbad_story.0002.t: "Долгая зима достигла Тарбада"
  tharbad_story.0002.desc: "Долгая зима пришла в город Тарбад! Никто не ожидал такой зимы, никто не готовился к ней. И теперь мы наблюдаем ещё один катаклизм в многовековой истории нашего города. Горожане уже начали просить помощи у правительства или, как минимум, временной отмены строгих законов о контроле путешествий, чтобы они могли сами отправиться на поиски помощи. От вежливых просьб они начали переходить к открытым требованиям о помощи. Тем не менее, решение о том, как реагировать, остаётся за [Select_CString(ROOT.Char.IsFemale, 'правительницей', 'правителем' )]."
- tharbad_story.0002.a: "Немного холодно, но закон остаётся в силе!"
+ tharbad_story.0002.a: "Немного холодно, но закон остаётся в силе! - Это может привести к непредвиденным последствиям"
  tharbad_story.0002.b: "Использовать сокровищницу, чтобы предотвратить массовый голод."
  tharbad_story.0002.c: "Я [Select_CString(ROOT.Char.IsFemale, 'слышала', 'слышал' )], что Умбар красив в это время года."
  lw_mitagation: "Все провинции державы получат модификатор [GetModifier('lw_mediation_modifier').GetNameWithTooltip] на время зимы."
@@ -15,19 +15,25 @@
  tharbad_story.0003.desc: "Все произошло быстро, в предрассветные часы. Несколько сотен простолюдинов, которыми [Select_CString(tharbad_guard.IsFemale, 'командовала', 'командовал' )] капитан городской стражи [tharbad_guard.GetFirstName], и [tharbad_ranger.GetFirstName], следопыт [Concept('dunedain', 'дунэдайн')|E], [Select_CString(tharbad_ranger.IsFemale, 'посланная', 'посланный' )] для присмотра за городом, ворвались во дворец. С учётом того, что стражники был в курсе заговора, [ROOT.Char.GetFirstName] [Select_CString(ROOT.Char.IsFemale, 'была обречена', 'был обречён' )]. Его жена [ROOT.Char.GetPrimarySpouse.GetFirstName] и их дети смогли спастись, но теперь жителям #L [GetTitleByKey('d_tharbad_titular').GetNameNoTier]а#! придётся выбрать нового правителя."
  tharbad_story.0003.a: "[tharbad_ranger.GetFirstName] поведёт нас к возрождению нашего прошлого."
  tharbad_story.0003.b: "[tharbad_guard.GetFirstName] поведёт нас к процветающему будущему!"
+ tharbad_story.0003.c: "[ROOT.Char.GetPrimarySpouse.GetFirstName] и её дети продолжат наследие, которое олицетворял [ROOT.Char.GetFirstName]!"
 
- tharbad_story.0004.t: "[Select_CString(ROOT.Char.IsFemale, 'Новая правительница', 'Новый правитель' )] Тарбада!"
+ tharbad_story.0004.t: "[Select_CString(ROOT.Char.IsFemale, 'Новая правительница', 'Новый правитель' )] Тарбада"
  tharbad_story.0004.desc: "Народ изъявил свою волю! [ROOT.Char.GetFirstName] [Select_CString(ROOT.Char.IsFemale, 'провозглашена новой правительницей', 'провозглашён новым правителем' )] #L [GetTitleByKey('d_tharbad_titular').GetNameNoTier]а#!. Это произошло после кровавого переворота против предыдущего градоначальника. Теперь будущее города зависит только от них - к процветанию или к гибели, известно только им.\n\nОднако ближайшая ситуация по-прежнему выглядит мрачно. Тарбад не видел более мрачных дней со времен Великой чумы, торговля по королевской дороге почти сведена к нулю, а население находится на историческом минимуме. Чтобы Тарбад выжил, необходимы решительные действия."
  tharbad_story.0004.a: "Навстречу светлому будущему!"
 
- tharbad_story.0005.t: "Прибытие следопытов!"
+ tharbad_story.0005.t: "Прибытие следопытов"
  tharbad_story.0005.desc: "Услышав о том, что градоправитель [overthrown.GetFirstName] был свергнут в результате переворота, вождь [ranger_leader.GetFirstName] отправил отряд следопытов [Concept('dunedain', 'дунэдайн')|E], чтобы помочь нам поддерживать порядок в #L [GetTitleByKey('d_tharbad_titular').GetNameNoTier]е#!. Он обещает, что это начало восстановления отношений между Тарбадом и родом [Concept('isildur', 'Исильдура')|E]."
  tharbad_story.0005.a: "Мы рады их помощи!"
  dunedain_rangers_army: "Следопыты дунэдайн"
 
- tharbad_story.0006.t: "Удачная кампания помощи!"
+ tharbad_story.0006.t: "Удачная кампания помощи"
  tharbad_story.0006.desc: "Благодаря распределению помощи местному населению нам удалось избежать худших последствий кризиса. [GetTitleByKey('d_tharbad_titular').GetNameNoTier] выстоял, даже когда наши соседи разоряются. Тарбад выдержит испытание временем. И все благодаря решениям, которые [Select_CString(ROOT.Char.IsFemale, 'приняла', 'принял' )] [ROOT.Char.GetFirstName]. Или, по крайней мере, так думают люди. Королевская семья уверенно правит и может распространить свое влияние на окрестности."
  tharbad_story.0006.a: "Градоправитель крепко стоит на ногах!"
+
+ tharbad_story.0008.t: "Наше будущее"
+ tharbad_story.0008.desc: "Всё произошло так быстро. Мятежникам помогли изнутри, стражники не просто открыли дверь, они руководили переворотом. Если бы не помощь служанки, [ROOT.Char.GetFirstName] была бы убита вместе с #L [overthrown.GetFirstName]ом#!. Но ей удалось бежать вместе со своими детьми, все еще остававшимися в городе. Вместе они ушли в горы и объединили свои ресурсы. Пока что семья держится вместе, чтобы отомстить за отца. Однако будущее зависит от неё."
+ tharbad_story.0008.a: "Мы вернёмся!"
+ almarien_laamp: "Истинные владыки Тарбада"
 
  tharbad_story.0101.t: "Потенциальные защитники"
  tharbad_story.0101.desc: "[GetTitleByKey('d_tharbad_titular').GetNameNoTier] - город-государство, окруженное врагами и потенциальными угрозами, причем наибольшую опасность представляет сама окружающая среда. [Concept('eriador', 'Эриадор')|E] - гораздо более суровая земля, чем во времена [Concept('northkingdom', 'Северного королевства')|E]. Чтобы выжить, нам нужен защитник. Кто-то на нашей стороне, кто поможет городу развиваться и защитит нас от других местных угроз. Проблема лишь в том, кого выбрать.\n\n[GetTitleByKey('e_gondor_steward').GetNameNoTier] был нашим историческим защитником, который не позволил [Concept('witchking', 'Королю-чародею')|E] уничтожить город, [ranger_leader.GetFirstName] и его следопыты давно защищают эти земли, и было бы разумно обратиться к ним. Или же мы можем подчиниться одной из потенциальных угроз - либо [GetTitleByKey('k_dunland').GetNameNoTier], либо [GetTitleByKey('k_saralain').GetNameNoTier]. Однако они с такой же вероятностью используют нас в своих целях, как и помогать."
@@ -44,7 +50,7 @@
  tharbad_story.0110.b: "Послать им помощь, но предложить больше за полное возвращение в ряды общества."
  tharbad_story.0110.c: "В данный момент мы не можем ничего выделить."
 
- tharbad_story.0111.t: "Гондорская помощь прибыла!"
+ tharbad_story.0111.t: "Гондорская помощь прибыла"
  tharbad_story.0111.desc: "Из #L [GetTitleByKey('e_gondor_steward').GetNameNoTier]а#! прибыла помощь! Они привезли с собой припасы, чтобы в скором времени усовершенствовать наш торговый порт и начать восстанавливать город в былом великолепии. А также обещание постоянных вложений, торговли и защиты от [Concept('southernkingdom', 'Южного королевства')|E]. Это все, о чем мы просили, и даже больше!"
  tharbad_story.0111.a: "Потрясающе!"
 
@@ -78,12 +84,12 @@
  tharbad_story.0121.a: "Мы принимаем их союз."
  tharbad_story.0121.b: "В данный момент мы не заинтересованы."
 
- tharbad_story.0122.t: "[ranger_leader.GetFirstName] принимает наш союз!"
+ tharbad_story.0122.t: "[ranger_leader.GetFirstName] принимает наш союз"
  tharbad_story.0122.desc: "[ranger_leader.GetFirstName] [Select_CString(ranger_leader.IsFemale, 'приняла', 'принял' )] наше предложение о союзе от имени [GetTitleByKey('d_northern_dunedain').GetNameNoTier]. Теперь мы связаны союзом против любых других держав, которые попытаются совершить набег, разграбить или уничтожить нас. Вместе мы построим более сильное будущее!"
  tharbad_story.0122.a: "Ура!"
  alliance_rangers: "Мы и [ranger_leader.GetFirstName] заключили союз"
 
- tharbad_story.0123.t: "[ranger_leader.GetFirstName] отвергает наш союз!"
+ tharbad_story.0123.t: "[ranger_leader.GetFirstName] отвергает наш союз"
  tharbad_story.0123.desc: "[ranger_leader.GetFirstName] [Select_CString(ranger_leader.IsFemale, 'отклонила', 'отклонил' )] наше предложение о союзе, заявив, что не может помочь защитить нас. [Concept('dunedainnorth', 'Дунэдайн севера')|E] сейчас слишком слабы, чтобы участвовать в войнах или союзах с более крупными державами, и были достаточно честны, чтобы не вступать в них, когда знали, что не смогут этого сделать. Хотя мы уважаем их честность, это ставит нас перед проблемой."
  tharbad_story.0123.a: "Пора выбрать новое направление."
 
@@ -100,27 +106,43 @@
  tharbad_story.0132.desc: "[saralain_leader.GetFirstName] [Select_CString(saralain_leader.IsFemale, 'приняла', 'принял' )] наше предложение стать [Concept('tributary', 'данниками')|E]. Хотя это не было нашим лучшим выбором для прекращения набегов, это должно ослабить постоянное давление на наш город."
  tharbad_story.0132.a: "Будем надеяться, что они сдержат своё слово."
 
- tharbad_story.0133.t: "[saralain_leader.GetFirstName] отвергает наше предложение!"
+ tharbad_story.0133.t: "[saralain_leader.GetFirstName] отвергает наше предложение"
  tharbad_story.0133.desc: "[saralain_leader.GetFirstName] [Select_CString(saralain_leader.IsFemale, 'отвергла', 'отверг' )] наше предложение стать [Concept('tributary', 'данниками')|E]. Мы можем ожидать продолжения набегов, так как они посчитали, что грабеж принесёт больше прибыли, чем постоянный поток дани."
  tharbad_story.0133.a: "Нам нужно как можно скорее усилить оборону."
  
- tharbad_story.0140.t: "TEMP Arrival in Dunland"
- tharbad_story.0140.desc: "TEMP the city of Mistalonde is almost as old as Tharbad both were [numenorean|E] havens constructed before the [downfall|E]. both later became part of the kingdom of [cardolan|E] Mistalonde, renamed Suthure by its new inhabitiants, has remained populated and a major urban center around the mounth of the Gwathló. the [GetTitleByKey('k_saralain').GetName] that grew out of the Enedhwaithrim foederati of Cardolan are the closest relatives the current population has and they have been both raiders and traders in the region for centuries. Hopefully they are willing to accept an alliance."
- tharbad_story.0140.a: "TEMP We humbly request..."
- 
- tharbad_story.0141.t: "TEMP Tharbad Requests an Alliance"
- tharbad_story.0141.desc: "TEMP The Ancient City of [GetTitleByKey('d_tharbad_titular').GetNameNoTier], One of the last bastions of light in [eriador|E], has requested an alliance with us. We sent a small force of rangers to help reestablish order after their recent revolution. They seem to think that means we would be interested in allying with them against the other threats in the region. The city was once a major haven and trade port on the Gwathló. If we were to ally with them, we could help restore them to their former status, and they would help us secure our ancient birthright."
- tharbad_story.0141.a: "TEMP We Accept Their Alliance"
- tharbad_story.0141.b: "TEMP We Are Not Intrested at This Time"
+ tharbad_story.0140.t: "Прибытие в Дунланд"
+ tharbad_story.0140.desc: "Двор, которым правит король [dunland_leader.GetFirstName], - странное место. Бывший дворянин из #L [GetTitleByKey('k_rohan').GetNameNoTier]а#! основал королевство, чтобы отомстить своему королю. Практически за одну ночь оно превратилось в крупную державу в регионе и ближайшую к нам в Тарбаде. Учитывая наши давние связи с горцами, логично, что мы обратились к нему за помощью."
+ tharbad_story.0140.a: "Мы смиренно просим..."
 
- tharbad_story.0142.t: "TEMP [ranger_leader.GetFirstName] accepts our alliance!"
- tharbad_story.0142.desc: "TEMP [ranger_leader.GetFirstName] has accepted our offer of alliance on behalf of the [GetTitleByKey('d_northern_dunedain').GetNameNoTier]. We are now bound in an alliance against any other powers who try to raid, pillage, or destroy us. Together, we will build a stronger future!"
- tharbad_story.0142.a: "TEMP Huzzah!"
+ tharbad_story.0141.t: "Тарбад просит защиты"
+ tharbad_story.0141.desc: "Близлежащий город [GetTitleByKey('d_tharbad_titular').GetNameNoTier], давно пришедший в упадок торговый порт начала [Concept('secondage', 'Второй эпохи')|E], попросил у нас защиты. Они явно видят наш молниеносный рост и рассматривают нас как потенциального защитника от набегов, как наших, так и из соседнего #L [GetTitleByKey('k_saralain').GetName]а#!. Теперь нам предстоит решить, как ответить на эту просьбу."
+ tharbad_story.0141.a: "Мы сумеем их защитить."
+ tharbad_story.0141.b: "У нас нет возможности."
 
- tharbad_story.0143.t: "TEMP [ranger_leader.GetFirstName] rejects our alliance!"
- tharbad_story.0143.desc: "TEMP [ranger_leader.GetFirstName] has rejected our offer of alliance, stating they are unable to help protect us. the [dunedainnorth|E] are now too weak to commit to any wars or alliances with larger powers and were honest enough not to commit them when they knew they weren't able to commit. While we respect their honesty, it leaves us with a problem."
- tharbad_story.0143.a: "TEMP Time to Pick a New Destination"
+ tharbad_story.0142.t: "[dunland_leader.GetFirstName] соглашается защитить нас"
+ tharbad_story.0142.desc: "[dunland_leader.GetFirstName] принял нашу просьбу о защите. Теперь мы являемся [Concept('tributary', 'данниками')|E] #L [GetTitleByKey('k_dunland').GetNameNoTier]а#!. Они будут защищать нас от внешних угроз в обмен на значительное количество нашего золота. Кроме того, они согласились на небольшие вложения в город, чтобы максимизировать свой доход от нас."
+ tharbad_story.0142.a: "Приемлемое соглашение."
 
- tharbad_story.1000.t: "Вольный город Тарбад!"
+ tharbad_story.0143.t: "[dunland_leader.GetFirstName] отвергает нашу просьбу"
+ tharbad_story.0143.desc: "[dunland_leader.GetFirstName] отверг нашу просьбу о защите, заявив, что у них нет ресурсов для охраны незначительного города, в то время как [GetTitleByKey('k_rohan').GetNameNoTier] ещё не умиротворен. Мы по-прежнему одни против всего мира и должны пересмотреть, к кому обратиться за защитой."
+ tharbad_story.0143.a: "Время выбрать новое направление."
+
+ tharbad_story.0200.t: "Начало исследования"
+ tharbad_story.0200.desc: "Вокруг Тарбада много руин. Если мы собираемся использовать их, чтобы помочь нашему городу развиваться, нам нужно знать, что там на самом деле находится. Для этого мы приказали провести полное исследование города и окрестностей. Наши агенты проинструктированы, карты нарисованы, команды назначены. Осталось только начать исследование."
+ tharbad_story.0200.a: "Начать исследование! - для его завершения потребуется около года"
+ tharbad_story.0200.success2: "В ходе исследования было обнаружено множество полезных руины"
+ tharbad_story.0200.success1: "В ходе исследования обнаружено несколько полезных руин"
+ tharbad_story.0200.failure: "В ходе исследования полезные руины не обнаружены"
+ tharbad_story.0200.effect: "Эффект по завершении"
+
+ tharbad_story.0201.t: "Исследование завершено"
+ tharbad_story.0201.desc: "Исследование завершено, и пришло время узнать, сколько пригодных для использования руин было найдено в окрестностях города. Эта информация поможет в восстановлении Тарбада на многие века вперёд! Если, конечно, они что-нибудь нашли. Будет обидно, если мы потратили все эти деньги впустую..."
+ tharbad_story.0201.a: "Пора взглянуть на результаты..."
+
+ tharbad_story.1000.t: "Вольный город Тарбад"
  tharbad_story.1000.desc: "Тарбад долгое время находился под совместным управлением [Concept('arnor', 'Арнора')|E] и [Concept('gondor', 'Гондора')|E], являясь буквальным мостом между двумя королевствами. Но юридическая реальность долгое время отличалась от фактического статуса. Сегодня это изменилось. Вольный город Тарбад теперь раз и навсегда принадлежит самому себе. Мы по-прежнему обязаны подчиняться [Concept('dunedain', 'дунэдайн')|E], но мы больше не подданные владык из владений [GetTitleByKey('d_minhiriath').GetNameNoTier] или [GetTitleByKey('d_swanfell').GetNameNoTier]. Мы не подчиняемся никому, кроме королей!"
  tharbad_story.1000.a: "Пора смириться с реальностью."
+
+ tharbad_story.1001.t: "[GetTitleByKey('k_gwathlo').GetName]"
+ tharbad_story.1001.desc: "Сероструй долгое время служил главным водным путем и центром торговли в [Concept('eriador', 'Эриадоре')|E], а его сверкающие города [GetTitleByKey('c_tharbad').GetNameNoTier], [GetTitleByKey('c_mistalonde').GetNameNoTier] и [GetTitleByKey('c_lond_daer').GetNameNoTier] были одними из самых богатых в мире во времена своего расцвета.\n\nОднако это время давно прошло. Три гавани не объединялись со времен [Concept('elendil', 'Элендиля')|E] и пребывали в разном состоянии упадка. Но довольно! Мы завладели Сероструем и его городами, и мы создадим из них нечто, способное соперничать с величием былых времен! Уже сейчас улицы расчищены, разрушенные стены восстановлены, а по реке плывут корабли. Пришло время Серострую отвоевать свое место в мире!"
+ tharbad_story.1001.a: "Наши враги будут сметены."

@@ -116,81 +116,81 @@
 
  ### Maresh Flavor Events ###
  harad.0026.t: "Мехор"
- harad.0026.desc: "Today I am inspecting the #italic Mekhor#!, the old, main canal that flows directly [GetTitleByKey('c_maresh').GetNameNoTier]. At the end of the canal is a sizable oasis with the same name. Anyhow, this canal has been an important source of water and used for a variety of purposes, such as irrigating nearby agriculture for centuries.\n\nI listen carefully as some of the specialists in charge of maintaining the canal explain some of the current issues with ensuring the canal remains in good condition. Apparently, they are worried about the state of the canal in the next few years, and are requesting I provide some additional resources - more than already allocated - to assist with the canal’s continued operation."
- harad.0026.a: "I believe the existing resources are sufficient. The city has other needs."
- harad.0026.b: "Very well, you shall have those resources - put them to good use!"
+ harad.0026.desc: "Сегодня я осматриваю #italic Мехор#!, древний, главный канал, который протекает прямо через [GetTitleByKey('c_maresh').GetNameNoTier]. В конце канала находится большой оазис с тем же названием. Как бы то ни было, этот канал был важным источником воды и использовался для различных целей, например для орошения близлежащих сельскохозяйственных угодий на протяжении веков.\n\nЯ внимательно слушаю, как рабочие, занимающиеся обслуживанием канала, объясняют некоторые текущие проблемы, связанные с поддержанием канала в хорошем состоянии. Судя по всему, они беспокоятся о состоянии канала в ближайшие несколько лет и просят меня выделить дополнительные ресурсы - больше, чем уже выделено, - чтобы помочь каналу продолжать функционировать."
+ harad.0026.a: "Я считаю, что имеющихся ресурсов достаточно. У города есть и другие потребности."
+ harad.0026.b: "Очень хорошо, вы получите эти ресурсы - используйте их с пользой!"
 
- harad.0027.t: "Coins of Maresh"
- harad.0027.desc: "[praising_merchant.GetFirstName], a visiting [trans_haradric_merchant|E], is explaining how highly people back in his homeland speak of the rose gold coins produced by the mints of [GetTitleByKey('b_arsasak').GetNameNoTier].\n\n“Truly,” [praising_merchant.GetFirstName] says while appraising a coin, “the coins minted here are of the highest quality. It’s no wonder they’re used all over the world!”"
- harad.0027.a: "We take great pride in this, my friend."
- harad.0027.a.tt: "He tosses me the coin and I catch it."
+ harad.0027.t: "Монеты Мареша"
+ harad.0027.desc: "[praising_merchant.GetFirstName], приезжий [Concept('trans_haradric_merchant', 'харадский купец')|E], рассказывает, как высоко отзываются на его родине о монетах из розового золота, отчеканенных монетными дворами #L [GetTitleByKey('b_arsasak').GetNameNoTier]а#!.\n\n«Воистину, - говорит [praising_merchant.GetFirstName], оценивая монету, - монеты, отчеканенные здесь, отличаются высочайшим качеством. Неудивительно, что они используются по всему миру!»"
+ harad.0027.a: "Мы очень гордимся этим, [Select_CString(praising_merchant.IsFemale, 'моя подруга', 'мой друг' )]."
+ harad.0027.a.tt: "Он подбрасывает мне монету, и я ловлю её."
 
- harad.0028.t: "Goldsmiths"
- harad.0028.desc: "As part of [trans_haradric_trade|E], a lot of gold passes through [GetTitleByKey('c_maresh').GetNameNoTier] to markets elsewhere in [GetGeographicalRegion('middleearth_harad').GetName]. As a result, there is a sizeable community of goldsmiths in the city who have practiced their craft for a long time. A few have settled down here recently, bolstering the existing community of artisans, and helping to enhance the city’s splendor by taking commissions from some of the local elites."
- harad.0028.a: "Perhaps I’ll have time to commission something myself one of these days."
- harad.0028.b: "I should give it a try myself!"
+ harad.0028.t: "Златокузнецы"
+ harad.0028.desc: "В рамках [Concept('trans_haradric_trade', 'харадской торговли')|E] через [GetTitleByKey('c_maresh').GetNameNoTier] проходит немало золота на рынки в других частях региона [GetGeographicalRegion('middleearth_harad').GetName]. В результате в городе устоялась значительная община златокузнецов, которые занимаются своим ремеслом уже долгое время. Несколько человек поселились здесь недавно, пополняя существующее сообщество ремесленников и способствуя росту великолепия города, принимая заказы от местной элиты."
+ harad.0028.a: "Возможно, когда-нибудь у меня появится время заказать что-нибудь [Select_CString(ROOT.Char.IsFemale, 'самой', 'самому' )]."
+ harad.0028.b: "Я [Select_CString(ROOT.Char.IsFemale, 'должена', 'должен' )] попробовать [Select_CString(ROOT.Char.IsFemale, 'сама', 'сам' )]!"
 
- harad.0029.t: "Maresh Ceramics"
- harad.0029.desc: "A lot of valuable commodities come from [GetGeographicalRegion('middleearth_harad_bayoformal_khy').GetName] and pass through [GetTitleByKey('c_maresh').GetNameNoTier] to markets in [nearharad|E]. However, one cannot say that the city doesn’t export its own products that are in high demand among the people of Khy.\n\nGlazed ceramics from Arysis, for example, have been greatly praised by many in the more southern regions, and recently there has been something of a boom in the business, with our artisans being able to sell more at better prices than before."
- harad.0029.a: "That’s nice to hear!"
- 
+ harad.0029.t: "Марешская керамика"
+ harad.0029.desc: "Многие ценные товары поступают из региона [GetGeographicalRegion('middleearth_harad_bayoformal_khy').GetName] и через [GetTitleByKey('c_maresh').GetNameNoTier] попадают на рынки [Concept('nearharad', 'Ближнего Харада')|E]. Однако нельзя сказать, что город не экспортирует собственную продукцию, которая пользуется большим спросом у жителей Кхая.\n\nНапример, глазурованная керамика из Аризиса высоко ценится многими жителями более южных регионов, и в последнее время в этом деле наблюдается некоторый бум: наши ремесленники могут продавать больше по более выгодным ценам, чем раньше."
+ harad.0029.a: "Приятно слышать!"
+
  ### Kjhana Flavor Events ###
- harad.0030.t: "Goats and Kjhana"
- harad.0030.desc: "I am visiting one of the [GetBuilding('kjhana_forest_01').GetName] in my realm today. A local woman explains to me how the goats, who climb the trees to eat the fruits and nuts, are most useful in extracting the kjhana plant’s valuable seeds, which are used to make food, oil, and more. Traditionally, women like her would harvest the seeds and then mix them with the tree's sap to create a powerful medicine.\n\n“Some people think it’s the goat feces that is the key to this all,” the woman laughs, “but it’s actually the cud that helps us crack the kjhana nuts. It’s dirty business, my [ROOT.Char.GetLadyLord], but we women are proud of our work.”"
- harad.0030.a: "If it works, it works."
- harad.0030.a.arrogant: "Even watching this is beneath me."
- harad.0030.a.cynical: "So you rifle through goat puke?"
- harad.0030.b: "Let me help you!"
- harad.0030.c: "How do you manage so many goats?"
- harad.0030.d: "How do you mix the Oil and the Sap?"
- 
- harad.0031.t: "Kjhana Oil"
- harad.0031.desc: "Today, I met with [kjhana_merchant.GetFirstName], an influential [trans_haradric_merchant|E], who gifted me a flask of kjhana oil from [kjhana_county.GetNameNoTier] to commemorate the occasion.\n\n "It may not look like much, but it is very valuable! [GetBuilding('kjhana_forest_01').GetName] only grow in northern [GetGeographicalRegion('middleearth_harad_bayoformal_harshandatt').GetName].", [kjhana_merchant.GetSheHe] explains,\n\n"They extract the oil from its fruits, and then mix it with the tree's sap to create a powerful medicine. I've found that it can also be used in cooking, by combining it with honey, figs, and other sweet delicacies."
- harad.0031.a: "Perhaps this will help my affliction!"
- harad.0031.b: "Thank you, this will be useful."
- harad.0031.c: "Stay a while! Why don't we enjoy it together?"
- harad.0031.c.success: "[kjhana_merchant.GetFirstNameNoTooltip] stays at court"
- harad.0031.c.failure: "[kjhana_merchant.GetFirstNameNoTooltip] really should get going"
- harad.0031.c.failure.tt: "At least the Kjhana was nice"
- 
+ harad.0030.t: "Козы и кьяна"
+ harad.0030.desc: "Сегодня я посещаю [GetBuilding('kjhana_forest_01').GetName] в своей державе. Местная жительница объясняет мне, что козы, которые забираются на деревья, чтобы полакомиться фруктами и орехами, наиболее полезны для извлечения ценных семян растения кьяна, которые используются для производства продуктов питания, масла и многого другого. Традиционно женщины, подобные ей, собирали семена, а затем смешивали их с соком дерева, чтобы создать мощное лекарство.\n\n«Некоторые думают, что ключ ко всему этому - козий навоз, - смеется женщина, - но на самом деле это жвачка, которая помогает нам расколоть орехи кьяны. Это грязный труд, [Select_CString(ROOT.Char.IsFemale, 'моя госпожа', 'мой господин' )], но мы, женщины, гордимся своей работой»."
+ harad.0030.a: "Если это работает, значит, так и должно быть."
+ harad.0030.a.arrogant: "Даже смотреть на это - ниже моего достоинства."
+ harad.0030.a.cynical: "Значит, вы разгребаете козьи отходы?"
+ harad.0030.b: "Позвольте мне помочь вам!"
+ harad.0030.c: "Как вы справляетесь с таким количеством коз?"
+ harad.0030.d: "Как смешать масло с соком?"
+
+ harad.0031.t: "Кьяновое масло"
+ harad.0031.desc: "Сегодна передо мной [Select_CString(kjhana_merchant.IsFemale, 'предстала', 'предстал' )] [kjhana_merchant.GetFirstName], влиятельный [Concept('trans_haradric_merchant', 'харадский купец')|E], [Select_CString(kjhana_merchant.IsFemale, 'которая подарила', 'который подарил' )] мне в честь этого события флягу кьянового масла из провинции [kjhana_county.GetNameNoTier].\n\n«Может, оно и не выглядит особенным, но оно очень ценное! [GetBuilding('kjhana_forest_01').GetName] растут только на севере региона [GetGeographicalRegion('middleearth_harad_bayoformal_harshandatt').GetName]», - объясняет [kjhana_merchant.GetSheHe].\n\n«Они добывают масло из его плодов, а затем смешивают его с соком дерева, чтобы создать мощное лекарство. Я [Select_CString(kjhana_merchant.IsFemale, 'обнаружила', 'обнаружил' )], что его также можно использовать в кулинарии, смешивая с медом, инжиром и другими сладкими лакомствами»."
+ harad.0031.a: "Возможно, это поможет моему недугу!"
+ harad.0031.b: "Спасибо, это будет полезно."
+ harad.0031.c: "Останься ненадолго! Почему бы нам не насладиться этим вместе?"
+ harad.0031.c.success: "[kjhana_merchant.GetFirstNameNoTooltip] остаётся при дворе"
+ harad.0031.c.failure: "[kjhana_merchant.GetFirstNameNoTooltip] слишком торопится отправиться в путь"
+ harad.0031.c.failure.tt: "По крайней мере, кьяна была хороша."
+
  ### Mud Mason Flavor Events ###
- harad.0032.t: "Repairing a Mud Structure"
- harad.0032.desc: "A structure in [mason_county.GetNameNoTier] is in dire need of repairs, as its stability has recently suffered greatly. It is built in the typical [mason_culture.GetName] manner, using traditional mudbricks.\n\nAnyways, I have contacted the local [mud_masons|E]’ guild about doing repairs. A master mason, after inspecting the area, says it should be no trouble to reinforce the existing mud structure, but after consulting with some locals, says it is clear that dark and malevolent spirits are present here, and asks for my permission to perform some sacred rites, blessing every individual brick."
- harad.0032.a: "You should focus on these load-bearing elements..."
- harad.0032.b: "Perform your rites of cleansing."
- harad.0032.c: "Superstition! Just get it fixed."
- harad.0032.resolved: "The situation is resolved"
+ harad.0032.t: "Ремонт глиняного строения"
+ harad.0032.desc: "Строение во владении [mason_county.GetNameNoTier] очень нуждается в ремонте, так как его устойчивость недавно сильно пострадала. Оно построено в типичной #L [mason_culture.GetCollectiveNoun|l]ой#! манере, с использованием традиционных глинобитных кирпичей.\n\nТак или иначе, я [Select_CString(ROOT.Char.IsFemale, 'связалась', 'связался' )] с местной гильдией [Concept('mud_masons', 'глинобитщиков')|E] по поводу ремонта. Гильдейский старшина, осмотрев местность, сказал, что укрепить существующую глинобитную конструкцию не составит труда, но, посоветовавшись с местными жителями, заявил, что здесь явно присутствуют темные и злые духи, и попросил у меня разрешения совершить несколько священных обрядов, благословив каждый отдельный кирпич."
+ harad.0032.a: "Вам следует обратить внимание на эти несущие элементы..."
+ harad.0032.b: "Совершите обряд очищения."
+ harad.0032.c: "Суеверие! Просто почините его."
+ harad.0032.resolved: "Ситуация разрешена"
 
- harad.0033.t: "Secrets of the Mud Masons"
- harad.0033.desc: "[mud_masons|E] are an ubiquitous part of [mason_province.GetCulture.GetName] society. It is they who build and maintain many of the buildings we use everyday.\n\nWhile visiting [mason_county.GetNameNoTier], I pass by some mud masons, who are in the process of constructing a large house for one of the locals. I observe them for some time as they perform daily blessing rituals.\n\nI cannot help but try to eavesdrop on their [mason_province.GetCounty.GetFaith.GetAdjective] recitations and prayers, yet I cannot make out any clear words. Alas, the mud masons are notoriously protective of their secret knowledge, and never reveal it to outsiders. I have heard that some masons even hide the secrets they learned from their masters from other fellow masons!"
- harad.0033.a: "Their secrets must be powerful!"
- harad.0033.b: "Maybe these rituals are all for show."
+ harad.0033.t: "Тайны глинобитщиков"
+ harad.0033.desc: "[Concept('mud_masons', 'Глинобитщики')|E] - вездесущая часть #L [mason_province.GetCulture.GetCollectiveNoun|l]ого#! общества. Именно они строят и поддерживают многие здания, которыми мы пользуемся каждый день.\n\nВо время посещения владения [mason_county.GetNameNoTier] я прохожу мимо нескольких глинобитщиков, которые занимаются строительством большого дома для одного из местных жителей. Некоторое время я наблюдаю за ними, пока они выполняют ежедневные ритуалы благословения.\n\nЯ пытаюсь подслушать их #L [mason_province.GetCounty.GetFaith.GetName|l]ие#! напевы и молитвы, но не могу разобрать ни одного внятного слова. Увы, глинобитщики, как известно, берегут свои тайные знания и никогда не раскрывают их посторонним. Я [Select_CString(ROOT.Char.IsFemale, 'слышала', 'слышал' )], что некоторые из них даже скрывают секреты, которые они узнали от своих мастеров, от других глинобитщиков!"
+ harad.0033.a: "Их секреты должны быть очень сильными!"
+ harad.0033.b: "Возможно, все эти ритуалы - просто показуха."
 
- harad.0034.t: "A New Contract for Mud Masonry"
- harad.0034.desc: "Most [ROOT.Char.GetCulture.GetName] families have a contract with a master [mud_mason|E], who is responsible for doing regular maintenance on the mud structures that make up many of our buildings.\n\nAlas, the master mason who my family had contracted out to for many years recently passed away. Traditionally, contracts pass from the master mason to his apprentice, who is typically a relative.\n\nI am in fact familiar with the new master mason, having observed him at work before. I have great confidence in his abilities, and he likewise assures me he will continue to honour his kinsman’s legacy by working hard to maintain my family’s buildings."
- harad.0034.a: "I am sure you will do well."
+ harad.0034.t: "Новый контракт глинобитщиков"
+ harad.0034.desc: "У большинства #L [ROOT.Char.GetCulture.GetCollectiveNoun|l]их#! семей есть контракт с мастером-[Concept('mud_mason', 'глинобитщиком')|E], который отвечает за регулярное обслуживание глинобитных конструкций, из которых построены многие наши здания.\n\nУвы, мастер, с которым моя семья заключала контракт в течение многих лет, недавно скончался. Традиционно контракты переходят от мастера к его ученику, который, как правило, является родственником.\n\nЯ хорошо [Select_CString(ROOT.Char.IsFemale, 'знакома', 'знаком' )] с новым мастером, раньше [Select_CString(ROOT.Char.IsFemale, 'наблюдала', 'наблюдал' )] его за работой. Я очень [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] в его способностях, и он также заверил меня, что будет и дальше чтить наследие своего родственника, усердно работая над поддержанием зданий моей семьи."
+ harad.0034.a: "Я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )], что у вас всё получится."
 
- harad.0035.t: "Protection for Mud Buildings"
- harad.0035.desc: "I need to construct a small structure in my residence complex, and have employed a number of [ROOT.Char.GetCulture.GetName] [mud_masons|E] to do the job. As expected, they perform a number of sacrifices, prayers, and other rituals before they start.\n\nHowever, the head mason informs me that the site could use some extra protection from benevolent spirits. If it is fine with me, I need to acquire some grain and animal bones, for the masons to bury them at the corners of the future building."
- harad.0035.a: "We have enough protection already."
- harad.0035.b: "It doesn’t hurt to be extra careful."
- harad.0035.c: "I don’t condone non-[ROOT.Char.GetFaith.GetReligion.GetAdjective] heathen practices!"
- 
+ harad.0035.t: "Защита глинобитных построек"
+ harad.0035.desc: "Мне нужно построить небольшое строение в своём жилище, и я [Select_CString(ROOT.Char.IsFemale, 'наняла', 'нанял' )] несколько #L [ROOT.Char.GetCulture.GetCollectiveNoun|l]их#! [Concept('mud_masons', 'глинобитщиков')|E] для выполнения этой работы. Как и ожидалось, перед началом работы они совершают ряд жертвоприношений, молитв и других ритуалов.\n\nОднако главный глинобитщик сообщает мне, что этому месту не помешает дополнительная защита от злых духов. Если я не против, мне нужно раздобыть немного зерна и костей животных, чтобы они закопали их по углам будущего здания."
+ harad.0035.a: "У нас и так достаточно защиты."
+ harad.0035.b: "Предельная осторожность не повредит."
+ harad.0035.c: "Я не стану потворствовать безбожным не-#L [ROOT.Char.GetFaith.GetReligion.GetName|l]им#! обрядам!"
+
  ### Ammu Bâj / Uljun Flavor Event ###
- harad.0036.t: "Whispers of the Ammu Bâj"
- harad.0036.desc: "The Ammu Bâj is the last major forest of [GetGeographicalRegion('middleearth_harad_bayoformal_khy').GetName], still standing in the [thirdage|E]. It is one of the few places where the monumental Black Uljun trees grow. Black Uljun is incredibly valuable, as it is as sturdy as metal and an excellent material for shipbuilding.\n\nRecently however, workers report hearing strange whispers and seeing shadowy figures between the dense foliage. As a result, our lumbering efforts have slowed down significantly, and it is up to me to decide what to do now."
- harad.0036.a: "Armed Guards will accompany our workers"
- harad.0036.b: "Send Priests to ward off the Dark Spirits"
- harad.0036.c: "Mere superstition! The Ammu Bâj is a wood like any other."
- 
+ harad.0036.t: "Шёпот Амму-Бая"
+ harad.0036.desc: "Амму-Бай - последний крупный лес в регионе [GetGeographicalRegion('middleearth_harad_bayoformal_khy').GetName], сохранившийся в [thirdage|E]Третьей эпохе. Это одно из немногих мест, где растут монументальные чёрные ульджуновые деревья. Черный ульджун невероятно ценен: он прочен, как металл, и является отличным материалом для кораблестроения.\n\nОднако в последнее время рабочие сообщают, что слышат странный шепот и видят теневые фигуры между густой листвой. В результате наши работы по заготовке древесины значительно замедлились, и мне предстоит решить, что делать дальше."
+ harad.0036.a: "Наших рабочих будут сопровождать вооружённые стражники."
+ harad.0036.b: "Послать жрецов, чтобы отогнать тёмных духов."
+ harad.0036.c: "Простое суеверие! Амму Бай - такой же лес, как и все остальные."
+
  ### Trans-Haradric Merchant Flavor Events ###
- harad.0037.t: "A Merchant Dispute"
- harad.0037.desc: "Many [trans_haradric_merchants|E] pass through my lands, and the trade they bring offers us a  chance to obtain goods from faraway lands.\n\nToday however, a dispute has broken out between two merchants. What started as a minor disagreement over the details of a lucrative trade deal now threatens to become violent, as  both caravans are accompanied by an armed retinue.\n\nI have to do something, or this could end in a bloodbath."
- harad.0037.a: "I will personally negotiate."
- harad.0037.b: "[steward.GetFirstName], take care of it."
- harad.0037.c: "Take this outside our walls."
- harad.0037.a.success: "The Dispute is settled peacefully"
- harad.0037.a.failure: "The Dispute ends in bloodshed"
+ harad.0037.t: "Купеческий спор"
+ harad.0037.desc: "Многие [Concept('trans_haradric_merchants', 'харадские купцы')|E] проезжают через мои земли, и торговля, которую они ведут, дает нам возможность получать товары из далеких земель.\n\nОднако сегодня между двумя купцами разгорелся спор. То, что началось как незначительное разногласие по поводу деталей выгодной торговой сделки, теперь грозит перерасти в насилие, поскольку оба каравана сопровождает вооруженная свита.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] что-то предпринять, иначе все может закончиться кровавой бойней."
+ harad.0037.a: "Я лично проведу переговоры."
+ harad.0037.b: "[steward.GetFirstName], займись этим."
+ harad.0037.c: "Спорьте за пределами наших стен."
+ harad.0037.a.success: "Спор разрешён мирным путём"
+ harad.0037.a.failure: "Спор заканчивается кровопролитием"
 
  ###############################
  ##### DECISION/STORY EVENTS ###
@@ -292,26 +292,26 @@
  harad.0226.a:0 "Встаньте, сыны Харвана!"
 
  ### Arysis/Maresh Prosperity Decisions ###
- harad.0300.t: "A Dune Sea Entrepot"
- harad.0300.desc: "Recently, large numbers of people have come from elsewhere to the remote deserts of Arysis. Some are refugees or fugitives, exiled from their homelands whether through force or a desire to escape chaos. Others are remnants of religious dissidents dubbed heretics by their enemies. Yet others are adventurers, mercenaries, and daring merchants, who seek wealth and fame on the fickle roads of [harad|E].\n\nI have made efforts to recruit and entice many of these people and their families to settle in [GetTitleByKey('c_maresh').GetNameNoTier]. Although the Great Sand Sea has seen its fair share of adventurous caravaneers hoping to make a fortune by crossing the dangerous Mirror of Fire in the past, trade is now steadily increasing between [GetGeographicalRegion('middleearth_harad_bayoformal_khy').GetName] and [GetGeographicalRegion('middleearth_harad_near_harnen').GetName], and [GetTitleByKey('c_maresh').GetNameNoTier] is quickly becoming a major stopping point for [trans_haradric_merchants|E] along these trade networks. Mark my words - generations from now, [GetTitleByKey('c_maresh').GetNameNoTier] will prosper beyond our wildest imaginations!"
- harad.0300.a: "With their diverse perspectives and skills, these settlers will help the city flourish."
- 
- harad.0301.t: "The Code of Maresh"
- harad.0301.desc: "With [GetTitleByKey('c_maresh').GetNameNoTier]'s increasing prominence as a rest stop for [trans_haradric_merchants|E], conflict inevitably arose among the different people that now called the oasis their home. For a time, this was negligible, but the conflicts plaguing the oasis have become too large to ignore. The folk of Maresh - divided by religion and culture - have turned on one another, and everyday petty misunderstandings have led to open feuds between the different families and communities, threatening [maresh_prosperity|E].\n\nUntil now.\n\nWe are tired of this senseless bickering. Through relentless study, exploration of local customs, and mediation between the clans, I have convinced various parties in these feuds to sit together and negotiate a tenuous peace. Together, we have drafted the foundation for a legal code, a synthesis between our different traditions. Despite our differences, we call this oasis home, and our varied perspectives can, once again, lay the foundation for the city’s strength."
- harad.0301.a: "We can, and must, rebuild [GetTitleByKey('c_maresh').GetNameNoTierNoTooltip]."
- 
- harad.0302.t: "Maresh's Mint"
- harad.0302.desc: "[GetTitleByKey('c_maresh').GetNameNoTier] lies at a rather strategic location, at least economically speaking. A lot of Dune Sea trade passes through the city, which means a lot of precious gold makes its way here, not to mention the local copper deposits.\n\nI and other leaders in [GetTitleByKey('c_maresh').GetNameNoTier] have laid the groundwork for a mint to be established here. Created from Bellanarûd gold and local copper, these coins will be used throughout Arysis and beyond."
- harad.0302.a: "This will raise the city’s standing around the world."
- 
- harad.0303.t: "Hydraulic Projects along the Rysis"
- harad.0303.desc: "The settlement of [GetTitleByKey('c_maresh').GetNameNoTier] lies along the Rysis River, and for centuries, there have been a number of local hydraulics projects to expand the city’s water supply. At the urging of several local leaders, I have decided to invest in coordinating these engineering projects and spearheading new ones in order to maximise the potential water resources available. These projects range from dams, canals, underground pipes, and diverting the Rysis itself, among other things."
- harad.0303.a: "It is a nessecary evil."
- harad.0303.b: "Water gives life in these arid lands."
- 
- harad.0304.t: "Walls around Maresh"
- harad.0304.desc: "Although [GetTitleByKey('c_maresh').GetNameNoTier] itself has some defensive networks built over the years, there are many smaller suburbs, farms, and market areas stretching beyond the city’s core into the rest of the oasis where the city is located. Some of these outside areas are somewhat protected by smaller defensive outposts and various fortified villages, but I and other community leaders have decided a more permanent and lasting form of protection is needed.\n\nAs such, I have ordered the construction of a wall around much of the oasis itself, with several gates serving as the entryway into Maresh. These majestic fortifications, befitting a prosperous oasis like Maresh, shall serve to protect, intimidate, and inspire."
- harad.0304.a: "Good!"
+ harad.0300.t: "Перевалочный пункт Моря Дюн"
+ harad.0300.desc: "В последнее время в отдаленные пустыни Аризиса из других мест прибывает множество людей. Некоторые из них - беженцы или беглецы, изгнанные из родных мест силой или желанием спастись от хаоса. Другие - остатки религиозных диссидентов, прозванных врагами еретиками. Другие - авантюристы, наемники и смелые торговцы, ищущие богатства и славы на переменчивых дорогах [Concept('harad', 'Харада')|E].\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'приложила', 'приложил' )] усилия, чтобы завербовать и переманить многих из этих людей и их семьи, чтобы они поселились в #L [GetTitleByKey('c_maresh').GetNameNoTier]е#!. Хотя в прошлом Великое Песчаное море не обходилось без авантюрных караванщиков, надеющихся заработать на пересечении опасного Огненного зеркала, сейчас торговля между регионами [GetGeographicalRegion('middleearth_harad_bayoformal_khy').GetName] и [GetGeographicalRegion('middleearth_harad_near_harnen').GetName] усиленно развивается, а [GetTitleByKey('c_maresh').GetNameNoTier] быстро становится главным перевалочным пунктом для [Concept('trans_haradric_merchants', 'харадских купцов')|E] вдоль этих торговых сетей. Попомните мои слова - через несколько поколений [GetTitleByKey('c_maresh').GetNameNoTier] будет процветать за пределами наших самых смелых фантазий!"
+ harad.0300.a: "Благодаря своему разнообразию взглядов и навыков эти поселенцы помогут городу процветать."
+
+ harad.0301.t: "Свод законов Мареша"
+ harad.0301.desc: "С ростом известности #L [GetTitleByKey('c_maresh').GetNameNoTier]а#! как перевалочной базы [Concept('trans_haradric_merchants', 'харадских купцов')|E] неизбежно возникли конфликты между разными людьми, которые теперь называют оазис своим домом. Какое-то время они были незначительными, но конфликты, охватившие оазис, стали слишком масштабными, чтобы их игнорировать. Жители Мареша, разделенные религией и культурой, ополчились друг на друга, а мелкие недоразумения привели к открытой вражде между различными семьями и общинами, угрожая [Concept('maresh_prosperity', 'процветанию Мареша')|E].\n\nИ так до сих пор.\n\nМы устали от этих бессмысленных препирательств. Благодаря неустанным исследованиям, изучению местных обычаев и посредничеству между кланами я [Select_CString(ROOT.Char.IsFemale, 'убедила', 'убедил' )] различные стороны в этой вражде сесть вместе и договориться о непростом мире. Вместе мы составили основу для свода законов - синтеза наших разных традиций. Несмотря на наши разногласия, мы называем этот оазис своим домом, и наши различные взгляды могут снова заложить основу для могущества города."
+ harad.0301.a: "Мы можем и должны перестроить [GetTitleByKey('c_maresh').GetNameNoTierNoTooltip]."
+
+ harad.0302.t: "Чеканный двор Мареша"
+ harad.0302.desc: "[GetTitleByKey('c_maresh').GetNameNoTier] находится в довольно стратегически важном месте, по крайней мере, с экономической точки зрения. Через город проходит большая часть торговли Моря Дюн, а значит, сюда попадает много драгоценного золота, не говоря уже о местных месторождениях меди.\n\nЯ и другие лидеры #L [GetTitleByKey('c_maresh').GetNameNoTier]а#! заложили основу для создания здесь монетного двора. Созданные из белланарудского золота и местной меди, эти монеты будут использоваться по всему Аризису и за его пределами."
+ harad.0302.a: "Это поднимет престиж города во всём мире."
+
+ harad.0303.t: "Гидравлические сооружения вдоль Ризиса"
+ harad.0303.desc: "Поселение [GetTitleByKey('c_maresh').GetNameNoTier] расположено вдоль реки Ризис, и на протяжении столетий в городе осуществлялся ряд местных проектов по гидравлике, призванных расширить его водоснабжение. По настоянию нескольких местных лидеров я [Select_CString(ROOT.Char.IsFemale, 'решила', 'решил' )] вложить средства в координацию этих инженерных проектов и инициировать новые, чтобы максимально использовать имеющиеся водные ресурсы. Эти проекты включают в себя плотины, каналы, подземные трубы и отвод самой реки Ризис, а также многое другое."
+ harad.0303.a: "Это неизбежное зло."
+ harad.0303.b: "Вода дарит жизнь этим засушливым землям."
+
+ harad.0304.t: "Стены вокруг Мареша"
+ harad.0304.desc: "Хотя в самом городе [GetTitleByKey('c_maresh').GetNameNoTier] за многие годы было построено несколько оборонительных сетей, есть множество небольших пригородов, ферм и рыночных районов, простирающихся за пределы городского ядра в остальную часть оазиса, где расположен город. Некоторые из этих внешних районов в некоторой степени защищены небольшими оборонительными заставами и различными укрепленными деревнями, но я и другие лидеры общины решили, что необходима более постоянная и долговременная форма защиты.\n\nПоэтому я [Select_CString(ROOT.Char.IsFemale, 'приказала', 'приказал' )] построить стену вокруг большей части оазиса, а несколько ворот служат входом в Мареш. Эти величественные укрепления, подобающие такому процветающему оазису, как Мареш, будут служить для защиты, устрашения и вдохновения."
+ harad.0304.a: "Отлично!"
 
  harad.0305.t:0 "Возвышение Аризиса"
  harad.0305.desc:0 "Мои глашатаи отправляются из столицы [ROOT.Char.GetCapitalLocation.GetName], чтобы разнести весть о моем провозглашении по всем четырем уголкам моей державы. Королевство Аризис возвышается!\n\nС миром и стабильностью, которые я [Select_CString(ROOT.Char.IsFemale, 'принесла', 'принес' )] в мою державу, торговля, несомненно, начнет расти еще больше, поскольку через Аризис проходят жизненно важные пути из Сирайна и Кхая на юге и востоке, а также из Кханда и Харондора на севере и западе.\n\nПусть никто и никогда не сомневается в единстве Аризиса!"
@@ -330,67 +330,67 @@
  harad.0500.c:0 "Пожалуй, стоит подкопить..."
 
  ### Mud Masons Decision ###
- harad.0550.t: "The Mud Masons"
- harad.0550.desc: "I have contacted the [mud_masons|E] guild in my realm, notifying them about various building projects I want them to be involved in. As keepers of sacred knowledge, the rituals they perform during architectural work will also bless our buildings and protect them from harm.\n\n"
- harad.0550.desc.culture: "We [ROOT.Char.GetCulture.GetCollectiveNoun] possess an innate understanding of [GetCultureTradition('tradition_mud_masons').GetName] that outsiders simply do not. I am confident in these masons’ ability to harness the [ROOT.Char.GetCulture.GetNameNoTooltip] wisdom passed down for generations.\n\n"
- harad.0550.desc.castle: "Anyways, I want the masons to focus on constructing new buildings or maintaining existing ones in my [castle_holdings|E]. We need to ensure our walls and defenses are strong!"
- harad.0550.desc.city: "Anyways, I wish for the masons to focus on constructing new buildings or maintaining existing ones in my [city_holdings|E]. Their hard work will ensure our settlements continue to prosper."
- harad.0550.desc.church: "Anyways, I indicated to the masons that I want them to focus on constructing new buildings or maintaining existing ones in my [church_holdings|E]. [ROOT.Char.GetFaith.HighGodName] will surely be pleased with this!"
- harad.0550.desc.settlement: "Anyways, I instructed the masons to focus on quickly constructing new buildings in my [settlement_holdings|E]. Our colonization efforts will surely be bolstered by this!"
- harad.0550.desc.general: "Anyways, I instructed the masons to focus constructing new buildings or maintaining existing ones in a variety of my [holdings|E]. There is a lot of work that needs to be done throughout my realm."
- harad.0550.a: "Their hard work is essential to our community."
+ harad.0550.t: "Глинобитщики"
+ harad.0550.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'связалась', 'связался' )] с гильдией [Concept('mud_masons', 'глинобитщиков')|E] в своей державе и [Select_CString(ROOT.Char.IsFemale, 'уведомила', 'уведомил' )] их о различных строительных проектах, в которых я хочу их задействовать. Как хранители священных знаний, ритуалы, которые они проводят во время архитектурных работ, также благословят наши здания и защитят их от вреда.\n\n"
+ harad.0550.desc.culture: "Мы, [ROOT.Char.GetCulture.GetCollectiveNoun|l], обладаем врождённым пониманием такого искусства, как «[GetCultureTradition('tradition_mud_masons').GetName]», которое неведомо чужакам. Я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] в способности этих глинобитщиков использовать [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip]ую мудрость, передаваемую поколениями.\n\n"
+ harad.0550.desc.castle: "В общем, я хочу, чтобы каменщики сосредоточились на строительстве новых или поддержании существующих зданий в моих [Concept('castle_holdings', 'замковых владениях')|E]. Мы должны быть уверены, что наши стены и оборона крепки!"
+ harad.0550.desc.city: "В любом случае, я хочу, чтобы каменщики сосредоточились на строительстве новых или поддержании существующих зданий в моих [Concept('city_holdings', 'городских владениях')|E]. Их упорный труд обеспечит дальнейшее процветание наших поселений."
+ harad.0550.desc.church: "В общем, я [Select_CString(ROOT.Char.IsFemale, 'сказала', 'сказал' )] каменщикам, что хочу, чтобы они сосредоточились на строительстве новых или поддержании существующих зданий в моих [Concept('church_holdings', 'храмовых владениях')|E]. [ROOT.Char.GetFaith.HighGodName], несомненно, благословит это!"
+ harad.0550.desc.settlement: "В общем, я [Select_CString(ROOT.Char.IsFemale, 'приказала', 'приказал' )] каменщикам сосредоточиться на быстром возведении новых зданий в моих [Concept('settlement_holdings', 'поселениях')|E]. Наши усилия по колонизации, несомненно, будут подкреплены этим!"
+ harad.0550.desc.general: "Так или иначе, я [Select_CString(ROOT.Char.IsFemale, 'поручила', 'поручил' )] каменщикам сосредоточиться на строительстве новых или поддержании существующих зданий в моих различных [Concept('holdings', 'владениях')|E]. По всей моей державе нужно проделать много работы."
+ harad.0550.a: "Их тяжёлая работа очень важна для нашего общества."
 
 
  ### Trans-Haradric Merchant Events ###
- harad.0600.t: "$travel_event_prefix$ Trans-Haradric Trade"
- harad.0600.desc: "By traveling together with [merchant.GetFirstName] and [merchant.GetHerHis] merchant caravans, I have come across business opportunities that I would not have otherwise.\n\nWhile in [ROOT.Char.GetCurrentLocation.GetName], we were able to secure a favorable trade deal with merchants we met there. I could accept the deal as is, or risk it and haggle to get even more out of the other merchants, but they might refuse and the deal might fall through."
- harad.0600.a: "The original agreement is fine."
- harad.0600.b: "I'll haggle to try to get more."
- harad_merchant_tongue_easier_haggling: "[GetModifier('harad_merchant_tongue').GetNameWithTooltip]: Haggling is #P easier#!\n"
- harad.0600.b.failure: "Your haggling #N fails#!!"
- harad.0600.b.success: "Your haggling #P succeeds#!!"
- trans_haradric_merchant_trait_gain_tooltip: "#weak You previously secured #V [GetPlayer.MakeScope.Var('trans_haradric_merchant_success_count').GetValue]#! successful trade deals along Haradric trade routes. The more deals you conclude, the higher the chances of gaining the [GetTrait('lifestyle_trans_haradric_merchant').GetName( GetNullCharacter )] [trait|E].#!"
- trans_haradric_number_of_successes_tooltip: "#weak You previously secured #V [GetPlayer.MakeScope.Var('trans_haradric_merchant_success_count').GetValue]#! successful trade deals along Haradric trade routes.#!"
- 
- harad.0601.t: "A [trans_haradric_merchant|E] from Near Harad"
- harad.0601.desc.intro_networker: "Recently, I’ve made efforts to reach out and network with merchants who do business along the trade routes that criss-cross the [GetGeographicalRegion('middleearth_dunesea').GetName] desert and connect [nearharad|E] and [farharad|E]. My efforts have not been in vain, as I have acquainted myself with one such merchant named [trans_haradric_merchant_spawn.GetFullName]."
- harad.0601.desc.intro_normal: "For centuries, merchants have criss-crossed the [GetGeographicalRegion('middleearth_harad_near_harnen').GetName] desert along the trade routes that connect [nearharad|E] and [farharad|E] to exchange trade goods ranging from gold and salt to slaves, ivory, and spices. I have recently acquainted myself with one such merchant named [trans_haradric_merchant_spawn.GetFullName]."
- harad.0601.desc: "\n\n[trans_haradric_merchant_spawn.GetFirstNameNoTooltip] hails from one of the many [trans_haradric_merchant_spawn.GetCulture.GetName] communities that dot the region. Traders like [trans_haradric_merchant_spawn.GetHerHim] have connections with other [Concept('nearharad', 'Near Haradric')|E] merchants everywhere around Umbar, Haruzan, and beyond.\n\nAnyways, following some discussions, [trans_haradric_merchant_spawn.GetSheHe] has offered to network me with other Near Haradric merchant communities to promote the growth of trade in my realm. I am even considering employing [trans_haradric_merchant_spawn.GetHerHim] at my court so that we can work closely together in the future."
- harad.0601.a: "After we're done here, would you like to join my court, [trans_haradric_merchant_spawn.GetFirstName]?"
- harad.0601.b: "A good deal. It was a pleasure working with you, [trans_haradric_merchant_spawn.GetFirstName]."
- harad.0601.c: "Thinking it over, I'm not interested in doing this."
- 
- harad.0602.t: "A[trans_haradric_merchant|E] from Far Harad"
- harad.0602.desc: "\n\n[trans_haradric_merchant_spawn.GetFirstNameNoTooltip] hails from one of the many [trans_haradric_merchant_spawn.GetCulture.GetName] communities that dot the region. Gold and salt are their primary goods they deal in, though they trade many things.\n\nAnyways, following some discussions, [trans_haradric_merchant_spawn.GetSheHe] has offered to network me with other [Concept('farharad', 'Far Haradric')|E] merchant communities to promote the growth of trade in my realm. I am even considering employing [trans_haradric_merchant_spawn.GetHerHim] at my court so that we can work closely together in the future."
- 
- harad.0603.t: "A [trans_haradric_merchant|E] from Khy"
- harad.0603.desc: "\n\n[trans_haradric_merchant_spawn.GetFirstNameNoTooltip] hails from one of the many [trans_haradric_merchant_spawn.GetCulture.GetName] communities that dot the region. The Khyan people have played an important role in the flourishing of the region’s trade.\n\nAnyways, following some discussions, [trans_haradric_merchant_spawn.GetSheHe] has offered to network me with other Khyan merchant communities to promote the growth of trade in my realm. I am even considering employing [trans_haradric_merchant_spawn.GetHerHim] at my court so that we can work closely together in the future."
+ harad.0600.t: "$travel_event_prefix$ Харадская торговля"
+ harad.0600.desc: "Путешествуя вместе с купеческим караваном, который возглавляет [merchant.GetFirstName], я [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] возможности для дел, которые не [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] бы в противном случае.\n\nНаходясь во владении [ROOT.Char.GetCurrentLocation.GetName], мы смогли заключить выгодную торговую сделку с купцами, которых мы там встретили. Я могу принять сделку как есть или рискнуть и поторговаться, чтобы выторговать у других торговцев ещё больше, но они могут отказаться, и сделка может сорваться."
+ harad.0600.a: "Первоначальное соглашение вполне приемлемо."
+ harad.0600.b: "Я поторгуюсь, чтобы получить больше."
+ harad_merchant_tongue_easier_haggling: "[GetModifier('harad_merchant_tongue').GetNameWithTooltip]: Торг #P упрощается#!\n"
+ harad.0600.b.failure: "Ваш торг #N не удался#!!"
+ harad.0600.b.success: "Ваш торг #P успешен#!!"
+ trans_haradric_merchant_trait_gain_tooltip: "#weak Ранее вы заключили #V [GetPlayer.MakeScope.Var('trans_haradric_merchant_success_count').GetValue]#! успешных торговых сделок на харадских торговых путях. Чем больше сделок вы заключите, тем выше шансы получить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_trans_haradric_merchant').GetName( GetNullCharacter )]».#!"
+ trans_haradric_number_of_successes_tooltip: "#weak Ранее вы заключили #V [GetPlayer.MakeScope.Var('trans_haradric_merchant_success_count').GetValue]#! успешных торговых сделок на харадских торговых путях.#!"
 
- harad.0604.t: "A [trans_haradric_merchant|E] from Sîrayn"
- harad.0604.desc: "\n\n[trans_haradric_merchant_spawn.GetFirstNameNoTooltip] hails from one of the many [trans_haradric_merchant_spawn.GetCulture.GetName] communities that dot the region. Seen anywhere the spice trade blossoms, the merchants of [GetGeographicalRegion('middleearth_bayoformal_sirayn').GetName], many of whom are [namalo|E], have interconnected webs of contacts all across [middleearth|E]. Though the spice trade mostly flows by sea, part of them still make the trek through the Dune Sea.\n\nAnyways, following some discussions, [trans_haradric_merchant_spawn.GetSheHe] has offered to network me with other Sîrayni merchant communities to promote the growth of trade in my realm. I am even considering employing [trans_haradric_merchant_spawn.GetHerHim] at my court so that we can work closely together in the future."
- 
+ harad.0601.t: "[Concept('trans_haradric_merchant', 'Купец')|E] из Ближнего Харада"
+ harad.0601.desc.intro_networker: "Недавно я [Select_CString(ROOT.Char.IsFemale, 'попыталась', 'попытался' )] наладить контакты с купцами, которые ведут дела на торговых путях, пересекающих пустыню регион [GetGeographicalRegion('middleearth_dunesea').GetName] и соединяющих [Concept('nearharad', 'Ближний Харад')|E] и [Concept('farharad', 'Дальний Харад')|E]. Мои усилия не пропали даром, так как я [Select_CString(ROOT.Char.IsFemale, 'познакомилась', 'познакомился' )] с одним таким купцом по имени [trans_haradric_merchant_spawn.GetFullName]."
+ harad.0601.desc.intro_normal: "Веками купцы пересекали пустыню региона [GetGeographicalRegion('middleearth_harad_near_harnen').GetName] вдоль торговых путей, соединяющих [Concept('nearharad', 'Ближний Харад')|E] и [Concept('farharad', 'Дальний Харад')|E], чтобы обменивать товары - от золота и соли до рабов, слоновой кости и специй. Недавно я [Select_CString(ROOT.Char.IsFemale, 'познакомилась', 'познакомился' )] с одним таким купцом по имени [trans_haradric_merchant_spawn.GetFullName]."
+ harad.0601.desc: "\n\n[trans_haradric_merchant_spawn.GetFirstNameNoTooltip] родом из одной из многочисленных #L [trans_haradric_merchant_spawn.GetCulture.GetCollectiveNoun|l]их#! общин, которыми усеян этот регион. Такие купцы, как [trans_haradric_merchant_spawn.GetSheHe], имеют связи с другими [Concept('nearharad', 'ближне-харадскими')|E] купцами по всему Умбару, Харузану и за их пределами.\n\nВ общем, после некоторых обсуждений [trans_haradric_merchant_spawn.GetSheHe] [Select_CString(trans_haradric_merchant_spawn.IsFemale, 'предложила', 'предложил' )] связать меня с другими ближне-харадскими купеческими сообществами, чтобы способствовать развитию торговли в моей державе. Я даже рассматриваю возможность нанять [trans_haradric_merchant_spawn.GetHerHis] к своему двору, чтобы мы могли тесно сотрудничать в будущем."
+ harad.0601.a: "После того как мы закончим здесь, не хотите ли вы присоединиться к моему двору, [trans_haradric_merchant_spawn.GetFirstName]?"
+ harad.0601.b: "Хорошая сделка. Было приятно работать с вами, [trans_haradric_merchant_spawn.GetFirstName]."
+ harad.0601.c: "Подумав, я [Select_CString(ROOT.Char.IsFemale, 'решила', 'решил' )], что мне это неинтересно."
+
+ harad.0602.t: "[Concept('trans_haradric_merchant', 'Купец')|E] из Дальнего Харада"
+ harad.0602.desc: "\n\n[trans_haradric_merchant_spawn.GetFirstNameNoTooltip] родом из одной из многочисленных #L [trans_haradric_merchant_spawn.GetCulture.GetCollectiveNoun|l]их#! общин, которыми усеян этот регион. Золото и соль - их основная специализация, хотя они торгуют многими вещами.\n\nВ общем, после некоторых обсуждений [trans_haradric_merchant_spawn.GetSheHe] [Select_CString(trans_haradric_merchant_spawn.IsFemale, 'предложила', 'предложил' )] связать меня с другими [Concept('farharad', 'дальне-харадскими')|E] купеческими сообществами, чтобы способствовать развитию торговли в моей державе. Я даже рассматриваю возможность нанять [trans_haradric_merchant_spawn.GetHerHis] к своему двору, чтобы мы могли тесно сотрудничать в будущем."
+
+ harad.0603.t: "[Concept('trans_haradric_merchant', 'Купец')|E] из Кхая"
+ harad.0603.desc: "\n\n[trans_haradric_merchant_spawn.GetFirstNameNoTooltip] родом из одной из многочисленных #L [trans_haradric_merchant_spawn.GetCulture.GetCollectiveNoun|l]их#! общин, которыми усеян этот регион. Кхайский народ сыграл важную роль в процветании торговли в этом регионе.\n\nВ общем, после некоторых обсуждений [trans_haradric_merchant_spawn.GetSheHe] [Select_CString(trans_haradric_merchant_spawn.IsFemale, 'предложила', 'предложил' )] связать меня с другими кхайскими купеческими сообществами, чтобы способствовать развитию торговли в моей державе. Я даже рассматриваю возможность нанять [trans_haradric_merchant_spawn.GetHerHis] к своему двору, чтобы мы могли тесно сотрудничать в будущем."
+
+ harad.0604.t: "[Concept('trans_haradric_merchant', 'Купец')|E] из Сирайна"
+ harad.0604.desc: "\n\n[trans_haradric_merchant_spawn.GetFirstNameNoTooltip] родом из одной из многочисленных #L [trans_haradric_merchant_spawn.GetCulture.GetCollectiveNoun|l]их#! общин, которыми усеян этот регион. Присутствующие везде, где процветает торговля пряностями, купцы региона [GetGeographicalRegion('middleearth_bayoformal_sirayn').GetName], многие из которых являются [Concept('namalo', 'намало')|E], имеют сети контактов по всему [Concept('middleearth', 'Средиземью')|E]. Хотя торговля пряностями в основном идет по морю, часть из них все еще совершает путешествие через Море Дюн.\n\nВ общем, после некоторых обсуждений [trans_haradric_merchant_spawn.GetSheHe] [Select_CString(trans_haradric_merchant_spawn.IsFemale, 'предложила', 'предложил' )] связать меня с другими сирайнскими купеческими сообществами, чтобы способствовать развитию торговли в моей державе. Я даже рассматриваю возможность нанять [trans_haradric_merchant_spawn.GetHerHis] к своему двору, чтобы мы могли тесно сотрудничать в будущем."
+
  ### Namâlo Spice Trade Decisions ###
  # Yield the Spice Trade
- harad.0700.t: "The Rise of the Namâlo"
- harad.0700.desc: "For many years, a group of merchants known as the [namalo|E] have been increasing their involvement in the spice trade of [farharad|E]. In particular, they have focused on controlling the flow of spices from the fields of Sîrayn.\n\nIn a bid to fully monopolise their control, we have now reached an agreement, as I rule over the majority of these lands.\n\nThere is no denying that the #italic Namâlo#! are becoming one of the most influential merchant conglomerates in the region, thanks to their mastery over the spice trade, combined with their diverse ethnic origins that gives them much flexibility in their dealings with others. Now, their leaders are even starting to look beyond the spice trade, seeking to expand their political, commercial, and cultural networks by settling amongst the communities of various [haradric|E] peoples."
- harad.0700.a: "Our pact will bring us prosperity"
- harad.0700.tt_1: "[cultures|E] in [GetGeographicalRegion('special_region_innovation_namalo').GetName] [region|E] can now unlock the #V $innovation_namalo$#! [innovation|E] if their [culture_head|E] takes the [decision|E] to #V Integrate Namâlo into Local Communities#!."
- harad.0700.tt_2: "The [innovation|E] in turn unlocks the [decision|E] to #V $decision_namalo_synergy$#!, among other bonuses."
- 
+ harad.0700.t: "Возвышение намало"
+ harad.0700.desc: "В течение многих лет группа купцов, известная как [Concept('namalo', 'намало')|E], всё активнее участвовала в торговле пряностями в [Concept('farharad', 'Дальнем Хараде')|E]. В частности, они сосредоточились на контроле над потоком пряностей с полей Сирайна.\n\nСтремясь полностью монополизировать их контроль, мы пришли к соглашению, и теперь я правлю большей частью этих земель.\n\nНевозможно отрицать, что #italic намало#! становится одним из самых влиятельных купеческих конгломератов в регионе благодаря своему мастерству в торговле пряностями, а также разнообразию этнического происхождения, что дает им большую гибкость в отношениях с другими. Теперь их лидеры даже начинают смотреть за пределы торговли пряностями, стремясь расширить свои политические, торговые и культурные сети, поселившись среди общин различных [Concept('haradric', 'харадских')|E] народов."
+ harad.0700.a: "Наш договор приведёт нас к процветанию."
+ harad.0700.tt_1: "[Concept('cultures', 'Культуры')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('special_region_innovation_namalo').GetName] теперь могут разблокировать [Concept('innovation', 'инновацию')|E] #V $innovation_namalo$#!, если их [Concept('culture_head', 'идеолог')|E] примет [Concept('decision', 'решение')|E] #V Интегрировать намало в местные общины#!."
+ harad.0700.tt_2: "В свою очередь, [Concept('innovation', 'инновация')|E] разблокирует [Concept('decision', 'решение')|E] #V $decision_namalo_synergy$#!, помимо прочих бонусов."
+
  # Integrate Namâlo
- harad.0701.t: "The Namâlo Come to the [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip]"
- harad.0701.desc: "The [namalo|E] are a group of merchants who originally controlled the spice trade of Sîrayn, but have, over the years, expanded their operations to other regions of [farharad|E], as well as to other products such as salt, slaves, gold, and more.\n\nUntil recently, the Namâlo network had limited connections with [ROOT.Char.GetCulture.GetName] communities. Thanks to [namalo_inviter.GetFirstName], a prominent [namalo_inviter.GetCulture.GetNameNoTooltip] [namalo_inviter.GetTitleAsNameNoTooltip], this is no longer the case.\n\n[namalo_inviter.GetFirstNameNoTooltip] has reached out to the Namâlo, inviting them to settle among the [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip]. In doing so, the [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] will be better integrated into the Namâlo’s existing political, commercial, and cultural networks across [GetGeographicalRegion('middleearth_harad_far').GetName]."
- harad.0701.a: "Both sides will benefit from this!"
- harad.0701.tooltip: "With the integration of the [namalo|E] into their communities, [GetPlayer.GetCulture.GetName] [rulers|E] now have access to the #V $decision_namalo_synergy$#! [decision|E]."
- 
+ harad.0701.t: "Намало среди [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip]ого народа"
+ harad.0701.desc: "[Concept('namalo', 'Намало')|E] - группа купцов, изначально контролировавших торговлю пряностями в Сирайне, но со временем распространивших свои операции на другие регионы [Concept('farharad', 'Дальнего Харада')|E], а также на другие товары, такие как соль, рабы, золото и многое другое.\n\nДо недавнего времени сеть намало имела ограниченные связи с #L [ROOT.Char.GetCulture.GetCollectiveNoun|l]ими#! общинами. [namalo_inviter.GetFirstName], выдающийся [namalo_inviter.GetCulture.GetCollectiveNounNoTooltip|l][Select_CString(namalo_inviter.IsFemale, 'ая', 'ий' )] [namalo_inviter.GetTitleAsNameNoTooltip|l], [Select_CString(namalo_inviter.IsFemale, 'изменила', 'изменил' )] это положение дел.\n\n[namalo_inviter.GetFirstNameNoTooltip] [Select_CString(namalo_inviter.IsFemale, 'обратилась', 'обратился' )] к намало, пригласив их поселиться среди [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip|l]ого народа. При этом [ROOT.Char.GetCulture.GetNameNoTooltip|l] будут лучше интегрированы в существующие политические, торговые и культурные сети намало по всему региону [GetGeographicalRegion('middleearth_harad_far').GetName]."
+ harad.0701.a: "От этого выиграют обе стороны!"
+ harad.0701.tooltip: "Интегрировав [Concept('namalo', 'намало')|E] в свои общины, #L [GetPlayer.GetCulture.GetCollectiveNoun|l]ие#! [Concept('rulers', 'правители')|E] теперь имеют доступ к [Concept('decision', 'решению')|E] #V $decision_namalo_synergy$#!."
+
  # Namâlo Synergy
- harad.0702.t: "Working with the Namâlo"
- harad.0702.desc: "The Namâlo merchants, whose reach stretches across much of [GetGeographicalRegion('middleearth_harad_far').GetName], have integrated themselves into our [ROOT.Char.GetCulture.GetName] communities for many years now, connecting us with other peoples in the region. We are used to working with the Namâlo on a daily basis, particularly in mercantile matters, but I sensed an opportunity for further mutually beneficial arrangements with them.\n\n"
- harad.0702.desc.political: "The Namâlo have skills in management and letters that could serve me well. I’ve brought on some as officials in my administration, and will use their networks to govern my territories more efficiently and ensure the enforcement of my laws."
- harad.0702.desc.commercial: "The Namâlo, of course, are most famous for their extensive trade networks that already bring much wealth to my territories. By working together, we can further encourage trade to bring even #italic more#! wealth here."
- harad.0702.desc.cultural: "The Namâlo are quite educated in general (one has to be to be an excellent trader, after all), and I seek their aid in intellectual matters. Their knowledge of law, language, and all manner of learning, will cultivate my realm’s culture."
- harad.0702.a: "Their contributions are most appreciated."
- looses_all_namalo_synergies_tt: "#Warning Looses all other [namalo|E] [modifiers|E]#!"
+ harad.0702.t: "Сотрудничество с намало"
+ harad.0702.desc: "Купцы намало, чье влияние распространяется на большую часть региона [GetGeographicalRegion('middleearth_harad_far').GetName], уже много лет интегрируются в наши #L [ROOT.Char.GetCulture.GetCollectiveNoun|l]ие#! общины, связывая нас с другими народами в регионе. Мы привыкли ежедневно сотрудничать с намало, особенно в торговых делах, но я [Select_CString(ROOT.Char.IsFemale, 'почувствовала', 'почувствовал' )] возможность для дальнейших взаимовыгодных договоренностей с ними.\n\n"
+ harad.0702.desc.political: "Намало обладают навыками управления и письма, которые могут сослужить мне хорошую службу. Я [Select_CString(ROOT.Char.IsFemale, 'привлекла', 'привлёк' )] некоторых из них в качестве чиновников в свою администрацию и буду использовать их связи для более эффективного управления моими территориями и обеспечения соблюдения моих законов."
+ harad.0702.desc.commercial: "Намало, конечно, наиболее известны своими обширными торговыми сетями, которые уже приносят много богатства на мои земли. Работая вместе, мы сможем и дальше развивать торговлю, чтобы принести сюда #italic ещё больше#! богатства."
+ harad.0702.desc.cultural: "Намало в целом довольно образованны (в конце концов, чтобы быть отличным торговцем, нужно быть таковым), и я ищу их помощи в интеллектуальных вопросах. Их знания законов, языков и всего прочего будут способствовать развитию культуры моей державы."
+ harad.0702.a: "Их вклад очень ценен."
+ looses_all_namalo_synergies_tt: "#Warning Теряет все прочие [Concept('modifiers', 'модификаторы')|E] [Concept('namalo', 'намало')|E]#!"
 
  ### Unify Harad ###
  harad.1000.t:0 "Грандиозная церемония"
