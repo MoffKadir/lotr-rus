@@ -616,11 +616,6 @@
  decision_reintegrate_mistalonde_tooltip: "Экономически связать Мисталондэ с Тарбадом"
  decision_reintegrate_mistalonde_confirm: "Пусть торговля течёт!"
 
- #decision_reintegrate_mistalonde: "Восстановить Мисталондэ"
- #decision_reintegrate_mistalonde_desc: "Гавань Мисталондэ расположена в устье Гватло и служит воротами между Тарбадом и внешним миром. Если мы подчиним ее своей власти, то сможем использовать оба порта на реке для увеличения торговли и могущества обоих городов."
- #decision_reintegrate_mistalonde_tooltip: "Экономически связать Мисталондэ с Тарбадом"
- #decision_reintegrate_mistalonde_confirm: "Пусть торговля течёт!"
-
  decision_reintegrate_lond_daer: "Восстановить Лонд Даэр"
  decision_reintegrate_lond_daer_desc: "Древняя гавань Лонд-Даэр была построена [Concept('numenoreans', 'нуменорцами')|E] во время колонизации [Concept('eriador', 'Эриадора')|E] и была разрушена во времена [Concept('downfallofnumenor', 'Низвержения Нуменора')|E] и с тех пор пришла в упадок. Однако когда-то она была городом-побратимом Тарбада. И приложив немного усилий, она может стать им снова. Теперь, когда она находится под нашим контролем, небольшие вложения помогут вернуть городу былую славу."
  decision_reintegrate_lond_daer_tooltip: "Вложить в [GetTitleByKey('c_lond_daer').GetName]"
@@ -2889,25 +2884,35 @@
  decision_favor_overseers_confirm: "К кому же мне обратиться?"
  decision_favor_overseers_effect.tt: "Получить доступ к уникальным [Concept('men_at_arms', 'профессионалам')|E] и положительным модификаторам, объединившись с булганами, чёрными нуменорцами или орками."
 
- decision_rebuild_lynerian_league: "Восстановить Линерийскую лигу"
+ decision_rebuild_lynerian_league: "Объединить Линерийскую лигу"
  decision_rebuild_lynerian_league_tooltip: "Помочь раздробленным линерийским городам-государствам объединиться"
- decision_rebuild_lynerian_league_desc: "Линерия раздроблена. Города-государства ссорятся между собой из-за границ, древних обид и обыденных провокаций. Они не могут объединиться сами по себе. Если мы окажем дипломатическую помощь, починим разрушенные мосты, восстановим доверие и установим новые дружеские отношения, то, возможно, сможем способствовать восстановлению былой Линерии, получив при этом могущественного союзника."
+ decision_rebuild_lynerian_league_desc: "Линерия раздроблена. Города-государства ссорятся между собой из-за торговли, древних обид и обыденных провокаций. Они не могут объединиться сами по себе. Если мы окажем дипломатическую помощь, починим разрушенные мосты, восстановим доверие и установим новые дружеские отношения, то, возможно, сможем способствовать восстановлению былой Линерии, получив при этом могущественного союзника."
  decision_rebuild_lynerian_league_confirm: "Отправить сановников."
- decision_rebuild_lynerian_league_tt: "Вы повлияете на выбор нового правителя Линерийской лиги."
+ decision_rebuild_lynerian_league_tt: "Вы повлияете на выбор нового правителя восстановленной Линерийской лиги."
 
- decision_form_powa_kingdom_title: "TEMP"
- decision_form_powa_kingdom_tooltip: "TEMP"
- decision_form_powa_kingdom_desc: "TEMP"
- decision_form_powa_kingdom_confirm: "TEMP"
+ decision_form_powa_kingdom_title: "Объединить Пову"
+ decision_form_powa_kingdom_tooltip: "Объединить пованский народ"
+ decision_form_powa_kingdom_desc: "Пованский народ слишком долго страдал от набегов и завоеваний своих соседей, но сегодня этому пришел конец!"
+ decision_form_powa_kingdom_confirm: "Единство, отныне и вовек!"
  decision_form_powa_kingdom_effect_tt_1: "Все вассалы в де-юре границах державы [GetTitleByKey('k_poa').GetNameNoTier] имеют 60% шанс стать [Concept('feudal', 'феодалами')|E]"
  decision_form_powa_kingdom_effect_tt_2: "Вы владеете #V 50%#! графствами державы [GetTitleByKey('k_poa').GetNameNoTier]\n$BULLET_WITH_TAB$Текущее значение: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_martial_route')|2]%#!"
  decision_form_powa_kingdom_diplo_trigger_tt: "В настоящее время: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_value_normalized')|2]%#!\nПо крайней мере #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required')|0]%#! независимых правителей в регионе [GetTitleByKey('k_poa').GetNameNoTier] подходят под следующие условия:\n$BULLET_WITH_TAB$Ваши друзья\n$BULLET_WITH_TAB$Ваши любовники\n$BULLET_WITH_TAB$Ваши вассалы\n$BULLET_WITH_TAB$Входят в ту же конфедерацию\n$BULLET_WITH_TAB$Находятся под #v вашим#! влиянием\n[Select_CString(EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required'),'(CFixedPoint)80'),'\nЕсли Пова находится под вашим контролем, значение поддержки опускается - нужно лишь #V 50%#!.','')]"
 
- decision_make_powa_mercantile_center_title: "TEMP"
- decision_make_powa_mercantile_center_tooltip: "TEMP"
- decision_make_powa_mercantile_center_desc: "TEMP"
- decision_make_powa_mercantile_center_confirm: "TEMP"
+ decision_make_powa_mercantile_center_title: "Основать центр торговли"
+ decision_make_powa_mercantile_center_tooltip: "Выйти за пределы полей боя внешней политики"
+ decision_make_powa_mercantile_center_desc: "После объединения у пованцев появилась новая цель, поскольку выживание и повседневная жизнь стали волновать их гораздо меньше. Поэтому мы обратились к нашим соседям, но не в отместку за прошлые проступки, а для развития торговли и дружбы. Теперь наши товары и людей можно найти от верфей Анарикэ до великих городов Гондора!"
+ decision_make_powa_mercantile_center_confirm: "Отправить караваны!"
  decision_make_powa_mercantile_center_effect_tt_1: "В настоящее время: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_neighboring_rulers_count')]#!\nУ вас есть #V 5#! соседей, подходящих под следующие условия:\n$BULLET_WITH_TAB$Ваши любовники\n$BULLET_WITH_TAB$Ваши друзья\n$BULLET_WITH_TAB$Ваши данники\n$BULLET_WITH_TAB$Находятся под #v вашим#! влиянием"
+
+ restore_ardacheran_hegemony_decision: "Восстановить Ардашеранскую гегемонию"
+ restore_ardacheran_hegemony_decision_desc: "Во времена правления династии Ардашеран влияние Кхая достигло своего наивысшего расцвета. Непосредственно управляя побережьем Ормальского залива вплоть до Кодьи и Линерии, этот почти трехсотлетний золотой век стал свидетелем величайшего расцвета кхайского искусства, литературы, науки и культуры в истории. Иностранные правители отправляли посланников, купцов и пленников к императорскому двору в Чаджапуне.\n\nБлагодаря нашим недавним успехам, некоторые называют нас наследниками наследия Ардашеранов, восстановителями законного положения Кхая как маяка цивилизации и света. Возможно, со временем мы еще больше укрепим это положение и станем легитимными для всего залива."
+ restore_ardacheran_hegemony_decision_tooltip: "Восстановить Ардашеранскую гегемонию"
+ restore_ardacheran_hegemony_decision_confirm: "Мы - свет людей, вестники Ариэн."
+
+ set_capital_khy_historic_decision: "Вернуть историческую столицу"
+ set_capital_khy_historic_decision_desc: "Власть Кхая зависит от бюрократии, и мы должны перенести нашу столицу в резиденцию этой бюрократии, отвоевав ее у дворянства, если придется."
+ set_capital_khy_historic_decision_tooltip: "Вернуть историческую столицу"
+ set_capital_khy_historic_decision_confirm: "Для удобства бюрократии."
 
  #####################################
  ### War of the Rohirrim Decisions ###
