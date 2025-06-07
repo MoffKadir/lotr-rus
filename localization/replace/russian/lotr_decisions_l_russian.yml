@@ -63,6 +63,26 @@
  decision_reclaim_sirgala_tooltip: "Возродить королевство Сиргала"
  effect_replace_sirgalan_exiles: "Ваша [culture|El] изменит [Concept('tradition', 'культурную традицию')|E] «[GetCultureTradition('tradition_sirgalan_exiles').GetName]» на «[GetCultureTradition('tradition_sirgala_renewed').GetName]»."
 
+ decision_reclaim_greater_sirgala: "Возродить Великую Сиргалу"
+ decision_reclaim_greater_sirgala_desc: "Хотя Сиргала возрождена, за пределами королевства остались земли, которые когда-то считались ее частью. Если бы мы смогли вернуть их под контроль эльфов, то смогли бы восстановить границы Сиргалы такими, какими они были до [Concept('waroftheelvesandsauron', 'войны эльфов и Саурона')|E]."
+ decision_reclaim_greater_sirgala_confirm: "Пусть цветы распустятся вновь."
+ decision_reclaim_greater_sirgala_tooltip: "Включить больше земель в границы Сиргалы!"
+
+ decision_rebuild_halls_bornmir: "Восстановить чертог Борнмира"
+ decision_rebuild_halls_bornmir_desc: "Хотя по сравнению с чертогами [Concept('noldorelves', 'нолдор')|E] резиденция короля сиррандрай, чертог Борнмира, был простоват и не лишён своего очарования. Изделия из дерева, выточенные из могучих кедров и дубов, свидетельствовали о том, что работа по дереву требует не меньшего мастерства, чем по камню. К сожалению, во время [Concept('waroftheelvesandsauron', 'войны эльфов и Саурона')|E] он был захвачен орочьими войсками, и ни у кого не хватило духу отстроить его заново.\n\nНо прошло много веков, и тех, кто помнит эту рану, стало гораздо меньше. Теперь она может стать мощным символом возрождения Сиргалы - там, где раньше был лишь пепел, теперь вновь прорастает новая жизнь."
+ decision_rebuild_halls_bornmir_confirm: "Пусть великий чертог возвысится вновь!"
+ decision_rebuild_halls_bornmir_tooltip: "Восстановить чертог Борнмира"
+
+ decision_noldor_eriador: "Вернуть наследие Гиль-галада"
+ decision_noldor_eriador_desc: "На пике своего могущества во [Concept('secondage', 'Второй эпохе')|E] Гиль-галад стал владыкой [Concept('eriador', 'Эриадора')|E], и его власть простиралась вплоть до Великого Зеленолесья. Хотя колонизация [Concept('dunedain', 'дунэдайн')|E] и последующее основание [Concept('arnor', 'Арнора')|E] привели к отказу от этой власти, не все забыли эту древнюю истину.\n\nЕсли эльфы вновь проявят себя как хранители всего Эриадора, великолепие наследия Гиль-галада может быть возрождено."
+ decision_noldor_eriador_confirm: "Вернуть наследие Гиль-галада."
+ decision_noldor_eriador_tooltip: "Вернуть наследие Гиль-галада"
+ decision_noldor_eriador_effect: "Все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('middleearth_west_eriador').GetName] получат модификатор [GetModifier('elven_homeland_county_modifier').GetNameWithTooltip]"
+ decision_noldor_eriador_trigger_mm: "Зло изгнано из региона [GetGeographicalRegion('middleearth_mountains_misty').GetName]"
+ decision_noldor_eriador_trigger_bm: "Зло изгнано из региона [GetGeographicalRegion('middleearth_mountains_blue').GetName]"
+ decision_noldor_eriador_trigger_fo: "Зло изгнано из региона [GetGeographicalRegion('middleearth_forodwaith').GetName]"
+ decision_noldor_eriador_trigger_an: "Зло изгнано из региона [GetGeographicalRegion('middleearth_west_rhovanion_anduin').GetName]"
+
  decision_restore_suza_sumar_elven: "Возродить эльфийскую державу Сумариэт"
  decision_restore_suza_sumar_elven_desc: "Давным-давно куинд-[avari|El] поселились в землях Суза-Сумара, некоторое время жили там и научили народы хоннин многому их того, что происходит в мире, а затем ушли, когда солнце выжгло близлежащие земли, став не более чем легендой в этом регионе. Теперь, спустя тысячи лет, [elves|El] вернутся в джунгли Юга."
  decision_restore_suza_sumar_elven_confirm: "Эльфы вернутся в Сумариэт"
@@ -2909,10 +2929,11 @@
  restore_ardacheran_hegemony_decision_tooltip: "Восстановить Ардашеранскую гегемонию"
  restore_ardacheran_hegemony_decision_confirm: "Мы - свет людей, вестники Ариэн."
 
- set_capital_khy_historic_decision: "Вернуть историческую столицу"
- set_capital_khy_historic_decision_desc: "Власть Кхая зависит от бюрократии, и мы должны перенести нашу столицу в резиденцию этой бюрократии, отвоевав ее у дворянства, если придется."
- set_capital_khy_historic_decision_tooltip: "Вернуть историческую столицу"
- set_capital_khy_historic_decision_confirm: "Для удобства бюрократии."
+ decision_khy_dynastic_mausoleum: "Построить великий мавзолей"
+ decision_khy_dynastic_mausoleum_desc: "Наша династия стала одним из великих родов державы [GetTitleByKey('e_khy').GetNameNoTier]. Пришло время утвердить этот факт, построив великий мавзолей в честь наших предков и закрепив наше место в истории."
+ decision_khy_dynastic_mausoleum_tooltip: "Построить великий мавзолей"
+ decision_khy_dynastic_mausoleum_confirm: "Призвать зодчих."
+ decision_khy_dynastic_mausoleum_trigger: "2 или более членов вашей [Concept('dynasty', 'династии')|E] помимо вас владели титулом [GetTitleByKey('e_khy').GetName]"
 
  #####################################
  ### War of the Rohirrim Decisions ###
