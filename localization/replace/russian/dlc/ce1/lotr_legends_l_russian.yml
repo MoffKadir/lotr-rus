@@ -15,7 +15,7 @@
  must_be_a_king_in_greater_gondor_tt:0 "Вы должны лично владеть [Concept('gondor', 'Гондором')|E] или [Concept('kingdom', 'королевством')|E] в его исторических границах"
 
  legend_isildur:0 "Наследники Исильдура"
- legend_isildur_desc:0 "В наших жилах течёт кровь #L [ancestor.GetFirstName]а#!, сына Элендиля, основавшего Гондор вместе со своим братом Анарионом.\n\nИсильдур сразил Саурона и взял Единое Кольцо в качестве виры за убитых родичей. Кольцо предало его, но от его сына Валандиля произошли все короли Арнора и притязания на верховную власть в королевстве Элендиля."
+ legend_isildur_desc:0 "В наших жилах течёт кровь #L [ancestor.GetFirstName]а#!, сына Элендиля, основавшего Гондор вместе со своим братом [Concept('anarion', 'Анарионом')|E].\n\nИсильдур сразил Саурона и взял Единое Кольцо в качестве виры за убитых родичей. Кольцо предало его, но от его сына Валандиля произошли все короли Арнора и притязания на верховную власть в королевстве Элендиля."
  must_hold_an_arnorian_kingdom_tt:0 "Вы должны лично владеть одним из следующих титулов: [GetTitleByKey('k_arthedain').GetNameNoTier], [GetTitleByKey('k_cardolan').GetNameNoTier], [GetTitleByKey('k_rhudaur').GetNameNoTier] или [arnor|E]"
 
  legend_vidugavia:0 "Кровь Видугавии"
@@ -215,10 +215,10 @@
  # Lotr
  lotr_legend_recipient_opposite_alignment_tt:0 "[recipient.GetFirstNameNoTooltip] придерживается иного мировоззрения."
 
- legend_events.0001.desc.mid.elven_descent:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|U], я [Select_CString(chronicler.IsFemale, 'просмотрела', 'просмотрел' )] записи и [Select_CString(chronicler.IsFemale, 'нашла', 'нашёл' )] информацию, что [Select_CString(legend_character.IsFemale, '[Concept( 'elven', 'эльфийская' )|E] дворянка', '[Concept( 'elven', 'эльфийский' )|E] дворянин' )] [legend_character.GetName] действительно является [Select_CString(legend_character.IsFemale, 'основательницей', 'основателем' )] вашей линии!"
+ legend_events.0001.desc.mid.elven_descent:0 "«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|U], я [Select_CString(chronicler.IsFemale, 'просмотрела', 'просмотрел' )] записи и [Select_CString(chronicler.IsFemale, 'нашла', 'нашёл' )] информацию, что [Concept('elven', Select_CString(legend_character.IsFemale, 'эльфийская', 'эльфийский' ))|E] [Select_CString(legend_character.IsFemale, 'дворянка', 'дворянин' )] [legend_character.GetName] действительно является [Select_CString(legend_character.IsFemale, 'основательницей', 'основателем' )] вашей линии!"
 
  lotr_legend_spread_events.5210.t:0 "Огромный разбойник"
- lotr_legend_spread_events.5210.desc:0 "«Это правда? — [ROOT.Char.Custom('GetWritingMaterial')] опять заканчивается, и [chronicler.GetFirstName] тянется, чтобы достать еще, и, пользуясь перерывом, задает вопрос. — Говорят, вы повстречали весьма мерзкое существо».\n\n«До меня доходили слухи, что это было массивное создание с одним глазом. Могучий тролль!»"
+ lotr_legend_spread_events.5210.desc:0 "«Это правда? — [ROOT.Char.Custom('GetWritingMaterial')] опять заканчивается, и [chronicler.GetFirstName] тянется, чтобы достать еще, и, пользуясь перерывом, задает вопрос. — Говорят, вы повстречали весьма мерзкое существо».\n\n«До меня доходили слухи, что это было массивное создание с одним глазом. Могучий [Concept('troll', 'тролль')|E]!»"
  lotr_legend_spread_events.5210.a:0 "И оно приняло меня за другого тролля!"
  lotr_legend_spread_events.5420.desc: "[chronicler.GetFirstName] продолжает записывать все новые истории, которыми полнится [ROOT.Char.GetPromotedLegend.GetName], но затем останавливается, и на [Select_CString(chronicler.IsFemale, 'ее', 'его' )] губах появляется хитрая улыбка.\n\n«Мне доводилось слышать #EMP одну#! любопытную историю, — медленно начинает [Select_CString(chronicler.IsFemale, 'она', 'он' )]. — Хотите верьте, хотите нет, но в ней говорится о состязании по выпивке с энтом! Это же какой статью надо обладать, чтобы перепить такое создание! Возможно, наглядная демонстрация позволит мне в полной мере оценить подобный подвиг?»\n\nНе знаю, откуда взялась эта история, но моя гордость сразу дает о себе знать..."
 
