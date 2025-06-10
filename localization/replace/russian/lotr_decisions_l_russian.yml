@@ -2958,11 +2958,11 @@
  choose_anhur_tooltip: "$faith_anhur_desc$"
  choose_anhur_desc: "$faith_anhur_desc$"
  choose_shyra_name: "Культ Ширы"
- choose_shyra_tooltip: "$faith_shyra_desc$\n\n@warning_icon! #N Эта конфессия порицается приверженцами других тайитских божеств. Они не примут ваш переход в другую конфессию!#!"
- choose_shyra_desc: "$faith_shyra_desc$\n\n@warning_icon! #N Эта конфессия порицается приверженцами других тайитских божеств. Они не примут ваш переход в другую конфессию!#!"
+ choose_shyra_tooltip: "$faith_shyra_desc$\n\n@warning_icon! #X Эта конфессия порицается приверженцами других тайитских божеств. Они не примут ваш переход в другую конфессию!#!"
+ choose_shyra_desc: "$faith_shyra_desc$\n\n@warning_icon! #X Эта конфессия порицается приверженцами других тайитских божеств. Они не примут ваш переход в другую конфессию!#!"
  choose_taimaraud_name: "Культ Таймарода"
- choose_taimaraud_tooltip: "$faith_taimaraud_desc$\n\n@warning_icon! #N Эта конфессия порицается приверженцами других тайитских божеств. Они не примут ваш переход в другую конфессию!#!"
- choose_taimaraud_desc: "$faith_taimaraud_desc$\n\n@warning_icon! #N Эта конфессия порицается приверженцами других тайитских божеств. Они не примут ваш переход в другую конфессию!#!"
+ choose_taimaraud_tooltip: "$faith_taimaraud_desc$\n\n@warning_icon! #X Эта конфессия порицается приверженцами других тайитских божеств. Они не примут ваш переход в другую конфессию!#!"
+ choose_taimaraud_desc: "$faith_taimaraud_desc$\n\n@warning_icon! #X Эта конфессия порицается приверженцами других тайитских божеств. Они не примут ваш переход в другую конфессию!#!"
  CHOOSE_TAYEE_FAITH: "Выбрать нового покровителя"
  decision_choose_new_tayee_patron_desc: "Мой прежний покровитель больше не соответствует ситуации, в которой я [Select_CString(ROOT.Char.IsFemale, 'оказалась', 'оказался' )]. Тарат Балазайн учит, что все боги обещают своим слугам вход в загробный мир, если те будут верно следовать их повелениям. Моя новая вера, несомненно, станет лучшим способом обеспечить будущее моей души! Пришло время перемен."
  fervor_gain_sirayn_fervor: "Избрание правителем в качестве покровителя"
@@ -2978,6 +2978,13 @@
  decision_khy_dynastic_mausoleum_tooltip: "Построить великий мавзолей"
  decision_khy_dynastic_mausoleum_confirm: "Призвать зодчих."
  decision_khy_dynastic_mausoleum_trigger: "2 или более членов вашей [Concept('dynasty', 'династии')|E] помимо вас владели титулом [GetTitleByKey('e_khy').GetName]"
+
+ decision_radyani_vengeance: "Отомстить Ариэн"
+ decision_radyani_vengeance_desc: "Изгнать Ариэн!"
+ decision_radyani_vengeance_tooltip: "Развязать священную войну против всех ариэнистов в Сирайне"
+ decision_radyani_vengeance_confirm: "Не останется ни одного солнцепоклонника!"
+ RADYANI_WAR_TARGET_EXISTS: "По крайней мере один [Concept('ruler', 'правитель')|E] в регионе [GetTitleByKey('e_sirayn').GetNameNoTier] является ариэнистом"
+ RADYANI_ARIENISTS_RALLY: "Все последователи Ариэн в Сирайне объединятся против вас"
 
  #####################################
  ### War of the Rohirrim Decisions ###
