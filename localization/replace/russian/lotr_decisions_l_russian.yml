@@ -650,6 +650,12 @@
  decision_kingdom_gwathlo_tooltip: "Провозгласить королевство Сероструя"
  decision_kingdom_gwathlo_confirm: "Наступает новый порядок!"
 
+ decision_crown_king: "Короновать короля"
+ decision_crown_king_desc: "До сих пор Тарбадом управляли дворяне, следопыты [Concept('dunedain', 'дунэдайн')|E], торговые лорды и опытные простолюдины в рамках свободной республики, но теперь, когда нам удалось восстановить королевство [GetTitleByKey('k_cardolan').GetNameNoTier], мы в состоянии утвердить наше правление, короновав короля."
+ decision_crown_king_tooltip: "Короновать короля"
+ decision_crown_king_confirm: "Подготовиться к коронации."
+ decision_crown_king_effect: "Выбрать монарха для восстановленного королевства [GetTitleByKey('k_cardolan').GetNameNoTier]"
+
  ### Reunited Kingdom Decision Subset ###
 
  decision_reunited_kingdom: "Провозгласить Воссоединённое королевство"
@@ -2977,14 +2983,19 @@
  decision_khy_dynastic_mausoleum_desc: "Наша династия стала одним из великих родов державы [GetTitleByKey('e_khy').GetNameNoTier]. Пришло время утвердить этот факт, построив великий мавзолей в честь наших предков и закрепив наше место в истории."
  decision_khy_dynastic_mausoleum_tooltip: "Построить великий мавзолей"
  decision_khy_dynastic_mausoleum_confirm: "Призвать зодчих."
- decision_khy_dynastic_mausoleum_trigger: "2 или более членов вашей [Concept('dynasty', 'династии')|E] помимо вас владели титулом [GetTitleByKey('e_khy').GetName]"
 
- decision_radyani_vengeance: "Отомстить Ариэн"
+ decision_radyani_vengeance: "Отомстить ариэнитам"
  decision_radyani_vengeance_desc: "Изгнать Ариэн!"
  decision_radyani_vengeance_tooltip: "Развязать священную войну против всех ариэнистов в Сирайне"
  decision_radyani_vengeance_confirm: "Не останется ни одного солнцепоклонника!"
  RADYANI_WAR_TARGET_EXISTS: "По крайней мере один [Concept('ruler', 'правитель')|E] в регионе [GetTitleByKey('e_sirayn').GetNameNoTier] является ариэнистом"
  RADYANI_ARIENISTS_RALLY: "Все последователи Ариэн в Сирайне объединятся против вас"
+
+ decision_destroy_arienism: "Ударить в сердце Ариэи"
+ decision_destroy_arienism_desc: "Уничтожить их!"
+ decision_destroy_arienism_tooltip: "Раз и навсегда уничтожить ариэнитскую веру"
+ decision_destroy_arienism_confirm: "Не останется ни одного солнцепоклонника!"
+ destroy_arienism_effect_tooltip: "Вы разрушаете все структуры ариэнизма"
 
  #####################################
  ### War of the Rohirrim Decisions ###
