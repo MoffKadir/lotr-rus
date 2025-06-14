@@ -234,8 +234,8 @@
  fp2_struggle.1001.a: "Отличная идея! Я создам такой фонд."
  fp2_struggle.1001.b: "Только вдовы могут рассчитывать на поддержку."
  fp2_struggle.1001.b.tt: "Ваша конфессия с неодобрением относится к женщинам с внебрачными детьми."
- fp2_struggle.1001.c: "Они могут остаться у меня [ROOT.Char.Custom('GetCourt_RU_5')]! Еды хватит на всех!"
- fp2_struggle.1001.c.tt: "Вы приглашаете всех бедных матерей-одиночек державы [ROOT.Char.Custom('GetCourt_RU_6')]."
+ fp2_struggle.1001.c: "Они могут остаться у меня [ROOT.Char.Custom('GetCourt_RU_Where')]! Еды хватит на всех!"
+ fp2_struggle.1001.c.tt: "Вы приглашаете всех бедных матерей-одиночек державы [ROOT.Char.Custom('GetCourt_RU_WhereTo')]."
  fp2_struggle.1001.d: "Я не сомневаюсь, что мои добросердечные вассалы поддержат это начинание."
  fp2_struggle.1001.e: "Я [ROOT.Char.GetTitleTierName], а не нянька!"
  fp2_struggle.1001.specialdescpositive: "Вассалы, готовые оплатить ваш замысел, увеличат #color_light_blue мнение#! о вас на #positive_value 10#!"
@@ -817,7 +817,7 @@
  fp2_struggle.2005.a: "Вы хорошо потрудились."
  fp2_struggle.2005.a.a: "Жаль, что так вышло с верфью, но мы хотя бы сохранили корабли."
  fp2_struggle.2005.desc.alt.a: "Сереброкрушение"
- fp2_struggle.2005.desc.alt.a.desc: "Заранее зная, как меня огорчит эта новость, мой [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('2005_scoped_steward'))] [2005_scoped_steward.GetFirstName] осторожно сообщает мне о том, чем закончились наши попытки заставить серебро плавать.\n\n«Как мы ни старались построить судно из металла, это совершенно невозможно. Мы вывели готовый корабль в море, но он тут же затонул. Большая часть нашей казны теперь покоится на дне морском. Мне очень жаль, мой сюзерен».\n\n"
+ fp2_struggle.2005.desc.alt.a.desc: "Заранее зная, как меня огорчит эта новость, мой [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('2005_scoped_steward'))] [2005_scoped_steward.GetFirstName] с осторожностью рассказывает, чем закончились наши попытки заставить серебро плавать.\n\n«Сколько ни старайся, а построить судно из металла невозможно. Мы вывели готовый корабль в море, но он тут же затонул. Большая часть нашей казны теперь на дне морском. Мне очень жаль, мой сюзерен».\n\n"
  fp2_struggle.2005.desc.alt.b: "Серебряные суда"
  fp2_struggle.2005.desc.alt.b.desc: "Мой [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('2005_scoped_steward'))] [2005_scoped_steward.GetFirstName] с самого начала понял, что вся эта затея с серебряным кораблем — это обман, чтобы пустить пыль в глаза окружающим. Сколько ни выдумывай изобретений, из металла корабля никогда не построишь.\n\nПоэтому вместо того, чтобы пытаться делать невозможное, [2005_scoped_steward.GetSheHe] просто приказал обить деревянный корабль тонкими серебряными листами. Теперь о моем «металлическом корабле» говорят во всех лучших домах, а мне завидуют по всему миру!\n\n"
 
@@ -828,7 +828,7 @@
  fp2_struggle.2006.a.a: "[fp2_2006_vassal_in_crisis.GetTitledFirstNameNoTooltip] все еще мучается сомнениями."
  fp2_struggle.2006.a.b: "[fp2_2006_vassal_in_crisis.GetTitledFirstNameNoTooltip] нервничает оттого, что рядом находится [2006_scoped_chaplain.GetTitledFirstNameNoTooltip]"
  fp2_struggle.2006.a.c: "[2006_scoped_chaplain.GetCouncilTitleFirstNameNoTooltip] предлагает свою помощь, и [fp2_2006_vassal_in_crisis.GetTitledFirstNameNoTooltip] укрепляется в своей вере"
- fp2_struggle.2006.a.desc: "На ваш зов является [2006_scoped_chaplain.GetCouncilTitleFirstNameNoTooltip], чтобы разобраться в проблеме. [fp2_2006_vassal_in_crisis.GetFirstNameNoTooltip] будет считать, что вы предали [fp2_2006_vassal_in_crisis.GetHerHis], сообщив окружающим о [fp2_2006_vassal_in_crisis.GetHerHis] проблемах."
+ fp2_struggle.2006.a.desc: "На ваш зов является [2006_scoped_chaplain.GetCouncilTitleFirstNameNoTooltip], чтобы разобраться в проблеме. [fp2_2006_vassal_in_crisis.GetFirstNameNoTooltip] будет считать, что вы предали [Select_CString(fp2_2006_vassal_in_crisis.IsFemale, 'ее', 'его')], рассказав окружающим о [Select_CString(fp2_2006_vassal_in_crisis.IsFemale, 'ее', 'его')] проблемах."
  fp2_struggle.2006.b: "Я лично подогрею [fp2_2006_vassal_in_crisis.GetHersHis] рвение."
  fp2_struggle.2006.b.a.desc: "[fp2_2006_vassal_in_crisis.GetFirstNameNoTooltip] сопротивляется попыткам"
  fp2_struggle.2006.b.b.desc: "Благодаря вам [fp2_2006_vassal_in_crisis.GetFirstNameNoTooltip] укрепляется в своей вере"
@@ -851,13 +851,13 @@
  fp2_flavor.3001.b: "Но говорим мы не на этом языке. Я использую всеобщий язык - вестрон."
  fp2_flavor.3001.c: "Не стоит делать различий. Пусть будут и [SCOPE.Custom('SacredLanguage')|l], и вестрон."
  fp2_flavor.3001.d: "Здесь живем не только мы."
- SacredLanguage_sindarin: "Синдарин"
- SacredLanguage_khuzdul: "Кхуздул"
- SacredLanguage_adunaic: "Адунаик"
+ SacredLanguage_sindarin: "Синдарин" #LOTR
+ SacredLanguage_khuzdul: "Кхуздул" #LOTR
+ SacredLanguage_adunaic: "Адунаик" #LOTR
  fp2_epitaph_modifier: "Многоязычная эпитафия"
 
  fp2_flavor.3011.t: "Неожиданный ход"
- fp2_flavor.3011.desc: "[Select_CString(fp2_flavor_3011_best_friend.IsFemale, 'Моя лучшая подруга', 'Мой лучший друг' )] может входить ко мне в [ROOT.Char.Custom('GetChamber_RU_1')] без официального объявления, и [Select_CString(fp2_flavor_3011_best_friend.IsFemale, 'ее', 'его' )] веселая улыбка всегда радует меня. Но... сегодня что-то изменилось, [Select_CString(fp2_flavor_3011_best_friend.IsFemale, 'ее', 'его' )] волосы идеально уложены, а наряд роскошен и безупречен.\n\n«[ROOT.Char.GetFirstNameNoTooltip], [Select_CString(ROOT.Char.IsFemale, 'дорогая подруга', 'дорогой друг' )]! [ROOT.Char.Custom('ResidenceBuilding')|U]... столько места... а рядом с тобой никого! Ничто меня так не радует, как твое бесценное общество. Ах как бы мне хотелось проводить все дни и ночи с тобой в [ROOT.Char.Custom('GetChamber_RU_4')]»."
+ fp2_flavor.3011.desc: "[Select_CString(fp2_flavor_3011_best_friend.IsFemale, 'Моя лучшая подруга', 'Мой лучший друг' )] может входить ко мне в [ROOT.Char.Custom('GetChamber')] без официального объявления, и [Select_CString(fp2_flavor_3011_best_friend.IsFemale, 'ее', 'его' )] веселая улыбка всегда радует меня. Но... сегодня что-то изменилось, [Select_CString(fp2_flavor_3011_best_friend.IsFemale, 'ее', 'его' )] волосы идеально уложены, а наряд роскошен и безупречен.\n\n«[ROOT.Char.GetFirstNameNoTooltip], [Select_CString(ROOT.Char.IsFemale, 'дорогая подруга', 'дорогой друг' )]! [ROOT.Char.Custom('ResidenceBuilding')|U]... столько места... а рядом с тобой никого! Ничто меня так не радует, как твое бесценное общество. Ах как бы мне хотелось проводить все дни и ночи с тобой в [ROOT.Char.Custom('GetChamber_RU_Prep')]»."
  fp2_flavor.3011.a: "А кровать всего одна."
  fp2_flavor.3011.b: "Я найду тебе подобающие покои!"
  fp2_flavor.3011.c_spouse: "У меня есть супруг!"
