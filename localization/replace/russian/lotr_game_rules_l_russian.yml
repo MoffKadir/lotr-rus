@@ -80,12 +80,6 @@
  setting_armored_sauron:0 "Бронированный"
  setting_armored_sauron_desc:0 "Саурон Неукротимый — в перекованной древней броне [sauroncharacter|E] принимает свою самую страшную форму."
 
- rule_golden_king_recall_rule:0 "$lotr_gr_prefix$Золотой король"
- setting_golden_king_recallable:0 "Отзываемый"
- setting_golden_king_recallable_desc:0 "Дает [Concept( 'sauroncharacter', 'Саурону' )|E] возможность отозвать своего [nazgul|El], [Concept( 'goldenkingshort', 'Золотого Короля' )|E], из земель Абрахана на юге, чтобы помочь ему."
- setting_golden_king_not_recallable:0 "Не подлежит отзыву"
- setting_golden_king_not_recallable_desc:0 "#N [sauroncharacter|E] не будет отзывать своего [nazgul|El], [Concept( 'goldenkingshort', 'Золотого Короля' )|E], в [mordor|E], что создаст дополнительную проблему для любых игроков на Юге.#!"
-  
  rule_elven_expansion_rule:0 "$lotr_gr_prefix$Экспансия эльфов"
  setting_limited_elven_expansion:0 "Ограниченная"
  setting_limited_elven_expansion_desc:0 "[Concept( 'elves', 'Эльфам' )|E] будет доступен ограниченный набор [casus_belli|El], а прогресс фабрикации претензий будет замедлен, чтобы отразить их каноничную природу, не направленную на экспансию."
@@ -105,6 +99,12 @@
  setting_mithril_only_misties_desc:0 "[mithril|E] может быть найден только в [Concept( 'mistymountains', 'Мглистых горах' )|E], даже при наличии [Concept( 'perk', 'достоинства' )|E] «[GetPerk( 'exotic_minerals_perk' ).GetName( GetPlayer )]»."
  setting_mithril_anywhere:0 "Повсюду"
  setting_mithril_anywhere_desc:0 "[mithril|E] может быть обнаружен во всём [middleearth|E] при наличии [Concept( 'perk', 'достоинства' )|E] «[GetPerk( 'exotic_minerals_perk' ).GetName( GetPlayer )]»."
+
+ rule_no_dwarven_remarriage_rule:0 "$lotr_gr_prefix$Запрет повторных гномьих браков"
+ setting_no_dwarven_remarriage:0 "Повторные браки запрещены"
+ setting_no_dwarven_remarriage_desc:0 "После смерти своей пары [Concept('dwarves', 'гномам')|E] запрещено вступать в новый брак."
+ setting_dwarven_remarriage_allowed:0 "Повторные браки разрешены"
+ setting_dwarven_remarriage_allowed_desc:0 "После смерти своей пары [Concept('dwarves', 'гномам')|E] разрешено вступать в новый брак."
 
  rule_female_beards_rule:0 "$lotr_gr_prefix$Женские бороды"
  setting_no_female_beards:0 "Нет бород"
@@ -132,9 +132,9 @@
  setting_fingon_parent:0 "Фингон"
  setting_fingon_parent_desc:0 "Фингон будет отцом Гиль-галада."
  setting_finrod_parent:0 "Финрод"
- setting_finrod_parent_desc:0 "Финрод будет отцом Гиль-галада."
+ setting_finrod_parent_desc:0 "[finrod|E] будет отцом Гиль-галада."
  setting_maglor_parent:0 "Маглор"
- setting_maglor_parent_desc:0 "Маглор будет отцом Гиль-галада."
+ setting_maglor_parent_desc:0 "[maglor|E] будет отцом Гиль-галада."
  setting_caranthir_parent:0 "Карантир"
  setting_caranthir_parent_desc:0 "Карантир будет отцом Гиль-галада."
 
@@ -148,7 +148,7 @@
  setting_valinor_intervention:0 "Вторжение из Валинора"
  setting_valinor_intervention_desc:0 "[eonwecharacter|E] возглавит войско [Concept('elves', 'эльфов')|E] из [Concept('valinor', 'Валинора')|E]."
  setting_second_return_of_the_noldor:0 "Второе возвращение нолдор"
- setting_second_return_of_the_noldor_desc:0 "Финрод возглавит второе воинство [noldorelves|El]."
+ setting_second_return_of_the_noldor_desc:0 "[finrod|E] возглавит второе воинство [noldorelves|El]."
  setting_great_armament:0 "Великая Армада"
  setting_great_armament_desc:0 "#bold ПОКА НЕ РЕАЛИЗОВАНО#! Ар-Фаразон вернется с Запада с [Concept('numenoreans', 'нуменорцами')|E]."
  setting_fleet_of_ciryatur:0 "Флот Кирьятура"
@@ -193,3 +193,15 @@
  setting_historicity_extra_admin_ray_gameplay_not_administrative_desc: "В Рае не будет [Concept('administrative', 'бюрократической')|E] [Concept('government', 'формы правления')|E] на любой стартовой дате, игровой процесс соответствует ожиданиям."
  setting_historicity_extra_admin_ray_alt_historic_always: "#high Всегда бюрократия#!"
  setting_historicity_extra_admin_ray_alt_historic_always_desc: "Рая всегда начинает с [Concept('administrative', 'бюрократической')|E] [Concept('government', 'формой правления')|E], которая не отражает историческое устройство державы."
+
+ rule_northern_orc_invasions: "$lotr_gr_prefix$Северные искатели приключений"
+ setting_northern_orcs_invade: "Орки-искатели приключений"
+ setting_northern_orcs_invade_desc: "Орки из Мглистых гор и Мордора нацелятся на державы на севере Средиземья."
+ setting_northern_orcs_no_invade: "Дикари-искатели приключений"
+ setting_northern_orcs_no_invade_desc: "Дикари из Рохана и Энедвайта нацелятся на державы на севере Средиземья."
+
+ rule_southern_orc_invasions: "$lotr_gr_prefix$Южные искатели приключений"
+ setting_southern_orcs_invade: "Орки-искатели приключений"
+ setting_southern_orcs_invade_desc: "Орки с Жёлтых гор нацелятся на державы на юге Средиземья."
+ setting_southern_orcs_no_invade: "Пираты-искатели приключений"
+ setting_southern_orcs_no_invade_desc: "Пираты из Умбара и Мардруака нацелятся на державы на юге Средиземья."

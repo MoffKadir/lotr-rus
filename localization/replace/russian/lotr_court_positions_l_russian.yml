@@ -1,6 +1,5 @@
 ﻿l_russian:
  # Additional Vanilla Loc
- court_position_unyielding_defender_trait:0 "[GetTrait('unyielding_defender').GetName( ROOT.Char )]" #Missing in Vanilla
  court_position_crafting_trait:0 "[GetTrait('lifestyle_artifact_crafting').GetName( ROOT.Char )]"
 
  # Overseer of the Mines
@@ -33,6 +32,46 @@
  court_position_miner_3_trait:1 "$court_position_miner_1_trait$"
  court_position_miner_2_trait:1 "$court_position_miner_1_trait$"
  court_position_miner_1_trait:1 "[GetTrait('lifestyle_miner').GetName( ROOT.Char )]"
+ court_position_pilgrim_of_mount_dolmed_modifier:0 "[GetModifier('pilgrim_of_mount_dolmed').GetNameWithTooltip]"
+
+ # Raven Keeper
+ raven_keeper_court_position:0 "Хранитель воронов"
+ relation_raven_keeper_male:0 "$raven_keeper_court_position$"
+ relation_raven_keeper_female:0 "$raven_keeper_court_position$"
+ relation_raven_keeper_male_possessive:0 "хранителя воронов"
+ relation_raven_keeper_female_possessive:0 "хранителя воронов"
+ court_position_desc_raven_keeper:0 "заботиться о воронах Эребора"
+ court_position_subject_raven_keeper:0 "мудрейшие из птиц"
+ raven_keeper_court_position_desc:1 "Заботясь и оказывая почтение воронам Эребора, $raven_keeper_court_position$ заботится об их нуждах и толкует их предзнаменования. Эта почетная должность сохраняет старый союз между [Concept('durinsfolk', 'Народом Дурина')|E] и мудрыми птицами Горы."
+ raven_keeper_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'raven_keeper_court_position' ) )]"
+ raven_keeper_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'raven_keeper_court_position' ) )] #weak ([old_holder.GetFirstName] — [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'raven_keeper_court_position' ) )])#!"
+ raven_keeper_salary_tooltip:0 "[GetCourtPositionType( 'raven_keeper_court_position' ).GetName()] получает ежемесячное жалованье — [SCOPE.ScriptValue('medium_court_position_salary')|2] [gold_i]"
+
+ # First Axe
+ first_axe_court_position: "First Axe"
+ relation_first_axe_male: "$first_axe_court_position$"
+ relation_first_axe_female: "$first_axe_court_position$"
+ relation_first_axe_male_possessive: "$first_axe_court_position$'s"
+ relation_first_axe_female_possessive: "$first_axe_court_position$'s"
+ court_position_desc_first_axe: "dutifully leading the vanguard"
+ court_position_subject_first_axe: "might and courage"
+ first_axe_court_position_desc:1 "The First Axe stands at the head of the [dwarven|E] armies, guiding them with unwavering resolve. With keen strategy and steady hand, they ensure the warriors are always prepared, holding strong in battle and ensuring that the host remains a formidable force."
+ first_axe_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] is [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'first_axe_court_position' ) )]"
+ first_axe_old_holder_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] is [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'first_axe_court_position' ) )] #weak ([old_holder.GetFirstName] [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'first_axe_court_position' ) )])#!"
+ first_axe_salary_tooltip: "[GetCourtPositionType( 'first_axe_court_position' ).GetName()] has a monthly salary of [gold_i][SCOPE.ScriptValue('medium_court_position_salary')|2]"
+
+ # Taskmaster
+ taskmaster_court_position: "Taskmaster"
+ relation_taskmaster_male: "$taskmaster_court_position$"
+ relation_taskmaster_female: "$taskmaster_court_position$"
+ relation_taskmaster_male_possessive: "$taskmaster_court_position$'s"
+ relation_taskmaster_female_possessive: "$taskmaster_court_position$'s"
+ court_position_desc_taskmaster: "subjugating the weak-willed"
+ court_position_subject_taskmaster: "harsh punishment"
+ taskmaster_court_position_desc:1 "A brutal overseer who maintains order through fear and force, the Taskmaster ensures that even the laziest underlings toil without rest. They also the training of wargs, forging beasts and riders alike into instruments of war."
+ taskmaster_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] is [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'taskmaster_court_position' ) )]"
+ taskmaster_old_holder_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] is [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'taskmaster_court_position' ) )] #weak ([old_holder.GetFirstName] [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'taskmaster_court_position' ) )])#!"
+ taskmaster_salary_tooltip: "[GetCourtPositionType( 'taskmaster_court_position' ).GetName()] has a monthly salary of [gold_i][SCOPE.ScriptValue('medium_court_position_salary')|2]"
 
  # Second Marshal of Rohan
  second_marshal_of_rohan_court_position:0 "Второй маршал Риддермарка"
@@ -74,5 +113,23 @@
  warden_of_the_keys_custom_effect_description:0 "[Concept('aptitude', 'Пригодность')|E] снижает шанс успеха враждебных происков"
  warden_of_the_keys_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'warden_of_the_keys_court_position' ) )]"
  warden_of_the_keys_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'warden_of_the_keys_court_position' ) )] #weak ([old_holder.GetFirstName] - [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'warden_of_the_keys_court_position' ) )])#!"
- warden_of_the_keys_salary_tooltip:0 "[GetCourtPositionType( 'warden_of_the_keys_court_position' ).GetName()] получает ежемесячное жалованье — [gold_i][SCOPE.ScriptValue('minor_court_position_salary')|2]"
+ warden_of_the_keys_salary_tooltip:0 "[GetCourtPositionType( 'warden_of_the_keys_court_position' ).GetName()] получает ежемесячное жалованье — [SCOPE.ScriptValue('minor_court_position_salary')|2] [gold_i]"
  diarch_loyalty_score.regency.warden_of_the_keys:0 "[GetCourtPositionType('warden_of_the_keys_court_position').GetName()]"
+
+ # Butler
+ butler_court_position:0 "Чашник"
+ relation_butler_male:0 "$butler_court_position$"
+ relation_butler_female:0 "$butler_court_position$"
+ relation_butler_male_possessive:0 "$butler_court_position$"
+ relation_butler_female_possessive:0 "$butler_court_position$"
+ court_position_desc_butler:0 "хранит королевские вина и посещает пиршественные залы."
+ court_position_subject_butler:0 "ящики и бочки"
+ butler_court_position_desc:1 "Чашник следит за королевскими погребами и распределением вина на пирах своего сюзерена, ему доверяют лучшие сорта из дальних стран. Хотя эта должность и является доверительной, она требует бдительности, поскольку неосторожность может привести к большому неудобству для хозяина."
+ butler_employer_custom_effect_description:0 "$BULLET$[GetActivityType( 'activity_feast' ).GetName] стоит на #positive_value @gold_icon!5%#!-#positive_value @gold_icon!25%#! дешевле (в зависимости от [Concept('aptitude','пригодности')|E])\n$BULLET$[GetActivityType( 'activity_feast' ).GetName] дает на #positive_value 5%#!-#positive_value 25%#! большие награды (в зависимости от [Concept('aptitude','пригодности')|E])"
+ butler_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'butler_court_position' ) )]"
+ butler_old_holder_aptitude_tooltip:0 "[Select_CString(candidate.IsLocalPlayer, 'Ваша', Select_CString(candidate.IsFemale, 'Ее', 'Его' ))] [Concept('aptitude', 'пригодность')|E] — [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'butler_court_position' ) )] #weak ([old_holder.GetFirstName] — [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'butler_court_position' ) )])#!"
+ butler_salary_tooltip:0 "[GetCourtPositionType( 'butler_court_position' ).GetName()] получает ежемесячное жалованье — [SCOPE.ScriptValue('medium_court_position_salary')|2] [gold_i]"
+ butler_popular_opinion: "Опустошить погреба"
+ butler_popular_opinion_desc: "Увеличить производство по всей державе, чтобы мы могли регулярно делиться лучшими урожаями с народом."
+ butler_court_opinion: "Поделиться с двором"
+ butler_court_opinion_desc: "Достать лучшие сорта, чтобы двор увидел, чем мы располагаем."

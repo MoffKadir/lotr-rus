@@ -73,9 +73,10 @@
  THEY_ARE_NOT_INVOLVED_IN_FP3_STRUGGLE: "[TARGET_CHARACTER.GetNamePossessiveOrMy|U][Select_CString(TARGET_CHARACTER.IsLocalPlayer, ' персонаж', '' )] не [Concept( 'struggle_involved', 'участвует' )|E] в [Concept( 'persian_struggle', 'иранской интерлюдии' )|E]"
 
  fp3_request_turkic_invasion_interaction: "Попросить о вторжении"
- lotr_request_easterling_invasion_interaction: "Попросить истерлингов о вторжении"
- recipient_secondary_lotr_request_easterling_invasion_interaction: "@trebuchet_icon! Захватчик"
+ lotr_request_easterling_invasion_interaction: "Попросить истерлингов о вторжении" #LOTR
+ recipient_secondary_lotr_request_easterling_invasion_interaction: "@trebuchet_icon! Захватчик" #LOTR
  fp3_request_turkic_invasion_interaction_desc: "Попросить у тюркского военачальника помощи, чтобы вторгнуться на земли этого правителя и пошатнуть его положение"
+ lotr_request_easterling_invasion_interaction_desc: "Попросить у йориагского военачальника помощи, чтобы вторгнуться на земли этого правителя и пошатнуть его положение" #LOTR
  fp3_request_turkic_invasion_interaction_negative_gold_offer: "У получателя уже больше войск, чем у цели. Невозможно предложить пропорционально отрицательную сумму [Concept( 'gold', 'золота' )|E]!\n"
  recipient_secondary_fp3_request_turkic_invasion_interaction: "@trebuchet_icon! Захватчик"
  fp3_request_turkic_invasion_interaction_option_join_war: "@alliance_icon! Обеспечить военную поддержку"
@@ -89,38 +90,36 @@
  fp3_RTI_AI_RECIPIENT_IS_SOMEWHAT_STRONGER: "[Select_CString(secondary_recipient.IsFemale, 'Она', 'Он' )] немного сильнее, чем [Select_CString(recipient.IsLocalPlayer, '', 'персонаж ' )][recipient.GetNamePossessiveOrMy][Select_CString(recipient.IsLocalPlayer, ' персонаж', '' )]: $VALUE|=+0$"
  fp3_RTI_AI_RECIPIENT_IS_MUCH_STRONGER: "[Select_CString(secondary_recipient.IsFemale, 'Она', 'Он' )] значительно сильнее, чем [Select_CString(recipient.IsLocalPlayer, '', 'персонаж ' )][recipient.GetNamePossessiveOrMy][Select_CString(recipient.IsLocalPlayer, ' персонаж', '' )]: $VALUE|=+0$"
  fp3_request_turkic_invasion_interaction_accept_notification.t: "Вторжение начинается"
- lotr_request_easterling_invasion_interaction_accept_notification.t: "Вторжение начинается"
+ lotr_request_easterling_invasion_interaction_accept_notification.t: "Вторжение начинается" #LOTR
  fp3_request_turkic_invasion_interaction_accept_notification.desc: "[secondary_recipient.GetShortUINameNoTooltip] начинает завоевание территории [text_title.GetName]"
  fp3_request_turkic_invasion_interaction_accept_target_notification.desc: "[secondary_recipient.GetNamePossessiveOrMy|U][Select_CString(secondary_recipient.IsLocalPlayer, ' персонаж', '' )] получает у [Select_CString(actor.IsLocalPlayer, '', 'персонажа ' )][actor.GetNamePossessiveOrMy][Select_CString(actor.IsLocalPlayer, 'его персонажа', '' )] деньги на вторжение во владение [text_title.GetNameNoTier]"
  fp3_turkic_invasion_cb_result_tt: "В случае успеха [Concept( 'duchy', 'герцогство' )|E] будет захвачено и его получит один из [Concept( 'courtiers', 'придворных' )|E], чей сюзерен [secondary_recipient.GetFirstName]. [recipient.GetFirstName] при этом получит модификатор [GetModifier('fp3_incursion_instability').GetNameWithTooltip] на #V 20#! лет."
  fp3_incursion_instability: "Истерлингские вторжения"
  fp3_incursion_instability_desc: "Земли этого персонажа постоянно и успешно разоряют истерлингские налетчики"
- LOTR_EASTERLING_INVASION_AI_IS_PACIFIST_FAITH: "[secondary_recipient.GetFaith.GetAdjective] продвигает пацифизм: $VALUE|=+0$"
- LOTR_EASTERLING_INVASION_AI_IS_PACIFIST_CULTURE: "[secondary_recipient.GetCulture.GetName] - пацифисты: $VALUE|=+0$"
- LOTR_EASTERLING_INVASION_TARGET_IS_SAURON: "[recipient.GetShortUINameNoTooltip|U] - [sauronthedarklordcharacter|E]: $VALUE|=+0$"
-
+ LOTR_EASTERLING_INVASION_AI_IS_PACIFIST_FAITH: "[secondary_recipient.GetFaith.GetAdjective] продвигает пацифизм: $VALUE|=+0$" #LOTR
+ LOTR_EASTERLING_INVASION_AI_IS_PACIFIST_CULTURE: "[secondary_recipient.GetCulture.GetName] - пацифисты: $VALUE|=+0$" #LOTR
+ LOTR_EASTERLING_INVASION_TARGET_IS_SAURON: "[recipient.GetShortUINameNoTooltip|U] - [sauronthedarklordcharacter|E]: $VALUE|=+0$" #LOTR
  NOT_generic_is_not_part_of_same_struggle: "Вас с ними не объединяет общая борьба!"
-
  fp3_challenge_house_head_interaction: "Бросить вызов главе дома"
  fp3_challenge_house_head_interaction_desc: "Бросить вызов персонажу [recipient.GetShortUIName], как [Concept( 'house_head', 'глава дома' )|E] [recipient.GetHouse.GetBaseName]. Отказ навредит репутации персонажа."
  fp3_challenge_house_head_interaction_notification: "Вы недостаточно сильны, чтобы возглавлять дом [actor.GetHouse.GetBaseName]. Я докажу это мечом."
  fp3_challenge_house_head_interaction_notification_diplomacy: "Пора обсудить, достойны ли вы возглавлять дом [actor.GetHouse.GetBaseName]. Я считаю, что настало время перемен."
- fp3_challenge_house_head_interaction_heir_bonus: "Вызвать на поединок на правах законного [Concept( 'heir', 'наследника' )]"
+ fp3_challenge_house_head_interaction_heir_bonus: "Вызвать на поединок на правах законного [Concept( 'heir', 'наследника' )|E]"
  fp3_challenge_house_head_interaction_heir_bonus_desc: "Запрос от [Concept( 'heir', 'наследника' )|E]"
  fp3_challenge_house_head_interaction_duel_tooltip_warning: "@warning_icon! #X Есть риск получить ранение!#!"
  fp3_challenge_house_head_interaction_duel_tooltip_warning_lethal: "@warning_icon! #X Есть риск @death_icon!умереть!#!"
- fp3_challenge_house_head_interaction_tooltip_actor.a: "[Select_CString(actor.IsLocalPlayer, '', 'Персонаж ' )][actor.GetNamePossessiveOrMy|U][Select_CString(actor.IsLocalPlayer, ' персонаж', '' )] вступит в #I несмертельный#! [Concept( 'single_combat_duel', 'поединок' )|E] с персонажем [recipient.GetShortUIName]. Победитель получит титул: [actor.GetHouse.GetBaseName] [house_head|E]."
- fp3_challenge_house_head_interaction_tooltip_actor.a.lethal: "[Select_CString(actor.IsLocalPlayer, '', 'Персонаж ' )][actor.GetNamePossessiveOrMy|U][Select_CString(actor.IsLocalPlayer, ' персонаж', '' )] вступит в #X смертельный#! [Concept( 'single_combat_duel', 'поединок' )|E] с персонажем [recipient.GetShortUIName]. Победитель получит титул: [actor.GetHouse.GetBaseName] [house_head|E]."
+ fp3_challenge_house_head_interaction_tooltip_actor.a: "[actor.GetNamePossessiveOrMy|U][Select_CString(actor.IsLocalPlayer, ' персонаж', '' )] вступит в #I несмертельный#! [Concept( 'single_combat_duel', 'поединок' )|E] с [SelectLocalization(recipient.IsLocalPlayer, 'вами', 'персонажем ' )][SelectLocalization(recipient.IsLocalPlayer, '', recipient.GetShortUIName )]. Победитель получит титул [Concept( 'house_head', 'главы дома' )|E]: [actor.GetHouse.GetBaseName]."
+ fp3_challenge_house_head_interaction_tooltip_actor.a.lethal: "[actor.GetNamePossessiveOrMy|U][Select_CString(actor.IsLocalPlayer, ' персонаж', '' )] вступит в #X смертельный#! [Concept( 'single_combat_duel', 'поединок' )|E] с [SelectLocalization(recipient.IsLocalPlayer, 'вами', 'персонажем ' )][SelectLocalization(recipient.IsLocalPlayer, '', recipient.GetShortUIName )]. Победитель получит титул [Concept( 'house_head', 'главы дома' )|E]: [actor.GetHouse.GetBaseName]."
  fp3_challenge_house_head_interaction_tooltip_recipient.a: "Может принять вызов на поединок, чтобы избежать #n штрафа#! к [Concept( 'prestige', 'престижу' )|E]."
- fp3_challenge_house_head_interaction_tooltip_recipient.b: "[Select_CString(recipient.IsLocalPlayer, '', 'Персонаж ' )][recipient.GetNamePossessiveOrMy|U][Select_CString(recipient.IsLocalPlayer, ' персонаж', '' )] в случае победы получит [hook_i] [Concept( 'weak_hook', 'слабое влияние' )|E] на [Select_CString(actor.IsLocalPlayer, '', 'персонажа ' )][actor.GetNamePossessiveOrMy][Select_CString(actor.IsLocalPlayer, 'его персонажа', '' )]!"
- fp3_challenge_house_head_interaction_tooltip_recipient.diplomacy: "[Select_CString(recipient.IsLocalPlayer, '', 'Персонаж ' )][recipient.GetNamePossessiveOrMy|U][Select_CString(recipient.IsLocalPlayer, ' персонаж', '' )] может попросить что-нибудь взамен!"
+ fp3_challenge_house_head_interaction_tooltip_recipient.b: "[recipient.GetNamePossessiveOrMy|U][Select_CString(recipient.IsLocalPlayer, ' персонаж', '' )] в случае победы получит [hook_i] [Concept( 'weak_hook', 'слабое влияние' )|E] на [Select_CString(actor.IsLocalPlayer, '', 'персонажа ' )][actor.GetNamePossessiveOrMy][Select_CString(actor.IsLocalPlayer, 'его персонажа', '' )]!"
+ fp3_challenge_house_head_interaction_tooltip_recipient.diplomacy: "[recipient.GetNamePossessiveOrMy|U][Select_CString(recipient.IsLocalPlayer, ' персонаж', '' )] может попросить что-нибудь взамен!"
  fp3_challenge_house_head_interaction_tooltip_recipient.b.lethal: "@death_icon! В случае поражения [Select_CString(recipient.IsLocalPlayer, '', 'персонаж ' )][recipient.GetNamePossessiveOrMy][Select_CString(recipient.IsLocalPlayer, ' персонаж', '' )] погибнет!"
  fp3_challenge_house_head_interaction_tier_tt: "[recipient.GetShortUIName|U] [Select_CString(recipient.IsFemale, 'должна', 'должен' )] быть выше вас максимум на 1 [Concept( 'rank', 'ранг' )|E]"
  fp3_challenge_house_head_interaction_ongoing_tt: "[Select_CString(recipient.IsLocalPlayer, '', 'Персонаж ' )][recipient.GetNamePossessiveOrMy|U][Select_CString(recipient.IsLocalPlayer, ' персонаж', '' )] уже подумывает о вызове"
  fp3_challenge_house_head_interaction_recent_tt: "Дом [recipient.GetHouse.GetBaseName] недавно бросал вызов дому [house_head|E]"
  fp3_challenge_house_head_recent_cooldown_tt: "#V $fp3_challenge_house_head_interaction$#! будет невозможно в течение 3 лет"
- fp3_challenge_house_head_interaction_accepted_tt: "[Select_CString(actor.IsLocalPlayer, '', 'Персонаж ' )][actor.GetNamePossessiveOrMy|U][Select_CString(actor.IsLocalPlayer, ' персонаж', '' )] недавно [Select_CString(actor.IsFemale, 'приняла', 'принял' )] вызов"
- fp3_challenge_house_head_interaction_tooltip_actor.diplomacy: "[Select_CString(actor.IsLocalPlayer, '', 'Персонаж ' )][actor.GetNamePossessiveOrMy|U][Select_CString(actor.IsLocalPlayer, ' персонаж', '' )] попытается убедить персонажа [recipient.GetShortUIName] оставить пост [Concept( 'house_head', 'главы дома' )|E] [actor.GetHouse.GetBaseName]"
+ fp3_challenge_house_head_interaction_accepted_tt: "[actor.GetNamePossessiveOrMy|U][Select_CString(actor.IsLocalPlayer, ' персонаж', '' )] недавно [Select_CString(actor.IsFemale, 'приняла', 'принял' )] вызов"
+ fp3_challenge_house_head_interaction_tooltip_actor.diplomacy: "[actor.GetNamePossessiveOrMy|U][Select_CString(actor.IsLocalPlayer, ' персонаж', '' )] попытается убедить [SelectLocalization(recipient.IsLocalPlayer, 'вас', 'персонажа ' )][SelectLocalization(recipient.IsLocalPlayer, '', recipient.GetShortUIName )] оставить пост [Concept( 'house_head', 'главы дома' )|E] [actor.GetHouse.GetBaseName]"
  fp3_challenge_house_head_interaction_extra_icon: "$hook_extra_icon$"
  CHALLENGE_HOUSE_HEAD_DIPLOMACY_DUEL: "Переговоры"
  CHALLENGE_HOUSE_HEAD_LETHAL_DUEL: "Смертельный [Concept( 'single_combat_duel', 'поединок' )|E]"

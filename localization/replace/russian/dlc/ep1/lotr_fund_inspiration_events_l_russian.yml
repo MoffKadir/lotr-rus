@@ -186,7 +186,7 @@
  # Attack of the Drake hehe
 
  lotr_fund_inspiration.6530.t:0 "$fund_inspiration.title$ Неожиданный посетитель"
- lotr_fund_inspiration.6530.desc:0 "\n\n«Когда мы пересекали Серые горы, внезапно скалы отозвались жутким ревом, словно за нами явилось порождение самого Ангбанда.\n\nИ тогда оно появилось... Великий змей с замёрзшего севера пришёл за нами и стремительно спускался с горы, чтобы покончить с нашими жизнями и превратить нас в свою утреннюю закуску»."
+ lotr_fund_inspiration.6530.desc:0 "\n\n«Когда мы пересекали [Concept('greymountains', 'Серые горы')|E], внезапно скалы отозвались жутким ревом, словно за нами явилось порождение самого Ангбанда.\n\nИ тогда оно появилось... Великий змей с замёрзшего севера пришёл за нами и стремительно спускался с горы, чтобы покончить с нашими жизнями и превратить нас в свою утреннюю закуску»."
  lotr_fund_inspiration.6530.a:0 "Бегите, глупцы!"
  lotr_fund_inspiration.6530.a.success:0 "[inspiration_owner.GetTitledFirstName] успешно спасается от змей без вреда"
  lotr_fund_inspiration.6530.a.failure:0 "[inspiration_owner.GetTitledFirstName] успешно спасается, но получает ранение"
@@ -198,7 +198,7 @@
  #Adventurer mistakes fat lizard for a drake in the Grey Mountains
 
  lotr_fund_inspiration.6531.t:0 "$fund_inspiration.title$ Огромнейший змей"
- lotr_fund_inspiration.6531.introduction:0 "Я получаю письмо от моего авантюриста, отправившегося в поход по замёрзшим Серым горам."
+ lotr_fund_inspiration.6531.introduction:0 "Я получаю письмо от моего авантюриста, отправившегося в поход по замёрзшим [Concept('greymountains', 'Серым горам')|E]."
  lotr_fund_inspiration.6531.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l], посылаю вам королевский дар: шкуру самого большого из страшных змеев что бродят по северу.\n\nОн бросился на меня со злобным рёвом, его зубы, как огромные ножи, нацелились на моё горло. Но мои молниеносные рефлексы позволили мне вонзить меч в его брюхо и убить его.\n\nЯ еще не полностью [Select_CString(inspiration_owner.IsFemale, 'оправилась', 'оправился' )] от этого ужасного опыта, и мне нужен покой и тишина, прежде чем я смогу снова начать свои приключения»."
  lotr_fund_inspiration.6531.a:0 "Как... мило. Большое спасибо"
  lotr_fund_inspiration.6531.a.tt:0 "Вы разрешаете персонажу [inspiration_owner.GetTitledFirstName] немного отдохнуть."
@@ -252,11 +252,20 @@
  lotr_fund_inspiration.6535.c:0 "Я не доверяю чужеземной еде, наша достаточно хороша"
 
  #Adventurer meets Blacklock Mercenaries in Yellow Mountains, by Stella_SAX
- #Feel free to change loc, as I am very bad at this stuff
  
  lotr_fund_inspiration.6536.t:0 "$fund_inspiration.title$ Наёмники с топорами"
  lotr_fund_inspiration.6536.introduction:0 "Я получаю письмо от своего авантюриста, [Select_CString(inspiration_owner.IsFemale, 'которая', 'который' )] исследует Жёлтые горы."
  lotr_fund_inspiration.6536.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip], я пишу вам из лагера наёмников клана [Concept('blacklocks', 'Черновласов')|E], на который я [Select_CString(inspiration_owner.IsFemale, 'наткнулась', 'наткнулся' )], путешествуя по этим суровым землям.\nПохоже, они ищут работу и готовы предложить свои услуги за разумную плату»."
- lotr_fund_inspiration.6536.a:0 "Приведите мне этих наёмников!"
+ lotr_fund_inspiration.6536.a:0 "Наймите мне отряд, хорошо?"
  lotr_fund_inspiration.6536.b:0 "Наймите их для своей защиты и продолжайте свои приключения!"
  lotr_fund_inspiration.6536.c:0 "Просто спросите у них дорогу и продолжайте путь, у нас нет лишних средств."
+
+ #Adventurer reports on the abuse of incense in Khy, by Brice Undrerhill
+
+ lotr_fund_inspiration.6537.t:0 "$fund_inspiration.title$ Чепуха с благовониями"
+ lotr_fund_inspiration.6537.introduction:0 "Я [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] душистое письмо от [Select_CString(inspiration_owner.IsFemale, 'моей искательницы приключений, которая исследовала', 'моего искателя приключений, который исследовал' )] Солнечную империю Кхай."
+ lotr_fund_inspiration.6537.desc:0 "\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetTitleAsNameNoTooltip], я [Select_CString(inspiration_owner.IsFemale, 'должна', 'должен' )] поведать вам о необычном обычае жителей этих мест».\n\n«Благовония в изобилии повсеместно используются в ежедневных богослужениях, так как их дым поднимается к их любимому солнцу. Но если бедняки пользуются духами низкого качества, а иногда даже жгут обычные травы, то у знати они постоянно горят в домах и дворцах, чтобы продемонстрировать свое благочестие».\n\n«Обычно благородного человека можно учуять раньше, чем увидеть, и это придаёт новый смысл поговорке «Воздух благородства»."
+ lotr_fund_inspiration.6537.a:0 "Может, и мне стоит завести благоухающий двор?"
+ lotr_fund_inspiration.6537.a.success:0 "Ваш двор пахнет восхитительной экзотикой"
+ lotr_fund_inspiration.6537.a.failure:0 "Ваши придворные не оценили запаха"
+ lotr_fund_inspiration.6537.b:0 "Что за необычный обычай! Мне больше нравятся наши собственные запахи."

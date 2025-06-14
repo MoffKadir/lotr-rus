@@ -94,6 +94,7 @@
  king_feudal_female_steward_nonholder: "Леди"
 
  # Admin Titles
+
  baron_administrative_male_gondor: "Кондир"
  baron_administrative_female_gondor: "Кондис"
  count_administrative_male_gondor: "Браннон"
@@ -108,11 +109,13 @@
 
 
  # Vassal Titles
+ county_feudal_dunedain: "[CHARACTER.Custom('county_dunedain')]"
  count_dunedain_male: "[CHARACTER.Custom('count_dunedain_male')]"
- count_dunedain_male_vassal: "Хранитель"
+ #count_dunedain_male_vassal: "Хранитель"
  count_dunedain_female: "[CHARACTER.Custom('count_dunedain_female')]"
- count_dunedain_female_vassal: "Хранительница"
- duchy_feudal_dunedain: "Вождество"
+ #count_dunedain_female_vassal: "Хранительница"
+ duchy_feudal_dunedain: "[CHARACTER.Custom('duchy_dunedain')]"
+ duchy_governorate: "Провинция"
  duke_dunedain_male: "[CHARACTER.Custom('duke_dunedain_male')]"
  duke_dunedain_female: "[CHARACTER.Custom('duke_dunedain_female')]"
  kingdom_dunedain: "[CHARACTER.Custom('kingdom_dunedain')]"
@@ -141,11 +144,11 @@
  king_feudal_female_k_lebennin: "Морская владычица"
  king_feudal_female_k_lebennin_nonholder: "Леди"
  duchy_feudal_k_lebennin_coast: "Гавань"
- duchy_feudal_k_lebennin_noncoast: "Королевское владение"
+ #duchy_feudal_k_lebennin_noncoast: "Королевское владение"
  duke_feudal_male_k_lebennin_coast: "Легат"
- duke_feudal_female_k_lebennin_coast: "Легат"
- duke_feudal_male_k_lebennin_noncoast: "Рыцарь королевства"
- duke_feudal_female_k_lebennin_noncoast: "Дама королевства"
+ #duke_feudal_female_k_lebennin_coast: "Легат"
+ #duke_feudal_male_k_lebennin_noncoast: "Рыцарь королевства"
+ #duke_feudal_female_k_lebennin_noncoast: "Дама королевства"
  county_feudal_k_lebennin: "Командование"
  count_feudal_k_lebennin: "Капитан"
  prince_male_k_lebennin: "Лорд"
@@ -656,12 +659,28 @@
  empire_dwarf: "Великий чертог"
 
  # Firebeards
- emperor_dwarf_male_firebeards: "Ирсин Забаду"
- emperor_dwarf_female_firebeards: "Ирсин Забаду"
+ emperor_dwarf_male_firebeards: "Зулбад"
+ emperor_dwarf_female_firebeards: "Зулбад"
 
  # Broadbeams
- emperor_dwarf_male_broadbeams: "Уфат Азбад"
- emperor_dwarf_female_broadbeams: "Уфат Азбад"
+ emperor_dwarf_male_broadbeams: "Маданбад"
+ emperor_dwarf_female_broadbeams: "Маданбад"
+
+ # Ironfists
+ # emperor_dwarf_male_ironfists: "Zirnînbâd"
+ # emperor_dwarf_female_ironfists: "Zirnînbâd"
+
+ # Stiffbeards
+ emperor_dwarf_male_stiffbeards: "Ахлатбад"
+ emperor_dwarf_female_stiffbeards: "Ахлатбад"
+
+ # Blacklocks
+ emperor_dwarf_male_blacklocks: "Кхатзабад"
+ emperor_dwarf_female_blacklocks: "Кхатзабад"
+
+ # Stonefoots
+ # emperor_dwarf_male_stonefoots: "Matarbâd"
+ # emperor_dwarf_female_stonefoots: "Matarbâd"
 
  # Mount Dolmed
  mount_dolmed_dwarf_female: "Верховная призывательница камня"
@@ -721,6 +740,67 @@
  lord_celeborn: "Хир"
  lady_galadriel: "Хириль"
 
+ ### Ormal ###
+
+ # Khyan 
+ baron_administrative_khy: "Эрехша"
+ baron_administrative_female_khy_nonholder: "Сарбану"
+ count_administrative_khy: "Шарпан"
+ count_administrative_female_khy_nonholder: "Сарбану"
+ county_administrative_khy: "Округ"
+ duke_administrative_khy: "Аршан"
+ duke_administrative_female_khy_nonholder: "Аршабану"
+ duchy_administrative_khy: "Провинция"
+ king_administrative_khy: "Рашана"
+ king_administrative_female_khy_nonholder: "Аршабану"
+ king_administrative_male_khy_heir: "Рашанапур"
+ kingdom_administrative_khy: "Владычество"
+ emperor_administrative_khy: "Рашанашан"
+ emperor_administrative_female_khy_nonholder: "Таджбану"
+ emperor_administrative_male_khy_heir: "Рашанашампур"
+ empire_administrative_khy: "Империя"
+ realm_marshal_khy: "Саран"
+ khyan_noble_family: "Азимтабар"
+
+ duchy_lyneria_city: "Город"
+ duchy_lyneria_grand_city: "Великий город"
+ duchy_lyneria_twin_cities: "Города-близнецы"
+
+ # Muranian
+ baron_harshandatt: "Фарах"
+ baron_female_harshandatt_nonholder: "Фараха"
+ count_harshandatt: "Акнаджан"
+ count_female_harshandatt_nonholder: "Акнаджа"
+ county_harshandatt: "Лордство"
+ duke_harshandatt: "Мунад"
+ duke_female_harshandatt_nonholder: "Мунада"
+ duchy_harshandatt: "Провинция"
+ king_harshandatt: "Сурмунад"
+ king_female_harshandatt_nonholder: "Сурмунада"
+ king_male_harshandatt_heir: "Нелоти"
+ kingdom_harshandatt: "Королевство"
+ emperor_harshandatt: "Нхазад"
+ emperor_female_harshandatt_nonholder: "Нхазада"
+ emperor_male_harshandatt_heir: "Узаджан"
+ empire_harshandatt: "Империя"
+
+ #Sirayn
+ baron_male_sirayn: "Харазан"
+ baron_female_sirayn: "Хаджани"
+ count_male_sirayn: "Коньяр"
+ count_female_sirayn: "Коньяри"
+ county_sirayn: "Лордство"
+ duke_male_sirayn: "Дараскон"
+ duke_female_sirayn: "Дараскони"
+ duchy_sirayn: "Верховное лордство"
+ king_male_sirayn: "Тараб"
+ king_female_sirayn: "Тараби"
+ king_male_sirayn_heir: "Сантараб"
+ kingdom_sirayn: "Королевство"
+ emperor_male_sirayn: "Тариб"
+ emperor_female_sirayn: "Тараиб"
+ emperor_male_sirayn_heir: "Сантариб"
+ empire_sirayn: "Империя"
 
  ### Norse ### 
  # Feudal / Tribal 
