@@ -217,7 +217,7 @@
  
  ### Infiltrating the White Mountains ###
  orcs.6500.t: "A Long and Dangerous Journey"
- orcs.6500.desc: "The White Mountains lie far from my stronghold, and the Realms of Men guard the entrances. I must make sure to send someone who understands subterfuge and can move unseen; otherwise they'll be caught and slain by the Whiteskins!\n\nNow, let me think. I could send one of my kin. Or one of my warriors? Maybe even pick someone entirely unproven?\n\nIf the Whiteskins catch them, we won't be able to try an adventure like this again for some time, since they'll be alerted to our plans!\n\n#N High [intrigue|E] will help your chosen candidate succeed in this endeavour#!"
+ orcs.6500.desc: "The [whitemountains|E] lie far from my stronghold, and the Realms of Men guard the entrances. I must make sure to send someone who understands subterfuge and can move unseen; otherwise they'll be caught and slain by the Whiteskins!\n\nNow, let me think. I could send one of my kin. Or one of my warriors? Maybe even pick someone entirely unproven?\n\nIf the Whiteskins catch them, we won't be able to try an adventure like this again for some time, since they'll be alerted to our plans!\n\n#N High [intrigue|E] will help your chosen candidate succeed in this endeavour#!"
  orcs.6500.a: "Let one of the warriors try their mettle."
  orcs.6500.b: "I trust only one of my close kin."
  orcs.6500.c: "[candidate3.GetFirstName] is untested. May he impress me!"
@@ -230,18 +230,18 @@
  orcs.6502.tt.failure: "Gah! They've spotted us, #I run#!"
  
  orcs.6505.t: "A Successful Gambit"
- orcs.6505.desc: "Pleasant news reaches me from [whitemountainsinfiltrator.GetFirstName], whom I sent to infiltrate the White Mountains some time ago. He's managed to sneak past the pesky Whiteskins and set up camp in [target_county.GetName]!\n\nAs their overlord, it falls to me to steer the development of the new orc-hold. We must now gather our strength in secret, and when the time comes strike at the rich lands that lie below, ripe with plunder and loot."
+ orcs.6505.desc: "Pleasant news reaches me from [whitemountainsinfiltrator.GetFirstName], whom I sent to infiltrate the [whitemountains|E] some time ago. He's managed to sneak past the pesky Whiteskins and set up camp in [target_county.GetName]!\n\nAs their overlord, it falls to me to steer the development of the new orc-hold. We must now gather our strength in secret, and when the time comes strike at the rich lands that lie below, ripe with plunder and loot."
  orcs.6505.a: "A great success!"
  orcs.6505.b: "I wonder what [whitemountainsinfiltrator.GetFirstName] is up to..."
  
  orcs.6506.t: "A Disappointing Failure"
- orcs.6506.desc: "Unpleasant news reaches me from [whitemountainsinfiltrator.GetFirstName], whom I sent to infiltrate the White Mountains some time ago. While his precise fate is unknown, it is now certain that our gambit to set up a hidden encampment in the White Mountains has failed, and [whitemountainsinfiltrator.GetFirstName] has vanished without a trace - he's likely been slain by the Whiteskins and his carcass must've been burned to ashes.\n\nNow the Whiteskins will be even more vigilant. We'll have to wait at least a few years until we can try this again..."
+ orcs.6506.desc: "Unpleasant news reaches me from [whitemountainsinfiltrator.GetFirstName], whom I sent to infiltrate the [whitemountains|E] some time ago. While his precise fate is unknown, it is now certain that our gambit to set up a hidden encampment in the [whitemountains|E] has failed, and [whitemountainsinfiltrator.GetFirstName] has vanished without a trace - he's likely been slain by the Whiteskins and his carcass must've been burned to ashes.\n\nNow the Whiteskins will be even more vigilant. We'll have to wait at least a few years until we can try this again..."
  orcs.6506.a: "Gah! If he's still alive, I'll kill him myself!"
  orcs.6506.a.tt: "#V The decision to infiltrate the White Mountains will be unavailable for ten years#!"
  
  ### Mount Gram events ###
  orcs.0050.t: "The Subjugation of the Ettenmoors"
- orcs.0050.desc: "The journey is fraught with peril as my company traverses desolate [angmar|E] towards the [GetTitleByKey('c_ettenmoors').GetNameNoTier], navigating the hardships of treacherous terrain and lurking enemies alike. The fate of this undertaking hangs in the balance, hinging upon the success of my efforts against the fearsome Trolls of these moors.\n\nFinally, my company and I arrive at an entrance of what seems a Trolls' grotto, and we set out to find their leader. Perhaps I shall forge an alliance with these beasts that strengthens their dominion over the region and aids in my endeavours, or perhaps I shall face the wrath of the trolls in a clash of dark powers?\n\nI look to my fellow companions, who are waiting for my command..."
+ orcs.0050.desc: "The journey is fraught with peril as my company traverses desolate [angmar|E] towards the [GetTitleByKey('c_ettenmoors').GetNameNoTier], navigating the hardships of treacherous terrain and lurking enemies alike. The fate of this undertaking hangs in the balance, hinging upon the success of my efforts against the fearsome [trolls|E] of these moors.\n\nFinally, my company and I arrive at an entrance of what seems a Trolls' grotto, and we set out to find their leader. Perhaps I shall forge an alliance with these beasts that strengthens their dominion over the region and aids in my endeavours, or perhaps I shall face the wrath of the Trolls in a clash of dark powers?\n\nI look to my fellow companions, who are waiting for my command..."
  orcs.0050.a: "[marshal.GetFirstName], force them out of their caves!"
  orcs.0050.b: "Trolls love gold, so perhaps a sufficient sum shall negate the need for bloodshed."
  orcs.0050.c: "[chancellor.GetFirstName], call the summoners, let's start a ritual."
@@ -298,6 +298,80 @@
  orcs.6003.a: "INSOLENCE! Crush, maim, flay them!"
  orcs.6003.b: "Little worm, little worm! I will take my time with you..."
  
+ ### Decision Events ###
+ orcs.6050.t: "Breaking Free from the Eye"
+ orcs.6050.desc: "Enough is enough!\n\nI'll serve the Dark One no longer. Nay! No more! May he rot in Lúgbûrz until the rest of his fingers fall off. He is neither worthy of service nor admiration!\n\nMe and my boys will follow our own path - a path of brutality. Of cunning. Of #italic strength.#!"
+ orcs.6050.a: "A pox upon the Dark Lord!"
+ 
+ ### Deep Cult Decisions Events ###
+ orcs.6401.t: "In Search of the Unknown"                 #Preliminary event- seeking out a Nameless Thing
+ orcs.6401.desc: "I set off alone, into the dark. Beyond the walls of our hold, beyond even our furthest outposts, I venture. Deeper, deeper I plunge, into the very foundations of stone, climbing, crawling, squeezing through the narrowest of fissures. The darkness clings to me, not merely an absence of light, but a presence unto its own.\n\n Without sight, every sound seems magnified. The mountain groans around me. A low wind whistles from some far-off place. I can feel Their presence. They are near. I need only find Them."
+ orcs.6401.a: "I am one with the shadows. The shadows will guide me."
+ orcs.6401.b: "Whispered legends, all but forgotten, speak of where They dwell."
+ orcs.6401.c: "They carve great tunnels in Their wake. These are tracks that I can follow."
+ orcs.6401.d: "On second thought, perhaps it is best to turn back."
+
+ orcs.6402.t: "The Crawler in the Deep"                                         
+ orcs.6402.desc: "Stumbling, I come upon a still pool. The water is dark and motionless. Beneath its surface lie countless bones of sizes both greater and lesser.\n\n A faint ripple, almost imperceptible, disturbs the surface before suddenly bursts horn and claw and countless crawling legs. Snake-like, with a swollen body, it grasps for you."
+ orcs.6402.a: "Stay out of reach! It will not leave the water." #martial
+ orcs.6402.b: "Submerge yourself in the pool."
+
+ orcs.6403.t: "The Scourge of the Pit"
+ orcs.6403.desc: "Before me lies a gaping chasm, unfathomably deep. Down I go, into the crushing darkness. The cliff's edge is rent and scarred, as if by great claws, but there is no evidence of their owner.\n\n Suddenly, it is upon me. Slug-like, with burning eyes. Swarms of vermin issue before it, enveloping me."
+ orcs.6403.a: "Climb. Climb!" #prowess
+ orcs.6403.b: "Immerse myself. Become one with the swarm."
+
+ orcs.6404.t: "The Eyeless Watcher"
+ orcs.6404.desc: "The passage opens into a great cavern that stretches further than my sight allows. Stalagmites like the trunks of great trees rise from the earth all around me, a forest of endless stone.\n\n There is movement from within. Something bat-like, but greater, watches me without eyes."
+ orcs.6404.a: "Let the Watcher become the Watched." #intrigue
+ orcs.6404.b: "Reveal myself to the Watcher."
+
+ orcs.6405.t: "The Terror in White"
+ orcs.6405.desc: "I feel it before I see it. A shaking in the earth, a shaking in my bones. The ground below my feet trembles. The ground above my head threatens to collapse, and then it is upon me.\n\n Worm-like, with luminous skin, transparent and gelatinous."
+ orcs.6405.a: "It shall not have me!" #prowess
+ orcs.6405.b: "Bathe in the pale light."
+
+ orcs.6406.t: "The Lurking Haze"
+ orcs.6406.desc: "I crawl to places never trod by [dwarves|E], [orcs|E], [elves|E], or [conceptracemen|E]. Though I can barely see, I can feel the suffocating damp of this cavern. Fog clings to every surface. I move slowly, as if through thick liquid. My blood freezes in my veins, and then I see them.\n\n Two pale eyes, hanging in the mist."
+ orcs.6406.a: "Show no weakness. Do not move. Do not blink." #diplo
+ orcs.6406.b: "Walk into the fog."
+
+ orcs.6407.t: "The Crawling Chaos"
+ orcs.6407.desc: "A buzzing static, like a swarm of bees awaits me down the tunnel ahead. A faint fiery glow illuminates a distant chamber. With every step, the sound grows louder. I can feel the hair on my arms stand upright. Every nerve is alive. I feel a tingling sensation, and then a burning that branches across my skin.\n\n The chamber is awash in blinding color. Visions flash before me. It is the end of the world, and the very beginning. It is all that ever was or will be."
+ orcs.6407.a: "There must be meaning behind this madness!" #learning
+ orcs.6407.b: "Close my eyes."
+
+ orcs.6408.t: "The Black Flame"
+ orcs.6408.desc: "The sounds of the mountain go quiet. There is a stillness here, an uttermost silence.\n\n There is no sight, and no sound, but there is smell. The scent of burning. It is acrid and metallic. It communicates to me in a way no other sense can. It is stronger now, nearly overwhelming, a memory of an Age I never knew."
+ orcs.6408.a: "Hold your breath." #prowess
+ orcs.6408.b: "Breath deep of it."
+
+ orcs.6409.t: "Tapping" #stewardship
+ orcs.6409.desc: "The tunnels branch endlessly, an untraceable labyrinth. I am nearly ready to give up, when I hear a faint sound coming from behind the wall. A scratching, or perhaps knocking: Tom-tap, tom-tap it goes.\n\n Whenever I get close, it seems to slink away, always thirty paces ahead. Further it lures me, down dark passages. Further, tom-tap, further..."
+ orcs.6409.a: "It follows the veins of ore. That's my way out."
+ orcs.6409.b: "Follow the tapping." 
+
+ orcs.6410.t: "The Doppleganger" #Rare, Special rewards
+ orcs.6410.desc: "A long tunnel stretches endlessly before me. At the far end, a silhouette illuminated in half-light. As I move, it moves. As I cease, it ceases. Ever-closer we move, until finally we are face-to-face.\n\n It is me."
+ orcs.6410.a: "This isn't right, I must escape!"
+ orcs.6410.b: "I am it. It is me." #Add Doppelganger nickname, possessed trait, and modifiers. People are suspicious of you.
+
+ orcs.6411.t: "The Faceless Horror"
+ orcs.6411.desc: "Something is wrong. These tunnels feel familiar, but I swear that I have never been here before. With a start I remember; I dreamt of this place not a week prior. I'm certain that it is the same. Every rock, every pebble is just as I remember it, and around this corner- I stop.\n\n I remember what awaits me around that corner."
+ orcs.6411.a: "Retrace my steps. I remember enough." #learning
+ orcs.6411.b: "Witness what lies beyond."
+
+ orcs.6412.t: "Only the Dark Empty"
+ orcs.6412.desc: "Alas, there is nothing to be found here but empty tunnel after empty tunnel. My supplies dwindling, I am forced to admit defeat. My court will no doubt mock my foolishness, but what choice have I?"
+ orcs.6412.a: "It was not meant to be."
+ orcs.6412.b: "What do they know? I will spin a story better than the real thing."   #diplo
+ 
+ orcs.6451.t: "Tribute in Blood and Gold"
+ orcs.6451.desc: "Our porters shake in fear and excitement as they cart basket after basket of pale gold to the dragon's lair. Wailing captives struggle against their binds in futile desperation as guards drag them before the drake.\n\nThere is a moment of breathless anticipation as we wait for its response, before, with a snort of smoke, it signals for us to make our plea. It is listening."
+ orcs.6451.a: "We ask only your leave to settle here."
+ orcs.6451.b: "Oh Great One, oh Magnificent Dread! Honor me with your gaze!"
+ orcs.6451.b.tt_failure: "The drake spreads their flames across your colony."
+ 
  ### Azog Special Content ###
  orcs.7000.t: "The First Steps"
  orcs.7000.desc: "None have withstood me upon my rise to power in Moria, the forgotten halls of the stinking Dwarves. Already two of the local bosses have kneeled - [gate_warden.GetFirstNameNicknamed] holds the door for me ever so steadfastly, and [book_keeper.GetFirstNameNicknamed] sends [book_keeper.GetHerHis] boys to peel through the dark corridors searching for loot... or tomes, knowing [book_keeper.GetHerHim].\n\nBut my realm needs to grow! I have big plans - bigger than any of the scum before me - I wish to unite Moria, and then the whole of the Misty Mountains! And for that, I'll need a plan of attack, for my boys to march against the other scum of the mountains and put them in their place ... or one of defense, should the maggots hiding in their holes come knocking."
@@ -314,7 +388,7 @@
  vengeful_horde_name: "Vengeful Horde"
  
  orcs.7002.t: "Rise to Power"
- orcs.7002.desc: "As I look upon the power gathered in the [GetTitleByKey('c_hall_of_a_thousand_pillars').GetName], even I am awed. Thousands of Orcs shout and yell and stamp their iron-shod feet on the floor of the mountain. The chieftains and their warg-packs, come out of the [anduinvale|E] and other wild places, add their howls to the cacophany. Even a few trolls bellow and thump their chests or clubs.\n\nMy great host has assembled, the strongest of all the mountains. And as my sons, most of them striplings save for [urro.GetFirstName] and [bolvag.GetFirstName], gather behind me, I look upon them and their strength, and a cruel smile splits on my lips. The heirs of [ROOT.Char.GetFirstNameNoTooltip] shall be mighty indeed.\n\nI turn back, and raise my swords, and my Orcs roar - they scream for loot and war and death! It is time to unite all of Moria!"
+ orcs.7002.desc: "As I look upon the power gathered in the [GetTitleByKey('c_hall_of_a_thousand_pillars').GetName], even I am awed. Thousands of Orcs shout and yell and stamp their iron-shod feet on the floor of the mountain. The chieftains and their warg-packs, come out of the [anduinvale|E] and other wild places, add their howls to the cacophany. Even a few [trolls|E] bellow and thump their chests or clubs.\n\nMy great host has assembled, the strongest of all the mountains. And as my sons, most of them striplings save for [urro.GetFirstName] and [bolvag.GetFirstName], gather behind me, I look upon them and their strength, and a cruel smile splits on my lips. The heirs of [ROOT.Char.GetFirstNameNoTooltip] shall be mighty indeed.\n\nI turn back, and raise my swords, and my Orcs roar - they scream for loot and war and death! It is time to unite all of Moria!"
  orcs.7002.a: "Kneel, beggars, or be destroyed!"
  orcs.7002.a.tt: "Unlocks a special [decision|E] for uniting Moria"
  

@@ -35,7 +35,7 @@
 #  gundabad_raid_county_cb_victory_desc: "[attacker.GetName] successfully claimed [title|E] in the name of the Unlight."
 #  gundabad_raid_county_war_invalidated_message: "The [war.GetName] has ended: [defender.GetShortUIName] [Select_CString( defender.IsLocalPlayer, 'have', 'has' )] converted [defender.GetHerHis] faith or no longer [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] the target title."
 #  gundabad_raid: "Goblin Raid"
-#  gundabad_raid_cb_white_peace_desc_defender: "No significant change of territories occured."
+#  gundabad_raid_cb_white_peace_desc_defender: "No significant change of territories occurred."
 #  gundabad_raid_cb_white_peace_desc: "With both sides taking significant casualties, [attacker.GetName] decided that the conflict is not worth it."
 #  gundabad_raid_cb_defeat_desc_defender: "Despite the Orcish onslaught, [attacker.GetName] was not able to siege key settlements that would allow them to project their power further."
 #  gundabad_raid_cb_defeat_desc_attacker: "While the Orcs terrorised their countryside, fortified enemy stronghold proved to be unavoidable, and as such the objectives were not met."
@@ -103,8 +103,8 @@
  reclaim_calenardhon_cb_victory_desc: "You seize all titles within the Kingdom of Rohan, save those still held by the Rohirrim themselves, or any held by our Dúnedain kin."
  
  reduce_subterranean_county_development_name: "War to reduce [development|E] in [TITLE.GetBaseName]"
- reduce_subterranean_duchy_development_name: "War to reduce [development|E] [TITLE.GetBaseName]"
- reduce_subterranean_county_development_desc_defender: "Building levels and development is lowered in the targeted titles."
+ reduce_subterranean_duchy_development_name: "War to reduce [development|E] in [TITLE.GetBaseName]"
+ reduce_subterranean_county_development_desc_defender: "Building levels and development is lowered in the targeted titles"
  reduce_subterranean_county_development_desc_attacker: "Building levels and development is lowered in the targeted titles"
  reduce_subterranean_county_development_desc: "Building levels and development is lowered in the targeted titles"
  subterranean_cb_effect: "Building #bold and#! holding levels are #N decreased#! by one level."
@@ -123,7 +123,7 @@
  maglor_shatter_realm_cb_effect_tt.1: "Title holders inside the targeted region will have a chance to convert to a friendly faith.\n\n"
  maglor_shatter_realm_cb_effect_tt.2: "Counties inside the targeted region will have a chance to convert to a friendly faith.\n"
  maglor_shatter_realm_cb_fervor: "Managed to repulse an attempt to destroy the realm from a hostile faith."
- maglor_shatter_realm_cb_effect_tt.3: " Unlock the 'Shatter Realm' [casus_belli|E] for use inside the Haradwaith Empire."
+ maglor_shatter_realm_cb_effect_tt.3: "Unlock the 'Shatter Realm' [casus_belli|E] for use inside the Haradwaith Empire."
 
  maglor_underground_cb_defeat_desc: "You fail to drive the orcs from the mountain holdings"
  maglor_underground_cb_name: "Purge Darkness"
@@ -131,6 +131,7 @@
 
  struggle_TH_unity_cb_name: "Break [realm|E] Apart"
  struggle_TH_unity_cb_tt: "Can only use this on a ruler that completely controls 3 duchies #V or#! has 3 duchy titles inside the [GetGeographicalRegion('custom_mannish_thani_hazad').GetName] [region|E]"
+ struggle_TH_unity_cb__effect_tt: "The targeted realm will break apart until it only controls less than a quarter of its previous size."
 
  final_battle_maglor_cb: "Annihilation of the Abhorred"
 
@@ -161,7 +162,7 @@
 
  INVADE_BELLAKAR_WAR_NAME: "The Destruction of Bellakar"
  invade_bellakar_cb: "The Destruction of Bellakar"
- bellakar_invasion: "Recieved the Storm King's orders"
+ bellakar_invasion: "Received the Storm King's orders"
 
  valinorian_invasion_cb_name: "Valinorian Invasion"
  valinorian_invasion_war_name: "Valinorian Invasion"
@@ -183,6 +184,16 @@
  tandi_liberation_cb_victory_desc: "[attacker.GetName] successfully liberates [attacker.GetHerHis] Tandi kinsmen from the rule of [defender.GetName]"
  tandi_liberation_cb_white_peace_desc: "[attacker.GetName] failed to liberate [attacker.GetHerHis] Tandi kinsmen from the rule of [defender.GetName], but has not suffered greatly for it"
  tandi_liberation_cb_defeat_desc: "[attacker.GetName] was punished greatly by [defender.GetName] when trying to liberate [attacker.GetHerHis] Tandi kinsmen"
+
+ USURP_DWARVEN_DYNAST_CONQUEST_WAR_NAME: "The Usurper's War"
+ USURP_DWARVEN_DYNAST_CONQUEST_CB_NAME: "War of the Usurper"
+ usurp_dwarven_dynast_cb_victory_desc: "[attacker.GetName] has successfully defeated [defender.GetName] and claimed the crown of their people"
+ usurp_dwarven_dynast_cb_victory_desc_attacker: "You have successfully defeated [defender.GetName] and claimed the crown of your people"
+ usurp_dwarven_dynast_cb_white_peace_desc: "[attacker.GetName] has failed to defeat [defender.GetName], but has not suffered much for it"
+ usurp_dwarven_dynast_cb_defeat_desc_attacker: "You failed to defeat [defender.GetName]"
+ usurp_dwarven_dynast_cb_defeat_desc_defender: "[attacker.GetName] failed to defeat you"
+ usurp_dwarven_dynast_cb_defeat_desc: "[attacker.GetName] failed to defeat [defender.GetName]"
+ usurp_dwarven_dynast_cb_war_invalidated_message: "The war was invalidated"
 
  zajantak_destruction_war: "Zajantak Destruction War"
  zajantak_destruction_war_victory_desc: "[attacker.GetName] has successfully destroyed the realm of [defender.GetName], and taken a portion of [defender.GetHerHis] people as thralls"
