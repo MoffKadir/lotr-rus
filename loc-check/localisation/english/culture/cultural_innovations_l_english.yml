@@ -30,14 +30,15 @@
  unlock_late_medieval_fortification_buildings:0 "Unlocks all Late Medieval Era [fortification_buildings|E]"
  unlocks_naval_raiding:0 "Unlocks the ability to [raid|E] over seas, if you can already [raid|E]"
  unlocks_sailable_major_rivers:1 "Unlocks the ability to sail in Major Rivers"
+ unlocks_adventure_intent: "Unlocks the #V Adventure#! [raid_intent|E]"
  unlock_wind_furnaces: "Unlocks the $building_type_wind_furnace_01$ line of [buildings|E] in coastal [holdings|E] in [GetGeographicalRegion('world_india').GetName]"
  
- unlock_march_contract:0 "Unlocks the #high [GetVassalContractType( 'special_contract' ).GetObligationName( 'special_contract_march' )]#! [vassal_contract|E]"
- unlock_castellan_contract: "Unlocks the #high [GetVassalContractType( 'special_contract' ).GetObligationName( 'special_contract_castellan' )]#! [vassal_contract|E]"
- unlock_scutage_contract:0 "Unlocks the #high [GetVassalContractType( 'special_contract' ).GetObligationName( 'special_contract_scutage' )]#! [vassal_contract|E]"
- unlock_palatinate_contract:0 "Unlocks the #high [GetVassalContractType( 'special_contract' ).GetObligationName( 'special_contract_palatinate' )]#! [vassal_contract|E]"
- unlock_fortification_rights_contract:0 "Unlocks the #high [GetVassalContractType( 'fortification_rights' ).GetObligationName( 'fortification_rights_granted' )]#! [vassal_contract|E]"
- unlock_coinage_rights_contract:0 "Unlocks the #high [GetVassalContractType( 'coinage_rights' ).GetObligationName( 'coinage_rights_granted' )]#! [vassal_contract|E]"
+ unlock_march_contract:0 "Unlocks the #high [GetSubjectContractType( 'special_contract' ).GetObligationName( 'special_contract_march' )]#! [vassal_contract|E]"
+ unlock_castellan_contract: "Unlocks the #high [GetSubjectContractType( 'special_contract' ).GetObligationName( 'special_contract_castellan' )]#! [vassal_contract|E]"
+ unlock_scutage_contract:0 "Unlocks the #high [GetSubjectContractType( 'special_contract' ).GetObligationName( 'special_contract_scutage' )]#! [vassal_contract|E]"
+ unlock_palatinate_contract:0 "Unlocks the #high [GetSubjectContractType( 'special_contract' ).GetObligationName( 'special_contract_palatinate' )]#! [vassal_contract|E]"
+ unlock_fortification_rights_contract:0 "Unlocks the #high [GetSubjectContractType( 'fortification_rights' ).GetObligationName( 'fortification_rights_granted' )]#! [vassal_contract|E]"
+ unlock_coinage_rights_contract:0 "Unlocks the #high [GetSubjectContractType( 'coinage_rights' ).GetObligationName( 'coinage_rights_granted' )]#! [vassal_contract|E]"
 
 ##############
 # Tribal Era #
@@ -60,7 +61,8 @@
  innovation_bannus_desc:0 "Based on the authority to command men in battle, the bann gives our rulers the power to compel free men to fight for them, forming a legal basis for the mustering of large armies."
  eligible_accolade_vanguard_attribute_ACCOLADES_DLC:0 "[knights|E] of this [culture|E] become eligible for [GetAccoladeType('vanguard_attribute').GetName] [accolades|E]"
  eligible_accolade_vanguard_attribute:1 "[AddLocalizationIf( HasDlcFeature( 'accolades' ), 'eligible_accolade_vanguard_attribute_ACCOLADES_DLC')]"
- unlock_maa_armored_footmen: "Unlocks the [GetMaA('armored_footmen').GetName] [men_at_arms|E]"
+ unlock_maa_armored_footmen: "Can recruit [GetMaA('armored_footmen').GetName] as [men_at_arms|E]"
+ unlock_maa_onager: "Can recruit [GetMaA('onager').GetName] as [men_at_arms|E]"
 
  innovation_quilted_armor:0 "Quilted Armor"
  innovation_quilted_armor_desc:0 "Formed of a dozen or more layers of linen stitched together, these jackets can stop even heavy arrows and are an affordable way for us to armor an entire regiment for battle."
@@ -94,8 +96,8 @@
  innovation_viking_tradition:0 "Viking Tactics"
  innovation_viking_tradition_desc:0 "The people of the north have a long tradition of trade, but also of piracy. Few are prepared to fight a threat that appears without warning from the banks of a river, and the viking warriors are masters of such warfare."
  
- innovation_longboats:1 "Longships"
- innovation_longboats_desc:1 "Our longships are formidable seafaring vessels which can travel almost anywhere and even brave rough weather, giving us exceptional mobility on the seas."
+ innovation_longboats:1 "Dragonships" # Lotr
+ innovation_longboats_desc:1 "Our Dragonships are formidable seafaring vessels which can travel almost anywhere and even brave rough weather, giving us exceptional mobility on the seas." # LOTR
 
  innovation_war_camels:0 "War Camels"
  innovation_war_camels_desc:0 "Camels are naturally suited for living in desert terrain, but they aren't inherently creatures of battle. Our breeders and trainers can change this, giving us access to adaptive cavalry which will let us master the sands."
@@ -107,16 +109,17 @@
  eligible_accolade_elephantry_attribute_ACCOLADES_DLC:0 "[knights|E] of this [culture|E] become eligible for [GetAccoladeType('elephantry_attribute').GetName] [accolades|E]"
  eligible_accolade_elephantry_attribute:1 "[AddLocalizationIf( HasDlcFeature( 'accolades' ), 'eligible_accolade_elephantry_attribute_ACCOLADES_DLC')]"
  
- innovation_wootz_steel:0 "Wootz Steel"
- innovation_wootz_steel_desc:0 "Also known as Hinduwani or Seric steel, this carbon-rich metal is excellent for making weapons. Wootz steel is widely traded and is deemed the finest steel in the world. Throughout most of history, it has drawn the attention of Arab, Egyptian, Chinese, and even Roman traders."
+ innovation_wootz_steel:0 "Ironfist Steel" #LOTR
+ innovation_wootz_steel_desc:0 "Also known as Orocarni or Rhûnic steel, this carbon-rich metal is excellent for making weapons. Ironfist steel is widely traded and is deemed the finest steel in the world. Throughout most of history, it has drawn the attention of Khyan, Igath, $womaw$, and even Gondorian traders."
  
- innovation_african_canoes:0 "West African Canoes"
- innovation_african_canoes_desc:0 "The great canoes of West Africa are excellent for navigating rivers and allows us to quickly ferry troops to where we need them."
+ innovation_african_canoes:0 "Mûmakani Canoes" # LOTR
+ innovation_african_canoes_desc:0 "The great canoes of Mûmakan are excellent for navigating rivers and allows us to quickly ferry troops to where we need them."
  
- innovation_table_of_princes:0 "Table of Princes"
- innovation_table_of_princes_desc:0 "The Table of Princes is the royal seat of Bohemian rulers, with the one sitting at the table being recognized as the rightful ruler. Under the code of house seniority, titles were given to the eldest living member of the ruling dynasty."
+ #innovation_table_of_princes:0 "Table of Princes" #LOTR
+ #innovation_table_of_princes_desc:0 "The Table of Princes is the royal seat of Bohemian rulers, with the one sitting at the table being recognized as the rightful ruler. Under the code of house seniority, titles were given to the eldest living member of the ruling dynasty."
  unlock_single_heir_dynasty_house_changing:0 "Can enact $single_heir_dynasty_house$ at any [crown_authority|E]"
-
+ innovation_table_of_princes: "Ephystian Code"
+ innovation_table_of_princes_desc: "The Ephystian Code is more a norm than a legal code, but neverless still is followed among the $muranian_collective_noun$. Allegedly instituted by the first $emperor_harshandatt$ himself, the stipulated that titles are given to the eldest living member of the ruling dynasty."
 
  tradition_visigothic_codes_name:0 "$innovation_visigothic_codes$"
  tradition_visigothic_codes_desc:0 "$innovation_visigothic_codes_desc$"
@@ -134,6 +137,7 @@
 
  innovation_mangonel:0 "Mangonels"
  innovation_mangonel_desc:0 "A significant improvement to our existing catapult designs, traction-powered mangonels are much faster to load and fire than torsion-powered machines."
+ unlock_maa_mangonel: "Can recruit [GetMaA('mangonel').GetName] as [men_at_arms|E]"
  eligible_accolade_besieger_attribute_ACCOLADES_DLC:0 "[knights|E] of this [culture|E] become eligible for [GetAccoladeType('besieger_attribute').GetName] [accolades|E]"
  eligible_accolade_besieger_attribute:1 "[AddLocalizationIf( HasDlcFeature( 'accolades' ), 'eligible_accolade_besieger_attribute_ACCOLADES_DLC')]"
 
@@ -150,6 +154,7 @@
  innovation_arched_saddle_desc:0 "Light cavalry are a force to be reckoned with, but they do not truly exploit the potential of the warhorse. Arched saddles allow us to field heavily armored warriors with couched lances, which lets them take full advantage of their momentum as they charge into enemy lines."
  eligible_accolade_lancer_attribute_ACCOLADES_DLC:0 "[knights|E] of this [culture|E] become eligible for [GetAccoladeType('lancer_attribute').GetName] [accolades|E]"
  eligible_accolade_lancer_attribute:1 "[AddLocalizationIf( HasDlcFeature( 'accolades' ), 'eligible_accolade_lancer_attribute_ACCOLADES_DLC')]"
+ unlock_maa_armored_horsemen: "Can recruit [GetMaA('armored_horsemen').GetName] as [men_at_arms|E]"
 
  #Civic
  innovation_hereditary_rule:0 "Hereditary Rule"
@@ -197,6 +202,7 @@
 
  innovation_trebuchet:0 "Trebuchet"
  innovation_trebuchet_desc:0 "An engineering marvel, the counterweight trebuchet can hurl heavy projectiles at distances further than any siege engine that came before it."
+ unlock_maa_trebuchet: "Can recruit [GetMaA('trebuchet').GetName] as [men_at_arms|E]"
 
  innovation_castle_baileys:0 "Castle Baileys"
  innovation_castle_baileys_desc:0 "While the keep serves as the heart of a castle, it is far from the only important building. Constructing buildings like the stables and armory in a protected bailey will ensure we can properly garrison and equip our levies no matter the circumstances."
@@ -209,6 +215,7 @@
 
  innovation_advanced_bowmaking:0 "Advanced Bowmaking"
  innovation_advanced_bowmaking_desc:0 "While archers have traditionally made and maintained their own bows, craftsmen have begun making new types of bows which are stronger and more complex than before. By embracing these new designs we can turn these master bowyers into an invaluable military asset."
+ unlock_maa_crossbowmen: "Can recruit [GetMaA('crossbowmen').GetName] as [men_at_arms|E]"
  eligible_accolade_crossbower_attribute_ACCOLADES_DLC:0 "[knights|E] of this [culture|E] become eligible for [GetAccoladeType('crossbowmen_attribute').GetName] [accolades|E]"
  eligible_accolade_crossbower_attribute:1 "[AddLocalizationIf( HasDlcFeature( 'accolades' ), 'eligible_accolade_crossbower_attribute_ACCOLADES_DLC')]"
 
@@ -233,7 +240,7 @@
  innovation_guilds_desc:0 "As our lands expand it becomes increasingly inefficient to directly manage all trade going on within our domain. By granting guild charters to organizations of merchants and craftsmen we can give them more autonomy over their businesses while still ensuring we profit from their ventures."
 
  innovation_development_03:0 "Urbanization"
- innovation_development_03_desc:0 "The great cities of Minas Tirith, Annuminas, and Kharadûnê have long stood out as relics of a great, unmatchable legacy. As our infrastructure and population grow, we finally have the means to develop new settlements which rival these ancient urban centers."
+ innovation_development_03_desc:0 "The great cities of Minas Tirith, Annuminas, and Nîlûlondê have long stood out as relics of a great, unmatchable legacy. As our infrastructure and population grow, we finally have the means to develop new settlements which rival these ancient urban centers."
 
  innovation_currency_03:0 "Banking"
  innovation_currency_03_desc:0 "Particularly large or expensive trades often require an unwieldy amount of heavy coinage. Depositing that wealth in secure treasuries and transferring ownership without moving the physical coins will allow large quantities of goods to be traded more easily."
@@ -243,10 +250,10 @@
  innovation_east_settling:0 "Ostsiedlung"
  innovation_east_settling_desc:0 "The lands to our east are sparsely inhabited, but rich in natural resources. Establishing an initiative to expand and establish homesteads there will lead to the growth and prosperity of our people."
 
- innovation_seigneurialism:0 "Seigneurialism"
+ innovation_seigneurialism:0 "Autonomous Holds" # LOTR - Dwarven Seigneurialism
  innovation_seigneurialism_desc:0 "By delegating more responsibilities to local nobles, we can both make them happy as well as freeing up more of our attention to focus on our own domain."
 
- innovation_muladi:0 "Muladi"
+ innovation_muladi:0 "Refugee Status" #Find a better name
  innovation_muladi_desc:0 "Wars, raids, and persecution all over the world have driven many people from their homes. By welcoming these displaced souls to our lands regardless of their background we can develop a rich and prosperous society."
 
  innovation_french_peerage:0 "Peerage"
@@ -262,6 +269,7 @@
 
  innovation_bombard:0 "Great Siege Engines" # LOTR
  innovation_bombard_desc:0 "As the scale of fortifications have increased, siege engines have had to evolve as well. These colossal siege weapons can tear down enemy walls with a force and efficiency that our ancestors could scarcely dream of." # LOTR
+ unlock_maa_bombard: "Can recruit [GetMaA('bombard').GetName] as [men_at_arms|E]"
 
  innovation_royal_armory:0 "Royal Armory"
  innovation_royal_armory_desc:0 "As the size of our armies increases, we must guarantee that each and every soldier will be properly armed and armored. The establishment of a royal armory to produce and house all of our armies' equipment will go a long way towards meeting this need."
@@ -302,15 +310,15 @@
  innovation_currency_04_desc:0 "An evolution of earlier banking systems, paper promissory notes allow our citizens to quickly and safely trade goods and services across large distances without being weighed down by heavy specie."
 
  innovation_formalized_emissaries:0 "Formalized Emissaries"
- innovation_formalized_emissaries_desc:0 "As states grow more advanced, their capabilities to send and recieve emissaries to distant lands increase. The increasing sophistication of our administration allows us to support a dedicated corp of diplomats to build us connections abroad."
+ innovation_formalized_emissaries_desc:0 "As states grow more advanced, their capabilities to send and receive emissaries to distant lands increase. The increasing sophistication of our administration allows us to support a dedicated corp of diplomats to build us connections abroad."
 
  #Regional
 
- innovation_wierdijks:0 "Wierdijks"
- innovation_wierdijks_desc:0 "Building strong and reliable dikes is an essential task if we wish to live and prosper within the low countries. New techniques of reinforcing earthen dikes with seaweed mats will increase their strength and durability."
+ innovation_wierdijks:0 "Flood Control"
+ innovation_wierdijks_desc:0 "Building strong and reliable dikes is an essential task if we wish to live and prosper within the river valleys. New techniques of reinforcing earthen dikes with seaweed mats will increase their strength and durability."
 
- innovation_condottieri:0 "Condottieri"
- innovation_condottieri_desc:0 "Being both wealthy and centrally located, Italy has become a major center for mercenary companies to travel to when not on active campaign. Since they are already here, we should be able to negotiate a better rate for them than they would normally charge."
+ innovation_condottieri:0 "Kindilârud" # LOTR - Named after the Kindilar
+ innovation_condottieri_desc:0 "Being both wealthy and centrally located, Bôzisha-Dâr has become a major center for mercenary companies to travel to when not on active campaign. Since they are already here, we should be able to negotiate a better rate for them than they would normally charge." # LOTR
 
  innovation_deccan_unity:0 "Deccan Unity"
  innovation_deccan_unity_desc:0 "The influx of new beliefs and religions into our society has made it clear that our past focus on regionalism has been a mistake. We should band together with others of our faith and ensure a strong and enduring state that can stand up to external pressures."
