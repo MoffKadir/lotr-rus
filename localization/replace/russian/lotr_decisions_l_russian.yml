@@ -97,8 +97,8 @@
  decision_return_cuind_tooltip: "Куинд вернутся в Бозиша-Мираз"
  decision_return_cuind_confirm: "Куинд вернутся в Бозиша-Мираз"
  decision_return_cuind_get_innovations: "[culture|E] куинд получит все [innovations|El] [penni|El]"
- decision_return_cuind_vassals_custom:1 "Каждый [vassal|El] из $penni$ и $avari$"
- decision_return_cuind_counties_custom:1 "Каждое [county|El] $penni$ и $avari$ в вашей [Concept('realm', 'державе')|E]"
+ decision_return_cuind_vassals_custom: "Каждый [vassal|El] из $penni$ и $avari$"
+ decision_return_cuind_counties_custom: "Каждое [county|El] $penni$ и $avari$ в вашей [Concept('realm', 'державе')|E]"
 
  decision_rebuild_ost_in_edhil: "Восстановить Ост-ин-Эдиль"
  decision_rebuild_ost_in_edhil_desc: "Некогда жемчужина восточного [Concept('eriador', 'Эриадора')|E], [ostinedhil|E] был разграблен и разрушен [Concept('sauroncharacter', 'Сауроном')|E] во время [Concept('waroftheelvesandsauron', 'Войны эльфов и Саурона')|E]. С тех пор эти земли были заброшены, и никто не хотел приближаться к древним руинам. Теперь, когда эти земли вновь принадлежат [Concept('elven', 'эльфам')|E], восстановление города в наших силах.\n\nДля этого потребуется много труда и затрат, но благодаря этому [eregion|E] сможет вновь возвыситься." 
@@ -438,8 +438,8 @@
  decision_adopt_arnorian_culture_desc: "Когда-то люди [Concept('arnor', 'Арнора')|E] собирали могучие войска и создавали великие королевства. Увы, упадок и войны заставили нас стать теми, кем мы являемся сейчас, - странниками в дебрях, неизвестными многим и вызывающими уважение у немногих. Хотя это и спасло нас, но в то же время заставило потерять связь с путями наших предков. Если бы мы смогли восстановить своё государство, мы могли бы способствовать культурному возрождению древних путей Арнора."
  decision_adopt_arnorian_culture_confirm: "Восстаньте, сыны Арнора!"
  decision_adopt_arnorian_culture_tooltip: "Принять арнорскую культуру"
- decision_adopt_arnorian_culture_vassal_custom:1 "Каждый [vassal|El] с происходящей от арнорской культурой."
- decision_adopt_arnorian_culture_province_custom:1 "Каждое [county|El] в пределах вашей [Concept('realm', 'державы')|E] с происходящей от арнорской культурой."
+ decision_adopt_arnorian_culture_vassal_custom: "Каждый [vassal|El] с происходящей от арнорской культурой."
+ decision_adopt_arnorian_culture_province_custom: "Каждое [county|El] в пределах вашей [Concept('realm', 'державы')|E] с происходящей от арнорской культурой."
 
  decision_integrate_the_northern_provinces: "Интегрировать северные провинции"
  decision_integrate_the_northern_provinces_desc: "Самый дальний север лишь номинально входил в состав Северного королевства, а после [Concept('lastalliance', 'Войны Последнего союза')|E] у [Concept('arnor', 'Арнора')|E] не хватило сил заявить о своих притязаниях. Именно в этом вакууме [Concept('witchking', 'Король-чародей')|E] создал ужасающее королевство [Concept('angmar', 'Ангмар')|E].\n\nЕсли северные пустоши наконец-то окажутся под контролем [Concept('dunedain', 'дунэдайн')|E], их можно будет подчинить Скипетру как в теории, так и на практике, а любая угроза с севера будет отведена навеки."
@@ -469,6 +469,7 @@
 
  decision_silver_caras_celairnen: "Построить Серебряный город Селернен"
  decision_silver_caras_celairnen_desc: "Расположенный в месте слияния Уиалдуина и Луна город Карас Селернен всегда был одним из богатейших торговых центров севера. С улучшением отношений с [Concept('elves', 'эльфами')|E], город стал по-настоящему роскошным, и с небольшими вложениями мы можем сделать его примером того, чего могут достичь люди и эльфы, когда работают вместе."
+
  decision_silver_caras_celairnen_tooltip: "Построить Серебряный город Селернен"
  decision_silver_caras_celairnen_confirm: "Привести зодчих!"
 
@@ -656,15 +657,16 @@
  decision_crown_king_confirm: "Подготовиться к коронации."
  decision_crown_king_effect: "Выбрать монарха для восстановленного королевства [GetTitleByKey('k_cardolan').GetNameNoTier]"
 
+
  ### Reunited Kingdom Decision Subset ###
 
  decision_reunited_kingdom: "Провозгласить Воссоединённое королевство"
  decision_reunited_kingdom_desc: "Когда-то [dunedain|El] [Concept('middleearth', 'Средиземья')|E] были объединены под властью одного Верховного короля, [Concept('elendil', 'Элендиля')|E]. [isildur|E] унаследовал этот титул после смерти отца, но из-за различий между двумя королевствами после его смерти он де-факто перестал существовать, и Менельдиль стал править в [Concept('gondor', 'Гондоре')|E], а Валандиль - в [Concept('arnor', 'Арноре')|E]. Королевства [GetTitleByKey('e_arnor').GetNameNoTier] и [GetTitleByKey('e_gondor').GetNameNoTier] с тех пор шли разными путями и имели разные судьбы. Однако факт остаётся фактом - хотя это два королевства, северное и южное, когда-то они были едины. Если бы короны обоих королевств были собраны вместе, возможно, два [Concept('realms_in_exile', 'королевства-в-изгнании')|E] смогли бы воссоединиться в единое целое, как им и было предначертано."
  decision_reunited_kingdom_tooltip: "Отныне не разделённые, из двух - одно."
  decision_reunited_kingdom_confirm: "Отныне не разделённые, из двух - одно."
- control_percentage_of_gondor_desc:1 "Вы контролируете по крайней мере #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('e_gondor').GetName]"
- control_percentage_of_castamiri_gondor_desc:1 "Вы контролируете по крайней мере #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('e_castamir').GetName]"
- control_percentage_of_arnor_desc:1 "Вы контролируете по крайней мере #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('e_arnor').GetName]"
+ control_percentage_of_gondor_desc: "Вы контролируете по крайней мере #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('e_gondor').GetName]"
+ control_percentage_of_castamiri_gondor_desc: "Вы контролируете по крайней мере #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('e_castamir').GetName]"
+ control_percentage_of_arnor_desc: "Вы контролируете по крайней мере #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('e_arnor').GetName]"
 
  decision_solidify_reunited_kingdom: "Укрепить Воссоединённое королевство"
  decision_solidify_reunited_kingdom_desc: "Провозгласив [GetTitleByKey('e_reunitedkingdom').GetNameNoTier], мы, однако, не решили многие проблемы. Отсутствие контроля над всеми территориями королевств [arnor|E] и [gondor|E] заставляет некоторых с сомнением относиться к нашим притязаниям на положение владык истинного [Concept('reunitedkingdom', 'Воссоединённого королевства')|E] и всех [dunedain|El]. Если бы мы смогли развеять эти сомнения, установив контроль над всеми землями, входящими в состав королевства, мы смогли бы окончательно подавить все проявления регионализма и окончательно укрепить его как единое целое."
@@ -676,8 +678,8 @@
  decision_reunify_dunedain_tooltip: "Мы - [dunedain|El]."
  decision_reunify_dunedain_confirm: "Мы - дунэдайн."
  decision_reunify_dunedain_get_innovations: "[dunedain_culture.GetCollectiveNoun]ая [culture|El] получит все [arnorian_culture.GetCollectiveNoun]ие и [gondorian_culture.GetCollectiveNoun]ие [innovations|El]"
- decision_reunify_dunedain_vassals_custom:1 "Каждый $arnorian_collective_noun$ий и $gondorian_collective_noun$ий [vassal|El]"
- decision_reunify_dunedain_counties_custom:1 "Каждое $arnorian_collective_noun$ое и $gondorian_collective_noun$ое [county|El] в вашей [Concept('realm', 'державе')|E]"
+ decision_reunify_dunedain_vassals_custom: "Каждый $arnorian_collective_noun$ий и $gondorian_collective_noun$ий [vassal|El]"
+ decision_reunify_dunedain_counties_custom: "Каждое $arnorian_collective_noun$ое и $gondorian_collective_noun$ое [county|El] в вашей [Concept('realm', 'державе')|E]"
 
  decision_reclaim_royal_lineage: "Восстановить королевский род дунэдайн"
  decision_reclaim_royal_lineage_tooltip: "Проследить свою родословную до Элендиля"
@@ -1232,6 +1234,7 @@
  decision_restore_korlean_league_tooltip: "Вы восстановите Корлею как главенствующую силу в заливе Тулванг"
  decision_restore_korlean_league_desc: "В давние времена Корлея была величайшей из городов [Concept('bellakar', 'Беллакара')|E], центром торговли в [Concept('bayoftulwang', 'заливе Тулванг')|E] и сердцем [Concept('adunai', 'адунайцев')|E] юга. Но её могущество продержалось недолго, ибо, пораженная могучими волнами [Concept('downfall', 'Низвержения')|E], Корлея затонула, как и [Concept('anadune', 'Анадунэ')|E], а наша власть над народами этих земель сломлена. Но, в отличие от [Concept('westernesse', 'Вестернессэ')|E], мы отстроились и окрепли, и теперь пришло время восстановить то, что мы никогда не забывали. Мы вернём себе лидерство в этих землях, и гавань Корлеи вновь станет самой богатой на юге."
  decision_restore_korlean_league_confirm: "Пусть Корлея вернётся на своё законное место!"
+ decision_restore_korlean_league_title: "Восстановить Корлейскую лигу"
 
  ###############################
  ##### Pharazain Decisions #####
@@ -1427,7 +1430,7 @@
 
  decision_construct_grond: "Построить Гронд"
  decision_construct_tooltip: "Начнется строительство осадного орудия Гронд"
- decision_construct_desc: "По полю ползли огромные конструкции, а посреди них стоял огромный таран, огромный, как лесное дерево, длиной в сотню футов, раскачивающийся на могучих цепях. Долго ковался он в тёмных кузнях Мордора, и его отвратительная голова, созданная из чёрной стали, имела форму хищного волка; на ней лежали разрушительные заклятия. Назвали его Гронд, в память о древнем Молоте Подземного мира. Великие звери тянулись к нему, орки окружали его, а позади шли горные тролли, чтобы орудовать им"
+ decision_construct_desc: "По полю ползли огромные конструкции, а посреди них стоял огромный таран, огромный, как лесное дерево, длиной в сотню футов, раскачивающийся на могучих цепях. Долго ковался он в тёмных кузнях Мордора, и его отвратительная голова, созданная из чёрной стали, имела форму хищного волка; на ней лежали разрушительные заклятия. Назвали его Гронд, в память о древнем Молоте Подземного мира. Великие звери тянулись к нему, [Concept('orcs', 'орки')|E] окружали его, а позади шли горные тролли, чтобы орудовать им"
  decision_construct_confirm: "Молот Преисподней сокрушит всех, кто встанет против его разрушительной силы"
  decision_construct_tool_tip: "Начнётся строительство осадного орудия Гронд"
  decision_construct_tool_tip_2: "Начнётся строительство осадного орудия Гронд"
@@ -1526,7 +1529,7 @@
 
  decision_unify_the_orcs: "Объединить отряды орков"
  decision_unify_the_orcs_tooltip: "Объединить дезорганизованные племена орков в единый боевой отряд!"
- decision_unify_the_orcs_desc: "Долгое время орки были разрозненными и разобщенными, отбиваясь на каждом шагу от людей, гномов и эльфов. Мы были объединены под властью Тёмных Властелинов, но они недостойны наших мечей! Орки должны править орками, и вести их должен [Select_CString(ROOT.Char.IsFemale, 'сильнейшая', 'сильнейший' )] из них - я. \Под моим знаменем воинство орков распространится по всей земле!"
+ decision_unify_the_orcs_desc: "Долгое время [Concept('orcs', 'орки')|E] были разрозненными и разобщенными, отбиваясь на каждом шагу от [Concept('men', 'людей')|E], [Concept('dwarves', 'гномов')|E] и [Concept('elves', 'эльфов')|E]. Мы были объединены под властью Тёмных Властелинов, но они недостойны наших мечей! Орки должны править орками, и вести их должен [Select_CString(ROOT.Char.IsFemale, 'сильнейшая', 'сильнейший' )] из них - я. \Под моим знаменем воинство орков распространится по всей земле!"
  decision_unify_the_orcs_confirm: "Время орков пришло!"
 
  create_goblin_duchy: "Создать новое гоблинское герцогство"
@@ -1545,7 +1548,7 @@
 
  decision_demand_orc_submission: "Потребовать подчинения Мглистых горы"
  decision_demand_orc_submission_tooltip: "Все орки преклонят колено или будут уничтожены."
- decision_demand_orc_submission_desc: "Мое правление будет абсолютным и неоспоримым. Никто не посмеет выступить против меня, [Select_CString(ROOT.Char.IsFemale, 'повелительницы', 'повелителя' )] всех вершин и пещер!\n\nЯ потребую верности от любого орка, который все еще думает править независимо. Любой, кто осмелится бросить мне вызов, будет уничтожен!"
+ decision_demand_orc_submission_desc: "Мое правление будет абсолютным и неоспоримым. Никто не посмеет выступить против меня, [Select_CString(ROOT.Char.IsFemale, 'повелительницы', 'повелителя' )] всех вершин и пещер!\n\nЯ потребую верности от любого [Concept('orc', 'орка')|E], который все еще думает править независимо. Любой, кто осмелится бросить мне вызов, будет уничтожен!"
  decision_demand_orc_submission_confirm: "Горы принадлежат МНЕ!"
  decision_demand_orc_submission_is_azog: "Вы являетесь Азогом"
  decision_demand_orc_submission_tt: "Все [Concept('orcs', 'орки')|E] в Мглистых горах отреагируют на ваше требование"
@@ -1596,7 +1599,7 @@
  decision_azog_ulukai_verylong_search: "Вы начинаете бояться, что самоцвет никогда не будет найден"
 
  decision_azog_claim_final_victory: "Завладеть неограниченной властью"
- decision_azog_claim_final_victory_desc: "Я победил. Не осталось никого, кто мог бы бросить мне вызов: все орки славят мое имя, а все Свободные народы дрожат, прячась в своих норах и убежищах! Мои войска стоят на склонах гор, крепкие, как камень! Я - повелитель! Я - тиран Севера!"
+ decision_azog_claim_final_victory_desc: "Я победил. Не осталось никого, кто мог бы бросить мне вызов: все [Concept('orcs', 'орки')|E] славят мое имя, а все Свободные народы дрожат, прячась в своих норах и убежищах! Мои войска стоят на склонах гор, крепкие, как камень! Я - повелитель! Я - тиран Севера!"
  decision_azog_claim_final_victory_tooltip: "Пусть все узнают о вашей окончательной победе."
  decision_azog_claim_final_victory_confirm: "Меня ничто не остановит."
 
@@ -2233,7 +2236,7 @@
  DESECRATE_ARADHRYND_DONE: "[decision|E] «Осквернить Арадринд» завершено"
 
  decision_subjugate_mount_gundabad: "Подчинить гору Гундабад"
- decision_subjugate_mount_gundabad_desc: "Когда-то орки [Concept( 'gundabad', 'Гундабада' )|E] и люди Лангвелла оказывали почести [Concept( 'witchking', 'Королю-чародею' )|E] [Concept( 'angmar', 'Ангмара' )|E], снабжая его войска воинами и припасами. В те дни эти земли стали известны как [eastangmar|E]. Теперь пришло время им признать другого повелителя."
+ decision_subjugate_mount_gundabad_desc: "Когда-то [Concept('orcs', 'орки')|E] [Concept( 'gundabad', 'Гундабада' )|E] и люди Лангвелла оказывали почести [Concept( 'witchking', 'Королю-чародею' )|E] [Concept( 'angmar', 'Ангмара' )|E], снабжая его войска воинами и припасами. В те дни эти земли стали известны как [eastangmar|E]. Теперь пришло время им признать другого повелителя."
  decision_subjugate_mount_gundabad_confirm: "Они вновь будут служить Тьме."
  decision_subjugate_mount_gundabad_tooltip: "Подчинить гору Гундабад"
  DOMINION_OF_THE_SORCERER_DONE: "[decision|E] «Владения колдуна» завершено"
@@ -2371,22 +2374,22 @@
 
  decision_plunder_thorins_tomb: "Разграбить гробницу Торина"
  decision_plunder_thorins_tomb_tooltip: "Украсть сокровища из гробницы Торина"
- decision_plunder_thorins_tomb_desc: "Со дня своей гибели в Битве Пяти Воинств Торин покоится под Горой, прижимая к груди [Concept('arkenstone', 'Аркенстон')|E] и клинок [Glossary('Оркрист','orcrist_gloss')]. Может быть, настало время пустить их в дело?"
+ decision_plunder_thorins_tomb_desc: "Со дня своей гибели в [Concept('battle_of_the_five_armies', 'Битве Пяти Воинств')|E] Торин покоится под Горой, прижимая к груди [Concept('arkenstone', 'Аркенстон')|E] и клинок [Glossary('Оркрист','orcrist_gloss')]. Может быть, настало время пустить их в дело?"
  decision_plunder_thorins_tomb_confirm: "Вскрыть её!"
 
  decision_return_thorins_artifacts: "Вернуть артефакты Торина"
  decision_return_thorins_artifacts_tooltip: "Вернуть артефакты из гробницы Торина"
- decision_return_thorins_artifacts_desc: "Со дня своей гибели в Битве Пяти Воинств Торин покоился под Горой, прижимая к груди [Concept('arkenstone', 'Аркенстон')|E] и клинок [Glossary('Оркрист','orcrist_gloss')]. Но его покой был нарушен, а гробница осквернена. Мы должны вернуть артефакты их законному владельцу."
+ decision_return_thorins_artifacts_desc: "Со дня своей гибели в [Concept('battle_of_the_five_armies', 'Битве Пяти Воинств')|E] Торин покоился под Горой, прижимая к груди [Concept('arkenstone', 'Аркенстон')|E] и клинок [Glossary('Оркрист','orcrist_gloss')]. Но его покой был нарушен, а гробница осквернена. Мы должны вернуть артефакты их законному владельцу."
  decision_return_thorins_artifacts_confirm: "Вернуть артефакты"
 
  decision_restore_thorins_tomb: "Восстановить гробницу Торина"
  decision_restore_thorins_tomb_tooltip: "Вернуть сокровища в гробницу Торина"
- decision_restore_thorins_tomb_desc: "Со дня своей гибели в Битве Пяти Воинств Торин покоился под Горой, прижимая к груди [Concept('arkenstone', 'Аркенстон')|E] и меч [Glossary('Оркрист','orcrist_gloss')]. Но его покой был нарушен, а гробница осквернена. Мы должны вернуть артефакты в его гробницу и вернуть ей былую величественность."
+ decision_restore_thorins_tomb_desc: "Со дня своей гибели в [Concept('battle_of_the_five_armies', 'Битве Пяти Воинств')|E] Торин покоился под Горой, прижимая к груди [Concept('arkenstone', 'Аркенстон')|E] и меч [Glossary('Оркрист','orcrist_gloss')]. Но его покой был нарушен, а гробница осквернена. Мы должны вернуть артефакты в его гробницу и вернуть ей былую величественность."
  HAS_THORINS_ARTIFACTS: "Вы владеете одним из артефактов Торина"
  decision_restore_thorins_tomb_confirm: "Восстановить гробницу"
 
  decision_unify_durins_folk: "Объединить Народ Дурина"
- decision_unify_durins_folk_desc: "С тех пор как [durindeathless|E] основал [khazaddum|E], его потомки претендовали на власть над всеми [Concept( 'longbeards', 'Длиннобородами' )|E]. Однако напрямую управлять дальними королевствами своего народа было нецелесообразно, и поэтому они оставляли их на произвол судьбы. Только в случае крайней необходимости они собирались и действовали под непосредственным командованием короля.\n\n[longbeards|E] на протяжении веков заселяли многие области, такие как [Concept('ironhills', 'Железные холмы')|E], [Concept('greymountains', 'Серые горы')|E] и вплоть до Залов Торина. Если бы все эти далёкие регионы удалось объединить под одним знаменем, гномы Народа Дурина не только сравнялись бы со своими праотцами, но и превзошли бы их."
+ decision_unify_durins_folk_desc: "С тех пор как [durindeathless|E] основал [khazaddum|E], его потомки претендовали на власть над всеми [Concept( 'longbeards', 'Длиннобородами' )|E]. Однако напрямую управлять дальними королевствами своего народа было нецелесообразно, и поэтому они оставляли их на произвол судьбы. Только в случае крайней необходимости они собирались и действовали под непосредственным командованием короля.\n\n[longbeards|E] на протяжении веков заселяли многие области, такие как [Concept('ironhills', 'Железные холмы')|E], [Concept('greymountains', 'Серые горы')|E] и вплоть до Залов Торина. Если бы все эти далёкие регионы удалось объединить под одним знаменем, [Concept('dwarves', 'гномы')|E] [Concept('durinsfolk', 'Народа Дурина')|E] не только сравнялись бы со своими праотцами, но и превзошли бы их."
  decision_unify_durins_folk_tooltip: "Наша слава бессмертна!"
  decision_unify_durins_folk_confirm: "Наша слава бессмертна!"
  control_percentage_of_misty_desc: "Контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_misty_mountains').GetName]"
@@ -2679,6 +2682,7 @@
  decision_delve_ny_cennacatt_confirm: "Начать раскопки."
  decision_delve_ny_cennacatt.tt: "Столкнуться с опасностями в поисках древних сокровищ и забытых знаний."
 
+
  #############################
  ###   Dune Sea Decisions  ###
  #############################
@@ -2784,6 +2788,8 @@
  search_mumakan_tooltip: "Юсакан"
  treasure_hunting_contract_decision_option_search_yellow_mountains: "Жёлтые горы"
  search_yellow_mountains_tooltip: "Жёлтые горы"
+ treasure_hunting_contract_decision_option_search_bay_of_ormal: "Ормальский залив"
+
  no_settled_counties: "Незаселённые графства"
 
 
@@ -2893,7 +2899,7 @@
  decision_chennacatti_animal_sacrifice_desc: "Хотя мы не употребляем в пищу плоть животных, каждый раз, когда умирает кто-то из нашего народа, в жертву приносят выращенный им скот, чтобы его духи могли сопровождать своих бывших хозяев даже в смерти. Этот ритуал практиковался на протяжении бесчисленных поколений, и он приобретает особую важность, когда уходит из жизни человек, занимающий высокое положение или пользующийся известностью. Возможно, настало время мне организовать эту церемонию."
  decision_chennacatti_animal_sacrifice_confirm: "Привести жрецов и животных!"
 
- decision_sikentr_empire_title: "Восстановить империю Сикентр"
+ decision_sikentr_empire_title: "Восстановить империю Сикентра"
  decision_sikentr_empire_tooltip: "Вернуть булганам древнюю славу"
  decision_sikentr_empire_desc: "Наша история - это история обид и грабежей. На протяжении многих веков чужаки презирали наш народ, считая его дикарями, пригодными лишь для того, чтобы медленно вымирать в холмах. Они забывают, что когда-то мы правили этой землёй - что под началом Сикентра Великого, героя из героев, мы создали империю, простиравшуюся от Тулвангского залива на западе до Ормальского залива на востоке. Его мечту можно возродить."
  decision_sikentr_empire_confirm: "Мы - хозяева Сирайна."
@@ -3098,8 +3104,6 @@
  decision_invite_saruman_to_isengard_tooltip: "Вы передадите управление башней Ортанк Саруману Белому."
  decision_invite_saruman_to_isengard_desc: "[GetBuilding('wonder_angrenost_01').GetName] стоит как страж в самом сердце #L [GetTitleByKey('c_isengard').GetNameNoTier]а#!, его черный камень возвышается над окружающим кольцом гор. Когда-то он был гордым бастионом #L [GetTitleByKey('e_gondor').GetNameNoTier]а#!, но его слава померкла, а предназначение было утрачено со временем. Теперь появилась новая возможность - та, которая может вернуть Изенгарду былое величие.\n\n[GetScriptedCharacterByHistoryID( 'lineofsaruman' ).GetFirstNameNicknamed], мудрейший из [istariconcept|E], выразил желание сделать [orthanc|E] средоточием своей власти. Его знания древних преданий и мастерство ремесла могут превратить древнюю твердыню в маяк силы и мудрости для [Concept('west', 'Запада')|E].\n\nПредоставив Саруману контроль над Изенгардом, вы добьетесь благосклонности одного из [Concept('thewise', 'Мудрых')|E] и скрепите узы с фигурой, обладающей огромным влиянием."
  decision_invite_saruman_to_isengard_confirm: "Пусть те, кто сомневался в нас, подавятся своей гордыней."
-
-
 
  decision_pakirh_evangelize_the_faith: "Обратить местных"
  decision_pakirh_evangelize_the_faith_tooltip: "Принести свет Юнаста"

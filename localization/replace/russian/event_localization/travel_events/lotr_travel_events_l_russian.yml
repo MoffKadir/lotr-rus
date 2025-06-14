@@ -113,7 +113,7 @@
  lotr_travel_events.0008.d.tt: "То, что [beloved.GetName] обнимет вас, не даёт вам сойти с ума"
  lotr_travel_events.0008.e: "Давайте просто двигаться дальше..."
 
- ### Local Storyteller
+ ### Local Storyteller ###
  lotr_travel_events.0009.t: "[Select_CString(storyteller.IsFemale, 'Местная сказительница', 'Местный сказитель' )]: "
  lotr_travel_events.0009.desc.intro: "Путешествуя через владение [ROOT.Char.GetCurrentLocation.GetNameNoTooltip], мы натыкаемся на то, как [storyteller.GetFirstNameNoTooltip], [Select_CString(storyteller.IsFemale, 'местная сказительница', 'местный сказитель' )] развлекает небольшую толпу:\n\n"
 
@@ -203,10 +203,10 @@
  lotr_travel_events.0011.e.success.tt: "Тролль отвлёкся"
  lotr_travel_events.0011.e.failure.tt: "$lotr_travel_events.0011.wound$"
  lotr_travel_events.0011.e.critical_failure.tt: "$lotr_travel_events.0011.failure$"
- lotr_travel_events.0011.riddle1: "«...холм? Нет... Тыква!»"
- lotr_travel_events.0011.riddle2: "«Что-то вроде... яйца?»"
- lotr_travel_events.0011.riddle3: "«Дерево! Нет, оно не двигается...»"
- lotr_travel_events.0011.riddle4: "«...может быть, какой-то камень?»"
+ lotr_travel_events.0011.riddle1: "...холм? Нет... Тыква!"
+ lotr_travel_events.0011.riddle2: "Что-то вроде... яйца?"
+ lotr_travel_events.0011.riddle3: "Дерево! Нет, оно не двигается..."
+ lotr_travel_events.0011.riddle4: "...может быть, какой-то камень?"
  # lotr_travel_events.0011.riddle1: ""...Thirty white horses?""
  # lotr_travel_events.0011.riddle2: ""...So empty it cant be filled?""
  # lotr_travel_events.0011.riddle3: ""...A box without hinges?""
@@ -225,7 +225,7 @@
 
  # Wonders of a Mallorn Forest
 
- lotr_travel_events.0012.t: "Чудеса леса мэллорнов"
+ lotr_travel_events.0012.t: "$travel_event_prefix$ Чудеса леса мэллорнов"
  lotr_travel_events.0012.desc: "Многое было сказано о возвышающихся деревьях мэллорнов в [lothlorien|E]Лотлориэне, но только сегодня мы столкнулись с ними во владении [ROOT.Char.GetCurrentLocation.GetNameNoTooltip]. В полдень мы добрались до лесных опушек, и, кажется, целый час моя свита путешествовала без слов.\n\nВокруг нас возвышаются огромные серебристо-серые стволы, устремлённые к небу. Некоторые из них простираются даже за пределы видимости, на их ветвях и сучьях произрастают золотые листья, сквозь которые падают лучи сверкающего света.\n\nТишина прерывается, когда один из членов моей свиты восклицает, положив руку на ствол дерева.\n\n«Я чувствую, как в этом дереве протекает жизнь!», - говорит он взволнованно. «[Select_CString(ROOT.Char.IsFemale, 'Госпожа', 'Господин' )], позвольте нам устроить здесь привал на несколько минут, ведь я никогда не видел такой красоты в мои дни»."
  lotr_travel_events.0012.a: "Это, безусловно, чудесное зрелище."
  lotr_travel_events.0012.b: "Разобьём лагерь, чтобы в полной мере насладиться этим зрелищем."
@@ -241,7 +241,7 @@
  lothlorien_mallorn_modifier_negative_desc: "В отличие от многих других, этот персонаж не смог узреть красоту природы."
 
  ### Call of the Sea ###
- lotr_travel_events.0013.t: "Зов моря"
+ lotr_travel_events.0013.t: "$travel_event_prefix$ Зов моря"
  lotr_travel_events.0013.desc: "Когда мы приближаемся к побережью, мой взгляд обращается к морю. На него приятно смотреть. \n\n[Select_CString(caravan_leader.IsFemale, 'Моя караванщица', 'Мой караванщик' )], [caravan_leader.GetFirstName], подходит ко мне. «Неплохое зрелище, не правда ли?», - спрашивает [caravan_leader.GetSheHe]. \n\nЯ размышляю, что ответить."
  lotr_travel_events.0013.desc.solo: "Когда мы приближаемся к побережью, мой взгляд обращается к морю. Оно поражает воображение. Я думаю о том, сколько воды нужно, чтобы заполнить хотя бы малую часть моря, через которое сейчас проходит наш корабль. \n\n«Невероятное зрелище», - бормочу я про себя."
  lotr_travel_events.0013.a: "Как же я хочу снова командовать своим кораблём..."
@@ -251,7 +251,7 @@
  lotr_travel_events.0013.e: "Это... странным образом успокаивающее зрелище."
 
  ### Ruins of the North ###
- lotr_travel_events.0014.t: "Руины севера"
+ lotr_travel_events.0014.t: "$travel_event_prefix$ Руины севера"
  lotr_travel_events.0014.desc: "Пока мы пересекаем безлюдные [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] владения [ROOT.Char.GetCurrentLocation.GetNameNoTooltip], мы со свитой проходим мимо руин на соседнем холме и останавливаемся, чтобы немного передохнуть.\n\nИстрёпанные ветрами колонны стоят на возвышении, а остатки разрушающихся стен выглядывают наружу. В центре руин остались дороги и тропинки, а фасады башен и домов всё ещё стоят.\n\nЭто [Concept('arnorian', 'арнорские')|E] руины, разбитые и почерневшие от дождя, ветра и времени, одиноко стоящие в пустоте."
  lotr_travel_events.0014.a: "Пусть все жалкие дунэдайн канут в небытие!"
  lotr_travel_events.0014.b: "Я помню старые истории о королях, правивших этими землями."
@@ -261,7 +261,7 @@
  lotr_travel_events.0014.f: "Возможно, здесь до сих пор лежат забытые ценности!"
 
  ### Flies and Spiders ###
- lotr_travel_events.0015.t: "Мухи и пауки"
+ lotr_travel_events.0015.t: "$travel_event_prefix$ Мухи и пауки"
  lotr_travel_events.0015.desc: "Раз уж мы решили пройти под могучими ветвями [Concept('mirkwood', 'Лихолесья')|E], перед нами предстаёт [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] владения [ROOT.Char.GetCurrentLocation.GetNameNoTooltip]. Путешествие в основном неприятное, так как густой полог над нами, кажется, затмевает большинство источников света, будь то солнце или луна. \n\nМои спутники чувствуют себя неспокойно, и многие держат оружие наготове. «Во мраке за нами наблюдают глаза», - говорит мне тихим шёпотом [Select_CString(caravan_leader.IsFemale, 'караванщица', 'караванщик' )] [caravan_leader.GetFirstName], поворачивая голову с одной стороны тропы на другую.\n\nКак бы в подтверждение [caravan_leader.GetHerHis] слов, подлесок справа от нас на секунду раздвигается, обнажая пугающе большого паука..."
  lotr_travel_events.0015.a: "Это существо может стать полезным союзником, если мы его захватим."
  lotr_travel_events.0015.b: "Лучше постараться двигаться незаметно до конца нашего путешествия."
@@ -271,7 +271,7 @@
  lotr_travel_events.0015.f: "Рубить лес, чтобы проложить новый путь вокруг него!"
 
  ### Haunted Ruins in Eregion ###
- lotr_travel_events.0016.t: "Руины с привидениями"
+ lotr_travel_events.0016.t: "$travel_event_prefix$ Руины с привидениями"
  lotr_travel_events.0016.desc: "Когда мы останавливаемся на привал, пересекая [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] владения [ROOT.Char.GetCurrentLocation.GetNameNoTooltip], я замечаю, что [Select_CString(caravan_leader.IsFemale, 'караванщица', 'караванщик' )]  [caravan_leader.GetFirstName] [Select_CString(caravan_leader.IsFemale, 'уставилась', 'уставился' )] на карту и обеспокоенно бормочет про себя.\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.GetNameRegnal], я [Select_CString(caravan_leader.IsFemale, 'просматривала', 'просматривал' )] наш маршрут, когда [Select_CString(caravan_leader.IsFemale, 'поняла', 'понял' )], что наш лагерь сегодня будет разбит прямо у границ древнего [Concept('elven', 'эльфийского')|E] поселения, ныне лежащего в руинах», - говорит [caravan_leader.GetSheHe]. «Я [Select_CString(caravan_leader.IsFemale, 'слышала', 'слышал' )] много историй о древних призраках, которые до сих пор преследуют эти руины, охотясь на ничего не подозревающих путников!»\n\n[caravan_leader.GetSheHe] успокаивается, а затем продолжает. «Я [Select_CString(caravan_leader.IsFemale, 'нашла', 'нашёл' )] более длинный, альтернативный маршрут, который обходит руины стороной! Прошу вас, [Select_CString(ROOT.Char.IsFemale, 'госпожа', 'господин' )], не стоит беспокоить этих древних призраков»."
  lotr_travel_events.0016.a: "Вы правы, лучше не рисковать."
  lotr_travel_events.0016.b: "Такие трусы, как вы в моём окружении, будут жестоко наказаны."
@@ -296,8 +296,8 @@
  lotr_travel_events.0017.d.tt: "Вы молитесь и бросаете в яму часть своих вещей в качестве жертвы, надеясь на спасение."
 
  ### A Gruesome Cave ###
- lotr_travel_events.0018.t: "Жуткая пещера"
- lotr_travel_events.0018.desc: "Путешествуя по лесам провинции [ROOT.Char.GetCurrentLocation.GetTerrain.GetName], мы с моими спутниками наткнулись на мрачную картину. По залитой кровью земле разбросаны тела, а неподалеку, прямо у входа в темную пещеру, лежит труп большого медведя.\n\nКажется, ясно, что здесь произошло. Зверь расправился с этими невезучими душами, но не без смертельных ран, от которых он вскоре скончался. Когда я осматриваю мертвых путников, мой взгляд устремляется к пещере. Наверняка именно оттуда пришел этот страшный медведь?\n\n«Мы не можем оставить их вот так», - замечает один из моих спутников, возвращая мое внимание к телам убитых."
+ lotr_travel_events.0018.t: "$travel_event_prefix$ Жуткая пещера"
+ lotr_travel_events.0018.desc: "Путешествуя сквозь [ROOT.Char.GetCurrentLocation.Custom('GetTerrainTypePlural')] провинции [ROOT.Char.GetCurrentLocation.GetTerrain.GetName], мы с моими спутниками наткнулись на мрачную картину. По залитой кровью земле разбросаны тела, а неподалеку, прямо у входа в темную пещеру, лежит труп большого медведя.\n\nКажется, ясно, что здесь произошло. Зверь расправился с этими невезучими душами, но не без смертельных ран, от которых он вскоре скончался. Когда я осматриваю мертвых путников, мой взгляд устремляется к пещере. Наверняка именно оттуда пришел этот страшный медведь?\n\n«Мы не можем оставить их вот так», - замечает один из моих спутников, возвращая мое внимание к телам убитых."
  lotr_travel_events.0018.a: "Думаю, нам пора идти. Еще один медведь может быть рядом."
  lotr_travel_events.0018.b: "Вы правы. Мы похороним мертвых."
  lotr_travel_events.0018.c: "Мы вычистим эти кости!"
@@ -305,7 +305,7 @@
  lotr_travel_events.0018.d.tt: "Вы прерываете свое путешествие, чтобы исследовать темную пещеру"
 
  ### A Gruesome Cave - Follow-up ###
- lotr_travel_events.0019.t: "Обитатель медвежьей пещеры"
+ lotr_travel_events.0019.t: "$travel_event_prefix$ Обитатель медвежьей пещеры"
  lotr_travel_events.0019.desc: "Исследование пещеры заняло больше времени, чем я [Select_CString(ROOT.Char.IsFemale, 'ожидала', 'ожидал' )]. Пещера уходит все глубже в отвесную скалу, на каждом углу видны явные следы медвежьей деятельности. Повсюду валяются черепа, как людей, так и животных, а запах стоит невыносимый. Наконец мы достигаем последней камеры.\n\nЛуч света освещает пещеру, просачиваясь внутрь через большую трещину над нашими головами. Мы находим еще одного мертвого медведя, полуразложившегося, а рядом с ним... ребенка.\n\n[Select_CString(cavechild.IsFemale, 'Она', 'Он' )] выглядит [Select_CString(cavechild.IsFemale, 'дикой', 'диким' )], но не [Select_CString(cavechild.IsFemale, 'агрессивной', 'агрессивным' )]. Сделав несколько шагов ближе, я понимаю, что при желании смогу убедить ребенка пойти с нами."
  lotr_travel_events.0019.a: "Здесь нам нечего делать."
  lotr_travel_events.0019.b: "Идем, [Select_CString(cavechild.IsFemale, 'малышка', 'малыш' )]. Теперь ты в безопасности."
