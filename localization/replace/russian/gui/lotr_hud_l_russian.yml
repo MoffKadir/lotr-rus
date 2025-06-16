@@ -69,5 +69,5 @@
  select_patron_god_cooldown_trigger: "Вы не можете изменить своё божество-покровителя до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'selected_patron_god') )]"
  MULTIPLAYER_LOBBY_LOTR_HAS_OPENING_EVENT: "Имеет вступительное событие"
  MULTIPLAYER_LOBBY_LOTR_HAS_STORY_CONTENT: "Имеет сюжетный контент"
- lobby_tab_lore_character: "Лорные персонажи"
+ lobby_tab_lore_character: "Интересные персонажи"
  lobby_lore_ruler_name: "[Character.GetTitledFirstNameNoTooltip|U] | [Character.GetAge] [Select_CString( Not( EqualTo_int32( Character.GetHealthIconFrame, '(int32)4' ) ), Select_CString( Not( EqualTo_int32( Character.GetHealthIconFrame, '(int32)3' ) ), Select_CString( Not( EqualTo_int32( Character.GetHealthIconFrame, '(int32)2' ) ), '@health_icon_excellent!', '@health_icon!' ), '@health_icon_poor!' ), '@health_icon_dying!' )]\n[Character.GetPrimaryTitle.GetName]"
