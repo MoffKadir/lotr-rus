@@ -556,10 +556,10 @@
  fariyin_prefix: "Фарио"
  fariyin_ethnicity: "Фаринск"
  fariyin_desc: "#size:15    Фарийцы - самый затворнический народ из всех культур Тулванги, обитатели лесов Великой Гаи, также известного как Заджантак. Часто этот термин применяется ко всем народам Тулванга и, возможно, даже Раи, которые часто считаются отсталыми и примитивными для тех, кто далек от этого региона.\n\nИх жизнь сосредоточена вокруг великой реки Заджа, где они живут экономно, не делая различий между владыкой и простолюдином. Они не испытывают любви к [Concept('adunai', 'адунайцам')|E] на западе и объединились в общем деле против них под руководством великих королей войны.#!"
- etulian: "Банадунай"
- etulian_prefix: "Банадуно"
- etulian_collective_noun: "Банадунайск"
- etulian_desc: "#size:15    Хотя анбалукхори гордятся тем, что хранят свои уважаемые родословные отдельно от [Glossary('Мийянай','miyanai_gloss')], на самом деле многие (а на самом деле большинство) из них смешались с коренными тулвангцами [Concept('anbalkumagan', 'Ан-Балкумагана')|E] - яростными независимыми туладенцами и скромными тандитами. Это смешение не только крови, но и обрядов и обычаев привело к появлению банадунай, или полу-[Concept('adunai', 'адунайцами')|E] на адунайском языке.\n\nХотя банадунай в значительной степени являются тулвангцами, анбалукхори в своей гордыне считают их скорее адунайцами, чем аписайцами, одаренными половиной мудрости и силы владык Запада, и поэтому позволяют своим принцам и лордам «запятнать» свой благородный род супругой из банадунай. В иерархии [Concept('anbalkumagan', 'Ан-Балкумагана')|E] они часто используются в качестве дипломатов, посланников или даже шутов.#!"
+ banadunai: "Банадунай"
+ banadunai_prefix: "Банадуно"
+ banadunai_collective_noun: "Банадунайск"
+ banadunai_desc: "#size:15    Хотя [Concept('anbalukkhori', 'анбалукхори')|E] гордятся тем, что хранят свои уважаемые родословные отдельно от [Glossary('Мийянай','miyanai_gloss')], на самом деле многие (а на самом деле большинство) из них смешались с коренными тулвангцами Ан-Балкумагана - яростными независимыми туладенцами и скромными тандитами. Это смешение не только крови, но и обрядов и обычаев привело к появлению банадунай, или полу-[Concept('adunai', 'адунайцами')|E] на адунайском языке.\n\nХотя банадунай в значительной степени являются тулвангцами, анбалукхори в своей гордыне считают их скорее адунайцами, чем аписайцами, одаренными половиной мудрости и силы владык Запада, и поэтому позволяют своим принцам и лордам «запятнать» свой благородный род супругой из банадунай. В иерархии Ан-Балкумагана они часто используются в качестве дипломатов, посланников или даже шутов.#!"
  tuloriyan: "Тулорианцы"
  tuloriyan_collective_noun: "Тулорианск"
  tuloriyan_prefix: "Тулори"
@@ -1575,3 +1575,16 @@
  wastelands_desc: ""
 
  culture_window_tooltip: "Описание культуры"
+
+ #Window Event GUI
+ LOTR_CUSTOM_DESCRIPTION: "Описание:"
+ LOTR_CUSTOM_DESC_SAVE: "Сохранить"
+ lotr_custom_cultural_description: "[ROOT.Char.GetLocalizedText('lotr_custom_cultural_description')]"
+
+ #Whatever loc you have in you cooltip that allows for descriptions
+ LOTR_CULTURE_TOOLTIP: "[SelectLocalization(GetScriptedGui('lotr_cultural_description_new_cultures').IsShown(GuiScope.SetRoot(Culture.MakeScope).End), 'LOTR_CUSTOM_CULTURE_PLAYER_DESCRIPTION', 'LOTR_CULTURE_DESCRIPTION')]"
+
+ #Player's description
+ LOTR_CUSTOM_CULTURE_PLAYER_DESCRIPTION: "[Culture.MakeScope.Var('lotr_character_culture_tooltip').Char.GetLocalizedText('lotr_custom_cultural_description')]"
+ #Devs descriptions
+ LOTR_CULTURE_DESCRIPTION: "[GetScriptedGui('culture_descriptions').BuildTooltip(GuiScope.SetRoot(Culture.MakeScope).End)]"
