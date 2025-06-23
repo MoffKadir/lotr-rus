@@ -38,6 +38,12 @@
  tenet_birthright_eldar_name:0 "Право первородства эльдар"
  tenet_birthright_eldar_desc:0 "[eldar|E], первые и старшие из Детей Илуватара, стоят на страже естественного порядка мира. Они должны быть учителями - и, если потребуется, судьями - Последышей. Они не должны покидать земли, где родились, и своё право первородства."
  INCOMPATIBLE_TENET_ELVEN_MEDITATION_TRIGGER:1 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_elven_meditation').GetName( GetPlayer.GetFaith )]"
+ tenet_great_song_name: "Восхищение Великой песни"
+ tenet_great_song_desc: "Среди [Concept('avari', 'авари')|E] [Concept('greatsong', 'Великая песня')|E] издавна имела гораздо большее значение, чем среди их родичей из [Concept('eldar', 'эльдар')|E]. В некоторых обычаях авари почитание Великой песни вылилось в серию ритуалов в её честь."
+ doctrine_parameter_characters_are_better_court_musicians: "[Concept('characters', 'Персонажи')|E] этой [Concept('faith', 'конфессии')|E] лучше проявляют себя в [Concept('court_position', 'должности')|E] «#high [GetCourtPositionType('court_musician_court_position').GetName]#!»"
+ doctrine_parameter_pious_court_musicians: "[SelectLocalization( HasDlcFeature( 'royal_court' ), 'doctrine_parameter_pious_court_musicians_has_dlc', 'doctrine_parameter_pious_court_musicians_no_dlc' )]"
+ doctrine_parameter_pious_court_musicians_has_dlc: "Открывает [Concept('court_position', 'должность')|E] «#V [GetCourtPositionType('court_musician_court_position').GetName]#!» на один [Concept('title_tier', 'уровень')|E] раньше\n$EFFECT_LIST_BULLET$[Concept('court_position', 'Придворная должность')|E] «#V [GetCourtPositionType('court_musician_court_position').GetName]#!» увеличивает ежемесячный прирост [prestige_i][Concept('prestige', 'престижа')|E]"
+ doctrine_parameter_pious_court_musicians_no_dlc: "" # Intentionally empty
 
  tenet_druedain_isolation_name:0 "Изоляция друэдайн"
  tenet_druedain_isolation_desc:0 "У друатов нет желания расширяться или завоёвывать земли других народов. Они довольны своей жизнью, живут в общении с природой и окружающими их духами. Однако они будут жестоко сражаться, чтобы защитить свои леса и свои дома, так что встречайте их отравленные стрелы на свой страх и риск!"
