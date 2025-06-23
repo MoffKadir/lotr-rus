@@ -133,6 +133,7 @@
  nick_the_bridgemaster: "[Select_CString(CHARACTER.IsFemale, 'Строительница', 'Строитель' )] мостов"
  nick_the_bridgemaster_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'руководили', Select_CString(CHARACTER.IsFemale, 'руководила', 'руководил' ))] строительством великого Моста единства, соединяющего северное и южное королевство #L [GetTitleByKey('k_bizar_uld_um').GetNameNoTier]а#! как в камне, так и в духе во времена разделения и переселения среди [Concept('blacklocks', 'Черновласов')|E]."
 
+
  ### Hobbit Nicknames ###
  nick_fatty: "[Select_CString(CHARACTER.IsFemale, 'Толстушка', 'Толстяк' )]"
  nick_fatty_desc: "Широко распространено мнение, что обхват [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] больше, чем [Select_CString( CHARACTER.IsLocalPlayer, 'ваш', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] рост."
@@ -872,6 +873,7 @@
  nick_the_elder_posthumous: "[Select_CString(CHARACTER.IsFemale, 'Старшая', 'Старший' )]"
  nick_the_elder_posthumous_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'разделяете', 'разделяет')] своё имя с другой известной исторической личностью, и, таким образом, [Select_CString( CHARACTER.IsLocalPlayer, 'стали известны', Select_CString(CHARACTER.IsFemale, 'стала известна', 'стал известен' ))] в истории как [CHARACTER.GetFirstName] #EMP $nick_the_elder_posthumous$#!"
 
+
  ### Lossoth Nicknames ###
  nick_assistant_unique: "[Select_CString(CHARACTER.IsFemale, 'Помощница', 'Помощник' )]"
  nick_assistant_unique_desc: "Я не Кристина и не ваша помощница!"
@@ -1186,7 +1188,7 @@
  nick_hot_head: "Горячая башка"
  nick_hot_head_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] чаще всего [Select_CString( CHARACTER.IsLocalPlayer, 'ввязываетесь', 'ввязывается')] в неприятности, не подумав."
  nick_jaws: "Челюсти"
- nick_jaws_desc: "Прак! Прак! Прак! Погоди, не тот орк."
+ nick_jaws_desc: "Прак! Прак! Прак! Погоди, не тот [Concept('orc', 'орк')|E]."
  nick_jitters: "[Select_CString(CHARACTER.IsFemale, 'Дрожащая', 'Дрожащий' )]"
  nick_jitters_desc: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] часто бросает в дрожь - даже когда [Select_CString( CHARACTER.IsLocalPlayer, 'вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'купаетесь', 'купается')] в горячей воде или крови!"
  nick_boss_slayer: "Убийца босса"
@@ -1194,7 +1196,7 @@
  nick_king_slayer: "Убийца короля"
  nick_king_slayer_desc: "Нет, [Select_CString( CHARACTER.IsLocalPlayer, 'ваши', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] волосы не завиты и не цвета чистого золота, но [Select_CString( CHARACTER.IsLocalPlayer, 'вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'совершили', Select_CString(CHARACTER.IsFemale, 'совершила', 'совершил' ))] нечто очень похожее!"
  nick_the_scribe: "Писарь"
- nick_the_scribe_desc: "Кто сказал, что орки не умеют читать?"
+ nick_the_scribe_desc: "Кто сказал, что [Concept('orcs', 'орки')|E] не умеют читать?"
  nick_the_learned: "[Select_CString(CHARACTER.IsFemale, 'Обученная', 'Обученный' )]"
  nick_the_learned_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'разбираетесь', 'разбирается')] во многих вопросах, даже если большинство из них связано с убийствами и смертью."
  nick_lice_head: "Вшивая башка"
@@ -1252,7 +1254,7 @@
  nick_ranger_killer: "Убийца Следопытов"
  nick_ranger_killer_desc: "От севера до юга [CHARACTER.GetShortUINameNoTooltipNoFormat|U] - мастер убийства ползающих на брюхе мерзких тарков!"
  nick_the_ravager: "[Select_CString(CHARACTER.IsFemale, 'Разорительница', 'Разоритель' )]"
- nick_the_ravager_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'любите', 'любит')] крушить и разорять, даже больше, чем большинство орков."
+ nick_the_ravager_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'любите', 'любит')] крушить и разорять, даже больше, чем большинство [Concept('orcs', 'орков')|E]."
  nick_raw_head: "Сыроглав"
  nick_raw_head_desc: "Голова [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] похожа на кусок свежего мяса."
  nick_rock_crusher: "[Select_CString(CHARACTER.IsFemale, 'Крушащая', 'Крушащий' )] камни"
@@ -1292,7 +1294,7 @@
  nick_the_taskmaster: "[Select_CString(CHARACTER.IsFemale, 'Надсмотрщица', 'Надсмотрщик' )]"
  nick_the_taskmaster_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'можете', 'может')] заставить работать любую неуправляемую кучу снага."
  nick_the_advisor: "[Select_CString(CHARACTER.IsFemale, 'Советница', 'Советник' )]"
- nick_the_advisor_desc: "Говорят: «Не ходи к оркам за советом, ибо они обглодают твое лицо»."
+ nick_the_advisor_desc: "Говорят: «Не ходи к [Concept('orcs', 'оркам')|E] за советом, ибо они обглодают твое лицо»."
  nick_the_all_eater: "[Select_CString(CHARACTER.IsFemale, 'Всеядная', 'Всеядный' )]"
  nick_the_all_eater_desc: "От самого скудного куска еды до самого высоких королевских угощений, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'съедите', 'съест')] что угодно... и кого угодно."
  nick_the_amputator: "[Select_CString(CHARACTER.IsFemale, 'Отрубающая', 'Отрубающий' )]"
@@ -1320,7 +1322,7 @@
  nick_the_breaker: "[Select_CString(CHARACTER.IsFemale, 'Крушительница', 'Крушитель' )]"
  nick_the_breaker_desc: "Заслоны, стены, воины - мало что может противостоять [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажу ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'ему персонажу', '' )]."
  nick_the_brewer: "Пивовар"
- nick_the_brewer_desc: "Орки любят грог, отвары и алкоголь как для лечения, так и для развлечения - [CHARACTER.GetShortUINameNoTooltipNoFormat|U] лучше всех [Select_CString( CHARACTER.IsLocalPlayer, 'умеете', 'умеет')] их делать."
+ nick_the_brewer_desc: "[Concept('orcs', 'Орки')|E] любят грог, отвары и алкоголь как для лечения, так и для развлечения - [CHARACTER.GetShortUINameNoTooltipNoFormat|U] лучше всех [Select_CString( CHARACTER.IsLocalPlayer, 'умеете', 'умеет')] их делать."
  nick_the_brother: "[Select_CString(CHARACTER.IsFemale, 'Сестра', 'Брат' )]"
  nick_the_brother_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString(CHARACTER.IsFemale, 'преданная и любящая сестра', 'преданный и любящий брат' )] - они умрут быстро, а не медленно."
  #nick_the_champio: "[Select_CString(CHARACTER.IsFemale, 'Победительница', 'Победитель' )]"
