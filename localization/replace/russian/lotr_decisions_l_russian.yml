@@ -209,6 +209,13 @@
  decision_retire_to_himring_desc: "Я выступил на войну, чтобы победить Тень, и теперь она повержена. Но я устал и изнемог за долгие годы печали, и время и память тяготят меня. Море зовёт меня, хотя путь к нему закрыт! Но на Химринге тихо, ибо там живут воспоминания о давних днях.\n\nСделав свое дело, я вернусь на Химринг, чтобы отдыхать и петь, пока мир не будет уничтожен и отстроен заново, или пока я не развеюсь песней по ветру."
  decision_retire_to_himring_confirm: "[Glossary('Нолдолантэ','noldolante_gloss')] получит ещё один куплет..."
 
+ ### Glorfindel Decisions ###
+ decision_glorfindel_ride_out: "Отправиться в путь"
+ decision_glorfindel_ride_out_tooltip: "Начать поиски теней, которые вы видели в своём сне"
+ decision_glorfindel_ride_out_desc: "Какое-то дурное предзнаменование бросило тень на моё сердце. Мудрость [Concept('elrond', 'Эльронда')|E] заставила меня поверить, что я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] отправиться в путь и обнаружить эту опасность, где бы она ни скрывалась. Я отправлюсь в путь из [Concept('imladris', 'Имладриса')|E], как только смогу, а верный Асфалот станет моим единственным спутником."
+ decision_glorfindel_ride_out_confirm: "В путь, Асфалот."
+ decision_glorfindel_ride_out_tt: "Вы отправитесь в пустоши [Concept('eriador', 'Эриадора')|E]"
+
  ###########################
  ### Dorwinion Decisions ###
  ###########################
@@ -1148,6 +1155,20 @@
  decision_restore_saralain_desc: "Находясь долгое время в упадке, королевство Саралайн погрузилось в историю и разруху. Но если бы мы смогли создать достаточную базу власти, возможно, мы смогли бы попытаться вернуть мантию и объединить кланы под единым троном."
  decision_restore_saralain_confirm: "Сплотитесь, воины кланов!"
  restore_saralain_custom_warning: "#W Главы любых других достаточно могущественных кланов могут оспорить наши притязания и попытаться захватить королевство самостоятельно!#!"
+
+ decision_start_migration: "Призвать к переселению"
+ decision_start_migration_tooltip: "Призвать к переселению"
+ decision_start_migration_desc: "Placeholder - DEV POOL [GetGlobalVariable('saralain_dev_pool').GetValue]"
+ decision_start_migration_confirm: "Разослать глашатаев!"
+ decision_start_migration_effect: "К другим правителям энедвайтрим будут разосланы глашатаи, чтобы призвать их к переселению"
+
+ decision_launch_migration: "Призвать к переселению"
+ decision_launch_migration_tooltip: "Призвать к переселению"
+ decision_launch_migration_desc: "Placeholder - DEV POOL [GetGlobalVariable('saralain_dev_pool').GetValue]"
+ decision_launch_migration_confirm: "Разослать глашатаев!"
+ migrate_cardolan: "Кардолан"
+ migrate_cardolan_desc: "PLACEHOLDER"
+ migrate_cardolan_tooltip: "Кардолан"
 
  #######################
  ### Shire Decisions ###

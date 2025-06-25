@@ -26,3 +26,25 @@
  enedwaith.0303.desc:0 "Когда до меня дошли слухи о покушении на короля Мадога, я почти [Select_CString(ROOT.Char.IsFemale, 'пожалела', 'пожалел' )] бедные души, которые должны были стать мишенью для гнева Бешеного Пса. Но теперь я [Select_CString(ROOT.Char.IsFemale, 'узнала', 'узнал' )], что кланы, против которых он развязал войну, не только не виновны в преступлении, он требует, чтобы все кланы преклонили перед ним колено, чтобы они помогли ему в его стремлении отомстить истинному виновнику. \n\nЕсли бы я [Select_CString(ROOT.Char.IsFemale, 'отказалась', 'отказался' )], то, без сомнения, [Select_CString(ROOT.Char.IsFemale, 'навлекла', 'навлёк' )] бы на себя его гнев. Конечно, это было бы унизительно, но, возможно, в наше время нашему народу необходимо единство?"
  enedwaith.0303.a:0 "Мы подчинимся Бешеному Псу, чтобы он не обрушил на нас свою ярость"
  enedwaith.0303.b:0 "Мы никогда не встанем на колени перед Бешеным Псом"
+
+ ### Migration event chain
+ 
+ enedwaith.1000.t: "Placeholder - Start Migration Prep"
+ enedwaith.1000.desc: "Placeholder - [GetGlobalVariable('saralain_dev_pool').GetValue]"
+ enedwaith.1000.a: "Placeholder - 1 dev"
+ enedwaith.1000.b: "Placeholder - all dev"
+ saralain_dev_pool_1: "1 ед. [Concept('development', 'развития')|E] будет добавлена в резерв"
+ saralain_dev_pool_2: "Всё [Concept('development', 'развитие')|E] вашей державы будет добавлено в резерв"
+ call_for_migration: "Разослать вестников ко всем правителям энедвайтрим, чтобы они присоединились к переселению"
+
+ enedwaith.1002.t: "Placeholder - Join Migration"
+ enedwaith.1002.desc: "Placeholder - [GetGlobalVariable('saralain_dev_pool').GetValue]"
+ enedwaith.1002.a: "Placeholder - join"
+ enedwaith.1002.b: "Placeholder - join and commit dev"
+ enedwaith.1002.c: "Placeholder - join and commit all dev"
+ enedwaith.1002.d: "Placeholder - don't join"
+ join_migration: "Присоединиться к переселению"
+
+ enedwaith.1003.t: "Placeholder - Confirmation for Migration Leader"
+ enedwaith.1003.desc: "Placeholder - [GetGlobalVariable('saralain_dev_pool').GetValue]"
+ enedwaith.1003.a: "Placeholder"
