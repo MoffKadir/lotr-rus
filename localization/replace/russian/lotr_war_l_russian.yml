@@ -3,6 +3,8 @@
  LOTR_TRANSFER_ALL_MAA_REGIMENTS_FIRST: "Вы передаёте все [Concept('regiments', 'полки')|E] [Concept('men_at_arms', 'профессионалов')|E] персонажу [TARGET_CHARACTER.GetShortUIName]"
  LOTR_TRANSFER_ALL_MAA_REGIMENTS_THIRD: "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'передаёте', 'передаёт')] [Concept('regiments', 'полки')|E] [Concept('men_at_arms', 'профессионалов')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажу ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'ему персонажу', '' )]"
 
+ not_wastelands: "Этот персонаж не является частью пустошей"
+
  TRUCE_GONDOR_MORDOR: "\nМежду этими двумя державами царит хрупкий период мира"
  TRIBUTARY_TRUCE_NAME: "\nМежду этими двумя державами наступил непростой период мира после разрыва [Concept('tributary', 'даннических')|E] отношений."
 
@@ -68,6 +70,7 @@
 
  MORDOR_INVASION_CB_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective]ое вторжение в [DEFENDER.GetPrimaryTitle.GetName]"
  mordor_invasion_war_victory_desc_attacker: "Вы получаете все титулы в пределах державы персонажа [defender.GetShortUINamePossessive] [de_jure|El] принадлежащие Анориэну, и все захваченные вне его владения. [gondor|E] будет уничтожен."
+ final_battle_mordor_cb: "Уничтожение Гондора"
 
  kingstrife_cb: "Восстание роялистов"
  kingstrife_victory_desc_defender: "Вы потеряете свой основной [title|El], а ваша судьба окажется в руках роялистов."
