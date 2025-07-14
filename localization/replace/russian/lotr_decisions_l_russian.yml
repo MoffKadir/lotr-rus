@@ -690,12 +690,14 @@
  decision_reunify_dunedain_counties_custom: "Каждое $arnorian_collective_noun$ое и $gondorian_collective_noun$ое [county|El] в вашей [Concept('realm', 'державе')|E]"
 
  decision_reclaim_royal_lineage: "Восстановить королевский род дунэдайн"
+ decision_reclaim_anarion_lineage: "$decision_reclaim_royal_lineage$"
  decision_reclaim_royal_lineage_tooltip: "Проследить свою родословную до Элендиля"
  decision_reclaim_royal_lineage_desc: "На протяжении всей [Concept('thirdage', 'Третьей Эпохи')|E] прямые мужские линии потомков [Concept('isildur', 'Исильдура')|E] и [Concept('anarion', 'Анариона')|E] прервались, а троны [Concept('arnor', 'Арнора')|E] и [Concept('gondor', 'Гондора')|E] оставались вакантными. Хотя наш род не всегда переходил от отца к сыну, но разве сам [elendil|E] не происходил от дочери короля? Если бы мы смогли доказать наше королевское происхождение, мало кто смог бы возразить против справедливости наших притязаний."
  decision_reclaim_royal_lineage_confirm: "Искать в записях"
  reclaim_royal_lineage_aranbor_tooltip: "#T #V Претендовать на происхождение от Аранбора#! #!\n\nАранбор был младшим сыном [Concept('arvedui', 'Арведуи')|E], последнего короля [Concept('arthedain', 'Артедайна')|E]. Хотя наш дом долгое время довольствовался управлением Эмин Уиалем, мы имеем законные притязания на титул верховных королей дунэдайн."
  reclaim_royal_lineage_silivnir_tooltip: "#T #V Претендовать на происхождение от Силивнира#! #!\n\nСиливнир был младшим сыном Валандиля, третьего короля [Concept('arnor', 'Арнора')|E]. На протяжении большей части [Concept('thirdage', 'Третьей Эпохи')|E] наш дом хранил исторический порт Селернен, но наши притязания на титул верховных королей дунэдайн столь же справедливы, как и любые другие."
- finished_isildur_legend_tt: "Член вашего дома завершил [Concept('legend_mythical', 'мифическую')|E] [Concept('legend', 'легенду')|E] $legend_isildur$"
+ reclaim_royal_lineage_benrodir_tooltip: "#T #V Претендовать на происхождение от Минастана#! #!\n\nБенродир был младшим сыном Минастана, сына Минардиля, двадцать пятого короля [Concept('gondor', 'Гондора')|E]. Он был лишён наследства в роду [Concept('anarion', 'Анариона')|E] за то, что женился на [Concept('northron', 'северянке')|E], точно так же, как это сделал король Валакар до [Concept('kinstrife', 'Распри Родичей')|E]. Его лишение наследства было несправедливым, и наши притязания на трон Гондора столь же законны, как и у любого представителя рода Эльдакара."
+ finished_isildur_legend_tt: "Член вашего дома завершил [Concept('legend_mythical', 'мифическую')|E] [Concept('legend', 'легенду')|E] «$legend_isildur$»"
  unlock_reclaim_dunedain_royal_lineage_tt: "Открывает [decision|El] #EMP $decision_reclaim_royal_lineage$#!"
 
  decision_claim_gondor_arassuil: "Претендовать на трон Гондора"
@@ -896,6 +898,11 @@
  decision_claim_gondor_kingship_tooltip: "Возродить королевство Гондор"
  decision_claim_gondor_kingship_tt.1: "[GetTitleByKey('e_gondor_steward').GetName] не существует"
  claim_gondor_kingship_effect_absorb_dejure.tt: "[GetTitleByKey('e_gondor').GetName] становится [de_jure|El] титулом"
+
+ decision_reclaim_gondor_kingship: "Претендовать на истинную королевскую власть в Гондоре"
+ decision_reclaim_gondor_kingship_desc: "Потомки Кастамира выступили на север, захватили Гондор от его имени и стали править. Но их время прошло, ни один потомок Кастамир не сидит на троне Гондора, так должен ли Гондор принять их снова?"
+ decision_reclaim_gondor_kingship_confirm: "Кто был истинным королём?"
+ decision_reclaim_gondor_kingship_tooltip: "Восстановить истинное королевство Гондор"
 
  gondor_kingship_tt_basic: "\n\n#T Базовые требования:#!\n#help Необходимо выполнить следующие базовые требования:#!\n" # Unused
  gondor_kingship_tt_extra_requirement: "Поскольку вы принадлежите к числу Правящих наместников из дома Хурина, вам нужно одно из следующих свойств, чтобы нарушить свою клятву: [GetTrait('arrogant').GetName( GetNullCharacter )], [GetTrait('ambitious').GetName( GetNullCharacter )] или [GetTrait('arbitrary').GetName( GetNullCharacter )]"

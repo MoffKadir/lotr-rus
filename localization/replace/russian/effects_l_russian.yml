@@ -188,10 +188,13 @@
  I_CONVERTED_TO: "Вы обратились в [FAITH.GetAdjective|Vl]"
  THEY_CONVERTED_TO: "[CHARACTER.GetShortUIName|U] принимает [FAITH.GetAdjective|Vl]"
  COVERTED_TO: "Принята конфессия [FAITH.GetAdjective|Vl]"
+
  CONVERTS_TO_DOMICILE: "[Concept('yurt', 'Кочевая столица')|E] принимает [FAITH.GetAdjective|Vl]"
  CONVERTED_TO_DOMICILE: "[Concept('yurt', 'Кочевая столица')|E] приняла [FAITH.GetAdjective|Vl]"
+
  CULTURE_CONVERTS_TO_DOMICILE: "[Concept('yurt', 'Кочевая столица')|E] принимает #L [TARGET_CULTURE.GetCollectiveNoun|Vl]ую#! [Concept('culture', 'культуру')|E]"
  CULTURE_CONVERTED_TO_DOMICILE: "[Concept('yurt', 'Кочевая столица')|E] приняла #L [TARGET_CULTURE.GetCollectiveNoun|Vl]ую#! [Concept('culture', 'культуру')|E]"
+
  SET_CHARACTER_FAITH_EFFECT: "[CHARACTER.GetShortUIName|U] меняет конфессию на [FAITH.GetAdjective|Vl]"
  I_CONVERT_SECRETLY_TO: "Вы обращаетесь в [FAITH.GetAdjective|Vl]"
  THEY_CONVERTS_SECRETLY_TO: "[CHARACTER.GetShortUIName|U] принимает [FAITH.GetAdjective|Vl]"
@@ -798,12 +801,14 @@
  THEY_LOSE_NEMESIS: "[TARGET_CHARACTER.GetShortUIName|U] и [CHARACTER.GetShortUIName] перестают быть [Concept( 'nemeses', 'заклятыми врагами' )|E]"
  I_LOST_NEMESIS: "[TARGET_CHARACTER.GetShortUIName|U] и вы больше не [Concept( 'nemeses', 'заклятые враги' )|E]"
  THEY_LOST_NEMESIS: "[TARGET_CHARACTER.GetShortUIName|U] и [CHARACTER.GetShortUIName] больше не [Concept( 'nemeses', 'заклятые враги' )|E]"
+
  GET_BLOOD_BROTHER: "Становится [Concept('blood_brother', 'побратимом')|E] для [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'ваc', Concatenate('персонажа ',TARGET_CHARACTER.GetShortUIName))]"
  GOT_BLOOD_BROTHER: "Тепень [Concept('blood_brother', 'побратим')|E] для [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'вас', Concatenate('персонажа ',TARGET_CHARACTER.GetShortUIName))]"
  I_GET_BLOOD_BROTHER: "[TARGET_CHARACTER.GetShortUIName|U] становится вашим [Concept('blood_brother', 'побратимом')|E]"
  THEY_GET_BLOOD_BROTHER: "[TARGET_CHARACTER.GetShortUIName|U] и [CHARACTER.GetShortUIName] становятся [Concept('blood_brother', 'побратимами')|E]"
  I_GOT_BLOOD_BROTHER: "[TARGET_CHARACTER.GetShortUIName|U] теперь ваш [Concept('blood_brother', 'побратим')|E]"
  THEY_GOT_BLOOD_BROTHER: "[TARGET_CHARACTER.GetShortUIName|U] и [CHARACTER.GetShortUIName] стали [Concept('blood_brother', 'побратимами')|E]"
+
  GLOBAL_ADD_CHARACTER_MODIFIER_EFFECT: "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'получите', 'получит' )] модификатор $MODIFIER$"
  GLOBAL_ADD_CHARACTER_MODIFIER_EFFECT_DURATION: "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'получите', 'получит' )] модификатор $MODIFIER$ до $DURATION|V$.\n\n $MODIFIER_DESC$"
  I_GAIN_PRESTIGE_LEVEL_EFFECT: "Вы поднимете [Concept( 'prestige_levels', 'ур. репутации' )|E] на $VALUE|+0$"
@@ -830,8 +835,11 @@
  I_LOSE_PIETY_LEVEL_EFFECT: "Вы потеряете $VALUE|-0$ [Concept( 'piety_levels', 'ур. набожности' )|E]"
  THEY_GAIN_PIETY_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] получит $VALUE|V0$ [Concept( 'piety_levels', 'ур. набожности' )|E]"
  THEY_LOSE_PIETY_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] потеряет $VALUE|V0$ [Concept( 'piety_levels', 'ур. набожности' )|E]"
+
  BREAKING_TRUCE: "\n#S Нарушение [Concept( 'truce', 'перемирия' )|E]#!"
+
  ATTACKING_ALLY: "\n#S Нападение на [Concept( 'ally', 'союзника' )|E]#!"
+
  ATTACKING_SUZERAIN: "\n#S Нападение на [Concept('suzerain', 'повелителя')|E] расторгнет [Concept('tributary_contract', 'договор о дани')|E]#!"
 
  WAR_BREAKING_BETROTHAL: "\n#S Разрыв помолвки с большой свадьбой#!"
