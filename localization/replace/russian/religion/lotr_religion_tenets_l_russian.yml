@@ -45,7 +45,6 @@
  tenet_elven_meditation_desc: "[elves|E] - первые и старшие из Детей Илуватара, считающиеся самыми прекрасными и мудрыми среди народов [Concept('ardaconcept', 'Арды')|E]. Они очень трепетно относятся к природе и жизни и считают своим долгом защищать её."  #placeholder
  tenet_birthright_eldar_name: "Право первородства эльдар"
  tenet_birthright_eldar_desc: "[eldar|E], первые и старшие из Детей Илуватара, стоят на страже естественного порядка мира. Они должны быть учителями - и, если потребуется, судьями - Последышей. Они не должны покидать земли, где родились, и своё право первородства."
- INCOMPATIBLE_TENET_ELVEN_MEDITATION_TRIGGER:1 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_elven_meditation').GetName( GetPlayer.GetFaith )]"
  tenet_great_song_name: "Восхищение Великой песни"
  tenet_great_song_desc: "Среди [Concept('avari', 'авари')|E] [Concept('greatsong', 'Великая песня')|E] издавна имела гораздо большее значение, чем среди их родичей из [Concept('eldar', 'эльдар')|E]. В некоторых обычаях авари почитание Великой песни вылилось в серию ритуалов в её честь."
  doctrine_parameter_characters_are_better_court_musicians: "[Concept('characters', 'Персонажи')|E] этой [Concept('faith', 'конфессии')|E] лучше проявляют себя в [Concept('court_position', 'должности')|E] «#high [GetCourtPositionType('court_musician_court_position').GetName]#!»"
@@ -62,7 +61,6 @@
  tenet_memory_of_akallabeth_name: "Память об Акаллабет"
  tenet_memory_of_akallabeth_desc: "Ничто из того, что мы делаем, никогда не сравнится с великолепием расцвета [Concept( 'numenor', 'Нуменора' )|E], но в нашей памяти он стоит неподвижно, прекрасный и светлый. Уроки [Concept( 'akallabeth', 'Акаллабет' )|E] никогда не будут забыты, пока существуют [Concept( 'realms_in_exile', 'королевства-в-изгнании' )|E]."
  doctrine_parameter_lotr_numenor_blood_bonuses: "[Concept( 'traits', 'Свойства' )|E] [Concept( 'bloodofnumenor', 'нуменорской крови' )|E] дают дополнительные бонусы к приросту [Concept( 'piety', 'благочестия' )|E] и [Concept( 'legitimacy', 'легитимности' )|E]"
- INCOMPATIBLE_TENET_MEMORY_OF_AKALLABETH_TRIGGER: "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_memory_of_akallabeth').GetName( GetPlayer.GetFaith )]"
  tenet_bellakari_syncretism_name: "Беллакарский синкретизм"
  tenet_bellakari_syncretism_desc: "Говорят ли они Иштра или Нэсса, Аром или [oromecharactershort|E], ясно одно, что мы обращаемся к одной и той же Силе. Народ [Concept( 'bellakar', 'Беллакара' )|E] не будет разделён разногласиями в [Concept( 'faith', 'вере' )|E], ведь мы рассказываем одну и ту же историю, лишь на разных языках."
  doctrine_parameter_hostility_override_tenet_bellakari_syncretism: "Считает, что все [faiths|El] с доктриной #high Беллакарский синкретизм#! — $hostility_astray_tooltippable$."
@@ -78,8 +76,6 @@
  tenet_jultyde_desc: "[Concept('northmen', 'Северяне')|E] [Concept('rhovanion', 'Рованиона')|E] известны своей любовью к Йёлю - празднику середины зимы, который отмечается в честь наступления нового года.\n\nЧто может принести больше радости, чем общение с семьей и соседями? Дружеские узы отмечаются общими церемониями вручения подарков, а всех, кто ищет убежища от холода на улице, ждут у тёплого очага."
  tenet_yuletide_desc: "В начале своей истории [Concept('hobbits', 'хоббиты')|E] часто взаимодействовали с [Concept('northmen', 'северянами')|E], а когда они пришли в [Concept('eriador', 'Эриадор')|E], то принесли с собой праздник середины зимы - Йоль.\n\nЧто может принести больше радости, чем общение с семьей и соседями? Дружеские узы отмечаются общими церемониями вручения подарков, а всех, кто ищет убежища от холода на улице, ждут у тёплого очага."
  tenet_midwinter_desc: "Многие народы по всем [Concept('westlands', 'землям Запада')|E] отмечают тот или иной праздник середины зимы, чтобы встретить новый год.\n\nЧто может принести больше радости, чем общение с семьей и соседями? Дружеские узы отмечаются общими церемониями вручения подарков, а всех, кто ищет убежища от холода на улице, ждут у тёплого очага."
- INCOMPATIBLE_TENET_RITUAL_HOSPITALITY_TRIGGER: "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_ritual_hospitality').GetName( GetPlayer.GetFaith )]"
- INCOMPATIBLE_TENET_YULETIDE_TRIGGER: "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_yuletide').GetName( GetPlayer.GetFaith )]"
  doctrine_parameter_lotr_unlock_yuletide_activity: "Открывает [Concept('activity', 'занятие')|E] «[GetActivityType('activity_yule').GetName]»"
 
  # People of Darkness Tenets
@@ -113,9 +109,6 @@
  tenet_adunaic_mandate_name: "Мандат адунай"
  tenet_adunaic_mandate_desc: "[adunai|E] по своей природе стоят выше всех [Concept('men', 'людей')|E] [Concept('middleearth', 'Средиземья')|E], им поручено упорядочить мир во имя всеобщего блага. Однако это высокое положение налагает на них ответственность: править справедливо, хотя и сурово; направлять и возвышать тех, кто ниже нас; проявлять милосердие, сдержанность и терпение."
  doctrine_parameter_adunaic_propaganda_active_desc: "Последователи могут улучшить свои [skills|El] и влиять на историю, путём #high поддержки адунайской пропаганды#!"
- INCOMPATIBLE_TENET_ADUNAIC_MANDATE_TRIGGER:1 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_adunaic_mandate').GetName( GetPlayer.GetFaith )]"
- INCOMPATIBLE_TENET_ADUNAIC_BIRTHRIGHT_TRIGGER: "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_adunaic_birthright').GetName( GetPlayer.GetFaith )]"
- INCOMPATIBLE_TENET_COMMUNAL_IDENTITY_TRIGGER:1 "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_communal_identity').GetName( GetPlayer.GetFaith )]"
  doctrine_parameter_conversion_buff_adunai_religion: "Скорость обращения [Concept('counties', 'графств')|E], исповедующих #L [GetReligionByKey('adunai_religion').GetName|l]ие#! [Concept('religion', 'конфессии')|E]: #P +30%#!"
  doctrine_parameter_conversion_nerf_outside_numenorean_group: "Скорость обращения [Concept('counties', 'графств')|E], не входящих в [Concept('heritage_group', 'группу')|E] #V [Concept('numenorean', 'нуменорского')|E]#! наследия: #N -50%#!"
  COURT_CHAPLAIN_CONVERSION_ADUNAIC_BIRTHRIGHT_PENALTY_MODIFIER: "[councillor.GetFaith.GetAdjective] — [GetFaithDoctrine('tenet_adunaic_birthright').GetBaseName]"
@@ -137,12 +130,6 @@
 
  tenet_tamska_main_name: "Андзи Тамскул" # The Tamska System
  tenet_tamska_main_desc: "[tamska|E], или Великие королевы, - законные правительницы нашего народа, назначенные божественной властью. Наделенные божественной сущностью, они всегда будут вести наш народ по пути к спасению, поскольку являются воплощениями самих богов. Посредством ритуалов и церемоний тамскиты отдают дань уважения Тамске, ища ее руководства и благословения во всех аспектах жизни. Наша вера глубоко вплетена в ткань нашего общества, формируя наши обычаи, традиции и коллективную идентичность как народа, объединенного под божественной властью Великих королев."
- COMPATIBLE_TENET_RITE_TRIGGER: "Совместимый [core_tenet|El] - [GetFaithDoctrine('tenet_rite').GetBaseName]"
- INCOMPATIBLE_TENET_RITE_TRIGGER: "Несовместимый [core_tenet|El] - [GetFaithDoctrine('tenet_rite').GetBaseName]"
- DOCTRINE_NOT_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER: "Не требуется [doctrine|El] «[GetFaithDoctrine('doctrine_temporal_head').GetBaseName]»"
- DOCTRINE_REQUIRED_TEMPORAL_HEAD_OF_FAITH_TRIGGER: "Требуется [doctrine|El] $doctrine_head_of_faith_name$ - [GetFaithDoctrine('doctrine_temporal_head').GetBaseName]"
- DOCTRINE_NOT_REQUIRED_FEMALE_CLERGY_TRIGGER: "Не требуется [doctrine|El] $doctrine_clerical_gender_name$ - [GetFaithDoctrine('doctrine_clerical_gender_female_only').GetBaseName]"
- DOCTRINE_REQUIRED_FEMALE_CLERGY_TRIGGER: "Требуется [doctrine|El] $doctrine_clerical_gender_name$ - [GetFaithDoctrine('doctrine_clerical_gender_female_only').GetBaseName]"
  doctrine_parameter_lotr_tamska_hof: "[temporal_head_of_faith|E] использует особый [succession_law|El] «[GetLaw('tamska_elective_succession_law').GetName]»."
  lotr_faith_conversion_cost_conversion_blocked_tamska_hof: "Вы - [tamska|E] и выбранная [faith|El] не имеет [Concept('core_tenet', 'догмата')|E] «[GetFaithDoctrine('tenet_tamska_main').GetBaseName]»"
  lotr_faith_creation_blocked_tamska_hof: "Вы - [tamska|E] и новая [faith|El] не имеет [Concept('core_tenet', 'догмата')|E] «[GetFaithDoctrine('tenet_tamska_main').GetBaseName]»"
@@ -168,20 +155,17 @@
  # Forces of Evil Tenets
  tenet_dark_tower_subjugation_name: "Преклонение перед Тёмной Башней"
  tenet_dark_tower_subjugation_desc: "Тёмная Башня взимает высокую цену со всех, кто живёт в [Concept('empire', 'империи')|E] [Concept('sauronthedarklordcharacter', 'Тёмного Властелина Саурона')|E] - все должны заплатить по заслугам во исполнение замыслов Великого Ока!"
- INCOMPATIBLE_TENET_DARK_TOWER_SUBJUGATION_TRIGGER: "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_dark_tower_subjugation').GetName( GetPlayer.GetFaith )]"
 
  tenet_orcish_infighting_name: "Орочьи междоусобицы"
  tenet_orcish_infighting_desc: "[Concept( 'orcish', 'Орочье' )|E] общество - отвратительная и жестокая штука. Сильные поднимаются на вершину, но даже тогда они не могут спать спокойно, потому что их подчинённые постоянно ищут способ уничтожить их. [Concept( 'orcs', 'Орки' )|E] грабят, совершают набеги и уничтожают, не в силах по настоящему создать что-то своё, своих злейших врагов."
  tenet_melkor_worship_name: "Культ Мелькора"
  tenet_melkor_worship_desc: "Да здравствует [melkorcharacter|E], законный владыка всего творения! Принесём жертву во имя Его, чтобы он вознаградил нас бесконечной жизнью в кругах мира."
- INCOMPATIBLE_TENET_MELKOR_WORSHIP_TRIGGER: "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_melkor_worship').GetName( GetPlayer.GetFaith )]"
  tenet_encroaching_shadow_name: "Надвигающаяся Тень"
  tenet_encroaching_shadow_desc: "Тени поглощают всё во времени... королевства, воспоминания, радость. Их натиск неутомим и безмолвен, медленно изматывая врагов, как вода скалу. А иногда они погружают своих врагов во тьму разом, гасят всякий свет и всякую надежду."
  tenet_dark_worship_syncretism_name: "Поклонение Тьме"
  tenet_dark_worship_syncretism_desc: "Поклонение Тьме, или «Мориайстал» на квенья, «Дунгортист» на синдарине и «Бошфай» на мелкианском, был продолжающимся почитанием на протяжении веков [Concept( 'men', 'людьми' )|E], [Concept( 'orcs', 'орками' )|E] и тёмными существами, а также в любой форме шаманских саг, культов и святилищ Тёмного Властелина как великого богоподобного существа. Упомянутый Тёмный Властелин рассматривался как высшее проявление власти, часто в крайне тиранической манере."
  tenet_dragon_boshfai_name: "Бошфай-дракон"
- tenet_dragon_boshfai_desc: "Бошфай-дракон или «почитание», - это обряды некоторых орочьих племён. Эти орки обычно живут вокруг и защищают логово могущественного дракона и платят ему дань, взамен они получают защиту от его теней, ибо кто окажется настолько глуп, чтобы нападать на земли, где обитает могущественный дракон?"
- INCOMPATIBLE_TENET_DRAGON_BOSHFAI_TRIGGER: "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_dragon_boshfai').GetName( GetPlayer.GetFaith )]"
+ tenet_dragon_boshfai_desc: "Бошфай-дракон или «почитание», - это обряды некоторых [Concept('orcish', 'орочьих')|E] племён. Эти орки обычно живут вокруг и защищают логово могущественного [Concept('dragon', 'дракона')|E] и платят ему дань, взамен они получают защиту от его теней, ибо кто окажется настолько глуп, чтобы нападать на земли, где обитает могущественный дракон?"
 
  tenet_deep_worship_name: "Безымянный страх"
  tenet_deep_worship_desc: "В глубине гномьих чертогов мир грызут безымянные твари. Обитать в кромешной тьме - значит досконально знать этот страх и всецело принять его."
