@@ -330,7 +330,10 @@
  convert_to_oligarchy_liege_converted_decision: "Принять олигархию через сюзерена"
  convert_to_oligarchy_liege_converted_decision_desc: "Держава, управляемая советом самых влиятельных лидеров, может процветать благодаря тому, что им руководит не единая воля, а выбор, сделанный во имя общего блага."
  convert_to_oligarchy_liege_converted_decision_tooltip: "Принять олигархическую форму правления через своего [Concept('liege', 'сюзерена')|E]."
- convert_to_oligarchy_liege_converted_decision_confirm: "Для державы наступит новый рассвет."
+ convert_to_oligarchy_decision_liege_converted_confirm: "Для державы наступит новый рассвет."
+
+ TITLES_GAIN_OLIGARCHIC_SUCCESSION: "Все подконтрольные титулы получат закон #high Олигархические выборы#!"
+ ALL_VASSALS_BECOME_OLIGARCHIC: "Все вассалы примут #high олигархическую форму правления#!"
 
  commit_suicide_decision_desc_black_breath: "Я чувствую холод, как будто иду сквозь кошмар. Солнце больше не греет мою кожу. Никто никогда не выздоравливает от этой странной болезни, я просто хочу забыться и уснуть навсегда."
 
@@ -645,11 +648,11 @@
  decision_invite_settlers_tooltip: "Привлечь беженцев, чтобы восстановить население"
  decision_invite_settlers_confirm: "Приходите все!"
 
- decision_restore_dunedain_beliefs: "Вернуть истинную веру"
- decision_restore_dunedain_beliefs_desc: "За долгие годы, прошедшие после падения [Concept('northernkingdom', 'Северного королевства')|E], жители Тарбада утратили представление об истинном поклонении [Concept('eru', 'Эру')|E] и [Concept('valar', 'Валар')|E]. Наша обязанность - вернуть их к свету, пусть люди Тарбада вновь примут свет Валар!"
- decision_restore_dunedain_beliefs_tooltip: "Вернуть истинную веру"
- decision_restore_dunedain_beliefs_confirm: "Вернёмся к свету!"
- decision_restore_dunedain_beliefs_trigger: "Большая часть державы не исповедует [Concept('religion', 'религию')|E] [Concept('dunedain', 'дунэдайн')|E]"
+ #decision_restore_dunedain_beliefs: "Вернуть истинную веру"
+ #decision_restore_dunedain_beliefs_desc: "За долгие годы, прошедшие после падения [Concept('northernkingdom', 'Северного королевства')|E], жители Тарбада утратили представление об истинном поклонении [Concept('eru', 'Эру')|E] и [Concept('valar', 'Валар')|E]. Наша обязанность - вернуть их к свету, пусть люди Тарбада вновь примут свет Валар!"
+ #decision_restore_dunedain_beliefs_tooltip: "Вернуть истинную веру"
+ #decision_restore_dunedain_beliefs_confirm: "Вернёмся к свету!"
+ #decision_restore_dunedain_beliefs_trigger: "Большая часть державы не исповедует [Concept('religion', 'религию')|E] [Concept('dunedain', 'дунэдайн')|E]"
 
  #decision_invade_saralain: "Уничтожить Саралайн"
  #decision_invade_saralain_desc: "Саралайн давно стал чумой для [Concept('eriador', 'Эриадора')|E]. С тех пор как они пересекли Гватло, они совершали набеги и грабежи по всему региону. Только Великая чума и [Concept('witchking', 'Король-чародей')|E] причинили Эриадору больше вреда. Пришло время загнать их обратно за реку и в пустоши, откуда они пришли!"
@@ -660,7 +663,13 @@
  decision_tharbad_foreign_aid_desc: "Тарбад не является значимой силой в [Concept('eriador', 'Эриадоре')|E], а тем более в мире. Мы - город-государство, которое постоянно слабеет на протяжении последней тысячи лет. Если мы хотим выжить в этом суровом мире, нам нужна помощь. К счастью, у нас есть несколько соседей, готовых оказать такую помощь."
  decision_tharbad_foreign_aid_tooltip: "Отправиться в иноземные дворы с просьбой о помощи"
  decision_tharbad_foreign_aid_confirm: "Собрать свиту..."
- tharbad_foreign_aid_effect: "Отправиться в иноземные дворы с просьбой о помощи"
+ #tharbad_foreign_aid_effect: "Отправиться в иноземные дворы с просьбой о помощи"
+ dunedain_help: "Попросить помощи у Следопытов"
+ dunedain_help_tooltip: "Попросить помощи у Следопытов"
+ dunedain_help_effect: "Отправить посла к Следопытам с просьбой о помощи, это займёт некоторое время"
+ gondor_help: "Попросить возвращения Гондора"
+ gondor_help_tooltip: "Попросить возвращения Гондора"
+ gondor_help_effect: "Отправить посла в Гондор с просьбой вернуться в [Concept('tharbad', 'Тарбад')|E], это займёт некоторое время"
 
  decision_tharbad_survey_ruins: "Исследовать руины"
  decision_tharbad_survey_ruins_desc: "Тарбад - древний город. Основан [Concept('numenoreans', 'нуменорцами')|E] во [Concept('secondage', 'Вторую эпоху')|E] с более поздними [Concept('arnorian', 'арнорским')|E] и [Concept('gondorian', 'гондорским')|E] периодами. Современное поселение использует едва ли десятую часть древнего города. Эти руины могут стать еще одним средством нашего обновления. Все, что нам нужно сделать, чтобы воспользоваться ими, - это узнать, что у нас есть."
@@ -2099,11 +2108,11 @@
  invite_dwarves_target_mount_gram_desc: "$invite_dwarves_target_mount_gram$"
  invite_dwarves_target_mount_gram_tt: "Предложить создать колонию в южных горах [Concept('angmar', 'Ангмара')|E]"
  invite_dwarves_target_greydelve: "Западные Серые горы"
- invite_dwarves_target_greydelve_tooltip: "[Concept('longbeards', 'Длиннобороды')|E] жили в [Concept('greymountains', 'Серых горах')|E] на протяжении многих лет, но были изгнаны драконьим пламенем. Пришло ли наконец время им вернуться?"
+ invite_dwarves_target_greydelve_tooltip: "[Concept('longbeards', 'Длиннобороды')|E] жили в [Concept('greymountains', 'Серых горах')|E] на протяжении многих лет, но были изгнаны [Concept('dragon', 'драконьим')|E] пламенем. Пришло ли наконец время им вернуться?"
  invite_dwarves_target_greydelve_desc: "$invite_dwarves_target_greydelve$
  invite_dwarves_target_greydelve_tt: "Предложить создать колонию на западе [Concept('greymountains', 'Серых гор')|E]"
  invite_dwarves_target_grey_mountains: "Восточные Серые горы"
- invite_dwarves_target_grey_mountains_tooltip: "[Concept('longbeards', 'Длиннобороды')|E] жили в [Concept('greymountains', 'Серых горах')|E] на протяжении многих лет, но были изгнаны драконьим пламенем. Пришло ли наконец время им вернуться?"
+ invite_dwarves_target_grey_mountains_tooltip: "[Concept('longbeards', 'Длиннобороды')|E] жили в [Concept('greymountains', 'Серых горах')|E] на протяжении многих лет, но были изгнаны [Concept('dragon', 'драконьим')|E] пламенем. Пришло ли наконец время им вернуться?"
  invite_dwarves_target_grey_mountains_desc: "$invite_dwarves_target_grey_mountains$"
  invite_dwarves_target_grey_mountains_tt: "Предложить создать колонию на востоке [Concept('greymountains', 'Серых гор')|E]"
  invite_dwarves_target_erebor: "Одинокая гора"
@@ -2287,6 +2296,11 @@
  decision_desecrate_aradhrynd_confirm: "Эти пещеры станут средоточием ужаса."
  decision_desecrate_aradhrynd_tooltip: "Осквернить Арадринд"
  decision_desecrate_aradhrynd.every_eldar_ruler_loses_piety: "Каждый [ruler|El]-[eldar|El] теряет [piety|El]"
+
+ decision_desecrate_imladris: "Осквернить Имладрис"
+ decision_desecrate_imladris_desc: "Имладрис, «Ривенделл», долгое время был убежищем [Concept('elves', 'эльфов')|E]. Он больше не будет укрывать их. Разрушим стены дома Эльронда и превратим его в памятник их безрассудству."
+ decision_desecrate_imladris_confirm: "Задушить долину дымом."
+ decision_desecrate_imladris_tooltip: "Осквернить Имладрис"
 
  decision_shackle_the_anduin_vale: "Сковать долину Андуина"
  decision_shackle_the_anduin_vale_desc: "Под предводительством Беорна и его потомков люди [Concept( 'anduinvale', 'Долины Андуина' )|E] стали надменными и гордыми. Но несколько поколений назад они тоже были простыми лесовиками, жившими в нашей тени. И теперь они снова станут ими."
