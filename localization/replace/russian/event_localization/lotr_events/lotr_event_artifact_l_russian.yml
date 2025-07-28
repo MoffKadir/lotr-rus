@@ -53,11 +53,6 @@
  lotr_artifact.0040.b.narsil_kept:0 "Я бы [Select_CString(ROOT.Char.IsFemale, 'предпочла', 'предпочёл' )] оставить осколки при себе, спасибо."
  lotr_artifact.0040.b:0 "Я глубоко [Select_CString(ROOT.Char.IsFemale, 'благодарна', 'благодарен' )]"
 
- ### Elrond offers to reforge Anduril
-
- lotr_artifact.0042.t:0 "Клинок, что был сломан"
- lotr_artifact.0042.desc:0 "К моему двору прибывают посланники, которых [Select_CString(elrond_substitute.IsFemale, 'прислала', 'прислал' )] [elrond_substitute.GetTitledFirstName]. [messenger.GetTitledFirstName] принимает от меня тёплое приветствие. [messenger.GetFirstNameNoTooltip] улыбается:\n\n«[ROOT.Char.GetFirstNameNoTooltip], прими поздравления с восстановлением королевства Элендиля. В эти тёмные времена, когда Саурон вернулся в Тёмную башню, мы должны объединиться или падём. [Select_CString(elrond_substitute.IsFemale, 'Моя', 'Мой' )] [messenger.Custom2('RelationToMe', SCOPE.sC('elrond_substitute'))] предлагает тебе дар: если ты передашь [elrond_substitute.GetHerHim] осколки [Concept('narsil', 'Нарсиля')|E], [elrond_substitute.GetSheHe] проследит, чтобы меч был перекован»."
-
  ### Aragorn receives Anduril
 
  lotr_artifact.0041.t:0 "Перекованный клинок"
@@ -65,6 +60,11 @@
  lotr_artifact.0041.desc.default_outro:0 "\n\nЯ сердечно благодарю братьев из дома Полуэльфа и приглашаю их к королевскому столу."
  lotr_artifact.0041.desc.alt_outro:0 "\n\nЯ сердечно благодарю [messenger.GetHerHis] и приглашаю [messenger.GetHerHis] к королевскому столу."
  lotr_artifact.0041.a:0 "Клинок больше не сломан."
+
+ ### Elrond offers to reforge Anduril
+
+ lotr_artifact.0042.t:0 "Клинок, что был сломан"
+ lotr_artifact.0042.desc:0 "К моему двору прибывают посланники, которых [Select_CString(elrond_substitute.IsFemale, 'прислала', 'прислал' )] [elrond_substitute.GetTitledFirstName]. [messenger.GetTitledFirstName] принимает от меня тёплое приветствие. [messenger.GetFirstNameNoTooltip] улыбается:\n\n«[ROOT.Char.GetFirstNameNoTooltip], прими поздравления с восстановлением королевства Элендиля. В эти тёмные времена, когда Саурон вернулся в Тёмную башню, мы должны объединиться или падём. [Select_CString(elrond_substitute.IsFemale, 'Моя', 'Мой' )] [messenger.Custom2('RelationToMe', SCOPE.sC('elrond_substitute'))] предлагает тебе дар: если ты передашь [elrond_substitute.GetHerHim] осколки [Concept('narsil', 'Нарсиля')|E], [elrond_substitute.GetSheHe] проследит, чтобы меч был перекован»."
 
  ### Gold sickness
 
