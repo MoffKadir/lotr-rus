@@ -36,6 +36,8 @@
  activity_feast_province_desc_wonder_belegost_rebuilt:1 "#P +++ $building_type_wonder_belegost_rebuilt$#!\n"
  activity_feast_province_desc_wonder_nogrod_rebuilt:1 "#P +++ $building_type_wonder_nogrod_rebuilt$#!\n"
  activity_feast_province_desc_wonder_ayahopa_01:1 "#P +++ $building_type_wonder_ayahopa_01$#!\n"
+ activity_feast_province_desc_wonder_tul_isra:1 "#P +++ $building_type_wonder_tul_isra_01$#!\n"
+ activity_feast_province_desc_wonder_goblin_town:1 "#P +++ $building_type_wonder_goblin_town_01$#!\n"
 
 
 
@@ -58,6 +60,8 @@
  feast_cost_discount_wonder_belegost_rebuilt:1 "В этом месте есть $building_type_wonder_belegost_rebuilt$#!\n"
  feast_cost_discount_wonder_nogrod_rebuilt:1 "В этом месте есть $building_type_wonder_nogrod_rebuilt$#!\n"
  feast_cost_discount_wonder_ayahopa_01:1 "В этом месте есть $building_type_wonder_ayahopa_01$#!\n"
+ feast_cost_discount_wonder_tul_isra:1 "В этом месте есть $building_type_wonder_tul_isra_01$#!\n"
+ feast_cost_discount_wonder_goblin_town:1 "В этом месте есть $building_type_wonder_goblin_town_01$#!\n"
 
  wedding_type_murder_elf_tt:1 "Вы или один из новобрачных - [elf|El] и не можете проводить такое занятие, как кровавая [GetActivityType('activity_wedding').GetName|l]."
 
@@ -149,8 +153,8 @@
  activity_explore_history.is_location_valid.wrong_holder_faith: "#N Вы не можете обращаться к архивам правителя, мировоззрение которого противоположно вашему."
  activity_explore_history.is_location_valid.not_in_list: "#N Эта провинция находится за пределами [Concept('realm', 'державы')|E] вашего [Concept('top_liege_possessive', 'верховного сюзерена')|E], не принадлежит ни одному из ваших грамотных [Concept('contact_list_contacts', 'покровителей')|E] и не содержит значительных записей."
 
- activity_explore_history_province_desc_wonder_angrenost_upgraded: "#P +++ $building_wonder_angrenost_02_storehouses$#!\n"
- activity_explore_history_province_desc_wonder_minas_anor_upgraded: "#P +++ $building_wonder_minas_anor_02$#!\n"
+ activity_explore_history_province_desc_wonder_angrenost_upgraded: "#P +++ $building_wonder_isengard_04$#!\n"
+ activity_explore_history_province_desc_wonder_minas_anor_upgraded: "#P +++ $building_wonder_minas_anor_06$#!\n"
  activity_explore_history_province_desc_wonder_minas_ithil: "#P +++ $building_type_wonder_minas_ithil_01$#!\n"
  activity_explore_history_province_desc_wonder_osgiliath: "#P +++ $building_wonder_osgiliath_05$#!\n"
  activity_explore_history_province_desc_wonder_palace_of_ithilien: "#P +++ $building_type_wonder_palace_of_ithilien$#!\n"
@@ -177,7 +181,6 @@
  activity_explore_history_province_desc_wonder_harlond:1 "#P +++ $building_wonder_harlond_01$#!\n"
  activity_explore_history_province_desc_wonder_mirdairond:1 "#P +++ $building_wonder_mirdairond$#!\n"
  activity_explore_history_province_desc_wonder_uruloni:1 "#P +++ $building_wonder_uruloni$#!\n"
- activity_explore_history_province_desc_wonder_hall_of_tiralaen:1 "#P +++ $building_wonder_hall_of_tiralaen$#!\n"
 
  activity_explore_history_province_desc_wonder_angrenost: "#P++ $building_wonder_angrenost_01$#!\n"
  activity_explore_history_province_desc_wonder_minas_anor: "#P++ $building_wonder_minas_anor_01$#!\n"
@@ -204,8 +207,8 @@
  activity_explore_history_province_desc_southern_histories: "#P В этом месте хранятся записи харадримских историков#!"
 
  explore_history_base_cost: "Базовая стоимость"
- explore_history_cost_discount_wonder_angrenost_upgraded: "В этом месте есть $building_wonder_angrenost_02_storehouses$#!"
- explore_history_cost_discount_wonder_minas_anor_upgraded: "В этом месте есть $building_wonder_minas_anor_02$#!"
+ explore_history_cost_discount_wonder_angrenost_upgraded: "В этом месте есть $building_wonder_isengard_04$#!"
+ explore_history_cost_discount_wonder_minas_anor_upgraded: "В этом месте есть $building_wonder_minas_anor_06$#!"
  explore_history_cost_discount_wonder_minas_ithil: "В этом месте есть $building_type_wonder_minas_ithil_01$#!"
  explore_history_cost_discount_wonder_osgiliath: "В этом месте есть $building_wonder_osgiliath_05$#!"
  explore_history_cost_discount_wonder_palace_of_ithilien: "В этом месте есть $building_type_wonder_palace_of_ithilien$#!"
@@ -232,9 +235,8 @@
  explore_history_cost_discount_wonder_harlond: "В этом месте есть $building_wonder_harlond_01$#!"
  explore_history_cost_discount_wonder_mirdairond: "В этом месте есть $building_wonder_mirdairond$#!"
  explore_history_cost_discount_wonder_uruloni: "В этом месте есть $building_wonder_uruloni$#!"
- explore_history_cost_discount_wonder_hall_of_tiralaen: "В этом месте есть $building_wonder_hall_of_tiralaen$#!"
 
- explore_history_cost_discount_wonder_angrenost: "В этом месте есть $building_wonder_angrenost_01$#!"
+ explore_history_cost_discount_wonder_angrenost: "В этом месте есть $building_wonder_isengard_01$#!"
  explore_history_cost_discount_wonder_minas_anor: "В этом месте есть $building_wonder_minas_anor_01$#!"
  explore_history_cost_discount_wonder_port_of_pelargir: "В этом месте есть $building_wonder_port_of_pelargir_01$#!"
  explore_history_cost_discount_wonder_dol_amroth: "В этом месте есть $building_wonder_dol_amroth_01$#!"
@@ -755,6 +757,7 @@
  activity_sailing_raid_province_desc: "с намерением отправиться в морское путешествие\n"
  activity_sailing_meneltarma_province_desc: "с намерением найти легендарную Менельтарму\n"
  activity_sailing_conclusion_desc: "Морское путешествие возвращает ваш в порт"
+ activity_sailing_predicted_cost: "Стоимость морского путешествия зависит от выбранных [Concept('activity_options', 'вариантов занятия')|E]"
  sailing_type_explore: "Исследовательское путешествие"
  sailing_type_explore_desc: "Отправимся исследовать обширные берега, заливы и реки [Concept('middleearth', 'Средиземья')|E]!\n\n$EFFECT_LIST_BULLET$Участники могут получить или улучшить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]» и осмотреть чудеса мира!\n\nВы можете выбрать исследование #high побережий#! или #high рек#!."
  sailing_type_raid: "Морская авантюра"

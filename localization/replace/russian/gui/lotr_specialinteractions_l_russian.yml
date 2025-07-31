@@ -6,3 +6,7 @@
  grant_only_one_settlement_at_a_time:0 "#N #italic Одновременно может быть даровано только одно [Concept('settlement_holding', 'поселение')|E]#!#!\n"
  recipient_at_settlement_limit:0 "#N #italic [recipient.GetShortUINameNotMe] [Select_CString(recipient.IsFemale, 'достигла', 'достиг' )] предела [Concept('settlement_holding', 'поселений')|E]#!#!\n"
  recipient_needs_to_border_settlement_county:0 "#N #italic [recipient.GetShortUINameNotMe] [Select_CString(recipient.IsFemale, 'должна', 'должен' )] граничить с графством поселения, которое [Select_CString(recipient.IsFemale, 'она', 'он' )] получит#!#!\n"
+ return_rightful_titles_interaction: "Вернуть законный титул"
+ return_rightful_titles_interaction_desc: "Вернуть [Concept('title', 'титул')|E], ранее принадлежавший персонажу [recipient.GetShortUINameNoTooltip], его законному владельцу."
+ RETURN_RIGHTFUL_TITLES_NEEDS_CLAIM: "[recipient.GetShortUINameNoTooltip] [Select_CString(recipient.IsFemale, 'должна', 'должен' )] иметь [Concept('claim', 'претензию')|E] на этот титул"
+ RETURN_RIGHTFUL_TITLES_NEEDS_CLAIM_ON_TITLE: "[recipient.GetShortUINameNoTooltip] [Select_CString(recipient.IsFemale, 'должна', 'должен' )] иметь [Concept('claim', 'претензию')|E] на титул, находящийся под вашим контролем"

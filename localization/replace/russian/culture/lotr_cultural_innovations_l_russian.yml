@@ -95,7 +95,7 @@
  guard_of_the_citadel: "Стражи Цитадели"
  guard_of_the_citadel_flavor: "Элитная пехота Гондора, Стражи Цитадели защищают верхний ярус Минас Тирита, и являются почётной гвардией правителей Гондора."
 
- #culture_parameter_unlock_maa_rangers_of_ithilien: "Can recruit [GetMaA('rangers_of_ithilien').GetName] as [men_at_arms|E]\n$EFFECT_LIST_BULLET$Characters of Gondorian cultures can recruit [GetMaA('rangers_of_ithilien').GetName] as [men_at_arms|E] in Ithilien holdings."
+ #culture_parameter_unlock_maa_rangers_of_ithilien: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('rangers_of_ithilien').GetName]\n$EFFECT_LIST_BULLET$Characters of Gondorian cultures can recruit [GetMaA('rangers_of_ithilien').GetName] in Ithilien holdings."
  rangers_of_ithilien: "Следопыты Итилиэна"
  rangers_of_ithilien_flavor: "Следопыты Итилиэна предпочитают скрытность. Облачившись в зелёное и бурое, они ведут партизанскую войну."
 
@@ -149,10 +149,10 @@
 
  talon_knights: "Рыцари Когтя"
  talon_knights_flavor: "Поклявшись в боевой доблести и добродетели, эти Рыцари Серебряного Лебедя являют собой элиту Дор-эн-Эрниля, истинное воплощение наследия нуменорцев."
- #culture_parameter_unlock_maa_amrothian_archers: "Can recruit [GetMaA('amrothian_archers').GetName] as [men_at_arms|E]"
+ #culture_parameter_unlock_maa_amrothian_archers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('amrothian_archers').GetName]"
  #amrothian_archers: "Амротские лучники"
  #amrothian_archers_flavor: "Лучники Дол Амрота выполняют роль обычных стрелков, посылая залп за залпом смертоносных стрел в ряды своих врагов."
- #culture_parameter_unlock_maa_amrothian_pikemen: "Can recruit [GetMaA('amrothian_pikemen').GetName] as [men_at_arms|E]"
+ #culture_parameter_unlock_maa_amrothian_pikemen: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('amrothian_pikemen').GetName]"
  #amrothian_pikemen: "Амротские копейщики"
  #amrothian_pikemen_flavor: "Дисциплинированные во впечатляющем глубоком строю, способном противостоять даже самым стойким кавалерийским атакам, эти копейщики подходят для защиты от различных конных угроз своему княжеству."
  nimrodel_rangers: "Следопыты Нимродель"
@@ -237,12 +237,12 @@
  innovation_protectors_gap_of_rohan_desc: "Всадники Рохана поклялись защищать Врата Рохана из своей цитадели в Хельмовой Пади."
  culture_in_deep_desc: "[culture|E] не распространена в [Concept( 'county', 'графствах' )|E] с [Concept( 'terrain', 'типом местности' )|E] горы или пещеры"
  deep_percentage_desc: "Менее #V 10 %#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] располагается в горах или пещерах"
- culture_parameter_unlock_maa_helmingas_warriors: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('helmingas_warriors').GetName]"
+ culture_parameter_unlock_maa_eorlingas_warriors: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('eorlingas_warriors').GetName]"
  culture_parameter_unlock_maa_westfolders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('westfolders').GetName]"
- helmingas_warriors: "Хельмовы воины"
- helmingas_warriors_flavor: "Традиционный гарнизон Хельмовой Пади."
+ eorlingas_warriors: "Воины-эорлинги"
+ eorlingas_warriors_flavor: "Свита короля Рохана, лучшие наездники в мире на великолепных скакунах. Одного вида такого войска, несущегося по полю боя, достаточно, чтобы вселить страх в самые храбрые сердца."
  westfolders: "Вестфолдцы"
- westfolders_flavor: "Гвардейские части из Вестфолда, предпочитающие седлу твёрдую почву."
+ westfolders_flavor: "Свита солдат из Вестфолда, которые предпочитают твёрдую землю седлу и служат стойкой пехотой Рохана."
 
 
  culture_parameter_unlock_maa_riders_of_rohan: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('riders_of_rohan').GetName]"
@@ -583,6 +583,8 @@
  ### Khy ###
  innovation_khyan_warfare: "Кхайская тактика"
  innovation_khyan_warfare_desc: "Обладая высокой мобильностью, кхайская армия опирается на прочное ядро тяжёлой кавалерии, поддерживаемое лёгкой пехотой."
+ #innovation_ventilation: "Вентиляция"
+ #innovation_ventilation_desc: "Ветроловы использовались для охлаждения засушливых регионов Кхая на протяжении тысячелетий и помогали местным жителям бороться с болезнями. Польза для здоровья от прохладного воздуха в условиях сухой и жаркой окружающей среды огромна."
 
  innovation_anarikean_warfare: "Отряды тизъяршти"
  innovation_anarikean_warfare_desc: "Умелые отряды тизъяршти Анарикэ и балхьядов славятся своими подвигами и доблестью."
@@ -697,12 +699,34 @@
  thrall_master_flavor: "VECTOR PLACEHOLDER"
  culture_parameter_unlock_maa_thrall_master: "Правителю Ангмара доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('thrall_master').GetName]"
 
+ ### Donan Sederi Usakani Adena Drel Pel Chialla Mag #
+ innovation_donan_warfare: "Донанское ополчение"
+ innovation_donan_warfare_desc: "Хотя у донан мало великих воинов, все они обучены защищать себя."
+ innovation_sederi_warfare: "Седерийская охота"
+ innovation_sederi_warfare_desc: "Легко бронированные и слабо организованные, седери полагаются на скорость и хитрость, чтобы перехитрить своих врагов."
+ innovation_usakani_warfare: "Юсаканская тактика"
+ innovation_usakani_warfare_desc: "Отважные жители Юсакана издавна прибегали к партизанской тактике, чтобы сокрушить своих угнетателей в глубоких джунглях."
+ innovation_adena_warfare: "Военное дело адена"
+ innovation_adena_warfare_desc: "Тактика адена особенно подходит для болот и берегов их родины."
+ innovation_drel_warfare: "Защитники Дрэла"
+ innovation_drel_warfare_desc: "Дрэлцы - мастера прибрежной войны, патрулирующие протяжённые берега своей родины."
+ innovation_pel_warfare: "Легионы Пэла"
+ innovation_pel_warfare_desc: "Черпая мудрость из многих культур, пэлцы в совершенстве овладели элитной тактикой."
+ innovation_chaialla_warfare: "Приёмы хайалла"
+ innovation_chaialla_warfare_desc: "Хайалла превосходно умеют наносить удары из тени, нападая невидимыми, снова и снова."
+ innovation_mag_warfare: "Магрийские манёвры"
+ innovation_mag_warfare_desc: "Военная доктрина Мага и Тумага делает упор на агрессивные, мощные нападения."
+ innovation_logath_warfare: "Логатские всадники"
+ innovation_logath_warfare_desc: "Выросшие в сёдлах с юных лет, логаты преуспели в верховой езде и стрельбе из лука."
+ innovation_vulmaw_warfare: "Вулмавские мореходы"
+ innovation_vulmaw_warfare_desc: "Вулмавский флот, состоящий из представителей сотни островов, представляет собой эклектичную смесь культур и стилей жизни. Их стратегии, как на суше, так и на море, столь же разнообразны."
+
  ### Wastelands
  tradition_wastelands_name: "Дикие земли"
  tradition_wastelands_desc: "Неиспользуемые земли, которые обратились в руины, были заброшены или заросли. Населения здесь почти нет, за исключением разве что нескольких пастухов, фермеров и рыбаков."
 
  laamp_settler_maa: "Поселенцы"
- laamp_settler_maa_flavor: "Settlers DESCRIPTION"
+ laamp_settler_maa_flavor: "Поселенцы - это те, кто готов покинуть свою родину и отправиться покорять пустоши Средиземья. Без этих отважных душ цивилизация неизбежно пришла бы в упадок, и новые земли не были бы освоены.\n\nЭти путешественники и строители не подготовлены к сражениям и нуждаются в защите со стороны солдат или воинов.\n\n#n Количество поселенцев можно пополнить и увеличить, путешествуя (вместе с вашим лагерем) по поселениям.#!"
 
  ####################################
  ### Custom Loc for unlocking MaA ###
@@ -721,6 +745,24 @@
  ### Angmarrin ###
  unlock_angmarim_pikemen: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('angmarim_pikemen').GetName]"
  unlock_angmarim_archers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('angmarim_archers').GetName]"
+ ### Donan Sederi Usakani Adena Drel Pel Chialla Mag #
+ unlock_donan_slingers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('donan_slingers').GetName]"
+ unlock_impali_tribesmen: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('impali_tribesmen').GetName]"
+ unlock_zeba_outriders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('zeba_outriders').GetName]"
+ unlock_usakani_ambushers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('usakani_ambushers').GetName]"
+ unlock_marshstriders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('marshstriders').GetName]"
+ unlock_matriarchs_guard: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('matriarchs_guard').GetName]"
+ unlock_tiderunners: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('tiderunners').GetName]"
+ unlock_shorewardens: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('shorewardens').GetName]"
+ unlock_blacksteel_phalanx: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('blacksteel_phalanx').GetName]"
+ unlock_marksmen_of_the_matron: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('marksmen_of_the_matron').GetName]"
+ unlock_hill_stalkers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('hill_stalkers').GetName]"
+ unlock_silent_stingers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('silent_stingers').GetName]"
+ unlock_ivory_sentinels: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('ivory_sentinels').GetName]"
+ unlock_zebaback_slavers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('zebaback_slavers').GetName]"
+ unlock_logath_horsearchers: "Доступны [men_at_arms|E] - [GetMaA('logath_horsearchers').GetName]"
+ unlock_waw_pirates: "Доступны [men_at_arms|E] - [GetMaA('waw_pirates').GetName]"
+ unlock_vulmaw_venturers: "Доступны [men_at_arms|E] - [GetMaA('vulmaw_venturers').GetName]"
  ### Dunedain ###
  unlock_numenorean_archers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('numenorean_archers').GetName]"
  unlock_numenorean_knights: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('numenorean_knights').GetName]"
@@ -879,3 +921,5 @@
  unlock_kinnlai_skirmishers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('kinnlai_skirmishers').GetName]"
  unlock_nuinevari: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nuinevari').GetName]"
  unlock_neldoreth_borderwardens: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('neldoreth_borderwardens').GetName]"
+
+ unlock_windcatchers: "Можно построить [GetBuilding('windcatcher_01').GetNameAsTooltip]"
