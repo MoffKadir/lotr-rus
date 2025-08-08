@@ -119,9 +119,10 @@
 
  activity_explore_history: "Изучение хроник"
  activity_explore_history_desc: "Хороший правитель использует уроки прошлого, чтобы направлять свои действия. Пора браться за книги!"
- activity_explore_history_host_desc: "$BULLET_WITH_TAB$Участники могут получить [Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] @archivist_trait_icon! «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$Возможное улучшение [Concept( 'opinion', 'мнения' )|E] [GetVassalStance( 'zealot' ).GetTextIcon]фанатичных [vassal|El]ов\n\n$BULLET_WITH_TAB$Вы можете получить [artifacts|El]-книги\n$BULLET_WITH_TAB$Вы можете получить уникальные [Concept( 'legend_seeds', 'зарождающиеся легенды' )|E]\n"
- activity_explore_history_selection_tooltip: "Погрузитесь в архивы, изучите или перепишите историю\n\nОжидаемые награды:\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]"
+ activity_explore_history_host_desc: "$BULLET_WITH_TAB$Можно получить очки [Concept('skill', 'навыков')|E]\n$BULLET_WITH_TAB$Можно получить [Concept('lifestyle_experience', 'опыт образа жизни')|E]\n$BULLET_WITH_TAB$Возможное улучшение [Concept( 'opinion', 'мнения' )|E] [GetVassalStance( 'zealot' ).GetTextIcon]фанатичных [vassal|El]ов\n\n$BULLET_WITH_TAB$Вы можете получить [artifacts|El]-книги\n$BULLET_WITH_TAB$Вы можете получить уникальные [Concept( 'legend_seeds', 'зарождающиеся легенды' )|E]\n$BULLET_WITH_TAB$Участники могут получить [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @archivist_trait_icon! «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n"
+ activity_explore_history_selection_tooltip: "Погрузитесь в архивы, изучите или перепишите историю\n\nОжидаемые награды:\n$BULLET_WITH_TAB$Очки [Concept('skill', 'навыков')|E] [diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i]\n$BULLET_WITH_TAB$[Concept('lifestyle_experience', 'Опыт образа жизни')|E] [diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i]\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]"
  activity_explore_history_guest_help_text: "У [Concept( 'activity_guests', 'гостей' )|E] будет возможность пообщаться и улучшить свои качества архивариуса.\n[GetVassalStance( 'zealot' ).GetTextIcon]Фанатичные [vassals|El] оценят чтение и улучшат [opinion|El].\n"
+ activity_explore_history_predicted_cost: "Стоимость #TOOLTIP:ACTIVITY_TYPE,activity_explore_history #L изучения хроник#!#! зависит от вашего [Concept('income', 'дохода')|E] и выбранных [Concept('activity_options', 'вариантов занятия')|E]." #[GetActivityType('activity_explore_history').GetName]
 
  explore_history_type_standard: "Исследование истории"
  explore_history_type_standard_desc: "$EFFECT_LIST_BULLET$ Вы можете улучшить свои личные [skills|El] и извлечь уроки из прошлого.\n\n#weak В пыльных фолиантах и ​​старинных рукописях скрыта древняя мудрость. Уроки прошлого могут научить нас, как строить лучшее будущее, чтобы не допустить повторения истории.#"
@@ -131,7 +132,7 @@
  activity_explore_history_host_desc_trait_xp: "$BULLET_WITH_TAB$Участники могут получить [Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] @archivist_trait_icon! «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n"
  activity_explore_history_host_desc_trait: "$BULLET_WITH_TAB$Участники могут получить [trait|El] @archivist_trait_icon! «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n"
  activity_explore_history_host_desc_chronicler: "\n@warning_icon! #negative_value У вас отсутствует [GetCourtPositionType('chronicler_court_position').GetName()]"
- activity_explore_history_host_desc_antiquarian: "\n@warning_icon! #negative_value У вас отсутствует [GetCourtPositionType('antiuarian_court_position').GetName()]"
+ activity_explore_history_host_desc_antiquarian: "\n@warning_icon! #negative_value У вас отсутствует [GetCourtPositionType('antiquarian_court_position').GetName()]"
 
  explore_history_scholars: "Учёные"
  explore_history_no_scholars: "Нет учёных"
@@ -152,6 +153,7 @@
  activity_explore_history_province_desc: "Вы проводите историческое изыскание в графстве [ROOT.Province.GetName]\nНа ваши шансы на успех влияют различные факторы\n"
  activity_explore_history.is_location_valid.wrong_holder_faith: "#N Вы не можете обращаться к архивам правителя, мировоззрение которого противоположно вашему."
  activity_explore_history.is_location_valid.not_in_list: "#N Эта провинция находится за пределами [Concept('realm', 'державы')|E] вашего [Concept('top_liege_possessive', 'верховного сюзерена')|E], не принадлежит ни одному из ваших грамотных [Concept('contact_list_contacts', 'покровителей')|E] и не содержит значительных записей."
+ TRAVEL_NAME_FOR_activity_explore_history: "Путешествие [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] на $activity_explore_history$"
 
  activity_explore_history_province_desc_wonder_angrenost_upgraded: "#P +++ $building_wonder_isengard_04$#!\n"
  activity_explore_history_province_desc_wonder_minas_anor_upgraded: "#P +++ $building_wonder_minas_anor_06$#!\n"
@@ -623,7 +625,7 @@
  lotr_wine_tasting_countryside_province_desc_elven: "\n#P ++ У вас нет крупных [Concept('holdings', 'владений')|E] в этой локации.#!\n\n#italic Это приведёт к тому, что вы потеряете больше [stress_loss_i|E] [Concept('stress', 'стресса')|E] в сравнении с другими потенциальными местами.#!"
  activity_lotr_visit_vineyard_destination_selection: "$activity_lotr_visit_vineyard_countryside_province_desc$"
  activity_lotr_visit_vineyard_guest_help_text: "$activity_lotr_visit_vineyard$"
- activity_lotr_visit_vineyard_predicted_cost: "Стоимость посещения виноградника зависит от выбранных [Concept( 'activity_options', 'вариантов занятия' )|E]."
+ activity_lotr_visit_vineyard_predicted_cost: "Стоимость #TOOLTIP:ACTIVITY_TYPE,activity_lotr_visit_vineyard #L посещения виноградника#!#! зависит от выбранных [Concept( 'activity_options', 'вариантов занятия' )|E]." #[GetActivityType('activity_lotr_visit_vineyard').GetName]
  activity_lotr_visit_vineyard_conclusion_desc: "[GetActivityType( 'activity_lotr_visit_vineyard' ).GetName] завершилось. Теперь перерыв окончен, и мы возвращаемся к суровой жизни!"
  lotr_visit_vineyard_type: "Тип посещения"
  lotr_visit_vineyard_type_leisure: "Отдых"
@@ -673,7 +675,7 @@
  activity_lotr_wine_tasting_province_desc: "\n#P ++ Вы владеете виноградником в сельской местности, где нет крупных [Concept('holdings', 'владений')|E].#!\n\n#italic Это приведёт к тому, что вы потеряете больше [stress_loss_i|E] [Concept('stress', 'стресса')|E] по сравнению с другими потенциальными местами.#!"
  activity_lotr_wine_tasting_destination_selection: "$activity_lotr_wine_tasting_province_desc$"
  activity_lotr_wine_tasting_guest_help_text: "$activity_lotr_wine_tasting$"
- activity_lotr_wine_tasting_predicted_cost: "Стоимость проведения дегустации вин зависит от выбранных [Concept( 'activity_options', 'вариантов занятия' )|E]."
+ activity_lotr_wine_tasting_predicted_cost: "Стоимость #TOOLTIP:ACTIVITY_TYPE,activity_lotr_wine_tasting #L проведения дегустации вин#!#! зависит от выбранных [Concept( 'activity_options', 'вариантов занятия' )|E]." #[GetActivityType('activity_lotr_wine_tasting').GetName]
  activity_lotr_wine_tasting_conclusion_desc: "[GetActivityType( 'activity_lotr_wine_tasting' ).GetName] подошла к концу. Все участники получили огромное удовольствие!"
  lotr_wine_tasting_type: "Тип отдыха"
  lotr_wine_tasting_type_party: "Непрерывная вечеринка"
@@ -757,7 +759,7 @@
  activity_sailing_raid_province_desc: "с намерением отправиться в морское путешествие\n"
  activity_sailing_meneltarma_province_desc: "с намерением найти легендарную Менельтарму\n"
  activity_sailing_conclusion_desc: "Морское путешествие возвращает ваш в порт"
- activity_sailing_predicted_cost: "Стоимость морского путешествия зависит от выбранных [Concept('activity_options', 'вариантов занятия')|E]"
+ activity_sailing_predicted_cost: "Стоимость #TOOLTIP:ACTIVITY_TYPE,activity_sailing #L морского путешествия#!#! зависит от выбранных [Concept('activity_options', 'вариантов занятия')|E]" #[GetActivityType('activity_sailing').GetName]
  sailing_type_explore: "Исследовательское путешествие"
  sailing_type_explore_desc: "Отправимся исследовать обширные берега, заливы и реки [Concept('middleearth', 'Средиземья')|E]!\n\n$EFFECT_LIST_BULLET$Участники могут получить или улучшить [Concept('trait', 'свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]» и осмотреть чудеса мира!\n\nВы можете выбрать исследование #high побережий#! или #high рек#!."
  sailing_type_raid: "Морская авантюра"
@@ -842,7 +844,7 @@
  activity_lotr_horse_race_province_desc: ""
  activity_lotr_horse_race_destination_selection: "$activity_lotr_horse_race_province_desc$"
  activity_lotr_horse_race_guest_help_text: "$activity_lotr_horse_race$"
- activity_lotr_horse_race_predicted_cost: "Стоимость посещения зависит от вашего [Concept('income', 'дохода')|E] и выбранных вами [Concept('activity_options', 'вариантов занятия')|E]."
+ activity_lotr_horse_race_predicted_cost: "Стоимость #TOOLTIP:ACTIVITY_TYPE,activity_lotr_horse_race #L скачек#!#! зависит от вашего [Concept('income', 'дохода')|E] и выбранных вами [Concept('activity_options', 'вариантов занятия')|E]." #[GetActivityType('activity_lotr_horse_race').GetName]
  activity_lotr_horse_race_conclusion_desc: "[GetActivityType( 'activity_lotr_horse_race' ).GetName] завершились. Какое захватывающее, потрясающее зрелище!"
  lotr_horse_race_religious: "Религиозные"
  lotr_horse_race_religious_desc: "$EFFECT_LIST_BULLET$ Скачки будут проводиться в честь местного религиозного деятеля или святого.\n$EFFECT_LIST_BULLET$ #P +25%#! к #V общему#! количеству [piety_i][Concept('piety', 'благочестия')|E] в сравнении с другими вариантами\n$EFFECT_LIST_BULLET$ [county|E], в котором проводятся скачки, с большей вероятностью получит [county_modifier|El], повышающий [gold_i|E] [Concept('taxes', 'сбор налогов')|E]\n\n#weak Вознесем множество молитв, чтобы устроить захватывающее соревнование.#!"
