@@ -295,47 +295,47 @@
  #Options
  
  ancestor_veneration_phase_reading: "Почтение предков"
- ancestor_veneration_phase_reading_desc: "Study the stories of ancestors, both of great renown and ill repute"
+ ancestor_veneration_phase_reading_desc: "Изучить истории предков, как известных, так и пользующихся дурной репутацией."
 
  activity_ancestor_veneration: "Почтение предков"
  activity_ancestor_veneration_desc: "Среди [Concept('dwarves', 'гномов')|E] предков не просто помнят. Их почитают, их деяния высечены в камне. Их триумфы, их неудачи и длинная тень их наследия ложатся на ваши мысли. В воспоминаниях есть мудрость и сила, которую можно почерпнуть из прошлого."
- activity_ancestor_veneration_host_desc: "$BULLET_WITH_TAB$May gain [lifestyle_experience|E]\n$BULLET_WITH_TAB$May gain [GetVassalStance( 'zealot' ).GetTextIcon][GetVassalStance( 'zealot' ).GetName] [vassal|E] [opinion|E]\n$BULLET_WITH_TAB$Participants may gain @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )] [trait_level_track_xp|E]\n"
- activity_ancestor_veneration_selection_tooltip: "Venerate the ancestors and study the [dwarves|E] of old\n\nAnticipated Rewards:\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] [lifestyle_experience|E]\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]"
- activity_ancestor_veneration_guest_help_text: "[activity_guests|E] will have opportunities to socialize, and improve their archivist trait.\n[GetVassalStance( 'zealot' ).GetTextIcon][GetVassalStance( 'zealot' ).GetName] [vassals|E] appreciate the reading and will gain [opinion|E].\n"
- activity_ancestor_veneration_predicted_cost: "The cost of an [GetActivityType('activity_ancestor_veneration').GetName] is based on your [income|E] and the [activity_options|E] you select."
- 
+ activity_ancestor_veneration_host_desc: "$BULLET_WITH_TAB$Можно получить [Concept('lifestyle_experience', 'опыт образа жизни')|E]\n$BULLET_WITH_TAB$Прирост [Concept('opinion', 'мнения')|E] #TOOLTIP:VASSAL_STANCE,zealot #L [GetVassalStance( 'zealot' ).GetTextIcon]фанатичных#!#! [Concept('vassal', 'вассалов')|E]\n$BULLET_WITH_TAB$Участники могут получить [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]\n"
+ activity_ancestor_veneration_selection_tooltip: "Почтить предков и изучить древних [Concept('dwarves', 'гномов')|E]\n\nОжидаемые награды:\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] [lifestyle_experience|E]\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]"
+ activity_ancestor_veneration_guest_help_text: "У [Concept('activity_guests', 'гостей занятия')|E] будет возможность пообщаться и улучшить свойство архивариуса.\n#TOOLTIP:VASSAL_STANCE,zealot #L [GetVassalStance( 'zealot' ).GetTextIcon]Фанатичные#!#! [Concept('vassals', 'вассалы')|E] оценят прочитанное и улучшат [Concept('opinion', 'мнение')|E].\n"
+ activity_ancestor_veneration_predicted_cost: "Стоимость #TOOLTIP:ACTIVITY_TYPE,activity_ancestor_veneration #L почтения предков#!#! зависит от вашего [Concept('income', 'дохода')|E] и выбранных [Concept('activity_options', 'вариантов занятия')|E]."
+
  ancestor_veneration_type_standard: "Почтение предков"
- ancestor_veneration_type_standard_desc: "$EFFECT_LIST_BULLET$ You may increase your personal [skills|E] and learn lessons from the ancestors.\n\n#weak There is ancient wisdom in the scrolls and records of old. The deeds of our forebears can guide us still, if we are willing to learn from their memory.#"
- 
+ ancestor_veneration_type_standard_desc: "$EFFECT_LIST_BULLET$ Вы можете улучшить свои личные [Concept('skills', 'навыки')|E] и извлечь уроки из жизни предков.\n\n#weak В древних свитках и записях содержится древняя мудрость. Деяния наших предков всё ещё могут направлять нас, если мы захотим извлечь уроки из их памяти.#"
+
  activity_ancestor_veneration_host_an_a: "$host_activity_an$"
- activity_ancestor_veneration_host_desc_trait_xp: "$BULLET_WITH_TAB$Participants may gain @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )] [trait_level_track_xp|E]\n"
- activity_ancestor_veneration_host_desc_trait: "$BULLET_WITH_TAB$Participants may gain the @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )] [trait|E]\n"
- activity_ancestor_veneration_host_desc_chronicler: "\n@warning_icon! #negative_value You are not employing a [GetCourtPositionType('chronicler_court_position').GetName()]"
- activity_ancestor_veneration_host_desc_antiquarian: "\n@warning_icon! #negative_value You are not employing a [GetCourtPositionType('antiquarian_court_position').GetName()]"
+ activity_ancestor_veneration_host_desc_trait_xp: "$BULLET_WITH_TAB$Участники могут получить [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]\n"
+ activity_ancestor_veneration_host_desc_trait: "$BULLET_WITH_TAB$Участники могут получить [Concept('trait', 'свойство')|E] @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]\n"
+ activity_ancestor_veneration_host_desc_chronicler: "\n@warning_icon! #negative_value У вас не нанят [GetCourtPositionType('chronicler_court_position').GetName()]"
+ activity_ancestor_veneration_host_desc_antiquarian: "\n@warning_icon! #negative_value У вас не нанят [GetCourtPositionType('antiquarian_court_position').GetName()]"
 
- ancestor_veneration_province_requirement_landless: "You must select an inhabited [delving|E] within your diplomatic range."
- ancestor_veneration_province_requirement_landed: "You must control at least one [delving|E]."
- ancestor_veneration_scholars: "Scholars"
- ancestor_veneration_no_scholars: "No Scholars"
- ancestor_veneration_no_scholars_desc: "$EFFECT_LIST_BULLET$ Reduced [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )] experience\n\n#weak Go through the archives alone, without any scholars to help or guide you.#!"
- ancestor_veneration_few_scholars: "Scholarly Delegation"
- ancestor_veneration_few_scholars_desc: "$EFFECT_LIST_BULLET$ Average [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )] experience\n\n#weak A small delegation of scholars, lean but efficient.#!"
- ancestor_veneration_many_scholars: "Symposium"
- ancestor_veneration_many_scholars_desc: "$EFFECT_LIST_BULLET$ Increased [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )] experience\n\n#weak A veritable symposium of scholars, ready to explore every text available.#!"
+ ancestor_veneration_province_requirement_landless: "Вы должны выбрать населённое [Concept('delving', 'подземное владение')|E] в пределах вашего дипломатического радиуса."
+ ancestor_veneration_province_requirement_landed: "Вы должны контролировать как минимум одно [Concept('delving', 'подземное владение')|E]."
+ ancestor_veneration_scholars: "Учёные"
+ ancestor_veneration_no_scholars: "Без учёных"
+ ancestor_veneration_no_scholars_desc: "$EFFECT_LIST_BULLET$ Сниженный опыт свойства «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n\n#weak Пройти по архивам в одиночку, без помощи каких-либо учёных, которые могли бы направить вас.#!"
+ ancestor_veneration_few_scholars: "Научная делегация"
+ ancestor_veneration_few_scholars_desc: "$EFFECT_LIST_BULLET$ Средний опыт свойства «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n\n#weak Небольшая делегация учёных, скудная, но эффективная.#!"
+ ancestor_veneration_many_scholars: "Симпозиум"
+ ancestor_veneration_many_scholars_desc: "$EFFECT_LIST_BULLET$ Повышенный опыт свойства «[GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]»\n\n#weak Настоящий симпозиум учёных, готовых изучить любой доступный текст.#!"
 
- ancestor_veneration_funding: "Funding"
- ancestor_veneration_basic_funding: "Basic Funding"
- ancestor_veneration_basic_funding_desc: "$EFFECT_LIST_BULLET$ Gain [prestige_i|E] [prestige|E]\n\n#weak Enough to proceed, though the veneration will lack splendour.#!"
- ancestor_veneration_extra_funding: "Extra Funding"
- ancestor_veneration_extra_funding_desc: "$EFFECT_LIST_BULLET$ More [prestige_i|E] [prestige|E] on completion\n\n#weak Sufficient means to pursue a veneration worthy of remembrance and respect.#!"
- 
+ ancestor_veneration_funding: "Финансирование"
+ ancestor_veneration_basic_funding: "Базовое финансирование"
+ ancestor_veneration_basic_funding_desc: "$EFFECT_LIST_BULLET$ Прирост [prestige_i|E] [Concept('prestige', 'престижа')|E]\n\n#weak Достаточно, чтобы продолжить, хотя почитанию будет недоставать великолепия.#!"
+ ancestor_veneration_extra_funding: "Дополнительное финансирование"
+ ancestor_veneration_extra_funding_desc: "$EFFECT_LIST_BULLET$ Больше [prestige_i|E] [Concept('prestige', 'престижа')|E] по завершении\n\n#weak Достаточные средства для почитания, достойного памяти и уважения.#!"
+
  # Provinces
- activity_ancestor_veneration_destination_selection: "Traveling to a site hosting a large library will provide better opportunities for study."
- activity_ancestor_veneration_province_desc: "You hold an Ancestor Veneration in [ROOT.Province.GetName]\n[ROOT.Province.GetName] is a Delving [holding|E]\n"
- activity_ancestor_veneration.is_location_valid.wrong_holder_faith: "#N You cannot consult the archives of a ruler whose alignment is opposed to yours."
- activity_ancestor_veneration.is_location_valid.not_in_list: "#N This province is outside of your [top_liege_possessive|E] [realm|E], is not held by any of your literate [contact_list_contacts|E], and holds no significant records."
- TRAVEL_NAME_FOR_activity_ancestor_veneration: "[Character.GetFirstNamePossessiveNoTooltip] $activity_ancestor_veneration$"
-  
+ activity_ancestor_veneration_destination_selection: "Посещение локации, в которой находится большая библиотека, предоставит больше возможностей для изучения."
+ activity_ancestor_veneration_province_desc: "Вы проводите почтение предков во владении [ROOT.Province.GetName]\n[ROOT.Province.GetName] - подземное [Concept('holding', 'владение')|E]\n"
+ activity_ancestor_veneration.is_location_valid.wrong_holder_faith: "#N Вы не можете обращаться к архивам правителя, мировоззрение которого противоположно вашему."
+ activity_ancestor_veneration.is_location_valid.not_in_list: "#N Эта провинция находится за пределами [Concept('realm', 'державы')|E] вашего [Concept('top_liege_possessive', 'верховного сюзерена')|E], не принадлежит ни одному из ваших грамотных [Concept('contact_list_contacts', 'покровителей')|E] и не содержит значительных записей."
+ TRAVEL_NAME_FOR_activity_ancestor_veneration: "Путешествие [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] на $activity_ancestor_veneration$"
+
  activity_ancestor_veneration_province_desc_wonder_gundabad_02: "#P +++ $building_wonder_gundabad_02$#!\n"
  activity_ancestor_veneration_province_desc_wonder_mirrormere: "#P +++ $building_wonder_mirrormere$#!\n"
  activity_ancestor_veneration_province_desc_wonder_durin_throne: "#P +++ $building_wonder_durin_throne$#!\n"
@@ -345,7 +345,7 @@
  activity_ancestor_veneration_province_desc_wonder_zelemabkan: "#P +++ $building_wonder_zelemabkan$#!\n"
  activity_ancestor_veneration_province_desc_wonder_azan_zaram_02: "#P ++ $building_wonder_azan_zaram_02$#!\n"
  activity_ancestor_veneration_province_desc_wonder_nar_agathol_3: "#P +++ $building_wonder_nar_agathol_3$#!\n"
- 
+
  activity_ancestor_veneration_province_desc_wonder_gundabad_01: "#P ++ $building_wonder_gundabad_01$#!\n"
  activity_ancestor_veneration_province_desc_wonder_endless_stairs: "#P ++ $building_wonder_endless_stairs$#!\n"
  activity_ancestor_veneration_province_desc_wonder_bridge_of_durin: "#P ++ $building_wonder_bridge_of_durin$#!\n"
@@ -354,12 +354,12 @@
  activity_ancestor_veneration_province_desc_wonder_sunset_caverns: "#P ++ $building_wonder_sunset_caverns$#!\n"
  activity_ancestor_veneration_province_desc_wonder_azan_zaram_01: "#P ++ $building_wonder_azan_zaram_01$#!\n"
  activity_ancestor_veneration_province_desc_wonder_nar_agathol_2: "#P ++ $building_wonder_nar_agathol_2$#!\n"
- 
+
  activity_ancestor_veneration_province_desc_wonder_nogrod_broken: "#P + $building_wonder_nogrod_broken$#!\n"
  activity_ancestor_veneration_province_desc_wonder_belegost_broken: "#P + $building_wonder_belegost_broken$#!\n"
  activity_ancestor_veneration_province_desc_wonder_nar_agathol: "#P + $building_wonder_nar_agathol$#!\n"
 
- ancestor_veneration_base_cost: "Base cost"
+ ancestor_veneration_base_cost: "Базовая стоимость"
  ancestor_veneration_cost_discount_wonder_gundabad_02: "В этом месте есть $building_wonder_gundabad_02$#!"
  ancestor_veneration_cost_discount_wonder_mirrormere: "В этом месте есть $building_wonder_mirrormere$#!"
  ancestor_veneration_cost_discount_wonder_durin_throne: "В этом месте есть $building_wonder_durin_throne$#!"
@@ -369,7 +369,7 @@
  ancestor_veneration_cost_discount_wonder_wonder_zelemabkan: "В этом месте есть $building_wonder_zelemabkan$#!"
  ancestor_veneration_cost_discount_wonder_wonder_azan_zaram_02: "В этом месте есть $building_wonder_azan_zaram_02$#!"
  ancestor_veneration_cost_discount_wonder_wonder_nar_agathol_3: "В этом месте есть $building_wonder_nar_agathol_3$#!"
- 
+
  ancestor_veneration_cost_discount_wonder_gundabad_01: "В этом месте есть $building_wonder_gundabad_01$#!"
  ancestor_veneration_cost_discount_wonder_endless_stairs: "В этом месте есть $building_wonder_endless_stairs$#!"
  ancestor_veneration_cost_discount_wonder_bridge_of_durin: "В этом месте есть $building_wonder_bridge_of_durin$#!"
@@ -378,18 +378,18 @@
  ancestor_veneration_cost_discount_wonder_sunset_caverns: "В этом месте есть $building_wonder_sunset_caverns$#!"
  ancestor_veneration_cost_discount_wonder_azan_zaram_01: "В этом месте есть $building_wonder_azan_zaram_01$#!"
  ancestor_veneration_cost_discount_wonder_nar_agathol_2: "В этом месте есть $building_wonder_nar_agathol_2$#!"
- 
+
  ancestor_veneration_cost_discount_wonder_nogrod_broken: "В этом месте есть $building_wonder_nogrod_broken$#!"
  ancestor_veneration_cost_discount_wonder_belegost_broken: "В этом месте есть $building_wonder_belegost_broken$#!"
  ancestor_veneration_cost_discount_wonder_wonder_nar_agathol: "В этом месте есть $building_wonder_nar_agathol$#!"
- 
+
  # Pulse actions
- ancestor_veneration_scholar_protection_title: "[first.GetShortUIName|U] protected scholars from a falling bookshelf."
+ ancestor_veneration_scholar_protection_title: "[first.GetShortUIName|U] [Select_CString(first.IsFemale, 'защитила', 'защитил' )] учёных от падения книжной полки."
  ancestor_veneration_host_shushes_knight_title: "$activity_pulse_action_ancestor_veneration_host_shushes_knight$"
- activity_pulse_action_ancestor_veneration_host_shushes_knight: "[first.GetShortUINameNoTooltip|U] scolded [second.GetShortUINameNoTooltip|U] for making too much noise."
- 
- ancestor_veneration.conclusion.desc: "I have finished my visit to the archives, and I must say it was quite successful. We have studied old scrolls and learnt much from the deeds of the ancestors, both revered and reviled."
- 
+ activity_pulse_action_ancestor_veneration_host_shushes_knight: "[first.GetShortUINameNoTooltip|U] [Select_CString( first.IsLocalPlayer, 'отругили', Select_CString(first.IsFemale, 'отругала', 'отругала' ))] [Select_CString(second.IsLocalPlayer, '', 'персонажа ' )][second.GetNamePossessiveOrMy][Select_CString(second.IsLocalPlayer, 'его персонажа', '' )] за слишком много шума."
+
+ ancestor_veneration.conclusion.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'завершила', 'завершил' )] свой визит в архивы и [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] сказать, что он был весьма успешным. Мы изучили древние свитки и многому научились из деяний предков, как почитаемых, так и поносимых."
+
  #Guest Rules
  #activity_invite_other_dwarven_rulers: "Dwarven Rulers"
 
@@ -642,7 +642,7 @@
  expedition_type_standard_desc: "$EFFECT_LIST_BULLET$ Переместить свою [Concept('realm', 'державу')|E], оставив после себя правителя по своему усмотрению.\n\n#weak Поселиться в заброшенном подземном владении.#!"
  expedition_type_satellite: "Вассальное владение"
  expedition_type_satellite_desc: "$EFFECT_LIST_BULLET$ Основать гномье вассальное владение, создав [client_state|El], из которого можно черпать ресурсы.\n\n#weak Отправить надёжного друга, чтобы расширить вашу державу.#!"
-  
+
  expedition_variable_trigger: "Это занятие нельзя использовать в течение [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'expedition_type_cooldown') )]"
  ### Host ###
  activity_expedition_host_desc: "\n#L Перемещение державы:#!\n$EFFECT_LIST_BULLET$ Вы покидаете свою [Concept('realm', 'державу')|E], оставив вместо себя другого [Concept('dwarf', 'гнома')|E]-правителя, основав\n   новую державу в другом месте на своё усмотрение.\n\n#L Основать вассальное владение:#!\n$EFFECT_LIST_BULLET$ Вы выбираете [Concept('dwarf', 'гнома')|E], который начнёт основание форпоста в отдалённом\n   заброшенном [Concept('delving', 'подземном владении')|E].\n$EFFECT_LIST_BULLET$ Вассальное владение может стать вашим полноценным [Concept('vassal', 'вассалом')|E] по\n   прошествии определённого времени."
