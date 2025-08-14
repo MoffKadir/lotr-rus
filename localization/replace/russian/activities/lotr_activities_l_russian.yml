@@ -299,8 +299,8 @@
 
  activity_ancestor_veneration: "Почтение предков"
  activity_ancestor_veneration_desc: "Среди [Concept('dwarves', 'гномов')|E] предков не просто помнят. Их почитают, их наследие чтут и соблюдают.\n\nВ триумфе или в безумии, каждый поступок остается неизменным, предлагая мудрость, предостережение и силу тем, кто принимает их уроки близко к сердцу."
- activity_ancestor_veneration_host_desc: "$BULLET_WITH_TAB$Можно получить [Concept('lifestyle_experience', 'опыт образа жизни')|E]\n$BULLET_WITH_TAB$Прирост [Concept('opinion', 'мнения')|E] #TOOLTIP:VASSAL_STANCE,zealot #L [GetVassalStance( 'zealot' ).GetTextIcon]фанатичных#!#! [Concept('vassal', 'вассалов')|E]\n$BULLET_WITH_TAB$Участники могут получить [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]\n"
- activity_ancestor_veneration_selection_tooltip: "Почтить предков и изучить древних [Concept('dwarves', 'гномов')|E]\n\nОжидаемые награды:\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] [lifestyle_experience|E]\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]"
+ activity_ancestor_veneration_host_desc: "$BULLET_WITH_TAB$Можно получить очки [Concept('skill', 'навыков')|E]\n$BULLET_WITH_TAB$Можно получить [Concept('lifestyle_experience', 'опыт образа жизни')|E]\n$BULLET_WITH_TAB$Прирост [Concept('opinion', 'мнения')|E] #TOOLTIP:VASSAL_STANCE,zealot #L [GetVassalStance( 'zealot' ).GetTextIcon]фанатичных#!#! [Concept('vassal', 'вассалов')|E]\n$BULLET_WITH_TAB$Участники могут получить [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]\n"
+ activity_ancestor_veneration_selection_tooltip: "Почтить предков и изучить древних [Concept('dwarves', 'гномов')|E]\n\nОжидаемые награды:\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] Очки [Concept('skill', 'навыков')|E]\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] [lifestyle_experience|E]\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]"
  activity_ancestor_veneration_guest_help_text: "У [Concept('activity_guests', 'гостей занятия')|E] будет возможность пообщаться и улучшить свойство архивариуса.\n#TOOLTIP:VASSAL_STANCE,zealot #L [GetVassalStance( 'zealot' ).GetTextIcon]Фанатичные#!#! [Concept('vassals', 'вассалы')|E] оценят прочитанное и улучшат [Concept('opinion', 'мнение')|E].\n"
  activity_ancestor_veneration_predicted_cost: "Стоимость #TOOLTIP:ACTIVITY_TYPE,activity_ancestor_veneration #L почтения предков#!#! зависит от вашего [Concept('income', 'дохода')|E] и выбранных [Concept('activity_options', 'вариантов занятия')|E]."
 
@@ -336,10 +336,10 @@
  activity_ancestor_veneration.is_location_valid.not_in_list: "#N Эта провинция находится за пределами [Concept('realm', 'державы')|E] вашего [Concept('top_liege_possessive', 'верховного сюзерена')|E], не принадлежит ни одному из ваших грамотных [Concept('contact_list_contacts', 'покровителей')|E] и не содержит значительных записей."
  TRAVEL_NAME_FOR_activity_ancestor_veneration: "Путешествие [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] на $activity_ancestor_veneration$"
 
+ activity_ancestor_veneration_province_desc_wonder_mazalabkan: "#P +++ $building_wonder_mazalabkan$#!\n"
  activity_ancestor_veneration_province_desc_wonder_gundabad_02: "#P +++ $building_wonder_gundabad_02$#!\n"
  activity_ancestor_veneration_province_desc_wonder_mirrormere: "#P +++ $building_wonder_mirrormere$#!\n"
  activity_ancestor_veneration_province_desc_wonder_durin_throne: "#P +++ $building_wonder_durin_throne$#!\n"
- activity_ancestor_veneration_province_desc_wonder_doors_of_durin: "#P +++ $building_wonder_doors_of_durin$#!\n"
  activity_ancestor_veneration_province_desc_wonder_nogrod_reborn: "#P +++ $building_wonder_nogrod_reborn$#!\n"
  activity_ancestor_veneration_province_desc_wonder_belegost_reborn: "#P +++ $building_wonder_belegost_reborn$#!\n"
  activity_ancestor_veneration_province_desc_wonder_zelemabkan: "#P +++ $building_wonder_zelemabkan$#!\n"
@@ -348,7 +348,6 @@
 
  activity_ancestor_veneration_province_desc_wonder_gundabad_01: "#P ++ $building_wonder_gundabad_01$#!\n"
  activity_ancestor_veneration_province_desc_wonder_endless_stairs: "#P ++ $building_wonder_endless_stairs$#!\n"
- activity_ancestor_veneration_province_desc_wonder_bridge_of_durin: "#P ++ $building_wonder_bridge_of_durin$#!\n"
  activity_ancestor_veneration_province_desc_wonder_nogrod_rebuilt: "#P ++ $building_wonder_nogrod_rebuilt$#!\n"
  activity_ancestor_veneration_province_desc_wonder_belegost_rebuilt: "#P ++ $building_wonder_belegost_rebuilt$#!\n"
  activity_ancestor_veneration_province_desc_wonder_sunset_caverns: "#P ++ $building_wonder_sunset_caverns$#!\n"
@@ -360,10 +359,10 @@
  activity_ancestor_veneration_province_desc_wonder_nar_agathol: "#P + $building_wonder_nar_agathol$#!\n"
 
  ancestor_veneration_base_cost: "Базовая стоимость"
+ ancestor_veneration_cost_discount_wonder_mazalabkan: "В этом месте есть $building_wonder_mazalabkan$#!"
  ancestor_veneration_cost_discount_wonder_gundabad_02: "В этом месте есть $building_wonder_gundabad_02$#!"
  ancestor_veneration_cost_discount_wonder_mirrormere: "В этом месте есть $building_wonder_mirrormere$#!"
  ancestor_veneration_cost_discount_wonder_durin_throne: "В этом месте есть $building_wonder_durin_throne$#!"
- ancestor_veneration_cost_discount_wonder_doors_of_durin: "В этом месте есть $building_wonder_doors_of_durin$#!"
  ancestor_veneration_cost_discount_wonder_nogrod_reborn: "В этом месте есть $building_wonder_nogrod_reborn$#!"
  ancestor_veneration_cost_discount_wonder_belegost_reborn: "В этом месте есть $building_wonder_belegost_reborn$#!"
  ancestor_veneration_cost_discount_wonder_wonder_zelemabkan: "В этом месте есть $building_wonder_zelemabkan$#!"
@@ -372,7 +371,6 @@
 
  ancestor_veneration_cost_discount_wonder_gundabad_01: "В этом месте есть $building_wonder_gundabad_01$#!"
  ancestor_veneration_cost_discount_wonder_endless_stairs: "В этом месте есть $building_wonder_endless_stairs$#!"
- ancestor_veneration_cost_discount_wonder_bridge_of_durin: "В этом месте есть $building_wonder_bridge_of_durin$#!"
  ancestor_veneration_cost_discount_wonder_nogrod_rebuilt: "В этом месте есть $building_wonder_nogrod_rebuilt$#!"
  ancestor_veneration_cost_discount_wonder_belegost_rebuilt: "В этом месте есть $building_wonder_belegost_rebuilt$#!"
  ancestor_veneration_cost_discount_wonder_sunset_caverns: "В этом месте есть $building_wonder_sunset_caverns$#!"
@@ -382,6 +380,9 @@
  ancestor_veneration_cost_discount_wonder_nogrod_broken: "В этом месте есть $building_wonder_nogrod_broken$#!"
  ancestor_veneration_cost_discount_wonder_belegost_broken: "В этом месте есть $building_wonder_belegost_broken$#!"
  ancestor_veneration_cost_discount_wonder_wonder_nar_agathol: "В этом месте есть $building_wonder_nar_agathol$#!"
+
+ activity_ancestor_veneration_province_desc_ritual_significance: "#P Это место имеет большое ритуальное значение для [Concept('dwarves', 'гномов')|E]#!\n"
+ activity_ancestor_veneration_province_desc_realm: "Эта локация находится в пределах вашей державы"
 
  # Pulse actions
  ancestor_veneration_scholar_protection_title: "[first.GetShortUIName|U] [Select_CString(first.IsFemale, 'защитила', 'защитил' )] учёных от падения книжной полки."

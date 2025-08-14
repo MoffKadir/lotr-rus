@@ -2277,6 +2277,34 @@
  decision_convince_easterling_lord_tt.2: "Персонаж [GetPlayer.MakeScope.Var('selected_character').Char.GetName] доступен"
  decision_convince_easterling_lord_effect.t1: "Отправиться в столицу персонажа [GetPlayer.MakeScope.Var('selected_character').Char.GetNamePossessive] #bold без#! вашего #V лагеря#!"
 
+ ####################################
+ ### Subsidize Cochineal Industry ###
+ ####################################
+ # Adapted from RICE
+ support_cochineal_industry: "Поддержать производство кошенили"
+ support_cochineal_industry_tooltip: "[Concept('cochineal', 'Кошениль')|E] - это выгодный экспорт!"
+ support_cochineal_industry_desc: "Некоторые из наших территорий находятся в пределах региона производства кошенили. Красный краситель, производимый [Concept('cochineal', 'кошенильными')|E] насекомыми, является ценным товаром, продаваемым по всему [Concept('middleearth', 'Средиземью')|E]. Если мы поддержим эту отрасль, купцы смогут продолжать экспортировать эти красители в больших количествах по всему миру." #[GetGeographicalRegion('special_cochineal_production_region').GetName]
+ support_cochineal_industry_effect_tooltip_1: "Сила этого [Concept('modifier', 'модификатора')|E] растёт от [Concept('counties', 'графств')|E] в [Concept('duchy', 'герцогствах')|E] с [Concept('duchy_building', 'герцогской постройкой')|E] $building_type_cochineal_industry_01$"
+ support_cochineal_industry_confirm: "Эти насекомые озолотят нас!"
+ RICE_cochineal_region_req: "Вы владеете [Concept('county', 'графством')|E] в регионе [GetGeographicalRegion('special_cochineal_production_region').GetName], которое #emp не#! является [Concept('orcish', 'орочьим')|E]"
+ RICE_every_cochineal_region_county: "Все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('special_cochineal_production_region').GetName], принадлежащие вам"
+ RICE_cochineal_industry_effect_desc_01: "При принятии [Concept('decision', 'решения')|E] #bold $support_cochineal_industry$#!, вместо базового [Concept('county_modifier', 'модификатора графства')|E] это [Concept('county', 'графство')|E] получит улучшенный [Concept('modifier', 'модификатор')|E] [GetModifier('cochineal_modifier_2').GetNameWithTooltip]."
+ RICE_cochineal_industry_effect_desc_02: "При принятии [Concept('decision', 'решения')|E] #bold $support_cochineal_industry$#!, вместо базового [Concept('county_modifier', 'модификатора графства')|E] это [Concept('county', 'графство')|E] получит улучшенный [Concept('modifier', 'модификатор')|E] [GetModifier('cochineal_modifier_3').GetNameWithTooltip]."
+ RICE_cochineal_industry_effect_desc_03: "При принятии [Concept('decision', 'решения')|E] #bold $support_cochineal_industry$#!, вместо базового [Concept('county_modifier', 'модификатора графства')|E] это [Concept('county', 'графство')|E] получит улучшенный [Concept('modifier', 'модификатор')|E] [GetModifier('cochineal_modifier_4').GetNameWithTooltip]."
+ rhun.0001.t: "Кошениль"
+ rhun.0001.desc: "Некоторые из территорий, которые я контролирую, находятся в пределах региона производства кошенили. Личинки [Concept('cochineal', 'кошенильных')|E] насекомых могут быть использованы для получения красивого красного красителя, который продается по заоблачным ценам на чужеземных рынках.\n\nТолько глупец не понимает важности поддержки производства кошенили, и я занимаюсь именно этим. Вкладываясь в плантации кошенили в этих регионах и поощряя торговцев покупать этот продукт и продавать его в других местах, мы можем помочь местной экономике расти – и, конечно, получать неплохие деньги за счет взимания пошлин с этой торговли." #[GetGeographicalRegion('special_cochineal_production_region').GetName]
+ rhun.0001.a: "Этот красный краситель озолотит нас."
+
+ # Modifiers
+ cochineal_modifier_1: "Вложения в производство кошенили (1 уровень)"
+ cochineal_modifier_1_desc: "Красный краситель, производимый на местных плантациях, получают из личинок [Concept('cochineal', 'кошенильных')|E] насекомых, и он является прибыльным товаром для экспорта. Местные правители делают всё возможное, чтобы поддержать сбор урожая и экспорт этих красителей.\n\n#EMP Сила этого [Concept('modifier', 'модификатора')|E] зависит от того, имело ли [Concept('duchy', 'герцогство')|E] этого [Concept('county', 'графства')|E] [Concept('duchy_building', 'герцогскую постройку')|E] $building_type_cochineal_industry_01$ в момент принятия [Concept('decision', 'решения')|E] «$support_cochineal_industry$».#!"
+ cochineal_modifier_2: "Вложения в производство кошенили (2 уровень)"
+ cochineal_modifier_2_desc: "$cochineal_modifier_1_desc$"
+ cochineal_modifier_3: "Вложения в производство кошенили (3 уровень)"
+ cochineal_modifier_3_desc: "$cochineal_modifier_1_desc$"
+ cochineal_modifier_4: "Вложения в производство кошенили (4 уровень)"
+ cochineal_modifier_4_desc: "$cochineal_modifier_1_desc$"
+
  ##############################
  #### Dol Guldur Decisions ####
  ##############################

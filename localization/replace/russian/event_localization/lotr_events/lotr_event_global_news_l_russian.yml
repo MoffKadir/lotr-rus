@@ -149,27 +149,47 @@
  news_event.0025.desc.longbeard: "клана [Concept( 'longbeard', 'Длиннобородов' )|E]"
  news_event.0025.desc.firebeard: "клана [Concept( 'firebeard', 'Огнебородов' )|E]"
  news_event.0025.desc.broadbeam: "клана [Concept( 'broadbeam', 'Широкозадов' )|E]"
- news_event.0025.desc.blacklock: "клана [Concept( 'blacklock', 'Черновласов' )|E]"
  news_event.0025.desc.ironfist: "клана [Concept( 'ironfist', 'Железноруков' )|E]"
  news_event.0025.desc.stiffbeard: "клана [Concept( 'stiffbeard', 'Жесткобородов' )|E]"
+ news_event.0025.desc.blacklock: "клана [Concept( 'blacklock', 'Черновласов' )|E]"
  news_event.0025.desc.stonefoot: "клана [Concept( 'stonefoot', 'Камненогов' )|E]"
  news_event.0025.desc.fallback: "благословенного клана"
- news_event.0025.desc.outro: "празднуют то, что их [GetTrait('dwarf_father').GetName( GetNullCharacter )] [my_dorfdad.GetFirstNameNicknamed] возродился. Новым его воплощением стал [new_dorfdad.GetFirstNameNicknamed].\n\nПо благословению [Concept( 'mahalcharacter', 'Махала' )|E], каждому из семи гномьих праотцов суждено семь раз возрождаться в своём роду."
+ news_event.0025.desc.outro: "празднуют то, что их [GetTrait('dwarf_father').GetName( GetNullCharacter )] [my_dorfdad.GetFirstNameNicknamed] возродился. Новым его воплощением стал [new_dorfdad.GetFirstNameNicknamed].\n\nПо благословению [Concept( 'mahalcharacter', 'Махала' )|E], каждому из семи гномьих [Concept('dwarffathers', 'праотцов')|E] суждено семь раз возрождаться в своём роду."
  news_event.0025.a: "Кхазад ай-мену!"
  news_event.0025.b: "Дети Аулэ находятся в приподнятом настроении."
  news_event.0025.c: "Кто?"
 
- news_event.0026.t: "Гномий праотец восходит на трон" # Juke - PLACEHOLDER
- news_event.0026.desc: "Срочные новости: Возрождённый гномий праотец вновь стал королём своего народа!" # Juke - PLACEHOLDER
- news_event.0026.a: "Ах." # Juke - PLACEHOLDER
- news_event.0026.b: "Ах." # Juke - PLACEHOLDER
- news_event.0026.c: "Ах." # Juke - PLACEHOLDER
+ news_event.0026.t: "[my_dorfdad.GetFirstNameNoTooltip] [Select_CString(my_dorfdad.IsFemale, 'коронована', 'коронован' )]"
+ news_event.0026.desc: "Глубоко под горами, [new_dorfdad.GetFirstName]"
+ news_event.0026.desc.intro: "Глубоко под горами, [Concept('dwarves', 'гномы')|E] из"
+ news_event.0026.desc.longbeard: "клана [Concept('longbeard', 'Длиннобородов')|E]"
+ news_event.0026.desc.firebeard: "клана [Concept('firebeard', 'Огнебородов')|E]"
+ news_event.0026.desc.broadbeam: "клана [Concept('broadbeam', 'Широкозадов')|E]"
+ news_event.0026.desc.ironfist: "клана [Concept('ironfist', 'Железноруков')|E]"
+ news_event.0026.desc.stiffbeard: "клана [Concept('stiffbeard', 'Жесткобородов')|E]"
+ news_event.0026.desc.blacklock: "клана [Concept('blacklock', 'Черновласов')|E]"
+ news_event.0026.desc.stonefoot: "клана [Concept('stonefoot', 'Камненогов')|E]"
+ news_event.0026.desc.fallback: "ликующего клана"
+ news_event.0026.desc.outro: "празднуют радостное событие - [my_dorfdad.GetFirstNameNicknamed], их переродившийся #TOOLTIP:GAME_TRAIT,dwarf_father,[GetNullCharacter] #L праотец#!#!, взошёл на трон своего народа!\n\nПо воле [Concept('mahalcharacter', 'Махала')|E] их отец снова принимает на мантию лидерства, чтобы вести клан к славе и процветанию."
+ news_event.0026.a: "Славься, Махал!"
+ news_event.0026.b: "Дети Аулэ обретут смелость на долгие годы вперёд."
+ news_event.0026.c: "И что?"
 
- news_event.0027.t: "Гномий праотец умирает" # Juke - PLACEHOLDER
- news_event.0027.desc: "Срочные новости: Возрождённый парень снова умер. Подробнее в 5." # Juke - PLACEHOLDER
- news_event.0027.a: "Ах." # Juke - PLACEHOLDER
- news_event.0027.b: "Ах." # Juke - PLACEHOLDER
- news_event.0027.c: "Ах." # Juke - PLACEHOLDER
+ news_event.0027.t: "[my_dorfdad.GetFirstNameNoTooltip] [Select_CString(my_dorfdad.IsFemale, 'умерла', 'умер' )]"
+ news_event.0027.desc: "В глубинах гор, [new_dorfdad.GetFirstName]"
+ news_event.0027.desc.intro: "В глубинах гор, [Concept('dwarves', 'гномы')|E] из "
+ news_event.0027.desc.longbeard: "клана [Concept('longbeard', 'Длиннобородов')|E]"
+ news_event.0027.desc.firebeard: "клана [Concept('firebeard', 'Огнебородов')|E]"
+ news_event.0027.desc.broadbeam: "клана [Concept('broadbeam', 'Широкозадов')|E]"
+ news_event.0027.desc.ironfist: "клана [Concept('ironfist', 'Железноруков')|E]"
+ news_event.0027.desc.stiffbeard: "клана [Concept('stiffbeard', 'Жесткобородов')|E]"
+ news_event.0027.desc.blacklock: "клана [Concept('blacklock', 'Черновласов')|E]"
+ news_event.0027.desc.stonefoot: "клана [Concept('stonefoot', 'Камненогов')|E]"
+ news_event.0027.desc.fallback: "скорбящего клана"
+ news_event.0027.desc.outro: "скорбят о кончине своего #TOOLTIP:GAME_TRAIT,dwarf_father,[GetNullCharacter] #L праотца#!#!. [my_dorfdad.GetFirstNameNicknamed] [Select_CString(my_dorfdad.IsFemale, 'вернулась', 'вернулся' )] в объятия [Concept('mahalcharacter', 'Махала')|E].\n\nГоре охватывает их, ибо теперь они должны продолжать жизнь без направляющей руки своего праотца."
+ news_event.0027.a: "[Glossary('Махал ай-мену','mahal_ai_menu_gloss')], [my_dorfdad.GetFirstNameNoTooltip]..." 
+ news_event.0027.b: "Детям Аулэ потребуется время, чтобы оправиться от этой потери."
+ news_event.0027.c: "И что?"
 
  news_event.0028.t: "Тень отступает" # Vector - PLACEHOLDER
  news_event.0028.desc: "Войско Свободных народов вновь ворвалось в Мордор и одержало победу над Темным Властелином. Возглавляемая Маглором из рода Феанора, эта коалиция ворвалась в Барад-Дур и сразилась с самим Сауроном. По слухам, завязалась ожесточенная битва магии и песен, но в конце концов Свободные народы одержали победу. После падения Саурона войско поспешно отступило, так как колоссальная башня начала рушиться под собственной тяжестью.\n\nБывшие владения Саурона содрогнулись от потери своего повелителя, лишившись его направляющей воли. Среди тех, кто объявил себя его наследниками, начались междоусобицы, а другие решили отречься от верности Темному Властелину. Когда-то считавшаяся неприступной, великая империя Саурона теперь кажется практически неизбежной и рухнет, как его башня, под собственным весом.\n\nСвободные народы могут вздохнуть с облегчением, ведь по странному стечению обстоятельств тень отступила." # Vector - PLACEHOLDER
@@ -261,7 +281,7 @@
 
  news_event.0051.t: "Обезглавленный король"
  news_event.0051.desc: "Король Народа Дурина, [Thror.GetFirstName], был убит. Его тело разрублено, а голова отрублена. Конец его правления знаменует начало великой войны между всеми кланами [Concept('dwarves', 'гномов')|E] и бесчисленными полчищами [Concept('orcs', 'орков')|E] Мглистых гор. Много битв пройдет в норах и пещерах, чтобы отплатить за обиды, причиненные орками, и вернуть утраченные чертоги Длиннобородов, от [Concept('khazaddum', 'Кхазад-дума')|E] до [Concept('gundabad', 'Гундабада')|E]. Собралось великое войско гномов, и они выступили навстречу великой славе или гибели."
- news_event.0051.a: "Барук кхазад! Кхазад ай-мену!"
+ news_event.0051.a: "Барук кхазад! [Glossary('Кхазад ай-мену','khazad_ai_menu_gloss')]!"
  news_event.0051.b: "Эта война нас не касается." 
  news_event.0051.c: "Вонючий бородач получил по заслугам."
 
