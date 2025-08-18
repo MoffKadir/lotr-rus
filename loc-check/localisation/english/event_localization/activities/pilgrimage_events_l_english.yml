@@ -6,7 +6,7 @@
  activity_pilgrimage_pilgrim_custom_host_desc: "$BULLET_WITH_TAB$@pilgrim_trait_icon! [GetTrait('pilgrim').GetName( GetNullCharacter )] [trait|E] / [GetTrait('pilgrim').GetName( GetNullCharacter )] [trait_level_track_xp|E]\n$BULLET_WITH_TAB$@gallowsbait_trait_icon! [GetTrait('gallowsbait').GetName( GetNullCharacter )] [trait|E] loss during a Pious [pilgrimage|E]"
  activity_pilgrimage_hajjaj_custom_host_desc: "$BULLET_WITH_TAB$@hajjaj_trait_icon! [GetTrait('hajjaj').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$@gallowsbait_trait_icon! [GetTrait('gallowsbait').GetName( GetNullCharacter )] [trait|E] loss during a Pious [hajj|E]"
 
- activity_pilgrimage_selection_tooltip:1 "Undertake a [pilgrimage|E] to prove your dedication to [GetPlayer.GetFaith.PantheonTerm]\n\nAnticipated Rewards:\n$BULLET_WITH_TAB$[piety_i] [piety|E] Gain\n$BULLET_WITH_TAB$[legitimacy_i] [legitimacy|E] Gain\n$BULLET_WITH_TAB$[stress_loss_i] [stress|E] Loss"
+ activity_pilgrimage_selection_tooltip: "Undertake a [pilgrimage|E] to prove your dedication to [GetPlayer.GetFaith.PantheonTerm]\n\nAnticipated Rewards:\n$BULLET_WITH_TAB$[piety_i] [piety|E] Gain\n$BULLET_WITH_TAB$[legitimacy_i] [legitimacy|E] Gain\n$BULLET_WITH_TAB$[stress_loss_i] [stress|E] Loss"
  activity_pilgrimage_destination_selection: "The further away from your capital your destination is, the more you prove your dedication to [GetPlayer.GetFaith.PantheonTerm] and gain additional [piety|E]."
  activity_pilgrimage_owner: "Pilgrim"
  activity_pilgrimage_name: "The Pilgrimage"
@@ -16,7 +16,7 @@
  activity_pilgrimage_province_unique_desc: "\n#positive_value + Unique [GetPlayer.GetFaith.GetReligion.GetAdjectiveNoTooltip] Holy Site#!"
  activity_pilgrimage_province_desc_inspection_modifier: "\n#positive_value ++ Protected Holy Site #!"
  #Pros/Cons + Cost at the end
- activity_pilgrimage_province_desc:1 "You start a Pilgrimage to [ROOT.Province.GetName]\nDistance affects cost and rewards"
+ activity_pilgrimage_province_desc: "You start a Pilgrimage to [ROOT.Province.GetName]\nDistance affects cost and rewards"
  activity_pilgrimage_province_very_short_desc: "\n#positive_value + Very Short Distance#!\n\nAdditional Cost: None"
  activity_pilgrimage_province_pretty_short_desc: "\n#positive_value + Short Distance#!\n#negative_value - Vaguely Increased Cost#!\n\nAdditional Cost: [gold_i][SCOPE.ScriptValue('pilgrimage_length_cost_tier_1')|0]"
  activity_pilgrimage_province_short_desc: "\n#positive_value ++ Fairly Short Distance#!\n#negative_value -- Slightly Increased Cost#!\n\nAdditional Cost: [gold_i][SCOPE.ScriptValue('pilgrimage_length_cost_tier_2')|0]"
@@ -35,7 +35,7 @@
  activity_pilgrimage_conclusion_desc: "Our Pilgrimage has been completed successfully"
  pilgrimage_header: "[ROOT.Char.Custom('PilgrimageHeader')]"
  ACTIVITY_PILGRIMATE_VISITED_HOLY_SITE: "Visited the $ACTIVITY_CURRENT_LOCATION$ [holy_site|E]"
- activity_window_character_pilgrim:1 "Pilgrim\n[Character.GetShortUINameNoTooltip|U]"
+ activity_window_character_pilgrim: "Pilgrim\n[Character.GetShortUINameNoTooltip|U]"
 
 
  ### ACTIVITY EFFECTS
@@ -115,23 +115,23 @@
  ### OPTIONS
  #Type of Pilgrimage [Special Type] Option
  pilgrimage_type_pious: "Pious Pilgrimage"
- pilgrimage_type_pious_desc:1 "$EFFECT_LIST_BULLET$ Some event options will allow especially pious actions\n$EFFECT_LIST_BULLET$ Taking these earns increase extra [piety|E] on completion\n\n#weak The purpose of pilgrimage is to pay your respects to the divine, to truly connect with the very substance of your spirit.#!"
+ pilgrimage_type_pious_desc: "$EFFECT_LIST_BULLET$ Some event options will allow especially pious actions\n$EFFECT_LIST_BULLET$ Taking these earns increase extra [piety|E] on completion\n\n#weak The purpose of pilgrimage is to pay your respects to the divine, to truly connect with the very substance of your spirit.#!"
  pilgrimage_type_worldly: "Worldly Pilgrimage"
- pilgrimage_type_worldly_desc:1 "$EFFECT_LIST_BULLET$ Some event options will allow sightseeing actions\n$EFFECT_LIST_BULLET$ Taking these earns a tiered multicultural modifier on completion\n\n#weak To smell the sweet strangeness of foreign air, decipher the queer quirks of alien tongues — could anything be better?#!"
+ pilgrimage_type_worldly_desc: "$EFFECT_LIST_BULLET$ Some event options will allow sightseeing actions\n$EFFECT_LIST_BULLET$ Taking these earns a tiered multicultural modifier on completion\n\n#weak To smell the sweet strangeness of foreign air, decipher the queer quirks of alien tongues — could anything be better?#!"
 #  pilgrimage_type_hajj: "Hajj"
 #  pilgrimage_type_hajj_desc: "$EFFECT_LIST_BULLET$ All able Muslims must perform the Hajj at least once\n$EFFECT_LIST_BULLET$ Other types become available after acquiring the [GetTrait('hajjaj').GetName(GetNullCharacter)] [trait|E]\n\n#weak Remember — the Hajj is not an obligation, it is an opportunity. For submission, for humility, for forgiveness. Inshallah!#!"
  #Fidelity Option
  pilgrimage_option_fidelity: "Fidelity"
  pilgrimage_fidelity_obligatory: "Obligatory"
- pilgrimage_fidelity_obligatory_desc:1 "$EFFECT_LIST_BULLET$ [travel|E] speed is increased by #positive_value 50%#!\n$EFFECT_LIST_BULLET$ You will earn #EMP less#! [piety|E] on completion\n\n#weak Yes, yes, spiritual fulfillment, moral obligation, fate of my immortal essence, et cetera. Can we get a move on?#!"
+ pilgrimage_fidelity_obligatory_desc: "$EFFECT_LIST_BULLET$ [travel|E] speed is increased by #positive_value 50%#!\n$EFFECT_LIST_BULLET$ You will earn #EMP less#! [piety|E] on completion\n\n#weak Yes, yes, spiritual fulfillment, moral obligation, fate of my immortal essence, et cetera. Can we get a move on?#!"
  pilgrimage_fidelity_pilgrim: "Pilgrim"
  pilgrimage_fidelity_pilgrim_desc: "$EFFECT_LIST_BULLET$ [travel|E] speed is unaffected\n$EFFECT_LIST_BULLET$ [piety|E] rewards on completion are unaffected\n\n#weak With glad heart and good will, we set out to see the sacred places of this Earth.#!"
  pilgrimage_fidelity_contemplative: "Contemplative"
- pilgrimage_fidelity_contemplative_desc:1 "$EFFECT_LIST_BULLET$ [travel|E] speed is reduced by #negative_value 50%#!\n$EFFECT_LIST_BULLET$ You will earn more [piety|E] on completion\n\n#weak If the purpose of pilgrimage is rumination, then what's the point in hurrying? The journey is half the point, after all.#!"
+ pilgrimage_fidelity_contemplative_desc: "$EFFECT_LIST_BULLET$ [travel|E] speed is reduced by #negative_value 50%#!\n$EFFECT_LIST_BULLET$ You will earn more [piety|E] on completion\n\n#weak If the purpose of pilgrimage is rumination, then what's the point in hurrying? The journey is half the point, after all.#!"
 #Pomp Option
  pilgrimage_option_pomp: "Pomp"
  pilgrimage_pomp_humble: "Humble"
- pilgrimage_pomp_humble_desc:1 "$EFFECT_LIST_BULLET$ Bring no one from your [court|E], making [travel|E] dangerous\n$EFFECT_LIST_BULLET$ You join a train of [EmptyScope.ScriptValue('pilgrimage_entourage_pomp_humble_max_value')] random pilgrims\n$EFFECT_LIST_BULLET$ More [piety|E] earned on completion\n\n#weak Pilgrimage is a time for quiet reflection. A common pilgrim train with strangers is the best place for that.#!"
+ pilgrimage_pomp_humble_desc: "$EFFECT_LIST_BULLET$ Bring no one from your [court|E], making [travel|E] dangerous\n$EFFECT_LIST_BULLET$ You join a train of [EmptyScope.ScriptValue('pilgrimage_entourage_pomp_humble_max_value')] random pilgrims\n$EFFECT_LIST_BULLET$ More [piety|E] earned on completion\n\n#weak Pilgrimage is a time for quiet reflection. A common pilgrim train with strangers is the best place for that.#!"
  pilgrimage_pomp_appropriate: "Appropriate"
  pilgrimage_pomp_appropriate_desc: "$EFFECT_LIST_BULLET$ You bring bodyguards or good knights, and perhaps a friend\n$EFFECT_LIST_BULLET$ Up to [EmptyScope.ScriptValue('pilgrimage_entourage_pomp_appropriate_max_value')] random pilgrims join your train\n$EFFECT_LIST_BULLET$ [piety|E] rewards on completion are unaffected\n\n#weak The roads are dangerous and the journey is long. Spiritual purity is one thing, acting foolhardy is another.#!"
  pilgrimage_pomp_ceremonial: "Ceremonial"
@@ -205,7 +205,7 @@
 
  ### SYSTEM EVENTS
  #Invalidation Event
- pilgrimage.0040.t:1 "$pilgrimage_header$ A Journey's End"
+ pilgrimage.0040.t: "$pilgrimage_header$ A Journey's End"
  pilgrimage.0040.desc: "And so my spiritual journey has come to an abrupt end. Much like the leaf falling into the stormy river however, we can but see where the new circumstances take us."
  pilgrimage.0040.desc_moved_capital: "Now that my capital is in fact the lustrous location of [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip], there is not much point for me to continue my [GetActivityType('activity_pilgrimage').GetNameNoTooltip].\n\nI should focus on wrapping up my journey there and try my luck with another holy site."
  pilgrimage.0040.a: "I am a leaf in the river."
@@ -316,7 +316,7 @@
  pilgrimage.1140.t: "$pilgrimage_header$ Safety in Numbers"
  pilgrimage.1140.desc: "As we make our way through [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier], we are approached by a [group_leader.GetCulture.GetName] commoner claiming to be the leader of a group of [ROOT.Char.GetFaith.GetAdjective] pilgrims.\n\n"Good [ROOT.Char.GetTitleAsNameNoTooltip], we have been on the road to [destination.GetName] for weeks, but the roads are too dangerous, and now we're short on provisions."\n\n"We would be forever grateful for your support.""
  pilgrimage.1140.a: "The more the merrier!"
- pilgrimage.1140.a.tt:1 "[group_leader.GetFirstName] and up to three others will join your [ROOT.Char.GetInvolvedActivity.GetName]"
+ pilgrimage.1140.a.tt: "[group_leader.GetFirstName] and up to three others will join your [ROOT.Char.GetInvolvedActivity.GetName]"
  pilgrimage.1140.b: "[group_leader.GetCulture.GetNameNoTooltip]? Out of the question."
  pilgrimage.1140.b.flavor: "Never trust a [group_leader.GetCulture.GetNameNoTooltip]."
  pilgrimage.1140.c: "Have some coin, for your troubles."
@@ -326,62 +326,62 @@
  cultural_acceptance_rejected_pilgrims: "Rejected Pilgrims"
  #Heathen-hating adherent challenges you
  pilgrimage.2002.t: "$pilgrimage_header$ Love Thy Neighbor"
- pilgrimage.2002.desc:1 "Among my fellow pilgrims, there is a [heathen_hater.GetWomanMan] who preaches compassion and fellowship — until [heathen_hater.GetSheHe] reaches the topic of heathens.\n\nOne evening around the campfire, [heathen_hater.GetSheHe] loudly declares them to be "abominable monsters in the eyes of [ROOT.Char.GetFaith.PantheonTerm]! Deviants and child murderers all!" Most people avert their eyes when [heathen_hater.GetSheHe] looks at them. Tonight, I was not quick enough. "Do you not agree, o [ROOT.Char.GetTitleAsNameNoTooltip]?""
+ pilgrimage.2002.desc: "Among my fellow pilgrims, there is a [heathen_hater.GetWomanMan] who preaches compassion and fellowship — until [heathen_hater.GetSheHe] reaches the topic of heathens.\n\nOne evening around the campfire, [heathen_hater.GetSheHe] loudly declares them to be "abominable monsters in the eyes of [ROOT.Char.GetFaith.PantheonTerm]! Deviants and child murderers all!" Most people avert their eyes when [heathen_hater.GetSheHe] looks at them. Tonight, I was not quick enough. "Do you not agree, o [ROOT.Char.GetTitleAsNameNoTooltip]?""
  pilgrimage.2002.a: "They are not #EMP all#! that bad."
  pilgrimage.2002.b: "I agree, and I would not trust anyone who came to their defense!"
  pilgrimage.2002.c: "Truly! They spit in the face of [ROOT.Char.GetFaith.HighGodName]!"
  #Companions are running low
- pilgrimage.2003.t:1 "$pilgrimage_header$ A Matter of Safety"
- pilgrimage.2003.desc:1 "I've had this nagging sensation for a while now. My pilgrimage has turned out to be more hazardous than I anticipated — or maybe I simply haven't endured enough trials to prove myself worthy of [ROOT.Char.GetFaith.HighGodNameAlternatePossessive] protection just yet.\n\nI #EMP have#! however spotted a few impressive individuals in the local settlement of [ROOT.Char.GetCurrentLocation.GetNameNoTooltip] who would surely improve the safety of the pilgrimage — in a hands-on manner."
- pilgrimage.2003.a:1 "I should hire a couple of them for my pilgrimage."
- pilgrimage.2003.b:1 "[2002_local_warrior.GetTitledFirstNameNoTooltip] seems like a fine specimen."
+ pilgrimage.2003.t: "$pilgrimage_header$ A Matter of Safety"
+ pilgrimage.2003.desc: "I've had this nagging sensation for a while now. My pilgrimage has turned out to be more hazardous than I anticipated — or maybe I simply haven't endured enough trials to prove myself worthy of [ROOT.Char.GetFaith.HighGodNameAlternatePossessive] protection just yet.\n\nI #EMP have#! however spotted a few impressive individuals in the local settlement of [ROOT.Char.GetCurrentLocation.GetNameNoTooltip] who would surely improve the safety of the pilgrimage — in a hands-on manner."
+ pilgrimage.2003.a: "I should hire a couple of them for my pilgrimage."
+ pilgrimage.2003.b: "[2002_local_warrior.GetTitledFirstNameNoTooltip] seems like a fine specimen."
  pilgrimage.2003.c: "No. I have faith in [ROOT.Char.GetFaith.PantheonTerm]."
  #Run into a Potential Friend
  pilgrimage.2004.t: "$pilgrimage_header$ An Unexpected Encounter"
- pilgrimage.2004.desc:1 "As I am getting closer to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip], I meet more and more fellow pilgrims, from all manner of places.\n\nIt is one of these pilgrims who recognizes me from afar: "[ROOT.Char.GetTitledFirstNameNoTooltip]?! Is that you?"\n\nIt is none other than [potential_friend.Custom2('MyCharacterIntroduction', ROOT.Char)]!"
+ pilgrimage.2004.desc: "As I am getting closer to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip], I meet more and more fellow pilgrims, from all manner of places.\n\nIt is one of these pilgrims who recognizes me from afar: "[ROOT.Char.GetTitledFirstNameNoTooltip]?! Is that you?"\n\nIt is none other than [potential_friend.Custom2('MyCharacterIntroduction', ROOT.Char)]!"
  pilgrimage.2004.a: "We have been brought together by [ROOT.Char.GetFaith.PantheonTerm]!"
  pilgrimage.2004.b: "An auspicious meeting, but I must pray in solitude."
  #A peasant inadvertedly insults you
  pilgrimage.2005.t: "$pilgrimage_header$ A Rude Story"
- pilgrimage.2005.desc:3 "Passing by the campfire, a pilgrim from another entourage is telling a story [rude_pilgrim.GetSheHe] once heard about the [ROOT.Char.GetTitleAsNameNoTooltip]"
- pilgrimage.2005.desc_close:1 "of these lands,"
- pilgrimage.2005.desc_far:2 "of some far away place called [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip],"
+ pilgrimage.2005.desc: "Passing by the campfire, a pilgrim from another entourage is telling a story [rude_pilgrim.GetSheHe] once heard about the [ROOT.Char.GetTitleAsNameNoTooltip]"
+ pilgrimage.2005.desc_close: "of these lands,"
+ pilgrimage.2005.desc_far: "of some far away place called [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip],"
  pilgrimage.2005.outro: "to raucous laughter.\n\nAs [rude_pilgrim.GetSheHe] notices my hesitation, the storyteller looks at me reassuringly: "Don't worry, my [ROOT.Char.GetLadyLord] — this is surely about some #EMP other#! high-and-mighty noble[ROOT.Char.GetWomanMan]!""
  pilgrimage.2005.a: ""Really, now? Tell me more of this [ROOT.Char.GetTitleAsNameNoTooltip].""
  pilgrimage.2005.a.flavor: "I take a seat by the fire."
  pilgrimage.2005.b: ""Guards! Fetch my whip.""
  pilgrimage.2005.c: "Perhaps it is time I found others to travel with."
  #You have gotten lost
- pilgrimage.2006.t:1 "$pilgrimage_header$ the Scenic Route"
- pilgrimage.2006.intro:1 "The spiritual journey has grind to a literal halt."
+ pilgrimage.2006.t: "$pilgrimage_header$ the Scenic Route"
+ pilgrimage.2006.intro: "The spiritual journey has grind to a literal halt."
  pilgrimage.2006.desc_alone: "I keep my eyes peeled, trying to recognize the way forward — but coming up with bupkis — and am becoming slightly concerned. It #EMP was#!\n\nthis direction, wasn't it... ? I hesitantly look over yonder to a local peasant involved in chores a bit further ahead."
- pilgrimage.2006.desc_travel_leader:1 "My $travel_leader_court_position$ [caravan_master.GetTitledFirstName] is looking around, frantically searching for the way forward, and people are starting to notice.\n\n[caravan_master.GetTitledFirstNamePossessiveNoTooltip] face shifts to a gray nuance as [caravan_master.GetSheHe] turns [caravan_master.GetHerHis] gaze towards me, looking for answers as to what to do next."
- pilgrimage.2006.a:1 "I know the way to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip] like the back of my hand!"
+ pilgrimage.2006.desc_travel_leader: "My $travel_leader_court_position$ [caravan_master.GetTitledFirstName] is looking around, frantically searching for the way forward, and people are starting to notice.\n\n[caravan_master.GetTitledFirstNamePossessiveNoTooltip] face shifts to a gray nuance as [caravan_master.GetSheHe] turns [caravan_master.GetHerHis] gaze towards me, looking for answers as to what to do next."
+ pilgrimage.2006.a: "I know the way to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip] like the back of my hand!"
  pilgrimage.2006.a_pious: "We shall let [ROOT.Char.GetFaith.HighGodNameAlternate] guide the way."
- pilgrimage.2006.b:1 "Let us enjoy [ROOT.Char.GetFaith.CreatorNamePossessive] creation for a while longer."
+ pilgrimage.2006.b: "Let us enjoy [ROOT.Char.GetFaith.CreatorNamePossessive] creation for a while longer."
  pilgrimage.2006.b_cynical: "It's not the end of the world, I suppose."
  pilgrimage.2006.c: "I guess I could ask the locals for directions..."
  pilgrimage.2006.c_caravan_master: "Now #EMP you#! get to go ask for directions."
  #Fall ill
  pilgrimage.2008.t: "$pilgrimage_header$ Sickness"
- pilgrimage.2008.desc:1 "It seems I have not taken well to all this travel. Perhaps it is the strange lands filled with unfamiliar air, or perhaps my furs are not warm enough.\n\nEither way, my cough has been persistent for weeks, and this morning I could barely muster the strength to get out of bed."
- pilgrimage.2008.a:1 "If this is [ROOT.Char.GetFaith.HighGodNameAlternatePossessive] will."
+ pilgrimage.2008.desc: "It seems I have not taken well to all this travel. Perhaps it is the strange lands filled with unfamiliar air, or perhaps my furs are not warm enough.\n\nEither way, my cough has been persistent for weeks, and this morning I could barely muster the strength to get out of bed."
+ pilgrimage.2008.a: "If this is [ROOT.Char.GetFaith.HighGodNameAlternatePossessive] will."
  pilgrimage.2008.a.tt: "Traveling while [GetTrait('ill').GetName( GetPlayer )] poses greater health risks"
  pilgrimage.2008.whole_of_body: "Oh, this little cough will pass quickly enough."
  pilgrimage.2008.court_physician: "[traveling_court_physician.GetTitledFirstNameNoTooltip|U], concoct me something."
  #Develop pneumonia
  pilgrimage.2009.t: "$pilgrimage_header$ Rasping Cough"
  pilgrimage.2009.desc: "The journey is not doing me well. My health has not improved through my quest to seek the grace of [ROOT.Char.GetFaith.PantheonTerm]. It has gotten far, far worse. I don't remember what it's like to breathe without struggle."
- pilgrimage.2009.a:1 "May [ROOT.Char.GetFaith.HighGodNameAlternate] have mercy."
+ pilgrimage.2009.a: "May [ROOT.Char.GetFaith.HighGodNameAlternate] have mercy."
  pilgrimage.2009.a.tt: "Traveling while [GetTrait('pneumonic').GetName( GetPlayer )] poses dangerous health risks"
  #Meet a mystic
  pilgrimage.2010.t: "$pilgrimage_header$ The Mystic"
- pilgrimage.2010.desc:1 "[2010_mystic.GetTitledFirstName] is one of the stranger people I have met on this journey. [2010_mystic.GetSheHe|U] seems to be a firm believer, but also expounds on the true nature of [ROOT.Char.GetFaith.HighGodName] and what it all means. At night, [2010_mystic.GetHerHis] tent is lit up by the candles within, and occasionally strange chanting and unusual incense flows from it.\n\nI am wholly unprepared when [2010_mystic.GetFirstNameNoTooltip] bids me to enter."
+ pilgrimage.2010.desc: "[2010_mystic.GetTitledFirstName] is one of the stranger people I have met on this journey. [2010_mystic.GetSheHe|U] seems to be a firm believer, but also expounds on the true nature of [ROOT.Char.GetFaith.HighGodName] and what it all means. At night, [2010_mystic.GetHerHis] tent is lit up by the candles within, and occasionally strange chanting and unusual incense flows from it.\n\nI am wholly unprepared when [2010_mystic.GetFirstNameNoTooltip] bids me to enter."
  pilgrimage.2010.a: "I am quite curious..."
  pilgrimage.2010.a.tt: "You enter the tent"
  pilgrimage.2010.b: "No thank you, this all smells of heresy to me!"
  #The Mystic has a lot to say about your faith
- pilgrimage.2011.desc:1 "Inside [2010_mystic.GetTitledFirstNamePossessive] tent, I am greeted by strong smells and an overwhelmingly hot and heavy air. "It is important that we turn our gaze within ourselves," [2010_mystic.GetSheHe] explains and takes a seat.\n\n"I want you to close your eyes and focus, as I do. Let [ROOT.Char.GetFaith.PantheonTerm] flow through you. Reach for the ecstasy of divinity!""
+ pilgrimage.2011.desc: "Inside [2010_mystic.GetTitledFirstNamePossessive] tent, I am greeted by strong smells and an overwhelmingly hot and heavy air. "It is important that we turn our gaze within ourselves," [2010_mystic.GetSheHe] explains and takes a seat.\n\n"I want you to close your eyes and focus, as I do. Let [ROOT.Char.GetFaith.PantheonTerm] flow through you. Reach for the ecstasy of divinity!""
  pilgrimage.2011.a: "Yes! I can feel my connection to [ROOT.Char.GetFaith.HighGodNameAlternate]!"
  pilgrimage.2011.a.tt: "You experience the ecstasy of divinity"
  pilgrimage.2011.b: "This is so comfortable, I might just fall asleep..."
@@ -389,13 +389,13 @@
  pilgrimage.2011.c: "Tell me, how does this have anything to do with [ROOT.Char.GetFaith.HighGodName]?"
  pilgrimage.2011.c.tt: "You engage the mystic in debate"
  #Fallback in case something happened in between events
- pilgrimage.2012.desc:1 "I cannot quite recall what happened after I entered the mystic tent. All I can remember is vague images and a sense of wooziness.\n\nNow I ask myself whether [2010_mystic.GetSheHe] was ever here at all..."
- pilgrimage.2012.a:1 "[2010_mystic.GetSheHe|U] had a lot of strange ideas."
+ pilgrimage.2012.desc: "I cannot quite recall what happened after I entered the mystic tent. All I can remember is vague images and a sense of wooziness.\n\nNow I ask myself whether [2010_mystic.GetSheHe] was ever here at all..."
+ pilgrimage.2012.a: "[2010_mystic.GetSheHe|U] had a lot of strange ideas."
  #Outcome of engaging
- pilgrimage.2013.desc:1 "After following [2010_mystic.GetTitledFirstNamePossessive] instructions, I can see it all much more clearly. I can #EMP feel#! it. [ROOT.Char.GetFaith.PantheonTerm|U], the world, it has all been coursing through my body. Through my soul.\n\nWhen I emerge from the tent hours later, I have a new understanding of myself, and of life."
+ pilgrimage.2013.desc: "After following [2010_mystic.GetTitledFirstNamePossessive] instructions, I can see it all much more clearly. I can #EMP feel#! it. [ROOT.Char.GetFaith.PantheonTerm|U], the world, it has all been coursing through my body. Through my soul.\n\nWhen I emerge from the tent hours later, I have a new understanding of myself, and of life."
  pilgrimage.2013.a: "I was blind before, and now I see."
  #Outcome of sleeping
- pilgrimage.2014.desc:1 "When I wake up from falling asleep in [2010_mystic.GetTitledFirstNamePossessive] tent, the tent itself is gone. My servants are rousing me from the mat I fell asleep on, but there is no other trace of the mystic.\n\nAt least the sleep was invigorating!"
+ pilgrimage.2014.desc: "When I wake up from falling asleep in [2010_mystic.GetTitledFirstNamePossessive] tent, the tent itself is gone. My servants are rousing me from the mat I fell asleep on, but there is no other trace of the mystic.\n\nAt least the sleep was invigorating!"
  pilgrimage.2014.a: "Why does my pouch feel curiously light?"
  pilgrimage.2014.pilfered.t: "Pilfered"
  pilgrimage.2014.pilfered.desc: "Someone tampers with your belongings"
@@ -403,7 +403,7 @@
  pilgrimage.2014.restful.desc: "You sleep safe and sound"
  pilgrimage.2014.a_restful: "That was a good rest."
  #Outcome of debating
- pilgrimage.2015.desc:1 "I'll be honest, I never expected [2010_mystic.GetTitledFirstName] to be able to answer for [2010_mystic.GetHerHis] strange practices as well as [2010_mystic.GetSheHe] did.\n\nI am still suspicious of... whatever it is [2010_mystic.GetSheHe] is up to, but I have certainly gotten some fresh perspectives to consider!"
+ pilgrimage.2015.desc: "I'll be honest, I never expected [2010_mystic.GetTitledFirstName] to be able to answer for [2010_mystic.GetHerHis] strange practices as well as [2010_mystic.GetSheHe] did.\n\nI am still suspicious of... whatever it is [2010_mystic.GetSheHe] is up to, but I have certainly gotten some fresh perspectives to consider!"
  pilgrimage.2015.a: "How #EMP can#! you get closer to [ROOT.Char.GetFaith.PantheonTerm]?"
  pilgrimage.2015.learning.t: "Learning Increased"
  pilgrimage.2015.learning.desc: "You learn something from debating the mystic"
@@ -468,7 +468,7 @@
  ###BP1 Events
  #Sneaking off to a tavern with your pal
  pilgrimage.6001.t: "The More the Merrier"
- pilgrimage.6001.desc:1 "I am plodding along in this lengthy procession towards [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip] and thinking of the comforts I left behind in [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] when I hear my name shouted from the rear.\n\nMy friend [friend.GetFirstNameNoTooltip] dashes up to me and exclaims, "[ROOT.Char.GetTitledFirstNameNoTooltip]! What luck that we journey toward the very same holy site! Would you care for some company on this long and lonely path to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]?""
+ pilgrimage.6001.desc: "I am plodding along in this lengthy procession towards [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip] and thinking of the comforts I left behind in [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] when I hear my name shouted from the rear.\n\nMy friend [friend.GetFirstNameNoTooltip] dashes up to me and exclaims, "[ROOT.Char.GetTitledFirstNameNoTooltip]! What luck that we journey toward the very same holy site! Would you care for some company on this long and lonely path to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]?""
  pilgrimage.6001.a: "My ear is always open to a friend."
  pilgrimage.6001.b: "I think I'd rather be alone, thanks."
  pilgrimage.6001.c: "Shame on you. We are here to focus on our faith!"
@@ -476,24 +476,24 @@
  pilgrimage.6002.desc: "[friend.GetFirstNameNoTooltip|U] and I spend the remainder of the day's journey chatting about this and that, intrigues and jests, battles and lovers, old friends and new. We are in the midst of a riveting conversation when a tired shout comes from the head of the column: "We make camp here!"\n\n[friend.GetFirstNameNoTooltip|U] looks over at me with a sly grin on [friend.GetHerHis] face and says, "Finally! Although, how about a short detour before setting up camp? A long day's journey can make a [friend.GetWomanMan] thirsty...""
  pilgrimage.6002.a: "Liquid refreshment sounds divine!"
  pilgrimage.6002.a_tt: "Visit the local tavern"
- pilgrimage.6002.b:1 "You go on ahead..."
+ pilgrimage.6002.b: "You go on ahead..."
  pilgrimage.6002.b_tt: "You carry on with your journey"
- pilgrimage.6002.c:1 "What heathen would visit the tavern on a pilgrimage?"
+ pilgrimage.6002.c: "What heathen would visit the tavern on a pilgrimage?"
  #Tavern, beginning
  pilgrimage.6003.desc: "We make our way into the packed tavern and [friend.GetFirstNameNoTooltip] immediately orders us two cups of [ROOT.Char.Custom('RegionalDrink')]. We sit and listen to a minstrel's tale and enjoy our drinks, talking intermittently of life's woes and triumphs.\n\nBy [ROOT.Char.GetFaith.HighGodName], this is refreshing after a long day of sweating and toiling on the road. I raise my cup and shout: "A toast to my friend [friend.GetFirstNamePossessiveNoTooltip] health for suggesting such a fine respite after today's journey!"\n\nThe tavern raises their cups in celebration of my fine friend and everyone drinks deeply."
  pilgrimage.6003.a: ""The next round is on me!""
  pilgrimage.6003.a_tt: "Keep reveling with [friend.GetShortUIName]"
  pilgrimage.6003.b: "We should return to camp, lest we are missed."
- pilgrimage.6003.b.tt:1 "You and [friend.GetFirstNameNoTooltip] call an end to the night and head back to camp"
+ pilgrimage.6003.b.tt: "You and [friend.GetFirstNameNoTooltip] call an end to the night and head back to camp"
  #Tavern, crash
  pilgrimage.6004.desc: "After perhaps a few too many rounds of [ROOT.Char.Custom('RegionalDrink')], [friend.GetFirstNameNoTooltip] and I inspire our fellow tavern goers to a chorus of drinking songs whilst we mark the beat upon the tables.\n\nWith a #EMP crash#! and more splinters than I care to count, we tumble through the floor and into the wine cellar, bravely adventuring where few [ROOT.Char.GetWomenMen] have gone before.\n\nAll our fellow merrymakers stare down at us from the main floor with mixed emotions of concern and schadenfreude. They are obviously looking for a report from the cellar."
  pilgrimage.6004.a: ""[ROOT.Char.Custom('RegionalDrink')|U] for everyone!""
- pilgrimage.6004.a.tt:1 "You tap the newly unearthed casks and share your booty with the crowd"
+ pilgrimage.6004.a.tt: "You tap the newly unearthed casks and share your booty with the crowd"
  pilgrimage.6004.b: ""I believe we've overstayed our welcome...""
  #Returning to camp
  pilgrimage.6005.desc: "We not-so-quietly make our way back to camp, praying earnestly that everyone has long since gone to bed. Coming upon our tents, we can see the fire still alight "
- pilgrimage.6005.desc.bad:1 "and every member of our pilgrimage turns to stare at us.\n\nWe can hardly maintain our composure for the great amount of [ROOT.Char.Custom('RegionalDrink')] in our bellies.\n\nAs we relate the ventures of our evening to anyone who will listen, a particularly zealous member of the pilgrimage camp gives me a stern look and insists that we pay for the damages at the nearby tavern."
- pilgrimage.6005.desc.good:1 "but not a single thing is stirring.\n\nThe campfire seems to have been fed directly before bed to keep the chill out of our beds."
+ pilgrimage.6005.desc.bad: "and every member of our pilgrimage turns to stare at us.\n\nWe can hardly maintain our composure for the great amount of [ROOT.Char.Custom('RegionalDrink')] in our bellies.\n\nAs we relate the ventures of our evening to anyone who will listen, a particularly zealous member of the pilgrimage camp gives me a stern look and insists that we pay for the damages at the nearby tavern."
+ pilgrimage.6005.desc.good: "but not a single thing is stirring.\n\nThe campfire seems to have been fed directly before bed to keep the chill out of our beds."
  pilgrimage.6005.a: "Such kind and thoughtful traveling companions we have!"
  pilgrimage.6005.b: ""We should pay for our misfortunes!""
  pilgrimage.6005.c: ""Is it a crime to have a good time?""
@@ -504,7 +504,7 @@
  pilgrimage.6006.c: ""You make some good points...""
  #You and a friend are on a pilgrimage and your friend is healed in a miracle performed by a wandering priest
  pilgrimage.6007.t: "Living on a Prayer"
- pilgrimage.6007.desc:1 "My [ROOT.Char.Custom2('RelationToMe' , SCOPE.sC('friend'))] [friend.GetFirstName], plagued by [friend.GetHerHis] affliction, struggles to keep up with us on our pilgrimage. So, I walk alongside [friend.GetHerHim] and keep [friend.GetHerHim] company. A wandering [ROOT.Char.GetFaith.PriestNeuter] has been traveling with us for a time and notices [friend.GetFirstNamePossessiveNoTooltip] struggle.\n\n"You poor soul. A child of [ROOT.Char.GetFaith.HighGodName] should not toil so on [friend.GetHerHis] way to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]," he says. "Perhaps [ROOT.Char.GetFaith.HealthGodName] might grant me the power to cure you of your affliction. Would you permit me to try?"\n\nMy [ROOT.Char.Custom2('RelationToMe' , SCOPE.sC('friend'))] turns to me, seeking my guidance. "What do you think, [ROOT.Char.GetFirstName]?""
+ pilgrimage.6007.desc: "My [ROOT.Char.Custom2('RelationToMe' , SCOPE.sC('friend'))] [friend.GetFirstName], plagued by [friend.GetHerHis] affliction, struggles to keep up with us on our pilgrimage. So, I walk alongside [friend.GetHerHim] and keep [friend.GetHerHim] company. A wandering [ROOT.Char.GetFaith.PriestNeuter] has been traveling with us for a time and notices [friend.GetFirstNamePossessiveNoTooltip] struggle.\n\n"You poor soul. A child of [ROOT.Char.GetFaith.HighGodName] should not toil so on [friend.GetHerHis] way to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]," he says. "Perhaps [ROOT.Char.GetFaith.HealthGodName] might grant me the power to cure you of your affliction. Would you permit me to try?"\n\nMy [ROOT.Char.Custom2('RelationToMe' , SCOPE.sC('friend'))] turns to me, seeking my guidance. "What do you think, [ROOT.Char.GetFirstName]?""
  pilgrimage.6007.a: "[ROOT.Char.GetFaith.HighGodName] truly watches over us."
  pilgrimage.6007.a.success: "[friend.GetFirstNameNoTooltip] is healed"
  pilgrimage.6007.a.failure: "[friend.GetFirstNamePossessiveNoTooltip] condition worsens"
@@ -513,7 +513,7 @@
  ###'Temptation/Virtue' Journey Events
  #Rakish or Lustful character considers making a pit stop, or perhaps, a detour to the local brothels
  pilgrimage.2101.t: "$pilgrimage_header$ A Desire for Intimacy"
- pilgrimage.2101.desc:1 "How long has it been since I last felt the warmth of another person against my skin? This pilgrimage has taken me far away from my home, as well as my comforts.\n\nOh, how I yearn for the desires of flesh. These fantasies won't stop flooding my mind, and I feel myself tempted to give in to my desires so that I can focus."
+ pilgrimage.2101.desc: "How long has it been since I last felt the warmth of another person against my skin? This pilgrimage has taken me far away from my home, as well as my comforts.\n\nOh, how I yearn for the desires of flesh. These fantasies won't stop flooding my mind, and I feel myself tempted to give in to my desires so that I can focus."
  pilgrimage.2101.desc.lust_vice: "\n\n[ROOT.Char.GetFaith.HighGodName], I know this feeling is sin! Why must you test me so harshly? Is my pilgrimage not enough to prove my devotion?"
  pilgrimage.2101.desc.lust_virtue: "\n\nSurely this must be part of [ROOT.Char.GetFaith.HighGodNamePossessive] trials! Can I remain virtuous without falling victim to possible enemies of the faith while on pilgrimage?"
  pilgrimage.2101.desc.lust_neutral: "This niggling feeling is an annoyance I must rid myself of! But of course, it's not without risk. These are different lands than my home, and I may be taken advantage of in this moment of weakness."
@@ -522,7 +522,7 @@
  pilgrimage.2101.c: "I must stay strong and focus on my pilgrimage!"
  #Persistent Beggar
  pilgrimage.2501.t: "$pilgrimage_header$ Wretched Pauper"
- pilgrimage.2501.desc.opening:1 "As my entourage travels through a small town, I feel a tug on the hem of my clothes. Turning to look, I see a thin, raggedy [beggar.GetWomanMan], staring up at me.\n\n"Oh great [ROOT.Char.GetLadyLord], I beg of you, could you spare some coins for a poor beggar? I am starving, and none of the locals will aid me.""
+ pilgrimage.2501.desc.opening: "As my entourage travels through a small town, I feel a tug on the hem of my clothes. Turning to look, I see a thin, raggedy [beggar.GetWomanMan], staring up at me.\n\n"Oh great [ROOT.Char.GetLadyLord], I beg of you, could you spare some coins for a poor beggar? I am starving, and none of the locals will aid me.""
  pilgrimage.2501.desc.virtue.generous: "\n\nThough generosity is not in my nature, being on pilgrimage reminds me that charity is expected from all devout [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip]..."
  pilgrimage.2501.desc.virtue.compassionate: "\n\nThough I am indifferent to [beggar.GetHerHis] plight, being on pilgrimage reminds me that compassion for the less fortunate is expected from all devout [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip]..."
  pilgrimage.2501.desc.sin.generous: "\n\nAs pitiful as the wretch looks, I remember that [ROOT.Char.GetFaith.PantheonTerm] considers charity to be a grave sin..."
@@ -554,7 +554,7 @@
  pilgrimage.2504.c.sin: "Yes, yes, just please... go."
  #Cocky Lordling
  pilgrimage.2511.t: "$pilgrimage_header$ Cocky Lordling"
- pilgrimage.2511.desc.start:1 "[ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip] attracts pilgrims from all over the [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] world, so it is not inconceivable that I would run into [lordling.Custom2('MyCharacterIntroduction', ROOT.Char)] on my journey.\n\nWhat #EMP is#! inconceivable is the insolent way [lordling.GetSheHe] has treated me, cutting off my entourage on [lordling.GetHerHis] horse and calling me a [ROOT.Char.Custom('InsultNoun')]... #EMP to my face#!, no less!"
+ pilgrimage.2511.desc.start: "[ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip] attracts pilgrims from all over the [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] world, so it is not inconceivable that I would run into [lordling.Custom2('MyCharacterIntroduction', ROOT.Char)] on my journey.\n\nWhat #EMP is#! inconceivable is the insolent way [lordling.GetSheHe] has treated me, cutting off my entourage on [lordling.GetHerHis] horse and calling me a [ROOT.Char.Custom('InsultNoun')]... #EMP to my face#!, no less!"
  pilgrimage.2511.desc.wrathful: "\n\nMy blood boils, tempered only by the knowledge that the [ROOT.Char.GetFaith.PriestNeuterPlural] tell us to exercise restraint and not let our emotions take control."
  pilgrimage.2511.desc.vengeful: "\n\nIt is times like this I am reminded [ROOT.Char.GetFaith.PantheonTerm] commands us to forgive those who have wronged us."
  pilgrimage.2511.desc.vengeful.christian: "\n\nIt is times like this I am reminded Jesus commanded us to turn the other cheek..."
@@ -580,11 +580,11 @@
  pilgrimage.3002.c.failure: "You are unable to counter the preacher's arguments"
  pilgrimage.3002.d: "Ignore [naked_preacher.GetHerHim] and continue on my journey."
  #You convinced the naked preacher
- pilgrimage.3003.t:1 "$pilgrimage_header$ Adam's Guilt"
- pilgrimage.3003.desc:1 "Having been bested in theological debate, the [naked_preacher.GetWomanMan] has climbed down from the rock and is now standing in front of me, taken aback by the situation.\n\n"... I truly believed the key was in the garbs," [naked_preacher.GetSheHe] whispers, somberly. "But your perspective is truly enlightening."\n\n[naked_preacher.GetSheHe|U] blinks, suddenly remembering the crowd and [naked_preacher.GetHerHis] own bareness but keeping a brave face: "However should I progress now...""
- pilgrimage.3003.a:1 "You can put these on and join us for [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]."
- pilgrimage.3003.a.flavor:1 "You hand the naked [naked_preacher.GetWomanMan] some clothes."
- pilgrimage.3003.b:1 "Go forth and spread the #EMP correct#! word."
+ pilgrimage.3003.t: "$pilgrimage_header$ Adam's Guilt"
+ pilgrimage.3003.desc: "Having been bested in theological debate, the [naked_preacher.GetWomanMan] has climbed down from the rock and is now standing in front of me, taken aback by the situation.\n\n"... I truly believed the key was in the garbs," [naked_preacher.GetSheHe] whispers, somberly. "But your perspective is truly enlightening."\n\n[naked_preacher.GetSheHe|U] blinks, suddenly remembering the crowd and [naked_preacher.GetHerHis] own bareness but keeping a brave face: "However should I progress now...""
+ pilgrimage.3003.a: "You can put these on and join us for [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]."
+ pilgrimage.3003.a.flavor: "You hand the naked [naked_preacher.GetWomanMan] some clothes."
+ pilgrimage.3003.b: "Go forth and spread the #EMP correct#! word."
  #Doomsayer claiming the end is nigh!
  pilgrimage.3004.t: "$pilgrimage_header$ The End Is Nigh"
  pilgrimage.3004.desc: "As my party passes through a small town I notice a throng of people filling the market square. At the center a [doomsayer.GetWomanMan] stands on an overturned fish cart, shouting wildly to all who will listen.\n\n"The Day of Judgement is nigh! Repent! Repent I say, or you shall be damned for all eternity!"\n\nThe worried looking townsfolk nervously whisper to each other, fearful of the doomsayer's words."
@@ -603,7 +603,7 @@
  ###Muslim Pilgrimage Journey Events
  #Ziyarat - Why am I taking this pilgrimage?
  pilgrimage.3102.t: "$pilgrimage_header$ Ziyarat"
- pilgrimage.3102.desc:1 "Though the Hajj is mandatory for all Muslims, pilgrimages to other locations are far less common. As these Ziyarat are not required by Islamic doctrine, the Muslims who chose to undertake them can have a wide variety of motivations for doing so.\n\nAs we travel along the road to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip], I find myself thinking about what made me want to take this journey in particular..."
+ pilgrimage.3102.desc: "Though the Hajj is mandatory for all Muslims, pilgrimages to other locations are far less common. As these Ziyarat are not required by Islamic doctrine, the Muslims who chose to undertake them can have a wide variety of motivations for doing so.\n\nAs we travel along the road to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip], I find myself thinking about what made me want to take this journey in particular..."
  pilgrimage.3102.a: "I want to see the entirety of Allah's glorious creation."
  pilgrimage.3102.b: "My zeal burns so hot that I wish to do more than just the Hajj."
  pilgrimage.3102.c: "The doubts I harbor compel me to look for answers in distant lands."
@@ -622,7 +622,7 @@
  pilgrimage.3202.desc.nature: "The arrogance of man has led many to believe they are above nature, but they are wrong. The natural world exists in the truest, most purest state of being."
  pilgrimage.3202.desc.end: "\n\nAs we pass through a simple forest clearing, it strikes me just how serene and quiet it is. No struggle, no strife... just a simple peace enjoyed by the trees and shrubs."
  pilgrimage.3202.a: "Let us spend some time here, and contemplate the universe."
- pilgrimage.3202.a.tt:1 "Your [THIS.Char.GetInvolvedActivity.GetName] will be #N delayed several months#!"
+ pilgrimage.3202.a.tt: "Your [THIS.Char.GetInvolvedActivity.GetName] will be #N delayed several months#!"
  pilgrimage.3202.b: "Hurry up, let us get on with it!"
  pilgrimage.3202.b.tt: "You will reach your destination #P several weeks sooner#!"
 
@@ -636,25 +636,25 @@
 
  ###Hajj Arrival Event
  #Entering state of Ihram
- pilgrimage.3101.t:1 "Ihram"
- pilgrimage.3101.desc:1 "As I near Mecca, I find myself now standing before the Mīqāt, the boundary between the sacred spaces of Mecca and the outside world.\n\nFrom this point on I must enter a state of Ihram, undergoing a ritual cleansing and wearing only the prescribed attire. I must also refrain from sexual acts, swearing, and arrogant or rude thoughts."
+ pilgrimage.3101.t: "Ihram"
+ pilgrimage.3101.desc: "As I near Mecca, I find myself now standing before the Mīqāt, the boundary between the sacred spaces of Mecca and the outside world.\n\nFrom this point on I must enter a state of Ihram, undergoing a ritual cleansing and wearing only the prescribed attire. I must also refrain from sexual acts, swearing, and arrogant or rude thoughts."
  pilgrimage.3101.a: "I will commit to Ihram with the utmost dedication."
  pilgrimage.3101.b: "Ehh... it's not like anyone will know if I slip up."
 
  ###Generic Pilgrimage Destination Events
  #Standard arrival
  pilgrimage.4001.t: "The Arrival"
- pilgrimage.4001.desc:1 "I am finally here, body and soul, at the great [ROOT.Char.GetFaith.HouseOfWorship] of [ROOT.Char.GetCurrentLocation.GetNameNoTooltip].\n\nAs the [ROOT.Char.GetFaith.BishopNeuter] offers me blessings, I reflect on everything that had to happen for [ROOT.Char.GetFaith.PantheonTerm] to bring me here, at this moment in time."
+ pilgrimage.4001.desc: "I am finally here, body and soul, at the great [ROOT.Char.GetFaith.HouseOfWorship] of [ROOT.Char.GetCurrentLocation.GetNameNoTooltip].\n\nAs the [ROOT.Char.GetFaith.BishopNeuter] offers me blessings, I reflect on everything that had to happen for [ROOT.Char.GetFaith.PantheonTerm] to bring me here, at this moment in time."
  pilgrimage.4001.cynical_end: "\n\nA whole lot of walking."
  pilgrimage.4001.a: "I have walked the holy path."
  pilgrimage.4001.a_dead: "We have walked the holy path."
  pilgrimage.4001.a_cynical: "What's important is that I am seen and heard here."
  pilgrimage.4001.a.adunaic: "I have walked and experienced proof of our Greatness."
  #The Mystic is there!
- pilgrimage.4002.desc:1 "I am finally here, body and soul, at the end of my great pilgrimage. And who should meet me there but [2010_mystic.GetTitledFirstName], the seeker of true knowledge of the divine?\n\n"Look around you, [ROOT.Char.GetFirstNameNoTooltip]!" [2010_mystic.GetSheHe] says. "Is this glory not as I said it would be?""
+ pilgrimage.4002.desc: "I am finally here, body and soul, at the end of my great pilgrimage. And who should meet me there but [2010_mystic.GetTitledFirstName], the seeker of true knowledge of the divine?\n\n"Look around you, [ROOT.Char.GetFirstNameNoTooltip]!" [2010_mystic.GetSheHe] says. "Is this glory not as I said it would be?""
  pilgrimage.4002.a: "Indeed it is, my friend!"
  pilgrimage.4002.a_cynical: "It's... something all right."
- pilgrimage.4002.b:1 "Oh yes, I do like what I'm seeing."
+ pilgrimage.4002.b: "Oh yes, I do like what I'm seeing."
  #Obligatory Pilgrimage Skip Destination Event
  pilgrimage.4010.t: "Been There"
  pilgrimage.4010.desc: "Cutting corners and rushing the entourage, we have finally arrived in [ROOT.Char.GetCurrentLocation.GetNameNoTooltip].\n\nNot wanting to dillydally, as soon as the sacred duties for our [ROOT.Char.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName] have been performed, the local servants notify me that our travel is prepared and ready for the return trip."
@@ -697,7 +697,7 @@
  ###Jewish
  #Mount Sinai
  pilgrimage.5101.t: "Sinai and Horeb"
- pilgrimage.5101.desc:1 "[ROOT.Char.GetFaith.HighGodName] first spoke to Moses on the top of Mt. Sinai, taking on the form of a burning bush. Later, on the same mountain, [ROOT.Char.GetFaith.HighGodNameSheHe|U] delivered onto him the Ten Commandments, which have formed the foundation of all Abrahamic doctrine.\n\nIt is without question that [ROOT.Char.GetFaith.HighGodName] favors this place, and I find myself wondering if [ROOT.Char.GetFaith.HighGodNameSheHe|U] is looking down at me as I stand on these sacred slopes..."
+ pilgrimage.5101.desc: "[ROOT.Char.GetFaith.HighGodName] first spoke to Moses on the top of Mt. Sinai, taking on the form of a burning bush. Later, on the same mountain, [ROOT.Char.GetFaith.HighGodNameSheHe|U] delivered onto him the Ten Commandments, which have formed the foundation of all Abrahamic doctrine.\n\nIt is without question that [ROOT.Char.GetFaith.HighGodName] favors this place, and I find myself wondering if [ROOT.Char.GetFaith.HighGodNameSheHe|U] is looking down at me as I stand on these sacred slopes..."
  ###Muslim
  #Medina
  pilgrimage.5201.t: "The Hegira"
@@ -708,7 +708,7 @@
  pilgrimage.5301.desc: "At last I have arrived in Varanasi. Founded by the god Shiva in far-back antiquity, the great city attracts pilgrims from long and far.\n\nIt is not just Hindu pilgrims who travel here though, as the city is near the site where Gautama Buddha first taught his disciples.\n\nSeeing this mixing of the faithful first-hand, and the knowledge and discussion that flow from it, makes me newly aware of how we all live in this world together."
  #Ayodhya
  pilgrimage.5311.t: "Ayodhya"
- pilgrimage.5311.desc:1 "At long last I have arrived in Ayodhya, birthplace of the god Rama and setting of the great epic Ramayana. As an incarnation of Vishnu, Rama's birth and life are considered to be a shining example of dharma in action.\n\nAs a tale which has inspired generations of Hindus, being at the place of the Ramayana makes me wonder what kind of mark my own legacy will leave on history..."
+ pilgrimage.5311.desc: "At long last I have arrived in Ayodhya, birthplace of the god Rama and setting of the great epic Ramayana. As an incarnation of Vishnu, Rama's birth and life are considered to be a shining example of dharma in action.\n\nAs a tale which has inspired generations of Hindus, being at the place of the Ramayana makes me wonder what kind of mark my own legacy will leave on history..."
  #Mathura
  pilgrimage.5321.t: "Mathura"
  pilgrimage.5321.desc: "I have finally arrived at my destination, Mathura. It is here that the god Krishna was born, the deity compassion, love, and tenderness.\n\nLooking around, I can see all of those aspects displayed by the pilgrims who flock here to worship at the Krishna Janmasthan Temple Complex, one of the most splendid and grand pieces of religious architecture build to date."
@@ -717,7 +717,7 @@
  pilgrimage.5331.desc: "At long last I have arrived at the source of the sacred Ganges River, Haridwar.\n\nThe city was built upon the site where the goddess Ganga herself descended when Lord Shiva released the mighty river from his locks of hair.\n\nKnown for being able to wash away sins, pilgrims from all over the world flock here to bathe in the waters of the river. Now I will be one of them."
  #Kanchipuram
  pilgrimage.5341.t: "Kanchipuram"
- pilgrimage.5341.desc:1 "At long last I have arrived in Kanchipuram, home of the Kamakshi Amman Temple.\n\nDedicated to the mother goddess, this temple is known as a place of peace and prosperity, and remains one of the seven holiest sites in Hinduism. "
+ pilgrimage.5341.desc: "At long last I have arrived in Kanchipuram, home of the Kamakshi Amman Temple.\n\nDedicated to the mother goddess, this temple is known as a place of peace and prosperity, and remains one of the seven holiest sites in Hinduism. "
  #Ujjayini
  pilgrimage.5351.t: "Ujjayini"
  pilgrimage.5351.desc: "Arriving in the ancient city of Ujjain, I begin making my way towards the Mahakaleshwar Jyotirlinga.\n\nDedicated to Lord Shiva in his incarnation as Mahakaleshwar, the city has long been both a pilgrimage and administrative center, creating a great bustling metropolis that pulses with the lives of the faithful.\n\nAfter arriving at the great temple I seek the blessing of the [ROOT.Char.GetFaith.BishopNeuter], cleaning my soul of its sins."
@@ -737,7 +737,7 @@
  ###Jainism
  #Shikharj
  pilgrimage.5501.t: "Shikharji"
- pilgrimage.5501.desc:1 "According to the Nirvana Kanda, twenty of the twenty-four Jain tirthankaras attained Moksha here on the mountain of Shikharji. Such a storied history has made this place the most important pilgrimage site in the Jain community, and as my gaze wanders from the highest peaks to the lowest reaches I find myself reflecting on my own journey here and what it means for my life."
+ pilgrimage.5501.desc: "According to the Nirvana Kanda, twenty of the twenty-four Jain tirthankaras attained Moksha here on the mountain of Shikharji. Such a storied history has made this place the most important pilgrimage site in the Jain community, and as my gaze wanders from the highest peaks to the lowest reaches I find myself reflecting on my own journey here and what it means for my life."
  ###Zoroastrian
  #Ushi-darena
  pilgrimage.5601.t: "The Divine Consciousness"
@@ -854,16 +854,16 @@
  pilgrimage.5921.desc: "At last I have finally arrived in [destination_title.GetNameNoTierNoTooltip]. While some worship in great temples, I know the most sacred of places are in the open forest where bare feet are caressed by the soft, nourishing earth.\n\nThe old groves here are especially venerable, and I find myself wondering about my place in the natural world as I stand amongst the great trees."
  ###Remaining at a Holy Site events
  #Appreciation
- pilgrimage.6500.t:1 "Appreciation"
- pilgrimage.6500.desc:1 "[pilgrimage_member.GetTitledFirstName], my [ROOT.Char.Custom2('RelationToMe', pilgrimage_member)], peers out over the sprawling holy site of [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier] as we make our way through the crowd:\n\n"[ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTierNoTooltip] is truly a sight to behold! A place where cultures meet and faiths come together to worship. Are we not blessed to get to experience such familiarity and companionship?"\n\n[pilgrimage_member.GetSheHe|U] looks at me expectantly."
- pilgrimage.6500.a:1 "I #EMP know!#! Let us enjoy this!"
+ pilgrimage.6500.t: "Appreciation"
+ pilgrimage.6500.desc: "[pilgrimage_member.GetTitledFirstName], my [ROOT.Char.Custom2('RelationToMe', pilgrimage_member)], peers out over the sprawling holy site of [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier] as we make our way through the crowd:\n\n"[ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTierNoTooltip] is truly a sight to behold! A place where cultures meet and faiths come together to worship. Are we not blessed to get to experience such familiarity and companionship?"\n\n[pilgrimage_member.GetSheHe|U] looks at me expectantly."
+ pilgrimage.6500.a: "I #EMP know!#! Let us enjoy this!"
  pilgrimage.6500.a.tt: "Your culture does not have the [GetCultureTradition('tradition_xenophilic').GetName] tradition"
  pilgrimage.6500.b: "The feats spirituality can achieve!"
  pilgrimage.6500.c: "Man built this place, not divinities."
  #Lost in Translation
- pilgrimage.6510.t:1 "Lost in Translation"
- pilgrimage.6510.desc:1 "As I stroll around the streets of [ROOT.Char.GetCurrentLocation.GetNameNoTooltip], I stop in front of a small [ROOT.Char.GetFaith.HouseOfWorship]. The building is comparatively bland and humble, but a small crowd of pilgrims has gathered in front of it.\n\nWhen I move in closer I realize they are scratching their heads trying to make sense of the plaque next to one of the guardian statues, written in a foreign language.\n\nThis could be an opportunity to do my fellow pilgrims a service!"
- pilgrimage.6510.a:1 "#EMP I#! will translate it for you all!"
+ pilgrimage.6510.t: "Lost in Translation"
+ pilgrimage.6510.desc: "As I stroll around the streets of [ROOT.Char.GetCurrentLocation.GetNameNoTooltip], I stop in front of a small [ROOT.Char.GetFaith.HouseOfWorship]. The building is comparatively bland and humble, but a small crowd of pilgrims has gathered in front of it.\n\nWhen I move in closer I realize they are scratching their heads trying to make sense of the plaque next to one of the guardian statues, written in a foreign language.\n\nThis could be an opportunity to do my fellow pilgrims a service!"
+ pilgrimage.6510.a: "#EMP I#! will translate it for you all!"
  pilgrimage.6510.a.flavor: "I can't believe this plaque has a #EMP spelling mistake!#!"
  pilgrimage.6510.b: "What does that plaque say...?"
  pilgrimage.6510.b_success.t: "Plaque Deciphered"
@@ -873,10 +873,10 @@
  pilgrimage.6510.c: "Eh, this hardly seems worth it."
  #Time To Go Home Soon?
  pilgrimage.6520.t: "Time to Go Home Soon?"
- pilgrimage.6520.desc:1 "[impatient_pilgrim.GetTitledFirstName] trots around with our pilgrimage troop, loudly sighing and dragging [impatient_pilgrim.GetHerHis] feet: "It feels like we've been here for ages. Isn't it time to start going back home soon?" [impatient_pilgrim.GetSheHe] mutters impatiently.\n\nI shoot [impatient_pilgrim.GetHerHim] a sideways glance, and"
+ pilgrimage.6520.desc: "[impatient_pilgrim.GetTitledFirstName] trots around with our pilgrimage troop, loudly sighing and dragging [impatient_pilgrim.GetHerHis] feet: "It feels like we've been here for ages. Isn't it time to start going back home soon?" [impatient_pilgrim.GetSheHe] mutters impatiently.\n\nI shoot [impatient_pilgrim.GetHerHim] a sideways glance, and"
  pilgrimage.6520.desc_forgiving: "feel a bit of compassion for [impatient_pilgrim.GetHerHim]. It's not fun being dragged along."
  pilgrimage.6520.desc_nonforgiving: "can't believe the #EMP nerve#! of [impatient_pilgrim.GetHerHim]. I tighten my fists."
- pilgrimage.6520.a:1 "How #EMP dare#! you be so insolent!"
+ pilgrimage.6520.a: "How #EMP dare#! you be so insolent!"
  pilgrimage.6520.b: "Come, let me show you this marvelous statue over there."
  pilgrimage.6520.c: "I see what you mean."
  #Fishy local guide?
@@ -956,7 +956,7 @@
  pilgrimage.6760.desc.intro: "As we listen to the morning prayers, [bishop_pilgrim.GetTitledFirstName] and I have a lively discussion that quickly diverts into theological matters.\n\n"
  pilgrimage.6760.desc.christian: ""It would be foolish to say that 'having been made flesh' means that Christ inexplicably and incomprehensibly became man from the Word, having united together hypostatically."\n\n"But, as Nestorius himself said," [bishop_pilgrim.GetTitledFirstName] refutes, "Christ the man could also be made divine, son by grace and not by nature.""
  pilgrimage.6760.a: ""I will not listen to this blasphemous nonsense!""
- pilgrimage.6760.b:1 ""And you know how the Council of Ephesus went down for #EMP him#!.""
+ pilgrimage.6760.b: ""And you know how the Council of Ephesus went down for #EMP him#!.""
  pilgrimage.6760.b.success: "[bishop_pilgrim.GetShortUIName] is convinced"
  pilgrimage.6760.b.failure: "[bishop_pilgrim.GetShortUIName] maintains [bishop_pilgrim.GetHerHis] position"
  pilgrimage.6760.c: ""Well said, friend. Let's go for a walk now.""
@@ -1075,7 +1075,7 @@
  pilgrimage.9001.desc_intro: "My journey has been a long one, but I have finally come home again. "
  pilgrimage.9001.desc_invalidated: "\n\nDue to an unlucky turn of events my pilgrimage was cut short and I unfortunately did not get to visit [missed_holy_site.GetNameNoTooltip]. It bothers me, but less so each day.\n\nI can only assume this was all a part of [ROOT.Char.GetFaith.HighGodNameAlternatePossessive] plan."
  pilgrimage.9001.desc_buried_there: "Through the resolve to finish [old_pilgrimage_host.GetTitledFirstNamePossessive] pilgrimage, I now rest easily knowing that [old_pilgrimage_host.GetSheHe] has [old_pilgrimage_host.GetHerHis] final resting place in the sanctity of [burial_location.GetNameNoTierNoTooltip].\n\nAnd while much remains the same, my [ROOT.Char.GetFaith.AltPriestTermPlural] insist that this holy journey has changed something about me, whether I can see it myself or not."
- pilgrimage.9001.desc:1 "While much remains the same, something has changed in how the [ROOT.Char.GetFaith.PriestNeuterPlural] and [ROOT.Char.GetFaith.BishopNeuterPlural] treat me.\n\nI have undergone the journey of a holy [ROOT.Char.GetWomanMan], and they insist it has changed something about me, whether I can see it myself or not."
+ pilgrimage.9001.desc: "While much remains the same, something has changed in how the [ROOT.Char.GetFaith.PriestNeuterPlural] and [ROOT.Char.GetFaith.BishopNeuterPlural] treat me.\n\nI have undergone the journey of a holy [ROOT.Char.GetWomanMan], and they insist it has changed something about me, whether I can see it myself or not."
  pilgrimage.9001.a: "It is good to be home."
  pilgrimage.9001.a_invalidated: "Let the chips fall where they may."
  pilgrimage.9001.a.tt: "Your journey has concluded"
