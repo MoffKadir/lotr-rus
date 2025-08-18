@@ -52,6 +52,10 @@
  buy_blacklock_mercentary_interaction_interaction_notification: "Наняты наёмники из клана Черновласов"
  cooldown_bought_blacklock_mercenaries: "Повторно нанять наёмников можно только после [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'bought_blacklock_mercenaries') )]"
 
+ dwarves_unlikely_to_convert_to_non_dwarven_religion: "[Concept('dwarves', 'Гномы')|E] не склонны обращаться в не-гномью [Concept('faith', 'конфессию')|E]: $VALUE|=+0$#!"
+ dwarves_likely_to_convert_to_dwarven_religion: "[Concept('dwarves', 'Гномы')|E] более склонны обращаться в гномью [Concept('faith', 'конфессию')|E]: $VALUE|=+0$#!"
+ dwarves_practice_dwarven_religion_in_secret: "[dwarf|E]: $VALUE|+0=$"
+
  establish_defensive_alliance_interaction: "Заключить оборонительный союз"
  establish_defensive_alliance_interaction_desc: "Использовать имеющиеся связи с персонажем [recipient.GetName], чтобы договориться с ним об [Concept( 'defensive_alliance', 'оборонительном союзе' )|E]."
  negotiate_defensive_alliance_effect_recipient_tooltip: "Будет заключён взаимный [defensive_alliance|El] с персонажем [actor.GetTitledFirstName]"
@@ -78,7 +82,7 @@
  ally_with_tributary_ruler: "[recipient.GetTitledFirstName] будет [Select_CString(recipient.IsFemale, 'освобождена', 'освобождён' )] в качестве [Concept('tributary', 'данника')|E]"
  balan_lai_hesitant_to_fight_other_balan_lai: "[recipient.GetTitledFirstName] не решается сражаться с другим членом Балан-лай"
 
- need_three_dwarven_patrons_to_request_troops: "#V Вам#! нужно как минимум #bold 5#! покровителей-гномов!"
+ need_three_dwarven_patrons_to_request_troops: "#V Вам#! нужно как минимум #bold 5#! покровителей-[Concept('dwarven', 'гномов')|E]!"
  need_one_racial_patron: "#V Вам#! нужен как минимум #bold 1#! покровитель из числа представителей местной расы!"
  either_elf_or_maiar: "#V Вы#! - [maiargods|E] либо [elf|El]"
 
