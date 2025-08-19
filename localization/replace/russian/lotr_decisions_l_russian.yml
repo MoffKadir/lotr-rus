@@ -78,7 +78,7 @@
  decision_noldor_eriador_confirm: "Пусть Эриадор вновь процветает в мире!"
  decision_noldor_eriador_tooltip: "Утвердить гегемонию нолдор над Эриадором"
  decision_noldor_eriador_effect: "Все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_eriador').GetName] получат модификатор [GetModifier('elven_homeland_county_modifier').GetNameWithTooltip]" 
- no_evil_rulers_in_misty_mountains_tt: "В регионе [GetGeographicalRegion('middleearth_mountains_misty').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
+ no_evil_rulers_in_misty_mountains_tt: "В регионе [GetGeographicalRegion('custom_misty_mountian_surface_caves').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
  no_evil_rulers_in_blue_mountains_tt: "В регионе [GetGeographicalRegion('middleearth_mountains_blue').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
  no_evil_rulers_in_forodwaith_tt: "В регионе [GetGeographicalRegion('middleearth_forodwaith').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
  no_evil_rulers_in_anduin_tt: "В регионе [GetGeographicalRegion('middleearth_west_rhovanion_anduin').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
@@ -335,6 +335,12 @@
  TITLES_GAIN_OLIGARCHIC_SUCCESSION: "Все подконтрольные титулы получат закон #high Олигархические выборы#!"
  ALL_VASSALS_BECOME_OLIGARCHIC: "Все вассалы примут #high олигархическую форму правления#!"
 
+ decision_adopt_feudal_from_oligarchy: "Принять [ROOT.Char.Custom('GetTribalReformGovernment')|l]"
+ decision_adopt_feudal_from_oligarchy_desc: "По мере роста державы становится всё сложнее управлять ей. Чтобы держава [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] и дальше могла расширяться и развиваться, мы должны оставить старые пути и принять феодализм."
+ decision_adopt_feudal_from_oligarchy_confirm: "Принять [ROOT.Char.Custom('GetTribalReformGovernment')|l]"
+ decision_adopt_feudal_from_oligarchy_tooltip: "Поменять [Concept('government', 'форму правления')|E] и выбрать [Concept('feudal', 'феодализм')|E] или [Concept('clan', 'клан')|E]"
+ TITLES_LOSE_OLIGARCHIC_SUCCESSION: "Все принадлежащие титулы потеряют закон #high Олигархические выборы#!"
+
  commit_suicide_decision_desc_black_breath: "Я чувствую холод, как будто иду сквозь кошмар. Солнце больше не греет мою кожу. Никто никогда не выздоравливает от этой странной болезни, я просто хочу забыться и уснуть навсегда."
 
  ritual_suicide_decision: "Принять Дар людей"
@@ -392,6 +398,7 @@
  decision_elevate_edhellond_desc: "Вы провозгласите, что отныне Эделлонд станет личной вотчиной, подчиняющейся только вам."
  decision_elevate_edhellond_confirm: "Эделлонд снова живёт!"
  decision_elevate_edhellond_tooltip: "Вы превратите Эделлонд в королевство."
+ edhellond_controlled_by_elf: "[GetTitleByKey('d_edhellond').GetName] находится под контролем [Concept('elf', 'эльфа')|E]"
 
  decision_gondor_x_bellakar: "Отправить послов в Беллакар"
  decision_gondor_x_bellakar_tooltip: "Попытаться возродить древний союз с [Concept('bellakar', 'Беллакаром')|E]"
@@ -1148,7 +1155,7 @@
  ####### Hadorim Decisions #######
  #################################
  decision_reunite_the_eotheod: "Воссоединить эотеод"
- decision_reunite_the_eotheod_tooltip: "Объединить разрозненные культуры народа хадорим"
+ decision_reunite_the_eotheod_tooltip: "Объединить разрозненные культуры народа хадоррим"
  decision_reunite_the_eotheod_desc: "Со времён Эорла и его великого похода на юг никто не правил всеми эотеод.\n\nНекоторые отстали под началом Леофра, заселив южные долины Андуина, а некоторые вообще отказались уходить, влача тяжёлое и шаткое существование в землях северного Андуина. Но в конечном итоге все мы родня, несмотря на мелкие разногласия, возникшие между нами.\n\nЕсли мы сможем собрать всех наших братьев под единым знаменем, мы сможем претендовать на мантию правителей единых эотеод."
  decision_reunite_the_eotheod_confirm: "Наконец-то наш народ вновь един."
  reunite_the_eotheod_hadorim_heritage_counties_outside_realm: "Общее количество [Concept('counties', 'графств')|E], [culture|El] которых имеет [culture_pillar|El] эотеод за пределами вашей [Concept('realm', 'державы')|E] = 0"
@@ -1245,7 +1252,7 @@
 
  decision_annex_east_forodwaith: "Интегрировать Восточный Фородвайт"
  decision_annex_east_forodwaith_tooltip: "Включить западные марки в состав нашей державы"
- decision_annex_east_forodwaith_desc: "Народы Восточного Фородвайта имеют глубокие связи с ангмаррим. Теперь, когда они признают мою власть, мы должны полностью подчинить их себе. Они должны научиться служить и бояться меня так же, как их сородичи."
+ decision_annex_east_forodwaith_desc: "Народы Восточного [Concept('forodwaith', 'Фородвайта')|E] имеют глубокие связи с ангмаррим. Теперь, когда они признают мою власть, мы должны полностью подчинить их себе. Они должны научиться служить и бояться меня так же, как их сородичи."
  decision_annex_east_forodwaith_confirm: "Их законное место!"
 
  decision_subjugate_the_ettenmoors: "Покорить Эттенмурс"
@@ -2270,6 +2277,34 @@
  decision_convince_easterling_lord_tt.2: "Персонаж [GetPlayer.MakeScope.Var('selected_character').Char.GetName] доступен"
  decision_convince_easterling_lord_effect.t1: "Отправиться в столицу персонажа [GetPlayer.MakeScope.Var('selected_character').Char.GetNamePossessive] #bold без#! вашего #V лагеря#!"
 
+ ####################################
+ ### Subsidize Cochineal Industry ###
+ ####################################
+ # Adapted from RICE
+ support_cochineal_industry: "Поддержать производство кошенили"
+ support_cochineal_industry_tooltip: "[Concept('cochineal', 'Кошениль')|E] - это выгодный экспорт!"
+ support_cochineal_industry_desc: "Некоторые из наших территорий находятся в пределах региона производства кошенили. Красный краситель, производимый [Concept('cochineal', 'кошенильными')|E] насекомыми, является ценным товаром, продаваемым по всему [Concept('middleearth', 'Средиземью')|E]. Если мы поддержим эту отрасль, купцы смогут продолжать экспортировать эти красители в больших количествах по всему миру." #[GetGeographicalRegion('special_cochineal_production_region').GetName]
+ support_cochineal_industry_effect_tooltip_1: "Сила этого [Concept('modifier', 'модификатора')|E] растёт от [Concept('counties', 'графств')|E] в [Concept('duchy', 'герцогствах')|E] с [Concept('duchy_building', 'герцогской постройкой')|E] $building_type_cochineal_industry_01$"
+ support_cochineal_industry_confirm: "Эти насекомые озолотят нас!"
+ RICE_cochineal_region_req: "Вы владеете [Concept('county', 'графством')|E] в регионе [GetGeographicalRegion('special_cochineal_production_region').GetName], которое #emp не#! является [Concept('orcish', 'орочьим')|E]"
+ RICE_every_cochineal_region_county: "Все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('special_cochineal_production_region').GetName], принадлежащие вам"
+ RICE_cochineal_industry_effect_desc_01: "При принятии [Concept('decision', 'решения')|E] #bold $support_cochineal_industry$#!, вместо базового [Concept('county_modifier', 'модификатора графства')|E] это [Concept('county', 'графство')|E] получит улучшенный [Concept('modifier', 'модификатор')|E] [GetModifier('cochineal_modifier_2').GetNameWithTooltip]."
+ RICE_cochineal_industry_effect_desc_02: "При принятии [Concept('decision', 'решения')|E] #bold $support_cochineal_industry$#!, вместо базового [Concept('county_modifier', 'модификатора графства')|E] это [Concept('county', 'графство')|E] получит улучшенный [Concept('modifier', 'модификатор')|E] [GetModifier('cochineal_modifier_3').GetNameWithTooltip]."
+ RICE_cochineal_industry_effect_desc_03: "При принятии [Concept('decision', 'решения')|E] #bold $support_cochineal_industry$#!, вместо базового [Concept('county_modifier', 'модификатора графства')|E] это [Concept('county', 'графство')|E] получит улучшенный [Concept('modifier', 'модификатор')|E] [GetModifier('cochineal_modifier_4').GetNameWithTooltip]."
+ rhun.0001.t: "Кошениль"
+ rhun.0001.desc: "Некоторые из территорий, которые я контролирую, находятся в пределах региона производства кошенили. Личинки [Concept('cochineal', 'кошенильных')|E] насекомых могут быть использованы для получения красивого красного красителя, который продается по заоблачным ценам на чужеземных рынках.\n\nТолько глупец не понимает важности поддержки производства кошенили, и я занимаюсь именно этим. Вкладываясь в плантации кошенили в этих регионах и поощряя торговцев покупать этот продукт и продавать его в других местах, мы можем помочь местной экономике расти – и, конечно, получать неплохие деньги за счет взимания пошлин с этой торговли." #[GetGeographicalRegion('special_cochineal_production_region').GetName]
+ rhun.0001.a: "Этот красный краситель озолотит нас."
+
+ # Modifiers
+ cochineal_modifier_1: "Вложения в производство кошенили (1 уровень)"
+ cochineal_modifier_1_desc: "Красный краситель, производимый на местных плантациях, получают из личинок [Concept('cochineal', 'кошенильных')|E] насекомых, и он является прибыльным товаром для экспорта. Местные правители делают всё возможное, чтобы поддержать сбор урожая и экспорт этих красителей.\n\n#EMP Сила этого [Concept('modifier', 'модификатора')|E] зависит от того, имело ли [Concept('duchy', 'герцогство')|E] этого [Concept('county', 'графства')|E] [Concept('duchy_building', 'герцогскую постройку')|E] $building_type_cochineal_industry_01$ в момент принятия [Concept('decision', 'решения')|E] «$support_cochineal_industry$».#!"
+ cochineal_modifier_2: "Вложения в производство кошенили (2 уровень)"
+ cochineal_modifier_2_desc: "$cochineal_modifier_1_desc$"
+ cochineal_modifier_3: "Вложения в производство кошенили (3 уровень)"
+ cochineal_modifier_3_desc: "$cochineal_modifier_1_desc$"
+ cochineal_modifier_4: "Вложения в производство кошенили (4 уровень)"
+ cochineal_modifier_4_desc: "$cochineal_modifier_1_desc$"
+
  ##############################
  #### Dol Guldur Decisions ####
  ##############################
@@ -2538,12 +2573,6 @@
  decision_usurp_dynast_desc: "Лжеправитель слишком долго занимал трон нашего народа, и пришло время другому занять его место."
  decision_usurp_dynast_confirm: "Отправить весть о моём правлении"
  army_bigger: "У вас больше войск, чем у главы вашего дома"
-
- decision_venerate_the_ancestors: "Почтить предков"
- decision_venerate_the_ancestors_tooltip: "Отвлечься от тягот правления, чтобы поразмышлять о деяниях своих предков"
- decision_venerate_the_ancestors_desc: "Среди [Concept('dwarves', 'гномов')|E] предков не просто помнят. Их почитают, их деяния высечены в камне. Их триумфы, их неудачи и длинная тень их наследия ложатся на ваши мысли. В воспоминаниях есть мудрость и сила, которую можно почерпнуть из прошлого."
- decision_venerate_the_ancestors_confirm: "Чтить прошлое - значит определять будущее."
- dwarf_employs_court_chaplain: "У вас нанят $councillor_court_chaplain$"
 
  dwarven_beard_care_decision: "Привести в порядок бороду"
  dwarven_beard_care_decision_desc: "Моя борода всегда была источником гордости и вдохновения для меня, как и для всех детей [Concept('mahalcharacter', 'Махала')|E]. Среди [Concept('dwarves', 'гномов')|E] длинная и ухоженная борода - это нечто большее, чем просто волосы. Отращивать её - значит чтить наследие наших предков, а поддерживать в надлежащем состоянии - значит проявлять дисциплину и уважение к традициям, которые нас связывают.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] хорошо ухаживать за своей, чтобы она выглядела наилучшим образом."

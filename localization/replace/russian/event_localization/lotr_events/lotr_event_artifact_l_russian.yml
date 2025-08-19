@@ -17,9 +17,9 @@
  ### Plundering Thorin's tomb ?
 
  lotr_artifact.0030.t:0 "Расхищение гробниц - Эребор"
- lotr_artifact.0030.desc.dwarf:0 "Долгое время Торин, сын Траина, сына Трора, король-под-Горой, покоился в своей каменной гробнице, прижимая к груди величайшее сокровище [Concept('erebor', 'Эребора')|E], Аркенстон. На его поясе висит легендарный меч Оркрист, выкованный в древнем [Concept('gondolin', 'Гондолине')|E].\n\nМоё желание взять эти артефакты и использовать их с пользой для моего народа велико, но все гномы сочли бы это святотатством."
- lotr_artifact.0030.desc.orc:0 "Наконец-то мы наказали уродливых гномов и повесили их отрубленные головы за бороды согласно нашим традициям. В глубинах лежит тело Торина, того, кого они называли Дубощитом. Блестящий Аркенстон и ненавистный Кусач захоронены вместе с ним. Гномы возненавидят меня за то, что я [Select_CString(ROOT.Char.IsFemale, 'забрала', 'забрал' )] их, но разве они меня уже не ненавидят?"
- lotr_artifact.0030.desc:0 "В глубинах [Concept('erebor', 'Эребора')|E] в каменной гробнице Торин Дубощит прижимает к груди величайшее сокровище Горы - Аркенстон. На его поясе висит легендарный меч Оркрист, выкованный в Гондолине в незапамятные времена.\n\n Гномы возненавидят меня за то, что я их [Select_CString(ROOT.Char.IsFemale, 'разграбила', 'разграбил' )], но они были бы очень полезны."
+ lotr_artifact.0030.desc.dwarf:0 "Долгое время [GetScriptedCharacterByHistoryID( 'lineofdurin83' ).GetFirstName], сын #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin82').GetID] #L Траина#!#!, сына #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin81').GetID] #L Трора#!#!, король-под-Горой, покоился в своей каменной гробнице, прижимая к груди величайшее сокровище [Concept('erebor', 'Эребора')|E], [Concept('arkenstone', 'Аркенстон')|E]. На его поясе висит легендарный меч [Glossary('Оркрист','orcrist_gloss')], выкованный в древнем [Concept('gondolin', 'Гондолине')|E].\n\nМоё желание взять эти артефакты и использовать их с пользой для моего народа велико, но все гномы сочли бы это святотатством."
+ lotr_artifact.0030.desc.orc:0 "Наконец-то мы наказали уродливых гномов и повесили их отрубленные головы за бороды согласно нашим традициям. В глубинах лежит тело #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина#!#!, того, кого они называли «Дубощитом». Блестящий [Concept('arkenstone', 'Аркенстон')|E] и ненавистный Кусач захоронены вместе с ним. Гномы возненавидят меня за то, что я [Select_CString(ROOT.Char.IsFemale, 'забрала', 'забрал' )] их, но разве они меня уже не ненавидят?"
+ lotr_artifact.0030.desc:0 "В глубинах [Concept('erebor', 'Эребора')|E] в каменной гробнице [GetScriptedCharacterByHistoryID( 'lineofdurin83' ).GetFirstNameNicknamedRegnal] прижимает к груди величайшее сокровище горы - [Concept('arkenstone', 'Аркенстон')|E]. На его поясе висит легендарный меч [Glossary('Оркрист','orcrist_gloss')], выкованный в [Concept('gondolin', 'Гондолине')|E] в незапамятные времена.\n\n[Concept('dwarves', 'Гномы')|E] возненавидят меня за то, что я их [Select_CString(ROOT.Char.IsFemale, 'разграбила', 'разграбил' )], но они были бы очень полезны."
  lotr_artifact.0030.a:0 "От них слишком много хлопот, я оставлю их там, где они есть"
  lotr_artifact.0030.b.dwarf:0 "Несмотря на то, что подумают мои сородичи, они более полезны живым"
  lotr_artifact.0030.b:0 "Они вполне заслуживают небольшой обиды"
@@ -30,15 +30,15 @@
 
  lotr_artifact.0031.t:0 "Это принадлежит мертвецу"
  lotr_artifact.0031.desc.intro:0 "Мне принадлежит "
- lotr_artifact.0031.desc.orcrist:0 "легендарный гондолинский клинок Оркрист"
- lotr_artifact.0031.desc.arkenstone:0 "Аркенстон из [Concept('erebor', 'Эребора')|E]"
+ lotr_artifact.0031.desc.orcrist:0 "легендарный гондолинский клинок [Glossary('Оркрист','orcrist_gloss')]"
+ lotr_artifact.0031.desc.arkenstone:0 "[Concept('arkenstone', 'Аркенстон')|E] из [Concept('erebor', 'Эребора')|E]"
  lotr_artifact.0031.desc.both:0 "и $lotr_artifact.0031.desc.orcrist$ и $lotr_artifact.0031.desc.arkenstone$"
- lotr_artifact.0031.desc.dwarf:0 ", похищенный из гробницы Торина Дубощита в глубинах [Concept('lonelymountain', 'Одинокой Горы')|E]. Это оскорбление в адрес гномьего народа было жестоким, и никогда не будет забыто. Гробница должна быть восстановлена!"
- lotr_artifact.0031.desc:0 ", похищенный из гробницы Торина Дубощита в глубинах [Concept('lonelymountain', 'Одинокой Горы')|E]. Гномы всё ещё оплакивают этот день и желают, чтобы гробница была восстановлена и предана земле."
+ lotr_artifact.0031.desc.dwarf:0 ", похищенный из гробницы #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина «Дубощита»#!#! в глубинах [Concept('lonelymountain', 'Одинокой Горы')|E]. Это оскорбление в адрес гномьего народа было жестоким, и никогда не будет забыто. Гробница должна быть восстановлена!"
+ lotr_artifact.0031.desc:0 ", похищенный из гробницы #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина «Дубощита»#!#! в глубинах [Concept('lonelymountain', 'Одинокой Горы')|E]. [Concept('dwarves', 'Гномы')|E] всё ещё оплакивают этот день и желают, чтобы гробница была восстановлена и предана земле."
  lotr_artifact.0031.desc.not_erebor:0 "Если бы я [Select_CString(ROOT.Char.IsFemale, 'вернула', 'вернул' )] утраченные сокровища их законному владельцу, без сомнения, они были бы очень благодарны."
  lotr_artifact.0031.desc.erebor:0 "Если бы я [Select_CString(ROOT.Char.IsFemale, 'вернула', 'вернул' )] утраченные сокровища в гробницу, мои подданные возрадовались бы."
  lotr_artifact.0031.a:0 "Это правда, однако мне они больше нравятся при моём дворе"
- lotr_artifact.0031.b.dwarf:0 "Я верну их, чтобы Торин снова покоился в мире"
+ lotr_artifact.0031.b.dwarf:0 "Я верну их, чтобы Торин снова покоился в мире."
  lotr_artifact.0031.b:0 "Я верну их гномам"
  lotr_artifact.0031.c:0 "Гробница Торина будет восстановлена в былом великолепии"
 
@@ -46,9 +46,9 @@
 
  lotr_artifact.0040.t:0 "Регалии утраченного Арнора"
  lotr_artifact.0040.desc.intro:0 "К моему двору прибывают гонцы."
- lotr_artifact.0040.desc.default:0 "Я сразу узнаю своих названных братьев, Элладана и Элрохира, и тепло приветствую их. Элладан улыбается:\n\n«[ROOT.Char.GetFirstNameNoTooltip], прими наши поздравления с восстановлением твоего королевства. Моё сердце полно радости, и я пришёл с дарами от нашего отца: регалиями Арнора, которые хранились в безопасности в Имладрисе со времён падения [Concept('arvedui', 'Арведуи')|E]. Пусть они послужат тебе лучше, чем их предыдущему владельцу."
+ lotr_artifact.0040.desc.default:0 "Я сразу узнаю своих названных братьев, #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofelrond2').GetID] #L Элладана#!#! и #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofelrond3').GetID] #L Элрохира#!#!, и тепло приветствую их. Элладан улыбается:\n\n«[ROOT.Char.GetFirstNameNoTooltip], прими наши поздравления с восстановлением твоего королевства. Моё сердце полно радости, и я пришёл с дарами от нашего отца: регалиями Арнора, которые хранились в безопасности в Имладрисе со времён падения [Concept('arvedui', 'Арведуи')|E]. Пусть они послужат тебе лучше, чем их предыдущему владельцу."
  lotr_artifact.0040.desc.alt:0 "[messenger.GetTitledFirstName] [Select_CString(messenger.IsFemale, 'прибыла', 'прибыл' )], ибо так [Select_CString(elrond_substitute.IsFemale, 'повелела', 'повелел' )] [elrond_substitute.GetTitledFirstName]. Я тепло приветствую [Select_CString(messenger.IsFemale, 'её', 'его' )]. [messenger.GetFirstNameNoTooltip] улыбается:\n\n«[ROOT.Char.GetFirstNameNoTooltip], прими наши поздравления с восстановлением твоего королевства. Моё сердце полно радости, и я пришёл с дарами, которые [Select_CString(elrond_substitute.IsFemale, 'отправила', 'отправил' )] [messenger.Custom2('RelationToMe', SCOPE.sC('elrond_substitute'))]: регалии Арнора, которые хранились в Имладрисе со времён падения [Concept('arvedui', 'Арведуи')|E]. Пусть они послужат вам лучше, чем их предыдущему владельцу."
- lotr_artifact.0040.desc.narsil:0 "\n\n[Select_CString(elrond_substitute.IsFemale, 'Моя', 'Мой' )] [messenger.Custom2('RelationToMe', SCOPE.sC('elrond_substitute'))] дарует тебе ещё одно благо: если ты передашь [elrond_substitute.GetHerHim] осколки меча Элендиля Высокого, [elrond_substitute.GetSheHe] проследит, чтобы он был перекован.»"
+ lotr_artifact.0040.desc.narsil:0 "\n\n[Select_CString(elrond_substitute.IsFemale, 'Моя', 'Мой' )] [messenger.Custom2('RelationToMe', SCOPE.sC('elrond_substitute'))] дарует тебе ещё одно благо: если ты передашь [elrond_substitute.GetHerHim] осколки меча #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofelendil').GetID] #L Элендиля «Высокого»#!#!, [elrond_substitute.GetSheHe] проследит, чтобы он был перекован.»"
  lotr_artifact.0040.a:0 "Большое спасибо. Пожалуйста, возьми их."
  lotr_artifact.0040.b.narsil_kept:0 "Я бы [Select_CString(ROOT.Char.IsFemale, 'предпочла', 'предпочёл' )] оставить осколки при себе, спасибо."
  lotr_artifact.0040.b:0 "Я глубоко [Select_CString(ROOT.Char.IsFemale, 'благодарна', 'благодарен' )]"
@@ -64,7 +64,7 @@
  ### Elrond offers to reforge Anduril
 
  lotr_artifact.0042.t:0 "Клинок, что был сломан"
- lotr_artifact.0042.desc:0 "К моему двору прибывают посланники, которых [Select_CString(elrond_substitute.IsFemale, 'прислала', 'прислал' )] [elrond_substitute.GetTitledFirstName]. [messenger.GetTitledFirstName] принимает от меня тёплое приветствие. [messenger.GetFirstNameNoTooltip] улыбается:\n\n«[ROOT.Char.GetFirstNameNoTooltip], прими поздравления с восстановлением королевства Элендиля. В эти тёмные времена, когда Саурон вернулся в Тёмную башню, мы должны объединиться или падём. [Select_CString(elrond_substitute.IsFemale, 'Моя', 'Мой' )] [messenger.Custom2('RelationToMe', SCOPE.sC('elrond_substitute'))] предлагает тебе дар: если ты передашь [elrond_substitute.GetHerHim] осколки [Concept('narsil', 'Нарсиля')|E], [elrond_substitute.GetSheHe] проследит, чтобы меч был перекован»."
+ lotr_artifact.0042.desc:0 "К моему двору прибывают посланники, которых [Select_CString(elrond_substitute.IsFemale, 'прислала', 'прислал' )] [elrond_substitute.GetTitledFirstName]. [messenger.GetTitledFirstName] принимает от меня тёплое приветствие. [messenger.GetFirstNameNoTooltip] улыбается:\n\n«[ROOT.Char.GetFirstNameNoTooltip], прими поздравления с восстановлением королевства [Concept('elendil', 'Элендиля')|E]. В эти тёмные времена, когда Саурон вернулся в Тёмную башню, мы должны объединиться или падём. [Select_CString(elrond_substitute.IsFemale, 'Моя', 'Мой' )] [messenger.Custom2('RelationToMe', SCOPE.sC('elrond_substitute'))] предлагает тебе дар: если ты передашь [elrond_substitute.GetHerHim] осколки [Concept('narsil', 'Нарсиля')|E], [elrond_substitute.GetSheHe] проследит, чтобы меч был перекован»."
 
  ### Gold sickness
 
