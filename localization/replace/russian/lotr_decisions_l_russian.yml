@@ -1308,6 +1308,13 @@
  decision_bellakar_x_gondor_custom_tooltip_a: "Вы вновь включили Мардруак в состав своего королевство"
  decision_bellakar_x_gondor_custom_tooltip_b: "Вы примирились с Фелайей."
 
+ #Adopt a Cat
+ decision_lotr_adopt_cat: "Завести кота"
+ decision_lotr_adopt_cat_desc: "Я часто [Select_CString(ROOT.Char.IsFemale, 'мечтала', 'мечтал' )] о кошке, которую [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы назвать своей собственной. Возможно, пришло время завести её и мне."
+ decision_lotr_adopt_cat_desc.city_of_cats: "Эсмер не зря называют «Городом кошек». Многие шутят, что именно наши кошки на самом деле дергают за ниточки за кулисами, а не только за клубок пряжи. $building_type_wonder_ishtra_shrine$ является домом для самых изысканных кошек, и в обмен на пожертвование жрецы могут подарить одну из них мне."
+ decision_lotr_adopt_cat_tooltip: "Завести кошачьего компаньона"
+ decision_lotr_adopt_cat_confirm: "Кошка!"
+
  #Restore Korlean League Localization##
  decision_restore_korlean_league: "Восстановить Корлейскую лигу"
  decision_restore_korlean_league_tooltip: "Вы восстановите Корлею как главенствующую силу в заливе Тулванг"
@@ -2294,8 +2301,6 @@
  rhun.0001.t: "Кошениль"
  rhun.0001.desc: "Некоторые из территорий, которые я контролирую, находятся в пределах региона производства кошенили. Личинки [Concept('cochineal', 'кошенильных')|E] насекомых могут быть использованы для получения красивого красного красителя, который продается по заоблачным ценам на чужеземных рынках.\n\nТолько глупец не понимает важности поддержки производства кошенили, и я занимаюсь именно этим. Вкладываясь в плантации кошенили в этих регионах и поощряя торговцев покупать этот продукт и продавать его в других местах, мы можем помочь местной экономике расти – и, конечно, получать неплохие деньги за счет взимания пошлин с этой торговли." #[GetGeographicalRegion('special_cochineal_production_region').GetName]
  rhun.0001.a: "Этот красный краситель озолотит нас."
-
- # Modifiers
  cochineal_modifier_1: "Вложения в производство кошенили (1 уровень)"
  cochineal_modifier_1_desc: "Красный краситель, производимый на местных плантациях, получают из личинок [Concept('cochineal', 'кошенильных')|E] насекомых, и он является прибыльным товаром для экспорта. Местные правители делают всё возможное, чтобы поддержать сбор урожая и экспорт этих красителей.\n\n#EMP Сила этого [Concept('modifier', 'модификатора')|E] зависит от того, имело ли [Concept('duchy', 'герцогство')|E] этого [Concept('county', 'графства')|E] [Concept('duchy_building', 'герцогскую постройку')|E] $building_type_cochineal_industry_01$ в момент принятия [Concept('decision', 'решения')|E] «$support_cochineal_industry$».#!"
  cochineal_modifier_2: "Вложения в производство кошенили (2 уровень)"
@@ -2304,6 +2309,56 @@
  cochineal_modifier_3_desc: "$cochineal_modifier_1_desc$"
  cochineal_modifier_4: "Вложения в производство кошенили (4 уровень)"
  cochineal_modifier_4_desc: "$cochineal_modifier_1_desc$"
+
+
+ ############################
+ ### Sponsor Tayee Shrine ###
+ ############################
+ # Adapted from RICE Sponsor Tayee Site
+
+ decision_sponsor_tayee_holy_building: "Проспонсировать тайитское религиозное сооружение"
+ decision_sponsor_tayee_holy_building_tooltip: "Построить тайитскую святыню в вашей [Concept('capital', 'столице')|E]"
+ decision_sponsor_tayee_holy_building_desc: "Как [ROOT.Char.GetTitleAsNameNoTooltip|l], [Select_CString(ROOT.Char.IsFemale, 'желающая', 'желающий' )] продемонстрировать свою преданность Тайи или, в частности, своему покровителю, я хочу пожертвовать средства на строительство религиозного сооружения в своих [Concept('domain', 'владениях')|E]. Местное сообщество духовно выиграет от этого нового сооружения, и все узнают о моём благочестии!"
+ decision_sponsor_tayee_holy_building_effect_tooltip_1: "Вы сами выберете, что спонсировать - путевое святилище, храм или монастырь, которые будут приносить различные блага в виде [Concept('piety', 'благочестия')|E], [Concept('prestige', 'престижа')|E] и [Concept('dynasty_prestige', 'признания')|E], а также соответствующий [Concept('character_modifier', 'модификатор персонажа')|E] и [Concept('county_modifier', 'модификатор графства')|E] для вашей [Concept('realm_capital', 'столицы')|E]"
+ decision_sponsor_tayee_holy_building_effect_tooltip_2: "Вы не получите эти бонусы сразу, так как процесс строительства займёт от года до двух лет"
+ decision_sponsor_tayee_holy_building_effect_tooltip_3: "Поскольку вы контролируете [GetBuilding('wonder_tarnet_barzain').GetName], вы получите уникальный [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip], который варьируется в зависимости от количества проспонсированных сооружений."
+ decision_sponsor_tayee_holy_building_effect_tooltip_4: "Поскольку вы контролируете [GetBuilding('wonder_tarnet_barzain').GetName], ваш [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip] [Concept('character_modifier', 'модификатор персонажа')|E] #P улучшится#!"
+ decision_sponsor_tayee_holy_building_confirm: "Да славится [ROOT.Char.GetFaith.HighGodNameAlternate]!"
+ decision_sponsor_tayee_holy_building_county_faith_req: "Ваша [Concept('realm_capital', 'столица')|E] принадлежит к [Concept('faith', 'конфессии')|E] с [Concept('core_tenet', 'догматом')|E] [GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName]"
+ decision_sponsor_tayee_holy_building_county_mod_req: "В вашей [Concept('realm_capital', 'столице')|E] нет [Concept('county_modifier', 'модификатора графства')|E], указывающего на то, что там недавно была построена тайитская святыня"
+ decision_sponsor_tayee_holy_building_current_req: "В настоящее время не ведётся строительство тайитской святыни"
+
+ lotr_tayee_holy_building_type: "Что нам построить?"
+ lotr_tayee_holy_building_type_gui: "Выберите, какое тайитское сооружение построить"
+ RICE_sponsor_tayee_site_wayshrine_option: "#Bold Путевое святилище#!"
+ RICE_sponsor_tayee_site_wayshrine_option_desc: "Небольшое путевое святилище"
+ RICE_sponsor_tayee_site_wayshrine_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('RICE_build_small_tayee_site_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$Вы получите [prestige_i|E]50 и [piety_i|E]50\n$EFFECT_LIST_BULLET$Вы получите [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('sponsored_tayee_wayshrine').GetNameWithTooltip] на #V 10#! лет\n$EFFECT_LIST_BULLET$Ваша [Concept('capital', 'столица')|E] получит [Concept('county_modifier', 'модификатор графства')|E] [GetModifier('sponsored_tayee_wayshrine_county').GetNameWithTooltip] на #V 10#! лет"
+ RICE_sponsor_tayee_site_small_temple_option: "#Bold Небольшой храм#!"
+ RICE_sponsor_tayee_site_small_temple_option_desc: "Скромный храм"
+ RICE_sponsor_tayee_site_small_temple_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('RICE_build_medium_tayee_site_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$Вы получите [prestige_i|E]150 и [piety_i|E]50\n$EFFECT_LIST_BULLET$Вы получите [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('sponsored_tayee_small_temple').GetNameWithTooltip] на #V 10#! лет\n$EFFECT_LIST_BULLET$Ваша [Concept('capital', 'столица')|E] получит [Concept('county_modifier', 'модификатор графства')|E] [GetModifier('sponsored_tayee_small_temple_county').GetNameWithTooltip] на #V 10#! лет"
+ RICE_sponsor_tayee_site_small_monastery_option: "#Bold Небольшой монастырь#!"
+ RICE_sponsor_tayee_site_small_monastery_option_desc: "Скромный монастырь"
+ RICE_sponsor_tayee_site_small_monastery_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('RICE_build_medium_tayee_site_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$Вы получите [prestige_i|E]50 и [piety_i|E]150\n$EFFECT_LIST_BULLET$Вы получите [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('sponsored_tayee_small_monastery').GetNameWithTooltip] на #V 10#! лет\n$EFFECT_LIST_BULLET$Ваша [Concept('capital', 'столица')|E] получит [Concept('county_modifier', 'модификатор графства')|E] [GetModifier('sponsored_tayee_small_monastery_county').GetNameWithTooltip] на #V 10#! лет"
+ RICE_sponsor_tayee_site_large_temple_option: "#Bold Большой храм#!"
+ RICE_sponsor_tayee_site_large_temple_option_desc: "Внушительный храм"
+ RICE_sponsor_tayee_site_large_temple_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('RICE_build_large_tayee_site_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$Вы получите [prestige_i|E]200 и [piety_i|E]100\n$EFFECT_LIST_BULLET$Ваша [Concept('dynasty', 'династия')|E] получит [dynasty_prestige_i]25 за каждый [Concept('piety_level', 'уровень набожности')|E]\n$EFFECT_LIST_BULLET$Вы получите [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('sponsored_tayee_large_temple').GetNameWithTooltip] на #V 10#! лет\n$EFFECT_LIST_BULLET$Ваша [Concept('capital', 'столица')|E] получит [Concept('county_modifier', 'модификатор графства')|E] [GetModifier('sponsored_tayee_large_temple_county').GetNameWithTooltip] на #V 10#! лет"
+ RICE_sponsor_tayee_site_large_monastery_option: "#Bold Большой монастырь#!"
+ RICE_sponsor_tayee_site_large_monastery_option_desc: "Внушительный монастырь"
+ RICE_sponsor_tayee_site_large_monastery_option_tooltip: "Стоимость: @gold_icon! #V #Bold [GetPlayer.MakeScope.ScriptValue('RICE_build_large_tayee_site_cost')|0]#!#!\n\n$EFFECT_LIST_BULLET$Вы получите [prestige_i|E]100 и [piety_i|E]200\n$EFFECT_LIST_BULLET$Ваша [Concept('dynasty', 'династия')|E] получит [dynasty_prestige_i]25 за каждый [Concept('piety_level', 'уровень набожности')|E]\n$EFFECT_LIST_BULLET$Вы получите [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('sponsored_tayee_large_monastery').GetNameWithTooltip] на #V 10#! лет\n$EFFECT_LIST_BULLET$Ваша [Concept('capital', 'столица')|E] получит [Concept('county_modifier', 'модификатор графства')|E] [GetModifier('sponsored_tayee_large_monastery_county').GetNameWithTooltip] на #V 10#! лет"
+ 
+ sponsored_tayee_wayshrine: "Недавнее спонсирование тайитского путевого святилища"
+ sponsored_tayee_wayshrine_county: "Тайитское путевое святилище"
+ sponsored_tayee_small_temple: "Недавнее спонсирование небольшого тайитского храма"
+ sponsored_tayee_small_temple_county: "Небольшой тайитский храм"
+ sponsored_tayee_small_monastery: "Недавнее спонсирование небольшого тайитского монастыря"
+ sponsored_tayee_small_monastery_county: "Небольшой тайитский монастырь"
+ sponsored_tayee_large_temple: "Недавнее спонсирование большого тайитского храма"
+ sponsored_tayee_large_temple_county: "Большой тайитский храм"
+ sponsored_tayee_large_monastery: "Недавнее спонсирование большого тайитского монастырь"
+ sponsored_tayee_large_monastery_county: "Большой тайитский монастырь"
+ tayee_worthy_of_augar_prophet: "Благословение Аугара"
+ tayee_worthy_of_augar_prophet_desc: "Щедро спонсируя места отправления культа, этот персонаж проявил себя как достойный хранитель оазиса Тарнет-Барзаён, родины пророка тайитской религии."
+ MODIFIER_DEFINITION_VALUE_SPONSORED_TAYEE_SITES_COUNT: "\t#weak Увеличивается за каждое проспонсированное тайитское религиозное сооружение#!"
 
  ##############################
  #### Dol Guldur Decisions ####
