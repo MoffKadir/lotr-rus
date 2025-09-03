@@ -471,6 +471,13 @@
  northron_settlers_spawn_event_troops_tooltip: "Вы получите некоторое количество [Concept('special_troops', 'особых войск')|E], включая по крайней мере один [Concept('regiment', 'полк')|E] [Concept('men_at_arms', 'профессионалов')|E]"
  lotr_northron_settlers_troops: "Северные подкрепления"
 
+ decision_restore_guild_of_venturers: "Восстановить гильдию Морестранников"
+ decision_restore_guild_of_venturers_desc: "Давным-давно мореходы [Concept('numenor', 'Нуменора')|E] бороздили моря, самые храбрые и выносливые из людей Запада. Моряки, обладающие непревзойденной храбростью и мастерством, они отправлялись в путешествия. [Concept('downfall', 'Низвержение')|E] покончило с их братством, но наследие их подвигов все еще остается.\n\nТеперь, будучи [Select_CString(ROOT.Char.IsFemale, 'сама опытной морячкой, не могла', 'сам опытным моряком, не мог' )] бы я поступить так, как [GetScriptedCharacterByHistoryID('lineofelros6').GetName], восстановив гильдию, чтобы снова бороздить широкие волны [Concept('belegaer_sea', 'Белегаэра')|E]?"
+ decision_restore_guild_of_venturers_confirm: "Древняя гордость #L [GetTitleByKey('e_numenor').GetNameNoTier]а#! возрождена!"
+ decision_restore_guild_of_venturers_tooltip: "Вы восстановите древнюю гильдию мореходов державы [GetTitleByKey('e_numenor').GetNameNoTier]"
+ guild_of_venturers_modifier_name: "Гильдия Морестранников"
+ guild_of_venturers_modifier_desc: "Этот дом является покровителем воссозданной гильдии Морестранников."
+
  ### Arnorian Decision Subset ###
  decision_adopt_arnorian_culture: "Принять арнорскую культуру"
  decision_adopt_arnorian_culture_desc: "Когда-то люди [Concept('arnor', 'Арнора')|E] собирали могучие войска и создавали великие королевства. Увы, упадок и войны заставили нас стать теми, кем мы являемся сейчас, - странниками в дебрях, неизвестными многим и вызывающими уважение у немногих. Хотя это и спасло нас, но в то же время заставило потерять связь с путями наших предков. Если бы мы смогли восстановить своё государство, мы могли бы способствовать культурному возрождению древних путей Арнора."
@@ -1563,6 +1570,7 @@
  destroy_mordor_decision_current_military_strength_default_tt: "Ваши войска равны по численности по крайней мере половине текущих войск Мордора."
  destroy_mordor_decision_current_military_strength_elven_tt: "Ваши войска равны по численности по крайней мере четверти текущих войск Мордора."
  destroy_mordor_decision_current_military_strength_dwarven_tt: "Ваши войска равны по численности по крайней мере трети текущих войск Мордора."
+ you_border_mordor: "Ваша держава граничит с [Concept('de_jure', 'де-юре')|E] #L [GetTitleByKey('e_mordor').GetNameNoTier]ом#!"
 
  decision_invade_gondor: "Вторгнуться в Гондор"
  decision_invade_gondor_tooltip: "Начать вторжение, которое, в случае успеха, уничтожит Южное королевство раз и навсегда"
@@ -2635,6 +2643,7 @@
  decision_usurp_dynast_desc: "Лжеправитель слишком долго занимал трон нашего народа, и пришло время другому занять его место."
  decision_usurp_dynast_confirm: "Отправить весть о моём правлении"
  army_bigger: "У вас больше войск, чем у главы вашего дома"
+ cannot_usurp_dorfdad: "Вы не можете узурпировать титул своего [Concept('dwarffather', 'праотца')|E]"
 
  dwarven_beard_care_decision: "Привести в порядок бороду"
  dwarven_beard_care_decision_desc: "Моя борода всегда была источником гордости и вдохновения для меня, как и для всех детей [Concept('mahalcharacter', 'Махала')|E]. Среди [Concept('dwarves', 'гномов')|E] длинная и ухоженная борода - это нечто большее, чем просто волосы. Отращивать её - значит чтить наследие наших предков, а поддерживать в надлежащем состоянии - значит проявлять дисциплину и уважение к традициям, которые нас связывают.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] хорошо ухаживать за своей, чтобы она выглядела наилучшим образом."
