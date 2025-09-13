@@ -14,6 +14,8 @@
  inspiration_desc_make_future: "сделать"
  inspiration_desc_study_present: "изучает"
  inspiration_desc_study_future: "изучить"
+ inspiration_desc_string_present: "изготавливает"
+ inspiration_desc_string_future: "изготовить"
 
  book_inspiration_description: "[ROOT.Char.Custom('InspirationWritePresentFuture')] великолепную книгу"
  book_subject_inspiration_description: "[ROOT.Char.Custom('InspirationWritePresentFuture')] на тему «[ROOT.Char.Custom('ArtifactBookSubject')]»"
@@ -91,6 +93,7 @@
  artisan_inspiration_description_past: "[Select_CString(Character.IsFemale, 'создала', 'создал' )] что-то для [Select_CString(ROOT.Var('created_artifact_for').Char.IsLocalPlayer, '', 'персонажа ' )][ROOT.Var('created_artifact_for').Char.GetNamePossessiveOrMy][Select_CString(ROOT.Var('created_artifact_for').Char.IsLocalPlayer, 'его персонажа', '' )]"
  smith_inspiration_description_past: "[Select_CString(Character.IsFemale, 'выковала', 'выковал' )] что-то для [Select_CString(ROOT.Var('created_artifact_for').Char.IsLocalPlayer, '', 'персонажа ' )][ROOT.Var('created_artifact_for').Char.GetNamePossessiveOrMy][Select_CString(ROOT.Var('created_artifact_for').Char.IsLocalPlayer, 'его персонажа', '' )]"
  alchemy_inspiration_description_past: "[Select_CString(Character.IsFemale, 'создала', 'создал' )] что-то для [Select_CString(ROOT.Var('created_artifact_for').Char.IsLocalPlayer, '', 'персонажа ' )][ROOT.Var('created_artifact_for').Char.GetNamePossessiveOrMy][Select_CString(ROOT.Var('created_artifact_for').Char.IsLocalPlayer, 'его персонажа', '' )]"
+ bow_inspiration_description_past: "[Select_CString(Character.IsFemale, 'изготовила', 'изготовил' )] лук для [Select_CString(ROOT.Var('created_artifact_for').Char.IsLocalPlayer, '', 'персонажа ' )][ROOT.Var('created_artifact_for').Char.GetNamePossessiveOrMy][Select_CString(ROOT.Var('created_artifact_for').Char.IsLocalPlayer, 'его персонажа', '' )]"
  imperial_court: "имперский"
  royal_court: "королевский"
  petty_court: "мелкий"
@@ -108,3 +111,10 @@
  weaver_inspiration_banner_house_description: "знамя дома"
  weaver_inspiration_banner_dynasty_description: "знамя династии"
  weaver_inspiration_banner_fallback_description: "знамя"
+
+ bow_inspiration_description: "[ROOT.Char.Custom('InspirationStringPresentFuture')] великолепный лук"
+ bow_set_type_inspiration_description: "[ROOT.Char.Custom('InspirationStringPresentFuture')] [ROOT.Char.Custom('ArtifactBowType')]"
+ bow_longbow_inspiration_description: "длинный лук"
+ bow_composite_inspiration_description: "композитный лук"
+ bow_crossbow_inspiration_description: "арбалет"
+ bow_bow_inspiration_description: "лук"

@@ -14,13 +14,20 @@
  only_zealous_elves_can_holy_war: "[holy_wars|E] могут объявлять только [elves|El] со свойством «[GetTrait('zealous').GetName( GetNullCharacter )]»"
  only_ambitious_elves_can_vassalize: "[Concept('vassalize_casus_belli', 'Насильственную вассализацию')|E] могут выдвигать только [elves|El] со свойством «[GetTrait('ambitious').GetName( GetNullCharacter )]»"
  cannot_replace_variag_succession: "Вариагское наследование не может быть изменено"
- elves_can_only_faith_convert_elves: "Эльфы могут использовать [councillor_task|El] «Смена конфессии» только в [Concept('counties', 'графствах')|E] с эльфийской [Concept('culture', 'культурой')|E]"
+ elves_can_only_faith_convert_elves: "[Concept('elves', 'Эльфы')|E] могут использовать [councillor_task|El] «Смена конфессии» только в [Concept('counties', 'графствах')|E] с эльфийской [Concept('culture', 'культурой')|E]"
  activity_education_faith_hostility_too_high: "[faith|E] этого региона слишком враждебна по отношению к вашей."
+
+ balan_lai_member_percent: "$PARAMETERS$ членов [balan_lai|E]:"
+
+ ##### Replacements For Broken Holding Tooltips #####
  including_elves_holding_level_tooltip_01: "Чтобы построить это здание, в этом владении должен быть мотт, деревенский центр, святилище, эльфийское святилище или выше."
  including_elves_holding_level_tooltip_02: "Чтобы построить это здание, в этом владении должна быть крепость, большой город, храмовые земли, оживлённое эльфийское святилище или выше."
  including_elves_holding_level_tooltip_03: "Чтобы построить это здание, в этом владении должен быть концентрический замок, городской центр города, молитвенный дом, эльфийская твердыня или выше."
 
- balan_lai_member_percent: "$PARAMETERS$ членов [balan_lai|E]:"
+ including_dwarves_holding_level_tooltip_01: "Чтобы построить это здание, в этом владении должны быть [GetBuilding('castle_01').GetName], [GetBuilding('city_01').GetName], [GetBuilding('temple_01').GetName], [GetBuilding('dwarven_depths_01').GetName] или выше."
+ including_dwarves_holding_level_tooltip_02: "Чтобы построить это здание, в этом владении должны быть [GetBuilding('castle_02').GetName], [GetBuilding('city_02').GetName], [GetBuilding('temple_02').GetName], [GetBuilding('dwarven_depths_02').GetName] или выше."
+ including_dwarves_holding_level_tooltip_03: "Чтобы построить это здание, в этом владении должны быть [GetBuilding('castle_03').GetName], [GetBuilding('city_03').GetName], [GetBuilding('temple_03').GetName], [GetBuilding('dwarven_depths_03').GetName] или выше."
+ including_dwarves_holding_level_tooltip_04: "Чтобы построить это здание, в этом владении должны быть [GetBuilding('castle_04').GetName], [GetBuilding('city_04').GetName], [GetBuilding('temple_04').GetName], [GetBuilding('dwarven_depths_04').GetName] или выше."
 
  ##### Missing Vanilla Localisation #####
  can_recruit_camel_cavalry_trigger_desc: "У вас #bold нет#! доступа к [Concept('camel_cavalry', 'боевым верблюдам')|E] ([men_at_arms|El])"
@@ -144,8 +151,8 @@
 
  LOTR_ARMIES_ARE_OUTNUMBERED_TRIGGER: "Силы противника превосходят ваши"
  NOT_LOTR_ARMIES_ARE_OUTNUMBERED_TRIGGER: "Силы противника не превосходят ваши"
- LOTR_AT_PEACE_WITH_GONDOR_TRIGGER: "Вы в состоянии мира с Гондором"
- LOTR_AT_PEACE_WITH_ROHAN_TRIGGER: "Вы в состоянии мира с Роханом"
+ LOTR_AT_PEACE_WITH_GONDOR_TRIGGER: "Вы в состоянии мира с [Concept('gondor', 'Гондором')|E]"
+ LOTR_AT_PEACE_WITH_ROHAN_TRIGGER: "Вы в состоянии мира с [Concept('rohan', 'Роханом')|E]"
  LOTR_NOT_CIVIL_WAR_TRIGGER: "Вы находитесь в состоянии войны с правителем, находящимся за пределами вашей державы"
 
  LOTR_CHELKAR_SUBMISSION_TRIGGER: "Вы превосходите Хелкар как минимум вдвое"
@@ -190,6 +197,8 @@
  LOTR_DWARF_RACE_TRIGGER_THIRD: "Этот персонаж является [Concept('dwarf','гномом')|E]"
  NOT_LOTR_DWARF_RACE_TRIGGER_THIRD: "[CHARACTER.GetShortUIName|U] #bold не#! является [Concept('dwarf','гномом')|E]"
 
+ LOTR_UNDERGROUND_RACE_TRIGGER: "Вы являетесь [Concept('dwarf', 'гномом')|E] или [Concept('orc', 'орком')|E]"
+
  LOTR_MAIAR_RACE_TRIGGER_GLOBAL: "[maiagod|E]"
  NOT_LOTR_MAIAR_RACE_TRIGGER_GLOBAL: "#bold Не#! [maiagod|E]"
  LOTR_MAIAR_RACE_TRIGGER_FIRST: "Вы - [maiagod|E]"
@@ -204,26 +213,26 @@
  LOTR_MAIAR_FALLEN_RACE_TRIGGER_THIRD: "[CHARACTER.GetShortUIName|U] - падший [maiagod|E]"
  NOT_LOTR_MAIAR_FALLEN_RACE_TRIGGER_THIRD: "[CHARACTER.GetShortUIName|U] - #bold не#! падший [maiagod|E]"
 
- FAITH_IS_GOOD_TRIGGER_GLOBAL: "Конфессия этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
- NOT_FAITH_IS_GOOD_TRIGGER_GLOBAL: "Конфессия этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
- FAITH_IS_GOOD_TRIGGER_FIRST: "Ваша конфессия входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
- NOT_FAITH_IS_GOOD_TRIGGER_FIRST: "Ваша конфессия #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
- FAITH_IS_GOOD_TRIGGER_THIRD: "Конфессия этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
- NOT_FAITH_IS_GOOD_TRIGGER_THIRD: "Конфессия этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» [religious_family|E] и #bold не имеет#! [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
+ FAITH_IS_GOOD_TRIGGER_GLOBAL: "[Concept('faith', 'Конфессия')|E] этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
+ NOT_FAITH_IS_GOOD_TRIGGER_GLOBAL: "[Concept('faith', 'Конфессия')|E] этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
+ FAITH_IS_GOOD_TRIGGER_FIRST: "Ваша [Concept('faith', 'конфессия')|E] входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
+ NOT_FAITH_IS_GOOD_TRIGGER_FIRST: "Ваша [Concept('faith', 'конфессия')|E] #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
+ FAITH_IS_GOOD_TRIGGER_THIRD: "[Concept('faith', 'Конфессия')|E] этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
+ NOT_FAITH_IS_GOOD_TRIGGER_THIRD: "[Concept('faith', 'Конфессия')|E] этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_eruhini').GetName]» [religious_family|E] и #bold не имеет#! [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
 
- FAITH_IS_EVIL_TRIGGER_GLOBAL: "Конфессия этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
- NOT_FAITH_IS_EVIL_TRIGGER_GLOBAL: "Конфессия этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
- FAITH_IS_EVIL_TRIGGER_FIRST: "Ваша конфессия входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
- NOT_FAITH_IS_EVIL_TRIGGER_FIRST: "Ваша конфессия #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
- FAITH_IS_EVIL_TRIGGER_THIRD: "Конфессия этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
- NOT_FAITH_IS_EVIL_TRIGGER_THIRD: "Конфессия этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
+ FAITH_IS_EVIL_TRIGGER_GLOBAL: "[Concept('faith', 'Конфессия')|E] этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
+ NOT_FAITH_IS_EVIL_TRIGGER_GLOBAL: "[Concept('faith', 'Конфессия')|E] этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
+ FAITH_IS_EVIL_TRIGGER_FIRST: "Ваша [Concept('faith', 'конфессия')|E] входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
+ NOT_FAITH_IS_EVIL_TRIGGER_FIRST: "Ваша [Concept('faith', 'конфессия')|E] #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
+ FAITH_IS_EVIL_TRIGGER_THIRD: "[Concept('faith', 'Конфессия')|E] этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
+ NOT_FAITH_IS_EVIL_TRIGGER_THIRD: "[Concept('faith', 'Конфессия')|E] этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_forcesofevil').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
 
- FAITH_IS_NEUTRAL_TRIGGER_GLOBAL: "Конфессия этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
- NOT_FAITH_IS_NEUTRAL_TRIGGER_GLOBAL: "Конфессия этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
- FAITH_IS_NEUTRAL_TRIGGER_FIRST: "Ваша конфессия входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
- NOT_FAITH_IS_NEUTRAL_TRIGGER_FIRST: "Ваша конфессия #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
- FAITH_IS_NEUTRAL_TRIGGER_THIRD: "Конфессия этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
- NOT_FAITH_IS_NEUTRAL_TRIGGER_THIRD: "Конфессия этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
+ FAITH_IS_NEUTRAL_TRIGGER_GLOBAL: "[Concept('faith', 'Конфессия')|E] этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» или имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
+ NOT_FAITH_IS_NEUTRAL_TRIGGER_GLOBAL: "[Concept('faith', 'Конфессия')|E] этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
+ FAITH_IS_NEUTRAL_TRIGGER_FIRST: "Ваша [Concept('faith', 'конфессия')|E] входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
+ NOT_FAITH_IS_NEUTRAL_TRIGGER_FIRST: "Ваша [Concept('faith', 'конфессия')|E] #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
+ FAITH_IS_NEUTRAL_TRIGGER_THIRD: "[Concept('faith', 'Конфессия')|E] этого персонажа входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
+ NOT_FAITH_IS_NEUTRAL_TRIGGER_THIRD: "[Concept('faith', 'Конфессия')|E] этого персонажа #bold не#! входит в [Concept('religious_family', 'религиозную концепцию')|E] «[GetReligionFamily('rf_darkness').GetName]» и #bold не имеет#! [Concept('doctrine', 'доктрины')|E] «[GetFaithDoctrine('doctrine_a_people_apart').GetBaseName]»"
 
  COASTAL_PROVINCE_IN_REALM_TRIGGER: "У вашей державы есть провинция с выходом к морю"
  NOT_COASTAL_PROVINCE_IN_REALM_TRIGGER: "У вашей державы нет провинции с выходом к морю"
@@ -257,12 +266,12 @@
  NOT_SLAVE_EXPEDITION_TRIGGER_FIRST: "Вы #bold не#! проводили успешного набега за рабами"
  NOT_SLAVE_EXPEDITION_TRIGGER_THIRD: "Этот персонаж #bold не#! проводил успешного набега за рабами"
 
- COUNTY_IS_ELVEN_TRIGGER_GLOBAL: "Это [county|El] принадлежит эльфийской [Concept('culture', 'культуре')|E]"
- NOT_COUNTY_IS_ELVEN_TRIGGER_GLOBAL: "Это [county|El] не принадлежит эльфийской [Concept('culture', 'культуре')|E]"
- NO_EXISTING_ELVEN_STRONGHOLD_IN_DUCHY_TRIGGER_GLOBAL: "В этом [Concept('duchy', 'герцогстве')|E] нет эльфийской крепости"
- NOT_NO_EXISTING_ELVEN_STRONGHOLD_IN_DUCHY_TRIGGER_GLOBAL: "В этом [Concept('duchy', 'герцогстве')|E] уже есть эльфийская крепость"
- NO_EXISTING_ELVEN_CITY_IN_KINGDOM_TRIGGER_GLOBAL: "В этом [Concept('kingdom', 'королевстве')|E] отсутствует эльфийский город"
- NOT_NO_EXISTING_ELVEN_CITY_IN_KINGDOM_TRIGGER_GLOBAL: "В этом [Concept('kingdom', 'королевстве')|E] уже есть эльфийский город"
+ COUNTY_IS_ELVEN_TRIGGER_GLOBAL: "Это [county|El] принадлежит [Concept('elven', 'эльфийской')|E] [Concept('culture', 'культуре')|E]"
+ NOT_COUNTY_IS_ELVEN_TRIGGER_GLOBAL: "Это [county|El] не принадлежит [Concept('elven', 'эльфийской')|E] [Concept('culture', 'культуре')|E]"
+ NO_EXISTING_ELVEN_STRONGHOLD_IN_DUCHY_TRIGGER_GLOBAL: "В этом [Concept('duchy', 'герцогстве')|E] нет [Concept('elven_stronghold', 'эльфийской крепости')|E]"
+ NOT_NO_EXISTING_ELVEN_STRONGHOLD_IN_DUCHY_TRIGGER_GLOBAL: "В этом [Concept('duchy', 'герцогстве')|E] уже есть [Concept('elven_stronghold', 'эльфийская крепость')|E]"
+ NO_EXISTING_ELVEN_CITY_IN_KINGDOM_TRIGGER_GLOBAL: "В этом [Concept('kingdom', 'королевстве')|E] отсутствует [Concept('elven_city', 'эльфийский город')|E]"
+ NOT_NO_EXISTING_ELVEN_CITY_IN_KINGDOM_TRIGGER_GLOBAL: "В этом [Concept('kingdom', 'королевстве')|E] уже есть [Concept('elven_city', 'эльфийский город')|E]"
 
  GREENWOOD_CANNOT_FORM_TRIGGER: "[elves|E] и [nazgulcharacter|El] могут создать $e_greenwood$ только через [decision|El]"
  LAURELINDORENAN_CANNOT_FORM_TRIGGER: "$e_laurelindorenan$ может быть создано только через [decision|El]"
@@ -275,14 +284,14 @@
 
  join_war_interaction_tributary_not_a_defensive_war:3 "[CHARACTER.GetUIName] не является лидером защитников в этой [Concept('war', 'войне')|E]"
 
- elven_non_elven_feudatories: "Не-эльфийские [vassals|El] не могут предоставлять [levies|El] [Concept('liege', 'сюзерену')|E]-эльфу"
+ elven_non_elven_feudatories: "Не-[Concept('elven', 'эльфийские')|E] [vassals|El] не могут предоставлять [levies|El] [Concept('liege', 'сюзерену')|E]-эльфу"
 
  BUILDING_REQUIREMENT_CASTLE_CITY_CHURCH_FAILED: "[PROVINCE.GetName] является замком, городом или храмом"
  NOT_BUILDING_REQUIREMENT_CASTLE_CITY_CHURCH_FAILED: "[PROVINCE.GetName] не является замком, городом или храмом"
 
  is_surface_dwarf: "Только надземные гномы могут развивать продвинутые владения на поверхности"
  is_mountain_dwarf: "Надземные гномы не могут развивать продвинутые подземные владения"
- is_dwarf_trigger: "Является гномом"
+ is_dwarf_trigger: "Является [Concept('dwarf', 'гномом')|E]"
  has_specialization_01_or_higher: "Для дальнейшего улучшения вы должны иметь специализацию владения не ниже I уровня. (Герцогская постройка)"
  has_specialization_02_or_higher: "Для дальнейшего улучшения вы должны иметь специализацию владения не ниже II уровня. (Герцогская постройка)"
  has_specialization_03_or_higher: "Для дальнейшего улучшения вы должны иметь специализацию владения не ниже III уровня. (Герцогская постройка)"
@@ -290,3 +299,6 @@
  lotr_not_at_war_as_attacker_effect_desc: "Вы являетесь нападающей стороной в этой [Concept('war', 'войне')|E]"
  lotr_defensive_ally_my_tributary: "Вы не можете заключить оборонительный союз с данником"
  must_be_sacredpirate: "Она не станет невестой ни одного пирата, кроме короля Священных островов"
+
+ LOTR_IS_NUMENOREAN_CULTURE_FIRST: "Ваша [Concept('culture', 'культура')|E] имеет [Concept('numenorean', 'нуменорское')|E] [Concept('heritage', 'наследие')|E]"
+ LOTR_IS_NUMENOREAN_CULTURE_GLOBAL: "Эта [Concept('culture', 'культура')|E] имеет [Concept('numenorean', 'нуменорское')|E] [Concept('heritage', 'наследие')|E]"

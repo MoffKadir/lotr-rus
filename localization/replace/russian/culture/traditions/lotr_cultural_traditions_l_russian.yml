@@ -237,38 +237,22 @@
 
  ### Elven Traditions ### 
 
+ tradition_avarin_solidarity_name: "Солидарность авари"
+ tradition_avarin_solidarity_desc: "Решив остаться в Куивиэнене, представители различных культур [Concept('avarin', 'авари')|E] долгое время относились к [Concept('elven', 'эльфам')|E], отправившимся в [Concept('thegreatjourney', 'Великий поход')|E], с подозрением, предпочитая поддерживать отношения с теми, кто остался."
+
+ tradition_ancient_wanderers_name: "Древние скитальцы"
+ tradition_ancient_wanderers_desc: "[cuind|E] всегда были неугомонными, путешествуя по всему [Concept('middleearth', 'Средиземью')|E]. Эти путешествия, хоть и сопряжённые с опасностями, принесли куинд огромный опыт общения со всеми землями и народами мира."
+
+ tradition_sirgalan_exiles_name: "Изгнанники Сиргалы"
+ tradition_sirgalan_exiles_desc: "На заре [Concept( 'thirdage', 'Третьей Эпохи' )|E] сиррандрай были постепенно вытеснены из своих земель растущей мощью [dunedain|El]. Сначала они медленно уступали земли, но в конце концов сдались и почти полностью ушли в [lindon|E]. С падением [Concept('northernkingdom', 'Северного королевства')|E] древние земли Сиргала оказались заброшенными, если не считать нескольких бесстрашных фермеров и путешественников."
+
+ tradition_sirgala_renewed_name: "Возрождённая Сиргала"
+ tradition_sirgala_renewed_desc: "После долгих лет уцелевшие сиррандрай вернулись на земли своих предков, отвоевали у дикой природы свои некогда величественные залы и вновь провозгласили королевство Сиргала. Наследник Борнмира занимает их древнюю вотчину, чтобы снова править своими несколько уменьшившимися землями."
+
  tradition_heryvellyn_name: "Эривеллин"
  tradition_heryvellyn_desc: "Среди некоторых [Concept('eldar', 'эльдар')|E] оценка хорошего вина возведена в ранг искусства. Эти [Glossary('эривеллин','heryvellyn_gloss')], или «любители вина», - не виноделы, а страстные дегустаторы, хранители редких сортов, привезённых из дальних земель. Пробовать, смаковать и сохранять память о каждой порции - признак утонченности, а устраивать собрания, на которых делятся самыми лучшими винами, считается актом глубокой вежливости и чести"
  can_import_wine_tt: "В пределах вашего [Concept('diplomatic_range', 'дипломатического радиуса')|E] есть [Concept('culture_head', 'культурный идеолог')|E] с [Concept('tradition', 'традицией')|E] «[GetCultureTradition('tradition_dorwinion_vineyards').GetName]»."
  culture_parameter_unlock_wine_tasting_activity_elf: "Доступно [Concept('activity', 'занятие')|E] #V Дегустация вин#!"
-
- tradition_nelyarin_heritage_name: "Наследие нельяр"
- tradition_nelyarin_heritage_desc: "По большей части эта ветвь [avari|El] состоит из потомков самого многочисленного [Concept('elven', 'эльфийского')|E] народа – [nelyar|El], оставшихся у [Concept('cuivienen', 'Куивиэнена')|E]."
- cannot_have_tradition_nelyarin_culture: "$cannot_combine_tradition_trigger_desc$ #high $tradition_nelyarin_heritage_name$#!"
- culture_parameter_unlock_maa_nelyarin_archers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nelyarin_archers').GetName|l]"
- culture_parameter_unlock_maa_nelyarin_swordsmen: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nelyarin_swordsmen').GetName|l]"
- culture_parameter_unlock_maa_nelyarin_pikemen: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nelyarin_pikemen').GetName|l]"
- culture_parameter_unlock_maa_nuinevari: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nuinevari').GetName|l]"
-
- tradition_tatyarin_heritage_name: "Наследие татьяр"
- tradition_tatyarin_heritage_desc: "По большей части эта ветвь [avari|El] состоит из потомков родственного [noldorelves|El] второго [Concept('elven', 'эльфийского')|E] племени – татьяр, оставшихся у [Concept('cuivienen', 'Куивиэнена')|E]."
- cannot_have_tradition_tatyarin_culture: "$cannot_combine_tradition_trigger_desc$ #high $tradition_tatyarin_heritage_name$#!"
- tradition_ancient_wanderers_name: "Древние скитальцы"
- tradition_ancient_wanderers_desc: "[cuind|E] всегда были неугомонными, путешествуя по всему [Concept('middleearth', 'Средиземью')|E]. Эти путешествия, хоть и сопряжённые с опасностями, принесли куинд огромный опыт общения со всеми землями и народами мира."
- culture_parameter_unlock_maa_tatyarin_harriers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('tatyarin_harriers').GetName|l]"
- culture_parameter_unlock_maa_tatyarin_rangers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('tatyarin_rangers').GetName|l]"
- culture_parameter_unlock_maa_tatyarin_guardians: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('tatyarin_guardians').GetName|l]"
- culture_parameter_unlock_maa_cuind_wanderers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('cuind_wanderers').GetName|l]"
-
- tradition_sirgalan_exiles_name: "Изгнанники Сиргалы"
- tradition_sirgalan_exiles_desc: "На заре [Concept( 'thirdage', 'Третьей Эпохи' )|E] сиррандрай были постепенно вытеснены из своих земель растущей мощью [dunedain|El]. Сначала они медленно уступали земли, но в конце концов сдались и почти полностью ушли в [lindon|E]. С падением [Concept('northernkingdom', 'Северного королевства')|E] древние земли Сиргала оказались заброшенными, если не считать нескольких бесстрашных фермеров и путешественников."
- tradition_sirgala_renewed_name: "Возрождённая Сиргала"
- tradition_sirgala_renewed_desc: "После долгих лет уцелевшие сиррандрай вернулись на земли своих предков, отвоевали у дикой природы свои некогда величественные залы и вновь провозгласили королевство Сиргала. Наследник Борнмира занимает их древнюю вотчину, чтобы снова править своими несколько уменьшившимися землями."
- culture_parameter_unlock_maa_sirrandrai_defenders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('sirrandrai_defenders').GetName|l]"
- culture_parameter_unlock_maa_sirrandrai_sentinels: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('sirrandrai_sentinels').GetName|l]"
- culture_parameter_unlock_maa_sirrandrai_veterans: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('sirrandrai_veterans').GetName|l]"
- culture_parameter_unlock_maa_sirrandrai_riders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('sirrandrai_riders').GetName|l]"
- culture_parameter_unlock_maa_wardens_of_sirgala: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('wardens_of_sirgala').GetName|l]"
 
  ### Easterling Traditions ### 
  #  tradition_lotr_battle_arena_name: "Боевая арена"
@@ -276,6 +260,11 @@
   
  tradition_variag_succession_stable_name: "Стабильное наследование вариагов"
  tradition_variag_succession_stable_desc: "Эта ветвь вариагов отказалась от древнего принципа престолонаследия в пользу более стабильного, чтобы их королевство не раскалывалось так легко и было способно противостоять вражеским атакам."
+
+ # Evil Immortals
+
+ tradition_rule_of_the_shadows_name: "Правление тени"
+ tradition_rule_of_the_shadows_desc: "Древнее зло правит великим множеством народов твёрдой рукой и железным кулаком."
 
  # Orc traditions
  tradition_legions_of_gundabad_name: "Легионы Гундабада"
