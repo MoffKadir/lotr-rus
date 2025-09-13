@@ -473,10 +473,11 @@
 
  decision_restore_guild_of_venturers: "Восстановить гильдию Морестранников"
  decision_restore_guild_of_venturers_desc: "Давным-давно мореходы [Concept('numenor', 'Нуменора')|E] бороздили моря, самые храбрые и выносливые из людей Запада. Моряки, обладающие непревзойденной храбростью и мастерством, они отправлялись в путешествия. [Concept('downfall', 'Низвержение')|E] покончило с их братством, но наследие их подвигов все еще остается.\n\nТеперь, будучи [Select_CString(ROOT.Char.IsFemale, 'сама опытной морячкой, не могла', 'сам опытным моряком, не мог' )] бы я поступить так, как [GetScriptedCharacterByHistoryID('lineofelros6').GetName], восстановив гильдию, чтобы снова бороздить широкие волны [Concept('belegaer_sea', 'Белегаэра')|E]?"
- decision_restore_guild_of_venturers_confirm: "Древняя гордость #L [GetTitleByKey('e_numenor').GetNameNoTier]а#! возрождена!"
- decision_restore_guild_of_venturers_tooltip: "Вы восстановите древнюю гильдию мореходов державы [GetTitleByKey('e_numenor').GetNameNoTier]"
- guild_of_venturers_modifier_name: "Гильдия Морестранников"
+ decision_restore_guild_of_venturers_confirm: "Древняя гордость #L [GetTitleByKey('e_numenor').GetNameNoTierNoTooltip]а#! возрождена!"
+ decision_restore_guild_of_venturers_tooltip: "Вы восстановите древнюю гильдию мореходов державы [GetTitleByKey('e_numenor').GetNameNoTierNoTooltip]"
+ guild_of_venturers_modifier: "Гильдия Морестранников"
  guild_of_venturers_modifier_desc: "Этот дом является покровителем воссозданной гильдии Морестранников."
+ has_100_mariner_xp: "У вас есть #V 100#! [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] «Мореход» #weak ([GetTrait('lifestyle_mariner').GetName( GetNullCharacter )])#!"
 
  ### Arnorian Decision Subset ###
  decision_adopt_arnorian_culture: "Принять арнорскую культуру"
