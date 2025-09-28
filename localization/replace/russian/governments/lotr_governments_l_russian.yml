@@ -4,10 +4,12 @@
  ### GOVERNMENTS ###
  steward_government: "Наместничество"
  steward_government_desc: "\nНаследственный титул «правящего наместника» был создан после гибели короля Эарнура, чтобы сохранить порядок в королевстве в отсутствие законного короля. Этот институт был во всём сродни королевской власти, хотя правящий наместник из уважения перед высшей властью никогда не сидел на королевском престоле: у его подножия стояло кресло из чёрного мрамора для наместника."
+
  wastelands_government: "Не заселено"
  wastelands_government_desc: "\nЭти земли были заброшены или же население здесь слишком мало, чтобы сформировать правительство. Живут здесь лишь фермеры, рыбаки, исследователи или бродяги."
  wastelands_government_opinion: "Мнение правителя диких земель"
  wastelands_government_filter_option: "$wastelands_government$"
+
  elven_government: "Эльфийская держава"
  elven_government_with_icon: "@government_type_elven! $elven_government$"
  elven_government_adjective: "Эльфийск"
@@ -16,15 +18,20 @@
  elven_vassal: "Эльфы"
  #elven_vassal_desc should get it's own game concept
  elven_vassal_desc: "$game_concept_elven_government_desc$"
+ elven_government_obligations: "[GetGovernment('elven_government').GetAdjectiveNoTooltip]ие [obligations|El]"
+
  numenorean_government: "Нуменорская автократия"
  numenorean_government_adjective: "Нуменорск"
  numenorean_government_desc: "\nС ранних лет [Concept( 'secondage', 'Второй Эпохи' )|E] [numenoreans|El] (и их потомки) традиционно следовали за одним сильным правителем. Эти правители были автократами, а власть их – почти неограниченной, если только психологическое здоровье правителя не подкашивалось окончательно. Их вассалы имели право высказываться, но не более."
+
  orcish_government: "Орочья держава"
  orcish_government_adjective: "Оркск"
  orcish_government_desc: "\nСварливые и агрессивные по своей природе, племена орков разрознены и нередко соперничают между собой. Управляет ими как правило самое сильное или самое жестокое порождение [Concept( 'morgothcharacter', 'Моргота' )|E]."
+
  despotic_government: "Деспотизм"
  despotic_government_adjective: "Деспотическ"
  despotic_government_desc: "\nКак следует уже из названия, деспотическим владением управляет деспот или тиран. Первым таким тираном был Моргот, который правил, восседая на своём железном троне в Утумно, а те, кто последовали за ним, лишь подражали его правлению."
+
  hobbit_government: "Хоббитанство"
  hobbit_government_with_icon: "@government_type_hobbit! $hobbit_government$"
  hobbit_government_adjective: "Хоббитск"
@@ -33,6 +40,7 @@
  hobbit_vassal: "Хоббиты"
  #hobbit_vassal_desc should get it's own game concept
  hobbit_vassal_desc: "$game_concept_hobbit_government_desc$"
+
  oligarchy_government: "Олигархия"
  oligarchy_government_with_icon: "@government_type_republic! $oligarchy_government$"
  oligarchy_government_adjective: "Олигархическ"
