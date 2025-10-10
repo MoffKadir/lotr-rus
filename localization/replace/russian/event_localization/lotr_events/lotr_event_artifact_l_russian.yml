@@ -42,6 +42,38 @@
  lotr_artifact.0031.b:0 "Я верну их гномам"
  lotr_artifact.0031.c:0 "Гробница Торина будет восстановлена в былом великолепии"
 
+ ### Searching for Thorin's artifacts
+ 
+ lotr_artifact.0032.t: "Не оставить камня на камне"
+ lotr_artifact.0032.desc.intro: "Мой народ разгневан: после печально известного разграбления священной гробницы #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина «Дубощита»#!#! мы всё ещё не вернули"
+ lotr_artifact.0032.desc.orcrist: "легендарный клинок гондолиндрим [Glossary('Оркрист','orcrist_gloss')]"
+ lotr_artifact.0032.desc.arkenstone: "[Concept('arkenstone', 'Аркенстон')|E] из [Concept('erebor', 'Эребора')|E]"
+ lotr_artifact.0032.desc.both: "ни $lotr_artifact.0031.desc.orcrist$, ни $lotr_artifact.0031.desc.arkenstone$"
+ lotr_artifact.0032.desc.outro: ".\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'созвала', 'созвал' )] свой совет, чтобы обсудить организацию поисковой группы. Конечно, мне следует немедленно выслать своих шпионов. Но для большей эффективности их, вероятно, должны сопровождать послы. И разве их не должна сопровождать стража?"
+ lotr_artifact.0032.a: "Послать шпионов одних, я доверяю их мастерству."
+ lotr_artifact.0032.a.tt: "У вас будет небольшой шанс найти артефакты, если они потеряны, и приличный шанс найти их владельца, если они существуют."
+ lotr_artifact.0032.b: "Мои дипломаты откроют для них двери."
+ lotr_artifact.0032.b.tt: "У вас будет неплохой шанс найти артефакты, если они будут утеряны, и вы с уверенностью найдете их владельца, если они существуют."
+ lotr_artifact.0032.c: "Вы что, не слышали меня? Я [Select_CString(ROOT.Char.IsFemale, 'сказала', 'сказал' )] #b всех #!!"
+ lotr_artifact.0032.c.tt: "У вас будет очень хороший шанс найти артефакты, если они будут утеряны, и наверняка найти их владельца, если они существуют."
+ lotr_artifact.0032.d: "Возможно, в конце концов, нам не так уж и нужны эти артефакты."
+
+ ### Spymaster returns from searching for Thorin's artifacts
+
+ lotr_artifact.0033.t: "Отчёт поисковой группы"
+ lotr_artifact.0033.desc.intro: "[Select_CString(spymaster.IsFemale, 'Моя тайная советница', 'Мой тайный советник' )] [spymaster.GetTitledFirstName] входит в мой тронный зал,"
+ lotr_artifact.0033.intro.artifact: "с широкой улыбкой на лице. «Мой сюзерен, отличные новости!»\n\n"
+ lotr_artifact.0033.intro.owner: "с довольной улыбкой на лице. «Мой сюзерен, у меня для вас новости!»\n\n"
+ lotr_artifact.0032.desc.intro.failure: "с хмурым выражением лица. «Мой сюзерен, боюсь, мы вернулись с пустыми руками».\n\n"
+ lotr_artifact.0033.orcrist.found: "Наши агенты вернулись с [Glossary('Оркристом','orcrist_gloss')], мечом #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина «Дубощита»#!#!!"
+ lotr_artifact.0033.orcrist.owner: "Мы обнаружили, что [Glossary('Оркристом','orcrist_gloss')], мечом #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина «Дубощита»#!#!, владеет не кто [Select_CString(orcrist_owner.IsFemale, 'иная', 'иной' )], как [orcrist_owner.GetTitledFirstName]!"
+ lotr_artifact.0033.orcrist.failure: "Нам не удалось найти никаких следов [Glossary('Оркриста','orcrist_gloss')], меча #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина «Дубощита»#!#!."
+ lotr_artifact.0033.arkenstone.found: "Мы вернули [Concept('arkenstone', 'Аркенстон')|E]!"
+ lotr_artifact.0033.arkenstone.owner: "Мы выяснили, что [arkenstone_owner.GetTitledFirstName] в настоящее время владеет [Concept('arkenstone', 'Аркенстоном')|E]!"
+ lotr_artifact.0033.arkenstone.failure: "Несмотря на все наши усилия, наши шпионы так и не смогли обнаружить [Concept('arkenstone', 'Аркенстон')|E]."
+ lotr_artifact.0033.a: "Это действительно хорошая новость!"
+ lotr_artifact.0033.b: "Такое разочарование."
+
  ### Aragorn receives Arnor's regalia
 
  lotr_artifact.0040.t:0 "Регалии утраченного Арнора"
