@@ -2,12 +2,12 @@
  task_promote_local_culture:0 "Promote [local_culture|E]"
  task_promote_local_culture_effect_desc:1 "#S At #V 100%#!#!:\n$TAB$The [county|E] changes [culture|E] to a [local|E] and [native|E] culture within their [heritage|E]"
  NOT_NATIVE_REGION_REASON:0 "Your culture is not [native|E] to the county [region|E]"
- NOMADIC_CULTURE_CULTURE_CONVERT_TO:0 "Your culture is considered Nomadic"
- NOMADIC_CULTURE_CULTURE_CONVERT_FROM:0 "You try to convert a province with a Nomadic culture"
+ NOMADIC_CULTURE_CULTURE_CONVERT_TO:0 "Your culture is considered Migratory"
+ NOMADIC_CULTURE_CULTURE_CONVERT_FROM:0 "You try to convert a province with a Migratory culture"
  
  task_promote_culture_effect_no_culure_to_convert_desc:0 "#S At #V 100%#!#!:\n$TAB$The [county|E] changes [culture|E] to a Culture of your choosing"
  task_promote_culture_acceptance_effect_no_culure_to_convert_desc:0 "\n$TAB$The [cultural_acceptance|E] between the [county.GetProvince.GetCounty.GetCulture.GetCollectiveNoun] and the Culture that you choose decreases by [SCOPE.ScriptValue('culture_conversion_acceptance_impact')|N^/%]"
  
- admin_conversion_no_tolerance_tt:0 "Because of the current $religious_tolerance_law$, [county|E] [faiths|E] in [vassal|E] [counties|E] must be at least [faith_hostile|E] relative to the [state_faith|E] to be converted"
- admin_conversion_partial_tolerance_tt:0 "Because of the current $religious_tolerance_law$, [county|E] [faiths|E] in [vassal|E] [counties|E] must be at least [faith_evil|E] relative to the [state_faith|E] to be converted"
- admin_conversion_full_tolerance_tt:0 "Because of the current $religious_tolerance_law$, [county|E] [faiths|E] in [vassal|E] [counties|E] cannot be converted"
+ admin_conversion_no_tolerance_tt:0 "Because of the [GetLaw('religious_tolerance_law_0').GetName] [law|E], [faiths|E] considered [faith_astray|E] by the [state_faith|E] cannot be converted, unless [state_faith|E] is [GetFaithDoctrine('doctrine_pluralism_fundamentalist').GetBaseName]"
+ admin_conversion_partial_tolerance_tt:0 "Because of the [GetLaw('religious_tolerance_law_1').GetName] [law|E], only [faiths|E] considered [faith_evil|E] by the [state_faith|E] can be converted"
+ admin_conversion_full_tolerance_tt:0 "Because of the [GetLaw('religious_tolerance_law_2').GetName] [law|E], [vassal|E] [counties|E] cannot be converted"

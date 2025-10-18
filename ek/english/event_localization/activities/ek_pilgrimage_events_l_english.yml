@@ -15,7 +15,7 @@
  pilgrimage.5001.b:0 "Yes, they are indeed dead."
 
  ek_pilgrimage.0001.t:0 "$pilgrimage_header$ Reading from the Sermons"
- ek_pilgrimage.0001.desc:0 "Even when on pilgrimage, the priests still read from the Sermons. A meeting is commonly held out in the open when no temple is nearby.\n\nUndeterred, a zealous [ROOT.Char.Custom('DefaultPriestTitle')] is standing out, reading from the Sermons. I sit among the audience, listening to [sermon_reader.GetHerHim].\n\n"The ending of the words is ALMSIVI.", [sermon_reader.GetSheHe] finishes. I ponder about the reading."
+ ek_pilgrimage.0001.desc:0 "Even when on pilgrimage, the priests still read from the Sermons. A meeting is commonly held out in the open when no temple is nearby.\n\nUndeterred, a zealous [ROOT.Char.Custom('DefaultPriestTitle')] is standing out, reading from the Sermons. I sit among the audience, listening to [sermon_reader.GetHerHim].\n\n"The ending of the words is [Glossary( 'ALMSIVI', 'TRIBUNAL_GLOSS' )].", [sermon_reader.GetSheHe] finishes. I ponder about the reading."
  ek_pilgrimage.0001.a:0 "Praise Vivec!"
  ek_pilgrimage.0001.b:0 "How boring, I'll be in my tent."
 
@@ -25,7 +25,7 @@
  ek_pilgrimage.0002.b:0 "I'm not worthy, my Lord."
 
  ek_pilgrimage.0003.t:0 "$pilgrimage_header$ The Bloodstone Shrine"
- ek_pilgrimage.0003.desc:0 "A pilgrimage can be a difficult ordeal, but some pilgrims take a more extreme approach. I've noticed a trail of blood coming from the feet of some pilgrims and I've wondered about that until I stopped one of them to ask them if they needed a physician.\n\nWith a sigh and a pained voice, [hetman.GetSheHe] answered me that was a proof of devotion to the Tribunal. They were using special footwear that pierced and cut their feet, to make them feel the pain of the martyrs. That practice created a bloodstone, which would be offered in a shrine on the way to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]."
+ ek_pilgrimage.0003.desc:0 "A pilgrimage can be a difficult ordeal, but some pilgrims take a more extreme approach. I've noticed a trail of blood coming from the feet of some pilgrims and I've wondered about that until I stopped one of them to ask them if they needed a physician.\n\nWith a sigh and a pained voice, [hetman.GetSheHe] answered me that was a proof of devotion to the [Glossary( 'Tribunal', 'TRIBUNAL_GLOSS' )]. They were using special footwear that pierced and cut their feet, to make them feel the pain of the martyrs. That practice created a bloodstone, which would be offered in a shrine on the way to [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]."
  ek_pilgrimage.0003.a:0 "For Saint Veloth! I shall undertake this ordeal!"
  ek_pilgrimage.0003.a.tt:0 "You ask for one of the pilgrimage shoes and start following the trail of dried blood."
  ek_pilgrimage.0003.b:0 "Those people are insane!"
@@ -57,7 +57,7 @@
  ek_pilgrimage.0008.b:0 "Steer away from this madness."
 
  ek_pilgrimage.0009.t:0 "The Pilgrim's Path: Courtesy"
- ek_pilgrimage.0009.desc:0 "I keep breathing while the sacred waters fill my lungs but my faith is unabated. I eventually feel my senses leaving my body, only to wake up in a room with a dremora and the hidden shrine itself by [krazzt.GetHerHis] side.\n\nAs I approach the creature, [krazzt.GetSheHe] points at the shrine, impatiently, then extends [krazzt.GetHerHis] open palm to me, like [krazzt.GetSheHe] was expecting me to give [krazzt.GetHerHim] something. Confused, I approach the shrine to read its engravings:\n\n#I In a battle with Mehrunes Dagon, Vivec gave his own silver longsword to the #LORE [compendium_daedra]#! Lord rather than dishonor himself by fighting an unarmed foe. This so impressed the Dremora that they now share a bond of respect with the followers of the Tribunal.#!"
+ ek_pilgrimage.0009.desc:0 "I keep breathing while the sacred waters fill my lungs but my faith is unabated. I eventually feel my senses leaving my body, only to wake up in a room with a dremora and the hidden shrine itself by [krazzt.GetHerHis] side.\n\nAs I approach the creature, [krazzt.GetSheHe] points at the shrine, impatiently, then extends [krazzt.GetHerHis] open palm to me, like [krazzt.GetSheHe] was expecting me to give [krazzt.GetHerHim] something. Confused, I approach the shrine to read its engravings:\n\n#I In a battle with Mehrunes Dagon, Vivec gave his own silver longsword to the [Glossary( 'Daedra Lord', 'DAEDRA_GLOSS' )] rather than dishonor himself by fighting an unarmed foe. This so impressed the Dremora that they now share a bond of respect with the followers of the [Glossary( 'Tribunal', 'TRIBUNAL_GLOSS' )].#!"
  ek_pilgrimage.0009.a:0 "Give the Dremora a Silver Longsword."
  ek_pilgrimage.0009.b:0 "Issue a small prayer and go back somehow."
 
@@ -68,7 +68,7 @@
 
  ek_pilgrimage.0011.t:0 "The Pilgrim's Path: Valor"
  ek_pilgrimage.0011.desc:0 "The pilgrimage takes me to the south of Gnisis along the shore, inside a cave known as Koal Cave.\n\nJust inside the entrance, I spot a shrine with several portions of Dreugh Wax offered at its bottom. I'm able to read its engravings:\n\n#I Lord Vivec once fought a battle with Ruddy Man, the father of the Dreugh. When he defeated Ruddy Man, Vivec spared his life, on the condition that Ruddy Man and his children would give up their tough hides to serve as armor for the Dunmer.#!"
- ek_pilgrimage.0011.a:0 "Offer a handful of Dreugh Wax at the shrine."
+ ek_pilgrimage.0011.a:0 "Offer a [ROOT.Char.Custom('HandClawPaw')]ful of Dreugh Wax at the shrine."
  ek_pilgrimage.0011.b:0 "Nod and carry on."
  ek_pilgrimage.0011.c:0 "Look for Dreugh further inside the cave."
  ek_pilgrimage.0011.c.tt:0 "Fight a fearsome Dreugh to prove your own Valor!"
@@ -108,6 +108,37 @@
  ek_pilgrimage.0017.desc:0 "While heading towards my destination in the pilgrimage, I spot a bright shimmer in the distance, almost like it was calling me from afar.\n\nAs I approach the site, I immediately recognise the object that was emitting such a bright light. It was the crosier which belonged to St. Llothis himself! Oh, joyous day! I fall to my knees and start a fervorous prayer while tears roll down my face.\n\nTouching it moves me so much that I consider also devouting myself to the Pious Saint."
  ek_pilgrimage.0017.a:0 "Bless Saint Llothis! Bless the tailors and the dyers!"
  ek_pilgrimage.0017.b:0 "I'm not worthy, great Saint." 
+ 
+ ek_pilgrimage.0018.t:0 "A Divine Meeting"
+ ek_pilgrimage.0018.desc:0 "As I embark on my sacred pilgrimage through the hallowed city of Vivec, a humble priest discreetly approaches, offering a rare opportunity to witness a public appearance of the Living God Himself. Captivated by the prospect of beholding the divine in a grand setting, I contemplate the sacred significance and potential wisdom such an event may bestow."
+ ek_pilgrimage.0018.a:0 "Fine, take this gold."
+ ek_pilgrimage.0018.b:0 "I've come this far. My devotion will take me to the Warrior Poet."
+ ek_pilgrimage.0018.c:0 "Not interested."
+
+ ek_pilgrimage.0019.t:0 "The Warrior Poet"
+ ek_pilgrimage.0019.desc:0 "As I stand among the fortunate few gathered in Vivec City, a sense of anticipation fills the air as we await the public appearance of the revered god, Vivec. The crowd hushes in reverence as He finally emerges, His presence commanding and divine. A radiant aura engulfs us, and for a moment, time seems to stand still."
+ ek_pilgrimage.0019.a:0 "Praise Vivec!"
+ ek_pilgrimage.0019.a.flavor:0 "The Living God starts speaking..."
+ 
+ ek_pilgrimage.0020.desc:0 "As Vivec addresses the select group, His words weighing like a barrel of lead deep within my soul. It is as if he speaks directly to me, telling, in riddles, what is my place in the world. The truths He imparts are like a personal yet universal revelation, and I feel truly touched by the divine."
+ ek_pilgrimage.0020.a:0 "Praise the Warrior Poet!" 
+ ek_pilgrimage.0020.a.flavor:0 "Vivec's speech comes to an end..."
+ 
+ ek_pilgrimage.0021.desc:0 "In the presence of the god of wisdom and knowledge, purpose and clarity are manifested. The mysteries of the universe seem to align, and I am inspired to follow the path that has been illuminated before me. As the divine audience comes to an end, He leaves me devoted and connected like never before. Vivec's presence has forever changed me, and I will forever carry his wisdom in my heart."
+ ek_pilgrimage.0021.a:0 "Teach me your dance, Martial Axiom!"
+ ek_pilgrimage.0021.b:0 "Impart me with Verse and Metaphor!"
+ ek_pilgrimage.0021.c:0 "I only wish to serve, Lord..."
+ ek_pilgrimage.0021.d:0 "I am the Warrior Poet's vessel."
+
+ ek_pilgrimage.0022.t:0 "$pilgrimage_header$ The Immolation of Anequina"
+ ek_pilgrimage.0022.desc:0 "While heading towards my destination in the pilgrimage, I spot a bright shimmer in the distance, almost like it was calling me from afar.\n\nAs I approach the site, I immediately recognise the object that was emitting such a bright light. It was the talisman which belonged to St. Vorys himself! Oh, joyous day! I fall to my knees and start a fervorous prayer while tears roll down my face.\n\nTouching it moves me so much that I consider also devouting myself to the Immolant Saint."
+ ek_pilgrimage.0022.a:0 "Our prayers mean nothing, our offerings mean nothing!"
+ ek_pilgrimage.0022.b:0 "I'm not worthy, great Saint." 
+
+ ek_pilgrimage.0023.t:0 "$pilgrimage_header$ Take My Breath Away"
+ ek_pilgrimage.0023.desc:0 "Necrom is a city surrounded by an atypical aura. It is as mysterious as it's holy and, having extensively explored the religious side of the City of the Dead, I decide to delve deep into the occult side of it.\n\nAs I wander through the immense labyrinth of underground catacombs, faint whispers tell me of a time before the Tribunal, where the whole of Necrom was worshipping daedra. As the whispers guided me in the catacombs, they proceeded with the story.\n\nALMSIVI had big plans and Ayem needed to be loved by all of Morrowind, so she named a champion and blessed a blade. This blade was known as Breathtaker, for it made the daedra silent and the cultists breathless. Not even spirits could resist its powers. The faint whispers brought me to a forgotten corner of the labyrinths, and there, resting upon an unmarked sarcophagus, was the blade."
+ ek_pilgrimage.0023.a:0 "Blessed Ayem, I carry on this legacy."
+ ek_pilgrimage.0023.b:0 "That is not mine to take." 
 
  ek_pilgrimage.1018.t:0 "$pilgrimage_header$ The Sword of the Crusader"
  ek_pilgrimage.1018.desc:0 "While heading towards my destination in the pilgrimage, I spot a bright shimmer in the distance, almost like it was calling me from afar.\n\nAs I approach the site, I immediately recognise the object that was emitting such a bright light. It was the sword that Pelinal Whitestrake carried into battle, made by Arkay himself. Oh, joyous day! I fall to my knees and start a fervorous prayer to my patron god. Touching it reveals an inscription on the rock behind it:\n\n#F "Honor the earth, its creatures, and the spirits, living and dead. Guard and tend the bounties of the mortal world, and do not profane the spirits of the dead." #! "

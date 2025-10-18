@@ -19,7 +19,7 @@
  game_concept_faith_evil_desc:0 "This [faith|E] is considered anathema.\nIntermarriage rarely happens, [holy_wars|E] can be waged.\n\n#S Effects at minimum Hostility to be considered Evil:\n#![GetHostilityDescription( '(int32)67' )]\n\n#S Effects at maximum Hostility to be considered Hostile:\n#![GetHostilityDescription( '(int32)100' )]"
 
  game_concept_faith_hostility:0 "Faith Hostility"
- game_concept_faith_hostility_desc:1 "All [faiths|E] have a relation towards each other $game_concept_faith$ that is determined by how closely related they are.\nBase [faith_hostility|E] is #P 50#!. \n\nThis is then affected by the following factors:\n• If they share a [pantheon|E]\n• If they are syncretic through a Secondary [pantheon|E]\n• If they share a [head_of_faith|E]\n• Their view on Witchcraft, Lycanthropy, Vampirism and Necromancy\n• Their view on the #LORE [compendium_missing_god]#!\n• Their view on the Daedra\n• Some Tenets\n• If the Faith has Special [doctrines|E]\n\nIf two Faiths are very far apart, they might be able to [holy_war|E] each other.\n\nThe following relations exist: [faith_righteous|L] ([faith_hostility|E] 0), [faith_astray|L] ([faith_hostility|E] 1-33), [faith_hostile|L] ([faith_hostility|E] 34-66), and [faith_evil|L] ([faith_hostility|E] 67-100)."
+ game_concept_faith_hostility_desc:1 "All [faiths|E] have a relation towards each other $game_concept_faith$ that is determined by how closely related they are.\nBase [faith_hostility|E] is #P 50#!. \n\nThis is then affected by the following factors:\n• If they share a [pantheon|E]\n• If they are syncretic through a Secondary [pantheon|E]\n• If they share a [head_of_faith|E]\n• Their view on Witchcraft, Lycanthropy, Vampirism and Necromancy\n• Their view on the Missing God\n• Their view on the Daedra\n• Some Tenets\n• If the Faith has Special [doctrines|E]\n\nIf two Faiths are very far apart, they might be able to [holy_war|E] each other.\n\nThe following relations exist: [faith_righteous|L] ([faith_hostility|E] 0), [faith_astray|L] ([faith_hostility|E] 1-33), [faith_hostile|L] ([faith_hostility|E] 34-66), and [faith_evil|L] ([faith_hostility|E] 67-100)."
 
  game_concept_head_of_faith_desc:0 "A $game_concept_head_of_faith$ is the formal leader of a [faith|E]. The powers and nature of the $game_concept_head_of_faith$ depends on the [doctrines|E] of the Faith.\n\nSome Faiths have a [spiritual_head_of_faith|E] #weak (e.g. the Arch-Primate)#!, some a [temporal_head_of_faith|E] #weak (e.g. the Blood-Matron)#!, and some do not have a $game_concept_head_of_faith$ at all.\n\n[faith_hostility|E] between [faiths|E] sharing a Head of Faith is reduced by #P -5#!."
 
@@ -69,6 +69,13 @@
  THEME_DUCHY_SORT_THEME_TROOPS: "Province Troops" #Replaced Theme
  
  game_concept_imperial_family: "Ruling Family" #Replaced Imperial
+ 
+ eldest_imperial_son_desc: "[ROOT.Char.GetTopLiege.GetTitleAsName]'s Eldest Son"  #Replaced Imperial
+ eldest_imperial_daughter_desc: "[ROOT.Char.GetTopLiege.GetTitleAsName]'s Eldest Daughter"  #Replaced Imperial
+ eldest_imperial_child_desc: "[ROOT.Char.GetTopLiege.GetTitleAsName]'s Eldest Child"  #Replaced Imperial
+ 
+ councillor_position_desc: "[ROOT.Char.GetTopLiege.GetTitleAsName]'s [councillor|E]"  #Replaced Imperial
+ court_position_succession_desc: "[ROOT.Char.GetTopLiege.GetTitleAsName]'s [court_position|E]"  #Replaced Imperial
 
  #EK EDIT: Including these in blanked-out form since the logs complain when they mention commented-out game concepts.
  game_concept_harrying_widget_i: ""

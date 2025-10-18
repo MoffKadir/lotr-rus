@@ -53,7 +53,7 @@
  trait_p_dv_shezarr:0 "Follower of [ROOT.Char.Custom('GetDvShezarrName')]"
  trait_p_dv_shezarr_base:0 "Follower of Shezarr"
  trait_p_dv_shezarr_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_dv_shezarr_desc' )]"
- trait_p_dv_shezarr_desc:0 "A follower of #LORE [compendium_shezarr]#!"
+ trait_p_dv_shezarr_desc:0 "A follower of Shezarr"
  trait_p_dv_shezarr_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetDvShezarrName')]."
 
  # Aldmer
@@ -72,7 +72,7 @@
  trait_p_ae_magnus:0 "Follower of [ROOT.Char.Custom('GetAeMagnusName')]"
  trait_p_ae_magnus_base:0 "Follower of Magnus"
  trait_p_ae_magnus_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ae_magnus_desc' )]"
- trait_p_ae_magnus_desc:0 "A follower of #LORE [compendium_magnus]#!"
+ trait_p_ae_magnus_desc:0 "A follower of Magnus"
  trait_p_ae_magnus_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetAeMagnusName')]."
 
  trait_p_ae_phynaster:0 "Follower of [ROOT.Char.Custom('GetAePhynasterName')]"
@@ -289,6 +289,12 @@
  trait_p_at_dragon_desc:0 "A follower of the Dragon"
  trait_p_at_dragon_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetAtDragonName')]."
  ##the great Dragon, who first came into this world and is its rightful watcher and protector.
+
+ trait_p_at_hare:0 "Follower of the Hare"
+ trait_p_at_hare_base:0 "Follower of the Hare"
+ trait_p_at_hare_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_at_hare_desc' )]"
+ trait_p_at_hare_desc:0 "A follower of the Hare"
+ trait_p_at_hare_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of the Hare."
  
  # Elemental Gods
  trait_p_eg_myn:0 "Follower of Myn"
@@ -353,12 +359,6 @@
  trait_p_ch_bendu_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ch_bendu_desc' )]"
  trait_p_ch_bendu_desc:0 "A follower of Bendu Olo"
  trait_p_ch_bendu_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Bendu Olo, who led the All-Flags-Navy against the hated Sloads when they unleashed their plagued upon Tamriel."
-
- trait_p_ch_attrebus:0 "Follower of Attrebus"
- trait_p_ch_attrebus_base:0 "Follower of Attrebus"
- trait_p_ch_attrebus_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ch_attrebus_desc' )]"
- trait_p_ch_attrebus_desc:0 "A follower of Attrebus"
- trait_p_ch_attrebus_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Attrebus, who rallied Tamriel and destroyed the remnants of the #LORE [compendium_akaviri_potentate]#!, freeing Cyrodiil and Tamriel from the Akaviri rule."
 
  # Thousand Cults
  trait_p_tc_aka:0 "Cultist of Aka"
@@ -635,7 +635,7 @@
  trait_p_mg_meridia_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of  Merid-Nunda, the Yellow Coruscation."
 
  trait_p_mg_magnus:0 "Follower of Magnus"
- trait_p_mg_magnus_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of #LORE [compendium_magnus]#!, the Architect."
+ trait_p_mg_magnus_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Magnus, the Architect."
 
  trait_p_ta_meridia:0 "Follower of Merid-Nunda"
  trait_p_ta_meridia_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Merid-Nunda, Regent of Majesty."
@@ -666,6 +666,44 @@
 
  trait_p_ta_peryite:0 "Follower of the Taskmaster"
  trait_p_ta_peryite_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of the Taskmaster."
+
+#Reman
+ trait_p_rm_light_of_man: "Follower of Reman, the Light of Man"
+ trait_p_rm_light_of_man_base: "Follower of Reman, the Light of Man"
+ trait_p_rm_light_of_man_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_rm_light_of_man_desc' )]"
+ trait_p_rm_light_of_man_desc:0 "A follower of Reman, the Light of Man"
+ trait_p_rm_light_of_man_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Reman, the Light of Man."
+
+ trait_p_rm_the_cyrodiil: "Follower of Reman, the Cyrodiil"
+ trait_p_rm_the_cyrodiil_base: "Follower of Reman, the Cyrodiil"
+ trait_p_rm_the_cyrodiil_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_rm_the_cyrodiil_desc' )]"
+ trait_p_rm_the_cyrodiil_desc: "A follower of Reman, the Cyrodiil"
+ trait_p_rm_the_cyrodiil_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Reman, the Cyrodiil."
+
+ trait_p_rm_worldly_god: "Follower of Reman, the Worldly God"
+ trait_p_rm_worldly_god_base: "Follower of Reman, the Worldly God"
+ trait_p_rm_worldly_god_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_rm_worldly_god_desc' )]"
+ trait_p_rm_worldly_god_desc: "A follower of Reman, the Worldly God"
+ trait_p_rm_worldly_god_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Reman, the Worldly God."
+
+#Trinimac
+ trait_p_tm_paragon: "Follower of Trinimac, the Paragon"
+ trait_p_tm_paragon_base: "Follower of Trinimac, the Paragon"
+ trait_p_tm_paragon_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_tm_paragon_desc' )]"
+ trait_p_tm_paragon_desc:0 "A follower of Trinimac, the Paragon"
+ trait_p_tm_paragon_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Trinimac, the Paragon."
+
+ trait_p_tm_gold_champ: "Follower of Trinimac, the Golden Champion"
+ trait_p_tm_gold_champ_base: "Follower of Trinimac, the Golden Champion"
+ trait_p_tm_gold_champ_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_tm_gold_champ_desc' )]"
+ trait_p_tm_gold_champ_desc: "A follower of Trinimac, the Golden Champion"
+ trait_p_tm_gold_champ_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Trinimac, the Golden Champion."
+
+ trait_p_tm_blade_of_courage: "Follower of Trinimac, the Blade of Courage"
+ trait_p_tm_blade_of_courage_base: "Follower of Trinimac, the Blade of Courage"
+ trait_p_tm_blade_of_courage_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_tm_blade_of_courage_desc' )]"
+ trait_p_tm_blade_of_courage_desc: "A follower of Trinimac, the Blade of Courage"
+ trait_p_tm_blade_of_courage_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Trinimac, the Blade of Courage."
 
 #Misc
  trait_birthsign:0 "Birthsign"

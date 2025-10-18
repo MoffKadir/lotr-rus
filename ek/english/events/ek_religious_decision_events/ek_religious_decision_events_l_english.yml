@@ -7,7 +7,7 @@
  ek_religious_decision.0001.fight_scary_monster:0 "I will seek and slay a monster!"
  ek_religious_decision.0001.fight_scary_monster.tt:0 "It is a long tradition to seek out a monster that plagues our land, and slay them for the good of our people..."
  ek_religious_decision.0001.kill_lycanthrope:0 "The lycan menace must be eradicated!"
- ek_religious_decision.0001.kill_lycanthrope.tt:0 "I will seek and slay a lycanthrophe, these monsters that hunt our kind and plague our land!"
+ ek_religious_decision.0001.kill_lycanthrope.tt:0 "I will seek and slay a lycanthrope, these monsters that hunt our kind and plague our land!"
  ek_religious_decision.0001.kill_vampire:0 "I will kill a vampire!"
  ek_religious_decision.0001.kill_vampire.tt:0 "I will seek and slay a vampire, a creature of the night that stalks mortalkind..."
  ek_religious_decision.0001.become_cannibal:0 "We do consider consuming mortal flesh holy..."
@@ -56,7 +56,7 @@
  ek_religious_interactions.0201.calm.desc:0 "I should be unsettled, out of breath, anxious about the ritual's blood toll and its potential outcomes, but I am not. My blood feels like the slow and quiet trickle of a brook that encircles a magnificent pagoda."
  ek_religious_interactions.0201.wrathful.desc:0 "By the time the blood flow abates, my own blood is rushing through my veins, throbbing in my temples, pumping the names of those who have wronged me. I understand now why [victim.GetTitledFirstName] was such a wrathful [victim.GetWomanMan]!"
  ek_religious_interactions.0201.chaste.desc:0 "My stomach churns, then settles, and the blood we shared runs through me like a cool and slow wave. Somehow I know now, much like [victim.GetTitledFirstName], the heat and passion of blood no longer makes me act unwisely."
- ek_religious_interactions.0201.lustful.desc:0 "[victim.GetTitledFirstName]'s blood runs through me like a slow and lurid wave, like a finger softly running down naked skin. It names [victim.GetHerHis] past lovers, drawing out each name as it runs through lascivious red chambers."
+ ek_religious_interactions.0201.lustful.desc:0 "[victim.GetTitledFirstName]'s blood runs through me like a slow and lurid wave, like a finger softly running down naked [ROOT.Char.Custom('SkinScalesFur')]. It names [victim.GetHerHis] past lovers, drawing out each name as it runs through lascivious red chambers."
  ek_religious_interactions.0201.content.desc:0 "I believe that [victim.GetTitledFirstName] is not one to begrudge me [victim.GetHerHis] untimely end. [victim.GetSheHe] had no great ambitions that I cut down before [victim.GetHerHis] time, and counted no days of [victim.GetHerHis] life. I understand now that I am just the same."
  ek_religious_interactions.0201.ambitious.desc:0 "I cannot help but feel restless, seeing the lifeless husk of [victim.GetTitledFirstName], now devoid of names and of future selves, lying before me like so much dust. But not to worry, my name-prey: your unfinished work is mine now."
  ek_religious_interactions.0201.diligent.desc:0 "I emerge from the ritual feeling as if born anew, as if [victim.GetTitledFirstName]'s blood had transformed stagnant pools within me into gushing fountains! [victim.GetSheHe] was an industrious sort, this I know, but I am sure I can outdo [victim.GetHerHim]."
@@ -177,6 +177,12 @@
  ek_religious_decision.0301.a:0 "Yes [summoned_dragon.GetNameNoTooltip|U]."
  ek_religious_decision.0301.a.tt:0 "The Dragon, [summoned_dragon.GetNameNoTooltip|U], will join your war."
 
+ ek_religious_decision.0304.t:0 "Summon Bonewalkers"
+ ek_religious_decision.0304.desc:0 "In times of dire necessity, we place upon the priests of Necrom a sacred responsibility: to summon forth once more the formidable Bonewalkers, to stride alongside our armies. These guardians, fashioned from the very remnants of ancient warriors and infused with the spirits of our ancestors, serve as symbols of hope for our forces, while instilling fear in the hearts of our adversaries.\n\nThough the notion of binding our forebears' souls into physical vessels is unsettling, it stands as a solemn sacrifice for the preservation of our realm. Once the tumult of battle subsides, the Bonewalkers are granted reprieve, allowing the spirits to return to their peaceful rest. Yet, should new threats dare to encroach upon the sanctity of our domain, these sentinels remain poised for rebirth, their resolve unwavering, ensuring perpetual protection for our sacred lands."
+ ek_religious_decision.0304.a:0 "Rise and protect your descendants!"
+ ek_religious_decision.0304.a.tt:0 "A Bonewalker regiment will join your forces."
+ bonewalker_event_troops:0 "Bonewalkers"
+
  ### Burying an ancestor in Cath Bedraud
  ek_religious_decision.0502.t:0 "Laid to Rest in Cath Bedraud"
  ek_religious_decision.0502.desc:0 "As has been done for centuries, I have brought my [ROOT.Char.Custom2('RelationToMe', ROOT.Var('ancestor_to_bury').Char)] to be buried in the great Cemetery of Cath Bedraud, close to the royalty and heroes of the province.\n\nSurrounded by the greatest Kings and Queens, around the saviors of High Rock, and among those most beloved by our people, [ROOT.Var('ancestor_to_bury').Char.GetHerHis] body should rest while [ROOT.Var('ancestor_to_bury').Char.GetHerHis] soul joins [ROOT.Char.GetFaith.PositiveAfterLife]..."
@@ -256,6 +262,6 @@
  ek_religious_interactions.0400.desc:0 "Weak and craven, [recipient.GetFirstName] has come to understand that [recipient.GetSheHe] must give way to one who can keep a stronger grip on our house.\n\nStrength alone did not make me worthy; in the end, it was my resolve to lead House [ROOT.Char.GetHouse.GetBaseName] to greatness — as my weak-willed [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('recipient'))] never could — that won the day."
  ek_religious_interactions.0400.a:0 "House [ROOT.Char.GetHouse.GetBaseNameNoTooltip] bends to me!"
  # House head challenge surrender: former head
- ek_religious_interactions.0401.desc:0 "Ashamed, I peer up into [actor.GetFirstNamePossessive] face. My [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('recipient'))] dismissive glare confirms what I already know: I am unworthy...\n\n"At last, our house will have a strong leader" [actor.GetSheHe] sighs. "It is I who must shoulder the [ROOT.Char.GetHouse.GetBaseName] burdens."\n\nThere can be no doubt, [actor.GetFirstNameNoTooltip] has proven my weakness before the court..."
+ ek_religious_interactions.0401.desc:0 "Ashamed, I peer up into [actor.GetFirstNamePossessive] face. My [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('actor'))] dismissive glare confirms what I already know: I am unworthy...\n\n"At last, our house will have a strong leader" [actor.GetSheHe] sighs. "It is I who must shoulder the [ROOT.Char.GetHouse.GetBaseName] burdens."\n\nThere can be no doubt, [actor.GetFirstNameNoTooltip] has proven my weakness before the court..."
  ek_religious_interactions.0401.a:0 "I was not strong enough."
 

@@ -34,7 +34,7 @@
  ## Special clauses
  # Provincial Governor
  special_contract_provincial_governor:0 "Provincial Governor Contract"
-    special_contract_provincial_governor_desc:2 "#emphasis #bold [vassal|E] Privileges:#!#!\nThe [liege|E] can not revoke titles or vassals that are de Jure part of the Province\n\n#flavor Provincial Governors are appointed by their Emperor-liege to rule over foreign provinces. While they are only ruling in the name of their suzerain, they are given almost absolute authority over their Province, and are tasked with ensuring its loyalty towards the Empire and its ruler.#!"
+    special_contract_provincial_governor_desc:2 "#emphasis #bold [vassal|E] Privileges:#!#!\nThe [liege|E] can not revoke titles or vassals that are [de_jure|E] part of the Province\n\n#flavor Provincial Governors are appointed by their Emperor-liege to rule over foreign provinces. While they are only ruling in the name of their suzerain, they are given almost absolute authority over their Province, and are tasked with ensuring its loyalty towards the Empire and its ruler.#!"
     special_contract_provincial_governor_short:0 "Provincial Governor"
     ek_character_interactions_cannot_revoke_title_provincial_governor_province:0 "You cannot revoke a title belonging to a #high $special_contract_provincial_governor_short$#! if this title belongs to the Governor's designated province"
  # Cultural Protection
@@ -42,7 +42,7 @@
     cultural_rights_none:0 "Culturally Unprotected"
     cultural_rights_none_short:0 "Unprotected"
     cultural_rights_protected:0 "Culturally Protected"
-    cultural_rights_protected_desc:2 "#emphasis #bold [vassal|E] Privileges:#!#!\nThe [liege|E] can not use [promote_culture|E] in the [vassals|E]' lands, except to spread the vassal's [culture|E]. The [liege|E] can not freely [revoke|E] from, [imprison|E] or [execute|E] a [pariah|E] or [daedric_race|E] vassal.\n\n#flavor The [vassal|E] is granted a special protected status, with the realm officially recognizing their right to practice their own [culture|E]. Special land grants and status in their own territory allows the vassal's culture to easily be spread in the vassal's lands.#!"
+    cultural_rights_protected_desc:2 "#emphasis #bold [vassal|E] Privileges:#!#!\nThe [liege|E] can not use [promote_culture|E] in the [vassals|E]' lands, except to spread the vassal's [culture|E]. The [liege|E] can not freely [revoke|E] from, [imprison|E] or [execute|E] a [pariah|E] or [daedric_race|E] vassal. [outlander|E] vassals are protected. \n\n#flavor The [vassal|E] is granted a special protected status, with the realm officially recognizing their right to practice their own [culture|E]. Special land grants and status in their own territory allows the vassal's culture to easily be spread in the vassal's lands.#!"
     cultural_rights_protected_short:0 "Protected"
   minor_tributes_rights:0 "Minor Tributes"
     minor_tributes_rights_default:0 "No Minor Tributes"
@@ -61,15 +61,17 @@
  action_low_prestige_level_desc:0 "Your current [prestige_level|E] is below your [expected_prestige_level|E]. You suffer heavy penalties, which weaken you and destabilize your realm.\n\n#help Get more [prestige|E] and [prestige_experience|E] by [raiding|E], taking part in [wars|E], or throwing [GetActivityType( 'activity_hunt' ).GetName]s and hosting [GetActivityType( 'activity_feast' ).GetName]s or some other [activities|E].\nTaking the #V $a_life_of_glory_perk_name$#! [perk|E] in the [diplomacy_lifestyle|E] decreases your [expected_prestige_level|E] by one [prestige_level|E]."
  action_low_prestige_level_click:0 ""
 
- ### Autocracy
+### Autocracy
  autocracy_government:0 "Autocracy"
  autocracy_government_with_icon: "@government_type_autocracy! $autocracy_government$"
-    autocracy_government_adjective:0 "Autocratic"
-    autocracy_government_realm:0 "Autocratic Realm"
-    autocracy_government_desc: "\n$game_concept_autocracy_desc$\n\n#F The Interregnum of Tamriel saw Autocracy become its prevailing form of government. With communications between peoples receding, and all peoples fending for themselves, autocrats became the rulers of the time. They rely on subordinates, vassals whom they can trust more or less to provide [taxes|E] and [soldiers|E] to maintain their power.#!"
+ autocracy_government_adjective:0 "Autocratic"
+ autocracy_government_realm:0 "Autocratic Realm"
+ autocracy_government_desc: "\n$game_concept_autocracy_desc$\n\n#F The Interregnum of Tamriel saw Autocracy become its prevailing form of government. With communications between peoples receding, and all peoples fending for themselves, autocrats became the rulers of the time. They rely on subordinates, vassals whom they can trust more or less to provide [taxes|E] and [soldiers|E] to maintain their power.#!"
+ autocracy_vassal: "$autocracy_government$"
+ autocracy_vassal_desc: "$game_concept_autocracy_desc$"
 
- vassal_revocation_tyranny_effect_low_ca_tyranny:0 "#N You get [tyranny|E] due to your low [crown_authority|E]. Increase it past #V [GetPlayer.Custom('GetCrownAuthority0')]#! to avoid the Tyranny gain.#!"
- revocation_tyranny_effect_low_ca_tyranny:0 "#N You get [tyranny|E] due to your low [crown_authority|E]. Increase it past #V [GetPlayer.Custom('GetCrownAuthority0')]#! to avoid the Tyranny gain.#!"
+ vassal_revocation_tyranny_effect_low_ca_tyranny:0 "#N You get [tyranny|E] due to your low [crown_authority|E]. Increase it past #V $crown_authority_0$#! to avoid the Tyranny gain.#!"
+ revocation_tyranny_effect_low_ca_tyranny:0 "#N You get [tyranny|E] due to your low [crown_authority|E]. Increase it past #V $crown_authority_0$#! to avoid the Tyranny gain.#!"
  ### Pirates
  pirate_government:0 "Pirate"
  pirate_government_with_icon: "@government_type_pirate! $pirate_government$"
@@ -77,9 +79,11 @@
     pirate_government_realm:0 "Pirate Realm"
     pirate_government_vassals_label:1 "Pirate [obligations|E] are based on each [vassal|E]'s [vassal_contract]"
     pirate_government_desc:1 "[SelectLocalization( HasDlcFeature( 'the_fate_of_iberia' ), 'can_join_contract_dlc_yes', 'can_join_contract_dlc_no' )]"
-    can_join_contract_dlc_yes:1 "• [rulers|E] with a [royal_court|E] gain [grandeur|E] via [raiding|E] instead of passively via [amenities|E]. How much they gain is tied to their $pirate_court_court$ [amenities|E] level. \n• Can offer to join the [war|E] of another [ruler|E] in exchange for [gold|E] if Independent.\n• Unlocks [crown_authority|E] laws independent of [innovations|E] at the following [prestige_level|E]:\n - $crown_authority_1$: [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]\n - $crown_authority_2$: [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L]\n - $crown_authority_3$: [GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L]\n\n#F While piracy has always been present in Tamriel, the breakdown of most regional or imperial authorities over the #LORE [compendium_second_era]#! meant that almost no one could pay a standing navy to patrol the coasts. Many former sailors used their experience to control the seas for themselves, raiding villages and towns and establishing Pirate holdings to store their ill-gotten goods.\n\nA Pirate's hold over its realm and vassals is only as strong as their ability to pillage loot and collect tribute, and it is not unusual for a Pirate's authority to be contested when they are not capable of bringing as much booty home.#!"
-    can_join_contract_dlc_no:1 "• [rulers|E] with a [royal_court|E] gain [grandeur|E] via [raiding|E] instead of passively via [amenities|E]. How much they gain is tied to their $pirate_court_court$ [amenities|E] level.\n• Unlocks [crown_authority|E] laws independent of [innovations|E] at the following [prestige_level|E]:\n - $crown_authority_1$: [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]\n - $crown_authority_2$: [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L]\n - $crown_authority_3$: [GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L]\n\n#F While piracy has always been present in Tamriel, the breakdown of most regional or imperial authorities over the #LORE [compendium_second_era]#! meant that almost no one could pay a standing navy to patrol the coasts. Many former sailors used their experience to control the seas for themselves, raiding villages and towns and establishing Pirate holdings to store their ill-gotten goods.\n\nA Pirate's hold over its realm and vassals is only as strong as their ability to pillage loot and collect tribute, and it is not unusual for a Pirate's authority to be contested when they are not capable of bringing as much booty home.#!"
+    can_join_contract_dlc_yes:1 "• [rulers|E] with a [royal_court|E] gain [grandeur|E] via [raiding|E] instead of passively via [amenities|E]. How much they gain is tied to their $pirate_court_court$ [amenities|E] level. \n• Can offer to join the [war|E] of another [ruler|E] in exchange for [gold|E] if Independent.\n• Unlocks [crown_authority|E] laws independent of [innovations|E] at the following [prestige_level|E]:\n - $crown_authority_1$: [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]\n - $crown_authority_2$: [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L]\n - $crown_authority_3$: [GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L]\n\n#F While piracy has always been present in Tamriel, the breakdown of most regional or imperial authorities over the [Glossary( 'Second Era', 'SECOND_ERA_GLOSS' )] meant that almost no one could pay a standing navy to patrol the coasts. Many former sailors used their experience to control the seas for themselves, raiding villages and towns and establishing Pirate holdings to store their ill-gotten goods.\n\nA Pirate's hold over its realm and vassals is only as strong as their ability to pillage loot and collect tribute, and it is not unusual for a Pirate's authority to be contested when they are not capable of bringing as much booty home.#!"
+    can_join_contract_dlc_no:1 "• [rulers|E] with a [royal_court|E] gain [grandeur|E] via [raiding|E] instead of passively via [amenities|E]. How much they gain is tied to their $pirate_court_court$ [amenities|E] level.\n• Unlocks [crown_authority|E] laws independent of [innovations|E] at the following [prestige_level|E]:\n - $crown_authority_1$: [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]\n - $crown_authority_2$: [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L]\n - $crown_authority_3$: [GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L]\n\n#F While piracy has always been present in Tamriel, the breakdown of most regional or imperial authorities over the [Glossary( 'Second Era', 'SECOND_ERA_GLOSS' )] meant that almost no one could pay a standing navy to patrol the coasts. Many former sailors used their experience to control the seas for themselves, raiding villages and towns and establishing Pirate holdings to store their ill-gotten goods.\n\nA Pirate's hold over its realm and vassals is only as strong as their ability to pillage loot and collect tribute, and it is not unusual for a Pirate's authority to be contested when they are not capable of bringing as much booty home.#!"
     pirate_government_obligations:0 "[GetGovernment( 'pirate_government' ).GetName] [obligations|E]"
+ pirate_vassal: "$pirate_government$"
+ pirate_vassal_desc: "$game_concept_pirate_desc$"
  pirate_government_tribute:0 "Raid tribute"
  pirate_tribute_none:0 "No tribute"
  pirate_tribute_none_desc:0 "The [vassal] keeps all the loot taken during raids.\n\n#flavor The loot the [vassal] brings back is their alone.#!"
@@ -115,15 +119,17 @@
  privateering_rights_protected:0 "Protected"
  privateering_rights_protected_desc:0 "#flavor The [vassal] can use their liege ports and flag to [raid|E], bolstering their raiding speed. This tends to make their liege disliked by foreign rulers.#!"
  privateering_rights_protected_short:0 "Protected"
- # Academy
+#Academy
  academy_government:0 "Academy"
  academy_government_with_icon: "@government_type_academy! $academy_government$"
-    academy_government_adjective:0 "Academic"
-    academy_government_realm:0 "Academic Realm"
-    academy_government_vassals_label:1 "Academic [obligations|E] are based on each [vassal|E]'s [vassal_contract]"
-    academy_government_desc:1 "#F Many prized academies dot the landscape of Tamriel. From the Arcane University of Cyrodiil to the Shad Astula of Morrowind and the Bard's College of Skyrim, it is not unusual for institutes dedicated to the learning of a certain trade to operate, with a large degree of autonomy, inside a realm.#!"
-    NOT_GAME_OVER_CANNOT_PLAY_ACADEMY:0 "Cannot play [academies|E]"
- # Hierocracy
+ academy_government_adjective:0 "Academic"
+ academy_government_realm:0 "Academic Realm"
+ academy_government_vassals_label:1 "Academic [obligations|E] are based on each [vassal|E]'s [vassal_contract]"
+ academy_government_desc:1 "#F Many prized academies dot the landscape of Tamriel. From the Arcane University of Cyrodiil to the Shad Astula of Morrowind and the Bard's College of Skyrim, it is not unusual for institutes dedicated to the learning of a certain trade to operate, with a large degree of autonomy, inside a realm.#!"
+ NOT_GAME_OVER_CANNOT_PLAY_ACADEMY:0 "Cannot play [academies|E]"
+ academy_vassal: "$academy_government$"
+ academy_vassal_desc: "$game_concept_academy_desc$"
+# Hierocracy
  hierocracy_government:0 "Hierocracy"
  hierocracy_government_with_icon: "@government_type_hierocracy! $hierocracy_government$"
     hierocracy_government_adjective:0 "Hierocratic"
@@ -133,6 +139,8 @@
     high_enough_ratio_nb_provinces_same_faith_held_provinces_same_faith_not:0 "You control at most #V $VALUE|0$%#! of the provinces following your [faith|E]\n#weak Current value: #V [Character.MakeScope.ScriptValue('ratio_nb_provinces_same_faith_held_provinces_same_faith')|1]%#!#!"
  FAITH_LAND_SHARE:0 "Faith Land Share:\n#V [Character.MakeScope.ScriptValue('ratio_nb_provinces_same_faith_held_provinces_same_faith')|1]%#!"
  FAITH_LAND_SHARE_TT:0 "The [crown_authority|E] of a Hierocracy is limited by the number of counties of their [faith|E] that they hold, compared to the number of counties of their Faith.\n\nYour [Character.GetFaith.GetAdjective] Counties: #V [Character.MakeScope.ScriptValue('nb_provinces_same_faith_held_provinces_same_faith')]#!\nTotal [Character.GetFaith.GetAdjective] Counties: #V [Character.MakeScope.ScriptValue('nb_provinces_same_faith')]#!"
+ hierocracy_vassal: "$hierocracy_government$"
+ hierocracy_vassal_desc: "$game_concept_hierocracy_desc$"
 # Landed Order
  landed_order_government:0 "Military Order"
  landed_order_government_with_icon: "@government_type_landed_order! $landed_order_government$"
@@ -142,6 +150,8 @@
  NOT_GAME_OVER_CANNOT_PLAY_LANDED_ORDER:0 "Cannot play as Military Order"
  NOT_GAME_OVER_CANNOT_PLAY_MINDLESS_CHARACTER:0 "Cannot play as a [mindless|E] @ek_mindless_icon! character"
  NOT_GAME_OVER_CANNOT_PLAY_SUMMONED_CHARACTER:0 "Cannot play as a summoned character"
+ landed_order_vassal: "$landed_order_government$"
+ landed_order_vassal_desc: "$game_concept_landed_order_desc$"
 ### Praxis PLACEHOLDER - feel free to change.
  praxis_government:0 "Ceremoniarchy"
  praxis_government_with_icon: "@government_type_praxis! $praxis_government$"
@@ -203,3 +213,14 @@ action_autocracy_assign_tax_payers_click: "#I Click to view#!"
  autocracy_imperial_tax_collector: "Bardmont Prefects"
  autocracy_imperial_tax_collector_flavor_desc: "Their governorates relics of the old Potentates, these prefects cultivate their lands to vie for ever more prestigious postings."
  VASSAL_IS_CYRODIILIC: "[CHARACTER.GetShortUINamePossessive] culture does not have the [GetCultureTradition('tradition_imperial_legacy').GetName|V] [tradition|E]."
+ # GCM
+
+ action_can_support:0 "You can Support [recipient.GetName]'s rule!"
+ action_can_support_label:0 "@gcm_icon! [recipient.GetShortUINameNoTooltip] can be Supported"
+ action_can_support_desc:0 "You can Support [recipient.GetShortUINameNoTooltip]'s rule and gather votes for the next Election!"
+ action_can_support_click:0 "#I Click to start the scheme!#!"
+
+ action_can_undermine:0 "You can Undermine [recipient.GetName]'s rule!"
+ action_can_undermine_label:0 "@gcm_icon! [recipient.GetShortUINameNoTooltip] can be Undermined"
+ action_can_undermine_desc:0 "You can Undermine [recipient.GetShortUINameNoTooltip]'s rule and prove that you'd do a much better job!"
+ action_can_undermine_click:0 "#I Click to start the scheme!#!"

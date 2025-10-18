@@ -62,7 +62,7 @@
  ek_special_buildings_events.0025.c:0 "That's all too confusing. Just seek an outlet."
 
  ek_special_buildings_events.0026.t:0 "The Trials of Alkosh - Success"
- ek_special_buildings_events.0026.desc:0 "As I enter the cave that lies beyond the maze, I instantly sense that the trials are at an end. There is no looming threat in this place; it is a sacred ground, open to the sky and adorned with statues and blooming flowers. In the center of it all stands a gigantic hourglass, so strangely beautiful in its otherworldly form that it must surely be a gift from Alkosh, the Cat of Time, himself. As I cautiously reach out to touch it, I feel its blessing warming my skin."
+ ek_special_buildings_events.0026.desc:0 "As I enter the cave that lies beyond the maze, I instantly sense that the trials are at an end. There is no looming threat in this place; it is a sacred ground, open to the sky and adorned with statues and blooming flowers. In the center of it all stands a gigantic hourglass, so strangely beautiful in its otherworldly form that it must surely be a gift from Alkosh, the Cat of Time, himself. As I cautiously reach out to touch it, I feel its blessing warming my [ROOT.Char.Custom('SkinScalesFur')]."
  ek_special_buildings_events.0026.a:0 ""I have proven my worth!""
 
  ### Cut Sunspire Funding
@@ -156,10 +156,10 @@
 
  ## Rebuilt the Bridges of Leyawiin
  ek_special_buildings_events.0111.t:0 "Divide and Connection"
- ek_special_buildings_events.0111.desc:0 "It was a daunting project, but it is now complete: the Bridges of Leyawiin stand proudly reconstructed. These imposing structures not only connect both sides of Cyrodiil, opening new pathways for overland trade, but also prevent larger ships from navigating down the Niben River. This means that any merchant wishing to sell goods in these lands has no choice but to offer them in our markets.\nWhile some caution that this move may make us a target in the future, for now, Leyawiin is poised for prosperity, and so are its people."
+ ek_special_buildings_events.0111.desc:0 "It was a daunting project, but it is now complete: the Bridges of Leyawiin stand proudly reconstructed. These imposing structures not only connect both sides of Cyrodiil, opening new pathways for overland trade, but also prevent larger ships from navigating down the Niben River. This means that any merchant wishing to sell goods in these lands has no choice but to offer them in our markets.\n\nWhile some caution that this move may make us a target in the future, for now, Leyawiin is poised for prosperity, and so are its people."
  ek_special_buildings_events.0111.a:0 "Leyawiin once again controls the Niben!"
  bridges_leyawiin_disables_buildings_imperial_isle_ct:0 "The [GetBuilding('imperial_city_harbor_01').GetName] and [GetBuilding('port_hestra_01').GetName] will be disabled, and their effect negated"
- bridges_leyawiin_disables_port_buildings_rumare_ct:0 "The Tradeport building line will be inaccessible to coastal counties along the Rumare"
+ bridges_leyawiin_disables_port_buildings_rumare_ct:0 "The Tradeport building line will be inaccessible to coastal counties along the [GetGeographicalRegion('mundus_tamriel_cyrodiil_rumare_niben').GetName]"
 
  ek_special_buildings_events.0112.t:0 "Divide and Connection"
  ek_special_buildings_events.0112.desc:0 "The Bridges of Leyawiin are once again constructed. [bridge_builder.GetName|E] may call it progress, but for those of us dependent on the Niben, it’s a knife to the throat. For years, our ports thrived as merchants from all corners of Tamriel came to trade, bringing wealth and opportunity. Now, with Leyawiin’s bridges blocking the river to all larger vessels, they’ve forced every ship, every coin, into their hands.\n\nThey may bask in their newfound fortune, but at what cost? Leyawiin’s greed has stifled our lifeline, and they would do well to remember that such power grabs seldom go unchallenged."

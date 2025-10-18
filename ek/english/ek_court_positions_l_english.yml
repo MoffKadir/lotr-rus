@@ -29,7 +29,6 @@
  court_position_lifestyle_herbalist_trait:0 "[GetTrait('lifestyle_herbalist').GetName( ROOT.Char )]"
  court_position_cynical_trait:0 "[GetTrait('cynical').GetName( ROOT.Char )]"
  court_position_august_trait:0 "[GetTrait('august').GetName( ROOT.Char )]"
- court_position_family_first_trait:0 "[GetTrait('family_first').GetName( ROOT.Char )]"
 ##Clan-Mother
  clan_mother_court_position: "Clan-Mother"
  clan_mother_court_position_desc: "The $clan_mother_court_position$ is a respected matriarch and may appear alongside their liege in Court, and speak on their behalf."
@@ -41,7 +40,7 @@
  enforcer_court_position:0 "Enforcer"
  enforcer_court_position_desc:0 "An $enforcer_court_position$ oversees the buzzling cities of a realm and makes sure that their liege receives the appropriate respect in every street and corner, especially if this respect is expressed in coin."
 
-#Court Mage & Field Mage
+##Court Mage & Field Mage
  court_mage_court_position:0 "Court Mage"
  court_mage_field_mage:0 "Field Mage"
  court_mage_clever_man: "Clever Man"
@@ -49,7 +48,15 @@
  court_mage_field_mage_desc:0 "The $court_mage_field_mage$ is an adept of the magickal arts tasked with finding solutions to magic-related problems, casting spells on behalf of their master, presiding over arcane studies and assisting the camp with enchantments, alchemicals, and simple advice on complex mystical matters."
  court_mage_clever_man_desc:0 "The $court_mage_clever_man$ is an adept of the magickal arts tasked with finding solutions to magic-related problems, casting spells on behalf of their liege, presiding over arcane studies in the realm and assisting the court with enchantments, alchemicals, and simple advice on complex mystical matters."
  court_mage_court_position_possessive:0 "$court_mage_court_position$'s"
- court_mage_employer_custom_effect_description:2 "Can cast [spells|E] for their [liege|E]\n@warning_icon!#X Powerful [agent|E] in [hostile_schemes|E] against you#!"
+ court_mage_base_desc: "$EFFECT_LIST_BULLET$[arcana_i][arcana|E]"
+ court_mage_terrible_desc: "$court_mage_base_desc$: #P +1#!"
+ court_mage_poor_desc: "$court_mage_base_desc$: #P +2#!"
+ court_mage_average_desc: "$court_mage_base_desc$: #P +3#!"
+ court_mage_good_desc: "$court_mage_base_desc$: #P +4#!"
+ court_mage_excellent_desc: "$court_mage_base_desc$: #P +5#!"
+ court_mage_range_desc: "$court_mage_base_desc$: #P +1#! to #P +5#! (based on [aptitude|E])"
+ court_mage_employer_custom_effect_description:2 "$EFFECT_LIST_BULLET$Can cast [spells|E] for their [liege|E]"
+# Aptitude 
  court_position_skill_arcana:0 "[arcana|E] Skill"
  court_position_necomancer_trait:0 "[GetTrait('necromancer').GetName( ROOT.Char )]"
  court_position_battlemage_trait:0 "[GetTrait('battlemage').GetName( ROOT.Char )]"
@@ -102,12 +109,23 @@
  SCHEME_AGENT_IS_SHADOWSCALE:0 "[target.GetShortUINamePossessiveNoTooltip] $shadowscale_court_position$"
 
  # Court Position Tasks
- court_mage_instruct:0 "Instruct Mage"
- court_mage_instruct_desc:0 "This character will use their magical abilities according to the command of their employer."
+ court_mage_instruct:0 "Cast Spells"
+ court_mage_instruct_desc:0 "This character will cast spells on their own according to the instructions of their employer as long as this task is active."
  court_mage_instruct_tt:0 "Give orders to your mage, managing how they cast [spells|E] and what type of [magic|E] they will focus on."
+ court_mage_improve_self: "Study Magic"
+ court_mage_improve_self_desc: "This character is focusing on improving their skills as a mage."
+ court_mage_improve_self_tt: "Every month this character has a chance of learning new [spells|E] or gaining [arcana_i][arcana|E] (To a Maximum of [EmptyScope.ScriptValue('very_high_skill_rating')|0])"
+ court_mage_improve_self_fallback_tt: "Every month this character has a chance of learning new [spells|E] or gaining [arcana_i][arcana|E] (To a Maximum of [EmptyScope.ScriptValue('very_high_skill_rating')|0])"
+ court_mage_support_liege: "Arcane Support"
+ court_mage_support_liege_desc: "This character enhances the arcane abiltities of their employer."
+ court_mage_support_liege_tt: "Every month this character has a chance of generating additional [magicka|E] for their employer"
+ court_mage_support_liege_fallback_tt: "Every month this character has a chance of generating additional [magicka|E] for their employer"
 
  #Qadi
  court_chief_qadi_requirement.tt: "Must use [praxis|E]"
+
+ #Wet Nurse
+ wet_nurse_age_tt_ek: "They are under the equivalent age to #V 46 years#! for average humans"
 
  ### CAMP OFFICERS
  ##Retainer
@@ -119,3 +137,5 @@
  arcanist_captain_camp_officer_desc:0 "An $arcanist_captain_camp_officer$ commands the camp's mages and spellblades. They are responsible for the contingent's leadership, training, and tactics."
  domicile_building_parameter_camp_unlocks_arcanist_captain_officer:0 "Unlocks the [GetCourtPositionType('arcanist_captain_camp_officer').GetName()] [officer|E]"
  arcanist_captain_camp_officer_parameter_tt: "$camp_with_following_buildings_tt$\n$BULLET$[GetDomicileBuilding('proving_grounds_mages_study').GetName]"
+ 
+ any_liege_or_above: "Direct liege or above:"

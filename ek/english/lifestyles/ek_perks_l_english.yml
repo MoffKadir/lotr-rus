@@ -2,6 +2,8 @@
  ### Vanilla redefinitions
  # Mandatory renames
  parthian_tactics_perk_altenate_name:0 "Bjoulsae Tactics"
+ firm_hand_perk_claw_name: "Firm Claw"
+ firm_hand_perk_paw_name: "Firm Paw"
  ### Vanilla perk tree edits
  # Diplomacy: Majesty Tree
  TRUE_RULER_PERK_BYPASS_OFFER_VASSALIZATION_REQUIREMENTS_EFFECT:0 "Can use the [offer_vassalization_interaction|E] without needing [dynasty|E] ties, the required [innovation|E], or the required [prestige_level|E]"
@@ -20,18 +22,18 @@
  OPEN_SEAS_PERK_EFFECT:0 "Unlocks the ability to [raid|E] over seas"
  bountiful_offerings_perk_name: "Bountiful Offerings"
  bountiful_offerings_perk_adventurer_name: "Promise of Success"
- BOUNTIFUL_OFFERINGS_PERK_EFFECT: "[raiding|E] awards [piety_i][piety|E], equivalent to the [gold|E] and [prestige|E] gained\nRemoves the [piety|E] cost of Raiding for characters whose [faith|E] has the [GetFaithDoctrine('tenet_pacifism').GetBaseName] [core_tenet|E]"
+ BOUNTIFUL_OFFERINGS_PERK_EFFECT: "[raiding|E] with $pillage_intent$ [raid_intent|E] awards [piety_i][piety|E], equivalent to the [gold|E] and [prestige|E] gained\nRemoves the [piety|E] cost of Raiding for characters whose [faith|E] has the [GetFaithDoctrine('tenet_pacifism').GetBaseName] [core_tenet|E]"
  ADVENTURER_BOUNTIFUL_OFFERINGS_PERK_EFFECT: "Unlocks the [GetMaA('reavers').GetName] [men_at_arms|E] [regiment|E]"
  hard_bitten_perk_name: "Hard Bitten"
- prisoners_and_loot_perk_name: "Prisoners and Loot..."
+ prisoners_and_loot_perk_name: "Prisoners and Loot"
  PRISONERS_AND_LOOT_PERK_EFFECT: "More likely to [imprison|E] [characters|E] after a successful [siege|E] or [raid|E]"
  ADVENTURER_PRISONERS_AND_LOOT_PERK_EFFECT: "Grants a chance to [imprison|E] [characters|E] while using the [GetTravelOption('adventurers_plunder_travel_option').GetName] [travel_option|E] and increases the chance of that to happen after a successful [siege|E]"
  whale_effect: "More likely to [imprison|E] [characters|E] after a successful [siege|E] or [raid|E]"
- loot_and_prisoners_perk_name: "Loot and Prisoners..."
- LOOT_AND_PRISONERS_PERK_EFFECT: "Increases the [raid_loot|E] that is gained through a successful [siege|E] or [raid|E]"
+ loot_and_prisoners_perk_name: "Loot and Prisoners"
+ LOOT_AND_PRISONERS_PERK_EFFECT: "Increases the [raid_loot|E] that is gained through a successful [siege|E] or [raid|E] with $pillage_intent$ [raid_intent|E]"
  ADVENTURER_LOOT_AND_PRISONERS_PERK_EFFECT: "Increases the [raid_loot|E] that is gained while using the [GetTravelOption('adventurers_plunder_travel_option').GetName] [travel_option|E] and after a successful [siege|E]"
  tales_of_glory_perk_name: "Tales of Glory"
- TALES_OF_GLORY_PERK_EFFECT: "Winning a [battle|E] awards a small amount of [dynasty_prestige_i][dynasty_prestige|E]"
+ TALES_OF_GLORY_PERK_EFFECT: "Winning a [battle|E] awards a small amount of [dynasty_prestige_i][dynasty_prestige|E]\n[raiding|E] with $pillage_intent$ [raid_intent|E] awards a small amount of [dynasty_prestige_i][dynasty_prestige|E]"
  plunderer_perk_name: "Plunderer"
  # Intrigue: Crimeboss Tree
  crimeboss_name: "Crimeboss"

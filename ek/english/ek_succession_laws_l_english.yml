@@ -10,18 +10,6 @@
  pirate_elective_candidates_tooltip:0 "In order to be a valid Candidate under $pirate_elective_succession_law$, a character must fulfill one of the following conditions:\n$EFFECT_LIST_BULLET$Be a legitimate [adult|E] [close_family|E] member of the current ruler, who is not in line to inherit a Theocracy or Republic\n$EFFECT_LIST_BULLET$Be a [commander|E]\n$EFFECT_LIST_BULLET$Be a valid [vassal|E] to the title"
  pirate_elective_electors:0 "Ruler and Vassals"
  pirate_elective_electors_tooltip:0 "In order to be a valid [elector|E] under $pirate_elective_succession_law$, a vassal must fulfill all the following conditions:\n$EFFECT_LIST_BULLET$Be a direct vassal of the title\n$EFFECT_LIST_BULLET$Be only one or two [ranks|E] below the title\n$EFFECT_LIST_BULLET$Be a valid [vassal|E] to the title"
-
-#Militaristic government's Merit based succession
-
- merit_succession_law:0 "Meritocratic"
- merit_succession_law_subname:0 "Your Conclave convenes to elect a fitting successor"
- merit_succession_law_effects:0 "\n#V Under $merit_succession_law$ [succession|E], each member of your [council|E] will cast a vote to appoint an [heir|E], they will choose a candidate from among their own ranks based on their ability to lead ( [martial|E], [intrigue|E] and age).#!\n\n#weak $merit_succession_base_desc$#!"
- merit_succession_base_desc:0 "#weak Upon succession, all [counties|E] held by the late [ruler|E] will have a chance to break away from your rule, depending on their [control|E]. \n\nCounties that have a high enough [control|E] will stay with the late ruler's primary heir.\n\nYour capital county will always be given to your heir.\n#!"
- 
- merit_elective_candidates:0 "Military Council Members"
- merit_elective_candidates_tooltip:0 "In order to be a valid Candidate under $merit_succession_law$ Elective, a character must fulfill the following condition:\n$EFFECT_LIST_BULLET$Be a member of the military [council|E]."
- merit_elective_electors:0 "Military Council Members"
- merit_elective_electors_tooltip:0 "In order to be a valid [elector|E] under $merit_succession_law$ Elective, a courtier must be a member of the military [council|E]."
  
  mbhof_succession_law:0 "Mystical Birthright"
  mbhof_succession_law_subname:0 "The divine decides who will succeed us"
@@ -98,6 +86,8 @@
  tooltip_dunmeri_elector_vote_house_values_education_1:0 "[candidate.GetSheHe|U] suits our [great_house_value|E]: $VALUE|=+0$"
  tooltip_dunmeri_elector_vote_house_values_education_2:0 "[candidate.GetSheHe|U] suits our [great_house_value|E] well: $VALUE|=+0$"
  tooltip_dunmeri_elector_vote_founding_dynasty:0 "[candidate.GetSheHe|U] belongs to the founding [dynasty|E]: $VALUE|=+0$"
+ tooltip_dunmeri_elector_vote_supported_house:0 "[candidate.GetSheHe|U] successfully Supported this Great House: $VALUE|=+0$"
+ tooltip_dunmeri_elector_vote_undermined_house:0 "[candidate.GetSheHe|U] was successfully undermined by a political rival: $VALUE|=+0$"
 
 # Praxis Succession Law
  altmeri_elective_succession_law:0 "Praxis Elective"
@@ -148,3 +138,8 @@
  admin_vote_physique_good_desc: "Is strong"
  admin_vote_physique_bad_desc: "Is weak"
  admin_vote_impurity_desc: "Is [impure|E]"
+ admin_house_values_education_1: "Suits [great_house_value|E]"
+ admin_house_values_education_2: "Suits [great_house_value|E] well"
+ admin_great_house_founding_dynasty:0 "Belongs to the founding [dynasty|E]"
+ admin_supported_house:0 "Successfully Supported this Great House"
+ admin_undermined_house:0 "Was successfully undermined by a political rival"

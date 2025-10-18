@@ -2,201 +2,6 @@
  important_character_name:0 "[Character.GetFirstNameNoTooltip] [Select_CString( StringIsEmpty(Character.GetNickname), Character.GetDynastyHouseNameNoTooltip, Character.GetNickname )]" #none of the existing one seem to give it without adding titles
  important_character_desc:0 "[Localize(Concatenate(Concatenate('imp_char_', GetVariableSystem.Get('imp_char')), '_desc'))]"
 
- ##### 2E 440 Bookmarks
-
- ###Warlord Rising
-
- #Attrebus
- imp_char_sosildor_100:0 ""
- imp_char_sosildor_100_desc:0 "[SelectLocalization( GreaterThan_CFixedPoint( GetGlobalVariable('start_year').GetValue, '(CFixedPoint)3360' ), 'imp_char_sosildor_100_desc_450', 'imp_char_sosildor_100_desc_440' )]" #use current yesr - gametime, careful with months
- #imp_char_sosildor_100_desc_440:0 "Attrebus Sosildor has succeeded in uniting the Colovian kingdoms under the Colovian Estates and now stands as Cyrodiil's protector.\n\nMost Nibenese, however, remain loyal to the Tsaesci, fearful of losing their influence over the Heartlands."
- imp_char_sosildor_100_desc_440:0 "$bm_warlordrising_attrebus_desc$"
- imp_char_sosildor_100_desc_450:0 "Attrebus Sosildor defeated the #LORE [compendium_potentate]#! and established his own rule over the Imperial Isle. His plans for Cyrodiil did not please the Nibenese nobility, who saw their position in the Heartlands threatened.\n\nThus it is hardly surprising that the rulers of the Niben Valley rose up against Attrebus. The war that broke out shattered Cyrodiil and resulted in Attrebus's death."
-
- #Aixnieras
- imp_char_chorak_101:0 ""
- imp_char_chorak_101_desc:0 "[SelectLocalization( GreaterThan_CFixedPoint( GetGlobalVariable('start_year').GetValue, '(CFixedPoint)3360' ), 'imp_char_chorak_101_desc_450', 'imp_char_chorak_101_desc_440' )]" #use current yesr - gametime, careful with months
- imp_char_chorak_101_desc_440:0 "$bm_warlordrising_aixnieras_ves_desc$"
- imp_char_chorak_101_desc_450:0 "Following his defeat and death at the hands of the Warlord Attrebus Sosildor, Aixnieras' dream of a reborn Akaviri Potentate was extringuished with him."
-
- #Overlord Caius
- imp_char_lex_caius:0 ""
- imp_char_lex_caius_desc:0 "[SelectLocalization( GreaterThan_CFixedPoint( GetGlobalVariable('start_year').GetValue, '(CFixedPoint)3360' ), 'imp_char_lex_caius_desc_450', 'imp_char_lex_caius_desc_440' )]" #use current yesr - gametime, careful with months
- imp_char_lex_caius_desc_440:0 "$bm_warlordrising_caius_desc$"
- imp_char_lex_caius_desc_450:0 "$bm_interregnum_caius_desc$"
- 
- #Humilio Tharn
- imp_char_tharn_99:0 ""
- imp_char_tharn_99_desc:0 "$bm_warlordrising_humilio_desc$"
- 
-
- ###Sea of Troubles
-
- #Aine
- imp_char_atla_205b:0 ""
- imp_char_atla_205b_desc:0 "$bm_warlordrising_auril_desc$"
- 
- #Fabiana
- imp_char_arcato_99:0 ""
- imp_char_arcato_99_desc:0 "$bm_warlordrising_fabiana_desc$"
- 
- #Lovierus
- imp_char_caro_805:0 ""
- imp_char_caro_805_desc:0 "$bm_warlordrising_lovierus_desc$"
- 
- #Kahada
- imp_char_pellitine_002:0 ""
- imp_char_pellitine_002_desc:0 "[SelectLocalization( GreaterThan_CFixedPoint( GetGlobalVariable('start_year').GetValue, '(CFixedPoint)3360' ), 'imp_char_pellitine_002_desc_450', 'imp_char_pellitine_002_desc_440' )]"
- imp_char_pellitine_002_desc_440:0 "$bm_warlordrising_mharra_desc$"
- imp_char_pellitine_002_desc_450:0 "Kahada's attempts at becoming the dominant power in Topal Bay did not come to fruition; however, she inherited the ancestral seat of the monarchs of Pellitine from her cousin Ashi-ra, who died suddenly in 2E 448. Kahada passed away from a heart attack a year later, on the 6th of Second Seed, 2E 449, and left her son M'harra with a stronger Senchal than the one she inherited."
-
- ###Crown in the Sand
-
- #K'Avar
- imp_char_hegathe_1000:0 ""
- imp_char_hegathe_1000_desc:0 "$bm_warlordrising_hammerfell_kavar_desc$"
- 
- #Yarana
- imp_char_ojwa_1001:0 ""
- imp_char_ojwa_1001_desc:0 "$bm_warlordrising_hammerfell_yarana_desc$"
- 
- #Ahlam
- imp_char_bergama_1000:0 ""
- imp_char_bergama_1000_desc:0 "$bm_warlordrising_hammerfell_ahlam_desc$"
- 
- #Murahd
- imp_char_curetar_1000:0 ""
- imp_char_curetar_1000_desc:0 "$bm_warlordrising_hammerfell_murahd_desc$"
- 
- #Isobel
- imp_char_gurges_1000:0 ""
- imp_char_gurges_1000_desc:0 "$bm_warlordrising_hammerfell_isobel_desc$"
- 
- #Madara
- imp_char_taneth_1002:0 ""
- imp_char_taneth_1002_desc:0 "$bm_warlordrising_hammerfell_madara_desc$"
- 
-
- ###The Reaper's Due
-
- #Cicero
- imp_char_pullia_1:0 ""
- imp_char_pullia_1_desc:0 "[SelectLocalization( GreaterThan_CFixedPoint( GetGlobalVariable('start_year').GetValue, '(CFixedPoint)3360' ), 'imp_char_pullia_1_desc_450', 'imp_char_pullia_1_desc_440' )]"
- imp_char_pullia_1_desc_440:0 "$bm_warlordrising_reaper_cicero_desc$"
- imp_char_pullia_1_desc_450:0 "Cicero's attempts to build a lasting Colovian kingdom south of the Strid have not proved successful so far. The Anequinans took back their holy city of Rawl'kha at the first opportunity, and the Vinedusk tribe has now united the Bosmer of Arenthia under its leadership. But perhaps the biggest blow to Cicero was the death of his wife, who was killed in a raid by Nendaer Vinedusk himself."
- 
- #Maevelle
- imp_char_camoran_arenthia1_009:0 ""
- imp_char_camoran_arenthia1_009_desc:0 "[SelectLocalization( GreaterThan_CFixedPoint( GetGlobalVariable('start_year').GetValue, '(CFixedPoint)3360' ), 'imp_char_camoran_arenthia1_009_desc_450', 'imp_char_camoran_arenthia1_009_desc_440' )]"
- imp_char_camoran_arenthia1_009_desc_440:0 "$bm_warlordrising_reaper_maevelle_desc$"
- imp_char_camoran_arenthia1_009_desc_450:0 "Maevelle proved inadequate to handle the threat posed by Colovian invaders and was deposed by Nendaer Vinedusk, who finally took the fight to Cicero Pullia."
- 
- #Habais
- imp_char_shabu_001:0 ""
- imp_char_shabu_001_desc:0 "[SelectLocalization( GreaterThan_CFixedPoint( GetGlobalVariable('start_year').GetValue, '(CFixedPoint)3360' ), 'imp_char_shabu_001_desc_450', 'imp_char_shabu_001_desc_440' )]"
- imp_char_shabu_001_desc_440:0 "$bm_warlordrising_reaper_habais_desc$"
- imp_char_shabu_001_desc_450:0 "Habais showed himself to be a capable leader and kept order in Dune while managing to expand his domain. Thanks to his efforts, Dune enters the chaotic Interregnum as a bastion of stability in Anequina."
- 
- #Nendaer
- imp_char_vinedusk_1:0 ""
- imp_char_vinedusk_1_desc:0 "[SelectLocalization( GreaterThan_CFixedPoint( GetGlobalVariable('start_year').GetValue, '(CFixedPoint)3360' ), 'imp_char_vinedusk_1_desc_450', 'imp_char_vinedusk_1_desc_440' )]"
- imp_char_vinedusk_1_desc_440:0 "$bm_warlordrising_reaper_nendaer_desc$"
- imp_char_vinedusk_1_desc_450:0 "Nendaer has deposed the useless Camorans and now leads the Bosmer of Arenthia himself. His fight against Colovian warlord Pullia has been successful so far, and every Arenthi clearly sees that 'Kingdom of South Weald' will not last much longer."
-
- ###Ku-Vastei 
-
- #Morilye
- imp_char_carandol_100:0 ""
- imp_char_carandol_100_desc:0 "$bm_warlordrising_blackmarsh_morilye_desc$"
- 
- #Milos
- imp_char_tharumee_105:0 ""
- imp_char_tharumee_105_desc:0 "$bm_warlordrising_blackmarsh_milos_desc$"
- 
- #Xir
- imp_char_blackrose_dyaan_02:0 ""
- imp_char_blackrose_dyaan_02_desc:0 "$bm_warlordrising_blackmarsh_xir_desc$"
- 
- #Vraseth
- imp_char_horwalli_shutan_999:0 ""
- imp_char_horwalli_shutan_999_desc:0 "$bm_warlordrising_blackmarsh_vraseth_desc$"
- 
- #Brand_Shei
- imp_char_suzahleel_1000:0 ""
- imp_char_suzahleel_1000_desc:0 "$bm_warlordrising_blackmarsh_brandshei_desc$"
- 
- #Talen_Jei
- imp_char_juseius_1000:0 ""
- imp_char_juseius_1000_desc:0 "$bm_warlordrising_blackmarsh_talenjei_desc$"
- 
-
- ###A Contested Verity
-
- #Svartr
- imp_char_cursebraid_1000:0 ""
- imp_char_cursebraid_1000_desc:0 "$bm_warlordrising_svartr_desc$"
- 
- #Freydis
- imp_char_flamehair_1000:0 ""
- imp_char_flamehair_1000_desc:0 "$bm_warlordrising_freydis_desc$"
- 
- #Lodvar
- imp_char_reachbreaker_101:0 ""
- imp_char_reachbreaker_101_desc:0 "$bm_warlordrising_lodvar_desc$"
- 
- #Yashnag
- imp_char_yashnag_100:0 ""
- imp_char_yashnag_100_desc:0 "$bm_warlordrising_yashnag_desc$"
- 
-
- ##### 2E 450 Bookmarks
- ###Interregnum
-
- imp_char_mane_002:0 ""
- imp_char_mane_002_desc:0 "$bm_interregnum_marandrujo_desc$"
- 
- ###Queens and Warlords
-
- #Nilwen
- imp_char_camoran_grahtwood_010:0 ""
- imp_char_camoran_grahtwood_010_desc:0 "$bm_interregnum_valenwood_nilwen_desc$"
- 
- #Phylandra
- imp_char_camoran_silvenar1_017:0 ""
- imp_char_camoran_silvenar1_017_desc:0 "$bm_interregnum_valenwood_phylandra_desc$"
- 
- #Gelthior
- imp_char_camoran_gorinir_002:0 ""
- imp_char_camoran_gorinir_002_desc:0 "$bm_interregnum_valenwood_gelthior_desc$"
- 
- #Oreyn
- imp_char_bearclaw_2:0 ""
- imp_char_bearclaw_2_desc:0 "$bm_interregnum_valenwood_oreyn_desc$"
- 
- #Malgoth
- imp_char_blackroot_1:0 ""
- imp_char_blackroot_1_desc:0 "$bm_interregnum_valenwood_malgoth_desc$"
- 
- #Gallus
- imp_char_zantonius_1:0 ""
- imp_char_zantonius_1_desc:0 "$bm_interregnum_valenwood_gallus_desc$"
- 
-
- ###Dusk of an Era 
-
- #Aran-El Hidellith
- imp_char_arana_1000:0 ""
- imp_char_arana_1000_desc:0 "$bm_interregnum_summerset_hidellith_desc$"
- 
- #Rilis XII
- imp_char_rilis_30:0 ""
- imp_char_rilis_30_desc:0 "$bm_interregnum_summerset_rilis_desc$"
- 
- #Elendarie the Bosmer
- imp_char_aunoroe_100:0 ""
- imp_char_aunoroe_100_desc:0 "$bm_interregnum_summerset_elendarie_desc$"
-
-
  ##### LORE
 
  #### VAMPIRES
@@ -219,13 +24,13 @@
  
  #Rada al Saran
  imp_char_saran_1000:0 ""
- imp_char_saran_1000_desc:0 "Legend has it that Rada al-Saran was once a powerful Ansei from Yokuda, so skilled with the sword that he battled the goddess Leki herself. Only able to achieve a draw, he then turned to vampirism in his strife for even more power." 
+ imp_char_saran_1000_desc:0 "Legend has it that Rada al-Saran was once a powerful Sword-Singer from Yokuda, so skilled with the sword that he battled the goddess Leki herself. Only able to achieve a draw, he then turned to vampirism in his strife for even more power." 
 
  ### PSIJIC
 
  #Mannimarco
  imp_char_mannimarco_1000:0 ""
- imp_char_mannimarco_1000_desc:0 "Mannimarco, the King of Worms, once a member of the Psijic Monks, now banished from the Island of Artaeum, many will fear his name in time."
+ imp_char_mannimarco_1000_desc:0 "Mannimarco, a banished member of the Psijic Order, styled himself King of Worms. Defying his former colleagues, including his rival, Mages Guild founder Vanus Galerion, he founded the Worm Cult to pursue and venerate the necromantic arts. With his declaration of Arkay as his enemy, this dissident mage would place himself as an equal to gods and daedric princes alike."
  
  #Vanus Galerion
  imp_char_galerion_100:0 ""
@@ -249,11 +54,11 @@
 
  #Reman
  imp_char_reman_100:0 ""
- imp_char_reman_100_desc:0 "Though more likely the son of a sheperdess and local lord, Reman was alleged to have been born from the union of King Hrol and Alessia's spirit.\n\nDuring the Akaviri invasion of the late #LORE [compendium_first_era]#! Reman lead a unified Cyrodiil against the invaders, culminating in the battle of Pale Pass. It is said that upon hearing his voice the Tsaesci knelt and proclaimed him to be Dragonborn.\n\nThough he would never take the title in his lifetime, Reman would go on to conquer much of Tamriel and found the Second Empire."
+ imp_char_reman_100_desc:0 "Though more likely the son of a sheperdess and local lord, Reman was alleged to have been born from the union of King Hrol and Alessia's spirit.\n\nDuring the Akaviri invasion of the late [Glossary( 'First Era', 'FIRST_ERA_GLOSS' )] Reman lead a unified Cyrodiil against the invaders, culminating in the battle of Pale Pass. It is said that upon hearing his voice the Tsaesci knelt and proclaimed him to be Dragonborn.\n\nThough he would never take the title in his lifetime, Reman would go on to conquer much of Tamriel and found the Second Empire."
 
  #Reman III
  imp_char_reman_104:0 ""
- imp_char_reman_104_desc:0 "Third of his name and last of his dynasty, Reman III assumed the throne in 1E 2877, around the halfway point of the Four-Score War with Morrowind. His martial prowess was never in doubt as a talented dragon-hunter. Bestowed with the same gift for war was his son Crown Prince Juilek whose poliorcetics at last ended the Morrowind quagmire.\n\nGalvanized by a victory three generations in the making, Reman III stayed oblivious to the machinations of his Potentate, Versidue-Shaie. He wiped out the entire Imperial family and signed the Cervant Truce with the Tribunal in 1E 2920, a guaranty of Morrowind independence that would endure until the fall of the #LORE [compendium_potentate]#!."
+ imp_char_reman_104_desc:0 "Third of his name and last of his dynasty, Reman III assumed the throne in 1E 2877, around the halfway point of the Four-Score War with Morrowind. His martial prowess was never in doubt as a talented dragon-hunter. Bestowed with the same gift for war was his son Crown Prince Juilek whose poliorcetics at last ended the Morrowind quagmire.\n\nGalvanized by a victory three generations in the making, Reman III stayed oblivious to the machinations of his Potentate, Versidue-Shaie. He wiped out the entire Imperial family and signed the Cervant Truce with the [Glossary( 'Tribunal', 'TRIBUNAL_GLOSS' )] in 1E 2920, a guaranty of Morrowind independence that would endure until the fall of the [Glossary( 'Potentate', 'POTENTATE_GLOSS' )]."
  
  #Divayth Fyr
  imp_char_fyr_100:0 ""
@@ -268,16 +73,16 @@
  imp_char_bagarn_1000_desc:0 "Yagrum was once a masterful crafter and served under the Tonal Architect Kagrenac himself. He has a deep understanding of knowledge that other people can't even begin to grasp, yet his search for other survivors of his race has so far been in vain."
 
  #Indoril Nerevar
- imp_char_mora_109:0 ""
- imp_char_mora_109_desc:0 "One of the greatest Chimeri heroes, Indoril Nerevar was the Hortator and First Councilor who united the Great Houses against Dwemer and Nord alike. He perished shortly after the battle of Red Mountain, either due to wounds without or treachery within."
+ imp_char_mora_nerevar:0 ""
+ imp_char_mora_nerevar_desc:0 "One of the greatest Chimeri heroes, Indoril Nerevar was the Hortator and First Councilor who united the Great Houses against Dwemer and Nord alike. He perished shortly after the [Glossary( 'Battle of Red Mountain', 'BATTLE_RM_GLOSS' )], either due to wounds without or treachery within."
  
  #Almalexia
- imp_char_indoril_100:0 ""
- imp_char_indoril_100_desc:0 "Alma Laesa, Ayem and later, as a Goddess of the Dunmer people, Almalexia, was in her mortal life a daughter of House Indoril, a ruler in her own right, and the wife of Nerevar and one of his close advisors, following his death she and two other of his companions would ascend to godhood forming the ALMSIVI Tribunal."
+ imp_char_indoril_almalexia:0 ""
+ imp_char_indoril_almalexia_desc:0 "$desc_almalexia$"
  
  #Sotha Sil
  imp_char_sotha_100:0 ""
- imp_char_sotha_100_desc:0 "Seht of House Sotha was the only survivor of an attack by the #LORE [compendium_daedric]#! Lord Mehrunes Dagon that killed his entire family including his mother and sister. He would eventually become a close companion of the Chimer king Indoril Nerevar and was present during the War of the First Council. He would ascend to godhood as one of the three members of the ALMSIVI Tribunal under the name Sotha Sil."
+ imp_char_sotha_100_desc:0 "Seht of House Sotha was the only survivor of an attack by the [Glossary( 'Daedric', 'DAEDRA_GLOSS' )] Lord Mehrunes Dagon that killed his entire family including his mother and sister. He would eventually become a close companion of the Chimer king Indoril Nerevar and was present during the War of the First Council. He would ascend to godhood as one of the three members of the ALMSIVI Tribunal under the name Sotha Sil."
 
  #Vivec
  imp_char_vehk_100:0 ""
@@ -289,35 +94,27 @@
 
  #Mane Rid-Thar-ri'Datta
  imp_char_mane_001:0 ""
- imp_char_mane_001_desc:0 "Rid-Thar-ri'Datta, is the first Mane to assume power over the Elsweyr Confederacy but like every Mane before and after him, was born under the mythical Dark Moons. It is nonetheless undeniable that his charisma eclipsed any of his predecessors.\n\nIn 2E 311, after the personal union enabled between Ne-Quin-Al and Pa'alatiin rendered travel safe, the Mane journeyed to the Temple of the Two-Moons Dance in Rawl'kha to preach to the masses. He had come to reveal Riddle-Thar, the Two-Moons Dance, Cosmic God of Order and the true path upon which Khajiit should tread.The Riddle-Thar Epiphany would sweep aside the disparate paths that existed therein, with significant persecution targeting the unrepentant souls.\n\nNe Quin-al's sacking in 2E 326 forced the royal family to move out of their heartlands to Rimmen, leaving the Mane's influence unchecked. The Brae Clan of Anequina officially bequeathed rule of the Confederacy to the Prophet of Riddle-Thar in 2E 336, consecrating the absolute power he wielded from Dune to Senchal.\n\nThe centenarian prophet ultimately died in 2E 390, as a humble Pellitinian couple welcomed new life under the Dark Moons..."
+ imp_char_mane_001_desc:0 "Rid-Thar-ri'Datta is sometimes known as the First Mane, though in truth he was only the first to assume power over the Elsweyr Confederacy. In 2E 311, after the union between Ne-Quin-Al and Pa'alatiin rendered travel safe, the Mane journeyed to the Temple of the Two Moons Dance in Rawl'kha where he revealed Riddle-Thar, the Two Moons Dance, and his true path.\n\nThe Riddle-Thar Epithany proved controversial in its erasure of regional beliefs and traditions, but Ne Quin-al's sacking in 2E 326 forced the royal family to move out of their heartlands to Rimmen, leaving the Mane's influence unchecked. The Brae Clan of Anequina officially bequeathed rule of the Confederacy to the Prophet of Riddle-Thar in 2E 336, consecrating the absolute power he wielded from Dune to Senchal until his death."
 
  #King Keirgo of Anequina and Elsweyr Confederacy
- imp_char_anequina_002:0 ""
- imp_char_anequina_002_desc:0 "King Keirgo was King of Anequina, hailing from the legendary Brae clan. With his marriage to Queen Eshita of Pellitine in 2E 309, the #LORE [compendium_elsweyr_confederacy]#! was formed. Sadly for him, this union between nobility led to unrest among his tribal subjects, who felt betrayed by it.\n\nWith Cyrodiil dealing with the consequences of the assassination of Potentate Versidue-Shaie, the monarchs of Elsweyr were left to fend off this tribal rebellion on their own. In 2E 326, the capital city of Ne Quin-Al was sacked and the royal family massacred. The only survivor was 6-year-old Dahlima Brae, grandson of King Keirgo."
-
- #Queen Padala of Anequina
- imp_char_anequina_003:0 ""
- imp_char_anequina_003_desc:0 "Queen Padala of Anequina is a scion of the ancient and prestigious Brae clan, tracing her ancestry to Darloc Brae himself. In 2E 309, her great-great-grandfather King Keirgo of Anequina married Queen Eshita of Pellitine and thus united Elsweyr for the first time in its history.\n\nUnfortunately, it turned out that Elsweyr was far from united; in 2E 326, the royal family was massacred, and the only survivor was Padala's grandfather, Dahlima Brae, who later went on to rule Rimmen.\n\nPadala's mother, Mirani, inherited Rimmen from Dahlima and ruled it until 2E 389, when it was conquered by her former Rimmenese vassal, Camilla 'The Conqueror' Pardus. Since losing Rimmen, the domain of the Brae clan has been reduced to the fortress of Kerur, south of Rimmen.\n\nRecently, however, Padala managed to change her family's fortunes when she took back Rim Valley from the Rimmenese in 2E 429."
-
- #Last High King of Hammerfell
- imp_char_phyllocid_1001:0 ""
- imp_char_phyllocid_1001_desc:0 "Exceptional times call for exceptional kings, which Ar-Azal most certainly was. Dexterous rider, able swordsman and magnificent statesman, his wisdom rivalled the mythic Emperors of Yokuda.\n\nHigh King Ja-Fr's political missteps had thrust the realm to the brink of civil war. Fortunately, the young High King could rely on the oniric counsel of the Admirable Zaqeeb, priestess of Tava. Open war between Crowns and Forebears was deferred for a generation: he wed the daughters of the both faction leaders. Marrying the Throne of Hegathe into both parties had it merits before it unleashed renewed crisis upon the realm. \n\nTwo royal princes, one crowned in Hegathe and another ruling Antiphyllos like his forebears, are now the figureheads of each faction. Ar-Azal can be seen in both yet neither can claim to be half of the man their father was..."
+ imp_char_anequina_96:0 ""
+ imp_char_anequina_96_desc:0 "King Keirgo was King of Anequina, hailing from the legendary Brae clan. With his marriage to Queen Eshita of Pellitine in 2E 309, the Elsweyr Confederacy was formed. Sadly for him, this union between nobility led to unrest among his tribal subjects, who felt betrayed by it.\n\nWith Cyrodiil dealing with the consequences of the assassination of Potentate Versidue-Shaie, the monarchs of Elsweyr were left to fend off this tribal rebellion on their own. In 2E 326, the capital city of Ne Quin-Al was sacked and the royal family massacred. The only survivor was 6-year-old Dahlima Brae, grandson of King Keirgo."
 
  #Last proper High King of Skyrim
  imp_char_flamehair_999:0 ""
- imp_char_flamehair_999_desc:0 "The Flame-Hair Clan had been holding the High Kingship for three generations and over a century when Logrolf sat in the Palace of Kings in 2E 394. Simply unprecedented since the august Ysgramoor Dynasty!\n\nOne can hardly fault the Nords for passing the crown down a lineage in accordance with the Pact of Chieftains, but even less so when their scions show nothing but good character. Logrolf was a paragon of Nordic kingship: leading his thanes in battle, splitting the spoils, passing judgement upon the wicked and compensating the impaired.\n\nThe balance of power, commerce and influence shifted to Windhelm as it became clear the capital would stay there for the foreseeable future. Solitude's docks and Whiterun's  marketplaces payed the tribute of this change.\n\nThe former had been particularly injured not only in treasury but also in its pride. The Blue Palace was indeed the residence of the High King for much of the Late #LORE [compendium_first_era]#!. Logrolf was the last straw and his daughter Freydis seemed cut out from the same cloth as her forefathers. Action was urgently needed.\n\nEmboldened by the death of #LORE [compendium_potentate]#! Savirien-Chorak a year prior, Svartr Cursebraid, Jarl of Solitude and Grand Steward of Skyrim hatched a plot to murder High King Logrolf and contest Freydis' succession to the throne. Logrolf died with no grievances, only guilty of being too good a liege. Svartr then declared himself High King with the backing of the Western Holds whilst Logrolf's daughter was acknowledged by the Eastern Holds. The Children of the Sky were locked in bitter feud once again."
+ imp_char_flamehair_999_desc:0 "The Flame-Hair Clan had been holding High Kingship for three generations when Logrolf sat in the Palace of Kings in 2E 394. One can hardly fault the Nords for passing the crown down a lineage in accordance with the Pact of Chieftains, but even less so when their scions show nothing but good character. Logrolf was a paragon of Nordic kingship; fierce in battle and fair in peace, Logrolf’s prosperous reign slowly turned Windhelm into the economic heart of Skyrim.\n\nIn 2E 431, a year after [Glossary( 'Potentate', 'POTENTATE_GLOSS' )] Savirien-Chorak was assassinated, the same fate befell Logrolf. Soon after, Svartr Cursebraid, the Jarl of Solitude, declared himself High King of Skyrim and the Children of the Sky were locked in a bitter feud once again."
 
  #The guy from 2920 :>
  imp_char_akavir_99:0 ""
- imp_char_akavir_99_desc:0 "Versidue-Shaie handed the Ilniviri four centuries of unrivalled prominence following Reman III's death. Briskly liquidating the Imperial Household and taking over the remaining institutions, he declared 2920 to be the 'Last Year of the #LORE [compendium_first_era]#!'.\n\nFormally assuming total power in 2E 1 despite stark opposition, Versidue-Shaie kickstarted a whirlwind of political arrests, murders and palace coups remembered as the 'Reman Purges'. Blackrose, Whiterose and — most of all — Amenos Isle emerged as penal colonies for unrepentant Remanites.\n\nEven so, transition to the new regime remained fraught with insubordination, peaking in 2E 283 with the 'Challenge of Bardmont'. The end of the following thirty-seven years long conflict saw the disbandment of private armies, finally culling the last recalcitrant princes.\n\nSapped of financial and military might, the pacified empire lacked the ability to police itself. Proconsul Dinieras-Ves thus petitioned the hegemon in 2E 320 to delegate peacekeeping to the nascent Fighters' Guild.\n\n'The Coiled King' shed the mantle of power in the same way he had worn it: by the assassin's dagger. Found dead in 2E 324, he was succeeded by his son Savirien-Chorak, unaware that his life's work would be laid low within a third of the time he had ruled."
+ imp_char_akavir_99_desc:0 "Versidue-Shaie was the last Akaviri Potentate to serve the Reman dynasty and the first to rule on his own after Reman III and his heir were assassinated by the Dark Elven Morag Tong. He declared the start of the Second Era and ruled for more than 300 years before he too was assassinated.\n\nVersidue faced many rebellions over his rule, with his last civil war lasting for 37 years from 2E 283 to 2E 320. The devastation from the war gave rise to the Fighters Guild, followed by the Guilds Act, officially sanctioning other guilds throughout Tamriel."
 
  #Last Potentate
  imp_char_akavir_100:0 ""
- imp_char_akavir_100_desc:0 "It is tempting to write off Savirien-Chorak as the unready steward suddenly thrust into absolute power... with predictable results. Still, the truth is something more prosaic: Versidue-Shaie ruling the Empire for so long was a miracle that could hardly repeat itself.\n\nOverwhelmed by the government tailored for his omnipresent sire, Savirien-Chorak fell victim to executive paralysis. Crises would be brought to his attention one day, only to receive a tepid reply weeks later, long after the local authorities had overruled him.\n\nNot one to be dismissed entirely, Savirien-Chorak was savvy enough to elevate Orsinium to the provincial rank and to execute the insolent. On the latter note, he was #bold far less#! murderous than his father: 'Queen of Fangs' — the household blade — beheaded less nobles during his #bold entire reign#! than during #bold the sole Bardmont Challenge#!, when royal gore frequently bathed the sword.\n\nThat made the case of Cyril II Cuptor all the more important. Publicly endorsing a satire of your liege is a sure path to execution, as the Imperial Count of Bravil learned the hard way in 2E 400! Furthermore, Savirien-Chorak appointed Sien-Drassi as Proconsul instead of allowing the succession of Prince Venaros to his impudent father, thoroughly humiliating House Cuptor.\n\nYears passed and resentment pooled until Savirien-Chorak's lifeless body was found in 2E 430 in his palace of Senchal, killed by Mephalan fanatics called 'the Morag Tong'. They did not let off his direct heirs either, just like the Remans of old. Simmering tensions finally erupted with the writing on the wall: the Second Empire had begun its final dislocation.\n\nYet a little known descendant known as Aixnieras-Ves would make a surprising turnaround..."
+ imp_char_akavir_100_desc:0 "Despite a long rule over the Empire, Versidue-Shaie was succeeded by the comparatively meek Savirien-Chorak. Local governors undermined central authority in spite of the Potentate's sustained leniency.\n\nAt times Savirien-Chorak resolved to more hard-headed approach. In 2E 400, he ousted House Cuptor from Bravil and appointed an Ilniviri Proconsul in their stead, and boldly proclaimed Orsinium a full fledged Province of the Empire.\n\nYears passed and resentment pooled until Savirien-Chorak's lifeless body was found in 2E 430 in his Senchal palace, killed by Mephalan fanatics called 'the Morag Tong'. They did not let off his direct heirs either, just like the Remans of old. Tensions have finally boiled over as it became painfully clear: the Second Empire had begun its final dissolution."
 
  #Xarxes
- imp_char_xarxes_1000:0 ""
- imp_char_xarxes_1000_desc:0 "$normal_desc_xarxes$"
+ imp_char_xarxes_xarxes:0 ""
+ imp_char_xarxes_xarxes_desc:0 "$normal_desc_xarxes$"
 
  #Syrabane
  imp_char_syrabane_1000:0 ""
@@ -327,40 +124,21 @@
  imp_char_phynaster_1000:0 ""
  imp_char_phynaster_1000_desc:0 "$normal_desc_phynaster$"
 
+ imp_char_alma_rula_llothis:0 ""
+ imp_char_alma_rula_llothis_desc:0 "Saint Llothis the Pious was a contemporary and companion of the [Glossary( 'Tribunal', 'TRIBUNAL_GLOSS' )]. He formulated the central rituals and principles of the Tribunal Temple Faith and was the symbolic mortal bridge between the gods and the faithful."
+
+ imp_char_alma_rula_olms:0 ""
+ imp_char_alma_rula_olms_desc:0 "Saint Olms the Just is the Dunmeri Patron of Chandlers and Clerks and the patron saint of House Indoril. Olms was the founder of the Ordinators, and was responsible for the conceiving and articulating the fundamental principles of testing, ordeal, and repentance."
+
  ## EK2 Characters ##
  
  #King Aenedhel, King of Falinesti
  imp_char_camoran_017:0 ""
- imp_char_camoran_017_desc:0 "Keeping the peace within a Bosmer clan is challenging enough, so imagine how taxing it must be to keep the peace between clans. Aenedhel 'the Peacemaker', primus inter pares among Camoran kings, met the task head on with unnerving ability. There was no conflict he could not defuse, no misunderstanding he could not solve, no nemeses that could deny reconciliation under his mediation. The saying went that 'Aenedhel's words strike more true than Eplear's arrows'; a gauge of his diplomatic ability.\n\nMourning shrouded the wards in 2E 420 once it was known Falinesti and its inhabitants vanished, presumed dead. Wailings and cries sounded across the country, and Silvenar Edhelorn took ill for three years before his condition bettered. 'The Peacemaker' became 'the Lamented'.\n\nWith the collapse of Imperial authority and no Peacemaker to facilitate diplomacy, the divided Camoran kings all staked their claim on the High Kingship, with the Silvenar and Grahtwood branches at the head of the pack. Y'ffre's Garden edged towards total anarchy."
-
- #Nord Adventurer who kicked out previous Bruma ruler
- imp_char_frostbeard_98:0 ""
- imp_char_frostbeard_98_desc:0 "King Borvir ruled Bruma through right of conquest, slaying Imperial Count Janus on the footsteps of the comital castle.\n\nAenar Frost-Beard roamed the woods of County Bruma, making a living as a troll hunter, more than enough to care for himself and his son Borvir. Tragically, he was killed in a dispute with some racketeering guards; They wanted a third of his loot rather the legal toll of a tenth. Borvir pleaded with the Captain of the guard to punish the wrongdoers but was thrown in a cell and would have died there if not for the Count's grace that saved him.\n\nBelieving in the tales of fair kingship, Borvir petitioned Imperial Count Janus to intercede on his behalf, recounting his woes. To his credit, Janus proposed a settlement, which decreed the following: Borvir would be compensated with twice the value of the stolen troll fat, Aenar's funeral would be paid for by the state and a special waiver on duelling was granted so that Borvir could deal with the murderers.\n\nBorvir wanted... more. He wanted nothing less than the Captain's head! It was a cost Janus was unwilling to bear so he reiterated his offer which Borvir declined.\n\nThe next month, the involved guardsmen were found dead and robbed blind. Borvir had sworn a blood oath on Janus and led a warband of fellow wronged Nords. In 2E 432, he conquered Bruma and fulfilled his oath. A moot was convened thereafter, as the clan-heads confirmed Borvir as 'King of Bruma' and his son's right to succeed him. Harald would do so in 2E 439, sitting in the shadow of the man he replaced."
-
- # Cyril II aka guy who ridiculed the Potentate, then got executed. what great surprise
- imp_char_cuptor_98:0 ""
- imp_char_cuptor_98_desc:0 "No one really knows what compelled Imperial Count Cyril II of Bravil to voraciously consume #LORE [compendium_potentate]#! satire. Perhaps some unknown setback at the hands of a magnate? Stonewalling by his Cisnibenese prefects? And yet his line was one of the more trusted ones in Savirien-Chorak's Cyrodiil...\n\nCyril had official seals, exemption from many taxes and the right to maintain a retinue — a distinctive status symbol in post-Bardmont Tamriel. The Potentate really saw the Cuptor as kin. All the while, creeping addiction sapped the deep respect Cyril had for Savirien.\n\nCyril ran amok to the point of patronizing the anonymous author behind the 'Sevilio Coraccus' saga. Sevilio Coraccus is a mercurial king with a lisp prone to inaction, a thinly veiled critic of his liege melding reality and fiction to great effect. Most readers agree that it reached the apex in 'Sevilio Coraccus: Shadow of Varsidius' and 'Sevilio Coraccus: the Memoirs of Sidorius'.\n\nCyril grew more insolent off his readinds until he went too far. As the Elder Council was convening to address yet another crisis festering because of non-commital Savirien he quipped that 'the original really cannot be matched by Sevilio'. Savirien-Chorak — or his trusted aide — heard this and secretly arranged for an investigation. Numerous copies of 'Sevilio Coraccus' were found in the walls of his mansion, along with correspondences and promissory notes proving his financial ties to the author.\n\nCondemned for high treason, Cyril II was stripped of his comital office and personally beheaded by the Potentate using Queen of Fangs. Officially spared unlike his father, Prince Venaros was allowed to depart albeit chased by 'loyalists', willing to dispatch him to enter the good graces of their sovereign."
-
- imp_char_blackrose_dyaan_01:0 ""
- imp_char_blackrose_dyaan_01_desc:0 "Aiisxar was regarded as a great leader and mediator between the peoples of Black Marsh during uncertain times. By relocating Lilmothiit prowls to protect the groves the Hist entrusted to them, peace with the Argonians was secured. This reprieve saw the hopes of Lilmothiit recovery of their lost cities rekindled. That legacy, however, is overshadowed by the looming succession dispute between his exiled son and infant daughter."
-
- imp_char_atla_205:0 ""
- imp_char_atla_205_desc:0 "Not content to let the great cities outside Solhrest rot in the encroaching mires, nor to let the northern tribes fall to the Naga, Auril united the Yespest by force and by persuasion.\n\nAuril met his end attempting to torch the Bridges of Leyawiin, slain by Overlord Esdrufus who would not have the Yespest king threaten his designs for economic domination of the Topal Bay."
+ imp_char_camoran_017_desc:0 "Aenedhel 'the Peacemaker', first among equals among Camoran kings, was renowned for his skills as a mediator. When Falinesti and its inhabitants tragically vanished in 2E 420, 'the Peacemaker' was presumed dead and became 'the Lamented'.\n\nWith the collapse of Imperial authority and no Peacemaker to facilitate diplomacy, the divided Camoran kings all staked their claim on the High Kingship and Y'ffre's Garden edged towards total anarchy."
 
  imp_char_indoril_alma_rula:0 ""
- imp_char_indoril_alma_rula_desc:0 "Young champions flock to the Ordinator Orders like moths to a flame, eager to prove their devotion. Dedicated to the ALMSIVI since his birth, it was a sacred obligation to Farwil Indoril.\n\nNeedless to say, spiritual instruction awaited the young mer; He often pondered over Temple scholastics and Chimer history to the delight of his tutors. Yet he also sparred daily with his father Braynos, a retired general. He took the Oath of Ordination in 2E 361, being admitted to all Orders. To fulfill his late father's wishes, he became a Militant instead of following his Doctrinaire inclination.\n\nWhen the August Conclave of the Three Living Gods for the Selection of their Worldly Voice finally convened, Farwil Indoril became the youngest Alma Rula in Temple history."
+ imp_char_indoril_alma_rula_desc:0 "Farwil's fate was intertwined with the Temple from the moment he was born. As a member of the clan Indoril he was given religious education, but he also sparred daily with his father Braynos, a retired general. When the time came to choose his path, Farwil joined the Ordinators, setting out to ruthlessly root out the enemies of [Glossary( 'ALMSIVI', 'TRIBUNAL_GLOSS' )]. When the Alma Rula Saveri passed away in 2E 419, Farwil, noted for his long and faithful service as well as prestigious lineage, was a clear choice for the clergy of Tribunal."
 
- imp_char_skjoralmor_99:0 ""
- imp_char_skjoralmor_99_desc:0 "Jarl Falk was part of the ancient Skjoralmor clan, which founded Falkreath in the #LORE [compendium_first_era]#!. In late 2E 431, the Orcish Yal tribe invaded Skyrim, fleeing the sack of Orsinium. Due to the Moot of Solitude and its political storm, High King Svartr was unable to properly defend his subject, and in 2E 434, Falkreath was taken and Jarl Falk slain by Yashag gro-Yazgu."
-
- imp_char_pardus_998:0 ""
- imp_char_pardus_998_desc:0 "Heir to the victorious Claudia 'the Grim', Princess Camilla was groomed into a warrior, trained by the finest Rimmenese generals. Following her mother's victories, Camilla laid waste to the Anequinan armies, crushing them at the Battle of Twin Suthay, leaving Queen Mirani fleeing south to Kerur with her infant daughter. Thus was founded the Kingdom of Rimmen, and the legacy of Queen Camilla 'the Conqueror'."
-
- imp_char_alma_rula_llothis:0 ""
- imp_char_alma_rula_llothis_desc:0 "Saint Llothis the Pious was a contemporary and companion of the Tribunal. He formulated the central rituals and principles of the Tribunal Temple Faith and was the symbolic mortal bridge between the gods and the faithful."
-
- imp_char_alma_rula_olms:0 ""
- imp_char_alma_rula_olms_desc:0 "Saint Olms the Just is the Dunmeri Patron of Chandlers and Clerks and the patron saint of House Indoril. Olms was the founder of the Ordinators, and was responsible for the conceiving and articulating the fundamental principles of testing, ordeal, and repentance."
 
 ##TEMPLATE , DO NOT DELETE
 

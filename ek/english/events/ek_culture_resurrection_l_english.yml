@@ -1,43 +1,66 @@
 ﻿l_english:
-  #Falmer
-  culture_resurrection_event.0001.t:0 "Return of the Falmer"
- culture_resurrection_event.0001.desc:0 "Thousands of years ago, the Nords forced our people out of our homes.\n\nSince then, we have been forced to eke out our meagre existences in secret enclaves like my own in [GetPlayer.GetCurrentLocation.GetNameNoTooltip], shielded by magic and remoteness so that nobody could ever do us harm again.\n\nThe magical barriers and cloaks have done their work well — but so too has hunger, and it has driven us out as no mortal has done since the Nords of old. Our people have grown too many and the soil too bleak to sustain ourselves much longer. It is time for me to lead my people back into the harsh world outside."
+ #general
+ culture_resurrection_event.0001.t.base:0 "A Dead Culture?"
+ culture_resurrection_event.0001.desc.base:0 "Our people are thought lost, called a [dead_culture|E]. It seems that we have no towns, no villages, to be found.\n\nAs a leader, I must ask the question: are we alone? Are we doomed never to share our language, to never resettle our lost lands?"
+ culture_resurrection_event.0001.option1.base:0 "All is not lost. We shall return!"
+ culture_resurrection_event.0001.option2.base:0 "All is not lost. We shall return, soon."  
+ culture_resurrection_event.0001.option3.base:0 "Alone forever. These are the last days of the [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip]..."  
+
+ #generic event options
  culture_resurrection_event.0001.option1:0 "[GetPlayer.GetFaith.HighGodName|U] be with us!"
- culture_resurrection_event.0001.option2:0 "May we find refuge from this bitter cold."  
- culture_resurrection_event.0001.option3:0 "We should not reveal our people..."  
+ culture_resurrection_event.0001.option3:0 "We should not reveal our people..." 
+
+ #Tooltips
  culture_resurrection_event.0001.option1.flavor:0 "We will have hard work to do...\n\n @warning_icon! #X Your culture will be considered [living_culture_short|E] and can be used to [promote_culture|E]! #!" 
  culture_resurrection_event.0001.option2.flavor:0 "Your culture will remain a [dead_culture|E] for now.\n\nHowever, if you later become [landed|E], your culture will again be considered [living_culture_short|E] and can be used to [promote_culture|E]!"
- culture_resurrection_event.0001.option3.flavor:0 "@warning_icon! #X Your culture will remain [dead_culture_short|E] and cannot be used to [promote_culture|E]. Decide carefully, as this event will not fire again! #!" 
-  #Betrayed
- culture_resurrection_event.0002.t:0 "Rise of the Betrayed"
- culture_resurrection_event.0002.desc:0 "It is not natural for our people to live on the surface. The air and sounds are strange — to say nothing of the world of light which we have no way of hearing or touching.\n\nIt will be a challenge to settle above, surrounded by these seeing creatures which wish us nothing but harm. But we are not cowards.\n\nI shall lead us to the challenge and to the surface, and with us shall come our Chaurus and culture."
- culture_resurrection_event.0002.option1:0 "[GetPlayer.GetFaith.HighGodName|U] be with us!"
- culture_resurrection_event.0002.option2:0 "Is there a home for us on the surface?"  
- culture_resurrection_event.0002.option3:0 "We should not reveal our people..."  
- culture_resurrection_event.0002.option1.flavor:0 "We will have hard work to do...\n\n @warning_icon! #X Your culture will be considered [living_culture_short|E] and can be used to [promote_culture|E]! #!" 
- culture_resurrection_event.0002.option3.flavor:0 "@warning_icon! #X Your culture will remain [dead_culture_short|E] and cannot be used to [promote_culture|E]. Decide carefully, as this event will not fire again! #!" 
-  #Dwemer
- culture_resurrection_event.0003.t:0 "Uprooted in Time"
- culture_resurrection_event.0003.desc.intro:0 "CHIEF TONAL ARCHITECT EMERGENCY REPORT — #italic Dragon decompression. Akhatic Achrononumeronuclei brought to agreeable values by Jill sequence-trace Tuning-Claw. Following relevant protocols,#!\n\n"
- culture_resurrection_event.0003.desc.resdayn:0 "#italic Choir of Resdayn:#! #Y NO INCOMING SIGNAL#!\n#italic Kragen-frequency:#! #N RED SILENCE#!\n#italic Rourken-frequency:#! #N RED SILENCE#!\n#italic Rogue harmonies:#! #N UNREACHABLE#!"
- culture_resurrection_event.0003.desc.kragen:0 "#italic Kragen-frequency:#! #Y NO INCOMING SIGNAL#!\n#italic Rourken-frequency:#! #N RED SILENCE#!\n#italic Choir of Resdayn:#! #N RED SILENCE#!\n#italic Rogue harmonies:#! #N UNREACHABLE#!"
- culture_resurrection_event.0003.desc.rourken:0 "#italic Rourken-frequency:#! #Y NO INCOMING SIGNAL#!\n#italic Kragen-frequency:#! #N RED SILENCE#!\n#italic Choir of Resdayn:#! #N RED SILENCE#!\n#italic Rogue harmonies:#! #N UNREACHABLE#!"
- culture_resurrection_event.0003.desc.outro:0 "\n\n#italic Attempts to contact other Tonemasters to verify and synchronize have not been successful as the consequence of them not being. Red Mountain activity is the suspected cause of unexpected reality behavior.#!\n\nThis is not the world we have been a part of until moments ago. We do not know how or why this happened. All that we know is the Dragon broke and the Jills have uprooted us in time to make it whole again.\n\n#bold We are the width and breadth of the Dwemer race. For better or worse.#!"
- culture_resurrection_event.0003.option1:0 "Rebuild. Restore. Re-evaluate."  
- culture_resurrection_event.0003.option2:0 "May we yet reclaim our cities of old."  
- culture_resurrection_event.0003.option3:0 "We have a duty to discover what unmade the rest of our kind."  
- culture_resurrection_event.0003.option1.flavor:0 "We will have hard work to do...\n\n @warning_icon! #X Your culture will be considered [living_culture_short|E] and can be used to [promote_culture|E]! #!" 
- culture_resurrection_event.0003.option3.flavor:0 "@warning_icon! #X Your culture will remain [dead_culture_short|E] and cannot be used to [promote_culture|E]. Decide carefully, as this event will not fire again! #!" 
- culture_resurrection_event.0003.other_cultures:0 "All other [cultures|E] of $heritage_dwemeri_name$#! [heritage|E] loses the #V $innovation_extinct_race$#! [innovation|E] and gains #V $innovation_dead_culture$#!."
- #Atmoran
- culture_resurrection_event.0004.t:0 "The Return"
- culture_resurrection_event.0004.desc:0 "It was many centuries ago when our ancestors farewelled the great ships from Atmora, the elder wood of our long memories. Farewell, Jorrvaskr; farewell, Cyrod; farewell, o ship of ditransitively-wooded hull; farewell, ship of crystal mast. When our forefathers watched them go, they stood on Mora's snowy shores and they still knew how to see the sun through the mist and snow of our beloved skies.\n\nThose days are long gone. The chill, the pall, the frostfall; it has many names, but only one outcome. There is only cold, cold death for those left in Atmora. Like the sailors on Skyrim of old, we have had to sail long and sail far and sail never to see our home again. Our ships may be smaller than the Great Holds which carried the Nords back to the Throat of the World, but they serve their purpose. We have finally abandoned the frozen continent; we may finally begin anew upon its successor."
- culture_resurrection_event.0004.option1:0 "[GetPlayer.GetFaith.HighGodName|U] be with us!"
- culture_resurrection_event.0004.option2:0 "May we find new ports for our ships."  
- culture_resurrection_event.0004.option3:0 "With time, the memory of Atmora will diminish."  
- culture_resurrection_event.0004.option1.flavor:0 "We will have hard work to do...\n\n @warning_icon! #X Your culture will be considered [living_culture_short|E] and can be used to [promote_culture|E]! #!" 
- culture_resurrection_event.0004.option3.flavor:0 "@warning_icon! #X Your culture will remain [dead_culture_short|E] and cannot be used to [promote_culture|E]. Decide carefully, as this event will not fire again! #!" 
+ culture_resurrection_event.0001.option3.flavor:0 "@warning_icon! #X Your culture will remain [dead_culture_short|E] and cannot be used to [promote_culture|E]. Decide carefully, as this event will not fire again! #!"
+ culture_resurrection_event.0001.other_cultures:0 "All other [cultures|E] of $heritage_dwemeri_name$#! [heritage|E] loses the #V $innovation_extinct_race$#! [innovation|E] and gains #V $innovation_dead_culture$#!."
 
+ #Offmap cultures
+ culture_resurrection_event.0001.t.offmap:0 "New Arrivals"
+ culture_resurrection_event.0001.desc.offmap:0 "Our people are far away, so far that some call us a [dead_culture|E]. In these lands, there are so few of us.\n\nAs a leader, I must ask the question: are we alone? Are we doomed never to share our language, to never settle these new lands?"
+ culture_resurrection_event.0001.option1.offmap:0 "To new beginnings."
+ culture_resurrection_event.0001.option2.offmap:0 "To new beginnings."  
+ culture_resurrection_event.0001.option3.offmap:0 "Alone forever. The [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] shall never take root here."
+
+ #Falmer
+ culture_resurrection_event.0001.t.falmer:0 "Return of the Falmer"
+ culture_resurrection_event.0001.desc.falmer:0 "Thousands of years ago, the Nords forced our people out of our homes.\n\nSince then, we have been forced to eke out our meagre existences in secret enclaves like my own in [GetPlayer.GetCurrentLocation.GetNameNoTooltip], shielded by magic and remoteness so that nobody could ever do us harm again.\n\nThe magical barriers and cloaks have done their work well — but so too has hunger, and it has driven us out as no mortal has done since the Nords of old. Our people have grown too many and the soil too bleak to sustain ourselves much longer. It is time for me to lead my people back into the harsh world outside."
+ culture_resurrection_event.0001.option1.falmer:0 "We will honour the Snow Prince."  
+ culture_resurrection_event.0001.option2.falmer:0 "May we find refuge from this bitter cold."  
+ culture_resurrection_event.0001.option3.falmer:0 "Our time has passed."  
+
+ #Betrayed
+ culture_resurrection_event.0001.t.betrayed:0 "Rise of the Betrayed"
+ culture_resurrection_event.0001.desc.betrayed:0 "It is not natural for our people to live on the surface. The air and sounds are strange — to say nothing of the world of light which we have no way of hearing or touching.\n\nIt will be a challenge to settle above, surrounded by these seeing creatures which wish us nothing but harm. But we are not cowards.\n\nI shall lead us to the challenge and to the surface, and with us shall come our Chaurus and culture."
+ culture_resurrection_event.0001.option1.betrayed:0 "Now we reclaim the lands of light!"  
+ culture_resurrection_event.0001.option2.betrayed:0 "Is there a home for us on the surface?"  
+ culture_resurrection_event.0001.option3.betrayed:0 "We belong to the deeps..."  
+
+ #Dwemer
+ culture_resurrection_event.0001.t.dwemer:0 "Uprooted in Time"
+ culture_resurrection_event.0001.desc.resdayn:0 "CHIEF TONAL ARCHITECT EMERGENCY REPORT — #italic Dragon decompression. Akhatic Achrononumeronuclei brought to agreeable values by Jill sequence-trace Tuning-Claw. Following relevant protocols,#!\n\n#italic Choir of Resdayn:#! #Y NO INCOMING SIGNAL#!\n#italic Kragen-frequency:#! #N RED SILENCE#!\n#italic Rourken-frequency:#! #N RED SILENCE#!\n#italic Rogue harmonies:#! #N UNREACHABLE#!\n\n#italic Attempts to contact other Tonemasters to verify and synchronize have not been successful as the consequence of them not being. Red Mountain activity is the suspected cause of unexpected reality behavior.#!\n\nThis is not the world we have been a part of until moments ago. We do not know how or why this happened. All that we know is the Dragon broke and the Jills have uprooted us in time to make it whole again.\n\n#bold We are the width and breadth of the Dwemer race. For better or worse.#!"
+ culture_resurrection_event.0001.desc.kragen:0 "CHIEF TONAL ARCHITECT EMERGENCY REPORT — #italic Dragon decompression. Akhatic Achrononumeronuclei brought to agreeable values by Jill sequence-trace Tuning-Claw. Following relevant protocols,#!\n\n#italic Kragen-frequency:#! #Y NO INCOMING SIGNAL#!\n#italic Rourken-frequency:#! #N RED SILENCE#!\n#italic Choir of Resdayn:#! #N RED SILENCE#!\n#italic Rogue harmonies:#! #N UNREACHABLE#!\n\n#italic Attempts to contact other Tonemasters to verify and synchronize have not been successful as the consequence of them not being. Red Mountain activity is the suspected cause of unexpected reality behavior.#!\n\nThis is not the world we have been a part of until moments ago. We do not know how or why this happened. All that we know is the Dragon broke and the Jills have uprooted us in time to make it whole again.\n\n#bold We are the width and breadth of the Dwemer race. For better or worse.#!"
+ culture_resurrection_event.0001.desc.rourken:0 "CHIEF TONAL ARCHITECT EMERGENCY REPORT — #italic Dragon decompression. Akhatic Achrononumeronuclei brought to agreeable values by Jill sequence-trace Tuning-Claw. Following relevant protocols,#!\n\n#italic Rourken-frequency:#! #Y NO INCOMING SIGNAL#!\n#italic Kragen-frequency:#! #N RED SILENCE#!\n#italic Choir of Resdayn:#! #N RED SILENCE#!\n#italic Rogue harmonies:#! #N UNREACHABLE#!\n\n#italic Attempts to contact other Tonemasters to verify and synchronize have not been successful as the consequence of them not being. Red Mountain activity is the suspected cause of unexpected reality behavior.#!\n\nThis is not the world we have been a part of until moments ago. We do not know how or why this happened. All that we know is the Dragon broke and the Jills have uprooted us in time to make it whole again.\n\n#bold We are the width and breadth of the Dwemer race. For better or worse.#!"
+ culture_resurrection_event.0001.option1.dwemer:0 "Rebuild. Restore. Re-evaluate."  
+ culture_resurrection_event.0001.option2.dwemer:0 "May we yet reclaim our cities of old."  
+ culture_resurrection_event.0001.option3.dwemer:0 "We have a duty to discover what unmade the rest of our kind."  
+
+ #Atmoran
+ culture_resurrection_event.0001.t.atmoran:0 "The Return"
+ culture_resurrection_event.0001.desc.atmoran:0 "It was many centuries ago when our ancestors farewelled the great ships from Atmora, the elder wood of our long memories. Farewell, Jorrvaskr; farewell, Cyrod; farewell, o ship of ditransitively-wooded hull; farewell, ship of crystal mast. When our forefathers watched them go, they stood on Mora's snowy shores and they still knew how to see the sun through the mist and snow of our beloved skies.\n\nThose days are long gone. The chill, the pall, the frostfall; it has many names, but only one outcome. There is only cold, cold death for those left in Atmora. Like the sailors on Skyrim of old, we have had to sail long and sail far and sail never to see our home again. Our ships may be smaller than the Great Holds which carried the Nords back to the Throat of the World, but they serve their purpose. We have finally abandoned the frozen continent; we may finally begin anew upon its successor."
+ culture_resurrection_event.0001.option1.atmoran:0 "We anchor here!"  
+ culture_resurrection_event.0001.option2.atmoran:0 "May we find new ports for our ships."  
+ culture_resurrection_event.0001.option3.atmoran:0 "With time, the memory of Atmora will diminish."  
+
+ #Galen
+ culture_resurrection_event.0001.t.galen:0 "Galen, Restore Thyselves"
+ culture_resurrection_event.0001.desc.galen:0 "The Galen peoples have long been absent, faded entirely from the deathlands and changed by time and the wild magics of the Glenumbrial. Our time is past, and our old ways gone; our language is heard no more, and around us are only strange faces. We see no Galen lands, no remnants of our great tribes, and almost no hope that we shall ever take root again. But perhaps not all is lost.\n\nSo many myths abound of ancient Galenites protected by forgotten gods, like the seven sleepers of Phrygias, still hiding in their cave; or the Daphneic druids of Bergama, who, having healed the wrong lord, turned into laurel trees to protect themselves; or those who hide among the covens."
+ culture_resurrection_event.0001.option1.galen:0 "We may not be them, but we are returned."  
+ culture_resurrection_event.0001.option2.galen:0 "And we shall find all such lost siblings."  
+ culture_resurrection_event.0001.option3.galen:0 "But now, we are a footnote of history."  
+
+# Laamp events
  culture_resurrection_event.1000.t: "End of the Road"
  culture_resurrection_event.1000.desc: "Gone are the camps and wagons of my adventuring days, sleeping under stars and temporary lodgings. We have finally found a lasting residence in the [ROOT.Char.GetCapitalLocation.GetTerrain.GetNameNoTooltip|l] of [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTierNoTooltip].\n\nI have led the first party of wandering [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] in this strange new land to a new home, and have assumed the position as our master. Already some weary feet have found their way here, and news of this will soon spread so our scattered and hidden people may again be one."
  culture_resurrection_event.1000.option1: "Hurray!"

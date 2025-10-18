@@ -10,6 +10,12 @@
  ALREADY_HAS_AN_ALLIANCE_DEAL_BEASTFOLK_TARGET:0 "Target can have one Nonmarital [alliance|E] active"
  NOT_ALREADY_HAS_AN_ALLIANCE_DEAL_BEASTFOLK_TARGET:0 "Target already has one Nonmarital [alliance|E] active"
 
+ buy_writ_of_war_interaction:0 "Buy Writ of War"
+ buy_writ_of_war_interaction_desc:0 "A [writ_of_war|E] is necessary to declare [war|E] upon rulers outside of [grand_council|E]."
+ buy_writ_of_war_interaction_effect_tooltip:0 "Gain a [writ_of_war|E] usable upon rulers outside of Morrowind."
+ buy_writ_of_war_interaction_cost:0 "You do not have enough [gold_i] to purchase a Writ of War!"
+ writ_of_war_expended_tooltip:0 "Writ of War Expended due to War Declaration"
+
 # Imperial Scion
 
  offer_cyrodiilic_subject_interaction:0 "Offer To Make [GetCultureTradition('tradition_cyrodiilic_subject').GetName|V]"
@@ -22,7 +28,7 @@
  cyrodiilic_subject_interaction_not_cyrodiilic:0 "[recipient.GetTitledFirstName]'s [culture|E] is $heritage_cyrodiilic_name$ [heritage|E]"
  cyrodiilic_subject_interaction_not_imperial_legacy:0 "[recipient.GetTitledFirstName]'s [culture|E] has the [GetCultureTradition('tradition_imperial_legacy').GetName|V] [tradition|E]"
  cyrodiilic_subject_interaction_no_other_scion:0 "No other [recipient.GetCulture.GetHeritage.GetName] [culture|E] is already [GetCultureTradition('tradition_cyrodiilic_subject').GetName|V]"
- cyrodiilic_subject_gains_cultural_rights:0 "Every [recipient.GetCulture.GetName] [vassal|E] gains the [GetVassalContractType( 'cultural_rights' ).GetObligationName( 'cultural_rights_protected' )] [vassal_contract|E]"
+ cyrodiilic_subject_gains_cultural_rights:0 "Every [recipient.GetCulture.GetName] [vassal|E] gains the [GetSubjectContractType( 'cultural_rights' ).GetObligationName( 'cultural_rights_protected' )] [vassal_contract|E]"
 
  imperial_scion_tradition_cultural_acceptance_gain:0 "[recipient.GetCulture.GetName] [culture|E] gains [EmptyScope.ScriptValue('major_cultural_acceptance_gain')|+0] [cultural_acceptance|E] with all [actor.GetCulture.GetHeritage.GetName] [cultures|E]"
  imperial_scion_tradition_cultural_acceptance_loss:0 "[recipient.GetCulture.GetName] [culture|E] loses [EmptyScope.ScriptValue('major_cultural_acceptance_loss')|+0] [cultural_acceptance|E] with all other [recipient.GetCulture.GetHeritage.GetName] [cultures|E]" 
@@ -37,7 +43,7 @@
  actor_cyrodiilic_subject_interaction_not_cyrodiilic:0 "[actor.GetTitledFirstName]'s [culture|E] is $heritage_cyrodiilic_name$ [heritage|E]"
  actor_cyrodiilic_subject_interaction_not_imperial_legacy:0 "[actor.GetTitledFirstName]'s [culture|E] has the [GetCultureTradition('tradition_imperial_legacy').GetName|V] [tradition|E]"
  actor_cyrodiilic_subject_interaction_no_other_scion:0 "No other [actor.GetCulture.GetHeritage.GetName] [culture|E] is already [GetCultureTradition('tradition_cyrodiilic_subject').GetName|V]"
- actor_cyrodiilic_subject_gains_cultural_rights:0 "Every [actor.GetCulture.GetName] [vassal|E] gains the [GetVassalContractType( 'cultural_rights' ).GetObligationName( 'cultural_rights_protected' )] [vassal_contract|E]"
+ actor_cyrodiilic_subject_gains_cultural_rights:0 "Every [actor.GetCulture.GetName] [vassal|E] gains the [GetSubjectContractType( 'cultural_rights' ).GetObligationName( 'cultural_rights_protected' )] [vassal_contract|E]"
 
  imperial_scion_tradition_loss:0 "Mongrel Dogs of the Empire"
  imperial_scion_tradition_gain:0 "Favored Subjects"
@@ -102,3 +108,4 @@
  purity_arcana_good_1:0 "[GetTrait('arcana_good_1').GetName(ROOT.Char)]"
  purity_arcana_good_2:0 "[GetTrait('arcana_good_2').GetName(ROOT.Char)]"
  purity_arcana_good_3:0 "[GetTrait('arcana_good_3').GetName(ROOT.Char)]"
+ HOF_ASK_FOR_CLAIM_GREAT_HOUSE_HEAD:1 "A [head_of_faith|E] will not grant any claims on [great_house_heads|E]"

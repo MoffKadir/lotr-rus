@@ -23,7 +23,7 @@
  PATRON_TIMEOUT:0 "You cannot select a new patron until [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'recent_patron_selected' ) )]"
  YOUR_PATRON:0 "Your [patron|E]"
  #pantheons
- PATRON_DAEDRIC_PRINCES:0 "#LORE [compendium_daedric_princes]#!"
+ PATRON_DAEDRIC_PRINCES:0 "Daedric Princes"
  show_hide_desc:0 "[Select_CString( GetVariableSystem.Exists('patron_hide_desc'), 'Hide', 'Show' )] Description"
  gain_ardor_effect:0 "You gain $VALUE|+0$ Ardor@ardor_icon!"
  lose_ardor_effect:0 "You lose $VALUE|-0$ Ardor@ardor_icon!"
@@ -56,51 +56,53 @@
  patron_azura_desc:0 "Queen of Dawn and Dusk"
  patron_azura_long_desc:0 "[GetPlayer.Custom('GetObAzuraDesc')]"
  patron_azura_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_azura')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_azura')]\nArdor: [GetPlayer.MakeScope.Var('ardor_azura').GetValue|+0]"
- desc_azura:0 "#LORE [compendium_daedric_prince]#! of Dawn and Dusk, Azura rules over Moonshadow in Oblivion. She is typically depicted as a woman holding a star and cresent moon. Azura is known for the curse that transformed the Chimer into the Dunmer after the Battle of Red Mountain."
+ desc_azura:0 "Daedric Prince of Dawn and Dusk, Azura rules over Moonshadow in Oblivion. She is typically depicted as a woman holding a star and cresent moon. Azura is known for the curse that transformed the Chimer into the Dunmer after the Battle of Red Mountain."
 
  patron_boethiah_name:0 "[GetPlayer.Custom('GetObBoethiahName')]"
  patron_boethiah_desc:0 "Deceiver of Nations"
  patron_boethiah_long_desc:0 "[GetPlayer.Custom('GetObBoethiahDesc')]"
  patron_boethiah_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_boethiah')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_boethiah')]\nArdor: [GetPlayer.MakeScope.Var('ardor_boethiah').GetValue|+0]"
- desc_boethiah:0 "#LORE [compendium_daedric_prince]#! of Plots, Boethiah rules over the Realm of Boethia in Oblivion. She is typically depicted as a warrior - male or female. In the #LORE [compendium_merethic_era]#! Boethiah is aledged to have 'eaten' Trinimac, giving rise to Malacath and the Orcs."
+ desc_boethiah:0 "Daedric Prince of Plots, Boethiah rules over the Realm of Boethia in Oblivion. She is typically depicted as a warrior - male or female. In the Merethic Era Boethiah is aledged to have 'eaten' Trinimac, giving rise to Malacath and the Orcs."
  
  patron_clavicus_name:0 "[GetPlayer.Custom('GetObClavicusName')]"
  patron_clavicus_desc:0 "Master of Insidious Wishes"
  patron_clavicus_long_desc:0 "[GetPlayer.Custom('GetObClavicusDesc')]"
  patron_clavicus_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_clavicus')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_clavicus')]\nArdor: [GetPlayer.MakeScope.Var('ardor_clavicus').GetValue|+0]"
- desc_clavicus:0 "#LORE [compendium_daedric_prince]#! of Trickery and Bargains, Clavicus Vile rules over the Fields of Regret in Oblivion. He is typically depicted as a horned daedra, accompanied by Barbas. This depiction has endured since the #LORE [compendium_merethic_era]#!, being found in cave paintings from the period." #cant actually find anything major he's done prior to the Khanaten Flu, everything is in the future, relative to the start date
+ desc_clavicus:0 "Daedric Prince of Trickery and Bargains, Clavicus Vile rules over the Fields of Regret in Oblivion. He is typically depicted as a horned daedra, accompanied by Barbas. This depiction has endured since the Merethic Era, being found in cave paintings from the period." #cant actually find anything major he's done prior to the Khanaten Flu, everything is in the future, relative to the start date
  
  patron_hermaeus_name:0 "[GetPlayer.Custom('GetObHermaeusName')]"
  patron_hermaeus_desc:0 "Demon of Knowledge"
  patron_hermaeus_long_desc:0 "[GetPlayer.Custom('GetObHermaeusDesc')]"
  patron_hermaeus_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_hermaeus')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_hermaeus')]\nArdor: [GetPlayer.MakeScope.Var('ardor_hermaeus').GetValue|+0]"
- desc_hermaeus:0 "#LORE [compendium_daedric_prince]#! of Forbidden Knowledge, Hermaeus Mora rules over Apocrypha in Oblivion. He is typically depicted as the Wretched Abyss, a swirling mass of eyes and tentacles. Nordic Myth tells that Ysgramor was almost tricked by Hermaeus Mora into becoming an Elf."
+ desc_hermaeus:0 "Daedric Prince of Forbidden Knowledge, Hermaeus Mora rules over Apocrypha in Oblivion. He is typically depicted as the Wretched Abyss, a swirling mass of eyes and tentacles. Nordic Myth tells that Ysgramor was almost tricked by Hermaeus Mora into becoming an Elf."
  
  patron_hircine_name:0 "[GetPlayer.Custom('GetObHircineName')]"
  patron_hircine_desc:0 "Father of Manbeasts"
  patron_hircine_long_desc:0 "[GetPlayer.Custom('GetObHircineDesc')]"
  patron_hircine_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_hircine')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_hircine')]\nArdor: [GetPlayer.MakeScope.Var('ardor_hircine').GetValue|+0]"
- desc_hircine:0 "#LORE [compendium_daedric_prince]#! of the Hunt, Hircine rules over the Hunting Grounds in Oblivion. He is typically depicted as a humanoid figure with the head replaced by the skull of a buck deer."
+ desc_hircine:0 "Daedric Prince of the Hunt, Hircine rules over the Hunting Grounds in Oblivion. He is typically depicted as a humanoid figure with the head replaced by the skull of a buck deer."
  god_hircine_reach_name:0 "Hircine"
  desc_hircine_reach:0 "The Hunt-Father, and one of the most central Great Spirits. Hircine rules over the Realm of Flesh and through harsh lessons teaches the Reachfolk to be forever on guard, honing them in order to protect them. The ultimate self-sacrifice on behalf of your clan - becoming a Briarheart - is a ritual related to Hircine."
  
  patron_jyggalag_name:0 "Jyggalag"
  patron_jyggalag_desc:0 "Prince of Order"
- patron_jyggalag_long_desc:0 "#LORE [compendium_daedric_prince]#! of Order, Jyggalag currently exists in the form of Sheogorath. He is relatively unknown in Tamriel, thus few depictions of him exist. At the end of each Era Jyggalag assumes his original form and restores the Shivering Isles to order."
+ patron_jyggalag_long_desc:0 "Daedric Prince of Order, Jyggalag currently exists in the form of Sheogorath. He is relatively unknown in Tamriel, thus few depictions of him exist. At the end of each Era Jyggalag assumes his original form and restores the Shivering Isles to order."
  
  patron_malacath_name:0 "[GetPlayer.Custom('GetObMalacathName')]"
  patron_malacath_desc:0 "Defender of the Betrayed"
  patron_malacath_long_desc:0 "[GetPlayer.Custom('GetObMalacathDesc')]"
  patron_malacath_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_malacath')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_malacath')]\nArdor: [GetPlayer.MakeScope.Var('ardor_malacath').GetValue|+0]"
- desc_malacath:0 "#LORE [compendium_daedric_prince]#! of the Spurned, Malacath rules over the Ashpit in Oblivion. He is typically depicted as an Orc wielding a sword or axe. Malacath has a dedicated following among the Orcs, with many living by his creed - The Code of Malacath."
+ desc_malacath:0 "Daedric Prince of the Spurned, Malacath rules over the Ashpit in Oblivion. He is typically depicted as an Orc wielding a sword or axe. Malacath has a dedicated following among the Orcs, with many living by his creed - The Code of Malacath."
  god_malacath_reach_name:0 "Malacath"
  desc_malacath_reach:0 "The Lord of Ash and Bone, Malacath is patron to all pariahs and persecuted peoples. His lesson is to grow the strength to exact vengeance upon your oppressors. Some Reachfolk believe they are the true chosen people of Malacath, rather than Orcs and other Goblinken."
+ desc_malahk: "The god-king Malahk swore a blood oath of vengeance against the Velothi gods and their prophet, and chased his enemies to the ashen lands. His children honour this grudge, forever troubling the accursed elves."
+ desc_muluk: "Boss Muluk is the protective big brother of all goblin-ken. An unkind master, he praises the strong and mocks the weak, but is nonetheless quick to anger when his folk are threatened or mistreated."
  
  patron_mehrunes_name:0 "[GetPlayer.Custom('GetObMehrunesName')]"
  patron_mehrunes_desc:0 "Most Puissant Lord"
  patron_mehrunes_long_desc:0 "[GetPlayer.Custom('GetObMehrunesDesc')]"
  patron_mehrunes_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_mehrunes')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_mehrunes')]\nArdor: [GetPlayer.MakeScope.Var('ardor_mehrunes').GetValue|+0]"
- desc_mehrunes:0 "#LORE [compendium_daedric_prince]#! of Destruction, Mehrunes Dagon rules over the Deadlands in Oblivion. He is typically depicted as having four arms with features resembling an Orc. The destruction of Mournhold in the #LORE [compendium_first_era]#! was caused by Mehrunes Dagon." #if someone has a better description, please add it
+ desc_mehrunes:0 "Daedric Prince of Destruction, Mehrunes Dagon rules over the Deadlands in Oblivion. He is typically depicted as having four arms with features resembling an Orc. The destruction of Mournhold in the First Era was caused by Mehrunes Dagon." #if someone has a better description, please add it
  god_mehrunes_reach_name:0 "Mehrunes Dagon"
  desc_mehrunes_reach:0 "Mehrunes Dagon, while a spirit of destruction, is also the Lord of Ambition. To forever strive for the betterment of yourself and your clan is greatly valued in the Reach."
  
@@ -108,19 +110,19 @@
  patron_mephala_desc:0 "Teacher of the Secret Arts"
  patron_mephala_long_desc:0 "[GetPlayer.Custom('GetObMephalaDesc')]"
  patron_mephala_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_mephala')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_mephala')]\nArdor: [GetPlayer.MakeScope.Var('ardor_mephala').GetValue|+0]"
- desc_mephala:0 "#LORE [compendium_daedric_prince]#! of an obscured sphere, Mephala rules over the Spiral Skein in Oblivion. She is typically depicted as a Dunmer woman with the legs of a spider growing from her back, but is known to assume other forms depending on her target."
+ desc_mephala:0 "Daedric Prince of an obscured sphere, Mephala rules over the Spiral Skein in Oblivion. She is typically depicted as a Dunmer woman with the legs of a spider growing from her back, but is known to assume other forms depending on her target."
  
  patron_meridia_name:0 "[GetPlayer.Custom('GetObMeridiaName')]"
  patron_meridia_desc:0 "Lady of Infinite Energies"
  patron_meridia_long_desc:0 "[GetPlayer.Custom('GetObMeridiaDesc')]"
  patron_meridia_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_meridia')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_meridia')]\nArdor: [GetPlayer.MakeScope.Var('ardor_meridia').GetValue|+0]"
- desc_meridia:0 "#LORE [compendium_daedric_prince]#! of Energy and Life, Meridia rules over the Colored Rooms in Oblivion. She is typically depicted as a woman with large feathered wings wearing a robe. She is considered to be one of the more benevolent Princes due to her hatred of the undead."
+ desc_meridia:0 "Daedric Prince of Energy and Life, Meridia rules over the Colored Rooms in Oblivion. She is typically depicted as a woman with large feathered wings wearing a robe. She is considered to be one of the more benevolent Princes due to her hatred of the undead."
  
  patron_molag_name:0 "[GetPlayer.Custom('GetObMolagName')]"
  patron_molag_desc:0 "Harvester of Souls"
  patron_molag_long_desc:0 "[GetPlayer.Custom('GetObMolagDesc')]"
  patron_molag_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_molag')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_molag')]\nArdor: [GetPlayer.MakeScope.Var('ardor_molag').GetValue|+0]"
- desc_molag:0 "#LORE [compendium_daedric_prince]#! of Dominion, Molag Bal rules over Coldharbour in Oblivion. He is typically depicted with the rough form of a satyr and a lamprey like mouth. Also known as the Patriarch of Vampires, dedicated followers maybe rewarded with Pureblood Vampirism" #really really need better description
+ desc_molag:0 "Daedric Prince of Dominion, Molag Bal rules over Coldharbour in Oblivion. He is typically depicted with the rough form of a satyr and a lamprey like mouth. Also known as the Patriarch of Vampires, dedicated followers maybe rewarded with Pureblood Vampirism" #really really need better description
  god_molag_reach_name:0 "Molag Bal"
  desc_molag_reach:0 "The Father of Torment, Molag Bal is a schemer and trickster whose bargain with the Reachfolk is simple: endure. Pain and suffering is inevitable in a harsh world, so resilience is the only way. The clans devoted to the Defiler are in turn exceptionally cruel as well."
  
@@ -128,7 +130,7 @@
  patron_namira_desc:0 "Lady of Decay"
  patron_namira_long_desc:0 "[GetPlayer.Custom('GetObNamiraDesc')]"
  patron_namira_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_namira')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_namira')]\nArdor: [GetPlayer.MakeScope.Var('ardor_namira').GetValue|+0]"
- desc_namira:0 "#LORE [compendium_daedric_prince]#! of Ancient Darkness, Namira rules over the Scuttling Void in Oblivion. She is typically depicted as a woman in a heavy robe. She has a strong association with beggars, granting the Gift of Pity to the Beggar Prince according to the book by the same name."
+ desc_namira:0 "Daedric Prince of Ancient Darkness, Namira rules over the Scuttling Void in Oblivion. She is typically depicted as a woman in a heavy robe. She has a strong association with beggars, granting the Gift of Pity to the Beggar Prince according to the book by the same name."
  god_namira_reach_name:0 "Namira"
  desc_namira_reach:0 "The Spirit Queen, goddess of death and one of the most central Great Spirits. Her realm is the infinite World of Spirit, counterpart to the World of Flesh ruled by Hircine."
  
@@ -136,7 +138,7 @@
  patron_nocturnal_desc:0 "Mistress of Shadows"
  patron_nocturnal_long_desc:0 "[GetPlayer.Custom('GetObNocturnalDesc')]"
  patron_nocturnal_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_nocturnal')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_nocturnal')]\nArdor: [GetPlayer.MakeScope.Var('ardor_nocturnal').GetValue|+0]"
- desc_nocturnal:0 "#LORE [compendium_daedric_prince]#! of Night and Darkness, Nocturnal rules over the Evergloam in Oblivion. She is typically depicted as a woman with two deep black ravens. She is recognized by many thieves as their patron, bringing them luck via the souls of departed Nightingales."
+ desc_nocturnal:0 "Daedric Prince of Night and Darkness, Nocturnal rules over the Evergloam in Oblivion. She is typically depicted as a woman with two deep black ravens. She is recognized by many thieves as their patron, bringing them luck via the souls of departed Nightingales."
  god_nocturnal_reach_name:0 "Nocturnal"
  desc_nocturnal_reach:0 "Nocturnal, Spirit of the Night. An enigmatic deity, Nocturnal is said to be always watching, with crows as her faithful servants."
  
@@ -144,7 +146,7 @@
  patron_peryite_desc:0 "Bringer of Pestilence"
  patron_peryite_long_desc:0 "[GetPlayer.Custom('GetObPeryiteDesc')]"
  patron_peryite_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_peryite')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_peryite')]\nArdor: [GetPlayer.MakeScope.Var('ardor_peryite').GetValue|+0]"
- desc_peryite:0 "#LORE [compendium_daedric_prince]#! of Natural Order, Peryite rules over the Pits in Oblivion. He is typically depicted as a six limbed dragon, despite being one of the weaker Princes. Followers of Peryite consider diseases and other maladies to be a blessing from the Prince."
+ desc_peryite:0 "Daedric Prince of Natural Order, Peryite rules over the Pits in Oblivion. He is typically depicted as a six limbed dragon, despite being one of the weaker Princes. Followers of Peryite consider diseases and other maladies to be a blessing from the Prince."
  god_peryite_reach_name:0 "Peryite"
  desc_peryite_reach:0 "While Peryite is often associated with pestilence, to the Reachfolk clans he is primarily the Lord of Order. While conflict brings the world forward, a natural order must maintain the balance. Disease too, is part of this, as it culls the weak and checks the excesses of men."
  
@@ -152,43 +154,39 @@
  patron_sanguine_desc:0 "Lord of Dark Indulgence" #uesp didn't include an actual title, so made one up
  patron_sanguine_long_desc:0 "[GetPlayer.Custom('GetObSanguineDesc')]"
  patron_sanguine_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_sanguine')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_sanguine')]\nArdor: [GetPlayer.MakeScope.Var('ardor_sanguine').GetValue|+0]"
- desc_sanguine:0 "#LORE [compendium_daedric_prince]#! of Hedonistic Revelry, Sanguine rules over the Myriad Realms of Revelry in Oblivion. He is typically depicted as corpulent dremora holding some form of alcohol. He is considered to be one of the more harmless Princes due to his Sphere."
+ desc_sanguine:0 "Daedric Prince of Hedonistic Revelry, Sanguine rules over the Myriad Realms of Revelry in Oblivion. He is typically depicted as corpulent dremora holding some form of alcohol. He is considered to be one of the more harmless Princes due to his Sphere."
  
  patron_sheogorath_name:0 "[GetPlayer.Custom('GetObSheogorathName')]"
  patron_sheogorath_desc:0 "Comforter of Men"
  patron_sheogorath_long_desc:0 "[GetPlayer.Custom('GetObSheogorathDesc')]"
  patron_sheogorath_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_sheogorath')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_sheogorath')]\nArdor: [GetPlayer.MakeScope.Var('ardor_sheogorath').GetValue|+0]"
- desc_sheogorath:0 "#LORE [compendium_daedric_prince]#! of Madness, Sheogorath rules over the Shivering Isles in Oblivion. He is typically depicted as a man in fine clothes holding a cane. He was originally the Prince of Order, but was cursed to madness by the other Princes as they feared his power."
+ desc_sheogorath:0 "Daedric Prince of Madness, Sheogorath rules over the Shivering Isles in Oblivion. He is typically depicted as a man in fine clothes holding a cane. He was originally the Prince of Order, but was cursed to madness by the other Princes as they feared his power."
  
  patron_vaermina_name:0 "[GetPlayer.Custom('GetObVaerminaName')]"
  patron_vaermina_desc:0 "Weaver of the Panoply"
  patron_vaermina_long_desc:0 "[GetPlayer.Custom('GetObVaerminaDesc')]"
  patron_vaermina_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_vaermina')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_vaermina')]\nArdor: [GetPlayer.MakeScope.Var('ardor_vaermina').GetValue|+0]"
- desc_vaermina:0 "#LORE [compendium_daedric_prince]#! of Dreams, Vaermina rules over Quagmire in Oblivion. She is typically depicted as an older woman wielding a staff, sometimes accompanied by a snake. Her followers are often alchemists, their most notable concoction being Vaermina's Torpor."
+ desc_vaermina:0 "Daedric Prince of Dreams, Vaermina rules over Quagmire in Oblivion. She is typically depicted as an older woman wielding a staff, sometimes accompanied by a snake. Her followers are often alchemists, their most notable concoction being Vaermina's Torpor."
 
  desc_akatosh:0 "Chief among the gods, with mastery over the flow of time. Associated with dragons and the qualities of endurance and virtuous service."
- desc_alduin:0 "Alduin, the World-Eater, is the First-Born among dragons, worshipped as destroyer, renewer, and sometimes rightful master of the world. Known also as the Twilight God for his dominion over the end and beginning of time."
 
  desc_arkay:0 "God of cycles, particularly that of birth and death. Presides over funerals and burial rites, as well as ushering in the changes of the seasons."
- desc_orkey:0 "Serpent God of the Dead and the Old Knocker. Orkey tests all mortals, He likes to start all quarrels. A snake no one can flee, None may fool wary Orkey."
  desc_tuwhacca:0 "Tu'whacca, the Tricky God, is shepherd to the dead. As custodian of the Far Shores he escorts us to them when we die. Prior to the creation of the Walkabout, he was merely the God of Nobody Really Cares."
  desc_arkay_nede:0 "Legends speak of a trader whose passion for secret knowledge brought his doom. His quest had however not gone unnoticed - at his deathbed the Mothers Dibe-Mara-Kin granted him time, time unending to seek his answers. In turn, Ark'ay bring us death, as death too is necessary for life, the neverending cycle."
 
- desc_dibella:0 "Goddess of beauty and art, and one of the most popular of the #LORE [compendium_divines]#!. Widespread cults are dedicated to both healing and sexual instruction."
+ desc_dibella:0 "Goddess of beauty and art, and one of the most popular of the Divines. Widespread cults are dedicated to both healing and sexual instruction."
  desc_dibe_nede:0 "Dibe, the first Mother Around-Us, brings us life from heaven. With her blessing we devote our energies to music, to creation, to love and greater purpose."
  god_dibella_reach_name:0 "Dibella"
  desc_dibella_reach:0 "Revered goddess of passion, carousing and the harvest. The 'Matron of Joy' is often invoked by the faithful in merry occasions and festivals of harvest. In a world dominated by the benevolent but rather cruel Hircine, Dibella provides a much welcome harbour of happiness."
 
  desc_julianos:0 "God of logic, wisdom, and the arts of magic. His temples act as educational institutions in literature, history, and law."
- desc_jhunal:0 "The Rune God represented by an owl. God of hermetic orders, knowledge and wisdom, who has fallen out of favour."
 
  desc_kynareth:0 "Goddess of the heavens, winds, and rain. Patron of sailors and travelers, and often propitiated for good fortune in life."
- desc_kyne:0 "Goddess of the Storm. Widow of #LORE [compendium_shor]#! and favored god of warriors. She is often called the Mother of Men. Her daughters taught the first Nords the use of the thu'um, or Storm Voice."
  desc_tava:0 "Tava, the hawkheaded Bird God, holds domain over the wind, weather and skies above, besides the stars. She is patron to sailors and mariners, and led the Warrior Waves to Tamriel upon the loss of Old Yokuda."
  desc_kin_nede:0 "Kin, the third Mother Around-Us, bring us life from water. With her blessing we are spared the terrible storm, yet gifted the wind in our sails."
 
  desc_mara:0 "Goddess of love, compassion, and the bounty of nature. Presides over marriage ceremonies, befitting her ancient origins as a fertility goddess."
- desc_morwha:0 "Morwha, the Teat God, is the goddess of fertility and family. While considered the wife of Tall Papa, her four arms forever grasp for more husbands, and four breasts forever nurse more children."
+ desc_morwha: "Morwha, the Teat God, is the goddess of fertility and family. With her four arms she forever protects her family, and her four breasts forever nurse more children."
  desc_mara_nede:0 "Mara, the second Mother Around-Us, brings us life from earth. With her blessing we toil the fields to grow produce, and from our flesh we multiply and again bring life."
  god_mara_reach_name:0 "Mara"
  desc_mara_reach:0 "None is beyond the reach of the Forgiving Mother, goddess of the hearth and medicine. Reachfolk devoted to Mara are found in all clans, most taking up occupations as healers, teachers or arbiters, tempering — but not eliminating — the trials of Hircine."
@@ -196,7 +194,8 @@
  desc_stendarr:0 "God of mercy, justice, and righteousness. Patron of all those who wield righteous might to protect the weak, from emperors to holy warriors."
  god_stendarr_bosmer_name:0 "Stendarr"
  desc_stendarr_bosmer:0 "A most merciful god, devotees of Stendarr strive to emulate him by tending to the poor and downtrodden while striking down evildoers in the name of justice."
- desc_stuhn:0 "Stuhn, the Whale God of Ransom, brother of Tsun and Shield-Thane of #LORE [compendium_shor]#!. He taught us the benefits of ransom and taking prisoners of war."
+ god_stendarr_mer_name: "Stendarr"
+ desc_stendarr_mer: "Stendarr is the god of mercy and protector of all mortals, a role that has earned him a reputation as the Apologist of Men. His followers both offer aid to the wounded and suffer no abominations to live."
 
 #  patron_talos_name:0 "Talos"
 #  patron_talos_desc:0 "Hero-God of Mankind"
@@ -207,20 +206,17 @@
  desc_leki:0 "Leki, God of Aberrant Swordsmanship, is invoked when breaking ties and passing fair judgement. While sword-singers may perfect the Best Known Cuts, the Saint of the Spirit Sword can devise cunning counters to them all."
 
  desc_zenithar:0 "God of work, commerce, and wealth, invoked for success in business ventures. Teaches prosperity through honest industry, rather than violence or deceit."
- patron_tsun_name:0 "Tsun"
- desc_tsun:0 "Dead God of trials against adversity. He died defending #LORE [compendium_shor]#! from foreign gods, with his death remembered as bringing about the current world."
  desc_zeht:0 "Zeht, God of agriculture and mathematics. A forsaken son of Tall Papa and forsaking father of the water goddess Zeqqi, this family quarrel is said to be the cause of famine and drought."
  desc_zen_nede:0 "A curiosity among Aedric faiths, Z'en is considered chief of the Gods by the Nedes. A bartering God, his foremost teachings are as follows: all trades must be fair, all gifts passed along, all debts repaid, and all slights avenged."
 
- desc_shezarr:0 "#LORE [compendium_shezarr]#!, spirit of Human Undertaking, particularly against Aldmeri Aggression. Patron of the Imperial Battlemages, but since less popular due to the cosmopolitan nature of the Cult."
- desc_shor:0 "#LORE [compendium_shor]#!, Dead God of the Underworld. Ruler of sovngarde and dead chief of the Gods. Long time warrior-king of the Nords before foreign gods brought about his demise, dooming him to Sovngarde."
- desc_sep:0 "#LORE [compendium_sep]#!, the Second Serpent. Driven mad by the hunger of Satakal, Sep convinced the gods to create the mortal world as an easier alternative to the Walkabout. For this he was punished by Ruptga, but his mad hunger lives on among the stars."
- desc_lorkh:0 "#LORE [compendium_lorkh]#!, spirit of Man. It was Lorkh who convinced Namira the Spirit Queen to allow him the creation of a realm for wayward spirits - the Mortal Realm, for which he sacrificed himself. Yet he walks among mortals and in times of great need will again reveal himself."
- desc_lorkh_nede:0 "#LORE [compendium_lorkh]#!, the Trickster-Warrior, who through clever words and forceful expression of will caused the formation of our home in the Around-Us. When Lorkh sacrificed himself during Creation, Z'en took the reins as chief of the Gods. While dead his Heart lives on within us."
- desc_lorkhaj:0 "#LORE [compendium_lorkhaj]#!, the Moon Prince and Moon Beast. Considered both Sky Spirit and Dark Spirit, Lorkhaj was the final child of Fadomai, born in the Great Darkness. His Heart filled by the Great Darkness, he tricked his siblings when creating a place for the children of Nirni - trapping them there."
+ desc_shezarr:0 "Shezarr, spirit of Human Undertaking, particularly against Aldmeri Aggression. Patron of the Imperial Battlemages, but since less popular due to the cosmopolitan nature of the Cult."
+ desc_sep:0 "Sep, the Second Serpent. Driven mad by the hunger of Satakal, Sep convinced the gods to create the mortal world as an easier alternative to the Walkabout. For this he was punished by Ruptga, but his mad hunger lives on among the stars."
+ desc_lorkh:0 "Lorkh, spirit of Man. It was Lorkh who convinced Namira the Spirit Queen to allow him the creation of a realm for wayward spirits - the Mortal Realm, for which he sacrificed himself. Yet he walks among mortals and in times of great need will again reveal himself."
+ desc_lorkh_nede:0 "Lorkh, the Trickster-Warrior, who through clever words and forceful expression of will caused the formation of our home in the Around-Us. When Lorkh sacrificed himself during Creation, Z'en took the reins as chief of the Gods. While dead his Heart lives on within us."
+ desc_lorkhaj:0 "Lorkhaj, the Moon Prince and Moon Beast. Considered both Sky Spirit and Dark Spirit, Lorkhaj was the final child of Fadomai, born in the Great Darkness. His Heart filled by the Great Darkness, he tricked his siblings when creating a place for the children of Nirni - trapping them there."
  desc_tseol:0 "The wily fox-god of Laws, Loopholes, and Doomed Undertakings who gifted the Lilmothiit his form in the ancient past. He taught his students the three impossible lessons: Winning-While-Losing, Stretching-the-Drumskin, and Leaving-but-Remaining; then made his way North to be slain, and to come back."
  desc_sheor:0 "God of perseverance, hope, and willfulness. Watches over the troubled and misfortunate, and called on during uncertain times to soften life's injustices. Once a hated god of all strife, now restored to his ancient, uncorrupted self."
- desc_lorkhan:0 "#LORE [compendium_lorkhan]#! created Mundus as a proving grounds: an act that some would detest, while others would celebrate. Through overcoming the tribulations of mortality and striving forward at all times, he has given us an opportunity to temper ourselves into brilliance and splendor, to know joy and grief, and learn true beauty."
+ desc_lorkhan:0 "Lorkhan created Mundus as a proving grounds: an act that some would detest, while others would celebrate. Through overcoming the tribulations of mortality and striving forward at all times, he has given us an opportunity to temper ourselves into brilliance and splendor, to know joy and grief, and learn true beauty."
 
  desc_auriel:0 "[GetPlayer.Custom('GetAurielVerse')]"
  normal_desc_auriel:0 "King of the Aldmer, war-leader during the War of Manifest Metaphors, who then achieved Praxis, returning to Aetherius through the Sun, in full observance of the first of the Aldmer, so they could follow."
@@ -228,15 +224,17 @@
  god_auriel_bosmer_name:0 "Auri-El"
  desc_auriel_bosmer:0 "Acknowledged as the 'King of the Gods', Auri-El maintains the stability of time. Many bloodlines trace their origins back to him, and will seek his intercession to obtain a better 'now' from Y'ffre."
 
- desc_jephre:0 "[GetPlayer.Custom('GetJephreVerse')]"
- normal_desc_jephre:0 "God of the Forest, the Storyteller, spirit of the "now", who made the stars sway in the wake of his symphony, turned himself into the Earth Bones and established the laws of nature for all to follow."
- poet_desc_jephre:0 "Praise we now Jephre\nO first Ehlnofey\nGod of the forest\nEarth Bones showed the way"
+ desc_jephre:0 "God of the Forest, the Storyteller, spirit of the "now", who made the stars sway in the wake of his symphony, turned himself into the Earth Bones and established the laws of nature for all to follow."
+ normal_desc_yffre:0 "God of the Forest, the Storyteller, spirit of the "now", who made the stars sway in the wake of his symphony, turned himself into the Earth Bones and established the laws of nature for all to follow."
+ poet_desc_yffre:0 "Praise we now Y'ffre\nO first Ehlnofey\nGod of the forest\nEarth Bones showed the way"
+ god_yffre_altmer_name:0 "Y'ffre"
+ desc_yffre_altmer:0 "[GetPlayer.Custom('GetJephreVerse')]"
 
  desc_yffre:0 "Paramount God of the Bosmer, his Green Pact is credited with giving them a finite form, far from their Changeling past. Widely worshipped, his sphere of growth, and natural cycles make him a natural fit for the denizens of Valenwood."
 
  desc_magnus:0 "[GetPlayer.Custom('GetMagnusVerse')]"
  normal_desc_magnus:0 "God of Magic, Sun God, Sorceror-King. Known as the Architect of Mundus, as he created the schematics and diagrams needed to construct it, but fled to Aetherius before its completion, bringing the Magna-Ge with him."
- poet_desc_magnus:0 "Praise we now #LORE [compendium_magnus]#!\nThe Sorceror-King\nGives us his magic\nNirn under his wing"
+ poet_desc_magnus:0 "Praise we now Magnus\nThe Sorceror-King\nGives us his magic\nNirn under his wing"
  
  desc_phynaster:0 "[GetPlayer.Custom('GetPhynasterVerse')]"
  normal_desc_phynaster:0 "The cult of the Hero-God of the Summerset Isles, while not formally part of the Aldmeri Pantheon, still persists throughout the province and beyond. He is famous for teaching the Altmer to extend their lives a hundred more years, simply by shortening their stride."
@@ -249,7 +247,7 @@
 
  desc_trinimac:0 "[GetPlayer.Custom('GetTrinimacVerse')]"
  poet_desc_trinimac:0 "Oh, Fallen Paragon\nWielder of Penitent\nJustice to bear upon\nthe Mortal Offence"
- normal_desc_trinimac:0 "A prominent god of early Aldmer, often depicted holding Penitent, his sword, Trinimac is known to be the champion of the Revered Ancestors. He was in the front line in the battle against #LORE [compendium_lorkhan]#! and ripped his heart out with more than hands."
+ normal_desc_trinimac:0 "A prominent god of early Aldmer, often depicted holding Penitent, his sword, Trinimac is known to be the champion of the Revered Ancestors. He was in the front line in the battle against Lorkhan and ripped his heart out with more than hands."
 
  desc_xarxes:0 "[GetPlayer.Custom('GetXarxesVerse')]"
  poet_desc_xarxes:0 "Praise we now Xarxes\nWho transcribes our story\nHonor the scrivener\nArchivist of glory"
@@ -257,7 +255,7 @@
 
  desc_xen:0 "[GetPlayer.Custom('GetXenVerse')]"
  poet_desc_xen:0 "Bountiful Xen\nBless our plows\nSeeds sowed again\nHeed our bows"
- normal_desc_xen:0 "An aspect of Aurbis, like the other #LORE [compendium_aedra]#!, he's the God of Toil, vengeance, agriculture and payment in kind. Some consider him to be a foreign god, but the Altmer worship him like any other of their ancestors."
+ normal_desc_xen:0 "An aspect of Aurbis, like the other Aedra, he's the God of Toil, vengeance, agriculture and payment in kind. Some consider him to be a foreign god, but the Altmer worship him like any other of their ancestors."
  desc_zen:0 "Z'en assumes the mantle of God of Toil, vengeance and payment in kind. Invoked in the face of arduous tasks, he lightens his supplicant's burden, patronises vendettas and grants victory in battle."
  
  # Dwemer Ancestors
@@ -269,16 +267,29 @@
  
  desc_da_lost_king:0 "The Lost King still wanders the land, protecting it until his people come back. His determination and unfaltering resolution teaches us to be brave even when alone."
  
- # Atmoran Totems
- desc_bear:0 "The mighty and fierce Bear who's strength rumbles the earth. All fear and respect the Bear, mighty master of battle."
- desc_dragon:0 "The Dragon, mighty steward of time and embodiment of the Allfather. The firstborn of the void, the Dragon is the figurehead of rulership and the patron spirit animal of our Lords."
- desc_fox:0 "The small Fox, who can look gentle and innocent, but is also known to be fierce against his enemies."
- desc_hawk:0 "The highborn Hawk, she who rules the skies and flies with the winds. No animal is more noble than she, and when she speaks all listen."
- desc_moth:0 "The Ancestor Moth, wise and knowledgable. It is from the Silk of the Ancestor Moth that the scrolls of our lives are formed, and from their fluttering flows the winds of our peoples magicks."
- desc_owl:0 "The wise Owl, who guides us in our quest for knowledge. Guardian of the old magical arts, he is the spirit of the powerful forces that rule this world."
- desc_snake:0 "The cunning Snake, who slithers on the ground and hides from greater beasts, ready to strike when the occasion presents itself. One bite is all she needs to take down her target, and she disappears before anyone understands what happened."
- desc_whale:0 "The Whale, long-lived leviathan of the oceans who's heart beats with the waves. The Whale watches our lives from it's watery deep, witnissing all that we do and when all is said and done it is the Whale that guides our souls to the afterlife."
- desc_wolf:0 "The Wolf, she who hunts in pack and makes sure none gets left behind. Fierce to protect her children, and ready to attack should her pack be threatened."
+#Atmoran Totems
+ desc_bear: "The mighty Bear, whose strength shakes the earth. All fear and respect the great master of battle."
+ desc_dragon: "The Dragon, who will consume the world and must be kept asleep through our efforts."
+ desc_fox: "The clever Fox, who is not as he appears. He is cunning and swift, known to be fierce against his enemies."
+ desc_hawk: "The noble Hawk, she who rules the skies and commands the storm. When she speaks, all listen."
+ desc_moth: "The mother Moth, whose gentle hunger demands our nightly devotion. Her song, carried far by fluttering wings, holds her secrets and invites the faithful to pay her homage."
+ desc_owl: "The wise Owl, who guides us in our quest for knowledge. Guardian of the old magical arts, he is the spirit of the powerful forces that rule this world."
+ desc_snake: "The cunning Snake, who lies in wait, ready to strike when the opportunity arises. One bite is all he needs to claim his prey when their time comes."
+ desc_whale: "The Whale, whose heart beats with the waves. He witnesses all that we do, and when all is said and done, it is the Whale that guides our souls to the afterlife."
+ desc_wolf: "The Wolf, she who leads the pack and ensures that none are left behind. She shows her children the way of the mighty hunter, teaching them to protect the pack and keep the peace that keeps them safe."
+ desc_hare: "The solitary Hare, who roams the dark woods in search of the secrets of the world. He tempts those who would follow his tracks with the promise of hidden knowledge."
+#Nord gods
+ desc_kyne: "The Warrior Widow of Shor, goddess of storm and breath, and the chieftess of the Nordic Pantheon. It is said that men were created when Kyne first exhaled upon the land."
+ god_dibella_nord_name: "Dibella"
+ desc_dibella_nord: "Dibella, goddess of love and beauty, the youngest of Shor's wives. She taughts the Nords the arts of music, feasting and sexuality."
+ god_mara_nord_name: "Mara"
+ desc_mara_nord: "Mara, goddess of family, handmaiden of Kyne. Her pity is endless and especial, for she strives for harmony and cooperation among the Nords."
+ desc_jhunal:0 "The Rune God represented by an owl. God of hermetic orders, knowledge and wisdom, who has fallen out of favour."
+ desc_stuhn:0 "Stuhn, the Whale God of Ransom, brother of Tsun and Shield-Thane of Shor. He taught us the benefits of ransom and taking prisoners of war."
+ desc_tsun:0 "Dead God of trials against adversity. He died defending Shor from foreign gods, with his death remembered as bringing about the current world."
+ desc_shor: "Shor, dead god of Sovngarde and warrior-king of the ancient men. He led the Nords in battle against foreign gods, which brought about his demise. "
+ desc_alduin:0 "Alduin, the World-Eater, is the First-Born among dragons, worshipped as destroyer, renewer, and sometimes rightful master of the world. Known also as the Twilight God for his dominion over the end and beginning of time."
+ desc_orkey:0 "Serpent God of the Dead and the Old Knocker. Orkey tests all mortals, He likes to start all quarrels. A snake no one can flee, None may fool wary Orkey."
  
  # Elemental Gods
  desc_ilni:0 "Ilni flutters her colorful fan\nAnd so blows toward the West"
@@ -300,26 +311,24 @@
  desc_rc_reman:0 "When the Son of the East came to Hammerfell, some expressed shock that the spirit of Hunding did not manifest to Make Way. But all right-thinkers know this is a falsity. Reman himself made our way."
  god_ch_bendu_name:0 "Bendu Olo"
  desc_ch_bendu:0 "The Admiral-King teaches us that it is our utmost duty to unite and lead both our brethren and our enemies when our land is threatened."
- god_ch_attrebus_name:0 "Attrebus 'the General'"
- desc_ch_attrebus:0 "A lone light against oppression, Attrebus followed the steps of the other heroes of Cyrodiil and fought against overwhelming odds, freeing us from another invader."
 
  # Thousand Cults
  god_tc_aka_name:0 "Cult of Aka"
  desc_tc_aka:0 "The Cult of Aka praises the Dragon-Made-Whole in all its manifestations, and venerates dragons as the blessed offspring of Akatosh, servants who protect the Dragonfires and whose Jill-flights restore broken time."
  god_tc_missing_name:0 "Cult of the Missing"
- desc_tc_missing:0 "The Cult of the Missing champions a dogged devotion towards the #LORE [compendium_missing_god]#! and his incarnations, heroes of Man known as Shezarrines, some of which are known by names such as Pelinal, Hans the Fox, and Ysmir."
+ desc_tc_missing:0 "The Cult of the Missing champions a dogged devotion towards the Missing God and his incarnations, heroes of Man known as Shezarrines, some of which are known by names such as Pelinal, Hans the Fox, and Ysmir."
  god_tc_land_name:0 "Cult of the Land"
- desc_tc_land:0 "The Cult of the Land believes that the Reman emperors were descended in a literal sense from the land Cyrod and the spirit of Alessia, herself ascended as Mother Cyrodiil once she took her place as #LORE [compendium_shezarr]#!'s bride, Nir."
+ desc_tc_land:0 "The Cult of the Land believes that the Reman emperors were descended in a literal sense from the land Cyrod and the spirit of Alessia, herself ascended as Mother Cyrodiil once she took her place as Shezarr's bride, Nir."
  god_tc_moth_name:0 "Cult of the Ancestor Moth"
  desc_tc_moth:0 "The Cult of the Ancestor Moth is a silent, pietistic sect that practices great deference to the Moth Priests, believing that the ancestor-moths speak to them the words of the long-dead ancestors, so long as the Arkayn Cycle is kept."
  god_tc_beasts_name:0 "Cult of God-Beasts"
- desc_tc_beasts:0 "The Cult of God-Beasts cannot be traced to a single source, but combines veneration of minotaurs as the children of Morihaus and thus breed of Kynareth, ancient Nibenese totem animals, and Nordic animal interpretations of the #LORE [compendium_divines]#!."
+ desc_tc_beasts: "The Cult of God-Beasts cannot be traced to a single source, but combines veneration of minotaurs as the children of Morihaus and thus breed of Kynareth, ancient Nibenese totem animals, and Nordic animal interpretations of the Divines."
  god_tc_love_name:0 "Cult of Love"
  desc_tc_love:0 "The Cult of Love descends from the ancient, eastern rite of the Diblashuut, tempered in its carnal tendencies through the myths of the Mother Mara, who sublimates passion into love."
  god_tc_guilds_name:0 "Cult of Guilds"
- desc_tc_guilds:0 "The Cult of Guilds is a recent one, influenced by caste rituals from Akavir but not itself native to it. Claiming Stendarr as its patron of law and Zenithar as its patron of lucre, the cult finds fertile soil among worshippers of the #LORE [compendium_divines]#!."
+ desc_tc_guilds:0 "The Cult of Guilds is a recent one, influenced by caste rituals from Akavir but not itself native to it. Claiming Stendarr as its patron of law and Zenithar as its patron of lucre, the cult finds fertile soil among worshippers of the Divines."
  god_tc_heavens_name:0 "Cult of the Heavens"
- desc_tc_heavens:0 "The Cult of the Heavens is a syncretic congregation that descends from ancient Nedic star-worship, but in the place of forbidden and excised names of the Magna-Ge has turned to various deities associated with the skies, from Azura to #LORE [compendium_magnus]#! to the moons themselves."
+ desc_tc_heavens:0 "The Cult of the Heavens is a syncretic congregation that descends from ancient Nedic star-worship, but in the place of forbidden and excised names of the Magna-Ge has turned to various deities associated with the skies, from Azura to Magnus to the moons themselves."
 
  # Riddle'thar
  desc_azurah:0 "Sister to Nirni, Azurah is the goddess upon which the Khajiiti dwell, attributing to her both their current form and the mysterious tie between them and the Lunar Lattice."
@@ -327,13 +336,13 @@
  desc_magrus:0 "Known as the god of the sun and sorcery, the Cat's Eye made a sacrifice to Azurah and her children that makes possible the miracle of dawn and dusk."
  desc_hermorah:0 "The Tide-King is said to live within a vast library beneath the waves, where he records everything he has witnessed. His knowledge is likened to tearing the mind apart like the "most potent skooma"."
  desc_rt_hircine:0 "God of hunting and skin-changing, revered for his fierceness and cunning, the Hungry Cat is the father of Nirni's first litter, who were "as changeable as the Moons"."
- desc_nirni:0 "Mother of all mortal life in the Mundus, the Jealous Sister is one of the children of Fadomai's third litter, along with Jone, Jode, Azura and #LORE [compendium_lorkhaj]#!."
+ desc_nirni:0 "Mother of all mortal life in the Mundus, the Jealous Sister is one of the children of Fadomai's third litter, along with Jone, Jode, Azura and Lorkhaj."
  desc_alkosh:0 "One of the earliest gods among the Khajiit, being also named the First Cat, Alkosh bestowed upon the catfolk the gift of strength and wards all Khajiit from danger."
  desc_boethra:0 "A sharp-tongued ancestor spirit and a teacher of the old ways, the Wandering Spirit Boethra is the patron of warriors and rebellious exiles."
  desc_baandar:0 "The Bandit God, the Pariah, a trickster spirit that is also a powerful force that shapes the land and lives of the people in its wake."
  desc_srendarr:0 "The God of Mercy is commonly associated with compassion, charity and justice. Because he was the last and weakest of the first litter of Fadomai and Ahnurr, he is also known as "the Runt"."
  desc_mafala:0 "Known to be the recorder of hidden guilt and eternal shame, also considered an ancestor spirit and a teacher of the old ways."
- desc_noctra:0 "Born from the black blood of #LORE [compendium_lorkhaj]#! at the steps of the Void Gate, Noctra's name is whispered for silence, shade, and luck."
+ desc_noctra:0 "Born from the black blood of Lorkhaj at the steps of the Void Gate, Noctra's name is whispered for silence, shade, and luck."
 # Not Riddle'thar but other Daedra mentioned in Khajiiti myth
  desc_sangiin:0 "A spirit who tests the Khajiit on the Path, the Blood Cat tempts you to embrace the urges of blood."
  desc_sheggorath:0 "A spirit who tests the Khajiit on the Path, the Skooma Cat causes you to doubt your thoughts and actions."
@@ -352,7 +361,7 @@
  god_fg_notorgo_name:0 "Notorgo"
  desc_fg_notorgo:0 "Notorgo, God of messengers and travellers, makes his presence felt more than known. Commemorated in no scripture, he is regardless manifest in the trade-winds, in ancient waystones rubbed for safe travels, and sometimes his name is inscribed in the first brick laid down in a road."
  god_fg_raen_name:0 "Raen"
- desc_fg_raen:0 "Raen, God of agriculture, taught us how to farm crops and domesticate livestock in the #LORE [compendium_dawn_era]#!, but has remained with us since. Some believe that he taught us to name the months, and which works must be done in which season."
+ desc_fg_raen:0 "Raen, God of agriculture, taught us how to farm crops and domesticate livestock in the Dawn Era, but has remained with us since. Some believe that he taught us to name the months, and which works must be done in which season."
  god_fg_vigryl_name:0 "Vigryl"
  desc_fg_vigryl:0 "Vigryl, God of sailors and ships, is spurned and forgotten throughout Tamriel. But it matters little to him, for all who are caught in a terrible storm at sea find themselves uttering a prayer to him, whatever name they call him."
  god_fg_shandar_name:0 "Shandar"
@@ -374,11 +383,11 @@
  god_mg_mnemoli_name:0 "Mnemo-Li"
  desc_mg_mnemoli:0 "Mnemo-Li, the Blue Coruscation. On turning her back on Mundus she became the sole goddess with knowledge and power over un-time. She perceives times that were not, and secret invocations of her are connected to unspeakable rituals to create untrackable, broken periods of time."
  god_mg_xerolyg_name:0 "Xero-Lyg"
- desc_mg_xerolyg:0 "Xero-Lyg, the Red Coruscation. On fleeing the treachery of #LORE [compendium_lorkhan]#! she became the lady that walks the un-spaces, places adjacent and unreal and those removed from Tamriel only by happenstance of reality. Xero-Lyg's name is invoked in studying these transkalpic geographies."
+ desc_mg_xerolyg:0 "Xero-Lyg, the Red Coruscation. On fleeing the treachery of Lorkhan she became the lady that walks the un-spaces, places adjacent and unreal and those removed from Tamriel only by happenstance of reality. Xero-Lyg's name is invoked in studying these transkalpic geographies."
  god_mg_meridia_name:0 "Merid-Nunda"
- desc_mg_meridia:0 "Merid-Nunda, the Yellow Coruscation, first daughter of #LORE [compendium_magnus]#!. Some believe that she represents the desires of the Magna-Ge to steward the living energies that arose from the designs of Magnus. Rumours that Merid-Nunda is a long dead star or has burned into something else entirely, are sometimes heard in whisper."
+ desc_mg_meridia:0 "Merid-Nunda, the Yellow Coruscation, first daughter of Magnus. Some believe that she represents the desires of the Magna-Ge to steward the living energies that arose from the designs of Magnus. Rumours that Merid-Nunda is a long dead star or has burned into something else entirely, are sometimes heard in whisper."
  god_mg_magnus_name:0 "Magnus"
- desc_mg_magnus:0 "#LORE [compendium_magnus]#!, the Architect, is king and father of the Magna-Ge. His expansive mind conceived all structure in Mundus, and but also resolved to abandon it for what it was. Despite his escape his face is turned at all times towards the creation he cannot forget, and Magicka comes down to us from his abode in Aetherius."
+ desc_mg_magnus:0 "Magnus, the Architect, is king and father of the Magna-Ge. His expansive mind conceived all structure in Mundus, and but also resolved to abandon it for what it was. Despite his escape his face is turned at all times towards the creation he cannot forget, and Magicka comes down to us from his abode in Aetherius."
 
 # Ten Ancestors/Ilpenada
  god_ta_meridia_name:0 "Merid-Nunda"
@@ -421,13 +430,20 @@
  desc_olms:0 "The Dunmeri Patron of Chandlers and Clerks was the founder of the Ordinators, and was responsible for the conceiving and articulating the fundamental principles of testing, ordeal, and repentance."
  desc_rilms:0 "The Dunmeri patron saint of Pilgrims and Beggars gave away her shoes, then dressed and appeared as a beggar to better acquaint herself with the poor."
  desc_seryn:0 "The Dunmeri Patron Saint of Brewers, Bakers, and Distillers could heal all diseases at the price of taking the disease upon herself. Tough-minded and fearless, she took on the burdens of others and bore those burdens to an honored old age."
- desc_veloth:0 "The Dunmeri Patron Saint of Outcasts and Seekers of Spiritual Knowledge was a Chimer mystic hailing from the Summerset Isles, either during the #LORE [compendium_dawn_era]#! or Late Middle #LORE [compendium_merethic_era]#!. He is best known as the father of the Dunmer race, when he and his followers split from their Aldmeri roots and migrated en masse to their new homeland called Resdayn, now known as Morrowind."
+ desc_veloth:0 "The Dunmeri Patron Saint of Outcasts and Seekers of Spiritual Knowledge was a Chimer mystic hailing from the Summerset Isles, during the Late Middle Merethic Era. He is best known as the father of the Dunmer race, when he and his followers split from their Aldmeri roots and migrated en masse to their new homeland called Resdayn."
  desc_vorys:0 "The Dunmeri Patron Saint of Wizards and Scholars was a powerful mage that led a life of solitude in the pursuit of wisdom and mastery. Despite having little social experience, he was known to be a close confidant to Seht himself."
  desc_llothis:0 "The Dunmeri Patron Saint of tailors and dyers formulated the central rituals and principles of the New Temple Faith. He is known as the symbolic mortal bridge between the gods and the faithful, and the archetypal priest."
 
- #  PATRON_PASSIVE_MISSION:0 "Divine Mission"
- #  dagoth_the_sharmat:0 "Did you ever hear the tragedy of Dagoth Ur The Sharmat? I thought not. It's not a story the Tribunal would tell you. It's a Sixth House legend. Dagoth Ur was the High Councilor of House Dagoth, so powerful and so wise he could use the Tools to influence the Heart to become a god… He had such a knowledge of the Heart, he could even keep himself from dying. The Heart of #LORE [compendium_lorkhan]#! is a pathway to many abilities some consider to be divine. He became so powerful… the only thing he was afraid of was facing the Nerevarine, which eventually, of course, he did. Unfortunately, he welcomed the Nerevarine to the Heart Chamber, then the Nerevarine used the Tools on the Heart. Ironic. He could keep the Tribunal from The Heart, but was kept himself."
- 
+#Reman
+ desc_light_of_man: "Reman, the Light of Man, defeated the Akaviri invaders and then built the greatest empire the world has ever seen with them."
+ desc_the_cyrodiil: "Reman, the Cyrodiil, brought peace to the Heartlands and united its people, becoming one with the land in the process."
+ desc_worldly_god: "Reman, the Worldly God, is the god of mortals, the union of the divine and the mundane; born as a mortal, he ascended to godhood on his death due to his great achievements."
+
+#Trinimac
+ desc_paragon: "Trinimac, the Paragon, represents the true ideals of our people — strengh and unity."
+ desc_gold_champ: "Trinimac, the Golden Champion, is the god-king of our people, and through his leadership, we are united."
+ desc_blade_of_courage: "Trinimac, the Blade of Courage, remembers the evil done to him and his people and will not forget."
+
  action_pick_patron:0 "Choose a Patron"
  action_pick_patron_label:0 "$action_pick_patron$"
  action_pick_patron_desc:2 "You have no patron.\n\n#help Your [faith|E] has patron traits. Each trait gives you a bonus of some form.#!"

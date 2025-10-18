@@ -8,9 +8,11 @@
  MARRIAGE_HEIRESS_MATRILINEAL_REASON:0 "[secondary_recipient.GetShortUIName|U] is an heiress and [recipient.GetShortUIName|U] would prefer a [matrilineal|E] marriage: $VALUE|+0$"
  MARRIAGE_MONSTER_REASON:0 "Will not marry a [monster|E]: $VALUE|+0$"
  MARRIAGE_FORMER_PARIAH_REASON:0 "Will not marry a former [pariah|E]: $VALUE|+0$"
- MARRIAGE_CRYSTAL_TOWER_REASON:0 "[GetBuilding('crystal_tower_01').GetName]: #P +10#!"
+ MARRIAGE_CRYSTAL_TOWER_REASON:0 "[GetBuilding('crystal_tower_01').GetName]: $VALUE|+0$"
+ MARRIAGE_SEXUALITY_REASON:0 "Sexuality mismatch: $VALUE|+0$"
  #RELIGION
  ASK_FOR_CONVERSION_CROWN_FOREBEAR:0 "[recipient.GetCulture.GetName|E] dislikes your [actor.GetCulture.GetName] ways: $VALUE|+0$."
+ ORDINATION_OF_WAR_REASON: "$tradition_ordination_of_war_name$: $VALUE|=+0$"
  #MISC
  summoned_undead:0 "Summoned Undead"
 
@@ -25,9 +27,10 @@
  extract_blood_price_effect_no_reason_tooltip:0 "As you do not have an imprisonment or execution reason against [prisoner.GetFirstName], the blood price will be low."
  small_blood_price_modifier:0 "Paid the Blood Price"
  small_blood_price_modifier_desc:0 "This character had to pay the Blood Price to be freed from imprisonment. Fortunately for them, their crime was not significant, and they have been able to escape with only a small portion of their blood being taken."
- extract_blood_price_effect_imprisonment_reason_tooltip:0 "As you have an imprisonment reason against [prisoner.GetFirstName], the blood you will extract will wound [prisoner.GetHerHim]."
- extract_blood_price_effect_execution_reason_tooltip:0 "As you have an execution reason against [prisoner.GetFirstName], you will extract a heavy price."
- extract_blood_price_effect_survival_release_tooltip:0 "If [prisoner.GetFirstName] survives [prisoner.GetSheHe] will be released from prison."
+ extract_blood_price_effect_imprisonment_reason_tooltip:0 "As you have an imprisonment reason against [prisoner.GetFirstName], the blood you will extract will wound [prisoner.GetHerHim]"
+ extract_blood_price_effect_execution_reason_tooltip:0 "As you have an execution reason against [prisoner.GetFirstName], you will extract a heavy price — maiming or even killing [prisoner.GetHerHim]"
+ extract_blood_price_effect_survival_release_tooltip:0 "If [prisoner.GetFirstName] survives [prisoner.GetSheHe] will be released from prison"
+ extract_blood_price_execution:0 "As you have an execution reason against [prisoner.GetFirstName], you would be justified in extracting a #bold very#! heavy price - executing them"
 
  ###Disrupt Arcana Interaction
  recently_disrupted:0 "Recently Disrupted"
@@ -81,27 +84,29 @@
  adopt_hatchling_interaction.tt:0 "[recipient.GetShortUINameNoTooltip] will leave the prison and be adopted as your [recipient.Custom('GetDaughterSon')]"
 
  no_obligations:0 "No Obligations"
- no_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_none' )]"
+ no_obligations_tt:0 "[vassal_contract] starts with [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_none' )]"
  CONTRACT_NO_OBLIGATIONS_REASON:0 "No Obligations: $VALUE|=+0$"
  opinion_obligations:0 "Regular Obligations (Opinion)"
- opinion_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_opinion' )]"
+ opinion_obligations_tt:0 "[vassal_contract] starts with [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_opinion' )]"
  devotion_obligations:0 "Regular Obligations (Devotion)"
- devotion_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_devotion' )]"
+ devotion_obligations_tt:0 "[vassal_contract] starts with [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_devotion' )]"
  devotion_obligations_requirement:0 "#V [vassal.GetTitledFirstName]#! does #bold not#! have #V [GetGovernment( 'theocracy_government' ).GetName]#! government or you do #bold not#! have #V [GetGovernment( 'hierocracy_government' ).GetName]#! government"
  fame_obligations:0 "Regular Obligations (Fame)"
- fame_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_fame' )]"
+ fame_obligations_tt:0 "[vassal_contract] starts with [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_fame' )]"
  arcana_obligations:0 "Regular Obligations (Arcana)"
- arcana_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_arcana' )]"
+ arcana_obligations_tt:0 "[vassal_contract] starts with [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_arcana' )]"
  arcana_obligations_requirement:0 "You do #bold not#! have the #V Sorcerous Rule#! [dynasty_perk|E] or a [culture|E] with the [GetCultureTradition('tradition_sorcerer_kings').GetName|V] [tradition|E]"
  prowess_obligations:0 "Regular Obligations (Prowess)"
- prowess_obligations_tt:0 "[vassal_contract] starts with [GetVassalContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_Prowess' )]"
+ prowess_obligations_tt:0 "[vassal_contract] starts with [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_Prowess' )]"
  prowess_obligations_requirement:0 "Your [faith|E] does #bold not#! have the [GetFaithDoctrine('tenet_contempt_for_the_weak').GetBaseName] Tenet"
  cultural_protection:0 "Cultural Protection"
  CONTRACT_CULTURAL_PROTECTION_REASON:0 "Cultural Protection: $VALUE|=+0$"
  cultural_religious_privilege:0 "Cultural and Religious Privilege"
  CONTRACT_CULTURAL_RELIGIOUS_PRIVILEGE_REASON:0 "Cultural and Religious Privilege: $VALUE|=+0$"
 
- great_house_vassalage_reason:0 "[recipient.GetHerHis|U] [culture|E] does not wish to be part of a Great House: $VALUE|+=0$"
+ great_house_vassalage_reason_negative:0 "[recipient.GetHerHis|U] [culture|E] does not wish to be part of a Great House: $VALUE|+=0$"
+ great_house_vassalage_reason_positive:0 "[recipient.GetHerHis|U] [culture|E] wishes to be part of a Great House: $VALUE|+=0$"
+ great_house_fealty_reason_positive:0 "[recipient.GetHerHis|U] Great House wishes to consolidate your [culture|E]: $VALUE|+=0$"
  white_gold_tower_vassalage_reason:0 "[GetBuilding('white_gold_tower_01').GetName]: #P +10#!"
  adamantine_tower_invite_reason:0 "[GetBuilding('crystal_tower_01').GetName]: #P +25#!"
  EDUCATE_ME_OPTION_TRAIN_ARCANA_EFFECT:1 "I will be trained into the arts of Magicka, and receive a #V Student of Magicka#! [trait|E]"
@@ -117,10 +122,17 @@
 
  consume_interaction:0 "Consume"
  consume_interaction_desc:0 "Consume [recipient.GetShortUINameNoTooltip] in the endeavor to increase [tsaescence|E] and possibly changing your [personality_traits|E] and [skills|E]!"
+ consume_interaction_lifespan_trigger:0 "You have a [trait|E] that increases your [gc_lifespan|E]. This cannot stack with [tsaescence|E] without breaking age calculations."
 
  thralldom_interaction:0 "Turn into Thrall"
  thralldom_interaction_desc:0 "You will kill [recipient.GetShortUINameNoTooltip] to raise [recipient.GetHerHis] corpse under your command."
  get_undead_thrall:0 "You will turn [recipient.GetShortUINameNoTooltip]'s corpse into a mindless but loyal [GetTrait('undead_character').GetName(GetNullCharacter)] thrall."
+
+ steal_lifeforce_interaction:0 "Steal Lifeforce"
+ steal_lifeforce_interaction_desc:0 "You will drain [recipient.GetShortUINameNoTooltip]'s lifeforce to restore your decayed undead body."
+ steal_lifeforce_interaction_no_decay:0 "Your body is suffering no undead decay."
+ steal_lifeforce_interaction_too_low_health:0 "[recipient.GetShortUINameNoTooltip]'s [health|E] is too low to be of any use!"
+ steal_lifeforce_interaction_effect_tooltip:0 "Reverse the undead decaying of your body based on [recipient.GetShortUINameNoTooltip]'s [health|E]"
 
  skull_corruption_interaction:0 "Use the Skull of Corruption"
  skull_corruption_desc:0 "Use the Skull of Corruption on [recipient.GetShortUINameNoTooltip] to make [recipient.GetHerHim] battle a duplicate!"
@@ -153,6 +165,8 @@
  send_mage_to_wander_return_desc:0 "[recipient.GetFullName] has returned to your court after wandering to improve their [magic|E] abilities."
  sent_to_wander_already:0 "This character has already been sent to wander once before"
 
+ already_tried_to_interfere:0 "This character has recently tried to interfere."
+
  send_knight_to_wander:0 "Send Knight to Wander"
  send_knight_to_wander_interaction_desc:0 "[recipient.GetFirstName] is a young squire, but have yet to embark on a quest on their own. Let them wander and seek their fortune!"
  send_knight_to_wander_five_years_tt:0 "Send [recipient.GetShortUINameNoTooltip] to become a [wanderer|E] for 5 years to seek fame and improve their [martial|E] abilities."
@@ -177,11 +191,11 @@
  I_CANNOT_BLACKMAIL_ANOTHER_LYCAN:1 "You cannot blackmail another [GetTrait('lycan_character').GetName( CHARACTER.Self )] for being a Lycanthrope"
  I_CANNOT_BLACKMAIL_ANOTHER_NECROMANCER:1 "You cannot blackmail another [GetTrait('necromancer').GetName( CHARACTER.Self )] for being a Necromancer"
 
- CHARACTER_INTERACTION_VAMP_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "The holder of [GetTitleByKey('c_bastion').GetNameNoTier] considers Vampirism [GetFaithDoctrine('doctrine_vampirism_outlawed').GetBaseName]"
+ CHARACTER_INTERACTION_VAMP_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "The holder of [GetTitleByKey('c_bastion').GetNameNoTier] considers Vampirism [GetFaithDoctrine('doctrine_vampirism_crime').GetBaseName]"
 
- CHARACTER_INTERACTION_LYCAN_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "The holder of  [GetTitleByKey('c_bastion').GetNameNoTier] considers Lycanthropy [GetFaithDoctrine('doctrine_lycanthropy_outlawed').GetBaseName]"
+ CHARACTER_INTERACTION_LYCAN_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "The holder of  [GetTitleByKey('c_bastion').GetNameNoTier] considers Lycanthropy [GetFaithDoctrine('doctrine_lycanthropy_crime').GetBaseName]"
 
- CHARACTER_INTERACTION_NECROMANCER_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "The holder of  [GetTitleByKey('c_bastion').GetNameNoTier] considers Necromancy [GetFaithDoctrine('doctrine_necromancy_outlawed').GetBaseName]"
+ CHARACTER_INTERACTION_NECROMANCER_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "The holder of  [GetTitleByKey('c_bastion').GetNameNoTier] considers Necromancy [GetFaithDoctrine('doctrine_necromancy_crime').GetBaseName]"
 
  BLACKMAIL_NOTIFICATION_SECRET_VAMPIRE:0 "\nI have evidence of your thirst for blood!"
  BLACKMAIL_NOTIFICATION_SECRET_LYCAN:0 "\nI have evidence of you true beastly form!"

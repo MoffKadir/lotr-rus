@@ -1,16 +1,17 @@
 ﻿l_english:
 # Nibenay events
  ek_major_decisions.0010.t:0 "A new Nibenay!"
- ek_major_decisions.0010.desc: "Now that eastern Nibenay rules itself once more, we should select a new capital and name our new kingdom accordingly."
- ek_major_decisions.0010.caer_suvio:0 "The noble retreat of Caer Suvio"
- ek_major_decisions.0010.mir_corrup:0 "The thermal lands of Mir Corrup"
- ek_major_decisions.0010.artemon:0 "The forgotten center of Artemon"
- ek_major_decisions.0010.grief:0 "The isle-fortress of Grief"
- ek_major_decisions.0010.sundercliff:0 "The great lake of Canulus"
- ek_major_decisions.0010.facian:0 "The new fort of Facian"
- ek_major_decisions.0010.cuptor:0 "The old fort of Cuptor"
- ek_major_decisions.0010.redwater:0 "The treacherous rapids of Redwater"
- ek_major_decisions.0010.entius:0 "The restored fort of Entius"
+ ek_major_decisions.0010.desc: "A new realm has been formed in eastern Nibenay, no longer a mere Imperial Territory, but a proper kingdom and Imperial County. Now, we must decide on the location for the seat of this noble title, which will also be its namesake."
+ ek_major_decisions.0010.caer_suvio:0 "The noble retreat of Caer Suvio!"
+ ek_major_decisions.0010.mir_corrup:0 "The thermal lands of Mir Corrup!"
+ ek_major_decisions.0010.artemon:0 "The forgotten center of Artemon!"
+ ek_major_decisions.0010.grief:0 "The isle-fortress of Grief!"
+ ek_major_decisions.0010.sundercliff:0 "The great lake of Canulus!"
+ ek_major_decisions.0010.facian:0 "The new fort of Facian!"
+ ek_major_decisions.0010.cuptor:0 "The old fort of Cuptor!"
+ ek_major_decisions.0010.redwater:0 "The treacherous rapids of Redwater!"
+ ek_major_decisions.0010.entius:0 "The restored fort of Entius!"
+ ek_major_decisions.0010_effect:0 "[GetTitleByKey('k_nibenay').GetName] will change its name and [de_jure_capital|E]"
 # Orsinium events
  ek_major_decisions.0020.t:0 "A new Orsinium!"
  ek_major_decisions.0020.desc:0 "Blessed be [ROOT.Char.GetFaith.HighGodName]!\n\nUnder the strong guidance of [ROOT.Char.GetFullNameNicknamed], the Orcs have, once again, a realm to call home: Orsinium! Carved out of lands formally belonging to the [original_kingdom.GetName] in the [original_empire.GetName].\n\nNews of the reestablishment of the capital of the Pariah Folk have travelled far and wide and it is expected that many tribes will join Orsinium to defend it from foreign aggression.\n\nMay this be the Orsinium that shall last."
@@ -55,10 +56,16 @@
  ek_major_decisions.0033.option.c:0 "A great tragedy!"
  ek_major_decisions.0033.option.d:0 "Finally these beasts have been put back into their place"
  ek_major_decisions.0033.tooltip:0 "The [demoted_pariah_culture.GetName] culture is again considered [pariah|E], signified by them regaining the #V Pariah Folk#! [innovation|E]"
- ek_major_decisions.0040.t:0 "Assassin for Hire"
- ek_major_decisions.0040.desc:0 "I find myself torn between seeking assistance from the familiar local Morag Tong or reaching out to the enigmatic Dark Brotherhood from foreign lands to aid me in my intricate plan to [murder_scheme.GetFullActionName].\n\nBoth factions are renowned for their expertise in the art of assassination and have a long-standing reputation for carrying out their tasks with utmost precision and secrecy.\n\nThe decision weighs heavy on my mind as I consider the implications and consequences of aligning with either group."
- ek_major_decisions.0040.onlytongdesc:0 "I find myself torn between seeking assistance from the familiar local Morag Tong or relying solely on my own abilities to carry out my intricate plan to [murder_scheme.GetFullActionName].\n\nThe Morag Tong is well-known for their mastery of the art of assassination, their loyalty to Morrowind, and their commitment to secrecy. They have a proven track record of executing their tasks with precision and efficiency. However, by involving them, I would be entrusting my plan to external forces, potentially risking the exposure of my intentions.\n\nOn the other hand, choosing to rely solely on myself would require great skill, cunning, and careful execution. It is a weighty decision to make as I consider the implications and consequences of each path."
- ek_major_decisions.0040.a:0 "To the Guildhall!"
+ ek_major_decisions.0040.t:0 "An Honorable Way to Go"
+ ek_major_decisions.0040.desc:0 "As a member of the [ROOT.Char.GetHouse.GetName] noble House of Morrowind, I'm entitled to purchasing an [writ_of_execution|E] from the Morag Tong.\n\nThe Morag Tong is well-known for their ancestral mastery in the art of assassination and their commitment to secrecy. They have a proven track record of executing their tasks with precision and efficiency. However, by legally buying an Honorable Writ of Execution, I would be entrusting my plan to external forces, potentially risking the exposure of my intentions.\n\nOn the other hand, choosing to rely solely on myself would require great skill, cunning, and careful execution. It is a weighty decision to make as I consider the implications and consequences of each path to [scheme.GetFullActionName]."
+ ek_major_decisions.0040.tongshunneddesc:0 "I find myself torn between seeking assistance from the familiar local Morag Tong or relying solely on my own abilities to carry out my intricate plan to [scheme.GetFullActionName].\n\nThe Morag Tong is well-known for their mastery of the art of assassination, their loyalty to Morrowind, and their commitment to secrecy. They have a proven track record of executing their tasks with precision and efficiency. However, by involving them, I would be entrusting my plan to external forces, potentially risking the exposure of my intentions.\n\nOn the other hand, choosing to rely solely on myself would require great skill, cunning, and careful execution. It is a weighty decision to make as I consider the implications and consequences of each path."
+ ek_major_decisions.0040.outlander:0 "I find myself torn between seeking assistance from a professional assassin or relying solely on my own abilities to carry out my intricate plan to [scheme.GetFullActionName].\n\nRelying solely on myself would demand great skill and cunning, while hiring a lowly assassin may not ensure the same level of precision and efficiency. It is a weighty decision to make as I weigh the implications and consequences of each path."
+ ek_major_decisions.0040.a:0 "Now where is the Master?"
+ ek_major_decisions.0040.empire_target: "Since [target.GetFirstName] holds a sizeable title, you'll pay a large fee and this act will make a dent on your reputation."
+ ek_major_decisions.0040.kingdom_target:0 "Since [target.GetFirstName] holds a sizeable title, you'll pay a large fee and this act will make a dent on your reputation."
+ ek_major_decisions.0040.duchy_target:0 "Since [target.GetFirstName] holds a significant title, you'll pay a mediocre fee and this act will damage your reputation."
+ ek_major_decisions.0040.county_target:0 "Since [target.GetFirstName] holds a minor title, you'll pay a minor fee and this act will only smidge your reputation a tiny bit."
+ ek_major_decisions.0040.discount_target:0 "Since [target.GetFirstName] is not of any significant status, you'll only pay a reduced fee and this act will barely smidge your reputation."
  ek_major_decisions.0040.b:0 "Sweet Mother, Sweet Mother..."
  ek_major_decisions.0040.c:0 "Any lowly assassin would do."
  ek_major_decisions.0040.d:0 "I can certainly do this on my own."
@@ -72,9 +79,9 @@
 # Elsweyr events
  elsweyr.0001.t:0 "Restoration of the Kingdom of Anequina"
  #Triggered loc for Many-Paths dance
- elsweyr.0001.desc.a:0 "For the first time since [ridthar.GetFirstName] proclaimed his false Riddle'Thar Epiphany, Anequina is ruled by Khajiit who continue to follow the old ways of the [ROOT.Char.GetFaith.GetName]. With Anequina independent and reunited, we are now free to worship the spirits that were worshipped by our ancestors for generations and have the opportunity to expand our realm further. The lands from Do'Krin to Leyawiin will soon be ruled by Anequina, as they were during the conquests of Darloc Brae in the #LORE [compendium_first_era]#!."
+ elsweyr.0001.desc.a:0 "For the first time since [ridthar.GetFirstName] proclaimed his false Riddle'Thar Epiphany, Anequina is ruled by Khajiit who continue to follow the old ways of the [ROOT.Char.GetFaith.GetName]. With Anequina independent and reunited, we are now free to worship the spirits that were worshipped by our ancestors for generations and have the opportunity to expand our realm further. The lands from Do'Krin to Leyawiin will soon be ruled by Anequina, as they were during the conquests of Darloc Brae in the [Glossary( 'First Era', 'FIRST_ERA_GLOSS' )]."
  #Loc for other faiths
- elsweyr.0001.desc.b:0 "For the first time since the fall of Ne-Quin-Al to tribal rebels and the subsequent transfer of power to the Mane, the Kingdom of Anequina can once again call itself whole and independent.\n\nThis one has restored control over our ancestral lands, but with the rest of Tamriel in chaos, a new opportunity arises. We can expand our realm further and match the conquests of Darloc Brae in the #LORE [compendium_first_era]#!. We might even surpass the achievements of the Golden Beast himself."
+ elsweyr.0001.desc.b:0 "For the first time since the fall of Ne-Quin-Al to tribal rebels and the subsequent transfer of power to the Mane, the Kingdom of Anequina can once again call itself whole and independent.\n\nThis one has restored control over our ancestral lands, but with the rest of Tamriel in chaos, a new opportunity arises. We can expand our realm further and match the conquests of Darloc Brae in the [Glossary( 'First Era', 'FIRST_ERA_GLOSS' )]. We might even surpass the achievements of the Golden Beast himself."
  elsweyr.0001.a:0 "Anequina is restored."
 
  elsweyr.0002.t:0 "Integration of Leyawiin"
@@ -96,11 +103,11 @@
  elsweyr.0003.b.tt:"You will keep [GetTitleByKey('c_arenthia').GetName] as [de_jure|E] capital of [GetTitleByKey('k_arenthia').GetName]."
 
  elsweyr.0004.t:0 "Kingdom of Darloc Brae"
- elsweyr.0004.desc:0 "Many centuries ago, at the beginning of the #LORE [compendium_first_era]#!, Anequina stretched from Do'Krin to Leyawiin during Darloc Brae's reign. After he died, his realm fell apart, and Northern Elsweyr reverted back to squabbling independent kingdoms.\n\nBut the memory of this glorious period did not die, and today this one has restored the Kingdom of Golden Beast. Once more, Anequina extends from Valenwood in the west to Cyrodiil in the east, and our might will not be challenged again."
+ elsweyr.0004.desc:0 "Many centuries ago, at the beginning of the [Glossary( 'First Era', 'FIRST_ERA_GLOSS' )], Anequina stretched from Do'Krin to Leyawiin during Darloc Brae's reign. After he died, his realm fell apart, and Northern Elsweyr reverted back to squabbling independent kingdoms.\n\nBut the memory of this glorious period did not die, and today this one has restored the Kingdom of Golden Beast. Once more, Anequina extends from Valenwood in the west to Cyrodiil in the east, and our might will not be challenged again."
  elsweyr.0004.a:0 "For Anequina!"
 
  elsweyr.0005.t:0 "Dissolution of Elsweyr"
- elsweyr.0005.desc.1:0 "An unruly folk, the Khajiit were briefly united under the #LORE [compendium_elsweyr_confederacy]#! until they rebelled, sacked the capital city of Ne-Quin-Al, and slaughtered the royal family. Only by transferring power to the charismatic Mane Rid-Thar-ri'Datta, who implemented a new system of power sharing between the Khajiit clans, did Elsweyr manage to be at peace for a short time."
+ elsweyr.0005.desc.1:0 "An unruly folk, the Khajiit were briefly united under the Elsweyr Confederacy until they rebelled, sacked the capital city of Ne-Quin-Al, and slaughtered the royal family. Only by transferring power to the charismatic Mane Rid-Thar-ri'Datta, who implemented a new system of power sharing between the Khajiit clans, did Elsweyr manage to be at peace for a short time."
  elsweyr.0005.desc.2:0 "\n\nBut after his death, the further existence of a unified Elsweyr was always in doubt. With [elsweyr_holder.GetTitledFirstName] failing to assume full control over Elsweyr, both Anequinan and Pellitinian nobility no longer respect their legal authority, reverting back to a time when [GetTitleByKey('e_anequina').GetNameNoTier] and [GetTitleByKey('e_pellitine').GetNameNoTier] were considered separate realms."
  elsweyr.0005.desc.2.anequina:0 "\n\nBut after his death, the further existence of a unified Elsweyr was always in doubt. Now this doubt has been made reality as the disparate clans of Anequina have rallied under one banner, led by [kingdom_former.GetTitledFirstName]. With a strong Anequina defiant of the Mane in Torval, the Confederacy has become a thing of the past."
  elsweyr.0005.desc.2.pellitine:0 "\n\nBut after his death, the further existence of a unified Elsweyr was always in doubt. While discontent in Northern Elsweyr was constant, now even the nobility of the south rejects the worldly authority of the Mane in Torval, instead looking to [kingdom_former.GetTitledFirstName]. Without even support in Pellitine, the Confederacy has become a thing of the past."
@@ -142,7 +149,7 @@
  elsweyr.0012.b:0 "I will not give away my hair!"
 
  elsweyr.0014.t:0 "Restoration of the Kingdom of Pellitine"
- elsweyr.0014.desc:0 "During the time of the #LORE [compendium_elsweyr_confederacy]#!, the centre of power of all Khajiit laid in Pellitine, with the Mane in Torval. However this union was apparently not meant to last, proven by the failure of [elsweyr_holder.GetTitledFirstName] to assert their authority first among the unruly Anequinans and now even in Pellitine.\n\nNow a new power has emerged in Southern Elsweyr, led by this one. Only time will tell if Elsweyr will ever be united again."
+ elsweyr.0014.desc:0 "During the time of the Elsweyr Confederacy, the centre of power of all Khajiit laid in Pellitine, with the Mane in Torval. However this union was apparently not meant to last, proven by the failure of [elsweyr_holder.GetTitledFirstName] to assert their authority first among the unruly Anequinans and now even in Pellitine.\n\nNow a new power has emerged in Southern Elsweyr, led by this one. Only time will tell if Elsweyr will ever be united again."
  elsweyr.0014.a:0 "Pellitine is restored."
 
  elsweyr.0015.t:0 "End of Riddle'Thar"
@@ -151,3 +158,13 @@
  elsweyr.0016.desc:0 "After [ridthar.GetName] proclaimed Riddle'Thar Epiphany, those who refused to follow him have been prosecuted. But with [destroyer_of_mane.GetFirstNamePossessive] complete control over Elsweyr, the position has been reversed. The previously Forgotten [mp_mane.GetName] has proclaimed Riddle'Thar false and renounced any claims to ruling Elsweyr, swearing to only be the spiritual leader of the Khajiit."
  elsweyr.0016.b:0 "It is time to leave [ROOT.GetCharacter.GetFaith.HighGodName] behind..."
  elsweyr.0016.c:0 "Interesting..."
+ 
+ ek_rimmen.0001.t: "The Rim-Men"
+ ek_rimmen.0001.desc: "With the victory of the Colovian warlord [attrebus.GetFirstName] against the [Glossary( 'Akaviri Potentate', 'POTENTATE_GLOSS' )] in Cyrodiil, nobility and commoners alike of Akaviri descent face an uncertain future. Many have already been displaced by the war, made refugees seeking shelter in foreign lands. One such group, led by [refugee_leader.GetName], now requests asylum in my lands.\n\n#italic "My [ROOT.Char.GetLadyLord], hear our plea: Save us from the warlord's wrath! Grant us a home, and you will find no servant more loyal and grateful!"#!\n\nMany more Akaviri refugees are sure to come should the ambitions of Attrebus come to fruition..."
+ ek_rimmen.0001.a: "We extend our hospitality to your people!"
+ ek_rimmen.0001.b: "Can we stand against the might of Cyrodiil?"
+
+ ek_rimmen.0002.t: "The Tsaesci Act"
+ ek_rimmen.0002.desc: "The wrath of the warlord [attrebus.GetFirstName], now styling himself Potentate, against the Ilniviri knows no bounds. At the conclusion of a military parade in the Imperial City, a public proclamation was made of the passing of the Tsaesci Act: forbidding any person of Akaviri descent from holding land in Cyrodiil, ordering the seizure of all property and assets, and banishing them from the realm - or else.\n\nThe mass of refugees caused by the war pales in comparison, as more and more displaced groups arrive in my lands, seeking the sanctuary granted to their kin once before. Can we support these people?"
+ ek_rimmen.0002.a: "We must make room."
+ ek_rimmen.0002.b: "Bearing this burden cannot be ours alone..."

@@ -98,13 +98,6 @@
  trait_education_magic_5:0 "Supreme Magus"
  trait_education_magic_5_desc:0 "This character only learned from the most powerful and knowledgeable wizards and has reached the pinnacle of magical understanding. The boundaries of reality itself are no longer a match for such abilities."
  trait_education_magic_5_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] only learned from the most powerful and knowledgeable wizards and has reached the pinnacle of magical understanding. The boundaries of reality itself are no longer a match for such abilities."
-
- trait_unmourned_blood:0 "Unmourned Blood"
- trait_unmourned_blood_desc:0 "This character seems to have something off about their lineage, but the true nature of it remains a mystery."
- trait_unmourned_blood_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] seems to have something off about their lineage, but the true nature of it remains a mystery."
- trait_scarab_blood:0 "Scarab's Blood"
- trait_scarab_blood_desc:0 "This character is descended from the accursed Sixth Great House, House Dagoth. Having unlocked the truth of their lineage, they are disturbingly powerful, and loved by fellow cultists."
- trait_scarab_blood_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] character is descended from the accursed Sixth Great House, House Dagoth. Having unlocked the truth of their lineage, they are disturbingly powerful, and loved by fellow cultists."
  
  trait_arcana_good:0 "Positive Arcana Affinity"
  trait_arcana_good_1:0 "Attuned"
@@ -153,31 +146,66 @@
  trait_line_of_x_desc:0 "This character represents the Line of [ROOT.Char.GetFirstNameNoTooltip]."
  trait_line_of_x_desc_null:0 "This character represents the Line of X." # incase character doesnt exist
  
- trait_lifespan:0 "[gc_lifespan|E]"
+ trait_lifespan:0 "Natural [gc_lifespan|E]"
+ TRAIT_FLAG_DESC_inheritable_lifespan:0 "\nThis [gc_lifespan|E] is inheritable"
+ TRAIT_FLAG_DESC_not_inheritable_lifespan:0 "\n#N This [gc_lifespan|E] is not inheritable#!"
  
- trait_lifespan_1:1 "Lifespan I #italic ([gc_lifespan|E])#!"
- trait_lifespan_1_desc:1 "By means of nature or magicka, this character might live into their early 100s. Women with this trait will become infertile at around age 85."
- trait_lifespan_1_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] early 100s. Women with this trait will become infertile at around age 85."
+ trait_lifespan_1:1 "Lifespan I"
+ trait_lifespan_1_desc:1 "Naturally this character might live into their early 100s. Women with this trait will become infertile at around age 85."
+ trait_lifespan_1_character_desc:1 "Naturally [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] early 100s. Women with this trait will become infertile at around age 85."
  
- trait_lifespan_2:1 "Lifespan II #italic ([gc_lifespan|E])#!"
- trait_lifespan_2_desc:1 "By means of nature or magicka, this character might live into their mid 100s. Women with this trait will become infertile at around age 115."
- trait_lifespan_2_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 100s. Women with this trait will become infertile at around age 115."
+ trait_lifespan_2:1 "Lifespan II"
+ trait_lifespan_2_desc:1 "Naturally this character might live into their mid 100s. Women with this trait will become infertile at around age 115."
+ trait_lifespan_2_character_desc:1 "Naturally [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 100s. Women with this trait will become infertile at around age 115."
  
- trait_lifespan_3:1 "Lifespan III #italic ([gc_lifespan|E])#!"
- trait_lifespan_3_desc:1 "By means of nature or magicka, this character might live into their mid 200s. Women with this trait will become infertile at around age 150."
- trait_lifespan_3_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 200s. Women with this trait will become infertile at around age 150."
+ trait_lifespan_3:1 "Lifespan III"
+ trait_lifespan_3_desc:1 "Naturally this character might live into their mid 200s. Women with this trait will become infertile at around age 150."
+ trait_lifespan_3_character_desc:1 "Naturally [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 200s. Women with this trait will become infertile at around age 150."
  
- trait_lifespan_4:1 "Lifespan IV #italic ([gc_lifespan|E])#!"
- trait_lifespan_4_desc:1 "By means of nature or magicka, this character might live into their mid 300s. Women with this trait will become infertile at around age 215."
- trait_lifespan_4_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 300s. Women with this trait will become infertile at around age 215."
+ trait_lifespan_4:1 "Lifespan IV"
+ trait_lifespan_4_desc:1 "Naturally this character might live into their mid 300s. Women with this trait will become infertile at around age 215."
+ trait_lifespan_4_character_desc:1 "Naturally [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 300s. Women with this trait will become infertile at around age 215."
+
+ trait_lifespan_magic:0 "Magical [gc_lifespan|E]"
+ trait_lifespan_magic_1:1 "Magical Lifespan I"
+ trait_lifespan_magic_1_desc:1 "By means of magicka, this character might live into their early 100s. Women with this trait will become infertile at around age 85."
+ trait_lifespan_magic_1_character_desc:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] early 100s. Women with this trait will become infertile at around age 85."
+ trait_lifespan_magic_1_character_desc_extended:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] early 100s. Women with this trait will become infertile at around age 85.\n\n[ROOT.GetCharacter.GetHerHis|U] natural [gc_lifespan|E] was [ROOT.Char.Custom('GetNaturalLifespan')], which may be passed down to [ROOT.GetCharacter.GetHerHis] children."
  
- trait_lifespan_5:1 "Lifespan V #italic ([gc_lifespan|E])#!"
- trait_lifespan_5_desc:1 "By means of nature or magicka, this character might live into their mid 500s. Women with this trait will become infertile at around age 340."
- trait_lifespan_5_character_desc:1 "By means of nature or magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 500s. Women with this trait will become infertile at around age 340."
+ trait_lifespan_magic_2:1 "Magical Lifespan II"
+ trait_lifespan_magic_2_desc:1 "By means of magicka,, this character might live into their mid 100s. Women with this trait will become infertile at around age 115."
+ trait_lifespan_magic_2_character_desc:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 100s. Women with this trait will become infertile at around age 115."
+ trait_lifespan_magic_2_character_desc_extended:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 100s. Women with this trait will become infertile at around age 115.\n\n[ROOT.GetCharacter.GetHerHis|U] natural [gc_lifespan|E] was [ROOT.Char.Custom('GetNaturalLifespan')], which may be passed down to [ROOT.GetCharacter.GetHerHis] children."
  
- trait_lifespan_6:1 "Immortality #italic ([gc_lifespan|E])#!"
- trait_lifespan_6_desc:1 "This character will not die of old age, but that comes at a cost to both their body and mind."
- trait_lifespan_6_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] will not die of old age, but that comes at a cost to both [ROOT.GetCharacter.GetHerHis] body and mind."
+ trait_lifespan_magic_3:1 "Magical Lifespan III"
+ trait_lifespan_magic_3_desc:1 "By means of magicka, this character might live into their mid 200s. Women with this trait will become infertile at around age 150."
+ trait_lifespan_magic_3_character_desc:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 200s. Women with this trait will become infertile at around age 150."
+ trait_lifespan_magic_3_character_desc_extended:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 200s. Women with this trait will become infertile at around age 150.\n\n[ROOT.GetCharacter.GetHerHis|U] natural [gc_lifespan|E] was [ROOT.Char.Custom('GetNaturalLifespan')], which may be passed down to [ROOT.GetCharacter.GetHerHis] children."
+ 
+ trait_lifespan_magic_4:1 "Magical Lifespan IV"
+ trait_lifespan_magic_4_desc:1 "By means of magicka, this character might live into their mid 300s. Women with this trait will become infertile at around age 215."
+ trait_lifespan_magic_4_character_desc:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 300s. Women with this trait will become infertile at around age 215."
+ trait_lifespan_magic_4_character_desc_extended:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 300s. Women with this trait will become infertile at around age 215.\n\n[ROOT.GetCharacter.GetHerHis|U] natural [gc_lifespan|E] was [ROOT.Char.Custom('GetNaturalLifespan')], which may be passed down to [ROOT.GetCharacter.GetHerHis] children."
+ 
+ trait_lifespan_magic_5:1 "Magical Lifespan V"
+ trait_lifespan_magic_5_desc:1 "By means of magicka, this character might live into their mid 500s. Women with this trait will become infertile at around age 340."
+ trait_lifespan_magic_5_character_desc:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 500s. Women with this trait will become infertile at around age 340."
+ trait_lifespan_magic_5_character_desc_extended:1 "By means of magicka, [ROOT.GetCharacter.GetFirstNameNoTooltip] might live into [ROOT.GetCharacter.GetHerHis] mid 500s. Women with this trait will become infertile at around age 340.\n\n[ROOT.GetCharacter.GetHerHis|U] natural [gc_lifespan|E] was [ROOT.Char.Custom('GetNaturalLifespan')], which may be passed down to [ROOT.GetCharacter.GetHerHis] children."
+ 
+ trait_lifespan_magic_6:1 "Magical Immortal"
+ trait_lifespan_magic_6_desc:1 "This character has through magical means achieved immortality, and will not die of old age."
+ trait_lifespan_magic_6_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has through magical means achieved immortality, and will not die of old age."
+ trait_lifespan_magic_6_character_desc_extended:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has through magical means achieved immortality, and will not die of old age.\n\n[ROOT.GetCharacter.GetHerHis|U] natural [gc_lifespan|E] was [ROOT.Char.Custom('GetNaturalLifespan')], which may be passed down to [ROOT.GetCharacter.GetHerHis] children."
+
+ trait_lifespan_6:1 "Immortal"
+ trait_lifespan_6_desc:1 "This character is a true immortal, forever unaging."
+ trait_lifespan_6_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a true immortal, forever unaging."
+
+ natural_lifespan_0:0 "of average length"
+ natural_lifespan_1:0 "[GetTrait('lifespan_1').GetName( GetNullCharacter )]"
+ natural_lifespan_2:0 "[GetTrait('lifespan_2').GetName( GetNullCharacter )]"
+ natural_lifespan_3:0 "[GetTrait('lifespan_3').GetName( GetNullCharacter )]"
+ natural_lifespan_4:0 "[GetTrait('lifespan_4').GetName( GetNullCharacter )]"
  
  trait_poet_nord:0 "Skald"
  
@@ -348,11 +376,11 @@
 
  trait_furstock_pahmar_loc:0 "Pahmar"
  trait_furstock_pahmar:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_pahmar_loc') )]"
- trait_furstock_pahmar_desc:0 "Born when Masser is full and Secunda is new, Pahmar are a giant bipedal furstock and resemble Senche-Tigers "
+ trait_furstock_pahmar_desc:0 "Born when Masser is full and Secunda is new, Pahmar are a giant bipedal form and resemble Senche-Tigers "
 
  trait_furstock_pahmar_raht_loc:0 "Pahmar-Raht"
  trait_furstock_pahmar_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_pahmar_raht_loc') )]"
- trait_furstock_pahmar_raht_desc:0 "Born when Masser is full and Secunda is waning, the Pahmar-raht are a giant bipedal furstock. Due to them being the strongest of furstocks, they are usually deployed as bodyguards and warriors. They resemble Senche-Tigers, but Pahmar-Raht differ in that they are larger and more dangerous, with plantigrade legs and massive stature."
+ trait_furstock_pahmar_raht_desc:0 "Born when Masser is full and Secunda is waning, the Pahmar-raht are a giant bipedal form. Due to them being the strongest of forms, they are usually deployed as bodyguards and warriors. They resemble Senche-Tigers, but Pahmar-Raht differ in that they are larger and more dangerous, with plantigrade legs and massive stature."
 
  trait_furstock_suthay_loc:0 "Suthay"
  trait_furstock_suthay:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_suthay_loc') )]"
@@ -364,7 +392,7 @@
 
  trait_furstock_tojay_loc:0 "Tojay"
  trait_furstock_tojay:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_tojay_loc') )]"
- trait_furstock_tojay_desc:0 "Born when Masser is waxing and Secunda is new, the Tojay are one of the most mysterious of furstocks. Little is known about them, except that they live in the southern marshes and jungle regions of Elsweyr, as well as the Tenmar Forest."
+ trait_furstock_tojay_desc:0 "Born when Masser is waxing and Secunda is new, the Tojay are one of the most mysterious of forms. Little is known about them, except that they live in the southern marshes and jungle regions of Elsweyr, as well as the Tenmar Forest."
  
  trait_furstock_tojay_raht_loc:0 "Tojay-Raht"
  trait_furstock_tojay_raht:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_tojay_raht_loc') )]" 
@@ -480,11 +508,16 @@
  trait_clone_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a clone of someone else. [ROOT.GetCharacter.GetSheHe|U] was not born the normal way, and instead created through the obscure magical process of [self_replication|E], also known as [cloning|E]."
 
 
+ trait_former_slave:0 "Former Slave"
+ trait_former_slave_desc:0 "An erstwhile slave, this character was either granted their freedom or cast off their own shackles through force of arms.
+ trait_former_slave_character_desc:0 "An erstwhile slave, [ROOT.GetCharacter.GetFirstNameNoTooltip] was either granted [ROOT.GetCharacter.GetHerHis] freedom or cast off [ROOT.GetCharacter.GetHerHis] own shackles through force of arms."
+
  trait_track_magic:0 "Magic"
  trait_track_magic_desc:0 "To make use of magic in any form means to hold fragments of godly might in your very hands."
 
  trait_cannibal_gp:0 "Meat Mandate"
  trait_cannibal_character_desc_gp:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has partaken in the Meat Mandate as dictated by the Green Pact."
+
 
  trait_herbalist_1: "Herbalist"
  trait_herbalist_2: "Alchemist"

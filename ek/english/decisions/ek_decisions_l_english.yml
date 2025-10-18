@@ -28,10 +28,10 @@
 
     
  # Perks
- raise_risen_dead_decision:0 "Raise the Dead"
- raise_risen_dead_decision_desc:0 "Wars are won by the side that can throw the highest number of bodies onto the battlefield and city walls. And what better body than the one who already died?"
- raise_risen_dead_decision_tooltip:0 "What is dead may never die"
- raise_risen_dead_decision_confirm:0 "Rise, my children!"
+ raise_maa_undead_soldiers_decision:0 "Raise the Dead"
+ raise_maa_undead_soldiers_decision_desc:0 "Wars are won by the side that can throw the highest number of bodies onto the battlefield and city walls. And what better body than the one who already died?"
+ raise_maa_undead_soldiers_decision_tooltip:0 "What is dead may never die"
+ raise_maa_undead_soldiers_decision_confirm:0 "Rise, my children!"
  decision_gives_necromancer_secret_tt:0 "#R Using this decision will give you the 'Necromancer' [secret|E] #!"
  decision_gives_necromancer_trait_tt:0 "#R Using this decision will give you the 'Necromancer' [trait|E], which is considered [shunned|E] or [criminal|E] in your [faith|E] #!"
  
@@ -158,6 +158,15 @@
  commune_with_totem_spirit_decision_confirm:0 "I'm ready, Wise-Woman."
  commune_with_totem_spirit_decision_effect_tt:0 "Your Wise-Woman will discover a cosmic insight in the near future."
 
+ commune_with_ancestor_spirits_decision:0 "Commune with an Ancestor Spirit"
+ commune_with_ancestor_spirits_decision_desc:0 "Visiting the family's tomb to ask for council and guidance from an Ancestor Spirit is a common practice among those of the Velothi ascendance. I must convene with my [Concept( 'realm_priest', GetPlayer.GetCouncillorPosition( 'councillor_court_chaplain' ).GetPositionName )|E] to arrange the ritual."
+ commune_with_ancestor_spirits_decision_tooltip:0 "Ask the [Concept( 'realm_priest', GetPlayer.GetCouncillorPosition( 'councillor_court_chaplain' ).GetPositionName )|E] for help communing with an Ancestor Spirit and ask for guidance."
+ commune_with_ancestor_spirits_decision_confirm:0 "Prepare the offerings..."
+ commune_with_ancestor_spirits_decision_effect_tt:0 "In addition to some piety bonus, you will get either lifestyle experience, learn a secret from a House Member, gain some Dynasty Prestige or be severely punished by your insolence in disturbing your ancestors. Nothing can also happen."
+ ancestor_requirement:0 "At least one of your ancestors are old enough or virtuous enough"
+ available_adult:0 "You're available and an adult"
+ is_at_war:0 "You're not at war"
+
  chukka_sei_decision:0 "Undergo Chukka-Sei"
  chukka_sei_decision_desc:0 "Hist-Dooka is the month for Saxhleel to ponder about family, tradition, and obligation. It is also the month of Chukka-Sei, the naming ritual. If I wish to be a Hatchling no more, I need to overcome its trial."
  chukka_sei_decision_tooltip:0 "Partake on Chukka-Sei and prove myself worthy of being named."
@@ -202,7 +211,7 @@
  initiate_consolamentum_decision_age_tt:0 "Has [ek_age_modifier|E] equivalent to #N 60 years#! for average humans"
 
  join_cote_decision:0 "Join the Council of the Eight"
- join_cote_decision_desc:0 "The #LORE [compendium_divines]#! long ago invested spiritual authority in Alessia the Paravant, and thus Cyrodiil has maintained a status as "first among equals" in spiritual matters. The Council of the Eight exists to enshrine this position in law, and at the same time grant regional chapels a seat at the table and a voice in the Arch-Primate's ear.\n\nAs the de facto worldly leader of my faith, I certainly have a say in its future, and perhaps our priesthood stands to gain more from joining the Council than our believers stand to lose from submitting to its authority."
+ join_cote_decision_desc:0 "The Divines long ago invested spiritual authority in Alessia the Paravant, and thus Cyrodiil has maintained a status as "first among equals" in spiritual matters. The Council of the Eight exists to enshrine this position in law, and at the same time grant regional chapels a seat at the table and a voice in the Arch-Primate's ear.\n\nAs the de facto worldly leader of my faith, I certainly have a say in its future, and perhaps our priesthood stands to gain more from joining the Council than our believers stand to lose from submitting to its authority."
  join_cote_decision_tt:0 "Tie your faith to the Temple in Cyrodiil"
  join_cote_decision_confirm:0 "Unity - for the Divines!"
  gain_doctrine_spiritual_head:0 "Your [faith|E] gains the [GetFaithDoctrine('doctrine_spiritual_head').GetBaseName] [head_of_faith|E] Doctrine"
@@ -358,6 +367,24 @@
  debug_mode_toggle_decision_tooltip:0 "debug_mode_toggle_decision_tooltip"
  debug_mode_toggle_decision_desc:0 "debug_mode_toggle_decision_desc"
  debug_mode_toggle_decision_confirm:0 "debug_mode_toggle_decision_confirm"
+
+ ban_slavery_in_realm_decision:0 "Ban Slavery in Realm"
+ ban_slavery_in_realm_decision_desc:0 "#italic "...I do order and declare that all persons held as slaves within [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] are and henceforward shall be free."#!"
+ ban_slavery_in_realm_decision_tooltip:0 "Can you own a person?"
+ ban_slavery_in_realm_decision_confirm:0 "Hear me!"
+ ban_slavery_in_realm_decision_effect:0 "The #V $building_type_slave_markets_01$#! line of [buildings|E] are disabled and cannot be built within your [realm|E]"
+ culture_keeps_slaves_tooltip:0 "Your [culture|E] allows keeping [slaves|E]"
+ vassal_culture_keeps_slaves_tooltip:0 "Any [vassal|E] [culture|E] in your [realm|E] allows keeping [slaves|E]"
+ slavery_stance_allowed_trigger:0 "You're a member of the [grand_council_morrowind|E] and [slavery|E] has been banned by High Councilor"
+
+ allow_slavery_in_realm_decision:0 "Lift Slavery Ban"
+ allow_slavery_in_realm_decision_desc:0 "The keeping of slaves is currently banned in this land. Perhaps one could consider reversing that policy?"
+ allow_slavery_in_realm_decision_tooltip:0 "Ownership is power."
+ allow_slavery_in_realm_decision_confirm:0 "Hear me!"
+ allow_slavery_in_realm_decision_effect:0 "The #V $building_type_slave_markets_01$#! line of [buildings|E] are again enabled and can be built within your [realm|E]"
+ allow_slavery_in_realm_decision_trigger:0 "[slavery|E] is currently banned in this [realm|E]"
+
+ visit_vineyard_requirement:0 "A [city|E] within your [domain|E] must contain an #V $building_type_amaya_vineyard_02$#! building"
 
  stop_being_pirate_government_decision:0 "Abandon Piracy?"
  stop_being_pirate_government_decision_desc:0 "Being a Pirate might be lucrative but it lacks a certain legitimacy and authority more regular nobility holds, perhaps it is time to abandon our current governance and adopt a more centralized system? "
