@@ -72,8 +72,10 @@
  lotr_release_as_client_state_effect_tt: "[recipient.GetTitledFirstName] станет вашим [Concept('client_state', 'сателлитом')|E]"
  lotr_can_send_release_as_tributary_tt: "Выберите один из доступных вариантов"
  client_state: "Сателлит #weak (Постоянный [Concept('client_state','данник')|E])#!"
- tributary_state: "Государство-данник #weak (Временный [Concept('tributary_state','данник')|E])#!"
- protectorate_state: "Государство-протекторат #weak (Опциональный [Concept('protectorate','протекторат')|E])#!"
+ tributary_state: "Держава-данник #weak (Невольный [Concept('tributary_state','данник')|E])#!"
+ #tributary_state: "Государство-данник #weak (Временный [Concept('tributary_state','данник')|E])#!"
+ protectorate_state: "Держава-протекторат #weak (Добровольный [Concept('protectorate','протекторат')|E])#!"
+ #protectorate_state: "Государство-протекторат #weak (Опциональный [Concept('protectorate','протекторат')|E])#!"
 
  interaction_debug_realms_in_exile: "#D DEBUG: #BER: Realms in Exile"
  settle_wilderness_immediately_interaction: "Колонизировать все [Concept('colony', 'колониальные')|E] владения"
@@ -99,6 +101,12 @@
  settle_wastelands: "$settle_wastelands_icon$ Заселить [Concept('wilderness', 'дебри')|E]"
  vassal_directive_settle_wastelands: "[recipient.GetUIName] сосредоточится на заселении дебрей."
  settlement_focus_text: "[directive|E]: Заселить графства дебрей"
+
+ elven_settlement_icon: "@directive_elven_settlement!"
+ elven_settlement: "$elven_settlement_icon$ Расселение эльфов"
+ vassal_directive_elven_settlement: "[recipient.GetUIName] сосредоточится на расселении эльфов."
+ elven_settlement_focus_text: "[directive|E]: Расселение эльфов"
+ subrealm_has_county_of_other_race: "[recipient.GetFullName] #bold не#! владеет [Concept('county', 'графством')|E], населённым представителями другой расы."
 
  lotr_test_interaction: "Тест"
  cant_vassalise_due_to_recipient_having_a_suzerain: "[recipient.GetName] является [Concept('tributary', 'данником')|E] [Concept('protectorate', 'без протектората')|E] персонажа [recipient.MakeScope.Var('my_suzerain').Char.GetName]"

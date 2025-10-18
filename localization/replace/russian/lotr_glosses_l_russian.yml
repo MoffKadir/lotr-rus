@@ -12,8 +12,8 @@
 
  aromez_gloss: "Вал. #bold Аромез#! имеет неизвестное значение, но ассоциируется со звуком рога на языках [Concept('eldarin', 'эльдар')|E], к которым оно было адаптировано."
 
- ############ Elven Languages ############
- 
+ ############ Elven Tongues ############
+
  ### Quenya ###
 
  almaren_gloss: "[quenya_short|E] #bold Алмарен#! - первозданный остров, где жили [valargods|E], название которого означает «Обитель Блаженных»."
@@ -88,6 +88,8 @@
 
  ohtanis_gloss: "[quenya_short|E] #bold Охтанис#! означает «Воительница» - имя, предназначенное для леди, обладающей большой доблестью и боевой славой." # PLACEHOLDER
 
+ raine_ondonoreo_gloss: "[quenya_short|E] #bold Райнэ Ондонорэо#! означает «Гондорский мир» и относится к ранее невиданному периоду мира, который Гондор пережил на пике своей мощи в [Concept('thirdage', 'Третьей эпохе')|E]."
+
  ringil_gloss: "[quenya_short|E] #bold Рингиль#! - «Холод», связан со словом «лёд» на языке [quenya|El]."
 
  serinde_gloss: "[quenya_short|E] #bold Сериндэ#! означает «Мастерица шитья» или «Рукодельница». Более правильно произносится как #bold Териндэ#! теми, кто придерживается шибболета [Concept('feanor', 'Феанора')|E]."
@@ -109,6 +111,8 @@
  vasa_gloss: "[quenya_short|E] #bold Васа#! означает «Поглотитель» и является названием, данным [noldor|El] Солнцу в знак Пробуждения [Concept('men', 'людей')|E] и их собственного угасания."
 
  veatura_gloss: "[quenya_short|E] #bold Вэатура#! или «Морской лев» - это прозвище, данное #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofciryaheri1').GetID] #L Кирьяхеру#!#!, за его гордую силу и великие подвиги на суше и на море в качестве капитана и кузена первого Морского короля #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofanarion15').GetID] #L Тараннона#!#!."
+
+ vinyaraine_gloss: "[quenya_short|E] #bold Виньярайнэ#! означает «Новый мир» и относится к новому миру, принесённому [Concept('dunedain', 'дунэдайн')|E] верховным королём Элессаром."
 
  voronwe_gloss: "[quenya_short|E] #bold Воронвэ#! означает «Верный» или «Стойкий» и является именем эльфийского проводника Туора в Гондолин, имя спутника [Concept('elendil', 'Элендиля')|E], а также прозвище, взятое Мардилем Воронвэ, первым Правящим наместником [Concept('gondor', 'Гондора')|E]."
 
@@ -391,29 +395,46 @@
  # Longbeards #
 
  craban_azgith_gloss: "[khuzdul_short|E] #bold Крабан Азгит#! означает «Вороньи глаза»."
+
  higem_thinbin_gloss: "[khuzdul_short|E] #bold Хигем Тхинбин#! означает «Раскаты грома»."
+
  kharabal_tharag_gloss: "[khuzdul_short|E] #bold Кхарабал Тхараг#! означает «Наездники на баранах»."
+
  klethuhur_gloss: "[khuzdul_short|E] #bold Клетухур#! означает «Стальной лес»."
+
  nemahinkhed_gloss: "[khuzdul_short|E] #bold Немахинкед#! означает «Несмертные»."
+
  sigin_baruk_gloss: "[khuzdul_short|E] #bold Сигин Барук#! означает «Длинные топоры»."
+
  zirin_shathur_gloss: "[khuzdul_short|E] #bold Зирин Шатхур#! означает «Железный дождь»."
+
 
  # Firebeards #
 
  ashur_thargu_gloss: "[khuzdul_short|E] #bold Ашур Таргу#! означает «Столбы дыма»."
+
  beblel_ishmiri_gloss: "[khuzdul_short|E] #bold Беблел Ишмири#! означает «Дерзкие стражи»."
+
  gazag_faras_gloss: "[khuzdul_short|E] #bold Газаг Фарас#! означает «Драконьи пасти»."
+
  hurzu_tumnu_gloss: "[khuzdul_short|E] #bold Хурзу Тумну#! означает «Следопыты Долины»."
+
  shumzrakaz_gloss: "[khuzdul_short|E] #bold Шумзраказ#! означает «Стражи пламени»."
+
  tumunzahar_gloss: "[khuzdul_short|E] #bold Тумунзахар#! означает «Обрывистая впадина»."
 
  # Broadbeams #
 
  ashamur_gabilgathol_gloss: "[khuzdul_short|E] #bold Ашамур Габилгатол#! означает «Хранители Белегоста»."
+
  fahamgathol_taradal_gloss: "[khuzdul_short|E] #bold Фахамгатол Тарадал#! означает «Стражи северной крепости»."
+
  gabilgathol_gloss: "[khuzdul_short|E] #bold Габилгатол#! означает «Великая крепость»."
+
  karashu_gloss: "[khuzdul_short|E] #bold Карашу#! означает «Меткие стрелки»."
+
  khagla_barak_gloss: "[khuzdul_short|E] #bold Кхагла Барак#! означает «Синие топоры»."
+
  uslukh_fathal_gloss: "[khuzdul_short|E] #bold Услукх Фатхал#! означает «Драконоборцы»."
 
  # Ironfists #
@@ -421,26 +442,44 @@
  # Stiffbeards #
 
  balb_urs_gloss: "[khuzdul_short|E] #bold Бальб'урс#! означает «Ледяное пламя»."
+
  kibil_tarag_gloss: "[khuzdul_short|E] #bold Кибиль-Тараг#! означает «Серебряная борода»."
+
  kibiltumun_gloss: "[khuzdul_short|E] #bold Кибильтумун#! означает «Серебряное святилище»."
+
  kibilzahar_gloss: "[khuzdul_short|E] #bold Кибильзахар#! означает «Серебряная впадина»."
+
  ihkhed_bagd_gloss: "[khuzdul_short|E] #bold Ихкед Багд#! означает «Кусачий ветер»."
+
  iklel_marakh_gloss: "[khuzdul_short|E] #bold Иклел Маракх#! означает «Морозные щиты»."
+
  zarsthu_balrak_gloss: "[khuzdul_short|E] #bold Зарсту Балрак#! означает «Стражи ледяного леса»."
 
  # Blacklocks #
 
  azaruk_azagh_gloss: "[khuzdul_short|E] #bold Азарук Азаг#! означает «Мастера войны»."
+
  isbej_tahfa_urd_gloss: "[khuzdul_short|E] #bold Исбедж Тахфа'урд#! означает «Разведчики Жёлтых гор»."
+
  naikhdiri_gloss: "[khuzdul_short|E] #bold Найхдири#! означает «Стена соратников»."
+
  naragzanat_buh_gloss: "[khuzdul_short|E] #bold Нарагзанат Бу#! означает «Отряд Черновласов»."
+
  naragzanat_zegar_gloss: "[khuzdul_short|E] #bold Нарагзанат Зегар#! означает «Клинки Черновласов»."
 
  # Stonefoots #
 
- ############ Orcish ############
+ ############ Orcish Tongues ############
 
- Ashdurbuk_gloss: "Ор. #bold Ашдурбук#! означает «Единоличный правитель» и является верховным королём племён [Concept('goblins', 'гоблинов')|E] [Concept('gundabad', 'Гундабада')|E], когда все были приведены к покорности."
+ ### Black Speech ###
+
+ hai_gloss: "Ч.н. #bold Хай#! означает «племя» или «народ», когда употребляется отдельно, и это термин [Concept('trolls', 'троллей')|E], [Concept('goblins', 'гоблинов')|E] и особенно [Concept('orcs', 'орков')|E], обычно используемый для обозначения их этнических и расовых групп." # References in loc have not been replaced with the gloss
+
+ uruk_gloss: "Ч.н. #bold Урук#! означает «орк» и используется для обозначения [Concept('orcs', 'орков')|E] в целом, причём орки из [Concept('isengard', 'Изенгарда')|E] особенно любят это слово." # References in loc have not been replaced with the gloss
+
+ ### Orcish Westron ###
+
+ ashdurbuk_gloss: "Ор. #bold Ашдурбук#! означает «Единоличный правитель» и является верховным королём племён [Concept('goblins', 'гоблинов')|E] [Concept('gundabad', 'Гундабада')|E], когда все были приведены к покорности."
 
  ulukai_gloss: "Ор. #bold Улукай#! означает «Служитель Тени», и относится к великому самоцвету Моргота, который скорее пожирает, чем излучает свет."
 
@@ -493,25 +532,41 @@
  forgoil_gloss: "Дун. #bold Форгойл#! означает «Соломенноголовые» на языке [Concept('dunlending', 'дунландцев')|E] - так они прозвали светловолосых рохиррим, укравших их древние земли."
 
  ### Forodwaithrim ###
- vanha_isa_gloss: "Фо. #bold Вана Исэ#! означает «Старый отец»."
- tespra_yspymra_gloss: "Фо. #bold Теспра испимрэ#! означает «Совершенное равновесие в мире», что является центральной концепцией одной из основных религий [Concept('forodwaith', 'Фородвайта')|E]."
+
+ hakyranti_gloss: "Фо. #bold Хякирэнти#! означает «повелитель добычи». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих мастеров охоты."
+
+ jatami_gloss: "Фо. #bold Ятэми#! означает «сборщик мха». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих садовников."
+
+ kynnaja_gloss: "Фо. #bold Киннэйя#! означает «строитель льда». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих архитекторов."
+
+ mokkaja_gloss: "Фо. #bold Мёккэйя#! означает «приносящий дары». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих раздатчиков милостыни." 
+
+ mullaja_gloss: "Фо. #bold Муллайя#! означает «сказитель». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих летописцев."
+
+ muuttohti_gloss: "Фо. #bold Муутохти#! означает «хранитель реликвий». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих хранителей древности."
+
+ nyka_gloss: "Фо. #bold Никэ#! означает «хитрец». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих шутов."
+
  okkospyr_gloss: "Фо. #bold Оккоспир#! означает «то, что приходит извне»."
+
+ rannojari_gloss: "Фо. #bold Рэннёяри#! означает «оленевод». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих скотоводов."
+
+ runtyrra_gloss: "Фо. #bold Рунтиррэ#! означает «ткач рун». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих музыкантов."
+
  tespra_mereija_gloss: "Фо. #bold Теспра мереййэ#! означает «Великий ритм моря». Это ответвление более широкой [Concept('lossoth', 'лоссотской')|E] веры."
+
+ tespra_yspymra_gloss: "Фо. #bold Теспра испимрэ#! означает «Совершенное равновесие в мире», что является центральной концепцией одной из основных религий [Concept('forodwaith', 'Фородвайта')|E]."
+
+ tujsvalta_gloss: "Фо. #bold Туйсвалта#! означает «управитель». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих сенешалей."
+
+ vanha_isa_gloss: "Фо. #bold Вана Исэ#! означает «Старый отец»."
+
+ yllikori_gloss: "Фо. #bold Илликори#! означает «защитник». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих телохранителей."
+
  ystavat_talven_gloss: "Фо. #bold Истэвэт Талвен#! означает «Друзья зимы». Это термин, которым [Concept('lossoth', 'лоссоты')|E] называют самих себя."
- muistaja_gloss: "Фо. #bold Муистайя#! означает «сказитель». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих летописцев."
- husvalta_gloss: "Фо. #bold Усвала#! означает «управитель». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих сенешалей."
- renmastari_gloss: "Фо. #bold Ренмэстари#! означает «оленевод». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих скотоводов."
- lumira_gloss: "Фо. #bold Лумира#! означает «сборщик мха». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих садовников."
- isbygnar_gloss: "Фо. #bold Исбигнар#! означает «строитель льда». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих архитекторов."
- skanjar_gloss: "Фо. #bold Скэнкьяр#! означает «приносящий дары». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих раздатчиков милостыни."
- runla_gloss: "Фо. #bold Рунла#! означает «ткач рун». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих музыкантов."
- nokka_gloss: "Фо. #bold Нокка#! означает «ледяной хитрец». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих шутов."
- muistovahti_gloss: "Фо. #bold Муистовахти#! означает «хранитель реликвий». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих хранителей древности."
- saalisvalta_gloss: "Фо. #bold Сэалисвалта#! означает «повелитель добычи». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих мастеров охоты."
- suojami_gloss: "Фо. #bold Суойями#! означает «защитник». Этим термином [Concept('lossoth', 'лоссоты')|E] называют своих телохранителей."
 
 
- ### Trevan ###
+### Noi Trevan ###
 
  ail_leagan_gloss: "Трев. #bold Айл-Леаган#! означает «Маленькие драгоценности» и используется как эвфемизм для обозначения душ умерших предков."
 
@@ -557,11 +612,11 @@
 
  artazar_gloss: "Кх. #bold Артазар#! означает «Праведное пламя»."
 
- azimtabar_gloss: "Кх. #bold Азимтабар#! означает «благородный род» и относится к семействам из [Concept('caste', 'касты')|E] [Glossary('вайша','vaysha_gloss')]."
+ azimtabar_gloss: "Кх. #bold Азимтабар#! означает «благородный род» и относится к семействам из [Concept('khycastesystemshort', 'касты')|E] [Glossary('вайша','vaysha_gloss')]."
 
- fajusha_gloss: "Кх. #bold Фаджуша#! означает «простолюдины». Они являются второй низшей [Concept('caste', 'кастой')|E] в кхайском обществе, после [Glossary('Шадру','shadru_gloss')]"
+ fajusha_gloss: "Кх. #bold Фаджуша#! означает «простолюдины». Они являются второй низшей [Concept('khycastesystemshort', 'кастой')|E] в [Concept('khyan', 'кхайском')|E] обществе, после [Glossary('Шадру','shadru_gloss')]"
 
- shadru_gloss: "Кх. #bold Шадру#! означает «слуги». Они являются низшей [Concept('caste', 'кастой')|E] в кхайском обществе."
+ shadru_gloss: "Кх. #bold Шадру#! означает «слуги». Они являются низшей [Concept('khycastesystemshort', 'кастой')|E] в [Concept('khyan', 'кхайском')|E] обществе."
 
  tirandaza_gloss: "Кх. #bold Тирандаза#! означает «Лучники»."
 
@@ -571,11 +626,11 @@
 
  tizyarshti_gloss: "Кх. #bold Тизъяршти#! означает «Несущие пронзающий клинок»."
 
- varna_gloss: "Кх. #bold Варна#! означает «жрецы». Традиционно они являются высшей [Concept('caste', 'кастой')|E] в кхайской культуре."
+ varna_gloss: "Кх. #bold Варна#! означает «жрецы». Традиционно они являются высшей [Concept('khycastesystemshort', 'кастой')|E] в [Concept('khyan', 'кхайской')|E] культуре."
 
- vata_gloss: "Кх. #bold Ватта#! означает «торговцы». Они являются промежуточной [Concept('caste', 'кастой')|E] в кхайском обществе."
+ vata_gloss: "Кх. #bold Ватта#! означает «торговцы». Они являются промежуточной [Concept('khycastesystemshort', 'кастой')|E] в [Concept('khyan', 'кхайском')|E] обществе."
 
- vaysha_gloss: "Кх. #bold Вайша#! означает «благородные воины». В кхайской культуре они занимают второе место после [Concept('caste', 'касты')|E] [Glossary('Варна','varna_gloss')]."
+ vaysha_gloss: "Кх. #bold Вайша#! означает «благородные воины». В [Concept('khyan', 'кхайской')|E] культуре они занимают второе место после [Concept('khycastesystemshort', 'касты')|E] [Glossary('Варна','varna_gloss')]."
 
  ### Muranian ###
 
