@@ -12,33 +12,6 @@
 
  
  ### Attrebus/Interregnum decisions
- attrebus_interregnum_decision:0 "The Interregnum?"
- attrebus_interregnum_decision_desc:0 "The [Glossary( 'Potentate', 'POTENTATE_GLOSS' )] has fallen, and the Elder Council has agreed to lend you emergency powers to sort out the political crisis that could ensue.\n\nYou will however have to act quick, as the patience of the High Chancellor is not infinite..."
- attrebus_interregnum_decision_tooltip:0 "How will Cyrodiil fare in the coming age?"
- attrebus_interregnum_decision_confirm:0 "Summon the Elder Council!"
- attrebus_interregnum_decision_required_tasks_tt:0 "You have fulfilled #R [THIS.Var('attrebus_required_tasks_complete').GetValue|0]#! of the 1 [required_tasks|E] to placate the Elder Council. You have #R [THIS.Var('attrebus_years_pseudo_emperor_left').GetValue|0] years#! left before the Elder Council runs out of patience."
- attrebus_interregnum_decision_optional_tasks_tt:0 "You have fulfilled #R [THIS.Var('attrebus_optional_tasks_complete').GetValue|0]#! of the 2 [optional_tasks|E]. These tasks do not buy you time with the Elder Council, but are a way to shape Tamriel in ways the Elder Council might not approve or flat out refuse to condone."
- attrebus_interregnum_decision_early_effect_tt:0 "You also can decide to hand back the powers given to you by the Elder Council earlier than what they would require. You will be unable to further shape Cyrodiil and push for your own ambitions, and the Interregnum will start."
- attrebus_interregnum_decision_death_effect_tt:0 "Should you die before the Elder Council asks you to hand power back to them, they will take control of the Imperial Isle.\n#N You will lose the Cyrodiilic Potentate title.\nEvery territory outside the [de_jure|E] primary title of your heir will be lost.#!"
- 
- attrebus_repay_debts_decision:0 "Repay your Debt to the Elder Council"
- attrebus_repay_debts_decision_desc:0 "The Elder Council funded your war effort against the Potentate, and you are expected to pay back. The vaults of the Imperial City helped alleviate somewhat the amount owed to the Council, but it was not nearly enough."
- attrebus_repay_debts_decision_tooltip:0 "Pay your debt to the Elder Council"
- attrebus_repay_debts_decision_confirm:0 "Send the funds to the High Chancellor."
- attrebus_potentate_attrebus_repay_debts_desc:0 "Your debt to the Elder Council will be considered repaid"
- attrebus_potentate_required_task_2_fulfilled_desc:0 "You #P fulfilled#! the second [required_task|E], [required_task_2|E]"
- attrebus_potentate_ec_debts_repaid_desc:0 "The Elder Councill will have access to a fuller treasury once they rule the Imperial Isle"
- 
- attrebus_rebuild_imperial_legion_decision:0 "Rebuild the Imperial Legion"
- attrebus_rebuild_imperial_legion_decision_desc:0 "The backbone of the Empires of Alessia and Reman, the Imperial Legion has been in disarray since the last days of the Potentate. Decades of negligence and Tsaesci biases have crippled this honorable institution, and we may have to rebuild it from the ground up..."
- attrebus_rebuild_imperial_legion_decision_tooltip:0 "Reform the Imperial Legion, and show once more to Tamriel that Cyrodiil is to be the center of the world!"
- attrebus_rebuild_imperial_legion_decision_confirm:0 "Form the First Legion!"
- attrebus_rebuild_imperial_legion_decision_1000_legionnaires:0 "Your [men_at_arms|E] are composed of at least 1000 fully reinforced #V $armored_legionaires$#!"
- attrebus_rebuild_imperial_legion_decision_300_lc:0 "Your [men_at_arms|E] are composed of at least 300 fully reinforced [light_cavalry|E]"
- attrebus_rebuild_imperial_legion_decision_good_knights:0 "You have at least #V 10 [knights|E]#! with #V 12 [prowess|E] or above#!"
- attrebus_potentate_attrebus_imperial_legion_rebuilt_desc:0 "The Imperial Legion will be rebuilt, and you will have the final say on its leader"
- attrebus_potentate_attrebus_will_increase_personal_power_desc:0 "This task will lead to an #P increase#! of your personal power and legitimacy." 
- attrebus_potentate_optional_task_3_fulfilled_desc:0 "You #P fulfilled#! the third [optional_task|E], [optional_task_3|E]"
  
  attrebus_draft_tsaesci_act_decision:0 "Draft the Tsaesci Act"
  attrebus_draft_tsaesci_act_decision_desc:0 "The Akaviri rule over Cyrodiil and Tamriel has been considered a dark part of the history of the province by most of the local rulers.\n\nEven after the Potentate fell, some provinces and rulers within the Imperial Province still cling to their old Akaviri ways, and the Elder Council tasked you with ensuring that none would be able to ever set foot in Cyrodiil and the Imperial Isle again, as to not once more see the province fall under Akaviri rule."
@@ -49,14 +22,6 @@
  attrebus_draft_tsaesci_act_decision_effect_desc:0 "After the Akaviri Act is drafted, every Akaviri ruler within your realm will have their land seized and awarded to you. Every Akaviri county will see its [culture|E] changed, but its [development|E] halved.\nThis effect will also be applied to any county that becomes part of your realm after the Act is passed."
  attrebus_tsaesci_county_title:0 "Tsaesci County Expelled"
  attrebus_tsaesci_county_desc:0 "The county of [title.GetBaseName] is ours, and its Akaviri population has been expelled."
- 
- attrebus_a_militant_faith_decision:0 "A Militant Faith"
- attrebus_a_militant_faith_decision_desc:0 "For centuries our faith, the [ROOT.Char.GetFaith.GetName], has co-existed with various minor cults and other religions. While this is a point of pride for most of our faithful, some parts of our clergy instead point how in the times to come, we need our faith to be strong. While I am not part of the clergy, I know that many would follow my lead..."
- attrebus_a_militant_faith_decision_tooltip:0 "The world changes, and so should our [faith|E]!"
- attrebus_a_militant_faith_decision_confirm:0 "A new age for the faithful?"
- attrebus_a_militant_faith_desc:0 "You will have the opportunity to change your faith:\n$EFFECT_LIST_BULLET$Keep [GetFaithDoctrine('doctrine_pluralism_pluralistic').GetBaseName] and receive a [fervor|E] bonus\n$EFFECT_LIST_BULLET$Reform into [GetFaithDoctrine('doctrine_pluralism_righteous').GetBaseName] and change [GetFaithDoctrine('tenet_adaptive').GetBaseName] for [GetFaithDoctrine('tenet_mendicant_preachers').GetBaseName]\n$EFFECT_LIST_BULLET$Reform into [GetFaithDoctrine('doctrine_pluralism_fundamentalist').GetBaseName] and change [GetFaithDoctrine('tenet_adaptive').GetBaseName] for [GetFaithDoctrine('tenet_armed_pilgrimages').GetBaseName]"
- attrebus_potentate_optional_task_1_fulfilled_desc:0 "You #P fulfilled#! the first [optional_task|E], [optional_task_1|E]"
- attrebus_holy_order_requirement:0 "You must found a [holy_order|E] and become its [holy_order_patron|E]"
  
  potentate_control_heartlands_decision:0 "The Heartlands Potentate"
  potentate_control_heartlands_decision_desc:0 "As Potentate of the late Reman Empire, we have been the Stewards of the Imperial Isle for centuries. Now that our time is almost over, we need to make sure that our people can have a place in Tamriel - and what better place to live in than the very heart of Cyrodiil?"
@@ -69,7 +34,7 @@
  create_orsinium_decision_desc:0 "The Kingdom of Orsinium has been established, razed and reestablished many times in Tamriel's history. A sufficiently powerful Orcish ruler could claim to be the new King of the Orcs and restore the old kingdom of the Pariah Folk. \n \n( #S Note#!: If you're a [duke|E], you'll only be able to expand Orsinium's [de_jure|E] borders within the [de_jure|E] [kingdom|E] you reestablish it in)."
  create_orsinium_decision_tooltip:0 "Create the Kingdom of Orsinium!"
  create_orsinium_decision_confirm:0 "For Orsinium!"
- create_orsinium_decision_cd:0 "Your [capital|E], which must not be inside another [kingdom|E]'s capital duchy, has #V $heritage_orsimeri_name$#! [heritage|E] [culture|E]"
+ create_orsinium_decision_cd:0 "Your [capital|E], which must not be inside another [kingdom|E]'s capital duchy, has #V $heritage_orcish_name$#! [heritage|E] [culture|E]"
  create_orsinium_decision_alt_cd:0 "Your [capital|E] is not located inside another [de_jure|E] [kingdom|E] capital [duchy|E] (for example, the Duchy of The Imperial Isle in the Kingdom of The Heartlands)"
  orsinium_hold_capital_duchy_cd:0 "You hold the [duchy|E] where your [capital|E] is located"
  orsinium_county_culture_cd:0 "Your [capital|E] is of your culture"
@@ -100,7 +65,7 @@
  reintegrate_orsinium_decision_tooltip:0 "Decimate pesky Orsinium!"
  reintegrate_orsinium_decision_confirm:0 "Orsinium is no more!"
  reintegrate_orsinium_decision_cd:0 "Control Orsinium's capital [duchy|E]"
- no_orsimer_king_vassal_cd:0 "Orsinium isn't held by an #V $heritage_orsimeri_name$#! [heritage|E] vassal"
+ no_orsimer_king_vassal_cd:0 "Orsinium isn't held by an #V $heritage_orcish_name$#! [heritage|E] vassal"
  orsinium_culture_regains_pariah_status:0 "The [regained_pariah_culture.GetName] culture regains their status as [pariah|E], signified by them regaining the #V Pariah Folk#! [innovation|E]"
  
  ### Nibenay
@@ -156,14 +121,6 @@
  nibenay_march_west_decision_confirm:0 "For Cyrodiil!"
  nibenay_march_west_decision.claim_colovia.tt:0 "If you press your claim over the title of Colovia via war, you will be crowned Emperor of Cyrodiil."
  nibenay_march_west_decision.no_colovia.tt:0 "In the event that no one claims the western half of Cyrodiil, you will be able to use a [casus_belli|E] over its parts, at an increased cost."
- 
- ### Others
- establish_lingua_tamrielis_decision:0 "Establish a Lingua Tamrielis"
- establish_lingua_tamrielis_decision_desc:0 "The various provinces of Tamriel all speak their own language, and both trade and inter-cultural relationships suffer from it. Now that I control vast swathes of territory, it might be wise to push for my language to be the official language of the Empire, and all of Tamriel should soon follow suit."
- establish_lingua_tamrielis_decision_tooltip:0 "Push for a new common tongue for Tamriel, your own!"
- establish_lingua_tamrielis_decision_confirm:0 "The [ROOT.Char.GetCulture.GetNameNoTooltip] reign supreme!"
- every_county_your_culture_gets_modifier:0 "Every [county|E], both in and outside your realm, of your culture"
- completely_controls_two_empires_ct:0 "You [completely_control|E] two [empires|E] with [de_jure|E] land"
 
  ###Nedic Confederation
  restore_nedic_kingdom_decision: "Unite Nedes"
