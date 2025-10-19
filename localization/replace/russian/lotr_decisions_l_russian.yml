@@ -479,13 +479,21 @@
  guild_of_venturers_modifier_desc: "Этот дом является покровителем воссозданной гильдии Морестранников."
  has_100_mariner_xp: "У вас есть #V 100#! [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] «Мореход» #weak ([GetTrait('lifestyle_mariner').GetName( GetNullCharacter )])#!"
 
+ decision_expand_tharagrondost: "Расширить Тараграндост"
+ decision_expand_tharagrondost_desc: "Тарагрондост долгое время был одинокой крепостью [Concept('dunedain', 'дунэдайн')|E] в землях Андраста, окружённой местными племенами андратрим. Но сейчас Андраст находится под нашим контролем. В наши земли начинает поступать торговля, многие гондорские поселенцы прибывают из восточных владений [Concept('gondor', 'Гондора')|E]. Пришло время Тарагрондосту стать городом, который мог бы сравниться по великолепию с другими великими городами [Concept('gondorians', 'гондорцев')|E]."
+ decision_expand_tharagrondost_tooltip: "Расширить Тараграндост, чтобы он стал величайшим городом Андраста"
+ decision_expand_tharagrondost_confirm: "Построим гавани и стены получше!"
+ andrast_urbanization_01: "Развитие всех графств провинции [GetTitleByKey('d_nan_enqui').GetNameNoTier] превышает 15"
  ### Arnorian Decision Subset ###
  decision_adopt_arnorian_culture: "Принять арнорскую культуру"
  decision_adopt_arnorian_culture_desc: "Когда-то люди [Concept('arnor', 'Арнора')|E] собирали могучие войска и создавали великие королевства. Увы, упадок и войны заставили нас стать теми, кем мы являемся сейчас, - странниками в дебрях, неизвестными многим и вызывающими уважение у немногих. Хотя это и спасло нас, но в то же время заставило потерять связь с путями наших предков. Если бы мы смогли восстановить своё государство, мы могли бы способствовать культурному возрождению древних путей Арнора."
  decision_adopt_arnorian_culture_confirm: "Восстаньте, сыны Арнора!"
  decision_adopt_arnorian_culture_tooltip: "Принять арнорскую культуру"
- decision_adopt_arnorian_culture_vassal_custom: "Каждый [vassal|El] с происходящей от арнорской культурой."
- decision_adopt_arnorian_culture_province_custom: "Каждое [county|El] в пределах вашей [Concept('realm', 'державы')|E] с происходящей от арнорской культурой."
+ decision_adopt_arnorian_culture_requirements: "Вы владеете землей и [Concept('realm_size', 'размер')|E] вашей державы - #bold 20#! или более графств"
+ decision_adopt_arnorian_culture_courtier_custom: "Каждый [Concept('courtier', 'придворный')|E] с происходящей от арнорской культурой"
+ decision_adopt_arnorian_culture_vassal_custom: "Каждый [vassal|El] с происходящей от арнорской культурой"
+ decision_adopt_arnorian_culture_province_custom: "Каждое [county|El] в пределах вашей [Concept('realm', 'державы')|E] с происходящей от арнорской культурой"
+ decision_adopt_arnorian_culture_get_innovations: "Арнорская [Concept('culture', 'культура')|E] получит все #L [culture.GetCollectiveNoun|l]ие#! [Concept('innovations', 'инновации')|E]"
 
  decision_integrate_the_northern_provinces: "Интегрировать северные провинции"
  decision_integrate_the_northern_provinces_desc: "Самый дальний север лишь номинально входил в состав Северного королевства, а после [Concept('lastalliance', 'Войны Последнего союза')|E] у [Concept('arnor', 'Арнора')|E] не хватило сил заявить о своих притязаниях. Именно в этом вакууме [Concept('witchking', 'Король-чародей')|E] создал ужасающее королевство [Concept('angmar', 'Ангмар')|E].\n\nЕсли северные пустоши наконец-то окажутся под контролем [Concept('dunedain', 'дунэдайн')|E], их можно будет подчинить Скипетру как в теории, так и на практике, а любая угроза с севера будет отведена навеки."
@@ -1171,6 +1179,7 @@
  embrace_eotheod_culture_counties_custom: "Каждое $rohirrim_collective_noun$ое, $leofring_collective_noun$ое или $framling_collective_noun$ое [county|El] в пределах вашей [Concept('realm', 'державы')|E]"
  decision_embrace_eotheod_culture_get_innovations: "[culture|E] эотеод получит все рохирримские, леофрингские и фрамлингские [innovations|El]"
  decision_eotheod_new_tradition: "Получит [Concept('tradition', 'традицию')|E] «[GetCultureTradition('tradition_a_people_reunited').GetName]»"
+ decision_eotheod_new_maa: "Доступны [men_at_arms|El] - [GetMaA('eotheod_vanguard').GetName]"
 
  rohan.0002.t: "Единые эотеод"
  rohan.0002.desc: "Со времён Эорла и его великого похода на юг никто не правил всеми эотеод.\n\nНекоторые отстали под началом Леофра, заселив южные долины Андуина, а некоторые вообще отказались уходить, влача тяжёлое и шаткое существование в землях северного Андуина. Но в конечном итоге все мы родня, несмотря на мелкие разногласия, возникшие между нами.\n\nНыне [Select_CString(unifier.IsFemale, 'великая', 'великий' )] [unifier.GetName] [Select_CString(unifier.IsFemale, 'приняла', 'принял' )] мантию [Select_CString(unifier.IsFemale, 'правительницы', 'правителя' )] единых эотеод, призвав наши народы отбросить то, что нас разделяет, и вновь собраться как единый народ."
@@ -1233,14 +1242,25 @@
  ### Shire Decisions ###
  #######################
  decision_integrate_westmarch_title: "Интегрировать Вестмарк"
- decision_integrate_westmarch_desc: "Не будучи частью дара короля Аргелеба II, Вестмарк ещё до падения Северного королевства был заброшен и захвачен дикой природой. В последние годы отважные хоббиты из Западной Чети начали проникать в западные районы белых низин, ободрённые видом проходящих мимо эльфов, которые путешествуют в Серые Гавани. В связи с этими факторами необходимо принять решение: интегрировать Вестмарк или оставить его дебрям Эриадора."
- decision_integrate_westmarch_confirm: "Больше не дебри"
- decision_integrate_westmarch_tooltip: "Вестмарк должен быть включён в состав Шира"
+ decision_integrate_westmarch_desc: "Не будучи частью дара короля Аргелеба II, Вестмарк ещё до падения [Concept('northernkingdom', 'Северного королевства')|E] был заброшен и захвачен дикой природой. В последние годы отважные [Concept('hobbits', 'хоббиты')|E] из Западного удела начали проникать в западные районы Белых низин, ободрённые видом проходящих мимо [Concept('elves', 'эльфов')|E], которые путешествуют в [Concept('greyhavens', 'Серые гавани')|E]. В связи с этими факторами необходимо принять решение: интегрировать Вестмарк в состав [Concept('shire', 'Шира')|E] или оставить его дебрям [Concept('eriador', 'Эриадора')|E]."
+ decision_integrate_westmarch_confirm: "Больше не дебри."
+ decision_integrate_westmarch_tooltip: "[GetTitleByKey('c_dunglan').GetName] должен быть включён в состав Шира"
 
  decision_integrate_buckland_title: "Интегрировать Бакленд"
- decision_integrate_buckland_desc: "Хотя Бакленд не был частью дара короля Аргелеба II, его заселили хоббиты из Мари, переправившиеся через Брендивайн под предводительством Горхендада Олдбака, чьи потомки с тех пор управляют этими землями как мастера Бакленда. Со временем часть Марей присягнула на верность мастеров в Бакских холмах, создав сложную ситуацию, которая долгое время оставалась неразрешённой. Если Шир установит контроль над Баклендом, его интеграция станет лёгкой задачей, положив конец сложной ситуации, которая принесёт пользу всем."
- decision_integrate_buckland_confirm: "Наконец-то интегрирован"
- decision_integrate_buckland_tooltip: "Бакленд должен быть включён в состав Шира"
+ decision_integrate_buckland_desc: "Хотя Бакленд не был частью дара короля Аргелеба II, его заселили [Concept('hobbits', 'хоббиты')|E] из Мари, переправившиеся через Брендивайн под предводительством Горхендада Олдбака, чьи потомки с тех пор управляют этими землями как мастера Бакленда. Со временем часть Марей присягнула на верность мастеров в Бакских холмах, создав сложную ситуацию, которая долгое время оставалась неразрешённой. Если [Concept('shire', 'Шир')|E] установит контроль над Баклендом, его интеграция станет лёгкой задачей, положив конец сложной ситуации, которая принесёт пользу всем."
+ decision_integrate_buckland_confirm: "Наконец-то интегрирован."
+ decision_integrate_buckland_tooltip: "[GetTitleByKey('c_buckland').GetName] должен быть включён в состав Шира"
+
+ decision_seize_bag_end_title: "Захватить Бэг-Энд"
+ decision_seize_bag_end_desc: "Когда-то Бэг-Энд был местом весёлых посиделок, теперь его можно превратить в награду. Стоить приказать своим наймитам занять смиал и превратить туннельный холм в настоящий офис старшего ширрифа: компактный, хорошо расположенный гарнизон, из которого патрули и рассыльные будут следить за порядком и внимательно следить за окрестностями. Пусть старая [Concept('hobbit', 'хоббичья')|E] нора превратится в символ власти: предупреждение тем, кто готов восстать против закона, и твердыню закона."
+ decision_seize_bag_end_confirm: "Захватить его!"
+ decision_seize_bag_end_tooltip: "[GetBuilding('wonder_bag_end_03').GetName] будет заменён [Concept('building', 'постройкой')|E] [GetBuilding('wonder_bag_end_02').GetName]"
+
+ decision_reform_hobbitry_in_arms_title: "Реформировать войска хоббитов"
+ decision_reform_hobbitry_in_arms_desc: "В [Concept('shire', 'Шире')|E] всегда ценились мир и простые удовольствия, однако прошлое показало, что даже тихий народ должен быть готов охранять свои очаги. Мы превратим хоббитов с оружием в руках из сборища фермеров в более подготовленное ополчение: короткие, разумные учения, улучшенное снаряжение, простое и исправное, всегда готовое защитить наши дома. Мы [Concept('hobbits', 'хоббиты')|E]: жизнерадостны, осторожны и любим мир, но готовы, когда того требует долг."
+ decision_reform_hobbitry_in_arms_confirm: "Всегда наготове, когда это нужно!"
+ decision_reform_hobbitry_in_arms.tt: "Доступны [men_at_arms|El] - [GetMaA('hobbit_first_bounders_troop').GetName], [GetMaA('hobbit_hedgewardens').GetName] и [GetMaA('hobbit_pony_riders').GetName]"
+
 
  #############################################
  ####### Angmar & Forodwaith Decisions #######
@@ -1308,6 +1328,17 @@
  decision_bellakar_felayan_rapprochement_desc: "С тёмных дней гражданской войны Фелайя действовала независимо от [Concept('bellakar', 'Беллакара')|E], не желая снова склоняться перед нами после нашей неспособности позаботиться об их безопасности или местных интересах. Если мы сможем доказать свою надёжность и наладить тесные отношения с их руководством, то, возможно, мы сможем вернуть их в мирное русло в обмен на опредёленные привилегии."
  decision_bellakar_felayan_rapprochement_confirm: "Мы должны объединиться, или падём"
 
+ decision_bellakar_vassalise_izindubeth: "Вассализировать изиндубета"
+ decision_bellakar_vassalise_izindubeth_tooltip: "Вассализировать изиндубета под властью беллакарской короны"
+ decision_bellakar_vassalise_izindubeth_desc: "#help Ради благочестия Ладноки, дочери моей, только Тумаквэ могут продолжать произносить моё имя в святилище Изиндутарика в назначенное ею время; но из-за своих грехов беллакарцы должны поклоняться мне только в тишине. И пусть никто не отвергает колир и не пренебрегает их культом, ибо так он выполнит мою волю.#!\n\nТаким было послание Эру, переданное изиндубетом Имратором Ар-Артарику «ан-Арани». Батан ан-Изинди никогда не выступал против монархии Тумаквэ, но по мере того, как власть короны отступала на юг, некогда существовавшие связи были утрачены. Поскольку Фелайя теперь восстановлена как часть собственно [Concept('bellakar', 'Беллакара')|E], возможно, изиндубета тоже можно вернуть под власть державы?"
+ decision_bellakar_vassalise_izindubeth_confirm: "Мы защитим всех Верных юга."
+
+ decision_tame_desert: "Усмирить пустынное пограничье"
+ decision_tame_desert_tooltip: "Усмирить протяжённое и беспокойное пустынное пограничье Беллакара"
+ decision_tame_desert_desc: "На протяжении бесчисленных лет бескрайние пески Моря Дюн были основным направлением, по которому чужеземные враги прибывали в Беллакар. Теджин, карсаги и даже аукары не всегда были настроены дружелюбно. Многие короли отказались от всех замыслов в отношении этих земель; каменистая местность уступила место бескрайним пескам и безжалостному солнцу, почти без отдыха и ресурсов. Старый аванпост в Эфалаке был заброшен именно по этой причине. Затраты были сочтены слишком высокими, а отдача - слишком малой. Но сейчас, когда держава вступает в эпоху расширения и процветания, возможно, такая цена стоила бы большей безопасности сердца Беллакара."
+ decision_tame_desert_confirm: "Мы больше не будем страдать от опустошений песков!"
+ conversion_west_dune_sea_desc: "Вы должны обратить не менее #V 50%#! [Concept('counties', 'графств')|E] [Concept('region', 'региона')|E] [GetGeographicalRegion('special_region_west_dune_sea').GetName] в свою конфессию"
+ tame_desert_effects_tt: "Многие белланарудские поселенцы отправятся в западное Море Дюн, обратив его часть в свою культуру."
  ### WIP ### issue #228 -> The Last Alliance of the Númenórean Realms decision
  decision_bellakar_x_gondor: "Отправить послов в Гондор"
  decision_bellakar_x_gondor_tooltip: "Попытаться восстановить старый союз с Гондором"
@@ -1429,6 +1460,61 @@
  decision_tandiland_tooltip: "Узурпировать титул [GetTitleByKey('k_an_balkumagan').GetNameNoTier] у адунайцев навеки"
  decision_tandiland_desc: "Рабовладельцы были полностью изгнаны из внутренних районов и глухих тандитских лесов и оттеснены к побережью, откуда они впервые пришли. Их власть ослабла, а мы стали сильными и свободными, объединившись в единый народ против угрозы с запада. Настало время мне провозгласить Антакавелай, леса побережья, и объединить мой народ раз и навсегда, что бы ни случилось."
  decision_tandiland_confirm: "Сменим копья на плуги, и не будем вести войн."
+
+ decision_envoy_haruzan: "Send Envoys to Haruzan"
+ decision_envoy_haruzan_tooltip: "Send envoys to Haruzan, hoping to gain some support from your kinsmen and fellow follower of Khäz-gramaze."
+ decision_envoy_haruzan_desc: "Though Haruzan may be far off from my realm, it is ruled by my mother's family and is the greatest realm to follow the true faith. Under the direct tutelage of Khäz-gramaze, their realm has prospered and they have begone the great work of restoring the fallen empire of Harwan. I am certain that if I were to send them envoys asking for their friendship, they would send whatever they could spare to see [ray|e] join them in their greatness."
+ decision_envoy_haruzan_confirm: "Send the envoys"
+ mardat_envoy_effects_tt: "You will receive support from Haruzan after your envoys return from their long journey north."
+
+ decision_stormhost_support: "Seek Support from the Stormhost"
+ decision_stormhost_support_tooltip: "Seek support from the Stormhost in your usurpation of [GetTitleByKey('k_ray').GetNameNoTier]"
+ decision_stormhost_support_desc: "Though the Anbalûkkhôri of the [stormhost|E] are descended from the followers of the vile Maliciam, they have forsaken their old allegiance for more than half a millennia. Now, they even plan to help Khäz-gramaze's cause and destroy the hated [bellakar|E]. \n\nThe Anbalûkkhôri are searching for any ally they can find to further their goal of destroying their northern foe. If I could position myself and [ray|E] as an ally in their efforts, it could greatly aid in my goal of usurping the power of the dying Solar Dynasty."
+ decision_stormhost_support_confirm: "This #Italic should#  go well..."
+ mardat_stormhost_support_effects_tt: "You will travel to Khorsâj, capital of the Stormhost, and attempt to negociate alliance terms with the Storm-Marshal."
+
+ decision_powan_support: "Seek Support in Pôwa"
+ decision_powan_support_tooltip: "Seek support of the Pôwan tribe of Ne Sargoà in your usurpation of [GetTitleByKey('k_ray').GetNameNoTier]"
+ decision_powan_support_desc: "Though the Pôwan tribes have always been weak and disunited, there have been some individual petty chieftains who have gathered some power and renown. Directly to the east of [ray|e], the tribe of Ne Sargoà has grown strong and has prospered from the trade routes with my realm. \n\nAs followers of the brutal goddess Shyra, I have no doubt they would gladly join in my eventual purge of [GetTitleByKey('k_ray').GetNameNoTier]. After all, does it truly matter if heretics and traitors die in the temples of Khäz-gramaze or those of Shyra?"
+ decision_powan_support_confirm: "I hope their bloodlust will guide them."
+ mardat_powan_support_effects_tt: "You will travel to Beghom, capital of Ne Sargoà and attempt to negociate alliance terms with the Pôwan chieftain of the region."
+
+ decision_nafarati_support: "Seek Support from the Nafarati"
+ decision_nafarati_support_tooltip: "Seek support from the Nafarati warriors and sellswords in your usurpation of [GetTitleByKey('k_ray').GetNameNoTier]"
+ decision_nafarati_support_desc: "Though the Nafarati are relative newcomers in the neighbourhood of [ray|e], they have already proven their worth as great warriors across Sîrayn. Ever since its arrival three generations ago, the tribe of Delritha has been among the major powers of Chennacatt to the south east of my realm. \n\nIf I could gain the loyalty of their chieftain either through gold or through promises of land, the Nafarati could prove useful allies against the Solar Dynasty."
+ decision_nafarati_support_confirm: "How much will their help cost, I wonder?"
+ mardat_nafarati_support_effects_tt: "You will travel to Junrik, capital of Delritha, and negociate with the Nafarati for their support."
+
+ decision_infiltration: "Infiltrate Bôzisha-Dâr"
+ decision_infilration_tooltip: "Establish a network of spies and agents in the capital of [GetTitleByKey('k_ray').GetNameNoTier]."
+ decision_infilration_desc: "If I am to take power in [ray|e], I must begin by instaling a network of loyal spies and agents in the realm's capital. Though there are few loyalists of Khäz-gramaze there, Bôzisha-Dâr's nature as a center of commerce makes it very easy to infiltrate by newcomers. \n\nOnce my agents will be in place, I will be able to begin to grow my power in the shadows of the capital and work towards the fall of the Solar Dynasty from the very heart of its power."
+ decision_infilration_confirm: "Prepare my agents."
+ decision_infilration_effects_tt: "You will send out your agents to try to infilrate Bôzisha-Dâr."
+
+ decision_guard_takeover: "Take over the Capital Guard"
+ decision_guard_takeover_tooltip: "Bribe or convince the guards of [GetTitleByKey('k_ray').GetNameNoTier]'s captial to aid you in an attempted coup."
+ decision_guard_takeover_desc: "If I am to take over [ray|e] from the shadows, I must ensure the support of the city guard of Bôzisha-Dâr. Without them, I would be left with no practical way of taking over the city without a bloody and likely long siege allowing internal rivals to attempt to exploit the opportunity \n\nTo take over the guard, I will have win win their loyalty either through bribery or by convincing them of my power and of the justness of my cause."
+ decision_guard_takeover_confirm: "Ask my agents make contact with the guard's leaders."
+ decision_guard_takeover_effects_tt: "You will decide how to convince the leadership of the capital guards to support you against the Kralyi."
+
+ decision_rob_merchants: "Exploit Trans-Haradric Trade"
+ decision_rob_merchants_tooltip: "Hire thugs and bandits to weaken central control over trade and enrich yourself in the process."
+ decision_rob_merchants_desc: "For the whole of its history, trade has been the lifeblood of [ray|e] and without it the realm would quickly fall into economic despair. To prevent such a thing from happening, the Kralyi and the lords of [GetTitleByKey('k_ray').GetNameNoTier] put great effort in ensuring the safety of all merchants that cross through the realm. \n\nIf this trade were to weaken, it could prove a fatal blow to the already weak Kanivâtra rule. If I were to sponsor the very bandits I am tasked with defeating, I could exploit my position on the edges of [GetTitleByKey('k_ray').GetNameNoTier] even further and both enrich myself and perhaps cripple the central economy of the realm."
+ decision_rob_merchants_confirm: "Such a venture would be profitable indeed..."
+ decision_rob_merchants_effects_tt: "You will begin installing a large scale operation aimed at crippling the realm's economy while enriching yourself."
+
+ decision_convert_radicals: "Convert the Masses of Bôzisha-Dâr"
+ decision_convert_radicals_tooltip: "Attempt to convert the population of [GetTitleByKey('c_bozisha_dar').GetNameNoTier] to the Cult of Khäz-gramaze."
+ decision_convert_radicals_desc: "There are many in the great capital city of [ray|e] who are unsatisfied with the Aûdrat Vâtra. Indeed, the Vâtraists' weakness and lack of any true zeal or aim other than aquiring ever more wealth has lead to many losing their faith. If I could bring the darkness of Khäz-gramaze to those lost souls, I could make them into loyal forces in the coming struggle for power in [GetTitleByKey('k_ray').GetNameNoTier]. \n\nAll I would need to do is task my agents to infiltrate my most loyal and zealous priest into Bôzisha-Dâr and have them exploit the foolish tolerance of the Kanivâtra to spread the true faith to the city's people."
+ decision_convert_radicals_confirm: "The hearts of the city will be mine."
+ decision_convert_radicals_effects_tt: "You will try to convert many of the people of Bôzisha-Dâr into fanatical worshipers of Khäz-gramaze so that they can serve to destabilize the capital as well as grow your influence over the city."
+
+ decision_block_port: "Gather a Blockading Fleet"
+ decision_block_port_desc: "If I am to secure my power in [GetTitleByKey('c_bozisha_dar').GetNameNoTier], I will not only need to take over the city gates and walls but also its great havens. Indeed, the capital's grand port is the true source of its, and much of [ray|e]'s, wealth and power as the center of all trade flowing through the [bayoftulwang|e]. \n\nWithout control over the ports, not only could the Kanivâtra or their loyalists attempt to escape the city during my rise to power but I would also struggle to impose my will on any other dissidents within the city. With [GetTitleByKey('d_suza_riy').GetNameNoTier] being too far inland to build a grand fleet, I will need to find myself one closer to my target..."
+ decision_block_port_tooltip: "Attempt to gather a fleet to blockade the ports of [GetTitleByKey('c_bozisha_dar').GetNameNoTier]."
+ decision_block_port_confirm: "Surely some captains will join my cause..."
+ decision_block_port_effects_tt: "You send out your agents to find captains willing to serve your cause so that their ships may aid you in blockading the havens of [GetTitleByKey('c_bozisha_dar').GetNameNoTier] during your coup."
+
 
  ################################
  ####### Tedjin Decisions #######

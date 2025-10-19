@@ -558,20 +558,6 @@
  building_royal_pavilion_03_desc: "Кровавое жертвоприношение - чрезвычайно важный ритуал для сложного и стратифицированного общества, и постоянные жертвоприношения обеспечивают сохранение порядка. Фундамент заложен черепами всех народов: захваченных рабов и великих воинов, непокорных мятежников и любимых придворных."
  building_royal_pavilion_04: "Великие укрепления"
  building_royal_pavilion_04_desc: "Это чудо [Concept( 'middleearth', 'Средиземья' )|E], огромная мобильная крепость, эквивалентная самому городу, которая может перемещаться практически на любое расстояние в пределах королевства и вселять страх в любого враждебно настроенного наблюдателя, перемещаясь с места на место. Ни один злоумышленник, имеющий злые намерения по отношению к владельцам королевского павильона, не может пройти мимо охраны у входа."
- stationed_monster_damage_mult: "[damage|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
- stationed_monster_toughness_mult: "[toughness|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
- stationed_monster_pursuit_mult: "[pursuit|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
- #monster_pursuit_mult: "[pursuit|E] [Concept('monster', 'монстров')|E]"
- stationed_monster_screen_mult: "[screen|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
- #monster_screen_mult: "[screen|E] [Concept('monster', 'монстров')|E]"
- stationed_monster_damage_add: "[damage|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
- monster_damage_add: "[damage|E] [Concept('monster', 'монстров')|E]"
- stationed_monster_toughness_add: "[toughness|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
- monster_toughness_add: "[toughness|E] [Concept('monster', 'монстров')|E]"
- stationed_monster_pursuit_add: "[pursuit|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
- #monster_pursuit_add: "[pursuit|E] [Concept('monster', 'монстров')|E]"
- stationed_monster_screen_add: "[screen|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
- #monster_screen_add: "[screen|E] [Concept('monster', 'монстров')|E]"
 
  # Zekhetz Palace Complex
  building_type_wonder_zekhetz_abrakhan_original: "Зехетз Абрахан"
@@ -696,15 +682,11 @@
  building_republic_arsenal_03: "Большой укреплённый республиканский арсенал"
  building_republic_arsenal_03_desc: "Этот сильно укреплённый комплекс верфей и арсеналов - не что иное, как промышленный комплекс, сосредоточенный вокруг доков столицы республики. Центр большой (и растущей) морской торговой империи."
 
-
-
-
  # WASTELANDS
  building_type_wilderness_01: "Дикая местность"
  building_type_wilderness_01_desc: "Земли с опасными врагами, которые не могут поддерживать человеческую жизнь, если их не колонизировать"
  building_wilderness_01: "Дикая местность"
  building_wilderness_01_desc: "Земли с опасными врагами, которые не поддерживают человеческую жизнь, если их не колонизировать"
-
  building_type_settlement_01: "Поселение"
  building_type_settlement_01_desc: "Позволяет использовать дикую местность, частично уменьшая воздействие окружающих врагов"
  building_settlement_01: "Глухая деревня"
@@ -1313,7 +1295,13 @@
  building_wonder_tharagrondost_01_desc: "[Concept( 'numenorean', 'Нуменорские' )|E] колонисты впервые основали Тарагрондост около 2300 года В.Э. Расположенный на крутом шпиле скалы, возвышающемся над небольшой бухтой у основания мыса Андраста, город был призван защитить его от коренного населения. Однако основание Пеларгира как центра переселения Верных в залив Бельфалас несколькими десятилетиями позже быстро привело к тому, что Тарагрондост стал чем-то вроде изолированного захолустья."
 
  building_wonder_tharagrondost_02: "Цитадель Тарагрондост"
- building_wonder_tharagrondost_02_desc: "Построенная в 1652 году [ageTA|E] для защиты западного [Concept( 'gondor', 'Гондора' )|E] от морских разбойников, цитадель Тарагрондост является западной гаванью Королевского флота. Изначально она являлась лишь придатком Анфаласа, но со временем превратилась из королевского гарнизона в вотчину лордов Андраста. \n\nОднако контроль [Concept( 'gondorian', 'гондорцев' )|E] над регионом остаётся в основном номинальным, а цитадель Тарагрондост служит свидетельством их притязаний на внутренние земли, где мало [dunedain|El]. Даже не имея контроля над землей, Тараграндост выполняет свою обязанность по охране западных морей."
+ building_wonder_tharagrondost_02_desc: "Построенная в 1652 году [ageTA|E] для защиты западного [Concept( 'gondor', 'Гондора' )|E] от морских разбойников, цитадель Тарагрондост является западной гаванью Королевского флота. Изначально она являлась лишь придатком Анфаласа, но со временем превратилась из королевского гарнизона в вотчину лордов Андраста. \n\nОднако контроль [Concept( 'gondorian', 'гондорцев' )|E] над регионом остаётся в основном номинальным, а цитадель Тарагрондост служит свидетельством их притязаний на внутренние земли, где мало [dunedain|El]. Даже не имея контроля над землей, Тарагрондост выполняет свою обязанность по охране западных морей."
+
+ building_type_wonder_tharagrondost_expanded: "Тарагрондост"
+ building_type_wonder_tharagrondost_expanded_desc: "Могущественный город Тарагрондост, главный город и цитадель Андраста."
+ building_wonder_tharagrondost_expanded: "Великий город Тарагрондост"
+ building_wonder_tharagrondost_expanded_desc: "Тарагрондост, некогда одинокая цитадель [Concept('dunedain', 'дунэдайн')|E] в Андрасте, стал центром региона. Большие гавани и более высокие стены были построены при поддержке лучших [Concept('gondorians', 'гондорских')|E] зодчих. Меха, мед и деревья из Андраста отправляются из его порта в сердце Гондора. Его могучая цитадель защищает местных жителей от угрозы набегов. После многих лет мудрого правления Тарагрондост действительно стал одним из величайших городов [Concept('gondor', 'Гондора')|E]."
+ tharagrondost_building: "Решение «Расширить Тарагрондост» завершено"
 
  #City of Serelond
  building_type_wonder_serelond: "Серелонд"
@@ -1411,22 +1399,25 @@
  building_wonder_eredrim_monument_02_desc: "Когда люди гор собираются вместе, гармония царит очень редко. Интриги и коварные заговоры - обычное дело среди них, и нужна сильная рука, чтобы объединить их ради единой цели.\n\nТакой сильной руки эредрим не видели со времен Адорна, которого они называли «Горным отцом». Если бы появился достойный наследник столь величественного титула, то именно здесь, в Зале Совета горцев, он должен был бы заявить о своих притязаниях..."
 
  ### MORDOR WONDERS ###
-
  #Barad-Dur
  building_type_wonder_baraddur: "Барад-дур"
  building_type_wonder_baraddur_desc: "Великая крепость Тёмного Властелина [Concept('sauroncharacter', 'Саурона')|E], чёрная цитадель, из которой исходит злоба."
- building_wonder_baraddur: "Барад-дур"
+ building_wonder_baraddur: "Башня Барад-дур"
  building_wonder_baraddur_desc: "Барад-дур - великая крепость Тёмного Властелина [Concept( 'sauroncharacter', 'Саурона' )|E], возвышающаяся высоко над равнинами Горгорота в [Concept( 'mordor', 'Мордоре' )|E]. Пронзая небо чёрным столбом, он, несомненно, опирается на силу Тёмного Властелина, ибо ни одно здание не могло остаться нетронутым на такой высоте. В его необъятности находятся бесконечные склады, пыточные камеры и кузницы, и все его усилия сосредоточены на исполнении падших замыслов Саурона. \n\nНа вершине башни, пылая огнём, Великое Око обозревает свои владения и обдумывает свой следующий шаг. Здесь, как нигде, власть Саурона абсолютна."
- building_wonder_baraddur_01: "Основание"
+ building_wonder_baraddur_01: "Основание Барад-дура"
  building_wonder_baraddur_01_desc: "Основание Барад-дура можно разрушить только с уничтожением Кольца."
  building_wonder_baraddur_02: "Руины Барад-дура"
  building_wonder_baraddur_02_desc: "С падением [Concept('sauroncharacter', 'Саурона')|E] Тёмная башня рухнула, но её фундамент устоял, а Единое Кольцо осталось нетронутым."
- building_wonder_baraddur_03: "Барад-дур"
+ building_wonder_baraddur_03: "Башня Барад-дур"
  building_wonder_baraddur_03_desc: "Барад-дур - великая крепость Тёмного Властелина [Concept('sauroncharacter', 'Саурона')|E], возвышающаяся высоко над равнинами Горгорота в [Concept('mordor', 'Мордоре')|E]. Пронзая небо чёрным столбом, он, несомненно, опирается на силу Тёмного Властелина, ибо ни одно здание не могло остаться нетронутым на такой высоте. В его необъятности находятся бесконечные склады, пыточные камеры и кузницы, и все его усилия сосредоточены на исполнении падших замыслов Саурона. \n\nНа вершине башни, пылая огнём, Великое Око обозревает свои владения и обдумывает свой следующий шаг. Здесь, как нигде, власть Саурона абсолютна."
- building_wonder_baraddur_04: "Ангатхрай, Огненное ущелье"
- building_wonder_baraddur_04_desc: ""
- building_wonder_baraddur_05: "Трон-святилище Саурона"
- building_wonder_baraddur_05_desc: "Верхние этажи спроектированы из адамантинового материала, созданного Тёмным Властелином."
+
+ #Black Gate
+ building_type_wonder_black_gate: "Чёрные врата Мордора"
+ building_type_wonder_black_gate_desc: "Зловещие и внушительные Чёрные врата нависают над всеми, кто стремится попасть в Мордор."
+ building_wonder_black_gate: "Черные врата Мордора"
+ building_wonder_black_gate_desc: "Чёрные врата, или «Мораннон», были вратами Удуна в северо-западном [Concept( 'mordor', 'Мордоре' )|E] и самым укреплённым и прямым входом во владения [Concept( 'sauroncharacter', 'Саурона' )|E]. Они были возведены в неприступной стене из железа и черного камня, которая простиралась от Пепельных гор на севере до Эфель Дуат на западе. \n\nПостроенные Сауроном во [Concept( 'secondage', 'Вторую эпоху' )|E], Чёрные врата были дополнительно укреплены [dunedain|El] в начале [Concept( 'thirdage', 'Третьей' )|E], чтобы помочь поддерживать наблюдение за Мордором. В наши дни труды [dunedain|El] обращены против них, ибо Чёрные врата закрыты для всех врагов Тёмного властелина."
+ building_wonder_morannon: "Мораннон"
+ building_wonder_morannon_desc: "#TOLKIENQUOTE «Они подошли к запустению, расстилавшемуся перед [Concept('mordor', 'Мордором')|E]: вечный памятник тёмному труду его рабов, который должен был продолжаться, когда все их цели были сведены на нет; земля осквернённая, больная, неизлечимая, если только Великое море не войдёт и не омоет её забвением».#!\n\nЗа Моранноном, охраняющим страшный перевал Кирит Горгор, следят недремлющие глаза, и он всегда готов противостоять любому нападению на земли [Concept('sauroncharacter', 'Саурона')|E]. Он открыт только для союзников [Concept('mordor', 'Мордора')|E], которые доставляют в Чёрную страну как дань, так и воинов."
 
  #Cirith Ungol
  building_type_wonder_cirith_ungol_01: "Кирит Унгол"
@@ -1437,17 +1428,20 @@
  building_wonder_cirith_ungol_02_desc: "Бывшая [Concept('gondorian', 'гондорская')|E] сторожевая башня, Кирит Унгол был захвачен [Concept('witchkingshort', 'Королём-чародеем')|E] [Concept('angmar', 'Ангмара')|E] после разрушения [Concept('arnor', 'Арнора')|E] и возвращения в Мордор, и башня, некогда охранявшая границы [Concept('gondor', 'Гондора')|E], теперь используется для укрепления границ Мордора."
  building_wonder_cirith_ungol_03: "Восстановленный Кирит Унгол"
  building_wonder_cirith_ungol_03_desc: "Отвоёванный у сил [Concept('mordor', 'Мордора')|E], Кирит Унгол всегда будет защищать сердце [Concept('gondor', 'Гондора')|E] от тьмы Мордора."
-
  building_type_wonder_cirith_ungol_original: "Кирит Унгол"
  building_type_wonder_cirith_ungol_original_desc: "[Concept('gondorian', 'Гондорская')|E] сторожевая башня, построенная для наблюдения за [Concept('mordor', 'Мордором')|E]."
  building_wonder_cirith_ungol_original: "Кирит Унгол"
  building_wonder_cirith_ungol_original_desc: "[Concept('gondorian', 'Гондорская')|E] сторожевая башня Кирит Унгол, построенная для наблюдения за [Concept('mordor', 'Мордором')|E] после [Concept('warlastalliance', 'Войны Последнего союза')|E]."
 
  #Orodruin
- building_type_wonder_orodruin: "Роковая Гора"
- building_type_wonder_orodruin_desc: "Вулкан, в котором было выковано Единое Кольцо, и единственное место, где его можно уничтожить."
- building_wonder_orodruin: "Роковая Гора"
- building_wonder_orodruin_desc: "Высокоактивный вулкан, Роковая Гора, также известная как Ородруин и Амон Амарт, была местом, где Саурон выковал [rulingring|E]. Пепел вулкана - это и щедрость Нурна, обогащающая его душу, и опустошение Горгорота, которое душит всё живое в этом регионе. Гора, кажется, связана с волей и силой [Concept( 'sauroncharacter', 'Саурона' )|E] и является горнилом для самой тёмной магии."
+ building_type_wonder_orodruin_01: "Ородруин"
+ building_type_wonder_orodruin_01_desc: "Вулкан, в котором было выковано [Concept('onering', 'Единое Кольцо')|E], и единственное место, где его можно уничтожить."
+ building_wonder_orodruin_01: "Dorment Orodruin"
+ building_wonder_orodruin_01_desc: "Once a furnace of ruin, the [Glossary('Orodruin','orodruin_gloss')] now stands quiet and ash-veiled — a brooding cone of cracked basalt bearing the scars of elder conflagrations. Though outwardly still, an old heat yet broods beneath the stone; its slopes yield dark, fertile earth fed by ancient fire, and to those who would claim its heights it grants dark renown and a lingering, whispering unease."
+ building_wonder_orodruin_02: "Роковая гора"
+ building_wonder_orodruin_02_desc: "Высокоактивный вулкан, [Concept('mount_doom', 'Роковая гора')|E], также известная как [Glossary('Ородруин','orodruin_gloss')] и [Glossary('Амон Амарт','amon_amarth_gloss')], была местом, где [Concept('sauroncharacter', 'Саурон')|E] выковал [rulingring|E]. Пепел вулкана - это и щедрость [Concept('nurn', 'Нурна')|E], обогащающая его душу, и опустошение Горгорота, которое душит всё живое в этом регионе. Гора, кажется, связана с волей и силой [Concept( 'sauroncharacter', 'Саурона' )|E] и является горнилом для самой тёмной магии."
+ building_wonder_orodruin_03: "Cracked Orodruin"
+ building_wonder_orodruin_03_desc: "The shattered husk of [mount_doom|E] after the fall of [sauroncharacter|E] lies broken and mute. Its crown is rent, its flanks glazed with blackened glass and ash; the great fires that once seethed within are quenched, yet old heat and memory linger in fissures that sigh a faint, sulphurous breath. No longer a forge of dominion, it endures as a hollow monument to undoing: grievous, solemn, and forever marked by the ruin it once wrought."
 
  #Thaurband
  building_type_wonder_thaurband_01: "Таурбанд"
@@ -1463,30 +1457,18 @@
  building_type_wonder_thaurband_good_01_desc: "Нурн больше не скован цепями! Железо, использовавшееся для угнетения этой земли слугами [Concept('sauroncharacter', 'Саурона')|E], было перековано в семь парных железных столбов, которые стоят в центре старых невольничьих рынков, чтобы никто и никогда больше не испытал подобной участи."
  building_wonder_thaurband_good_01: "Монумент Свободы"
  building_wonder_thaurband_good_01_desc: "Нурн больше не скован цепями! Железо, использовавшееся для угнетения этой земли слугами [Concept('sauroncharacter', 'Саурона')|E], было перековано в семь парных железных столбов, которые стоят в центре старых невольничьих рынков, чтобы никто и никогда больше не испытал подобной участи."
-
  building_type_wonder_thaurband_good_02: "Роща Яванн"
  building_type_wonder_thaurband_good_02_desc: "Пепел старых невольничьих рынков в центре Таурбанда теперь служит удобрением для священной рощи, посвященной Яванн."
  building_wonder_thaurband_good_02: "Роща Яванн"
  building_wonder_thaurband_good_02_desc: "Пепел старых невольничьих рынков в центре Таурбанда теперь служит удобрением для священной рощи, посвященной Яванн."
-
  building_type_wonder_thaurband_good_03: "Дом Нурна"
  building_type_wonder_thaurband_good_03_desc: "Нурниаги больше не властвуют над нурнотами, истязая их на огромных рабских плантациях. Там, где раньше располагались рынки, предназначенные для продажи нурнотов, теперь стоит Дом Нурна, где нурноты обсуждают и проводят в жизнь законы страны."
  building_wonder_thaurband_good_03: "Дом Нурна"
  building_wonder_thaurband_good_03_desc: "Нурниаги больше не властвуют над нурнотами, истязая их на огромных рабских плантациях. Там, где раньше располагались рынки, предназначенные для продажи нурнотов, теперь стоит Дом Нурна, где нурноты обсуждают и проводят в жизнь законы страны."
-
  building_type_wonder_thaurband_good_04: "Новый рынок"
  building_type_wonder_thaurband_good_04_desc: "Таурбад всегда был известен своими рынками, и хотя город под властью нурнот больше не торгует рабами, он по-прежнему является крупным экономическим центром [Concept('nurn', 'Нурна')|E], которому требовался рынок значительных размеров... просто жаль, что единственное доступное для этого место - старые невольничьи рынки."
  building_wonder_thaurband_good_04: "Новый рынок"
  building_wonder_thaurband_good_04_desc: "Таурбад всегда был известен своими рынками, и хотя город под властью нурнот больше не торгует рабами, он по-прежнему является крупным экономическим центром [Concept('nurn', 'Нурна')|E], которому требовался рынок значительных размеров... просто жаль, что единственное доступное для этого место - старые невольничьи рынки."
-
-
- #Black Gate
- building_type_wonder_black_gate: "Чёрные Врата Мордора"
- building_type_wonder_black_gate_desc: "Зловещие и внушительные Чёрные Врата нависают над всеми, кто стремится попасть в Мордор."
- building_wonder_black_gate: "Черные Врата Мордора"
- building_wonder_black_gate_desc: "Чёрные Врата, или «Мораннон», были вратами Удуна в северо-западном [Concept( 'mordor', 'Мордоре' )|E] и самым укреплённым и прямым входом во владения [Concept( 'sauroncharacter', 'Саурона' )|E]. Они были возведены в неприступной стене из железа и черного камня, которая простиралась от Пепельных гор на севере до Эфель Дуат на западе. \n\nПостроенные Сауроном во [Concept( 'secondage', 'Вторую Эпоху' )|E], Чёрные Врата были дополнительно укреплены [dunedain|El] в начале [Concept( 'thirdage', 'Третьей' )|E], чтобы помочь поддерживать наблюдение за Мордором. В наши дни труды [dunedain|El] обращены против них, ибо Чёрные Врата закрыты для всех врагов Тёмного Властелина."
- building_wonder_morannon: "Мораннон"
- building_wonder_morannon_desc: "#TOLKIENQUOTE «Они подошли к запустению, расстилавшемуся перед [Concept('mordor', 'Мордором')|E]: вечный памятник тёмному труду его рабов, который должен был продолжаться, когда все их цели были сведены на нет; земля осквернённая, больная, неизлечимая, если только Великое море не войдёт и не омоет её забвением».#!\n\nЗа Моранноном, охраняющим страшный перевал Кирит Горгор, следят недремлющие глаза, и он всегда готов противостоять любому нападению на земли [Concept('sauroncharacter', 'Саурона')|E]. Он открыт только для союзников [Concept('mordor', 'Мордора')|E], которые доставляют в Чёрную страну как дань, так и воинов."
 
  ### HARAD WONDERS ###
 
@@ -1534,10 +1516,10 @@
  building_wonder_ancalimon_desc: "Город Анкалимон назван в честь одноименного [Concept( 'numenorean', 'нуменорского' )|E] короля. Единственное, что осталось нетронутым с тех дней, - это двухъярусные оборонительные стены и бронзовая статуя высотой тридцать футов, которая стоит на главной площади города. Город остаётся важным торговым узлом на торговых путях Харнена, и отсюда Тар-Анкалимон сурово следит за всеми подданными своего бывшего королевства - [haradrim|El], [Concept( 'adunaic', 'адунайцами' )|E] или [Concept( 'gondorian', 'гондорцами' )|E]."
 
  #Khand
- building_type_wonder_starlurtsa_khand_01: "Старлурза Кханд"
- building_type_wonder_starlurtsa_khand_01_desc: "Южная столица вариагов [Concept( 'khand', 'Кханда' )|E], Старлурза Кханд на протяжении многих поколений была центром войны, вариаги правили отсюда, строя свой великий город на слезах и крови тех, кого они сокрушили под копытами."
+ building_type_wonder_starlurtsa_khand_01: "Стурлурза Кханд"
+ building_type_wonder_starlurtsa_khand_01_desc: "Южная столица вариагов [Concept( 'khand', 'Кханда' )|E], Стурлурза Кханд на протяжении многих поколений была центром войны, вариаги правили отсюда, строя свой великий город на слезах и крови тех, кого они сокрушили под копытами."
  building_wonder_starlurtsa_khand_01: "Оватакион"
- building_wonder_starlurtsa_khand_01_desc: "Сочетание мавзолеев и памятников, Оватакионы, «Монументы Оваты», относятся к внушительным сооружениям, которые доминируют в центре Старлурзы Кханд. Как следует из их названий, эти памятники посвящены верховным королям [Concept( 'khand', 'Кханда' )|E], все они принимали тронное имя «Овата», отказываясь от прежних имён. Это сделано в честь и память Оваты, первого объединителя вариагов во [Concept( 'secondage', 'Вторую Эпоху' )|E].\n\nОватакионы построены на рабском труде и товарах, завоёванных Оватами во время их правления, а их размеры показывают силу и престиж правящего Оваты. \n\nОдин из из девяти Оват, правивший во времена Войны Кольца, Овата VIII не заслужил Оватакиона из-за своего полного унижения и смерти от рук Бунтига из Медлошукайна."
+ building_wonder_starlurtsa_khand_01_desc: "Сочетание мавзолеев и памятников, Оватакионы, «Монументы Оваты», относятся к внушительным сооружениям, которые доминируют в центре Стурлурзы Кханд. Как следует из их названий, эти памятники посвящены верховным королям [Concept( 'khand', 'Кханда' )|E], все они принимали тронное имя «Овата», отказываясь от прежних имён. Это сделано в честь и память Оваты, первого объединителя вариагов во [Concept( 'secondage', 'Вторую Эпоху' )|E].\n\nОватакионы построены на рабском труде и товарах, завоёванных Оватами во время их правления, а их размеры показывают силу и престиж правящего Оваты. \n\nОдин из из девяти Оват, правивший во времена Войны Кольца, Овата VIII не заслужил Оватакиона из-за своего полного унижения и смерти от рук Бунтига из Медлошукайна."
  building_wonder_starlurtsa_khand_02: "Поле Тысячи копыт"
  building_wonder_starlurtsa_khand_02_desc: "За стенами Стурлурзы раскинулось зловещее Поле Тысячи копыт, где в прошлом Оваты из Кханда собирали свои огромные воинства, прежде чем отправиться в поход, чтобы принести быструю смерть своим врагам. Здесь земля постоянно истоптана множеством всадников, так как владыки Кханда часто устраивают торжественные парады в этом месте."
  building_type_wonder_madh_ortogh: "Мадх Ортог"
@@ -1548,10 +1530,14 @@
  building_type_wonder_hron_tumrakhi_desc: "Впервые основанный во времена правления Оваты I, великий храм Хрон Тумрахи является религиозным центром вариагов. На протяжении многих поколений внушительное здание превратилось в мощный комплекс для кхандского духовенства, непреходящее средоточие власти, как мирской, так и духовной, несмотря на его негостеприимное окружение."
  building_wonder_hron_tumrakhi: "Резиденция Вракарата"
  building_wonder_hron_tumrakhi_desc: "В центре грандиозного храмового комплекса Хрон Тумрахи находится резиденция Вракарата (Ати'Вракарати, буквально «Трон Вракаратов») - старейшее здание в комплексе, но в то же время и самое величественное. Ожидается, что все, кто занимает достаточное положение среди верующих, будут делать пожертвования на его содержание и постоянное обновление. Здесь живёт Верховный вракарат, принимает посетителей и обращается с воззваниями к верующим. Архивы [Concept( 'khand', 'Кханде' )|E], расположенные здесь, являются одними из самых полных в центральном [middleearth|E], но доступны лишь немногим.\n\nНекоторые говорят, что в его стенах скрыты тайные библиотеки, хранящие мрачные секреты магии и преданий."
- building_wonder_ovatharak: "Оватаррак"
- building_wonder_ovatharak_desc: "Крепость Оватаррак была основана во времена правления Оваты V, чтобы утвердить кхандское господство над землями Лурмсакуна. Позже крепость стала главным оплотом Лурмсакуна, где в трудные времена собирались многие местные племена."
- building_type_wonder_ovatharak: "Оватаррак"
- building_type_wonder_ovatharak_desc: "Могучая крепость, возведенная вариагами на высоком холме, Оватаррак - одно из величайших укреплений в Ближнем Хараде."
+ building_wonder_ovatharak_fortress: "Оватаррак"
+ building_wonder_ovatharak_fortress_desc: "Крепость Оватаррак была основана во времена правления Оваты V, чтобы утвердить кхандское господство над землями Лурмсакуна. Позже крепость стала главным оплотом Лурмсакуна, где в трудные времена собирались многие местные племена."
+ building_type_wonder_ovatharak_fortress: "Оватаррак"
+ building_type_wonder_ovatharak_fortress_desc: "Могучая крепость, возведенная вариагами на высоком холме, Оватаррак - одно из величайших укреплений в Ближнем Хараде."
+ building_wonder_ovatharak_capital: "Great City of Ôvatharak"
+ building_wonder_ovatharak_capital_desc: "The capital of renewed Lûrmsakûn, Ôvatharak became one of the greatest cities in the Eastern [harad|E]. It serves as a symbol of resilience and unity for the Lûrmsakari people and as a memory of previous depredations of Khandish overlords. Now the trade began to flow region again as in the days of ancient kings. A building material from the monuments and mausoleums of Ôvathakion is used to expand city and its mighty walls."
+ building_type_wonder_ovatharak_capital: "Great City of Ôvatharak"
+ building_type_wonder_ovatharak_capital_desc: "A new capital of Lûrmsakûn, Ôvatharak stands as a symbol of resilience and might of restored to the ancient glory [haradrim|E] kingdom."
 
  ### UMBAR WONDERS ###
 
@@ -1812,6 +1798,18 @@
  building_wonder_mithlond_north_01: "Митлонд (Северная гавань)"
  building_wonder_mithlond_north_01_desc: "[Concept('mithlond', 'Митлондские')|E] гавани-близнецы, Серые Гавани, были столицей и сердцем Линдона. Именно из Митлонда [Concept('elves', 'эльфы')|E], уставшие от тягот смертных земель, отплывали в [valinor|E] .\n\nВ то время как в [Concept('forlindon', 'Форлиндоне')|E] и [Concept('harlindon', 'Харлиндоне')|E] (образованных из остатков затонувшего [Concept('beleriand', 'Белерианда')|E]) остались коренные эльфы, такие как лаэгрим, или вернувшиеся [Concept('noldorelvesexiles', 'изгнанники-нолдор')|E], из числа [noldorelves|El]-сторонников Феанора из Хелеворна. География Митлонда была заново изучена во время потрясений [Concept('warofwrath', 'Войны Гнева')|E] и стала домом для эльфийских [Concept('elfexiles', 'изгнанников')|E], собранных из многих народов расколовшихся Перворожденных.\n\nГавань была основана Гиль-галадом, последним Верховным королём нолдор, сразу после Войны. Позвав за собой различных изгнанников с острова Балар, он приютил тех, кто предпочёл остаться в [middleearth|E], а не принять Прощение [valar|E]. В этом ему помогал Кирдан, который поселил свой народ в Митлонде и его окрестностях, придав Гаваням ярко выраженный колорит [falathrim|El].\n\nВ северной гавани находились двор и чертоги Гиль-галада, и она была домом для многих нолдор."
 
+ building_type_wonder_mithlond_north_ruined_01: "Mithlond (North Haven)"
+ building_wonder_mithlond_north_ruined_01: "Barad Naeth"
+ building_wonder_mithlond_north_ruined_01_desc: "The Grey Havens of [mithlond|E] were once a sacred refuge for the [elves|E], their last lifeline to [valinor|E]. That way is shut. The delicate spires and ancient libraries are brought low, replaced with twin watchtowers of grim design.\n\n[Glossary('Barad Naeth','barad_naeth_gloss')], the northern keep is called, in memory of the ripe sorrow sown here. It guards the bay, an imposing reminder of the elves' futile resistance."
+ building_wonder_mithlond_north_ruined_02: "Mithlond (North Haven)"
+ building_wonder_mithlond_north_ruined_02_desc: "The twin havens of [mithlond|E], the Grey Havens, were together the capital and heartland of [lindon|E]. It was from Mithlond that [elves|E] who finally tired of mortal lands departed for [valinor|E].\n\nWhereas in [forlindon|E] and [harlindon|E] (formed from remnants of drowned [beleriand|E]) there remained some indigenous Elves, such as the Laegrim, or returning [noldorelvesexiles|E] such as the [feanorian|E] [noldorelves|E] of Helevorn, Mithlond's geography was newly wrought during the tremulations of the [warofwrath|E] and became home to Elven [elfexiles|E] drawn from the many peoples of the sundered Firstborn.\n\nThe havens were founded by Gil-galad, last High King of the Noldor, in the immediate aftermath of the War. Bringing with him the diverse exiles of the Isle of Balar, he gathered to him those who chose to remain in [middleearth|E] rather than immediately accept the Pardon of the [valar|E]. In this he had the aid of Círdan, who settled his own folk at Mithlond and its environs, giving the Havens a distinctly [falathrim|E] character.\n\nThe northern of the two havens held the court and halls of Gil-galad and was home to many Noldor."
+
+ building_type_wonder_mithlond_south_ruined_01: "Mithlond (South Haven)"
+ building_wonder_mithlond_south_ruined_01: "Barad Dêl"
+ building_wonder_mithlond_south_ruined_01_desc: "The Grey Havens of [mithlond|E] were once a sacred refuge for the [elves|E], their last lifeline to [valinor|E]. That way is shut. The delicate spires and ancient libraries are brought low, replaced with twin watchtowers of grim design.\n\n[Glossary('Barad Dêl','barad_del_gloss')] is the southerly of the two. Here, armies muster in the ruined square, in preparation for the wars to come."
+ building_wonder_mithlond_south_ruined_02: "Mithlond (South Haven)"
+ building_wonder_mithlond_south_ruined_02_desc: "The twin havens of [mithlond|E], the Grey Havens, were together the capital and heartland of [lindon|E]. It was from Mithlond that [elves|E] who finally tired of mortal lands departed for [valinor|E].\n\nWhereas in [forlindon|E] and [harlindon|E] (formed from remnants of drowned [beleriand|E]) there remained some indigenous Elves, such as the Laegrim, or returning [noldorelvesexiles|E] such as the [feanorian|E] [noldorelves|E] of Helevorn, Mithlond's geography was newly wrought during the tremulations of the [warofwrath|E] and became home to Elven exiles drawn from the many peoples of the sundered Firstborn.\n\nThe havens were founded by Gil-galad, last High King of the [noldorelves|E], in the immediate aftermath of the War. Bringing with him the diverse exiles of the Isle of Balar, he gathered to him those who chose to remain in [middleearth|E] rather than immediately accept the Pardon of the [valar|E]. In this he had the aid of Círdan, who settled his own folk at Mithlond and its environs, giving the Havens a distinctly [falathrim|E] character.\n\nThe southern of the two havens was the abode of Círdan and his shipwrights and home to the great drydocks whence came the ships that sailed into the [uttermostwest|E]."
+
  building_type_wonder_mithlond_south_01: "Митлонд (Южная гавань)"
  #building_type_wonder_mithlond_south_01_desc: ""
  building_wonder_mithlond_south_01: "Митлонд (Южная гавань)"
@@ -1867,6 +1865,13 @@
  building_wonder_house_of_elrond: "Дом Эльронда"
  building_wonder_house_of_elrond_desc: "#TOLKIENQUOTE: «Этот дом, по давнему слову Бильбо, был «поистине Дом: там можно есть, пить, слушать истории, петь, просто сидеть и думать, а можно заниматься и тем, и другим, и третьим понемножку, в своё удовольствие». Провести хоть несколько дней в Доме Эльронда значило исцелиться от усталости, страха и печали.» #!\n\n#QUOTEDCHARACTER ― Братство Кольца, «Много Встреч»#!\n\nПоследний Домашний Приют к востоку от моря, Дом Эльронда был построен как обитель одноименного эльфийского владыки Эльронда Полуэльфа. Расположенный среди долины Имладрис и её водопадов, Дом был местом отдыха, обучения и познания. Построенный со всей мудростью Высших эльфов Заокраинного Запада, он казался отголоском мира самого [Concept('valinor', 'Валинора')|E].\n\nНа протяжении Второй и Третьей Эпох Дом выстоял, несмотря на то, что Имладрис то разрастался, то приходил в упадок. Даже в Четвёртую Эпоху, когда его сады стояли заброшенными, [dunedain|El] относились к нему с большим почтением, и он долгое время оставался памятью о мудрости Старших Дней."
 
+ building_type_wonder_house_of_elrond_abandoned_01: "Imladris"
+ building_type_wonder_house_of_elrond_abandoned_01_desc: "The Halls of the Elvenking, built in the image of Menegroth of old."
+ building_wonder_house_of_elrond_abandoned_01: "House of Elrond"
+ building_wonder_house_of_elrond_abandoned_01_desc: "#TOLKIENQUOTE: “That house was, as Bilbo had long ago reported, 'a perfect house, whether you like food or sleep, or story-telling or singing, or just sitting and thinking best, or a pleasant mixture of them all.' Merely to be there was a cure for weariness, fear, and sadness.” #!\n\n#QUOTEDCHARACTER ― The Fellowship of the Ring, "Many Meetings"#!\n\nThe Last Homely House east of the Sea, the House of Elrond, was constructed as the abode of the Elven-lord of the same name, Elrond Half-elven. Situated among the vale of Imladris and its waterfalls, the House was a place of respite, learning, and lore. Constructed with all the wisdom of the High-Elves of the Uttermost West, it seemed an echo of the peace of [valinor|E] itself.\n\nThroughout the Second and the Third Ages, the House endured, despite Imladris's own waxing and waning. Even in the Fourth Age, when its gardens stood abandoned, the [dunedain|E] held it in high reverence, and it was long a memory of the wisdom of the Elder Days."
+ building_wonder_house_of_elrond_abandoned_02: "The Abandoned House of Elrond"
+ building_wonder_house_of_elrond_abandoned_02_desc: "The Last Homely House east of the Sea, the House of Elrond, was constructed as the abode of the Elven-lord of the same name, Elrond Half-elven. Situated among the vale of Imladris and its waterfalls, the House was a place of respite, learning, and lore. Constructed with all the wisdom of the High-Elves of the Uttermost West, it seemed an echo of the peace of [valinor|E] itself." #PLACEHOLDER
+
 
  building_type_wonder_imladris_ruined_01: "Имладрис"
  building_type_wonder_imladris_ruined_01_desc: ""
@@ -1887,16 +1892,6 @@
  building_type_wonder_edhelas_01_desc: "Дубовый чертог Борнмира возрождается, отвоевывается и обновляется теми, кто вернулся в земли Сиргалы. Там, где когда-то был пепел, прорастает новая жизнь, и возвышается гордый и сильный чертог. Давно одичавшие земли были приведены в порядок заботливыми руками, на них распускаются цветы и растут деревья с плодами. Богатая резьба на дереве зала несет в себе наследие и культуру сиррандрай, как древних, так и ныне живущих, соединяя древние дни и новые мечты.\n\nДубовый чертог - больше не просто воспоминание о давно минувших временах; он снова стал бьющимся сердцем Сиргалы, маяком надежды на будущее, где мудрость прошлого сливается с мечтами о новом начале."
  building_wonder_edhelas_01: "Дубовый чертог Борнмира"
  building_wonder_edhelas_01_desc: "Дубовый чертог Борнмира возрождается, отвоевывается и обновляется теми, кто вернулся в земли Сиргалы. Там, где когда-то был пепел, прорастает новая жизнь, и возвышается гордый и сильный чертог. Давно одичавшие земли были приведены в порядок заботливыми руками, на них распускаются цветы и растут деревья с плодами. Богатая резьба на дереве зала несет в себе наследие и культуру сиррандрай, как древних, так и ныне живущих, соединяя древние дни и новые мечты.\n\nДубовый чертог - больше не просто воспоминание о давно минувших временах; он снова стал бьющимся сердцем Сиргалы, маяком надежды на будущее, где мудрость прошлого сливается с мечтами о новом начале."
-
-
- ### SHIRE & BREELAND WONDERS ###
- # The Prancing Pony
- building_wonder_prancing_pony: "Гарцующий Пони"
- building_type_wonder_prancing_pony: "Гарцующий Пони"
- building_wonder_prancing_pony_desc: "Бри всегда был центром путешествий и торговли благодаря своему ключевому положению на перекрёстке Восточного и Северного тракта. Однако [Concept('angmar', 'Ангмарские')|E] войны нанесли большой ущерб, и теперь путешествия стали гораздо реже, а Северный тракт давно не используется. Несмотря на это, трактир «Гарцующий Пони» стал важным местом сбора как для горожан, так и для тех [Concept('dwarves', 'гномов')|E] и [Concept('dunedainnorth', 'дунэдайн севера')|E], которые всё ещё путешествуют по Восточному тракту. Семья Баттербур управляет им уже несколько поколений, и трактир уникален тем, что в нём есть места для проживания как людей, так и [Concept('hobbit', 'хоббитов')|E]."
- # NOTE If we need text for the Shire: "Once the hunting grounds of the King of [arnor|E], the Shire is now home to the Hobbits. Simple and peacefully little folk, who seek nothing more than a good meal, six to seven times a day." - edited from John Henry Eden
-
-
 
  ### ROHAN WONDERS ###
  # Edoras
@@ -2183,6 +2178,25 @@
  building_type_wonder_moria_east_gate_01: "Восточные врата Мории и мост Кхазад-дума"
  building_wonder_moria_east_gate_01: "Восточные врата Мории и мост Кхазад-дума"
  building_wonder_moria_east_gate_01_desc: ""
+
+ building_type_wonder_mabladdum_original: "Mablad-dûm"
+ building_type_wonder_mabladdum_original_desc: ""
+ building_wonder_mabladdum_original: "The Great Forges"
+ building_wonder_mabladdum_original_desc: "The result of generations of Blacklock effort, the Great Forges harness the very fires of the earth itself to produce metal without need of coal or wood for fuel. The requires careful management of the earth's heat - imprecision can ruin a fine ore. Great series of tunnels, valves, pipes and gates regulate the flow of the heat, allowing the forges to increase and decrease their temperatures in order to match the specifications of the task. In time, it was the lack of ore, not heat, that kept the production of these masterworks in check."
+ building_wonder_mabladdum_broken: "Mablad-dûm in Ashes"
+ building_wonder_mabladdum_broken_desc: "Ruin has come to Mablad-dûm.\n\nDevastated by the eruption of T.A. 1004, the few [dwarves|E] that survived the initial blast were quickly waylaid by invading [orcs|E]. Only a fraction of the hold's [blacklock|E] population escaped to Barazimabûl, leaving the once-glorious halls of Mablad-dûm buried beneath magma and ash.\n\nThe forges, which once channeled the fire of the mountain, are now melted, made irreparable by that same flame."
+ building_wonder_mabladdum_orcish: "Seat of Ulkhásh"
+ building_wonder_mabladdum_orcish_desc: "Carved of crude obsidian, deep in a molten caldera, sits a mighty throne, the very symbol of [orcish|E] dominance over the [blacklocks|E] of the [yellowmountains|E].\n\nIt was here that mighty Ulkhásh claimed his first victory against the [dwarves|E], and here where he finally perished, erupting into flame as the very mountain itself."
+ building_wonder_mabladdum_rebuilt: "The High Forge"
+ building_wonder_mabladdum_rebuilt_desc: "PLACEHOLDER The Great Forges are rebuilt as the High Forge"
+ building_wonder_mabladdum_reborn: "Mablad-dûm Reborn"
+ building_wonder_mabladdum_reborn_desc: "PLACEHOLDER. It's really awesome now."
+
+ building_type_wonder_mabladdum_orcish_special: "Mablad-dûm"
+ building_type_wonder_mabladdum_orcish_special_desc: ""
+ building_wonder_mabladdum_orcish_special: "The Black Forge"
+ building_wonder_mabladdum_orcish_special_desc: "The pinnacle of [orcish|E] engineering, iterated from stolen [blacklock|E] designs, the Black Forge is unlike anything seen in the realms of [men|E], [elves|E], or [dwarves|E].\n\nIn the very heart of the mountain, a lattice of rickety scaffolding supports an endless array of criss-crossing pipes, channels, lavaducts, and churning gears. This vast construction feeds the burning forges below, manned day and night by an army of slaves.\n\nAdjacent lie the armories, well-stocked with fresh-forged weapons and armor, guarded by stout gates and killboxes. Not merely a forge, it is a bastion of iron and obsidian."
+
  building_type_wonder_nar_agathol: "Нарагатол"
  building_wonder_nar_agathol_desc: "Дом королевского рода Черновласов, «Чёрная крепость» Нарагатол служила оплотом власти клана [Concept('blacklocks', 'Черновласов')|E] после [Concept('successionofbizaruldum', 'кризиса престолонаследия Бизарулдум')|E]."
  building_wonder_nar_agathol: "Обустроенный Нарагатол"
@@ -2191,6 +2205,7 @@
  building_wonder_nar_agathol_2_desc: "Дом королевского рода Черновласов, «Чёрная крепость» Нарагатол служила оплотом власти клана [Concept('blacklocks', 'Черновласов')|E] после [Concept('successionofbizaruldum', 'кризиса престолонаследия Бизарулдум')|E].\n\nКузни, сторожевые посты и казармы Нарагатола, долгое время находившиеся в запустении, были отремонтированы и укомплектованы. Каждый въезд в город был обустроен, а его ворота восстановлены."
  building_wonder_nar_agathol_3: "Чёрная крепость Нарагатол"
  building_wonder_nar_agathol_3_desc: "Дом королевского рода Черновласов, «Чёрная крепость» Нарагатол служила оплотом власти клана [Concept('blacklocks', 'Черновласов')|E] после [Concept('successionofbizaruldum', 'кризиса престолонаследия Бизарулдум')|E].\n\nВпервые с момента основания оборона Нарагатола была усилена. Врата за вратами, тайные туннели, ведущие к скрытым плацдармам, хитроумные оборонительные механизмы. Это неприступная крепость, цитадель из сверкающего черного обсидиана, жемчужина обороны клана Черновласов."
+
  building_type_wonder_snagazat_martial: "Снагазат"
  building_type_wonder_snagazat_martial_desc: "Снагазат - это частично темница, частично лачуги, обширный комплекс, обнесенный стеной, в котором содержатся тысячи гномов из клана Черновласов, попавших в рабство во время завоевания Баразимабула."
  building_wonder_snagazat_martial: "Костяная яма"
@@ -2203,6 +2218,7 @@
  building_type_wonder_snagazat_dread_desc: "Снагазат - это частично темница, частично лачуги, обширный комплекс, обнесенный стеной, в котором содержатся тысячи гномов из клана Черновласов, попавших в рабство во время завоевания Баразимабула."
  building_wonder_snagazat_dread: "Железная пропасть"
  building_wonder_snagazat_dread_desc: "В центре Снагазата находится непроницаемый оплот, подземелье, о котором говорят шепотом. Говорят, что пленники, попавшие в Железную пропасть, никогда не возвращаются обратно."
+
  building_type_wonder_igal_zaram: "Игал-зарам"
  building_type_wonder_igal_zaram_desc: "Неподвижные воды Игал-зарама холодны и темны. Голоса словно эхом отражаются от воды, создавая необыкновенно красивые мелодии."
  building_wonder_igal_zaram: "Шепчущие воды"
@@ -2211,6 +2227,7 @@
  building_wonder_igal_zaram_cleansed_desc: "Неподвижные воды Игал-зарама холодны и темны. Голоса словно эхом отражаются от воды, создавая необыкновенно красивые мелодии.\n\nПосле того как зло озера было искоренено и очищено, здесь зазвучали новые голоса."
  building_wonder_igal_zaram_embassy: "Великое посольство Игал-зарама"
  building_wonder_igal_zaram_embassy_desc: "Неподвижные воды Игал-зарама холодны и темны. Голоса словно эхом отражаются от воды, создавая необыкновенно красивые мелодии.\n\nВеликие фонтаны и сады окружают Игал-зарам, превратившийся сейчас в огромный комплекс дворцов для отдыха и посольств. Сюда съезжаются дипломаты со всего [Concept('middleearth', 'Средиземья')|E], чтобы поглазеть на творения [Concept('dwarves', 'гномов')|E]."
+
  building_type_wonder_mines_of_bruni: "Шахты Бруни"
  building_type_wonder_mines_of_bruni_desc: "Хотя Маблад-дум был изначально заселён [Concept('blacklocks', 'Черновласами')|E] во [Concept('secondage', 'Второй Эпохе')|E], шахты Бруни были разведаны только в [Concept('thirdage', 'Третью Эпоху')|E], когда владение было занято [Concept('axesofnargubraz', 'Топорами Наргубраза')|E]. \n\nНыне в этих шахтах добывается подавляющее большинство алмазов, столь ценимых знатью [Concept('thanihazad', 'Тани-Хазада')|E]."
  building_wonder_mines_of_bruni: "Начальные раскопки"
@@ -2484,10 +2501,15 @@
  building_wonder_azan_zaram_02: "Тайная цитадель"
  building_wonder_azan_zaram_02_desc: "С укреплением стен и фундамента, а также ворот безопасность [Concept('nordinbad', 'Нординбада')|E] и священного озера [Glossary('Азан-зарам','azan_zaram_gloss')] теперь более крепка, чем когда-либо прежде. Крепость, скрытая глубоко в горах, мало чем отличающаяся от [Concept('elven', 'эльфийского')|E] города [Concept('gondolin', 'Гондолин')|E], Нординбад стал убежищем для всех [Concept('dwarves', 'гномов')|E] в [Concept('greymountains', 'Серых горах')|E]."
 
- building_type_wonder_thakalgund: "Такалгунд"
- building_type_wonder_thakalgund_desc: "Убежище клана [Concept('longbeards', 'Длиннобородов')|E] в [Concept('greymountains', 'Серых горах')|E]. Такалгунд пережил годы войны между гномами и драконами."
- building_wonder_thakalgund: "Такалгунд"
- building_wonder_thakalgund_desc: "Такалгунд был главным убежищем [Concept('longbeards', 'Длиннобородов')|E] после потери [Concept('khazaddum', 'Кхазад-дума')|E]. [dwarves|E] [Concept('greymountains', 'Серых горах')|E] нашли здесь богатые залежи золота и серебра. Однако из-за близости к Иссохшей пустоши его постоянно атаковали змеи. В конце концов от него отказались в пользу Эребора, который, как считалось, был более защищен от нападений драконов."
+ building_type_wonder_thakalgund_1: "Такалгунд"
+ building_type_wonder_thakalgund_1_desc: "Убежище клана [Concept('longbeards', 'Длиннобородов')|E] в [Concept('greymountains', 'Серых горах')|E]. Такалгунд пережил годы войны между гномами и драконами."
+ building_wonder_thakalgund_1: "Такалгунд"
+ building_wonder_thakalgund_1_desc: "Такалгунд был главным убежищем [Concept('longbeards', 'Длиннобородов')|E] после потери [Concept('khazaddum', 'Кхазад-дума')|E]. [dwarves|E] [Concept('greymountains', 'Серых горах')|E] нашли здесь богатые залежи золота и серебра. Однако из-за близости к Иссохшей пустоши его постоянно атаковали змеи. В конце концов от него отказались в пользу Эребора, который, как считалось, был более защищен от нападений драконов."
+
+ building_type_wonder_thakalgund_2: "Thakalgund Renewed"
+ building_type_wonder_thakalgund_2_desc: "The refuge of the [longbeards|E] in the [greymountains|E]. Thakalgund has seen years of war between Dwarf and Drake."
+ building_wonder_thakalgund_2: "Thakalgund Renewed"
+ building_wonder_thakalgund_2_desc: "Temp Loc."
 
  ### Angmar Wonders ###
 
@@ -2509,7 +2531,12 @@
  building_wonder_minas_formen_01_desc: "Минас-Формен, Северная башня, была построена [Concept('dunedainnorth', 'дунэдайн севера')|E] после победы над королевством Ангмар, чтобы следить за землями [Concept('witchkingshort', 'Короля-чародея')|E] и укреплять свое господство над регионом."
  building_type_wonder_minas_formen_01: "Минас Формэн"
 
- ### Hobbit Wonders ###
+ ### SHIRE & BREELAND WONDERS ###
+ building_type_wonder_prancing_pony: "The Prancing Pony"
+ building_type_wonder_prancing_pony_desc: "The Prancing Pony is the famous inn of Bree, kept by the Butterbur family for generations. Known for its good ale and warm hearth, it offers rooms and comfort alike to both Big Folk and [hobbits|E]."
+ building_wonder_prancing_pony: "The Prancing Pony"
+ building_wonder_prancing_pony_desc: "#TOLKIENQUOTE: “Even from the outside the inn looked a pleasant house to familiar eyes. It had a front on the Road, and two wings running back on land partly cut out of the lower slopes of the hill, so that at the rear the second-floor windows were level with the ground. There was a wide arch leading to a courtyard between the two wings, and on the left under the arch there was a large doorway reached by a few broad steps. Above the arch there was a lamp, and beneath it swung a large signboard: a fat white pony reared up on its hind legs. Over the door was painted in white letters: THE PRANCING PONY by BARLIMAN BUTTERBUR.”#!\n\n#QUOTEDCHARACTER ― The Lord of the Rings, "At the Sign of the Prancing Pony"#!\n\nThe Prancing Pony in Bree is a long-standing inn at the crossroads of the East and North Roads. Managed for generations by the Butterbur family, it welcomes locals and travelers alike, offering food, drink, and rooms for both Big Folk and [hobbits|E]."
+
  building_type_wonder_great_smials: "Великие Смиалы"
  building_type_wonder_great_smials_desc: ""
  building_wonder_great_smials: "Великие Смиалы"
@@ -2523,7 +2550,28 @@
  building_type_wonder_bag_end: "Бэг Энд"
  building_type_wonder_bag_end_desc: ""
  building_wonder_bag_end: "Бэг Энд"
- building_wonder_bag_end_desc: "Построенный Бунго Бэггинсом для своей жены Белладонны в 1280 году по летоисчислению Шира (2880 год [ageTA|E]), Бэг Энд был образцом всего, к чему стремились [Concept( 'hobbit', 'хоббиты' )|E]. В Бэг Энде было множество комнат прекрасной конструкции и кладовая, ставшая почти легендарной, - идеальный дом для добропорядочного хоббита."
+ building_wonder_bag_end_desc: "#TOLKIENQUOTE: “In a hole in the ground there lived a Hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a Hobbit-hole, and that means comfort.”#!\n\n#QUOTEDCHARACTER ― The Hobbit, "An Unexpected Party"#!\n\nBag End is the ancestral home of the Baggins, an exemplar of everything that [hobbit|E]-holes aspire to be. Excavated in the [thirdage|E] into the top of the Hill at Hobbiton — at the end of Bagshot Row — the earth removed during construction was thrown over the hill, giving Bag End its turf-capped profile. The house has a green round door with a brass knob, many round windows, numerous well-built rooms, larders of near-legendary status, and a well-kept garden.\n\nThis smial offers the perfect combination of comfort, respectability, and quiet prosperity for the gentle people of the [shire|E]."
+ building_wonder_bag_end_02: "Chief Shirriff's Base"
+ building_wonder_bag_end_02_desc: "The Bag End of old has been repurposed as the Chief Shirriff’s personal office: the old green door is now reinforced, the garden trampled, and a crude placard proclaims the new authority. Inside, homely furnishings have been cleared for a stout plank table piled with ledgers, maps, and tools; orders and warrants cover the walls, while faded domestic touches make the new austerity feel all the more bitter."
+ building_wonder_bag_end_03: "Restored Bag End"
+ building_wonder_bag_end_03_desc: "Bag End is lovingly restored to its former warmth and comfort: the green round door gleams once more, the garden flourishes, and the rooms are refurnished with polished wood, bright carpets, and well-stocked larders. The smial regains its air of homely respectability, standing again as the most welcoming and prosperous [hobbit|E]-hole in Hobbiton."
+
+ building_type_town_hole_hobbit: "Hobbit Administration"
+ building_type_town_hole_hobbit_desc: "A cosy row of [hobbit|E]-holes where hearth and ledger meet: the smallfolk’s cheerful centres for petty administration and village affairs."
+ building_town_hole_hobbit: "Town Hole"
+ building_town_hole_hobbit_desc: "Set like a row of little burrows beneath the green, the Town Hole is where the [hobbit|E] Mayors keep their cheer and council. Here, amid round doors and smoking chimneys, not only are tales told and pipes filled, but all the modest administration of Hobbit life — the keeping of rolls, the settling of petty disputes, the issuing of licences for markets and fairs, and the recording of births and deeds — is carried out with a courteous nod and a cup of tea."
+ building_type_mathom_society_01: "Hobbit Museology"
+ building_type_mathom_society_01_desc: "[hobbits|E] traditionally collect and care for [mathoms|E]: gifted or retired trinkets, tools and curios gathered in Mathom-houses and traded through friendly exchanges. Curated by the Mathom Society, these buildings preserve these small treasures and their stories, turning humble domestic objects into the record-rooms of Hobbit memory, local gossip and gentle barter."
+ building_mathom_society_01: "Mathom-house"
+ building_mathom_society_01_desc: "A Mathom-house is a public museum where [mathoms|E] — gifted trinkets, retired tools, and domestic curios — are catalogued, displayed and interpreted for neighbours and visitors. Run by the Mathom Society, its rooms are arranged like cosy cabinets of community memory, where small [hobbit|E] histories are preserved, traded, and told aloud."
+ building_mathom_society_02: "Headquarters of the Mathom Society"
+ building_mathom_society_02_desc: "The Headquarters of the Mathom Society are the regional administrative and scholarly hub of [hobbit|E] museology: a dignified hall of offices, catalogued archives and reference cabinets where senior curators record provenance, adjudicate exchanges, and plan the network of [mathomhouses|E]. It serves as a centre for research, public talks and the gentle bureaucracy that keeps the community’s treasured curios properly preserved and passed on."
+ building_type_shirriff_office_01: "Hobbit Militia"
+ building_type_shirriff_office_01_desc: "Simple in form, essential in purpose: here patrols are mustered, names recorded, disputes settled, and the quiet peace of region maintained."
+ building_shirriff_office_01: "First Shirriff's Office"
+ building_shirriff_office_01_desc: "More than a room, the Office is the little council of local safety: here the First Shirriff draws up patrols and postings, records who serves and who is excused, hears petitions and settles quarrels, signs summonses and sends messengers. Plain tasks, perhaps, but it is here that the quiet business of keeping [hobbit|E] folk and ways secure is set in motion."
+ building_shirriff_office_02: "Muster-house of the Watch"
+ building_shirriff_office_02_desc: "Set into a gentle hill, the Muster-house is a squat, half-buried hall of timber and stone. Here the Watch keeps muster, assigns beats and watches, mends cloaks and staves, and records the names of those on duty. Simple and homely it may be, yet within its plain walls the quiet work of guarding the [hobbit|E] folk and their borders is done with solemn care."
 
  ### Dwarven Wonders ###
  building_type_wonder_mazalabkan: "Мазалабкан"
@@ -2782,6 +2830,44 @@
  building_dwarven_crafts_10_desc: "Большой зал отведён для выставки лучших изделий ремесленников крепости. Рассказы о поделках, изготовленных в этой твердыне, носят почти мифический характер. Говорят, что здешним мастерам нет равных во всей Арде."
  building_type_dwarven_crafts_01: "Гильдии ремесленников"
  building_type_dwarven_crafts_01_desc: "Ремесленные гильдии берут сырьё, добываемое в горах, и превращают его во всевозможные ценности."
+
+ #Associated Trigger
+ dwarven_forge_dynasty_requirement: "Your dynasty needs the [GetDynastyPerk('lotr_crafting_legacy_3').GetName] perk"
+ dwarven_forge_cap: "You can only have one active Forge in your domain"
+
+ #Dwarven Forges
+ building_type_dwarven_forge_01: "Forge-halls"
+ building_type_dwarven_forge_01_desc: "Forges are take the best materials and tools of the Dwarven people to easily forge artifacts to show off to the people of [middleearth|E]"
+ building_dwarven_forge_01: "Charcoal Hearth"
+ building_dwarven_forge_01_desc: "A small hearth of stone, fueled by charcoal. It can smelt only limited quantities of ore, but it marks the beginning of organised metalworking."
+ dwarven_forge_01_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 2%#!\n"
+ building_dwarven_forge_02: "Twin Bellows"
+ building_dwarven_forge_02_desc: "Large, hand-pumped bellows allow higher and more consistent heat, producing stronger ingots and sturdier tools."
+ dwarven_forge_02_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 4%#!\n"
+ building_dwarven_forge_03: "Stone Forges"
+ building_dwarven_forge_03_desc: "Durable stone-lined forges provide better insulation and efficiency. The fires now reach hotter and steadier temperatures for advanced smithing."
+ dwarven_forge_03_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 6%#!\n"
+ building_dwarven_forge_04: "Bloomery Forges"
+ building_dwarven_forge_04_desc: "Enclosed bloomeries refine ore more efficiently, producing purer iron and the first reliable steels. Weapons and armor gain in quality."
+ dwarven_forge_04_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 8%#!\n"
+ building_dwarven_forge_05: "Water-driven Bellows"
+ building_dwarven_forge_05_desc: "Ingenious mechanisms use flowing water to drive great bellows. The forges burn hotter with less labor, allowing larger and more complex works."
+ dwarven_forge_05_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 10%#!\n"
+ building_dwarven_forge_06: "Blast Furnaces"
+ building_dwarven_forge_06_desc: "Towering furnaces smelt ore in great quantities, yielding consistent high-quality steel. Smithing output increases dramatically."
+ dwarven_forge_06_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 12%#!\n"
+ building_dwarven_forge_07: "Forge Complexes"
+ building_dwarven_forge_07_desc: "Entire halls are now devoted to smelting and smithing, with multiple furnaces, anvils, and workstations. Mass production of arms, tools, and armor is achieved."
+ dwarven_forge_07_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 14%#!\n"
+ building_dwarven_forge_08: "Mechanised Hammers"
+ building_dwarven_forge_08_desc: "Waterwheels and gears drive enormous hammers, striking with perfect rhythm. Heavy forging tasks are automated, freeing artisans for precise finishing."
+ dwarven_forge_08_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 16%#!\n"
+ building_dwarven_forge_09: "Integrated Foundries"
+ building_dwarven_forge_09_desc: "Ore smelting, forging, and finishing are integrated within vast foundries. Efficiency and scale reach heights no other folk can match."
+ dwarven_forge_09_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 18%#!\n"
+ building_dwarven_forge_10: "The Great Forge"
+ building_dwarven_forge_10_desc: "A central forge of unmatched design dominates the hold, combining the most advanced furnaces, mechanization, and ventilation systems. Here, the finest works of [dwarven|E] craft are produced in unending fire."
+ dwarven_forge_10_artifact_crafting_buff: "$unlocks_building_desc$Increases the success chance of crafting an artifact by: #P 20%#!\n"
 
  #Dwarven Mines#
  building_dwarven_mine_01: "Горизонтальные штольни"
@@ -3841,6 +3927,11 @@
  building_wonder_tul_isra_03:0 "Тул-Исра: Храмовый квартал"
  building_wonder_tul_isra_03_desc:0 "Тул-Исра - культурный, религиозный и административный центр Сирайна. Основанный в начале Второй эпохи, город был стёрт с лица земли [Concept('ringwraith', 'кольценосцем')|E] [Concept('khorahil', 'Хорахилем')|E] в 1933 году [ageSA|E] Восстановленная переселенцами из Масрана в 83 году [ageTA|E], Тул-Исра вскоре превратилась в крупный торговый узел региона.\n\nВ храмовом квартале Тул-Исры находятся святилища каждого из десяти главных богов тайитского пантеона. Все они представляют собой великолепные сооружения, выполненные из прекрасных материалов и с большим мастерством, а их полированные стены украшены сложной геометрической мозаикой."
 
+ building_type_wonder_carnesra_original_01: "$building_wonder_carnesra_01$"
+ building_type_wonder_carnesra_original_01_desc: "$building_wonder_carnesra_01_desc$"
+ building_wonder_carnesra_original_01: "$building_wonder_carnesra_01$"
+ building__wonder_carnesra_original_01: "$building_wonder_carnesra_01_desc$"
+
  building_type_wonder_carnesra_01:0 "Карнесра"
  building_type_wonder_carnesra_01_desc:0 "Впервые город был заселён в 499 году [ageSA|E], о ранней истории Карнесры известно немного. Как и многие древние города Сирайна, её ранняя история была утеряна после прибытия [Concept('ringwraith', 'кольценосца')|E] [Concept('khorahil', 'Хорахиля')|E] в 1935 году В.Э. Отстроенная в 93 году [ageTA|E], Карнесра процветала за счёт торговли лесом в близлежащем Сара-Баске."
  building_wonder_carnesra_01:0 "Карнесра"
@@ -4141,7 +4232,6 @@
  building_wonder_tul_poac_monument_02: "Купеческий форум"
  building_wonder_tul_poac_monument_02_desc: "#EMP Голоса сотни дорог сходятся здесь в едином порыве.#!\n\nТо, что начиналось как символ единства, превратилось в процветающий центр обмена мнениями и обсуждений. Под руководством правителя, искушенного в торговле и дипломатии, форум привлекает купцов, караванщиков и посланников со всей земли. Заключаются соглашения, решаются споры, уточняются маршруты - и все это под присмотром короны, понимающей ценность золота, зерна и доброй воли."
 
-
  ### GENERIC WONDERS ###
  # Mountain Pass
  building_type_mountain_pass_01: "Горный перевал"
@@ -4155,30 +4245,53 @@
  building_mountain_pass_04: "Цитадель перевала"
  building_mountain_pass_04_desc: "Грозная крепость, возвышающаяся над горным перевалом. Эта цитадель проецирует свою власть на близлежащий регион, жёстко контролируя торговые потоки и путешественников, служа неприступным барьером и вратами между землями."
 
- ### SMAUG RELATED BLOCKERS ###
- # SMAUG
+ ### SMAUG ###
+ # Blockers
  building_type_smaug: "Смауг"
-
+ building_type_smaug_desc: "$building_smaug_desc$"
  building_smaug: "Смауг"
  building_smaug_desc: "Здесь обитает Смауг Золотой, красно-золотой огнедышащий змей. Могуч и ужасен он, страшнейшее и величайшее из всех бедствий, и сам слух о его имени вселяет страх в сердца многих.\n\n#italic Представь себе печку с крыльями! Вспышка света, жгучая боль и... пуф! Ты уже горстка пепла!#!"
-
  building_smaug_cleared: "Смауг убит" # this one shouldnt ever be shown, just in case it is there should be some simple loc
  building_smaug_cleared_desc: "Смауг Золотой, страшнейшее и величайшее из всех бедствий, убит. Больше он не будет внушать постоянный страх людям, гномам и эльфам севера."
 
  # DESOLATION OF SMAUG
  building_type_smaug_desolation: "Пустошь Смауга"
-
+ building_type_smaug_desolation_desc: "$building_smaug_desolation_desc$"
  building_smaug_desolation: "Пустошь Смауга"
  building_smaug_desolation_desc: "С тех пор как Смауг Золотой, огнедышащий змей, пришел на эту землю, ее поглотила пепельная пустошь. От его ярости и ужаса земля покрылась шрамами. Здесь ничего не живет и не растет; единственные остатки обильной природы, которая когда-то украшала эти места, - почерневшие и сломанные пни."
-
  building_smaug_desolation_cleared: "Восстановившаяся природа"
  building_smaug_desolation_cleared_desc: "Благодаря нашему упорному труду земля начинает исцеляться. Деревья и кустарники начинают расти, приносить плоды, а дикие животные снова свободно бегают по пустыне. Летом распускаются цветы, и жизнь снова возвращается в долину."
 
  ### Forochel ###
-
+ # Lodge of Sûri-kylä
  building_type_wonder_lodge_forochel_01: "Ложа Сури-килэ"
  building_type_wonder_lodge_forochel_01_desc: "Эта ложа - самая внушительная из [Concept('lossoth', 'лоссотских')|E] строений, стоит в северо-западном углу деревни и служит резиденцией местного совета. Его толстые стены защищают от пронизывающего ветра, и внутри них ложа служит местом сбора лидеров, приезжающих союзников и тех, кому доверяют люди. Постоянный поток гонцов, охотников и старейшин проходит через его двери, обмениваясь новостями и предлагая советы."
  building_wonder_lodge_forochel_01: "Великая ложа Сури-килэ"
  building_wonder_lodge_forochel_01_desc: "Великая ложа, расположенная на северо-западе деревни, является одновременно и резиденцией совета, и очагом общины. В её толстых тёплых стенах живут вожди, посланники и ремесленники, которые чинят снаряжение, пекут еду и обмениваются новостями. Это больше, чем зал силы, это практическое сердце [Concept('forochel', 'Форохеля')|E], где разрабатываются планы и готовятся запасы на случай зимы и других угроз."
  building_wonder_lodge_forochel_02: "Великая ложа Форохеля"
  building_wonder_lodge_forochel_02_desc: "Великая ложа Форохеля начиналась как простой общинный длинный дом из дерева и шкур, построенный для того, чтобы первые поселенцы могли укрыться от морского ветра. На протяжении многих поколений его стены утолщались, а крыша поднималась, чтобы пережить более суровые зимы, а внутреннее убранство перестраивалось для проведения собраний совета и общих праздников.\n\nПо мере того как здесь селились ремесленники и торговцы, к домику были пристроены мастерские, кузница и печи, что превратило его в центр торговли одеждой, инструментами и продуктами питания. После набегов и штормов были установлены укрепленные двери, частичные ограждения и резные мемориальные балки; сегодня ложа представляет собой многослойное сооружение с практичным ремонтом и церемониальными пристройками, живое свидетельство стойкости [Concept('forochel', 'Форохеля')|E]."
+
+ ### MUMAKAN ###
+ # City of Korlan
+ building_type_wonder_korlan_01: "Grand City of Kôrlan"
+ building_type_wonder_korlan_01_desc: "Temp"
+ building_wonder_korlan_01: "Old City of Kôrlan"
+ building_wonder_korlan_01_desc: "Temp"
+ building_wonder_korlan_02: "The Stone Wall of Kôrlan"
+ building_wonder_korlan_02_desc: "Temp"
+ building_wonder_korlan_03: "Eight Markets of Kôrlan"
+ building_wonder_korlan_03_desc: "Temp"
+ building_wonder_korlan_04: "Arsenal of Kôrlan"
+ building_wonder_korlan_04_desc: "Temp"
+ building_wonder_korlan_05: "Most Resplendent City of Kôrlan"
+ building_wonder_korlan_05_desc: "Temp"
+
+ # Latifundias of Tânande
+ building_type_wonder_tanande_01: "Latifundias of Tânande"
+ building_type_wonder_tanande_01_desc: "Temp"
+ building_wonder_tanande_01: "Latifundias of Tânande"
+ building_wonder_tanande_01_desc: "Temp"
+ building_wonder_tanande_02: "Palaces of Tânande"
+ building_wonder_tanande_02_desc: "Temp"
+ building_wonder_tanande_03: "The Multitude Estates of Tânande"
+ building_wonder_tanande_03_desc: "Temp"
