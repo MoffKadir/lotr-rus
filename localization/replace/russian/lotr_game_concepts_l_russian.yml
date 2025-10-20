@@ -712,6 +712,7 @@
 
  game_concept_yellowmountains: "Жёлтые горы"
  game_concept_eredmellin: "Эред Меллин"
+ game_concept_turbetark: "Тур Бетарк"
  game_concept_yellowmountains_desc: "Жёлтые горы лежат далеко к югу от [Concept('gondor', 'Гондора')|E], образуя обширный и удаленный барьер, недоступный для большинства северных королевств.\n\nПриняв горы близ [Concept('umbar', 'Умбара')|E] и [Concept('bellakar', 'Беллакара')|E] за древние [Concept('greymountains', 'Серые горы')|E] из легенд, ранние [Concept('numenoreans', 'нуменорцы')|E] сочли эту вторую, неисследованную цепь [Glossary('Эред Меллин','ered_mellin_gloss')], отмеченными на древних [Concept('elven', 'эльфийских')|E] картах. Простираясь до далеких западных берегов южных морей, горы включают в себя как центральные пики, так и затененные прибрежные нагорья.\n\nПосле извержения Маблада-дума в [Concept('thirdage', 'Третьей эпохе')|E], [Concept('blacklocks', 'Черновласы')|E], отправившиеся на юг и заселившие эти горы, назвали их [Glossary('Булнд-Мабул','bulnd_mabul_gloss')]. Далекие и в значительной степени забытые Свободными народами севера, Жёлтые горы возвышаются словно дремлющий дозорный над скрытой историей Юга."
 
  game_concept_ironhills: "Железные холмы"
@@ -1567,7 +1568,7 @@
  #
 
  ### Some Traits will be linked to game concepts... even char names, dynasty mottos, names... almost everything seems to be able to have a game concept 'integrated' into it... trait example posted here...
- trait_actualnumenorean: "Нуменорец"
+ trait_actualnumenorean: "[Select_CString(ROOT.Char.IsFemale, 'Нуменорка', 'Нуменорец' )]"
  trait_actualnumenorean_desc: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'родилась', 'родился' )] на острове [numenor|E], и поэтому принадлежит к величайшим [Concept( 'conceptpeoples', 'народам' )|E] среди [Concept( 'conceptcapmankind', 'человечества' )|E]."
  trait_numenorean_bloodline: "Нуменорская кровь"
  trait_numenorean_bloodline_desc: "[ROOT.Char.GetFirstNameNoTooltip] - [Select_CString(ROOT.Char.IsFemale, '[Concept( 'heir', 'наследница' )|E]', '[heir|El]' )] [Concept( 'concepteventfallenisland', 'павшего острова' )|E] [numenor|E], [Select_CString(ROOT.Char.IsFemale, 'происходящая', 'происходящий' )] по непрерывной линии, и потому [Select_CString(ROOT.Char.IsFemale, 'благословлена', 'благословлён' )] более долгой жизнью, чем большинство [Concept( 'conceptracemen', 'людей' )|E]. [Concept( 'conceptracemen', 'Люди' )|E] с подобной наследственностью составляли значительную часть населения королевств [arnor|E] и [gondor|E] в начале [Concept( 'thirdage', 'Третьей Эпохи' )|E]."
@@ -1937,3 +1938,9 @@
  game_concept_struggle_thani_hazad_phase_confederation_desc: "Баланс [balan_lai|E] движется в своем типичном ритме, осторожный танец дипломатии и интриг. Принцы сотрудничают, когда это необходимо, но никогда не забывают о собственной выгоде.\n\nСтарые разногласия кипят на поверхности, но ни один принц не получает достаточно власти, чтобы нарушить баланс. Разногласия решаются с помощью закулисных сделок или тактических демонстраций силы, благодаря чему Совет сохраняет свою роль регионального гаранта стабильности, хотя бы в малой степени.\n\nПока что сохраняется хрупкое равновесие."
  game_concept_struggle_thani_hazad_phase_unification: "Единство"
  game_concept_struggle_thani_hazad_phase_unification_desc: "Во времена редкого единодушия [balan_lai|E] выступает как единая сила, объединенная против внешних угроз или связанная общим видением централизации. Харадунайские принцы отбросили личные амбиции, сосредоточившись на коллективной силе и будущем своего народа и державы.\n\nЭтот период гармонии позволяет им действовать решительно, как будто единая власть управляет многими. Границы охраняются, законы соблюдаются, а сотрудничество достигает своего зенита. Те, кто раньше боролся за влияние, теперь работают рука об руку, укрепляя превосходство своих владений."
+
+ game_concept_ranger_task_contract: "Контракт следопыта"
+ game_concept_ranger_task_contracts: "Контракты следопыта"
+ game_concept_ranger_task_contract_possessive: "Контракта следопыта"
+ game_concept_ranger_task_contracts_possessive: "Контрактов следопыта"
+ game_concept_ranger_task_contract_desc: "$game_concept_ranger_task_contract$ обычно включает в себя тайные враждебные действия против правителей с противоположным [Concept('alignment', 'мировоззрением')|E]."
