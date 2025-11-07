@@ -1609,7 +1609,7 @@
  decision_integrate_tulwang_tooltip: "Реинтегрировать Тулванг, одно из Семи владычеств Тани-Хазада"
  decision_integrate_tulwang_desc: "Слишком долго королевства Тани-Хазада были отдельными мелкими вотчинами, препирающимися и воюющими друг с другом, но теперь, когда я [Select_CString(ROOT.Char.IsFemale,'объединила','объединил')] Семь земель, важно восстановить интеграцию тех земель, которые вышли из-под нашего контроля. Тулванг - седьмое королевство Тани-Хазада, но сегодня многие считают его продолжением большого королевства Бозишнаруд, поэтому теперь, когда мы установили прочную власть в Тулванге, важно, чтобы весь мир признал этот регион нашим."
  decision_integrate_tulwang_confirm: "Объединённые Семь земель"
- decision_integrate_tulwang_an_balkumagan_priamry_title: "Ваш основной титул - [GetTitleByKey('e_anbalkumagan').GetNameNoTier] или [GetTitleByKey('e_pharazain').GetNameNoTier]"
+ decision_integrate_tulwang_an_balkumagan_priamry_title: "Ваш основной титул - [GetTitleByKey('e_anbalkumagan').GetNameNoTier] или [GetTitleByKey('h_pharazain').GetNameNoTier]"
 
  decision_murder_bellakar: "Вторгнуться в Беллакар"
  decision_murder_bellakar_tooltip: "Час настал! Пора начать вторжение в Беллакар."
@@ -2270,6 +2270,15 @@
  tom_holds_erebor_desc: "Эребор пал"
  helps_dwarves_colonise_erebor: "Народ Дурина восстановит Эребор"
 
+ decision_dale_high_king: "Стать [Select_CString(ROOT.Char.IsFemale, 'верховной королевой', 'верховным королём' )] севера"
+ decision_dale_high_king_tooltip: "Претендовать на мантию [Select_CString(ROOT.Char.IsFemale, 'верховной королевы', 'верховного короля' )] Дэйла"
+ decision_dale_high_king_desc: "[Concept('dale', 'Дэйл')|E] процветает под моим правлением. С нашими границами, защищенными высокими стенами и крепкими союзами, а также с хорошей торговлей, наполняющей казну даже самого скромного человека в королевстве, север никогда не видел такого великолепия и процветания.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'довела', 'довёл' )] до совершенства дело, начатое моими предками, и в награду могу претендовать на титул [Select_CString(ROOT.Char.IsFemale, 'истинной верховной королевы', 'истинного верховного короля' )] севера."
+ decision_dale_high_king_confirm: "За озеро и гору!"
+ decision_dale_high_king_development: "В каждом графстве, находящемся под прямым контролем, хотя бы один раз улучшено главное здание"
+ decision_dale_high_king_drakkenvast: "[GetTitleByKey('d_drakkenvast').GetName] интегрировано"
+ decision_dale_high_king_borders: "Восточные границы укреплены"
+ decision_dale_high_king_fealty: "Соседние [Concept('ruler', 'правители')|E]-северяне поклялись в верности"
+
  decision_unite_the_western_houses: "Объединить западные кланы"
  decision_unite_the_western_houses_tooltip: "Объединить всех [Concept('dwarves', 'гномов')|E], живущих в [Concept('bluemountains', 'Синих горах')|E]"
  decision_unite_the_western_houses_desc: "[Concept('bluemountains', 'Синие горы')|E] - это исконная родина двух западных [Concept('dwarves', 'гномьих')|E] кланов. Именно здесь пробудились праотцы [Concept('broadbeams', 'Широкозадов')|E] и [Concept('firebeards', 'Огнебородов')|E], и с тех пор их кланы живут здесь.\n\nКогда наши старые крепости вновь обретут былую славу, а между двумя кланами сложатся прочные союзы и дружба, придёт время наконец объединиться под одним знаменем во имя всех гордых гномов запада."
@@ -2687,6 +2696,33 @@
  decision_unify_harad_tooltip: "Верховные королевства [Concept('harad', 'Харада')|E] могут быть объединены в один большой титул."
  decision_unify_harad_desc: "Слишком долго [haradrim|El] жили разрозненными, сломленными, простыми пешками в больших играх! Будь то [sauroncharacter|E] или [numenor|E], мы были вынуждены склоняться перед внешними владыками. Довольно! Пришло время сынам [Concept('harad', 'Харада')|E] отбросить свои разногласия и объединиться под единым знаменем и под властью единого престола."
  decision_unify_harad_confirm: "Мы едины!"
+
+ # Add to the Realms of Harad
+ decision_increase_harad: "Расширить границы Харада"
+ decision_increase_harad_tooltip: "Интегрировать одно из потерянных королевств Харада в свою державу"
+ decision_increase_harad_desc: "Земли [Concept('harad', 'Харада')|E], независимо от того, населены ли они его сынами и чужеземцами, принадлежат великому королевству [Concept('haradrim', 'харадрим')|E]."
+ decision_increase_harad_confirm: "Да будет так."
+ decision_restore_harad_province.second_step: "Какое потерянное королевство воссоединится с нами?"
+
+ decision_restore_harad_province.tt.umbar: "[GetTitleByKey('e_umbar').GetNameNoTier]"
+ decision_restore_harad_province.tt.umbar_desc: ""
+ integrate_province_umbar_harad_tooltip: "#T #V Претендовать на великий город [GetTitleByKey('c_umbar').GetNameNoTier] и его владения#! #!\n\n[Concept('umbar', 'Умбар')|E], великий город [Concept('harad', 'Харада')|E], достаточно долго балансировал между [Concept('numenorean', 'нуменорским')|E] и [Concept('haradric', 'харадским')|E] правлением, пришло время ему воссоединиться с сынами этой земли."
+
+ decision_restore_harad_province.tt.bellakar: "[GetTitleByKey('e_bellakar').GetNameNoTier]"
+ decision_restore_harad_province.tt.bellakar_desc: ""
+ integrate_province_bellakar_tooltip: "#T #V Претендовать на [GetTitleByKey('e_bellakar').GetNameNoTier] с тысячью городами#! #!\n\n[Concept('bellakar', 'Беллакар')|E], земля тысячи городов, всегда был населён сынами [Concept('harad', 'Харада')|E], прошлая верность [Concept('numenor', 'Нуменору')|E] больше не будет отделять его от его народа."
+
+ decision_restore_harad_province.tt.sirayn: "[GetTitleByKey('e_sirayn').GetNameNoTier]"
+ decision_restore_harad_province.tt.sirayn_desc: ""
+ integrate_province_sirayn_tooltip: "#T #V Претендовать на изобильный [GetTitleByKey('e_sirayn').GetNameNoTier]#! #!\n\nСирайн, земля изобилия, издавна поддерживал родственные отношения с сынами [Concept('harad', 'Харада')|E], теперь они действительно стали братьями."
+
+ decision_restore_harad_province.tt.harshandatt: "[GetTitleByKey('e_harshandatt').GetNameNoTier]"
+ decision_restore_harad_province.tt.harshandatt_desc: ""
+ integrate_province_harshandatt_tooltip: "#T #V Претендовать на речные земли #L [GetTitleByKey('e_harshandatt').GetNameNoTier]а#!#! #!\n\nХаршандатт, речной край Великой Нуары, является домом для давно забытых родичей и народа древних королей, и поэтому, если не по крови, то по сердцу, они - потерянные братья, возвращающиеся в наше лоно."
+
+ decision_restore_harad_province.tt.khy: "[GetTitleByKey('e_khy').GetNameNoTier]"
+ decision_restore_harad_province.tt.khy_desc: ""
+ integrate_province_khy_tooltip: "#T #V Претендовать на [GetTitleByKey('e_khy').GetNameNoTier], край Потерянного сына#! #!\n\n[Concept('khy', 'Кхай')|E], земля древних элинсийцев и халудов, как теперь называют их восточные народы, были потеряны давным-давно. Теперь этот потерянный сын наконец-то вернулся в лоно семьи."
 
  # Númenor-in-Exile
  decision_numenor_in_exile: "Принять мантию Нуменора-в-изгнании"
@@ -3391,9 +3427,9 @@
  fervor_gain_sirayn_fervor: "Избрание правителем в качестве покровителя"
  decision_choose_new_tayee_patron_confirm: "Подтвердить мою преданность."
 
- restore_ardacheran_hegemony_decision: "Восстановить Ардашеранскую гегемонию"
+ restore_ardacheran_hegemony_decision: "Восстановить Ардашеранское владычество"
  restore_ardacheran_hegemony_decision_desc: "Во времена правления династии Ардашеран влияние [Concept('khy', 'Кхая')|E] достигло своего наивысшего расцвета. Непосредственно управляя побережьем Ормальского залива вплоть до Кодьи и Линерии, этот почти трехсотлетний золотой век стал свидетелем величайшего расцвета кхайского искусства, литературы, науки и культуры в истории. Иностранные правители отправляли посланников, купцов и пленников к императорскому двору в Чаджапуне.\n\nБлагодаря нашим недавним успехам, некоторые называют нас наследниками наследия Ардашеранов, восстановителями законного положения Кхая как маяка цивилизации и света. Возможно, со временем мы еще больше укрепим это положение и станем легитимными для всего залива."
- restore_ardacheran_hegemony_decision_tooltip: "Восстановить Ардашеранскую гегемонию"
+ restore_ardacheran_hegemony_decision_tooltip: "Восстановить Ардашеранское владычество"
  restore_ardacheran_hegemony_decision_confirm: "Мы - свет людей, вестники Ариэн."
 
  decision_khy_dynastic_mausoleum: "Построить великий мавзолей"

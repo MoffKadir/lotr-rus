@@ -16,7 +16,6 @@
  # Feast Activity # 
  ################## 
 
-
  activity_feast_province_desc_elven_agriculture: "#P + $building_type_elven_agriculture_01$#!\n"
  activity_feast_province_desc_slave_farms: "#P + $building_type_slave_farms_01$#!\n"
  activity_feast_province_desc_dwarven_ale_house:1 "#P + $building_type_dwarven_ale_house_01$#!\n"
@@ -38,8 +37,6 @@
  activity_feast_province_desc_wonder_ayahopa_01:1 "#P +++ $building_type_wonder_ayahopa_01$#!\n"
  activity_feast_province_desc_wonder_tul_isra:1 "#P +++ $building_type_wonder_tul_isra_01$#!\n"
  activity_feast_province_desc_wonder_goblin_town:1 "#P +++ $building_type_wonder_goblin_town_01$#!\n"
-
-
 
  feast_cost_discount_elven_agriculture: "В этом месте есть $building_type_elven_agriculture_01$#!"
  feast_cost_discount_slave_farms: "В этом месте есть $building_type_slave_farms_01$#!"
@@ -822,7 +819,6 @@
  TRAVEL_NAME_FOR_activity_lotr_wine_tasting: "$activity_lotr_wine_tasting$ [Select_CString(Character.IsLocalPlayer, '', 'персонажа ' )][Character.GetNamePossessiveOrMy][Select_CString(Character.IsLocalPlayer, 'его персонажа', '' )]"
  lotr_visit_vineyard_length_desc: "Продолжительность посещения"
 
-
  # Other Decisions
  lotr_wine_tasting_enjoyed: "Приглашение на дегустацию вин"
  lotr_wine_tasting_explored_area: "Осмотр окрестностей местного виноградника"
@@ -1135,6 +1131,15 @@
  # Coronation Activity #
  #######################
 
+ crowned_elf: "Эльфийский владыка"
  coronation_no_throne_trigger: "Требуется [Concept('artifact', 'артефакт')|E]-трон"
  coronation_no_crown_throne_or_regalia_trigger: "Требуется [Concept('artifact', 'артефакт')|E]-корона, регалия или трон"
  coronation_events.6110.desc_throne: "— включая трон, на который мне предстоит воссесть. [ROOT.Char.GetFaith.PriestNeuterPlural|U] готовят мой наряд, повторяя церемониальные жесты и взывая к"
+
+ coronation_type_elf: "Эльфийская интронизация"
+ coronation_type_elf_desc: "$BULLET_WITH_TAB$Докажите, что ваша [legitimacy_i][Concept('legitimacy', 'легитимность')|E] не вызывает сомнений, и правьте как [root.CHAR.GetPrimaryTitle.GetTierAsNameNoTooltip|l]\n$BULLET_WITH_TAB$Принесите [Concept('oath', 'обет')|E] и определите будущее своего правления\n$BULLET_WITH_TAB$Поднимите [Concept('hope', 'надежду')|E] в своём регионе.\n$BULLET_WITH_TAB$Улучшите [opinion_i][Concept('opinion','мнение')|E] [Concept('vassals', 'вассалов')|E]\n$BULLET_WITH_TAB$Улучшите [opinion_i][Concept('opinion','мнение')|E] других [Concept('rulers', 'правителей')|E]\n$BULLET_WITH_TAB$[Concept('vassals', 'Вассалы')|E] могут выйти из @faction_icon![Concept('factions', 'фракций')|E]\n\n#weak $coronation_type_elf_flavor$#!"
+ coronation_type_elf_flavor: "Истинный эльфийский правитель приведёт свой народ к великим высотам и возродит в нём надежду."
+
+ inspire_hope_intent_header: "Внушить надежду"
+ inspire_hope_intent: "Внушить надежду"
+ inspire_hope_intent_desc: "Вселить участникам [Concept('hope', 'надежду')|E], повлияв на ваш [Concept('subregion', 'регион')|E]."
