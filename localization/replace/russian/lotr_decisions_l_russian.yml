@@ -2274,10 +2274,11 @@
  decision_dale_high_king_tooltip: "Претендовать на мантию [Select_CString(ROOT.Char.IsFemale, 'верховной королевы', 'верховного короля' )] Дэйла"
  decision_dale_high_king_desc: "[Concept('dale', 'Дэйл')|E] процветает под моим правлением. С нашими границами, защищенными высокими стенами и крепкими союзами, а также с хорошей торговлей, наполняющей казну даже самого скромного человека в королевстве, север никогда не видел такого великолепия и процветания.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'довела', 'довёл' )] до совершенства дело, начатое моими предками, и в награду могу претендовать на титул [Select_CString(ROOT.Char.IsFemale, 'истинной верховной королевы', 'истинного верховного короля' )] севера."
  decision_dale_high_king_confirm: "За озеро и гору!"
- decision_dale_high_king_development: "В каждом графстве, находящемся под прямым контролем, хотя бы один раз улучшено главное здание"
+ decision_dale_high_king_development: "В каждом [Concept('county', 'графстве')|E] в регионе [GetTitleByKey('d_dalelands').GetName] хотя бы один раз улучшено главное здание"
  decision_dale_high_king_drakkenvast: "[GetTitleByKey('d_drakkenvast').GetName] интегрировано"
  decision_dale_high_king_borders: "Восточные границы укреплены"
  decision_dale_high_king_fealty: "Соседние [Concept('ruler', 'правители')|E]-северяне поклялись в верности"
+ decision_dale_high_king_fealty_tt: "[new_dale_vassal.GetName] [Select_CString(new_dale_vassal.IsFemale, 'присягнула', 'присягнул' )] на верность"
 
  decision_unite_the_western_houses: "Объединить западные кланы"
  decision_unite_the_western_houses_tooltip: "Объединить всех [Concept('dwarves', 'гномов')|E], живущих в [Concept('bluemountains', 'Синих горах')|E]"
