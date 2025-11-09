@@ -164,12 +164,6 @@
  enemy_of_the_dunlendings_character_modifier_desc: "Этот персонаж несправедливо претендовал на земли Дунланда и стремился заставить его жителей преклонить колени против их воли."
  unifier_of_the_dunlendings_character_modifier: "Объединитель дунландцев"
  unifier_of_the_dunlendings_character_modifier_desc: "Этот персонаж сумел объединить свой раздробленный народ под единым знаменем, заслужив их любовь."
- dunlending_opinion: "Мнение дунландцев"
- adornaen_opinion: "Мнение адорнаэн"
- isengard_dunlending_opinion: "Мнение изенгардских дунландцев"
- gondorian_opinion: "Гондорское мнение"
- rohirrim_opinion: "Мнение Рохиррим"
- dunedain_opinion: "Мнение дунэдайн"
  loyal_dunlendings_of_isengard_county_modifier: "Верные дунландские гарнизоны"
  loyal_dunlendings_of_isengard_county_modifier_desc: "Гарнизон в этой провинции был поддержан группой верных воинов из Дунланда."
  stripped_of_raw_resources_county_modifier: "Исчерпанные природные ресурсы"
@@ -354,6 +348,11 @@
  orc_adventurer_slave_influx: "Строительное рвение"
  orc_adventurer_slave_influx_desc: "Опираясь на приток рабов и награбленных ресурсов, этот персонаж может быстро построить свою новую державу."
 
+ orc_lust_for_adventure_modifier: "Жажда приключений"
+ orc_lust_for_adventure_modifier_desc: "Этот персонаж жаждет приключений в далёких землях."
+
+ orcs_settling_mablad_dum: "Поддержка колонизации"
+ orcs_settling_mablad_dum_desc: "Поддерживаемый таинственным благодетелем, этот персонаж располагает обширными ресурсами, которые можно направить на колонизацию подземных территорий."
  ### Corsair Modifiers ###
  lotr_corsair_modifier: "Пират"
  lotr_corsair_modifier_desc: "Всем известно, что этот персонаж не проявит жалости к тем, кого в море постигло несчастье."
@@ -955,11 +954,30 @@
  sack_of_taru_makar: "Разорённый $c_taru_makar$"
  sack_of_taru_makar_desc: "В 2992 году [Concept('thirdage', 'Третьей эпохи')|E] нафаратцы разграбили $c_taru_makar$, предав огню его палисады, а его народ - мечу. Когда-то это было самое крупное поселение провинции $d_drenikan$, а теперь от него остались одни лишь развалины, и местные говорят, что в воздухе всё ещё витает запах гари.\n\n"
 
+ landless_local_arbitration_rangers_modifier: "$local_arbitration_perk_adventurer_name$ #weak (Следопыты)#!"
+
+ ### Ranger Modifiers ###
+ ranger_subsidy: "Выплаты от сюзерена"
+ ranger_subsidy_desc: "Вы получаете финансовую поддержку от своего сюзерена, которая помогает вам выполнять ваши обязанности следопыта."
+
+ suzerain_subsidy: "Выплаты следопытам"
+ suzerain_subsidy_desc: "Вы оказываете финансовую поддержку своим вассалам-следопытам, чтобы помочь им в выполнении их обязанностей."
+
+ ########################
+ ### Cultural Opinion ###
+ ########################
+ dunlending_opinion: "Мнение дунландцев"
+ adornaen_opinion: "Мнение адорнаэн"
+ isengard_dunlending_opinion: "Мнение изенгардских дунландцев"
+ gondorian_opinion: "Гондорское мнение"
+ rohirrim_opinion: "Мнение рохиррим"
+ dunedain_opinion: "Мнение дунэдайн"
  rukhashai_opinion: "Мнение рукхаш-хай"
  echomaker_goblin_opinion: "Мнение гулкоступов"
  bulgan_opinion: "Мнение булганцев"
  tanturaki_opinion: "Мнение тантураков"
  anbalukkhori_opinion: "Мнение анбалукхори"
+
 
 
  ## Tharbad Modifiers ##
@@ -993,3 +1011,37 @@
 
  tharbad_rebuilding_effort_modifier: "Усилия по восстановлению"
  tharbad_rebuilding_effort_modifier_desc: "В этом графстве идёт масштабная реконструкция."
+
+
+ ### Kultamieli Event Chain Modifiers ###
+
+ modifier_langwell_slaves_angmar: "Приток рабов-северян"
+ modifier_langwell_slaves_angmar_desc: "Держава этого персонажа получила приток рабов и ресурсов из северной долины Андуина."
+
+ modifier_langwell_slaves_angmar_2: "Крупный приток рабов-северян"
+ modifier_langwell_slaves_angmar_2_desc: "Держава этого персонажа получила крупный приток рабов и ресурсов из северной долины Андуина."
+
+ modifier_langwell_slaves_angmar_3: "Небольшой приток рабов-северян"
+ modifier_langwell_slaves_angmar_3_desc: "Держава этого персонажа получила небольшой приток рабов и ресурсов из северной долины Андуина."
+
+ taurau_raided_county_modifier: "Недавний набег"
+ taurau_raided_county_modifier_desc: "Эта провинция недавно была разорена войсками Ангмара."
+
+ kultamieli_intrigue_buff: "Кинжал Короля Зимы"
+ kultamieli_intrigue_buff_desc: "Король-чародей Ангмара поручил этому персонажу посеять раздор в рядах северян Лангвелла."
+
+ confederation_of_langwell_defensive_modifier: "Ставка на оборону"
+ confederation_of_langwell_defensive_modifier_desc: "Лангвеллская конфедерация заняла оборонительную позицию."
+
+ confederation_of_langwell_offensive_modifier: "Ставка на наступление"
+ confederation_of_langwell_offensive_modifier_desc: "Лангвеллская конфедерация заняла наступательную позицию."
+
+ ### Mardat Storyline Modifier s###
+ mardat_travels: "Странствия Мардата"
+ mardat_travels_desc: "Мардат предпринял большие шаги и проявил осторожность, чтобы обеспечить быстрое и надежное передвижение, собирая поддержку для своих замыслов."
+ mardat_rob_merchants: "Контрабандная пошлина"
+ mardat_rob_merchants_desc: "Преступная сеть Мардата привела к тому, что он значительно увеличил свое личное богатство ценой своей репутации и своей державы."
+ ray_robbed_merchants: "Набег на караваны Раи"
+ ray_robbed_merchants_desc: "Опустошительные крупномасштабные набеги на многочисленных торговцев Раи разрушили экономику державы."
+ mardat_purge_county_modifier: "Разрушительная религиозная чистка"
+ mardat_purge_county_modifier.desc: "В этих землях любой, кто откажется принять культ Кхаз-грамаза, будет казнён как еретик."
