@@ -1395,6 +1395,8 @@
  completed_decision_gundabad_grey_mountains: "[decision|E] #V $decision_gundabad_grey_mountains$#! завершено"
  completed_decision_gundabad_ignite_the_forges: "[decision|E] #V $decision_gundabad_ignite_the_forges$#! завершено"
  completed_decision_gundabad_angmar_mountains: "[decision|E] #V $decision_gundabad_angmar_mountains$#! завершено"
+ completed_decision_revenge_for_five_armies: "[decision|E] #V $revenge_for_five_armies_requirement$#! завершено"
+ completed_decision_gundabad_unite_misties: "[decision|E] #V $decision_gundabad_unite_misties$#! завершено"
 
  decision_revive_gundabad: "Возродить Гундабад"
  decision_revive_gundabad_tooltip: "Восстановить великое королевство орков Гундабад"
@@ -1444,6 +1446,11 @@
  decision_gundabad_unite_misties_desc: "[Concept('gundabad', 'Гундабад')|E] возрождается, и с его растущей силой пришло время объединить горных [Concept('orcs', 'орков')|E]! Со времён #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofazog1').GetID] #L Азога#!#! из #L [GetTitleByKey('k_khazad_dum').GetNameNoTier]а#! такого ещё не было, но теперь у нас есть реальный шанс. Пусть войска Гундабада маршируют вперёд, и пусть каждый орк и гоблин знает своё место - в строю за ними!"
  decision_gundabad_unite_misties_confirm: "Мы обрушим ужас с наших горных домов!"
  decision_gundabad_unite_misties_requirement: "В регионе [GetTitleByKey('e_misty_mountains').GetNameNoTier] нет [Concept( 'independent_ruler', 'независимых правителей' )|E]"
+
+ decision_dissolve_unified_durins_folk: "Разогнать Народ Дурина"
+ decision_dissolve_unified_durins_folk_tooltip: "Уничтожить [Concept('dwarven', 'гномье')|E] господство над этими горами"
+ decision_dissolve_unified_durins_folk_desc: "[Concept('dwarves', 'Гномы')|E] из [Concept('durinsfolk', 'Народа Дурина')|E] когда-то правили этими горами, но их время прошло. Наступила эпоха [Concept('orcs', 'орков')|E] — теперь мы короли под горой! Их чертоги принадлежат нам, их гордость сломлена, их древние жилища осквернены."
+ decision_dissolve_unified_durins_folk_confirm: "Осквернить наследие Дурина!"
 
  #####################################
  ###### Bozisha-Miraz Decisions ######
@@ -2920,6 +2927,22 @@
  no_black_arrow: "У вас нет чёрной стрелы"
  no_windlance: "У вас нет снаряда стреломёта"
  slayer_artifact_cooldown: "Вы не можете создать другой артефакт до #color_white [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'forged_slayer_artifact') )]#!."
+
+ decision_king_under_the_mountains: "[Select_CString(ROOT.Char.IsFemale, 'Королева', 'Король' )]-под-Горами"
+ decision_king_under_the_mountains_tooltip: "Объединить гномов всех горных владений"
+ decision_king_under_the_mountains_desc: "Все горы [Concept('middleearth', 'Средиземья')|E] будут объединены под одним знаменем - под властью [Select_CString(ROOT.Char.IsFemale, 'одной королевы', 'одного короля' )]. От вершин Синих гор до самых глубин Жёлтых гор, все [Concept('dwarven', 'гномьи')|E] родичи должны выступить как один!"
+ decision_king_under_the_mountains_confirm: "[Glossary('Янад Махалул','yanad_mahalul_gloss')]! [Glossary('М’имну Махал','m_imnu_mahal_gloss')]!"
+ unify_durins_folk_requirement: "[decision|E] #V $decision_unify_durins_folk$#! завершено"
+ united_western_houses_requirement: "[decision|E] #V $decision_unite_the_western_houses$#! завершено"
+ reunite_yellow_mountains_requirement: "[decision|E] #V $decision_reunite_yellow_mountains$#! завершено"
+ balrog_dead_requirement: "[decision|E] #V $struggle_balrog_ending_kill_balrog$#! завершено"
+ unify_durins_folk_orc_requirement: "Народ Дурина не объединён"
+ vassal_opinion_requirements: "Вы являетесь [Concept('friends', 'друзьями')|E], [Concept('allies', 'союзниками')|E], [Concept('lovers', 'любовниками')|E] или имеете [Concept('hooked', 'влияние')|E] на всех [Concept('vassal', 'вассалов')|E] или их [Concept('regent', 'регентов')|E]"
+
+ decision_king_under_the_mountains_orc: "Провозгласить великую орду"
+ decision_king_under_the_mountains_tooltip_orc: "Провозгласить господство над каждой горой и ущельем"
+ decision_king_under_the_mountains_desc_orc: "Жалкие [Concept('dwarves', 'гномы')|E] считают себя повелителями глубин, но их богатства принадлежат нам по праву стали. Все владения, начиная с высочайшей вершины Синих гор до глубочайших расселин Жёлтых гор, преклонят колени перед великим Горным владычеством."
+ decision_king_under_the_mountains_confirm_orc: "Я [Select_CString(ROOT.Char.IsFemale, 'повелительница', 'повелитель' )]!"
 
  ####################################
  ###### Great Goblin Decisions ######
