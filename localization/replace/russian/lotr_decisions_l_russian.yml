@@ -358,6 +358,13 @@
  lotr_lay_down_life_decision: "Уйти из жизни"
  lotr_lay_down_life_decision_desc: "Моя жизнь была долгой и насыщенной, но мне не суждено было стать [Select_CString(ROOT.Char.IsFemale, 'вечной', 'вечным' )]. Я [Select_CString(ROOT.Char.IsFemale, 'выбрала', 'выбрал' )] смертную жизнь и смертную судьбу. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] уйти из жизни и позволить править следующему поколению."
 
+ decision_h_middle_earth: "Претендовать на власть над всем Средиземьем"
+ decision_h_middle_earth_desc: "Я [Select_CString(ROOT.Char.IsFemale, 'подчинила', 'подчинил' )] все земли и добрые народы [Concept('middleearth', 'Средиземье')|E] своей власти, и теперь никто не может оспаривать моё правление!"
+ decision_h_middle_earth_confirm: "[Select_CString(ROOT.Char.IsFemale, 'Владычица', 'Властелин' )] земли!"
+ decision_h_middle_earth_tooltip: "Претендовать на всё Средиземье как на свои законные владения."
+ decision_h_middle_earth_tt: "Вы получите титул [Concept('hegemony', 'гегемонии')|E], охватывающей всё [Concept('middleearth', 'Средиземье')|E]"
+ decision_h_middle_earth_trigger: "Вы владеете всеми [Concept('county', 'графствами')|E] в [GetGeographicalRegion('middleearth').GetName]"
+
  ##########################
  ### Dunedain Decisions ###
  ##########################
@@ -3155,6 +3162,12 @@
  decision_delve_ny_cennacatt_desc: "Когда-то это место было грозной столицей [Concept('nazgulcharacter', 'назгул')|E] [Concept('khorahil', 'Хорахиля')|E] и его [Concept('stormhost', 'Грозового воинства')|E]. Хотя башни разрушены, под цитаделью проходят многие мили туннелей. Тайные знания, скрытые там, позволят нам отстроить крепость должным образом и, возможно, научат нас большему..."
  decision_delve_ny_cennacatt_confirm: "Начать раскопки."
  decision_delve_ny_cennacatt.tt: "Столкнуться с опасностями в поисках древних сокровищ и забытых знаний."
+
+ decision_yellow_mountains_goblin_reclamation: "Изгнать чужаков"
+ decision_yellow_mountains_goblin_reclamation_tooltip: "Провозгласите господство гоблинов над Жёлтыми горами"
+ decision_yellow_mountains_goblin_reclamation_desc: "Уже давно #L [GetCultureByKey('blacklocks').GetCollectiveNoun|l]ие#! нарушители и #L [GetCultureByKey('rukhashai').GetCollectiveNoun|l]ие#! захватчики безраздельно правили обширными державами в Жёлтых горах. Наши самые древние легенды рассказывают о тех временах, когда мы в одиночку покоряли тёмные вершины. Скоро настанет день, когда [Concept('goblin', 'гоблины')|E] вновь будут править этими землями."
+ decision_yellow_mountains_goblin_reclamation_confirm: "Изгоним захватчиков!"
+ decision_yellow_mountains_goblin_reclamation_trigger_tt: "Только [Concept('goblin', 'гоблинские')|E] правители владеют землями в регионе [GetTitleByKey('e_yellow_mountains').GetNameNoTier]"
 
 
  #############################
