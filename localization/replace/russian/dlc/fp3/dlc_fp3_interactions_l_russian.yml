@@ -28,11 +28,9 @@
  fp3_antagonize_character_interaction.success_notif.negative.desc.alt.alt: "Никто так и не узнает, что слух распустили вы..."
  fp3_antagonize_character_interaction.success_tooltip.positive: "Верит вам и становится #P более высокого#! [Concept( 'opinion', 'мнения' )|E] о персонаже [secondary_recipient.GetTitledFirstName]"
  fp3_antagonize_character_interaction.success_tooltip.negative: "Верит вам и становится #N менее высокого#! [Concept( 'opinion', 'мнения' )|E] о персонаже [secondary_recipient.GetTitledFirstName]"
- fp3_antagonize_character_interaction.success_tooltip.positive.house_unity: "Это действие #P повысит#! TODO_CD_EMIL [Concept( 'house', 'дома' )|E] [secondary_recipient.GetHouse.GetBaseName]"
- fp3_antagonize_character_interaction.success_tooltip.negative.house_unity: "Это действие #N понизит#! TODO_CD_EMIL [Concept( 'house', 'дома' )|E] [secondary_recipient.GetHouse.GetBaseName]"
  fp3_antagonize_character_interaction.success_tooltip.positive.past: "[recipient.GetTitledFirstName] теперь #P более высокого#! [Concept( 'opinion', 'мнения' )|E] о вас"
  fp3_antagonize_character_interaction.success_tooltip.negative.past: "[recipient.GetTitledFirstName] теперь #N менее высокого#! [Concept( 'opinion', 'мнения' )|E] о вас"
- fp3_antagonize_character_interaction.recipient_message.fallback: "Вам следует знать, что [secondary_recipient.GetTitledFirstName] — [secondary_recipient.Custom('InsultNoun')]. С таким человеком и поступать следует соответственно, не так ли?"
+ fp3_antagonize_character_interaction.recipient_message.fallback: "Вам следует знать, что [secondary_recipient.GetTitledFirstName] — [secondary_recipient.Custom2('InsultNoun', SCOPE.sC('secondary_recipient'))]. С таким человеком и поступать следует соответственно, не так ли?"
  fp3_antagonize_character_interaction.recipient_message.01: "Вам следует знать, что ваш же сюзерен [secondary_recipient.GetTitledFirstName] втайне замышляет против вас. Будьте настороже рядом с такой коварной личностью!"
  fp3_antagonize_character_interaction.recipient_message.02: "У меня есть причины полагать, что ваш сюзерен [secondary_recipient.GetTitledFirstName] планирует убить вас! Будьте настороже рядом с [Select_CString(secondary_recipient.IsFemale, 'ней', 'ним' )], не дайте притворному дружелюбию вас обмануть!"
  fp3_antagonize_character_interaction.recipient_message.03: "Мои придворные поговаривают, что ваш сюзерен [secondary_recipient.GetTitledFirstName] #italic очень внимательно#! следит за вами втайне от вас же. Я не знаю, каковы [Select_CString(secondary_recipient.IsFemale, 'ее', 'его' )] намерения, но на всякий случай посоветую вам быть рядом с [Select_CString(secondary_recipient.IsFemale, 'ней', 'ним' )] настороже."
@@ -48,8 +46,6 @@
  fp3_antagonize_character_interaction.recipient_message.13: "[Select_CString(secondary_recipient.IsFemale, 'Ваша', 'Ваш' )] [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))] — образец доброты. [secondary_recipient.GetTitledFirstName] недавно [Select_CString(secondary_recipient.IsFemale, 'встречалась', 'встречался' )] с другим представителем [Concept( 'house', 'дома' )|E] [secondary_recipient.GetHouse.GetBaseName] и помог разрешить спор, который при неудачном исходе мог бы навредить [Select_CString(secondary_recipient.IsFemale, 'ее', 'его' )] репутации."
  fp3_antagonize_character_interaction.recipient_message.14: "[Select_CString(secondary_recipient.IsFemale, 'Ваша', 'Ваш' )] [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))] [secondary_recipient.GetTitledFirstName] поистине не знает себе равных. Впервые вижу, чтобы кто-то так самоотверженно защищал свой [Concept( 'house', 'дом' )|E]. Иметь [Select_CString(secondary_recipient.IsFemale, 'такую родственницу', 'такого родственника' )] — редкая удача."
  fp3_antagonize_character_interaction.recipient_message.15: "[secondary_recipient.GetTitledFirstName] — замечательный человек. Не думаете ли вы, что вам стоит взглянуть на [Select_CString(secondary_recipient.IsFemale, 'нее', 'него' )] по-другому?"
-
-
 
  fp3_persian_struggle_previously_swayed_tt: "Ранее поколебались во время [Concept( 'persian_struggle', 'иранской интерлюдии' )|E]: $VALUE|=+0$"
  fp3_demand_submission_interaction: "Потребовать подчинения"
@@ -126,6 +122,7 @@
  CHALLENGE_HOUSE_HEAD_LETHAL_DUEL_INVALID_TT: "Нельзя одновременно выбрать и переговоры, и смертельный поединок"
  AI_AVOID_LETHAL_DUEL_WITH_FAMILY: "Нежелание убивать [Concept( 'close_family', 'близкого родственника' )|E]: $VALUE|+=0$"
  AI_AVOID_LETHAL_DUEL: "Нежелание биться до смерти: $VALUE|+=0$"
+ AI_NOT_SORYO_OR_BUSHIDO: "[Concept('government', 'Правительство')|E] не [GetGovernment('japan_feudal_government').GetName|l] или [Concept('tradition', 'традиция')|E] не [GetCultureTradition('tradition_tgp_bushido').GetName|l]: $VALUE|+=0$"
 
  fp3_change_allegiance: "Присоединяйтесь ко мне"
  fp3_change_allegiance.desc.actor_is_supporter: "Убедить персонажа [recipient.GetShortUIName] принять роль: [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )]"
