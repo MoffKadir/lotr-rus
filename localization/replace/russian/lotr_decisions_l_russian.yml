@@ -2261,6 +2261,7 @@
  decision_restore_rhovanion_tooltip: "Восстановить давно исчезнувшее королевство Видугавии"
  decision_restore_rhovanion_desc: "Со времён вторжения Людей Повозок [rhovanion_kingdom|El] ушло в историю. [Concept( 'northmen', 'Северян' )|E] на равнинах [Concept( 'rhovanion', 'Рованиона' )|E] теперь мало - очень мало. Чтобы отвоевать равнины у истерлингов и восстановить королевство, потребуется не что иное, как чудо. Но если это удастся сделать, я смогу претендовать на корону и наследие Видугавии."
  decision_restore_rhovanion_confirm: "Кровью и клятвой, здесь мы стоим!"
+ decision_restore_rhovanion_tt: "Вы восстановите одну из древних столиц [Concept('rhovanion', 'Рованиона')|E]"
  rhovanion_formation_drift_tooltip: "Если вы полностью контролируете следующие [duchies|El], они станут де-юре частью королевства [GetTitleByKey('k_rhovanion').GetNameNoTier]: \n- [GetTitleByKey('d_anthardor').GetNameNoTier] \n- [GetTitleByKey('d_sunnarinna').GetNameNoTier] \n- [GetTitleByKey('d_rinnavuld').GetNameNoTier]"
  decision_rhovannorim_new_tradition_1: "Получит [Concept( 'tradition', 'традицию' )|E] [GetCultureTradition('tradition_a_people_reforged').GetName]"
  decision_remove_rhovannorim_tradition_1: "Потеряет [Concept( 'tradition', 'традицию' )|E] [GetCultureTradition('tradition_a_scattered_people').GetName]"
@@ -2316,6 +2317,13 @@
  decision_dale_high_king_borders: "Восточные границы укреплены"
  decision_dale_high_king_fealty: "Соседние [Concept('ruler', 'правители')|E]-северяне поклялись в верности"
  decision_dale_high_king_fealty_tt: "[new_dale_vassal.GetName] [Select_CString(new_dale_vassal.IsFemale, 'присягнула', 'присягнул' )] на верность"
+
+ decision_celduin_empire: "Объединить короны Кельдуина"
+ decision_celduin_empire_tooltip: "Создать долговечное королевство вдоль реки Бегущей"
+ decision_celduin_empire_desc: "Могучий Кельдуин, река Бегущая, является источником жизни двух великих королевств северян: [Concept('dale', 'Дэйла')|E], расположенного недалеко от истоков реки в [Concept('erebor', 'Эреборе')|E] и сосредоточенного вокруг Долгого озера Эсгарота, и [Concept('dorwinion', 'Дорвиниона')|E], простирающегося по обе стороны Кельдуина когда он проходит через зелёные земли и впадает в [Concept('seaofrhun', 'Море Рун')|E].\n\nС помощью дипломатии и альянсов эти родственные королевства можно было бы объединить в единое целое, объединив сильные стороны обоих."
+ decision_celduin_empire_confirm: "Разослать весть всем людям севера."
+ decision_celduin_empire_dale: "[GetTitleByKey('k_dorwinion').GetHolder.GetName] становится вашим [Concept('vassal', 'вассалом')|E]"
+ decision_celduin_empire_dorwinion: "[GetTitleByKey('k_dale').GetHolder.GetName] становится вашим [Concept('vassal', 'вассалом')|E]"
 
  decision_unite_the_western_houses: "Объединить западные кланы"
  decision_unite_the_western_houses_tooltip: "Объединить всех [Concept('dwarves', 'гномов')|E], живущих в [Concept('bluemountains', 'Синих горах')|E]"
@@ -3153,9 +3161,9 @@
  decision_build_snagazat_desc: "[Concept('blacklocks', 'Черновласы')|E] Баразимабула непокорны. Хотя они всего лишь тени своих предков в Маблад-думе, они остаются постоянной угрозой, отказываясь подчиняться нашему господству. Смерть не будет достаточным наказанием за их дерзость; они должны быть побеждены и порабощены, а их страданиям должно быть должное применение."
  decision_build_snagazat.tt: "Осквернить Нарагатол и возвести новое [Concept('orcish', 'орочье')|E] чудо, чтобы заменить его, из трёх шаблонов."
  decision_build_snagazat_confirm: "Кровь, смешанная в ступке."
- lotr_snagazat_martial_tooltip: "Бойцовская яма, где рабы будут сражаться ради нашего удовольствия."
- lotr_snagazat_economic_tooltip: "Рабы, проданные в Ан-Балкумагане и Бозиша-Даре."
- lotr_snagazat_dread_tooltip: "Её цель - только страдание."
+ lotr_snagazat_martial_tooltip: "[GetBuilding('wonder_snagazat_martial').GetName]" #Бойцовская яма, где рабы будут сражаться ради нашего удовольствия.
+ lotr_snagazat_economic_tooltip: "[GetBuilding('wonder_snagazat_economic').GetName]" #Рабы, проданные в Ан-Балкумагане и Бозиша-Даре.
+ lotr_snagazat_dread_tooltip: "[GetBuilding('wonder_snagazat_dread').GetName]" #Её цель - только страдание.
 
  decision_delve_ny_cennacatt: "Начать раскопки Ни Хеннакатта"
  decision_delve_ny_cennacatt_tooltip: "Исследовать древние руины Ни Хеннакатта."
@@ -3168,7 +3176,6 @@
  decision_yellow_mountains_goblin_reclamation_desc: "Уже давно #L [GetCultureByKey('blacklocks').GetCollectiveNoun|l]ие#! нарушители и #L [GetCultureByKey('rukhashai').GetCollectiveNoun|l]ие#! захватчики безраздельно правили обширными державами в Жёлтых горах. Наши самые древние легенды рассказывают о тех временах, когда мы в одиночку покоряли тёмные вершины. Скоро настанет день, когда [Concept('goblin', 'гоблины')|E] вновь будут править этими землями."
  decision_yellow_mountains_goblin_reclamation_confirm: "Изгоним захватчиков!"
  decision_yellow_mountains_goblin_reclamation_trigger_tt: "Только [Concept('goblin', 'гоблинские')|E] правители владеют землями в регионе [GetTitleByKey('e_yellow_mountains').GetNameNoTier]"
-
 
  #############################
  ###   Dune Sea Decisions  ###
