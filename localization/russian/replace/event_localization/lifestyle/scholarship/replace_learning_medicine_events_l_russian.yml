@@ -1,0 +1,20 @@
+﻿l_russian:
+ #A vassal (or your liege) wants to eat some hashish while visiting your capital, by Ewan Cowhig Croft.
+ learning_medicine.2110.t:0 "Беседа за трубкой" # LOTR
+ learning_medicine.2110.desc_good_terms:0 "«О, [ROOT.Char.GetFirstNameNoTooltip]! Я [Select_CString(hashish_vassal_or_liege.IsFemale, 'надеялась', 'надеялся' )] встретиться с вами. Пойдемте, я знаю восхитительную небольшую таверну неподалеку. Вы, я, [ROOT.Char.Custom('GetExpensiveDrink')] и [ROOT.Char.Custom('GetPipeWeedName')], что скажете?»" # LOTR
+ learning_medicine.2110.desc_bad_terms:0 "В воздухе повисает напряжение, наша стража готовится в бою. «[Select_CString(ROOT.Char.IsFemale, 'Госпожа', 'Господин' )], — нервно бормочет молодой солдат позади меня, — может, нам и правда лучше немного расслабиться за зельем [ROOT.Char.Custom('GetPipeWeedName')] в той небольшой таверне?»\n\nОбе группы умолкают, и [hashish_vassal_or_liege.GetFirstNameNoTooltip] ждет моего ответа." # LOTR
+ learning_medicine.2110.desc_neutral_terms:0 "[Select_CString(hashish_vassal_or_liege.IsFemale, 'Застигнутая', 'Застигнутый' )] врасплох, [hashish_vassal_or_liege.GetFirstNameNoTooltip] после недолгого молчания останавливает взгляд на чем-то за моей спиной.\n\n«[Select_CString(ROOT.Char.IsFemale, 'Моя', 'Мой' )] [hashish_vassal_or_liege.Custom2('RelationToMe', ROOT.Char)], возможно, вы присоединитесь ко мне? Вы, я, [ROOT.Char.Custom('GetExpensiveDrink')] и [ROOT.Char.Custom('GetPipeWeedName')], что скажете?»" # LOTR
+ learning_medicine.2110.b.bad_terms:0 "Хорошо. Но #EMP только одну#! трубку." # LOTR
+ learning_medicine.2110.b.neutral_terms:0 "Конечно, почему бы немножко подымить?"
+ learning_medicine.2110.b.flavour:0 "Где одна трубка, там и две, три, пять..."
+ cosmic_insights_modifier:0 "Победитель в дымовых кольцах"
+ cosmic_insights_modifier_desc:0 "Долгая ночь учёбы и практики сделала этого персонажа настоящим экспертом в выдувании дымовых колец."
+ learning_medicine.2110.c.good_terms:0 "Не откажусь от трубки!"
+ learning_medicine.2110.c.bad_terms:0 "Ты меня не передымишь!"
+ learning_medicine.2110.c.neutral_terms:0 "Это будет ночь, полная изощренных удовольствий!"
+ learning_medicine.2110.c.tt_success:0 "Дружеское подшучивание развязывает [hashish_vassal_or_liege.GetHerHim] язык"
+
+ ##########
+ #learning_medicine_special
+ ###########
+ learning_medicine_special.1002.desc:0 "Я пытаюсь не дышать, перебирая спутанную массу склизких раздутых кишок, вываливающихся из живота трупа, но все без толку. Гнилостный запах разложения вскоре проникает в мои легкие, вызывая приступ тошноты.\n\nЗатем что-то лопается, и на операционный стол выплескивается поток липкого желтоватого гноя.\n\n«Что #EMP это#! было?»"

@@ -1,4 +1,38 @@
 ﻿l_russian:
+ MOD_DUNE_SEA_ADVANTAGE: "[command_modifier_i|E][advantage|E] на море Дюн" # LOTR
+ MOD_DUNE_SEA_ATTRITION: "[command_modifier_i|E]Потери на море Дюн" # LOTR
+ MOD_RED_DESERT_ADVANTAGE: "[command_modifier_i|E][advantage|E] в красной пустыне" # LOTR
+ MOD_RED_DESERT_ATTRITION: "[command_modifier_i|E]Потери в красной пустыне" # LOTR
+
+ MOD_DEEP_FOREST_ADVANTAGE: "[command_modifier_i|E][advantage|E] в лесной чаще" # LOTR
+ MOD_DEEP_FOREST_ATTRITION: "[command_modifier_i|E]Потери в лесной чаще" # LOTR
+ MOD_DEEP_FOREST_DETECTION: "[command_modifier_i|E]Обнаружение в лесной чаще" # LOTR
+ MOD_MALLORN_FOREST_ADVANTAGE: "[command_modifier_i|E][advantage|E] в лесу мэллорнов" # LOTR
+ MOD_MALLORN_FOREST_ATTRITION: "[command_modifier_i|E]Потери в лесу мэллорнов" # LOTR
+ MOD_MALLORN_FOREST_DETECTION: "[command_modifier_i|E]Обнаружение в лесу мэллорнов" # LOTR
+
+ monster_damage_add: "[damage|E] [Concept('monster', 'чудовищ')|E]"
+ monster_damage_mult: "[damage|E] [Concept( 'heavy_monster', 'чудовищ' )|E]"
+ monster_toughness_add: "[toughness|E] [Concept('monster', 'чудовищ')|E]"
+ monster_toughness_mult: "[toughness|E] [Concept( 'heavy_monster', 'чудовищ' )|E]"
+ monster_pursuit_add:0 "[pursuit|E] [Concept('monster', 'чудовищ')|E]"
+ monster_pursuit_mult:0 "$monster_pursuit_add$"
+ monster_screen_add:0 "[screen|E] [Concept('monster', 'чудовищ')|E]"
+ monster_screen_mult:0 "$monster_screen_add$"
+ monster_siege_value_add:0 "[siege_progress|E] [Concept('heavy_monster', 'чудовищ')|E]"
+ monster_maintenance_mult: "Содержание [Concept('heavy_monster', 'чудовищ')|E]"
+ monster_recruitment_cost_mult:0 "Стоимость найма [Concept('heavy_monster', 'чудовищ')|E]" #LOTR
+ monster_max_size_add: "Максимальный размер [Concept('regiments', 'полков')|E] [Concept('heavy_monster', 'чудовищ')|E]"
+
+ stationed_monster_damage_mult: "[damage|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
+ stationed_monster_toughness_mult: "[toughness|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
+ stationed_monster_pursuit_mult: "[pursuit|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
+ stationed_monster_screen_mult: "[screen|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
+ stationed_monster_damage_add: "[damage|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
+ stationed_monster_toughness_add: "[toughness|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
+ stationed_monster_pursuit_add: "[pursuit|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
+ stationed_monster_screen_add: "[screen|E] [Concept( 'stationed', 'расположенных' )|E] здесь [Concept( 'monster', 'монстров' )|E]"
+
  ### Additions to Vanilla ###
  steward_convince_dejure_potential_county_faith_alignment_tt: "Они считают нашу конфессию [Concept( 'faith_hostile', 'врагами' )|E] или [Concept( 'faith_evil', 'воплощённым злом' )|E]"
  nomad_war_band: "Наём кочевого отряда"
