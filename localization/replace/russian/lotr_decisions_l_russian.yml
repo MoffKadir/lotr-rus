@@ -3448,7 +3448,7 @@
  decision_form_powa_kingdom_tooltip: "Объединить пованский народ"
  decision_form_powa_kingdom_desc: "Пованский народ слишком долго страдал от набегов и завоеваний своих соседей, но сегодня этому пришел конец!"
  decision_form_powa_kingdom_confirm: "Единство, отныне и вовек!"
- decision_form_powa_kingdom_effect_tt_1: "Все вассалы в де-юре границах державы [GetTitleByKey('k_poa').GetNameNoTier] имеют 60% шанс стать [Concept('clan', 'кланом')|E]"
+ decision_form_powa_kingdom_effect_tt_1: "Все вассалы в де-юре границах державы [GetTitleByKey('k_poa').GetNameNoTier] имеют 60% шанс стать [Concept('oligarchy_government', 'олигархией')|E]"
  decision_form_powa_kingdom_effect_tt_2: "Вы владеете #V 50%#! графствами державы [GetTitleByKey('k_poa').GetNameNoTier]\n$BULLET_WITH_TAB$Текущее значение: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_martial_route')|2]%#!"
  decision_form_powa_kingdom_diplo_trigger_tt: "В настоящее время: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_value_normalized')|2]%#!\nПо крайней мере #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required')|0]%#! правителей в регионе [GetTitleByKey('k_poa').GetNameNoTier] подходят под следующие условия:\n$BULLET_WITH_TAB$Ваши друзья\n$BULLET_WITH_TAB$Ваши любовники\n$BULLET_WITH_TAB$Ваши вассалы\n$BULLET_WITH_TAB$Входят в ту же конфедерацию\n$BULLET_WITH_TAB$Находятся под #v вашим#! влиянием\n[Select_CString(EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required'),'(CFixedPoint)80'),'\nЕсли Пова находится под вашим контролем, значение поддержки опускается - нужно лишь #V 50%#!.','')]"
 
