@@ -601,7 +601,7 @@
  arassuil_lay_a_trap_tt: "Вы попытаетесь выманить вождя орков на открытое пространство"
  arassuil_face_the_long_dark_tt: "Вы отправитесь к западным воротам [Concept('moria', 'Мории')|E], чтобы бросить вызов предводителю орков"
  arassuil_start_war_desc_tt: "Ваша цель - изгнать орков из их залов"
- moria_has_orcs: "Главные залы [Concept('moria', 'Мории')|E] заняты [Concept('orcs', 'орками')|E]"
+ moria_has_orcs: "[GetTitleByKey('c_durins_hall').GetNameNoTier] захвачен [Concept('orcs', 'орками')|E]"
 
  decision_moria_war_arassuil: "Поход на Морию"
  decision_moria_war_arassuil_tooltip: "Призвать своих воинов на войну с [Concept('moria', 'Морией')|E]"
@@ -2912,6 +2912,19 @@
  dwarven_beard_care_decision_tooltip: "Устроиться поудобнее, чтобы привести в порядок свою бороду"
  dwarven_beard_care_decision_effect_tooltip: "Вы можете потерять немного [Concept('stress', 'стресса')|E] и будете выглядеть великолепно!"
  dwarven_beard_care_decision_confirm: "Мне нужно немного масла для бороды..."
+
+ decision_rally_dwarves: "Сплотить гномов"
+ decision_rally_dwarves_tooltip: "Собрать гномов под своими знамёнами"
+ decision_rally_dwarves_desc: "[Concept('dwarves', 'Гномы')|E] - гордый и древний народ, с долгой историей борьбы и побед. Мы сталкивались со многими испытаниями, но всегда выходили из них сильнее. Теперь пришло время снова сплотить наш народ, отомстить за нашего павшего короля и вернуть нашу родину!"
+ decision_rally_dwarves_confirm: "Во славу гномов!"
+ decision_rally_dwarves_effect_tt: "Вы соберёте армию [Concept('dwarves', 'гномов')|E], готовясь к войне за возвращение [Concept('khazaddum', 'Кхазад-дума')|E]."
+ decision_rally_dwarves_tt: "[GetScriptedCharacterByHistoryID('lineofdurin81').GetFirstName] был убит"
+
+ decision_moria_war_thror_heir: "Отомстить за Трора и вернуть Морию"
+ decision_moria_war_thror_heir_tooltip: "Отомстить за своего павшего короля и вернуть дом своих предков - [Concept('khazaddum', 'Кхазад-дум')|E]"
+ decision_moria_war_thror_heir_confirm: "За Кхазад-дум! За Народ Дурина!"
+ decision_moria_war_thror_heir_desc: "[Concept('dwarves', 'Гномы')|E] из рода [Concept('durin', 'Дурина')|E] теряли чертог за чертогом. Мы потеряли [Concept('gunduzbad', 'Гундузбад')|E], где пробудился Дурин, [Concept('khazaddum', 'Кхазад-дум')|E], самое могущественное из королевств гномов, которое было и будет, а теперь мы потеряли [Concept('lonelymountain', 'Одинокую гору')|E], [Concept('erebor', 'Эребор')|E], один из наших величайших чертогов.\n\nПадение Кхазад-дума стало большой трагедией для нашего народа, а потеря нашего короля, #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin81').GetID] #L Трора#!#!, стала ударом, от которого мы до сих пор не оправились. Но теперь пришло время вернуть дом наших предков и отомстить за нашего павшего короля!\n\nМы выступим на Морию и вернём её себе! Во имя Кхазад-дума! Во имя [Concept('durinsfolk', 'Народа Дурина')|E]!"
+ decision_moria_war_thror_heir_tt: "Вы начнёте войну против нынешнего правителя [Concept('khazaddum', 'Кхазад-дума')|E]"
 
  ## Dwarven Beardcare loc
  beard_care_standard_modifier: "Красивая борода"
