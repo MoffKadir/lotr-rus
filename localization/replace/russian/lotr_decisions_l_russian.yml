@@ -84,18 +84,24 @@
  decision_rebuild_halls_bornmir_tooltip: "Восстановить чертог Борнмира"
 
  decision_noldor_eriador: "Вернуть наследие Гиль-галада"
- decision_noldor_eriador_desc: "Во времена расцвета его королевства во [Concept('secondage', 'Второй эпохе')|E] власть Гиль-галада простиралась на восток до Великого Зеленолесья. Он считался владыкой большей части [Concept('eriador', 'Эриадора')|E], защитником и сюзереном как людей, так и эльфов. Хотя колонизация [Concept('dunedain', 'дунэдайн')|E] и последующее основание [Concept('arnor', 'Арнора')|E] привели к отказу от этой власти, не все забыли эту древнюю истину.\n\nЕсли эльфы вновь проявят себя как хранители всего Эриадора, великолепие наследия Гиль-галада может быть возрождено."
+ decision_noldor_eriador_desc: "Во времена расцвета его королевства во [Concept('secondage', 'Второй эпохе')|E] власть Гиль-галада простиралась на восток до границ [Concept('greenwood', 'Зеленолесья')|E]. Он считался владыкой большей части [Concept('eriador', 'Эриадора')|E], защитником и сюзереном как [Concept('men', 'людей')|E], так и [Concept('elves', 'эльфов')|E]. Хотя колонизация [Concept('dunedain', 'дунэдайн')|E] и последующее основание [Concept('arnor', 'Арнора')|E] привели к отказу от этой власти, не все забыли эту древнюю истину.\n\nЕсли эльфы вновь проявят себя как хранители всего Эриадора, великолепие наследия Гиль-галада может быть возрождено."
  decision_noldor_eriador_confirm: "Пусть Эриадор вновь процветает в мире!"
  decision_noldor_eriador_tooltip: "Утвердить гегемонию нолдор над Эриадором"
- decision_noldor_eriador_effect: "Все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_eriador').GetName] получат модификатор [GetModifier('elven_homeland_county_modifier').GetNameWithTooltip]" 
- no_evil_rulers_in_misty_mountains_tt: "В регионе [GetGeographicalRegion('custom_misty_mountian_surface_caves').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
+ #decision_noldor_eriador_effect: "Все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_eriador').GetName] получат модификатор [GetModifier('elven_homeland_county_modifier').GetNameWithTooltip]"
  no_evil_rulers_in_blue_mountains_tt: "В регионе [GetGeographicalRegion('middleearth_mountains_blue').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
  no_evil_rulers_in_forodwaith_tt: "В регионе [GetGeographicalRegion('middleearth_forodwaith').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
- no_evil_rulers_in_anduin_tt: "В регионе [GetGeographicalRegion('middleearth_west_rhovanion_anduin').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
  no_independent_rulers_in_eriador: "В регионе [GetGeographicalRegion('custom_eriador').GetName] нет [Concept('independent_ruler', 'независимых правителей')|E]"
  no_independent_rulers_in_lindon: "В регионе [GetGeographicalRegion('middleearth_west_beleriand').GetName] нет [Concept('independent_ruler', 'независимых правителей')|E]"
  hold_all_elven_homelands_in_lindon: "Вы владеете всеми графствами с модификатором [GetModifier('elven_homeland_county_modifier').GetNameWithTooltip] в регионе [GetGeographicalRegion('middleearth_west_beleriand').GetName]"
  hold_all_elven_homelands_in_eriador: "Вы владеете всеми графствами с модификатором [GetModifier('elven_homeland_county_modifier').GetNameWithTooltip] в регионе [GetGeographicalRegion('custom_eriador').GetName]"
+
+ decision_noldor_anduin: "Включить Долину Андуина в границы наследия"
+ decision_noldor_anduin_desc: "Наследие Гиль-галада, которое когда-то простиралось до самых границ [Concept('greenwood', 'Зеленолесья')|E], станет таким снова, и Долина Андуина окажется под властью нолдор."
+ decision_noldor_anduin_confirm: "Долина Андуина вновь под властью нолдорской гегемонии."
+ decision_noldor_anduin_tooltip: "Утвердить нолдорскую гегемонию над Долиной Андуина"
+ no_independent_rulers_in_lorien: "В регионе [GetGeographicalRegion('custom_lorien').GetName] нет [Concept('independent_ruler', 'независимых правителей')|E]"
+ no_evil_rulers_in_misty_mountains_tt: "В регионе [GetGeographicalRegion('custom_misty_mountian_surface_caves').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
+ no_evil_rulers_in_anduin_tt: "В регионе [GetGeographicalRegion('middleearth_west_rhovanion_anduin').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
 
  decision_restore_suza_sumar_elven: "Возродить эльфийскую державу Сумариэт"
  decision_restore_suza_sumar_elven_desc: "Давным-давно куинд-[avari|El] поселились в землях Суза-Сумара, некоторое время жили там и научили народы хоннин многому их того, что происходит в мире, а затем ушли, когда солнце выжгло близлежащие земли, став не более чем легендой в этом регионе. Теперь, спустя тысячи лет, [Concept('elves', 'эльфы')|E] вернутся в джунгли Юга."
@@ -2281,6 +2287,16 @@
  decision_reclaim_rhovanion_plains_confirm: "Равнины снова наши!"
 
  rhovanion_resettlement_culture_counties_custom: "Каждое [county|El] с истерлингским и северным [Concept( 'heritage', 'наследием' )|E] в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('custom_plains_rhovanion').GetName]"
+
+ decision_rhovanion_hegemony: "Основать величайшее королевство северян"
+ decision_rhovanion_hegemony_tooltip: "Объединить все державы [Concept('northmen', 'северян')|E]" 
+ decision_rhovanion_hegemony_desc: "[Concept('northmen', 'Северяне')|E] жили на равнинах [Concept('rhovanion', 'Рованиона')|E] и в [Concept('anduinvale', 'Долине Андуина')|E] в течение трёх эпох, но их многочисленные королевства так и не были объединены под одним знаменем. Возможно, наконец пришло время изменить это?"
+ decision_rhovanion_hegemony_confirm: "Пусть север станет тому свидетелем."
+ decision_rhovanion_hegemony_aladegan: "Вы приняли решение #high Аладеган#!"
+ decision_rhovanion_hegemony_rhovanion: "Вы приняли решение #high Отвоевать равнины Рованиона#!"
+ decision_rhovanion_hegemony_eotheod: "Вы приняли решение #high Объединить эотеод#!"
+ decision_rhovanion_hegemony_dale: "Вы приняли решение #high Верховный король Дэйла#!"
+ decision_rhovanion_hegemony_celduin: "Вы приняли решение #high Объединить Кельдуин#!"
 
  ########################
  #### Dale Decisions ####

@@ -256,6 +256,8 @@
  nick_the_steadfast_shield_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были известны', Select_CString(CHARACTER.IsFemale, 'была известна', 'был известен' ))] непоколебимой верностью своим традициям и вере, даже в море переселений и перемен вокруг изменчивых равнин Рованиона."
  nick_rhovanion_savior: "[Select_CString(CHARACTER.IsFemale, 'Спасительница', 'Спаситель' )] Рованиона"
  nick_rhovanion_savior_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'сыграли', Select_CString(CHARACTER.IsFemale, 'сыграла', 'сыграл' ))] важную роль в возрождении былой славы разрушенного королевства [Concept('rhovanion', 'Рованион')|E]."
+ nick_rhovanion_sovereign: "[Select_CString(CHARACTER.IsFemale, 'Верховная властительница', 'Верховный властитель' )] севера"
+ nick_rhovanion_sovereign_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'объединили', Select_CString(CHARACTER.IsFemale, 'объединила', 'объединил' ))] все державы [Concept('northmen', 'северян')|E] под одним знаменем."
 
  ### Dorwinion Nicknames ###
  nick_gwinaran: "Гвинаран"
@@ -526,13 +528,13 @@
  nick_erchamion: "Эрхамион"
  nick_erchamion_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были прозваны', Select_CString(CHARACTER.IsFemale, 'была прозвана', 'был прозван' ))] [Glossary('Эрхамионом','erchamion_gloss')] на [Concept('sindarin', 'синдарине')|E], после того как волк Кархарот оторвал [Select_CString( CHARACTER.IsLocalPlayer, 'вашу', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] руку."
  nick_eledhwen: "Эледвен" # Morwen Eledhwen mother of Turin
- nick_eledhwen_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [Glossary('эпессэ','epesse_gloss')] [Glossary('Эледвен','eledhwen_gloss')] от [Concept('men', 'людей')|E] из-за света своего взгляда и красоты лица."
+ nick_eledhwen_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [epesse|El] [Glossary('Эледвен','eledhwen_gloss')] от [Concept('men', 'людей')|E] из-за света своего взгляда и красоты лица."
 
  ### Elven Nicknames ###
  nick_noldoran: "Нолдоран"
  nick_noldoran_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] первым верховным королём [noldorelves|El] и [Select_CString( CHARACTER.IsLocalPlayer, 'были известны', Select_CString(CHARACTER.IsFemale, 'была известна', 'был известен' ))] как [Glossary('Нолдоран','noldoran_gloss')]."
  nick_serinde: "Сериндэ" # Miriel
- nick_serinde_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [Glossary('эпессэ','epesse_gloss')] [Glossary('Сериндэ','serinde_gloss')] за мастерство в рукоделии."
+ nick_serinde_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [epesse|El] [Glossary('Сериндэ','serinde_gloss')] за мастерство в рукоделии."
  nick_the_unbegotten: "[Select_CString(CHARACTER.IsFemale, 'Незабвенная', 'Незабвенный' )]"
  nick_the_unbegotten_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] [Select_CString(CHARACTER.IsFemale, 'одной', 'одним' )] из первых [Concept('elves', 'эльфов')|E], пробудившихся в [Concept('cuivienen', 'Куивиэнене')|E], и поэтому не [Select_CString( CHARACTER.IsLocalPlayer, 'имеете', 'имеет')] родителей."
  nick_the_minstrel: "Менестрель"
@@ -557,17 +559,17 @@
  nick_the_elvenking: "[Select_CString(CHARACTER.IsFemale, 'Королева', 'Король' )] эльфов"
  nick_the_elvenking_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были прозваны', Select_CString(CHARACTER.IsFemale, 'была прозвана', 'был прозван' ))] [Select_CString(CHARACTER.IsFemale, 'Королевой', 'Королём' )] эльфов, поскольку [Select_CString( CHARACTER.IsLocalPlayer, 'вы', CHARACTER.GetSheHe)] [Select_CString( CHARACTER.IsLocalPlayer, 'правили', Select_CString(CHARACTER.IsFemale, 'правила', 'правил' ))] [lasgalendrimelves|El] северного [Concept( 'mirkwood', 'Лихолесья' )|E]."
  nick_celebrindal: "Келебриндал"
- nick_celebrindal_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [Glossary('эпессэ','epesse_gloss')] [Glossary('Келебриндал','celebrindal_gloss')], из-за [Select_CString( CHARACTER.IsLocalPlayer, 'вашей', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] привычки всегда ходить босиком."
+ nick_celebrindal_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [epesse|El] [Glossary('Келебриндал','celebrindal_gloss')], из-за [Select_CString( CHARACTER.IsLocalPlayer, 'вашей', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] привычки всегда ходить босиком."
  nick_faelivrin: "Фаэливрин" # Finduilas
  nick_faelivrin_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были прозваны', Select_CString(CHARACTER.IsFemale, 'была прозвана', 'был прозван' ))] [Glossary('Фаэливрин','faelivrin_gloss')] [Select_CString( CHARACTER.IsLocalPlayer, 'вашим', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] возлюбленным #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofguilin2').GetID] #L Гвиндором#!#!, из-за [Select_CString( CHARACTER.IsLocalPlayer, 'вашей', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] сияющей красоты."
  nick_tinuviel: "Тинувиэль"
  nick_tinuviel_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были известны', Select_CString(CHARACTER.IsFemale, 'была известна', 'был известен' ))] как [Glossary('Тинувиэль','tinuviel_gloss')], это имя было изначально дано [Select_CString( CHARACTER.IsLocalPlayer, 'вам', Select_CString(CHARACTER.IsFemale, 'ей', 'ему' ))] #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofbeor32').GetID] #L Береном#!#!, когда он наткнулся на [Select_CString( CHARACTER.IsLocalPlayer, 'вас', Select_CString(CHARACTER.IsFemale, 'неё', 'него' ))] в лесах Нелдората."
  nick_undomiel: "Ундомиэль"
- nick_undomiel_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [Glossary('эпессэ','epesse_gloss')] [Glossary('Ундомиэль','undomiel_gloss')], что указывает на её красоту и положения в качестве символического конца времени [Concept('elven', 'эльфов')|E] в [Concept('endor', 'Эндоре')|E]."
+ nick_undomiel_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [epesse|El] [Glossary('Ундомиэль','undomiel_gloss')], что указывает на её красоту и положения в качестве символического конца времени [Concept('elven', 'эльфов')|E] в [Concept('endor', 'Эндоре')|E]."
  nick_eluchil: "Элухиль"
  nick_eluchil_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] сыном #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofbeor32').GetID] #L Берена#!#! и #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofelwe2').GetID] #L Лутиэн#!#!. Впоследствии [Select_CString( CHARACTER.IsLocalPlayer, 'вы стали известны', Select_CString(CHARACTER.IsFemale, 'она стала известна', 'он стал известен' ))] как [Glossary('Элухиль','eluchil_gloss')], поскольку [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] наследником [Concept('elu_thingol', 'Элу Тингола')|E], владыки #L [GetTitleByKey('k_doriath').GetNameNoTier]а#!."
  nick_ardamire: "Ардамирэ"
- nick_ardamire_desc: "[Glossary('Ардамирэ','ardamire_gloss')] - пророческое [Glossary('амилессэ','amilesse_gloss')] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )]."
+ nick_ardamire_desc: "[Glossary('Ардамирэ','ardamire_gloss')] - пророческое [amilesse|El] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )]."
  nick_athrad_gillith: "Атрад"
  nick_athrad_gillith_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] - мастер игры на арфе, [Select_CString(CHARACTER.IsFemale, 'способная', 'способный' )] создавать чудесную музыку, которая завораживает даже самые суровые сердца."
  nick_lordlady_of_light: "[CHARACTER.GetLadyLord|U] Света"
@@ -592,7 +594,7 @@
  nick_the_vigilant: "[Select_CString(CHARACTER.IsFemale, 'Бдительная', 'Бдительный' )]"
  nick_the_vigilant_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'поклялись', Select_CString(CHARACTER.IsFemale, 'поклялась', 'поклялся' ))] защищать [Concept('eriador', 'Эриадор')|E] от любых угроз, которые могут возникнуть в этих землях."
  nick_urundil: "Урундиль"
- nick_urundil_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [Glossary('эпессэ','epesse_gloss')] [Glossary('Урундиль','urundil_gloss')] за любовь и умение обращаться с медью."
+ nick_urundil_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'получили', Select_CString(CHARACTER.IsFemale, 'получила', 'получил' ))] [epesse|El] [Glossary('Урундиль','urundil_gloss')] за любовь и умение обращаться с медью."
 
  ### Maiar ###
  nick_lord_of_the_rings: "Властелин Колец"
@@ -1686,7 +1688,7 @@
  nick_ciriaran: "Кириаран"
  nick_ciriaran_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'известны', Select_CString(CHARACTER.IsFemale, 'известна', 'известен' ))] как «[Glossary('Кириаран','ciriaran_gloss')]»."
  nick_ingoldo: "Инголдо"
- nick_ingoldo_desc: "[Glossary('Инголдо','ingoldo_gloss')] - [Glossary('амилессэ','amilesse_gloss')] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )]."
+ nick_ingoldo_desc: "[Glossary('Инголдо','ingoldo_gloss')] - [amilesse|El] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )]."
  nick_prince_of_all_elves: "[Select_CString(CHARACTER.IsFemale, 'Принцесса', 'Принц' )] всех эльфов"
  nick_prince_of_all_elves_desc: "Будучи сыном [GetScriptedCharacterByHistoryID( 'lineofingwe2' ).GetFirstName], титулярного верховного короля [Concept('elves', 'эльфов')|E], [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'известны', Select_CString(CHARACTER.IsFemale, 'известна', 'известен' ))] как «Принц всех эльфов»."
 
