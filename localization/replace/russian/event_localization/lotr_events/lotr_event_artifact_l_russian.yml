@@ -62,9 +62,9 @@
 
  lotr_artifact.0033.t: "Отчёт поисковой группы"
  lotr_artifact.0033.desc.intro: "[Select_CString(spymaster.IsFemale, 'Моя тайная советница', 'Мой тайный советник' )] [spymaster.GetTitledFirstName] входит в мой тронный зал,"
- lotr_artifact.0033.intro.artifact: "с широкой улыбкой на лице. «Мой сюзерен, отличные новости!»\n\n"
- lotr_artifact.0033.intro.owner: "с довольной улыбкой на лице. «Мой сюзерен, у меня для вас новости!»\n\n"
- lotr_artifact.0032.desc.intro.failure: "с хмурым выражением лица. «Мой сюзерен, боюсь, мы вернулись с пустыми руками».\n\n"
+ lotr_artifact.0033.intro.artifact: "с широкой улыбкой на лице. «[ROOT.Char.Custom('FormOfAddressForLiege')|U], отличные новости!»\n\n"
+ lotr_artifact.0033.intro.owner: "с довольной улыбкой на лице. «[ROOT.Char.Custom('FormOfAddressForLiege')|U], у меня для вас новости!»\n\n"
+ lotr_artifact.0032.desc.intro.failure: "с хмурым выражением лица. «[ROOT.Char.Custom('FormOfAddressForLiege')|U], боюсь, мы вернулись с пустыми руками».\n\n"
  lotr_artifact.0033.orcrist.found: "Наши агенты вернулись с [Glossary('Оркристом','orcrist_gloss')], мечом #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина «Дубощита»#!#!!"
  lotr_artifact.0033.orcrist.owner: "Мы обнаружили, что [Glossary('Оркристом','orcrist_gloss')], мечом #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина «Дубощита»#!#!, владеет не кто [Select_CString(orcrist_owner.IsFemale, 'иная', 'иной' )], как [orcrist_owner.GetTitledFirstName]!"
  lotr_artifact.0033.orcrist.failure: "Нам не удалось найти никаких следов [Glossary('Оркриста','orcrist_gloss')], меча #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurin83').GetID] #L Торина «Дубощита»#!#!."
@@ -129,7 +129,7 @@
  lotr_artifact.0012.b:0 "Я не забуду этого!"
 
  lotr_artifact.0013.t:0 "Мрачные вести"
- lotr_artifact.0013.desc:0 "В мой чертог входит гонец с печальным лицом. «Мой сюзерен, я несу печальные вести: [dead_heir.GetTitledFirstName], [Select_CString(dead_heir.IsFemale, 'ваша', 'ваш' )] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('dead_heir'))], [Select_CString(dead_heir.IsFemale, 'умерла', 'умер' )]».\n\n«Вот [heirloom_artifact.GetNameNoTooltip] - реликвия, которую [dead_heir.GetSheHe] всегда [Select_CString(dead_heir.IsFemale, 'носила', 'носил' )] с собой».\n\nЗатуманенными глазами я смотрю на сокровище, лежащее у меня на коленях."
+ lotr_artifact.0013.desc:0 "В мой чертог входит гонец с печальным лицом. «[ROOT.Char.Custom('FormOfAddressForLiege')|U], я несу печальные вести: [dead_heir.GetTitledFirstName], [Select_CString(dead_heir.IsFemale, 'ваша', 'ваш' )] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('dead_heir'))], [Select_CString(dead_heir.IsFemale, 'умерла', 'умер' )]».\n\n«Вот [heirloom_artifact.GetNameNoTooltip] - реликвия, которую [dead_heir.GetSheHe] всегда [Select_CString(dead_heir.IsFemale, 'носила', 'носил' )] с собой».\n\nЗатуманенными глазами я смотрю на сокровище, лежащее у меня на коленях."
  lotr_artifact.0013.a:0 "[Select_CString(ROOT.Char.IsFemale, 'Хотела', 'Хотел' )] бы я никогда больше не держать эту реликвию в руках."
 
  lotr_artifact.0014.t:0 "Выбор реликвии"

@@ -4,6 +4,7 @@
  situation_elven_hope_situation: "Долгое поражение"
  situation_type_elven_hope_situation: "Долгое поражение"
  situation_type_elven_hope_situation_desc: "#TOLKIENQUOTE: «Три эпохи западного мира видел я, был свидетелем многих поражений и многих бесплодных побед».#!\n\n[Concept('elves', 'Эльфы')|E] издавна обитали в [Concept('middleearth', 'Средиземье')|E]. С момента их пробуждения в [Concept('cuivienen', 'Куивиэнене')|E] и до наших дней они были свидетелями бесчисленных побед и бесчисленных поражений. Они всё больше борются с течением времени, ибо [Concept('elderdays', 'Старшие дни')|E] проходят, и их сила убывает. Многие из них начали подумывать о том, чтобы отправиться в бессмертные земли [Concept('valinor', 'Валинора')|E] за морем.\n\nОднако не все считают, что Эпоха [Concept('men', 'людей')|E] неизбежна; многие по-прежнему горячо любят Средиземье, во всей его красоте и ужасах. Когда эта [Concept('age', 'эпоха')|E] наконец пройдёт, что станет с эльфами? Примут ли они судьбу, которую давно предвидели, или бросят ей вызов, по-прежнему стремясь обосноваться в Средиземье, прекрасном и свободном?\n\n#high [Concept('hope', 'Надежда')|E] - главный ресурс, управляющий изменением фазы в «Долгом поражении». Её можно получить или потерять в зависимости от исхода событий, решений и войн."
+ situation_elven_hope_situation_desc: "$situation_type_elven_hope_situation_desc$"
 
  # Sub-regions
  elven_hope_situation_sub_region_lindon: "Линдон"
@@ -99,6 +100,10 @@
  effect_elven_hope_illustrious_artifact_lost: "Потерян великолепный эльфийский артефакт"
  effect_elven_hope_elven_knight_killed: "Убит [Concept('elven', 'эльфийский')|E] рыцарь"
  effect_elven_hope_evil_knight_killed: "Убит [Concept('alignment_evil', 'злой')|E] рыцарь"
+ effect_elven_hope_count_died: "Умер правитель эльфийского графства"
+ effect_elven_hope_duke_died: "Умер правитель эльфийского герцогства"
+ effect_elven_hope_king_died: "Умер правитель эльфийского королевства"
+ effect_elven_hope_emperor_died: "Умер правитель эльфийской империи"
  effect_elven_hope_elf_died: "Умер знатный эльф"
  effect_elven_hope_massive_coronation_magnificence: "Проведена великолепная коронация"
  effect_elven_hope_major_coronation_magnificence: "Проведена значимая коронация"
@@ -117,8 +122,8 @@
  effect_elven_hope_funeral_hosted: "Проведены похороны"
  effect_elven_hope_wine_tasting_hosted: "Проведена дегустация"
  effect_elven_hope_wandered_the_forests: "Прогулка по лесу"
- effect_elven_hope_convinced_to_stay: "Эльф остался из-за убеждения"
- effect_elven_hope_character_sailed_west: "Знакомый отплыл в Валинор"
+ effect_elven_hope_convinced_to_stay: "Эльфы остались из-за убеждения"
+ effect_elven_hope_character_sailed_west: "Эльфы отплыли в Валинор"
  effect_elven_hope_debug: "Debug Interaction"
  effect_elven_hope_inspired_by_sight: "Обнадёживающее зрелище вселило надежду"
  effect_elven_hope_tour_dinner: "Устроен ужин"
@@ -127,6 +132,14 @@
  effect_elven_hope_grand_tour_hosted: "Участие в величественном туре"
  effect_elven_hope_wedding_attended: "Проведена большая свадьба"
  effect_elven_hope_histories_explored: "Изучены хроники"
+ effect_elven_hope_ambassador: "Получен эльфийский посланник"
+ effect_elven_hope_slew_trolls: "Коварные морозные тролли сокрушены"
+ effect_elven_hope_held_court: "Проведён приём"
+ effect_elven_hope_leofrings: "Наняты леофринги"
+ effect_elven_hope_contract_completed: "Контракт выполнен"
+ effect_elven_hope_contract_failed: "Контракт провален"
+ effect_elven_hope_patrolled_the_border: "Патрулирование границ"
+ effect_elven_hope_border_patrol_failed: "Неудачное патрулирование границ"
 
  # Participants
  elven_hope_situation_participant_group_elven_rulers_capital: "Эльфийские правители в регионе"
@@ -166,7 +179,7 @@
  ELVEN_HOPE_SITUATION_WINDOW_CURRENT_PHASE: "[Situation.GetCurrentPhase.GetName]"
  ELVEN_SITUATION_CATALYSTS_HEADER: "Список всех эффектов в областях ситуации"
  ELVEN_CATALYSTS_EXPLAINER_TEXT: "[Concept('hope', 'Надежду')|E] можно усилить следующими способами:\n$BULLET_WITH_TAB$Выигрывая в [Concept('wars', 'войнах')|E]\n$BULLET_WITH_TAB$[activities|E]\n$BULLET_WITH_TAB$[decisions|E]"
- elven_colonize_hope_level: "Для [Concept('colonise', 'колонизации')|E] [Concept('elves', 'эльфам')|E] требуется [Concept('hope', 'надежда')|E] третьего ранга («Стойкость») или выше."
+ elven_colonize_hope_level: "Для [Concept('colonise', 'колонизации')|E] [Concept('elves', 'эльфам')|E] требуется более высокая [Concept('hope', 'надежда')|E] («Стойкость» или выше)."
 
  # Hope Increase/Decrease Effect
  EFFECT_ADD_ELVEN_HOPE: "[Concept('hope', 'Надежда')|E] в вашей [Concept('situation_sub_region', 'области ситуации')|E] #P повысится#! на $VALUE|V0$"
@@ -179,6 +192,12 @@
  EFFECT_SUBTRACTED_ELVEN_HOPE_GLOBAL: "[Concept('hope', 'Надежда')|E] во #italic всех#! [Concept('situation_sub_region', 'областях ситуации')|E] #N снизилась#! на $VALUE|V0$"
  gain_hope_debug_interaction: "Добавить 100 [Concept('hope', 'надежды')|E]"
  reduce_hope_debug_interaction: "Удалить 100 [Concept('hope', 'надежды')|E]"
+
+ # Hope Gates
+ hope_2_or_higher_tt: "Ваша [Concept('sitation_phase', 'фаза')|E] - «Увядание» или выше"
+ hope_3_or_higher_tt: "Ваша [Concept('sitation_phase', 'фаза')|E] - «Стойкость» или выше"
+ hope_4_or_higher_tt: "Ваша [Concept('sitation_phase', 'фаза')|E] - «Возрождение» или выше"
+ hope_5_or_higher_tt: "Ваша [Concept('sitation_phase', 'фаза')|E] - «Процветание» или выше"
 
  # Toasts
  sail_to_valinor_toast: "[elf_trying_to_depart.GetName] [Select_CString(elf_trying_to_depart.IsFemale, 'отплыла', 'отплыл' )] в [Concept('valinor', 'Валинор')|E]"
