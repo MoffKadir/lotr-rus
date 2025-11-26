@@ -21,7 +21,7 @@
  activity_feast_province_desc_dwarven_ale_house: "#P + $building_type_dwarven_ale_house_01$#!\n"
  activity_feast_province_desc_dwarven_fungal_farm: "#P + $building_type_dwarven_fungal_farm_01$#!\n"
  activity_feast_province_desc_dwarven_terrace_farm: "#P + $building_type_dwarven_terrace_farm_01$#!\n"
- 
+ activity_feast_province_desc_vineyards: "#P +++ $building_type_vineyards_01$#!\n"
  activity_feast_province_desc_legendary_palace: "#P +++ $building_type_legendary_palace$#!\n"
  activity_feast_province_desc_wonder_palace_of_ithilien: "#P +++ $building_type_wonder_palace_of_ithilien$#!\n"
  activity_feast_province_desc_wonder_edoras: "#P +++ $building_type_wonder_edoras_01$#!\n"
@@ -59,6 +59,8 @@
  feast_cost_discount_wonder_ayahopa_01: "Location has $building_type_wonder_ayahopa_01$#!\n"
  feast_cost_discount_wonder_tul_isra: "Location has $building_type_wonder_tul_isra_01$#!\n"
  feast_cost_discount_wonder_goblin_town: "Location has $building_type_wonder_goblin_town_01$#!\n"
+
+ feast_cost_discount_vineyards: "Location has $building_type_vineyards_01$"  #lotr 
  
  wedding_type_murder_elf_tt: "You or one of the eloped is an [elf|E] and cannot host a Bloody [GetActivityType('activity_wedding').GetName]."
  
@@ -326,9 +328,9 @@
 
  ancestor_veneration_funding: "Funding"
  ancestor_veneration_basic_funding: "Basic Funding"
- ancestor_veneration_basic_funding_desc: "$EFFECT_LIST_BULLET$ Gain [prestige_i|E] [prestige|E]\n\n#weak Enough to proceed, though the veneration will lack splendour.#!"
+ ancestor_veneration_basic_funding_desc: "$EFFECT_LIST_BULLET$ No additional benefits\n\n#weak Enough to proceed, though the veneration will lack splendour.#!"
  ancestor_veneration_extra_funding: "Extra Funding"
- ancestor_veneration_extra_funding_desc: "$EFFECT_LIST_BULLET$ More [prestige_i|E] [prestige|E] on completion\n\n#weak Sufficient means to pursue a veneration worthy of remembrance and respect.#!"
+ ancestor_veneration_extra_funding_desc: "$EFFECT_LIST_BULLET$ Possibility to venerate several ancestors\n\n#weak Sufficient means to pursue a veneration worthy of remembrance and respect.#!"
  
  # Provinces
  activity_ancestor_veneration_destination_selection: "Traveling to a site hosting a large library will provide better opportunities for study."
@@ -353,7 +355,7 @@
  activity_ancestor_veneration_province_desc_wonder_nar_agathol_3: "#P +++ $building_wonder_nar_agathol_3$#!\n"
  
  activity_ancestor_veneration_province_desc_wonder_gundabad_01: "#P ++ $building_wonder_gundabad_01$#!\n"
- activity_ancestor_veneration_province_desc_wonder_endless_stairs: "#P ++ $building_wonder_endless_stairs$#!\n"
+ activity_ancestor_veneration_province_desc_wonder_endless_stairs: "#P ++ $building_wonder_durins_tower_01$#!\n"
  activity_ancestor_veneration_province_desc_wonder_nogrod_rebuilt: "#P ++ $building_wonder_nogrod_rebuilt$#!\n"
  activity_ancestor_veneration_province_desc_wonder_belegost_rebuilt: "#P ++ $building_wonder_belegost_rebuilt$#!\n"
  activity_ancestor_veneration_province_desc_wonder_sunset_caverns: "#P ++ $building_wonder_sunset_caverns$#!\n"
@@ -382,7 +384,7 @@
  ancestor_veneration_cost_discount_wonder_wonder_nar_agathol_3: "Location has $building_wonder_nar_agathol_3$#!"
  
  ancestor_veneration_cost_discount_wonder_gundabad_01: "Location has $building_wonder_gundabad_01$#!"
- ancestor_veneration_cost_discount_wonder_endless_stairs: "Location has $building_wonder_endless_stairs$#!"
+ ancestor_veneration_cost_discount_wonder_endless_stairs: "Location has $building_wonder_durins_tower_01$#!"
  ancestor_veneration_cost_discount_wonder_nogrod_rebuilt: "Location has $building_wonder_nogrod_rebuilt$#!"
  ancestor_veneration_cost_discount_wonder_belegost_rebuilt: "Location has $building_wonder_belegost_rebuilt$#!"
  ancestor_veneration_cost_discount_wonder_sunset_caverns: "Location has $building_wonder_sunset_caverns$#!"
@@ -638,9 +640,6 @@
  fungi_type_artists_conk: "Artist's Conk"
  fungi_type_phantom_orchid: "Phantom Orchid"
  fungi_type_earth_fan: "Earth Fan"
-
- # Sailing
- sailing_food_and_supplies: "Sailing Food & Supplies (boat not included)"
 
  ###############################
  # Dwarven Expedition activity #
@@ -1023,7 +1022,7 @@
  lotr_horse_race_palio_ruler_won_log: "The horse which won the horse race belonged to [house|E] [CHARACTER.GetHouse.GetBaseName]."
  lotr_horse_race_mercato_log_title: "Visiting the local markets"
  lotr_horse_race_mercato_log: "[CHARACTER.GetShortUIName|U] went visiting the local markets after the race ended."
- lotr_horse_race_religious_province_desc: "\n#P ++ There is a famed horse race tradition dedicated to [ROOT.Char.GetFaith.HighGodName] in this [county|E].#!\n\n#italic This will lead to gaining further bonuses compared to other potential locations IF a #V religious#! race is held.#!"
+ lotr_horse_race_religious_province_desc: "\n#P ++ There is a famed horse race tradition dedicated to [ROOT.Char.GetFaith.HighGodName] in this [county|E].#!\n\n#italic This will lead to gaining further bonuses compared to other potential locations IF a #V faithful#! race is held.#!"
  lotr_horse_race_civic_province_desc: "\n#P ++ This [county|E] is famed for its long-running horse racing tradition.#!\n\n#italic This will lead to gaining further bonuses compared to other potential locations IF a #V civic#! race is held.#!"
  lotr_horse_race_dynastic_province_desc: "\n#P ++ There is a famous dynastic horse race tradition in this [county|E].#!\n\n#italic This will lead to gaining further bonuses compared to other potential locations IF a #V dynastic#! race is held.#!"
  
@@ -1036,8 +1035,8 @@
  lotr_horse_race_condaghe_artifact_desc: "This document was either created or discovered at the behest of [condaghe_person.GetTitledFirstName] for [condaghe_person.GetHerHis] family, the [condaghe_person.GetDynasty.GetName] [dynasty|E]. Like other pieces of writing of its kind, it is an administrative document reflecting the family's various financial and legal activities related to religious institutions and property."
 
  # Modifiers
- lotr_horse_race_religious_modifier: "Religious Horse Racing Tradition"
- lotr_horse_race_religious_modifier_desc: "This region is home to a local saint or holy person. This race tradition attracts spectators from near and far, and enhances the locale's fame, particularly when it comes to its spiritual reputation.\n\n#EMP When a [GetActivityType( 'activity_lotr_horse_race' ).GetName] is held in this [county|E], the [host|E] and attendees will receive #P +50%#! to base [prestige_i|E][prestige|E] and [piety_i|E][piety|E] rewards if the #bold Religious#! [activity_option|E] is chosen.#!"
+ lotr_horse_race_religious_modifier: "Faithful Horse Racing Tradition"
+ lotr_horse_race_religious_modifier_desc: "This region is home to a local saint or holy person. This race tradition attracts spectators from near and far, and enhances the locale's fame, particularly when it comes to its spiritual reputation.\n\n#EMP When a [GetActivityType( 'activity_lotr_horse_race' ).GetName] is held in this [county|E], the [host|E] and attendees will receive #P +50%#! to base [prestige_i|E][prestige|E] and [piety_i|E][piety|E] rewards if the #bold Faithful#! [activity_option|E] is chosen.#!"
  lotr_horse_race_civic_modifier: "Civic Horse Racing Tradition"
  lotr_horse_race_civic_modifier_desc: "This region boasts strong community bonds. This race tradition attracts spectators from near and far, and enhances the locale's fame, and is known for its social opporunities and the civic pride of the participants.\n\n#EMP When a [GetActivityType( 'activity_lotr_horse_race' ).GetName] is held in this [county|E], the [host|E] and attendees will receive #P +50%#! to base [prestige_i|E][prestige|E] and [piety_i|E][piety|E] rewards if the #bold Civic#! [activity_option|E] is chosen.#!"
  lotr_horse_race_dynastic_modifier: "Dynastic Horse Racing Tradition"
@@ -1094,7 +1093,7 @@
  lotr_horse_race_inaugurate_major_race_tooltip: "Let us establish a grand tradition in our lands!"
  lotr_horse_race_inaugurate_major_race_desc: "In [GetPlayer.GetCulture.GetName] urban centers, the tradition of holding horse races is gaining popularity. [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetName] should be home to an annual race so grand, so magificent, so thrilling, that folk from across the region shall flock to see it."
  lotr_horse_race_inaugurate_major_race_confirm: "Let's do this!"
- lotr_horse_race_inaugurate_major_race_effect_tooltip_1: "For future [GetActivityType( 'activity_lotr_horse_race' ).GetName] [activities|E] held in [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier], the [host|E] and attendees will receive #P +50%#! to base [prestige_i|E][prestige|E] and [piety_i|E][piety|E] rewards when the #V Religious#! [activity_option|E] is chosen"
+ lotr_horse_race_inaugurate_major_race_effect_tooltip_1: "For future [GetActivityType( 'activity_lotr_horse_race' ).GetName] [activities|E] held in [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier], the [host|E] and attendees will receive #P +50%#! to base [prestige_i|E][prestige|E] and [piety_i|E][piety|E] rewards when the #V Faithful#! [activity_option|E] is chosen"
  lotr_horse_race_inaugurate_major_race_effect_tooltip_2: "For future [GetActivityType( 'activity_lotr_horse_race' ).GetName] [activities|E] held in [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier], the [host|E] and attendees will receive #P +50%#! to base [prestige_i|E][prestige|E] and [piety_i|E][piety|E] rewards when the #V Civic#! [activity_option|E] is chosen"
  lotr_horse_race_inaugurate_major_race_effect_tooltip_3: "For future [GetActivityType( 'activity_lotr_horse_race' ).GetName] [activities|E] held in [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier], the [host|E] and attendees will receive #P +50%#! to base [prestige_i|E][prestige|E] and [piety_i|E][piety|E] rewards when the #V Dynastic#! [activity_option|E] is chosen"
  lotr_horse_race_inaugurate_major_race_effect_tooltip_4: "@warning_icon! #X There can be only #V one#! major race per [de_jure|E] [duchy|E]#!"
@@ -1147,3 +1146,6 @@
  inspire_hope_intent_header: "Inspire Hope"
  inspire_hope_intent: "Inspire Hope"
  inspire_hope_intent_desc: "You intend to instill [hope|E] in attendants, affecting your [situation_sub_region|E]."
+ 
+  activity_elves_gain_hope: "$BULLET_WITH_TAB$May gain [hope|E]\n"
+ 
