@@ -16,14 +16,21 @@
  hobbit.0003.a:0 "[kitchen_savior.GetFirstName], помоги мне!"
  hobbit.0003.b:0 "Похоже, мне придётся [Select_CString(ROOT.Char.IsFemale, 'самой', 'самому' )]..."
 
- ### Decision-based events ###
+ ### Decision-based Events ###
+ #Integrate Westmarch
  hobbit.0100.t:0 "Интеграция области [GetTitleByKey('c_dunglan').GetNameNoTier]"
  hobbit.0100.desc:0 "Долгие годы мы, [Concept('hobbits', 'хоббиты')|E], довольствовались древними границами, дарованными нам старым королём в Северине. Но даже в медленно развивающемся [Concept('shire', 'Шире')|E] всё меняется, и мы стали чувствовать себя стесненными в границах старых фартингов. Некоторые из молодых хоббитов, особенно те, у кого не было собственной земли, которую можно было бы обрабатывать, стали уходить на запад, в плодородные земли к западу от Белых низин.\n\nВооружившись плугами и лопатами, они расчищают поля и роют новые дома на склонах холмов под присмотром Белых Башен, которые, по их словам, приносят им удачу. Но хоббиты любят формальности и порядок, и были составлены петиции, призывающие официально присоединить [GetTitleByKey('c_dunglan').GetNameNoTier] к Ширу. Теперь власть тана и мэра будет распространяться на этот новый фартинг... хотя на самом деле все будут заниматься своими делами, как и прежде."
  hobbit.0100.a:0 "За Западные марки!"
 
+ #Integrate Buckland
  hobbit.0101.t:0 "Интеграция области [GetTitleByKey('c_buckland').GetNameNoTier]"
  hobbit.0101.desc:0 "[GetTitleByKey('c_buckland').GetNameNoTier] всегда был странной аномалией, независимым [Concept('hobbit', 'хоббитским')|E] государством за пределами древних границ [Concept('shire', 'Шира')|E], дарованных королём. Это иногда создавало трудности в области закона и торговли, поскольку ни тану, ни мэру не всегда удавалось установить свои права над волевым народом Брендибака. Но времена изменились, и теперь принято считать, что [GetTitleByKey('c_buckland').GetNameNoTier] является и всегда будет являться частью Шира.\n\nВсё, что осталось сделать, - это составить бумаги, запечатать их и убрать в архив Мичел Делвинга, после чего все смогут поздравить себя с тяжёлым днем работы и отправиться в паб на праздничную пирушку, запивая её элем. Есть все шансы, что завтра все уже забудут о том, что когда-то что-то было по-другому."
  hobbit.0101.a:0 "Наконец-то воссоединились."
+
+ #Seize Bag End
+ hobbit.0102.t: "Seize Bag End"
+ hobbit.0102.desc: "At dawn your banner crests the low green hill above [GetTitleByKey('c_hobbiton').GetNameNoTier]. Your hirelings file into Bag End, fastening iron braces to the lintels and setting grilles to the shutters; the front lawn is swept bare and a short palisade rises. The great parlor is made the your council-chamber, the cellar stacked with arms, the garret set as a watch-post, and sentries pace the ridge of the roof, while patrols move the lanes and a strict curfew falls over the village.\n\nOpen defiance dies quickly, yet in hedged corners and under bowed eaves whisperings of grievance gather, slow and stubborn as roots."
+ hobbit.0102.a: "Now we're talking!"
 
  ### Introduction Events ###
 
