@@ -1465,7 +1465,7 @@
  nick_the_amputator: "[Select_CString(CHARACTER.IsFemale, 'Отрубающая', 'Отрубающий' )]"
  nick_the_amputator_desc: "Будь то на войне или на операционном столе, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] хорошо [Select_CString( CHARACTER.IsLocalPlayer, 'владеете', 'владеет')] ножом!"
  nick_the_angry: "[Select_CString(CHARACTER.IsFemale, 'Злая', 'Злой' )]"
- nick_the_angry_desc: "[Select_CString( CHARACTER.IsLocalPlayer, 'Вы', CHARACTER.GetSheHe)] еще злее, чем большинство орков!"
+ nick_the_angry_desc: "[Select_CString( CHARACTER.IsLocalPlayer, 'Вы', Select_CString(CHARACTER.IsFemale, 'Она', 'Он' ))] злее большинства орков!"
  nick_the_armorer: "[Select_CString(CHARACTER.IsFemale, 'Оружейница', 'Оружейник' )]"
  nick_the_armorer_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'делаете', 'делает')] доспехи, способные посрамить даже [Concept('dwarves', 'гномов')|E]!"
  nick_the_assassin: "Убийца"
