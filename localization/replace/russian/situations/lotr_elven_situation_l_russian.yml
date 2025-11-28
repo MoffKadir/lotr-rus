@@ -78,6 +78,11 @@
  situation_parameter_elven_hope_no_dev_penalty: "[Concept('counties', 'Графства')|E] не будут терять уровень [Concept('development', 'развития')|E]"
  situation_parameter_elven_hope_colonization_enabled: "[Concept('elven', 'Эльфийские')|E] [Concept('ruler', 'правители')|E] могут [Concept('colonise', 'колонизировать')|E] регионы дебрей."
  situation_parameter_elven_hope_no_colonization: "[Concept('elven', 'Эльфийские')|E] [Concept('ruler', 'правители')|E] не могут [Concept('colonise', 'колонизировать')|E] регионы дебрей."
+ situation_parameter_elven_hope_vanquish_darkness_kindgom: "Можно объявить [Concept('vanquish_darkness_casus_belli', 'войну против тьмы')|E] за [Concept('kingdom', 'королевство')|E]"
+ situation_parameter_elven_hope_vanquish_darkness_duchy: "Можно объявить [Concept('vanquish_darkness_casus_belli', 'войну против тьмы')|E] за [Concept('duchy', 'герцогство')|E]"
+ situation_parameter_elven_hope_vanquish_darkness_county: "Можно объявить [Concept('vanquish_darkness_casus_belli', 'войну против тьмы')|E] за [Concept('county', 'графство')|E]"
+ situation_parameter_elven_hope_vanquish_darkness_tributary: "Правители, получившие трон после [Concept('vanquish_darkness_casus_belli', 'войны против тьмы')|E], станут вашими [Concept('tributary', 'данниками')|E]"
+ situation_parameter_elven_hope_no_vanquish_darkness: "Правители не могут объявить [Concept('vanquish_darkness_casus_belli', 'войну против тьмы')|E]"
 
  # Hope Changing Effects
  effect_elven_hope_child_has_been_born: "Родилось эльфийское дитя"
@@ -140,6 +145,9 @@
  effect_elven_hope_contract_failed: "Контракт провален"
  effect_elven_hope_patrolled_the_border: "Патрулирование границ"
  effect_elven_hope_border_patrol_failed: "Неудачное патрулирование границ"
+ effect_elven_hope_inspiring_speech: "Произнесена вдохновляющая речь"
+ effect_elven_hope_important_site_lost: "Потеряна важная [Concept('elven', 'эльфийская')|E] локация"
+ effect_elven_hope_important_site_regained: "Возвращена важная [Concept('elven', 'эльфийская')|E] локация"
 
  # Participants
  elven_hope_situation_participant_group_elven_rulers_capital: "Эльфийские правители в регионе"
@@ -194,10 +202,10 @@
  reduce_hope_debug_interaction: "Удалить 100 [Concept('hope', 'надежды')|E]"
 
  # Hope Gates
- hope_2_or_higher_tt: "Ваша [Concept('sitation_phase', 'фаза')|E] - «Увядание» или выше"
- hope_3_or_higher_tt: "Ваша [Concept('sitation_phase', 'фаза')|E] - «Стойкость» или выше"
- hope_4_or_higher_tt: "Ваша [Concept('sitation_phase', 'фаза')|E] - «Возрождение» или выше"
- hope_5_or_higher_tt: "Ваша [Concept('sitation_phase', 'фаза')|E] - «Процветание» или выше"
+ hope_2_or_higher_tt: "Ваша [Concept('situation_phase', 'фаза')|E] - «Увядание» или выше"
+ hope_3_or_higher_tt: "Ваша [Concept('situation_phase', 'фаза')|E] - «Стойкость» или выше"
+ hope_4_or_higher_tt: "Ваша [Concept('situation_phase', 'фаза')|E] - «Возрождение» или выше"
+ hope_5_or_higher_tt: "Ваша [Concept('situation_phase', 'фаза')|E] - «Процветание» или выше"
 
  # Toasts
  sail_to_valinor_toast: "[elf_trying_to_depart.GetName] [Select_CString(elf_trying_to_depart.IsFemale, 'отплыла', 'отплыл' )] в [Concept('valinor', 'Валинор')|E]"

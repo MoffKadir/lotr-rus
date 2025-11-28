@@ -164,6 +164,16 @@
  decision_delve_ardinak_confirm: "Приступим."
  decision_delve_ardinak.tt: "Исследовать проклятый остров Ардинак и сразиться с нависшей там тьмой."
 
+ decision_utter_south_elven: "Вернуть контроль над древними землями"
+ decision_utter_south_elven_desc: "Слишком долго [Concept('kinnlai', 'кинн-лай')|E] были разделены. Слишком долго мы позволяли [Concept('men', 'людям')|E] беспрепятственно разгуливать по всем землям, безжалостно оскверняя то, что нам дорого.\n\nМы больше не обязаны терпеть их поведение."
+ decision_utter_south_elven_confirm: "Восстановить древние земли."
+ decision_utter_south_elven_tooltip: "Восстановить правление кинн-лай на землях, отошедших к людям."
+
+ decision_utter_south_integrate_mag_tumag_elven: "Взять магрийцев под наш контроль"
+ decision_utter_south_integrate_mag_tumag_elven_desc: "Магрийцы - древний народ, принадлежащий к расе [Concept('men', 'людей')|E], которые долгое время жили на своей земле в мире с [Concept('kinnlai', 'кинн-лай')|E].\n\nМы могли бы обеспечить, чтобы так и оставалось, взяв их и их вождей под нашу защиту."
+ decision_utter_south_integrate_mag_tumag_elven_confirm: "Включить Маг и Тумаг в границы державы."
+ decision_utter_south_integrate_mag_tumag_elven_tooltip: "Навсегда присоединить самоуправляемых магрийцев к нашей державе."
+
  ### Maglor Decision ###
  decision_annihilate_abhorred: "Уничтожить Саурона Отвратительного"
  decision_annihilate_abhorred_tooltip: "Раз и навсегда уничтожить слугу Моргота"
@@ -3411,6 +3421,7 @@
  bestow_heirloom_decision_unattached_artifact_tt: "не привязан к титулу"
  bestow_heirloom_decision_artifact_attached_to_secondary_title_tt: "привязан к одному из ваших второстепенных титулов"
  bestow_heirloom_decision_silmaril_rop_tt: "не Сильмариль или [ringofpower|E]"
+ bestow_heirloom_decision_tt: "Вы выберете один из ваших [Concept('artifact', 'артефактов')|E] для передачи"
 
  decision_request_orthanc_keys: "Попросить ключи Ортанка"
  decision_request_orthanc_keys_tooltip: "Попросить правителя [Concept('gondor', 'Гондора')|E] передать вам ключи от Ортанка"
@@ -3740,15 +3751,15 @@
  decision_pakirh_evangelize_the_faith_desc: "DESC"
  decision_pakirh_evangelize_the_faith_confirm: "Все преклонятся перед небесным светом!"
 
- #############################
- # Commander Trait Decisions #
- #############################
+ #################################
+ ### Commander Trait Decisions ###
+ #################################
  recruit_halls_specialist_decision_desc: "Мой крепкий народ, [ROOT.Char.GetCulture.GetName|l], может пройти по самым коварным подземным ходам. Если я хочу двигаться и сражаться в пещерах, я могу призвать опытного проводника, который поможет моей армии найти путь."
  recruit_halls_specialist_decision: "Нанять специалиста по войне в глубинах"
 
- ###########################
- ## Bay of Ormal Decision ##
- ###########################
+ ##############################
+ ### Bay of Ormal Decisions ###
+ ##############################
  formalise_the_league_decision: "Объединить Линерийскую лигу"
  formalise_the_league_decision_desc: "На протяжении многих поколений города Лиги стояли вместе, но никогда не были единым целым. Торговые договоры и взаимная оборона связывали нас некрепко, каждый город охранял свою хартию, свою гордость. Но мир меняется.\n\nПришло время Линерии стать чем-то большим, чем название на пергаменте. Пусть наши препирающиеся гильдии и гордые советы уступят чему-то большему..."
  formalise_the_league_decision_tooltip: "Распустить [Concept('confederation', 'конфедерацию')|E] и официально преобразовать Линерийскую лигу в единое [Concept('kingdom', 'королевство')|E], объединив [Concept('confederates', 'конфедератов')|E] под одним знаменем."
@@ -3853,9 +3864,22 @@
 
  is_settled_area: "Вы должны находиться в заселённой провинции"
 
- ####################################
+ #########################
+ ### Mumakan Decisions ###
+ #########################
+ decision_utter_south_mumakan: "Объединить королевство Амава"
+ decision_utter_south_mumakan_desc: "Первыми из расы [Concept('men', 'людей')|E], вторгшихся в земли Крайнего Юга, были люди под предводительством #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofamav1').GetID] #L Амава#!#!, который привёл их в эти земли и привёл к их господству. В легендах говорится о том, что он правил всеми просторами Крайнего Юга.\n\nПравда это или нет, но это наследие может быть восстановлено."
+ decision_utter_south_mumakan_confirm: "Объединить королевства из легенд об Амаве."
+ decision_utter_south_mumakan_tooltip: "Объединить под своей властью королевства из легенд об Амаве."
+
+ decision_utter_south_integrate_mag_tumag_mumakan: "Интегрировать Маг и Тумаг"
+ decision_utter_south_integrate_mag_tumag_mumakan_desc: "Магрийский народ, хотя и давно отделился от нас, является родственным племенем, пришедшим на юг во времена #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofamav1').GetID] #L Амава#!#!, и, возможно, мы можем вновь стать единым целым, как в былые времена."
+ decision_utter_south_integrate_mag_tumag_mumakan_confirm: "Включить Маг и Тумаг в состав великой державы."
+ decision_utter_south_integrate_mag_tumag_mumakan_tooltip: "Воссоединить магрийцев с их потерянными собратьями."
+
+ ###################################
  ### Skorgrim Dourhand Decisions ###
- ####################################
+ ###################################
  decision_skorgrim_dourhand_alliance_khathzaibriz: "Заключить союз с домом Кхатза-Ибриз"
  decision_skorgrim_dourhand_alliance_khathzaibriz_tooltip: "PLACEHOLDER"
  decision_skorgrim_dourhand_alliance_khathzaibriz_desc: "PLACEHOLDER"
