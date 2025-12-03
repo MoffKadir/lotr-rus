@@ -66,7 +66,9 @@
  doctrine_parameter_lotr_numenor_blood_bonuses: "The [bloodofnumenor|E] [traits|E] give additional bonuses to [piety|E] and [legitimacy|E] gain"
  tenet_bellakari_syncretism_name: "Bellakari Syncretism"
  tenet_bellakari_syncretism_desc: "Whether they say Îshtra or Nessa, Arom or [oromecharactershort|E], it is understood we both refer to the same Power. The people of [bellakar|E] shall not be divided by conflicts of [faith|E], when we realize that in the end, we are speaking the same story, just in different tongues."
- doctrine_parameter_hostility_override_tenet_bellakari_syncretism: "All [faiths|E] with the #high Bellakari Syncretism#! tenet are considered $hostility_astray_tooltippable$."
+ doctrine_parameter_hostility_override_tenet_bellakari_syncretism: "All [faiths|E] with the #high Bellakari Syncretism#! [core_tenet|E] are considered $hostility_astray_tooltippable$."
+ doctrine_parameter_lotr_unlock_firstfruits_activity: "Gain access to the [GetActivityType('activity_firstfruits_festival').GetName] [activity|E]"
+ doctrine_parameter_unlock_decision_kathasaptha_manuscript: "Unlocks the #V $decision_kathasaptha_manuscript$#! [decision|E]"
 
  tenet_cult_of_saints_name: "Cult of Saints"
  tenet_cult_of_saints_desc: "This [faith|E] reveres a great number of saints. These great holy men and women were blessed by [erutheone|E] himself and worked great miracles in his name. Because of their devotion, they are revered greatly."
@@ -81,6 +83,9 @@
  tenet_midwinter_desc: "Many people across the [westlands|E] celebrate some form of midwinter festival to welcome the new year.\n\nWhat could bring greater joy than spending time with ones family and neighbours? Bonds of friendship are celebrated by communal gift giving ceremonies, and everyone seeking refuge from the bitter cold outside is welcome at the warm hearth."
  doctrine_parameter_lotr_unlock_yuletide_activity: "Gain access to the [GetActivityType('activity_yule').GetName] [activity|E]"
 
+ tenet_hobbit_wandering_name: "The Winding Road"
+ tenet_hobbit_wandering_desc: "The road goes ever on and on, down from the door where it began. Now far ahead the road has gone, and I must follow if I can."
+ 
  # People of Darkness Tenets
  tenet_sacred_waters_name: "Sacred Waters"
  tenet_sacred_waters_desc: "Water. The great giver of life and cleanser of body and soul. Our people recognise its essential nature and give it the veneration that it truly deserves."  
@@ -151,7 +156,17 @@
 
  tenet_spread_the_light_name: "Spread the Light"
  tenet_spread_the_light_desc: "It is all well and good to master oneself - to live upright and morally, to disdain corruption, and to master one's impulses. But if such is not matched by a willingness to challenge darkness and evil in the world beyond, then it is ultimately hollow.\n\nWithin each person burns the true light, waiting to be fanned into a beacon for the world to see. Go forth, and spread the light - and fear not the dark."
- doctrine_parameter_can_evangelize: "Can Evangelise the Faith"
+ doctrine_parameter_can_evangelize: "Can take the [GetDecisionWithKey('evangelize_the_slavs_decision').GetName] [decision|E]"
+
+ tenet_mumakani_berserkers_name: "Divine Rage"
+ tenet_mumakani_berserkers_desc: "Through the [ROOT.Faith.GetAdherentNamePluralNoTooltip] [ROOT.Faith.WarGodName|U] directs [ROOT.Faith.WarGodHerHis|U] godly rage, and brings [ROOT.Faith.WarGodHerHis|U] wrath upon [ROOT.Faith.WarGodHerHis|U] foes."
+ doctrine_parameter_allows_berserkers: "Characters may gain the [GetTrait('berserker').GetName( GetNullCharacter )] [trait|E]" 
+
+ tenet_jungle_trials_name: "Jungle Trials"
+ tenet_jungle_trials_desc: "The jungle itself is the ultimate judge of worth, and those who survive its tests are blessed beyond other men."
+ doctrine_parameter_jungle_trait_bonuses:0 "Some [commander_traits|E] and [personality_traits|E] have extra Jungle bonuses"
+ doctrine_parameter_lotr_jungle_trait_bonuses: "The [GetTrait('lifestyle_hunter').GetName( GetNullCharacter )], [GetTrait('lifestyle_herbalist').GetName( GetNullCharacter )], [GetTrait('calm').GetName( GetNullCharacter )], [GetTrait('patient').GetName( GetNullCharacter )], [GetTrait('jungle_stalker').GetName( GetNullCharacter )], and [GetTrait('lifestyle_traveler').GetName( GetNullCharacter )] [traits|E] give additional [learning|E]."
+ doctrine_parameter_wasteland_pilgrimage_allowed: "Adherents may make a [pilgrimage|E] to [wilderness|E] [holy_sites|E]"
 
  tenet_communal_celebrations_name: "Communal Celebrations"
  tenet_communal_celebrations_desc: "Good food, wine and nice things are best shared with friends. The host's reputation depends on the quality of their table, and the grandness of their gifts."
@@ -177,9 +192,17 @@
  tenet_desperate_wards_name: "Desperate Wards"
  tenet_desperate_wards_marketcher_name: "Etched Marks"
  tenet_desperate_wards_desc: "At all times, malevolent forces assault our people, seeking to twist and control them. Only with the careful etching of protective wards can the faithful be kept safe from the terrors that exist beyond our walls."
+ 
+ tenet_dark_trophies_ulukai_name: "Reverence of the Ulûkai"
+ tenet_dark_trophies_name: "Dark Trophies"
+ tenet_dark_trophies_ulukai_desc: "The Ulûkai calls darkness to darkness, and strength to strength. Only those that prove their strength for all to see are worthy of the dark jewel's blessing."
+ tenet_dark_trophies_desc: "Strength grows with every victory. It is only right that we display trophies of those legendary victories."
+ 
+ tenet_orc_raiding_name: "Nampat"
+ tenet_orc_raiding_desc: "To live is to plunder. To die is only natural. Take while the taking is good, and make your death historic."
 
  tenet_offbrand_tulkas_name: "Sacrosanct Strife" # Not too happy with the name but we can change it idk
- tenet_offbrand_tulkas_desc: "Survival is a continuous struggle against nature, foes and the world itself. But this primal truth is not a tragedy to be upset about, but instead a fundamental and cherished part of existence - Through great effort, anyone can overcome adversity and come out on top.\n\nIn practice, challenges and friendly competitions are a common practice of this faith, though they can at times turn heated and fierce. The reoccurring theme of a 'God of Struggles' seems to be heavily inspired by that of the [valagod|E] [tulkascharactershort|E]."
+ tenet_offbrand_tulkas_desc: "Survival is a continuous struggle against nature, foes and the world itself. But this primal truth is not a tragedy to be upset about, but instead a fundamental and cherished part of existence — through great effort, anyone can overcome adversity and come out on top.\n\nIn practice, challenges and friendly competitions are a common practice of this faith, though they can at times turn heated and fierce. The reoccurring theme of a 'God of Struggles' seems to be heavily inspired by that of the [valagod|E] [tulkascharactershort|E]."
  # Other LOTR Tenets
  tenet_gold_veneration_name: "Veneration of Gold"
  tenet_gold_veneration_desc: "The believers of this faith hold that gold is, in and of itself, of divine origin, worthy of veneration and coveting. They hoard and jealously guard their gold, allowing only those of similar disposition to even look upon their great hoards, in which they hold dwells shards of the divine."
