@@ -165,7 +165,7 @@
  decision_delve_ardinak.tt: "Исследовать проклятый остров Ардинак и сразиться с нависшей там тьмой."
 
  decision_utter_south_elven: "Вернуть контроль над древними землями"
- decision_utter_south_elven_desc: "Слишком долго [Concept('kinnlai', 'кинн-лай')|E] были разделены. Слишком долго мы позволяли [Concept('men', 'людям')|E] беспрепятственно разгуливать по всем землям, безжалостно оскверняя то, что нам дорого.\n\nМы больше не обязаны терпеть их поведение."
+ decision_utter_south_elven_desc: "Слишком долго [Concept('kinnlai', 'кинн-лай')|E] были разделены. Слишком долго мы позволяли [Concept('men', 'людям')|E] беспрепятственно разгуливать по [Glossary('Илдол','ildol_gloss')], бездумно оскверняя то, что мы считаем священным.\n\nМы больше не обязаны терпеть их поведение."
  decision_utter_south_elven_confirm: "Восстановить древние земли."
  decision_utter_south_elven_tooltip: "Восстановить правление кинн-лай на землях, отошедших к людям."
 
@@ -901,6 +901,8 @@
  decision_restore_gondor_province_desc: "За столетия [Concept( 'realms_in_exile', 'королевства-в-изгнании' )|E] пришли в упадок и потеряли многие из своих бывших территорий. Если бы мы вернули их себе, то смогли бы вновь укрепить своё правление и включить регионы в состав наших [de_jure|El] границ. Возможно, нам даже удастся объединить некоторые новые регионы, власть над которыми в древности была лишь формальной."
  decision_restore_gondor_province_confirm: "Сделаем это"
  decision_restore_gondor_province.second_step: "Но какую провинцию выбрать?"
+
+ reunited_kingdom_solidified: "Вы владеете и укрепили [Concept('title', 'титул')|E] [GetTitleByKey('h_reunited_kingdom').GetName]"
 
  decision_restore_gondor_province.tt.fallback: "Запасной вариант"
  reintegrate_province_fallback_tooltip: "Запасной вариант. Отображается как эффект, если нет других доступных."
@@ -1742,14 +1744,15 @@
  decision_dark_lord_hegemony_sauron_confirm: "Запад обречён."
  decision_dark_lord_hegemony_sauron_tooltip: "Объявить своё господство над миром и о неминуемой гибели Запада"
 
- tooltip_gondor_has_fallen: "[Concept('gondor', 'Гондор')|E] пал под натиском сил [Concept('alignment_evil', 'зла')|E]"
+ tooltip_rk_nie_not_formed: "[GetTitleByKey('h_reunited_kingdom').GetName] не укреплено, а [GetTitleByKey('h_numenor_in_exile').GetNameNoTier] не существует"
+ tooltip_gondor_has_fallen: "[Concept('gondor', 'Гондор')|E] не существует"
 
  decision_dark_lord_hegemony_saruman: "Третий Тёмный властелин"
  decision_dark_lord_hegemony_saruman_desc: "Теперь, когда я предал [Concept('sauroncharacter', 'Саурона')|E], у меня может быть только одна цель - свергнуть его с трона Тёмного властелина и унаследовать его власть над [Concept('middleearth', 'Средиземьем')|E]."
  decision_dark_lord_hegemony_saruman_confirm: "Тёмный властелин мёртв, да здравствует Тёмный властелин."
  decision_dark_lord_hegemony_saruman_tooltip: "Нужен новый Тёмный властелин, гораздо более бородатый, чем предыдущий."
 
- tooltip_betrayed_sauron: "Вы предали [Concept('sauroncharacter', 'Саурона')|E]"
+ tooltip_decision_the_two_towers: "Вы выбрали, с какой из из Двух башен [Concept('alignment_evil', 'зла')|E] вы будете править"
 
  # Long Winter Decisions
  decision_strengthen_mordor_defences: "Усилить укрепления"
@@ -2330,6 +2333,16 @@
  decision_rhovanion_hegemony_dale: "Вы приняли решение #high Верховный король Дэйла#!"
  decision_rhovanion_hegemony_celduin: "Вы приняли решение #high Объединить Кельдуин#!"
 
+ decision_rhovanion_hegemony_expand_rhun: "Изгнать истерлингов"
+ decision_rhovanion_hegemony_expand_rhun_tooltip: "Одержать окончательную победу над захватчиками с Востока"
+ decision_rhovanion_hegemony_expand_rhun_desc: "Слишком долго истерлинги [Concept('rhun', 'Руна')|E] бросали вызов нашему могуществу. Мы не забыли о вторжениях в прошлом, когда наш народ был порабощён их жестокостью и рассеян по ветру их дикостью. Довольно!\n\nМы выступим на восток, к берегам [Concept('seaofrhun', 'Моря Рун')|E], и пусть они трепещут от могучего стука копыт наших войск!"
+ decision_rhovanion_hegemony_expand_rhun_confirm: "Мы отомстим."
+
+ decision_rhovanion_hegemony_expand_enedhwaith: "Усмирить западные равнины"
+ decision_rhovanion_hegemony_expand_enedhwaith_tooltip: "Принести прочный мир в Дунланд и Энедвайт"
+ decision_rhovanion_hegemony_expand_enedhwaith_desc: "За рекой Изен велось много войн, и во Вратах [Concept('rohan', 'Рохана')|E] пролилось бесчисленное количество крови. Пришло время положить конец этой бойне, объединив враждующие племена широких равнин и водно-болотных угодий к западу от нас, чтобы они никогда больше не могли воевать с нашими родными землями."
+ decision_rhovanion_hegemony_expand_enedhwaith_confirm: "Наконец-то наступил мир."
+
  ########################
  #### Dale Decisions ####
  ########################
@@ -2805,11 +2818,11 @@
 
  decision_restore_harad_province.tt.umbar: "[GetTitleByKey('e_umbar').GetNameNoTier]"
  decision_restore_harad_province.tt.umbar_desc: ""
- integrate_province_umbar_harad_tooltip: "#T #V Претендовать на великий город [GetTitleByKey('c_umbar').GetNameNoTier] и его владения#! #!\n\n[Concept('umbar', 'Умбар')|E], великий город [Concept('harad', 'Харада')|E], достаточно долго балансировал между [Concept('numenorean', 'нуменорским')|E] и [Concept('haradric', 'харадским')|E] правлением, пришло время ему воссоединиться с сынами этой земли."
+ integrate_province_umbar_harad_tooltip: "#T #V Претендовать на великий город [GetTitleByKey('c_umbar').GetNameNoTier] и его владения#! #!\n\n[Concept('umbar', 'Умбар')|E], великий город [Concept('harad', 'Харада')|E], достаточно долго балансировал между [Concept('numenorean', 'нуменорским')|E] и [Concept('haradric', 'харадским')|E] правлением, пришло время ему перестать переходить из рук в руки и воссоединиться с сынами этой земли."
 
  decision_restore_harad_province.tt.bellakar: "[GetTitleByKey('e_bellakar').GetNameNoTier]"
  decision_restore_harad_province.tt.bellakar_desc: ""
- integrate_province_bellakar_tooltip: "#T #V Претендовать на [GetTitleByKey('e_bellakar').GetNameNoTier] с тысячью городами#! #!\n\n[Concept('bellakar', 'Беллакар')|E], земля тысячи городов, всегда был населён сынами [Concept('harad', 'Харада')|E], прошлая верность [Concept('numenor', 'Нуменору')|E] больше не будет отделять его от его народа."
+ integrate_province_bellakar_tooltip: "#T #V Претендовать на [GetTitleByKey('e_bellakar').GetNameNoTier] с сотней городов#! #!\n\n[Concept('bellakar', 'Беллакар')|E], земля сотни городов, всегда был населён сынами [Concept('harad', 'Харада')|E], прошлая верность колониального населения [Concept('numenor', 'Нуменору')|E] больше не будет отделять его от его народа."
 
  decision_restore_harad_province.tt.sirayn: "[GetTitleByKey('e_sirayn').GetNameNoTier]"
  decision_restore_harad_province.tt.sirayn_desc: ""
@@ -2817,11 +2830,11 @@
 
  decision_restore_harad_province.tt.harshandatt: "[GetTitleByKey('e_harshandatt').GetNameNoTier]"
  decision_restore_harad_province.tt.harshandatt_desc: ""
- integrate_province_harshandatt_tooltip: "#T #V Претендовать на речные земли #L [GetTitleByKey('e_harshandatt').GetNameNoTier]а#!#! #!\n\nХаршандатт, речной край Великой Нуары, является домом для давно забытых родичей и народа древних королей, и поэтому, если не по крови, то по сердцу, они - потерянные братья, возвращающиеся в наше лоно."
+ integrate_province_harshandatt_tooltip: "#T #V Претендовать на речные земли #L [GetTitleByKey('e_harshandatt').GetNameNoTier]а#!#! #!\n\nХаршандатт, земля великой реки Нуар, - родина давно забытых родичей, не только народа древних королей, и поэтому, если не по крови, то по сердцу, они - потерянные братья, возвращающиеся в наше лоно."
 
  decision_restore_harad_province.tt.khy: "[GetTitleByKey('e_khy').GetNameNoTier]"
  decision_restore_harad_province.tt.khy_desc: ""
- integrate_province_khy_tooltip: "#T #V Претендовать на [GetTitleByKey('e_khy').GetNameNoTier], край Потерянного сына#! #!\n\n[Concept('khy', 'Кхай')|E], земля древних элинсийцев и халудов, как теперь называют их восточные народы, были потеряны давным-давно. Теперь этот потерянный сын наконец-то вернулся в лоно семьи."
+ integrate_province_khy_tooltip: "#T #V Претендовать на [GetTitleByKey('e_khy').GetNameNoTier], край Потерянного сына#! #!\n\n[Concept('khy', 'Кхай')|E], земля древних элинсийцев и халудов, была утеряна сынами [Concept('harad', 'Харада')|E] давным-давно. Теперь она наконец вернулась к ним."
 
  # Númenor-in-Exile
  decision_numenor_in_exile: "Принять мантию Нуменора-в-изгнании"
@@ -3022,7 +3035,8 @@
  reunite_yellow_mountains_requirement: "[decision|E] #V $decision_reunite_yellow_mountains$#! завершено"
  balrog_dead_requirement: "[decision|E] #V $struggle_balrog_ending_kill_balrog$#! завершено"
  unify_durins_folk_orc_requirement: "Народ Дурина не объединён"
- vassal_opinion_requirements: "Вы являетесь [Concept('friends', 'друзьями')|E], [Concept('allies', 'союзниками')|E], [Concept('lovers', 'любовниками')|E] или имеете [Concept('hooked', 'влияние')|E] на всех [Concept('vassal', 'вассалов')|E] или их [Concept('regent', 'регентов')|E]"
+ vassal_opinion_requirements: "Вы являетесь [Concept('friends', 'друзьями')|E], [Concept('allies', 'союзниками')|E], [Concept('lovers', 'любовниками')|E] или имеете [Concept('hooked', 'влияние')|E] на всех глав династий королевских кланов или их [Concept('regent', 'регентов')|E]"
+ dwarven_culture_innovation_sharing_tooltip: "Все [Concept('dwarves', 'гномы')|E] объединятся и разделят свои знания под одним знаменем."
 
  decision_king_under_the_mountains_orc: "Провозгласить тиранию гор"
  decision_king_under_the_mountains_tooltip_orc: "Претендовать на владычество над всеми горами и ущельями"
