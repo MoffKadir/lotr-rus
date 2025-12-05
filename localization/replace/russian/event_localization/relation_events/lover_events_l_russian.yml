@@ -79,7 +79,7 @@
 
  lover.0201.t: "Конец интрижки"
  lover.0201.desc: "«Хорошо, что вы все понимаете», — говорит мне [Select_CString(breaker.IsFemale, 'моя любовница', 'мой любовник' )].\n\nАх, [breaker.GetFirstName], если бы так! Сначала ты шепчешь все эти милые слова, а затем уходишь?"
- lover.0201.other_lover: "\n\n[Select_CString(other_lover.IsFemale, 'Эта', 'Этот' )] [other_lover.Custom('InsultNounSexual')], это все из-за [Select_CString(other_lover.IsFemale, 'нее', 'него' )]?"
+ lover.0201.other_lover: "\n\n[Select_CString(other_lover.IsFemale, 'Эта', 'Этот' )] [other_lover.Custom2('InsultNounSexual', ROOT.Char)], это все из-за [Select_CString(other_lover.IsFemale, 'нее', 'него' )]?"
  lover.0201.a: "Так все и должно было случиться."
 
  lover.0202.t: "[Select_CString(breaker.IsFemale, 'Моя собственная', 'Мой собственный' )] [breaker.Custom('WifeHusband')]"
@@ -91,8 +91,8 @@
  lover.0203.a: "Да, да, мне ужасно жаль. Иди уже."
 
  lover.0204.t: "[Select_CString(lover.IsFemale, 'Оскорбленная', 'Оскорбленный' )] [lover.Custom('WomanManGirlBoy')]"
- lover.0204.desc: "«Да как ты смеешь! Как ты смеешь отвергать меня. Неужели [Select_CString(other_lover.IsFemale, 'эта', 'этот' )] [other_lover.Custom('InsultNounSexual')] лучше?!»\n\nСлухи разносятся быстро, и теперь я могу воочию наблюдать, как [lover.GetFirstName] реагирует на эту новость. Очевидно, [lover.GetSheHe] ненавидит меня и может попытаться отомстить."
- lover.0204.a: "[breaker.GetFirstName] [Select_CString(breaker.IsFemale, 'выбрала', 'выбрал' )] меня. Смирись."
+ lover.0204.desc: "«Да как ты смеешь! Как ты смеешь отвергать меня. Неужели [Select_CString(other_lover.IsFemale, 'эта', 'этот' )] [other_lover.Custom2('InsultNounSexual', SCOPE.sC('lover'))] лучше?!»\n\nСлухи разносятся быстро, и теперь я могу воочию наблюдать, как [lover.GetFirstName] реагирует на эту новость. Очевидно, [lover.GetSheHe] ненавидит меня и может попытаться отомстить."
+ lover.0204.a: "[breaker.GetFirstNameNoTooltip] [Select_CString(breaker.IsFemale, 'выбрала', 'выбрал' )] меня. Смирись."
 
  #Ask lover to be exclusive (lover -> soulmate)
  lover.3111.t: "[Select_CString(lover.IsFemale, 'Моя единственная и неповторимая', 'Мой единственный и неповторимый' )]"
@@ -252,7 +252,7 @@
 
 
  lover.3201.t: "Идеальный подарок"
- lover.3201.desc: "Передо мной [ROOT.Char.Custom2('LoverSeductionObject', SCOPE.sC('lover'))] отличного качества: представляю, как обрадуется такому подарку [SCOPE.sC('lover').GetTitledFirstName].\n\n«Отличная вещица. Вам так не кажется, [ROOT.Char.GetLadyLord]? — Старый торговец подмигивает. — Отличный подарок для любимого человека»."
+ lover.3201.desc: "Передо мной [ROOT.Char.Custom2('LoverSeductionObject', SCOPE.sC('lover'))] отличного качества: представляю, как обрадуется такому подарку [SCOPE.sC('lover').GetTitledFirstName].\n\n«Отличная вещица. Вам так не кажется, [ROOT.Char.Custom('FormOfAddressForLiege')]? — Старый торговец подмигивает. — Отличный подарок для любимого человека»."
  lover.3201.a: "Так и есть. Заверни как следует."
  lover.3201.b: "Так и есть. Дай десять штук!"
  lover.3201.c: "Этот хлам? Не смеши меня."
@@ -363,7 +363,7 @@
 
  lover.3216.desc: "[lover.Custom('MusicalPerformer')] прибывает ко двору, официально, чтобы развлекать и радовать публику, но вскоре он подходит ко мне, чтобы раскрыть истинную цель своего визита."
  lover.3216.desc_fancy_troubadour: "[lover.Custom('MusicalPerformer')] прибывает ко двору, чтобы представить нам свой божественный голос и поэзию, что струится подобно реке. Вскоре он подходит ко мне, чтобы раскрыть истинную цель своего визита."
- lover.3216.desc_ending: "\n\n«Меня [Select_CString(original_lover.IsFemale, 'послала', 'послал' )] [original_lover.GetTitledFirstName], чтобы передать вам [original_lover.GetHerHis] любовь и развлекать вас, [ROOT.Char.GetLadyLord]»."
+ lover.3216.desc_ending: "\n\n«Меня [Select_CString(original_lover.IsFemale, 'послала', 'послал' )] [original_lover.GetTitledFirstName], чтобы передать вам [original_lover.GetHerHis] любовь и развлекать вас, [ROOT.Char.Custom('FormOfAddressForLiege')]»."
  lover.3216.a: "Очаровательно!"
  lover.3216.b: "Зачем [SCOPE.sC('original_lover').GetHerHim] посылать кого-то другого, чтобы ухаживать за мной вместо себя?"
 
@@ -414,16 +414,16 @@
  lover.7002.t: "[Select_CString(proposing_friend.IsFemale, 'Моя', 'Мой' )] [SCOPE.sC('proposing_friend').Custom2('ComplimentAdjective', ROOT.Char)][Select_CString(proposing_friend.IsFemale, 'ая подруга', 'ый друг' )]"
  lover.7002.desc: "Я и [SCOPE.sCharacter('proposing_friend').GetTitledFirstName] беседуем, сидя рядом: нас занимает [ROOT.Char.Custom('subject_of_interest')]. Я улыбаюсь и чувствую на себе [proposing_friend.GetHerHis] взгляд... Воздух буквально напоен неловкостью, и, судя по румянцу на [SCOPE.sC('potential_lover').GetHerHis] щеках, не только я ощущаю это."
 
- lover.7003.t: "[Select_CString(potential_lover.IsFemale, 'Моя', 'Мой' )] [SCOPE.sC('potential_lover').Custom('InsultAdjective')] [Select_CString(potential_lover.IsFemale, 'соперница', 'соперник' )]"
+ lover.7003.t: "[Select_CString(potential_lover.IsFemale, 'Моя', 'Мой' )] [potential_lover.Custom2('InsultAdjective', ROOT.Char)] [Select_CString(potential_lover.IsFemale, 'соперница', 'соперник' )]"
  lover.7003.desc: "[potential_lover.GetTitledFirstName] выдает очередную тираду, общий смысл которой сводится к тому, что [potential_lover.Custom('herhis_subject_of_interest')] — отличная штука. Мои мысли витают где-то далеко, но я не могу не заметить, что [potential_lover.GetSheHe], вообще-то, довольно [potential_lover.Custom2('ComplimentAdjective', ROOT.Char)][Select_CString(potential_lover.IsFemale, 'ая', 'ый' )] [potential_lover.GetWomanMan].\n\nМы уже привыкли к подобным стычкам, но вдруг, когда наши взгляды встречаются, я чувствую, как в моем сердце трепещет нечто иное, чем ненависть..."
- lover.7003.a: "Что за чары на меня [Select_CString(potential_lover.IsFemale, 'наложила эта', 'наложил этот' )] [potential_lover.Custom('InsultNoun')]?!"
+ lover.7003.a: "Что за чары на меня [Select_CString(potential_lover.IsFemale, 'наложила эта', 'наложил этот' )] [potential_lover.Custom2('InsultNoun', ROOT.Char)]?!"
  lover.7003.a.tt: "#F Мне нужно как следует обдумать это странное чувство...#!"
  lover.7003.b: "Наверное, это отвращение."
 
- lover.7004.t: "[Select_CString(proposing_rival.IsFemale, 'Моя', 'Мой' )] [SCOPE.sC('proposing_rival').Custom('InsultAdjective')] [Select_CString(proposing_rival.IsFemale, 'соперница', 'соперник' )]"
+ lover.7004.t: "[Select_CString(proposing_rival.IsFemale, 'Моя', 'Мой' )] [proposing_rival.Custom2('InsultAdjective', ROOT.Char)] [Select_CString(proposing_rival.IsFemale, 'соперница', 'соперник' )]"
  lover.7004.desc_opening: "Посреди захватывающей дискуссии, предметом которой является [ROOT.Char.Custom('subject_of_interest')], я вижу, как хмурится [proposing_rival.GetTitledFirstName] на другом конце [ROOT.Char.Custom('GetRoom_RU_Gen')].\n\n"
  lover.7004.desc_potential_lover_is_go: "Наши взгляды встречаются, и, к моему удивлению, [proposing_rival.GetSheHe] [proposing_rival.Custom('quirk_pos_adverb')] улыбается. Как мне раньше удавалось не замечать, что [proposing_rival.GetSheHe] [Select_CString(proposing_rival.IsFemale, 'такая', 'такой' )] [proposing_rival.Custom2('ComplimentAdjective', ROOT.Char)][Select_CString(proposing_rival.IsFemale, 'ая', 'ый' )] [proposing_rival.GetWomanMan]?"
- lover.7004.desc_not: "Наши взгляды встречаются, [SCOPE.sCharacter('proposing_rival').GetSheHe] хмурится и быстро отворачивается. Вот [SCOPE.sC('proposing_rival').Custom('InsultNoun')]!"
+ lover.7004.desc_not: "Наши взгляды встречаются, [SCOPE.sCharacter('proposing_rival').GetSheHe] хмурится и быстро отворачивается. Вот [proposing_rival.Custom2('InsultNoun', ROOT.Char)]!"
  lover.7004.a: "Я улыбаюсь в ответ?.."
  lover.7004.a.tt: "#F Что это за внезапный трепет в моем сердце?#!"
  lover.7004.b: "Ох, оставь меня в покое, [proposing_rival.GetFirstNameNoTooltip]."

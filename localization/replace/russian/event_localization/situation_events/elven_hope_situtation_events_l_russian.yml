@@ -47,8 +47,12 @@
  elven_hope.0022.a.tt: "Вы попытаетесь убедить персонажа [leaving_vassal.GetFirstName] остаться\n\n#weak Ваш успех будет зависеть от случайного [Concept('skill', 'навыка')|E]. В случае успеха [leaving_vassal.GetName] останется в [Concept('middleearth', 'Средиземье')|E] и [county_being_abandoned.GetNameNoTier] останется под [leaving_vassal.GetHerHis] контролем. Если вы потерпите неудачу, [leaving_vassal.GetName] отплывёт в [Concept('valinor', 'Валинор')|E], а [county_being_abandoned.GetNameNoTier] превратится в [Concept('wilderness', 'дебри')|E].#!"
 
  elven_hope.0030.t: "[my_elven_subregion.GetName]: Протяжённые тени"
- elven_hope.0030.desc: "В вашем [Concept('situation_sub_region', 'регионе')|E] в настоящее время #P [THIS.Var('evil_rulers_in_my_subregion').GetValue|0]#! злых правителей. (Это плохо!)"
+ elven_hope.0030.desc: "В вашем [Concept('situation_sub_region', 'регионе')|E] в настоящее время #N [my_elven_subregion.MakeScope.Var('evil_rulers_in_subregion').GetValue]#! злых правителей. (Это плохо!)"
  elven_hope.0030.a: "Мы должны отбросить тьму."
+
+ elven_hope.0031.t: "Посмотрим, появится ли это"
+ elven_hope.0031.desc: "В вашем [Concept('situation_sub_region', 'регионе')|E] есть #N [my_elven_subregion.MakeScope.Var('evil_rulers_in_subregion').GetValue]#! злых правителей."
+ elven_hope.0031.a: "Хорошо."
 
  elven_hope.0100.t: "Мечты о море"
  elven_hope.0100.desc: "В последнее время ветер приносит с собой странные желания. Я замечаю, что мои мысли уносятся на запад, к берегам, которые мне недоступны. И я не [Select_CString(ROOT.Char.IsFemale, 'одинока', 'одинок' )] в этом. Тихая тоска пробуждается в сердцах моего народа. Они говорят о море не со страхом, а с почтением. Некоторым начинают сниться корабли, белые паруса и далёкие зелёные земли, которые можно увидеть только во сне.\n\nЯ иду среди деревьев и вижу это в их глазах: свет памяти и боль от чего-то утраченного. Они задерживаются у рек, задумчиво глядя на запад в тишине. Ремесленники изготавливают сувениры в форме волн или чаек; менестрели наигрывают мелодии, повторяющие ритм прибоя. Дух державы меняется, словно море взывает к нам всерьёз.\n\nНо я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] спросить себя: что мне делать с этим приливом тоски? Буду ли я говорить о надежде и цели здесь, в [Concept('middleearth', 'Средиземье')|E]? Или мне следует подготовить гавани для кораблей, которые отправятся в плавание под звёздами?"
