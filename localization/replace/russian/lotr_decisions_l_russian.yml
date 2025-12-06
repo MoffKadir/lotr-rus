@@ -1510,6 +1510,8 @@
  decision_tandiland_desc: "Рабовладельцы были полностью изгнаны из внутренних районов и глухих тандитских лесов и оттеснены к побережью, откуда они впервые пришли. Их власть ослабла, а мы стали сильными и свободными, объединившись в единый народ против угрозы с запада. Настало время мне провозгласить Антакавелай, леса побережья, и объединить мой народ раз и навсегда, что бы ни случилось."
  decision_tandiland_confirm: "Сменим копья на плуги, и не будем вести войн."
 
+ ### Mardat Decisions ###
+
  decision_envoy_haruzan: "Отправить послов в Харузан"
  decision_envoy_haruzan_tooltip: "Отправить послов в Харузан, надеясь заручиться поддержкой своих родичей и других последователей Кхаз-грамаза."
  decision_envoy_haruzan_desc: "Хотя Харузан и находится далеко от моей державы, им правит семья моей матери, и это величайшая держава, где следуют истинной вере. Под непосредственным руководством Кхаз-грамаза их держава процветала, и они приступили к великой работе по восстановлению павшей империи Харван. Я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )], что если бы я [Select_CString(ROOT.Char.IsFemale, 'отправила', 'отправил' )] к ним посланцев с просьбой о дружбе, они бы отдали всё, что могли, чтобы увидеть, как [Concept('ray', 'Рая')|E] присоединяется к ним в их величии."
@@ -1588,6 +1590,34 @@
  decision_coup_ray_confirm: "Дни Каниватры сочтены!"
  decision_coup_ray_effects_tt: "Ваши текущие шансы на успех попытки переворота равны #N [GetPlayer.MakeScope.ScriptValue('lotr_mardat_coup_odds_of_success')]% #!. Чтобы увеличить свои шансы на успех, вы должны успешно выполнить происки из категории решений «Переворот в Рае»."
  mardat_capital_spies_requirement: "Вы должны проникнуть в столицу и создать там сеть агентов."
+
+ decision_mardat_murder_bellakar: "Уничтожить Беллакар"
+ decision_mardat_murder_bellakar_desc: "На протяжении тысячелетий ненавистное королевство [Concept('bellakar', 'Беллакар')|E] безраздельно процветало на северном побережье [Concept('bayoftulwang', 'залива Тулванг')|E]. Из своих огромных крепостей они разбогатели и разжирели, правя как тираны разрозненными народами, пережившими великие завоевания своих предков.\n\nДовольно! Культ Кхаз-грамаза наконец-то возвысился в [Concept('ray', 'Рае')|E], напоминая своему народу об их долге вести войну против зла Малициама и его мерзких слуг. Войска, служащие великому Богу ночи, уже собираются и готовятся к великой войне, которая, в конце концов, уничтожит величайшее королевство Малициама, оставшееся в [Concept('harad', 'Хараде')|E]."
+ decision_mardat_murder_bellakar_confirm: "Беллакар ждёт лишь отчаяние!"
+ decision_mardat_murder_bellakar_tooltip: "Объявить великую войну, чтобы завоевать и уничтожить Беллакар, подчинив его правлению Кхаз-грамаза."
+ decision_mardat_murder_bellakar_tt: ""
+
+ decision_mardat_crush_reactionary: "Сокрушить ватраистских реакционеров"
+ decision_mardat_crush_reactionary_tooltip: "С уничтожением всего старого ватраистского порядка можно начать великую чистку в самом сердце державы [GetTitleByKey('k_ray').GetNameNoTier]."
+ decision_mardat_crush_reactionary_desc: "Хотя Каниватра свергнуты, старый ватраистский порядок по-прежнему царит в сердце [Concept('ray', 'Раи')|E]. Сосредоточенные вокруг [GetTitleByKey('d_riyeshara').GetNameNoTier], их дальнейшее существование ослабляет мою легитимность как [Select_CString(ROOT.Char.IsFemale, 'правительницы', 'правителя' )] державы [GetTitleByKey('k_ray').GetNameNoTier] и угрожает моей власти над провинцией [GetTitleByKey('d_dar').GetNameNoTier] и столицей.\n\nСокрушив этих глупых мятежников, мои люди смогли бы по-настоящему разгуляться и искоренить всю ересь в сердце державы. Я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )], что без вождей, которые могли бы руководить ими, и оставленные на мою милость, Аудрат-Ватра быстро исчезнет. А если этого не произойдёт... что ж."
+ decision_mardat_crush_reactionary_confirm: "Аудрат-Ватра наконец-то мертва!"
+ decision_mardat_crush_reactionary_effects_tt: "Лишённый вождей и беззащитный, народ сердца державы [GetTitleByKey('k_ray').GetNameNoTier] не будет иметь иного выбора, кроме как подчиниться вашей воле."
+ no_reactionary_vassals: "Ни один правитель в пределах вашей державы не должен почитать Аудрат-Ватру."
+ mardat_reactionary_county_effect: "Каждое графство Аудрат-Ватры в пределах вашей державы потеряет 5 ед. развития, получит негативный модификатор на 50 лет и с вероятностью 33% обратится в вашу конфессию."
+
+ decision_mardat_crush_revolutionary: "Сокрушить кат-полозайских реакционеров"
+ decision_mardat_crush_revolutionary_tooltip: "Разгромив кат-полозайских владык внутренних земель державы [GetTitleByKey('k_ray').GetNameNoTier], мы приведём границы Раи под абсолютное правление Кхаз-грамаза."
+ decision_mardat_crush_revolutionary_desc: "Во внутренних землях [Concept('ray', 'Раи')|E], вдали от столицы и старых центров власти, последователи Кат-Полозая объединились вокруг своих местных властителей в большие повстанческие отряды. Пока эти мятежные еретики находятся у власти, границы державы будут нестабильны, и существует угроза того, что достаточно могущественный мятежный владыка соберет армию из недовольных крестьян и двинется на [GetTitleByKey('c_bozisha_dar').GetNameNoTier].\n\nПолностью разгромив этих мятежников, перебив их вождей и разрушив Высокую цитадель Катри, вокруг которой они сплотились, я [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] бы навязать пограничным землям как своё правление, так и культ Кхаз-грамаза."
+ decision_mardat_crush_revolutionary_confirm: "Там, где Каниватра потерпели неудачу, я добьюсь успеха."
+ decision_mardat_crush_revolutionary_effects_tt: "Когда центры власти и культуры Кат-Полозая окажутся в руинах, отчаявшееся население подчинится вашей воле или будет сломлено."
+ must_have_crushed_reactionaries: "Вы должны сокрушить Аудрат-Ватру в сердце державы и укрепить свою власть над столицей."
+ no_revolutionary_vassals: "Ни один правитель в вашей державе не почитает Кат-Полозая"
+
+ decision_powan_buy: "Продажа Зизаля"
+ decision_powan_buy_tooltip: "Купить исторические земли Раи в провинции [GetTitleByKey('c_zizal').GetNameNoTier] у своих пованских союзников."
+ decision_powan_buy_desc: "При слабом правлении Каниватра, внутренняя земля Раи, провинция [GetTitleByKey('c_zizal').GetNameNoTier] была завоевана амбициозными пованскими военачальниками. Теперь, когда я [Select_CString(ROOT.Char.IsFemale, 'заключила', 'заключил' )] мир с племенем, которое контролирует эту территорию, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы предложить купить её, расширив свою державу и повысив свою легитимность как [Select_CString(ROOT.Char.IsFemale, 'правительницы', 'правителя' )] [Concept('ray', 'Раи')|E]."
+ decision_powan_buy_confirm: "Подготовиться к покупке."
+ decision_powan_buy_effects_tt: "Вы предложите своим пованским союзникам из [GetTitleByKey('d_ne_sargoa').GetNameNoTier] золото в обмен на ваше де-юре графство [GetTitleByKey('c_zizal').GetNameNoTier]."
 
  ################################
  ####### Tedjin Decisions #######
@@ -2828,6 +2858,13 @@
  decision_restore_harad_province.tt.unav_desc: ""
  integrate_province_unav_tooltip: "#T #V Претендовать на аукуагский [GetTitleByKey('e_unav').GetNameNoTier]#! #!\n\nУнав, великая держава аукуагского триумфа всегда была единодушна с сынами [Concept('harad', 'Харада')|E], и было бы правильно официально укрепить эту связь."
 
+ decision_restore_harad_province.tt.qadjajar: "[GetTitleByKey('e_tedjin').GetNameNoTier]"
+ decision_restore_harad_province.tt.qadjajar_desc: ""
+ integrate_province_qadjajar: "#T #V Уничтожить [GetTitleByKey('e_tedjin').GetNameNoTier] захватчиков с востока#! #!\n\nКаджаджар - держава захватчиков с востока, нельзя допустить, чтобы она продолжала противостоять землям [Concept('harad', 'Харада')|E]."
+
+ decision_restore_harad_province.tt.tedyathani: "[GetTitleByKey('e_faithful_tedjin').GetNameNoTier]"
+ decision_restore_harad_province.tt.tedyathani_desc: ""
+ integrate_province_tedyathani: "#T #V Уничтожить [GetTitleByKey('e_faithful_tedjin').GetNameNoTier] захватчиков с востока#! #!\n\nТедьятани - держава захватчиков с востока, нельзя допустить, чтобы она продолжала противостоять землям [Concept('harad', 'Харада')|E]."
 
  decision_restore_harad_province.tt.sirayn: "[GetTitleByKey('e_sirayn').GetNameNoTier]"
  decision_restore_harad_province.tt.sirayn_desc: ""
