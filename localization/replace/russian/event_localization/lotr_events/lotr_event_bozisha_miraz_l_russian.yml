@@ -73,7 +73,7 @@
  lotr_bozisha_miraz.0302.desc: "Наша лесная родина поет печальную песню, видя, как ее сыновей увозят обратно в повозках и цепях, а зачастую и вовсе не возвращают. Хотя мы послали все свои силы, чтобы остановить [stormhost_emperor.GetCulture.GetCollectiveNounNoTooltip]ие мечи и их алчных владельцев, мы не справились с задачей, и теперь наш лес опустошен, а наши сердца тяжелы.\n\nМои вассалы ссорятся - со мной и между собой, и я вижу, как они слишком легко смирились с сокрушительной победой Грозового Воинства. У меня нет сил остановить воющий ветер и грохочущие тучи. Мы сдались перед лицом Бури."
  lotr_bozisha_miraz.0302.a: "В лесу больше нет [Select_CString(GetPlayer.IsFemale, 'королевы', 'короля' )] - [GetPlayer.GetSheHe] [Select_CString(GetPlayer.IsFemale, 'потеряла', 'потерял' )] свою корону."
 
- ### Mardat Storyline Events ###
+ ### Mardat Act 1 Events ###
 
  lotr_bozisha_miraz.0001.t: "Подделка претензии"
  lotr_bozisha_miraz.0001.desc: "В то время как мои усилия по обращению масс в культ Кхаз-грамаза в моих землях увенчались большим успехом, мои амбиции в отношении [Concept('ray', 'Раи')|E] оставались на прежнем уровне. Если я хочу, чтобы меня воспринимали всерьёз те, кто, возможно, хочет видеть в качестве кралуя сильного претендента, у меня должны быть какие-то претензии на державу, которую я хочу узурпировать.\n\nУчитывая, что у меня нет настоящей кровной связи с Каниватрой, мне нужно получить претензию из менее чем надёжных источников. Продолжение этого пути может оказаться опасным, если кралуй узнает об этом, но, несомненно, Кхаз-грамаз дарует победу [Select_CString(ROOT.Char.IsFemale, 'своей верной служительнице', 'своему верному слуге' )], если дело дойдёт до войны..."
@@ -505,6 +505,8 @@
   lotr_bozisha_miraz.0363.a.success: "You successfully coup [GetTitleByKey('k_ray').GetNameNoTier] and overthrow the Kanivâtras."
   lotr_bozisha_miraz.0363.a.fail: "Your attempted coup fails, throwing the realm into open civil war."
 
+ ### Mardat Act 2 Events ###
+
  lotr_bozisha_miraz.0401.t: "Time Comes to Pay"
   lotr_bozisha_miraz.0401.desc: "Now that I have achieved my divinely granted victory over [ray|e], the powers with which I bargained to support my rize will soon be coming, asking for payment. Even with my ascension as Kralyi, my position remains far from secure. Much of the realm is ruled by vile heretics who deserve nothing more than death after all. \n\nBy keeping true to my oaths, I could solidify my vague pacts with my supporters into proper official alliances between my new realm and theirs. With their continued support, I am sure that the heretical rebels of the hinterlands will be slain as the ennemies of Khäz-gramaze that they are soon enough."
   lotr_bozisha_miraz.0401.a: "The costs may be steep, however..."
@@ -557,7 +559,7 @@
 
   lotr_bozisha_miraz.0410.t: "The Serpent's Would-be Yoke"
  lotr_bozisha_miraz.0410.desc: "What many thought unthinkable as just happened. The millenia old Kanivâtra dynasty which enforced Aûdrat Vâtra domination over [ray|e] has fallen in unprecedented violence. The radical and zealous tyrant [mardat.GetTitledFirstName] now rules over the realm and already he has begone indiscriminate purges off all who do not embrace his Cult of Khäz-gramaze. \n\nHow long will it be until all of [GetTitleByKey('k_ray').GetNameNoTier] falls to his madness and cruelty? How long until my people and my family are the ones slain on the alters of the God of Night? Long have we, followers of the ancient Kât-Polozây bent the knee, accepting the seemingly invincible dominion of Vâtra the destroyer. Yet now, the realm has fallen to utter chaos and the invincibility of those who dominate us seems less true than it has in centuries. The time is right, now or never, we will strike against this tyrant and free [GetTitleByKey('k_ray').GetNameNoTier] from the yoke of its cruel gods!"
-  lotr_bozisha_miraz.0410.a: "We have nothing to lose but to be sacrificed to the dark!"
+ lotr_bozisha_miraz.0410.a: "We have nothing to lose but death!"
   lotr_bozisha_miraz.0410.a.effects: "You proclaim yourself [mardat.GetTitledFirstName]'s ennemy and vow to free [GetTitleByKey('k_ray').GetNameNoTier] from his tyranny."
  lotr_bozisha_miraz.0410.b: "Perhaps, submission would bring us a better fate..."
   lotr_bozisha_miraz.0410.b.effects: "You chose not to confront [mardat.GetTitledFirstName] and submit yourself to his rule."
@@ -587,21 +589,47 @@
   lotr_bozisha_miraz.0415.a: "My victory could not be more complete!"
 
  lotr_bozisha_miraz.0416.t: "The Purchase of Zizâl"
-  lotr_bozisha_miraz.0416.desc: "Recently, it has come to my attention that the eastern hinterland of [ray|e] was not fully under my control. Indeed, [GetTitleByKey('c_zizal').GetNameNoTier] apparently fell to pôwan rule at some point in the past centuries of Kanivâtra decline. With the local pôwan chieftain being my ally, it should be possible to negociate a sale of the territory to see it return to its rightful rulers."
+ lotr_bozisha_miraz.0416.desc: "Recently, it has come to my attention that the eastern hinterland of [ray|e] was not fully under my control. Indeed, [GetTitleByKey('c_zizal').GetNameNoTier] and [GetTitleByKey('c_salibara').GetNameNoTier] apparently fell to pôwan rule at some point in the past centuries of Kanivâtra decline. With the local pôwan chieftain being my ally, it should be possible to negociate a sale of the territory to see it return to its rightful rulers."
   lotr_bozisha_miraz.0416.a: "Send out the offer."
   lotr_bozisha_miraz.0416.b: "I don't have the finances for this."
 
   lotr_bozisha_miraz.0417.t: "The Sale of Zizâl"
-  lotr_bozisha_miraz.0417.desc: "Rather surprisingly, I have recently received an offer from my ally [mardat.GetTitledFirstName] to buy the periphal tribe of [GetTitleByKey('c_zizal').GetNameNoTier]. According to him, it is a part of the ancient borders of [ray|e] and, as such, he should be the one to rule over it. However, as we are allies, he has offered me a good sum if I were to peacefully cede the territory."
+ lotr_bozisha_miraz.0417.desc: "Rather surprisingly, I have recently received an offer from my ally [mardat.GetTitledFirstName] to buy the periphal tribes of [GetTitleByKey('c_zizal').GetNameNoTier] and [GetTitleByKey('c_salibara').GetNameNoTier]. According to him, they are part of the ancient borders of [ray|e] and, as such, he should be the one to rule over it. However, as we are allies, he has offered me a good sum if I were to peacefully cede the territory."
   lotr_bozisha_miraz.0417.a: "I gladly accept!"
-  lotr_bozisha_miraz.0417.b: "Zizâl is mine!"
+ lotr_bozisha_miraz.0417.b: "Those lands are mine!"
 
   lotr_bozisha_miraz.0418.t: "The Deal for Zizâl"
-  lotr_bozisha_miraz.0418.yes.desc: "As expected, my pôwan ally in [GetTitleByKey('d_ne_sargoa').GetNameNoTier] has agreed to cede me the rule of the tribe of [GetTitleByKey('c_zizal').GetNameNoTier] for a sum that was most likely rather excessive for the value of the land. No matter, I have righted one of the many wrongs of the Kanivâtra today."
-  lotr_bozisha_miraz.0418.no.desc: "Rather surprisingly, [powan_leader.GetTitledFirstName] has refused my generous offer to buy [GetTitleByKey('c_zizal').GetNameNoTier] from [GetTitleByKey('d_ne_sargoa').GetNameNoTier]. While this does not mean the end of our alliance, it is a great strain on our relations."
-  lotr_bozisha_miraz.0418.a: "Zizâl is mine!"
+ lotr_bozisha_miraz.0418.yes.desc: "As expected, my pôwan ally in [GetTitleByKey('d_ne_sargoa').GetNameNoTier] has agreed to cede me the rule of the tribes of [GetTitleByKey('c_zizal').GetNameNoTier] and [GetTitleByKey('c_salibara').GetNameNoTier] for a sum that was most likely rather excessive for the value of the land. No matter, I have righted one of the many wrongs of the Kanivâtra today."
+  lotr_bozisha_miraz.0418.no.desc: "Rather surprisingly, [powan_leader.GetTitledFirstName] has refused my generous offer to buy [GetTitleByKey('c_zizal').GetNameNoTier] and [GetTitleByKey('c_salibara').GetNameNoTier] from [GetTitleByKey('d_ne_sargoa').GetNameNoTier]. While this does not mean the end of our alliance, it is a great strain on our relations."
+  lotr_bozisha_miraz.0418.a: "Those lands are mine!"
 
+  ### Rebels of Rây Events ###
 
+  lotr_bozisha_miraz.0501.t: "The People's Battle"
+  lotr_bozisha_miraz.0501.desc: "From all over my realm, the countless petty rebel warbands who were once scattered and disunited have come together in my court to discuss the formation of a truly massive coalition in opposition to the usurper [mardat.GetTitledFirstName]. As the negociations begin, it seems as though I will be able to take the leadership of this movement rather easily. After all, my high ranking position and influence makes me the perfect candidate. \n\nYet, as it seemed that my plan would go uncontested, a young man stepped up. Presenting himself as [rebel_leader.GetFirstName], leader of one of the larger rebel warbands, he declared before the assembly that he should be the one to take leadership of the movement. Indeed, according to him, corrupt high ranking nobles were what brought this crisis about in the first place. Despite the clearly false nature of his statement, I can sense he has moved many in the audience to his side. I must now make my reply, or risk losing the opportunity to strengthen my position."
+  lotr_bozisha_miraz.0501.a: "I am a far better commander than that fool!"
+  lotr_bozisha_miraz.0501.a.success: "You use your marshal prowess and reputation to convince the assembly"
+  lotr_bozisha_miraz.0501.a.failure: "You words fail to reach the assembly"
+  lotr_bozisha_miraz.0501.b: "Perhaps a generous handout would win me their hearts."
+  lotr_bozisha_miraz.0501.b.success: "Your offer of paiment brings the rebel warbands to your side"
+  lotr_bozisha_miraz.0501.b.failure: "The rebels refuse your offer of paiment."
+  lotr_bozisha_miraz.0501.c: "Perhaps we can find a compromise..."
+  lotr_bozisha_miraz.0501.c.success: "You convince the rebels to follow you in exchange for great autonomy"
+  lotr_bozisha_miraz.0501.c.failure: "The rebels refuse to negociate"
+  ray_rebels: "Unified rebel warbands"
+  rebel_county_control_loss: "#N Every county in your realm will lose 30 control #!"
 
+  lotr_bozisha_miraz.0502.t: "Armies of the Faith"
+  lotr_bozisha_miraz.0502.c.desc: "Though there were so troubles in the process, I have been able to bring the petty rebel warbands of my realm together in a single cause under my authority. The few detractors to my power that remain within my new forces make themeslves quiet, knowing full well that they stand no hope at victory without my support. As an official great leader of the rebellion against the vile [mardat.GetTitledFirstName], I may now begin to openly work in opposition to the Khäz-gramaze purges. \n\nThanks to my charismatic leadership and militray prowess, my rule over my new opposition faction to the Khäz-gramaze upstarts is absolute."
+  lotr_bozisha_miraz.0502.p.desc: "Though there were so troubles in the process, I have been able to bring the petty rebel warbands of my realm together in a single cause under my authority. The few detractors to my power that remain within my new forces make themeslves quiet, knowing full well that they stand no hope at victory without my support. As an official great leader of the rebellion against the vile [mardat.GetTitledFirstName], I may now begin to openly work in opposition to the Khäz-gramaze purges. \n\nThough it required a significant financial investment, my authority over my new faction is secure for the foreseeable future.."
+  lotr_bozisha_miraz.0502.a.desc: "Though there were so troubles in the process, I have been able to bring the petty rebel warbands of my realm together in a single cause under my authority. The few detractors to my power that remain within my new forces make themeslves quiet, knowing full well that they stand no hope at victory without my support. As an official great leader of the rebellion against the vile [mardat.GetTitledFirstName], I may now begin to openly work in opposition to the Khäz-gramaze purges. \n\nMy power over this movement remains insecure, however, as the significant compromises I had to make with the rebel leadership greatly curb my power."
+  lotr_bozisha_miraz.0502.a: "A great step towards the fall of the Khäz-gramaze!"
 
- ### End of Mardat Storyline ###
+  lotr_bozisha_miraz.0503.t: "The Assembly's Defiance"
+  lotr_bozisha_miraz.0503.desc: "In a shocking turn of events, the petty banter and discourse sown in my great assembly of rebel leaders has somehow lead to the complete dissolution of any unified front within my realm. Even worse, the once more scattered rebel warbands have lost all faith in my ability to ever lead a worthy coalition again, dashing any hope of regathering their scattered forces. \n\nMy failure means that [mardat.GetTitledFirstName] will continue to be free to terrorize the realm, at least for now. Even now, however, all hope is not lost and I could still liberate [GetTitleByKey('k_ray').GetNameNoTier] from the madness of its new overlords."
+  lotr_bozisha_miraz.0503.a: "The road ahead will be hard..."
+
+  lotr_bozisha_miraz.0504.t: "Gathering Foes"
+  lotr_bozisha_miraz.0504.desc: "Under the leadership of [revolutionary.GetTitledFirstName], the once scattered and disuinted Kât Polozây rebel warbands that powerlessly roamed in the hinterlands of [ray|e] have gathered into one single common force. Hundreds of disgrunteled peasant and soldiers of the old guard are gathering together into a single army, one with the strength to challenge my forces. \n\nWhile this rabble may prove problematic, they do not have the strength to dare march to [GetTitleByKey('c_bozisha_dar').GetNameNoTier] and by the will of Khäz-gramaze it will remain so until their innevitable defeat."
+  lotr_bozisha_miraz.0505.desc: "Under the leadership of [reactionary.GetTitledFirstName], the once scattered and disuinted Vâtran rebel warbands that fought a futile struggle to defeat me in the heartlands of [ray|e] have gathered into one single common force. Hundreds of disgrunteled peasant and soldiers of the old guard are gathering together into a single army, one with the strength to challenge my forces. \n\nWhile this rabble may prove problematic, they do not have the strength to dare march to [GetTitleByKey('c_bozisha_dar').GetNameNoTier] and by the will of Khäz-gramaze it will remain so until their innevitable defeat."
+  lotr_bozisha_miraz.0504.a: "These fools will die just like the rest!"
