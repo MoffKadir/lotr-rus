@@ -521,6 +521,13 @@
  bellanarud_auxiliaries: "Вспомогательные войска белланаруд"
  bellanarud_auxiliaries_flavor: "Сельское население Беллакара — белланаруд зачастую служит в качестве вспомогательного контингента во множестве ролей, дополняя профессиональное войско. Представители различных малых групп привносят свои лучшие умения и традиции."
  culture_parameter_can_make_oligarch_vassals: "Можно превращать графов в вассалов-олигархов"
+ culture_parameter_oligarchy_vassals_pay_more: "Олигархические [Concept('vassals', 'вассалы')|E] с рангом выше [Concept('baron', 'барона')|E] предоставляют больше [Concept('taxes', 'налогов')|E] и [Concept('levies', 'ополчения')|E]"
+ oligarchy_vassals_pay_more_parameter: "От [Concept('culture_traditions', 'культурных традиций')|E] [Concept('liege', 'сюзерена')|E]"
+ make_oligarchy_interaction: "Назначить олигархическим надзирателем"
+ make_oligarchy_interaction_desc: "Назначить персонажа [recipient.GetShortUINameNoTooltip] присматривать за растущим городом [recipient.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip], превратив [recipient.GetHerHis] в олигархического вассала."
+ REQUEST_OLIGARCHY_TEXT: "Приветствую, [Select_CString(recipient.IsFemale, 'моя', 'мой' )] [actor.Custom2('RelationToMeShort', SCOPE.sC('recipient'))]. С некоторых пор стало очевидно, что самая богатая часть земли, которой вы правите, - это городские общины внутри неё. Я предлагаю вам взять на себя задачу по надзору за этой растущей олигархией от моего имени."
+ clan_unity_oligarchy.desc: "[unity_target.GetName] [Select_CString(unity_target.IsFemale, 'назначена олигархической надзирательницей', 'назначен олигархическим надзирателем' )]"
+ appoint_oligarchy_interaction_notification: "Назначен олигархический надзиратель"
  ### TEDJIN ###
  innovation_tedjin_warfare: "Военное дело теджин"
  innovation_tedjin_warfare_desc: "Теджин позаимствовали многое от своего истерлинского наследия и опыта наемников. В бою они предпочитают измотать соперника, а также зачастую используют точечные удары с последующим отступлением."
@@ -642,6 +649,11 @@
  ### Harshandatt ###
  innovation_harshandatt_warfare: "Военное дело Харшандатта"
  innovation_harshandatt_warfare_desc: "Хотя по многим меркам народ Нуары устарел, он придерживается древних традиций ведения войны."
+
+ innovation_eastern_adunai_warfare: "Восточно-адунайские солдаты"
+ innovation_eastern_adunai_warfare_desc: "Восточно-адунайские солдаты - моряки и морские пехотинцы, воины, рождённые морем и связанные с ним, и, подобно морю, они - непреклонная волна."
+ unlock_azul_an_zagar: "Доступны [men_at_arms|El] - [GetMaA('azul_an_zagar').GetName]"
+ unlock_ephalnardu: "Доступны [men_at_arms|El] - [GetMaA('ephalnardu').GetName]"
 
  ### Shayn ###
  innovation_lynerian_warfare: "Линерийское оружие"

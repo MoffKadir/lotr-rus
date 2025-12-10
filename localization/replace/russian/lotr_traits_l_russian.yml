@@ -163,6 +163,7 @@
  trait_durin_unify_desc: "Этот персонаж — текущий правитель верховного королевства Народа Дурина и требует к себе почтения, соответствующего столь высокому положению."
  trait_durin_unify_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] — текущий правитель Верховного королевства Народа Дурина и требует к себе почтения, соответствующего столь высокому положению."
 
+ ### MEN ###
  tamska: "Тамска"
  born_tamska: "Рождённая Тамска"
  found_tamska: "Найденная Тамска"
@@ -187,6 +188,10 @@
  trait_child_of_tamska: "Дитя Тамски"
  child_of_tamska_desc: "Этот персонаж был рождён [Concept('tamska', 'Тамской')|E] после её вознесения."
  child_of_tamska_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была рождена', 'был рождён' )] [Concept('tamska', 'Тамской')|E] после её вознесения."
+
+ trait_avatar: "Воплощение"
+ trait_avatar_desc: "Этот персонаж считается воплощением божества."
+ trait_avatar_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] считается воплощением [ROOT.Char.GetFaith.HighGodNamePossessive]."
 
  ### COMBAT TRAITS ###
  trait_track_cavalry_leader: "Мастер верхового боя"
@@ -217,6 +222,9 @@
  trait_mundburgian: "Мундбуржец"
  trait_mundburgian_desc: "Этот персонаж служил в войске Гондора как часть Мундбургского эореда."
  trait_mundburgian_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'служила', 'служил' )] в войске Гондора как часть Мундбургского эореда."
+
+ trait_kidnapper: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Похитительница', 'Похититель' )]"
+ trait_kidnapper_desc: "Этот персонаж успешно похитил кого-то."
 
  ### LIFESTYLE TRAITS ###
  trait_widowed: "Вдовец"
