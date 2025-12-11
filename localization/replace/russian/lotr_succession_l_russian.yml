@@ -122,8 +122,12 @@
  tooltip_tamska_elector_vote_youth: "[candidate.GetHerHis|U] возраст: $VALUE|=+0$"
 
  #Dunedain Admin appointment
- anarioni_dynasty_desc: "Принадлежит к роду #L [GetScriptedCharacterByHistoryID( 'lineofanarion1' ).GetFirstName]а#!"
- isildurioni_dynasty_desc: "Принадлежит к роду #L [GetScriptedCharacterByHistoryID( 'lineisildur0' ).GetFirstName]а#!"
+ anarioni_dynasty_desc: "Принадлежит к роду #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofanarion1').GetID] #L Анариона#!#!"
+ isildurioni_dynasty_desc: "Принадлежит к роду #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineisildur0').GetID] #L Исильдура#!#!"
+
+ # Dwarven Succession
+ dwarven_succession_law: "Гномье наследование"
+ dwarven_succession_law_effects: "Гномы Средиземья придерживаются формы наследования только по мужской линии, при которой мужчины могут наследовать по линии своей матери, если они принадлежат к той же династии, что и родственники их матери."
 
  # King Under the Mountain Election
  dwarven_hegemonic_elective_succession_law: "Гномье собрание"
