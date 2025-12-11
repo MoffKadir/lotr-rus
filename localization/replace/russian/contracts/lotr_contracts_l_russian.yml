@@ -143,6 +143,7 @@
  lotr_laamp_3011_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
  lotr_laamp_3011_desc_title: "Честным наёмникам с твёрдой волей,"
  lotr_laamp_3011_desc: "[TaskContract.GetEmployer.GetPrimaryTitle.GetAdjective][Select_CString(TaskContract.GetEmployer.IsFemale, 'ая', 'ий' )] [TaskContract.GetEmployer.GetTitleAsNameNoTooltip] предлагает щедрую награду за тонкую, сложную работу."
+
  lotr_laamp_contract_schemes.3051.t: "Охота на чудовище"
  lotr_laamp_contract_schemes.3051.desc: "Когда я прибываю в чертог, [employer.GetName] приветствует меня и быстро переходит к делу. «Некое злое существо нападает на путников в моих землях. Следопыты призваны поддерживать мир, не так ли? Разберитесь с этим чудовищем, и вы будете вознаграждены за это».\n\nЗадача просто. Нужно выследить и уничтожить тёмную тварь, терзающую эту провинцию."
  lotr_laamp_contract_schemes.3051.a: "$laamp_base_contract_schemes.0000.generic_option.success_chance$"
@@ -230,7 +231,7 @@
 
  RAID_PROTECTION_BUILDING_DESC: "Постройки поселения обеспечивают защиту от налётчиков: $VALUE|=+0$"
 
- lotr_laamp_contract_schemes.5001.t: "Приграничный налёт"
+ lotr_laamp_contract_schemes.5001.t: "Налёт на поселение"
  lotr_laamp_contract_schemes.5001.desc.elf: "«[Concept('elves', 'Эльфы')|E] коварны, с огнём в глазах и клинками. Но если мы ударим вот сюда...» [officer.GetNameNoTooltip] указывает на точку на нашей нацарапанной карте - я прищуриваюсь, чтобы разобрать название «[target_province.GetName]». «Если мы нанесём удар по владению [target_province.GetName] до того, как [employer.GetTitledFirstNameNoTooltip] узнает об этом, мы сможем украсть некоторые из тех эльфийских драгоценностей, о которых я так много [Select_CString(officer.IsFemale, 'слышала', 'слышал' )]».\n\nПосле долгих раздумий я соглашаюсь, и мы готовим наш отряд налётчиков..."
  lotr_laamp_contract_schemes.5001.desc.dwarf: "«Будь прокляты [Concept('dwarves', 'гномы')|E] и их сталь!» [officer.GetNameNoTooltip] сжимает кулак, но я кладу руку на [officer.GetHerHis] плечо, и [officer.GetSheHe] успокаивается.\n\n«[employer.GetTitledFirstNameNoTooltip] правит чертогом [target_province.GetName] - если мы проберёмся туда до того, как [employer.GetSheHe] узнает, гномьи сокровища будут нашими!»\n\nПосле долгих раздумий я соглашаюсь, и мы готовим наш отряд налётчиков..."
  lotr_laamp_contract_schemes.5001.desc.hobbit: "«Слышали ли вы о [Concept('halflings', 'полуросликах')|E], [ROOT.Char.GetFirstNameNoTooltip]? Они живут в плодородных землях, толсты и слабы. Но у них наверняка есть что-то стоящее, даже если это всего лишь еда». На секунду меня кольнула мысль о том, чтобы предать огню земли такого счастливого и невинного народа, но я быстро [Select_CString(ROOT.Char.IsFemale, 'выбросила', 'выбросил' )] её из головы. [officer.GetNameNoTooltip] указывает на владение [target_province.GetName], одну из немногих хоббитских усадеб поблизости. «Я знаю, что [employer.GetTitledFirstNameNoTooltip] - [Select_CString(employer.IsFemale, 'правительница', 'правитель' )] полуросликов в этих краях, но, конечно, [employer.GetSheHe] не сможет оказать #italic достойного#! сопротивления».\n\nПосле долгих раздумий я соглашаюсь, и мы готовим наш отряд налётчиков..."
@@ -257,6 +258,34 @@
  lotr_laamp_contract_schemes.5003.desc.orc: "[officer.GetNameNoTooltip] поддерживает меня, когда я спотыкаюсь, мои ноги отяжелели от бега - голова идёт кругом, но отвар от стрел - это не то, о чём не смог бы позаботиться лекарь. Наш налёт в крепость во владении [target_province.GetName] был отбит свирепостью и хитростью [Concept('orcs', 'орков')|E]. Их [Select_CString(employer.IsFemale, 'предводительница', 'вождь' )], [employer.GetNameNoTooltip] [Select_CString(employer.IsFemale, 'возглавила', 'возглавил' )] оборону, кромсая и рубя своим коварным мечом ряды моих воинов, а [employer.GetHerHis] орки жаждали крови. Я слышу их сейчас - вой варгов и орков!\n\nМы не добыли сокровищ, мы не справились с заданием и не получим никакой награды."
  lotr_laamp_contract_schemes.5003.desc.human: "[officer.GetNameNoTooltip] поддерживает меня, когда я спотыкаюсь, мои ноги отяжелели от бега. Наш налёт во владение [target_province.GetName] был отбит закалёнными стражниками, которых [Select_CString(employer.IsFemale, 'наняла', 'нанял' )] [employer.GetNameNoTooltip], и даже сейчас я могу представить, как [employer.GetSheHe] смеётся, [employer.GetHerHis] сокровища в безопасности в хранилищах. Вдалеке раздаются звуки рога, и мы слышим ропот людей, ищущих нас.\n\nМы не добыли сокровищ, мы не справились с заданием и не получим никакой награды."
  lotr_laamp_contract_schemes.5003.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.negative.light$"
+
+ lotr_laamp_6001_contract: "Пограничный патруль"
+ lotr_laamp_6001_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы отправились к границам державы персонажа [TaskContract.GetEmployer.GetName]."
+ lotr_laamp_6001_desc: "[TaskContract.GetEmployer.GetPrimaryTitle.GetNameNoTier][Select_CString(TaskContract.GetEmployer.IsFemale, 'ая', 'ий' )] [TaskContract.GetEmployer.GetTitleAsNameNoTooltip|l] предлагает хорошую плату всем стойким стражам границ, готовым помочь патрулировать границы [TaskContract.GetEmployer.GetHerHis] земель."
+ lotr_laamp_6001_desc_title: "Стойким стражам границ,"
+
+ lotr_laamp_contract_schemes.6000.t: "Пограничный патруль"
+ lotr_laamp_contract_schemes.6000.desc: "Меня и моих спутников проводят в зал. [employer.GetName] приветствует нас кивком головы. «Хорошо, что вы пришли, друзья мои», - произносит [employer.GetTitleAsNameNoTooltip]. «Как вы знаете, нашей державе всегда нужны выносливые стражи, которые готовы охранять наши границы, укрывающие нас от внешнего мира, и обеспечивать их безопасность. Вы должны отправиться в путь немедленно, потому что время на исходе»."
+ lotr_laamp_contract_schemes.6000.a: "Очень хорошо, мы отправляемся в путь."
+ lotr_laamp_contract_schemes.6000.a.tt: "Вы отправитесь в провинцию [patrol_target_county.GetNameNoTier]"
+ lotr_laamp_contract_schemes.6000.tt_1: "[knight1.GetName] присоединяется к вашему патрулю"
+ lotr_laamp_contract_schemes.6000.tt_2: "[knight2.GetName] присоединяется к вашему патрулю"
+
+ lotr_laamp_contract_schemes.6001.t: "$lotr_laamp_contract_schemes.6000.t$: Успех!"
+ lotr_laamp_contract_schemes.6001.desc: "Когда мы возвращаемся ко двору, которым правит [employer.GetName], [employer.GetTitleAsNameNoTooltip|l] ждёт нас в чертоге. «Я [Select_CString(employer.IsFemale, 'слышала', 'слышал' )], что на границах всё в порядке», - совершенно спокойно говорит [employer.GetFirstName].\n\n«Так и есть», - отвечаю я. «[Concept('elves', 'Эльфы')|E] вашей державы будут жить в безопасности в обозримом будущем». [employer.GetFirstName] благодарит меня, прежде чем забирает мою плату у своего управляющего и вручает мне."
+ lotr_laamp_contract_schemes.6001.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.neutral$"
+
+ lotr_laamp_contract_schemes.6002.t: "$lotr_laamp_contract_schemes.3051.t$: Провал!"
+ lotr_laamp_contract_schemes.6002.desc: "Когда мы возвращаемся ко двору, которым правит [employer.GetName], [employer.GetTitleAsNameNoTooltip|l] ждёт нас в своём чертоге. Тень ложится между нами, когда мы рассказываем историю о нашем заблудшем пограничном патруле, но в [employer.GetHerHis] глазах читаются лишь печаль и смирение. «Долгое поражение нелегко предотвратить», - говорит [employer.GetSheHe], прежде чем отпустить нас."
+ lotr_laamp_base_contract_schemes.6002.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.negative.light$"
+
+ lotr_laamp_6000_contract_scheme: "Пограничный патруль"
+ lotr_laamp_6000_contract_scheme_action: "Патрулировать границу"
+ lotr_laamp_6000_contract_scheme_desc: "[Concept('elves', 'Эльфы')|E] часто отправляются в путь, чтобы убедиться, что их границы в безопасности.$laamp_contract_scheme_desc_general_boilerplate$"
+ lotr_laamp_6000_contract_scheme_desc_general: "$lotr_laamp_6000_contract_scheme_desc$"
+ lotr_laamp_6000_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
+ lotr_laamp_6000_desc_title: "Стойким стражам границ,"
+ lotr_laamp_6000_desc: "[TaskContract.GetEmployer.GetPrimaryTitle.GetNameNoTier][Select_CString(TaskContract.GetEmployer.IsFemale, 'ая', 'ий' )] [TaskContract.GetEmployer.GetTitleAsNameNoTooltip|l] предлагает честную плату опытным стражам за успешное патрулирование границ державы."
 
  #######################
  ### Story Contracts ###

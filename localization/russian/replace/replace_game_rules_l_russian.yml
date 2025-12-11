@@ -1,0 +1,29 @@
+﻿l_russian:
+
+ setting_1453_end_date: "4000 Т.Э." #LotR
+ setting_1453_end_date_desc: "Игра закончится в 4000 г. Т.Э." #LotR
+
+ setting_default_regional_heresy_desc: "Возникновение еретических учений в определенных регионах часто соответствует историческим событиям — например, появление улмондуров в западном Гондоре." #LotR
+
+ rule_dlc_fp1_scandinavian_adventurers: "Чужеземные авантюристы" #LotR
+
+ setting_fp1_scandi_adventurers_rare_desc: "Чужеземные авантюристы будут пытаться атаковать различные державы раз в 15 лет." #LotR
+ setting_fp1_scandi_adventurers_occasional_desc: "Чужеземные авантюристы будут пытаться атаковать различные державы раз в 10 лет." #LotR
+ setting_fp1_scandi_adventurers_frequent_desc: "Чужеземные авантюристы будут пытаться атаковать различные державы раз в 5 лет." #LotR
+ setting_fp1_scandi_adventurers_apocalyptic_desc: "Чужеземные авантюристы будут ежегодно пытаться атаковать различные державы. Персонажам под управлением ИИ не нужно иметь особые свойства, чтобы начать [Concept( 'varangian_adventures', 'приключения дикарей' )|E]." #LotR
+ setting_fp1_scandi_adventurers_off_desc: "Чужеземные авантюристы никогда не будут пытаться атаковать различные державы." #LotR
+
+ rule_black_death_occurrence: "Обстоятельства Великой чумы" #LotR
+ setting_bd_occurrence_organic_desc: "Великая чума начнется по исторически допустимому сценарию в соответствии с текущим положением дел в игре." #LotR
+ setting_bd_occurrence_historical_desc: "Великая чума начнется в Руне в XVI веке Т.Э. и естественным путем распространится по исторически популярным торговым путям." #LotR
+
+ setting_bd_occurrence_random_desc: "Великая чума начнется в случайной провинции на карте." #LotR
+ rule_black_death_frequency: "Частота Великой чумы" #LotR
+ setting_bd_frequency_once_desc: "Великая чума произойдет только один раз за прохождение." #LotR
+ setting_bd_frequency_unlimited_desc: "Великая чума может появиться сколько угодно раз за вашу кампанию." #LotR
+ setting_bd_frequency_never_desc: "Великая чума никогда не появится." #LotR
+
+ game_rule.1141.choice.margaret: "По невероятному стечению обстоятельств витенагемот решил, что наилучшим кандидатом на трон #EMP буду я#!. [jiltee.GetFirstName] [jiltee.GetHouse.GetName], [Select_CString(jiltee.IsFemale, 'которая имела', 'который имел' )] все основания ожидать избрания, [Select_CString(jiltee.IsFemale, 'оказалась', 'оказался' )] не у дел. Само собой, вельможи рассчитывают, что смогут без труда меня контролировать. Для них я лишь пешка в осуществлении их собственных амбиций.\n\nДумаю, их ждет жестокое разочарование. Тем не менее, я вовсе не против этого внезапного восхождения — в конце концов, я [Select_CString(ROOT.Char.IsFemale, 'дочь', 'сын' )] своего отца."
+ game_rule.1141.choice.edgar: "Проявив редкостное благоразумие, совсем не характерное для английской политики последних десятилетий, витенагемот счел возможным признать, что [GetScriptedCharacterByHistoryID( '114' ).GetTitledFirstNameNicknamed] [Select_CString(GetScriptedCharacterByHistoryID( '114' ).IsFemale, 'должна была', 'должен был' )] объявить #EMP меня#! [Select_CString(ROOT.Char.IsFemale, 'законной наследницей', 'законным наследником' )] королевства. [jiltee.GetFirstName] [jiltee.GetHouse.GetName], [Select_CString(jiltee.IsFemale, 'которая имела', 'который имел' )] все основания ожидать избрания, [Select_CString(jiltee.IsFemale, 'осталась', 'остался' )] не у дел.\n\nУж не знаю, чем я [Select_CString(ROOT.Char.IsFemale, 'заслужила', 'заслужил' )] милость [ROOT.Char.GetFaith.FateGodNamePossessive], но я невероятно [Select_CString(ROOT.Char.IsFemale, 'рада', 'рад' )], что всё закончилось именно так."
+ game_rule.1141.choice.svend: "Устав от прочих претендентов, которые могли принести лишь смерть и разрушение, витенагемот проявил редкое благоразумие и выбрал #EMP меня#! — единственного кандидата, способного восстановить порядок в стране. [jiltee.GetFirstName] [jiltee.GetHouse.GetName], [Select_CString(jiltee.IsFemale, 'которая имела', 'который имел' )] все основания ожидать избрания, [Select_CString(jiltee.IsFemale, 'оказалась', 'оказался' )] не у дел.\n\nДания вновь будет править Англией — как и было заведено прежде."
+ game_rule.1141.choice.aelfwine: "В приступе безумия — вызванного каким-то колдовством, не иначе, — витенагемот умолял #EMP меня#! вернуться домой и сесть на престол моих отца и деда. [jiltee.GetFirstName] [jiltee.GetHouse.GetName], [Select_CString(jiltee.IsFemale, 'которая имела', 'который имел' )] все основания ожидать избрания, [Select_CString(jiltee.IsFemale, 'оказалась', 'оказался' )] не у дел.\n\nЯ… вовсе не [Select_CString(ROOT.Char.IsFemale, 'желала', 'желал' )] избрания. Мне это и в голову не приходило. Я всю жизнь [Select_CString(ROOT.Char.IsFemale, 'старалась', 'старался' )] держаться как можно дальше от власти, но, видать, такова воля [elect.GetFaith.HighGodNamePossessive] — вернуть меня в страну, которую я без сожаления [Select_CString(ROOT.Char.IsFemale, 'покинула', 'покинул' )] навсегда."
