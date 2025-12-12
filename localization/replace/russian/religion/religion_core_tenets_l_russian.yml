@@ -93,12 +93,12 @@
  destroying_artifacts_is_not_pious_tt: "Ваша [Concept( 'faith', 'конфессия' )|E] не позволяет ломать [Concept( 'artifacts', 'артефакты' )|E] за [Concept( 'piety', 'благочестие' )|E]"
  artifact_is_rarer_than_masterwork_tt: "[Concept( 'rarity', 'Редкость' )|E] этого [Concept( 'artifact', 'артефакта' )|E] выше мастерской"
 
- #tenet_alexandrian_catechism_name: "Александрийский катехизис" # LOTR
- #tenet_alexandrian_catechism_desc: "Александрийская богословская школа традиционно поощряла критическое мышление у богословов и позволяла оспаривать религиозный статус-кво.\n\nИ хотя физически школа была разрушена, мы по-прежнему храним ее обычаи." # LOTR
- tenet_rational_theology_name: "Рациональная теология" #LOTR
- tenet_rational_theology_desc: "У нашего народа существует давняя традиция поощрять верующих критически мыслить и подвергать сомнению текущее положение вещей. Только с помощью разума мы можем надеяться понять свое место в мире и отделить добро от зла." #LOTR
- tenet_islamic_rationalism_name: "Исламский рационализм"
- tenet_islamic_rationalism_desc: "В мудрости и справедливости своей [ROOT.Faith.HighGodNameAlternate] не может идти против разума или пренебрегать благом для своих творений. Лишь через непроизвольную причину мы можем надеяться постичь свою роль в великом творении этого божества и отделить добро от зла."
+ tenet_alexandrian_catechism_name: "Александрийский катехизис"
+ tenet_alexandrian_catechism_desc: "Александрийская богословская школа традиционно поощряла критическое мышление у богословов и позволяла оспаривать религиозный статус-кво.\n\nИ хотя физически школа была разрушена, мы по-прежнему храним ее обычаи."
+ tenet_islamic_rationalism_name: "Рациональная теология" #LOTR
+ tenet_islamic_rationalism_desc: "У нашего народа существует давняя традиция поощрять верующих критически мыслить и подвергать сомнению текущее положение вещей. Только с помощью разума мы можем надеяться понять свое место в мире и отделить добро от зла." #LOTR
+ #tenet_islamic_rationalism_name: "Исламский рационализм"
+ #tenet_islamic_rationalism_desc: "В мудрости и справедливости своей [ROOT.Faith.HighGodNameAlternate] не может идти против разума или пренебрегать благом для своих творений. Лишь через непроизвольную причину мы можем надеяться постичь свою роль в великом творении этого божества и отделить добро от зла."
 
  tenet_hedonistic_name: "Гедонизм"
  tenet_hedonistic_desc: "Божественная воля наполнила этот мир удовольствиями, чтобы мы могли предаваться им. Избегать их значит пренебрегать трудом самого создателя."
@@ -155,8 +155,8 @@
 
  tenet_legalism_name: "Легализм"
  tenet_legalism_desc: "Наши законы — плод набожной мудрости многих поколений. Подчиняясь, мы проявляем благочестие, любой же грешник всегда будет вне закона."
- doctrine_parameter_legalism_reduced_faction_virtues: "[vassals|E] и [counties|El] с большей вероятности вступят во [factions|El], если правитель [Concept( 'virtuous', 'добродетельный' )|El]"
- doctrine_parameter_legalism_increased_faction_sins: "[vassals|E] и [counties|El] с большей вероятности вступят во [factions|El], если правитель если правитель [Concept('sinful', 'грешник')|El]"
+ doctrine_parameter_legalism_reduced_faction_virtues: "[vassals|E] и [counties|El] с меньшей вероятностью вступят во [factions|El], если правитель [Concept( 'virtuous', 'добродетельный' )|El]"
+ doctrine_parameter_legalism_increased_faction_sins: "[vassals|E] и [counties|El] с большей вероятностью вступят во [factions|El], если правитель [Concept('sinful', 'грешник')|El]"
  doctrine_parameter_legalism_modified_law_costs: "Снижает стоимость законов на #P -10%#! за каждую [virtue|El] правителя"
  doctrine_parameter_legalism_modified_law_costs_2: "Повышает стоимость законов на #N 10%#! за каждый [sin|El] правителя"
  doctrine_parameter_legalism_trust_just_leader_active: "Если применяется выборное [succession|El], то [electors|El] вероятнее поддержат кандидатуру [Concept( 'liege', 'сюзерена' )|El], если тот обладает свойством «$trait_just$»"
@@ -181,6 +181,8 @@
  tenet_adaptive_desc: "Догматическая приверженность старым ограничениям лишь вредит верующим. Храня верность основам нашей веры, мы можем изменять законы сообразно окружающему миру."
  doctrine_parameter_tenet_adaptive_conversion_resistance: "Сопротивление обращению графства: #P +30%#!"
  doctrine_parameter_reduced_vassal_religion_discontent: "[vassals|E]-иноверцы с меньшей вероятностью вступают во [factions|El] сепаратистов и популистов"
+ doctrine_parameter_immaterial_harmony_conversion_cost_reduced: "Затраты [piety_i|E][Concept('piety', 'благочестия')|E] на обращение в другую [Concept('faith', 'конфессию')|E] с этой [Concept('doctrine', 'доктриной')|E]: #P -50%#!"
+ doctrine_parameter_immaterial_harmony_buddhist_take_vows: "#L [GetReligionByKey('buddhism_religion').GetName|U]ие#! [Concept('faiths', 'конфессии')|E] могут использовать [Concept('interaction', 'взаимодействие')|E] #V «$take_vows_interaction$»#!"
 
  tenet_inner_journey_name: "Внутреннее путешествие"
  tenet_inner_journey_desc: "Только познав себя, можем мы познать мир. Путь к себе важен, долог и труден."
@@ -189,7 +191,7 @@
  tenet_dharmic_pacifism_name: "Дхармический пацифизм"
  tenet_dharmic_pacifism_desc: "Все мы — часть космического порядка. Любым насилием мы причиняем боль всему миру — и самим себе."
 
- tenet_bhakti_name: "Боги-покровители"
+ tenet_bhakti_name: "Боги-покровители" #LotR
  tenet_bhakti_patron_god_name: "Боги-покровители"
  tenet_bhakti_desc: "Смертные не могут удостоиться всей славы божества, но, выбрав один аспект божественного и отдавшись ему без остатка, мы можем приблизиться к божественной славе, насколько это вообще возможно."
  doctrine_parameter_select_personal_god_active: "Властители могут [Concept( 'decide', 'выбрать' )|E] личную аватару для поклонения, получив таким образом соответствующие бонусы и уникальные события"
@@ -284,16 +286,27 @@
  eastern_syncretic_recipient_opinion_active_county_opinion_name: "$faith_syncretic_popular_opinion_active_control$"
  eastern_syncretic_actor_opinion_active_county_opinion_name: "$faith_syncretic_popular_opinion_active_control$"
 
- tenet_eastern_syncretism_name: "Восточный синкретизм"
- tenet_eastern_syncretism_desc: "Мы можем поучиться тому, как различные восточные религии соседствуют друг с другом. Возможно, они и не следуют истинной вере, но это не делает их нашими врагами."
- doctrine_parameter_hostility_override_eastern_hostility_doctrine: "Восточные [faiths|El] воспринимаются только как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|Vl]"
- #Instead, add these doctrine parameters to appropriate tenets (presently Eastern Syncretism).
- doctrine_parameter_is_eastern_faith_bilateral_loc_override: "Считает, что восточные [faiths|El] — [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не $hostility_evil_tooltippable$. Восточные [faiths|El] отвечают тем же."
- doctrine_parameter_hostility_override_special_doctrine_is_eastern_faith: "Считает, что восточные [faiths|El] — [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не $hostility_evil_tooltippable$. Восточные [faiths|El] отвечают тем же."
- doctrine_parameter_eastern_syncretic_actor_opinion_active: "Взаимный бонус [EmptyScope.ScriptValue('syncretic_mutual_opinion_bonus_value')|=+0] к [Concept( 'opinion', 'мнению' )|E] персонажей, принадлежащих к восточным [Concept( 'faiths', 'конфессиям' )|E]."
+ tenet_eastern_syncretism_name: "Дхармический синкретизм"
+ tenet_eastern_syncretism_desc: "Мы можем поучиться тому, как различные дхармические религии соседствуют друг с другом. Возможно, они и не следуют истинной вере, но это не делает их нашими врагами."
+ doctrine_parameter_hostility_override_eastern_hostility_doctrine: "Дхармические [faiths|El] воспринимаются только как [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|Vl]"
+ #Instead, add these doctrine parameters to appropriate tenets (presently Dharmic Syncretism).
+ doctrine_parameter_is_eastern_faith_bilateral_loc_override: "Считает, что дхармические [faiths|El] — [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|Vl], а не [GetHostilityLevelName( '(int32)3' )|Vl]. Дхармические конфессии отвечают тем же."
+ doctrine_parameter_hostility_override_special_doctrine_is_eastern_faith: "Считает, что дхармические [faiths|El] — [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|Vl], а не [GetHostilityLevelName( '(int32)3' )|Vl]. Дхармические конфессии отвечают тем же."
+ doctrine_parameter_eastern_syncretic_actor_opinion_active: "Взаимный бонус [EmptyScope.ScriptValue('syncretic_mutual_opinion_bonus_value')|=+0] к [Concept('opinion', 'мнению')|E] персонажей, принадлежащих к дхармическим [Concept('faiths', 'конфессиям')|E]."
  doctrine_parameter_opinion_of_eastern_syncretic_recipient_opinion_active: ""
  doctrine_parameter_eastern_syncretic_recipient_opinion_active: "Взаимный бонус [EmptyScope.ScriptValue('syncretic_mutual_opinion_bonus_value')|=+0] к [Concept( 'opinion', 'мнению' )|E] персонажей, принадлежащих к [Concept( 'faiths', 'конфессиям' )|E] с [Concept('core_tenet', 'догматом')|E] «$tenet_eastern_syncretism_name$»"
  doctrine_parameter_opinion_of_eastern_syncretic_actor_opinion_active: ""
+
+ tenet_sinitic_syncretism_name: "Синитский синкретизм"
+ tenet_sinitic_syncretism_desc: "Мы можем многое почерпнуть из древних китайских вероучений, которые на протяжении многих веков наставляли наш народ на путь добра и праведности."
+ doctrine_parameter_hostility_override_sinitic_hostility_doctrine: "Синитские [Concept('faiths', 'конфессии')|E] воспринимаются только как [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|Vl]"
+ #Instead, add these doctrine parameters to appropriate tenets (presently Dharmic Syncretism).
+ doctrine_parameter_is_sinitic_faith_bilateral_loc_override: "Считает, что синитские [Concept('faiths', 'конфессии')|E] — [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не $hostility_evil_tooltippable$. Синитские $game_concept_faiths$ отвечают тем же"
+ doctrine_parameter_hostility_override_special_doctrine_is_sinitic_faith: "Считает, что синитские [Concept('faiths', 'конфессии')|E] — [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не $hostility_evil_tooltippable$. Синитские $game_concept_faiths$ отвечают тем же"
+ doctrine_parameter_sinitic_syncretic_actor_opinion_active: "Взаимный бонус [EmptyScope.ScriptValue('syncretic_mutual_opinion_bonus_value')|=+0] к [Concept('opinion', 'мнению')|E] персонажей, принадлежащих к синитским [Concept('faiths', 'конфессиям')|E]"
+ doctrine_parameter_opinion_of_sinitic_syncretic_recipient_opinion_active: ""
+ doctrine_parameter_sinitic_syncretic_recipient_opinion_active: "Взаимный бонус [EmptyScope.ScriptValue('syncretic_mutual_opinion_bonus_value')|=+0] к [Concept('opinion','мнению')|E] персонажей, принадлежащих к [Concept('faiths','конфессиям')|E] с [Concept('core_tenet','догматом')|E] синитского сикнертизма"
+ doctrine_parameter_opinion_of_sinitic_syncretic_actor_opinion_active: ""
 
  tenet_unreformed_syncretism_name: "Синкретические традиции"
  tenet_unreformed_syncretism_desc: "Кто мы такие, чтобы говорить людям, что их традиции неверны? Мы не должны отрывать их от корней и запрещать обычаи, которым много сотен лет: нам стоит прислушаться к ним и постараться понять."
@@ -375,7 +388,7 @@
  tenet_natural_primitivism_desc: "Цивилизация неестественна. Это богомерзкий плод, что породил человек, пытаясь обуздать необузданное естество. Мы провозглашаем натуризм и живем так, как предписывают [ROOT.Faith.PantheonTerm]: дикими и свободными."
  doctrine_parameter_naked_adherents_active: "Адепты не носят одежд"
  doctrine_parameter_natural_primitivism_law_cost_increase: "Стоимость закона: #N +50%#!"
- doctrine_parameter_unlock_jizya_contract: "Разблокирует [Concept( 'vassal_contract', 'вассальный договор' )|E] и [Concept( 'tax_decree', 'налоговый указ' )|E] джизьи"
+ doctrine_parameter_unlock_jizya_contract: "Разблокирует [Concept( 'vassal_contract', 'вассальный договор' )|E] и [Concept( 'tax_decree', 'налоговый указ' )|E] налогообложения неверующих" #LotR
 
 
  #FP3 tenets
@@ -406,3 +419,52 @@
 
  #BP3 Parameter
  doctrine_parameter_allows_brewery: "$allows_brewery$ для [Concept('temple_holdings','храмовых владений')|E]"
+
+ #TGP
+ immaterial_harmony_name: "Духовная гармония"
+ special_doctrine_immaterial_harmony_name: "Духовная гармония"
+ special_doctrine_immaterial_harmony_desc: "Наши обычаи никак не противоречат учениям Будды и других мудрецов. Можно практиковать любое из них или даже все вместе без какого-либо вреда для души."
+ doctrine_parameter_hostility_override_special_doctrine_immaterial_harmony: "Воспринимает [Concept('faiths', 'конфессии')|E] с доктриной духовной гармонии как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|Vl], а не как [GetHostilityLevelName( '(int32)1' )|Vl], [GetHostilityLevelName( '(int32)2' )|Vl] или [GetHostilityLevelName( '(int32)3' )|Vl], и воспринимается ими так же"
+
+ tenet_extinction_of_dharma_name: "Смерть Дхармы"
+ tenet_extinction_of_dharma_desc: "Демоны бродят по земле в обличии благочестивых и набожных. Срази одного, и приблизишься к Будде на шаг, срази десятерых, и приблизишься к Будде на десять шагов."
+
+ tenet_cranial_trophies_name: "Трофейные черепа"
+ tenet_cranial_trophies_desc: "Голова — вместилище души. Если отрубить ее и извлечь содержимое, можно заполучить могучую духовную энергию."
+ doctrine_parameter_killing_bestows_heads: "Возможность получить [Concept('artifact', 'трофейный череп')|E], [Concept('executing', 'казнив')|E] иного персонажа, сразив его в [Concept('single_combat_duel', 'поединке')|E] или убив в [Concept('battle', 'битве')|E]"
+ doctrine_parameter_decapitation_steals_prestige_as_piety: "При получении [Concept('artifact', 'трофейного черепа')|E] убийца получит дополнительное [Concept('piety', 'благочестие')|E] пропорционально [Concept('prestige', 'престижу')|E] покойного"
+
+ tenet_benevolent_governance_name: "Благожелательное правление"
+ tenet_benevolent_governance_desc: "У правителей народа есть моральная обязанность поддерживать добро и отрекаться от зла. Только следуя этому принципу, правитель может быть по-настоящему справедливым."
+ tenet_filial_piety_name: "Почитание родителей"
+ tenet_filial_piety_desc: "Почитание родителей и послушание старшим необходимы для воплощения людской добродетели. Пока наши родители живы, мы чинно им прислуживаем. После смерти мы даруем им подобающее погребение, а затем чинно почитаем."
+ tenet_harmonious_society_name: "Гармоничное общество"
+ tenet_harmonious_society_desc: "Всё должно быть сбалансировано: люди, природа, общество. Сын Неба задает ритм, и мы поддерживаем его напев."
+ doctrine_parameter_sway_scheme_better: "[Concept('scheme_success_chance', 'Шанс на успех происков')|E] «[GetScheme('sway').GetTypeName]»: [success_chance_i]#P +15%#!"
+ doctrine_parameter_sway_scheme_piety: "Успешные [Concept('schemes', 'происки')|E] #TOOLTIP:SCHEME_TYPE,sway #L влияния#!#! в отношении ваших [Concept('liege', 'сюзерена')|E] или [Concept('vassals', 'вассалов')|E] приносят [piety_i][Concept('piety', 'благочестие')|E]"
+ doctrine_parameter_more_often_zealots: "[Concept('vassals', 'Вассалы')|E] с большей вероятностью будут придерживаться [GetVassalStance( 'zealot' ).GetTextIcon]фанатичных [Concept('vassal_stance', 'взглядов')|E]"
+ tenet_harmonious_society_sway_boon: "В вашей [Concept('faith', 'конфессии')|E] есть доктрина «[GetFaithDoctrine('tenet_harmonious_society').GetBaseName]»: $VALUE|+0=$"
+ tenet_pursuit_of_knowledge_name: "Жажда знаний"
+ tenet_pursuit_of_knowledge_desc: "Те, кто от природы с рождения одарены знаниями, стоят выше всех. Те, кто сознательно ищут знания, стоят на втором месте. Те же, кто глупы и не стремятся научиться, — низшие среди всех людей."
+ doctrine_parameter_inspections_unlocked_and_costs_piety: "Открывает [Concept('activity', 'занятие')|E] «[GetActivityType('activity_survey').GetName]», расходующее [Concept('piety', 'благочестие')|E]"
+ doctrine_parameter_inspection_gives_devotion: "Завершение [Concept('activity', 'занятия')|E] «[GetActivityType('activity_survey').GetName] приносит [Concept('piety_experience', 'набожность')|E]"
+ doctrine_parameter_better_study_scheme: "[Concept('scheme_success_chance', 'Шанс на успех происков')|E] «[GetScheme('study_confucian_classics').GetTypeName]»: [success_chance_i]#P +15%#!"
+
+ doctrine_parameter_parents_get_hooks_on_children: "Родители автоматически получают [Concept('perpetual_hooks', 'вечное влияние')|E] на своих [Concept('children', 'детей')|E]"
+
+ tgp_local_shrines_patronized: "Поддержка местных святилищ"
+
+ tenet_sacred_destruction_name: "Священное разрушение"
+ tenet_sacred_destruction_desc: "Не бывает созидания без разрушения. Чтобы создать новое, нужно уничтожить старое."
+ doctrine_parameter_successful_sieges_give_piety: "Выигранная наступательная [Concept('siege', 'осада')|E] приносит [Concept('piety', 'благочестие')|E] и уничтожает значительную часть [Concept('development', 'развития')|E] [Concept('county', 'графства')|E]"
+ successful_sieges_give_piety_toast: "Догмат «$tenet_sacred_destruction_name$»"
+
+ tenet_preservation_name: "Сохранение"
+ tenet_preservation_desc: "Созидание, защита, преобразование. Добродетель проистекает из сотворения, нужно создать что-то, а затем наблюдать за процветанием творения рук своих."
+ building_temples_gives_development_toast: "Догмат «$tenet_preservation_name$»"
+ doctrine_parameter_building_temples_gives_development: "Строительство в [Concept('church_holding', 'церковных')|E] или [Concept('temple_citadel_holding', 'монастырских владениях')|E] увеличивает [Concept('development', 'развитие')|E] [Concept('county', 'графства')|E]"
+ doctrine_parameter_monastic_schools_allowed_in_every_holding_type: "Позволяет строить цепочку [Concept('buildings', 'зданий')|E] #V «$building_type_monastic_schools_01$»#! во всех [Concept('holding_types', 'типах владений')|E]"
+
+ doctrine_parameter_mountain_trait_bonuses: "Некоторые из [Concept('commander_traits', 'свойств командира')|E] и [Concept('personality_traits', 'личностных свойств')|E] дают дополнительные бонусы в горах"
+ desert_mountains_holding_construction_piety_cost: "Стоимость строительства [Concept('holdings', 'владений')|E] в пустынных горах"
+ mountains_holding_construction_piety_cost: "Стоимость строительства [Concept('holdings', 'владений')|E] в горах"

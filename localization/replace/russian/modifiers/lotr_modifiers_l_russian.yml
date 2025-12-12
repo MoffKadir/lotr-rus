@@ -1,7 +1,41 @@
 ﻿l_russian:
+ MOD_DUNE_SEA_ADVANTAGE: "[command_modifier_i|E][advantage|E] на море Дюн" # LOTR
+ MOD_DUNE_SEA_ATTRITION: "[command_modifier_i|E]Потери на море Дюн" # LOTR
+ MOD_RED_DESERT_ADVANTAGE: "[command_modifier_i|E][advantage|E] в красной пустыне" # LOTR
+ MOD_RED_DESERT_ATTRITION: "[command_modifier_i|E]Потери в красной пустыне" # LOTR
+
+ MOD_DEEP_FOREST_ADVANTAGE: "[command_modifier_i|E][advantage|E] в лесной чаще" # LOTR
+ MOD_DEEP_FOREST_ATTRITION: "[command_modifier_i|E]Потери в лесной чаще" # LOTR
+ MOD_DEEP_FOREST_DETECTION: "[command_modifier_i|E]Обнаружение в лесной чаще" # LOTR
+ MOD_MALLORN_FOREST_ADVANTAGE: "[command_modifier_i|E][advantage|E] в лесу мэллорнов" # LOTR
+ MOD_MALLORN_FOREST_ATTRITION: "[command_modifier_i|E]Потери в лесу мэллорнов" # LOTR
+ MOD_MALLORN_FOREST_DETECTION: "[command_modifier_i|E]Обнаружение в лесу мэллорнов" # LOTR
+
+ monster_damage_add: "[damage|E] [Concept('monster', 'чудовищ')|E]"
+ monster_damage_mult: "[damage|E] [Concept( 'heavy_monster', 'чудовищ' )|E]"
+ monster_toughness_add: "[toughness|E] [Concept('monster', 'чудовищ')|E]"
+ monster_toughness_mult: "[toughness|E] [Concept( 'heavy_monster', 'чудовищ' )|E]"
+ monster_pursuit_add:0 "[pursuit|E] [Concept('monster', 'чудовищ')|E]"
+ monster_pursuit_mult:0 "$monster_pursuit_add$"
+ monster_screen_add:0 "[screen|E] [Concept('monster', 'чудовищ')|E]"
+ monster_screen_mult:0 "$monster_screen_add$"
+ monster_siege_value_add:0 "[siege_progress|E] [Concept('heavy_monster', 'чудовищ')|E]"
+ monster_maintenance_mult: "Содержание [Concept('heavy_monster', 'чудовищ')|E]"
+ monster_recruitment_cost_mult:0 "Стоимость найма [Concept('heavy_monster', 'чудовищ')|E]" #LOTR
+ monster_max_size_add: "Максимальный размер [Concept('regiments', 'полков')|E] [Concept('heavy_monster', 'чудовищ')|E]"
+
+ stationed_monster_damage_mult: "[damage|E] [Concept('stationed', 'расположенных')|E] здесь [Concept('monster', 'чудовищ')|E]"
+ stationed_monster_toughness_mult: "[toughness|E] [Concept('stationed', 'расположенных')|E] здесь [Concept('monster', 'чудовищ')|E]"
+ stationed_monster_pursuit_mult: "[pursuit|E] [Concept('stationed', 'расположенных')|E] здесь [Concept('monster', 'чудовищ')|E]"
+ stationed_monster_screen_mult: "[screen|E] [Concept('stationed', 'расположенных')|E] здесь [Concept('monster', 'чудовищ')|E]"
+ stationed_monster_damage_add: "[damage|E] [Concept('stationed', 'расположенных')|E] здесь [Concept('monster', 'чудовищ')|E]"
+ stationed_monster_toughness_add: "[toughness|E] [Concept('stationed', 'расположенных')|E] здесь [Concept('monster', 'чудовищ')|E]"
+ stationed_monster_pursuit_add: "[pursuit|E] [Concept('stationed', 'расположенных')|E] здесь [Concept('monster', 'чудовищ')|E]"
+ stationed_monster_screen_add: "[screen|E] [Concept('stationed', 'расположенных')|E] здесь [Concept('monster', 'чудовищ')|E]"
+
  ### Additions to Vanilla ###
  steward_convince_dejure_potential_county_faith_alignment_tt: "Они считают нашу конфессию [Concept( 'faith_hostile', 'врагами' )|E] или [Concept( 'faith_evil', 'воплощённым злом' )|E]"
- nomad_war_band: "Наём кочевого отряда"
+ nomad_war_band: "Наёмные кочевники"
  nomad_war_band_desc: "Этот персонаж нанял банду кочевников для обучения своих войск, что повергло в ужас некоторых его вассалов."
 
  rebuffed_nomad_war_band: "Отпор кочевым воинам"
@@ -104,6 +138,7 @@
  siege_of_gondor_desc: "Гондор оказывается в тяжелом положении со стороны своих многочисленных врагов. И всё же доблесть Гондора не истощается и сплачивается, чтобы защитить себя."
  return_of_the_king_modifier: "Возвращение короля"
  return_of_the_king_modifier_desc: "Возвращение их короля обновило боевой дух [Concept( 'gondorian', 'гондорцев' )|E]. Теперь он сплачивает их для последнего удара по Темному Властелину и его прислужникам."
+ restoration_of_gondor_modifier: "Восстановитель Гондора"
  united_support_lords_of_gondor: "Полная поддержка властителей Гондора"
  united_support_lords_of_gondor_desc: "Ваши притязания на трон [Concept('gondor', 'Гондора')|E] полностью поддержаны властителями Гондора."
  divided_support_lords_of_gondor: "Разделенная поддержка властителей Гондора"
@@ -164,12 +199,6 @@
  enemy_of_the_dunlendings_character_modifier_desc: "Этот персонаж несправедливо претендовал на земли Дунланда и стремился заставить его жителей преклонить колени против их воли."
  unifier_of_the_dunlendings_character_modifier: "Объединитель дунландцев"
  unifier_of_the_dunlendings_character_modifier_desc: "Этот персонаж сумел объединить свой раздробленный народ под единым знаменем, заслужив их любовь."
- dunlending_opinion: "Мнение дунландцев"
- adornaen_opinion: "Мнение адорнаэн"
- isengard_dunlending_opinion: "Мнение изенгардских дунландцев"
- gondorian_opinion: "Гондорское мнение"
- rohirrim_opinion: "Мнение Рохиррим"
- dunedain_opinion: "Мнение дунэдайн"
  loyal_dunlendings_of_isengard_county_modifier: "Верные дунландские гарнизоны"
  loyal_dunlendings_of_isengard_county_modifier_desc: "Гарнизон в этой провинции был поддержан группой верных воинов из Дунланда."
  stripped_of_raw_resources_county_modifier: "Исчерпанные природные ресурсы"
@@ -251,6 +280,12 @@
  unlocked_armored_greenwood_units_desc: "Этот дом решил облачить своих солдат в позолоченные доспехи."
  asfaloth_modifier: "Асфалот"
  asfaloth_modifier_desc: "[Concept('glorfindel', 'Глорфиндель')|E] разъезжает на эльфийском скакуне Асфалоте, известном своей скоростью и выносливостью."
+
+ elven_cultural_festival_modifier: "Пьеса Первой эпохи"
+ elven_cultural_festival_modifier_desc: "В этом графстве периодически ставят пьесу из Первой эпохи."
+
+ elves_are_leaving_modifier: "Эльфийский исход"
+ elves_are_leaving_modifier_desc: "Эльфы покидают это графство."
 
  ### Route Modifiers ###
 
@@ -354,6 +389,14 @@
  orc_adventurer_slave_influx: "Строительное рвение"
  orc_adventurer_slave_influx_desc: "Опираясь на приток рабов и награбленных ресурсов, этот персонаж может быстро построить свою новую державу."
 
+ orc_lust_for_adventure_modifier: "Жажда приключений"
+ orc_lust_for_adventure_modifier_desc: "Этот персонаж жаждет приключений в далёких землях."
+
+ orcs_settling_mablad_dum: "Поддержка колонизации"
+ orcs_settling_mablad_dum_desc: "Поддерживаемый таинственным благодетелем, этот персонаж располагает обширными ресурсами, которые можно направить на колонизацию подземных территорий."
+
+ yellow_mountain_goblin_uniter_modifier: "Порождения глубин"
+ yellow_mountain_goblin_uniter_modifier_desc: "Эта династия объединила Жёлтые горы под властью гоблинов."
  ### Corsair Modifiers ###
  lotr_corsair_modifier: "Пират"
  lotr_corsair_modifier_desc: "Всем известно, что этот персонаж не проявит жалости к тем, кого в море постигло несчастье."
@@ -569,7 +612,7 @@
  lotr_converting_umbar_modifier_desc: "Вы проводите агрессивную политику, чтобы распространить свой новый [Concept('adunaic', 'адунайский')|E] уклад в Умбаре.\n\nСкорость обращения графства увеличена на #P 100% #!"
  COURT_CHAPLAIN_CONVERSION_UMBAR_CONVERSION_BUFF_MODIFIER: "Адунайское возрождение"
  ardinak_cursed_isle_modifier: "Проклятый остров Ардинак"
- ardinak_cursed_isle_modifier_desc: "Ардинак, некогда могущественная нуменорская гавань, был заброшен на протяжении веков. Таинственная чума выкосила население острова, оставив его настолько проклятым, что никто не осмеливался вернуть его себе. До сих пор."
+ ardinak_cursed_isle_modifier_desc: "Ардинак, некогда могущественная [Concept('numenorean', 'нуменорская')|E] гавань, был заброшен на протяжении веков. Таинственная чума выкосила население острова, оставив его настолько проклятым, что никто не осмеливался вернуть его себе. До сих пор."
 
  ### Wastelands modifiers
  fostered_hunt_clubs: "Поощрение охоты на волков"
@@ -618,6 +661,12 @@
  ## Dwarven modifiers
  recently_shaved: "Недавнее обритие"
  recently_shaved_desc: "Этот персонаж был недавно обрит. На его щеках всё ещё видна кожа. Стыд и срам!"
+
+ shaved_dwarf_father_modifier: "Обритие праотца"
+ shaved_dwarf_father_modifier_desc: "Этот персонаж обрил [Concept('dwarffather', 'праотца')|E], заслужив ненависть всех гномов."
+
+ shaved_dwarf_father_reflection_modifier: "Обритие отражения праотца"
+ shaved_dwarf_father_reflection_modifier_desc: "Этот персонаж обрил отражение [Concept('dwarffather', 'праотца')|E], заслужив презрение всех гномов."
 
  reflection_of_durin: "Отражение Дурина"
  reflection_of_durin_desc: "Кажется, этот персонаж подражает своему [Concept('dwarffather', 'праотцу')|E] [Concept('durin', 'Дурину')|E], прародителю клана [Concept('longbeards', 'Длиннобородов')|E]."
@@ -670,11 +719,14 @@
  kept_thorins_artifact_modifier: "Хранит артефакты Торина"
  kept_thorins_artifact_modifier_desc: "Этот персонаж решил не возвращать артефакты Торина в его гробницу и навлёк на себя недовольство гномов."
 
+ restored_thorins_tomb_modifier: "Гробница Торина"
+ restored_thorins_tomb_modifier_desc: "Теперь Торин Дубощит может спокойно продолжать почивать, ведь его гробница восстановлена в первозданном виде."
+
  dwarf_friend_modifier: "Друг гномов"
  dwarf_friend_modifier_desc: "Этот персонаж был назван другом всего гномьего рода за свои дружелюбные действия."
 
- restored_thorins_tomb_modifier: "Гробница Торина"
- restored_thorins_tomb_modifier_desc: "Теперь Торин Дубощит может спокойно продолжать почивать, ведь его гробница восстановлена в первозданном виде."
+ dwarf_father_reflection_killer_modifier: "Враг гномов"
+ dwarf_father_reflection_killer_modifier_desc: "Действия этого персонажа привели к смерти отражения [Concept('dwarffather', 'праотца')|E], вызвав большое возмущение среди [Concept('dwarves', 'гномов')|E]."
 
  unifier_durins_folk: "Верховные короли Народа Дурина"
  unifier_durins_folk_desc: "Потомки Дурина объединили разрозненных Длиннобородов под властью одного верховного короля и положили начало эпохе небывалого процветания их народа."
@@ -951,11 +1003,34 @@
  khorahil_black_numenorean_overseers_county_modifier: "Чёрно-нуменорские надсмотрщики"
  khorahil_black_numenorean_overseers_county_modifier_desc: "Чёрно-нуменорские чиновники, назначенные в местную администрацию, требуют все более тяжелой дани."
 
+ ## Mumakan Modifiers ###
+ sack_of_taru_makar: "Разорённый $c_taru_makar$"
+ sack_of_taru_makar_desc: "В 2992 году [Concept('thirdage', 'Третьей эпохи')|E] нафаратцы разграбили $c_taru_makar$, предав огню его палисады, а его народ - мечу. Когда-то это было самое крупное поселение провинции $d_drenikan$, а теперь от него остались одни лишь развалины, и местные говорят, что в воздухе всё ещё витает запах гари.\n\n"
+
+ landless_local_arbitration_rangers_modifier: "$local_arbitration_perk_adventurer_name$ #weak (Следопыты)#!"
+
+ ### Ranger Modifiers ###
+ ranger_subsidy: "Выплаты от сюзерена"
+ ranger_subsidy_desc: "Вы получаете финансовую поддержку от своего сюзерена, которая помогает вам выполнять ваши обязанности следопыта."
+
+ suzerain_subsidy: "Выплаты следопытам"
+ suzerain_subsidy_desc: "Вы оказываете финансовую поддержку своим вассалам-следопытам, чтобы помочь им в выполнении их обязанностей."
+
+ ########################
+ ### Cultural Opinion ###
+ ########################
+ dunlending_opinion: "Мнение дунландцев"
+ adornaen_opinion: "Мнение адорнаэн"
+ isengard_dunlending_opinion: "Мнение изенгардских дунландцев"
+ gondorian_opinion: "Гондорское мнение"
+ rohirrim_opinion: "Мнение рохиррим"
+ dunedain_opinion: "Мнение дунэдайн"
  rukhashai_opinion: "Мнение рукхаш-хай"
  echomaker_goblin_opinion: "Мнение гулкоступов"
  bulgan_opinion: "Мнение булганцев"
  tanturaki_opinion: "Мнение тантураков"
  anbalukkhori_opinion: "Мнение анбалукхори"
+
 
 
  ## Tharbad Modifiers ##
@@ -989,3 +1064,71 @@
 
  tharbad_rebuilding_effort_modifier: "Усилия по восстановлению"
  tharbad_rebuilding_effort_modifier_desc: "В этом графстве идёт масштабная реконструкция."
+
+
+ ### Kultamieli Event Chain Modifiers ###
+
+ modifier_langwell_slaves_angmar: "Приток рабов-северян"
+ modifier_langwell_slaves_angmar_desc: "Держава этого персонажа получила приток рабов и ресурсов из северной долины Андуина."
+
+ modifier_langwell_slaves_angmar_2: "Крупный приток рабов-северян"
+ modifier_langwell_slaves_angmar_2_desc: "Держава этого персонажа получила крупный приток рабов и ресурсов из северной долины Андуина."
+
+ modifier_langwell_slaves_angmar_3: "Небольшой приток рабов-северян"
+ modifier_langwell_slaves_angmar_3_desc: "Держава этого персонажа получила небольшой приток рабов и ресурсов из северной долины Андуина."
+
+ taurau_raided_county_modifier: "Недавний набег"
+ taurau_raided_county_modifier_desc: "Эта провинция недавно была разорена войсками Ангмара."
+
+ kultamieli_intrigue_buff: "Кинжал Короля Зимы"
+ kultamieli_intrigue_buff_desc: "Король-чародей Ангмара поручил этому персонажу посеять раздор в рядах северян Лангвелла."
+
+ confederation_of_langwell_defensive_modifier: "Ставка на оборону"
+ confederation_of_langwell_defensive_modifier_desc: "Лангвеллская конфедерация заняла оборонительную позицию."
+
+ confederation_of_langwell_offensive_modifier: "Ставка на наступление"
+ confederation_of_langwell_offensive_modifier_desc: "Лангвеллская конфедерация заняла наступательную позицию."
+
+ ### Rây Storyline Modifier s###
+
+ mardat_travels: "Странствия Мардата"
+ mardat_travels_desc: "Мардат предпринял большие шаги и проявил осторожность, чтобы обеспечить быстрое и надежное передвижение, собирая поддержку для своих замыслов."
+
+ mardat_rob_merchants: "Контрабандная пошлина"
+ mardat_rob_merchants_desc: "Преступная сеть Мардата привела к тому, что он значительно увеличил свое личное богатство ценой своей репутации и своей державы."
+
+ ray_robbed_merchants: "Набег на караваны Раи"
+ ray_robbed_merchants_desc: "Опустошительные крупномасштабные набеги на многочисленных торговцев Раи разрушили экономику державы."
+
+ mardat_purge_county_modifier: "Разрушительная религиозная чистка"
+ mardat_purge_county_modifier.desc: "Последствия Чистки в [Concept('ray', 'Рае')|E] оказали здесь разрушительное воздействие."
+
+ mardat_powa_trade_modifier: "Пованская торговая монополия"
+ mardat_powa_trade_modifier_desc: "Пообещав пованским племенам монополию на всю западную торговлю, экономика Раи теперь страдает от падения доходов торговцев."
+
+ powa_ray_trade_monopoly: "Райская торговая монополия"
+ powa_ray_trade_monopoly_desc: "Получив монополию на всю западную торговлю с Раей, держава переживает беспрецедентный расцвет."
+
+ mardat_river_guards: "Охраняемая река Риеша"
+ mardat_river_guards_desc: "Крупная река Риеша, через которую протекает большая часть богатств Раи, в настоящее время находится под контролем Кхаз-грамаза."
+
+ mardat_river_rebuilt: "Процветающая река Риеша"
+ mardat_river_rebuilt_desc: "К удивлению многих, кхаз-грамазитские правители в Рае решили восстановить свободное судоходство по реке Риеша."
+
+ mardat_river_starved: "Истощённая река Риеша"
+ mardat_river_starved_desc: "Земли вдоль долин Риеши пришли в упадок, поскольку кхаз-грамазитские правители из Раи пытаются заморить голодом своих мятежных подданных."
+
+ ray_rebel_leader_modifier: "Великий вождь мятежников"
+ ray_rebel_leader_modifier_desc: "Этот персонаж является вожаком одной из крупнейших повстанческих фракций в Чистке [Concept('ray', 'Раи')|E]."
+
+ ray_safe_haven_modifier: "Правитель безопасного убежища"
+ ray_safe_haven_modifier_desc: "Этот персонаж преуспел в защите своей державы от разрушительных последствий Чистки в [Concept('ray', 'Рае')|E], завоевав любовь своего народа."
+
+ ray_refugee_economy_modifier: "Оживление экономики"
+ ray_refugee_economy_modifier_desc: "Рассеянные и отчаявшиеся народы [Concept('ray', 'Раи')|E] стекаются во владения этого правителя, где их труд используется для достижения экономического процветания."
+
+ ray_refugee_militray_modifier: "Оживление военного дела"
+ ray_refugee_militray_modifier_desc: "Рассеянные и отчаявшиеся народы [Concept('ray', 'Раи')|E] стекаются во владения этого правителя, где их труд используется для создания мощной армии."
+
+ ray_refugee_failure_modifier: "Вышедшее из-под контроля население"
+ ray_refugee_failure_modifier_desc: "Рассеянные и отчаявшиеся народы [Concept('ray', 'Раи')|E] стекаются во владения этого правителя, но он не в состоянии контролировать ситуацию."

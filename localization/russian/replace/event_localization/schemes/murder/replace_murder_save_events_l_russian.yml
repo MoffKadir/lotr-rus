@@ -1,0 +1,13 @@
+﻿l_russian:
+ # Saved by a Mundburgian
+ murder_save.0010.t: "$murder_save_header$ Мундбургцы"
+ murder_save.0010.desc: "Мое покушение сорвалось — [target.GetTitledFirstName] [Select_CString(target.IsFemale, 'выжила', 'выжил' )]!\n\nУбийце помешал один из этих тупых мундбургцев! Полагаю, [target.GetTitleAsNameNoTooltip|l] все же [Select_CString(target.IsFemale, 'получила', 'получил' )] свою стражу..."
+ murder_save.0010.mundburgian_dies: "\n\nПо крайней мере, убийца расправился со стражником. [mundburgian.GetTitledFirstName] больше не встанет у меня на пути."
+ murder_save.0010.a: "Теперь мне до н[SCOPE.sC('target').GetHerHis] не добраться!"
+ murder_save.0010.b: "Нужен новый план..."
+
+ murder_save.1010.desc: "Убийца покушался на мою жизнь! К счастью, [mundburgian.GetFirstName], член моего Мундбургского эореда, [Select_CString(mundburgian.IsFemale, 'стояла за дверью и смогла', 'стоял за дверью и смог' )] своевременно вмешаться. [mundburgian.GetSheHe|U] быстро [Select_CString(mundburgian.IsFemale, 'расправилась', 'расправился' )] с убийцей — тот вовсе не успел мне навредить."
+ murder_save.1010.mundburgian_dies: "К сожалению, [mundburgian.GetFirstNameNoTooltip] [Select_CString(mundburgian.IsFemale, 'получила', 'получил' )] смертельные раны, защищая меня."
+ murder_save.1010.owner_discovered: "\n\nНет никаких сомнений в том, что за этим стоит [owner.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)]!"
+ murder_save.1010.a: "Кто может стоять за столь подлым покушением?"
+ murder_save.1010.b: "[owner.GetSheHe|U] за это заплатит!"

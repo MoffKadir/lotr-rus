@@ -8,7 +8,7 @@
 
  faith_khazad: "Кхазадск"
  faith_khazad_adj: "Кхазад"
- faith_khazad_adherent: "Кхазад"
+ faith_khazad_adherent: "Кхузд"
  faith_khazad_adherent_plural: "Кхазад"
  faith_khazad_desc: "Древние верования [Concept( 'dwarves', 'гномов' )|E], связанные с поклонением [Concept( 'mahalcharacter', 'Махалу' )|E], их создателю и отцу. Они также с глубоким трепетом относятся к своей истории и чести семьи, сохраняют память о своих предках, возводят грандиозные усыпальницы и мавзолеи, чтобы вернуться в землю, из которой они и вышли.\n\nГномы верят, что после смерти Махал созывает их в удалённые чертоги, чтобы ожидать Последней Битвы, после которой они, бок о бок с ним перестроят мир, заняв достойное место среди Детей [Concept( 'iluvatar', 'Эру' )|E]."
 
@@ -59,6 +59,18 @@
  faith_gold_worship_adherent: "Дитя Золота"
  faith_gold_worship_adherent_plural: "Дети Золота"
  faith_gold_worship_desc: "Золото. Это прекрасное, удивительное вещество. Один только его блеск является неоспоримым доказательством его значимости, его несравненной ценности. \n\nНо это гораздо больше, чем просто металл. Это кровь [Concept('mahalcharacter', 'Махала')|E], текущая в жилах земли, которая является его чертогами, скрытыми от глаз тех, кто видит только поверхность вещей, а не истину. Она достойна уважения, нет, почитания! Её следует хранить и оберегать, не распространяя среди недостойных и не знающих. Пусть у них будут серебряные и медные монеты - но золото... оно по праву принадлежит лишь детям Махала, которые одни понимают его истинную ценность."
+
+ ### Mainstream and Heretical doctrines
+
+ doctrine_dwarven_branches_name: "Почитание Махала"
+ doctrine_dwarven_branches_desc: "Поддерживаем ли мы голос старейшин, чтобы защитить слово Творца, или на самом деле это они заблуждаются и порочны?"
+ doctrine_major_branch_dwarven_name: "Путь отцов"
+ doctrine_major_branch_dwarven_desc: "Хотя мы можем расходиться во мнениях по поводу некоторых особенностей обрядов, разве мы, кхазад, не согласны с основами верности Махалу?"
+ doctrine_heretic_branch_dwarven_name: "Путь сыновей"
+ doctrine_heretic_branch_dwarven_desc: "Наши отцы сбились с пути. $religion_group_eruhini_adherent_plural$ называет нас еретиками, изгоями и подрывателями устоев. Хотя ничто не связывает нас вместе, кроме их презрения, праведность диктует нам сопротивление, а их презрение ожесточает наши сердца."
+ doctrine_parameter_hostility_override_doctrine_heretic_branch_dwarven: "[Concept('faiths', 'Конфессии')|E] с доктриной «$doctrine_heretic_branch_dwarven_name$» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_major_branch_dwarven: "[Concept('faiths', 'Конфессии')|E] с доктриной «$doctrine_major_branch_dwarven_name$» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+
 
 
  #[mahalcharacter|E]

@@ -16,6 +16,10 @@
  ELVEN_HOMELANDS_DUCHY_CONQUEST_CB_NAME: "[elven_homelands_conquest_casus_belli|E] за [Concept('duchy', 'герцогство')|E]"
  elven_homelands_duchy_conquest_cb: "Война за возвращение родины эльфов"
 
+ ELVEN_HOMELANDS_KINGDOM_CONQUEST_WAR_NAME: "Война за возвращение эльфийских земель"
+ ELVEN_HOMELANDS_KINGDOM_CONQUEST_CB_NAME: "[elven_homelands_conquest_casus_belli|E] за [Concept('kingdom', 'королевство')|E]"
+ elven_homelands_kingdom_conquest_cb: "Война за возвращение родины эльфов"
+
  destroy_dol_guldur_cb: "Война за возвращение родины эльфов"
 
  bellakar_eru_vassals_cb: "Гондорская война за вассализацию Беллакара"
@@ -30,6 +34,12 @@
  VANQUISH_DARKNESS_DUCHY_WAR_NAME: "Война против тьмы во владении [TITLE.GetBaseName]"
  VANQUISH_DARKNESS_DUCHY_CB_NAME: "[vanquish_darkness_casus_belli|E] в [Concept('duchy', 'герцогстве')|E]"
  vanquish_darkness_duchy_cb: "Война против тьмы"
+ VANQUISH_DARKNESS_DUCHY_DUCHY_NAME: "[target_duchy.GetNameNoTierNoTooltip] верных"
+
+ VANQUISH_DARKNESS_KINGDOM_WAR_NAME: "Война против тьмы во владении [TITLE.GetBaseName]"
+ VANQUISH_DARKNESS_KINGDOM_CB_NAME: "[vanquish_darkness_casus_belli|E] в [Concept('kingdom', 'королевстве')|E]"
+ vanquish_darkness_kingdom_cb: "Война против тьмы"
+ VANQUISH_DARKNESS_KINGDOM_KINGDOM_NAME: "[target_kingdom.GetNameNoTierNoTooltip] верных"
 
  #  GUNDABARD_RAID_WAR_NAME: "Gundabad Encroachment in [TITLE.GetBaseName]"
  #  GUNDABARD_RAID_CB_NAME: "Goblin Incursion for [county|E]"
@@ -205,6 +215,17 @@
  usurp_dwarven_dynast_cb_defeat_desc: "[attacker.GetName] не [Select_CString(attacker.IsFemale, 'смогла', 'смог' )] победить [Select_CString(defender.IsLocalPlayer, '', 'персонажа ' )][defender.GetShortUINamePossessive][Select_CString(defender.IsLocalPlayer, 'его персонажа', '' )]"
  usurp_dwarven_dynast_cb_war_invalidated_message: "Война была признана недействительной"
 
+ AVENGE_DWARF_FATHER_CONQUEST_WAR_NAME: "Месть за праотца"
+ AVENGE_DWARF_FATHER_CONQUEST_CB_NAME: "Месть за праотца"
+ avenge_dwarf_father_cb: "Месть за праотца"
+ avenge_dwarf_father_cb_victory_desc: "[attacker.GetName] успешно [Select_CString( attacker.IsLocalPlayer, 'победили', Select_CString(attacker.IsFemale, 'победила', 'победил' ))] [Select_CString(defender.IsLocalPlayer, '', 'персонажа ' )][defender.GetShortUINamePossessive][Select_CString(defender.IsLocalPlayer, 'его персонажа', '' )] и [Select_CString( attacker.IsLocalPlayer, 'отомстили', Select_CString(attacker.IsFemale, 'отомстила', 'отомстил' ))] за смерть [Concept('dwarffather', 'праотца')|E]"
+ avenge_dwarf_father_cb_victory_desc_attacker: "Вы успешно победили персонажа [defender.GetName] и отомстили за смерть [Concept('dwarffather', 'праотца')|E]"
+ avenge_dwarf_father_cb_white_peace_desc: "[attacker.GetName] не [Select_CString( attacker.IsLocalPlayer, 'смогли', Select_CString(attacker.IsFemale, 'смогла', 'смог' ))] победить [Select_CString(defender.IsLocalPlayer, '', 'персонажа ' )][defender.GetShortUINamePossessive][Select_CString(defender.IsLocalPlayer, 'его персонажа', '' )] и отомстить за смерть [Concept('dwarffather', 'праотца')|E]"
+ avenge_dwarf_father_cb_defeat_desc_attacker: "Вы не смоглии победить персонажа [defender.GetName]"
+ avenge_dwarf_father_cb_defeat_desc_defender: "[attacker.GetName] не [Select_CString( attacker.IsLocalPlayer, 'смогли', Select_CString(attacker.IsFemale, 'смогла', 'смог' ))] победить вас"
+ avenge_dwarf_father_cb_defeat_desc: "[attacker.GetName] не [Select_CString( attacker.IsLocalPlayer, 'смогли', Select_CString(attacker.IsFemale, 'смогла', 'смог' ))] победить [Select_CString(defender.IsLocalPlayer, '', 'персонажа ' )][defender.GetShortUINamePossessive][Select_CString(defender.IsLocalPlayer, 'его персонажа', '' )]"
+ avenge_dwarf_father_cb_war_invalidated_message: "Война недействительна"
+
  zajantak_destruction_war: "Война за уничтожение Заджантака"
  zajantak_destruction_war_victory_desc: "[attacker.GetName] успешно [Select_CString(attacker.IsFemale, 'уничтожила', 'уничтожил' )] державу персонажа [defender.GetName] и угоняет часть [defender.GetHerHis] народа в рабство"
  zajantak_destruction_war_white_peace_desc: "[attacker.GetName] не [Select_CString(attacker.IsFemale, 'сумела', 'сумел' )] уничтожить державу персонажа [defender.GetName], но не сильно [Select_CString(attacker.IsFemale, 'пострадала', 'пострадал' )] из-за этого"
@@ -226,3 +247,18 @@
  purge_moria_arassuil_cb: "Очистить [Concept('moria', 'Морию')|E]"
  purge_moria_victory_desc_attacker: "Вы изгнали [Concept('orcs', 'орков')|E] из [Concept('moria', 'Мории')|E] и оставили её в запустении"
  purge_moria_victory_desc: "Все [Concept('orcs', 'орки')|E] в [Concept('moria', 'Мории')|E] будут изгнаны"
+
+ war_of_dwarves_and_orcs_name: "[warofdwarvesandorcs|E]"
+ war_of_dwarves_and_orcs_cb: "Отомстить за Трора"
+ war_of_dwarves_and_orcs_victory_desc_attacker: "Вы возвращаете [Concept('moria', 'Морию')|E] [Concept('dwarves', 'гномам')|E] и мстите за Трора"
+ war_of_dwarves_and_orcs_victory_desc: "[attacker.GetName] возвращает [Concept('moria', 'Морию')|E] [Concept('dwarves', 'гномам')|E] и мстит за Трора"
+ #war_of_dwarves_and_orcs_white_peace_desc_attacker: "You avenge Thrór by killing [Azog|E] and the [dwarves|E] decide to abandon [moria|E] for now"
+ #war_of_dwarves_and_orcs_white_peace_desc: "[attacker.GetName] avenges Thrór by killing [Azog] and the [dwarves|E] decide to abandon [moria|E] for now"
+ war_of_dwarves_and_orcs_defeat_desc: "Азог убивает вас"
+ war_of_dwarves_and_orcs_defeat_desc_defender: "[attacker.GetName] убивает вас"
+ watch_on_mordor_destroy_duchy: "Наступление Мордорского дозора"
+ watch_on_mordor_destroy_duchy_desc: "[GetTitleByKey('d_watch_on_mordor').GetNameNoTier] нападает на [defender.GetPrimaryTitle.GetNameNoTier]"
+ watch_on_mordor_destroy_duchy_victory_desc: "[GetTitleByKey('d_watch_on_mordor').GetNameNoTier] разоряет провинцию [defender.GetPrimaryTitle.GetNameNoTier]"
+ watch_on_mordor_destroy_duchy_defeat_desc: "[GetTitleByKey('d_watch_on_mordor').GetNameNoTier] не в состоянии уничтожить державу [defender.GetPrimaryTitle.GetNameNoTier]"
+
+ cease_tribute_is_protectorate: "Выгода [Concept('protectorates', 'протекторатов')|E] от [Concept('tributary', 'данничества')|E]: $VALUE|0+=$" #LOTR
