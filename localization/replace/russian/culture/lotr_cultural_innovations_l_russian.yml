@@ -444,8 +444,6 @@
  guard_of_abrakhan_flavor: "Личная гвардия повелителя древнего Абрахана. Ходят слухи, что практикую темные искусства им удалось достичь бессмертия."
  risen_carrion: "Восставшие мертвецы"
  risen_carrion_flavor: "Прорвав покров песка, эти восставшие высушенные тела изголодались по живой плоти. Возможно лишь слугам [Concept( 'zigur', 'Зигура' )|E] стоит призывать их, но таинственный ритуал знаком и народу ковже-пуст."
- #innovation_nafarati_warfare: "Боевые Нафарати"
- #innovation_nafarati_warfare_desc: ""
  karna_watchers: "Стража Карна"
  karna_watchers_flavor: ""
 
@@ -455,6 +453,8 @@
  ## Mumakani
  culture_parameter_unlock_maa_mahud_headhunters: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mahud_headhunters').GetName]"
  culture_parameter_unlock_maa_nafarati_marauders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nafarati_marauders').GetName]"
+ culture_parameter_unlock_maa_mubadar_berserkers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mubadar_berserkers').GetName]"
+ doctrine_parameter_unlock_maa_mubadar_berserkers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mubadar_berserkers').GetName]"
  #Moved to MaA loc file
  #nafarati_marauders: "Мародёры нафарати"
  #nafarati_marauders_flavor: "Эти легковооруженные отряды разведчиков и застрельщиков зачастую используются как авангард основной армии нафарати."
@@ -648,7 +648,7 @@
  innovation_khyan_warfare: "Кхайская тактика"
  innovation_khyan_warfare_desc: "Обладая высокой мобильностью, [Concept('khyan', 'кхайская')|E] армия опирается на прочное ядро тяжёлой кавалерии, поддерживаемое лёгкой пехотой."
  #innovation_ventilation: "Вентиляция"
- #innovation_ventilation_desc: "Ветроловы использовались для охлаждения засушливых регионов [Concept('khy', 'Кхая')|E] на протяжении тысячелетий и помогали местным жителям бороться с болезнями. Польза для здоровья от прохладного воздуха в условиях сухой и жаркой окружающей среды огромна."
+ #innovation_ventilation_desc: "Ветроловы использовались для охлаждения засушливых регионов [Concept('khy', 'Кхая')|E] на протяжении тысячелетий и помогали местным жителям бороться с поветриями. Польза для здоровья от прохладного воздуха в условиях сухой и жаркой окружающей среды огромна."
 
  innovation_anarikean_warfare: "Отряды тизъяршти"
  innovation_anarikean_warfare_desc: "Умелые отряды тизъяршти Анарикэ и балхьядов славятся своими подвигами и доблестью."
@@ -828,8 +828,8 @@
  innovation_dorwinionrim_warfare_desc: "Защитники виноградников и полей, дорвинрим обучены защищать свою родину с благородным рвением."
 
  ### Mumakani ###
- innovation_nafarati_warfare: "Мумаканская пехота"
- innovation_nafarati_warfare_desc: "В то время как мумаканское войско в значительной степени полагается на великих мумакил, в честь которых названа эта земля, их поддерживают легионы легкобронированной пехоты."
+ innovation_mumakani_warfare: "Ополчение Мумакана"
+ innovation_mumakani_warfare_desc: "От каждого из тысячи племён мумаканцы собирают своё войско - легионы легковооружённой пехоты, усиленной могучими мумакил их правителей."
 
  ### Geshani ###
  innovation_geshani_warfare: "Наследие Гавена"
@@ -850,10 +850,6 @@
  ### Orodbedhrim ###
  innovation_orodbedhrim_warfare: "Кланы ородбедрим"
  innovation_orodbedhrim_warfare_desc: "PLACEHOLDER"
-
- ### Belfatlathrim ###
- innovation_belfalathrim_warfare: "Военное дело бельфалатрим"
- innovation_belfalathrim_warfare_desc: "PLACEHOLDER"
 
  ### Hobbits ###
  innovation_hobbit_warfare: "Толпа хоббитов"
@@ -946,8 +942,9 @@
  unlock_maa_nurniag_horse_archers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nurniag_horse_archers').GetName]"
 
  ### Mumakani ###
- unlock_maa_nafarati_marauders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nafarati_marauders').GetName]"
- unlock_maa_mahud_headhunters: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mahud_headhunters').GetName]"
+ unlock_maa_mumakani_spears: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mumakani_spears').GetName]"
+ unlock_maa_mumakani_skirmishers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mumakani_skirmishers').GetName]"
+ unlock_maa_royal_mumakil: "Правителю державы [GetTitleByKey('e_mumakan').GetNameNoTier] доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('royal_mumakil').GetName]"
 
  ### Geshani ###
  unlock_maa_geshani_spears: "Доступны [men_at_arms|El] - [GetMaA('geshani_spears').GetName]"
@@ -1071,6 +1068,7 @@
  unlock_tirandaza: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('tirandaza').GetName]"
  unlock_tizyarshti: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('tizyarshti').GetName]"
  unlock_ballistrai_khy: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('ballistrai_khy').GetName]"
+ unlock_windcatchers: "Можно построить [Concept('buildings', 'здание')|E] [GetBuilding('windcatcher_01').GetNameAsTooltip]"
 
  ### Lyneria ###
  unlock_ivory_behemoths: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('ivory_behemoths').GetName]" 
@@ -1164,8 +1162,6 @@
  unlock_kinnlai_skirmishers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('kinnlai_skirmishers').GetName]"
  unlock_nuinevari: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nuinevari').GetName]"
  unlock_neldoreth_borderwardens: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('neldoreth_borderwardens').GetName]"
-
- unlock_windcatchers: "Можно построить [GetBuilding('windcatcher_01').GetNameAsTooltip]"
 
  ### Mordorrim ###
  unlock_morgul_riders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('morgul_riders').GetName]"
