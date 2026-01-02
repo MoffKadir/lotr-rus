@@ -15,7 +15,6 @@
  ai_numenorean_under_age_will_not_seduce: "[owner.GetFirstName] имеет [Concept( 'numenorean', 'нуменорскую' )|E] кровь, что увеличивает [owner.GetHerHis] продолжительность жизни, и [owner.GetSheHe] слишком [Select_CString(owner.IsFemale, 'молода', 'молод' )], чтобы интересоваться соблазнением"
  ai_numenorean_under_age_will_not_be_seduced: "[target.GetFirstName] имеет [Concept( 'numenorean', 'нуменорскую' )|E] кровь, что увеличивает [target.GetHerHis] продолжительность жизни, и [target.GetSheHe] слишком [Select_CString(target.IsFemale, 'молода', 'молод' )], чтобы интересоваться соблазнением"
 
-
  arrange_betrothal_interaction: "Устроить помолвку"
  arrange_betrothal_interaction_desc_ruler_at_own_court: "Устроить [Concept( 'betrothal', 'помолвку' )|E] между двумя персонажами при вашем [Concept( 'court', 'дворе' )|E]"
  arrange_betrothal_interaction_desc_both_rulers_can_marry: "Предложить [Concept( 'betrothal', 'помолвку' )|E], которую заключат:\n$EFFECT_LIST_BULLET$Вы\n$EFFECT_LIST_BULLET$Один из ваших детей\n$EFFECT_LIST_BULLET$Один из ваших [Concept( 'courtiers', 'придворных' )|E]\nи:\n$EFFECT_LIST_BULLET$[recipient.GetShortUINameNoTooltip]\n$EFFECT_LIST_BULLET$Один из [recipient.GetHerHis] детей\n$EFFECT_LIST_BULLET$Один из [recipient.GetHerHis] [Concept( 'courtiers', 'придворных' )|E]"
@@ -130,3 +129,33 @@
  submission_to_the_dark_lord: "[recipient.GetName] - [Select_CString(recipient.IsFemale, 'скромная служанка', 'скромный слуга' )] Тёмного властелина: $VALUE|=+0$"
 
  BUY_CLAIM_MORDOR_OR_GORGOROTH: "Вы не можете купить [Concept('claim', 'претензию')|E] на [GetTitleByKey('e_mordor').GetNameNoTier] или [GetTitleByKey('k_gorgoroth').GetNameNoTier], если ими владеют [Concept('nazgulcharacter', 'назгул')|E] или [Concept('sauroncharacter', 'Саурон')|E]"
+
+ lotr_change_every_county: "Изменить каждое подконтрольное [Concept('county', 'графство')|E]"
+ lotr_change_every_county.a: "Изменить [Concept('culture', 'культуру')|E] каждого подконтрольного [Concept('county', 'графства')|E] на свою"
+ lotr_change_every_county.b: "Изменить [Concept('faith', 'конфессию')|E] каждого подконтрольного [Concept('county', 'графства')|E] на свою"
+ lotr_change_every_county.c: "#P Увеличить#! [Concept('development', 'развитие')|E] всех подконтрольных графств на #P 10#!"
+ lotr_change_every_county.d: "#N Снизить#! [Concept('development', 'развитие')|E] всех подконтрольных графств на #N 10#!"
+
+ lotr_change_government_debug: "Изменить [Concept('government', 'форму правления')|E]"
+ lotr_change_gov.elven: "[elven_government_i|E] [elven_government|E]"
+ lotr_change_gov.hobbit: "[hobbit_government_i|E] [hobbit_government|E]"
+ lotr_change_gov.oligarchy: "[oligarchy_government_i|E] [oligarchy_government|E]"
+ lotr_change_gov.feudal: "[feudal_i|E] [feudal_government|E]"
+ lotr_change_gov.clan: "[clan_i|E] [clan_government|E]"
+ lotr_change_gov.tribal: "[tribal_i|E] [tribal_government|E]"
+ lotr_change_gov.wanua: "[wanua_i|E] [wanua_government|E]"
+ lotr_change_gov.mandala: "[mandala_i|E] [mandala_government|E]"
+ lotr_change_gov.admin: "[administrative_i|E] [administrative_government|E]"
+ lotr_change_gov.meritocratic: "[meritocratic_i|E] [Concept('meritocratic', 'Меритократическое')|E] [Concept('government', 'правительство')|E]"
+ lotr_change_gov.soryo: "[soryo_i|E] [soryo_government|E]"
+ lotr_change_gov.ritsuryo: "[ritsuryo_i|E] [ritsuryo_government|E]"
+
+ lotr_trigger_sunset_invasion: "Начать вторжение конца игры"
+ sunset_invasion.eonwe: "Воинство [Concept('valinor', 'Валинора')|E]"
+ sunset_invasion.pharazon: "Вторая Великая армада"
+ sunset_invasion.noldor: "Возвращение нолдор"
+ sunset_invasion.ciryatur: "Морское могущество [Concept('numenor', 'Нуменора')|E]"
+ sunset_invasion.amav: "Второе пришествие Амава"
+ sunset_invasion.eonwe.tt: "На персонажа [recipient.GetName] нацелится массированное вторжение из [Concept('valinor', 'Валинора')|E]"
+ sunset_invasion.pharazon.tt: "На персонажа [recipient.GetName] нацелится массированное вторжение из мелькористского [Concept('numenor', 'Нуменора')|E]"
+ sunset_invasion.amav.tt: "На персонажа [recipient.GetName] нацелится массированное вторжение из #L [GetTitleByKey('e_mumakan').GetNameNoTier]а#!"

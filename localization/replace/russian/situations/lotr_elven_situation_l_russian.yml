@@ -166,6 +166,7 @@
  effect_elven_hope_good_realm_falls: "Значимая [Concept('alignment_good', 'добрая')|E] [Concept('realm', 'держава')|E] пала"
  effect_elven_hope_elven_refuge_built: "Построен новый [GetBuilding('elven_settlement_01').GetName|l]"
  effect_elven_hope_legend_completed: "Завершена [Concept('legend', 'легенда')|E]"
+ effect_elven_hope_great_project_completed: "Завершён [Concept('great_project', 'грандиозный проект')|E]"
 
  # Participants
  elven_hope_situation_participant_group_elven_rulers_capital: "Эльфийские правители в регионе"
@@ -216,8 +217,9 @@
  EFFECT_ADDED_ELVEN_HOPE_GLOBAL: "[Concept('hope', 'Надежда')|E] во #italic всех#! [Concept('situation_sub_region', 'областях ситуации')|E] #P повысилась#! на $VALUE|V0$"
  EFFECT_SUBTRACT_ELVEN_HOPE_GLOBAL: "[Concept('hope', 'Надежда')|E] во #italic всех#! [Concept('situation_sub_region', 'областях ситуации')|E] #N снизится#! на $VALUE|V0$"
  EFFECT_SUBTRACTED_ELVEN_HOPE_GLOBAL: "[Concept('hope', 'Надежда')|E] во #italic всех#! [Concept('situation_sub_region', 'областях ситуации')|E] #N снизилась#! на $VALUE|V0$"
- gain_hope_debug_interaction: "Добавить 100 [Concept('hope', 'надежды')|E]"
- reduce_hope_debug_interaction: "Удалить 100 [Concept('hope', 'надежды')|E]"
+ change_hope_debug_interaction.a: "#P Добавить#! 100 [Concept('hope', 'надежды')|E]"
+ change_hope_debug_interaction.b: "#N Удалить#! 100 [Concept('hope', 'надежды')|E]"
+ change_hope_debug_interaction: "Изменить [Concept('hope', 'надежду')|E]"
  hope_loss_raid_notification: "[raider.GetName] [Select_CString(raider.IsFemale, 'совершила', 'совершил' )] набег на владение [barony.GetName]"
 
  # Hope Gates

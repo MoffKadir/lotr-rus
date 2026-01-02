@@ -19,7 +19,11 @@
 
  ### Dharmic Pilgrimage Journey Events
  #Brahmacharya Challenged
+ pilgrimage.3401.t: "$pilgrimage_header$ Испытание целомудрия"
+ pilgrimage.3401.desc: "Перед нами, насколько хватает глаз, простирается [body_of_water.GetName]. Вода в лучах вечернего солнца поблескивает, словно сусальное золото, она так и манит окунуться.\n\nЯ не могу оторвать глаз от [Select_CString(bather.IsFemale, 'одной из паломниц', 'одного из паломников' )]. Раздевшись, [bather.GetName] погружается в воду, и лишь рябь на поверхности прикрывает [Select_CString(bather.IsFemale, 'ее', 'его' )] наготу.\n\n[ROOT.Char.GetInvolvedActivity.GetShortName] требует почти идеального целомудрия, мне не следует поддаваться похоти и вожделению..."
  pilgrimage.3401.a: "[Select_CString(ROOT.Char.IsFemale, 'Влекомая', 'Влекомый' )] желанием, я бросаюсь в воду. [bather.GetFirstNameNoTooltip], я иду!"
+ pilgrimage.3401.b: "Медленно погружаясь в прохладные воды, я позволяю им погасить огонь моей страсти."
+ pilgrimage.3401.b.flavor: "Ещё на шаг ближе к богам." #[ROOT.Char.GetFaith.PantheonTerm]
 
  # Adapted for Dunlendings.
  # Norse Germanic
