@@ -682,11 +682,11 @@
 
  ### Black Captains of Mordor###
  nick_black_hand_of_sauron: "Чёрная длань Саурона"
- nick_black_hand_of_sauron_desc: "Placeholder."
+ nick_black_hand_of_sauron_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] [Select_CString(CHARACTER.IsFemale, 'одной', 'одним' )] из чёрных капитанов [Concept('sauronthedarklordcharacter', 'Тёмного властелина')|E], [Select_CString(CHARACTER.IsFemale, 'прозванной', 'прозванным' )] «Чёрной дланью» за свою высокую роль в мистических культах [GetCultureByKey('ruhai').GetName|l]."
  nick_hammer_of_sauron: "Молот Саурона"
- nick_hammer_of_sauron_desc: "Placeholder."
+ nick_hammer_of_sauron_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] [Select_CString(CHARACTER.IsFemale, 'одной', 'одним' )] из чёрных капитанов [Concept('sauronthedarklordcharacter', 'Тёмного властелина')|E], [Select_CString(CHARACTER.IsFemale, 'прозванной', 'прозванным' )] «Молотом» за свой жестокий ответ нарушителям спокойствия дозору у врат Мордора."
  nick_tower_of_sauron: "Башня Саурона"
- nick_tower_of_sauron_desc: "Placeholder."
+ nick_tower_of_sauron_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были', Select_CString(CHARACTER.IsFemale, 'была', 'был' ))] [Select_CString(CHARACTER.IsFemale, 'одной', 'одним' )] из чёрных капитанов [Concept('sauronthedarklordcharacter', 'Тёмного властелина')|E], [Select_CString(CHARACTER.IsFemale, 'прозванной', 'прозванным' )] «Башней» из-за своего расположения у руин Барад-дура."
 
  ### Haruzan Nicknames ###
  #nick_serpentlord: "the Serpent Lord"
@@ -869,7 +869,7 @@
 
  ### Cult of Saints ###
  nick_the_prophet_saint: "$nick_the_prophet$"
- nick_the_prophet_saint_desc: "Изиндубет Имратор был величайшим из святых и основателем Батан ан-Изинди. Во время гегемонии катаджата над [Concept( 'bellakar', 'Беллакаром' )|E] он призвал к крестовому походу против вторгшихся теджин из своего укрепленного монастыря Уруд ан-Хибиль. Его воины, известные как Нардуви ам-Батан, яростно сражались, пока не были окончательно разбиты, а их монастырь взят штурмом."
+ nick_the_prophet_saint_desc: "Изиндубет Имратор был величайшим из святых и основателем [Glossary('Батан ан-Изинди','batan_an_izindi_gloss')]. Во время гегемонии катаджата над [Concept( 'bellakar', 'Беллакаром' )|E] он призвал к крестовому походу против вторгшихся теджин из своего укрепленного монастыря Уруд ан-Хибиль. Его воины, известные как Нардуви ам-Батан, яростно сражались, пока не были окончательно разбиты, а их монастырь взят штурмом."
  nick_the_militant_saint: "Воинствующий"
  nick_the_militant_saint_desc: "Святой [CHARACTER.GetShortUINameNoTooltipNoFormat|U] был почитаемым святым мечником, который защищал веру своими клинками и своим словом."
  nick_the_unbreakable_saint: "Несокрушимый"
@@ -1003,6 +1003,8 @@
  nick_second_herald_desc: "Столетия назад первый Вестник солнца и основатель дома Каниватра привёл Аудрат-Ватру в [Concept('ray', 'Раю')|E] и низверг правителя державы, почитавшего Кат-Полозая. За победу и освобождение державы [GetTitleByKey('k_ray').GetBaseNameNoTier] от власти Кхаз-грамаза [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'были прозваны', Select_CString(CHARACTER.IsFemale, 'была прозвана', 'был прозван' ))] последователями Ватры «[Select_CString(CHARACTER.IsFemale, 'Второй вестницей', 'Вторым вестником' )]» Солнца."
  nick_iunast_two: "Гордость Юнаста"
  nick_iunast_two_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'освободили', Select_CString(CHARACTER.IsFemale, 'освободила', 'освободил' ))] [Concept('ray', 'Раю')|E] от власти тиранических почитателей злобных богов Кхаз-грамаза и Ватры, во многом повторяя [Concept('legend_of_iunast', 'легенду Юнаста')|E]. За [Select_CString( CHARACTER.IsLocalPlayer, 'ваши', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] достижения другие последователи Кат-Полозая стали называть [Select_CString( CHARACTER.IsLocalPlayer, 'вас', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] в честь спасителя человечества."
+ nick_moon_serpent: "[Select_CString(CHARACTER.IsFemale, 'Змея, сокрушившая', 'Змей, сокрушивший' )] луну"
+ nick_moon_serpent_desc: "Следуя по стопам своих прославленных предков, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'уничтожили', Select_CString(CHARACTER.IsFemale, 'уничтожила', 'уничтожил' ))] могущественное королевство [Concept('bellakar', 'Беллакар')|E] во имя Кхаз-грамаза, подчинив некогда гордую державу своему, несомненно, кровавому правлению ужаса."
 
  ### Bay of Ormal Nicknames
  nick_last_apyrabande: "Апайрабанда"
