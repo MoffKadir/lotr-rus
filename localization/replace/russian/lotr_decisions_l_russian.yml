@@ -1536,6 +1536,13 @@
  decision_rediscover_yatalin_gan_confirm: "Мы должны снова отправиться в путь."
  decision_rediscover_yatalin_gan_tt: "Вы отправитесь на поиски [GetTitleByKey('c_bru_kha').GetNameNoTier|U]."
 
+ decision_tree_of_sorrows: "Взрастить Скорбное древо"
+ decision_tree_of_sorrows_tooltip: "Принести пленников в жертву сердцу Эрин-Ворн"
+ decision_tree_of_sorrows_desc: "Глубоко в тёмных лесах Эрин-Ворн находится древнее Скорбное древо. Говорят, что это последний оплот древних лесов, которые когда-то господствовали на большей части [Concept('eriador', 'Эриадора')|E]. Дерево огромное, искривленное и раздутое сверх естественных размеров для своего вида. Издалека он напоминает сгорбленного великана, на согнутые плечи которого накинут черный плащ из листьев для защиты от холодных морских ветров, а лицо милосердно скрыто от посторонних глаз.\n\nДерево, кажется, слегка раздувается, когда к нему приближается любая форма жизни, - живая гора спутанной зелени. Беффраэн подвешивают тела своих пленников к его искривленным ветвям, и их кровь питает темные корни..."
+ decision_tree_of_sorrows_confirm: "Привести пленников."
+ decision_tree_of_sorrows_tt: "Ваши [Concept('prisoners', 'узники')|E] будут принесены в жертву"
+ decision_tree_of_sorrows_prisoners: "У вас должно быть не менее 20 [Concept('prisoners', 'узников')|E]"
+
  #####################################
  ###### Bozisha-Miraz Decisions ######
  #####################################
@@ -1708,6 +1715,11 @@
  decision_bellakar_support_effect_tt: "Вы отправитесь в [GetTitleByKey('c_nilulonde').GetNameNoTier], чтобы попросить [GetTitleByKey('e_bellakar').GetNameNoTier] о помощи."
  decision_bellakar_support_stormhost_nerf: "#N До тех пор, пока [GetTitleByKey('e_thon_an_kharlokh').GetName] не уничтожено, [GetTitleByKey('e_bellakar').GetNameNoTier] вряд ли придёт вам на помощь!#"
 
+ decision_build_up_Katri: "Укрепить высокую цитадель Катри"
+ decision_build_up_Katri_tooltip: "Вы вложите значительные средства в улучшение цитадели Катри и [GetTitleByKey('c_tresti').GetNameNoTier] в целом."
+ decision_build_up_Katri_desc: "Высокая цитадель Катри и поселение [GetTitleByKey('c_tresti').GetNameNoTier], построенное вокруг неё, уступают только городу [GetTitleByKey('c_bozisha_dar').GetNameNoTier] в [Concept('ray', 'Рае')|E] как по размерам, так и по религиозному значению. На протяжении бесчисленных тысячелетий наши предки присматривали за великим храмом Кат-Полозая. В это время хаоса, когда чистки Кхаз-грамаза приносят смерть стольким людям, принадлежность священного города вполне может стать большим благом для моего положения.\n\nЕсли я смогу собрать достаточно золота и ресурсов и правильно их распределить, я [Select_CString(ROOT.Char.IsFemale, 'сумела', 'сумел' )] бы превратить [GetTitleByKey('c_tresti').GetNameNoTier] в маяк процветания в море разрушений, место, где все противники режима Кхаз-грамаза могут объединиться в единый альянс."
+ decision_build_up_Katri_confirm: "Высокая цитадель не будет иметь себе равных."
+ decision_build_up_Katri_effect_tt: "Вы сможете выбрать, стоит ли пытаться улучшить экономическое, военное или дипломатическое положение [GetTitleByKey('c_tresti').GetNameNoTier]."
 
  ################################
  ####### Tedjin Decisions #######
@@ -3412,7 +3424,10 @@
  decision_yellow_mountains_goblin_reclamation_desc: "Уже давно #L [GetCultureByKey('blacklocks').GetCollectiveNoun|l]ие#! нарушители и #L [GetCultureByKey('rukhashai').GetCollectiveNoun|l]ие#! захватчики безраздельно правили обширными державами в Жёлтых горах. Наши самые древние легенды рассказывают о тех временах, когда мы в одиночку покоряли тёмные вершины. Скоро настанет день, когда [Concept('goblin', 'гоблины')|E] вновь будут править этими землями."
  decision_yellow_mountains_goblin_reclamation_confirm: "Изгоним захватчиков!"
  decision_yellow_mountains_goblin_reclamation_trigger_tt: "Только [Concept('goblin', 'гоблинские')|E] правители владеют землями в регионе [GetTitleByKey('e_yellow_mountains').GetNameNoTier]"
-
+ decision_yellow_mountains_goblin_reclamation.tt: "В зависимости от вашей [Concept('faith', 'конфессии')|E] будет разблокирована уникальная [Concept('special_building', 'особая постройка')|E]:"
+ decision_yellow_mountains_goblin_reclamation.tt_1: "[GetFaithByKey('orc_spider_cult').GetAdjective] - [GetBuilding('wonder_echomaker_reward').GetName]."
+ decision_yellow_mountains_goblin_reclamation.tt_2: "[GetFaithByKey('faith_marketcher').GetAdjective] - [GetBuilding('wonder_marketcher_reward').GetName]."
+ decision_yellow_mountains_goblin_reclamation.tt_3: "[GetFaithByKey('faith_peltripper').GetAdjective] - [GetBuilding('wonder_peltripper_reward').GetName]."
  decision_desecrate_dwarven_capital: "Осквернить гномью столицу"
  decision_desecrate_dwarven_capital_tooltip: "Осквернить гномью столицу."
  decision_desecrate_dwarven_capital_desc: "Мы отняли у гномов их драгоценную столицу! Нам плевать на все их причудливые статуи и украшения на стенах, давайте сделаем так, чтобы здесь было хоть немного больше похоже на дом!"
