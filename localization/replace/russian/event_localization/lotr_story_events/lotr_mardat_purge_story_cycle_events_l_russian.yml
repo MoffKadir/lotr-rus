@@ -1,19 +1,5 @@
 ﻿l_russian:
  #Scripted effects
- purge_increase_pacification_effect_tt_positive: "[purge_widget|e]#P [Concept('purge_pacification', 'Усмирение')|E] повышается#!"
- purge_increase_pacification_effect_tt_positive_large: "[purge_widget|e]#P [Concept('purge_pacification', 'Усмирение')|E] значительно повышается#!"
- purge_decrease_pacification_effect_tt_positive: "[purge_widget|e]#P [Concept('purge_pacification', 'Усмирение')|E] снижается#!"
- purge_decrease_pacification_effect_tt_positive_large: "[purge_widget|e]#P [Concept('purge_pacification', 'Усмирение')|E] значительно снижается#!"
- purge_increase_resistance_effect_tt_positive: "[purge_widget|e]#P [Concept('purge_resistance', 'Сопротивление')|E] усиливается#!"
- purge_increase_resistance_effect_tt_positive_large: "[purge_widget|e]#P [Concept('purge_resistance', 'Сопротивление')|E] значительно усиливается#!"
- purge_decrease_resistance_effect_tt_positive: "[purge_widget|e]#P [Concept('purge_resistance', 'Сопротивление')|E] слабеет#!"
- purge_decrease_resistance_effect_tt_positive_large: "[purge_widget|e]#P [Concept('purge_resistance', 'Сопротивление')|E] значительно слабеет#!"
- purge_increase_pacification_effect_tt_negative: "[purge_widget|e]#N [Concept('purge_pacification', 'Усмирение')|E] повышается#!"
- purge_decrease_pacification_effect_tt_negative: "[purge_widget|e]#N [Concept('purge_pacification', 'Усмирение')|E] снижается#!"
- purge_increase_resistance_effect_tt_negative: "[purge_widget|e]#N [Concept('purge_resistance', 'Сопротивление')|E] усиливается#!"
- purge_decrease_resistance_effect_tt_negative: "[purge_widget|e]#N [Concept('purge_resistance', 'Сопротивление')|E] слабеет#!"
- purge_increase_pacification_effect_tt_negative_large: "[purge_widget|e]#N [Concept('purge_pacification', 'Усмирение')|E] значительно повышается#!"
- purge_increase_resistance_effect_tt_negative_large: "[purge_widget|e]#N [Concept('purge_resistance', 'Сопротивление')|E] значительно повышается#!"
 
  purge_of_ray_tt: "Чистка Раи"
  purge_of_ray_tt_resistance_level_1: "Чистка Раи: уровень сопротивления растет"
@@ -27,14 +13,14 @@
 
  purge_of_ray.notification_pacification_rise: "Чистка Раи: уровень усмирения возрастает"
  purge_of_ray.notification_resistance_rise: "Чистка Раи: уровень сопротивления возрастает"
- purge_of_ray_pacification_rise: "Из-за [purge_widget|e]чистки Раи [Concept('purge_pacification', 'усмирение')|E] возросло.\nТекущее [Concept('purge_resistance', 'сопротивление')|E]: [origin_char.MakeScope.Var('resistance_gui').GetValue|V1]\nТекущее [Concept('purge_pacification', 'усмирение')|E]: [origin_char.MakeScope.Var('pacification_gui').GetValue|V1]"
- purge_of_ray_resistance_rise: "Из-за [purge_widget|e]чистки Раи [Concept('purge_resistance', 'сопротивление')|E] возросло.\nТекущее [Concept('purge_resistance', 'сопротивление')|E]: [origin_char.MakeScope.Var('resistance_gui').GetValue|V1]\nТекущее [Concept('purge_pacification', 'усмирение')|E]: [origin_char.MakeScope.Var('pacification_gui').GetValue|V1]"
+ purge_of_ray_pacification_rise: "Из-за [harrying_widget_i|e]чистки Раи [Concept('purge_pacification', 'усмирение')|E] возросло.\nТекущее [Concept('purge_resistance', 'сопротивление')|E]: [origin_char.MakeScope.Var('resistance_gui').GetValue|V1]\nТекущее [Concept('purge_pacification', 'усмирение')|E]: [origin_char.MakeScope.Var('pacification_gui').GetValue|V1]"
+ purge_of_ray_resistance_rise: "Из-за [harrying_widget_i|e]чистки Раи [Concept('purge_resistance', 'сопротивление')|E] возросло.\nТекущее [Concept('purge_resistance', 'сопротивление')|E]: [origin_char.MakeScope.Var('resistance_gui').GetValue|V1]\nТекущее [Concept('purge_pacification', 'усмирение')|E]: [origin_char.MakeScope.Var('pacification_gui').GetValue|V1]"
  purge_of_ray.notification_pacification_fall: "Чистка Раи: уровень усмирения снижается"
  purge_of_ray.notification_resistance_fall: "Чистка Раи: уровень сопротивления снижается"
- purge_of_ray_pacification_fall: "Из-за [purge_widget|e]чистки Раи [Concept('purge_pacification', 'усмирение')|E] снизилось.\nТекущее [Concept('purge_resistance', 'сопротивление')|E]: [origin_char.MakeScope.Var('resistance_gui').GetValue|V1]\nТекущее [Concept('purge_pacification', 'усмирение')|E]: [origin_char.MakeScope.Var('pacification_gui').GetValue|V1]"
- purge_of_ray.resistance_fall: "Из-за [purge_widget|e]чистки Раи [Concept('purge_resistance', 'сопротивление')|E] снизилось.\nТекущее [Concept('purge_resistance', 'сопротивление')|E]: [origin_char.MakeScope.Var('resistance_gui').GetValue|V1]\nТекущее [Concept('purge_pacification', 'усмирение')|E]: [origin_char.MakeScope.Var('pacification_gui').GetValue|V1]"
+ purge_of_ray_pacification_fall: "Из-за [harrying_widget_i|e]чистки Раи [Concept('purge_pacification', 'усмирение')|E] снизилось.\nТекущее [Concept('purge_resistance', 'сопротивление')|E]: [origin_char.MakeScope.Var('resistance_gui').GetValue|V1]\nТекущее [Concept('purge_pacification', 'усмирение')|E]: [origin_char.MakeScope.Var('pacification_gui').GetValue|V1]"
+ purge_of_ray.resistance_fall: "Из-за [harrying_widget_i|e]чистки Раи [Concept('purge_resistance', 'сопротивление')|E] снизилось.\nТекущее [Concept('purge_resistance', 'сопротивление')|E]: [origin_char.MakeScope.Var('resistance_gui').GetValue|V1]\nТекущее [Concept('purge_pacification', 'усмирение')|E]: [origin_char.MakeScope.Var('pacification_gui').GetValue|V1]"
 
- purge_of_ray_end: "#BOL[purge_widget|e]Чистка Раи#! #Xlight завершилась.#!
+ purge_of_ray_end: "#BOL[harrying_widget_i|e]Чистка Раи#! #Xlight завершилась.#!
 
  #Intro
  purge_of_ray.0120.t: "Чистка Раи"

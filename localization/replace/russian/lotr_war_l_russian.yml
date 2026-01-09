@@ -40,6 +40,7 @@
  VANQUISH_DARKNESS_KINGDOM_CB_NAME: "[vanquish_darkness_casus_belli|E] в [Concept('kingdom', 'королевстве')|E]"
  vanquish_darkness_kingdom_cb: "Война против тьмы"
  VANQUISH_DARKNESS_KINGDOM_KINGDOM_NAME: "[target_kingdom.GetNameNoTierNoTooltip] верных"
+ declared_kingdom_laamp_vd_flag_tt: "Вы можете объявить только одну [Concept('vanquish_darkness_casus_belli', 'войну против тьмы')|E] за [Concept('kingdom', 'королевство')|E] каждые 15 лет"
 
  #  GUNDABARD_RAID_WAR_NAME: "Gundabad Encroachment in [TITLE.GetBaseName]"
  #  GUNDABARD_RAID_CB_NAME: "Goblin Incursion for [county|E]"
@@ -118,10 +119,10 @@
 
  reduce_subterranean_county_development_name: "Война за снижение [Concept('development', 'развития')|E] в графстве [TITLE.GetBaseNameNoTier]"
  reduce_subterranean_duchy_development_name: "Война за снижение [Concept('development', 'развития')|E] в герцогстве [TITLE.GetBaseNameNoTier]"
- reduce_subterranean_county_development_desc_defender: "Уровень зданий и развитие в целевых титулах снижаются"
- reduce_subterranean_county_development_desc_attacker: "Уровень зданий и развитие в целевых титулах снижаются"
- reduce_subterranean_county_development_desc: "Уровень зданий и развитие в целевых титулах снижаются"
- subterranean_cb_effect: "Уровни зданий #bold и#! владений #N понижены#! на один уровень"
+ reduce_subterranean_county_development_desc_defender: "$reduce_subterranean_county_development_desc$"
+ reduce_subterranean_county_development_desc_attacker: "$reduce_subterranean_county_development_desc$"
+ reduce_subterranean_county_development_desc: "Уровень зданий и развитие в целевых титулах снижены"
+ subterranean_cb_effect: "#P Уровни зданий и владений в выбранных титулах #N понижены#! на один уровень.#!"
 
  fourth_kinslaying_cb_defeat_desc: "[defender.GetShortUINamePossessive] пленяет и убивает вас"
  fourth_kinslaying_cb_name: "Четвёртая резня"
@@ -283,3 +284,6 @@
  watch_on_mordor_destroy_duchy_defeat_desc: "[GetTitleByKey('d_watch_on_mordor').GetNameNoTier] не в состоянии уничтожить державу [defender.GetPrimaryTitle.GetNameNoTier]"
 
  cease_tribute_is_protectorate: "Выгода [Concept('protectorates', 'протекторатов')|E] от [Concept('tributary', 'данничества')|E]: $VALUE|0+=$" #LOTR
+
+ ray_doom_war_cb: "Освобождение Раи"
+ RAY_DOOM_WAR_NAME: "Освобождение Раи"

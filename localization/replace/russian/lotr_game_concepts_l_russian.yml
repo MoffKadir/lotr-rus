@@ -58,12 +58,12 @@
 
  ### Races ###
  game_concept_conceptrace: "Раса"
- game_concept_conceptrace_desc: "Концепт расы относится к одному из разумных существ, способных к речи. К ним относятся [Concept('men', 'люди')|E], [Concept('dwarves', 'гномы')|E], [Concept('hobbits', 'хоббиты')|E], [Concept('elves', 'эльфы')|E] и [Concept('orcs', 'орки')|E].\n\nВ игре для моделирования рас используется культурное [heritage|El], которое наделяет особыми преимуществами и выборами, специфичными для каждой конкретной расы.\n\nВозможность гибридизировать культуры между расами в игре отсутствует."
-
  game_concept_conceptraces: "Расы"
- game_concept_conceptraces_desc: "Концепт рас относится к одному из разумных существ, способных к речи. К ним относятся люди, гномы, хоббиты, эльфы, орки, Айнур, энты и орлы."
  game_concept_conceptraces_type: "Тип расы"
  game_concept_conceptraces_types: "Типы рас"
+ game_concept_conceptpeoples: "народы"
+ game_concept_conceptpeople: "народ"
+ game_concept_conceptrace_desc: "Концепт расы относится к одному из разумных существ, способных к речи. К ним относятся [Concept('men', 'люди')|E], [Concept('dwarves', 'гномы')|E], [Concept('hobbits', 'хоббиты')|E], [Concept('elves', 'эльфы')|E] и [Concept('orcs', 'орки')|E].\n\nВ игре для моделирования рас используется культурное [heritage|El], которое наделяет особыми преимуществами и выборами, специфичными для каждой конкретной расы.\n\nВозможность гибридизировать культуры между расами в игре отсутствует."
 
  game_concept_conceptmankind: "Человечество"
  game_concept_mankind: "Человечество"
@@ -74,8 +74,6 @@
  game_concept_human: "Человек"
  game_concept_humans: "Люди"
  game_concept_conceptracemen_desc: "Люди — последыши, Второрождённые, одна из рас [Concept( 'ardaconcept', 'Арды' )|E], носители «Дара Людей» — смертности. Они пробудились в Хильдориэне, вместе с восходом солнца. С тех пор они стали самой многочисленной группой среди всех разумных существ."
- game_concept_conceptpeoples: "народы"
- game_concept_conceptpeople: "народ"
 
  ################
  #### Elven #####
@@ -85,19 +83,19 @@
  game_concept_elven_refuges: "Эльфийские приюты"
  game_concept_elven_holding: "Эльфийское владение"
  game_concept_elven_holdings: "Эльфийские владения"
- game_concept_elven_holding_desc: "Эльфийские приюты - это [Concept( 'holding_type', 'тип владения' )|E], которое может быть построено [Concept( 'characters', 'персонажами' )|E] [Concept( 'elven', 'эльфийских' )|E] [Concept( 'cultures', 'культур' )|E]. Является стандартным типом [Concept( 'elven_government', 'правительства' )|E] для эльфийских [Concept( 'rulers', 'правителей' )|E]. Улучшения этих владений можно разделить на три уровня: [elven_sanctuaries|El], [elven_strongholds|El], и [elven_cities|El].\n\nВ отличие от обычных [Concept( 'holdings', 'владений' )|E] количество высокоуровневых улучшений эльфийских приютов ограничено для каждой [Concept( 'realm', 'державы' )|El]. Это [elven_stronghold_limit|El] и [elven_city_limit|El] соответственно."
+ game_concept_elven_holding_desc: "Эльфийские приюты - это [Concept( 'holding_type', 'тип владения' )|E], которое может быть построено [Concept( 'characters', 'персонажами' )|E] [Concept( 'elven', 'эльфийских' )|E] [Concept( 'cultures', 'культур' )|E]. Является стандартным типом [Concept( 'elven_government', 'правительства' )|E] для эльфийских [Concept( 'rulers', 'правителей' )|E]. Улучшения этих владений можно разделить на три уровня: [elven_sanctuaries|El], [elven_strongholds|El], и [elven_cities|El].\n\nВ отличие от обычных [Concept('holdings', 'владений')|E], повышение уровня эльфийских приютов зависит от вашей [Concept('situation_phase', 'фазы')|E]. Вы также не можете возводить новые эльфийские приюты, если ваша [Concept('situation_phase', 'фаза')|E] ниже чем #p «Стойкость»#!."
 
  game_concept_elven_sanctuary: "Эльфийское святилище"
  game_concept_elven_sanctuaries: "Эльфийские святилища"
- game_concept_elven_sanctuary_desc: "Эльфийское святилище - это самый низкий уровенья развития [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ святилищах доступно на одно [building|El] меньше в [Concept( 'barony', 'баронстве' )|E], чем в стандартном [Concept( 'holdings', 'владении' )|E], и на них не распространяется ограничение на количество, которое можно построить в [Concept( 'realm', 'державе' )|E], в отличие от [Concept( 'elven_stronghold', 'эльфийских крепостей' )|E] и [Concept( 'elven_city', 'эльфийских городов' )|E]."
+ game_concept_elven_sanctuary_desc: "Эльфийское святилище - это самый низкий уровенья развития [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ святилищах доступно на одно [building|El] меньше в [Concept( 'barony', 'баронстве' )|E], чем в стандартном [Concept( 'holdings', 'владении' )|E], и на них не распространяется ограничение на улучшение в зависимости от вашей [Concept('situation_phase', 'фазы')|E], в отличие от [Concept( 'elven_stronghold', 'эльфийских крепостей' )|E] и [Concept( 'elven_city', 'эльфийских городов' )|E]."
 
  game_concept_elven_stronghold: "Эльфийская крепость"
  game_concept_elven_strongholds: "Эльфийские крепости"
- game_concept_elven_stronghold_desc: "Эльфийская крепость - это средний уровень улучшения [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ крепостях доступно столько же [Concept( 'buildings', 'зданий' )|E] в [Concept( 'barony', 'баронстве' )|E], сколько и в стандартном [Concept( 'holdings', 'владении' )|E], но на них накладывается ограничение на количество, которое можно построить в [Concept( 'realm', 'державе' )|E], определяемое [Concept( 'elven_stronghold_limit', 'пределом эльфийских крепостей' )|E]."
+ game_concept_elven_stronghold_desc: "Эльфийская крепость - это средний уровень улучшения [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ крепостях доступно столько же [Concept( 'buildings', 'зданий' )|E] в [Concept( 'barony', 'баронстве' )|E], сколько и в стандартном [Concept( 'holdings', 'владении' )|E], но на них распространяется ограничение на улучшение в зависимости от вашей [Concept('situation_phase', 'фазы')|E]. Вы не можете построить $building_elven_settlement_03$ или $building_elven_settlement_04$, если ваша [Concept('situation_phase', 'фаза')|E] ниже #p «Увядания»#!, в то время как для того, чтобы построить $building_elven_settlement_05$, требуется #p «Стойкость»#! или выше.\n\nВы можете строить только одну эльфийскую крепость одновременно."
 
  game_concept_elven_city: "Эльфийский город"
  game_concept_elven_cities: "Эльфийские города"
- game_concept_elven_city_desc: "Эльфийские города - это высший уровень улучшения [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ городах можно построить на одно [building|El] в [Concept( 'barony', 'баронстве' )|E], чем в стандартном [Concept( 'holdings', 'владении' )|E], но на них накладывается ограничение на количество, которое можно построить в [Concept( 'realm', 'державе' )|E], определяемое [Concept( 'elven_city_limit', 'пределом эльфийских городов' )|E]."
+ game_concept_elven_city_desc: "Эльфийские города - это высший уровень улучшения [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ городах можно построить на одно [building|El] в [Concept( 'barony', 'баронстве' )|E], чем в стандартном [Concept( 'holdings', 'владении' )|E], но на них распространяется ограничение на улучшение в зависимости от вашей [Concept('situation_phase', 'фазы')|E]. Вы не можете построить $building_elven_settlement_06$, если ваша [Concept('situation_phase', 'фаза')|E] ниже #p «Возрождения»#!, в то время как для того, чтобы построить $building_elven_settlement_07$, требуется #p «Процветание»#! или выше.\n\nВы можете строить только один эльфийский город одновременно."
 
  game_concept_elven_stronghold_limit: "Предел эльфийских крепостей"
  game_concept_elven_stronghold_limit_desc: "[elves|E] ограничены в количестве [Concept( 'elven_strongholds', 'эльфийских крепостей' )|E], которыми они могут владеть в пределах одной [Concept( 'realm', 'державы' )|E].\n\nЭто ограничение определяется в количестве одной крепости за каждые пять [Concept( 'elven_refuges', 'эльфийских приютов' )|E] (любого уровня улучшения) в пределах державы."
@@ -232,10 +230,11 @@
 
  game_concept_valargods: "Валар"
  game_concept_valar: "Валар"
- game_concept_avaloigods: "Авалой"
- game_concept_powersgods: "Силы"
  game_concept_valagod: "Вала"
  game_concept_valiegod: "Валиэ"
+ game_concept_avaloigods: "Авалой"
+ game_concept_kolirgods: "Колир"
+ game_concept_powersgods: "Силы"
  game_concept_valargods_desc: "Валар — это Силы [Concept( 'ardaconcept', 'Арды' )|E], которые сформировали и изменили мир. Это величайшие из [ainurgods|E], сошедших в [Concept( 'ardaconcept', 'Арду' )|E]. Обычно упоминаются 14 из них: \n\n[manwecharacter|E] \n[vardacharacter|E] \n[ulmocharacter|E] \n[aulecharacter|E] \n[yavannacharacter|E] \n[oromecharacter|E] \n[vanacharacter|E] \n[namocharacter|E] \n[vairecharacter|e] \n[irmocharacter|E] \n[estecharacter|E] \n[tulkascharacter|E] \n[nessacharacter|E] \n[niennacharacter|E] \n\nВеличайших из них также называют [aratargods|E]."
 
  game_concept_maiargods: "Майар"
@@ -426,7 +425,7 @@
  # Bellakarians #
  game_concept_zimrebal: "Зимребал"
  game_concept_zimrebal_long: "Зимребал Железная Рука"
- game_concept_zimrebal_desc: "Первый король [Concept( 'bellakar', 'Беллакара' )|E], основатель монархии Тумаквэ, Зимребал Железная Рука коренным образом изменил культуру, религию и политику Беллакара. \n\nРодившись в могущественном клане Тумаквэ, Зимребал стал [Concept( 'asapthubeth', 'асаптубетом' )|E] Нилулондэ около 330 года [ageTA|E], как и полагалось главе его клана согласно традициям. Будучи одним из могущественных вождей [baitha|E], он принял чрезвычайное решение во время кризиса, вызванного первым вторжением теджин, и закрепил за собой военную и исполнительную власть около 340 года. \n\nОднако после успешного отражения вторжения он не отказался от своих полномочий и, заручившись поддержкой большей части Байта'н-Кадир, объявил себя королём. Чтобы узаконить эти притязания, он заявил, что получил мандат от [Concept( 'vardacharactershort', 'Варды' )|E], известной белланаруд как Ладнока. Так родилась Катхасапта, синкретическая вера, которая с тех пор доминирует на юге Беллакара. \n\nЗимребал правил долго и благополучно до своей смерти в 395 году [ageTA|E], а его сын Абуразор стал его преемником."
+ game_concept_zimrebal_desc: "Первый король [Concept( 'bellakar', 'Беллакара' )|E], основатель монархии Тумаквэ, Зимребал Железная Рука коренным образом изменил культуру, религию и политику Беллакара. \n\nРодившись в могущественном клане Тумаквэ, Зимребал стал [Concept( 'asapthubeth', 'асаптубетом' )|E] Нилулондэ около 330 года [ageTA|E], как и полагалось главе его клана согласно традициям. Будучи одним из могущественных вождей [baitha|E], он принял чрезвычайное решение во время кризиса, вызванного первым вторжением теджин, и закрепил за собой военную и исполнительную власть около 340 года. \n\nОднако после успешного отражения вторжения он не отказался от своих полномочий и, заручившись поддержкой большей части Байта'н-Кадир, объявил себя королём. Чтобы узаконить эти притязания, он заявил, что получил мандат от [Concept( 'vardacharactershort', 'Варды' )|E], известной белланаруд как Ладнока. Так родилась [Glossary('Катхасапта','kathasaptha_gloss')], синкретическая вера, которая с тех пор доминирует на юге Беллакара. \n\nЗимребал правил долго и благополучно до своей смерти в 395 году [ageTA|E], а его сын Абуразор стал его преемником."
 
  # Primordial Men #
  game_concept_ermon: "Эрмон"

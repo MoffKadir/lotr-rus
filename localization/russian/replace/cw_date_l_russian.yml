@@ -50,5 +50,5 @@
  CW_DATE_Nov:0 "$LONG_NOV$"
  CW_DATE_Dec:0 "$LONG_DEC$"
 
- DLC_BUTTON_TOOLTIP:1 "#T [DlcItem.GetDlc.GetName]#!\n[DlcItem.GetDlc.GetDesc]\n\n#low [SelectLocalization( Or( DlcItem.GetDlc.IsEnabled, EqualTo_string(DlcItem.GetDlc.GetName, Localize('realms_dlc') ) ), 'DLC_ENABLED', 'DLC_NOT_ENABLED' )]#![AddTextIf( Not( EqualTo_string(DlcItem.GetDlc.GetName, Localize('realms_dlc') ) ), '\n#I Щелкните, чтобы посетить магазин#!' )]"
- HOLDING_VIEW_IN_PROGRESS:1 "[GUITrackItem.GetNextBuilding.GetNameNoTooltip]"  #LotR: changed to be compatible with new custom calendar
+ DLC_BUTTON_TOOLTIP: "#T [DlcItem.GetDlc.GetName]#!\n[DlcItem.GetDlc.GetDesc]\n\n#low [SelectLocalization( Or( DlcItem.GetDlc.IsEnabled, EqualTo_string(DlcItem.GetDlc.GetName, Localize('realms_dlc') ) ), 'DLC_ENABLED', 'DLC_NOT_ENABLED' )]#![AddTextIf( Not( EqualTo_string(DlcItem.GetDlc.GetName, Localize('realms_dlc') ) ), '\n#I Щелкните, чтобы посетить магазин#!' )]"
+ HOLDING_VIEW_IN_PROGRESS: "[GUITrackItem.GetNextBuilding.GetNameNoTooltip]"  #LotR: changed to be compatible with new custom calendar
