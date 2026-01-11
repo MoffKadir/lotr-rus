@@ -1,0 +1,80 @@
+# Event window widget to show situation info about specifically the great steppe
+# Required controller: situation_info
+
+vbox = {
+	name = "event_window_widget_situation_alinor_isolationism"
+	EventWindowWidget = {
+		blockoverride "situation_info_content"
+		{
+			hbox = {
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = fixed
+				spacing = 15
+				datacontext = "[EventWindowCustomWidgetSituationInfo.GetSituation]"
+				datacontext = "[GetPlayer]"
+				
+				SituationInfo = {
+					blockoverride "situation_tooltip"
+					{
+						tooltipwidget = {
+							using = situation_info_tooltip
+							blockoverride "title_text" {
+								text = "ALINOR_ISOLATIONISM_SITUATION_INFO_CLOSED"
+							}
+							blockoverride "header_icon"
+							{
+								texture = "gfx/interface/icons/situations/alinor_isolationism/isolation_closed.dds"
+							}
+							blockoverride "localization_text"
+							{
+								text = "ALINOR_ISOLATIONISM_INFO_CLOSED_EXPLANATION"
+							}
+						}
+					}
+					blockoverride "situation_icon"
+					{
+						texture = "gfx/interface/icons/situations/alinor_isolationism/isolation_closed.dds"
+					}
+					blockoverride "situation_text"
+					{
+						text = "ALINOR_ISOLATIONISM_SITUATION_INFO_CLOSED_TITLE"
+					}
+				}
+
+				expand = {}
+				
+				SituationInfo = {
+					blockoverride "situation_tooltip"
+					{
+						tooltipwidget = {
+							using = situation_info_tooltip
+							blockoverride "title_text" {
+								text = "ALINOR_ISOLATIONISM_SITUATION_INFO_OPEN"
+							}
+							blockoverride "header_icon"
+							{
+								texture = "gfx/interface/icons/situations/alinor_isolationism/isolation_open.dds"
+							}
+							blockoverride "localization_text"
+							{
+								text = "ALINOR_ISOLATIONISM_SITUATION_INFO_OPEN_EXPLANATION"
+							}
+						}
+					}
+					blockoverride "situation_icon"
+					{
+						texture = "gfx/interface/icons/situations/alinor_isolationism/isolation_open.dds"
+					}
+					blockoverride "situation_text"
+					{
+						text = "ALINOR_ISOLATIONISM_SITUATION_INFO_OPEN_TITLE"
+					}
+				}
+
+				expand = {}
+			}
+			
+		}
+	}
+}
+

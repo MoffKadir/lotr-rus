@@ -1,0 +1,111 @@
+# Event window widget to show situation info about specifically Grand Council
+# Required controller: situation_info
+
+vbox = {
+	name = "event_window_widget_situation_info_grand_council"
+	EventWindowWidget = {
+		blockoverride "situation_info_content"
+		{
+			hbox = {
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = fixed
+				spacing = 15
+				datacontext = "[EventWindowCustomWidgetSituationInfo.GetSituation]"
+				datacontext = "[GetPlayer]"
+				
+				SituationInfo = {
+					
+					blockoverride "situation_tooltip"
+					{
+						tooltipwidget = {
+							using = situation_info_tooltip
+							blockoverride "title_text" {
+								text = "GRAND_COUNCIL_SITUATION_INFO_PHASES_TITLE"
+							}
+							blockoverride "header_icon"
+							{
+								texture = "gfx/interface/icons/situation_types/grand_council.dds"
+							}
+							blockoverride "localization_text"
+							{
+								datacontext = "[Character.GetCurrentLocation.GetCounty]"
+								datacontext = "[County.GetSubRegionInSituation(Situation.Self)]"
+								text = "GRAND_COUNCIL_SITUATION_INFO_PHASES_EXPLANATION"
+							}
+						}
+					}
+					blockoverride "situation_icon"
+					{
+						texture = "gfx/interface/icons/situation_types/grand_council.dds"
+					}
+					blockoverride "situation_text"
+					{
+						text = "GRAND_COUNCIL_SITUATION_INFO_PHASES_TITLE"
+					}
+				}
+				
+				expand = {}
+
+				SituationInfo = {
+					blockoverride "situation_tooltip"
+					{
+						tooltipwidget = {
+							using = situation_info_tooltip
+							blockoverride "title_text" {
+								text = "GRAND_COUNCIL_SITUATION_INFO_EFFECTS_TITLE"
+							}
+							blockoverride "header_icon"
+							{
+								texture = "gfx/interface/icons/situation_types/grand_council.dds"
+							}
+							blockoverride "localization_text"
+							{
+								text = "GRAND_COUNCIL_SITUATION_INFO_EFFECTS_EXPLANATION"
+							}
+						}
+					}
+					blockoverride "situation_icon"
+					{
+						texture = "gfx/interface/icons/situation_types/grand_council.dds"
+					}
+					blockoverride "situation_text"
+					{
+						text = "GRAND_COUNCIL_SITUATION_INFO_EFFECTS_TITLE"
+					}
+				}
+
+				expand = {}
+				
+				SituationInfo = {
+					blockoverride "situation_tooltip"
+					{
+						tooltipwidget = {
+							using = situation_info_tooltip
+							blockoverride "title_text" {
+								text = "GRAND_COUNCIL_SITUATION_INFO_PARTICIPATION_TITLE"
+							}
+							blockoverride "header_icon"
+							{
+								texture = "gfx/interface/icons/situation_types/grand_council.dds"
+							}
+							blockoverride "localization_text"
+							{
+								text = "GRAND_COUNCIL_SITUATION_INFO_PARTICIPATION_EXPLANATION"
+							}
+						}
+					}
+					blockoverride "situation_icon"
+					{
+						texture = "gfx/interface/icons/situation_types/grand_council.dds"
+					}
+					blockoverride "situation_text"
+					{
+						text = "GRAND_COUNCIL_SITUATION_INFO_PARTICIPATION_TITLE"
+					}
+				}
+			}
+			
+		}
+	}
+}
+

@@ -705,12 +705,47 @@ window = {
 	
 							state = {
 								name = "select_skill_attribute"
-								on_start = "[GetScriptedGui('spell_select_skill_attribute').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('skill_attribute', MakeScopeFlag(Scope.GetFlagName) ).End) )]"
+								on_start = "[GetScriptedGui('spell_select_skill_attribute').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('skill_attribute', MakeScopeFlag(Scope.GetFlagName) ).End) ]"
 							}
 						}
 						blockoverride "dropdown_item_properties"
 						{
 							text = "[Localize( Concatenate( 'game_concept', Scope.GetFlagName ) )]"
+						}
+						blockoverride "dropdown_list_properties"
+						{
+							position = { 5 -2 }
+							widgetanchor = bottom
+						}
+					}
+				}
+
+				hbox = {
+					name = "undead_maa_select_dropdown"
+					visible = "[DataModelHasItems(GetPlayer.MakeScope.GetList('spell_undead_maa'))]"
+					size = { 0 30 }
+	
+					dropdown_menu_standard = {
+						blockoverride "dropdown_properties"
+						{
+							datamodel = "[GetPlayer.MakeScope.GetList('spell_undead_maa')]" #if these fail, can have sys var of selection and check for it changing in the active item section
+							onselectionchanged = "[PdxGuiWidget.FindChild('active_undead_maa').TriggerAnimation('select_undead_maa')]" # in active_item. set var to string
+	
+							#selectedindex = "[BattleSummaryWindow.GetSoldiersSortIndex]" #uses CVector2i. no go
+						}
+						blockoverride "dropdown_active_item_properties"
+						{
+							name = "active_undead_maa"
+							text = "[Localize( Concatenate( 'maa', GetPlayer.MakeScope.Var('spell_selected_undead_maa').GetFlagName ) )]"
+	
+							state = {
+								name = "select_undead_maa"
+								on_start = "[GetScriptedGui('spell_select_undead_maa').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('undead_maa', MakeScopeFlag(Scope.GetFlagName) ).End) ]"
+							}
+						}
+						blockoverride "dropdown_item_properties"
+						{
+							text = "[Localize( Concatenate( 'maa', Scope.GetFlagName ) )]"
 						}
 						blockoverride "dropdown_list_properties"
 						{
@@ -740,7 +775,7 @@ window = {
 	
 							state = {
 								name = "select_size"
-								on_start = "[GetScriptedGui('spell_select_size').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('size', MakeScopeFlag(Scope.GetFlagName) ).End) )]"
+								on_start = "[GetScriptedGui('spell_select_size').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('size', MakeScopeFlag(Scope.GetFlagName) ).End) ]"
 							}
 						}
 						blockoverride "dropdown_item_properties"
@@ -1908,7 +1943,7 @@ Template ButtonSpellList {
 			name = "spell_cost"
 			parentanchor = vcenter
 			position = { 25 0 }
-			text = "[EmptyScope.ScriptValue(Concatenate( Scope.GetFlagName, '_cost' ))|0]"
+			text = "[EmptyScope.ScriptValue(Concatenate( Scope.GetFlagName, '_petty_cost' ))|0]"
 			layoutpolicy_horizontal = expanding
 			align = top|left
 			block "spell_font" {

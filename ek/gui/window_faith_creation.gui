@@ -722,6 +722,30 @@ window = {
 
 								expand = {}
 							}
+
+							# EK ADDITION: Mystical Birthright HoF
+							hbox = {
+								name = "mystical_birthright"
+								visible = "[FaithCreationWindow.HasParameter( 'hof_is_hierocracy' )]"
+								layoutpolicy_horizontal = expanding
+								spacing = 10
+
+								icon_doctrine = {
+									texture = "[GetDoctrine( 'doctrine_mystical_birthright_head' ).GetIcon]"
+									size = { 35 35 }
+								}
+
+								text_multi = {
+									name = "desc"
+									max_width = 390
+									autoresize = yes
+
+									text = "FAITH_CREATION_ADDS_MYSTICAL_BIRTHRIGHT_HEAD_TEXT"
+								}
+
+								expand = {}
+							}
+							# EK ADDITION END
 						}
 
 

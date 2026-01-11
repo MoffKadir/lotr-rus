@@ -100,6 +100,76 @@ types LoadingScreen
 			parentanchor = bottom|right
 			position = { -15 -15 }
 		}
+
+		widget = { # epic debug minotaur
+			size = { 100 102 }
+			position = { 5 -15 }
+			parentanchor = bottom|hcenter
+			scissor = yes
+			visible = "[InDebugMode]"
+			icon = {
+				parentanchor = top|left
+				texture = "gfx/interface/minotuar.dds"
+				size = { 800 102 }
+
+				state = {
+					name = "mino_1"
+					trigger_on_create = yes
+					position_x = 0
+					delay = 0.25
+					next = "mino_2"
+				}
+
+				state = {
+					name = "mino_2"
+					position_x = -100
+					delay = 0.25
+					next = "mino_3"
+				}
+
+				state = {
+					name = "mino_3"
+					position_x = -200
+					delay = 0.25
+					next = "mino_4"
+				}
+
+				state = {
+					name = "mino_4"
+					position_x = -300
+					delay = 0.25
+					next = "mino_5"
+				}
+
+				state = {
+					name = "mino_5"
+					position_x = -400
+					delay = 0.25
+					next = "mino_6"
+				}
+
+				state = {
+					name = "mino_6"
+					position_x = -500
+					delay = 0.25
+					next = "mino_7"
+				}
+
+				state = {
+					name = "mino_7"
+					position_x = -600
+					delay = 0.25
+					next = "mino_8"
+				}
+
+				state = {
+					name = "mino_8"
+					position_x = -700
+					delay = 0.25
+					next = "mino_1"
+				}
+			}
+		}
 	}
 }
 
