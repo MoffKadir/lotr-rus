@@ -48,7 +48,7 @@
  decision_destroy_dol_guldur_desc: "Слишком долго [dolguldur|E] был оплотом врага, очагом порчи и зла, оскверняющим великое [Concept('greenwoodshort', 'Зеленолесье')|E]. Нападение Белого Совета на крепость оказалось лишь временной передышкой, и теперь [nazgulcharacter|El] вернулись. Пока они остаются, ни одно государство в Глухомани не будет в безопасности. Пришло время очистить Колдовской холм раз и навсегда."
  decision_destroy_dol_guldur_tooltip: "Сокрушить Дол Гулдур"
  decision_destroy_dol_guldur_confirm: "Начать войну, чтобы уничтожить Дол Гулдур"
- decision_destroy_dol_guldur_effect_1: "В случае победы [khamul|E] сбежит в [mordor|E], его держава развалится, а все данники будут освобождены."
+ decision_destroy_dol_guldur_effect_1: "В случае победы [GetTitleByKey('c_amon_lanc').GetHolder.GetName] сбежит в [mordor|E], его держава развалится, а все данники будут освобождены."
  decision_destroy_dol_guldur_tt: "Ваша [Concept('realm', 'держава')|E] или держава одного из ваших [Concept('tributaries', 'данников')|E] граничит с [Concept('dolguldur', 'Дол-Гулдуром')|E]"
 
  decision_armored_greenwood_warfare: "Выковать позолоченные доспехи"
@@ -1718,11 +1718,11 @@
  decision_bellakar_support_effect_tt: "Вы отправитесь в [GetTitleByKey('c_nilulonde').GetNameNoTier], чтобы попросить [GetTitleByKey('e_bellakar').GetNameNoTier] о помощи."
  decision_bellakar_support_stormhost_nerf: "#N До тех пор, пока [GetTitleByKey('e_thon_an_kharlokh').GetName] не уничтожено, [GetTitleByKey('e_bellakar').GetNameNoTier] вряд ли придёт вам на помощь!#"
 
- decision_build_up_Katri: "Укрепить высокую цитадель Катри"
- decision_build_up_Katri_tooltip: "Вы вложите значительные средства в улучшение цитадели Катри и [GetTitleByKey('c_tresti').GetNameNoTier] в целом."
- decision_build_up_Katri_desc: "Высокая цитадель Катри и поселение [GetTitleByKey('c_tresti').GetNameNoTier], построенное вокруг неё, уступают только городу [GetTitleByKey('c_bozisha_dar').GetNameNoTier] в [Concept('ray', 'Рае')|E] как по размерам, так и по религиозному значению. На протяжении бесчисленных тысячелетий наши предки присматривали за великим храмом Кат-Полозая. В это время хаоса, когда чистки Кхаз-грамаза приносят смерть стольким людям, принадлежность священного города вполне может стать большим благом для моего положения.\n\nЕсли я смогу собрать достаточно золота и ресурсов и правильно их распределить, я [Select_CString(ROOT.Char.IsFemale, 'сумела', 'сумел' )] бы превратить [GetTitleByKey('c_tresti').GetNameNoTier] в маяк процветания в море разрушений, место, где все противники режима Кхаз-грамаза могут объединиться в единый альянс."
- decision_build_up_Katri_confirm: "Высокая цитадель не будет иметь себе равных."
- decision_build_up_Katri_effect_tt: "Вы сможете выбрать, стоит ли пытаться улучшить экономическое, военное или дипломатическое положение [GetTitleByKey('c_tresti').GetNameNoTier]."
+ decision_build_up_katri: "Укрепить высокую цитадель Катри"
+ decision_build_up_katri_tooltip: "Вы вложите значительные средства в улучшение цитадели Катри и [GetTitleByKey('c_tresti').GetNameNoTier] в целом."
+ decision_build_up_katri_desc: "Высокая цитадель Катри и поселение [GetTitleByKey('c_tresti').GetNameNoTier], построенное вокруг неё, уступают только городу [GetTitleByKey('c_bozisha_dar').GetNameNoTier] в [Concept('ray', 'Рае')|E] как по размерам, так и по религиозному значению. На протяжении бесчисленных тысячелетий наши предки присматривали за великим храмом Кат-Полозая. В это время хаоса, когда чистки Кхаз-грамаза приносят смерть стольким людям, принадлежность священного города вполне может стать большим благом для моего положения.\n\nЕсли я смогу собрать достаточно золота и ресурсов и правильно их распределить, я [Select_CString(ROOT.Char.IsFemale, 'сумела', 'сумел' )] бы превратить [GetTitleByKey('c_tresti').GetNameNoTier] в маяк процветания в море разрушений, место, где все противники режима Кхаз-грамаза могут объединиться в единый альянс."
+ decision_build_up_katri_confirm: "Высокая цитадель не будет иметь себе равных."
+ decision_build_up_katri_effect_tt: "Вы сможете выбрать, стоит ли пытаться улучшить экономическое, военное или дипломатическое положение [GetTitleByKey('c_tresti').GetNameNoTier]."
  katri_building_slot_warning: "#N Если во владении [GetTitleByKey('b_tresti').GetNameNoTier] нет как минимум 2 свободных слотов для строительства, вы, скорее всего, потеряете свои вложения и не получите доступ к полноценной награде за это решение! #!"
 
  decision_ray_rebel_uprising: "Начать освобождение Раи"
@@ -1737,6 +1737,14 @@
  has_gai_alliance: "Вы обратились к державе [GetTitleByKey('d_gai').GetNameNoTier]."
  mardat_lost_bellakar_invasion: "Вторжение державы [GetTitleByKey('k_ray').GetNameNoTier] в [GetTitleByKey('e_bellakar').GetNameNoTier] завершилось неудачей."
  some_rebel_requierments_impossible: "Не все из перечисленных требований можно выполнить. Какие из них вам доступны, зависит от вашей конфессии."
+
+ ### Vatalinar/Kanivatra decisions ###
+ decision_investigate_ray: "Изучить тени Раи"
+ decision_investigate_ray_tooltip: "Вы начнёте расследование заговоров, скрытых в тени вашей державы."
+ decision_investigate_ray_desc: "Хотя я ещё не [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] в его природе, я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] в этом. Где-то в Рае скрывается какой-то великий и ужасный кукловод, укрепляющий власть над моей державой из теней. Если я хочу, чтобы у меня был шанс спасти своё положение, я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] действовать на опережение в своих усилиях по поиску в державе, чего бы это ни стоило - ни во времени, ни в золоте. Я не знаю, насколько быстро растёт заговор и насколько велика его сила, но я знаю, что [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] нанести по нему быстрый и решительный удар, прежде чем он будет готов открыто бросить мне вызов.\n\nИ всё же, несмотря на все мои усилия, многое ещё предстоит изучить. Вероятно, пройдёт много времени, прежде чем я смогу по-настоящему отдохнуть, а я могу по-настоящему доверять очень немногим. В этих обстоятельствах, боюсь, что бремя этой работы может оказаться для меня непосильным..."
+ decision_investigate_ray_confirm: "Я не успокоюсь, пока всё не раскроется..."
+ decision_investigate_ray_effects_tt: "У вас будет возможность выбрать между расследованием преступного мира города [GetTitleByKey('c_bozisha_dar').GetNameNoTier], прочёсыванием армии в поисках участников заговора или сосредоточением своих усилий на властителях державы, чтобы попытаться найти самого кукловода."
+
 
 
  ################################
