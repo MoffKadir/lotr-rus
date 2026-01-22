@@ -22,7 +22,7 @@
 
  game_concept_slave_expedition: "Набег за рабами"
  game_concept_slave_expeditions: "Набеги за рабами"
- game_concept_slave_expedition_desc: "Это особая разновидность [Concept( 'war', 'войны' )|E], которую может начать [ruler|El], чья [culture|El] практикует рабовладение. $game_concept_slave_expeditions$ преследует своей целью захват рабов и получение золота для своей державы.\n\nВ случае успеха, атакующая сторона получает пленников, золото, снижает уровень [Concept( 'development', 'развития' )|E] в [Concept( 'capital', 'столице' )|E] врага, а также получает модификатор, зависящий от титулярного ранга оппонента. Благодаря этому модификатору повышается скорость и снижается стоимость строительства, а также увеличивается скорость повышения уровня развития. После успешного набега невозможно организовать новый в течение 5 лет."
+ game_concept_slave_expedition_desc: "Это особая разновидность [Concept( 'war', 'войны' )|E], которую может начать [ruler|El], чья [culture|El] практикует рабовладение. $game_concept_slave_expeditions$ преследуют своей целью захват рабов и получение золота для своей державы.\n\nВ случае успеха, атакующая сторона получает пленников, золото, снижает уровень [Concept( 'development', 'развития' )|E] в [Concept( 'capital', 'столице' )|E] врага, а также получает модификатор, зависящий от титулярного ранга оппонента. Благодаря этому модификатору повышается скорость и снижается стоимость строительства, а также увеличивается скорость повышения уровня развития. После успешного набега невозможно организовать новый в течение 5 лет."
 
  game_concept_elven_homelands_conquest_casus_belli: "Война за возвращение исторических земель"
  game_concept_elven_homelands_conquest_casus_belli_desc: "Особый вид [casus_belli|El], доступный [Concept( 'elves', 'эльфам' )|E] и открывающий специальный тип [Concept( 'war', 'войны' )|E] за завоевание, позволяющий вернуть контроль над исторической родиной своего народа.\n\nТакие исторические земли подсвечиваются #P зелёным#! в отдельном фильтре карты исторических земель."
@@ -73,7 +73,7 @@
  game_concept_mannish: "Человеческие"
  game_concept_human: "Человек"
  game_concept_humans: "Люди"
- game_concept_conceptracemen_desc: "Люди — последыши, Второрождённые, одна из рас [Concept( 'ardaconcept', 'Арды' )|E], носители «Дара Людей» — смертности. Они пробудились в Хильдориэне, вместе с восходом солнца. С тех пор они стали самой многочисленной группой среди всех разумных существ."
+ game_concept_conceptracemen_desc: "Люди — последыши, Второрождённые, одна из рас [Concept( 'ardaconcept', 'Арды' )|E], носители «Дара людей» — смертности. Они пробудились в Хильдориэне, вместе с восходом солнца. С тех пор они стали самой многочисленной группой среди всех разумных существ."
 
  ################
  #### Elven #####
@@ -83,7 +83,7 @@
  game_concept_elven_refuges: "Эльфийские приюты"
  game_concept_elven_holding: "Эльфийское владение"
  game_concept_elven_holdings: "Эльфийские владения"
- game_concept_elven_holding_desc: "Эльфийские приюты - это [Concept( 'holding_type', 'тип владения' )|E], которое может быть построено [Concept( 'characters', 'персонажами' )|E] [Concept( 'elven', 'эльфийских' )|E] [Concept( 'cultures', 'культур' )|E]. Является стандартным типом [Concept( 'elven_government', 'правительства' )|E] для эльфийских [Concept( 'rulers', 'правителей' )|E]. Улучшения этих владений можно разделить на три уровня: [elven_sanctuaries|El], [elven_strongholds|El], и [elven_cities|El].\n\nВ отличие от обычных [Concept('holdings', 'владений')|E], повышение уровня эльфийских приютов зависит от вашей [Concept('situation_phase', 'фазы')|E]. Вы также не можете возводить новые эльфийские приюты, если ваша [Concept('situation_phase', 'фаза')|E] ниже чем #p «Стойкость»#!."
+ game_concept_elven_holding_desc: "Эльфийские приюты - это [Concept( 'holding_type', 'тип владения' )|E], который может быть построен [Concept( 'characters', 'персонажами' )|E] [Concept( 'elven', 'эльфийских' )|E] [Concept( 'cultures', 'культур' )|E]. Является стандартным типом [Concept( 'elven_government', 'правительства' )|E] для эльфийских [Concept( 'rulers', 'правителей' )|E]. Улучшения этих владений можно разделить на три уровня: [elven_sanctuaries|El], [elven_strongholds|El], и [elven_cities|El].\n\nВ отличие от обычных [Concept('holdings', 'владений')|E], повышение уровня эльфийских приютов зависит от вашей [Concept('situation_phase', 'фазы')|E]. Вы также не можете возводить новые эльфийские приюты, если ваша [Concept('situation_phase', 'фаза')|E] ниже чем #p «Стойкость»#!."
 
  game_concept_elven_sanctuary: "Эльфийское святилище"
  game_concept_elven_sanctuaries: "Эльфийские святилища"
@@ -91,17 +91,11 @@
 
  game_concept_elven_stronghold: "Эльфийская крепость"
  game_concept_elven_strongholds: "Эльфийские крепости"
- game_concept_elven_stronghold_desc: "Эльфийская крепость - это средний уровень улучшения [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ крепостях доступно столько же [Concept( 'buildings', 'зданий' )|E] в [Concept( 'barony', 'баронстве' )|E], сколько и в стандартном [Concept( 'holdings', 'владении' )|E], но на них распространяется ограничение на улучшение в зависимости от вашей [Concept('situation_phase', 'фазы')|E]. Вы не можете построить $building_elven_settlement_03$ или $building_elven_settlement_04$, если ваша [Concept('situation_phase', 'фаза')|E] ниже #p «Увядания»#!, в то время как для того, чтобы построить $building_elven_settlement_05$, требуется #p «Стойкость»#! или выше.\n\nВы можете строить только одну эльфийскую крепость одновременно."
+ game_concept_elven_stronghold_desc: "Эльфийская крепость - это средний уровень улучшения [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ крепостях доступно столько же [Concept( 'buildings', 'зданий' )|E] в [Concept( 'barony', 'баронстве' )|E], сколько и в стандартном [Concept( 'holdings', 'владении' )|E], но на них распространяется ограничение на улучшение в зависимости от вашей [Concept('situation_phase', 'фазы')|E]. Вы не можете построить $building_elven_settlement_03$ или $building_elven_settlement_04$, если ваша [Concept('situation_phase', 'фаза')|E] ниже #p «Увядания»#!, в то время как для того, чтобы построить $building_elven_settlement_05$, требуется #p «Стойкость»#! или выше."
 
  game_concept_elven_city: "Эльфийский город"
  game_concept_elven_cities: "Эльфийские города"
- game_concept_elven_city_desc: "Эльфийские города - это высший уровень улучшения [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ городах можно построить на одно [building|El] в [Concept( 'barony', 'баронстве' )|E], чем в стандартном [Concept( 'holdings', 'владении' )|E], но на них распространяется ограничение на улучшение в зависимости от вашей [Concept('situation_phase', 'фазы')|E]. Вы не можете построить $building_elven_settlement_06$, если ваша [Concept('situation_phase', 'фаза')|E] ниже #p «Возрождения»#!, в то время как для того, чтобы построить $building_elven_settlement_07$, требуется #p «Процветание»#! или выше.\n\nВы можете строить только один эльфийский город одновременно."
-
- game_concept_elven_stronghold_limit: "Предел эльфийских крепостей"
- game_concept_elven_stronghold_limit_desc: "[elves|E] ограничены в количестве [Concept( 'elven_strongholds', 'эльфийских крепостей' )|E], которыми они могут владеть в пределах одной [Concept( 'realm', 'державы' )|E].\n\nЭто ограничение определяется в количестве одной крепости за каждые пять [Concept( 'elven_refuges', 'эльфийских приютов' )|E] (любого уровня улучшения) в пределах державы."
-
- game_concept_elven_city_limit: "Предел эльфийских городов"
- game_concept_elven_city_limit_desc: "[elves|E] ограничены в количестве [Concept( 'elven_cities', 'эльфийских городов' )|E], которыми они могут владеть в пределах одной [Concept( 'realm', 'державы' )|E].\n\nЭто ограничение определяется в количестве одного города за каждые десять [Concept( 'elven_refuges', 'эльфийских приютов' )|E] (любого уровня улучшения) в пределах державы."
+ game_concept_elven_city_desc: "Эльфийские города - это высший уровень улучшения [Concept( 'holding_type', 'типа владения' )|E] «[elven_refuge|El]».\n\nВ городах можно построить на одно [building|El] в [Concept( 'barony', 'баронстве' )|E], чем в стандартном [Concept( 'holdings', 'владении' )|E], но на них распространяется ограничение на улучшение в зависимости от вашей [Concept('situation_phase', 'фазы')|E]. Вы не можете построить $building_elven_settlement_06$, если ваша [Concept('situation_phase', 'фаза')|E] ниже #p «Возрождения»#!, в то время как для того, чтобы построить $building_elven_settlement_07$, требуется #p «Процветание»#! или выше."
 
  game_concept_elven_government: "Эльфийское правление"
  game_concept_elven_government_i: "@government_type_elven!"

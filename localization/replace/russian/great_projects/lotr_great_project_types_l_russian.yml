@@ -2,11 +2,10 @@
 
  ### Dwarven Capitals ###
 
- rite_of_mahal_tier_1_miner: "У вас есть не менее #V [EmptyScope.ScriptValue('mandala_pilgrim_xp_first_tier_value')]#! [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Старатель» [Concept('trait', 'свойства')|E] «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
- rite_of_mahal_tier_2_miner: "У вас есть не менее #V [EmptyScope.ScriptValue('mandala_pilgrim_xp_second_tier_value')]#! [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Старатель» [Concept('trait', 'свойства')|E] «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
+ rite_of_mahal_tier_2_miner: "У вас есть не менее #V [EmptyScope.ScriptValue('mandala_pilgrim_xp_first_tier_value')]#! [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Старатель» [Concept('trait', 'свойства')|E] «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
  rite_of_mahal_tier_3_miner: "У вас есть не менее #V [EmptyScope.ScriptValue('mandala_pilgrim_xp_second_tier_value')]#! [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Старатель» [Concept('trait', 'свойства')|E] «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
- rite_of_mahal_tier_4_miner: "У вас есть не менее #V [EmptyScope.ScriptValue('mandala_pilgrim_xp_second_tier_value')]#! [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Старатель» [Concept('trait', 'свойства')|E] «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
- rite_of_mahal_tier_5_miner: "У вас есть не менее #V [EmptyScope.ScriptValue('mandala_pilgrim_xp_second_tier_value')]#! [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Старатель» [Concept('trait', 'свойства')|E] «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
+ rite_of_mahal_tier_4_miner: "У вас есть не менее #V [EmptyScope.ScriptValue('mandala_pilgrim_xp_third_tier_value')]#! [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Старатель» [Concept('trait', 'свойства')|E] «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
+ rite_of_mahal_tier_5_miner: "У вас есть не менее #V [EmptyScope.ScriptValue('mandala_pilgrim_xp_last_tier_value')]#! [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Старатель» [Concept('trait', 'свойства')|E] «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
  rite_of_mahal_creation_artifacts_t2: "Вы создали, заказили или проспонсировали не менее #V [EmptyScope.ScriptValue('num_creation_dwarven_commissioned_artifacts_t2')]#! [Concept('artifacts', 'артефактов')|E] #weak (Текущее значение - [GetPlayer.MakeScope.ScriptValue('num_commissioned_artifacts')]/[EmptyScope.ScriptValue('num_creation_dwarven_commissioned_artifacts_t2')])#!"
  rite_of_mahal_creation_artifacts_t3: "Вы создали, заказили или проспонсировали не менее #V [EmptyScope.ScriptValue('num_creation_dwarven_commissioned_artifacts_t3')]#! [Concept('artifacts', 'артефактов')|E] #weak (Текущее значение - [GetPlayer.MakeScope.ScriptValue('num_commissioned_artifacts')]/[EmptyScope.ScriptValue('num_creation_dwarven_commissioned_artifacts_t3')])#!"
  rite_of_mahal_creation_artifacts_t4: "Вы создали, заказили или проспонсировали не менее #V [EmptyScope.ScriptValue('num_creation_dwarven_commissioned_artifacts_t4')]#! [Concept('artifacts', 'артефактов')|E] #weak (Текущее значение - [GetPlayer.MakeScope.ScriptValue('num_commissioned_artifacts')]/[EmptyScope.ScriptValue('num_creation_dwarven_commissioned_artifacts_t4')])#!"
@@ -16,6 +15,7 @@
  rite_of_mahal_landed_dynasty_t4: "У вас есть не менее #V [EmptyScope.ScriptValue('num_rite_of_mahal_landed_dynasty_t4')]#! [Concept('vassals', 'вассалов')|E]-землевладельцев из вашей [Concept('dynasty', 'династии')|E]"
  rite_of_mahal_landed_dynasty_t5: "У вас есть не менее #V [EmptyScope.ScriptValue('num_rite_of_mahal_landed_dynasty_t5')]#! [Concept('vassals', 'вассалов')|E]-землевладельцев из вашей [Concept('dynasty', 'династии')|E]"
 
+ no_orcish_special_building: "Эта [Concept('province', 'провинция')|E] #bold не#! была очищена от скверны [Concept('orcs', 'орков')|E]"
  great_project_type_dwarven_capital_01: "Гномья столица"
  great_project_type_dwarven_capital_02: "Улучшенная $great_project_type_dwarven_capital_01$"
  great_project_type_dwarven_capital_02_desc: "У нас появилась возможность расширить нашу величественную столицу! Давайте создадим чудо, достойное нашего клана!"
@@ -132,24 +132,62 @@
  great_project_type_dwarven_capital_05_contribution_dwarf_father_palace_desc: "Дворец, достойный праотцов нашего народа, уступающий по великолепию только творению самого Махала."
 
  ### Great Fleet ###
- great_project_type_construct_great_fleet: "Построить великий флот"
- great_project_type_construct_great_fleet_desc: "Берега моей [Concept('realm', 'державы')|E] должны быть защищены, и что может быть лучше для обеспечения безопасности и демонстрации силы на морях, чем строительство большого флота?"
- great_project_type_construct_great_fleet_coastal_county: "Это должно быть прибрежное графство"
+ great_project_type_construct_great_fleet_01: "Построить великий флот"
+ great_project_type_construct_great_fleet_01_desc: "Берега моей [Concept('realm', 'державы')|E] должны быть защищены, и что может быть лучше для обеспечения безопасности и демонстрации силы на морях, чем строительство большого флота?"
+ great_project_type_construct_great_fleet_01_coastal_county: "Это должно быть прибрежное графство"
 
- great_project_type_construct_great_fleet_contribution_materials: "Материалы"
- great_project_type_construct_great_fleet_contribution_materials_desc: "Ничего нельзя создать на пустом месте. Мы предоставим [Concept('great_project', 'грандиозному проекту')|E] все строительные материалы, необходимые для завершения работ по строительству флота."
+ great_project_type_construct_great_fleet_02: "Расширить великий флот"
+ great_project_type_construct_great_fleet_02_desc: "PLACEHOLDER"
+ great_project_type_construct_great_fleet_02_coastal_county: "Это должно быть прибрежное графство, в котором расположен флот"
 
- great_project_type_construct_great_fleet_contribution_workforce: "Рабочая сила"
- great_project_type_construct_great_fleet_contribution_workforce_desc: "Корабли сами себя не построят! Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] рабочей силой, необходимой для выполнения этой важной задачи."
+ great_project_type_construct_great_fleet_03: "Построить великую армаду"
+ great_project_type_construct_great_fleet_03_desc: "PLACEHOLDER"
+ great_project_type_construct_great_fleet_03_coastal_county: "Это должно быть прибрежное графство, в котором расположен великий флот"
 
- great_project_type_construct_great_fleet_contribution_engineers: "Морские инженеры"
- great_project_type_construct_great_fleet_contribution_engineers_desc: "Опытные корабелы, привлечённые к этому [Concept('great_project', 'грандиозному проекту')|E], привнесли бы ценный опыт в строительство флота."
+ great_project_type_construct_great_fleet_01_contribution_materials: "Материалы"
+ great_project_type_construct_great_fleet_01_contribution_materials_desc: "Ничего нельзя создать на пустом месте. Мы предоставим [Concept('great_project', 'грандиозному проекту')|E] все строительные материалы, необходимые для завершения работ по строительству флота."
 
- great_project_type_construct_great_fleet_contribution_military_wharf: "Военная пристань"
- great_project_type_construct_great_fleet_contribution_military_wharf_desc: "Добавив особую гавань и сухой док к [Concept('great_project', 'грандиозному проекту')|E], мы повысим надёжность и долговечность флота."
+ great_project_type_construct_great_fleet_01_contribution_workforce: "Рабочая сила"
+ great_project_type_construct_great_fleet_01_contribution_workforce_desc: "Корабли сами себя не построят! Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] рабочей силой, необходимой для выполнения этой важной задачи."
 
- great_project_type_construct_great_fleet_contribution_merchant_quays: "Торговый причал"
- great_project_type_construct_great_fleet_contribution_merchant_quays_desc: "Добавив особый торговый квартал к [Concept('great_project', 'грандиозному проекту')|E], мы увеличим доходы и поток торговли в морском порту."
+ great_project_type_construct_great_fleet_01_contribution_engineers: "Морские инженеры"
+ great_project_type_construct_great_fleet_01_contribution_engineers_desc: "Опытные корабелы, привлечённые к этому [Concept('great_project', 'грандиозному проекту')|E], привнесли бы ценный опыт в строительство флота."
+
+ great_project_type_construct_great_fleet_01_contribution_military_wharf: "Военная пристань"
+ great_project_type_construct_great_fleet_01_contribution_military_wharf_desc: "Добавив особую гавань и сухой док к [Concept('great_project', 'грандиозному проекту')|E], мы повысим надёжность и долговечность флота."
+
+ great_project_type_construct_great_fleet_01_contribution_merchant_quays: "Торговый причал"
+ great_project_type_construct_great_fleet_01_contribution_merchant_quays_desc: "Добавив особый торговый квартал к [Concept('great_project', 'грандиозному проекту')|E], мы увеличим доходы и поток торговли в морском порту."
+
+ great_project_type_construct_great_fleet_02_contribution_materials: "Материалы"
+ great_project_type_construct_great_fleet_02_contribution_materials_desc: "Ничего нельзя создать на пустом месте. Мы предоставим [Concept('great_project', 'грандиозному проекту')|E] все строительные материалы, необходимые для завершения работ по строительству флота." # PLACEHOLDER
+
+ great_project_type_construct_great_fleet_02_contribution_workforce: "Рабочая сила"
+ great_project_type_construct_great_fleet_02_contribution_workforce_desc: "Корабли сами себя не построят! Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] рабочей силой, необходимой для выполнения этой важной задачи." # PLACEHOLDER
+
+ great_project_type_construct_great_fleet_02_contribution_engineers: "Морские инженеры"
+ great_project_type_construct_great_fleet_02_contribution_engineers_desc: "Опытные корабелы, привлечённые к этому [Concept('great_project', 'грандиозному проекту')|E], привнесли бы ценный опыт в строительство флота." # PLACEHOLDER
+
+ great_project_type_construct_great_fleet_02_contribution_military_wharf: "Военная пристань"
+ great_project_type_construct_great_fleet_02_contribution_military_wharf_desc: "Добавив особую гавань и сухой док к [Concept('great_project', 'грандиозному проекту')|E], мы повысим надёжность и долговечность флота." # PLACEHOLDER
+
+ great_project_type_construct_great_fleet_02_contribution_merchant_quays: "Торговый причал"
+ great_project_type_construct_great_fleet_02_contribution_merchant_quays_desc: "Добавив особый торговый квартал к [Concept('great_project', 'грандиозному проекту')|E], мы увеличим доходы и поток торговли в морском порту." # PLACEHOLDER
+
+ great_project_type_construct_great_fleet_03_contribution_materials: "Материалы"
+ great_project_type_construct_great_fleet_03_contribution_materials_desc: "Ничего нельзя создать на пустом месте. Мы предоставим [Concept('great_project', 'грандиозному проекту')|E] все строительные материалы, необходимые для завершения работ по строительству флота." # PLACEHOLDER
+
+ great_project_type_construct_great_fleet_03_contribution_workforce: "Рабочая сила"
+ great_project_type_construct_great_fleet_03_contribution_workforce_desc: "Корабли сами себя не построят! Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] рабочей силой, необходимой для выполнения этой важной задачи."
+
+ great_project_type_construct_great_fleet_03_contribution_engineers: "Морские инженеры"
+ great_project_type_construct_great_fleet_03_contribution_engineers_desc: "Опытные корабелы, привлечённые к этому [Concept('great_project', 'грандиозному проекту')|E], привнесли бы ценный опыт в строительство флота."
+
+ great_project_type_construct_great_fleet_03_contribution_military_wharf: "Военная пристань"
+ great_project_type_construct_great_fleet_03_contribution_military_wharf_desc: "Добавив особую гавань и сухой док к [Concept('great_project', 'грандиозному проекту')|E], мы повысим надёжность и долговечность флота."
+
+ great_project_type_construct_great_fleet_03_contribution_merchant_quays: "Торговый причал"
+ great_project_type_construct_great_fleet_03_contribution_merchant_quays_desc: "Добавив особый торговый квартал к [Concept('great_project', 'грандиозному проекту')|E], мы увеличим доходы и поток торговли в морском порту."
 
  ### Mend the Realm ###
  great_project_type_mend_the_realm: "Исцелить державу"
@@ -168,3 +206,80 @@
  great_project_type_mend_the_realm_contribution_gardeners: "Процветание"
  great_project_type_mend_the_realm_contribution_gardeners_desc: "Процветание"
  lotr_mend_realm_spiritual_bypass_elven_stronghold_limit: "Позволяет построить дополнительную #TOOLTIP:BUILDING,elven_settlement_03 #L крепость#!#! в эльфийских графствах"
+
+ ### Osgiliath ###
+ great_project_type_construct_osgiliath_02: "Укрепить руины Осгилиата"
+ great_project_type_construct_osgiliath_02_desc: "Мы должны укрепить руины Осгилиата, чтобы сделать его более защищённым от вражеских войск." # PLACEHOLDER
+ great_project_type_construct_osgiliath_02_county: "Это должен быть Осгилиат"
+
+ great_project_type_construct_osgiliath_02_contribution_materials: "Стройматериалы"
+ great_project_type_construct_osgiliath_02_contribution_materials_desc: "Ничего нельзя создать на пустом месте. Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] всеми строительными материалами, необходимыми для завершения работ по возведению укреплений." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_02_contribution_workforce: "Рабочая сила"
+ great_project_type_construct_osgiliath_02_contribution_workforce_desc: "Руины сами себя не укрепят! Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] рабочей силой, необходимой для выполнения этой великой задачи." # PLACEHOLDER 
+
+ great_project_type_construct_osgiliath_02_contribution_blacksmiths: "Кузнецы"
+ great_project_type_construct_osgiliath_02_contribution_blacksmiths_desc: "Опытные кузнецы, привлечённые к этому [Concept('great_project', 'грандиозному проекту')|E], облегчат гарнизону обслуживание своего оружия в течение более длительного времени." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_02_contribution_barracks: "Казармы"
+ great_project_type_construct_osgiliath_02_contribution_barracks_desc: "Добавив к [Concept('great_project', 'грандиозному проекту')|E] казармы и военный квартал, мы повысим моральный дух солдат и продолжительность их службы." # PLACEHOLDER 
+
+ great_project_type_construct_osgiliath_02_contribution_training_grounds: "Тренировочные площадки"
+ great_project_type_construct_osgiliath_02_contribution_training_grounds_desc: "Добавив к [Concept('great_project', 'грандиозному проекту')|E] специально отведённые тренировочные площадки, мы повысим боевые навыки солдат гарнизона." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_03: "Реконструкция Осгилиата"
+ great_project_type_construct_osgiliath_03_desc: "Мы должны начать восстановление инфраструктуры Осгилиата, поскольку есть много желающих переехать туда." # PLACEHOLDER
+ great_project_type_construct_osgiliath_03_county: "Это должен быть Осгилиат"
+
+ great_project_type_construct_osgiliath_03_contribution_materials: "Стройматериалы"
+ great_project_type_construct_osgiliath_03_contribution_materials_desc: "Ничего нельзя создать на пустом месте. Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] всеми строительными материалами, необходимыми для завершения работ по строительству новых зданий в Осгилиате." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_03_contribution_workforce: "Рабочая сила"
+ great_project_type_construct_osgiliath_03_contribution_workforce_desc: "Города сами себя не отстраивают! Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] рабочей силой, необходимой для выполнения этой грандиозной задачи." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_03_contribution_housing: "Дома"
+ great_project_type_construct_osgiliath_03_contribution_housing_desc: "Включив строительство новых жилищ в план этого [Concept('great_project', 'грандиозного проекта')|E], мы могли бы ускорить начало заселения Осгилиата." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_03_contribution_guilds: "Возрождение гильдий"
+ great_project_type_construct_osgiliath_03_contribution_guilds_desc: "Воссоздание гильдий в рамках этого [Concept('great_project', 'грандиозного проекта')|E] повысит скорость строительства зданий в Осгилиате." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_03_contribution_bridges: "Восстановление мостов"
+ great_project_type_construct_osgiliath_03_contribution_bridges_desc: "Восстановление мостов в рамках [Concept('great_project', 'грандиозного проекта')|E] облегчит передвижение по Осгилиату и поспособствует доставке товаров из Итилиэна в столицу." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_04: "Восстановление Осгилиата"
+ great_project_type_construct_osgiliath_04_desc: "Мы должны начать окончательное восстановление Осгилиата, чтобы он вновь стал жемчужиной Андуина." # PLACEHOLDER
+ great_project_type_construct_osgiliath_04_county: "Это должен быть Осгилиат"
+
+ great_project_type_construct_osgiliath_04_contribution_materials: "Стройматериалы"
+ great_project_type_construct_osgiliath_04_contribution_materials_desc: "Ничего нельзя создать на пустом месте. Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] всеми строительными материалами, необходимыми для завершения работ по восстановлению Осгилиата." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_04_contribution_workforce: "Рабочая сила"
+ great_project_type_construct_osgiliath_04_contribution_workforce_desc: "Города сами себя не отстраивают! Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] рабочей силой, необходимой для выполнения этой грандиозной задачи." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_04_contribution_granaries: "Зернохранилища"
+ great_project_type_construct_osgiliath_04_contribution_granaries_desc: "Строительство зернохранилищ в рамках этого [Concept('great_project', 'грандиозного проекта')|E] упростило бы хранение продовольствия и урожая на зиму и длительные осады." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_04_contribution_walls: "Восстановление великих стен Осгилиата"
+ great_project_type_construct_osgiliath_04_contribution_walls_desc: "Включив восстановление стен в план [Concept('great_project', 'грандиозного проекта')|E] мы сделаем восстановленный Осгилиат намного более безопасным и его будет легче защищать." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_04_contribution_ports: "Основание портов"
+ great_project_type_construct_osgiliath_04_contribution_ports_desc: "Основание портов в рамках [Concept('great_project', 'грандиозного проекта')|E] облегчит перемещение войск и торговлю через Андуин в восстановленный Осгилиат." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_05: "Восстановление Звёздного купола"
+ great_project_type_construct_osgiliath_05_desc: "Теперь, когда город восстановлен, мы наконец-то можем восстановить Звёздный купол." # PLACEHOLDER
+ great_project_type_construct_osgiliath_05_county: "Это должен быть Осгилиат"
+
+ great_project_type_construct_osgiliath_05_contribution_materials: "Стройматериалы"
+ great_project_type_construct_osgiliath_05_contribution_materials_desc: "Ничего нельзя создать на пустом месте. Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] всеми строительными материалами, необходимыми для завершения работы по восстановлению Великой цитадели." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_05_contribution_workforce: "Рабочая сила"
+ great_project_type_construct_osgiliath_05_contribution_workforce_desc: "Нужно построить цитадель! Мы обеспечим [Concept('great_project', 'грандиозный проект')|E] рабочей силой, необходимой для выполнения этой грандиозной задачи." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_05_contribution_statues: "Статуи королей"
+ great_project_type_construct_osgiliath_05_contribution_statues_desc: "Включение изваяния статуй древних королей в план этого [Concept('great_project', 'грандиозного проекта')|E] стало бы великим памятником успеху восстановления Осгилиата." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_05_contribution_banners: "Большие знамёна"
+ great_project_type_construct_osgiliath_05_contribution_banners_desc: "Изготовление в рамках [Concept('great_project', 'грандиозного проекта')|E] знамён, связанных с различными важными моментами в истории Гондора, станет отличным памятником истории." # PLACEHOLDER
+
+ great_project_type_construct_osgiliath_05_contribution_thrones: "Троны королей"
+ great_project_type_construct_osgiliath_05_contribution_thrones_desc: "Создание в рамках [Concept('great_project', 'грандиозного проекта')|E] тронов наподобие тех, на которых восседали Исильдур и Анарион, станет великим памятником основателям Гондора." # PLACEHOLDER
