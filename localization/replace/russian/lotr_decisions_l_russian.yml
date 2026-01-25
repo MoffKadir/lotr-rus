@@ -195,6 +195,11 @@
  decision_utter_south_integrate_mag_tumag_elven_confirm: "Включить Маг и Тумаг в границы державы."
  decision_utter_south_integrate_mag_tumag_elven_tooltip: "Навсегда присоединить самоуправляемых магрийцев к нашей державе."
 
+ decision_terilaen_library: "Посетить библиотеку Айнглада"
+ decision_terilaen_library_desc: "[Concept('cuind', 'Куинд')|E] обитали в густых лесах #L [GetTitleByKey('k_drel').GetNameNoTier]а#! на протяжении тысячелетий. Но было время, давно прошедшее, когда наши родичи странствовали, посещая другие берега под другими звёздами. Если сохранились какие-либо записи об этих путешествиях, то лучшее место для их поисков - королевский дворец."
+ decision_terilaen_library_tooltip: "Изучить историю [Concept('cuind', 'куинд')|E]"
+ decision_terilaen_library_confirm: "Я немедленно отправлюсь в путь."
+
  ### Maglor Decision ###
  decision_annihilate_abhorred: "Уничтожить Саурона Отвратительного"
  decision_annihilate_abhorred_tooltip: "Раз и навсегда уничтожить слугу Моргота"
@@ -397,13 +402,10 @@
 
  commit_suicide_decision_desc_black_breath: "Я чувствую холод, как будто иду сквозь кошмар. Солнце больше не греет мою кожу. Никто никогда не выздоравливает от этой странной болезни, я просто хочу забыться и уснуть навсегда."
 
- ritual_suicide_decision: "Принять Дар людей"
- ritual_suicide_decision_desc: "Пришло время отправиться за пределы мира и узнать, что скрывается за гранью жизни."
- ritual_suicide_decision_tooltip: "Вы совершите самоубийство, добровольно отдав свою жизнь."
- ritual_suicide_decision_confirm: "В горе мы уходим, но не в отчаянии!"
-
- lotr_lay_down_life_decision: "Уйти из жизни"
- lotr_lay_down_life_decision_desc: "Моя жизнь была долгой и насыщенной, но мне не суждено было стать [Select_CString(ROOT.Char.IsFemale, 'вечной', 'вечным' )]. Я [Select_CString(ROOT.Char.IsFemale, 'выбрала', 'выбрал' )] смертную жизнь и смертную судьбу. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] уйти из жизни и позволить править следующему поколению."
+ lotr_lay_down_life_decision: "Принять Дар людей"
+ lotr_lay_down_life_decision_desc: "[Concept('men', 'Людской')|E] удел - умереть и уйти за пределы мира, избавившись от печалей [Concept('ardaconcept', 'Арды')|E] омрачённой. Близится моё время, и следующее поколение готово занять моё место.\n\nИбо если я не уйду сейчас, то скоро мне придётся расстаться с жизнью не по собственному желанию. Мне дана милость уйти по своей воле и вернуть дар. Посему я погружусь в сон.\n\n#TOLKIENQUOTE Слушай! Не навек привязаны мы к кругам мира, и за ними есть больше, чем память.#!"
+ lotr_lay_down_life_decision_tooltip: "Вы добровольно уйдёте из жизни."
+ lotr_lay_down_life_decision_confirm: "Мы должны уйти в печали, но не в отчаянии!"
 
  decision_h_middle_earth: "Претендовать на власть над всем Средиземьем"
  decision_h_middle_earth_desc: "Я [Select_CString(ROOT.Char.IsFemale, 'подчинила', 'подчинил' )] все земли и добрые народы [Concept('middleearth', 'Средиземье')|E] своей власти, и теперь никто не может оспаривать моё правление!"
@@ -411,6 +413,12 @@
  decision_h_middle_earth_tooltip: "Претендовать на всё Средиземье как на свои законные владения."
  decision_h_middle_earth_tt: "Вы получите титул [Concept('hegemony', 'гегемонии')|E], охватывающей всё [Concept('middleearth', 'Средиземье')|E]"
  decision_h_middle_earth_trigger: "Вы владеете всеми [Concept('county', 'графствами')|E] в [GetGeographicalRegion('middleearth').GetName]"
+
+ decision_fire_intro_events: "Повторно вызвать вступительное событие расы"
+ decision_fire_intro_events_desc: "Если вы забыли специальную механику своей расы, вы можете принять это решение, чтобы ещё раз увидеть вступительное событие."
+ decision_fire_intro_events_confirm: "Упс."
+ decision_fire_intro_events_tooltip: "Повторно вызвать событие механики расы"
+ decision_fire_intro_events_tt: "Вы увидите вступительное событие своей расы."
 
  ##########################
  ### Dunedain Decisions ###
@@ -1753,6 +1761,8 @@
  has_gai_alliance: "Вы обратились к державе [GetTitleByKey('d_gai').GetNameNoTier]."
  mardat_lost_bellakar_invasion: "Вторжение державы [GetTitleByKey('k_ray').GetNameNoTier] в [GetTitleByKey('e_bellakar').GetNameNoTier] завершилось неудачей."
  some_rebel_requierments_impossible: "Не все из перечисленных требований можно выполнить. Какие из них вам доступны, зависит от вашей конфессии."
+ mardat_purge_has_been_inherited: "Мардат больше не правит державой [GetTitleByKey('k_ray').GetNameNoTier]."
+ ray_high_resistance: "Сопротивление выше #N 14#! ед. и больше усмирения."
 
  ### Vatalinar/Kanivatra decisions ###
  decision_investigate_ray: "Изучить тени Раи"
@@ -3209,6 +3219,14 @@
  decision_contact_barazimabul_tooltip: "Привлечь поселенцев ради экономических бонусов."
  decision_contact_barazimabul.tt: "[GetTitleByKey('k_barazimab_ul').GetNameNoTier] принадлежит [Concept('dwarves', 'гномам')|E]."
  decision_contact_barazimabul.tt_2: "В регионе [GetTitleByKey('k_raimumahal').GetNameNoTier] нет [Concept('goblins', 'гоблинов')|E] или [Concept('orcs', 'орков')|E]."
+
+ decision_reclaim_mabladdum: "Вернуть Маблад-дум"
+ decision_reclaim_mabladdum_desc: "Древние чертоги наших отцов, давно осквернённые отродьями Улхаша, снова огласятся звуками [Concept('dwarven', 'гномьего')|E] ремесла."
+ decision_reclaim_mabladdum_confirm: "[Glossary('Барук кхазад','baruk_khazad_gloss')]!"
+ decision_reclaim_mabladdum_tooltip: "Укрепить контроль над ревним королевством Маблад-дум."
+ decision_reclaim_mabladdum.tt: "Вы нашли всех пропавших гномьих экспедиционеров."
+ decision_reclaim_mabladdum.tt_2: "Вы восстановили связи с #L [GetTitleByKey('k_barazimab_ul').GetNameNoTier]ом#!."
+ decision_reclaim_mabladdum.tt_3: "Выберите нового правителя державы [GetTitleByKey('k_mablad_dum').GetNameNoTier]."
 
  ## Dwarven Beardcare loc
  beard_care_standard_modifier: "Красивая борода"
