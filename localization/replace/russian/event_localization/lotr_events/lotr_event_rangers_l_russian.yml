@@ -812,6 +812,8 @@
  rangers.1010.a: "Помощь всегда желанна."
  rangers.1010.a.tt: "#S Это конец текущего сюжетного контента#!\n"
 
+ ## Ranger Laamp events
+
  rangers.9101.opening: "Мой своенравный вассал,"
  rangers.9101.desc: "Прошло более полутора лет с тех пор, как вы в последний раз были в нашей державе. Не забывайте, что ваша честь обязывает вас защищать нашу землю и ее жителей.\nВы немедленно вызваны в нашу столицу.\n\nЕсли вы не ответите на мой призыв, на наших землях вас заклеймят как [Select_CString(ROOT.Char.IsFemale, 'предательницу', 'предателя' )]."
  rangers.9101.a: "Прошу прощения, [ROOT.Char.Custom('FormOfAddressForLiege')], я возвращаюсь домой."
@@ -826,8 +828,8 @@
 
  rangers.9301.t: "Кризис совести"
  rangers.9301.desc: "[Select_CString(companion.IsFemale, 'Моя', 'Мой' )] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('companion'))] [companion.GetNameNoTooltip] входит в мою палатку с озабоченным выражением лица.\n\n«Лагерь гудит от новостей о том, что вы решили "
- rangers.9301.desc.neutral: "принять #L [ROOT.Char.GetFaith.GetName|l]ую#! веру, отказавшись от наших старых убеждений.\nОни задаются вопросом, что же теперь с нами будет: мы не сможем оставаться следопытами, если будем держаться в стороне!»"
- rangers.9301.desc.purpose: "изменить наши цели и перестать быть следопытами.\nОни задаются вопросом, что же теперь с нами будет»."
+ rangers.9301.desc.neutral: "принять #L [ROOT.Char.GetFaith.GetName|l]ую#! веру, отказавшись от наших старых убеждений.\nОни задаются вопросом, что же теперь с нами будет: мы не сможем оставаться [Concept('rangers_laamp', 'следопытами')|E], если будем держаться в стороне!»"
+ rangers.9301.desc.purpose: "изменить наши цели и перестать быть [Concept('rangers_laamp', 'следопытами')|E].\nОни задаются вопросом, что же теперь с нами будет»."
  rangers.9301.a: "Я [Select_CString(ROOT.Char.IsFemale, 'устала', 'устал' )] от этой войны, давай убежим от всего этого."
  rangers.9301.b: "Ты [Select_CString(companion.IsFemale, 'права', 'прав' )], я не знаю, что на меня нашло."
 
@@ -842,8 +844,8 @@
  rangers.9400.a: "Понятно."
 
  rangers.9401.t: "Принесённая клятва"
- rangers.9401.desc: "Я и [Select_CString(ranger_suzerain.IsFemale, 'моя владычица и повелительница', 'мой владыка и повелитель' )] [ranger_suzerain.GetName] связаны одной цепью - я долго [Select_CString(ROOT.Char.IsFemale, 'служила', 'служил' )] [Select_CString(ranger_suzerain.IsFemale, 'ей', 'ему' )] в качестве [Concept('ranger_laamp', 'следопыта')|E], но сегодня меня одолевают сомнения: [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] ли я соблюдать свои клятвы или мне следует отказаться от них и освободиться от всех обязательств?"
+ rangers.9401.desc: "Я и [Select_CString(ranger_suzerain.IsFemale, 'моя повелительница', 'мой повелитель' )] [ranger_suzerain.GetName] связаны одной цепью - я долго [Select_CString(ROOT.Char.IsFemale, 'служила', 'служил' )] [Select_CString(ranger_suzerain.IsFemale, 'ей', 'ему' )] в качестве [Concept('ranger_laamp', 'следопыта')|E], но сегодня меня одолевают сомнения: [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] ли я соблюдать свои клятвы или мне следует отказаться от них и освободиться от всех обязательств?"
  rangers.9401.a: "Я останусь [Select_CString(ROOT.Char.IsFemale, 'верна', 'верен' )] своему слову."
  rangers.9401.a.tt: "[ranger_suzerain.GetName] останется вашим [Concept('liege', 'сюзереном')|E]"
  rangers.9401.b: "Довольно! Мы станем вольными следопытами!"
- rangers.9401.b.tt: "Вы освободитесь от клятвы, данной персонажу [ranger_suzerain.GetName] и начнёте как свободные следопыты"
+ rangers.9401.b.tt: "Вы освободитесь от клятвы, данной персонажу [ranger_suzerain.GetName] и начнёте как свободные [Concept('ranger_laamp', 'следопыты')|E]"

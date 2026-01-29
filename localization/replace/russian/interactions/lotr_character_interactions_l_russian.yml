@@ -171,6 +171,11 @@
  lotr_end_truces_notification: "Перемирие подошло к концу"
 
  request_leave_interaction: "Попросить освобождение от клятв"
- request_leave_interaction_desc: "Попросить, чтобы [recipient.GetName] [Select_CString(recipient.IsFemale, 'освободила', 'освободил' )] вас от вассальной клятвы."
+ request_leave_interaction_desc: "Попросить, чтобы [recipient.GetName] [Select_CString(recipient.IsFemale, 'освободила', 'освободил' )] вас от клятвы верности."
+ REQUEST_LEAVE_INTERACTION_PROPOSAL: "Я верно [Select_CString(actor.IsFemale, 'служила', 'служил' )] вам и смиренно прошу освободить меня от клятвы верности, данной вам."
+ REQUEST_LEAVE_ACCEPT: "Согласиться"
+ REQUEST_LEAVE_REJECT: "Отказаться"
  request_leave_interaction_accept_tt: "[recipient.GetName] больше не ваш сюзерен"
  request_leave_interaction_aibehavior_no_threats_tt: "Нет непосредственных угроз: $VALUE|=+0$"
+ request_leave_interaction_notification_accepted: "[recipient.GetTitledFirstNameNoTooltip|U] [Select_CString(recipient.IsFemale, 'согласилась', 'согласился' )] освободить вас от вашей клятвы!"
+ request_leave_interaction_notification_refused: "[recipient.GetTitledFirstNameNoTooltip|U] [Select_CString(recipient.IsFemale, 'отказалась', 'отказался' )] освободить вас от вашей клятвы!"

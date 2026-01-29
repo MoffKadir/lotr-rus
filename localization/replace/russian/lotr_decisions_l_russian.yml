@@ -90,6 +90,11 @@
  decision_rebuild_halls_bornmir_confirm: "Пусть великий чертог возвысится вновь!"
  decision_rebuild_halls_bornmir_tooltip: "Восстановить чертог Борнмира"
 
+ decision_purchase_edhellond: "Купить Эделлонд"
+ decision_purchase_edhellond_desc: "На юге, у берегов [Concept('gondor', 'Гондора')|E], когда-то стояла гавань Эделлонд. Многие [Concept('sindarelves', 'синдар')|E] и [Concept('silvanelves', 'лесные эльфы')|E] отплывали оттуда в [Concept('valinor', 'Валинор')|E], но в конце [Concept('thirdage', 'Третьей эпохи')|E] порт был заброшен. Сейчас люди Гондора хранят его, но если бы мы возобновили узы дружбы между [Concept('elves', 'эльфами')|E] и [Concept('dunedain', 'дунэдайн')|E], мы, возможно, смогли бы получить их разрешение вернуть Эделлонд под власть эльфов..."
+ decision_purchase_edhellond_tooltip: "Купить Эделлонд у Гондора"
+ decision_purchase_edhellond_confirm: "Эльфы вернутся в Эделлонд."
+
  decision_noldor_eriador: "Вернуть наследие Гиль-галада"
  decision_noldor_eriador_desc: "Во времена расцвета его королевства во [Concept('secondage', 'Второй эпохе')|E] власть Гиль-галада простиралась на восток до границ [Concept('greenwood', 'Зеленолесья')|E]. Он считался владыкой большей части [Concept('eriador', 'Эриадора')|E], защитником и сюзереном как [Concept('men', 'людей')|E], так и [Concept('elves', 'эльфов')|E]. Хотя колонизация [Concept('dunedain', 'дунэдайн')|E] и последующее основание [Concept('arnor', 'Арнора')|E] привели к отказу от этой власти, не все забыли эту древнюю истину.\n\nЕсли эльфы вновь проявят себя как хранители всего Эриадора, великолепие наследия Гиль-галада может быть возрождено."
  decision_noldor_eriador_confirm: "Пусть Эриадор вновь процветает в мире!"
@@ -3045,7 +3050,7 @@
 
  decision_restore_harad_province.tt.tedyathani: "[GetTitleByKey('e_faithful_tedjin').GetNameNoTier]"
  decision_restore_harad_province.tt.tedyathani_desc: ""
- integrate_province_tedyathani: "#T #V Уничтожить [GetTitleByKey('e_faithful_tedjin').GetNameNoTier] захватчиков с востока#! #!\n\nТедьятани - держава захватчиков с востока, нельзя допустить, чтобы она продолжала противостоять землям [Concept('harad', 'Харада')|E]."
+ integrate_province_tedyathani: "#T #V Уничтожить [GetTitleByKey('e_faithful_tedjin').GetNameNoTier] захватчиков с востока#! #!\n\nТеджатани - держава захватчиков с востока, нельзя допустить, чтобы она продолжала противостоять землям [Concept('harad', 'Харада')|E]."
 
  decision_restore_harad_province.tt.sirayn: "[GetTitleByKey('e_sirayn').GetNameNoTier]"
  decision_restore_harad_province.tt.sirayn_desc: ""
@@ -4072,13 +4077,13 @@
  formalise_the_league_decision_confirm: "Пусть Лига будет создана под моим правлением!"
  formalise_the_league_decision_vassal_req: "В регионе [GetTitleByKey('k_lyneria').GetNameNoTier] есть как минимум #high 6#! [Concept('confederates', 'конфедератов')|E] с прибрежными [Concept('counties', 'графствами')|E]"
  formalise_the_league_decision_vassal_income_level_req: "Ни один другой [Concept('confederate', 'конфедерат')|E] не имеет более высокого [Concept('income', 'дохода')|E] в [gold_i][Concept('gold', 'золоте')|E]"
- formalise_the_league_decision_kingdom_creation_tt: "Вы создадите державу [GetTitleByKey('k_lyneria').GetNameNoTier] и все[Concept('confederates', 'конфедераты')|E] станут вашими [Concept('vassals', 'вассалами')|E]"
+ formalise_the_league_decision_kingdom_creation_tt: "Вы создадите державу [GetTitleByKey('k_lyneria').GetNameNoTier] и все [Concept('confederates', 'конфедераты')|E] станут вашими [Concept('vassals', 'вассалами')|E]"
  formalise_the_league_decision_succession_tt: "[GetTitleByKey('k_lyneria').GetNameNoTier] получит [Concept('succession_law', 'закон наследования')|E] «[GetLaw('confederation_elective_succession_law').GetName]»"
  formalise_the_league_decision_king_modifier_tt: "Вы получите модификатор [GetModifier('formalise_the_league_decision_king_modifier').GetNameWithTooltip] на #high 15 лет#!"
  formalise_the_league_decision_vassal_modifier_tt: "Все [Concept('vassals', 'вассалы')|E] получат модификатор [GetModifier('formalise_the_league_decision_vassal_modifier').GetNameWithTooltip] на #high 15 лет#!"
  formalise_the_league_decision_county_modifier_tt: "Все [Concept('counties', 'графства')|E] получат модификатор [GetModifier('formalise_the_league_decision_lands_modifier').GetNameWithTooltip] на #V 30#! лет"
  formalise_the_league_decision_king_modifier: "Архитектор Лиги"
- formalise_the_league_decision_king_modifier_desc: "Этот персонаң объединил независимые города-государства Линерийской лиги в единое [Concept('kingdom', 'королевство')|E], создав прочные торговые, правовые и оборонительные связи."
+ formalise_the_league_decision_king_modifier_desc: "Этот персонаж объединил независимые города-государства Линерийской лиги в единое [Concept('kingdom', 'королевство')|E], создав прочные торговые, правовые и оборонительные связи."
  formalise_the_league_decision_vassal_modifier: "Участник Конкордата"
  formalise_the_league_decision_vassal_modifier_desc: "Город этого персонажа объявил о своей лояльности новой хартии Лиги, присоединившись к ее общей безопасности и процветанию."
  formalise_the_league_decision_lands_modifier: "Территория хартии Лиги"
