@@ -178,6 +178,12 @@
  decision_reveal_necromancer_tt: "Ваша держава граничит с провинцией [GetTitleByKey('c_amon_lanc').GetNameNoTier]"
  decision_reveal_necromancer_tt_2: "Некромант владеет Дол-Гулдуром"
 
+ decision_mirror_of_galadriel: "Зеркало Галадриэль"
+ decision_mirror_of_galadriel_desc: "Зеркало показывает многое, чего не могут предсказать даже мудрейшие. То, что было... то, что есть... и нечто... чего ещё не произошло.\n\nЗаглянете ли вы в зеркало?"
+ decision_mirror_of_galadriel_tooltip: "Взглянуть в зеркало Галадриэль"
+ decision_mirror_of_galadriel_confirm: "Да."
+ decision_mirror_of_galadriel_tt: "Вы владеете [Concept('artifact', 'зеркалом Галадриэль')|E]"
+
  decision_delve_ardinak: "Очистить Ардинак"
  decision_delve_ardinak_tooltip: "Очистить проклятый остров Ардинак."
  decision_delve_ardinak_desc: "Давным-давно [Concept('ardinak', 'Ардинак')|E] был домом [Concept('avari', 'авари')|E]. Там поселилось великое зло, слуга [Concept('morgothcharacter', 'Моргота')|E], который убил Тайналанна, короля [Concept('kinnlai', 'кинн-лай')|E]. Хотя Тайналанн убил чудовище, оно, в свою очередь, прокляло остров.\n\nМы должны развеять проклятие, если хотим когда-нибудь вернуть потерянный [Concept('dilsulinol', 'Дилсулинол')|E]."
@@ -430,6 +436,13 @@
  decision_fire_intro_events_confirm: "Упс."
  decision_fire_intro_events_tooltip: "Повторно вызвать событие механики расы"
  decision_fire_intro_events_tt: "Вы увидите вступительное событие своей расы."
+
+ decision_elevate_defensive_alliance_into_being_permanent_title: "Скрепить вечный союз"
+ decision_elevate_defensive_alliance_into_being_permanent_desc: "Договор между нашими народами служил прочным щитом, но он остаётся привязанным к моей недолговечной жизни. Когда меня не станет, [Concept('realm', 'держава')|E] не должна остаться в одиночестве.\n\nПришло время скрепить эту дружбу в чём—то большем, чем просто пергамент, - создать союз, который переживёт королей и сохранится после смерти. Пусть наши наследники будут связаны как братья, объединившись против любой тени, которая может подняться."
+ decision_elevate_defensive_alliance_into_being_permanent_confirm: "Узы, что не разорвёт даже смерть!"
+ decision_elevate_defensive_alliance_into_being_permanent_tooltip: "Заключить постоянный союз между вашими [Concept('realms', 'державами')|E]."
+ decision_elevate_defensive_alliance_into_being_permanent.tt_1: "Вы помогали друг другу как минимум в #V 10#! [Concept('defensive_alliance', 'оборонительных')|E] войнах\n$BULLET_WITH_TAB$Текущее значение: #V [GetPlayer.MakeScope.ScriptValue('lotr_defensive_wars_joined')|0]#!"
+ decision_elevate_defensive_alliance_into_being_permanent.tt_2: "Вы и [fellow_member.GetName] заключите постоянный союз"
 
  ##########################
  ### Dunedain Decisions ###
@@ -1162,7 +1175,7 @@
  #######################
  ### Umbar Decisions ###
  #######################
- decision_harnen_kingdom: "Объединить гавани Харнендора" #  Unify the Havens of Mirlond and Ramlond
+ decision_harnen_kingdom: "Объединить гавани Харнендора" #Unify the Havens of Mirlond and Ramlond
  decision_harnen_kingdom_adunaic: "Объединить гавани Нинзайяна"
  decision_harnen_kingdom_desc: "На протяжении многих поколений Рамлонд и Мирлонд враждовали за контроль над речной торговлей Харнена. Однако, если бы две гавани объединились под властью одного владыки, они могли бы подавить всю торговлю, желающую попасть в Харад через Харнен. Давайте же похороним прошлое и вместе пойдем вперед в будущее, богаче и сильнее, чем прежде!"
  decision_harnen_kingdom_tooltip: "Объединить гавани в устье Харнена"
@@ -1879,17 +1892,17 @@
  decision_ask_to_join_balan_lai_effect: "Каждый [GetTrait('balan_lai_member').GetName( GetNullCharacter )] получит возможность наложить вето."
  decision_ask_to_join_balan_lai_effect2: "Если право вето не будет применено, вы получите свойство «[GetTrait('balan_lai_member').GetName( GetNullCharacter )]», войдя в состав совета."
 
- #  decision_call_meeting_of_the_balan_lai: "Call a Meeting of the Bâlan-Lâi"
- #  decision_call_meeting_of_the_balan_lai_tooltip: "Assemble the members of the Bâlan-Lâi to discuss an issue of your choice"
- #  decision_call_meeting_of_the_balan_lai_desc: "The time has come for me to seek a place among the esteemed ranks of the [balan_lai|E]. I will make a formal appeal to its current members, making the case for my investiture as the newest hereditary member of the Council.\n\nI will state my intention to honor our traditions, bring fresh perspectives, and contribute to the enduring legacy of the Valdali and our people."
- #  CHOOSE_DISCUSSION_TOPIC_NEXT_STEP_BUTTON: "Choose issue to discuss"
- #  decision_balan_lai_northern_tithe: "Review Northern Tithe"
- #  decision_balan_lai_building: "Building Efforts"
- #  decision_balan_lai_control: "Enforce Order"
- #  decision_balan_lai_military_training: "Training Exercises"
- #  decision_balan_lai_faith_conversion: "Encourage Proselytism"
- #  decision_balan_lai_culture_conversion: "Native Integration"
- #  decision_call_meeting_of_the_balan_lai_confirm: "Send the missives!"
+ #decision_call_meeting_of_the_balan_lai: "Call a Meeting of the Bâlan-Lâi"
+ #decision_call_meeting_of_the_balan_lai_tooltip: "Assemble the members of the Bâlan-Lâi to discuss an issue of your choice"
+ #decision_call_meeting_of_the_balan_lai_desc: "The time has come for me to seek a place among the esteemed ranks of the [balan_lai|E]. I will make a formal appeal to its current members, making the case for my investiture as the newest hereditary member of the Council.\n\nI will state my intention to honor our traditions, bring fresh perspectives, and contribute to the enduring legacy of the Valdali and our people."
+ #CHOOSE_DISCUSSION_TOPIC_NEXT_STEP_BUTTON: "Choose issue to discuss"
+ #decision_balan_lai_northern_tithe: "Review Northern Tithe"
+ #decision_balan_lai_building: "Building Efforts"
+ #decision_balan_lai_control: "Enforce Order"
+ #decision_balan_lai_military_training: "Training Exercises"
+ #decision_balan_lai_faith_conversion: "Encourage Proselytism"
+ #decision_balan_lai_culture_conversion: "Native Integration"
+ #decision_call_meeting_of_the_balan_lai_confirm: "Send the missives!"
 
  #################################
  #### Sauron/Mordor Decisions ####
