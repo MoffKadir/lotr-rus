@@ -1,12 +1,15 @@
 ﻿l_russian:
 
  # Cultures who are formed in the first age or earlier without precise dates are fine without dates in their history loc
+ # Some Second Age cultures with vague origins are also fine without precise dates (such as Druedain)
+ # Make sure loc string isnt too long!
+ # Unless they add flavor, be careful about TMI. Often a better fit for culture descs
 
  ## Ainur ##
  # Holy Ainur
  valar_history_loc: "Величайшие из [Concept('ainurgods', 'айнур')|E], сошедших в [Concept('eaworld', 'Эа')|E]"
  maiar_history_loc: "Меньшие из [Concept('ainurgods', 'айнур')|E], сошедших в [Concept('eaworld', 'Эа')|E]"
- istari_history_loc: "[CULTURE.GetName], которым было предназначено направлять Свободные народы в облике старцев в 1000 г. [Concept('ageTA', 'Т.Э.')|E]"
+ istari_history_loc: "[CULTURE.GetName], посланные в [Concept('middleearth', 'Средиземье')|E] в 1000 г. [Concept('ageTA', 'Т.Э.')|E]"
 
  # Fallen Ainur
  maiar_fallen_history_loc: "[CULTURE.GetName], поддавшиеся тлетворному влиянию [Concept('morgothcharacter', 'Моргота')|E]"
@@ -14,35 +17,33 @@
 
  ## Elves ##
  # Quendi
- minyar_history_loc: "[Concept('elves', 'Эльфы')|E], пробудившиеся первыми в [Concept('cuivienen', 'Куивиэнене')|E] в 1050 г. [Concept('ageYT', 'Э.Д.')|E]"
- tatyar_history_loc: "[Concept('elves', 'Эльфы')|E], пробудившиеся вторыми в [Concept('cuivienen', 'Куивиэнене')|E] в 1050 г. [Concept('ageYT', 'Э.Д.')|E]"
- nelyar_history_loc: "[Concept('elves', 'Эльфы')|E], пробудившиеся третьими в [Concept('cuivienen', 'Куивиэнене')|E] в 1050 г. [Concept('ageYT', 'Э.Д.')|E]"
+ cuivienen_history_loc: "Пробудилась в [Concept('cuivienen', 'Куивиэнене')|E] в 1050 г. [Concept('ageYT', 'Э.Д.')|E]"
 
  # Amanyar
- vanyar_history_loc: "[CULTURE.GetName], отправившиеся в [Concept('thegreatjourney', 'Великий поход')|E] и завершившие его в 1105-1133 г. [Concept('ageYT', 'Э.Д.')|E]"
- noldor_history_loc: "[CULTURE.GetName], отправившиеся в [Concept('thegreatjourney', 'Великий поход')|E] и завершившие его в 1105-1133 г. [Concept('ageYT', 'Э.Д.')|E]"
- teleri_history_loc: "[CULTURE.GetName], отправившиеся в [Concept('thegreatjourney', 'Великий поход')|E] и завершившие его в 1105-1151 г. [Concept('ageYT', 'Э.Д.')|E]"
+ vanyar_history_loc: "Возникла из [CULTURE.GetName|l], завершивших [Concept('greatjourney', 'Великий поход')|E] в 1133 г. [Concept('ageYT', 'Э.Д.')|E]"
+ noldor_history_loc: "$vanyar_history_loc$"
+ teleri_history_loc: "Возникла из [CULTURE.GetName|l], завершивших [Concept('greatjourney', 'Великий поход')|E] в 1151 г. [Concept('ageYT', 'Э.Д.')|E]"
 
  # Umanyar
- sindar_history_loc: "[CULTURE.GetName], оставшиеся в [Concept('beleriand', 'Белерианде')|E], чтобы дождаться своего короля в 1150 г. [Concept('ageYT', 'Э.Д.')|E]"
- falathrim_history_loc: "[CULTURE.GetName], оставшиеся у моря в [Concept('beleriand', 'Белерианде')|E], чтобы дождаться своего короля в 1150 г. [Concept('ageYT', 'Э.Д.')|E]"
- mithrim_history_loc: "[CULTURE.GetName] северного [Concept('beleriand', 'Белерианда')|E], жившие там до 1497 г. [Concept('ageYT', 'Э.Д.')|E]"
- nandor_history_loc: "[CULTURE.GetName], осевшие в [Concept('anduinvale', 'Долине Андуина')|E] в 1115 г. [Concept('ageYT', 'Э.Д.')|E]"
- laiquendi_history_loc: "[CULTURE.GetName], заселившие [Concept('beleriand', 'Белерианд')|E] и объединившиеся с #L [TARGET_CULTURE.GetCollectiveNoun|l]им#! народом после смерти своего короля в 1497 г. [Concept('ageYT', 'Э.Д.')|E]"
- sirrandrai_history_loc: "[CULTURE.GetName], оставшиеся в [Concept('eriador', 'Эриадоре')|E] вместо того, чтобы отправиться в [Concept('beleriand', 'Белерианд')|E] до 1497 г. [Concept('ageYT', 'Э.Д.')|E]"
- silvan_history_loc: "[CULTURE.GetName], решившие остаться в [Concept('anduinvale', 'Долине Андуина')|E] вместо того, чтобы продолжить путь на [Concept('west', 'Запад')|E] до 1497 г. [Concept('ageYT', 'Э.Д.')|E]"
- lasgalendrim_history_loc: "[TARGET_CULTURE.GetName], смешавшиеся с местным #L [CULTURE.GetCollectiveNoun|l]им#! населением в [Concept('greenwoodshort', 'Зеленолесье')|E] в 852 г. [Concept('ageSA', 'В.Э.')|E]"
- galadhrim_history_loc: "[TARGET_CULTURE.GetName], постепенно смешавшиеся с местным #L [CULTURE.GetCollectiveNoun|l]им#! народом начиная с 653 г. [Concept('ageSA', 'В.Э.')|E]"
+ sindar_history_loc: "Возникла из [CULTURE.GetName|l], оставшихся в [Concept('beleriand', 'Белерианде')|E] в 1150 г. [Concept('ageYT', 'Э.Д.')|E]"
+ falathrim_history_loc: "$sindar_history_loc$"
+ mithrim_history_loc: "Возникла из [CULTURE.GetName|l] в северном [Concept('beleriand', 'Белерианде')|E] в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ nandor_history_loc: "Возникла из [CULTURE.GetName|l], заселивших [Concept('anduinvale', 'Долину Андуина')|E] в 1115 г. [Concept('ageYT', 'Э.Д.')|E]"
+ laiquendi_history_loc: "Возникла из [CULTURE.GetName|l] и [TARGET_CULTURE.GetName|l], заселивших [Concept('beleriand', 'Белерианд')|E] в 1497 г. [Concept('ageYT', 'Э.Д.')|E]"
+ sirrandrai_history_loc: "Возникла из [CULTURE.GetName|l], оставшихся в [Concept('eriador', 'Эриадоре')|E] в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ silvan_history_loc: "Возникла из [CULTURE.GetName|l], оставшихся в [Concept('anduinvale', 'Долине Андуина')|E] в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ lasgalendrim_history_loc: "Возникла из [TARGET_CULTURE.GetName|l] и [CULTURE.GetName|l], смешавшихся в [Concept('greenwoodshort', 'Зеленолесье')|E] во [Concept('secondage', 'Второй эпохе')|E]"
+ galadhrim_history_loc: "Возникла из [TARGET_CULTURE.GetName|l], смешавшихся с местными [CULTURE.GetName|l] во [Concept('secondage', 'Второй эпохе')|E]"
 
  # Avari
- avari_history_loc: "[CULTURE.GetName] и [TARGET_CULTURE.GetName|l], отказавшиеся участвовать в [Concept('thegreatjourney', 'Великом походе')|E] в 1105 г. [Concept('ageYT', 'Э.Д.')|E]"
- hisildi_history_loc: "[CULTURE.GetName], оставшиеся в Палисоре в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
- hwenti_history_loc: "Нельярские [CULTURE.GetName|l], переселившиеся на далёкий север в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
- penni_history_loc: "Нельярские [CULTURE.GetName|l], заселившие [Concept('nelornieth', 'Нелорниэт')|E] в [Concept('firstage', 'Первой эпохе')|E]"
- windan_history_loc: "Татьярские [CULTURE.GetName|l], переселившиеся на запад в [Concept('beleriand', 'Белерианд')|E] в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
- cuind_history_loc: "Татьярские [CULTURE.GetName|l], переселившиеся на юго-запад в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
- kinnlai_history_loc: "Нельярские [CULTURE.GetName|l], переселившиеся на Далёкий Юг в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
- kindi_history_loc: "Нельярские [CULTURE.GetName|l], переселившиеся на равнины южного [Concept('rhun', 'Руна')|E] в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ avari_history_loc: "Возникла из [CULTURE.GetName|l] и [TARGET_CULTURE.GetName|l], отказавшиеся от участия в [Concept('thegreatjourney', 'Великом походе')|E] в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ hisildi_history_loc: "Возникла из [CULTURE.GetName|l], оставшихся в Палисоре в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ hwenti_history_loc: "Возникла из нельярских [CULTURE.GetName|l], переселившихся на далёкий север в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ penni_history_loc: "Возникла из нельярских [CULTURE.GetName|l], заселивших [Concept('nelornieth', 'Нелорниэт')|E] в [Concept('firstage', 'Первой эпохе')|E]"
+ windan_history_loc: "Возникла из татьярских [CULTURE.GetName|l], переселившихся на запад в [Concept('beleriand', 'Белерианд')|E] в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ cuind_history_loc: "Возникла из татьярских [CULTURE.GetName|l], переселившихся на юго-запад в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ kinnlai_history_loc: "Возникла из нельярских [CULTURE.GetName|l], переселившихся на Далёкий Юг в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
+ kindi_history_loc: "Возникла из нельярских [CULTURE.GetName|l], переселившихся в [Concept('rhun', 'Рун')|E] в [Concept('yearofthetreesage', 'Эпоху Древ')|E]"
 
  ## Humans ##
  # Adunai Eastern
@@ -108,7 +109,7 @@
 
  gondorian_history_loc: "[CULTURE.GetName] [Concept('gondor', 'Гондора')|E] после их отделения от [Concept('arnor', 'Арнора')|E] во 2 г. [Concept('ageTA', 'Т.Э.')|E]"
  caledhrim_history_loc: "#L [CULTURE.GetCollectiveNoun]ое#! население [Concept('calenardhon', 'Каленардона')|E], смешавшееся с #L [TARGET_CULTURE.GetCollectiveNoun|l]им#! народом в 159 г. [Concept('ageTA', 'Т.Э.')|E]"
- orodbedhrim_history_loc: "[CULTURE.GetName] [Concept('whitemountains', 'Белых гор')|E], смешавшиеся с #L [TARGET_CULTURE.GetCollectiveNoun|l]им#! народом в 800 г. [Concept('ageTA', 'Т.Э.')|E]"
+ orodbedhrim_history_loc: "Возникла при смешении #L [CULTURE.GetCollectiveNoun|l]ого#! и #L [TARGET_CULTURE.GetCollectiveNoun|l]ого#! народов в [Concept('whitemountains', 'Белых горах')|E] в 800 г. [Concept('ageTA', 'Т.Э.')|E]"
  umbaredain_history_loc: "#L [CULTURE.GetCollectiveNoun]ие#! поселенцы [Concept('umbar', 'Умбара')|E], смешавшиеся с местным #L [TARGET_CULTURE.GetCollectiveNoun|l]им#! населением в 1170 г. [Concept('ageTA', 'Т.Э.')|E]"
  harondorim_history_loc: "[CULTURE.GetName] и [TARGET_CULTURE.GetName|l], смешавшиеся по мере ослабления могущества [Concept('gondor', 'Гондора')|E] в 1050 г. [Concept('ageTA', 'Т.Э.')|E]"
 
