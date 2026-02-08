@@ -1824,10 +1824,6 @@
  decision_vatalinar_civil_war_confirm: "Смерть всем изменникам!"
  decision_vatalinar_civil_war_effects_tt: "Вы начнёте гражданскую войну против Мардата из [GetTitleByKey('d_suza_riy').GetNameNoTier] за судьбу державы [GetTitleByKey('k_ray').GetNameNoTier]. Победа в этой войне позволит вам отстранить Мардата от власти, но в случае поражения он захватит державу. #N Мардат призовёт на эту войну всех тайных чужеземных сторонников!#!"
 
-
-
-
-
  ################################
  ####### Tedjin Decisions #######
  ################################
@@ -4230,6 +4226,26 @@
  decision_utter_south_integrate_mag_tumag_mumakan_confirm: "Включить Маг и Тумаг в состав великой державы."
  decision_utter_south_integrate_mag_tumag_mumakan_tooltip: "Воссоединить магрийцев с их потерянными собратьями."
 
+ decision_integrate_gan: "Интегрировать Ган"
+ decision_integrate_gan_desc: "На востоке лежат обширные джунгли и холмы #ONCLICK:TITLE,k_gan #TOOLTIP:LANDED_TITLE,k_gan #L Гана#!#!#!. Часто правители #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#! имели огромное влияние на многие местные [Concept('men', 'людские')|E] племена, но теперь пришло время полностью установить над ними контроль. Ган навсегда станет частью Мумакана и укрепит державу своими богатыми ресурсами!"
+ decision_integrate_gan_tooltip: "Сделать Ган частью Мумакана"
+ decision_integrate_gan_confirm: "Да!"
+
+ decision_subjugate_hathor: "Подчинить Хатор"
+ decision_subjugate_hathor_desc: "На юге обитают свирепые хаторийцы, которые, как говорят, пришли с далёких берегов в незапамятные времена. Долгое время они бросали вызов владыкам #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#!, но теперь, наконец, [GetTitleByKey('k_hathor').GetNameNoTier] преклонит перед нами колено."
+ decision_subjugate_hathor_tooltip: "Навсегда подчинить хаторийцев"
+ decision_subjugate_hathor_confirm: "Их время пришло."
+
+ decision_subjugate_koronande: "Завоевать Коронандэ"
+ decision_subjugate_koronande_desc: "На западе расположено множество коронандитских городов-государств, группы олигархий, слабо объединённых под властью самого [GetTitleByKey('k_koronande').GetNameNoTier]. В прошлом они преклонялись перед хозяевами из #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#!, пришло время напомнить им об этом..."
+ decision_subjugate_koronande_tooltip: "Включить Коронандэ в состав державы"
+ decision_subjugate_koronande_confirm: "Коронандэ принадлежит мне."
+
+ decision_subjugate_talilan: "Уничтожить Талилан"
+ decision_subjugate_talilan_desc: "Издавна [Concept('kinnlai', 'кинн-лай')|E] обитали в своих лесах и джунглях на полуострове [GetTitleByKey('k_talilan').GetNameNoTier]. Они слабы, и, если верить легендам, давным-давно [Concept('kinnlai_sundered', 'разделены')|E]. Пришло время продемонстрировать всю степень их слабости и изгнать их из этих земель, чтобы даже леса забыли о них."
+ decision_subjugate_talilan_tooltip: "Изгнать [Concept('elves', 'эльфов')|E] из Талилана"
+ decision_subjugate_talilan_confirm: "Пусть они бегут перед нашим натиском."
+
  ###################################
  ### Skorgrim Dourhand Decisions ###
  ###################################
@@ -4253,3 +4269,27 @@
  decision_skorgrim_dourhand_alliance_kharol_confirm: "PLACEHOLDER"
  decision_skorgrim_dourhand_alliance_kharol_effects1: "PLACEHOLDER"
  decision_skorgrim_dourhand_alliance_kharol_effects2: "PLACEHOLDER"
+
+ #########################
+ ### Zantaka Decisions ###
+ #########################
+ decision_zantaka_marriage_offer: "Предложить заключить брак"
+ decision_zantaka_marriage_offer_tooltip: "Вы обратитесь к правителям #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькина#!#!#!, стремясь укрепить свои связи с помощью брака, и попытаетесь захватить город."
+ decision_zantaka_marriage_offer_desc: "Моя власть над #ONCLICK:TITLE,c_pelorna #TOOLTIP:LANDED_TITLE,c_pelorna #L Пелейорной#!#!#! укрепилась, и я снова начинаю расширять свой кругозор. К югу от меня находится великий город [GetTitleByKey('c_emelcyn').GetNameNoTier], который является заманчивым союзником. Действительно, [GetScriptedCharacterByHistoryID('lineofpharala69').GetFirstName], слабый и легко управляемый мужчина, кажется идеальным кандидатом в мужья.\n\nХотя я сомневаюсь, что [GetScriptedCharacterByHistoryID('lineofpharala69').GetFirstName] будет сильно возражать против женитьбы на мне, городской совет #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькина#!#!#!, скорее всего, отнесется к этому с гораздо меньшим энтузиазмом."
+ decision_zantaka_marriage_offer_confirm: "Они не будут долго сопротивляться мне..."
+ decision_zantaka_marriage_offer_effect_tt: "Вы отправитесь в [GetTitleByKey('c_emelcyn').GetNameNoTier], где попытаетесь обговорить условия своего брака."
+
+ decision_zantaka_coup_emelkyn: "Захватить власть в Эмелькине"
+ decision_zantaka_coup_emelkyn_tooltip: "Использовать своего марионеточного правителя в #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькине#!#!#!, чтобы захватить власть над городом и стать сильнейшей правительницей в #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!."
+ decision_zantaka_coup_emelkyn_desc: "[GetTitleByKey('c_emelcyn').GetNameNoTier], один из трёх великих городов, которые долгое время доминировали над #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерией#!#!#!, наконец-то, в пределах моей досягаемости. Благодаря моей марионетке и агенту #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofpharala69').GetID] #L Фрахимраве#!#! и его свободному доступу к высшим сферам власти в городе, я смогла свободно планировать и готовить свой приход к власти в #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькине#!#!#!.\n\nОднако, прежде чем я смогу сделать какой-либо шаг, мне нужно будет убедиться, что моя марионетка находится во главе совета #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькина#!#!#!. Без такой легитимности моё возвышение снова будет расценено как узурпация, не только среди совета, но и во всей #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!.\n\nНа этот раз мне нужно будет изощряться в планировании своего возвышения, если я хочу избежать столкновения с коалицией. Однако такие осторожные маневры потребуют абсолютной лояльности от моей марионетки. Но этого достаточно легко добиться..."
+ decision_zantaka_coup_emelkyn_confirm: "И внова я возвышаюсь над остальными."
+ decision_zantaka_coup_emelkyn_effect_tt: "Вы захватите власть в #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькине#!#!#!, низведя своего мужа-марионетку до положения простого вассала на окраинах."
+ zantaka_ruler_must_be_spouse: "[GetTitleByKey('c_emelcyn').GetNameNoTier] находится под властью вашего [Concept('spouse', 'супруга')|E]"
+ zantaka_ruler_must_be_lover: "Ваш [Concept('spouse', 'супруг')|E] правит #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькином#!#!#! и является вашим [Concept('lover', 'любовником')|E]"
+ zantaka_ruler_must_be_hooked: "Ваш [Concept('spouse', 'супруг')|E] правит #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькином#!#!#! и находится вашим [Concept('strong_hook', 'влиянием')|E]"
+
+ decision_subdue_murnak: "Подчинить Мураакан"
+ decision_subdue_murnak_tooltip: "Подчинить город-государство [GetTitleByKey('c_murnak').GetNameNoTier], разделяюшее вашу державу на две части."
+ decision_subdue_murnak_desc: "[GetTitleByKey('c_emelcyn').GetNameNoTier], и, разумеется, [GetTitleByKey('d_sylara').GetNameNoTier] принадлежат мне. И всё же, маленький городишко [GetTitleByKey('c_murnak').GetNameNoTier] осмеливается отвергать мою власть как законной хозяйки всей восточной #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!, решительно заявляя о своей независимости от моей недавно основанной державы. Такое сопротивление со стороны города, который осмеливается разделять мои земли надвое, само собой, неприемлемо.\n\nИ всё же я должна быть осторожен. Линерийская лига призвана защищать своих членов от потенциальных гегемонов, и, хотя на практике она стала инструментом великих городов для подавления меньших, она наверняка воспрепятствует моему возвышению, если представится такая возможность. Даже сейчас я не могу надеяться победить всю #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерию#!#!#! в одиночку. Поэтому мне придётся скрывать свои действия до тех пор, пока не станет слишком поздно для вмешательства."
+ decision_subdue_murnak_confirm: "Я сочиняла гораздо менее правдоподобную ложь..."
+ decision_subdue_murnak_effect_tt: "Вы сами решите, как подчинить [GetTitleByKey('c_murnak').GetNameNoTier].\n#N Имейте в виду, что Лига не примет никакой дальнейшей экспансии без боя. Если вам не удастся подчинить [GetTitleByKey('c_murnak').GetNameNoTier], это повлечёт за собой последствия.#!"
