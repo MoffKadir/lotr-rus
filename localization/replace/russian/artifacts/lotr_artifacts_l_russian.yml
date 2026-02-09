@@ -200,3 +200,14 @@
  artifact_longaxe_head_decorated: "Навершие из [ROOT.Artifact.GetFeatureText( 'head_metal' )], [ROOT.Artifact.GetFeatureText( 'head_decoration' )], насажено"
  artifact_longaxe_haft_undecorated: "на крепкую деревянную рукоять. [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] — хороший материал, оружие отлично сбалансировано и заточено, и пользоваться им — чистое удовольствие."
  artifact_longaxe_haft_decorated: "на изящную рукоять из [ROOT.Artifact.GetFeatureText( 'shaft_wood' )], [ROOT.Artifact.GetFeatureText( 'shaft_decoration' )]."
+
+ # Thrones
+
+ lotr_spawned_throne_name: "[crown_title.GetAdjectiveNoTooltip]ий трон"
+ lotr_spawned_throne_desc: "[SCOPE.Custom('ArtifactArticleWealth')]ый трон [SCOPE.Custom('ArtifactQuality')] качества. Основа собрана из цельных брусков [newly_created_artifact.GetFeatureText( 'generic_material_wood' )], а сиденье выложено подушками из [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )]. [title_founder.GetTitledFirstName] [Select_CString(title_founder.IsFemale, 'была', 'был' )] первым монархом, сделавшим этот трон символом своей власти. С тех пор на него [Select_CString(title_founder.IsFemale, 'восседала каждая', 'восседал каждый' )] #L [crown_title.GetAdjective|l][Select_CString(title_founder.IsFemale, 'ая', 'ий' )] #! [title_founder.GetTitleAsNameNoTooltip|l]."
+ lotr_yearly_throne_name: "Трон, на котором восседает [owner.GetFirstNameNoTooltipRegnal]"
+ lotr_yearly_throne_desc: "[owner.GetName] поспешно [Select_CString(owner.IsFemale, 'заказала', 'заказал' )] этот церемониальный трон для своей [owner.Custom('GetTitleTierAdjective')]ой коронации. Его покрывают узнаваемые #L [owner.GetCulture.GetCollectiveNoun|l]ие#! символы, типичные для мастеров из владения [owner.GetCapitalLocation.GetName]."
+
+ commission_artifact_decision_option_throne: "Трон\n#low Принадлежит: [ROOT.Char.GetInventory.GetNumberOfArtifactsForSlotTypeString( 'throne' )]#!"
+ commission_artifact_decision_option_throne_desc: "[AddTextIf( Not( ROOT.Char.GetInventory.GetSlot( 'throne' ).IsEmpty ), Concatenate( 'Используется:\n', ROOT.Char.GetInventory.GetEquippedArtifactsInSlotTypeString( 'throne', 'NEWLINE', 'NEWLINE', 'NEWLINE' ) ) )]"
+ commission_throne_tooltip: "#T Трон#! \n$DESC$"
