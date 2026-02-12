@@ -9,7 +9,7 @@
  train_tournament_decision.tt: "Вы и ваши $knight_culture_player_plural$ отправитесь оттачивать свои навыки. В случае успеха укрепится ваша [Concept( 'prowess', 'доблесть' )|E], необходимая на военных состязаниях, которые предложит вам [GetActivityType('activity_tournament').GetName]."
  train_for_tournament_decision_confirm: "Начать тренировку"
  grand_tournament_active: "Требуется [GetActivityType('activity_tournament').GetName|l], где вы можете участвовать"
-  
+
  ep2_decision_events.0001.t: "Тренировка перед турниром"
  ep2_decision_events.0001.desc: "«А потом разворот вправо! — кричит [marshal.GetTitledFirstName] и наносит могучий удар по моему клинку, заставляя отступить на пару шагов. — На турнире вас никто жалеть не будет, [ROOT.Char.Custom('FormOfAddressForLiege')]». — [marshal.GetSheHe|U] вытирает пот со лба.\n\n«Хотите победить — значит, проигрывать нельзя. Даже мне. Ни разу»."
  ep2_decision_events.0001.a: "«#EMP А-а-а-а-а-а!#!»"
@@ -35,7 +35,7 @@
  progress_to_victory_desc: "Абстрактное представление ваших шансов на победу в данном [Concept( 'contest', 'состязании' )|E] относительно других участников, исходя из ваших [Concept( 'skills', 'навыков' )|E], [Concept( 'health', 'здоровья' )|E] и [Concept( 'traits', 'свойств' )|E]. Например, персонаж со свойством «[GetTrait('giant').GetName( GetNullCharacter )]» и большой [Concept( 'prowess', 'доблестью' )|El] обладает преимуществом в пеших состязаниях, вроде борьбы.\n\nДля права на участие в [Concept( 'contest', 'состязании' )|E] необходим минимальный прогресс победы. Посещайте различные [Concept( 'locales', 'места' )|E], чтобы повысить свои шансы и получить возможность навредить соперникам.\n\nВ #V таблице лидеров#! турнира указан прогресс победы всех участников."
  activity_tournament_destination_selection: ""
  activity_tournament_guest_help_text: "Все [Concept( 'guests', 'гости' )|E] смогут попробовать поучаствовать в отборе на [Concept( 'contest', 'состязание' )|E] (если это возможно), а после этого даже пройти в [GetActivityType('activity_tournament').GetName].\n\nГости, не соответствующие условиям отбора, могут просто гулять по прилегающим [Concept( 'locales', 'местам' )|E], получать уникальные награды и наблюдать за состязаниями."
-  
+
  tournament_province_jousting_lists_desc: "#color_green + Поля для конных сшибок#!"
  tournament_province_gathering_halls_desc: "#color_green + Зал собраний#!"
  tournament_province_war_camps_desc: "#color_green + Военные лагеря#!"
@@ -49,17 +49,17 @@
 
  ### PHASES
 
- # TEAM
+ #TEAM
  tournament_phase_melee: "Ближний бой"
  tournament_phase_melee_desc: "Притворное сражение пеших или верховых бойцов, которые делятся на две команды и пытаются удержать контроль над полем и захватить соперников ради выкупа.\n\n$tournament_contest_format_team$"
- # TURN
+ #TURN
  tournament_phase_archery: "Стрельба из лука"
  tournament_phase_archery_desc: "Состязание лучников. Каждый участник получает ограниченное количество стрел и пытается поразить цель, чтобы заработать как можно больше очков.\n\n$tournament_contest_formaty_turn$"
 
  tournament_phase_recital: "Декламация"
 
  tournament_phase_recital_desc: "Состязание поэтов. Участники сочиняют конкурсные стихотворения и соревнуются между собой в их публичном чтении.\n\n$tournament_contest_formaty_turn$"
- # VERSUS
+ #VERSUS
  tournament_phase_joust: "Рыцарский поединок"
  tournament_phase_joust_desc: "Конное состязание. Участники бьют друг друга копьями, пытаясь выбить соперника из седла или превзойти его по очкам и остаться на ногах.\n\n$tournament_contest_format_versus$\nКоличество [Concept( 'contest_rounds', 'этапов' )|E]: 3"
  tournament_phase_duel: "Поединок"
@@ -69,17 +69,17 @@
  tournament_phase_wrestling_desc: "Состязание в силе и смекалке. Участники пытаются повалить соперника или выбросить его за пределы арены и остаться на ногах.\n\n$tournament_contest_format_versus$\nКоличество [Concept( 'contest_rounds', 'этапов' )|E]: 3"
  tournament_phase_board_game: "Настольная игра"
  tournament_phase_board_game_desc: "Поединок интеллектов. Участники играют несколько партий в настольную игру, и победителем считается тот, кто не выбывает до конца.\n\n$tournament_contest_format_versus$\nКоличество [Concept( 'contest_rounds', 'этапов' )|E]: 3"
- # RACE
+ #RACE
  tournament_phase_horse_race: "Скачки"
  tournament_phase_horse_race_desc: "Зрелищное состязание. Лорды и леди выставляют лошадей, которые состязаются друг с другом в скорости, и победителем становится скакун, который первым пересечет финишную черту.\n\n$tournament_contest_format_race$"
 
- # CEREMONY
+ #CEREMONY
  tournament_phase_ceremony: "Церемония"
  tournament_phase_ceremony_desc: "Церемония закрытия и празднество!"
 
  ### OPTIONS
 
- # ACCOMMODATIONS
+ #ACCOMMODATIONS
  tournament_option_accommodations: "Проживание"
  tournament_accommodations_bad: "Ветхие палатки"
  tournament_accommodations_bad_desc: "$EFFECT_LIST_BULLET$ Некоторые отрицательные эффекты срабатывают чаще\n\n#weak Что важнее — демонстрация навыков или место их демонстрации?#!"
@@ -87,7 +87,7 @@
  tournament_accommodations_normal_desc: "$EFFECT_LIST_BULLET$ Значения весов события не меняются\n\n#weak Чтобы не оплошать на поединке, лучше как следует выспаться накануне.#!"
  tournament_accommodations_good: "Роскошные лагеря"
  tournament_accommodations_good_desc: "$EFFECT_LIST_BULLET$ Некоторые отрицательные эффекты срабатывают #EMP реже#!\n\n#weak Турниры — это не просто спортивные мероприятия, но спортивные #underline события#!.#!"
- # PRIZES
+ #PRIZES
  tournament_option_prizes: "Призы"
  tournament_prizes_bad: "Простые призы"
  tournament_prizes_bad_desc: "$EFFECT_LIST_BULLET$ Призовые [Concept( 'artifacts', 'артефакты' )|E] будут обычной [Concept( 'rarity', 'редкости' )|E]\n\n#weak Мы собираемся ради спортивного азарта, а побрякушки — просто для вида.#!"
@@ -305,15 +305,15 @@
 
 
  ### CUSTOM LOC
- # RACE TRACKS
+ #RACE TRACKS
  race_track_hippodrome: "ипподром"
  race_track_maydan: "майдан"
  race_track_track: "дорожка"
- # RACE HORSES
+ #RACE HORSES
  contest_horse_race_name: "[ROOT.Char.Custom('ContestHorseRaceName')]"
  contest_horse_race_name_2: "[ROOT.Char.Custom('ContestHorseRaceName')][ROOT.Char.Custom('ContestHorseRaceName2')]"
  ## FAITH
- # GODS/SAINTS
+ #GODS/SAINTS
  racehorse_name_faith_fate_god: "Дитя [ROOT.Char.GetFaith.FateGodNamePossessive]"
  racehorse_name_faith_knowledge_god: "Избранник [ROOT.Char.GetFaith.NightGodNamePossessive]"
  racehorse_name_faith_night_god: "Гамбит [ROOT.Char.GetFaith.NightGodNamePossessive]"
@@ -321,10 +321,10 @@
  racehorse_name_faith_war_god: "Гнев [ROOT.Char.GetFaith.WarGodNamePossessive]"
  racehorse_name_faith_water_god: "Потоп [ROOT.Char.GetFaith.WaterGodNamePossessive]"
  racehorse_name_faith_wealth_god: "Фаворит [ROOT.Char.GetFaith.WealthGodNamePossessive]"
- # HINDUISM
+ #HINDUISM
  racehorse_name_dyauspitar: "Дьяуспитар"
 
- # ISLAM
+ #ISLAM
  racehorse_name_abbayan: "Аббаян"
  racehorse_name_al_murtajiz: "аль-Муртаджиз"
  racehorse_name_al_sakb: "аль-Сакб"
@@ -335,7 +335,7 @@
  racehorse_name_lihaf: "Лихаф"
  racehorse_name_lizaz: "Лизаз"
  racehorse_name_seqlawi: "Секлави"
- # NORSE
+ #NORSE
  racehorse_name_alsvidr: "Альсвинн"
  racehorse_name_arvakr: "Арвак "
  racehorse_name_falhofnir: "Фальхофнир"
@@ -347,7 +347,7 @@
  racehorse_name_skinfaxi: "Скинфакси"
  racehorse_name_svadilfari: "Свадильфари"
  ## CULTURE
- # ARABIC
+ #ARABIC
  racehorse_name_al_dinari: "аль-Динари"
  racehorse_name_al_hujays: "аль-Худжайс"
  racehorse_name_al_ward: "аль-Вард"
@@ -355,20 +355,20 @@
  racehorse_name_dhi_al_uqqal: "Зи аль-Укал"
  racehorse_name_sabal: "Сабал"
  racehorse_name_zad_al_rakib: "Зад ар-Ракиб"
- # BRYTHONIC
+ #BRYTHONIC
  racehorse_name_gringolet: "Гринголет"
  racehorse_name_hengroen: "Хенгроен"
  racehorse_name_morvarch: "Морвах"
- # FRANKISH
+ #FRANKISH
  racehorse_name_baucent: "Босеан"
  racehorse_name_bayard: "Баярт"
  racehorse_name_sorel: "Сорель"
- # GOIDELIC
+ #GOIDELIC
  racehorse_name_dub_sainglend: "Дуб Сангленд"
  racehorse_name_enbarr: "Аонабрр"
  racehorse_name_kelpie: "Келпи"
  racehorse_name_liath_macha: "Лиахь Маха"
- # GRECO-ROMAN
+ #GRECO-ROMAN
  racehorse_name_arion: "Арион"
  racehorse_name_asturcus: "Астурк"
  racehorse_name_caesar: "Цезарь"
@@ -382,30 +382,30 @@
  racehorse_name_rhaebus: "Реб"
  racehorse_name_sterope: "Стеропа"
  racehorse_name_zephryus: "Зефир"
-  # IBERIAN 
+ #IBERIAN
  racehorse_name_altivo: "Альтиво"
  racehorse_name_babieca: "Бабьека"
  racehorse_name_rocinante: "Росинант"
-  # INDO-ARYAN 
+ #INDO-ARYAN
  racehorse_name_atak: "Атак"
  racehorse_name_chetak: "Четак"
  racehorse_name_laili: "Лаили"
  racehorse_name_natak: "Натак"
-  # MONGOLIC 
+ #MONGOLIC
  racehorse_name_oyomaa: "Ойомаа"
  racehorse_name_tolin_khul: "Толин Хул"
-  # PERSIAN 
+ #PERSIAN
  racehorse_name_rahbar: "Рахбар"
  racehorse_name_rakhsh: "Ракш"
-  # SCANDINAVIAN 
+ #SCANDINAVIAN
  racehorse_name_grani: "Грани"
-  # SLAVIC 
+ #SLAVIC
  racehorse_name_sivko_burko: "Сивка-бурка"
  racehorse_name_sivko: "Сивка"
-  # TURKIC 
+ #TURKIC
  racehorse_name_girot: "Гырат"
  racehorse_name_tulpar: "Тулпар"
-  ## COLOR 
+ ## COLOR
  racehorse_name_bay: "Бай"
  racehorse_name_black: "Черный"
  racehorse_name_blue: "Синий"
@@ -443,7 +443,7 @@
  racehorse_name_sun: "Солнце"
  racehorse_name_tawny: "Рыжий"
  racehorse_name_yellow: "Желтый"
-  ## ADJECTIVE 
+ ## ADJECTIVE
  racehorse_name_brisk: "Бриз"
  racehorse_name_brave: "Храбрый"
  racehorse_name_fleet: "Ходкий"
@@ -454,7 +454,7 @@
  racehorse_name_thunder: "Гром"
  racehorse_name_wave: "Волна"
  racehorse_name_wind: "Ветер"
-  ## GENERIC 
+ ## GENERIC
  racehorse_name_abbess: "Аббатиса"
  racehorse_name_adamant: "Алмаз"
  racehorse_name_agile: "Ловкий"
@@ -504,7 +504,7 @@
  racehorse_name_unwavering: "Непоколебимый"
  racehorse_name_whirlwind: "Воронка"
  racehorse_name_winner: "Победитель"
-  # NOUN 
+ #NOUN
  racehorse_name_2_bolt: "болт"
  racehorse_name_2_bound: "прыжок"
  racehorse_name_2_blaze: "огонь"
@@ -563,7 +563,7 @@
  racehorse_name_berserker: "[GetTrait('berserker').GetNameNoTooltip( ROOT.Char )]"
  racehorse_name_crusader: "[GetTrait('faith_warrior').GetNameNoTooltip( ROOT.Char )]"
  racehorse_name_pilgrim: "[GetTrait('pilgrim').GetNameNoTooltip( ROOT.Char )]"
- racehorse_name_varangian: "[GetTrait('mundburgian').GetNameNoTooltip( ROOT.Char )]"    #LotR
+ racehorse_name_varangian: "[GetTrait('mundburgian').GetNameNoTooltip( ROOT.Char )]" #LotR
  ## EASTER EGGS
  racehorse_name_arkle: "Аркл"
  racehorse_name_beaujacques: "Божак"
@@ -604,10 +604,10 @@
  racehorse_name_sir_horsington: "Сэр Лошадкин"
  racehorse_name_sir_whinny: "Сэр Ржач"
  racehorse_name_torrent: "Натиск"
-  # DEBUG 
+ #DEBUG
  debug_tournament_population_count_tt: "Участники: [SCOPE.ScriptValue('contest_contestants_count_value')|G0]\nГости: [SCOPE.ScriptValue('contest_guests_count_value')|Y0]\nВсего: [SCOPE.ScriptValue('contest_valid_contestants_count_value')|V0]\n\nОтклонили приглашение: [SCOPE.ScriptValue('contest_declined_invites_count_value')|R0]"
  PROGRESS_TO_VICTORY_DEBUG: "ЛУЧШИЙ: [top.GetUIName|U] - [top.MakeScope.Var('contest_aptitude').GetValue|V0]\nХУДШИЙ: [bottom.GetUIName|U] - [bottom.MakeScope.Var('contest_aptitude').GetValue|V0]\n\nГРАДИЕНТ: [SCOPE.ScriptValue('progress_to_victory_increment_value')|V2]\nПРИГОДНОСТЬ: [SCOPE.ScriptValue('progress_to_victory_contestant_qualification_value')|V2]"
-  # LOG ENTRIES 
+ #LOG ENTRIES
  tournament_contest_start_log_title: "[CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName] начинается"
  tournament_contest_start_log: "В провинции [PROVINCE.GetName] началось состязание [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
 
@@ -617,17 +617,17 @@
  tournament_bout_semi_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy|U][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] победил [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] в полуфинале состязания [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_bout_final_log_title: "Результаты финала состязания [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_bout_final_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy|U][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] победил [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] в финале состязания [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
-  
+
  tournament_contest_winner_log_title: "Победитель состязания [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_contest_winner_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy|U][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] стал победителем состязания [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_contest_team_winner_log_title: "$tournament_contest_winner_log_title$"
  tournament_contest_team_winner_log: "Команда [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] победила команду [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] в состязании [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
-  
+
  tournament_accident_log_title: "Несчастный случай на состязании [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_accident_log: "Произошел несчастный случай, и [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] погиб во время состязания [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_accident_killer_log_title: "Несчастный случай на состязании [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_accident_killer_log: "[Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][TARGET_CHARACTER.GetNamePossessiveOrMy|U][Select_CString(TARGET_CHARACTER.IsLocalPlayer, ' персонаж', '' )] случайно убил [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] во время состязания [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
-  
+
  tournament_resigned_log_title: "Отказ от участия в состязании [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_resigned_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy|U][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] отказался от участия в состязании [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_resigned_versus_log_title: "Отказ от участия в состязании [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
@@ -635,10 +635,10 @@
  tournament_placed_wager_log_title: "Ставка сделана"
  tournament_placed_wager_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] поставил на победу [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] в состязании [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  tournament_placed_wager_log_tt: "[CHARACTER.Var('tournament_wager_payout').GetValue|0]"
-  
+
  tournament_pas_darmes_token_taken_log_title: "Полученный символ"
  tournament_pas_darmes_token_taken_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] вытребовал у [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] символический дар за право посещения провинции [PROVINCE.GetBaronyNameExplicitly]"
-  
+
  tournament_versus_header: "[activity.GetCurrentPhase.GetPhase.GetName], этап [activity.Custom('GetVersusRound')]:"
  tournament_contest_header: "[activity.GetCurrentPhase.GetPhase.GetName]:"
  tournament_header: "[activity.GetShortNameNoTooltip]:"
@@ -646,7 +646,7 @@
  tournament_complete_log: "Большой турнир [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] во владении [PROVINCE.GetName] подошел к концу"
  tournament_dedicated_victory_log_title: "Посвящение победы"
  tournament_dedicated_victory_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] посвятил свою победу [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажу ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'ему персонажу', '' )]"
-  # ARTIFACTS 
+ #ARTIFACTS
  tournament_prize_armor_name: "Приз — [newly_created_artifact.GetType]"
  tournament_prize_weapon_name: "Приз — [newly_created_artifact.GetType]"
  tournament_prize_bow_name: "Приз — [newly_created_artifact.GetType]"
@@ -676,7 +676,7 @@
  tournament_prize_host_desc_recital: "Наградой в состязании по декламации становится [newly_created_artifact.GetDesc]. Приз назначает и получает [host.GetTitledFirstName], организатор состязания."
  tournament_prize_host_desc_archery: "Наградой в состязании по стрельбе из лука становится [newly_created_artifact.GetDesc]. Приз назначает и получает [host.GetTitledFirstName], организатор состязания."
  tournament_prize_host_desc_board_game: "Наградой в состязании по настольным играм становится [newly_created_artifact.GetDesc]. Приз назначает и получает [host.GetTitledFirstName], организатор состязания."
-  
+
  champion_won_contest_toast: "В состязании побеждает чемпион"
  knight_won_contest_toast: "В состязании побеждает рыцарь"
  tournament_knight_appeared_title: "Новый участник"
@@ -711,33 +711,33 @@
  tournament_unqualified_ptv_start_toast: "Отбор пока не пройден!"
  tournament_unqualified_ptv_tt: "Вы можете не пройти отбор на состязание [THIS.Char.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName]"
  contest_winner_ceremony_tt: "[THIS.Char.GetShortUIName|U] [Select_CString(THIS.Char.IsLocalPlayer, 'получите', 'получит' )] [Concept( 'prize', 'приз' )|E] по завершении состязания [GetActivityType('activity_tournament' ).GetName]"
-  
-  # LIEGE REWARDS FOR LANDLESS KNIGHTS 
+
+ #LIEGE REWARDS FOR LANDLESS KNIGHTS
  tournament_landless_knight_liege_rewards.tt.boilerplate: "Так как [winner.GetShortUIName] — безземельный [Concept( 'knight', 'рыцарь' )|E], [winner.GetHerHis] [Concept( 'liege', 'сюзерен' )|E] [winner_liege.GetShortUIName] [Select_CString(winner_liege.IsLocalPlayer, 'получаете', 'получает' )] [prestige_i]"
-  
+
  tournament_landless_knight_liege_rewards.tt.tournament_first_place_reward_prestige_major: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_first_place_reward_prestige_major_value')|P0]"
  tournament_landless_knight_liege_rewards.tt.tournament_first_place_reward_prestige_medium: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_first_place_reward_prestige_medium_value')|P0]"
  tournament_landless_knight_liege_rewards.tt.tournament_first_place_reward_prestige_minor: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_first_place_reward_prestige_minor_value')|P0]"
-  
+
  tournament_landless_knight_liege_rewards.tt.tournament_second_place_reward_prestige_major: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_second_place_reward_prestige_major_value')|P0]"
  tournament_landless_knight_liege_rewards.tt.tournament_second_place_reward_prestige_medium: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_second_place_reward_prestige_medium_value')|P0]"
  tournament_landless_knight_liege_rewards.tt.tournament_second_place_reward_prestige_minor: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_second_place_reward_prestige_minor_value')|P0]"
-  
+
  tournament_landless_knight_liege_rewards.tt.tournament_third_place_reward_prestige_major: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_third_place_reward_prestige_major_value')|P0]"
  tournament_landless_knight_liege_rewards.tt.tournament_third_place_reward_prestige_medium: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_third_place_reward_prestige_medium_value')|P0]"
-  
+
  tournament_landless_knight_liege_rewards.tt.tournament_team_winner_reward_prestige_major: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_team_winner_reward_prestige_major_value')|P0]"
  tournament_landless_knight_liege_rewards.tt.tournament_team_winner_reward_prestige_medium: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_team_winner_reward_prestige_medium_value')|P0]"
  tournament_landless_knight_liege_rewards.tt.tournament_team_winner_reward_prestige_minor: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_team_winner_reward_prestige_minor_value')|P0]"
-  
+
  tournament_landless_knight_liege_rewards.tt.tournament_team_loser_reward_prestige_major: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_team_loser_reward_prestige_major_value')|P0]"
  tournament_landless_knight_liege_rewards.tt.tournament_team_loser_reward_prestige_medium: "$tournament_landless_knight_liege_rewards.tt.boilerplate$ [EmptyScope.ScriptValue('tournament_team_loser_reward_prestige_medium_value')|P0]"
-  
+
  tournament_landless_knight_liege_rewards.tt.tournament_gold.knight_loves_liege: "Так как [winner.GetShortUIName] — ревностный безземельный [Concept( 'knight', 'рыцарь' )|E], [winner.GetShortUIName] [Select_CString(winner.IsLocalPlayer, 'отдаете', 'отдает' )] выигранные деньги своему [Concept( 'liege', 'сюзерену' )|E]"
  tournament_landless_knight_liege_rewards.tt.tournament_gold.knight_likes_liege: "Так как [winner.GetShortUIName] — верный церкви безземельный [Concept( 'knight', 'рыцарь' )|E], [winner.GetShortUIName] [Select_CString(winner.IsLocalPlayer, 'отдаете', 'отдает' )] большую часть выигранных денег своему [Concept( 'liege', 'сюзерену' )|E]"
  tournament_landless_knight_liege_rewards.tt.tournament_gold.knight_accepts_liege: "Так как [winner.GetShortUIName] — безземельный [Concept( 'knight', 'рыцарь' )|E], [winner.GetShortUIName] [Select_CString(winner.IsLocalPlayer, 'делите', 'делит' )] выигранные деньги со своим [Concept( 'liege', 'сюзереном' )|E]"
  tournament_landless_knight_liege_rewards.tt.tournament_gold.knight_hates_liege: "Несмотря на то что [winner.GetShortUIName] — безземельный [Concept( 'knight', 'рыцарь' )|E], [winner.GetShortUIName] [Select_CString(winner.IsLocalPlayer, 'презираете', 'презирает' )] [Concept( 'liege', 'сюзерена' )|E] и [Select_CString(winner.IsLocalPlayer, 'отказываетесь', 'отказывается' )] делиться выигранными деньгами"
-  
+
  tournament_arrival_prestige_toast: "Прибытие важного гостя"
  tournament_arrival_prestige_dukes_kingdom_empire: "[host.MakeScope.Var('prestige_arrival_duchy').GetValue|0] [SelectLocalization( GreaterThan_CFixedPoint(host.MakeScope.Var('prestige_arrival_duchy').GetValue, '(CFixedPoint)1'), 'duke_plural', 'duke' )], [host.MakeScope.Var('prestige_arrival_kingdom').GetValue|0] [SelectLocalization( GreaterThan_CFixedPoint(host.MakeScope.Var('prestige_arrival_kingdom').GetValue, '(CFixedPoint)1'), 'king_plural', 'king' )] и [host.MakeScope.Var('prestige_arrival_empire').GetValue|0] [SelectLocalization( GreaterThan_CFixedPoint(host.MakeScope.Var('prestige_arrival_empire').GetValue, '(CFixedPoint)1'), 'emperor_plural', 'emperor' )] прибыли в провинцию [activity.GetCurrentPhase.GetLocation.GetBaronyNameExplicitly]"
  tournament_arrival_prestige_dukes_kingdom: "[host.MakeScope.Var('prestige_arrival_duchy').GetValue|0] [SelectLocalization( GreaterThan_CFixedPoint(host.MakeScope.Var('prestige_arrival_duchy').GetValue, '(CFixedPoint)1'), 'duke_plural', 'duke' )] и [host.MakeScope.Var('prestige_arrival_kingdom').GetValue|0] [SelectLocalization( GreaterThan_CFixedPoint(host.MakeScope.Var('prestige_arrival_kingdom').GetValue, '(CFixedPoint)1'), 'king_plural', 'king' )] прибыли в провинцию [activity.GetCurrentPhase.GetLocation.GetBaronyNameExplicitly]"
@@ -762,7 +762,7 @@
  tournament_horse_race_prize_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] наградил [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] за победу в скачках. Приз — [ARTIFACT.GetName]."
  tournament_melee_prize_log_title: "Ближний бой: приз"
  tournament_melee_prize_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] наградил [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] за победу в состязаниях по ближнему бою. Приз — [ARTIFACT.GetName]."
-  
+
  tournament_duel_winner_log_title: "Поединок: победитель"
  tournament_duel_winner_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] выиграл поединок"
  tournament_joust_winner_log_title: "Рыцарский поединок: победитель"
@@ -779,36 +779,36 @@
  tournament_horse_race_winner_log: "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] выиграл скачки"
  tournament_melee_team_winner_log_title: "$tournament_phase_melee$: победители"
  tournament_melee_team_winner_log: "Команда, которую [Select_CString(CHARACTER.IsFemale, 'выставила', 'выставил' )] [CHARACTER.GetTitledFirstName], победила команду, которую [Select_CString(TARGET_CHARACTER.IsFemale, 'выставила', 'выставил' )] [TARGET_CHARACTER.GetTitledFirstName], и выиграла в состязании по ближнему бою."
-  
+
  activity_tournament_province_hall_of_heroes_01_desc: "#P +++ Чертог героев#!"
-  
+
  activity_tournament_province_jousting_lists_01_desc: "#P ++ $building_type_jousting_lists_01$#!"
  activity_tournament_province_blacksmiths_01_desc: "#P ++ $building_type_blacksmiths_01$#!"
  activity_tournament_province_archery_ranges_01_desc: "#P ++ $building_type_archery_ranges_01$#!"
  activity_tournament_province_royal_armory_01_desc: "#P ++ $building_type_royal_armory_01$#!"
  activity_tournament_province_generic_university_desc: "#P ++ $building_type_generic_university$#!"
-  
+
  activity_tournament_province_war_camps_01_desc: "#P + Военные лагеря#!"
  activity_tournament_province_barracks_01_desc: "#P + $building_type_barracks_01$#!"
  activity_tournament_province_regimental_grounds_01_desc: "#P + $building_type_regimental_grounds_01$#!"
  activity_tournament_province_stables_01_desc: "#P + $building_type_stables_01$#!"
  activity_tournament_province_military_camps_01_desc: "#P + $building_type_military_camps_01$#!"
  activity_tournament_province_smiths_01_desc: "#P + $building_type_smiths_01$#!"
-  
+
  activity_tournament_province_desc_terrain_good: "#P + Подходящая местность#!"
  activity_tournament_province_desc_terrain_bad: "#N − Неподходящая местность#!"
  activity_tournament_province_desc_terrain_verybad: "#N −− Горная местность#!"
  activity_tournament_province_desc_terrain_terrible: "#N −−– Заболоченная местность#!"
-  
+
  activity_tournament_province_desc_development_great: "#P +++ Развитие графства#!"
  activity_tournament_province_desc_development_good: "#P ++ Развитие графства#!"
  activity_tournament_province_desc_development_ok: "#P + Развитие графства#!"
  activity_tournament_province_desc_development_bad: "#N − Развитие графства#!"
-  
+
  tournament_personal_champion_tt: "[tournament_special_guest_champion.GetFirstNameNoTooltip] — ваш воитель"
-  
- #PTV Custom loc 
-  
+
+ #PTV Custom loc
+
  locale_window_widget_progress_to_victory_label_idle: "Осмотр турнирной арены"
  locale_window_widget_progress_to_victory_label_passive_not_competing: "Вы #bold не#! участвуете"
  locale_window_widget_progress_to_victory_label_passive_not_qualified: "Вы #bold не#! прошли отбор"
@@ -823,8 +823,8 @@
  locale_window_widget_progress_to_victory_label_active_competing_duel: "Вы соревнуетесь в #bold поединке#!"
  locale_window_widget_progress_to_victory_label_active_competing_melee: "Вы соревнуетесь в #bold ближнем бою#!"
  locale_window_widget_progress_to_victory_label_active_competing: "Вы участвуете в состязании"
-  
- # Conclusions 
+
+ #Conclusions
  tournament_conclusion_general: "Турнир наконец-то подошел к концу.\n"
  tournament_conclusion_winner_melee: "\nПобедитель состязаний по #BOL ближнему бою#!: команда персонажа [activity.MakeScope.Var('melee_winner').Char.GetFirstName]"
  tournament_conclusion_winner_archery: "\nПобедитель состязаний по #BOL стрельбе из лука#!: [activity.MakeScope.Var('archery_winner').Char.GetFirstName]"
@@ -834,11 +834,11 @@
  tournament_conclusion_winner_wrestling: "\nПобедитель состязаний по #BOL борьбе#!: [activity.MakeScope.Var('wrestling_winner').Char.GetFirstName]"
  tournament_conclusion_winner_duel: "\nПобедитель #BOL в поединке#!: [activity.MakeScope.Var('duel_winner').Char.GetFirstName]"
  tournament_conclusion_winner_board_game: "\nПобедитель состязаний по #BOL настольным играм#!: [activity.MakeScope.Var('board_game_winner').Char.GetFirstName]"
-  
+
  tournament_contest_reward_toast_title: "Ваш приз"
  tournament_contest_reward_toast_desc: "Ваша награда — [Artifact.GetNameNoTooltip|l]"
-  
- #Contest Cultural Variations 
+
+ #Contest Cultural Variations
  tournament_melee_german: "Бугурт"
  tournament_melee_fallback: "Ближний бой"
  tournament_wrestling_persian: "Кошти"
@@ -849,8 +849,8 @@
  tournament_wrestling_fallback: "Борьба"
  tournament_recital_welsh: "Эйстетвод"
  tournament_recital_fallback: "Декламация"
-  
- #Conclusion Window Loc 
+
+ #Conclusion Window Loc
  activity_window_character_melee_winner: "Победитель состязаний по рукопашному бою\n[Character.GetShortUINameNoTooltip|U]"
  activity_window_character_horse_race_winner: "Победитель конных состязаний\n[Character.GetShortUINameNoTooltip|U]"
  activity_window_character_archery_winner: "Победитель состязаний по стрельбе из лука\n[Character.GetShortUINameNoTooltip|U]"
@@ -858,8 +858,8 @@
  activity_window_character_joust_winner: "Победитель в конной сшибке\n[Character.GetShortUINameNoTooltip|U]"
  activity_window_character_duel_winner: "Победитель в поединке\n[Character.GetShortUINameNoTooltip|U]"
  activity_window_character_board_game_winner: "Победитель состязаний по настольным играм\n[Character.GetShortUINameNoTooltip|U]"
-  
- #APAs 
+
+ #APAs
  tournament_guest_ptv_small_title: "[first.GetShortUINameNoTooltip|U] [Select_CString(first.IsLocalPlayer, 'подготовились', Select_CString(first.IsFemale, 'подготовилась', 'подготовился' ))]"
  tournament_acclaimed_participant_title: "[first.GetShortUINameNoTooltip|U] [Select_CString(first.IsLocalPlayer, 'заработали', Select_CString(first.IsFemale, 'заработала', 'заработал' ))] славу"
  tournament_entry_fee_title: "[first.GetShortUINameNoTooltip|U] [Select_CString(first.IsLocalPlayer, 'заплатили', Select_CString(first.IsFemale, 'заплатила', 'заплатил' ))] [Select_CString(host.IsLocalPlayer, 'вам', Concatenate('персонажу ',host.GetShortUINameNoTooltip))] за право принять участие"
@@ -872,8 +872,8 @@
  tournament_relaxed_in_tavern_title: "[first.GetShortUINameNoTooltip|U] [Select_CString(first.IsLocalPlayer, 'расслабились', Select_CString(first.IsFemale, 'расслабилась', 'расслабился' ))] в таверне"
  tournament_explored_village_title: "[first.GetShortUINameNoTooltip|U] [Select_CString(first.IsLocalPlayer, 'побродили', Select_CString(first.IsFemale, 'побродила', 'побродил' ))] по местной деревне"
  tournament_prayed_temple_title: "[first.GetShortUINameNoTooltip|U] [Select_CString(first.IsLocalPlayer, 'размышляли', Select_CString(first.IsFemale, 'размышляла', 'размышлял' ))] в храме"
-  
-  
+
+
  tournament_host_feted_title: "[first.GetShortUINameNoTooltip|U] [Select_CString(first.IsLocalPlayer, 'были воспеты', Select_CString(first.IsFemale, 'была воспета', 'был воспет' ))] как милостивый устроитель"
  tournament_host_gifted_title: "[second.GetShortUINameNoTooltip|U] [Select_CString(second.IsLocalPlayer, 'вручили', Select_CString(second.IsFemale, 'вручила', 'вручил' ))] подарок устроителю, в роли которого [Select_CString(first.IsLocalPlayer, 'выступали', Select_CString(first.IsFemale, 'выступала', 'выступал' ))] [first.GetShortUINameNoTooltip]"
  tournament_tilting_demonstration_title: "[second.GetShortUINameNoTooltip|U] [Select_CString(second.IsLocalPlayer, 'позабавили', Select_CString(second.IsFemale, 'позабавила', 'позабавил' ))] [Select_CString(first.IsLocalPlayer, '', 'персонажа ' )][first.GetNamePossessiveOrMy][Select_CString(first.IsLocalPlayer, 'его персонажа', '' )]"
@@ -882,7 +882,7 @@
  tournament_joust_lance_broken_title: "[first.GetShortUINameNoTooltip|U] [Select_CString(first.IsLocalPlayer, 'сломали', Select_CString(first.IsFemale, 'сломала', 'сломал' ))] копье во время конной сшибки"
  tournament_joust_unhorsed_title: "[first.GetShortUINameNoTooltip|U] [Select_CString(first.IsLocalPlayer, 'были выбиты', Select_CString(first.IsFemale, 'была выбита', 'был выбит' ))] из седла во время конной сшибки"
  tournament_horse_stumbles_title: "Лошадь, на которой [Select_CString(first.IsLocalPlayer, 'выступали', Select_CString(first.IsFemale, 'выступала', 'выступал' ))] [first.GetShortUINameNoTooltip], споткнулась"
-  
+
  ACTIVITY_GUEST_GUEST_REASON: "[Select_CString(ROOT.Char.IsFemale, 'Она ваша', 'Он ваш' )] [Concept( 'guest', Select_CString(ROOT.Char.IsFemale, 'гостья', 'гость' ))|E]: $VALUE|=+0$"
  ACTIVITY_GUEST_KNIGHT_REASON: "[Select_CString(ROOT.Char.IsFemale, 'Она ваша', 'Он ваш' )] [Concept( 'knight', 'рыцарь' )|E]: $VALUE|=+0$"
  ACTIVITY_GUEST_COURTIER_REASON: "[Select_CString(ROOT.Char.IsFemale, 'Она ваша', 'Он ваш' )] [Concept( 'courtier', Select_CString(ROOT.Char.IsFemale, 'придворная', 'придворный' ))|E]: $VALUE|=+0$"
