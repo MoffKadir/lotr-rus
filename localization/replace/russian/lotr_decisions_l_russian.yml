@@ -435,6 +435,12 @@
  decision_adopt_feudal_from_oligarchy_tooltip: "Поменять [Concept('government', 'форму правления')|E] и выбрать [Concept('feudal', 'феодализм')|E] или [Concept('clan', 'клан')|E]"
  TITLES_LOSE_OLIGARCHIC_SUCCESSION: "Все принадлежащие титулы потеряют закон #high Олигархические выборы#!"
 
+ convert_to_wanua_decision: "Принять традиции вануа"
+ convert_to_wanua_decision_desc: "Очевидно, что морская торговля занимает центральное место в жизни нашего общества. Вполне уместно, чтобы наша власть отражала это и делала больший упор на сотрудничество, а не на противостояния."
+ convert_to_wanua_decision_tooltip: "Принять форму правления вануа"
+ convert_to_wanua_decision_confirm: "Для державы наступит новый рассвет."
+ ALL_VASSALS_BECOME_WANUA: "Все вассалы примут форму правления #high вануа#!"
+
  commit_suicide_decision_desc_black_breath: "Я чувствую холод, как будто иду сквозь кошмар. Солнце больше не греет мою кожу. Никто никогда не выздоравливает от этой странной болезни, я просто хочу забыться и уснуть навсегда."
 
  lotr_lay_down_life_decision: "Принять Дар людей"
@@ -1213,7 +1219,7 @@
 
  decision_turn_to_piracy: "Обратиться к пиратству"
  decision_turn_to_piracy_AI: "Обратиться к пиратству (ИИ)"
- decision_turn_to_piracy.desc: "Мы долго притворялись цивилизованными и слабыми. Мы - гордые сыновья берега, и мы обратимся к жизни налётчиков, и наших парусов будут бояться на всем побережье Белегаэра!"
+ decision_turn_to_piracy.desc: "Мы долго притворялись цивилизованными и слабыми. Мы - гордые сыновья берега, и мы обратимся к жизни налётчиков! Наших парусов будут бояться на всех побережьях!"
  decision_turn_to_piracy.tt: "Принять наследие налётчиков"
  decision_turn_to_piracy_confirm: "Грабежи и слава."
 
@@ -2298,6 +2304,23 @@
  decision_pust_revival_confirm: "Наконец-то пусты возродились!"
  decision_pust_revival_custom_description_01: "Принадлежит к пустской или происходящей от неё культуре"
 
+ decision_rebuild_zaja_sahr_noria_mines: "Восстановить норию Зейя-Шахр"
+ decision_rebuild_zaja_sahr_noria_mines_tooltip: "Восстановить прославленные ирригационные сооружения в Зейя-Шахре"
+ decision_rebuild_zaja_sahr_noria_mines_desc: "Зейя-Шахр, великая нория, самая глубокая из раскопок, проведённых без помощи гномов, была одним из величайших достижений пустов. Она снабжала водой многие города. Она превратилась в руины после того, как пусты отступили из этого региона. Но благодаря нашим новым знаниям мы можем восстановить старые механизмы и использовать их для добычи драгоценной воды из-под земли."
+ decision_rebuild_zaja_sahr_noria_mines_confirm: "Вновь откроем для себя подземные чудеса!"
+ abrakhan_custom_tooltip: "Все графства в герцогстве [GetTitleByKey('d_abrakhan').GetNameNoTier], развитие в которых выше 20"
+
+ decision_claim_orjalun: "Претендовать на горный перевал Орджалун"
+ decision_claim_orjalun_tooltip: "Претендовать на горный перевал Орджалун от имени Абрахана"
+ decision_claim_orjalun_desc: "На востоке много великих держав - Кхай и Харшандатт. Мы должны взять под контроль важный горный перевал Орджалун для обороны от них."
+ decision_claim_orjalun_confirm: "Наша восточная граница будет защищена!"
+
+ decision_build_ghaesch_kanra_fortress: "Построить крепость Гаэш-Канра"
+ decision_build_ghaesch_kanra_fortress_tooltip: "Построить могучую крепость против угрозы с востока"
+ decision_build_ghaesch_kanra_fortress_desc: "Нашему королевству постоянно угрожает фундаменталистская империя Кхай, поклоняющаяся своей ложной богине солнца Ариэн. Если мы хотим остановить их неизбежные вторжения на наши территории из земель Ашанура, мы должны построить укрепления, подобные Тёмной цитадели Абрахана. Их стены погасят свет слабых богов кхайцев, если они придут к нам."
+ decision_build_ghaesch_kanra_fortress_confirm: "Ни один луч свет с востока не пройдёт."
+
+
  ##################################
  #### Arysis / Maresh Decisions ###
  ##################################
@@ -3283,6 +3306,11 @@
  decision_reclaim_mabladdum.tt_2: "Вы восстановили связи с #L [GetTitleByKey('k_barazimab_ul').GetNameNoTier]ом#!."
  decision_reclaim_mabladdum.tt_3: "Выберите нового правителя державы [GetTitleByKey('k_mablad_dum').GetNameNoTier]."
 
+ decision_restore_mablabdum: "Вернуть Маблад-дум"
+ decision_restore_mablabdum_desc: "Могущественный [GetTitleByKey('k_mablad_dum').GetNameNoTier], некогда гордую цитадель [Concept('blacklocks', 'Черновласов')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E], постигла катастрофа. Сердце Огня, вулкан, который питал жаром великие кузни, разразился яростью, изгнав наших предков из разрушенных чертогов. Теперь поганые [Concept('orcs', 'орки')|E] и [Concept('goblins', 'гоблины')|E] ютятся в разрушенных залах и сводах, оскверняя их одним своим присутствием.\n\nДовольно! Пришло время исполнить наши клятвы и изгнать мерзких врагов, занявших Маблад-дум! Мы не успокоимся, пока они не будут развеяны на все четыре стороны, а чертоги наших предков снова не окажутся в руках [Concept('dwarven', 'гномов')|E], раз и навсегда!"
+ decision_restore_mablabdum_tooltip: "Освободить затерянные залы Маблад-дума"
+ decision_restore_mablabdum_confirm: "#italic Подайте мне мою секиру и броню!#!"
+
  ## Dwarven Beardcare loc
  beard_care_standard_modifier: "Красивая борода"
  beard_care_standard_modifier_desc: "Это прекрасная борода. Даже великолепная."
@@ -3862,13 +3890,19 @@
  decision_form_powa_kingdom_effect_tt_2: "Вы владеете #V 50%#! графствами державы [GetTitleByKey('k_poa').GetNameNoTier]\n$BULLET_WITH_TAB$Текущее значение: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_martial_route')|2]%#!"
  decision_form_powa_kingdom_diplo_trigger_tt: "В настоящее время: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_value_normalized')|2]%#!\nПо крайней мере #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required')|0]%#! правителей в регионе [GetTitleByKey('k_poa').GetNameNoTier] подходят под следующие условия:\n$BULLET_WITH_TAB$Ваши друзья\n$BULLET_WITH_TAB$Ваши любовники\n$BULLET_WITH_TAB$Ваши вассалы\n$BULLET_WITH_TAB$Входят в ту же конфедерацию\n$BULLET_WITH_TAB$Находятся под #v вашим#! влиянием\n[Select_CString(EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required'),'(CFixedPoint)80'),'\nЕсли Пова находится под вашим контролем, значение поддержки опускается - нужно лишь #V 50%#!.','')]"
 
+ decision_fortify_powa_borders_title: "Укрепить пованские границы"
+
+ decision_expand_powa_kingdom: "Расширить Пову"
+ decision_expand_powa_kingdom_desc: "Теперь, когда наше королевство в безопасности, пришло время расширить наши границы. Разрозненные племена вокруг нас должны объединиться и извлечь выгоду из нового единства пованского народа."
+ decision_expand_powa_kingdom_tooltip: "Расширить ваше новое королевство"
+ decision_expand_powa_kingdom_confirm: "Я прослежу за этим."
+
  decision_make_powa_mercantile_center_title: "Основать центр торговли"
  decision_make_powa_mercantile_center_tooltip: "Выйти за пределы полей боя внешней политики"
  decision_make_powa_mercantile_center_desc: "После объединения у пованцев появилась новая цель, поскольку выживание и повседневная жизнь стали волновать их гораздо меньше. Поэтому мы обратились к нашим соседям, но не в отместку за прошлые проступки, а для развития торговли и дружбы. Теперь наши товары и людей можно найти от верфей Анарикэ до великих городов Гондора!"
  decision_make_powa_mercantile_center_confirm: "Отправить караваны!"
  decision_make_powa_mercantile_center_effect_tt_1: "В настоящее время: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_neighboring_rulers_count')]#!\nУ вас есть #V 5#! соседей, подходящих под следующие условия:\n$BULLET_WITH_TAB$Ваши любовники\n$BULLET_WITH_TAB$Ваши друзья\n$BULLET_WITH_TAB$Ваши данники\n$BULLET_WITH_TAB$Находятся под #v вашим#! влиянием"
  united_powa_peacefully_building_tt: "Теперь вы можете улучшить Зал единения до Купеческого форума."
-
 
  decision_choose_new_tayee_patron: "Выбрать нового тайитского покровителя"
  decision_choose_new_tayee_patron_tooltip: "Выбрать новый курс в жизни, посвятив себя другому божеству"
@@ -3960,8 +3994,8 @@
  decision_avatar_of_x_deity_confirm: "Да будет так."
 
  decision_reign_of_the_avatar: "Утвердить божественную власть"
- decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] в державе и божественных воплощений, ступающих по этой земле."
- decision_reign_of_the_avatar_tooltip: "Коренным образом реформировать [Concept('realm', 'державу')|E]"
+ decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] и [ROOT.Char.GetFaith.HighGodHerHis|U] аватара, что ходит по этой земле. Все должны поклоняться и чтить воплощение [ROOT.Char.GetFaith.HighGodNamePossessive]!"
+ decision_reign_of_the_avatar_tooltip: "Реформировать [Concept('realm', 'державу')|E] в соответствии с традициями мандалы"
  decision_reign_of_the_avatar_confirm: "[ROOT.Char.GetFaith.HighGodName] будет править."
 
  decision_visit_ormalian_port: "Посетить порт в заливе"
@@ -4277,6 +4311,56 @@
  decision_adopt_pet_mumak_tooltip: "Попытаться приручить телёнка мумака"
  decision_adopt_pet_mumak_confirm: "Давайте найдём его!"
  decision_adopt_pet_mumak_tt: "Приручён телёнок мумака"
+
+ decision_onto_the_boundless_horizon: "К бескрайнему горизонту"
+ decision_onto_the_boundless_horizon_desc: "Моё время пришло. Я чувствую это по песку у себя под ногами и по крикам морских птиц в небе над головой. Со времён дочерей Амбы среди матриархов Амбасона существовал устойчивый обычай освобождать место для своих преемниц, когда сила её руки ослабевала.\n\nЯ отправлюсь на самую восточную оконечность нашего острова, где берег плавно спускается к великому океану, и соберу все свои оставшиеся силы в последний раз. Пусть волны унесут меня далеко, прежде чем бескрайний горизонт обнимет меня."
+ decision_onto_the_boundless_horizon_tooltip: "Отправиться в плавание в одиночку"
+ decision_onto_the_boundless_horizon_confirm: "Я оставлю пески Амбасона позади."
+
+ hasnt_taken_sea_trade: "Вы не приняли [Concept('decision', 'решение')|E] «[GetDecision('decision_establish_lyneria_sea_trade').GetName]»"
+ hasnt_taken_overland_trade: "Вы не приняли [Concept('decision', 'решение')|E] «[GetDecision('decision_establish_lyneria_overland_trade').GetName]»"
+
+ decision_establish_lyneria_overland_trade: "Наладить прибрежную торговлю с Линерией"
+ decision_establish_lyneria_overland_trade_desc: "[GetGeographicalRegion('custom_lyneria_pass').GetName] уже давно является связующим звеном между Линерией и Ганом. Через горы в города на побережье поступали мумакил, пряности и древесина, а взамен Ган щедро снабжался драгоценностями, инструментами и оружием.\n"
+ decision_establish_lyneria_overland_trade_desc.wilderness: "Теперь эта река пересохла, и лишь немногие торговые караваны пересекают опасные тропы в Линерию. Единственными стражами перевала являются безмолвные вершины, а риски, связанные с путешествием, делают торговлю невыгодной. И всё же, возможно, если я буду достаточно [Select_CString(ROOT.Char.IsFemale, 'храбра', 'храбр' )], чтобы обезопасить перевалы, торговля снова потечет в Ган и обогатит мои земли."
+ decision_establish_lyneria_overland_trade_desc.enemy: "Однако теперь перевалы контролируют другие правители и взимают высокие пошлины за безопасность наших торговцев. Если бы я [Select_CString(ROOT.Char.IsFemale, 'сама захватила', 'сам захватил' )] этот путь, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы контролировать торговые потоки и направлять их в свои собственные земли."
+ decision_establish_lyneria_overland_trade_confirm: "Да потекут реки торговли!"
+ decision_establish_lyneria_overland_trade_tooltip: "Начать торговать с Линерией через горные перевалы"
+ decision_establish_lyneria_overland_trade_tt: "Сухопутная торговля налажена"
+ decision_establish_lyneria_overland_trade_confed: "Вы заключили союз с членом линерийской [Concept('confederation', 'конфедерации')|E]"
+ control_all_of_lyneria_pass: "#V Вы#! или один из ваших [Concept('allies', 'союзников')|E] полностью контролируете все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_lyneria_pass').GetName]"
+
+ decision_establish_lyneria_sea_trade: "Наладить морскую торговлю с Линерией"
+ decision_establish_lyneria_sea_trade_desc: "[GetGeographicalRegion('custom_lyneria_pass').GetName] уже давно является связующим звеном между Линерией и Ганом."
+ decision_establish_lyneria_sea_trade_desc.wilderness: "$decision_establish_lyneria_sea_trade_desc$ Однако сейчас он в запустении, а риски, связанные с путешествием, делают торговлю невыгодной. $decision_establish_lyneria_sea_trade_desc.conculsion$"
+ decision_establish_lyneria_sea_trade_desc.enemy: "$decision_establish_lyneria_sea_trade_desc$ Однако ныне эту дорогу контролируют иные правители и взимают высокие пошлины за безопасность наших купцов. $decision_establish_lyneria_sea_trade_desc.conculsion$"
+ decision_establish_lyneria_sea_trade_desc.conculsion: "Поэтому, возможно, было бы лучше рассмотреть альтернативные торговые маршруты.\n\nАканали обычно не любят море, но линерийцы показали, что, если его укротить, оно может принести огромное богатство. Возможно, нам тоже стоит повернуться спиной к горам и вместо этого взглянуть в сторону моря в поисках пути в Линерию."
+ decision_establish_lyneria_sea_trade_desc.singapura: "Между моими землями и богатыми городами Линерии раскинулись древние джунгли #ONCLICK:GEOGRAPHICAL_REGION,custom_lyneria_coastline #TOOLTIP:GEOGRAPHICAL_REGION,custom_lyneria_coastline Ахавского побережья#!#!#!, которые местные [GetFaithByKey('faith_degi').GetAdherentNamePlural|l] называют «Деги». Густые, враждебные и почти непроходимые, они блокируют торговлю вдоль береговой линии с тех пор, как мы себя помним, вместо этого направляя её через линерийские и сенганские корабли.\nАканали обычно не любят море, но линерийцы показали, что, если его укротить, оно может принести огромное богатство. Возможно, нам тоже следует прекратить бездействовать и вместо этого взглянуть в сторону моря в поисках пути в Линерию."
+ decision_establish_lyneria_sea_trade_desc.singapura_enemy: "Между моими землями и богатыми городами Линерии раскинулись древние джунгли #ONCLICK:GEOGRAPHICAL_REGION,custom_lyneria_coastline #TOOLTIP:GEOGRAPHICAL_REGION,custom_lyneria_coastline Ахавского побережья#!#!#!, которые местные [GetFaithByKey('faith_degi').GetAdherentNamePlural|l] называют «Деги». Густые, враждебные и почти непроходимые, они блокируют торговлю вдоль береговой линии с тех пор, как мы себя помним, вместо этого направляя её через линерийские и сенганские корабли.\nОднако недавно другие смельчаки проложили дорогу через джунгли, и теперь наши торговцы сталкиваются с высокими пошлинами, куда бы они ни направлялись. Аканали обычно не любят море, но линерийцы показали, что, если его укротить, оно может принести огромное богатство. Возможно, нам тоже следует прекратить бездействовать и вместо этого взглянуть в сторону моря в поисках пути в Линерию."
+ decision_establish_lyneria_sea_trade_desc.degi: "По другую сторону прибрежной дороги, ведущей в Линерию, находится #V Деги#!, наше божество, испытывающее нас, густой, враждебный и непроницаемый для тех, кто не знает его секретов. В течение многих лет бесчисленные торговцы избегали его глубоких джунглей, путешествуя вместо этого по морю на линерийских и сенганских кораблях.\n\nМой народ мало что выиграл от этого соглашения, но прокладывать дорогу через Деги для ведения обширной торговли - глупо. Вообще-то мы не любим море, но линерийцы доказали, что, если с ним столкнуться, это может принести много пользы. Возможно, нам тоже стоит выйти из леса и вместо этого посмотреть в сторону моря в поисках пути в Линерию."
+ decision_establish_lyneria_sea_trade_confirm: "Да потекут реки торговли!"
+ decision_establish_lyneria_sea_trade_tooltip: "Начать торговать с Линерией по морю"
+ decision_establish_lyneria_sea_trade_tt: "Морская торговля налажена"
+ decision_establish_lyneria_sea_trade_confed: "Вы заключили союз с членом конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]»"
+ capital_county_is_coastal: "Ваша [Concept('capital', 'столица')|E] находится в прибрежном [Concept('county', 'графстве')|E]"
+
+ decision_establish_lyneria_coastal_trade: "Наладить сухопутную торговлю с Линерией"
+ decision_establish_lyneria_coastal_trade_desc.wilderness: "Между моими землями и богатыми городами Линерии раскинулись древние джунгли #ONCLICK:GEOGRAPHICAL_REGION,custom_lyneria_coastline #TOOLTIP:GEOGRAPHICAL_REGION,custom_lyneria_coastline Ахавского побережья#!#!#!, которые местные [GetFaithByKey('faith_degi').GetAdherentNamePlural|l] называют «Деги». Густые, враждебные и почти непроходимые, они блокируют торговлю вдоль береговой линии с тех пор, как мы себя помним.\n\nИ всё же, возможно, если бы удалось их усмирить и проложить дорогу, я [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] бы направлять большую часть торговли Линерии на юг через мои собственные земли."
+ decision_establish_lyneria_coastal_trade_desc.degi: "По другую сторону прибрежной дороги, ведущей в Линерию, находится #V Деги#!, наше божество, испытывающее нас, густой, враждебный и непроницаемый для тех, кто не знает его секретов. В течение многих лет бесчисленные торговцы избегали его глубоких джунглей, путешествуя вместо этого по морю.\n\nИ всё же, возможно, если я и мой народ окажемся достаточно достойными, мы сможем проложить безопасный путь, преодолев все опасности, и направить торговлю с Линерией на юг в наши земли."
+ decision_establish_lyneria_coastal_trade_desc.degi_enemy: "По другую сторону прибрежной дороги, ведущей в Линерию, находится #V Деги#!, наше божество, испытывающее нас, густой, враждебный и непроницаемый для тех, кто не знает его секретов. В течение многих лет бесчисленные торговцы избегали его глубоких джунглей, путешествуя вместо этого по морю.\n\nОднако другие бросили вызов его опасностям и проложили дорогу вдоль побережья, не выказывая должного уважения. Я и мой народ должны вернуть джунгли, чтобы завоевать его уважение и пожинать плоды этой торговли."
+ decision_establish_lyneria_coastal_trade_desc.enemy: "Между моими землями и богатыми городами Линерии раскинулись древние джунгли #ONCLICK:GEOGRAPHICAL_REGION,custom_lyneria_coastline #TOOLTIP:GEOGRAPHICAL_REGION,custom_lyneria_coastline Ахавского побережья#!#!#!, которые местные [GetFaithByKey('faith_degi').GetAdherentNamePlural|l] называют «Деги». Густые, враждебные и почти непроходимые, они блокируют торговлю вдоль береговой линии с тех пор, как мы себя помним.\n\nОднако дорогу проложили другие, и торговля идёт вдоль побережья, что дорого обходится моим купцам. Однако, если бы я [Select_CString(ROOT.Char.IsFemale, 'захватила', 'захватил' )] этот путь, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы оказаться в выигрыше."
+ decision_establish_lyneria_coastal_trade_confirm: "Да потекут реки торговли!"
+ decision_establish_lyneria_coastal_trade_tooltip: "Начать торговать с Линерией через прибрежную дорогу"
+ decision_establish_lyneria_coastal_trade_tt: "Прибрежная торговля налажена"
+ decision_establish_lyneria_coastal_trade_confed: "Вы заключили союз с членом линерийской [Concept('confederation', 'конфедерации')|E]"
+ control_all_of_lyneria_coastline: "#V Вы#! или один из ваших [Concept('allies', 'союзников')|E] полностью контролируете все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_lyneria_coastline').GetName]"
+ settle_all_of_lyneria_coastline: "Все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_lyneria_coastline').GetName] должны быть полностью колонизированы"
+
+ decision_hire_vulmaw_mercenaries: "Нанять вулмавских наёмников"
+ decision_hire_vulmaw_mercenaries_desc: "К юго-востоку от #ONCLICK:TITLE,e_shayn #TOOLTIP:LANDED_TITLE,e_shayn #L Шайна#!#!#! лежат бесчисленные островки Южного архипелага, где обитают вулмавы. Они часто заходят далеко на своих быстроходных судах, посещая наши порты как купцы, но также совершая набеги на наши корабли как пираты. За хорошую цену можно убедить многих из этих отважных людей сражаться за нас, а не против нас..."
+ decision_hire_vulmaw_mercenaries_tooltip: "Нанять полк уавских пиратов"
+ decision_hire_vulmaw_mercenaries_confirm: "Очень хорошо. Отправить им весточку."
+ decision_hire_vulmaw_mercenaries_tt: "Вулмавские наёмники наняты"
 
  ###################################
  ### Skorgrim Dourhand Decisions ###
