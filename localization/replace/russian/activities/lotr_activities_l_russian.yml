@@ -93,7 +93,7 @@
 
  activity_tournament_province_elven_stables_01_desc: "#P + $building_type_elven_stables_01$#!"
  activity_tournament_province_warg_pits_01_desc: "#P + $building_type_warg_pits_01$#!"
- activity_tournament_province_proving_ground_01_desc:2 "#P + $building_type_proving_ground_01$#!"
+ activity_tournament_province_proving_ground_01_desc: "#P + $building_type_proving_ground_01$#!"
  activity_tournament_province_elven_barracks_01_desc: "#P + $building_type_elven_barracks_01$#!"
  activity_tournament_province_orc_barracks_01_desc: "#P + $building_type_orc_barracks_01$#!"
  activity_tournament_province_tree_flet_01_desc: "#P + $building_type_tree_flet_01$#!"
@@ -102,14 +102,14 @@
  activity_tournament_province_snaga_warrens_01_desc: "#P + $building_type_snaga_warrens_01$#!"
  activity_tournament_province_elven_forges_01_desc: "#P + $building_type_elven_forges_01$#!"
  activity_tournament_province_heavy_armoury_01_desc: "#P + $building_type_heavy_armoury_01$#!"
- activity_tournament_province_military_specialization_01_desc:2 "#P + $building_type_military_specialization_01$#!"
- activity_tournament_province_dwarven_archer_barracks_01_desc:2 "#P + $building_type_dwarven_archer_barracks_01$#!"
- activity_tournament_province_dwarven_armory_01_desc:2 "#P + $building_type_dwarven_armory_01$#!"
- activity_tournament_province_dwarven_kings_armory_military_01_desc:2 "#P + $building_type_dwarven_kings_armory_military_01$#!"
- activity_tournament_province_dwarven_pike_barracks_01_desc:2 "#P + $building_type_dwarven_pike_barracks_01$#!"
- activity_tournament_province_dwarven_hi_barracks_01_desc:2 "#P + $building_type_dwarven_hi_barracks_01$#!"
- activity_tournament_province_dwarven_skirmisher_barracks_01_desc:2 "#P + $building_type_dwarven_skirmisher_barracks_01$#!"
- activity_tournament_province_wonder_akos_desc:2 "#P +++ $building_type_wonder_akos$#!"
+ activity_tournament_province_military_specialization_01_desc: "#P + $building_type_military_specialization_01$#!"
+ activity_tournament_province_dwarven_archer_barracks_01_desc: "#P + $building_type_dwarven_archer_barracks_01$#!"
+ activity_tournament_province_dwarven_armory_01_desc: "#P + $building_type_dwarven_armory_01$#!"
+ activity_tournament_province_dwarven_kings_armory_military_01_desc: "#P + $building_type_dwarven_kings_armory_military_01$#!"
+ activity_tournament_province_dwarven_pike_barracks_01_desc: "#P + $building_type_dwarven_pike_barracks_01$#!"
+ activity_tournament_province_dwarven_hi_barracks_01_desc: "#P + $building_type_dwarven_hi_barracks_01$#!"
+ activity_tournament_province_dwarven_skirmisher_barracks_01_desc: "#P + $building_type_dwarven_skirmisher_barracks_01$#!"
+ activity_tournament_province_wonder_akos_desc: "#P +++ $building_type_wonder_akos$#!"
 
  ################################## 
  # Explore the Histories activity # 
@@ -467,7 +467,7 @@
  activity_mining_destination_selection: "Тип, редкость и ценность подземных [Concept('resources', 'ресурсов')|E] в разных уголках [Concept('middleearth', 'Средиземья')|E] отличаются.\n\nШанс успеха в добыче зависит от вашего [GetTrait('lifestyle_miner').GetName( GetNullCharacter )]ского мастерства, но и от цели вашей экспедиции."
 
  culture_parameter_can_use_mining_activity: "Могут проводить [activities|El] «[GetActivityType('activity_mining').GetName]»"
- culture_parameter_can_appoint_ootm: "Доступна [Concept( 'court_position', 'придворная должность' )|E] #high  [GetCourtPositionType('overseer_of_the_mines_court_position').GetName()]#!"
+ culture_parameter_can_appoint_ootm: "Доступна [Concept( 'court_position', 'придворная должность' )|E] #high [GetCourtPositionType('overseer_of_the_mines_court_position').GetName()]#!"
  can_use_mining_activity_name: "[GetCultureTradition('tradition_miners').GetName]"
  culture_parameter_unlock_full_delving: "Могут строить подземные владения выше 4 уровня"
 
@@ -560,7 +560,7 @@
  mining_progress_towards_trait_3_tt: "Значительно повышает [Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] «[GetTrait('lifestyle_miner').GetName( GetNullCharacter )]»"
 
  ACTIVITY_GUEST_MINER_REASON: "[ROOT.Char.GetSheHe|U] - [GetTrait('lifestyle_miner').GetName( ROOT.Char.Self )]: $VALUE|=+0$"
- ACTIVITY_GUEST_MINERS_MORE_COMMON_REASON:2 "[ROOT.Char.GetCulture.GetCollectiveNoun]ие культурные [traditions|El]: $VALUE|=+0$"
+ ACTIVITY_GUEST_MINERS_MORE_COMMON_REASON: "[ROOT.Char.GetCulture.GetCollectiveNoun]ие культурные [traditions|El]: $VALUE|=+0$"
  ACTIVITY_GUEST_MINERS_MORE_VALUED_REASON: "$ACTIVITY_GUEST_HUNTERS_MORE_COMMON_REASON$"
  ACTIVITY_GUEST_MINERS_MORE_PIOUS_REASON: "$ACTIVITY_GUEST_HUNTERS_MORE_COMMON_REASON$"
  ACTIVITY_AVARICIOUS_REASON: "[ROOT.Char.GetSheHe|U] обладает свойством «[GetTrait('avaricious').GetName( ROOT.Char.Self )]»: $VALUE|=+0$"
@@ -696,7 +696,7 @@
 
  expedition_variable_trigger: "Это занятие нельзя использовать в течение [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'expedition_type_cooldown') )]"
  ### Host ###
- activity_expedition_host_desc: "\n#L Перемещение державы:#!\n$EFFECT_LIST_BULLET$ Вы покидаете свою [Concept('realm', 'державу')|E], оставив вместо себя другого [Concept('dwarf', 'гнома')|E]-правителя, основав\n   новую державу в другом месте на своё усмотрение.\n\n#L Основать вассальное владение:#!\n$EFFECT_LIST_BULLET$ Вы выбираете [Concept('dwarf', 'гнома')|E], который начнёт основание форпоста в отдалённом\n   заброшенном [Concept('delving', 'подземном владении')|E].\n$EFFECT_LIST_BULLET$ Вассальное владение может стать вашим полноценным [Concept('vassal', 'вассалом')|E] по\n   прошествии определённого времени."
+ activity_expedition_host_desc: "\n#L Перемещение державы:#!\n$EFFECT_LIST_BULLET$ Вы покидаете свою [Concept('realm', 'державу')|E], оставив вместо себя другого [Concept('dwarf', 'гнома')|E]-правителя, основав\n новую державу в другом месте на своё усмотрение.\n\n#L Основать вассальное владение:#!\n$EFFECT_LIST_BULLET$ Вы выбираете [Concept('dwarf', 'гнома')|E], который начнёт основание форпоста в отдалённом\n заброшенном [Concept('delving', 'подземном владении')|E].\n$EFFECT_LIST_BULLET$ Вассальное владение может стать вашим полноценным [Concept('vassal', 'вассалом')|E] по\n прошествии определённого времени."
 
  ### Province Descs ###
 
@@ -756,15 +756,15 @@
  lotr_visit_vineyard_host_memory: "посещение занятия «[GetActivityType( 'activity_lotr_visit_vineyard' ).GetName]»"
  lotr_visit_vineyard_host_memory_first_perspective: "Я [Select_CString(ROOT.Char.IsFemale, 'посетила', 'посетил' )] занятие «[GetActivityType( 'activity_lotr_visit_vineyard' ).GetName]»"
  lotr_visit_vineyard_host_memory_second_perspective: "Вы посетили занятие «[GetActivityType( 'activity_lotr_visit_vineyard' ).GetName]»"
- lotr_visit_vineyard_host_memory_third_perspective: "[owner.GetName] [Select_CString(owner.IsFemale, 'посетила', 'посетил' )] занятие «[GetActivityType(  'activity_lotr_visit_vineyard' ).GetName]»"
+ lotr_visit_vineyard_host_memory_third_perspective: "[owner.GetName] [Select_CString(owner.IsFemale, 'посетила', 'посетил' )] занятие «[GetActivityType( 'activity_lotr_visit_vineyard' ).GetName]»"
  lotr_wine_tasting_host_memory: "посещение занятия «[GetActivityType( 'activity_lotr_wine_tasting' ).GetName]»"
  lotr_wine_tasting_host_memory_first_perspective: "Я [Select_CString(ROOT.Char.IsFemale, 'посетила', 'посетил' )] занятие «[GetActivityType( 'activity_lotr_wine_tasting' ).GetName]», устроенное персонажем [host.GetTitledFirstName]"
  lotr_wine_tasting_host_memory_second_perspective: "Вы посетили занятие «[GetActivityType( 'activity_lotr_wine_tasting' ).GetName]», устроенное персонажем [host.GetTitledFirstName]"
- lotr_wine_tasting_host_memory_third_perspective: "[owner.GetName] [Select_CString(owner.IsFemale, 'посетила', 'посетил' )] занятие «[GetActivityType(  'activity_lotr_wine_tasting' ).GetName]» во владении [GetTitleByKey('b_ile-ife').GetNameNoTier]"
+ lotr_wine_tasting_host_memory_third_perspective: "[owner.GetName] [Select_CString(owner.IsFemale, 'посетила', 'посетил' )] занятие «[GetActivityType( 'activity_lotr_wine_tasting' ).GetName]» во владении [GetTitleByKey('b_ile-ife').GetNameNoTier]"
  lotr_wine_tasting_guest_memory: "посещение занятия «[GetActivityType( 'activity_lotr_wine_tasting' ).GetName]», устроенного персонажем [host.GetTitledFirstName]"
  lotr_wine_tasting_guest_memory_first_perspective: "Я [Select_CString(ROOT.Char.IsFemale, 'посетила', 'посетил' )] занятие «[GetActivityType( 'activity_lotr_wine_tasting' ).GetName]», устроенное персонажем [host.GetTitledFirstName]"
  lotr_wine_tasting_guest_memory_second_perspective: "Вы посетили занятие «[GetActivityType( 'activity_lotr_wine_tasting' ).GetName]», устроенное персонажем [host.GetTitledFirstName]"
- lotr_wine_tasting_guest_memory_third_perspective: "[owner.GetName] [Select_CString(owner.IsFemale, 'посетила', 'посетил' )] занятие «[GetActivityType(  'activity_lotr_wine_tasting' ).GetName]», устроенное персонажем [host.GetTitledFirstName]"
+ lotr_wine_tasting_guest_memory_third_perspective: "[owner.GetName] [Select_CString(owner.IsFemale, 'посетила', 'посетил' )] занятие «[GetActivityType( 'activity_lotr_wine_tasting' ).GetName]», устроенное персонажем [host.GetTitledFirstName]"
 
  # Activities
  activity_lotr_wine_tasting_owner: "Устроитель"

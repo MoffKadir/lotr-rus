@@ -223,6 +223,7 @@
  decision_utter_south_integrate_mag_tumag_elven_desc: "Магрийцы - древний народ, принадлежащий к расе [Concept('men', 'людей')|E], которые долгое время жили на своей земле в мире с [Concept('kinnlai', 'кинн-лай')|E].\n\nМы могли бы обеспечить, чтобы так и оставалось, взяв их и их вождей под нашу защиту."
  decision_utter_south_integrate_mag_tumag_elven_confirm: "Включить Маг и Тумаг в границы державы."
  decision_utter_south_integrate_mag_tumag_elven_tooltip: "Навсегда присоединить самоуправляемых магрийцев к нашей державе."
+ decision_utter_south_integrate_mag_tumag_elven_tt: "Королевства-близнецы интегрированы"
 
  decision_terilaen_library: "Посетить библиотеку Айнглада"
  decision_terilaen_library_desc: "[Concept('cuind', 'Куинд')|E] обитали в густых лесах #L [GetTitleByKey('k_drel').GetNameNoTier]а#! на протяжении тысячелетий. Но было время, давно прошедшее, когда наши родичи странствовали, посещая другие берега под другими звёздами. Если сохранились какие-либо записи об этих путешествиях, то лучшее место для их поисков - королевский дворец."
@@ -3806,7 +3807,7 @@
  ### Artifact Decisions ###
  bestow_heirloom_decision: "Подарить реликвию наследнику"
  bestow_heirloom_decision_tooltip: "Издать указ о том, что один из ваших артефактов станет вечной реликвией наследников"
- bestow_heirloom_decision_desc:1 "#F По обычаю, великие короли и императоры дарят своим наследникам престижные артефакты, чтобы их признали и почитали как хранителей [Concept('heirlooms', 'реликвий')|E].#!"
+ bestow_heirloom_decision_desc: "#F По обычаю, великие короли и императоры дарят своим наследникам престижные артефакты, чтобы их признали и почитали как хранителей [Concept('heirlooms', 'реликвий')|E].#!"
  bestow_heirloom_decision_confirm: "Мне нужна опись!"
  bestow_heirloom_decision_unattached_artifact_tt: "не привязан к титулу"
  bestow_heirloom_decision_artifact_attached_to_secondary_title_tt: "привязан к одному из ваших второстепенных титулов"
@@ -4289,26 +4290,31 @@
  decision_utter_south_integrate_mag_tumag_mumakan_desc: "Магрийский народ, хотя и давно отделился от нас, является родственным племенем, пришедшим на юг во времена #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofamav1').GetID] #L Амава#!#!, и, возможно, мы можем вновь стать единым целым, как в былые времена."
  decision_utter_south_integrate_mag_tumag_mumakan_confirm: "Включить Маг и Тумаг в состав великой державы."
  decision_utter_south_integrate_mag_tumag_mumakan_tooltip: "Воссоединить магрийцев с их потерянными собратьями."
+ decision_utter_south_integrate_mag_tumag_mumakan_tt: "Королевства-близнецы усмирены"
 
  decision_utter_south_integrate_shayn_mag_tumag: "Интегрировать Шайн"
  decision_utter_south_integrate_shayn_mag_tumag_desc: "Жители далёких земель Шайна, хотя и более цивилизованные, чем их собратья в Мумакане, всё ещё остаются заблудшим народом: южане цепляются за свои местные культы, в то время как северные линерийцы мечутся от одного бога к другому. Мир и порядок могут быть принесены им, если я только попытаюсь."
  decision_utter_south_integrate_shayn_mag_tumag_confirm: "В Шайне настанет мир."
  decision_utter_south_integrate_shayn_mag_tumag_tooltip: "Взять Шайн под бдительный надзор."
+ decision_utter_south_integrate_shayn_mag_tumag_tt: "Шайн интегрирован"
 
  decision_integrate_gan: "Интегрировать Ган"
  decision_integrate_gan_desc: "На востоке лежат обширные джунгли и холмы #ONCLICK:TITLE,k_gan #TOOLTIP:LANDED_TITLE,k_gan #L Гана#!#!#!. Часто правители #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#! имели огромное влияние на многие местные [Concept('men', 'людские')|E] племена, но теперь пришло время полностью установить над ними контроль. Ган навсегда станет частью Мумакана и укрепит державу своими богатыми ресурсами!"
  decision_integrate_gan_tooltip: "Сделать Ган частью Мумакана"
  decision_integrate_gan_confirm: "Да!"
+ decision_integrate_gan_tt: "Ган интегрирован"
 
  decision_subjugate_hathor: "Подчинить Хатор"
  decision_subjugate_hathor_desc: "На юге обитают свирепые хаторийцы, которые, как говорят, пришли с далёких берегов в незапамятные времена. Долгое время они бросали вызов владыкам #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#!, но теперь, наконец, [GetTitleByKey('k_hathor').GetNameNoTier] преклонит перед нами колено."
  decision_subjugate_hathor_tooltip: "Навсегда подчинить хаторийцев"
  decision_subjugate_hathor_confirm: "Их время пришло."
+ decision_subjugate_hathor_tt: "Хаторийцы подчинены"
 
  decision_subjugate_koronande: "Завоевать Коронандэ"
  decision_subjugate_koronande_desc: "На западе расположено множество коронандитских городов-государств, группы олигархий, слабо объединённых под властью самого [GetTitleByKey('k_koronande').GetNameNoTier]. В прошлом они преклонялись перед хозяевами из #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#!, пришло время напомнить им об этом..."
  decision_subjugate_koronande_tooltip: "Включить Коронандэ в состав державы"
  decision_subjugate_koronande_confirm: "Коронандэ принадлежит мне."
+ decision_subjugate_koronande_tt: "Коронандэ завоёвана"
 
  decision_subjugate_talilan: "Уничтожить Талилан"
  decision_subjugate_talilan_desc: "Издавна [Concept('kinnlai', 'кинн-лай')|E] обитали в своих лесах и джунглях на полуострове [GetTitleByKey('k_talilan').GetNameNoTier]. Они слабы, и, если верить легендам, давным-давно [Concept('kinnlai_sundered', 'разделены')|E]. Пришло время продемонстрировать всю степень их слабости и изгнать их из этих земель, чтобы даже леса забыли о них."
@@ -4320,6 +4326,7 @@
  decision_adopt_pet_mumak_tooltip: "Попытаться приручить телёнка мумака"
  decision_adopt_pet_mumak_confirm: "Давайте найдём его!"
  decision_adopt_pet_mumak_tt: "Приручён телёнок мумака"
+ decision_adopt_pet_mumak_failure: "Неудачное приручение телёнка"
 
  decision_drenim_goblin_offering: "Умиротворить оваг"
  decision_drenim_goblin_offering_desc: "В горах к северу от нас обитают жестокие оваг - измученные духи наших предков, проклятые вечно бродить по мрачным вершинам и предгорьям [Concept('yellowmountains', 'Жёлтых гор')|E].\n\nСреди дреним существует обычай оставлять подношения, чтобы умилостивить оваг, и они, в свою очередь, могли бы защитить нас от вторжений извне, если сочтут нас достойными."
@@ -4384,7 +4391,7 @@
  decision_join_lynerian_league_confirm: "Вперёд, к процветанию."
  half_lynerian_league_opinion: "Не менее #V 50%#! членов конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]» имеют больше #P +50#! [Concept('opinion', 'мнения')|E] о вас."
  decision_join_lynerian_league_toast: "Вы присоединитесь к лиге"
- decision_join_lynerian_league_tt: "Вы присоединитесь к [Concept('confederation', 'конфедерации')|E] «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName]»"
+ decision_join_lynerian_league_tt: "Вы присоединились к [Concept('confederation', 'конфедерации')|E] «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName]»"
 
  decision_found_protected_harbour: "Основать защищённую гавань"
  decision_found_protected_harbour_desc: "Разрушения моря, как природные, так и морские, представляют постоянную опасность для наших прибрежных городов. Если бы мы создали защищённые гавани в стратегически важных местах, то можно было бы предотвратить значительный ущерб нашему флоту от пиратских набегов или штормов."
