@@ -1220,8 +1220,11 @@
  decision_turn_to_piracy: "Обратиться к пиратству"
  decision_turn_to_piracy_AI: "Обратиться к пиратству (ИИ)"
  decision_turn_to_piracy.desc: "Мы долго притворялись цивилизованными и слабыми. Мы - гордые сыновья берега, и мы обратимся к жизни налётчиков! Наших парусов будут бояться на всех побережьях!"
+ decision_turn_to_piracy_desc.ormal: "[GetFaithByKey('faith_ormal_pirate').GetAdherentNamePlural], прославленные и печально известные пираты, когда-то правили водами Ормальского залива. Мы сделаны из одного теста, и очень скоро все будут бояться вида наших парусов."
+ decision_turn_to_piracy_desc.vulmaw: "Среди вулмавов Южного архипелага есть те, кто избавляется от скуки обычной жизни и наслаждается морской свободой, и называют себя [GetFaithByKey('faith_nlkum_kadir').GetAdherentNamePlural|l]. Мы должны принять их образ жизни, и тогда все будут бояться вида наших длинных кораблей!"
  decision_turn_to_piracy.tt: "Принять наследие налётчиков"
  decision_turn_to_piracy_confirm: "Грабежи и слава."
+ corsair_conversion_event_troops: "Пиратская команда"
 
  decision_adunaic_revival: "Адунайское возрождение"
  decision_adunaic_revival_desc: "В древние времена Умбаром правили [Concept('adunai', 'адунайцы')|E], великие люди, могущественные и сильные. К таким людям принадлежал Кастамир Великий, основатель нашей линии и величайший из королей [Concept('gondor', 'Гондора')|E], чьи потомки были несправедливо изгнаны в Умбар. Хотя прошло много времени и память исказилась, тень их наследия все еще витает над Умбаром.\n\nМы принадлежим к тому же великому роду, истинные наследники притязаний Кастамира. Мы тоже достойны возвыситься над низшими людьми, ибо в наших жилах течет кровь [anadune|E]. Если бы мы проповедовали это сходство и связали себя с этими историческими силами, мы бы значительно укрепили свои позиции в Умбаре, какими бы возвышенными ни казались кому-то наши притязания. Пришло время принять традиции нашего наследия и вновь сделать [Concept('adunai', 'адунайцев')|E] великими!"
@@ -4203,6 +4206,7 @@
  control_trade_in_the_bay_of_ormal_decision_controls_narikhar: "[GetTitleByKey('c_narikhar').GetNameNoTier] не входит в состав вашей [Concept('realm', 'державы')|E]"
  control_trade_in_the_bay_of_ormal_decision_controls_inyaloni: "[GetTitleByKey('c_inyaloni').GetNameNoTier] не входит в состав вашей [Concept('realm', 'державы')|E]"
  control_trade_in_the_bay_of_ormal_decision_controls_lyneria: "[GetTitleByKey('c_lyneria').GetNameNoTier] не входит в состав вашей [Concept('realm', 'державы')|E]"
+ control_trade_in_the_bay_of_ormal_decision_controls_thaamutasenga: "[GetTitleByKey('c_thaamutasenga').GetNameNoTier] не входит в состав вашей [Concept('realm', 'державы')|E]"
 
  control_trade_in_the_bay_of_ormal_decision.tt.tul_harar: "[GetTitleByKey('c_tul_harar').GetNameNoTier]"
  control_trade_in_the_bay_of_ormal_decision.tt.tul_harar_desc: "#T #V [GetTitleByKey('c_tul_harar').GetNameNoTier]#! #!\n\nТул Харар - ворота в речное сердце Сирайна, контролирующие движение товаров вверх и вниз по Сиреше. Контролируя его, вы получите влияние на всю внутреннюю торговлю Сирайна.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_tul_harar_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_tul_harar').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
@@ -4234,6 +4238,9 @@
  control_trade_in_the_bay_of_ormal_decision.tt.lyneria: "[GetTitleByKey('c_lyneria').GetNameNoTier]"
  control_trade_in_the_bay_of_ormal_decision.tt.lyneria_desc: "#T #V [GetTitleByKey('c_lyneria').GetNameNoTier]#! #!\n\nВ центре Лиги находится Линерия, жемчужина Линерийского побережья, гордая и непокоренная. Ее ремесленники создают роскошь из кости и бронзы, а караваны со слоновой костью приходят из диких внутренних районов полуострова.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_lyneria_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_lyneria').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
  control_trade_in_the_bay_of_ormal_lyneria_tooltip: "#T #V [GetTitleByKey('c_lyneria').GetNameNoTier]#! #!\n\nВ центре Лиги находится Линерия, жемчужина Линерийского побережья, гордая и непокоренная. Ее ремесленники создают роскошь из кости и бронзы, а караваны со слоновой костью приходят из диких внутренних районов полуострова.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_lyneria_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_lyneria').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
+ control_trade_in_the_bay_of_ormal_decision.tt.thaamutasenga: "[GetTitleByKey('c_thaamutasenga').GetNameNoTier]"
+ control_trade_in_the_bay_of_ormal_decision.tt.thaamutasenga_desc: "#T #V [GetTitleByKey('c_thaamutasenga').GetNameNoTier]#! #!\n\nК югу от Ормальского залива находится протяжённый полуостров Сенга-Мута, а на самой его оконечности находится богатая гавань Таамутасенга, место слияния океанов Харагаэр и Роменаэр.\n\n• Вы получите модификатор «[GetModifier('control_trade_in_the_bay_of_ormal_thaamutasenga_modifier').GetNameWithTooltip]» в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_thaamutasenga').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
+ control_trade_in_the_bay_of_ormal_thaamutasenga_tooltip: "#T #V [GetTitleByKey('c_thaamutasenga').GetNameNoTier]#! #!\n\nК югу от Ормальского залива находится протяжённый полуостров Сенга-Мута, а на самой его оконечности находится богатая гавань Таамутасенга, место слияния океанов Харагаэр и Роменаэр.\n\n• Вы получите модификатор «[GetModifier('control_trade_in_the_bay_of_ormal_thaamutasenga_modifier').GetNameWithTooltip]» в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_thaamutasenga').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
 
  control_trade_in_the_bay_of_ormal_tul_harar_modifier: "Торговля с Тул Хараром"
  control_trade_in_the_bay_of_ormal_tul_harar_modifier_desc: "Экзотические специи, богатый текстиль и темно-синие красители индиго из дельты Сиреши оживляют местные рынки ароматом и цветом Сирайна."
@@ -4255,6 +4262,8 @@
  control_trade_in_the_bay_of_ormal_inyaloni_modifier_desc: "Тропические твердые породы дерева Иньялони ценятся не только за красоту, но и за прочность и используются как в фортификационных сооружениях, так и на верфях."
  control_trade_in_the_bay_of_ormal_lyneria_modifier: "Торговля с Линерией"
  control_trade_in_the_bay_of_ormal_lyneria_modifier_desc: "Линерия притягивает амбициозные умы, как прилив: философы, купцы, инженеры и художники ищут свое счастье на многолюдных причалах и в гильдиях, чьи идеи распространяются так же быстро, как и их товары."
+ control_trade_in_the_bay_of_ormal_thaamutasenga_modifier: "Торговля с Таамутасенгой"
+ control_trade_in_the_bay_of_ormal_thaamutasenga_modifier_desc: "В Таамутасенге можно найти изделия как с востока, так и с запада, разнообразные товары для торговли почти со всех прибрежных земель [Concept('middleearth', 'Средиземья')|E]."
 
  tame_the_lynerian_jungles_decision: "Усмирить Сара Баск"
  tame_the_lynerian_jungles_decision_desc: "Линерийская часть великого Сара Баска остается огромной, дикой и кишащей неиспользованными перспективами. Предложив золото и защиту смелым колонистам, мы можем нанести на карту невостребованный лес, добыть его ресурсы и превратить тишину джунглей в монеты и песни."
@@ -4312,6 +4321,12 @@
  decision_adopt_pet_mumak_confirm: "Давайте найдём его!"
  decision_adopt_pet_mumak_tt: "Приручён телёнок мумака"
 
+ decision_drenim_goblin_offering: "Умиротворить оваг"
+ decision_drenim_goblin_offering_desc: "В горах к северу от нас обитают жестокие оваг - измученные духи наших предков, проклятые вечно бродить по мрачным вершинам и предгорьям [Concept('yellowmountains', 'Жёлтых гор')|E].\n\nСреди дреним существует обычай оставлять подношения, чтобы умилостивить оваг, и они, в свою очередь, могли бы защитить нас от вторжений извне, если сочтут нас достойными."
+ decision_drenim_goblin_offering_tooltip: "Защитить себя от [Concept('orcish', 'орочьей')|E] угрозы"
+ decision_drenim_goblin_offering_confirm: "Я немедленно отправлюсь в путь."
+ decision_drenim_goblin_offering_tt: "Вы отправитесь к подножию гор"
+
  decision_onto_the_boundless_horizon: "К бескрайнему горизонту"
  decision_onto_the_boundless_horizon_desc: "Моё время пришло. Я чувствую это по песку у себя под ногами и по крикам морских птиц в небе над головой. Со времён дочерей Амбы среди матриархов Амбасона существовал устойчивый обычай освобождать место для своих преемниц, когда сила её руки ослабевала.\n\nЯ отправлюсь на самую восточную оконечность нашего острова, где берег плавно спускается к великому океану, и соберу все свои оставшиеся силы в последний раз. Пусть волны унесут меня далеко, прежде чем бескрайний горизонт обнимет меня."
  decision_onto_the_boundless_horizon_tooltip: "Отправиться в плавание в одиночку"
@@ -4327,7 +4342,6 @@
  decision_establish_lyneria_overland_trade_confirm: "Да потекут реки торговли!"
  decision_establish_lyneria_overland_trade_tooltip: "Начать торговать с Линерией через горные перевалы"
  decision_establish_lyneria_overland_trade_tt: "Сухопутная торговля налажена"
- decision_establish_lyneria_overland_trade_confed: "Вы заключили союз с членом линерийской [Concept('confederation', 'конфедерации')|E]"
  control_all_of_lyneria_pass: "#V Вы#! или один из ваших [Concept('allies', 'союзников')|E] полностью контролируете все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_lyneria_pass').GetName]"
 
  decision_establish_lyneria_sea_trade: "Наладить морскую торговлю с Линерией"
@@ -4357,10 +4371,21 @@
  settle_all_of_lyneria_coastline: "Все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_lyneria_coastline').GetName] должны быть полностью колонизированы"
 
  decision_hire_vulmaw_mercenaries: "Нанять вулмавских наёмников"
- decision_hire_vulmaw_mercenaries_desc: "К юго-востоку от #ONCLICK:TITLE,e_shayn #TOOLTIP:LANDED_TITLE,e_shayn #L Шайна#!#!#! лежат бесчисленные островки Южного архипелага, где обитают вулмавы. Они часто заходят далеко на своих быстроходных судах, посещая наши порты как купцы, но также совершая набеги на наши корабли как пираты. За хорошую цену можно убедить многих из этих отважных людей сражаться за нас, а не против нас..."
+ decision_hire_vulmaw_mercenaries_desc: "К юго-востоку от #ONCLICK:TITLE,e_shayn #TOOLTIP:LANDED_TITLE,e_shayn #L Шайна#!#!#! лежат бесчисленные островки Южного архипелага, где обитают вулмавы. Они часто заходят далеко на своих быстроходных судах, посещая наши порты как купцы и совершая пиратские набеги на наши корабли. За хорошую цену можно убедить многих из этих отважных людей сражаться за нас, а не против нас..."
  decision_hire_vulmaw_mercenaries_tooltip: "Нанять полк уавских пиратов"
  decision_hire_vulmaw_mercenaries_confirm: "Очень хорошо. Отправить им весточку."
  decision_hire_vulmaw_mercenaries_tt: "Вулмавские наёмники наняты"
+ decision_hire_vulmaw_mercenaries_effect_tt: "Вы наймёте армию - [GetMaA('waw_pirates').GetName] #italic (Размер - #V 2#!)#!"
+ vulmaw_mercenaries: "Вулмавские наёмники"
+
+ decision_join_lynerian_league: "Присоединиться к конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName]»"
+ decision_join_lynerian_league_desc: "Вдоль северного побережья Шайна расположены города Линерии, которые исторически объединялись, чтобы использовать свою коллективную власть в вопросах дипломатии и торговли. Хотя моя держава непоколебимо независима, возможно, есть какие-то преимущества в том, чтобы связать нашу судьбу с Лигой?"
+ decision_join_lynerian_league_tooltip: "Присоединиться к конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]»"
+ decision_join_lynerian_league_confirm: "Вперёд, к процветанию."
+ half_lynerian_league_opinion: "Не менее #V 50%#! членов конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]» имеют больше #P +50#! [Concept('opinion', 'мнения')|E] о вас."
+ decision_join_lynerian_league_toast: "Вы присоединитесь к лиге"
+ decision_join_lynerian_league_tt: "Вы присоединитесь к [Concept('confederation', 'конфедерации')|E] «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName]»"
+
 
  ###################################
  ### Skorgrim Dourhand Decisions ###
