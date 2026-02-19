@@ -1,62 +1,64 @@
 ﻿l_russian:
 
- orc_government_events.0002.t: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0002.desc: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0002.a: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0002.b: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0002.c: "#DEBUG RiE:Debug - Temporary Text#!"
+ # Challenger decides on whether to accept the challenge
+ orc_government_events.0002.t: "Ответ на вызов"
+ orc_government_events.0002.desc: "Старый правитель мёртв, и орда собирается в рычащий круг из железа. [orc_fighting_ruler.GetTitledFirstName] выходит вперёд. [defending_ruler.GetTitledFirstName] не сводит с [Select_CString(orc_fighting_ruler.IsFemale, 'неё', 'него' )] глаз.\n\nБьют барабаны. Претенденты ждут.\n\nЗакон силы ясен: только кровь решает, кто встанет во главе."
+ orc_government_events.0002.a: "Столкнуться с ними лицом к лицу. Я докажу свою силу."
+ orc_government_events.0002.b: "Это безумие. Я не подохну из-за гордости."
+ orc_government_events.0002.c: "Есть и другие способы выиграть эту битву…"
 
- #Starting event of duel process. Go along, or say 'Fuck it, LAAMP here I come!'
- orc_government_events.0004.t: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0004.desc: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0004.a: "#DEBUG RiE:Debug - Fight Challengers#!"
+ # Starting event of duel process. Go along, or say 'Fuck it, LAAMP here I come!'
+ orc_government_events.0004.t: "Поединок за наследование"
+ orc_government_events.0004.desc: "Труп прежнего правителя едва успел остыть, когда претенденты выступили вперёд.\n\n[defending_ruler.MakeScope.Var('challenger_count').GetValue|0] воинов бьют оружием о свои щиты, каждый из них жаждет завоевать трон кровью и костями. Толпа требует насилия.\n\nВы можете встать и сражаться — или сойти с трона и жить как [Select_CString(ROOT.Char.IsFemale, 'простая орчиха', 'простой орк' )]."
+ orc_government_events.0004.a: "Пусть приходят. Я сокрушу каждого претендента."
  orc_government_events.0004.a.tt: "Вы решаете сразиться с претендентами"
- orc_government_events.0004.b: "#DEBUG RiE:Debug - Give up main title to challenger#!"
- orc_government_events.0004.c: "#DEBUG RiE:Debug - Become LAAMP#!"
+ orc_government_events.0004.b: "Трон не стоит моей крови. Пусть один из них займёт его."
+ orc_government_events.0004.c: "Я отрекаюсь от трона. С этого дня я - [Select_CString(ROOT.Char.IsFemale, 'авантюристка', 'авантюрист' )]."
 
- #Orc challenger reconsiders whether they're willing to fight the current ruler
- orc_government_events.0049.t: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0049.desc: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0049.a: "#DEBUG RiE:Debug - Continue with duel#!"
- orc_government_events.0049.b: "#DEBUG RiE:Debug - Leave duel + minor claim on title + imprisonment reason#!"
+ # Orc challenger reconsiders whether they're willing to fight the current ruler
+ orc_government_events.0049.t: "Сомнения перед поединком"
+ orc_government_events.0049.desc: "Орда жаждет крови, но [orc_fighting_ruler.GetTitledFirstName] колеблется. [defending_ruler.GetTitledFirstName] стоит наготове — [Select_CString(defending_ruler.IsFemale, 'покрытая', 'покрытый' )] шрамами, [Select_CString(defending_ruler.IsFemale, 'вооружённая', 'вооружённый' )] и [Select_CString(defending_ruler.IsFemale, 'жаждущая', 'жаждущий' )] победы.\n\nОтступление навлекло бы позор... но в том, чтобы жить, чтобы сразиться в другой раз, есть своя привлекательность."
+ orc_government_events.0049.a: "Пути назад нет. Поединок состоится."
+ orc_government_events.0049.b: "Эта схватка - верная гибель. Я отступлю."
 
- #Attempt to bribe the orc challenger
- orc_government_events.0050.t: "#DEBUG RiE:Debug - Bribe the Orc#!"
- orc_government_events.0050.desc: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0050.a: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0050.a.higher_stewardship_successful: "#DEBUG Bribe Success#!"
- orc_government_events.0050.a.higher_stewardship_fail: "#DEBUG Bribe Fail#!"
- orc_government_events.0050.b: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0050.b.stewardship_successful: "#DEBUG Bribe Success#!"
- orc_government_events.0050.b.stewardship_fail: "#DEBUG Bribe Fail#!"
- orc_government_events.0050.c: "#DEBUG RiE:Debug - Temporary Text#!"
+ # Attempt to bribe the orc challenger
+ orc_government_events.0050.t: "Подкуп претендентов"
+ orc_government_events.0050.desc: "Орки уважают силу, но они также уважают и добычу.\n\nЕсли будут предложены достойные дары, [orc_fighting_ruler.GetTitledFirstName] может решить, что умереть за трон - невыгодная сделка."
+ orc_government_events.0050.a: "Предложить богатую добычу и награду от грабежей."
+ orc_government_events.0050.a.higher_stewardship_successful: "Подкуп сработал — жадность побеждает славу."
+ orc_government_events.0050.a.higher_stewardship_fail: "Предложение высмеяно. Слабая монета за крепкий трон."
+ orc_government_events.0050.b: "Пообещать земли и титулы после поединка."
+ orc_government_events.0050.b.stewardship_successful: "Претендент колеблется... и соглашается."
+ orc_government_events.0050.b.stewardship_fail: "Прекрасные слова, пустые обещания."
+ orc_government_events.0050.c: "Забыть об этом. Я не стану торговаться с шавкой."
 
- #Attempt to blackmail the orc challenger
- orc_government_events.0051.t: "#DEBUG RiE:Debug - Blackmail the Orc#!"
- orc_government_events.0051.desc: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0051.a: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0051.a.blackmail_successful: "#DEBUG RiE:Debug - Blackmail Success#!"
- orc_government_events.0051.a.blackmail_fail: "#DEBUG RiE:Debug - Blackmail Fail#!"
- orc_government_events.0051.b: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0051.b.blackmail_and_stewardship_successful: "#DEBUG RiE:Debug - Blackmail + Bribe Success#!"
- orc_government_events.0051.b.blackmail_and_stewardship_fail: "#DEBUG RiE:Debug - Blackmail + Bribe Fail#!"
- orc_government_events.0051.c: "#DEBUG RiE:Debug - Temporary Text#!"
+ # Attempt to blackmail the orc challenger
+ orc_government_events.0051.t: "Шантаж претендентов"
+ orc_government_events.0051.desc: "В орде каждый воин скрывает слабость — тайны, которые могут привести к насмешкам, изгнанию или смерти.\n\nВы знаете что-то, что утаивает [orc_fighting_ruler.GetTitledFirstName]. Вопрос в том, достаточна ли остра эта тайна, чтобы лишить [Select_CString(orc_fighting_ruler.IsFemale, 'её', 'его' )] отваги."
+ orc_government_events.0051.a: "Пригрозить раскрыть [Select_CString(orc_fighting_ruler.IsFemale, 'её', 'его' )] позор."
+ orc_government_events.0051.a.blackmail_successful: "Страх побеждает. Претендент отступает."
+ orc_government_events.0051.a.blackmail_fail: "[Select_CString(orc_fighting_ruler.IsFemale, 'Она', 'Он' )] рычит и провоцирует вас заговорить."
+ orc_government_events.0051.b: "Шантажировать [Select_CString(orc_fighting_ruler.IsFemale, 'её', 'его' )] — и подсластить угрозу монетами."
+ orc_government_events.0051.b.blackmail_and_stewardship_successful: "Страх и жадность ломают [Select_CString(orc_fighting_ruler.IsFemale, 'её', 'его' )] волю."
+ orc_government_events.0051.b.blackmail_and_stewardship_fail: "[Select_CString(orc_fighting_ruler.IsFemale, 'Она', 'Он' )] плюёт на ваше предложение. Поединок состоится."
+ orc_government_events.0051.c: "Довольно происков. Пусть схлестнётся сталь."
 
- #An upstart orc jumps the line, and now challenges the main challenger so they can get to you quicker. You look on (intervene/let it play out)
- orc_government_events.0052.t: "#DEBUG RiE:Debug - Watch the Fight#!"
- orc_government_events.0052.desc: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0052.a: "#DEBUG RiE:Debug - Temporary Text#!"
- orc_government_events.0052.a.success: "[upstart_orc.GetName] убивает персонажа [orc_fighting_ruler.GetName]"
+ # An upstart orc jumps the line, and now challenges the main challenger so they can get to you quicker. You look on (intervene/let it play out)
+ orc_government_events.0052.t: "Кровь внутри круга"
+ orc_government_events.0052.desc: "Орда рычит, когда [Select_CString(upstart_orc.IsFemale, 'молодая, безрассудная орчиха', 'молодой, безрассудный орк' )] протискивается мимо ожидающих претендентов. [upstart_orc.GetName] и [orc_fighting_ruler.GetName] скалят друг на друга клыки.\n\n«Прочь с дороги», - рычит выскочка. «Твой череп - мой. Затем настанет очередь трона».\n\nКруг сужается. Два зверя, одно место в очереди, чтобы умереть за трон."
+ orc_government_events.0052.a: "Пусть разорвут друг друга на куски."
+ orc_government_events.0052.a.success: "[upstart_orc.GetName] убивает персонажа [orc_fighting_ruler.GetName] в жестокой схватке!"
  orc_government_events.0052.a.success.tt: "[upstart_orc.GetName] сразится с вами в качестве [Select_CString(upstart_orc.IsFemale, 'следующей', 'следующего' )] #V [Select_CString(upstart_orc.IsFemale, 'претендентки', 'претендента' )]#!"
- orc_government_events.0052.a.failure: "[orc_fighting_ruler.GetName] убивает персонажа [upstart_orc.GetName]"
+ orc_government_events.0052.a.failure: "[orc_fighting_ruler.GetName] безжалостно [Select_CString(orc_fighting_ruler.IsFemale, 'расправилась', 'расправился' )] с персонажем [upstart_orc.GetName]."
  orc_government_events.0052.a.failure.tt: "[orc_fighting_ruler.GetName] сразится с вами в качестве [Select_CString(orc_fighting_ruler.IsFemale, 'следующей', 'следующего' )] #V [Select_CString(orc_fighting_ruler.IsFemale, 'претендентки', 'претендента' )]#!"
- orc_government_events.0052.b: "#DEBUG RiE:Debug - Temporary Text#!"
+ orc_government_events.0052.b: "Хватит ждать. Я столкнусь с ними обоими лицом к лицу!"
  orc_government_events.0052.b.tt: "Вступить в бой, заявив, что вы сразитесь с обеими орками"
- orc_government_events.0052.b.tt.2: "Убийство обоих претендентов приведёт к тому, что другие претенденты #bold пересмотрят своё решение#! о том, хотят ли они сражаться с вами"
+ orc_government_events.0052.b.tt.2: "Убийство обоих претендентов заставит других #bold пересмотреть#! своё решение о том, хотят ли они сражаться с вами"
 
- orc_government_events.0500.t: "#DEBUG RiE:Debug - Asserted right to rule#!"
- orc_government_events.0500.desc: "#DEBUG RiE:Debug - Asserted right to rule via duels!#!"
- orc_government_events.0500.desc.unchallenged: "#DEBUG RiE:Debug - Asserted right to rule, no one challenged you!#!"
- orc_government_events.0500.a: "#DEBUG RiE:Debug - Asserted right to rule#!"
+ # No one challenged you! You're just an insane orc. Your rule is already bloody scary!
+ orc_government_events.0500.t: "Правление страха"
+ orc_government_events.0500.desc: "Вы выходите в круг, поднимаете оружие и бросаете вызов любому, кто осмелится занять ваш трон.\n\nНикто не двигается с места.\n\nОрда отводит глаза. Тишина звучит громче любого боевого клича."
+ orc_government_events.0500.desc.unchallenged: "Вы призываете претендентов, жаждете крови и утверждения своего права на власть.\n\nВ ответ лишь молчание.\n\nВаша репутация сделала всю работу за вас."
+ orc_government_events.0500.a: "Хорошо. Пусть помнят, кто здесь правит."
 
  orc_government_events.orc_challenger_not_persuaded: "[orc_fighting_ruler.GetName] всё ещё хочет сразиться"

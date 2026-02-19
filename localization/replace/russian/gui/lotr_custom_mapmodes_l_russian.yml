@@ -8,11 +8,11 @@
  alignment_desc: "@realmsinexile_icon! #T Мировоззрение\n#!Показывает мировоззрение [Concept( 'rulers', 'правителей' )|E] на карте."
  ALIGNMENT_MAP_MODE_TOOLTIP: "#T [ROOT.Province.GetCounty.GetTitle.GetName] предпочитает [ROOT.Province.MakeScope.Var('alignment_map_tooltip').GetFlagName]#!"
 
- alignment_evil: "#V Зло"
- alignment_dark: "#V Союз с Тьмой"
- alignment_neutral: "#V Нейтралитет"
- alignment_light: "#V Союз со Светом"
- alignment_good: "#V Добро"
+ alignment_evil: "[Concept('alignment_evil', 'Зло')|E]"
+ alignment_dark: "[Concept('alignment_evil', 'Зло')|E] - «[GetFaithDoctrine('doctrine_dominion_of_the_dark').GetBaseName]»"
+ alignment_neutral: "[Concept('alignment_neutral', 'Нейралитет')|E]"
+ alignment_light: "[Concept('alignment_good', 'Добро')|E] - «[GetFaithDoctrine('doctrine_echoes_of_the_ainur').GetBaseName]»"
+ alignment_good: "[Concept('alignment_good', 'Добро')|E]"
  alignment_wilderness: "#V Дебри"
 
  elven_hope: "@realmsinexile_icon! Эльфийская надежда"
@@ -78,4 +78,4 @@
 
  no_text_appears: ""
 
-#  RESOURCES_MAP_MODE_TOOLTIP: "#T County [control|e] of [ROOT.Province.GetTag]: [ROOT.Province.GetCounty.GetControlLevelOutOfMax]#!\n[ROOT.Province.GetCounty.GetCountyControlEffectsDesc]\n\n[ROOT.Province.GetCounty.GetCountyControlIncreaseDesc]"
+ #RESOURCES_MAP_MODE_TOOLTIP: "#T County [control|e] of [ROOT.Province.GetTag]: [ROOT.Province.GetCounty.GetControlLevelOutOfMax]#!\n[ROOT.Province.GetCounty.GetCountyControlEffectsDesc]\n\n[ROOT.Province.GetCounty.GetCountyControlIncreaseDesc]"

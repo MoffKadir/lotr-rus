@@ -5,11 +5,12 @@
  can_only_contruct_one_elven_stronghold_at_a_time: "Вы уже улучшили [elven_refuge|El] до [Concept('elven_stronghold', 'эльфийской крепости')|E] в другом [Concept('domain', 'владении')|E] этого [Concept('character', 'персонажа')|E]"
  can_only_contruct_one_elven_city_at_a_time: "Вы уже улучшаете [elven_refuge|El] до [Concept('elven_stronghold', 'эльфийской крепости')|E] в другом [Concept('domain', 'владении')|E] этого [Concept('character', 'персонажа')|E]"
  is_not_wastelands_trigger_tooltip: "Владение не является частью диких земель"
- elves_cannot_be_forced_to_convert: "[Concept( 'elves', 'эльфов' )|E] нельзя заставить сменить свою [Concept( 'faith', 'конфессию' )|E]"
- elves_cannot_force_non_elves_to_convert: "[elves|E] не могут заставить представителей других рас сменить свою [Concept( 'faith', 'конфессию' )|E]"
- elves_cannot_be_forced_to_recruit: "[Concept( 'elves', 'эльфов' )|E] нельзя заставить прибыть ко двору"
- elves_cannot_commit_suicide: "[elves|E] не могут совершить самоубийство"
- immortals_cannot_commit_suicide: "Этот персонаж не может совершить самоубийство" #for immortals and undead
+ elves_cannot_be_forced_to_convert: "[Concept( 'elves', 'Эльфов' )|E] нельзя заставить сменить свою [Concept( 'faith', 'конфессию' )|E]"
+ elves_cannot_force_non_elves_to_convert: "[Concept('elves', 'Эльфы')|E] не могут заставить представителей других рас сменить свою [Concept( 'faith', 'конфессию' )|E]"
+ elves_cannot_be_forced_to_recruit: "[Concept( 'elves', 'Эльфов' )|E] нельзя заставить прибыть ко двору"
+ elves_cannot_commit_suicide: "[Concept('elves', 'Эльфы')|E] не могут совершить самоубийство"
+ elves_cannot_accept_the_gift_of_men: "[Concept('elves', 'Эльфы')|E] не могут уйти из жизни."
+ immortals_cannot_commit_suicide: "Этот персонаж не может умереть" #for immortals and undead
  age_equivalent_advanced_eighty: "Вы близки к концу своей жизни"
  only_zealous_elves_can_holy_war: "[holy_wars|E] могут объявлять только [elves|El] со свойством «[GetTrait('zealous').GetName( GetNullCharacter )]»"
  only_ambitious_elves_can_vassalize: "[Concept('vassalize_casus_belli', 'Насильственную вассализацию')|E] могут выдвигать только [elves|El] со свойством «[GetTrait('ambitious').GetName( GetNullCharacter )]»"
@@ -98,10 +99,10 @@
  ANY_DE_JURE_TOP_LIEGE_ALL_TRIGGER_THIRD: "Все [Concept('top_lieges', 'верховные сюзерены')|E] в [de_jure|El] пределах державы [TITLE.GetName]:"
  NOT_ANY_DE_JURE_TOP_LIEGE_ALL_TRIGGER_THIRD: "Все [Concept('top_lieges', 'верховные сюзерены')|E] в [de_jure|El] пределах державы [TITLE.GetName] не:"
 
- NOT_HAS_CULTURAL_PILLAR_FIRST:1 "[CULTURE.GetCollectiveNoun|U]ая [culture|El] не имеет [Concept('culture_pillar', 'культурного столпа')|E] «[CULTURE_PILLAR.GetName]»"
- NOT_HAS_CULTURAL_PILLAR_THIRD:1 "[CULTURE.GetCollectiveNoun|U]ая [culture|El] не имеет [Concept('culture_pillar', 'культурного столпа')|E] «[CULTURE_PILLAR.GetName]»"
+ NOT_HAS_CULTURAL_PILLAR_FIRST: "[CULTURE.GetCollectiveNoun|U]ая [culture|El] не имеет [Concept('culture_pillar', 'культурного столпа')|E] «[CULTURE_PILLAR.GetName]»"
+ NOT_HAS_CULTURAL_PILLAR_THIRD: "[CULTURE.GetCollectiveNoun|U]ая [culture|El] не имеет [Concept('culture_pillar', 'культурного столпа')|E] «[CULTURE_PILLAR.GetName]»"
 
- NOT_I_HAVE_TRUCE_WITH_CHARACTER:1 "У вас нет [Concept('truce', 'перемирия')|E] с персонажем [TARGET_CHARACTER.GetShortUIName]"
+ NOT_I_HAVE_TRUCE_WITH_CHARACTER: "У вас нет [Concept('truce', 'перемирия')|E] с персонажем [TARGET_CHARACTER.GetShortUIName]"
 
  CHARACTER_IS_REALM_NEIGHBORR_GLOBAL: "[TARGET_CHARACTER.GetShortUIName] граничит с [Concept('realm', 'державой')|E] персонажа [CHARACTER.GetShortUINamePossessive]"
  NOT_CHARACTER_IS_REALM_NEIGHBOR_GLOBAL: "[TARGET_CHARACTER.GetShortUIName] не граничит с [Concept('realm', 'державой')|E] персонажа [CHARACTER.GetShortUINamePossessive]"
@@ -184,7 +185,7 @@
  NOT_LOTR_ELF_RACE_TRIGGER_GLOBAL: "#bold Не#! является [Concept('elf','эльфом')|E]"
  LOTR_ELF_RACE_TRIGGER_FIRST: "Вы являетесь [Concept('elf','эльфом')|E]"
  NOT_LOTR_ELF_RACE_TRIGGER_FIRST: "Вы #bold не#! являетесь [Concept('elf','эльфом')|E]"
- LOTR_ELF_RACE_TRIGGER_THIRD: "Этот персонаж является [Concept('elf','эльфом')|E]"
+ LOTR_ELF_RACE_TRIGGER_THIRD: "[CHARACTER.GetShortUIName|U] является [Concept('elf','эльфом')|E]"
  NOT_LOTR_ELF_RACE_TRIGGER_THIRD: "[CHARACTER.GetShortUIName|U] #bold не#! является [Concept('elf','эльфом')|E]"
 
  LOTR_ORC_RACE_TRIGGER_GLOBAL: "Является [Concept('orc','орком')|E]"
@@ -198,7 +199,7 @@
  NOT_LOTR_DWARF_RACE_TRIGGER_GLOBAL: "#bold Не#! является [Concept('dwarf','гномом')|E]"
  LOTR_DWARF_RACE_TRIGGER_FIRST: "Вы являетесь [Concept('dwarf','гномом')|E]"
  NOT_LOTR_DWARF_RACE_TRIGGER_FIRST: "Вы #bold не#! являетесь [Concept('dwarf','гномом')|E]"
- LOTR_DWARF_RACE_TRIGGER_THIRD: "Этот персонаж является [Concept('dwarf','гномом')|E]"
+ LOTR_DWARF_RACE_TRIGGER_THIRD: "[CHARACTER.GetShortUIName|U] является [Concept('dwarf','гномом')|E]"
  NOT_LOTR_DWARF_RACE_TRIGGER_THIRD: "[CHARACTER.GetShortUIName|U] #bold не#! является [Concept('dwarf','гномом')|E]"
 
  LOTR_UNDERGROUND_RACE_TRIGGER: "Вы являетесь [Concept('dwarf', 'гномом')|E] или [Concept('orc', 'орком')|E]"
@@ -217,26 +218,26 @@
  LOTR_MAIAR_FALLEN_RACE_TRIGGER_THIRD: "[CHARACTER.GetShortUIName|U] - падший [maiagod|E]"
  NOT_LOTR_MAIAR_FALLEN_RACE_TRIGGER_THIRD: "[CHARACTER.GetShortUIName|U] - #bold не#! падший [maiagod|E]"
 
- FAITH_IS_GOOD_TRIGGER_GLOBAL: "Мировоззрение этого персонажа относится к #P добру#!"
- NOT_FAITH_IS_GOOD_TRIGGER_GLOBAL: "Мировоззрение этого персонажа #bold не#! относится к #P добру#!"
- FAITH_IS_GOOD_TRIGGER_FIRST: "Ваше мировоззрение относится к #P добру#!"
- NOT_FAITH_IS_GOOD_TRIGGER_FIRST: "Ваше мировоззрение #bold не#! относится к #P добру#!"
- FAITH_IS_GOOD_TRIGGER_THIRD: "Мировоззрение этого персонажа относится к #P добру#!"
- NOT_FAITH_IS_GOOD_TRIGGER_THIRD: "Мировоззрение этого персонажа #bold не#! относится к #P добру#!"
+ FAITH_IS_GOOD_TRIGGER_GLOBAL: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] относится к [Concept('alignment_good', 'добру')|E]"
+ NOT_FAITH_IS_GOOD_TRIGGER_GLOBAL: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] #bold не#! относится к [Concept('alignment_good', 'добру')|E]"
+ FAITH_IS_GOOD_TRIGGER_FIRST: "Ваше [Concept('alignment', 'мировоззрение')|E] относится к [Concept('alignment_good', 'добру')|E]"
+ NOT_FAITH_IS_GOOD_TRIGGER_FIRST: "Ваше [Concept('alignment', 'мировоззрение')|E] #bold не#! относится к [Concept('alignment_good', 'добру')|E]"
+ FAITH_IS_GOOD_TRIGGER_THIRD: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] относится к [Concept('alignment_good', 'добру')|E]"
+ NOT_FAITH_IS_GOOD_TRIGGER_THIRD: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] #bold не#! относится к [Concept('alignment_good', 'добру')|E]"
 
- FAITH_IS_EVIL_TRIGGER_GLOBAL: "Мировоззрение этого персонажа относится ко #N злу#!"
- NOT_FAITH_IS_EVIL_TRIGGER_GLOBAL: "Мировоззрение этого персонажа #bold не#! относится ко #N злу#!"
- FAITH_IS_EVIL_TRIGGER_FIRST: "Ваше мировоззрение относится ко #N злу#!"
- NOT_FAITH_IS_EVIL_TRIGGER_FIRST: "Ваше мировоззрение #bold не#! относится ко #N злу#!"
- FAITH_IS_EVIL_TRIGGER_THIRD: "Мировоззрение этого персонажа относится ко #N злу#!"
- NOT_FAITH_IS_EVIL_TRIGGER_THIRD: "Мировоззрение этого персонажа #bold не#! относится ко #N злу#!"
+ FAITH_IS_EVIL_TRIGGER_GLOBAL: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] относится ко [Concept('alignment_evil', 'злу')|E]"
+ NOT_FAITH_IS_EVIL_TRIGGER_GLOBAL: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] #bold не#! относится ко [Concept('alignment_evil', 'злу')|E]"
+ FAITH_IS_EVIL_TRIGGER_FIRST: "Ваше [Concept('alignment', 'мировоззрение')|E] относится ко [Concept('alignment_evil', 'злу')|E]"
+ NOT_FAITH_IS_EVIL_TRIGGER_FIRST: "Ваше [Concept('alignment', 'мировоззрение')|E] #bold не#! относится ко [Concept('alignment_evil', 'злу')|E]"
+ FAITH_IS_EVIL_TRIGGER_THIRD: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] относится ко [Concept('alignment_evil', 'злу')|E]"
+ NOT_FAITH_IS_EVIL_TRIGGER_THIRD: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] #bold не#! относится ко [Concept('alignment_evil', 'злу')|E]"
 
- FAITH_IS_NEUTRAL_TRIGGER_GLOBAL: "Мировоззрение этого персонажа относится к #high нейтралитету#!"
- NOT_FAITH_IS_NEUTRAL_TRIGGER_GLOBAL: "Мировоззрение этого персонажа #bold не#! относится к #high нейтралитету#!"
- FAITH_IS_NEUTRAL_TRIGGER_FIRST: "Ваше мировоззрение относится к #high нейтралитету#!"
- NOT_FAITH_IS_NEUTRAL_TRIGGER_FIRST: "Ваше мировоззрение #bold не#! относится к #high нейтралитету#!"
- FAITH_IS_NEUTRAL_TRIGGER_THIRD: "Мировоззрение этого персонажа относится к #high нейтралитету#!"
- NOT_FAITH_IS_NEUTRAL_TRIGGER_THIRD: "Мировоззрение этого персонажа #bold не#! относится к #high нейтралитету#!"
+ FAITH_IS_NEUTRAL_TRIGGER_GLOBAL: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] относится к [Concept('alignment_neutral', 'нейтралитету')|E]"
+ NOT_FAITH_IS_NEUTRAL_TRIGGER_GLOBAL: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] #bold не#! относится к [Concept('alignment_neutral', 'нейтралитету')|E]"
+ FAITH_IS_NEUTRAL_TRIGGER_FIRST: "Ваше [Concept('alignment', 'мировоззрение')|E] относится к [Concept('alignment_neutral', 'нейтралитету')|E]"
+ NOT_FAITH_IS_NEUTRAL_TRIGGER_FIRST: "Ваше [Concept('alignment', 'мировоззрение')|E] #bold не#! относится к [Concept('alignment_neutral', 'нейтралитету')|E]"
+ FAITH_IS_NEUTRAL_TRIGGER_THIRD: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] относится к [Concept('alignment_neutral', 'нейтралитету')|E]"
+ NOT_FAITH_IS_NEUTRAL_TRIGGER_THIRD: "[Concept('alignment', 'Мировоззрение')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] #bold не#! относится к [Concept('alignment_neutral', 'нейтралитету')|E]"
 
  COASTAL_PROVINCE_IN_REALM_TRIGGER: "У вашей державы есть провинция с выходом к морю"
  NOT_COASTAL_PROVINCE_IN_REALM_TRIGGER: "У вашей державы нет провинции с выходом к морю"
@@ -286,7 +287,7 @@
 
  LOTR_FRIENDS_WITH_DWARF_TRIGGER: "Вы считаете правителя [Concept('dwarves', 'гномов')|E] своим [Concept('friends', 'другом')|E]."
 
- join_war_interaction_tributary_not_a_defensive_war:3 "[CHARACTER.GetUIName] не является лидером защитников в этой [Concept('war', 'войне')|E]"
+ join_war_interaction_tributary_not_a_defensive_war: "[CHARACTER.GetUIName] не является лидером защитников в этой [Concept('war', 'войне')|E]"
 
  elven_non_elven_feudatories: "Не-[Concept('elven', 'эльфийские')|E] [vassals|El] не могут предоставлять [levies|El] [Concept('liege', 'сюзерену')|E]-эльфу"
 

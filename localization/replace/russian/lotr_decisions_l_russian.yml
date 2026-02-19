@@ -28,6 +28,14 @@
  decision_wander_the_forests_laamp: "Прогуляться по лесу"
  decision_wander_the_forests_laamp_tt: "Ваш [Concept('camp', 'лагерь')|E] находится или граничит с [Concept('province', 'провинцией')|E] с #high лесной, чащобной, мэллорновой#! или #high джунглевой#! [Concept('terrain', 'местностью')|E]"
 
+ decision_wander_terilaen: "Посетить земли людей"
+ decision_wander_terilaen_tooltip: "Посетить людское поселение"
+ decision_wander_terilaen_desc: "Хотя [Concept('cuind', 'куинд')|E] из Дрэла известны своей любовью к путешествиям и скитаниям, они ведут затворнический образ жизни и редко выходят за пределы своего леса, поэтому почти не общаются с [Concept('conceptracemen', 'людьми')|E].\n\nВ отличие от своего народа, король [ROOT.GetCharacter.GetFirstNameNoTooltip] не сторонится расы Последышей. Тайно он отправляется в земли людей, чтобы пожить среди них некоторое время, прежде чем вернуться в свои владения. Эксцентричный правитель часто исчезает на месяцы или даже годы, занимаясь какой-либо торговлей или скитаясь по дворам в качестве менестреля."
+ decision_wander_terilaen_confirm: "В путь."
+ decision_wander_terilaen_tt: "Владеет #italic людским городом, замком или поселением#!."
+ decision_wander_terilaen_tt_2: "Вы отправитесь в людское поселение"
+ decision_wander_terilaen_tt_3: "Шанс получить [Concept('hope', 'надежду')|E] помимо прочих бонусов"
+
  decision_elven_border_patrol: "Патрулировать границы"
  decision_elven_border_patrol_tooltip: "Патрулировать границы державы, чтобы защитить [Concept('elves', 'эльфов')|E], которые живут здесь."
  decision_elven_border_patrol_desc: "Держава [ROOT.Char.GetTopLiege.GetPrimaryTitle.GetName] должна быть защищена с помощью неусыпной бдительности и сторожевых патрулей, которые охраняют её от любого вторжения.\n\nСреди [Concept('elves', 'эльфов')|E] нет ничего необычного в том, что правители лично выезжают охранять свои границы."
@@ -90,6 +98,11 @@
  decision_rebuild_halls_bornmir_confirm: "Пусть великий чертог возвысится вновь!"
  decision_rebuild_halls_bornmir_tooltip: "Восстановить чертог Борнмира"
 
+ decision_purchase_edhellond: "Купить Эделлонд"
+ decision_purchase_edhellond_desc: "На юге, у берегов [Concept('gondor', 'Гондора')|E], когда-то стояла гавань Эделлонд. Многие [Concept('sindarelves', 'синдар')|E] и [Concept('silvanelves', 'лесные эльфы')|E] отплывали оттуда в [Concept('valinor', 'Валинор')|E], но в конце [Concept('thirdage', 'Третьей эпохи')|E] порт был заброшен. Сейчас люди Гондора хранят его, но если бы мы возобновили узы дружбы между [Concept('elves', 'эльфами')|E] и [Concept('dunedain', 'дунэдайн')|E], мы, возможно, смогли бы получить их разрешение вернуть Эделлонд под власть эльфов..."
+ decision_purchase_edhellond_tooltip: "Купить Эделлонд у Гондора"
+ decision_purchase_edhellond_confirm: "Эльфы вернутся в Эделлонд."
+
  decision_noldor_eriador: "Вернуть наследие Гиль-галада"
  decision_noldor_eriador_desc: "Во времена расцвета его королевства во [Concept('secondage', 'Второй эпохе')|E] власть Гиль-галада простиралась на восток до границ [Concept('greenwood', 'Зеленолесья')|E]. Он считался владыкой большей части [Concept('eriador', 'Эриадора')|E], защитником и сюзереном как [Concept('men', 'людей')|E], так и [Concept('elves', 'эльфов')|E]. Хотя колонизация [Concept('dunedain', 'дунэдайн')|E] и последующее основание [Concept('arnor', 'Арнора')|E] привели к отказу от этой власти, не все забыли эту древнюю истину.\n\nЕсли эльфы вновь проявят себя как хранители всего Эриадора, великолепие наследия Гиль-галада может быть возрождено."
  decision_noldor_eriador_confirm: "Пусть Эриадор вновь процветает в мире!"
@@ -123,6 +136,16 @@
  decision_return_cuind_vassals_custom: "Каждый [vassal|El] из $penni$ и $avari$"
  decision_return_cuind_counties_custom: "Каждое [county|El] $penni$ и $avari$ в вашей [Concept('realm', 'державе')|E]"
 
+ decision_high_pass_outpost: "Укрепить проходы Высокого перевала"
+ decision_high_pass_outpost_desc: "Кирит Форн эн Андрат - наша главная связь с землями [Concept('rhovanion', 'Рованиона')|E], и его часто осаждают [Concept('orcs', 'орки')|E] и [Concept('goblins', 'гоблины')|E] из [Concept('mistymountains', 'Мглистых гор')|E]. Чтобы обезопасить [Concept('rivendell', 'Ривенделл')|E], мы должны создать укреплённый аванпост у западного прохода Высокого перевала."
+ decision_high_pass_outpost_tooltip: "Основать [Concept('colony', 'колонию')|E] на западе Высокого перевала"
+ decision_high_pass_outpost_confirm: "Послать весточку стражам границ."
+
+ decision_secure_high_pass: "Захватить Высокий перевал"
+ decision_secure_high_pass_desc: "К востоку от нас находится Высокий перевал, который на нашем языке называется Кирит Форн эн Андрат. Через него проходит опасная тропа, ведущая в [Concept('rhovanion', 'Рованион')|E], и путешествовать по нему опасно из-за [Concept('goblins', 'гоблинов')|E], которые обитают в близлежащих горах.\n\nЕсли мы хотим восстановить частые контакты с нашими родичами в восточных землях, мы должны обеспечить прочный мир на Высоком перевале."
+ decision_secure_high_pass_tooltip: "Очистить Высокий перевал от врагов"
+ decision_secure_high_pass_confirm: "Ради безопасности Имладриса."
+
  decision_rebuild_ost_in_edhil: "Восстановить Ост-ин-Эдиль"
  decision_rebuild_ost_in_edhil_desc: "Некогда жемчужина восточного [Concept('eriador', 'Эриадора')|E], [ostinedhil|E] был разграблен и разрушен [Concept('sauroncharacter', 'Сауроном')|E] во время [Concept('waroftheelvesandsauron', 'Войны эльфов и Саурона')|E]. С тех пор эти земли были заброшены, и никто не хотел приближаться к древним руинам. Теперь, когда эти земли вновь принадлежат [Concept('elven', 'эльфам')|E], восстановление города в наших силах.\n\nДля этого потребуется много труда и затрат, но благодаря этому [eregion|E] сможет вновь возвыситься." 
  decision_rebuild_ost_in_edhil_tooltip: "Восстановить столицу [Concept('eregion', 'Эрегиона')|E]"
@@ -134,6 +157,21 @@
  decision_claim_high_kingship_tooltip: "Претендовать на титул [Select_CString(ROOT.Char.IsFemale, 'верховной королевы', 'верховного короля' )] [noldorelves|El]"
  decision_claim_high_kingship_confirm: "Пусть верховные короли вновь противостоят Тени."
  decision_claim_high_kingship_effect_tooltip: "Каждый [elf|El] в [Concept('lindon', 'Линдоне')|E] станет вашим вассалом."
+
+ decision_penni_tsunami: "Воззвать к нуйневари"
+ decision_penni_tsunami_desc: "Глубоко в туманных долинах и прудах [Concept('nelornieth', 'Нелорниэта')|E] обитают нуйневари, духи воды, которые охраняли земли [Concept('penni', 'пенни')|E] со времён первого затмения [Concept('middleearth', 'Средиземья')|E]. Они могущественные феи, но их нелегко пробудить. Если мы будем искренне умолять их и совершим подношение милости и даров, то, возможно, сможем обратить их свирепую силу против тех, кто давным-давно изгнал нас со священного острова Тол-Сулереб..."
+ decision_penni_tsunami_tooltip: "Попытаться покончить с захватчиками Тол-Сулереба"
+ decision_penni_tsunami_confirm: "Восстаньте, о воды гнева!"
+
+ decision_penni_island: "Вернуть Тол-Сулереб"
+ decision_penni_island_desc: "Остров Тол-Сулереб, также называемый-Эгиль Дорн, находится в самом сердце [Concept('seaofrhun', 'моря Рун')|E]. Когда-то здесь находился великий храм [Concept('penni', 'пенни')|E], но когда с востока пришли падшие люди, [Concept('avari', 'авари')|E] отступили в дикие леса [Concept('nelornieth', 'Нелорниэта')|E].\n\nПришло время нам вновь заявить права на остров, чтобы мы могли восстановить его храм и полюбоваться красотой, сотворённой Единым, как мы это делали в эпоху звёзд."
+ decision_penni_island_tooltip: "Вернуть остров Тул-Сулереб под власть Нелорниэта"
+ decision_penni_island_confirm: "Да будет так."
+
+ decision_penni_empire: "Расширить влияние Нелорниэта"
+ decision_penni_empire_tooltip: "Взять логат под свой контроль"
+ decision_penni_empire_desc: "К западу от нас лежат пастбищные равнины логат, множества полукочевых племен, с которыми у [Concept('penni', 'пенни')|E] часто были хорошие отношения. Мы могли бы убедить их стать нашими ближайшими союзниками, чтобы противостоять угрозам с юга и востока, где находятся наши общие враги."
+ decision_penni_empire_confirm: "Разослать гонцов."
 
  convert_to_elven_government_decision: "Принять эльфийскую форму правления"
  convert_to_elven_government_decision_desc: "Эльфы правят не так, мы должны вернуться к нашему традиционному образу жизни."
@@ -158,6 +196,12 @@
  decision_reveal_necromancer_tt: "Ваша держава граничит с провинцией [GetTitleByKey('c_amon_lanc').GetNameNoTier]"
  decision_reveal_necromancer_tt_2: "Некромант владеет Дол-Гулдуром"
 
+ decision_mirror_of_galadriel: "Зеркало Галадриэль"
+ decision_mirror_of_galadriel_desc: "Зеркало показывает многое, чего не могут предсказать даже мудрейшие. То, что было... то, что есть... и нечто... чего ещё не произошло.\n\nЗаглянете ли вы в зеркало?"
+ decision_mirror_of_galadriel_tooltip: "Взглянуть в зеркало Галадриэль"
+ decision_mirror_of_galadriel_confirm: "Да."
+ decision_mirror_of_galadriel_tt: "Вы владеете [Concept('artifact', 'зеркалом Галадриэль')|E]"
+
  decision_delve_ardinak: "Очистить Ардинак"
  decision_delve_ardinak_tooltip: "Очистить проклятый остров Ардинак."
  decision_delve_ardinak_desc: "Давным-давно [Concept('ardinak', 'Ардинак')|E] был домом [Concept('avari', 'авари')|E]. Там поселилось великое зло, слуга [Concept('morgothcharacter', 'Моргота')|E], который убил Тайналанна, короля [Concept('kinnlai', 'кинн-лай')|E]. Хотя Тайналанн убил чудовище, оно, в свою очередь, прокляло остров.\n\nМы должны развеять проклятие, если хотим когда-нибудь вернуть потерянный [Concept('dilsulinol', 'Дилсулинол')|E]."
@@ -169,15 +213,28 @@
  decision_reunite_kinnlai_tooltip: "Преодолеть раскол между родственными [Concept('kinnlai', 'кинн-лай')|E]"
  decision_reunite_kinnlai_confirm: "Пусть вернётся единство."
 
- decision_utter_south_elven: "Вернуть контроль над древними землями"
- decision_utter_south_elven_desc: "Слишком долго [Concept('kinnlai', 'кинн-лай')|E] были разделены. Слишком долго мы позволяли [Concept('men', 'людям')|E] беспрепятственно разгуливать по [Glossary('Илдол','ildol_gloss')], бездумно оскверняя то, что мы считаем священным.\n\nМы больше не обязаны терпеть их поведение."
+ decision_utter_south_elven: "Вернуть земли предков"
+ decision_utter_south_elven_desc: "Слишком долго [Concept('elves', 'эльфы')|E] юга были разделены. Слишком долго мы позволяли [Concept('men', 'людям')|E] беспрепятственно разгуливать по [Glossary('Илдол','ildol_gloss')], бездумно оскверняя то, что мы считаем священным.\n\nМы больше не обязаны терпеть их поведение."
  decision_utter_south_elven_confirm: "Восстановить древние земли."
- decision_utter_south_elven_tooltip: "Восстановить правление кинн-лай на землях, отошедших к людям."
+ decision_utter_south_elven_tooltip: "Восстановить эльфийское правлениена землях, отошедших к людям."
+ unify_utter_south_ardinak_cleansed: "Остров Ардинак был очищен"
 
  decision_utter_south_integrate_mag_tumag_elven: "Взять магрийцев под наш контроль"
  decision_utter_south_integrate_mag_tumag_elven_desc: "Магрийцы - древний народ, принадлежащий к расе [Concept('men', 'людей')|E], которые долгое время жили на своей земле в мире с [Concept('kinnlai', 'кинн-лай')|E].\n\nМы могли бы обеспечить, чтобы так и оставалось, взяв их и их вождей под нашу защиту."
  decision_utter_south_integrate_mag_tumag_elven_confirm: "Включить Маг и Тумаг в границы державы."
  decision_utter_south_integrate_mag_tumag_elven_tooltip: "Навсегда присоединить самоуправляемых магрийцев к нашей державе."
+ decision_utter_south_integrate_mag_tumag_elven_tt: "Королевства-близнецы интегрированы"
+
+ decision_terilaen_library: "Посетить библиотеку Айнглада"
+ decision_terilaen_library_desc: "[Concept('cuind', 'Куинд')|E] обитали в густых лесах #L [GetTitleByKey('k_drel').GetNameNoTier]а#! на протяжении тысячелетий. Но было время, давно прошедшее, когда наши родичи странствовали, посещая другие берега под другими звёздами. Если сохранились какие-либо записи об этих путешествиях, то лучшее место для их поисков - королевский дворец."
+ decision_terilaen_library_tooltip: "Изучить историю [Concept('cuind', 'куинд')|E]"
+ decision_terilaen_library_confirm: "Я немедленно отправлюсь в путь."
+
+ decision_secure_drel: "Укрепить Дрэл"
+ decision_secure_drel_desc: "[GetTitleByKey('k_drel').GetNameNoTier] - край густых лесов и высоких горных вершин. Леса [Concept('cuind', 'куинд')|E] разделены самым западным хребтом [Concept('yellowmountains', 'Жёлтых гор')|E], который простирается до мыса Дрэл, нетронутого на протяжении тысячелетий.\n\nЕсли мы обезопасим земли вокруг нас и используем камень и металлы, найденные в горах, мы сможем обеспечить нашим народам силу и безопасность."
+ decision_secure_drel_tooltip: "Укрепить земли [Concept('cuind', 'куинд')|E]"
+ decision_secure_drel_confirm: "Мы выстоим в этих землях."
+ decision_secure_drel_tt: "Хотя бы один из ваших [Concept('friends', 'друзей')|E] принадлежит к нолдорской [Concept('culture', 'культуре')|E]"
 
  ### Maglor Decision ###
  decision_annihilate_abhorred: "Уничтожить Саурона Отвратительного"
@@ -211,7 +268,7 @@
 
  decision_rally_army_righteous: "Собрать войско праведников"
  decision_rally_army_righteous_tooltip: "Призвать эльфийских ветеранов и добровольцев присоединиться к вашим походам" 
- decision_rally_army_righteous_desc: "После великих сражений [Concept('warlastalliance', 'Войны Последнего союза')|E] и долгих войн с [Concept('angmar', 'Ангмаром')|E] Линдон затих и ушел в изоляцию, защищённый огромными расстояниями от любой угрозы. Но есть угрозы, которые однажды придут к его берегам, если их не упредить. Многие в Линдоне знают об этом, но им не хватает лидерства, чтобы сделать этот шаг. Что ж, я такой. Моё имя и имя моей семьи запятнано кровью невинных, которая, возможно, никогда не будет очищена. Но пусть не говорят, что мы не пытались. Пусть все в Линдоне знают: если кто-то желает дать бой врагу, чтобы обезопасить земли Свободных народов, - встаньте под Звезду Феанора!"
+ decision_rally_army_righteous_desc: "После ужасных потерь [Concept('warlastalliance', 'Войны Последнего союза')|E] и долгой борьбы с [Concept('angmar', 'Ангмаром')|E], Линдон погрузился в безмятежный сон, надёжно изолированный от зла в мире. Но зло не знает покоя, и если мы не дадим ему отпор, то очень скоро оно окажется у нас на пороге.\n\nМоё имя и имя моего дома навсегда запятнано кровью многих невинных. Но пусть не говорят, что доблесть эльфов угасла в тишине и отчаянии. Пусть весь Линдон знает - если у кого-то есть желание дать бой врагу, чтобы защитить земли Свободных народов, объединяйтесь под Звездой Феанора!"
  decision_rally_army_righteous_confirm: "Смерть настигнет его к концу дня..."
  decision_rally_army_righteous_aggresive: "Отправиться в [GetTitleByKey('c_edhellond').GetNameNoTierNoTooltip]!"
  maglor_aggresive_route_tooltip: "Отправиться в [GetTitleByKey('c_edhellond').GetNameNoTierNoTooltip], намереваясь как можно быстрее нанести удар по [Concept('sauroncharacter', 'Саурону')|E]"
@@ -379,15 +436,18 @@
  decision_adopt_feudal_from_oligarchy_tooltip: "Поменять [Concept('government', 'форму правления')|E] и выбрать [Concept('feudal', 'феодализм')|E] или [Concept('clan', 'клан')|E]"
  TITLES_LOSE_OLIGARCHIC_SUCCESSION: "Все принадлежащие титулы потеряют закон #high Олигархические выборы#!"
 
+ convert_to_wanua_decision: "Принять традиции вануа"
+ convert_to_wanua_decision_desc: "Очевидно, что морская торговля занимает центральное место в жизни нашего общества. Вполне уместно, чтобы наша власть отражала это и делала больший упор на сотрудничество, а не на противостояния."
+ convert_to_wanua_decision_tooltip: "Принять форму правления вануа"
+ convert_to_wanua_decision_confirm: "Для державы наступит новый рассвет."
+ ALL_VASSALS_BECOME_WANUA: "Все вассалы примут форму правления #high вануа#!"
+
  commit_suicide_decision_desc_black_breath: "Я чувствую холод, как будто иду сквозь кошмар. Солнце больше не греет мою кожу. Никто никогда не выздоравливает от этой странной болезни, я просто хочу забыться и уснуть навсегда."
 
- ritual_suicide_decision: "Принять Дар людей"
- ritual_suicide_decision_desc: "Пришло время отправиться за пределы мира и узнать, что скрывается за гранью жизни."
- ritual_suicide_decision_tooltip: "Вы совершите самоубийство, добровольно отдав свою жизнь."
- ritual_suicide_decision_confirm: "В горе мы уходим, но не в отчаянии!"
-
- lotr_lay_down_life_decision: "Уйти из жизни"
- lotr_lay_down_life_decision_desc: "Моя жизнь была долгой и насыщенной, но мне не суждено было стать [Select_CString(ROOT.Char.IsFemale, 'вечной', 'вечным' )]. Я [Select_CString(ROOT.Char.IsFemale, 'выбрала', 'выбрал' )] смертную жизнь и смертную судьбу. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] уйти из жизни и позволить править следующему поколению."
+ lotr_lay_down_life_decision: "Принять Дар людей"
+ lotr_lay_down_life_decision_desc: "[Concept('men', 'Людской')|E] удел - умереть и уйти за пределы мира, избавившись от печалей [Concept('ardaconcept', 'Арды')|E] омрачённой. Близится моё время, и следующее поколение готово занять моё место.\n\nИбо если я не уйду сейчас, то скоро мне придётся расстаться с жизнью не по собственному желанию. Мне дана милость уйти по своей воле и вернуть дар. Посему я погружусь в сон.\n\n#TOLKIENQUOTE Слушай! Не навек привязаны мы к кругам мира, и за ними есть больше, чем память.#!"
+ lotr_lay_down_life_decision_tooltip: "Вы добровольно уйдёте из жизни."
+ lotr_lay_down_life_decision_confirm: "Мы должны уйти в печали, но не в отчаянии!"
 
  decision_h_middle_earth: "Претендовать на власть над всем Средиземьем"
  decision_h_middle_earth_desc: "Я [Select_CString(ROOT.Char.IsFemale, 'подчинила', 'подчинил' )] все земли и добрые народы [Concept('middleearth', 'Средиземье')|E] своей власти, и теперь никто не может оспаривать моё правление!"
@@ -395,6 +455,19 @@
  decision_h_middle_earth_tooltip: "Претендовать на всё Средиземье как на свои законные владения."
  decision_h_middle_earth_tt: "Вы получите титул [Concept('hegemony', 'гегемонии')|E], охватывающей всё [Concept('middleearth', 'Средиземье')|E]"
  decision_h_middle_earth_trigger: "Вы владеете всеми [Concept('county', 'графствами')|E] в [GetGeographicalRegion('middleearth').GetName]"
+
+ decision_fire_intro_events: "Повторно вызвать вступительное событие расы"
+ decision_fire_intro_events_desc: "Если вы забыли специальную механику своей расы, вы можете принять это решение, чтобы ещё раз увидеть вступительное событие."
+ decision_fire_intro_events_confirm: "Упс."
+ decision_fire_intro_events_tooltip: "Повторно вызвать событие механики расы"
+ decision_fire_intro_events_tt: "Вы увидите вступительное событие своей расы."
+
+ decision_elevate_defensive_alliance_into_being_permanent_title: "Скрепить вечный союз"
+ decision_elevate_defensive_alliance_into_being_permanent_desc: "Договор между нашими народами служил прочным щитом, но он остаётся привязанным к моей недолговечной жизни. Когда меня не станет, [Concept('realm', 'держава')|E] не должна остаться в одиночестве.\n\nПришло время скрепить эту дружбу в чём—то большем, чем просто пергамент, - создать союз, который переживёт королей и сохранится после смерти. Пусть наши наследники будут связаны как братья, объединившись против любой тени, которая может подняться."
+ decision_elevate_defensive_alliance_into_being_permanent_confirm: "Узы, что не разорвёт даже смерть!"
+ decision_elevate_defensive_alliance_into_being_permanent_tooltip: "Заключить постоянный союз между вашими [Concept('realms', 'державами')|E]."
+ decision_elevate_defensive_alliance_into_being_permanent.tt_1: "Вы помогали друг другу как минимум в #V 10#! [Concept('defensive_alliance', 'оборонительных')|E] войнах\n$BULLET_WITH_TAB$Текущее значение: #V [GetPlayer.MakeScope.ScriptValue('lotr_defensive_wars_joined')|0]#!"
+ decision_elevate_defensive_alliance_into_being_permanent.tt_2: "Вы и [fellow_member.GetName] заключите постоянный союз"
 
  ##########################
  ### Dunedain Decisions ###
@@ -1019,7 +1092,7 @@
  gondor_kingship_tt_dark_lord: "#P;bold 3 очка:#! Вы победили [Concept('sauronthedarklordcharacter', 'Тёмного властелина Саурона')|E], приняв [decision|El] #bold $decision_destroy_mordor$#!"
  gondor_kingship_tt_parents_dynasty: "#P;bold 2 очка:#! Один из ваших родителей принадлежит к [Concept('dynasty', 'династии')|E] [CHARACTER.GetDynastyName] или [TARGET_CHARACTER.GetDynastyName]"
  gondor_kingship_tt_claim_on_kingship: "#P;bold 2 очка:#! У вас есть [Concept('claim', 'претензия')|E] на титул [GetTitleByKey('e_gondor').GetName]"
- gondor_kingship_tt_osgiliath: "#P;bold 2 очка:#! Обе половины города [GetTitleByKey('c_osgiliath').GetNameNoTier] восстановлены"
+ gondor_kingship_tt_osgiliath: "#P;bold 2 очка:#! [GetTitleByKey('c_osgiliath').GetNameNoTier] восстановлен"
  gondor_kingship_tt_minas_ithil: "#P;bold 1 очко:#! [GetTitleByKey('c_minas_ithil').GetNameNoTier] восстановлен. [GetModifier('fading_morgul_corruption_modifier').GetNameWithTooltip] очищена"
  gondor_kingship_tt_dynasty_prestige: "#P;bold 1 очко:#! [Concept('dynasty_prestige_level', 'Уровень величия')|E] вашей [Concept('dynasty', 'династии')|E] - $dynasty_level_8_c$ (#V 8#!) или выше"
  gondor_kingship_tt_prestige_level_5: "#P;bold 1 очко:#! Ваш [Concept( 'prestige_level', 'уровень репутации' )|E] - $PRESTIGE_LEVEL_LABEL_5$ (#V 5#!) или выше"
@@ -1127,7 +1200,7 @@
  #######################
  ### Umbar Decisions ###
  #######################
- decision_harnen_kingdom: "Объединить гавани Харнендора" #  Unify the Havens of Mirlond and Ramlond
+ decision_harnen_kingdom: "Объединить гавани Харнендора" #Unify the Havens of Mirlond and Ramlond
  decision_harnen_kingdom_adunaic: "Объединить гавани Нинзайяна"
  decision_harnen_kingdom_desc: "На протяжении многих поколений Рамлонд и Мирлонд враждовали за контроль над речной торговлей Харнена. Однако, если бы две гавани объединились под властью одного владыки, они могли бы подавить всю торговлю, желающую попасть в Харад через Харнен. Давайте же похороним прошлое и вместе пойдем вперед в будущее, богаче и сильнее, чем прежде!"
  decision_harnen_kingdom_tooltip: "Объединить гавани в устье Харнена"
@@ -1147,9 +1220,12 @@
 
  decision_turn_to_piracy: "Обратиться к пиратству"
  decision_turn_to_piracy_AI: "Обратиться к пиратству (ИИ)"
- decision_turn_to_piracy.desc: "Мы долго притворялись цивилизованными и слабыми. Мы - гордые сыновья берега, и мы обратимся к жизни налётчиков, и наших парусов будут бояться на всем побережье Белегаэра!"
+ decision_turn_to_piracy.desc: "Мы долго притворялись цивилизованными и слабыми. Мы - гордые сыновья берега, и мы обратимся к жизни налётчиков! Наших парусов будут бояться на всех побережьях!"
+ decision_turn_to_piracy_desc.ormal: "[GetFaithByKey('faith_ormal_pirate').GetAdherentNamePlural], прославленные и печально известные пираты, когда-то правили водами Ормальского залива. Мы сделаны из одного теста, и очень скоро все будут бояться вида наших парусов."
+ decision_turn_to_piracy_desc.vulmaw: "Среди вулмавов Южного архипелага есть те, кто избавляется от скуки обычной жизни и наслаждается морской свободой, и называют себя [GetFaithByKey('faith_nlkum_kadir').GetAdherentNamePlural|l]. Мы должны принять их образ жизни, и тогда все будут бояться вида наших длинных кораблей!"
  decision_turn_to_piracy.tt: "Принять наследие налётчиков"
  decision_turn_to_piracy_confirm: "Грабежи и слава."
+ corsair_conversion_event_troops: "Пиратская команда"
 
  decision_adunaic_revival: "Адунайское возрождение"
  decision_adunaic_revival_desc: "В древние времена Умбаром правили [Concept('adunai', 'адунайцы')|E], великие люди, могущественные и сильные. К таким людям принадлежал Кастамир Великий, основатель нашей линии и величайший из королей [Concept('gondor', 'Гондора')|E], чьи потомки были несправедливо изгнаны в Умбар. Хотя прошло много времени и память исказилась, тень их наследия все еще витает над Умбаром.\n\nМы принадлежим к тому же великому роду, истинные наследники притязаний Кастамира. Мы тоже достойны возвыситься над низшими людьми, ибо в наших жилах течет кровь [anadune|E]. Если бы мы проповедовали это сходство и связали себя с этими историческими силами, мы бы значительно укрепили свои позиции в Умбаре, какими бы возвышенными ни казались кому-то наши притязания. Пришло время принять традиции нашего наследия и вновь сделать [Concept('adunai', 'адунайцев')|E] великими!"
@@ -1285,6 +1361,11 @@
  decision_investigate_brants_murder_tooltip: "Найти доказательства того, кто убил вашего отца"
  decision_investigate_brants_murder_confirm: "Я докопаюсь до правды."
  decision_investigate_brants_murder_tt: "Вы отправитесь на поиски ответов"
+
+ decision_convince_dunmen_chieftain: "Убедить дунменских вождей"
+ decision_convince_dunmen_chieftain_desc: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] убедить их что-то сделать!" 
+ decision_convince_dunmen_chieftain_tooltip: "Отправиться к вождю и побеседовать с ним."
+ decision_convince_dunmen_chieftain_confirm: "В путь."
 
  #######################
  ### Shire Decisions ###
@@ -1641,7 +1722,7 @@
 
  decision_coup_ray: "Начать переворот в Рае"
  decision_coup_ray_tooltip: "Приступить к плану по узурпации власти в державе [GetTitleByKey('k_ray').GetNameNoTier] с помощью интриг, а не войны. Ваши различные происки, направленные на усиление вашей власти над столицей, увеличат ваши шансы на успех."
- decision_coup_ray_desc: "Наконец-то пришло время, когда все мои действия достигли кульминации. Действительно, теперь всё готово для того, чтобы я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] отправить весточку своим сообщникам в городе [GetTitleByKey('c_bozisha_dar').GetNameNoTier] чтобы осуществить свой план по его захвату.\n\nМои верные люди помогут мне заблокировать ворота города и взять под контроль его стены, в то время как великие гавани будут блокированы, перекрыв Каниватра и их сторонникам все пути к бегству из города. Поскольку все выходы из города перекрыты, мои сообщники и лоялисты ворвутся во дворец кралуя и заключат его и весь его двор в темницу, отдав его на мою милость."
+ decision_coup_ray_desc: "Наконец-то пришло время, когда все мои происки достигли кульминации. Действительно, теперь всё готово для того, чтобы я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] отправить весточку своим сообщникам в городе [GetTitleByKey('c_bozisha_dar').GetNameNoTier] чтобы осуществить свой план по его захвату.\n\nМои верные люди помогут мне заблокировать ворота города и взять под контроль его стены, в то время как великие гавани будут блокированы, перекрыв Каниватра и их сторонникам все пути к бегству из города. Поскольку все выходы из города перекрыты, мои сообщники и лоялисты ворвутся во дворец кралуя и заключат его и весь его двор в темницу, отдав его на мою милость."
  decision_coup_ray_confirm: "Дни Каниватры сочтены!"
  decision_coup_ray_effects_tt: "Ваши текущие шансы на успех попытки переворота равны #N [GetPlayer.MakeScope.ScriptValue('lotr_mardat_coup_odds_of_success')]% #!. Чтобы увеличить свои шансы на успех, вы должны успешно выполнить происки из категории решений «Переворот в Рае»."
  mardat_capital_spies_requirement: "Вы должны проникнуть в столицу и создать там сеть агентов."
@@ -1737,6 +1818,8 @@
  has_gai_alliance: "Вы обратились к державе [GetTitleByKey('d_gai').GetNameNoTier]."
  mardat_lost_bellakar_invasion: "Вторжение державы [GetTitleByKey('k_ray').GetNameNoTier] в [GetTitleByKey('e_bellakar').GetNameNoTier] завершилось неудачей."
  some_rebel_requierments_impossible: "Не все из перечисленных требований можно выполнить. Какие из них вам доступны, зависит от вашей конфессии."
+ mardat_purge_has_been_inherited: "Мардат больше не правит державой [GetTitleByKey('k_ray').GetNameNoTier]."
+ ray_high_resistance: "Сопротивление выше #N 14#! ед. и больше усмирения."
 
  ### Vatalinar/Kanivatra decisions ###
  decision_investigate_ray: "Изучить тени Раи"
@@ -1745,7 +1828,11 @@
  decision_investigate_ray_confirm: "Я не успокоюсь, пока всё не раскроется..."
  decision_investigate_ray_effects_tt: "У вас будет возможность выбрать между расследованием преступного мира города [GetTitleByKey('c_bozisha_dar').GetNameNoTier], прочёсыванием армии в поисках участников заговора или сосредоточением своих усилий на властителях державы, чтобы попытаться найти самого кукловода."
 
-
+ decision_vatalinar_civil_war: "Привлечь Мардата к правосудию"
+ decision_vatalinar_civil_war_tooltip: "Начать против Мардата войну за судьбу державы [GetTitleByKey('k_ray').GetNameNoTier]. #N Мардат сможет призвать на эту войну всех сторонников, которых он, возможно, нашёл.#!"
+ decision_vatalinar_civil_war_desc: "Слишком долго вероломному и еретическому владыке [GetTitleByKey('d_suza_riy').GetNameNoTier] было позволено планировать из тени моё свержение и падение моей династии. Сегодня его жестоким планам и амбициям придёт конец! Я не допущу, чтобы моя возлюбленная [Concept('ray', 'Рая')|E], божественная земля Ватры, пала от безумия культа Кхаз-грамаза.\n\nВсе знамёна Каниватра, до последнего, будут созваны в [GetTitleByKey('c_bozisha_dar').GetNameNoTier]. Оттуда мы начнём наш поход на восток и принесём смерть всем предателям, которых найдём. Скоро этот трусливый заговорщик Мардат узнает о своём месте, о своей слабости, и никто больше не посмеет выступить против избранников Ватры!"
+ decision_vatalinar_civil_war_confirm: "Смерть всем изменникам!"
+ decision_vatalinar_civil_war_effects_tt: "Вы начнёте гражданскую войну против Мардата из [GetTitleByKey('d_suza_riy').GetNameNoTier] за судьбу державы [GetTitleByKey('k_ray').GetNameNoTier]. Победа в этой войне позволит вам отстранить Мардата от власти, но в случае поражения он захватит державу. #N Мардат призовёт на эту войну всех тайных чужеземных сторонников!#!"
 
  ################################
  ####### Tedjin Decisions #######
@@ -1834,17 +1921,17 @@
  decision_ask_to_join_balan_lai_effect: "Каждый [GetTrait('balan_lai_member').GetName( GetNullCharacter )] получит возможность наложить вето."
  decision_ask_to_join_balan_lai_effect2: "Если право вето не будет применено, вы получите свойство «[GetTrait('balan_lai_member').GetName( GetNullCharacter )]», войдя в состав совета."
 
- #  decision_call_meeting_of_the_balan_lai: "Call a Meeting of the Bâlan-Lâi"
- #  decision_call_meeting_of_the_balan_lai_tooltip: "Assemble the members of the Bâlan-Lâi to discuss an issue of your choice"
- #  decision_call_meeting_of_the_balan_lai_desc: "The time has come for me to seek a place among the esteemed ranks of the [balan_lai|E]. I will make a formal appeal to its current members, making the case for my investiture as the newest hereditary member of the Council.\n\nI will state my intention to honor our traditions, bring fresh perspectives, and contribute to the enduring legacy of the Valdali and our people."
- #  CHOOSE_DISCUSSION_TOPIC_NEXT_STEP_BUTTON: "Choose issue to discuss"
- #  decision_balan_lai_northern_tithe: "Review Northern Tithe"
- #  decision_balan_lai_building: "Building Efforts"
- #  decision_balan_lai_control: "Enforce Order"
- #  decision_balan_lai_military_training: "Training Exercises"
- #  decision_balan_lai_faith_conversion: "Encourage Proselytism"
- #  decision_balan_lai_culture_conversion: "Native Integration"
- #  decision_call_meeting_of_the_balan_lai_confirm: "Send the missives!"
+ #decision_call_meeting_of_the_balan_lai: "Call a Meeting of the Bâlan-Lâi"
+ #decision_call_meeting_of_the_balan_lai_tooltip: "Assemble the members of the Bâlan-Lâi to discuss an issue of your choice"
+ #decision_call_meeting_of_the_balan_lai_desc: "The time has come for me to seek a place among the esteemed ranks of the [balan_lai|E]. I will make a formal appeal to its current members, making the case for my investiture as the newest hereditary member of the Council.\n\nI will state my intention to honor our traditions, bring fresh perspectives, and contribute to the enduring legacy of the Valdali and our people."
+ #CHOOSE_DISCUSSION_TOPIC_NEXT_STEP_BUTTON: "Choose issue to discuss"
+ #decision_balan_lai_northern_tithe: "Review Northern Tithe"
+ #decision_balan_lai_building: "Building Efforts"
+ #decision_balan_lai_control: "Enforce Order"
+ #decision_balan_lai_military_training: "Training Exercises"
+ #decision_balan_lai_faith_conversion: "Encourage Proselytism"
+ #decision_balan_lai_culture_conversion: "Native Integration"
+ #decision_call_meeting_of_the_balan_lai_confirm: "Send the missives!"
 
  #################################
  #### Sauron/Mordor Decisions ####
@@ -1990,6 +2077,12 @@
  decision_bend_the_knee_to_mordor_confirm: "Послать гонца!"
  decision_bend_the_knee_to_mordor_tt: "Ваша держава граничит с Мордором"
 
+ decision_return_the_rings: "Вернуть кольца Власти Тёмному властелину"
+ decision_return_the_rings_desc: "В моём распоряжении находятся кольца, выкованные Тёмным властелином, моим хозяином, Сауроном. Помимо кольца, которое которое мой властелин подарил мне во Вторую эпоху, [nazgul_ring.GetName], у меня есть кольца, принадлежащие ему по праву.\nЯ [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы вернуть их ему и помочь ему восстановить свои силы, или я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы оставить их себе, чтобы помочь ему ослабить своих врагов в этом мире."
+ decision_return_the_rings_tooltip: "Вернуть кольца Саурону"
+ decision_return_the_rings_confirm: "Вернуть кольца."
+ decision_return_the_rings_tt: "Вы отправитесь во владение [sauron_capital.GetName]"
+
  ######################
  ### Orc Descisions ###
  ######################
@@ -2119,7 +2212,7 @@
  ##############################
  decision_chelkar_submission: "Потребовать подчинения Хелкара"
  decision_chelkar_submission_tooltip: "Потребовать подчинения Хелкара"
- decision_chelkar_submission_desc: "Хелкар - корень разобщенности Харвена. Если мы хотим восстановить наше место как главенствующей державы Ближнего Харада, мы должны заставить их преклонить колени."
+ decision_chelkar_submission_desc: "Хелкар - корень разобщенности Харвана. Если мы хотим восстановить наше место как главенствующей державы Ближнего Харада, мы должны заставить их преклонить колени."
  decision_chelkar_submission_confirm: "На колени перед своим повелителями!"
  send_chelkar_ultimatum: "Послать ультиматум Хелкару - подчиниться или столкнуться с вторжением"
 
@@ -2208,6 +2301,29 @@
  decision_unite_the_dunes_tooltip: "Интегрировать королевство Дарсалан в Море Дюн"
  decision_unite_the_dunes_desc: "Море Дюн - суровая родина, но она воспитала немало стойких воинов. На востоке лежат земли Дарсалана, где королевства поднимаются и падают так же быстро, как песчаная буря проносится над засушливыми землями.\n\nНастало время объединиться! Я скреплю эти земли в единое королевство и принесу мир, свободу, справедливость и безопасность в мою новую империю."
  decision_unite_the_dunes_confirm: "Во имя процветания аранийцев!"
+
+ decision_pust_revival: "Претендовать на наследие пустов"
+ decision_pust_revival_tooltip: "Провозгласить себя восстановителями древнего пустского королевства"
+ decision_pust_revival_desc: "Давным-давно наши предки правили в пустынных землях Абрахана. Наши города были вершинами архитектуры и инженерного искусства [Concept('haradrim', 'харадрим')|E]. Но когда Огненное зеркало отступило, наше королевство и культура остались опустошёнными, многие из нашего народа отступили в горы на востоке и в пустыни Дарсалана на западе. Надежда на восстановление былого процветания ослабла.\n\nИ всё же наши чаяния оправдались. Я [Select_CString(ROOT.Char.IsFemale, 'объединила', 'объединил' )] народ Абрахана под своей властью. Пусты снова селятся в древних городах наших предков, и большая часть утраченных знаний восстановлена. Никогда больше мой народ не будет прятаться во мраке!"
+ decision_pust_revival_confirm: "Наконец-то пусты возродились!"
+ decision_pust_revival_custom_description_01: "Принадлежит к пустской или происходящей от неё культуре"
+
+ decision_rebuild_zaja_sahr_noria_mines: "Восстановить норию Зейя-Шахр"
+ decision_rebuild_zaja_sahr_noria_mines_tooltip: "Восстановить прославленные ирригационные сооружения в Зейя-Шахре"
+ decision_rebuild_zaja_sahr_noria_mines_desc: "Зейя-Шахр, великая нория, самая глубокая из раскопок, проведённых без помощи гномов, была одним из величайших достижений пустов. Она снабжала водой многие города. Она превратилась в руины после того, как пусты отступили из этого региона. Но благодаря нашим новым знаниям мы можем восстановить старые механизмы и использовать их для добычи драгоценной воды из-под земли."
+ decision_rebuild_zaja_sahr_noria_mines_confirm: "Вновь откроем для себя подземные чудеса!"
+ abrakhan_custom_tooltip: "Все графства в герцогстве [GetTitleByKey('d_abrakhan').GetNameNoTier], развитие в которых выше 20"
+
+ decision_claim_orjalun: "Претендовать на горный перевал Орджалун"
+ decision_claim_orjalun_tooltip: "Претендовать на горный перевал Орджалун от имени Абрахана"
+ decision_claim_orjalun_desc: "На востоке много великих держав - Кхай и Харшандатт. Мы должны взять под контроль важный горный перевал Орджалун для обороны от них."
+ decision_claim_orjalun_confirm: "Наша восточная граница будет защищена!"
+
+ decision_build_ghaesch_kanra_fortress: "Построить крепость Гаэш-Канра"
+ decision_build_ghaesch_kanra_fortress_tooltip: "Построить могучую крепость против угрозы с востока"
+ decision_build_ghaesch_kanra_fortress_desc: "Нашему королевству постоянно угрожает фундаменталистская империя Кхай, поклоняющаяся своей ложной богине солнца Ариэн. Если мы хотим остановить их неизбежные вторжения на наши территории из земель Ашанура, мы должны построить укрепления, подобные Тёмной цитадели Абрахана. Их стены погасят свет слабых богов кхайцев, если они придут к нам."
+ decision_build_ghaesch_kanra_fortress_confirm: "Ни один луч свет с востока не пройдёт."
+
 
  ##################################
  #### Arysis / Maresh Decisions ###
@@ -2464,6 +2580,19 @@
  decision_kultamieli_raid_taurau_positive: "#P Возможно, вашим налётчикам удастся одолеть Рикульфо в бою.#!"
  decision_kultamieli_raid_taurau_negative: "#N Если же они потерпят неудачу, это будет стоить вам немало ресурсов.#!"
 
+ ##############################
+ #### Dol Amroth Decisions ####
+ ##############################
+ decision_amrothian_reserves: "Собрать амротские резервы"
+ decision_amrothian_reserves_desc: "На протяжении многих лет амротские солдаты, занимавшие самые скромные посты в ордене Лебедя, во многих отношениях были той группой, которая лучше всего сохраняла истинный дух первоначального ордена. Однако, несмотря на это, их ряды, к сожалению, поредели, их роль рассматривается как лишённая чести и величия и, следовательно, игнорируется.\n\nНам нужно попытаться восстановить этот костяк наших войск до надлежащей боевой мощи."
+ decision_amrothian_reserves_tooltip: "Пополнить ряды костяка ваших войск"
+ decision_amrothian_reserves_confirm: "Воины, [ROOT.Char.GetTitleAsNameNoTooltip] нуждается в вас!"
+
+ decision_dol_amroth_edhellond: "Основать следопытов Нимродель"
+ decision_dol_amroth_edhellond_desc: "Эделлонд, некогда бывший родиной одноименного [Concept('elven', 'эльфийского')|E] владения, является одной из самых благородных и богатых провинций Дор-эн-Эрниля. Они стремятся подражать эльфийской тактике ведения боя, в отличие от остальных [Concept('dol_amroth', 'дол-амротцев')|E], которые придерживаются твёрдых боевых традиций, унаследованных со времён [Concept('numenor', 'Нуменора')|E]. Их ряды в Ордене опустели, клятвы были позабыты, поскольку внутри организации царила гниль. Мы должны заново принести наши древние клятвы.\n\nЕсли бы они могли быть реинтегрированы в войска, они могли бы стать мощным и инновационным контингентом, которых не устыдится [Select_CString(ROOT.Char.IsFemale, 'любая', 'любой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l]."
+ decision_dol_amroth_edhellond_tooltip: "Реформировать полки Эделлонда"
+ decision_dol_amroth_edhellond_confirm: "Послать самого быстрого всадника, чтобы собрать воинов!"
+ decision_dol_amroth_edhellond_tt: "Доступны [men_at_arms|El] - [GetMaA('rangers_of_ithilien').GetName]"
 
  #############################
  #### Rhovanion Decisions ####
@@ -3005,7 +3134,7 @@
 
  decision_restore_harad_province.tt.tedyathani: "[GetTitleByKey('e_faithful_tedjin').GetNameNoTier]"
  decision_restore_harad_province.tt.tedyathani_desc: ""
- integrate_province_tedyathani: "#T #V Уничтожить [GetTitleByKey('e_faithful_tedjin').GetNameNoTier] захватчиков с востока#! #!\n\nТедьятани - держава захватчиков с востока, нельзя допустить, чтобы она продолжала противостоять землям [Concept('harad', 'Харада')|E]."
+ integrate_province_tedyathani: "#T #V Уничтожить [GetTitleByKey('e_faithful_tedjin').GetNameNoTier] захватчиков с востока#! #!\n\nТеджатани - держава захватчиков с востока, нельзя допустить, чтобы она продолжала противостоять землям [Concept('harad', 'Харада')|E]."
 
  decision_restore_harad_province.tt.sirayn: "[GetTitleByKey('e_sirayn').GetNameNoTier]"
  decision_restore_harad_province.tt.sirayn_desc: ""
@@ -3179,6 +3308,26 @@
  decision_zorzir_find_captains_confirm: "Ни один гном не будет брошен!"
  decision_zorzir_find_captains_tooltip: "Отправиться на поиски уцелевших гномов"
 
+ decision_contact_barazimabul: "Восстановить связи с Баразимабулом"
+ decision_contact_barazimabul_desc: "Когда в #L [GetTitleByKey('k_mablad_dum').GetNameNoTier]е#! будет создан надёжный плацдарм, а дорога через [GetTitleByKey('k_raimumahal').GetNameNoTier] будет расчищена, к нам хлынут поселенцы из #L [GetTitleByKey('k_barazimab_ul').GetNameNoTier]а#!."
+ decision_contact_barazimabul_confirm: "Послать весточку."
+ decision_contact_barazimabul_tooltip: "Привлечь поселенцев ради экономических бонусов."
+ decision_contact_barazimabul.tt: "[GetTitleByKey('k_barazimab_ul').GetNameNoTier] принадлежит [Concept('dwarves', 'гномам')|E]."
+ decision_contact_barazimabul.tt_2: "В регионе [GetTitleByKey('k_raimumahal').GetNameNoTier] нет [Concept('goblins', 'гоблинов')|E] или [Concept('orcs', 'орков')|E]."
+
+ decision_reclaim_mabladdum: "Вернуть Маблад-дум"
+ decision_reclaim_mabladdum_desc: "Древние чертоги наших отцов, давно осквернённые отродьями Улхаша, снова огласятся звуками [Concept('dwarven', 'гномьего')|E] ремесла."
+ decision_reclaim_mabladdum_confirm: "[Glossary('Барук кхазад','baruk_khazad_gloss')]!"
+ decision_reclaim_mabladdum_tooltip: "Укрепить контроль над ревним королевством Маблад-дум."
+ decision_reclaim_mabladdum.tt: "Вы нашли всех пропавших гномьих экспедиционеров."
+ decision_reclaim_mabladdum.tt_2: "Вы восстановили связи с #L [GetTitleByKey('k_barazimab_ul').GetNameNoTier]ом#!."
+ decision_reclaim_mabladdum.tt_3: "Выберите нового правителя державы [GetTitleByKey('k_mablad_dum').GetNameNoTier]."
+
+ decision_restore_mablabdum: "Вернуть Маблад-дум"
+ decision_restore_mablabdum_desc: "Могущественный [GetTitleByKey('k_mablad_dum').GetNameNoTier], некогда гордую цитадель [Concept('blacklocks', 'Черновласов')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E], постигла катастрофа. Сердце Огня, вулкан, который питал жаром великие кузни, разразился яростью, изгнав наших предков из разрушенных чертогов. Теперь поганые [Concept('orcs', 'орки')|E] и [Concept('goblins', 'гоблины')|E] ютятся в разрушенных залах и сводах, оскверняя их одним своим присутствием.\n\nДовольно! Пришло время исполнить наши клятвы и изгнать мерзких врагов, занявших Маблад-дум! Мы не успокоимся, пока они не будут развеяны на все четыре стороны, а чертоги наших предков снова не окажутся в руках [Concept('dwarven', 'гномов')|E], раз и навсегда!"
+ decision_restore_mablabdum_tooltip: "Освободить затерянные залы Маблад-дума"
+ decision_restore_mablabdum_confirm: "#italic Подайте мне мою секиру и броню!#!"
+
  ## Dwarven Beardcare loc
  beard_care_standard_modifier: "Красивая борода"
  beard_care_standard_modifier_desc: "Это прекрасная борода. Даже великолепная."
@@ -3287,7 +3436,7 @@
  struggle_thani_hazad_dissolution_select_tooltip: "Распустить [balan_lai|E], положив конец [Concept('struggle', 'борьбе')|E] и проложить новый путь для региона."
  struggle_thani_hazad_dissolution_confirm: "Это станет лишь сноской в истории!"
  struggle_thani_hazad_dissolution_valid_tooltip: "Текущая фаза - [struggle_thani_hazad_phase_disintegration|E]"
- struggle_thani_hazad_dissolution_valid_tooltip_condition_1: "Вы контролируете по крайней мере #V 60%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+ struggle_thani_hazad_dissolution_valid_tooltip_condition_1: "Вы контролируете по крайней мере #V 60%#! региона [GetGeographicalRegion('custom_mannish_thani_hazad').GetName]"
  struggle_thani_hazad_dissolution_valid_tooltip_condition_2: "Вы контролируете по крайней мере #V 50%#! региона [GetGeographicalRegion('custom_mannish_thani_hazad').GetName]"
  struggle_thani_hazad_dissolution_effect_involved: "Титул [GetTitleByKey('e_thani_hazad').GetName] станет недоступным для создания персонажам со свойством [GetTrait('balan_lai_member').GetName( GetNullCharacter )] на #N 50#! лет"
  struggle_thani_hazad_dissolution_duchy_effect: "Каждое [duchy|El], полностью контролируемое [Concept('ruler', 'правителем')|E] с титулом [Concept('kingdom', 'королевского')|E] уровня, будет передано [de_jure|El] владельцу"
@@ -3301,8 +3450,8 @@
  struggle_thani_hazad_confederation_valid_tooltip: "Текущая фаза - [struggle_thani_hazad_phase_confederation|E]"
  struggle_thani_hazad_confederation_valid_culture_tooltip: "Вы принадлежите к #L [kharadunaimculture.GetCollectiveNoun]ой#! или происходящей от неё культуре"
  struggle_thani_hazad_confederation_valid_modifier_tooltip: "У вашей династии нет модификатора «[GetModifier('old_order_triumphant_th_struggle_modifier').GetNameWithTooltip]»"
- struggle_thani_hazad_confederation_valid_total_land_held: "Вы контролируете по крайней мере #V 20%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
- struggle_thani_hazad_confederation_valid_tooltip_interloper: "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+ struggle_thani_hazad_confederation_valid_total_land_held: "Вы контролируете по крайней мере #V 20%#! региона [GetGeographicalRegion('custom_mannish_thani_hazad').GetName]"
+ struggle_thani_hazad_confederation_valid_tooltip_interloper: "Вы контролируете по крайней мере #V 70%#! региона [GetGeographicalRegion('custom_mannish_thani_hazad').GetName]"
  struggle_thani_hazad_confederation_valid_previous_phase_tooltip: "Предыдущая фаза [Concept('thani_hazad_struggle', 'Происков Балан-Лай')|E] - [struggle_thani_hazad_phase_confederation|E]"
 
  struggle_thani_hazad_unification: "Единство цели"
@@ -3328,6 +3477,7 @@
  balan_lai_united_might_greater_military_strength: "Ваша текущая военная мощь должна быть выше, чем у всех остальных членов [balan_lai|E]\n#help (В это число #warning не#! входят ваши [Concept('allies', 'союзники')|E], [Concept('tributaries', 'данники')|E] или [Concept('prisoners', 'пленники')|E])#!"
  struggle_thani_hazad_unification_valid_tooltip_interloper: "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
  balan_lai_united_might.dread.tt: "Ваш подход снискал вам плохую репутацию..."
+ struggle_thani_hazad_unification_confederation_disband.tt: "Вы создадите титул [Concept('empire', 'империи')|E], вассализировав всех других членов [Concept('balan_lai', 'Балан-лай')|E]"
 
  struggle_thani_hazad_interloper_dissolution: "Распустить Балан-лай"
  struggle_thani_hazad_interloper_dissolution_desc: "Слишком долго эта земля находилась в ловушке закостенелых княжеских порядков! Они жирели на изобилии земли, отказывая всем остальным в возможности получить звание или почет. С этим покончено. Мы разрушим их заветный совет и по-настоящему освободим эту землю, чтобы она обрела новую судьбу."
@@ -3361,13 +3511,31 @@
  decision_form_sea_dragon_host_tooltip: "Претендовать на мантию «Морского змея»"
 
  ##########################
- ###     Thani Hazad    ###
+ ###     Mag & Tumag    ###
  ##########################
- decision_conquest_of_pel: "Завоевание Пэла"
- decision_conquest_of_pel_desc: "На протяжении бесчисленных лет магрийцы боролись за Пэл, ещё до того, как адунайцы пришли на эти земли. Теперь, когда королевство находится в крепкой хватке, мы можем вновь провозгласить его частью Двух корон."
- decision_conquest_of_pel_confirm: "От двух корон - к трём"
- decision_conquest_of_pel_tooltip: "От двух корон - к трём"
+ decision_restore_tamska_title: "Стать Тамской"
+ decision_restore_tamska_desc: "Тысячелетиями Магом и Тумагом правили [Concept('tamska', 'Тамски')|E], божественные дочери бога неба [Concept('namur', 'Намура')|E]. Однако после правления последней Тамски ни одна новая Тамсканги не сменила ее. Если я смогу захватить власть над Королевствами-близнецами и доказать свою преданность, возможно, я и сама смогу доказать, что достойна называться Тамской!"
+ decision_restore_tamska_confirm: "Я - дочь Намура!"
+ decision_restore_tamska_tooltip: "Возродить положение Тамски"
 
+ decision_conquest_of_pel: "Завоевать Пэла"
+ decision_conquest_of_pel_desc: "На протяжении бесчисленных лет магрийцы боролись за Пэл, ещё до того, как адунайцы пришли на эти земли. Теперь, когда королевство находится в крепкой хватке, мы можем вновь провозгласить его частью Двух корон."
+ decision_conquest_of_pel_confirm: "От двух корон - к трём."
+ decision_conquest_of_pel_tooltip: "Претендовать на земли Тремага"
+
+ decision_conquer_mulambur: "Аннексировать Муламбур"
+ decision_conquer_mulambur_desc: "Наши восточные берега населяют муламбурилские мореплаватели, обитатели множества островов и архипелагов к югу от залива Юсакан. Если нам удастся подчинить их, влияние Божественной [Concept('tamska', 'тамски')|E] может распространиться на волны и берега, чтобы навести новый порядок в этих диких землях."
+ decision_conquer_mulambur_tooltip: "Интегрировать Муламбур в королевства-близнецы"
+ decision_conquer_mulambur_confirm: "Да будет так."
+
+ decision_raise_tamska_palace: "Построить Большой дворец"
+ decision_raise_tamska_palace_desc: "Теперь, когда моё правление в королевствах-близнецах укреплено и признано даже за пределами державы, пришло время укрепить мою божественность, воздвигнув величественный дворец в центре столицы. Там я смогу отдохнуть от многих тяжёлых дневных забот, чтобы вернуться [Select_CString(ROOT.Char.IsFemale, 'бодрой', 'бодрым' )] и с новой божественной мудростью."
+ decision_raise_tamska_palace_tooltip: "Создать [Concept('great_building', 'великое сооружение')|E] в вашей [Concept('capital', 'столице')|E]"
+ decision_raise_tamska_palace_confirm: "Это будет мудро."
+
+ ##########################
+ ###    Thani-Hazad     ###
+ ##########################
  decision_summon_princes_imrazor: "Созвать принцев Тани-Хазада"
  decision_summon_princes_imrazor_desc: "Мы посетили большинство или всех принцев Тани-Хазада. Пришло время созвать их, чтобы они проголосовали по вопросу нашего брака."
  decision_summon_princes_imrazor_confirm: "Созвать Балан-Лай!"
@@ -3408,11 +3576,6 @@
  decision_beat_barasi_confirm: "Возмездие!"
  decision_beat_barasi_tooltip: "Они вернулись на своё законное место"
  beat_barasi_effect: "Вы должны решить, как поступить с этими мятежниками"
-
- decision_restore_tamska_title: "Стать Тамской"
- decision_restore_tamska_desc: "Тысячелетиями Магом и Тумагом правили [Concept('tamska', 'Тамски')|E], божественные дочери бога неба [Concept('namur', 'Намура')|E]. Однако после правления последней Тамски ни одна новая Тамсканги не сменила ее. Если я смогу захватить власть над Королевствами-близнецами и доказать свою преданность, возможно, я и сама смогу доказать, что достойна называться Тамской!"
- decision_restore_tamska_confirm: "Я - дочь Намура!"
- decision_restore_tamska_tooltip: "Возродить положение Тамски"
 
  #####################################
  ### Yellow Mountain Orc Decisions ###
@@ -3613,8 +3776,8 @@
  search_rhun_khand_tooltip: "Кханд"
  treasure_hunting_contract_decision_option_search_rhun_seaofrhun: "Море Рун"
  search_rhun_seaofrhun_tooltip: "Море Рун"
- treasure_hunting_contract_decision_option_search_rhun_dorwinion: "Дорвинион"
- search_rhun_dorwinion_tooltip: "Дорвинион"
+ treasure_hunting_contract_decision_option_search_rhovanion_dorwinion: "Дорвинион"
+ search_rhovanion_dorwinion_tooltip: "Дорвинион"
  treasure_hunting_contract_decision_option_search_nearharad_harondor: "Харондор"
  search_nearharad_harondor_tooltip: "Харондор"
  treasure_hunting_contract_decision_option_search_nearharad_haradwaith: "Ближний Харадвайт"
@@ -3657,7 +3820,7 @@
  ### Artifact Decisions ###
  bestow_heirloom_decision: "Подарить реликвию наследнику"
  bestow_heirloom_decision_tooltip: "Издать указ о том, что один из ваших артефактов станет вечной реликвией наследников"
- bestow_heirloom_decision_desc:1 "#F По обычаю, великие короли и императоры дарят своим наследникам престижные артефакты, чтобы их признали и почитали как хранителей [Concept('heirlooms', 'реликвий')|E].#!"
+ bestow_heirloom_decision_desc: "#F По обычаю, великие короли и императоры дарят своим наследникам престижные артефакты, чтобы их признали и почитали как хранителей [Concept('heirlooms', 'реликвий')|E].#!"
  bestow_heirloom_decision_confirm: "Мне нужна опись!"
  bestow_heirloom_decision_unattached_artifact_tt: "не привязан к титулу"
  bestow_heirloom_decision_artifact_attached_to_secondary_title_tt: "привязан к одному из ваших второстепенных титулов"
@@ -3744,13 +3907,19 @@
  decision_form_powa_kingdom_effect_tt_2: "Вы владеете #V 50%#! графствами державы [GetTitleByKey('k_poa').GetNameNoTier]\n$BULLET_WITH_TAB$Текущее значение: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_martial_route')|2]%#!"
  decision_form_powa_kingdom_diplo_trigger_tt: "В настоящее время: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_value_normalized')|2]%#!\nПо крайней мере #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required')|0]%#! правителей в регионе [GetTitleByKey('k_poa').GetNameNoTier] подходят под следующие условия:\n$BULLET_WITH_TAB$Ваши друзья\n$BULLET_WITH_TAB$Ваши любовники\n$BULLET_WITH_TAB$Ваши вассалы\n$BULLET_WITH_TAB$Входят в ту же конфедерацию\n$BULLET_WITH_TAB$Находятся под #v вашим#! влиянием\n[Select_CString(EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('decision_unite_poa_percent_required'),'(CFixedPoint)80'),'\nЕсли Пова находится под вашим контролем, значение поддержки опускается - нужно лишь #V 50%#!.','')]"
 
+ decision_fortify_powa_borders_title: "Укрепить пованские границы"
+
+ decision_expand_powa_kingdom: "Расширить Пову"
+ decision_expand_powa_kingdom_desc: "Теперь, когда наше королевство в безопасности, пришло время расширить наши границы. Разрозненные племена вокруг нас должны объединиться и извлечь выгоду из нового единства пованского народа."
+ decision_expand_powa_kingdom_tooltip: "Расширить ваше новое королевство"
+ decision_expand_powa_kingdom_confirm: "Я прослежу за этим."
+
  decision_make_powa_mercantile_center_title: "Основать центр торговли"
  decision_make_powa_mercantile_center_tooltip: "Выйти за пределы полей боя внешней политики"
  decision_make_powa_mercantile_center_desc: "После объединения у пованцев появилась новая цель, поскольку выживание и повседневная жизнь стали волновать их гораздо меньше. Поэтому мы обратились к нашим соседям, но не в отместку за прошлые проступки, а для развития торговли и дружбы. Теперь наши товары и людей можно найти от верфей Анарикэ до великих городов Гондора!"
  decision_make_powa_mercantile_center_confirm: "Отправить караваны!"
  decision_make_powa_mercantile_center_effect_tt_1: "В настоящее время: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_neighboring_rulers_count')]#!\nУ вас есть #V 5#! соседей, подходящих под следующие условия:\n$BULLET_WITH_TAB$Ваши любовники\n$BULLET_WITH_TAB$Ваши друзья\n$BULLET_WITH_TAB$Ваши данники\n$BULLET_WITH_TAB$Находятся под #v вашим#! влиянием"
  united_powa_peacefully_building_tt: "Теперь вы можете улучшить Зал единения до Купеческого форума."
-
 
  decision_choose_new_tayee_patron: "Выбрать нового тайитского покровителя"
  decision_choose_new_tayee_patron_tooltip: "Выбрать новый курс в жизни, посвятив себя другому божеству"
@@ -3842,8 +4011,8 @@
  decision_avatar_of_x_deity_confirm: "Да будет так."
 
  decision_reign_of_the_avatar: "Утвердить божественную власть"
- decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] в державе и божественных воплощений, ступающих по этой земле."
- decision_reign_of_the_avatar_tooltip: "Коренным образом реформировать [Concept('realm', 'державу')|E]"
+ decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] и [ROOT.Char.GetFaith.HighGodHerHis|U] аватара, что ходит по этой земле. Все должны поклоняться и чтить воплощение [ROOT.Char.GetFaith.HighGodNamePossessive]!"
+ decision_reign_of_the_avatar_tooltip: "Реформировать [Concept('realm', 'державу')|E] в соответствии с традициями мандалы"
  decision_reign_of_the_avatar_confirm: "[ROOT.Char.GetFaith.HighGodName] будет править."
 
  decision_visit_ormalian_port: "Посетить порт в заливе"
@@ -4016,13 +4185,13 @@
  formalise_the_league_decision_confirm: "Пусть Лига будет создана под моим правлением!"
  formalise_the_league_decision_vassal_req: "В регионе [GetTitleByKey('k_lyneria').GetNameNoTier] есть как минимум #high 6#! [Concept('confederates', 'конфедератов')|E] с прибрежными [Concept('counties', 'графствами')|E]"
  formalise_the_league_decision_vassal_income_level_req: "Ни один другой [Concept('confederate', 'конфедерат')|E] не имеет более высокого [Concept('income', 'дохода')|E] в [gold_i][Concept('gold', 'золоте')|E]"
- formalise_the_league_decision_kingdom_creation_tt: "Вы создадите державу [GetTitleByKey('k_lyneria').GetNameNoTier] и все[Concept('confederates', 'конфедераты')|E] станут вашими [Concept('vassals', 'вассалами')|E]"
+ formalise_the_league_decision_kingdom_creation_tt: "Вы создадите державу [GetTitleByKey('k_lyneria').GetNameNoTier] и все [Concept('confederates', 'конфедераты')|E] станут вашими [Concept('vassals', 'вассалами')|E]"
  formalise_the_league_decision_succession_tt: "[GetTitleByKey('k_lyneria').GetNameNoTier] получит [Concept('succession_law', 'закон наследования')|E] «[GetLaw('confederation_elective_succession_law').GetName]»"
  formalise_the_league_decision_king_modifier_tt: "Вы получите модификатор [GetModifier('formalise_the_league_decision_king_modifier').GetNameWithTooltip] на #high 15 лет#!"
  formalise_the_league_decision_vassal_modifier_tt: "Все [Concept('vassals', 'вассалы')|E] получат модификатор [GetModifier('formalise_the_league_decision_vassal_modifier').GetNameWithTooltip] на #high 15 лет#!"
  formalise_the_league_decision_county_modifier_tt: "Все [Concept('counties', 'графства')|E] получат модификатор [GetModifier('formalise_the_league_decision_lands_modifier').GetNameWithTooltip] на #V 30#! лет"
  formalise_the_league_decision_king_modifier: "Архитектор Лиги"
- formalise_the_league_decision_king_modifier_desc: "Этот персонаң объединил независимые города-государства Линерийской лиги в единое [Concept('kingdom', 'королевство')|E], создав прочные торговые, правовые и оборонительные связи."
+ formalise_the_league_decision_king_modifier_desc: "Этот персонаж объединил независимые города-государства Линерийской лиги в единое [Concept('kingdom', 'королевство')|E], создав прочные торговые, правовые и оборонительные связи."
  formalise_the_league_decision_vassal_modifier: "Участник Конкордата"
  formalise_the_league_decision_vassal_modifier_desc: "Город этого персонажа объявил о своей лояльности новой хартии Лиги, присоединившись к ее общей безопасности и процветанию."
  formalise_the_league_decision_lands_modifier: "Территория хартии Лиги"
@@ -4051,6 +4220,7 @@
  control_trade_in_the_bay_of_ormal_decision_controls_narikhar: "[GetTitleByKey('c_narikhar').GetNameNoTier] не входит в состав вашей [Concept('realm', 'державы')|E]"
  control_trade_in_the_bay_of_ormal_decision_controls_inyaloni: "[GetTitleByKey('c_inyaloni').GetNameNoTier] не входит в состав вашей [Concept('realm', 'державы')|E]"
  control_trade_in_the_bay_of_ormal_decision_controls_lyneria: "[GetTitleByKey('c_lyneria').GetNameNoTier] не входит в состав вашей [Concept('realm', 'державы')|E]"
+ control_trade_in_the_bay_of_ormal_decision_controls_thaamutasenga: "[GetTitleByKey('c_thaamutasenga').GetNameNoTier] не входит в состав вашей [Concept('realm', 'державы')|E]"
 
  control_trade_in_the_bay_of_ormal_decision.tt.tul_harar: "[GetTitleByKey('c_tul_harar').GetNameNoTier]"
  control_trade_in_the_bay_of_ormal_decision.tt.tul_harar_desc: "#T #V [GetTitleByKey('c_tul_harar').GetNameNoTier]#! #!\n\nТул Харар - ворота в речное сердце Сирайна, контролирующие движение товаров вверх и вниз по Сиреше. Контролируя его, вы получите влияние на всю внутреннюю торговлю Сирайна.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_tul_harar_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_tul_harar').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
@@ -4082,6 +4252,9 @@
  control_trade_in_the_bay_of_ormal_decision.tt.lyneria: "[GetTitleByKey('c_lyneria').GetNameNoTier]"
  control_trade_in_the_bay_of_ormal_decision.tt.lyneria_desc: "#T #V [GetTitleByKey('c_lyneria').GetNameNoTier]#! #!\n\nВ центре Лиги находится Линерия, жемчужина Линерийского побережья, гордая и непокоренная. Ее ремесленники создают роскошь из кости и бронзы, а караваны со слоновой костью приходят из диких внутренних районов полуострова.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_lyneria_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_lyneria').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
  control_trade_in_the_bay_of_ormal_lyneria_tooltip: "#T #V [GetTitleByKey('c_lyneria').GetNameNoTier]#! #!\n\nВ центре Лиги находится Линерия, жемчужина Линерийского побережья, гордая и непокоренная. Ее ремесленники создают роскошь из кости и бронзы, а караваны со слоновой костью приходят из диких внутренних районов полуострова.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_lyneria_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_lyneria').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
+ control_trade_in_the_bay_of_ormal_decision.tt.thaamutasenga: "[GetTitleByKey('c_thaamutasenga').GetNameNoTier]"
+ control_trade_in_the_bay_of_ormal_decision.tt.thaamutasenga_desc: "#T #V [GetTitleByKey('c_thaamutasenga').GetNameNoTier]#! #!\n\nК югу от Ормальского залива находится протяжённый полуостров Сенга-Мута, а на самой его оконечности находится богатая гавань Таамутасенга, место слияния океанов Харагаэр и Роменаэр.\n\n• Вы получите модификатор «[GetModifier('control_trade_in_the_bay_of_ormal_thaamutasenga_modifier').GetNameWithTooltip]» в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_thaamutasenga').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
+ control_trade_in_the_bay_of_ormal_thaamutasenga_tooltip: "#T #V [GetTitleByKey('c_thaamutasenga').GetNameNoTier]#! #!\n\nК югу от Ормальского залива находится протяжённый полуостров Сенга-Мута, а на самой его оконечности находится богатая гавань Таамутасенга, место слияния океанов Харагаэр и Роменаэр.\n\n• Вы получите модификатор «[GetModifier('control_trade_in_the_bay_of_ormal_thaamutasenga_modifier').GetNameWithTooltip]» в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_thaamutasenga').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
 
  control_trade_in_the_bay_of_ormal_tul_harar_modifier: "Торговля с Тул Хараром"
  control_trade_in_the_bay_of_ormal_tul_harar_modifier_desc: "Экзотические специи, богатый текстиль и темно-синие красители индиго из дельты Сиреши оживляют местные рынки ароматом и цветом Сирайна."
@@ -4103,6 +4276,8 @@
  control_trade_in_the_bay_of_ormal_inyaloni_modifier_desc: "Тропические твердые породы дерева Иньялони ценятся не только за красоту, но и за прочность и используются как в фортификационных сооружениях, так и на верфях."
  control_trade_in_the_bay_of_ormal_lyneria_modifier: "Торговля с Линерией"
  control_trade_in_the_bay_of_ormal_lyneria_modifier_desc: "Линерия притягивает амбициозные умы, как прилив: философы, купцы, инженеры и художники ищут свое счастье на многолюдных причалах и в гильдиях, чьи идеи распространяются так же быстро, как и их товары."
+ control_trade_in_the_bay_of_ormal_thaamutasenga_modifier: "Торговля с Таамутасенгой"
+ control_trade_in_the_bay_of_ormal_thaamutasenga_modifier_desc: "В Таамутасенге можно найти изделия как с востока, так и с запада, разнообразные товары для торговли почти со всех прибрежных земель [Concept('middleearth', 'Средиземья')|E]."
 
  tame_the_lynerian_jungles_decision: "Усмирить Сара Баск"
  tame_the_lynerian_jungles_decision_desc: "Линерийская часть великого Сара Баска остается огромной, дикой и кишащей неиспользованными перспективами. Предложив золото и защиту смелым колонистам, мы можем нанести на карту невостребованный лес, добыть его ресурсы и превратить тишину джунглей в монеты и песни."
@@ -4118,14 +4293,142 @@
  ### Mumakan Decisions ###
  #########################
  decision_utter_south_mumakan: "Объединить королевство Амава"
+ decision_utter_south_mumakan.tamska: "Распространить божественный свет на восток"
  decision_utter_south_mumakan_desc: "Первыми из расы [Concept('men', 'людей')|E], вторгшихся в земли Крайнего Юга, были люди под предводительством #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofamav1').GetID] #L Амава#!#!, который привёл их в эти земли и привёл к их господству. В легендах говорится о том, что он правил всеми просторами Крайнего Юга.\n\nПравда это или нет, но это наследие может быть восстановлено."
- decision_utter_south_mumakan_confirm: "Объединить королевства из легенд об Амаве."
+ decision_utter_south_mumakan_desc.tamska: "Будучи [Concept('tamska', 'тамской')|E], я являюсь дочерью бога, моё правление божественно и абсолютно. Во всех королевствах-близнецах это реальность, и от этого земли становятся безопаснее.\n\nПо ту сторону залива Юсакан лежат жестокие земли Мумакана, управляемые вечно враждующими племенами, которые воюют между собой со времён #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofamav1').GetID] #L Амава#!#!. Их жалкое состояние можно было бы излечить и направить в нужное русло сильной, но нежной рукой. #italic Моей#! рукой."
+ decision_utter_south_mumakan_confirm: "Спи спокойно, Амав. Твоему наследию ничто не угрожает."
  decision_utter_south_mumakan_tooltip: "Объединить под своей властью королевства из легенд об Амаве."
 
  decision_utter_south_integrate_mag_tumag_mumakan: "Интегрировать Маг и Тумаг"
  decision_utter_south_integrate_mag_tumag_mumakan_desc: "Магрийский народ, хотя и давно отделился от нас, является родственным племенем, пришедшим на юг во времена #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofamav1').GetID] #L Амава#!#!, и, возможно, мы можем вновь стать единым целым, как в былые времена."
  decision_utter_south_integrate_mag_tumag_mumakan_confirm: "Включить Маг и Тумаг в состав великой державы."
  decision_utter_south_integrate_mag_tumag_mumakan_tooltip: "Воссоединить магрийцев с их потерянными собратьями."
+ decision_utter_south_integrate_mag_tumag_mumakan_tt: "Королевства-близнецы усмирены"
+
+ decision_utter_south_integrate_shayn_mag_tumag: "Интегрировать Шайн"
+ decision_utter_south_integrate_shayn_mag_tumag_desc: "Жители далёких земель Шайна, хотя и более цивилизованные, чем их собратья в Мумакане, всё ещё остаются заблудшим народом: южане цепляются за свои местные культы, в то время как северные линерийцы мечутся от одного бога к другому. Мир и порядок могут быть принесены им, если я только попытаюсь."
+ decision_utter_south_integrate_shayn_mag_tumag_confirm: "В Шайне настанет мир."
+ decision_utter_south_integrate_shayn_mag_tumag_tooltip: "Взять Шайн под бдительный надзор."
+ decision_utter_south_integrate_shayn_mag_tumag_tt: "Шайн интегрирован"
+
+ decision_integrate_gan: "Интегрировать Ган"
+ decision_integrate_gan_desc: "На востоке лежат обширные джунгли и холмы #ONCLICK:TITLE,k_gan #TOOLTIP:LANDED_TITLE,k_gan #L Гана#!#!#!. Часто правители #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#! имели огромное влияние на многие местные [Concept('men', 'людские')|E] племена, но теперь пришло время полностью установить над ними контроль. Ган навсегда станет частью Мумакана и укрепит державу своими богатыми ресурсами!"
+ decision_integrate_gan_tooltip: "Сделать Ган частью Мумакана"
+ decision_integrate_gan_confirm: "Да!"
+ decision_integrate_gan_tt: "Ган интегрирован"
+
+ decision_subjugate_hathor: "Подчинить Хатор"
+ decision_subjugate_hathor_desc: "На юге обитают свирепые хаторийцы, которые, как говорят, пришли с далёких берегов в незапамятные времена. Долгое время они бросали вызов владыкам #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#!, но теперь, наконец, [GetTitleByKey('k_hathor').GetNameNoTier] преклонит перед нами колено."
+ decision_subjugate_hathor_tooltip: "Навсегда подчинить хаторийцев"
+ decision_subjugate_hathor_confirm: "Их время пришло."
+ decision_subjugate_hathor_tt: "Хаторийцы подчинены"
+
+ decision_subjugate_koronande: "Завоевать Коронандэ"
+ decision_subjugate_koronande_desc: "На западе расположено множество коронандитских городов-государств, группы олигархий, слабо объединённых под властью самого [GetTitleByKey('k_koronande').GetNameNoTier]. В прошлом они преклонялись перед хозяевами из #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#!, пришло время напомнить им об этом..."
+ decision_subjugate_koronande_tooltip: "Включить Коронандэ в состав державы"
+ decision_subjugate_koronande_confirm: "Коронандэ принадлежит мне."
+ decision_subjugate_koronande_tt: "Коронандэ завоёвана"
+
+ decision_subjugate_talilan: "Уничтожить Талилан"
+ decision_subjugate_talilan_desc: "Издавна [Concept('kinnlai', 'кинн-лай')|E] обитали в своих лесах и джунглях на полуострове [GetTitleByKey('k_talilan').GetNameNoTier]. Они слабы, и, если верить легендам, давным-давно [Concept('kinnlai_sundered', 'разделены')|E]. Пришло время продемонстрировать всю степень их слабости и изгнать их из этих земель, чтобы даже леса забыли о них."
+ decision_subjugate_talilan_tooltip: "Изгнать [Concept('elves', 'эльфов')|E] из Талилана"
+ decision_subjugate_talilan_confirm: "Пусть они бегут перед нашим натиском."
+
+ decision_adopt_pet_mumak: "Приручить телёнка мумака"
+ decision_adopt_pet_mumak_desc: "Среди некоторых знатных домов #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#! принято содержать ручного мумака в своей резиденции. Если мне удастся найти телёнка или молодое животное, я, возможно, смогу установить с ним прочные узы и заслужу всеобщее уважение."
+ decision_adopt_pet_mumak_tooltip: "Попытаться приручить телёнка мумака"
+ decision_adopt_pet_mumak_confirm: "Давайте найдём его!"
+ decision_adopt_pet_mumak_tt: "Приручён телёнок мумака"
+ decision_adopt_pet_mumak_failure: "Неудачное приручение телёнка"
+
+ decision_drenim_goblin_offering: "Умиротворить оваг"
+ decision_drenim_goblin_offering_desc: "В горах к северу от нас обитают жестокие оваг - измученные духи наших предков, проклятые вечно бродить по мрачным вершинам и предгорьям [Concept('yellowmountains', 'Жёлтых гор')|E].\n\nСреди дреним существует обычай оставлять подношения, чтобы умилостивить оваг, и они, в свою очередь, могли бы защитить нас от вторжений извне, если сочтут нас достойными."
+ decision_drenim_goblin_offering_tooltip: "Защитить себя от [Concept('orcish', 'орочьей')|E] угрозы"
+ decision_drenim_goblin_offering_confirm: "Я немедленно отправлюсь в путь."
+ decision_drenim_goblin_offering_tt: "Вы отправитесь к подножию гор"
+
+ decision_mumakani_revolt: "Поднять восстание"
+ decision_mumakani_revolt_desc: "Слабые всегда были добычей сильных. И разве я не самый [Select_CString(ROOT.Char.IsFemale, 'сильная', 'сильный' )] из вождей #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#!? Никто не может отрицать, что именно я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] занять трон Амава и править всеми племенами под небом.\n\nКогда придёт время, я призову своих последователей к восстанию, чтобы забрать то, что принадлежит мне по праву!"
+ decision_mumakani_revolt_tooltip: "Претендовать на трон верховного вождя"
+ decision_mumakani_revolt_confirm: "Война!"
+ mumakan_challenge_cb: "Мумаканилское восстание"
+ decision_mumakani_revolt_tt: "У вас имеет претензия на титул «[GetTitleByKey('e_mumakan').GetName]»"
+
+ decision_nafarati_kingdom: "Создать нафаратскую державу"
+ decision_nafarati_kingdom_desc: "Мы - нафаратцы, храбрые и непреклонные. Мы берём то, что принадлежит нам по праву завоевания, с мечами и копьями в руках. Эти земли будут нашими отныне и до скончания веков!"
+ decision_nafarati_kingdom_tooltip: "Укрепить нафаратское королевство в Мумакане"
+ decision_nafarati_kingdom_confirm: "Клянусь могуществом Джи-Индура!"
+ decision_nafarati_kingdom_tt_2: "#N Это решение будет иметь разные эффекты, если нафаратцы независимы или являются вассалами#!"
+
+ #####################
+ ## Shayn Decisions ##
+ #####################
+
+ decision_onto_the_boundless_horizon: "К бескрайнему горизонту"
+ decision_onto_the_boundless_horizon_desc: "Моё время пришло. Я чувствую это по песку у себя под ногами и по крикам морских птиц в небе над головой. Со времён дочерей Амбы среди матриархов Амбасона существовал устойчивый обычай освобождать место для своих преемниц, когда сила её руки ослабевала.\n\nЯ отправлюсь на самую восточную оконечность нашего острова, где берег плавно спускается к великому океану, и соберу все свои оставшиеся силы в последний раз. Пусть волны унесут меня далеко, прежде чем бескрайний горизонт обнимет меня."
+ decision_onto_the_boundless_horizon_tooltip: "Отправиться в плавание в одиночку"
+ decision_onto_the_boundless_horizon_confirm: "Я оставлю пески Амбасона позади."
+
+ hasnt_taken_sea_trade: "Вы не приняли [Concept('decision', 'решение')|E] «[GetDecision('decision_establish_lyneria_sea_trade').GetName]»"
+ hasnt_taken_overland_trade: "Вы не приняли [Concept('decision', 'решение')|E] «[GetDecision('decision_establish_lyneria_overland_trade').GetName]»"
+
+ decision_establish_lyneria_overland_trade: "Наладить прибрежную торговлю с Линерией"
+ decision_establish_lyneria_overland_trade_desc: "[GetGeographicalRegion('custom_lyneria_pass').GetName] уже давно является связующим звеном между Линерией и Ганом. Через горы в города на побережье поступали мумакил, пряности и древесина, а взамен Ган щедро снабжался драгоценностями, инструментами и оружием.\n"
+ decision_establish_lyneria_overland_trade_desc.wilderness: "Теперь эта река пересохла, и лишь немногие торговые караваны пересекают опасные тропы в Линерию. Единственными стражами перевала являются безмолвные вершины, а риски, связанные с путешествием, делают торговлю невыгодной. И всё же, возможно, если я буду достаточно [Select_CString(ROOT.Char.IsFemale, 'храбра', 'храбр' )], чтобы обезопасить перевалы, торговля снова потечет в Ган и обогатит мои земли."
+ decision_establish_lyneria_overland_trade_desc.enemy: "Однако теперь перевалы контролируют другие правители и взимают высокие пошлины за безопасность наших торговцев. Если бы я [Select_CString(ROOT.Char.IsFemale, 'сама захватила', 'сам захватил' )] этот путь, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы контролировать торговые потоки и направлять их в свои собственные земли."
+ decision_establish_lyneria_overland_trade_confirm: "Да потекут реки торговли!"
+ decision_establish_lyneria_overland_trade_tooltip: "Начать торговать с Линерией через горные перевалы"
+ decision_establish_lyneria_overland_trade_tt: "Сухопутная торговля налажена"
+ control_all_of_lyneria_pass: "#V Вы#! или один из ваших [Concept('allies', 'союзников')|E] полностью контролируете все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_lyneria_pass').GetName]"
+
+ decision_establish_lyneria_sea_trade: "Наладить морскую торговлю с Линерией"
+ decision_establish_lyneria_sea_trade_desc: "[GetGeographicalRegion('custom_lyneria_pass').GetName] уже давно является связующим звеном между Линерией и Ганом."
+ decision_establish_lyneria_sea_trade_desc.wilderness: "$decision_establish_lyneria_sea_trade_desc$ Однако сейчас он в запустении, а риски, связанные с путешествием, делают торговлю невыгодной. $decision_establish_lyneria_sea_trade_desc.conculsion$"
+ decision_establish_lyneria_sea_trade_desc.enemy: "$decision_establish_lyneria_sea_trade_desc$ Однако ныне эту дорогу контролируют иные правители и взимают высокие пошлины за безопасность наших купцов. $decision_establish_lyneria_sea_trade_desc.conculsion$"
+ decision_establish_lyneria_sea_trade_desc.conculsion: "Поэтому, возможно, было бы лучше рассмотреть альтернативные торговые маршруты.\n\nАканали обычно не любят море, но линерийцы показали, что, если его укротить, оно может принести огромное богатство. Возможно, нам тоже стоит повернуться спиной к горам и вместо этого взглянуть в сторону моря в поисках пути в Линерию."
+ decision_establish_lyneria_sea_trade_desc.singapura: "Между моими землями и богатыми городами Линерии раскинулись древние джунгли #ONCLICK:GEOGRAPHICAL_REGION,custom_lyneria_coastline #TOOLTIP:GEOGRAPHICAL_REGION,custom_lyneria_coastline Ахавского побережья#!#!#!, которые местные [GetFaithByKey('faith_degi').GetAdherentNamePlural|l] называют «Деги». Густые, враждебные и почти непроходимые, они блокируют торговлю вдоль береговой линии с тех пор, как мы себя помним, вместо этого направляя её через линерийские и сенганские корабли.\nАканали обычно не любят море, но линерийцы показали, что, если его укротить, оно может принести огромное богатство. Возможно, нам тоже следует прекратить бездействовать и вместо этого взглянуть в сторону моря в поисках пути в Линерию."
+ decision_establish_lyneria_sea_trade_desc.singapura_enemy: "Между моими землями и богатыми городами Линерии раскинулись древние джунгли #ONCLICK:GEOGRAPHICAL_REGION,custom_lyneria_coastline #TOOLTIP:GEOGRAPHICAL_REGION,custom_lyneria_coastline Ахавского побережья#!#!#!, которые местные [GetFaithByKey('faith_degi').GetAdherentNamePlural|l] называют «Деги». Густые, враждебные и почти непроходимые, они блокируют торговлю вдоль береговой линии с тех пор, как мы себя помним, вместо этого направляя её через линерийские и сенганские корабли.\nОднако недавно другие смельчаки проложили дорогу через джунгли, и теперь наши торговцы сталкиваются с высокими пошлинами, куда бы они ни направлялись. Аканали обычно не любят море, но линерийцы показали, что, если его укротить, оно может принести огромное богатство. Возможно, нам тоже следует прекратить бездействовать и вместо этого взглянуть в сторону моря в поисках пути в Линерию."
+ decision_establish_lyneria_sea_trade_desc.degi: "По другую сторону прибрежной дороги, ведущей в Линерию, находится #V Деги#!, наше божество, испытывающее нас, густой, враждебный и непроницаемый для тех, кто не знает его секретов. В течение многих лет бесчисленные торговцы избегали его глубоких джунглей, путешествуя вместо этого по морю на линерийских и сенганских кораблях.\n\nМой народ мало что выиграл от этого соглашения, но прокладывать дорогу через Деги для ведения обширной торговли - глупо. Вообще-то мы не любим море, но линерийцы доказали, что, если с ним столкнуться, это может принести много пользы. Возможно, нам тоже стоит выйти из леса и вместо этого посмотреть в сторону моря в поисках пути в Линерию."
+ decision_establish_lyneria_sea_trade_confirm: "Да потекут реки торговли!"
+ decision_establish_lyneria_sea_trade_tooltip: "Начать торговать с Линерией по морю"
+ decision_establish_lyneria_sea_trade_tt: "Морская торговля налажена"
+ decision_establish_lyneria_sea_trade_confed: "Вы заключили союз с членом конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]»"
+ capital_county_is_coastal: "Ваша [Concept('capital', 'столица')|E] находится в прибрежном [Concept('county', 'графстве')|E]"
+
+ decision_establish_lyneria_coastal_trade: "Наладить сухопутную торговлю с Линерией"
+ decision_establish_lyneria_coastal_trade_desc.wilderness: "Между моими землями и богатыми городами Линерии раскинулись древние джунгли #ONCLICK:GEOGRAPHICAL_REGION,custom_lyneria_coastline #TOOLTIP:GEOGRAPHICAL_REGION,custom_lyneria_coastline Ахавского побережья#!#!#!, которые местные [GetFaithByKey('faith_degi').GetAdherentNamePlural|l] называют «Деги». Густые, враждебные и почти непроходимые, они блокируют торговлю вдоль береговой линии с тех пор, как мы себя помним.\n\nИ всё же, возможно, если бы удалось их усмирить и проложить дорогу, я [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] бы направлять большую часть торговли Линерии на юг через мои собственные земли."
+ decision_establish_lyneria_coastal_trade_desc.degi: "По другую сторону прибрежной дороги, ведущей в Линерию, находится #V Деги#!, наше божество, испытывающее нас, густой, враждебный и непроницаемый для тех, кто не знает его секретов. В течение многих лет бесчисленные торговцы избегали его глубоких джунглей, путешествуя вместо этого по морю.\n\nИ всё же, возможно, если я и мой народ окажемся достаточно достойными, мы сможем проложить безопасный путь, преодолев все опасности, и направить торговлю с Линерией на юг в наши земли."
+ decision_establish_lyneria_coastal_trade_desc.degi_enemy: "По другую сторону прибрежной дороги, ведущей в Линерию, находится #V Деги#!, наше божество, испытывающее нас, густой, враждебный и непроницаемый для тех, кто не знает его секретов. В течение многих лет бесчисленные торговцы избегали его глубоких джунглей, путешествуя вместо этого по морю.\n\nОднако другие бросили вызов его опасностям и проложили дорогу вдоль побережья, не выказывая должного уважения. Я и мой народ должны вернуть джунгли, чтобы завоевать его уважение и пожинать плоды этой торговли."
+ decision_establish_lyneria_coastal_trade_desc.enemy: "Между моими землями и богатыми городами Линерии раскинулись древние джунгли #ONCLICK:GEOGRAPHICAL_REGION,custom_lyneria_coastline #TOOLTIP:GEOGRAPHICAL_REGION,custom_lyneria_coastline Ахавского побережья#!#!#!, которые местные [GetFaithByKey('faith_degi').GetAdherentNamePlural|l] называют «Деги». Густые, враждебные и почти непроходимые, они блокируют торговлю вдоль береговой линии с тех пор, как мы себя помним.\n\nОднако дорогу проложили другие, и торговля идёт вдоль побережья, что дорого обходится моим купцам. Однако, если бы я [Select_CString(ROOT.Char.IsFemale, 'захватила', 'захватил' )] этот путь, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы оказаться в выигрыше."
+ decision_establish_lyneria_coastal_trade_confirm: "Да потекут реки торговли!"
+ decision_establish_lyneria_coastal_trade_tooltip: "Начать торговать с Линерией через прибрежную дорогу"
+ decision_establish_lyneria_coastal_trade_tt: "Прибрежная торговля налажена"
+ decision_establish_lyneria_coastal_trade_confed: "Вы заключили союз с членом линерийской [Concept('confederation', 'конфедерации')|E]"
+ control_all_of_lyneria_coastline: "#V Вы#! или один из ваших [Concept('allies', 'союзников')|E] полностью контролируете все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_lyneria_coastline').GetName]"
+ settle_all_of_lyneria_coastline: "Все [Concept('county', 'графства')|E] в регионе [GetGeographicalRegion('custom_lyneria_coastline').GetName] должны быть полностью колонизированы"
+
+ decision_hire_vulmaw_mercenaries: "Нанять вулмавских наёмников"
+ decision_hire_vulmaw_mercenaries_desc: "К юго-востоку от #ONCLICK:TITLE,e_shayn #TOOLTIP:LANDED_TITLE,e_shayn #L Шайна#!#!#! лежат бесчисленные островки Южного архипелага, где обитают вулмавы. Они часто заходят далеко на своих быстроходных судах, посещая наши порты как купцы и совершая пиратские набеги на наши корабли. За хорошую цену можно убедить многих из этих отважных людей сражаться за нас, а не против нас..."
+ decision_hire_vulmaw_mercenaries_tooltip: "Нанять полк уавских пиратов"
+ decision_hire_vulmaw_mercenaries_confirm: "Очень хорошо. Отправить им весточку."
+ decision_hire_vulmaw_mercenaries_tt: "Вулмавские наёмники наняты"
+ decision_hire_vulmaw_mercenaries_effect_tt: "Вы наймёте армию - [GetMaA('waw_pirates').GetName] #italic (Размер - #V 2#!)#!"
+ vulmaw_mercenaries: "Вулмавские наёмники"
+
+ decision_join_lynerian_league: "Присоединиться к конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName]»"
+ decision_join_lynerian_league_desc: "Вдоль северного побережья Шайна расположены города Линерии, которые исторически объединялись, чтобы использовать свою коллективную власть в вопросах дипломатии и торговли. Хотя моя держава непоколебимо независима, возможно, есть какие-то преимущества в том, чтобы связать нашу судьбу с Лигой?"
+ decision_join_lynerian_league_tooltip: "Присоединиться к конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]»"
+ decision_join_lynerian_league_confirm: "Вперёд, к процветанию."
+ half_lynerian_league_opinion: "Не менее #V 50%#! членов конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]» имеют больше #P +50#! [Concept('opinion', 'мнения')|E] о вас."
+ decision_join_lynerian_league_toast: "Вы присоединитесь к лиге"
+ decision_join_lynerian_league_tt: "Вы присоединились к [Concept('confederation', 'конфедерации')|E] «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName]»"
+
+ decision_found_protected_harbour: "Основать защищённую гавань"
+ decision_found_protected_harbour_desc: "Разрушения моря, как природные, так и морские, представляют постоянную опасность для наших прибрежных городов. Если бы мы создали защищённые гавани в стратегически важных местах, то можно было бы предотвратить значительный ущерб нашему флоту от пиратских набегов или штормов."
+ decision_found_protected_harbour_confirm: "Заложить фундамент!"
+ decision_found_protected_harbour_tooltip: "Построить [Concept('great_building', 'грандиозную постройку')|E] для защиты ваших портов"
+ protected_harbour_barony_requirements_tt: "В одном из ваших [Concept('counties', 'графств')|E] должно быть [Concept('barony', 'баронство')|E], которое находится на побережье, имеет [Concept('city_holding', 'городское владение')|E] и ещё не имеет ячейки [Concept('great_building', 'грандиозной постройки')|E]"
+ decision_found_protected_harbour_toast: "Защищённая гавань построена"
 
  ###################################
  ### Skorgrim Dourhand Decisions ###
@@ -4137,7 +4440,7 @@
  decision_skorgrim_dourhand_alliance_khathzaibriz1: "PLACEHOLDER"
  decision_skorgrim_dourhand_alliance_khathzaibriz2: "PLACEHOLDER"
 
- decision_skorgrim_dourhand_alliance_dourhand: "Заключить союз с домом Суровая Рука"
+ decision_skorgrim_dourhand_alliance_dourhand: "Заключить союз с домом Крепкохват"
  decision_skorgrim_dourhand_alliance_dourhand_tooltip: "PLACEHOLDER"
  decision_skorgrim_dourhand_alliance_dourhand_desc: "PLACEHOLDER"
  decision_skorgrim_dourhand_alliance_dourhand_confirm: "Мы родня, неужели он отвергнет моё предложение?"
@@ -4150,3 +4453,32 @@
  decision_skorgrim_dourhand_alliance_kharol_confirm: "PLACEHOLDER"
  decision_skorgrim_dourhand_alliance_kharol_effects1: "PLACEHOLDER"
  decision_skorgrim_dourhand_alliance_kharol_effects2: "PLACEHOLDER"
+
+ #########################
+ ### Zantaka Decisions ###
+ #########################
+ decision_zantaka_marriage_offer: "Предложить заключить брак"
+ decision_zantaka_marriage_offer_tooltip: "Вы обратитесь к правителям #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькина#!#!#!, стремясь укрепить свои связи с помощью брака, и попытаетесь захватить город."
+ decision_zantaka_marriage_offer_desc: "Моя власть над #ONCLICK:TITLE,c_pelorna #TOOLTIP:LANDED_TITLE,c_pelorna #L Пелейорной#!#!#! укрепилась, и я снова начинаю расширять свой кругозор. К югу от меня находится великий город [GetTitleByKey('c_emelcyn').GetNameNoTier], который является заманчивым союзником. Действительно, [GetScriptedCharacterByHistoryID('lineofpharala69').GetFirstName], слабый и легко управляемый мужчина, кажется идеальным кандидатом в мужья.\n\nХотя я сомневаюсь, что [GetScriptedCharacterByHistoryID('lineofpharala69').GetFirstName] будет сильно возражать против женитьбы на мне, городской совет #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькина#!#!#!, скорее всего, отнесется к этому с гораздо меньшим энтузиазмом."
+ decision_zantaka_marriage_offer_confirm: "Они не будут долго сопротивляться мне..."
+ decision_zantaka_marriage_offer_effect_tt: "Вы отправитесь в [GetTitleByKey('c_emelcyn').GetNameNoTier], где попытаетесь обговорить условия своего брака."
+
+ decision_zantaka_coup_emelkyn: "Захватить власть в Эмелькине"
+ decision_zantaka_coup_emelkyn_tooltip: "Использовать своего марионеточного правителя в #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькине#!#!#!, чтобы захватить власть над городом и стать сильнейшей правительницей в #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!."
+ decision_zantaka_coup_emelkyn_desc: "[GetTitleByKey('c_emelcyn').GetNameNoTier], один из трёх великих городов, которые долгое время доминировали над #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерией#!#!#!, наконец-то, в пределах моей досягаемости. Благодаря моей марионетке и агенту #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofpharala69').GetID] #L Фрахимраве#!#! и его свободному доступу к высшим сферам власти в городе, я смогла свободно планировать и готовить свой приход к власти в #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькине#!#!#!.\n\nОднако, прежде чем я смогу сделать какой-либо шаг, мне нужно будет убедиться, что моя марионетка находится во главе совета #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькина#!#!#!. Без такой легитимности моё возвышение снова будет расценено как узурпация, не только среди совета, но и во всей #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!.\n\nНа этот раз мне нужно будет изощряться в планировании своего возвышения, если я хочу избежать столкновения с коалицией. Однако такие осторожные маневры потребуют абсолютной лояльности от моей марионетки. Но этого достаточно легко добиться..."
+ decision_zantaka_coup_emelkyn_confirm: "И внова я возвышаюсь над остальными."
+ decision_zantaka_coup_emelkyn_effect_tt: "Вы захватите власть в #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькине#!#!#!, низведя своего мужа-марионетку до положения простого вассала на окраинах."
+ zantaka_ruler_must_be_spouse: "[GetTitleByKey('c_emelcyn').GetNameNoTier] находится под властью вашего [Concept('spouse', 'супруга')|E]"
+ zantaka_ruler_must_be_lover: "Ваш [Concept('spouse', 'супруг')|E] правит #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькином#!#!#! и является вашим [Concept('lover', 'любовником')|E]"
+ zantaka_ruler_must_be_hooked: "Ваш [Concept('spouse', 'супруг')|E] правит #ONCLICK:TITLE,c_emelcyn #TOOLTIP:LANDED_TITLE,c_emelcyn #L Эмелькином#!#!#! и находится вашим [Concept('strong_hook', 'влиянием')|E]"
+
+ decision_subdue_murnak: "Подчинить Мураакан"
+ decision_subdue_murnak_tooltip: "Подчинить город-государство [GetTitleByKey('c_murnak').GetNameNoTier], разделяюшее вашу державу на две части."
+ decision_subdue_murnak_desc: "[GetTitleByKey('c_emelcyn').GetNameNoTier], и, разумеется, [GetTitleByKey('d_sylara').GetNameNoTier] принадлежат мне. И всё же, маленький городишко [GetTitleByKey('c_murnak').GetNameNoTier] осмеливается отвергать мою власть как законной хозяйки всей восточной #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!, решительно заявляя о своей независимости от моей недавно основанной державы. Такое сопротивление со стороны города, который осмеливается разделять мои земли надвое, само собой, неприемлемо.\n\nИ всё же я должна быть осторожен. Линерийская лига призвана защищать своих членов от потенциальных гегемонов, и, хотя на практике она стала инструментом великих городов для подавления меньших, она наверняка воспрепятствует моему возвышению, если представится такая возможность. Даже сейчас я не могу надеяться победить всю #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерию#!#!#! в одиночку. Поэтому мне придётся скрывать свои действия до тех пор, пока не станет слишком поздно для вмешательства."
+ decision_subdue_murnak_confirm: "Я сочиняла гораздо менее правдоподобную ложь..."
+ decision_subdue_murnak_effect_tt: "Вы сами решите, как подчинить [GetTitleByKey('c_murnak').GetNameNoTier].\n#N Имейте в виду, что Лига не примет никакой дальнейшей экспансии без боя. Если вам не удастся подчинить [GetTitleByKey('c_murnak').GetNameNoTier], это повлечёт за собой последствия.#!"
+
+ decision_zantaka_end_trade_monopoly: "Покончить с олигархическими монополиями"
+ decision_zantaka_end_trade_monopoly_tooltip: "Положить конец монополиям, которые долгое время позволяли олигархам вашей державы процветать за счёт менее удачливых."
+ decision_zantaka_end_trade_monopoly_desc: "Многие из знатных родов #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#! получают своё богатство от обширных и могущественных монополий, их абсолютный контроль над некоторой частью городского рынка делает их действительно очень богатыми. Эта система, возможно, намеренно, приводит к тому, что те, кто родился в низших классах, остаются совершенно без возможностей, в лучшем случае надеясь подняться по служебной лестнице в услужении у какого-нибудь олигарха, чтобы получить часть богатства своего хозяина.\n\nСистема монополий глубоко укоренилась в линерийском обществе, но кто я [Select_CString(ROOT.Char.IsFemale, 'такая', 'такой' )], если не [Select_CString(ROOT.Char.IsFemale, 'разрушительница', 'разрушитель' )] этой системы? Пришло время, наконец, положить конец этой несправедливости, предоставив новые возможности всем моим подданным."
+ decision_zantaka_end_trade_monopoly_confirm: "Закрепить это в законах."
