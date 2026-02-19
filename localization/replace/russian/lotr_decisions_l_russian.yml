@@ -2580,6 +2580,19 @@
  decision_kultamieli_raid_taurau_positive: "#P Возможно, вашим налётчикам удастся одолеть Рикульфо в бою.#!"
  decision_kultamieli_raid_taurau_negative: "#N Если же они потерпят неудачу, это будет стоить вам немало ресурсов.#!"
 
+ ##############################
+ #### Dol Amroth Decisions ####
+ ##############################
+ decision_amrothian_reserves: "Собрать амротские резервы"
+ decision_amrothian_reserves_desc: "На протяжении многих лет амротские солдаты, занимавшие самые скромные посты в ордене Лебедя, во многих отношениях были той группой, которая лучше всего сохраняла истинный дух первоначального ордена. Однако, несмотря на это, их ряды, к сожалению, поредели, их роль рассматривается как лишённая чести и величия и, следовательно, игнорируется.\n\nНам нужно попытаться восстановить этот костяк наших войск до надлежащей боевой мощи."
+ decision_amrothian_reserves_tooltip: "Пополнить ряды костяка ваших войск"
+ decision_amrothian_reserves_confirm: "Воины, [ROOT.Char.GetTitleAsNameNoTooltip] нуждается в вас!"
+
+ decision_dol_amroth_edhellond: "Основать следопытов Нимродель"
+ decision_dol_amroth_edhellond_desc: "Эделлонд, некогда бывший родиной одноименного [Concept('elven', 'эльфийского')|E] владения, является одной из самых благородных и богатых провинций Дор-эн-Эрниля. Они стремятся подражать эльфийской тактике ведения боя, в отличие от остальных [Concept('dol_amroth', 'дол-амротцев')|E], которые придерживаются твёрдых боевых традиций, унаследованных со времён [Concept('numenor', 'Нуменора')|E]. Их ряды в Ордене опустели, клятвы были позабыты, поскольку внутри организации царила гниль. Мы должны заново принести наши древние клятвы.\n\nЕсли бы они могли быть реинтегрированы в войска, они могли бы стать мощным и инновационным контингентом, которых не устыдится [Select_CString(ROOT.Char.IsFemale, 'любая', 'любой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l]."
+ decision_dol_amroth_edhellond_tooltip: "Реформировать полки Эделлонда"
+ decision_dol_amroth_edhellond_confirm: "Послать самого быстрого всадника, чтобы собрать воинов!"
+ decision_dol_amroth_edhellond_tt: "Доступны [men_at_arms|El] - [GetMaA('rangers_of_ithilien').GetName]"
 
  #############################
  #### Rhovanion Decisions ####
@@ -3763,8 +3776,8 @@
  search_rhun_khand_tooltip: "Кханд"
  treasure_hunting_contract_decision_option_search_rhun_seaofrhun: "Море Рун"
  search_rhun_seaofrhun_tooltip: "Море Рун"
- treasure_hunting_contract_decision_option_search_rhun_dorwinion: "Дорвинион"
- search_rhun_dorwinion_tooltip: "Дорвинион"
+ treasure_hunting_contract_decision_option_search_rhovanion_dorwinion: "Дорвинион"
+ search_rhovanion_dorwinion_tooltip: "Дорвинион"
  treasure_hunting_contract_decision_option_search_nearharad_harondor: "Харондор"
  search_nearharad_harondor_tooltip: "Харондор"
  treasure_hunting_contract_decision_option_search_nearharad_haradwaith: "Ближний Харадвайт"
@@ -4333,6 +4346,23 @@
  decision_drenim_goblin_offering_tooltip: "Защитить себя от [Concept('orcish', 'орочьей')|E] угрозы"
  decision_drenim_goblin_offering_confirm: "Я немедленно отправлюсь в путь."
  decision_drenim_goblin_offering_tt: "Вы отправитесь к подножию гор"
+
+ decision_mumakani_revolt: "Поднять восстание"
+ decision_mumakani_revolt_desc: "Слабые всегда были добычей сильных. И разве я не самый [Select_CString(ROOT.Char.IsFemale, 'сильная', 'сильный' )] из вождей #ONCLICK:TITLE,e_mumakan #TOOLTIP:LANDED_TITLE,e_mumakan #L Мумакана#!#!#!? Никто не может отрицать, что именно я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] занять трон Амава и править всеми племенами под небом.\n\nКогда придёт время, я призову своих последователей к восстанию, чтобы забрать то, что принадлежит мне по праву!"
+ decision_mumakani_revolt_tooltip: "Претендовать на трон верховного вождя"
+ decision_mumakani_revolt_confirm: "Война!"
+ mumakan_challenge_cb: "Мумаканилское восстание"
+ decision_mumakani_revolt_tt: "У вас имеет претензия на титул «[GetTitleByKey('e_mumakan').GetName]»"
+
+ decision_nafarati_kingdom: "Создать нафаратскую державу"
+ decision_nafarati_kingdom_desc: "Мы - нафаратцы, храбрые и непреклонные. Мы берём то, что принадлежит нам по праву завоевания, с мечами и копьями в руках. Эти земли будут нашими отныне и до скончания веков!"
+ decision_nafarati_kingdom_tooltip: "Укрепить нафаратское королевство в Мумакане"
+ decision_nafarati_kingdom_confirm: "Клянусь могуществом Джи-Индура!"
+ decision_nafarati_kingdom_tt_2: "#N Это решение будет иметь разные эффекты, если нафаратцы независимы или являются вассалами#!"
+
+ #####################
+ ## Shayn Decisions ##
+ #####################
 
  decision_onto_the_boundless_horizon: "К бескрайнему горизонту"
  decision_onto_the_boundless_horizon_desc: "Моё время пришло. Я чувствую это по песку у себя под ногами и по крикам морских птиц в небе над головой. Со времён дочерей Амбы среди матриархов Амбасона существовал устойчивый обычай освобождать место для своих преемниц, когда сила её руки ослабевала.\n\nЯ отправлюсь на самую восточную оконечность нашего острова, где берег плавно спускается к великому океану, и соберу все свои оставшиеся силы в последний раз. Пусть волны унесут меня далеко, прежде чем бескрайний горизонт обнимет меня."
