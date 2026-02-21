@@ -204,7 +204,7 @@
 
  decision_delve_ardinak: "Очистить Ардинак"
  decision_delve_ardinak_tooltip: "Очистить проклятый остров Ардинак."
- decision_delve_ardinak_desc: "Давным-давно [Concept('ardinak', 'Ардинак')|E] был домом [Concept('avari', 'авари')|E]. Там поселилось великое зло, слуга [Concept('morgothcharacter', 'Моргота')|E], который убил Тайналанна, короля [Concept('kinnlai', 'кинн-лай')|E]. Хотя Тайналанн убил чудовище, оно, в свою очередь, прокляло остров.\n\nМы должны развеять проклятие, если хотим когда-нибудь вернуть потерянный [Concept('dilsulinol', 'Дилсулинол')|E]."
+ decision_delve_ardinak_desc: "Давным-давно [Concept('ardinak', 'Ардинак')|E] был домом [Concept('avari', 'авари')|E], и назывался Дилсулинолом. Там поселилось великое зло, слуга [Concept('morgothcharacter', 'Моргота')|E], который убил Тайналанна, короля [Concept('kinnlai', 'кинн-лай')|E]. Хотя Тайналанн убил чудовище, оно, в свою очередь, прокляло остров.\n\nМы должны развеять проклятие, если хотим когда-нибудь вернуть потерянный остров."
  decision_delve_ardinak_confirm: "Приступим."
  decision_delve_ardinak.tt: "Исследовать проклятый остров Ардинак и сразиться с нависшей там тьмой."
 
@@ -1258,6 +1258,12 @@
  decision_settle_tol_uialgaer_tooltip: "Колонизировать далёкий [GetTitleByKey('c_tol_uialgaer').GetNameNoTier]."
  decision_settle_tol_uialgaer_confirm: "Отправить корабль с нашими лучшими рабочими!"
 
+ decision_arminalethor: "Построить Арминалетор"
+ decision_arminalethor_desc: "На этих берегах начнётся восстановление Анадунэ. Каждой великой нации нужна столь же великая столица, поэтому мы должны построить город, способный соперничать с древним Арминалетом. Арминалетор будет назван так, потому что он сын и наследник Арминалета, созданный по его подобию и в память о нём."
+ decision_arminalethor_tooltip: "Построить величественную столицу по подобию Арменелоса"
+ decision_arminalethor_confirm: "Восстань, сын Арминалета!"
+ decision_arminalethor_tt: "Арминалетор построен"
+
  ###############################
  ####### Rohan Decisions #######
  ###############################
@@ -1908,6 +1914,12 @@
  decision_destroy_zajantak_tooltip: "Бросить все силы на борьбу с людьми Леса и уничтожить их новое королевство"
  decision_destroy_zajantak_desc: "Мы были слишком великодушны к простым жителям леса. Мы позволили им жить самим по себе, в своих мелких государствах и враждующих племенах, а теперь они говорят о короле Леса и сопротивлении. И мы видим, как оно распространяется среди наших собственных слуг, но я не позволю этому продолжаться.\n\nСлишком долго мы стояли на этих западных берегах, гордые и благородные, на службе у Короля Людей. Мы - адунай, и наша сила исходит от самого Зигура. Мы - владыки мира. Мы не позволим этим выскочкам смирить нас - мы поставим их на место!"
  decision_destroy_zajantak_confirm: "Зову вас на бой, люди Запада!"
+
+ decision_seek_the_princes: "Обратиться к принцам"
+ decision_seek_the_princes_tooltip: "Обучение у своих собратьев-принцев - это первый шаг к процветанию как единое целое"
+ decision_seek_the_princes_desc: "Я встречусь со своими коллегами из [Concept('balan_lai', 'Балан-лай')|E], совершив четыре путешествия по [Concept('thanihazad', 'Тани-Хазаду')|E], и оценю их. Я узнаю об их успехах и неудачах, об их нравственности и приоритетах. Как только у меня появится более чёткое представление о том, что они из себя представляют такие как правители, я надеюсь, что у меня появится лучшее видение о том, кем я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] быть."
+ decision_seek_the_princes_confirm: "В путь."
+ decision_seek_the_princes_tt: "Вы отправитесь на встречу с каждым из принцев:\n\nПервое путешествие - Встреча со Старым принцем\n- [GetTitleByKey('c_uruloni').GetHolder.GetName]\n\nВторое путешествие - [mirenore|E]\n- [GetTitleByKey('c_karasalas').GetHolder.GetName]\n- [GetTitleByKey('c_alsarias').GetHolder.GetName]\n\nТретье путешествие - Север\n- [GetTitleByKey('c_azarideth').GetHolder.GetName]\n- [GetTitleByKey('c_inzilloni').GetHolder.GetName]\n- [GetTitleByKey('c_holzoreth').GetHolder.GetName]\n\nПоследнее путешествие - Пэл и Миспир\n- [GetTitleByKey('c_arpel').GetHolder.GetName]\n- [GetTitleByKey('c_mispir').GetHolder.GetName]"
 
  #############################
  #### Balan-Lai Decisions ####
@@ -3808,10 +3820,8 @@
  search_misty_mountains_khazad_dum_tooltip: "Кхазад-дум"
  treasure_hunting_contract_decision_option_search_misty_mountains_gundabad: "Гундабад"
  search_misty_mountains_gundabad_tooltip: "Гундабад"
- treasure_hunting_contract_decision_option_search_utter_south_upper_thani_hazad: "Северные регионы Тани-Хазада"
- search_utter_south_upper_thani_hazad_tooltip: "Северные регионы Тани-Хазада"
- treasure_hunting_contract_decision_option_search_utter_south_lower_thani_hazad: "Южные регионы Тани-Хазада"
- search_utter_south_lower_thani_hazad_tooltip: "Южные регионы Тани-Хазада"
+ treasure_hunting_contract_decision_option_search_uttersouth_thanihazad: "Тани-Хазад"
+ search_uttersouth_thanihazad_tooltip: "Тани-Хазад"
  treasure_hunting_contract_decision_option_search_eastern_yellow_mountains: "Восточные Жёлтые горы"
  search_eastern_yellow_mountains_tooltip: "Восточные Жёлтые горы"
  treasure_hunting_contract_decision_option_search_western_yellow_mountains: "Западные Жёлтые горы"
@@ -4354,11 +4364,26 @@
  mumakan_challenge_cb: "Мумаканилское восстание"
  decision_mumakani_revolt_tt: "У вас имеет претензия на титул «[GetTitleByKey('e_mumakan').GetName]»"
 
+ decision_nafarati_confederation: "Объединить нафаратцев"
+ decision_nafarati_confederation_desc: "Слишком долго нафаратцы были пассивны и разделены, управляемые более слабыми людьми. Если бы только мы объединились под руководством сильного вождя, мы могли бы подчинить весь Мумакан своей воле. Ничто не остановит нафаратские воинства!"
+ decision_nafarati_confederation_tooltip: "Основать нафаратское королевство"
+ decision_nafarati_confederation_confirm: "Клянусь силой наших клинков!"
+ own_all_culture_counties: "Вы являетесь [Concept('liege', 'сюзереном')|E] #P 80%#! всех #L [GetPlayer.GetCulture.GetCollectiveNoun|l]их#! [Concept('counties', 'графств')|E]"
+ nafarati_war_host: "Нафаратское воинство"
+ nafarati_war_host_tt: "К вам на службу поступят [GetMaA('nafarati_marauders').GetName] #italic (размер - #V 4#!)#!, [GetMaA('mahud_headhunters').GetName] #italic (размер - #V 4#!)#! и [GetMaA('mubadar_berserkers').GetName] #italic (размер #V 4#!)#!."
+
  decision_nafarati_kingdom: "Создать нафаратскую державу"
  decision_nafarati_kingdom_desc: "Мы - нафаратцы, храбрые и непреклонные. Мы берём то, что принадлежит нам по праву завоевания, с мечами и копьями в руках. Эти земли будут нашими отныне и до скончания веков!"
  decision_nafarati_kingdom_tooltip: "Укрепить нафаратское королевство в Мумакане"
- decision_nafarati_kingdom_confirm: "Клянусь могуществом Джи-Индура!"
+ decision_nafarati_kingdom_confirm: "Клянусь силой наших клинков!"
  decision_nafarati_kingdom_tt_2: "#N Это решение будет иметь разные эффекты, если нафаратцы независимы или являются вассалами#!"
+
+ decision_inkamakil_restoration: "Возродить инкамакильский дух"
+ decision_inkamakil_restoration_desc: "Мой народ долго страдал в рабстве у мумаканил, но пришло время вернуть нашу древнюю гордость! Когда-то мы были самым гордым народом Крайнего юга, но время и долгие страдания сломили наш дух.\n\nДовольно! Мы одержали победу, мы свободны и сильны!"
+ decision_inkamakil_restoration_tooltip: "Реформировать инкамакильскую культуру"
+ decision_inkamakil_restoration_confirm: "За нами будущее!"
+ own_all_inkamakil_counties: "Вы являетесь [Concept('overlord', 'владыкой')|E] всех #L [GetCultureByKey('inkamakil').GetCollectiveNoun|l]#! [Concept('counties', 'графств')|E]"
+ convert_counties_to_own_faith: "Все [Concept('county', 'графства')|E] в пределах [Concept('realm', 'державы')|E] с #P 50%#! вероятность обратятся в #L [GetPlayer.GetFaith.GetName|l]ую#! [Concept('faith', 'конфессию')|E]."
 
  #####################
  ## Shayn Decisions ##
@@ -4478,7 +4503,7 @@
  decision_subdue_murnak_confirm: "Я сочиняла гораздо менее правдоподобную ложь..."
  decision_subdue_murnak_effect_tt: "Вы сами решите, как подчинить [GetTitleByKey('c_murnak').GetNameNoTier].\n#N Имейте в виду, что Лига не примет никакой дальнейшей экспансии без боя. Если вам не удастся подчинить [GetTitleByKey('c_murnak').GetNameNoTier], это повлечёт за собой последствия.#!"
 
- decision_zantaka_end_trade_monopoly: "Покончить с олигархическими монополиями"
+ decision_zantaka_end_trade_monopoly: "Сокрушить олигархические монополии"
  decision_zantaka_end_trade_monopoly_tooltip: "Положить конец монополиям, которые долгое время позволяли олигархам вашей державы процветать за счёт менее удачливых."
  decision_zantaka_end_trade_monopoly_desc: "Многие из знатных родов #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#! получают своё богатство от обширных и могущественных монополий, их абсолютный контроль над некоторой частью городского рынка делает их действительно очень богатыми. Эта система, возможно, намеренно, приводит к тому, что те, кто родился в низших классах, остаются совершенно без возможностей, в лучшем случае надеясь подняться по служебной лестнице в услужении у какого-нибудь олигарха, чтобы получить часть богатства своего хозяина.\n\nСистема монополий глубоко укоренилась в линерийском обществе, но кто я [Select_CString(ROOT.Char.IsFemale, 'такая', 'такой' )], если не [Select_CString(ROOT.Char.IsFemale, 'разрушительница', 'разрушитель' )] этой системы? Пришло время, наконец, положить конец этой несправедливости, предоставив новые возможности всем моим подданным."
  decision_zantaka_end_trade_monopoly_confirm: "Закрепить это в законах."
@@ -4489,8 +4514,25 @@
  decision_zantaka_help_poor_confirm: "Отчаявшиеся познают надежду."
  decision_zantaka_help_poor_effect_tt: "Вы решите, на чём сосредоточить свои усилия."
 
- decision_zantaka_faith_reform: "Покончить с линерийским патриархатом"
+ decision_zantaka_faith_reform: "Упразднить линерийский патриархат"
  decision_zantaka_faith_reform_tooltip: "Покончить с историческим патриархатом, который долгое время существовал в Линерии."
  decision_zantaka_faith_reform_desc: "Мы, линерийцы, можем гордиться меритократическим и справедливым характером наших городов, но очевидно, что на практике от этого идеала давно отказались. Однако несправедливость не ограничивается богатством и властью. Великие патриархи олигархии всегда обладали большей властью, чем те немногие женщины, которые поднялись по служебной лестнице. Поколение за поколением они использовали это преимущество, чтобы укрепить своё положение в обществе.\n\nДолгое время считалось немыслимым, чтобы женщина могла открыто прийти к власти, независимо от ее навыков или заслуг. Однако эта норма, как и множество других, была нарушена. С моей точки зрения, возможно, наконец-то удастся положить конец этому бессмысленному неприятию женщин-правителей и положить конец злоупотреблениям патриархального правления."
  decision_zantaka_faith_reform_confirm: "Кто теперь может меня остановить?"
  decision_zantaka_faith_reform_effect_tt: "Вы покончите с древней патриархальной традицией вашей конфессии."
+
+ decision_zantaka_end_oligarchy: "Покончить с правлением олигархов"
+ decision_zantaka_end_oligarchy_tooltip: "Покончить с исторической олигархической системой, которая долгое время удерживала власть в #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#! в пользу меритократического правления."
+ decision_zantaka_end_oligarchy_desc: "Слишком долго #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерией#!#!#! правили не по заслугам, а по богатству: городские советы были не более чем собраниями богатой элиты, стремящейся лишь к увеличению собственного непристойного богатства, несмотря на их меритократические притязания. Те времена прошли! Для меня пришло время положить конец этой системе эксплуатации и установить истинное меритократическое правление в #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!!\n\nТам, где когда-то богатые и влиятельные могли возвыситься без малейших заслуг, я сделаю так, что только те, кто действительно заслуживает власти, смогут её удержать. Мой народ больше не будет страдать от декадентских и жирных олигархов не выше свиней! Под мудрым руководством моего нового порядка все, наконец, смогут свободно процветать."
+ decision_zantaka_end_oligarchy_confirm: "Возвышается новый порядок!"
+
+ decision_zantaka_civil_war_prep: "Сплотить лоялистов"
+ decision_zantaka_civil_war_prep_tooltip: "Начать приготовления к налаживанию контактов и заключению союза с единомышленниками по всей #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!."
+ decision_zantaka_civil_war_prep_desc: "Хотя я [Select_CString(ROOT.Char.IsFemale, 'первая', 'первый' )], кто [Select_CString(ROOT.Char.IsFemale, 'добилась', 'добился' )] реального успеха в свержении старого порядка, есть и другие, которые, как и я, хотели бы его свержения. Разбросанные по всей #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!, они долгое время были разобщены и не обладали ни уровнем организации, ни властью, необходимыми для осуществления реальных изменений в Лиге. В них заложен огромный потенциал, но их мощь уже давно растрачена впустую и не используется: великие державы не заинтересованы в них иначе, как в том, чтобы подавить их.\n\nЕсли бы я [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] собрать этих отступников, преступников, реформаторов и простолюдинов, я вполне [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы создать себе достаточно мощную базу, чтобы поставить старый порядок на колени. Всё, что мне нужно, - это золото и время, остальное обязательно найдётся..."
+ decision_zantaka_civil_war_prep_confirm: "Разослать моих агентов."
+ decision_zantaka_civil_war_prep_effect_tt: "Через 5 лет вы сможете начать войну, чтобы захватить власть над #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерией#!#!#! и покончить с Лигой."
+
+ decision_zantaka_civil_war: "Навлечь разрушения на Лигу"
+ decision_zantaka_civil_war_tooltip: "Начать великую войну, чтобы свергнуть правящий порядок #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#! и утвердить свой на его месте."
+ decision_zantaka_civil_war_desc: "По всей #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#! я [Select_CString(ROOT.Char.IsFemale, 'собрала', 'собрал' )] в тени великие силы, чья преданность моему делу не вызывает сомнений. В тайне они тренировались и организовывали свои силы, готовясь к тому дню, когда я открыто объявлю войну прогнившему порядку Лиги.\n\nМои реформы сделали мои земли богаче и значительнее, чем какие-либо другие, и привели меня к вершинам, невиданным ни для одного правителя за пределами трёх великих городов. Однако Лига остаётся сильной, и предстоящая война, несомненно, будет тяжёлой."
+ decision_zantaka_civil_war_confirm: "Наступает моё последнее испытание."
+ decision_zantaka_civil_war_effect_tt: "#P Начав войну за объединение #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#! под своей властью, вы получите армию численностью в #italic #bold 4000 человек#!#!, #N однако ваши силы будут разбросаны по всей #ONCLICK:TITLE,k_lyneria #TOOLTIP:LANDED_TITLE,k_lyneria #L Линерии#!#!#!. Война будет вестись против объединённой мощи всей Линерийской лиги. Убедитесь, что вы готовы, прежде чем решиться на этот гамбит, второго шанса не будет.#!"
