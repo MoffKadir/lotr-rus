@@ -2,63 +2,64 @@
 
  # Challenger decides on whether to accept the challenge
  orc_government_events.0002.t: "Ответ на вызов"
- orc_government_events.0002.desc: "Старый правитель мёртв, и орда собирается в рычащий круг из железа. [orc_fighting_ruler.GetTitledFirstName] выходит вперёд. [defending_ruler.GetTitledFirstName] не сводит с [Select_CString(orc_fighting_ruler.IsFemale, 'неё', 'него' )] глаз.\n\nБьют барабаны. Претенденты ждут.\n\nЗакон силы ясен: только кровь решает, кто встанет во главе."
- orc_government_events.0002.a: "Столкнуться с ними лицом к лицу. Я докажу свою силу."
+ orc_government_events.0002.desc: "Старый правитель мёртв и лежит передо мной, уже разлагаясь. Слабый, недостойный, не заслуживающий дальнейшего внимания. По праву я теперь [Select_CString(ROOT.Char.IsFemale, 'предводительница', 'вождь' )], но только после того, как одержу победу над остальными претендентами. Я поворачиваюсь, крепко сжимая оружие, и отряд нетерпеливо собирается вокруг меня. На лицах каждого из них я вижу честолюбие и жадность, но [orc_fighting_ruler.GetTitledFirstName] выходит вперёд [Select_CString(orc_fighting_ruler.IsFemale, 'первой', 'первым' )].\n\nБарабаны бьют, а ритмичное скандирование толпы действует как кнут рабовладельца, заставляя двигаться вперёд, преодолевая всякую усталость.\n\nСамый сильный, самый свирепый одержит верх; сильнейший займёт трон."
+ orc_government_events.0002.a: "Я докажу свою силу."
  orc_government_events.0002.b: "Это безумие. Я не подохну из-за гордости."
  orc_government_events.0002.c: "Есть и другие способы выиграть эту битву…"
 
- # Starting event of duel process. Go along, or say 'Fuck it, LAAMP here I come!'
+ # Starting event of duel process. Go along, or say 'Screw it, LAAMP here I come!'
  orc_government_events.0004.t: "Поединок за наследование"
- orc_government_events.0004.desc: "Труп прежнего правителя едва успел остыть, когда претенденты выступили вперёд.\n\n[defending_ruler.MakeScope.Var('challenger_count').GetValue|0] воинов бьют оружием о свои щиты, каждый из них жаждет завоевать трон кровью и костями. Толпа требует насилия.\n\nВы можете встать и сражаться — или сойти с трона и жить как [Select_CString(ROOT.Char.IsFemale, 'простая орчиха', 'простой орк' )]."
+ orc_government_events.0004.desc: "Труп прежнего правителя ещё теплый, кровь сочится из ран на песок, гнилостное зловоние наполняет круг. Запах гниения. Он лежит распростёртый и изломанный. Но это ещё не конец. Я не обращаю внимания на труп, а вместо этого смотрю вперёд, на толпу соперников, которые напирают друг на друга.\n\n[defending_ruler.MakeScope.Var('challenger_count').GetValue|0] воинов бьют оружием о свои щиты, каждый из них жаждет завладеть троном кровью и костями. По залу разносится рёв толпы, жаждущей большего.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы встать и сражаться — по крайней мере, тогда я [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] бы увидеть, как самодовольство покидает глаза этих существ, когда они умрут, — или выбрать безопасность, сойти с трона и жить как [Select_CString(ROOT.Char.IsFemale, 'меньшая орчиха', 'меньший орк' )]."
  orc_government_events.0004.a: "Пусть приходят. Я сокрушу каждого претендента."
  orc_government_events.0004.a.tt: "Вы решаете сразиться с претендентами"
- orc_government_events.0004.b: "Трон не стоит моей крови. Пусть один из них займёт его."
- orc_government_events.0004.c: "Я отрекаюсь от трона. С этого дня я - [Select_CString(ROOT.Char.IsFemale, 'авантюристка', 'авантюрист' )]."
+ orc_government_events.0004.b: "Трон того не стоит. Пусть один из них займёт его."
+ orc_government_events.0004.c: "Трон - удел праздных трусов. Я столкнусь с дикой природой лицом к лицу, как [Select_CString(ROOT.Char.IsFemale, 'настоящая орчиха', 'настоящий орк' )]."
 
  # Orc challenger reconsiders whether they're willing to fight the current ruler
  orc_government_events.0049.t: "Сомнения перед поединком"
- orc_government_events.0049.desc: "Орда жаждет крови, но [orc_fighting_ruler.GetTitledFirstName] колеблется. [defending_ruler.GetTitledFirstName] стоит наготове — [Select_CString(defending_ruler.IsFemale, 'покрытая', 'покрытый' )] шрамами, [Select_CString(defending_ruler.IsFemale, 'вооружённая', 'вооружённый' )] и [Select_CString(defending_ruler.IsFemale, 'жаждущая', 'жаждущий' )] победы.\n\nОтступление навлекло бы позор... но в том, чтобы жить, чтобы сразиться в другой раз, есть своя привлекательность."
- orc_government_events.0049.a: "Пути назад нет. Поединок состоится."
- orc_government_events.0049.b: "Эта схватка - верная гибель. Я отступлю."
+ orc_government_events.0049.desc: "Толпа разражается оглушительным восторженным визгом, когда очередной претендент падает на землю, присоединяясь к постоянно растущей куче мёртвых или умирающих. Воздух наполняется зловонием, а вокруг нетерпеливо жужжат мухи. [Select_CString(defending_ruler.IsFemale, 'Следующей', 'Следующим' )] против меня выходит [defending_ruler.GetTitledFirstName].\n\n[Select_CString(defending_ruler.IsFemale, 'Она', 'Он' )] стоит наготове; [Select_CString(defending_ruler.IsFemale, 'покрытая', 'покрытый' )] шрамами, [Select_CString(defending_ruler.IsFemale, 'вооружённая', 'вооружённый' )], и очевидно, что [Select_CString(defending_ruler.IsFemale, 'её', 'его' )] жажда крови далека от удовлетворения. Я смотрю в [Select_CString(defending_ruler.IsFemale, 'её', 'его' )] сияющие глаза, наполненные яростью и ликованием одновременно, и вижу в [Select_CString(defending_ruler.IsFemale, 'её', 'его' )] широкой ухмылке ряды тёмных, но острых клыков.\n\nОтступление навлекло бы позор... но в том, чтобы выжить, чтобы сразиться в другой день, есть своя привлекательность."
+ orc_government_events.0049.a: "Я сотру эту проклятую улыбку с твоего лица!"
+ orc_government_events.0049.b: "Будь оно проклято, я ухожу!"
 
  # Attempt to bribe the orc challenger
- orc_government_events.0050.t: "Подкуп претендентов"
- orc_government_events.0050.desc: "Орки уважают силу, но они также уважают и добычу.\n\nЕсли будут предложены достойные дары, [orc_fighting_ruler.GetTitledFirstName] может решить, что умереть за трон - невыгодная сделка."
+ orc_government_events.0050.t: "Сладкое, сладкое серебро"
+ orc_government_events.0050.desc: "[orc_fighting_ruler.GetTitledFirstName] выходит вперёд со свирепым выражением лица. [Select_CString(orc_fighting_ruler.IsFemale, 'Она', 'Он' )] чуть не пускает слюни, когда рассекает воздух своим мечом, резко делая шаг вперёд. Мои мышцы устали, но когда я дотрагиваюсь до висящего у меня на поясе мешочка, до краев набитого монетами, в моей голове проносится идея.\n\nОрки, конечно, любят кровь и уважают силу, но золото и серебро они любят почти с одинаковым рвением. Если будут предложены подходящие подношения, возможно, [orc_fighting_ruler.GetTitledFirstName] решит, что я предлагаю честную сделку."
  orc_government_events.0050.a: "Предложить богатую добычу и награду от грабежей."
- orc_government_events.0050.a.higher_stewardship_successful: "Подкуп сработал — жадность побеждает славу."
- orc_government_events.0050.a.higher_stewardship_fail: "Предложение высмеяно. Слабая монета за крепкий трон."
+ orc_government_events.0050.a.higher_stewardship_successful: "Подкуп сработал."
+ orc_government_events.0050.a.higher_stewardship_fail: "Предложение высмеяно, а взятка отвергнута."
  orc_government_events.0050.b: "Пообещать земли и титулы после поединка."
- orc_government_events.0050.b.stewardship_successful: "Претендент колеблется... и соглашается."
- orc_government_events.0050.b.stewardship_fail: "Прекрасные слова, пустые обещания."
- orc_government_events.0050.c: "Забыть об этом. Я не стану торговаться с шавкой."
+ orc_government_events.0050.b.stewardship_successful: "Претендент соглашается."
+ orc_government_events.0050.b.stewardship_fail: "Претендент высмеивает предложение."
+ orc_government_events.0050.c: "Что за нелепая мысль!"
 
  # Attempt to blackmail the orc challenger
- orc_government_events.0051.t: "Шантаж претендентов"
- orc_government_events.0051.desc: "В орде каждый воин скрывает слабость — тайны, которые могут привести к насмешкам, изгнанию или смерти.\n\nВы знаете что-то, что утаивает [orc_fighting_ruler.GetTitledFirstName]. Вопрос в том, достаточна ли остра эта тайна, чтобы лишить [Select_CString(orc_fighting_ruler.IsFemale, 'её', 'его' )] отваги."
+ orc_government_events.0051.t: "Тайное оружие"
+ orc_government_events.0051.desc: "[orc_fighting_ruler.GetTitledFirstName] выступает вперёд с энтузиазмом и самодовольной, уверенной улыбкой на лице. [Select_CString(orc_fighting_ruler.IsFemale, 'Она', 'Он' )] держится гордо, [Select_CString(orc_fighting_ruler.IsFemale, 'подгоняемая', 'подгоняемый' )] рёвом толпы. И всё же я остро осознаю, что [Select_CString(orc_fighting_ruler.IsFemale, 'она', 'он' )] хранит какую-то тайну, которая в лучшем случае навлекла бы на насмешки, а в худшем - смерть.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов' )] поспорить на многое, что [Select_CString(orc_fighting_ruler.IsFemale, 'она', 'он' )] не [Select_CString(orc_fighting_ruler.IsFemale, 'хотела', 'хотел' )] бы, чтобы эта тайна стала известна всем. Возможно, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы использовать это в своих интересах и понаблюдать, как исчезает [Select_CString(orc_fighting_ruler.IsFemale, 'её', 'его' )] надменная ухмылка."
  orc_government_events.0051.a: "Пригрозить раскрыть [Select_CString(orc_fighting_ruler.IsFemale, 'её', 'его' )] позор."
- orc_government_events.0051.a.blackmail_successful: "Страх побеждает. Претендент отступает."
+ orc_government_events.0051.a.blackmail_successful: "Претендент нервно отступает."
  orc_government_events.0051.a.blackmail_fail: "[Select_CString(orc_fighting_ruler.IsFemale, 'Она', 'Он' )] рычит и провоцирует вас заговорить."
- orc_government_events.0051.b: "Шантажировать [Select_CString(orc_fighting_ruler.IsFemale, 'её', 'его' )] — и подсластить угрозу монетами."
+ orc_government_events.0051.b: "Один лишь шантаж не сработает, но, возможно, поможет дополнительный стимул."
  orc_government_events.0051.b.blackmail_and_stewardship_successful: "Страх и жадность ломают [Select_CString(orc_fighting_ruler.IsFemale, 'её', 'его' )] волю."
- orc_government_events.0051.b.blackmail_and_stewardship_fail: "[Select_CString(orc_fighting_ruler.IsFemale, 'Она', 'Он' )] плюёт на ваше предложение. Поединок состоится."
- orc_government_events.0051.c: "Довольно происков. Пусть схлестнётся сталь."
+ orc_government_events.0051.b.blackmail_and_stewardship_fail: "[Select_CString(orc_fighting_ruler.IsFemale, 'Она', 'Он' )] плюёт на ваше предложение."
+ orc_government_events.0051.c: "Мне не нужны грязные уловки, я сокрушу их."
 
  # An upstart orc jumps the line, and now challenges the main challenger so they can get to you quicker. You look on (intervene/let it play out)
- orc_government_events.0052.t: "Кровь внутри круга"
- orc_government_events.0052.desc: "Орда рычит, когда [Select_CString(upstart_orc.IsFemale, 'молодая, безрассудная орчиха', 'молодой, безрассудный орк' )] протискивается мимо ожидающих претендентов. [upstart_orc.GetName] и [orc_fighting_ruler.GetName] скалят друг на друга клыки.\n\n«Прочь с дороги», - рычит выскочка. «Твой череп - мой. Затем настанет очередь трона».\n\nКруг сужается. Два зверя, одно место в очереди, чтобы умереть за трон."
+ orc_government_events.0052.t: "[Select_CString(upstart_orc.IsFemale, 'Порывистая', 'Порывистый' )] выскочка"
+ orc_government_events.0052.desc: "Шокированный рёв толпы оглушает, и все смотрят вверх, когда ещё [Select_CString(upstart_orc.IsFemale, 'одна орчиха', 'один орк' )], [upstart_orc.GetName], прыгает в яму, рыча, с мечом в руке. [Select_CString(upstart_orc.IsFemale, 'Она', 'Он' )] и [Select_CString(orc_fighting_ruler.IsFemale, 'застигнутая', 'застигнутый' )] врасплох и [Select_CString(orc_fighting_ruler.IsFemale, 'взбешённая', 'взбешённый' )] [orc_fighting_ruler.GetName] скалят друг на друга клыки.\n\n«Прочь с дороги, черви!», - рычит выскочка, прежде чем повернуться ко мне. «Ты [Select_CString(ROOT.Char.IsFemale, 'моя', 'мой' )], отродье червей! Я раскрою твой череп, как хрупкий желудь, и выпью твои мозги, как грог, — пусть так оно и будет! В любом случае, твой трон мой».\n\n[upstart_orc.GetName], однако, выходит вперёд и рычит. В очереди есть только одно место, и оба готовы убить за него."
  orc_government_events.0052.a: "Пусть разорвут друг друга на куски."
  orc_government_events.0052.a.success: "[upstart_orc.GetName] убивает персонажа [orc_fighting_ruler.GetName] в жестокой схватке!"
  orc_government_events.0052.a.success.tt: "[upstart_orc.GetName] сразится с вами в качестве [Select_CString(upstart_orc.IsFemale, 'следующей', 'следующего' )] #V [Select_CString(upstart_orc.IsFemale, 'претендентки', 'претендента' )]#!"
  orc_government_events.0052.a.failure: "[orc_fighting_ruler.GetName] безжалостно [Select_CString(orc_fighting_ruler.IsFemale, 'расправилась', 'расправился' )] с персонажем [upstart_orc.GetName]."
  orc_government_events.0052.a.failure.tt: "[orc_fighting_ruler.GetName] сразится с вами в качестве [Select_CString(orc_fighting_ruler.IsFemale, 'следующей', 'следующего' )] #V [Select_CString(orc_fighting_ruler.IsFemale, 'претендентки', 'претендента' )]#!"
- orc_government_events.0052.b: "Хватит ждать. Я столкнусь с ними обоими лицом к лицу!"
- orc_government_events.0052.b.tt: "Вступить в бой, заявив, что вы сразитесь с обеими орками"
+ orc_government_events.0052.b: "Я заберу вас обоих!"
+ orc_government_events.0052.b.tt: "Вы решаете сразиться с обоими сразу"
  orc_government_events.0052.b.tt.2: "Убийство обоих претендентов заставит других #bold пересмотреть#! своё решение о том, хотят ли они сражаться с вами"
 
- # No one challenged you! You're just an insane orc. Your rule is already bloody scary!
+ # You've won!
  orc_government_events.0500.t: "Правление страха"
- orc_government_events.0500.desc: "Вы выходите в круг, поднимаете оружие и бросаете вызов любому, кто осмелится занять ваш трон.\n\nНикто не двигается с места.\n\nОрда отводит глаза. Тишина звучит громче любого боевого клича."
- orc_government_events.0500.desc.unchallenged: "Вы призываете претендентов, жаждете крови и утверждения своего права на власть.\n\nВ ответ лишь молчание.\n\nВаша репутация сделала всю работу за вас."
+ orc_government_events.0500.desc: "Претендентов больше не осталось. Передо мной лежит груда дёргающихся трупов, из-под которых на песок сочится какая-то мерзкая жидкость. Мухи слетаются за моим призом, а я смотрю сверху на толпу.\n\nЯ поднимаю своё оружие, и даже стены содрогаются от их приветствий, рева и скандирования, и они топчут землю ногами. Я наклоняюсь, обагряю лицо чёрной кровью павших и делаю глубокий вдох. Я чувствую одновременно гордость, благоговение и страх... и, конечно, все эти гниющие трупы. Я чувствую, как песок подо мной содрогается от триумфа, а в моей крови горит огонь."
+ # No one challenged you! You're just an insane orc. Your rule is already bloody scary!
+ orc_government_events.0500.desc.unchallenged: "Я выхожу в круг с поднятым оружием и бросаю вызов любому, кто осмелится занять мой трон. Воздух отяжелел от пота и крови прошлых поединков и сладкого запаха грога. Я топаю и рублю, мой меч рассекает плотный воздух.\n\nНикто не двигается. Я чувствую запах их страха, ужаса и трусости. Я медленно опускаю клинок.\n\nКаждый из отряда отводит глаза, но мимолётный взгляд их бледно-жёлтых глаз доставляет мне достаточное удовлетворение. Моя репутация сделала всю работу за меня, и тишина звучит громче любого боевого клича."
  orc_government_events.0500.a: "Хорошо. Пусть помнят, кто здесь правит."
 
  orc_government_events.orc_challenger_not_persuaded: "[orc_fighting_ruler.GetName] всё ещё хочет сразиться"
