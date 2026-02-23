@@ -1,0 +1,30 @@
+﻿l_english:
+#EK EDIT: replaced runestone with standing stone
+ culture_parameter_has_access_to_runestones: "[rulers|E] may raise standing stones to commemorate certain major life events, earning [prestige_i][prestige|E]"
+ 
+ raise_runestone_decision: "Raise a Standing Stone"
+ raise_runestone_decision_desc: "[ROOT.Var('ancestor_to_bury').Char.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has passed away. I will raise a standing stone to honor [ROOT.Var('ancestor_to_bury').Char.GetHerHis] life, and to bring fame to all who bear the name [ROOT.Var('ancestor_to_bury').Char.GetDynasty.GetName]. Future generations will never forget the greatness of [ROOT.Var('ancestor_to_bury').Char.GetFullNameNicknamedNoTooltip]!"
+ raise_runestone_decision_tooltip: "Raise a standing stone to honor your [ROOT.Char.Custom2('RelationToMeShort', ROOT.Var('ancestor_to_bury').Char)]"
+ raise_runestone_decision_warning: "@warning_icon! #X The standing stone will be destroyed if the [county|e] falls to someone outside of your [dynasty|E]#!"
+ raise_runestone_decision_confirm: "Raise Standing Stone"
+ raise_runestone_decision_toast: "Raised a Standing Stone"
+ raise_runestone_vassals: "Every Vassal of your [faith|E]"
+
+ raise_stele_decision_name: "Raise Standing Stone"
+ raise_stele_decision_desc: "It is customary among the [GetPlayer.GetCulture.GetCollectiveNounNoTooltip] to erect carved monuments to commemorate important events. The death of a loved one, the settling of a dispute, the acquisition of land, and so on. Perhaps I could benefit from such a rock..."
+ raise_stele_decision_tt.effects_list: "One of your [counties|E] will receive one of the following [modifiers|E]:\n#indent_newline:0 $EFFECT_LIST_BULLET$ [GetModifier('fp1_stele_ancestors_strong').GetNameWithTooltip]\n#indent_newline:0 $EFFECT_LIST_BULLET$ [GetModifier('fp1_stele_conquest_strong').GetNameWithTooltip]\n#indent_newline:0 $EFFECT_LIST_BULLET$ [GetModifier('fp1_stele_promotion_strong').GetNameWithTooltip]"
+ raise_stele_decision_tt.variable_strength: "All modifiers are stronger when erected in [cultures|E] that use standing stones"
+ raise_stele_decision_tooltip: "Pay for the carving of a standing stone in one of your counties"
+ raise_stele_decision_confirm: "But what to carve?"
+ fp1_raise_runestone_vassals: "$EFFECT_LIST_BULLET$All [direct_vassals|E] that also use standing stones"
+ 
+ fp1_stele_ancestors_strong: "Ancestral Standing Stone"
+ fp1_stele_conquest_strong: "Conquest Standing Stone"
+ fp1_stele_promotion_strong: "Clout Standing Stone"
+
+ fp1_other_decisions.0101.desc: "Every standing stone tells a message of some significant event in the life of the commissioner. From the smallest peasant to a [ROOT.Char.GetTitleAsNameNoTooltip] like myself, the stone records all.\n\nWhat shall this monument speak of?"
+ fp1_other_decisions.0101.a.tt: "The standing stone will speak of your departed family..."
+ fp1_other_decisions.0101.b.tt: "The standing stone will speak of your victories in conquest..."
+ fp1_other_decisions.0101.c.tt: "The standing stone will speak of how you came to rule..."
+
+ fp1_other_decisions.0111.desc.intro: "Now that I have decided what to put on my standing stone, the question remains: where to place it?\n\n"

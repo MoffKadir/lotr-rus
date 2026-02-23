@@ -1,5 +1,6 @@
 ﻿l_english:
  decision_group_type_ek_sb: "Special Buildings Decisions"
+ decision_group_type_ek_magic: "Magic Decisions"
  # Coping mechanisms
  stress_loss_skooma_drinker_decision:1 "Smoke or Drink Skooma"
  stress_loss_skooma_drinker_decision_desc:1 "As I light up my pipe I can already smell the refined moonsugar's odor filling up the room. I smile, as it is exactly what I need..."
@@ -210,14 +211,13 @@
 
  initiate_consolamentum_decision_age_tt:0 "Has [ek_age_modifier|E] equivalent to #N 60 years#! for average humans"
 
- join_cote_decision:0 "Join the Council of the Eight"
- join_cote_decision_desc:0 "The Divines long ago invested spiritual authority in Alessia the Paravant, and thus Cyrodiil has maintained a status as "first among equals" in spiritual matters. The Council of the Eight exists to enshrine this position in law, and at the same time grant regional chapels a seat at the table and a voice in the Arch-Primate's ear.\n\nAs the de facto worldly leader of my faith, I certainly have a say in its future, and perhaps our priesthood stands to gain more from joining the Council than our believers stand to lose from submitting to its authority."
- join_cote_decision_tt:0 "Tie your faith to the Temple in Cyrodiil"
- join_cote_decision_confirm:0 "Unity - for the Divines!"
- gain_doctrine_spiritual_head:0 "Your [faith|E] gains the [GetFaithDoctrine('doctrine_spiritual_head').GetBaseName] [head_of_faith|E] Doctrine"
- join_cote_decision_faith_hostility:0 "Your [faith|E] gets #P -5#! [faith_hostility|E] with faiths with the Council of the Eight as [head_of_faith|E]"
- faith_not_considered_evil:0 "Your [faith|E] is not considered [faith_evil|E] by the Arch-Primate"
- incompatible_with_militant_faith: "#R Cannot be completed after#! $nords_militant_faith_decision$ [decision|E]."
+ form_cote_decision: "Unite Cyrodilic Cults"
+ form_cote_decision_desc: "The imperial cults have long been decentralized, the worship of the Divines being the only uniting factor. To maintain the unity of the faith and the Empire, a new spiritual figure is needed."
+ form_cote_decision_tt: "Unite Cyrodilic Cults"
+ form_cote_decision_confirm: "Unity - for the Divines!"
+ form_cote_gain_spiritual_head: "Every [faith|E] with [GetFaithDoctrine('special_doctrine_cyrodiilic_cult').GetBaseName] [doctrine|E] gains the [GetFaithDoctrine('doctrine_spiritual_head').GetBaseName] [head_of_faith|E] and [GetFaithDoctrine('doctrine_clerical_succession_spiritual_fixed_appointment').GetBaseName] Doctrines"
+ form_cote_religious_head: "[GetTitleByKey('k_council_of_the_eight').GetName] becomes your [head_of_faith|E]"
+ control_cyro_cult_counties: "You control at least #V 75%#! of [counties|E] of [faiths|E] with [GetFaithDoctrine('special_doctrine_cyrodiilic_cult').GetBaseName] [doctrine|E] in [GetGeographicalRegion('mundus_tamriel_cyrodiil').GetName] (Current: [SCOPE.ScriptValue('cyro_cult_counties_percent_value')|0]%)"
 
  consult_xarxeans_decision:0 "Consult the Xarxeans"
  consult_xarxeans_decision_desc:0 "Succession within a ceremoniarchal framework can be a complicated thing, taking into consideration factors as varied as true descent, purity of conduct, alignment with sacred numbers and so much more... unforeseen inheritance has been known to happen once or twice.\n\nBut the Priesthood of Xarxes, entrusted with the secret formulae and the task of ancestry-keeping, can always tell me who among my scions is most eligible."
@@ -228,7 +228,8 @@
  claim_d_worm_kingdom:0 "Claim the Worm Cult Leadership"
  claim_d_worm_kingdom_desc:0 "After the ascension of our Lord Mannimarco, the Worm Cult was scattered, with no central cult leadership to direct its efforts. As a powerful and greatly respected member, I can fill that vacancy."
  claim_d_worm_kingdom_tt:0 "Anchorites, hear me and obey!" 
- claim_d_worm_kingdom_effect:0 "[worm_kingdom.GetName] is restored with you as its holder"
+ claim_d_worm_kingdom_effect_1:0 "[worm_kingdom.GetName] is restored with you as its holder"
+ claim_d_worm_kingdom_effect_2:0 "The [GetTrait('p_kw_wormking').GetName(GetNullCharacter)] [patron_trait|E] is re-enabled"
  claim_d_worm_kingdom_confirm:0 "The Order is reforged!"
 
  proclaim_disease_decision:0 "Proclaim a Disease"
@@ -420,3 +421,31 @@
  reveal_lycan_secret_decision_confirm:0 "#italic Howl at the moons#!"
  reveal_lycan_secret_decision_effect:0 "Reveal yourself to the world as a [GetTrait('lycan_character').GetName(GetNullCharacter)]"
  
+#Tribute
+ tribute_mission_decision_tamriel: "$tribute_mission_decision$ to [GetTitleByKey('h_tamriel').GetNameNoTierNoTooltip]"
+ tribute_mission_decision_desc_tamriel: "The [GetTitleByKey('h_tamriel').GetHolder.GetTitleAsName] of [GetTitleByKey('h_tamriel').GetDefinitiveName] $tribute_mission_decision_hegemony_common$"
+ tribute_mission_decision_tamriel_tooltip: "$tribute_mission_decision_tooltip$"
+ tribute_mission_decision_tamriel_confirm: "$tribute_mission_decision_confirm$"
+ tribute_mission_decision_effects_tamriel_tt: "You [travel|E] to [GetTitleByKey('h_tamriel').GetHolder.GetTitledFirstNamePossessive] [court|E] to deliver your [tribute|E]"
+ tribute_mission_interaction_anticipated_rewards_tt_tamriel: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_tamriel').GetHolder.GetCulture.GetNameNoTooltip] [artifact_i][artifact|E]\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_tamriel').GetHolder.GetFaith.GetNameNoTooltip] @skill_learning_icon! Monk"
+ neighboring_hegemon_title_tamriel: "[GetTitleByKey('h_tamriel').GetHolder.GetTitleAsNameNoTooltip]"
+ neighboring_hegemon_definitive_name_tamriel: "[GetTitleByKey('h_tamriel').GetDefinitiveNameNoTooltip]"
+ 
+ tribute_mission_decision_nordic_empire: "$tribute_mission_decision$ to [GetTitleByKey('h_nordic_empire').GetNameNoTierNoTooltip]"
+ tribute_mission_decision_desc_nordic_empire: "The [GetTitleByKey('h_nordic_empire').GetHolder.GetTitleAsName] of [GetTitleByKey('h_nordic_empire').GetDefinitiveName] $tribute_mission_decision_hegemony_common$"
+ tribute_mission_decision_nordic_empire_tooltip: "$tribute_mission_decision_tooltip$"
+ tribute_mission_decision_nordic_empire_confirm: "$tribute_mission_decision_confirm$"
+ tribute_mission_decision_effects_nordic_empire_tt: "You [travel|E] to [GetTitleByKey('h_nordic_empire').GetHolder.GetTitledFirstNamePossessive] [court|E] to deliver your [tribute|E]"
+ tribute_mission_interaction_anticipated_rewards_tt_nordic_empire: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_nordic_empire').GetHolder.GetCulture.GetNameNoTooltip] [artifact_i][artifact|E]\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_nordic_empire').GetHolder.GetFaith.GetNameNoTooltip] @skill_learning_icon! Monk"
+ neighboring_hegemon_title_nordic_empire: "[GetTitleByKey('h_nordic_empire').GetHolder.GetTitleAsNameNoTooltip]"
+ neighboring_hegemon_definitive_name_nordic_empire: "[GetTitleByKey('h_nordic_empire').GetDefinitiveNameNoTooltip]"
+
+ tribute_mission_decision_redguard_republic: "$tribute_mission_decision$ to [GetTitleByKey('h_redguard_republic').GetNameNoTierNoTooltip]"
+ tribute_mission_decision_desc_redguard_republic: "The [GetTitleByKey('h_redguard_republic').GetHolder.GetTitleAsName] of [GetTitleByKey('h_redguard_republic').GetDefinitiveName] $tribute_mission_decision_hegemony_common$"
+ tribute_mission_decision_redguard_republic_tooltip: "$tribute_mission_decision_tooltip$"
+ tribute_mission_decision_redguard_republic_confirm: "$tribute_mission_decision_confirm$"
+ tribute_mission_decision_effects_redguard_republic_tt: "You [travel|E] to [GetTitleByKey('h_redguard_republic').GetHolder.GetTitledFirstNamePossessive] [court|E] to deliver your [tribute|E]"
+ tribute_mission_interaction_anticipated_rewards_tt_redguard_republic: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_redguard_republic').GetHolder.GetCulture.GetNameNoTooltip] [artifact_i][artifact|E]\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_redguard_republic').GetHolder.GetFaith.GetNameNoTooltip] @skill_learning_icon! Monk"
+ neighboring_hegemon_title_redguard_republic: "[GetTitleByKey('h_redguard_republic').GetHolder.GetTitleAsNameNoTooltip]"
+ neighboring_hegemon_definitive_name_redguard_republic: "[GetTitleByKey('h_redguard_republic').GetDefinitiveNameNoTooltip]"
+

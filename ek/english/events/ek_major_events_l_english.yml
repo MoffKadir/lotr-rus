@@ -102,11 +102,11 @@
  elsweyr.0003.b:0 "Arenthia is enough."
  elsweyr.0003.b.tt:"You will keep [GetTitleByKey('c_arenthia').GetName] as [de_jure|E] capital of [GetTitleByKey('k_arenthia').GetName]."
 
- elsweyr.0004.t:0 "Kingdom of Darloc Brae"
+ elsweyr.0004.t:0 "The Kingdom of Darloc Brae"
  elsweyr.0004.desc:0 "Many centuries ago, at the beginning of the [Glossary( 'First Era', 'FIRST_ERA_GLOSS' )], Anequina stretched from Do'Krin to Leyawiin during Darloc Brae's reign. After he died, his realm fell apart, and Northern Elsweyr reverted back to squabbling independent kingdoms.\n\nBut the memory of this glorious period did not die, and today this one has restored the Kingdom of Golden Beast. Once more, Anequina extends from Valenwood in the west to Cyrodiil in the east, and our might will not be challenged again."
  elsweyr.0004.a:0 "For Anequina!"
 
- elsweyr.0005.t:0 "Dissolution of Elsweyr"
+ elsweyr.0005.t:0 "The Dissolution of Elsweyr"
  elsweyr.0005.desc.1:0 "An unruly folk, the Khajiit were briefly united under the Elsweyr Confederacy until they rebelled, sacked the capital city of Ne-Quin-Al, and slaughtered the royal family. Only by transferring power to the charismatic Mane Rid-Thar-ri'Datta, who implemented a new system of power sharing between the Khajiit clans, did Elsweyr manage to be at peace for a short time."
  elsweyr.0005.desc.2:0 "\n\nBut after his death, the further existence of a unified Elsweyr was always in doubt. With [elsweyr_holder.GetTitledFirstName] failing to assume full control over Elsweyr, both Anequinan and Pellitinian nobility no longer respect their legal authority, reverting back to a time when [GetTitleByKey('e_anequina').GetNameNoTier] and [GetTitleByKey('e_pellitine').GetNameNoTier] were considered separate realms."
  elsweyr.0005.desc.2.anequina:0 "\n\nBut after his death, the further existence of a unified Elsweyr was always in doubt. Now this doubt has been made reality as the disparate clans of Anequina have rallied under one banner, led by [kingdom_former.GetTitledFirstName]. With a strong Anequina defiant of the Mane in Torval, the Confederacy has become a thing of the past."
@@ -114,13 +114,13 @@
  anequina_kingdoms.tt:0 "To Anequina go the following Kingdoms: #V Rimmen#!, #V Riverhold#!, #V Dune#!, and #V Orcrest#!"
  pellitine_kingdoms.tt:0 "To Pellitine go the following Kingdoms: #V Torval#!, #V Senchal#!, #V Alabaster#!, and #V Corinthe#!"
  elsweyr_dissolve.create_de_jure_empires.tt:0 "Each half of Elsweyr will now have its own [de_jure|E] [empire|E], claiming authority solely over the Kingdoms attributed to it."
- elsweyr_dissolve.become_titular.tt:0 "The [empire|E] of [GetTitleByKey('e_elsweyr').GetNameNoTier] becomes [titular_title|El]."
+ elsweyr_dissolve.become_titular.tt:0 "The [GetTitleByKey('e_elsweyr').GetName] becomes a [titular_title|E]."
  elsweyr_dissolve.reunite_elsweyr.tt:0 "Should one ruler hold both [GetTitleByKey('e_anequina').GetNameNoTier] and [GetTitleByKey('e_pellitine').GetNameNoTier], Elsweyr will be reunited."
  elsweyr.0005.a:0 "It seems that Elsweyr will never be at peace..."
  elsweyr.0005.flavor.pellitine:0 "With Pellitine breaking away from the authority of the Mane, the Confederacy cannot hope to hold together."
  elsweyr.0005.flavor.anequina:0 "With Anequina united under a strong ruler, the Confederacy cannot hope to hold together."
- elsweyr.0005.flavor.no_elsweyr:0 "This happened because the [empire|E] of [GetTitleByKey('e_elsweyr').GetNameNoTier] has not existed for 20 years."
- elsweyr.0005.flavor.weak_mane:0 "This happened because the [empire|E] of [GetTitleByKey('e_elsweyr').GetNameNoTier] failed to hold at least #V 75%#! of [GetGeographicalRegion('mundus_tamriel_elsweyr').GetName] by 2E 490."
+ elsweyr.0005.flavor.no_elsweyr:0 "This happened because the [GetTitleByKey('e_elsweyr').GetName] has not existed for 20 years."
+ elsweyr.0005.flavor.weak_mane:0 "This happened because the [GetTitleByKey('e_elsweyr').GetName] failed to control or be [suzerain|E] of at least #V 75%#! of [GetGeographicalRegion('mundus_tamriel_elsweyr').GetName] by 2E 490."
 
  elsweyr.0006.t:0 "Elsweyr Reunited"
  elsweyr.0006.desc.intro:0 "Since the death of [ridthar.GetFirstName], the existence of a unified Elsweyr has been in question, with both Anequina and Pellitine ready to go back to the way of life they had before the formation of the Confederacy.\n\n"
@@ -168,3 +168,17 @@
  ek_rimmen.0002.desc: "The wrath of the warlord [attrebus.GetFirstName], now styling himself Potentate, against the Ilniviri knows no bounds. At the conclusion of a military parade in the Imperial City, a public proclamation was made of the passing of the Tsaesci Act: forbidding any person of Akaviri descent from holding land in Cyrodiil, ordering the seizure of all property and assets, and banishing them from the realm - or else.\n\nThe mass of refugees caused by the war pales in comparison, as more and more displaced groups arrive in my lands, seeking the sanctuary granted to their kin once before. Can we support these people?"
  ek_rimmen.0002.a: "We must make room."
  ek_rimmen.0002.b: "Bearing this burden cannot be ours alone..."
+
+# Hammerfell events
+
+ ek_hammerfell.0001.t:0 "A Forebear Crown?"
+ ek_hammerfell.0001.desc:0 "By ancient tradition, both in Hammerfell and old Yokuda, our people were ruled by the [Glossary( 'Na-Totambu', 'NATOTAMBU_GLOSS' )]. My rise to the position of [ROOT.Char.GetTitleAsNameNoTooltip] however goes contrary to this, greatly upsetting to my Crown subjects.\n\nSurely I am expected to adopt their customs as my own."
+ ek_hammerfell.0001.a:0 "A small price for my Crown"
+ ek_hammerfell.0001.b:0 "I will not abandon my ways!"
+ ek_hammerfell.0001.tooltip:0 "Crown [culture|E] vassals will dislike this"
+
+ ek_hammerfell.0002.t:0 "A Crown Dictator?"
+ ek_hammerfell.0002.desc:0 "While the [Glossary( 'Ra Gada', 'RAGADA_GLOSS' )] made way, the Crowns soon followed and again resumed lordship in Hammerfell as in old Yokuda. With the formation of their Union, however, finally Forebears would rule themselves. Yet despite that I have risen to the position of [ROOT.Char.GetTitleAsNameNoTooltip].\n\nCan I hope to tame them without adopting their customs?"
+ ek_hammerfell.0002.a:0 "A frontier spirit is required"
+ ek_hammerfell.0002.b:0 "I will not abandon my ways!"
+ ek_hammerfell.0002.tooltip:0 "Forebear [culture|E] vassals will dislike this"

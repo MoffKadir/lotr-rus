@@ -1,6 +1,6 @@
 ﻿l_english:
- set_vassal_contract_modification_blocked_timer_tooltip:0 "The Vassal Contract will be locked for #Y [EmptyScope.ScriptValue('vassal_contract_lock_timer')|0]#! years"
- OPTION_FAVORS_WHO:0 "Duties with this icon @liege_icon! favor the [liege|E] over the [vassal|E].\n#weak A Liege can either trade this Duty for a Privilege, or enforce it via a [hook|E] or [tyranny|E].#!\n\nPrivileges with this icon @vassal_icon! favor the [vassal|E] over the [liege|E].\n#weak A Vassal can either trade this Privilege for a Duty or enforce it via a [hook|E].#!"
+ set_vassal_contract_modification_blocked_timer_tooltip: "The Vassal Contract will be locked for #Y [EmptyScope.ScriptValue('vassal_contract_lock_timer')|0]#! years"
+ OPTION_FAVORS_WHO: "Duties with this icon @liege_icon! favor the [liege|E] over the [vassal|E].\n#weak A Liege can either trade this Duty for a Privilege, or enforce it via a [hook|E] or [tyranny|E].#!\n\nPrivileges with this icon @vassal_icon! favor the [vassal|E] over the [liege|E].\n#weak A Vassal can either trade this Privilege for a Duty or enforce it via a [hook|E].#!"
  ### Vassal Contracts
  feudal_tax_low_postfix:0 " (up to #V 2.5%#! for a [rightful_liege|E])"
  feudal_tax_normal_postfix:0 " (up to #V 10%#! for a [rightful_liege|E])"
@@ -62,16 +62,16 @@
  action_low_prestige_level_click:0 ""
 
 ### Autocracy
- autocracy_government:0 "Autocracy"
+ autocracy_government: "Autocracy"
  autocracy_government_with_icon: "@government_type_autocracy! $autocracy_government$"
- autocracy_government_adjective:0 "Autocratic"
- autocracy_government_realm:0 "Autocratic Realm"
- autocracy_government_desc: "\n$game_concept_autocracy_desc$\n\n#F The Interregnum of Tamriel saw Autocracy become its prevailing form of government. With communications between peoples receding, and all peoples fending for themselves, autocrats became the rulers of the time. They rely on subordinates, vassals whom they can trust more or less to provide [taxes|E] and [soldiers|E] to maintain their power.#!"
+ autocracy_government_adjective: "Autocratic"
+ autocracy_government_realm: "Autocratic Realm"
+ autocracy_government_desc: "\n$game_concept_autocracy_desc$\n\n#F Autocracy is the prevailing form of government in Tamriel. Autocrats rely on appointed officials, [tax_collectors|E], to gather contributions from their vassals in the form of [taxes|E] and [soldiers|E].#!"
  autocracy_vassal: "$autocracy_government$"
  autocracy_vassal_desc: "$game_concept_autocracy_desc$"
 
- vassal_revocation_tyranny_effect_low_ca_tyranny:0 "#N You get [tyranny|E] due to your low [crown_authority|E]. Increase it past #V $crown_authority_0$#! to avoid the Tyranny gain.#!"
- revocation_tyranny_effect_low_ca_tyranny:0 "#N You get [tyranny|E] due to your low [crown_authority|E]. Increase it past #V $crown_authority_0$#! to avoid the Tyranny gain.#!"
+ vassal_revocation_tyranny_effect_low_ca_tyranny: "#N You get [tyranny|E] due to your low [crown_authority|E]. Increase it past #V $crown_authority_0$#! to avoid the Tyranny gain.#!"
+ revocation_tyranny_effect_low_ca_tyranny: "#N You get [tyranny|E] due to your low [crown_authority|E]. Increase it past #V $crown_authority_0$#! to avoid the Tyranny gain.#!"
  ### Pirates
  pirate_government:0 "Pirate"
  pirate_government_with_icon: "@government_type_pirate! $pirate_government$"
@@ -129,18 +129,6 @@
  NOT_GAME_OVER_CANNOT_PLAY_ACADEMY:0 "Cannot play [academies|E]"
  academy_vassal: "$academy_government$"
  academy_vassal_desc: "$game_concept_academy_desc$"
-# Hierocracy
- hierocracy_government:0 "Hierocracy"
- hierocracy_government_with_icon: "@government_type_hierocracy! $hierocracy_government$"
-    hierocracy_government_adjective:0 "Hierocratic"
-    hierocracy_government_realm:0 "Hierocratic Realm"
-    hierocracy_government_desc:0 "\n$game_concept_hierocracy_desc$\n\n#F This government rests on the [GetFaithDoctrine('doctrine_mystical_birthright_head').GetBaseName] of its [head_of_faith|E]. The Mane's power to regulate social relationships supports their administration, and thus supports all adherents of that faith.#!"
-    high_enough_ratio_nb_provinces_same_faith_held_provinces_same_faith:0 "You control at least #V $VALUE|0$%#! of the provinces following your [faith|E]\n#weak Current value: #V [Character.MakeScope.ScriptValue('ratio_nb_provinces_same_faith_held_provinces_same_faith')|1]%#!#!"
-    high_enough_ratio_nb_provinces_same_faith_held_provinces_same_faith_not:0 "You control at most #V $VALUE|0$%#! of the provinces following your [faith|E]\n#weak Current value: #V [Character.MakeScope.ScriptValue('ratio_nb_provinces_same_faith_held_provinces_same_faith')|1]%#!#!"
- FAITH_LAND_SHARE:0 "Faith Land Share:\n#V [Character.MakeScope.ScriptValue('ratio_nb_provinces_same_faith_held_provinces_same_faith')|1]%#!"
- FAITH_LAND_SHARE_TT:0 "The [crown_authority|E] of a Hierocracy is limited by the number of counties of their [faith|E] that they hold, compared to the number of counties of their Faith.\n\nYour [Character.GetFaith.GetAdjective] Counties: #V [Character.MakeScope.ScriptValue('nb_provinces_same_faith_held_provinces_same_faith')]#!\nTotal [Character.GetFaith.GetAdjective] Counties: #V [Character.MakeScope.ScriptValue('nb_provinces_same_faith')]#!"
- hierocracy_vassal: "$hierocracy_government$"
- hierocracy_vassal_desc: "$game_concept_hierocracy_desc$"
 # Landed Order
  landed_order_government:0 "Military Order"
  landed_order_government_with_icon: "@government_type_landed_order! $landed_order_government$"
@@ -178,7 +166,6 @@
 
  government_is_pirate:0 "[government|E] type is [GetGovernment( 'pirate_government' ).GetName]"
  government_is_academy:0 "[government|E] type is [GetGovernment( 'academy_government' ).GetName]"
- government_is_hierocracy:0 "[government|E] type is [GetGovernment( 'hierocracy_government' ).GetName]"
  government_is_autocracy:0 "[government|E] type is [GetGovernment( 'autocracy_government' ).GetName]"
  government_is_landed_order:0 "[government|E] type is [GetGovernment( 'landed_order_government' ).GetName]"
  
@@ -197,14 +184,12 @@ action_autocracy_assign_tax_payers_label: "@tax_collector_icon! Your Tax Collect
 action_autocracy_assign_tax_payers_desc: "You are not taxing your [autocracy|E] [vassals|E].\n\n#help A [tax_jurisdiction|E] with a [tax_collector|E] but no [taxpayers|E] will not yield any [gold|E] or [levy|E] contribution. Assign Autocracy Vassals as $game_concept_taxpayers$ to collect $game_concept_taxes$ from them.#!"
 action_autocracy_assign_tax_payers_click: "#I Click to view#!"
 
- hierocracy_icon_concept: "[hierocracy_i|E]"
  autocracy_icon_concept: "[autocracy_i|E]"
  pirate_icon_concept: "[pirate_i|E]"
  academy_icon_concept: "[academy_i|E]"
  landed_order_icon_concept: "[landed_order_i|E]"
 
  autocracy_tax_collector_obligations: "[tax_collector|E] Aptitude"
- hierocracy_tax_collector_obligations: "[tax_collector|E] Aptitude"
 
  autocracy_pellitine_tax_collector: "Moon Sugar"
  autocracy_pellitine_tax_collector_flavor_desc: "Khajiiti life is governed by the moons' blessings, whose light crystallises into potent sugar of great culinary and ritual import."

@@ -1,5 +1,5 @@
 ﻿l_english: 
- trait_null_desc:0 ""
+ trait_null_desc: ""
  
  # Divines
  trait_p_dv_akatosh:0 "Follower of [ROOT.Char.Custom('GetDvAkatoshName')]"
@@ -104,6 +104,12 @@
  trait_p_ae_xen_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ae_xen_desc' )]"
  trait_p_ae_xen_desc:0 "A follower of Xen"
  trait_p_ae_xen_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetAeXenName')]."
+
+ trait_p_ae_lorkhan: "Follower of [ROOT.Char.Custom('GetAeLorkhanName')]"
+ trait_p_ae_lorkhan_base: "Follower of Lorkhan"
+ trait_p_ae_lorkhan_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ae_lorkhan_desc' )]"
+ trait_p_ae_lorkhan_desc: "A follower of Lorkhan"
+ trait_p_ae_lorkhan_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetAeLorkhanName')]."
  
  # Daedra
  trait_p_ob_azura:0 "Follower of [ROOT.Char.Custom('GetObAzuraName')]"
@@ -296,6 +302,19 @@
  trait_p_at_hare_desc:0 "A follower of the Hare"
  trait_p_at_hare_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of the Hare."
  
+# Giant Totems
+ trait_p_gt_mammoth:0 "Follower of the Mammoth"
+ trait_p_gt_mammoth_base:0 "Follower of the Mammoth"
+ trait_p_gt_mammoth_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_gt_mammoth_desc' )]"
+ trait_p_gt_mammoth_desc:0 "A follower of the Mammoth"
+ trait_p_gt_mammoth_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of the Mammoth."
+
+ trait_p_gt_sabrecat:0 "Follower of the Sabre Cat"
+ trait_p_gt_sabrecat_base:0 "Follower of the Sabre Cat"
+ trait_p_gt_sabrecat_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_gt_sabrecat_desc' )]"
+ trait_p_gt_sabrecat_desc:0 "A follower of the Sabre Cat"
+ trait_p_gt_sabrecat_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of the Sabre Cat."
+
  # Elemental Gods
  trait_p_eg_myn:0 "Follower of Myn"
  trait_p_eg_myn_base:0 "Follower of Myn"
@@ -508,11 +527,11 @@
  trait_p_vl_meris_desc:0 "A follower of Saint Meris"
  trait_p_vl_meris_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Saint Meris the Peacemaker."
 
- trait_p_vl_nerevar:0 "Follower of Saint Nerevar"
- trait_p_vl_nerevar_base:0 "Follower of Saint Nerevar"
- trait_p_vl_nerevar_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_vl_nerevar_desc' )]"
- trait_p_vl_nerevar_desc:0 "A follower of Saint Nerevar"
- trait_p_vl_nerevar_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Saint Nerevar Moon-And-Star."
+ trait_p_vl_nerevar: "Follower of Nerevar"
+ trait_p_vl_nerevar_base: "Follower of Nerevar"
+ trait_p_vl_nerevar_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_vl_nerevar_desc' )]"
+ trait_p_vl_nerevar_desc: "A follower of Nerevar"
+ trait_p_vl_nerevar_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Nerevar Moon-And-Star."
 
  trait_p_vl_olms:0 "Follower of Saint Olms"
  trait_p_vl_olms_base:0 "Follower of Saint Olms"
@@ -704,6 +723,38 @@
  trait_p_tm_blade_of_courage_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_tm_blade_of_courage_desc' )]"
  trait_p_tm_blade_of_courage_desc: "A follower of Trinimac, the Blade of Courage"
  trait_p_tm_blade_of_courage_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Trinimac, the Blade of Courage."
+
+#Satakal
+ trait_p_st_first_serpent: "Follower of Satakal, the First Serpent"
+ trait_p_st_first_serpent_base: "Follower of Satakal, the First Serpent"
+ trait_p_st_first_serpent_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_st_first_serpent_desc' )]"
+ trait_p_st_first_serpent_desc: "A follower of Satakal, the First Serpent"
+ trait_p_st_first_serpent_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Satakal, the First Serpent."
+
+ trait_p_st_hungry_serpent: "Follower of Satakal, the Hungry Serpent"
+ trait_p_st_hungry_serpent_base: "Follower of Satakal, the Hungry Serpent"
+ trait_p_st_hungry_serpent_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_st_hungry_serpent_desc' )]"
+ trait_p_st_hungry_serpent_desc: "A follower of Satakal, the Hungry Serpent"
+ trait_p_st_hungry_serpent_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Satakal, the Hungry Serpent."
+
+#King of Worms
+ trait_p_kw_wormking: "Servant of the King of Worms"
+ trait_p_kw_wormking_base: "Servant of the King of Worms"
+ trait_p_kw_wormking_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_kw_wormking_desc' )]"
+ trait_p_kw_wormking_desc: "A servant of the King of Worms, master of the Worm Cult"
+ trait_p_kw_wormking_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a servant of the King of Worms, master of the Worm Cult."
+
+ trait_p_kw_necromancer: "Servant of the Necromancer"
+ trait_p_kw_necromancer_base: "Servant of the Necromancer"
+ trait_p_kw_necromancer_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_kw_necromancer_desc' )]"
+ trait_p_kw_necromancer_desc: "A servant of the Necromancer"
+ trait_p_kw_necromancer_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a servant of the Necromancer."
+
+ trait_p_kw_mannimarco: "Servant of Mannimarco"
+ trait_p_kw_mannimarco_base: "Servant of Mannimarco"
+ trait_p_kw_mannimarco_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_kw_mannimarco_desc' )]"
+ trait_p_kw_mannimarco_desc: "A servant of Mannimarco, the God of Worms"
+ trait_p_kw_mannimarco_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a servant of Mannimarco, the God of Worms."
 
 #Misc
  trait_birthsign:0 "Birthsign"
