@@ -67,7 +67,7 @@ widget = {
 		size = { 1920 1080 }
 		scale = "[ScaleToFitElementInside('(int32)1920', '(int32)1080')]"
 
-		widget = {
+		icon = {
 			name = "left_panel"
 			parentanchor = left|vcenter
 			position = { 225 -50 }
@@ -125,53 +125,58 @@ widget = {
 				scale = 1.2
 			}
 
-			# modify_texture = {
-			# 	name = "glow_main"
-			# 	texture = "gfx/interface/frontend/frontend_main_menu_bg_glow.dds"
-			# 	blend_mode = colordodge
-			# 	alpha = 0
-			# 	translate_uv = { 0.29 -0.5 }
-			# }
+			modify_texture = {
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_mask.dds"
+				blend_mode = mask
+			}
 
-			# modify_texture = {
-			# 	name = "glow_continue"
-			# 	texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
-			# 	blend_mode = colordodge
-			# 	translate_uv = { 0 -0.14 }
-			# 	alpha = 1
-			# }
+			modify_texture = {
+				name = "glow_main"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_glow.dds"
+				blend_mode = colordodge
+				alpha = 0
+				translate_uv = { 0.29 -0.5 }
+			}
 
-			# modify_texture = {
-			# 	name = "glow_new"
-			# 	texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
-			# 	blend_mode = colordodge
-			# 	translate_uv = { 0 -0.07 }
-			# 	alpha = 0
-			# }
+			modify_texture = {
+				name = "glow_continue"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.14 }
+				alpha = 1
+			}
 
-			# modify_texture = {
-			# 	name = "glow_load"
-			# 	texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
-			# 	blend_mode = colordodge
-			# 	translate_uv = { 0 -0.14 }
-			# 	alpha = 0
-			# }
+			modify_texture = {
+				name = "glow_new"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.07 }
+				alpha = 0
+			}
 
-			# modify_texture = {
-			# 	name = "glow_host"
-			# 	texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
-			# 	blend_mode = colordodge
-			# 	translate_uv = { 0 -0.28 }
-			# 	alpha = 0
-			# }
+			modify_texture = {
+				name = "glow_load"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.14 }
+				alpha = 0
+			}
 
-			# modify_texture = {
-			# 	name = "glow_join"
-			# 	texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
-			# 	blend_mode = colordodge
-			# 	translate_uv = { 0 -0.31 }
-			# 	alpha = 0
-			# }
+			modify_texture = {
+				name = "glow_host"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.28 }
+				alpha = 0
+			}
+
+			modify_texture = {
+				name = "glow_join"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.31 }
+				alpha = 0
+			}
 
 			# modify_texture = {
 			# 	name = "glow_exit"
@@ -181,6 +186,10 @@ widget = {
 			# 	alpha = 0
 			# }
 
+			@duration_button_enter = 0.1
+			@duration_button_leave = 0.5
+
+			# Continue
 			state = {
 				name = "main_menu_glow_continue_enter"
 				duration = 0.05
@@ -194,7 +203,7 @@ widget = {
 
 			state = {
 				name = "main_menu_glow_continue_leave"
-				duration = 0.5
+				duration = @duration_button_leave
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -206,7 +215,7 @@ widget = {
 			# New
 			state = {
 				name = "main_menu_glow_new_enter"
-				duration = 0.1
+				duration = @duration_button_enter
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -218,7 +227,7 @@ widget = {
 
 			state = {
 				name = "main_menu_glow_new_leave"
-				duration = 0.5
+				duration = @duration_button_leave
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -231,7 +240,7 @@ widget = {
 			# Load
 			state = {
 				name = "main_menu_glow_load_enter"
-				duration = 0.1
+				duration = @duration_button_enter
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -243,7 +252,7 @@ widget = {
 
 			state = {
 				name = "main_menu_glow_load_leave"
-				duration = 0.5
+				duration = @duration_button_leave
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -256,7 +265,7 @@ widget = {
 			# Load
 			state = {
 				name = "main_menu_glow_host_enter"
-				duration = 0.1
+				duration = @duration_button_enter
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -268,7 +277,7 @@ widget = {
 
 			state = {
 				name = "main_menu_glow_host_leave"
-				duration = 0.5
+				duration = @duration_button_leave
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -281,7 +290,7 @@ widget = {
 			# Load
 			state = {
 				name = "main_menu_glow_join_enter"
-				duration = 0.1
+				duration = @duration_button_enter
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -293,7 +302,7 @@ widget = {
 
 			state = {
 				name = "main_menu_glow_join_leave"
-				duration = 0.5
+				duration = @duration_button_leave
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -318,7 +327,7 @@ widget = {
 
 			state = {
 				name = "main_menu_glow_exit_leave"
-				duration = 0.5
+				duration = @duration_button_leave
 				using = Animation_Curve_Default
 
 				modify_texture = {
@@ -328,8 +337,74 @@ widget = {
 				}
 			}
 
+			#EK DISABLED: this looks really bad for us for some reason
+			# Appear bounce animation
+			# state = {
+			# 	name = a
+			# 	next = b
+			# 	duration = 1
+			# 	trigger_on_create = yes
+			# 	position_y = -700
+			# }
 
-			#EK DISABLED: Appear bounce animation would go here. don't like it though.
+			# state = {
+			# 	name = b
+			# 	next = c
+			# 	duration = 0.4
+			# 	bezier = { 0.5 0 1 0.5 }
+
+			# 	position_y = -35
+			# 	alpha = 1
+			# }
+
+			# state = {
+			# 	name = c
+			# 	next = d
+			# 	duration = 0.1
+			# 	bezier = { 0 0.5 0.5 1 }
+
+			# 	position_y = -50
+			# }
+
+			# state = {
+			# 	name = d
+			# 	next = e
+			# 	duration = 0.1
+			# 	bezier = { 0.5 0 1 0.5 }
+
+			# 	position_y = -30
+			# }
+
+			# state = {
+			# 	name = e
+			# 	next = f
+			# 	duration = 0.05
+			# 	bezier = { 0 0.5 0.5 1 }
+
+			# 	position_y = -40
+			# }
+
+			# state = {
+			# 	name = f
+			# 	next = "glow_1"
+			# 	duration = 0.05
+			# 	bezier = { 0.5 0 1 0.5 }
+
+			# 	position_y = -35
+			# }
+
+			# Main Glow Animation
+			# state = {
+			# 	name = "glow_1"
+			# 	next = "glow_2"
+
+			# 	modify_texture = {
+			# 		name = "glow_main"
+			# 		alpha = 0
+			# 		translate_uv = { 0.29 -0.5 }
+			# 	}
+
+			# }
 
 			state = {
 				name = "glow_1"
@@ -487,8 +562,8 @@ widget = {
 							datacontext = "[FrontEndLoadView.GetContinueSave]"
 							visible = "[FrontEndLoadView.CanDoContinue]"
 							enabled = "[Not( SaveGameItem.HasMissingDLCs )]"
-							onclick = "[PdxGuiTriggerAllAnimations('main_menu_continue')]"
-								clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_start_game"
+								onclick = "[FrontEndLoadView.OnContinue]"
+							clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_start_game"
 
 							state = {
 								name = _mouse_hierarchy_enter
@@ -501,11 +576,12 @@ widget = {
 								on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_continue_enter','main_menu_glow_continue_leave')]"
 							}
 
-							state = {
-								name = "main_menu_continue"
-								delay = 1.5
-								on_finish = "[FrontEndLoadView.OnContinue]"
-							}
+								# Triggered from code, don't re-name.
+								state = {
+									name = "main_menu_continue"
+									delay = 1.5
+									on_finish = "[FrontEndLoadView.PostContinueFade]"
+								}
 
 							state = {
 								name = _mouse_release
@@ -548,13 +624,13 @@ widget = {
 								}
 
 								widget = {
-									size = { 64 68 }
+										size = { 64 64 }
 
 									coa_realm_shadow = {
 										texture = "[SaveGameItem.GetPlayerGovernment.GetRealmFrameShadow('(int32)62')]"
 										frame = "[SaveGameItem.GetPlayerTier]"
-										framesize = { 64 68 }
-										size = { 64 68 }
+											framesize = { 64 64 }
+											size = { 64 64 }
 									}
 									
 									coat_of_arms_icon = {
@@ -562,24 +638,26 @@ widget = {
 										parentanchor = center
 										alwaystransparent = yes
 
-										size = { 64 68 }
-										coat_of_arms_slot = "[SaveGameItem.GetCoatOfArms.GetSlot('(int32)124','(int32)124')]"
-										coat_of_arms = "[SaveGameItem.GetCoatOfArms.GetTexture('(int32)124','(int32)124')]"
-										coat_of_arms_mask = "[SaveGameItem.GetPlayerGovernment.GetRealmMask]"
+											size = { 64 64 }
+											coat_of_arms_slot = "[SaveGameItem.GetCoatOfArms.GetSlot('(int32)124','(int32)124')]"
+											coat_of_arms = "[SaveGameItem.GetCoatOfArms.GetTexture('(int32)124','(int32)124')]"
+											coat_of_arms_mask = "[SaveGameItem.GetPlayerGovernment.GetRealmMask]"
+											coat_of_arms_offset = "[SaveGameItem.GetPlayerGovernment.GetRealmMaskOffset]"
+											coat_of_arms_scale = "[SaveGameItem.GetPlayerGovernment.GetRealmMaskScale]"
 
 										coa_realm_overlay  = {
 											texture = "[SaveGameItem.GetPlayerGovernment.GetRealmFrame('(int32)62')]"
 											frame = "[SaveGameItem.GetPlayerTier]"
-											framesize = { 64 68 }
-											size = { 64 68 }
+												framesize = { 64 64 }
+												size = { 64 64 }
 										}
 
 										coa_realm_topframe  = {
 											texture = "gfx/interface/coat_of_arms/topframe_62.dds"
 											frame = "[SaveGameItem.GetPlayerTier]"
-											framesize = { 64 68 }
-											position = { 0 -2 }
-											size = { 64 68 }
+												framesize = { 64 64 }
+												position = { 0 -8 }
+												size = { 64 64 }
 										}
 									}
 								}
@@ -855,6 +933,241 @@ widget = {
 					}
 				}
 			}
+
+			### Subscription Button
+
+			# widget = {
+			# 	size = { 372 64 }
+			# 	parentanchor = bottom|hcenter
+			# 	position = { 2 -15 }
+			# 	visible = "[FrontEndMainView.IsSteamAvailable]"
+
+			# 	button_normal = {
+			# 		onclick = "[PdxGuiTriggerAllAnimations('start_game_audio')]"
+			# 		onclick = "[FrontEndMainView.OnSubscription]"
+
+			# 		gfxtype = framedbuttongfx
+			# 		effectname = "NoHighlight"
+			# 		upframe = 1
+			# 		downframe = 2
+			# 		overframe = 1
+			# 		disableframe = 1
+
+			# 		size = { 100% 100% }
+			# 		texture = "gfx/interface/component_decoration/subscribe_button.dds"
+
+			# 		modify_texture = {
+			# 			texture = "gfx/interface/buttons/button_fancy_overlay.dds"
+			# 			blend_mode = overlay
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "glow"
+			# 			texture = "gfx/interface/buttons/button_fancy_glow.dds"
+			# 			blend_mode = colordodge
+			# 			alpha = 0
+
+			# 			spriteborder = { 20 0 }
+			# 			spritetype = corneredStretched
+			# 		}
+
+			# 		modify_texture = {
+			# 			texture = "gfx/interface/component_masks/mask_center_shimmer.dds"
+			# 			blend_mode = mask
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "shimmer"
+			# 			texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+			# 			blend_mode = colordodge
+			# 			spriteType = corneredTiled
+			# 			rotate_uv = 0
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "shimmer_2"
+			# 			texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+			# 			blend_mode = colordodge
+			# 			spriteType = corneredTiled
+			# 			rotate_uv = 0
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "shimmer_3"
+			# 			texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+			# 			blend_mode = colordodge
+			# 			spriteType = corneredTiled
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "shimmer_4"
+			# 			texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+			# 			blend_mode = colordodge
+			# 			spriteType = corneredTiled
+			# 		}
+
+			# 		state = {
+			# 			trigger_on_create = yes
+			# 			name = a
+			# 			next = b
+			# 			duration = 0
+
+			# 			modify_texture = {
+			# 				name = "shimmer"
+			# 				translate_uv = { -0.1 0 }
+			# 				alpha = 0.1
+			# 				rotate_uv = 0
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_2"
+			# 				translate_uv = { 0.1 0 }
+			# 				alpha = 0.3
+			# 				rotate_uv = 0
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_3"
+			# 				translate_uv = { 1 0 }
+			# 				alpha = 0.1
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_4"
+			# 				translate_uv = { -1 0 }
+			# 				alpha = 0.5
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = b
+			# 			next = c
+			# 			duration = 10
+
+			# 			modify_texture = {
+			# 				name = "shimmer"
+			# 				translate_uv = { 0.1 0 }
+			# 				alpha = 0.3
+			# 				rotate_uv = 180
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_2"
+			# 				translate_uv = { -0.1 0 }
+			# 				alpha = 0.1
+			# 				rotate_uv = -180
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_3"
+			# 				translate_uv = { 0 0 }
+			# 				alpha = 0.5
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_4"
+			# 				translate_uv = { 0 0 }
+			# 				alpha = 0.1
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = c
+			# 			next = a
+			# 			duration = 10
+
+			# 			modify_texture = {
+			# 				name = "shimmer"
+			# 				translate_uv = { -0.1 0 }
+			# 				alpha = 0.1
+			# 				rotate_uv = 360
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_2"
+			# 				translate_uv = { 0.1 0 }
+			# 				alpha = 0.3
+			# 				rotate_uv = -360
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_3"
+			# 				translate_uv = { -1 0 }
+			# 				alpha = 0.1
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_4"
+			# 				translate_uv = { 1 0 }
+			# 				alpha = 0.5
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = _mouse_hierarchy_enter
+
+			# 			modify_texture = {
+			# 				name = "glow"
+			# 				alpha = 1
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = _mouse_hierarchy_leave
+			# 			duration = 0.2
+			# 			using = Animation_Curve_Default
+
+			# 			modify_texture = {
+			# 				name = "glow"
+			# 				alpha = 0
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = _mouse_press
+			# 			duration = 0
+			# 			using = Animation_Curve_Default
+
+			# 			modify_texture = {
+			# 				name = "glow"
+			# 				alpha = 0
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = start_game_audio
+			# 			duration = 0.1
+
+			# 			start_sound = {
+			# 				soundeffect = "event:/SFX/UI/Generic/sfx_ui_generic_start_game"
+			# 			}
+			# 		}
+
+			# 		text_single = {
+			# 			parentanchor = center
+			# 			text = "[FrontEndMainView.GetSubscriptionStatusText]"
+			# 			max_width = 312
+			# 			align = nobaseline
+			# 			using = Font_Size_Small
+			# 			default_format = "#clickable;glow_color:{0,0,0,1}"
+			# 			background = {
+			# 				texture ="gfx/interface/colors/black.dds"
+			# 				alpha = 0.75
+			# 				margin = { 100 20 }
+			# 				modify_texture = {
+			# 					texture = "gfx/interface/component_masks/mask_fade_circle.dds"
+			# 					blend_mode = alphamultiply
+
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+
+			# 	icon = {
+			# 		size = { 100% 100% }
+			# 		texture = "gfx/interface/component_decoration/subscribe_button_frame.dds"
+			# 	}
+			# }	
 		}
 	}
 
@@ -885,65 +1198,91 @@ widget = {
 	widget = {
 		parentanchor = bottom|left
 		size = { 50% 100 }
-
-		hbox = { # DLCs
+		hbox = {
 			layoutpolicy_horizontal = expanding
 			layoutpolicy_vertical = expanding
-			spacing = 10
-			
-			spacer = {
-				size = { 1 24 }
-			}
-
-			text_single = {
-				text = "DLC"
-				autoresize = yes
-				max_width = 70
-				minimumsize = { 0 25 }
-				align = nobaseline
-				using = Font_Size_Medium
-			}
-
-			scrollarea = {
-				layoutpolicy_horizontal = expanding
+			vbox = {
 				layoutpolicy_vertical = expanding
+				margin_right = 10
+				expand = {}
 
-				scrollbarpolicy_vertical = always_off
-				scrollbarpolicy_horizontal = as_needed
+				#EK EDIT: disabled socials
+				# text_single = {
+				# 	text = "SOCIALS"
+				# 	autoresize = yes
+				# 	max_width = 70
+				# 	minimumsize = { 0 25 }
+				# 	align = nobaseline
+				# 	using = Font_Size_Medium
+				# }
 
-				scrollbar_horizontal = {
-					scrollbar = {
-						wheelstep = 60
-						direction = horizontal
-
-						track = {
-							button = {}
-						}
-
-						slider = {
-							button = {}
-						}
-
-						dec_button = {
-							button = {
-							}
-						}
-
-						inc_button = {
-							button = {
-							}
-						}
-					}
+				spacer = {
+					size = { 1 24 }
 				}
 
-				scrollwidget = {
+				text_single = {
+					text = "DLC"
+					autoresize = yes
+					max_width = 70
+					minimumsize = { 0 25 }
+					align = nobaseline
+					using = Font_Size_Medium
+				}
+
+				expand = {}
+			}
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				spacing = 4
+
+				#EK EDIT: disabled socials
+				# hbox = {
+				# 	layoutpolicy_horizontal = expanding
+				# 	spacing = 8
+
+				# 	button_standard = {
+				# 		size = { 44 44 }
+
+				# 		icon = {
+				# 			size = { 100% 100%}
+				# 			texture = "gfx/interface/icons/social_media/youtube_button.dds"
+				# 		}
+				# 		onclick = "[FrontEndMainView.OnOpenYoutubeUrl]"
+				# 		tooltip = youtube_tooltip
+				# 		using = tooltip_ne
+				# 	}
+
+				# 	button_standard = {
+				# 		size = { 44 44 }
+
+				# 		icon = {
+				# 			size = { 100% 100%}
+				# 			texture = "gfx/interface/icons/social_media/discord_button.dds"
+				# 		}
+				# 		onclick = "[FrontEndMainView.OnOpenDiscordUrl]"
+				# 		tooltip = discord_tooltip
+				# 		using = tooltip_ne
+				# 	}
+
+				# 	expand = {}
+				# }
+
+				hbox = { # DLCs
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					spacing = 10
+
 					hbox = {
 						hbox = {
 							datamodel = "[FrontEndMainView.GetDlcCollection.GetDlcs]"
 							spacing = 5
 
 							item = {
-								dlc_button = {}
+								dlc_button = {
+									using = tooltip_nw
+								}
 							}
 						}
 

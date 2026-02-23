@@ -196,6 +196,7 @@ window = {
 								blockoverride "button_text"
 								{
 									text = "TOGGLE_RELIGION_VIEW"
+									max_width = 200
 								}
 							}
 						}
@@ -486,7 +487,9 @@ window = {
 								hbox = {
 									name = "important_doctrines"
 									datamodel = "[FaithWindow.GetGroupingHelper( 'main_group' ).GetGrouping]"
-									#spacing = 15
+									#EK EDIT: made bigger because we don't use polytheism/monotheism doctrine
+									#spacing = -6
+									spacing = 6
 									layoutpolicy_vertical = expanding
 									minimumsize = { 0 108 }
 
@@ -510,7 +513,6 @@ window = {
 											text_single = {
 												name = "doctrine_name"
 												align = center
-												#raw_text = "Bingo Bongo Tongo gyngo"
 												text = "[FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith )]"
 												default_format = "#high"
 												multiline = yes
@@ -716,6 +718,7 @@ window = {
 								text = "RELIGIOUS_HEAD"
 								default_format = "#low"
 								fontsize_min = 14
+								max_width = 240
 							}
 
 							hbox = {
@@ -1491,6 +1494,7 @@ types FaithShared
 				text = "FAITH_WINDOW_FERVOR"
 				default_format = "#high"
 				align = nobaseline
+				max_width = 180
 			}
 			#EK ADDITION: fervor eq
 			text_single = {

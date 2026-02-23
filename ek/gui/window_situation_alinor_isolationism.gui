@@ -54,6 +54,11 @@ window = {
 							text = "[Situation.GetNameNoTooltip]"
 						}
 
+						blockoverride "button_back"
+						{
+							onclick = "[OpenGameView( 'situations' )]"
+						}
+
 						blockoverride "button_close"
 						{
 							onclick = "[SituationWindow.Close]"
@@ -343,7 +348,7 @@ window = {
 
 												icon = {
 													name = "selected_or_leading_phase_icon"
-													visible = "[EqualTo_int32( ComplexBarItem.GetIndex, '(int32)2' ))]"
+													visible = "[EqualTo_int32( ComplexBarItem.GetIndex, '(int32)2' )]"
 													size = { 40 40 }
 													texture = "[SituationWindow.GetSelectedOrLeadingFuturePhaseType.GetIcon]"
 													parentanchor = center
@@ -352,7 +357,7 @@ window = {
 
 												text_single = {
 													parentanchor = center
-													visible = "[EqualTo_int32( ComplexBarItem.GetIndex, '(int32)1' ))]"
+													visible = "[EqualTo_int32( ComplexBarItem.GetIndex, '(int32)1' )]"
 
 													text = "[ComplexBarItem.GetValue|0%/]"
 													tooltip = "[SchemeItem.GetProgressLevelTooltips( PdxGuiWidget.GetIndexInDataModel )]"
@@ -708,7 +713,7 @@ window = {
 				}
 
 				expand = {
-					visible = "[IsDataModelEmpty( SituationWindow.GetCatalystsForSelectedPhase ) )]"
+					visible = "[IsDataModelEmpty( SituationWindow.GetCatalystsForSelectedPhase )]"
 				}
 			}
 		}
@@ -716,8 +721,13 @@ window = {
 
 	window_situation_participant_groups = {
 		datacontext = "[SituationWindow.AccessParticipantCharacterList]"
-		datacontext = "[SituationWindowParticipantCharacterList.AccessCharacterList]"
+		datacontext = "[SituationParticipantCharacterList.AccessCharacterList]"
+		visible = "[SituationParticipantCharacterList.IsVisible]"
 
-		visible = "[SituationWindowParticipantCharacterList.IsVisible]"
+		datacontext = "[SituationWindow.GetSelectedSubRegion]"
+		blockoverride "header_text"
+		{
+			text = "[SituationWindow.GetParticipationWindowHeader]"
+		}
 	}
 }

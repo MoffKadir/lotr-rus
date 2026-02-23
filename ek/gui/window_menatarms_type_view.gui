@@ -107,7 +107,7 @@ window = {
 
 								text_single = {
 									name = "men_at_arms_cost"
-									text = "[MenAtArmsType.GetCostString( GetPlayer )]"
+									text = "[Select_CString( MenAtArmsTypeView.GetSelectedTitle.IsValid, MenAtArmsType.GetTitleRegimentCostString( GetPlayer ), MenAtArmsType.GetCostString( GetPlayer ) )]"
 									default_format = "#high"
 
 									tooltip = "[MenAtArmsTypeViewTypeItem.GetCreateWarning]"
@@ -158,7 +158,7 @@ window = {
 				size = { 100% 250 }
 
 				background = {
-					texture = "[MenAtArmsType.GetHorizontalImage]"
+					texture = "[MenAtArmsType.GetHorizontalImageForCulture( GetPlayer.GetCulture )]"
 					alpha = 0.8
 					using = Mask_Rough_Edges
 
@@ -243,16 +243,19 @@ window = {
 					text_label_center = {
 						visible = "[And( Not(GetPlayer.GetGovernment.IsType( 'landless_adventurer_government' )), Not( MenAtArmsTypeView.IsUsingHorde ))]"
 						text = "MV_REGIMENT_START_SIZE"
+						max_width = 400
 					}
 
 					text_label_center = {
 						visible = "[GetPlayer.GetGovernment.IsType( 'landless_adventurer_government' )]"
 						text = "MV_REGIMENT_START_SIZE_ADVENTURER"
+						max_width = 400
 					}
 
 					text_label_center = {
 						visible = "[MenAtArmsTypeView.IsUsingHorde]"
 						text = "MV_REGIMENT_START_SIZE_NOMAD"
+						max_width = 400
 					}
 
 					spacer = {
@@ -569,7 +572,7 @@ types MenAtArms
 				name = "title"
 				text = "[MenAtArmsType.GetNameNoTooltip]"
 				using = Font_Size_Medium
-
+				max_width = 250
 			}
 
 			expand = {}
@@ -587,6 +590,7 @@ types MenAtArms
 				text_single = {
 					name = "soldier count"
 					text = "MV_CREATE_REGIMENT_SIZE"
+					max_width = 150
 				}
 			}
 		}
@@ -630,17 +634,23 @@ types MenAtArms
 			expand = {}
 		}
 
-		text_single = {
-			name = "terrain_label"
-			visible = "[Not(IsDataModelEmpty(MenAtArmsType.GetTerrainModifiers))]"
-			layoutpolicy_horizontal = expanding
-			text = "REGIMENT_TERRAIN_BONUS_HEADER"
-		}
+
 
 		hbox = {
 			name = "terrain_grid"
 			visible = "[Not(IsDataModelEmpty(MenAtArmsType.GetTerrainModifiers))]"
 			layoutpolicy_horizontal = expanding
+
+			vbox = {
+				spacing = 5
+
+		text_single = {
+			name = "terrain_label"
+			visible = "[Not(IsDataModelEmpty(MenAtArmsType.GetTerrainModifiers))]"
+			layoutpolicy_horizontal = expanding
+			text = "REGIMENT_TERRAIN_BONUS_HEADER"
+					max_width = 250
+		}
 
 			fixedgridbox = {
 				datamodel = "[MenAtArmsType.GetTerrainModifiers]"
@@ -678,60 +688,20 @@ types MenAtArms
 					}
 				}
 			}
-			
+		}
+
 			expand = {}
-		}
 
-		text_single = {
-			name = "holding_label"
-			visible = "[Not(IsDataModelEmpty(MenAtArmsType.GetHoldingModifiers))]"
-			layoutpolicy_horizontal = expanding
-			text = "REGIMENT_HOLDING_BONUS_HEADER"
-		}
-
-		hbox = {
-			visible = "[Not(IsDataModelEmpty(MenAtArmsType.GetHoldingModifiers))]"
-			layoutpolicy_horizontal = expanding
-
-			hbox = {
-				name = "holding_grid"
-				datamodel = "[MenAtArmsType.GetHoldingModifiers]"
+			vbox = {
+				layoutpolicy_vertical = expanding
 				spacing = 5
-
-				item = {
-					icon_flat_standard = {
-						name = "icon"
-						size = { 40 40 }
-						texture = "[RegimentHoldingModifier.GetHolding.GetPrimaryBuildingType.GetTypeIcon]"
-						tooltip = "REGIMENT_HOLDING_MODIFIER_TOOLTIP"
-						using = tooltip_below
-
-						icon = {
-							visible = "[Not( RegimentHoldingModifier.IsPositive )]"
-							texture = "gfx/interface/icons/symbols/icon_minus_small.dds"
-							parentanchor = bottom|right
-							position = { 0 5 }
-							size = { 25 25 }
-						}
-
-						icon = {
-							visible = "[RegimentHoldingModifier.IsPositive]"
-							texture = "gfx/interface/icons/symbols/icon_plus_small.dds"
-							parentanchor = bottom|right
-							position = { 0 5 }
-							size = { 25 25 }
-						}
-					}
-				}
-			}
-			expand = {}
-		}
 
 		text_single = {
 			name = "winter_label"
 			layoutpolicy_horizontal = expanding
 			text = "REGIMENT_WINTER_EFFECT_HEADER"
 			visible = "[MenAtArmsType.HasWinterHarshModifier]"
+			max_width = 150
 		}
 
 		hbox = {
@@ -783,6 +753,55 @@ types MenAtArms
 			}
 			expand = {}
 		}
+
+				expand = {}
+			}
+		}
+
+		text_single = {
+			name = "holding_label"
+			visible = "[Not(IsDataModelEmpty(MenAtArmsType.GetHoldingModifiers))]"
+			layoutpolicy_horizontal = expanding
+			text = "REGIMENT_HOLDING_BONUS_HEADER"
+		}
+
+		hbox = {
+			visible = "[Not(IsDataModelEmpty(MenAtArmsType.GetHoldingModifiers))]"
+			layoutpolicy_horizontal = expanding
+
+			hbox = {
+				name = "holding_grid"
+				datamodel = "[MenAtArmsType.GetHoldingModifiers]"
+				spacing = 5
+
+				item = {
+					icon_flat_standard = {
+						name = "icon"
+						size = { 40 40 }
+						texture = "[RegimentHoldingModifier.GetHolding.GetPrimaryBuildingType.GetTypeIcon]"
+						tooltip = "REGIMENT_HOLDING_MODIFIER_TOOLTIP"
+						using = tooltip_below
+
+						icon = {
+							visible = "[Not( RegimentHoldingModifier.IsPositive )]"
+							texture = "gfx/interface/icons/symbols/icon_minus_small.dds"
+							parentanchor = bottom|right
+							position = { 0 5 }
+							size = { 25 25 }
+						}
+
+						icon = {
+							visible = "[RegimentHoldingModifier.IsPositive]"
+							texture = "gfx/interface/icons/symbols/icon_plus_small.dds"
+							parentanchor = bottom|right
+							position = { 0 5 }
+							size = { 25 25 }
+						}
+					}
+				}
+			}
+			expand = {}
+		}
 	}
 
 	type maa_regiment_info = widget {
@@ -806,6 +825,7 @@ types MenAtArms
 				size = { 0 75 }
 				text = "[MenAtArmsType.GetFlavorString]"
 				margin = { 15 5 }
+				max_width = 430
 			}
 
 			expand = {}
@@ -816,16 +836,19 @@ types MenAtArms
 				text_label_center = {
 					visible = "[IsLandlessAdventurer( GetPlayer )]"
 					text = "[MenAtArmsType.GetProvisionsCostString]"
+					max_width = 400
 				}
 
 				text_label_center = {
 					visible = "[Not(GetPlayer.GetGovernment.IsType( 'landless_adventurer_government' ))]"
-					text = "[MenAtArmsType.GetReinforcementCostString( GetPlayer )]"
+					text = "[Select_CString( MenAtArmsTypeView.GetSelectedTitle.IsValid, MenAtArmsType.GetTitleRegimentReinforcementCostString( GetPlayer ), MenAtArmsType.GetReinforcementCostString( GetPlayer ) )]"
+					max_width = 400
 				}
 
 				text_label_center = {
 					visible = "[Not(GetPlayer.GetGovernment.IsType( 'landless_adventurer_government' ))]"
-					text = "[MenAtArmsType.GetFullStrengthMaintenanceCostForPlayerString]"
+					text = "[Select_CString( MenAtArmsTypeView.GetSelectedTitle.IsValid, MenAtArmsType.GetTitleRegimentFullStrengthMaintenanceCostForPlayerString, MenAtArmsType.GetFullStrengthMaintenanceCostForPlayerString )]"
+					max_width = 400
 				}
 			}
 		}

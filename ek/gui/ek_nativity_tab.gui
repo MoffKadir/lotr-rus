@@ -1,0 +1,102 @@
+﻿types EKCultureWindow {
+    type ek_nativity_tab = vbox {
+		visible = "[GetVariableSystem.HasValue( 'culture_view_tabs', 'nativity' )]"
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+		using = Animation_Tab_Switch
+		
+		flowcontainer = {
+			direction = vertical
+			text_multi = {
+				layoutpolicy_horizontal = expanding
+				text = ek_nativity_widget_title
+				align = center
+				parentanchor = hcenter|top
+				autoresize = yes
+				max_width = 300
+			}
+			spacer = { size = { 0 10 } }
+			scrollbox = {
+				name = "nativity_region_scrollarea"
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				size = { 550 500 }
+
+				blockoverride "scrollbox_content"
+				{
+					dynamicgridbox = {
+						maxhorizontalslots = 100
+						maxverticalslots = 100
+						datamodel_wrap = 1
+						flipdirection = yes
+						block "datamodel" {
+							datamodel = "[Culture.MakeScope.GetList('nativity_regions')]"
+						}
+						
+						item = {	
+							widget = {
+								datacontext = "[Scope.GeographicalRegion]"
+								block "size" {
+									size = { 525 90 } 
+								}
+								button_standard_list = {
+									size = { 515 80 }									
+									
+									text_multi = {
+										layoutpolicy_horizontal = expanding
+										margin_bottom = 3
+										raw_text = "[Scope.GeographicalRegion.GetName]"
+										align = center
+										parentanchor = hcenter|vcenter
+										autoresize = yes
+										max_width = 470
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			spacer = { size = { 0 10 } }
+			
+			button_standard_big = {
+				size = { 515 80 }
+				
+				datacontext = "[GetDecisionWithKey('ek_add_nativity_region_decision')]"	
+				enabled = "[Decision.IsShownForPlayer]"
+				onclick = "[OpenGameViewData( 'decision_detail', Decision.Self)]"
+
+				tooltipwidget = {
+					decision_tooltip = {}
+				}				
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					
+					text_single = {
+						visible = "[Decision.IsPossibleForPlayer]"
+						max_width = 180
+						margin = { 0 15 }
+
+						text = "[Decision.GetTitleForPlayer]"
+						default_format = "#T;high"
+						align = center
+					}
+
+					text_single = {
+						visible = "[Not(Decision.IsPossibleForPlayer)]"
+						max_width = 180
+						margin = { 0 15 }
+
+						text = "[Decision.GetTitleForPlayer]"
+						default_format = "#T;low"
+						align = center
+					}
+				}
+				
+			}		
+		}
+
+    }
+}
