@@ -1,8 +1,8 @@
 ﻿l_english:
  # EK Era System
  ERA_FIRST_START: "(int32)0"
- ERA_FIRST_END: "(int32)2920"
- ERA_SECOND_END: "(int32)3816"
+ ERA_FIRST_END:0 "(int32)2920"
+ ERA_SECOND_END:0 "(int32)3816"
 
  #following calendar rework was done by TypicalCrusader, if it ever breaks dm/ping me
  #2E - shows string only works for 1E and 2E
@@ -13,7 +13,7 @@
 
  #in game year - 3E
  #GAME_DATE_STRING, GAME_DATE_STRING_SHORT, GAME_DATE_STRING_LONG - $YEAR|q$
- ERA_STRING_NAME_IG: "[AddTextIf(And(GreaterThanOrEqualTo_int32(FixedPointToInt(EmptyScope.ScriptValue('era_3_year')), '(int32)1' ), GreaterThanOrEqualTo_int32('(int32)$YEAR|q$', FixedPointToInt(EmptyScope.ScriptValue('era_3_year')))), '3E' )][AddTextIf(And(Or(LessThan_int32(FixedPointToInt(EmptyScope.ScriptValue('era_3_year')), '(int32)1'), LessThan_int32('(int32)$YEAR|q$', FixedPointToInt(EmptyScope.ScriptValue('era_3_year')))), GreaterThan_int32('(int32)$YEAR|q$', '$ERA_FIRST_END|q$')) , '2E' )][AddTextIf(And(Or(LessThan_int32(FixedPointToInt(EmptyScope.ScriptValue('era_3_year')), '(int32)1'), LessThan_int32('(int32)$YEAR|q$', FixedPointToInt(EmptyScope.ScriptValue('era_3_year')))), And(Not(EqualTo_string('$ERA_BCE|q$', ' BC')), LessThanOrEqualTo_int32('(int32)$YEAR|q$', '$ERA_FIRST_END|q$'))), '1E' )][AddTextIf(EqualTo_string('$ERA_BCE|q$', ' BC'), 'ME')]"
+ ERA_STRING_NAME_IG: "[AddTextIf(And(GreaterThanOrEqualTo_int32(FixedPointToInt(EmptyScope.ScriptValue('era_3_year')), '(int32)1' ), GreaterThanOrEqualTo_int32('(int32)$YEAR|q$', FixedPointToInt(EmptyScope.ScriptValue('era_3_year')))), '3E' )][AddTextIf(And(Or(LessThan_int32(FixedPointToInt(EmptyScope.ScriptValue('era_3_year')), '(int32)1'), LessThan_int32('(int32)$YEAR|q$', FixedPointToInt(EmptyScope.ScriptValue('era_3_year')))), GreaterThan_int32('(int32)$YEAR|q$', '$ERA_FIRST_END|q$')) , '2E' )][AddTextIf(And(Or(LessThan_int32(FixedPointToInt(EmptyScope.ScriptValue('era_3_year')), '(int32)1'), LessThan_int32('(int32)$YEAR|q$', FixedPointToInt(EmptyScope.ScriptValue('era_3_year')))), And(GreaterThan_int32('(int32)$YEAR|q$', '$ERA_FIRST_START|q$') , LessThanOrEqualTo_int32('(int32)$YEAR|q$', '$ERA_FIRST_END|q$'))), '1E' )][AddTextIf(And(Or(LessThan_int32(FixedPointToInt(EmptyScope.ScriptValue('era_3_year')), '(int32)1'), LessThan_int32('(int32)$YEAR|q$', FixedPointToInt(EmptyScope.ScriptValue('era_3_year')))), LessThan_int32('(int32)$YEAR|q$', '$ERA_FIRST_START|q$')) , 'ME' )]"
  ERA_STRING_YEAR_IG: "[Select_int32(And(GreaterThanOrEqualTo_int32(FixedPointToInt(EmptyScope.ScriptValue('era_3_year')), '(int32)1' ), GreaterThanOrEqualTo_int32('(int32)$YEAR|q$', FixedPointToInt(EmptyScope.ScriptValue('era_3_year')))), Subtract_int32('(int32)$YEAR|q$', FixedPointToInt(EmptyScope.ScriptValue('era_3_year'))), Select_int32(GreaterThan_int32('(int32)$YEAR|q$', '$ERA_FIRST_END|q$' ), Subtract_int32('(int32)$YEAR|q$','$ERA_FIRST_END|q$') , '(int32)$YEAR|q$'))]"
  ERA_STRING_YEAR_IG_CONCAT: "$ERA_STRING_NAME_IG$ $ERA_STRING_YEAR_IG$"
 

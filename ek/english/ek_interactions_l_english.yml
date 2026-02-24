@@ -90,7 +90,7 @@
  opinion_obligations_tt:0 "[vassal_contract] starts with [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_opinion' )]"
  devotion_obligations:0 "Regular Obligations (Devotion)"
  devotion_obligations_tt:0 "[vassal_contract] starts with [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_devotion' )]"
- devotion_obligations_requirement:0 "#V [vassal.GetTitledFirstName]#! does #bold not#! have #V [GetGovernment( 'theocracy_government' ).GetName]#! government"
+ devotion_obligations_requirement:0 "#V [vassal.GetTitledFirstName]#! does #bold not#! have #V [GetGovernment( 'theocracy_government' ).GetName]#! government or you do #bold not#! have #V [GetGovernment( 'hierocracy_government' ).GetName]#! government"
  fame_obligations:0 "Regular Obligations (Fame)"
  fame_obligations_tt:0 "[vassal_contract] starts with [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_fame' )]"
  arcana_obligations:0 "Regular Obligations (Arcana)"
@@ -173,11 +173,6 @@
  send_knight_to_wander_return_title:0 "Wanderer Returns"
  send_knight_to_wander_return_desc:0 "[recipient.GetFullName] has returned to your court after wandering to seek fame and improve their [martial|E] abilities."
  innovation_knightly_orders_wander:0 "Young courtiers of this [culture|E] with a Students of Knighthood [trait|E] can be sent to become [wanderers|E] to seek glory and improve their skills."
-
-
- ask_grok_is_this_real: "Ask Grok: Is this real?"
- ek_ask_grok_is_this_real_interaxion_desc: "Ask Grok if this is real."
- ek_ask_grok_is_this_real_tooltip: "Grok has learned words of your language by reading many questions and answers, and can convincingly string them together at random to tell you if this is real."
 
 ### EK secrets
  CHARACTER_IS_A_VAMPIRE:0 "[CHARACTER.GetShortUIName|U] is a [GetTrait('vampire_character').GetName( CHARACTER.Self )]"

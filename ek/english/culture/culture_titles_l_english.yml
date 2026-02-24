@@ -12,8 +12,6 @@
  king_female: "Queen"
  emperor: "High King"
  emperor_female: "High Queen"
- hegemon: "Emperor"
- hegemon_female: "Empress"
 
  baron_plural: "Lords"
  count_plural: "Barons"
@@ -31,7 +29,6 @@
  title_potentate_male: "Potentate"
  title_potentate_female: "Potentate"
  empire_potentate: "Potentate"
- title_potentate_hegemony_male: "$title_potentate_male$"
  
  title_confederacy: "Confederacy"
  title_general_male: "General"
@@ -40,47 +37,27 @@
  title_grand_overlord: "Grand Overlord"
  title_grand_overlady: "Grand Overlady"
  
+ title_tamriel_emperor: "Emperor"
+ title_tamriel_empress: "Empress"
+
  warlord_emperor_male: "Emperor"
  warlord_emperor_female: "Empress"
+ empire_tamriel: "Empire"
  
- title_cyrodiil_emperor: "Emperor"
- title_cyrodiil_empress: "Empress"
- empire_cyrodiil: "Empire"
-
- title_vassal_emperor: "High King"
- title_vassal_empress: "High Queen"
- empire_vassal: "High Kingdom"
- 
- emperor_vassal_male_imperial: "Provincial Governor"
- emperor_vassal_female_imperial: "Provincial Governor"
- empire_vassal_imperial: "Province"
-
- empire_provincial_governor_male: "Provincial Governor"
- empire_provincial_governor_female: "Provincial Governor"
- empire_province: "Province"
-
- title_tamriel_empire_male: "[Character.Custom('TamrielHegemonMaleTitle')|U]"
- title_tamriel_empire_female: "[Character.Custom('TamrielHegemonFemaleTitle')|U]"
-
- title_aumapareshe: "Auma-Par-Eshe"
- title_emenperor: "Emen Peror Ele"
- 
- title_aldmeri_dominion_male: "Aran Aldmeri"
- title_aldmeri_dominion_female: "Arana Aldmeri"
+ title_yokuda_emperor: "Emperor"
+ title_yokuda_empress: "Empress"
+ empire_yokuda: "Empire"
  
  title_hegemony_male: "Hegemon"
  title_hegemony_female: "Hegemon"
  empire_hegemony: "Hegemony"
+
+ title_aldmeri_dominion_male: "Aran Aldmeri"
+ title_aldmeri_dominion_female: "Arana Aldmeri"
  
  title_mead_hall: "Hall"
  title_harbinger_male: "Harbinger"
  title_harbinger_female: "Harbinger"
-
- title_king_captain_male: "King-Captain"
- title_king_captain_female: "Queen-Captain"
-
- title_nordic_empire_male: "[Character.Custom('NordicHegemonMaleTitle')|U]"
- title_nordic_empire_female: "[Character.Custom('NordicHegemonFemaleTitle')|U]"
  
  committee_republic_male: "Chairman"
  committee_republic_female: "Chairwoman"
@@ -88,6 +65,10 @@
  
  pale_watch_watchmaster_male: "Watchmaster"
  pale_watch_watchmaster_female: "Watchmistress"
+ 
+ duchy_feudal_systres_independent: "Duchy"
+ duke_feudal_male_systres_independent: "Duke"
+ duke_feudal_female_systres_independent: "Duchess"
 
  duke_archmage_male: "Arch-Mage"
  duke_archmage_female: "Arch-Mage"
@@ -352,7 +333,7 @@
 
  #Default Viceroyalty tiers
  baron_viceroyalty_male: "Governor"
- baron_viceroyalty_female: "Governor"
+ baron_viceroyalty_female: "Governess"
  barony_viceroyalty: "Governorship"
  count_viceroyalty_male: "Viscount"
  count_viceroyalty_female: "Viscountess"
@@ -372,7 +353,7 @@
  count_administrative_female: "Magistrate"
  county_administrative: "Magistracy"
  duke_administrative_male: "Governor"
- duke_administrative_female: "Governor"
+ duke_administrative_female: "Governess"
  duchy_administrative: "Province"
  king_administrative_male: "Viceroy"
  king_administrative_female: "Vicereine"
@@ -392,7 +373,7 @@
  duke_landless_adventurer_female_camp: "Captain"
  duchy_landless_adventurer_camp: "Camp"
  spouse_landless_adventurer_male: "Master"
- spouse_landless_adventurer_female: "Mistress"
+ spouse_landless_adventurer_holder_female: "Mistress"
 
  duke_landless_adventurer_camp_mercenaries: "Captain"
  duke_landless_adventurer_camp_wanderers: "[Character.Custom('MistressMaster')|U]"
@@ -627,15 +608,6 @@
 
  title_forebear_republic_male: "Dictator"
  title_forebear_republic_female: "Dictator"
-
- title_president_male: "President"
- title_president_female: "President"
-
- title_king_of_redguard_male: "King of the Redguards"
- title_king_of_redguard_female: "Queen of the Redguards"
-
- title_redguard_republic_male: "[Character.Custom('RedguardHegemonMaleTitle')|U]"
- title_redguard_republic_female: "[Character.Custom('RedguardHegemonFemaleTitle')|U]"
  
  #Cyrodiilic Group#
  #Feudal
@@ -659,7 +631,7 @@
  king_feudal_male_cyrodiil: "[CHARACTER.Custom('KingFeudalMaleCyrodiil')]"
  king_feudal_female_cyrodiil: "[CHARACTER.Custom('KingFeudalFemaleCyrodiil')]"
 
- kingdom_feudal_nibenay_territory: "Territory"
+ kingdom_feudal_nibenay_territory:0 "Territory"
  
  #Ilniviri Group#
  #Feudal
@@ -698,7 +670,14 @@
  title_custodianship_ilniviri: "Custodianship"
  
  #North Nedic Group#
- #Feudal
+ #Feudal 
+ empire_feudal_reachfolk: "High Kingdom"
+ emperor_feudal_male_reachfolk: "Tagh Ard"
+ emperor_feudal_female_reachfolk: "Tagh Ard"
+ 
+ kingdom_feudal_reachfolk: "Kingdom"
+ king_feudal_male_reachfolk: "Ard"
+ king_feudal_female_reachfolk: "Ard"
  
  duchy_feudal_reachfolk_independent: "Clan"
  duke_feudal_male_reachfolk_independent: "Chief-of-Chiefs"
@@ -986,11 +965,11 @@
  marshkhan: "Marshkhan"
  snowkhan: "Snowkhan"
  sandkhan: "Sandkhan"
- saharkhan: "Saharkhan" #Custom Shinathi Title
+ saharkhan:0 "Saharkhan" #Custom Shinathi Title
 
- duke_tribal_male_shinathi: "Saharkhan" #Custom Shinathi Title
- duke_tribal_female_shinathi: "Saharkhatun" #Custom Shinathi Title
- duchy_tribal_ashlander_shinathi: "Saharkhanate" #Custom Shinathi Title
+ duke_tribal_male_shinathi:0 "Saharkhan" #Custom Shinathi Title
+ duke_tribal_female_shinathi:0 "Saharkhatun" #Custom Shinathi Title
+ duchy_tribal_ashlander_shinathi:0 "Saharkhanate" #Custom Shinathi Title
  
  #Dwemeris Group
  #Feudal
@@ -1138,19 +1117,17 @@
  king_theocracy_female_reach_religion: "Martagh Shaman"
 
  #Khajiiti Religion
- baron_theocracy_male_khajiiti_religion: "Moon-Cleric"
- baron_theocracy_female_khajiiti_religion: "Moon-Cleric"
- count_theocracy_male_khajiiti_religion: "High Moon-Cleric"
+ baron_theocracy_male_khajiiti_religion: "Moon-Priest"
+ baron_theocracy_female_khajiiti_religion: "Moon-Priestess"
+ count_theocracy_male_khajiiti_religion: "Moon-Bishop"
  count_theocracy_female_khajiiti_religion: "[CHARACTER.Custom('KhajiitClanMother')]"
- duke_theocracy_male_khajiiti_religion: "Moon-Priest"
- duke_theocracy_female_khajiiti_religion: "Moon-Priestess"
- king_theocracy_male_khajiiti_religion: "Moon-Archpriest"
- king_theocracy_female_khajiiti_religion: "Moon-Archpriestess"
- emperor_theocracy_male_khajiiti_religion: "Moon-King"
- emperor_theocracy_female_khajiiti_religion: "Moon-Queen"
-# hegemon_theocracy_male_khajiiti_religion: "Moon-Emperor"
-# hegemon_theocracy_female_khajiiti_religion: "Moon-Empress"
- moon_bishop: "High Moon-Cleric" 
+ duke_theocracy_male_khajiiti_religion: "Moon-Archbishop"
+ duke_theocracy_female_khajiiti_religion: "Moon-Archbishop"
+ king_theocracy_male_khajiiti_religion: "Moon-King"
+ king_theocracy_female_khajiiti_religion: "Moon-Queen"
+ emperor_theocracy_male_khajiiti_religion: "Moon-Emperor"
+ emperor_theocracy_female_khajiiti_religion: "Moon-Empress"
+ moon_bishop: "Moon-Bishop" 
  clan_mother: "Clan-Mother"
  
  #Lilmothiiti Faith
@@ -1253,8 +1230,6 @@
  title_princess: "Princess"
  prince_empire: "Prince"
  princess_empire: "Princess"
- prince_hegemony: "Prince"
- princess_hegemony: "Princess"
 
 ####################################################
 #Special titles

@@ -175,11 +175,20 @@
  academy_government_tax_contribution_add:1 "[academy|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
  academy_government_tax_contribution_mult:1 "[academy|E] [vassal|E] [tax|E] [modifier_contribution|E]"
 
+ hierocracy_government_opinion:0 "[hierocracy|E] Ruler Opinion"
+ hierocracy_government_tax_contribution_add:1 "[academy|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
+ hierocracy_government_tax_contribution_mult:1 "[academy|E] [vassal|E] [tax|E] [modifier_contribution|E]"
+
  autocracy_government_opinion:0 "[autocracy|E] Ruler Opinion"
  autocracy_government_tax_contribution_add:1 "[academy|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
  autocracy_government_tax_contribution_mult:1 "[academy|E] [vassal|E] [tax|E] [modifier_contribution|E]"
  
- ### Event modifiers 
+ ### Event modifiers
+ recent_migration_in:0 "Recent Migration"
+ recent_migration_in_desc:0 "A migratory people recently took control of the province."
+ recent_migration_out:0 "Recent Emigration"
+ recent_migration_out_desc:0 "This province was once held by a migratory people, but they left recently, leaving this province almost empty."
+ 
  yummy_tea:0 "Yummy Tea"
  yummy_tea_desc:0 "This character had a lovely cup of tea."
 
@@ -246,6 +255,15 @@
  contrite_politician:0 "Contrite Politician"
 
  bad_kinsman:0 "Bad Kinsman"
+
+ ## Attrebus vs Potentate
+ attrebus_opened_temple_district:0 "Opened the Temple District"
+ attrebus_opened_temple_district_desc:0 "After being closed to the general population of the Imperial Isles for decades, the Temple District is finally available for religious celebrations"
+ ic_attrebus_opened_temple_district:0 "Opened the Temple District"
+ ic_attrebus_opened_temple_district_desc:0 "After being closed to the general population of the Imperial Isles for decades, the Temple District is finally available for religious celebrations"
+ 
+ debt_ec_raised_taxes:0 "Debt to the Elder Council"
+ debt_ec_raised_taxes_desc:0 "Unable to repay their debt in full, a ruler decided to pass on some of their debt to their realm. As could be expected, the locals aren't really happy about it."
  
  direnni_reclaim_hegemony_1:0 "Direnni Expansionism"
  direnni_reclaim_hegemony_1_desc:0 "Eager to reclaim the old Direnni Hegemony, the members of the Direnni bloodline have been tasked with conquering what was once theirs. Only time will tell if their efforts will bear fruit.\n\nMembers of this [dynasty|E] also receive: #P -10%#! Casus Belli cost"
@@ -355,6 +373,8 @@
  stress_experimentalist_modifier_10_desc:0 "This character has trouble holding worrisome thoughts — and finds relief in that."
  
  ### Orsinium
+ city_of_the_orcs:0 "Capital of the Orcs"
+ 
  orsinium_mountain_orc_advantage:0 "Defenders of Orsinium"
  orsinium_mountain_orc_advantage_desc:0 "Now that the Mountain Orcs have reclaimed or refounded the city of Orsinium, they are ready to defend it to the death.\nA million Bretons, Nords, and Redguards could march on it, and a million Bretons, Nords, and Redguard would be repelled.\n\n#weak Note: This modifier applies to every province that is both a [de_jure|E] and de Facto vassal of the Kingdom of Orsinium. For every duchy that is considered a [de_jure|E] vassal of Orsinium, this modifier loses a stack, starting at 5 stacks.#!"
  
@@ -592,6 +612,8 @@
  ferocious_mages_desc:0 "The mages among your troops specialise in overwhelming force, shock and awe advances, and the optimised casting of the most destructive spells."
  bungling_mages:0 "Bungling Mages"
  bungling_mages_desc:0 "The mages among your troops have been led to believe that firepower is the sole factor to their battlefield contributions, hobbling their tactics."
+ ashlander_exile_modifier:0 "Ashlander Exile"
+ ashlander_exile_modifier_desc:0 "This character was exiled from their Ashlander tribe."
  exiled_criminal:0 "Criminal was Exiled"
  exile_harboured:0 "Harboured Criminal"
  by_the_books:0 "By the Books"
@@ -609,6 +631,8 @@
  heart_over_reason:0 "Heart Over Reason"
  heart_over_reason_desc:0 "This character prioritises the well-being of others over their own studies."
  warded_capital:0 "Warded Capital"
+ warded:0 "Warded"
+ warded_desc:0 "This character has been magically protected by a ward spell."
  godlike_health:0 "Godlike Health"
  godlike_health_desc:0 "This character has managed to achieve a glow of health not thought possible for mortalkind."
  splendor:0 "Splendor"
@@ -619,7 +643,7 @@
  everscamps_modifier_desc:0 "Everscamps are scamps whose presence are made permanent by the Staff of the Everscamp, as they will immediately rematerialize post-mortem. Additionally, the staff will slow down the speed of a wielder. Finally, it will compel its user to not dispose of it, and can only be rid of by taking it back to the shrine in Darkfathom Cave."
  learned_to_let_go:0 "Learned to Let Go"
  learned_to_let_go_desc:0 "Through trial and error, this character learned to let go of things."
- prepared_for_natural_disasters:0 "Prepared for natural hazards."
+ prepared_for_natural_disasters:0 "Prepared for natural disasters."
  redguard_hero_frandar:0 "Studied Frandar Hunding"
  redguard_hero_shinji:0 "Studied Gaiden Shinji"
  redguard_hero_makela:0 "Studied Makela Leki"
@@ -785,7 +809,6 @@
  verity_worthy_desc:0 "This character has been deemed worthy by the Crown of Verity"
  verity_unworthy:0 "Deemed Unworthy"
  verity_unworthy_desc:0 "This character has been deemed unworthy by the Crown of Verity"
- crown_verity_tooltip:0 "Only characters deemed worthy by the Crown of Verity may wear it. Test your worthiness by using the #v '$crown_verity_decision$'#! [decision|E]."
 
  cuckoldry_psalter_modifier:0 "Cuckoldry Psalter"
  chastity_belt_modifier:0 "Chastity Belt"
@@ -933,12 +956,6 @@
 
  syrabane_heirs_dynasty_modifier: "Heirs of Syrabane"
  syrabane_heirs_dynasty_modifier_desc: "This dynasty claims direct descent from Syrabane, the Warlock's God."
-
- imperial_dynasty_modifier: "Imperial Dynasty"
- imperial_dynasty_modifier_desc: "This dynasty rose to prominence as true emperors of Cyrodiil."
-
- potentate_dynasty_modifier: "Potentate Dynasty"
- potentate_dynasty_modifier_desc: "This dynasty restored the Akaviri Potentate, loyally awaiting the return of a true emperor of Cyrodiil."
 
  warlord_emperor_modifier: "Warlord Emperor"
  warlord_emperor_modifier_desc: "If this character's [legitimacy_level|E] is below #V 4#! upon their death, their Empire [title|E] will be destroyed. Any [vassals|E] that are not [de_jure|E] vassals of their other titles will be made independent.\n\n"
