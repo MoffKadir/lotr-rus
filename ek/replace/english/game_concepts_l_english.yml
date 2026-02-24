@@ -32,9 +32,9 @@
  game_concept_religious_family_desc: "A $game_concept_religious_family$ is a group of [religions|E]. The $game_concept_religious_family$ affects how the various Religions, and [faiths|E] therein, view each other.\n\nThe [GetReligionFamily('rf_aedra').GetName] Family tends to worship the Aedra. Religions are susceptible to [heresy|E].\n\nThe [GetReligionFamily('rf_daedra').GetName] Family focuses on the Daedric Princes. Faiths considering Daedric Worship [criminal|E] will consider most [GetReligionFamily('rf_daedra').GetName] faiths Evil. Religions are susceptible to [heresy|E].\n\nThe [GetReligionFamily('rf_aurbis').GetName] Family worships other great forces of the universe. Some faiths within this family can still be drawn to an Aedric or a Daedric patron, but in general they do not focus on either of these two categories. Religions are susceptible to [heresy|E]."
 
 # Culture Era replacements
- game_concept_tribal_desc: "Tribal realms have stunted county [development|E], cannot advance past $culture_era_tribal$ [innovations|E], cannot construct new [holdings|E], and are usually unable to change their [succession_law|E].\n\nHowever, they can make use of [prestige|E] rather than [gold|E] to build their realms and hire [men_at_arms|E], and have access to more [casus_belli|E] compared to [feudal|E] Realms. Non-Tribal armies suffer a [supply_limit|E] penalty in hostile Tribal territory."
+ game_concept_tribal_desc: "Tribal realms have stunted county [development|E] and cannot construct new [holdings|E], but they have access to more [casus_belli|E] compared to [feudal|E] Realms and make use of [house_unity|E]. Non-Tribal armies suffer a [supply_limit|E] penalty in hostile Tribal territory."
 
- game_concept_era_desc: "[innovations|E] can only be discovered if the [culture|E] has reached the requisite Era. The next Era can only start past a certain year, and if at least #V 50%#! of the Innovations of the previous Era have been discovered.\n\nRulers with [tribal_government|E] can only make use of $culture_era_tribal$ Innovations."
+ game_concept_era_desc: "[innovations|E] can only be discovered if the [culture|E] has reached the requisite Era. The next Era can only start past a certain year, and if at least #V 50%#! of the Innovations of the previous Era have been discovered."
 
 # Barony to Lordship Tier replacement
  game_concept_barony_desc: "$game_concept_baronies$ are the lowest ranked [titles|E] and have the smallest footprint on the map, organized into larger [counties|E].\n\n$game_concept_barony$ Titles must always have a [holder|E] if they contain a [holding|E]."
@@ -42,13 +42,28 @@
  game_concept_county_desc: "A $game_concept_county$ is a [title|E] ranking below a [duchy|E] and above a [barony|E].\n\nThe title includes the [county_capital|E] in the County, as well as [de_jure|E] rights to all the Lordships in the County.\n\nCounties always have [holders|E] because county capitals cannot be destroyed."
 
 # Empire to High Kingdom replacement
- game_concept_title_desc: "A $game_concept_title$ is essentially a certificate of land ownership.\n\nThe smallest unit of land on the map is the [barony|E]. $game_concept_baronies$ are organized into larger areas called [counties|E]. Counties [de_jure|E] belong to a [duchy|E], duchies to a [kingdom|E], and Kingdoms to an [empire|E].\n\nDuchies, Kingdoms and High Kingdoms do not always have a [holder|E], but are Titles that can be [created|E] by a ruler who controls enough of the corresponding territory."
+ game_concept_title_desc: "A $game_concept_title$ is essentially a certificate of land ownership.\n\nThe smallest unit of land on the map is the [barony|E]. $game_concept_baronies$ are organized into larger areas called [counties|E]. Counties [de_jure|E] belong to a [duchy|E], duchies to a [kingdom|E], and Kingdoms to a [empire|E].\n\nDuchies, Kingdoms and High Kingdoms do not always have a [holder|E], but are Titles that can be [created|E] by a ruler who controls enough of the corresponding territory."
+ #"An" to "a"
+ game_concept_king_desc: "A $game_concept_king$ is a [ruler|E] whose [primary_title|E] is a [kingdom|E].\n\nTheir [rank|E] is directly above [dukes|E] and directly below [emperors|E], and as such they can have $game_concept_dukes$ and below as [vassals|E], and a $game_concept_emperor$ or above as their [liege|E]."
 
  game_concept_empire: "High Kingdom"
  game_concept_empires: "High Kingdoms"
- game_concept_emperor: "High King/Queen"
- game_concept_emperors: "High Kings/Queens"
- game_concept_empire_desc: "$game_concept_empires$ are the highest ranked [titles|E].\n\nThe [holder|E] of a High Kingdom has [de_jure|E] rights to its constituent territory and can have Kings as [vassals|E].\n\nHigh Kingdoms can be dormant and have no current Holder. Such Titles can be created by a [ruler|E] who controls more than 80% of the Counties within.\n\n#italic "There is but one Empire in Tamriel, but one Empire in the World; that, my brothers, is the Empire of the Cyrodiils."#!"
+ game_concept_emperor: "High King"
+ game_concept_emperors: "High Kings"
+ game_concept_empire_desc: "A $game_concept_empire$ is a [title|E] one [title_tier|E] below an [hegemony|E] and one above a [kingdom|E].\n\nThe [holder|E] of a High Kingdom has [de_jure|E] rights to its constituent territory and can have [kings|E] as [vassals|E].\n\n$game_concept_empires$ can be dormant and have no current $game_concept_holder$. Such $game_concept_titles$ can be created by a [ruler|E] who controls more than 80% of the [counties|E] within."
+ game_concept_emperor_desc: "A $game_concept_emperor$ is a [ruler|E] whose [primary_title|E] is a [empire|E].\n\nTheir [rank|E] is directly above [kings|E] and directly below [hegemons|E], and as such they can have $game_concept_kings$ and below as [vassals|E], and only an $game_concept_hegemon$ as their [liege|E]."
+ emperor_modifier: "High King"
+
+ #Hegemony to empire
+ game_concept_hegemony: "Empire"
+ game_concept_hegemonies: "Empires"
+ game_concept_hegemon: "Emperor"
+ game_concept_hegemons: "Emperors"
+ #Replaced "A" with "An" in descs
+ game_concept_hegemony_desc: "An $game_concept_hegemony$ is a [title|E] of the highest [title_tier|E].\n\nThe [holder|E] of an $game_concept_hegemony$ has [de_jure|E] rights to its constituent territory and can have [emperors|E] as [vassals|E]."
+ game_concept_hegemon_desc: "An $game_concept_hegemon$ is a [ruler|E] whose [primary_title|E] is an [hegemony|E].\n\nTheir [rank|E] is the highest possible, directly above [emperors|E]. As such, they can have any non-$game_concept_hegemons$ as their [vassals|E], and they can never have a [liege|E]."
+ BECOME_TRIBUTARY_INTERACTION_NAME_HEGEMONY: "Acknowledge Emperor"
+ hegemon_modifier: "Emperor"
 
  game_concept_buy_claim_desc: "An Interaction that allows a character to buy [unpressed_claims|E] in exchange for [piety|E].\n\n$EFFECT_LIST_BULLET$A [vassal|E] may not buy a claim on any [liege|E]'s [title|E], and a Liege may not buy a claim on any Vassal's Title\n$EFFECT_LIST_BULLET$A [king|E] or [emperor|E] may not buy claims on Kingdom Titles, and High Kings may not buy claims on other High Kingdoms\n$EFFECT_LIST_BULLET$No one may buy a claim on their [head_of_faith|E]."
 
@@ -93,3 +108,5 @@
  game_concept_taxpayer_desc: "$game_concept_taxpayers$ are [autocracy|E] [vassals|E] that have been assigned to a [tax_jurisdiction|E], and will contribute monthly [tax|E] Income and [levies|E] as long as a [tax_collector|E] is appointed."
  
  game_concept_unassigned_vassal_desc: "$game_concept_unassigned_vassals$ are [autocracy|E] [vassals|E] who are not assigned to a [tax_jurisdiction|E] as [taxpayers|E], and therefore not contributing [taxes|E] or [levies|E].\n\nOnce assigned to a $game_concept_tax_jurisdiction$ with a [tax_collector|E], they will start paying monthly."
+#EK EDIT: added dynastic acclamation
+  game_concept_appointment_succession_law_desc: "Under $game_concept_appointment_succession_law$, the [title|E] and its associated [holdings|E] will be inherited by the Candidate with the highest [candidate_score|E].\n\nThe types are:\n$EFFECT_LIST_BULLET$[GetLaw('appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('acclamation_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('dynastic_acclamation_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_military_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_ministry_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_grand_marshal_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('meritocratic_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('meritocratic_military_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('japanese_appointment_succession_law').GetName]"

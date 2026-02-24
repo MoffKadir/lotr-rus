@@ -4,7 +4,7 @@
  game_concept_ek_feature: "EK2 Feature"
  game_concept_ek_features: "Elder Kings 2 Features"
  game_concept_ek_features_pg: "Page 1"
- game_concept_ek_features_desc: "This Game Concept serves as an overview of all EK2 features that have a game concept associated with it:\n\n$BULLET_WITH_TAB$ Religion\n$TAB$$BULLET_WITH_TAB$ [fervor_equilibrium|E]\n$TAB$$BULLET_WITH_TAB$ [purity|E]\n$TAB$$BULLET_WITH_TAB$ [pantheon|E]\n$TAB$$BULLET_WITH_TAB$ [pantheon_secondary|E]\n$TAB$$BULLET_WITH_TAB$ [patron_trait|E]\n$TAB$$BULLET_WITH_TAB$ [abomination|E]\n$TAB$$BULLET_WITH_TAB$ [liturgical_language|E]\n$BULLET_WITH_TAB$ Culture\n$TAB$$BULLET_WITH_TAB$ [pariah|E]\n$TAB$$BULLET_WITH_TAB$ [daedric_race|E]\n$TAB$$BULLET_WITH_TAB$ [nativity_region|E]\n$TAB$$BULLET_WITH_TAB$ [migratory_culture|E]\n$TAB$$BULLET_WITH_TAB$ [culture_revival|E]\n$TAB$$BULLET_WITH_TAB$ [core_traditions|E]\n$BULLET_WITH_TAB$ Government\n$TAB$$BULLET_WITH_TAB$ [academy|E]\n$TAB$$BULLET_WITH_TAB$ [autocracy|E]\n$TAB$$BULLET_WITH_TAB$ [hierocracy|E]\n$TAB$$BULLET_WITH_TAB$ [ceremoniarchy|E]\n$TAB$$BULLET_WITH_TAB$ [praxis|E]\n$TAB$$BULLET_WITH_TAB$ [feudal_like_government|E]\n$TAB$$BULLET_WITH_TAB$ [pirate|E]\n$TAB$$BULLET_WITH_TAB$ [pirate_share|E]\n$TAB$$BULLET_WITH_TAB$ [expected_prestige_level|E]\n$TAB$$BULLET_WITH_TAB$ [might_makes_right|E]\n\n < #V Page 1#! - [ek_features_page2_pg|E] >"
+ game_concept_ek_features_desc: "This Game Concept serves as an overview of all EK2 features that have a game concept associated with it:\n\n$BULLET_WITH_TAB$ Religion\n$TAB$$BULLET_WITH_TAB$ [fervor_equilibrium|E]\n$TAB$$BULLET_WITH_TAB$ [purity|E]\n$TAB$$BULLET_WITH_TAB$ [pantheon|E]\n$TAB$$BULLET_WITH_TAB$ [pantheon_secondary|E]\n$TAB$$BULLET_WITH_TAB$ [patron_trait|E]\n$TAB$$BULLET_WITH_TAB$ [abomination|E]\n$TAB$$BULLET_WITH_TAB$ [liturgical_language|E]\n$BULLET_WITH_TAB$ Culture\n$TAB$$BULLET_WITH_TAB$ [pariah|E]\n$TAB$$BULLET_WITH_TAB$ [daedric_race|E]\n$TAB$$BULLET_WITH_TAB$ [nativity_region|E]\n$TAB$$BULLET_WITH_TAB$ [migratory_culture|E]\n$TAB$$BULLET_WITH_TAB$ [culture_revival|E]\n$TAB$$BULLET_WITH_TAB$ [core_traditions|E]\n$BULLET_WITH_TAB$ Government\n$TAB$$BULLET_WITH_TAB$ [academy|E]\n$TAB$$BULLET_WITH_TAB$ [autocracy|E]\n$TAB$$BULLET_WITH_TAB$ [ceremoniarchy|E]\n$TAB$$BULLET_WITH_TAB$ [praxis|E]\n$TAB$$BULLET_WITH_TAB$ [feudal_like_government|E]\n$TAB$$BULLET_WITH_TAB$ [pirate|E]\n$TAB$$BULLET_WITH_TAB$ [pirate_share|E]\n$TAB$$BULLET_WITH_TAB$ [expected_prestige_level|E]\n$TAB$$BULLET_WITH_TAB$ [might_makes_right|E]\n\n < #V Page 1#! - [ek_features_page2_pg|E] >"
  game_concept_ek_feature_page2: "EK2 Feature"
  game_concept_ek_features_page2: "Elder Kings 2 Features"
  game_concept_ek_features_page2_pg: "Page 2"
@@ -54,6 +54,7 @@
  game_concept_banish_demon_desc: "'$game_concept_banish_demon$' are a special type of [war|E] waged against [rulers|E] who are [daedric_race|E] when you do not follow a [GetReligionFamily('rf_daedra').GetName] [faith|E].\n\nThey allow the attacker to seize all [counties|E] in the target [duchy|E] that are held by a [daedric_race|E]. Others in the target duchy are vassalized instead."
  
  game_concept_pantheon: "Pantheon"
+ game_concept_pantheons: "Pantheons"
  game_concept_patron: "Patron"
  game_concept_patrons: "Patrons"
  game_concept_patron_deity: "Patron Deity"
@@ -66,6 +67,12 @@
  game_concept_secondary_pantheon: "Secondary Pantheon"
  game_concept_secondary: "Secondary"
  game_concept_pantheon_secondary_desc: "A Secondary Pantheon allows a faith to gain up to three Patrons from another [pantheon|E] than their Main Pantheon. This represents a certain degree of syncretism or outside influence. Having a Secondary Pantheon reduces [faith_hostility|E] with any [faith|E] with the Main Pantheon equivalent."
+
+ game_concept_divines_pantheon_hostility: "Divines Pantheon Hostility"
+ game_concept_divines_pantheon_hostility_desc: "For the purpose of [faith_hostility|E], the following [pantheons|E] are considered the same one, reducing hostility by #P -25#!:\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_divines').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_nord').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_redguard').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_breton').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_nedic_aedra').GetBaseName]"
+
+ game_concept_aedric_pantheon_hostility: "Aedric Pantheon Hostility"
+ game_concept_aedric_pantheon_hostility_desc: "For the purpose of [faith_hostility|E], the following [pantheons|E] are considered the same one, reducing hostility by #P -25#!:\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_aedra').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_falmer').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_malada').GetBaseName]"
  
  game_concept_liturgical_language: "Liturgical Language"
  game_concept_liturgical_language_desc: "While most [faiths|E] prefer to use the [language|E] of their faithful to perform religious rites and sacrements, a few of them prefer to use forgotten or otherworldly tongues, which is known as their Liturgical Language.\n\nThe [clergy|E] of this Faith is expected to know this Language, and those who aren't part of it but know the Liturgical Language receive a [piety|E] and [clergy|E] [opinion|E] bonus.\n\n#F The deep tongue of Oblivion and the language used by the Dragons are some of these Liturgical Languages.#!"
@@ -133,7 +140,7 @@
  
  game_concept_writ_of_war: "Writ of War"
  game_concept_writs_of_war: "Writs of War"
- game_concept_writ_of_war_desc: "A Writ of War is a permit given by the [grand_council_morrowind|E] to wage war against the enemies of Resdayn.\n\nBuy it from the current [high_councilor|E] using the #V '$buy_writ_of_war_interaction$'#! [character_interaction|E] during the $gcm_autonomy$ [situation_phase|E] or the #V '$purchase_writ_of_war_decision$'#! [decision|E] during the $gcm_balanced$ [situation_phase|E]. Writs of War cannot be bought during the $gcm_centralised$ [situation_phase|E].\n\nA Writ of War is expended on use and must be used within 5 years."
+ game_concept_writ_of_war_desc: "A Writ of War is a permit given by the [grand_council_morrowind|E] to wage war against the enemies of Resdayn.\n\nBuy it from the current [high_councilor|E] using the #V '$buy_writ_of_war_interaction$'#! [character_interaction|E] during the $gcm_balanced$ [situation_phase|E] or the #V '$purchase_writ_of_war_decision$'#! [decision|E] during the $gcm_autonomy$ [situation_phase|E]. Writs of War cannot be bought during the $gcm_centralised$ [situation_phase|E].\n\nA Writ of War is expended on use and must be used within 5 years."
 
  game_concept_writ_of_execution: "Honorable Writ of Execution"
  game_concept_writs_of_execution: "Honorable Writs of Execution"
@@ -144,11 +151,11 @@
  game_concept_outlander_desc: "To the Dunmer of Morrowind, anyone not native born and bred are considered #italic Outlanders#!. When the [grand_council_morrowind|E] is in its $gcm_balanced$ or $gcm_centralised$ [situation_phase|E], Outlanders are subject to [imprisonment|E] and [revocation|E] unless they are [GetSubjectContractType( 'cultural_rights' ).GetObligationName( 'cultural_rights_protected' )]."
 
  game_concept_great_house_value: "House Values"
- game_concept_great_house_value_desc: "Traditionally, each Great House has been associated with certain values, such that candidates vying for House leadership should display certain educations or personal skillsets.\n\nThe House Values are as such:\n• Dres: [intrigue_i][intrigue|E] and [stewardship_i][stewardship|E]\n• Hlaalu: [diplomacy_i][diplomacy|E] and [stewardship_i][stewardship|E]\n• Indoril: [diplomacy_i][diplomacy|E] and [learning_i][learning|E]\n• Redoran: [martial_i][martial|E] and [learning_i][learning|E]\n• Telvanni: [intrigue_i][intrigue|E] and [arcana_i][arcana|E]"
+ game_concept_great_house_value_desc: "Traditionally, each Great House has been associated with certain values, such that candidates vying for House leadership should display certain educations or personal skillsets.\n\nThe House Values are as such:\n• Dres: [intrigue_i][intrigue|E] and [stewardship_i][stewardship|E]\n• Hlaalu: [diplomacy_i][diplomacy|E] and [stewardship_i][stewardship|E]\n• Indoril: [diplomacy_i][diplomacy|E] and [learning_i][learning|E]\n• Redoran: [martial_i][martial|E] and [learning_i][learning|E]\n• Telvanni: [intrigue_i][intrigue|E] and [arcana_i][arcana|E]\n• Dagoth: [intrigue_i][intrigue|E] and [learning_i][learning|E]"
 
  game_concept_great_house_tomb: "Great House Tomb"
  game_concept_tomb: "Tomb"
- game_concept_great_house_tomb_desc: "The Dunmer of Morrowind place great emphasis on respecting their ancestors, and maintain great tombs in their honour, protected by powerful magic and strange rituals. This is also the case for the Great Houses, who each claim ancestral tombs, containing their greatest leaders and heroes.\n\nThese are the locations of each Great House Tomb:\n• Dres: [GetTitleByKey('c_darmora').GetName]\n• Hlaalu: [GetTitleByKey('c_molag_mar').GetName]r\n• Indoril: [GetTitleByKey('c_davon').GetName]\n• Redoran: [GetTitleByKey('c_cormaris').GetName] \n• Telvanni: [GetTitleByKey('c_shevik').GetName]"
+ game_concept_great_house_tomb_desc: "The Dunmer of Morrowind place great emphasis on respecting their ancestors, and maintain great tombs in their honour, protected by powerful magic and strange rituals. This is also the case for the Great Houses, who each claim ancestral tombs, containing their greatest leaders and heroes.\n\nThese are the locations of each Great House Tomb:\n• Dres: $c_darmora$\n• Hlaalu: $c_molag_mar$\n• Indoril: $c_davon$\n• Redoran: $c_cormaris$\n• Telvanni: $c_shevik$"
 
  game_concept_high_councilor: "High Councilor"
  game_concept_high_councilor_desc: "High Councilor is the head of the nation of Morrowind. They are responsible for the nation's internal and external politics, providing [writs_of_war|E] to other members of the [grand_council|E] and controlling distribution of [writs_of_execution|E]. In the more centralised periods, High Councilor can open Vvardenfell to colonisation or ban slavery throughout Morrowind."
@@ -157,12 +164,12 @@
  game_concept_alinor_isolationism_desc: "$game_concept_alinor_isolationism$ represents the isolation of the High Elven Kingdom of Alinor from the rest of Tamriel. The [situation|E] has two [situation_phases|E]: $alinor_closed$ and $alinor_open$.\n\nIn $alinor_closed$ [situation_phase|E], Altmer forsake all interactions with other peoples and are unable to conduct diplomacy with or wage war on anyone outside of the Summerset Isles.\n\nIn $alinor_open$ [situation_phase|E], the Isles become open to outlanders, allowing new opportunities for diplomacy and expansion but angering native High Elves in the process."
 
  game_concept_feudal_like_government: "Feudal-like Government"
- game_concept_feudal_like_government_desc: "[autocracy|E], [feudalism|E] and [hierocracy|E] are highly institutionalised and are considered feudal-like, which unlocks courts and allows for the founding of certain kingdoms."
+ game_concept_feudal_like_government_desc: "[autocracy|E] and [feudalism|E] are highly institutionalised and are considered feudal-like, which unlocks courts and allows for the founding of certain kingdoms."
 
  game_concept_pirate: "Pirate"
  game_concept_pirate_i: "@government_type_pirate!"
  game_concept_pirate_government: "Pirate Government"
- game_concept_pirate_desc: "Pirate realms are a [government_form|E] centered around [raiding|E] and [raid_loot|E]. Each pirate vassal provides a small tribute to their pirate liege, extracted from their raids.\n\n[holdings|E] under a pirate realm tend to give fewer [taxes|E], so a pirate ruler has to rely on constant raids and lootings to acquire gold.\nIn return, [counties|E] held by a Pirate ruler tend to ignore the wrong [culture|E] and [faith|E] impact on their [county_opinion|E], which in turns help the Pirate secure their bid in the [pirate_share|E] succession.\n\nAs Pirates heavily rely on overseas raiding and the control of the seas, any non-coastal county will be effectively independent, sending no tax or [levy|E] and breaking away from the realm upon succession.\n\nPirate rulers who wish for a more secure succession and a more peaceful life inland can abandon their pirate ways, and become a [feudal|E] or [autocratic|E] realm."
+ game_concept_pirate_desc: "Pirate realms are a [government_form|E] centered around [raiding|E] and [loot|E]. Each pirate vassal provides a small tribute to their pirate liege, extracted from their raids.\n\n[holdings|E] under a pirate realm tend to give fewer [taxes|E], so a pirate ruler has to rely on constant raids and lootings to acquire gold.\nIn return, [counties|E] held by a Pirate ruler tend to ignore the wrong [culture|E] and [faith|E] impact on their [county_opinion|E], which in turns help the Pirate secure their bid in the [pirate_share|E] succession.\n\nAs Pirates heavily rely on overseas raiding and the control of the seas, any non-coastal county will be effectively independent, sending no tax or [levy|E] and breaking away from the realm upon succession.\n\nPirate rulers who wish for a more secure succession and a more peaceful life inland can abandon their pirate ways, and become a [feudal|E] or [autocratic|E] realm."
  
  game_concept_pirate_share: "Pirate Share"
  game_concept_pirate_share_desc: "Under the $game_concept_pirate_share$ [succession_law|E], each [county|E] decides if it follows the former ruler's [heir|E], or if they elect one of their own to rule them. The county having a high [county_opinion|E] will help secure it during succession."
@@ -189,12 +196,6 @@
  game_concept_autocracy_government: "Autocracy Government"
  game_concept_autocratic: "Autocratic"
  game_concept_autocracy_desc: "Autocracy is a [government_form|E] in which the amount of [levies|E] and [taxes|E] given to a [liege|E] by their [vassals|E] is determined by the [aptitude|E] of said Liege's [tax_collector|E]."
- 
- game_concept_hierocracy: "Hierocracy"
- game_concept_hierocracy_i: "@government_type_hierocracy!"
- game_concept_hierocracy_government: "Hierocratic Government"
- game_concept_hierocratic: "Hierocratic"
- game_concept_hierocracy_desc: "Hierocracy is a [government_form|E] in which the amount of [levies|E] and [taxes|E] given to a [liege|E] by their [vassals|E] is determined by the [aptitude|E] of said Liege's [tax_collector|E]. It is only used by [heads_of_faith|E] of [faiths|E] with the [GetFaithDoctrine('doctrine_mystical_birthright_head').GetBaseName] [doctrine|E]."
  
  game_concept_ceremoniarchy: "Ceremoniarchy"
  game_concept_ceremoniarchic: "Ceremoniarchic"
@@ -300,7 +301,7 @@
  game_concept_magic_ward_long: "Magic Ward"
  game_concept_magic_ward_short: "Ward"
  game_concept_magic_warded: "Warded"
- game_concept_magic_ward_long_desc: "[counties|E] and [characters|E] may be protected from hostile [spells|E] through magical means.\n\nFor characters this is caused by the [GetModifier('modifier_ritual_magic_ward').GetNameWithTooltip] [ritual|E] while for counties this is caused by a [special_building|E] in the county."
+ game_concept_magic_ward_long_desc: "[counties|E] and [characters|E] may be protected from hostile [spells|E] through magical means.\n\nFor characters this is caused by the [GetModifier('modifier_ritual_magic_ward').GetNameWithTooltip] [magic_ritual|E] while for counties this is caused by a [special_building|E] in the county."
 
  game_concept_mindless_character: "Mindless Character"
  game_concept_mindless: "Mindless"
@@ -318,7 +319,7 @@
  game_concept_magical_education_trait_desc: "Upon reaching [adulthood|E], every character whose [culture|E] has the #V $innovation_magical_studies$#! or #V $innovation_schools_of_magic$#! [innovation|E], a [tradition|E] unlocking Magic education, or their [dynasty|E] has the #V $magicka_legacy_3_name$#! [dynasty_perk|E] receives an $game_concept_magical_education_trait$ if their tutor is able to teach them magic.\n\nThe quality of the [trait|E] a character receives will depends on the skill of their [guardian|E].\n\nA characters $game_concept_magical_education_trait$ improves how fast they will progress in the [magic_lifestyle|E]."
 
  game_concept_isolationist_tradition: "Isolationist Tradition"
- game_concept_isolationist_tradition_desc: "$culture_parameter_dislikes_marrying_outside_of_culture$\n$culture_parameter_dislikes_marrying_outside_of_heritage$\n$culture_parameter_ai_doesnt_marry_outside_culture$\n$culture_parameter_will_not_be_vassalised$"
+ game_concept_isolationist_tradition_desc: "$culture_parameter_dislikes_marrying_outside_of_culture$\n$culture_parameter_dislikes_marrying_outside_of_heritage$\n$culture_parameter_ai_doesnt_marry_outside_culture$\n$culture_parameter_will_not_be_vassalised$\n$culture_parameter_reduced_marriage_acceptance_distant_realms$\n$culture_parameter_reduced_marriage_acceptance_outside_culture$"
 
  game_concept_sorcerer_kings_tradition: "Sorcerer Kings Tradition"
- game_concept_sorcerer_kings_tradition_desc: "$culture_parameter_unlocks_court_magical$\n$culture_parameter_magic_elective_enabled$\n$culture_parameter_vassal_contribution_tied_arcana$\n$culture_parameter_rank_gives_bonus_to_mage_maa$\n$culture_parameter_arcana_claim_enabled$\n$culture_parameter_can_disrupt_prisoners$\n$culture_parameter_magic_disruption_blocks_inheritance$"
+ game_concept_sorcerer_kings_tradition_desc: "$culture_parameter_unlocks_arcana_education$\n$culture_parameter_unlocks_court_magical$\n$culture_parameter_magic_elective_enabled$\n$culture_parameter_vassal_contribution_tied_arcana$\n$culture_parameter_rank_gives_bonus_to_mage_maa$\n$culture_parameter_arcana_claim_enabled$\n$culture_parameter_can_disrupt_prisoners$\n$culture_parameter_magic_disruption_blocks_inheritance$"
