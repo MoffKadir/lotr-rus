@@ -1,0 +1,28 @@
+﻿l_russian:
+ crown_authority_0_effects:0 "$EFFECT_LIST_BULLET$#indent_newline:3 Можно создавать [Concept('tributaries', 'данников')|E]]#!"
+ tribal_authority_0_effects:0 "$EFFECT_LIST_BULLET$#indent_newline:3 Можно создавать [Concept('tributaries', 'данников')|E]]#!"
+
+ religious_tolerance_law: "Религиозная терпимость"
+ religious_tolerance_law_singular:0 "$religious_tolerance_law$"
+ religious_tolerance_law_0: "Нетерпимость"
+ religious_tolerance_law_0_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 Можно обращать [Concept('characters', 'персонажей')|E] и [counties|El]  [Concept('vassal', 'вассалов')|E], чья конфессия считается [Concept('faith_hostile', 'враждебной')|E] или  [Concept('faith_evil', 'злой')|E] для [Concept('state_faith', 'государственной религии')|E]#!\n$EFFECT_LIST_BULLET$#indent_newline:3 #bold Нельзя#! обращать персонажей или [counties|El]  [Concept('vassal', 'вассалов')|E], чья конфессия считается [Concept('faith_astray', 'заблудшей')|E] по отношению к [Concept('state_faith', 'государственной религии')|E]#!, если только у [Concept('state_faith', 'государственной религии')|E] не доктрина [GetFaithDoctrine('doctrine_pluralism_fundamentalist').GetBaseName]#!"
+ religious_tolerance_law_1: "Частичная терпимость"
+ religious_tolerance_law_1_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 Можно обращать [Concept('characters', 'персонажей')|E] и [counties|El]  [Concept('vassal', 'вассалов')|E], чья конфессия считается [Concept('faith_evil', 'воплощённым злом')|E] для [Concept('state_faith', 'государственной религии')|E]\n$EFFECT_LIST_BULLET$#indent_newline:3 #bold Нельзя#! обращать персонажей или [counties|El]  [Concept('vassal', 'вассалов')|E], чья конфессия считается [Concept('faith_astray', 'заблудшей')|E] или [Concept('faith_hostile', 'враждебной')|E] для [Concept('state_faith', 'государственной религии')|E]#!"
+ religious_tolerance_law_2: "Абсолютная терпимость"
+ religious_tolerance_law_2_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 #bold Нельзя#! обращать [Concept('characters', 'персонажей')|E] или [counties|El] [Concept('vassal', 'вассалов')|E]#!"
+ admin_religious_tolerance_none_trigger: "Нельзя требовать обращения у персонажа с [Concept('faith_astray', 'заблудшей')|E] [Concept('faith', 'конфессией')|E] из-за [Concept('law', 'закона')|E] [GetLaw('religious_tolerance_law_0').GetName], если только у [Concept('state_faith', 'государственной религии')|E] не доктрина [GetFaithDoctrine('doctrine_pluralism_fundamentalist').GetBaseName]"
+ admin_religious_tolerance_partial_trigger: "Из-за [Concept('law', 'закона')|E] [GetLaw('religious_tolerance_law_1').GetName] можно требовать обращения только у [Concept('characters', 'персонажей')|E] со [Concept('faith_evil', 'заблудшей')|E] [Concept('faith', 'конфессией')|E]"
+ admin_religious_tolerance_full_trigger: "Нельзя требовать обращения у персонажа из-за [Concept('law', 'закона')|E] [GetLaw('religious_tolerance_law_2').GetName]"
+ have_cyrodiilic_cult_or_adaptive: "У [Concept('state_faith', 'государственной религии')|E] должна быть одна из следующих [Concept('doctrines', 'доктрин')|E]: [GetFaithDoctrine('doctrine_pluralism_pluralistic').GetBaseName], [GetFaithDoctrine('tenet_adaptive').GetBaseName], [GetFaithDoctrine('special_doctrine_cyrodiilic_cult').GetBaseName]"
+
+ intrigue_law_cost_tooltip:0 "Навык [Concept('intrigue', 'интриг')|E]"
+ poor_intrigue_law_cost_tooltip:0 "Низкий [Concept('intrigue', 'навык интриг')|E]"
+
+  vvardenfell_colonisation:0 "Статус Вварденфелла"
+  vvardenfell_colonisation_singular:0 "Статус Вварденфелла"
+  vvardenfell_temple_reserve:0 "Заповедные земли Храма"
+  vvardenfell_open:0 "Вварденфелл открыт"
+  vvardenfell_temple_reserve_effects:0 "• Нельзя объявлять [Concept('war', 'войны')|E] эшлендерам, чья [Concept('capital', 'столица')|E] находится в регионе [GetGeographicalRegion('mundus_tamriel_morrowind_vvardenfell').GetName]\n• [Concept('grand_council_members', 'Члены Великого совета')|E] не могут возводить новые [Concept('holdings', 'владения')|E] в регионе [GetGeographicalRegion('mundus_tamriel_morrowind_vvardenfell').GetName]\n• [Concept('pilgrimages', 'Паломничества')|E] обходятся дешевле, а [Concept('travel_option', 'вариант путешествия')|E] #V Запросить сопровождение Вечных стражей#! не требует затрат\n\n#weak Вварденфелл — священная земля. Её нельзя тревожить.#!"
+  vvardenfell_open_effects:0 "• Можно объявлять [Concept('war', 'войны')|E] эшлендерам, чья [Concept('capital', 'столица')|E] находится в регионе [GetGeographicalRegion('mundus_tamriel_morrowind_vvardenfell').GetName]\n• [Concept('grand_council_members', 'Члены Великого совета')|E] могут возводить новые [Concept('holdings', 'владения')|E] в регионе [GetGeographicalRegion('mundus_tamriel_morrowind_vvardenfell').GetName]\n\n#weak Вварденфелл — земля возможностей, чьи несметные богатства только и ждут первооткрывателей.#!"
+  vvardenfell_temple_reserve_holdings:0 "Вы не можете возводить новые [Concept('holdings', 'владения')|E] в регионе [GetGeographicalRegion('mundus_tamriel_morrowind_vvardenfell').GetName] из-за текущего закона [Concept('grand_council', 'Великого совета')|E] «[GetLawGroup('vvardenfell_colonisation').GetNameSingular]»"
+  vvardenfell_temple_reserve_pilgrimage_cost:0 "Заповедные земли Храма"

@@ -1,0 +1,23 @@
+﻿l_russian:
+ ### EK TODO: re-enable the government specific CAs text somehow while also take into account your liege's government type
+ ### Crown Authority 1
+ crown_authority_1_effects_hierocracy:0 "\n[hierocracy_government|E]:\n$EFFECT_LIST_BULLET$[doctrine|E] «$doctrine_clerical_function_name$» незначительно усиливается\n$EFFECT_LIST_BULLET$[fervor_equilibrium|E] [Concept('faith', 'конфессии')|E] незначительно увеличивается (#P +5#!)\n"
+ ### Crown Authority 2
+ crown_authority_2_effects_hierocracy:0 "\n[hierocracy_government|E]:\n$EFFECT_LIST_BULLET$[doctrine|E] «$doctrine_clerical_function_name$» усиливается\n$EFFECT_LIST_BULLET$[fervor_equilibrium|E] [Concept('faith', 'конфессии')|E] увеличивается (#P +10#!)\n$EFFECT_LIST_BULLET$ [personality_traits|E] [Concept('ruler', 'правителя')|E] становятся [Concept('virtues', 'добродетелями')|E] [Concept('faith', 'конфессии')|E]\n$EFFECT_LIST_BULLET$[traits|E], противоположные [Concept('personality_traits', 'свойствам личности')|E] [Concept('ruler', 'правителя')|E], становятся [Concept('sins', 'грехами')|E] [Concept('faith', 'конфессии')|E]\n"
+ ### Crown Authority 3
+ crown_authority_3_effects_hierocracy:0 "\n[hierocracy_government|E]:\n$EFFECT_LIST_BULLET$[doctrine|E] «$doctrine_clerical_function_name$» значительно усиливается\n$EFFECT_LIST_BULLET$[fervor_equilibrium|E] [Concept('faith', 'конфессии')|E] значительно увеличивается(#P +15#!)\n$EFFECT_LIST_BULLET$ [personality_traits|E] [Concept('ruler', 'правителя')|E] становятся [Concept('virtues', 'добродетелями')|E] [Concept('faith', 'конфессии')|E]\n$EFFECT_LIST_BULLET$[traits|E], противоположные [Concept('personality_traits', 'свойствам личности')|E] [Concept('ruler', 'правителя')|E], становятся [Concept('sins', 'грехами')|E] [Concept('faith', 'конфессии')|E]"
+ partition_succession_law:1 "Разделение" ### EK EDIT: slightly tweaked description to account for the changes in the way the succession works
+ partition_succession_law_subname:0 "Все дети получают равное наследство"
+ partition_succession_law_effects:1 "\n#V $partition_succession_law$ предполагает, что при [Concept( 'succession', 'наследовании' )] ваши [titles|l] будут равно поделены между вашими детьми, при этом старший из них получит небольшое преимущество.#!\n\n#weak $partition_base_desc$#!"
+ partition_base_desc:2 "#weak При наследовании все [titles|El], которыми владел покойный [ruler|El], поделят между собой [eligible_children|El], при этом [Concept( 'player_heir', 'наследнику-игроку' )|El] всегда достаются [primary_title|El], [realm_capital|El] и все соответствующие [de_jure|El] титулы.\n\nМладшие дети получат титулы, начиная с равных по [Concept( 'rank', 'рангу' )|El] первому, а если таковых нет, то титулы более низкого уровня. Ваши наследники-игроки могут получать до срока только те титулы, которые перешли бы им по наследству.\n#!"
+ 
+ 
+ imperial_bureaucracy_0_effects:0 "$EFFECT_LIST_BULLET$#indent_newline:3 [Concept('titles', 'Титулы')|E] вассалов не могут быть унаследованы персонажами за пределами [Concept('realm', 'державы')|#!\n$EFFECT_LIST_BULLET$Можно создавать [Concept('tributaries', 'данников')|E]]#!" #EK EDIT: added tributaries
+ 
+ crown_authority_0_effects_all_governments:0 ""
+ crown_authority_1_effects_all_governments:0 ""
+ crown_authority_2_effects_all_governments:0 ""
+ crown_authority_3_effects_all_governments:0 ""
+
+ MY_REALM_WINDOW_LAWS_PROVINCIAL_LAWS:0 "Бюрократические законы" #War provincial
+ MY_REALM_WINDOW_LAWS_PROVINCIAL_LAWS_DESC:0 "Только [top_liege|El] бюрократической [Concept('realm', 'державы')|E] может менять бюрократические законы" #Referenced Byzantine empire

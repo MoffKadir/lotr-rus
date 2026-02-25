@@ -1,0 +1,18 @@
+﻿l_russian: 
+ 
+ #EK TODO: give this a writer for review
+ ek_travel_option_events.0001.t: "$adventurers_scout_for_talent_option$: покрытый позором"
+ ek_travel_option_events.0001.intro: "Проезжая провинцию [location.GetTitle.GetNameNoTier], я встречаю у дороги [Select_CString(local_character.IsFemale, 'местную жительницу', 'местного жителя' )]. Вскоре мне всё становится ясно по косвенным признакам: озирания из-за плеча, пальцы, непроизвольно сжатые на скрытом кинжале, тяжёлый взгляд, какой встретишь только у выходцев из низов общества. Судя по всему, у н[local_character.GetHerHis] есть веская причина покинуть своих земляков. Быть может, [local_character.GetSheHe] станет хорошим пополнением для моего лагеря. Когда я подхожу ближе, [local_character.GetSheHe] встречает меня [ROOT.Char.Custom2('QuirkAdjectivePosOrNeg', SCOPE.sC('local_character'))]ой ухмылкой.\n\n"
+ ek_travel_option_events.0001.excellent: "«Я [local_character.GetWomanMan] выдающихся талантов, — [local_character.GetSheHe] заявляет с уверенностью, — и я предлагаю вам свои услуги — не бесплатно, разумеется»."
+ ek_travel_option_events.0001.good: "«Думаю, я могу быть для вас [Select_CString(local_character.IsFemale, 'полезна', 'полезен' )], — говорит [local_character.GetSheHe], — во сколько вы оцените мою помощь?»"
+ ek_travel_option_events.0001.average: "«Похоже, у нас много общего, — говорит [local_character.GetSheHe]. — Может, поработаем вместе?»"
+ ek_travel_option_events.0001.poor: "«Прошу, мне некуда больше идти, — умоляет [local_character.GetSheHe]. — Позвольте мне укрыться в вашем лагере»."
+ ek_travel_option_events.0001.a: "Бери эти монеты и покажи чего стоишь!"
+ ek_travel_option_events.0001.provisions: "Накормим тебя обедом, и мы в расчёте, хорошо?"
+ ek_travel_option_events.0001.b: "[Select_CString(local_character.IsFemale, 'Бесполезная', 'Бесполезный' )] [local_character.Custom('InsultNoun')] вроде тебя мне ни к чему."
+
+ excellent.skill_tt: "[local_character.GetUIName] обладает выдающимися навыками"
+ good.skill_tt: "[local_character.GetUIName] обладает хорошими навыками"
+ average.skill_tt: "[local_character.GetUIName] обладает средними навыками"
+ poor.skill_tt: "[local_character.GetUIName] обладает плохими навыками"
+ 

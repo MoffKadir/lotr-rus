@@ -1,0 +1,39 @@
+﻿l_russian:
+ ### Triggers
+ county_must_have_temple_holding:0 "Хотя бы в одной из провинций этого [Concept('county', 'графства')|E] должно быть [Concept('temple_holding', 'храмовое владение')|E]"
+ orphanage_already_present_trigger_desc:0 "В этом [Concept('county', 'графстве')|E] уже есть сиротский приют"
+ has_pirate_government:0 "У владетеля должна быть пиратская [Concept( 'government_form', 'форма правления' )|E]" 
+ not_has_pirate_government:0 "У владетеля не должна быть пиратская [Concept( 'government_form', 'форма правления' )|E]" 
+ must_have_necromantic_faith:0 "Владетель должен придерживаться злонамеренной некромантской конфессии"
+ must_not_have_necromantic_faith:0 "Владетель не должен придерживаться злонамеренной некромантской конфессии"
+ argonian_or_hist_pantheon:0 "[faith|E] владетеля должна иметь [Concept( 'pantheon', 'пантеон' )|E] «[GetFaithDoctrine('doctrine_pantheon_hist').GetBaseName]», либо владетель должен принадлежать к #V $heritage_argonian_name$ому#! [Concept( 'heritage', 'наследию' )|E]"
+ argonian_or_hist_pantheon_or_syncretic:0 "[faith|E] владетеля должна иметь догмат «[GetFaithDoctrine('tenet_hist_syncretism').GetBaseName]» либо [Concept( 'pantheon', 'пантеон' )|E] «[GetFaithDoctrine('doctrine_pantheon_hist').GetBaseName]», либо владетель должен принадлежать к #V $heritage_argonian_name$ому#! [Concept( 'heritage', 'наследию' )|E]"
+ autocratic_or_sithis_or_hist:0 "[faith|E] владетеля должна иметь [Concept( 'pantheon', 'пантеон' )|E] «[GetFaithDoctrine('doctrine_pantheon_hist').GetBaseName]» или «[GetFaithDoctrine('doctrine_pantheon_hist').GetBaseName]» либо владетель должен иметь любую форму правления, кроме [Concept( 'tribal_government', 'племенной')|E]"
+ has_singing_crystal:0 "У владетеля должен быть [artifact|El] поющий кристалл"
+ is_argonian_or_sithis:0 "[faith|E] владетеля должна иметь [Concept( 'pantheon', 'пантеон' )|E] «[GetFaithDoctrine('doctrine_pantheon_sithis').GetBaseName]», либо владетель должен принадлежать к #V $heritage_argonian_name$ому#! [Concept( 'heritage', 'наследию' )|E]"
+ is_cantemiric:0 "Владетель должен принадлежать к $cantemiric_collective_noun$ой [Concept( 'culture', 'культуре' )|E] #italic или#! a [Concept( 'culture', 'культуре' )|E], произошедшей от $cantemiric_collective_noun$ой"
+ is_khajiiti:0 "Владетель должен принадлежать к #V $heritage_khajiiti_name$ому#! [Concept( 'heritage', 'наследию' )|E]"
+ has_staff_of_magnus:0 "У владетеля должен быть [artifact|El] посох Магнуса"
+ green_pact_or_bosmeri:0 "Владетель должен принадлежать к #V $heritage_bosmeri_name$ому#! [Concept( 'heritage', 'наследию' )|E] или у его [faiths|El] должна быть [doctrine|El] «Зелёный Пакт»"
+ ten_iron_oaths: "[faith|E] владетеля должна иметь [pantheon|El] «Камни»"
+ not_ten_iron_oaths: "[faith|E] владетеля не должна иметь [pantheon|El] «Камни»"
+ # Holy Site
+ holy_site_or_moon_worship:0 "[faith|E] владетеля должна считать это место [Concept( 'holy_site', 'священным' )|E] либо иметь догмат «[GetFaithDoctrine('tenet_moon_worship').GetBaseName]»"
+ holy_site_or_zenithar:0 "[faith|E] владетеля должна считать это место [Concept( 'holy_site', 'священным' )|E] либо иметь в [Concept( 'pantheon', 'пантеоне' )|E] Зенитара, З'ена, Зета или культ Гильдий либо быть Сиродильским культом"
+ holy_site_or_khajiiti:0 "[faith|E] владетеля должна считать это место [Concept( 'holy_site', 'священным' )|E] либо иметь [pantheon|El] «Риддл'Тар» или каджитский [pantheon|El]"
+ holy_site_already_present_trigger_desc:0 "В этом [Concept('county', 'графстве')|E] не должна быть уже возведённая [Concept('special_building', 'особая постройка')|E] [Concept('holy_site', 'священного места')|E]. При помощи [Concept('decision', 'решения')|E] #V Перестроить священное место#! вы можете изменить [Concept('special_building', 'особую постройку')|E] на ту, которая соответствует вашей конфессии."
+ holy_site_or_azura:0 "[faith|E] владетеля должна считать это место [Concept( 'holy_site', 'священным' )|E] либо иметь Азуру в составе [Concept( 'pantheon', 'пантеона' )|E]"
+ holy_site_or_tsaesci:0 "[faith|E] владетеля должна считать это место [Concept( 'holy_site', 'священным' )|E] либо владетель должен принадлежать к #V $heritage_tsaesci_name$ому#! [Concept( 'heritage', 'наследию' )|E]"
+ holy_site_or_alkosh:0 "[faith|E] владетеля должна считать это место [Concept( 'holy_site', 'священным' )|E] либо иметь Алкоша в составе [Concept( 'pantheon', 'пантеона' )|E]"
+ # Hist
+ already_has_hist:0 "В этом [Concept('county', 'графстве')|E] уже есть [holding|El] с Хистом"
+ is_upgraded_over_time:0 "Это [building|El] растёт с течением времени, и его нельзя улучшить обычным путём"
+ has_reached_last_stage:0 "[building|E] достигло последнего уровня и больше не вырастет"
+ # Innovations
+ innovation_war_magic_replacement_trigger_desc:0 "Есть [innovation|El] «$innovation_war_magic$» или аналогичная ей"
+ innovation_magical_studies_replacement_trigger_desc:0 "Есть [innovation|El] «$innovation_magical_studies$» или аналогичная ей"
+ # Funeral Doctrines
+ burial_funeral_building_trigger_desc:0 "Владетель должен придерживаться погребальной [Concept( 'doctrine', 'доктрины' )|E], которая предполагает использование кладбищ"
+ green_pact_funeral_building_trigger_desc:0 "Владетель должен придерживаться погребальной [Concept( 'doctrine', 'доктрины' )|E] «$doctrine_funeral_green_pact_name$»"
+ grave_stake_funeral_building_trigger_desc:0 "Владетель должен придерживаться погребальной [Concept( 'doctrine', 'доктрины' )|E] «$doctrine_funeral_grave_stake_name$»"
+

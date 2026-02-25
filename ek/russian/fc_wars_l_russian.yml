@@ -1,0 +1,42 @@
+﻿l_russian:
+ HOSTAGES_WAR_NAME:0 "Освободить узников"
+ hostages_war_victory_desc:0 "Все [prisoners|El] и подневольные [concubines|El], с которыми [attacker.GetShortUIName] [Select_CString(attacker.IsLocalPlayer, 'состоите', 'состоит' )] в родстве и которых [defender.GetShortUIName] [Select_CString(defender.IsLocalPlayer, 'держите', 'держит' )] при дворе, становятся свободны." 
+ hostages_war_white_peace_desc:0 "[prisoners|E] и подневольные [concubines|El] остаются при [Select_CString(defender.IsLocalPlayer, 'вашем дворе', 'дворе персонажа ' )][Select_CString(defender.IsLocalPlayer, '', defender.GetShortUIName )]."
+ hostages_war_defeat_desc:0 "[prisoners|E] и подневольные [concubines|El] останутся при [Select_CString(defender.IsLocalPlayer, 'вашем дворе', 'дворе персонажа ' )][Select_CString(defender.IsLocalPlayer, '', defender.GetShortUIName )]. Также [attacker.GetShortUIName] [Select_CString(attacker.IsLocalPlayer, 'заплатите', 'заплатит' )] компенсацию золотом."   #молюсь Ноктюрнал, чтобы эта вся чепуха сработала
+
+ fc_war_event.0001.t:0 "Освобождая родню"
+ fc_war_event.0001.desc:0 "На нас наступает [attacker.GetShortUIName|U], [attacker.GetSheHe] стремиться вызволить своих родственников, которых мы держим в плену.\n\nВозможно, нам стоит запросить перемирия и отпустить узников, которых [attacker.GetFirstName] хочет освободить?\n\nИли, быть может, нам стоит показать [Select_CString(attacker.IsFemale, 'ей', 'ему')], что с нами не стоит связываться? Передо мной стоит [fc_chosen_captive.GetFirstName], [Select_CString(fc_chosen_captive.IsFemale, 'одна', 'один')] из заключённых, [Select_CString(fc_chosen_captive.IsFemale, 'которая', 'который')] может служить примером."
+ fc_war_event.0001.a:0 "Отправьте пленников обратно. Надеюсь, этого будет достаточно…"
+ fc_war_event.0001.a.end_war:0 "[attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'удовлетворена', 'удовлетворён')]"
+ fc_war_event.0001.a.end_war.ct:0 "Узники сопровождены обратно домой, и наши армии не встретятся на поле битвы."
+ fc_war_event.0001.a.continue_war:0 "[attacker.GetFirstName] продолжает атаковать!"
+ fc_war_event.0001.a.continue_war.ct:0 "Несмотря на наше щедрое предложение, [attacker.GetFirstName] отказывается от перемирия и вынуждает нас продолжать!"
+ fc_war_event.0001.b:0 "[fc_chosen_captive.GetFirstName] послужит прекрасным примером!"
+ fc_war_event.0001.c:0 "Казните их всех! Пусть [attacker.GetFirstName] узнает, что случается, когда кто-то бросает нам вызов!"
+ fc_war_event.0001.d:0 "Это решится на поле боя!"
+ fc_war_event.0001.d.ct:0 "Война будет продолжаться, пока мы не объявим полную победу!"
+ fc_war_event.0001.d.loss:0 "Если мы проиграем, нам придётся #N заплатить огромную компенсацию#! помимо освобождения узников."
+ 
+ fc_war_event.0002.desc:0 "Судя по всему, [defender.GetShortUIName] [Select_CString(defender.IsFemale, 'испугалась', 'испугался')] наших армий и [Select_CString(defender.IsFemale, 'поняла', 'понял')] всю опасность своего положения. [defender.GetSheHe|U] [Select_CString(defender.IsFemale, 'обещала', 'обещал')] нам, что [fc_chosen_captive.GetFirstName] и остальные выйдут на свободу, если мы прекратим войну.\n\nБольшинство ожидают, что мы остановим армии и примем перемирие. Но, возможно, нам стоит показать [Select_CString(defender.IsFemale, 'ему', 'ей')], и всему миру, что случается, когда кто-то угрожает нашей семье.\nИ если [defender.GetFirstName] сдастся, мы также можем забрать большую часть [defender.GetHerHis|l] казны…"
+ fc_war_event.0002.desc:0 "Судя по всему, [defender.GetShortUIName] [Select_CString(defender.IsFemale, 'испугалась', 'испугался')] наших армий и [Select_CString(defender.IsFemale, 'поняла', 'понял')] всю опасность своего положения. [defender.GetSheHe|U] [Select_CString(defender.IsFemale, 'обещала', 'обещал')] нам, что [fc_chosen_captive.GetFirstName] и остальные выйдут на свободу, если мы прекратим войну.\n\nБольшинство ожидают, что мы остановим армии и примем перемирие. Но, возможно, нам стоит показать [Select_CString(defender.IsFemale, 'ему', 'ей')], и всему миру, что случается, когда кто-то угрожает нашей семье.\nИ если [defender.GetFirstName] сдастся, мы также можем забрать большую часть [defender.GetHerHis|l] казны…"
+ fc_war_event.0002.a:0 "Все вернулись, и это самое главное."
+ fc_war_event.0002.b:0 "Пусть мир увидит, что случается, когда кто-то нападает на нашу семью!"
+ fc_war_event.0002.b.ct:0 "Хоть и отказ от [defender.GetHerHis|l] предложения поставит нас в потенциально бесчестную позицию, это также покажет миру, что мы готовы сражаться за нашу семью."
+ fc_war_event.0002.b.potential_execution.ct:0 "[defender.GetFirstName] может решить казнить узников!"
+ 
+ fc_war_event.0003.desc:0 "[attacker.GetShortUIName] [Select_CString(attacker.IsFemale, 'отправила', 'отправил')] маленький отряд доверенных бойцов вместе со своим ответом. Узники были благополучно доставлены, и [fc_chosen_captive.GetFirstName] вместе с остальными вернётся домой.\n\nКак и обещано, война немедленно прекратилась.\n\nМы избежали худшего исхода…"
+ fc_war_event.0003.a:0 "Это определённо к лучшему."
+ fc_war_event.0003.a.prisoner_liberated.ct:0 "[current_hostages_war_prisoner.GetFirstName] наконец на свободе"
+ fc_war_event.0003.a.end_war.ct:0 "[Select_CString(attacker.IsLocalPlayer, 'Ваши армии', 'Армии персонажа ' )][Select_CString(attacker.IsLocalPlayer, '', attacker.GetShortUIName )] были отозваны"
+ 
+ fc_war_event.0004.desc:0 "Мы думали, что если [fc_chosen_captive.GetFirstName] выйдет на волю, [attacker.GetShortUIName] раздумает насчёт войны. Но, судя по всему, этого было недостаточно, и [attacker.GetSheHe|l] хочет чего-то большего, кроме как свободы своей семьи!\n\nУзников вернули в подземелье, и нам придётся преподать [attacker.GetHerHis|l] урок, который [attacker.GetShortUIName] никогда не забудет."
+ fc_war_event.0004.a:0 "Да будет так…"
+ fc_war_event.0004.a.ct:0 "Война продолжится до тех пор, пока одна из сторон не объявит победу."
+ fc_war_event.0004.b:0 "[attacker.GetFirstName] больше никогда не увидит их живыми!"
+ 
+ fc_war_event.0005.desc:0 "Мы ожидали, что [defender.GetShortUIName] сложит оружие и освободит узников или хотя бы притворится [Select_CString(defender.IsFemale, 'отважной', 'отважным')] и откажется отвечать.\n\nНо мы недооценили [defender.GetHerHis|l] подлость и жестокость. Пока мы получали противоречивые отчёты, [defender.GetShortUIName] [Select_CString(defender.IsFemale, 'решила', 'решил')] казнить [Select_CString(fc_chosen_captive.IsFemale, 'пленницу', 'пленника')] [fc_chosen_captive.GetShortUIName]…\n\nУ нас нет другого выбора кроме как продолжать войну, войти в земли нашего врага и отомстить за [fc_chosen_captive.GetHerHis|l] смерть!"
+ fc_war_event.0005.a:0 "Ты будешь [Select_CString(fc_chosen_captive.IsFemale, 'отомщена', 'отомщён')], [fc_chosen_captive.GetFirstName]!"
+ 
+ fc_war_event.0006.desc:0 "Мы не предвидели этого даже в худшем варианте развития событий. [defender.GetShortUIName], [Select_CString(defender.IsFemale, 'взбешённая', 'взбешённый')] нашим объявлением войны, [Select_CString(defender.IsFemale, 'решила', 'решил')] казнить всех узников, близких нам…\n\nУ нас нет другого выбора кроме как продолжать войну и отомстить за их смерть на поле битвы!"
+ fc_war_event.0006.a:0 "[ROOT.Char.GetFaith.NegativeAfterLife] тебя побери!"
+ 

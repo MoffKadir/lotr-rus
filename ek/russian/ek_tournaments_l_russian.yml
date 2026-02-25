@@ -1,0 +1,39 @@
+﻿l_russian:
+
+ ##### TOURNAMENT #####
+
+ ### Tournament Planning
+ tournament_contest_type_magic:0 "Магия"
+ tourney_participant_magic:1 "[Concept( 'trait_level_track_xp', 'опыт пути развития свойства' )|E] «[GetTrait('tourney_participant').GetName( GetNullCharacter )]» в магии"
+ arcana_concept:1 "Навык [Concept('arcana', 'арканы')|E]"
+ has_education_magic:1 "Магическое [Concept('education', 'образование')|E]"
+ character_contest_type_aptitude_magic:1 "#T $character_contest_type_aptitude_start$ $tournament_contest_type_magic$ [contest_aptitude|E]: [Character.Custom('GetContestTypeMagicAptitude')]#![AddTextIf( Not( StringIsEmpty( Character.MakeScope.GetScriptValueDesc('contest_type_aptitude_magic') ) ), Concatenate( '\n', Character.MakeScope.GetScriptValueDesc('contest_type_aptitude_magic') ) )]"
+
+ MAGIC_EXPERIENCE_REGULAR_TOOLTIP:0 "$tournament_contest_favoured_skill_tooltip$ $tourney_participant_magic$"
+ MAGIC_EXPERIENCE_GREATER_TOOLTIP:0 "$tournament_contest_most_favoured_skill_tooltip$ $tourney_participant_magic$"
+
+ ### PHASES 
+ tournament_phase_arcane_clash:0 "Магическая схватка"
+ tournament_phase_arcane_clash_desc:1 "Соревнование в магической мощи и знании тайных искусств, в котором победителем становится последний оставшийся дуэлянт.\n\n$tournament_contest_format_versus$\nКоличество [Concept( 'contest_rounds', 'этапов' )|E]: 3"
+ 
+ ### Costs
+ tournament_arcane_clashes_cost:0 "Магические состязания"
+
+ # ARTIFACTS
+ tournament_prize_desc_arcane_clash:1 "[contest_winner.GetTitledFirstName] побеждает в магической схватке, и [host.GetTitledFirstName] вручает победителю приз. Награда — [newly_created_artifact.GetDesc|l]."
+ tournament_prize_host_desc_arcane_clash:0 "Наградой за победу в магической схватке становится [newly_created_artifact.GetDesc]. Приз назначает и получает [host.GetTitledFirstName], организатор состязания."
+
+ contest_magic_aptitude_value:0 "Пригодность к магической схватке"
+
+ # LIEGE REWARDS FOR LANDLESS KNIGHTS 
+ tournament_arcane_clash_prize_log_title:0 "$tournament_phase_arcane_clash$: приз"
+ tournament_arcane_clash_prize_log:0 "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] наградил [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] за победу в состязании $tournament_phase_arcane_clash$. Приз — [ARTIFACT.GetName]."
+ 
+ tournament_arcane_clash_winner_log_title:0 "Победитель состязания $tournament_phase_arcane_clash$ "
+ tournament_arcane_clash_winner_log:0 "[Select_CString(CHARACTER.IsLocalPlayer, '', 'Персонаж ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, ' персонаж', '' )] выиграл в состязании $tournament_phase_arcane_clash$"
+ 
+#PTV Custom loc
+ locale_window_widget_progress_to_victory_label_active_competing_arcane_clashes:0 "Вы соревнуетесь в #bold магической схватке#!"
+
+# Conclusions
+ tournament_conclusion_winner_arcane_clash:0 "\nПобедитель в #BOL магических состязаниях#!: [activity.MakeScope.Var('arcane_clash_winner').Char.GetFirstName]"

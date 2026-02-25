@@ -1,0 +1,13 @@
+﻿l_russian:
+ task_promote_local_culture:0 "Распространять [Concept('local_culture', 'местную культуру')|E]"
+ task_promote_local_culture_effect_desc:1 "#S При #V 100%#!#!:\n$TAB$[county|E] переходит в [Concept('local', 'местную' )|El] [Concept('native', 'коренную' )|El] [Concept('culture', 'культуру' )|El] в пределах [Concept('heritage', 'наследия' )|El]"
+ NOT_NATIVE_REGION_REASON:0 "Ваша культура не является [Concept('native', 'коренной' )|El] для [Concept('region', 'региона' )|El] этого графства"
+ NOMADIC_CULTURE_CULTURE_CONVERT_TO:0 "Ваша культура считается скитающейся"
+ NOMADIC_CULTURE_CULTURE_CONVERT_FROM:0 "Вы распространяете культуру в провинции со скитающейся культурой"
+ 
+ task_promote_culture_effect_no_culure_to_convert_desc:0 "#S При #V 100%#!#!:\n$TAB$[county|E] переходит в [Concept('culture', 'культуру' )|El] по вашему выбору"
+ task_promote_culture_acceptance_effect_no_culure_to_convert_desc:0 "\n$TAB$[county.GetProvince.GetCounty.GetCulture.GetName] и культура по вашему выбору понижают [Concept( 'cultural_acceptance', 'взаимную терпимость' )|E] на [SCOPE.ScriptValue('culture_conversion_acceptance_impact')|N^/%]"
+ 
+ admin_conversion_no_tolerance_tt:0 "Из-за [Concept('law', 'закона')|E] «[GetLaw('religious_tolerance_law_0').GetName]» нельзя обращать [Concept('faith_astray', 'заблудшие')|E] [Concept('faiths', 'конфессии')|E] по отношению к [Concept('state_faith', 'государственной')|E], если только [state_faith|El] не придерживается доктрины «[GetFaithDoctrine('doctrine_pluralism_fundamentalist').GetBaseName]»"
+ admin_conversion_partial_tolerance_tt:0 "Из-за [Concept('law', 'закона')|E] «[GetLaw('religious_tolerance_law_1').GetName]» можно обращать только [Concept('faith_evil', 'злые')|E] [Concept('faiths', 'конфессии')|E] по отношению к [Concept('state_faith', 'государственной')|E]"
+ admin_conversion_full_tolerance_tt:0 "Из-за [Concept('law', 'закона')|E] «[GetLaw('religious_tolerance_law_2').GetName]» в землях [Concept('vassal', 'вассалов')|E] нельзя обращать [counties|El]"

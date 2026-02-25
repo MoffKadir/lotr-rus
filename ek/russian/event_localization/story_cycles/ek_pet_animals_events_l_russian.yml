@@ -1,0 +1,632 @@
+﻿l_russian:
+ ##############
+ #   PARROT   #
+ ##############
+ parrot_story_modifier:0 "Питомец-попугай"
+ parrot_story_modifier_desc:0 "Этот персонаж наслаждается обществом экзотической птицы, летящей за ним всюду, куда бы он ни пошёл"
+ parrot_story_eating_fruit_modifier:0 "Ест свежие фрукты вместе с попугаем"
+ parrot_story_eating_fruit_modifier_desc:0 "Этот персонаж любит делить трапезу с попугаем, поедая свежие фрукты"
+ parrot_story_fighting_with_you_modifier:0 "Боевой попугай"
+ parrot_story_fighting_with_you_modifier_desc:0 "В бою этого персонажа всегда сопровождает попугай, который летает где-то неподалёку, отвлекая врагов и иногда досаждая им."
+ 
+ parrot_gender_her:0 "её"
+ parrot_gender_his:0 "его"
+ parrot_gender_him:0 "ему"
+ parrot_gender_she:0 "она"
+ parrot_gender_he:0 "он"
+ parrot_gender_herself:0 "себя"
+ parrot_gender_himself:0 "себя"
+ parrot_gender_female:0 "самка"
+ parrot_gender_male:0 "самец"
+ 
+ plumage_color_red:0 "красное"
+ plumage_color_green:0 "зелёное"
+ plumage_color_blue:0 "голубое"
+ 
+ parrot_name:1 "[ROOT.Char.GetLocalizedText( 'story_cycle_parrot_name' )]"
+ parrot_name_possessive:1 "[ROOT.Char.Custom( 'ParrotStoryName' )]"
+ parrot_name_orsone:0 "Орсон"
+ parrot_name_coco:0 "Коко"
+ parrot_name_abby:0 "Эбби"
+ parrot_name_flint:0 "Флинт"
+ 
+ ek_pet_animal.0001.t:0 "Попугай"
+ ek_pet_animal.0001.desc:1 "Попугай летает по комнате, весело напевая, и я думаю, как бы [ROOT.Char.Custom('ParrotStoryHerHis')] назвать? Что-нибудь историческое? Что-то, намекающее на [ROOT.Char.Custom('ParrotStoryHerHis')] [ROOT.Char.Custom('ParrotPlumageColor')] оперение? Что-нибудь, что передаст то умиротворение, что я испытываю, когда [ROOT.Char.Custom('ParrotStorySheHe')] поёт рядом со мной?\n\nО, знаю! Назову [ROOT.Char.Custom('ParrotStoryHerHis')]… "
+ ek_pet_animal.0001.a:1 "Какое чудесное имя!"
+ 
+ ### Random parrot events
+ # You eat some fruits with your parrots, smol health modifier
+ ek_pet_animal.0101.t:0 "[ROOT.Char.Custom('ParrotStoryName')]: свежие фрукты"
+ ek_pet_animal.0101.desc:0 "Я [Select_CString(ROOT.Char.IsFemale, 'завела', 'завёл')] себе новую привычку: конец дня я и [ROOT.Char.Custom('ParrotStoryName')] проводим вместе за трапезой свежими фруктами.\n\nНе знаю в чём причина: может быть в фруктах, а может во времени, которое я и [ROOT.Char.Custom('ParrotStorySheHe')] проводим вместе, но я ощущаю себя более [Select_CString(ROOT.Char.IsFemale, 'здоровой и энергичной', 'здоровым и энергичным')]!"
+ ek_pet_animal.0101.a:0 "Оставь мне немного, [ROOT.Char.Custom('ParrotStoryName')]!"
+ 
+ # Your parrot goes with you into battle!
+ ek_pet_animal.0102.t:0 "[ROOT.Char.Custom('ParrotStoryName')]: клюв и когти"
+ ek_pet_animal.0102.desc:0 "Мой попугай, [ROOT.Char.Custom('ParrotStoryName')], в своей отваге не знает пределов! В масштабных битвах ли, мелких стычках или даже поединках, [ROOT.Char.Custom('ParrotStorySheHe')] всюду сопровождает меня и дерётся бок о бок.\n\nМои противники, даже мои товарищи, кажется, опасаются [ROOT.Char.Custom('ParrotStoryHerHis')], и не раз я [Select_CString(ROOT.Char.IsFemale, 'выходила', 'выходил')] победителем, благодаря тому, что их отвлекало [ROOT.Char.Custom('ParrotStoryHerHis')] [ROOT.Char.Custom('ParrotPlumageColor')] оперение или же травмы от [ROOT.Char.Custom('ParrotStoryHerHis')] клюва."
+ ek_pet_animal.0102.a:0 "Со мной в гущу битвы!"
+ 
+ # Your parrot attacked a vassal! Wound or possibly an eye removal
+ ek_pet_animal.0103.t:0 "[ROOT.Char.Custom('ParrotStoryName')]:… тому глаз вон"
+ ek_pet_animal.0103.desc_wounded:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой попугай, [ROOT.Char.Custom('ParrotStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\n[vassal.GetFirstName] [Select_CString(vassal.IsFemale, 'сумела', 'сумел')] выбежать из зала, хоть и с серьёзным ранением…"
+ ek_pet_animal.0103.desc_eye_removed_not_one_eyed:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой попугай, [ROOT.Char.Custom('ParrotStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как попугая вернули в [ROOT.Char.Custom('ParrotStoryHerHis')]  клетку, видно было, как [vassal.GetFirstName] закрывает окровавленной рукой один глаз…"
+ ek_pet_animal.0103.desc_eye_removed_one_eyed:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой попугай, [ROOT.Char.Custom('ParrotStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как попугая вернули в [ROOT.Char.Custom('ParrotStoryHerHis')]  клетку, видно было, как [vassal.GetFirstName] закрывает окровавленной рукой единственный глаз.\n\n«Я НИЧЕГО НЕ ВИЖУ, — [Select_CString(vassal.IsFemale, 'кричала она', 'кричал он')]. — ЭТО ВСЁ ТЫ И ТВОЯ ДУРАЦКАЯ ПТИЦА!»"
+ ek_pet_animal.0103.a:0 "Надеюсь, [vassal.GetFirstName] поправится…"
+ ek_pet_animal.0103.b:0 "О нет…"
+ 
+ # Parrot dies :(
+ ek_pet_animal.0199.t:0 "[ROOT.Char.Custom('ParrotStoryName')]: печальный день"
+ ek_pet_animal.0199.desc:0 "[ROOT.Char.Custom('ParrotStoryName')] уже давно не птенец, [ROOT.Char.Custom('ParrotStoryHerHis')] пение уже не такое звучное и ровное, как несколько лет назад.\n\nЯ нежно поглаживаю [ROOT.Char.Custom('ParrotStoryHerHis')] [ROOT.Char.Custom('ParrotPlumageColor')] оперение и слушаю, как [ROOT.Char.Custom('ParrotStorySheHe')] тихо щебечет и пытается расправить крылья, но, когда наступает тишина, я понимаю, что следующим утром меня уже не разбудит [ROOT.Char.Custom('ParrotStoryHerHis')] песня."
+ ek_pet_animal.0199.a:0 "[ROOT.Char.Custom('ParrotStoryName')], мне будет тебя не хватать!"
+ 
+ pet_parrot_decision:0 "[ROOT.Char.Custom('ParrotStoryName')]: погладить"
+ pet_parrot_decision_desc:0 "Я знаю, как [ROOT.Char.Custom('ParrotStoryName')] любит порхать вокруг меня, и мне всегда отрадно наблюдать, как [ROOT.Char.Custom('ParrotStorySheHe')] весело поёт и ласкается. Да, на уход и еду уходит много труда и денег, но я знаю: что бы ни случилось, [ROOT.Char.Custom('ParrotStorySheHe')] всегда будет со мной!"
+ pet_parrot_decision_tooltip:0 "Погладить попугая"
+ pet_parrot_decision_confirm:0 "Погладить попугая"
+ 
+ # You pet your parrot :)
+ ek_pet_animal.0501.t:0 "[ROOT.Char.Custom('ParrotStoryName')]: приятное время вместе"
+ ek_pet_animal.0501.desc:0 "Войдя в комнату, я тут же слышу, как [ROOT.Char.Custom('ParrotStoryName')] радостно щебечет.\n\nС улыбкой на лице я открываю [ROOT.Char.Custom('ParrotStoryHerHis')] клетку, чтобы дать расправить крылья перед полётом.\n[ROOT.Char.Custom('ParrotStoryName')] делает несколько кругов по комнате, прежде чем приземлиться мне на руку и потереться о мою шею головой.\n\nЯ смеюсь, и чувствую, как тяжесть этого мира перестаёт давить мне на плечи."
+ ek_pet_animal.0501.a:0 "Щекотно!"
+ 
+ ek_pet_animal.0502.desc:0 "Держа в руках любимое лакомство моего попугая по кличке [ROOT.Char.Custom('ParrotStoryName')], я вхожу в свой маленький сад, где [ROOT.Char.Custom('ParrotStorySheHe')] проводит большую часть времени.\nВскоре после того, как [ROOT.Char.Custom('ParrotStoryName')] замечает меня или, может быть, фрукты у меня в руке, [ROOT.Char.Custom('ParrotStorySheHe')] начинает радостно петь и летать вокруг меня.\nЗатем [ROOT.Char.Custom('ParrotStorySheHe')] приземляется мне на плечо и хватает лакомство из руки.\n\nМне становится лучше, я смеюсь и уже чувствую, как [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов')] ко всему, что предложит мне этот мир."
+ ek_pet_animal.0502.a:0 "Оставь и мне, [ROOT.Char.Custom('ParrotStoryName')]!"
+
+ ##############
+ #   SCORPION   #
+ ##############
+ scorpion_story_modifier:0 "Питомец-скорпион"
+ scorpion_story_modifier_desc:0 "Этот персонаж наслаждается компанией хищного паукообразного, ползающего вслед за ним всюду, куда бы он ни пошёл"
+ scorpion_story_observing_modifier:0 "Скорпионье чутьё"
+ scorpion_story_observing_modifier_desc:0 "Этот персонаж развил в себе чувство внимательности и осторожности, наблюдая за своим питомцем-скорпионом"
+ scorpion_story_fighting_with_you_modifier:0 "Боевой скорпион"
+ scorpion_story_fighting_with_you_modifier_desc:0 "В бою этого персонажа всегда сопровождает скорпион, который ползает где-то неподалёку, отвлекая врагов и иногда досаждая им."
+ 
+ scorpion_gender_her:0 "её"
+ scorpion_gender_his:0 "его"
+ scorpion_gender_him:0 "ему"
+ scorpion_gender_she:0 "она"
+ scorpion_gender_he:0 "он"
+ scorpion_gender_herself:0 "себя"
+ scorpion_gender_himself:0 "себя"
+ scorpion_gender_female:0 "самка"
+ scorpion_gender_male:0 "самец"
+ 
+ color_coffee:0 "кофейного цвета"
+ color_red:0 "красное"
+ color_cerulean:0 "лазурное"
+ color_brown:0 "бурое"
+ 
+ scorpion_name:1 "[ROOT.Char.GetLocalizedText( 'story_cycle_scorpion_name' )]"
+ scorpion_name_possessive:1 "[ROOT.Char.Custom( 'ScorpionStoryName' )]"
+ scorpion_name_kaveh:0 "Каве"
+ scorpion_name_stinger:0 "Жало"
+ scorpion_name_clamper:0 "Тиски"
+ scorpion_name_kopyo:0 "Копьё"
+
+ murder_outcome.5002.option_pet_scorpion:0 "Он будет моим питомцем!"
+ 
+ ek_pet_animal.1001.t:0 "Скорпион"
+ ek_pet_animal.1001.desc:1 "Скорпион ползает по комнате, весело щёлкая клешнями, и я думаю, как бы [ROOT.Char.Custom('ScorpionStoryHerHis')] назвать? Что-нибудь историческое? Что-то, намекающее на [ROOT.Char.Custom('ScorpionStoryHerHis')] [ROOT.Char.Custom('ScorpionColor')] тело? Что-нибудь, что передаст то умиротворение, что я испытываю, когда [ROOT.Char.Custom('ScorpionStorySheHe')] ползает рядом со мной?\n\nО, знаю! Назову [ROOT.Char.Custom('ScorpionStoryHerHis')]… "
+ ek_pet_animal.1001.a:1 "Какое чудесное имя!"
+ 
+ ### Random scorpion events
+ # You observe your scorpion, smol intrigue modifier
+ ek_pet_animal.1101.t:0 "[ROOT.Char.Custom('ScorpionStoryName')]: ползучее коварство"
+ ek_pet_animal.1101.desc:0 "Я [Select_CString(ROOT.Char.IsFemale, 'завела', 'завёл')] себе новую привычку: в конце дня я наблюдаю за тем, как передвигается [ROOT.Char.Custom('ScorpionStoryName')].\n\nВидя, как [ROOT.Char.Custom('ScorpionStorySheHe')] ползает, осторожно щёлкая клешнями по разным поводам, я задумываюсь о том, что возможно, и мне стоит проявлять больше осторожности по отношению к окружающим."
+ ek_pet_animal.1101.a:0 "Интригующе!"
+ 
+ # Your scorpion goes with you into battle!
+ ek_pet_animal.1102.t:0 "[ROOT.Char.Custom('ScorpionStoryName')]: клешни и жало"
+ ek_pet_animal.1102.desc:0 "Мой скорпион, [ROOT.Char.Custom('ScorpionStoryName')], в своей отваге не знает пределов! В масштабных битвах ли, мелких стычках или даже поединках, [ROOT.Char.Custom('ScorpionStorySheHe')] всюду сопровождает меня и дерётся бок о бок.\n\nМои противники, даже мои товарищи, кажется, опасаются [ROOT.Char.Custom('ScorpionStoryHerHis')],и не раз я [Select_CString(ROOT.Char.IsFemale, 'выходила', 'выходил')] победителем, благодаря тому, что их отвлекало [ROOT.Char.Custom('ScorpionStoryHerHis')] [ROOT.Char.Custom('ScorpionColor')] тело или же [ROOT.Char.Custom('ScorpionStoryHerHis')] укусы."
+ ek_pet_animal.1102.a:0 "Со мной в гущу битвы!"
+ 
+ # Your scorpion attacked a vassal! Wound or possibly death
+ ek_pet_animal.1103.t:0 "[ROOT.Char.Custom('ScorpionStoryName')]: ужалили!"
+ ek_pet_animal.1103.desc_wounded:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой скорпион, [ROOT.Char.Custom('ScorpionStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\n[vassal.GetFirstName] [Select_CString(vassal.IsFemale, 'сумела', 'сумел')] выбежать из зала, хоть и с серьёзным ранением…"
+ ek_pet_animal.1103.desc_poisoned:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой скорпион, [ROOT.Char.Custom('ScorpionStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как скорпиона вернули в [ROOT.Char.Custom('ScorpionStoryHerHis')] клетку, все видели, как [vassal.GetFirstName] [Select_CString(vassal.IsFemale, 'тряслась', 'трясся')] от страха.\n\n«ОНО МЕНЯ УЖАЛИЛО! — [Select_CString(vassal.IsFemale, 'кричала она', 'кричал он')]. — ЭТО ВСЁ ТЫ И ТВОЙ ДУРАЦКИЙ ЖУК!»"
+ ek_pet_animal.1103.a:0 "Надеюсь, [vassal.GetFirstName] поправится…"
+ ek_pet_animal.1103.b:0 "О нет…"
+ 
+ # Scorpion dies :(
+ ek_pet_animal.1199.t:0 "[ROOT.Char.Custom('ScorpionStoryName')]: печальный день"
+ ek_pet_animal.1199.desc:0 "[ROOT.Char.Custom('ScorpionStoryName')] уже давно не личинка, [ROOT.Char.Custom('ScorpionStoryHerHis')] походка уже не такая размеренная и стабильная как когда-то.\n\nЯ нежно поглаживаю [ROOT.Char.Custom('ScorpionStoryHerHis')] [ROOT.Char.Custom('ScorpionColor')] тело и ощущаю, как [ROOT.Char.Custom('ScorpionStorySheHe')] слегка покачивается и пытается щёлкать клешнями, но, когда наступает тишина, я понимаю, что следующим утром меня уже не разбудит [ROOT.Char.Custom('ScorpionStoryHerHis')] утренняя прогулка по комнате."
+ ek_pet_animal.1199.a:0 "[ROOT.Char.Custom('ScorpionStoryName')], мне будет тебя не хватать!"
+ 
+ pet_scorpion_decision:0 "[ROOT.Char.Custom('ScorpionStoryName')]: поиграться"
+ pet_scorpion_decision_desc:0 "Я знаю, как [ROOT.Char.Custom('ScorpionStoryName')] любит ползать вокруг меня, и мне всегда отрадно наблюдать, как [ROOT.Char.Custom('ScorpionStorySheHe')] весело щипает меня и ласкается. Да, на уход и еду уходит много труда и денег, но я знаю: что бы ни случилось, [ROOT.Char.Custom('ScorpionStorySheHe')] всегда будет со мной!"
+ pet_scorpion_decision_tooltip:0 "Поиграться со скорпионом"
+ pet_scorpion_decision_confirm:0 "Поиграться со скорпионом"
+ 
+ # You play with your scorpion :)
+ ek_pet_animal.1501.t:0 "[ROOT.Char.Custom('ScorpionStoryName')]: приятное время вместе"
+ ek_pet_animal.1501.desc:0 "Войдя в комнату, я тут же слышу, как [ROOT.Char.Custom('ScorpionStoryName')] радостно щёлкает клешнями.\n\nС улыбкой на лице я открываю [ROOT.Char.Custom('ScorpionStoryHerHis')] клетку, чтобы дать размять педипальпы.\n[ROOT.Char.Custom('ScorpionStoryName')] делает несколько кругов по комнате, прежде чем залезть мне на руку и поласкаться со мной.\n\nЯ смеюсь, и чувствую, как тяжесть этого мира перестаёт давить мне на плечи."
+ ek_pet_animal.1501.a:0 "Щекотно!"
+ 
+ ek_pet_animal.1502.desc:0 "Держа в руках любимое лакомство моего скорпиона по кличке [ROOT.Char.Custom('ScorpionStoryName')], я вхожу в свой маленький сад, где [ROOT.Char.Custom('ScorpionStorySheHe')] проводит большую часть времени.\nВскоре после того, как [ROOT.Char.Custom('ScorpionStoryName')] замечает меня или, может быть, жуков у меня в руке, [ROOT.Char.Custom('ScorpionStorySheHe')] начинает радостно щёлкать клешнями и наворачивать круги вокруг меня.\nЗатем [ROOT.Char.Custom('ScorpionStorySheHe')] опирается мне на руку и хватает лакомство.\n\nМне становится лучше, я смеюсь и уже чувствую, как [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов')] ко всему, что предложит мне этот мир."
+ ek_pet_animal.1502.a:0 "Оставь и мне, [ROOT.Char.Custom('ScorpionStoryName')]!"
+
+ ##############
+ #   SCRIB   #
+ ##############
+ scrib_story_modifier:0 "Питомец-скриб"
+ scrib_story_modifier_desc:0 "Этот персонаж наслаждается компанией квама-скриба, ползающего вслед за ним всюду, куда бы он ни пошёл"
+ scrib_story_observing_modifier:0 "Храбрость скриба"
+ scrib_story_observing_modifier_desc:0 "Этот персонаж начал ценить наивность, наблюдая за своим питомцем-скрибом."
+ scrib_story_fighting_with_you_modifier:0 "Боевой скриб"
+ scrib_story_fighting_with_you_modifier_desc:0 "В бою этого персонажа всегда сопровождает скриб, который ползает где-то неподалёку, отвлекая врагов и иногда досаждая им."
+ bit_by_scrib_modifier:0 "Укус скриба"
+ bit_by_scrib_modifier_desc:0 "Укус скриба парализовал этого персонажа"
+ 
+ scrib_gender_her:0 "её"
+ scrib_gender_his:0 "его"
+ scrib_gender_him:0 "ему"
+ scrib_gender_she:0 "она"
+ scrib_gender_he:0 "он"
+ scrib_gender_herself:0 "себя"
+ scrib_gender_himself:0 "себя"
+ scrib_gender_female:0 "самка"
+ scrib_gender_male:0 "самец"
+ 
+ color_caramel:0 "карамельного цвета"
+ color_yellow:0 "жёлтое"
+ color_black:0 "чёрное"
+ color_blue:0 "голубое"
+ color_orange:0 "оранжевое"
+ 
+ scrib_name:1 "[ROOT.Char.GetLocalizedText( 'story_cycle_scrib_name' )]"
+ scrib_name_possessive:1 "[ROOT.Char.Custom( 'ScribStoryName' )]"
+ scrib_name_grubchum:0 "Дружук"
+ scrib_name_bert:0 "Берт"
+ scrib_name_ernie:0 "Эрни"
+ scrib_name_larvie:0 "Ларви"
+ scrib_name_brave:0 "Храбрец"
+ 
+ ek_pet_animal.2001.t:0 "Скриб"
+ ek_pet_animal.2001.desc:1 "Скриб ползает по комнате, весело цокоча своими крохотными ножками, и я думаю, как бы [ROOT.Char.Custom('ScribStoryHerHis')] назвать? Что-нибудь историческое? Что-то, намекающее на [ROOT.Char.Custom('ScribStoryHerHis')] [ROOT.Char.Custom('ScribColor')] тело? Что-нибудь, что передаст то умиротворение, что я испытываю, когда [ROOT.Char.Custom('ScribStorySheHe')] ползает рядом со мной?\n\nО, знаю! Назову [ROOT.Char.Custom('ScribStoryHerHis')]… "
+ ek_pet_animal.2001.a:1 "Какое чудесное имя!"
+ 
+ ### Random scrib events
+ # You observe your scrib
+ ek_pet_animal.2101.t:0 "[ROOT.Char.Custom('ScribStoryName')]: ползучая наивность"
+ ek_pet_animal.2101.desc:0 "Я [Select_CString(ROOT.Char.IsFemale, 'завела', 'завёл')] себе новую привычку: в конце дня я наблюдаю за тем, как передвигается [ROOT.Char.Custom('ScribStoryName')].\n\nВидя, как [ROOT.Char.Custom('ScribStorySheHe')] ползает, с любопытством исследуя окружение, я задумываюсь о том, что, возможно, и мне стоит относиться к миру как к непознанному чуду."
+ ek_pet_animal.2101.a:0 "Я чувствую себя так молодо!"
+ 
+ # Your scrib goes with you into battle!
+ ek_pet_animal.2102.t:0 "[ROOT.Char.Custom('ScribStoryName')]: личина храбрости"
+ ek_pet_animal.2102.desc:0 "Мой скриб, [ROOT.Char.Custom('ScribStoryName')], в своей отваге не знает пределов! В масштабных битвах ли, мелких стычках или даже поединках, [ROOT.Char.Custom('ScribStorySheHe')] всюду сопровождает меня и дерётся бок о бок.\n\nМои противники, даже мои товарищи, кажется, опасаются [ROOT.Char.Custom('ScribStoryHerHis')], и не раз я [Select_CString(ROOT.Char.IsFemale, 'выходила', 'выходил')] победителем, благодаря тому, что их отвлекало [ROOT.Char.Custom('ScribStoryHerHis')] [ROOT.Char.Custom('ScribColor')] тело или же [ROOT.Char.Custom('ScribStoryHerHis')] укусы."
+ ek_pet_animal.2102.a:0 "Со мной в гущу битвы!"
+ 
+ # Your scrib attacked a vassal! Wound or possibly bad modifier
+ ek_pet_animal.2103.t:0 "[ROOT.Char.Custom('ScribStoryName')]: ужалили!"
+ ek_pet_animal.2103.desc_wounded:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, [ROOT.Char.Custom('ScribStoryName')], мой скриб, как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\n[vassal.GetFirstName] [Select_CString(vassal.IsFemale, 'сумела', 'сумел')] выбежать из зала, хоть и с серьёзным ранением…"
+ ek_pet_animal.2103.desc_poisoned:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой скриб, [ROOT.Char.Custom('ScribStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как скриб успокоился, все видели, как [vassal.GetFirstName] [Select_CString(vassal.IsFemale, 'лежала', 'лежал')] на полу, будучи полностью [Select_CString(vassal.IsFemale, 'парализованной', 'парализованным')].\n\n«[vassal.GetHerHis|U] ужалили! — кричал слуга. — [vassal.GetSheHe|U] [Select_CString(vassal.IsFemale, 'парализована', 'парализован')]!»"
+ ek_pet_animal.2103.a:0 "Надеюсь, [vassal.GetFirstName] поправится…"
+ ek_pet_animal.2103.b:0 "О нет…"
+
+ ek_pet_animal.2104.t:0 "[ROOT.Char.Custom('ScribStoryName')]: нора"
+ ek_pet_animal.2104.desc:0 "«[ROOT.Char.GetFirstNameNoTooltip], взгляни, что этот скриб натворил!»\n\n[Select_CString(spouse.IsFemale, 'Моя', 'Мой')] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('spouse'))] [spouse.GetTitledFirstName] указывает на последнюю из нор, что имеет обыкновение выкапывать [ROOT.Char.Custom('ScribStoryName')], — дыру прямо в моём тронном зале. «Из-за этого серьёзно пострадает твоя репутация. Задумайся о том, чтобы избавиться от этого вредителя»."
+ ek_pet_animal.2104.a:0 "Я оплачу ремонт!"
+ ek_pet_animal.2104.b:0 "[ROOT.Char.Custom('ScribStoryName')] может копать столько нор, сколько вздумается!"
+ ek_pet_animal.2104.c:0 "Пусть [ROOT.Char.Custom('ScribStoryHerHis')] хозяином будет [receiver_1.GetFirstNameNoTooltip]…"
+ ek_pet_animal.2104.d:0 "[receiver_2.GetFirstNameNoTooltip] обрадуется спутнику…"
+ ek_pet_animal.2104.e:0 "[receiver_3.GetFirstNameNoTooltip] позаботится о скрибе…"
+
+ ek_pet_animal.2105.t:0 "[ROOT.Char.Custom('ScribStoryName')]: скриб"
+ ek_pet_animal.2105.desc:0 "«В последнее малыш-[ROOT.Char.Custom('ScribStoryName')] много пакостит у меня дома, выкапывая повсюду норы… Поэтому я вверяю этого скриба вашей заботе».\n\n[Select_CString(giver.IsFemale, 'Моя', 'Мой')] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('giver'))] [giver.GetTitledFirstName] протягивает мне скриба: «[ROOT.Char.Custom('ScribStoryName')] — просто отличный… превосходный спутник»."
+ ek_pet_animal.2105.a:0 "Спасибо, я буду ценить [ROOT.Char.Custom('ScribStoryHerHis')]!"
+ ek_pet_animal.2105.b:0 "Спасибо. Не сомневаюсь, [ROOT.Char.Custom('ScribStorySheHe')] мне пригодится."
+
+ ek_pet_animal.2106.t:0 "[receiver.Custom('ScribStoryName')]: жизнь без тебя"
+ ek_pet_animal.2106.t_dead:0 "Жизнь без тебя"
+ ek_pet_animal.2106.desc_opening:0 "[receiver.Custom('ScribStoryName')] теперь у нового владельца. Я отправляюсь посмотреть, как [Select_CString(receiver.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('receiver'))] [receiver.GetTitledFirstName] заботится о животном.\n\n"
+ ek_pet_animal.2106.desc_alive_landed:0 "[receiver.GetSheHe|U] встречает меня снаружи своей резиденции, держа на руках скриба. «[receiver.Custom('ScribStorySheHe')|U] чувствует себя хорошо — "
+ ek_pet_animal.2106.desc_alive:0 "[receiver.GetSheHe|U] встречает меня на улице, держа на руках скриба. «[receiver.Custom('ScribStorySheHe')|U] чувствует себя хорошо — "
+ ek_pet_animal.2106.desc_alive_1:0 "[receiver.Custom('ScribStorySheHe')] любит охотиться на местных птиц!»"
+ ek_pet_animal.2106.desc_alive_2:0 "[receiver.Custom('ScribStorySheHe')] любит копать замысловатые системы туннелей!»"
+ ek_pet_animal.2106.desc_dead_opening:1 "Я отправляюсь посмотреть, как [Select_CString(receiver.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('receiver'))] [receiver.GetTitledFirstName] заботится о скрибе.\n\n"
+ ek_pet_animal.2106.desc_dead_landed:0 "[receiver.GetSheHe|U] встречает меня снаружи своей резиденции, но скриба рядом не видно."
+ ek_pet_animal.2106.desc_dead:0 "[receiver.GetSheHe|U] встречает меня на улице, но скриба рядом не видно."
+ ek_pet_animal.2106.desc_dead_ending:0 "«Играет где-то, наверное…»\n\n[receiver.GetSheHe|U] старательно отводит взгляд."
+ ek_pet_animal.2106.a:0 "Уф! Можно вздохнуть спокойно!"
+ ek_pet_animal.2106.b:1 "Где мой скриб?!"
+
+ # Scrib dies :(
+ ek_pet_animal.2199.t:0 "[ROOT.Char.Custom('ScribStoryName')]: печальный день"
+ ek_pet_animal.2199.desc:0 "[ROOT.Char.Custom('ScribStoryName')] уже давно не личинка, [ROOT.Char.Custom('ScribStoryHerHis')] походка уже не такая размеренная и стабильная как когда-то.\n\nЯ нежно поглаживаю [ROOT.Char.Custom('ScribStoryHerHis')] [ROOT.Char.Custom('ScribColor')] тело и ощущаю, как [ROOT.Char.Custom('ScribStorySheHe')] слегка покачивается и пытается слегка укусить меня, но, когда наступает тишина, я понимаю, что следующим утром меня уже не разбудит [ROOT.Char.Custom('ScribStoryHerHis')]  утренняя прогулка по комнате."
+ ek_pet_animal.2199.a:0 "[ROOT.Char.Custom('ScribStoryName')], мне будет тебя не хватать!"
+ 
+ pet_scrib_decision:0 "[ROOT.Char.Custom('ScribStoryName')]: поиграться"
+ pet_scrib_decision_desc:0 "Я знаю, как [ROOT.Char.Custom('ScribStoryName')] любит ползать вокруг меня, и мне всегда отрадно наблюдать, как [ROOT.Char.Custom('ScribStorySheHe')] весело покусывает меня и ласкается. Да, на уход и еду уходит много труда и денег, но я знаю: что бы ни случилось, [ROOT.Char.Custom('ScribStorySheHe')] всегда будет со мной!"
+ pet_scrib_decision_tooltip:0 "Поиграться со скрибом"
+ pet_scrib_decision_confirm:0 "Поиграться со скрибом"
+ 
+ # You play with your scrib :)
+ ek_pet_animal.2501.t:0 "[ROOT.Char.Custom('ScribStoryName')]: приятное время вместе"
+ ek_pet_animal.2501.desc:0 "Войдя в комнату, я тут же слышу, как [ROOT.Char.Custom('ScribStoryName')] радостно щёлкает клешнями.\n\nС улыбкой на лице я открываю [ROOT.Char.Custom('ScribStoryHerHis')] клетку, чтобы дать размять лапки.\n[ROOT.Char.Custom('ScribStoryName')] делает несколько кругов по комнате, прежде чем залезть мне на руку и поласкаться со мной.\n\nЯ смеюсь, и чувствую, как тяжесть этого мира перестаёт давить мне на плечи."
+ ek_pet_animal.2501.a:0 "Щекотно!"
+ 
+ ek_pet_animal.2502.desc:0 "Держа в руках любимое лакомство моего скриба по кличке [ROOT.Char.Custom('ScribStoryName')], я вхожу в свой маленький сад, где [ROOT.Char.Custom('ScribStorySheHe')] проводит большую часть времени.\nВскоре после того, как [ROOT.Char.Custom('ScribStoryName')] замечает меня или, может быть, жуков у меня в руке, [ROOT.Char.Custom('ScribStorySheHe')] начинает радостно щёлкать лапками и наворачивать круги вокруг меня.\nЗатем [ROOT.Char.Custom('ScribStorySheHe')] опирается мне на руку и хватает лакомство.\n\nМне становится лучше, я смеюсь и уже чувствую, как [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов')] ко всему, что предложит мне этот мир."
+ ek_pet_animal.2502.a:0 "Оставь и мне, [ROOT.Char.Custom('ScribStoryName')]!"
+
+ rival_bit_by_scrib:0 "Скриб персонажа [TARGET_CHARACTER.GetShortUIName|U] укусил и парализовал персонажа [CHARACTER.GetShortUIName|U]."
+ rival_bit_by_scrib_corresponding:0 "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'была укушена и парализована', 'был укушен и парализован')] скрибом персонажа [TARGET_CHARACTER.GetShortUIName|U]."
+
+ rival_vvardvark_peck:0 "Пеплозуб персонажа [TARGET_CHARACTER.GetShortUIName|U] поцарапал персонажа [CHARACTER.GetShortUIName|U]."
+ rival_vvardvark_peck_corresponding:0 "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'была поцарапана', 'был поцарапан')] пеплозубом персонажа [TARGET_CHARACTER.GetShortUIName|U]."
+
+ rival_bantam_peck:0 "Бентамский гуар персонажа [TARGET_CHARACTER.GetShortUIName|U] клюнул персонажа [CHARACTER.GetShortUIName|U]."
+ rival_bantam_peck_corresponding:0 "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'была исклёвана', 'был исклёван')] бентамским гуаром персонажа [TARGET_CHARACTER.GetShortUIName|U]."
+
+ rival_mudcrab_peck:0 "Грязевой краб персонажа [TARGET_CHARACTER.GetShortUIName|U] ущипнул персонажа [CHARACTER.GetShortUIName|U]."
+ rival_mudcrab_peck_corresponding:0 "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'была ущипнута', 'был ущипнут')] грязевым крабом персонажа [TARGET_CHARACTER.GetShortUIName|U]."
+ ###################
+ #   BANTAM GUAR   #
+ ###################
+ bantam_story_modifier:0 "Питомец — бентамский гуар"
+ bantam_story_modifier_desc:0 "Этот персонаж наслаждается компанией маленького и послушного существа, сопровождающего его всюду, куда бы он ни пошёл"
+ bantam_story_eating_fruit_modifier:0 "Ест свежие фрукты вместе с бентамским гуаром"
+ bantam_story_eating_fruit_modifier_desc:0 "Этот персонаж любит делить трапезу с бентамским гуаром, поедая свежие фрукты"
+ bantam_story_fighting_with_you_modifier:0 "Боевой бентамский гуар"
+ bantam_story_fighting_with_you_modifier_desc:0 "В бою этого персонажа всегда сопровождает бентамский гуар, который ходит где-то неподалёку, отвлекая врагов и иногда досаждая им."
+ 
+ bantam_gender_her:0 "её"
+ bantam_gender_his:0 "его"
+ bantam_gender_him:0 "ему"
+ bantam_gender_she:0 "она"
+ bantam_gender_he:0 "он"
+ bantam_gender_herself:0 "себя"
+ bantam_gender_himself:0 "себя"
+ bantam_gender_female:0 "самка"
+ bantam_gender_male:0 "самец"
+ 
+ bantam_color_tan:0 "бронзовое"
+ vvardvark_color_tan:0 "бронзовое"
+ 
+ bantam_name:1 "[ROOT.Char.GetLocalizedText( 'story_cycle_bantam_name' )]"
+ bantam_name_possessive:1 "[ROOT.Char.Custom( 'BantamStoryName' )]"
+ bantam_name_drooler:0 "Слюнявец"
+ bantam_name_honor:0 "Честь"
+ bantam_name_indring:0 "Индринг"
+ bantam_name_mogi:0 "Моги"
+ bantam_name_puddles:0 "Лужица"
+ bantam_name_small_one:0 "Малыш"
+ bantam_name_spriggan_bane:0 "Бич Спригганов"
+ bantam_name_sir_scratch_scales:0 "Сэр Чешуечёс"
+ bantam_name_pouncer:0 "Попрыгунчик"
+ bantam_name_tasty_legs:0 "Вкусноножка"
+ bantam_name_wobble_claw:0 "Когтешатик"
+ bantam_name_squee:0 "Пищалка"
+
+ ek_pet_animal.3001.t:0 "Бентамский гуар"
+ ek_pet_animal.3001.desc:1 "Бентамский гуар ходит по комнате, весело поклёвывая с пола, и я думаю, как бы [ROOT.Char.Custom('BantamStoryHerHis')] назвать? Что-нибудь историческое? Что-то, намекающее на [ROOT.Char.Custom('BantamStoryHerHis')] крохотное  [ROOT.Char.Custom('BantamColor')] тело? Что-нибудь, что передаст то умиротворение, что я испытываю, когда [ROOT.Char.Custom('BantamStorySheHe')] ходит вразвалку рядом со мной?\n\nО, знаю! Назову [ROOT.Char.Custom('BantamStoryHerHis')]… "
+ ek_pet_animal.3001.a:1 "Какое чудесное имя!"
+ 
+ ### Random bantam guar events
+ # You eat some fruits with your bantam guar, smol health modifier
+ ek_pet_animal.3101.t:0 "[ROOT.Char.Custom('BantamStoryName')]: свежие фрукты"
+ ek_pet_animal.3101.desc:0 "Я [Select_CString(ROOT.Char.IsFemale, 'завела', 'завёл')] себе новую привычку: конец дня я и [ROOT.Char.Custom('BantamStoryName')] проводим вместе за трапезой свежими фруктами.\n\nНе знаю в чём причина: может быть в фруктах, а может а может во времени, которое я и [ROOT.Char.Custom('BantamStorySheHe')] проводим вместе, но я ощущаю себя более [Select_CString(ROOT.Char.IsFemale, 'здоровой и энергичной', 'здоровым и энергичным')]!"
+ ek_pet_animal.3101.a:0 "Оставь мне немного, [ROOT.Char.Custom('BantamStoryName')]!"
+ 
+ # Your bantam guar goes with you into battle!
+ ek_pet_animal.3102.t:0 "[ROOT.Char.Custom('BantamStoryName')]: клюв и когти"
+ ek_pet_animal.3102.desc:0 "Мой бентамский гуар, [ROOT.Char.Custom('BantamStoryName')], в своей отваге не знает пределов! В масштабных битвах ли, мелких стычках или даже поединках, [ROOT.Char.Custom('BantamStorySheHe')] всюду сопровождает меня и дерётся бок о бок.\n\nМои противники, даже мои товарищи, кажется, опасаются [ROOT.Char.Custom('BantamStoryHerHis')], и не раз я [Select_CString(ROOT.Char.IsFemale, 'выходила', 'выходил')] победителем, благодаря тому, что их отвлекало [ROOT.Char.Custom('BantamStoryHerHis')] [ROOT.Char.Custom('BantamColor')] тело или же травмы от  [ROOT.Char.Custom('BantamStoryHerHis')] клюва."
+ ek_pet_animal.3102.a:0 "Со мной в гущу битвы!"
+ 
+ # Your bantam guar attacked a vassal! Wound or possibly an eye removal
+ ek_pet_animal.3103.t:0 "[ROOT.Char.Custom('BantamStoryName')]:… тому глаз вон"
+ ek_pet_animal.3103.desc_wounded:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой бентамский гуар, [ROOT.Char.Custom('BantamStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\n[vassal.GetFirstName] [Select_CString(vassal.IsFemale, 'сумела', 'сумел')] выбежать из зала, хоть и с серьёзным ранением…"
+ ek_pet_animal.3103.desc_eye_removed_not_one_eyed:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой бентамский гуар, [ROOT.Char.Custom('BantamStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как бентамского гуара выдворили из зала, видно было, как [vassal.GetFirstName] закрывает окровавленной рукой один глаз…"
+ ek_pet_animal.3103.desc_eye_removed_one_eyed:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой бентамский гуар, [ROOT.Char.Custom('BantamStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как бентамского гуара выдворили из зала, видно было, как [vassal.GetFirstName] закрывает окровавленной рукой единственный глаз.\n\n«Я НИЧЕГО НЕ ВИЖУ, — [Select_CString(vassal.IsFemale, 'кричала она', 'кричал он')]. — ЭТО ВСЁ ТЫ И ТВОЯ ДУРАЦКАЯ ПТИЦА!»"
+ ek_pet_animal.3103.a:0 "Надеюсь, [vassal.GetFirstName] поправится…"
+ ek_pet_animal.3103.b:0 "О нет…"
+ 
+ ek_pet_animal.3104.t:0 "Бентамский феномен"
+ ek_pet_animal.3104.desc:0 "С тех пор как мудрецы из культа Мотылька Предков рассказали о своих вычислениях, согласно которым бентамский гуар — самое милое животное в Тамриэле, многие значимые и выдающиеся тамриэльцы стали стремиться завести себе такого питомца. Обладание бентамским гуаром через короткое время стало символом статуса и достатка, а торговцы в погоне за выгодой стали продавать куклы и плюшевые игрушки, походящие на это крохотное существо.\n\nОдним из самых известных бентамских гуаров в моей державе является мой маленький друг по имени [ROOT.Char.Custom('BantamStoryName')].\n\n[noble.GetFullName] [Select_CString(noble.IsFemale, 'попросила', 'попросил')] у меня аудиенции, чтобы обсудить нечто важное. [noble.GetSheHe|U] хочет, чтобы мой бентамский гуар, [ROOT.Char.Custom('BantamStoryName')], достался [noble.GetHerHim], и [Select_CString(noble.IsFemale, 'готова', 'готов')] предложить крупную сумму денег."
+ ek_pet_animal.3104.a:0 "Сколько, говорите? По рукам!"
+ ek_pet_animal.3104.b:0 "Мой друг не продаётся!"
+ ek_pet_animal.3104.c:0 "Возьмите [ROOT.Char.Custom('BantamStoryHerHis')] в знак нашего союза!"
+
+ rival_bantam_denied:0 "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString(TARGET_CHARACTER.IsFemale, 'отказалась', 'отказался')] продавать своего питомца — бентамского гуара персонажу [CHARACTER.GetShortUIName]."
+ rival_bantam_denied_corresponding:0 "Персонажу [CHARACTER.GetShortUIName|U] было отказано в продаже бентамского гуара — питомца персонажа [TARGET_CHARACTER.GetShortUIName]."
+
+ # Bantam guar dies :(
+ ek_pet_animal.3199.t:0 "[ROOT.Char.Custom('BantamStoryName')]: печальный день"
+ ek_pet_animal.3199.desc:0 "[ROOT.Char.Custom('BantamStoryName')] уже давно не птенец, [ROOT.Char.Custom('BantamStoryHerHis')] пение уже не такое звучное и ровное, как несколько лет назад.\n\nЯ нежно поглаживаю [ROOT.Char.Custom('BantamStoryHerHis')] [ROOT.Char.Custom('BantamColor')] тело и слушаю, как [ROOT.Char.Custom('BantamStorySheHe')] тихо щебечет и пытается расправить крылья, но, когда наступает тишина, я понимаю, что следующим утром меня уже не разбудит [ROOT.Char.Custom('BantamStoryHerHis')] щебетание."
+ ek_pet_animal.3199.a:0 "[ROOT.Char.Custom('BantamStoryName')], мне будет тебя не хватать!"
+ 
+ pet_bantam_decision:0 "[ROOT.Char.Custom('BantamStoryName')]: погладить"
+ pet_bantam_decision_desc:0 "Я знаю, как [ROOT.Char.Custom('BantamStoryName')] любит вразвалку ходить вокруг меня, и мне всегда отрадно наблюдать, как [ROOT.Char.Custom('BantamStorySheHe')] весело поёт и ласкается. Да, на уход и еду уходит много труда и денег, но я знаю: что бы ни случилось, [ROOT.Char.Custom('BantamStorySheHe')] всегда будет со мной!"
+ pet_bantam_decision_tooltip:0 "Погладить бентамского гуара"
+ pet_bantam_decision_confirm:0 "Погладить бентамского гуара"
+ 
+ # You pet your bantam guar :)
+ ek_pet_animal.3501.t:0 "[ROOT.Char.Custom(BantamStoryName')]: приятное время вместе"
+ ek_pet_animal.3501.desc:0 "Войдя в комнату, я тут же слышу, как [ROOT.Char.Custom('BantamStoryName')] радостно щебечет.\n\nС улыбкой на лице я впускаю [ROOT.Char.Custom('BantamStoryHerHis')] и даю расправить крылья, прежде чем идти.\n[ROOT.Char.Custom('BantamStoryName')] делает несколько кругов по комнате, прежде чем потереться о мои ноги своим крохотным тельцем.\n\nЯ смеюсь, и чувствую, как тяжесть этого мира перестаёт давить мне на плечи."
+ ek_pet_animal.3501.a:0 "Милашка!"
+ 
+ ek_pet_animal.3502.desc:0 "Держа в руках любимое лакомство моего бентамского гуара по кличке [ROOT.Char.Custom('BantamStoryName')], я вхожу в свой маленький сад, где [ROOT.Char.Custom('BantamStorySheHe')] проводит большую часть времени.\nВскоре после того, как [ROOT.Char.Custom('BantamStoryName')] замечает меня или, может быть, фрукты у меня в руке, [ROOT.Char.Custom('BantamStorySheHe')] начинает радостно щебетать и бегать вокруг меня.\nЗатем [ROOT.Char.Custom('BantamStorySheHe')] взбирается мне на ногу и хватает лакомство из руки.\n\nМне становится лучше, я смеюсь и уже чувствую, как [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов')] ко всему, что предложит мне этот мир."
+ ek_pet_animal.3502.a:0 "Оставь и мне, [ROOT.Char.Custom('BantamStoryName')]!"
+
+ #################
+ #   VVARDVARK   #
+ #################
+ vvardvark_story_modifier:0 "Питомец-пеплозуб"
+ vvardvark_story_modifier_desc:0 "Этот персонаж наслаждается компанией чудного, но милого существа, сопровождающего его всюду, куда бы он ни пошёл"
+ vvardvark_story_eating_fruit_modifier:0 "Ест свежие фрукты вместе с пеплозубом"
+ vvardvark_story_eating_fruit_modifier_desc:0 "Этот персонаж любит делить трапезу с пеплозубом, поедая свежие фрукты"
+ vvardvark_story_fighting_with_you_modifier:0 "Боевой пеплозуб"
+ vvardvark_story_fighting_with_you_modifier_desc:0 "В бою этого персонажа всегда сопровождает пеплозуб, который ходит где-то неподалёку, отвлекая врагов и иногда досаждая им."
+ 
+ vvardvark_gender_her:0 "её"
+ vvardvark_gender_his:0 "его"
+ vvardvark_gender_him:0 "ему"
+ vvardvark_gender_she:0 "она"
+ vvardvark_gender_he:0 "он"
+ vvardvark_gender_herself:0 "себя"
+ vvardvark_gender_himself:0 "себя"
+ vvardvark_gender_female:0 "самка"
+ vvardvark_gender_male:0 "самец"
+ 
+ vvardvark_color_dozen_banded:0 "полосатое"
+ vvardvark_color_tuxedo:0 "чёрно-белое"
+ 
+ 
+ vvardvark_name:1 "[ROOT.Char.GetLocalizedText( 'story_cycle_vvardvark_name' )]"
+ vvardvark_name_possessive:1 "[ROOT.Char.Custom( 'VvardvarkStoryName' )]"
+ vvardvark_name_drooler:0 "Слюнявец"
+ vvardvark_name_anbanmil:0 "Анбанмил"
+ vvardvark_name_sebystii:0 "Себисти"
+ vvardvark_name_serjo_licky:0 "Серджо Лизун"
+ vvardvark_name_stibbons:0 "Стиббонс"
+ vvardvark_name_lickspittle:0 "Подлиза"
+ vvardvark_name_master_scaly_tale:0 "Господин Чешуйчатых Историй"
+
+ ek_pet_animal.4001.t:0 "Пеплозуб"
+ ek_pet_animal.4001.desc:1 "Пеплозуб ходит по комнате, весело обнюхивая окружение, и я думаю, как бы [ROOT.Char.Custom('VvardvarkStoryHerHis')] назвать? Что-нибудь историческое? Что-то, намекающее на [ROOT.Char.Custom('VvardvarkStoryHerHis')] крохотное  [ROOT.Char.Custom('VvardvarkColor')] тело? Что-нибудь, что передаст то умиротворение, что я испытываю, когда [ROOT.Char.Custom('VvardvarkStorySheHe')] ходит вразвалку рядом со мной?\n\nО, знаю! Назову [ROOT.Char.Custom('VvardvarkStoryHerHis')]… "
+ ek_pet_animal.4001.a:1 "Какое чудесное имя!"
+ 
+ ### Random vvardvark events
+ # You eat some fruits with your vvardvark, smol health modifier
+ ek_pet_animal.4101.t:0 "[ROOT.Char.Custom('VvardvarkStoryName')]: свежие фрукты"
+ ek_pet_animal.4101.desc:0 "Я [Select_CString(ROOT.Char.IsFemale, 'завела', 'завёл')] себе новую привычку: конец дня я и [ROOT.Char.Custom('VvardvarkStoryName')] проводим вместе за трапезой свежими фруктами.\n\nНе знаю в чём причина: может быть в фруктах, а может во времени, которое я и [ROOT.Char.Custom('VvardvarkStorySheHe')] проводим вместе, но я ощущаю себя более [Select_CString(ROOT.Char.IsFemale, 'здоровой и энергичной', 'здоровым и энергичным')]!"
+ ek_pet_animal.4101.a:0 "Оставь мне немного, [ROOT.Char.Custom('VvardvarkStoryName')]!"
+ 
+ # Your Vvardvark goes with you into battle!
+ ek_pet_animal.4102.t:0 "[ROOT.Char.Custom('VvardvarkStoryName')]: зубы и язык"
+ ek_pet_animal.4102.desc:0 "Мой пеплозуб, [ROOT.Char.Custom('VvardvarkStoryName')], в своей отваге не знает пределов! В масштабных битвах ли, мелких стычках или даже поединках, [ROOT.Char.Custom('VvardvarkStorySheHe')] всюду сопровождает меня и дерётся бок о бок.\n\nМои противники, даже мои товарищи, кажется, опасаются [ROOT.Char.Custom('VvardvarkStoryHerHis')], и не раз я [Select_CString(ROOT.Char.IsFemale, 'выходила', 'выходил')] победителем, благодаря тому, что их отвлекало [ROOT.Char.Custom('VvardvarkStoryHerHis')] [ROOT.Char.Custom('VvardvarkColor')] тело или же раны от  [ROOT.Char.Custom('VvardvarkStoryHerHis')] лап."
+ ek_pet_animal.4102.a:0 "Со мной в гущу битвы!"
+ 
+ # Your Vvardvark attacked a vassal! Wound or possibly an eye removal
+ ek_pet_animal.4103.t:0 "[ROOT.Char.Custom('VvardvarkStoryName')]: не в бровь, а в глаз"
+ ek_pet_animal.4103.desc_wounded:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой пеплозуб, [ROOT.Char.Custom('VvardvarkStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\n[vassal.GetFirstName] [Select_CString(vassal.IsFemale, 'сумела', 'сумел')] выбежать из зала, хоть и с серьёзным ранением…"
+ ek_pet_animal.4103.desc_eye_removed_not_one_eyed:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой пеплозуб, [ROOT.Char.Custom('VvardvarkStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как пеплозуба выдворили из зала, видно было, как [vassal.GetFirstName] закрывает окровавленной рукой один глаз…"
+ ek_pet_animal.4103.desc_eye_removed_one_eyed:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой пеплозуб, [ROOT.Char.Custom('VvardvarkStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как пеплозуба выдворили из зала, видно было, как [vassal.GetFirstName] закрывает окровавленной рукой единственный глаз.\n\n«Я НИЧЕГО НЕ ВИЖУ, — [Select_CString(vassal.IsFemale, 'кричала она', 'кричал он')]. — ЭТО ВСЁ ТЫ И ТВОЯ ДУРАЦКАЯ СВИНЬЯ!»"
+ ek_pet_animal.4103.a:0 "Надеюсь, [vassal.GetFirstName] поправится…"
+ ek_pet_animal.4103.b:0 "О нет…"
+ 
+ # Vvardvark dies :(
+ ek_pet_animal.4199.t:0 "[ROOT.Char.Custom('VvardvarkStoryName')]: печальный день"
+ ek_pet_animal.4199.desc:0 "[ROOT.Char.Custom('VvardvarkStoryName')] уже давно не детёныш, [ROOT.Char.Custom('VvardvarkStoryHerHis')] мычание и сопение уже не такое звучное и ровное, как несколько лет назад.\n\nЯ нежно поглаживаю [ROOT.Char.Custom('VvardvarkStoryHerHis')] [ROOT.Char.Custom('VvardvarkColor')] тело и слушаю, как [ROOT.Char.Custom('VvardvarkStorySheHe')] тихо дышит и пытается облизать свой нос, но, когда наступает тишина, я понимаю, что следующим утром меня уже не разбудит прикосновение [ROOT.Char.Custom('VvardvarkStoryHerHis')] языка."
+ ek_pet_animal.4199.a:0 "[ROOT.Char.Custom('VvardvarkStoryName')], мне будет тебя не хватать!"
+ 
+ pet_vvardvark_decision:0 "[ROOT.Char.Custom('VvardvarkStoryName')]: погладить"
+ pet_vvardvark_decision_desc:0 "Я знаю, как [ROOT.Char.Custom('VvardvarkStoryName')] любит расхаживать вокруг меня, и мне всегда отрадно наблюдать, как [ROOT.Char.Custom('VvardvarkStorySheHe')] издаёт звуки радости и ласкается. Да, на уход и еду уходит много труда и денег, но я знаю: что бы ни случилось, [ROOT.Char.Custom('VvardvarkStorySheHe')] всегда будет со мной!"
+ pet_vvardvark_decision_tooltip:0 "Погладить пеплозуба"
+ pet_vvardvark_decision_confirm:0 "Погладить пеплозуба"
+ 
+ # You pet your vvardvark :)
+ ek_pet_animal.4501.t:0 "[ROOT.Char.Custom('VvardvarkStoryName')]: приятное время вместе"
+ ek_pet_animal.4501.desc:0 "Войдя в комнату, я тут же вижу, как [ROOT.Char.Custom('VvardvarkStoryName')] радостно облизывается.\n\nС улыбкой на лице я впускаю [ROOT.Char.Custom('VvardvarkStoryHerHis')] и даю покататься по полу, прежде чем идти.\n[ROOT.Char.Custom('VvardvarkStoryName')] делает несколько кругов по комнате, прежде чем потереться о мои ноги своим крохотным тельцем.\n\nЯ смеюсь, и чувствую, как тяжесть этого мира перестаёт давить мне на плечи."
+ ek_pet_animal.4501.a:0 "Давай, иди сюда!"
+ 
+ ek_pet_animal.4502.desc:0 "Держа в руках любимое лакомство моего пеплозуба по кличке [ROOT.Char.Custom('VvardvarkStoryName')], я вхожу в свой маленький сад, где [ROOT.Char.Custom('VvardvarkStorySheHe')] проводит большую часть времени.\nВскоре после того, как [ROOT.Char.Custom('VvardvarkStoryName')] замечает меня или, может быть, фрукты у меня в руке, [ROOT.Char.Custom('VvardvarkStorySheHe')] начинает радостно перекатываться и бегать вокруг меня.\nЗатем [ROOT.Char.Custom('VvardvarkStorySheHe')] взбирается мне на ногу и хватает лакомство из руки.\n\nМне становится лучше, я смеюсь и уже чувствую, как [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов')] ко всему, что предложит мне этот мир."
+ ek_pet_animal.4502.a:0 "Оставь и мне, [ROOT.Char.Custom('VvardvarkStoryName')]!"
+
+ ###############
+ #   MUDCRAB   #
+ ###############
+ mudcrab_story_modifier:0 "Питомец — грязевой краб"
+ mudcrab_story_modifier_desc:0 "Этот персонаж наслаждается компанией назойливого существа, сопровождающего его всюду, куда бы он ни пошёл"
+ mudcrab_story_eating_fruit_modifier:0 "Ест свежую рыбу вместе с грязевым крабом"
+ mudcrab_story_eating_fruit_modifier_desc:0 "Этот персонаж любит делить трапезу с грязевым крабом, поедая свежую рыбу"
+ mudcrab_story_fighting_with_you_modifier:0 "Боевой грязевой краб"
+ mudcrab_story_fighting_with_you_modifier_desc:0 "В бою этого персонажа всегда сопровождает грязевой краб, который ходит где-то неподалёку, отвлекая врагов и иногда досаждая им."
+ 
+ mudcrab_gender_her:0 "её"
+ mudcrab_gender_his:0 "его"
+ mudcrab_gender_him:0 "ему"
+ mudcrab_gender_she:0 "она"
+ mudcrab_gender_he:0 "он"
+ mudcrab_gender_herself:0 "себя"
+ mudcrab_gender_himself:0 "себя"
+ mudcrab_gender_female:0 "самка"
+ mudcrab_gender_male:0 "самец"
+ 
+ mudcrab_color_brown:0 "коричневый"
+ mudcrab_color_coral:0 "коралловый"
+ mudcrab_color_blue:0 "голубой"
+ 
+ 
+ mudcrab_name:1 "[ROOT.Char.GetLocalizedText( 'story_cycle_mudcrab_name' )]"
+ mudcrab_name_possessive:1 "[ROOT.Char.Custom( 'MudcrabStoryName' )]"
+ mudcrab_name_clatterclaw:0 "Щелкун"
+ mudcrab_name_jagged_claw:0 "Зазубренная Клешня"
+ mudcrab_name_shellcracker:0 "Крушитель Панцирей"
+ mudcrab_name_titanclaw:0 "Большехват"
+ mudcrab_name_witherhope:0 "Безнадёжность"
+ mudcrab_name_crabcakes:0 "Крабовая Палочка"
+ mudcrab_name_scissors:0 "Ножницы"
+ mudcrab_name_pincer:0 "Клещи"
+ mudcrab_name_toetugger:0 "Пальцетиски"
+ mudcrab_name_grasper:0 "Хват"
+
+ ek_pet_animal.5001.t:0 "Грязевой краб"
+ ek_pet_animal.5001.desc:1 "Грязевой краб ползает по комнате, весело щёлкая клешнями, и я думаю, как бы [ROOT.Char.Custom('MudcrabStoryHerHis')] назвать? Что-нибудь историческое? Что-то, намекающее на [ROOT.Char.Custom('MudcrabStoryHerHis')] [ROOT.Char.Custom('MudcrabColor')] панцирь? Что-нибудь, что передаст то умиротворение, что я испытываю, когда [ROOT.Char.Custom('MudcrabStorySheHe')] рядом со мной?\n\nО, знаю! Назову [ROOT.Char.Custom('MudcrabStoryHerHis')]… "
+ ek_pet_animal.5001.a:1 "Какое чудесное имя!"
+ 
+ ### Random Mudcrab events
+ # You eat some fruits with your Mudcrab, smol health modifier
+ ek_pet_animal.5101.t:0 "[ROOT.Char.Custom('MudcrabStoryName')]: свежая рыба"
+ ek_pet_animal.5101.desc:0 "Я [Select_CString(ROOT.Char.IsFemale, 'завела', 'завёл')] себе новую привычку: конец дня я и [ROOT.Char.Custom('MudcrabStoryName')] проводим вместе за трапезой свежой рыбой.\n\nНе знаю в чём причина: может быть в рыбе, а может во времени, которое я и [ROOT.Char.Custom('MudcrabStorySheHe')] проводим вместе, но я ощущаю себя более [Select_CString(ROOT.Char.IsFemale, 'здоровой и энергичной', 'здоровым и энергичным')]!"
+ ek_pet_animal.5101.a:0 "Оставь мне немного, [ROOT.Char.Custom('MudcrabStoryName')]!"
+ 
+ # Your Mudcrab goes with you into battle!
+ ek_pet_animal.5102.t:0 "[ROOT.Char.Custom('MudcrabStoryName')]: взять в клещи!"
+ ek_pet_animal.5102.desc:0 "Мой грязевой краб, [ROOT.Char.Custom('MudcrabStoryName')], в своей отваге не знает пределов! В масштабных битвах ли, мелких стычках или даже поединках, [ROOT.Char.Custom('MudcrabStorySheHe')] всюду сопровождает меня и дерётся бок о бок.\n\nМои противники, даже мои товарищи, кажется, опасаются [ROOT.Char.Custom('MudcrabStoryHerHis')], и не раз я [Select_CString(ROOT.Char.IsFemale, 'выходила', 'выходил')] победителем, благодаря тому, что их отвлекал [ROOT.Char.Custom('MudcrabStoryHerHis')] [ROOT.Char.Custom('MudcrabColor')] панцирь или же травмы от  [ROOT.Char.Custom('MudcrabStoryHerHis')] клешней."
+ ek_pet_animal.5102.a:0 "Со мной в гущу битвы!"
+ 
+ # Your Mudcrab attacked a vassal! Wound or possibly an eye removal
+ ek_pet_animal.5103.t:0 "[ROOT.Char.Custom('MudcrabStoryName')]: не в бровь, а в глаз"
+ ek_pet_animal.5103.desc_wounded:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой грязевой краб, [ROOT.Char.Custom('MudcrabStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\n[vassal.GetFirstName] [Select_CString(vassal.IsFemale, 'сумела', 'сумел')] выбежать из зала, хоть и с серьёзным ранением…"
+ ek_pet_animal.5103.desc_eye_removed_not_one_eyed:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой грязевой краб, [ROOT.Char.Custom('MudcrabStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как грязевого краба выдворили из зала, видно было, как [vassal.GetFirstName] закрывает окровавленной рукой один глаз…"
+ ek_pet_animal.5103.desc_eye_removed_one_eyed:0 "Тронный зал охвачен ужасом! Пока [vassal.GetName] [Select_CString(vassal.IsFemale, 'ожидала', 'ожидал')] у меня аудиенции, мой грязевой краб, [ROOT.Char.Custom('MudcrabStoryName')], как будто ни с того ни с сего напал на н[vassal.GetHerHis]!\n\nРаздался оглушительный вопль, и после того как грязевого краба выдворили из зала, видно было, как [vassal.GetFirstName] закрывает окровавленной рукой единственный глаз.\n\n«Я НИЧЕГО НЕ ВИЖУ, — [Select_CString(vassal.IsFemale, 'кричала она', 'кричал он')]. — ЭТО ВСЁ ТЫ И ТВОЯ ДУРАЦКАЯ ТВАРЬ!»"
+ ek_pet_animal.5103.a:0 "Надеюсь, [vassal.GetFirstName] поправится…"
+ ek_pet_animal.5103.b:0 "О нет…"
+ 
+ # Mudcrab dies :(
+ ek_pet_animal.5199.t:0 "[ROOT.Char.Custom('MudcrabStoryName')]: печальный день"
+ ek_pet_animal.5199.desc:0 "[ROOT.Char.Custom('MudcrabStoryName')] уже давно не малёк, [ROOT.Char.Custom('MudcrabStoryHerHis')] характерные звуки уже не такие звучные и ровные, как несколько лет назад.\n\nЯ нежно поглаживаю [ROOT.Char.Custom('MudcrabStoryHerHis')] [ROOT.Char.Custom('MudcrabColor')] панцирь и слушаю, как [ROOT.Char.Custom('MudcrabStorySheHe')] тихо дышит и пытается ущипнуть меня за нос, но, когда наступает тишина, я понимаю, что следующим утром меня уже не разбудит [ROOT.Char.Custom('MudcrabStoryHerHis')] утренняя прогулка по комнате."
+ ek_pet_animal.5199.a:0 "[ROOT.Char.Custom('MudcrabStoryName')], мне будет тебя не хватать!"
+ 
+ pet_mudcrab_decision:0 "[ROOT.Char.Custom('MudcrabStoryName')]: погладить"
+ pet_mudcrab_decision_desc:0 "Я знаю, как [ROOT.Char.Custom('MudcrabStoryName')] любит расхаживать вокруг меня, и мне всегда отрадно наблюдать, как [ROOT.Char.Custom('MudcrabStorySheHe')] издаёт звуки радости и ласкается. Да, на уход и еду уходит много труда и денег, но я знаю: что бы ни случилось, [ROOT.Char.Custom('MudcrabStorySheHe')] всегда будет со мной!"
+ pet_mudcrab_decision_tooltip:0 "Погладить грязевого краба"
+ pet_mudcrab_decision_confirm:0 "Погладить грязевого краба"
+ 
+ # You pet your Mudcrab :)
+ ek_pet_animal.5501.t:0 "[ROOT.Char.Custom('MudcrabStoryName')]: приятное время вместе"
+ ek_pet_animal.5501.desc:0 "Войдя в комнату, я тут же вижу, как [ROOT.Char.Custom('MudcrabStoryName')] радостно тыкается в окружающие предметы.\n\nС улыбкой на лице я впускаю [ROOT.Char.Custom('MudcrabStoryHerHis')] и даю размяться, прежде чем идти.\n[ROOT.Char.Custom('MudcrabStoryName')] делает несколько кругов по комнате, прежде чем потереться о мои ноги своим телом.\n\nЯ смеюсь, и чувствую, как тяжесть этого мира перестаёт давить мне на плечи."
+ ek_pet_animal.5501.a:0 "Давай, иди сюда!"
+ 
+ ek_pet_animal.5502.desc:0 "Держа в руках любимое лакомство моего грязевого краба по кличке [ROOT.Char.Custom('MudcrabStoryName')], я вхожу в свой маленький сад, где [ROOT.Char.Custom('MudcrabStorySheHe')] проводит большую часть времени.\nВскоре после того, как [ROOT.Char.Custom('MudcrabStoryName')] замечает меня или, может быть, фрукты у меня в руке, [ROOT.Char.Custom('MudcrabStorySheHe')] начинает радостно перекатываться и бегать вокруг меня.\nЗатем [ROOT.Char.Custom('MudcrabStorySheHe')] взбирается мне на ногу и хватает лакомство из руки.\n\nМне становится лучше, я смеюсь и уже чувствую, как [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов')] ко всему, что предложит мне этот мир."
+ ek_pet_animal.5502.a:0 "Оставь и мне, [ROOT.Char.Custom('MudcrabStoryName')]!"
+ 
+ ###############
+ #   SKEEVER   #
+ ###############
+ skeever_story_modifier:0 "Питомец-злокрыс"  
+ skeever_story_modifier_desc:0 "Этот персонаж наслаждается компанией лохматого существа, сопровождающего его всюду, куда бы он ни пошёл"
+ skeever_story_pack_skeever_modifier:0 "Вьючный злокрыс"  
+ skeever_story_pack_skeever_modifier_desc:0 "Этот персонаж наслаждается компанией лохматого вьючного животного,  сопровождающего его всюду, куда бы он ни пошёл" 
+ skeever_story_diseased_skeever_modifier:0 "Больной питомец-злокрыс"
+ skeever_story_diseased_skeever_modifier_desc:0 "За этим персонажем повсюду следует заражённый болезнями злокрыс"
+ skeever_story_healthy_skeever_modifier:0 "Здоровый питомец-злокрыс"
+ skeever_story_healthy_skeever_modifier_desc:0 "За этим персонажем повсюду следует совершенно здоровый злокрыс"
+ skeever_story_diseased_pack_skeever_modifier:0 "Больной вьючный злокрыс"
+ skeever_story_diseased_pack_skeever_modifier_desc:0 "За этим персонажем повсюду следует заражённый болезнями вьючный злокрыс"
+ skeever_story_healthy_pack_skeever_modifier:0 "Здоровый вьючный злокрыс"
+ skeever_story_healthy_pack_skeever_modifier_desc:0 "За этим персонажем повсюду следует совершенно здоровый вьючный злокрыс"
+ 
+ skeever_gender_her:0 "её"
+ skeever_gender_his:0 "его"
+ skeever_gender_him:0 "ему"
+ skeever_gender_she:0 "она"
+ skeever_gender_he:0 "он"
+ skeever_gender_herself:0 "себя"
+ skeever_gender_himself:0 "себя"
+ skeever_gender_female:0 "самка"
+ skeever_gender_male:0 "самец"
+ 
+ skeever_color_grey:0 "серый"
+ skeever_color_white:0 "белый"
+ skeever_color_black:0 "чёрный"
+ 
+ 
+ skeever_name:1 "[ROOT.Char.GetLocalizedText( 'story_cycle_skeever_name' )]"
+ skeever_name_possessive:1 "[ROOT.Char.Custom( 'SkeeverStoryName' )]"
+ skeever_name_nibble:0 "Грызик"
+ skeever_name_scurry:0 "Шмыг"
+ skeever_name_rotfang:0 "Гнилой Клык"
+ skeever_name_whisker:0 "Усатик"
+ skeever_name_squeak:0 "Писк"
+ skeever_name_filthpaw:0 "Грязнолап"
+ skeever_name_moldtail:0 "Плеснехвост"
+ skeever_name_scab:0 "Чесун"
+ skeever_name_scritch:0 "Царапка"
+ skeever_name_pestle:0 "Толкушка"
+
+ ek_pet_animal.6001.t:0 "Злокрыс"
+ ek_pet_animal.6001.desc:1 "Злокрыс шмыгает по комнате, волоча за собой хвост и шевеля усиками, и я думаю, как бы [ROOT.Char.Custom('SkeeverStoryHerHis')] назвать? Что-нибудь историческое? Что-то, намекающее на [ROOT.Char.Custom('SkeeverStoryHerHis')] лохматую шерсть? Что-нибудь, что передаст то, как мило [ROOT.Char.Custom(''SkeeverStorySheHe')] трётся у моих ног?\n\nО, знаю! Назову [ROOT.Char.Custom('SkeeverStoryHerHis')]…" 
+ ek_pet_animal.6001.a:1 "Какое чудесное имя!"
+ 
+ ### Random Skeever events
+ # Your skeever becomes diseased
+ ek_pet_animal.6101.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: Болезнь"
+ ek_pet_animal.6101.desc:0 "Проводить время с питомцем по кличке [ROOT.Char.Custom('SkeeverStoryName')] стало для меня привычкой, поэтому я быстро замечаю изменения в [ROOT.Char.Custom('SkeeverStoryHerHis')] внешнем виде и поведении. [ROOT.Char.Custom('SkeeverStoryHerHis')|U] шерсть свалялась, и от н[ROOT.Char.Custom('SkeeverStoryHerHis')] исходит зловонный запах. Болезнь поразила моего некогда пушистого спутника — но это лишь сделало [ROOT.Char.Custom('SkeeverStoryHerHis')] сильнее и свирепее.\n\nТем не менее риск заражения нельзя недооценивать. Что мне делать?""
+ ek_pet_animal.6101.a:0 "Вот это [ROOT.Char.Custom('SkeeverStoryName')] крепыш! Я буду держать [ROOT.Char.Custom('SkeeverStoryHerHis')] поближе." 
+ ek_pet_animal.6101.b:0 "К счастью, я знаю, как исцелять болезни."
+ ek_pet_animal.6101.c:0 "Нужно от  н[ROOT.Char.Custom('SkeeverStoryHerHis')] избавиться."
+
+ # A mage wants to heal your skeever
+ ek_pet_animal.6102.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: Исцеляющее касание"
+ ek_pet_animal.6102.desc:0 "Хотя я [Select_CString(ROOT.Char.IsFemale, 'привыкла', 'привык' )] к недугу, который несёт [ROOT.Char.Custom('SkeeverStoryName')], многие вокруг меня не разделяют этого чувства. Это становится очевидным, когда ко мне сегодня подходит [healer.GetName] с предложением. Заявляя о своём мастерстве в школе восстановления, [healer.GetSheHe] уверяет, что хворь, поразившую моего спутника, можно изгнать. В обмен на мою благодарность, [healer.GetSheHe] предлагает применить своё искусство исцеления и избавить моего питомца по кличке [ROOT.Char.Custom('SkeeverStoryName')] ото всех следов болезни."
+ ek_pet_animal.6102.a:0 ""Здоровье моего любимчика стоит любых денег!""  
+ ek_pet_animal.6102.b:0 "[ROOT.Char.Custom('SkeeverStoryName')] мне нравится так, как есть. Уходи отсюда."
+
+ # Diseased skeever causes Ataxia outbreak
+ ek_pet_animal.6103.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: Вестник Чумы"
+ ek_pet_animal.6103.desc:0 "Сначала заболели слуги — они стали спотыкаться, жаловаться на головокружение и дрожь в руках. Вскоре даже мои самые стойкие рыцари едва могли держать в руке меч. Запах разложения пропитал каждый уголок, молчаливо предвещая надвигающуюся беду. А источник этого? [ROOT.Char.Custom('SkeeverStoryName')], что носится повсюду с заразительной радостью.\n\nБез сомнения, это атаксия — болезнь, часто встречающаяся у злокрысов, и, похоже, теперь она проникла в мой двор."
+ ek_pet_animal.6103.a:0 "Возможно, держать злокрыса как питомца было плохой идеей…"  
+ ek_pet_animal.6103.b:0 "Какой замечательный дар болезни!"
+ ek_pet_animal.6103.c:0 "Хватит! [ROOT.Char.Custom('SkeeverStoryName')] больше не будет здесь жить!" 
+
+ # Skeever bites a courtier
+ ek_pet_animal.6104.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: Острые зубы"
+ ek_pet_animal.6104.desc:0 "Я слышу внезапный вскрик, за которым следует лихорадочное шарканье ног. Обернувшись на шум, я замечаю, как [ROOT.Char.Custom('SkeeverStoryName')] удирает прочь, а [courtier.GetName] судорожно сжимает свою руку, глядя на меня широко раскрытыми от боли и шока глазами.\n\nИз свежей раны сочится кровь — похоже, [Select_CString(courtier.IsFemale, 'эта дура попыталась', 'этот глупец попытался' )] погладить моего злокрыса и [Select_CString(courtier.IsFemale, 'поплатилась', 'поплатился' )] за это.\n\nК несчастью для н[courtier.GetHerHis], укусы злокрысов часто переносят болезни, так что, возможно, придётся что-то предпринять."
+ ek_pet_animal.6104.a:0 "[physician.GetName] займётся вашей раной."  
+ ek_pet_animal.6104.a.success:0 "[physician.GetName] успешно лечит рану"
+ ek_pet_animal.6104.a.failure:0 "[physician.GetName] только всё усугубляет"
+ ek_pet_animal.6104.b:0 "Спокойно, я могу это исцелить."
+ ek_pet_animal.6104.c:0 "Хватит ныть, это всего лишь царапина."
+ ek_pet_animal.6104.c.success:0 "Укус был не так уж и страшен"
+ ek_pet_animal.6104.c.failure:0 "Состояние раны ухудшится"
+
+ # Skeever gathers a pack
+ ek_pet_animal.6105.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: Глава стаи"
+ ek_pet_animal.6105.desc:0 "Сначала я [Select_CString(ROOT.Char.IsFemale, 'отмахивалась', 'отмахивался' )] от этого как от простых слухов — пустой болтовни, чтобы посеять страх. Но теперь я слышу это [Select_CString(ROOT.Char.IsFemale, 'сама', 'сам' )]. Каждый вечер писк становится всё громче, а неустанное щёлканье коготков эхом разносится по коридорам. [ROOT.Char.Custom('SkeeverStoryName')] теперь повелевает местными грызунами.\n\nЗа моим любимчиком в тенях следует преданная стая, незаметно проникая в любые щели и трещины, оставляя за собой следы заразы. Мои придворные содрогаются от отвращения, и я боюсь, что эта орда скоро станет ещё больше."
+ ek_pet_animal.6105.a:0 "Так продолжаться не может. [ROOT.Char.Custom('SkeeverStoryName')] больше не будет здесь жить…"  
+ ek_pet_animal.6105.b:0 "Приятно видеть, что у н[ROOT.Char.Custom('SkeeverStoryHerHis')] столько друзей!"
+ ek_pet_animal.6105.c:0 "Поистине, [ROOT.Char.Custom('SkeeverStoryHerHis')] отметил своим благословением Надзиратель!""
+
+ # Skeever kills rats
+ ek_pet_animal.6106.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: Охотник на крыс"
+ ek_pet_animal.6106.desc:0 "[ROOT.Char.Custom('SkeeverStoryName')] проявляет свои навыки неожиданным образом. Мой здоровый и сильный питомец занялся охотой на крыс, которые некогда наводняли мой замок. Мой любимец крупнее и свирепее своих мелких сородичей, и у крыс нет ни шанса — лишь разбросанные останки напоминают о [ROOT.Char.Custom('SkeeverStoryHerHis')] охоте.\n\nВпервые за долгое время кладовые остаются нетронутыми, а кухни свободны от грызунов. Некоторые придворные по-прежнему испытывают беспокойство при виде злокрыса, крадущегося по коридорам, но я не могу отрицать очевидного — этот замок ещё никогда не был так свободен от крыс."
+ ek_pet_animal.6106.a:0 "Кто бы мог подумать?"
+
+ # Skeever is lauded by the court
+ ek_pet_animal.6107.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: Любимец двора"
+ ek_pet_animal.6107.desc:0 "Существо, что когда-то считалось простым вредителем, теперь вызывает восхищение у знати. Видя силу и хитрость моего питомца по кличке [ROOT.Char.Custom('SkeeverStoryName')], некоторые из моих придворных начали восхищаться [ROOT.Char.Custom('SkeeverStoryHerHis')] выносливостью. Несколько смельчаков уже даже попытались поймать и приручить собственных злокрысов — пока безуспешно. Однако их тщетные попытки лишь подчёркивают уникальность моего любимца-злокрыса."
+ ek_pet_animal.6107.a:0 "[ROOT.Char.Custom('SkeeverStoryName')] не имеет равных — как и я."
+ ek_pet_animal.6107.b:0 "Ну и ладно, мне просто нравится [ROOT.Char.Custom('SkeeverStoryHerHis')] общество."
+
+ # Skeever steals food
+ ek_pet_animal.6108.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: Вор в кладовой"
+ ek_pet_animal.6108.desc:0 "Кухня замка уже несколько дней в полном хаосе. Слуги шепчутся о воре-призраке, который заставляет еду исчезать из кладовых без следа. Но я знаю лучше. [ROOT.Char.Custom('SkeeverStoryName')] смелеет и теперь проникает в продовольственные запасы и устраивает там пир.\n\nСегодня я [Select_CString(ROOT.Char.IsFemale, 'застала', 'застал' )] [ROOT.Char.Custom('SkeeverStoryHerHis')] с поличным, за трапезой буханкой хлеба. Несколько слуг наблюдают за мной, ожидая моей реакции."
+ ek_pet_animal.6108.a:0 "Сытый злокрыс — счастливый злокрыс. Продолжай!"
+ ek_pet_animal.6108.b:0 "Хватит! Кухня — запретная зона!"
+ ek_pet_animal.6108.b.tt:0 "Вы попытаетесь держать своего любимца подальше от кухни"
+
+ # Skeever speaks in Peryite's voice
+ ek_pet_animal.6109.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: Голос Периайта"
+ ek_pet_animal.6109.desc:0 "Пока я размеренно глажу своего любимца, знакомое попискивание успокаивает мои мысли. Но затем, безо всякого предупреждения, воздух становится тяжёлым, пропитанным невидимым присутствием. В моём сознании раздаётся голос — шипящий, глубокий, но однозначно реальный. Он шепчет о разложении и порядке, о чуме и предназначении.\n\nЯ застываю. Эти слова доносятся не из залов и не принадлежат никому из смертных. Их как будто произносит [ROOT.Char.Custom('SkeeverStoryName')]. Маленькие глаза злокрыса встречаются с моими, и в них виднеются что-то за пределами простых животных инстинктов.\n\nИ вдруг, так же внезапно, как это началось, всё прекращается."
+ ek_pet_animal.6109.a:0 "Когда Чумной Владыка призовёт, я отвечу — и весь мир услышит!"
+ ek_pet_animal.6109.b:0 "Я последую за Надзирателем, но пока это должно оставаться тайной."
+ ek_pet_animal.6109.c:0 "[ROOT.Char.Custom('SkeeverStoryName')] теперь сосуд князя даэдра. Нам придётся расстаться…"
+ ek_pet_animal.6109.d:0 "Это была всего лишь иллюзия."
+
+ # Skeever dies :(
+ ek_pet_animal.6199.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: печальный день"
+ ek_pet_animal.6199.desc:0 "[ROOT.Char.Custom('SkeeverStoryName')] уже не отличается такой же подвижностью, как прежде. Дни безудержной беготни и шалостей остались позади, уступив место вялым движениям и тяжёлому, хриплому дыханию. Я слышу это в [ROOT.Char.Custom('SkeeverStoryHerHis')] писке — когда-то резком и энергичном, а теперь слабом и неуверенном.\n\nПроводя рукой по [ROOT.Char.Custom('SkeeverStoryHerHis')] клочковатой, спутанной шерсти, я замечаю последний, едва заметный взмах [ROOT.Char.Custom('SkeeverStoryHerHis')] усов. На мгновение мне кажется, что [ROOT.Char.Custom('SkeeverStorySheHe')] вот-вот вскочит и укусит меня за палец, как бывало прежде. Но тишина затягивается, и я понимаю, что больше никогда не услышу знакомый скрежет крошечных когтей по полу."
+ ek_pet_animal.6199.a:0 "[ROOT.Char.Custom('SkeeverStoryName')], мне будет тебя не хватать! "
+ 
+ pet_skeever_decision:0 "[ROOT.Char.Custom('SkeeverStoryName')]: погладить"
+ pet_skeever_decision_desc:0 "Я знаю, как [ROOT.Char.Custom('SkeeverStoryName')] любит бегать вокруг меня, стуча коготками по полу. Несмотря на [ROOT.Char.Custom('SkeeverStoryHerHis')] запах и проплешины, мне удивительным образом приятно, когда [ROOT.Char.Custom('SkeeverStorySheHe')] трётся об меня. Да, на уход и еду уходит много труда и денег — а то ж ведь [ROOT.Char.Custom('SkeeverStorySheHe')] всё погрызёт, но я знаю: что бы ни случилось, [ROOT.Char.Custom('SkeeverStoryName')] всегда будет со мной!"  
+ pet_skeever_decision_tooltip:0 "Погладить вашего злокрыса"
+ pet_skeever_decision_confirm:0 "Погладить вашего злокрыса"
+ 
+ # You pet your Skeever :)
+ ek_pet_animal.6501.t:0 "[ROOT.Char.Custom('SkeeverStoryName')]: минута наедине" 
+ ek_pet_animal.6501.desc:0 "Войдя в комнату, я тут же слышу знакомый звук: это [ROOT.Char.Custom('SkeeverStoryName')] стучит коготками по полу. [ROOT.Char.Custom('SkeeverStorySheHe')|U] бежит ко мне, радостно шевеля усиками.\n\nС улыбкой на лице я наклоняюсь и позволяю [ROOT.Char.Custom('SkeeverStoryHerHim')] взобраться на мою руку и чувствую, как [ROOT.Char.Custom('SkeeverStoryHerHis')] лохматая шерсть щекочет кожу. [ROOT.Char.Custom('SkeeverStorySheHe')|U] пробегается по моим плечам, а затем спрыгивает и устраивает настоящий хаос, носясь по комнате. После нескольких мгновений безумного мельтешения [ROOT.Char.Custom('SkeeverStorySheHe')] наконец устраивается у моих ног, прижимаясь ко мне с неожиданным теплом.\n\nЯ смеюсь, и чувствую, как тяжесть этого мира перестаёт давить мне на плечи."  
+ ek_pet_animal.6501.a:0 "Иди сюда, маленький проказник!"  
+ ek_pet_animal.6502.desc:0 "С кусочком любимого лакомства моего питомца в руке я выхожу в свой маленький сад, где [ROOT.Char.Custom('SkeeverStoryName')] любит прятаться.\n\nКак только [ROOT.Char.Custom('SkeeverStorySheHe')] замечает — или, скорее всего, чует любимое угощение, [ROOT.Char.Custom('SkeeverStorySheHe')] бросается ко мне, петляя лихорадочным зигзагом, прежде чем закружить у моих ног. С восторженным писком [ROOT.Char.Custom('SkeeverStorySheHe')] царапает мою ногу, а затем ловко выхватывает лакомство из руки и начинает жадно его грызть. \n\nЯ качаю головой, мягко посмеиваясь. Как ни странно, наблюдая за моим любимым зверем в эти моменты чистой радости, я забываю о тяжести забот."  
+ ek_pet_animal.6502.a:0 "Помедленнее,  [ROOT.Char.Custom('SkeeverStoryName')]! Сначала прожуй!"  

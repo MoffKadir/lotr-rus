@@ -1,0 +1,526 @@
+﻿l_russian:
+ trait_impure:0 "Порочность"
+ trait_impure_desc:0 "Порочные персонажи оскверняют свою веру и божественное наследие либо неся проклятие безобразного облика, либо вступая в отношения с другими осквернёнными."
+ trait_impure_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] оскверняет свою веру и божественное наследие либо неся проклятие безобразного облика, либо вступая в отношения с другими осквернёнными."
+ 
+ trait_pirate:0 "Пират"
+ trait_pirate_desc:0 "Персонаж — Пират. Свистать всех наверх!\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать играть за [Concept('pirate_government', 'пиратское правительство')|E].#!"   #ИСПАНЦЫЫЫЫ!
+ trait_pirate_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — Пират. Свистать всех наверх!"
+
+ trait_plunderer:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Налётчица', 'Налётчик' )]"
+ trait_plunderer_desc:0 "Только забрав силой то, что твоё по праву, можно достичь настоящего могущества. А весь мир и его богатства — по праву твои."
+ trait_plunderer_character_desc:0 "Только забрав силой то, что твоё по праву, можно достичь настоящего могущества. А весь мир и его богатства — по праву [ROOT.GetCharacter.GetHerHis]."
+
+ trait_crimeboss:0 "Преступный воротила"
+ trait_crimeboss_desc:0 "Среди игроков на карте на Тамриэля множество тёмных сил и преступных группировок, и этот персонаж решил использовать их для собственной выгоды."
+ trait_crimeboss_character_desc: "Среди игроков на карте на Тамриэля множество тёмных сил и преступных группировок, и [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'решила', 'решил' )] использовать их для собственной выгоды."
+
+ trait_necromancer:0 "Некромант"
+ trait_necromancer_desc:0 "Персонаж оскверняет тела усопших, манипулирует их душами и поднимает мертвецов себе на службу.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать играть за тайного некроманта.#!"
+ trait_necromancer_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] оскверняет тела усопших, манипулирует их душами и поднимает мертвецов себе на службу."
+
+ trait_reclusive_vampire:0 "Затворничество"
+ trait_reclusive_vampire_desc:0 "Персонаж предпочитает уединение и пренебрегает своими обязанностями."
+ trait_reclusive_vampire_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] предпочитает уединение и пренебрегает своими обязанностями."   #из ванили
+ reclusive_vampire_player_desc:0 "Тайный вампир"
+ trait_vampire_player_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне от всех является вампиром — проклятой нежитью, пьющей кровь живых и трепещущей перед солнечным светом."
+
+ trait_vampire_character:0 "Вампир"
+ trait_vampire_character_desc:0 "Персонаж является вампиром — проклятой нежитью, пьющей кровь живых и трепещущей перед солнечным светом.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать играть за тайного вампира.#!"
+ trait_vampire_character_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] является вампиром — проклятой нежитью, пьющей кровь живых и трепещущей перед солнечным светом." #character_character
+
+# Diseases
+ trait_sanguinare_vampiris:0 "Сангвинаре Вампирис"
+ trait_sanguinare_vampiris_desc:0 "Персонаж заразился Сангвинаре Вампирис — болезнью, передающейся при взаимодействии с вампирами, вызывающую слабость днём и жажду в сумрак. Если её скоро не вылечить, последствия будут весьма ужасны."
+ trait_sanguinare_vampiris_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'заразилась', 'заразился' )] Сангвинаре Вампирис — болезнью, передающейся при взаимодействии с вампирами, вызывающую слабость днём и жажду в сумрак. Если её скоро не вылечить, последствия будут весьма ужасны." #character_character
+ disease_sanguinare_vampiris:0 "Сангвинаре Вампирис."
+
+ trait_sanies_lupinus:0 "Гнойный люпинус"
+ trait_sanies_lupinus_desc:0 "Персонаж заразился гнойным люпинусом — болезнью, передающейся при взаимодействии с оборотнями, вызывающую сонливость. Если её скоро не вылечить, последствия будут весьма ужасны."
+ trait_sanies_lupinus_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'заразилась', 'заразился' )] гнойным люпинусом — болезнью, передающейся при взаимодействии с оборотнями, вызывающую сонливость. Если её скоро не вылечить, последствия будут весьма ужасны." #character_character
+ disease_sanies_lupinus:0 "Гнойный люпинус."
+
+ trait_chrondiasis:0 "Хрондиаз"
+ trait_chrondiasis_desc:0 "Персонаж заразился хрондиазом — магической болезнью, которая поражает только тех, кто предрасположен к тайным искусствам. Хрондиаз медленно истощает ум и запасы магии и может привести к слабоумию или смерти больного."
+ trait_chrondiasis_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'заразилась', 'заразился' )] хрондиазом — магической болезнью, которая поражает только тех, кто предрасположен к тайным искусствам. Хрондиаз медленно истощает ум и запасы магии и может привести к слабоумию или смерти больного."
+ disease_chrondiasis:0 "Хрондиаз."
+
+ trait_peryite_affliction:0 "Одержимость Периайта"
+ trait_peryite_affliction_desc:0 "Персонаж заразился одержимостью Периайта — даэдрической болезнью, насланной самим Князем Чумы. Зараза долго не покидает тело. В некоторые дни она едва даёт о себе знать, а в другие больного мучат лихорадочные припадки и рвота едкой слизью."
+ trait_peryite_affliction_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'заразилась', 'заразился' )] одержимостью Периайта — даэдрической болезнью, насланной самим Князем Чумы. Зараза долго не покидает тело. В некоторые дни она едва даёт о себе знать, а в другие больного мучат лихорадочные припадки и рвота едкой слизью."
+ disease_peryite_affliction:0 "Одержимость Периайта."
+
+ trait_stricken: "Поражённый"
+ trait_stricken_desc: "Этот персонаж заболел Кнахатенским гриппом, однако он не погиб, но ослабел умом и телом. Он носит на себе печать заразы и уже практически одичал. Таких, как он, считают изгоями и убивают на месте."
+ trait_stricken_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'заболела', 'заболел' )] Кнахатенским гриппом, однако [ROOT.GetCharacter.GetSheHe] не [Select_CString(ROOT.GetCharacter.IsFemale, 'погибла, но ослабела', 'погиб, но ослабел' )] умом и телом. [ROOT.GetCharacter.GetSheHe|U] носит на себе печать заразы и уже практически [Select_CString(ROOT.Char.IsFemale, 'одичала', 'одичал' )]. Таких, как [ROOT.GetCharacter.GetSheHe], считают изгоями и убивают на месте из страха перед гриппом."
+
+ # Transformations
+ trait_irritable_lycan:0 "Раздражительность"
+ trait_irritable_lycan_desc:0 "Из-за постоянного стресса персонаж склонен к вспышкам ярости и истерикам."
+ trait_irritable_lycan_character_desc:0 "Из-за постоянного стресса [ROOT.GetCharacter.GetFirstNameNoTooltip] не может сдержать вспышек ярости и постоянно устраивает истерики."   #из ванили
+ irritable_lycan_player_desc:0 "Тайный оборотень"
+ trait_lycan_player_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне от всех является оборотнем — неестественной помесью зверя и [ROOT.GetCharacter.GetHerHis] изначальной расы."
+
+ trait_lycan_character:0 "Оборотень"
+ trait_lycan_character_desc:0 "Персонаж является оборотнем — проклятым существом, меняющим свой облик под влиянием лун Нирна.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать играть за тайного оборотня.#!"
+ trait_lycan_character_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] является оборотнем — проклятым существом, меняющим свой облик под влиянием лун Нирна." #character_character
+
+
+ trait_lich_character:0 "Лич"
+ trait_lich_character_desc:0 "Персонаж подчинил себе саму смерть с помощью тёмной магии и запрещённых ритуалов, став личом и нежитью."
+ trait_lich_character_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'подчинила', 'подчинил' )] себе саму смерть с помощью тёмной магии и запрещённых ритуалов, став личом и нежитью."
+ 
+ trait_undead:0 "Нежить"
+ trait_undead_character:0 "Нежить"
+ trait_undead_character_desc:0 "Персонаж избежал оков смерти и странствует по Нирну будучи жуткой нежитью."  
+ trait_undead_character_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'избежала', 'избежал' )] оков смерти и странствует по Нирну будучи жуткой нежитью."
+ trait_undead_character_undead_version_of_desc:0 "[ROOT.Var('undead_version_of').Char.GetTitledFirstName] [Select_CString(ROOT.Var('undead_version_of').Char.IsFemale, 'избежала', 'избежал' )] оков смерти и странствует по Нирну будучи жуткой нежитью."
+  
+ trait_hagraven:0 "Ворожея"
+
+ trait_briarheart:0 "Вересковое сердце"
+ trait_briarheart_desc:0 "Персонаж является особо сильным колдуном. Он провёл древний и тёмный ритуал и променял часть своей сущности на забытые силы."
+ trait_briarheart_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip|U] является особо [Select_CString(ROOT.GetCharacter.IsFemale, 'сильной ведьмой', 'сильным ведуном' )]. [ROOT.GetCharacter.GetSheHe|U] [Select_CString(ROOT.GetCharacter.IsFemale, 'провела', 'провёл' )] древний и тёмный ритуал и [Select_CString(ROOT.GetCharacter.IsFemale, 'променяла', 'променял' )] часть своего бытия на забытые силы."
+
+ trait_education_magic:0 "Ученик магии"
+ trait_education_magic_1:0 "Заклинатель-новичок"
+ trait_education_magic_1_desc:0 "Персонаж был плохо обучен магическим искусствам."
+ trait_education_magic_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была плохо обучена', 'был плохо обучен' )] магическим искусствам."
+ trait_education_magic_2:0 "Начинающий кудесник"
+ trait_education_magic_2_desc:0 "Персонаж крепко знает основы магии."
+ trait_education_magic_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] крепко знает основы магии."
+ trait_education_magic_3:0 "Умелый маг"
+ trait_education_magic_3_desc:0 "Персонаж был хорошо обучен магическим искусствам."
+ trait_education_magic_3_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была хорошо обучена', 'был хорошо обучен' )] магическим искусствам."
+ trait_education_magic_4:0 "Мастер магии"
+ trait_education_magic_4_desc:0 "Персонаж учился у лучших магов Тамриэля, имеет огромные природные запасы арканы и желает выучить всё, что только можно, о магии."
+ trait_education_magic_4_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'училась', 'учился' )] у лучших магов Тамриэля, имеет огромные природные запасы арканы и желает выучить всё, что только можно, о магии."
+ trait_education_magic_5:0 "Величайший из магов"
+ trait_education_magic_5_desc:0 "Персонаж учился у самых могущественных и мудрых волшебников и достиг высшей точки понимания магической науки. Перед его способностями бессильны даже ограничения реальности."
+ trait_education_magic_5_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'училась', 'учился' )] у самых могущественных и мудрых волшебников и [Select_CString(ROOT.GetCharacter.IsFemale, 'достигла', 'достиг' )] высшей точки понимания магической науки. Перед [ROOT.GetCharacter.GetHerHis] способностями бессильны даже ограничения реальности."
+ 
+ trait_arcana_good:0 "Магическая даровитость"
+ trait_arcana_good_1:0 "Прояснение"
+ trait_arcana_good_1_desc:0 "Персонаж ясно понимает законы магии и ему проще произносить заклинания."
+ trait_arcana_good_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] ясно понимает законы магии и [Select_CString(ROOT.GetCharacter.IsFemale, 'ей', 'ему' )] проще произносить заклинания."
+ trait_arcana_good_2:0 "Прозрение"
+ trait_arcana_good_2_desc:0 "Персонаж просвещён в магии и с лёгкостью исполняет впечатляющие заклинания."
+ trait_arcana_good_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'просвещена', 'просвещён' )] в магии и с лёгкостью исполняет впечатляющие заклинания."
+ trait_arcana_good_3:0 "Просвещение Этериуса"
+ trait_arcana_good_3_desc:0 "Персонаж манипулирует магией так, будто его благословил Этериус, и совершает магические чудеса практически без усилий."
+ trait_arcana_good_3_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] манипулирует магией так, будто [ROOT.GetCharacter.GetHerHis|l] благословил Этериус, и совершает магические чудеса практически без усилий."
+ trait_arcana_bad:0 "Магическая бездарность"
+ trait_arcana_bad_1:0 "Раздрай"
+ trait_arcana_bad_1_desc:0 "Персонажу не даются магические искусства, что делает любое магическое действие сложнее."
+ trait_arcana_bad_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] не ладит с магическими искусствами, что делает любое магическое действие сложнее."
+ trait_arcana_bad_2:0 "Разлад"
+ trait_arcana_bad_2_desc:0 "Персонаж не может почувствовать поток магии и читает хорошие заклинания только сильно сконцентрировавшись."
+ trait_arcana_bad_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] не может почувствовать поток магии и читает хорошие заклинания только сильно сконцентрировавшись."
+ trait_arcana_bad_3:0 "Раздор"
+ trait_arcana_bad_3_desc:0 "Персонаж будто был отречён от магии, он может повелевать магическими силами только сильно напрягшись."
+ trait_arcana_bad_3_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] будто [Select_CString(ROOT.GetCharacter.IsFemale, 'была отречена', 'был отречён' )] от магии, [ROOT.GetCharacter.GetSheHe|l] может повелевать магическими силами только сильно напрягшись."
+ trait_disrupted:0 "Разрыв"
+ trait_disrupted_desc:0 "Восприятие магии персонажа было насильно подорвано."
+ trait_disrupted_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] больше не чувствует магию как раньше, [ROOT.GetCharacter.GetHerHis|l] восприятие было насильно подорвано."
+
+ trait_experimentalist:0 "Экспериментатор"
+ trait_experimentalist_desc:0 "Этот персонаж любит проводить всевозможные магические эксперименты, во время чего может забыть о мирских печалях."
+ trait_experimentalist_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] любит проводить всевозможные магические эксперименты, во время чего [ROOT.GetCharacter.GetSheHe|l] может забыть о мирских печалях."
+
+ trait_experimentalist_necromancer:0 "Экспериментатор"
+ trait_experimentalist_necromancer_desc:0 "Этот персонаж любит проводить всевозможные магические эксперименты, во время чего может забыть о мирских печалях."
+ trait_experimentalist_necromancer_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] любит проводить всевозможные магические эксперименты, во время чего [ROOT.GetCharacter.GetSheHe|l] может забыть о мирских печалях."
+ trait_experimentalist_necromancer_player:0 "Тайный некромант"
+ trait_experimentalist_necromancer_player_desc:0 "Этот персонаж в тайне от всех является некромантом. Однако настоящая природа [ROOT.GetCharacter.GetHerHis|l] тёмного увлечения всё ещё скрыта от мира."
+
+ trait_dragonborn:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Драконорождённая', 'Драконорождённый' )]"
+ trait_dragonborn_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'родилась', 'родился' )] с кровью и душой дракона. Известно, что Боги особенно благосклонны к таким как [ROOT.GetCharacter.GetSheHe|l]."
+
+ trait_bagarn:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Последняя', 'Последний' )] из своего рода"
+ trait_bagarn_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.GetCharacter.IsFemale, 'последняя', 'последний' )] из своего рода. [ROOT.GetCharacter.GetSheHe|U] больше никогда не увидит подобных себе."
+ trait_bagarn_alive_desc:0 "Тысячи лет [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была последней', 'был последним' )] из своего рода, пока не свершилось чудо и двемеры не вернулись. Но долгие годы, проведённые в одиночестве, не прошли бесследно для [ROOT.GetCharacter.GetHerHis] тела и ума, и [ROOT.GetCharacter.GetFirstNameNoTooltip] уже никогда не будет [Select_CString(ROOT.GetCharacter.IsFemale, 'такой', 'таким' )] же, как прежде."
+ trait_bagarn_cannot_grant_land:0 "[recipient.GetFullName] имеет [trait|El] «[GetTrait('bagarn').GetName( recipient.Self )]», и никакая $heritage_dwemeri_name$ая [culture|El] не является [Concept( 'living_culture_short', 'живой' )|E]"
+
+ trait_line_of_x:0 "Потомки персонажа [ROOT.GetCharacter.GetFirstNameNoTooltip]" # assume named Line of X
+ trait_line_of_x_null:0 "Потомки персонажа X" # incase character doesnt exist
+ trait_line_of_x_desc:0 "Персонаж представляет потомков персонажа [ROOT.GetCharacter.GetFirstNameNoTooltip]."
+ trait_line_of_x_desc_null:0 "Персонаж представляет потомков персонажа X." # incase character doesnt exist
+ 
+ trait_lifespan:0 "Естественная [gc_lifespan|El]"
+ TRAIT_FLAG_DESC_inheritable_lifespan:0 "\nЭта [gc_lifespan|El] наследуется"
+ TRAIT_FLAG_DESC_not_inheritable_lifespan:0 "\n#N Эта [gc_lifespan|El] не наследуется#!"
+ 
+ trait_lifespan_1:1 "Продолжительность жизни I"
+ trait_lifespan_1_desc:1 "Персонаж проживёт около 100 лет. Женщины с этим свойством становятся бесплодны в возрасте около 85 лет."
+ trait_lifespan_1_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] проживёт около 100 лет. Женщины с этим свойством становятся бесплодны в возрасте около 85 лет."
+ 
+ trait_lifespan_2:1 "Продолжительность жизни II"
+ trait_lifespan_2_desc:1 "Персонаж проживёт около 150 лет. Женщины с этим свойством становятся бесплодны в возрасте около 115 лет."
+ trait_lifespan_2_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] проживёт около 150 лет. Женщины с этим свойством становятся бесплодны в возрасте около 115 лет."
+ 
+ trait_lifespan_3:1 "Продолжительность жизни III"
+ trait_lifespan_3_desc:1 "Персонаж проживёт около 250 лет. Женщины с этим свойством становятся бесплодны в возрасте около 150 лет."
+ trait_lifespan_3_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] проживёт около 250 лет. Женщины с этим свойством становятся бесплодны в возрасте около 150 лет."
+ 
+ trait_lifespan_4:1 "Продолжительность жизни IV"
+ trait_lifespan_4_desc:1 "Персонаж проживёт около 350 лет. Женщины с этим свойством становятся бесплодны в возрасте около 215 лет."
+ trait_lifespan_4_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] проживёт около 350 лет. Женщины с этим свойством становятся бесплодны в возрасте около 215 лет."
+
+ trait_lifespan_magic:0 "Магическая [gc_lifespan|El]"
+ trait_lifespan_magic_1:1 "Магическая продолжительность жизни I"
+ trait_lifespan_magic_1_desc:1 "Персонаж продлил свою жизнь магией и проживёт около 100 лет. Женщины с этим свойством становятся бесплодны в возрасте около 85 лет."
+ trait_lifespan_magic_1_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около 100 лет. Женщины с этим свойством становятся бесплодны в возрасте около 85 лет."
+ trait_lifespan_magic_1_character_desc_extended:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около 100 лет. Женщины с этим свойством становятся бесплодны в возрасте около 85 лет.\n\n[ROOT.GetCharacter.GetHerHis|U] естественная [gc_lifespan|El], которая передастся по наследству детям, — [ROOT.Char.Custom('GetNaturalLifespan')]."
+ 
+ trait_lifespan_magic_2:1 "Магическая продолжительность жизни II"
+ trait_lifespan_magic_2_desc:1 "Персонаж продлил свою жизнь магией и проживёт около 150 лет. Женщины с этим свойством становятся бесплодны в возрасте около 115 лет."
+ trait_lifespan_magic_2_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около 150 лет. Женщины с этим свойством становятся бесплодны в возрасте около 115 лет."
+ trait_lifespan_magic_2_character_desc_extended:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около около 150 лет. Женщины с этим свойством становятся бесплодны в возрасте около 115 лет.\n\n[ROOT.GetCharacter.GetHerHis|U] естественная [gc_lifespan|El], которая передастся по наследству детям, — [ROOT.Char.Custom('GetNaturalLifespan')]."
+ 
+ trait_lifespan_magic_3:1 "Магическая продолжительность жизни III"
+ trait_lifespan_magic_3_desc:1 "Персонаж продлил свою жизнь магией и проживёт около 250 лет. Женщины с этим свойством становятся бесплодны в возрасте около 150 лет."
+ trait_lifespan_magic_3_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около 250 лет. Женщины с этим свойством становятся бесплодны в возрасте около 150 лет."
+ trait_lifespan_magic_3_character_desc_extended:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около 250 лет. Женщины с этим свойством становятся бесплодны в возрасте около 150 лет.\n\n[ROOT.GetCharacter.GetHerHis|U] естественная [gc_lifespan|El], которая передастся по наследству детям, — [ROOT.Char.Custom('GetNaturalLifespan')]."
+ 
+ trait_lifespan_magic_4:1 "Магическая продолжительность жизни IV"
+ trait_lifespan_magic_4_desc:1 "Персонаж продлил свою жизнь магией и проживёт около 350 лет. Женщины с этим свойством становятся бесплодны в возрасте около 215 лет."
+ trait_lifespan_magic_4_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около 350 лет. Женщины с этим свойством становятся бесплодны в возрасте около 215 лет."
+ trait_lifespan_magic_4_character_desc_extended:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около 350 лет. Женщины с этим свойством становятся бесплодны в возрасте около 215 лет.\n\n[ROOT.GetCharacter.GetHerHis|U] естественная [gc_lifespan|El], которая передастся по наследству детям, — [ROOT.Char.Custom('GetNaturalLifespan')]."
+ 
+ trait_lifespan_magic_5:1 "Магическая продолжительность жизни V"
+ trait_lifespan_magic_5_desc:1 "Персонаж продлил свою жизнь магией и проживёт около 550 лет. Женщины с этим свойством становятся бесплодны в возрасте около 340 лет."
+ trait_lifespan_magic_5_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около 550 лет. Женщины с этим свойством становятся бесплодны в возрасте около 340 лет."
+ trait_lifespan_magic_5_character_desc_extended:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'продлила', 'продлил')] свою жизнь магией и проживёт около 550 лет. Женщины с этим свойством становятся бесплодны в возрасте около 340 лет.\n\n[ROOT.GetCharacter.GetHerHis|U] естественная [gc_lifespan|El], которая передастся по наследству детям, — [ROOT.Char.Custom('GetNaturalLifespan')]."
+ 
+ trait_lifespan_magic_6:1 "Магическое бессмертие"
+ trait_lifespan_magic_6_desc:1 "При помощи магии этот персонаж достиг бессмертия, и смерть от старости ему больше не грозит."
+ trait_lifespan_magic_6_character_desc:1 "При помощи магии [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'достигла', 'достиг')] бессмертия, и смерть от старости [ROOT.GetCharacter.GetHerHim] больше не грозит."
+ trait_lifespan_magic_6_character_desc_extended:1 "При помощи магии [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'достигла', 'достиг')] бессмертия, и смерть от старости [ROOT.GetCharacter.GetHerHim] больше не грозит.\n\n[ROOT.GetCharacter.GetHerHis|U] естественная [gc_lifespan|El], которая передастся по наследству детям, — [ROOT.Char.Custom('GetNaturalLifespan')]."
+
+ trait_lifespan_6:1 "Бессмертие"
+ trait_lifespan_6_desc:1 "Этот персонаж — истинный бессмертный, и ему не суждено состариться."
+ trait_lifespan_6_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.Char.IsFemale, 'истинная бессмертная', 'истинный бессмертный')], и [ROOT.GetCharacter.GetHerHim] не суждено состариться."
+
+ natural_lifespan_0:0 "средней величины"
+ natural_lifespan_1:0 "[GetTrait('lifespan_1').GetName( GetNullCharacter )]"
+ natural_lifespan_2:0 "[GetTrait('lifespan_2').GetName( GetNullCharacter )]"
+ natural_lifespan_3:0 "[GetTrait('lifespan_3').GetName( GetNullCharacter )]"
+ natural_lifespan_4:0 "[GetTrait('lifespan_4').GetName( GetNullCharacter )]"
+ 
+ trait_poet_nord:0 "Скальд"
+ 
+ trait_clan_mother:0 "Мать клана"
+ trait_clan_father:0 "Отец клана"
+ trait_clan_parent_desc:0 "Мудрость и возраст персонажа позволяют ему пользоваться почётом и авторитетом среди своего племени и семьи."
+ trait_clan_parent_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] пользуется почётом и авторитетом среди своего племени и семьи из-за своего возраста и мудрости."
+
+ # Crimes
+ trait_azura_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_azura_name_possessive$"
+ trait_azura_worshipper_desc:0 "Персонаж в тайне был служителем $god_azura_name_possessive$ — $god_azura_queen_dawn_and_dusk_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_azura_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_azura_name_possessive$ — $god_azura_queen_dawn_and_dusk_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_boethiah_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_boethiah_name_possessive$"
+ trait_boethiah_worshipper_desc:0 "Персонаж в тайне был служителем $god_boethiah_name_possessive$ — $god_boethiah_prince_of_plots_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_boethiah_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_boethiah_name_possessive$ — $god_boethiah_prince_of_plots_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_clavicus_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_clavicus_name_possessive$"
+ trait_clavicus_worshipper_desc:0 "Персонаж в тайне был служителем $god_clavicus_name_possessive$ — $god_clavicus_prince_of_trickery_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_clavicus_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_clavicus_name_possessive$ — $god_clavicus_prince_of_trickery_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_hermaeus_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_hermaeus_name_possessive$"
+ trait_hermaeus_worshipper_desc:0 "Персонаж в тайне был служителем $god_hermaeus_name_possessive$ — $god_hermaeus_demon_of_knowledge_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_hermaeus_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_hermaeus_name_possessive$ — $god_hermaeus_demon_of_knowledge_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_hircine_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_hircine_name_possessive$"
+ trait_hircine_worshipper_desc:0 "Персонаж в тайне был служителем $god_hircine_name_possessive$ — $god_hircine_hunt_father_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_hircine_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_hircine_name_possessive$ — $god_hircine_hunt_father_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_malacath_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_malacath_name_possessive$"
+ trait_malacath_worshipper_desc:0 "Персонаж в тайне был служителем $god_malacath_name_possessive$ — $god_malacath_god_of_curses_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_malacath_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_malacath_name_possessive$ — $god_malacath_god_of_curses_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_mehrunes_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_mehrunes_name_possessive$"
+ trait_mehrunes_worshipper_desc:0 "Персонаж в тайне был служителем $god_mehrunes_name_possessive$ — $god_mehrunes_prince_of_destruction_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_mehrunes_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_mehrunes_name_possessive$ — $god_mehrunes_prince_of_destruction_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_mephala_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_mephala_name_possessive$"
+ trait_mephala_worshipper_desc:0 "Персонаж в тайне был служителем $god_mephala_name_possessive$ — $god_mephala_lady_of_whispers_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_mephala_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_mephala_name_possessive$ — $god_mephala_lady_of_whispers_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_meridia_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_meridia_name_possessive$"
+ trait_meridia_worshipper_desc:0 "Персонаж в тайне был служителем $god_meridia_name_possessive$ — $god_meridia_lady_infinite_energies_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_meridia_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_meridia_name_possessive$ — $god_meridia_lady_infinite_energies_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_molag_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_molag_name_possessive$"
+ trait_molag_worshipper_desc:0 "Персонаж в тайне был служителем $god_molag_name_possessive$ — $god_molag_god_of_schemes_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_molag_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_molag_name_possessive$ — $god_molag_god_of_schemes_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_namira_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_namira_name_possessive$"
+ trait_namira_worshipper_desc:0 "Персонаж в тайне был служителем $god_namira_name_possessive$ — $god_namira_lady_of_decay_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_namira_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_namira_name_possessive$ — $god_namira_lady_of_decay_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_nocturnal_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_nocturnal_name_possessive$"
+ trait_nocturnal_worshipper_desc:0 "Персонаж в тайне был служителем $god_nocturnal_name_possessive$ — $god_nocturnal_mistress_of_shadows_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_nocturnal_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_nocturnal_name_possessive$ — $god_nocturnal_mistress_of_shadows_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_peryite_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_peryite_name_possessive$"
+ trait_peryite_worshipper_desc:0 "Персонаж в тайне был служителем $god_peryite_name_possessive$ — $god_peryite_prince_of_pestilence_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_peryite_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_peryite_name_possessive$ — $god_peryite_prince_of_pestilence_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_sanguine_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_sanguine_name_possessive$"
+ trait_sanguine_worshipper_desc:0 "Персонаж в тайне был служителем $god_sanguine_name_possessive$ — $god_sanguine_lord_revelry_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_sanguine_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_sanguine_name_possessive$ — $god_sanguine_lord_revelry_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_sheogorath_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_sheogorath_name_possessive$"
+ trait_sheogorath_worshipper_desc:0 "Персонаж в тайне был служителем $god_sheogorath_name_possessive$ — $god_sheogorath_prince_of_madness_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_sheogorath_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_sheogorath_name_possessive$ — $god_sheogorath_prince_of_madness_name_possessive$, что считается кощунственным во многих конфессиях."
+ trait_vaermina_worshipper:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Почитательница', 'Почитатель' )] $god_vaermina_name_possessive$"
+ trait_vaermina_worshipper_desc:0 "Персонаж в тайне был служителем $god_vaermina_name_possessive$ — $god_vaermina_prince_dreams_and_nightmares_name_possessive$, что считается кощунственным во многих конфессиях.\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать игру с тайной верой.#!"
+ trait_vaermina_worshipper_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] в тайне [Select_CString(ROOT.GetCharacter.IsFemale, 'была служительницей', 'был служителем' )] $god_vaermina_name_possessive$ — $god_vaermina_prince_dreams_and_nightmares_name_possessive$, что считается кощунственным во многих конфессиях."
+
+ trait_champion_sanguine:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_sanguine_name_possessive$"
+ trait_champion_sanguine_desc:0 "Персонаж был избран поборником $god_sanguine_name_possessive$ — $god_sanguine_lord_revelry_name_possessive$."
+ trait_champion_sanguine_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_sanguine_name_possessive$ — $god_sanguine_lord_revelry_name_possessive$."
+
+ trait_champion_meridia:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_meridia_name_possessive$"
+ trait_champion_meridia_desc:0 "Персонаж был избран поборником $god_meridia_name_possessive$ — $god_meridia_lady_infinite_energies_name_possessive$."
+ trait_champion_meridia_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_meridia_name_possessive$ — $god_meridia_lady_infinite_energies_name_possessive$."
+
+ trait_champion_boethiah:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_boethiah_name_possessive$"
+ trait_champion_boethiah_desc:0 "Персонаж был избран поборником $god_boethiah_name_possessive$ — $god_boethiah_prince_of_plots_name_possessive$."
+ trait_champion_boethiah_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_boethiah_name_possessive$ — $god_boethiah_prince_of_plots_name_possessive$."
+
+ trait_champion_molag:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_molag_name_possessive$"
+ trait_champion_molag_desc:0 "Персонаж был избран поборником $god_molag_name_possessive$ — $god_molag_god_of_schemes_name_possessive$."
+ trait_champion_molag_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_molag_name_possessive$ — $god_molag_god_of_schemes_name_possessive$."
+
+ trait_champion_azura:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_azura_name_possessive$"
+ trait_champion_azura_desc:0 "Персонаж был избран поборником $god_azura_name_possessive$ — $god_azura_queen_dawn_and_dusk_name_possessive$."
+ trait_champion_azura_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_azura_name_possessive$ — $god_azura_queen_dawn_and_dusk_name_possessive$."
+
+ trait_champion_clavicus:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_clavicus_name_possessive$"
+ trait_champion_clavicus_desc:0 "Персонаж был избран поборником $god_clavicus_name_possessive$ — $god_clavicus_prince_of_trickery_name_possessive$."
+ trait_champion_clavicus_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_clavicus_name_possessive$ — $god_clavicus_prince_of_trickery_name_possessive$."
+ 
+ trait_champion_mehrunes:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_mehrunes_name_possessive$"
+ trait_champion_mehrunes_desc:0 "Персонаж был избран поборником $god_mehrunes_name_possessive$ — $god_mehrunes_prince_of_destruction_name_possessive$."
+ trait_champion_mehrunes_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_mehrunes_name_possessive$ — $god_mehrunes_prince_of_destruction_name_possessive$."
+
+ trait_champion_hermaeus:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_hermaeus_name_possessive$"
+ trait_champion_hermaeus_desc:0 "Персонаж был избран поборником $god_hermaeus_name_possessive$ — $god_hermaeus_demon_of_knowledge_name_possessive$."
+ trait_champion_hermaeus_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_hermaeus_name_possessive$ — $god_hermaeus_demon_of_knowledge_name_possessive$."
+
+ trait_champion_namira:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_namira_name_possessive$"
+ trait_champion_namira_desc:0 "Персонаж был избран поборником $god_namira_name_possessive$ — $god_namira_lady_of_decay_name_possessive$."
+ trait_champion_namira_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_namira_name_possessive$ — $god_namira_lady_of_decay_name_possessive$."
+
+ trait_champion_hircine:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_hircine_name_possessive$"
+ trait_champion_hircine_desc:0 "Персонаж был избран поборником $god_hircine_name_possessive$ — $god_hircine_hunt_father_name_possessive$."
+ trait_champion_hircine_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_hircine_name_possessive$ — $god_hircine_hunt_father_name_possessive$."
+
+ trait_champion_vaermina:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_vaermina_name_possessive$"
+ trait_champion_vaermina_desc:0 "Персонаж был избран поборником $god_vaermina_name_possessive$ — $god_vaermina_prince_dreams_and_nightmares_name_possessive$."
+ trait_champion_vaermina_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_vaermina_name_possessive$ — $god_vaermina_prince_dreams_and_nightmares_name_possessive$."
+
+ trait_champion_sheogorath:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_sheogorath_name_possessive$"
+ trait_champion_sheogorath_desc:0 "Персонаж был избран поборником $god_sheogorath_name_possessive$ — $god_sheogorath_prince_of_madness_name_possessive$."
+ trait_champion_sheogorath_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_sheogorath_name_possessive$ — $god_sheogorath_prince_of_madness_name_possessive$."
+
+ trait_champion_malacath:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_malacath_name_possessive$"
+ trait_champion_malacath_desc:0 "Персонаж был избран поборником $god_malacath_name_possessive$ — $god_malacath_god_of_curses_name_possessive$."
+ trait_champion_malacath_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_malacath_name_possessive$ — $god_malacath_god_of_curses_name_possessive$."
+
+ trait_champion_mephala:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_mephala_name_possessive$"
+ trait_champion_mephala_desc:0 "Персонаж был избран поборником $god_mephala_name_possessive$ — $god_mephala_lady_of_whispers_name_possessive$."
+ trait_champion_mephala_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_mephala_name_possessive$ — $god_mephala_lady_of_whispers_name_possessive$."
+
+ trait_champion_peryite:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_peryite_name_possessive$"
+ trait_champion_peryite_desc:0 "Персонаж был избран поборником $god_peryite_name_possessive$ — $god_peryite_prince_of_pestilence_name_possessive$."
+ trait_champion_peryite_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_peryite_name_possessive$ — $god_peryite_prince_of_pestilence_name_possessive$."
+
+ trait_champion_nocturnal:0 "[Select_CString(ROOT.Char.IsFemale, 'Поборница', 'Поборник')] $god_nocturnal_name_possessive$"
+ trait_champion_nocturnal_desc:0 "Персонаж был избран поборником $god_nocturnal_name_possessive$ — $god_nocturnal_mistress_of_shadows_name_possessive$."
+ trait_champion_nocturnal_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'была избрана поборницей', 'был избран поборником' )] $god_nocturnal_name_possessive$ — $god_nocturnal_mistress_of_shadows_name_possessive$."
+
+ # Coping mechanisms
+ trait_skooma_drinker:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Любительница', 'Любитель' )] скумы"
+ trait_skooma_drinker_desc:0 "Персонаж известен своим пристрастием к сахару и зависимостью от скумы."
+ trait_skooma_drinker_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'известна', 'известен' )] своим пристрастием к сахару и зависимостью от скумы."
+
+ #Tsaescence
+ trait_tsaesci:0 "Цаэски"
+ trait_tsaesci_1:1 "Цаэссенция I"
+ trait_tsaesci_1_character_desc:1 "Впервые отведав крови, [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'познала', 'познал' )] чудеса [Concept( 'tsaescence', 'цаэссенции' )|E]."
+ trait_tsaesci_1_desc:1 "Впервые отведав крови, этот персонаж познал чудеса [Concept( 'tsaescence', 'цаэссенции' )|E]."
+ trait_tsaesci_2:0 "Цаэссенция II"
+ trait_tsaesci_2_character_desc:1 "Сквозь завесу из пленённой крови [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'усмотрела', 'усмотрел' )] тайны [Concept( 'tsaescence', 'цаэссенции' )|E]."
+ trait_tsaesci_2_desc:1 "Сквозь завесу из пленённой крови этот персонаж усмотрел тайны [Concept( 'tsaescence', 'цаэссенции' )|E]."
+ trait_tsaesci_3:1 "Цаэссенция III"
+ trait_tsaesci_3_character_desc:1 "Размышляя над сбрасыванием шкуры-самости, [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'проникла', 'проник' )] в суть [Concept( 'tsaescence', 'цаэссенции' )|E]."
+ trait_tsaesci_3_desc:1 "Размышляя над сбрасыванием шкуры-самости, этот персонаж проник в суть [Concept( 'tsaescence', 'цаэссенции' )|E]."
+ trait_tsaesci_4:1 "Цаэссенция IV"
+ trait_tsaesci_4_character_desc:1 "Посредством ритуалов яйцеименования, [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'обрела', 'обрёл' )] двойственность и многоликость в [Concept( 'tsaescence', 'цаэссенции' )|E]."
+ trait_tsaesci_4_desc:1 "Посредством ритуалов яйцеименования, этот персонаж обрёл двойственность и многоликость в [Concept( 'tsaescence', 'цаэссенции' )|E]."
+
+ #Furstocks
+
+ trait_furstock_cathay_loc:0 "Катай"
+ trait_furstock_cathay:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_cathay_loc') )]"
+ trait_furstock_cathay_desc:0 "Катай рождаются при растущем Массере и полной Секунде. Это стопоходящие каджиты немного крупнее и сильнее сутай-ратов."
+
+ trait_furstock_cathay_raht_loc:0 "Катай-рат"
+ trait_furstock_cathay_raht:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_cathay_raht_loc') )]"
+ trait_furstock_cathay_raht_desc:0 "Катай-раты рождаются при растущем Массере и растущей Секунде. Имперское географическое общество прозвало катай-ратов «людьми-ягуарами» за их рост и свирепость."
+
+ trait_furstock_dagi_loc:0 "Даги"
+ trait_furstock_dagi:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_dagi_loc') )]"
+ trait_furstock_dagi_desc:0 "Даги рождаются при убывающем Массере и новой Секунде. Их черты лица напоминают морду рыси. Они предпочитают жить среди деревьев, нежели на земле, благо их телосложение и строение скелета позволяют. Считается что даги наделены природным магическим талантом."
+
+ trait_furstock_dagi_raht_loc:0 "Даги-рат"
+ trait_furstock_dagi_raht:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_dagi_raht_loc') )]"
+ trait_furstock_dagi_raht_desc:0 "Даги-раты рождаются при убывающем Массере и убывающей Секунде. Они немного крупнее, чем даги, но в остальном похожи на них."
+ 
+ trait_furstock_ohmes_loc:0 "Омес"
+ trait_furstock_ohmes:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_ohmes_loc') )]"
+ trait_furstock_ohmes_desc:0 "Омес рождаются при новом Массере и полной Секунде. Их описывают как человекоподобную породу каджитов с лицом, напоминающим человеческое, но с различимыми эльфийскими чертами, что делает омес похожими на босмеров, хотя иногда они даже ещё ниже ростом. Чтобы их не путали с эльфами, многие омес наносят на лицо раскраску или татуировки, обозначающие их принадлежность."
+
+ trait_furstock_ohmes_raht_loc:0 "Омес-рат"
+ trait_furstock_ohmes_raht:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_ohmes_raht_loc') )]"
+ trait_furstock_ohmes_raht_desc:0 "Омес-раты рождаются при новом Массере и растущей Секунде. Их с лёгкостью можно перепутать с эльфами или людьми, однако всё их тело покрыто короткой шерстью, а ещё у них есть хвост. Многие омес-раты наносят на лицо раскраску или татуировки, обозначающие их принадлежность к каджитам."
+
+ trait_furstock_pahmar_loc:0 "Памар"
+ trait_furstock_pahmar:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_pahmar_loc') )]"
+ trait_furstock_pahmar_desc:0 "Памар рождаются при полном Массере и новой Секунде. Это гигантских размеров прямоходящие каджиты, напоминающие сенч-тигров."
+
+ trait_furstock_pahmar_raht_loc:0 "Памар-рат"
+ trait_furstock_pahmar_raht:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_pahmar_raht_loc') )]"
+ trait_furstock_pahmar_raht_desc:0 "Памар-раты рождаются при полном Массере и убывающей Секунде. Это гигантская прямоходящая порода каджитов. Поскольку они самые сильные представители своего рода, их часто можно увидеть на службе в качестве телохранителей и воинов. Они напоминают сенч-тигров, однако отличаются тем, что они стопоходящие, крупнее, представляют большую опасность и обладают массивным телосложением."
+
+ trait_furstock_suthay_loc:0 "Сутай"
+ trait_furstock_suthay:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_suthay_loc') )]"
+ trait_furstock_suthay_desc:0 "Сутай рождаются при новом Массере и новой Секунде. Так же, как сутай-раты, их собратья покрупнее, они двуногие и пальцеходящие."
+
+ trait_furstock_suthay_raht_loc:0 "Сутай-рат"
+ trait_furstock_suthay_raht:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_suthay_raht_loc') )]"
+ trait_furstock_suthay_raht_desc:0 "Сутай-раты рождаются при новом Массере и убывающей Секунде. По причинам непостижимым даже для самих каджитов, их иногда нарекают «джа-каджитами». Рост и телосложение сутай-ратов сопоставимы с человеческими, единственное отличие — то, что все сутай-раты пальцеходящие. Эти каджиты полностью покрыты шерстью самых разных цветов и узоров. Считается, что они ловкие, скрытные и отважные."
+
+ trait_furstock_tojay_loc:0 "Тоджай"
+ trait_furstock_tojay:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_tojay_loc') )]"
+ trait_furstock_tojay_desc:0 "Тоджай рождаются при растущем Массере и новой Секунде. Это одна из самых таинственных пород каджитов. Мало что известно о них, за исключением того, что они живут в Тенмарском лесу, а также топях и джунглях южного Эльсвейра."
+ 
+ trait_furstock_tojay_raht_loc:0 "Тоджай-рат"
+ trait_furstock_tojay_raht:0 "[Select_CString( GetVariableSystem.HasValue( ' trait_select_window_open', 'other' ), '', Localize('trait_furstock_tojay_raht_loc') )]" 
+ trait_furstock_tojay_raht_desc:0 "Тоджай-раты рождаются при растущем Массере и убывающей Секунде. Мало что известно о них наверняка, кроме того, что они двуногие и пальцеходящие."
+
+ trait_furstock_mane_loc:0 "Грива"
+ trait_furstock_mane:0 "[Select_CString( GetVariableSystem.HasValue( 'trait_select_window_open', 'other' ), '', Localize('trait_furstock_mane_loc') )]" 
+ trait_furstock_mane_desc:0 "Говорят, во время редкого выравнивания Массера и Секунды, на небе появляется мистическая Третья Луна. Тот, кто рождается в этот период, становится Гривой, духовным лидером народа каджитов согласно древней традиции." # PH placeholder
+ 
+ trait_sibyl:0 "Пророцича Дибеллы"
+ trait_sibyl_dibe:0 "Пророчица Дибе"
+ trait_sibyl_desc:0 "Персонаж — пророчица Дибеллы, её благословила Леди, и она служит связующим звеном между богиней и её последователями."
+ trait_sibyl_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — пророчица Дибеллы, её благословила Леди, и она служит связующим звеном между богиней и её последователями."
+ trait_sibyl_character_desc_dibe:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — пророчица Дибе, её благословила Леди, и она служит связующим звеном между богиней и её последователями."
+
+ # Argonian
+ trait_laid_egg:0 "Отложила яйцо"
+ trait_laid_egg_desc:0 "Персонаж недавно отложил яйцо."
+ trait_laid_egg_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] недавно отложила яйцо."
+
+ trait_shadowscale:0 "Тёмный ящер"
+ trait_shadowscale_desc:0 "Этот персонаж — член тайного ордена убийц на службе таинственного короля Аргонии и его укрытого в тенях монаршего двора."
+ trait_shadowscale_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — член тайного ордена убийц на службе таинственного короля Аргонии и его укрытого в тенях монаршего двора."
+ 
+ trait_amber_blessed:0 "Янтарное благословение"
+ trait_amber_blessed_1:0 "Янтарное касание"
+ trait_amber_blessed_1_desc:0 "Персонаж не только прошёл через контакт с янтарной плазмой невредимым, но и обрёл новые силы."
+ trait_amber_blessed_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] не только [Select_CString(ROOT.Char.IsFemale, 'прошла', 'прошёл' )] через контакт с янтарной плазмой [Select_CString(ROOT.Char.IsFemale, 'невредимой', 'невредимым' )], но и [Select_CString(ROOT.Char.IsFemale, 'обрела', 'обрёл' )] новые силы."
+ trait_amber_blessed_2:0 "Янтарное омовение"
+ trait_amber_blessed_2_desc:0 "Персонаж имеет в своих жилах столько могущественной ятнарной плазмы, что иные бы сошли от этого с ума."
+ trait_amber_blessed_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] имеет в своих жилах столько могущественной ятнарной плазмы, что иные бы сошли от этого с ума."
+ trait_amber_blessed_3:0 "Янтарное благословение"
+ trait_amber_blessed_3_desc:0 "Поистине этот персонаж — избранник Цоно-Зухил: он способен использовать всю мощь янтарной плазмы."
+ trait_amber_blessed_3_character_desc:0 "Поистине [ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.Char.IsFemale, 'избранница', 'избранник' )] Цоно-Зухил: [Select_CString(ROOT.Char.IsFemale, 'он способен', ' она способна' )] использовать всю мощь янтарной плазмы."
+ trait_sun_blessed:0 "Благословение Солнца"
+ trait_sun_blessed_1:0 "Тепло Солнца"
+ trait_sun_blessed_1_desc:0 "Персонаж получил первое благословение солнца, которое усилило его магические способности."
+ trait_sun_blessed_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] первое благословение солнца, которое усилило [ROOT.GetCharacter.GetHerHis] магические способности."
+ trait_sun_blessed_2:0 "Сила Солнца"
+ trait_sun_blessed_2_desc:0 "Персонаж напитался обилием солнечной энергии и источает силу, которая другим кажется ослепительной."
+ trait_sun_blessed_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'напиталась', 'напитался' )] обилием солнечной энергии и источает силу, которая другим кажется ослепительной."
+ trait_sun_blessed_3:0 "Благословение Солнца"
+ trait_sun_blessed_3_desc:0 "Поистине этот персонаж — проводник силы солнца: в его руках невероятная магическая мощь."
+ trait_sun_blessed_3_character_desc:0 "Поистине [ROOT.GetCharacter.GetFirstNameNoTooltip] — проводник силы солнца: в [ROOT.GetCharacter.GetHerHis] руках невероятная магическая мощь."
+ trait_ghost_scale:0 "Призрачная шкура"
+ trait_ghost_scale_1:0 "Призрачная поступь"
+ trait_ghost_scale_1_desc:0 "Персонаж принял облик бледного призрака: окружающие реже его замечают и тревожатся в его присутствии."
+ trait_ghost_scale_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'приняла', 'принял' )] облик бледного призрака: окружающие реже его замечают и тревожатся в его присутствии."
+ trait_ghost_scale_2:0 "Призрачная завеса"
+ trait_ghost_scale_2_desc:0 "Персонаж окружён зловещей завесой тайны: он одарён Призрачным Хистом."
+ trait_ghost_scale_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'окружена', 'окружён' )] зловещей завесой тайны: [Select_CString(ROOT.Char.IsFemale, 'она одарена', 'он одарён' )] Призрачным Хистом."
+ trait_ghost_scale_3:0 "Призрачная шкура"
+ trait_ghost_scale_3_desc:0 "Персонаж неотличим от призрака, он двигается невидимо, вселяя страх в тех, кто ощущает его присутствие."
+ trait_ghost_scale_3_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'неотличима', 'неотличим' )]  от призрака, [ROOT.GetCharacter.GetSheHe] двигается невидимо, вселяя страх в тех, кто ощущает [ROOT.GetCharacter.GetHerHis] присутствие."
+ trait_argonian_behemoth:0 "Аргонианин-чудовище"
+ trait_argonian_behemoth_1:0 "Аргонианин-чудовище"
+ trait_argonian_behemoth_1_desc:0 "Персонаж начал превращение в чудовище, получив значительную физическую силу ценой остроты ума."
+ trait_argonian_behemoth_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'начала', 'начал' )] превращение в чудовище, получив значительную физическую силу ценой остроты ума."
+ trait_argonian_behemoth_2:0 "Крепнущее чудовище"
+ trait_argonian_behemoth_2_desc:0 "Персонаж приближается к становлению чудовищем, его звериная мощь кратно растёт, а ум ослабевает."
+ trait_argonian_behemoth_2_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] приближается к становлению чудовищем, [ROOT.GetCharacter.GetHerHis] звериная мощь кратно растёт, а ум ослабевает."
+ trait_argonian_behemoth_3:0 "Одичавшее чудовище"
+ trait_argonian_behemoth_3_desc:0 "Персонаж завершил превращение в чудовище, обретя невиданную силу, но утратив ясность рассудка."
+ trait_argonian_behemoth_3_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'завершила', 'завершил' )] превращение в чудовище, обретя невиданную силу, но утратив ясность рассудка."
+
+ 
+ ### PRAXIS
+ # PLACEHOLDER
+ trait_praxis_negative_3:0 "Апраксис III"
+ trait_praxis_negative_3_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] проживают свою жизнь в отрицании Пути к Алаксону."
+ trait_praxis_negative_2:0 "Апраксис II"
+ trait_praxis_negative_2_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отступила', 'отступил' )] от Пути к Алаксону."
+ trait_praxis_negative_1:0 "Апраксис I"
+ trait_praxis_negative_1_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] испытывает трудности со следованием требованиям Пути к Алаксону."
+ trait_praxis_positive_1:0 "Праксис I"
+ trait_praxis_positive_1_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] следует философии Пути к Алаксону."
+ trait_praxis_positive_2:0 "Праксис II"
+ trait_praxis_positive_2_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'известна', 'известен' )] своей приверженностью Пути к Алаксону."
+ trait_praxis_positive_3:0 "Праксис III"
+ trait_praxis_positive_3_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] истово следует Пути к Алаксону и стремится к совершенству во всех своих начинаниях."
+# Praxis trait groups 
+ trait_praxis_positive:0 "Праксис"
+ trait_praxis_negative:0 "Апраксис"
+
+ 
+ ### Court types traits
+ trait_magical_court_1:1 "Магический придворный"
+ trait_magical_court_1_desc:1 "Этот персонаж прослужил не менее [EmptyScope.ScriptValue('years_to_gain_court_type_trait')|0] лет у правителя, имеющего шумный [GetCourtType('court_magical').GetName] со множеством магов и волшебников."
+ trait_magical_court_1_character_desc:2 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'прослужила', 'прослужил' )] не менее [EmptyScope.ScriptValue('years_to_gain_court_type_trait')|0] years living in a bustling [GetCourtType('court_magical').GetName] со множеством магов и волшебников."
+ trait_magical_court_2:1 "Ценный магический придворный"
+ trait_magical_court_2_desc:1 "Этот персонаж прослужил не менее [EmptyScope.ScriptValue('years_to_gain_court_type_trait')|0] лет у правителя, имеющего величественный [GetCourtType('court_magical').GetName], узнавая секреты у могучих волшебников и выдающихся чародеев и тренируясь вместе с ними."
+ trait_magical_court_2_character_desc:2 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'прослужила', 'прослужил' )] не менее [EmptyScope.ScriptValue('years_to_gain_court_type_trait')|0] лет у правителя, имеющего величественный [GetCourtType('court_magical').GetName], узнавая секреты у могучих волшебников и выдающихся чародеев и тренируясь вместе с ними."   #структуру перевода слизал из ванили
+
+ ### Class traits
+
+ trait_battlemage:1 "Боевой маг"
+ trait_battlemage_desc:1 "Персонаж является магом-воином, обученным как смертоносным заклинаниям, так и бою в тяжёлых доспехах. Он жертвуют манёвренностью и гибкостью ради возможности совмещать атаки в ближнем и дальнем бою с элементальными заклинаниями и призывом существ."
+ trait_battlemage_character_desc:2 "[ROOT.GetCharacter.GetFirstNameNoTooltip] является магом-воином, обученным как смертоносным заклинаниям, так и бою в тяжёлых доспехах. [ROOT.GetCharacter.GetSheHe|U] жертвует манёвренностью и гибкостью ради возможности совмещать атаки в ближнем и дальнем бою с элементальными заклинаниями и призывом существ."
+
+### Misc traits
+  trait_house_of_reveries:0 "«Дом Грёз»"
+ trait_house_of_reveries_desc:0 "Персонаж является членом «Дома Грёз» — труппы актёров, отринувших стремление к любой славе и мирской власти. Они живут ради искусства и поэтому являются хорошими придворными музыкантами, поэтами и шутами."
+ trait_house_of_reveries_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] является членом «Дома Грёз» — труппы актёров, отринувших стремление к любой славе и мирской власти. Они живут ради искусства и поэтому являются хорошими придворными музыкантами, поэтами и шутами."
+ 
+ trait_racial_blindness:0 "Нет глаз"
+ trait_racial_blindness_desc:0 "Народ, из которого происходит этот персонаж, давно утратил свои органы зрения. Слепцы, они вынуждены чувствовать мир другими способами."
+ 
+ trait_clone:0 "Клон"
+ trait_clone_desc:0 "Этот персонаж — чей-то клон. Он не вылупился из яйца и не был рождён, вместо этого он появился на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
+ trait_clone_character_desc_hatched_creator:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — клон персонажа [ROOT.Var('clone_creator').Char.GetTitledFirstName]. [ROOT.GetCharacter.GetSheHe|U] не [Select_CString(ROOT.GetCharacter.IsFemale, 'вылупилась', 'вылупился' )] из яйца, вместо этого [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'появилась', 'появился' )] на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
+ trait_clone_character_desc_creator:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — чей-то клон. [ROOT.GetCharacter.GetSheHe|U] не [Select_CString(ROOT.GetCharacter.IsFemale, 'была никем рождена', 'был никем рождён' )], вместо этого [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'появилась', 'появился' )] на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
+ trait_clone_character_desc_hatched:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] ROOT.GetCharacter.GetFirstNameNoTooltip] — клон персонажа [ROOT.Var('clone_creator').Char.GetTitledFirstName]. [ROOT.GetCharacter.GetSheHe|U] не [Select_CString(ROOT.GetCharacter.IsFemale, 'вылупилась', 'вылупился' )] из яйца, вместо этого [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'появилась', 'появился' )] на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
+ trait_clone_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — чей-то клон. [ROOT.Var('clone_creator').Char.GetTitledFirstName]. [ROOT.GetCharacter.GetSheHe|U] не [Select_CString(ROOT.GetCharacter.IsFemale, 'была никем рождена', 'был никем рождён' )], вместо этого [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'появилась', 'появился' )] на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
+
+
+ trait_former_slave:0 "Освобождённый раб"
+ trait_former_slave_desc:0 "Этот персонаж некогда был рабом, но ему была дарована свобода, либо он сбросил цепи, взявшись за оружие."
+ trait_former_slave_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] некогда [Select_CString(ROOT.GetCharacter.IsFemale, 'была рабыней', 'был рабом')], но [ROOT.GetCharacter.GetHerHim] была дарована свобода, либо [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.Char.IsFemale, 'сбросила', 'сбросил')] цепи, взявшись за оружие."
+
+ trait_track_magic:0 "Магия"
+ trait_track_magic_desc:0 "Использовать магию в любом виде — значит удерживать в своих руках часть божественной силы."
+
+ trait_cannibal_gp:0 "Мясной Мандат"
+ trait_cannibal_character_desc_gp:0 "В соответствии с Зелёным Пактом, [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'приняла', 'принял' )] участие в обычае Мясного Мандата."
+
+
+ trait_herbalist_1: "Травник"
+ trait_herbalist_2: "Алхимик"
+ trait_herbalist_3: "Опытный алхимик"
+ trait_track_lifestyle_herbalist: "Травник"
+ trait_track_lifestyle_herbalist_desc: "Талантливый травник способен не только распознавать растительные ингредиенты, но и применять алхимию, усиливая природные лечебные свойства."

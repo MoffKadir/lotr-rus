@@ -1,0 +1,17 @@
+﻿l_russian:
+ HISTORICAL_CHARACTER_TOOLTIP: "#T Исторический персонаж#!\n\n#high [Character.Custom('HistoricalCharacterDesc')]#!\n\n#weak Этот персонаж существует в каноне мира The Elder Scrolls, но он может отличаться от своего прототипа в зависимости от [Concept('culture', 'культуры')|E] или [Concept('faith', 'конфессии')|E] того места, где он родился. [Character.GetSheHe|U] также может появиться за пределами своего исторического периода активности с разницей 1–5 лет.#!"
+
+ historical_char_creation_events.desc: "[historical_character.Custom('HistoricalCharacterJobDesc')] по имени [historical_character.GetFullNameNicknamed], по слухам, блуждает по моим землям в поисках нанимателя. [historical_character.GetHerHis|U] родиной является [birth_location.GetName], и есть в [Select_CString(historical_character.IsFemale, 'ней', 'нём' )] что-то… [historical_character.Custom('DescriptorPositiveStandalone')]ое, но в то же время [historical_character.Custom('DescriptorNegativeStandalone')]ое.\n\n\n@historical_character_icon! #weak Этот персонаж существует в каноне мира The Elder Scrolls:#!\n#help_light_background [historical_character.Custom('HistoricalCharacterDesc')]#!"
+ historical_char_creation_events_alternative.desc: "[historical_character.Custom('HistoricalCharacterJobDesc')] по имени [historical_character.GetFullNameNicknamed] [Select_CString(historical_character.IsFemale, 'сумела', 'сумел' )] отличиться при дворе. [Select_CString(historical_character.IsFemale, 'Она показала', 'Он показал' )] себя персоной на редкость [historical_character.Custom('DescriptorPositiveStandalone')]ой. Есть в [Select_CString(historical_character.IsFemale, 'ней', 'нём' )] что-то… особенное, но не могу сказать, что именно.\n\n\n@historical_character_icon! #weak Этот персонаж существует в каноне мира The Elder Scrolls:#!\n#help_light_background [historical_character.Custom('HistoricalCharacterDesc')]#!"
+ 
+ generic_importance: "Это важный персонаж в истории мира The Elder Scrolls."
+
+ rule_historical_characters: "Исторические персонажи"
+ setting_default_historical_characters_desc: "В игре могут появляться различные исторические персонажи, такие, как Гор Фелим, Фраст из Элинхира или Разота Рассказчица. Вы будете получать уведомления о самых известных персонажах и о персонажах, рождённых в пределах вашего [Concept( 'domain', 'домена' )|E]."
+ setting_all_historical_characters_desc: "В игре могут появляться различные исторические персонажи, такие, как Гор Фелим, Фраст из Элинхира или Разота Рассказчица. Вы будете получать уведомления обо всех родившихся в вашей части [Concept('realm','державы')|E]."
+ setting_no_historical_characters_desc: "Исторические персонажи не будут появляться."
+
+ trait_historical_character: "Исторический персонаж"
+ trait_historical_character_character_desc: "[ROOT.GetCharacter.GetFullNameNicknamed] — динамически появившийся исторический персонаж вселенной The Elder Scrolls."
+ trait_historical_character_desc: "Это динамически появившийся исторический персонаж вселенной The Elder Scrolls."
+ 

@@ -1,0 +1,46 @@
+﻿l_russian:
+ ### Dark Arts
+ dark_arts_lifestyle_name:0 "Тёмные искусства"
+ dark_arts_lifestyle_desc:0 "Фокус на накоплении запретных сил и знаний которые позволяют добиться таких опасных результатов, что обычным способом им научиться нельзя."
+ dark_arts_lifestyle_highlight_desc:0 "$dark_arts_lifestyle_highlight_necromancer_traits$$dark_arts_lifestyle_highlight_lichdom_traits$"
+ dark_arts_lifestyle_highlight_necromancer_traits:0 "[GetPlayer.Custom('necromancer_trait_group_impact_dark_arts_lifestyle_experience')]"
+ necromancer_trait_impact_dark_arts_lifestyle_experience:0 "Ваше свойство #V $trait_necromancer$#! увеличивает прирост [Concept( 'experience', 'опыта' )|El] для этого образа жизни на #P +10%#!."
+ experimentalist_necromancer_trait_impact_dark_arts_lifestyle_experience:0 "Ваше свойство #V $trait_experimentalist_necromancer$#! увеличивает прирост [Concept( 'experience', 'опыта' )|El] для этого образа жизни на #P +10%#!."
+ education_magic_trait_impact_dark_arts_lifestyle_experience:0 "Ваше свойство #V $trait_education_magic_5$#! увеличивает прирост [Concept( 'experience', 'опыта' )|El] для этого образа жизни на #P +10%#!."
+ dark_arts_lifestyle_highlight_lichdom_traits:0 "[GetPlayer.Custom('lichdom_trait_group_impact_dark_arts_lifestyle_experience')]"
+ lich_trait_impact_dark_arts_lifestyle_experience:0 "Ваше свойство #V $trait_lich_character$#! увеличивает прирост [Concept( 'experience', 'опыта' )|El] для этого образа жизни на #P +20%#!."
+ # Mysticism
+ dark_arts_mysticism_focus:0 "Мистицизм"
+ dark_arts_mysticism_focus_modifier:1 "[GetFocus('dark_arts_mysticism_focus').GetName]"
+ dark_arts_mysticism_focus_desc:0 "Наше тело — лишь сосуд для настоящей силы, которая сокрыта в душах и отголосках. Власть над ними открывает путь как к славе, так и к ужасу."
+ dark_arts_mysticism_focus_effect_desc:0 "Сосредоточившись на мистицизме, персонаж получает:" 
+ # Daedric Succour
+ dark_arts_daedric_succour_focus:0 "Даэдрическое покровительство"
+ dark_arts_daedric_succour_focus_modifier:1 "[GetFocus('dark_arts_daedric_succour_focus').GetName]"
+ dark_arts_daedric_succour_focus_desc:0 "Планы Обливиона полны полезных и ужасных знаний. Изыскав у князей совета, можно получить доступ к небольшой их части."
+ dark_arts_daedric_succour_focus_effect_desc:0 "Сосредоточившись на даэдрическом покровительстве, персонаж получает:"
+ # Blood Magic
+ dark_arts_blood_magic_focus:0 "Магия крови"
+ dark_arts_blood_magic_focus_modifier:1 "[GetFocus('dark_arts_blood_magic_focus').GetName]"
+ dark_arts_blood_magic_focus_desc:0 "Каждый шаг на пути к настоящей силе требует жертв. Но каждый, кто готов заплатить эту цену, получит достойную награду в конце пути."
+ dark_arts_blood_magic_focus_effect_desc:0 "Сосредоточившись на магии крови, персонаж получает:"
+
+ # Perks
+ necromancy_novice_perk_effect:0 "Открывает [spells|El] некромантии уровня новичка:\n[GetScriptedGui('spell_perk_list').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('school', MakeScopeFlag('necromancy') ).AddScope('tier', MakeScopeValue('(CFixedPoint)1') ).End)]"
+ necromancy_apprentice_perk_effect:0 "Открывает [spells|El] некромантии уровня ученика:\n[GetScriptedGui('spell_perk_list').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('school', MakeScopeFlag('necromancy') ).AddScope('tier', MakeScopeValue('(CFixedPoint)2') ).End)]"
+ necromancy_journeyman_perk_effect:0 "Открывает [spells|El] некромантии уровня специалиста:\n[GetScriptedGui('spell_perk_list').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('school', MakeScopeFlag('necromancy') ).AddScope('tier', MakeScopeValue('(CFixedPoint)3') ).End)]"
+ necromancy_expert_perk_effect:0 "Открывает [spells|El] некромантии уровня эксперта:\n[GetScriptedGui('spell_perk_list').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('school', MakeScopeFlag('necromancy') ).AddScope('tier', MakeScopeValue('(CFixedPoint)4') ).End)]"
+ necromancy_master_perk_effect:0 " Открывает [spells|El] некромантии уровня мастера:\n[GetScriptedGui('spell_perk_list').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('school', MakeScopeFlag('necromancy') ).AddScope('tier', MakeScopeValue('(CFixedPoint)5') ).End)]"
+ no_necromancy_trait_perk_effect:0 "Чтобы выбрать это достоинство вам нужно быть некромантом."
+ necromancy_minor_magic_rituals_perk_effect:0 "Открывает малые [magic_rituals|El] некромантии:\n[GetScriptedGui('ritual_perk_list').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('school', MakeScopeFlag('necromancy') ).AddScope('tier', MakeScopeValue('(CFixedPoint)1') ).End)]"
+ necromancy_medium_magic_rituals_perk_effect:0 "Открывает средние [magic_rituals|El] некромантии:\n[GetScriptedGui('ritual_perk_list').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('school', MakeScopeFlag('necromancy') ).AddScope('tier', MakeScopeValue('(CFixedPoint)2') ).End)]"
+ necromancy_major_magic_rituals_perk_effect:0 "Открывает большие [magic_rituals|El] некромантии:\n[GetScriptedGui('ritual_perk_list').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('school', MakeScopeFlag('necromancy') ).AddScope('tier', MakeScopeValue('(CFixedPoint)3') ).End)]"
+
+ CAN_CONSULT_SOUL_LOST_LOVED_ONES_DECISION:0 "Открывает решение «Посоветоваться с родной душой», позволяющее персонажу поговорить с покинувшей его любовью один последний раз"
+ GAINS_DARK_ARTS_LIFESTYLE_XP:2 "[Concept('dark_arts_lifestyle', 'Опыт в тёмных искусствах')|E] увеличивается на $VALUE|V0$"
+ GAINED_DARK_ARTS_LIFESTYLE_XP:2 "[Concept('dark_arts_lifestyle', 'Опыт в тёмных искусствах')|E] увеличен на $VALUE|V0$"
+ I_GAIN_DARK_ARTS_LIFESTYLE_XP:2 "Ваш [Concept('dark_arts_lifestyle', 'опыт в тёмных искусствах')|E] увеличивается на $VALUE|V0$"
+ I_GAINED_DARK_ARTS_LIFESTYLE_XP:2 "Ваш [Concept('dark_arts_lifestyle', 'опыт в тёмных искусствах')|E] увеличен на $VALUE|V0$"
+ TARGET_GAINS_DARK_ARTS_LIFESTYLE_XP:2 "[Concept('dark_arts_lifestyle', 'Опыт в тёмных искусствах')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличивается на $VALUE|V0$"
+ TARGET_GAINED_DARK_ARTS_LIFESTYLE_XP:2 "[Concept('dark_arts_lifestyle', 'Опыт в тёмных искусствах')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetNamePossessiveOrMy][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
+ 

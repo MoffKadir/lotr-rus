@@ -1,0 +1,36 @@
+﻿l_russian:
+#Intro event
+ grand_council.0001.t: "Великий совет Морровинда"
+ grand_council.0001.desc: "[grand_council|E], орган, властвующий над народом Морровинда, был создан после [Glossary( 'Войны Первого совета', 'FIRST_COUNCIL_GLOSS' )]. Но власть совета и верховного советника то ослабевает, то усиливается со временем. Укрепит ли Великий совет свою власть в период Междуцарствия, или дома тёмных эльфов распадутся на мелкие кланы, как в древние эры?"
+ grand_council.0001.a: "Слава Трибуналу (да благословенны будут их имена)!"
+ grand_council.0001.b: "Интересно…"
+ GRAND_COUNCIL_SITUATION_INFO_PHASES_TITLE: "Фазы"
+ GRAND_COUNCIL_SITUATION_INFO_PHASES_EXPLANATION: "[Concept('grand_council_morrowind', 'Великий совет Морровинда')|E] колеблется между [Concept('situation_phases', 'фазами')|E] «$gcm_balanced$», «$gcm_autonomy$» и «$gcm_centralised$».\n\n$gcm_balanced_desc$\n\n$gcm_autonomy_desc$\n\n$gcm_centralised_desc$"
+ GRAND_COUNCIL_SITUATION_INFO_EFFECTS_TITLE: "Эффекты"
+ GRAND_COUNCIL_SITUATION_INFO_EFFECTS_EXPLANATION: "Хотя влияние [Concept('high_councilor', 'верховного советника')|E] и [Concept('grand_council', 'Великого совета')|E] может меняться с течением времени, некоторые аспекты идентичности данмеров, вероятно, всегда будут оставаться неизменными.\n\n[Concept('grand_council_members', 'Члены Великого совета')|E] никогда не смогут вести войну против других участников, предпочитая решать свои конфликты с помощью Мораг Тонг и [Concept('writs_of_execution', 'приказов о казни')|E] или поединков.\n\nСвященный остров [GetGeographicalRegion('mundus_tamriel_morrowind_vvardenfell').GetName] закрыт для колонизации Великим советом и управляется непосредственно Храмом Трибунала. В течение [Concept('situation_phase', 'фазы')|E] «$gcm_centralised$» амбициозный верховный советник может пересмотреть это положение дел и открыть остров для заселения и торговли."
+ GRAND_COUNCIL_SITUATION_INFO_PARTICIPATION_TITLE: "Участники"
+ GRAND_COUNCIL_SITUATION_INFO_PARTICIPATION_EXPLANATION: "[Concept('situation_participant_group', 'Группа участников')|E] [Concept('grand_council', 'Великого совета')|E] определяется [Concept('culture', 'культурой')|E] и [Concept('faith', 'конфессией')|E] персонажей.\n\n$game_concept_grand_council_member_desc$\n\n$grand_council_participant_group_ashlanders_desc$\n\n$game_concept_outlander_desc$"
+#Phase change event
+ grand_council.0002.t: "Великий совет: [my_subregion.GetCurrentPhase.GetName]"
+ grand_council.0002.desc.balanced: "Мир и гармония воцарились в [Glossary( 'Ресдайне', 'RESDAYN_GLOSS' )]. [high_councilor.GetName] и Великий совет достигли взаимопонимания. Совет сохранит частичную автономию, но последнее слово в важных решениях будет оставаться за [Concept('high_councilor', 'верховным советником')|E]."
+ grand_council.0002.desc.autonomy: "День ото дня [hc_capital.GetNameNoTier] присылает всё меньше посланий и распоряжений. Похоже, [high_councilor.GetName] утрачивает свою хватку над Великим советом и народом [Glossary( 'Ресдайна', 'RESDAYN_GLOSS' )]."
+ grand_council.0002.desc.centralised: "Баланс сил в [Glossary( 'Ресдайне', 'RESDAYN_GLOSS' )] сместился, и от этого выигрывает верховный советник [high_councilor.GetName]. [high_councilor.GetSheHe|U] теперь имеет колоссальное влияние на [grand_council|El] и сильно ограничивает автономию его участников."
+ grand_council.0002.a: "Итак, колесо начинает новый оборот."
+ grand_council.0002.tt: "[situation_phase|E] изменилась"
+#Writ of war events
+ grand_council.1011.opening: "[recipient.Custom2('AppropriateGreeting', ROOT.Char)]"
+ grand_council.1010: "После долгих молитв АЛЬМСИВИ и размышлений я [Select_CString(recipient.IsFemale, 'решила', 'решил' )] удовлетворить ваше прошение о приказе о ведении войны."
+ grand_council.1011: "После долгих молитв АЛЬМСИВИ и размышлений я [Select_CString(recipient.IsFemale, 'решила', 'решил' )] отклонить ваше прошение о приказе о ведении войны."
+ grand_council.1010.positive: "Да славится [ROOT.Char.GetFaith.HighGodName]!"
+ grand_council.1011.negative: "Весьма прискорбно…"
+#Vvardenfell vote
+ grand_council_vv.0002.t: "Вопрос Вварденфелла: голосование"
+ grand_council_vv.0002.desc: "[vv_initiator.GetName] [Select_CString(vv_initiator.IsFemale, 'прислала', 'прислал' )] посыльного. Судя по всему, верховный советник желает снять запрет Храма на заселение [GetGeographicalRegion('mundus_tamriel_morrowind_vvardenfell').GetName]а, но прежде [vv_initiator.GetHerHim] нужно получить одобрение [Concept('grand_council', 'Великого совета')|E].\n\nОстров богат ресурсами, и [voter_title.GetName] может многое приобрести от такой возможности. Однако Храм чутко оберегал остров со времён [Glossary( 'битвы у Красной горы', 'BATTLE_RM_GLOSS' )], и [alma_rula.GetName] будет [Select_CString(alma_rula.IsFemale, 'разгневана', 'разгневан' )] на того, кто продвинет решение снять запрет."
+ grand_council_vv.0002.a: "Вварденфелл будет открыт!"
+ grand_council_vv.0002.b: "Вварденфелл останется под управлением Храма."
+
+ grand_council_vv.0004.t: "Вопрос Вварденфелла: итог"
+ grand_council_vv.0004.desc.vv_vote_succeeded: "[hc_capital.GetNameNoTier] гудит новостями: Великий совет и Храм достигли согласия по вопросу Вварденфелла. [vv_initiator.GetName] своим приказом объявляет остров открытым для заселения."
+ grand_council_vv.0004.desc.vv_vote_failed: "[hc_capital.GetNameNoTier] гудит новостями: предложение верховного советника открыть Вварденфелл не было поддержано голосованием. Священный остров сохранит статус заповедных земель под управлением Храма."
+ grand_council_vv.0004.a: "Интересно…"
+ kept_temple_reserve_tooltip: "Вы оставите [Concept('law', 'закон')|E] «[GetLaw('vvardenfell_temple_reserve').GetName]»."

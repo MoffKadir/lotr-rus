@@ -1,0 +1,31 @@
+﻿l_russian:
+ ek_activity_funeral_burial_ground: "#P ++ Значимое место захоронения#!\n"
+ ek_funeral_cost_discount_burial_ground: "В этом месте есть некрополь"
+ ek_funeral_cost_discount_effect_desc:0 "$unlocks_building_desc$Снижение стоимости проведения [GetActivityType('activity_funeral').GetTextIcon]похорон в этом [Concept('holding', 'владении')|E]: "
+ ek_funeral_cost_discount_medium_desc:0 "$ek_funeral_cost_discount_effect_desc$[EmptyScope.ScriptValue('funeral_activity_cost_discount_medium')|P0%]"
+ ek_funeral_cost_discount_max_desc:0 "$ek_funeral_cost_discount_effect_desc$[EmptyScope.ScriptValue('funeral_activity_cost_discount_max')|P0%]"
+ ek_funeral_outcome_effect_dyn_prestige_desc:0 "\n[GetActivityType('activity_funeral').GetTextIcon][GetActivityType('activity_funeral').GetName], проведённые в этом [Concept( 'holding', 'владении' )|E], приносят дополнительные награды после завершения"
+
+ ek_funeral_piety_outcome_effect_desc:0 "[GetActivityType('activity_funeral').GetTextIcon][GetActivityType('activity_funeral').GetName], проведённые в этом [Concept( 'holding', 'владении' )|E], приносят дополнительное [piety_i][piety|El] после завершения"
+ ek_funeral_legitimacy_outcome_effect_desc:0 "[GetActivityType('activity_funeral').GetTextIcon][GetActivityType('activity_funeral').GetName], проведённые в этом [Concept( 'holding', 'владении' )|E], приносят дополнительную [legitimacy|El] после завершения"
+ ek_funeral_stress_outcome_effect_desc:0 "[GetActivityType('activity_funeral').GetTextIcon][GetActivityType('activity_funeral').GetName], проведённые в этом [Concept( 'holding', 'владении' )|E], дополнительно снижают [stress_i][stress|El] после завершения"
+ ek_funeral_renown_outcome_effect_desc:0 "[GetActivityType('activity_funeral').GetTextIcon][GetActivityType('activity_funeral').GetName], проведённые в этом [Concept( 'holding', 'владении' )|E], также дают [dynasty_prestige|El]"
+
+#Grave-stake burial
+ wakename_grave_stake:0 "Зул-ват" #Jel for grave-stake
+ wakedesc_grave_stake:0 "Скорбящие собираются, чтобы поделиться своими чувствами и рассказать отпевателю истории из жизни покойного."
+ ceremonyname_grave_stake:0 "Зул-ват" #Jel for grave-stake
+ ceremonydesc_grave_stake:0 "Тело покойного хоронят в топях, пригвождая ко дну могильным столбом."
+ funeral_cost_discount_grave_stake:0 "Могильный столб"
+
+#Green Pact burial
+ wakename_green_pact:0 "Мясной Мандат"
+ wakedesc_green_pact:0 "Прощание с покойным, последняя возможность поделиться своими чувствами, прежде чем его тело будет съедено в соответствии с Мясным Мандатом."
+ ceremonyname_green_pact:0 "Мясной Мандат"
+ ceremonydesc_green_pact:0 "Тело покойного съедят его родственники и знакомые."
+ funeral_cost_discount_cannibalism:0 "Каннибализм"
+
+#Cannibalism
+ ceremonyname_cannibalism:0 "Поедание покойного"
+ ceremonydesc_cannibalism:0 "Тело покойного съедят скорбящие."
+ 

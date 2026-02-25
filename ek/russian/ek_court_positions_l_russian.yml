@@ -1,0 +1,140 @@
+﻿l_russian:
+
+### COURT POSITIONS
+## Royal Housecarl
+ court_housecarl_court_position:0 "Придворный хускарл"
+ court_housecarl_court_position_desc:0 "$court_housecarl_court_position$ — самый доверенный помощник нордского короля. Он лично обеспечивает его безопасность и помогает ему в военных делах. Выше него только сам король."
+##Loremaster
+ loremaster_court_position:0 "Хранитель знаний"
+ loremaster_court_position_desc:0 "$loremaster_court_position$ сохраняет как письменную, так и устную историю своего народа и посвящает ей свою жизнь. Его мудрость и знания помогают каждому, кто обращается к нему за помощью."
+ loremaster_vateshran:0 "Ватешран"
+ loremaster_vateshran_desc:0 "$loremaster_vateshran$ сохраняет как письменную, так и устную историю своего народа и посвящает ей свою жизнь. Его мудрость и знания помогают каждому, кто обращается к нему за помощью."
+ can_appoint_loremaster_tt: "В [Concept( 'culture', 'культуре' )|E] [Concept( 'liege', 'сюзерена' )|E] есть одна из следующих [Concept( 'traditions', 'традиций' )|E]:\n\t$EFFECT_LIST_BULLET$[GetCultureTradition('tradition_skaal_core').GetName]\n\t$EFFECT_LIST_BULLET$[GetCultureTradition('tradition_reach_core').GetName]"
+
+##Hunt-Wife
+ huntwife_court_position:0 "Охотница-жена"
+ huntwife_court_position_desc:0 "$huntwife_court_position$ отвечает за охотничьи отряды крепости и за обучение юных орков навыкам выживания. Будучи главной охотницей, она критически важна для жизни общины."
+##Forge-Wife
+ forgewife_court_position:0 "Коваль-жена"
+ forgewife_court_position_desc:0 "$forgewife_court_position$ — самый талантливый кузнец крепости, отвечает за орочье искусство ковки. Чаще всего именно она становится второй женой вождя."
+##Hearth-Wife
+ hearthwife_court_position:0 "Жена очага"
+ hearthwife_court_position_desc:0 "$hearthwife_court_position$ ведает домашними делами и следит, чтобы повседневная жизнь крепости шла гладко. Обычно именно с ней по важным делам советуется вождь."
+ SPOUSE_OF_CHARACTER_COURT_POSITION: "Ваша [Concept('spouse', 'жена')|E]"
+##Shadowscale
+ shadowscale_court_position:0 "Тёмный ящер"
+ shadowscale_employer_custom_effect_description:1 "@warning_icon!#X Полезный [Concept( 'agent', 'соучастник' )|E] при [Concept( 'hostile_schemes', 'враждебных происках' )|E] против вас#!"
+ shadowscale_court_position_desc:1 "$shadowscale_court_position$ с рождения обучался искусству скрытного убийства и интриги и служит только королю Аргонии. Однако аргонианский правитель, пользующийся уважением, может запросить тёмного ящера к своему двору — для помощи в уничтожении своих врагов и врагов Чернотопья."
+ court_position_lifestyle_herbalist_trait:0 "[GetTrait('lifestyle_herbalist').GetName( ROOT.Char )]"
+ court_position_cynical_trait:0 "[GetTrait('cynical').GetName( ROOT.Char )]"
+ court_position_august_trait:0 "[GetTrait('august').GetName( ROOT.Char )]"
+##Clan-Mother
+ clan_mother_court_position: "Мать клана"
+ clan_mother_court_position_desc: "$clan_mother_court_position$ — пользующийся уважением матриарх. Она может сопровождать своего сюзерена при дворе и говорить от его имени."
+ clan_mother_employer_custom_effect_description:1 "Может заменить вас в некоторых испытаниях [Concept( 'diplomacy', 'дипломатии' )|E]"
+ NOT_MARRIED_COURT_POSITION: "#bold Не#! состоит в браке"
+ ABOVE_45_COURT_POSITION: "Старше #V 45#! лет"
+ 
+##Enforcer
+ enforcer_court_position:0 "Вышибала"
+ enforcer_court_position_desc:0 "$enforcer_court_position$ надзирает за бурлящими городскими центрами державы и следит за тем, чтобы к его сюзерену относились с подобающим уважением в каждом уголке — и желательно, чтобы это уважение выражалось в звонкой монете."
+
+##Court Mage & Field Mage
+ court_mage_court_position:0 "Придворный маг"
+ court_mage_field_mage:0 "Полевой маг"
+ court_mage_clever_man: "Ведун"
+ court_mage_court_position_desc: "$court_mage_court_position$ — адепт магических искусств, в обязанности которого входит решение проблем, связанных с магией, сотворение заклинаний в интересах сюзерена, надзор за изучением магии в державе, консультация по сложным мистическим материям и помощь обитателям двора в области зачарования и алхимии."
+ court_mage_field_mage_desc:0 "$court_mage_field_mage$ — адепт магических искусств, в обязанности которого входит решение проблем, связанных с магией, сотворение заклинаний в интересах сюзерена, надзор за изучением магии в державе, консультация по сложным мистическим материям и помощь обитателям двора в области зачарования и алхимии."
+ court_mage_clever_man_desc:0 "$court_mage_clever_man$ — адепт магических искусств, в обязанности которого входит решение проблем, связанных с магией, сотворение заклинаний в интересах сюзерена, надзор за изучением магии в державе, консультация по сложным мистическим материям и помощь обитателям двора в области зачарования и алхимии."
+ court_mage_court_position_possessive:0 "личного мага"
+ court_mage_base_desc:0 "$EFFECT_LIST_BULLET$[arcana_i][arcana|E]"
+ court_mage_terrible_desc:0 "$court_mage_base_desc$: #P +1#!"
+ court_mage_poor_desc:0 "$court_mage_base_desc$: #P +2#!"
+ court_mage_average_desc:0 "$court_mage_base_desc$: #P +3#!"
+ court_mage_good_desc:0 "$court_mage_base_desc$: #P +4#!"
+ court_mage_excellent_desc:0 "$court_mage_base_desc$: #P +5#!"
+ court_mage_range_desc:0 "$court_mage_base_desc$: от #P +1#! до #P +5#! (в зависимости от [Concept( 'aptitude', 'пригодности' )|E])"
+ court_mage_employer_custom_effect_description:2 "$EFFECT_LIST_BULLET$Может творить [spells|El] для [Concept( 'liege', 'сюзерена' )|E]"
+# Aptitude 
+ court_position_skill_arcana:0 "Навык [Concept( 'arcana', 'арканы' )|E]"
+ court_position_necomancer_trait:0 "[GetTrait('necromancer').GetName( ROOT.Char )]"
+ court_position_battlemage_trait:0 "[GetTrait('battlemage').GetName( ROOT.Char )]"
+ court_position_education_magic_5_trait:0 "[GetTrait('education_magic_5').GetName( ROOT.Char )]"
+ court_position_experimentalist_trait:0 "[GetTrait('experimentalist').GetName( ROOT.Char )]"
+ court_position_education_magic_4_trait:0 "[GetTrait('education_magic_4').GetName( ROOT.Char )]"
+ court_position_education_magic_3_trait:0 "[GetTrait('education_magic_3').GetName( ROOT.Char )]"
+ court_position_education_magic_2_trait:0 "[GetTrait('education_magic_2').GetName( ROOT.Char )]"
+ court_position_education_magic_1_trait:0 "[GetTrait('education_magic_1').GetName( ROOT.Char )]"
+ court_position_arcana_bad_1_trait:0 "[GetTrait('arcana_bad_1').GetName( ROOT.Char )]"
+ court_position_arcana_bad_2_trait:0 "[GetTrait('arcana_bad_2').GetName( ROOT.Char )]"
+ court_position_arcana_bad_3_trait:0 "[GetTrait('arcana_bad_3').GetName( ROOT.Char )]"
+ court_position_arcana_good_1_trait:0 "[GetTrait('arcana_good_1').GetName( ROOT.Char )]"
+ court_position_arcana_good_2_trait:0 "[GetTrait('arcana_good_2').GetName( ROOT.Char )]"
+ court_position_arcana_good_3_trait:0 "[GetTrait('arcana_good_3').GetName( ROOT.Char )]"
+ court_position_conjuration_novice_perk:0 "[GetPerk('conjuration_novice_perk').GetName( ROOT.Char )]"
+ court_position_conjuration_apprentice_perk:0 "[GetPerk('conjuration_apprentice_perk').GetName( ROOT.Char )]"
+ court_position_conjuration_journeyman_perk:0 "[GetPerk('conjuration_journeyman_perk').GetName( ROOT.Char )]"
+ court_position_conjuration_expert_perk:0 "[GetPerk('conjuration_expert_perk').GetName( ROOT.Char )]"
+ court_position_conjuration_master_perk:0 "[GetPerk('conjuration_master_perk').GetName( ROOT.Char )]"
+ court_position_destruction_novice_perk:0 "[GetPerk('destruction_novice_perk').GetName( ROOT.Char )]"
+ court_position_destruction_apprentice_perk:0 "[GetPerk('destruction_apprentice_perk').GetName( ROOT.Char )]"
+ court_position_destruction_journeyman_perk:0 "[GetPerk('destruction_journeyman_perk').GetName( ROOT.Char )]"
+ court_position_destruction_expert_perk:0 "[GetPerk('destruction_expert_perk').GetName( ROOT.Char )]"
+ court_position_destruction_master_perk:0 "[GetPerk('destruction_master_perk').GetName( ROOT.Char )]"
+ court_position_alteration_novice_perk:0 "[GetPerk('alteration_novice_perk').GetName( ROOT.Char )]"
+ court_position_alteration_apprentice_perk:0 "[GetPerk('alteration_apprentice_perk').GetName( ROOT.Char )]"
+ court_position_alteration_journeyman_perk:0 "[GetPerk('alteration_journeyman_perk').GetName( ROOT.Char )]"
+ court_position_alteration_expert_perk:0 "[GetPerk('alteration_expert_perk').GetName( ROOT.Char )]"
+ court_position_alteration_master_perk:0 "[GetPerk('alteration_master_perk').GetName( ROOT.Char )]"
+ court_position_illusion_novice_perk:0 "[GetPerk('illusion_novice_perk').GetName( ROOT.Char )]"
+ court_position_illusion_apprentice_perk:0 "[GetPerk('illusion_apprentice_perk').GetName( ROOT.Char )]"
+ court_position_illusion_journeyman_perk:0 "[GetPerk('illusion_journeyman_perk').GetName( ROOT.Char )]"
+ court_position_illusion_expert_perk:0 "[GetPerk('illusion_expert_perk').GetName( ROOT.Char )]"
+ court_position_illusion_master_perk:0 "[GetPerk('illusion_master_perk').GetName( ROOT.Char )]"
+ court_position_restoration_novice_perk:0 "[GetPerk('restoration_novice_perk').GetName( ROOT.Char )]"
+ court_position_restoration_apprentice_perk:0 "[GetPerk('restoration_apprentice_perk').GetName( ROOT.Char )]"
+ court_position_restoration_journeyman_perk:0 "[GetPerk('restoration_journeyman_perk').GetName( ROOT.Char )]"
+ court_position_restoration_expert_perk:0 "[GetPerk('restoration_expert_perk').GetName( ROOT.Char )]"
+ court_position_restoration_master_perk:0 "[GetPerk('restoration_master_perk').GetName( ROOT.Char )]"
+ court_position_necromancy_novice_perk:0 "[GetPerk('necromancy_novice_perk').GetName( ROOT.Char )]"
+ court_position_necromancy_apprentice_perk:0 "[GetPerk('necromancy_apprentice_perk').GetName( ROOT.Char )]"
+ court_position_necromancy_journeyman_perk:0 "[GetPerk('necromancy_journeyman_perk').GetName( ROOT.Char )]"
+ court_position_necromancy_expert_perk:0 "[GetPerk('necromancy_expert_perk').GetName( ROOT.Char )]"
+ court_position_necromancy_master_perk:0 "[GetPerk('necromancy_master_perk').GetName( ROOT.Char )]"
+
+ #Powerful agents
+ SCHEME_AGENT_IS_COURT_MAGE:0 "[target.GetShortUINamePossessiveNoTooltip] $court_mage_court_position$"
+ SCHEME_AGENT_IS_HOUSECARL:0 "[target.GetShortUINamePossessiveNoTooltip] $court_housecarl_court_position$"
+ SCHEME_AGENT_IS_SHADOWSCALE:0 "[target.GetShortUINamePossessiveNoTooltip] $shadowscale_court_position$"
+
+ # Court Position Tasks
+ court_mage_instruct:0 "Творить заклинания"
+ court_mage_instruct_desc:0 "Пока задание активно, персонаж будет творить заклинания по своему усмотрению в соответствии с пожеланиями нанимателя."
+ court_mage_instruct_tt:0 "Дать указания магу о том, какие [spells|El] колдовать и на какой школе [Concept('magic', 'магии')|E] сосредоточиться."
+ court_mage_improve_self:0 "Изучать магию"
+ court_mage_improve_self_desc:0 "Персонаж займётся совершенствованием своих магических навыков."
+ court_mage_improve_self_tt:0 "Каждый месяц персонаж с определённым шансом будет выучивать новые [spells|El] или увеличивать свою [arcana_i][Concept('arcana', 'аркану')|E] (Вплоть до [EmptyScope.ScriptValue('very_high_skill_rating')|0])"
+ court_mage_improve_self_fallback_tt:0 "Каждый месяц персонаж с определённым шансом будет выучивать новые [spells|El] или увеличивать свою [arcana_i][Concept('arcana', 'аркану')|E] (Вплоть до [EmptyScope.ScriptValue('very_high_skill_rating')|0])"
+ court_mage_support_liege:0 "Магическая поддержка"
+ court_mage_support_liege_desc:0 "Персонаж будет усиливать магические способности своего нанимателя."
+ court_mage_support_liege_tt:0 "Каждый месяц наниматель с определённым шансом будет получать дополнительную [Concept('magicka', 'магию')|E]"
+ court_mage_support_liege_fallback_tt:0 "Каждый месяц наниматель с определённым шансом будет получать дополнительную [Concept('magicka', 'магию')|E]"
+
+ #Qadi
+ court_chief_qadi_requirement.tt: "Необходимо использовать [praxis|El]"
+
+ #Wet Nurse
+ wet_nurse_age_tt_ek:0 "Младше возраста, эквивалентному #V 46#! человеческим годам"
+
+ ### CAMP OFFICERS
+ ##Retainer
+ retainer_camp_officer:0 "Приспешник"
+ retainer_camp_officer_desc:0 "$retainer_camp_officer$ всегда находится в поисках возможностей заработать звонкую монету, и если при этом придётся прибегнуть к угрозам и насилию, тем лучше."
+
+ ##Arcanist Captain
+ arcanist_captain_camp_officer:0 "Капитан волшебников"
+ arcanist_captain_camp_officer_desc:0 "$arcanist_captain_camp_officer$ руководит магами и мечниками-чародеями в лагере. Он отвечает за их подготовку и тактику боевых действий."
+ domicile_building_parameter_camp_unlocks_arcanist_captain_officer:0 "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('arcanist_captain_camp_officer').GetName()]»"
+ arcanist_captain_camp_officer_parameter_tt: "$camp_with_following_buildings_tt$\n$BULLET$[GetDomicileBuilding('proving_grounds_mages_study').GetName]"
+ 
+ any_liege_or_above:0 "Прямой или выше по рангу сюзерен:"

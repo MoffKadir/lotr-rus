@@ -1,0 +1,36 @@
+﻿l_russian:
+ setting_1453_end_date:0 "2Э 896 / 3816"
+ setting_1453_end_date_desc:0 "Игра закончится в 2Э 896 — последнем году Второй эры согласно истории мира."
+
+ setting_default_regional_heresy_desc:0 "Возникновение еретических учений в определенных регионах часто соответствует историческим событиям: например, Культ Героев в Коловии."
+
+ rule_same_sex_marriage:0 "Однополые браки"
+ setting_default_same_sex_marriage:0 "По умолчанию"
+ setting_default_same_sex_marriage_desc:0 "Однополые браки недоступны."
+ setting_accepted_same_sex_marriage:1 "#high Приемлемы#!"
+ setting_accepted_same_sex_marriage_desc:0 "Однополые браки и наложничество доступно всем персонажам, конфессия которых допускает подобные отношения, а культура поддерживает наложничество. Чтобы сделать их доступными для #EMP всех#!, установите правило $rule_same_sex_relations$ на $setting_accepted_same_sex_relations$!"
+ setting_accepted_same_sex_marriage:1 "#high Приемлемы — ограниченно#!"
+ setting_accepted_same_sex_marriage_desc:0 "Так же, как и в оригинальной игре, но однополые браки доступны только для соответствующих ориентаций. Чтобы отключить это для игрока, см. $setting_ek_accepted_same_sex_marriage_anyone_player$."
+
+ 
+ ### исправление ошибки в русской локе
+ setting_matrilineal_marriages_no_player_exception:0 "#high По умолчанию (все персонажи)#!"
+ setting_matrilineal_marriages_no_player_exception_desc:0 "Персонажи под управлением ИИ будут заключать [Concept( 'matrilineal', 'матрилинейные' )|E] браки, если их [dynasty|E] [dynasty_prestige_level_4|L], они правят в державе с законом «[GetLaw('equal_law').GetName]» или являются сильными [Concept( 'rulers', 'правителями' )|E]. Державы с доктриной конфессии «[GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName]» по умолчанию используют матрилинейные браки."
+ 
+# Empire to High Kingdom replacement
+ rule_empire_obscurity_requirement:0 "Забвение верховных королевств"
+ game_rule.4.desc:0 "Я не могу отрицать, что моё любимое верховное королевство, [falling_empire.GetBaseName], пало — и пало глубоко…\n\nЯ с трудом удерживаю жалкие остатки его земель. Тень былого величия, моё верховное королевство медленно, но верно уходит в забвение."
+ game_rule.4.b:0 "Прощай, моё дорогое верховное королевство…"
+
+ setting_on_custom_kingdoms_desc:0 "Можно создавать собственные королевства и верховные королевства, не имеющие каноничных аналогов."   ### заменил ванильные исторические аналоги на каноничные
+ setting_off_custom_kingdoms_desc:0 "Нельзя создавать собственные королевства и верховные королевства, не имеющие каноничных аналогов."
+
+#Black Death to Knahaten Flu
+ rule_black_death_occurrence: "Обстоятельства Кнахатенского гриппа"
+ setting_bd_occurrence_historical_desc: "Грипп начнётся в Чернотопье в 2Э 560 и естественно распространится по торговым путям. Некоторые регионы, в особенности за пределами Тамриэля, пострадают не так сильно."
+ setting_bd_occurrence_random_desc: "Кнахатенский грипп начнётся в случайной провинции на карте."
+
+ rule_black_death_frequency: "Частота Кнахатенского гриппа"
+ setting_bd_frequency_once_desc: "Эпидемия Кнахатенского гриппа произойдёт только один раз за прохождение."
+ setting_bd_frequency_unlimited_desc: "Кнахатенский грипп может появиться сколько угодно раз за вашу кампанию."
+ setting_bd_frequency_never_desc: "Кнахатенский грипп никогда не появится."

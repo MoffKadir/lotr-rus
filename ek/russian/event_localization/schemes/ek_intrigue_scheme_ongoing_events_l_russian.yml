@@ -1,0 +1,51 @@
+﻿l_russian:
+
+#1000: Mark & Recall
+
+ ek_intrigue_scheme_ongoing_events.1000.t:0 "Пометка и возврат"
+ ek_intrigue_scheme_ongoing_events.1000.desc.start:0 "Несомненно, заклинание пометки сыграет на руку моим планам на кое-кого по имени [target.GetName]. [target.GetHerHis|U] резиденция — в провинции [scheme_location.GetName] в местности [defender.Custom('TerrainType')]. Если создать там пометку, в этом месте останется магическая печать, к которой смогут незаметно телепортироваться мои агенты, что должно пойти на пользу ходу происков.\n\nОни уже нашли местного портального мага по имени [alteration_mage.GetFirstName]. За определённую цену [alteration_mage.GetSheHe] может сотворить заклинание пометки."
+ ek_intrigue_scheme_ongoing_events.1000.desc.court_mage_or_self_cast:0 "Однако любой маг, знающий портальные заклинания, справится с этой задачей."
+ ek_intrigue_scheme_ongoing_events.1000.a:0 "Я заплачу заклинателю."
+ ek_intrigue_scheme_ongoing_events.1000.a.success:0 "Мага не обнаружили"
+ ek_intrigue_scheme_ongoing_events.1000.a.failure:0 "Мага раскрыли"
+ ek_intrigue_scheme_ongoing_events.1000.b:0 "Этим займётся мой придворный маг."
+ ek_intrigue_scheme_ongoing_events.1000.b.1:0 "Всё проходит гладко"
+ ek_intrigue_scheme_ongoing_events.1000.b.2:0 "Что-то пошло не так"
+ ek_intrigue_scheme_ongoing_events.1000.b.3:0 "Заклинание оказывается сложным"
+ ek_intrigue_scheme_ongoing_events.1000.c:0 "Я лично сотворю заклинание пометки."
+ ek_intrigue_scheme_ongoing_events.1000.c.success:0 "И всё идёт по плану"
+ ek_intrigue_scheme_ongoing_events.1000.c.soft_failure:0 "Но заклинание не удаётся"
+ ek_intrigue_scheme_ongoing_events.1000.c.hard_failure:0 "Вы потратили зря магию"
+ ek_intrigue_scheme_ongoing_events.1000.d:0 "Это не стоит усилий."
+
+#1001: Mark & Recall Detection
+ ek_intrigue_scheme_ongoing_events.1001.t:0 "Пометка"
+ ek_intrigue_scheme_ongoing_events.1001.desc:0 "Мои стражники привели ко мне мага, которого заметили снующим в одном месте в провинции [scheme_location.GetName]. По всей видимости, [alteration_mage.GetHerHim] заплатили за сотворение заклинания пометки внутри стен моего владения. Оно является якорем для телепортации. Маг, [Select_CString(alteration_mage.IsFemale, 'которую', 'которого')] зовут [alteration_mage.GetName], называет свои контакты «таинственными агентами».\n\nЭто признание может значить только одно: коварные интриганы пытаются нанести удар, и их цель — я либо кто-то из моих подданных. Но, возможно, я могу остановить эти козни и наказать исполнителей до их предполагаемого предательства."
+ ek_intrigue_scheme_ongoing_events.1001.a:0 "Нужно быть осмотрительнее."
+ ek_intrigue_scheme_ongoing_events.1001.b:0 "Арестовать этого мага!"
+ ek_intrigue_scheme_ongoing_events.1001.c:0 "[alteration_mage.GetSheHe|U] расскажет мне #italic всё#!, что знает…"
+ ek_intrigue_scheme_ongoing_events.1001.c.tt:0 "Раскрыты [Concept( 'scheme_hostile', 'враждебные происки' )|E] или [Concept( 'scheme', 'козни' )|E] иного рода"
+ ek_intrigue_scheme_ongoing_events.1001.toast:0 "Раскрыты происки"
+
+#1010: Invisibility Potions
+ ek_intrigue_scheme_ongoing_events.1010.t:0 "Зелья невидимости"
+ ek_intrigue_scheme_ongoing_events.1010.desc:0 "Что если агентов, которых я подошлю к своей цели по имени [target.GetName], увидит кто-то, кто испортит мои планы? Быть может, сделать так, чтобы их нельзя было увидеть? Найти алхимика и добыть партию зелий невидимости не так уж и сложно. Возможно, я даже смогу изготовить их самостоятельно.\n\nИспользуя эти зелья, мои агенты смогут незаметно перемещаться или покидать помещения под охраной. Это определённо повысит секретность происков и шансы на успех."
+ ek_intrigue_scheme_ongoing_events.1010.a:0 "Я закуплю необходимые зелья."
+ ek_intrigue_scheme_ongoing_events.1010.a.success:0 "Никто не обращает внимания, как вы покупаете целую бочку зелья невидимости"
+ ek_intrigue_scheme_ongoing_events.1010.a.failure:0 "О вашей крупной закупке становится известно"
+ ek_intrigue_scheme_ongoing_events.1010.b:0 "Я попробую сделать зелья [Select_CString(ROOT.Char.IsFemale, 'сама', 'сам')]."
+ ek_intrigue_scheme_ongoing_events.1010.b.success:0 "У вас получается сварить зелья"
+ ek_intrigue_scheme_ongoing_events.1010.b.failure:0 "Ваш алхимический эксперимент заканчивается ужасно"
+ ek_intrigue_scheme_ongoing_events.1010.c:0 "Принесите мне корень Нирна! Я сделаю всё [Select_CString(ROOT.Char.IsFemale, 'сама', 'сам')]."
+ ek_intrigue_scheme_ongoing_events.1010.d:0 "В чём смысл невидимости? Мои агенты всё равно будут там."
+
+#9990: Argonians without Shadowscales are pressed to hire one
+ ek_intrigue_scheme_ongoing_events.9990.t:0 "Тёмный ящер?"
+ ek_intrigue_scheme_ongoing_events.9990.desc:0 "Никакой аргонианин не сравнится с Тёмными ящерами в искусстве убивать, ведь их обучают с раннего детства. Моя организация убийства персонажа [target.GetName] не чета их уровню, и мои агенты это понимают.\n\nНекоторые из них, похоже, так недовольны состоянием дел, что решили сами приступить к поискам Тёмного ящера, которого я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог')] бы нанять. Служа при моём дворе, Тёмный ящер будет следить за ходом текущих и всех будущих происков."
+ ek_intrigue_scheme_ongoing_events.9990.a:0 "Мне пора нанять Тёмного ящера."
+ ek_intrigue_scheme_ongoing_events.9990.b:0 "Мне ни к чему худший из этих головорезов."
+
+#9980: Argonians with a Shadowscale murdering someone who refused to give the Shadowscales their child receives a bonus:
+ ek_intrigue_scheme_ongoing_events.9980.t:0 "Поддержка Тёмных ящеров"
+ ek_intrigue_scheme_ongoing_events.9980.desc:0 "Среди темнейших теней в темнейшем из уголков владения [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTier] передо мной внезапно предстаёт [ek_intrigue_scheme_ongoing_events_9980_court_shadowscale.GetName]. Я спешно оглядываюсь, но мне едва удаётся [ek_intrigue_scheme_ongoing_events_9980_court_shadowscale.GetHerHis] разглядеть, а голос [ek_intrigue_scheme_ongoing_events_9980_court_shadowscale.GetHerHis] настолько тихий, что мне приходится вслушиваться в [ek_intrigue_scheme_ongoing_events_9980_court_shadowscale.GetHerHis] речь наклонившись.\n\n#italic «Слушайте внимательно. Я [Select_CString(ek_intrigue_scheme_ongoing_events_9980_court_shadowscale.IsFemale, 'говорила', 'говорил')] со своими повелителями о ваших происках по убийству цели по имени [target.GetName]. [target.GetSheHe|U] серьёзно [Select_CString(target.IsFemale, 'подвела', 'подвёл')] нас, оставив себе детёныша, рождённого под знаком Тени, хотя он по праву должен был быть наш. Этим деянием [target.GetSheHe] навлекла на себя гнев нашего Короля.\n\nВ связи с этим, [ROOT.Char.GetTitledFirstNameNoTooltip], Тёмные ящеры оказывают вам полную поддержку в этих происках. Не подведите».#!"
+ ek_intrigue_scheme_ongoing_events.9980.a:0 "Я понимаю."

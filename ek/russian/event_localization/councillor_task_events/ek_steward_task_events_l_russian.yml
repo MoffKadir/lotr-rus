@@ -1,0 +1,45 @@
+﻿l_russian:
+ steward_task.0302.opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+ steward_task.0302.county_complete:0 "[new_culture.GetName] осваивают провинцию [county.GetNameNoTier] и организуют в ней новую администрацию. Народ этих земель полностью перенял #L [new_culture.GetCollectiveNoun|l]ие#! традиции.\n\nИ пусть их обычаи не совсем совпадают с нашими, для нас они гораздо ближе, чем когда-либо были #L [old_culture.GetCollectiveNoun|l]ие#!, которые ранее были распространены здесь."
+ steward_task.0302.a:0 "Отличная работа, [councillor.GetFirstNameNoTooltip]!"
+
+ task_promote_culture_effect_basis_desc:1 "#S При #V 100%#!#!:\n$TAB$[county|E] переходит в #L [councillor_liege.GetCulture.GetCollectiveNoun|l]ую#! [Concept('culture', 'культуру' )|El]"
+ task_promote_culture_effect_culture_known_desc:1 "WIP, NEED A WAY TO GET THE NAME OF THE CULTURE STORED IN scope:county.var:culture_to_convert"
+
+ culture_within_heritage_alive:0 "Должна быть доступна хотя бы одна [culture|El] с вашим [Concept('heritage', 'наследием')|E]"
+ ek_steward_task.0001.t:0 "Новые поселенцы в провинции  [county.GetNameNoTier]"
+ ek_steward_task.0001.desc.same_heritage:0 "И хотя #L [county_old_culture.GetCollectiveNoun|l]ие#! обычаи и традиции близки к нашим, мы бы только выиграли, если бы наши подданные из провинции [county.GetNameNoTier] разделяли нашу идентичность или хотя бы принадлежали к другой близкой культуре, который было бы легче управлять."
+ ek_steward_task.0001.desc.other_heritage:0 "Население провинции [county.GetNameNoTier] всё ещё держится за свои #L [county_old_culture.GetCollectiveNoun|l]ие#! обычаи и традиции. Из-за их упрямства управлять этими землями становится сложнее, и было бы лучше заселить туда наш собственный народ. "
+ ek_steward_task.0001.desc.nomadic:0 "\n\n[county_old_culture.GetName] известны своими перемещениями на большие расстояния. [de_jure_duchy.GetNameNoTier] хранит историю их миграций по всей протяжённости этих земель. Привлечь переселенцев, которые займут освободившиеся поселения, должно быть проще."
+ ek_steward_task.0001.desc.ending_orsinium_orcs:0 "\n\nСотни орков по всему Тамриэлю услышали вести о нашем новом могучем Орсиниуме. Мы едва справляемся с потоком воителей и переселенцев, которые хотят помочь восстановить Орочий Град."
+ ek_steward_task.0001.desc.ending:0 "\n\nПереселенцы из разных мест готовы начать новую жизнь в провинции [county.GetNameNoTier], и большинство из них только ждёт нашего одобрения."
+ ek_steward_task.0001.desc.dead_culture:0 "Наш народ разрознен и малочислен, и мы не сможем заселить им эти земли. Нужно найти другую этническую группу, которая освоит эти территории."
+ ek_steward_task.0001.desc.daedric_race:0 "Мы — Кин, [Glossary( 'даэдрическая', 'DAEDRA_GLOSS' )] раса, и в Мундусе нет устойчивой популяции нашего народа. Мы сможем заселить эти земли кем-то из наших смертных подданных."
+ 
+ 
+ ek_steward_task.0001.a.orcs_orsinium:0 "Оркам всегда рады в Орсиниуме!"
+
+ ek_steward_task.0001.a:0 "Отдать приказ!"
+ 
+
+
+ ek_steward_task.0001.convert_orcs_orsinium_tooltip:0 "Благодаря [Concept('tradition', 'традиции')|E] [GetCultureTradition('tradition_denizens_lost_orsinium').GetName|V], мы можем распространять свою культуру в пределах де-юре королевства Орсиниум как если бы она была [Concept('native', 'коренной')|E] для этих земель"
+ 
+ ek_steward_task.0001.convert_own_culture_tooltip:0 "Мы будем прикладывать усилия по распространению в провинции [county.GetNameNoTier] [Concept('native', 'коренной')|E] [Concept('culture', 'культуры')|E]"
+ 
+ ek_steward_task.0001.nomadic_culture_not_native_tooltip:0 "[Concept('migratory_culture', 'Скитающиеся культуры')|E]  дольше занимают новые территории, но не получают такого же большого штрафа, как не-[Concept('native', 'коренные')|E] культуры на чужой этнической родине."
+ 
+ ek_steward_task.0001.own_culture_not_native_tooltip:0 "Так как эта [culture|El] #r не#! является [Concept('native', 'коренной')|E] для данного региона, её продвижение здесь будет серьёзно замедлено."
+ 
+ ek_culture_conversion_native_tooltip:0 "[Concept('native', 'Коренная')|E] [culture|El] быстро распространится здесь."
+ ek_culture_conversion_nomadic_tooltip:0 "[Concept('migratory_culture', 'Скитающиеся культуры')|E] заселяют земли медленее, чем [Concept('native', 'коренные')|E] [Concept('cultures', 'культуры')|E], но гораздо быстрее, чем не-[Concept('native', 'коренные')|E]"
+ ek_culture_conversion_non_native_tooltip:0 "Так как эта [culture|El] #r не#! является [Concept('native', 'коренной')|E] для данного региона, её продвижение здесь будет серьёзно замедлено."
+ 
+ ek_culture_conversion_widget_title:0 "#T;UNDERLINE Доступные [cultures]:#!"
+ ek_culture_conversion_widget_desc:0 "#weak Помимо продвижения собственной культуры, правители могут заселять любые [Concept('native', 'коренные')|E] или [Concept('migratory_culture', 'скитающиеся культуры')|E] того же наследия или [cultures|E] с высоким показателем [Concept('cultural_acceptance', 'взаимной терпимости')|E]:#!"
+ 
+ ek_cant_convert_county_to_any_culture:0 "Нет [Concept('valid_conversion_culture_medium', 'доступных культур')|E] для распространения в этом [Concept('county', 'графстве')|E]"
+
+ cultural_acceptance_gain_promote_culture:0 "[third_party_culture.GetCulture.GetName] распространяются в провинции [county.GetName]"
+ 
+ task_promote_culture_acceptance_effect_third_party_culture_desc:0 "\n$TAB$[Concept( 'cultural_acceptance', 'Терпимость' )|E] между #L [county.MakeScope.Var('culture_to_convert').Culture.GetCollectiveNoun]ой#! и #L [councillor_liege.GetCulture.GetCollectiveNoun]ой#! культурами увеличивается на [SCOPE.ScriptValue('culture_conversion_acceptance_positive_impact')|P/%]"

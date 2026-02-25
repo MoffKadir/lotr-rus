@@ -1,0 +1,219 @@
+﻿l_russian:
+ #MARRIAGE
+ MARRIAGE_NO_OFFSPRING_REASON:0 "Этот союз не произведёт ребёнка: $VALUE|+0$"
+ MARRIAGE_DIFFERENT_HERITAGE_REASON:0 "Другое [heritage|E]: $VALUE|+0$"
+ MARRIAGE_DIFFERENT_CULTURE_REASON:0 "Другая [culture|E]: $VALUE|+0$"
+ MARRIAGE_INSULAR_CULTURE_REASON:0 "Союз будет считаться несвойственным этой культуре: $VALUE|+0$"
+ MARRIAGE_LIFESPAN_REASON:0 "Различная продолжительность жизни: $VALUE|+0$"
+ MARRIAGE_HEIRESS_MATRILINEAL_REASON:0 "[secondary_recipient.GetShortUIName|U] наследует титул и [recipient.GetShortUIName|U] предпочитает [matrilineal|El] брак: $VALUE|+0$"
+ MARRIAGE_MONSTER_REASON:0 "Не хочет сочетаться браком с [Concept('monster', 'чудовищем')|E]: $VALUE|+0$"
+ MARRIAGE_FORMER_PARIAH_REASON:0 "Не хочет сочетаться браком с бывшим [Concept('pariah', 'гонимым')|E]: $VALUE|+0$"
+ MARRIAGE_CRYSTAL_TOWER_REASON:0 "[GetBuilding('crystal_tower_01').GetName]: $VALUE|+0$"
+ MARRIAGE_SEXUALITY_REASON:0 "Несоответствие ориентации: $VALUE|+0$"
+ #RELIGION
+ ASK_FOR_CONVERSION_CROWN_FOREBEAR:0 "[recipient.GetCulture.GetName|E] недолюбливают #L [actor.GetCulture.GetCollectiveNoun]ий#! образ жизни: $VALUE|+0$."
+ ORDINATION_OF_WAR_REASON:0 "$tradition_ordination_of_war_name$: $VALUE|=+0$"
+ #MISC
+ summoned_undead:0 "Призванная нежить"
+
+ EXECUTION_ENTHRALL:0 "Сделать трэллом-нежитью"
+
+ NO_TORTURING_UNDEAD:0 "Нельзя пытать нежить"
+
+ can_not_recruit_undead:0 "Только некромант может вербовать нежить"
+ 
+ extract_blood_price_interaction:0 "Взыскать плату кровью"
+ extract_blood_price_interaction_desc:0 "[prisoner.GetFirstNameNoTooltip] не может отплатить свой долг золотом или временем. Нас удовлетворит только кровь."
+ extract_blood_price_effect_no_reason_tooltip:0 "Так как у вас нет законного повода для заточения или казни персонажа [prisoner.GetFirstName], плата кровью будет невелика."
+ small_blood_price_modifier:0 "Плата кровью"
+ small_blood_price_modifier_desc:0 "Этому персонажу пришлось отдать плату кровью чтобы выйти на свободу. К счастью, его преступление не было значительно, и он покинул заключение, потеряв только немного крови."
+ extract_blood_price_effect_imprisonment_reason_tooltip:0 "Так как у вас есть повод для заточения персонажа [prisoner.GetFirstName], вы взыщете значительное количество крови, что травмирует [prisoner.GetHerHim|l]."
+ extract_blood_price_effect_execution_reason_tooltip:0 "Так как у вас есть повод для казни персонажа [prisoner.GetFirstName], вы взыщете огромное количество крови, что нанесёт [prisoner.GetHerHim|l] серьёзное увечье или даже убьёт."
+ extract_blood_price_effect_survival_release_tooltip:0 "Если [prisoner.GetFirstName] выживет, [prisoner.GetSheHe|l] выйдет на свободу."
+ extract_blood_price_execution:0 "Так как у вас есть повод для казни персонажа [prisoner.GetFirstName], вы можете взыскать #bold очень#! высокую плату кровью, казнив [prisoner.GetHerHis|l]."
+
+ ###Disrupt Arcana Interaction
+ recently_disrupted:0 "Недавно [Select_CString(recipientIsFemale, 'разорвана', 'разорван')] от магии"
+ 
+ challenge_to_single_combat_interaction.on_decline_low_learning.tt:0 "Так как [learning|El] персонажа [actor.GetShortUIName] слишком мала #N (ниже 10)#! [recipient.GetShortUIName] [Select_CString(recipient.IsPlayer, 'можете', 'может' )] отклонить вызов на поединок без негативных последствий!"
+ ek_perk_interaction.0100.t:0 "#L [recipient.GetCulture.GetCollectiveNoun|U]ие#! традиции дуэли"
+ ek_perk_interaction.0100.desc.intro:0 "#italic До того как начнётся сама дуэль, оба дуэлянта должны полностью произнести имя своего оппонента, не забыв упомянуть онорифики, передающиеся по материнской линии, по отцовской линии и клановые, если таковые имеются. Если один из дуэлянтов запнётся или произнесёт имя не так, он должен остановиться, начать заново и потом ещё раз повторить весь титул целиком.#!"
+ ek_perk_interaction.0100.desc.epic_fail:0 "\n\nВы были весьма уверены в том, как произнести «[recipient.GetFirstName]» и «[recipient.GetDynasty.GetBaseName]», но не можете припомнить, какие титулы за этим следуют и есть ли они вообще. Ваши тщетные и отчаянные попытки припомнить хотя бы один онорифик прервал смех, которым [Select_CString(recipient.IsFemale, 'разразилась', 'разразился' )] [recipient.GetFirstName]. [recipient.GetSheHe|U] отказывается выходить с вами на дуэль, ибо вы не можете уважить даже такую простую традицию."
+ ek_perk_interaction.0100.desc.big_fail:0 "\n\nК сожалению, вы смогли припомнить только несколько имён и онорификов, и после нескольких минут ожидания [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'решила', 'решил' )], что дуэль не может состояться до тех пор, пока вы не выучите все [recipient.GetHerHis|l] имена и титулы."
+ ek_perk_interaction.0100.desc.smol_fail:0 "\n\nПрошло, должно быть, несколько минут, пока вы произносили имя за именем, пытаясь припомнить каждое, которым обладает [recipient.GetFirstName], но ваша память подвела вас на парочке последних. [recipient.GetFirstName] смотрит на вас одновременно с разочарованием и облегчением. Дуэль отменяется."
+ ek_perk_interaction.0100.desc.end:0 "\n\nСудя по всему, ваши распри с персонажем [recipient.GetFirstName] сегодня не решатся…"
+ ek_perk_interaction.0100.optA:0 "Дурацкая традиция!"
+ 
+ duel_for_claim_default_interaction:0 "Поединок за титул"
+ duel_for_claim_default_interaction_desc:0 "Вызвать правителя на [single_combat_fight|El] и получить [title|El], на который у вас есть [claim|El] в случае победы"
+ duel_for_claim_default_interaction.non_lethal.tt:0 "[single_combat_fight|E] не насмерть начинается немедленно" # скопировал из ванили
+ duel_for_claim_default_interaction.actor_victory.tt:0 "Если [actor.GetFirstNameOrMeNoTooltip] [Select_CString(actor.IsPlayer, 'победите', 'победит')], [AddTextIf(EqualTo_string('you', CharYouSheHe(actor)), Concatenate(Localize('вы'), ''))|V] [Select_CString(actor.IsPlayer, 'получите', 'получит')] титул [target.GetName]. Если титул является [Concept( 'duchy', 'герцогством' )|E] или рангом выше, [actor.GetFirstNameOrMeNoTooltip] также [Select_CString(actor.IsPlayer, 'получите', 'получит')] каждое [county|El] в его границах, которым напрямую [Select_CString(recipient.IsPlayer, 'владеете', 'владеет')] [recipient.GetFirstNameOrMeNoTooltip]."
+ duel_for_claim_default_interaction.actor_defeat.tt:0 "Если [actor.GetFirstNameOrMeNoTooltip] [Select_CString(actor.IsPlayer, 'проиграете', 'проиграет')] поединок, [AddTextIf(EqualTo_string('you', CharYouSheHe(actor)), Concatenate(Localize('вы'), ''))|V] [Select_CString(actor.IsPlayer, 'потеряете', 'потеряет')] все претензии на титул [target.GetName], и на все титулы, которыми [Select_CString(recipient.IsPlayer, 'обладаете', 'обладает')] [recipient.GetFirstNameOrMeNoTooltip]."
+ duel_for_claim_default_interaction.actor_victory_game_over.tt:0 "#N Если вы проиграете поединок, игра окончится#!"  
+ duel_for_claim_default_interaction.actor_default_victory.tt:0 "[actor.GetFirstNameOrMeNoTooltip|U] [Select_CString(actor.IsPlayer, 'сохраните', 'сохранит')] претензию на титул [target.GetName]"
+ culture_parameter_unlock_duel_for_title:0 "Открывает доступ к взаимодействию «$duel_for_claim_default_interaction$», позволяющему персонажу вступить в [single_combat_duel|El] за титул, на который у него есть [claim|El]"
+ 
+ duel_for_claim_strong_interaction:0 "Поединок насмерть за титул"
+ duel_for_claim_strong_interaction.lethal.tt:0 "[single_combat_fight|E] насмерть начинается немедленно"
+ duel_for_claim_strong_interaction.actor_victory.tt:0 "Если [actor.GetFirstNameOrMeNoTooltip] [Select_CString(actor.IsPlayer, 'победите', 'победит')], [AddTextIf(EqualTo_string('you', CharYouSheHe(actor)), Concatenate(Localize('вы'), ''))|V] [Select_CString(actor.IsPlayer, 'получите', 'получит')] [target.GetName]. Если титул является [Concept( 'duchy', 'герцогством' )|E] или рангом выше, [actor.GetFirstNameOrMeNoTooltip] [Select_CString(actor.IsPlayer, 'также получите', 'также получит')] каждое [county|El] в его границах, которым напрямую [Select_CString(recipient.IsPlayer, 'владеете', 'владеет')] [recipient.GetFirstNameOrMeNoTooltip].\n[recipient.GetFirstNameOrMeNoTooltip|U] с высокой вероятностью #N [Select_CString(recipient.IsPlayer, 'умрёте', 'умрёт')]#!, а если нет, [CharYourHerHis(recipient)][Select_CString(recipient.IsPlayer, 'у', '' )] судьбу будет решать соперник."
+ duel_for_claim_strong_interaction.actor_defeat.tt:0 "Если [actor.GetFirstNameOrMeNoTooltip] [Select_CString(actor.IsPlayer, 'проиграете', 'проиграет')] поединок, [AddTextIf(EqualTo_string('you', CharYouSheHe(actor)), Concatenate(Localize('вы'), ''))|V] с высокой вероятностью #N [Select_CString(actor.IsPlayer, 'умрёте', 'умрёт')]#!, и [recipient.GetFirstNameOrMeNoTooltip] [Select_CString(recipient.IsPlayer, 'удержите', 'удержит')] титул [target.GetName]."
+ duel_for_claim_strong_interaction.actor_victory_game_over.tt:0 "#N Если вы проиграете поединок, игра окончится#!"
+ duel_for_claim_strong_interaction.actor_default_victory.tt:0 "[actor.GetFirstNameOrMeNoTooltip|U] [Select_CString(actor.IsPlayer, 'получите', 'получит')] титул [target.GetName]. Если титул является [Concept( 'duchy', 'герцогством' )|E] или рангом выше, [AddTextIf(EqualTo_string('you', CharYouSheHe(actor)), Concatenate(Localize('вы'), ''))|V] также [Select_CString(actor.IsPlayer, 'получите', 'получит')] каждое [county|El] в его границах, которым напрямую [Select_CString(recipient.IsPlayer, 'владеете', 'владеет')] [recipient.GetFirstNameOrMeNoTooltip]."
+ duel_for_claim_strong_interaction.default_game_over.tt:0 "#N Это приведёт к окончанию игры#!"
+ 
+ 
+ DUEL_FOR_CLAIM_TITLE_TIER:0 "Поединок за [target.GetTierAsName]: #P +$VALUE|0$#!"
+ DUEL_FOR_CLAIM_DE_JURE_LIEGE:0 "[target.GetNameNoTier] является [de_jure|El] владениями персонажа [recipient.GetShortUINameNoTooltip]: #P +$VALUE|0$#!"
+ DUEL_FOR_CLAIM_LAST_TITLE:0 "[recipient.GetShortUINameNoTooltip] потеряет все земли, если откажет: #P +$VALUE|0$#!"
+ DUEL_FOR_CLAIM_INFIRM:0 "[recipient.GetShortUINameNoTooltip] имеет свойство [GetTrait('infirm').GetName( GetNullCharacter )]: #P +$VALUE|0$#!"
+ DUEL_FOR_CLAIM_INCAPABLE:0 "[recipient.GetShortUINameNoTooltip] имеет свойство [GetTrait('incapable').GetName( GetNullCharacter )]: #P +$VALUE|0$#!"
+ 
+ prowess_claim_interaction:0 "Претензия на земли по праву доблести"
+ prowess_claim_interaction_desc:0 "Получить [Concept( 'claim', 'претензию' )|E] на [title|El], принадлежащий правителю [recipient.GetShortUINameNoTooltip], с помощью ваших превосходящих [Concept( 'prowess', 'доблести' )|E] и [Concept( 'prestige', 'престижа' )|E]."
+ 
+ arcana_claim_interaction:0 "Претензия на земли по праву арканы" 
+ arcana_claim_interaction_desc:0 "Получить [Concept( 'claim', 'претензию' )|E] на [title|El], принадлежащий правителю [recipient.GetShortUINameNoTooltip], с помощью ваших превосходящих [Concept( 'arcana', 'арканы' )|E] и [Concept( 'prestige', 'престижа' )|E]."
+ arcana_claim_tier_trigger:0 "Нельзя претендовать на [title|El] уровня [Concept( 'barony', 'баронства' )|E], [Concept( 'kingdom', 'королевства' )|E] или [Concept( 'empire', 'верховного королевства' )|E]"
+
+
+ disrupt_arcana_interaction:0 "Разорвать от магии"
+ disrupt_arcana_interaction_desc:0 "Персонаж [recipient.GetShortUINameNoTooltip] обрекается на [Concept('arcana', 'магическую')|E] бездарность, приближённую к свойству «[GetTrait('arcana_bad_3').GetName( GetPlayer )]»"
+ 
+ adopt_hatchling_interaction:0 "Усыновить детёныша"
+ adopt_hatchling_interaction_desc:0 "[recipient.GetShortUINameNoTooltip] будет [Select_CString(recipient.IsFemale, 'удочерена', 'усыновлена' )] в вашу [Concept( 'dynasty', 'династию' )|E]"
+ adopt_hatchling_interaction.tt:0 "[recipient.GetShortUINameNoTooltip] покидает заключение, и отныне [recipient.GetSheHe] [Select_CString(recipient.IsFemale, 'ваша', 'ваш' )] [recipient.Custom('GetDaughterSon')]"
+
+ no_obligations:0 "Обязательства отсутствуют"
+ no_obligations_tt:0 "[vassal_contract|E] изначально имеет [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_none' )]"
+ CONTRACT_NO_OBLIGATIONS_REASON:0 "Обязательства отсутствуют: $VALUE|=+0$"
+ opinion_obligations:0 "Обычные обязательства (мнение)"
+ opinion_obligations_tt:0 "[vassal_contract|E] изначально имеет [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_opinion' )]"
+ devotion_obligations:0 "Обычные обязательства (набожность)"
+ devotion_obligations_tt:0 "[vassal_contract|E] изначально имеет [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_devotion' )]"
+ devotion_obligations_requirement:0 "#V [vassal.GetTitledFirstName]#! #bold не#! является #V [GetGovernment( 'theocracy_government' ).GetAdjective|l]им#! правителем"
+ fame_obligations:0 "Обычные обязательства (репутация)"
+ fame_obligations_tt:0 "[vassal_contract|E] изначально имеет [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_fame' )]"
+ arcana_obligations:0 "Обычные обязательства (аркана)"
+ arcana_obligations_tt:0 "[vassal_contract|E] изначально имеет [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_arcana' )]"
+ arcana_obligations_requirement:0 "У вас #bold отсутствует#! [dynasty_perk|El] #V Правление волшебства#! или [tradition|El] «[GetCultureTradition('tradition_sorcerer_kings').GetName|V]»"
+ prowess_obligations:0 "Обычные обязательства (доблесть)"
+ prowess_obligations_tt:0 "[vassal_contract|E] изначально имеет [GetSubjectContractType( 'vassal_contribution_group' ).GetObligationName( 'vassal_contribution_Prowess' )]"
+ prowess_obligations_requirement:0 "Ваша [faith|El] #bold не имеет#! догмат «[GetFaithDoctrine('tenet_contempt_for_the_weak').GetBaseName]»"
+ cultural_protection:0 "Культурная защита"
+ CONTRACT_CULTURAL_PROTECTION_REASON:0 "Культурная защита: $VALUE|=+0$"
+ cultural_religious_privilege:0 "Культурная и религиозная зашита"
+ CONTRACT_CULTURAL_RELIGIOUS_PRIVILEGE_REASON:0 "Культурная и религиозная зашита: $VALUE|=+0$"
+
+ great_house_vassalage_reason_negative:0 "[recipient.GetHerHis|U] [culture|El] не хочет быть частью Великого дома: $VALUE|+=0$"
+ great_house_vassalage_reason_positive:0 "[recipient.GetHerHis|U] [culture|El] хочет присоединиться к Великому дому: $VALUE|+=0$"
+ great_house_fealty_reason_positive:0 "[recipient.GetHerHis|U] Великий дом хочет консолидировать земли вашей [Concept('culture', 'культуры')|E]: $VALUE|+=0$"
+ white_gold_tower_vassalage_reason:0 "[GetBuilding('white_gold_tower_01').GetName]: #P +10#!"
+ adamantine_tower_invite_reason:0 "[GetBuilding('crystal_tower_01').GetName]: #P +25#!"
+ EDUCATE_ME_OPTION_TRAIN_ARCANA_EFFECT:1 "Меня научат магическим искусствам, и я получу [trait|El] #V «Ученик магии»#!"
+ EDUCATE_CHILD_OPTION_TRAIN_ARCANA_EFFECT:1 "Ребёнка научат магическим искусствам, и он получит [trait|El] #V «Ученик магии»#!"
+ 
+ EDUCATE_ME_OPTION_TRAIN_ARCANA_LEARNING_FOCUS_EFFECT:1 "Я обучаюсь [Concept( 'learning', 'учёности' )|E] и получу [trait|El] #V «Ученик магии»#! более высокого уровня"
+ EDUCATE_CHILD_OPTION_TRAIN_ARCANA_LEARNING_FOCUS_EFFECT:1 "Обучается [Concept( 'learning', 'учёности' )|E] и получит [trait|El] #V «Ученик магии»#! более высокого уровня"
+ EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_1:0 "Опекун #N не#! обучит ребёнка магическим искусствам.\nТак как культура ребёнка имеет [Concept( 'tradition', 'традицию' )|E], делающую доступным магическое образование, или [dynasty|El], к которой он принадлежит, имеет [dynasty_perk|El] #V $magicka_legacy_3_name$#!, вам нужно найти опекуна со [Concept( 'trait', 'свойством' )|E] #V $trait_education_magic$#! или #V $trait_arcana_good$#!"
+ EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_2:0 "Опекун #N не#! обучит ребёнка магическим искусствам.\nТак как культура ребёнка имеет [Concept( 'innovation', 'инновацию' )|E] #V $innovation_schools_of_magic$#!, вам нужно найти опекуна со [Concept( 'trait', 'свойством' )|E] #V $trait_education_magic$#! или #V $trait_arcana_good$#!"
+ EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_3:0 "Опекун #N не#! обучит ребёнка магическим искусствам.\nТак как культура ребёнка имеет [Concept( 'innovation', 'инновацию' )|E] #V $innovation_magical_studies$#! или #V $innovation_lunar_mysteries$#!, вам нужно найти опекуна со [Concept( 'trait', 'свойством' )|E] #V $trait_arcana_good$#!"
+ EDUCATE_CHILD_OPTION_NOT_TRAIN_ARCANA_EFFECT_4:0 "Опекун #N не#! обучит ребёнка магическим искусствам.\nТак как культура ребёнка не имеет [Concept( 'innovation', 'инновации' )|E] #V $innovation_magical_studies$#!, #V $innovation_lunar_mysteries$#! или #V $innovation_schools_of_magic$#!, не имеет [Concept( 'tradition', 'традицию' )|E], делающую доступным магическое образование, и [dynasty|El], к которой он принадлежит, не имеет [dynasty_perk|El] #V $magicka_legacy_3_name$#!, обучение магии #N невозможно#!."
+
+
+ consume_interaction:0 "Поглотить"
+ consume_interaction_desc:0 "Поглотить персонажа [recipient.GetShortUINameNoTooltip], чтобы попытаться повысить уровень [Concept( 'tsaescence', 'цаэссенции' )|E] и, возможно, изменить [skills|El] и [personality_traits|El]!"
+ consume_interaction_lifespan_trigger:0 "You have a [trait|E] that increases your [gc_lifespan|E]. This cannot stack with [tsaescence|E] without breaking age calculations."
+
+ thralldom_interaction:0 "Сделать трэллом"
+ thralldom_interaction_desc:0 "[recipient.GetShortUINameNoTooltip] погибнет от ваших рук и восстанет вам на службу."
+ get_undead_thrall:0 "Вы превратите труп персонажа [recipient.GetShortUINameNoTooltip] в безмозглого, но верного служителя-[GetTrait('undead_character').GetName(GetNullCharacter)|l]."
+
+ steal_lifeforce_interaction:0 "Похитить жизненную силу"
+ steal_lifeforce_interaction_desc:0 "Вы украдёте жизненные силу у персонажа [recipient.GetShortUINameNoTooltip], чтобы восстановить своё разлагающееся тело."
+ steal_lifeforce_interaction_no_decay:0 "Ваше тело не отмечено разложением."
+ steal_lifeforce_interaction_too_low_health:0 "У персонажа [recipient.GetShortUINameNoTooltip] слишком слабое [Concept('health', 'здоровье')|E] — похитить жизненную силу не получится!"
+ steal_lifeforce_interaction_effect_tooltip:0 "Обратить вспять разложение мёртвого тела, используя [health|El] персонажа [recipient.GetShortUINameNoTooltip]"
+
+ skull_corruption_interaction:0 "Использовать Череп Порчи"
+ skull_corruption_desc:0 "Применить Череп Порчи на персонаже [recipient.GetShortUINameNoTooltip] и заставить [recipient.GetHerHim|l] сразиться с двойником!"
+
+ skull_corrupted_message:0 "Череп Порчи"
+ skull_corrupted_effect:0 "Двойник, отправленный персонажем [actor.GetFirstNameNoTooltip], атакует персонажа [recipient.GetShortUINameNoTooltip]!"
+
+ skull_corruptor_message:0 "Череп Порчи"
+ skull_corruptor_effect:0 "Двойник атакует персонажа [recipient.GetShortUINameNoTooltip]!"
+
+ clone_won:0 "Двойник побеждает вас!"
+ clone_won2:0 "Двойник побеждает персонажа [recipient.GetShortUINameNoTooltip]!"
+ clone_lost:0 "Двойник проигрывает бой!"
+ clone_lost2:0 "[recipient.GetShortUINameNoTooltip] одолевает двойника!"
+
+ wabbajack_interaction:0 "Использовать Ваббаджек"
+ wabbajack_desc:0 "Использовать Ваббаджек на персонаже [recipient.GetShortUINameNoTooltip], чтобы сделать [recipient.GetHerHis|l] жизнь интереснее!"
+ wabbajack_effect:0 "[recipient.GetShortUINameNoTooltip] может превратиться в какое-нибудь занимательное существо и даже во вкусный рулетик… Или [recipient.GetSheHe|l] может пострадать. Или исцелиться. Может произойти практически что угодно, в общем."
+ wabbajacked_message:0 "[Select_CString(recipientIsFemale, 'Ваббаджекнута', 'Ваббаджекнут')]!"   # Скидадл-скадудл, ты теперь смугл
+ wabbajack_dremorized:0 "[recipient.GetShortUINameNoTooltip] [Select_CString(recipientIsFemale, 'превратилась', 'превратился')] в дремору!"
+ wabbajack_undeadified:0 "[recipient.GetShortUINameNoTooltip] [Select_CString(recipientIsFemale, 'превратилась', 'превратился')] в нежить!"
+ wabbajack_lichified:0 "[recipient.GetShortUINameNoTooltip] [Select_CString(recipientIsFemale, 'превратилась', 'превратился')] в лича!"
+ wabbajack_goblinized:0 "[recipient.GetShortUINameNoTooltip] [Select_CString(recipientIsFemale, 'превратилась', 'превратился')] в гоблина!"
+ wabbajack_giantified:0 "[recipient.GetShortUINameNoTooltip] [Select_CString(recipientIsFemale, 'превратилась', 'превратился')] в великана!"
+
+ send_mage_to_wander:0 "Отправить мага странствовать"
+ send_mage_to_wander_interaction_desc:0 "[recipient.GetFirstName] смыслит в магических науках, но не имеет никаких практических навыков. Пусть [recipient.GetSheHe|l] странствует по миру и совершенствует себя!"
+ send_mage_to_wander_five_years_tt:0 "[recipient.GetShortUINameNoTooltip] отправляется [Concept( 'wanderer', 'странствовать' )|E] на протяжении 5 лет, дабы улучшить свои [Concept( 'magic', 'магические' )|E] навыки."
+ send_mage_to_wander_return_title:0 "Странник возвращается"
+ send_mage_to_wander_return_desc:0 "[recipient.GetFullName] [Select_CString(recipientIsFemale, 'вернулась', 'вернулся')] к вашему двору после странствий, целью которых было улучшить [recipient.GetHerHis|l] [Concept( 'magic', 'магические' )|E] навыки."
+ sent_to_wander_already:0 "Этого персонажа однажды уже отправляли странствовать"
+
+ already_tried_to_interfere:0 "Этот персонаж недавно уже пытался вмешаться."
+
+ send_knight_to_wander:0 "Отправить рыцаря странствовать"
+ send_knight_to_wander_interaction_desc:0 "[recipient.GetFirstName] — начинающий рыцарь, который ещё не отправлялся ни на какую миссию. Пусть [recipient.GetSheHe|l] странствует по миру и рыщет славу!"
+ send_knight_to_wander_five_years_tt:0 "[recipient.GetShortUINameNoTooltip] отправляется [Concept( 'wanderer', 'странствовать' )|E] на протяжении 5 лет, дабы улучшить свои [Concept( 'martial', 'военные' )|E] навыки."
+ send_knight_to_wander_return_title:0 "Путник возвращается"
+ send_knight_to_wander_return_desc:0 "[recipient.GetFullName] [Select_CString(recipientIsFemale, 'вернулась', 'вернулся')] к вашему двору после странствий с целью поиска славы и улучшения своих [Concept( 'martial', 'военных' )|E] навыков."
+ innovation_knightly_orders_wander:0 "Молодые придворные этой [Concept( 'culture', 'культуры' )|E] со [Concept( 'trait', 'свойством' )|E] «Основы рыцарства» могут быть отправлены в [Concept( 'wandererers', 'странствия' )|E], дабы сыскать славу и улучшить свои навыки."
+ ask_grok_is_this_real: "Грок, это правда?"
+ ek_ask_grok_is_this_real_interaxion_desc: "Вы спросите Грока, правда ли это."
+ ek_ask_grok_is_this_real_tooltip: "Грок, читая множество вопросов и ответов, научился словам из вашего языка и, убедительно складывая их в предложения спонтанным образом, может сказать вам, правда ли это."
+
+
+### EK secrets
+ CHARACTER_IS_A_VAMPIRE:0 "[CHARACTER.GetShortUIName|U] — [GetTrait('vampire_character').GetName( CHARACTER.Self )]"
+ IS_A_VAMPIRE:0 "[GetTrait('vampire_character').GetName( GetNullCharacter )]"
+ IS_NOT_A_VAMPIRE:0 "#bold Не#! [GetTrait('vampire_character').GetName( CHARACTER.Self )]"
+
+ CHARACTER_IS_A_LYCAN:0 "[CHARACTER.GetShortUIName|U] — [GetTrait('lycan_character').GetName( CHARACTER.Self )]"
+ IS_A_LYCAN:0 "[GetTrait('lycan_character').GetName( GetNullCharacter )]"
+ IS_NOT_A_LYCAN:0 "#bold Не#! [GetTrait('lycan_character').GetName( CHARACTER.Self )]"
+
+ CHARACTER_IS_A_NECROMANCER:0 "[CHARACTER.GetShortUIName|U] — [GetTrait('necromancer').GetName( CHARACTER.Self )]"
+ IS_A_NECROMANCER:0 "[GetTrait('necromancer').GetName( GetNullCharacter )]"
+ IS_NOT_A_NECROMANCER:0 "#bold Не#! [GetTrait('necromancer').GetName( CHARACTER.Self )]"
+
+ I_CANNOT_BLACKMAIL_ANOTHER_VAMPIRE:1 "Целью шантажа из-за вампиризма не может быть другой [GetTrait('vampire_character').GetName( CHARACTER.Self )]"
+ I_CANNOT_BLACKMAIL_ANOTHER_LYCAN:1 "Целью шантажа из-за оборотничества не может быть другой [GetTrait('lycan_character').GetName( CHARACTER.Self )]"
+ I_CANNOT_BLACKMAIL_ANOTHER_NECROMANCER:1 "Целью шантажа из-за занятий некромантией не может быть другой [GetTrait('necromancer').GetName( CHARACTER.Self )]"
+
+ CHARACTER_INTERACTION_VAMP_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "Владетель графства [GetTitleByKey('c_bastion').GetNameNoTier] считает, что вампиризм — [GetFaithDoctrine('doctrine_vampirism_crime').GetBaseName]"
+
+ CHARACTER_INTERACTION_LYCAN_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "Владетель графства [GetTitleByKey('c_bastion').GetNameNoTier] считает, что ликантропия — [GetFaithDoctrine('doctrine_lycanthropy_crime').GetBaseName]"
+
+ CHARACTER_INTERACTION_NECROMANCER_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "Владетель графства [GetTitleByKey('c_bastion').GetNameNoTier] считает, что некромантия — [GetFaithDoctrine('doctrine_necromancy_crime').GetBaseName]"
+
+ BLACKMAIL_NOTIFICATION_SECRET_VAMPIRE:0 "\nУ меня есть свидетельства, что вы пьёте кровь невинных по ночам!"
+ BLACKMAIL_NOTIFICATION_SECRET_LYCAN:0 "\nУ меня есть доказательство того, что под полной луной вы обращаетесь в зверя!"
+ BLACKMAIL_NOTIFICATION_SECRET_NECROMANCER:0 "\nУ меня есть свидетельства, что вы оскверняете жизнь и смерть!"
+
+ # Holding Interactions
+ destroy_hist_holding_interaction:0 "Уничтожить Хист"
+ destroy_hist_holding_interaction_desc:0 "Разрушить все [buildings|El] в этом [Concept( 'holding', 'владении' )|E] и превратить его в храм"
+ destroy_hist_holding_interaction_notification:0 "Хист уничтожен"
+
+ #Co-emperor (replaces vanilla)
+ valid_co_emperor_powerful_family_trigger: "Только [Concept('house_heads','главы')|E] [Concept('powerful_families','могущественных семейств')|E] могут быть [Concept('co_emperors','императорами-соправителями')|E]"
+
+ #weak_rulers_contest_rule version of house head challenge
+ ek_challenge_house_head_strong_interaction: "Бросить вызов главе дома"
+ ek_challenge_house_head_strong_interaction.actor_default_victory.tt: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'cтанете','станет')] [Concept('house_head', 'главой дома')|E] [actor.GetHouse.GetBaseName]"
+ ek_challenge_house_head_weak_interaction: "Бросить вызов главе дома"

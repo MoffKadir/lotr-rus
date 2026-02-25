@@ -1,0 +1,21 @@
+﻿l_russian:
+# EK EDIT: to avoid John "the Imperial Cult" Cena
+ nick_the_faith:0 "[CHARACTER.GetFaith.GetAdherentName]"
+ nick_the_faith_desc:2 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] — ревностный [CHARACTER.GetFaith.GetAdherentName|l] не на своём месте, диковина в глазах окружающих."
+ nick_the_chronicler:0 "[Select_CString(CHARACTER.IsFemale, 'Хронистка', 'Хронист' )]"
+ nick_the_chronicler_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'обожаете', 'обожает' ))] переносить историю на бумагу, орудуя как фактами, так и вымыслом. Нам остаётся только надеяться, что [Select_CString( CHARACTER.IsLocalPlayer, 'ваши', Select_CString(CHARACTER.IsFemale, 'её', 'его' ))] «хроники» не содержат #EMP мифов, домыслов, предвзятости или пропаганды#!!"
+ 
+ nick_the_slayer_of_the_snake_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString(CHARACTER.IsFemale, 'прославилась', 'прославился')] и среди орма, и среди кантемирских велотийцев за убийство маорхана Зайната, известного как Змей Арнезии."
+
+ nick_the_magnificent_desc:1 "О [Select_CString( CHARACTER.IsLocalPlayer, 'ваших', CHARACTER.GetHerHis)] подвигах рассказывают от Хай-Рока до Чернотопья."
+ nick_the_viking: "Налётчик"
+ nick_the_child_killer_desc:1 "[CharYouSheHe(CHARACTER)|U] [Select_CString(CHARACTER.IsLocalPlayer, 'спутали', Select_CString(CHARACTER.IsFemale, 'спутала', 'спутал' ))] мудрость с жестокостью"
+ 
+ # these are edited to make their god reference make use of HighGodName instead, because HighGodName won't get fucked by our custom Daedra names
+ nick_the_theologian_desc:0 "Что есть жизнь, если не исследование истинной природы [CHARACTER.GetFaith.HighGodNamePossessive]?"
+ nick_the_lisp_and_lame_desc:1 "Не удовлетворившись одной лишь кривой походкой, [CHARACTER.GetFaith.HighGodName] награждает [Select_CString( CHARACTER.IsLocalPlayer, 'вас', 'персонажа')] [Select_CString( CHARACTER.IsLocalPlayer, '', CHARACTER.GetShortUINameNoTooltipNoFormat)] ещё и ужасной шепелявостью."
+ nick_health_god_mercy:0 "Милосердие [CHARACTER.GetFaith.HighGodNamePossessive|U]"
+ 
+ # I just like ours better
+ nick_the_trickster_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] — мастер обманывать и вводить в заблуждение. [CharYouSheHe(CHARACTER)|U] [Select_CString( CHARACTER.IsLocalPlayer, 'любите', 'любит' )] разыгрывать трюки и создавать неразбериху, не заботясь о последствиях."
+ 
