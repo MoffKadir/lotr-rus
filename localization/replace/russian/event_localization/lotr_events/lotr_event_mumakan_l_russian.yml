@@ -1,6 +1,25 @@
 ﻿l_russian:
  ## Koronande War Events ##
-
+ ## Effect Localization
+ 
+ fast_siege: "Падение Коронандэ"
+ ataraka_extra_siege_modifier: "Фокус на осаде"
+ ataraka_fight_to_the_end_defensive: "Фокус на обороне"
+ ataraka_fight_to_the_end_fort: "Местные укрепления"
+ ataraka_fight_to_the_end_offensive: "Фокус на наступлении"
+ koronande_hope: "Повышение боевого духа"
+ seized_mumakan_throne: "Хаос в Мумакане"
+ koronande_rebuilding: "Фокус на восстановлении"
+ koronande_trade_recovery: "Фокус на торговле"
+ koronande_fortification: "Укрепление фортификаций"
+ ataraka_poisoned_ground: "Отравление колодцев"
+ koronande_counterattack: "Последняя контратака"
+ koronande_patient_defense: "Последний рубеж обороны"
+ promises_of_plunder: "Обещание добычи"
+ general_siege_strategy: "Фокус на осаде"
+ general_aggressive_raids: "Агрессивные налёты"
+ iron_discipline: "Железная дисциплина"
+ general_loose_discipline: "Слабая дисциплина"
 
  ### Emperor Sandamal - Our Path Forward (Victory) ###
 
@@ -130,10 +149,10 @@
  mumakan.0044.a: "We must build an army worthy of the republic!" 
  mumakan.0044.b: "No, we must persue Peace and Reconciliation! Pen a letter to Sandamal!" 
 
- mumakan.0045.t: "The Final Battle"
- mumakan.0045.desc: "The armies clash once more before the walls of Korlan and the fate of the republic hangs on a single day."
- mumakan.0045.a: "Lead the charge personally - the forefathers demand nothing less."
- mumakan.0045.b: "Let Aamedi handle it - his schemes have served us this far."
+ mumakan.0045.t: "Последняя битва"
+ mumakan.0045.desc: "Империя вернулась, чтобы покончить с нашей республикой раз и навсегда, мы сделали всё, что могли, и мы готовы."
+ mumakan.0045.a: "Республика нуждается в своих сынах!"
+ mumakan.0045.b: "Наши боевые мумаки отразят их натиск, они не пройдут!"
 
 
  ## Ataraka II - War Loss ##
@@ -290,11 +309,11 @@
  mumakan.0117.t: "Самый длинный день в истории Корлана"
  mumakan.0117.desc: "Город уже почти пал. У меня сжалось сердце, когда я увидел, как жемчужина морей, жемчужина республики, была сожжена и разрушена таким образом.\n\nВ конце концов, Аамеди привел меня к месту, которое он искал, - к скрытой нише, выходящей в залив, где стояла небольшая лодка, уже в то время спешно загруженная припасами.\n\n«Это старый запасной вариант», - тихо сказал он, - «на тот день, когда совету, возможно, пришлось бы спасаться бегством. Предшественник моего предшественника приказал построить его... То, что я доживу до того времени, когда им воспользуются, - горькая чаша».\n\nМы поспешно загрузили лодку всем, что она могла выдержать, перед отплытием, едва избежав вторжения вражеских войск. Наблюдая за горящим городом, я мог думать только о..."
  # with glory and brave deeds
- mumakan.0117.a: "доблести защитников."
+ mumakan.0117.a: "Доблести защитников."
  # with the final respect of your people
- mumakan.0117.b: "скорби по погибшим."
+ mumakan.0117.b: "Скорби по погибшим."
  # knowledge of war cynical
- mumakan.0117.c: "том, что война ещё не окончена."
+ mumakan.0117.c: "Том, что война ещё не окончена."
 
  # mumakan.0120 A Toast to the end of the republic
  # Essential scene: Aamedi gives a thorough analysis of the situation.
@@ -313,6 +332,7 @@
  # Evacuating things to the reserve
  mumakan.0120.c: "Этот бой не состоится ни сегодня, ни завтра. Но, возможно, когда-нибудь."
  mumakan.0120.c.tt: "Вы получите #P +1#! ресурсов. Это укрепит вас в изгнании, если вы потерпите поражение."
+
 
 
  ### War Perspective Events (Ataraka) ###
@@ -334,8 +354,8 @@
  mumakan.0131.c.tt: "Вы получите #P +1#! ресурсов."
 
  # mumakan.0132 8 month mark perspective event
- mumakan.0132.t: "Пережив 8 месяцев войны, мы больше не считаем своё выживание чистой случайностью."
- mumakan.0132.desc: "TODO"
+ mumakan.0132.t: "Отчаянная борьба"
+ mumakan.0132.desc: "Пережив 8 месяцев войны, мы больше не считаем своё выживание чистой случайностью."
  # spend resources to continue war
  mumakan.0132.a: "spend resources to continue war"
  mumakan.0132.a.tt: "Вы тратите #N -1#! ресурсов."
@@ -343,22 +363,22 @@
  mumakan.0132.b: "spend money to continue war"
  mumakan.0132.b.tt: "200 золотых покроют расходы"
 
- # mumakan.0133 12 month mark perspective event
- mumakan.0133.t: "12 month mark perspective event"
- mumakan.0133.desc: "TODO"
- mumakan.0133.a: "TODO"
- mumakan.0133.a.tt: "TODO"
- mumakan.0133.b: "TODO"
- mumakan.0133.b.tt: "TODO"
+ # mumakan.0133 15 month mark perspective event
+ mumakan.0133.t: "Годовщина"
+ mumakan.0133.desc: "Я перемещаюсь из деревни в лагерь, из деревни в деревню, пробираясь через густые джунгли, чтобы избежать захвата, координировать оборону, вдохновлять на сопротивление. Но в такие дни, как этот, именно я испытываю потребность в вере.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'видела', 'видел' )] ужасы, которые никто не должен видеть. Я [Select_CString(ROOT.Char.IsFemale, 'видела', 'видел' )] неописуемое отчаяние от нищеты и разрушений. Но что ждёт меня сейчас?..\n\nСегодня влажный день. Жаркий день. Плотный спёртый воздух наполняет легкие и горло. Он смешивается с вонью горелой рвоты. Он душит меня. Он заставляет меня пошатываться, как ничто другое на этой проклятой войне. За хребтом раскинулась долина, усеянная белыми костями, и голодные собаки. Они обгладывают останки, разрывают кости на части, человеческие кости, человеческие останки. Мужчины, женщины, дети - проходимцы, мошенники и благородные...\n\n#N теперь это все пища для собак.#!"
+ mumakan.0133.a: "Я попытаюсь выстоять..."
+ mumakan.0133.a.tt: "Но ваш желудок пуст."
+ mumakan.0133.b: "Я кашляю снова, и снова, и снова..."
+ mumakan.0133.b.tt: "Но всё ещё не можете вздохнуть."
  # cynical option (requires global_var:ataraka_cynicism = 3)
- mumakan.0133.c: "become aamedishi"
- mumakan.0133.c.tt: "become aamedishi"
+ mumakan.0133.c: "Мы ничего не можем сделать для мёртвых."
+ mumakan.0133.c.tt: "И вы вообще ничего не чувствуете."
 
- mumakan.0134.t: "25 Month Mark"
- mumakan.0134.desc: "A tale of woe. a horrible sigt, makes ataraka think - is the fight really worth it? Aamedi will tell him to not let it get to him, but honestly..."
- mumakan.0134.a: "Commit our reserves - throw everything into the fight, lest the those who died would have died for naught."
- mumakan.0134.a.tt: "Вы тратите #N -1#! ресурсов, чтобы получить #P 100#! товаров для обмена."
- mumakan.0134.b: "We must take acount of what remains - this war may already be lost."
+ mumakan.0134.t: "Героическая оборона"
+ mumakan.0134.desc: "Я не знаю как, но мы продержались два года против врага, который превосходил нас числом в десять раз. Вокруг лагеря, в котором мы живём, меня окружают сыны республики, они избиты и перебинтованы, их копья обветшали, а щиты в трещинах, но они улыбаются. Хотя война продолжается уже два года, они всё ещё сражаются, как и я. Аамеди хлопает меня по плечу и приглашает отойти в сторонку.\n\n«У этих людей есть такая надежда, но я боюсь, что она может продлиться недолго», - говорит Аамеди.\n\nОн наклоняется ко мне, понижая голос. «Вам следует развивать этот источник морального духа, пока вы ещё можете это сделать. Человек, у которого есть надежда, полезен и послушен, хотя это может стоить нам эффективности при определённых обстоятельствах».\n\nАмеди замолкает, позволяя мне обдумать варианты. «Обеспечьте меня всем необходимым, и я уверяю вас, что армии республики будут сражаться в два раза упорнее, чем раньше»."
+ mumakan.0134.a: "Я обеспечу вас всем необходимым."
+ mumakan.0134.a.tt: "Вы потратите #N -1#! ресурсов и #N 100#! товаров для обмена"
+ mumakan.0134.b: "Нет, мы должны расставить приоритеты."
  mumakan.0134.b.tt: "Вы получите #P +1#! ресурсов."
 
  mumakan.0135.t: "38 Month Mark"
@@ -373,7 +393,7 @@
  mumakan.0136.t: "50 Month Mark"
  mumakan.0136.desc: "Over four years of siege warfare have left Ataraka hollowed out, and Aamedi suggests methods that would shame the forefathers."
  mumakan.0136.a: "Poison the wells behind our retreat - let them drink death - even if we must do so as well."
- mumakan.0136.a.tt: "Вы получите #P +2#! ресурсов!"
+ mumakan.0136.a.tt: "Вы получите #P +2#! ресурсов за #N лимит снабжения и повышение истощения#!"
  mumakan.0136.b: "Spend the last of the treasury to arm our remaining troops."
  mumakan.0136.b.tt: "Вы потратите #N -1#! ресурсов, чтобы получить #P 100#! товаров для обмена."
  mumakan.0136.c: "Save what we can and prepare to flee - there is no shame in living."
