@@ -1,7 +1,7 @@
 ﻿l_russian:
 
- ### Crafting Materials ### 
- #Wootz/Bulat/Damascus steel makes no sense in context, replaced with Gondorian, Dwarven or Ñoldorin steel 
+ ### Crafting Materials ###
+ #Wootz/Bulat/Damascus steel makes no sense in context, replaced with Gondorian, Dwarven or Ñoldorin steel
  metal_dwarven_steel: "гномьей стали"
  metal_gondorian_steel: "гондорской стали"
  metal_noldorin_steel: "нолдорской стали"
@@ -29,7 +29,7 @@
  feature_decoration_material_wire_mithril: "$metal_mithril$"
  feature_decoration_material_embroidery_mithril_thread: "$metal_mithril$"
 
- #Mallorn and Oiolarë woods 
+ #Mallorn and Oiolarë woods
  wood_mallorn: "маллорна"
  wood_oiolaire: "ойолайрэ"
 
@@ -56,35 +56,35 @@
 
  feature_bow_string_elven_hair: "$elven_hair$"
 
- #Elven gemstones 
- gem_elven: "эльфийской драгоценностью"
- gem_elven_plural: "эльфийскими драгоценностями"
+ #Elven gemstones
+ gem_elven: "эльфийским самоцветом"
+ gem_elven_plural: "эльфийскими самоцветами"
 
  feature_decoration_material_gem_elven: "$gem_elven$"
 
- #Kine horn 
+ #Kine horn
  hsb_kine_horn: "рога быка Арава"
 
  feature_decoration_material_inlay_HSB_kine_horn: "$hsb_kine_horn$"
  feature_box_material_kine_horn: "$hsb_kine_horn$"
  feature_goblet_material_kine_horn: "$hsb_kine_horn$"
 
- #Runes of Power 
+ #Runes of Power
  feature_decoration_pattern_runes: "руны силы"
 
- ### Armour decoration 
+ ### Armour decoration
 
- feature_artifact_armor_descriptor_mithril_inlaid: "Инкрустированный настоящим серебром"
+ feature_artifact_armor_descriptor_mithril_inlaid: "Инкрустированный истинным серебром"
  feature_artifact_armor_descriptor_armor_mithril_decorated: "Украшенный митрилем"
 
- ### Brooch features 
+ ### Brooch features
 
  feature_brooch_centerpiece_tree: "изображением Белого древа из [Artifact.GetFeatureText( 'decoration_material_wire' )]"
  feature_brooch_adornment_tengwar: "в окружении кольца из [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('adornment_runed_ring_metal'))] с выгравированными [Concept( 'tengwar', 'тенгварскими' )|E] рунами"
  feature_brooch_adornment_cirth: "в окружении кольца из [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('adornment_runed_ring_metal'))] с выгравированными рунами [Concept( 'cirth', 'кирта' )|E]"
 
  ### Crafting tools
- 
+
  artifact_crafting_tools_name: "Набор инструментов $artifact_name_prefix$"
  artifact_crafting_tools_description: "Набор инструментов [SCOPE.Custom('ArtifactQuality')]. [newly_created_artifact.Custom('ArtifactCraftingToolsHeadDescription')] [newly_created_artifact.Custom('ArtifactCraftingToolsShaftDescription')][newly_created_artifact.Custom('ArtifactCraftingToolsHandleDescription')]"
  artifact_crafting_tools_head_undecorated: "Наконечник молота из [ROOT.Artifact.GetFeatureText( 'head_metal' )] установлен на"
@@ -101,28 +101,28 @@
  #LOTR books
 
  feature_book_title_learning_ainulindale: "$artifact_name_prefix_artifact_scope$ [ainulindale|E]"
- feature_book_topic_learning_ainulindale: "[Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')|U] копия [ainulindale|E] с комментариями, демонстрирующая отличное понимание исходного материала и создания [Concept( 'ardaconcept', 'Арды' )|E] [eru|E] и [ainurgods|E]."
+ feature_book_topic_learning_ainulindale: "[Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')|U] копия «[ainulindale|E]» с комментариями, демонстрирующая отличное понимание исходного материала и создания [Concept( 'ardaconcept', 'Арды' )|E] [eru|E] и [ainurgods|El]."
  feature_book_title_learning_leithian: "$artifact_name_prefix_artifact_scope$ Лэ о Лейтиан"
- feature_book_topic_learning_leithian: "[Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')|U] копия [Glossary('Лэ о Лейтиан','leithian_gloss')] с комментариями, демонстрирующая отличное понимание исходного материала и великих деяний Берена и Лутиэн в их стремлении вырвать [silmaril|El] из короны [Concept( 'morgothcharacter', 'Моргота' )|E]."
+ feature_book_topic_learning_leithian: "[Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')|U] копия «[Glossary('Лэ о Лейтиан','leithian_gloss')]» с комментариями, демонстрирующая отличное понимание исходного материала и великих деяний Берена и Лутиэн в их стремлении вырвать [silmaril|El] из короны [Concept( 'morgothcharacter', 'Моргота' )|E]."
  feature_book_title_learning_narn: "$artifact_name_prefix_artifact_scope$ [Glossary('Нарн и Хин Хурин','narn_i_chin_hurin_gloss')]"
  feature_book_topic_learning_narn: "[Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')|U] копия сказания о Детях Хурина с комментариями, демонстрирующая отличное понимание исходного материала и великого несчастья, постигшего Хурина и его род, когда он бросил вызов [Concept( 'morgothcharacter', 'Морготу' )|E]."
  feature_book_title_learning_gondolin: "$artifact_name_prefix_artifact_scope$ Падение Гондолина"
- feature_book_topic_learning_gondolin: "[Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')|U] копия Падения [Concept('gondolin', 'Гондолина')|E] с комментариями, демонстрирующая отличное понимание исходного материала и великих деяний Туора и [noldorelves|El] Гондолина."
+ feature_book_topic_learning_gondolin: "[Artifact.GetOwner.Custom('ArtifactAdverbBookContentQuality')|U] копия «Падения [Concept('gondolin', 'Гондолина')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и великих деяний Туора и [noldorelves|El] Гондолина."
 
- #Explore the Histories books 
+ #Explore the Histories books
  feature_book_title_sundering_elves: "Разделение эльфов"
- feature_book_topic_sundering_elves: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Разделения эльфов» с комментариями, демонстрирующая отличное понимание исходного материала и судьбы различных [Concept( 'elves', 'эльфийских' )|E] племён в [Concept( 'greatjourney', 'Великом Походе' )|E]"
+ feature_book_topic_sundering_elves: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Разделения эльфов» с комментариями, демонстрирующая отличное понимание исходного материала и судьбы различных [Concept( 'elves', 'эльфийских' )|E] племён в [Concept( 'greatjourney', 'Великом походе' )|E]"
  feature_book_title_disquiet_noldor: "Феанор и беспокойство нолдор"
- feature_book_topic_disquiet_noldor: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «[Concept('feanor', 'Феанора')|E] и беспокойства [Concept('noldorelves', 'нолдор')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и событий, приведших к [Concept('exileofthenoldor', 'Изгнанию')|E] в [beleriand|E]"
- feature_book_title_kinslaying: "Первая резня и Изгнание нолдор"
- feature_book_topic_kinslaying: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «[Concept('firstkinslaying', 'Первой резни')|E] и [Concept('exileofthenoldor', 'Изгнания нолдор')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и великих и ужасных деяний [Concept( 'feanor', 'Феанора' )|E]"
+ feature_book_topic_disquiet_noldor: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «[Concept('feanor', 'Феанора')|E] и беспокойства [Concept('noldorelves', 'нолдор')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и событий, приведших к [Concept('exileofthenoldor', 'изгнанию')|E] в [beleriand|E]"
+ feature_book_title_kinslaying: "Первая резня и изгнание нолдор"
+ feature_book_topic_kinslaying: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «[Concept('firstkinslaying', 'Первой резни')|E] и [Concept('exileofthenoldor', 'изгнания нолдор')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и великих и ужасных деяний [Concept( 'feanor', 'Феанора' )|E]"
  feature_book_title_angband: "Осада Ангбанда и королевства Белерианда"
  feature_book_topic_angband: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Осады [Concept('angband', 'Ангбанда')|E] и королевств [Concept('beleriand', 'Белерианда')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и противоборствующих сил"
  feature_book_title_luthien: "О Берене и Лутиэн"
  feature_book_topic_luthien: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «О Берене и Лутиэн» с комментариями, демонстрирующая отличное понимание исходного материала и величайшей истории любви, записанной в истории"
  feature_book_title_hurin: "Дети Хурина"
  feature_book_topic_hurin: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Детей Хурина» с комментариями, демонстрирующая отличное понимание исходного материала и трагической судьбы величайших врагов [Concept( 'morgothcharacter', 'Моргота' )|E] среди [Concept( 'conceptracemen', 'людей' )|E]"
- feature_book_title_fall_gondolin: "О Туоре и Падении Гондолина"
+ feature_book_title_fall_gondolin: "О Туоре и падении Гондолина"
  feature_book_topic_fall_gondolin: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Падения [Concept('gondolin', 'Гондолина')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и великой истории любви, которая оживила последнюю надежду [Concept( 'elves', 'эльфов' )|E] и [Concept( 'conceptracemen', 'людей' )|E]"
  feature_book_title_numenor: "Затерянный остров Нуменор"
  feature_book_topic_numenor: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Затерянного острова [numenor|E]» с комментариями, демонстрирующая отличное понимание исходного материала и географии [Concept( 'numenor', 'Нуменора' )|E]"
@@ -131,7 +131,7 @@
  feature_book_title_akallabeth: "Акаллабет"
  feature_book_topic_akallabeth: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «[akallabeth|E]» с комментариями, демонстрирующая отличное понимание исходного материала и событий, приведших к падению величайшего из королевств [Concept( 'conceptracemen', 'людей' )|E]"
  feature_book_title_last_alliance: "Последний союз"
- feature_book_topic_last_alliance: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «[Concept('warlastallianceshort', 'Последнего союза')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и последней битвы против сил [Concept( 'sauronthedarklordcharacter', 'Тёмного Властелина' )|E]"
+ feature_book_topic_last_alliance: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «[Concept('warlastallianceshort', 'Последнего союза')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и последней битвы против сил [Concept( 'sauronthedarklordcharacter', 'Тёмного властелина' )|E]"
  feature_book_title_bellakar: "Основание Беллакара"
  feature_book_topic_bellakar: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Основания [Concept('bellakar', 'Беллакара')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и ранней истории [Concept( 'bellakar', 'Беллакара' )|E]"
  feature_book_title_storm_king: "Повелитель бурь и Ард Безмолвный"
@@ -142,8 +142,8 @@
  feature_book_topic_eorl: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «О [eothed|El] и клятве Эорла» с комментариями, демонстрирующая отличное понимание исходного материала и истории о том, как [Concept('northmen', 'северяне')|E] пришли на помощь [Concept( 'gondorians', 'гондорцам' )|E] против угрозы истерлингов"
  feature_book_title_beruthiel: "О Нархузире и Берутиэль"
  feature_book_topic_beruthiel: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «О Нархузире и Берутиэль» с комментариями, демонстрирующая отличное понимание исходного материала и причин, которые привели к окончательному провалу сближения между [Concept( 'gondor', 'Гондором' )|E] и [Concept( 'bellakar', 'Беллакаром' )|E]"
- feature_book_title_tedjin: "Завоевание и захват Беллакара теджинами"
- feature_book_topic_tedjin: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Завоевания и захвата Беллакара теджинами» с комментариями, демонстрирующая отличное понимание исходного материала и самых мрачных времён истории [Concept( 'bellakar', 'Беллакара' )|E]"
+ feature_book_title_tedjin: "Завоевание и захват Беллакара теджин"
+ feature_book_topic_tedjin: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Завоевания и захвата Беллакара теджин» с комментариями, демонстрирующая отличное понимание исходного материала и самых мрачных времён истории [Concept( 'bellakar', 'Беллакара' )|E]"
  feature_book_title_kinstrife: "Распря Родичей"
  feature_book_topic_kinstrife: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «[Concept('kinstrife', 'Распри Родичей')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и кровавой гражданской войны, которая разорвала [gondor|E] на части и сильно ослабила [dunedain|El]"
  feature_book_title_arnor: "Падение Арнора"
@@ -160,7 +160,7 @@
  feature_book_topic_thani_hazad: "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] копия «Славы [Concept('sevenlands', 'Семи земель')|E]» с комментариями, демонстрирующая отличное понимание исходного материала и благотворное возвышение диких [Concept( 'conceptracemen', 'людей' )|E] [Concept( 'harad', 'Харада' )|E] [Concept( 'numenorean', 'нуменорцами' )|E]"
 
 
- ### Bows ### 
+ ### Bows ###
 
  artifact_bow_string: "Тетива из [ROOT.Artifact.GetFeatureText( 'bow_string_cordage' )] натянута"
  artifact_bow_shaft_undecorated: "гибкое древко из [ROOT.Artifact.GetFeatureText( 'shaft_wood' )]. Хотя это оружие смертельно опасно на расстоянии, оно плохо подходит для ближнего боя."
@@ -171,7 +171,7 @@
 
  weapon_bow_inspiration_name: "лук"
 
- # Animals (used in ArtifactAnimalType) 
+ # Animals (used in ArtifactAnimalType)
  animal_type_warg: "варг"
  animal_type_caragor: "карагор"
 
@@ -184,12 +184,12 @@
  feature_animal_skull_type_warg: "крупного острозубого варга"
  feature_animal_skull_type_caragor: "крупного острозубого карагора"
 
-### Triggers/Variables ###
- artifact_has_ring_of_power_var: "Невозможно уничтожить [ringsofpower|E]."
- artifact_has_silmaril_var: "Невозможно уничтожить [silmaril|E]"
+ ### Triggers/Variables ###
+ artifact_has_ring_of_power_var: "Невозможно уничтожить [ringsofpower|El]."
+ artifact_has_silmaril_var: "Невозможно уничтожить [silmaril|El]"
  artifact_is_kid_sized: "Вы #bold не#! [Concept('hobbit', 'хоббит')|E], друэдайн или [Concept('child', 'ребёнок')|E]"
 
-### New Slots ###
+ ### New Slots ###
 
  crafting_tools: "Инструменты"
 
@@ -218,7 +218,7 @@
  lasgalendrim_spear_description: "Это длинное копьё с листовидным лезвием на манер эльфов Зеленолесья было подарено правителю Нелорниэта правителем [Concept('erynlasgalen', 'Эрин Ласгалена')|E]. Оно изысканно сделано и смертельно опасно."
 
  galadhrim_bow_name: "Лук галадрим"
- galadhrim_bow_description: "Этот великолепный лук из дерева мэллорн на манер эльфов Лотлориэна был подарен правителю Нелорниэта правителем [Concept('lorien', 'Лориена')|E]. Он изысканно сделан и смертельно опасен."
+ galadhrim_bow_description: "Этот великолепный лук из дерева мэллорн на манер эльфов Лотлориэна был подарен правителю Нелорниэта правителем [Concept('lorien', 'Лориэна')|E]. Он изысканно сделан и смертельно опасен."
 
  elven_sword_name: "Нолдорский меч"
  elven_sword_description: "Этот острый, стальной меч в нолдорском стиле был подарен правителю Нелорниэта. Он изысканно сделан и смертельно опасен."
