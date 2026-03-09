@@ -196,6 +196,9 @@
  lotr_valinor_invasion_cb: "$VALINOR_HOST_LANDING_WAR_NAME$"
  VALINOR_HOST_LANDING_WAR_NAME: "Высадка воинства Валинора"
  VALINOR_HOST_LANDING_CB_NAME: "Высадка воинства Валинора"
+ lotr_same_alignment_transfer_effect: "Все [Concept('vassals', 'вассалы')|E] с #bold таким же#! [Concept('alignment', 'мировоззрением')|E] станут вашими вассалами"
+ lotr_opposite_alignment_transfer_effect: "Все [Concept('vassals', 'вассалы')|E] с #bold противоположным#! [Concept('alignment', 'мировоззрением')|E] потеряют свои [Concept('titles', 'титулы')|E]."
+ lotr_neutral_alignment_transfer_effect: "Все [Concept('vassals', 'вассалы')|E] с [Concept('alignment_neutral', 'нейтральным')|E] [Concept('alignment', 'мировоззрением')|E] станут вашими вассалами."
 
  ### Pharazon Invasion ###
  pharazon_invasion_army_name: "Воинство [GetTitleByKey('e_numenor').GetNameNoTierNoTooltip]а"
@@ -204,7 +207,7 @@
  PHARAZON_HOST_LANDING_WAR_NAME: "Высадка воинства Фаразона"
  PHARAZON_HOST_LANDING_CB_NAME: "Высадка воинства Фаразона"
 
- ### Pharazon Invasion ###
+ ### Amav Invasion ###
 
  amav_invasion_cb_name: "Вторжение Амава"
  amav_invasion_war_name: "Вторжение Амава"
@@ -265,6 +268,7 @@
  lotr_lw_gamestart_rhun_revolt_cb_victory_desc: "[defender.GetName] будет [Select_CString(defender.IsFemale, 'казнена', 'казнён' )], а [defender.GetHerHis] [Concept('realm', 'держава')|E] расколота. Все мятежные военачальники станут [Concept('independent', 'независимыми')|E] и, если они контролируют большую его часть, узурпируют своё [Concept('de_jure', 'де-юре')|E] [Concept('duchy', 'герцогство')|E]."
  LW_GAMESTART_RHUN_REVOLT_WAR_NAME: "Восстание договора Двух копий"
  LW_GAMESTART_RHUN_WARLORD_SKIRMISH_WAR_NAME: "Схватка военачальников Руна"
+ WOTR_GAMESTART_FALL_OF_KORONANDE_WAR_NAME: "Падение Коронандэ"
 
  lotr_purge_moria_name: "Очищение [Concept('moria', 'Мории')|E]"
  purge_moria_arassuil_cb: "Очистить [Concept('moria', 'Морию')|E]"
@@ -291,3 +295,5 @@
 
  ray_doom_war_cb: "Освобождение Раи"
  RAY_DOOM_WAR_NAME: "Освобождение Раи"
+
+ koronande_war_cb: "Вторжение в Коронандэ"

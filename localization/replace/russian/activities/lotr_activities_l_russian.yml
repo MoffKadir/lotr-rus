@@ -21,6 +21,7 @@
  activity_feast_province_desc_dwarven_ale_house: "#P + $building_type_dwarven_ale_house_01$#!\n"
  activity_feast_province_desc_dwarven_fungal_farm: "#P + $building_type_dwarven_fungal_farm_01$#!\n"
  activity_feast_province_desc_dwarven_terrace_farm: "#P + $building_type_dwarven_terrace_farm_01$#!\n"
+ activity_feast_province_desc_hall_of_music_and_tales: "#P ++ $building_type_hall_of_music_and_tales$#!\n"
  activity_feast_province_desc_vineyards: "#P +++ $building_type_vineyards_01$#!\n"
  activity_feast_province_desc_legendary_palace: "#P +++ $building_type_legendary_palace$#!\n"
  activity_feast_province_desc_wonder_palace_of_ithilien: "#P +++ $building_type_wonder_palace_of_ithilien$#!\n"
@@ -100,6 +101,7 @@
  activity_tournament_province_scouting_posts_01_desc: "#P + $building_type_scouting_posts_01$#!"
  activity_tournament_province_elven_fletchers_01_desc: "#P + $building_type_elven_fletchers_01$#!"
  activity_tournament_province_snaga_warrens_01_desc: "#P + $building_type_snaga_warrens_01$#!"
+ activity_tournament_province_warg_warrens_01_desc: "#P + $building_type_warg_warrens_01$#!"
  activity_tournament_province_elven_forges_01_desc: "#P + $building_type_elven_forges_01$#!"
  activity_tournament_province_heavy_armoury_01_desc: "#P + $building_type_heavy_armoury_01$#!"
  activity_tournament_province_military_specialization_01_desc: "#P + $building_type_military_specialization_01$#!"
@@ -212,7 +214,7 @@
  activity_explore_history_province_desc_military_academy: "#P + $building_type_military_academy_01$#!\n"
  activity_explore_history_province_desc_monastic_schools: "#P + $building_type_monastic_schools_01$#!\n"
  activity_explore_history_province_desc_citadel: "#P + $building_type_citadel_01$#!\n"
- activity_explore_history_province_desc_shirriff_office: "#P + $building_type_shirriff_office_01$#!\n"
+ activity_explore_history_province_desc_hall_of_lords: "#P + $building_type_hall_of_lordse_01$#!\n"
 
  activity_explore_history_province_desc_elder_days_records: "#P В этом месте хранятся рассказы о Древних днях#!\n"
  activity_explore_history_province_desc_northern_histories: "#P В этом месте хранятся записи западных историков#!\n"
@@ -270,7 +272,6 @@
  explore_history_cost_discount_military_academy: "В этом месте есть $building_type_military_academy_01$#!"
  explore_history_cost_discount_monastic_schools: "В этом месте есть $building_type_monastic_schools_01$#!"
  explore_history_cost_discount_citadel: "В этом месте есть $building_type_citadel_01$#!"
- explore_history_cost_discount_shirriff_house: "В этом месте есть $building_type_shirriff_house_01$#!"
 
  # Pulse actions 
  impressed_zealot_vassal_title: "Фанатичные вассалы впечатлены многочисленной делегацией"
@@ -312,17 +313,29 @@
  ancestor_veneration_phase_reading: "Почтение предков"
  ancestor_veneration_phase_reading_desc: "Изучить истории предков, как известных, так и пользующихся дурной репутацией."
 
- activity_ancestor_veneration: "Почтение предков"
+ # Triggered Loc
+ ancestor_veneration_regular: "Почтение предков"
+ ancestor_veneration_saruman: "Изучение гномов"
+ ancestor_veneration_selection_tooltip_regular: "Почтить предков и изучить древних [Concept('dwarves', 'гномов')|E]\n\nОжидаемые награды:\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] Очки [Concept('skill', 'навыков')|E]\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] [lifestyle_experience|E]\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]"
+ ancestor_veneration_selection_tooltip_saruman: "Изучить древних [Concept('dwarves', 'гномов')|E], почерпнув всё, что можно, из их деяний.\n\nОжидаемые награды:\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] Очки [Concept('skill', 'навыков')|E]\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] [lifestyle_experience|E]\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]\n$BULLET_WITH_TAB$Прирост [Concept('hope', 'надежды')|E]"
+ activity_ancestor_veneration_host_a: "$host_activity_a$"
+ activity_ancestor_veneration_host_an: "$host_activity_an$"
+
+ # Activity
+ activity_ancestor_veneration: "[GetPlayer.Custom( 'AncestorVenerationName' )]"
  activity_ancestor_veneration_desc: "Среди [Concept('dwarves', 'гномов')|E] предков не просто помнят. Их почитают, их наследие чтут и соблюдают.\n\nВ триумфе или в безумии, каждый поступок остается неизменным, предлагая мудрость, предостережение и силу тем, кто принимает их уроки близко к сердцу."
  activity_ancestor_veneration_host_desc: "$BULLET_WITH_TAB$Можно получить очки [Concept('skill', 'навыков')|E]\n$BULLET_WITH_TAB$Можно получить [Concept('lifestyle_experience', 'опыт образа жизни')|E]\n$BULLET_WITH_TAB$Прирост [Concept('opinion', 'мнения')|E] #TOOLTIP:VASSAL_STANCE,zealot #L [GetVassalStance( 'zealot' ).GetTextIcon]фанатичных#!#! [Concept('vassal', 'вассалов')|E]\n$BULLET_WITH_TAB$Участники могут получить [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]\n"
- activity_ancestor_veneration_selection_tooltip: "Почтить предков и изучить древних [Concept('dwarves', 'гномов')|E]\n\nОжидаемые награды:\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] Очки [Concept('skill', 'навыков')|E]\n$BULLET_WITH_TAB$[diplomacy_i][martial_i][stewardship_i][intrigue_i][learning_i] [lifestyle_experience|E]\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]"
+ activity_ancestor_veneration_selection_tooltip: "[GetPlayer.Custom( 'AncestorVenerationDesc' )]"
  activity_ancestor_veneration_guest_help_text: "У [Concept('activity_guests', 'гостей занятия')|E] будет возможность пообщаться и улучшить свойство архивариуса.\n#TOOLTIP:VASSAL_STANCE,zealot #L [GetVassalStance( 'zealot' ).GetTextIcon]Фанатичные#!#! [Concept('vassals', 'вассалы')|E] оценят прочитанное и улучшат [Concept('opinion', 'мнение')|E].\n"
  activity_ancestor_veneration_predicted_cost: "Стоимость #TOOLTIP:ACTIVITY_TYPE,activity_ancestor_veneration #L почтения предков#!#! зависит от вашего [Concept('income', 'дохода')|E] и выбранных [Concept('activity_options', 'вариантов занятия')|E]."
 
  ancestor_veneration_type_standard: "Почтение предков"
  ancestor_veneration_type_standard_desc: "$EFFECT_LIST_BULLET$ Вы можете улучшить свои личные [Concept('skills', 'навыки')|E] и извлечь уроки из жизни предков.\n\n#weak В древних свитках и записях содержится древняя мудрость. Деяния наших предков всё ещё могут направлять нас, если мы захотим извлечь уроки из их памяти.#"
+ ancestor_veneration_type_saruman: "Изучение гномов"
+ ancestor_veneration_type_saruman_desc: "$EFFECT_LIST_BULLET$ Вы можете улучшить свои личные [Concept('skills', 'навыки')|E], повысить [Concept('hope', 'надежду')|E] и извлечь уроки из жизни древних гномов.\n\n#weak О деяниях гномов известно множество историй. Мне, безусловно, было бы интересно изучить их, поскольку в них есть много тайн, которые ещё предстоит раскрыть.#"
+ ancestor_veneration_type_saruman_selection_tooltip: "Вы #bold не#! являетесь [Concept('wizard', 'волшебником')|E]"
 
- activity_ancestor_veneration_host_an_a: "$host_activity_an$"
+ activity_ancestor_veneration_host_an_a: "[GetPlayer.Custom( 'AncestorVenerationArticle' )]"
  activity_ancestor_veneration_host_desc_trait_xp: "$BULLET_WITH_TAB$Участники могут получить [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]\n"
  activity_ancestor_veneration_host_desc_trait: "$BULLET_WITH_TAB$Участники могут получить [Concept('trait', 'свойство')|E] @archivist_trait_icon! [GetTrait('lifestyle_archivist').GetName( GetNullCharacter )]\n"
  activity_ancestor_veneration_host_desc_chronicler: "\n@warning_icon! #negative_value У вас не нанят [GetCourtPositionType('chronicler_court_position').GetName()]"
@@ -342,7 +355,7 @@
  ancestor_veneration_basic_funding: "Базовое финансирование"
  ancestor_veneration_basic_funding_desc: "$EFFECT_LIST_BULLET$ Нет дополнительных наград\n\n#weak Достаточно, чтобы продолжить, хотя почитанию будет недоставать великолепия.#!"
  ancestor_veneration_extra_funding: "Дополнительное финансирование"
- ancestor_veneration_extra_funding_desc: "$EFFECT_LIST_BULLET$ Возможность почтить разных предков\n\n#weak Достаточные средства для почитания, достойного памяти и уважения.#!"
+ ancestor_veneration_extra_funding_desc: "$EFFECT_LIST_BULLET$ Можно выбрать вторую область внимания\n\n#weak Достаточные средства для почитания, достойного памяти и уважения.#!"
 
  # Provinces
  activity_ancestor_veneration_destination_selection: "Посещение локации, в которой находится большая библиотека, предоставит больше возможностей для изучения."
@@ -1188,3 +1201,7 @@
  inspire_hope_intent_desc: "Вы хотите вселить участникам [Concept('hope', 'надежду')|E], повлияв на ваш [Concept('situation_sub_region', 'регион')|E]."
 
  activity_elves_gain_hope: "$BULLET_WITH_TAB$Можно получить [Concept('hope', 'надежду')|E]\n"
+
+ activity_coronation_underage_hobbit_tt: "Вам #bold не#! исполнилось хотя бы #V 25#! лет\n#flavor Корона спадает с вашей маленькой головы#!"
+ activity_coronation_underage_dwarf_tt: "Вам #bold не#! исполнилось хотя бы #V 30#! лет\n#flavor Корона спадает с вашей маленькой головы#!"
+ activity_coronation_underage_elf_tt: "Вам #bold не#! исполнилось хотя бы #V 37#! лет\n#flavor Корона спадает с вашей маленькой головы#!"

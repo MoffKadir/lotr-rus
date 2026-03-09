@@ -1,7 +1,21 @@
 ﻿l_russian:
  # Букмарки. Замена 'Королева владения Лотлориен' на 'Королева (Лотлориэн)'
- BOOKMARK_CHARACTER_TITLE: "[BookmarkCharacter.GetTitleTierName] ([BookmarkCharacter.GetTitleName])"
- BOOKMARK_CHARACTER_TITLE_TYPE: "[BookmarkCharacter.GetTitleTierName] ([BookmarkCharacter.GetTitleName] - #weak [BookmarkCharacter.GetGovernmentType.GetNameWithIcon]#!)"
- ADMIN_BOOKMARK_CHARACTER_TITLE: "Губернатор ([BookmarkCharacter.GetTitleName])"
+ #BOOKMARK_CHARACTER_TITLE: "[BookmarkCharacter.GetTitleTierName] ([BookmarkCharacter.GetTitleName])"
+ #BOOKMARK_CHARACTER_TITLE_TYPE: "[BookmarkCharacter.GetTitleTierName] ([BookmarkCharacter.GetTitleName] - #weak [BookmarkCharacter.GetGovernmentType.GetNameWithIcon]#!)"
+ #ADMIN_BOOKMARK_CHARACTER_TITLE: "Губернатор ([BookmarkCharacter.GetTitleName])"
+
+ BOOKMARK_SUBHEADING_DEFAULT: "[BookmarkCharacter.GetTitleTierName] ([BookmarkCharacter.GetTitleName])"
+ BOOKMARK_SUBHEADING_DEFAULT_WITH_THE: "[BookmarkCharacter.GetTitleTierName] ([BookmarkCharacter.GetTitleName])"
+ BOOKMARK_SUBHEADING_KHAN: "$king_feudal_male_altaic_group$ ([BookmarkCharacter.GetTitleName])"
+ BOOKMARK_SUBHEADING_KHAN_WITH_THE: "$king_feudal_male_altaic_group$ ([BookmarkCharacter.GetTitleName])"
+ BOOKMARK_SUBHEADING_HIGH_CHIEFTAIN: "$duke_tribal_male$ ([BookmarkCharacter.GetTitleName])"
+ BOOKMARK_SUBHEADING_GOVERNOR: "$game_concept_governor$ ([BookmarkCharacter.GetTitleName])"
+ BOOKMARK_SUBHEADING_MILITARY_GOVERNOR: "Военный губернатор ([BookmarkCharacter.GetTitleName])"
+ BOOKMARK_SUBHEADING_CHIEFTAIN: "$count_tribal_male$ ([BookmarkCharacter.GetTitleName])"
+ BOOKMARK_SUBHEADING_LANDLESS_ADMIN: "Глава ([BookmarkCharacter.GetTitleName])"
+ BOOKMARK_SUBHEADING_RULING_REGENT: "$game_concept_ceremonial_regent$ ([BookmarkCharacter.GetTitleName])"
+
+ death_bubonic_plague: "[Select_CString(CHARACTER.IsFemale, 'умерла', 'умер' )] от #TOOLTIP:GAME_TRAIT,bubonic_plague, #L чумы#!#!"
+
  # У династии Истари отсутствовал ключ. Разрабы юзают Istari, а не istari в файле northron_eotheod_dynasties.txt. Идентификатор династии равняется значению 1000. В подобных случаях надо самим ключи создавать.
  #Istari: "Истари"

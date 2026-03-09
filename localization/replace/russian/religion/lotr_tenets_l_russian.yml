@@ -65,7 +65,7 @@
  tenet_memory_of_akallabeth_desc: "Ничто из того, что мы делаем, никогда не сравнится с великолепием расцвета [Concept( 'numenor', 'Нуменора' )|E], но в нашей памяти он стоит неподвижно, прекрасный и светлый. Уроки [Concept( 'akallabeth', 'Акаллабет' )|E] никогда не будут забыты, пока существуют [Concept( 'realms_in_exile', 'королевства-в-изгнании' )|E]."
  doctrine_parameter_lotr_numenor_blood_bonuses: "[Concept( 'traits', 'Свойства' )|E] [Concept( 'bloodofnumenor', 'нуменорской крови' )|E] дают дополнительные бонусы к приросту [Concept( 'piety', 'благочестия' )|E] и [Concept( 'legitimacy', 'легитимности' )|E]"
  tenet_bellakari_syncretism_name: "Беллакарский синкретизм"
- tenet_bellakari_syncretism_desc: "Независимо от того, говорят ли они «Иштра» или «Нэсса», «Аром» или «[Concept('oromecharactershort', 'Оромэ')|E]», среди нас считается, что мы обращаемся к одной и той же [Concept('powersgods', 'Силе')|E]. Народ [Concept('bellakar', 'Беллакара')|E] и прилегающих земель не будет разделён разногласиями в [Concept('faith', 'вере')|E], ведь мы рассказываем одну и ту же историю, лишь на разных языках."
+ tenet_bellakari_syncretism_desc: "Независимо от того, говорят ли они «Иштра» или «[Concept('nessacharacter', 'Нэсса')|E]», «Аром» или «[Concept('oromecharactershort', 'Оромэ')|E]», среди нас считается, что мы обращаемся к одной и той же [Concept('powersgods', 'Силе')|E]. Народ [Concept('bellakar', 'Беллакара')|E] и прилегающих земель не будет разделён разногласиями в [Concept('faith', 'вере')|E], ведь мы рассказываем одну и ту же историю, лишь на разных языках."
  doctrine_parameter_hostility_override_tenet_bellakari_syncretism: "Считает, что все [faiths|El] с [Concept('core_tenet', 'догматом')|E] #high Беллакарский синкретизм#! — $hostility_astray_tooltippable$."
  doctrine_parameter_lotr_unlock_firstfruits_activity: "Доступно [Concept('activity', 'занятие')|E] «[GetActivityType('activity_firstfruits_festival').GetName]»"
  doctrine_parameter_unlock_decision_kathasaptha_manuscript: "Разблокировано [Concept('decision', 'решение')|E] #V $decision_kathasaptha_manuscript$#!"
@@ -171,7 +171,12 @@
 
  tenet_hathorim_isolation_name: "Щит Хатора"
  tenet_hathorim_isolation_desc: "Наш бог спас нас от морского зла и вернул на нашу священную землю. Нам больше не нужно беспокоиться о делах за её пределами, за исключением тех случаев, когда они пытаются разграбить наш дом."
- doctrine_parameter_no_sailing: "Персонажам этой [Concept('faith', 'конфессии')|E] недоступен контент, связанный с морем."
+ doctrine_parameter_no_sailing: "Персонажам этой [Concept('faith', 'конфессии')|E] недоступен контент, связанный с морем. [Concept('trait', 'Свойство')|E] «[GetTrait('lifestyle_mariner').GetName( GetNullCharacter )]» предоставляет #N штрафы#!."
+
+ tenet_holy_hunts_name: "Священная охота"
+ tenet_holy_hunts_desc: "Охотясь, мы становимся ближе к величию [ROOT.Faith.HighGodNamePossessive], ходим по [ROOT.Faith.HighGodHerHis] земле, узнаём о [ROOT.Faith.HighGodHerHis] созданиях и наслаждаемся [ROOT.Faith.HighGodHerHis] щедростью."
+ doctrine_parameter_chance_to_gain_prowess_during_all_hunts: "Убийство зверя во время #TOOLTIP:ACTIVITY_TYPE,activity_hunt #L охоты#!#! может предоставить бонус к [prowess_i][Concept('prowess', 'доблести')|E] и [martial_i][Concept('martial', 'военному делу')|E]"
+ doctrine_parameter_more_frequent_hunts_faith: "$culture_parameter_more_frequent_hunts$"
 
  tenet_communal_celebrations_name: "Общинные празднования"
  tenet_communal_celebrations_desc: "Вкусную пищу, вино и приятные вещи лучше всего делить с друзьями. Репутация хозяина зависит от богатства его стола и щедрости подарков."

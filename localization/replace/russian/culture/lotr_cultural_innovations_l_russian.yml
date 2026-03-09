@@ -96,8 +96,8 @@
  guard_of_the_citadel_flavor: "Элитная пехота Гондора, Стражи Цитадели защищают верхний ярус Минас Тирита, и являются почётной гвардией правителей Гондора."
 
  #culture_parameter_unlock_maa_rangers_of_ithilien: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('rangers_of_ithilien').GetName]\n$EFFECT_LIST_BULLET$Characters of Gondorian cultures can recruit [GetMaA('rangers_of_ithilien').GetName] in Ithilien holdings."
- rangers_of_ithilien: "Следопыты Гондора"
- rangers_of_ithilien_flavor: "Следопыты Гондора предпочитают скрытность. Облачившись в зелёное и бурое, они ведут партизанскую войну."
+ rangers_of_ithilien: "Следопыты Итилиэна"
+ rangers_of_ithilien_flavor: "Итилиэнские следопыты предпочитают скрытность. Облачившись в зелёное и бурое, они ведут партизанскую войну."
 
  culture_parameter_unlock_maa_harondorim_rangers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('harondorim_rangers').GetName|l]\n$EFFECT_LIST_BULLET$Персонажам с гондорскими культурами во владениях Харондора доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('harondorim_rangers').GetName|l]."
  harondorim_rangers: "Следопыты Харондора"
@@ -235,8 +235,8 @@
 
  innovation_protectors_gap_of_rohan: "Защитники Пади"
  innovation_protectors_gap_of_rohan_desc: "Всадники Рохана поклялись защищать Врата Рохана из своей цитадели в Хельмовой Пади."
- culture_in_deep_desc: "[culture|E] не распространена в [Concept( 'county', 'графствах' )|E] с [Concept( 'terrain', 'типом местности' )|E] горы или пещеры"
- deep_percentage_desc: "Менее #V 10 %#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] располагается в горах или пещерах"
+ culture_in_deep_desc: "[culture|E] не распространена в [Concept( 'county', 'графствах' )|E] с горным [Concept('terrain', 'типом местности')|E]"
+ deep_percentage_desc: "Менее #V 10 %#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] располагается в горной [Concept('terrain', 'местности')|E]"
  culture_parameter_unlock_maa_eorlingas_warriors: "Правителям Рохана доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('eorlingas_warriors').GetName]"
  culture_parameter_unlock_maa_westfolders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('westfolders').GetName]"
  eorlingas_warriors: "Воины-эорлинги"
@@ -404,11 +404,11 @@
 
  ### Mardrukan ###
  innovation_mardrukan_warfare: "Мардруканское военное дело"
- innovation_mardrukan_warfare_desc: "PLACEHOLDER"
+ innovation_mardrukan_warfare_desc: "Закалённые годами войн и набегов пиратов, жители Мардруака свирепы и выносливы."
  mardrukan_pikemen: "Мардруканские пикинеры"
- mardrukan_pikemen_flavor: "PLACEHOLDER"
+ mardrukan_pikemen_flavor: "Способные самостоятельно держаться в строю, копейщики Мардруака, возможно, и не обладают лучшей бронёй или лучшей сталью, но, тем не менее, они являются грозными противниками."
  mardrukan_infantry: "Мардруканская пехота"
- mardrukan_infantry_flavor: "PLACEHOLDER"
+ mardrukan_infantry_flavor: "Элита Мардруака, ветераны, закалённые во многих битвах, - это тяжёлая пехота мардруканской армии, вооружённая самыми лучшими мечами, щитами и нагрудниками, какие только можно было найти."
  unlock_maa_mardrukan_pikemen: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mardrukan_pikemen').GetName]"
  unlock_maa_mardrukan_infantry: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mardrukan_infantry').GetName]"
  ### HARADWAITH ###
@@ -436,7 +436,7 @@
  war_mumak_flavor: "Великие мумакил юга, шествующие подобно могучим серым горам, обученные и приспособленные к войне. Их кожа почти непробиваема для стрел, и немногие не дрожат от страха перед их атакой."
  siege_mumak: "Осадные мумакил"
  siege_mumak_flavor: ""
- haradrim_raiders: "Налётчики харадрим"
+ haradrim_raiders: "Воители харадрим"
  haradrim_raiders_flavor: "Опытные пехотинцы из выжженных солнцем земель Харада, умеющие сеять хаос среди врагов, нанося удары с быстротой ветра пустыни."
  desert_javelineers: "Пустынные копьеносцы"
  desert_javelineers_flavor: "Эти копьеносцы славятся своим мастерством и точностью, отточенными в палящих пустынях, и смертоносной точностью, с которой они метают свои копья в противников издалека."
@@ -528,6 +528,8 @@
  culture_parameter_unlock_maa_bellanarud_auxiliaries: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('bellanarud_auxiliaries').GetName]"
  bellanarud_auxiliaries: "Вспомогательные войска белланаруд"
  bellanarud_auxiliaries_flavor: "Сельское население Беллакара — белланаруд зачастую служит в качестве вспомогательного контингента во множестве ролей, дополняя профессиональное войско. Представители различных малых групп привносят свои лучшие умения и традиции."
+ bellakari_crossbowmen: "Беллакарские арбалетчики"
+ bellakari_crossbowmen_flavor: "Хорошо обученные арбалетчики Беллакара обрушивают град стрел на своих врагов, и их нельзя недооценивать."
  culture_parameter_can_make_oligarch_vassals: "Можно превращать графов в вассалов-олигархов"
  culture_parameter_oligarchy_vassals_pay_more: "Олигархические [Concept('vassals', 'вассалы')|E] с рангом выше [Concept('baron', 'барона')|E] предоставляют больше [Concept('taxes', 'налогов')|E] и [Concept('levies', 'ополчения')|E]"
  oligarchy_vassals_pay_more_parameter: "От [Concept('culture_traditions', 'культурных традиций')|E] [Concept('liege', 'сюзерена')|E]"
@@ -813,7 +815,7 @@
 
  ### Bellakari ###
  innovation_bellakari_warfare: "Беллакарское военное дело"
- innovation_bellakari_warfare_desc: "PLACEHOLDER"
+ innovation_bellakari_warfare_desc: "Армии Беллакара, самой южной земли Верных в Средиземье, как и их общества, отражают как харадское, так и адунайское влияние."
 
  ### Daen Coentis ###
  innovation_daen_warfare: "Военное дело даэн"
@@ -847,13 +849,17 @@
  innovation_koronandi_warfare: "Коронандское ополчение"
  innovation_koronandi_warfare_desc: "Каждый гражданин Коронандэ обязан нести службу по защите города во времена смут."
 
- ### Koronandi ###
+ ### Shayni ###
  innovation_shayn_warfare: "Воины Шайна"
  innovation_shayn_warfare_desc: "Вооружённые смертоносными дротиками, воины полуострова Слоновой кости представляют собой силу, с которой следует считаться."
 
+ ### Ambasonians ###
+ innovation_ambason_warfare: "Амбасонские охотницы"
+ innovation_ambason_warfare_desc: "Дочерей Амбасона с юных лет учат охотиться и сражаться, и они известны своим мастерством владения луком и яростной независимостью."
+
  ### Orodbedhrim ###
  innovation_orodbedhrim_warfare: "Кланы ородбедрим"
- innovation_orodbedhrim_warfare_desc: "PLACEHOLDER"
+ innovation_orodbedhrim_warfare_desc: "Живущие в горах и на холмах ородбедрим, одни из самых отдалённых обитателей Гондора, - выносливые и свирепые хорошо обучённые воины."
 
  ### Hobbits ###
  innovation_hobbit_warfare: "Толпа хоббитов"
@@ -863,12 +869,16 @@
  innovation_advanced_hobbit_warfare_desc: "Наконец-то официально хоббиты обучены передовым военным приёмам."
 
  ### Breemen ###
- innovation_breemen_warfare: "Военное дело брименов"
- innovation_breemen_warfare_desc: "PLACEHOLDER"
+ innovation_breemen_warfare: "Ополчение брименов"
+ innovation_breemen_warfare_desc: "Хотя в Бри уже много лет царит мир, его центральное положение принесло ему много богатств, которые можно было бы использовать для сбора и оснащения армии во времена нужды."
 
  ### Nurniags ###
  innovation_slavers_nurn: "Рабовладельцы Нурна"
  innovation_slavers_nurn_desc: "Боевые традиции нурниагов почти полностью связаны с поддержанием контроля над их обширными рабскими плантациями, при этом особое внимание уделяется кавалерии как средству устрашения и поимки потенциальных беглецов и мятежников."
+
+ ### Nurniags ###
+ innovation_nurnoth_warfare: "Нурнотская стойкость"
+ innovation_nurnoth_warfare_desc: "Столетия рабства превратили нурнот в бедный и разорённый народ, но их дух всё ещё не померк, и там, где им не хватает снаряжения и опыта, они восполняют это доблестью."
 
  ### Harondoric ###
  innovation_harondorim_warfare: "Солдаты Харондора"
@@ -893,7 +903,7 @@
  unlock_dunlending_axe_hunters: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('dunlending_axe_hunters').GetName]"
  ### Hillmen ###
  unlock_hillmen_pikemen: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('hillmen_pikemen').GetName]"
- unlock_hillmen_light_cavalry: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('hillmen_light_cavalry').GetName]"
+ unlock_hillmen_light_cavalry: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('cataphract_archers').GetName]"
  unlock_hillmen_heavy_infantry: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('hillmen_heavy_infantry').GetName]"
  unlock_hillmen_skirmishers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('hillmen_skirmishers').GetName]"
  unlock_hillmen_heavy_infantry_unlock: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('hillmen_heavy_infantry_unlock').GetName]"
@@ -924,6 +934,7 @@
  unlock_maa_bellakarani_phalanx: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('bellakarani_phalanx').GetName]"
  unlock_maa_bellakaze_outriders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('bellakaze_outriders').GetName]"
  unlock_maa_bellanarud_auxiliaries: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('bellanarud_auxiliaries').GetName]"
+ unlock_maa_bellakari_crossbowmen: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('bellakari_crossbowmen').GetName]"
  ### Dune Sea ###
  unlock_maa_hasharin: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('hasharin').GetName]"
  unlock_maa_desert_screamers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('desert_screamers').GetName]"
@@ -964,6 +975,10 @@
  unlock_maa_shayn_javelineers: "Доступны [men_at_arms|El] - [GetMaA('shayn_javelineers').GetName]"
  unlock_maa_shayn_scouts: "Доступны [men_at_arms|El] - [GetMaA('shayn_scouts').GetName]"
 
+ ### Ambason ###
+ unlock_maa_ambason_archers: "Доступны [men_at_arms|El] - [GetMaA('ambason_archers').GetName]"
+ unlock_maa_gembedi: "Доступны [men_at_arms|El] - [GetMaA('gembedi').GetName]"
+ unlock_maa_ambason_royal_guard: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('ambason_royal_guard').GetName]"
 
  ### Hobbits ###
  unlock_maa_hobbit_bounders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('hobbit_bounders').GetName]"
@@ -1158,7 +1173,7 @@
  unlock_wardens_of_sirgala: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('wardens_of_sirgala').GetName]"
  unlock_galadhrim_archers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('galadhrim_archers').GetName]"
  unlock_galadhrim_warriors: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('galadhrim_warriors').GetName]"
- unlock_royal_elk_riders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('royal_elk_riders').GetName]"
+ unlock_royal_elk_riders: "Императорам и де-юре королям Лихолесья доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('royal_elk_riders').GetName]"
  unlock_theladagnyr: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('theladagnyr').GetName]"
  unlock_cuind_wanderers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('cuind_wanderers').GetName]"
  unlock_cuind_skirmishers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('cuind_skirmishers').GetName]"
@@ -1171,3 +1186,7 @@
  unlock_morgul_riders: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('morgul_riders').GetName]"
  unlock_mordorrim_pikemen: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mordorrim_pikemen').GetName]"
  unlock_mordorrim_archers: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('mordorrim_archers').GetName]"
+
+ ### Nurnoth ###
+ unlock_nurnoth_reserves: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nurnoth_reserves').GetName]"
+ unlock_nurnoth_regulars: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nurnoth_regulars').GetName]"
