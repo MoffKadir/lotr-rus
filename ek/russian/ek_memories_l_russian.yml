@@ -20,10 +20,10 @@
  claimed_thrall_memory_desc_second_perspective:1 "вы овладели душой персонажа [thrall.GetTitledFirstName], и после смерти [thrall.GetHerHis] тело будет служить вам в качестве трэлла-нежити"
  claimed_thrall_memory_desc_third_perspective:0 "[owner.GetTitledFirstName] [Select_CString(owner.IsFemale, 'овладела', 'овладел' )] душой персонажа [thrall.GetTitledFirstName], и после смерти [thrall.GetHerHis] тело будет служить [owner.GetHerHim] в качестве трэлла-нежити"
 
- became_disrupted_memory:0 "Магический разрыв"
- became_disrupted_memory_desc:0 "[disruptor.GetTitledFirstName] [Select_CString(disruptor.IsFemale, 'подвергла', 'подверг' )] меня жестокой процедуре магического разрыва, навсегда покалечив мои магические способности"
- became_disrupted_memory_desc_second_perspective:1 "[disruptor.GetTitledFirstName] [Select_CString(disruptor.IsFemale, 'подвергла', 'подверг' )] вас жестокой процедуре магического разрыва, навсегда покалечив ваши магические способности"
- became_disrupted_memory_desc_third_perspective:0 "[disruptor.GetTitledFirstName] [Select_CString(disruptor.IsFemale, 'подвергла', 'подверг' )] персонажа [owner.GetTitledFirstName] жестокой процедуре магического разрыва, навсегда покалечив [owner.GetHerHis] магические способности"
+ became_disrupted_memory:0 "Магическое отсечение"
+ became_disrupted_memory_desc:0 "[disruptor.GetTitledFirstName] [Select_CString(disruptor.IsFemale, 'подвергла', 'подверг' )] меня жестокой процедуре магического отсечения, навсегда покалечив мои магические способности"
+ became_disrupted_memory_desc_second_perspective:1 "[disruptor.GetTitledFirstName] [Select_CString(disruptor.IsFemale, 'подвергла', 'подверг' )] вас жестокой процедуре магического отсечения, навсегда покалечив ваши магические способности"
+ became_disrupted_memory_desc_third_perspective:0 "[disruptor.GetTitledFirstName] [Select_CString(disruptor.IsFemale, 'подвергла', 'подверг' )] персонажа [owner.GetTitledFirstName] жестокой процедуре магического отсечения, навсегда покалечив [owner.GetHerHis] магические способности"
 
  became_necromancer_memory:0 "Становление некромантом"
  became_necromancer_memory_desc:0 "я [Select_CString(ROOT.Char.IsFemale, 'овладела', 'овладел' )] тайнами некромантии"
@@ -34,6 +34,16 @@
  became_lich_memory_desc:0 "совершив тёмный магический ритуал, я [Select_CString(ROOT.Char.IsFemale, 'стала', 'стал' )] личом"
  became_lich_memory_desc_second_perspective:1 "совершив тёмный магический ритуал, вы стали личом"
  became_lich_memory_desc_third_perspective:0 "совершив тёмный магический ритуал, [owner.GetTitledFirstName] [Select_CString(owner.IsFemale, 'стала', 'стал' )] личом"
+
+ became_briarheart_memory:0 "Превращение в вересковое сердце"
+ became_briarheart_memory_desc:0 "пройдя через священный ритуал, я [Select_CString(ROOT.Char.IsFemale, 'стала', 'стал' )] вересковым сердцем"
+ became_briarheart_memory_desc_second_perspective:1 "пройдя через священный ритуал, вы стали вересковым сердцем"
+ became_briarheart_memory_desc_third_perspective:0 "пройдя через священный ритуал, [owner.GetTitledFirstName] [Select_CString(owner.IsFemale, 'стала', 'стал' )] вересковым сердцем"
+
+ became_hagraven_memory:0 "Превращение в ворожею"
+ became_hagraven_memory_desc:0 "пройдя через древний тёмный ритуал, я [Select_CString(ROOT.Char.IsFemale, 'стала', 'стал' )] ворожеей"
+ became_hagraven_memory_desc_second_perspective:1 "пройдя через древний тёмный ритуал, вы стали ворожеей"
+ became_hagraven_memory_desc_third_perspective:0 "пройдя через древний тёмный ритуал, [owner.GetTitledFirstName] [Select_CString(owner.IsFemale, 'стала', 'стал' )] ворожеей"
 
  became_adopted_memory:0 "Меня [Select_CString(ROOT.Char.IsFemale, 'удочерили', 'усыновили' )]"
  became_adopted_memory_desc:0 "[new_parent.GetTitledFirstName] [Select_CString(new_parent.IsFemale, 'приняла', 'принял' )] меня в свою семью как [Select_CString(ROOT.Char.IsFemale, 'свою дочь', 'своего сына' )]"

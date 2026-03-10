@@ -33,7 +33,7 @@
  extract_blood_price_execution:0 "Так как у вас есть повод для казни персонажа [prisoner.GetFirstName], вы можете взыскать #bold очень#! высокую плату кровью, казнив [prisoner.GetHerHis|l]."
 
  ###Disrupt Arcana Interaction
- recently_disrupted:0 "Недавно [Select_CString(recipientIsFemale, 'разорвана', 'разорван')] от магии"
+ recently_disrupted:0 "Недавно [Select_CString(recipientIsFemale, 'отсечена', 'отсечён')] от магии"
  
  challenge_to_single_combat_interaction.on_decline_low_learning.tt:0 "Так как [learning|El] персонажа [actor.GetShortUIName] слишком мала #N (ниже 10)#! [recipient.GetShortUIName] [Select_CString(recipient.IsPlayer, 'можете', 'может' )] отклонить вызов на поединок без негативных последствий!"
  ek_perk_interaction.0100.t:0 "#L [recipient.GetCulture.GetCollectiveNoun|U]ие#! традиции дуэли"
@@ -76,7 +76,7 @@
  arcana_claim_tier_trigger:0 "Нельзя претендовать на [title|El] уровня [Concept( 'barony', 'баронства' )|E], [Concept( 'kingdom', 'королевства' )|E] или [Concept( 'empire', 'верховного королевства' )|E]"
 
 
- disrupt_arcana_interaction:0 "Разорвать от магии"
+ disrupt_arcana_interaction:0 "Отсечь от магии"
  disrupt_arcana_interaction_desc:0 "Персонаж [recipient.GetShortUINameNoTooltip] обрекается на [Concept('arcana', 'магическую')|E] бездарность, приближённую к свойству «[GetTrait('arcana_bad_3').GetName( GetPlayer )]»"
  
  adopt_hatchling_interaction:0 "Усыновить детёныша"
@@ -209,9 +209,6 @@
  destroy_hist_holding_interaction:0 "Уничтожить Хист"
  destroy_hist_holding_interaction_desc:0 "Разрушить все [buildings|El] в этом [Concept( 'holding', 'владении' )|E] и превратить его в храм"
  destroy_hist_holding_interaction_notification:0 "Хист уничтожен"
-
- #Co-emperor (replaces vanilla)
- valid_co_emperor_powerful_family_trigger: "Только [Concept('house_heads','главы')|E] [Concept('powerful_families','могущественных семейств')|E] могут быть [Concept('co_emperors','императорами-соправителями')|E]"
 
  #weak_rulers_contest_rule version of house head challenge
  ek_challenge_house_head_strong_interaction: "Бросить вызов главе дома"

@@ -60,8 +60,8 @@
  culture_parameter_bad_arcana_traits_give_maluses:0 "[traits|E] из линейки #V $trait_arcana_bad$#! презираются"
  culture_parameter_arcane_affinity_birth:0 "[children|E] с небольшим шансом могут родиться со [Concept('trait', 'свойством')|E] #V $trait_arcana_good$#!"
  culture_parameter_arcana_claim_enabled:1 "Правители с высокой [arcana_i|E] [Concept( 'arcana', 'арканой' )|E] могут, затратив [prestige_i][prestige|El], получить претензию на [title|El] другого правителя. Чем выше разница в [Concept( 'arcana', 'аркане' )|E] между правителями, тем ниже затраты престижа."
- culture_parameter_can_disrupt_prisoners:0 "[rulers|E] могут применять [interaction|El] «Разорвать от магии» по отношению к [Concept( 'prisoners', 'узникам' )|E]"
- culture_parameter_magic_disruption_blocks_inheritance:1 "Разорванные от магии [Concept( 'claimants', 'претенденты' )|E] не могут навязывать [Concept( 'claims', 'претензии' )|E] [Concept( 'rulers', 'правителям' )|E] этой [Concept( 'culture', 'культуры' )|E]"
+ culture_parameter_can_disrupt_prisoners:0 "[rulers|E] могут применять [interaction|El] «Отсечь от магии» по отношению к [Concept( 'prisoners', 'узникам' )|E]"
+ culture_parameter_magic_disruption_blocks_inheritance:1 "Отсечённые от магии [Concept( 'claimants', 'претенденты' )|E] не могут навязывать [Concept( 'claims', 'претензии' )|E] [Concept( 'rulers', 'правителям' )|E] этой [Concept( 'culture', 'культуры' )|E]"
  culture_parameter_better_arcane_education:0 "[characters|E] этой [Concept( 'culture', 'культуры' )|E] получают дополнительно [Concept('arcana', 'аркану')|E]: [arcana_i]#P +2#!"
  culture_parameter_wild_magic:0 "Чародеи этой [Concept( 'culture', 'культуры' )|E] подвержены резким колебаниям [arcana_i][Concept('arcana', 'арканы')|E]"
  culture_parameter_dynasty_arcana_respect:0 "[traits|E] из линейки #V $trait_arcana_good$#! дают бонус к [Concept('opinion', 'мнению')|E] членов [Concept('dynasty', 'династии')|E]"
@@ -98,7 +98,7 @@
 
 
 # Tradition parameters
- culture_parameter_unlock_maa_nedic_headhunters:0 "Доступны [men_at_arms|El]: [GetMaA('south_nedic_headhunters').GetName], [GetMaA('central_nedic_headhunters').GetName] или [GetMaA('north_nedic_headhunters').GetName] — в зависимости от соответствующей ветви недийского [Concept('heritage', 'наследия')|E], от которой происходит эта [culture|El]"
+ culture_parameter_unlock_maa_headhunters: "Доступны [men_at_arms|El] — [GetMaA('headhunters').GetName]."
  culture_parameter_unlock_maa_jungle_peltasts:0 "Доступны [men_at_arms|El] — [GetMaA('jungle_peltasts').GetName]"
  culture_parameter_unlock_maa_winged_avengers:0 "Доступны [men_at_arms|El] — [GetMaA('winged_avengers').GetName]"
  culture_parameter_unlock_maa_dunmer_oathmen:0 "Доступны [men_at_arms|El] — [GetMaA('dunmer_oathmen').GetName]"
@@ -141,6 +141,7 @@
  culture_parameter_unlock_maa_yokudan_guard:0 "Доступны [men_at_arms|El] — [GetMaA('yokudan_guard').GetName]"
  culture_parameter_unlock_maa_herd_mammoths: "Доступны [men_at_arms|El] — [GetMaA('herd_mammoth').GetName]"
  culture_parameter_unlock_maa_witch_knights: "Доступны [men_at_arms|El] — [GetMaA('witch_knight').GetName]"
+ culture_parameter_unlock_maa_witchblades: "Доступны [men_at_arms|El] — [GetMaA('witchblades').GetName]."
 
 ## CULTURAL RELATIONS PARAMETERS
  culture_parameter_dislikes_marrying_outside_of_heritage:0 "Согласие на [Concept( 'marriage', 'брак' )|E] с представителями культур другого [Concept('heritage', 'наследия')|E]: #N -100#!"
@@ -206,6 +207,7 @@
  culture_parameter_better_military_academies_buildings: "Цепочка [Concept( 'buildings', 'зданий' )|E] #V $building_type_military_academy_01$#! даёт дополнительные бонусы [Concept( 'counties', 'графствам' )|E] этой [Concept( 'culture', 'культуры' )|E]"
  culture_parameter_better_leisure_palace_buildings:0 "Цепочка [Concept( 'buildings', 'зданий' )|E] #V $building_type_leisure_palace_01$#! даёт дополнительные бонусы [Concept( 'counties', 'графствам' )|E] этой [Concept( 'culture', 'культуры' )|E]"
  culture_parameter_can_build_farm_estates_in_plains:0 "Цепочку [Concept( 'buildings', 'зданий' )|E] #V $building_type_farm_estates_01$#! можно строить в графствах с [Concept( 'terrain', 'типом местности' )|E] #V равнины#!"
+ culture_parameter_arenas_give_dread: "Цепочка [Concept( 'buildings', 'зданий' )|E] #V $building_type_arena_01$#! даёт [dread|El]"
 
 ## TRAITS PARAMETERS
  culture_parameter_honorable_traits_bonuses:0 "[traits|E] «[GetTrait('honest').GetName( GetNullCharacter )]» и «[GetTrait('arrogant').GetName( GetNullCharacter )]» дают бонусы"
@@ -269,7 +271,7 @@
  culture_parameter_bonuses_from_theologian_trait:0 "[characters|E] со [Concept( 'trait', 'свойством' )|E] «[GetTrait('theologian').GetName( GetNullCharacter )]» могут созывать более многочисленное [Concept( 'levies', 'ополчение' )|E] и собирать больше [Concept('taxes', 'налогов')|E]"
  culture_parameter_paranoia_bonuses:0 "[trait|E] «[GetTrait('paranoid').GetName( GetNullCharacter )]» увеличивает [prestige_i][prestige|El], а также навык [Concept('diplomacy', 'дипломатии')|E] на [diplomacy_i]#P +2#! и [Concept('intrigue', 'интриг')|E] на [intrigue_i]#P +2#! за [stress_level|El]. [characters|El] со [Concept('trait', 'свойствами')|E] «[GetTrait('confider').GetName( GetNullCharacter )]» и «[GetTrait('trusting').GetName( GetNullCharacter )]» презираются"
  culture_parameter_fairness_valued:0 "[characters|E] со [Concept('trait', 'свойством')|E] «[GetTrait('just').GetName( GetNullCharacter )]» пользуются уважением, а со [Concept('traits', 'свойствами')|E] «[GetTrait('arbitrary').GetName( GetNullCharacter )]» и «[GetTrait('sadistic').GetName( GetNullCharacter )]» — презираются"
- culture_parameter_can_found_orsinium:0 "Могущественные правители могут принять решение #V $create_orsinium_decision$#, заменив существующее [de_jure|El] [kingdom|El] королевством Орсиниум"
+ culture_parameter_can_found_orsinium:0 "Могущественные правители могут принять решение #V $create_orsinium_decision$#!, заменив существующее [de_jure|El] [kingdom|El] королевством Орсиниум"
  culture_parameter_orsinium_defensive_bonuses:0 "Сражения на [de_jure|El] территории Орсиниума дают значительный бонус к [Concept( 'advantage', 'преимуществу' )|E]"
  culture_parameter_orsinium_culture_conversion:0 "Продвижение культуры на [de_jure|El] территории Орсиниума не получает штрафы от несоответствия [Concept( 'nativity_region', 'родного региона' )|E]"
  culture_parameter_scholars_respected:0 "[trait|E] «[GetTrait('scholar').GetName( GetNullCharacter )]» увеличивает [prestige_i][prestige|El]"
@@ -502,7 +504,7 @@
 #Akaviri
  tradition_tsaesci_core_name:0 "Змеиный дворец"
  tradition_tsaesci_core_desc:0 "Целеполагание в каждом шаге и понимание, когда затаиться, а когда нанести удар, — вот самый верный путь к власти."
- tradition_danger_sense_name:0 "Чутьё к опасности"
+ tradition_danger_sense_name:0 "Чутьё на опасность"
  tradition_danger_sense_desc:0 "Акавир — опасное место, и его обитатели учатся чуткости и наблюдательности, без которых иначе не прожить долгую жизнь. Когда этот урок усвоен, приходит интуитивное понимание опасных ситуаций, и оно остаётся близким и верным соратником всюду, куда не заведёт жизнь."
 #Dremora
  tradition_dremora_core_name: "Клятвы даэдра"
@@ -610,7 +612,7 @@
  tradition_khajiit_trigger_desc:0 "Принадлежит к #V каджитскому#! [Concept('heritage', 'наследию')|E]"
  tradition_lilmothiit_trigger_desc:0 "Принадлежит к #V лилмотитскому#! [Concept('heritage', 'наследию')|E]"
  cannot_have_tradition_festivities:0 "Не обладает [Concept('tradition', 'традицией')|E] «[GetCultureTradition('tradition_festivities').GetName|V]»"
- tradition_nedic_trigger_desc:0 "Принадлежит к #V гибельноземельскому#!, #V сиродскому#! #italic или#! #V котрингскому#! [Concept('heritage', 'наследию')|E]"
+ tradition_nedic_trigger_desc: "Принадлежит к #V $horwalli_collective_noun$ой#! или #V $reachfolk_collective_noun$ой#! [Concept('culture', 'культурам')|E] #italic или#! является [Concept('culture', 'культурой')|E], произошедшей от #V $horwalli_collective_noun$ой#! или #V $reachfolk_collective_noun$ой#!."
  tradition_moonsugar_plantations_trigger_desc:0 "Является #italic либо#! #V пеллитинской#! [Concept('culture', 'культурой')|E], #italic либо#! [Concept('culture', 'культурой')|E], произошедшей от #V пеллитинской.#!"
  tradition_beasts_of_war_trigger_desc:0 "Является #italic либо#! #V анеквинской#! [Concept('culture', 'культурой')|E], #italic либо#! [Concept('culture', 'культурой')|E], произошедшей от #V анеквинской.#!"
  tradition_land_dredge_trigger_desc:0 "Принадлежит к #V $heritage_kothri_name$ому#! [Concept('heritage', 'наследию')|E]"

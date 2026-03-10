@@ -59,7 +59,7 @@
  unlocks_county_conquest_cb_mmr:0 "Открывает [casus_belli|El] #V завоевание графства#! для персонажей с [Concept( 'prestige_level', 'уровнем репутации' )|E] равным или превышающим «[GetModifier( 'prestige_level_2' ).GetNameWithTooltip|L]» #weak (подчиняется другим правилам [Concept( 'might_makes_right', 'права сильного' )|E])#!"
  innovation_black_marsh_natives:0 "Жители топей"
  innovation_black_marsh_natives_desc:0 "Для большинства Чернотопье негостеприимно настолько, что пребывание в нём — сродни зловонному кошмару наяву. Но находятся те, кто в нём живёт, кто свыкся с постоянным гниением вокруг, кто знает куда ступать на болоте, кто нетребователен и для кого выразительное и омерзительное многообразие топей предпочтительнее, чем цивилизация в том виде, в котором она существует в землях с условиями более благоприятными."
- innovation_automatically_given_natives_of_black_marsh:0 "Эту [Concept( 'innovation', 'инновацию' )|E] автоматически получают все культуры с [Concept( 'nativity_region', 'родным регионом' )|E] в Чернотопье"
+ innovation_automatically_given_natives_of_black_marsh:0 "Эту [Concept( 'innovation', 'инновацию' )|E] автоматически получают все культуры с [Concept( 'nativity_region', 'родным регионом' )|E] в [GetGeographicalRegion('mundus_tamriel_black_marsh').GetName]"
 ### Pariah innovations
 # Pariah Folk
  innovation_pariah_folk:0 "Гонимый народ"
@@ -86,6 +86,7 @@
 # Daedric Race
  innovation_daedric_race:0 "Даэдрическая раса"
  innovation_daedric_race_desc:0 "Этот народ происходит из Вод Обливиона, и вместо душ у них отголоски. Для многих смертных они [Glossary( 'даэдра', 'DAEDRA_GLOSS' )], опасные пришельцы, которых нужно изгонять любой ценой. После изгнания они обычно отправляются обратно во Внешние Миры, либо, в худшем случае, в Пустоту. Чтобы после этого их наследие не было утрачено, они призывают из Обливиона своих родичей, которые выступают их наследниками."
+ innovation_daedric_race_innovations:0 "Культура открывает случайную доступную [Concept( 'innovation', 'инновацию' )|E] каждые #V 20 лет#!"
  innovation_daedric_race_persecution:0 "Против персонажей, принадлежащих к культуре с этой [Concept( 'innovation', 'инновацией' )|E], можно объявить войну с [casus_belli|El] #V $BANISH_DEMON_DUCHY_NAME$#! при условии, что [faith|El] нападающего не [GetReligionFamily('rf_daedra').GetName]"
  innovation_daedric_race_revocation:0 "Персонажи, принадлежащие к культуре с этой [Concept( 'innovation', 'инновацией' )|E] могут быть отправлены [Concept( 'imprisoned', 'в заточение' )|E], [Concept( 'executed', 'казнены' )|E] или [Concept( 'revoked', 'лишены титулов' )|E] сюзереном не[Concept( 'daedric_race', 'даэдрической' )|E] расы, и это не будет считаться проявлением [Concept( 'tyranny', 'тирании' )|E], если только у них не заключён [vassal_contract|El] «[GetSubjectContractType( 'cultural_rights' ).GetObligationName( 'cultural_rights_protected' )]» или если [faith|El] сюзерена [GetReligionFamily('rf_daedra').GetName]"
  innovation_daedric_race_title_revocation:0 "[recipient.GetShortUIName|U] является [Concept( 'demon_race', 'демоном' )|E], что позволяет [Select_CString( actor.IsLocalPlayer, 'вам', recipient.GetHerHim )] лишать  [Select_CString( recipient.IsLocalPlayer, 'вас', recipient.GetHerHis )] [Concept( 'titles', 'титулов' )|E], не будучи сочтённым [Concept( 'tyrant', 'тираном' )|E]"

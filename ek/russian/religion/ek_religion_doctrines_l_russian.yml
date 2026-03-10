@@ -805,14 +805,13 @@
  doctrine_pantheon_forgotten_gods_name:0 "Забытые боги"
     doctrine_parameter_pantheon_adds_deities_forgotten_gods:0 "Следующие покровители добавляются в [pantheon|El]: Ноторго, Раэн, Вигрил, Шандар, Джим-Сей, Друага, К'Олвен, Сай, Эбонарм, Иус"
     doctrine_pantheon_forgotten_gods_desc:0 "Помните о наставлениях святых и богов, направлявших наших предков задолго до вторжения к нам чужеземных богов."
- special_doctrine_reach_spirits_name:0 "Духи Предела"
  doctrine_pantheon_magna_ge_name:0 "Магна Ге"
     doctrine_parameter_pantheon_adds_deities_magna_ge:0 "Следующие покровители добавляются в [pantheon|El]: Магнус, Мнемо-Ли, Зеро-Лиг"
     doctrine_pantheon_magna_ge_desc:0 "Сверху — девять Снопов Искр, в глазах — Четыре Звезды."
  doctrine_pantheon_lilmothiit_name:0 "Живой Закон"
     doctrine_parameter_pantheon_adds_deities_lilmothiit:0 "Следующие покровители добавляются в [pantheon|El]: Цеол, Йефр"
     doctrine_pantheon_lilmothiit_desc:0 "Мы учимся у Богов, Придающих Форму, тех, кто вдыхают закон в этот мир. Управлять землёй — значит знать её правила."
-    special_doctrine_reach_spirits_desc:0 "Предел стал домом для множества верований, объединяемых в общую группу. Разрозненные племена поклоняются разным богам, но в конечном счёте все они составляют народ Предела."
+    
  special_doctrine_bretic_traditions_name:0 "Бретонские традиции"
     special_doctrine_bretic_traditions_desc:0 "Среди бретонцев встречаются последователи верований столь древних, что в тех землях они предвосхитили даже поклонение Божествам. Все они заслуживают в равной степени уважения."
  special_doctrine_cyrodiilic_cult_name:0 "Сиродильский культ"
@@ -929,7 +928,7 @@
     doctrine_pantheon_vaermina_desc:0 "Госпожа Кошмаров и Сновидений направляет каждый наш шаг и в быту и во снах. Она будет присматривать за нами и встретит нас в Трясине, когда придёт время. "
     doctrine_parameter_worship_vaermina_focused_active:0 "Доступно [Concept( 'daedric_focused', 'генотеистическое' )|E] поклонение Вермине, что позволяет получать более сильные и дешёвые [daedric_boons|El] и делает [daedric_sacrifices|El] более эффективными."
  doctrine_pantheon_daedric_prince_no_softlock_name:0 "Нет ограничения"
-    doctrine_pantheon_daedric_prince_no_softlock_desc:0 "Реализация выбора доктрины устроена довольно сложно с нашей стороны, так что, если вы захотите уйти из-под покровительства своего князя по той или иной причине, можете использовать эту настройку.\n#Внимание НЕ ИСПОЛЬЗОВАТЬ В НОРМАЛЬНОМ ИГРОВОМ ПРОЦЕССЕ#!"
+    doctrine_pantheon_daedric_prince_no_softlock_desc:0 "Реализация выбора доктрины устроена довольно сложно с нашей стороны, так что, если вы захотите уйти из-под покровительства своего князя по той или иной причине, можете использовать эту настройку.\n#warning НЕ ИСПОЛЬЗОВАТЬ В НОРМАЛЬНОМ ИГРОВОМ ПРОЦЕССЕ#!"
  # Reach
  doctrine_pantheon_druadach_name:0 "Друадах"
     doctrine_pantheon_druadach_desc:0 "Мы жили в горах Друадах тысячелетиями. Что для других холодные горы, то для нас божественный прародитель."
@@ -1187,6 +1186,10 @@
  doctrine_parameter_witchcraft_crime_hostility:0 "[Concept( 'faith_hostility', 'Враждебность' )|E] [Concept( 'faiths', 'конфессий' )|E], в которых ведовство [GetFaithDoctrine('doctrine_witchcraft_accepted').GetBaseName], увеличивается на #N +5#!, а конфессий, в которых [GetFaithDoctrine('doctrine_witchcraft_virtuous').GetBaseName] — на N +10#! "
  doctrine_parameter_witchcraft_accepted_hostility:0 "[Concept( 'faith_hostility', 'Враждебность' )|E] [Concept( 'faiths', 'конфессий' )|E], в которых ведовство — [GetFaithDoctrine('doctrine_witchcraft_crime').GetBaseName], увеличивается на #N +5#! "
  doctrine_parameter_witchcraft_virtuous_hostility:0 "[Concept( 'faith_hostility', 'Враждебность' )|E] [Concept( 'faiths', 'конфессий' )|E], в которых ведовство — [GetFaithDoctrine('doctrine_witchcraft_crime').GetBaseName], увеличивается на #N +10#! "
+ 
+ doctrine_parameter_reach_witchcraft_illegal:0 "Персонажи со [Concept('trait', 'свойством')|E] «[GetTrait('hagraven').GetName( GetPlayer )]» или «[GetTrait('briarheart').GetName( GetPlayer )]» считаются [Concept( 'criminals', 'преступниками' )|E]"
+ doctrine_parameter_reach_witchcraft_shunned:0 "Персонажи со [Concept('trait', 'свойством')|E] «[GetTrait('hagraven').GetName( GetPlayer )]» или «[GetTrait('briarheart').GetName( GetPlayer )]» [Concept('shunned', 'порицаются')|E]"
+ doctrine_parameter_reach_witchcraft_accepted:0 "Персонажи со [Concept('trait', 'свойством')|E] «[GetTrait('hagraven').GetName( GetPlayer )]» или «[GetTrait('briarheart').GetName( GetPlayer )]» не подвергаются никаким гонениям"
 
  doctrine_adultery_name:0 "Измены"
  doctrine_adultery_crime_name:0 "Преступление"
@@ -1892,7 +1895,7 @@
 
  tenet_tsaescence_name:0 "Цаэссенция"
     tenet_tsaescence_desc:0 "Сущность, эссенция содержится в каждом слове, и имена не исключение. Их содержимого можно достичь так же, как яйца — вскрыв оболочку-скорлупу, дабы поглотить то, что внутри и, преобразившись, стать сильнее."
-    doctrine_parameter_tsaescence_interaction_active:0 "Доступно [interaction|El] #V $consume_interaction$#!, увеличивающее уровень [Concept( 'tsaescence', 'цаэссенции' )|E]. #bold Необходимо знать [language|El] #V $language_tsaesci_name$#! "
+    doctrine_parameter_tsaescence_interaction_active:0 "Доступно [interaction|El] #V $consume_interaction$#!, увеличивающее уровень [Concept( 'tsaescence', 'цаэссенции' )|E]. #bold Необходимо знать [language|El] #V $language_tsaesci_name$#! #!"
 
  # Terrain stuff
  tenet_children_skyrim_name:0 "Дети неба"
@@ -1916,13 +1919,13 @@
 
  tenet_lifestyle_int_faith_name:0 "Поклонение теням"
     tenet_lifestyle_int_faith_desc:0 "Нашим богам лучше поклоняться тайно и в тенях. Только так можно по-настоящему распространить своё влияние в мире."
-    doctrine_parameter_children_education_intrigue:0 "[children|E] с большей вероятностью получат [Concept('education', 'образование')|E] в области [Concept( 'Intrigue', 'интриг' )|E] и достигнут в нём успехов"
+    doctrine_parameter_children_education_intrigue:0 "[children|E] с большей вероятностью получат [Concept('education', 'образование')|E] в области [Concept( 'intrigue', 'интриг' )|E] и достигнут в нём успехов"
 
  tenet_lifestyle_lea_faith_name:0 "Прославление знаний"
     tenet_lifestyle_lea_faith_desc:0 "Знания — источник любой силы. Мы никогда не должны прекращать свои изыскания, пусть даже ради самих изысканий."
     doctrine_parameter_children_education_learning:0 "[children|E] с большей вероятностью получат [Concept('education', 'образование')|E] в области [Concept( 'learning', 'учёности' )|E] и достигнут в нём успехов"
 
- # Cult tenets
+# Cult tenets
  tenet_militant_cult_name:0 "Воинственный культ"
    tenet_militant_cult_desc:0 "Боги поручили нам ужасную, но великую миссию: подготовить Мундус к их пришествию. Если же еретики будут слепы, мы будем говорить с ними на языке пламени и клинка."
    doctrine_parameter_characters_easier_counties_harder:0 "[characters|E] охотнее обращаются в эту [Concept('faith', 'конфессию')|E], но обратить [counties|El] тяжелее"
@@ -1943,6 +1946,15 @@ tenet_personality_cult_name:0 "Культ личности"
    doctrine_requires_temporal_head_of_faith:0 "Требуется [doctrine|El] [temporal_head_of_faith|El]"
 
  # Criminals are cool stuff
+ 
+ 
+  tenet_reach_spirits_name:0 "Духи Предела"
+    tenet_reach_spirits_desc:0 "Предел стал домом для множества верований, объединяемых в общую группу. Разрозненные племена поклоняются разным богам, но в конечном счёте все они составляют народ Предела."
+    witchcraft_must_be_accepted:0 "Несовместимо с любой [Concept( 'doctrine', 'доктриной' )|E], в которой ведовство [Concept('shunned', 'порицается')|E] или считается [Concept('criminal', 'преступлением')|E]"
+    tenet_reach_spirits_requirement:0 "Является #L [GetReligionByKey('reach_religion').GetName|l]ой#! конфессией"
+    doctrine_parameter_become_hagraven_active:0 "Женщины этой [Concept('faith', 'конфессии')|E] со свойством «[GetTrait('witch').GetName( GetNullCharacter )]» могут получить свойство «[GetTrait('hagraven').GetName( GetNullCharacter )]»"
+    doctrine_parameter_become_briarheart_active:0 "Персонажи этой [Concept('faith', 'конфессии')|E] могут получить свойство «[GetTrait('briarheart').GetName( GetNullCharacter )]»"
+    
  tenet_necromancy_worship_name:0 "Мастерство над не-жизнью"
     tenet_necromancy_worship_desc:0 "Мы благословлены силами некромантии. Этот дар священен и составляет то, что связывает нас с высшими силами."
     NECROMANCY_MUST_BE_FULLY_ACCEPTED:0 "Несовместимо с любыми [Concept( 'doctrine', 'доктринами' )|E], для которых некромантия [Concept( 'shunned', 'достойна порицания' )|E] или является [Concept( 'criminal', 'преступлением' )|E]""
