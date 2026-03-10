@@ -98,7 +98,7 @@
 
 
 # Tradition parameters
- culture_parameter_unlock_maa_nedic_headhunters: "Can recruit [GetMaA('south_nedic_headhunters').GetName], [GetMaA('central_nedic_headhunters').GetName] or [GetMaA('north_nedic_headhunters').GetName] as [men_at_arms|E] depending on the branch of the Nedic [heritage|E] they belong to or descend from."
+ culture_parameter_unlock_maa_headhunters: "Can recruit [GetMaA('headhunters').GetName] as [men_at_arms|E]."
  culture_parameter_unlock_maa_jungle_peltasts: "Can recruit [GetMaA('jungle_peltasts').GetName] as [men_at_arms|E]"
  culture_parameter_unlock_maa_winged_avengers: "Can recruit [GetMaA('winged_avengers').GetName] as [men_at_arms|E]"
  culture_parameter_unlock_maa_dunmer_oathmen: "Can recruit [GetMaA('dunmer_oathmen').GetName] as [men_at_arms|E]"
@@ -141,6 +141,7 @@
  culture_parameter_unlock_maa_yokudan_guard: "Can recruit [GetMaA('yokudan_guard').GetName] as [men_at_arms|E]"
  culture_parameter_unlock_maa_herd_mammoths: "Can recruit [GetMaA('herd_mammoth').GetName] as [men_at_arms|E]"
  culture_parameter_unlock_maa_witch_knights: "Can recruit [GetMaA('witch_knight').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_witchblades: "Can recruit [GetMaA('witchblades').GetName] as [men_at_arms|E]."
 
 ## CULTURAL RELATIONS PARAMETERS
  culture_parameter_dislikes_marrying_outside_of_heritage: "[marriage|E] Acceptance towards cultures of a different [heritage|E]: #N -100#!"
@@ -206,6 +207,7 @@
  culture_parameter_better_military_academies_buildings: "The #V $building_type_military_academy_01$#! line of [buildings|E] have additional bonuses in [counties|E] of this [culture|E]"
  culture_parameter_better_leisure_palace_buildings: "The #V $building_type_leisure_palace_01$#! line of [buildings|E] have additional bonuses in [counties|E] of this [culture|E]"
  culture_parameter_can_build_farm_estates_in_plains: "The #V $building_type_farm_estates_01$#! line of [buildings|E] can be constructed in #V Plains#! [terrain|E]"
+ culture_parameter_arenas_give_dread: "The #V $building_type_arena_01$#! line of [buildings|E] give [dread|E]"
 
 ## TRAITS PARAMETERS
  culture_parameter_honorable_traits_bonuses: "The [GetTrait('honest').GetName( GetNullCharacter )] and [GetTrait('arrogant').GetName( GetNullCharacter )] [traits|E] have bonuses"
@@ -610,7 +612,7 @@
  tradition_khajiit_trigger_desc: "Is #V $heritage_khajiiti_name$#! [heritage|E]"
  tradition_lilmothiit_trigger_desc: "Is #V $heritage_lilmothiit_name$#! [heritage|E]"
  cannot_have_tradition_festivities: "Does not have the [GetCultureTradition('tradition_festivities').GetName|V] [tradition|E]"
- tradition_nedic_trigger_desc: "Is either #V $heritage_deathlander_name$, #V $heritage_cyrod_name$#! #italic or#! #V $heritage_kothri_name$#! [heritage|E]."
+ tradition_nedic_trigger_desc: "Is either #V $horwalli$#! #italic or#! a [culture|E] descended from #V $horwalli$#! or #V $reachfolk$ #italic or#! a [culture|E] descended from #V $reachfolk$#!."
  tradition_moonsugar_plantations_trigger_desc: "Is either #V $pellitinian$#! #italic or#! a [culture|E] descended from #V $pellitinian$.#!"
  tradition_beasts_of_war_trigger_desc: "Is either #V $anequinan$#! #italic or#! a [culture|E] descended from #V $anequinan$.#!"
  tradition_land_dredge_trigger_desc: "Is #V $heritage_kothri_name$#! [heritage|E]"

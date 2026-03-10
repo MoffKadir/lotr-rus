@@ -59,7 +59,7 @@
  unlocks_county_conquest_cb_mmr: "Unlocks the #V County Conquest#! [casus_belli|E] for characters with a [prestige_level|E] equal or superior to [GetModifier( 'prestige_level_2' ).GetNameWithTooltip|L] #weak (follows the other [might_makes_right|E] mechanics)#!"
  innovation_black_marsh_natives: "Marsh-Steading"
  innovation_black_marsh_natives_desc: "Black Marsh is, to most people, inhospitable to the point of being a fetid hell. But still there are those who live here, those who have grown accustomed to the constant rot, who know what solid ground to trust, whose expectations are low and who use the eccentric and repulsive abundance of the bogs instead of civilisation as it can exist elsewhere, in less chaotic lands."
- innovation_automatically_given_natives_of_black_marsh: "This [innovation|E] is automatically given to any Culture that is [native|E] to any [nativity_region|E] in Black Marsh"
+ innovation_automatically_given_natives_of_black_marsh: "This [innovation|E] is automatically given to any Culture that is [native|E] to any [nativity_region|E] in [GetGeographicalRegion('mundus_tamriel_black_marsh').GetName]"
 ### Pariah innovations
 # Pariah Folk
  innovation_pariah_folk: "Pariah Folk"
@@ -86,6 +86,7 @@
 # Daedric Race
  innovation_daedric_race: "Daedric Race"
  innovation_daedric_race_desc: "Hailing from the Waters of Oblivion, these people have vestiges instead of souls. Many mortals consider [Glossary( 'Daedra', 'DAEDRA_GLOSS' )] dangerous interlopers that must be driven out at all costs. Once banished, they will go back to the Outer Realms or — in the worst case — the Void. To ensure their efforts are not wasted, they call forth kindred that succeed them upon banishment."
+ innovation_daedric_race_innovations: "A random available [innovation|E] is unlocked for this culture every #V 20 years#!"
  innovation_daedric_race_persecution: "Characters of a culture with this [innovation|E] may be targeted using the $BANISH_DEMON_DUCHY_NAME$ [casus_belli|E], unless the attacker follows a [GetReligionFamily('rf_daedra').GetName] [faith|E]"
  innovation_daedric_race_revocation: "Characters of a culture with this [innovation|E] may be [imprisoned|E], [executed|E] or [revoked|E] from by non-[daedric_race|E] lieges without it being considered [tyranny|E], unless they are a [vassal|E] with the [GetSubjectContractType( 'cultural_rights' ).GetObligationName( 'cultural_rights_protected' )] [vassal_contract|E] or the liege follows a [GetReligionFamily('rf_daedra').GetName] [faith|E]"
  innovation_daedric_race_title_revocation: "[recipient.GetShortUIName|U] is a [demon_race|E], allowing [Select_CString( actor.IsLocalPlayer, 'you', 'them' )] to revoke [Select_CString( recipient.IsLocalPlayer, 'your', recipient.GetHerHis )] [titles|E] without being viewed as a [tyrant|E]"

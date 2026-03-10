@@ -805,14 +805,13 @@
  doctrine_pantheon_forgotten_gods_name: "Forgotten Gods"
     doctrine_parameter_pantheon_adds_deities_forgotten_gods: "Adds the following Patrons to the [pantheon|E]: Notorgo, Raen, Vigryl, Shandar, Jhim Sei, Druaaga, Q'Olwen, Sai, Ebonarm, Ius"
     doctrine_pantheon_forgotten_gods_desc: "Remember the teachings of the Saints and Gods, who guided our ancestors long before foreign deities encroached upon us."
- special_doctrine_reach_spirits_name: "Spirits of the Reach"
  doctrine_pantheon_magna_ge_name: "Magna-Ge"
     doctrine_parameter_pantheon_adds_deities_magna_ge: "Adds the following Patrons to the [pantheon|E]: Magnus, Mnemo-Li, Xero-Lyg"
     doctrine_pantheon_magna_ge_desc: "Nine Coruscations above, Four Stars in my eyes."
  doctrine_pantheon_lilmothiit_name: "Living Law"
     doctrine_parameter_pantheon_adds_deities_lilmothiit: "Adds the following Patrons to the [pantheon|E]: Tseol, Jefr"
     doctrine_pantheon_lilmothiit_desc: "We learn from the Shaping Gods who breathe Laws into the world. To know the operations of the land is to control it."
-    special_doctrine_reach_spirits_desc: "The Reach is home to many beliefs, all of which make a greater whole. Their disparate tribes may serve different gods, but ultimately they are all people of the Reach."
+
  special_doctrine_bretic_traditions_name: "Bretic Traditions"
     special_doctrine_bretic_traditions_desc: "Among the Bretons are found many faiths more ancient in these lands than even the worship of the Divines. They are all deserving of mutual respect."
  special_doctrine_cyrodiilic_cult_name: "Cyrodilic Cult"
@@ -1186,7 +1185,10 @@
  ### Crimes
  doctrine_parameter_witchcraft_crime_hostility: "Increases [faith_hostility|E] with [faiths|E] where Witchcraft is [GetFaithDoctrine('doctrine_witchcraft_accepted').GetBaseName] by #N +5#! and [GetFaithDoctrine('doctrine_witchcraft_virtuous').GetBaseName] by #N +10#!"
  doctrine_parameter_witchcraft_accepted_hostility: "Increases [faith_hostility|E] with [faiths|E] where Witchcraft is [GetFaithDoctrine('doctrine_witchcraft_crime').GetBaseName] by #N +5#!"
- doctrine_parameter_witchcraft_virtuous_hostility: "Increases [faith_hostility|E] with [faiths|E] where Witchcraft is [GetFaithDoctrine('doctrine_witchcraft_crime').GetBaseName] by #N +10#!
+ doctrine_parameter_witchcraft_virtuous_hostility: "Increases [faith_hostility|E] with [faiths|E] where Witchcraft is [GetFaithDoctrine('doctrine_witchcraft_crime').GetBaseName] by #N +10#!"
+ doctrine_parameter_reach_witchcraft_illegal: "Characters with the [GetTrait('hagraven').GetName( GetPlayer )] or [GetTrait('briarheart').GetName( GetPlayer )] [trait|E] are [criminals|E]"
+ doctrine_parameter_reach_witchcraft_shunned: "Characters with the [GetTrait('hagraven').GetName( GetPlayer )] or [GetTrait('briarheart').GetName( GetPlayer )] [trait|E] are [shunned|E]"
+ doctrine_parameter_reach_witchcraft_accepted: "Characters with the [GetTrait('hagraven').GetName( GetPlayer )] or [GetTrait('briarheart').GetName( GetPlayer )] [trait|E] are fully accepted"
 
  doctrine_adultery_name: "Adultery"
  doctrine_adultery_crime_name: "Criminal"
@@ -1922,7 +1924,7 @@
     tenet_lifestyle_lea_faith_desc: "Knowledge is the source of all power. We should always seek more, even if only for its own sake."
     doctrine_parameter_children_education_learning: "[children|E] are more likely to receive and do well in a [learning_skill|E] [education|E]"
 
- # Cult tenets
+# Cult tenets
  tenet_militant_cult_name: "Militant Cult"
    tenet_militant_cult_desc: "The Gods have imparted upon us a great and terrible mission, to prepare all Mundus to bask in their radiance. Should the infidels be blind to all but the blade's glint and the fire's blaze, then let us be free in their language."
    doctrine_parameter_characters_easier_counties_harder: "[characters|E] are easier to convert to this [faith|E], while [counties|E] are harder"
@@ -1943,9 +1945,18 @@ tenet_personality_cult_name: "Personality Cult"
    doctrine_requires_temporal_head_of_faith: "Requires the [doctrine|E] [temporal_head_of_faith|E]"
 
  # Criminals are cool stuff
+
+
+ tenet_reach_spirits_name: "Spirits of the Reach"
+    tenet_reach_spirits_desc: "The Reach is home to many beliefs, all of which make a greater whole. Their disparate tribes may serve different gods, but ultimately they are all people of the Reach."
+    witchcraft_must_be_accepted: "Incompatible with any [doctrine|E] that makes Witchcraft [shunned|E] or [criminal|E]
+    tenet_reach_spirits_requirement: "Must be a [GetReligionByKey('reach_religion').GetName] faith"
+    doctrine_parameter_become_hagraven_active: "Female [GetTrait('witch').GetName( GetNullCharacter )] characters of this [faith|E] may become [GetTrait('hagraven').GetName( GetNullCharacter )]"
+    doctrine_parameter_become_briarheart_active: "Characters of this [faith|E] may become [GetTrait('briarheart').GetName( GetNullCharacter )]"
+
  tenet_necromancy_worship_name: "Mastery over Undeath"
     tenet_necromancy_worship_desc: "We have been blessed with the powers of necromancy. These powers should be considered sacred, and part of our bond with the divine."
-    NECROMANCY_MUST_BE_FULLY_ACCEPTED: "Incompatible with any [doctrine|E] that makes necromancy [shunned|E] or [criminal|E]"
+    NECROMANCY_MUST_BE_FULLY_ACCEPTED: "Incompatible with any [doctrine|E] that makes Necromancy [shunned|E] or [criminal|E]"
     doctrine_parameter_lich_ascension: "The #V 'Become a Lich'#! [decision|E] is slightly less risky"
     doctrine_parameter_lich_trait_arcana: "The [GetTrait('lich_character').GetName( GetNullCharacter )] trait gives [arcana_i][arcana|E]: #P +2#!"
     doctrine_parameter_cheaper_necromancy_spells: "Necromancy [spell|E] cost: [magicka_i]#P -10%#!"

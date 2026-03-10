@@ -72,16 +72,21 @@
 
  game_concept_end_date_desc: "2E 896 is the End Date, and upon reaching it the game will end."
  
- #EK EDIT: renamed co-emperor to High Chancellor
- game_concept_co_emperor: "High Chancellor" #Replaced co-emperor
- game_concept_co_emperors: "High Chancellors" #Replaced co-emperors
- co_emperorship_diarch_title: "High Chancellor" #Replaced co-emperor
- game_concept_duumvirate_desc: "A $game_concept_duumvirate$ is the rule of one [empire|E] by two [characters|E]. An emperor (the [liege|E]), and co-emperor (the $game_concept_co_emperor$).\n\nThey generate passive [influence|E] for both themselves and their emperor. How much exactly scales up every [EmptyScope.ScriptValue('co_emperor_scale_years_in_job_value')|0] years in the job, including any time they spent as [junior_emperor|E].\n\nIn practice, most power still rests in the hands of the $game_concept_liege$ who actually holds the imperial title rather than their [diarch|E], but the $game_concept_co_emperor$ does have access to several powerful ways to affect the [realm|E] & is a cheaper candidate to promote for [administrative|E] positions.\n\nNotably, $game_concept_co_emperors$ can use the [imperial_expedition_cb|E] [casus_belli|E] at higher levels of [scales_of_power|E] swing.\n\n#WEAK $game_concept_co_emperors$ are able to [usurp|E] their senior emperor via ritually maiming them.#!"
+ #EK EDIT: renamed co-emperor to Viceroy
+ game_concept_co_emperor: "Viceroy" #Replaced co-emperor
+ game_concept_co_emperors: "Viceroys" #Replaced co-emperors
+ co_emperorship_diarch_title: "Viceroy" #Replaced co-emperor
+ game_concept_duumvirate_desc: "A $game_concept_duumvirate$ is the rule of one [empire|E] by two [characters|E]. A senior high king (the [liege|E]), and a junior high king (the $game_concept_co_emperor$).\n\nThey generate passive [influence|E] for both themselves and their senior high king. How much exactly scales up every [EmptyScope.ScriptValue('co_emperor_scale_years_in_job_value')|0] years in the job, including any time they spent as [junior_emperor|E].\n\nIn practice, most power still rests in the hands of the $game_concept_liege$ who actually holds the imperial title rather than their [diarch|E], but the $game_concept_co_emperor$ does have access to several powerful ways to affect the [realm|E] & is a cheaper candidate to promote for [administrative|E] positions.\n\nNotably, $game_concept_co_emperors$ can use the [imperial_expedition_cb|E] [casus_belli|E] at higher levels of [scales_of_power|E] swing.\n\n#WEAK $game_concept_co_emperors$ are able to [usurp|E] their senior high king via ritually maiming them.#!"
+ ep3_truce_appointed_faction_leader_coruler: "Truce after Faction Leader elevated to Viceroy"
+ action_appoint_co_emperor_adult_child_label: "@declare_regent_icon! $action_appoint_co_emperor_adult_child$"
+ action_appoint_co_emperor_adult_child_desc: "You are reaching a respectable age, and appointing one of your [children|E] as [Concept( 'duumvirate', 'Viceroy' )|E] could help secure the throne for your dynasty in the event of your [Concept( 'character_death', 'unfortunate demise' )|E].$action_appoint_co_emperor_adult_child_help$"
+ request_co_emperor_interaction: "Declare me Viceroy"
+ declare_me_co_emperor_interaction.tt.success: "Appointed Viceroy"
+ systematically_maim_character_interaction: "Maim Viceroy"
  
  game_concept_theme: "Province" #Replaced Theme
  game_concept_themes: "Provinces" #Replaced Themes
  game_concept_thematic: "Provincial" #Replaced Thematic
- THEME_DUCHY_SORT_THEME_TROOPS: "Province Troops" #Replaced Theme
  
  game_concept_imperial_family: "Ruling Family" #Replaced Imperial
  
@@ -109,4 +114,4 @@
  
  game_concept_unassigned_vassal_desc: "$game_concept_unassigned_vassals$ are [autocracy|E] [vassals|E] who are not assigned to a [tax_jurisdiction|E] as [taxpayers|E], and therefore not contributing [taxes|E] or [levies|E].\n\nOnce assigned to a $game_concept_tax_jurisdiction$ with a [tax_collector|E], they will start paying monthly."
 #EK EDIT: added dynastic acclamation
-  game_concept_appointment_succession_law_desc: "Under $game_concept_appointment_succession_law$, the [title|E] and its associated [holdings|E] will be inherited by the Candidate with the highest [candidate_score|E].\n\nThe types are:\n$EFFECT_LIST_BULLET$[GetLaw('appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('acclamation_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('dynastic_acclamation_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_military_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_ministry_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_grand_marshal_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('meritocratic_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('meritocratic_military_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('japanese_appointment_succession_law').GetName]"
+ game_concept_appointment_succession_law_desc: "Under $game_concept_appointment_succession_law$, the [title|E] and its associated [holdings|E] will be inherited by the Candidate with the highest [candidate_score|E].\n\nThe types are:\n$EFFECT_LIST_BULLET$[GetLaw('appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('acclamation_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('dynastic_acclamation_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_military_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_ministry_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('celestial_grand_marshal_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('meritocratic_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('meritocratic_military_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[GetLaw('japanese_appointment_succession_law').GetName]"
