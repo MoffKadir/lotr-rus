@@ -97,6 +97,14 @@ window = {
 		name = check_ethnicity_imga
 		on_start = "[VariableSystem.Set( 'ek_race', Localize('RACE_IMGA') )]"
 		on_start = "[VariableSystem.Set( 'ek_ethnicity', RulerDesignerWindow.GetEthnicity.GetName )]"
+		on_finish = "[PdxGuiTriggerAllAnimations( Select_CString( VariableSystem.HasValue( 'ek_ethnicity', 'no' ), 'check_ethnicity_giant', 'state_null' ) )]"
+	}
+
+	state = {
+
+		name = check_ethnicity_giant
+		on_start = "[VariableSystem.Set( 'ek_race', Localize('RACE_GIANT') )]"
+		on_start = "[VariableSystem.Set( 'ek_ethnicity', RulerDesignerWindow.GetEthnicity.GetName )]"
 		on_finish = "[PdxGuiTriggerAllAnimations( Select_CString( VariableSystem.HasValue( 'ek_ethnicity', 'no' ), 'check_ethnicity_dremora', 'state_null' ) )]"
 	}
 
@@ -1528,6 +1536,58 @@ window = {
 
 											layoutpolicy_horizontal = expanding
 											visible = "[VariableSystem.HasValue( 'ek_race', Localize('RACE_IMGA') )]"
+											ek_ethnicity_button = {
+												blockoverride "button"
+												{
+													margin = { 5 0 }
+													margin_left = 80
+													spacing = 10
+												}
+											}
+										}
+									}
+
+									vbox = {
+										visible = "[VariableSystem.Exists( 'ek_subraces_visible' )]"
+										layoutpolicy_horizontal = expanding
+										hbox = {
+											name = "Giant"
+											layoutpolicy_horizontal = expanding
+
+											
+											
+											button_standard_hover = {
+												layoutpolicy_horizontal = expanding
+												onclick = "[VariableSystem.Toggle( 'ek_ethnicities_visible' )]"
+												onclick = "[VariableSystem.Set( 'ek_race', Localize('RACE_GIANT') )]"
+	
+												hbox = {
+													margin = { 5 0 }
+													margin_left = 40
+													spacing = 10
+	
+													button_list_expand = {
+														checked = "[And(VariableSystem.Exists( 'ek_ethnicities_visible' ), VariableSystem.HasValue( 'ek_race', Localize('RACE_GIANT') ))]"
+														onclick = "[VariableSystem.Toggle( 'ek_ethnicities_visible' )]"
+														onclick = "[VariableSystem.Set( 'ek_race', Localize('RACE_GIANT') )]"
+													}
+	
+													text_single = {
+														layoutpolicy_horizontal = expanding
+														text = "RACE_GIANT"
+														size = { 0 40 }
+														align = nobaseline
+														default_format = "#clickable"
+														autoresize = no
+													}
+												}
+											}
+										}
+										
+										hbox = {
+
+											layoutpolicy_horizontal = expanding
+											visible = "[VariableSystem.HasValue( 'ek_race', Localize('RACE_GIANT') )]"
 											ek_ethnicity_button = {
 												blockoverride "button"
 												{
