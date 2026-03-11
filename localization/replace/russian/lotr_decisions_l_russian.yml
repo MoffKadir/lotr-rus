@@ -154,8 +154,9 @@
 
  decision_claim_high_kingship: "Претендовать на титул [Select_CString(ROOT.Char.IsFemale, 'верховной королевы', 'верховного короля' )] нолдор"
  decision_claim_high_kingship_desc: "С тех пор, как Гиль-галад пал во время [Concept('lastalliance', 'Войны Последнего союза')|E], у нас не было верховного короля [noldorelves|El]. Нолдор больше не нуждались в короле, и отказавшись от трона, я [Select_CString(ROOT.Char.IsFemale, 'оказала', 'оказал' )] честь своему сюзерену и дорогому другу. Более того, я не [Select_CString(ROOT.Char.IsFemale, 'желала', 'желал' )] этого титула.\n\nОднако, возможно, я [Select_CString(ROOT.Char.IsFemale, 'ошибалась', 'ошибался' )]. В эти угасающие дни, когди тени тянутся всё дальше, а свет тускнеет, возможно, [eldar|El] нуждаются в верховных королях больше, чем когда-либо."
+ decision_claim_high_kingship_maglor_desc: "В давно минувшие дни [Concept('noldorelves', 'нолдор')|E] пересекли море по многим причинам, но одной из них было желание разрушить творения [Concept('morgothcharacter', 'Моргота')|E]. Тогда мы думали, что его тьма исчезла навсегда, но его прислужник продолжал своё чёрное дело. Теперь [Concept('sauroncharacter', 'Саурон')|E], наконец, полностью уничтожен, но посеянные им тёмные семена ещё предстоит выкорчеваь, чтобы они не породили новую тень.\n\nВ эти последние, угасающие дни нолдор предстоит завершить великую работу нашего долгого изгнания, уничтожив последние остатки наследия Тёмного властелина, прежде чем мы отправимся на запад. Хотя в глубине души я всегда буду регентом при более достойных королях, пока снова не предстану перед ними, если нолдор будут нуждаться во мне - я поведу их за собой."
  decision_claim_high_kingship_tooltip: "Претендовать на титул [Select_CString(ROOT.Char.IsFemale, 'верховной королевы', 'верховного короля' )] [noldorelves|El]"
- decision_claim_high_kingship_confirm: "Пусть верховные короли вновь противостоят Тени."
+ decision_claim_high_kingship_confirm: "Пусть верховные короли правят вновь."
  decision_claim_high_kingship_effect_tooltip: "Каждый [elf|El] в [Concept('lindon', 'Линдоне')|E] станет вашим вассалом."
 
  decision_penni_tsunami: "Воззвать к нуйневари"
@@ -1019,9 +1020,9 @@
  decision_restore_gondor_province.tt.enedhwaith_desc: ""
  reintegrate_province_enedhwaith_tooltip: "#T #V Выдвинуть претензию на дикие болотистые земли провинции [GetTitleByKey('e_enedhwaith').GetNameNoTier]#! #!\n\n[enedhwaith|E] всегда был дикой землёй, определяемой границами [Concept( 'northernkingdom', 'Северного королевства' )|E] и [Concept( 'southernkingdom', 'Южного королевства' )|E]. [dunedain|E] не проявляли к ним особого интереса, разве что поддерживали великий тракт, связывавший север и юг. Теперь, наконец, наши позиции в этом регионе достаточно прочны, чтобы мы могли должным образом интегрировать их в нашу державу."
 
- decision_restore_gondor_province.tt.eregion: "[GetTitleByKey('k_eregion').GetNameNoTier]"
+ decision_restore_gondor_province.tt.eregion: "[GetGeographicalRegion('middleearth_west_eregion').GetName]"
  decision_restore_gondor_province.tt.eregion_desc: ""
- reintegrate_province_eregion_tooltip: "#T #V Восстановить заброшенные руины провинции [GetTitleByKey('k_eregion').GetNameNoTier]#! #!\n\n[eregion|E] пустовал со времён [Concept( 'waroftheelvesandsauron', 'Войны эльфов и Саурона' )|E]. Немногие [Concept( 'conceptracemen', 'люди' )|E] осмеливались ступить в него, а тем более поселиться там, ибо говорили, что там обитают призраки, затаившиеся в разбросанных [Concept( 'elven', 'эльфийских' )|E] руинах. Но нам удалось усмирить это затерянное королевство и восстановить порядок в регионе, и теперь мы можем официально включить его в состав нашей державы."
+ reintegrate_province_eregion_tooltip: "#T #V Восстановить заброшенные руины провинции [GetGeographicalRegion('middleearth_west_eregion').GetName]#! #!\n\n[eregion|E] пустовал со времён [Concept( 'waroftheelvesandsauron', 'Войны эльфов и Саурона' )|E]. Немногие [Concept( 'conceptracemen', 'люди' )|E] осмеливались ступить в него, а тем более поселиться там, ибо говорили, что там обитают призраки, затаившиеся в разбросанных [Concept( 'elven', 'эльфийских' )|E] руинах. Но нам удалось усмирить это затерянное королевство и восстановить порядок в регионе, и теперь мы можем официально включить его в состав нашей державы."
 
  ## Old Reintegration Decisions ##
  decision_recover_harondor: "Вернуть Харондор"
@@ -3718,7 +3719,9 @@
 
  request_ranger_contract_decision: "Попросить контракты следопытов"
  request_ranger_contract_decision_desc: "Прошло уже некоторое время с тех пор, как ваш сюзерен поручал вам что-либо, а следопытам нужно быть всегда начеку, чтобы отточить свои навыки до совершенства."
- request_ranger_contract_decision_tooltip: "Ваш сюзерен предоставит вам контракты следопыта для выполнения."
+ request_ranger_contract_decision_tooltip: "Ваш сюзерен предоставит вам [Concept('ranger_task_contracts', 'контракты следопыта')|E] для выполнения."
+ ranger_in_liege_lands_tooltip: "Вы #bold не#! разбили лагерь на землях своего сюзерена"
+ valid_employers_for_ranger_contract_tooltip: "Вокруг вашего местоположения нет доступных целей для [Concept('ranger_task_contracts', 'контрактов следопытов')|E]"
  request_ranger_contract_decision_confirm: "У нас много работы."
 
  ### start_city_construction_decision
