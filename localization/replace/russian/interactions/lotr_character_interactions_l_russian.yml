@@ -127,6 +127,11 @@
 
  LOTR_DISLOYAL_REASON: "Вы вероломны: $VALUE|=+0$"
  submission_to_the_dark_lord: "[recipient.GetName] - [Select_CString(recipient.IsFemale, 'скромная служанка', 'скромный слуга' )] Тёмного властелина: $VALUE|=+0$"
+ liege_not_orc_or_evil_spirit: "[recipient.GetName] #bold не#! является [Concept('orc', 'орком')|E], [Concept('nazgulcharacter', 'назгул')|E] или [Concept('alignment_evil', 'злым')|E] [Concept('maiagod', 'майа')|E]"
+ liege_not_elf_or_maia: "[recipient.GetName] #bold не#! является [Concept('elf', 'эльфом')|E] или [Concept('alignment_good', 'добрым')|E] [Concept('maiagod', 'майа')|E]"
+ liege_elf_or_orc: "[recipient.GetName] является [Concept('elf', 'эльфом')|E] или [Concept('orc', 'орком')|E]"
+ liege_not_patron: "[recipient.GetName] #bold не#! является вашим [Concept('contact_list_contacts', 'покровителем')|E]"
+ liege_not_patron_and_friend: "[recipient.GetName] #bold не#! является вашим [Concept('contact_list_contacts', 'покровителем')|E] и [Concept('friend', 'другом')|E]"
 
  lotr_orc_ruler_appoint_second_in_command_interaction: "Назначить правой рукой"
  lotr_orc_ruler_appoint_second_in_command_interaction_desc: "Назначить персонажа [recipient.GetName] своей правой рукой, выбрав [Select_CString(recipient.IsFemale, 'её', 'его' )] [Concept('primary_heir', Select_CString(recipient.IsFemale, 'первой наследницей', 'первым наследником' ))|E] до отстранения."

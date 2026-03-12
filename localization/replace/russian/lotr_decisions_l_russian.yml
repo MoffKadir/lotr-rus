@@ -119,7 +119,7 @@
  decision_noldor_anduin_desc: "Наследие Гиль-галада, которое когда-то простиралось до самых границ [Concept('greenwood', 'Зеленолесья')|E], станет таким снова, и Долина Андуина окажется под властью нолдор."
  decision_noldor_anduin_confirm: "Долина Андуина вновь под властью нолдорской гегемонии."
  decision_noldor_anduin_tooltip: "Утвердить нолдорскую гегемонию над Долиной Андуина"
- no_independent_rulers_in_lorien: "В регионе [GetGeographicalRegion('custom_lorien').GetName] нет [Concept('independent_ruler', 'независимых правителей')|E]"
+ no_independent_rulers_in_lorien: "В регионе [GetGeographicalRegion('middleearth_west_rhovanion_lothlorien').GetName] нет [Concept('independent_ruler', 'независимых правителей')|E]"
  no_evil_rulers_in_misty_mountains_tt: "В регионе [GetGeographicalRegion('custom_misty_mountian_surface_caves').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
  no_evil_rulers_in_anduin_tt: "В регионе [GetGeographicalRegion('middleearth_west_rhovanion_anduin').GetName] нет правителей с [Concept('faith', 'конфессиями')|E] Зла"
 
@@ -2340,9 +2340,9 @@
  decision_claim_orjalun_confirm: "Наша восточная граница будет защищена!"
 
  decision_build_ghaesch_kanra_fortress: "Построить крепость Гаэш-Канра"
- decision_build_ghaesch_kanra_fortress_tooltip: "Построить могучую крепость против угрозы с востока"
- decision_build_ghaesch_kanra_fortress_desc: "Нашему королевству постоянно угрожает фундаменталистская империя Кхай, поклоняющаяся своей ложной богине солнца Ариэн. Если мы хотим остановить их неизбежные вторжения на наши территории из земель Ашанура, мы должны построить укрепления, подобные Тёмной цитадели Абрахана. Их стены погасят свет слабых богов кхайцев, если они придут к нам."
- decision_build_ghaesch_kanra_fortress_confirm: "Ни один луч свет с востока не пройдёт."
+ decision_build_ghaesch_kanra_fortress_tooltip: "Построить могучую крепость против угрозы из Кхая"
+ decision_build_ghaesch_kanra_fortress_desc: "Нашему королевству постоянно угрожает могучая восточная империя Кхай. Если мы хотим остановить их неизбежные вторжения на наши территории из земель Ашанура, мы должны построить укрепления, подобные Тёмной цитадели Абрахана. Полчища дикарей будут остановлены нашими высокими стенами, если они придут к нам."
+ decision_build_ghaesch_kanra_fortress_confirm: "Никто не пройдёт с востока незамеченным."
 
 
  ##################################
@@ -3335,19 +3335,20 @@
  decision_zorzir_find_captains_confirm: "Ни один гном не будет брошен!"
  decision_zorzir_find_captains_tooltip: "Отправиться на поиски уцелевших гномов"
 
- decision_contact_barazimabul: "Восстановить связи с Баразимабулом"
+ decision_contact_barazimabul: "Захватить дорогу Баразимабула"
  decision_contact_barazimabul_desc: "Когда в #L [GetTitleByKey('k_mablad_dum').GetNameNoTier]е#! будет создан надёжный плацдарм, а дорога через [GetTitleByKey('k_raimumahal').GetNameNoTier] будет расчищена, к нам хлынут поселенцы из #L [GetTitleByKey('k_barazimab_ul').GetNameNoTier]а#!."
  decision_contact_barazimabul_confirm: "Послать весточку."
  decision_contact_barazimabul_tooltip: "Привлечь поселенцев ради экономических бонусов."
  decision_contact_barazimabul.tt: "[GetTitleByKey('k_barazimab_ul').GetNameNoTier] принадлежит [Concept('dwarves', 'гномам')|E]."
  decision_contact_barazimabul.tt_2: "В регионе [GetTitleByKey('k_raimumahal').GetNameNoTier] нет [Concept('goblins', 'гоблинов')|E] или [Concept('orcs', 'орков')|E]."
+ decision_contact_barazimabul.tt_3: "Вы граничите с державой [GetTitleByKey('k_barazimab_ul').GetNameNoTier]."
 
  decision_reclaim_mabladdum: "Вернуть Маблад-дум"
  decision_reclaim_mabladdum_desc: "Древние чертоги наших отцов, давно осквернённые отродьями Улхаша, снова огласятся звуками [Concept('dwarven', 'гномьего')|E] ремесла."
  decision_reclaim_mabladdum_confirm: "[Glossary('Барук кхазад','baruk_khazad_gloss')]!"
  decision_reclaim_mabladdum_tooltip: "Укрепить контроль над ревним королевством Маблад-дум."
  decision_reclaim_mabladdum.tt: "Вы нашли всех пропавших гномьих экспедиционеров."
- decision_reclaim_mabladdum.tt_2: "Вы восстановили связи с #L [GetTitleByKey('k_barazimab_ul').GetNameNoTier]ом#!."
+ decision_reclaim_mabladdum.tt_2: "Вы захватили дорогу к #L [GetTitleByKey('k_barazimab_ul').GetNameNoTier]у#!."
  decision_reclaim_mabladdum.tt_3: "Выберите нового правителя державы [GetTitleByKey('k_mablad_dum').GetNameNoTier]."
 
  decision_restore_mablabdum: "Вернуть Маблад-дум"
