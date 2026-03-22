@@ -1,2 +1,2 @@
 ﻿l_russian:
- NOT_ALREADY_HAS_AN_ALLIANCE_DEAL: "У вас уже есть [SelectLocalization( IsElf(TARGET_CHARACTER), 'два активных предложения', 'активное предложение')] [Concept('alliance', 'союза')|E]"
+ NOT_ALREADY_HAS_AN_ALLIANCE_DEAL: "У вас уже есть [SelectLocalization( And(IsElf(TARGET_CHARACTER), GetScriptedGui('lotr_elf_has_both_negotiate_alliances_perks').IsValid(GuiScope.SetRoot(TARGET_CHARACTER.MakeScope).End)), 'два активных предложения', 'активное предложение')] [Concept('alliance', 'союза')|E]"

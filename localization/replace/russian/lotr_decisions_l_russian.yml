@@ -469,7 +469,7 @@
  decision_elevate_defensive_alliance_into_being_permanent_tooltip: "Заключить постоянный союз между вашими [Concept('realms', 'державами')|E]."
  decision_elevate_defensive_alliance_into_being_permanent.tt_1: "Вы помогали друг другу как минимум в #V 10#! [Concept('defensive_alliance', 'оборонительных')|E] войнах\n$BULLET_WITH_TAB$Текущее значение: #V [GetPlayer.MakeScope.ScriptValue('lotr_defensive_wars_joined')|0]#!"
  decision_elevate_defensive_alliance_into_being_permanent.tt_2: "Вы и [fellow_member.GetName] заключите постоянный союз"
- decision_elevate_defensive_alliance_into_being_permanent.tt_3: "The other member in your [defensive_alliance|E] has more than #P 80#! opinion of #V You#!"
+ decision_elevate_defensive_alliance_into_being_permanent.tt_3: "Другая сторона вашего [Concept('defensive_alliance', 'оборонительного союза')|E] имеет о #V вас#! не менее #P 80#! мнения"
 
  ##########################
  ### Dunedain Decisions ###
@@ -2017,7 +2017,7 @@
  decision_dark_lord_hegemony_sauron_desc: "[Concept('westlands', 'Западные земли')|E] долгое время противостояли мне, но теперь это не так.\n\nОни либо преклонят колени, либо сгорят."
  decision_dark_lord_hegemony_sauron_confirm: "Запад обречён."
  decision_dark_lord_hegemony_sauron_tooltip: "Объявить своё господство над миром и о неминуемой гибели Запада"
- cant_give_title_mordor: "Sauron cannot give [mordor|E] away"
+ cant_give_title_mordor: "Саурон не может передать [Concept('mordor', 'Мордор')|E]"
 
  tooltip_rk_nie_not_formed: "[GetTitleByKey('h_reunited_kingdom').GetName] не укреплено, а [GetTitleByKey('h_numenor_in_exile').GetNameNoTier] не существует"
  tooltip_gondor_has_fallen: "[Concept('gondor', 'Гондор')|E] не существует"
@@ -2121,7 +2121,7 @@
 
  decision_unify_the_orcs: "Объединить отряды орков"
  decision_unify_the_orcs_tooltip: "Объединить дезорганизованные племена орков в единый боевой отряд!"
- decision_unify_the_orcs_desc: "Долгое время [Concept('orcs', 'орки')|E] были разрозненными и разобщенными, отбиваясь на каждом шагу от [Concept('men', 'людей')|E], [Concept('dwarves', 'гномов')|E] и [Concept('elves', 'эльфов')|E]. Мы были объединены под властью Тёмных Властелинов, но они недостойны наших мечей! Орки должны править орками, и вести их должен [Select_CString(ROOT.Char.IsFemale, 'сильнейшая', 'сильнейший' )] из них - я. \n\nПод моим знаменем воинство орков распространится по всей земле!"
+ decision_unify_the_orcs_desc: "Долгое время [Concept('orcs', 'орки')|E] были разрозненными и разобщенными, отбиваясь на каждом шагу от [Concept('men', 'людей')|E], [Concept('dwarves', 'гномов')|E] и [Concept('elves', 'эльфов')|E]. Мы были объединены под властью Тёмных Властелинов, но они недостойны наших мечей! Орки должны править орками, и вести их должен [Select_CString(ROOT.Char.IsFemale, 'сильнейшая', 'сильнейший' )] из них - я. \Под моим знаменем воинство орков распространится по всей земле!"
  decision_unify_the_orcs_confirm: "Время орков пришло!"
 
  found_hegemony_decision_three_empires_held: "Вы владеете 3 или более [Concept('empires', 'империями')|E]"
@@ -2723,7 +2723,7 @@
  decision_invite_dwarves_confirm: "Немедленно отправить письмо."
  decision_invite_dwarves_tt: "Вы выберете правителя-[Concept('dwarven', 'гнома')|E], которому вы отправите письмо"
  LOTR_FRIENDS_WITH_DWARF: "Хотя бы один из ваших [Concept('friend', 'друзей')|E] является [Concept('dwarf', 'гномом')|E]"
- decision_invite_dwarves_diplo_range: "A Dwarven ruler is within diplomatic range"
+ decision_invite_dwarves_diplo_range: "Правитель-гном находится в пределах дипломатического радиуса"
  invite_dwarves_target_gundabad: "Гундабад"
  invite_dwarves_target_gundabad_tooltip: "[Concept('gundabad', 'Гундабад')|E] был местом, где пробудился Дурин Бессмертный, когда мир был молодым и зеленым, но вот уже несколько тысячелетий он является гнездовьем [Concept('orcs', 'орков')|E]. Возможно, настало время изменить этот факт?"
  invite_dwarves_target_gundabad_desc: "$invite_dwarves_target_gundabad$"
@@ -2796,18 +2796,18 @@
  invite_dwarves_target_blackflame_tooltip: "[Concept('yellowmountains', 'Жёлтые горы')|E], некогда заселённые бежавшими с востока [Concept('blacklocks', 'Черновласами')|E], до сих пор остаются нетронутыми. Кто знает, какие богатства ещё дремлют под их вершинами?"
  invite_dwarves_target_blackflame_desc: "$invite_dwarves_target_blackflame$"
  invite_dwarves_target_blackflame_tt: "Предложить создать колонию на самом юго-восточном краю [Concept('yellowmountains', 'Жёлтых гор')|E]"
- invite_dwarves_target_md_west: "Western Mablâd-dûm"
- invite_dwarves_target_md_west_tooltip: "The proud capital of the [blacklocks|E] in the [yellowmountains|E] has long fallen. Could this be the time for the [dwarves|E] to return?"
+ invite_dwarves_target_md_west: "Западный Маблад-дум"
+ invite_dwarves_target_md_west_tooltip: "Гордая столица [Concept('blacklocks', 'Черновласов')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E] давно пала. Возможно, пришла пора [Concept('dwarves', 'гномам')|E] вернуться?"
  invite_dwarves_target_md_west_desc: "$invite_dwarves_target_md_west$"
- invite_dwarves_target_md_west_tt: "Sponsor a colony in the west of the capital of the [yellowmountains|E]"
- invite_dwarves_target_md_central: "Central Mablâd-dûm"
- invite_dwarves_target_md_central_tooltip: "The proud capital of the [blacklocks|E] in the [yellowmountains|E] has long fallen. Could this be the time for the [dwarves|E] to return?"
+ invite_dwarves_target_md_west_tt: "Проспонсировать основание колонии на западе от столицы [Concept('yellowmountains', 'Жёлтых гор')|E]"
+ invite_dwarves_target_md_central: "Центральный Маблад-дум"
+ invite_dwarves_target_md_central_tooltip: "Гордая столица [Concept('blacklocks', 'Черновласов')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E] давно пала. Возможно, пришла пора [Concept('dwarves', 'гномам')|E] вернуться?"
  invite_dwarves_target_md_central_desc: "$invite_dwarves_target_md_central$"
- invite_dwarves_target_md_central_tt: "Sponsor a colony in the heart of the [yellowmountains|E]"
- invite_dwarves_target_md_east: "Eastern Mablâd-dûm"
- invite_dwarves_target_md_east_tooltip: "The proud capital of the [blacklocks|E] in the [yellowmountains|E] has long fallen. Could this be the time for the [dwarves|E] to return?"
+ invite_dwarves_target_md_central_tt: "Проспонсировать основание колонии в самом сердце [Concept('yellowmountains', 'Жёлтых гор')|E]"
+ invite_dwarves_target_md_east: "Восточный Маблад-дум"
+ invite_dwarves_target_md_east_tooltip: "Гордая столица [Concept('blacklocks', 'Черновласов')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E] давно пала. Возможно, пришла пора [Concept('dwarves', 'гномам')|E] вернуться?"
  invite_dwarves_target_md_east_desc: "$invite_dwarves_target_md_east$"
- invite_dwarves_target_md_east_tt: "Sponsor a colony in the farthest east of the [yellowmountains|E]"
+ invite_dwarves_target_md_east_tt: "Проспонсировать основание колонии на востоке [Concept('yellowmountains', 'Жёлтых гор')|E]"
 
  ################################
  ####   Saralain Decisions   ####
@@ -3388,13 +3388,13 @@
  decision_cleanse_dwarven_capital_confirm: "Приступим к шлифовке!"
  decision_cleanse_dwarven_capital.second_step: "С какой столицы начать?"
  decision_cleanse_dwarven_capital.tt.moria: "Очистить Морию"
- cleanse_moria_tooltip: "Restore the ancient Longbeard mansion of Moria"
+ cleanse_moria_tooltip: "Восстановить древний чертог Длиннобородов - Морию"
  decision_cleanse_dwarven_capital.tt.nogrod: "Очистить Ногрод"
- cleanse_nogrod_tooltip: "Restore the ancient Firebeard mansion of Nogrod"
+ cleanse_nogrod_tooltip: "Восстановить древний чертог Огнебородов - Ногрод"
  decision_cleanse_dwarven_capital.tt.belegost: "Очистить Белегост"
- cleanse_belegost_tooltip: "Restore the ancient Broadbeam mansion of Belegost"
+ cleanse_belegost_tooltip: "Восстановить древний чертог Широкозадов - Белегост"
  decision_cleanse_dwarven_capital.tt.mabladdum: "Очистить Маблад-дум"
- cleanse_mabladdum_tooltip: "Restore the southern Blacklock mansion of Mablâd-dûm"
+ cleanse_mabladdum_tooltip: "Восстановить южный чертог Черновласов - Маблад-дум"
 
  #####################################
  #### Artifact Crafting Decisions ####
