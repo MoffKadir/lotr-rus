@@ -469,6 +469,7 @@
  decision_elevate_defensive_alliance_into_being_permanent_tooltip: "Заключить постоянный союз между вашими [Concept('realms', 'державами')|E]."
  decision_elevate_defensive_alliance_into_being_permanent.tt_1: "Вы помогали друг другу как минимум в #V 10#! [Concept('defensive_alliance', 'оборонительных')|E] войнах\n$BULLET_WITH_TAB$Текущее значение: #V [GetPlayer.MakeScope.ScriptValue('lotr_defensive_wars_joined')|0]#!"
  decision_elevate_defensive_alliance_into_being_permanent.tt_2: "Вы и [fellow_member.GetName] заключите постоянный союз"
+ decision_elevate_defensive_alliance_into_being_permanent.tt_3: "The other member in your [defensive_alliance|E] has more than #P 80#! opinion of #V You#!"
 
  ##########################
  ### Dunedain Decisions ###
@@ -1410,7 +1411,7 @@
 
  decision_empire_angmar_restore: "Возродить империю Ангмар"
  decision_empire_angmar_restore_tooltip: "Возродить утраченное чародейское королевство Ангмар"
- decision_empire_angmar_restore_desc: "Железная корона Ангмара была одним из самых могущественных государств, возвысившихся на севере Средиземья. На протяжении веков она враждовала с королевством [arnor|E] и даже одержала над ним победу. Однако вскоре она была уничтожена, а её народ уничтожен возмездием людей [Concept('gondor', 'Гондора')|E] и [Concept('elves', 'эльфами')|E]. Однако память о ней осталась. Если мы сможем установить контроль над очагами древнего королевства Ангмар, как к востоку, так и к западу от горы Гундабад, мы сможем объявить о его возрождении."
+ decision_empire_angmar_restore_desc: "Железная корона Ангмара была одним из самых могущественных государств, возвысившихся на севере Средиземья. На протяжении веков она враждовала с королевством [arnor|E] и даже одержала над ним победу. Однако вскоре она была уничтожена, а её народ уничтожен возмездием [Concept('men', 'людей')|E] [Concept('gondor', 'Гондора')|E] и [Concept('elves', 'эльфами')|E]. Однако память о ней осталась. Если мы сможем установить контроль над очагами древнего королевства Ангмар, как к востоку, так и к западу от горы Гундабад, мы сможем объявить о его возрождении."
  decision_empire_angmar_restore_confirm: "Железная корона вновь возвысится!"
 
  decision_angmar_integrate_counties_custom: "Каждое [county|El] в ваших новых землях"
@@ -1460,10 +1461,10 @@
  decision_reclaim_mardruak_desc: "На протяжении многих поколений Мардруак был неотъемлемой частью [Concept('bellakar', 'Беллакара')|E]. В нём располагались города, которые помогли основать Беллакарскую Лигу, и он оставался (в основном) лояльной провинцией на протяжении всех вторжений теджин и вплоть до Третьей Эпохи. Но после Дней Раздора она и Фелайя были потеряны для нас. Теперь, когда Фелайя наконец-то вернулась под королевский контроль, настало время вернуть последнюю из северных провинций домой!"
  decision_reclaim_mardruak_confirm: "Наконец-то королевство восстановлено!"
 
- decision_bellakar_felayan_rapprochement: "Сближение между Беллакаром и Фелайей?"
- decision_bellakar_felayan_rapprochement_tooltip: "Вернуть отпавшую северную провинцию в лоно королевства"
- decision_bellakar_felayan_rapprochement_desc: "С тёмных дней гражданской войны Фелайя действовала независимо от [Concept('bellakar', 'Беллакара')|E], не желая снова склоняться перед нами после нашей неспособности позаботиться об их безопасности или местных интересах. Если мы сможем доказать свою надёжность и наладить тесные отношения с их руководством, то, возможно, мы сможем вернуть их в мирное русло в обмен на опредёленные привилегии."
- decision_bellakar_felayan_rapprochement_confirm: "Мы должны объединиться, или падём"
+ decision_bellakar_felayan_rapproachement: "Сближение между Беллакаром и Фелайей?"
+ decision_bellakar_felayan_rapproachement_tooltip: "Вернуть отпавшую северную провинцию в лоно королевства"
+ decision_bellakar_felayan_rapproachement_desc: "С тёмных дней гражданской войны Фелайя действовала независимо от [Concept('bellakar', 'Беллакара')|E], не желая снова склоняться перед нами после нашей неспособности позаботиться об их безопасности или местных интересах. Если мы сможем доказать свою надёжность и наладить тесные отношения с их руководством, то, возможно, мы сможем вернуть их в мирное русло в обмен на опредёленные привилегии."
+ decision_bellakar_felayan_rapproachement_confirm: "Мы должны объединиться, или падём"
 
  decision_bellakar_vassalise_izindubeth: "Вассализировать изиндубета"
  decision_bellakar_vassalise_izindubeth_tooltip: "Вассализировать изиндубета под властью беллакарской короны"
@@ -2016,6 +2017,7 @@
  decision_dark_lord_hegemony_sauron_desc: "[Concept('westlands', 'Западные земли')|E] долгое время противостояли мне, но теперь это не так.\n\nОни либо преклонят колени, либо сгорят."
  decision_dark_lord_hegemony_sauron_confirm: "Запад обречён."
  decision_dark_lord_hegemony_sauron_tooltip: "Объявить своё господство над миром и о неминуемой гибели Запада"
+ cant_give_title_mordor: "Sauron cannot give [mordor|E] away"
 
  tooltip_rk_nie_not_formed: "[GetTitleByKey('h_reunited_kingdom').GetName] не укреплено, а [GetTitleByKey('h_numenor_in_exile').GetNameNoTier] не существует"
  tooltip_gondor_has_fallen: "[Concept('gondor', 'Гондор')|E] не существует"
@@ -2119,7 +2121,7 @@
 
  decision_unify_the_orcs: "Объединить отряды орков"
  decision_unify_the_orcs_tooltip: "Объединить дезорганизованные племена орков в единый боевой отряд!"
- decision_unify_the_orcs_desc: "Долгое время [Concept('orcs', 'орки')|E] были разрозненными и разобщенными, отбиваясь на каждом шагу от [Concept('men', 'людей')|E], [Concept('dwarves', 'гномов')|E] и [Concept('elves', 'эльфов')|E]. Мы были объединены под властью Тёмных Властелинов, но они недостойны наших мечей! Орки должны править орками, и вести их должен [Select_CString(ROOT.Char.IsFemale, 'сильнейшая', 'сильнейший' )] из них - я. \Под моим знаменем воинство орков распространится по всей земле!"
+ decision_unify_the_orcs_desc: "Долгое время [Concept('orcs', 'орки')|E] были разрозненными и разобщенными, отбиваясь на каждом шагу от [Concept('men', 'людей')|E], [Concept('dwarves', 'гномов')|E] и [Concept('elves', 'эльфов')|E]. Мы были объединены под властью Тёмных Властелинов, но они недостойны наших мечей! Орки должны править орками, и вести их должен [Select_CString(ROOT.Char.IsFemale, 'сильнейшая', 'сильнейший' )] из них - я. \n\nПод моим знаменем воинство орков распространится по всей земле!"
  decision_unify_the_orcs_confirm: "Время орков пришло!"
 
  found_hegemony_decision_three_empires_held: "Вы владеете 3 или более [Concept('empires', 'империями')|E]"
@@ -2721,6 +2723,7 @@
  decision_invite_dwarves_confirm: "Немедленно отправить письмо."
  decision_invite_dwarves_tt: "Вы выберете правителя-[Concept('dwarven', 'гнома')|E], которому вы отправите письмо"
  LOTR_FRIENDS_WITH_DWARF: "Хотя бы один из ваших [Concept('friend', 'друзей')|E] является [Concept('dwarf', 'гномом')|E]"
+ decision_invite_dwarves_diplo_range: "A Dwarven ruler is within diplomatic range"
  invite_dwarves_target_gundabad: "Гундабад"
  invite_dwarves_target_gundabad_tooltip: "[Concept('gundabad', 'Гундабад')|E] был местом, где пробудился Дурин Бессмертный, когда мир был молодым и зеленым, но вот уже несколько тысячелетий он является гнездовьем [Concept('orcs', 'орков')|E]. Возможно, настало время изменить этот факт?"
  invite_dwarves_target_gundabad_desc: "$invite_dwarves_target_gundabad$"
@@ -2793,6 +2796,18 @@
  invite_dwarves_target_blackflame_tooltip: "[Concept('yellowmountains', 'Жёлтые горы')|E], некогда заселённые бежавшими с востока [Concept('blacklocks', 'Черновласами')|E], до сих пор остаются нетронутыми. Кто знает, какие богатства ещё дремлют под их вершинами?"
  invite_dwarves_target_blackflame_desc: "$invite_dwarves_target_blackflame$"
  invite_dwarves_target_blackflame_tt: "Предложить создать колонию на самом юго-восточном краю [Concept('yellowmountains', 'Жёлтых гор')|E]"
+ invite_dwarves_target_md_west: "Western Mablâd-dûm"
+ invite_dwarves_target_md_west_tooltip: "The proud capital of the [blacklocks|E] in the [yellowmountains|E] has long fallen. Could this be the time for the [dwarves|E] to return?"
+ invite_dwarves_target_md_west_desc: "$invite_dwarves_target_md_west$"
+ invite_dwarves_target_md_west_tt: "Sponsor a colony in the west of the capital of the [yellowmountains|E]"
+ invite_dwarves_target_md_central: "Central Mablâd-dûm"
+ invite_dwarves_target_md_central_tooltip: "The proud capital of the [blacklocks|E] in the [yellowmountains|E] has long fallen. Could this be the time for the [dwarves|E] to return?"
+ invite_dwarves_target_md_central_desc: "$invite_dwarves_target_md_central$"
+ invite_dwarves_target_md_central_tt: "Sponsor a colony in the heart of the [yellowmountains|E]"
+ invite_dwarves_target_md_east: "Eastern Mablâd-dûm"
+ invite_dwarves_target_md_east_tooltip: "The proud capital of the [blacklocks|E] in the [yellowmountains|E] has long fallen. Could this be the time for the [dwarves|E] to return?"
+ invite_dwarves_target_md_east_desc: "$invite_dwarves_target_md_east$"
+ invite_dwarves_target_md_east_tt: "Sponsor a colony in the farthest east of the [yellowmountains|E]"
 
  ################################
  ####   Saralain Decisions   ####
@@ -3269,7 +3284,7 @@
  restore_king_title_durin: "Мы - [Concept('longbeards', 'Длиннобороды')|E], Народ [Concept('durin', 'Дурина')|E], нашего короля, пробудившегося первым из всех праотцов. Мы правили от [Concept('khazaddum', 'Кхазад-дума')|E] до [Concept('greymountains', 'Серых гор')|E] и далеко-далеко, до [Concept('erebor', 'Эребора')|E]. Под властью Дурина, моих предков и их отцов до них, наши чертоги богатели самоцветами и золотом, и сама земля дивилась богатствам, которые мы извлекали из нее и оттачивали до красоты и совершенства.\n\nИ хотя наше королевство уже не простирается так далеко, как прежде, род Дурина носит титул королей [Concept('durinsfolk', 'Народа Дурина')|E], откуда бы они ни правили. Я [Select_CString(ROOT.Char.IsFemale, 'наследница', 'наследник' )] Дурина - я [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] Длиннобородов, и я провозглашу это сейчас! Я буду чтить своих павших родичей и править во всей славе и мощи рода Дурина!"
  restore_king_title_dwalin: "Мы - [Concept('broadbeams', 'Широкозады')|E], [Concept('dwalinsfolk', 'Народ Двалина')|E], прославившегося своей мудростью и милосердием. Мы правим из [Concept('belegost', 'Белегоста')|E] в [Concept('bluemountains', 'Синих горах')|E], и давно наши ремесла обогатились эльфийскими искусствами - поистине, мы были друзьями [Concept('eldar', 'эльдар')|E] на протяжении долгих лет.\n\nНо хоть наше королевство и уменьшилось, род [Concept('dwalin', 'Двалина')|E] по-прежнему правит всеми Широкозадами, где бы мы ни жили. Я - [Select_CString(ROOT.Char.IsFemale, 'наследница', 'наследник' )] рода Двалина, [Select_CString(ROOT.Char.IsFemale, 'мудрая и добрая', 'мудрый и добрый' )] в меру своих сил, [Select_CString(ROOT.Char.IsFemale, 'повелительница', 'повелитель' )] Широкозадов и тех, кто посвятил себя моему роду. Я - [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] Широкозадов, и я провозглашу это сейчас - я буду чтить своих павших родичей и править, как они, с состраданием и умом."
  restore_king_title_uri: "Мы - [Concept('firebeards', 'Огнебороды')|E], [Concept('dwarves', 'гномы')|E] [Concept('uri', 'Ори')|E]. Мы долго хранили нашу память, и мы не забыли обиды, которые храним, и разделения, которые когда-то разделяли нас. Нашим величайшим чертогом был могущественный Тумунзахар, [nogrod|E] на языке эльфов, хотя совсем недавно мы правили из величественного и могучего #L [GetTitleByKey('k_buzra_dum').GetNameNoTier]а#!. Но пусть наше королевство уменьшилось, а Ногрод потерян на долгие годы, [Select_CString(ROOT.Char.IsFemale, 'наследница', 'наследник' )] [Concept('urisfolk', 'народа Ори')|E] - [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] всех Огнебородов, где бы они ни находились и какой бы чертог ни занимали. Я - [Select_CString(ROOT.Char.IsFemale, 'наследница', 'наследник' )] Ори Покрытого шрамами, [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] Огнебородов, и я провозглашу это сейчас! Я буду чтить память павших и править своим народом так, как им должно было править - никогда больше не разлучаясь!"
- restore_king_title_thrar: "Мы - [Concept('blacklocks', 'Черновласы')|E], слуги рода Трара, самого гордого из всех гномов. Наши волосы пышны и темны, а наши мотыги пронзают сталь и плоть орков! В давние времена мы правили из #L [GetTitleByKey('k_nargubraz').GetNameNoTier]а#!, но наш народ высекал великие и обширные чертоги - затерянный [GetTitleByKey('e_bizaruldum').GetNameNoTier], великий [GetTitleByKey('k_mablad_dum').GetNameNoTier] и, наконец, могучий [GetTitleByKey('k_barazimab_ul').GetNameNoTier] в [Concept('yellowmountains', 'Жёлтых горах')|E]. Но хотя наши народы разделены и разбросаны далеко на восток и юг, [Select_CString(ROOT.Char.IsFemale, 'наша королева - королева', 'наш король - король' )] всех Черновласов, независимо от того, какой уголок [Concept('middleearth', 'Средиземья')|E] они называют своим домом. Я - [Select_CString(ROOT.Char.IsFemale, 'наследница', 'наследник' )] [Concept('thrar', 'Трара')|E] и [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] Черновласов! Я буду чтить свой разделенный род и править во славе, подобающей моему народу!"
+ restore_king_title_thrar: "Мы - [Concept('blacklocks', 'Черновласы')|E], слуги рода Трара, самого гордого из всех [Concept('dwarves', 'гномов')|E]. Наши волосы пышны и темны, а наши мотыги пронзают сталь и плоть орков! В давние времена мы правили из #L [GetTitleByKey('k_nargubraz').GetNameNoTier]а#!, но наш народ высекал великие и обширные чертоги - затерянный [GetTitleByKey('e_bizaruldum').GetNameNoTier], великий [GetTitleByKey('k_mablad_dum').GetNameNoTier] и, наконец, могучий [GetTitleByKey('k_barazimab_ul').GetNameNoTier] в [Concept('yellowmountains', 'Жёлтых горах')|E]. Но хотя наши народы разделены и разбросаны далеко на восток и юг, [Select_CString(ROOT.Char.IsFemale, 'наша королева - королева', 'наш король - король' )] всех Черновласов, независимо от того, какой уголок [Concept('middleearth', 'Средиземья')|E] они называют своим домом. Я - [Select_CString(ROOT.Char.IsFemale, 'наследница', 'наследник' )] [Concept('thrar', 'Трара')|E] и [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] Черновласов! Я буду чтить свой разделенный род и править во славе, подобающей моему народу!"
  restore_king_title_confirm: "Я - [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] моего народа!"
 
  cant_give_title: "Эти гномьи титулы не могут быть переданы"
@@ -3352,10 +3367,10 @@
  decision_reclaim_mabladdum.tt_2: "Вы захватили дорогу к #L [GetTitleByKey('k_barazimab_ul').GetNameNoTier]у#!."
  decision_reclaim_mabladdum.tt_3: "Выберите нового правителя державы [GetTitleByKey('k_mablad_dum').GetNameNoTier]."
 
- decision_restore_mablabdum: "Вернуть Маблад-дум"
- decision_restore_mablabdum_desc: "Могущественный [GetTitleByKey('k_mablad_dum').GetNameNoTier], некогда гордую цитадель [Concept('blacklocks', 'Черновласов')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E], постигла катастрофа. Сердце Огня, вулкан, который питал жаром великие кузни, разразился яростью, изгнав наших предков из разрушенных чертогов. Теперь поганые [Concept('orcs', 'орки')|E] и [Concept('goblins', 'гоблины')|E] ютятся в разрушенных залах и сводах, оскверняя их одним своим присутствием.\n\nДовольно! Пришло время исполнить наши клятвы и изгнать мерзких врагов, занявших Маблад-дум! Мы не успокоимся, пока они не будут развеяны на все четыре стороны, а чертоги наших предков снова не окажутся в руках [Concept('dwarven', 'гномов')|E], раз и навсегда!"
- decision_restore_mablabdum_tooltip: "Освободить затерянные залы Маблад-дума"
- decision_restore_mablabdum_confirm: "#italic Подайте мне мою секиру и броню!#!"
+ decision_restore_mabladdum: "Вернуть Маблад-дум"
+ decision_restore_mabladdum_desc: "Могущественный [GetTitleByKey('k_mablad_dum').GetNameNoTier], некогда гордую цитадель [Concept('blacklocks', 'Черновласов')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E], постигла катастрофа. Сердце Огня, вулкан, который питал жаром великие кузни, разразился яростью, изгнав наших предков из разрушенных чертогов. Теперь поганые [Concept('orcs', 'орки')|E] и [Concept('goblins', 'гоблины')|E] ютятся в разрушенных залах и сводах, оскверняя их одним своим присутствием.\n\nДовольно! Пришло время исполнить наши клятвы и изгнать мерзких врагов, занявших Маблад-дум! Мы не успокоимся, пока они не будут развеяны на все четыре стороны, а чертоги наших предков снова не окажутся в руках [Concept('dwarven', 'гномов')|E], раз и навсегда!"
+ decision_restore_mabladdum_tooltip: "Освободить затерянные залы Маблад-дума"
+ decision_restore_mabladdum_confirm: "#italic Подайте мне мою секиру и броню!#!"
 
  ## Dwarven Beardcare loc
  beard_care_standard_modifier: "Красивая борода"
@@ -3373,10 +3388,13 @@
  decision_cleanse_dwarven_capital_confirm: "Приступим к шлифовке!"
  decision_cleanse_dwarven_capital.second_step: "С какой столицы начать?"
  decision_cleanse_dwarven_capital.tt.moria: "Очистить Морию"
- decision_cleanse_dwarven_capital.tt.belegost: "Очистить Белегост"
+ cleanse_moria_tooltip: "Restore the ancient Longbeard mansion of Moria"
  decision_cleanse_dwarven_capital.tt.nogrod: "Очистить Ногрод"
+ cleanse_nogrod_tooltip: "Restore the ancient Firebeard mansion of Nogrod"
+ decision_cleanse_dwarven_capital.tt.belegost: "Очистить Белегост"
+ cleanse_belegost_tooltip: "Restore the ancient Broadbeam mansion of Belegost"
  decision_cleanse_dwarven_capital.tt.mabladdum: "Очистить Маблад-дум"
-
+ cleanse_mabladdum_tooltip: "Restore the southern Blacklock mansion of Mablâd-dûm"
 
  #####################################
  #### Artifact Crafting Decisions ####
