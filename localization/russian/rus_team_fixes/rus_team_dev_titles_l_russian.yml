@@ -378,31 +378,31 @@
  bellakar_story.0221.b: "Я буду ждать и наблюдать..."
 
  bellakar_story.0222.t: "Предатели из гаваней"
- bellakar_story.0222.desc: "[bellakar_emperor.GetTitledFirstName]'s foolish campaigns to the North have, it seems, finally been met with a worthy resistance. As my great hosts begin their invasion of [bellakar|e], the subdued and humiliated corsairs of [GetTitleByKey('k_umbar').GetNameNoTier] have declared open rebellion against their bellakaze overlord. \n\nWith their aid, my fleets are sure to achieve absolute dominion of the seas: our armadas crushing the foolish men of [GetTitleByKey('e_bellakar').GetNameNoTier] who made themselves far too many ennemies."
+ bellakar_story.0222.desc: "Безрассудные походы на север, что [Select_CString(bellakar_emperor.IsFemale, 'предприняла', 'предпринял' )] [bellakar_emperor.GetTitledFirstName] похоже, наконец-то встретили достойный отпор. В то время, как мои великие воины начинают вторжение в [Concept('bellakar', 'Беллакар')|E], покорённые и усмирённые пираты #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#! объявили открытое восстание против своих беллаказских владык.\n\nС их помощью мои флоты, несомненно, добьются абсолютного господства на морях: наши армады сокрушат #L [GetTitleByKey('e_bellakar').GetAdjective|l]их#! глупцов, которые нажили себе слишком много врагов."
  bellakar_story.0222.a: "Моя победа уже близка!"
  bellakar_story.0222.a.effects: "Любой пиратский властитель с негативным мнение о персонаже [bellakar_emperor.GetTitledFirstName] присоединится к войне за уничтожение #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#! на вашей стороне."
 
  bellakar_story.0223.t: "Братство Верных"
- bellakar_story.0223.desc: "[gondor_ruler.GetTitledFirstName] and [bellakar_emperor.GetTitledFirstName]'s League of Faithful stands as a bothersome roadblock to my conquest of the West, yet it would seem a great opportunity to destroy it has come. The foolish [bellakar_emperor.GetTitledFirstName] was only able of reaching [gondor|e] by greatly overextending [CharYoursHerHis(bellakar_emperor)] realm, leading to an underdefended South and many unruly corsair lords now in open rebellion. \n\nMy puppet in [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] has launched its invasion of [bellakar|e]. With it occupied, it will be powerless to defend [gondor|e] against my forces. What better time could there be to launch my own strike?"
- bellakar_story.0223.a: "The Doom of the West comes!"
- bellakar_story.0223.b: "My plans remain unchanged."
+ bellakar_story.0223.desc: "Лига Верных, которую создали [gondor_ruler.GetTitledFirstName] и [bellakar_emperor.GetTitledFirstName], является досадным препятствием на моём пути к завоеванию Запада, но, похоже, появилась прекрасная возможность уничтожить её. Безрассудный [bellakar_emperor.GetTitledFirstName] [Select_CString(bellakar_emperor.IsFemale, 'сумела', 'сумел' )] достичь [Concept('gondor', 'Гондора')|E] лишь путём сверхрасширения своих владений, что привело к ослаблению защиты Юга и открытому восстанию многих неуправляемых пиратских властителей.\n\nМои марионетки из [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] начали вторжение в [Concept('bellakar', 'Беллакар')|E]. Если он будет захвачен, то не сможет защитить Гондор от моих войск. Разве может быть лучшее время для того, чтобы нанести свой собственный удар?"
+ bellakar_story.0223.a: "Грядёт гибель Запада!"
+ bellakar_story.0223.b: "Мои планы остаются неизменными."
 
- bellakar_story.0224.t: "Desert Pride"
- bellakar_story.0224.desc: "Under the conqueror [bellakar_emperor.GetTitledFirstName], the Tedjin people have known far too many humiliations. Forced to pay tributes, to allow forces to pass and trample our lands and to kneel before [bellakar|e]'s generals. Yet, chaos has erupted to our south. [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] has launched a great invasion of [bellakar|e] and with them the corsair lords of [GetTitleByKey('k_umbar').GetNameNoTier] have entered into open revolt. \n\nThe way is open for the Tedjin to break free of [bellakar_emperor.GetTitledFirstName], yet at what cost? [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] is sure to be a threat in the future if it is allowed to prosper, yet joining its cause now may assure the position of our people for generations. As leader of the Tedjin, it falls upon me to choose the path of our people, but it is a hard choice to make..."
- bellakar_story.0224.a: "No more shall I kneel!"
- bellakar_story.0224.b: "I will not fight for the greater evil!"
+ bellakar_story.0224.t: "Пустынная гордость"
+ bellakar_story.0224.desc: "Теджин познали слишком много унижений, когда их [Select_CString(bellakar_emperor.IsFemale, 'завоевала', 'завоевал' )] [bellakar_emperor.GetTitledFirstName]. Вынуждены платить дань, позволять войскам проходить и топтать наши земли и преклонять колени перед военачальниками [Concept('bellakar', 'Беллакара')|E]. Тем не менее, на юге разразился хаос. [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] предпринял масштабное вторжение в Беллакар, а вместе с ними и пиратские властители #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#! подняли открытое восстание.\n\nДля теджин открыт путь к освобождению от угнетения, но какой ценой? [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier], несомненно, будет представлять угрозу в будущем, если позволить им процветать, однако присоединение к их делу сейчас может обеспечить положение нашего народа на многие поколения. На меня, как на [Select_CString(ROOT.Char.IsFemale, 'предводительницу', 'вождя' )] теджин, возлагается обязанность выбрать путь нашего народа, но это трудный выбор..."
+ bellakar_story.0224.a: "Я больше не преклоню колен!"
+ bellakar_story.0224.b: "Я не буду сражаться за большее зло!"
 
- bellakar_story.0225.t: "Tedjin Traitors"
- bellakar_story.0225.desc: "I have received worrying new from [GetTitleByKey('k_tedjin').GetNameNoTier]: [tedjin_leader.GetTitledFirstName] has joined the ever growing list of those seeking the destruction of [bellakar|e]. Though I had regretted having to resort to force to keep the Tedjin tribes loyal, I had not thought that they too would have joined the corsairs in rebellion. Needless to say, this development makes an already worrying war ever more uncertain."
- bellakar_story.0225.a: "I may have made too many ennemies..."
- bellakar_story.0225.a.effects: "#N [tedjin_leader.GetTitledFirstName] will join the war to destroy [GetTitleByKey('e_bellakar').GetNameNoTier]!#!"
-
-
+ bellakar_story.0225.t: "Теджинские изменники"
+ bellakar_story.0225.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] тревожные вести из #ONCLICK:TITLE,k_tedjin #TOOLTIP:LANDED_TITLE,k_tedjin #L Конфедерации теджин#!#!#!: [tedjin_leader.GetTitledFirstName] [Select_CString(tedjin_leader.IsFemale, 'присоединилась', 'присоединился' )] к постоянно растущему списку тех, кто стремится уничтожить [Concept('bellakar', 'Беллакар')|E]. Хотя я [Select_CString(ROOT.Char.IsFemale, 'сожалела', 'сожалел' )] о том, что мне пришлось прибегнуть к силе, чтобы сохранить лояльность теджинских племён, я не [Select_CString(ROOT.Char.IsFemale, 'думала', 'думал' )], что они тоже присоединятся к восстанию пиратов. Излишне говорить, что такое развитие событий делает и без того тревожную войну ещё более неопределённой."
+ bellakar_story.0225.a: "Возможно, я [Select_CString(ROOT.Char.IsFemale, 'нажила', 'нажил' )] себе слишком много врагов..."
+ bellakar_story.0225.a.effects: "#N [tedjin_leader.GetTitledFirstName] присоединится к войне за уничтожение #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!!#!"
 
 
- destroy_mordor_bellakar_gondor_alliance: "You have formed an [alliance|e] with the ruler of [gondor|e]"
- destroy_mordor_bellakar_stormhost_gone: "The [GetTitleByKey('e_thon_an_kharlokh').GetName] has been destroyed"
- destroy_mordor_bellakar_harnen_requierment: "You [completely_control|e] the [GetGeographicalRegion('custom_harnendor').GetName] [region|e]"
+
+
+ destroy_mordor_bellakar_gondor_alliance: "Вы заключили [Concept('alliance', 'союз')|E] с правителем [Concept('gondor', 'Гондора')|E]"
+ destroy_mordor_bellakar_stormhost_gone: "[GetTitleByKey('e_thon_an_kharlokh').GetName] уничтожен"
+ destroy_mordor_bellakar_harnen_requierment: "Вы [Concept('completely_control', 'полностью контролируете')|E] [Concept('region', 'регион')|E] [GetGeographicalRegion('custom_harnendor').GetName]"
 
 
 
