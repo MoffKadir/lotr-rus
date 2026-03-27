@@ -116,22 +116,85 @@
 
 
 
- struggle_balrog_explore_moria: "Отправиться во мрак"
+ struggle_balrog_explore_moria: "Исследовать Морию"
  struggle_balrog_explore_moria_desc: "Мория, Дварроудельф, [Concept('khazaddum', 'Кхазад-дум')|E]. У этого места много названий и много тайн. Здесь можно найти сокровища и утраченные реликвии [Concept('durinsfolk', 'Народа Дурина')|E]."
  struggle_balrog_explore_moria_tooltip: "Отправиться на поиски сокровищ в копи Мории."
- struggle_balrog_explore_moria_confirm: "Исследовать Морию."
+ struggle_balrog_explore_moria_confirm: "В путь."
  decision_explore_moria.tt: "Вы [Concept('struggle_involved', 'вовлечены')|E] в [Concept('balrog_struggle', 'Морийскую борьбу')|E]."
  decision_explore_moria.tt_interloper: "Вы [Concept('struggle_interloper', 'вмешались')|E] в [Concept('balrog_struggle', 'Морийскую борьбу')|E]."
  decision_explore_moria.tt2: "Рискнуть навлечь на себя гнев [Concept('balrog', 'балрога')|E] в поисках [Concept('dwarven', 'гномьих')|E] [Concept('artifacts', 'артефактов')|E] и сокровищ."
  decision_explore_moria.tt3: "Ваш [Concept('camp', 'лагерь')|E] расположен в регионе [GetGeographicalRegion('middleearth_mountains_misty_khazad_dum').GetName]"
 
 
+ lotr_balrog_explore_moria_supply_cache: "Тайник с гномьими припасами"
+ lotr_balrog_explore_moria_supply_cache_desc: "Этот персонаж нашёл небольшой тайник с припасами в туннелях [Concept('moria', 'Мории')|E]."
+
+ lotr_balrog_explore_moria_supply_cache_large: "Богатый тайник с гномьими припасами"
+ lotr_balrog_explore_moria_supply_cache_large_desc: "Этот персонаж нашёл большой тайник с припасами в туннелях [Concept('moria', 'Мории')|E]."
+
+ lotr_balrog_explore_moria_construction_supplies: "Гномьи строительные материалы"
+ lotr_balrog_explore_moria_construction_supplies_desc: "Этот персонаж нашёл строительные материалы в туннелях [Concept('moria', 'Мории')|E]."
+
+ lotr_balrog_explore_moria_construction_supplies_large: "Прекрасные гномьи строительные материалы"
+ lotr_balrog_explore_moria_construction_supplies_large_desc: "Этот персонаж нашёл огромное количество строительных материалов в туннелях [Concept('moria', 'Мории')|E]."
+
+ lotr_balrog_explore_moria_blacksmithing_tools: "Гномьи кузнечные инструменты"
+ lotr_balrog_explore_moria_blacksmithing_tools_desc: "Этот персонаж нашёл тайник с кузнечными инструментами в туннелях [Concept('moria', 'Мории')|E]."
+
+ lotr_balrog_explore_moria_blacksmithing_tools_large: "Прекрасные гномьи кузнечные инструменты"
+ lotr_balrog_explore_moria_blacksmithing_tools_large_desc: "Этот персонаж нашёл тайник с мастерскими кузнечными инструментами в туннелях [Concept('moria', 'Мории')|E]."
+
+
+
+ balrog_struggle.1022.tt: "Вы нашли обычный [Concept('dwarven', 'гномий')|E] [Concept('artifact', 'артефакт')|E]."
+ balrog_struggle.1022.tt2: "Можно найти редкий [Concept('dwarven', 'гномий')|E] [Concept('artifact', 'артефакт')|E]."
+
+
+
+ struggle_balrog_hide_realm: "Сокрыть державу"
+ struggle_balrog_hide_realm_desc: "[Concept('balrog', 'Балрог')|E] уничтожил [Concept('khazaddum', 'Кхазад-дум')|E], и это нас погубит! Наша единственная надежда - полностью изолироваться, спрятаться в тёмных норах, пока опасность не минует."
+ struggle_balrog_hide_realm_tooltip: "Успокоить балрога"
+ struggle_balrog_hide_realm_confirm: "Закрыть ворота!"
+ struggle_balrog_hide_realm.tt: "[Concept('balrog_struggle', 'Морийская борьба')|E] получит [Concept('struggle_catalyst_catalyst', 'катализатор')|E] успокоения, пока у вас есть [Concept('modifier', 'модификатор')|E] «[GetModifier('lotr_balrog_hiding_realm').GetNameWithTooltip]»."
+
+ struggle_balrog_hide_realm_end: "Выйти из укрытия"
+ struggle_balrog_hide_realm_end_desc: "Опасность, исходящая от [Concept('balrog', 'балрога')|E], миновала. Мы можем вновь выйти на свет."
+ struggle_balrog_hide_realm_end_tooltip: "Выйти из укрытия"
+ struggle_balrog_hide_realm_end_confirm: "Открыть ворота!"
+
 
  catalyst_delved_too_deep: "[Concept('delving', 'Подземное владение')|E] прокопано слишком глубоко."
- catalyst_delved_too_deep_desc: "[Concept('ruler', 'Правитель')|E] владеет [Concept('delving', 'подземным владением')|E] 4 уровня или выше в [Concept('struggle_region', 'регионе борьбы')|E]"
+ catalyst_delved_too_deep_desc: "Ежегодный сдвиг: [Concept('ruler', 'Правитель')|E] владеет [Concept('delving', 'подземным владением')|E] 4 уровня или выше в [Concept('struggle_region', 'области борьбы')|E]"
  catalyst_controls_too_large_area_moria: "[Concept('struggle_involved', 'Вовлечённый')|E] либо [Concept('struggle_interloper', 'вмешавшийся в борьбу')|E] [Concept('ruler', 'правитель')|E] слишком силён"
- catalyst_controls_too_large_area_moria_desc: "[Concept('struggle_involved', 'Вовлечённый')|E] либо [Concept('struggle_interloper', 'вмешавшийся в борьбу')|E] [Concept('ruler', 'правитель')|E] конттролирует 50% региона борьбы в течение целого года"
+ catalyst_controls_too_large_area_moria_desc: "Ежегодный сдвиг: [Concept('struggle_involved', 'Вовлечённый')|E] либо [Concept('struggle_interloper', 'вмешавшийся в борьбу')|E] [Concept('ruler', 'правитель')|E] контролирует 50% [Concept('struggle_region', 'области борьбы')|E]"
+ catalyst_hiding_realm: "[Concept('struggle_involved', 'Вовлечённый')|E] либо [Concept('struggle_interloper', 'вмешавшийся в борьбу')|E] [Concept('ruler', 'правитель')|E] находится в укрытии"
+ catalyst_hiding_realm_desc: "Ежегодный сдвиг: Сокрытые державы"
 
+
+ lotr_balrog_hiding_realm: "Сокрытая держава"
+ lotr_balrog_hiding_realm_desc: "Этот персонаж предпринял решительные меры, чтобы скрыть свою [Concept('realm', 'державу')|E] от [Concept('balrog', 'балрога')|E]."
+
+
+
+ reform_amendment_name: "Поправка о харадунайской реформе"
+ reform_amendment_description: "Эта поправка к Великому конкордату [Concept('balan_lai', 'Балан-лай')|E] закрепляет ряд прав для наследственных классов кастовой системы, давно сложившейся в [Concept('thanihazad', 'Тани-Хазаде')|E], чтобы гарантировать более справедливую жизнь всем его подданным. Обладая властью Великого конкорданта, принцы сами подчиняются этим законам и обязаны обеспечивать их соблюдение по всем [Concept('sevenlands', 'Семи землям')|E]. Этот церемониальный экземпляр поправок и реформ был подарен правителю, который их отстаивал, как символ его наследия."
+
+
+ tradition_reformed_kharadunai_name: "Реформы харадунаим"
+ tradition_reformed_kharadunai_desc: "Этот ряд поправок к Великому конкордату, подписанный большинством принцев, устанавливает и закрепляет права различных наследственных классов местной кастовой системы, стремясь обеспечить более справедливую жизнь для всех. Для обеспечения соблюдения этих прав были приняты меры правовой защиты под эгидой самого Великого конкордата, что делает их соблюдение обязанностью каждого принца. Харадунайское общество не изменится в одночасье, но реформы, тем не менее, положили начало периоду беспрецедентного развития и культурной интеграции."
+
+
+
+ derei.1026.t: "Исторический день"
+ derei.1026.desc: "В залах Балан-лай в городе [GetTitleByKey('c_mispir').GetNameNoTier] принцы собираются, чтобы официально подписать реформу. В воздухе витает волнение. Действительно ли принцы верят в поправку, или они думают, что это изменение статус-кво откроет новые, более циничные возможности, не имеет значения. Это надёжный свод законов, который обеспечит более справедливую жизнь для всех народов [Concept('sevenlands', 'Семи земель')|E].\n\nПосле торжественной церемонии подписания я выступаю перед своими коллегами на площади и объявляю законы жителям #ONCLICK:TITLE,c_mispir #TOOLTIP:LANDED_TITLE,c_mispir #L Миспира#!#!#!. Аплодисменты варьируются от умеренных до восторженных. Многие из них, даже здесь, в #ONCLICK:TITLE,c_mispir #TOOLTIP:LANDED_TITLE,c_mispir #L Миспире#!#!#!, не имеют надлежащего [Concept('adunaic', 'адунайского')|E] происхождения.\n\nКогда я заканчиваю свою речь, [balan_lai_1.GetName] вручает мне церемониальный экземпляр моих реформ. Это станет бесценной реликвией моего дома."
+ derei.1026.a: "Наконец-то моя работа закончена."
+ 
+
+
+ decision_reform_kharadunai: "Реформировать харадунайскую культуру"
+ decision_reform_kharadunai_tooltip: "Это венец многолетней работы"
+ decision_reform_kharadunai_desc: "Вы будете добиваться поддержки принцев для внесения ряда поправок в Великий конкордат, закрепляющих справедливые права всех подданных [Concept('sevenlands', 'Семи земель')|E].\n\nМы позаботимся о том, чтобы люди всех сословий могли жить более справедливой и приносящей удовлетворение жизнью. Сами принцы будут обязаны обеспечивать соблюдение этих правил и будут нести ответственность за нарушение Конкордата, если они этого не сделают."
+ decision_reform_kharadunai_confirm: "К лучшему будущему!"
 
 
  balrog_struggle.1021.t: "Путешествие во мрак: поиск сокровищ"
@@ -1026,6 +1089,8 @@
  catalyst_hope_increases_desc: "В ближайшей [Concept('situation_sub_region', 'области ситуации')|E] «[GetSituationType('elven_hope_situation').GetName]» повысился уровень [Concept('hope', 'надежды')|E]."
  catalyst_hope_decreases: "Снижение [Concept('hope', 'надежды')|E]"
  catalyst_hope_decreases_desc: "В ближайшей [Concept('situation_sub_region', 'области ситуации')|E] «[GetSituationType('elven_hope_situation').GetName]» снизился уровень [Concept('hope', 'надежды')|E]."
+
+
 
 
 
