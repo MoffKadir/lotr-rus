@@ -605,6 +605,16 @@
  decision_expand_tharagrondost_tooltip: "Расширить Тараграндост, чтобы он стал величайшим городом Андраста"
  decision_expand_tharagrondost_confirm: "Построим гавани и стены получше!"
  andrast_urbanization_01: "Развитие всех графств провинции [GetTitleByKey('d_nan_enqui').GetNameNoTier] превышает 15"
+
+ decision_bellakar_unification: "Объединить родословные дунэдайн и Беллакара"
+ decision_bellakar_unification_desc: "Давным-давно, когда [GetScriptedCharacterByHistoryID( 'lineofelendil' ).GetFirstName] основал королевства [Concept('faithful', 'верных')|E] в [Concept('gondor', 'Гондоре')|E] и [Concept('arnor', 'Арноре')|E], он также обратился к владыкам далёкого [Concept('bellakar', 'Беллакара')|E]: не для того, чтобы сделать их своими подданными, а чтобы заключить союз в борьбе с Тьмой.\n\nОднако времена изменились. Наша победа над #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofsauron').GetID] #L Тёмным властелином Сауроном#!#! принесла нам несказанный престиж во всём [Concept('middleearth', 'Средиземье')|E]. Наши узы с #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакаром#!#!#! крепче, чем когда-либо, и наши королевские роды связаны узами крови и брака. Некоторые сейчас задаются вопросом, не пришло ли время истинным сынам древнего [Concept('numenor', 'Нуменора')|E] объединиться под властью одного короля, как это было в древние времена."
+ decision_bellakar_unification_tooltip: "Вассализировать [GetTitleByKey('e_bellakar').GetNameNoTier] в вашу державу благодаря союзу и общей крови."
+ decision_bellakar_unification_confirm: "Наконец-то Верные объединились!"
+ decision_bellakar_unification_tt: "Вы обратитесь к правителю #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, чтобы заключить унию между вашими державами."
+ must_have_bellakar_dynasty_ties: "Вы происходите от [Concept('ruler', 'правителя')|E] #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!"
+ heir_must_have_bellakar_dynasty_ties: "Ваш [Concept('heir', 'наследник')|E] происходит от [Concept('ruler', 'правителя')|E] #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!"
+ bellakar_unification_house_relations: "Между вашим [Concept('house', 'домом')|E] и правящим домом #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#! должны быть #V верные#! [Concept('house_relations', 'отношения')|E]."
+
  ### Arnorian Decision Subset ###
  decision_adopt_arnorian_culture: "Принять арнорскую культуру"
  decision_adopt_arnorian_culture_desc: "Когда-то люди [Concept('arnor', 'Арнора')|E] собирали могучие войска и создавали великие королевства. Увы, упадок и войны заставили нас стать теми, кем мы являемся сейчас, - странниками в дебрях, неизвестными многим и вызывающими уважение у немногих. Хотя это и спасло нас, но в то же время заставило потерять связь с путями наших предков. Если бы мы смогли восстановить своё государство, мы могли бы способствовать культурному возрождению древних традиций Арнора."
