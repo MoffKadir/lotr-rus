@@ -1942,7 +1942,19 @@
  decision_seek_the_princes_tooltip: "Обучение у своих собратьев-принцев - это первый шаг к процветанию как единое целое"
  decision_seek_the_princes_desc: "Я встречусь со своими коллегами из [Concept('balan_lai', 'Балан-лай')|E], совершив четыре путешествия по [Concept('thanihazad', 'Тани-Хазаду')|E], и оценю их. Я узнаю об их успехах и неудачах, об их нравственности и приоритетах. Как только у меня появится более чёткое представление о том, что они из себя представляют такие как правители, я надеюсь, что у меня появится лучшее видение о том, кем я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] быть."
  decision_seek_the_princes_confirm: "В путь."
- decision_seek_the_princes_tt: "Вы отправитесь на встречу с каждым из принцев:\n\nПервое путешествие - Встреча со Старым принцем\n- [GetTitleByKey('c_uruloni').GetHolder.GetName]\n\nВторое путешествие - [mirenore|E]\n- [GetTitleByKey('c_karasalas').GetHolder.GetName]\n- [GetTitleByKey('c_alsarias').GetHolder.GetName]\n\nТретье путешествие - Север\n- [GetTitleByKey('c_azarideth').GetHolder.GetName]\n- [GetTitleByKey('c_inzilloni').GetHolder.GetName]\n- [GetTitleByKey('c_holzoreth').GetHolder.GetName]\n\nПоследнее путешествие - Пэл и Миспир\n- [GetTitleByKey('c_arpel').GetHolder.GetName]\n- [GetTitleByKey('c_mispir').GetHolder.GetName]"
+ decision_seek_the_princes_tt: "Вы отправитесь на встречу с каждым из принцев:\n\nПервое путешествие - Встреча со Старым принцем\n$BULLET_WITH_TAB$[GetTitleByKey('c_uruloni').GetHolder.GetName]\n\nВторое путешествие - [zimrathani|E]\n$BULLET_WITH_TAB$[GetTitleByKey('c_karasalas').GetHolder.GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('c_alsarias').GetHolder.GetName]\n\nТретье путешествие - Север\n$BULLET_WITH_TAB$[GetTitleByKey('c_azarideth').GetHolder.GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('c_inzilloni').GetHolder.GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('c_holzoreth').GetHolder.GetName]\n\nПоследнее путешествие - Пэл и Миспир\n$BULLET_WITH_TAB$[GetTitleByKey('c_arpel').GetHolder.GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('c_mispir').GetHolder.GetName]"
+
+ decision_convince_the_princes: "Убедить принцев"
+ decision_convince_the_princes_tooltip: "Это потребует большой подготовки, но вы постараетесь убедить принцев следовать Надрот 'нСаптан-лай"
+ decision_convince_the_princes_desc: "Это будет нелегко, но, если всё хорошо спланировать, я, возможно, смогу убедить своих коллег из [Concept('balan_lai', 'Балан-лай')|E] изменить свой образ жизни! Нам нужен более доброжелательный подход к коренному населению."
+ decision_convince_the_princes_confirm: "Выбрать цель."
+ decision_convince_the_princes_tt: "Следующие факторы помогут вам:\n\n$BULLET$Дипломатичность и учёность Дэрая.\n$BULLET$Выбранный принц является вашим другом или любовником.\n$BULLET$Рычаг влияния на вашу цель.\n$BULLET$Выбранный принц имеет отзывчивую и законопослушную личность.\n$BULLET$Другие принцы, в особенности [GetTitleByKey('d_balan_lai_leader').GetName|l], исповедуют $faith_gimileth_adj$.\n\n#help У вас будет выбор, к какому принцу обратиться.#!\n"
+
+ decision_reform_kharadunai: "Реформировать харадунайскую культуру"
+ decision_reform_kharadunai_tooltip: "Это венец многолетней работы"
+ decision_reform_kharadunai_desc: "Вы будете добиваться поддержки принцев для внесения ряда поправок в Великий конкордат, закрепляющих справедливые права всех подданных [Concept('sevenlands', 'Семи земель')|E].\n\nМы позаботимся о том, чтобы люди всех сословий могли жить более справедливой и приносящей удовлетворение жизнью. Сами принцы будут обязаны обеспечивать соблюдение этих правил и будут нести ответственность за нарушение Конкордата, если они этого не сделают."
+ decision_reform_kharadunai_confirm: "К лучшему будущему!"
+ balan_lai_reform_princes_percentage: "75% принцев [Concept('balan_lai', 'Балан-лай')|E] исповедуют [GetFaithByKey('faith_gimileth').GetAdjective]\n\n$BULLET_WITH_TAB$В настоящее время #V [GetPlayer.MakeScope.ScriptValue('lotr_derei_convinced_percentage')]%#! удовлетворяют этому требованию"
 
  #############################
  #### Balan-Lai Decisions ####
@@ -2629,11 +2641,21 @@
  decision_amrothian_reserves_tooltip: "Пополнить ряды костяка ваших войск"
  decision_amrothian_reserves_confirm: "Воины, [ROOT.Char.GetTitleAsNameNoTooltip] нуждается в вас!"
 
- decision_dol_amroth_edhellond: "Основать следопытов Нимродель"
+ decision_dol_amroth_edhellond: "Укрепить следопытов Нимродель"
  decision_dol_amroth_edhellond_desc: "Эделлонд, некогда бывший родиной одноименного [Concept('elven', 'эльфийского')|E] владения, является одной из самых благородных и богатых провинций Дор-эн-Эрниля. Они стремятся подражать эльфийской тактике ведения боя, в отличие от остальных [Concept('dol_amroth', 'дол-амротцев')|E], которые придерживаются твёрдых боевых традиций, унаследованных со времён [Concept('numenor', 'Нуменора')|E]. Их ряды в Ордене опустели, клятвы были позабыты, поскольку внутри организации царила гниль. Мы должны заново принести наши древние клятвы.\n\nЕсли бы они могли быть реинтегрированы в войска, они могли бы стать мощным и инновационным контингентом, которых не устыдится [Select_CString(ROOT.Char.IsFemale, 'любая', 'любой' )] [ROOT.Char.GetTitleAsNameNoTooltip|l]."
  decision_dol_amroth_edhellond_tooltip: "Реформировать полки Эделлонда"
  decision_dol_amroth_edhellond_confirm: "Послать самого быстрого всадника, чтобы собрать воинов!"
  decision_dol_amroth_edhellond_tt: "Доступны [men_at_arms|El] - [GetMaA('rangers_of_ithilien').GetName]"
+
+ decision_dol_amroth_tolfalas: "Укрепить Толфалас"
+ decision_dol_amroth_tolfalas_desc: "Когда-то Дор-эн-Эрниль был равен могучим мореходам Пеларгира, и морские стражи сражались в открытом море и на побережье, побеждая пиратов и завоёвывая высокие почести. Однако по мере того, как Пеларгир становился всё более заметным центром Королевского флота, это подразделение стражей сократилось до минимальных сил, сохраняя в лучшем случае несколько береговых сторожевых постов.\n\nЕсли бы мы могли вновь расширить их, они снова сослужили бы нам хорошую службу в качестве грозных ударных отрядов, особенно помогая в обороне Толфаласа.\n\nТолфалас, центральный остров Этир-Андуина, расположен у входа в залив Бельфалас, и пираты часто совершают на него набеги. Этим набегам необходимо положить конец, так как Морская стража снова вступает в бой."
+ decision_dol_amroth_tolfalas_tooltip: "Укрепить оборону Толфаласа"
+ decision_dol_amroth_tolfalas_confirm: "Немедленно начать тренировку!"
+
+ decision_dol_amroth_tirith_aear: "Восстановить Тирит-Аэар"
+ decision_dol_amroth_tirith_aear_desc: "Тирит Аэар, или «Башня морской стражи» на [Concept('sindarin', 'синдарине')|E], - это великая башня Дор-эн-Эрниля, некогда построенная [Concept('elves', 'эльфами')|E], жившими в этих землях. Это название также закрепилось за элитными гвардейскими подразделениями, охраняющими башню, - хранителями клятвы Тирит-Аэар, лучшими из морских стражей. Обязанные приносить клятвы добродетели и доблести, эти стражи должны обладать безупречным характером. Но из всех сословий старого ордена это сгнило сильнее всего, и положение в нём давалось благодаря крови, а не доблести. Потребуется немало усилий, чтобы восстановить его в былом величии.\n\nМы начнём с увольнения тех членов ордена, о которых известно, что они коррумпированы, а затем приступим к поиску людей, достойных этой великой чести. Сама башня также нуждается в ремонте, поскольку с годами она пришла в упадок. Мы должны пригласить лучших каменщиков Бельфаласа, чтобы они восстановили её!"
+ decision_dol_amroth_tirith_aear_tooltip: "Восстановить великую башню морской стражи"
+ decision_dol_amroth_tirith_aear_confirm: "Пусть Тирит-Аэар вновь возвысится."
 
  #############################
  #### Rhovanion Decisions ####
