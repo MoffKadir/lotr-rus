@@ -801,11 +801,37 @@
 
 
 
+ decision_skorgrim_dourhand_feast_broadbeams: "Пригласить Двалина V на пир"
+ decision_skorgrim_dourhand_feast_broadbeams_tooltip: "Вы отправите персонажу [dwalin_V.GetFirstNameRegnal] письмо с приглашением посетить ваши чертоги."
+ decision_skorgrim_dourhand_feast_broadbeams_desc: "PLACEHOLDER"
+ decision_skorgrim_dourhand_feast_broadbeams_confirm: "PLACEHOLDER"
+ pen_broadbeams: "Вы нацелились на Широкозадов с помощью пера"
+ decision_skorgrim_dourhand_feast_broadbeams_effect_tt: "Вы пригласите своего короля на встречу в своих чертогах"
+
+ decision_skorgrim_dourhand_war_broadbeams: "Объявить войну Широкозадам"
+ decision_skorgrim_dourhand_war_broadbeams_tooltip: "Вы объявите войну за кражу [Concept('sevenringsofdwarves', 'Кольца Широкозадов')|E] у персонажа [dwalin_V.GetFirstNameRegnal]."
+ decision_skorgrim_dourhand_war_broadbeams_desc: "PLACEHOLDER"
+ decision_skorgrim_dourhand_war_broadbeams_confirm: "PLACEHOLDER"
+ war_broadbeams: "Вы нацелились на Широкозадов с помощью войны"
+ decision_skorgrim_dourhand_war_broadbeams_effect_tt: "PLACEHOLDER"
+
+ decision_skorgrim_dourhand_feast_firebeards: "Пригласить Фрора II на пир"
+ decision_skorgrim_dourhand_feast_firebeards_tooltip: "Вы отправите персонажу [fror_II.GetFirstNameRegnal] письмо с приглашением посетить ваши чертоги."
+ decision_skorgrim_dourhand_feast_firebeards_desc: "PLACEHOLDER"
+ decision_skorgrim_dourhand_feast_firebeards_confirm: "PLACEHOLDER"
+ pen_firebeards: "Вы нацелились на Огнебородов с помощью пера"
+ decision_skorgrim_dourhand_feast_firebeards_effect_tt: "PLACEHOLDER"
+
+ decision_skorgrim_dourhand_war_firebeards: "Объявить войну Огнебородам"
+ decision_skorgrim_dourhand_war_firebeards_tooltip: "Вы объявите войну за кражу [Concept('sevenringsofdwarves', 'Кольца Огнебородов')|E] у персонажа [fror_II.GetFirstNameRegnal]."
+ decision_skorgrim_dourhand_war_firebeards_desc: "PLACEHOLDER"
+ decision_skorgrim_dourhand_war_firebeards_confirm: "PLACEHOLDER"
+ war_firebeards: "Вы нацелились на Огнебородов с помощью войны"
+ decision_skorgrim_dourhand_war_firebeards_effect_tt: "PLACEHOLDER"
 
 
 
-
-
+ decision_group_type_skorgrim_dourhand_rings: "Скоргрим Крепкохват - Кольца гномов"
 
 
  skorgrim_dourhand.0101.t: "Интересный договор"
@@ -854,6 +880,18 @@
  skorgrim_dourhand.0108.b: "Я заберу его силой. Подготовимся к войне."
  skorgrim_dourhand_meeting: "Вам станет доступно [Concept('decision', 'решение')|E], позволяющее устроить коварную засаду, когда будете принимать его в качестве почётного гостя"
  skorgrim_dourhand_war: "Вам станет доступно [Concept('decision', 'решение')|E], позволяющее объявить войну за артефакт за Кольцо Власти"
+
+ skorgrim_dourhand.0109.t: "Приглашение на пир"
+ skorgrim_dourhand.0109.desc: "Placeholder"
+ skorgrim_dourhand.0109.a: "Посмотрим, что он уже успел сделать."
+ skorgrim_dourhand.0109.b: "Я не [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] насчёт этого. Может быть, лучше остаться дома."
+ skorgrim_dourhand_broadbeam_meeting: "#V Вы#!, #V [dwalin_V.GetFirstName]#!, отправитесь во владение [GetTitleByKey('c_zillinakhur').GetNameNoTier]."
+ skorgrim_dourhand_broadbeam_meeting_refusal: "Вы откажетесь от этого предложения с непредвиденными последствиями."
+
+ skorgrim_dourhand.0110.t: "Прибытие во владение [GetTitleByKey('c_zillinakhur').GetNameNoTier]"
+ skorgrim_dourhand.0110.desc: "PLACEHOLDER"
+ skorgrim_dourhand.0110.a: "Наконец-то!"
+ king_received_by_skorgrim: "[GetScriptedCharacterByHistoryID('lineofdourhand17')GetName] принимает вас."
 
 
 
