@@ -355,3 +355,18 @@
  trait_dwarf_father_killer_desc_skorgrim: "Скоргрим Крепкохват — [Concept('dwarf', 'гном')|E], который предал свой род, свой народ и своего [Concept('dwarffather', 'праотца')|E], когда [GetScriptedCharacterByHistoryID('lineofdwalinV').GetFirstNameRegnal] пал от его рук. Скоргрим отдал [Concept('sevenringsofdwarves', 'Кольцо Широкозадов')|E] в руки #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('nazgul1').GetID] #L Короля-чародея#!#!.\n\nЭто предательство навлекло на него вечную ненависть [Concept('broadbeam', 'Широкозадов')|E] и привело к казни всех до единого членов дома [GetScriptedCharacterByHistoryID('lineofdourhand17').GetDynasty.GetName]."
 
  trait_hidden: ""
+ trait_hidden_desc: ""
+
+ #AGOT
+ trait_half_blind: "Полуслепость"
+ trait_half_blind_desc: "Этот персонаж слеп на один глаз."
+ trait_half_blind_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString( ROOT.GetCharacter.IsFemale, 'слепа', 'слеп' )] на один глаз."
+
+ #AGOT
+ trait_burned: "[Select_CString( ROOT.GetCharacter.IsFemale, 'Обожжёная', 'Обожжёный' )]"
+ trait_burned_2: "Сильные ожоги"
+ trait_burned_3: "Тяжёлые ожоги"
+ trait_burned_desc: "Этот персонаж был обожжён, и теперь на его обожжённой плоти остались шрамы на всю жизнь."
+ trait_burned_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString( ROOT.GetCharacter.IsFemale, 'была обожжена', 'был обожжён' )], и теперь на [ROOT.GetCharacter.GetHerHis] обожжённой плоти на всю жизнь остались шрамы."
+ trait_track_burned: "Ожоги"
+ trait_track_burned_desc: "Ожог - это ужасная вещь, на которую страшно смотреть. Конечно, это не всегда должно быть во вред..."

@@ -1952,8 +1952,9 @@
  decision_seek_the_princes_confirm: "В путь."
  decision_seek_the_princes_tt: "Вы отправитесь на встречу с каждым из принцев:\n\nПервое путешествие - Встреча со Старым принцем\n$BULLET_WITH_TAB$[GetTitleByKey('c_uruloni').GetHolder.GetName]\n\nВторое путешествие - [zimrathani|E]\n$BULLET_WITH_TAB$[GetTitleByKey('c_karasalas').GetHolder.GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('c_alsarias').GetHolder.GetName]\n\nТретье путешествие - Север\n$BULLET_WITH_TAB$[GetTitleByKey('c_azarideth').GetHolder.GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('c_inzilloni').GetHolder.GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('c_holzoreth').GetHolder.GetName]\n\nПоследнее путешествие - Пэл и Миспир\n$BULLET_WITH_TAB$[GetTitleByKey('c_arpel').GetHolder.GetName]\n$BULLET_WITH_TAB$[GetTitleByKey('c_mispir').GetHolder.GetName]"
 
- decision_convince_the_princes: "Убедить принцев"
- decision_convince_the_princes_tooltip: "Это потребует большой подготовки, но вы постараетесь убедить принцев следовать Надрот 'нСаптан-лай"
+ decision_convince_the_princes: "Убедить Балан-лай"
+ decision_convince_the_princes_tooltip: "Это потребует большой подготовки, но вы постараетесь убедить Балан-лай следовать Надрот 'нСаптан-лай"
+ convince_is_valid: "У вас есть подходящие цели"
  decision_convince_the_princes_desc: "Это будет нелегко, но, если всё хорошо спланировать, я, возможно, смогу убедить своих коллег из [Concept('balan_lai', 'Балан-лай')|E] изменить свой образ жизни! Нам нужен более доброжелательный подход к коренному населению."
  decision_convince_the_princes_confirm: "Выбрать цель."
  decision_convince_the_princes_tt: "Следующие факторы помогут вам:\n\n$BULLET$Дипломатичность и учёность Дэрая.\n$BULLET$Выбранный принц является вашим другом или любовником.\n$BULLET$Рычаг влияния на вашу цель.\n$BULLET$Выбранный принц имеет отзывчивую и законопослушную личность.\n$BULLET$Другие принцы, в особенности [GetTitleByKey('d_balan_lai_leader').GetName|l], исповедуют $faith_gimileth_adj$.\n\n#help У вас будет выбор, к какому принцу обратиться.#!\n"
@@ -2499,6 +2500,19 @@
  lotr_mud_masons_settlement_jenne_option: "[settlement_holdings|E]"
  lotr_mud_masons_settlement_jenne_option_desc: "Равномерно сосредоточиться на всех [Concept('settlement_holdings', 'поселениях')|E]"
  lotr_mud_masons_settlement_jenne_option_tooltip: "Получить #V 100#! [prestige_i|E] и [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('lotr_mud_masons_settlement_modifier_jenne').GetNameWithTooltip] на #V 10#! лет."
+
+ decision_integrate_cirith_nargil: "Интегрировать Кирит-Наргиль"
+ decision_integrate_cirith_nargil_desc: "Перевал Кирит-Наргиль охраняет один из немногих проходов в [Concept('mordor', 'Мордор')|E]. В прошлые века он находился под контролем [Concept('orcs', 'орков')|E] Тёмного властелина, но те времена давно прошли. Теперь это оборонительный рубеж, который можно укрепить против набегов нурниагов, которые время от времени разоряют наши земли.\n\nЕсли перевал Наргиль будет защищён, народ Хелкара будет в большей безопасности."
+ decision_integrate_cirith_nargil_tooltip: "Включить перевал Наргиль в состав Хелкара"
+ decision_integrate_cirith_nargil_confirm: "Поднять наши знамёна над перевалом."
+ cirith_nargil_full_control_tt: "[GetTitleByKey('c_cirith_nargil').GetNameNoTier] имеет полный [Concept('control', 'контроль')|E]"
+ decision_integrate_cirith_nargil_tt: "Перевал Наргиль интегрирован"
+
+ decision_return_cirith_nargil: "Вернуть Кирит-Наргиль"
+ decision_return_cirith_nargil_desc: "На перевал Кирит-Наргиль претендуют те, кто правит Хелкаром и обширными землями за его пределами. Но это один из немногих проходов в [Concept('mordor', 'Мордор')|E], имеющий огромное стратегическое значение для любого правителя, стремящегося обезопасить равнины Нурна.\n\nЕсли бы мы могли обезопасить перевал Наргиль и закрепить за собой наши права на него, мы могли бы гарантировать, что никто не проникнет в Нурн без нашего разрешения."
+ decision_return_cirith_nargil_tooltip: "Вернуть перевал Наргиль в состав Нурна"
+ decision_return_cirith_nargil_confirm: "Перевал Наргиль принадлежит нам."
+ decision_return_cirith_nargil_tt: "Перевал Наргиль возвращён"
 
  ####################################
  ### Namâlo Spice Trade Decisions ###

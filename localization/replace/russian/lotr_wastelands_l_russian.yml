@@ -45,3 +45,47 @@
  gui_settlement_holding_limit: "#size:18 #bold [settlement_holding_limit|E]: [Character.MakeScope.Var('num_settled_wilderness').GetValue]/[Character.MakeScope.ScriptValue('settlement_title_tier_limit')] [Concept( 'holdings', 'владений' )|E]#!#!\nПоселение: [Character.MakeScope.Var('num_settled_wilderness').GetValue]\n\n#size:16 #italic [gui_settlement_holding_limit|E]: #high [Character.MakeScope.ScriptValue('settlement_title_tier_limit')]#!#!#!\n[title_tier|E] основного титула: #P +[Character.MakeScope.ScriptValue('settlement_title_tier_limit')]#!"
 
  balin_expedition_wastelands: "Поселенцы бегут из Мории в более безопасные земли!"
+
+ #########################################
+ ### Wastelands Automated Colonisation ###
+ #########################################
+ WASTELANDS_AUTOMATION_FEATURE_NAME: "Автоматическая колонизация"
+ WASTELANDS_AUTOMATION_TOGGLE_TT: "[SelectLocalization( GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), 'WASTELANDS_AUTOMATION_TOGGLE_TT_OFF', 'WASTELANDS_AUTOMATION_TOGGLE_TT_ON' )]"
+ WASTELANDS_AUTOMATION_TOGGLE_TT_ON: "#T $WASTELANDS_AUTOMATION_FEATURE_NAME$: #V Включена#!\n#!$WASTELANDS_AUTOMATION_TOGGLE_TT_DESC$\n\n#I Нажмите, чтобы отключить автоматизацию#!"
+ WASTELANDS_AUTOMATION_TOGGLE_TT_OFF: "#T $WASTELANDS_AUTOMATION_FEATURE_NAME$: #V Отключена#!\n#!$WASTELANDS_AUTOMATION_TOGGLE_TT_DESC$\n\n#I Нажмите, чтобы включить автоматизацию#!"
+ WASTELANDS_AUTOMATION_TOGGLE_TT_DESC: "[SelectLocalization(GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), 'WASTELANDS_AUTOMATION_TOGGLE_TT_DEFAULT_DESC' , 'WASTELANDS_AUTOMATION_TOGGLE_TT_CUSTOM_DESC')]\n\n[SelectLocalization(GetScriptedGui('lotr_WAC_higher_title_already_selected_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), '' , 'WASTELANDS_AUTOMATION_TOGGLE_TT_HIGHER_TITLE_SELECTED')]"
+ WASTELANDS_AUTOMATION_TOGGLE_TT_DEFAULT_DESC: "Если эта функция включена, ваш [Concept('ruler', 'правитель')|E] автоматически [Concept('colonise', 'колонизирует')|E] выбранный титул и все титулы, [Concept('de_jure', 'де-юре')|E] входящие в него, а также автоматически удаляет препятствия и строит постройки [Concept('settlement', 'поселения')|E].\n\nЕсли иное не предусмотрено настройками автоматизации, улучшение поселения в [Concept('castle', 'замковое')|E], [Concept('city', 'городское')|E] или [Concept('temple', 'храмовое')|E] [Concept('holding', 'владение')|E] происходит вручную.\n\n#help Автоматическая колонизация предназначена для игроков, незнакомых с механикой колонизации или желающих сосредоточить своё внимание на чём-то другом.#!"
+ WASTELANDS_AUTOMATION_TOGGLE_TT_CUSTOM_DESC: "Если эта функция включена, ваш [Concept('ruler', 'правитель')|E] будет колонизировать самостоятельно, ограничиваясь лишь выбранными настройками."
+ WASTELANDS_AUTOMATION_TOGGLE_TT_HIGHER_TITLE_SELECTED: "@warning_icon! #N Для автоматизации уже выбран де-юре титул с более высоким рангом#!"
+
+ INTERFACE_TOAST_COUNTY_COLONISED: "Владение [county_to_colonise.GetName] было колонизировано"
+ INTERFACE_TOAST_COUNTY_HANDED_OUT: "Владение [target.GetNameNoTier] передано персонажу [generated_ruler.GetFirstName]"
+
+ ### SETTINGS MENU ###
+ WASTELANDS_AUTOMATION_SETTINGS: "#size:20 Открыть параметры автоматической колонизации#!\nИзменить стандартные настройки автоматической колонизации"
+ WASTELANDS_AUTOMATION_SETTINGS_HEADER: "Параметры автоматической колонизации"
+
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS: "Строительство зданий"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_CASTLE: "Замок"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_CITY: "Город"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_TEMPLE: "Храм"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_TRIBE: "Племя"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_DELVING: "Подземное владение"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_REFUGE: "Эльфийский приюот"
+ WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS: "Строительство владений"
+ WASTELANDS_AUTOMATION_SETTINGS_TT: "Если этот параметр #V активирован#!, то это [Concept('building', 'здание')|E] или [Concept('holding', 'владение')|E] будет построено автоматически, если у игрока будет достаточно [Concept('gold', 'золота')|E] или [Concept('prestige', 'престижа')|E], в зависимости от типа его [Concept('government', 'формы правления')|E]."
+
+ WASTELANDS_AUTOMATION_SETTINGS_TITLES: "Передача титулов"
+ WASTELANDS_AUTOMATION_SETTINGS_GENERATED_RULER: "Передать [Concept('title', 'титул')|E] созданному [Concept('ruler', 'правителю')|E], как только он будет улучшен в полноценное [Concept('holding', 'владение')|E]"
+ WASTELANDS_AUTOMATION_SETTINGS_VASSAL_RULER: "Передать [Concept('title', 'титул')|E] соседнему [Concept('vassal', 'вассалу')|E], как только он будет улучшен в полноценное [Concept('holding', 'владение')|E]"
+ WASTELANDS_AUTOMATION_SETTINGS_TITLES_TT: "Автоматически передаст [Concept('titles', 'титулы')|E] [Concept('ruler', 'правителю')|E], как только они будут улучшены до [Concept('holding', 'владения')|E], которое не является [Concept('settlement', 'поселением')|E].\n\n[SelectLocalization(Or(Not(GetScriptedGui('lotr_WAC_vassal_ruler_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)), Not(GetScriptedGui('lotr_WAC_generated_ruler_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))), 'WASTELANDS_AUTOMATED_SETTINGS_TITLES_LOCK' , '')]"
+ WASTELANDS_AUTOMATED_SETTINGS_TITLES_LOCK: "@warning_icon! #N Одновременно вы можете выбрать только один параметр!#!"
+
+ WASTELANDS_AUTOMATION_SETTINGS_GOLD_LIMIT: "Текущий объём обязательного запаса [Concept('gold', 'золота')|E]: #V [GetPlayer.MakeScope.ScriptValue('lotr_WAC_gold_limit_value')|0]#!"
+ WASTELANDS_AUTOMATION_SETTINGS_DECREASE_GOLD_LIMIT_TT: "#V Снизит#! количество требуемого для строительства [Concept('buildings', 'зданий')|E] запаса [Concept('gold', 'золота')|E]."
+ WASTELANDS_AUTOMATION_SETTINGS_DECREASE_GOLD_LIMIT_VALID_TT: "Количество требуемого запаса [Concept('gold', 'золота')|E] нельзя снизить"
+ WASTELANDS_AUTOMATION_SETTINGS_INREASE_GOLD_LIMIT_TT: "#V Повысит#! количество требуемого для строительства [Concept('buildings', 'зданий')|E] запаса [Concept('gold', 'золота')|E]."
+ WASTELANDS_AUTOMATION_SETTINGS_INREASE_GOLD_LIMIT_VALID_TT: "Количество требуемого запаса [Concept('gold', 'золота')|E] нельзя повысить"
+
+ WASTELANDS_AUTOMATION_SETTINGS_COUNCILLOR: "[councillor_task|E]"
+ WASTELANDS_AUTOMATION_SETTINGS_COUNCILLOR_DEVELOPMENT: "Повышение [Concept('development', 'развития')|E]"
