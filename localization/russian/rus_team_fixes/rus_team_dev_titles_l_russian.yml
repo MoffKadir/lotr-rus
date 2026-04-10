@@ -819,9 +819,9 @@
  decision_skorgrim_dourhand_feast_broadbeams_effect_tt: "Вы пригласите своего короля на встречу в своих чертогах"
 
  decision_skorgrim_dourhand_war_broadbeams: "Объявить войну Широкозадам"
- decision_skorgrim_dourhand_war_broadbeams_tooltip: "Вы объявите войну за кражу [Concept('sevenringsofdwarves', 'Кольца Широкозадов')|E] у персонажа [dwalin_V.GetFirstNameRegnal]."
+ decision_skorgrim_dourhand_war_broadbeams_tooltip: "Вы начнёте войну, чтобы украсть [Concept('sevenringsofdwarves', 'Кольцо Широкозадов')|E] у Двалина V."
  decision_skorgrim_dourhand_war_broadbeams_desc: "PLACEHOLDER"
- decision_skorgrim_dourhand_war_broadbeams_confirm: "PLACEHOLDER"
+ decision_skorgrim_dourhand_war_broadbeams_confirm: "Война - это единственный выход!"
  war_broadbeams: "Вы нацелились на Широкозадов с помощью войны"
  decision_skorgrim_dourhand_war_broadbeams_effect_tt: "PLACEHOLDER"
 
@@ -833,9 +833,9 @@
  decision_skorgrim_dourhand_feast_firebeards_effect_tt: "PLACEHOLDER"
 
  decision_skorgrim_dourhand_war_firebeards: "Объявить войну Огнебородам"
- decision_skorgrim_dourhand_war_firebeards_tooltip: "Вы объявите войну за кражу [Concept('sevenringsofdwarves', 'Кольца Огнебородов')|E] у персонажа [fror_II.GetFirstNameRegnal]."
+ decision_skorgrim_dourhand_war_firebeards_tooltip: "Вы начнёте войну, чтобы украсть [Concept('sevenringsofdwarves', 'Кольцо Огнебородов')|E] у Фрора II."
  decision_skorgrim_dourhand_war_firebeards_desc: "PLACEHOLDER"
- decision_skorgrim_dourhand_war_firebeards_confirm: "PLACEHOLDER"
+ decision_skorgrim_dourhand_war_firebeards_confirm: "Война - это единственный выход!"
  war_firebeards: "Вы нацелились на Огнебородов с помощью войны"
  decision_skorgrim_dourhand_war_firebeards_effect_tt: "PLACEHOLDER"
 
@@ -902,6 +902,23 @@
  skorgrim_dourhand.0110.desc: "PLACEHOLDER"
  skorgrim_dourhand.0110.a: "Наконец-то!"
  king_received_by_skorgrim: "[GetScriptedCharacterByHistoryID('lineofdourhand17')GetName] принимает вас."
+
+ # Skorgrim War
+ skorgrim_war_for_dwarven_rings: "Порча Скоргрима"
+ lotr_skorgrim_success_attacker_desc: "Вы отнимете Кольцо у персонажа [defender.GetShortUINamePossessive] и продвинетесь к своим целям"
+ lotr_skorgrim_success_defender_desc: "Вы потеряете древнюю реликвию, находившуюся в распоряжении вашей семьи множество поколений."
+ lotr_skorgrim_defeat_attacker_desc: "Вам не удалось заполучить Кольцо, и ваша судьба предрешена"
+ lotr_skorgrim_defeat_defender_desc: "Вы сохраняете реликвию, а измена персонажа [attacker.GetShortUINamePossessive] будет наказана"
+ SKORGRIM_TREASON_WAR_NAME: "Порча Скоргрима"
+
+ #Events after getting both dwarven rings
+
+ skorgrim_dourhand.1000.t: "Судьба Колец"
+ skorgrim_dourhand.1000.desc: "После успешного обретения [Concept('sevenringsofdwarves', 'Кольца Огнебородов')|E] и [Concept('sevenringsofdwarves', 'Кольца Широкозадов')|E] начинается следующий этап плана.\n\nСогласно первоначальному соглашению с [Concept('witchkingshort', 'Королём-чародеем')|E] он обещал мне невообразимые богатства и бессмертие в обмен на эти кольца, но простая передача их в обмен на обещания может не способствовать достижению нашей цели восстановления [Concept('nogrod', 'Ногрода')|E]. Возможно, Король-чародей вознаградит нас чем-нибудь... или, возможно, нет. Однако, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы оставить оба кольца себе и, используя их магию, восстановить Ногрод самостоятельно, по крайней мере теоретически, это хороший вариант. К сожалению, сохранение колец вызовет гнев Короля-чародея, и открытая война против него может привести к нашему уничтожению...\n\nВ любом случае, оба варианта сопряжены с определһнными рисками, но что мы можем сделать на данный момент? Наши родичи, и даже мой праотец [dwalin_V.GetFirstNameRegnal] предан мной, и теперь [Concept('dwarves', 'гномы')|E] ненавидят меня за мои действия... В конце концов, стоило ли оно того? Только время покажет."
+ skorgrim_dourhand.1000.a: "Отправиться в Ангмар."
+ skorgrim_dourhand.1000.b: "Оставить Кольца себе."
+ skorgrim_dourhand_travel_angmar: "#V Вы#!, #V [skorgrim_dourhand.GetName]#!, отправитесь в [GetTitleByKey('c_carn_dum').GetNameNoTier] и встретитесь с [Concept('witchkingshort', 'Королём-чародеем')|E] [Concept('angmar', 'Ангмара')|E]."
+ skorgrim_dourhand_keep_rings: "@warning_icon!#T Этот путь разгневает [Concept('witchkingshort', 'Короля-чародеем')|E] [Concept('angmar', 'Ангмара')|E] и может привести к катастрофическим последствиям!"
 
 
 
