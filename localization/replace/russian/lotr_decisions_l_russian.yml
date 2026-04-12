@@ -1393,6 +1393,23 @@
  decision_convince_dunmen_chieftain_desc: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] убедить их что-то сделать!" 
  decision_convince_dunmen_chieftain_tooltip: "Отправиться к вождю и побеседовать с ним."
  decision_convince_dunmen_chieftain_confirm: "В путь."
+ decision_convince_dunmen_chieftain_confirm_selection: "Выбрать цель"
+ decision_convince_dunmen_chieftain_tt: "Вы [Concept('travel', 'отправитесь')|E] к выбранной вами цели и попытаетесь убедить её"
+ dunmen_chieftain_galtrev_loc: "[GetTitleByKey('c_galtrev').GetName]"
+ dunmen_chieftain_galtrev_desc: "Галтрев"
+ dunmen_chieftain_galtrev_tooltip: "Вождь провинции [GetTitleByKey('c_galtrev').GetName] пользуется большим влиянием на востоке [Concept('enedhwaith', 'Энедвайта')|E] из-за своей близости к священному озеру Лок-Тиар."
+ dunmen_chieftain_runnach_loc: "[GetTitleByKey('c_den_runnach').GetName]"
+ dunmen_chieftain_runnach_desc: "Руннах"
+ dunmen_chieftain_runnach_tooltip: "[GetTitleByKey('c_den_runnach').GetName] расположен вдоль реки Гватло, и его купцы иногда торгуют с [Concept('cardolan', 'Кардоланом')|E] на севере, что даёт им некоторое представление о Северном королевстве."
+ dunmen_chieftain_iarnburn_loc: "[GetTitleByKey('c_iarnburn').GetName]"
+ dunmen_chieftain_iarnburn_desc: "Ирнберн"
+ dunmen_chieftain_iarnburn_tooltip: "[GetTitleByKey('c_iarnburn').GetName] расположен в самом сердце [Concept('enedhwaith', 'Энедвайта')|E], где проживают одни из самых многочисленных дунменских племён."
+ dunmen_chieftain_angrast_loc: "[GetTitleByKey('c_caithris').GetName]"
+ dunmen_chieftain_angrast_desc: "Анграст"
+ dunmen_chieftain_angrast_tooltip: "Некий разбойник захватил контроль над провинцией [GetTitleByKey('c_caithris').GetName] и недавно возглавил успешный налёт на юг вдоль побережья [Concept('gondor', 'Гондора')|E]. Его опыт может быть мне полезен."
+ dunmen_chieftain_harnangren_loc: "[GetTitleByKey('c_westmarches').GetName]"
+ dunmen_chieftain_harnangren_desc: "Харнангрен"
+ dunmen_chieftain_harnangren_tooltip: "На реке Изен находится [GetTitleByKey('c_westmarches').GetName], где живут выносливые горцы. Их боевое мастерство не имеет себе равных среди дунменов [Concept('enedhwaith', 'Энедвайта')|E]."
 
  #######################
  ### Shire Decisions ###
@@ -1448,6 +1465,7 @@
  decision_build_dread_keep_desc: "Чтобы начать наше вторжение в [Concept('anduinvale', 'Долину Андуина')|E], нам понадобится плацдарм и место для консолидации нашей власти. Все замки [Concept('angmar', 'Ангмара')|E] находятся за перевалом [Concept('gundabad', 'Гундабад')|E], и из-за этого наши пути снабжения слишком растянулись. Мы можем решить эту проблему, построив крепость здесь, в Долине. Это будет башня ужаса, которая пробудит страх в сердцах тех, кто увидит её!"
  decision_build_dread_keep_tooltip: "Построить новую твердыню"
  decision_build_dread_keep_confirm: "Призвать каменщиков!!"
+ decision_build_dread_keep_tt: "Построена Ужасная крепость"
 
  decision_subjugate_the_ettenmoors: "Покорить Эттенмурс"
  decision_subjugate_the_ettenmoors_tooltip: "Вы заметили, что в Эттенмурсе бродят холмовые тролли. Возможно, они могли бы послужить более важной цели..."
@@ -1489,10 +1507,10 @@
  decision_reclaim_mardruak_desc: "На протяжении многих поколений Мардруак был неотъемлемой частью [Concept('bellakar', 'Беллакара')|E]. В нём располагались города, которые помогли основать Беллакарскую Лигу, и он оставался (в основном) лояльной провинцией на протяжении всех вторжений теджин и вплоть до Третьей Эпохи. Но после Дней Раздора она и Фелайя были потеряны для нас. Теперь, когда Фелайя наконец-то вернулась под королевский контроль, настало время вернуть последнюю из северных провинций домой!"
  decision_reclaim_mardruak_confirm: "Наконец-то королевство восстановлено!"
 
- decision_bellakar_felayan_rapproachement: "Сближение между Беллакаром и Фелайей?"
- decision_bellakar_felayan_rapproachement_tooltip: "Вернуть отпавшую северную провинцию в лоно королевства"
- decision_bellakar_felayan_rapproachement_desc: "С тёмных дней гражданской войны Фелайя действовала независимо от [Concept('bellakar', 'Беллакара')|E], не желая снова склоняться перед нами после нашей неспособности позаботиться об их безопасности или местных интересах. Если мы сможем доказать свою надёжность и наладить тесные отношения с их руководством, то, возможно, мы сможем вернуть их в мирное русло в обмен на опредёленные привилегии."
- decision_bellakar_felayan_rapproachement_confirm: "Мы должны объединиться, или падём"
+ decision_bellakar_felayan_rapprochement: "Сближение между Беллакаром и Фелайей?"
+ decision_bellakar_felayan_rapprochement_tooltip: "Вернуть отпавшую северную провинцию в лоно королевства"
+ decision_bellakar_felayan_rapprochement_desc: "С тёмных дней гражданской войны Фелайя действовала независимо от [Concept('bellakar', 'Беллакара')|E], не желая снова склоняться перед нами после нашей неспособности позаботиться об их безопасности или местных интересах. Если мы сможем доказать свою надёжность и наладить тесные отношения с их руководством, то, возможно, мы сможем вернуть их в мирное русло в обмен на опредёленные привилегии."
+ decision_bellakar_felayan_rapprochement_confirm: "Мы должны объединиться, или падём"
 
  decision_bellakar_vassalise_izindubeth: "Вассализировать изиндубета"
  decision_bellakar_vassalise_izindubeth_tooltip: "Вассализировать изиндубета под властью беллакарской короны"
@@ -1503,8 +1521,32 @@
  decision_tame_desert_tooltip: "Усмирить протяжённое и беспокойное пустынное пограничье Беллакара"
  decision_tame_desert_desc: "На протяжении бесчисленных лет бескрайние пески Моря Дюн были основным направлением, по которому чужеземные враги прибывали в Беллакар. Теджин, карсаги и даже аукары не всегда были настроены дружелюбно. Многие короли отказались от всех замыслов в отношении этих земель; каменистая местность уступила место бескрайним пескам и безжалостному солнцу, почти без отдыха и ресурсов. Старый аванпост в Эфалаке был заброшен именно по этой причине. Затраты были сочтены слишком высокими, а отдача - слишком малой. Но сейчас, когда держава вступает в эпоху расширения и процветания, возможно, такая цена стоила бы большей безопасности сердца Беллакара."
  decision_tame_desert_confirm: "Мы больше не будем страдать от опустошений песков!"
- conversion_west_dune_sea_desc: "Вы должны обратить не менее #V 50%#! [Concept('counties', 'графств')|E] [Concept('region', 'региона')|E] [GetGeographicalRegion('special_region_west_dune_sea').GetName] в свою конфессию"
+ conversion_west_dune_sea_desc: "#V 50%#! [Concept('counties', 'графств')|E] [Concept('region', 'региона')|E] [GetGeographicalRegion('special_region_west_dune_sea').GetName] должны исповедовать вашу конфессию"
  tame_desert_effects_tt: "Многие белланарудские поселенцы отправятся в западное Море Дюн, обратив его часть в свою культуру."
+ bellakar_mardrurak_reclaimed: "[GetTitleByKey('k_mardruak').GetNameNoTier] был возвращён"
+
+ decision_subdue_sarwa: "Подчинить Сарву"
+ decision_subdue_sarwa_tooltip: "Интегрировать #ONCLICK:TITLE,d_sarwa #TOOLTIP:LANDED_TITLE,d_sarwa #L Сарву#!#!#! в состав Беллакара."
+ decision_subdue_sarwa_desc: "[GetTitleByKey('d_sarwa').GetNameNoTier], расположенная на юго-восточной границе [Concept('bellakar', 'Беллакара')|E], долгое время была промежуточным пунктом между [Concept('ray', 'Раей')|E] и нашими землями. Временами [GetTitleByKey('e_bellakar').GetNameNoTier] властвовал над этими землями, но это никогда не длилось долго: регион всегда выходил за пределы его влияния при первых признаках слабости.\n\nТем не менее, население #ONCLICK:TITLE,d_sarwa #TOOLTIP:LANDED_TITLE,d_sarwa #L Сарвы#!#!#! всегда было далеко от своих родичей в #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Рае#!#!#!: глубокие и непроходимые джунгли #ONCLICK:TITLE,d_suza_sumar #TOOLTIP:LANDED_TITLE,d_suza_sumar #L Суза-Сумара#!#!#! - слишком суровая граница, чтобы поддерживать единство их народов. Однако между #ONCLICK:TITLE,d_sarwa #TOOLTIP:LANDED_TITLE,d_sarwa #L Сарвой#!#!#! и #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакаром#!#!#! такой жёсткой границы нет. Если бы в этом регионе начали преобладать беллаказцы, а не бозишнаруды, мало кто по-прежнему считал бы его частью #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раи#!#!#!..."
+ decision_subdue_sarwa_confirm: "Наконец-то юго-восток в безопасности!"
+ bellakar_must_convert_sarwa: "Каждое [Concept('county', 'графство')|E] в пределах [GetTitleByKey('d_narduvi').GetNameNoTier], а также в графства [GetTitleByKey('c_tosar').GetNameNoTier] и [GetTitleByKey('c_refina').GetNameNoTier] должны иметь [Concept('culture', 'культуру')|E] с #V беллакарским#! [Concept('heritage', 'наследием')|E]."
+
+ decision_umbar_annexation: "Узаконить умбарские уступки"
+ decision_umbar_annexation_tooltip: "Захватить герцогства [GetTitleByKey('d_dusalan').GetNameNoTier] и [GetTitleByKey('d_annabrith').GetNameNoTier] у #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#!."
+ decision_umbar_annexation_desc: "Южные земли #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#! долгое время слабо контролировались его потенциальными владыками: пустынный и племенной характер внутренних земель затруднял управление морским властителям Гавани. Как таковые, эти земли имеют гораздо меньшую историю как части #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#!, чем земли на берегах его большого залива.\n\nЕсли [GetTitleByKey('k_umbar').GetNameNoTier] попадёт под власть моей державы или просто развалится, возможно, удастся захватить эти земли как новые неотъемлемые части #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, навсегда устранив любого претендента, который может возвыситься в Умбарском заливе."
+ decision_umbar_annexation_confirm: "Умбар больше никогда не бросит нам вызов!"
+ bellakar_must_have_umbar_control: "Значение [Concept('control', 'контроля')|E] во всех [Concept('county', 'графствах')|E] в пределах [Concept('de_jure', 'де-юре')|E] границ #ONCLICK:TITLE,d_dusalan #TOOLTIP:LANDED_TITLE,d_dusalan #L Дусалана#!#!#! и #ONCLICK:TITLE,d_annabrith #TOOLTIP:LANDED_TITLE,d_annabrith #L Аннабрит#!#!#! должно быть не ниже #V 100#!"
+ bellakar_umbar_not_exist: "[GetTitleByKey('k_umbar').GetName] не существует"
+ bellakar_umbar_vassal: "#ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбаром#!#!#! правит ваш [Concept('vassal', 'вассал')|E]"
+ bellakar_umbar_you: "[GetTitleByKey('k_umbar').GetName] находится под вашей властью"
+ bellakar_umbar_tributary: "#ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбаром#!#!#! правит ваш [Concept('tributary', 'данник')|E]"
+ bellakar_must_have_dunes: "Пустынные рубежи покорены"
+
+ decision_bellakar_tulwang_annexation: "Интегрировать Тулванг"
+ decision_bellakar_tulwang_annexation_tooltip: "Интегрировать [GetTitleByKey('k_tulwang').GetNameNoTier] в [Concept('de_jure', 'де-юре')|E] состав #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!."
+ decision_bellakar_tulwang_annexation_desc: "В зените нашего могущества большая часть северного #ONCLICK:TITLE,k_tulwang #TOOLTIP:LANDED_TITLE,k_tulwang #L Тулванга#!#!#! находилась под властью #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, наша держава простиралась над [Concept('bayoftulwang', 'заливом Тулванг')|E] и переходила в земли #ONCLICK:TITLE,e_thani_hazad #TOOLTIP:LANDED_TITLE,e_thani_hazad #L Тани-Хазада#!#!#!. Однако эти периоды величия всегда оказывались недолговечными, и сила #ONCLICK:TITLE,k_an_balkumagan #TOOLTIP:LANDED_TITLE,k_an_balkumagan #L Ан-Балкумагана#!#!#! на юге полуострова постоянно угрожала нашему правлению.\n\n[Concept('bellakar', 'Беллакар')|E] снова пересёк залив и достиг #ONCLICK:TITLE,k_tulwang #TOOLTIP:LANDED_TITLE,k_tulwang #L Тулванга#!#!#!. Там, где жестокие правители #ONCLICK:TITLE,k_an_balkumagan #TOOLTIP:LANDED_TITLE,k_an_balkumagan #L Ан-Балкумагана#!#!#! не видят в этих землях ничего, кроме почвы для эксплуатации, мы знаем ценность и силу её народа. Ключом к нашему правлению должно быть не угнетение, а интеграция..."
+ decision_bellakar_tulwang_annexation_confirm: "Залив наш!"
+ must_have_tulwang_acceptance: "В не менее #V 50%#! графствах #ONCLICK:GEOGRAPHICAL_REGION,special_region_just_tulwang #TOOLTIP:GEOGRAPHICAL_REGION,special_region_just_tulwang Тулванга#!#!#! распространена [Concept('culture', 'культура')|E], [Concept('cultural_acceptance', 'терпимость')|E] которой к вашей культуре не ниже #V 40%#!."
 
  anbalkumagan_grain_dole_decision: "Вернуть Фараз ан-Дайра"
  anbalkumagan_grain_dole_decision_desc: "В годы, предшествовавшие [Concept('downfallofnumenor', 'Низвержению Нуменора')|E], [Concept('ciryatanore', 'Кирьятанорэ')|E] служила великой житницей [Concept('numenorean', 'Нуменорской')|E] империи, производя огромные урожаи зерна, необходимые для поддержания жизни острова. В те дни жители [Concept('numenor', 'Нуменора')|E] принимали участие в Фараз-ан-Дайра, «Золоте земли»: регулярной раздаче бесплатного хлеба или продаже по регулируемым ценам. Эта благородная традиция была отброшена в сторону, когда почитание [Concept('valargods', 'Валар')|E] было объявлено вне закона, и полностью исчезла после [Concept('akallabeth', 'Акаллабет')|E]. Но о ней помнят до сих пор, и любой правитель, достаточно смелый, чтобы восстановить её, несомненно, завоевал бы сердца простонародья."
@@ -1549,6 +1591,79 @@
  decision_restore_korlean_league_desc: "В давние времена Корлея была величайшей из городов [Concept('bellakar', 'Беллакара')|E], центром торговли в [Concept('bayoftulwang', 'заливе Тулванг')|E] и сердцем [Concept('adunai', 'адунайцев')|E] юга. Но её могущество продержалось недолго, ибо, пораженная могучими волнами [Concept('downfall', 'Низвержения')|E], Корлея затонула, как и [Concept('anadune', 'Анадунэ')|E], а наша власть над народами этих земель сломлена. Но, в отличие от [Concept('westernesse', 'Вестернессэ')|E], мы отстроились и окрепли, и теперь пришло время восстановить то, что мы никогда не забывали. Мы вернём себе лидерство в этих землях, и гавань Корлеи вновь станет самой богатой на юге."
  decision_restore_korlean_league_confirm: "Пусть Корлея вернётся на своё законное место!"
  decision_restore_korlean_league_title: "Восстановить Корлейскую лигу"
+
+ ####################################
+ ##### Bellakar Story Decisions #####
+ ####################################
+
+ decision_crush_isles_corsairs: "Сокрушить пиратов Одиноких островов"
+ decision_crush_isles_corsairs_tooltip: "Уничтожить пиратские гавани на вашем западном побережье, расположенные вокруг Одиноких островов"
+ decision_crush_isles_corsairs_desc: "Хотя угроза со стороны пиратов является всего лишь отдалённым раздражением для жителей [GetTitleByKey('c_nilulonde').GetNameNoTier], для тех, кто населяет западное побережье, это слишком часто угроза существованию. Защита запада, вдали от центра сражений в [Concept('bayoftulwang', 'заливе Тулванг')|E], обходится дорого и без необходимости распыляет наш и без того ограниченный флот, но у нас нет другого выбора, кроме как защищать наших людей.\n\nТем не менее, пиратские гавани сохранились только потому, что завоевать их было сложнее, чем любой разумный властитель счёл бы оправданным. Однако, поскольку война на нашем юге кажется всё более и более неизбежной, возможно, для нас настало время, наконец, призвать на острова силу закона и справедливости."
+ decision_crush_isles_corsairs_confirm: "Их гавани будут уничтожены до последней."
+ bellakar_crush_isles_corsairs_effects_tt: "Вам предстоит решить, как поступить с вероломными пиратами и местными жителями недавно завоёванных пиратских островов."
+
+ decision_vassalise_bellakar_plateau: "Вассализировать Уруд-Удил"
+ decision_vassalise_bellakar_plateau_tooltip: "Попытаться подчинить племенные вождества Уруд-Удил."
+ decision_vassalise_bellakar_plateau_desc: "На отдалённых и протяжённых изолированных плоскогорьях центрального [Concept('bellakar', 'Беллакара')|E] живёт простое племя, которое отличается непоколебимой независимостью, но в то же время тесно связано с цивилизованными землями на юге. Хотя редкие набеги более смелых и жестоких вождей иногда доставляют беспокойство, Уруд-Удил, по правде говоря, представляют собой не более чем оборонительный союз, неспособный бросить вызов мощи нашей великой державы.\n\nНыне наши державы разделены, но в сердцах моего народа и властителей все земли от мыса Мардруак до [Concept('bayoftulwang', 'залива Тулванг')|E] являются беллаказскими по своей природе. Уруд-Удил слабы, они могут объединиться только ради защиты от набегов из дюн. Если я предложу им защиту за справедливую цену, они, несомненно, снова признают мою власть и статус."
+ decision_vassalise_bellakar_plateau_confirm: "Я принесу им #italic истинный#! мир."
+ bellakar_vassalise_bellakar_plateau_effects_tt: "Вы обсудите условия вассалитета со всеми членами Уруд-Удил."
+
+ decision_bellakar_zajantak_raids: "Проспонсировать фарийские набеги"
+ decision_bellakar_zajantak_raids_tooltip: "Проспонсировать набеги фарийских племён из #ONCLICK:TITLE,k_zajantak #TOOLTIP:LANDED_TITLE,k_zajantak #L Заджантака#!#!#! на границы Грозового воинства."
+ decision_bellakar_zajantak_raids_desc: "Фарийские племена из #ONCLICK:TITLE,k_zajantak #TOOLTIP:LANDED_TITLE,k_zajantak #L Заджантака#!#!#! долгое время были назойливым препятствием правлению [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] в #ONCLICK:TITLE,k_tulwang #TOOLTIP:LANDED_TITLE,k_tulwang #L Тулванге#!#!#!: отряды разбойников часто грабят приграничные города и крепости, когда их жестокие повелители отворачиваются. Временами этим налётчикам удавалось добраться до самых ворот самого #ONCLICK:TITLE,c_khorsaj #TOOLTIP:LANDED_TITLE,c_khorsaj #L Хорсажа#!#!#!.\n\nЕсли я решу проспонсировать эти племена, чтобы они совершали набеги с ещё большей интенсивностью, я смогу нанести достаточный ущерб самому сердцу владений Грозового воинства."
+ decision_bellakar_zajantak_raids_confirm: "Честная сделка."
+ bellakar_bellakar_zajantak_raids_effects_tt: "Вы свяжетесь с фарийскими вождями и предложите им значительные ресурсы. В зависимости от их навыков, каждое графство под контролем [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] в #ONCLICK:TITLE,e_bozisha_miraz #TOOLTIP:LANDED_TITLE,e_bozisha_miraz #L Бозиша-Миразе#!#!#! может получить модификатор «[GetModifier('bellakar_zanjantak_raiding').GetNameWithTooltip]» на #bold 5 лет#!."
+
+ decision_bellakar_destroy_stormhost: "Уничтожить Грозовое воинство"
+ decision_bellakar_destroy_stormhost_tooltip: "Начать войну за уничтожение против [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier]."
+ decision_bellakar_destroy_stormhost_desc: "Слишком долго [GetTitleByKey('e_thon_an_kharlokh').GetName] было дозволено процветать и готовиться к тёмному дню, когда они смогут исполнить волю гнусного Повелителя бурь и принести войну и разруху в [Concept('bellakar', 'Беллакар')|E]. Мы больше не потерпим существования этого извечного врага!\n\nКак только потери, понесённые в годы нашего мрачного упадка, будут восполнены, мы, наконец, сможем направить нашу армаду через [Concept('bayoftulwang', 'залив Тулванг')|E] и сокрушить [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] раз и навсегда."
+ decision_bellakar_destroy_stormhost_confirm: "Сегодня разразится буря!"
+ destroy_stormhost_cb: "Уничтожить Грозовое воинство"
+ INVADE_STORMHOST_WAR_NAME: "Уничтожение Грозового воинства"
+
+ decision_bellakar_ray_intervention: "Вмешаться в дела Раи"
+ decision_bellakar_ray_intervention_tooltip: "Вмешаться против кхаз-грамазитских узурпаторов #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раи#!#!#!."
+ decision_bellakar_ray_intervention_desc: "[Concept('ray', 'Рая')|E], долгое время считавшаяся навсегда потерянной в хватке зла, вступила во времена невиданных потрясений. Старый ватранский порядок, который разорвал все связи между #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раей#!#!#! и [Concept('bellakar', 'Беллакаром')|E], был свергнут. Однако те, кто пришёл им на смену, намного хуже своих предшественников...\n\nПерепуганные беженцы, покидающие страну, рассказывают о великой и ужасной чистке, о целых городах, сровненных с землёй за отказ принять тёмного бога Кхаз-грамаза. Тем не менее, я также [Select_CString(ROOT.Char.IsFemale, 'слышала', 'слышал' )] о назревающем восстании, о властителях, готовых поднять оружие против своих тёмных угнетателей. С нашей помощью этот хаос может, наконец, вывести #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раю#!#!#! из тени к свету."
+ decision_bellakar_ray_intervention_confirm: "Люди Раи не будут страдать в тени!"
+ bellakar_ray_intervention_effects_tt: "Вы свяжетесь с вождями сопротивления, чтобы начать войну за освобождение #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раи#!#!#! от угнетателей."
+ mardat_must_be_khaz_gramaze: "[GetTitleByKey('k_ray').GetNameNoTier] находится под властью правителя с #V [GetFaithByKey('faith_haruze').GetName|l]ой#! [Concept('faith', 'конфессией')|E]."
+
+ decision_bellakar_tedjin_tribute: "Вмешаться в гражданскую войну теджин"
+ decision_bellakar_tedjin_tribute_tooltip: "Пригрозить #ONCLICK:TITLE,k_tedjin #TOOLTIP:LANDED_TITLE,k_tedjin #L Конфедерации теджин#!#!#! войной, чтобы заручиться её поддержкой в вашем северном походе."
+ decision_bellakar_tedjin_tribute_desc: "[GetCultureByKey('tedjin').GetName] всегда представляли угрозу для нашей северной границы, они всегда стремились восстановить своё жестокое иго над [Concept('bellakar', 'Беллакаром')|E]. Хотя их племена редко набирают достаточную силу, чтобы представлять реальную угрозу, их налётчики и воины, скорее всего, станут помехой для любых военных действий на севере.\n\nХотя полное завоевание их племён, несомненно, принесло бы больше хлопот, чем пользы, обеспечение #L [GetCultureByKey('tedjin').GetCollectiveNoun|l]#! поддержки моим войскам будет необходимостью, если я хочу когда-нибудь добраться до [Concept('gondor', 'Гондора')|E]. [GetTitleByKey('k_tedjin').GetNameNoTier] переживает смутные времена. Возможно, если я поддержу подходящего кандидата, то смогу избавить нас от дорогостоящего завоевания..."
+ bellakar_tedjin_tribute_effects_tt: "Вы свяжетесь с правителем #ONCLICK:TITLE,k_tedjin #TOOLTIP:LANDED_TITLE,k_tedjin #L Конфедерации теджин#!#!#!, стремясь сделать их своими данниками с помощью дипломатии."
+ decision_bellakar_tedjin_tribute_confirm: "Пусть они превратятся из врагов в друзей..."
+ tedjin_must_be_good_people: "[GetTitleByKey('k_tedjin').GetNameNoTier] должна находиться под властью правителя с добрым мировоззрением."
+ tedjin_civil_war_cant_have_started: "Гражданская война теджин ещё не началась."
+
+ decision_bellakar_mardruak_corsairs: "Сокрушить пиратов Мардруака"
+ decision_bellakar_mardruak_corsairs_tooltip: "Начать завоевание #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруака#!#!#!, чтобы избавить его от пиратов."
+ decision_bellakar_mardruak_corsairs_desc: "Мерзкие пиратские властители #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруака#!#!#! давно уже досаждают побережью [Concept('bellakar', 'Беллакара')|E]: их налётчики наносят огромный ущерб северным городам и морским путям. Пока они здесь, они, несомненно, будут для меня назойливой неприятностью во время моего похода на север.\n\nЯ знаю, что с этими вероломными людьми не будет никаких переговоров, по крайней мере, они не пойдут дальше простых слов на бумаге. Когда я буду [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов' )], начнутся война и разорение. В конце концов, пиратам не ведом другой путь."
+ decision_bellakar_mardruak_corsairs_confirm: "Наконец-то я навлеку войну на них!"
+ bellakar_mardruak_corsairs_effects_tt: "Вы объявите #V войну#! всем независимым правителям в #V #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруаке#!#!#!#!, исповедующим #V [GetFaithByKey('faith_corsair').GetAdjective|l].#!"
+ mardurak_corsairs_must_exist: "Любой правитель в #V #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруаке#!#!#!#!, исповедующий #V [GetFaithByKey('faith_corsair').GetAdjective|l]#!"
+
+ decision_bellakar_umbar_invasion: "Уничтожить Умбар"
+ decision_bellakar_umbar_invasion_tooltip: "Начать вторжение в [GetTitleByKey('k_umbar').GetNameNoTier], чтобы, наконец, добраться до [Concept('gondor', 'Гондора')|E]."
+ decision_bellakar_umbar_invasion_desc: "[GetTitleByKey('k_umbar').GetNameNoTier], долгое время являвшийся бедствием по всему побережью [Concept('belegaer_sea', 'Белегаэра')|E], является величайшим препятствием на пути возобновления контактов с [Concept('gondor', 'Гондором')|E]. Пока он существует, любая попытка восстановить наши древние связи с севером обречена на провал.\n\nКак только протяжённый сухопутный путь из #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруака#!#!#! будет перекрыт, я начну вторжение в чёрное королевство [GetTitleByKey('k_umbar').GetNameNoTier]. Я надеюсь, что скоро весь мир избавится от вечной угрозы пиратов и путь на север будет открыт."
+ decision_bellakar_umbar_invasion_confirm: "Я сровняю эту гнусную гавань с землёй!"
+ umbar_must_not_be_good: "[Concept('ruler', 'Правитель')|E] #V #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#!#! #italic не#! должен исповедовать добрую [Concept('faith', 'конфессию')|E]"
+ you_or_tributary_must_control_greater_mardruak: "#V Вы#! или ваши #V данники#! [Concept('completely_control', 'полностью контролируете')|E] #V [GetGeographicalRegion('special_region_greater_mardruak').GetName]#!"
+ bellakar_kingdom_cb: "Вторжение"
+
+ decision_bellakar_gondorian_ties: "Восстановить узы с Гондором"
+ decision_bellakar_gondorian_ties_tooltip: "Заключить с Гондором оборонительный союз ради формирования общего фронта против #ONCLICK:TITLE,e_mordor #TOOLTIP:LANDED_TITLE,e_mordor #L Мордора#!#!#!."
+ decision_bellakar_gondorian_ties_desc: "Спустя почти половину эпохи [Concept('bellakar', 'Беллакар')|E] и [Concept('gondor', 'Гондор')|E] вновь вступили в контакт. Наша разлука длилась так долго, что все, кроме самых сведущих хранителей знаний [Concept('dunedain', 'дунэдайн')|E], забыли о нашем королевстве: большинство считало его просто легендой или мечтой о стране света, затерянной где-то в тени [Concept('harad', 'Харада')|E].\n\nХватит! [Concept('faithful', 'Верные')|E] наконец-то воссоединились: наша миссия ясна. Вместе, как и во времена [Concept('warlastalliance', 'Войны Последнего союза')|E], мы низвергнем тёмное владычество #ONCLICK:TITLE,e_mordor #TOOLTIP:LANDED_TITLE,e_mordor #L Мордора#!#!#! и покончим с тиранией #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofsauron').GetID] #L Тёмного властелина Саурона#!#! раз и навсегда!"
+ decision_bellakar_gondorian_ties_confirm: "Мой приход возвестит надежду..."
+ bellakar_gondorian_ties_effects_tt: "Вы свяжетесь с Гондором, стремясь восстановить древний союз между вашими королевствами."
+ no_stormhost_in_tulwang: "[GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] пал или был вытеснен из #ONCLICK:TITLE,k_tulwang #TOOLTIP:LANDED_TITLE,k_tulwang #L Тулванга#!#!#!"
+
+ decision_bellakar_gondorian_splinters: "Организовать гондорское сопротивление"
+ decision_bellakar_gondorian_splinters_tooltip: "Заключить великий оборонительный союз между вами и уцелевшими властителями [Concept('gondor', 'Гондора')|E]."
+ decision_bellakar_gondorian_splinters_desc: "После того, как [Concept('gondor', 'Гондор')|E] пал под натиском сил, которыми командует [GetScriptedCharacterByHistoryID('lineofsauron').GetTitledFirstName], передо мной встала трудная задача объединить уцелевшие Свободные народы. Оставшись без короля или наместника, властители Гондора теперь правят своими владениями без какого-либо чувства общности, обрекая их на падение во власти постоянно наступающей тьмы.\n\nИ всё же, подобной участи ещё можно избежать. При моей поддержке властители Гондора могут снова собраться вместе: на этот раз под началом и заботой [Concept('bellakar', 'Беллакара')|E], а не под руководством своих собственных королей, дни которых давно миновали."
+ decision_bellakar_gondorian_splinters_confirm: "Ещё не всё потеряно..."
+ bellakar_gondorian_splinters_effects_tt: "Вы заключите оборонительный союз с оставшимися властителями Гондора."
+
 
  ###############################
  ##### Pharazain Decisions #####
@@ -2055,6 +2170,9 @@
  destroy_mordor_decision_current_military_strength_dwarven_tt: "Ваши войска равны по численности по крайней мере трети текущих войск Мордора."
  destroy_mordor_decision_current_military_strength_fifth_tt: "Ваши войска равны по численности по крайней мере пятой части текущих войск Мордора"
  you_border_mordor: "Ваша держава граничит с [Concept('de_jure', 'де-юре')|E] #L [GetTitleByKey('e_mordor').GetNameNoTier]ом#!"
+ destroy_mordor_bellakar_gondor_alliance: "Вы заключили [Concept('alliance', 'союз')|E] с правителем [Concept('gondor', 'Гондора')|E]"
+ destroy_mordor_bellakar_stormhost_gone: "[GetTitleByKey('e_thon_an_kharlokh').GetName] уничтожен"
+ destroy_mordor_bellakar_harnen_requierment: "Вы [Concept('completely_control', 'полностью контролируете')|E] [Concept('region', 'регион')|E] [GetGeographicalRegion('custom_harnendor').GetName]"
 
  decision_invade_gondor: "Вторгнуться в Гондор"
  decision_invade_gondor_tooltip: "Начать вторжение, которое, в случае успеха, уничтожит Южное королевство раз и навсегда"
@@ -3353,6 +3471,7 @@
  decision_restore_thakalgund_tooltip: "Отстроить гномью крепость в Серых горах"
  decision_restore_thakalgund_desc: "В результате огня и войны [GetTitleByKey('d_thakalgund').GetName] был потерян. После Войны [Concept('dwarves', 'гномов')|E] и [Concept('dragons', 'драконов')|E] [Concept('greymountains', 'Серые горы')|E] были в значительной степени заброшены, и Такалгунд был оставлен в запустении. Впоследствии [Concept('goblins', 'гоблины')|E] заселили его, и казалось, что всякая надежда на восстановление потеряна. Однако теперь, когда крепость наконец-то в нашем распоряжении, мы можем заняться восстановлением этой некогда славной твердыни."
  decision_restore_thakalgund_confirm: "Восстановить наш дом"
+ decision_restore_thakalgund_tt: "Такалгунд восстановлен"
 
  decision_restore_durin_throne: "Восстановить трон Дурина"
  decision_restore_durin_throne_desc: "Изначальный трон [Concept('durin', 'Дурина')|E] был прост и вырезан из самой горы при строительстве большого зала. Легенда гласит, что на нём Дурин мог общаться с [GetTitleByKey('d_zirakzigil').GetName] и даже с самим [Concept('mahalcharacter', 'Махалом')|E].\n\nПо мере того как росло число и процветание клана [Concept('longbeards', 'Длиннобородов')|E], рос и Трон, становясь все больше и больше, установленный на огромном помосте. Под ним стояли троны для королевы и принцев [Concept('durinsfolk', 'Народа Дурина')|E]. Он был украшен самыми великолепными драгоценностями, митрилем, древним деревом из глубин Зеленолесья и дивными разноцветными камнями из дальних уголков мира.\n\nЭтот великолепный трон был разрушен во время пробуждения балрога, который не захотел уступать ему место в своём королевстве. Однако легенда гласит, что изначальный трон сохранился, выжженный и лишенный показного великолепия, в ожидании того дня, когда Дурин воссядет на него."
