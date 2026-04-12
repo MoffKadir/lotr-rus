@@ -181,6 +181,11 @@
  balrog_struggle.1021.desc: "Сделав последний спуск, мы достигли пункта назначения. Я осматриваю местность, оценивая своё окружение.\n\n[ROOT.Char.Custom('jind_RandomRoom_Type')] [ROOT.Char.Custom('jind_RandomRoom_Appearance')]\n\n[ROOT.Char.Custom('jind_RandomRoom_Condition')]\n\nОсторожно пробираясь, я замечаю что-то блестящее в углу."
  balrog_struggle.1021.a: "Сокровища [Concept('dwarves', 'гномов')|E]!"
  balrog_struggle.1021.b: "Обыскать каждый уголок, там должно быть что-то ещё!"
+ balrog_struggle.1021.gold: "Вы нашли сокровище."
+ balrog_struggle.1021.artifact: "Вы нашли гномий артефакт."
+ balrog_struggle.1021.supplies: "Вы нашли полезные припасы."
+ balrog_struggle.1021.materials_metal: "Вы нашли ценную металлическую руду."
+ balrog_struggle.1021.materials_gems: "Вы нашли ценные самоцветы."
 
  balrog_struggle.1022.t: "Исследование Мории: в поисках артефактов"
  balrog_struggle.1022.desc: "Сделав последний спуск, мы достигли пункта назначения. Я осматриваю местность, оценивая своё окружение.\n\n[ROOT.Char.Custom('jind_RandomRoom_Type')] [ROOT.Char.Custom('jind_RandomRoom_Appearance')]\n\n[ROOT.Char.Custom('jind_RandomRoom_Condition')]\n\nСреди обломков и пыли я замечаю его - древний [Concept('dwarven', 'гномий')|E] [Concept('artifact', 'артефакт')|E]."
@@ -231,7 +236,7 @@
 
 
  lotr_balrog_explore_moria_unique_location_thistlebeard: "Пещеры Тримура Чертополохоборода"
- lotr_balrog_explore_moria_unique_location_thistlebeard_desc: "Над этим графством возвышаются легендарные подземные сады Тримура Чертополохоборода, его пещеры утопают в яркой зелени."
+ lotr_balrog_explore_moria_unique_location_thistlebeard_desc: "Над этой провинцией возвышаются легендарные подземные сады Тримура Чертополохоборода, её пещеры утопают в яркой зелени."
 
  lotr_balrog_explore_moria_unique_location_armouries: "Оружейная третьего уровня"
  lotr_balrog_explore_moria_unique_location_armouries_desc: "В этой провинции находится легендарный арсенал гномов [Concept('khazaddum', 'Кхазад-дума')|E]. Здесь в огромных количествах хранились оружие и доспехи."
@@ -415,6 +420,11 @@
  war_firebeards: "Вы нацелились на Огнебородов с помощью войны"
  decision_skorgrim_dourhand_war_firebeards_effect_tt: "PLACEHOLDER"
 
+ decision_wk_return_rings_sauron: "Return Sauron the Dwarven Rings"
+ decision_wk_return_rings_sauron_tooltip: "You will deliver Sauron the Dwarven Rings"
+ decision_wk_return_rings_sauron_desc: "The [sevenringsofdwarves|E] were granted to each of the Royal lines of the Seven Dwarven Clans in the mid [secondage|E]. Although his plan to corrupt the dwarves and rule over them did not go as he had intended, the greed provided by their power led to many disasters. \n\nIn fact, their treasures attracted several [dragons|E], causing heavy devastation on their realms. In fact, of the initial seven, four have been consumed by dragonfire, and it's my Lord [sauroncharacter|E]'s will to recover the remaining ones. Now that I have the two Rings from the [bluemountains|E]'s Clans, I can deliver them to him and help and thus help him regain his former strength."
+ decision_wk_return_rings_sauron_confirm: "Sauron's strengh will increase"
+
 
 
  decision_group_type_skorgrim_dourhand_rings: "Скоргрим Крепкохват - Кольца гномов"
@@ -455,7 +465,7 @@
 
  skorgrim_dourhand.0107.t: "Подготовка к удару"
  skorgrim_dourhand.0107.desc: "Договор с [Concept('witchkingshort', 'Королём-чародеем')|E] подписан. Теперь предстоит опасное задание - доставить Кольца. Я должен решить, на кого из двух королей нацелиться в первую очередь: мой собственный сюзерен, [dwalin_V.GetNameRegnal], или юный [GetScriptedCharacterByHistoryID('lineofuri67').GetNameRegnal] из [Concept('firebeards', 'Огнебородов')|E].\n\nДвалин - наиболее логичный выбор для быстрого удара просто потому, что я уже нахожусь в пределах его двора; близость даёт мне возможности, которых нет на расстоянии. Однако выступать против своего сюзерена - это огромный риск. С другой стороны, король Огнебородов гораздо менее опытен и, вероятно, более восприимчив к обману, хотя его чертоги находятся дальше.\n\nЯ не могу позволить себе колебаться. Король-чародей не терпит неудач, и если я в ближайшее время не достану хотя бы одно из [Concept('sevenringsofdwarves', 'Семи')|E], его гнев обрушится на меня. Какой король первым лишится своей драгоценной реликвии?"
- skorgrim_dourhand.0107.a: "[dwalin_V.GetFirstNameRegnal]. Он близко, и мне хорошо знакомы его чертоги."
+ skorgrim_dourhand.0107.a: "[dwalin_V.GetFirstNameRegnal]. Он доверчив, и мне хорошо знакомы его чертоги."
  skorgrim_dourhand.0107.b: "[fror_II.GetFirstNameRegnal]. Его неопытность станет его погибелью."
  skorgrim_broadbeam_choice_of_plan: "Вы начнёте замышлять кражу [Concept('sevenringsofdwarves', 'Кольца Широкозадов')|E] у своего сюзерена"
  skorgrim_firebeard_choice_of_plan: "Вы начнёте замышлять кражу [Concept('sevenringsofdwarves', 'Кольца Огнебородов')|E] у Огнебородов"
@@ -468,33 +478,81 @@
  skorgrim_dourhand_war: "Вам станет доступно [Concept('decision', 'решение')|E], позволяющее объявить войну за артефакт за Кольцо Власти"
 
  skorgrim_dourhand.0109.t: "Приглашение на пир"
- skorgrim_dourhand.0109.desc: "Placeholder"
- skorgrim_dourhand.0109.a: "Посмотрим, что он уже успел сделать."
- skorgrim_dourhand.0109.b: "Я не [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] насчёт этого. Может быть, лучше остаться дома."
- skorgrim_dourhand_broadbeam_meeting: "#V Вы#!, #V [dwalin_V.GetFirstName]#!, отправитесь во владение [GetTitleByKey('c_zillinakhur').GetNameNoTier]."
- skorgrim_dourhand_broadbeam_meeting_refusal: "Вы откажетесь от этого предложения с непредвиденными последствиями."
+ skorgrim_dourhand.0109.desc: "[skorgrim_dourhand.GetFirstName] [Select_CString(skorgrim_dourhand.IsFemale, 'отправила', 'отправил' )] к моему двору гонца с приглашением в чертоги [GetTitleByKey('c_zillinakhur').GetNameNoTier]. [skorgrim_dourhand.GetFirstName] утверждает, что восстановление [Concept('nogrod', 'Ногрода')|E] достигло важной вехи, и просит меня присутствовать, чтобы лично проинспектировать ход работ и отпраздновать процветание нашего общего будущего пиром.\n\nХотя для сюзерена традиционно наблюдать за такими событиями, время выбрано странное. [skorgrim_dourhand.GetFirstName] всегда [Select_CString(skorgrim_dourhand.IsFemale, 'была амбициозна', 'был амбициозен' )], и частная встреча в глубине [Select_CString(skorgrim_dourhand.IsFemale, 'её', 'его' )] собственной территории даёт [Select_CString(skorgrim_dourhand.IsFemale, 'ей', 'ему' )] тактическое преимущество, которого у [Select_CString(skorgrim_dourhand.IsFemale, 'неё', 'него' )] здесь нет. Тем не менее, отказ был бы публичным оскорблением клана [GetScriptedCharacterByHistoryID('lineofdourhand17').GetDynasty.GetName] и мог бы свидетельствовать об отсутствии доверия, что могло бы разрушить наш нынешний союз.\n\n[Select_CString(ROOT.Char.IsFemale, 'Должна', 'Должен' )] ли я почтить [Select_CString(skorgrim_dourhand.IsFemale, 'её', 'его' )] чертоги своим присутствием или проявлю осторожность и останусь в безопасности своих собственных владений?"
+ skorgrim_dourhand.0109.a: "Я пойду. Посмотрим, что он построил."
+ skorgrim_dourhand.0109.b: "У меня есть дела поважнее. Я останусь здесь."
+ skorgrim_dourhand_broadbeam_meeting: "#V Вы#!, #V [dwalin_V.GetFirstName]#!, отправитесь в [GetTitleByKey('c_zillinakhur').GetNameNoTier]."
+ skorgrim_dourhand_broadbeam_meeting_refusal: "Вы отказываетесь от приглашения, потенциально оскорбив персонажа [skorgrim_dourhand.GetFirstName] и вызвав у него подозрения."
 
  skorgrim_dourhand.0110.t: "Прибытие во владение [GetTitleByKey('c_zillinakhur').GetNameNoTier]"
- skorgrim_dourhand.0110.desc: "PLACEHOLDER"
- skorgrim_dourhand.0110.a: "Наконец-то!"
- king_received_by_skorgrim: "[GetScriptedCharacterByHistoryID('lineofdourhand17')GetName] принимает вас."
+ skorgrim_dourhand.0110.desc: "Путешествие из провинции [GetTitleByKey('c_manakhrrukul').GetNameNoTier] было быстрым, мы ехали по древним каменным дорогам, которые ведут на юг через [Concept('bluemountains', 'Синие горы')|E]. Когда моя свита поднимается на последний гребень, впереди замаячили ворота чертога [GetTitleByKey('c_zillinakhur').GetNameNoTier]. Холодные. Внушительные. Свежевытесанные.\n\nВоздух здесь насыщен запахом древесного угля и ритмичным стуком молотков, что свидетельствует о труде, который [skorgrim_dourhand.GetFirstName] [Select_CString(skorgrim_dourhand.IsFemale, 'приложила', 'приложил' )] к этим руинам. Несмотря на внешние признаки оживления, встречающих у ворот необычно мало, а залы за ними кажутся тихими для места, отмечающего такую веху. [skorgrim_dourhand.GetFirstName] стоит на пороге с натянутой улыбкой на лице и жестом приглашает меня войти в [Select_CString(skorgrim_dourhand.IsFemale, 'её', 'его' )] владения."
+ skorgrim_dourhand.0110.a: "Да начнётся праздник!"
+ king_received_by_skorgrim: "[skorgrim_dourhand.GetShortUIName] принимает вас."
 
  # Skorgrim War
  skorgrim_war_for_dwarven_rings: "Порча Скоргрима"
- lotr_skorgrim_success_attacker_desc: "Вы отнимете Кольцо у персонажа [defender.GetShortUINamePossessive] и продвинетесь к своим целям"
- lotr_skorgrim_success_defender_desc: "Вы потеряете древнюю реликвию, находившуюся в распоряжении вашей семьи множество поколений."
- lotr_skorgrim_defeat_attacker_desc: "Вам не удалось заполучить Кольцо, и ваша судьба предрешена"
- lotr_skorgrim_defeat_defender_desc: "Вы сохраняете реликвию, а измена персонажа [attacker.GetShortUINamePossessive] будет наказана"
+ lotr_skorgrim_success_attacker_desc: "Вы успешно отняли Кольцо у персонажа [defender.GetShortUINamePossessive]"
+ lotr_skorgrim_success_defender_desc: "[attacker.GetShortUINamePossessive] отнимает фамильное кольцо вашего клана"
+ lotr_skorgrim_defeat_attacker_desc: "Не сумев отнять Кольцо у персонажа [defender.GetShortUINamePossessive], вы предрешили свою судьбу"
+ lotr_skorgrim_defeat_defender_desc: "Вы сохраняете фамильное кольцо и клянётесь наказать персонажа [attacker.GetShortUINamePossessive] за измену"
  SKORGRIM_TREASON_WAR_NAME: "Порча Скоргрима"
 
- #Events after getting both dwarven rings
+ #Events after getting both Dwarven Rings
 
  skorgrim_dourhand.1000.t: "Судьба Колец"
- skorgrim_dourhand.1000.desc: "После успешного обретения [Concept('sevenringsofdwarves', 'Кольца Огнебородов')|E] и [Concept('sevenringsofdwarves', 'Кольца Широкозадов')|E] начинается следующий этап плана.\n\nСогласно первоначальному соглашению с [Concept('witchkingshort', 'Королём-чародеем')|E] он обещал мне невообразимые богатства и бессмертие в обмен на эти кольца, но простая передача их в обмен на обещания может не способствовать достижению нашей цели восстановления [Concept('nogrod', 'Ногрода')|E]. Возможно, Король-чародей вознаградит нас чем-нибудь... или, возможно, нет. Однако, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы оставить оба кольца себе и, используя их магию, восстановить Ногрод самостоятельно, по крайней мере теоретически, это хороший вариант. К сожалению, сохранение колец вызовет гнев Короля-чародея, и открытая война против него может привести к нашему уничтожению...\n\nВ любом случае, оба варианта сопряжены с определһнными рисками, но что мы можем сделать на данный момент? Наши родичи, и даже мой праотец [dwalin_V.GetFirstNameRegnal] предан мной, и теперь [Concept('dwarves', 'гномы')|E] ненавидят меня за мои действия... В конце концов, стоило ли оно того? Только время покажет."
- skorgrim_dourhand.1000.a: "Отправиться в Ангмар."
- skorgrim_dourhand.1000.b: "Оставить Кольца себе."
- skorgrim_dourhand_travel_angmar: "#V Вы#!, #V [skorgrim_dourhand.GetName]#!, отправитесь в [GetTitleByKey('c_carn_dum').GetNameNoTier] и встретитесь с [Concept('witchkingshort', 'Королём-чародеем')|E] [Concept('angmar', 'Ангмара')|E]."
- skorgrim_dourhand_keep_rings: "@warning_icon!#T Этот путь разгневает [Concept('witchkingshort', 'Короля-чародеем')|E] [Concept('angmar', 'Ангмара')|E] и может привести к катастрофическим последствиям!"
+ skorgrim_dourhand.1000.desc: "После успешного обретения [Concept('sevenringsofdwarves', 'Кольца Огнебородов')|E] и [Concept('sevenringsofdwarves', 'Кольца Широкозадов')|E] начинается следующий этап плана.\n\nСогласно первоначальному соглашению с [Concept('witchkingshort', 'Королём-чародеем')|E] он обещал мне невообразимые богатства и бессмертие в обмен на эти кольца, но простая передача их в обмен на обещания может не способствовать достижению нашей цели восстановления [Concept('nogrod', 'Ногрода')|E]. Возможно, Король-чародей вознаградит нас чем-нибудь... или, возможно, нет. Однако, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы оставить оба кольца себе и, используя их магию, восстановить Ногрод самостоятельно, по крайней мере теоретически, это хороший вариант. К сожалению, сохранение колец вызовет гнев Короля-чародея, и открытая война против него может привести к нашему уничтожению...\n\nВ любом случае, оба варианта сопряжены с определһнными рисками, но что мы можем сделать на данный момент? Наши родичи, и даже мой [GetTrait('dwarf_father').GetName( GetNullCharacter )|l] [dwalin_V.GetFirstNameRegnal] предан мной, и теперь [Concept('dwarves', 'гномы')|E] ненавидят меня за мои действия... После всего, что произошло, действительно ли оно того стоило? Только время покажет."
+ skorgrim_dourhand.1000.a: "[Concept('witchkingshort', 'Король-чародей')|E] получит своё. Подготовиться к путешествию в Ангмар."
+ skorgrim_dourhand.1000.b: "Почему мне нужно с ними расставаться? [Concept('witchkingshort', 'Королю-чародею')|E] нечего предложить из того, чего у меня уже нет."
+ skorgrim_dourhand_travel_angmar: "#V Вы#!, #V [skorgrim_dourhand.GetName]#!, отправитесь в [GetTitleByKey('c_carn_dum').GetNameNoTier] и встретитесь с [Concept('witchkingshort', 'Королём-чародеем')|E] Ангмара."
+ skorgrim_dourhand_keep_rings: "@warning_icon!#T #V Вы#!, #V [skorgrim_dourhand.GetName]#!, решаете оставить гномьи Кольца себе. Этот путь разгневает [Concept('witchkingshort', 'Короля-чародеем')|E] Ангмара и может привести к катастрофическим последствиям!"
+
+ skorgrim_dourhand.1001.t: "The Dark Throne of Carn Dum"
+ skorgrim_dourhand.1001.desc: "I've finally arrived to [GetTitleByKey('c_carn_dum').GetNameNoTier], the heart of [angmar|E], and the dark Fortress stands in front of me. As I enter, the big doors are quickly closed, and I am guided by a minion to the Throne room. \n\nSitting there stands the [witchkingshort|E], Lord of the [nazgul|E], with a cold look. He sits armored and defiant, with his presence provoking me a mix of terror and fear that takes hold of me, but I try to remain calm. \n\n"Have you brought me the [Concept('sevenringsofdwarves', 'Rings')|E]?" He says with a hoarse and horrible voice. \n\n"Yes, my Lord, both of them. I am at your service." I answer him. Then, I take both rings off my hand and I deliver them to him. He takes the rings with even greater greed than mine, and puts them on his fingers. Shortly after, he replies: \n\n"You did a good job, didn't you? I can even feel their power, as my [Concept('nineringsofmenshort', 'own ring ')|E]has. Now, let me consider your reward, hahaha...""
+ skorgrim_dourhand.1001.a: "I wait your answer..."
+ skorgrim_dourhand_carn_dum: "You deliver the [Concept('sevenringsofdwarves', 'Dwarven Rings')|E] to the [witchkingshort|E], and ask for a fulfillment"
+
+ skorgrim_dourhand.1002.t: "Fulfill the Pact?"
+ skorgrim_dourhand.1002.desc: "[skorgrim_dourhand.GetName] has delivered both the [Concept('sevenringsofdwarves', 'Ring of the Firebeards')|E] and the [Concept('sevenringsofdwarves', 'Ring of the Broadbeams')|E] to me, and now he asks for the pact's fulfillment. \n\nMy promises of immortality and wealth were no more that lies, as the main intention -now achieved- was getting the [Concept('sevenringsofdwarves', 'Dwarven Rings')|E] from the [bluemountains|E]'s clans. \n\nWhile it's obvious that he did all the work, I, the [witchkingshort|E] of [angmar|E], Lord of the [nazgul|E], don't make promises to anyone, least of all to a mortal! \n\nIn any case, he has proved himself as a valuable ally and I could simply offer him either aid rebuilding [nogrod|E] or granting [GetTitleByKey('d_gundabad').GetNameNoTier], in both cases as my vassal. In addition, he would owe me a favor for my mercy."
+ skorgrim_dourhand.1002.a: "Show him MY immortality!"
+ skorgrim_dourhand_death_wk: "[skorgrim_dourhand.GetName] will be imprisoned and executed."
+ skorgrim_dourhand.1002.b: "You did a good job, let me offer you vassalage"
+ skorgrim_dourhand_pact_wk: "[skorgrim_dourhand.GetName] will be asked if he wants dominion over [GetTitleByKey('d_gundabad').GetNameNoTier] or help in the reconstruction of [nogrod|E]."
+
+ skorgrim_dourhand.1003.t: "Earning Immortality"
+ skorgrim_dourhand.1003.desc: "\nAfter some time thinking, he states that his part of the pact is waiting on the next room, so he orders me to go there. \n\nOnce inside, he says: "Do you really think I'm gonna reward YOU? I'll show you how to gain immortality and riches!!" His guards seize me, and then I'm forced to move to the dungeons. \n\nSoon after, I find myself on the dark dungeons of [GetTitleByKey('c_carn_dum').GetNameNoTier], with the Witch King wielding his Morgul Blade over me. \n\nI stealed two [Concept('sevenringsofdwarves', 'Dwarven Rings')|E], even the one of my Clan's, and at the end, it's for Nothing? All the work that could be done for [nogrod|E], possibly rebuilding it to if former glory... all in vain. \n\nI feel cold, and then everyting becomes blurred... It's the end for me..."
+ skorgrim_dourhand.1003.a: "NO!"
+
+
+
+ decision_skorgrim_dourhand_alliance_khathzaibriz_tooltip: "Найти союзников среди #L [GetFaithByKey('faith_firebeards').GetName|l]их#! Огнебородов"
+ decision_skorgrim_dourhand_alliance_khathzaibriz_desc: "Если я хочу преуспеть в своём начинании, мне понадобятся союзники.\n\nЕсли [GetTitleByKey('c_ibriz_garan').GetHolder.GetFirstName] из [GetTitleByKey('c_ibriz_garan').GetNameNoTier], возглавляющий моих родичей из чила Огнебородов получит от меня предложение взять под свой контроль часть [Concept('nogrod', 'Ногрода')|E], их родового чертога, это должно помочь привлечь их под моё начало.\n\nЕсли у них всё ещё не хватает духу для моих целей, я мог бы предложить, чтобы [GetTitleByKey('c_ibriz_garan').GetHolder.GetFirstNameNoTooltip] выдал за меня свою дочь, укрепив наши кровные узы и продемонстрировав мою приверженность общему наследию."
+ decision_skorgrim_dourhand_alliance_khathzaibriz_confirm: "Наверняка потомки Дозорного проявят благоразумие."
+ decision_skorgrim_dourhand_alliance_khathzaibriz_accepted: "Договор скреплён. Наши дома будут стоять как два столпа Эред-Луин."
+ decision_skorgrim_dourhand_alliance_khathzaibriz_refused: "Они смеют отказываться от моего предложения?! Я не забуду этого оскорбления..."
+
+
+ decision_skorgrim_dourhand_alliance_dourhand_tooltip: "Найти союзников среди членов вашего дома"
+ decision_skorgrim_dourhand_alliance_dourhand_desc: "Я покинул владения нашего #TOOLTIP:GAME_TRAIT,dwarf_father,[GetNullCharacter] #L праотца#!#! #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdwalinV').GetID] #L Двалина V#!#!, преследуя свои собственные цели, но мой родич [GetTitleByKey('c_kairshadig').GetHolder.GetFirstName] остаётся главой клана [GetScriptedCharacterByHistoryID('lineofdourhand17').GetDynasty.GetName] в провинции [GetTitleByKey('c_kairshadig').GetNameNoTier].\n\nХотя наши прадеды были братьями, отдалённость между нашими ветвями стала слишком большой. Поскольку я не могу предложить им брак, мы станем братьями по оружию, если не по крови.\n\nЕсли [GetTitleByKey('c_kairshadig').GetHolder.GetFirstNameNoTooltip] получит от меня предложение разделить стремление к расширению наших границ и обеспечению безопасности нашего рода, я могу объединить Крепкохватов под одним грозным знаменем."
+
+ decision_skorgrim_dourhand_alliance_dourhand_accepted: "Соглашение заключено. Наши владения будут объединены кровью и амбициями."
+ decision_skorgrim_dourhand_alliance_dourhand_refused: "Он предпочёл своё жалкое горное жилище будущему величию... Что за глупец!"
+
+ decision_skorgrim_dourhand_alliance_kharol_tooltip: "Найти союзников среди менее известных домов Широкозадов"
+ decision_skorgrim_dourhand_alliance_kharol_desc: "Дом [GetScriptedCharacterByHistoryID('linekharol51').GetDynasty.GetName] - гордый и благородный род, но им не хватает величия, которое, по их мнению, им причитается.\n\nВ то время как их нынешний правитель [GetTitleByKey('c_fahamgathol').GetHolder.GetFirstName] уже связан с моим родом браком - [GetTitleByKey('c_kairshadig').GetHolder.GetFirstName] выдал за него свою сестру, моя собственная ветвь остаётся отдельной.\n\nЯ мог бы предложить, чтобы [GetTitleByKey('c_fahamgathol').GetHolder.GetFirstNameNoTooltip] выдал за меня свою сестру, но другие пути также остаются открытыми для меня."
+ decision_skorgrim_dourhand_alliance_kharol_confirm: "Предложение о повышении статуса. Разве от такого можно отказаться?"
+ decision_skorgrim_dourhand_alliance_kharol_accepted: "Теперь наши дома связаны, а вместе с ними и наше будущее в Эред-Луин."
+ decision_skorgrim_dourhand_alliance_kharol_refused: "Похоже, я переоценил их амбиции... Со временем они станут свидетелями собственной глупости."
+
+
+
+ # Tanturkai Intro
+ lotr_intro_events.8001.t: "Blood Tithes"
+ lotr_intro_events.8001.desc: "For over 400 years, the southern [usurper.GetHouse.GetName] and northern [old_king.GetHouse.GetName] fought endlessly over the crown of [GetTitleByKey('k_tanturak').GetNameNoTier]. Just as it seemed that the [usurper.GetHouse.GetName] under [usurper.GetTitledFirstName] would finally secure power after their eradication of the [old_king.GetHouse.GetName], however, the realm would instead fall into all out civil war. \n\nIndeed, the northern houses of [GetTitleByKey('k_tanturak').GetNameNoTier], many of which had [old_king.GetHouse.GetName] blood, were outraged by the cruelty of the young usurper [usurper.GetTitledFirstName]. Seeing in this an opportunity to rise to claim the bloody crown of his ancestors, [claimant.GetTitledFirstName] would rally the northern houses under his banners: citing his status as closest male heir of the [old_king.GetHouse.GetName] still alive to back his claim. \n\nYet, as the lords of proud and cruel [GetTitleByKey('k_tanturak').GetNameNoTier] take up arms against each other, their long oppressed native slaves begin to see this chaos as a chance to finally break their chains..."
+ lotr_intro_events.8001.a: "#italic I#! am the king! The #italic only#! king!"
+ tanturak_civil_war_rebellion_danger: "#N As long as the civil war over #V [GetTitleByKey('k_tanturak').GetNameNoTier]#! continues, both kingdoms will slowly but surely dissolve under the weight of native rebellion. #V In 10 years, if the civil war has not ended, nothing will remain.#!#!"
+
+
+
 
 
 
@@ -895,16 +953,18 @@
 
  fervor_angmar_defeated: "[Concept('witchking','Король Зимы')|E] был побеждён."
 
+
+ PLACEHOLDER: "#N PLACEHOLDER"
  # Basics
  situation_angmar_wars_situation: "Ангмарские войны"
- situation_angmar_wars_situation_desc: "PLACEHOLDER"
+ situation_angmar_wars_situation_desc: "$PLACEHOLDER$"
  situation_type_angmar_wars_situation: "$situation_angmar_wars_situation$"
  situation_type_angmar_wars_situation_desc: "$situation_angmar_wars_situation_desc$"
 
  # Sub-regions
  angmar_wars_situation_sub_region_eriador: "Эриадор"
 
- angmar_wars_situation_sub_region_eriador_desc: "$SITUATION_SUB_REGION_TOOLTIP_DESC$\n\n#weak PLACEHOLDER#!"
+ angmar_wars_situation_sub_region_eriador_desc: "$SITUATION_SUB_REGION_TOOLTIP_DESC$\n\n$PLACEHOLDER$!"
 
  # Phases
  angmar_wars_situation_angmar_wars_stalemate_situation_phase: "$angmar_wars_stalemate$"
@@ -915,34 +975,34 @@
  angmar_wars_arnor_ascendant: "Восхождение Арнора"
  angmar_wars_angmar_ascendant: "Восхождение Ангмара"
 
- angmar_wars_stalemate_desc: "PLACEHOLDER - No one is winning"
- angmar_wars_arnor_ascendant_desc: "PLACEHOLDER - Arnor is on the offensive"
- angmar_wars_angmar_ascendant_desc: "PLACEHOLDER - Angmar is on the offensive"
+ angmar_wars_stalemate_desc: "$PLACEHOLDER$ - No one is winning"
+ angmar_wars_arnor_ascendant_desc: "$PLACEHOLDER$ - Arnor is on the offensive"
+ angmar_wars_angmar_ascendant_desc: "$PLACEHOLDER$ - Angmar is on the offensive"
 
  # Phase Effects 
  angmar_wars_stalemate_effects: "Эффекты тупиковой ситуации"
- angmar_wars_stalemate_effects_concept: "PLACEHOLDER"
+ angmar_wars_stalemate_effects_concept: "$PLACEHOLDER$"
  angmar_wars_arnor_ascendant_effects: "Эффекты восхождения Арнора"
- angmar_wars_arnor_ascendant_effects_concept: "PLACEHOLDER"
+ angmar_wars_arnor_ascendant_effects_concept: "$PLACEHOLDER$"
  angmar_wars_angmar_ascendant_effects: "Эффекты восхождения Ангмара"
- angmar_wars_angmar_ascendant_effects_concept: "PLACEHOLDER"
+ angmar_wars_angmar_ascendant_effects_concept: "$PLACEHOLDER$"
 
  # Participants
  angmar_wars_situation_participant_group_arnorian_rulers: "Арнорские правители"
- angmar_wars_situation_participant_group_arnorian_rulers_desc: "PLACEHOLDER"
+ angmar_wars_situation_participant_group_arnorian_rulers_desc: "$PLACEHOLDER$"
  angmar_wars_situation_participant_group_angmar_rulers: "Ангмарримские правители"
- angmar_wars_situation_participant_group_angmar_rulers_desc: "PLACEHOLDER"
+ angmar_wars_situation_participant_group_angmar_rulers_desc: "$PLACEHOLDER$"
  angmar_wars_situation_participant_group_elven_rulers: "Эльфийские правители"
- angmar_wars_situation_participant_group_elven_rulers_desc: "PLACEHOLDER"
+ angmar_wars_situation_participant_group_elven_rulers_desc: "$PLACEHOLDER$"
  angmar_wars_situation_participant_group_neutral_rulers: "Нейтральные правители"
- angmar_wars_situation_participant_group_neutral_rulers_desc: "PLACEHOLDER"
+ angmar_wars_situation_participant_group_neutral_rulers_desc: "$PLACEHOLDER$"
  angmar_wars_situation_arnorian_rulers: "Арнорский правитель"
  angmar_wars_situation_angmar_rulers: "Ангмарримский правитель"
  angmar_wars_situation_elven_rulers: "Эльфийский правитель"
  angmar_wars_situation_neutral_rulers: "Нейтральный правитель"
 
  # Paramters
- situation_parameter_temp_parameter: "TEMP Parameter"
+ situation_parameter_temp_parameter: "$PLACEHOLDER$ Parameter"
 
  # GUI
  ANGMAR_WARS_SITUATION_INFO_PHASES_TITLE: "Фазы"
@@ -970,18 +1030,26 @@
  is_arnor_ascendant_tt: "Текущая [Concept('situation_phase', 'фаза')|E] - [GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_arnor_ascendant').GetName]"
  is_angmar_ascendant_tt: "Текущая [Concept('situation_phase', 'фаза')|E] - [GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_angmar_ascendant').GetName]"
 
+ # Wars
+ angmar_wars_raid_cb_name: "$PLACEHOLDER$ Raid CB"
+ angmar_wars_raid_cb_name_base: "$PLACEHOLDER$ Raid CB Base"
+ angmar_wars_raid_cb_victory_desc: "$PLACEHOLDER$ Major Devestation"
+ angmar_wars_raid_cb_white_peace_desc: "$PLACEHOLDER$ Minor devestation"
+ angmar_wars_raid_cb_defeat_desc: "$PLACEHOLDER$ You are driven back"
+ angmar_wars_raid_cb_on_invalidated_desc: "$PLACEHOLDER$ Raid Invallidated"
+
  # Decisions
  decision_group_type_angmar_wars_situation: "$situation_angmar_wars_situation$ - решения"
 
  decision_destroy_angmar: "Уничтожить Ангмар"
- decision_destroy_angmar_desc: "PLACEHOLDER"
- decision_destroy_angmar_confirm: "PLACEHOLDER"
+ decision_destroy_angmar_desc: "$PLACEHOLDER$"
+ decision_destroy_angmar_confirm: "$PLACEHOLDER$"
  decision_destroy_angmar_tooltip: "Начать войну, чтобы раз и навсегда уничтожить $k_angmar$"
  angmar_holds_no_land_in_dejure_arnor: "[GetTitleByKey('k_angmar').GetHolder.GetName] #N не#! владеет землями в [Concept('de_jure', 'де-юре')|E] границах #ONCLICK:TITLE,e_arnor #TOOLTIP:LANDED_TITLE,e_arnor #L Арнора#!#!#!"
 
  decision_destroy_arnor: "Уничтожить Арнор"
- decision_destroy_arnor_desc: "PLACEHOLDER"
- decision_destroy_arnor_confirm: "PLACEHOLDER"
+ decision_destroy_arnor_desc: "$PLACEHOLDER$"
+ decision_destroy_arnor_confirm: "$PLACEHOLDER$"
  decision_destroy_arnor_tooltip: "Начать войну, чтобы раз и навсегда уничтожить [Concept('dunedain', 'дунэдайн')|E]"
  arnor_holds_no_land_in_dejure_forodwaith: "[GetTitleByKey('k_arthedain').GetHolder.GetName] #N не#! владеет землями в [Concept('de_jure', 'де-юре')|E] границах #ONCLICK:TITLE,e_forodwaith #TOOLTIP:LANDED_TITLE,e_forodwaith #L Фородвайта#!#!#!"
 
