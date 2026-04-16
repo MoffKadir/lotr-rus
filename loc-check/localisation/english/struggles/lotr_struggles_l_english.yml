@@ -21,6 +21,12 @@
  catalyst_upgraded_colony_in_moria_desc: "Upgrade a [settlement_holding|E] in the [struggle_region|E]"
  catalyst_new_colony_in_moria: "Started a new [colony|E] [struggle_catalyst_catalyst|E]"
  catalyst_new_colony_in_moria_desc: "Start a new [colony|E] in the [struggle_region|E]"
+ catalyst_delved_too_deep: "A [delving|E] has been dug too deep."
+ catalyst_delved_too_deep_desc: "Yearly Drift: a [ruler|E] holds a level 4 or higher [delving|E] in the [struggle_region|E]"
+ catalyst_controls_too_large_area_moria: "Either an [struggle_involved|E] or [struggle_interloper|E] [ruler|E] is too strong"
+ catalyst_controls_too_large_area_moria_desc: "Yearly Drift: an [struggle_involved|E] or [struggle_interloper|E] [ruler|E] controls 50% of the [struggle_region|E]"
+ catalyst_hiding_realm: "A [struggle_involved|E] or [struggle_interloper|E] [ruler|E] is in hiding"
+ catalyst_hiding_realm_desc: "Yearly Drift: Hidden Realms"
  catalyst_destroyed_colony_in_moria: "Abandoned a [colony|E] [struggle_catalyst_catalyst|E]"
  catalyst_destroyed_colony_in_moria_desc: "Return a [colony|E] to [wilderness|E] in the [struggle_region|E]"
  catalyst_went_mining_in_moria: "Held a [GetActivityType('activity_mining').GetName] [struggle_catalyst_catalyst|E]"
@@ -120,6 +126,48 @@
  lotr_balrog_economic_shutdown_county_modifier: "Economic Shutdown"
  lotr_balrog_economic_shutdown_county_modifier_desc: "The local economy in this county has all but shut down in response to repeated attacks by the [balrog|E]."
 
+ lotr_balrog_explore_moria_supply_cache: "Dwarven Supply Cache"
+ lotr_balrog_explore_moria_supply_cache_desc: "This character found a small cache of supplies in the tunnels of [moria|E]."
+ 
+ lotr_balrog_explore_moria_supply_cache_large: "Fine Dwarven Supply Cache"
+ lotr_balrog_explore_moria_supply_cache_large_desc: "This character found a large cache of supplies in the tunnels of [moria|E]."
+ 
+ lotr_balrog_explore_moria_construction_supplies: "Dwarven Construction Materials"
+ lotr_balrog_explore_moria_construction_supplies_desc: "This character found construction materials in the tunnels of [moria|E]."
+ 
+ lotr_balrog_explore_moria_construction_supplies_large: "Fine Dwarven Construction Materials"
+ lotr_balrog_explore_moria_construction_supplies_large_desc: "This character found a wealth of construction materials in the tunnels of [moria|E]."
+ 
+ lotr_balrog_explore_moria_blacksmithing_tools: "Dwarven Smithing Tools"
+ lotr_balrog_explore_moria_blacksmithing_tools_desc: "This character found a cache of blacksmithing tools in the tunnels of [moria|E]."
+ 
+ lotr_balrog_explore_moria_blacksmithing_tools_large: "Fine Dwarven Smithing Tools"
+ lotr_balrog_explore_moria_blacksmithing_tools_large_desc: "This character found a cache of masterwork blacksmithing tools in the tunnels of [moria|E]"
+ 
+ lotr_balrog_explore_moria_unique_location_thistlebeard: "Caves of Thrímur Thistlebeard"
+ lotr_balrog_explore_moria_unique_location_thistlebeard_desc: "The legendary subterranean gardens of Thrímur Thistlebeard dominate this province, its caves awash in vibrant green."
+ 
+ lotr_balrog_explore_moria_unique_location_armouries: "Armouries of the Third Deep"
+ lotr_balrog_explore_moria_unique_location_armouries_desc: "This province hosts the legendary arsenal of the Dwarves of [khazaddum|E]. Here were stored weapons and armour in vast quantities."
+ 
+ lotr_balrog_explore_moria_unique_location_first_hall: "First Hall"
+ lotr_balrog_explore_moria_unique_location_first_hall_desc: "This province is home to the First Hall, the ancient seed of [khazaddum|E], delved by [durindeathless|E] himself."
+ 
+ lotr_balrog_explore_moria_unique_location_west_cave: "Great West Cave"
+ lotr_balrog_explore_moria_unique_location_west_cave_desc: "This province is home to the Great West Cave, an enormous natural cavern with extensive [metal_mithril|E] veins."
+ 
+ lotr_balrog_explore_moria_unique_location_ringsmith: "Citadel of the Ring-Smiths"
+ lotr_balrog_explore_moria_unique_location_ringsmith_desc: "This province is home to the lost Citadel of the Ring-Smiths, where worked the [elves|E] of [eregion|E] and their [dwarven|E] friends."
+
+ lotr_balrog_explore_moria_unique_location_vaults: "Vaults of Uruktharbun"
+ lotr_balrog_explore_moria_unique_location_vaults_desc: "This province is home to the Vaults of Uruktharbun, the legendary treasure-hoard of [khazaddum|E]."
+ 
+ lotr_balrog_explore_moria_unique_location_kings_hall: "Hall of the King"
+ lotr_balrog_explore_moria_unique_location_kings_hall_desc: "This province is home to the Hall of the King, the legendary throneroom of [durin|E]."
+ 
+ lotr_balrog_hiding_realm: "Hiding Realm"
+ lotr_balrog_hiding_realm_desc: "This character has taken drastic measures to hide their [realm|E] from the [balrog|E]."
+ 
  # Events
 
  balrog_struggle.0001.t: "The $balrog_struggle$"
@@ -152,8 +200,10 @@
  balrog_struggle.0004.b: "Not good."
  balrog_struggle.0004.c: "Interesting..."
 
+ balrog_struggle.0100.toast: "Orcs creep back into Moria..."
+
  balrog_struggle.1001.t: "Approaching the Balrog"
- balrog_struggle.1001.desc: "Co-existing with the great [balrog|E] is a delicate balancing act. But it is one we have adapted to. But to attempt to approach it, find accomodation with it?\n\nThat is something far more radical, and even more difficult. Before I cross the precipice into its makeshift throneroom, I must decide on a strategy.\n\nI will..."
+ balrog_struggle.1001.desc: "Co-existing with the great [balrog|E] is a delicate balancing act. But it is one we have adapted to. But to attempt to approach it, find accommodation with it?\n\nThat is something far more radical, and even more difficult. Before I cross the precipice into its makeshift throneroom, I must decide on a strategy.\n\nI will..."
  balrog_struggle.1001.a: "...use my wits."
  balrog_struggle.1001.b: "...use my charm."
  balrog_struggle.1001.c: "...run away!"
@@ -180,6 +230,65 @@
  balrog_struggle.1012.desc: "After a failed attempt by the late [balrog_contender.GetName] to slay it while it was sleeping, the [balrog|E] has been roused! It's still somewhat disconcerted from the sudden awakening, but is swiftly beginning to patrol its self-claimed realm. It will be some time before it will put down its guard again, considering this attack..."
  balrog_struggle.1012.a: "Blast it all [balrog_contender.GetTitledFirstName]!"
 
+ balrog_struggle.1021.t: "Explore Moria: Treasure-Hunting"
+ balrog_struggle.1021.desc: "With one final descent, we've reached our destination. I scan the area, taking in my surroundings.\n\n[ROOT.Char.Custom('jind_RandomRoom_Type')] [ROOT.Char.Custom('jind_RandomRoom_Appearance')]\n\n[ROOT.Char.Custom('jind_RandomRoom_Condition')]\n\nAs I make my way carefully through, I catch a glimpse of something glittering in the corner."
+ balrog_struggle.1021.a: "Treasures of the [dwarves|E]!"
+ balrog_struggle.1021.b: "Search every corner, there must be more!"
+ balrog_struggle.1021.gold: "You find treasure."
+ balrog_struggle.1021.artifact: "You find a Dwarven Artifact."
+ balrog_struggle.1021.supplies: "You find useful supplies."
+ balrog_struggle.1021.materials_metal: "You find valuable metal ores."
+ balrog_struggle.1021.materials_gems: "You find valuable gems."
+ 
+ balrog_struggle.1022.t: "Explore Moria: In Search of Artifacts"
+ balrog_struggle.1022.desc: "With one final descent, we've reached our destination. I scan the area, taking in my surroundings.\n\n[ROOT.Char.Custom('jind_RandomRoom_Type')] [ROOT.Char.Custom('jind_RandomRoom_Appearance')]\n\n[ROOT.Char.Custom('jind_RandomRoom_Condition')]\n\nAmidst the rubble and dust, I spot it: a [dwarven|E] [artifact|E]."
+ balrog_struggle.1022.a: "Impressive!"
+ balrog_struggle.1022.b: "That? That's nothing!"
+ balrog_struggle.1022.tt: "You find a common [dwarven|E] [artifact]."
+ balrog_struggle.1022.tt2: "Chance to find a rarer [dwarven|E] [artifact]."
+ 
+ balrog_struggle.1023.t: "Explore Moria: Supply Cache"
+ balrog_struggle.1023.desc: "With one final descent, we've reached our destination. I scan the area, taking in my surroundings.\n\n[ROOT.Char.Custom('jind_RandomRoom_Type')] [ROOT.Char.Custom('jind_RandomRoom_Appearance')]\n\n[ROOT.Char.Custom('jind_RandomRoom_Condition')]\n\nThough there is little in the way of treasure, we manage to forage a respectable stock of tools and other supplies."
+ balrog_struggle.1023.a: "A good haul!"
+ balrog_struggle.1023.b: "There must be more down here..."
+
+ balrog_struggle.1024.t: "Explore Moria: Bounty of the Deep"
+ balrog_struggle.1024.desc: "With one final descent, we've reached our destination. I scan the area, taking in my surroundings.\n\n[ROOT.Char.Custom('jind_RandomRoom_Type')] [ROOT.Char.Custom('jind_RandomRoom_Appearance')]\n\n[ROOT.Char.Custom('jind_RandomRoom_Condition')]\n\nA small chest in the corner catches my eye, a rusty pickaxe propped against it."
+ balrog_struggle.1024.a: "Ore, perhaps?"
+ balrog_struggle.1024.b: "Could it be [metal_mithril|E]?"
+ balrog_struggle.1024.tt: "You find common [metal_lists|E] or [gem_list|E]."
+ balrog_struggle.1024.tt2: "Chance to find rarer [metal_lists|E] or [gem_list|E]."
+ 
+ balrog_struggle.1030.t: "Explore Moria: Caves of Thrímur Thistlebeard"
+ balrog_struggle.1030.desc: "With one final descent, we've reached our destination. My jaw falls slack, as I take in the scene around me.\n\nA vast natural cavern, awash with light from carefully carved shafts in the ceiling, yawns before me. Melt-water streams flow from the mountains above to feed a veritable forest that sprawls across the cavern far below. I can hear birdsong amidst the tangled trees.\n\nThese must be the legendary caves of [GetScriptedCharacterByHistoryID('lineofdurin14').GetFirstNameNicknamed]. One of the earliest kings of [khazaddum|E], Thrímur was a close friend of the [elves|E] of [eregion|E], and constructed this magnificent garden in honor of that friendship.\n\nIt had faded from all memory, until now."
+ balrog_struggle.1030.a: "This place could feed a city!"
+
+ balrog_struggle.1031.t: "Explore Moria: First Hall"
+ balrog_struggle.1031.desc: "With one final descent, we've reached our destination. A chill runs through me, as I gaze upon the chamber before me.\n\nSunlight pours from shafts in the ceiling, illuminating an array of granite shrines dedicated to [mahalcharacter|E] and [durindeathless|E]. The stonework here is ancient beyond ancient, but masterfully wrought. Murals along the walls and ceiling tell the story of [GetScriptedCharacterByHistoryID('lineofdurinI').GetFirstName].\n\nThis must be the legendary First Hall, where Durin first settled. Every delving, mine, and cavern of [moria|E] that stands today was birthed from this place."
+ balrog_struggle.1031.a: "This is a sacred place.
+ balrog_struggle.1031.b: "We'll make it a shrine to their folly!"
+
+ balrog_struggle.1032.t: "Explore Moria: Hall of the King"
+ balrog_struggle.1032.desc: "With one final descent, we've reached our destination. My heart quickens as I take in the magnificent chamber before me.\n\nAbove my head rises a dome of black marble studded with golden stars. Below my feet, the floor is polished to a gem-like sheen, even after all these years. Along the walls stand statues and murals of stunning make, bearing the likenesses of generations of [longbeard|E] kings.\n\nThis must be the legendary Hall of the King, where sat the lords of [khazaddum|E]. Even in ruins, it is magnificent, a place of ancient and potent power."
+ balrog_struggle.1032.a: "A king he was, on carven throne..."
+
+ balrog_struggle.1033.t: "Explore Moria: Great West Cave"
+ balrog_struggle.1033.desc: "With one final descent, we've reached our destination. I look in wonder at the scene before me.\n\nI stand on a narrow ledge before an enormous cavern, larger than any I have yet seen. Deep into the earth its canyons delve, and high above it rises. [metal_mithril|E] glints like stars in tiny veins all across the arching ceiling of the cave.\n\nThis must be the legendary Great West Cave. In the center of the hollow stand the Pillars of Fáin, towering stalagmites that reach all the way to the ceiling. Between them, two huge lifts, built by the [dwarves|E], powered by chains and cogs. Nan and Gilim they were called, in ancient days, and they transported workers to and from the mines far below.\n\nTheir gears have slumbered for many years."
+ balrog_struggle.1033.a: "This place is huge!"
+
+ balrog_struggle.1034.t: "Explore Moria: Vaults of Uruktharbun"
+ balrog_struggle.1034.desc: "With one final descent, we've reached our destination. I shudder at the grisly sight before me.\n\nA half-dozen [orcs|E] lie dead on the ground, crushed and pierced by cleverly disguised [dwarven|E] traps. Above their mangled remains, crude Orcish graffiti warns away other would-be burglars. Beyond the bodies stands a tall archway, the entrance to an enormous labyrinth.\n\nThese are the legendary Vaults of Uruktharbun, great treasure-hoard of [khazaddum|E]. For centuries, [goblin|E] burglars have tried to rob it of its riches, but few have ever returned alive. Its hazardous reputation is to thank for the miraculous treasures that still reside within."
+ balrog_struggle.1034.a: "Let us grab a few baubles from the upper levels."
+ balrog_struggle.1034.b: "These treasures are mine alone!"
+
+ balrog_struggle.1035.t: "Explore Moria: Lost Citadel of the Ring-Smiths"
+ balrog_struggle.1035.desc: "With one final descent, we've reached our destination. A long hall greets me, cold, but hauntingly beautiful.\n\nBefore me sprawl countless forges, arranged between tall pillars carved in the likeness of trees. The architecture is distinctly [elven|E] in design, reminiscent of old [eregion|E]. This was once a place of great craft and wisdom.\n\nDoubtless, this is the lost Citadel of the Ring-Smiths. Long ago, in the [secondage|E], [elves|E] and [dwarves|E] labored together here to discover the secrets of Ring-lore. While the [ringsofpower|E] themselves were wrought in [GetTitleByKey('c_ost_in_edhil').GetNameNoTier] by [celebrimbor|E], it is whispered that some [lesserrings|E] passed through these halls."
+ balrog_struggle.1035.a: "Magnificent..."
+
+ balrog_struggle.1036.t: "Explore Moria: Armouries of the Third Deep"
+ balrog_struggle.1036.desc: "With one final descent, we've reached our destination. I gaze in wonder at the sight before me.\n\nI stand at the threshold of a long hall lined with towering statues of [dwarven|E] heroes. On all sides lie store-rooms upon store-rooms, filled to the brim with arms and armour, miraculously untouched since the days of [khazaddum|E].\n\nThese must be the legendary Armouries of the Third Deep, heart of the Dwarven arsenal. Here were stored weapons and armour to equip a great army of Dwarves. Mail and helms they laid in store, axes and swords and spears innumerable."
+ balrog_struggle.1036.a: "Enough to equip a great army, eh?"
+ 
  balrog_struggle.2001.t: "The Watching Darkness"
  balrog_struggle.2001.desc: "Much lurks in the darkness of the depths of the world. Some innocuous, and just as many not so.\n\nI walk through a lower level of the hold, a small lantern my sole light. So far down, few venture here these days. And for good reason. The very shadows seem disquiet, and at times even feel malicious.\n\nI hear a distant noise, but cannot pinpoint the direction! A shiver runs down my spine, as I spin and hurridly move my head to and fro, desperate to find the source of the noise.\n\nYet for all my searching, I find naught - yet the shadows feel even deeper than before."
  balrog_struggle.2001.a: "Who goes there?!"
@@ -333,7 +442,52 @@
  balrog_struggle.4001.desc: "There is no hope for [selected_county.GetNameNoTier]. The [balrog|E] is utterly enflamed with wrath, and it now slaughters its ways through the halls, destroying anything that even slightly hints at our presence in the province. The blood of my people flows like rivers, desperate refugees fleeing in huddled masses. The halls are scorched with the infernal heat of the demon, and destroyed beneath terrible stomps and ruionous blade. \n\nWe can hear its terrible roars, even from afar. It is coming. Even if we should escape today, its fury shall not subside lightly! Oh why did we act as we did? We should have acted with greater care, to avoid this wrath!"
  balrog_struggle.4001.a: "[ROOT.Char.GetFaith.HighGodName] deliver us!"
 
+ #Explore Moria Custom Loc - Random Room Descriptions 
+ # Chamber Type: Use [ROOT.Char.Custom('jind_RandomRoom_Type')]
+ jind_RandomRoom_Type_Mine: "The chamber appears to be part of a larger mining network, with many side passageways burrowing deep into the earth."
+ jind_RandomRoom_Type_Utility: "Set aside from the main byways, the chamber appears to be a utility passage of some sort, cramped and hidden."
+ jind_RandomRoom_Type_Storeroom: "The chamber is vast, and echoing. The empty husks of huge crates, barrels, and chests mark this as one of the many great storerooms and warehouses of old [khazaddum|E]."
+ jind_RandomRoom_Type_SmallDwelling: "The chamber appears to be residential in nature. Small in size, it was likely the home of a single [dwarf|E]."
+ jind_RandomRoom_Type_Stairs: "The chamber is but one landing on an enormous staircase, plunging deep underground."
+ jind_RandomRoom_Type_Watercourse: "The chamber is a vast reservoir. Aqueducts run high above and pour water into the wide pool that stretches all around me."
+ jind_RandomRoom_Type_Garrison: "A great gate, reinforced with a heavy iron portcullis, marks the chamber as an old [dwarven|E] garrison."
+ jind_RandomRoom_Type_Forge: "The chamber houses the remains of an old [dwarven|E] forge."
+ jind_RandomRoom_Type_Workshop: "Tables cluttered with tools and half-finished crafts sprawl out before you. The chamber appears to have once been a workshop of some kind."
+ jind_RandomRoom_Type_LargeDwelling: "The chamber appears to be residential in nature. With dozens of interconnected rooms, this was likely once the home of an entire [dwarven|E] [house|E]."
+ jind_RandomRoom_Type_CivicBuilding: "With high, arching ceilings, the chamber appears to have once been an important civic building of some kind- perhaps an archive or gallery."
+ jind_RandomRoom_Type_GreatHall: "The chamber is undoubtedly one of the great meeting-halls of [durinsfolk|E]. Stretching far into the darkness, I can still make out the remnants of market stalls and feasting tables."
+ 
+ # Chamber Appearance: Use [ROOT.Char.Custom('jind_RandomRoom_Appearance')]
 
+ jind_RandomRoom_Appearance_Shunned: "It is clear that this place was shunned by the [dwarves|E]. Doors have been sealed, bricked shut, and runes of warning mark every surface."
+ jind_RandomRoom_Appearance_Unfinished: "Scaffolding clings to the walls and discarded tools litter the ground. It seems that this place was under construction when it was abandoned."
+ jind_RandomRoom_Appearance_Austere: "Only bare stone walls greet you, however. Little in the way of decoration seems to have adorned this place."
+ jind_RandomRoom_Appearance_Ancient: "The stone here is ancient, simple in design but exquisitely executed. It is likely that this place was one of the first ever delved, perhaps even by [durin|E] himself."
+ jind_RandomRoom_Appearance_Simple: "Unremarkable in its decoration, this place was clearly never more than strictly functional. No great lords dwelt here, nor any great deeds performed here."
+ jind_RandomRoom_Appearance_Heroic: "Statues and intricate carvings adorn every wall, the venerated ancestors and heroes of [durinsfolk|E]."
+ jind_RandomRoom_Appearance_Homely: "Even in its abandonment, this place feels homely. It was built for comfort, not grandeur."
+ jind_RandomRoom_Appearance_RichlyDecorated: "Spectacularly decorated, this was clearly once a place of prestige and grandeur. Every surface was decorated in some fashion: carven statues, gilded inlays, intricately woven tapestries."
+ jind_RandomRoom_Appearance_Elven: "The architecture of this place is immediately recognizable as [elven|E] in its design, a lingering reminder of the friendship between [eregion|E] and [khazaddum|E]."
+ jind_RandomRoom_Appearance_Fortified: "It is clear that this place was designed to be defensible. Hidden traps and murder-holes, long defunct, nest inside every wall."
+ jind_RandomRoom_Appearance_Natural: "Interestingly, this place appears to be a mostly natural cavern, only lightly adapted by the [dwarves|E]."
+ jind_RandomRoom_Appearance_Enchanted: "It is clear that this was once a place of great might and magic. Runes of power adorn every surface, though their spells are long since broken." 
+ 
+ # Chamber Condition: Use [ROOT.Char.Custom('jind_RandomRoom_Condition')]
+ jind_RandomRoom_Condition_CampOrcs: "Now, however, the chamber has become a den of [orcs|E]. Though long-gone, their shabby dwellings and discarded bones clutter the space."
+ jind_RandomRoom_Condition_Blocked: "Now, however, the chamber is partially collapsed. Fallen stones have blocked access to much of the space."
+ jind_RandomRoom_Condition_SuspiciouslyIntact: "Unnervingly, the chamber is suspiciously intact. For some reason, no living thing has set foot here."
+ jind_RandomRoom_Condition_Flooded: "Now, however, the chamber is completely flooded."
+ jind_RandomRoom_Condition_UtterlyRuined: "Now, however, the chamber is utterly ruined. With a collapsed ceiling and floor, and passages filled nearly to the roof with rubble, it is difficult to navigate."
+ jind_RandomRoom_Condition_GoblinGnawed: "Now, however, the chamber has been defaced with [goblin|E]-tunnels, burrowed through the walls and ceilings like insects."
+ jind_RandomRoom_Condition_EarthquakeShattered: "Now, however, the chamber has been torn asunder. A great chasm runs through the center of the space, leading deep into the earth."
+ jind_RandomRoom_Condition_Burnt: "Now, however, the chamber is marred by black burn-scars. A thin layer of soot covers every surface."
+ jind_RandomRoom_Condition_Despoiled: "The chamber is largely intact, but it has clearly been visited by [orcs|E]. Every [dwarven|E] icon has been deliberately broken, remade in mockery, and rigged with traps."
+ jind_RandomRoom_Condition_PassageOfTime: "The chamber is largely intact, but it has succumbed, like so much else, to the slow ravages of time."
+ jind_RandomRoom_Condition_Intact: "Though cold and dark, the chamber is surprisingly untouched. For a moment, I can imagine how it once looked, long ago."
+ jind_RandomRoom_Condition_CampAdventurer: "Another made their home here, more recently: an abandoned campsite, not of [orc|E]-make."
+ 
+
+ 
  ##############################
  #                            #
  #    Thâni-Hazâd Struggle    #
