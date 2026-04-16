@@ -2783,6 +2783,13 @@
  decision_kultamieli_raid_taurau_positive: "#P Возможно, вашим налётчикам удастся одолеть Рикульфо в бою.#!"
  decision_kultamieli_raid_taurau_negative: "#N Если же они потерпят неудачу, это будет стоить вам немало ресурсов.#!"
 
+ decision_integrate_gundalok: "Усмирить перевал Гундабад"
+ decision_integrate_gundalok_desc: "Слишком долго [Concept('orcs', 'орки')|E] из [Concept('gundabad', 'Гундабада')|E] спускались с [Concept('mistymountains', 'Мглистых гор')|E] в [Concept('anduinvale', 'Долину Андуина')|E], чтобы совершать [Concept('raid', 'набеги')|E], грабить и разорять. Довольно. Мы пройдём к самым вратам Гундабада и очистим перевал, ведущий в [Concept('eriador', 'Эриадор')|E], от всех орков, которых сможем найти! И как только это будет сделано, возведём там укрепления, чтобы отребье никогда не смогло вернуться."
+ decision_integrate_gundalok_tooltip: "Захватить перевал Гундалок"
+ decision_integrate_gundalok_confirm: "Долина наконец познает мир."
+ gundabad_kingdom_doesnt_exist_or_is_dwarven: "В [Concept('gundabad', 'Гундабаде')|E] нет [Concept('orcish', 'орочьих')|E] [Concept('kingdom', 'королевств')|E]"
+ decision_integrate_gundalok_tt: "Перевал Гундабад усмирён"
+
  ##############################
  #### Dol Amroth Decisions ####
  ##############################
@@ -2830,6 +2837,8 @@
  decision_dol_amroth_harondor_tooltip: "Убедить харондорим присоединиться к вам"
  decision_dol_amroth_harondor_confirm: "Всё начнётся с Харфаласа."
  decision_dol_amroth_harondor_tt: "Разблокированы [Concept('decision', 'решения')|E] «[GetDecision('decision_dol_amroth_umbar').GetName]» и «[GetDecision('decision_harnen_kingdom').GetName]»"
+ gondor_holds_harfalas: "Ваш [Concept('liege', 'сюзерен')|E] полностью контролирует [GetTitleByKey('d_harfalas').GetNameNoTier]"
+
 
  decision_dol_amroth_umbar: "Сжечь Умбар"
  decision_dol_amroth_umbar_desc: "На протяжении многих долгих лет [Concept('umbar', 'Умбар')|E] был занозой в боку [Concept('gondor', 'Гондора')|E]. Гавань, полная кровожадных пиратов, её черные флоты опустошали берега залива Бельфалас с тех пор, как морская мощь Гондора ослабла, а Умбар был потерян для Крылатой короны.\n\nТеперь, когда мы закрепились в Харондоре и укрепили нашу армию и флот, пришло время нанести пиратам решающий удар - удар настолько серьёзный, что они от него не оправятся."
@@ -2874,7 +2883,7 @@
  decision_rhovanion_hegemony_dale: "Вы приняли решение #high Верховный король Дэйла#!"
  decision_rhovanion_hegemony_celduin: "Вы приняли решение #high Объединить Кельдуин#!"
 
- decision_rhovanion_hegemony_expand_rhun: "Изгнать истерлингов"
+ decision_rhovanion_hegemony_expand_rhun: "Покорить истерлингов"
  decision_rhovanion_hegemony_expand_rhun_tooltip: "Одержать окончательную победу над захватчиками с Востока"
  decision_rhovanion_hegemony_expand_rhun_desc: "Слишком долго истерлинги [Concept('rhun', 'Руна')|E] бросали вызов нашему могуществу. Мы не забыли о вторжениях в прошлом, когда наш народ был порабощён их жестокостью и рассеян по ветру их дикостью. Довольно!\n\nМы выступим на восток, к берегам [Concept('seaofrhun', 'Моря Рун')|E], и пусть они трепещут от могучего стука копыт наших войск!"
  decision_rhovanion_hegemony_expand_rhun_confirm: "Мы отомстим."
@@ -2883,6 +2892,11 @@
  decision_rhovanion_hegemony_expand_enedhwaith_tooltip: "Принести прочный мир в Дунланд и Энедвайт"
  decision_rhovanion_hegemony_expand_enedhwaith_desc: "За рекой Изен велось много войн, и во Вратах [Concept('rohan', 'Рохана')|E] пролилось бесчисленное количество крови. Пришло время положить конец этой бойне, объединив враждующие племена широких равнин и водно-болотных угодий к западу от нас, чтобы они никогда больше не могли воевать с нашими родными землями."
  decision_rhovanion_hegemony_expand_enedhwaith_confirm: "Наконец-то наступил мир."
+
+ decision_rhovanion_hegemony_expand_khand: "Интегрировать вариагов"
+ decision_rhovanion_hegemony_expand_khand_tooltip: "Напомнить людям Кханда об их корнях"
+ decision_rhovanion_hegemony_expand_khand_desc: "Вариаги [Concept('khand', 'Кханда')|E] имеют смешанное происхождение, в некоторых из их предков текла кровь северян. Их лошади почти не уступают нашим, и, таким образом, мы могли бы включить их всадников в состав нашего войска, если их земли будут присоединены к нашей державе."
+ decision_rhovanion_hegemony_expand_khand_confirm: "Напомнить им, откуда они произошли."
 
  ########################
  #### Dale Decisions ####
