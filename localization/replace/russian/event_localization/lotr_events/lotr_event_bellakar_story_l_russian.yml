@@ -1,0 +1,270 @@
+﻿l_russian:
+
+ ### Intro ###
+
+ bellakar_story.0101.t: "Сны о севере"
+ bellakar_story.0101.desc: "И вновь я осознаю, что это сон. Но сон этот отличается от тех, что я [Select_CString(ROOT.Char.IsFemale, 'видела', 'видел' )] прежде. Я нахожусь в лесу. На мне простые, но добротные одежды. Вдали я слышу голос, разносящийся среди деревьев, словно лунный свет, что пробивается сквозь кроны.\n\n«[Select_CString(ROOT.Char.IsFemale, 'Владычица', 'Владыка' )] Беллакара, близится час, когда решится судьба всех Верных. Дому Сильмалондэ ещё предстоит сыграть свою роль, как когда-то, но услышь же мои слова — надежда принесёт победу, а с севера придёт династия королей...»\n\nСвет звёзд ослепляет, но перед тем как он охватывает меня целиком, мне удаётся различить высокую мрачную фигуру среди листвы. Я просыпаюсь в холодном поту, помня лишь малую часть того, что [Select_CString(ROOT.Char.IsFemale, 'видела', 'видел' )]."
+ bellakar_story.0101.a: "...с севера придёт династия королей?"
+
+ bellakar_story.0102.t: "Прислушаться ко сну?"
+ bellakar_story.0102.desc: "Я не могу перестать думать об этом странном сне с самого пробуждения. С севера придёт династия королей? Надежда принесёт победу? Что это за короли и что за победа такая? Где-то на забытом севере, возможно, в землях [Concept('gondor', 'Гондора')|E], грядёт великая война за судьбу этого мира, и что победу принесёт северный король.\n\nЕдинственные короли, что приходят в голову — наши давние союзники из дома Элендиля. Уже долгие годы ничто не связывало нас с наследниками Элендиля, а Гондором, насколько мне известно, правят наместники. Но сон не отступает. Быть можем им требуется наша помощь? Однажды мы уже помогли Элендилю и сразились пред самыми вратами Тёмного властелина.\n\nНо ведь и в моих землях немало проблем. Мои вассалы наверняка начнут роптать, стоит мне собрать экспедицию на север, основываясь лишь на сне..."
+ bellakar_story.0102.a: "Ладнока говорит со мной, как когда то говорила с самим Зимребалом!"
+ bellakar_story.0102.b: "Кто бы ни напал на Гондор — меня это не касается."
+ bellakar_northward_focus: "Вы решаете сосредоточить свои усилия на возобновлении контактов со свободными народами Севера, надеясь стать оплотом юга в борьбе с Тёмным властелином."
+ bellakar_southward_focus: "Вы решаете сосредоточить свои усилия на обороне и консолидации державы, стремясь вернуть утраченные внутренние земли и уничтожить силы зла на юге ваших владений."
+ bellakar_important_choice: "#N Этот выбор определит, к каким частям повествования у вас будет доступ. Убедитесь, что вы сделали правильный выбор.#!"
+
+ ### Southwards ###
+
+ isles_corsairs: "Пираты-перебежчики с Одиноких островов"
+ bellakar_story.0103.t: "Закон на островах"
+ bellakar_story.0103.desc: "Благодаря моим усилиям, долгое время отвлекавшая внимание пиратская угроза западному [Concept('bellakar', 'Беллакару')|E] наконец-то была устранена. Мои хорошо обученные люди и флот с лёгкостью подавили неорганизованных беззаконников, охранявших скрытые пиратские бухты.\n\nТем не менее, местные жители не так остро ощущают приход закона и порядка. Острова бедны, их земли бесплодны и непригодны для земледелия или разведения скота. Пираты и их набеги были единственным источником богатства в этих землях, и почти вся экономика зависела от добычи из-за рубежа. Я, конечно, не могу допустить продолжения подобной практики, но если я не начну действовать сейчас, регион наверняка погрузится в полное отчаяние."
+
+ bellakar_story.0103.a: "Здесь нет места для этих разбойников!"
+ bellakar_story.0103.b: "Возможно, они присоединятся к моему флоту..."
+ bellakar_story.0103.a.effects: "Вы уничтожите все пиратские гавани и повесите всех непокорных бывших пиратов"
+ bellakar_story.0103.b.effects: "Вы примете бывших пиратов в свой флот ценой золота и бесчестия"
+
+ bellakar_story.0104.t: "Воззвание к высокогорьям"
+ bellakar_story.0104.desc: "Провозгласив об официальной реинтеграции плато центрального [Concept('bellakar', 'Беллакара')|E] в состав державы, для меня пришло время отправить своих посланников в Уруд-Удил и обсудить их условия интеграции. Такой шаг, вероятно, вызовет разногласия среди них, поскольку их конфедерация долго боролась за свою независимость.\n\nХотя я всего лишь хочу защитить их и вернуть этим землям былое процветание, вполне вероятно, что многие увидят во мне не более чем [Select_CString(ROOT.Char.IsFemale, 'жаждущую', 'жаждущего' )] власти [Select_CString(ROOT.Char.IsFemale, 'чужеземку', 'чужеземца' )]. Тогда было бы разумно позволить племенам выдвинуть свои требования о подчинении после получения моего послания, чтобы они поняли, что я всего лишь хочу отстаивать их интересы как естественных подданных #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!."
+ bellakar_story.0104.a: "Даже самые отдалённые племена услышат мой зов!"
+ bellakar_story.0104.a.effects: "Все члены Уруд-Удил выдвинут свои требования, прежде чем подчиниться вашей власти."
+
+ bellakar_story.0105.opening: "[bellakar_emperor.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0105.desc: "Дни, когда у властителей Уруд-Удил не было иного выбора, кроме как постоять за себя, прошли. Я [Select_CString(bellakar_emperor.IsFemale, 'правительница', 'правитель' )] #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, и мой долг - заботиться обо всех народах моих земель, включая ваш. Предъявите мне своё требование, и, если я сочту его разумным, я буду [Select_CString(bellakar_emperor.IsFemale, 'рада', 'рад' )] приветствовать вас как верного вассала."
+ bellakar_story.0105.a: "Гарантируйте мою власть, и я преклоню колени."
+ bellakar_story.0105.b: "Значительные вложения, несомненно, обеспечат мою лояльность."
+ bellakar_story.0105.c: "Разумеется, мой сюзерен."
+ bellakar_story.0105.d: "Я не преклонюсь перед чужеземными тиранами!"
+ bellakar_story.0105.a.effects: "Став вассалом персонажа [bellakar_emperor.GetTitledFirstName], вы получите #P #italic защиту от отзыва титулов#!#! и #P #italic свободу вероисповедания#!#!."
+
+ bellakar_story.0106.opening: "[urud_udil.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0106.desc.yay: "Ваши слова мудры, [Select_CString(ROOT.Char.IsFemale, 'моя повелительница', 'мой повелитель' )], а ваше правление справедливо. Я [Select_CString(urud_udil.IsFemale, 'была бы рада', 'был бы рад' )], если бы мой народ наслаждался свободой и процветанием вашей великой державы. Всё, чего я прошу взамен, - это чтобы ко мне и моим землям относились с предельным вниманием, которого они заслуживают. Я [Select_CString(urud_udil.IsFemale, 'уверена', 'уверен' )], что вы понимаете мои опасения и будете готовы пойти на необходимые уступки..."
+ bellakar_story.0106.desc.nay: "Сожалею, но я [Select_CString(urud_udil.IsFemale, 'вынуждена', 'вынужден' )] отказаться от ваших условий вассалитета. Наш народ практически не связан с вашей великой столицей и вотчинами и не нуждается в вашей защите. Хотя когда-то мы и были подданными #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, те дни давно миновали. Я надеюсь, что когда-нибудь мы придём к лучшему соглашению, но это будет не сегодня..."
+ bellakar_story.0106.a: "Ваши земли будут процветать под моим правлением, я обещаю это."
+ bellakar_story.0106.b: "У вас нет права выдвигать такие требования..."
+ bellakar_story.0106.c: "Мне нужно будет разобраться с этим..."
+
+ bellakar_story.0107.t: "Разорения юга"
+ bellakar_story.0107.desc: "По мере того, как возобновление противостояния с силами [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] становится всё более и более неизбежным, становится ясно, что простого дозора на наших укреплениях и ожидания, когда буря дойдёт до нас, будет недостаточно для обеспечения безопасности народов [Concept('bellakar', 'Беллакара')|E].\n\nФаринья, расположенные на границе владений моих врагов, могли бы стать отличными союзниками в наших усилиях по укреплению наших позиций. Однако, хотя я, возможно, смогу предоставить достаточно золота для финансирования этих действий, их успех будет зависеть от моих фаринских союзников, которых возглавляет [zajantak_chief.GetTitledFirstName]."
+ bellakar_story.0107.a: "[storm_marshal.GetTitledFirstName] испытает на себе гнев своих врагов..."
+ bellakar_story.0107.success_big: "#P Все графства под властью [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] в пределах земель #ONCLICK:TITLE,e_bozisha_miraz #TOOLTIP:LANDED_TITLE,e_bozisha_miraz #L Бозиша-Мираза#!#!#! получат модификатор «[GetModifier('bellakar_zanjantak_raiding').GetNameWithTooltip]» на #bold 5 лет#!#!"
+ bellakar_story.0107.success_mid: "#P Все графства под властью [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] в пределах #ONCLICK:TITLE,k_zajantak #TOOLTIP:LANDED_TITLE,k_zajantak #L Заджантака#!#!#!, #ONCLICK:TITLE,d_dalyan #TOOLTIP:LANDED_TITLE,d_dalyan #L Дальяна#!#!#! или #ONCLICK:TITLE,d_khorsaj #TOOLTIP:LANDED_TITLE,d_khorsaj #L Хорсажа#!#!#! получат модификатор «[GetModifier('bellakar_zanjantak_raiding').GetNameWithTooltip]» на #bold 5 лет#!#!"
+ bellakar_story.0107.failure: "#N [storm_marshal.GetTitledFirstName] [Select_CString(storm_marshal.IsFemale, 'разгромила', 'разгромил' )] войска персонажа [zajantak_chief.GetTitledFirstName]#!"
+
+ bellakar_story.0108.opening: "[zajantak_chief.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0108.desc.big: "Я и мои воины добились неожиданного успеха в походе против нашего врага - [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier]. Мы опустошили все земли в пределах обширных границ #ONCLICK:TITLE,e_bozisha_miraz #TOOLTIP:LANDED_TITLE,e_bozisha_miraz #L Бозиша-Мираза#!#!#!, вернувшись в наши земли с новообретёнными богатствами."
+ bellakar_story.0108.desc.mid: "Я и мои воины преуспели в нашей экспедиции в земли [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier]. Мы опустошили все земли в пределах досягаемости наших домов в #ONCLICK:TITLE,k_zajantak #TOOLTIP:LANDED_TITLE,k_zajantak #L Заджантаке#!#!#!."
+ bellakar_story.0108.a: "Даже [GetTitleByKey('c_khorsaj').GetNameNoTier] потрясён..."
+
+ bellakar_story.0109.opening: "[zajantak_chief.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0109.desc: "Несмотря на все мои усилия, моим войскам не удалось сломить крепкую защиту [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier]. Я [Select_CString(zajantak_chief.IsFemale, 'должна', 'должен' )] отвести свои войска обратно в [GetTitleByKey('k_zajantak').GetNameNoTier], по крайней мере, на данный момент."
+ bellakar_story.0109.a: "Когда-нибудь [storm_marshal.GetTitledFirstName] допустит ошибку..."
+
+ bellakar_story.0110.opening: "[sender.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0110.desc: "Нашим общим врагам из [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] слишком долго позволяли сидеть спокойно! Я [Select_CString(sender.IsFemale, 'собрала', 'собрал' )] для вас огромные средства и ресурсы, чтобы вы и ваши люди могли совершать набеги вглубь их границ и добыть при этом огромные богатства."
+ bellakar_story.0110.a: "Я не отступлю перед вызовом!"
+ bellakar_story.0110.b: "[storm_marshal.GetTitledFirstName] слишком [Select_CString(storm_marshal.IsFemale, 'сильна', 'силён' )], нам не выстоять..."
+
+ bellakar_story.0111.opening: "[marshal.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0111.desc.big: "Наши войска нанесли больший ущерб городам [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier], чем кто-либо мог предвидеть. Теперь наши воины возвращаются в свои дома с такой добычей, какой многие из них не видели за всю свою жизнь. Вы, конечно, получите свою справедливую долю добычи."
+ bellakar_story.0111.desc.mid: "Наши воины одержали великую победу над войсками [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier]. Мы разграбили многие из их городов и вернулись с большой добычей для вас и ваших людей."
+ bellakar_story.0111.a: "Это нужно отпраздновать!"
+
+ bellakar_story.0112.opening: "[marshal.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0112.desc: "Несмотря на храбрость наших воинов, [storm_marshal.GetTitledFirstName] [Select_CString(storm_marshal.IsFemale, 'разбила', 'разбил' )] отряды наших налётчиков, посланных в [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier]. Боюсь, что пройдёт много времени, прежде чем такая возможность представится снова..."
+ bellakar_story.0112.a: "Возможно, победа наступит в другой раз..."
+
+ bellakar_story.0113.opening: "[zajantak_chief.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0113.desc: "Хотя ваше предложение о поддержке в нападении на [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] заманчиво, я [Select_CString(zajantak_chief.IsFemale, 'должна', 'должен' )] в первую очередь думать о своей державе и народе. В конце концов, [storm_marshal.GetTitledFirstName] слишком [Select_CString(storm_marshal.IsFemale, 'сильна', 'силён' )], и я не в том положении, чтобы столкнуться с [Select_CString(storm_marshal.IsFemale, 'её', 'его' )] гневом."
+ bellakar_story.0113.a: "По крайней мере, они вернули мне золото..."
+
+ bellakar_story.0114.t: "Варварское пламя"
+ bellakar_story.0114.desc: "Каким-то образом небольшой банде фарийцев удалось совершить набег на мои земли. Налётчики, которых [Select_CString(zajantak_chief.IsFemale, 'привела', 'привёл' )] [zajantak_chief.GetTitledFirstName], преодолели нашу оборону и опустошили многие из наших земель. Эти племена слабы, я знаю это, но каким-то образом они одержали великую победу над нами. Возможно, какая-то чужеземная держава предложила им свою поддержку?\n\nНезависимо от их происхождения, эти варварские орды оставили большую часть моей державы в полном запустении. Действительно, почти в каждом городе за пределами #ONCLICK:TITLE,k_an_balkumagan #TOOLTIP:LANDED_TITLE,k_an_balkumagan #L Ан-Балкумагана#!#!#! происходили стычки, и многие из них были разграблены. Боюсь, что на полное восстановление державы могут уйти годы..."
+ bellakar_story.0114.a: "Я сокрушу их #italic всех!#!"
+ stormhost_pov_big_raid: "#N Каждое подконтрольное графство в пределах #ONCLICK:TITLE,e_bozisha_miraz #TOOLTIP:LANDED_TITLE,e_bozisha_miraz #L Бозиша-Мираза#!#!#! получило модификатор «[GetModifier('bellakar_zanjantak_raiding').GetNameWithTooltip]» на #bold 5 лет.#!#!"
+ stormhost_pov_mid_raid: "#N Каждое подконтрольное графство в пределах #ONCLICK:TITLE,k_zajantak #TOOLTIP:LANDED_TITLE,k_zajantak #L Заджантака#!#!#!, #ONCLICK:TITLE,d_dalyan #TOOLTIP:LANDED_TITLE,d_dalyan #L Дальяна#!#!#! или #ONCLICK:TITLE,d_khorsaj #TOOLTIP:LANDED_TITLE,d_khorsaj #L Хорсажа#!#!#! получило модификатор «[GetModifier('bellakar_zanjantak_raiding').GetNameWithTooltip]» на #bold 5 лет.#!#!"
+
+ bellakar_story.0115.t: "Армада, разрывающая цепи"
+ bellakar_story.0115.desc: "После стольких лет страданий от постоянной угрозы со стороны [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] на наших южных берегах, наконец, пришло время нам самим нанести мощный удар. Мы больше не будем прятаться за нашими флотами и замками! Мы больше не будем ждать, когда буря обрушится на наши берега!\n\nСегодня мы выступаем против тени и вернёмся в наши дома только тогда, когда последний из грозовых легионов будет разгромлен, и пока люди #ONCLICK:TITLE,k_tulwang #TOOLTIP:LANDED_TITLE,k_tulwang #L Тулванга#!#!#!, долгое время находившиеся в рабстве, наконец, не освободятся от своих цепей!"
+ bellakar_story.0115.a: "Пусть иго зла уйдёт в историю."
+
+ bellakar_story.0116.t: "Великая армада"
+ bellakar_story.0116.desc: "Хотя последние поколения [Concept('bellakar', 'Беллакар')|E] переживал долгий и тихий упадок, став малозначимым, [bellakar_emperor.GetTitledFirstName] [Select_CString(bellakar_emperor.IsFemale, 'положила', 'положил' )] конец этой тенденции с ужасающей эффективностью. Армады #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#! готовы, они каким-то образом умудрились собрать достойную армию вторжения ещё до того, как у нас появилось время создать свою собственную.\n\nБеллакарцы, возможно, и многочисленны, но они слабые и декадентствующие горожане. Их необученные гоплиты и жалкие туземные вспомогательные войска наверняка разобьются о наши сверкающие клинки и доспехи. Мы отбросим этих захватчиков и поставим их на место!"
+ bellakar_story.0116.a: "Их орды разобьются, как вода о скалу."
+
+ bellakar_story.0117.t: "Покорители бури"
+ bellakar_story.0117.desc: "Наконец-то наша война на уничтожение против гнусного [GetTitleByKey('e_thon_an_kharlokh').GetName] подошла к концу. Южный дракон снова переходит в историю, когда его великие и надменные хозяева встречают свою гибель от рук свободных народов [Concept('bellakar', 'Беллакара')|E].\n\nОднако моя роль на этом не закончена. Гибель нашего извечного врага освободила угнетённые народы #ONCLICK:TITLE,k_tulwang #TOOLTIP:LANDED_TITLE,k_tulwang #L Тулванга#!#!#!, которые теперь пришли ко мне, чтобы обсудить судьбу своего народа. Мой выбор определит судьбу целого народа..."
+ bellakar_story.0117.a: "Я не тиран. [GetTitleByKey('k_tulwang').GetNameNoTier] станет свободной землёй!"
+ bellakar_story.0117.b: "Они получат самоуправление, но #italic будут#! платить дань."
+ bellakar_story.0117.c: "Я не откажусь от своих завоеваний!"
+ bellakar_tulwangi_protectorate: "[tulwangi_leader.GetTitledFirstName] получит все удерживаемые территории в #ONCLICK:TITLE,e_bozisha_miraz #TOOLTIP:LANDED_TITLE,e_bozisha_miraz #L Бозиша-Миразе#!#!#! (за пределами #ONCLICK:TITLE,d_sarwa #TOOLTIP:LANDED_TITLE,d_sarwa #L Сарвы#!#!#!) и станет вашим #V протекторатом#!."
+ bellakar_tulwangi_tributary: "[tulwangi_leader.GetTitledFirstName] получит все удерживаемые территории в #ONCLICK:TITLE,e_bozisha_miraz #TOOLTIP:LANDED_TITLE,e_bozisha_miraz #L Бозиша-Миразе#!#!#! (за пределами #ONCLICK:TITLE,d_sarwa #TOOLTIP:LANDED_TITLE,d_sarwa #L Сарвы#!#!#!) и станет [Select_CString(tulwangi_leader.IsFemale, 'вашей', 'вашим' )] [Concept('tributary', Select_CString(tulwangi_leader.IsFemale, 'данницей', 'данником' ))|E]."
+
+ bellakar_story.0118.opening: "[bellakar_emperor.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0118.desc: "Согласно нашему соглашению, вы станете [Select_CString(ROOT.Char.IsFemale, 'свободной правительницей', 'свободным правителем' )] под беллакарским началом."
+ bellakar_story.0118.a: "Наконец-то мы свободны!"
+
+ bellakar_story.0119.t: "Узы против тени"
+ bellakar_story.0119.desc: "После недолгих поисков я [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] выявить вожака сопротивления тирании Кхаз-грамаза над [Concept('ray', 'Раей')|E]: [revolutionary.GetTitledFirstName]. [Select_CString(revolutionary.IsFemale, 'Её', 'Его' )] сторонники стремятся восстановить свободную #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раю#!#!#! и избавить королевство как от кхаз-грамазитов, так и от древних ватранцев.\n\nМне кажется очевидным, что наши интересы совпадают: наши державы только выиграют, если [mardat.GetTitledFirstName] и [Select_CString(mardat.IsFemale, 'её', 'его' )] тёмные силы падут. Всё, что мне нужно, чтобы обеспечить победу силам добра в #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Рае#!#!#!, - это прийти к соглашению..."
+ bellakar_story.0119.a: "Я не позволю тени разделить нас!"
+ bellakar_story.0119.a.effects: "Война против #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раи#!#!#! с целью свержения персонажа [mardat.GetTitledFirstName] наверняка скоро начнётся."
+ bellakar_story.0119.b: "Будет справедливо, если я получу компенсацию за свои усилия..."
+ bellakar_story.0119.b.success: "#P [revolutionary.GetTitledFirstName] соглашается стать [Select_CString(revolutionary.IsFemale, 'вашей', 'вашим' )] [Concept('tributary', Select_CString(revolutionary.IsFemale, 'данницей', 'данником' ))|E] в обмен на вашу поддержку#!"
+ bellakar_story.0119.b.failure: "#N [revolutionary.GetTitledFirstName] отвергает ваше предложение#!"
+
+ bellakar_story.0120.opening: "[bellakar_emperor.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0120.desc.tribute: "Я [Select_CString(bellakar_emperor.IsFemale, 'слышала', 'слышал' )] о борьбе, которую ведёте вы и [mardat.GetTitledFirstName] со своими кхаз-грамазитами приспешниками, и я знаю, что ваше дело правое. Если вы пообещаете выплатить достойную дань после своего возвышения, я бы с радостью [Select_CString(bellakar_emperor.IsFemale, 'помогла', 'помог' )] вам освободить #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раю#!#!#!."
+ bellakar_story.0120.desc.free: "Я [Select_CString(bellakar_emperor.IsFemale, 'слышала', 'слышал' )] о борьбе, которую ведёте вы и [mardat.GetTitledFirstName] со своими кхаз-грамазитами приспешниками, и я знаю, что ваше дело правое. Я более чем [Select_CString(bellakar_emperor.IsFemale, 'готова', 'готов' )] помочь вам освободить #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раю#!#!#! и уничтожить культ Кхаз-грамаза."
+ bellakar_story.0120.a: "Такой возможности больше не представится..."
+ ray_war_starts: "Вы объявите великую войну против персонажа [mardat.GetTitledFirstName] вместе с другими мятежниками и при поддержке #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!."
+ bellakar_story.0120.b: "Мне не нужна сталь чужеземцев!"
+
+ bellakar_story.0121.opening: "[attacker.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0121.desc: "Я [Select_CString(attacker.IsFemale, 'рада', 'рад' )] слышать о вашем великодушном предложении помочь мне и моему народу обрести свободу. Вместе мы одержим победу там, где в одиночку потерпели бы поражение!"
+ bellakar_story.0121.a: "Готовьте воинов!"
+
+ bellakar_story.0122.opening: "[revolutionary.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
+ bellakar_story.0122.desc: "Мне не нужна ни ваша помощь, ни ваши оковы. [GetTitleByKey('k_ray').GetNameNoTier] будет освобождена на моих условиях."
+ bellakar_story.0122.a: "Досадно."
+
+ bellakar_story.0123.opening: "[bellakar_emperor.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0123.desc: "Как вы и обещали, я ожидаю, что дань из #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Раи#!#!#! скоро начнёт поступать в мои владения."
+ bellakar_story.0123.a: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] сдержать свои обещания."
+
+ bellakar_story.0124.t: "Причитания купцов"
+ bellakar_story.0124.desc: "Хотя #L [GetCultureByKey('bozishnarud').GetCollectiveNoun|l]ие#! караваны, доходящие до самой столицы, — не такое уж редкое явление, я чувствую, что на этот раз всё по-другому. Эти «торговцы» привезли с собой семьи и слишком мало товаров, чтобы оправдать столь масштабную экспедицию. Эти люди — беженцы, это ясно как день, и от них начали распространяться слухи о том, что в [Concept('ray', 'Рае')|E] нарастает ужас.\n\nДеревни и города горят, разрушенные во имя священной ярости тёмного бога Кхаз-грамаза. На востоке появилась новая сила, которая, несомненно, стремится низвергнуть [Concept('bellakar', 'Беллакар')|E]. Если мы не предпримем никаких действий, и без того тяжёлая ситуация может выйти из-под контроля..."
+ bellakar_story.0124.a: "Тем не менее мне нужно позаботиться о своих границах..."
+ bellakar_story.0124.a.effects: "Вы получили доступ к решению о вмешательстве против #ONCLICK:FAITH,faith_haruze #TOOLTIP:FAITH,faith_haruze культа Кхаз-грамаза#!#! в #ONCLICK:TITLE,k_ray #TOOLTIP:LANDED_TITLE,k_ray #L Рае#!#!#! и освобождении земель от тёмной тирании."
+
+ ### Northwards ###
+
+ bellakar_story.0201.t: "Северный поход"
+ bellakar_story.0201.desc: "Если я всерьёз собираюсь начать подготовку к великой кампании по достижению земель далёкого [Concept('gondor', 'Гондора')|E], у меня не будет другого выбора, кроме как сначала обезопасить #ONCLICK:TITLE,k_felaya #TOOLTIP:LANDED_TITLE,k_felaya #L Фелайю#!#!#!, через которую проходит единственный сухопутный путь на север от [Concept('bellakar', 'Беллакара')|E]. На протяжении многих лет я и [felaya_king.GetTitledFirstName] из #ONCLICK:TITLE,k_felaya #TOOLTIP:LANDED_TITLE,k_felaya #L Фелайи#!#!#! вели переговоры о постепенной реинтеграции [Select_CString(felaya_king.IsFemale, 'её', 'его' )] державы в состав #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, провинцией которого она когда-то была.\n\nУчитывая крепкие узы, которые нас уже связывают, достаточно будет хорошо сформулированного ультиматума и нескольких выгодных условий, чтобы [felaya_king.GetTitledFirstName] [Select_CString(felaya_king.IsFemale, 'стала моей союзницей', 'стал моим союзником' )] в реализации моих планов на севере."
+ bellakar_story.0201.a: "Отправить мои требования!"
+ bellakar_story.0201.b: "Возможно, разумнее будет сосредоточиться на юге..."
+ bellakar_switch_to_south_focus: "Вы отказываетесь от стремления достичь Гондора и вместо этого решаете сосредоточиться на насущных проблемах своей державы. #N От этого выбора нельзя отказаться.#!"
+ bellakar_story.0201.a.success: "#P [felaya_king.GetTitledFirstName] принимает ваши требования#!"
+ bellakar_story.0201.a.failure: "#N [felaya_king.GetTitledFirstName] отвергает ваши требования#!"
+
+ bellakar_story.0202.opening: "[felaya_king.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0202.desc: "Ваши щедрые условия вассалитета — лучшее, на что я [Select_CString(felaya_king.IsFemale, 'могла', 'мог' )] рассчитывать. Я [Select_CString(felaya_king.IsFemale, 'был бы рада', 'был бы рад' )] называть вас своим сюзереном."
+ bellakar_story.0202.a: "Вперёд! К #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруаку#!#!#!!"
+ bellakar_story.0202.a.effects: "#P Вы получите доступ к решениям, которые позволят вам продолжить кампанию дальше на севере.#!"
+
+ bellakar_story.0203.opening: "[felaya_king.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
+ bellakar_story.0203.desc: "Ваши требования о присоединении #ONCLICK:TITLE,k_felaya #TOOLTIP:LANDED_TITLE,k_felaya #L Фелайи#!#!#! к вашей державе вызывают глубокую обеспокоенность. Времена, когда [GetTitleByKey('e_bellakar').GetNameNoTier] правил моим народом, давно прошли. Если потребуется, мы будем бороться за свою свободу."
+ bellakar_story.0203.a: "У меня нет другого выбора, кроме как объявить войну..."
+ bellakar_story.0203.b: "Эта затея с самого начала была безумной..."
+
+ bellakar_story.0204.opening: "[bellakar_emperor.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0204.desc: "Время долгих дискуссий о присоединении #ONCLICK:TITLE,k_felaya #TOOLTIP:LANDED_TITLE,k_felaya #L Фелайи#!#!#! к #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакару#!#!#! прошло. Я [Select_CString(bellakar_emperor.IsFemale, 'намерена', 'намерен' )] начать великий поход на север, чтобы добраться до далёких земель Гондора. Присоединяйтесь к моим войскам как [Select_CString(ROOT.Char.IsFemale, 'полноправная подданная', 'полноправный подданный' )] #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, иначе вам придётся сразиться с моими войсками в открытом бою."
+ bellakar_story.0204.a: "Если условия достаточно хороши..."
+ bellakar_story.0204.b: "Неприемлимо!"
+ bellakar_story.0204.b.effects: "#N Этот выбор почти наверняка приведёт к войне с персонажем [bellakar_emperor.GetTitledFirstName]!#!"
+ felaya_vassal_terms: "Став вассалом персонажа [bellakar_emperor.GetTitledFirstName], вы обговорите следующие условия вассального договора: #V защита от отзыва титула, гарантированное место в совете, религиозные права, сниженные вассальные налоги и ополчение.#!"
+
+ bellakar_story.0205.t: "Соглашение мудрости"
+ bellakar_story.0205.desc: "На мой взгляд, я и [tedjin_king.GetTitledFirstName], [Select_CString(tedjin_king.IsFemale, 'предводительница', 'предводитель' )] #L [GetFaithByKey('faith_path_of_wisdom').GetName|l]их#! реформаторов #ONCLICK:TITLE,k_tedjin #TOOLTIP:LANDED_TITLE,k_tedjin #L Конфедерации теджин#!#!#!, имеем общую цель: победу сил света над тьмой. Хотя в обычных обстоятельствах конфедерация под #L [GetFaithByKey('faith_path_of_wisdom').GetName|l]ой#! властью наверняка отказалась бы поддержать мои планы по использованию [GetCultureByKey('tedjin').GetName|l] в качестве пути для вторжения сначала в [GetTitleByKey('k_umbar').GetName], а затем в [Concept('gondor', 'Гондор')|E].\n\nНо сейчас не обычные времена. [GetTitleByKey('k_tedjin').GetNameNoTier] стоит на пороге гражданской войны и ближе к распаду, чем когда-либо с момента своего основания. Заручившись моей жизненно важной помощью, [tedjin_king.GetTitledFirstName] сумеет сохранить власть, чего бы это ни стоило его независимости."
+ bellakar_story.0205.a: "Возможно, мне больше никогда не представится такая возможность..."
+ bellakar_story.0205.a.success: "#P [tedjin_king.GetTitledFirstName] становится [Select_CString(tedjin_king.IsFemale, 'вашей', 'вашим' )] [Concept('tributary', Select_CString(tedjin_king.IsFemale, 'данницей', 'данником' ))|E], заручившись вашей поддержкой в грядущей гражданской войне теджин#!"
+ bellakar_story.0205.a.failure: "#N [tedjin_king.GetTitledFirstName] отвергает ваше предложение, и вы вступаете на путь войны с #ONCLICK:TITLE,k_tedjin #TOOLTIP:LANDED_TITLE,k_tedjin #L Конфедерацией теджин#!#!#!#!"
+
+ bellakar_story.0206.opening: "[tedjin_king.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0206.desc: "Мы высоко ценим ваше предложение о помощи в борьбе с реакционными силами! Я [Select_CString(tedjin_king.IsFemale, 'была бы рада', 'был бы рад' )] объединить наши державы в единую силу, готовую бросить вызов тьме, где бы она ни появилась."
+ bellakar_story.0206.a: "Отличные новости!"
+
+ bellakar_story.0207.opening: "[tedjin_king.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
+ bellakar_story.0207.desc: "Я не настолько [Select_CString(tedjin_king.IsFemale, 'слаба', 'слаб' )], чтобы позволить #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакару#!#!#! превратить меня в марионетку. Если вы хотите покорить мой народ, то вам придётся добиться этого силой оружия, а не каким-то договором!"
+ bellakar_story.0207.a: "И силой своей руки я завоюю победу..."
+ bellakar_story.0207.b: "Сейчас не время для удара..."
+
+ bellakar_story.0208.t: "Цена победы"
+ bellakar_story.0208.desc: "По мере нарастания напряжённости в отношениях с реакционерами список держав, готовых сделать то или иное предложение, чтобы обеспечить победу своей стороны в грядущих войнах, становится всё длиннее. Поэтому я ничуть не [Select_CString(ROOT.Char.IsFemale, 'удивлена', 'удивлён' )], когда [bellakar_emperor.GetTitledFirstName] из #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#! предлагает условия союза между нашими державами.\n\nОднако, когда я читаю выдвинутые требования, я задаюсь вопросом, стоит ли гарантированная победа, которую мне обеспечит поддержка #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, таких тяжёлых уступок. [bellakar_emperor.GetTitledFirstName] выдвигает несколько пугающих требований, которые поставят под угрозу как суверенитет моего народа, так и мой собственный престиж, — и всё это ради какой-то грандиозной кампании против растущей мощи тьмы на севере. Мне ясно одно: я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] подчиниться, иначе навлеку на себя гнев [Concept('bellakar', 'Беллакара')|E] в эти и без того непростые времена..."
+ bellakar_story.0208.a: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] отказаться от своих амбиций ради всеобщего блага..."
+ bellakar_story.0208.b: "Если я и преклоню колени, то только как [Select_CString(ROOT.Char.IsFemale, 'поверженная королева', 'поверженный король' )]!"
+ bellakar_story.0208.b.effects: "#N Это решение наверняка приведёт к войне с персонажем [bellakar_emperor.GetTitledFirstName].#!"
+
+ bellakar_story.0209.t: "Армада правосудия"
+ bellakar_story.0209.desc: "Наконец-то настал день, когда [Concept('bellakar', 'Беллакар')|E] избавится от вечной угрозы со стороны пиратов #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруака#!#!#!! Наши люди больше не будут впадать в отчаяние при их виде, а наши корабли не будут уничтожены их жадными руками! Мои люди готовы, и настало время войны.\n\nСкоро пиратские властители падут, и дорога для продолжения моего похода на север будет открыта. С их уходом [GetTitleByKey('k_umbar').GetNameNoTier] останется единственной морской державой между мной и [Concept('gondor', 'Гондором')|E], пока он тоже не падёт под натиском моих войск и не предстанет перед правосудием, которое воздаст ему по заслугам."
+ bellakar_story.0209.a: "Однако до того, как этот день настанет, ещё предстоит развязать войну..."
+ bellakar_story.0209.a.effects: "Вы объявите #V войну#! всем независимым правителям в #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруаке#!#!#!, исповедующим #V [GetFaithByKey('faith_corsair').GetAdjective|l].#!"
+
+ bellakar_story.2111.opening: "[bellakar_emperor.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.2111.desc: "Несмотря на то, что вы, возможно, связаны с пиратами, которые долгое время наводили ужас на берега #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, союз между нашими державами по-прежнему прочен. Преклоните передо мной колени, и вы будете избавлены от моей кары. Воспротивьтесь - и познаете мой гнев."
+ bellakar_story.2111.a: "Разумеется, мой сюзерен..."
+ bellakar_story.2111.b: "[Select_CString(bellakar_emperor.IsFemale, 'Предательница', 'Предатель' )]! Я не преклоняюсь ни перед [Select_CString(bellakar_emperor.IsFemale, 'какой королевой', 'каким королём' )]!"
+
+ bellakar_story.0211.t: "Участь пиратов"
+ bellakar_story.0211.desc: "Наконец-то пришло время уничтожить вероломную гавань #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#!. Их пираты, которые долгое время наводили ужас на моря, скоро понесут кару за свои бесчисленные преступления. Впервые в истории [Concept('bellakar', 'Беллакар')|E] выступил в поход на север, готовый сокрушить своих врагов.\n\nПоскольку сухопутный путь из #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруака#!#!#! перекрыт, морская мощь #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#! будет бесполезна: их флот не сможет нанести удар по моим силам вдали от берегов. Какие надежды на победу в сухопутной войне есть у морских владык гавани?"
+ bellakar_story.0211.a: "Вперёд! К победе!"
+
+ bellakar_story.0212.t: "Гнев [Select_CString(bellakar_emperor.IsFemale, 'южной королевы', 'южного короля' )]"
+ bellakar_story.0212.desc: "Как многие и опасались, недавние экспансионистские походы, что [Select_CString(bellakar_emperor.IsFemale, 'возглавила завоевательница', 'возглавил завоеватель' )] [bellakar_emperor.GetTitledFirstName] из #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, достигли границ #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#!. Началось крупное вторжение с юга, из новых владений [Concept('bellakar', 'Беллакара')|E] в #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбаре#!#!#!.\n\nБольшинству кажется очевидным, что эта война носит экзистенциальный характер: [bellakar_emperor.GetTitledFirstName] открыто [Select_CString(bellakar_emperor.IsFemale, 'заявила', 'заявил' )] о своих амбициях сравнять нашу любимую гавань с землёй в своём безумном походе за завоеваниями. Хотя мы будем сражаться до победного конца за нашу свободу, грядущая война, несомненно, принесёт нашим землям большие разрушения."
+ bellakar_story.0212.a: "Мы не склонимся перед этим тираном!"
+
+ bellakar_story.0213.t: "Судьба севера"
+ bellakar_story.0213.desc: "Наконец-то тёмная гавань #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#! пала под натиском праведных сил [Concept('bellakar', 'Беллакара')|E]. Впервые за многие поколения [Concept('belegaer_sea', 'Белегаэр')|E] избавлен от угрозы пиратов: моря теперь полностью находятся под контролем сил света.\n\n[gondor_ruler.GetTitledFirstName] из [Concept('gondor', 'Гондора')|E] и я уже обменялись письмами, и выяснилось, что [Select_CString(gondor_ruler.IsFemale, 'её', 'его' )] положение было намного хуже, чем я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] себе представить. [sauron.GetTitledFirstName] [Select_CString(sauron.IsFemale, 'вернулась: её', 'вернулся: его' )] владычество стало ещё более могущественным и ужасным, чем когда-либо. В одиночку Гондор падёт, это несомненно. И всё же, с моей помощью, возможно, гибель запада ещё удастся предотвратить...\n\n"
+ bellakar_story.0213.desc.steward: "Но даже сейчас нет никаких знаков возвращения короля, которого я [Select_CString(ROOT.Char.IsFemale, 'видела', 'видел' )] в своих снах. Возможно, он пребывает ещё дальше на севере... Тем не менее, я не могу отправиться на его поиски в каком-то безумном устремлении. Если [Concept('gondor', 'Гондор')|E] хочет пережить эти мрачные времена, ему понадобится моя всесторонняя поддержка."
+ bellakar_story.0213.desc.king: "Я уже [Select_CString(ROOT.Char.IsFemale, 'слышала', 'слышал' )] о том, что в земли [Concept('gondor', 'Гондора')|E] вернулся король, о котором, несомненно, говорилось в моём сне. Сейчас, как никогда ранее, моё внимание должно быть полностью приковано к северу: прежде чем больше людей поддадутся влиянию тьмы."
+ bellakar_story.0213.a: "Отныне я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] восстановить наши старые узы."
+ bellakar_story.0213.a.effects: "#P Вы получили доступ к нескольким решениям, позволяющим возобновить древние связи [Concept('bellakar', 'Беллакара')|E] с [Concept('gondor', 'Гондором')|E].#!"
+
+ bellakar_story.0214.t: "Возвращение Верных юга"
+ bellakar_story.0214.desc: "[Select_CString(bellakar_emperor.IsFemale, 'Восставшая', 'Восставший' )] из древней легенды [bellakar_emperor.GetTitledFirstName] #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакар#!#!#!, [Select_CString(bellakar_emperor.IsFemale, 'новоиспечённая повелительница', 'новоиспечённый повелитель' )] [Concept('umbar', 'Умбара')|E], [Select_CString(bellakar_emperor.IsFemale, 'сделала', 'сделал' )] шаг навстречу [Concept('gondor', 'Гондору')|E]. Будучи [Select_CString(bellakar_emperor.IsFemale, 'непримиримой противницей', 'непримиримым врагом' )] всего, что воплощает [sauron.GetTitledFirstName], [bellakar_emperor.GetTitledFirstName] призывает нас присоединиться к великому альянсу между нашими королевствами, как во времена [Concept('warlastalliance', 'Войны Последнего союза')|E].\n\nВ эти мрачные времена, когда мощь #ONCLICK:TITLE,e_mordor #TOOLTIP:LANDED_TITLE,e_mordor #L Мордора#!#!#! всё больше нависает над Гондором, мы не можем позволить себе оттолкнуть [Select_CString(bellakar_emperor.IsFemale, 'такую могущественную союзницу', 'такого могущественного союзника' )]. С [Concept('bellakar', 'Беллакаром')|E] на стороне Гондора мы, возможно, действительно сможем повернуть ход событий против тьмы или, по крайней мере, замедлить её наступление.\n\nТем не менее, есть некоторые, кто сомневается, не является ли это чудо какими-то происками, что [Select_CString(sauron.IsFemale, 'сплела', 'сплёл' )] [sauron.GetTitledFirstName], направленными на то, чтобы заставить нас ослабить бдительность и уничтожить нас..."
+ bellakar_story.0214.a: "С юга вернулась надежда!"
+ bellakar_story.0214.b: "Тёмному властелину не удастся так легко одурачить меня!"
+
+ bellakar_story.0215.t: "Лига Верных"
+ bellakar_story.0215.desc: "Получив моё предложение, [gondor_ruler.GetTitledFirstName] мудро и с энтузиазмом [Select_CString(gondor_ruler.IsFemale, 'приняла', 'принял' )] его, чтобы воссоздать древний союз, который объединял наши королевства. [Concept('gondor', 'Гондор')|E] и [Concept('bellakar', 'Беллакар')|E] теперь стоят как одно целое: объединенные под началом недавно основанной Лигой [Concept('faithful', 'Верных')|E].\n\nКогда [sauron.GetTitledFirstName] начнёт своё грандиозное вторжение на запад, Гондор не останется в одиночестве! И всё же я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] быть [Select_CString(ROOT.Char.IsFemale, 'осторожна', 'осторожен' )]: из-за того, что я [Select_CString(ROOT.Char.IsFemale, 'сосредоточилась', 'сосредоточился' )] на севере, дела по ту сторону [Concept('bayoftulwang', 'залива Тулванг')|E] находятся в опасном состоянии. Хотя наша лига, возможно, и сильна, она всё ещё сталкивается с угрозой окружения тёмными силами, которые возвысились в [Concept('middleearth', 'Средиземье')|E]."
+ bellakar_story.0215.a: "С этого начнётся настоящая борьба..."
+
+ bellakar_story.0216.opening: "[gondor_ruler.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
+ bellakar_story.0216.desc: "Я знаю, в какие игры вы играете и что вас направляет [sauron.GetTitledFirstName]! Я не открою врата моих владений и моих городов перед какими-то харадримскими захватчиками!"
+ bellakar_story.0216.a: "#italic Что...?#!"
+
+ bellakar_story.0217.t: "Последняя надежда"
+ bellakar_story.0217.desc: "[Concept('gondor', 'Гондор')|E] пал. И всё же, несмотря на это, у Свободных народов остаётся слабая надежда на победу. Даже сейчас, если бы мы объединились в единый фронт, мы могли бы, по крайней мере, сдержать силы, которые насылает [sauron.GetTitledFirstName] и освободить хотя бы #italic часть#! запада от [Select_CString(sauron.IsFemale, 'её', 'его' )] тирании.\n\nВеличайшей слабостью властителей Гондора является их разобщённость: естественное следствие полного краха централизованного управления королевством после падения его столицы. Однако, с моей точки зрения, возможно, удастся ещё раз объединить людей Гондора..."
+ bellakar_story.0217.a: "Тьма больше не расползётся!"
+ bellakar_story.0217.a.effects: "Вы отправите послания последним властителям Гондора, заключив с ними оборонительный пакт."
+
+ bellakar_story.0218.opening: "[bellakar_emperor.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0218.desc: "Если мы хотим, чтобы у нас была хоть какая-то надежда добиться того, чтобы [sauron.GetTitledFirstName] [Select_CString(sauron.IsFemale, 'была побеждена', 'был побеждён' )], все Верные должны объединиться против [Select_CString(sauron.IsFemale, 'её', 'его' )] тирании. Присоединяйтесь ко мне в качестве [Select_CString(ROOT.Char.IsFemale, 'союзницы', 'союзника' )], пока ваша держава тоже не погрузилась во тьму!"
+ bellakar_story.0218.a: "Тьму ещё можно уничтожить..."
+ bellakar_story.0218.a.effects: "Вы присоединитесь к оборонительному союзу персонажа [bellakar_emperor.GetTitledFirstName] после его основания."
+ bellakar_story.0218.b: "Я не стану кланяться каким-то харадрим!"
+
+ bellakar_story.0219.opening: "[gondor_leader.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ bellakar_story.0219.desc: "Властители Гондора собрались! Пришло время нам официально объявить о нашем союзе против тьмы."
+ bellakar_story.0219.a: "Запад всё ещё держится!"
+
+ bellakar_story.0220.t: "Непокорные пираты"
+ bellakar_story.0220.desc: "В ходе войны против [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] похоже, что пиратские властители, которых я [Select_CString(ROOT.Char.IsFemale, 'победила', 'победил' )], начали накладывать свой отпечаток на державу, объединившись для открытого восстания, заявив, что [storm_marshal.GetTitledFirstName], [Select_CString(storm_marshal.IsFemale, 'намеревающаяся', 'намеревающийся' )] уничтожить [Concept('bellakar', 'Беллакар')|E], заслуживает их поддержки.\n\nЧёрные флоты пиратов теперь собираются, нападая на те форты и крепости, которые остались верны мне на севере. Это тревожное развитие событий оставляет меня в окружении и полностью отдаёт моря под контроль моих врагов. Я боюсь, что, возможно, я [Select_CString(ROOT.Char.IsFemale, 'навлекла', 'навлёк' )] гибель на своё королевство, но мы должны продолжать сражаться, потому что у беллаказов не будет будущего, если мы проиграем эту войну."
+ bellakar_story.0220.a: "Я вновь сокрушу их!"
+ bellakar_story.0220.a.effects: "#N Любой пиратский властитель, имеющий о вас негативное мнение, вступит в войну за уничтожение #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!!#!"
+
+ bellakar_story.0221.t: "Чёрная армада"
+ bellakar_story.0221.desc: "Хотя [Select_CString(bellakar_emperor.IsFemale, 'тираническая', 'тиранический' )] [bellakar_emperor.GetTitledFirstName] [Select_CString(bellakar_emperor.IsFemale, 'разгромила', 'разгромил' )] наши гордые флоты, у нас появился шанс восстать. [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] наконец-то начал своё грандиозное вторжение в [Concept('bellakar', 'Беллакар')|E]. Теперь, когда [Select_CString(bellakar_emperor.IsFemale, 'тиранша захватила', 'тиран захватил' )] юг, для нас открыт путь к восстанию и возвращению наших утраченных свобод.\n\nМногие уже заявили о том, что [storm_marshal.GetTitledFirstName] получит их поддержку, пообещав присоединиться к уничтожению #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!, чтобы они снова могли править [Concept('belegaer_sea', 'морем Белегаэр')|E] как короли. Возможно, было бы разумно присоединиться к ним, чтобы я [Select_CString(ROOT.Char.IsFemale, 'заняла', 'занял' )] своё место за столом победителей, когда придёт время..."
+ bellakar_story.0221.a: "Более над нами не [Select_CString(bellakar_emperor.IsFemale, 'властна ни одна королева', 'властен ни один король' )]!"
+ bellakar_story.0221.a.effects: "Вы присоединитесь к вторжению [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] в [GetTitleByKey('e_bellakar').GetNameNoTier]."
+ bellakar_story.0221.b: "Я буду ждать и наблюдать..."
+
+ bellakar_story.0222.t: "Предатели из гаваней"
+ bellakar_story.0222.desc: "Безрассудные походы на север, что [Select_CString(bellakar_emperor.IsFemale, 'предприняла', 'предпринял' )] [bellakar_emperor.GetTitledFirstName] похоже, наконец-то встретили достойный отпор. В то время, как мои великие воины начинают вторжение в [Concept('bellakar', 'Беллакар')|E], покорённые и усмирённые пираты #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#! объявили открытое восстание против своих беллаказских владык.\n\nС их помощью мои флоты, несомненно, добьются абсолютного господства на морях: наши армады сокрушат #L [GetTitleByKey('e_bellakar').GetAdjective|l]их#! глупцов, которые нажили себе слишком много врагов."
+ bellakar_story.0222.a: "Моя победа уже близка!"
+ bellakar_story.0222.a.effects: "Любой пиратский властитель с негативным мнение о персонаже [bellakar_emperor.GetTitledFirstName] присоединится к войне за уничтожение #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#! на вашей стороне."
+
+ bellakar_story.0223.t: "Братство Верных"
+ bellakar_story.0223.desc: "Лига Верных, которую создали [gondor_ruler.GetTitledFirstName] и [bellakar_emperor.GetTitledFirstName], является досадным препятствием на моём пути к завоеванию Запада, но, похоже, появилась прекрасная возможность уничтожить её. Безрассудный [bellakar_emperor.GetTitledFirstName] [Select_CString(bellakar_emperor.IsFemale, 'сумела', 'сумел' )] достичь [Concept('gondor', 'Гондора')|E] лишь путём сверхрасширения своих владений, что привело к ослаблению защиты Юга и открытому восстанию многих неуправляемых пиратских властителей.\n\nМои марионетки из [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] начали вторжение в [Concept('bellakar', 'Беллакар')|E]. Если он будет захвачен, то не сможет защитить Гондор от моих войск. Разве может быть лучшее время для того, чтобы нанести свой собственный удар?"
+ bellakar_story.0223.a: "Грядёт гибель Запада!"
+ bellakar_story.0223.b: "Мои планы остаются неизменными."
+
+ bellakar_story.0224.t: "Пустынная гордость"
+ bellakar_story.0224.desc: "Теджин познали слишком много унижений, когда их [Select_CString(bellakar_emperor.IsFemale, 'завоевала', 'завоевал' )] [bellakar_emperor.GetTitledFirstName]. Вынуждены платить дань, позволять войскам проходить и топтать наши земли и преклонять колени перед военачальниками [Concept('bellakar', 'Беллакара')|E]. Тем не менее, на юге разразился хаос. [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] предпринял масштабное вторжение в Беллакар, а вместе с ними и пиратские властители #ONCLICK:TITLE,k_umbar #TOOLTIP:LANDED_TITLE,k_umbar #L Умбара#!#!#! подняли открытое восстание.\n\nДля теджин открыт путь к освобождению от угнетения, но какой ценой? [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier], несомненно, будет представлять угрозу в будущем, если позволить им процветать, однако присоединение к их делу сейчас может обеспечить положение нашего народа на многие поколения. На меня, как на [Select_CString(ROOT.Char.IsFemale, 'предводительницу', 'вождя' )] теджин, возлагается обязанность выбрать путь нашего народа, но это трудный выбор..."
+ bellakar_story.0224.a: "Я больше не преклоню колен!"
+ bellakar_story.0224.b: "Я не буду сражаться за большее зло!"
+
+ bellakar_story.0225.t: "Теджинские изменники"
+ bellakar_story.0225.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] тревожные вести из #ONCLICK:TITLE,k_tedjin #TOOLTIP:LANDED_TITLE,k_tedjin #L Конфедерации теджин#!#!#!: [tedjin_leader.GetTitledFirstName] [Select_CString(tedjin_leader.IsFemale, 'присоединилась', 'присоединился' )] к постоянно растущему списку тех, кто стремится уничтожить [Concept('bellakar', 'Беллакар')|E]. Хотя я [Select_CString(ROOT.Char.IsFemale, 'сожалела', 'сожалел' )] о том, что мне пришлось прибегнуть к силе, чтобы сохранить лояльность теджинских племён, я не [Select_CString(ROOT.Char.IsFemale, 'думала', 'думал' )], что они тоже присоединятся к восстанию пиратов. Излишне говорить, что такое развитие событий делает и без того тревожную войну ещё более неопределённой."
+ bellakar_story.0225.a: "Возможно, я [Select_CString(ROOT.Char.IsFemale, 'нажила', 'нажил' )] себе слишком много врагов..."
+ bellakar_story.0225.a.effects: "#N [tedjin_leader.GetTitledFirstName] присоединится к войне за уничтожение #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!#!!#!"
