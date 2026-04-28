@@ -1328,7 +1328,7 @@
  reunite_the_eotheod_eotheod_heritage_counties_outside_realm: "Общее количество [Concept('counties', 'графств')|E], [culture|El] которых имеет [culture_pillar|El] эотеод за пределами вашей [Concept('realm', 'державы')|E] = 0"
  embrace_eotheod_culture_vassals_custom: "Каждый $rohirrim_collective_noun$ий, $leofring_collective_noun$ий или $framling_collective_noun$ий [vassal|El]"
  embrace_eotheod_culture_counties_custom: "Каждое $rohirrim_collective_noun$ое, $leofring_collective_noun$ое или $framling_collective_noun$ое [county|El] в пределах вашей [Concept('realm', 'державы')|E]"
- decision_embrace_eotheod_culture_get_innovations: "[culture|E] эотеод получит все рохирримские, леофрингские и фрамлингские [innovations|El]"
+ decision_embrace_eotheod_culture_get_innovations: "[culture|E] эотеод получит все [innovations|El] культур с эотеодским [Concept('heritage', 'наследием')|E]"
  decision_eotheod_new_tradition: "Получит [Concept('tradition', 'традицию')|E] «[GetCultureTradition('tradition_a_people_reunited').GetName]»"
  decision_eotheod_new_maa: "Доступны [men_at_arms|El] - [GetMaA('eotheod_vanguard').GetName]"
 
@@ -3313,7 +3313,7 @@
  #########################
 
  donan_military: "Возвышение донан"
- donan_military_desc: "Донан наконец-то возвысились, и [ROOT.Char.GetNameNoTierNoTooltip] возглавляет их."
+ donan_military_desc: "Донан наконец-то возвысились, и этот персонаж возглавляет их."
 
 
  #Donan Eastern Kingdom
@@ -4651,6 +4651,7 @@
  decision_establish_lyneria_sea_trade_tooltip: "Начать торговать с Линерией по морю"
  decision_establish_lyneria_sea_trade_tt: "Морская торговля налажена"
  decision_establish_lyneria_sea_trade_confed: "Вы заключили союз с членом конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]»"
+ decision_establish_lyneria_sea_trade_ruler: "Вы заключили союз с #L [GetCultureByKey('lynerian').GetCollectiveNoun|l]им#! [Concept('ruler', 'правителем')|E] в регионе [GetGeographicalRegion('middleearth_uttersouth_shayn_lyneria').GetName]"
  capital_county_is_coastal: "Ваша [Concept('capital', 'столица')|E] находится в прибрежном [Concept('county', 'графстве')|E]"
 
  decision_establish_lyneria_coastal_trade: "Наладить сухопутную торговлю с Линерией"
