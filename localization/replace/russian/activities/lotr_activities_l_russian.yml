@@ -301,6 +301,13 @@
  chose_book1_log: "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] оставить [book_1.GetName]"
  chose_book2_log: "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'решили', Select_CString(CHARACTER.IsFemale, 'решила', 'решил' ))] оставить [book_2.GetName]"
 
+ explore_history_study_hard_intent_header: "Прилежная учёба:"
+ explore_history_study_hard_intent: "Прилежно учиться"
+ explore_history_study_hard_intent_desc: "Вы потратили много ресурсов на подготовку и планируете выложиться по максимуму."
+ explore_history_lost_stress_log_title: "Снижение стресса"
+ explore_history_increased_legitimacy_log_title: "Повышение легитимности"
+ explore_history_studied_hard_log_title: "Прилежная учёба"
+
  #Guest Rules 
  #activity_invite_other_elven_rulers: "Elven Rulers"
 
@@ -357,21 +364,29 @@
  ancestor_veneration_extra_funding: "Дополнительное финансирование"
  ancestor_veneration_extra_funding_desc: "$EFFECT_LIST_BULLET$ Можно выбрать вторую область внимания\n\n#weak Достаточные средства для почитания, достойного памяти и уважения.#!"
 
+ ancestor_veneration_study_hard_intent_header: "Прилежная учёба:"
+ ancestor_veneration_study_hard_intent: "Прилежно учиться"
+ ancestor_veneration_study_hard_intent_desc: "Вы потратили много ресурсов на подготовку и планируете выложиться по максимуму."
+ ancestor_veneration_lost_stress_log_title: "Снижение стресса"
+ ancestor_veneration_increased_legitimacy_log_title: "Повышение легитимности"
+ ancestor_veneration_studied_hard_log_title: "Прилежная учёба"
+
  # Provinces
  activity_ancestor_veneration_destination_selection: "Посещение локации, в которой находится большая библиотека, предоставит больше возможностей для изучения."
- activity_ancestor_veneration_province_desc: "Вы проводите почтение предков во владении [ROOT.Province.GetName]\n[ROOT.Province.GetName] - подземное [Concept('holding', 'владение')|E]\n"
+ activity_ancestor_veneration_province_desc: "Вы проводите почтение предков во владении [ROOT.Province.GetName]"
  activity_ancestor_veneration.is_location_valid.wrong_holder_faith: "#N Вы не можете обращаться к архивам правителя, мировоззрение которого противоположно вашему."
  activity_ancestor_veneration.is_location_valid.not_in_list: "#N Эта провинция находится за пределами [Concept('realm', 'державы')|E] вашего [Concept('top_liege_possessive', 'верховного сюзерена')|E], не принадлежит ни одному из ваших грамотных [Concept('contact_list_contacts', 'покровителей')|E] и не содержит значительных записей."
  TRAVEL_NAME_FOR_activity_ancestor_veneration: "Путешествие [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] на $activity_ancestor_veneration$"
 
- activity_ancestor_veneration_province_desc_wonder_mazalabkan: "#P +++ $building_wonder_mazalabkan$#!\n"
- activity_ancestor_veneration_province_desc_wonder_gundabad_02: "#P +++ $building_wonder_gundabad_02$#!\n"
- activity_ancestor_veneration_province_desc_wonder_mirrormere: "#P +++ $building_wonder_mirrormere$#!\n"
+ activity_ancestor_veneration_province_desc_wonder_isengard: "#P +++ $building_wonder_isengard_01$#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_01: "#P +++ [GetBuilding('dwarven_hoard_01').GetName]#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_02: "#P +++ [GetBuilding('dwarven_hoard_02').GetName]#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_03: "#P +++ [GetBuilding('dwarven_hoard_03').GetName]#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_04: "#P +++ [GetBuilding('dwarven_hoard_04').GetName]#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_05: "#P +++ [GetBuilding('dwarven_hoard_05').GetName]#!\n"
+ activity_ancestor_veneration_province_desc_wonder_mazalabkan: "#P +++ $building_wonder_mazalabkan$#!\n"
+ activity_ancestor_veneration_province_desc_wonder_gundabad_02: "#P +++ $building_wonder_gundabad_02$#!\n"
+ activity_ancestor_veneration_province_desc_wonder_mirrormere: "#P +++ $building_wonder_mirrormere$#!\n"
  activity_ancestor_veneration_province_desc_wonder_durin_throne_t5: "#P +++ $building_wonder_durin_throne_t5$#!\n"
  activity_ancestor_veneration_province_desc_wonder_nogrod_reborn: "#P +++ $building_wonder_nogrod_reborn$#!\n"
  activity_ancestor_veneration_province_desc_wonder_belegost_reborn: "#P +++ $building_wonder_belegost_reborn$#!\n"
@@ -406,6 +421,7 @@
  activity_ancestor_veneration_province_desc_wonder_nar_agathol: "#P + $building_wonder_nar_agathol$#!\n"
 
  ancestor_veneration_base_cost: "Базовая стоимость"
+ ancestor_veneration_cost_discount_wonder_isengard: "В этом месте есть $building_wonder_isengard_01$#!"
  ancestor_veneration_cost_discount_dwarven_hoard_01: "В этом месте есть [GetBuilding('dwarven_hoard_01').GetName]#!"
  ancestor_veneration_cost_discount_dwarven_hoard_02: "В этом месте есть [GetBuilding('dwarven_hoard_02').GetName]#!"
  ancestor_veneration_cost_discount_dwarven_hoard_03: "В этом месте есть [GetBuilding('dwarven_hoard_03').GetName]#!"
