@@ -1,26 +1,26 @@
 ﻿l_russian: 
 
- lotr_laamp_0001_contract: "Spread the Light"
- lotr_laamp_0001_request: "This [task_contract|E] requires you to travel to a neighboring [ruler|E] of [TaskContract.GetEmployer.GetName]'s realm who follows a hostile or evil faith"
- lotr_laamp_0001_desc: "The [TaskContract.GetEmployer.GetTitleAsNameNoTooltip] of [TaskContract.GetEmployer.GetPrimaryTitle.GetNameNoTier] is deeply worried about hostile [men|E] dwelling nearby and is looking for someone willing to try and convince these hostile neighbors to stray from the evil path."
- lotr_laamp_0001_desc_title: "Skilled orators,"
- 
- lotr_laamp_contract_schemes.0001.t: "$lotr_laamp_0001_contract$"
- lotr_laamp_contract_schemes.0001.desc: "Arriving in [employer.GetCapitalLocation.GetName], we are swiftly received by [employer.GetTitledFirstName], whose face betrays [employer.GetHerHis] deep concern. "I am glad to see someone has answered my call," the [employer.GetTitleAsNameNoTooltip] says. "Outside of the [realm|E]'s borders in [conversion_target_county.GetNameNoTier] dwell [men|E] that would see us destroyed if their dark gods demanded it. Are you willing to go to them and attempt to convince them to leave the path of destruction for the good of both of our peoples?""
- lotr_laamp_contract_schemes.0001.a: "I shall not fail."
- lotr_laamp_contract_schemes.0001.a.tt: "You will travel to [conversion_target_county.GetNameNoTier]"
+ lotr_laamp_0001_contract: "Распространить свет"
+ lotr_laamp_0001_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы отправились к соседнему [Concept('ruler', 'правителю')|E], который исповедует конфессию, которая считается враждебной или воплощённым злом, с которым граничит [TaskContract.GetEmployer.GetName]."
+ lotr_laamp_0001_desc: "#L [TaskContract.GetEmployer.GetPrimaryTitle.GetAdjective][Select_CString(TaskContract.GetEmployer.IsFemale, 'ая', 'ий' )]#! [TaskContract.GetEmployer.GetTitleAsNameNoTooltip|l] глубоко [Select_CString(TaskContract.GetEmployer.IsFemale, 'обеспокоена', 'обеспокоен' )] тем, что поблизости обитают враждебные [Concept('men', 'люди')|E], и ищет кого-нибудь, кто мог бы попытаться убедить этих враждебных соседей сойти с пути зла."
+ lotr_laamp_0001_desc_title: "Умелым ораторам,"
 
- lotr_laamp_contract_schemes.0002.t: "$lotr_laamp_0001_contract$: Success!"
- lotr_laamp_contract_schemes.0002.desc: "With light on our faces, we return to the hall of [employer.GetName]. The [employer.GetTitleAsNameNoTooltip] awaits us in [employer.GetHerHis] eagerly, ushering us in. "I can see that you were successful, my friends," [employer.GetFirstName] states with a content look on [employer.GetHerHis] face..\n\n"Indeed," I reply. "The [men|E] that neighbour your realm shall not threaten you any longer." [employer.GetFirstName] thanks me, before collecting my pay from [employer.GetHerHis] steward, handing it to me."
+ lotr_laamp_contract_schemes.0001.t: "$lotr_laamp_0001_contract$"
+ lotr_laamp_contract_schemes.0001.desc: "После прибытия во владение [employer.GetCapitalLocation.GetName], нас довольно быстро принимает [employer.GetTitledFirstName], с глубокой озабоченностью на лице. «Я [Select_CString(employer.IsFemale, 'рада', 'рад' )] видеть, что кто-то откликнулся на мой зов», - говорит [employer.GetTitleAsNameNoTooltip|l]. «За пределами границ [Concept('realm', 'державы')|E] во владении [conversion_target_county.GetNameNoTier] обитают [Concept('men', 'люди')|E], которые уничтожат нас, если того потребуют их тёмные боги. Готовы ли вы отправиться к ним и попытаться убедить их оставить путь разрушения ради блага обоих наших народов?»"
+ lotr_laamp_contract_schemes.0001.a: "Я не подведу."
+ lotr_laamp_contract_schemes.0001.a.tt: "Вы отправитесь во владение [conversion_target_county.GetNameNoTier]"
+
+ lotr_laamp_contract_schemes.0002.t: "$lotr_laamp_0001_contract$: успех!"
+ lotr_laamp_contract_schemes.0002.desc: "С сияющими лицами мы возвращаемся в чертог, которым правит [employer.GetName]. [employer.GetTitleAsNameNoTooltip] с нетерпением ждёт нас, приглашая нас войти. «Я вижу, что вы добились успеха, друзья мои», - произносит [employer.GetFirstName] с довольным выражением на лице.\n\n«Действительно», - отвечаю я. «[Concept('men', 'Люди')|E], которые граничат с вашей державой, больше не будут угрожать вам». [employer.GetFirstName] благодарит меня, прежде чем забрать мою награду у своего управляющего и вручить её мне."
  lotr_laamp_contract_schemes.0002.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.neutral$"
 
- lotr_laamp_contract_schemes.0003.t: "$lotr_laamp_0001_contract$: Failure!"
- lotr_laamp_contract_schemes.0003.desc: "It is with a heavy heart that we return to [employer.GetName]'s hall. There are few words spoken between us, but [employer.GetTitledFirstName] thanks us nonetheless. "Not many have had the courage to at least try to use words before the weakness of [men|E] gives rise to renewed bloodletting. And yet, it seems that we must now let swords and bowstrings speak for us, should our neighbours seek to destroy us..."
+ lotr_laamp_contract_schemes.0003.t: "$lotr_laamp_0001_contract$: провал!"
+ lotr_laamp_contract_schemes.0003.desc: "С тяжёлым сердцем мы возвращаемся в чертог, которым правит [employer.GetName]. Мы обменялись несколькими словами, но [employer.GetTitledFirstName], тем не менее, благодарит нас. «Не многим хватило смелости хотя бы попытаться использовать слова, прежде чем [Concept('men', 'людская')|E] слабость привела к возобновлению кровопролития. И всё же, похоже, что теперь мы должны позволить мечам и тетивм говорить за нас, если наши соседи попытаются уничтожить нас...»"
  lotr_laamp_base_contract_schemes.0003.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.negative.light$"
- 
+
  lotr_laamp_0001_contract_scheme: "$lotr_laamp_0001_contract$"
- lotr_laamp_0001_contract_scheme_action: "Spread the Light"
- lotr_laamp_0001_contract_scheme_desc: "The [elves|E] are attempting to sway their neighbours from following dark ways.$laamp_contract_scheme_desc_general_boilerplate$"
+ lotr_laamp_0001_contract_scheme_action: "Распространить свет"
+ lotr_laamp_0001_contract_scheme_desc: "[Concept('elves', 'Эльфы')|E] пытаются склонить своих соседей к тому, чтобы они оставили свои тёмные пути.$laamp_contract_scheme_desc_general_boilerplate$"
  lotr_laamp_0001_contract_scheme_desc_general: "$lotr_laamp_0001_contract_scheme_desc$"
  lotr_laamp_0001_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
 

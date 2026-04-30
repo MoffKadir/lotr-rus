@@ -99,17 +99,17 @@
  elven_racial.0300.desc: "[target.GetName] отвергает меня."
  elven_racial.0300.a: "Эльфы предпочитают держаться своих..."
 
- elven_racial.0320.t: "Elven Guidance"
- elven_racial.0320.desc: "I stand before [conversion_target.GetName], who has begrudgingly allowed me to into [conversion_target.GetHerHis] hall. "Speak, Elf. Say whay you came here to say," [conversion_target.GetFirstName] demands.\n\nI must make sure to choose my words carefully. If I am to convice [conversion_target.GetTitledFirstName] to turn away from the darkness and step into the light to [convert|E] to a [alignment_good|E] [faith|E], my arguments must be as precise and clear as a new dawn over a grey plain."
- elven_racial.0320.a: "I'll appeal to [conversion_target.GetHerHis] sense of honour."
- elven_racial.0320.a.tt: "You rely on our [martial_i|E][martial|E] and [prowess_i|E][prowess|E] [skills|E].\nIf you #P succeed#!, [conversion_target.GetTitledFirstName] will [convert|E] to [new_faith.GetName]."
- elven_racial.0320.b: "My words shall inspire kindness and hope in [conversion_target.GetHerHim]."
- elven_racial.0320.b.tt: "You rely on our [intrigue_i|E][intrigue|E] and [diplomacy_i|E][diplomacy|E] [skills|E].\nIf you #P succeed#!, [conversion_target.GetTitledFirstName] will [convert|E] to [new_faith.GetName]."
- elven_racial.0320.c: "The splendor of my light shall convince [conversion_target.GetHerHim]."
- elven_racial.0320.c.tt: "You rely on our [stewardship_i|E][stewardship|E] and [learning_i|E][learning|E] [skills|E].\nIf you #P succeed#!, [conversion_target.GetTitledFirstName] will [convert|E] to [new_faith.GetName]."
- elven_racial.0320.a.success: "You convince [conversion_target.GetTitledFirstName] to [convert|E]"
- elven_racial.0320.a.failure: "[conversion_target.GetTitledFirstName] refuses to [convert|E]"
- elven_racial.0320.a.success.tt: "[conversion_target.GetTitledFirstName] [converted|E] to [new_faith.GetName]\n$EFFECT_LIST_BULLET$ The [faith|E] in [conversion_target.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier] changed to [new_faith.GetName]"
+ elven_racial.0320.t: "Эльфийское наставление"
+ elven_racial.0320.desc: "Передо мной [Select_CString(conversion_target.IsFemale, 'предстала', 'предстал' )] [conversion_target.GetName], неохотно впустив меня в свой чертог. «Говори, [Select_CString(ROOT.Char.IsFemale, 'эльфийка', 'эльф' )]. Скажи, зачем ты [Select_CString(ROOT.Char.IsFemale, 'пришла', 'пришёл' )] сюда», - требует [conversion_target.GetFirstName].\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] тщательно подбирать слова. Если я хочу убедить [conversion_target.GetHerHis] отвернуться от тьмы и выйти на свет, [Concept('convert', 'приняв')|E] [Concept('alignment_good', 'добрую')|E] [Concept('faith', 'конфессию')|E], мои аргументы должны быть точными и ясными, как новый рассвет над серой равниной."
+ elven_racial.0320.a: "Я обращусь к [conversion_target.GetHerHis] чувству чести."
+ elven_racial.0320.a.tt: "Вы положитесь на свои [Concept('skills', 'навыки')|E] [martial_i|E][Concept('martial', 'военного дела')|E] и [prowess_i|E][Concept('prowess', 'доблести')|E].\nЕсли вы #P добьётесь успеха#!, [conversion_target.GetTitledFirstName] [Concept('convert', 'примет')|E] [new_faith.GetAdjective|l]."
+ elven_racial.0320.b: "Мои слова вселят в н[conversion_target.GetHerHis] доброту и надежду."
+ elven_racial.0320.b.tt: "Вы положитесь на свои [Concept('skills', 'навыки')|E] [intrigue_i|E][Concept('intrigue', 'интриг')|E] и [diplomacy_i|E][Concept('diplomacy', 'дипломатии')|E].\nЕсли вы #P добьётесь успеха#!, [conversion_target.GetTitledFirstName] [Concept('convert', 'примет')|E] [new_faith.GetAdjective|l]."
+ elven_racial.0320.c: "Сияние моего света убедит [conversion_target.GetHerHis]."
+ elven_racial.0320.c.tt: "Вы положитесь на свои [Concept('skills', 'навыки')|E] [stewardship_i|E][Concept('stewardship', 'управления')|E] и [learning_i|E][Concept('learning', 'учёности')|E].\nЕсли вы #P добьётесь успеха#!, [conversion_target.GetTitledFirstName] [Concept('convert', 'примет')|E] [new_faith.GetAdjective|l]."
+ elven_racial.0320.a.success: "Вы убедили персонажа [conversion_target.GetTitledFirstName] [Concept('convert', 'принять конфессию')|E]"
+ elven_racial.0320.a.failure: "[conversion_target.GetTitledFirstName] отказывается [Concept('convert', 'принять конфессию')|E]"
+ elven_racial.0320.a.success.tt: "[conversion_target.GetTitledFirstName] [Concept('converted', 'принимает')|E] [new_faith.GetAdjective|l]\n$EFFECT_LIST_BULLET$ [Concept('faith', 'Конфессия')|E] владения [conversion_target.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier] меняется на [new_faith.GetAdjective|l]"
 
  ### Introduction ###
 
@@ -190,7 +190,7 @@
  elven_racial.1213.desc: "На тихой поляне леса во владении [destiny_forest_province.GetName] пролетает редкая птица, её яркое оперение - мимолётное чудо среди вековых деревьев. Её песня нежна и чиста, её редко слышат даже те, кто хорошо знает этот лес. На краткий миг все заботы мира словно исчезают, уносясь в нежном полёте птицы.\n\nТакое зрелище часто воспринимается как доброе предзнаменование, напоминание о том, что красота и надежда сохраняются даже в самых древних местах."
  elven_racial.1213.a: "Даже самые древние леса таят в себе новые обещания."
  elven_racial.1213.b: "Знак грядущих прекрасных дней."
- elven_racial.1213.c: "It is a hopeful sight indeed."
+ elven_racial.1213.c: "Это действительно обнадёживающее зрелище."
 
  elven_racial.1214.t: "Прогулка по лесам: Пьяный разгул"
  elven_racial.1214.desc: "Когда я иду по безмятежному лесу во владении [destiny_forest_province.GetName], смех моих родичей достигает моих ушей задолго до того, как я их увижу. Группа эльфов, чьи шаги нетверды, а лица раскраснелись, шатается среди деревьев, распевая песни на лилейной мелодии, далёкие от их обычной сдержанности.\n\nВ воздухе вокруг них витает аромат вина и беззаботного веселья. Они приветствуют меня широкими улыбками, предлагают мне кубок, призывая присоединиться к их веселью."
