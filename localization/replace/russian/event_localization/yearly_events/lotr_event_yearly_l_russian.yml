@@ -1,0 +1,18 @@
+﻿l_russian:
+
+ # The Longing - Child wants to Sail
+ lotr_yearly.0001.t: "Стремление"
+ lotr_yearly.0001.desc.intro: "В последние недели [Select_CString(sailor_child.IsFemale, 'моя', 'мой' )] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('sailor_child'))] [sailor_child.GetFirstName] проявляет большой интерес к морю, проводит много часов, наблюдая за швартовкой кораблей и посадкой моряков в порту, и играет на берегу, когда это возможно. Сегодня [sailor_child.GetSheHe] [Select_CString(sailor_child.IsFemale, 'загнала', 'загнал' )] меня в угол, возбуждённо настаивая на том, чтобы я [Select_CString(ROOT.Char.IsFemale, 'научила', 'научил' )] [sailor_child.GetHerHis] ходить под парусом.\n\n"
+ lotr_yearly.0001.desc.parent: "«[sailor_child.Custom2('RelationToMeShort', ROOT.Char)|U], "
+ lotr_yearly.0001.desc.guardian: "«[ROOT.Char.Custom('MistressMaster')|U] [ROOT.Char.GetFirstNameNoTooltip], "
+ lotr_yearly.0001.desc.nosailor: "могу ли я стать [Select_CString(sailor_child.IsFemale, 'морячкой', 'моряком' )]?"
+ lotr_yearly.0001.desc.model_sailor_you: "могу ли я стать [Select_CString(sailor_child.IsFemale, 'морячкой', 'моряком' )], как ты?"
+ lotr_yearly.0001.desc.model_sailor_family: "могу ли я стать [Select_CString(sailor_child.IsFemale, 'морячкой', 'моряком' )], как [model_sailor.GetFirstName]?"
+ lotr_yearly.0001.desc.model_sailor: "могу ли я стать [Select_CString(sailor_child.IsFemale, 'морячкой', 'моряком' )], как [sailor_child.Char.Custom2('RelationToMeShort', SCOPE.sC('model_sailor'))] [model_sailor.GetFirstName]?"
+ lotr_yearly.0001.desc.outro: " Прошу, позволь мне, я хочу управлять таким могучим судном, как [ROOT.Char.Custom('RegionalShipType')]!»"
+ lotr_yearly.0001.a.me: "Я научу тебя всему, что нужно."
+ lotr_yearly.0001.a.sailor: "[model_sailor.GetFirstName] научит вас всему, что нужно."
+ lotr_yearly.0001.a.nosailor: "Я найду кого-нибудь, кто научит тебя всему, что нужно."
+ lotr_yearly.0001.d: "И речи быть не может!"
+ taught_sailing_success: "[sailor_child.GetFirstName] изучает основы"
+ taught_sailing_failure: "[sailor_child.GetFirstName] быстро сдаётся"
