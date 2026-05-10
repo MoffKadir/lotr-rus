@@ -51,13 +51,16 @@
  #########################################
  WASTELANDS_AUTOMATION_FEATURE_NAME: "Автоматическая колонизация"
  WASTELANDS_AUTOMATION_TOGGLE_TT: "[SelectLocalization( GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), 'WASTELANDS_AUTOMATION_TOGGLE_TT_OFF', 'WASTELANDS_AUTOMATION_TOGGLE_TT_ON' )]"
+ # Select_CString(GetScriptedGui('lotr_WAC_higher_title_already_selected_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End), Localize('WASTELANDS_AUTOMATION_NO_COUNTIES_AVAILABLE'), SelectLocalization( GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), 'WASTELANDS_AUTOMATION_TOGGLE_TT_OFF', 'WASTELANDS_AUTOMATION_TOGGLE_TT_ON' ))
  WASTELANDS_AUTOMATION_TOGGLE_TT_ON: "#T $WASTELANDS_AUTOMATION_FEATURE_NAME$: #V Включена#!\n#!$WASTELANDS_AUTOMATION_TOGGLE_TT_DESC$\n\n#I Нажмите, чтобы отключить автоматизацию#!"
  WASTELANDS_AUTOMATION_TOGGLE_TT_OFF: "#T $WASTELANDS_AUTOMATION_FEATURE_NAME$: #V Отключена#!\n#!$WASTELANDS_AUTOMATION_TOGGLE_TT_DESC$\n\n#I Нажмите, чтобы включить автоматизацию#!"
- WASTELANDS_AUTOMATION_TOGGLE_TT_DESC: "[SelectLocalization(GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), 'WASTELANDS_AUTOMATION_TOGGLE_TT_DEFAULT_DESC' , 'WASTELANDS_AUTOMATION_TOGGLE_TT_CUSTOM_DESC')]\n\n[SelectLocalization(GetScriptedGui('lotr_WAC_higher_title_already_selected_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), '' , 'WASTELANDS_AUTOMATION_TOGGLE_TT_HIGHER_TITLE_SELECTED')]"
+ WASTELANDS_AUTOMATION_TOGGLE_TT_DESC: "[SelectLocalization(GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), 'WASTELANDS_AUTOMATION_TOGGLE_TT_DEFAULT_DESC' , 'WASTELANDS_AUTOMATION_TOGGLE_TT_CUSTOM_DESC')]\n\n[Select_CString(Not(GetScriptedGui('lotr_WAC_no_valid_counties_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End)), Localize('WASTELANDS_AUTOMATION_NO_COUNTIES_AVAILABLE'), Select_CString(GetScriptedGui('lotr_WAC_non_landed_title_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), Localize('WASTELANDS_AUTOMATION_TOGGLE_TT_TITULAR_TITLE'), SelectLocalization(GetScriptedGui('lotr_WAC_higher_title_already_selected_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), '' , 'WASTELANDS_AUTOMATION_TOGGLE_TT_HIGHER_TITLE_SELECTED')))]"
  WASTELANDS_AUTOMATION_TOGGLE_TT_DEFAULT_DESC: "Если эта функция включена, ваш [Concept('ruler', 'правитель')|E] автоматически [Concept('colonise', 'колонизирует')|E] выбранный титул и все титулы, [Concept('de_jure', 'де-юре')|E] входящие в него, а также автоматически удаляет препятствия и строит постройки [Concept('settlement', 'поселения')|E].\n\nЕсли иное не предусмотрено настройками автоматизации, улучшение поселения в [Concept('castle', 'замковое')|E], [Concept('city', 'городское')|E] или [Concept('temple', 'храмовое')|E] [Concept('holding', 'владение')|E] происходит вручную.\n\n#help Автоматическая колонизация предназначена для игроков, незнакомых с механикой колонизации или желающих сосредоточить своё внимание на чём-то другом.#!"
  WASTELANDS_AUTOMATION_TOGGLE_TT_CUSTOM_DESC: "Если эта функция включена, ваш [Concept('ruler', 'правитель')|E] будет колонизировать самостоятельно, ограничиваясь лишь выбранными настройками."
- WASTELANDS_AUTOMATION_TOGGLE_TT_HIGHER_TITLE_SELECTED: "@warning_icon! #N Для автоматизации уже выбран де-юре титул с более высоким рангом#!"
-
+ WASTELANDS_AUTOMATION_TOGGLE_TT_HIGHER_TITLE_SELECTED: "@warning_icon! #N Для автоматизации уже выбран [Concept('de_jure', 'де-юре')|E] [Concept('title', 'титул')|E] с более высоким рангом#!"
+ WASTELANDS_AUTOMATION_TOGGLE_TT_TITULAR_TITLE: "@warning_icon! #N Выбран номинальный [Concept('title', 'титул')|E] без [Concept('de_jure', 'де-юре')|E] [Concept('counties', 'графств')|E]#!"
+ WASTELANDS_AUTOMATION_NO_COUNTIES_AVAILABLE: "@warning_icon! #N В пределах этого [Concept('title', 'титула')|E] нет [Concept('counties', 'графств')|E] дебрей#!"
+ WASTELANDS_AUTOMATION_OPEN_DUCHY_WINDOW: "Откройте окно просмотра титула, чтобы автоматизировать [Concept('colonisation', 'колонизацию')|E] этого [Concept('duchy', 'герцогства')|E], [Concept('kingdom', 'королевства')|E] или [Concept('empire', 'империи')|E]"
  INTERFACE_TOAST_COUNTY_COLONISED: "Владение [county_to_colonise.GetName] было колонизировано"
  INTERFACE_TOAST_COUNTY_HANDED_OUT: "Владение [target.GetNameNoTier] передано персонажу [generated_ruler.GetFirstName]"
 
@@ -67,11 +70,17 @@
 
  WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS: "Строительство зданий"
  WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_CASTLE: "Замок"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_CASTLE_VALID_TT: "Вы #bold не#! можете иметь [Concept('castle', 'замковое')|E] [Concept('holding', 'владение')|E] в качестве основного типа владения"
  WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_CITY: "Город"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_CITY_VALID_TT: "Вы #bold не#! можете иметь [Concept('city', 'городское')|E] [Concept('holding', 'владение')|E] в качестве основного типа владения"
  WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_TEMPLE: "Храм"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_TEMPLE_VALID_TT: "Вы #bold не#! можете иметь [Concept('temple', 'храмовое')|E] [Concept('holding', 'владение')|E] в качестве основного типа владения"
  WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_TRIBE: "Племя"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_TRIBE_VALID_TT: "Вы #bold не#! можете иметь [Concept('tribal', 'племенное')|E] [Concept('holding', 'владение')|E] в качестве основного типа владения"
  WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_DELVING: "Подземное владение"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_DELVING_VALID_TT: "Вы #bold не#! являетесь [Concept('orc', 'орком')|E] или [Concept('dwarf', 'гномом')|E]"
  WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_REFUGE: "Эльфийский приюот"
+ WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_REFUGE_VALID_TT: "Вы #bold не#! являетесь [Concept('elf', 'эльфом')|E]"
  WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS: "Строительство владений"
  WASTELANDS_AUTOMATION_SETTINGS_TT: "Если этот параметр #V активирован#!, то это [Concept('building', 'здание')|E] или [Concept('holding', 'владение')|E] будет построено автоматически, если у игрока будет достаточно [Concept('gold', 'золота')|E] или [Concept('prestige', 'престижа')|E], в зависимости от типа его [Concept('government', 'формы правления')|E]."
 

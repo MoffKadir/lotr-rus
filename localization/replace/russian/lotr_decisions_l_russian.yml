@@ -16,7 +16,9 @@
  sail_to_valinor_tt: "Вы отправляетесь в путешествие на запад, в Валинор.\n\nПо прибытии вы будете свергнуты, а ваш предыдущий персонаж станет неиграбельным"
  trait_sailed_west: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Уплыла', 'Уплыл' )] на запад"
  trait_sailed_west_desc: "Этот персонаж отправился по тайному Прямому Пути из Сфер [Concept('ardaconcept', 'Арды')|E], чтобы присоединиться к своему народу в [Concept('undyinglands', 'Бессмертных землях')|E]."
- trait_sailed_west_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] по тайному Прямому Пути из Сфер Арды, чтобы присоединиться к своему народу в Бессмертных землях."
+ trait_sailed_west_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] по тайному Прямому Пути из Сфер Арды, чтобы присоединиться к своему народу в Бессмертных землях. [ROOT.Char.GetSheHe|U] [Select_CString(ROOT.Char.IsFemale, 'ушла', 'ушёл' )] в [Select_CFixedPoint(And(GreaterThan_CFixedPoint(ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year') ),Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ) , Max_CFixedPoint( Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ) , ROOT.Char.MakeScope.Var('sailed_west_date').GetValue ) , '(CFixedPoint)1' ) ) ) ) )] г. [Localize( Select_CString(And(GreaterThan_CFixedPoint(ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), 'lotr_fourth_age',Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), 'lotr_third_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), 'lotr_second_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ), 'lotr_first_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ), 'lotr_year_of_the_trees', 'Э.С.' ) ) ) ) ) )]."
+ trait_sailed_west_character_mortal_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] по тайному Прямому Пути из Сфер Арды, чтобы присоединиться к своему народу в Бессмертных землях. [ROOT.Char.GetSheHe|U] [Select_CString(ROOT.Char.IsFemale, 'ушла', 'ушёл' )] в [Select_CFixedPoint(And(GreaterThan_CFixedPoint(ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year') ),Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ) , Max_CFixedPoint( Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ) , ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue ) , '(CFixedPoint)1' ) ) ) ) )] г. [Localize( Select_CString(And(GreaterThan_CFixedPoint(ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), 'lotr_fourth_age',Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), 'lotr_third_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), 'lotr_second_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ), 'lotr_first_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ), 'lotr_year_of_the_trees', 'Э.С.' ) ) ) ) ) )]."
+ trait_sailed_west_character_historical_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] по тайному Прямому Пути из Сфер Арды, чтобы присоединиться к своему народу в Бессмертных землях. [ROOT.Char.GetSheHe|U] [Select_CString(ROOT.Char.IsFemale, 'ушла', 'ушёл' )] в [ROOT.Char.Custom('sailed_west_date_dead')]."
 
  decision_wander_the_forests: "Прогуляться по лесу"
  decision_wander_the_forests_tooltip: "Посетить местные леса вашей державы"
@@ -980,11 +982,17 @@
  decision_new_capital.tt.new_capital_korlea: "[GetTitleByKey('c_korlea').GetNameNoTier]" 
  new_capital_korlea_tooltip: "Великий город Корлея - один из старейших [Concept( 'numenorean', 'нуменорских' )|E] портов. Корлейцы всегда были традиционалистами, стремясь сохранить наследие [Concept( 'numenor', 'Нуменора' )|E] после [Concept( 'downfall', 'Низвержения' )|E]."
 
+ decision_new_capital.tt.new_capital_khorsaj: "[GetTitleByKey('c_khorsaj').GetNameNoTier]"
+ new_capital_khorsaj_tooltip: "Хорсаж - великая крепость южных [adunai|El] и традиционная столица Грозового воинства. Она занимает центральное положение в [Concept( 'bayoftulwang', 'заливе Тулванг' )|E] и на протяжении многих веков служила бастионом против непокорных местных жителей."
+
  decision_new_capital.tt.new_capital_tariketh_an_kharat: "[GetTitleByKey('c_tariketh_an_kharat').GetNameNoTier]" 
  new_capital_tariketh_an_kharat_tooltip: "Тарикет ан-Харат - традиционный центр [Concept( 'anbalkumagan', 'Ан-Балкумагана' )|E], а в его сердце находится Марат Харадунэ. Великая башня возвышается над городом и может служить внушительной столицей, если отстроить её должным образом."
 
- decision_new_capital.tt.new_capital_khorsaj: "[GetTitleByKey('c_khorsaj').GetNameNoTier]"
- new_capital_khorsaj_tooltip: "Хорсаж - великая крепость южных [adunai|El] и традиционная столица Грозового воинства. Она занимает центральное положение в [Concept( 'bayoftulwang', 'заливе Тулванг' )|E] и на протяжении многих веков служила бастионом против непокорных местных жителей."
+ decision_new_capital.tt.new_capital_mispir: "[GetTitleByKey('c_mispir').GetNameNoTier]"
+ new_capital_mispir_tooltip: "Миспир, резиденция [Concept('balan_lai', 'Балан-лай')|E] и центр харадунайской дипломатии и культуры в [Concept('thanihazad', 'Тани-Хазаде')|E]. Это город, который большинство людей назвали бы столицей Тани-Хазада."
+
+ decision_new_capital.tt.new_capital_uruloni: "[GetTitleByKey('c_uruloni').GetNameNoTier]"
+ new_capital_uruloni_tooltip: "Урулони - древний и могущественный город [Concept('thanihazad', 'Тани-Хазада')|E]. Возвышающийся над нижним пригородом Уруломик, Урулони - поистине древний [Concept('numenorean', 'нуменорский')|E] город, напоминающий архитектуру Ондостара."
 
  decision_new_capital.tt.new_capital_tol_uialgaer: "[GetTitleByKey('c_tol_uialgaer').GetNameNoTier]" 
  new_capital_tol_uialgaer_tooltip: "Архипелаг Анагзайян был полностью поглощён великим городом Арминалетором. Процветание крепости [Concept( 'black_numenoreans', 'чёрных нуменорцев' )|E], построенной Ар-Адунаим, подпитывается тысячами рабов, и она может стать единственной достойной столицей для [anadune|E], вновь отстроенной."
@@ -1328,7 +1336,7 @@
  reunite_the_eotheod_eotheod_heritage_counties_outside_realm: "Общее количество [Concept('counties', 'графств')|E], [culture|El] которых имеет [culture_pillar|El] эотеод за пределами вашей [Concept('realm', 'державы')|E] = 0"
  embrace_eotheod_culture_vassals_custom: "Каждый $rohirrim_collective_noun$ий, $leofring_collective_noun$ий или $framling_collective_noun$ий [vassal|El]"
  embrace_eotheod_culture_counties_custom: "Каждое $rohirrim_collective_noun$ое, $leofring_collective_noun$ое или $framling_collective_noun$ое [county|El] в пределах вашей [Concept('realm', 'державы')|E]"
- decision_embrace_eotheod_culture_get_innovations: "[culture|E] эотеод получит все рохирримские, леофрингские и фрамлингские [innovations|El]"
+ decision_embrace_eotheod_culture_get_innovations: "[culture|E] эотеод получит все [innovations|El] культур с эотеодским [Concept('heritage', 'наследием')|E]"
  decision_eotheod_new_tradition: "Получит [Concept('tradition', 'традицию')|E] «[GetCultureTradition('tradition_a_people_reunited').GetName]»"
  decision_eotheod_new_maa: "Доступны [men_at_arms|El] - [GetMaA('eotheod_vanguard').GetName]"
 
@@ -1902,7 +1910,7 @@
  no_reactionary_vassals: "Ни один правитель в пределах вашей державы не должен почитать #ONCLICK:FAITH,faith_vatra #TOOLTIP:FAITH,faith_vatra Аудрат-Ватру#!#!."
  mardat_reactionary_county_effect: "Каждое графство #ONCLICK:FAITH,faith_vatra #TOOLTIP:FAITH,faith_vatra Аудрат-Ватры#!#! в пределах вашей державы потеряет #N 5 ед. развития#!, получит модификатор [GetModifier('mardat_purge_county_modifier').GetNameWithTooltip] на 50 лет и #P с вероятностью 33% обратится в вашу конфессию.#!"
 
- decision_mardat_crush_revolutionary: "Сокрушить #L [GetFaithByKey('faith_ray').GetName|l]их#! реакционеров"
+ decision_mardat_crush_revolutionary: "Сокрушить кат-полозайских реакционеров"
  decision_mardat_crush_revolutionary_tooltip: "Разгромив #L [GetFaithByKey('faith_ray').GetName|l]их#! владык внутренних земель державы [GetTitleByKey('k_ray').GetNameNoTier], мы приведём границы Раи под абсолютное правление Кхаз-грамаза."
  decision_mardat_crush_revolutionary_desc: "Во внутренних землях [Concept('ray', 'Раи')|E], вдали от столицы и старых центров власти, последователи #ONCLICK:FAITH,faith_ray #TOOLTIP:FAITH,faith_ray Кат-Полозая#!#! объединились вокруг своих местных властителей в большие повстанческие отряды. Пока эти мятежные еретики находятся у власти, границы державы будут нестабильны, и существует угроза того, что достаточно могущественный мятежный владыка соберет армию из недовольных крестьян и двинется на [GetTitleByKey('c_bozisha_dar').GetNameNoTier].\n\nПолностью разгромив этих мятежников, перебив их вождей и разрушив Высокую цитадель Катри, вокруг которой они сплотились, я [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] бы навязать пограничным землям как своё правление, так и культ Кхаз-грамаза."
  decision_mardat_crush_revolutionary_confirm: "Там, где Каниватра потерпели неудачу, я добьюсь успеха."
@@ -2172,7 +2180,7 @@
  you_border_mordor: "Ваша держава граничит с [Concept('de_jure', 'де-юре')|E] #L [GetTitleByKey('e_mordor').GetNameNoTier]ом#!"
  destroy_mordor_bellakar_gondor_alliance: "Вы заключили [Concept('alliance', 'союз')|E] с правителем [Concept('gondor', 'Гондора')|E]"
  destroy_mordor_bellakar_stormhost_gone: "[GetTitleByKey('e_thon_an_kharlokh').GetName] уничтожен"
- destroy_mordor_bellakar_harnen_requierment: "Вы [Concept('completely_control', 'полностью контролируете')|E] [Concept('region', 'регион')|E] [GetGeographicalRegion('custom_harnendor').GetName]"
+ destroy_mordor_bellakar_harnen_requierment: "Вы или правитель [Concept('gondor', 'Гондора')|E] [Concept('completely_control', 'полностью контролируете')|E] [Concept('region', 'регион')|E] [GetGeographicalRegion('custom_harnendor').GetName]"
 
  decision_invade_gondor: "Вторгнуться в Гондор"
  decision_invade_gondor_tooltip: "Начать вторжение, которое, в случае успеха, уничтожит Южное королевство раз и навсегда"
@@ -2188,6 +2196,7 @@
 
  tooltip_rk_nie_not_formed: "[GetTitleByKey('h_reunited_kingdom').GetName] не укреплено, а [GetTitleByKey('h_numenor_in_exile').GetNameNoTier] не существует"
  tooltip_gondor_has_fallen: "[Concept('gondor', 'Гондор')|E] не существует"
+ you_or_subject_hold_minas_tirith: "[GetTitleByKey('c_minas_tirith').GetName] принадлежит вам или вашему [Concept('subject', 'субъекту')|E]"
 
  decision_dark_lord_hegemony_saruman: "Третий Тёмный властелин"
  decision_dark_lord_hegemony_saruman_desc: "Теперь, когда я предал [Concept('sauroncharacter', 'Саурона')|E], у меня может быть только одна цель - свергнуть его с трона Тёмного властелина и унаследовать его власть над [Concept('middleearth', 'Средиземьем')|E]."
@@ -2396,6 +2405,7 @@
  decision_thaurband_building_nurnoth_tooltip: "Выбрать постройку добра для строительства в Таурбанде"
  decision_thaurband_building_nurnoth_desc: "Земля, где до сих пор пустуют крупнейшие невольничьи рынки во всём [Concept('nurn', 'Нурне')|E], бывшие невольничьи рынки Таурбанда стоят пустыми и незастроенными... Возможно, есть какой-то способ вернуть их?"
  decision_thaurband_building_nurnoth_confirm: "Построить новое центральное здание."
+ thaurband_building_nurnoth_decision: "Решить, что построить в Таурбанде"
 
  ##############################
  #### Near Harad Decisions ####
@@ -3313,7 +3323,7 @@
  #########################
 
  donan_military: "Возвышение донан"
- donan_military_desc: "Донан наконец-то возвысились, и [ROOT.Char.GetNameNoTierNoTooltip] возглавляет их."
+ donan_military_desc: "Донан наконец-то возвысились, и этот персонаж возглавляет их."
 
 
  #Donan Eastern Kingdom
@@ -3854,34 +3864,48 @@
  decision_expel_from_balan_lai_confirm: "TEMPORARY"
  attempt_a_unanimous_vote_to_expel_a_member: "TEMPORARY"
 
- decision_stabilise_pel: "Стабилизировать Пэл"
- decision_stabilise_pel_desc: "PLACEHOLDER"
- decision_stabilise_pel_confirm: "Unified, we proceed"
- decision_stabilise_pel_tooltip: "Unified, we proceed"
- stabilised_pel: "Your vassals like you"
- stabilised_pel_effect: "Объединившись, теперь вы можете двигаться дальше, реализуя свои западные планы..."
+ decision_beat_barasi: "Усмирить Бараси"
+ decision_beat_barasi_desc: "Будь то война или экономическая осада, гордость Бараси будет сломлена. Город ещё будет молить меня о пощаде и, как побитая собака, вернётся под законное правление адунайцев."
+ decision_beat_barasi_confirm: "Возмездие!"
+ decision_beat_barasi_tooltip: "Указать им на их место"
+ beat_barasi_effect: "Вы должны решить, как разобраться с этими мятежниками"
+ barasi_development: "Развитие города Шалала должно быть равно или ниже 7"
+
+ decision_beat_bandits: "Обуздать разбойников"
+ decision_beat_bandits_desc: "Разбойничий король и его шайка представляют серьёзную проблему для восточной части державы, особенно с учётом того, что они собрали значительную армию. Они должны, по крайней мере, подчиняться власти принца."
+ decision_beat_bandits_confirm: "Мы очистим восток!"
+ decision_beat_bandits_tooltip: "Вы рассмотрите варианты, как обуздать разбойников"
+ beat_bandits_effect: "Вы рассмотрите варианты борьбы с Разбойничьим королём"
+ focused_south: "Вы сосредоточились на юге"
+ focused_west: "Вы сосредоточились на западе"
+ focused_east: "Вы сосредоточились на востоке"
+ focused_everywhere: "Вы нигде не сосредоточились"
 
  decision_beat_mag: "Отбросить магров"
- decision_beat_mag_desc: "PLACEHOLDER"
+ decision_beat_mag_desc: "Магрийцы всегда были грозной угрозой на восточной границе харадунайского Пэла. Недавнее вторжение недопустимо! Варварам следует противостоять силой."
  decision_beat_mag_confirm: "Искоренить угрозу"
  decision_beat_mag_tooltip: "Вы рассматриваете варианты изгнания магрийских захватчиков"
- beat_mag: "Вы готовы изгнать варваров из своих земель"
  beat_mag_effect: "Вы рассматриваете варианты изгнания магрийских захватчиков"
- defeated_bandits_via_decision: "Вы приняли решение #V Уничтожить разбойников#!"
- defeated_bandits_via_normal_mechanics: "Вы владеете графством [GetTitleByKey('c_obishamba').GetNameNoTier]"
 
- decision_beat_bandits: "Уничтожить разбойников"
- decision_beat_bandits_desc: "PLACEHOLDER"
- decision_beat_bandits_confirm: "Мы очистим эти земли!"
- decision_beat_bandits_tooltip: "Вы рассматриваете варианты устранения разбойников"
- beat_bandits_effect: "Вы рассматриваете варианты устранения разбойников"
- beat_bandits: "Вы готовы очистить округу от преступности"
+ decision_beat_elves: "Договориться с эльфами"
+ decision_beat_elves_desc: "Когда [GetTitleByKey('c_mokuba').GetNameNoTier] в 3000 году Т.Э. откололась от Пэла, [Concept('cuind', 'куинд')|E] поклялись защищать их. Пришло время вернуть её, либо дипломатическим, либо военным путём."
+ decision_beat_elves_confirm: "Отбросим эльфов!"
+ decision_beat_elves_tooltip: "Нельзя позволить эльфам посягать на Пэл!"
+ beat_elves_effect: "Вы попытаетесь договориться с эльфийским королём"
 
- decision_beat_barasi: "Усмирить Бараси"
- decision_beat_barasi_desc: "PLACEHOLDER"
- decision_beat_barasi_confirm: "Возмездие!"
- decision_beat_barasi_tooltip: "Они вернулись на своё законное место"
- beat_barasi_effect: "Вы должны решить, как поступить с этими мятежниками"
+ decision_stabilize_pel: "Стабилизировать Пэл"
+ decision_stabilize_pel_desc: "Такое хаотичное положение дел не может продолжаться долго. Либо я восстановлю контроль над Пэлом и использую эту возможность, чтобы увеличить свою власть над этими землями, либо они будут разрушена ещё больше.\n\n#X Если вы не стабилизируете ситуацию до 1.1.3010, хаос перерастёт в полномасштабную войну!"
+ decision_stabilize_pel_confirm: "Единство под моей властью!"
+ decision_stabilize_pel_tooltip: "Вы должны стабилизировать Пэл!"
+ stabilize_pel: "Все [Concept('direct_vassal', 'прямые вассалы')|E] Пэла должны иметь о вас 50 мне или быть [Concept('cowed', 'устрашены')|E] вами.\n$BULLET_WITH_TAB$В настоящее время #V [GetPlayer.MakeScope.ScriptValue('lotr_seregul_stabilize_values')] из [GetPlayer.MakeScope.ScriptValue('lotr_seregul_total')]#! удовлетворяют этому требованию."
+
+ decision_invade_balan_lai: "Вторгнуться в Балан-лай"
+ decision_invade_balan_lai_desc: "Грозовое воинство пообещало мне ресурсы для стабилизации Пэла. Взамен мне нужно будет только сделать то, чего я уже хочу, подчинить собратьев-принцев своей воле и возглавить Балан-лай. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] наслаждаться их дарами и набираться сил на данный момент, потому что я не сомневаюсь, что настанет день, когда они заставят меня выполнить мои обещания."
+ decision_invade_balan_lai_confirm: "К оружию!"
+ decision_invade_balan_lai_tooltip: "Этот день настанет..."
+ invade_balan_lai.tt.a: "Вы получили все дары Грозового воинства"
+ invade_balan_lai.tt.b: "Вы стабилизировали Пэл"
+ start_seregul_invasion: "Вы объявите войну за сам Тани-Хазад всем принцам Балан-лай!"
 
  #####################################
  ### Yellow Mountain Orc Decisions ###
@@ -3920,7 +3944,7 @@
  decision_delve_ny_cennacatt: "Начать раскопки Ни Хеннакатта"
  decision_delve_ny_cennacatt_tooltip: "Исследовать древние руины Ни Хеннакатта."
  decision_delve_ny_cennacatt_desc: "Когда-то это место было грозной столицей [Concept('nazgulcharacter', 'назгул')|E] [Concept('khorahil', 'Хорахиля')|E] и его [Concept('stormhost', 'Грозового воинства')|E]. Хотя башни разрушены, под цитаделью проходят многие мили туннелей. Тайные знания, скрытые там, позволят нам отстроить крепость должным образом и, возможно, научат нас большему..."
- decision_delve_ny_cennacatt_confirm: "Начать раскопки."
+ decision_delve_ny_cennacatt_confirm: "Начать раскопки!"
  decision_delve_ny_cennacatt.tt: "Столкнуться с опасностями в поисках древних сокровищ и забытых знаний."
 
  decision_yellow_mountains_goblin_reclamation: "Изгнать чужаков"
@@ -3932,6 +3956,14 @@
  decision_yellow_mountains_goblin_reclamation.tt_1: "[GetFaithByKey('orc_spider_cult').GetAdjective] - [GetBuilding('wonder_echomaker_reward').GetName]."
  decision_yellow_mountains_goblin_reclamation.tt_2: "[GetFaithByKey('faith_marketcher').GetAdjective] - [GetBuilding('wonder_marketcher_reward').GetName]."
  decision_yellow_mountains_goblin_reclamation.tt_3: "[GetFaithByKey('faith_peltripper').GetAdjective] - [GetBuilding('wonder_peltripper_reward').GetName]."
+
+ decision_petition_nazgul: "Обратиться к Мургури"
+ decision_petition_nazgul_tooltip: "Обратиться к Мургури за помощью"
+ decision_petition_nazgul_desc: "Мургури - воплощение страха, повелитель тёмной и ужасной силы. Возможно, мы сможем завоевать его расположение, если проявим к нему должное уважение."
+ decision_petition_nazgul_confirm: "В путь."
+ decision_petition_nazgul.tt: "В [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_petition_murghuri_region').GetName] есть хотя бы один [Concept('independent', 'независимый')|E] [Concept('nazgulcharacter', 'назгул')|E], [Concept('landed', 'владеющий землёй')|E]."
+ decision_petition_nazgul.tt2: "Отправиться ко двору местного [Concept('nazgulcharacter', 'назгул')|E], получив [Concept('gold', 'золото')|E], [Concept('special_troops', 'особые войска')|E] или [Concept('modifiers', 'модификаторы')|E] [Concept('development', 'развития')|E]."
+
  decision_desecrate_dwarven_capital: "Осквернить гномью столицу"
  decision_desecrate_dwarven_capital_tooltip: "Осквернить гномью столицу."
  decision_desecrate_dwarven_capital_desc: "Мы отняли у гномов их драгоценную столицу! Нам плевать на все их причудливые статуи и украшения на стенах, давайте сделаем так, чтобы здесь было хоть немного больше похоже на дом!"
@@ -4070,7 +4102,7 @@
  ###############################
  decision_sakal_an_khar_title: "Провозгласить Сакал ан-Кхар"
  decision_sakal_an_khar_tooltip: "Нуменор возродится благодаря нам!"
- decision_sakal_an_khar_desc: "Ормальский залив - богатый и прибыльный регион, но во время нашего возвышения адунайцы владели лишь небольшой его частью. За пределами Анарикэ и разбросанных по нему городов наша власть была слаба. Но если мы сможем объединить их, то провозгласим могущественное королевство, которое напомнит о великолепии утраченного Анадунэ.\n\nДокажем своё превосходство, объединим весь залив под законным правлением адунайцев и провозгласим Сакал-ан-Кхар!"
+ decision_sakal_an_khar_desc: "Ормальский залив - богатый и прибыльный регион, но во время нашего возвышения адунайцы владели лишь небольшой его частью. За пределами [Concept('anarike', 'Анарикэ')|E] и разбросанных по нему городов наша власть была слаба. Но если мы сможем объединить их, то провозгласим могущественное королевство, которое напомнит о великолепии утраченного Анадунэ.\n\nДокажем своё превосходство, объединим весь залив под законным правлением адунайцев и провозгласим Сакал-ан-Кхар!"
  decision_sakal_an_khar_confirm: "Нуменор возродится благодаря нам!"
  decision_sakal_an_khar_effect.tt: "Все вассалы, которые #V не#! принадлежат к вашему #EMP наследию#! или #EMP религии#! получат #N -100#! штрафа к мнению о вас."
  decision_sakal_an_khar_trigger.tt_1: "#V 10%#! региона [GetGeographicalRegion('special_sakal_an_khar_formable').GetName]:\n$BULLET_WITH_TAB$Текущее значение: [GetPlayer.MakeScope.ScriptValue('lotr_sakal_an_khar_geographical_region_control_complete')|2]\n$BULLET_WITH_TAB$Принадлежит к вашей конфессии ([GetPlayer.GetFaith.GetAdjective])\n$BULLET_WITH_TAB$Принадлежит к вашей культуре ([GetPlayer.GetCulture.GetName])"
@@ -4095,7 +4127,7 @@
 
  decision_sikentr_empire_expand_khy_title: "Укрепить Ормальский залив"
  decision_sikentr_empire_expand_khy_tooltip: "Захватить земли вокруг Ормальского залива"
- decision_sikentr_empire_expand_khy_desc: "Даже могучий Сикентр не смог одолеть мощь Анарикэ в дни их величия. Он дошёл до реки Пелу, но дальше не смог. Могущество Анарикэ и [Concept('khy', 'Кхая')|E] давно угасло, и теперь настал наш час. Мы будем контролировать все земли вдоль Ормальского залива."
+ decision_sikentr_empire_expand_khy_desc: "Даже могучий Сикентр не смог одолеть мощь [Concept('anarike', 'Анарикэ')|E] в дни их величия. Он дошёл до реки Пелу, но дальше не смог. Могущество Анарикэ и [Concept('khy', 'Кхая')|E] давно угасло, и теперь настал наш час. Мы будем контролировать все земли вдоль Ормальского залива."
  decision_sikentr_empire_expand_khy_confirm: "Восток принадлежит нам!"
 
  decision_sikentr_empire_expand_ray_title: "Укрепить бухту Тулванг"
@@ -4109,6 +4141,14 @@
  decision_favor_overseers_confirm: "К кому же мне обратиться?"
  decision_favor_overseers_effect.tt: "Получить доступ к уникальным [Concept('men_at_arms', 'профессионалам')|E] и положительным модификаторам, объединившись с булганами, чёрными нуменорцами или орками."
 
+ decision_khorahil_infiltrate_yellow_mountains: "Проникнуть в Жёлтые горы"
+ decision_khorahil_infiltrate_yellow_mountains_tooltip: "Обратить в свою веру и укрепить орочьи племена в горах."
+ decision_khorahil_infiltrate_yellow_mountains_desc: "[Concept('orcish', 'Орочьи')|E] племена [Concept('yellowmountains', 'Желтых гор')|E] разрознены и слабы, они даже не достойны завоевания. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] превратить их в нечто более сильное."
+ decision_khorahil_infiltrate_yellow_mountains_confirm: "Разослать посланников."
+ decision_khorahil_infiltrate_yellow_mountains.tt: "Открыто [Concept('character_interaction', 'взаимодействие персонажа')|E] «Продвигать культ»."
+ decision_khorahil_infiltrate_yellow_mountains.tt2: "Открыто [Concept('character_interaction', 'взаимодействие персонажа')|E] «Направить ресурсы»."
+ decision_khorahil_infiltrate_yellow_mountains.tt3: "[Concept('rulers', 'Правители')|E]-орки, обратившиеся в #V [GetFaithByKey('faith_murghuri').GetAdjective|l]#!, будут периодически предоставлять [Concept('piety', 'благочестие')|E] и [Concept('hooks', 'рычаги влияния')|E] ближайшим [Concept('nazgul', 'назгул')|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt4: "Ваша [Concept('realm', 'держава')|E] граничит с державой [GetTitleByKey('e_yellow_mountains').GetNameNoTier]"
  decision_rebuild_lynerian_league: "Объединить Линерийскую лигу"
  decision_rebuild_lynerian_league_tooltip: "Помочь раздробленным линерийским городам-государствам объединиться"
  decision_rebuild_lynerian_league_desc: "Линерия раздроблена. Города-государства ссорятся между собой из-за торговли, древних обид и обыденных провокаций. Они не могут объединиться сами по себе. Если мы окажем дипломатическую помощь, починим разрушенные мосты, восстановим доверие и установим новые дружеские отношения, то, возможно, сможем способствовать восстановлению былой Линерии, получив при этом могущественного союзника."
@@ -4142,7 +4182,7 @@
 
  decision_make_powa_mercantile_center_title: "Основать центр торговли"
  decision_make_powa_mercantile_center_tooltip: "Выйти за пределы полей боя внешней политики"
- decision_make_powa_mercantile_center_desc: "После объединения у пованцев появилась новая цель, поскольку выживание и повседневная жизнь стали волновать их гораздо меньше. Поэтому мы обратились к нашим соседям, но не в отместку за прошлые проступки, а для развития торговли и дружбы. Теперь наши товары и людей можно найти от верфей Анарикэ до великих городов Гондора!"
+ decision_make_powa_mercantile_center_desc: "После объединения у пованцев появилась новая цель, поскольку выживание и повседневная жизнь стали волновать их гораздо меньше. Поэтому мы обратились к нашим соседям, но не в отместку за прошлые проступки, а для развития торговли и дружбы. Теперь наши товары и людей можно найти от верфей [Concept('anarike', 'Анарикэ')|E] до великих городов Гондора!"
  decision_make_powa_mercantile_center_confirm: "Отправить караваны!"
  decision_make_powa_mercantile_center_effect_tt_1: "В настоящее время: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_neighboring_rulers_count')]#!\nУ вас есть #V 5#! соседей, подходящих под следующие условия:\n$BULLET_WITH_TAB$Ваши любовники\n$BULLET_WITH_TAB$Ваши друзья\n$BULLET_WITH_TAB$Ваши данники\n$BULLET_WITH_TAB$Находятся под #v вашим#! влиянием"
  united_powa_peacefully_building_tt: "Теперь вы можете улучшить Зал единения до Купеческого форума."
@@ -4269,10 +4309,10 @@
  decision_visit_ormalian_port.tt.kandalar_desc: "#T #V [GetTitleByKey('c_kandalar').GetNameNoTier]#! #!\n\nКандалар, стратегически важный форпост на балхъядских берегах, может похвастаться умелыми корабелами и оживленной таможней."
  decision_visit_ormalian_port_kandalar_tooltip: "#T #V [GetTitleByKey('c_kandalar').GetNameNoTier]#! #!\n\nКандалар, стратегически важный форпост на балхъядских берегах, может похвастаться умелыми корабелами и оживленной таможней."
  decision_visit_ormalian_port.tt.narikhar: "[GetTitleByKey('c_narikhar').GetNameNoTier]"
- decision_visit_ormalian_port.tt.narikhar_desc: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nНарихар, столица Анарикэ, является укрепленным портом серебра, специй и сапфиров. Это жемчужина в короне гордой торговой державы."
+ decision_visit_ormalian_port.tt.narikhar_desc: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nНарихар, столица [Concept('anarike', 'Анарикэ')|E], является укрепленным портом серебра, специй и сапфиров. Это жемчужина в короне гордой торговой державы."
  decision_visit_ormalian_port_narikhar_tooltip: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nНарихар, столица Анарикэ, является укрепленным портом серебра, специй и сапфиров. Это жемчужина в короне гордой торговой державы."
  decision_visit_ormalian_port.tt.inyaloni: "[GetTitleByKey('c_inyaloni').GetNameNoTier]"
- decision_visit_ormalian_port.tt.inyaloni_desc: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nВторой город Анарикэ - это не просто тень, поскольку в Иньялони работают портовые рабочие, казначеи и независимые менялы. Этот плацдарм - это плацдарм для будущего Анарикэ."
+ decision_visit_ormalian_port.tt.inyaloni_desc: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nВторой город [Concept('anarike', 'Анарикэ')|E] - это не просто тень, поскольку в Иньялони работают портовые рабочие, казначеи и независимые менялы. Этот плацдарм - это плацдарм для будущего Анарикэ."
  decision_visit_ormalian_port_inyaloni_tooltip: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nВторой город Анарикэ - это не просто тень, поскольку в Иньялони работают портовые рабочие, казначеи и независимые менялы."
  decision_visit_ormalian_port.tt.lyneria: "[GetTitleByKey('c_lyneria').GetNameNoTier]"
  decision_visit_ormalian_port.tt.lyneria_desc: "#T #V [GetTitleByKey('c_lyneria').GetNameNoTier]#! #!\n\nВ центре Лиги находится Линерия, жемчужина Линерийского побережья, гордая и непокоренная. Ее ремесленники создают предметы роскоши из кости и бронзы, а караваны с слоновой костью прибывают сюда из диких глубин полуострова."
@@ -4479,10 +4519,10 @@
  control_trade_in_the_bay_of_ormal_decision.tt.kandalar_desc: "#T #V [GetTitleByKey('c_kandalar').GetNameNoTier]#! #!\n\nКандалар - стратегический форпост на балхьядских берегах - может похвастаться сильными корабельщиками и шумными таможнями. Доминирование в нем позволяет развивать военно-морские силы и отсекать флоты соперников.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_kandalar_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_kandalar').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
  control_trade_in_the_bay_of_ormal_kandalar_tooltip: "#T #V [GetTitleByKey('c_kandalar').GetNameNoTier]#! #!\n\nКандалар - стратегический форпост на балхьядских берегах - может похвастаться сильными корабельщиками и шумными таможнями. Доминирование в нем позволяет развивать военно-морские силы и отсекать флоты соперников.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_kandalar_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_kandalar').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
  control_trade_in_the_bay_of_ormal_decision.tt.narikhar: "[GetTitleByKey('c_narikhar').GetNameNoTier]"
- control_trade_in_the_bay_of_ormal_decision.tt.narikhar_desc: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nНарихар, столица Анарикэ, - это укрепленный порт, где продают серебро, пряности и сапфиры. Это жемчужина гордого торгового королевства. Овладение им подорвет влияние анарикейцев во всем заливе.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_narikhar_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_narikhar').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
+ control_trade_in_the_bay_of_ormal_decision.tt.narikhar_desc: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nНарихар, столица [Concept('anarike', 'Анарикэ')|E], - это укрепленный порт, где продают серебро, пряности и сапфиры. Это жемчужина гордого торгового королевства. Овладение им подорвет влияние анарикейцев во всем заливе.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_narikhar_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_narikhar').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
  control_trade_in_the_bay_of_ormal_narikhar_tooltip: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nНарихар, столица Анарикэ, - это укрепленный порт, где продают серебро, пряности и сапфиры. Это жемчужина гордого торгового королевства. Овладение им подорвет влияние анарикейцев во всем заливе.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_narikhar_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_narikhar').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
  control_trade_in_the_bay_of_ormal_decision.tt.inyaloni: "[GetTitleByKey('c_inyaloni').GetNameNoTier]"
- control_trade_in_the_bay_of_ormal_decision.tt.inyaloni_desc: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nВторой город Анарикэ - не просто тень, ведь в Иньялони живут портовые рабочие, казначеи и независимые менялы. Закрепиться здесь - значит закрепиться в будущем Анарикэ. Его потеря пошатнет и уверенность, и казну.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_inyaloni_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_inyaloni').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
+ control_trade_in_the_bay_of_ormal_decision.tt.inyaloni_desc: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nВторой город [Concept('anarike', 'Анарикэ')|E] - не просто тень, ведь в Иньялони живут портовые рабочие, казначеи и независимые менялы. Закрепиться здесь - значит закрепиться в будущем Анарикэ. Его потеря пошатнет и уверенность, и казну.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_inyaloni_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_inyaloni').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
  control_trade_in_the_bay_of_ormal_inyaloni_tooltip: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nВторой город Анарикэ - не просто тень, ведь в Иньялони живут портовые рабочие, казначеи и независимые менялы. Закрепиться здесь - значит закрепиться в будущем Анарикэ. Его потеря пошатнет и уверенность, и казну.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_inyaloni_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_inyaloni').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
  control_trade_in_the_bay_of_ormal_decision.tt.lyneria: "[GetTitleByKey('c_lyneria').GetNameNoTier]"
  control_trade_in_the_bay_of_ormal_decision.tt.lyneria_desc: "#T #V [GetTitleByKey('c_lyneria').GetNameNoTier]#! #!\n\nВ центре Лиги находится Линерия, жемчужина Линерийского побережья, гордая и непокоренная. Ее ремесленники создают роскошь из кости и бронзы, а караваны со слоновой костью приходят из диких внутренних районов полуострова.\n\n• Вы получите модификатор [GetModifier('control_trade_in_the_bay_of_ormal_lyneria_modifier').GetNameWithTooltip] в вашей [Concept('capital', 'столице')|E], пока [GetTitleByKey('c_lyneria').GetNameNoTier] входит в состав вашей [Concept('realm', 'державы')|E]."
@@ -4506,7 +4546,7 @@
  control_trade_in_the_bay_of_ormal_kandalar_modifier: "Торговля с Кандаларом"
  control_trade_in_the_bay_of_ormal_kandalar_modifier_desc: "На лесистых склонах Кандалара производят прочную древесину и точные инструменты, которые предпочитают корабельщики и ремесленники по всему заливу."
  control_trade_in_the_bay_of_ormal_narikhar_modifier: "Торговля с Нарихаром"
- control_trade_in_the_bay_of_ormal_narikhar_modifier_desc: "Сапфиры, добытые в высокогорьях Анарикэ, и серебро, выкованное в кузницах Нарихара, приносят тем, кто обеспечивает их приток, и великолепие, и твердую монету."
+ control_trade_in_the_bay_of_ormal_narikhar_modifier_desc: "Сапфиры, добытые в высокогорьях [Concept('anarike', 'Анарикэ')|E], и серебро, выкованное в кузницах Нарихара, приносят тем, кто обеспечивает их приток, и великолепие, и твердую монету."
  control_trade_in_the_bay_of_ormal_inyaloni_modifier: "Торговля с Иньялони"
  control_trade_in_the_bay_of_ormal_inyaloni_modifier_desc: "Тропические твердые породы дерева Иньялони ценятся не только за красоту, но и за прочность и используются как в фортификационных сооружениях, так и на верфях."
  control_trade_in_the_bay_of_ormal_lyneria_modifier: "Торговля с Линерией"
@@ -4651,6 +4691,7 @@
  decision_establish_lyneria_sea_trade_tooltip: "Начать торговать с Линерией по морю"
  decision_establish_lyneria_sea_trade_tt: "Морская торговля налажена"
  decision_establish_lyneria_sea_trade_confed: "Вы заключили союз с членом конфедерации «[GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]»"
+ decision_establish_lyneria_sea_trade_ruler: "Вы заключили союз с #L [GetCultureByKey('lynerian').GetCollectiveNoun|l]им#! [Concept('ruler', 'правителем')|E] в регионе [GetGeographicalRegion('middleearth_uttersouth_shayn_lyneria').GetName]"
  capital_county_is_coastal: "Ваша [Concept('capital', 'столица')|E] находится в прибрежном [Concept('county', 'графстве')|E]"
 
  decision_establish_lyneria_coastal_trade: "Наладить сухопутную торговлю с Линерией"

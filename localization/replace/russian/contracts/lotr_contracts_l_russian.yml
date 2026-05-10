@@ -1,5 +1,29 @@
 ﻿l_russian: 
 
+ lotr_laamp_0001_contract: "Распространить свет"
+ lotr_laamp_0001_request: "Этот [Concept('task_contract', 'контракт')|E] требует, чтобы вы отправились к соседнему [Concept('ruler', 'правителю')|E], который исповедует конфессию, которая считается враждебной или воплощённым злом, с которым граничит [TaskContract.GetEmployer.GetName]."
+ lotr_laamp_0001_desc: "#L [TaskContract.GetEmployer.GetPrimaryTitle.GetAdjective][Select_CString(TaskContract.GetEmployer.IsFemale, 'ая', 'ий' )]#! [TaskContract.GetEmployer.GetTitleAsNameNoTooltip|l] глубоко [Select_CString(TaskContract.GetEmployer.IsFemale, 'обеспокоена', 'обеспокоен' )] тем, что поблизости обитают враждебные [Concept('men', 'люди')|E], и ищет кого-нибудь, кто мог бы попытаться убедить этих враждебных соседей сойти с пути зла."
+ lotr_laamp_0001_desc_title: "Умелым ораторам,"
+
+ lotr_laamp_contract_schemes.0001.t: "$lotr_laamp_0001_contract$"
+ lotr_laamp_contract_schemes.0001.desc: "После прибытия во владение [employer.GetCapitalLocation.GetName], нас довольно быстро принимает [employer.GetTitledFirstName], с глубокой озабоченностью на лице. «Я [Select_CString(employer.IsFemale, 'рада', 'рад' )] видеть, что кто-то откликнулся на мой зов», - говорит [employer.GetTitleAsNameNoTooltip|l]. «За пределами границ [Concept('realm', 'державы')|E] во владении [conversion_target_county.GetNameNoTier] обитают [Concept('men', 'люди')|E], которые уничтожат нас, если того потребуют их тёмные боги. Готовы ли вы отправиться к ним и попытаться убедить их оставить путь разрушения ради блага обоих наших народов?»"
+ lotr_laamp_contract_schemes.0001.a: "Я не подведу."
+ lotr_laamp_contract_schemes.0001.a.tt: "Вы отправитесь во владение [conversion_target_county.GetNameNoTier]"
+
+ lotr_laamp_contract_schemes.0002.t: "$lotr_laamp_0001_contract$: успех!"
+ lotr_laamp_contract_schemes.0002.desc: "С сияющими лицами мы возвращаемся в чертог, которым правит [employer.GetName]. [employer.GetTitleAsNameNoTooltip] с нетерпением ждёт нас, приглашая нас войти. «Я вижу, что вы добились успеха, друзья мои», - произносит [employer.GetFirstName] с довольным выражением на лице.\n\n«Действительно», - отвечаю я. «[Concept('men', 'Люди')|E], которые граничат с вашей державой, больше не будут угрожать вам». [employer.GetFirstName] благодарит меня, прежде чем забрать мою награду у своего управляющего и вручить её мне."
+ lotr_laamp_contract_schemes.0002.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.neutral$"
+
+ lotr_laamp_contract_schemes.0003.t: "$lotr_laamp_0001_contract$: провал!"
+ lotr_laamp_contract_schemes.0003.desc: "С тяжёлым сердцем мы возвращаемся в чертог, которым правит [employer.GetName]. Мы обменялись несколькими словами, но [employer.GetTitledFirstName], тем не менее, благодарит нас. «Не многим хватило смелости хотя бы попытаться использовать слова, прежде чем [Concept('men', 'людская')|E] слабость привела к возобновлению кровопролития. И всё же, похоже, что теперь мы должны позволить мечам и тетивм говорить за нас, если наши соседи попытаются уничтожить нас...»"
+ lotr_laamp_base_contract_schemes.0003.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.negative.light$"
+
+ lotr_laamp_0001_contract_scheme: "$lotr_laamp_0001_contract$"
+ lotr_laamp_0001_contract_scheme_action: "Распространить свет"
+ lotr_laamp_0001_contract_scheme_desc: "[Concept('elves', 'Эльфы')|E] пытаются склонить своих соседей к тому, чтобы они оставили свои тёмные пути.$laamp_contract_scheme_desc_general_boilerplate$"
+ lotr_laamp_0001_contract_scheme_desc_general: "$lotr_laamp_0001_contract_scheme_desc$"
+ lotr_laamp_0001_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
+
  lotr_laamp_1001_contract: "Выследить лазутчиков"
  lotr_laamp_1001_desc_title: "Именитым бойцам,"
  lotr_laamp_1001_desc: "[TaskContract.GetTarget.GetPrimaryTitle.GetNameNoTierNoTooltip] страдает от выживших вражеских лазутчиков, сеющих ужас и хаос. Любой, кто захочет уничтожить их, будет вознаграждён."
@@ -75,7 +99,7 @@
  lotr_laamp_2001_contract_scheme_desc: "Говорят, что армию движет вперёд полное брюхо. Если напасть на вражеский склад снабжения, лишив его провизии, половина битвы уже выиграна.$laamp_contract_scheme_desc_general_boilerplate$"
  lotr_laamp_2001_contract_scheme_desc_general: "$lotr_laamp_2001_contract_scheme_desc$"
  lotr_laamp_2001_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
- lotr_v_desc_title: "Пришлым бродягам и бездельникам,"
+ lotr_laamp_2001_desc_title: "Пришлым бродягам и бездельникам,"
  lotr_laamp_2001_desc: "[TaskContract.GetEmployer.GetPrimaryTitle.GetAdjective][Select_CString(TaskContract.GetEmployer.IsFemale, 'ая', 'ий' )] [TaskContract.GetEmployer.GetTitleAsNameNoTooltip] ищет тех, кто обеспечит безопасную транспортировку военных припасов, защитив их от бандитов и разбойников."
  lotr_laamp_2001_contract: "$lotr_laamp_2001_contract_scheme$"
  lotr_laamp_2001_request: "$laamp_request_boilerplate_stewardship_scheme$"
@@ -111,8 +135,6 @@
  lotr_laamp_contract_schemes.2004.t: "$lotr_laamp_contract_schemes.2001.t$: провал!"
  lotr_laamp_contract_schemes.2004.desc: "[officer.GetFirstName] возвращается из экспедиции, [officer.GetHerHis] лицо в синяках и красное от стыда.\n\n«Не могу поверить, всё было готово, наш план был идеален, а мы потерпели поражение! Мы были отброшены назад и вернулись ранеными и с пустыми руками»."
  lotr_laamp_contract_schemes.2004.a: "Какой позор."
-
-
 
  lotr_laamp_3011_contract: "$lotr_laamp_3011_contract_scheme$"
  lotr_laamp_3011_request: "$laamp_request_boilerplate_intrigue_scheme$"
