@@ -117,6 +117,7 @@ window = {
 						layoutpolicy_horizontal = expanding
 						onclick = "[GetVariableSystem.Set( 'culture_creation_tab', 'pillars' )]"
 						down = "[GetVariableSystem.HasValue( 'culture_creation_tab', 'pillars' )]"
+						shortcut = "tab_1"
 
 						text_single = {
 							text = "CULTURE_VIEW_PILLARS"
@@ -131,6 +132,7 @@ window = {
 						layoutpolicy_horizontal = expanding
 						onclick = "[GetVariableSystem.Set( 'culture_creation_tab', 'traditions' )]"
 						down = "[GetVariableSystem.HasValue( 'culture_creation_tab', 'traditions' )]"
+						shortcut = "tab_2"
 
 						text_single = {
 							text = "CULTURE_VIEW_TRADITIONS"
@@ -806,14 +808,17 @@ window = {
 
 							# The parameter for GetTraditionGrouping should match the categories in the traditions script
 							button_tabs_replace_tradition_category = {
+								shortcut = "sub_tab_1"
 								datacontext = "[DivergenceWindow.GetTraditionGrouping( 'realm' )]"
 							}
 
 							button_tabs_replace_tradition_category = {
+								shortcut = "sub_tab_2"
 								datacontext = "[DivergenceWindow.GetTraditionGrouping( 'combat' )]"
 							}
 
 							button_tabs_replace_tradition_category = {
+								shortcut = "sub_tab_3"
 								datacontext = "[DivergenceWindow.GetTraditionGrouping( 'societal' )]"
 							}
 						}
@@ -823,10 +828,12 @@ window = {
 							margin_bottom = -2
 
 							button_tabs_replace_tradition_category = {
+								shortcut = "sub_tab_4"
 								datacontext = "[DivergenceWindow.GetTraditionGrouping( 'ritual' )]"
 							}
 
 							button_tabs_replace_tradition_category = {
+								shortcut = "sub_tab_5"
 								datacontext = "[DivergenceWindow.GetTraditionGrouping( 'regional' )]"
 							}
 						}
