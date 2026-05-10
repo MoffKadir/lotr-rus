@@ -73,6 +73,7 @@
  offer_vassalization_khand_vracarath_tt: "You are the ruler of $e_khand$: $VALUE|=+0$"
  offer_vassalization_lower_khand_vracarath_tt: "You are the ruler of $k_lower_khand$: $VALUE|=+0$"
  offer_vassalization_upper_khand_vracarath_tt: "You are the ruler of $k_upper_khand$: $VALUE|=+0$"
+ offer_vassalization_sanctum_of_the_maimaki_tt: "You are the ruler of $k_gan$: $VALUE|=+0$"
  offer_vassalization_mountainfather_tt: "You are the Mountainfather, uniter of the Eredrim"
  
  
@@ -227,26 +228,8 @@
  seat_of_the_new_dark_lord_county_modifier_desc: "This province was fortified by Saruman as his seat of power as the new Dark Lord of Middle-earth."
  dunland_capital_modifier: "Seat of the High King"
  dunland_capital_modifier_desc: "The High King of Dunland has chosen this province as his capital and it is receiving many Dunlending settlers"
- academy_tuition_fees_modifier_1: "Tuition Fees"
- academy_tuition_fees_modifier_1_desc: "This character receives a regular income from students attending their academy."
- academy_tuition_fees_modifier_2: "Tuition Fees"
- academy_tuition_fees_modifier_2_desc: "This character receives a regular income from students attending their academies."
- academy_tuition_fees_modifier_3: "Tuition Fees"
- academy_tuition_fees_modifier_3_desc: "This character receives a regular income from students attending their academies."
- academy_tuition_fees_modifier_4: "Tuition Fees"
- academy_tuition_fees_modifier_4_desc: "This character receives a regular income from students attending their academies."
- academy_tuition_fees_modifier_5: "Tuition Fees"
- academy_tuition_fees_modifier_5_desc: "This character receives a regular income from students attending their academies."
- academy_tuition_fees_modifier_6: "Tuition Fees"
- academy_tuition_fees_modifier_6_desc: "This character receives a regular income from students attending their academies."
- academy_tuition_fees_modifier_7: "Tuition Fees"
- academy_tuition_fees_modifier_7_desc: "This character receives a regular income from students attending their academies."
- academy_tuition_fees_modifier_8: "Tuition Fees"
- academy_tuition_fees_modifier_8_desc: "This character receives a regular income from students attending their academies."
- academy_tuition_fees_modifier_9: "Tuition Fees"
- academy_tuition_fees_modifier_9_desc: "This character receives a regular income from students attending their academies."
- academy_tuition_fees_modifier_10: "Tuition Fees"
- academy_tuition_fees_modifier_10_desc: "This character receives a regular income from students attending their academies."
+ academy_tuition_fees_modifier: "Tuition Fees"
+ academy_tuition_fees_modifier_desc: "This character receives a regular income from students attending their academy."
  saruman_rearm_orthanc_guard_modifier: "Rearmed Orthanc Guards"
  saruman_rearm_orthanc_guard_modifier_desc: "The guardsmen of Orthanc have been re-armed with armor from [gondor|E|]."
  gandalfs_approval_modifier: "Gandalf's Approval"
@@ -413,7 +396,13 @@
  orc_lust_for_adventure_modifier_desc: "This character yearns to adventure in distant lands."
 
  orcs_settling_mablad_dum: "Colonization Support"
- orcs_settling_mablad_dum_desc: "Bolstered by a mysterious benefactor, this character has ample resources to devote to subterranean colonization."
+ orcs_settling_mablad_dum_desc: "Blessed by the Murghúri, this character has ample resources to devote to subterranean colonization."
+
+ orcs_infrastructure_support: "Infrastructure Support"
+ orcs_infrastructure_support_desc: "Blessed by the Murghúri, this character has ample resources to devote to building up their realm."
+ 
+ orcs_funneled_resources: "Funneled Resources"
+ orcs_funneled_resources_desc: "The Murghúri has deemed this character worthy, and lavishes them with gold, slaves, and supplies aplenty."
  
  yellow_mountain_goblin_uniter_modifier: "Spawn of the Deep"
  yellow_mountain_goblin_uniter_modifier_desc: "This dynasty united the Yellow Mountains under goblin rule."
@@ -528,11 +517,11 @@
  lotr_fleets_long_prepared_umbar_ai_modifier: "Fleets Long Prepared"
  lotr_fleets_long_prepared_umbar_ai_modifier_desc: "This character has long prepared fleets with which to invade Gondor."
  
- ### Bellakar Modifiers ###
- northernfocus: "Northern Focus"
- northernfocus_desc: "Realizing the true battle lies in the north, this character has given orders to prioritize the navy and northward expansion"
- southernfocus: "Defense of the Homeland"
- southernfocus_desc: "Coming to the realization that they must preserve their own realm first; this character has ordered their realm to prepare for a foreign invasion."
+ ### Bellakar Modifiers ### - OUTDATED
+ #northernfocus: "Northern Focus"
+ #northernfocus_desc: "Realizing the true battle lies in the north, this character has given orders to prioritize the navy and northward expansion"
+ #southernfocus: "Defense of the Homeland"
+ #southernfocus_desc: "Coming to the realization that they must preserve their own realm first; this character has ordered their realm to prepare for a foreign invasion."
  
   ### Cult of Saints Modifiers ###
  patron_saint_prophet_modifier: "Dedicated to Izindubêth the Prophet"
@@ -856,7 +845,7 @@
  lotr_sprite_driven_away_desc: "The locals claim that you have driven away a mischievous sprite that has been plagueing them"
 
  lotr_death_flower: "Death Flower"
- lotr_death_flower_desc: "This character has recieved a legendary 'death flower', causing unforseen effects"
+ lotr_death_flower_desc: "This character has received a legendary 'death flower', causing unforseen effects"
 
  lotr_homegrown_food: "Homegrown Flowers"
  lotr_homegrown_food_desc: "This county has discovered a veritable feast in a few homegrown flowers"
@@ -892,6 +881,12 @@
  sauron_strengthened_3_modifier: "Sauron: Lord of the Earth"
  sauron_strengthened_4_modifier: "Sauron: Flames of Udûn"
 
+ gondor_weakened_modifier: "Free Peoples: Weakened"
+ gondor_strengthened_1_modifier: "Free Peoples: Holding Out for a Hero"
+ gondor_strengthened_2_modifier: "Free Peoples: Bulwark against the Darkness"
+ gondor_strengthened_3_modifier: "Free Peoples: Gondor Revitalized"
+ gondor_strengthened_4_modifier: "Free Peoples: Flames of Anor"
+
  lotr_attacked_defensive_ally: "Attacked a defensive ally"
 
  legacy_of_sea_drakes: "Legacy of Sea Drakes"
@@ -921,6 +916,12 @@
  imrazor_princely_visits: "Visiting the Princes"
  imrazor_princely_visits_desc: "While you are visiting your fellow princes of the Balan-lai, you are granted additional travel speed and security."
 
+ azulzir_prepared_travel: "Beginner's Grace"
+ azulzir_prepared_travel_desc: "No matter storms, rough seas, and all maner of dangers along the way, you always make it out intact in the end."
+
+ pel_destabilized_modifier: "Pél Destabilized"
+ pel_destabilized_modifier_desc: "While Pél is not stabilized, you won't be able to change [vassal_obligations|E] and all common [casus_belli|E] costs get multiplied by #X x20#!!"
+
  seregul_focusing_south_modifier: "Focusing Southward"
  seregul_focusing_south_modifier_desc: "I must focus my efforts against my rivals to the south."
 
@@ -931,15 +932,21 @@
  seregul_focusing_west_modifier_desc: "I must focus my efforts inward before I can move west."
 
  seregul_focusing_everywhere_modifier: "Overextension"
- seregul_focusing_everywhere_modifier_desc: "Try to do it all, and you'll do none"
+ seregul_focusing_everywhere_modifier_desc: "Try to do it all, and you'll do none."
+
+ seregul_plotting_modifier: "Out for Vengeance"
+ seregul_plotting_modifier_desc: "Seregul is finally ready to deal with his wife's affair."
 
  seregul_strangled_trade_modifier: "Strangled Trade"
- seregul_strangled_trade_modifier_desc: "This city is blockaded by land and sea, cripling its economy"
+ seregul_strangled_trade_modifier_desc: "This city is blockaded by land and sea, cripling its economy!"
+
+ seregul_against_the_west_modifier: "Betting on speed"
+ seregul_against_the_west_modifier_desc: "Hurry! The elves are coming!"
 
  seregul_stabilized_pel_modifier: "Vassal Soothed"
- seregul_stabilized_pel_modifier_desc: "Through promises, bribes, threats, and favours, you have calmed your vassals for the next step"
+ seregul_stabilized_pel_modifier_desc: "Through promises, bribes, threats, and favours, you have calmed your vassals for the next step..."
 
- seregul_anbalukkhori_advisers_modifier: "Anbalukkhôri Advisers"
+ seregul_anbalukkhori_advisers_modifier: "Anbalûkkhôri Advisers"
  seregul_anbalukkhori_advisers_modifier_desc: "Your officer's ranks have been swelled by Anbalukkhôrî, buoying your efficiency and dread."
 
  th_neh_peace_modifier: "Nothing Ever Happens"
@@ -1118,6 +1125,19 @@
  suzerain_subsidy_desc: "This character is providing monetary support to a [ranger_laamp|E] to help them in their duties, gaining a powerful subject and ally in return."
  
  landless_local_arbitration_rangers_modifier: "$local_arbitration_perk_adventurer_name$ #weak (Rangers)#!"
+ 
+ ### Dol Amroth Modifiers ###
+ dol_amroth_edhellond_alliance_modifier: "Renewed Spirits"
+ dol_amroth_edhellond_alliance_modifier_desc: "With the Nimrodel Rangers patrolling the coastlines once again in strength, more men are freed up to guard the city of Dol Amroth."
+ 
+ dol_amroth_coastal_patrols_modifier: "Coastal Patrols"
+ dol_amroth_coastal_patrols_modifier_desc: "This province is watched over by the coastal patrols of Dol Amroth."
+ 
+ dol_amroth_tolfalas_modifier: "Stationed Sea-Ward Regiment"
+ dol_amroth_tolfalas_modifier_desc: "This county has been garrisoned by a seaward regiment from Dol Amroth."
+ 
+ dol_amroth_umbar_burned_modifier: "Devastating Fire"
+ dol_amroth_umbar_burned_modifier_desc: "The aftermath of the burning of Umbar's fleet, docks, and large parts of the city is still felt heavily."
 
 ########################
 ### Cultural Opinion ###
@@ -1193,7 +1213,7 @@
  confederation_of_langwell_offensive_modifier: "Offensive Posture"
  confederation_of_langwell_offensive_modifier_desc: "The Confederation of Langwell has adopted an offensive posture."
 
-### Rây Storyline Modifier s###
+### Rây Storyline Modifiers ###
 
  mardat_travels: "Mardat's Travels"
  mardat_travels_desc: "Mardat has taken great steps and caution to ensure fast and reliable travel as he gathers support for his plots."
@@ -1281,7 +1301,15 @@
  koronande_sacked: "Sack of Kôrlan"
  koronande_sacked_desc: "The sack of Kôrlan by the forces of Mûmakan has left the once great city in utter disrepair."
 
+ ### Bellakar Storyline Modifiers ###
+ bellakar_crushed_isles_corsair_modifier: "Corsair-Free Havens"
+ bellakar_crushed_isles_corsair_modifier_desc: "The destruction of the nearby corsair havens have lead to this region entering a time of great prosperity."
+ 
+ bellakar_angry_local_corsair_modifier: "Disgruntled Former Corsairs"
+ bellakar_angry_local_corsair_modifier_desc: "This once prosperous corsair haven has been destroyed by foreign powers, leaving much of the population as restless outlaws."
 
+ bellakar_zanjantak_raiding: "Devastating Tribal Raids"
+ bellakar_zanjantak_raiding_desc: "This county is plagued by raids from nearby tribes, greatly reducing the value of the land."
 
 #################################
 ### Sunset Invasion Modifiers ###

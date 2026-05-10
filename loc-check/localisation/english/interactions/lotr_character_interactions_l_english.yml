@@ -72,9 +72,9 @@
  lotr_release_as_client_state_effect_tt: "[recipient.GetTitledFirstName] will become your [client_state|E]"
  lotr_can_send_release_as_tributary_tt: "Select one of the available options"
  client_state: "Client State #weak (Permanent [Concept('client_state','tributary')|E])#!"
- tributary_state: "Tributary State #weak (Non-consentual [Concept('tributary_state','tributary')|E])#!"
+ tributary_state: "Tributary State #weak (Non-consensual [Concept('tributary_state','tributary')|E])#!"
  #Old Version: "Tributary State #weak (Non-permanent [Concept('tributary_state','tributary')|E])#!"
- protectorate_state: "Protectorate State #weak (Consentual [Concept('protectorate','protectorate')|E])#!"
+ protectorate_state: "Protectorate State #weak (Consensual [Concept('protectorate','protectorate')|E])#!"
  #Old Version: "Protectorate State #weak (Opt-in [Concept('protectorate','protectorate')|E])#!"
 
  interaction_debug_realms_in_exile: "#D DEBUG: #BER: Realms in Exile"
@@ -92,7 +92,7 @@
  WONT_ATTACK_FREE_PEOPLES_REASON: "Attack on Free Peoples: $VALUE|=+0$"
  WILL_ATTACK_OPPOSITE_ALIGNMENT_REASON: "Attack on opposite-aligned enemy: $VALUE|=+0$"
  WONT_JOIN_EVIL_REASON: "Will not fight alongside servants of the Shadow: $VALUE|=+0$"
- WONT_JOIN_NON_EVIL_REASON: "Will not fight alongside ennemies of the Shadow: $VALUE|=+0$"
+ WONT_JOIN_NON_EVIL_REASON: "Will not fight alongside enemies of the Shadow: $VALUE|=+0$"
  WONT_ATTACK_SAURON_REASON: "Attack on the Dark Lord: $VALUE|=+0$"
 
  lotr_ep3_contract_event.0001.story_content: "You will travel to a [recipient.GetPrimaryTitle.GetAdjective] [county|E]."
@@ -207,6 +207,7 @@
  set_signature_weapon_axe_person: "Axe"
  set_signature_weapon_spear_person: "Spear"
  set_signature_weapon_mace_person: "Mace"
+ set_signature_weapon_hammer_person: "Hammer"
  set_signature_weapon_longaxe_person: "Longaxe"
 
  swordshield_person: "Sword and Shield"
@@ -217,4 +218,17 @@
  axe_person: "Axe"
  spear_person: "Spear"
  mace_person: "Mace"
+ hammer_person: "Hammer"
  longaxe_person: "Longaxe"
+ 
+ reclaim_homeland_interaction: "Restore Elven Homeland"
+ reclaim_homeland_interaction_desc: "Start a war to reclaim the homeland of [recipient.GetName]"
+ elf_joins_the_new_war: "[recipient.GetName] will join the [war|E] on your side"
+ 
+ demand_good_faith_conversion: "Ask to Convert to [alignment_good|E] [faith|E]"
+ demand_good_faith_conversion_desc: "Attempt to convince your [vassal|E] or [tributary|E] to convert to a [alignment_good|E] [faith|E]"
+ 
+ convince_evil_neighbor_interaction: "Attempt Conversion"
+ convince_evil_neighbor_interaction_travel: "You will travel to the [capital|E] of [recipient.GetName] to attempt to convert them to a [alignment_good|E] [faith|E]"
+ convince_evil_neighbor_interaction_desc: "Attempt to convince your neighboring [ruler|E] to convert to a [alignment_good|E] [faith|E]"
+ convince_evil_neighbor_interaction_neighbor: "Your realm must neighbor the realm of [recipient.GetName]"

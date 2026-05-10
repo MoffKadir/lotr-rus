@@ -14,7 +14,7 @@
  elven_government: "Elven"
  elven_government_with_icon: "@government_type_elven! $elven_government$"
  elven_government_adjective: "Elven"
- elven_government_desc: "\nThe Elves generally gravitate towards conservative and monarchical governments. On paper the power of an Elven ruler is near-absolute, but in practice they are often advised informally by their friends or may be constrained or compelled by their subjects.\n\nWith their long-lives, an Elven ruler has all the time they need to know their realm and subjects, and its unique needs and strengths."
+ elven_government_desc: "\nThe [elves|E] generally gravitate towards conservative and monarchical governments. On paper the power of an Elven ruler is near-absolute, but in practice they are often advised informally by their friends or may be constrained or compelled by their subjects.\n\nWith their long-lives, an Elven ruler has all the time they need to know their realm and subjects, and its unique needs and strengths."
  elven_government_filter_option: "$elven_government$"
  elven_vassal: "Elven"
  #elven_vassal_desc should get it's own game concept
@@ -23,11 +23,11 @@
 
  numenorean_government: "Númenórean"
  numenorean_government_adjective: "Númenórean"
- numenorean_government_desc: "Since the early [secondage|E], the [numenoreans|E] (and their descendants) have traditionally followed a strong central ruler. These rulers were autocrats, their powers nigh-unlimited in their scope and reach, save when their mental faculties degraded. Their vassals lords had the right of counsel, but nothing more."
+ numenorean_government_desc: "Since the early [secondage|E], the [numenoreans|E] (and their descendants) have traditionally followed a strong central ruler. These rulers were autocrats, their powers nigh-unlimited in their scope and reach, save when their mental faculties degraded. Their vassal lords had the right of counsel, but nothing more."
  
  orcish_government: "Orcish"
  orcish_government_with_icon: "@government_type_orcish! $orcish_government$"
- orcish_government_desc: "Quarrelsome and troublesome in nature, tribes of orcs are disorganized and violent in nature, ruled by only the strongest and vilest of [morgothcharacter|E]'s creations."
+ orcish_government_desc: "Quarrelsome and troublesome in nature, tribes of [orcs|E] are disorganized and violent in nature, ruled by only the strongest and vilest of [morgothcharacter|E]'s creations."
  orcish_government_opinion: "Orcish Ruler Opinion"
  orcish_government_filter_option: "$orcish_government$"
  orcish_government_adjective: "Orcish"
@@ -110,3 +110,13 @@
  #oligarchy_vassal_desc should get it's own game concept
  oligarchy_vassal_desc: "$game_concept_oligarchy_government_desc$"
  #government_is_oligarchy: "is an Oligarchy"
+
+ government_change_rights: "Local Administation"
+ government_change_rights_default: "No $government_change_rights$"
+ government_change_rights_default_short: "Default"
+ government_change_rights_protected: "Permitted $government_change_rights$"
+ government_change_rights_protected_desc: "#emphasis #bold [vassal|E] Privileges:#!#!\n$EFFECT_LIST_BULLET$ The [liege|E] cannot revoke the [vassals_possessive|E] [titles|E]\n$EFFECT_LIST_BULLET$ The [liege|E] cannot demand that the [vassal|E] adopt [administrative|E] [government|E]\n\n#flavor The [vassal|E] is guaranteed ownership of their [titles], preventing the [liege|E] from revoking them – regardless of the $game_concept_liege$ having a [revoke_title_reason|E] or not.\n\nThe $game_concept_vassal$ is also granted a special protected status, with the realm officially recognizing their right to practice their own form of [government|E].#!"
+ government_change_rights_protected_short: "Granted"
+
+ demand_admin_contract: "[recipient.GetShortUIName|U] [CharHaveHas(recipient)] the Vassal Privilege #high $government_change_rights_protected$#!"
+ ADMIN_ACCEPTANCE_CONRACT_REASON: "Has been granted $government_change_rights_protected$ Vassal Privilege: $VALUE|=+0$"

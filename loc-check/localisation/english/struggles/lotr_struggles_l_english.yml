@@ -329,7 +329,7 @@
  balrog_struggle.2051.b: "No demon will halt the march of progress!"
 
  balrog_struggle.2061.t: "The Shuddering Earth"
- balrog_struggle.2061.desc: "The earth groans in [selected_county.GetNameNoTier], tremors great and strong rumbling through the earth. To great dismay, they have proven sufficient to even destroy full halls and buildings! I have hurridly assembled the the engineers of [selected_county.GetNameNoTooltip], hoping to discuss how to prevent such damage in the future. After a furious discussion between architects, engineers, and stonesingers, eventually plans are drawn up to rebuild and reinforce the buildings in [selected_county.GetNameNoTooltip].\n\nYet looking at the plans, the sheer labor and gold required to reinforce the existing structures, let alone to rebuild the destroyed, makes me feel faint! Can the treasury bear such expense, however necessary?"
+ balrog_struggle.2061.desc: "The earth groans in [selected_county.GetNameNoTier], tremors great and strong rumbling through the earth. To great dismay, they have proven sufficient to even destroy full halls and buildings! I have hurridly assembled the engineers of [selected_county.GetNameNoTooltip], hoping to discuss how to prevent such damage in the future. After a furious discussion between architects, engineers, and stonesingers, eventually plans are drawn up to rebuild and reinforce the buildings in [selected_county.GetNameNoTooltip].\n\nYet looking at the plans, the sheer labor and gold required to reinforce the existing structures, let alone to rebuild the destroyed, makes me feel faint! Can the treasury bear such expense, however necessary?"
  balrog_struggle.2061.a: "We must invest in reinforcing the structures to withstand such forces."
  balrog_struggle.2061.b: "I suppose these may not be the last buildings to fall..."
  balrog_struggle.2061.b.more_collapse: "More buildings collapse"
@@ -452,16 +452,20 @@
  jind_RandomRoom_Type_Watercourse: "The chamber is a vast reservoir. Aqueducts run high above and pour water into the wide pool that stretches all around me."
  jind_RandomRoom_Type_Garrison: "A great gate, reinforced with a heavy iron portcullis, marks the chamber as an old [dwarven|E] garrison."
  jind_RandomRoom_Type_Forge: "The chamber houses the remains of an old [dwarven|E] forge."
- jind_RandomRoom_Type_Workshop: "Tables cluttered with tools and half-finished crafts sprawl out before you. The chamber appears to have once been a workshop of some kind."
+ jind_RandomRoom_Type_Workshop: "Tables cluttered with tools and half-finished crafts sprawl out before me. The chamber appears to have once been a workshop of some kind."
  jind_RandomRoom_Type_LargeDwelling: "The chamber appears to be residential in nature. With dozens of interconnected rooms, this was likely once the home of an entire [dwarven|E] [house|E]."
- jind_RandomRoom_Type_CivicBuilding: "With high, arching ceilings, the chamber appears to have once been an important civic building of some kind- perhaps an archive or gallery."
+ jind_RandomRoom_Type_CivicBuilding: "With high, arching ceilings, the chamber appears to have once been an important civic building of some kind - perhaps an archive or gallery."
  jind_RandomRoom_Type_GreatHall: "The chamber is undoubtedly one of the great meeting-halls of [durinsfolk|E]. Stretching far into the darkness, I can still make out the remnants of market stalls and feasting tables."
+ jind_RandomRoom_Type_Tomb: "The chamber appears to be a mausoleum of some kind. Large stone sarcophagi line the walls, the likenesses of long-dead [dwarves|E] carved upon them."
+ jind_RandomRoom_Type_Quarry: "The chamber yawns before me, a vast quarry, paintstakingly excavated."
+ jind_RandomRoom_Type_Farm: "Dimly lit from shafts in the ceiling, the chamber appears to be part of a terraced farm."
+ jind_RandomRoom_Type_Tavern: "Casks of ale and empty hearths welcome me to an old [dwarven|E] tavern."
  
  # Chamber Appearance: Use [ROOT.Char.Custom('jind_RandomRoom_Appearance')]
 
  jind_RandomRoom_Appearance_Shunned: "It is clear that this place was shunned by the [dwarves|E]. Doors have been sealed, bricked shut, and runes of warning mark every surface."
  jind_RandomRoom_Appearance_Unfinished: "Scaffolding clings to the walls and discarded tools litter the ground. It seems that this place was under construction when it was abandoned."
- jind_RandomRoom_Appearance_Austere: "Only bare stone walls greet you, however. Little in the way of decoration seems to have adorned this place."
+ jind_RandomRoom_Appearance_Austere: "Only bare stone walls greet me, however. Little in the way of decoration seems to have adorned this place."
  jind_RandomRoom_Appearance_Ancient: "The stone here is ancient, simple in design but exquisitely executed. It is likely that this place was one of the first ever delved, perhaps even by [durin|E] himself."
  jind_RandomRoom_Appearance_Simple: "Unremarkable in its decoration, this place was clearly never more than strictly functional. No great lords dwelt here, nor any great deeds performed here."
  jind_RandomRoom_Appearance_Heroic: "Statues and intricate carvings adorn every wall, the venerated ancestors and heroes of [durinsfolk|E]."
@@ -473,7 +477,7 @@
  jind_RandomRoom_Appearance_Enchanted: "It is clear that this was once a place of great might and magic. Runes of power adorn every surface, though their spells are long since broken." 
  
  # Chamber Condition: Use [ROOT.Char.Custom('jind_RandomRoom_Condition')]
- jind_RandomRoom_Condition_CampOrcs: "Now, however, the chamber has become a den of [orcs|E]. Though long-gone, their shabby dwellings and discarded bones clutter the space."
+ jind_RandomRoom_Condition_CampOrcs: "Now, however, the chamber has become a den of [orcs|E]. Though long-gone, their shabby dwellings and discarded refuse clutter the space."
  jind_RandomRoom_Condition_Blocked: "Now, however, the chamber is partially collapsed. Fallen stones have blocked access to much of the space."
  jind_RandomRoom_Condition_SuspiciouslyIntact: "Unnervingly, the chamber is suspiciously intact. For some reason, no living thing has set foot here."
  jind_RandomRoom_Condition_Flooded: "Now, however, the chamber is completely flooded."
@@ -485,8 +489,10 @@
  jind_RandomRoom_Condition_PassageOfTime: "The chamber is largely intact, but it has succumbed, like so much else, to the slow ravages of time."
  jind_RandomRoom_Condition_Intact: "Though cold and dark, the chamber is surprisingly untouched. For a moment, I can imagine how it once looked, long ago."
  jind_RandomRoom_Condition_CampAdventurer: "Another made their home here, more recently: an abandoned campsite, not of [orc|E]-make."
- 
-
+ jind_RandomRoom_Condition_Battle: "Now, however, the chamber bears the scars of battle. Arrows pepper the walls, while the skeletal remains of fallen warriors litter the floor, adorned in long-rotten armor."
+ jind_RandomRoom_Condition_Overgrown: "Now, however, the chamber is overgrown. Colorful fungi has spread over every possible surface, obscuring much of the original decor."
+ jind_RandomRoom_Condition_Frozen: "Now, however, the chamber is nearly inaccessible. Snowdrift from the mountain above has blown in through the collapsed ceiling, encasing the room in ice."
+ jind_RandomRoom_Condition_Lair: "Another made their home here, more recently: scattered bones and half-eaten corpses mark this as the lair of some terrible beast."
  
  ##############################
  #                            #

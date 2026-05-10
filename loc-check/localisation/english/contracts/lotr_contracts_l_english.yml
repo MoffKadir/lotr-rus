@@ -1,5 +1,29 @@
 ﻿l_english: 
 
+ lotr_laamp_0001_contract: "Spread the Light"
+ lotr_laamp_0001_request: "This [task_contract|E] requires you to travel to a neighboring [ruler|E] of [TaskContract.GetEmployer.GetName]'s realm who follows a hostile or evil faith"
+ lotr_laamp_0001_desc: "The [TaskContract.GetEmployer.GetTitleAsNameNoTooltip] of [TaskContract.GetEmployer.GetPrimaryTitle.GetNameNoTier] is deeply worried about hostile [men|E] dwelling nearby and is looking for someone willing to try and convince these hostile neighbors to stray from the evil path."
+ lotr_laamp_0001_desc_title: "Skilled orators,"
+ 
+ lotr_laamp_contract_schemes.0001.t: "$lotr_laamp_0001_contract$"
+ lotr_laamp_contract_schemes.0001.desc: "Arriving in [employer.GetCapitalLocation.GetName], we are swiftly received by [employer.GetTitledFirstName], whose face betrays [employer.GetHerHis] deep concern. "I am glad to see someone has answered my call," the [employer.GetTitleAsNameNoTooltip] says. "Outside of the [realm|E]'s borders in [conversion_target_county.GetNameNoTier] dwell [men|E] that would see us destroyed if their dark gods demanded it. Are you willing to go to them and attempt to convince them to leave the path of destruction for the good of both of our peoples?""
+ lotr_laamp_contract_schemes.0001.a: "I shall not fail."
+ lotr_laamp_contract_schemes.0001.a.tt: "You will travel to [conversion_target_county.GetNameNoTier]"
+
+ lotr_laamp_contract_schemes.0002.t: "$lotr_laamp_0001_contract$: Success!"
+ lotr_laamp_contract_schemes.0002.desc: "With light on our faces, we return to the hall of [employer.GetName]. The [employer.GetTitleAsNameNoTooltip] awaits us in [employer.GetHerHis] eagerly, ushering us in. "I can see that you were successful, my friends," [employer.GetFirstName] states with a content look on [employer.GetHerHis] face..\n\n"Indeed," I reply. "The [men|E] that neighbour your realm shall not threaten you any longer." [employer.GetFirstName] thanks me, before collecting my pay from [employer.GetHerHis] steward, handing it to me."
+ lotr_laamp_contract_schemes.0002.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.neutral$"
+
+ lotr_laamp_contract_schemes.0003.t: "$lotr_laamp_0001_contract$: Failure!"
+ lotr_laamp_contract_schemes.0003.desc: "It is with a heavy heart that we return to [employer.GetName]'s hall. There are few words spoken between us, but [employer.GetTitledFirstName] thanks us nonetheless. "Not many have had the courage to at least try to use words before the weakness of [men|E] gives rise to renewed bloodletting. And yet, it seems that we must now let swords and bowstrings speak for us, should our neighbours seek to destroy us...""
+ lotr_laamp_base_contract_schemes.0003.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.negative.light$"
+ 
+ lotr_laamp_0001_contract_scheme: "$lotr_laamp_0001_contract$"
+ lotr_laamp_0001_contract_scheme_action: "Spread the Light"
+ lotr_laamp_0001_contract_scheme_desc: "The [elves|E] are attempting to sway their neighbours from following dark ways.$laamp_contract_scheme_desc_general_boilerplate$"
+ lotr_laamp_0001_contract_scheme_desc_general: "$lotr_laamp_0001_contract_scheme_desc$"
+ lotr_laamp_0001_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
+ 
  lotr_laamp_1001_contract: "Hunt Down Stragglers"
  lotr_laamp_1001_desc_title: "Fighters of repute,"
  lotr_laamp_1001_desc: "[TaskContract.GetTarget.GetPrimaryTitle.GetNameNoTierNoTooltip] suffers from surviving enemy stragglers sowing fear and chaos. Anyone willing to weed them all out will be rewarded."
@@ -75,7 +99,7 @@
  lotr_laamp_2001_contract_scheme_desc: "It is said an army marches on its stomach. Raid an enemy supply depot, cut off their provisions, and half the battle is already won.$laamp_contract_scheme_desc_general_boilerplate$"
  lotr_laamp_2001_contract_scheme_desc_general: "$lotr_laamp_2001_contract_scheme_desc$"
  lotr_laamp_2001_contract_scheme_desc_success: "$laamp_contract_scheme_desc_success_boilerplate$"
- lotr_v_desc_title: "Beware vagabonds and good-for-nothings,"
+ lotr_laamp_2001_desc_title: "Beware vagabonds and good-for-nothings,"
  lotr_laamp_2001_desc: "The [TaskContract.GetEmployer.GetTitleAsNameNoTooltip] of [TaskContract.GetEmployer.GetPrimaryTitle.GetNameNoTier] advises any ill-intentioned bandits and ruffians against hampering the safe transport of [TaskContract.GetEmployer.GetHerHis] army supplies."
  lotr_laamp_2001_contract: "$lotr_laamp_2001_contract_scheme$"
  lotr_laamp_2001_request: "$laamp_request_boilerplate_stewardship_scheme$"
@@ -111,8 +135,6 @@
  lotr_laamp_contract_schemes.2004.t: "$lotr_laamp_contract_schemes.2001.t$: Failure!"
  lotr_laamp_contract_schemes.2004.desc: "[officer.GetFirstName] returns from the expedition, [officer.GetherHis] face bruised and red with shame.\n\n"I can't believe it, everything was ready, our plan was perfect and we failed miserably! We were pushed back and came back wounded and empty-handed.""
  lotr_laamp_contract_schemes.2004.a: "Such a shameS."
-
-
 
  lotr_laamp_3011_contract: "$lotr_laamp_3011_contract_scheme$"
  lotr_laamp_3011_request: "$laamp_request_boilerplate_intrigue_scheme$"
@@ -272,7 +294,7 @@
  lotr_laamp_contract_schemes.6000.tt_2: "[knight2.GetName] joins your patrol"
 
  lotr_laamp_contract_schemes.6001.t: "$lotr_laamp_contract_schemes.6000.t$: Success!"
- lotr_laamp_contract_schemes.6001.desc: "As we return to the court of [employer.GetName], the [employer.GetTitleAsNameNoTooltip] awaits us in [employer.GetHerHis] hall. "I hear that all is well on the borders," [employer.GetFirstName] says with a quite calm.\n\n"It is," I reply. "The [elves|E] of your realm shall dwell in safety for the foreseable future." [employer.GetFirstName] thanks me, before collecting my pay from [employer.GetHerHis] steward, handing it to me."
+ lotr_laamp_contract_schemes.6001.desc: "As we return to the court of [employer.GetName], the [employer.GetTitleAsNameNoTooltip] awaits us in [employer.GetHerHis] hall. "I hear that all is well on the borders," [employer.GetFirstName] says with a quiet calm in [employer.GetHerHis] voice.\n\n"It is," I reply. "The [elves|E] of your realm shall dwell in safety for the foreseable future." [employer.GetFirstName] thanks me, before collecting my pay from [employer.GetHerHis] steward, handing it to me."
  lotr_laamp_contract_schemes.6001.a: "$laamp_base_contract_schemes.0000.generic_option.proceed.neutral$"
 
  lotr_laamp_contract_schemes.6002.t: "$lotr_laamp_contract_schemes.3051.t$: Failure!"

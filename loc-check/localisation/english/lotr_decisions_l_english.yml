@@ -16,7 +16,9 @@
  sail_to_valinor_tt: "You embark on a journey westward to Valinor.\n\nYou will be deposed on arrival and your previous character will become unplayable"
  trait_sailed_west: "Sailed West"
  trait_sailed_west_desc: "This character has taken the hidden Straight Road out of the Spheres of [ardaconcept|E] to join their people in the [undyinglands|E]."
- trait_sailed_west_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has taken the hidden Straight Road out of the Spheres of Arda to join [ROOT.GetCharacter.GetHerHis] people in the Undying Lands."
+ trait_sailed_west_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has taken the hidden Straight Road out of the Spheres of Arda to join [ROOT.GetCharacter.GetHerHis] people in the Undying Lands. [ROOT.Char.GetSheHe|U] left in [Localize( Select_CString(And(GreaterThan_CFixedPoint(ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), 'lotr_fourth_age',Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), 'lotr_third_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), 'lotr_second_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ), 'lotr_first_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ), 'lotr_year_of_the_trees', 'Y.L.' ) ) ) ) ) )] [Select_CFixedPoint(And(GreaterThan_CFixedPoint(ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year') ),Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ) , Max_CFixedPoint( Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ) , ROOT.Char.MakeScope.Var('sailed_west_date').GetValue ) , '(CFixedPoint)1' ) ) ) ) )]."
+ trait_sailed_west_character_mortal_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has taken the hidden Straight Road out of the Spheres of Arda to join [ROOT.GetCharacter.GetHerHis] people in the Undying Lands. [ROOT.Char.GetSheHe|U] left in [Localize( Select_CString(And(GreaterThan_CFixedPoint(ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), 'lotr_fourth_age',Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), 'lotr_third_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), 'lotr_second_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ), 'lotr_first_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ), 'lotr_year_of_the_trees', 'Y.L.' ) ) ) ) ) )] [Select_CFixedPoint(And(GreaterThan_CFixedPoint(ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year') ),Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ) , Max_CFixedPoint( Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ) , ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue ) , '(CFixedPoint)1' ) ) ) ) )]."
+ trait_sailed_west_character_historical_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has taken the hidden Straight Road out of the Spheres of Arda to join [ROOT.GetCharacter.GetHerHis] people in the Undying Lands. [ROOT.Char.GetSheHe|U] left in [ROOT.Char.Custom('sailed_west_date_dead')]."
 
  decision_wander_the_forests: "Wander the Forests"
  decision_wander_the_forests_tooltip: "Visit the local woods of your realm"
@@ -897,7 +899,7 @@
  unlock_reclaim_dunedain_royal_lineage_tt: "Gain access to the #EMP $decision_reclaim_royal_lineage$#! [decision|E]"
 
  decision_claim_gondor_arassuil: "Lay Claim to the Throne of Gondor"
- decision_claim_gondor_arassuil_desc: "Long have the heirs of [isildur|E] remained hidden in the wilderness of [arnor|E], waiting for their time to come. \n\n[ROOT.Char.GetFirstName] has proven [ROOT.Char.GetHerselfHimself] to be of expectional quality, and a worthy claimant to the vacant Throne of [gondor|E]. \n\nPerhaps the time has come for the Return of the [ROOT.Char.Custom('GetQueenKing')]?"
+ decision_claim_gondor_arassuil_desc: "Long have the heirs of [isildur|E] remained hidden in the wilderness of [arnor|E], waiting for their time to come. \n\n[ROOT.Char.GetFirstName] has proven [ROOT.Char.GetHerselfHimself] to be of exceptional quality, and a worthy claimant to the vacant Throne of [gondor|E]. \n\nPerhaps the time has come for the Return of the [ROOT.Char.Custom('GetQueenKing')]?"
  decision_claim_gondor_arassuil_confirm: "Let the Men of Gondor witness my claim!"
  claim_gondor_arassuil_tooltip: "Bring forth your claim to the Throne of Gondor."
  decision_claim_gondor_arassuil.tt: "You will travel to [GetTitleByKey('c_minas_tirith').GetNameNoTier] to restore the [GetTitleByKey('e_gondor').GetName] and become its ruler."
@@ -980,11 +982,17 @@
  decision_new_capital.tt.new_capital_korlea: "[GetTitleByKey('c_korlea').GetNameNoTier]"
  new_capital_korlea_tooltip: "The Great City of Korlea is one of the oldest [numenorean|E] ports. The Korleans have always been traditionalists, seeking to upkeep the legacy of [numenor|E] after the [downfall|E]."
 
+ decision_new_capital.tt.new_capital_khorsaj: "[GetTitleByKey('c_khorsaj').GetNameNoTier]"
+ new_capital_khorsaj_tooltip: "Khorsâj is a great fortress of the [adunai|E] of the south and the traditional capital of the Stormhost. It lies central in the [bayoftulwang|E] and has served as a bastion against the unruly natives for many centuries."
+
  decision_new_capital.tt.new_capital_tariketh_an_kharat: "[GetTitleByKey('c_tariketh_an_kharat').GetNameNoTier]"
  new_capital_tariketh_an_kharat_tooltip: "Târikêth an-Kharat is the traditional center of [anbalkumagan|E] and in its center lies Marath Kharadûnê. The great tower rises above the city and could serve as an imposing capital if renovated properly."
 
- decision_new_capital.tt.new_capital_khorsaj: "[GetTitleByKey('c_khorsaj').GetNameNoTier]"
- new_capital_khorsaj_tooltip: "Khorsâj is a great fortress of the [adunai|E] of the south and the traditional capital of the Stormhost. It lies central in the [bayoftulwang|E] and has served as a bastion against the unruly natives for many centuries."
+ decision_new_capital.tt.new_capital_mispir: "[GetTitleByKey('c_mispir').GetNameNoTier]"
+ new_capital_mispir_tooltip: "Mispír, the seat of the [balan_lai|E], and the center of Kharadûnaic diplomacy and culture in [thanihazad|E]. It is the city that would be named the capital of [thanihazad|E] by most."
+
+ decision_new_capital.tt.new_capital_uruloni: "[GetTitleByKey('c_uruloni').GetNameNoTier]"
+ new_capital_uruloni_tooltip: "Ûrulôni is an ancient and mighty city of [thanihazad|E]. Overlooking the lower suburb of Ûrulômik, Ûrulôni is truly a [numenorean|E] city of old, emulating the architecture of Ondostar."
 
  decision_new_capital.tt.new_capital_tol_uialgaer: "[GetTitleByKey('c_tol_uialgaer').GetNameNoTier]"
  new_capital_tol_uialgaer_tooltip: "The archipelago of Anagzâyan has been completely swallowed by the great city of Arminalêthôr. The prosperity of the [black_numenoreans|E] fortress built by the Ar-Adûnâim is fuelled by thousands of slaves and it can be the only worthy capital for [anadune|E] rebuilt."
@@ -1249,7 +1257,7 @@
  corsair_conversion_event_troops: "Corsair Crew"
 
  decision_adunaic_revival: "Adûnaic Revival"
- decision_adunaic_revival_desc: "In ancient days Umbar was ruled by the [adunai|E], great men, powerful and pround. Of like make was Castamir the Great, founder of our line and greatest of the Kings of [gondor|E], whose descendants were wrongfully banished to Umbar. Though much times has passed and memory grows distorted, the shadow of their legacies still hangs over Umbar.\n\nWe are of the same great lineage, true heirs to the birthright of Castamir. We too deserve to be exalted over the lesser men, for in our veins flows the blood of [anadune|E]. Were we to preach of those similarites and tie ourselves to those historic powers, we would greatly strengthen our position in Umbar, no matter how suprious some see our claim. It is time to embrace to traditions of our heritage, and make the [adunai|E] great once again!"
+ decision_adunaic_revival_desc: "In ancient days Umbar was ruled by the [adunai|E], great men, powerful and proud. Of like make was Castamir the Great, founder of our line and greatest of the Kings of [gondor|E], whose descendants were wrongfully banished to Umbar. Though much times has passed and memory grows distorted, the shadow of their legacies still hangs over Umbar.\n\nWe are of the same great lineage, true heirs to the birthright of Castamir. We too deserve to be exalted over the lesser men, for in our veins flows the blood of [anadune|E]. Were we to preach of those similarites and tie ourselves to those historic powers, we would greatly strengthen our position in Umbar, no matter how suprious some see our claim. It is time to embrace to traditions of our heritage, and make the [adunai|E] great once again!"
  decision_adunaic_revival_tt: "Revive the Adûnaic heritage of Umbar"
  decision_adunaic_revival_confirm: "We shall embrace our past!"
 
@@ -1328,7 +1336,7 @@
  reunite_the_eotheod_eotheod_heritage_counties_outside_realm: "Total number of [counties|E] whose [culture|E] has the Éothéod [culture_pillar|E] outside your [realm|E] = 0"
  embrace_eotheod_culture_vassals_custom: "Every $rohirrim$, $leofring$ or $framling$ [vassal|E]"
  embrace_eotheod_culture_counties_custom: "Every $rohirrim$, $leofring$ or $framling$ [county|e] in your [realm|E]"
- decision_embrace_eotheod_culture_get_innovations: "The Éothéod [culture|E] gains all Rohirrim, Leofring and Framling [innovations|E]"
+ decision_embrace_eotheod_culture_get_innovations: "The Éothéod [culture|E] gains all [innovations|E] from cultures of Éothéod [heritage|E]"
  decision_eotheod_new_tradition: "Gains the [GetCultureTradition('tradition_a_people_reunited').GetName] [tradition|E]"
  decision_eotheod_new_maa: "Can recruit [GetMaA('eotheod_vanguard').GetName] as [men_at_arms|E]"
 
@@ -1606,7 +1614,7 @@
  decision_vassalise_bellakar_plateau_tooltip: "Attempt to vassalize the tribal chiefdoms of the Urud-Udil."
  decision_vassalise_bellakar_plateau_desc: "In the distant and long isolated plateaus of central [bellakar|e], there lives a simple tribal people, one staunchly independent yet deeply intertwined with the civilzed lands to their south. Though the rare raids of the bolder and crueler chieftains may sometimes be troublesome, the Urud-Udil are in truth little more than a defensive pact, unable to challenge the might of our great realm. \n\nToday, our realms are split, yet in the hearts of my people and lords all lands from the Cape of Mardruak to the [bayoftulwang|e] are Bellakaze in their nature. The Urud-Udil are weak, only together for the sake of defense against the raiders from the dunes. If I could offer them protection for a fair price, they would surely recognize my rule and status once more."
  decision_vassalise_bellakar_plateau_confirm: "I shall bring them #italic true#! peace."
- bellakar_vassalise_bellakar_plateau_effects_tt: "You will negociate terms of vassalage with all members of the Udrud-Udil."
+ bellakar_vassalise_bellakar_plateau_effects_tt: "You will negotiate terms of vassalage with all members of the Udrud-Udil."
 
  decision_bellakar_zajantak_raids: "Sponsor Fariyîn Raids"
  decision_bellakar_zajantak_raids_tooltip: "Sponsor the Fariyîn tribes of [GetTitleByKey('k_zajantak').GetNameNoTier] to raid into the Stormhost's borders."
@@ -1902,7 +1910,7 @@
  no_reactionary_vassals: "No ruler within your realm follows the [GetFaithByKey('faith_vatra').GetName]."
  mardat_reactionary_county_effect: "Every [GetFaithByKey('faith_vatra').GetName] county within your realm #N loses 5 development#!, gains the [GetModifier('mardat_purge_county_modifier').GetNameWithTooltip] modifier for 50 years and #P has a 33% chance of converting to your faith.#!"
 
- decision_mardat_crush_revolutionary: "Crush the [GetFaithByKey('faith_ray').GetName] Revolutionaries"
+ decision_mardat_crush_revolutionary: "Crush the Kât-Polozây Revolutionaries"
  decision_mardat_crush_revolutionary_tooltip: "With the [GetFaithByKey('faith_ray').GetName] lords of [GetTitleByKey('k_ray').GetNameNoTier]'s hinterlands crushed, the borders of Rây can be brought under absolute Khäz-gramaze rule."
  decision_mardat_crush_revolutionary_desc: "In the hinterlands of [ray|e], far from the capital and the old centers of power, the followers of the [GetFaithByKey('faith_ray').GetName] have organized around their local lords into great rebel warbands. As long as these rebellious heretics are in power, the frontiers of the realm will be unstable and the threat of a powerful enough rebel lord gathering an army of disgruntled peasant and marching on [GetTitleByKey('c_bozisha_dar').GetNameNoTier] is not lost to me. \n\nBy utterly crushing these rebels, slaying their leaders and destroying the High Citadel of Kâtri around which they have gathered, I could impose both my rule and the Cult of Khäz-gramaze on the borderlands."
  decision_mardat_crush_revolutionary_confirm: "Where the Kanivâtra failed, I will succeed."
@@ -2172,7 +2180,7 @@
  you_border_mordor: "Your realm borders [de_jure|E] [GetTitleByKey('e_mordor').GetNameNoTier]"
  destroy_mordor_bellakar_gondor_alliance: "You have formed an [alliance|e] with the ruler of [gondor|e]"
  destroy_mordor_bellakar_stormhost_gone: "The [GetTitleByKey('e_thon_an_kharlokh').GetName] has been destroyed"
- destroy_mordor_bellakar_harnen_requierment: "You [completely_control|e] the [GetGeographicalRegion('custom_harnendor').GetName] [region|e]"
+ destroy_mordor_bellakar_harnen_requierment: "You or [gondor|e]'s ruler [completely_control|e] the [GetGeographicalRegion('custom_harnendor').GetName] [region|e]"
 
  decision_invade_gondor: "Invade Gondor"
  decision_invade_gondor_tooltip: "Launch an invasion that, if successful, will destroy the Southern Kingdom once and for all"
@@ -2188,6 +2196,7 @@
 
  tooltip_rk_nie_not_formed: "[GetTitleByKey('h_reunited_kingdom').GetName] has not been solidified and [GetTitleByKey('h_numenor_in_exile').GetNameNoTier] does not exist"
  tooltip_gondor_has_fallen: "[gondor|E] does not exist"
+ you_or_subject_hold_minas_tirith: "You or your [subject|E] holds [GetTitleByKey('c_minas_tirith').GetName]"
 
  decision_dark_lord_hegemony_saruman: "The Third Dark Lord"
  decision_dark_lord_hegemony_saruman_desc: "Now that I have betrayed [sauroncharacter|E], there can be but one goal, to overthrow him as Dark Lord and succeed his rule over [middleearth|E]."
@@ -2396,6 +2405,7 @@
  decision_thaurband_building_nurnoth_tooltip: "Choose a good-aligned building to errect in Thaurband"
  decision_thaurband_building_nurnoth_desc: "The land where the largest slave markets in all of [nurn|E] remain empty even still, the former Slave Markets of Thaurband stand empty and bare... perhaps there is some way to reclaim it?"
  decision_thaurband_building_nurnoth_confirm: "Build a New Centrepiece Building"
+ thaurband_building_nurnoth_decision: "Decide what building to construct in Thaurband"
 
  ##############################
  #### Near Harad Decisions ####
@@ -3313,7 +3323,7 @@
  #########################
 
  donan_military: "Donan Rising"
- donan_military_desc: "The Donan are at long last resurgant, and [ROOT.Char.GetNameNoTierNoTooltip] is at their head."
+ donan_military_desc: "The Donan are at long last resurgent, and this character is at their head."
 
 
  #Donan Eastern Kingdom
@@ -3669,7 +3679,7 @@
  balrog_dead_requirement: "Has completed the #V $struggle_balrog_ending_kill_balrog$#! [decision|E]"
  unify_durins_folk_orc_requirement: "Durin's Folk are not unified"
  vassal_opinion_requirements: "You are [friends|E], [allies|E], [lovers|E] or have [hooked|E] every Dynasty Head of the Royal Clans or their [regent|E]"
- dwarven_culture_innovation_sharing_tooltip: "All [dwarves] unite together and share their knowldge under one banner."
+ dwarven_culture_innovation_sharing_tooltip: "All [dwarves] unite together and share their knowledge under one banner."
 
  decision_king_under_the_mountains_orc: "Proclaim the Tyranny of the Mountains"
  decision_king_under_the_mountains_tooltip_orc: "Claim dominion over every mountain and pit"
@@ -3854,34 +3864,48 @@
  decision_expel_from_balan_lai_confirm: "TEMPORARY"
  attempt_a_unanimous_vote_to_expel_a_member: "TEMPORARY"
 
- decision_stabilise_pel: "Stabilise Pél"
- decision_stabilise_pel_desc: "PLACEHOLDER"
- decision_stabilise_pel_confirm: "Unified, we proceed"
- decision_stabilise_pel_tooltip: "Unified, we proceed"
- stabilised_pel: "Your vassals like you"
- stabilised_pel_effect: "United, you can now move forward with your western plans..."
-
- decision_beat_mag: "Push back the Mag"
- decision_beat_mag_desc: "PLACEHOLDER"
- decision_beat_mag_confirm: "Vanquish the Threat"
- decision_beat_mag_tooltip: "You consider options to drive out the Magrin invaders"
- beat_mag: "You are ready to drive the barbarians out of your lands"
- beat_mag_effect: "You consider options to drive out the Magrin invaders"
- defeated_bandits_via_decision: "You have completed the #V Eliminate the Bandits#! decision"
- defeated_bandits_via_normal_mechanics: "You have hold the [GetTitleByKey('c_obishamba').GetNameNoTier] county"
-
- decision_beat_bandits: "Eliminate the Bandits"
- decision_beat_bandits_desc: "PLACEHOLDER"
- decision_beat_bandits_confirm: "We shall clean this land!"
- decision_beat_bandits_tooltip: "You consider options to remove the bandits"
- beat_bandits_effect: "You consider options to remove the bandits"
- beat_bandits: "You are ready to clean the countryside of crime"
-
  decision_beat_barasi: "Subdue Barasi"
- decision_beat_barasi_desc: "PLACEHOLDER"
+ decision_beat_barasi_desc: "Whether through war or an economic siege, Barasi's pride shall be broken. The city will beg for my mercy yet, and as a beaten dog return to rightful adunaic rule."
  decision_beat_barasi_confirm: "Revenge!"
  decision_beat_barasi_tooltip: "Back in their rightful place"
- beat_barasi_effect: "You must decide how to deal with these rebels"
+ beat_barasi_effect: "You must now decide how to deal with these rebels"
+ barasi_development: "The development in the city of Shalala must be equal or below 7"
+
+ decision_beat_bandits: "Curtail the Banditry"
+ decision_beat_bandits_desc: "The Bandit King and his band are a serious problem for the eastern part of the realm, especially since they have amassed a considerable army. They must at the least be subjected to the Prince."
+ decision_beat_bandits_confirm: "We shall clean the east!"
+ decision_beat_bandits_tooltip: "You consider options to curtail the bandits"
+ beat_bandits_effect: "You consider options to deal with the Bandit King"
+ focused_south: "You have focused on the south"
+ focused_west: "You have focused on the west"
+ focused_east: "You have focused on the east"
+ focused_everywhere: "You haven't focused anywhere"
+
+ decision_beat_mag: "Push back the Mag"
+ decision_beat_mag_desc: "Ever have the Magrin been a looming threat in the eastern frontier of Kharadûnaic Pél. The recent incursion is unacceptable! The barbarians must be met with force."
+ decision_beat_mag_confirm: "Vanquish the Threat"
+ decision_beat_mag_tooltip: "You consider options to drive out the Magrin invaders"
+ beat_mag_effect: "You consider options to drive out the Magrin invaders"
+
+ decision_beat_elves: "Negotiate with the Elves"
+ decision_beat_elves_desc: "When [GetTitleByKey('c_mokuba').GetNameNoTier] broke away from Pél in 3000 T.A., the [cuind|E] swore to protect them. Now it is time to take it back, either diplomatically or militarily."
+ decision_beat_elves_confirm: "Push back the elves!"
+ decision_beat_elves_tooltip: "The elves cannot be allowed to encroach on Pél!"
+ beat_elves_effect: "You will try to negotiate with the elven King"
+
+ decision_stabilize_pel: "Stabilize Pél"
+ decision_stabilize_pel_desc: "This chaotic state of affairs cannot continue for long. Either I shall reassert control over Pél, and use the opportunity to increase my power over the land, or it will shatter further.\n\n#X If you do not stabilize until 1.1.3010 the chaos will turn into all out war!"
+ decision_stabilize_pel_confirm: "United under my authority!"
+ decision_stabilize_pel_tooltip: "You must stabilize Pél!"
+ stabilize_pel: "Every [direct_vassal|E] in Pél must either have at least 50 opinion of you, or be [cowed|E] of you.\n$BULLET_WITH_TAB$Currently, #V [GetPlayer.MakeScope.ScriptValue('lotr_seregul_stabilize_values')] out of [GetPlayer.MakeScope.ScriptValue('lotr_seregul_total')]#! fullfill this requirement."
+
+ decision_invade_balan_lai: "Invade the Balân-Lâi"
+ decision_invade_balan_lai_desc: "The Stormhost has promised me resources to stabilize Pél. In repayment I shall only have to do that which I already desire, bend my fellow Princes to my will and take the leadership of the Balân-Lâi. I should enjoy their gifts and build up my strength for now, for I have no doubt the day will come when they will press me to fulfill my promises."
+ decision_invade_balan_lai_confirm: "To War!"
+ decision_invade_balan_lai_tooltip: "The day will come..."
+ invade_balan_lai.tt.a: "You have received all the gifts from the Stormhost"
+ invade_balan_lai.tt.b: "You have stabilized Pél"
+ start_seregul_invasion: "You will declare war upon all the Princes of the Balân-Lâi, for the Thâni-Hazâd itself!"
 
  #####################################
  ### Yellow Mountain Orc Decisions ###
@@ -3920,7 +3944,7 @@
  decision_delve_ny_cennacatt: "Delve Ny Cénnacatt"
  decision_delve_ny_cennacatt_tooltip: "Explore the ancient ruins of Ny Cénnacatt."
  decision_delve_ny_cennacatt_desc: "This place was once the dread capital of the [nazgulcharacter|E] [khorahil|E] and his [stormhost|E]. Though the towers are broken, many miles of tunnel run beneath the citadel. The secret knowledge hidden there would allow us to rebuild the fortress properly, and may, perhaps, teach us more..."
- decision_delve_ny_cennacatt_confirm: "Begin the Excavation"
+ decision_delve_ny_cennacatt_confirm: "Begin the excavation!"
  decision_delve_ny_cennacatt.tt: "Face dangers in search of ancient treasure and forgotten knowledge."
 
  decision_yellow_mountains_goblin_reclamation: "Expel the Outsiders"
@@ -3932,10 +3956,18 @@
  decision_yellow_mountains_goblin_reclamation.tt_1: "[GetBuilding('wonder_echomaker_reward').GetName] for [GetFaithByKey('orc_spider_cult').GetName]."
  decision_yellow_mountains_goblin_reclamation.tt_2: "[GetBuilding('wonder_marketcher_reward').GetName] for [GetFaithByKey('faith_marketcher').GetName]."
  decision_yellow_mountains_goblin_reclamation.tt_3: "[GetBuilding('wonder_peltripper_reward').GetName] for [GetFaithByKey('faith_peltripper').GetName]."
+ 
+ decision_petition_nazgul: "Petition the Murghúri"
+ decision_petition_nazgul_tooltip: "Petition the Murghúri for aid"
+ decision_petition_nazgul_desc: "The Murghúri is fear incarnate, a master of dark and terrible power. Perhaps we can gain their favor, if we show them proper respect."
+ decision_petition_nazgul_confirm: "Onward"
+ decision_petition_nazgul.tt: "There is at least one [independent|E] [landed|E] [nazgulcharacter|E] in the [GetGeographicalRegion('custom_petition_murghuri_region').GetName] [region|E]."
+ decision_petition_nazgul.tt2: "Travel to the court of a local [nazgulcharacter|E], earning [gold|E], [special_troops|E] or [development|E] [modifiers|E]."
+ 
  decision_desecrate_dwarven_capital: "Desecrate Dwarven Capital"
  decision_desecrate_dwarven_capital_tooltip: "Desecrate a Dwarven Capital."
- decision_desecrate_dwarven_capital_desc: "We've taken their precious capital from the Dwarves ! We don't care so much for all their fancy statues and wall decoration, let's make this feel a bit more like home !"
- decision_desecrate_dwarven_capital_confirm: "Have fun, boys !"
+ decision_desecrate_dwarven_capital_desc: "We've taken their precious capital from the Dwarves! We don't care so much for all their fancy statues and wall decoration, let's make this feel a bit more like home!"
+ decision_desecrate_dwarven_capital_confirm: "Have fun, boys!"
  decision_desecrate_dwarven_capital.second_step: "Which capital to start with ?"
  decision_desecrate_dwarven_capital.tt.moria: "Desecrate Moria"
  decision_desecrate_dwarven_capital.tt.belegost: "Desecrate Belegost"
@@ -4070,7 +4102,7 @@
  ###############################
  decision_sakal_an_khar_title: "Proclaim the Sakal an-Khar"
  decision_sakal_an_khar_tooltip: "Numenor shall rise anew through us!"
- decision_sakal_an_khar_desc: "The Bay of Ormal is a rich and lucrative region, but one which the Adûnai held only a small portion of during our heights. Outside of Anarike and scattered entrepots, our grip was light. But if we could unite it, we could proclaim a mighty realm, one which would recall the splendor of lost Anadûnê.\n\nLet us prove our superiority and unite all the bay under the rightful rule of the Adûnai, and proclaim the Sakal an-Khar!"
+ decision_sakal_an_khar_desc: "The Bay of Ormal is a rich and lucrative region, but one which the Adûnai held only a small portion of during our heights. Outside of [anarike|E] and scattered entrepots, our grip was light. But if we could unite it, we could proclaim a mighty realm, one which would recall the splendor of lost Anadûnê.\n\nLet us prove our superiority and unite all the bay under the rightful rule of the Adûnai, and proclaim the Sakal an-Khar!"
  decision_sakal_an_khar_confirm: "Numenor shall rise anew through us!"
  decision_sakal_an_khar_effect.tt: "All vassals that are #V not#! of your #EMP heritage#! or #EMP religion#! will receive a #N -100#! opinion mallus of you."
  decision_sakal_an_khar_trigger.tt_1: "#V 10%#! of the [GetGeographicalRegion('special_sakal_an_khar_formable').GetName]:\n$BULLET_WITH_TAB$Current: [GetPlayer.MakeScope.ScriptValue('lotr_sakal_an_khar_geographical_region_control_complete')|2]\n$BULLET_WITH_TAB$Is your faith ([GetPlayer.GetFaith.GetName])\n$BULLET_WITH_TAB$Is your culture ([GetPlayer.GetCulture.GetName])"
@@ -4095,7 +4127,7 @@
 
  decision_sikentr_empire_expand_khy_title: "Consolidate the Bay of Ormal"
  decision_sikentr_empire_expand_khy_tooltip: "Secure the lands surrounding the Bay of Ormal"
- decision_sikentr_empire_expand_khy_desc: "Even mighty Sikentr could not overcome the might of Anarike in the days of their greatness. He marched as far as the Pelu River, but could go no further. The might of Anarike and [khy|E] have long-faded, and our hour has now arrived. We will control all lands along the Bay of Ormal."
+ decision_sikentr_empire_expand_khy_desc: "Even mighty Sikentr could not overcome the might of [anarike|E] in the days of their greatness. He marched as far as the Pelu River, but could go no further. The might of Anarikê and [khy|E] have long-faded, and our hour has now arrived. We will control all lands along the Bay of Ormal."
  decision_sikentr_empire_expand_khy_confirm: "The East is ours!"
 
  decision_sikentr_empire_expand_ray_title: "Consolidate the Bay of Tûlwang"
@@ -4108,7 +4140,15 @@
  decision_favor_overseers_desc: "As the Stormhost expands, its subjects must be kept in line, by the sword, if necessary. Installing a caste of loyal enforcers and overseers will see that Sîrayn is kept stable as the Army of the Southern Dragon marches onward."
  decision_favor_overseers_confirm: "Whom shall I seek?"
  decision_favor_overseers_effect.tt: "Gain access to unique [men_at_arms|E] and positive modifiers by aligning with Bulgans, Black Númenóreans, or Orcs."
-
+ 
+ decision_khorahil_infiltrate_yellow_mountains: "Infiltrate the Yellow Mountains"
+ decision_khorahil_infiltrate_yellow_mountains_tooltip: "Convert and build up the Orcish tribes of the mountains."
+ decision_khorahil_infiltrate_yellow_mountains_desc: "The [orcish|E] tribes of the [yellowmountains|E] are scattered and weak, not even worthy of conquest. I must build them into something stronger."
+ decision_khorahil_infiltrate_yellow_mountains_confirm: "Send envoys."
+ decision_khorahil_infiltrate_yellow_mountains.tt: "Unlock the 'Promote Cult' [character_interaction|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt2: "Unlock the 'Funnel Resources' [character_interaction|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt3: "Orcish [rulers|E] converted to #V [GetFaithByKey('faith_murghuri').GetName]#! will periodically grant [piety|E] and [hooks|E] to nearby [nazgul|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt4: "Your [realm|E] borders [GetTitleByKey('e_yellow_mountains').GetNameNoTier]
  decision_rebuild_lynerian_league: "Solidify the Lynerian League"
  decision_rebuild_lynerian_league_tooltip: "Help the fractured Lynerian city states unite"
  decision_rebuild_lynerian_league_desc: "Lyneria is fractured. The city states squabble over trade, ancient slights, and mundane provocations. They cannot unite on their own. If we were to lend diplomatic aid, mend broken bridges, and restore trust and build new friendships, we may be able to encourage a restoration of the Lynerian Leage of old, gaining a powerful ally in the process."
@@ -4142,7 +4182,7 @@
 
  decision_make_powa_mercantile_center_title: "Become a Mercantile Center"
  decision_make_powa_mercantile_center_tooltip: "Step out into the far battlefield of external politics"
- decision_make_powa_mercantile_center_desc: "After uniting, a new purpose was looked for, as survival and the day to day life became much less of a concern for the Pôwans. Thus we turned to our neighbors, not in retaliation for past transgressions, but to foster trade and friendship. Now our goods and people can be found from the shipyards of Anarikê to the grand cities of Gondor!"
+ decision_make_powa_mercantile_center_desc: "After uniting, a new purpose was looked for, as survival and the day to day life became much less of a concern for the Pôwans. Thus we turned to our neighbors, not in retaliation for past transgressions, but to foster trade and friendship. Now our goods and people can be found from the shipyards of [anarike|E] to the grand cities of Gondor!"
  decision_make_powa_mercantile_center_confirm: "Send out the Caravans!"
  decision_make_powa_mercantile_center_effect_tt_1: "Current: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_neighboring_rulers_count')]#!\nYou have at least #V 5#! neighboring rulers fulfilling the following:\n$BULLET_WITH_TAB$Your lover\n$BULLET_WITH_TAB$Your friend\n$BULLET_WITH_TAB$Your tributary\n$BULLET_WITH_TAB$Hooked by #v You#!"
  united_powa_peacefully_building_tt: "You are now eligable to upgrade the Halls of Unity to the Traders Forum."
@@ -4269,10 +4309,10 @@
  decision_visit_ormalian_port.tt.kandalar_desc: "#T #V [GetTitleByKey('c_kandalar').GetNameNoTier]#! #!\n\nA strategic outpost on Bulchyadean shores, Kandalar boasts strong shipwrights and bustling customs houses."
  decision_visit_ormalian_port_kandalar_tooltip: "#T #V [GetTitleByKey('c_kandalar').GetNameNoTier]#! #!\n\nA strategic outpost on Bulchyadean shores, Kandalar boasts strong shipwrights and bustling customs houses."
  decision_visit_ormalian_port.tt.narikhar: "[GetTitleByKey('c_narikhar').GetNameNoTier]"
- decision_visit_ormalian_port.tt.narikhar_desc: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nNarikhar, the Anarikêan capital, is a fortified port of silver, spice, and sapphire. It is the crown jewel of a proud trading realm."
+ decision_visit_ormalian_port.tt.narikhar_desc: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nNarikhar, the [anarikean|E] capital, is a fortified port of silver, spice, and sapphire. It is the crown jewel of a proud trading realm."
  decision_visit_ormalian_port_narikhar_tooltip: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nNarikhar, the Anarikêan capital, is a fortified port of silver, spice, and sapphire. It is the crown jewel of a proud trading realm."
  decision_visit_ormalian_port.tt.inyaloni: "[GetTitleByKey('c_inyaloni').GetNameNoTier]"
- decision_visit_ormalian_port.tt.inyaloni_desc: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nAnarikê’s second city is no mere shadow, as Inyalôni brims with dockworkers, treasuries, and independent brokers. A foothold here is a foothold into Anarikê’s future."
+ decision_visit_ormalian_port.tt.inyaloni_desc: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\n[anarike|E]’s second city is no mere shadow, as Inyalôni brims with dockworkers, treasuries, and independent brokers. A foothold here is a foothold into Anarikê’s future."
  decision_visit_ormalian_port_inyaloni_tooltip: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nAnarikê’s second city is no mere shadow, as Inyalôni brims with dockworkers, treasuries, and independent brokers."
  decision_visit_ormalian_port.tt.lyneria: "[GetTitleByKey('c_lyneria').GetNameNoTier]"
  decision_visit_ormalian_port.tt.lyneria_desc: "#T #V [GetTitleByKey('c_lyneria').GetNameNoTier]#! #!\n\nAt the centre of the League lies Lyneria, the jewel of the Lynerian Coast, proud and unbowed. Its artisans shape luxury from bone and bronze, while ivory caravans flow in from the wild interior of the Peninsula."
@@ -4479,10 +4519,10 @@
  control_trade_in_the_bay_of_ormal_decision.tt.kandalar_desc: "#T #V [GetTitleByKey('c_kandalar').GetNameNoTier]#! #!\n\nA strategic outpost on Bulchyadean shores, Kandalar boasts strong shipwrights and bustling customs houses. Dominating it allows naval projection and cuts off rival fleets.\n\n• You will gain [GetModifier('control_trade_in_the_bay_of_ormal_kandalar_modifier').GetNameWithTooltip] in your [capital|E] for as long as [GetTitleByKey('c_kandalar').GetNameNoTier] remains in your [realm|E]."
  control_trade_in_the_bay_of_ormal_kandalar_tooltip: "#T #V [GetTitleByKey('c_kandalar').GetNameNoTier]#! #!\n\nA strategic outpost on Bulchyadean shores, Kandalar boasts strong shipwrights and bustling customs houses. Dominating it allows naval projection and cuts off rival fleets.\n\n• You will gain [GetModifier('control_trade_in_the_bay_of_ormal_kandalar_modifier').GetNameWithTooltip] in your [capital|E] for as long as [GetTitleByKey('c_kandalar').GetNameNoTier] remains in your [realm|E]."
  control_trade_in_the_bay_of_ormal_decision.tt.narikhar: "[GetTitleByKey('c_narikhar').GetNameNoTier]"
- control_trade_in_the_bay_of_ormal_decision.tt.narikhar_desc: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nNarikhar, the Anarikêan capital, is a fortified port of silver, spice, and sapphire. It is the crown jewel of a proud trading realm. Possession would cripple Anarikêan influence across the Bay.\n\n• You will gain [GetModifier('control_trade_in_the_bay_of_ormal_narikhar_modifier').GetNameWithTooltip] in your [capital|E] for as long as [GetTitleByKey('c_narikhar').GetNameNoTier] remains in your [realm|E]."
+ control_trade_in_the_bay_of_ormal_decision.tt.narikhar_desc: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nNarikhar, the [anarikean|E] capital, is a fortified port of silver, spice, and sapphire. It is the crown jewel of a proud trading realm. Possession would cripple Anarikêan influence across the Bay.\n\n• You will gain [GetModifier('control_trade_in_the_bay_of_ormal_narikhar_modifier').GetNameWithTooltip] in your [capital|E] for as long as [GetTitleByKey('c_narikhar').GetNameNoTier] remains in your [realm|E]."
  control_trade_in_the_bay_of_ormal_narikhar_tooltip: "#T #V [GetTitleByKey('c_narikhar').GetNameNoTier]#! #!\n\nNarikhar, the Anarikêan capital, is a fortified port of silver, spice, and sapphire. It is the crown jewel of a proud trading realm. Possession would cripple Anarikêan influence across the Bay.\n\n• You will gain [GetModifier('control_trade_in_the_bay_of_ormal_narikhar_modifier').GetNameWithTooltip] in your [capital|E] for as long as [GetTitleByKey('c_narikhar').GetNameNoTier] remains in your [realm|E]."
  control_trade_in_the_bay_of_ormal_decision.tt.inyaloni: "[GetTitleByKey('c_inyaloni').GetNameNoTier]"
- control_trade_in_the_bay_of_ormal_decision.tt.inyaloni_desc: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nAnarikê’s second city is no mere shadow, as Inyalôni brims with dockworkers, treasuries, and independent brokers. A foothold here is a foothold into Anarikê’s future. Its loss would shake their confidence and coffers alike.\n\n• You will gain [GetModifier('control_trade_in_the_bay_of_ormal_inyaloni_modifier').GetNameWithTooltip] in your [capital|E] for as long as [GetTitleByKey('c_inyaloni').GetNameNoTier] remains in your [realm|E]."
+ control_trade_in_the_bay_of_ormal_decision.tt.inyaloni_desc: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\n[anarike]’s second city is no mere shadow, as Inyalôni brims with dockworkers, treasuries, and independent brokers. A foothold here is a foothold into Anarikê’s future. Its loss would shake their confidence and coffers alike.\n\n• You will gain [GetModifier('control_trade_in_the_bay_of_ormal_inyaloni_modifier').GetNameWithTooltip] in your [capital|E] for as long as [GetTitleByKey('c_inyaloni').GetNameNoTier] remains in your [realm|E]."
  control_trade_in_the_bay_of_ormal_inyaloni_tooltip: "#T #V [GetTitleByKey('c_inyaloni').GetNameNoTier]#! #!\n\nAnarikê’s second city is no mere shadow, as Inyalôni brims with dockworkers, treasuries, and independent brokers. A foothold here is a foothold into Anarikê’s future. Its loss would shake their confidence and coffers alike.\n\n• You will gain [GetModifier('control_trade_in_the_bay_of_ormal_inyaloni_modifier').GetNameWithTooltip] in your [capital|E] for as long as [GetTitleByKey('c_inyaloni').GetNameNoTier] remains in your [realm|E]."
  control_trade_in_the_bay_of_ormal_decision.tt.lyneria: "[GetTitleByKey('c_lyneria').GetNameNoTier]"
  control_trade_in_the_bay_of_ormal_decision.tt.lyneria_desc: "#T #V [GetTitleByKey('c_lyneria').GetNameNoTier]#! #!\n\nAt the centre of the League lies Lyneria, the jewel of the Lynerian Coast, proud and unbowed. Its artisans shape luxury from bone and bronze, while ivory caravans flow in from the wild interior of the Peninsula.\n\n• You will gain [GetModifier('control_trade_in_the_bay_of_ormal_lyneria_modifier').GetNameWithTooltip] in your [capital|E] for as long as [GetTitleByKey('c_lyneria').GetNameNoTier] remains in your [realm|E]."
@@ -4506,7 +4546,7 @@
  control_trade_in_the_bay_of_ormal_kandalar_modifier: "Trade with Kandalar"
  control_trade_in_the_bay_of_ormal_kandalar_modifier_desc: "Kandalar’s forested slopes produce hardy timber and precision tools, favoured by shipwrights and artisans throughout the Bay."
  control_trade_in_the_bay_of_ormal_narikhar_modifier: "Trade with Narikhar"
- control_trade_in_the_bay_of_ormal_narikhar_modifier_desc: "Sapphires mined from Anarikê’s highlands and hammered silver from Narikhar’s smithies bring splendour and hard coin alike to those who secure their flow."
+ control_trade_in_the_bay_of_ormal_narikhar_modifier_desc: "Sapphires mined from [anarike|E]’s highlands and hammered silver from Narikhar’s smithies bring splendour and hard coin alike to those who secure their flow."
  control_trade_in_the_bay_of_ormal_inyaloni_modifier: "Trade with Inyalôni"
  control_trade_in_the_bay_of_ormal_inyaloni_modifier_desc: "Inyalôni's tropical hardwoods are prized not only for their beauty, but for their strength and are used in fortifications and shipyards alike."
  control_trade_in_the_bay_of_ormal_lyneria_modifier: "Trade with Lyneria"
@@ -4547,7 +4587,7 @@
  decision_utter_south_integrate_shayn_mag_tumag_tt: "Integrated Shayn"
 
  decision_integrate_gan: "Integrate Gân"
- decision_integrate_gan_desc: "To the east lie the vast jungles and hills of [GetTitleByKey('k_gan').GetNameNoTier]. Often, the rulers of [GetTitleByKey('e_mumakan').GetNameNoTier] have held great sway over the many tribes of [men|E] there, but now the time has come to fully exert control over it. Gân shall become a part of Mumâkan forever, and strengthen the realm with its wealth of ressources!"
+ decision_integrate_gan_desc: "To the east lie the vast jungles and hills of [GetTitleByKey('k_gan').GetNameNoTier]. Often, the rulers of [GetTitleByKey('e_mumakan').GetNameNoTier] have held great sway over the many tribes of [men|E] there, but now the time has come to fully exert control over it. Gân shall become a part of Mumâkan forever, and strengthen the realm with its wealth of resources!"
  decision_integrate_gan_tooltip: "Make Gân a part of Mûmakan"
  decision_integrate_gan_confirm: "Aye!"
  decision_integrate_gan_tt: "Integrated Gân"
@@ -4651,6 +4691,7 @@
  decision_establish_lyneria_sea_trade_tooltip: "Begin trading with $k_lyneria$ by sea"
  decision_establish_lyneria_sea_trade_tt: "Sea Trade Established"
  decision_establish_lyneria_sea_trade_confed: "You are allied to a member of the [GetTitleByKey('c_lyneria').GetHolder.GetConfederation.GetName|V]"
+ decision_establish_lyneria_sea_trade_ruler: "You are allied to a [GetCultureByKey('lynerian').GetName] [ruler|E] in [GetGeographicalRegion('middleearth_uttersouth_shayn_lyneria').GetName]"
  capital_county_is_coastal: "Your [capital|E] is in a coastal [county|E]"
 
  decision_establish_lyneria_coastal_trade: "Establish Coastal Trade with Lyneria"
@@ -4767,7 +4808,7 @@
 
  decision_zantaka_civil_war: "Bring Ruin to the League"
  decision_zantaka_civil_war_tooltip: "Begin a great war to overthrow the ruling order of [GetTitleByKey('k_lyneria').GetNameNoTier] and empower yourself in its place."
- decision_zantaka_civil_war_desc: "Across [GetTitleByKey('k_lyneria').GetNameNoTier], I have gathered great forces in the shadows whose loyalty to my cause is unquestioned. In secret they have trained themselves and organized their forces, preparing themselves for the day I openly declare my war against the rotten order of the League. \n\nMy reforms have made my lands richer and greater than any other and brought me to peaks unseen by any ruler beyond the three great cities. The League remains strong, however, and the coming war is sure to be hard faught."
+ decision_zantaka_civil_war_desc: "Across [GetTitleByKey('k_lyneria').GetNameNoTier], I have gathered great forces in the shadows whose loyalty to my cause is unquestioned. In secret they have trained themselves and organized their forces, preparing themselves for the day I openly declare my war against the rotten order of the League. \n\nMy reforms have made my lands richer and greater than any other and brought me to peaks unseen by any ruler beyond the three great cities. The League remains strong, however, and the coming war is sure to be hard fought."
  decision_zantaka_civil_war_confirm: "Now comes my final trial."
  decision_zantaka_civil_war_effect_tt: "#P Upon starting your war to unify [GetTitleByKey('k_lyneria').GetNameNoTier] under your rule, you will receive an army of #italic #bold 6000 men.#!#! #N The war will be fought against the combined might of the entire Lynerian League. Make sure you are ready before making this gambit, there will be no second chance.#!"
 

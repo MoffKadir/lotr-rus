@@ -300,6 +300,13 @@
  donated_books_log: "[CHARACTER.GetShortUIName|U] decided to make a donation of books to the archives"
  chose_book1_log: "[CHARACTER.GetShortUIName|U] decided to keep [book_1.GetName]"
  chose_book2_log: "[CHARACTER.GetShortUIName|U] decided to keep [book_2.GetName]"
+
+ explore_history_study_hard_intent_header: "Study Hard:"
+ explore_history_study_hard_intent: "Study Hard"
+ explore_history_study_hard_intent_desc: "You devoted a lot of resources to this endeavour, and you plan to make the absolute most of it."
+ explore_history_lost_stress_log_title: "Lost Stress"
+ explore_history_increased_legitimacy_log_title: "Increased Legitimacy"
+ explore_history_studied_hard_log_title: "Studied Hard"
  
  #Guest Rules
  #activity_invite_other_elven_rulers: "Elven Rulers"
@@ -356,22 +363,30 @@
  ancestor_veneration_basic_funding_desc: "$EFFECT_LIST_BULLET$ No additional benefits\n\n#weak Enough to proceed, though the veneration will lack splendour.#!"
  ancestor_veneration_extra_funding: "Extra Funding"
  ancestor_veneration_extra_funding_desc: "$EFFECT_LIST_BULLET$ Possibility to choose a second area of focus\n\n#weak Sufficient means to pursue a veneration worthy of remembrance and respect.#!"
+
+ ancestor_veneration_study_hard_intent_header: "Study Hard:"
+ ancestor_veneration_study_hard_intent: "Study Hard"
+ ancestor_veneration_study_hard_intent_desc: "You devoted a lot of resources to preparing this, and you plan to make the absolute most of it."
+ ancestor_veneration_lost_stress_log_title: "Lost Stress"
+ ancestor_veneration_increased_legitimacy_log_title: "Increased Legitimacy"
+ ancestor_veneration_studied_hard_log_title: "Studied Hard"
  
  # Provinces
  activity_ancestor_veneration_destination_selection: "Traveling to a site hosting a large library will provide better opportunities for study."
- activity_ancestor_veneration_province_desc: "You hold an Ancestor Veneration in [ROOT.Province.GetName]\n[ROOT.Province.GetName] is a Delving [holding|E]\n"
+ activity_ancestor_veneration_province_desc: "You hold an Ancestor Veneration in [ROOT.Province.GetName]\n"
  activity_ancestor_veneration.is_location_valid.wrong_holder_faith: "#N You cannot consult the archives of a ruler whose alignment is opposed to yours."
  activity_ancestor_veneration.is_location_valid.not_in_list: "#N This province is outside of your [top_liege_possessive|E] [realm|E], is not held by any of your literate [contact_list_contacts|E], and holds no significant records."
  TRAVEL_NAME_FOR_activity_ancestor_veneration: "[Character.GetFirstNamePossessiveNoTooltip] $activity_ancestor_veneration$"
 
- activity_ancestor_veneration_province_desc_wonder_mazalabkan: "#P +++ $building_wonder_mazalabkan$#!\n"
- activity_ancestor_veneration_province_desc_wonder_gundabad_02: "#P +++ $building_wonder_gundabad_02$#!\n"
- activity_ancestor_veneration_province_desc_wonder_mirrormere: "#P +++ $building_wonder_mirrormere$#!\n"
+ activity_ancestor_veneration_province_desc_wonder_isengard: "#P +++ $building_wonder_isengard_01$#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_01: "#P +++ [GetBuilding('dwarven_hoard_01').GetName]#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_02: "#P +++ [GetBuilding('dwarven_hoard_02').GetName]#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_03: "#P +++ [GetBuilding('dwarven_hoard_03').GetName]#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_04: "#P +++ [GetBuilding('dwarven_hoard_04').GetName]#!\n"
  activity_ancestor_veneration_province_desc_dwarven_hoard_05: "#P +++ [GetBuilding('dwarven_hoard_05').GetName]#!\n"
+ activity_ancestor_veneration_province_desc_wonder_mazalabkan: "#P +++ $building_wonder_mazalabkan$#!\n"
+ activity_ancestor_veneration_province_desc_wonder_gundabad_02: "#P +++ $building_wonder_gundabad_02$#!\n"
+ activity_ancestor_veneration_province_desc_wonder_mirrormere: "#P +++ $building_wonder_mirrormere$#!\n"
  activity_ancestor_veneration_province_desc_wonder_durin_throne_t5: "#P +++ $building_wonder_durin_throne_t5$#!\n"
  activity_ancestor_veneration_province_desc_wonder_nogrod_reborn: "#P +++ $building_wonder_nogrod_reborn$#!\n"
  activity_ancestor_veneration_province_desc_wonder_belegost_reborn: "#P +++ $building_wonder_belegost_reborn$#!\n"
@@ -406,6 +421,7 @@
  activity_ancestor_veneration_province_desc_wonder_nar_agathol: "#P + $building_wonder_nar_agathol$#!\n"
 
  ancestor_veneration_base_cost: "Base cost"
+ ancestor_veneration_cost_discount_wonder_isengard: "Location has $building_wonder_isengard_01$#!"
  ancestor_veneration_cost_discount_dwarven_hoard_01: "Location has [GetBuilding('dwarven_hoard_01').GetName]#!"
  ancestor_veneration_cost_discount_dwarven_hoard_02: "Location has [GetBuilding('dwarven_hoard_02').GetName]#!"
  ancestor_veneration_cost_discount_dwarven_hoard_03: "Location has [GetBuilding('dwarven_hoard_03').GetName]#!"
@@ -985,6 +1001,7 @@
  
  opinion_attended_sailing_trip_guest: "Invited Me To Sailing Trip"
  opinion_attended_sailing_trip_host: "Took Part In My Sailing Trip"
+ sailing_variable_trigger: "Cannot use this [activity|E] until [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'sailing_type_cooldown') )]"
  
  activity_sailing_province_desc_common_tradeport_minor: "#P + $building_type_common_tradeport_01$#! ([building|E])\n"
  activity_sailing_province_desc_common_tradeport_medium: "#P ++ $building_type_common_tradeport_01$#! ([building|E])\n"
