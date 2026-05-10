@@ -88,7 +88,7 @@ types TitleHistory
 	type widget_title_history_item = widget {
 			size = { 470 160 }
 			datacontext = "[TitleHistory.GetCharacter]"
-			visible = "[Not( And(Character.GetGovernment.IsType('wastelands_government'), Not(GetVariableSystem.Exists( 'show_wastelands_title_history' ) ) ) )]"
+			visible = "[Not( And(Or(EqualTo_string(Character.GetFirstNameNoTooltip, 'temp_holder'), Character.GetGovernment.IsType('wastelands_government')), Not(GetVariableSystem.Exists( 'show_wastelands_title_history' ) ) ) )]"
 
 			vbox = {
 			# datacontext = "[TitleHistory.GetCharacter]" #LotR

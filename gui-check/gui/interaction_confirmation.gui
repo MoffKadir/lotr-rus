@@ -409,7 +409,11 @@ window = {
 					tooltip = "[CharacterInteractionConfirmationWindow.GetCanSendDescription]"
 					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_confirm"
 				}
-				lotr_tinkerer_perk_button = { } #LotR
+				widget = {
+					size = { 1 1 }
+					visible = "[And(CharacterInteractionConfirmationWindow.HasSelectedArtifact, Not(GetVariableSystem.Exists( 'character_interaction_change_artifact' )))]"
+        			lotr_tinkerer_perk_button = { } #LotR
+				}
 
 				## Send button Schemes
 				button_primary_big = {

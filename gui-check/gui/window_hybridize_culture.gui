@@ -10,7 +10,6 @@ window = {
 	parentanchor = center
 	size = { 1300 950 }
 	layer = middle
-	movable = no #LotR
 
 	using = Window_Background
 	using = Window_Decoration
@@ -73,7 +72,6 @@ window = {
 						name = "culture_name"
 						size = { 530 60 }
 						onclick = "[GetVariableSystem.Set( 'culture_creation_right_view', 'name_selection' )]"
-
 						tooltip = CULTURE_CREATION_NAME_TOOLTIP
 
 						text_multi = {
@@ -115,6 +113,7 @@ window = {
 					margin_bottom = 10
 
 					button_tab = {
+						shortcut = "tab_1"
 						layoutpolicy_horizontal = expanding
 						onclick = "[GetVariableSystem.Set( 'culture_creation_tab', 'pillars' )]"
 						down = "[GetVariableSystem.HasValue( 'culture_creation_tab', 'pillars' )]"
@@ -128,6 +127,7 @@ window = {
 					}
 
 					button_tab = {
+						shortcut = "tab_2"
 						layoutpolicy_horizontal = expanding
 						onclick = "[GetVariableSystem.Set( 'culture_creation_tab', 'traditions' )]"
 						down = "[GetVariableSystem.HasValue( 'culture_creation_tab', 'traditions' )]"
@@ -141,6 +141,7 @@ window = {
 					}
 
 					button_tab = {
+						shortcut = "tab_3"
 						layoutpolicy_horizontal = expanding
 						onclick = "[GetVariableSystem.Set( 'culture_creation_tab', 'aesthetics' )]"
 						down = "[GetVariableSystem.HasValue( 'culture_creation_tab', 'aesthetics' )]"

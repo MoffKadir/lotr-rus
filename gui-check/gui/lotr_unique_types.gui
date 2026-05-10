@@ -1397,6 +1397,26 @@ types LotRWindowCountyViewTypes
 			}
 		}
 	}
+
+	type LotROpenAutomatedColonisationWindow = widget {
+		size = { 30 30 }
+		visible = "[HoldingView.HasHolder]"
+		parentanchor = left
+		button_standard = {
+			size = { 30 30 }
+			parentanchor = center
+
+			onclick = "[OpenGameViewData( 'title_view_window', HoldingView.GetCountyTitle.GetDeJureLiegeOfTier('duchy').Self )]"
+			tooltip = "WASTELANDS_AUTOMATION_OPEN_DUCHY_WINDOW"
+			using = tooltip_sw
+
+			button_army_automation = {
+				parentanchor = center
+				alwaystransparent = yes
+				size = { 28 28 }
+			}
+		}
+	}
 }
 
 types LotRHudTypes
@@ -1489,6 +1509,7 @@ types LotRCultureDescriptionTypes
 		}
 		scrollarea = {
 			size = { 405 450 }
+			scrollbarpolicy_horizontal = always_off
 			scrollwidget = {
 				text_multi = {
 					name = "lotr_cultural_description"
@@ -1505,6 +1526,116 @@ types LotRCultureDescriptionTypes
 
 			scrollbar_vertical = {
 				using = Scrollbar_Vertical
+			}
+		}
+	}
+}
+
+types LotRAutomatedWastelandsColonisation
+{
+	type LotRAutomatedColonisationWidget = widget {
+		size = { 150 36 }
+		text_multi = {
+			parentanchor = right
+			max_width = 80
+			text = "WASTELANDS_AUTOMATION_FEATURE_NAME"
+			default_format = "#weak"
+			autoresize = yes
+		}
+
+		LotRAutomatedColonisationButton = { }
+		
+		LotROpenAutomatedColonisationSettingsWindow = { }
+	}
+
+	type LotRAutomatedColonisationButton = button_standard {
+		size = { 36 36 }
+		parentanchor = left
+		position = { 40 0 }
+
+		onclick = "[GetScriptedGui('lotr_WAC_effect_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End)]"
+		down = "[Not(GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End))]" 
+		enabled = "[And(GetScriptedGui('lotr_WAC_no_valid_counties_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), GetScriptedGui('lotr_WAC_higher_title_already_selected_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End))]"
+		tooltip = "WASTELANDS_AUTOMATION_TOGGLE_TT"
+		using = tooltip_sw
+
+		button_army_automation = {
+			parentanchor = center
+			alwaystransparent = yes
+			size = { 32 32 }
+
+			visible = "[GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End)]"
+		}
+
+		army_automation_on_flat = {
+			parentanchor = center
+			alwaystransparent = yes
+
+			visible = "[Not(GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End))]"
+		}
+	}
+
+	type LotROpenAutomatedColonisationSettingsWindow = button_standard {
+		size = { 36 36 }
+		parentanchor = left
+		allow_outside = yes
+		onclick = "[GetVariableSystem.Toggle( 'automated_colonisation_settings_window' )]"
+		down = "[GetVariableSystem.Exists( 'automated_colonisation_settings_window' )]"
+
+		tooltip = "WASTELANDS_AUTOMATION_SETTINGS"
+		using = tooltip_sw
+
+		button_edit_automation = {
+			parentanchor = center
+			alwaystransparent = yes
+			size = { 28 28 }
+		}
+	}
+}
+
+types LotRLifestyleTypes
+{
+	type LotRRecyclePerk = widget {
+		visible = "[GetVariableSystem.Exists('lotr_recycle_perk_points')]"
+		size = { 300 300 }
+		parentanchor = right
+		position = { -130 190 }
+		background = {
+			using = Background_Area_Solid
+			alpha = 1
+		}
+
+		state = {
+			name = _show
+			using = Animation_FadeIn_Quick
+		}
+
+		state = {
+			name = _hide
+			using = Animation_FadeOut_Quick
+		}
+
+		vbox = {
+			datamodel = "[CharacterLifestyleWindow.GetLifestyles]"
+			item = {
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					icon = {
+						size = { 40 40 }
+						texture = "[Lifestyle.GetIcon]"
+						framesize = { 160 160 }
+					}
+					text_single = {
+						text = "lotr_recycle_perk_point_xp"
+					}
+					button_plus = { # CharacterLifestyleWindow.GetSelectedLifestyle
+						size = { 40 40 }
+						onclick = "[GetScriptedGui(Concatenate(Concatenate('lotr_recycle_',Lifestyle.GetKey),'_effect')).Execute( GuiScope.SetRoot( CharacterLifestyleWindow.GetCharacter.MakeScope ).End)]"
+						onclick = "[GetScriptedGui(Concatenate('lotr_recycle_',CharacterLifestyleWindow.GetSelectedLifestyle.GetKey)).Execute( GuiScope.SetRoot( CharacterLifestyleWindow.GetCharacter.MakeScope ).End)]" # 
+						enabled = "[And(GetScriptedGui(Concatenate('lotr_recycle_',CharacterLifestyleWindow.GetSelectedLifestyle.GetKey)).IsValid( GuiScope.SetRoot( CharacterLifestyleWindow.GetCharacter.MakeScope ).End), Not(ObjectsEqual(CharacterLifestyleWindow.GetSelectedLifestyle.GetKey,Lifestyle.GetKey)))]"
+						tooltip = "[GetScriptedGui(Concatenate(Concatenate('lotr_recycle_',Lifestyle.GetKey),'_effect')).BuildTooltip( GuiScope.SetRoot( CharacterLifestyleWindow.GetCharacter.MakeScope ).End)]"
+					}
+				}
 			}
 		}
 	}

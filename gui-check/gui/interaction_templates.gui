@@ -1117,6 +1117,7 @@ types CharacterInteraction
 			layoutpolicy_horizontal = expanding
 
 			button_tab = {
+				shortcut = "tab_1"
 				name = "show_accept_effects"
 				layoutpolicy_horizontal = expanding
 				text = "INTERACTION_SHOW_ACCEPT_EFFECTS"
@@ -1127,6 +1128,7 @@ types CharacterInteraction
 			}
 
 			button_tab = {
+				shortcut = "tab_2"
 				name = "show_intermediary_decline_effects"
 				layoutpolicy_horizontal = expanding
 				visible = "[InteractionEffectsDescription.IsIntermediaryVisible]"
@@ -1138,6 +1140,7 @@ types CharacterInteraction
 			}
 
 			button_tab = {
+				shortcut = "tab_3"
 				name = "show_decline_effects"
 				layoutpolicy_horizontal = expanding
 				text = "INTERACTION_SHOW_DECLINE_EFFECTS"
@@ -2879,6 +2882,21 @@ types InteractionCharacterList
 		vbox_character_list = {
 			layoutpolicy_horizontal = expanding
 			layoutpolicy_vertical = expanding
+			
+			blockoverride "traits_grid" {
+				fixedgrid_traits_list = {
+					visible = "[CharacterInteractionConfirmationWindow.GetInteraction.ShowsMilitaryStrength]"
+					blockoverride "horizontal_slots" {
+						maxhorizontalslots = 6
+					}
+				}
+				fixedgrid_traits_list = {
+					visible = "[Not(CharacterInteractionConfirmationWindow.GetInteraction.ShowsMilitaryStrength)]"
+					blockoverride "horizontal_slots" {
+						maxhorizontalslots = 8
+					}
+				}
+			}
 
 			blockoverride "special_character"
 			{
@@ -3046,6 +3064,15 @@ types InteractionCharacterList
 								size = { 30 30 }
 								texture = "gfx/interface/icons/icon_obedience.dds"
 							}
+						}
+						
+						### ITEM MILITARY ###
+						hbox = {
+							visible = "[CharacterInteractionConfirmationWindow.GetInteraction.ShowsMilitaryStrength]"
+							datacontext = "[CharacterInteractionConfirmationWindow.GetArmyComposition( CharacterListItem.Self )]"
+							spacing = 4
+
+							using = VisibleArmyComposition
 						}
 
 						# Acceptance

@@ -47,11 +47,11 @@ types LotRCompatibilityTypes
         blockoverride "button_close" { onclick = "[GetVariableSystem.Toggle('lotr_warning_county')]" }
         blockoverride "text" { text = "lotr_warning_county" }
     }
-    type lotr_warning_lifestyle = lotr_compatibility_warning {
-        visible = "[Not(GetVariableSystem.Exists('lotr_warning_lifestyle'))]"
-        blockoverride "button_close" { onclick = "[GetVariableSystem.Toggle('lotr_warning_lifestyle')]" }
-        blockoverride "text" { text = "lotr_warning_lifestyle" }
-    }
+    # type lotr_warning_lifestyle = lotr_compatibility_warning {
+    #     visible = "[Not(GetVariableSystem.Exists('lotr_warning_lifestyle'))]"
+    #     blockoverride "button_close" { onclick = "[GetVariableSystem.Toggle('lotr_warning_lifestyle')]" }
+    #     blockoverride "text" { text = "lotr_warning_lifestyle" }
+    # }
     type lotr_warning_character_finder = lotr_compatibility_warning {
         visible = "[Not(GetVariableSystem.Exists('lotr_warning_character_finder'))]"
         blockoverride "button_close" { onclick = "[GetVariableSystem.Toggle('lotr_warning_character_finder')]" }

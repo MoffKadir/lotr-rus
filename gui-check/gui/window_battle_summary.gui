@@ -476,35 +476,33 @@ window = {
 				margin_top = 10
 
 				button_tab = {
-					visible = "[Not(BattleSummaryWindow.IsSoldiersShown)]"
+					shortcut = "tab_1"
 					layoutpolicy_horizontal = expanding
-					text = "BATTLE_SUMMARY_SOLDIERS"
+					down = "[BattleSummaryWindow.IsSoldiersShown]"
+					alwaystransparent = "[BattleSummaryWindow.IsSoldiersShown]"
 					onclick = "[BattleSummaryWindow.OnShowSoldiers]"
 					onclick = "[BattleSummaryWindow.RestoreSort]"
-					down = "[BattleSummaryWindow.IsSoldiersShown]"
+
+					blockoverride "tab_label"
+					{
+						text = "BATTLE_SUMMARY_SOLDIERS"
+						max_width = 170
+					}
 				}
 
 				button_tab = {
-					visible = "[BattleSummaryWindow.IsSoldiersShown]"
+					shortcut = "tab_2"
 					layoutpolicy_horizontal = expanding
-					text = "BATTLE_SUMMARY_SOLDIERS"
-					down = "[BattleSummaryWindow.IsSoldiersShown]"
-				}
-
-				button_tab = {
-					visible = "[Not(BattleSummaryWindow.IsKnightsShown)]"
-					layoutpolicy_horizontal = expanding
-					text = "BATTLE_SUMMARY_KNIGHTS"
+					down = "[BattleSummaryWindow.IsKnightsShown]"
+					alwaystransparent = "[BattleSummaryWindow.IsKnightsShown]"
 					onclick = "[BattleSummaryWindow.OnShowKnights]"
 					onclick = "[BattleSummaryWindow.RestoreSort]"
-					down = "[BattleSummaryWindow.IsKnightsShown]"
-				}
 
-				button_tab = {
-					visible = "[BattleSummaryWindow.IsKnightsShown]"
-					layoutpolicy_horizontal = expanding
-					text = "BATTLE_SUMMARY_KNIGHTS"
-					down = "[BattleSummaryWindow.IsKnightsShown]"
+					blockoverride "tab_label"
+					{
+						text = "BATTLE_SUMMARY_KNIGHTS"
+						max_width = 170
+					}
 				}
 			}
 

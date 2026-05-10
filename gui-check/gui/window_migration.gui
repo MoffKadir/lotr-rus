@@ -36,7 +36,7 @@ window = {
 		}
 
 		blockoverride "location_pick_illustration_texture"
-		{	
+		{
 			texture = "gfx/interface/illustrations/event_scenes/mpo_camp_steppe.dds"
 		}
 	}
@@ -1115,7 +1115,6 @@ types Migration
 	}
 
 	type nomad_widget = widget {
-
 		name = "nomad_widget"
 
 		block "visibility" {}
@@ -1125,24 +1124,21 @@ types Migration
 
 		widget = {
 			parentanchor = top
-			position = { 0 -40 }
+			position = { 0 -36 }
 			size = { 180 100 }
 			allow_outside = yes
 
 			hbox = {
 				layoutpolicy_vertical = expanding
 				layoutpolicy_horizontal = expanding
-				# margin_left = 13
-				spacing = -12
+				spacing = -5
 				allow_outside = yes
 
-				lotr_second_in_command_hud = {}
+				lotr_second_in_command_hud = {} #LotR
 
 				vbox = {
 					layoutpolicy_vertical = expanding
 					layoutpolicy_horizontal = expanding
-					spacing = -10
-					margin_top = 4
 					allow_outside = yes
 					visible = "[IsNomad( Character )]" #LotR
 
@@ -1175,7 +1171,7 @@ types Migration
 					}
 
 					hbox = {
-						spacing = 2
+						spacing = 5
 						datacontext = "[Character.GetInvolvedMigrationSituation]"
 						datacontext = "[Situation.GetCharacterCurrentPhase( Character.Self ).GetType]"
 
@@ -1256,22 +1252,28 @@ types Migration
 						}
 					}
 
-					icon_round_button_base = {
-						parentanchor = center
+					widget = {
+						parentanchor = hcenter|bottom
+						position = { 0 -12 }
 						size = { 72 72 }
-					}
 
-					highlight_icon = {
-						name = "dominance icon"
-						size = { 72 72 }
-						texture = "[Law.GetIcon]"
-						parentanchor = center
+						icon_round_button_base = {
+							parentanchor = center
+							size = { 72 72 }
+						}
+
+						highlight_icon = {
+							name = "dominance icon"
+							parentanchor = center
+							size = { 72 72 }
+							texture = "[Law.GetIcon]"
+						}
 					}
 
 					widget = {
 						parentanchor = hcenter|bottom
 						size = { 68 16 }
-						position = { 0 -7 }
+						position = { 0 -6 }
 
 						flowcontainer = {
 							parentanchor = vcenter

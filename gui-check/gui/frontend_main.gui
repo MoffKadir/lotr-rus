@@ -77,7 +77,7 @@ widget = {
 						flowcontainer = {
 							spacing = 18
 
-							pops_login_accountwidget = {
+							sdk_login_accountwidget = {
 								parentanchor = vcenter
 								size = { 25 25 }
 								alpha = 0.7
@@ -305,7 +305,7 @@ widget = {
 							vbox = {
 								spacing = 10
 								hbox = {
-									visible = "[And( POPSStatusIsLoggedIn, Not( POPStatusIsUserNameEmpty ) )]"
+									visible = "[And( StatusIsLoggedIn, Not( StatusIsUserNameEmpty ) )]"
 									spacing = 10
 
 									button_primary_big_realms = {
@@ -350,7 +350,7 @@ widget = {
 								}
 
 								hbox = {
-									visible = "[Or( Not( POPSStatusIsLoggedIn ), POPStatusIsUserNameEmpty )]"
+									visible = "[Or( Not( StatusIsLoggedIn ), StatusIsUserNameEmpty )]"
 									spacing = 10
 
 									button_primary_big_realms = {
@@ -1594,7 +1594,7 @@ widget = {
 	lotr_warning_character = {}
 	lotr_warning_hud = {}
 	lotr_warning_county = {}
-	lotr_warning_lifestyle = {}
+	# lotr_warning_lifestyle = {}
 	lotr_warning_character_finder = {}
 	lotr_warning_faith_conversion = {}
 	lotr_warning_faith = {}

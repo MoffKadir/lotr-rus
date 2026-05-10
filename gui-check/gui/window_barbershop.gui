@@ -1023,24 +1023,13 @@ types BarbershopTypes {
 				}
 
 				vbox = {
-					spacing = 5
-					
-					button_clear = {
-						name = "revert_to_default"
-						size = { 36 36 }
-						onclick = "[BarbershopColorPickerHandler.ResetColorToNatural]"
-
-						tooltip = "BARBERSHOP_RESET_NATURAL_COLORS_TT"
-						using = tooltip_ne
-					}
-
 					widget = {
 						name = "spectrum_icon"
-						size = { 32 216 }
+						size = { 32 256 }
 
 						icon = {
 							name = "color_slider"
-							size = { 32 216 }
+							size = { 32 256 }
 							shaderfile = "gfx/FX/pdxgui_colorpicker.shader"
 							effectname = "PdxGuiColorSlider"
 							texture = "gfx/editor_gui/editor_transparent.dds"
@@ -1062,7 +1051,7 @@ types BarbershopTypes {
 							name = "spectrum_border"
 							parentanchor = center
 							alwaystransparent = yes
-							size = { 36 220 }
+							size = { 36 260 }
 
 							background = {
 								texture = "gfx/interface/component_tiles/tile_vignette_3px.dds"

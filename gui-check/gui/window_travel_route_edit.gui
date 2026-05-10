@@ -49,8 +49,26 @@
 
 			text_multi = {
 				name = "instruction_text"
+				visible = "[Not( TravelRouteEditWindow.IsInQuickEditMode )]"
 
 				text = "TRAVEL_EDIT_ROUTE_INSTRUCTION"
+				align = center|nobaseline
+				autoresize = yes
+				default_format = "#I"
+				max_width = 380
+
+				margin = { 15 10 }
+
+				background = {
+					using = Background_Area_Dark
+				}
+			}
+
+			text_multi = {
+				name = "instruction_text_multi_edit"
+				visible = "[TravelRouteEditWindow.IsInQuickEditMode]"
+
+				text = "TRAVEL_EDIT_ROUTE_QUICK_EDIT_INSTRUCTION"
 				align = center|nobaseline
 				autoresize = yes
 				default_format = "#I"
@@ -67,13 +85,13 @@
 				name = "route_scroll"
 				layoutpolicy_vertical = expanding
 				layoutpolicy_horizontal = expanding
-	
+
 				blockoverride "scrollbox_content"
 				{
 					vbox = {
 						layoutpolicy_horizontal = expanding
-						spacing = 8
-	
+						spacing = 4
+
 						datamodel = "[TravelPlanData.GetDestinations]"
 
 						vbox = {
@@ -88,8 +106,8 @@
 						item = {
 							vbox = {
 								layoutpolicy_horizontal = expanding
-								spacing = 8
-	
+								spacing = 4
+
 								vbox = {
 									name = "detours_between_destinations"
 									visible = "[Not( IsDataModelEmpty( TravelPlanDestination.GetWaypoints ) )]"
@@ -114,14 +132,14 @@
 									}
 								}
 
-								hbox_add_detour_here = { 
-									visible = "[Or( TravelRouteEditWindow.IsSelectingProvinceAtEnd( TravelPlanDestination.GetIndex ), And(  TravelRouteEditWindow.IsSelectingProvinceAtBegin( TravelPlanDestination.GetIndex ), IsDataModelEmpty( TravelPlanDestination.GetWaypoints ) ) )]"
+								hbox_add_detour_here = {
+									visible = "[TravelRouteEditWindow.IsSelectingProvinceBeforeDestination( TravelPlanDestination.GetIndex )]"
 									layoutpolicy_horizontal = expanding
 								}
 
 								button_fixed_destination = {
 									layoutpolicy_horizontal = expanding
-								}								
+								}
 							}
 						}
 					}
@@ -180,7 +198,8 @@ types TravelRouteEditTypes
 		margin_left = 32
 
 		hbox = {
-			margin = {4 4}
+			margin = { 4 4 }
+			margin_right = 10
 			spacing = 4
 
 			layoutpolicy_horizontal = expanding
@@ -198,8 +217,11 @@ types TravelRouteEditTypes
 			}
 
 			button_cancel = {
-				size = { 30 30 }
 				onclick = "[TravelRouteEditWindow.StopProvinceSelection]"
+				inherit_visual_state = no
+				background = {
+					using = Background_Area_Dark
+				}
 			}
 		}
 	}
@@ -207,7 +229,7 @@ types TravelRouteEditTypes
 	type button_fixed_departure = button {
 		datacontext = "[TravelPlanData.GetDepartureLocation]"
 		datacontext = "[Province.GetTitle]"
-		size = {0 60}
+		size = { 0 60 }
 
 		using = State_Title_MouseEntry
 
@@ -220,6 +242,7 @@ types TravelRouteEditTypes
 			coa_title_tiny = {
 				datacontext = "[Province.GetCoATitle]"
 				using = tooltip_ws
+				blockoverride "position" {}
 			}
 
 			vbox = {
@@ -277,12 +300,13 @@ types TravelRouteEditTypes
 			coa_title_tiny = {
 				datacontext = "[Province.GetCoATitle]"
 				using = tooltip_ws
+				blockoverride "position" {}
 			}
 
-			vbox = {				
+			vbox = {
 				text_single = {
 					layoutpolicy_horizontal = expanding
-					
+
 					text = "[Province.GetNameNoTooltip]"
 					align = nobaseline
 					default_format = "#V"
@@ -291,7 +315,7 @@ types TravelRouteEditTypes
 				text_single = {
 					datacontext = "[TravelPlanDestination.GetProvince]"
 					layoutpolicy_horizontal = expanding
-					
+
 					text = "TRAVEL_EDIT_ROUTE_FIXED_SUB_LABEL"
 
 					align = nobaseline
@@ -339,7 +363,7 @@ types TravelRouteEditTypes
 
 				hbox = {
 					layoutpolicy_horizontal = expanding
-					
+
 					margin = { 10 10 }
 					spacing = 5
 
@@ -347,16 +371,17 @@ types TravelRouteEditTypes
 						visible = "[Province.GetCoATitle.IsValid]"
 						datacontext = "[Province.GetCoATitle]"
 						using = tooltip_ws
+						blockoverride "position" {}
 					}
 
 					widget = {
 						visible = "[Not( Province.GetCoATitle.IsValid )]"
 						size = { 42 42 }
-						
+
 						icon = {
 							parentanchor = center
 							texture = "[Province.GetTerrain.GetIcon]"
-							position = { 1 0 }
+							position = { 1 1 }
 							size = { 35 35 }
 						}
 					}
@@ -370,9 +395,9 @@ types TravelRouteEditTypes
 					button_cancel = {
 						visible = "[TravelRouteEditWindow.CanRemoveWaypoint( TravelPlanDestination.GetIndex, TravelPlanWaypoint.GetIndex )]"
 						onclick = "[TravelRouteEditWindow.RemoveWaypoint( TravelPlanDestination.GetIndex, TravelPlanWaypoint.GetIndex )]"
-						
+
 						tooltip = TRAVEL_EDIT_ROUTE_REMOVE_DETOUR_TT
-						
+
 						inherit_visual_state = no
 					}
 

@@ -324,9 +324,11 @@ types TravelPlannerTypes
 			parentanchor = left|vcenter
 			position = { 4 0 }
 			size =  { 50 50 }
+			shortcut = travel_option
 
 			enabled = "[Not( TravelPlanner.GetTravelPlan.IsValid )]"
 			onclick = "[TravelPlanner.OpenTravelOptionSelectionWindow]"
+			tooltip = "TRAVEL_OPTIONS_SELECT"
 
 			icon_flat_standard = {
 				parentanchor = center
@@ -373,6 +375,7 @@ types TravelPlannerTypes
 			visible = "[Not( Character.IsValid )]"
 			enabled = "[Not( TravelPlanner.GetTravelPlan.IsValid )]"
 			onclick = "[ShowCourtPositionAppointOrReplace( TravelPlanData.GetOwner.GetID, 'travel_leader_court_position' )]"
+			shortcut = appoint_caravan_master
 		}
 	}
 

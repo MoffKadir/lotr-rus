@@ -149,6 +149,8 @@ types PortraitTypes
 			direction = vertical
 			margin = { 4 0 }
 			margin_bottom = 5
+			
+			block "show_portrait_status_icons" {}
 
 			portrait_status_icons_small = {
 				parentanchor = right
@@ -446,6 +448,15 @@ types PortraitTypes
 							enabled = no
 							texture = "gfx/interface/icons/portraits/disobedient_small.dds"
 							tooltipwidget = widget_obedience_tooltip
+						}
+
+						icon = {
+							name = "acclaimed_knight"
+							visible = "[Character.IsAcclaimedKnight]"
+							size = { 14 14 }
+							texture = "gfx/interface/icons/acclaimed_knight.dds"
+							datacontext = "[Character.GetAcclaimedAccolade]"
+							tooltipwidget = accolade_tooltip
 						}
 
 						flowcontainer = {
@@ -2143,6 +2154,7 @@ types PortraitTypes
 		margin_right = 2
 
 		background = {
+			block "opinion_background" {}
 			name = "portrait_opinion_bg"
 			texture = "gfx/interface/component_tiles/solid_black_label.dds"
 			spritetype = Corneredtiled
@@ -2342,6 +2354,15 @@ types PortraitTypes
 					enabled = no
 					texture = "gfx/interface/icons/portraits/disobedient_small.dds"
 					tooltipwidget = widget_obedience_tooltip
+				}
+
+				icon = {
+					name = "acclaimed_knight"
+					visible = "[Character.IsAcclaimedKnight]"
+					size = { 14 14 }
+					texture = "gfx/interface/icons/portraits/knight_acclaimed.dds"
+					datacontext = "[Character.GetAcclaimedAccolade]"
+					tooltipwidget = accolade_tooltip
 				}
 
 				flowcontainer = {
@@ -2641,6 +2662,15 @@ types PortraitTypes
 				enabled = no
 				texture = "gfx/interface/icons/portraits/disobedient.dds"
 				tooltipwidget = widget_obedience_tooltip
+			}
+
+			icon = {
+				name = "acclaimed_knight"
+				visible = "[Character.IsAcclaimedKnight]"
+				size = { 20 20 }
+				texture = "gfx/interface/icons/portraits/knight_acclaimed.dds"
+				datacontext = "[Character.GetAcclaimedAccolade]"
+				tooltipwidget = accolade_tooltip
 			}
 
 			container_dynastic_cycle_group_icons = {}

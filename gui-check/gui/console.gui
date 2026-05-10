@@ -187,8 +187,16 @@ flowcontainer = {
 
 				dockable_button = {
 					name = "run_file_button"
-					onclick = "[ExecuteConsoleCommand('run run.txt')]"
-					raw_tooltip = "Run file #weak (Edit Run.txt to change what this button does)#!"
+					click_modifiers = {
+						ondefault = "[ExecuteConsoleCommand('run run.txt')]"
+						onshift = "[ExecuteConsoleCommand('run run_shift.txt')]"
+					}
+					rightclick_modifiers = {
+						ondefault = "[ExecuteConsoleCommand('run run_rmb.txt')]"
+						onshift = "[ExecuteConsoleCommand('run run_rmb_shift.txt')]"
+				    }
+					button_ignore = none
+					raw_tooltip = "LMB to execute script in run.txt, LMB+Shift: run_shift.txt, RMB: run_rmb.txt or RMB+Shift: run_rmb_shift.txt"
 					using = tooltip_ne
 
 					icon = {
@@ -347,7 +355,15 @@ flowcontainer = {
 						parentanchor = center
 						position = { 0 1 }
 						size = { 30 30 }
+						visible = "[Not(IsShiftDown)]"
 						texture = "gfx/interface/icons/icon_gold.dds"
+					}
+					icon = {
+						parentanchor = center
+						position = { 0 1 }
+						size = { 30 30 }
+						visible = "[IsShiftDown]"
+						texture = "gfx/interface/icons/icon_imperial_treasury.dds"
 					}
 				}
 
@@ -807,6 +823,15 @@ flowcontainer = {
 					onclick = "[ExecuteConsoleCommand('Script.Profiling.Gui')]"
 					tintcolor = { 0.9 0.9 0 0.8 }
 					raw_tooltip = "Tool for profiling script performance"
+				}
+
+				dockable_button = {
+					layoutpolicy_horizontal = expanding
+					size = { 0 30 }
+					raw_text = "Map Editor"
+					onclick = "[ExecuteConsoleCommand('map_editor')]"
+					tintcolor = { 0.9 0.9 0 0.8 }
+					raw_tooltip = "I wisely started with a map, and made the story fit"
 				}
 
 				dockable_button = {
