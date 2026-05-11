@@ -1,0 +1,23 @@
+﻿l_russian:
+
+ invite_a_court_brahmin_decision: "Найти верховного ритуалиста"
+ invite_a_court_brahmin_decision_desc: "[GetCourtPositionType('court_brahmin_court_position').GetName()] — ценный союзник. Он может заботиться об отношениях с данниками и давать наставления в трудные времена."
+ invite_a_court_brahmin_decision_tooltip: "Ваши слуги предложат несколько кандидатур, подходящих на должность #TOOLTIP:COURT_POSITION_TYPE,court_brahmin_court_position #L верховного ритуалиста#!#!"
+ tgp_east_asia_decision_events.0200.t: "$court_brahmin_court_position$ при дворе"
+ tgp_east_asia_decision_events.0200.desc: "Мой призыв разнёсся по всей державе, и вскоре ко двору явились два духовных наставника.\n\n[great_brahmin_option.GetTitledFirstName|U], всем своим видом излучая спокойствие, предаётся тихим размышлениям, а менее [Select_CString(good_brahmin_option.IsFemale, 'искушённая', 'искушённый' )] [good_brahmin_option.GetTitledFirstName] восторженно глядит по сторонам, явно желая скорее занять должность."
+ tgp_east_asia_decision_events.0200.a: "[great_brahmin_option.GetTitledFirstNameNoTooltip|U] станет украшением моего двора."
+ tgp_east_asia_decision_events.0200.a.aptitude: "[great_brahmin_option.GetFirstNameNoTooltip] обладает следующей [Concept('aptitude', 'пригодностью')|E]: [great_brahmin_option.GetCourtPositionAptitude( GetCourtPositionType( 'court_brahmin_court_position' ) )]"
+ tgp_east_asia_decision_events.0200.b: "Полагаю, [good_brahmin_option.GetTitledFirstNameNoTooltip] — весьма перспективная кандидатура."
+ tgp_east_asia_decision_events.0200.b.aptitude: "[good_brahmin_option.GetFirstNameNoTooltip] обладает следующей [Concept('aptitude', 'пригодностью')|E]: [good_brahmin_option.GetCourtPositionAptitude( GetCourtPositionType( 'court_brahmin_court_position' ) )]"
+ tgp_east_asia_decision_events.0200.c: "Ни один из кандидатов меня не впечатлил."
+
+ invite_a_khlon_glan_decision: "Найти королевского казначея"
+ invite_a_khlon_glan_decision_desc: "Пора найти достойного королевского казначея, чтобы поручить ему развитие столицы, управление землями и руководство придворными делами."
+ invite_a_khlon_glan_decision_tooltip: "Ваши слуги предложат несколько кандидатур, подходящих на должность #TOOLTIP:COURT_POSITION_TYPE,khlon_glan_court_position #L королевского казначея#!#!"
+ tgp_east_asia_decision_events.0210.t: "Королевский казначей"
+ tgp_east_asia_decision_events.0210.desc: "В ответ на мой призыв во дворец явились двое: [great_khlon_glan_option.GetTitledFirstName] и [good_khlon_glan_option.GetTitledFirstName].\n\nМы вошли в оружейную, где королевский казначей вершит большую часть своих дел.\n\n[great_khlon_glan_option.GetTitledFirstNameNoTooltip] [Select_CString(great_khlon_glan_option.IsFemale, 'оценила', 'оценил' )] её запасы буквально с одного-двух взглядов, а [good_khlon_glan_option.GetTitledFirstNameNoTooltip] [Select_CString(good_khlon_glan_option.IsFemale, 'потратила', 'потратил' )] на это несколько секунд."
+ tgp_east_asia_decision_events.0210.a: "Мне кажется, что [great_khlon_glan_option.GetTitledFirstNameNoTooltip] — более мудрый выбор."
+ tgp_east_asia_decision_events.0210.a.aptitude: "[great_khlon_glan_option.GetFirstNameNoTooltip] обладает следующей [Concept('aptitude', 'пригодностью')|E]: [great_khlon_glan_option.GetCourtPositionAptitude( GetCourtPositionType( 'khlon_glan_court_position' ) )]"
+ tgp_east_asia_decision_events.0210.b: "[good_khlon_glan_option.GetTitledFirstNameNoTooltip] может мне пригодиться."
+ tgp_east_asia_decision_events.0210.b.aptitude: "[good_khlon_glan_option.GetFirstNameNoTooltip] обладает следующей [Concept('aptitude', 'пригодностью')|E]: [good_khlon_glan_option.GetCourtPositionAptitude( GetCourtPositionType( 'khlon_glan_court_position' ) )]"
+ tgp_east_asia_decision_events.0210.c: "$tgp_east_asia_decision_events.0200.c$"
