@@ -1841,6 +1841,29 @@
  decision_tandiland_desc: "Рабовладельцы были полностью изгнаны из внутренних районов и глухих тандитских лесов и оттеснены к побережью, откуда они впервые пришли. Их власть ослабла, а мы стали сильными и свободными, объединившись в единый народ против угрозы с запада. Настало время мне провозгласить Антакавелай, леса побережья, и объединить мой народ раз и навсегда, что бы ни случилось."
  decision_tandiland_confirm: "Сменим копья на плуги, и не будем вести войн."
 
+ decision_fate_of_khorsaj: "Судьба Хорсажа"
+ decision_fate_of_khorsaj_desc: "Хорсаж принадлежит мне, но он не может выстоять в одиночку. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] искать союзников помимо ненадёжных пиратских ватаг, которые последовали за мной сюда. Но к кому мне обратиться? [Concept('bellakar', 'Беллакар')|E] силён, но могу ли я доверять им? Или мне следует обратиться к их врагам, владыкам [Concept('anbalkumagan', 'Ан-Балкумагана')|E]? Или даже к могущественной [Concept('ray', 'Рае')|E]?"
+ decision_fate_of_khorsaj_tooltip: "Решить судьбу Хорсажа"
+ decision_fate_of_khorsaj_confirm: "Всё уже решено."
+ decision_fate_of_khorsaj_confirm_selection: "Рассмотрим наши варианты"
+ decision_fate_of_khorsaj_bellakar_loc: "Беллакар"
+ decision_fate_of_khorsaj_bellakar_desc: "Беллакар"
+ decision_fate_of_khorsaj_bellakar_tooltip: "Беллакар доминирует в северном [Concept('bayoftulwang', 'заливе Тулванг')|E] и тесно связан с [Concept('gondor', 'Гондором')|E] на севере. Было бы разумно заключить союз с беллакарцами, но что они предпримут, когда я открою им свои двери?"
+ decision_fate_of_khorsaj_bellakar_tt: "Вы отправитесь на переговоры в провинцию [GetTitleByKey('c_korlea').GetNameNoTier]"
+ decision_fate_of_khorsaj_anballukhor_loc: "Ан-Балкумаган"
+ decision_fate_of_khorsaj_anballukhor_desc: "Ан-Балкумаган"
+ decision_fate_of_khorsaj_anballukhor_tooltip: "Держава [Concept('anbalkumagan', 'Ан-Балкумаган')|E] за последние десятилетия набрала силу и, похоже, вскоре собирается захватить Тулванг. Стоит ли мне заключить союз с этими завоевателями и помочь им покорить земли, которые нас окружают? Могу ли я действительно доверять [Concept('adunai', 'адунайцам')|E]?"
+ decision_fate_of_khorsaj_anballukhor_tt: "Вы отправитесь на переговоры в провинцию [GetTitleByKey('c_lairan').GetNameNoTier]"
+ decision_fate_of_khorsaj_ray_loc: "Рая"
+ decision_fate_of_khorsaj_ray_desc: "Рая"
+ decision_fate_of_khorsaj_ray_tooltip: "На востоке, у оконечности [Concept('bayoftulwang', 'залива Тулванг')|E], находится держава [Concept('ray', 'Рая')|E], крупный торговый центр. Его правители богаты, но смогут ли они защитить Хорсаж, когда придёт время?"
+ decision_fate_of_khorsaj_ray_tt: "Вы отправитесь на переговоры в провинцию [GetTitleByKey('c_bozisha_dar').GetNameNoTier]"
+ decision_fate_of_khorsaj_corsairs_loc: "Сунира"
+ decision_fate_of_khorsaj_corsairs_desc: "Сунира"
+ decision_fate_of_khorsaj_corsairs_tooltip: "На западе находится одинокий остров Сунира, логово пиратов и разбойников. У меня на службе уже есть пираты, и, проявив достаточную силу, я, возможно, смогу привлечь на свою сторону ещё больше этих отважных воинов..."
+ decision_fate_of_khorsaj_corsairs_tt: "Вы отправитесь на переговоры в провинцию [GetTitleByKey('c_sunira').GetNameNoTier]"
+ decision_fate_of_khorsaj_travel_tt: "Вы выберете [Concept('ruler', 'правителя')|E], к которому отправитесь"
+
  #################################
  #####  Ray Story Decisions  #####
  #################################
@@ -3518,8 +3541,8 @@
  decision_unify_durins_folk_desc: "С тех пор как [durindeathless|E] основал [khazaddum|E], его потомки претендовали на власть над всеми [Concept( 'longbeards', 'Длиннобородами' )|E]. Однако напрямую управлять дальними королевствами своего народа было нецелесообразно, и поэтому они оставляли их на произвол судьбы. Только в случае крайней необходимости они собирались и действовали под непосредственным командованием короля.\n\n[longbeards|E] на протяжении веков заселяли многие области, такие как [Concept('ironhills', 'Железные холмы')|E], [Concept('greymountains', 'Серые горы')|E] и вплоть до Залов Торина. Если бы все эти далёкие регионы удалось объединить под одним знаменем, [Concept('dwarves', 'гномы')|E] [Concept('durinsfolk', 'Народа Дурина')|E] не только сравнялись бы со своими праотцами, но и превзошли бы их."
  decision_unify_durins_folk_tooltip: "Наша слава бессмертна!"
  decision_unify_durins_folk_confirm: "Наша слава бессмертна!"
- control_percentage_of_misty_desc: "Контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_misty_mountains').GetName]"
- control_percentage_of_iron_desc: "Контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_iron_mountains').GetName]"
+ control_percentage_of_misty_desc: "Вы должны контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_misty_mountains').GetName]"
+ control_percentage_of_iron_desc: "Вы должны контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_iron_mountains').GetName]"
 
  decision_restore_thakalgund: "Восстановить Такалгунд"
  decision_restore_thakalgund_tooltip: "Отстроить гномью крепость в Серых горах"
@@ -3565,6 +3588,13 @@
  restore_king_title_confirm: "Я - [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] моего народа!"
 
  cant_give_title: "Эти гномьи титулы не могут быть переданы"
+
+ decision_reclaim_khazaddum: "Вернуть Кхазад-дум"
+ decision_reclaim_khazaddum_desc: "Мир сер, а горы стары, но [Concept('longbeards', 'Длиннобороды')|E] не забыли дом своих предков. Со времени нашего изгнания, последовавшего за смертью #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurinVI').GetID] #L короля Дурина VI#!#! от [Concept('balrog', 'Проклятия Дурина')|E], [GetTitleByKey('k_khazad_dum').GetNameNoTier] безмолвствовал, осквернённый силами зла.\n\nПришло время отправиться в глубь, вновь разжечь пепельно-холодные кузницы и навсегда восстановить нашу крепость, чтобы наш народ мог снова пройти по залам [Concept('dwarrowdelf', 'Дварроудельфа')|E] и заглянуть в #ONCLICK:TITLE,b_mirrormere #TOOLTIP:LANDED_TITLE,b_mirrormere #L Зеркальное озеро#!#!#!."
+ decision_reclaim_khazaddum_confirm: "[Glossary('Барук кхазад','baruk_khazad_gloss')]! [Glossary('Кхазад ай-мену','khazad_ai_menu_gloss')]!"
+ decision_reclaim_khazaddum_tooltip: "Очистить дом наших предков от тени и восстановить королевство Длиннобородов."
+ decision_reclaim_khazaddum.tt_3: "Возвести нового правителя на трон державы [GetTitleByKey('k_khazad_dum').GetNameNoTier]."
+ control_percentage_of_khazaddum_desc: "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('k_khazad_dum').GetName]"
 
  decision_uldona_spine_dwarf: "Вернуть Ульдонский хребет"
  decision_uldona_spine_dwarf_tooltip: "Восстановить королевство под вершинами Ульдонского хребта"
