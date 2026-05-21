@@ -1409,6 +1409,13 @@
  decision_investigate_brants_murder_confirm: "Я докопаюсь до правды."
  decision_investigate_brants_murder_tt: "Вы отправитесь на поиски ответов"
 
+ decision_eira_dwarven_armor: "Купить гномьи доспехи"
+ decision_eira_dwarven_armor_desc: "В старых сказаниях говорится о [Concept('dwarves', 'гномах')|E], живущих глубоко под [Concept('mistymountains', 'Мглистыми горами')|E], к северо-западу от нас. Говорят, что они непревзойдённые мастера по изготовлению оружия и доспехов и известны своей любовью к золоту. Если мы хотим противостоять закованным в железо войскам [Concept('gondor', 'Гондора')|E], нам понадобятся собственные тяжёлые доспехи - а что может быть лучше доспехов, выкованных гномьим кузнецом?"
+ decision_eira_dwarven_armor_tooltip: "Снарядить своих воинов новыми доспехами"
+ decision_eira_dwarven_armor_confirm: "Мне нужно обратиться к гномам."
+ decision_eira_dwarven_armor_tt: "Вы отправитесь в [Concept('khazaddum', 'Кхазад-дум')|E], чтобы договориться с [Concept('dwarves', 'гномами')|E]. В случае успеха вам станут доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('dunmen_heavy_infantry_unlock').GetName]"
+ unlock_dunmen_heavy_infantry: "Доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('dunmen_heavy_infantry_unlock').GetName]"
+
  decision_convince_dunmen_chieftain: "Убедить дунменских вождей"
  decision_convince_dunmen_chieftain_desc: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] убедить их что-то сделать!" 
  decision_convince_dunmen_chieftain_tooltip: "Отправиться к вождю и побеседовать с ним."
@@ -2049,7 +2056,6 @@
  decision_investigate_ray_desc: "Хотя я ещё не [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] в его природе, я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] в этом. Где-то в Рае скрывается какой-то великий и ужасный кукловод, укрепляющий власть над моей державой из теней. Если я хочу, чтобы у меня был шанс спасти своё положение, я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] действовать на опережение в своих усилиях по поиску в державе, чего бы это ни стоило - ни во времени, ни в золоте. Я не знаю, насколько быстро растёт заговор и насколько велика его сила, но я знаю, что [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] нанести по нему быстрый и решительный удар, прежде чем он будет готов открыто бросить мне вызов.\n\nИ всё же, несмотря на все мои усилия, многое ещё предстоит изучить. Вероятно, пройдёт много времени, прежде чем я смогу по-настоящему отдохнуть, а я могу по-настоящему доверять очень немногим. В этих обстоятельствах, боюсь, что бремя этой работы может оказаться для меня непосильным..."
  decision_investigate_ray_confirm: "Я не успокоюсь, пока всё не раскроется..."
  decision_investigate_ray_effects_tt: "У вас будет возможность выбрать между расследованием преступного мира города [GetTitleByKey('c_bozisha_dar').GetNameNoTier], прочёсыванием армии в поисках участников заговора или сосредоточением своих усилий на властителях державы, чтобы попытаться найти самого кукловода."
-
 
  decision_vatalinar_civil_war: "Привлечь Мардата к правосудию"
  decision_vatalinar_civil_war_tooltip: "Начать против Мардата войну за судьбу державы [GetTitleByKey('k_ray').GetNameNoTier]. #N Мардат сможет призвать на эту войну всех сторонников, которых он, возможно, нашёл.#!"
@@ -2999,8 +3005,10 @@
  decision_dale_high_king_development: "В каждом [Concept('county', 'графстве')|E] в регионе [GetTitleByKey('d_dalelands').GetName] хотя бы один раз улучшено главное здание"
  decision_dale_high_king_drakkenvast: "[GetTitleByKey('d_drakkenvast').GetName] интегрировано"
  decision_dale_high_king_borders: "Восточные границы укреплены"
- decision_dale_high_king_fealty: "Соседние [Concept('ruler', 'правители')|E]-северяне поклялись в верности"
+ decision_dale_high_king_fealty: "Соседние [Concept('rulers', 'правители')|E]-северяне поклялись в верности"
  decision_dale_high_king_fealty_tt: "[new_dale_vassal.GetName] [Select_CString(new_dale_vassal.IsFemale, 'присягнула', 'присягнул' )] на верность"
+ decision_dale_high_king_erebor: "Вы и [GetTitleByKey('k_erebor').GetHolder.GetName] заключили [Concept('defensive_alliance', 'оборонительный союз')|E]"
+ decision_dale_high_king_lasgalen: "Вы и [GetTitleByKey('k_lasgalen').GetHolder.GetName] заключили [Concept('defensive_alliance', 'оборонительный союз')|E]"
 
  decision_celduin_empire: "Объединить короны Кельдуина"
  decision_celduin_empire_tooltip: "Создать долговечное королевство вдоль реки Бегущей"
@@ -3560,6 +3568,11 @@
  decision_reunite_yellow_mountains_desc: "Долгие годы мы, [Concept('blacklocks', 'Черновласы')|E], жили в [Concept('yellowmountains', 'Жёлтых горах')|E], сражаясь с [Concept('goblins', 'гоблинами')|E] и прочей нечистью, заполонившей эти горы. Хотя в прошлом мы пытались объединить южную и северную половины этих гор, попытки были недолгими и безуспешными. Однако эта попытка была предпринята много веков назад, и вот снова нам представляется возможность. Пусть же могучие сыны Трара Гордого, населявшие эти древние горы на протяжении несметных лет, наконец объединятся!"
  decision_reunite_yellow_mountains_tooltip: "Желтые горы будут едины!"
  decision_reunite_yellow_mountains_confirm: "Больше не разделены, а едины!"
+
+ decision_restore_barazimabul: "Восстановить Баразимабул"
+ decision_restore_barazimabul_desc: "С тех пор как полчища [Concept('orcish', 'орков')|E] захватили Баразимабул, этот великий чертог [Concept('blacklocks', 'Черновласов')|E] пришёл в ужасающее запустение."
+ decision_restore_barazimabul_tooltip: "Восстановить наш великий чертог"
+ decision_restore_barazimabul_confirm: "Очистим эти камни от орочьей скверны!"
 
  decision_colonise_erebor: "Вернуться в Эребор"
  decision_colonise_erebor_tooltip: "Восстановить Одинокую Гору"
