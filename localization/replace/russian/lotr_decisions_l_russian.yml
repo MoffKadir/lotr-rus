@@ -17,8 +17,8 @@
  trait_sailed_west: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Уплыла', 'Уплыл' )] на запад"
  trait_sailed_west_desc: "Этот персонаж отправился по тайному Прямому Пути из Сфер [Concept('ardaconcept', 'Арды')|E], чтобы присоединиться к своему народу в [Concept('undyinglands', 'Бессмертных землях')|E]."
  trait_sailed_west_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] по тайному Прямому Пути из Сфер Арды, чтобы присоединиться к своему народу в Бессмертных землях. [ROOT.Char.GetSheHe|U] [Select_CString(ROOT.Char.IsFemale, 'ушла', 'ушёл' )] в [Select_CFixedPoint(And(GreaterThan_CFixedPoint(ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year') ),Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ) , Max_CFixedPoint( Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1'), Subtract_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ) , ROOT.Char.MakeScope.Var('sailed_west_date').GetValue ) , '(CFixedPoint)1' ) ) ) ) )] г. [Localize( Select_CString(And(GreaterThan_CFixedPoint(ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), 'lotr_fourth_age',Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), 'lotr_third_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), 'lotr_second_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ), 'lotr_first_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ), 'lotr_year_of_the_trees', 'Э.С.' ) ) ) ) ) )]."
- trait_sailed_west_character_mortal_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] по тайному Прямому Пути из Сфер Арды, чтобы присоединиться к своему народу в Бессмертных землях. [ROOT.Char.GetSheHe|U] [Select_CString(ROOT.Char.IsFemale, 'ушла', 'ушёл' )] в [Select_CFixedPoint(And(GreaterThan_CFixedPoint(ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year') ),Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ) , Max_CFixedPoint( Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ) , ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue ) , '(CFixedPoint)1' ) ) ) ) )] г. [Localize( Select_CString(And(GreaterThan_CFixedPoint(ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), 'lotr_fourth_age',Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), 'lotr_third_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), 'lotr_second_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ), 'lotr_first_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ), 'lotr_year_of_the_trees', 'Э.С.' ) ) ) ) ) )]."
- trait_sailed_west_character_historical_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] по тайному Прямому Пути из Сфер Арды, чтобы присоединиться к своему народу в Бессмертных землях. [ROOT.Char.GetSheHe|U] [Select_CString(ROOT.Char.IsFemale, 'ушла', 'ушёл' )] в [ROOT.Char.Custom('sailed_west_date_dead')]."
+ trait_sailed_west_character_mortal_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'ступила', 'ступил' )] на тайный Прямой путь из сфер Арды. Бессмертные земли всегда были запретны для смертных рас, но по милости валар [ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'получила', 'получил' )] дозволение войти в их священное королевство. За этот величайший из подвигов [ROOT.Char.GetHerHis] будут помнить наравне с героями древности в преданиях и песнях. [ROOT.Char.GetSheHe|U] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] в путь в [Select_CFixedPoint(And(GreaterThan_CFixedPoint(ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year') ),Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592' ) , Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ) , Max_CFixedPoint( Select_CFixedPoint( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1'), Subtract_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ) , ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue ) , '(CFixedPoint)1' ) ) ) ) )] г. [Localize( Select_CString(And(GreaterThan_CFixedPoint(ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, EmptyScope.ScriptValue('era_4_year')),EqualTo_CFixedPoint('(CFixedPoint)1', EmptyScope.ScriptValue('fourth_age_sauron_defeated'))), 'lotr_fourth_age',Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)4033'), 'lotr_third_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)592'), 'lotr_second_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)2' ), 'lotr_first_age', Select_CString( GreaterThan_CFixedPoint( ROOT.Char.GetDynasty.MakeScope.Var('sailed_west_date').GetValue, '(CFixedPoint)1' ), 'lotr_year_of_the_trees', 'Э.С.' ) ) ) ) ) )]."
+ trait_sailed_west_character_historical_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'отправилась', 'отправился' )] в Великое путешествие и [Select_CString(ROOT.GetCharacter.IsFemale, 'присоединилась', 'присоединился' )] к Валар в Бессмертных землях. [ROOT.Char.GetSheHe|U] [Select_CString(ROOT.Char.IsFemale, 'покинула', 'покинул' )] Средиземье в [ROOT.Char.Custom('sailed_west_date_dead')]."
 
  decision_wander_the_forests: "Прогуляться по лесу"
  decision_wander_the_forests_tooltip: "Посетить местные леса вашей державы"
@@ -204,6 +204,12 @@
  decision_mirror_of_galadriel_tooltip: "Взглянуть в зеркало Галадриэль"
  decision_mirror_of_galadriel_confirm: "Да."
  decision_mirror_of_galadriel_tt: "Вы владеете [Concept('artifact', 'зеркалом Галадриэль')|E]"
+
+ decision_temple_training: "Тренироваться в святилище"
+ decision_temple_training_tooltip: "Повысить свою [Concept('prowess', 'доблесть')|E]."
+ decision_temple_training_desc: "Святилище Доблестных - это место, где верующие оттачивают свои навыки, как умственные, так и физические, тренируются в рукопашном бою и практикуют медитацию."
+ decision_temple_training_confirm: "Приступить к тренировке."
+ decision_temple_training.toast: "Тщательная тренировка"
 
  decision_delve_ardinak: "Очистить Ардинак"
  decision_delve_ardinak_tooltip: "Очистить проклятый остров Ардинак."
@@ -1371,6 +1377,12 @@
  decision_restore_saralain_confirm: "Сплотитесь, воины кланов!"
  restore_saralain_custom_warning: "#W Главы любых других достаточно могущественных кланов могут оспорить наши притязания и попытаться захватить королевство самостоятельно!#!"
 
+ decision_consult_the_crones: "Посоветоваться с ведуньями"
+ decision_consult_the_crones_desc: "В непроходимых холмах провинции [GetTitleByKey('b_dunthuaidh').GetNameNoTier] обитают ведуньи с гор, предсказательницы, которые, как говорят, способны заглядывать в будущее. Их советы часто влияли на решения, принимаемые лидерами нашего народа. Если я буду относиться к ним с уважением, их мудрый совет может снова оказаться для нас благом, поскольку многие в наших краях верят, что горы шепчут правду старухам... и иногда они, кажется, правы."
+ decision_consult_the_crones_tooltip: "Отправиться на встречу с ведуньями с гор"
+ decision_consult_the_crones_confirm: "Послать весточку предсказательницам."
+ decision_consult_the_crones_tt: "Вы отправитесь в провинцию [GetTitleByKey('b_dunthuaidh').GetNameNoTier], чтобы обратиться к ведуньям с гор"
+
  decision_start_migration: "Призвать к переселению"
  decision_start_migration_tooltip: "Призвать к переселению"
  decision_start_migration_desc: "Placeholder - DEV POOL [GetGlobalVariable('saralain_dev_pool').GetValue]"
@@ -1396,6 +1408,13 @@
  decision_investigate_brants_murder_tooltip: "Найти доказательства того, кто убил вашего отца"
  decision_investigate_brants_murder_confirm: "Я докопаюсь до правды."
  decision_investigate_brants_murder_tt: "Вы отправитесь на поиски ответов"
+
+ decision_eira_dwarven_armor: "Купить гномьи доспехи"
+ decision_eira_dwarven_armor_desc: "В старых сказаниях говорится о [Concept('dwarves', 'гномах')|E], живущих глубоко под [Concept('mistymountains', 'Мглистыми горами')|E], к северо-западу от нас. Говорят, что они непревзойдённые мастера по изготовлению оружия и доспехов и известны своей любовью к золоту. Если мы хотим противостоять закованным в железо войскам [Concept('gondor', 'Гондора')|E], нам понадобятся собственные тяжёлые доспехи - а что может быть лучше доспехов, выкованных гномьим кузнецом?"
+ decision_eira_dwarven_armor_tooltip: "Снарядить своих воинов новыми доспехами"
+ decision_eira_dwarven_armor_confirm: "Мне нужно обратиться к гномам."
+ decision_eira_dwarven_armor_tt: "Вы отправитесь в [Concept('khazaddum', 'Кхазад-дум')|E], чтобы договориться с [Concept('dwarves', 'гномами')|E]. В случае успеха вам станут доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('dunmen_heavy_infantry_unlock').GetName]"
+ unlock_dunmen_heavy_infantry: "Доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('dunmen_heavy_infantry_unlock').GetName]"
 
  decision_convince_dunmen_chieftain: "Убедить дунменских вождей"
  decision_convince_dunmen_chieftain_desc: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] убедить их что-то сделать!" 
@@ -1586,6 +1605,24 @@
  decision_bellakar_x_gondor_custom_tooltip_a: "Вы вновь включили Мардруак в состав своего королевство"
  decision_bellakar_x_gondor_custom_tooltip_b: "Вы примирились с Фелайей."
 
+ decision_launch_korlean_expedition: "Начать корлейскую экспедицию"
+ decision_launch_korlean_expedition_desc: "Подготовка к амбициозной экспедиции на крайний Юг завершена. Теперь остаётся только выбрать одного из трёх наиболее перспективных кандидатов, которые выразили желание возглавить это путешествие..."
+ decision_launch_korlean_expedition_tooltip: "Послать экспедицию на крайний юг"
+ decision_launch_korlean_expedition_confirm: "Приведите их ко мне."
+ decision_launch_korlean_expedition_tt: "Вы выберете кандидата, который возглавит вашу экспедицию вместо вас"
+
+ decision_continue_korlean_expedition: "Продолжить корлейскую экспедицию"
+ decision_continue_korlean_expedition_desc: "Какое-то время мы оставались на месте. Не пришло ли время продолжить нашу славную экспедицию?"
+ decision_continue_korlean_expedition_tooltip: "Поднять паруса «Охотника за мечтой»"
+ decision_continue_korlean_expedition_confirm: "Вперёд, к новым приключениям!"
+ decision_continue_korlean_expedition_anballukhor: "Вы отправитесь в провинцию [GetTitleByKey('c_adunazain').GetNameNoTier]"
+
+ decision_explore_sunira: "Исследовать Суниру"
+ decision_explore_sunira_desc: "[GetTitleByKey('c_sunira').GetNameNoTier] - гавань пиратов-беззаконников, которые часто совершают набеги на побережья Тулванга и Райшула. Несмотря на опасность, посещение одного из портов может принести нашей экспедиции непредвиденные выгоды."
+ decision_explore_sunira_tooltip: "Провести некоторое время на пиратском острове"
+ decision_explore_sunira_confirm: "Земля, хо!"
+ decision_explore_sunira_tt: "Вы исследуете остров [GetTitleByKey('c_sunira').GetNameNoTier]"
+
  #Adopt a Cat
  decision_lotr_adopt_cat: "Завести кота"
  decision_lotr_adopt_cat_desc: "Я часто [Select_CString(ROOT.Char.IsFemale, 'мечтала', 'мечтал' )] о кошке, которую [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы назвать своей собственной. Возможно, пришло время завести её и мне."
@@ -1649,7 +1686,7 @@
  decision_bellakar_mardruak_corsairs_desc: "Мерзкие пиратские властители #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруака#!#!#! давно уже досаждают побережью [Concept('bellakar', 'Беллакара')|E]: их налётчики наносят огромный ущерб северным городам и морским путям. Пока они здесь, они, несомненно, будут для меня назойливой неприятностью во время моего похода на север.\n\nЯ знаю, что с этими вероломными людьми не будет никаких переговоров, по крайней мере, они не пойдут дальше простых слов на бумаге. Когда я буду [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов' )], начнутся война и разорение. В конце концов, пиратам не ведом другой путь."
  decision_bellakar_mardruak_corsairs_confirm: "Наконец-то я навлеку войну на них!"
  bellakar_mardruak_corsairs_effects_tt: "Вы объявите #V войну#! всем независимым правителям в #V #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруаке#!#!#!#!, исповедующим #V [GetFaithByKey('faith_corsair').GetAdjective|l].#!"
- mardurak_corsairs_must_exist: "Любой правитель в #V #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруаке#!#!#!#!, исповедующий #V [GetFaithByKey('faith_corsair').GetAdjective|l]#!"
+ mardruak_corsairs_must_exist: "Любой правитель в #V #ONCLICK:TITLE,k_mardruak #TOOLTIP:LANDED_TITLE,k_mardruak #L Мардруаке#!#!#!#!, исповедующий #V [GetFaithByKey('faith_corsair').GetAdjective|l]#!"
 
  decision_bellakar_umbar_invasion: "Уничтожить Умбар"
  decision_bellakar_umbar_invasion_tooltip: "Начать вторжение в [GetTitleByKey('k_umbar').GetNameNoTier], чтобы, наконец, добраться до [Concept('gondor', 'Гондора')|E]."
@@ -1810,6 +1847,29 @@
  decision_tandiland_tooltip: "Узурпировать титул [GetTitleByKey('k_an_balkumagan').GetNameNoTier] у адунайцев навеки"
  decision_tandiland_desc: "Рабовладельцы были полностью изгнаны из внутренних районов и глухих тандитских лесов и оттеснены к побережью, откуда они впервые пришли. Их власть ослабла, а мы стали сильными и свободными, объединившись в единый народ против угрозы с запада. Настало время мне провозгласить Антакавелай, леса побережья, и объединить мой народ раз и навсегда, что бы ни случилось."
  decision_tandiland_confirm: "Сменим копья на плуги, и не будем вести войн."
+
+ decision_fate_of_khorsaj: "Судьба Хорсажа"
+ decision_fate_of_khorsaj_desc: "Хорсаж принадлежит мне, но он не может выстоять в одиночку. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] искать союзников помимо ненадёжных пиратских ватаг, которые последовали за мной сюда. Но к кому мне обратиться? [Concept('bellakar', 'Беллакар')|E] силён, но могу ли я доверять им? Или мне следует обратиться к их врагам, владыкам [Concept('anbalkumagan', 'Ан-Балкумагана')|E]? Или даже к могущественной [Concept('ray', 'Рае')|E]?"
+ decision_fate_of_khorsaj_tooltip: "Решить судьбу Хорсажа"
+ decision_fate_of_khorsaj_confirm: "Всё уже решено."
+ decision_fate_of_khorsaj_confirm_selection: "Рассмотрим наши варианты"
+ decision_fate_of_khorsaj_bellakar_loc: "Беллакар"
+ decision_fate_of_khorsaj_bellakar_desc: "Беллакар"
+ decision_fate_of_khorsaj_bellakar_tooltip: "Беллакар доминирует в северном [Concept('bayoftulwang', 'заливе Тулванг')|E] и тесно связан с [Concept('gondor', 'Гондором')|E] на севере. Было бы разумно заключить союз с беллакарцами, но что они предпримут, когда я открою им свои двери?"
+ decision_fate_of_khorsaj_bellakar_tt: "Вы отправитесь на переговоры в провинцию [GetTitleByKey('c_korlea').GetNameNoTier]"
+ decision_fate_of_khorsaj_anballukhor_loc: "Ан-Балкумаган"
+ decision_fate_of_khorsaj_anballukhor_desc: "Ан-Балкумаган"
+ decision_fate_of_khorsaj_anballukhor_tooltip: "Держава [Concept('anbalkumagan', 'Ан-Балкумаган')|E] за последние десятилетия набрала силу и, похоже, вскоре собирается захватить Тулванг. Стоит ли мне заключить союз с этими завоевателями и помочь им покорить земли, которые нас окружают? Могу ли я действительно доверять [Concept('adunai', 'адунайцам')|E]?"
+ decision_fate_of_khorsaj_anballukhor_tt: "Вы отправитесь на переговоры в провинцию [GetTitleByKey('c_lairan').GetNameNoTier]"
+ decision_fate_of_khorsaj_ray_loc: "Рая"
+ decision_fate_of_khorsaj_ray_desc: "Рая"
+ decision_fate_of_khorsaj_ray_tooltip: "На востоке, у оконечности [Concept('bayoftulwang', 'залива Тулванг')|E], находится держава [Concept('ray', 'Рая')|E], крупный торговый центр. Его правители богаты, но смогут ли они защитить Хорсаж, когда придёт время?"
+ decision_fate_of_khorsaj_ray_tt: "Вы отправитесь на переговоры в провинцию [GetTitleByKey('c_bozisha_dar').GetNameNoTier]"
+ decision_fate_of_khorsaj_corsairs_loc: "Сунира"
+ decision_fate_of_khorsaj_corsairs_desc: "Сунира"
+ decision_fate_of_khorsaj_corsairs_tooltip: "На западе находится одинокий остров Сунира, логово пиратов и разбойников. У меня на службе уже есть пираты, и, проявив достаточную силу, я, возможно, смогу привлечь на свою сторону ещё больше этих отважных воинов..."
+ decision_fate_of_khorsaj_corsairs_tt: "Вы отправитесь на переговоры в провинцию [GetTitleByKey('c_sunira').GetNameNoTier]"
+ decision_fate_of_khorsaj_travel_tt: "Вы выберете [Concept('ruler', 'правителя')|E], к которому отправитесь"
 
  #################################
  #####  Ray Story Decisions  #####
@@ -1996,7 +2056,6 @@
  decision_investigate_ray_desc: "Хотя я ещё не [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] в его природе, я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )] в этом. Где-то в Рае скрывается какой-то великий и ужасный кукловод, укрепляющий власть над моей державой из теней. Если я хочу, чтобы у меня был шанс спасти своё положение, я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] действовать на опережение в своих усилиях по поиску в державе, чего бы это ни стоило - ни во времени, ни в золоте. Я не знаю, насколько быстро растёт заговор и насколько велика его сила, но я знаю, что [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] нанести по нему быстрый и решительный удар, прежде чем он будет готов открыто бросить мне вызов.\n\nИ всё же, несмотря на все мои усилия, многое ещё предстоит изучить. Вероятно, пройдёт много времени, прежде чем я смогу по-настоящему отдохнуть, а я могу по-настоящему доверять очень немногим. В этих обстоятельствах, боюсь, что бремя этой работы может оказаться для меня непосильным..."
  decision_investigate_ray_confirm: "Я не успокоюсь, пока всё не раскроется..."
  decision_investigate_ray_effects_tt: "У вас будет возможность выбрать между расследованием преступного мира города [GetTitleByKey('c_bozisha_dar').GetNameNoTier], прочёсыванием армии в поисках участников заговора или сосредоточением своих усилий на властителях державы, чтобы попытаться найти самого кукловода."
-
 
  decision_vatalinar_civil_war: "Привлечь Мардата к правосудию"
  decision_vatalinar_civil_war_tooltip: "Начать против Мардата войну за судьбу державы [GetTitleByKey('k_ray').GetNameNoTier]. #N Мардат сможет призвать на эту войну всех сторонников, которых он, возможно, нашёл.#!"
@@ -2930,7 +2989,8 @@
  decision_buy_armour_from_the_dwarves: "Купить гномьи доспехи"
  decision_buy_armour_from_the_dwarves_tooltip: "Купить для своих войск выкованные [Concept('dwarf', 'гномами')|E] [Concept('erebor', 'Эребора')|E] доспехи."
  decision_buy_armour_from_the_dwarves_desc: "Во времена до прихода [Concept('dragon', 'дракона')|E] наши предки часто торговали с [Concept('dwarves', 'гномами')|E] [Concept('lonelymountain', 'Одинокой горы')|E], поставляя им продукты питания в обмен на их превосходное оружие и доспехи. Мы могли бы возродить эту традицию и снабдить наших солдат доспехами, выкованными гномами, что дало бы им преимущество в грядущих войнах."
- decision_buy_armour_from_the_dwarves_confirm: "Послать весточку в Эребор!"
+ decision_buy_armour_from_the_dwarves_confirm: "Послать весточку гномам!"
+ decision_buy_armour_from_the_dwarves_tt: "В [Concept('erebor', 'Эреборе')|E] или [Concept('ironhills', 'Железных холмах')|E] есть [Concept('dwarves', 'гномы')|E]"
 
  decision_help_rebuild_erebor: "Помочь в восстановлении Эребора"
  decision_help_rebuild_erebor_tooltip: "Послать помощь гномам из Народа Дурина, чтобы они смогли восстановить Эребор."
@@ -2946,8 +3006,10 @@
  decision_dale_high_king_development: "В каждом [Concept('county', 'графстве')|E] в регионе [GetTitleByKey('d_dalelands').GetName] хотя бы один раз улучшено главное здание"
  decision_dale_high_king_drakkenvast: "[GetTitleByKey('d_drakkenvast').GetName] интегрировано"
  decision_dale_high_king_borders: "Восточные границы укреплены"
- decision_dale_high_king_fealty: "Соседние [Concept('ruler', 'правители')|E]-северяне поклялись в верности"
+ decision_dale_high_king_fealty: "Соседние [Concept('rulers', 'правители')|E]-северяне поклялись в верности"
  decision_dale_high_king_fealty_tt: "[new_dale_vassal.GetName] [Select_CString(new_dale_vassal.IsFemale, 'присягнула', 'присягнул' )] на верность"
+ decision_dale_high_king_erebor: "Вы и [GetTitleByKey('k_erebor').GetHolder.GetName] заключили [Concept('defensive_alliance', 'оборонительный союз')|E]"
+ decision_dale_high_king_lasgalen: "Вы и [GetTitleByKey('k_lasgalen').GetHolder.GetName] заключили [Concept('defensive_alliance', 'оборонительный союз')|E]"
 
  decision_celduin_empire: "Объединить короны Кельдуина"
  decision_celduin_empire_tooltip: "Создать долговечное королевство вдоль реки Бегущей"
@@ -3488,12 +3550,12 @@
  decision_unify_durins_folk_desc: "С тех пор как [durindeathless|E] основал [khazaddum|E], его потомки претендовали на власть над всеми [Concept( 'longbeards', 'Длиннобородами' )|E]. Однако напрямую управлять дальними королевствами своего народа было нецелесообразно, и поэтому они оставляли их на произвол судьбы. Только в случае крайней необходимости они собирались и действовали под непосредственным командованием короля.\n\n[longbeards|E] на протяжении веков заселяли многие области, такие как [Concept('ironhills', 'Железные холмы')|E], [Concept('greymountains', 'Серые горы')|E] и вплоть до Залов Торина. Если бы все эти далёкие регионы удалось объединить под одним знаменем, [Concept('dwarves', 'гномы')|E] [Concept('durinsfolk', 'Народа Дурина')|E] не только сравнялись бы со своими праотцами, но и превзошли бы их."
  decision_unify_durins_folk_tooltip: "Наша слава бессмертна!"
  decision_unify_durins_folk_confirm: "Наша слава бессмертна!"
- control_percentage_of_misty_desc: "Контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_misty_mountains').GetName]"
- control_percentage_of_iron_desc: "Контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_iron_mountains').GetName]"
+ control_percentage_of_misty_desc: "Вы должны контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_misty_mountains').GetName]"
+ control_percentage_of_iron_desc: "Вы должны контролировать по крайней #V 90%#! [Concept( 'counties', 'графств' )|E] региона [GetTitleByKey('e_iron_mountains').GetName]"
 
  decision_restore_thakalgund: "Восстановить Такалгунд"
  decision_restore_thakalgund_tooltip: "Отстроить гномью крепость в Серых горах"
- decision_restore_thakalgund_desc: "В результате огня и войны [GetTitleByKey('d_thakalgund').GetName] был потерян. После Войны [Concept('dwarves', 'гномов')|E] и [Concept('dragons', 'драконов')|E] [Concept('greymountains', 'Серые горы')|E] были в значительной степени заброшены, и Такалгунд был оставлен в запустении. Впоследствии [Concept('goblins', 'гоблины')|E] заселили его, и казалось, что всякая надежда на восстановление потеряна. Однако теперь, когда крепость наконец-то в нашем распоряжении, мы можем заняться восстановлением этой некогда славной твердыни."
+ decision_restore_thakalgund_desc: "В результате огня и войны [GetTitleByKey('d_thakalgund').GetName] был потерян. После [Concept('warofdwarvesanddragons', 'Войны гномов и драконов')|E] [Concept('greymountains', 'Серые горы')|E] были в значительной степени заброшены, и Такалгунд был оставлен в запустении. Впоследствии [Concept('goblins', 'гоблины')|E] заселили его, и казалось, что всякая надежда на восстановление потеряна. Однако теперь, когда крепость наконец-то в нашем распоряжении, мы можем заняться восстановлением этой некогда славной твердыни."
  decision_restore_thakalgund_confirm: "Восстановить наш дом"
  decision_restore_thakalgund_tt: "Такалгунд восстановлен"
 
@@ -3507,6 +3569,11 @@
  decision_reunite_yellow_mountains_desc: "Долгие годы мы, [Concept('blacklocks', 'Черновласы')|E], жили в [Concept('yellowmountains', 'Жёлтых горах')|E], сражаясь с [Concept('goblins', 'гоблинами')|E] и прочей нечистью, заполонившей эти горы. Хотя в прошлом мы пытались объединить южную и северную половины этих гор, попытки были недолгими и безуспешными. Однако эта попытка была предпринята много веков назад, и вот снова нам представляется возможность. Пусть же могучие сыны Трара Гордого, населявшие эти древние горы на протяжении несметных лет, наконец объединятся!"
  decision_reunite_yellow_mountains_tooltip: "Желтые горы будут едины!"
  decision_reunite_yellow_mountains_confirm: "Больше не разделены, а едины!"
+
+ decision_restore_barazimabul: "Восстановить Баразимабул"
+ decision_restore_barazimabul_desc: "С тех пор как полчища [Concept('orcish', 'орков')|E] захватили Баразимабул, этот великий чертог [Concept('blacklocks', 'Черновласов')|E] пришёл в ужасающее запустение."
+ decision_restore_barazimabul_tooltip: "Восстановить наш великий чертог"
+ decision_restore_barazimabul_confirm: "Очистим эти камни от орочьей скверны!"
 
  decision_colonise_erebor: "Вернуться в Эребор"
  decision_colonise_erebor_tooltip: "Восстановить Одинокую Гору"
@@ -3535,6 +3602,13 @@
  restore_king_title_confirm: "Я - [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] моего народа!"
 
  cant_give_title: "Эти гномьи титулы не могут быть переданы"
+
+ decision_reclaim_khazaddum: "Вернуть Кхазад-дум"
+ decision_reclaim_khazaddum_desc: "Мир сер, а горы стары, но [Concept('longbeards', 'Длиннобороды')|E] не забыли дом своих предков. Со времени нашего изгнания, последовавшего за смертью #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurinVI').GetID] #L короля Дурина VI#!#! от [Concept('balrog', 'Проклятия Дурина')|E], [GetTitleByKey('k_khazad_dum').GetNameNoTier] безмолвствовал, осквернённый силами зла.\n\nПришло время отправиться в глубь, вновь разжечь пепельно-холодные кузницы и навсегда восстановить нашу крепость, чтобы наш народ мог снова пройти по залам [Concept('dwarrowdelf', 'Дварроудельфа')|E] и заглянуть в #ONCLICK:TITLE,b_mirrormere #TOOLTIP:LANDED_TITLE,b_mirrormere #L Зеркальное озеро#!#!#!."
+ decision_reclaim_khazaddum_confirm: "[Glossary('Барук кхазад','baruk_khazad_gloss')]! [Glossary('Кхазад ай-мену','khazad_ai_menu_gloss')]!"
+ decision_reclaim_khazaddum_tooltip: "Очистить дом наших предков от тени и восстановить королевство Длиннобородов."
+ decision_reclaim_khazaddum.tt_3: "Возвести нового правителя на трон державы [GetTitleByKey('k_khazad_dum').GetNameNoTier]."
+ control_percentage_of_khazaddum_desc: "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('k_khazad_dum').GetName]"
 
  decision_uldona_spine_dwarf: "Вернуть Ульдонский хребет"
  decision_uldona_spine_dwarf_tooltip: "Восстановить королевство под вершинами Ульдонского хребта"
@@ -3879,6 +3953,7 @@
  focused_south: "Вы сосредоточились на юге"
  focused_west: "Вы сосредоточились на западе"
  focused_east: "Вы сосредоточились на востоке"
+ seregul_had_event: "Вы сделали свой ход"
  focused_everywhere: "Вы нигде не сосредоточились"
 
  decision_beat_mag: "Отбросить магров"
@@ -4225,7 +4300,7 @@
  CHOOSE_TAYEE_FAITH: "Выбрать нового покровителя"
  choose_new_tayee_patron_loose_access: "@warning_icon! #X Эта новая конфессия не имеет доступа к решению #V Выбрать нового тайитского покровителя#!!#!"
  decision_choose_new_tayee_patron_desc: "Мой прежний покровитель больше не соответствует ситуации, в которой я [Select_CString(ROOT.Char.IsFemale, 'оказалась', 'оказался' )]. Тарат Балазайн учит, что все боги обещают своим слугам вход в загробный мир, если те будут верно следовать их повелениям. Моя новая вера, несомненно, станет лучшим способом обеспечить будущее моей души! Пришло время перемен."
- fervor_gain_sirayn_fervor: "Избрание правителем в качестве покровителя"
+ fervor_gain_sirayn_fervor: "Избрание покровителя [Concept('ruler', 'правителем')|E]"
  decision_choose_new_tayee_patron_confirm: "Подтвердить мою преданность."
 
  restore_ardacheran_hegemony_decision: "Восстановить Ардашеранское владычество"

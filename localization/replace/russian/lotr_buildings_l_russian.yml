@@ -1908,7 +1908,6 @@
  building_wonder_caras_celairnen_02: "Серебряный город Карас Селернен"
  building_wonder_caras_celairnen_02_desc: "Из простого торгового порта Селернен превратился в яркий пример сотрудничества между [Concept('elves', 'эльфами')|E] [Concept('lindon', 'Линдона')|E] и [Concept('men', 'людьми')|E] [Concept('arnor', 'Арнора')|E]. Его прозвали Серебряным городом из-за большого количества серебра и различных металлов, которые были использованы при его строительстве. Говорят, что весь город сверкает, как серебро, от эльфийских башен до людской мостовой."
 
-
  building_type_wonder_barad_girithlin_01: "Барад Гиритлин"
  building_type_wonder_barad_girithlin_01_desc: "Укреплённое поместье дома Гиритлин, обосновавшегося в нижней части долины Барандуин."
  building_wonder_barad_girithlin_01: "Барад Гиритлин"
@@ -2164,6 +2163,23 @@
  building_wonder_south_undeep_02: "Этир Андуин"
  building_wonder_south_undeep_02_desc: "Этир Андуин был восстановлен в своём былом великолепии, с концентрическими оборонительными стенами, окружающими мощную сторожевую башню, возвышающуюся над бродом. Оборона южного Неглубокого брода гарантирована от любого нападения, кроме самого решительного."
 
+ # The Argonath
+ building_type_wonder_argonath: "Аргонат"
+ building_type_wonder_argonath_desc: "Возведённый Ромендакилем II [Concept('gondor', 'Гондорским')|E] после его решительной победы над истерлингами [Concept('rhun', 'Руна')|E], Аргонат состоит из двух огромных каменных столпов, высеченных в виде [Concept('isildur', 'Исильдура')|E] и [Concept('anarion', 'Анариона')|E], обращённых на север. Каждая из двух фигур, установленных на огромных пьедесталах по обе стороны реки [Concept('anduin', 'Андуин')|E], держит в правой руке топор, а левая поднята в жесте вызова врагам Гондора."
+ building_wonder_argonath: "Аргонат"
+ building_wonder_argonath_desc: "$building_type_wonder_argonath_desc$"
+
+ # Amon Hen
+ building_type_wonder_amon_hen: "Амон Хен"
+ building_type_wonder_amon_hen_desc: "Построенный на самой западной из трёх вершин Нен-Хитоэль, Амон-Хен был воздвигнут королями Гондора в дни их могущества. На вершине холма, окружённого рощами рябины, стоит большой двор с каменной оградой, а посередине - высокий трон, опирающийся на резные колонны. Говорят, что обладающие властью могут восседать на престоле видения на Холме зрения людей [Concept('numenor', 'Нуменора')|E] и видеть видения о том, что происходит в далёких землях."
+ building_wonder_amon_hen: "$building_type_wonder_amon_hen$"
+ building_wonder_amon_hen_desc: "$building_type_wonder_amon_hen_desc$"
+
+ building_type_wonder_amon_lhaw: "Амон Лау"
+ building_type_wonder_amon_lhaw_desc: "Построенный на самой восточной из трёх вершин Нен-Хитоэль, Амон Лау был воздвигнут королями Гондора в дни их могущества. На вершине холма стоит большой двор с каменной зубчатой стеной, а посередине - высокий трон, опирающийся на резные колонны. Говорят, что те, кто обладает властью, могут восседать на Холме слуха людей [Concept('numenor', 'Нуменора')|E] и услышать шёпот о том, что происходит в далёких землях."
+ building_wonder_amon_lhaw: "$building_type_wonder_amon_lhaw$"
+ building_wonder_amon_lhaw_desc: "$building_type_wonder_amon_lhaw_desc$"
+ dunedain_or_has_ring_tt: "Ваша культура имеет #L [GetCulturePillar('heritage_dunedain').GetName|l]ое#! [Concept('heritage', 'наследие')|E] или у вас экипировано [Concept('ringofpower', 'кольцо Власти')|E]."
  ### DUNLAND WONDERS ###
  # Wulfborg
  building_type_wonder_wulfborg_01: "Вульфборг"
@@ -2218,7 +2234,7 @@
  building_wonder_nilulonde_02_desc: "В течение многих лет децентрализованный орган созывался в разных городах по вопросам, касающимся всего королевства, и наконец в столице появилось здание, достаточное для проведения великого [baitha|E], [Concept( 'bellakari', 'Беллакарский' )|E] сенат. В его обширных залах находятся огромные бюрократические и административные аппараты, все они работают над наведением порядка и руководством королевством [bellakar|E] совместно с королём."
  building_wonder_nilulonde_03: "Нилулондэ, серебряная жемчужина Беллакара"
  building_wonder_nilulonde_03_desc: "Хотя починка занимает больше времени, чем создание или разрушение, Нилулондэ торжествует, являясь маяком и опорой надежды на возможность [Concept( 'conceptmankind', 'человечества' )|E] идти вперёд рука об руку в будущее, больше не разделяясь. Их различия не разъединяют народы [Concept( 'bellakar', 'Беллакара' )|E], но объединяют и укрепляют их, объединённых в своем видении лучшего мира. Мечта о Беллакаре никогда не рухнет, пока жив этот идеал."
- firstfruits_may_ascend_izindutarik_effect_desc: "\n#V $bellakari_religion$ие#! [Concept('kings', 'короли')|E] и [Concept('emperors', 'императоры')|E] могут взойти на [Concept('izindutarik', 'Изиндутарик')|E] во время [Concept('activity', 'занятия')|E] #V $activity_firstfruits_festival$#!"
+ firstfruits_may_ascend_izindutarik_effect_desc: "\n#V $bellakari_religion$ие#! [Concept('kings', 'короли')|E] и [Concept('emperors', 'императоры')|E] могут взойти на [Concept('izindutarik', 'Изиндутарик')|E] во время [Concept('activity', 'занятия')|E] «[GetActivityType( 'activity_firstfruits_festival' ).GetName]»"
 
  building_type_wonder_urud_an_khibil_monestary: "Монастырь Уруд ан-Хибиль"
  building_type_wonder_urud_an_khibil_monestary_desc: "Монастырь, основанный Имратором, первым изиндубетом, является одним из самых почитаемых в [Glossary('Батан ан-Изинди','batan_an_izindi_gloss')]."
@@ -3069,7 +3085,7 @@
 
  #Associated Trigger
  dwarven_forge_dynasty_requirement: "У вашей династии должно быть достоинство «[GetDynastyPerk('lotr_crafting_legacy_3').GetName]»"
- dwarven_forge_cap: "В ваших владениях может быть только одна активная кузня"
+ dwarven_forge_cap: "В ваших владениях может быть только одна активная кузня и это должна быть ваша столица"
 
  #Dwarven Forges
  building_type_dwarven_forge_01: "Кузнечный зал"
@@ -4119,6 +4135,7 @@
  building_wonder_kinnlai_sanctum_of_the_valiant_03: "Святилище Доблестных"
  building_wonder_kinnlai_sanctum_of_the_valiant_03_desc: "Возвышенный чертог Доблестных стоит как маяк силы и духовности, излучая сущность [Concept('astald_maktal', 'Астальд Мактала')|E]. Его архитектура, окруженная пышной растительностью, гармонично сочетается с природой и включает в себя естественные элементы, которые воспевают яркую жизнь джунглей. Ученики собираются здесь, их движения плавны и целеустремленны, воплощая принципы силы, грации и стойкости.\n\nВнутри чертог украшен символами наследия их наставника - скульптурами, фресками и подношениями в честь его духа. Солнечный свет проникает сквозь навес, отбрасывая безмятежное сияние, которое усиливает медитативную атмосферу. Воздух наполнен энергией, в нем слышится смех и поддержка почитаемого воина, который ведет их к личному мастерству и духовному просветлению."
  building_type_wonder_kinnlai_sanctum_of_the_valiant_02_tt: "У вашей конфессии должен быть догмат «Главенство Тулкаса» или «Священная борьба»."
+ wonder_kinnlai_sanctum_of_the_valiant_training_desc: "Открывает [Concept('decision', 'решение')|E] «Тренироваться в святилище»."
 
  # Tanturak #
  building_type_wonder_ardinak_01: "Ардинак"
