@@ -284,8 +284,28 @@ window = {
 										expand = {}
 
 										text_single = {
+											visible = "[Not(And(CharacterMemory.GetType.HasCategory('sailed_west_category'),GetScriptedGui('sgui_is_sailed_west_historical').IsValid(GuiScope.SetRoot(Character.MakeScope).End)))]"
 											alpha = 0.5
 											text = "[CharacterMemory.GetCreationDate.GetString]"
+											size = { 200 0 }
+											align = right
+											elide = right
+											default_format = "#light_background"
+										}
+
+										text_single = {
+											visible = "[And(CharacterMemory.GetType.HasCategory('sailed_west_category'),GetScriptedGui('sgui_is_sailed_west_historical_1').IsValid(GuiScope.SetRoot(Character.MakeScope).End))]"
+											alpha = 0.5
+											text = "date_1132_gui"
+											size = { 200 0 }
+											align = right
+											elide = right
+											default_format = "#light_background"
+										}
+										text_single = {
+											visible = "[And(CharacterMemory.GetType.HasCategory('sailed_west_category'),GetScriptedGui('sgui_is_sailed_west_historical_2').IsValid(GuiScope.SetRoot(Character.MakeScope).End))]"
+											alpha = 0.5
+											text = "date_1150_gui"
 											size = { 200 0 }
 											align = right
 											elide = right

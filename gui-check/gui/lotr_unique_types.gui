@@ -4,11 +4,11 @@ types LotRWindowCountyViewTypes
 	type LotRSettlementButtons = widget { #LotR
 		allow_outside = yes
 		parentanchor = left|top
-		
+
 		vbox = {
 			ignoreinvisible = yes
 			position = { -287 110 }
-			
+
 			button_round  = { ## RETURN SETTLEMENT BACK TO WILDERNESS ###
 				datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 				datacontext = "[HoldingView.GetTitle]"
@@ -19,15 +19,15 @@ types LotRWindowCountyViewTypes
 				oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
 				clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
 				onclick = "[Character.OpenPlayerInteractionWithTargetTitle('return_settlement_county_to_wilderness', Title.Self)]"
-				
+
 				button_abandon_holding = {
 					size = { 25 25 }
 					parentanchor = center
 					alwaystransparent = yes
-					
+
 				}
 			}
-		
+
 			button_round  = { ## FEUDALIZE INTO CASTLE HOLDING ###
 				datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 				datacontext = "[HoldingView.GetTitle]"
@@ -44,8 +44,8 @@ types LotRWindowCountyViewTypes
 					parentanchor = center
 					alwaystransparent = yes
 				}
-			}	
-		
+			}
+
 			button_round  = { ## FEUDALIZE INTO CITY HOLDING ###
 				datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 				datacontext = "[HoldingView.GetTitle]"
@@ -63,7 +63,7 @@ types LotRWindowCountyViewTypes
 					alwaystransparent = yes
 				}
 			}
-		
+
 			button_round  = { ## FEUDALIZE INTO TRIBAL HOLDING ###
 				datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 				datacontext = "[HoldingView.GetTitle]"
@@ -74,14 +74,14 @@ types LotRWindowCountyViewTypes
 				oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
 				clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
 				onclick = "[Character.OpenPlayerInteractionWithTargetTitle('feudalize_into_tribal_holding_interaction', Title.Self)]"
-			
+
 				button_feudalize_holding = {
 					size = { 25 25 }
 					parentanchor = center
 					alwaystransparent = yes
 				}
 			}
-		
+
 			button_round  = { ## FEUDALIZE INTO TEMPLE HOLDING ###
 				datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 				datacontext = "[HoldingView.GetTitle]"
@@ -92,16 +92,16 @@ types LotRWindowCountyViewTypes
 				oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
 				clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
 				onclick = "[Character.OpenPlayerInteractionWithTargetTitle('feudalize_into_temple_holding_interaction', Title.Self)]"
-				
+
 
 				button_feudalize_holding_temple = {
 					size = { 25 25 }
 					parentanchor = center
 					alwaystransparent = yes
-					
+
 				}
 			}
-		
+
 			button_round  = { ## SETTLE AN ELVEN HOLDING ###
 				datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 				datacontext = "[HoldingView.GetTitle]"
@@ -112,15 +112,15 @@ types LotRWindowCountyViewTypes
 				oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
 				clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
 				onclick = "[Character.OpenPlayerInteractionWithTargetTitle('settle_elven_holding_interaction', Title.Self)]"
-			
+
 				button_feudalize_holding_elven = {
 					size = { 25 25 }
 					parentanchor = center
 					alwaystransparent = yes
-					
+
 				}
 			}
-		
+
 			button_round  = { ## FEUDALIZE INTO DELVING HOLDING ###
 				datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 				datacontext = "[HoldingView.GetTitle]"
@@ -138,7 +138,7 @@ types LotRWindowCountyViewTypes
 					alwaystransparent = yes
 				}
 			}
-		
+
 			button_round  = { ## TRIBALIZE AN ELVEN HOLDING ###
 				datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 				datacontext = "[HoldingView.GetTitle]"
@@ -149,7 +149,7 @@ types LotRWindowCountyViewTypes
 				oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
 				clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
 				onclick = "[Character.OpenPlayerInteractionWithTargetTitle('tribalize_elven_holding_interaction', Title.Self)]"
-			
+
 				button_feudalize_holding = {
 					size = { 25 25 }
 					parentanchor = center
@@ -190,11 +190,11 @@ types LotRWindowCountyViewTypes
 		widget = { #LotR
 			allow_outside = yes
 			parentanchor = left|top
-			
+
 			vbox = {
 				ignoreinvisible = yes
 				position = { 80 70 }
-				
+
 				button_round  = { ## RETURN SETTLEMENT BACK TO WILDERNESS ###
 					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 					datacontext = "[HoldingView.GetTitle]"
@@ -205,14 +205,14 @@ types LotRWindowCountyViewTypes
 					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
 					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
 					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('return_settlement_county_to_wilderness', Title.Self)]"
-					
+
 					button_abandon_holding = {
 						size = { 25 25 }
 						parentanchor = center
 						alwaystransparent = yes
 					}
 				}
-			
+
 				button_round  = { ## FEUDALIZE INTO CASTLE HOLDING ###
 					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 					datacontext = "[HoldingView.GetTitle]"
@@ -229,8 +229,8 @@ types LotRWindowCountyViewTypes
 						parentanchor = center
 						alwaystransparent = yes
 					}
-				}	
-			
+				}
+
 				button_round  = { ## FEUDALIZE INTO CITY HOLDING ###
 					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 					datacontext = "[HoldingView.GetTitle]"
@@ -248,7 +248,7 @@ types LotRWindowCountyViewTypes
 						alwaystransparent = yes
 					}
 				}
-			
+
 				button_round  = { ## FEUDALIZE INTO TEMPLE HOLDING ###
 					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 					datacontext = "[HoldingView.GetTitle]"
@@ -259,14 +259,14 @@ types LotRWindowCountyViewTypes
 					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
 					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
 					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('feudalize_into_temple_holding_interaction', Title.Self)]"
-					
+
 					button_feudalize_holding_temple = {
 						size = { 25 25 }
 						parentanchor = center
 						alwaystransparent = yes
 					}
 				}
-			
+
 				button_round  = { ## SETTLE AN ELVEN HOLDING ###
 					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 					datacontext = "[HoldingView.GetTitle]"
@@ -277,14 +277,14 @@ types LotRWindowCountyViewTypes
 					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
 					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
 					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('settle_elven_holding_interaction', Title.Self)]"
-				
+
 					button_feudalize_holding_elven = {
 						size = { 25 25 }
 						parentanchor = center
 						alwaystransparent = yes
 					}
 				}
-			
+
 				button_round  = { ## FEUDALIZE INTO DELVING HOLDING ###
 					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 					datacontext = "[HoldingView.GetTitle]"
@@ -302,7 +302,7 @@ types LotRWindowCountyViewTypes
 						alwaystransparent = yes
 					}
 				}
-			
+
 				button_round  = { ## TRIBALIZE AN ELVEN HOLDING ###
 					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 					datacontext = "[HoldingView.GetTitle]"
@@ -313,7 +313,7 @@ types LotRWindowCountyViewTypes
 					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
 					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
 					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('tribalize_elven_holding_interaction', Title.Self)]"
-				
+
 					button_feudalize_holding = {
 						size = { 25 25 }
 						parentanchor = center
@@ -409,6 +409,30 @@ types LotRWindowCountyViewTypes
 								margin_left = 5
 
 								tooltip = "[HoldingView.GetProvince.GetTitle.GetNameNoTierNoTooltip]"
+							}
+
+							widget = {
+								size = { 20 25 }
+								visible = "[HoldingView.HasHolding]"
+								datacontext = "[HoldingView.GetProvince]"
+
+								button_pin = {
+									shortcut = "pin"
+									parentanchor = center
+									tooltip = "PROVINCE_PIN_TT"
+									position = { 0 2 }
+									onclick = "[Province.ToggleProvincePinned]"
+									visible = "[Not(Province.IsPinned)]"
+								}
+
+								button_unpin = {
+									shortcut = "pin"
+									parentanchor = center
+									tooltip = "PROVINCE_PIN_TT"
+									position = { 0 2 }
+									onclick = "[Province.ToggleProvincePinned]"
+									visible = "[Province.IsPinned]"
+								}
 							}
 
 							button_edit_text = {
@@ -935,7 +959,7 @@ types LotRWindowCountyViewTypes
 				button_standard_big = {
 					name = "construct_holding_wastelands"
 					datacontext = "[HoldingView.GetTitle]"
-				
+
 					size = { 300 50 }
 					text = "[Localize('COLONISE')] [HoldingView.GetProvince.GetCounty.GetTitle.GetNameNoTierNoTooltip]"
 					onclick = "[GetScriptedGui('gui_can_colonise').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('wastelands', HoldingView.GetProvince.MakeScope ).End)]"
@@ -1011,7 +1035,7 @@ types LotRWindowCountyViewTypes
 			widget = {
 				size = { 30 90 }
 				allow_outside = yes
-	
+
 				button_round = {
 					name = "lotr_toggle_find_vassal"
 					position = { 20 -50 }
@@ -1055,7 +1079,7 @@ types LotRWindowCountyViewTypes
 					}
 				}
 			}
-			
+
 			### BOTTOM RIGHT
 			hbox = {
 				layoutpolicy_vertical = expanding
@@ -1066,10 +1090,10 @@ types LotRWindowCountyViewTypes
 					# ignoreinvisible = yes
 					allow_outside = yes
 
-					widget = { 
+					widget = {
 						size = { 170 85 }
 						allow_outside = yes
-						
+
 						button_standard = {
 							datacontext = "[HoldingView.GetGUIHoldingBuilding]"
 							size = { 170 85 }
@@ -1273,9 +1297,9 @@ types LotRWindowCountyViewTypes
 
 						size = { 280 66 }
 						allow_outside = yes
-						
+
 						# Upgrade buildings
-				
+
 						fixedgridbox = {
 							name = "lotr_buildings_grid"
 							visible = "[Not(GetScriptedGui('gui_is_province_wastelands').IsShown( GuiScope.SetRoot( HoldingView.GetProvince.MakeScope ).End))]"
@@ -1287,7 +1311,7 @@ types LotRWindowCountyViewTypes
 							maximumsize = { 500 60 }
 							allow_outside = yes
 							position = { -275 -60 }
-								
+
 							item = {
 								widget_building_item = {
 									blockoverride "enabled_block" { enabled = yes }
@@ -1306,14 +1330,14 @@ types LotRWindowCountyViewTypes
 							maximumsize = { 500 60 }
 							allow_outside = yes
 							position = { -225 -60 }
-								
+
 							item = {
 								widget_building_item = {
 									blockoverride "enabled_block" { enabled = yes }
 								}
 							}
 						}
-						
+
 						hbox = {
 							visible = "[Or(HoldingView.HasDuchyCapitalBuildingSlot, HoldingView.HasSpecialBuildingSlot )]"
 							ignoreinvisible = yes
@@ -1321,7 +1345,7 @@ types LotRWindowCountyViewTypes
 							expand = {}
 
 							spacer = { size = { 140 0 } }
-							
+
 							widget_building_item = {
 								name = "lotr_duchy_capital_building"
 								datacontext = "[HoldingView.GetGUIDuchyCapitalBuilding]"
@@ -1391,7 +1415,7 @@ types LotRWindowCountyViewTypes
 								}
 							}
 						}
-						
+
 					}
 				}
 			}
@@ -1400,7 +1424,7 @@ types LotRWindowCountyViewTypes
 
 	type LotROpenAutomatedColonisationWindow = widget {
 		size = { 30 30 }
-		visible = "[HoldingView.HasHolder]"
+		visible = "[And(HoldingView.HasHolder, Not(IsObserver))]"
 		parentanchor = left
 		button_standard = {
 			size = { 30 30 }
@@ -1425,13 +1449,13 @@ types LotRHudTypes
 		name = "lotr_situation_widget"
 		size = { 90 90 }
 		parentanchor = bottom
-		LotRElvenSituationButton = { 
+		LotRElvenSituationButton = {
 			visible = "[EqualTo_string(Situation.GetType.GetNameNoTooltip, 'The Long Defeat')]"
 		}
 		button_situation_banner = {
 			visible = "[Not(EqualTo_string(Situation.GetType.GetNameNoTooltip, 'The Long Defeat'))]"
 		}
-		
+
 	}
 
 	type LotRElvenSituationButton = button_normal {
@@ -1439,7 +1463,7 @@ types LotRHudTypes
 		size = { 90 90 }
 
 		onclick = "[ToggleGameViewData(Situation.GetWindowName, Situation.GetID)]"
-		
+
 		block "tooltipwidget"
 		{
 			tooltipwidget = lotr_elven_situation_tooltip
@@ -1518,11 +1542,11 @@ types LotRCultureDescriptionTypes
 					max_width = 390
 				}
 			}
-			background = { 
+			background = {
 				using = Background_Area_Solid
 				margin = { 10 10 }
 			}
-			
+
 
 			scrollbar_vertical = {
 				using = Scrollbar_Vertical
@@ -1535,6 +1559,7 @@ types LotRAutomatedWastelandsColonisation
 {
 	type LotRAutomatedColonisationWidget = widget {
 		size = { 150 36 }
+		visible = "[Not(IsObserver)]"
 		text_multi = {
 			parentanchor = right
 			max_width = 80
@@ -1544,7 +1569,7 @@ types LotRAutomatedWastelandsColonisation
 		}
 
 		LotRAutomatedColonisationButton = { }
-		
+
 		LotROpenAutomatedColonisationSettingsWindow = { }
 	}
 
@@ -1554,7 +1579,7 @@ types LotRAutomatedWastelandsColonisation
 		position = { 40 0 }
 
 		onclick = "[GetScriptedGui('lotr_WAC_effect_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End)]"
-		down = "[Not(GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End))]" 
+		down = "[Not(GetScriptedGui('lotr_WAC_rotation_button').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End))]"
 		enabled = "[And(GetScriptedGui('lotr_WAC_no_valid_counties_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',TitleViewWindow.GetTitle.MakeScope).End), GetScriptedGui('lotr_WAC_higher_title_already_selected_tooltip').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('targeted_title',Title.MakeScope).End))]"
 		tooltip = "WASTELANDS_AUTOMATION_TOGGLE_TT"
 		using = tooltip_sw
@@ -1631,7 +1656,7 @@ types LotRLifestyleTypes
 					button_plus = { # CharacterLifestyleWindow.GetSelectedLifestyle
 						size = { 40 40 }
 						onclick = "[GetScriptedGui(Concatenate(Concatenate('lotr_recycle_',Lifestyle.GetKey),'_effect')).Execute( GuiScope.SetRoot( CharacterLifestyleWindow.GetCharacter.MakeScope ).End)]"
-						onclick = "[GetScriptedGui(Concatenate('lotr_recycle_',CharacterLifestyleWindow.GetSelectedLifestyle.GetKey)).Execute( GuiScope.SetRoot( CharacterLifestyleWindow.GetCharacter.MakeScope ).End)]" # 
+						onclick = "[GetScriptedGui(Concatenate('lotr_recycle_',CharacterLifestyleWindow.GetSelectedLifestyle.GetKey)).Execute( GuiScope.SetRoot( CharacterLifestyleWindow.GetCharacter.MakeScope ).End)]" #
 						enabled = "[And(GetScriptedGui(Concatenate('lotr_recycle_',CharacterLifestyleWindow.GetSelectedLifestyle.GetKey)).IsValid( GuiScope.SetRoot( CharacterLifestyleWindow.GetCharacter.MakeScope ).End), Not(ObjectsEqual(CharacterLifestyleWindow.GetSelectedLifestyle.GetKey,Lifestyle.GetKey)))]"
 						tooltip = "[GetScriptedGui(Concatenate(Concatenate('lotr_recycle_',Lifestyle.GetKey),'_effect')).BuildTooltip( GuiScope.SetRoot( CharacterLifestyleWindow.GetCharacter.MakeScope ).End)]"
 					}
