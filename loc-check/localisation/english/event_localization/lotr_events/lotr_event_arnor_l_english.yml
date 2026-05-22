@@ -39,7 +39,7 @@
  arnor.7003.desc: "Now that I have made the choice to flee, I must also choose where to seek refuge.\n\n[GetTitleByKey('k_arthedain').GetNameNoTier] is the safer choice, yet to flee so far to the court of [GetTitleByKey('c_fornost').GetNameNoTier] in itself would risk us being seen as utter cowards. \n\n[GetTitleByKey('c_thalion').GetNameNoTier], the capital of the more unstable [GetTitleByKey('k_cardolan').GetNameNoTier], meanwhile sits close to danger, yet it would almost certainly be more welcoming, and King [Tarvegil.GetFirstName] would likely grant us refuge.\n\nIt is my choice now: the safety, yet indignity, of Arthedain, or the frontlines of Cardolan?"
  arnor.7003.a: "I shall seek refuge in Arthedain."
  arnor.7003.b: "I shall seek refuge in Cardolan."
- event_arnor_07003_a: "You will seek refuge in the capital of the [GetTitleByKey('e_arthedain').GetName], [GetTitleByKey('c_fornost').GetNameNoTier]."
+ event_arnor_07003_a: "You will seek refuge in the capital of the [GetTitleByKey('k_arthedain').GetName], [GetTitleByKey('c_fornost').GetNameNoTier]."
  event_arnor_07003_b: "You will seek refuge in the capital of the [GetTitleByKey('k_cardolan').GetName], [GetTitleByKey('c_thalion').GetNameNoTier]."
  
  arnor.7004.t: "The Fortress of Kings"
@@ -61,9 +61,50 @@
  reclaimers_of_egladil: "Reclaimers of Egladil"
  
  arnor.7024.t: "Into the Wilderness"
- arnor.7024.desc: "With my decision to begin patrolling the wilderness of [eriador|E], my entourage has begun to set up a rudimentary camp. \n\nMost of the Dúnedain that still dwelt in the Angle of Mitheithel have followed me, and I have a few dozen able sword-hands at my disposal. \n\nIn time, we might even become strong enough to topple the barbaric [hillmen|E] who now lay claim to [rhudaur|E]..."
+ arnor.7024.desc: "With my decision to begin patrolling the wilderness of [eriador|E], my entourage has begun to set up a rudimentary camp.\n\nMost of the Dúnedain that still dwelt in the Angle of Mitheithel have followed me, and I have a few dozen able sword-hands at my disposal.\n\nIn time, we might even become strong enough to topple the barbaric [hillmen|E] who now lay claim to [rhudaur|E]..."
  arnor.7024.a: "We shall fight for Arnor!"
  arnor.7024.tt: "Two useful retainers joined your camp"
+
+ # Scions of Aramir events
+ arnor.8001.t: "The Fall of the Aramirach"
+ arnor.8001.desc: "These are the final, bitter days of a lost war. We have held out for as long as strength allowed, but it mattered not. [hwaldar.GetFirstName]'s horde struck with terrifying, remorseless speed, leaving no time to organize a defence, let alone don mail or leather before the carnage began.\n\nSuddenly, the world spins. I lie in the mud, slick with the blood of my slaughtered kin, while the screams of the dying fade into a distant, muffled clamour. A sharp, agonising heat radiates from my chest, an enemy arrow protruding from my defenceless torso and leaking my life away.\n\nStrong hands lift me from the ground. Through blinking, blood-streaked eyes, I see [culainn.GetFirstName]. My son's face is a mask of desperate grief. 'Father!' his voice cries out, torn from his very soul as he cradles me close against the oncoming slaughter.\n\nI struggle to breathe, using the absolute last of my fading energy to clutch his arm. I cannot let him die here. My lips move, forcing the faint, final words past a throat slick with blood before the darkness takes me entirely..."
+ arnor.8001.a: "“Leave me, [culainn.GetFirstNameNoTooltip]... Flee to [GetTitleByKey('k_arthedain').GetNameNoTier]... Seek the King...”"
+ arnor.8001.b: "“The Aramirach do not retreat...”"
+ event_arnor_08001_a: "Your kin are slaughtered, your son is all that remains.\nHe must survive."
+ event_arnor_08001_b: "The Aramirach have fallen, but their honour is left intact."
+
+ arnor.8002.t: "Echoes of the Slaughter"
+ arnor.8002.desc: "The smoke of our burning home rises behind us, a grim shroud for my slaughtered kin. There is no time to mourn, for the assailants will soon be on our heels. Just as despair threatens to take me, a bloodied figure emerges from the brush.\n[midhir.GetFirstName], a fellow [hillman|E] with [Glossary('Iarfer','iarfer_gloss')] roots and my father's oldest friend.\n\nHe does not waste breath on condolences. Thrusting the reins of two stray horses into my hands, his voice is tight with urgency. "Save your tears for the road, boy," he barks, hauling himself into the saddle. "If we linger here, we join them. Move!"\n\nWith the ruins of our lives at our backs, we mount up and ride as swift as the wind toward the safety of the west. I must reach Arthedain, lay our tragic tale before the King, and claim the birthright stolen from us this day."
+ arnor.8002.a: "To [GetTitleByKey('c_fornost').GetNameNoTier]! We ride for refuge!"
+ event_arnor_08002_a: "You will seek refuge in the capital of the [GetTitleByKey('k_arthedain').GetName], [GetTitleByKey('c_fornost').GetNameNoTier]."
+ scions_of_aramir_camp_name: "Scions of Aramir"
+
+ arnor.8003.t: "The Gates of Fornost"
+ arnor.8003.desc: "Our frantic flight ends as we reach the capital's threshold. [midhir.GetFirstName] and I draw whispered remarks from the gathered locals as the palace guards guide us through the bustling streets of [GetTitleByKey('c_fornost').GetNameNoTier] toward the Royal Court at [GetBuilding('wonder_fornost_03').GetName].\n\nTo the [arnorians|E], we are a peculiar sight: errant [hillmen|E] carrying the unmistakable vestige of the blood of [westernesse|E] in our features. It was this strange heritage, and our desperate plea to speak with the sovereign, that piqued the King's interest enough to agree to meet us.\n\nThere, in the open air just outside the palace doors, King [argeleb.GetFirstName] looks down upon us from a palace balcony with solemn majesty. Respecting seniority, he addresses my companion Midhir first.\n\n"Step forward, man of the hills," Argeleb commands, his voice carrying clearly across the stone courtyard. "Word has reached us of ruin in the East, but the full truth escapes us.\nSpeak, soldier. What has befallen the Angle, and who is this youth who rides in your shadow?""
+ arnor.8003.a: "Midhir looks to me, and I step forward to lay our tragedy before the King..."
+ event_arnor_08003_a: "You are received at the Royal Court of King [argeleb.GetFirstName]."
+
+ arnor.8004.t: "A Bold Proposal"
+ arnor.8004.desc: "Before King [argeleb.GetFirstName], at the Royal Court, I recount the horror: how the war is lost, how [hwaldar.GetFirstName] has slaughtered the last of the loyalist [hillmen|E], and how my kinsmen died in the mud.\n\nI speak softly but with a hint of a tremor. "I ask for your reprieve, my King, for I have come to offer you service, as my ancestors have done for generations to the [mellondir.GetDynasty.GetName] of the Angle. Ten years ago, the [galadhion.GetHouse.GetName] were fully extinguished by Hwaldar's cruelty. Now, in this latest onslaught, the Angle too has fallen to his tyranny. I remain however, the sole living descendant of [aramir.GetFirstName], bastard son of King [elenthorn.GetFirstNameNicknamed]." [argeleb.GetFirstName]'s gaze pierces me, yet I press on.\n\n"Lend me your aid to avenge our fallen kinsmen and punish Hwaldar the Usurper. Acknowledge the blood which flows in my veins, and I shall wield it to rally all loyal peoples of Rhudaur to your banner. Thus blood shall answer blood, and I shall kneel before you and return the lapsed and lost sons of Rhudaur to your elder line, kinsman."\n\nThe court falls silent as the King reflects on my plea..."
+ arnor.8004.a: "“What say you, my King?”"
+ event_arnor_08004_a: "You await the response of King [argeleb.GetFirstName].\n\nThrough meritous service, perhaps King [argeleb.GetFirstNameNoTooltip] could be convinced not merely to acknowledge you as a distant bastard line, but as the future ruler of [GetTitleByKey('k_rhudaur').GetNameNoTier]."
+
+ arnor.8005.t: "The King's Decree"
+ arnor.8005.desc: "A heavy silence hangs over the Royal Court as King [argeleb.GetFirstName] ponders my words. When he finally looks back down upon me, the stern majesty of his expression hardens into an unyielding resolve.\n\n"The crimes of the lawless [hwaldar.GetFirstName] cry out for vengeance," the King declares, his voice echoing off the stone. "With the rising threat of [angmar|E] and the fall of the [galadhion.GetHouse.GetName], our list of allies grows thin. You have offered your service, young [hillman|E], and [GetTitleByKey('k_arthedain').GetNameNoTier] shall accept it. Though I acknowledge that the blood of [westernesse|E] that stirs within you, the lands of the Angle are not reclaimed by promises alone."\n\nArgeleb leans forward, his eyes locking onto mine with ancient authority. "Go to [GetTitleByKey('c_auchleathan').GetNameNoTier] and gather what remains of your people. Build your strength, and prepare. Bring [GetTitleByKey('k_rhudaur').GetNameNoTier] back into the fold, and you shall find that such loyalty does not go unrewarded. Fail, and you shall remain but another wanderer of no repute.""
+ arnor.8005.a: "“You have my eternal gratitude, my Lord.”"
+ event_arnor_08005_a: "[argeleb.GetName] will grant you refuge in [GetTitleByKey('c_auchleathan').GetNameNoTier]" 
+ arnor.8005.b: "“I shall take up my axe to serve you in the field, Your Grace.”"
+
+ arnor.8009.t: "A New Home in Arthedain"
+ arnor.8009.desc: "Having arrived at the small outpost granted to us by King [argeleb.GetFirstName], [midhir.GetFirstName] and I can finally breathe a brief sigh of relief. Here, at the border of [GetTitleByKey('k_arthedain').GetNameNoTier], the last survivors of our people are safe... for now.\n\nYet, my thoughts inevitably drift eastward. There, the lawless heathen [hwaldar.GetFirstName] rules over the ruins of my birthright with those tribes loyal to thim. The King has given us his countenance, but the restoration of our house remains shackled to a heavy price: the total conquest of [GetTitleByKey('k_rhudaur').GetNameNoTier].\n\nLooking out over the rugged walls of this refuge, I find myself pondering how we shall navigate the time ahead..."
+ arnor.8009.a: "We must train our men. I will avenge my kin and reclaim [GetTitleByKey('k_rhudaur').GetNameNoTier]!"
+ arnor.8009.b: "We must first fortify this haven and ensure our survival."
+ avengers_of_the_aramirach: "Avengers of the Aramirach"
+
+ arnor.8010.t: "Roaming the Lands of Eriador"
+ arnor.8010.desc: "With my decision to begin patrolling the lands surrounding [GetTitleByKey('c_fornost').GetNameNoTier], my small warband has set up a rudimentary camp.\n\nAny loyalist Hillmen who managed to escape the slaughter in the Angle have rallied to my banner. Though we are few, carrying the mixed blood of the West and the hills, I have a few dozen able sword-hands with a united purpose.\n\nIn time, as we master these new surroundings, we might yet gather the strength needed to topple [hwaldar.GetFirstName] and the tribes loyal to him who now lay claim to my stolen birthright..."
+ arnor.8010.a: "I will avenge my kin and reclaim [GetTitleByKey('k_rhudaur').GetNameNoTier]!"
+ arnor.8010.tt: "Two useful retainers joined your camp"
  
  arnor.9100.t: "The Rebuilding of Tharbad"
  arnor.9100.desc: "Long has the city of Tharbad served as an important waypoint between the northern realm of [arnor|E] and its sister, the southern realm of [gondor|E]. But the [angmar_wars|E] and the Great Plague have left the city depopulated, and vicious floods in the past decades have finally turned the proud trading hub into a lifeless ruin. \n\nNow, the rightful lords of Tharbad have returned, with the promise to restore the city and its iconic bridge to their splendor of old, so trade may once again flow between the kingdoms of Gondor and Arnor."

@@ -12,7 +12,7 @@
  activity_firstfruits_festival: "Festival of First-Fruits"
  activity_firstfruits_festival_desc: "Aligning with the first harvest in late summer, the Festival of First-Fruits is a religious and cultural festival popular around the [bayoftulwang|E], celebrating and praying for a bounteous harvest.\n\nIt is common tradition to offer the first cereal-grains of the harvest, a token returned to the heavens in thanks for their favor."
  activity_firstfruits_festival_selection_tooltip: "Participate in a Festival of First-Fruits, an ancient [haradric|E] harvest celebration.\n\nAnticipated Rewards:\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]\n$EFFECT_LIST_BULLET$[stress_loss_i|E][stress|E] Loss\n$EFFECT_LIST_BULLET$#P Positive#! [character_modifiers|E]\n$EFFECT_LIST_BULLET$[GetModifier('firstfruits_festival_county_modifier').GetNameWithTooltip] [modifier|E] for [domain|E] [counties|E] with [GetFaithDoctrine('tenet_bellakari_syncretism').GetBaseName]"
- activity_firstfruits_festival_host_desc: "\n$EFFECT_LIST_BULLET$ [prestige_i|E][prestige|E]\n$EFFECT_LIST_BULLET$ [piety_i|E][piety|E]\n$EFFECT_LIST_BULLET$ Lose [stress_loss_i|E][stress|E]\n$EFFECT_LIST_BULLET$ #P Positive#! [character_modifiers|E]\n$EFFECT_LIST_BULLET$ [domain|E] [counties|E] with [GetFaithDoctrine('tenet_bellakari_syncretism').GetBaseName] receive the [GetModifier('firstfruits_festival_county_modifier').GetNameWithTooltip] [county_modifier|E]"
+ activity_firstfruits_festival_host_desc: "\n$EFFECT_LIST_BULLET$ [prestige_i|E][prestige|E]\n$EFFECT_LIST_BULLET$ [piety_i|E][piety|E]\n$EFFECT_LIST_BULLET$ Lose [stress_loss_i|E][stress|E]\n$EFFECT_LIST_BULLET$ #P Positive#! [character_modifiers|E]\n$EFFECT_LIST_BULLET$ [domain|E] [counties|E] with [GetFaithDoctrine('tenet_bellakari_syncretism').GetBaseName] receive the [GetModifier('firstfruits_festival_county_modifier').GetNameWithTooltip] [county_modifier|E]\n\nSome [artifacts|E] from the [GetDecisionWithKey('decision_kathasaptha_manuscript').GetName] [decision|E] will improve the Activity Rewards"
  activity_firstfruits_festival_guest_desc: "$activity_firstfruits_festival_host_desc$"
  activity_firstfruits_festival_province_desc: ""
  activity_firstfruits_festival_destination_selection: "$activity_firstfruits_festival_province_desc$"
@@ -61,8 +61,8 @@
  firstfruits_fast_health_malus_modifier: "Overfasting"
  firstfruits_fast_health_malus_modifier_desc: "This character's body was not able to handle the rigors of fasting while they were preparing for the $activity_firstfruits_festival$."
  firstfruits_festival_county_modifier: "First-Fruits Celebrations"
- firstfruits_festival_county_modifier_desc: "The people of this county benefit from the recent $activity_firstfruits_festival$."
- firstfruits_festival_county_modifier_scale_desc: "\t#weak Improved by $lotr_firstfruits_fruit_alms_type_small$#! [activity_option|E]#!"
+ firstfruits_festival_county_modifier_desc: "The people of this county benefit from the recent [GetActivityType( 'activity_firstfruits_festival' ).GetName]."
+ firstfruits_festival_county_modifier_scale_desc: "\t#weak Per $lotr_firstfruits_fruit_alms_type$ [activity_option|E] Level#!"
 
  # Effect Loc
  EVERY_ZEALOT_AND_THEOCRAT_VASSAL_AND_COURTIER_EFFECT: "Every [GetVassalStance( 'zealot' ).GetTextIcon][GetVassalStance( 'zealot' ).GetName] or [theocratic|E] [vassal|E] and [courtier|E] with [GetFaithDoctrine('tenet_bellakari_syncretism').GetBaseName]"
@@ -70,11 +70,12 @@
  activity_firstfruits_because_of_alms_type_small: "Because of the #V $lotr_firstfruits_fruit_alms_type_small$#! [activity_option|E]:"
  activity_firstfruits_because_of_alms_type_medium: "Because of the #V $lotr_firstfruits_fruit_alms_type_medium$#! [activity_option|E]:"
  activity_firstfruits_because_of_alms_type_large: "Because of the #V $lotr_firstfruits_fruit_alms_type_large$#! [activity_option|E]:"
- activity_firstfruits_because_of_artifact_urenanvale: "Because of your [manuscript_artifact.GetName] [artifact|E]:"
- activity_firstfruits_because_of_artifact_missingmountain: "Because of your [manuscript_artifact.GetName] [artifact|E] and [piety_level|E]:"
- activity_firstfruits_because_of_artifact_gatarazay: "Because of your [manuscript_artifact.GetName] [artifact|E]:"
- activity_firstfruits_because_of_artifact_emissariesinnature: "Because of your [manuscript_artifact.GetName] [artifact|E]:"
- activity_firstfruits_because_of_artifact_scoldingtheflames: "Because of your [manuscript_artifact.GetName] [artifact|E]:"
+ activity_firstfruits_because_of_alms_type_huge: "Because of the #V $lotr_firstfruits_fruit_alms_type_huge$#! [activity_option|E]:"
+ activity_firstfruits_because_of_artifact_urenanvale: "Because of your #V $kathasaptha_artifact_urenanvale_name$#! [artifact|E]:"
+ activity_firstfruits_because_of_artifact_missingmountain: "Because of your #V $kathasaptha_manuscript_missingmountain_name$#! [artifact|E] and [piety_level|E]:"
+ activity_firstfruits_because_of_artifact_gatarazay: "Because of your #V $kathasaptha_artifact_gatarazay_name$#! [artifact|E]:"
+ activity_firstfruits_because_of_artifact_emissariesinnature: "Because of your #V $kathasaptha_artifact_emissariesinnature_name$#! [artifact|E]:"
+ activity_firstfruits_because_of_artifact_scoldingtheflames: "Because of your #V $kathasaptha_artifact_scoldingtheflames_name$#! [artifact|E]:"
 
  # Events
  firstfruits.0030.t: "The Fast Begins"
