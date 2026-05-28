@@ -323,10 +323,10 @@ window = {
 
 						vbox_my_realm_succession_body = {
 							# visible = "[GetVariableSystem.HasValue( 'bookmark', 'succession' )]" #LotR
-							visible = "[And(GetVariableSystem.Exists( 'bookmark_succession' ), Not( IsOrc( GetPlayer )))]" #LotR
+							visible = "[And(GetVariableSystem.HasValue( 'bookmark', 'succession' ), Not( IsOrc( GetPlayer )))]" #LotR
 						}
 						vbox_my_realm_orc_succession_challengers_body = {
-							visible = "[And(GetVariableSystem.Exists( 'bookmark_succession' ), IsOrc( GetPlayer ))]" #LotR
+							visible = "[And(GetVariableSystem.HasValue( 'bookmark', 'succession' ), IsOrc( GetPlayer ))]" #LotR
 						}
 
 						vbox_my_realm_laws_body = {
