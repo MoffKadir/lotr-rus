@@ -193,7 +193,7 @@
  LEOFRINGS_HAVE_CLAIM: "The Lord of [GetTitleByKey('d_parth_celebrant').GetNameNoTier] has a claim on the [GetTitleByKey('d_drownholt').GetNameNoTier]"
 
  decision_reveal_necromancer: "Reveal the Necromancer of Dol Guldur"
- decision_reveal_necromancer_desc: "For many centuries, a darkness has spread from [GetTitleByKey('c_amon_lanc').GetNameNoTier]. Many tell of the rise of a necromancer that haunts the ancient ruins on top of the hill, seeking to taint the [mirkwood|E] and weaken the [elven|E] realms nearby. Some suspect this necromancer to be a mere human, dabbling in the dark arts, but we [elves|E] know this to be a greater evil.\n\n While entering the dreary forest is a perilous task, it must be done in order to reveal the true nature of the shadow that now resides within Dol Guldur. If we can close the distance, the truth shall be revealed."
+ decision_reveal_necromancer_desc: "For many centuries, a darkness has spread from [GetTitleByKey('c_amon_lanc').GetNameNoTier]. Many tell of the rise of a necromancer that haunts the ancient ruins on top of the hill, seeking to taint the [mirkwood|E] and weaken the [elven|E] realms nearby. Some suspect this necromancer to be a mere human, dabbling in the dark arts, but we [elves|E] know this to be a greater evil.\n\nWhile entering the dreary forest is a perilous task, it must be done in order to reveal the true nature of the shadow that now resides within Dol Guldur. If we can close the distance, the truth shall be revealed."
  decision_reveal_necromancer_tooltip: "Reveal the true nature of the darkness within Dol Guldur"
  decision_reveal_necromancer_confirm: "He cannot hide any longer."
  decision_reveal_necromancer_tt: "Your realm borders [GetTitleByKey('c_amon_lanc').GetNameNoTier]"
@@ -1574,6 +1574,13 @@
  decision_bellakar_tulwang_annexation_desc: "At our greatest peaks, much of northern [GetTitleByKey('k_tulwang').GetNameNoTier] was under the rule of [GetTitleByKey('e_bellakar').GetNameNoTier], our realm stretching over the [bayoftulwang|e] and crossing into the lands of [GetTitleByKey('e_thani_hazad').GetNameNoTier]. Yet those golden ages always proved brief and the power of [GetTitleByKey('k_an_balkumagan').GetNameNoTier] to the south of the peninsula ever threatened our rule. \n\nOnce more, [bellakar|e] has crossed the bay into [GetTitleByKey('k_tulwang').GetNameNoTier]. Where the cruel lords of [GetTitleByKey('k_an_balkumagan').GetNameNoTier] see in the land nothing more than exploitation grounds, we know the value and strength of its people. The key to our rule shall not be oppression but integration..."
  decision_bellakar_tulwang_annexation_confirm: "The Bay is ours!"
  must_have_tulwang_acceptance: "At least #V 50%#! of [GetGeographicalRegion('special_region_just_tulwang').GetName] must be of a [culture|e] with at least #V 40%#! [cultural_acceptance|e] towards your [culture|e]."
+ 
+ decision_bellakar_tedjin_suppression: "End the Tedjin Threat"
+ decision_bellakar_tedjin_suppression_desc: "The [GetCultureByKey('tedjin').GetName], a savage race of people from the wild plains of the East, have often threatened [bellakar|E] - even leading it to the brink of destruction during the dark years of the Tedjin Yoke. Even though our valiant kings have overcome the Yoke and put the Tedjin in their place, the danger still remains.\n\nWho's to say at what time the next [GetScriptedCharacterByHistoryID('lineofjoamtuv1').GetFirstName] might come? We cannot afford to let that happen. Never again shall the land of my people fall into enemy hands! Lay low these Tedjin savages and see that they can never rise again!"
+ decision_bellakar_tedjin_suppression_tooltip: "Ensure that the Tedjin never rise again"
+ decision_bellakar_tedjin_suppression_confirm: "At last... Peace."
+ decision_bellakar_tedjin_suppression_toast: "Spire of Victory Built"
+ decision_bellakar_tedjin_suppression_tt: "There are no [GetCultureByKey('tedjin').GetName] [independent_rulers|E] in [GetGeographicalRegion('middleearth_harad_dunesea_naraktedja').GetName]"
 
  anbalkumagan_grain_dole_decision: "Reinstate the Pharaz an-Dâira"
  anbalkumagan_grain_dole_decision_desc: "In the years before the [downfallofnumenor|E], [ciryatanore|E] served as the great breadbasket of the [numenorean|E] empire, yielding vast harvests of grain to sustain the island. In those days, the people of [numenor|E] partook of the Pharaz an-Dâira, the 'Gold of the Earth': the regular distributions of free or price-controlled bread. This noble tradition was cast aside when the worship of the [valargods|E] was outlawed, and it perished altogether in the [akallabeth|E]. Yet it is remembered still, and any ruler bold enough to restore it would surely win the hearts of the common folk."
@@ -1597,6 +1604,7 @@
  grain_anbalkumagan_providers_county_modifier_desc: "The Pharaz an-Dâira in the capital depends on this area producing and exporting massive amounts of cheap grain through an advanced network of traders, shippers, manifacturers, and even speculators."
  bread_and_circuses_anbalkumagan_county_modifier: "Pharaz an-Dâira"
  bread_and_circuses_anbalkumagan_county_modifier_desc: "The Pharaz an-Dâira is active: all citizens are entitled to regular distributions of free bread sponsored by the Emperor."
+ 
  ### WIP ### issue #228 -> The Last Alliance of the Númenórean Realms decision
  decision_bellakar_x_gondor: "Send Emissaries to Gondor"
  decision_bellakar_x_gondor_tooltip: "Seek to restore the old alliance with Gondor"
@@ -3202,6 +3210,12 @@
  decision_fortify_northern_pass_tooltip: "Build a stronghold in the mountain pass leading to [dorwinion|E]"
  decision_fortify_northern_pass_desc: "Beyond the castle of [GetTitleByKey('c_dargeca').GetNameNoTier] lies a mountain pass leading into the lands held by the Men of [GetTitleByKey('k_dorwinion').GetNameNoTier]. While the Men of [dorwinion|E] have often traded with us, they are just as likely to invade our lands if the opportunity arises.\n\nIn order to safeguard against any threat from the north, we should fortify our borders north of Dargeca, building a stronghold right at the exit of the mountain pass - creating an easily defensible chokepoint."
  decision_fortify_northern_pass_confirm: "Begin construction immediately!"
+ 
+ decision_purchase_war_drakes: "Purchase War Drakes"
+ decision_purchase_war_drakes_desc: "War Drakes of [rhun|E] are an extraordinarily rare sight, even in the eastern lands of [middleearth|E]. These territorial reptilian creatures harbour a vicious nature – their powerful jaws can snap a man’s arm in two and the venom they inject leaves their prey weakened and helpless. Sometimes, a particularly wealthy - or zealous - Easterling leader will purchase some of these beasts when they go to war. Not only are they dangerous creatures but they are also the pride of the Cult of Kerkassk."
+ decision_purchase_war_drakes_tooltip: "Recruit fearsome monsters for your army"
+ decision_purchase_war_drakes_confirm: "Message the Drake-wranglers!"
+ decision_purchase_war_drakes_tt: "Purchased War Drakes"
 
  decision_return_to_mistrand: "Return to Mistrand"
  decision_return_to_mistrand_tooltip: "Return to Mistrand"
@@ -3440,7 +3454,7 @@
  #Daen Coentis Empire
  decision_daen_coentis_empire: "Reclaim the Mountains"
  decision_daen_coentis_empire_tooltip: "Establish a Daen Empire along the [whitemountains|E]"
- decision_daen_coentis_empire_desc: "In ancient days, the Men of the Mountains ruled all the foothills of the [erednimrais|E], secure and proud. But then the invading [dunedain|E] arrived, and our people were defeated, forced into the west and forgotten.\n\n Now we have arisen once gain, and the [dunedain|E] have fled before our faces, and we once more control the ancient lands of our people. This time, we shall not be moved, and our people will stand as long as these mountains do."
+ decision_daen_coentis_empire_desc: "In ancient days, the Men of the Mountains ruled all the foothills of the [erednimrais|E], secure and proud. But then the invading [dunedain|E] arrived, and our people were defeated, forced into the west and forgotten.\n\nNow we have arisen once gain, and the [dunedain|E] have fled before our faces, and we once more control the ancient lands of our people. This time, we shall not be moved, and our people will stand as long as these mountains do."
  decision_daen_coentis_empire_confirm: "We need no friends but the mountains."
 
  ###########################
@@ -3606,9 +3620,23 @@
  decision_reclaim_khazaddum: "Reclaim Khazad-dûm"
  decision_reclaim_khazaddum_desc: "The world is grey and the mountains old, but the [longbeards|E] have not forgotten their ancestral home. Since our exile after the death of [GetScriptedCharacterByHistoryID('lineofdurinVI').GetFirstNameRegnal] by [Concept('balrog', 'Durin’s Bane')|E], [GetTitleByKey('k_khazad_dum').GetNameNoTier] has lain silent, desecrated by the forces of evil.\n\nThe time has come to march into the deep, rekindle the ashen-cold forges, and permanently re-establish our hold so our people may once again traverse the halls of the [dwarrowdelf|E] and gaze into the [GetTitleByKey('b_mirrormere').GetNameNoTier]."
  decision_reclaim_khazaddum_confirm: "[Glossary('Baruk Khazâd','baruk_khazad_gloss')]! [Glossary('Khazâd ai-mênu','khazad_ai_menu_gloss')]!"
- decision_reclaim_khazaddum_tooltip: "Cleanse the shadow from our ancestral home and restore the Kingdom of the Longbeards."
- decision_reclaim_khazaddum.tt_3: "Establish a new ruler to sit upon the throne of [GetTitleByKey('k_khazad_dum').GetNameNoTier]."
- control_percentage_of_khazaddum_desc: "You must control at least #V 90%#! of the [counties|E] of the [GetTitleByKey('k_khazad_dum').GetName]"
+ decision_reclaim_khazaddum_tooltip: "Reclaim our ancestral home and restore the Kingdom of the Longbeards."
+ decision_reclaim_khazaddum.tt_3: "Establish a new ruler to sit upon the throne of [GetTitleByKey('k_khazad_dum').GetNameNoTier]"
+ control_percentage_of_khazaddum_desc: "You must control at least #V 90%#! of the [counties|E] of the [GetTitleByKey('k_khazad_dum').GetName] and you must be [independent|E]"
+
+ decision_reclaim_nogrod: "Reclaim Nogrod"
+ decision_reclaim_nogrod_desc: "The halls of [nogrod|E] have stood silent and shattered since the ruinous [warofwrath|E] at the end of the [firstage|E]. Once the greatest smithy in [middleearth|E], where the legendary [GetScriptedCharacterByHistoryID('lineoftelchar1').GetFirstName] forged pieces of great renown, [GetTitleByKey('k_nogrod').GetNameNoTier] was swallowed by the wilderness and left to crumble into myth.\n\nThe time has come to march back into the deeps in the northern [bluemountains|E] and permanently re-establish our hold so our people may reclaim our ancestral legacy of the [firebeards|E]."
+ decision_reclaim_nogrod_confirm: "[Glossary('Baruk Khazâd','baruk_khazad_gloss')]! [Glossary('Khazâd ai-mênu','khazad_ai_menu_gloss')]!"
+ decision_reclaim_nogrod_tooltip: "Reclaim our ancestral home and restore the Kingdom of the Firebeards."
+ decision_reclaim_nogrod.tt_3: "Establish a new ruler to sit upon the throne of [GetTitleByKey('k_nogrod').GetNameNoTier]"
+ control_percentage_of_nogrod_desc: "You must control at least #V 90%#! of the [counties|E] of the [GetTitleByKey('k_nogrod').GetName] and you must be [independent|E]"
+
+ decision_reclaim_belegost: "Reclaim Belegost"
+ decision_reclaim_belegost_desc: "The halls of [belegost|E] were broken by the by the catastrophic [warofwrath|E] at the end of the [firstage|E], yet the [broadbeams|E] have never forgotten the grandeur of their ancient seat. For long ages, [GetTitleByKey('k_belegost').GetNameNoTier] has lain empty, a hollow ruin hidden deep within the northern [bluemountains|E].\n\nThe time has come to clear the choked tunnels, re-carve the grand columns of our forefathers, and permanently re-establish our hold so that our clan may flourish once more."
+ decision_reclaim_belegost_confirm: "[Glossary('Baruk Khazâd','baruk_khazad_gloss')]! [Glossary('Khazâd ai-mênu','khazad_ai_menu_gloss')]!"
+ decision_reclaim_belegost_tooltip: "Reclaim our ancestral home and restore the Kingdom of the Broadbeams."
+ decision_reclaim_belegost.tt_3: "Establish a new ruler to sit upon the throne of [GetTitleByKey('k_belegost').GetNameNoTier]"
+ control_percentage_of_belegost_desc: "You must control at least #V 90%#! of the [counties|E] of the [GetTitleByKey('k_belegost').GetName] and you must be [independent|E]"
 
  decision_uldona_spine_dwarf: "Reclaim the Uldona Spine"
  decision_uldona_spine_dwarf_tooltip: "re-establish the kingdom beneath the peaks of the Uldona Spine"
@@ -3687,7 +3715,7 @@
  decision_reclaim_mabladdum_tooltip: "Solidify control over the ancient realm of Mablâd-dûm."
  decision_reclaim_mabladdum.tt: "You have found all missing dwarven expeditionaries."
  decision_reclaim_mabladdum.tt_2: "You have secured the road to [GetTitleByKey('k_barazimab_ul').GetNameNoTier]."
- decision_reclaim_mabladdum.tt_3: "Decide upon a new ruler for [GetTitleByKey('k_mablad_dum').GetNameNoTier]."
+ decision_reclaim_mabladdum.tt_3: "Decide upon a new ruler for [GetTitleByKey('k_mablad_dum').GetNameNoTier]"
 
  decision_restore_mabladdum: "Reclaim Mablâd-dûm"
  decision_restore_mabladdum_desc: "Once the proud citadel of the [blacklocks|E] in the [yellowmountains|E], a catastrophe befell mighty [GetTitleByKey('k_mablad_dum').GetNameNoTier]. The Heart of Fire, a volcano that powered the great forges, erupted in violence and rage, driving our ancestors from their broken halls. Now filthy [orcs|E] and [goblins|E] squat in the ruined hallways and passages, defiling them with their sheer presence.\n\nI say, no more! I say, the time has come to fulfill our vows, and to drive forth the repulsive foes that occupy Mablâd-dûm! We shall not rest until they are scattered to the four winds, and the halls of our longfathers are in [dwarven|E] hands once more, once and for all!"
@@ -4088,15 +4116,18 @@
  ### Adventurer Decisions ###
  ############################
  settle_wilderness_county_or_duchy_decision: "Settle Region"
- settle_wilderness_county_or_duchy_decision_desc: "Settle the local region, becoming a landed ruler and leaving behind your adventuring days."
- settle_wilderness_county_or_duchy_decision_tooltip: "Settle the local region, becoming a landed [ruler|E]"
+ settle_wilderness_county_or_duchy_decision_desc: "Settle the local region, becoming a [landed|E] [ruler|E] and leaving behind your adventuring days - or select one of your [followers|E] to set up a new [colony|E] while you remain as an [adventurer|E]."
+ settle_wilderness_county_or_duchy_decision_tooltip: "Settle the local region, either becoming [landed|E] or landing a [follower|E]"
  settle_one_county: "Settle the immediate [county|E]"
  settle_one_county_tooltip: "$settle_one_county$"
  settle_one_county_desc: ""
+ settle_one_county_courtier: "Land a [follower|E]"
+ settle_one_county_courtier_tooltip: "Settle the immediate [county|E], landing a [follower|E] and remaining as an [adventurer|E] yourself"
+ settle_one_county_courtier_desc: ""
  settle_duchy: "Attempt to settle the [duchy|E]"
  settle_duchy_tooltip: "$settle_duchy$"
  settle_duchy_desc: ""
- settle_wilderness_county_or_duchy_decision_confirm: "It is time to make a home..."
+ settle_wilderness_county_or_duchy_decision_confirm: "It is time to settle the wilderness..."
  settle_wilderness_county_or_duchy_basic_effect: "For every #V 100#! [GetMaA('laamp_settler_maa').GetName] [men_at_arms|E], you will settle #P 1#! [county|E]"
  settle_wilderness_county_or_duchy_current_settle_limit_effect: "Current counties that can be settled: #V [GetPlayer.MakeScope.ScriptValue('lotr_settle_wilderness_as_adventurer_county_limit')]#!"
  settle_wilderness_county_or_duchy_destroy_maa_effect: "The [GetMaA('laamp_settler_maa').GetName] [men_at_arms|E] will be destroyed!"
