@@ -1575,6 +1575,13 @@
  decision_bellakar_tulwang_annexation_confirm: "Залив наш!"
  must_have_tulwang_acceptance: "В не менее #V 50%#! графствах #ONCLICK:GEOGRAPHICAL_REGION,special_region_just_tulwang #TOOLTIP:GEOGRAPHICAL_REGION,special_region_just_tulwang Тулванга#!#!#! распространена [Concept('culture', 'культура')|E], [Concept('cultural_acceptance', 'терпимость')|E] которой к вашей культуре не ниже #V 40%#!."
 
+ decision_bellakar_tedjin_suppression: "Покончить с угрозой теджин"
+ decision_bellakar_tedjin_suppression_desc: "[GetCultureByKey('tedjin').GetName], свирепый народ с диких равнин востока, часто угрожал [Concept('bellakar', 'Беллакару')|E], даже приводя его на грань уничтожения в тёмные годы Теджинского ига. Несмотря на то, что наши доблестные короли сбросили иго и поставили теджин на место, опасность всё ещё остаётся.\n\nКто может сказать, когда может возвыситься очередной [GetScriptedCharacterByHistoryID('lineofjoamtuv1').GetFirstName]? Мы не можем позволить этому случиться. Никогда больше земля моего народа не попадёт в руки врага! Усмирим этих дикарей-теджин и сделаем так, чтобы они никогда больше не смогли восстать!"
+ decision_bellakar_tedjin_suppression_tooltip: "Сделать так, чтобы теджин никогда больше не восстали"
+ decision_bellakar_tedjin_suppression_confirm: "Наконец-то... мир."
+ decision_bellakar_tedjin_suppression_toast: "Шпиль победы построен"
+ decision_bellakar_tedjin_suppression_tt: "В регионе [GetGeographicalRegion('middleearth_harad_dunesea_naraktedja').GetName] нет [Concept('independent_rulers', 'независимых')|E] #L [GetCultureByKey('tedjin').GetCollectiveNoun|l]их#! правителей"
+
  anbalkumagan_grain_dole_decision: "Вернуть Фараз ан-Дайра"
  anbalkumagan_grain_dole_decision_desc: "В годы, предшествовавшие [Concept('downfallofnumenor', 'Низвержению Нуменора')|E], [Concept('ciryatanore', 'Кирьятанорэ')|E] служила великой житницей [Concept('numenorean', 'Нуменорской')|E] империи, производя огромные урожаи зерна, необходимые для поддержания жизни острова. В те дни жители [Concept('numenor', 'Нуменора')|E] принимали участие в Фараз-ан-Дайра, «Золоте земли»: регулярной раздаче бесплатного хлеба или продаже по регулируемым ценам. Эта благородная традиция была отброшена в сторону, когда почитание [Concept('valargods', 'Валар')|E] было объявлено вне закона, и полностью исчезла после [Concept('akallabeth', 'Акаллабет')|E]. Но о ней помнят до сих пор, и любой правитель, достаточно смелый, чтобы восстановить её, несомненно, завоевал бы сердца простонародья."
  anbalkumagan_grain_dole_decision_tooltip: "Устроить раздачу хлеба жителям столицы"
@@ -1597,6 +1604,7 @@
  grain_anbalkumagan_providers_county_modifier_desc: "Фараз ан-Дайра в столице стала возможной благодаря масштабной торговле дешевым зерном, в которой участвует множество купцов, перевозчиков, производителей и даже спекулянтов."
  bread_and_circuses_anbalkumagan_county_modifier: "Фараз ан-Дайра"
  bread_and_circuses_anbalkumagan_county_modifier_desc: "Фараз ан-Дайра производится: все жители регулярно получают бесплатный хлеб в подарок от императора."
+
  ### WIP ### issue #228 -> The Last Alliance of the Númenórean Realms decision
  decision_bellakar_x_gondor: "Отправить послов в Гондор"
  decision_bellakar_x_gondor_tooltip: "Попытаться восстановить старый союз с Гондором"
@@ -3203,6 +3211,12 @@
  decision_fortify_northern_pass_desc: "За замком [GetTitleByKey('c_dargeca').GetNameNoTier] лежит горный перевал, ведущий в земли, принадлежащие людям [GetTitleByKey('k_dorwinion').GetNameNoTier]а. Хотя люди [Concept('dorwinion', 'Дорвиниона')|E] часто торговали с нами, с такой же вероятностью они вторгнутся в наши земли, если представится возможность.\n\nЧтобы защититься от любой угрозы с севера, мы должны укрепить наши границы к северу от Даргеки, построив крепость прямо на выходе из горного перевала, создав легко обороняемую точку пересечения."
  decision_fortify_northern_pass_confirm: "Немедленно начать строительство!"
 
+ decision_purchase_war_drakes: "Купить боевых змеев"
+ decision_purchase_war_drakes_desc: "Боевые змеи [Concept('rhun', 'Руна')|E] - чрезвычайно редкое зрелище даже в восточных землях [Concept('middleearth', 'Средиземья')|E]. Эти территориальные рептилии обладают злобным нравом – их мощные челюсти могут перекусить руку человека пополам, а яд, который они впрыскивают, делает их жертву слабой и беспомощной. Иногда особенно богатый или ревностный вождь истерлингов покупает некоторых из этих зверей, когда отправляется на войну. Они не только опасные существа, но и являются гордостью культа Керкасска."
+ decision_purchase_war_drakes_tooltip: "Включить стражных чудищ в свои войска"
+ decision_purchase_war_drakes_confirm: "Послать весточку укротителям змиев!"
+ decision_purchase_war_drakes_tt: "Боевые змеи куплены"
+
  decision_return_to_mistrand: "Вернуться в Мистранд"
  decision_return_to_mistrand_tooltip: "Вернуться в Мистранд"
  decision_return_to_mistrand_desc: "После долгих лет скитаний по чужим землям мое сердце и разум все больше склоняются к землям моего народа. Они бесконечно ссорятся, но я верю, что они могут обрести величие, если отбросят свои обиды.\n\nЕсть только одно место, где я могу приступить к делу, - Мистранд, великий город моего народа. Под его могучими стенами теснится множество душ, и если мое послание найдет там почву, оно сможет распространиться."
@@ -3606,9 +3620,23 @@
  decision_reclaim_khazaddum: "Вернуть Кхазад-дум"
  decision_reclaim_khazaddum_desc: "Мир сер, а горы стары, но [Concept('longbeards', 'Длиннобороды')|E] не забыли дом своих предков. Со времени нашего изгнания, последовавшего за смертью #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineofdurinVI').GetID] #L короля Дурина VI#!#! от [Concept('balrog', 'Проклятия Дурина')|E], [GetTitleByKey('k_khazad_dum').GetNameNoTier] безмолвствовал, осквернённый силами зла.\n\nПришло время отправиться в глубь, вновь разжечь пепельно-холодные кузницы и навсегда восстановить нашу крепость, чтобы наш народ мог снова пройти по залам [Concept('dwarrowdelf', 'Дварроудельфа')|E] и заглянуть в #ONCLICK:TITLE,b_mirrormere #TOOLTIP:LANDED_TITLE,b_mirrormere #L Зеркальное озеро#!#!#!."
  decision_reclaim_khazaddum_confirm: "[Glossary('Барук кхазад','baruk_khazad_gloss')]! [Glossary('Кхазад ай-мену','khazad_ai_menu_gloss')]!"
- decision_reclaim_khazaddum_tooltip: "Очистить дом наших предков от тени и восстановить королевство Длиннобородов."
- decision_reclaim_khazaddum.tt_3: "Возвести нового правителя на трон державы [GetTitleByKey('k_khazad_dum').GetNameNoTier]."
- control_percentage_of_khazaddum_desc: "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('k_khazad_dum').GetName]"
+ decision_reclaim_khazaddum_tooltip: "Вернуть дом наших предков и восстановить королевство Длиннобородов."
+ decision_reclaim_khazaddum.tt_3: "Возвести нового правителя на трон державы [GetTitleByKey('k_khazad_dum').GetNameNoTier]"
+ control_percentage_of_khazaddum_desc: "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('k_khazad_dum').GetName] и вы должны быть [Concept('independent', 'независимыми')|E]"
+
+ decision_reclaim_nogrod: "Вернуть Ногрод"
+ decision_reclaim_nogrod_desc: "Чертоги [Concept('nogrod', 'Ногрода')|E] стояли безмолвными и разрушенными со времён разрушительной [Concept('warofwrath', 'Войны Гнева')|E] в конце [Concept('firstage', 'Первой эпохи')|E]. Некогда величайшая кузница [Concept('middleearth', 'Средиземья')|E], где легендарный [GetScriptedCharacterByHistoryID('lineoftelchar1').GetFirstName] ковал знаменитые изделия, дебри поглотили [GetTitleByKey('k_nogrod').GetNameNoTier], и он превратился в миф.\n\nПришло время вернуться в глубины северных [Concept('bluemountains', 'Синих гор')|E] и навсегда восстановить наши владения, чтобы наш народ мог вернуть себе наше древнее наследие [Concept('firebeards', 'Огнебородов')|E]."
+ decision_reclaim_nogrod_confirm: "[Glossary('Барук кхазад','baruk_khazad_gloss')]! [Glossary('Кхазад ай-мену','khazad_ai_menu_gloss')]!"
+ decision_reclaim_nogrod_tooltip: "Вернуть дом наших предков и восстановить королевство Огнебородов."
+ decision_reclaim_nogrod.tt_3: "Возвести нового правителя на трон державы [GetTitleByKey('k_nogrod').GetNameNoTier]"
+ control_percentage_of_nogrod_desc: "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('k_nogrod').GetName] и вы должны быть [Concept('independent', 'независимыми')|E]"
+
+ decision_reclaim_belegost: "Вернуть Белегост"
+ decision_reclaim_belegost_desc: "Залы [Concept('belegost', 'Белегоста')|E] были разрушены катастрофической [Concept('warofwrath', 'Войной Гнева')|E] в конце [Concept('firstage', 'Первой эпохи')|E], но [Concept('broadbeams', 'Широкозады')|E] никогда не забывали о величии своего древнего чертога. Долгие века [GetTitleByKey('k_belegost').GetNameNoTier] лежал пустым, превратившись в руины, скрытые глубоко в северных [Concept('bluemountains', 'Синих горах')|E].\n\nПришло время расчистить забитые туннели, воссоздать величественные колонны наших предков и навсегда восстановить наше владение, чтобы наш клан мог снова процветать."
+ decision_reclaim_belegost_confirm: "[Glossary('Барук кхазад','baruk_khazad_gloss')]! [Glossary('Кхазад ай-мену','khazad_ai_menu_gloss')]!"
+ decision_reclaim_belegost_tooltip: "Вернуть дом наших предков и восстановить королевство Широкозадов."
+ decision_reclaim_belegost.tt_3: "Возвести нового правителя на трон державы [GetTitleByKey('k_belegost').GetNameNoTier]"
+ control_percentage_of_belegost_desc: "Вы должны контролировать не менее #V 90%#! [Concept('counties', 'графств')|E] державы [GetTitleByKey('k_belegost').GetName] и вы должны быть [Concept('independent', 'независимыми')|E]"
 
  decision_uldona_spine_dwarf: "Вернуть Ульдонский хребет"
  decision_uldona_spine_dwarf_tooltip: "Восстановить королевство под вершинами Ульдонского хребта"
@@ -3687,7 +3715,7 @@
  decision_reclaim_mabladdum_tooltip: "Укрепить контроль над ревним королевством Маблад-дум."
  decision_reclaim_mabladdum.tt: "Вы нашли всех пропавших гномьих экспедиционеров."
  decision_reclaim_mabladdum.tt_2: "Вы захватили дорогу к #L [GetTitleByKey('k_barazimab_ul').GetNameNoTier]у#!."
- decision_reclaim_mabladdum.tt_3: "Выберите нового правителя державы [GetTitleByKey('k_mablad_dum').GetNameNoTier]."
+ decision_reclaim_mabladdum.tt_3: "Выберите нового правителя державы [GetTitleByKey('k_mablad_dum').GetNameNoTier]"
 
  decision_restore_mabladdum: "Вернуть Маблад-дум"
  decision_restore_mabladdum_desc: "Могущественный [GetTitleByKey('k_mablad_dum').GetNameNoTier], некогда гордую цитадель [Concept('blacklocks', 'Черновласов')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E], постигла катастрофа. Сердце Огня, вулкан, который питал жаром великие кузни, разразился яростью, изгнав наших предков из разрушенных чертогов. Теперь поганые [Concept('orcs', 'орки')|E] и [Concept('goblins', 'гоблины')|E] ютятся в разрушенных залах и сводах, оскверняя их одним своим присутствием.\n\nДовольно! Пришло время исполнить наши клятвы и изгнать мерзких врагов, занявших Маблад-дум! Мы не успокоимся, пока они не будут развеяны на все четыре стороны, а чертоги наших предков снова не окажутся в руках [Concept('dwarven', 'гномов')|E], раз и навсегда!"
@@ -4088,15 +4116,18 @@
  ### Adventurer Decisions ###
  ############################
  settle_wilderness_county_or_duchy_decision: "Заселить регион"
- settle_wilderness_county_or_duchy_decision_desc: "Заселить местный регион, став землевладельцем и оставив позади дни, проведенные в странствиях."
- settle_wilderness_county_or_duchy_decision_tooltip: "Заселить местный регион, став [Concept('ruler', 'землевладельцем')|E]"
+ settle_wilderness_county_or_duchy_decision_desc: "Заселить местный регион, став [Concept('ruler', 'правителем')|E]-[Concept('landed', 'землевладельцем')|E] и оставив позади дни, проведенные в странствиях - или выбрать одного из ваших [Concept('followers', 'последователей')|E], чтобы основать новую [Concept('colony', 'колонию')|E], оставшись при этом [Concept('adventurer', 'авантюристом')|E]."
+ settle_wilderness_county_or_duchy_decision_tooltip: "Заселить местный регион, либо став [Concept('landed', 'землевладельцем')|E], либо передав землю [Concept('follower', 'последователю')|E]"
  settle_one_county: "Заселить ближайшее [Concept('county', 'графство')|E]"
  settle_one_county_tooltip: "$settle_one_county$"
  settle_one_county_desc: ""
+ settle_one_county_courtier: "Передать землю [Concept('follower', 'последователю')|E]"
+ settle_one_county_courtier_tooltip: "Заселить ближайшее [Concept('county', 'графство')|E], передав землю [Concept('follower', 'последователю')|E] и оставшись [Concept('adventurer', 'авантюристом')|E]"
+ settle_one_county_courtier_desc: ""
  settle_duchy: "Попытаться заселить [Concept('duchy', 'герцогство')|E]"
  settle_duchy_tooltip: "$settle_duchy$"
  settle_duchy_desc: ""
- settle_wilderness_county_or_duchy_decision_confirm: "Пришло время обустроить дом..."
+ settle_wilderness_county_or_duchy_decision_confirm: "Пришло время заселить дебри..."
  settle_wilderness_county_or_duchy_basic_effect: "Вы заселите #P 1#! [Concept('county', 'графство')|E] за каждых #V 100#! [Concept('men_at_arms', 'профессионалов')|E] типа [GetMaA('laamp_settler_maa').GetName]"
  settle_wilderness_county_or_duchy_current_settle_limit_effect: "Текущие графства могут быть заселены: #V [GetPlayer.MakeScope.ScriptValue('lotr_settle_wilderness_as_adventurer_county_limit')]#!"
  settle_wilderness_county_or_duchy_destroy_maa_effect: "[men_at_arms|E]-[GetMaA('laamp_settler_maa').GetName] будут распущены!"
