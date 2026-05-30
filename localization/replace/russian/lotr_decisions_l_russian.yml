@@ -2071,6 +2071,12 @@
  decision_vatalinar_civil_war_confirm: "Смерть всем изменникам!"
  decision_vatalinar_civil_war_effects_tt: "Вы начнёте гражданскую войну против Мардата из [GetTitleByKey('d_suza_riy').GetNameNoTier] за судьбу державы [GetTitleByKey('k_ray').GetNameNoTier]. Победа в этой войне позволит вам отстранить Мардата от власти, но в случае поражения он захватит державу. #N Мардат призовёт на эту войну всех тайных чужеземных сторонников!#!"
 
+ decision_reform_vatra: "Реформировать Аудрат-Ватру"
+ decision_reform_vatra_tooltip: "Вернуть ватраистов в объятия тьмы"
+ decision_reform_vatra_desc: "Слишком долго ватраисты прозябали в роскоши и апатии, и мы забыли о своём призвании. Пришло время вернуть наше поклонение истинной воле Ватры и пылко стремиться установить его законное господство."
+ decision_reform_vatra_confirm: "Во славу Солнца!"
+ you_are_largest_faith_ruler: "У вас самая большая [Concept('realm', 'держава')|E] из всех аудрат-ватранских правителей"
+
  ################################
  ####### Tedjin Decisions #######
  ################################
@@ -3916,6 +3922,14 @@
  decision_reaffirm_breeland_tooltip: "Расширить границы земель Бри."
  decision_reaffirm_breeland_desc: "Со времён тьмы, когда пали старые короли, ближайшие земли, окружающие Бри, по большому счету, были малонаселёнными. Возможно, настало время колонизировать эти дебри и официально подчинить их нашей юрисдикции."
  decision_reaffirm_breeland_confirm: "Мудрое начинание"
+
+ ### Eriadorrim Decisions ###
+
+ decision_restore_arne: "Восстановить Арн"
+ decision_restore_arne_tooltip: "Восстановить древнее эриадорримское королевство Арн."
+ decision_restore_arne_desc: "Ещё до того, как короли [Concept('dunedain', 'дунэдайн')|E] воцарились на этой земле, [GetCultureByKey('eriadorim').GetName|l] жили среди этих холмов, и короли #ONCLICK:TITLE,k_arne #TOOLTIP:LANDED_TITLE,k_arne #L Арна#!#! были их владыками. Память о них почти стерлась в тумане, но народ [Concept('eriador', 'Эриадора')|E] снова бродит по холмам, и настанет время, когда Арниэн восстанет вновь."
+ decision_restore_arne_confirm: "Да возвысятся благородные!"
+ half_arne_eriadorim: "#V 50%#! [Concept('counties', 'графств')|E] в регионе [GetGeographicalRegion('custom_arne').GetName] должны иметь #L [GetCulturePillar('heritage_eriadorim').GetName|l]ое#! [Concept('heritage', 'наследие')|E]"
 
  ##########################
  ###      Vulmaw        ###
