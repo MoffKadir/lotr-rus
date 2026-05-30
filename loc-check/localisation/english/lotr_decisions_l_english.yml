@@ -1541,7 +1541,7 @@
 
  decision_bellakar_vassalise_izindubeth: "Vassalize the Izindubêth"
  decision_bellakar_vassalise_izindubeth_tooltip: "Vassalize the Izindubêth under the Bellakarean crown"
- decision_bellakar_vassalise_izindubeth_desc: "#help For the sake of the piety of Ladnoca My daughter, the Tumakveh alone may continue to utter My name upon the hallow of Izindutârik at the times she has appointed; but because of their sins, the Bellakaranî shall worship Me in silence only. And let no man spurn the Kôlir or neglect their worship; for thus shall he honor My will.#!\n\nThus was the message of Êru delivered by the Izindubêth Imrathôr to Ar-Artârik 'an-Aranî'. The [Glossary('Batân an-Izindi','batan_an_izindi_gloss')] has never opposed the Tumakveh monarchy, but as the crown's authority retreated southwards the connection that once existed was lost. With Felaya now restored as part of [bellakar|E]-proper, perhaps the Izindubêth can be brought back into the fold too?"
+ decision_bellakar_vassalise_izindubeth_desc: "#help For the sake of the piety of Ladnoca My daughter, the Tumakveh alone may continue to utter My name upon the hallow of Izindutârik at the times she has appointed; but because of their sins, the Bellakaranî shall worship Me in silence only. And let no man spurn the Kôlir or neglect their worship; for thus shall he honor My will.#!\n\nThus was the message of [adunaiceru|E] delivered by the Izindubêth Imrathôr to Ar-Artârik 'an-Aranî'. The [Glossary('Batân an-Izindi','batan_an_izindi_gloss')] has never opposed the Tumakveh monarchy, but as the crown's authority retreated southwards the connection that once existed was lost. With Felaya now restored as part of [bellakar|E]-proper, perhaps the Izindubêth can be brought back into the fold too?"
  decision_bellakar_vassalise_izindubeth_confirm: "We will shield all the Faithful of the south"
 
  decision_tame_desert: "Tame the Desert Frontiers"
@@ -2070,6 +2070,12 @@
  decision_vatalinar_civil_war_desc: "For far too long, the treacherous and heretical lord of [GetTitleByKey('d_suza_riy').GetNameNoTier] has been allowed to plot the downfall of me and my dynasty from the shadows. His cruel plots and ambitions end today! I will not see my beloved [ray|e], the divine domain of Vâtra, fall to the madness of the Cult of Khäz-gramaze. \n\nAll banners of the Kanivâtra down to the last will be called to [GetTitleByKey('c_bozisha_dar').GetNameNoTier]. From there we will begin our march eastwards, and bring death unto all traitors that we find. Soon, that cowardly plotter Mardat will learn of his place, of his weakness, and none shall dare to stand against the chosen of Vâtra again!"
  decision_vatalinar_civil_war_confirm: "Death to all Traitors!"
  decision_vatalinar_civil_war_effects_tt: "You will launch a civil war against Mardat of [GetTitleByKey('d_suza_riy').GetNameNoTier] for the fate of [GetTitleByKey('k_ray').GetNameNoTier]. Winning this war will let you remove Mardat from power but losing it will see him claim the realm for himself. #N Mardat will call any secret foreign supporters into this war!#!"
+
+ decision_reform_vatra: "Reform $faith_vatra$"
+ decision_reform_vatra_tooltip: "Turn the $faith_vatra_adherent_plural$ back to the Dark"
+ decision_reform_vatra_desc: "For too long have the $faith_vatra_adherent_plural$ languished in luxury and apathy, and we have forgotten our calling. The time has come to turn our worship back to the true will of $darkness_god_vatra$, and burn with fervor to bring forth his rightful dominion."
+ decision_reform_vatra_confirm: "For the glory of the Sun!"
+ you_are_largest_faith_ruler: "You have the largest [realm|E] of any $faith_vatra_adj$ ruler"
 
  ################################
  ####### Tedjin Decisions #######
@@ -3916,6 +3922,14 @@
  decision_reaffirm_breeland_tooltip: "Expand the borders of the Bree-land."
  decision_reaffirm_breeland_desc: "Ever since the times of darkness when the kings of old fell, the immediate lands surrounding Bree have by and large been sparsely populated. Perhaps it is time we colonize these wildlands and bring them formally under our jurisdiction."
  decision_reaffirm_breeland_confirm: "A wise endeavor"
+
+ ### Eriadorrim Decisions ###
+
+ decision_restore_arne: "Restore Arne"
+ decision_restore_arne_tooltip: "Restore the ancient Eriadorrim kingdom of Arne."
+ decision_restore_arne_desc: "Before even the kings of the [dunedain|E] reigned over this land, the [GetCultureByKey('eriadorim').GetCollectiveNoun] dwelt among these hills and the kings of [GetTitleByKey('k_arne').GetNameNoTier] were lord over them. Their memory has nearly faded into the mists, but once again the folk of [eriador|E] walk the downs, and the time shall come when the Arnien will rise again."
+ decision_restore_arne_confirm: "Let the Noble Ones arise!"
+ half_arne_eriadorim: "#V 50%#! of the [counties|E] in [GetGeographicalRegion('custom_arne').GetName] must be of [GetCulturePillar('heritage_eriadorim').GetName] [heritage|E]"
 
  ##########################
  ###      Vulmaw        ###
