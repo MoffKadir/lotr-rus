@@ -4,6 +4,8 @@
  ####################################
 
  # Intro to his story - fight in the West against Rohan
+ story_cycle_bountig_medlokan: "Скитания Бунтига"
+ story_cycle_bountig_medlokan_desc: "Судьба оторвала #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('bountigmedlokan').GetID] #L Бунтига#!#! от его дома и семьи, и теперь он скитается по обширным землям [Concept('middleearth', 'Средиземья')|E]. Его путешествия коснутся многих стран на западе и юге, прежде чем настанет время снова вернуться на родину. Ищите особые сюжетные контракты, которые позволят ему набраться опыта и мудрости во время путешествия.\n\n$bountig_event_chain.0012.a.tt.2$"
  bountig_medlokan_intro_to_story: "Ваше [Concept('domicile', 'имение')|E] будет перемещено в столицу персонажа [contract_employer.GetName].n\n[contract_employer.GetName] начнёт войну с персонажем [GetTitleByKey('k_rohan').GetHolder.GetName] в союзе с #V вами#!"
 
  #################################
@@ -18,3 +20,17 @@
  ########################
  story_cycle_arphazel: "Восходящая заря"
  story_cycle_arphazel_desc: "Арфазель из Анагзайяна сбежала из своего плена и теперь стремится построить новую жизнь. Ищите особые сюжетные контракты, которые помогут Арфазель продвинуться в приключениях!"
+
+ ####################
+ ### Purge of Ray ###
+ ####################
+
+ lotr_story_cycle_purge_of_ray: "Чистка Раи"
+ lotr_story_cycle_purge_of_ray_desc: "Своим возвышением [GetTitleByKey('k_ray').GetHolder.GetFirstName] погрузил державу [GetTitleByKey('k_ray').GetName] в хаос, и как мятежники, так и реакционеры стремятся извлечь выгоду из нестабильности и привести к трону свою фракцию. Чтобы восстановить порядок в Рае, потребуются умелые интриги и железный кулак."
+ pacification: "Усмирение"
+ resistance: "Сопротивление"
+ purge_opponents: "Противники"
+ min_pacification: "0"
+ max_pacification: "20"
+ min_resistance: "$min_pacification$"
+ max_resistance: "$max_pacification$"
