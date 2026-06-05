@@ -78,23 +78,23 @@
  ring_quest.0401.a.tt: "Даин скоро призовёт вас"
 
  ring_quest.0402.t: "Выбор короля" # Dáin
- ring_quest.0402.desc: "PLACEHOLDER"
- ring_quest.0402.a: "Ты должен отправиться в Ривенделл, старый друг, и посоветоваться с Эльрондом."
- ring_quest.0402.a.tt: "Глоин отправится в [Concept('imladris', 'Имладрис')|E]"
- ring_quest.0402.b: "Да направит Махал твои шаги, Глоин. Прощай!"
+ ring_quest.0402.desc: "#TOLKIENQUOTE Twice the messenger has returned, and has gone unanswered. The third and last time, so he says, is soon to come, before the ending on the year.\n\nAnd so I have been sent at last by Dáin to warn Bilbo that he is sought by the Enemy, and to learn, if may be, why he desires this ring, this least of rings. Also we crave the advice of Elrond. For the Shadow grows and draws nearer.#!\n\nMy mind is decided upon a course of action at last. We must seek aid and advice, and there is none better to give it than [elrond.GetFirstNameNicknamed]. [bilbo.GetFirstName] too dwells in his home, and so we may tell him of this danger. There are few who both know Bilbo and can be spared - who shall be sent?"
+ ring_quest.0402.a: "Ты должен отправиться в Ривенделл, старый друг, и посоветоваться с #L [elrond.GetFirstName]ом#!."
+ ring_quest.0402.a.tt: "[gloin.GetFirstName] отправится в [Concept('imladris', 'Имладрис')|E]"
+ ring_quest.0402.b: "Да направит Махал твои шаги, [gloin.GetFirstName]. Прощай!"
 
  ring_quest.0403.t: "Выбор короля" # Glóin
- ring_quest.0403.desc: "#TOLKIENQUOTE «Дважды возвращался посланец, но уходил ни с чем. Третий раз, по его словам, будет последним. Мы ждем его посещения не позже конца года.\n\nПоэтому Даин решил послать меня сюда, чтобы предупредить Бильбо о том, что его ищет Враг, и, быть может, узнать, зачем Врагу понадобилось это Кольцо, если это и вправду самое нестоящее из всех Великих колец. Мы ищем у Эльронда совета. Тень разрастается и подползает все ближе».#!\n\nМой король наконец-то определился с планом действий. Мы должны обратиться за помощью и советом, и никто лучше Элронда «Полуэльфа» не сможет нам помочь. Бильбо тоже живет в его доме, и мы можем рассказать ему об этой опасности. Мало кто знает Бильбо, а путь опасен - кто же отправится в путь?"
+ ring_quest.0403.desc: "#TOLKIENQUOTE «Дважды возвращался посланец, но уходил ни с чем. Третий раз, по его словам, будет последним. Мы ждем его посещения не позже конца года.\n\nПоэтому Даин решил послать меня сюда, чтобы предупредить Бильбо о том, что его ищет Враг, и, быть может, узнать, зачем Врагу понадобилось это Кольцо, если это и вправду самое нестоящее из всех Великих колец. Мы ищем у Эльронда совета. Тень разрастается и подползает все ближе».#!\n\nМой король наконец-то определился с планом действий. Мы должны обратиться за помощью и советом, и лучше всего нам сможет помочь [elrond.GetFirstNameNicknamed]. [bilbo.GetFirstName] Бильбо тоже живет в его доме, и мы можем рассказать ему об этой опасности. Мало кто знает Бильбо, а путь опасен - кто же отправится в путь?"
  ring_quest.0403.a: "Я отправлюсь в путь, мой сюзерен. Мой сын пойдёт со мной."
- ring_quest.0403.a.tt: "Вы скоро отправитесь в [Concept('imladris', 'Имладрис')|E] с Гимли"
+ ring_quest.0403.a.tt: "Вы скоро отправитесь в [Concept('imladris', 'Имладрис')|E] с [gimli.GetFirstName]"
 
  ring_quest.0404.t: "Долгая дорога впереди"
- ring_quest.0404.desc: "PLACEHOLDER"
- ring_quest.0404.a: "Идём, Гимли. Мы не можем медлить."
+ ring_quest.0404.desc: "A long journey lies before us, tracing familiar paths from my younger years across the Vales of [anduin|E] and through the High Pass of the [mistymountains|E]. With the shadow of [mordor|E] at our heels, we must endure the road ahead for [bilbo.GetFirstName]'s safety and the fate of [erebor|E]."
+ ring_quest.0404.a: "Идём, [gimli.GetFirstName]. Мы не можем медлить."
  ring_quest.0404.a.tt: "Вы отправитесь в [Concept('imladris', 'Имладрис')|E]"
 
  ring_quest.0405.t: "Последний Домашний приют"
- ring_quest.0405.desc: "Наконец-то мы снова приехали в дом Эльронда в Ривенделле, где мы отдыхали много лет назад. Несмотря на то, что с тех пор прошло немало времени, долина по-прежнему остается неизменной. Здесь еще будет достаточно времени для отдыха, веселья и совета."
+ ring_quest.0405.desc: "Наконец-то мы снова приехали в дом Эльронда в [Concept('rivendell', 'Ривенделле')|E], где мы отдыхали много лет назад. Несмотря на то, что с тех пор прошло немало времени, долина по-прежнему остается неизменной. Здесь еще будет достаточно времени для отдыха, веселья и совета."
  ring_quest.0405.a: "Я хорошо помню это место."
 
  ### The Hunt for Gollum ###
@@ -242,35 +242,6 @@
 
 
 
- ### Situtation Flavor Events###
-
- angmar_wars.2001.t: "Набеги орков!"
- angmar_wars.2001.desc: "Сошедшие с [Concept('mistymountains', 'Мглистых гор')|E] орки долгое время были чумой [Concept('eriador', 'Эриадора')|E], начиная со [Concept('elderdays', 'Старших Дней')|E], и они снова напали на нашу державу. На этот раз они совершили набег на владение [disaster_county.GetNameNoTier]. Нам предстоит решить, как реагировать."
- angmar_wars.2001.a: "Собрать войска!"
- angmar_wars.2001.b: "[marshal.GetName], я доверяю эту задачу вам."
- biulding_destroyed: "Случайное [Concept('building', 'здание')|E] снизит уровень или будет уничтожено"
-
- angmar_wars.2002.t: "Набеги разбойников!"
- angmar_wars.2002.desc: "[Concept('eriador', 'Эриадор')|E] - опасное место, поскольку из-за раскола [Concept('arnor', 'Арнора')|E] между местными властителями и государствами-преемниками не было сотрудничества, что позволило набегам разбойников через границу стать обычным делом, на этот раз были замечены налётчики, направляющиеся в сторону владения [disaster_county.GetNameNoTier]. Пришло время решить, как реагировать."
- angmar_wars.2002.a: "Собрать войска!"
- angmar_wars.2002.b: "[marshal.GetName], я доверяю эту задачу вам."
- angmar_wars.2002.c: "Если они хотят золото, отдадим его им."
-
- angmar_wars.2003.t: "Молодой пастух"
- angmar_wars.2003.desc: "Когда мы осматриваем руины деревни, оставшиеся после налета, к нам подходит молодой парень. Он был пастухом, который пас свое стадо в окрестностях деревни. На моих глазах он подошел к сгоревшему дому и разрыдался, увидев тела молодой пары и двух детей, которых мои солдаты до сих пор не похоронили. Очевидно, что произошло, но не очевидно, как я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] реагировать."
- angmar_wars.2003.a: "Он останется при дворе, ни один ребенок не заслуживает того, чтобы быть сиротой."
- angmar_wars.2003.b: "Отослать его в королевские владения, там он может пригодиться."
-
- angmar_wars.2004.t: "Крестьяне покидают пограничье"
- angmar_wars.2004.desc: "[Concept('eriador', 'Эриадор')|E] пришёл в упадок после распада [Concept('arnor', 'Арнора')|E]. С каждым годом всё больше наших сыновей и дочерей гибнет в [Concept('angmar_wars', 'Ангмарских войнах')|E], и с каждым годом все больше и больше наших земель оказываются заброшенными. По мере того, как дикая природа вторгается в наши границы, люди отступают на более безопасные территории в глубь страны, и в этом году жители владения [county1.GetNameNoTier] решили переселиться во владение [county2.GetNameNoTier]. мы можем либо позволить им уйти, либо заставить их остаться в этих землях."
- angmar_wars.2004.a: "Позволить им переселиться."
- angmar_wars.2004.b: "Заставить их остаться."
- biulding_destroyed_county_1: "Во владении [county1.GetName] будет понижено или уничтожено случайное [Concept('building', 'здание')|E]"
- biulding_add_county_2: "Во владении [biuld_prov.GetName] будет создано или улучшено случайное [Concept('building', 'здание')|E]"
-
-
-
-
 
  angmar_wars.0001.t: "Ангмарские войны"
  angmar_wars.0001.desc: "#TOLKIENQUOTE «Зло пришло в Арнор в начале правления Малвегиля Артедайнского. В то время на севере за Тролльим плато появилось королевство Ангмар. Его земли простирались от подножия Ангмарских гор на северной оконечности Мглистых гор, по обе стороны хребта. И много людей, орков и прочих свирепых тварей собралось там. Владыка тех земель был известен лишь как Король-чародей, и лишь после стало известно, что то был предводитель Кольценосцев. Выбор предводителя назгул объяснялся тем, что Арнор был в упадке, а Гондор на юге до сих пор сохранял былое могущество».#!\n\n#QUOTEDCHARACTER - Властелин колец, Приложение A#!"
@@ -312,95 +283,132 @@
  angmar_wars.0008.desc: "TEMP - Just leave me alone"
  angmar_wars.0008.a: "Neutral People"
 
+ ### Decision Events ####
+ 
+ angmar_wars.1020.t: "The Frontier of [GetPlayer.MakeScope.Var('selected_duchy').Title.GetBaseNameNoTier]"
+ angmar_wars.1020.desc: "My people in [GetPlayer.MakeScope.Var('selected_duchy').Title.GetBaseName] have long been under constant threat, and the years have taken their toll upon the region. Now the duchy is little more than a shadow of its former self, and its population are scarcely surviving each winter. Should I recall them back to our heartlands in [GetPlayer.MakeScope.Char.GetCapitalLocation.GetTitle.GetDeJureLiege.GetDeJureLiege.GetBaseNameNoTier] they would be at less risk and better able to help our realm.\n\nYet there are perhaps lords such as [county_lord.GetName] who would object to a forced relocation, whether for love of their ancestral land, a desire not to flee the front lines, or simply stubbornness. All such detractors will need to be convinced somehow for my plan to work."
+ angmar_wars.1020.a: "They are #EMP my#! subjects, and they shall do as I say!"
+ angmar_wars.1020.b: "Perhaps an explanation of the dangers at hand will convince them."
+ angmar_wars.1020.b.tt: ""
+ angmar_wars.1020.c: "I shall offer incentives to all those who will move."
+ angmar_wars.1020.c.tt.1: ""
+ angmar_wars.1020.c.tt.2: ""
+ angmar_wars.1020.d: "[county_lord.GetTitledFirstName] is the only one whose opinion truely matters."
+ angmar_wars.1020.e: "My own authority is all that matters"
+
+ angmar_wars.1021.t: "A Demand from [GetPlayer.MakeScope.Char.GetCapitalLocation.GetTitle.GetDeJureLiege.GetBaseNameNoTier]"
+ angmar_wars.1021.desc: "[county_lord.GetName] vs [king.GetName]"
+ angmar_wars.1021.a: "Yes my liege"
+ angmar_wars.1021.b: "Fine."
+ angmar_wars.1021.c: "I'm outa here"
+ angmar_wars.1021.d: "Freedom!"
+ angmar_wars.1021.e: "We have no choice"
+
+ angmar_wars.1022.t: "The Duty of a True Lord"
+ angmar_wars.1022.desc: "[county_lord.GetName] sees the wisdom in my orders to evacuate [GetPlayer.MakeScope.Var('selected_duchy').Title.GetBaseNameNoTier], but will not himself journey to safety in [king.GetCapitalLocation.GetTitle.GetDeJureLiege.GetBaseNameNoTier]. According to his message, he will no longer serve a king who cannot defend his own lands, and if I shall not do so, he will take up the sword himself. No fief shall be his home as of yet, and he and his family shall instead roam the lands where once they lived. \n\nWhile his cause may seem noble, I wonder what he sees in [GetPlayer.MakeScope.Var('selected_duchy').Title.GetBaseNameNoTier] that would make him abandon his people and oaths for the cold bed of the road."
+ angmar_wars.1022.a: "If he wishes to rule the wild, let him!"
+ angmar_wars.1022.b: "He dares insult my rule?"
+ angmar_wars.1022.c: "I can defend my realm perfectly well against traitors such as you!"
+
+ angmar_wars.1023.t: "King didn't like that"
+ angmar_wars.1023.desc: ""
+ angmar_wars.1023.a: ""
+
+ angmar_wars.1024.t: "[county_lord.GetFirstNamePossessive] Rebellion"
+ angmar_wars.1024.desc: "It appears my orders were too much for [county_lord.GetName], for he has declared independence from [ROOT.Char.GetPrimaryTitle.GetName], saying that if I shall not protect his lands, he will do so alone!\n\nSuch a slight gravely weakens my rule, but can my realm afford the required war to restore our honour?"
+ angmar_wars.1024.a: "If he will not obey, he must be made to do so!"
+ angmar_wars.1024.b: "Now is not the time for bloodshed"
+
+ angmar_wars.1025.t: "Oops"
+ angmar_wars.1025.desc: ""
+ angmar_wars.1025.a: ""
+
+ angmar_wars.1026.t: "[county_lord.GetTitledFirstName] Accepts"
+ angmar_wars.1026.desc: "[county_lord.GetName] has seen the wisdom of my arguments and graciously followed my orders to evacuate the [GetPlayer.MakeScope.Var('selected_duchy').Title.GetBaseName]. Now [county_lord.GetSheHe] stands before me in [king.GetCapitalLocation.GetTitle.GetDeJureLiege.GetBaseNameNoTier], leading the last line of refugees to their new home.\n\n[county_lord.GetSheHe|U] too is homeless, and I have land aplenty of my own. Should I reward [county_lord.GetHerHis] loyalty with new grants from my own holdings?"
+ angmar_wars.1026.a: "[first_reward_target.GetBaseNameNoTier] should suit."
+ angmar_wars.1026.b: "How about [second_reward_target.GetBaseNameNoTier]?"
+ angmar_wars.1026.c: "[third_reward_target.GetBaseNameNoTier] would be best for [county_lord.GetHerHim]."
+ angmar_wars.1026.d: "A place at my court is reward enough."
+
+ angmar_wars.1027.t: "A Generous Offer"
+ angmar_wars.1027.desc: "[king.GetTitledFirstName] has seen it fit to graciously reward me for my loyalty and assistance in evacuating the [GetPlayer.MakeScope.Var('selected_duchy').Title.GetBaseName]. Messengers have come from [king.GetCapitalLocation.GetTitle.GetDeJureLiege.GetBaseNameNoTier], announcing that should I wish it, the [reward_county.GetBaseName] is to be the new fief of mine and mine heirs, so long as this realm shall last. I am grateful for the offer, but could it ever replace my old home?"
+ angmar_wars.1027.a: "I shall settle anew in [reward_county.GetBaseNameNoTier]."
+ angmar_wars.1027.b: "The road shall be home enough for me."
+
+ angmar_wars.1028.t: "A Wanderer in the Wild"
+ angmar_wars.1028.desc: "It would seem that [reward_county.GetBaseNameNoTier] was not enough to tempt [county_lord.GetFirstName], for he has declared that no fief shall be his home as of yet, and he and his family shall instead roam the lands where once they live. While I admire his dedication, I do wonder what he sees in [GetPlayer.MakeScope.Var('selected_duchy').Title.GetBaseNameNoTier] that would make him abjure the comforts of civilisation for the cold bed of the road."
+ angmar_wars.1028.a: "May he find peace in his wanderings"
+
+ angmar_wars.1029.t: "SLANDER!"
+ angmar_wars.1029.desc: ""
+ angmar_wars.1029.a: ""
+ angmar_wars.1029.b: ""
+ angmar_wars.1029.c: ""
+ angmar_wars.1029.c.tt.1: ""
+ angmar_wars.1029.c.tt.2: ""
+
+ angmar_wars.1040.t: "A Blade of Westernesse"
+ angmar_wars.1040.desc: "$PLACEHOLDER$"
+ angmar_wars.1040.a: "Strike true, my blade"
+
+ angmar_wars.1050.t: "Defender of the Wilds"
+ angmar_wars.1050.desc: "There are those in [ROOT.Char.GetPrimaryTitle.GetName] who chafe at the restrictions of defense and the security of fortresses of stone, longing instead for the open sky and the swift retribution of a hidden arrow. From the bravest and best of such soldiers I have gathered a band of loyal men, to send out in defense of the frontiers of [ROOT.Char.GetPrimaryTitle.GetNameNoTier] and contest the empty lands against our foes.\n\nIt only remains to decide who will lead my new [Concept('ranger_laamp','Rangers')|E], for several men have stepped forward, offering to go. Each has his own strengths, but great courage and a keen mind will be required for such a daring captain, upon whose judgement may hang the fate of the [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip]."
+ angmar_wars.1050.a: "[option_one.GetTitledFirstName] is the clear choice"
+ angmar_wars.1050.b: "[option_two.GetTitledFirstName] is the [option_two.GetWomanMan] for the job"
+ angmar_wars.1050.c: "[option_three.GetTitledFirstName], the command is yours"
+ rangers_of_x: "Rangers of [GetPlayer.MakeScope.Var('sponsor').Char.GetFirstNameNoTooltip]"
+
+ angmar_wars.1510.t: "The Character of [angmar]"
+ angmar_wars.1510.desc: "For too long [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTier] has clung to its decentralised past, with loyatly vested in dozens of small tribes, and no unifying culture or religion. Although this wild independence proved a fertile ground for my rise to power, it has since become a hinderence to a proper empire.\n\nThe time has come to reforge [angmar|E] in my image, shaping its [culture|E] and [faith|E] after my own vision. Of the many peoples and beliefs in my realm, surely there is one which may be elevated as the standard, and used to meld those many into one united and loyal whole. Not all will assimilate willingly, but assimilate they surely must in time."
+ angmar_wars.1510.a: "I will shape them into a truely strong society!"
+ angmar_wars.1510.b: "They must worship as I say!"
+ angmar_wars.1510.a.tt: "You open [GetDecisionWithKey('decision_select_prefered_culture').GetName]"
+ angmar_wars.1510.b.tt: "You open [GetDecisionWithKey('decision_select_prefered_faith').GetName]"
+
+ angmar_wars.1511.t: "The Triumph of the [GetPlayer.MakeScope.Var('selected_culture').Culture.GetCollectiveNoun]"
+ angmar_wars.1511.desc: "Out of all the peoples in [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTier], I have decided the [GetPlayer.MakeScope.Var('selected_culture').Culture.GetCollectiveNoun] shall serve me best. By elevating their chiefs and humbling their foes, in time all the realm shall be remade in the image of their [culture|E]. [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTier] shall be the stronger for it, and most of all, all the more loyal to me."
+ angmar_wars.1511.a: "To a stronger, more unified, future!"
+ angmar_wars.1511.b: "$angmar_wars.1511.a$"
+ angmar_wars.1511.a.tt: "$decision_assimilation_policy_tt_22$"
+ angmar_wars.1511.b.tt: "You open [GetDecisionWithKey('decision_select_prefered_faith').GetName]"
+ 
+ angmar_wars.1512.t: "The Rise of [GetPlayer.MakeScope.Var('selected_faith').Faith.GetAdjective]"
+ angmar_wars.1512.desc: "While in days past I permitted some measure of ignorant heresy and folk superstition in [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTier], the time has finally come to codify the true [faith|E] of my realm. The [GetPlayer.MakeScope.Var('selected_faith').Faith.GetName] has proved the ablest tool, and in time all shall worship [ROOT.Char.GetFaith.HighGodName], whether in zeal or in fear. With this new unifying creed, soon the [ROOT.Char.GetPrimaryTitle.GetBaseName] shall surely be all the more powerful and all the more #EMP mine#!."
+ angmar_wars.1512.a: "For the glory of the Dark!"
+ angmar_wars.1512.b: "$angmar_wars.1512.a$"
+ angmar_wars.1512.a.tt: "$decision_assimilation_policy_tt_22$"
+ angmar_wars.1512.b.tt: "You open [GetDecisionWithKey('decision_select_prefered_culture').GetName]"
+
+ angmar_wars.1520.t: "A Morgul Blade"
+ angmar_wars.1520.desc: "$PLACEHOLDER$"
+ angmar_wars.1520.a: "They shall serve me"
 
 
+ ### Situation Flavor Events###
 
+ angmar_wars.2001.t: "Набеги орков!"
+ angmar_wars.2001.desc: "Сошедшие с [Concept('mistymountains', 'Мглистых гор')|E] орки долгое время были чумой [Concept('eriador', 'Эриадора')|E], начиная со [Concept('elderdays', 'Старших Дней')|E], и они снова напали на нашу державу. На этот раз они совершили набег на владение [disaster_county.GetNameNoTier]. Нам предстоит решить, как реагировать."
+ angmar_wars.2001.a: "Собрать войска!"
+ angmar_wars.2001.b: "[marshal.GetName], я доверяю эту задачу вам."
+ building_destroyed: "Случайное [Concept('building', 'здание')|E] снизит уровень или будет уничтожено"
 
- # Catalysts
+ angmar_wars.2002.t: "Набеги разбойников!"
+ angmar_wars.2002.desc: "[Concept('eriador', 'Эриадор')|E] - опасное место, поскольку из-за раскола [Concept('arnor', 'Арнора')|E] между местными властителями и государствами-преемниками не было сотрудничества, что позволило набегам разбойников через границу стать обычным делом, на этот раз были замечены налётчики, направляющиеся в сторону владения [disaster_county.GetNameNoTier]. Пришло время решить, как реагировать."
+ angmar_wars.2002.a: "Собрать войска!"
+ angmar_wars.2002.b: "[marshal.GetName], я доверяю эту задачу вам."
+ angmar_wars.2002.c: "Если они хотят золото, отдадим его им."
 
- catalyst_convert_to_evil: "Распространение зла"
- catalyst_convert_to_evil_desc: "[Concept('ruler', 'Правитель')|E] обратился в [Concept('alignment_evil', 'злую')|E] [Concept('faith', 'конфессию')|E]"
- catalyst_convert_to_good: "Распространение добра"
- catalyst_convert_to_good_desc: "[Concept('ruler', 'Правитель')|E] обратился в [Concept('alignment_good', 'добрую')|E] [Concept('faith', 'конфессию')|E]"
- catalyst_county_convert_to_evil: "Распространение зла"
- catalyst_county_convert_to_evil_desc: "[Concept('county', 'Графство')|E] обратилось в [Concept('alignment_evil', 'злую')|E] [Concept('faith', 'конфессию')|E]"
- catalyst_county_convert_to_good: "Распространение добра"
- catalyst_county_convert_to_good_desc: "[Concept('county', 'Графство')|E] обратилось в [Concept('alignment_good', 'добрую')|E] [Concept('faith', 'конфессию')|E]"
- catalyst_neutral_joins_arnor: "[Concept('neutral_ruler', 'Нейтральный правитель')|E] встал на сторону [Concept('arnor', 'Арнора')|E]"
- catalyst_neutral_joins_arnor_desc: "Бывший [Concept('neutral_ruler', 'нейтральный правитель')|E] встал на сторону [Concept('arnorian_rulers', 'арнорцев')|E]."
- catalyst_neutral_joins_angmar: "[Concept('neutral_ruler', 'Нейтральный правитель')|E] встал на сторону [Concept('angmar', 'Ангмара')|E]"
- catalyst_neutral_joins_angmar_desc: "Бывший [Concept('neutral_ruler', 'нейтральный правитель')|E] встал на сторону [Concept('angmar_rulers', 'ангмарцев')|E]."
- catalyst_angmar_devastated: "Ангмар опустошён"
- catalyst_angmar_devastated_desc: "[Concept('evil_s', 'Злое')|E] [Concept('county', 'графство')|E] [Concept('situation', 'ситуации')|E] было [Concept('devastated', 'опустошено')|E]."
- catalyst_arnor_devastated: "Арнор опустошён"
- catalyst_arnor_devastated_desc: "[Concept('good_s', 'Доброе')|E] [Concept('county', 'графство')|E] [Concept('situation', 'ситуации')|E] было [Concept('devastated', 'опустошено')|E]."
- catalyst_county_wastelanded_arnor: "[Concept('arnorian_s', 'Арнорское')|E] [Concept('county', 'графство')|E] покинуто"
- catalyst_county_wastelanded_arnor_desc: "[Concept('arnor_aligned', 'Арнорское')|E] [Concept('county', 'графство')|E] вернулось в состояние [Concept('wilderness', 'дебрей')|E]."
- catalyst_county_wastelanded_angmar: "[Concept('angmarrim_s', 'Ангмарское')|E] [Concept('county', 'графство')|E] покинуто"
- catalyst_county_wastelanded_angmar_desc: "[Concept('angmar_aligned', 'Ангмарское')|E] [Concept('county', 'графство')|E] вернулось в состояние [Concept('wilderness', 'дебрей')|E]."
- catalyst_arnor_won_war: "Арнор побеждает в войне"
- catalyst_arnor_won_war_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] побеждает в [Concept('war', 'войне')|E]."
- catalyst_angmar_won_war: "Ангмар побеждает в войне"
- catalyst_angmar_won_war_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] побеждает в [Concept('war', 'войне')|E]."
- catalyst_arnor_wins_battle: "Арнор одерживает верх в сражении"
- catalyst_arnor_wins_battle_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] одерживает верх в [Concept('battle', 'сражении')|E] против [Concept('angmar_aligned_ruler', 'ангмарцев')|E]."
- catalyst_angmar_wins_battle: "Ангмар одерживает верх в сражении"
- catalyst_angmar_wins_battle_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] одерживает верх в [Concept('battle', 'сражении')|E] против [Concept('arnor_aligned_ruler', 'арнорцев')|E]."
- catalyst_elves_join_war: "Эльфы присоединяются к войне"
- catalyst_elves_join_war_desc: "[Concept('elven_ruler', 'Эльфийский правитель')|E] присоединился к оборонительной [Concept('war', 'войне')|E] на стороне [Concept('arnorian_ruler', 'арнорцев')|E]."
- catalyst_building_constructed_arnor: "Восстановление Арнора"
- catalyst_building_constructed_arnor_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] построил [Concept('building', 'здание')|E]."
- catalyst_building_constructed_angmar: "Восстановление Ангмара"
- catalyst_building_constructed_angmar_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] построил [Concept('building', 'здание')|E]."
- catalyst_wonder_completed_arnor: "Улучшение [Concept('arnorian_s', 'арнорской')|E] [Concept('special_building', 'особой постройки')|E]"
- catalyst_wonder_completed_arnor_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] улучшил [Concept('special_building', 'особую')|E] или [Concept('great_building', 'грандиозную постройку')|E] в [Concept('situation_sub_region', 'области ситуации')|E]."
- catalyst_wonder_completed_angmar: "Улучшение [Concept('angmarrim_s', 'ангмарской')|E] [Concept('special_building', 'особой постройки')|E]"
- catalyst_wonder_completed_angmar_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] улучшил [Concept('special_building', 'особую')|E] или [Concept('great_building', 'грандиозную постройку')|E] в [Concept('situation_sub_region', 'области ситуации')|E]."
- catalyst_colony_completed_arnor: "Завершение [Concept('arnorian_s', 'арнорской')|E] [Concept('colony', 'колонии')|E]"
- catalyst_colony_completed_arnor_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] завершил [Concept('colony', 'колонию')|E]."
- catalyst_colony_completed_angmar: "Завершение [Concept('angmarrim_s', 'ангмарской')|E] [Concept('colony', 'колонии')|E]"
- catalyst_colony_completed_angmar_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] завершил [Concept('colony', 'колонию')|E]."
- catalyst_wonder_conquered_arnor: "Завоевание [Concept('arnorian_s', 'арнорской')|E] [Concept('special_building', 'особой постройки')|E]"
- catalyst_wonder_conquered_arnor_desc: "[Concept('angmar_aligned_ruler', 'Ангмарский союзник')|E] завоевал [Concept('county', 'графство')|E] с [Concept('special_building', 'особой')|E] или [Concept('great_building', 'грандиозной постройкой')|E] у [Concept('arnor_aligned_ruler', 'арнорцев')|E]."
- catalyst_wonder_conquered_angmar: "Завершение [Concept('angmarrim_s', 'ангмарской')|E] [Concept('special_building', 'особой постройки')|E]"
- catalyst_wonder_conquered_angmar_desc: "[Concept('arnor_aligned_ruler', 'Арнорский союзник')|E] завоевал [Concept('county', 'графство')|E] с [Concept('special_building', 'особой')|E] или [Concept('great_building', 'грандиозной постройкой')|E] у [Concept('angmar_aligned_ruler', 'ангмарцев')|E]."
- catalyst_palantir_lost: "[Concept('palantirone', 'Палантир')|E] потерян"
- catalyst_palantir_lost_desc: "Один из [Concept('palantir', 'палантиров')|E] потерян."
- catalyst_arnorian_king_dies: "Смерть [Concept('arnorian_s', 'арнорского')|E] короля"
- catalyst_arnorian_king_dies_desc: "[Concept('arnorian_s', 'Арнорский')|E] [Concept('king', 'король')|E] умирает от неестественных причин."
- catalyst_arnorian_lord_dies: "Смерть [Concept('arnorian_s', 'арнорского')|E] властителя"
- catalyst_arnorian_lord_dies_desc: "[Concept('house_head', 'Глава')|E] [Concept('great_house', 'великого дома')|E] умирает от неестественных причин."
- catalyst_line_of_isildur_fails: "Падение династии [Concept('isildur', 'Исильдура')|E]"
- catalyst_line_of_isildur_fails_desc: "[Concept('house', 'Дом')|E] [GetDynastyByID('dynasty_elendil').GetName] вымер."
- catalyst_arnorian_house_dies_out: "Пресечение [Concept('great_house', 'великого дома')|E]"
- catalyst_arnorian_house_dies_out_desc: "Один из [Concept('great_houses_of_arnor', 'великих домов Арнора')|E] вымер."
- catalyst_major_epidemic_arnor: "Вспышка чумы в [Concept('arnor', 'Арноре')|E]"
- catalyst_major_epidemic_arnor_desc: "Начало [Concept('plague_major', 'пандемии')|E] [Concept('epidemic', 'поветрия')|E] в [Concept('arnorian_s', 'арнорской')|E] [Concept('province', 'провинции')|E]."
- catalyst_major_epidemic_angmar: "Вспышка чумы в [Concept('angmar', 'Ангмаре')|E]"
- catalyst_major_epidemic_angmar_desc: "Начало [Concept('plague_major', 'пандемии')|E] [Concept('epidemic', 'поветрия')|E] в [Concept('angmarrim_s', 'ангмарской')|E] [Concept('province', 'провинции')|E]."
- catalyst_apocalyptic_epidemic_arnor: "Вспышка чумы в [Concept('arnor', 'Арноре')|E]"
- catalyst_apocalyptic_epidemic_arnor_desc: "Начало [Concept('plague_apocalyptic', 'апокалиптического')|E] [Concept('epidemic', 'поветрия')|E] в [Concept('arnorian_s', 'арнорской')|E] [Concept('province', 'провинции')|E]."
- catalyst_apocalyptic_epidemic_angmar: "Вспышка чумы в [Concept('angmar', 'Ангмаре')|E]"
- catalyst_apocalyptic_epidemic_angmar_desc: "Начало [Concept('plague_apocalyptic', 'апокалиптического')|E] [Concept('epidemic', 'поветрия')|E] в [Concept('angmarrim_s', 'ангмарской')|E] [Concept('province', 'провинции')|E]."
- catalyst_hostile_scheme_arnor: "Успешные [Concept('scheme', 'происки')|E] [Concept('arnorian_s', 'арнорцев')|E]"
- catalyst_hostile_scheme_arnor_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] завершил [Concept('hostile_scheme', 'агрессивные происки')|E] против [Concept('angmar_aligned_ruler', 'ангмарцев')|E]."
- catalyst_hostile_scheme_angmar: "Успешные [Concept('scheme', 'происки')|E] [Concept('angmarrim_s', 'ангмарцев')|E]"
- catalyst_hostile_scheme_angmar_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] завершил [Concept('hostile_scheme', 'агрессивные происки')|E] против [Concept('arnor_aligned_ruler', 'арнорцев')|E]."
- catalyst_ranger_contract_completed_arnor: "Завершение [Concept('arnorian_s', 'арнорского')|E] [Concept('ranger_task_contract', 'контракта следопыта')|E]"
- catalyst_ranger_contract_completed_arnor_desc: "[Concept('arnorian_s', 'Арнорский')|E] [Concept('ranger_laamp', 'следопыт')|E] завершил [Concept('ranger_task_contract', 'контракт')|E]."
- catalyst_ranger_contract_completed_angmar: "Завершение [Concept('angmarrim_s', 'ангмарского')|E] [Concept('ranger_task_contract', 'контракта следопыта')|E]"
- catalyst_ranger_contract_completed_angmar_desc: "[Concept('angmarrim_s', 'Ангмарский')|E] [Concept('ranger_laamp', 'следопыт')|E] завершил [Concept('ranger_task_contract', 'контракт')|E]."
- catalyst_hope_increases: "Повышение [Concept('hope', 'надежды')|E]"
- catalyst_hope_increases_desc: "В ближайшей [Concept('situation_sub_region', 'области ситуации')|E] «[GetSituationType('elven_hope_situation').GetName]» повысился уровень [Concept('hope', 'надежды')|E]."
- catalyst_hope_decreases: "Снижение [Concept('hope', 'надежды')|E]"
- catalyst_hope_decreases_desc: "В ближайшей [Concept('situation_sub_region', 'области ситуации')|E] «[GetSituationType('elven_hope_situation').GetName]» снизился уровень [Concept('hope', 'надежды')|E]."
+ angmar_wars.2003.t: "Молодой пастух"
+ angmar_wars.2003.desc: "Когда мы осматриваем руины деревни, оставшиеся после налета, к нам подходит молодой парень. Он был пастухом, который пас свое стадо в окрестностях деревни. На моих глазах он подошел к сгоревшему дому и разрыдался, увидев тела молодой пары и двух детей, которых мои солдаты до сих пор не похоронили. Очевидно, что произошло, но не очевидно, как я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] реагировать."
+ angmar_wars.2003.a: "Он останется при дворе, ни один ребенок не заслуживает того, чтобы быть сиротой."
+ angmar_wars.2003.b: "Отослать его в королевские владения, там он может пригодиться."
 
-
-
-
-
-
-
+ angmar_wars.2004.t: "Крестьяне покидают пограничье"
+ angmar_wars.2004.desc: "[Concept('eriador', 'Эриадор')|E] пришёл в упадок после распада [Concept('arnor', 'Арнора')|E]. С каждым годом всё больше наших сыновей и дочерей гибнет в [Concept('angmar_wars', 'Ангмарских войнах')|E], и с каждым годом все больше и больше наших земель оказываются заброшенными. По мере того, как дикая природа вторгается в наши границы, люди отступают на более безопасные территории в глубь страны, и в этом году жители владения [county1.GetNameNoTier] решили переселиться во владение [county2.GetNameNoTier]. мы можем либо позволить им уйти, либо заставить их остаться в этих землях."
+ angmar_wars.2004.a: "Позволить им переселиться."
+ angmar_wars.2004.b: "Заставить их остаться."
+ building_destroyed_county_1: "Во владении [county1.GetName] будет понижено или уничтожено случайное [Concept('building', 'здание')|E]"
+ biulding_add_county_2: "Во владении [biuld_prov.GetName] будет создано или улучшено случайное [Concept('building', 'здание')|E]"
 
 
 
@@ -434,13 +442,13 @@
  noi_trevani.1002.c.tt: "Вы убиваете Медведя и его стражу."
 
  noi_trevani.1003.t: "Пение петуха"
- noi_trevani.1003.desc: "Прошло уже несколько месяцев с тех пор, как мы с моим народом заселили скалистые холмы и болота к северо-западу от Рудаура, в частности, некогда бесплодные земли [GetTitleByKey('c_seansliabh').GetNameNoTier], [GetTitleByKey('c_glinkinlin').GetNameNoTier] и [GetTitleByKey('c_taobhtir').GetNameNoTier]. На этой бесплодной земле осталось всего несколько диких птиц - дичь, но всё равно это еда, когда мы делимся историями у очага. Мудрые и знающие люди нашего народа говорят о древнем племени ной-треван этих земель, [Concept('chicken_tribe', 'племени Цыплят')|E]. Они были одними из самых гордых и хитроумных из девяти древних племён, но их род потерпел поражение в войнах Железной короны и был утрачен навсегда.\n\n«Не совсем так...» - мы поворачиваем головы к членам нашей группы, которых раньше здесь не было. Их очевидный лидер и глашатай ковыряет в зубах ребрышком, но прежде чем я успеваю отреагировать или вытащить оружие, он опускается передо мной на колени и протягивает руки в знак верности. Может ли он быть потомком Цыплят? Я мысленно возвращаюсь к старым сказаниям - говорят, что Цыплят никогда по-настоящему не присягали на верность вождям Девяти, и этот пришелец тоже не присягал мне. Станет ли он достойным вассалом?"
- noi_trevani.1003.a: "Я не поддамся на уловки Цыплёнка, но все треван желанные гости при моём дворе."
- noi_trevani.1003.a.tt: "Вы принимаете Цыплёнка, и он становится вашим придворным."
+ noi_trevani.1003.desc: "Прошло уже несколько месяцев с тех пор, как мы с моим народом заселили скалистые холмы и болота к северо-западу от Рудаура, в частности, некогда бесплодные земли [GetTitleByKey('c_seansliabh').GetNameNoTier], [GetTitleByKey('c_glinkinlin').GetNameNoTier] и [GetTitleByKey('c_taobhtir').GetNameNoTier]. На этой бесплодной земле осталось всего несколько диких птиц - дичь, но всё равно это еда, когда мы делимся историями у очага. Мудрые и знающие люди нашего народа говорят о древнем племени ной-треван этих земель, [Concept('fowl_tribe', 'племени Птиц')|E]. Они были одними из самых гордых и хитроумных из девяти древних племён, но их род потерпел поражение в войнах Железной короны и был утрачен навсегда.\n\n«Не совсем так...» - мы поворачиваем головы к членам нашей группы, которых раньше здесь не было. Их очевидный лидер и глашатай ковыряет в зубах ребрышком, но прежде чем я успеваю отреагировать или вытащить оружие, он опускается передо мной на колени и протягивает руки в знак верности. Может ли он быть потомком Птиц? Я мысленно возвращаюсь к старым сказаниям - говорят, что Птицы никогда по-настоящему не присягали на верность вождям Девяти, и этот пришелец тоже не присягал мне. Станет ли он достойным вассалом?"
+ noi_trevani.1003.a: "Я не поддамся на уловки Птицы, но все треван желанные гости при моём дворе."
+ noi_trevani.1003.a.tt: "Вы принимаете Птицу, и он становится вашим придворным."
  noi_trevani.1003.b: "Пусть птицы вернутся на свои законные места для кормления!"
- noi_trevani.1003.b.tt: "Цыплёнок становится вашим вассалом и получает графства [GetTitleByKey('c_seansliabh').GetNameNoTierNoTooltip], [GetTitleByKey('c_glinkinlin').GetNameNoTierNoTooltip] и [GetTitleByKey('c_taobhtir').GetNameNoTierNoTooltip]."
+ noi_trevani.1003.b.tt: "Птица становится вашим вассалом и получает графства [GetTitleByKey('c_seansliabh').GetNameNoTierNoTooltip], [GetTitleByKey('c_glinkinlin').GetNameNoTierNoTooltip] и [GetTitleByKey('c_taobhtir').GetNameNoTierNoTooltip]."
  noi_trevani.1003.c: "Прекрати визжать, шавка!"
- noi_trevani.1003.c.tt: "Вы убиваете Цыплёнка и его стражу."
+ noi_trevani.1003.c.tt: "Вы убиваете Птицу и его стражу."
 
  noi_trevani.1004.t: "Тихий стук"
  noi_trevani.1004.desc: "Paceholder"
@@ -497,34 +505,61 @@
 
 
 
- game_concept_lynx_tribe: "Племя Рыси"
- game_concept_lynx_tribe_desc: "Среди Девяти племён племя Рыси было одной из первых групп скитающихся [Concept('daen', 'даэн')|E], достигших земель, которые ныне известны как [Concept('rhudaur', 'Рудаур')|E]. Поселившись в лесистых предгорьях Мглистых гор недалеко от истока Митэйтеля, они были выносливым народом охотников, ловчих и пчеловодов.\n\nОни предпочитали жить в отдалённых районах, таких как некоторые из крутых ущелий, по которым протекает Седой Ключ, и лишь изредка вступали в длительные контакты с другими племенами. При правлении дунэдайнских владык начала Третьей эпохи им удалось сохранить высокую степень квазиавтономии из-за того, что посланцам их де-юре повелителей было просто слишком трудно связаться с ними.\n\nВ качестве своего символа они выбрали местную рысь, которая часто бродит по заснеженным лесам и пологим склонам на подступах к горам и живёт в основном в сотрудничестве с охотничьими кошками. Когда Рудаур оказался под тенью Ангмара, многие воины из племени Рыси были вынуждены сражаться в войсках Короля-чародея, и поэтому их народ вымер, поскольку войны с Арнором обескровили его. Лишь очень немногие деревни дожили до конца чародейского владычества, и никто не знает, сохранились ли они до наших дней."
+ game_concept_lynx_tribe: "Линк"
+ game_concept_lynx_tribe_plural: "Линкен"
+ game_concept_lynx_tribe_desc: "Среди [Concept('noi_trevan', 'Ной-треван')|E] [Glossary('Линкен','linc_gloss')] были одной из первых групп скитающихся [Concept('daen', 'даэн')|E], достигших земель, которые ныне известны как [Concept('rhudaur', 'Рудаур')|E]. Поселившись в лесистых предгорьях Мглистых гор недалеко от истока Митэйтеля, они были выносливым народом охотников, ловчих и пчеловодов.\n\nОни предпочитали жить в отдалённых районах, таких как некоторые из крутых ущелий, по которым протекает Седой Ключ, и лишь изредка вступали в длительные контакты с другими племенами. При правлении дунэдайнских владык начала Третьей эпохи им удалось сохранить высокую степень квазиавтономии из-за того, что посланцам их де-юре повелителей было просто слишком трудно связаться с ними.\n\nВ качестве своего символа они выбрали местную рысь, которая часто бродит по заснеженным лесам и пологим склонам на подступах к горам и живёт в основном в сотрудничестве с охотничьими кошками. Когда Рудаур оказался под тенью Ангмара, многие воины из племени Рыси были вынуждены сражаться в войсках Короля-чародея, и поэтому их народ вымер, поскольку войны с Арнором обескровили его. Лишь очень немногие деревни дожили до конца чародейского владычества, и никто не знает, сохранились ли они до наших дней."
 
- game_concept_goat_tribe: "Племя Козла"
- game_concept_goat_tribe_desc: "Девять племён - это эклектичная группа союзных племён, которые живут в предгорьях [Concept('rhudaur', 'Рудаура')|E], и одно из этих племён - Племя Козла.\n\nПлемя Козла - это племя, которое изначально имело [Concept('daen', 'даэнское')|E] происхождение и населяло земли Орнуил и Карандор непосредственно к северу от Имладриса. Они были хорошо известны своим упрямством, никогда полностью не принимая правление [Concept('dunedain', 'дунэдайн')|E] или [Concept('witchking', 'Короля-чародея')|E].\n\nИх навыки в альпинизме также не имели себе равных среди Девяти племён, и они были известны тем, что путешествовали через перевалы Мглистых гор, чтобы торговать с жителями долины Андуина.\n\nКогда ими правили дунэдайн, их часто называли гномоподобными, а король Рудаура Алдарион называл их «гномами, не жаждущими золота»."
+ game_concept_goat_tribe: "Гобхар"
+ game_concept_goat_tribe_plural: "Гобхейр"
+ game_concept_goat_tribe_desc: "Среди [Concept('noi_trevan', 'Ной-треван')|E] те, кто живут в предгорьях [Concept('rhudaur', 'Рудаура')|E], это - [Glossary('Гобхейр','gobhar_gloss')].\n\nГобхар - это племя, которое изначально имело [Concept('daen', 'даэнское')|E] происхождение и населяло земли Орнуил и Карандор непосредственно к северу от Имладриса. Они были хорошо известны своим упрямством, никогда полностью не принимая правление [Concept('dunedain', 'дунэдайн')|E] или [Concept('witchking', 'Короля-чародея')|E].\n\nИх навыки в альпинизме также не имели себе равных среди Девяти племён, и они были известны тем, что путешествовали через перевалы Мглистых гор, чтобы торговать с жителями долины Андуина.\n\nКогда ими правили дунэдайн, их часто называли гномоподобными, а король Рудаура Алдарион называл их «гномами, не жаждущими золота»."
 
- game_concept_fowl_tribe: "Птичье племя"
- game_concept_fowl_tribe_desc: "Из Девяти Великих племён наиболее чистокровные балшарим живут в пограничных землях на северо-западе, их небольшая конфедерация пастухов и ловчих переселяется из Рам Дуата в Сланслиаб, Глинкинлин и Таобхтир. Ведомые Бахаром, великим вождём балшаримского народа (а некоторые считают его потомком Балши «Мудреца»), они бежали с холодного севера и пришли в [Concept('rhudaur', 'Рудаур')|E] и почти сразу же начали ссориться с народом Тролльего плато и Мойн-Дулдахда, а также с эриадоррим на западе.\n\nПтичье племя, названное в честь животного, которое они чаще всего выращивали и пасли, - народ хитрый и проницательный и часто очень воинственный. Они и племена их потомков были последними, кто присягнул на верность Первому королю, и в старых народных сказаниях говорится, что их присоединение никогда не было зафиксировано, но они всё равно пробились ко двору короля.\n\nОднако при короле и его народе боевой дух Птиц был умерен, и они начали смешиваться с народами других племён, особенно с народом Камет-Брин. Но они никогда полностью не забывали о своём балшаримском наследии, и говорят, что у последних вождей Птиц были предки из ангмаррим и даже из недружелюбных лоссот на западе.\n\nКогда правители дунэдайн пришли в Рудаур, Птицы оказали яростное сопротивление, нападая из дупел деревьев и болот, а также со скалистых холмов, на которых они жили. Хотя в конце концов их одолели, они никогда не теряли своего рвения к свободе (или к тому, что они себе о ней представляли), и часто восстание горцев возглавляли Птицы.\n\nИрония в том, что они первыми и глубже всех встали на службу тёмному Ангмару, а их вождь соблазнился предложениями власти или золота, а то и мести дунэдайн. Какой бы ни была причина, конец Ангмара означал конец Птиц, и мало кто из этого народа дожил до наших дней, если вообще дожил."
+ game_concept_fowl_tribe: "Койлеах трев"
+ game_concept_fowl_tribe_plural: "Койлих"
+ game_concept_fowl_tribe_desc: "Из [Concept('noi_trevan', 'Ной-треван')|E] наиболее чистокровные балшарим живут в пограничных землях на северо-западе, их небольшая конфедерация пастухов и ловчих переселяется из Рам Дуата в Сланслиаб, Глинкинлин и Таобхтир. Ведомые Бахаром, великим вождём балшаримского народа (а некоторые считают его потомком Балши «Мудреца»), они бежали с холодного севера и пришли в [Concept('rhudaur', 'Рудаур')|E] и почти сразу же начали ссориться с народом Тролльего плато и Мойн-Дулдахда, а также с эриадоррим на западе.\n\n[Glossary('Койлих','coileach_gloss')], названные в честь животного, которое они чаще всего выращивали и пасли, - народ хитрый и проницательный и часто очень воинственный. Они и племена их потомков были последними, кто присягнул на верность Первому королю, и в старых народных сказаниях говорится, что их присоединение никогда не было зафиксировано, но они всё равно пробились ко двору короля.\n\nОднако при короле и его народе боевой дух Птиц был умерен, и они начали смешиваться с народами других племён, особенно с народом Камет-Брин. Но они никогда полностью не забывали о своём балшаримском наследии, и говорят, что у последних вождей Птиц были предки из ангмаррим и даже из недружелюбных лоссот на западе.\n\nКогда правители дунэдайн пришли в Рудаур, Птицы оказали яростное сопротивление, нападая из дупел деревьев и болот, а также со скалистых холмов, на которых они жили. Хотя в конце концов их одолели, они никогда не теряли своего рвения к свободе (или к тому, что они себе о ней представляли), и часто восстание горцев возглавляли Птицы.\n\nИрония в том, что они первыми и глубже всех встали на службу тёмному Ангмару, а их вождь соблазнился предложениями власти или золота, а то и мести дунэдайн. Какой бы ни была причина, конец Ангмара означал конец Птиц, и мало кто из этого народа дожил до наших дней, если вообще дожил."
 
- game_concept_bear_tribe: "Племя Медведя"
- game_concept_bear_tribe_desc: "Среди Девяти племён, которые называют предгорья Рудаура своим домом, есть племя Медведя, народ столь же терпеливый и безжалостный, как и звери, чьё имя они носят.\n\nПлемя Медведя ведёт своё происхождение от [Concept('daen', 'даэн')|E], которые поселились вдоль быстрой реки Митэйтель в южном Рудауре, в долинах верхнего течения Бруинена. Они славятся своим мастерством в ловле рыбы не сетями, а копьём и руками, нанося удары по изобилию реки с такой же силой и точностью, как медведь по берегу ручья.\n\nЛетописцы-дунэдайн описывали их как мрачный и молчаливый народ, чья жизнь зависела как от силы, так и от терпения. Под властью дунэдайн или Ангмара они, где могли, держались своих рек и лесов, стремясь к уединению в своих дебрях, хотя и не могли полностью вырваться из-под власти своих повелителей."
+ game_concept_bear_tribe: "Матхан трев"
+ game_concept_bear_tribe_plural: "Матэйн"
+ game_concept_bear_tribe_desc: "Среди [Concept('noi_trevan', 'Ной-треван')|E], которые называют предгорья Рудаура своим домом, есть [Glossary('Матэйн','mathan_gloss')], народ столь же терпеливый и безжалостный, как и звери, чьё имя они носят.\n\nМатэйн ведут своё происхождение от [Concept('daen', 'даэн')|E], которые поселились вдоль быстрой реки Митэйтель в южном Рудауре, в долинах верхнего течения Бруинена. Они славятся своим мастерством в ловле рыбы не сетями, а копьём и руками, нанося удары по изобилию реки с такой же силой и точностью, как медведь по берегу ручья.\n\nЛетописцы-дунэдайн описывали их как мрачный и молчаливый народ, чья жизнь зависела как от силы, так и от терпения. Под властью дунэдайн или Ангмара они, где могли, держались своих рек и лесов, стремясь к уединению в своих дебрях, хотя и не могли полностью вырваться из-под власти своих повелителей."
 
- game_concept_hare_tribe: "Племя Зайца"
- game_concept_hare_tribe_desc: "Среди Девяти племён Зайцы происходят от кочующих [Concept('daen', 'даэн')|E], которые поселились на землях [Concept('rhudaur', 'Рудаура')|E], а предки их племён поселились среди центральных холмов своего нового дома и получили своё название из-за огромного количества зайцев, населявших эти земли, а также из-за их широкого использования их шкур и сухожилий для шитья одежды.\n\nПлемя Зайца было известно как высококвалифицированные охотники и следопыты, которые любили гоняться за зайцами и ловить их голыми руками, чтобы постоянно демонстрировать своё мастерство. Однако их величайшим мастерством было умение говорить, которым они овладели с одной-единственной целью - выжить.\n\nНесмотря на то, что они были довольны своей новой родиной, у них был один большой недостаток: они находились между многими другими племенами, и если одно из них хотело добраться до другого, то им приходилось пересекать Заячьи земли. Это привело к тому, что они сосредоточились на поддержании мира и хороших отношений со всеми, кто граничил с ними, они добились этого, став посредниками между каждым из племён и улаживая их разногласия друг с другом. Благодаря своему уму, мудрости и, в глазах племени Зайца, потребности в абсолютной честности, они были желанными гостями в домах всех своих соседей.\n\nК сожалению, в последующие дни это не помогло: как приход нуменорцев, которые отказались от многих своих соглашений, так и возвышение Ангмара, не оставившего места для тех, кто умел говорить, а только для тех, кто был искусен в сражениях, привели к огромному и печальному уменьшению численности их народа."
+ game_concept_hare_tribe: "Геаррог трев"
+ game_concept_hare_tribe_plural: "Геарроган"
+ game_concept_hare_tribe_desc: "Среди [Concept('noi_trevan', 'Ной-треван')|E] [Glossary('Геарроган','ghearrog_gloss')] происходят от кочующих [Concept('daen', 'даэн')|E], которые поселились на землях [Concept('rhudaur', 'Рудаура')|E], а предки их племён поселились среди центральных холмов своего нового дома и получили своё название из-за огромного количества зайцев, населявших эти земли, а также из-за их широкого использования их шкур и сухожилий для шитья одежды.\n\n[Glossary('Геаррог','ghearrog_gloss')] были известны как высококвалифицированные охотники и следопыты, которые любили гоняться за зайцами и ловить их голыми руками, чтобы постоянно демонстрировать своё мастерство. Однако их величайшим мастерством было умение говорить, которым они овладели с одной-единственной целью - выжить.\n\nНесмотря на то, что они были довольны своей новой родиной, у них был один большой недостаток: они находились между многими другими племенами, и если одно из них хотело добраться до другого, то им приходилось пересекать земли Геаррог. Это привело к тому, что они сосредоточились на поддержании мира и хороших отношений со всеми, кто граничил с ними, они добились этого, став посредниками между каждым из племён и улаживая их разногласия друг с другом. Благодаря своему уму, мудрости и, в глазах [Glossary('Геаррог','ghearrog_gloss')], потребности в абсолютной честности, они были желанными гостями в домах всех своих соседей.\n\nК сожалению, в последующие дни это не помогло: как приход нуменорцев, которые отказались от многих своих соглашений, так и возвышение Ангмара, не оставившего места для тех, кто умел говорить, а только для тех, кто был искусен в сражениях, привели к огромному и печальному уменьшению численности их народа."
 
- game_concept_raven_tribe: "Племя Ворона"
- game_concept_raven_tribe_desc: "До того, как девять племён холмов объединились под властью короля, три племени объединила королева. Сказители племени утверждают, что Воронья королева была не только хитрой, но и одним из самых мужественных духов, поэтому она обманом заставила трёх великих человеческих вождей жениться на ней так, что они не знали друг о друге, но когда она раскрылась и они узнали, что она заставила их принести клятву на крови служить ей, объединив все племена. И по прошествии тысячелетий их великое воинство переселилось в более плодородные земли [Concept('rhudaur', 'Рудаура')|E].\n\nНесмотря на то, что они не были изоляционистами, они смогли сохранить большую независимость среди племён, в основном из-за своих необычных и эзотерических практик. Их племя разделено на 3 «крыла». Правое крыло - это фермеры, рабочие и те, кто готовит следующее поколение. Левое - воины и военные советники, известные среди остальных племён своим пренебрежением к традициям и чести. А среднее - проводники плотского и духовного миров, те, кто призывает отбраковывать зверей, когда мир так считает, те, кто не выбывает из своих рядов, а позволяет своей плоти и костям кормить мир, те, кто не цепляется за жизнь, но принимает дар смерти, когда это их призвание. Возможно, это даже правда, потому что никто не помнит последнего старейшину, который пытался избежать смерти.\n\nВо время войны Короля-чародея племя разделилось на 3 части, как в древние времена, одни поддерживали вторжение Северного короля, другие носили белую звезду на своих щитах. Но одна группа отвергла и то, и другое с простой целью - убить как можно больше орков и дунэдайн, считая их жестокими демонами одного типа, которые наводят страх на мир своей жадностью, с той лишь разницей, что один нападает из горных пещер, а другой - из Великого озера, и полагая, что с уничтожением обоих Рудаур сможет наконец-то обрести безопасность.\n\nВыжившие считают, что племя Ворона вымерло во время войны, хотя исследователи продолжают находить новые «открытые могилы», которые среднее крыло племени практиковало в период своего расцвета."
+ game_concept_raven_tribe: "Фитеах трев"
+ game_concept_raven_tribe_plural: "Фитих"
+ game_concept_raven_tribe_desc: "До того, как [Concept('noi_trevan', 'Ной-треван')|E] из холмов объединились под властью короля, три племени объединила королева. Сказители утверждают, что Воронья королева была не только хитрой, но и одним из самых мужественных духов, поэтому она обманом заставила трёх великих человеческих вождей жениться на ней так, что они не знали друг о друге, но когда она раскрылась и они узнали, что она заставила их принести клятву на крови служить ей, объединив все племена. И по прошествии тысячелетий их великое воинство переселилось в более плодородные земли [Concept('rhudaur', 'Рудаура')|E].\n\nНесмотря на то, что они не были изоляционистами, они смогли сохранить большую независимость среди племён, в основном из-за своих необычных и эзотерических практик. Это племя, [Glossary('Фитих','fitheach_gloss')], разделено на 3 касты. Правая каста - это фермеры, рабочие и те, кто готовит следующее поколение. Левое - воины и военные советники, известные среди остальных племён своим пренебрежением к традициям и чести. А среднее - проводники плотского и духовного миров, те, кто призывает отбраковывать зверей, когда мир так считает, те, кто не выбывает из своих рядов, а позволяет своей плоти и костям кормить мир, те, кто не цепляется за жизнь, но принимает дар смерти, когда это их призвание. Возможно, это даже правда, потому что никто не помнит последнего старейшину, который пытался избежать смерти.\n\nВо время войны Короля-чародея племя разделилось на 3 части, как в древние времена, одни поддерживали вторжение Северного короля, другие носили белую звезду на своих щитах. Но одна группа отвергла и то, и другое с простой целью - убить как можно больше орков и дунэдайн, считая их жестокими демонами одного типа, которые наводят страх на мир своей жадностью, с той лишь разницей, что один нападает из горных пещер, а другой - из Великого озера, и полагая, что с уничтожением обоих Рудаур сможет наконец-то обрести безопасность.\n\nВыжившие считают, что племя Ворона вымерло во время войны, хотя исследователи продолжают находить новые «открытые могилы», которые среднее крыло племени практиковало в период своего расцвета."
 
- game_concept_stag_tribe: "Племя Оленя"
- game_concept_stag_tribe_desc: "Placeholder"
+ game_concept_stag_tribe: "Дамх трев"
+ game_concept_stag_tribe_plural: "Дэймх"
+ game_concept_stag_tribe_desc: "Племя [Concept('noi_trevan', 'Ной-треван')|E]: [Glossary('Дэймх','damh_gloss')]"
 
- game_concept_boar_tribe: "Племя Вепря"
- game_concept_boar_tribe_desc: "Placeholder"
+ game_concept_boar_tribe: "Торк трев"
+ game_concept_boar_tribe_plural: "Тьюрк"
+ game_concept_boar_tribe_desc: "Племя [Concept('noi_trevan', 'Ной-треван')|E]: [Glossary('Тьюрк','torc_gloss')]"
 
- game_concept_woodpecker_tribe: "Племя Дятла"
- game_concept_woodpecker_tribe_desc: "Placeholder"
+ game_concept_woodpecker_tribe: "Снаг трев"
+ game_concept_woodpecker_tribe_plural: "Снаган"
+ game_concept_woodpecker_tribe_desc: "Племя [Concept('noi_trevan', 'Ной-треван')|E]: [Glossary('Снаган','snag_gloss')]"
 
 
+
+ mathan_gloss: "Трев. #bold Матхан#! означает «Медведь» и относится к одноименному племени [Concept('hillmen', 'горцев')|E]."
+
+ linc_gloss: "Трев. #bold Линк#! означает «Рысь» и относится к одноименному племени [Concept('hillmen', 'горцев')|E]."
+
+ snag_gloss: "Трев. #bold Снаг#! означает «Дятел» и относится к одноименному племени [Concept('hillmen', 'горцев')|E]."
+
+ coileach_gloss: "Трев. #bold Койлеах#! означает «Птица» и относится к одноименному племени [Concept('hillmen', 'горцев')|E]."
+
+ fitheach_gloss: "Трев. #bold Фитеах#! означает «Ворон» и относится к одноименному племени [Concept('hillmen', 'горцев')|E]."
+
+ damh_gloss: "Трев. #bold Дамх#! означает «Олень» и относится к одноименному племени [Concept('hillmen', 'горцев')|E]."
+
+ torc_gloss: "Трев. #bold Торк#! означает «Вепрь» и относится к одноименному племени [Concept('hillmen', 'горцев')|E]."
+
+ gobhar_gloss: "Трев. #bold Гобхар#! означает «Коза» и относится к одноименному племени [Concept('hillmen', 'горцев')|E]."
+
+ ghearrog_gloss: "Трев. #bold Геаррог#! означает «Заяц» и относится к одноименному племени [Concept('hillmen', 'горцев')|E]."
 
 
 
@@ -535,8 +570,8 @@
  nick_goat_desc: "Возглавляя свой народ, как вожди древности, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'придерживаетесь', 'придерживается')] всех древних легенд о [Concept('goat_tribe', 'племени Козла')|E] и [Select_CString( CHARACTER.IsLocalPlayer, 'готовы', Select_CString(CHARACTER.IsFemale, 'готова', 'готов' ))] на всё ради своего народа."
  nick_lynx: "Рысь"
  nick_lynx_desc: "[Select_CString( CHARACTER.IsLocalPlayer, 'Названные', Select_CString(CHARACTER.IsFemale, 'Названная', 'Названный' ))] в честь своего древнего [Concept('lynx_tribe', 'племени Рыси')|E], [CHARACTER.GetShortUINameNoTooltipNoFormat|U] действительно [Select_CString( CHARACTER.IsLocalPlayer, 'придерживаетесь', 'придерживается')] своих древних обычаев и поверий, являясь примером для своего племени."
- nick_chicken: "Птица"
- nick_chicken_desc: "Отпрыск [Concept('fowl_tribe', 'Птичьего племени')|E] и [Select_CString(CHARACTER.IsFemale, 'наследница', 'наследник' )] вождя Бахара, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'расхаживаете', 'расхаживает')] с высоко поднятой головой, командуя своим окружением, как петух своим стадом."
+ nick_fowl: "Птица"
+ nick_fowl_desc: "Отпрыск [Concept('fowl_tribe', 'Койлеах трев')|E] и [Select_CString(CHARACTER.IsFemale, 'наследница', 'наследник' )] вождя Бахара, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [Select_CString( CHARACTER.IsLocalPlayer, 'расхаживаете', 'расхаживает')] с высоко поднятой головой, командуя своим окружением, как петух своим стадом."
  nick_bear: "[Select_CString(CHARACTER.IsFemale, 'Медведица', 'Медведь' )]"
  nick_bear_desc: "Placeholder"
  nick_woodpecker: "Дятел"
@@ -640,19 +675,20 @@
  fervor_angmar_defeated: "[Concept('witchking','Король Зимы')|E] был побеждён."
 
 
- PLACEHOLDER: "#N PLACEHOLDER"
- # Basics
+
+ PLACEHOLDER: "#N PLACEHOLDER#!"
+
+ #### Basics ####
  situation_angmar_wars_situation: "Ангмарские войны"
  situation_angmar_wars_situation_desc: "$PLACEHOLDER$"
  situation_type_angmar_wars_situation: "$situation_angmar_wars_situation$"
  situation_type_angmar_wars_situation_desc: "$situation_angmar_wars_situation_desc$"
 
- # Sub-regions
+ ### Sub-regions ###
  angmar_wars_situation_sub_region_eriador: "Эриадор"
-
  angmar_wars_situation_sub_region_eriador_desc: "$SITUATION_SUB_REGION_TOOLTIP_DESC$\n\n$PLACEHOLDER$!"
 
- # Phases
+ ### Phases ###
  angmar_wars_situation_angmar_wars_stalemate_situation_phase: "$angmar_wars_stalemate$"
  angmar_wars_situation_angmar_wars_arnor_ascendant_situation_phase: "$angmar_wars_arnor_ascendant$"
  angmar_wars_situation_angmar_wars_angmar_ascendant_situation_phase: "$angmar_wars_angmar_ascendant$"
@@ -665,7 +701,17 @@
  angmar_wars_arnor_ascendant_desc: "$PLACEHOLDER$ - Arnor is on the offensive"
  angmar_wars_angmar_ascendant_desc: "$PLACEHOLDER$ - Angmar is on the offensive"
 
- # Phase Effects 
+ ### Phase Effects ###
+
+ angmar_wars_general_effects: "Влияние на арнорских правителей"
+ angmar_wars_general_effects_concept: "$PLACEHOLDER$"
+ angmar_wars_good_effects: "Влияние на [Concept('arnor_aligned', 'союзников Арнора')|E]"
+ angmar_wars_good_effects_concept: "$PLACEHOLDER$"
+ angmar_wars_angmar_effects: "Влияние на [Concept('angmar_aligned', 'союзников Ангмара')|E]"
+ angmar_wars_angmar_effects_concept: "$PLACEHOLDER$"
+ angmar_wars_neutral_effects: "Влияние на [Concept('neutral_s', 'нейтральных правителей')|E]"
+ angmar_wars_neutral_effects_concept: "$PLACEHOLDER$"
+
  angmar_wars_stalemate_effects: "Эффекты тупиковой ситуации"
  angmar_wars_stalemate_effects_concept: "$PLACEHOLDER$"
  angmar_wars_arnor_ascendant_effects: "Эффекты восхождения Арнора"
@@ -673,7 +719,8 @@
  angmar_wars_angmar_ascendant_effects: "Эффекты восхождения Ангмара"
  angmar_wars_angmar_ascendant_effects_concept: "$PLACEHOLDER$"
 
- # Participants
+ ### Participants ###
+
  angmar_wars_situation_participant_group_arnorian_rulers: "Арнорские правители"
  angmar_wars_situation_participant_group_arnorian_rulers_desc: "$PLACEHOLDER$"
  angmar_wars_situation_participant_group_angmar_rulers: "Ангмарримские правители"
@@ -687,58 +734,339 @@
  angmar_wars_situation_elven_rulers: "Эльфийский правитель"
  angmar_wars_situation_neutral_rulers: "Нейтральный правитель"
 
- # Paramters
- situation_parameter_temp_parameter: "$PLACEHOLDER$ Parameter"
+ ### Parameters ###
 
- # GUI
+ situation_parameter_temp_parameter: "$PLACEHOLDER$ Parameter"
+ situation_parameter_devastate_random_sitatuation_county_1: "Каждый месяц #V одно#! случайно [Concept('county', 'графство')|E] в пределах [Concept('situation', 'ситуации')|E] будет [Concept('devastated', 'опустошено')|E]"
+ situation_parameter_sieges_raids_battles_cause_devastation: "[Concept('sieges', 'Осады')|E], [Concept('raids', 'набеги')|E] и [Concept('battles', 'сражения')|E] вызывают [Concept('devastation', 'опустошение')|E]"
+ situation_parameter_invasion_war_unlocked: "Доступен казус белли #high [GetCasusBelliType('angmar_wars_invasion_cb').GetName]#!"
+ situation_parameter_most_cbs_locked: "Большинство [Concept('casus_belli', 'казус белли')|E] #N ограничены#!"
+
+ ### GUI ###
  ANGMAR_WARS_SITUATION_INFO_PHASES_TITLE: "Фазы"
  ANGMAR_WARS_SITUATION_INFO_PHASES_EXPLANATION: "$game_concept_situation_phase_desc$"
  ANGMAR_WARS_SITUATION_WINDOW_CURRENT_PHASE: "[Situation.GetCurrentPhase.GetName]"
- ENDING_DECISIONS_HEADER: "Конечное решение"
+ ENDING_DECISIONS_HEADER: "Конечные решения"
+ PHASE_MODIFIERS_HEADER: "Модификаторы фазы"
+ ANGMAR_AVAILABLE_DECISIONS_HEADER: "Доступные решения"
+ ANGMAR_WARS_SITUATION_CATALYST_HEADER: "Катализаторы Ангмарских войн"
+ ANGMAR_WARS_STALEMATE_CATALYST_BUTTON_TT: "Тупик"
+ ANGMAR_WARS_ARNOR_ASCENDANT_CATALYST_BUTTON_TT: "Возвышение Арнора"
+ ANGMAR_WARS_ANGMAR_ASCENDANT_CATALYST_BUTTON_TT: "Возвышение Ангмара"
 
 
+ ### Catalysts ###
 
+ catalyst_convert_to_evil: "Распространение зла"
+ catalyst_convert_to_evil_desc: "[Concept('ruler', 'Правитель')|E] обратился в [Concept('alignment_evil', 'злую')|E] [Concept('faith', 'конфессию')|E]"
+ catalyst_convert_to_good: "Распространение добра"
+ catalyst_convert_to_good_desc: "[Concept('ruler', 'Правитель')|E] обратился в [Concept('alignment_good', 'добрую')|E] [Concept('faith', 'конфессию')|E]"
+ catalyst_county_convert_to_evil: "Распространение зла"
+ catalyst_county_convert_to_evil_desc: "[Concept('county', 'Графство')|E] обратилось в [Concept('alignment_evil', 'злую')|E] [Concept('faith', 'конфессию')|E]"
+ catalyst_county_convert_to_good: "Распространение добра"
+ catalyst_county_convert_to_good_desc: "[Concept('county', 'Графство')|E] обратилось в [Concept('alignment_good', 'добрую')|E] [Concept('faith', 'конфессию')|E]"
+ catalyst_neutral_joins_arnor: "[Concept('neutral_ruler', 'Нейтральный правитель')|E] встал на сторону [Concept('arnor', 'Арнора')|E]"
+ catalyst_neutral_joins_arnor_desc: "Бывший [Concept('neutral_ruler', 'нейтральный правитель')|E] встал на сторону [Concept('arnorian_rulers', 'арнорцев')|E]."
+ catalyst_neutral_joins_angmar: "[Concept('neutral_ruler', 'Нейтральный правитель')|E] встал на сторону [Concept('angmar', 'Ангмара')|E]"
+ catalyst_neutral_joins_angmar_desc: "Бывший [Concept('neutral_ruler', 'нейтральный правитель')|E] встал на сторону [Concept('angmar_rulers', 'ангмарцев')|E]."
+ catalyst_angmar_devastated: "Ангмар опустошён"
+ catalyst_angmar_devastated_desc: "[Concept('evil_s', 'Злое')|E] [Concept('county', 'графство')|E] [Concept('situation', 'ситуации')|E] было [Concept('devastated', 'опустошено')|E]."
+ catalyst_arnor_devastated: "Арнор опустошён"
+ catalyst_arnor_devastated_desc: "[Concept('good_s', 'Доброе')|E] [Concept('county', 'графство')|E] [Concept('situation', 'ситуации')|E] было [Concept('devastated', 'опустошено')|E]."
+ catalyst_county_wastelanded_arnor: "[Concept('arnorian_s', 'Арнорское')|E] [Concept('county', 'графство')|E] покинуто"
+ catalyst_county_wastelanded_arnor_desc: "[Concept('arnor_aligned', 'Арнорское')|E] [Concept('county', 'графство')|E] вернулось в состояние [Concept('wilderness', 'дебрей')|E]."
+ catalyst_county_wastelanded_angmar: "[Concept('angmarrim_s', 'Ангмарское')|E] [Concept('county', 'графство')|E] покинуто"
+ catalyst_county_wastelanded_angmar_desc: "[Concept('angmar_aligned', 'Ангмарское')|E] [Concept('county', 'графство')|E] вернулось в состояние [Concept('wilderness', 'дебрей')|E]."
+ catalyst_arnor_won_war: "Арнор побеждает в войне"
+ catalyst_arnor_won_war_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] побеждает в [Concept('war', 'войне')|E]."
+ catalyst_angmar_won_war: "Ангмар побеждает в войне"
+ catalyst_angmar_won_war_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] побеждает в [Concept('war', 'войне')|E]."
+ catalyst_arnor_wins_battle: "Арнор одерживает верх в сражении"
+ catalyst_arnor_wins_battle_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] одерживает верх в [Concept('battle', 'сражении')|E] против [Concept('angmar_aligned_ruler', 'ангмарцев')|E]."
+ catalyst_angmar_wins_battle: "Ангмар одерживает верх в сражении"
+ catalyst_angmar_wins_battle_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] одерживает верх в [Concept('battle', 'сражении')|E] против [Concept('arnor_aligned_ruler', 'арнорцев')|E]."
+ catalyst_elves_join_war: "Эльфы присоединяются к войне"
+ catalyst_elves_join_war_desc: "[Concept('elven_ruler', 'Эльфийский правитель')|E] присоединился к оборонительной [Concept('war', 'войне')|E] на стороне [Concept('arnorian_ruler', 'арнорцев')|E]."
+ catalyst_building_constructed_arnor: "Восстановление Арнора"
+ catalyst_building_constructed_arnor_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] построил [Concept('building', 'здание')|E]."
+ catalyst_building_constructed_angmar: "Восстановление Ангмара"
+ catalyst_building_constructed_angmar_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] построил [Concept('building', 'здание')|E]."
+ catalyst_wonder_completed_arnor: "Улучшение [Concept('arnorian_s', 'арнорской')|E] [Concept('special_building', 'особой постройки')|E]"
+ catalyst_wonder_completed_arnor_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] улучшил [Concept('special_building', 'особую')|E] или [Concept('great_building', 'грандиозную постройку')|E] в [Concept('situation_sub_region', 'области ситуации')|E]."
+ catalyst_wonder_completed_angmar: "Улучшение [Concept('angmarrim_s', 'ангмарской')|E] [Concept('special_building', 'особой постройки')|E]"
+ catalyst_wonder_completed_angmar_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] улучшил [Concept('special_building', 'особую')|E] или [Concept('great_building', 'грандиозную постройку')|E] в [Concept('situation_sub_region', 'области ситуации')|E]."
+ catalyst_colony_completed_arnor: "Завершение [Concept('arnorian_s', 'арнорской')|E] [Concept('colony', 'колонии')|E]"
+ catalyst_colony_completed_arnor_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] завершил [Concept('colony', 'колонию')|E]."
+ catalyst_colony_completed_angmar: "Завершение [Concept('angmarrim_s', 'ангмарской')|E] [Concept('colony', 'колонии')|E]"
+ catalyst_colony_completed_angmar_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] завершил [Concept('colony', 'колонию')|E]."
+ catalyst_wonder_conquered_arnor: "Завоевание [Concept('arnorian_s', 'арнорской')|E] [Concept('special_building', 'особой постройки')|E]"
+ catalyst_wonder_conquered_arnor_desc: "[Concept('angmar_aligned_ruler', 'Ангмарский союзник')|E] завоевал [Concept('county', 'графство')|E] с [Concept('special_building', 'особой')|E] или [Concept('great_building', 'грандиозной постройкой')|E] у [Concept('arnor_aligned_ruler', 'арнорцев')|E]."
+ catalyst_wonder_conquered_angmar: "Завершение [Concept('angmarrim_s', 'ангмарской')|E] [Concept('special_building', 'особой постройки')|E]"
+ catalyst_wonder_conquered_angmar_desc: "[Concept('arnor_aligned_ruler', 'Арнорский союзник')|E] завоевал [Concept('county', 'графство')|E] с [Concept('special_building', 'особой')|E] или [Concept('great_building', 'грандиозной постройкой')|E] у [Concept('angmar_aligned_ruler', 'ангмарцев')|E]."
+ catalyst_palantir_lost: "[Concept('palantirone', 'Палантир')|E] потерян"
+ catalyst_palantir_lost_desc: "Один из [Concept('palantir', 'палантиров')|E] потерян."
+ catalyst_arnorian_king_dies: "Смерть [Concept('arnorian_s', 'арнорского')|E] короля"
+ catalyst_arnorian_king_dies_desc: "[Concept('arnorian_s', 'Арнорский')|E] [Concept('king', 'король')|E] умирает от неестественных причин."
+ catalyst_arnorian_lord_dies: "Смерть [Concept('arnorian_s', 'арнорского')|E] властителя"
+ catalyst_arnorian_lord_dies_desc: "[Concept('house_head', 'Глава')|E] [Concept('great_house', 'великого дома')|E] умирает от неестественных причин."
+ catalyst_line_of_isildur_fails: "Падение династии [Concept('isildur', 'Исильдура')|E]"
+ catalyst_line_of_isildur_fails_desc: "[Concept('house', 'Дом')|E] [GetDynastyByID('dynasty_elendil').GetName] вымер."
+ catalyst_arnorian_house_dies_out: "Пресечение [Concept('great_house', 'великого дома')|E]"
+ catalyst_arnorian_house_dies_out_desc: "Один из [Concept('great_houses_of_arnor', 'великих домов Арнора')|E] вымер."
+ catalyst_major_epidemic_arnor: "Вспышка чумы в [Concept('arnor', 'Арноре')|E]"
+ catalyst_major_epidemic_arnor_desc: "Начало [Concept('plague_major', 'пандемии')|E] [Concept('epidemic', 'поветрия')|E] в [Concept('arnorian_s', 'арнорской')|E] [Concept('province', 'провинции')|E]."
+ catalyst_major_epidemic_angmar: "Вспышка чумы в [Concept('angmar', 'Ангмаре')|E]"
+ catalyst_major_epidemic_angmar_desc: "Начало [Concept('plague_major', 'пандемии')|E] [Concept('epidemic', 'поветрия')|E] в [Concept('angmarrim_s', 'ангмарской')|E] [Concept('province', 'провинции')|E]."
+ catalyst_apocalyptic_epidemic_arnor: "Вспышка чумы в [Concept('arnor', 'Арноре')|E]"
+ catalyst_apocalyptic_epidemic_arnor_desc: "Начало [Concept('plague_apocalyptic', 'апокалиптического')|E] [Concept('epidemic', 'поветрия')|E] в [Concept('arnorian_s', 'арнорской')|E] [Concept('province', 'провинции')|E]."
+ catalyst_apocalyptic_epidemic_angmar: "Вспышка чумы в [Concept('angmar', 'Ангмаре')|E]"
+ catalyst_apocalyptic_epidemic_angmar_desc: "Начало [Concept('plague_apocalyptic', 'апокалиптического')|E] [Concept('epidemic', 'поветрия')|E] в [Concept('angmarrim_s', 'ангмарской')|E] [Concept('province', 'провинции')|E]."
+ catalyst_hostile_scheme_arnor: "Успешные [Concept('scheme', 'происки')|E] [Concept('arnorian_s', 'арнорцев')|E]"
+ catalyst_hostile_scheme_arnor_desc: "[Concept('arnorian_ruler', 'Арнорский правитель')|E] завершил [Concept('hostile_scheme', 'агрессивные происки')|E] против [Concept('angmar_aligned_ruler', 'ангмарцев')|E]."
+ catalyst_hostile_scheme_angmar: "Успешные [Concept('scheme', 'происки')|E] [Concept('angmarrim_s', 'ангмарцев')|E]"
+ catalyst_hostile_scheme_angmar_desc: "[Concept('angmar_ruler', 'Ангмарский правитель')|E] завершил [Concept('hostile_scheme', 'агрессивные происки')|E] против [Concept('arnor_aligned_ruler', 'арнорцев')|E]."
+ catalyst_ranger_contract_completed_arnor: "Завершение [Concept('arnorian_s', 'арнорского')|E] [Concept('ranger_task_contract', 'контракта следопыта')|E]"
+ catalyst_ranger_contract_completed_arnor_desc: "[Concept('arnorian_s', 'Арнорский')|E] [Concept('ranger_laamp', 'следопыт')|E] завершил [Concept('ranger_task_contract', 'контракт')|E]."
+ catalyst_ranger_contract_completed_angmar: "Завершение [Concept('angmarrim_s', 'ангмарского')|E] [Concept('ranger_task_contract', 'контракта следопыта')|E]"
+ catalyst_ranger_contract_completed_angmar_desc: "[Concept('angmarrim_s', 'Ангмарский')|E] [Concept('ranger_laamp', 'следопыт')|E] завершил [Concept('ranger_task_contract', 'контракт')|E]."
+ catalyst_hope_increases: "Повышение [Concept('hope', 'надежды')|E]"
+ catalyst_hope_increases_desc: "В ближайшей [Concept('situation_sub_region', 'области ситуации')|E] «[GetSituationType('elven_hope_situation').GetName]» повысился уровень [Concept('hope', 'надежды')|E]."
+ catalyst_hope_decreases: "Снижение [Concept('hope', 'надежды')|E]"
+ catalyst_hope_decreases_desc: "В ближайшей [Concept('situation_sub_region', 'области ситуации')|E] «[GetSituationType('elven_hope_situation').GetName]» снизился уровень [Concept('hope', 'надежды')|E]."
+ catalyst_kingdom_joins_arnor: "Королевство подчиняется [Concept('arthedain', 'Артедайну')|E]"
+ catalyst_kingdom_joins_arnor_desc: "[Concept('cardolan', 'Кардолан')|E] или [Concept('rhudaur', 'Рудаур')|E] признали верховенство [Concept('arthedain', 'Артедайна')|E]"
 
-
-
-
-
-
- # Toasts
+ ### Toasts ###
 
  county_devastated_toast: "Владение [devastated_county.GetName] [Concept('devastated', 'опустошено')|E]"
- county_devastated_toast_desc: "[actor.GetName] [Concept('devastated', 'опустошает')|E] владение [devastated_county.GetName]"
+ county_devastated_toast_desc: "[actor.GetName] [Concept('devastated', Select_CString(actor.IsFemale, 'опустошила', 'опустошил' ))|E] владение [devastated_county.GetName]"
+
+ devastate_county_cb_toast: "Графство опустошено"
+ devastate_duchy_cb_toast: "Герцогство опустошено"
 
  catalyst_activated_toast: "Активирован катализатор"
  catalyst_activated_toast_desc: "#D Catalyst Desc Here#!\n [devastated_county.GetName]"
 
- # Triggers
+ ### Triggers ###
+
  is_arnor_ascendant_tt: "Текущая [Concept('situation_phase', 'фаза')|E] - [GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_arnor_ascendant').GetName]"
  is_angmar_ascendant_tt: "Текущая [Concept('situation_phase', 'фаза')|E] - [GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_angmar_ascendant').GetName]"
 
- # Wars
- angmar_wars_raid_cb_name: "$PLACEHOLDER$ Raid CB"
- angmar_wars_raid_cb_name_base: "$PLACEHOLDER$ Raid CB Base"
- angmar_wars_raid_cb_victory_desc: "$PLACEHOLDER$ Major Devestation"
- angmar_wars_raid_cb_white_peace_desc: "$PLACEHOLDER$ Minor devestation"
- angmar_wars_raid_cb_defeat_desc: "$PLACEHOLDER$ You are driven back"
- angmar_wars_raid_cb_on_invalidated_desc: "$PLACEHOLDER$ Raid Invallidated"
+ ### Wars ###
 
- # Decisions
+ angmar_wars_raid_cb_name: "Налёт на домен [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+ angmar_wars_raid_war_name: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')] #L [ATTACKER.GetPrimaryTitle.GetAdjective|l]ий#! налёт на домен [TITLE.GetBaseNameNoTier]"
+ angmar_wars_raid_cb_war_name_base: "#L [ATTACKER.GetPrimaryTitle.GetAdjective]ий#! домен [DEFENDER.GetPrimaryTitle.GetName]"
+
+ angmar_wars_devastate_county_cb_name: "[Concept('devastate', 'Опустошить')|E] [Concept('county', 'графство')|E]"
+ angmar_wars_devastate_county_cb_war_name: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')] #L [ATTACKER.GetPrimaryTitle.GetAdjective|l]ое#! [Concept('devastation', 'опустошение')|E] домена [TITLE.GetBaseNameNoTier]"
+ angmar_wars_devastate_county_cb_war_name_base: "#L [ATTACKER.GetPrimaryTitle.GetAdjective]ий#! домен [DEFENDER.GetPrimaryTitle.GetName]"
+ angmar_wars_devastate_county_cb_desc_victory_attacker: "Вы значительно [Concept('devastate', 'опустошаете')|E] выбранное [Concept('county', 'графство')|E]"
+ angmar_wars_devastate_county_cb_desc_victory_defender: "[ATTACKER.GetName] значительно [Concept('devastates', 'опустошает')|E] выбранное [Concept('county', 'графство')|E]"
+ angmar_wars_devastate_county_cb_desc_white_peace_attacker: "Вы слегка [Concept('devastate', 'опустошаете')|E] выбранное [Concept('county', 'графство')|E]"
+ angmar_wars_devastate_county_cb_desc_white_peace_defender: "[ATTACKER.GetName] слегка [Concept('devastates', 'опустошает')|E] выбранное [Concept('county', 'графство')|E]"
+ angmar_wars_devastate_county_cb_desc_defeat_attacker: "Вам не удаётся [Concept('devastate', 'опустошить')|E] выбранное [Concept('county', 'графство')|E] и вы должны заплатить компенсацию [Concept('gold', 'золотом')|E] за попытку набега"
+ angmar_wars_devastate_county_cb_desc_defeat_defender: "[ATTACKER.GetName] терпит неудачу в [Concept('devastate', 'опустошении')|E] выбранного [Concept('county', 'графства')|E] и [Select_CString(ATTACKER.IsFemale, 'должна', 'должен' )] заплатить компенсацию [Concept('gold', 'золотом')|E] за попытку набега"
+
+ angmar_wars_devastate_duchy_cb_name: "[Concept('devastate', 'Опустошить')|E] [Concept('duchy', 'герцогство')|E]"
+ angmar_wars_devastate_duchy_cb_war_name: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')] #L [ATTACKER.GetPrimaryTitle.GetAdjective|l]ое#! [Concept('devastation', 'опустошение')|E] домена [TITLE.GetBaseNameNoTier]"
+ angmar_wars_devastate_duchy_cb_war_name_base: "#L [ATTACKER.GetPrimaryTitle.GetAdjective]ий#! домен [DEFENDER.GetPrimaryTitle.GetName]"
+ angmar_wars_devastate_duchy_cb_desc_victory_attacker: "Вы значительно [Concept('devastate', 'опустошаете')|E] выбранное [Concept('duchy', 'герцогство')|E]"
+ angmar_wars_devastate_duchy_cb_desc_victory_defender: "[ATTACKER.GetName] значительно [Concept('devastates', 'опустошает')|E] выбранное [Concept('duchy', 'герцогство')|E]"
+ angmar_wars_devastate_duchy_cb_desc_white_peace_attacker: "Вы слегка [Concept('devastate', 'опустошаете')|E] выбранное [Concept('duchy', 'герцогство')|E]"
+ angmar_wars_devastate_duchy_cb_desc_white_peace_defender: "[ATTACKER.GetName] слегка [Concept('devastates', 'опустошает')|E] выбранное [Concept('duchy', 'герцогство')|E]"
+ angmar_wars_devastate_duchy_cb_desc_defeat_attacker: "Вам не удаётся [Concept('devastate', 'опустошить')|E] выбранное [Concept('duchy', 'герцогство')|E] и вы должны заплатить компенсацию [Concept('gold', 'золотом')|E] за попытку набега"
+ angmar_wars_devastate_duchy_cb_desc_defeat_defender: "[ATTACKER.GetName] терпит неудачу в [Concept('devastate', 'опустошении')|E] выбранного [Concept('duchy', 'герцогства')|E] и [Select_CString(ATTACKER.IsFemale, 'должна', 'должен' )] заплатить компенсацию [Concept('gold', 'золотом')|E] за попытку набега"
+
+ angmar_wars_invasion_cb: "$angmar_wars_invasion_cb_name$"
+ angmar_wars_invasion_cb_name: "Вторжение Ангмарских войн"
+ angmar_wars_invasion_cb_war_name: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')] #L [ATTACKER.GetPrimaryTitle.GetAdjective|l]ое#! вторжение в домен [TITLE.GetBaseNameNoTier]"
+ angmar_wars_invasion_cb_war_name_base: "#L [ATTACKER.GetPrimaryTitle.GetAdjective]ий#! домен [DEFENDER.GetPrimaryTitle.GetName]"
+ angmar_wars_invasion_cb_desc_victory_attacker: "Вы захватываете все #N оккупированные#! титулы в пределах державы персонажа [defender.GetShortUINamePossessive], [Concept('de_jure', 'де-юре')|E] принадлежащие выбранному титулу."
+ angmar_wars_invasion_cb_desc_victory_defender: "[attacker.GetShortUIName|U] захватывает все #N оккупированные#! титулы в пределах державы персонажа [defender.GetShortUINamePossessive], [Concept('de_jure', 'де-юре')|E] принадлежащие выбранному титулу."
+ angmar_wars_invasion_cb_desc_white_peace_attacker: "[defender.GetShortUIName|U] сохраняет свои титулы, но занятые вами подверглись [Concept('devastated', 'опустошению')|E]."
+ angmar_wars_invasion_cb_desc_white_peace_defender: "Вы сохраняете свои титулы, но занятые персонажем [attacker.GetShortUIName|U] подверглись подверглись [Concept('devastated', 'опустошению')|E]."
+ angmar_wars_invasion_cb_desc_defeat_attacker: "[defender.GetShortUIName|U] сохраняет свои титулы и наступает [Concept('situation_phase', 'фаза')|E] «[GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_stalemate').GetName]»."
+ angmar_wars_invasion_cb_desc_defeat_defender: "Вы сохраняете свои титулы и наступает [Concept('situation_phase', 'фаза')|E] «[GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_stalemate').GetName]»."
+ angmar_wars_invasion_cb_devastate_effect: "Все [Concept('occupied', 'захваченные')|E] [Concept('de_jure', 'де-юре')|E] [Concept('county', 'графства')|E] [Concept('devastated', 'опустошены')|E]"
+ angmar_wars_invasion_cb_transfer_effect: "#V Вы#! получаете все [Concept('occupied', 'захваченные')|E] [Concept('de_jure', 'де-юре')|E] [Concept('county', 'графства')|E]"
+ angmar_wars_invasion_cb_seige_effect: "Эффекты [Concept('devastation', 'опустошения')|E] от [Concept('sieges', 'осад')|E] и [Concept('battles', 'сражений')|E] удвоены"
+
+ ### Decisions ###
+
  decision_group_type_angmar_wars_situation: "$situation_angmar_wars_situation$ - решения"
 
+ # Arnor 
  decision_destroy_angmar: "Уничтожить Ангмар"
- decision_destroy_angmar_desc: "$PLACEHOLDER$"
- decision_destroy_angmar_confirm: "$PLACEHOLDER$"
+ decision_destroy_angmar_desc: "Too long has the shadow of $k_angmar$ loomed over these lands, and the [dunedain|E] cowered in fear. Yet the time has come to strike back and end this struggle by driving the foul [Concept('witchking''Sorcerer')|E] from [eriador|E] one and for all!"
+ decision_destroy_angmar_confirm: "Let us cleanse these lands!"
  decision_destroy_angmar_tooltip: "Начать войну, чтобы раз и навсегда уничтожить $k_angmar$"
  angmar_holds_no_land_in_dejure_arnor: "[GetTitleByKey('k_angmar').GetHolder.GetName] #N не#! владеет землями в [Concept('de_jure', 'де-юре')|E] границах #ONCLICK:TITLE,e_arnor #TOOLTIP:LANDED_TITLE,e_arnor #L Арнора#!#!#!"
 
+
+
+ decision_craft_barrow_blades: "Craft a $dagger_westernesse_name$"
+ decision_craft_barrow_blades_tooltip: "Create an echanted dagger artifact"
+ decision_craft_barrow_blades_desc: "Though long ago [westernesse|E] sank below the waves, its memory has not yet departed. Here in [arnor|E] some measure of its skill remains, and there reside mighty smiths trained in the lore of old. Facing such as terrible foe as the Lord of [angmar|E], none but the subtlest of our blades, woven with spells for the bane of his [Concept('nazgul','undead')|E] servants shall suffice. Perhaps I might commision one of my courtiers to craft such a dagger, or even take up the hammer myself."
+ decision_craft_barrow_blades_confirm: "The wisdom of [numenor|E] is not yet wholy gone."
+
+ decision_sponsor_ranger_company: "Sponsor Ranger Company"
+ decision_sponsor_ranger_company_tooltip: "Create a Ranger Landless Adventurer"
+ decision_sponsor_ranger_company_desc: "In these dark days, there are still some who wish to venture beyond our high walls and strike at the heart of our enemy. Were I to give these brave men funds and an offical commision, they might do great deads in defense of [ROOT.Char.GetPrimaryTitle.GetNameNoTier]."
+ decision_sponsor_ranger_company_confirm: "Go forth and defend [arnor|E]!"
+ decision_sponsor_ranger_company_tt: "You will create and fund a [GetGovernment('landless_adventurer_government').GetName] with the [GetLaw('camp_purpose_rangers').GetName] [camp_purpose|E]. You will be presented with a set of candidates to chose as captain of the new [camp|E]."
+
+ decision_consolidate_the_realm: "Consolidate the Realm"
+ decision_consolidate_the_realm_tooltip: "Pull back your people from the borderlands"
+ decision_consolidate_the_realm_desc: "As the [angmar_wars|E] drag on, I find [ROOT.Char.GetPrimaryTitle.GetNameNoTier] growing more and more incapable of defending its far-flung bounds. Should this steady decline continue, we risk those lands falling into [devastation|E] and their people lost.\n\nThe realm can ill afford such waste, and therefore it may be prudent to consolidate my people inward, abandoning those lands which are indefensible and relocating thier inhabitants closer to our capital. Not all will see the nessecíty of such an action though, and some disenters may prove troublesome."
+ decision_consolidate_the_realm_confirm: "Prudence must guide us"
+ decision_consolidate_the_realm_tt: "All [counties|E] in [GetPlayer.MakeScope.Var('selected_duchy').Title.GetNameNoTier] will be [devastated|E] and return to [wilderness|E], and [GetPlayer.MakeScope.Char.GetCapitalLocation.GetTitle.GetDeJureLiege.GetDeJureLiege.GetBaseNameNoTier] will recieve equal [development|E] to the lost region. #V (Currently @development_icon![GetPlayer.MakeScope.Var('selected_duchy').Title.MakeScope.Var('decision_consolidate_the_realm_total_development_variable').GetValue])#!"
+ decision_consolidate_the_realm_tt_2: "This will likely #N anger#! the local lords, and they may react #N poorly#!."
+ pick_duchy: "You must select a duchy"
+
+ # Angmar
  decision_destroy_arnor: "Уничтожить Арнор"
- decision_destroy_arnor_desc: "$PLACEHOLDER$"
- decision_destroy_arnor_confirm: "$PLACEHOLDER$"
+ decision_destroy_arnor_desc: "The acursed [dunedain|E] of [arnor|E] have too long evaded destruction, but at lost they are within our grasp. Their realm has been shattered, their people devastated, and now their heatland lies open to my armies. At last, they shall be wiped from the face of [middleearth|E]!"
+ decision_destroy_arnor_confirm: "We march to [GetTitleByKey('k_arthedain').GetHolder.GetCapitalLocation.GetTitle.GetDeJureLiege.GetBaseNameNoTierNoTooltip]!"
  decision_destroy_arnor_tooltip: "Начать войну, чтобы раз и навсегда уничтожить [Concept('dunedain', 'дунэдайн')|E]"
  arnor_holds_no_land_in_dejure_forodwaith: "[GetTitleByKey('k_arthedain').GetHolder.GetName] #N не#! владеет землями в [Concept('de_jure', 'де-юре')|E] границах #ONCLICK:TITLE,e_forodwaith #TOOLTIP:LANDED_TITLE,e_forodwaith #L Фородвайта#!#!#!"
+
+ decision_assimilation_policy: "Force Assimilation"
+ decision_assimilation_policy_desc: "[angmar|E] is not a natural realm, welded together by my dark will from many disparate tribes, and with each conquest my subjects grow ever more divided. To ensure the stability and absolute loyalty of [angmar|E], we must ensure cultural and religious homogeneity, by any means necessary."
+ decision_assimilation_policy_confirm: "They shall be united in #bold me!#!"
+ decision_assimilation_policy_tooltip: "Begin a policy of forced assimilation in your realm"
+ decision_assimilation_policy_tt: "You unlock [decisions|E] to select a favoured [culture|E] and [faith|E] from among those present in your realm."
+ decision_assimilation_policy_tt_22: "You unlock the #V $great_project_type_angmar_wars_assimilate_duchy_name$#! [great_project|E] to convert [duchies|E] in your realm to your favoured culture and faith, and convert and [tribal|E] [counties|E] to [feudal|E]"
+
+ decision_select_prefered_culture: "Select Favoured Culture"
+ decision_select_prefered_culture_desc: "Though there are many cultures in [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTier], one must rise to the top. Whoever I choose must be strong enough to wield against the [arnorians|E], and loyal enough to serve me alone."
+ decision_select_prefered_culture_confirm: "I will forge them into my blade!"
+ decision_select_prefered_culture_tooltip: "Chose one culture from your realm to favour"
+ decision_select_prefered_culture_tt: "You will convert [counties|E] in your realm to [GetPlayer.MakeScope.Var('selected_culture').Culture.GetName] when using the #V $great_project_type_angmar_wars_assimilate_duchy_name$#! [great_project|E]."
+ decision_select_prefered_culture_tt_2: "All of your vassals of [GetPlayer.MakeScope.Var('selected_culture').Culture.GetName] [culture|E] will gain #P 10#! [opinion|E] of you."
+ decision_select_prefered_culture_tt_3: "All of your vassals #V not#! of [GetPlayer.MakeScope.Var('selected_culture').Culture.GetName] [culture|E] will lose #N 20#! [opinion|E] of you."
+
+ decision_select_prefered_faith: "Selected Favoured Faith"
+ decision_select_prefered_faith_desc: "While in the past prayers to many gods and spirits rose from the hills of [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTier], the time has come to unite my realm in the worship of the dark. While there are many faith which might be turned to my purposes, selecting one orthodox rite will greatly strength my control and my subjects' loyalty."
+ decision_select_prefered_faith_confirm: "I will bind them to the Dark!"
+ decision_select_prefered_faith_tooltip: "Chose one faith from your realm to favour"
+ decision_select_prefered_faith_tt: "You convert [counties|E] in your realm to [GetPlayer.MakeScope.Var('selected_faith').Faith.GetName] when using the #V $great_project_type_angmar_wars_assimilate_duchy_name$#! [great_project|E]."
+ decision_select_prefered_faith_tt_2: "All of your vassals of [GetPlayer.MakeScope.Var('selected_faith').Faith.GetName] [faith|E] will gain #P 10#! [opinion|E] of you."
+ decision_select_prefered_faith_tt_3: "All of your vassals #V not#! of [GetPlayer.MakeScope.Var('selected_faith').Faith.GetName] [faith|E] will lose #N 20#! [opinion|E] of you."
+
+ decision_craft_morgul_blades: "Craft a $morgul_blade_name$"
+ decision_craft_morgul_blades_desc: "$PLACEHOLDER$"
+ decision_craft_morgul_blades_tooltip: "Create a sorcerous dagger artifact"
+ decision_craft_morgul_blades_confirm: "In the Darkness bind them"
+
+ ### Great Projects ###
+
+ # Assimilate Duchy
+ angmar_wars_assimilate_duchy_name: "Assimilate Duchy"
+ great_project_type_angmar_wars_assimilate_duchy: "$angmar_wars_assimilate_duchy_name$"
+ great_project_type_angmar_wars_assimilate_duchy_name: "$angmar_wars_assimilate_duchy_name$"
+ great_project_type_angmar_wars_assimilate_duchy_fallback: "$PLACEHOLDER$"
+ great_project_type_angmar_wars_assimilate_duchy_desc: "[angmar|E] exists for one purpose alone - to destroy utterly the [dunedain|E] of [arnor|E]. There is no space for dissent or disunity in that purpose, and all who would not wholy serve the [witchking|E] may serve in death, as a warning to their imitators."
+ great_project_type_angmar_wars_assimilate_duchy_contribution_enforcement_patrols: "Enforcement Patrols"
+ great_project_type_angmar_wars_assimilate_duchy_contribution_enforcement_patrols_desc: "Bands of loyal soldiers shall roam the countyside, ensure that all comply with their new practices."
+ great_project_type_angmar_wars_assimilate_duchy_contribution_send_inhabitants: "Send Inhabitants"
+ great_project_type_angmar_wars_assimilate_duchy_contribution_send_inhabitants_desc: "Targeted settlement of [GetGlobalVariable('angmar_prefered_culture').Culture.GetCollectiveNoun] will greatly speed the assimilation efforts."
+ great_project_type_angmar_wars_assimilate_duchy_contribution_send_inhabitants_2: "Send Inhabitants"
+ great_project_type_angmar_wars_assimilate_duchy_contribution_send_inhabitants_2_desc: "Targeted settlement of [GetGlobalVariable('angmar_prefered_culture').Culture.GetCollectiveNoun] will greatly speed the assimilation efforts."
+ great_project_type_angmar_wars_assimilate_duchy_contribution_investigate_improper_rites: "Investigate Improper Rites"
+ great_project_type_angmar_wars_assimilate_duchy_contribution_investigate_improper_rites_desc: "Clergy from [ROOT.Char.GetCapitalLocation.GetTitle.GetDeJureLiege.GetBaseNameNoTier] will inform the people of the proper worship of[GetPlayer.MakeScope.Var('selected_faith').Faith.HighGodName] and punish those who persist in hertical rites."
+ great_project_type_angmar_wars_assimilate_duchy_contribution_promote_faithful_relocation: "Relocate the Faithful"
+ great_project_type_angmar_wars_assimilate_duchy_contribution_promote_faithful_relocation_desc: "If some [GetGlobalVariable('angmar_prefered_faith').Faith.GetAdherentNamePlural] could be convinced to move, then they might be a strong infulence on the locals."
+ angmar_wars_assimilate_duchy_effect_tt: "[counties|E] within the target [duchy|E]:\n$EFFECT_LIST_BULLET$[cultures|E] that are not [GetGlobalVariable('angmar_prefered_culture').Culture.GetName] will be #P converted#! to [GetGlobalVariable('angmar_prefered_culture').Culture.GetCollectiveNoun]\n$EFFECT_LIST_BULLET$[faiths|E] that are not [GetGlobalVariable('angmar_prefered_faith').Faith.GetName] will be #P converted#! to [GetGlobalVariable('angmar_prefered_faith').Faith.GetAdjective]\n$EFFECT_LIST_BULLET$[tribal|E] [counties|E] will be #P converted#! to [castle_holdings|E] and [feudal|E] [government|E]\n$EFFECT_LIST_BULLET$All #P converted#! [counties|E] will lose @control_icon!#N -50#! [control|E] and gain the [GetModifier('angmar_wars_forced_assimilation').GetNameWithTooltip] [modifier|E]"
+
+ # Militarise Duchy
+ angmar_wars_militarise_duchy_name: "Militarise Duchy"
+ great_project_type_angmar_wars_militarise_duchy: "$angmar_wars_militarise_duchy_name$"
+ great_project_type_angmar_wars_militarise_duchy_name: "$angmar_wars_militarise_duchy_name$"
+ great_project_type_angmar_wars_militarise_duchy_fallback: "$angmar_wars_militarise_duchy_name$"
+ great_project_type_angmar_wars_militarise_duchy_desc: "[angmar|E] has no purpose beyond war, and those who do not contribute to the conflict have no right to remain our subjects. All must be dedicated to preparation and training for the battles to come, #high whatever#! the costs."
+ great_project_type_angmar_wars_militarise_duchy_contribution_increase_conscription: "Increased Conscription"
+ great_project_type_angmar_wars_militarise_duchy_contribution_collect_supplies: "Supply Requisitions"
+ great_project_type_angmar_wars_militarise_duchy_contribution_train_troops: "Drill Troops"
+ great_project_type_angmar_wars_militarise_duchy_contribution_increase_fortifications: "Strengthen Fortifications"
+ great_project_type_angmar_wars_militarise_duchy_contribution_increase_control: "Increase Control"
+ angmar_wars_militarise_duchy_base_modifier_tt: "Every [county|E] in targeted [duchy|E] and gains [GetModifier('angmar_wars_militarise_duchy_base_modifier').GetNameWithTooltip] and is [devastated|E] #N twice#!"
+ angmar_wars_militarise_duchy_maa_modifier_tt: "Every [province|E] in targeted [duchy|E] and in [great_project_contributor_possessive|E] [capital|E] gains [GetModifier('angmar_wars_militarise_duchy_maa_modifier').GetNameWithTooltip]"
+ angmar_wars_militarise_duchy_military_academy_modifier_tt: "#indent_newline:4 Every [county|E] [holder|E] in targeted [duchy|E]:\n$BULLET$Every [knight|E] with [commander_trait|E] gains #P [minister_exp_boost_value]#! [trait_level_track_xp|E] #weak (value is based on [martial_skill|E] of [great_project_contributor|E])#!#!"
+ angmar_wars_militarise_duchy_fort_modifier_tt: "Every [county|E] in targeted [duchy|E] and in [great_project_contributor_possessive|E] [capital|E] gains [GetModifier('angmar_wars_militarise_duchy_fort_modifier').GetNameWithTooltip]"
+ angmar_wars_militarise_duchy_control_modifier_tt: "Every [county|E] in targeted [duchy|E] and in [great_project_contributor_possessive|E] [capital|E] gains [GetModifier('angmar_wars_militarise_duchy_control_modifier').GetNameWithTooltip], gains #P [project_founded_by_minister]#! @control_icon![county_control|E] #weak (value is based on [martial_skill|E] of [great_project_contributor|E])#, and enables [absolute_control|E] for [rulers|E] within the target [duchy|E]"
+
+
+ ### Modifiers ###
+
+ angmar_wars_forced_assimilation: "Forced Assimilation"
+ angmar_wars_forced_assimilation_desc: "This [county|E] was recently forcibly assimilated, and the aftereffects still linger"
+ angmar_wars_militarise_duchy_base_modifier: "Militarised Region"
+ angmar_wars_militarise_duchy_base_modifier_desc: "All resources in this [county|E] have been devoted to the [angmar_wars|E]."
+ angmar_wars_militarise_duchy_maa_modifier: "Extensive Drills"
+ angmar_wars_militarise_duchy_maa_modifier_desc: "The soldiers stationed in this [province|E] are drilled night and day into a force capable of resisting [arnorian|E] assaults."
+ angmar_wars_militarise_duchy_fort_modifier: "Strengthened Fortifications"
+ angmar_wars_militarise_duchy_fort_modifier_desc: "Across this [county|E] walls have been repaired, patrols expanded, and supplies stockpiled in preparation for invasion."
+ angmar_wars_militarise_duchy_control_modifier: "Constant Vigilance"
+ angmar_wars_militarise_duchy_control_modifier_desc: "Nothing passes in this [county|E] unseen and unnoticed by the [witchkingshort|E]"
+
+
+
 
  effect_elven_hope_angmar_defeated: "[Concept('angmar', 'Ангмар')|E] уничтожен"
 
  effect_elven_hope_arnor_lost: "[Concept('arnor', 'Арнор')|E] пал"
+
+
+
+ valid_barony_barad_gularan: "Одно из ваших подконтрольных [Concept('counties', 'графств')|E]:\n$EFFECT_LIST_BULLET$Уровень [Concept('development', 'развития')|E] выше #V 10#!\n$EFFECT_LIST_BULLET$Имеет [Concept('holding', 'владение')|E] #V без#! ячейки [Concept('great_building', 'великого сооружения')|E]\n$EFFECT_LIST_BULLET$Не является вашим [Concept('capital', 'столичным')|E] [Concept('county', 'графством')|E]"
+
+ watch_creation_cooldown_tt: "Дозор просуществовал не менее #V 15#! лет"
+
+
+
+
+
+
+
+
+
+ devastation_map: "@realmsinexile_icon! Потенциал [Concept('devastation', 'опустошения')|E]"
+ DEVASTATION_MAP: "@realmsinexile_icon! Потенциал [Concept('devastation', 'опустошения')|E]"
+ devastation_map_desc: "@realmsinexile_icon! #T Потенциал [Concept('devastation', 'опустошения')|E]#!\nОтражает, сколько раз это графство может быть [Concept('devastated', 'опустошено')|E], прежде чем оно вернётся в состояние [Concept('wilderness', 'дебрей')|E]."
+ DEVASTATION_MAP_MODE_TOOLTIP: "#T Потенциал опустошения владения [ROOT.Province.GetCounty.GetTitle.GetName] - #V [ROOT.Province.MakeScope.Var('devastation_map_tooltip').GetValue]#!#!"
+
+
+ arnor.3001.t: "[new_prince.GetPrimaryTitle.GetBaseNameNoTier] преклоняет колени"
+ arnor.3001.desc: "Посланники вернулись с вестями, что [new_prince.GetName] [Select_CString(new_prince.IsFemale, 'признала', 'признал' )] мои притязания на власть над всем [Concept('arnor', 'Арнором')|E]. Прибыли гонцы с клятвами верности и королевскими дарами, и они с нетерпением ждут, когда вернутся с ответным одобрением и благословением в [new_prince.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier].\n\nХотя обычных формальностей было бы достаточно, есть также возможность оказать [new_prince.GetHerHim] более высокие почести в знак признания [new_prince.GetHerHis] наследия и лояльности. Я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы даровать [new_prince.GetHerHim] и [new_prince.GetHerHis] наследникам титул «принц», возвысив их над всеми остальными моими вассалами и предоставив большую автономию, как и подобает гордым #L [new_prince.GetPrimaryTitle.GetAdjective|l]им#! землям."
+ arnor.3001.a: "Такая верность должна быть вознаграждена."
+ arnor.3001.b: "В дальнейших почестях нет необходимости."
+ arnor.3001.a.tt: "Вы окажете дому [new_prince.GetHouse.GetName] княжеские почести"
+
+ arnor.3002.opening: "Верный принц Кардолана,"
+ arnor.3002.desc: "В знак признания вашего древнего происхождения и вашего расторопного и лояльного принятия наших королевских притязаний как короля всего Арнора, мы рады даровать вам и вашим наследникам, пока будет продолжаться ваш род, титул #high «принцев Кардолана»#! и все достоинства и почести, которые причитаются этому высокому титулу."
+ arnor.3002.a: "Мой сюзерен."
+
+ arnor.3003.opening: "Король Артедайна,"
+ arnor.3003.desc: "После смерти #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('lineisildur11').GetID] #L короля Эарендура#!#! его сыновья пришли к соглашению, что каждый из них имеет право на своё собственное королевство, навсегда независимое и отличное от других. Время не изменило эту истину, и притязания на верховенство над всем Арнором являются нарушением тех первых договоров. Мы отвергаем ваши притязания на положение единоличных наследников рода Исильдура и не ставим вас выше по знатности или чести, чтобы отказаться от своего законного правления."
+ arnor.3003.a: "Глупцы и изменники!"
+
+
+
+ lotr_intro_events.6010.a.tt: "Вы выдвинете претензии на титул короля Арнора и потребуете клятв верности как от Кардолана, #P так и#! от Рудаура"
+ lotr_intro_events.6010.b.tt: "Вы выдвинете претензии на титул короля Арнора и потребуете клятв верности #N только#! от Кардолана"
+ lotr_intro_events.6010.c.tt: "Вы выдвинете претензии на титул короля Арнора и потребуете клятв верности #N только#! от Рудаура"
+ lotr_intro_events.6010.d.tt: "Вы #N не станете#! претендовать на Арнор"
+
+
+
+ princely_house_of_rhudaur: "Княжеский дом Рудаура"
+ princely_house_of_rhudaur_desc: "Этому дому были оказаны княжеские почести из-за их готовности признать истинных королей Арнора."
+
+
+
+ decision_esteldirs_plea: "Petition the King"
+ decision_esteldirs_plea_desc: ""
+ decision_esteldirs_plea_tooltip: ""
+ decision_esteldirs_plea_confirm: ""
+ decision_esteldirs_plea_tt: ""
