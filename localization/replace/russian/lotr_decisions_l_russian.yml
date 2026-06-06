@@ -2897,6 +2897,14 @@
  gundabad_kingdom_doesnt_exist_or_is_dwarven: "В [Concept('gundabad', 'Гундабаде')|E] нет [Concept('orcish', 'орочьих')|E] [Concept('kingdom', 'королевств')|E]"
  decision_integrate_gundalok_tt: "Перевал Гундабад усмирён"
 
+ decision_secure_the_high_pass: "Захватить Высокий перевал"
+ decision_secure_the_high_pass_desc: "Высокий перевал - один из самых важных путей через [Concept('mistymountains', 'Мглистые горы')|E], и всё же ему часто угрожают мерзкие [Concept('goblins', 'гоблины')|E], которые устраивают засады на путешественников из своих скрытых пещер и логовищ. Если бы нам удалось обрушить эти пещеры, мы могли бы гарантировать, что орочьи налётчики больше не спустятся с гор, чтобы опустошать наши земли, и, возможно, даже обеспечили бы себе плацдарм в горах."
+ decision_secure_the_high_pass_tooltip: "Обрушить пещеры гоблинов на Высоком перевале"
+ decision_secure_the_high_pass_confirm: "Пусть горы поглотят их навсегда!"
+ must_hold_one_county_high_pass: "Вы владеете хотя бы 1 [Concept('county', 'графством')|E] в провинции #high [GetTitleByKey('d_high_pass').GetName]#!."
+ get_high_pass_secured_modifier: "Все [Concept('province', 'провинции')|E] во владении #high [GetTitleByKey('d_high_pass').GetName]#! получат [Concept('modifier', 'модификатор')|E] «[GetModifier('secured_high_pass_modifier').GetNameWithTooltip]» на 25 лет."
+ decision_secure_the_high_pass_tt: "Высокий перевал захвачен"
+
  ##############################
  #### Dol Amroth Decisions ####
  ##############################
@@ -2979,6 +2987,11 @@
  decision_reclaim_rhovanion_plains_confirm: "Равнины снова наши!"
 
  rhovanion_resettlement_culture_counties_custom: "Каждое [county|El] с истерлингским и северным [Concept( 'heritage', 'наследием' )|E] в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('custom_plains_rhovanion').GetName]"
+
+ decision_claim_rhovanion_empire: "Претендовать на равнины Рованиона"
+ decision_claim_rhovanion_empire_desc: "[Concept('rhovanion_kingdom', 'Королевство Рованион')|E] существует уже много лет, но земли равнин остаются разделёнными и оспариваемыми. Если мы сможем успешно заявить права на все земли между [Concept('greenwood', 'Зеленолесьем')|E] и рекой Бегущей, объединив их под одним знаменем, наследие Видугавии и законная власть над [Concept('rhovanion', 'Рованионом')|E] действительно будут моими."
+ decision_claim_rhovanion_empire_tooltip: "Предъявить претензии на весь [Concept('rhovanion', 'Рованион')|E]"
+ decision_claim_rhovanion_empire_confirm: "Равнины должны объединиться!"
 
  decision_rhovanion_hegemony: "Основать величайшее королевство северян"
  decision_rhovanion_hegemony_tooltip: "Объединить все державы [Concept('northmen', 'северян')|E]" 
@@ -3648,6 +3661,12 @@
  tom_arken: "[GetTitleByKey('b_arkenhalls').GetNameNoTier] контролируется #Bold 10#! лет"
 
  colonises_erebor: "[GetTitleByKey('b_throne_of_erebor').GetNameNoTier] переходит к вам"
+
+ decision_become_erebor_king: "Провозгласить себя [Select_CString(ROOT.Char.IsFemale, 'королевой', 'королём' )]-под-Горой"
+ decision_become_erebor_king_desc: "[Concept('erebor', 'Эребор')|E] на протяжении долгих веков был не более чем перевалочным пунктом на пути из [Concept('khazaddum', 'Кхазад-дума')|E] в [Concept('ironhills', 'Железные холмы')|E]. Но потенциал горы не только в этом. Это самая высокая и величественная из всех жемчужин Севера, и она могла бы стать прекрасным бастионом, из которого можно контролировать торговлю и оказывать влияние на окружающие земли. И кто лучше справится с правлением этой новой державой, чем... я?"
+ decision_become_erebor_king_tooltip: "Провозгласить себя [Concept('king', 'королём')|E] [Concept('erebor', 'Эребора')|E]"
+ decision_become_erebor_king_confirm: "Сегодня начинается моё правление."
+ decision_become_erebor_king_tt: "Король-под-Горой"
 
  restore_king_title: "Восстановить родовую власть"
  restore_king_title_tooltip: "Провозгласить себя [Select_CString(ROOT.Char.IsFemale, 'королевой', 'королём' )]"
