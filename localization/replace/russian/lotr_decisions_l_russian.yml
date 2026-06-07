@@ -652,6 +652,21 @@
  decision_adopt_arnorian_culture_province_custom: "Каждое [county|El] в пределах вашей [Concept('realm', 'державы')|E] с происходящей от арнорской культурой"
  decision_adopt_arnorian_culture_get_innovations: "Арнорская [Concept('culture', 'культура')|E] получит все #L [culture.GetCollectiveNoun|l]ие#! [Concept('innovations', 'инновации')|E]"
 
+ decision_adopt_new_arnorian_culture: "Создать ново-арнорскую культуру"
+ decision_adopt_new_arnorian_culture_desc: "Когда-то люди [Concept('arnor', 'Арнора')|E] собирали могучие воинства и правили великими королевствами. Увы, столетия войн, разрухи и упадка превратили их в тех, кем они стали, - странников в дебрях, известных немногим и уважаемых ещё меньшим числом людей. Хотя такой образ жизни провёл [Concept('dunedain', 'дунэдайн')|E] Арнора через долгие годы лишений, он также привёл к тому, что они утратили связь со многими обычаями и традициями своих предков.\n\nОднако с воссоединением Арнора и [Concept('gondor', 'Гондора')|E] началась новая эпоха. Большое количество [Concept('gondorians', 'гондорцев')|E] поселилось в северных землях, и народы двух королевств всё больше смешивались. В результате этого союза в Арноре возникла обновлённая культура, сочетающая в себе стойкость и независимость северных дунэдайн с образованностью, традициями и государственным искусством юга."
+ decision_adopt_new_arnorian_culture_confirm: "Воспряньте, сыны Арнора!"
+ decision_adopt_new_arnorian_culture_tooltip: "Принять ново-арнорскую культуру"
+ decision_adopt_new_arnorian_culture_courtier_custom: "Все [Concept('courtier', 'придворные')|E] с происходящей от арнорской культурой"
+ decision_adopt_new_arnorian_culture_vassal_custom: "Все [Concept('vassal', 'вассалы')|E] с происходящей от арнорской культурой"
+ decision_adopt_new_arnorian_gondorian_culture_vassal_custom: "Все [Concept('vassal', 'вассалы')|E] в [Concept('arnor', 'Арноре')|E] с [Concept('gondorian', 'гондорской')|E] [Concept('culture', 'культурой')|E]"
+ decision_adopt_new_arnorian_culture_province_custom: "Все [Concept('county', 'графства')|E] в вашей [Concept('realm', 'державе')|E] с происходящей от арнорской культурой"
+ decision_adopt_new_arnorian_gondorian_culture_province_custom: "Все [Concept('county', 'графства')|E] в [Concept('arnor', 'Арноре')|E] с [Concept('gondorian', 'гондорской')|E] [Concept('culture', 'культурой')|E]"
+ decision_adopt_new_arnorian_culture_get_innovations: "Ново-арнорская [Concept('culture', 'культура')|E] получает все #L [culture.GetCollectiveNoun|l]ие#! [Concept('innovations', 'инновации')|E]"
+ all_unlanded_family_members_new_arnor: "Все безземельные [Concept('family_members', 'члены семьи')|E] [Select_CString(THIS.GetCharacter.IsLocalPlayer, '', 'персонажа ' )][THIS.GetCharacter.GetShortUINamePossessive][Select_CString(THIS.GetCharacter.IsLocalPlayer, 'его персонажа', '' )] с происходящей от арнорской культурой"
+ owns_40_percent_of_arnor: "Вы должны контролировать не менее #V 20%#! [Concept('counties', 'графств')|E] [Concept('region', 'региона')|E] [GetGeographicalRegion('middleearth_west_arnor').GetName]"
+
+
+
  decision_integrate_the_northern_provinces: "Интегрировать северные провинции"
  decision_integrate_the_northern_provinces_desc: "Самый дальний север лишь номинально входил в состав Северного королевства, а после [Concept('lastalliance', 'Войны Последнего союза')|E] у [Concept('arnor', 'Арнора')|E] не хватило сил заявить о своих притязаниях. Именно в этом вакууме [Concept('witchking', 'Король-чародей')|E] создал ужасающее королевство [Concept('angmar', 'Ангмар')|E].\n\nЕсли северные пустоши наконец-то окажутся под контролем [Concept('dunedain', 'дунэдайн')|E], их можно будет подчинить Скипетру как в теории, так и на практике, а любая угроза с севера будет отведена навеки."
  decision_integrate_the_northern_provinces_tooltip: "Включить северные пустоши в свои де-юре территории"
@@ -900,8 +915,8 @@
  decision_reunify_dunedain_tooltip: "Мы - [dunedain|El]."
  decision_reunify_dunedain_confirm: "Мы - дунэдайн."
  decision_reunify_dunedain_get_innovations: "#L [dunedain_culture.GetCollectiveNoun]ая#! [culture|El] получит все #L [arnorian_culture.GetCollectiveNoun|l]ие#! и #L [gondorian_culture.GetCollectiveNoun|l]ие#! [innovations|El]"
- decision_reunify_dunedain_vassals_custom: "Каждый $arnorian_collective_noun$ий и $gondorian_collective_noun$ий [vassal|El]"
- decision_reunify_dunedain_counties_custom: "Каждое $arnorian_collective_noun$ое и $gondorian_collective_noun$ое [county|El] в вашей [Concept('realm', 'державе')|E]"
+ decision_reunify_dunedain_vassals_custom: "Каждый $arnorian_collective_noun$ий и $gondorian_collective_noun$ий [character|El]"
+ decision_reunify_dunedain_counties_custom: "Каждое $arnorian_collective_noun$ое и $gondorian_collective_noun$ое [county|El]"
 
  decision_reclaim_royal_lineage: "Восстановить королевский род дунэдайн"
  decision_reclaim_anarion_lineage: "$decision_reclaim_royal_lineage$"
@@ -1461,6 +1476,16 @@
  decision_eira_kingdom_tooltip: "Провозгласить себя королевой, стремясь объединить весь [Concept('enedhwaith', 'Энедвайт')|E] под своей властью."
  decision_eira_kingdom_tt: "Вы убедили всех вождей поддержать вас"
  has_found_tharbad_proof: "Вы расследовали убийство Бранта"
+
+ decision_eira_open_war: "Рискнуть открытой войной с Тарбадом"
+ decision_eira_open_war_desc: "Тарбад - самый большой город в [Concept('enedhwaith', 'Энедвайте')|E] и средоточие власти гондорского губернатора. Если бы я [Select_CString(ROOT.Char.IsFemale, 'объявила', 'объявил' )] открытую войну Тарбаду, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы нанести удар в самое сердце их власти в регионе и потенциально нанести сокрушительный удар по их власти над Энедвайтом. Однако это был бы смелый и рискованный шаг, поскольку Тарбад хорошо укреплён и имеет сильное военное присутствие. Но всё же, пока этот гондорский пёс жив, моя месть не будет полной. Тарбад должен быть взят любыми доступными средствами!"
+ decision_eira_open_war_confirm: "Созвать знамёна."
+ decision_eira_open_war_tooltip: "Объявить войну Тарбаду"
+
+ decision_eira_assassination: "Убить губернатора Тарбада"
+ decision_eira_assassination_desc: "Губернатор Тарбада - самая могущественная фигура в [Concept('enedhwaith', 'Энедвайте')|E], и именно он отравил моего отца. Если бы я [Select_CString(ROOT.Char.IsFemale, 'убила', 'убил' )] его, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы нанести существенный удар по гондорской власти в регионе и отомстить за смерть моего отца. Однако это был бы рискованный шаг, поскольку губернатор хорошо защищён и у него много преданных сторонников. Тем не менее, если я смогу осуществить задуманное, это послужит серьёзным сигналом для народов Энедвайта и потенциально ослабит власть гондорцев в регионе."
+ decision_eira_assassination_confirm: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] быть [Select_CString(ROOT.Char.IsFemale, 'мягка и быстра', 'мягок и быстр' )], как тень."
+ decision_eira_assassination_tooltip: "Убить персонажа [GetTitleByKey('c_harabad').GetHolder.GetTitledFirstName]"
 
  #######################
  ### Shire Decisions ###
@@ -2621,6 +2646,10 @@
  decision_build_ghaesch_kanra_fortress_desc: "Нашему королевству постоянно угрожает могучая восточная империя Кхай. Если мы хотим остановить их неизбежные вторжения на наши территории из земель Ашанура, мы должны построить укрепления, подобные Тёмной цитадели Абрахана. Полчища дикарей будут остановлены нашими высокими стенами, если они придут к нам."
  decision_build_ghaesch_kanra_fortress_confirm: "Никто не пройдёт с востока незамеченным."
 
+ decision_haradrim_viceroy: "Сформировать Южную конфедерацию"
+ decision_haradrim_viceroy_tooltip: "Стать [Select_CString(ROOT.Char.IsFemale, 'полномочной вице-королевой', 'полномочным вице-королём' )] под властью [Concept('gondor', 'Гондора')|E]"
+ decision_haradrim_viceroy_desc: "Мощь [Concept('gondor', 'Гондора')|E] неоспорима, и их влияние на Южные земли неоспоримо. И всё же, есть возможности работать с ними, а не против них. Если бы я [Select_CString(ROOT.Char.IsFemale, 'стала полномочной вице-королевой', 'стал полномочным вице-королём' )] под властью Гондора, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы получить доступ к их ресурсам и поддержке, сохраняя при этом определённую автономию в своих владениях. Это был бы хрупкий баланс, но в долгосрочной перспективе он мог бы окупиться."
+ decision_haradrim_viceroy_confirm: "Я отправлюсь в Белый город."
 
  ##################################
  #### Arysis / Maresh Decisions ###
@@ -2882,6 +2911,13 @@
  decision_angmar_dominion_over_langwell_confirm: "Confirm"
  decision_angmar_dominion_over_langwell_effect_tt: "Вы выберете, в какой мере эксплуатировать землю и людей."
  decision_angmar_dominion_over_langwell_requirement: "В регионе [GetTitleByKey('k_langwell').GetName] нет независимых правителей."
+ unlock_anduin_lowlands_decision: "Открывает [Concept('decision', 'решение')|E] «[GetDecision('decision_angmar_anduin_lowlands').GetName]»"
+
+ decision_angmar_anduin_lowlands: "Претендовать на низменности Андуина"
+ decision_angmar_anduin_lowlands_tooltip: "Tooltip"
+ decision_angmar_anduin_lowlands_desc: "Desc"
+ decision_angmar_anduin_lowlands_confirm: "Confirm"
+ nobody_holds_anduin_vale_kingdom: "Титул [GetTitleByKey('k_anduin_vale').GetName] не был создан"
 
  decision_kultamieli_raid_taurau: "Попытаться устроить засаду на Рикульфо"
  decision_kultamieli_raid_taurau_tooltip: "Tooltip"
@@ -2904,6 +2940,12 @@
  must_hold_one_county_high_pass: "Вы владеете хотя бы 1 [Concept('county', 'графством')|E] в провинции #high [GetTitleByKey('d_high_pass').GetName]#!."
  get_high_pass_secured_modifier: "Все [Concept('province', 'провинции')|E] во владении #high [GetTitleByKey('d_high_pass').GetName]#! получат [Concept('modifier', 'модификатор')|E] «[GetModifier('secured_high_pass_modifier').GetNameWithTooltip]» на 25 лет."
  decision_secure_the_high_pass_tt: "Высокий перевал захвачен"
+
+ decision_khazad_dum_trade: "Наладить торговлю с Кхазад-думом"
+ decision_khazad_dum_trade_desc: "Давным-давно [Concept('dwarves', 'гномы')|E] [Concept('khazaddum', 'Кхазад-дума')|E] и [Concept('men', 'люди')|E] из [Concept('anduinvale', 'Долины Андуина')|E] были союзниками и свободно торговали друг с другом. Гномы делились своим превосходным мастерством в изготовлении оружия и доспехов, а люди снабжали их едой и припасами, которые не растут в их каменных чертогах.\n\nВозможно, пришло время возродить это древнее соглашение?"
+ decision_khazad_dum_trade_tooltip: "Начать торговать с [Concept('dwarves', 'гномами')|E] [Concept('khazaddum', 'Кхазад-дума')|E]"
+ decision_khazad_dum_trade_confirm: "Отправить предложение."
+ decision_moria_trade_border_moria_or_lorien: "Ваша [Concept('realm', 'держава')|E] граничит с [Concept('khazaddum', 'Кхазад-думом')|E] или [Concept('lorien', 'Лориэном')|E]"
 
  ##############################
  #### Dol Amroth Decisions ####
