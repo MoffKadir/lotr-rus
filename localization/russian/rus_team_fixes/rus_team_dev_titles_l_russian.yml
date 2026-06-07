@@ -910,24 +910,24 @@
  decision_craft_barrow_blades_desc: "Хотя [Concept('westernesse', 'Вестернессе')|E] давным-давно ушла под воду, память о ней всё ещё жива. Здесь, в [Concept('arnor', 'Арноре')|E], сохранилась некоторая доля её мастерства, и здесь живут могучие кузнецы, обученные древним знаниям. Перед лицом такого ужасного врага, как Повелитель [Concept('angmar', 'Ангмара')|E], не хватит ничего, кроме тончайшего из наших клинков, сотканного из заклинаний для уничтожения его [Concept('nazgul', 'неживых')|E] слуг. Возможно, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы поручить одному из своих придворных изготовить такой кинжал или даже [Select_CString(ROOT.Char.IsFemale, 'сама', 'сам' )] взяться за молот."
  decision_craft_barrow_blades_confirm: "Мудрость [Concept('numenor', 'Нуменора')|E] ещё не утрачена полностью."
 
- decision_sponsor_ranger_company: "Sponsor Ranger Company"
- decision_sponsor_ranger_company_tooltip: "Create a Ranger Landless Adventurer"
- decision_sponsor_ranger_company_desc: "In these dark days, there are still some who wish to venture beyond our high walls and strike at the heart of our enemy. Were I to give these brave men funds and an offical commision, they might do great deads in defense of [ROOT.Char.GetPrimaryTitle.GetNameNoTier]."
- decision_sponsor_ranger_company_confirm: "Go forth and defend [arnor|E]!"
- decision_sponsor_ranger_company_tt: "You will create and fund a [GetGovernment('landless_adventurer_government').GetName] with the [GetLaw('camp_purpose_rangers').GetName] [camp_purpose|E]. You will be presented with a set of candidates to chose as captain of the new [camp|E]."
+ decision_sponsor_ranger_company: "Проспонсировать отряд следопытов"
+ decision_sponsor_ranger_company_tooltip: "Создать авантюриста-следопыта"
+ decision_sponsor_ranger_company_desc: "В эти мрачные дни всё ещё есть те, кто хочет выйти за пределы наших высоких стен и нанести удар в сердце нашего врага. Если бы я [Select_CString(ROOT.Char.IsFemale, 'дала', 'дал' )] этим храбрым людям средства и официальное поручение, они могли бы пойти на великие жертвы ради защиты державы [ROOT.Char.GetPrimaryTitle.GetNameNoTier]."
+ decision_sponsor_ranger_company_confirm: "Вперёд и защитите [Concept('arnor', 'Арнор')|E]!"
+ decision_sponsor_ranger_company_tt: "Вы создадите и проспонсируете #TOOLTIP:GOVERNMENT_TYPE,landless_adventurer_government #L авантюриста#!#! с [Concept('camp_purpose', 'архетипом лагеря')|E] «[GetLaw('camp_purpose_rangers').GetName]». Вам будет представлен список кандидатов на должность капитана нового [Concept('camp', 'лагеря')|E]."
 
- decision_consolidate_the_realm: "Consolidate the Realm"
- decision_consolidate_the_realm_tooltip: "Pull back your people from the borderlands"
- decision_consolidate_the_realm_desc: "As the [angmar_wars|E] drag on, I find [ROOT.Char.GetPrimaryTitle.GetNameNoTier] growing more and more incapable of defending its far-flung bounds. Should this steady decline continue, we risk those lands falling into [devastation|E] and their people lost.\n\nThe realm can ill afford such waste, and therefore it may be prudent to consolidate my people inward, abandoning those lands which are indefensible and relocating thier inhabitants closer to our capital. Not all will see the nessecíty of such an action though, and some disenters may prove troublesome."
- decision_consolidate_the_realm_confirm: "Prudence must guide us"
- decision_consolidate_the_realm_tt: "All [counties|E] in [GetPlayer.MakeScope.Var('selected_duchy').Title.GetNameNoTier] will be [devastated|E] and return to [wilderness|E], and [GetPlayer.MakeScope.Char.GetCapitalLocation.GetTitle.GetDeJureLiege.GetDeJureLiege.GetBaseNameNoTier] will recieve equal [development|E] to the lost region. #V (Currently @development_icon![GetPlayer.MakeScope.Var('selected_duchy').Title.MakeScope.Var('decision_consolidate_the_realm_total_development_variable').GetValue])#!"
- decision_consolidate_the_realm_tt_2: "This will likely #N anger#! the local lords, and they may react #N poorly#!."
- pick_duchy: "You must select a duchy"
+ decision_consolidate_the_realm: "Консолидировать державу"
+ decision_consolidate_the_realm_tooltip: "Отозвать ваш народ из приграничья"
+ decision_consolidate_the_realm_desc: "По мере того, как [Concept('angmar_wars', 'Ангмарские войны')|E] затягиваются, я нахожу, что держава [ROOT.Char.GetPrimaryTitle.GetNameNoTier] становится всё более и более неспособной защищать свои обширные границы. Если этот устойчивый спад продолжится, мы рискуем, что эти земли подвергнутся [Concept('devastation', 'опустошению')|E], а их жители погибнут.\n\nДержава не может позволить себе такое расточительство, и поэтому, возможно, будет разумно объединить мой народ внутри страны, оставив те земли, которые невозможно защитить, и переселив их жителей поближе к нашей столице. Однако не все поймут необходимость такого шага, и некоторые несогласные могут доставить неприятности."
+ decision_consolidate_the_realm_confirm: "Нами должно руководить благоразумие."
+ decision_consolidate_the_realm_tt: "Все [Concept('counties', 'графства')|E] в провинции [GetPlayer.MakeScope.Var('selected_duchy').Title.GetNameNoTier] будут [Concept('devastated', 'опустошены')|E] и вернутся в состояние [Concept('wilderness', 'дебрей')|E], а [GetPlayer.MakeScope.Char.GetCapitalLocation.GetTitle.GetDeJureLiege.GetDeJureLiege.GetBaseNameNoTier] получит [Concept('development', 'развитие')|E] в размере развития потерянного региона. #V (Текущее значение - @development_icon![GetPlayer.MakeScope.Var('selected_duchy').Title.MakeScope.Var('decision_consolidate_the_realm_total_development_variable').GetValue])#!"
+ decision_consolidate_the_realm_tt_2: "Это, скорее всего, #N разозлит#! местных властителей, и они могут #N плохо#! отреагировать."
+ pick_duchy: "Вы должны выбрать герцогство"
 
  # Angmar
  decision_destroy_arnor: "Уничтожить Арнор"
- decision_destroy_arnor_desc: "The acursed [dunedain|E] of [arnor|E] have too long evaded destruction, but at lost they are within our grasp. Their realm has been shattered, their people devastated, and now their heatland lies open to my armies. At last, they shall be wiped from the face of [middleearth|E]!"
- decision_destroy_arnor_confirm: "We march to [GetTitleByKey('k_arthedain').GetHolder.GetCapitalLocation.GetTitle.GetDeJureLiege.GetBaseNameNoTierNoTooltip]!"
+ decision_destroy_arnor_desc: "Проклятые [Concept('dunedain', 'дунэдайн')|E] [Concept('arnor', 'Арнора')|E] слишком долго избегали уничтожения, но в конце концов они в пределах нашей досягаемости. Их держава разгромлена, их народ опустошён, и теперь сердце их земель открыто для моих армий. Наконец-то они будут стёрты с лица [Concept('middleearth', 'Средиземья')|E]!"
+ decision_destroy_arnor_confirm: "Мы выступаем на [GetTitleByKey('k_arthedain').GetHolder.GetCapitalLocation.GetTitle.GetDeJureLiege.GetBaseNameNoTierNoTooltip]!"
  decision_destroy_arnor_tooltip: "Начать войну, чтобы раз и навсегда уничтожить [Concept('dunedain', 'дунэдайн')|E]"
  arnor_holds_no_land_in_dejure_forodwaith: "[GetTitleByKey('k_arthedain').GetHolder.GetName] #N не#! владеет землями в [Concept('de_jure', 'де-юре')|E] границах #ONCLICK:TITLE,e_forodwaith #TOOLTIP:LANDED_TITLE,e_forodwaith #L Фородвайта#!#!#!"
 
@@ -1065,7 +1065,7 @@
 
 
 
- decision_esteldirs_plea: "Petition the King"
+ decision_esteldirs_plea: "Обратиться к королю"
  decision_esteldirs_plea_desc: ""
  decision_esteldirs_plea_tooltip: ""
  decision_esteldirs_plea_confirm: ""
