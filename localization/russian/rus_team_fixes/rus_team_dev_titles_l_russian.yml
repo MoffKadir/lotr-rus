@@ -237,6 +237,151 @@
  lotr_intro_events.8001.a: "#italic Я#! - король! #italic Единственный#! король!"
  tanturak_civil_war_rebellion_danger: "#N До тех пор, пока продолжается гражданская война за #V [GetTitleByKey('k_tanturak').GetNameNoTier]#!, оба королевства будут медленно, но верно распадаться под тяжестью восстания коренного населения. #V Через 10 лет, если гражданская война не закончится, ничего не останется.#!#!"
 
+ lotr_intro_events.8002.t: "Разрывая цепи"
+ lotr_intro_events.8002.desc: "В течение двух тысяч лет жестокие тантуракцы правили как тираны коренными народами #ONCLICK:TITLE,e_usakan #TOOLTIP:LANDED_TITLE,e_usakan #L Юсакана#!#!#!, несмотря на бесчисленные восстания коренного населения, которые сотрясали их королевство. Тем не менее, несмотря на постоянную угрозу восстаний рабов, властители #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантурака#!#!#! почти всю свою историю грызлись между собой и боролись за корону.\n\nИ вновь [GetTitleByKey('k_tanturak').GetNameNoTier] погрузился в гражданскую войну, но на этот раз, похоже, она может оказаться последней. Кровь древнего [Concept('numenor', 'Нуменора')|E] почти угасла: зло тантуракцев и их жестокая политика сломили многие из тех немногих адунайских родов, которые населяли королевство.\n\nНа окраине #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантурака#!#!#!, [you.GetTitledFirstName] [Select_CString(you.IsFemale, 'пришла', 'пришёл' )], чтобы возглавить мятежников, которые уже захватили старое тантуракское владение [GetTitleByKey('d_okan').GetNameNoTier]. По мере того, как по всему #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантураку#!#!#! разгорается гражданская война, многострадальные юсаканцы, возможно, скоро наконец-то обретут свободу."
+ lotr_intro_events.8002.a: "Наши цепи разорваны! Смерть адунайцам!"
+
+ decision_flee_tanturak: "Бежать из Тантурака"
+ decision_flee_tanturak_tooltip: "Бежать из рушащегося #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантурака#!#!#! в надежде восстановить своё положение в другом месте."
+ decision_flee_tanturak_desc: "Год за годом становится всё яснее, что [GetTitleByKey('k_tanturak').GetNameNoTier], каким мы его помним, обречён. Крепость за крепостью, плантация за плантацией переходят в руки юсаканских мятежников, а все тантуракцы, обнаруженные их налётчиками, жестоко убиваются. Как скоро мои рабы присоединятся к их восстанию? Как скоро я и мои родичи станем теми, на кого обрушится гнев наших некогда покорных слуг?\n\nМне кажется очевидным: единственный способ выжить в ближайшие годы - это покинуть [GetTitleByKey('k_tanturak').GetNameNoTier] и попытаться восстановить своё положение в другом месте. Есть ещё много мест, где мощь [Concept('adunai', 'адунайцев')|E] не ослабла или где, в конце концов, ищут нашу силу."
+ decision_flee_tanturak_confirm: "Здесь у меня нет будущего..."
+ tanturak_fleeing_choice: "Вы сами решите, куда бежать, и составите свой план на будущее."
+ tanturak_fleeing_duke: "Став [Concept('adventurer', 'авантюристом')|E], вы получите #V 600 золота#!. Вы также получите армию из #V 240 солдат#!, которые присоединятся к вам в изгнании."
+ tanturak_fleeing_count: "Став [Concept('adventurer', 'авантюристом')|E], вы получите #V 300 золота#!. Вы также получите армию из #V 80 солдат#!, которые присоединятся к вам в изгнании."
+
+ lotr_story_cycle_fall_of_tanturak: "Падение Тантурака"
+ lotr_story_cycle_fall_of_tanturak_desc: "В то время как [GetTitleByKey('k_tanturak').GetNameNoTier] погряз в самой кровопролитной гражданской войне за всю свою долгую историю переворотов и междоусобиц, кажется, что королевство вскоре может кануть в лету. В то время как правители Тантурака грызутся между собой, а те, кто достаточно мудр, чтобы предвидеть свою гибель, бегут к более безопасным берегам, долгое время угнетаемые юсаканцы восстают во всё большем количестве, стремясь свергнуть своих [Concept('adunaic', 'адунайских')|E] тиранов."
+ tanturak_kings: "Соперничающие короли"
+ usakani_rebels: "Воинство разорванных цепей"
+ time_until_collapse: "Оставшиеся годы до краха #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантурака#!#!#!"
+ 0_years_left: "#difficulty_hard Неминуемый крах#!"
+ 10_years_left: "#difficulty_easy 10 лет до краха#!"
+
+ CONFEDERATION_NAME_USAKANI_LIBERATION_FRONT: "Воинство разорванных цепей"
+
+ tanturak_civil_war_cb: "Тантуракская гражданская война"
+ TANTURAK_CIVIL_WAR_NAME: "Тантуракская гражданская война"
+
+ usakani_slave_uprising_cb: "Подавить восстание рабов"
+ USAKANI_UPRISING_WAR_NAME: "Юсаканское восстание рабов"
+ USAKANI_UPRISING_WAR_NAME_BASE: "Юсаканское восстание рабов"
+ USAKANI_UPRISING_CB_NAME: "Юсаканское восстание рабов"
+
+ slave_uprising_dammage: "Недавнее восстание рабов"
+ slave_uprising_dammage_desc: "Великое восстание рабов потрясло это графство, и хотя оно было подавлено, оно нанесло огромный ущерб региону."
+
+ is_anti_adunai_faith_name: "Адунайские цепи"
+ special_doctrine_is_anti_adunai_faith_name: "Адунайские цепи"
+ special_doctrine_is_anti_adunai_faith_desc: "На протяжении многих поколений наш народ трудился под жестокими ударами адунайских кнутов. Пока существуют эти тираны, наши народы навсегда останутся врагами."
+
+ doctrine_parameter_hostility_override_tenet_adunaic_birthright: "Конфессии с [Concept('core_tenet', 'догматом')|E] #high Право первородства адунай#! воспринимаются как $hostility_evil_tooltippable$"
+
+
+
+ fall_of_tanturak_end: "#N Падение Тантурака#! подошло #V к концу#!"
+ tanturaki_rebel_war_risk: "#N Все прочие юсаканские мятежники в #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантураке#!#!#! присоединятся к этой войне против вас. Поражение в этой войне приведёт к полному краху вашего королевства.#!"
+
+ fall_of_tanturak.0001.t: "Иго выстояло"
+ fall_of_tanturak.0001.desc: "Несмотря на хаос, охвативший [tanturak.GetNameNoTier] во время изнурительной гражданской войны, королевство вновь оказалось под властью [Select_CString(tanturak_king.IsFemale, 'одной королевы', 'одного короля' )]. С учётом того, что половина старой знати подверглась чистке и, несомненно, будет заменена новыми лоялистами, [tanturak_king.GetTitledFirstName] [Select_CString(tanturak_king.IsFemale, 'укрепила', 'укрепил' )] свою власть над тантуракцами.\n\nТем не менее, несмотря на эту победу и окончание гражданской войны, большая часть державы [tanturak.GetNameNoTier] остаётся в руках местных мятежников. Пройдёт много времени, прежде чем королевство Ар-Киньярн вновь станет единым целым - если оно вообще когда-либо будет единым, - но угроза полного краха устранена, по крайней мере, на данный момент."
+ fall_of_tanturak.0001.a: "Никому не выстоять против адунайцев!"
+ fall_of_tanturak.0001.b: "Мы никогда не склонимся перед этим тираном!"
+ fall_of_tanturak.0001.c: "Мрачный день для рабов Тантурака..."
+ fall_of_tanturak.0001.d: "Никогда ничего не случается..."
+
+ fall_of_tanturak.0002.t: "Поход рабов"
+ fall_of_tanturak.0002.desc: "#Xlight Тантурака больше нет.#! Раздавленные под гнётом своих восставших рабов и собственных саморазрушительных амбиций, тантуракцы не смогли спасти свою корону от бесчисленных врагов как внутри державы, так и за её пределами. Юсаканцы уже начали жестокие репрессии против всех адунайцев, которым не удалось бежать из рушащегося королевства: две тысячи лет рабства породили в них глубокую ненависть к своим тантуракским угнетателям.\n\nПо всему адунайскому миру распространяется весть о падении королевства [tanturak.GetNameNoTier], словно это пророчество о грядущей страшной гибели. И всё же, какими бы могущественными они ни были, никто не может восстановить [tanturak.GetNameNoTier] из могилы. Время покажет, стало ли это началом конца для адунайцев, или падение тантуракцев было просто платой за их жестокость."
+ fall_of_tanturak.0002.a: "Без своих хозяев юсаканцы быстро падут..."
+ fall_of_tanturak.0002.b: "Свобода! Наконец-то!"
+ fall_of_tanturak.0002.c: "Тьма развеялась, но её падение было кровавым..."
+ fall_of_tanturak.0002.d: "Стоит ли мне беспокоиться?"
+
+ fall_of_tanturak.0003.t: "Тантурак пал?"
+ fall_of_tanturak.0003.desc: "Пока мелкие властители Тантурака перегрызлись между собой, а их юсаканские рабы взялись за оружие, чтобы свергнуть их, [tanturak_king.GetTitledFirstName] [Select_CString(tanturak_king.IsFemale, 'воспользовалась', 'воспользовался' )] этим хаосом, чтобы завоевать [tanturak.GetNameNoTier] из-под носа у враждующих фракций.\n\nШокирующий результат для многих, время покажет, сумеет ли [tanturak_king.GetTitledFirstName] по-настоящему укрепить власть над павшим королевством, или история повторится, и держава вновь погрузится в анархию."
+ fall_of_tanturak.0003.a: "Как же #italic так#! вышло?"
+ fall_of_tanturak.0003.b: "Разделяй и властвуй во всей красе."
+
+ fall_of_tanturak.0004.t: "Сумерки Тантурака"
+ fall_of_tanturak.0004.desc: "После 10 лет изнурительной гражданской войны, которую вели между собой соперничающие претенденты [tanturak_king_1.GetTitledFirstName] и [tanturak_king_2.GetTitledFirstName], тантуракцы не смогли объединиться под властью единого правителя. Годы войн и кровопролития оставили свой след в некогда гордом королевстве: большая его часть была захвачена восставшими юсаканскими рабами.\n\nКакому бы то ни было подобию могущества или единства тантуракцев пришёл конец: их правление теперь едва распространяется за пределы их крупнейших столиц, где правители #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантурака#!#!#! из последних сил сопротивляются растущей угрозе со стороны коренного населения.\n\nАнархия теперь господствует над #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантураком#!#!#!, потому что ничего другого не остаётся."
+ fall_of_tanturak.0004.a: "Нет! НЕЕТ!"
+ fall_of_tanturak.0004.b: "Смерть адунайцам!"
+
+ fall_of_tanturak.0005.t: "[Select_CString(ROOT.Char.IsFemale, 'Единственная истинная королева', 'Единственный истинный король' )]"
+ fall_of_tanturak.0005.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'сделала', 'сделал' )] это! [GetTitleByKey('k_tanturak').GetNameNoTier] мой, и только мой! [Select_CString(loserguy.IsFemale, 'Эта презренная узурпаторша', 'Этот презренный узурпатор' )] [loserguy.GetTitledFirstName] и [Select_CString(loserguy.IsFemale, 'её', 'его' )] проклятые союзники-мятежники наконец-то предстали в цепях передо мной, ожидая, когда я вынесу свой приговор за их преступления против адунайцев.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы проявить к ним милосердие, но не увековечит ли это бесконечный цикл кровопролития и мести, который преследует наше королевство на протяжении многих поколений? Возможно, было бы разумнее #italic покончить#! с любыми предательскими элементами и, наконец, объединить державу в рамках единого видения.\n\nОднако, что бы я ни [Select_CString(ROOT.Char.IsFemale, 'выбрала', 'выбрал' )], мне также нужно будет разобраться с презренными юсаканцами, которые осмелились восстать против адунайской расы господ и снова заковать этих ничтожеств в цепи."
+ fall_of_tanturak.0005.a: "Казнить [Select_CString(loserguy.IsFemale, 'узурпаторшу', 'узурпатора' )], а остальные пусть гниют."
+ fall_of_tanturak.0005.b: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] проявить милосердие даже к мятежникам..."
+ fall_of_tanturak.0005.b.effects: "Вы помилуете вассалов персонажа [loserguy.GetTitledFirstName], чтобы сохранить стабильность в державе"
+ fall_of_tanturak.0005.c: "#N Казнить. Их. ВСЕХ!#!"
+ tanturak_revoke_rebel_titles: "Вы лишите вассалов персонажа [loserguy.GetTitledFirstName] всех титулов"
+
+ fall_of_tanturak.0006.t: "Ярость закованных в цепи"
+ fall_of_tanturak.0006.desc: "Как! Как [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] я, [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] великой расы [Concept('adunai', 'адунайцев')|E], потерпеть поражение от этих #italic отбросов#!? Мои земли разорены: мои рабы, принадлежавшие мне по праву, теперь бесчинствуют на них и разрушают великую цивилизацию, которую наши предки подарили славному #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантураку#!#!#!.\n\nМой конец близок, я чувствую это. Дикари ворвались в мой дворец и взяли меня в плен, но я уже слышу, как они требуют моей смерти на своем грязном и презренном языке. Впервые в своей жизни я чувствую себя по-настоящему [Select_CString(ROOT.Char.IsFemale, 'беспомощной', 'беспомощным' )], поскольку [Select_CString(ROOT.Char.IsFemale, 'вынуждена', 'вынужден' )] страдать из-за разрушения этого мира, ожидая своей неизбежной смерти.\n\nКогда юсаканцы сделают своё дело, не останется никого, кто мог бы отомстить за меня..."
+ fall_of_tanturak.0006.a: "Будьте вы прокляты, рабы! Власть принадлежит мне по праву! По праву!"
+ tanturaki_lose_everything: "Все ваши земли охвачены восстанием коренного населения. #Xlight Это конец#!"
+
+ fall_of_tanturak.0007.opening: "[defender.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ fall_of_tanturak.0007.desc: "[Select_CString(attacker.IsFemale, 'Тираническая', 'Тиранический' )] [attacker.GetTitledFirstName] [Select_CString(attacker.IsFemale, 'решила', 'решил' )] вторгнуться в мои недавно освобождённые земли. Ради нашего народа мы должны сражаться как один и увидеть, как тантуракцы наконец будут разгромлены!"
+ fall_of_tanturak.0007.a: "Смерть адунайцам!"
+ fall_of_tanturak.0007.b: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] защитить своё племя..."
+
+ fall_of_tanturak.0101.t: "Обречённые берега"
+ fall_of_tanturak.0101.desc: "Здесь, в #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантураке#!#!#!, у нас нет будущего, это несомненно, но какая-то часть меня не может смириться с тем, что я оставлю свой дом юсаканским дикарям и разбойникам. Даже если когда-нибудь я вернусь, всё, что останется здесь, - это руины нашей утраченной славы, захваченные ничтожествами, не уважающими наше наследие.\n\nВозможно, в землях #ONCLICK:TITLE,e_thani_hazad #TOOLTIP:LANDED_TITLE,e_thani_hazad #L Тани-Хазада#!#!#! на западе мы могли бы обрести свой новый дом. И всё же, я боюсь, что немногие встретят нас иначе, чем с презрением: их народ и правители уже давно смотрят свысока на обычаи Зигура."
+ fall_of_tanturak.0101.stormhost: "\n\nВозможно, нам следует отправиться не на запад, а на север. На самом деле, [Select_CString(khoaril.IsFemale, 'великая чародейка', 'великий чародей' )] [khoaril.GetTitledFirstName] из [GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier], возможно, проявит желание принять нас к себе на службу в качестве таких же последователей пути Зигура. Там, где западные [Concept('adunai', 'адунайцы')|E] не могут вызвать у нас ничего, кроме презрения, [khoaril.GetTitledFirstName], несомненно, [Select_CString(khoaril.IsFemale, 'отвела', 'отвёл' )] бы людям нашего положения почетные места в своей великой империи."
+ fall_of_tanturak.0101.a: "Да здравствует Повелитель бурь!"
+ fall_of_tanturak.0101.b: "Я попытаю счастья на западе."
+ fall_of_tanturak.0101.c: "Я не покину свой дом!"
+ fall_of_tanturak.0101.a.effects: "Вы станете [Concept('adventurer', 'авантюристом')|E] и отправитесь на север, чтобы поступить на службу к персонажу [khoaril.GetTitledFirstName]"
+ fall_of_tanturak.0101.b.effects: "Вы станете [Concept('adventurer', 'авантюристом')|E] и попытаетесь восстановить своё положение за пределами этих земель"
+ fall_of_tanturak.0101.c.effects: "Вы меняете своё решение и отказываетесь бежать. Часть затрат, связанных с решением, компенсируются."
+
+ fall_of_tanturak.0104.t: "Повелители попрошаек"
+ fall_of_tanturak.0104.desc: "[refugee.GetTitledFirstName], некогда [Select_CString(refugee.IsFemale, 'владычица', 'владыка' )] гордого #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантурака#!#!#!, [Select_CString(refugee.IsFemale, 'прибыла', 'прибыл' )] к моему двору, желая поступить ко мне на службу. По мере того, как падение жалкого и ничтожного #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантурака#!#!#! под власть юсаканских рабов продолжает казаться неизбежным, [refugee.GetTitledFirstName] и [Select_CString(refugee.IsFemale, 'её', 'его' )] родня решили бежать из рушащегося королевства и попытаться вернуть часть утраченной власти под моим владычеством.\n\nТантуракцы, несмотря на плачевное состояние их королевства на сегодняшний день, имеют долгую историю подавления и разгрома бесчисленных восстаний рабов. При мне они могли бы служить прекрасными надсмотрщиками, действуя с безжалостностью, необходимой для поддержания порядка и эффективности среди моих слуг. Тем не менее, поддержка этих чужаков может вызвать напряжённость в отношениях с моими местными союзниками..."
+ fall_of_tanturak.0104.a: "Они будут служить мне."
+ fall_of_tanturak.0104.b: "Мне не нужны попрошайки!"
+
+ fall_of_tanturak.0105.t: "Слуги бури"
+ fall_of_tanturak.0105.desc: "Когда я преклоняю колени перед троном, меня охватывает такой ужас, какого я никогда не [Select_CString(ROOT.Char.IsFemale, 'испытывала', 'испытывал' )] в своей жизни, но в то же время я испытываю и некое извращённое удивление. #italic Вот#! как выглядит истинный слуга Зигуруна! В этом нет никаких сомнений, [khoaril.GetTitledFirstName] - достойный хозяин, которому я и мои родичи можем служить.\n\nЯ слышу приговор Повелителя бурь, произнесённый холодный и твёрдым голосом: я и мои последователи должны служить странствующими надсмотрщиками его правления, пока не докажем, что достойны вновь править великими владениями от его имени. Хотя какая-то часть меня разочарована тем, что я не [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] большего, моё новое положение всё равно намного лучше, чем то, на что я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы надеяться, если бы вместо этого [Select_CString(ROOT.Char.IsFemale, 'бежала', 'бежал' )] на запад. Когда-нибудь я снова стану [Select_CString(ROOT.Char.IsFemale, 'истинной властительницей', 'истинным властителем' )]. Однако пока достаточно быть [Select_CString(ROOT.Char.IsFemale, 'простой надсмотрщицей', 'простым надсмотрщиком' )]..."
+ fall_of_tanturak.0105.a: "Я поведу эту бурю к ещё большей славе!"
+
+ fall_of_tanturak.0106.opening: "[khoaril.Custom2('AppropriateGreetingNegative', ROOT.Char)]"
+ fall_of_tanturak.0106.desc: "Мне не нужны ни вы, ни ваши родичи, попрошайка! Если вы и будете служить под моим началом, то только как рабы, а не как хозяева. А теперь убирайтесь!"
+ fall_of_tanturak.0106.a: "Всё могло бы сложиться и лучше..."
+ fall_of_tanturak.0106.a.effects: "#N [khoaril.GetTitledFirstName] [Select_CString(khoaril.IsFemale, 'отказалась', 'отказался' )] взять вас к себе в услужение.#!"
+
+ fall_of_tanturak.0201.t: "Разорванные цепи"
+ fall_of_tanturak.0201.desc: "Во время нашей праведной войны против изменников и узурпаторов, которые осмелились оспорить мою законную власть над #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантураком#!#!#!, у многих хороших людей, которые когда-то поддерживали порядок в рядах наших рабов, не было иного выбора, кроме как покинуть свои дома, чтобы сражаться в моих славных армиях. Тем не менее, эта потеря надсмотрщиков не осталась незамеченной ленивым и жестоким населением владения [revolting_county.GetNameNoTier], которое подняло открытое восстание против моего справедливого правления.\n\nХотя может возникнуть соблазн положить конец этому тревожному нарушению моих планов, я боюсь, что это вмешательство может втянуть многих головорезов и злодеев, которые начали организовываться против естественного порядка вещей, в настоящую войну против меня. Хотя я не сомневаюсь, что они были бы легко разгромлены, возможно, моим приоритетом должно оставаться воссоединение славного #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантурака#!#!#!..."
+ fall_of_tanturak.0201.a: "Я разберусь с этими мятежниками позже..."
+ fall_of_tanturak.0201.b: "Идеально! В любом случае, мне нужны были новые жертвы!"
+
+ fall_of_tanturak.0202.t: "[Select_CString(rebel.IsFemale, 'Владычица', 'Владыка' )] оборванцев"
+ fall_of_tanturak.0202.desc: "По мере того, как продолжается наша законная война против узурпаторов, продолжается и трагический упадок справедливого правления тантуракцев. Действительно, неблагодарные и жестокие дикари из владения [revolting_county.GetNameNoTier] присоединились к рядам постоянно растущего восстания рабов против нашего доброго и великодушного правления. Хотя мой долг - наказать их за этот ужасный акт измены, реалии войны заставляют меня колебаться, стоит ли начинать ещё одну справедливую, но дорогостоящую кампанию против моих презренных врагов.\n\nОднако, по неожиданному стечению обстоятельств, [rebel.GetTitledFirstName] [Select_CString(rebel.IsFemale, 'прислала', 'прислал' )] мне письмо о возможном урегулировании нашего конфликта. Действительно, похоже, что [Select_CString(rebel.IsFemale, 'она была', 'он был' )] бы [Select_CString(rebel.IsFemale, 'готова', 'готов' )] вернуться под мою власть, если получит достаточно крупное вознаграждение. Хотя такой жадности и следовало ожидать от юсаканских дикарей, возможно, всё же стоит позволить [Select_CString(rebel.IsFemale, 'этой дикарке', 'этому дикарю' )] поддаться своим низменным побуждениям, если это означает сохранение единства моей державы..."
+ fall_of_tanturak.0202.a: "Победа над узурпаторами должна быть на первом месте."
+ fall_of_tanturak.0202.b: "#italic Полагаю#!, можно достигнуть соглашения..."
+ fall_of_tanturak.0202.b.success: "#P [rebel.GetTitledFirstName] принимает ваше предложение#!"
+ fall_of_tanturak.0202.b.success.toast: "[rebel.GetTitledFirstName] принимает ваше предложение вассализации."
+ fall_of_tanturak.0202.b.failure: "#N [rebel.GetTitledFirstName] отвергает ваше предложение#!"
+ fall_of_tanturak.0202.b.failure.toast: "[rebel.GetTitledFirstName] отвергает ваше предложение вассализации." 
+ fall_of_tanturak.0202.c: "[rebel.GetTitledFirstName] узнает цену дерзости!"
+
+ fall_of_tanturak.0203.t: "Колеблющиеся владения"
+ fall_of_tanturak.0203.desc: "Поскольку война с подлыми узурпаторами продолжает истощать мои ресурсы, гнусные порабощённые дикари с моих плантаций начали оказывать всё большее и большее давление на мои владения в провинции [revolting_county.GetNameNoTier]. Если я не проявлю твёрдость и не вмешаюсь сейчас, эти презренные твари могут преуспеть в своей ошибочной попытке свергнуть моё справедливое правление и присоединиться к рядам кровожадных мятежников, которые сейчас терзают [GetTitleByKey('k_tanturak').GetNameNoTier].\n\nПока мои войска будут заняты войной, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы возглавить местный гарнизон владения [revolting_county.GetNameNoTier] и предпринять контрнаступление для защиты плантаций. Тем не менее, такие действия сопряжены с небольшим риском того, что рабы могут нанести серьёзный ущерб региону и, возможно, даже установить полный контроль над регионом. Несмотря на врождённую слабость юсаканской расы и обречённость их борьбы, возможно, было бы разумно действовать более осторожно, чтобы обеспечить хотя бы некоторый контроль над ситуацией."
+ fall_of_tanturak.0203.a: "Ха! У этих дикарей нет ни единого шанса!"
+ fall_of_tanturak.0203.a.success: "#P Вы побеждаете юсаканцев и восстанавливаете порядок во владении [revolting_county.GetNameNoTier]#!"
+ fall_of_tanturak.0203.a.success.toast: "Вы победили юсаканцев и восстановили порядок во владении [revolting_county.GetNameNoTier]"
+ fall_of_tanturak.0203.a.failure: "#N Вы полностью теряете контроль над владением [revolting_county.GetNameNoTier]#!"
+ fall_of_tanturak.0203.a.failure.toast: "[rebel.GetTitledFirstName] перехватывает у вас полный контроль над владением [revolting_county.GetNameNoTier]"
+ fall_of_tanturak.0203.b: "Я не могу рисковать обострением ситуации..."
+
+ fall_of_tanturak.0204.t: "Цена оков"
+ fall_of_tanturak.0204.desc: "Одержав великую и славную победу над народом #ONCLICK:TITLE,k_tanturak #TOOLTIP:LANDED_TITLE,k_tanturak #L Тантурака#!#!#!, [vassal.GetTitledFirstName] [Select_CString(vassal.IsFemale, 'разгромила', 'разгромил' )] диких и озверевших рабов, которые по глупости и жадности пытались захватить и уничтожить плантации владения [revolting_county.GetNameNoTier]. И всё же, несмотря на нашу победу и возвращение рабов на свои посты или их казнь, хаос, который едва не охватил владение [revolting_county.GetNameNoTier], оставил свой след в регионе.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )], что при моей непосредственной поддержке [vassal.GetTitledFirstName] [Select_CString(vassal.IsFemale, 'смогла', 'смог' )] бы быстро вернуть всё в нормальное русло, но из-за того, что война с подлыми узурпаторами лишила моё королевство большей части ресурсов, мне трудно найти лишнее золото, чтобы помочь восстановить [vassal.GetHerHis] владения. Тем не менее, бездействие перед лицом этой ситуации, несомненно, подорвало бы моё положение в державе..."
+ fall_of_tanturak.0204.a: "Я заплачу причитающееся."
+ fall_of_tanturak.0204.b: "Если срезать несколько углов, это не повредит ничему..."
+ fall_of_tanturak.0204.b.success: "#P Вы экономите на затратах на восстановление#!"
+ fall_of_tanturak.0204.b.success.toast: "Вы сэкономили на затратах на восстановление"
+ fall_of_tanturak.0204.b.failure: "#N Ваши средства тратятся впустую#!"
+ fall_of_tanturak.0204.b.failure.toast: "Ваши средства потрачены впустую"
+ fall_of_tanturak.0204.c: "[vassal.GetTitledFirstName] разберётся с этим..."
+
+
 
 
 
@@ -282,6 +427,17 @@
  angmar_wars.0008.t: "[GetSituation('angmar_wars_situation').GetTopParticipantGroupByKey('neutral_rulers').GetName]"
  angmar_wars.0008.desc: "TEMP - Just leave me alone"
  angmar_wars.0008.a: "Neutral People"
+
+ angmar_wars.0050.t: "The $ANTI_ANGMAR_COALITION$" # Coalition Formed
+ angmar_wars.0050.desc.elven: "In these days of late the true strength of [angmar|E] has grown apparent, and it is clear that this [GetTitleByKey('k_angmar').GetHolder.GetNickname] is far more dangerous that we [elves|E] had first assumed. Be he [man|E] or [orc|E] or perhaps even one of the [nazgul|E], the north has swiftly fallen under his sway, and now [arnor|E] too looks close to disaster.\n\nAt last [elven_ruler.GetPrimaryTitle.GetNameNoTier] cannot remain in isolation any longer, leaving the battle to [men|E]. My warriors have begun assembling for battle, and all [elven_ruler.GetCapitalLocation.GetTitle.GetDeJureLiege.GetNameNoTier] rings with the sound of thier trumpets. We will march out as we last did in the days of [GetScriptedCharacterByHistoryID('lineoforodreth4').GetFirstName], and fight alongside [arnorian_ruler.GetName] to drive back this shadow. Let none say [elven_ruler.GetFirstName] will stand by while the [dunedain|E] perish!"
+ angmar_wars.0050.desc.arnor: ""
+ angmar_wars.0050.a: "Let the hosts of the Eldar march forth!"
+ angmar_wars.0050.b: "At last, relief has come!"
+
+ angmar_wars.0051.t: "The End of the $ANTI_ANGMAR_COALITION$" # Coalition Formed
+ angmar_wars.0051.desc: "At last, the threat of [angmar|E] has been beaten back, and [GetTitleByKey('k_angmar').GetHolder.GetNickname] forced in retreat to [GetTitleByKey('k_angmar').GetHolder.GetCapitalLocation.GetTitle.GetDeJureLiege.GetBaseNameNoTier]. Our efforts have been successful, and [arnor|E] shall have respite for a time.\n\nWith the cessation of hostilies, the hour has come for the [elves|E] to return home to [elven_ruler.GetPrimaryTitle.GetNameNoTier], and the [dunedain|E] to begin to rebuild on their own. Yet should [GetTitleByKey('k_angmar').GetName] rise again to threaten our lands, the [elves|E] of [eriador|E] will too rise to arms in aid."
+ angmar_wars.0051.a: "We return to peace, for a time"
+ angmar_wars.0051.b: "We stand alone once again"
 
  ### Decision Events ####
  
@@ -680,7 +836,7 @@
 
  #### Basics ####
  situation_angmar_wars_situation: "Ангмарские войны"
- situation_angmar_wars_situation_desc: "$PLACEHOLDER$"
+ situation_angmar_wars_situation_desc: "$PLACEHOLDER$ - [eriador|E] has once again been plunged into war by the arising of the Witch-Realm of [angmar|E]. Ruled by a sorcerous king of unknown race, its hosts now threaten to completely extinguish the [dunedain|E] of [arnor|E]. Can the [arnorians|E] set aside their bickering to unite against this new deadly foe? And shall the rest of [eriador|E] survive on the edge of such a war?\n\n#high [devastation|E] is the central mechanic of [angmar_wars_situation|E]. [counties|E] will slowly lose [development|E] and [buildings|E] as the war touches their lands, slowly returning [eriador|E] back to [wilderness|E]. The [situation|E] touches all [men|E], [orc|E], and [elves|E] in [eriador|E] and [lindon|E], and can expand to include neighboring regions should they become relevant to the conflict."
  situation_type_angmar_wars_situation: "$situation_angmar_wars_situation$"
  situation_type_angmar_wars_situation_desc: "$situation_angmar_wars_situation_desc$"
 
@@ -722,13 +878,13 @@
  ### Participants ###
 
  angmar_wars_situation_participant_group_arnorian_rulers: "Арнорские правители"
- angmar_wars_situation_participant_group_arnorian_rulers_desc: "$PLACEHOLDER$"
+ angmar_wars_situation_participant_group_arnorian_rulers_desc: "$PLACEHOLDER$ - [arnorian_rulers|E] are the [dunedain|E] of [arnor|E], the primary foe of [witchking|E]. They include all [rulers|E] in [eriador|E] with [GetCulturePillar('heritage_dunedain').GetName] [heritage|E]. They are [arnor_aligned|E]."
  angmar_wars_situation_participant_group_angmar_rulers: "Ангмарримские правители"
- angmar_wars_situation_participant_group_angmar_rulers_desc: "$PLACEHOLDER$"
+ angmar_wars_situation_participant_group_angmar_rulers_desc: "$PLACEHOLDER$ - [angmar_rulers|E] are all [alignment_evil|E] [rulers|E] in [eriador|E] of any race, whether serving [angmar|E] directly or indirectly. They are [angmar_aligned|E]."
  angmar_wars_situation_participant_group_elven_rulers: "Эльфийские правители"
- angmar_wars_situation_participant_group_elven_rulers_desc: "$PLACEHOLDER$"
+ angmar_wars_situation_participant_group_elven_rulers_desc: "$PLACEHOLDER$ - [elven_rulers|E] are all [elven|E] [rulers|E] in [eriador|E] and [lindon|E]. They are [arnor_aligned|E]."
  angmar_wars_situation_participant_group_neutral_rulers: "Нейтральные правители"
- angmar_wars_situation_participant_group_neutral_rulers_desc: "$PLACEHOLDER$"
+ angmar_wars_situation_participant_group_neutral_rulers_desc: "$PLACEHOLDER$ - [neutral_rulers|E] are all those [rulers|E] in [eriador|E] who are not [alignment_evil|E], [GetCulturePillar('heritage_dunedain').GetName] [heritage|E], or [elves|E]. They are [neutral_s|E] in the overall [angmar_wars_s]."
  angmar_wars_situation_arnorian_rulers: "Арнорский правитель"
  angmar_wars_situation_angmar_rulers: "Ангмарримский правитель"
  angmar_wars_situation_elven_rulers: "Эльфийский правитель"
@@ -745,14 +901,17 @@
  ### GUI ###
  ANGMAR_WARS_SITUATION_INFO_PHASES_TITLE: "Фазы"
  ANGMAR_WARS_SITUATION_INFO_PHASES_EXPLANATION: "$game_concept_situation_phase_desc$"
+ ANGMAR_WARS_SITUATION_INFO_DEVASTATION_TITLE: "[devastation]"
+ ANGMAR_WARS_SITUATION_INFO_DEVASTATION_EXPLANATION: "$game_concept_devastation_desc$"
  ANGMAR_WARS_SITUATION_WINDOW_CURRENT_PHASE: "[Situation.GetCurrentPhase.GetName]"
  ENDING_DECISIONS_HEADER: "Конечные решения"
  PHASE_MODIFIERS_HEADER: "Модификаторы фазы"
  ANGMAR_AVAILABLE_DECISIONS_HEADER: "Доступные решения"
- ANGMAR_WARS_SITUATION_CATALYST_HEADER: "Катализаторы Ангмарских войн"
- ANGMAR_WARS_STALEMATE_CATALYST_BUTTON_TT: "Тупик"
- ANGMAR_WARS_ARNOR_ASCENDANT_CATALYST_BUTTON_TT: "Возвышение Арнора"
- ANGMAR_WARS_ANGMAR_ASCENDANT_CATALYST_BUTTON_TT: "Возвышение Ангмара"
+ ANGMAR_WARS_SITUATION_CATALYST_HEADER: "[FutureSituationPhase.GetType.GetName] Catalysts"
+ ANGMAR_WARS_STALEMATE_CATALYST_BUTTON_TT: "[GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_stalemate').GetName]"
+ ANGMAR_WARS_ARNOR_ASCENDANT_CATALYST_BUTTON_TT: "[GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_arnor_ascendant').GetName]\n\nSee Catalysts"
+ ANGMAR_WARS_ANGMAR_ASCENDANT_CATALYST_BUTTON_TT: "[GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_angmar_ascendant').GetName]\n\nSee Catalysts"
+ ANGMAR_WARS_PHASE_CATALYST_BUTTON_TT: "#T [FutureSituationPhase.GetType.GetName]\n#!Progress: [FutureSituationPhase.GetProgress|V]/[FutureSituationPhase.GetTakeoverPoints]\n\n#I Click to view catalysts#!"
 
 
  ### Catalysts ###
@@ -936,7 +1095,7 @@
  decision_assimilation_policy_confirm: "They shall be united in #bold me!#!"
  decision_assimilation_policy_tooltip: "Begin a policy of forced assimilation in your realm"
  decision_assimilation_policy_tt: "You unlock [decisions|E] to select a favoured [culture|E] and [faith|E] from among those present in your realm."
- decision_assimilation_policy_tt_22: "You unlock the #V $great_project_type_angmar_wars_assimilate_duchy_name$#! [great_project|E] to convert [duchies|E] in your realm to your favoured culture and faith, and convert and [tribal|E] [counties|E] to [feudal|E]"
+ decision_assimilation_policy_tt_22: "You unlock the #V $great_project_type_angmar_wars_assimilate_duchy_name$#! [great_project|E] to convert [duchies|E] in your realm to your favoured culture and faith, and convert [tribal|E] [counties|E] to [feudal|E]"
 
  decision_select_prefered_culture: "Select Favoured Culture"
  decision_select_prefered_culture_desc: "Though there are many cultures in [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTier], one must rise to the top. Whoever I choose must be strong enough to wield against the [arnorians|E], and loyal enough to serve me alone."
@@ -958,6 +1117,14 @@
  decision_craft_morgul_blades_desc: "$PLACEHOLDER$"
  decision_craft_morgul_blades_tooltip: "Create a sorcerous dagger artifact"
  decision_craft_morgul_blades_confirm: "In the Darkness bind them"
+
+ decision_form_coalition_against_angmar: "Form a Coalition against Angmar"
+ decision_form_coalition_against_angmar_desc: "While the [elves|E] have traditionally kept apart from the affairs of [men|E], the dire [situation|E] in [arnor|E] has grown too great to ignore. This dark power in [angmar|E] threatens not only to annihilate the [dunedain|E] but also to sweep down upon our own [Concept('elven_refuge','refuges')|E]. We must act now to bring the Free Peoples together against such a dangerous foe."
+ decision_form_coalition_against_angmar_tooltip: "Aid the $dunedain$ against Angmar"
+ decision_form_coalition_against_angmar_confirm: "We ride for the North!"
+ decision_form_coalition_against_angmar_tt: "You form a [defensive_alliance|E] with [arnorian_ruler.GetName]"
+ decision_form_coalition_against_angmar_tt_2: "You gain access to an [interaction|E] to invite other [elven_rulers|E] to join the [defensive_alliance|E]"
+ ANTI_ANGMAR_COALITION: "Northern Coalition"
 
  ### Great Projects ###
 
@@ -990,12 +1157,11 @@
  great_project_type_angmar_wars_militarise_duchy_contribution_train_troops: "Drill Troops"
  great_project_type_angmar_wars_militarise_duchy_contribution_increase_fortifications: "Strengthen Fortifications"
  great_project_type_angmar_wars_militarise_duchy_contribution_increase_control: "Increase Control"
- angmar_wars_militarise_duchy_base_modifier_tt: "Every [county|E] in targeted [duchy|E] and gains [GetModifier('angmar_wars_militarise_duchy_base_modifier').GetNameWithTooltip] and is [devastated|E] #N twice#!"
+ angmar_wars_militarise_duchy_base_modifier_tt: "Every [county|E] in targeted [duchy|E] and gains [GetModifier('angmar_wars_militarise_duchy_base_modifier').GetNameWithTooltip] and is #N [devastated|E] twice#!"
  angmar_wars_militarise_duchy_maa_modifier_tt: "Every [province|E] in targeted [duchy|E] and in [great_project_contributor_possessive|E] [capital|E] gains [GetModifier('angmar_wars_militarise_duchy_maa_modifier').GetNameWithTooltip]"
  angmar_wars_militarise_duchy_military_academy_modifier_tt: "#indent_newline:4 Every [county|E] [holder|E] in targeted [duchy|E]:\n$BULLET$Every [knight|E] with [commander_trait|E] gains #P [minister_exp_boost_value]#! [trait_level_track_xp|E] #weak (value is based on [martial_skill|E] of [great_project_contributor|E])#!#!"
  angmar_wars_militarise_duchy_fort_modifier_tt: "Every [county|E] in targeted [duchy|E] and in [great_project_contributor_possessive|E] [capital|E] gains [GetModifier('angmar_wars_militarise_duchy_fort_modifier').GetNameWithTooltip]"
- angmar_wars_militarise_duchy_control_modifier_tt: "Every [county|E] in targeted [duchy|E] and in [great_project_contributor_possessive|E] [capital|E] gains [GetModifier('angmar_wars_militarise_duchy_control_modifier').GetNameWithTooltip], gains #P [project_founded_by_minister]#! @control_icon![county_control|E] #weak (value is based on [martial_skill|E] of [great_project_contributor|E])#, and enables [absolute_control|E] for [rulers|E] within the target [duchy|E]"
-
+ angmar_wars_militarise_duchy_control_modifier_tt: "Every [county|E] in targeted [duchy|E] and in [great_project_contributor_possessive|E] [capital|E] gains [GetModifier('angmar_wars_militarise_duchy_control_modifier').GetNameWithTooltip], gains #P [minister_control_boost_value]#! @control_icon![county_control|E] #weak (value is based on [martial_skill|E] of [great_project_contributor|E])#!, and enables [absolute_control|E] for [rulers|E] within the target [duchy|E]"
 
  ### Modifiers ###
 
@@ -1009,6 +1175,14 @@
  angmar_wars_militarise_duchy_fort_modifier_desc: "Across this [county|E] walls have been repaired, patrols expanded, and supplies stockpiled in preparation for invasion."
  angmar_wars_militarise_duchy_control_modifier: "Constant Vigilance"
  angmar_wars_militarise_duchy_control_modifier_desc: "Nothing passes in this [county|E] unseen and unnoticed by the [witchkingshort|E]"
+
+### Interactions ###
+
+invite_to_coalition_interaction: "Invite to Coalition"
+invite_to_coalition_interaction_desc: "Invite to join a Coalition against Angmar"
+
+join_coalition_interaction: "Join Coalition"
+join_coalition_interaction_desc: "Join a Coalition against Angmar"
 
 
 
