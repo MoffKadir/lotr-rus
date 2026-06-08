@@ -2918,6 +2918,7 @@
  decision_angmar_anduin_lowlands_desc: "Desc"
  decision_angmar_anduin_lowlands_confirm: "Confirm"
  nobody_holds_anduin_vale_kingdom: "Титул [GetTitleByKey('k_anduin_vale').GetName] не был создан"
+ decision_angmar_anduin_lowlands_convert_counties: "Все [Concept('county', 'графства')|E] в регионе [GetTitleByKey('k_anduin_vale').GetNameNoTier] могут обратиться в вашу [Concept('faith', 'конфессию')|E]"
 
  decision_kultamieli_raid_taurau: "Попытаться устроить засаду на Рикульфо"
  decision_kultamieli_raid_taurau_tooltip: "Tooltip"
@@ -3825,6 +3826,11 @@
  decision_restore_mabladdum_tooltip: "Освободить затерянные залы Маблад-дума"
  decision_restore_mabladdum_confirm: "#italic Подайте мне мою секиру и броню!#!"
 
+ decision_moria_northern_duchy: "Вернуть чертог [GetTitleByKey('d_fuhmdusha').GetNameNoTierNoTooltip]"
+ decision_moria_northern_duchy_desc: "Самое северное [Concept('duchy', 'герцогство')|E] [Concept('khazaddum', 'Кхазад-дума')|E], [GetTitleByKey('d_fuhmdusha').GetNameNoTier], долгое время было заброшено после Войны [Concept('lastalliance', 'Последнего союза')|E]. Но [Concept('dwarves', 'гномы')|E] из рода Дурина не забыли чертоги наших предков, и пришло время вернуть их себе. Мы отправимся в глубины и создадим новые поселения в самых северных уголках Кхазад-дума, потому что нам нужны новые кузницы для ведения войны и защиты нашего королевства!"
+ decision_moria_northern_duchy_confirm: "За Кхазад-дум! За Народ Дурина!"
+ decision_moria_northern_duchy_tooltip: "Вернуть самое северное герцогство Кхазад-дума"
+
  ## Dwarven Beardcare loc
  beard_care_standard_modifier: "Красивая борода"
  beard_care_standard_modifier_desc: "Это прекрасная борода. Даже великолепная."
@@ -4498,6 +4504,7 @@
  decision_avatar_of_x_deity_desc: "У [ROOT.Char.GetFaith.HighGodNamePossessive] нет более [Select_CString(ROOT.Char.IsFemale, 'ревностной и преданной последовательницы', 'ревностного и преданного последователя' )], чем я. Я стану видимым воплощением [ROOT.Char.GetFaith.HighGodNamePossessive]!"
  decision_avatar_of_x_deity_tooltip: "Полностью посвятить себя славе [ROOT.Char.GetFaith.HighGodNamePossessive]."
  decision_avatar_of_x_deity_confirm: "Да будет так."
+ unlocks_tayee_mandala_decision: "Открывает [Concept('decision', 'решение')|E] «[GetDecision('decision_reign_of_the_avatar').GetName]»"
 
  decision_reign_of_the_avatar: "Утвердить божественную власть"
  decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] и [ROOT.Char.GetFaith.HighGodHerHis|U] аватара, что ходит по этой земле. Все должны поклоняться и чтить воплощение [ROOT.Char.GetFaith.HighGodNamePossessive]!"
