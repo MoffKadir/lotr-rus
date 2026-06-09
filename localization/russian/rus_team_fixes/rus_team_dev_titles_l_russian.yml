@@ -1009,6 +1009,7 @@
  ### Triggers ###
 
  is_arnor_ascendant_tt: "Текущая [Concept('situation_phase', 'фаза')|E] - [GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_arnor_ascendant').GetName]"
+ is_stalemate_tt: "Текущая [Concept('situation_phase', 'фаза')|E] - [GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_stalemate').GetName]"
  is_angmar_ascendant_tt: "Текущая [Concept('situation_phase', 'фаза')|E] - [GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_angmar_ascendant').GetName]"
 
  ### Wars ###
@@ -1080,6 +1081,7 @@
  decision_consolidate_the_realm_desc: "По мере того, как [Concept('angmar_wars', 'Ангмарские войны')|E] затягиваются, я нахожу, что держава [ROOT.Char.GetPrimaryTitle.GetNameNoTier] становится всё более и более неспособной защищать свои обширные границы. Если этот устойчивый спад продолжится, мы рискуем, что эти земли подвергнутся [Concept('devastation', 'опустошению')|E], а их жители погибнут.\n\nДержава не может позволить себе такое расточительство, и поэтому, возможно, будет разумно объединить мой народ внутри страны, оставив те земли, которые невозможно защитить, и переселив их жителей поближе к нашей столице. Однако не все поймут необходимость такого шага, и некоторые несогласные могут доставить неприятности."
  decision_consolidate_the_realm_confirm: "Нами должно руководить благоразумие."
  decision_consolidate_the_realm_tt: "Все [Concept('counties', 'графства')|E] в провинции [GetPlayer.MakeScope.Var('selected_duchy').Title.GetNameNoTier] будут [Concept('devastated', 'опустошены')|E] и вернутся в состояние [Concept('wilderness', 'дебрей')|E], а [GetPlayer.MakeScope.Char.GetCapitalLocation.GetTitle.GetDeJureLiege.GetDeJureLiege.GetBaseNameNoTier] получит [Concept('development', 'развитие')|E] в размере развития потерянного региона. #V (Текущее значение - @development_icon![GetPlayer.MakeScope.Var('selected_duchy').Title.MakeScope.Var('decision_consolidate_the_realm_total_development_variable').GetValue])#!"
+ decision_consolidate_the_realm_tt_safe: "Все [Concept('counties', 'графства')|E] в #high выбранном герцогстве#! будут [Concept('devastated', 'опустошены')|E] и вернутся в состояние [Concept('wilderness', 'дебрей')|E], и [GetPlayer.MakeScope.Char.GetCapitalLocation.GetTitle.GetDeJureLiege.GetDeJureLiege.GetBaseNameNoTier] получит [Concept('development', 'развитие')|E] в размере развития потерянного региона."
  decision_consolidate_the_realm_tt_2: "Это, скорее всего, #N разозлит#! местных властителей, и они могут #N плохо#! отреагировать."
  pick_duchy: "Вы должны выбрать герцогство"
 
@@ -1118,6 +1120,18 @@
  decision_craft_morgul_blades_tooltip: "Создать зачарованный кинжал"
  decision_craft_morgul_blades_confirm: "Во тьме их сковать."
 
+
+
+ decision_subjugate_high_pass: "Покорить [GetTitleByKey('k_high_pass').GetBaseNameNoTierNoTooltip]"
+ decision_subjugate_high_pass_desc: "[Concept('orcs', 'Орки')|E] центральных [Concept('mistymountains', 'Мглистых гор')|E] долгое время были непокорными и абсолютно независимыми. Однако, учитывая мои недавние завоевания, несомненно, пришло время приструнить их. Если я полностью подчиню себе горы вокруг #ONCLICK:TITLE,k_high_pass #TOOLTIP:LANDED_TITLE,k_high_pass #L Высокого перевала#!#!#!, я буду контролировать восточные подступы к [Concept('eriador', 'Эриадору')|E] и смогу более эффективно наступать на [Concept('rivendell', 'Ривенделл')|E] и [Concept('rhudaur', 'Рудаур')|E]."
+ decision_subjugate_high_pass_tooltip: "Усмирить орков #ONCLICK:TITLE,k_high_pass #TOOLTIP:LANDED_TITLE,k_high_pass #L Высокого перевала#!#!#!"
+ decision_subjugate_high_pass_confirm: "Перевалы будут трепетать при одном упоминании моего имени!"
+ decision_subjugate_high_pass_tt: "[GetTitleByKey('k_high_pass').GetName] покорено"
+ no_independent_rulers_in_high_pass: "В регионе [GetTitleByKey('k_high_pass').GetName] нет [Concept('independent', 'независимых')|E] [Concept('rulers', 'правителей')|E]"
+ decision_subjugate_high_pass_effect_tt_safe: "Если ваша #high предпочтительная культура#! является [Concept('orcish', 'орочьей')|E], все [Concept('counties', 'графства')|E] в регионе [GetTitleByKey('k_high_pass').GetName] в пределах вашей [Concept('realm', 'державы')|E] примут вашу #high предпочтительную культуру#! и #high предпочтительную конфессию#!."
+ decision_subjugate_high_pass_effect_tt: "Если ваша #high предпочтительная культура#! является [Concept('orcish', 'орочьей')|E], все [Concept('counties', 'графства')|E] в регионе [GetTitleByKey('k_high_pass').GetName] в пределах вашей [Concept('realm', 'державы')|E] примут вашу #high предпочтительную культуру#! ([GetGlobalVariable('angmar_prefered_culture').Culture.GetName]) и #high предпочтительную конфессию#! ([GetGlobalVariable('angmar_prefered_faith').Faith.GetAdjective])."
+
+ # Elves
  decision_form_coalition_against_angmar: "Создать коалицию против Ангмара"
  decision_form_coalition_against_angmar_desc: "Хотя [Concept('elves', 'эльфы')|E] традиционно держались в стороне от дел [Concept('men', 'людей')|E], тяжёлая [Concept('situation', 'ситуация')|E] в [Concept('arnor', 'Арноре')|E] стала слишком серьёзной, чтобы её игнорировать. Эта тёмная сила в [Concept('angmar', 'Ангмаре')|E] угрожает не только уничтожить [Concept('dunedain', 'дунэдайн')|E], но и обрушиться на наши собственные [Concept('elven_refuge', 'приюты')|E]. Мы должны действовать немедленно, чтобы объединить Свободные народы против такого опасного врага."
  decision_form_coalition_against_angmar_tooltip: "Помочь дунэдайн в борьбе с Ангмаром"
@@ -1125,6 +1139,7 @@
  decision_form_coalition_against_angmar_tt: "Вы заключите [Concept('defensive_alliance', 'оборонительный союз')|E] с персонажем [arnorian_ruler.GetName]"
  decision_form_coalition_against_angmar_tt_2: "Вам станет доступно [Concept('interaction', 'взаимодействие')|E], позволяющее пригласить других [Concept('elven_rulers', 'эльфийских правителей')|E] в [Concept('defensive_alliance', 'оборонительный союз')|E]"
  ANTI_ANGMAR_COALITION: "Северная коалиция"
+ coalition_disolution_warning: "#high $ANTI_ANGMAR_COALITION$#! будет #N распущена#!, если вернётся [Concept('situation_phase', 'фаза')|E] «[GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_arnor_ascendant').GetName]» или завершится фаза «[GetSituationType('angmar_wars_situation').GetPhaseType('angmar_wars_angmar_ascendant').GetName]»."
 
  ### Great Projects ###
 
