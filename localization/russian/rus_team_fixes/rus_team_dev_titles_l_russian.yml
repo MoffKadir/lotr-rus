@@ -1259,3 +1259,89 @@
  decision_esteldirs_plea_tooltip: ""
  decision_esteldirs_plea_confirm: ""
  decision_esteldirs_plea_tt: ""
+
+
+
+
+
+
+
+
+
+
+ kin_strife.0002.t: "Гондор в огне"
+ kin_strife.0002.desc: "Из земель Гондора пришли новости. Давно назревавший спор о наследовании гондорского трона достиг апогея, и теперь между фракциями при гондорском дворе разразилась открытая война. Сейчас никто не может сказать, как долго продлится война, но на данный момент тяжёлый взор Гондора устремлён вовнутрь, поскольку их собственный дом трещит по швам и балансирует на грани краха.\n\nЭто даёт редкую возможность, если мы захотим ею воспользоваться. Мы могли бы попытаться, наконец, сбросить иго Гондора и обрести независимость. Однако такой шаг со временем может повлечь за собой суровое возмездие, если ущерб от гражданской войны не будет серьёзным. В качестве альтернативы, мы могли бы выждать время, прежде чем начать действовать, и, возможно, даже поторговаться с одной из фракций об уступках в обмен на нашу помощь..."
+ kin_strife.0002.a: "Время пришло, мы больше не преклонимся перед Крылатой короной!"
+ kin_strife.0002.b: "Не стоит торопиться. Нужно выждать и оценить наши возможности."
+
+ kin_strife.0003.t: "Kin Strife Situation Intro Event Title"
+ kin_strife.0003.desc: "Kin Strife Situation Intro Event Description - General idea of the Kin-Strife for any participant. Participants are people that are involved, so neutral/purist/loyalists characters"
+ kin_strife.0003.a: "Just an 'ok, cool' response"
+
+
+
+
+ great_project_type_kin_strife_expansion_cb: "Расширить #ONCLICK:TITLE,e_gondor #TOOLTIP:LANDED_TITLE,e_gondor #L Гондор#!#!#!"
+ great_project_type_kin_strife_expansion_cb_desc: "#DEBUG Expand [GetTitleByKey('e_gondor').GetName] Description#!"
+ great_project_type_kin_strife_contribution_win_tt: "[GetTitleByKey('e_gondor').GetHolder.GetShortUIName|U] [Select_CString( GetTitleByKey('e_gondor').GetHolder.IsLocalPlayer, 'станете', 'станет')] [Select_CString(GetTitleByKey('e_gondor').GetHolder.IsFemale, 'новой', 'новым' )] [Concept('holder', Select_CString(GetTitleByKey('e_gondor').GetHolder.IsFemale, 'владелицей', 'владельцем' ))|E] оспариваемых [Concept('titles', 'титулов')|E]"
+ great_project_type_kin_strife_expansion_cb_contribution_kingdom_attack: "Начать вторжение против королевства"
+ great_project_type_kin_strife_expansion_cb_location_valid: "Владелец этого [Concept('county', 'графства')|E] является [Concept('independent', 'независимым')|E]"
+
+
+
+ KIN_STRIFE_MAPMODE_TOOLTIP: "#T [ROOT.Province.MakeScope.Var('kin_strife_participant').GetFlagName]#!"
+ KIN_STRIFE_LOYALIST: "Лоялисты"
+ KIN_STRIFE_PURIST: "Сторонники чистоты крови"
+ KIN_STRIFE_NEUTRAL: "Нейтралитет"
+ KIN_STRIFE_NOT_INVOLVED: "Не вовлечены"
+
+
+
+ KIN_STRIFE_MAPMODE_TOOLTIP_PARTICIPANT_GROUP: "WILLI"
+ KIN_STRIFE_TEST: "#DEBUG TITLE TEST#!"
+ KIN_STRIFE_TEST_PARTICIPANT_GROUP: "#DEBUG PARTICIPANT GROUP TEST#!"
+
+
+
+ interaction_kin_strife: "Распря родичей"
+ kin_strife_filter_tag_desc: "Взаимодействия Распри родичей"
+
+
+
+ decision_group_type_kin_strife_decisions: "Решения Распри родичей"
+
+
+
+ d_kin_strife_loyalist: "Лоялисты"
+ d_kin_strife_purist: "Сторонники чистоты крови"
+ d_kin_strife_neutral: "Нейтралитет"
+
+
+
+ trait_kin_strife_loyalist: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Лоялистка', 'Лоялист' )]"
+ trait_kin_strife_loyalist_leader: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Предводительница', 'Предводитель' )] лоялистов"
+ trait_kin_strife_loyalist_desc: "Этот персонаж считает, что до тех пор, пока король Гондора является законным наследником по прямой линии и придерживается нуменорских обычаев, его происхождение не вызывает особого беспокойства."
+ trait_kin_strife_loyalist_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] считает, что до тех пор, пока король Гондора является законным наследником по прямой линии и придерживается нуменорских обычаев, его происхождение не вызывает особого беспокойства."
+ trait_kin_strife_loyalist_leader_desc: "Этот персонаж возглавляет лоялистов, отстаивающих интересы законных претендентов на трон Гондора, независимо от их происхождения."
+
+ trait_kin_strife_purist: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Сторонница', 'Сторонник' )] чистоты крови"
+ trait_kin_strife_purist_leader: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Предводительница', 'Предводитель' )] сторонников чистоты крови"
+ trait_kin_strife_purist_desc: "Этот персонаж считает, что только те, кто имеет чистокровное нуменорское происхождение, должны править Гондором как короли, возвышаясь над всеми другими королями людей."
+ trait_kin_strife_purist_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] считает, что только те, кто имеет чистокровное нуменорское происхождение, должны править Гондором как короли, возвышаясь над всеми другими королями людей."
+ trait_kin_strife_purist_leader_desc: "Этот персонаж возглавляет сторонников чистоты крови и утверждает, что только безупречный претендент на чистое наследие и родословную достоин сидеть на троне Гондора."
+
+
+
+ KIN_STRIFE_CB_NAME: "Гражданская война Распри родичей"
+ KIN_STRIFE_VICTORY_DEFENDER_DESC: "#DEBUG You will lose your primary [title|E] go in to exile#!"
+ KIN_STRIFE_VICTORY_ATTACKER_DESC: "#DEBUG [attacker.GetShortUIName|U] will proclaim yourself as the rightful king of [defender.GetPrimaryTitle.GetNameNoTooltip]#!"
+ KIN_STRIFE_DEFEAT_DEFENDER_DESC: "#V Вы#! сохраняете свои [Concept('titles', 'титулы')|E], а [attacker.GetShortUIName|U] [Select_CString( attacker.IsLocalPlayer, 'отправитесь', 'отправится')] в изгнание."
+ KIN_STRIFE_DEFEAT_ATTACKER_DESC: "[defender.GetShortUIName|U] [Select_CString( defender.IsLocalPlayer, 'сохраняете', 'сохраняет')] свои [Concept('titles', 'титулы')|E], а #V вы#! будете вынуждены отправиться в изгнание."
+ KIN_STRIFE_CB.DECLARED_FLAVOR: "#DEBUG Temp#!"
+
+
+
+ kin_strife_support_purist: "Приверженцы сторонников чистоты крови"
+ kin_strife_support_purist_desc: "Этот дом и многие его члены, публично или нет, связаны и поддерживают фракцию сторонников чистоты крови."
+ kin_strife_support_loyalist: "Приверженцы лоялистов"
+ kin_strife_support_loyalist_desc: "Этот дом и многие его члены, публично или нет, связаны и поддерживают фракцию лоялистов."
