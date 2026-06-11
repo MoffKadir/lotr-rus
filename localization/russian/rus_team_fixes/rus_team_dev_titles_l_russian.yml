@@ -998,7 +998,22 @@
  ### Toasts ###
 
  county_devastated_toast: "Владение [devastated_county.GetName] [Concept('devastated', 'опустошено')|E]"
- county_devastated_toast_desc: "[actor.GetName] [Concept('devastated', Select_CString(actor.IsFemale, 'опустошила', 'опустошил' ))|E] владение [devastated_county.GetName]"
+ county_devastated_toast_desc: "[devastated_county.GetName] было [Concept('devastated', 'опустошено')|E] #N [severity]#! раз [devastated_county.Custom('get_devastation_reason')] [actor.GetName]."
+ DEVASTATION_REASON_CASUS_BELLI_DEVASTATE_COUNTY: "из-за опустошения графства, устроенного персонажем" #[GetCasusBelliType('angmar_wars_devastate_county_cb').GetName]
+ DEVASTATION_REASON_CASUS_BELLI_DEVASTATE_DUCHY: "из-за опустошения герцогства, устроенного персонажем" #[GetCasusBelliType('angmar_wars_devastate_duchy_cb').GetName]
+ DEVASTATION_REASON_CASUS_BELLI_INVASION: "из-за вторжения Ангмарских войн, устроенного персонажем" #[GetCasusBelliType('angmar_wars_invasion_cb').GetName]
+ DEVASTATION_REASON_CASUS_BELLI_DESTROY_ARNOR: "из-за уничтожения [Concept('arnor', 'Арнора')|E] от рук персонажа"
+ DEVASTATION_REASON_CASUS_BELLI_DESTROY_ANGMAR: "из-за уничтожения [Concept('angmar', 'Ангмара')|E] от рук персонажа"
+ DEVASTATION_REASON_CASUS_BELLI_RAID: "из-за налёта, устроенного персонажем" #[GetCasusBelliType('angmar_wars_raid_cb').GetName]
+ DEVASTATION_REASON_MILITARISE_DUCHY: "из-за милитаризации графства [devastated_county.GetDeJureLiege.GetName] по приказу персонажа"
+ DEVASTATION_REASON_SIEGE: "из-за того, что оно было осаждено персонажем"
+ DEVASTATION_REASON_RAID: "из-за того, что оно было [Concept('raided', 'разорено')|E] персонажем"
+ DEVASTATION_REASON_BATTLE: "из-за сражения против персонажа"
+ DEVASTATION_REASON_RANDOM_MONTHLY: "от случайных тягот [Concept('angmar_wars_situation', 'войны')] под началом персонажа"
+ DEVASTATION_REASON_ORC_RAIDS: "из-за отряда [Concept('orcs', 'орков')|E]-налётчиков под началом персонажа"
+ DEVASTATION_REASON_FALLBACK: "из-за разорения по приказу персонажа"
+
+ devastate_county_secondary_effect_tt: "#high [devastated_county.GetName] может случайно потерять случайные [Concept('buildings', 'постройки')|E], @gold_icon! [Concept('gold', 'золото')|E] или случайное количество @development_icon! [Concept('development', 'развития')|E].#!"
 
  devastate_county_cb_toast: "Графство опустошено"
  devastate_duchy_cb_toast: "Герцогство опустошено"
@@ -1178,6 +1193,18 @@
  angmar_wars_militarise_duchy_fort_modifier_tt: "Все [Concept('county', 'графства')|E] в выбранном [Concept('duchy', 'герцогстве')|E] и [Concept('capital', 'столица')|E] [Concept('great_project_contributor_possessive', 'участника')|E] получат модификатор «[GetModifier('angmar_wars_militarise_duchy_fort_modifier').GetNameWithTooltip]»"
  angmar_wars_militarise_duchy_control_modifier_tt: "Все [Concept('county', 'графства')|E] в выбранном [Concept('duchy', 'герцогстве')|E] и [Concept('capital', 'столица')|E] [Concept('great_project_contributor_possessive', 'участника')|E] получат модификатор «[GetModifier('angmar_wars_militarise_duchy_control_modifier').GetNameWithTooltip]» и #P [minister_control_boost_value]#! @control_icon![Concept('county_control', 'контроля')|E] #weak (значение зависит от [Concept('martial_skill', 'навыка военного дела')|E] [Concept('great_project_contributor', 'участника')|E])#!, и открывает [Concept('absolute_control', 'абсолютный контроль')|E] для [Concept('rulers', 'правителей')|E] в пределах выбранного [Concept('duchy', 'герцогства')|E]"
 
+ # Support Outlying Duchy 
+ great_project_type_angmar_wars_support_outlying_duchy: "Поддержать отдалённые герцогства"
+ great_project_type_angmar_wars_support_outlying_duchy_desc: "По мере того как [Concept('angmar_wars_situation', 'Ангмарские войны')|E] затягиваются, границы державы [owner.GetPrimaryTitle.GetName] становятся всё более слабыми, а положение тех, кто живёт рядом с ними, ухудшается. Хотя я могу направить их обратно в наше сердце, возможно, вместо этого стоит вложиться в эти отдалённые земли, чтобы укрепить их против разрушений войны."
+ great_project_type_angmar_wars_support_outlying_duchy_contribution_personnel: "Квалифицированные рабочие"
+ great_project_type_angmar_wars_support_outlying_duchy_contribution_engineers: "Строительные припасы"
+ great_project_type_angmar_wars_support_outlying_duchy_contribution_infrastructure: "Расширенная инфраструктура"
+ great_project_type_angmar_wars_support_outlying_duchy_contribution_increase_garrisons: "Усиление гарнизонов"
+ great_project_type_angmar_wars_support_outlying_duchy_contribution_rule_of_law: "Укрепление верховенства закона"
+ great_project_type_angmar_wars_support_outlying_duchy_contribution_settlers: "Прибывающие поселенцы"
+ angmar_wars_support_outlying_duchy_effect_desc: "Все [Concept('county', 'графства')|E] в выбранном [Concept('duchy', 'герцогстве')|E] получат #P [project_development_value]#! @development_icon! [Concept('development_growth', 'роста развития')|E] и модификатор «[GetModifier('tgp_angmar_wars_support_outlying_duchy_modifier').GetNameWithTooltip]»"
+ angmar_wars_support_outlying_duchy_building_desc: "Все [Concept('holding', 'владения')|E] в [Concept('duchy', 'герцогстве')|E] получат одну случайную [Concept('building', 'постройку')|E]"
+
  ### Modifiers ###
 
  angmar_wars_forced_assimilation: "Принудительная ассимиляция"
@@ -1190,6 +1217,12 @@
  angmar_wars_militarise_duchy_fort_modifier_desc: "По всему этому [Concept('county', 'графству')|E] были отремонтированы стены, усилено патрулирование и собраны припасы для подготовки к вторжению."
  angmar_wars_militarise_duchy_control_modifier: "Постоянная бдительность"
  angmar_wars_militarise_duchy_control_modifier_desc: "Ничто в этом [Concept('county', 'графстве')|E] не проходит незамеченным [Concept('witchkingshort', 'Королём-чародеем')|E]."
+ tgp_angmar_wars_support_outlying_duchy_modifier: "Укрепление графства"
+ tgp_angmar_wars_support_outlying_duchy_modifier_desc: "Это [Concept('county', 'графство')|E] было укреплено против разрушений [Concept('angmar_wars_s', 'рыцари')|E]Ангмарских войн благодаря поддержке своего [Concept('liege', 'сюзерена')|E]."
+ angmar_wars_support_outlying_duchy_control_modifier: "Усиление контроля"
+ angmar_wars_support_outlying_duchy_control_modifier_desc: "В этом [Concept('county', 'графстве')|E] проводится систематическая кампания по снижению уровня преступности и разбоя, искоренению коррупции и восстановлению верховенства закона для всех его жителей."
+ angmar_wars_support_outlying_duchy_settler_modifier: "Приток поселенцев"
+ angmar_wars_support_outlying_duchy_settler_modifier_desc: "Это [Concept('county', 'графство')|E] недавно стало свидетелем массовой волны переселенцев из центральных районов, и оно более устойчиво к потенциальным трудностям."
 
  ### Interactions ###
 
