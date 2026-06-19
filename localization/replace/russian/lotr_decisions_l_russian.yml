@@ -1343,6 +1343,12 @@
  decision_destroy_tarma_tar_calion_confirm: "Запад падёт!"
  decision_destroy_tarma_tar_calion_tt: "$building_wonder_tar_calion$ уничтожен"
 
+ decision_azruneth_treasure_map: "Отправиться на поиски сокровищ Апайрабанды"
+ decision_azruneth_treasure_map_desc: "Перед своей безвременной кончиной мой отец получил в своё распоряжение карту, которая, как говорили, вела к легендарным сокровищам Апайрабанды, свирепой и могущественной группы пиратов, которые когда-то обитали в далёком Ормальском заливе. Если сокровище действительно так велико, как говорят легенды, это могло бы стать большим благом для моего дела. Но путешествие будет долгим - мы должны пересечь весь [Concept('haradwaith', 'Харадвайт')|E] или обогнуть дальний мыс [Concept('thanihazad', 'Тани-Хазада')|E], чтобы добраться до этих далёких морей. Нужно будет создать новую оперативную базу, с которой я смогу начать поиски сокровищ..."
+ decision_azruneth_treasure_map_tooltip: "Отправить экспедицию на поиски сокровищ Апайрабанды"
+ decision_azruneth_treasure_map_confirm: "Подготовить передовой отряд!"
+ travel_to_new_pirate_haven: "Вы отправитесь к началу Ормальского залива"
+
  decision_solidify_adunaim: "Укрепить правление адунаим"
  decision_solidify_adunaim_desc: "Мы, Ар-Адунаим, являемся законными наследниками [Concept('numenor', 'Нуменора')|E], и как таковые, мы должны править этими малыми землями железной рукой, не проявляя милосердия к тем, кто будет противостоять нам. Мы должны сделать пример из любого, кто осмелится оспорить наше правление, чтобы все знали о последствиях выступления против нас.\n\nНужно твёрдо установить наше господство над этими землями, и пусть все, кто живёт здесь, знают, что мы - истинные правители, и что любой, кто выступит против нас, будет сокрушён нашей мощью!"
  decision_solidify_adunaim_tooltip: "Укрепить свою титулярную [Concept('empire', 'империю')|E]"
@@ -1503,6 +1509,26 @@
  decision_eira_assassination_desc: "Губернатор Тарбада - самая могущественная фигура в [Concept('enedhwaith', 'Энедвайте')|E], и именно он отравил моего отца. Если бы я [Select_CString(ROOT.Char.IsFemale, 'убила', 'убил' )] его, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы нанести существенный удар по гондорской власти в регионе и отомстить за смерть моего отца. Однако это был бы рискованный шаг, поскольку губернатор хорошо защищён и у него много преданных сторонников. Тем не менее, если я смогу осуществить задуманное, это послужит серьёзным сигналом для народов Энедвайта и потенциально ослабит власть гондорцев в регионе."
  decision_eira_assassination_confirm: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] быть [Select_CString(ROOT.Char.IsFemale, 'мягка и быстра', 'мягок и быстр' )], как тень."
  decision_eira_assassination_tooltip: "Убить персонажа [GetTitleByKey('c_harabad').GetHolder.GetTitledFirstName]"
+
+ decision_rlain_confederation: "Объединить вождей"
+ decision_rlain_confederation_desc: "Вожди [Concept('enedhwaith', 'Энедвайта')|E] долгое время бездействовали, спокойно терпя иго [Concept('gondor', 'Гондора')|E], словно стадо бесхребетных псов. Довольно, сегодня я покончу с этим! Я объединю вождей под единым знаменем, и вместе мы восстанем против наших угнетателей и вернём себе свободу... и в процессе завладеем несметными богатствами!"
+ decision_rlain_confederation_confirm: "Вожди встанут под моё знамя!"
+ decision_rlain_confederation_tooltip: "Объединить вождей [Concept('enedhwaith', 'Энедвайта')|E] под вашим знаменем."
+ all_indep_rulers_in_enedhwaith_influenced: "Не менее #high 4#! [Concept('independent', 'независимых')|E] [Concept('rulers', 'правителей')|E]-[Concept('human', 'людей')|E] в провинции #high [GetTitleByKey('k_enedhwaith').GetName]#! соответствуют следующим условиям:\n$EFFECT_LIST_BULLET$#high Ваши#! [Concept('friend', 'друзья')|E]\n$EFFECT_LIST_BULLET$#high Ваши#! [Concept('ally', 'союзники')|E]\n$EFFECT_LIST_BULLET$ #high Ваши#! [Concept('lover', 'любовники')|E]\n$EFFECT_LIST_BULLET$#high Находятся под #high вашим#! [Concept('hooked', 'влиянием')|E]\n$EFFECT_LIST_BULLET$Имеют о #high вас#! #P 60#! или больше [Concept('opinion', 'мнения')|E]"
+ BRAZEN_BFRIGANDS: "Дерзкая лига"
+
+ decision_rlain_open_war: "Захватить Энедвайт"
+ decision_rlain_open_war_desc: "Вожди объединились под моим знаменем, и сейчас самое время нанести удар. Мы объявим открытую войну [Concept('gondor', 'Гондору')|E] и объединённой мощью наших кланов сокрушим их силы и возьмём под свой контроль [Concept('enedhwaith', 'Энедвайт')|E] раз и навсегда!"
+ decision_rlain_open_war_confirm: "Созвать знамёна!"
+ decision_rlain_open_war_tooltip: "Начать войну за вторжение в [Concept('enedhwaith', 'Энедвайт')|E]"
+ has_formed_brigand_confed: "Вы завершили [Concept('decision', 'решение')|E] «[GetDecision('decision_rlain_confederation').GetName]»"
+ confederates_join_war: "Члены вашей [Concept('confederation', 'конфедерации')|E] присоединятся к нападающим"
+
+ decision_rlain_convert_faith: "Найти новые убеждения"
+ decision_rlain_convert_faith_desc: "Древние речные боги #ONCLICK:FAITH,faith_gwathuirim_dynion #TOOLTIP:FAITH,faith_gwathuirim_dynion сказаний о Фэарагн#!#! начали уходить в небытие, и старые обычаи умирают. Люди ищут новые верования, за которые можно было бы держаться, и я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы стать [Select_CString(ROOT.Char.IsFemale, 'той', 'тем' )], кто их даст.\n\nНа севере мы слышим рассказы о горцах [Concept('rhudaur', 'Рудаура')|E], наших дальних родичах, которые приняли [GetFaithByKey('faith_angmar_azira').GetAdjective|l], Волчьего повелителя Холодных ветров. Говорят, что они заключили союз с могущественным королём зимы, который стремится сокрушить власть [Concept('arnor', 'Арнора')|E], братского королевства ненавистного [Concept('gondor', 'Гондора')|E].\n\nКазалось бы, его цели не так уж сильно отличаются от моих, и если бы я [Select_CString(ROOT.Char.IsFemale, 'приняла', 'принял' )] поклонение Азире, я, возможно, даже [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] бы заручиться поддержкой горцев и самого таинственного Повелителя зимы..."
+ decision_rlain_convert_faith_confirm: "Да направит нас Волчий бог."
+ decision_rlain_convert_faith_tooltip: "Начать почитать [GetFaithByKey('faith_angmar_azira').GetAdjective|l]"
+ is_terrified_of_you_tt: "[terrified_i|E] [Concept('cowed', 'Устрашены')|E] #high вами#!"
 
  #######################
  ### Shire Decisions ###
@@ -2307,11 +2333,11 @@
  #recall_golden_king: "Отозвать Золотого Короля, который отречётся в пользу вассала."
 
  decision_destroy_mordor: "Уничтожить Мордор"
- decision_destroy_mordor_tooltip: "Начать великую битву, чтобы раз и навсегда уничтожить Мордор и Саурона"
+ decision_destroy_mordor_tooltip: "Начать последнюю войну, чтобы раз и навсегда уничтожить Мордор и Саурона."
  decision_destroy_mordor_desc: "Слишком долго Гондор оборонялся, с трудом удерживая свои земли, пока Мордор набирал силу. Довольно! Покончим с этим раз и навсегда."
  decision_destroy_mordor_generic_desc: "Слишком долго Мордору позволяли крепнуть, в то время как нам едва удавалось удерживать свои земли. Довольно! Покончим с этим раз и навсегда."
  decision_destroy_mordor_confirm: "Пришло время положить этому конец."
- destroy_mordor_decision: "Начать последнюю войну, чтобы раз и навсегда уничтожить Мордор и Саурона"
+ destroy_mordor_decision: "Начать последнюю войну, чтобы раз и навсегда уничтожить [Concept('mordor', 'Мордор')|E] и [Concept('sauroncharacter', 'Саурона')|E]"
  destroy_mordor_decision_current_military_strength_default_tt: "Ваши войска равны по численности по крайней мере половине текущих войск Мордора."
  destroy_mordor_decision_current_military_strength_elven_tt: "Ваши войска равны по численности по крайней мере четверти текущих войск Мордора."
  destroy_mordor_decision_current_military_strength_dwarven_tt: "Ваши войска равны по численности по крайней мере трети текущих войск Мордора."
@@ -4426,6 +4452,13 @@
  decision_khorahil_fortify_east_confirm: "Подготовить оборону."
  decision_khorahil_fortify_east_effect.tt: "Все [Concept('county', 'графства')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('special_region_khorahil_fortify_coasts_east').GetName] получат [Concept('county_modifier', 'модификатор')|E] «[GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L]»."
  ormal_building_3_tt: "Не менее в 3 графствах в регионе [GetGeographicalRegion('special_region_khorahil_fortify_coasts_east').GetName] построены [GetBuilding('march_01').GetName] или [GetBuilding('tunnel_network_01').GetName]."
+
+ decision_khorahil_indoctrinate_harshandatt: "Индоктринировать Харшандатт"
+ decision_khorahil_indoctrinate_harshandatt_tooltip: "Получить [Concept('special_troops', 'особые войска')|E] от Харшандатта."
+ decision_khorahil_indoctrinate_harshandatt_desc: "У народов Харшандатта долгая память. Хотя большинство из них поклоняются своим жалким нхазадам, [GetFaithByKey('faith_sened').GetAdjective|l] всё ещё помнит ужас, который я [Select_CString(ROOT.Char.IsFemale, 'навела', 'навёл' )] во [Concept('secondage', 'Вторую эпоху')|E]. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] ещё раз продвинуть этот культ."
+ decision_khorahil_indoctrinate_harshandatt_confirm: "Воспряньте, сыны Бури!"
+ decision_khorahil_indoctrinate_harshandatt.tt: "Обратить большую часть #ONCLICK:TITLE,e_harshandatt #TOOLTIP:LANDED_TITLE,e_harshandatt #L Харшандатта#!#!#! в [GetFaithByKey('faith_sened').GetAdjective|l]."
+ khorahil_zealots_army_name: "Сенедийские фанатики"
 
  decision_khorahil_destroy_bellakar: "Уничтожить Беллакар"
  decision_khorahil_destroy_bellakar_tooltip: "Начать войну за опустошение Беллакара"
