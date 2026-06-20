@@ -186,6 +186,14 @@
  decision_integrate_nanduhirion_tooltip: "Расширить границы Лориэна на запад"
  decision_integrate_nanduhirion_confirm: "Нандуирион станет нашим западным оплотом."
 
+ decision_moria_trade: "Наладить торговлю с Кхазад-думом"
+ decision_moria_trade_desc: "[Concept('dwarves', 'Гномы')|E] [Concept('khazaddum', 'Кхазад-дума')|E] славятся своим мастерством и сноровкой в работе с металлами и драгоценными камнями. Если бы нам удалось заключить с ними торговое соглашение, мы могли бы получить доступ к их превосходным товарам и ресурсам, в то время как они могли бы извлекать выгоду из наших поставок продовольствия и наших знаний об окружающем мире."
+ decision_moria_trade_tooltip: "Заключить торговое соглашение с гномами Кхазад-дума"
+ decision_moria_trade_confirm: "Отправить послов в Кхазад-дум."
+ decision_moria_trade_border_moria: "Ваша [Concept('realm', 'держава')|E] граничит с [Concept('khazaddum', 'Кхазад-думом')|E]"
+ decision_moria_trade_defensively_allied: "Вы заключили [Concept('defensive_alliance', 'оборонительный союз')|E] с персонажем #high [GetTitleByKey('k_khazad_dum').GetHolder.GetTitledFirstName]#!"
+ decision_moria_trade_toast: "Торговая сделка заключена"
+
  decision_cross_the_anduin: "Пересечь Андуин"
  decision_cross_the_anduin_desc: "На дальнем берегу Великой реки сгущается тьма. Дурное влияние [Concept('dolguldur', 'Дол-Гулдура')|E] распространилось среди людей, живущих в землях между [Concept('anduin', 'Андуином')|E] и [Concept('mirkwood', 'Лихолесьем')|E], и многие начали поддаваться влиянию призрака, который ныне навис над Амон Ланком.\n\nС помощью верных леофрингов мы должны пересечь Андуин и отбросить надвигающуюся тьму, пока она не стала настолько могущественной, что поглотит Золотой лес..."
  decision_cross_the_anduin_tooltip: "Помощь леофрингам с их притязаниями на Драунхольт"
@@ -366,6 +374,18 @@
  decision_fortify_southern_pass_desc: "За городом [GetTitleByKey('c_caras_sant').GetNameNoTier] лежит горный перевал, ведущий в земли, принадлежащие истерлингам #L [GetTitleByKey('e_rhun').GetNameNoTier]а#!. Хотя люди [Concept('rhun', 'Руна')|E] часто торговали с нами, с такой же вероятностью они вторгнутся в наши земли, если представится возможность.\n\nЧтобы защититься от любой угрозы с юга, мы должны укрепить наши границы к югу от Карас Санта, построив крепость прямо на выходе из горного перевала, создав легко обороняемую точку пересечения."
  decision_fortify_southern_pass_confirm: "Немедленно начать строительство!"
 
+ decision_dorwinion_confederation: "Создать лигу Винного края"
+ decision_dorwinion_confederation_tooltip: "Создать [Concept('confederation', 'конфедерацию')|E] с другими [Concept('rulers', 'правителями')|E] [Concept('dorwinion', 'Дорвиниона')|E]"
+ decision_dorwinion_confederation_desc: "[Concept('rulers', 'Правители')|E] [Concept('dorwinion', 'Дорвиниона')|E] долгое время были разделены, и каждый властитель и бургомистр руководствовался своими собственными землями и интересами. Хотя это обеспечило большую свободу и процветание, это также сделало нас уязвимыми перед внешними угрозами и внутренними раздорами.\n\nВозможно, пришло время забыть о наших разногласиях и создать [Concept('confederation', 'конфедерацию')|E], объединив наши силы и ресурсы под единым знаменем. Вместе мы сможем обеспечить безопасность и процветание всех народов, населяющих Винный край Дорвиниона."
+ decision_dorwinion_confederation_confirm: "Вместе мы сильнее." # Vintners. Together. Strong.
+ decision_dorwinion_confederation_tt: "Вы заключите [Concept('confederation', 'конфедерацию')|E] со всеми #high влиятельными#! [Concept('rulers', 'правителями')|E]"
+ LEAGUE_OF_THE_WINELANDS: "Лига Винного края"
+ is_independent_human_in_dorwinion: "Является [Concept('independent', 'независимым')|E] [Concept('ruler', 'правителем')|E]-[Concept('human', 'человеком')|E]"
+ you_have_strong_hook_on_tt: "Находится под #high вашим#! [Concept('hooked', 'влиянием')|E]"
+ you_are_friends_with_tt: "Является вашим [Concept('friend', 'другом')|E]"
+ you_are_allied_to_tt: "Является #high вашим#! [Concept('allied', 'союзником')|E]"
+ all_indep_rulers_in_dorwinion_influenced: "Не менее #high 4#! [Concept('independent', 'независимых')|E] [Concept('rulers', 'правителей')|E]-[Concept('human', 'людей')|E] в регионе #high [GetGeographicalRegion('middleearth_west_rhovanion_dorwinion').GetName]#! соответствуют следующим требованиям:\n$EFFECT_LIST_BULLET$#high Ваши#! [Concept('friend', 'друзья')|E]\n$EFFECT_LIST_BULLET$#high Ваши#! [Concept('ally', 'союзники')|E]\n$EFFECT_LIST_BULLET$Находятся под #high вашим#! [Concept('hooked', 'влиянием')|E]\n$EFFECT_LIST_BULLET$Имеют о #high вас#! #P 80#! или больше [Concept('opinion', 'мнения')|E]"
+
  ###########################
  ### Activities Decision ###
  ###########################
@@ -418,6 +438,7 @@
  decision_palantir_desc: "В самой верхней башне вашего замка на мраморном столбе покоится покрытая чёрной тканью сфера. Палантир может стать мощным оружием, но стоит ли рисковать?"
  decision_palantir_confirm: "Ни одна тайна не останется скрытой."
  decision_palantir_tt: "Вы владеете [Concept('palantirone', 'палантиром')|E]"
+ decision_palantir_effect: "Вы можете получить [Concept('perks', 'достоинства')|E] [Concept('lifestyle', 'образа жизни')|E] или [Concept('stress', 'стресс')|E]"
 
  #################################
  ### Minor Lifestyle Decisions ###
@@ -555,6 +576,7 @@
  decision_abandon_watch_on_mordor_desc_tooltip: "Вы покинете дозор в [Concept('mordor', 'Мордоре')|E]."
  decision_abandon_watch_on_mordor_confirm: "Дозор окончен."
  decision_abandon_watch_on_mordor_custom_desc: "[GetTitleByKey('d_watch_on_mordor').GetNameNoTier] подошёл к концу, его воины присоединятся к вашим войскам."
+ decision_abandon_watch_on_modor_effect: "Все [Concept('counties', 'графства')|E] в пределах [Concept('realm', 'державы')|E] персонажа [GetTitleByKey('d_watch_on_mordor').GetHolder.GetTitledFirstName] вернутся в состояние [Concept('wilderness', 'дебрей')|E]"
 
  decision_rebuild_royal_road: "Восстановить Королевский тракт"
  decision_rebuild_royal_road_desc: "Королевский тракт, известный некоторым как Дорога с севера на юг или Зеленая дорога, давно пришла в упадок после гибели королевства [arnor|E].\n\nЕсли бы дорога была восстановлена, из северных земель вновь хлынул бы торговый поток, приносящий пользу как [Concept('eriador', 'Эриадору')|E], так и [Concept('gondor', 'Гондору')|E]."
@@ -641,6 +663,21 @@
  decision_adopt_arnorian_culture_vassal_custom: "Каждый [vassal|El] с происходящей от арнорской культурой"
  decision_adopt_arnorian_culture_province_custom: "Каждое [county|El] в пределах вашей [Concept('realm', 'державы')|E] с происходящей от арнорской культурой"
  decision_adopt_arnorian_culture_get_innovations: "Арнорская [Concept('culture', 'культура')|E] получит все #L [culture.GetCollectiveNoun|l]ие#! [Concept('innovations', 'инновации')|E]"
+
+ decision_adopt_new_arnorian_culture: "Создать ново-арнорскую культуру"
+ decision_adopt_new_arnorian_culture_desc: "Когда-то люди [Concept('arnor', 'Арнора')|E] собирали могучие воинства и правили великими королевствами. Увы, столетия войн, разрухи и упадка превратили их в тех, кем они стали, - странников в дебрях, известных немногим и уважаемых ещё меньшим числом людей. Хотя такой образ жизни провёл [Concept('dunedain', 'дунэдайн')|E] Арнора через долгие годы лишений, он также привёл к тому, что они утратили связь со многими обычаями и традициями своих предков.\n\nОднако с воссоединением Арнора и [Concept('gondor', 'Гондора')|E] началась новая эпоха. Большое количество [Concept('gondorians', 'гондорцев')|E] поселилось в северных землях, и народы двух королевств всё больше смешивались. В результате этого союза в Арноре возникла обновлённая культура, сочетающая в себе стойкость и независимость северных дунэдайн с образованностью, традициями и государственным искусством юга."
+ decision_adopt_new_arnorian_culture_confirm: "Воспряньте, сыны Арнора!"
+ decision_adopt_new_arnorian_culture_tooltip: "Принять ново-арнорскую культуру"
+ decision_adopt_new_arnorian_culture_courtier_custom: "Все [Concept('courtier', 'придворные')|E] с происходящей от арнорской культурой"
+ decision_adopt_new_arnorian_culture_vassal_custom: "Все [Concept('vassal', 'вассалы')|E] с происходящей от арнорской культурой"
+ decision_adopt_new_arnorian_gondorian_culture_vassal_custom: "Все [Concept('vassal', 'вассалы')|E] в [Concept('arnor', 'Арноре')|E] с [Concept('gondorian', 'гондорской')|E] [Concept('culture', 'культурой')|E]"
+ decision_adopt_new_arnorian_culture_province_custom: "Все [Concept('county', 'графства')|E] в вашей [Concept('realm', 'державе')|E] с происходящей от арнорской культурой"
+ decision_adopt_new_arnorian_gondorian_culture_province_custom: "Все [Concept('county', 'графства')|E] в [Concept('arnor', 'Арноре')|E] с [Concept('gondorian', 'гондорской')|E] [Concept('culture', 'культурой')|E]"
+ decision_adopt_new_arnorian_culture_get_innovations: "Ново-арнорская [Concept('culture', 'культура')|E] получает все #L [culture.GetCollectiveNoun|l]ие#! [Concept('innovations', 'инновации')|E]"
+ all_unlanded_family_members_new_arnor: "Все безземельные [Concept('family_members', 'члены семьи')|E] [Select_CString(THIS.GetCharacter.IsLocalPlayer, '', 'персонажа ' )][THIS.GetCharacter.GetShortUINamePossessive][Select_CString(THIS.GetCharacter.IsLocalPlayer, 'его персонажа', '' )] с происходящей от арнорской культурой"
+ owns_40_percent_of_arnor: "Вы должны контролировать не менее #V 20%#! [Concept('counties', 'графств')|E] [Concept('region', 'региона')|E] [GetGeographicalRegion('middleearth_west_arnor').GetName]"
+
+
 
  decision_integrate_the_northern_provinces: "Интегрировать северные провинции"
  decision_integrate_the_northern_provinces_desc: "Самый дальний север лишь номинально входил в состав Северного королевства, а после [Concept('lastalliance', 'Войны Последнего союза')|E] у [Concept('arnor', 'Арнора')|E] не хватило сил заявить о своих притязаниях. Именно в этом вакууме [Concept('witchking', 'Король-чародей')|E] создал ужасающее королевство [Concept('angmar', 'Ангмар')|E].\n\nЕсли северные пустоши наконец-то окажутся под контролем [Concept('dunedain', 'дунэдайн')|E], их можно будет подчинить Скипетру как в теории, так и на практике, а любая угроза с севера будет отведена навеки."
@@ -890,8 +927,8 @@
  decision_reunify_dunedain_tooltip: "Мы - [dunedain|El]."
  decision_reunify_dunedain_confirm: "Мы - дунэдайн."
  decision_reunify_dunedain_get_innovations: "#L [dunedain_culture.GetCollectiveNoun]ая#! [culture|El] получит все #L [arnorian_culture.GetCollectiveNoun|l]ие#! и #L [gondorian_culture.GetCollectiveNoun|l]ие#! [innovations|El]"
- decision_reunify_dunedain_vassals_custom: "Каждый $arnorian_collective_noun$ий и $gondorian_collective_noun$ий [vassal|El]"
- decision_reunify_dunedain_counties_custom: "Каждое $arnorian_collective_noun$ое и $gondorian_collective_noun$ое [county|El] в вашей [Concept('realm', 'державе')|E]"
+ decision_reunify_dunedain_vassals_custom: "Каждый $arnorian_collective_noun$ий и $gondorian_collective_noun$ий [character|El]"
+ decision_reunify_dunedain_counties_custom: "Каждое $arnorian_collective_noun$ое и $gondorian_collective_noun$ое [county|El]"
 
  decision_reclaim_royal_lineage: "Восстановить королевский род дунэдайн"
  decision_reclaim_anarion_lineage: "$decision_reclaim_royal_lineage$"
@@ -1123,6 +1160,7 @@
 
  gondor_kingship_tt_dynasty: "#P;bold 3 очка:#! Вы являетесь членом [Concept('dynasty', 'династии')|E] [CHARACTER.GetDynastyName] или [TARGET_CHARACTER.GetDynastyName]"
  finished_anarion_legend_tt: "#P;bold 3 очка:#! Член вашего [Concept('house', 'дома')|E] завершил [Concept('legend', 'легенду')|E] #bold $legend_anarion$#! с [Concept('legend_mythical', 'мифическим')|E] [Concept('legend_quality', 'качеством')|E]."
+ finished_anarion_legend_no_points_tt: "Член вашего [Concept('house', 'дома')|E] завершил [Concept('legend', 'легенду')|E] #bold $legend_anarion$#! с [Concept('legend_mythical', 'мифическим')|E] [Concept('legend_quality', 'качеством')|E]."
  unlock_claim_gondor_kingship_tt: "Получить #P;bold 3 очка:#! для [Concept('decision', 'решения')|E] #EMP $decision_claim_gondor_kingship$#!"
  gondor_kingship_tt_dark_lord: "#P;bold 3 очка:#! Вы победили [Concept('sauronthedarklordcharacter', 'Тёмного властелина Саурона')|E], приняв [decision|El] #bold $decision_destroy_mordor$#!"
  gondor_kingship_tt_parents_dynasty: "#P;bold 2 очка:#! Один из ваших родителей принадлежит к [Concept('dynasty', 'династии')|E] [CHARACTER.GetDynastyName] или [TARGET_CHARACTER.GetDynastyName]"
@@ -1299,6 +1337,23 @@
  decision_arminalethor_confirm: "Восстань, сын Арминалета!"
  decision_arminalethor_tt: "Арминалетор построен"
 
+ decision_destroy_tarma_tar_calion: "Низвергнуть $building_wonder_tar_calion$"
+ decision_destroy_tarma_tar_calion_desc: "#TOLKIENQUOTE Хотя впоследствии наступили злые времена, даже последователи Элендиля с гордостью вспоминали прибытие большого войска Ар-Фаразона из глубин моря, и на самом высоком холме над гаванью они установили как памятник большой белый столб. Он был увенчан хрустальным шаром, который отраждал лучи cолнца и луны и сиял, как яркая звезда, которая в самую ясную погоду была видна далеко в Гондоре и в море. Так он стоял, пока после второго подъёма Саурона Умбар не попал под власть его слуг и памятник его унижения был низвергнут.#!\n#QUOTEDCHARACTER Приложение A: «Гондор и наследники Анариона»#!"
+ decision_destroy_tarma_tar_calion_tooltip: "Снести монумент унижения Саурона"
+ decision_destroy_tarma_tar_calion_confirm: "Запад падёт!"
+ decision_destroy_tarma_tar_calion_tt: "$building_wonder_tar_calion$ уничтожен"
+
+ decision_azruneth_treasure_map: "Отправиться на поиски сокровищ Апайрабанды"
+ decision_azruneth_treasure_map_desc: "Перед своей безвременной кончиной мой отец получил в своё распоряжение карту, которая, как говорили, вела к легендарным сокровищам Апайрабанды, свирепой и могущественной группы пиратов, которые когда-то обитали в далёком Ормальском заливе. Если сокровище действительно так велико, как говорят легенды, это могло бы стать большим благом для моего дела. Но путешествие будет долгим - мы должны пересечь весь [Concept('haradwaith', 'Харадвайт')|E] или обогнуть дальний мыс [Concept('thanihazad', 'Тани-Хазада')|E], чтобы добраться до этих далёких морей. Нужно будет создать новую оперативную базу, с которой я смогу начать поиски сокровищ..."
+ decision_azruneth_treasure_map_tooltip: "Отправить экспедицию на поиски сокровищ Апайрабанды"
+ decision_azruneth_treasure_map_confirm: "Подготовить передовой отряд!"
+ travel_to_new_pirate_haven: "Вы отправитесь к началу Ормальского залива"
+
+ decision_solidify_adunaim: "Укрепить правление адунаим"
+ decision_solidify_adunaim_desc: "Мы, Ар-Адунаим, являемся законными наследниками [Concept('numenor', 'Нуменора')|E], и как таковые, мы должны править этими малыми землями железной рукой, не проявляя милосердия к тем, кто будет противостоять нам. Мы должны сделать пример из любого, кто осмелится оспорить наше правление, чтобы все знали о последствиях выступления против нас.\n\nНужно твёрдо установить наше господство над этими землями, и пусть все, кто живёт здесь, знают, что мы - истинные правители, и что любой, кто выступит против нас, будет сокрушён нашей мощью!"
+ decision_solidify_adunaim_tooltip: "Укрепить свою титулярную [Concept('empire', 'империю')|E]"
+ decision_solidify_adunaim_confirm: "Все склонятся перед нами."
+
  ###############################
  ####### Rohan Decisions #######
  ###############################
@@ -1417,7 +1472,7 @@
  unlock_dunmen_heavy_infantry: "Доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('dunmen_heavy_infantry_unlock').GetName]"
 
  decision_convince_dunmen_chieftain: "Убедить дунменских вождей"
- decision_convince_dunmen_chieftain_desc: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] убедить их что-то сделать!" 
+ decision_convince_dunmen_chieftain_desc: "Наши земли издавна были разделены между множеством кланов, которыми правили доблестные вожди и правительницы. Но сейчас настало время объединиться, ибо только вместе мы сможем дать отпор вторгшимся гондорцам, которые в своём высокомерии называют себя хозяевами всех земель между реками Гватло и Изен.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] найти этих вождей и заручиться их поддержкой, чтобы я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] планировать свои следующие шаги в отношениях с Гондором, будучи [Select_CString(ROOT.Char.IsFemale, 'уверенной', 'уверенным' )] в том, что у меня будет единый фронт союзников, которые поддержат меня, когда придёт время..."
  decision_convince_dunmen_chieftain_tooltip: "Отправиться к вождю и побеседовать с ним."
  decision_convince_dunmen_chieftain_confirm: "В путь."
  decision_convince_dunmen_chieftain_confirm_selection: "Выбрать цель"
@@ -1437,6 +1492,48 @@
  dunmen_chieftain_harnangren_loc: "[GetTitleByKey('c_westmarches').GetName]"
  dunmen_chieftain_harnangren_desc: "Харнангрен"
  dunmen_chieftain_harnangren_tooltip: "На реке Изен находится [GetTitleByKey('c_westmarches').GetName], где живут выносливые горцы. Их боевое мастерство не имеет себе равных среди дунменов [Concept('enedhwaith', 'Энедвайта')|E]."
+
+ decision_eira_kingdom: "Провозгласить королевство Высокой Меалы"
+ decision_eira_kingdom_desc: "При поддержке всех значимых вождей мой следующий шаг - провозгласить себя законной правительницей всего [Concept('enedhwaith', 'Энедвайт')|E] и основать королевство, которое сможет соперничать даже с великими королевствами юга. Родится королевство Высокой Меалы, а вместе с ним и новая эра для нашего народа!"
+ decision_eira_kingdom_confirm: "Я приму корону, в которой было отказано моему отцу."
+ decision_eira_kingdom_tooltip: "Провозгласить себя королевой, стремясь объединить весь [Concept('enedhwaith', 'Энедвайт')|E] под своей властью."
+ decision_eira_kingdom_tt: "Вы убедили всех вождей поддержать вас"
+ has_found_tharbad_proof: "Вы расследовали убийство Бранта"
+
+ decision_eira_open_war: "Рискнуть открытой войной с Тарбадом"
+ decision_eira_open_war_desc: "Тарбад - самый большой город в [Concept('enedhwaith', 'Энедвайте')|E] и средоточие власти гондорского губернатора. Если бы я [Select_CString(ROOT.Char.IsFemale, 'объявила', 'объявил' )] открытую войну Тарбаду, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы нанести удар в самое сердце их власти в регионе и потенциально нанести сокрушительный удар по их власти над Энедвайтом. Однако это был бы смелый и рискованный шаг, поскольку Тарбад хорошо укреплён и имеет сильное военное присутствие. Но всё же, пока этот гондорский пёс жив, моя месть не будет полной. Тарбад должен быть взят любыми доступными средствами!"
+ decision_eira_open_war_confirm: "Созвать знамёна."
+ decision_eira_open_war_tooltip: "Объявить войну Тарбаду"
+
+ decision_eira_assassination: "Убить губернатора Тарбада"
+ decision_eira_assassination_desc: "Губернатор Тарбада - самая могущественная фигура в [Concept('enedhwaith', 'Энедвайте')|E], и именно он отравил моего отца. Если бы я [Select_CString(ROOT.Char.IsFemale, 'убила', 'убил' )] его, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы нанести существенный удар по гондорской власти в регионе и отомстить за смерть моего отца. Однако это был бы рискованный шаг, поскольку губернатор хорошо защищён и у него много преданных сторонников. Тем не менее, если я смогу осуществить задуманное, это послужит серьёзным сигналом для народов Энедвайта и потенциально ослабит власть гондорцев в регионе."
+ decision_eira_assassination_confirm: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] быть [Select_CString(ROOT.Char.IsFemale, 'мягка и быстра', 'мягок и быстр' )], как тень."
+ decision_eira_assassination_tooltip: "Убить персонажа [GetTitleByKey('c_harabad').GetHolder.GetTitledFirstName]"
+
+ decision_rlain_confederation: "Объединить вождей"
+ decision_rlain_confederation_desc: "Вожди [Concept('enedhwaith', 'Энедвайта')|E] долгое время бездействовали, спокойно терпя иго [Concept('gondor', 'Гондора')|E], словно стадо бесхребетных псов. Довольно, сегодня я покончу с этим! Я объединю вождей под единым знаменем, и вместе мы восстанем против наших угнетателей и вернём себе свободу... и в процессе завладеем несметными богатствами!"
+ decision_rlain_confederation_confirm: "Вожди встанут под моё знамя!"
+ decision_rlain_confederation_tooltip: "Объединить вождей [Concept('enedhwaith', 'Энедвайта')|E] под вашим знаменем."
+ all_indep_rulers_in_enedhwaith_influenced: "Не менее #high 4#! [Concept('independent', 'независимых')|E] [Concept('rulers', 'правителей')|E]-[Concept('human', 'людей')|E] в провинции #high [GetTitleByKey('k_enedhwaith').GetName]#! соответствуют следующим условиям:\n$EFFECT_LIST_BULLET$#high Ваши#! [Concept('friend', 'друзья')|E]\n$EFFECT_LIST_BULLET$#high Ваши#! [Concept('ally', 'союзники')|E]\n$EFFECT_LIST_BULLET$ #high Ваши#! [Concept('lover', 'любовники')|E]\n$EFFECT_LIST_BULLET$#high Находятся под #high вашим#! [Concept('hooked', 'влиянием')|E]\n$EFFECT_LIST_BULLET$Имеют о #high вас#! #P 60#! или больше [Concept('opinion', 'мнения')|E]"
+ BRAZEN_BFRIGANDS: "Дерзкая лига"
+
+ decision_rlain_open_war: "Захватить Энедвайт"
+ decision_rlain_open_war_desc: "Вожди объединились под моим знаменем, и сейчас самое время нанести удар. Мы объявим открытую войну [Concept('gondor', 'Гондору')|E] и объединённой мощью наших кланов сокрушим их силы и возьмём под свой контроль [Concept('enedhwaith', 'Энедвайт')|E] раз и навсегда!"
+ decision_rlain_open_war_confirm: "Созвать знамёна!"
+ decision_rlain_open_war_tooltip: "Начать войну за вторжение в [Concept('enedhwaith', 'Энедвайт')|E]"
+ has_formed_brigand_confed: "Вы завершили [Concept('decision', 'решение')|E] «[GetDecision('decision_rlain_confederation').GetName]»"
+ confederates_join_war: "Члены вашей [Concept('confederation', 'конфедерации')|E] присоединятся к нападающим"
+
+ decision_rlain_convert_faith: "Найти новые убеждения"
+ decision_rlain_convert_faith_desc: "Древние речные боги #ONCLICK:FAITH,faith_gwathuirim_dynion #TOOLTIP:FAITH,faith_gwathuirim_dynion сказаний о Фэарагн#!#! начали уходить в небытие, и старые обычаи умирают. Люди ищут новые верования, за которые можно было бы держаться, и я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы стать [Select_CString(ROOT.Char.IsFemale, 'той', 'тем' )], кто их даст.\n\nНа севере мы слышим рассказы о горцах [Concept('rhudaur', 'Рудаура')|E], наших дальних родичах, которые приняли [GetFaithByKey('faith_angmar_azira').GetAdjective|l], Волчьего повелителя Холодных ветров. Говорят, что они заключили союз с могущественным королём зимы, который стремится сокрушить власть [Concept('arnor', 'Арнора')|E], братского королевства ненавистного [Concept('gondor', 'Гондора')|E].\n\nКазалось бы, его цели не так уж сильно отличаются от моих, и если бы я [Select_CString(ROOT.Char.IsFemale, 'приняла', 'принял' )] поклонение Азире, я, возможно, даже [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] бы заручиться поддержкой горцев и самого таинственного Повелителя зимы..."
+ decision_rlain_convert_faith_confirm: "Да направит нас Волчий бог."
+ decision_rlain_convert_faith_tooltip: "Начать почитать [GetFaithByKey('faith_angmar_azira').GetAdjective|l]"
+ is_terrified_of_you_tt: "[terrified_i|E] [Concept('cowed', 'Устрашены')|E] #high вами#!"
+
+ decision_purchase_tharbad: "Купить Тарбад"
+ decision_purchase_tharbad_desc: "[GetTitleByKey('c_tharbad').GetNameNoTier] долгое время находился под совместным управлением [Concept('gondor', 'Гондора')|E] и [Concept('arnor', 'Арнора')|E] и остаётся одним из богатейших городов севера. В порту Тарбада много торговцев, а его расположение на Королевском тракте в [GetTitleByKey('c_minas_tirith').GetNameNoTier] обеспечивает постоянное движение через него.\n\nЯ контролирую лишь южную, менее процветающую часть #ONCLICK:TITLE,c_harabad #TOOLTIP:LANDED_TITLE,c_harabad #L Харабада#!#!#!, но [Concept('cardolan', 'Кардолан')|E] слаб. Их держава переживает трудности. Несомненно, они оценили бы мою помощь, как финансовую, так и военную? Я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )], что за небольшую цену, такую как полный контроль над Тарбадом, и если [GetTitleByKey('k_cardolan').GetHolder.GetTopLiege.GetTitledFirstName] услышит от нас нужные слова, мы сможем найти наиболее выгодное решение для всех заинтересованных сторон..."
+ decision_purchase_tharbad_tooltip: "Купить [GetTitleByKey('c_tharbad').GetNameNoTier] во владение"
+ decision_purchase_tharbad_confirm: "Самая выгодная сделка!"
 
  #######################
  ### Shire Decisions ###
@@ -1541,7 +1638,7 @@
 
  decision_bellakar_vassalise_izindubeth: "Вассализировать изиндубета"
  decision_bellakar_vassalise_izindubeth_tooltip: "Вассализировать изиндубета под властью беллакарской короны"
- decision_bellakar_vassalise_izindubeth_desc: "#help Ради благочестия Ладноки, дочери моей, только Тумаквэ могут продолжать произносить моё имя в святилище Изиндутарика в назначенное ею время; но из-за своих грехов беллакарцы должны поклоняться мне только в тишине. И пусть никто не отвергает колир и не пренебрегает их культом, ибо так он выполнит мою волю.#!\n\nТаким было послание Эру, переданное изиндубетом Имратором Ар-Артарику «ан-Арани». [Glossary('Батан ан-Изинди','batan_an_izindi_gloss')] никогда не выступал против монархии Тумаквэ, но по мере того, как власть короны отступала на юг, некогда существовавшие связи были утрачены. Поскольку Фелайя теперь восстановлена как часть собственно [Concept('bellakar', 'Беллакара')|E], возможно, изиндубета тоже можно вернуть под власть державы?"
+ decision_bellakar_vassalise_izindubeth_desc: "#help Ради благочестия Ладноки, дочери моей, только Тумаквэ могут продолжать произносить моё имя в святилище Изиндутарика в назначенное ею время; но из-за своих грехов беллакарцы должны поклоняться мне только в тишине. И пусть никто не отвергает колир и не пренебрегает их культом, ибо так он выполнит мою волю.#!\n\nТаким было послание [Concept('adunaiceru', 'Эру')|E], переданное изиндубетом Имратором Ар-Артарику «ан-Арани». [Glossary('Батан ан-Изинди','batan_an_izindi_gloss')] никогда не выступал против монархии Тумаквэ, но по мере того, как власть короны отступала на юг, некогда существовавшие связи были утрачены. Поскольку Фелайя теперь восстановлена как часть собственно [Concept('bellakar', 'Беллакара')|E], возможно, изиндубета тоже можно вернуть под власть державы?"
  decision_bellakar_vassalise_izindubeth_confirm: "Мы защитим всех Верных юга."
 
  decision_tame_desert: "Усмирить пустынное пограничье"
@@ -2071,6 +2168,12 @@
  decision_vatalinar_civil_war_confirm: "Смерть всем изменникам!"
  decision_vatalinar_civil_war_effects_tt: "Вы начнёте гражданскую войну против Мардата из [GetTitleByKey('d_suza_riy').GetNameNoTier] за судьбу державы [GetTitleByKey('k_ray').GetNameNoTier]. Победа в этой войне позволит вам отстранить Мардата от власти, но в случае поражения он захватит державу. #N Мардат призовёт на эту войну всех тайных чужеземных сторонников!#!"
 
+ decision_reform_vatra: "Реформировать Аудрат-Ватру"
+ decision_reform_vatra_tooltip: "Вернуть ватраистов в объятия тьмы"
+ decision_reform_vatra_desc: "Слишком долго ватраисты прозябали в роскоши и апатии, и мы забыли о своём призвании. Пришло время вернуть наше поклонение истинной воле Ватры и пылко стремиться установить его законное господство."
+ decision_reform_vatra_confirm: "Во славу Солнца!"
+ you_are_largest_faith_ruler: "У вас самая большая [Concept('realm', 'держава')|E] из всех аудрат-ватранских правителей"
+
  ################################
  ####### Tedjin Decisions #######
  ################################
@@ -2235,11 +2338,11 @@
  #recall_golden_king: "Отозвать Золотого Короля, который отречётся в пользу вассала."
 
  decision_destroy_mordor: "Уничтожить Мордор"
- decision_destroy_mordor_tooltip: "Начать великую битву, чтобы раз и навсегда уничтожить Мордор и Саурона"
+ decision_destroy_mordor_tooltip: "Начать последнюю войну, чтобы раз и навсегда уничтожить Мордор и Саурона."
  decision_destroy_mordor_desc: "Слишком долго Гондор оборонялся, с трудом удерживая свои земли, пока Мордор набирал силу. Довольно! Покончим с этим раз и навсегда."
  decision_destroy_mordor_generic_desc: "Слишком долго Мордору позволяли крепнуть, в то время как нам едва удавалось удерживать свои земли. Довольно! Покончим с этим раз и навсегда."
  decision_destroy_mordor_confirm: "Пришло время положить этому конец."
- destroy_mordor_decision: "Начать последнюю войну, чтобы раз и навсегда уничтожить Мордор и Саурона"
+ destroy_mordor_decision: "Начать последнюю войну, чтобы раз и навсегда уничтожить [Concept('mordor', 'Мордор')|E] и [Concept('sauroncharacter', 'Саурона')|E]"
  destroy_mordor_decision_current_military_strength_default_tt: "Ваши войска равны по численности по крайней мере половине текущих войск Мордора."
  destroy_mordor_decision_current_military_strength_elven_tt: "Ваши войска равны по численности по крайней мере четверти текущих войск Мордора."
  destroy_mordor_decision_current_military_strength_dwarven_tt: "Ваши войска равны по численности по крайней мере трети текущих войск Мордора."
@@ -2271,6 +2374,13 @@
  decision_dark_lord_hegemony_saruman_tooltip: "Нужен новый Тёмный властелин, гораздо более бородатый, чем предыдущий."
 
  tooltip_decision_the_two_towers: "Вы выбрали, с какой из из Двух башен [Concept('alignment_evil', 'зла')|E] вы будете править"
+
+ decision_nazgul_alliance: "Заключить тёмный пакт"
+ decision_nazgul_alliance_tooltip: "Заключить оборонительный союз с другим назгул."
+ decision_nazgul_alliance_desc: "[Concept('nazgul', 'Назгул')|E] связаны с [Concept('sauronthedarklordcharacter', 'Тёмным властелином')|E] и всегда являются орудиями его воли. По мере того, как наши державы сближаются, [Concept('sauroncharacter', 'Саурон')|E] требует, чтобы мы сотрудничали более тесно."
+ decision_nazgul_alliance_confirm: "Да будет так."
+ decision_nazgul_alliance_tt: "Заключить [Concept('defensive_alliance', 'оборонительный союз')|E] с соседним [Concept('ruler', 'правителем')|E]-[Concept('nazgulcharacter', 'назгул')|E]."
+ you_border_nazgul: "Ваша [Concept('realm', 'держава')|E] граничит с владениями других [Concept('nazgul', 'назгул')|E]."
 
  # Long Winter Decisions
  steward_of_morgul: "Моргульский наместник"
@@ -2591,6 +2701,10 @@
  decision_build_ghaesch_kanra_fortress_desc: "Нашему королевству постоянно угрожает могучая восточная империя Кхай. Если мы хотим остановить их неизбежные вторжения на наши территории из земель Ашанура, мы должны построить укрепления, подобные Тёмной цитадели Абрахана. Полчища дикарей будут остановлены нашими высокими стенами, если они придут к нам."
  decision_build_ghaesch_kanra_fortress_confirm: "Никто не пройдёт с востока незамеченным."
 
+ decision_haradrim_viceroy: "Сформировать Южную конфедерацию"
+ decision_haradrim_viceroy_tooltip: "Стать [Select_CString(ROOT.Char.IsFemale, 'полномочной вице-королевой', 'полномочным вице-королём' )] под властью [Concept('gondor', 'Гондора')|E]"
+ decision_haradrim_viceroy_desc: "Мощь [Concept('gondor', 'Гондора')|E] неоспорима, и их влияние на Южные земли неоспоримо. И всё же, есть возможности работать с ними, а не против них. Если бы я [Select_CString(ROOT.Char.IsFemale, 'стала полномочной вице-королевой', 'стал полномочным вице-королём' )] под властью Гондора, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы получить доступ к их ресурсам и поддержке, сохраняя при этом определённую автономию в своих владениях. Это был бы хрупкий баланс, но в долгосрочной перспективе он мог бы окупиться."
+ decision_haradrim_viceroy_confirm: "Я отправлюсь в Белый город."
 
  ##################################
  #### Arysis / Maresh Decisions ###
@@ -2852,6 +2966,14 @@
  decision_angmar_dominion_over_langwell_confirm: "Confirm"
  decision_angmar_dominion_over_langwell_effect_tt: "Вы выберете, в какой мере эксплуатировать землю и людей."
  decision_angmar_dominion_over_langwell_requirement: "В регионе [GetTitleByKey('k_langwell').GetName] нет независимых правителей."
+ unlock_anduin_lowlands_decision: "Открывает [Concept('decision', 'решение')|E] «[GetDecision('decision_angmar_anduin_lowlands').GetName]»"
+
+ decision_angmar_anduin_lowlands: "Претендовать на низменности Андуина"
+ decision_angmar_anduin_lowlands_tooltip: "Tooltip"
+ decision_angmar_anduin_lowlands_desc: "Desc"
+ decision_angmar_anduin_lowlands_confirm: "Confirm"
+ nobody_holds_anduin_vale_kingdom: "Титул [GetTitleByKey('k_anduin_vale').GetName] не был создан"
+ decision_angmar_anduin_lowlands_convert_counties: "Все [Concept('county', 'графства')|E] в регионе [GetTitleByKey('k_anduin_vale').GetNameNoTier] могут обратиться в вашу [Concept('faith', 'конфессию')|E]"
 
  decision_kultamieli_raid_taurau: "Попытаться устроить засаду на Рикульфо"
  decision_kultamieli_raid_taurau_tooltip: "Tooltip"
@@ -2866,6 +2988,27 @@
  decision_integrate_gundalok_confirm: "Долина наконец познает мир."
  gundabad_kingdom_doesnt_exist_or_is_dwarven: "В [Concept('gundabad', 'Гундабаде')|E] нет [Concept('orcish', 'орочьих')|E] [Concept('kingdom', 'королевств')|E]"
  decision_integrate_gundalok_tt: "Перевал Гундабад усмирён"
+
+ decision_secure_the_high_pass: "Захватить Высокий перевал"
+ decision_secure_the_high_pass_desc: "Высокий перевал - один из самых важных путей через [Concept('mistymountains', 'Мглистые горы')|E], и всё же ему часто угрожают мерзкие [Concept('goblins', 'гоблины')|E], которые устраивают засады на путешественников из своих скрытых пещер и логовищ. Если бы нам удалось обрушить эти пещеры, мы могли бы гарантировать, что орочьи налётчики больше не спустятся с гор, чтобы опустошать наши земли, и, возможно, даже обеспечили бы себе плацдарм в горах."
+ decision_secure_the_high_pass_tooltip: "Обрушить пещеры гоблинов на Высоком перевале"
+ decision_secure_the_high_pass_confirm: "Пусть горы поглотят их навсегда!"
+ must_hold_one_county_high_pass: "Вы владеете хотя бы 1 [Concept('county', 'графством')|E] в провинции #high [GetTitleByKey('d_high_pass').GetName]#!."
+ get_high_pass_secured_modifier: "Все [Concept('province', 'провинции')|E] во владении #high [GetTitleByKey('d_high_pass').GetName]#! получат [Concept('modifier', 'модификатор')|E] «[GetModifier('secured_high_pass_modifier').GetNameWithTooltip]» на 25 лет."
+ decision_secure_the_high_pass_tt: "Высокий перевал захвачен"
+
+ decision_khazad_dum_trade: "Наладить торговлю с Кхазад-думом"
+ decision_khazad_dum_trade_desc: "Давным-давно [Concept('dwarves', 'гномы')|E] [Concept('khazaddum', 'Кхазад-дума')|E] и [Concept('men', 'люди')|E] из [Concept('anduinvale', 'Долины Андуина')|E] были союзниками и свободно торговали друг с другом. Гномы делились своим превосходным мастерством в изготовлении оружия и доспехов, а люди снабжали их едой и припасами, которые не растут в их каменных чертогах.\n\nВозможно, пришло время возродить это древнее соглашение?"
+ decision_khazad_dum_trade_tooltip: "Начать торговать с [Concept('dwarves', 'гномами')|E] [Concept('khazaddum', 'Кхазад-дума')|E]"
+ decision_khazad_dum_trade_confirm: "Отправить предложение."
+ decision_moria_trade_border_moria_or_lorien: "Ваша [Concept('realm', 'держава')|E] граничит с [Concept('khazaddum', 'Кхазад-думом')|E] или [Concept('lorien', 'Лориэном')|E]"
+
+ decision_old_forest_road: "Способствовать торговле на Старой лесной тропе"
+ decision_old_forest_road_desc: "Старая лесная тропа когда-то была главным торговым путём, ведущим из легендарных [Concept('realms', 'королевств')|E] [Concept('dwarves', 'гномов')|E] в [Concept('mistymountains', 'Мглистых горах')|E] к владениям их дальних родичей в [Concept('ironhills', 'Железных холмах')|E]. Однако с приходом тени, которая пала на [Concept('greenwood', 'Зеленолесье')|E], тропа была заброшена и пришла в упадок. Если бы нам удалось восстановить её, мы могли бы облегчить торговлю между [Concept('anduinvale', 'долиной Андуина')|E] и восточными пределами [Concept('rhovanion', 'Рованиона')|E] и, в свою очередь, получать приличный доход от дорожных податей и пошлин."
+ decision_old_forest_road_tooltip: "Восстановить торговый путь через Зеленолесье"
+ decision_old_forest_road_confirm: "Пусть торговля возобновится!"
+ old_forest_road_county_req: "#V Вы#!, ваш [Concept('ally', 'союзник')|E] либо [Concept('tributary', 'данник')|E] контролируют:\n$BULLET_WITH_TAB$ [GetTitleByKey('c_banimyrr').GetName]\n$BULLET_WITH_TAB$ [GetTitleByKey('c_senn_i_naugrim').GetName]\n$BULLET_WITH_TAB$ [GetTitleByKey('c_rhumen_i_naugrim').GetName]\n$BULLET_WITH_TAB$ [GetTitleByKey('c_enedhmen_i_naugrim').GetName]\n$BULLET_WITH_TAB$ [GetTitleByKey('c_dunmen_i_naugrim').GetName]\n$BULLET_WITH_TAB$ [GetTitleByKey('c_aldford').GetName]"
+ old_forest_road_evil_defeated: "[Concept('alignment_evil', 'Злые')|E] [Concept('ruler', 'правители')|E] не контролируют:\n$BULLET_WITH_TAB$ [GetTitleByKey('c_nidurn').GetName]\n$BULLET_WITH_TAB$ [GetTitleByKey('c_medelarnis').GetName]\n$BULLET_WITH_TAB$ [GetTitleByKey('c_carag_thoroth').GetName]"
 
  ##############################
  #### Dol Amroth Decisions ####
@@ -2949,6 +3092,11 @@
  decision_reclaim_rhovanion_plains_confirm: "Равнины снова наши!"
 
  rhovanion_resettlement_culture_counties_custom: "Каждое [county|El] с истерлингским и северным [Concept( 'heritage', 'наследием' )|E] в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('custom_plains_rhovanion').GetName]"
+
+ decision_claim_rhovanion_empire: "Претендовать на равнины Рованиона"
+ decision_claim_rhovanion_empire_desc: "[Concept('rhovanion_kingdom', 'Королевство Рованион')|E] существует уже много лет, но земли равнин остаются разделёнными и оспариваемыми. Если мы сможем успешно заявить права на все земли между [Concept('greenwood', 'Зеленолесьем')|E] и рекой Бегущей, объединив их под одним знаменем, наследие Видугавии и законная власть над [Concept('rhovanion', 'Рованионом')|E] действительно будут моими."
+ decision_claim_rhovanion_empire_tooltip: "Предъявить претензии на весь [Concept('rhovanion', 'Рованион')|E]"
+ decision_claim_rhovanion_empire_confirm: "Равнины должны объединиться!"
 
  decision_rhovanion_hegemony: "Основать величайшее королевство северян"
  decision_rhovanion_hegemony_tooltip: "Объединить все державы [Concept('northmen', 'северян')|E]" 
@@ -3174,14 +3322,14 @@
 
  decision_war_in_the_north: "Война на Севере"
  decision_war_in_the_north_tooltip: "Великое противостояние близится"
- decision_war_in_the_north_desc: "Время пришло. Дэйл и Эребор уже достаточно долго сидят на короне Рованиона. \nОднажды на этой короне восседал Смауг «Золотой». Он царствовал над Рованионом в тирании сладкой тишины и ужаса. Последний великий змей ушёл, но мы напомним северянам о страхе, который они когда-то знали."
+ decision_war_in_the_north_desc: "Время пришло. Дэйл и [Concept('erebor', 'Эребор')|E] уже достаточно долго сидят на короне [Concept('rhovanion', 'Рованиона')|E].\nОднажды на этой короне восседал Смауг «Золотой». Он царствовал над Рованионом в тирании сладкой тишины и ужаса. Последний великий змей ушёл, но мы напомним северянам о страхе, который они когда-то знали."
  decision_war_in_the_north_confirm: "Люди и гномы горят одинаково"
  decision_war_in_the_north_effect_1: ""
 
  war_in_the_north_cb: "Война на Севере"
  huz_colonized_rhovanion: "Решение «Усмирить центральный Рованион» завершено"
 
- decision_margoz_dale_crushed: "Дэйл сокрушён"
+ decision_margoz_dale_crushed: "Сокрушить Дэйл"
  decision_margoz_dale_crushed_tooltip: "Они преклонили колени"
  decision_margoz_dale_crushed_desc: "Наконец-то. Город Смауга Золотого в наших руках. [dalemen|E] познают ужас перед концом, когда их род будет изгнан из города. Никто, кроме тех, кто верен Керкасску и его драконам, не ступит в этот город. Город снова наш!"
  decision_margoz_dale_crushed_confirm: "Дэйла больше нет. Так родится Норивар"
@@ -3210,6 +3358,18 @@
  decision_fortify_northern_pass_tooltip: "Построить крепость на горном перевале, ведущем в [dorwinion|E]"
  decision_fortify_northern_pass_desc: "За замком [GetTitleByKey('c_dargeca').GetNameNoTier] лежит горный перевал, ведущий в земли, принадлежащие людям [GetTitleByKey('k_dorwinion').GetNameNoTier]а. Хотя люди [Concept('dorwinion', 'Дорвиниона')|E] часто торговали с нами, с такой же вероятностью они вторгнутся в наши земли, если представится возможность.\n\nЧтобы защититься от любой угрозы с севера, мы должны укрепить наши границы к северу от Даргеки, построив крепость прямо на выходе из горного перевала, создав легко обороняемую точку пересечения."
  decision_fortify_northern_pass_confirm: "Немедленно начать строительство!"
+
+ decision_found_dragon_knights: "Основать рыцарей-драконов"
+ decision_found_dragon_knights_desc: "Орден Чёрного дракона долгое время был могущественной силой среди истерлингов, удерживая под контролем дикое приграничье и вселяя страх в сердца наших врагов. Поскольку приближается время войны, пришло время официально учредить этот орден в настоящий рыцарский орден со своей собственной иерархией и традициями. Рыцари-драконы станут мощным орудием в нашем арсенале и символом нашей силы и единства."
+ decision_found_dragon_knights_confirm: "Да возвысятся рыцари-драконы!"
+ decision_found_dragon_knights_tooltip: "Реформировать орден Чёрного дракона в рыцарский орден с земельными наделами"
+ decision_found_dragon_knights_duchies: "Вы напрямую контролируете не менее #high трёх#! [Concept('duchies', 'герцогств')|E]"
+
+ decision_build_dragon_knights_headquarters: "Построить штаб-квартиру рыцарей-драконов"
+ decision_build_dragon_knights_headquarters_desc: "Рыцари-драконы - могущественная сила, но им нужна мощная база для проведения операций, чтобы по-настоящему процветать. Построив грандиозную штаб-квартиру ордена, мы сможем обеспечить их ресурсами и поддержкой, необходимыми для того, чтобы они стали непобедимой силой на поле боя. Штаб-квартира также будет служить символом нашей приверженности рыцарям-драконам и их фанатизму."
+ decision_build_dragon_knights_headquarters_confirm: "Немедленно начать строительство!"
+ decision_build_dragon_knights_headquarters_tooltip: "Построить величественную штаб-квартиру для рыцарей-драконов"
+ decision_build_dragon_knights_headquarters_tt: "Построена штаб-квартира рыцарей-драконов"
 
  decision_purchase_war_drakes: "Купить боевых змеев"
  decision_purchase_war_drakes_desc: "Боевые змеи [Concept('rhun', 'Руна')|E] - чрезвычайно редкое зрелище даже в восточных землях [Concept('middleearth', 'Средиземья')|E]. Эти территориальные рептилии обладают злобным нравом – их мощные челюсти могут перекусить руку человека пополам, а яд, который они впрыскивают, делает их жертву слабой и беспомощной. Иногда особенно богатый или ревностный вождь истерлингов покупает некоторых из этих зверей, когда отправляется на войну. Они не только опасные существа, но и являются гордостью культа Керкасска."
@@ -3607,6 +3767,12 @@
 
  colonises_erebor: "[GetTitleByKey('b_throne_of_erebor').GetNameNoTier] переходит к вам"
 
+ decision_become_erebor_king: "Провозгласить себя [Select_CString(ROOT.Char.IsFemale, 'королевой', 'королём' )]-под-Горой"
+ decision_become_erebor_king_desc: "[Concept('erebor', 'Эребор')|E] на протяжении долгих веков был не более чем перевалочным пунктом на пути из [Concept('khazaddum', 'Кхазад-дума')|E] в [Concept('ironhills', 'Железные холмы')|E]. Но потенциал горы не только в этом. Это самая высокая и величественная из всех жемчужин Севера, и она могла бы стать прекрасным бастионом, из которого можно контролировать торговлю и оказывать влияние на окружающие земли. И кто лучше справится с правлением этой новой державой, чем... я?"
+ decision_become_erebor_king_tooltip: "Провозгласить себя [Concept('king', 'королём')|E] [Concept('erebor', 'Эребора')|E]"
+ decision_become_erebor_king_confirm: "Сегодня начинается моё правление."
+ decision_become_erebor_king_tt: "Король-под-Горой"
+
  restore_king_title: "Восстановить родовую власть"
  restore_king_title_tooltip: "Провозгласить себя [Select_CString(ROOT.Char.IsFemale, 'королевой', 'королём' )]"
  restore_king_title_durin: "Мы - [Concept('longbeards', 'Длиннобороды')|E], Народ [Concept('durin', 'Дурина')|E], нашего короля, пробудившегося первым из всех праотцов. Мы правили от [Concept('khazaddum', 'Кхазад-дума')|E] до [Concept('greymountains', 'Серых гор')|E] и далеко-далеко, до [Concept('erebor', 'Эребора')|E]. Под властью Дурина, моих предков и их отцов до них, наши чертоги богатели самоцветами и золотом, и сама земля дивилась богатствам, которые мы извлекали из нее и оттачивали до красоты и совершенства.\n\nИ хотя наше королевство уже не простирается так далеко, как прежде, род Дурина носит титул королей [Concept('durinsfolk', 'Народа Дурина')|E], откуда бы они ни правили. Я [Select_CString(ROOT.Char.IsFemale, 'наследница', 'наследник' )] Дурина - я [Select_CString(ROOT.Char.IsFemale, 'королева', 'король' )] Длиннобородов, и я провозглашу это сейчас! Я буду чтить своих павших родичей и править во всей славе и мощи рода Дурина!"
@@ -3721,6 +3887,18 @@
  decision_restore_mabladdum_desc: "Могущественный [GetTitleByKey('k_mablad_dum').GetNameNoTier], некогда гордую цитадель [Concept('blacklocks', 'Черновласов')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E], постигла катастрофа. Сердце Огня, вулкан, который питал жаром великие кузни, разразился яростью, изгнав наших предков из разрушенных чертогов. Теперь поганые [Concept('orcs', 'орки')|E] и [Concept('goblins', 'гоблины')|E] ютятся в разрушенных залах и сводах, оскверняя их одним своим присутствием.\n\nДовольно! Пришло время исполнить наши клятвы и изгнать мерзких врагов, занявших Маблад-дум! Мы не успокоимся, пока они не будут развеяны на все четыре стороны, а чертоги наших предков снова не окажутся в руках [Concept('dwarven', 'гномов')|E], раз и навсегда!"
  decision_restore_mabladdum_tooltip: "Освободить затерянные залы Маблад-дума"
  decision_restore_mabladdum_confirm: "#italic Подайте мне мою секиру и броню!#!"
+
+ decision_moria_northern_duchy: "Вернуть чертог [GetTitleByKey('d_fuhmdusha').GetNameNoTierNoTooltip]"
+ decision_moria_northern_duchy_desc: "Самое северное [Concept('duchy', 'герцогство')|E] [Concept('khazaddum', 'Кхазад-дума')|E], [GetTitleByKey('d_fuhmdusha').GetNameNoTier], долгое время было заброшено после Войны [Concept('lastalliance', 'Последнего союза')|E]. Но [Concept('dwarves', 'гномы')|E] из рода Дурина не забыли чертоги наших предков, и пришло время вернуть их себе. Мы отправимся в глубины и создадим новые поселения в самых северных уголках Кхазад-дума, потому что нам нужны новые кузницы для ведения войны и защиты нашего королевства!"
+ decision_moria_northern_duchy_confirm: "За Кхазад-дум! За Народ Дурина!"
+ decision_moria_northern_duchy_tooltip: "Вернуть самое северное герцогство Кхазад-дума"
+
+ decision_moria_dwarven_trade: "Наладить внешнюю торговлю"
+ decision_moria_dwarven_trade_desc: "[Concept('dwarves', 'Гномы')|E] [Concept('khazaddum', 'Кхазад-дума')|E] долгое время жили в уединении, но пришло время снова открыть наши чертоги внешнему миру, как это было в незапамятные времена. Мы можем многое предложить и многое выиграть от торговли с внешним миром. Нужно наладить торговые пути с соседними державами [Concept('men', 'людей')|E] и [Concept('elves', 'эльфов')|E] и показать им ценность нашего ремесла и товаров!"
+ decision_moria_dwarven_trade_confirm: "Открыть врата Кхазад-дума всему миру!"
+ decision_moria_dwarven_trade_tooltip: "Наладить торговые пути с внешним миром"
+ decision_moria_dwarven_trade_tt: "Торговая сделка заключена"
+ must_border_a_good_aligned_realm: "Ваша [Concept('realm', 'держава')|E] граничит с [Concept('alignment_good', 'доброй')|E] державой"
 
  ## Dwarven Beardcare loc
  beard_care_standard_modifier: "Красивая борода"
@@ -3917,6 +4095,14 @@
  decision_reaffirm_breeland_desc: "Со времён тьмы, когда пали старые короли, ближайшие земли, окружающие Бри, по большому счету, были малонаселёнными. Возможно, настало время колонизировать эти дебри и официально подчинить их нашей юрисдикции."
  decision_reaffirm_breeland_confirm: "Мудрое начинание"
 
+ ### Eriadorrim Decisions ###
+
+ decision_restore_arne: "Восстановить Арн"
+ decision_restore_arne_tooltip: "Восстановить древнее эриадорримское королевство Арн."
+ decision_restore_arne_desc: "Ещё до того, как короли [Concept('dunedain', 'дунэдайн')|E] воцарились на этой земле, [GetCultureByKey('eriadorim').GetName|l] жили среди этих холмов, и короли #ONCLICK:TITLE,k_arne #TOOLTIP:LANDED_TITLE,k_arne #L Арна#!#! были их владыками. Память о них почти стерлась в тумане, но народ [Concept('eriador', 'Эриадора')|E] снова бродит по холмам, и настанет время, когда Арниэн восстанет вновь."
+ decision_restore_arne_confirm: "Да возвысятся благородные!"
+ half_arne_eriadorim: "#V 50%#! [Concept('counties', 'графств')|E] в регионе [GetGeographicalRegion('custom_arne').GetName] должны иметь #L [GetCulturePillar('heritage_eriadorim').GetName|l]ое#! [Concept('heritage', 'наследие')|E]"
+
  ##########################
  ###      Vulmaw        ###
  ##########################
@@ -3950,6 +4136,11 @@
  decision_raise_tamska_palace_desc: "Теперь, когда моё правление в королевствах-близнецах укреплено и признано даже за пределами державы, пришло время укрепить мою божественность, воздвигнув величественный дворец в центре столицы. Там я смогу отдохнуть от многих тяжёлых дневных забот, чтобы вернуться [Select_CString(ROOT.Char.IsFemale, 'бодрой', 'бодрым' )] и с новой божественной мудростью."
  decision_raise_tamska_palace_tooltip: "Создать [Concept('great_building', 'великое сооружение')|E] в вашей [Concept('capital', 'столице')|E]"
  decision_raise_tamska_palace_confirm: "Это будет мудро."
+
+ decision_solidify_putorak: "Укрепить королевство Путорак"
+ decision_solidify_putorak_desc: "Королевство Путорак - это держава только по названию. Пришло время укрепить мой контроль над этими землями и их народами и сделать их настоящим королевством как на деле, так и на словах. И прибрежные земли, и острова должны признать мою власть и право править ими!"
+ decision_solidify_putorak_tooltip: "Реформировать Путорак в де-юре [Concept('kingdom', 'королевство')|E]"
+ decision_solidify_putorak_confirm: "Время пришло."
 
  ##########################
  ###    Thani-Hazad     ###
@@ -4066,6 +4257,12 @@
  decision_petition_nazgul_confirm: "В путь."
  decision_petition_nazgul.tt: "В [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_petition_murghuri_region').GetName] есть хотя бы один [Concept('independent', 'независимый')|E] [Concept('nazgulcharacter', 'назгул')|E], [Concept('landed', 'владеющий землёй')|E]."
  decision_petition_nazgul.tt2: "Отправиться ко двору местного [Concept('nazgulcharacter', 'назгул')|E], получив [Concept('gold', 'золото')|E], [Concept('special_troops', 'особые войска')|E] или [Concept('modifiers', 'модификаторы')|E] [Concept('development', 'развития')|E]."
+
+ decision_yellow_mountains_igal_zaram_warrens: "Прорыть Великий муравейник"
+ decision_yellow_mountains_igal_zaram_warrens_tooltip: "Построить [Concept('great_building', 'грандиозную постройку')|E] для усиления вашего [Concept('levies', 'ополчения')|E]."
+ decision_yellow_mountains_igal_zaram_warrens_desc: "У меня было видение в тихих водах Игал-зарама. Великий муравейник, уходящий глубоко под землю, новый дом для нашего вида."
+ decision_yellow_mountains_igal_zaram_warrens_confirm: "Роем!"
+ decision_yellow_mountains_igal_zaram_warrens.tt: "Выбрать локацию, где будет возведён [GetBuilding('wonder_igal_zaram_warrens').GetName]."
 
  decision_desecrate_dwarven_capital: "Осквернить гномью столицу"
  decision_desecrate_dwarven_capital_tooltip: "Осквернить гномью столицу."
@@ -4247,6 +4444,49 @@
  decision_favor_overseers_confirm: "К кому же мне обратиться?"
  decision_favor_overseers_effect.tt: "Получить доступ к уникальным [Concept('men_at_arms', 'профессионалам')|E] и положительным модификаторам, объединившись с булганами, чёрными нуменорцами или орками."
 
+ decision_khorahil_fortify_west: "Укрепить залив Тулванг"
+ decision_khorahil_fortify_west_tooltip: "Создать оборонительные сооружения вдоль тулвангского побережья"
+ decision_khorahil_fortify_west_desc: "Земли вдоль залива Тулванг уязвимы для вторжения беллакарцев. Мы должны захватить эти земли и подготовить их к грядущей войне."
+ decision_khorahil_fortify_west_confirm: "Подготовить оборону."
+ decision_khorahil_fortify_west_effect.tt: "Все [Concept('county', 'графства')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('special_region_khorahil_fortify_coasts_west').GetName] получат [Concept('county_modifier', 'модификатор')|E] «[GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L]»."
+ tulwang_building_3_tt: "Не менее в 3 графствах в регионе [GetGeographicalRegion('special_region_khorahil_fortify_coasts_west').GetName] построены [GetBuilding('march_01').GetName] или [GetBuilding('tunnel_network_01').GetName]."
+
+ decision_khorahil_fortify_east: "Укрепить Ормальский залив"
+ decision_khorahil_fortify_east_tooltip: "Создать оборонительные сооружения вдоль ормальского побережья"
+ decision_khorahil_fortify_east_desc: "Земли вдоль Ормальского залива уязвимы для вторжения кхайцев. Мы должны захватить эти земли и подготовить их к грядущей войне."
+ decision_khorahil_fortify_east_confirm: "Подготовить оборону."
+ decision_khorahil_fortify_east_effect.tt: "Все [Concept('county', 'графства')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('special_region_khorahil_fortify_coasts_east').GetName] получат [Concept('county_modifier', 'модификатор')|E] «[GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L]»."
+ ormal_building_3_tt: "Не менее в 3 графствах в регионе [GetGeographicalRegion('special_region_khorahil_fortify_coasts_east').GetName] построены [GetBuilding('march_01').GetName] или [GetBuilding('tunnel_network_01').GetName]."
+
+ decision_khorahil_indoctrinate_harshandatt: "Индоктринировать Харшандатт"
+ decision_khorahil_indoctrinate_harshandatt_tooltip: "Получить [Concept('special_troops', 'особые войска')|E] от Харшандатта."
+ decision_khorahil_indoctrinate_harshandatt_desc: "У народов Харшандатта долгая память. Хотя большинство из них поклоняются своим жалким нхазадам, [GetFaithByKey('faith_sened').GetAdjective|l] всё ещё помнит ужас, который я [Select_CString(ROOT.Char.IsFemale, 'навела', 'навёл' )] во [Concept('secondage', 'Вторую эпоху')|E]. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] ещё раз продвинуть этот культ."
+ decision_khorahil_indoctrinate_harshandatt_confirm: "Воспряньте, сыны Бури!"
+ decision_khorahil_indoctrinate_harshandatt.tt: "Обратить большую часть #ONCLICK:TITLE,e_harshandatt #TOOLTIP:LANDED_TITLE,e_harshandatt #L Харшандатта#!#!#! в [GetFaithByKey('faith_sened').GetAdjective|l]."
+ khorahil_zealots_army_name: "Сенедийские фанатики"
+
+ decision_khorahil_annex_an_balkumagan: "Аннексировать Ан-Балкумаган"
+ decision_khorahil_annex_an_balkumagan_tooltip: "Вассализировать Ан-Балкумаган"
+ decision_khorahil_annex_an_balkumagan_desc: "Давным-давно я [Select_CString(ROOT.Char.IsFemale, 'правила', 'правил' )] [Concept('anbalkumagan', 'Ан-Балкумаганом')|E] железной рукой. Мои родичи, [Concept('black_numenoreans', 'чёрные нуменорцы')|E], всё ещё живут там, медленно угасая. Они покорятся мне."
+ decision_khorahil_annex_an_balkumagan_confirm: "Отправить послов."
+ decision_khorahil_annex_an_balkumagan.tt: "Ваша [Concept('realm', 'держава')|E] граничит с державой [GetTitleByKey('k_an_balkumagan').GetNameNoTier]."
+ decision_khorahil_annex_an_balkumagan.tt_2: "[Concept('ruler', 'Правитель')|E] державы [GetTitleByKey('k_an_balkumagan').GetNameNoTier] придерживается [Concept('alignment_evil', 'злого')|E] [Concept('alignment', 'мировоззрения')|E]."
+ decision_khorahil_annex_an_balkumagan.tt_3: "Вы [Concept('vassalize', 'вассализируете')|E] державу [GetTitleByKey('k_an_balkumagan').GetNameNoTier]"
+ military_strength_more_than_an_balk: "Ваша текущая военная мощь сильнее державы [GetTitleByKey('k_an_balkumagan').GetNameNoTier]."
+
+ decision_khorahil_destroy_bellakar: "Уничтожить Беллакар"
+ decision_khorahil_destroy_bellakar_tooltip: "Начать войну за опустошение Беллакара"
+ decision_khorahil_destroy_bellakar_desc: "Давным-давно, во времена [Concept('warlastalliance', 'Войны Последнего союза')|E], [Concept('bellakar', 'Беллакар')|E] пришёл на помощь [Concept('gondor', 'Гондору')|E]. Нельзя допустить, чтобы это повторилось."
+ decision_khorahil_destroy_bellakar_confirm: "Война!"
+ decision_khorahil_destroy_bellakar_effect.tt: "Начать войну против #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!"
+ military_strength_10000: "Ваша текущая военная мощь - не менее #V 10,000#! @soldier_icon! [Concept('soldiers', 'солдат')|E]"
+
+ decision_khorahil_destroy_khy: "Уничтожить Кхай"
+ decision_khorahil_destroy_khy_tooltip: "Начать войну за опустошение Кхая"
+ decision_khorahil_destroy_khy_desc: "[Concept('istariconcept', 'Истари')|E] стремятся бросить вызов [Concept('darklord', 'Тёмному властелину')|E] с помощью своих королей-фанатиков. Кхай станет памятником их провала."
+ decision_khorahil_destroy_khy_confirm: "Война!"
+ decision_khorahil_destroy_khy_effect.tt: "Начать войну против #ONCLICK:TITLE,e_khy #TOOLTIP:LANDED_TITLE,e_khy #L Кхая#!#!"
+
  decision_khorahil_infiltrate_yellow_mountains: "Проникнуть в Жёлтые горы"
  decision_khorahil_infiltrate_yellow_mountains_tooltip: "Обратить в свою веру и укрепить орочьи племена в горах."
  decision_khorahil_infiltrate_yellow_mountains_desc: "[Concept('orcish', 'Орочьи')|E] племена [Concept('yellowmountains', 'Желтых гор')|E] разрознены и слабы, они даже не достойны завоевания. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] превратить их в нечто более сильное."
@@ -4292,6 +4532,11 @@
  decision_make_powa_mercantile_center_confirm: "Отправить караваны!"
  decision_make_powa_mercantile_center_effect_tt_1: "В настоящее время: #V [GetPlayer.MakeScope.ScriptValue('decision_unite_poa_neighboring_rulers_count')]#!\nУ вас есть #V 5#! соседей, подходящих под следующие условия:\n$BULLET_WITH_TAB$Ваши любовники\n$BULLET_WITH_TAB$Ваши друзья\n$BULLET_WITH_TAB$Ваши данники\n$BULLET_WITH_TAB$Находятся под #v вашим#! влиянием"
  united_powa_peacefully_building_tt: "Теперь вы можете улучшить Зал единения до Купеческого форума."
+
+ decision_restore_taimaraud: "Возродить культ Тайморода"
+ decision_restore_taimaraud_desc: "На протяжении бесчисленных тысячелетий [GetFaithByKey('faith_taimaraud').GetAdjective|l] был посвящён мрачной задаче заботы о душах умерших. [Concept('khorahil', 'Хорахил')|E] извратил его обряды в нечто тёмное и ужасное. Мы должны вернуть культу его первоначальную, благородную цель."
+ decision_restore_taimaraud_tooltip: "Восстановить культ Тайморода"
+ decision_restore_taimaraud_confirm: "Изыди, тьма!"
 
  decision_choose_new_tayee_patron: "Выбрать нового тайитского покровителя"
  decision_choose_new_tayee_patron_tooltip: "Выбрать новый курс в жизни, посвятив себя другому божеству"
@@ -4381,6 +4626,7 @@
  decision_avatar_of_x_deity_desc: "У [ROOT.Char.GetFaith.HighGodNamePossessive] нет более [Select_CString(ROOT.Char.IsFemale, 'ревностной и преданной последовательницы', 'ревностного и преданного последователя' )], чем я. Я стану видимым воплощением [ROOT.Char.GetFaith.HighGodNamePossessive]!"
  decision_avatar_of_x_deity_tooltip: "Полностью посвятить себя славе [ROOT.Char.GetFaith.HighGodNamePossessive]."
  decision_avatar_of_x_deity_confirm: "Да будет так."
+ unlocks_tayee_mandala_decision: "Открывает [Concept('decision', 'решение')|E] «[GetDecision('decision_reign_of_the_avatar').GetName]»"
 
  decision_reign_of_the_avatar: "Утвердить божественную власть"
  decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] и [ROOT.Char.GetFaith.HighGodHerHis|U] аватара, что ходит по этой земле. Все должны поклоняться и чтить воплощение [ROOT.Char.GetFaith.HighGodNamePossessive]!"
