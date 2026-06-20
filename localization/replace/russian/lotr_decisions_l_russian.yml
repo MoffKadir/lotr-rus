@@ -1530,6 +1530,11 @@
  decision_rlain_convert_faith_tooltip: "Начать почитать [GetFaithByKey('faith_angmar_azira').GetAdjective|l]"
  is_terrified_of_you_tt: "[terrified_i|E] [Concept('cowed', 'Устрашены')|E] #high вами#!"
 
+ decision_purchase_tharbad: "Купить Тарбад"
+ decision_purchase_tharbad_desc: "[GetTitleByKey('c_tharbad').GetNameNoTier] долгое время находился под совместным управлением [Concept('gondor', 'Гондора')|E] и [Concept('arnor', 'Арнора')|E] и остаётся одним из богатейших городов севера. В порту Тарбада много торговцев, а его расположение на Королевском тракте в [GetTitleByKey('c_minas_tirith').GetNameNoTier] обеспечивает постоянное движение через него.\n\nЯ контролирую лишь южную, менее процветающую часть #ONCLICK:TITLE,c_harabad #TOOLTIP:LANDED_TITLE,c_harabad #L Харабада#!#!#!, но [Concept('cardolan', 'Кардолан')|E] слаб. Их держава переживает трудности. Несомненно, они оценили бы мою помощь, как финансовую, так и военную? Я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )], что за небольшую цену, такую как полный контроль над Тарбадом, и если [GetTitleByKey('k_cardolan').GetHolder.GetTopLiege.GetTitledFirstName] услышит от нас нужные слова, мы сможем найти наиболее выгодное решение для всех заинтересованных сторон..."
+ decision_purchase_tharbad_tooltip: "Купить [GetTitleByKey('c_tharbad').GetNameNoTier] во владение"
+ decision_purchase_tharbad_confirm: "Самая выгодная сделка!"
+
  #######################
  ### Shire Decisions ###
  #######################
@@ -4439,14 +4444,14 @@
  decision_favor_overseers_confirm: "К кому же мне обратиться?"
  decision_favor_overseers_effect.tt: "Получить доступ к уникальным [Concept('men_at_arms', 'профессионалам')|E] и положительным модификаторам, объединившись с булганами, чёрными нуменорцами или орками."
 
- decision_khorahil_fortify_west: "Укрепить берега"
+ decision_khorahil_fortify_west: "Укрепить залив Тулванг"
  decision_khorahil_fortify_west_tooltip: "Создать оборонительные сооружения вдоль тулвангского побережья"
  decision_khorahil_fortify_west_desc: "Земли вдоль залива Тулванг уязвимы для вторжения беллакарцев. Мы должны захватить эти земли и подготовить их к грядущей войне."
  decision_khorahil_fortify_west_confirm: "Подготовить оборону."
  decision_khorahil_fortify_west_effect.tt: "Все [Concept('county', 'графства')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('special_region_khorahil_fortify_coasts_west').GetName] получат [Concept('county_modifier', 'модификатор')|E] «[GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L]»."
  tulwang_building_3_tt: "Не менее в 3 графствах в регионе [GetGeographicalRegion('special_region_khorahil_fortify_coasts_west').GetName] построены [GetBuilding('march_01').GetName] или [GetBuilding('tunnel_network_01').GetName]."
 
- decision_khorahil_fortify_east: "Укрепить берега"
+ decision_khorahil_fortify_east: "Укрепить Ормальский залив"
  decision_khorahil_fortify_east_tooltip: "Создать оборонительные сооружения вдоль ормальского побережья"
  decision_khorahil_fortify_east_desc: "Земли вдоль Ормальского залива уязвимы для вторжения кхайцев. Мы должны захватить эти земли и подготовить их к грядущей войне."
  decision_khorahil_fortify_east_confirm: "Подготовить оборону."
@@ -4459,6 +4464,15 @@
  decision_khorahil_indoctrinate_harshandatt_confirm: "Воспряньте, сыны Бури!"
  decision_khorahil_indoctrinate_harshandatt.tt: "Обратить большую часть #ONCLICK:TITLE,e_harshandatt #TOOLTIP:LANDED_TITLE,e_harshandatt #L Харшандатта#!#!#! в [GetFaithByKey('faith_sened').GetAdjective|l]."
  khorahil_zealots_army_name: "Сенедийские фанатики"
+
+ decision_khorahil_annex_an_balkumagan: "Аннексировать Ан-Балкумаган"
+ decision_khorahil_annex_an_balkumagan_tooltip: "Вассализировать Ан-Балкумаган"
+ decision_khorahil_annex_an_balkumagan_desc: "Давным-давно я [Select_CString(ROOT.Char.IsFemale, 'правила', 'правил' )] [Concept('anbalkumagan', 'Ан-Балкумаганом')|E] железной рукой. Мои родичи, [Concept('black_numenoreans', 'чёрные нуменорцы')|E], всё ещё живут там, медленно угасая. Они покорятся мне."
+ decision_khorahil_annex_an_balkumagan_confirm: "Отправить послов."
+ decision_khorahil_annex_an_balkumagan.tt: "Ваша [Concept('realm', 'держава')|E] граничит с державой [GetTitleByKey('k_an_balkumagan').GetNameNoTier]."
+ decision_khorahil_annex_an_balkumagan.tt_2: "[Concept('ruler', 'Правитель')|E] державы [GetTitleByKey('k_an_balkumagan').GetNameNoTier] придерживается [Concept('alignment_evil', 'злого')|E] [Concept('alignment', 'мировоззрения')|E]."
+ decision_khorahil_annex_an_balkumagan.tt_3: "Вы [Concept('vassalize', 'вассализируете')|E] державу [GetTitleByKey('k_an_balkumagan').GetNameNoTier]"
+ military_strength_more_than_an_balk: "Ваша текущая военная мощь сильнее державы [GetTitleByKey('k_an_balkumagan').GetNameNoTier]."
 
  decision_khorahil_destroy_bellakar: "Уничтожить Беллакар"
  decision_khorahil_destroy_bellakar_tooltip: "Начать войну за опустошение Беллакара"
