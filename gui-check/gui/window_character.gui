@@ -164,6 +164,16 @@ window = {
 				}
 			}
 
+			container_secondary = {
+				visible = "[GetScriptedGui('is_blue_wizard_gui').IsValid(GuiScope.SetRoot(CharacterWindow.GetCharacter.MakeScope).End)]"
+				position = { 60 0 } # LotR
+				datacontext = "[CharacterWindow.GetCharacter.GetPlayerHeir]"
+				blockoverride "portrait_button"
+				{
+					alwaystransparent = "[GreaterThan_CFixedPoint( GetPlayer.MakeScope.Var('disable_clicking_portraits').GetValue, '(CFixedPoint)0' )]"
+				}
+			}
+
 			### Main Character
 			portrait_character_view_main = {
 				name = "tutorial_highlight_main_character_button"

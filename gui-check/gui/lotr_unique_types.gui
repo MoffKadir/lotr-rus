@@ -1339,7 +1339,7 @@ types LotRWindowCountyViewTypes
 						}
 
 						hbox = {
-							visible = "[Or(HoldingView.HasDuchyCapitalBuildingSlot, HoldingView.HasSpecialBuildingSlot )]"
+							visible = "[Or(HoldingView.HasDuchyCapitalBuildingSlot, Or( HoldingView.HasSpecialBuildingSlot, HoldingView.HasGreatBuildingSlot ) )]"
 							ignoreinvisible = yes
 							spacing = 5
 							expand = {}

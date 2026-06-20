@@ -58,7 +58,7 @@
 				AutomatedColonisationTitleCheckboxes = {}
 			}
 
-			hbox = { #Holding + Building Settings
+			hbox = { #Holding
 				widget = { #Holding Settings
 					size = { 235 325 }
 					background = {
@@ -113,6 +113,10 @@ types AutomatedColonisationSettingsTypes {
 				blockoverride "CheckboxOnClick" {
 					onclick = "[GetScriptedGui('lotr_WAC_building_stockade_settings').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 				}
+				blockoverride"tooltip_block" {
+					tooltip = "WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_STOCKADES"
+					using = tooltip_nw
+				}
 				blockoverride "CheckboxChecked" {
 					checked = "[GetPlayer.MakeScope.Var('WAC_setttings').Story.MakeScope.Var('lotr_WAC_building_stockade_settings').IsSet]"
 				}
@@ -137,6 +141,10 @@ types AutomatedColonisationSettingsTypes {
 			AutomatedColonisationCheckbox = {
 				blockoverride "CheckboxOnClick" {
 					onclick = "[GetScriptedGui('lotr_WAC_building_trading_outposts_settings').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+				}
+				blockoverride"tooltip_block" {
+					tooltip = "WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_TRADING_OUTPOSTS"
+					using = tooltip_nw
 				}
 				blockoverride "CheckboxChecked" {
 					checked = "[GetPlayer.MakeScope.Var('WAC_setttings').Story.MakeScope.Var('lotr_WAC_building_trading_outposts_settings').IsSet]"
@@ -163,6 +171,10 @@ types AutomatedColonisationSettingsTypes {
 				blockoverride "CheckboxOnClick" {
 					onclick = "[GetScriptedGui('lotr_WAC_building_local_militia_settings').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 				}
+				blockoverride"tooltip_block" {
+					tooltip = "WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_LOCAL_MILITIA"
+					using = tooltip_nw
+				}
 				blockoverride "CheckboxChecked" {
 					checked = "[GetPlayer.MakeScope.Var('WAC_setttings').Story.MakeScope.Var('lotr_WAC_building_local_militia_settings').IsSet]"
 				}
@@ -187,6 +199,10 @@ types AutomatedColonisationSettingsTypes {
 			AutomatedColonisationCheckbox = {
 				blockoverride "CheckboxOnClick" {
 					onclick = "[GetScriptedGui('lotr_WAC_building_construction_guilds_settings').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+				}
+				blockoverride"tooltip_block" {
+					tooltip = "WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_CONSTRUCITON_GUILDS"
+					using = tooltip_nw
 				}
 				blockoverride "CheckboxChecked" {
 					checked = "[GetPlayer.MakeScope.Var('WAC_setttings').Story.MakeScope.Var('lotr_WAC_building_construction_guilds_settings').IsSet]"
@@ -259,7 +275,7 @@ types AutomatedColonisationSettingsTypes {
 			AutomatedColonisationCheckbox = {
 				enabled = "[GetScriptedGui('lotr_WAC_holding_castle_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 				blockoverride "tooltip_block" {
-					tooltip = "[GetScriptedGui('lotr_WAC_holding_castle_settings').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					tooltip = "[SelectLocalization(GetScriptedGui('lotr_WAC_holding_castle_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'WASTELANDS_AUTOMATION_SETTINGS_TT', 'WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_CASTLE_VALID_TT')]"
 					using = tooltip_sw
 				}
 				blockoverride "CheckboxOnClick" {
@@ -273,7 +289,7 @@ types AutomatedColonisationSettingsTypes {
 			expand = {}
 
 			text_single = {
-				text = WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_CASTLE
+				text = WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_CASTLE
 			}
 
 			spacer = { size = { 15 1 } }
@@ -289,7 +305,7 @@ types AutomatedColonisationSettingsTypes {
 			AutomatedColonisationCheckbox = {
 				enabled = "[GetScriptedGui('lotr_WAC_holding_city_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 				blockoverride "tooltip_block" {
-					tooltip = "[GetScriptedGui('lotr_WAC_holding_city_settings').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					tooltip = "[SelectLocalization(GetScriptedGui('lotr_WAC_holding_city_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'WASTELANDS_AUTOMATION_SETTINGS_TT', 'WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_CITY_VALID_TT')]"
 					using = tooltip_sw
 				}
 				blockoverride "CheckboxOnClick" {
@@ -303,7 +319,7 @@ types AutomatedColonisationSettingsTypes {
 			expand = {}
 
 			text_single = {
-				text = WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_CITY
+				text = WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_CITY
 			}
 
 			spacer = { size = { 15 1 } }
@@ -319,7 +335,7 @@ types AutomatedColonisationSettingsTypes {
 			AutomatedColonisationCheckbox = {
 				enabled = "[GetScriptedGui('lotr_WAC_holding_temple_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 				blockoverride "tooltip_block" {
-					tooltip = "[GetScriptedGui('lotr_WAC_holding_temple_settings').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					tooltip = "[SelectLocalization(GetScriptedGui('lotr_WAC_holding_temple_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'WASTELANDS_AUTOMATION_SETTINGS_TT', 'WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_TEMPLE_VALID_TT')]"
 					using = tooltip_sw
 				}
 				blockoverride "CheckboxOnClick" {
@@ -333,7 +349,7 @@ types AutomatedColonisationSettingsTypes {
 			expand = {}
 
 			text_single = {
-				text = WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_TEMPLE
+				text = WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_TEMPLE
 			}
 
 			spacer = { size = { 15 1 } }
@@ -349,7 +365,7 @@ types AutomatedColonisationSettingsTypes {
 			AutomatedColonisationCheckbox = {
 				enabled = "[GetScriptedGui('lotr_WAC_holding_tribe_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 				blockoverride "tooltip_block" {
-					tooltip = "[GetScriptedGui('lotr_WAC_holding_tribe_settings').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					tooltip = "[SelectLocalization(GetScriptedGui('lotr_WAC_holding_tribe_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'WASTELANDS_AUTOMATION_SETTINGS_TT', 'WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_TRIBE_VALID_TT')]"
 					using = tooltip_sw
 				}
 				blockoverride "CheckboxOnClick" {
@@ -363,7 +379,7 @@ types AutomatedColonisationSettingsTypes {
 			expand = {}
 
 			text_single = {
-				text = WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_TRIBE
+				text = WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_TRIBE
 			}
 
 			spacer = { size = { 15 1 } }
@@ -379,7 +395,7 @@ types AutomatedColonisationSettingsTypes {
 			AutomatedColonisationCheckbox = {
 				enabled = "[GetScriptedGui('lotr_WAC_holding_delving_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 				blockoverride "tooltip_block" {
-					tooltip = "[GetScriptedGui('lotr_WAC_holding_delving_settings').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					tooltip = "[SelectLocalization(GetScriptedGui('lotr_WAC_holding_delving_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'WASTELANDS_AUTOMATION_SETTINGS_TT', 'WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_DELVING_VALID_TT')]"
 					using = tooltip_sw
 				}
 				blockoverride "CheckboxOnClick" {
@@ -393,7 +409,7 @@ types AutomatedColonisationSettingsTypes {
 			expand = {}
 
 			text_single = {
-				text = WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_DELVING
+				text = WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_DELVING
 			}
 
 			spacer = { size = { 15 1 } }
@@ -409,7 +425,7 @@ types AutomatedColonisationSettingsTypes {
 			AutomatedColonisationCheckbox = {
 				enabled = "[GetScriptedGui('lotr_WAC_holding_refuge_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 				blockoverride "tooltip_block" {
-					tooltip = "[GetScriptedGui('lotr_WAC_holding_refuge_settings').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					tooltip = "[SelectLocalization(GetScriptedGui('lotr_WAC_holding_refuge_settings').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'WASTELANDS_AUTOMATION_SETTINGS_TT', 'WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_REFUGE_VALID_TT')]"
 					using = tooltip_sw
 				}
 				blockoverride "CheckboxOnClick" {
@@ -423,7 +439,7 @@ types AutomatedColonisationSettingsTypes {
 			expand = {}
 
 			text_single = {
-				text = WASTELANDS_AUTOMATION_SETTINGS_BUILDINGS_REFUGE
+				text = WASTELANDS_AUTOMATION_SETTINGS_HOLDINGS_REFUGE
 			}
 
 			spacer = { size = { 15 1 } }
