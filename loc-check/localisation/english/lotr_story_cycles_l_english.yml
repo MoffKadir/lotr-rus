@@ -2,6 +2,46 @@
  ####################################
  ### Bountig Medlokan Story Cycle ###
  ####################################
-
  # Intro to his story - fight in the West against Rohan
+ story_cycle_bountig_medlokan: "Bountig's Travels"
+ story_cycle_bountig_medlokan_desc: "Fate has torn [GetScriptedCharacterByHistoryID('bountigmedlokan').GetFirstName] from his home and family, and now he wanders through the wide lands of [middleearth|E]. His travels will touch many lands West and South before it is time to return again to his homeland. Look for special Story Contracts that will provide opportunies to grow in experience and wisdom durring his journey.\n\n$bountig_event_chain.0012.a.tt.2$"
  bountig_medlokan_intro_to_story: "Your [domicile|E] will be moved to [contract_employer.GetName]'s capital.\n\n[contract_employer.GetName] will start a war with [GetTitleByKey('k_rohan').GetHolder.GetName] with #V you#! as their ally"
+ 
+ #################################
+ ### Eradan - War in the North ###
+ #################################
+ story_cycle_eradan: "The Defenders of Eriador"
+ story_cycle_eradan_desc: "[GetTitleByKey('d_laamp_guardians_of_sarn_ford').GetName] have been called upon to defend [eriador|E]. In the north of [middleearth|E], a new threat is rising, and it falls upon Eradan, Andriel, and Farin to stop it. Look for special Story Contracts that will guide you along the path of the Defenders of Eriador! At safe locations, you may speak with the locals to gain information on the next leg of your journey."
+ warriors_three_desc: "The Warriors Three"
+ 
+ ########################
+ ### Arphazêl's Story ###
+ ########################
+ story_cycle_arphazel: "The Ascending Dawn"
+ story_cycle_arphazel_desc: "Arphazêl of Anagzâyan has escaped from her captivity and now seeks to build a new life for herself. Look for special story contracts that will advance Arphazêl's adventure!"
+
+ ####################
+ ### Purge of Ray ###
+ ####################
+ lotr_story_cycle_purge_of_ray: "Purge of Ray"
+ lotr_story_cycle_purge_of_ray_desc: "[GetTitleByKey('k_ray').GetHolder.GetFirstNamePossessive] ascension has thrown [GetTitleByKey('k_ray').GetName] into chaos, and Revolutionaries and Reactionaries both seek to profit from the instability and bring their faction to the throne. Skilled intrigue and an iron fist will be required to restore order to Ray."
+ pacification: "Pacification"
+ resistance: "Resistance"
+ purge_opponents: "Opponents"
+ min_pacification: "0"
+ max_pacification: "20"
+ min_resistance: "$min_pacification$"
+ max_resistance: "$max_pacification$"
+ 
+ ###############################
+ ### Éira Bloodspear's Story ###
+ ###############################
+ story_cycle_eira: "A Quest for Vengeance"
+ story_cycle_eira_desc: "TEMP Mark my words, vengeance #italic will#! be mine!"
+ EIRA_FORMABLE_KINGDOM: "[GetTitleByKey('k_dunlandfells').GetName]"
+ 
+ ################
+ ### THE MASK ###
+ ################
+ story_cycle_goblin_mask: "The Mask"
+ story_cycle_goblin_mask_desc: "You have found a curious mask. It is unadorned except for a few animal horns, and it seems to fit perfectly to your face. It emanates a strange pull, as if it #italic wants#! to be worn. You find it difficult to withstand that pull. The mask sometimes offers boons, but sometimes, it might lead you astray. Beware the consequences of owning the mask... for at some point, it may begin owning #italic you...#!"
