@@ -213,7 +213,7 @@
  sailing.2008.desc: "Вот уже несколько дней мы не ощущаем ни малейшего дуновения ветра, наполняющего наши паруса. Я вижу, что команда становится беспокойной, но я не знаю, что с этим делать. [first_mate.GetFirstName] просится ко мне в каюту, с серьёзным выражением лица.\n\n«Капитан, люди обеспокоены. Они говорят, [ROOT.Char.GetFaith.WaterGodName] гневается на нас, нам нужно сделать подношения, чтобы умилостивить [ROOT.Char.GetFaith.WaterGodHerHis]».\n\nВсё это звучит, как чепуха, но подобный жест должен повысить боевой дух."
  sailing.2008.a: "Ладно, дадим [ROOT.Char.GetFaith.WaterGodHerHim] золото и молитвы..."
  sailing.2008.b: "И слышать больше ничего не хочу, подождём ветра!"
- sailing.2008.c: "Объяснить команду, что [ROOT.Char.GetFaith.WaterGodName] не управляет ветрами."
+ sailing.2008.c: "Объяснить команде, что [ROOT.Char.GetFaith.WaterGodName] не управляет ветрами."
 
  sailing.2009.t: "Звезды сияют одинаково"
  sailing.2009.desc: "Уже ночь, когда я выхожу из своей каюты. На палубе непривычно тихо. Я вижу, как один из членов моей команды спокойно сидит, подняв свои глаза к звёздам.\n\n«Тихая ночь, не так ли?»\n\n[stargazer.GetSheHe|U] в изумлении поворачивается ко мне. «Капитан! Простите, я не [Select_CString(stargazer.IsFemale, 'обратила', 'обратил' )] внимания... до того, как я [Select_CString(stargazer.IsFemale, 'попала', 'попал' )] сюда, я никогда по-настоящему не [Select_CString(stargazer.IsFemale, 'ценила', 'ценил' )] звёзды, понимаете?»\n\nЯ киваю в знак согласия, глядя на точечки света далеко вверху. «Позвольте мне рассказать вам кое-что о звёздах...»"
@@ -266,7 +266,7 @@
  sailing.2101.c.tt: "#F Воззвать к сострадательности персонажа [woo_target.GetFirstNamePossessiveNoTooltip].#!"
  sailing.2101.d: "Если бы я [Select_CString(ROOT.Char.IsFemale, 'была', 'был' )] достаточно [Select_CString(ROOT.Char.IsFemale, 'умелой', 'умелым' )], я бы [Select_CString(ROOT.Char.IsFemale, 'помогла', 'помог' )] удержать корабль на плаву."
  sailing.2101.d.tt: "#F Воззвать к усердию персонажа [woo_target.GetFirstNamePossessiveNoTooltip].#!"
- sailing.2101.e: "Богатства океана могуть прокормить целые города, если понадобится."
+ sailing.2101.e: "Богатства океана могут прокормить целые города, если понадобится."
  sailing.2101.e.tt: "#F Возввать к хозяйственности персонажа [woo_target.GetFirstNamePossessiveNoTooltip].#!"
  sailing.2102.reply_sailor: "«$sailing.2101.a$»\n\n"
  sailing.2102.reply_prospector: "«$sailing.2101.b$»\n\n"
@@ -356,7 +356,7 @@
  sailing_ends_tt: "[GetActivityType('activity_sailing').GetName] завершается"
 
  sailing.2301.t: "Минутка для беседы"
- sailing.2301.desc: "Солнце светит ярко, наш корабль быстро плывет по открытым водам, набирая скорость. [befriend_target.GetFirstName] стоит неподалёку: это мой шанс произвести на н[befriend_target.GetHerHis] впечатление.\n\n«[befriend_target.GetTitledFirstNameNoTooltip]! Как поживаете? Не так часто нам выпадает шанс поговорить», - начинаю я непринуждённо.\n\n[befriend_target.GetSheHe|U], кажется, [Select_CString(befriend_target.IsFemale, 'размышляла', 'размышлял' )]удивлена, но не [Select_CString(befriend_target.IsFemale, 'настроена', 'настроен' )] враждебно к нашей беседе."
+ sailing.2301.desc: "Солнце светит ярко, наш корабль быстро плывет по открытым водам, набирая скорость. [befriend_target.GetFirstName] стоит неподалёку: это мой шанс произвести на н[befriend_target.GetHerHis] впечатление.\n\n«[befriend_target.GetTitledFirstNameNoTooltip]! Как поживаете? Не так часто нам выпадает шанс поговорить», - начинаю я непринуждённо.\n\n[befriend_target.GetSheHe|U], кажется, [Select_CString(befriend_target.IsFemale, 'удивлена', 'удивлён' )], но не [Select_CString(befriend_target.IsFemale, 'настроена', 'настроен' )] враждебно к нашей беседе."
 
  sailing.2302.reply_miner: "«$sailing.2101.a$»\n\n"
  sailing.2302.reply_prospector: "«$sailing.2101.b$»\n\n"
@@ -1826,7 +1826,7 @@
  sailing.9130.d: "Поднять паруса! Мы отступаем!"
 
  sailing.9131.t: "Капитан [dueled_pirate.GetFirstName] [Select_CString(dueled_pirate.IsFemale, 'унижена', 'унижен' )]"
- sailing.9131.desc: "После ожесточенной дуэли я, наконец, стою над своим поверженным врагом, [Select_CString(dueled_pirate.IsFemale, 'которая', 'который' )] лежит, скорчившись, на палубе. Обе команды, кажется, застыли на месте, пристально глядя на меня, пока я наслаждаюсь моментом. Задумчивость прерывается мучительным всхлипом [Select_CString(dueled_pirate.IsFemale, 'моеей противницы, которая', 'моего противника, который' )] начинает умолять меня о пощаде. \n\nТеперь я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] решить, как лучше всего воспользоваться ситуацией. Я [Select_CString(ROOT.Char.IsFemale, 'доказала', 'доказал' )] свою доблесть, но здесь могут быть и другие возможности..."
+ sailing.9131.desc: "После ожесточенной дуэли я, наконец, стою над своим поверженным врагом, [Select_CString(dueled_pirate.IsFemale, 'которая', 'который' )] лежит, скорчившись, на палубе. Обе команды, кажется, застыли на месте, пристально глядя на меня, пока я наслаждаюсь моментом. Задумчивость прерывается мучительным всхлипом [Select_CString(dueled_pirate.IsFemale, 'моей противницы, которая', 'моего противника, который' )] начинает умолять меня о пощаде. \n\nТеперь я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] решить, как лучше всего воспользоваться ситуацией. Я [Select_CString(ROOT.Char.IsFemale, 'доказала', 'доказал' )] свою доблесть, но здесь могут быть и другие возможности..."
  sailing.9131.a: "[dueled_pirate.GetName], на гауптвахту!"
  sailing.9131.b: "Море не терпит слабости. [dueled_pirate.GetName] пройдёт по доске."
  sailing.9131.c: "Вы хорошо сражались, [dueled_pirate.GetName]. Присоединяйтесь к моей команде!"
