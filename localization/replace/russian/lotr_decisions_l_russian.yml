@@ -3425,15 +3425,16 @@
  # Adapted from RICE Sponsor Tayee Site
 
  decision_sponsor_tayee_holy_building: "Проспонсировать тайитское религиозное сооружение"
- decision_sponsor_tayee_holy_building_tooltip: "Построить тайитскую святыню в вашей [Concept('capital', 'столице')|E]"
+ decision_sponsor_tayee_holy_building_tooltip: "Построить тайитскую святыню в [Concept('county', 'графстве')|E] [Concept('domain', 'домена')|E] с [Concept('core_tenet', 'догматом')|E] «[GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName]»"
  decision_sponsor_tayee_holy_building_desc: "Как [ROOT.Char.GetTitleAsNameNoTooltip|l], [Select_CString(ROOT.Char.IsFemale, 'желающая', 'желающий' )] продемонстрировать свою преданность Тайи или, в частности, своему покровителю, я хочу пожертвовать средства на строительство религиозного сооружения в своих [Concept('domain', 'владениях')|E]. Местное сообщество духовно выиграет от этого нового сооружения, и все узнают о моём благочестии!"
- decision_sponsor_tayee_holy_building_effect_tooltip_1: "Вы сами выберете, что спонсировать - путевое святилище, храм или монастырь, которые будут приносить различные блага в виде [Concept('piety', 'благочестия')|E], [Concept('prestige', 'престижа')|E] и [Concept('dynasty_prestige', 'признания')|E], а также соответствующий [Concept('character_modifier', 'модификатор персонажа')|E] и [Concept('county_modifier', 'модификатор графства')|E] для вашей [Concept('realm_capital', 'столицы')|E]"
+ decision_sponsor_tayee_holy_building_effect_tooltip_1: "Вы сами выберете, что спонсировать - путевое святилище, храм или монастырь, которые будут приносить различные блага в виде [Concept('piety', 'благочестия')|E], [Concept('prestige', 'престижа')|E] и [Concept('dynasty_prestige', 'признания')|E], а также соответствующий [Concept('character_modifier', 'модификатор персонажа')|E] и [Concept('county_modifier', 'модификатор графства')|E] для одного из [Concept('counties', 'графств')|E] [Concept('domain', 'домена')|E]"
  decision_sponsor_tayee_holy_building_effect_tooltip_2: "Вы не получите эти бонусы сразу, так как процесс строительства займёт от года до двух лет"
  decision_sponsor_tayee_holy_building_effect_tooltip_3: "Поскольку вы контролируете [GetBuilding('wonder_tarnet_barzain').GetName], вы получите уникальный [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip], который варьируется в зависимости от количества проспонсированных сооружений."
  decision_sponsor_tayee_holy_building_effect_tooltip_4: "Поскольку вы контролируете [GetBuilding('wonder_tarnet_barzain').GetName], ваш [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip] [Concept('character_modifier', 'модификатор персонажа')|E] #P улучшится#!"
- decision_sponsor_tayee_holy_building_confirm: "Да славится [ROOT.Char.GetFaith.HighGodNameAlternate]!"
+ tayee_augar_prophet_changed_faith.tt: "У новой [Concept('faith', 'конфессии')|E] нет [Concept('core_tenet', 'догмата')|E] «[GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName]»"
+ decision_sponsor_tayee_holy_building_confirm: "Да славится [ROOT.Char.GetFaith.HighGodName2]!"
  decision_sponsor_tayee_holy_building_county_faith_req: "Ваша [Concept('realm_capital', 'столица')|E] принадлежит к [Concept('faith', 'конфессии')|E] с [Concept('core_tenet', 'догматом')|E] [GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName]"
- decision_sponsor_tayee_holy_building_county_mod_req: "В вашей [Concept('realm_capital', 'столице')|E] нет [Concept('county_modifier', 'модификатора графства')|E], указывающего на то, что там недавно была построена тайитская святыня"
+ decision_sponsor_tayee_holy_building_county_mod_req: "Любое [Concept('county', 'графство')|E] [Concept('domain', 'домена')|E]:\n$EFFECT_LIST_BULLET$Исповедует [Concept('faith', 'конфессию')|E] с [Concept('core_tenet', 'догматом')|E] «[GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName]»\n$EFFECT_LIST_BULLET$Не имеет [Concept('county_modifier', 'модификатора графства')|E] тайитской святыни"
  decision_sponsor_tayee_holy_building_current_req: "В настоящее время не ведётся строительство тайитской святыни"
 
  lotr_tayee_holy_building_type: "Что нам построить?"
@@ -4288,7 +4289,7 @@
  decision_aukuag_empire_desc: "Поскольку народы аукуагов и карсагов теперь контролируют все земли от Ауз-Ульджи до [Concept('bayoftulwang', 'залива Тулванг')|E], остаётся только одно направление для экспансии - на запад. Объединив аукуагов и карсагов и завоевав долину Сиреш, мы сможем объединить нашу древнюю родину Унав!"
  decision_aukuag_empire_confirm: "Аписайцы должны получить своё!"
 
- clan_vassals_will_convert: "Поскольку я принадлежу к основной аканалийской, аписайской или талатримской культуре, мои [Concept('tribal', 'племенные')|E] вассалы примут [Concept('clan', 'клановую')|E] форму правления"
+ clan_vassals_will_convert: "Мои [Concept('tribal', 'племенные')|E] вассалы примут [Concept('clan_government', 'клановую форму правления')|E]"
 
  ##############################
  ##### Religious Decision #####
@@ -4603,9 +4604,9 @@
  RADYANI_WAR_TARGET_EXISTS: "По крайней мере один [Concept('ruler', 'правитель')|E] в регионе [GetTitleByKey('e_sirayn').GetNameNoTier] является ариэнистом"
  RADYANI_ARIENISTS_RALLY: "Все последователи Ариэн в Сирайне объединятся против вас"
 
- decision_radyani_avatar: "Стать аватаром Йом"
+ decision_radyani_avatar: "Стать воплощением Йом"
  decision_radyani_avatar_desc: "С самого рождения я [Select_CString(ROOT.Char.IsFemale, 'чувствовала', 'чувствовал' )] руководство Той, кто дарует сны, словно нежный голос в моем ухе, который направляет меня на путь праведности и мести тем, кто причинил мне зло. Йом оберегает меня. Йом присматривает за мной. Когда я чувствую, как она двигается, я тоже двигаюсь. В некотором смысле... она стала частью меня, а я - воплощением ее воли. Пришло время сообщить об этом всем."
- decision_radyani_avatar_tooltip: "Провозгласить свой статус аватара Йом"
+ decision_radyani_avatar_tooltip: "Провозгласить свой статус воплощения Йом"
  decision_radyani_avatar_confirm: "Нежный лунный свет, направь мои шаги."
 
  decision_secure_sirayn: "Обезопасить Сирайн"
@@ -4624,13 +4625,29 @@
  fervor_greater_than_70: "У вашей [Concept('faith', 'конфессии')|E] 70 или больше [Concept('fervor', 'рвения')|E]"
 
  decision_avatar_of_x_deity: "Стать воплощением [ROOT.Char.GetFaith.HighGodNamePossessive]"
- decision_avatar_of_x_deity_desc: "У [ROOT.Char.GetFaith.HighGodNamePossessive] нет более [Select_CString(ROOT.Char.IsFemale, 'ревностной и преданной последовательницы', 'ревностного и преданного последователя' )], чем я. Я стану видимым воплощением [ROOT.Char.GetFaith.HighGodNamePossessive]!"
+ decision_avatar_of_x_deity_desc: "У [ROOT.Char.GetFaith.HighGodNamePossessive] нет более [Select_CString(ROOT.Char.IsFemale, 'ревностной и преданной последовательницы', 'ревностного и преданного последователя' )], чем я. В великом обряде вознесения перед свидетелями я облачусь в мантию силы [ROOT.Char.GetFaith.HighGodNamePossessive]!"
  decision_avatar_of_x_deity_tooltip: "Полностью посвятить себя славе [ROOT.Char.GetFaith.HighGodNamePossessive]."
  decision_avatar_of_x_deity_confirm: "Да будет так."
  unlocks_tayee_mandala_decision: "Открывает [Concept('decision', 'решение')|E] «[GetDecision('decision_reign_of_the_avatar').GetName]»"
+ lotr_is_temporal_hof: "Вы являетесь [Concept('temporal_head_of_faith', 'светским главой конфессии')|E]"
+ lotr_strong_hook_on_spiritual_hof: "У вас есть [Concept('strong_hook', 'сильное влияние')|E] на вашего [Concept('spiritual_head_of_faith', 'духовного лидера')|E]"
+ lotr_spiritual_hof_high_opinion: "Ваш [Concept('spiritual_head_of_faith', 'духовный лидер')|E] имеет о вас не менее #V 80#! [Concept('opinion', 'мнения')|E]"
+ lotr_no_spiritual_hof: "У вас нет [Concept('spiritual_head_of_faith', 'духовного лидера')|E]"
+ lotr_more_virtue_than_sin_traits: "Ваши @virtue_icon! [Concept('virtues', 'добродетели')|E] перевешивают ваши @sin_icon! [Concept('sins', 'грехи')|E]\n"
+ tayee_special_requirement_to_mantle_deity_tt: "#T Особое требование к мантии [CHARACTER.GetFaith.HighGodNamePossessive]:#!\n"
+ tayee_sponsored_three_sites_tt: "Вы проспонсировали не менее #V [GetPlayer.MakeScope.ScriptValue('sponsored_tayee_sites_count_avatar_max')]#! святынь через [Concept('decision', 'решение')|E] «[GetDecision('decision_sponsor_tayee_holy_building').GetName]» #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('sponsored_tayee_sites_count_avatar')]/[GetPlayer.MakeScope.ScriptValue('sponsored_tayee_sites_count_avatar_max')])#!"
+ tayee_have_many_friends_tt: "У вас есть не менее #V [EmptyScope.ScriptValue('tayee_friends_count_max')]#! [Concept('friends', 'друзей')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_friends_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_friends_count_max')])#!"
+ tayee_have_many_lovers_tt: "У вас есть не менее #V [EmptyScope.ScriptValue('tayee_lovers_count_max')]#! [Concept('lovers', 'любовников')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_lovers_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_lovers_count_max')])#!"
+ tayee_have_many_murders_tt: "Вы совершили не менее #V [GetPlayer.MakeScope.ScriptValue('tayee_successful_murders_count_max')]#! успешных [Concept('schemes', 'происков')|E] «[GetScheme('murder').GetTypeName]» #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_successful_murders_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_successful_murders_count_max')])#!"
+ tayee_high_capital_opinion_tt: "[Concept('county_opinion', 'Мнение')|E] в вашем [Concept('capital', 'столичном')|E] [Concept('county', 'графстве')|E] - #P 50#! или выше"
+ tayee_have_many_followers_tt: "У вас есть #V [GetPlayer.MakeScope.ScriptValue('tayee_followers_count_max')]#! или более [Concept('followers', 'последователей')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_followers_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_followers_count_max')])#!"
+ tayee_has_good_health_tt: "Показатель вашего [Concept('health', 'здоровья')|E] - $HEALTH_GOOD$ или лучше"
+ tayee_mothered_many_kids_tt: "Вы породили #V [GetPlayer.MakeScope.ScriptValue('tayee_mothered_children_count_max')]#! или более [Concept('children', 'детей')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_mothered_children_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_mothered_children_count_max')])#!"
+ tayee_sired_many_kids_tt: "Вы зачали #V [GetPlayer.MakeScope.ScriptValue('tayee_sired_children_count_max')]#! или более [Concept('children', 'детей')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_sired_children_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_sired_children_count_max')])#!"
+ tayee_already_an_avatar_of_faith_tt: "У вашей [Concept('faith', 'конфессии')|E] уже есть [GetTrait('avatar').GetName(GetNullCharacter)|l]"
 
  decision_reign_of_the_avatar: "Утвердить божественную власть"
- decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] и [ROOT.Char.GetFaith.HighGodHerHis|U] аватара, что ходит по этой земле. Все должны поклоняться и чтить воплощение [ROOT.Char.GetFaith.HighGodNamePossessive]!"
+ decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] и [ROOT.Char.GetFaith.HighGodHerHis] воплощения, что ходит по этой земле. Все должны поклоняться и чтить воплощение [ROOT.Char.GetFaith.HighGodNamePossessive]!"
  decision_reign_of_the_avatar_tooltip: "Реформировать [Concept('realm', 'державу')|E] в соответствии с традициями мандалы"
  decision_reign_of_the_avatar_confirm: "[ROOT.Char.GetFaith.HighGodName] будет править."
 

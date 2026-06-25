@@ -694,7 +694,7 @@
  building_type_arsasan_mints_01_desc: "$building_arsasan_mints_01_desc$"
  building_arsasan_mints_01: "Чеканный двор Арсасана"
  building_arsasan_mints_01_desc: "Для [Concept('trans_haradric_merchants', 'харадских купцов')|E], занимающихся торговлей золотом, Арсасан обычно является следующим пунктом, который они посещают после ночи отдыха в оазисе Мареш. Местные правители нажились на потоках золота, поступающих сюда, и превратили Мареш в крупный центр чеканки монет. Отчеканенные здесь монеты славятся по всему [Concept('harad', 'Хараду')|E] своим качеством и имеют отверстие, чтобы их можно было носить на шнурке. Разумеется, шнурок надо покупать отдельно."
- maresh_mint_decision_requirement_desc: "Может быть построено только через [Concept('decision', 'решение')|E] #V $decision_maresh_establish_mints$#!"
+ maresh_mint_decision_requirement_desc: "Может быть построено только через [Concept('decision', 'решение')|E] #V [GetDecisionWithKey('decision_maresh_establish_mints').GetName]#!"
 
  building_type_wonder_qarsa_palace_01: "Синий дворец Карсы"
  building_type_wonder_qarsa_palace_01_desc: "На вершине одинокого холма, окружённого крутыми скалами, возвышается Синий дворец. Его стены из песчаника выложены белой и голубой плиткой, что придаёт ему неповторимый вид. Здесь обитают короли Карсы, когда бы они ни возвысились в этой стране бесконечных конфликтов, войн и потрясений."
@@ -1467,7 +1467,7 @@
  building_type_wonder_tharagrondost_expanded_desc: "Могущественный город Тарагрондост, главный город и цитадель Андраста."
  building_wonder_tharagrondost_expanded: "Великий город Тарагрондост"
  building_wonder_tharagrondost_expanded_desc: "Тарагрондост, некогда одинокая цитадель [Concept('dunedain', 'дунэдайн')|E] в Андрасте, стал центром региона. Большие гавани и более высокие стены были построены при поддержке лучших [Concept('gondorians', 'гондорских')|E] зодчих. Меха, мед и деревья из Андраста отправляются из его порта в сердце Гондора. Его могучая цитадель защищает местных жителей от угрозы набегов. После многих лет мудрого правления Тарагрондост действительно стал одним из величайших городов [Concept('gondor', 'Гондора')|E]."
- tharagrondost_building: "Решение «Расширить Тарагрондост» завершено"
+ tharagrondost_building: "[Concept('decision', 'Решение')|E] #V [GetDecisionWithKey('decision_expand_tharagrondost').GetName]#! завершено"
 
  #City of Serelond
  building_type_wonder_serelond: "Серелонд"
@@ -4248,7 +4248,7 @@
  building_selena_mud_masons_01_desc: "Гильдия каменщиков Селены славится своим мастерством в [Concept('mud_masonry', 'глинобитной кладке')|E], отточенным до совершенства многими поколениями. Их знания, имеющие сакральное значение, пользуются большим уважением во всём регионе."
  building_selena_mud_masons_02: "Храмовый город Селена"
  building_selena_mud_masons_02_desc: "Благодаря неустанным усилиям гильдии каменщиков Селена превратилась в чудесный обнесённый стеной храмовый город, каждый шпиль которого свидетельствует о мастерстве его строителей в [Concept('mud_masonry', 'глинобитной кладке')|E]."
- selena_mud_masons_effect_desc: "$unlocks_building_desc$Открывает [Concept('decision', 'решение')|E] #V $decision_employ_mud_masons$#!, даже если ваша [Concept('culture', 'культура')|E] не имеет [Concept('tradition', 'традиции')|E] [GetCultureTradition('tradition_mud_masons').GetName]\n\nУлучшает [Concept('decision', 'решение')|E] #V $decision_employ_mud_masons$#!, если ваша [Concept('culture', 'культура')|E] уже имеет к нему доступ"
+ selena_mud_masons_effect_desc: "$unlocks_building_desc$Открывает [Concept('decision', 'решение')|E] #V [GetDecisionWithKey('decision_employ_mud_masons').GetName]#!, даже если ваша [Concept('culture', 'культура')|E] не имеет [Concept('tradition', 'традиции')|E] [GetCultureTradition('tradition_mud_masons').GetName]\n\nУлучшает [Concept('decision', 'решение')|E] #V [GetDecisionWithKey('decision_employ_mud_masons').GetName]#!, если ваша [Concept('culture', 'культура')|E] уже имеет к нему доступ"
 
  building_type_wonder_krythan: "Крепость-сад Аксари"
  building_type_wonder_krythan_desc: "$building_wonder_krythan_desc$"
@@ -4259,7 +4259,7 @@
  building_type_wonder_tarnet_barzain_desc: "Тарнет Барзайн, дом пророка Аугара, почитается как место зарождения тайитской религии. Хотя мириады богов Сирайна в той или иной форме почитались ещё во Вторую эпоху, Аугар упорядочил эту веру в пятом веке [ageTA|E], собрав основные тайитские ритуалы и молитвы в свод священных текстов, Тарат Балазайн."
  building_wonder_tarnet_barzain: "Храм пророка"
  building_wonder_tarnet_barzain_desc: "Тарнет Барзайн, дом пророка Аугара, почитается как место зарождения тайитской религии. Хотя мириады богов Сирайна в той или иной форме почитались ещё во Вторую эпоху, Аугар упорядочил эту веру в пятом веке [ageTA|E], собрав основные тайитские ритуалы и молитвы в свод священных текстов, Тарат Балазайн.\n\nВ Храме пророка хранятся святыни всех богов тайитского пантеона, а также обширные библиотеки, сады и фонтаны. Но самым любимым является памятник самому Аугару, который стоит в центре комплекса; из сердца пророка исходит всё остальное знание."
- tarnet_barzain_effect_desc: "$unlocks_building_desc$Использование [Concept('decision', 'решения')|E] #V $decision_sponsor_tayee_holy_building$#! предоставляет уникальный [Concept('modifier', 'модификатор')|E] [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip], который варьируется в зависимости от количества проспонсированных сооружений."
+ tarnet_barzain_effect_desc: "$unlocks_building_desc$Использование [Concept('decision', 'решения')|E] #V [GetDecisionWithKey('decision_sponsor_tayee_holy_building').GetName]#! предоставляет уникальный [Concept('modifier', 'модификатор')|E] [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip], который варьируется в зависимости от количества проспонсированных сооружений."
 
  building_type_wonder_tyarrett: "Тьярретт"
  building_type_wonder_tyarrett_desc: "$building_wonder_tyarrett_desc$"
