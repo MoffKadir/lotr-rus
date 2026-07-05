@@ -376,15 +376,11 @@
 
  decision_dorwinion_confederation: "Form the League of the Winelands"
  decision_dorwinion_confederation_tooltip: "Form a [confederation|E] with the other [rulers|E] of [dorwinion|E]"
- decision_dorwinion_confederation_desc: "The [rulers|E] of [dorwinion|E] have long been divided, with each lord and city-master governing their own lands and interests. While this has allowed for a great deal of freedom and prosperity, it has also left us vulnerable to outside threats and internal strife.\n\nPerhaps it is time to set aside our differences and form a [confederation|E], uniting our forces and resources under a single banner. Together, we can ensure the safety and prosperity of all the peoples of the Winelands of [dorwinion|E]."
+ decision_dorwinion_confederation_desc: "The [rulers|E] of [dorwinion|E] have long been divided, with each lord and city-master governing their own lands and interests. While this has allowed for a great deal of freedom and prosperity, it has also left us vulnerable to outside threats and internal strife.\n\nPerhaps it is time to set aside our differences and form a [confederation|E], uniting our forces and resources under a single banner. Together, we can ensure the safety and prosperity of all the peoples of the Winelands."
  decision_dorwinion_confederation_confirm: "We are stronger together." # Vintners. Together. Strong.
- decision_dorwinion_confederation_tt: "You form a [confederation|E] with all #high influenced#! [rulers|E]"
+ decision_dorwinion_confederation_tt: "You form a [confederation|E] with all #high influenced#! [rulers|E] in [GetTitleByKey('k_dorwinion').GetName]"
  LEAGUE_OF_THE_WINELANDS: "League of the Winelands"
- is_independent_human_in_dorwinion: "Is an [independent|E] [human|E] [ruler|E]"
- you_have_strong_hook_on_tt: "Is [hooked|E] by #high you#!"
- you_are_friends_with_tt: "Is your [friend|E]"
- you_are_allied_to_tt: "Is [allied|E] to #high you#!"
- all_indep_rulers_in_dorwinion_influenced: "At least #high 4#! [independent|E] [human|E] [rulers|E] in #high [GetGeographicalRegion('middleearth_west_rhovanion_dorwinion').GetName]#! are either:\n$EFFECT_LIST_BULLET$#high Your#! [friend|E]\n$EFFECT_LIST_BULLET$#high Your#! [ally|E]\n$EFFECT_LIST_BULLET$#high [hooked|E] by #high you#!\n$EFFECT_LIST_BULLET$Having #P 80#! or more [opinion|E] of #high you#!"
+ indep_rulers_in_dorwinion_influenced_tt: "At least #high [GetPlayer.MakeScope.ScriptValue('lotr_dorwinion_influenced_rulers_count_max')]#! [independent|E] [human|E] [counts|E] and [dukes|E] in [GetTitleByKey('k_dorwinion').GetName] are either: #weak (Currently [GetPlayer.MakeScope.ScriptValue('lotr_dorwinion_influenced_rulers_count')]/[GetPlayer.MakeScope.ScriptValue('lotr_dorwinion_influenced_rulers_count_max')], Total [GetPlayer.MakeScope.ScriptValue('lotr_dorwinion_influencable_rulers_count')])#!\n$EFFECT_LIST_BULLET$Are your [friend|E]\n$EFFECT_LIST_BULLET$Are your [ally_i|E] [ally|E]\n$EFFECT_LIST_BULLET$Are [strong_hook_i|E] [hooked|E] by #bold you#!\n$EFFECT_LIST_BULLET$Have #P [GetPlayer.MakeScope.ScriptValue('very_high_positive_opinion')]#! or more [opinion|E] of #high you#!"
 
  ###########################
  ### Activities Decision ###
@@ -665,14 +661,14 @@
  decision_adopt_arnorian_culture_get_innovations: "The Arnorian [culture|E] gains all [culture.GetName] [innovations|E]"
 
  decision_adopt_new_arnorian_culture: "Form a New Arnorian Culture"
- decision_adopt_new_arnorian_culture_desc: "Once, the Men of [arnor|E] raised mighty armies and ruled over great realms. Alas, centuries of war, ruin, and decline reduced them to what they became - wanderers of the wild, known by few and respected by fewer still. Though this way of life preserved the [dunedain|E] of [arnor|E] through the long years of hardship, it also caused them to lose touch with many of the customs and traditions of their forefathers.\n\nWith the reunification of [arnor|E] and [gondor|E], however, a new age has begun. Large numbers of [gondorians|E] have settled in the northern lands, and the peoples of the two kingdoms have increasingly mingled. From this union, a renewed culture has emerged in [arnor|E], blending the hardiness and independence of the northern [dunedain|E] with the learning, traditions, and statecraft of the South."
+ decision_adopt_new_arnorian_culture_desc: "Once, the Men of [arnor|E] raised mighty armies and ruled over great realms. Alas, centuries of war, ruin, and decline reduced them to what they became - wanderers of the wild, known by few and respected by fewer still. Though this way of life preserved the [dunedain|E] of [arnor|E] through the long years of hardship, it also caused them to lose touch with many of the customs and traditions of their forefathers.\n\nWith the reunification of [arnor|E] and [gondor|E], however, a new age has begun. Large numbers of [gondorians|E] have settled in the northern lands, and the peoples of the two kingdoms have increasingly mingled. From this union, a renewed culture has emerged in [arnor|E], blending the hardiness and independence of the northern [dunedain|E] with the learning, traditions, and statecraft of the South.\n\nWhile the Gondorians of Tharbad and the Uialedain in hills have not integrated into this culture, they have made a living alongside their distant kin across the rest of those lands."
  decision_adopt_new_arnorian_culture_confirm: "Rise, sons of Arnor!"
  decision_adopt_new_arnorian_culture_tooltip: "Adopt New Arnorian Culture"
- decision_adopt_new_arnorian_culture_courtier_custom: "Every [courtier|E] with an Arnorian descended culture"
- decision_adopt_new_arnorian_culture_vassal_custom: "Every [vassal|E] with an Arnorian descended culture"
+ decision_adopt_new_arnorian_culture_courtier_custom: "Every non-Uialedain [courtier|E] with an Arnorian descended culture"
+ decision_adopt_new_arnorian_culture_vassal_custom: "Every non-Uialedain [vassal|E] with an Arnorian descended culture"
  decision_adopt_new_arnorian_gondorian_culture_vassal_custom: "Every [vassal|E] in [arnor|E] that is of [gondorian|E] [culture|E]"
- decision_adopt_new_arnorian_culture_province_custom: "Every [county|E] in your [realm|E] with an Arnorian descended culture"
- decision_adopt_new_arnorian_gondorian_culture_province_custom: "Every [county|E] in [arnor|E] that is of [gondorian|E] [culture|E]"
+ decision_adopt_new_arnorian_culture_province_custom: "Every [county|E] in your [realm|E] with an Arnorian descended culture outside [GetTitleByKey('d_norinanya').GetNameNoTier] and [GetTitleByKey('d_eketya').GetNameNoTier]"
+ decision_adopt_new_arnorian_gondorian_culture_province_custom: "Every [county|E] in [arnor|E] that is of [gondorian|E] [culture|E] outside [GetTitleByKey('c_tharbad').GetNameNoTier] and surrounding counties"
  decision_adopt_new_arnorian_culture_get_innovations: "The New Arnorian [culture|E] gains all [culture.GetName] [innovations|E]"
  all_unlanded_family_members_new_arnor: "All $game_concept_unlanded$ [family_members|E] of [THIS.GetCharacter.GetShortUIName] of an Arnorian descended culture"
  owns_40_percent_of_arnor: "You must control at least #V 20%#! of the [counties|E] of the [GetGeographicalRegion('middleearth_west_arnor').GetName] [region|E]"
@@ -1440,13 +1436,13 @@
 
  decision_start_migration: "Call for Migration"
  decision_start_migration_tooltip: "Call for Migration"
- decision_start_migration_desc: "Placeholder - DEV POOL [GetGlobalVariable('saralain_dev_pool').GetValue]"
+ decision_start_migration_desc: "Enedhwaith is a land of misery and dispair. its people are under the yoke of the [sea_peoples|e] and its land is a pale shadow of those both to the north and to the south. Its time for us to leave the wastes and migrate to greener pastures."
  decision_start_migration_confirm: "Send the Heralds!"
  decision_start_migration_effect: "Sends Heralds to the other Enedwaithrim Rulers to invite them to the Migration"
 
  decision_launch_migration: "Launch for Migration"
  decision_launch_migration_tooltip: "Launch for Migration"
- decision_launch_migration_desc: "Placeholder - DEV POOL [GetGlobalVariable('saralain_dev_pool').GetValue]"
+ decision_launch_migration_desc: "The Time has come! We are now ready to launch our migration! time to bid farewell to the middle realm and find a new home in the wider world! We just need to decide where to go..."
  decision_launch_migration_confirm: "Send the Heralds!"
  saralain_migration_name: "Saralaini"
  migrate_cardolan: "Eriador"
@@ -1472,7 +1468,7 @@
  unlock_dunmen_heavy_infantry: "Can recruit [GetMaA('dunmen_heavy_infantry_unlock').GetName] as [men_at_arms|E]"
 
  decision_convince_dunmen_chieftain: "Convince Dunmen Chieftain"
- decision_convince_dunmen_chieftain_desc: "Our lands have long been divided between many clans, ruled by valiant chieftains and chieftesses. But now is the time to unite, for only together can we push back the encroaching Gondorians who, in their arrogance, call themselves masters of all the lands between the rivers Gwathló and Isen.\n\nI must seek out these chieftains and ensure their support, so that I can plan my next steps in dealing with Gondor with the certainty of having a united front of allies that will stand by me when the time comes..." 
+ decision_convince_dunmen_chieftain_desc: "Our lands have long been divided between many clans, ruled by valiant chieftains and chieftesses. But now is the time to unite, for only together can we push back the encroaching Gondorians who, in their arrogance, call themselves masters of all the lands between the rivers Gwathló and Isen.\n\nI must seek out these chieftains and ensure their support, so that I can plan my next steps in dealing with Gondor with the certainty of having a united front of allies that will stand by me when the time comes..."
  decision_convince_dunmen_chieftain_tooltip: "Travel to a chieftain and speak with them."
  decision_convince_dunmen_chieftain_confirm: "Let's get going."
  decision_convince_dunmen_chieftain_confirm_selection: "Select a target"
@@ -1509,6 +1505,7 @@
  decision_eira_assassination_desc: "The Governor of Tharbad is the most powerful figure in [enedhwaith|E], and the one who has poisoned my father. If I were to assassinate him, I could strike a significant blow to the gondorian hold over the region and avenge my father's death. However, this would be a risky move, as the Governor is well-protected and has many loyal followers. Still, if I can pull it off, it would send a strong message to the people of [enedhwaith|E] and potentially weaken the gondorian grip on the region."
  decision_eira_assassination_confirm: "Soft and quick as shadows I must be."
  decision_eira_assassination_tooltip: "Assassinate [GetTitleByKey('c_harabad').GetHolder.GetTitledFirstName]"
+ decision_eira_assassination_tt: "You travel to Tharbad to attempt Glormagil's assassination"
 
  decision_rlain_confederation: "Unite the Chieftains"
  decision_rlain_confederation_desc: "The chieftains of [enedhwaith|E] have long sat idle, quietly enduring the yoke of [gondor|E] like a bunch of spineless dogs. I say, this ends today! I will unite the chieftains under a single banner, and together we will rise up against our oppressors and reclaim our freedom... and gain untold riches in the process!"
@@ -1529,7 +1526,7 @@
  decision_rlain_convert_faith_confirm: "Let the Wolf-god guide us."
  decision_rlain_convert_faith_tooltip: "Convert to the worship of [GetFaithByKey('faith_angmar_azira').GetName]"
  is_terrified_of_you_tt: "Is [terrified_i|E] [cowed|E] by #high you#!"
- 
+
  decision_purchase_tharbad: "Purchase Tharbad"
  decision_purchase_tharbad_desc: "[GetTitleByKey('c_tharbad').GetNameNoTier] has long been administered jointly by both [gondor|E] and [arnor|E], and it remains one of the richest cities in the north. Its port is full of traders, and its position on the Royal Road to [GetTitleByKey('c_minas_tirith').GetNameNoTier] ensures that steady traffic passes through it.\n\nI hold merely the southern, less prosperous half in [GetTitleByKey('c_harabad').GetNameNoTier], but [cardolan|E] is weak. Their realm is struggling. Surely they would appreciate my aid, both financial and militarily? For a small price such as the full control of Tharbad, and with the right words in the ears of [GetTitleByKey('k_cardolan').GetHolder.GetTopLiege.GetTitledFirstName] I'm sure we can find a most beneficial solution for all involved..."
  decision_purchase_tharbad_tooltip: "Buy ownership of [GetTitleByKey('c_tharbad').GetNameNoTier]"
@@ -1671,7 +1668,7 @@
  decision_bellakar_tulwang_annexation_desc: "At our greatest peaks, much of northern [GetTitleByKey('k_tulwang').GetNameNoTier] was under the rule of [GetTitleByKey('e_bellakar').GetNameNoTier], our realm stretching over the [bayoftulwang|e] and crossing into the lands of [GetTitleByKey('e_thani_hazad').GetNameNoTier]. Yet those golden ages always proved brief and the power of [GetTitleByKey('k_an_balkumagan').GetNameNoTier] to the south of the peninsula ever threatened our rule. \n\nOnce more, [bellakar|e] has crossed the bay into [GetTitleByKey('k_tulwang').GetNameNoTier]. Where the cruel lords of [GetTitleByKey('k_an_balkumagan').GetNameNoTier] see in the land nothing more than exploitation grounds, we know the value and strength of its people. The key to our rule shall not be oppression but integration..."
  decision_bellakar_tulwang_annexation_confirm: "The Bay is ours!"
  must_have_tulwang_acceptance: "At least #V 50%#! of [GetGeographicalRegion('special_region_just_tulwang').GetName] must be of a [culture|e] with at least #V 40%#! [cultural_acceptance|e] towards your [culture|e]."
- 
+
  decision_bellakar_tedjin_suppression: "End the Tedjin Threat"
  decision_bellakar_tedjin_suppression_desc: "The [GetCultureByKey('tedjin').GetName], a savage race of people from the wild plains of the East, have often threatened [bellakar|E] - even leading it to the brink of destruction during the dark years of the Tedjin Yoke. Even though our valiant kings have overcome the Yoke and put the Tedjin in their place, the danger still remains.\n\nWho's to say at what time the next [GetScriptedCharacterByHistoryID('lineofjoamtuv1').GetFirstName] might come? We cannot afford to let that happen. Never again shall the land of my people fall into enemy hands! Lay low these Tedjin savages and see that they can never rise again!"
  decision_bellakar_tedjin_suppression_tooltip: "Ensure that the Tedjin never rise again"
@@ -1701,7 +1698,7 @@
  grain_anbalkumagan_providers_county_modifier_desc: "The Pharaz an-Dâira in the capital depends on this area producing and exporting massive amounts of cheap grain through an advanced network of traders, shippers, manifacturers, and even speculators."
  bread_and_circuses_anbalkumagan_county_modifier: "Pharaz an-Dâira"
  bread_and_circuses_anbalkumagan_county_modifier_desc: "The Pharaz an-Dâira is active: all citizens are entitled to regular distributions of free bread sponsored by the Emperor."
- 
+
  ### WIP ### issue #228 -> The Last Alliance of the Númenórean Realms decision
  decision_bellakar_x_gondor: "Send Emissaries to Gondor"
  decision_bellakar_x_gondor_tooltip: "Seek to restore the old alliance with Gondor"
@@ -2268,6 +2265,36 @@
  decision_reform_kharadunai_confirm: "For a better future!"
  balan_lai_reform_princes_percentage: "75% of Princes of the [balan_lai|E] follow [GetFaithByKey('faith_gimileth').GetName]\n\n$BULLET_WITH_TAB$Currently, #V [GetPlayer.MakeScope.ScriptValue('lotr_derei_convinced_percentage')]%#! fulfil this requirement"
 
+ decision_tame_the_land: "Tame the Land"
+ decision_tame_the_land_tooltip: "One day you might truly become the ruler of this land"
+ decision_tame_the_land_desc: "Azrathâni, the Sea Land. Long has it been a known wild land of hills south of the dense jungles of $k_drel$. Never had any $kharadunaim$ attempted to tame it. The population was deemed too aggressive, the land too poor, and the harbours too small.\n\nBut now there is a proper economic incentive to establish a realm in this place. The bluish-green gems that are found in the Lâikurîd are very appreciated in the [sevenlands|E], and we are in control of it."
+ full_native_acceptance: "The natives have accepted your rule"
+ no_debts: "You have quitted all your debts"
+ decision_tame_the_land_confirm: "So Azrathâni is born!"
+
+ decision_explore_azrathani: "Explore the Land"
+ decision_explore_azrathani_tooltip: "Being proactive while building up this land may yield riches"
+ decision_explore_azrathani_desc: "Sitting around in Azralôni will only help so much. It might be risky, but if I am to tame this land, and become it's master I should know it. And who knows? There may be untapped resources out there."
+ decision_explore_azrathani_confirm: "Let us look upon the land"
+
+ decision_repay_debt: "Repay your Debt"
+ decision_repay_debt_tooltip: "You may want to get ahead of debt, by paying it out early"
+ decision_repay_debt_desc: "The expedition has been funded by various of the Princes of the [balan_lai|E].\n\nThey have invested heavily in the journey, but they expect yearly repayment with interest.\n\n#help You will be expected to pay as much as you can, between a quarter, half or the full value of the loan plus interest#!"
+ decision_repay_debt_confirm: "Look at the Ledger"
+ debt_karasalas: "$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_karasalas').GetValue|0]#! to the Prince of [GetTitleByKey('d_karasalas').GetNameNoTier] at #X [GetTitleByKey('d_karasalas').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n"
+ debt_alsarias: "$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_alsarias').GetValue|0]#! to the Prince of [GetTitleByKey('d_alsarias').GetNameNoTier] at #X [GetTitleByKey('d_alsarias').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n"
+ debt_gimileth: "$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimileth').GetValue|0]#! to the Prince of [GetTitleByKey('d_gimileth').GetNameNoTier] at #X [GetTitleByKey('d_gimileth').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n"
+ debt_gimilthani: "$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimilthani').GetValue|0]#! to the Prince of [GetTitleByKey('k_gimilthani').GetNameNoTier] at #X [GetTitleByKey('k_gimilthani').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n"
+ debt_inzilloni: "$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_inzilloni').GetValue|0]#! to the merchants of [GetTitleByKey('d_inzilloni').GetNameNoTier] at #X [GetTitleByKey('d_inzilloni').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n"
+ debt_pel: "$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_pel').GetValue|0]#! to the Prince of [GetTitleByKey('k_pel').GetNameNoTier] at #X [GetTitleByKey('k_pel').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n"
+
+ decision_seek_debt: "Seek Funding"
+ decision_seek_debt_tooltip: "More money is always good"
+ decision_seek_debt_desc: "Money is and shall always be a scarce resource. Once you have what you wished for, you find yourself needing more. So it has always been.\n\nI need investment if I am to build up this land, but I should be careful to not accrue more debt than I can handle."
+ interest_breakdown: "#V Interest Rates:#!\n$BULLET$The Prince of $k_gimilthani$ is loaning at #X [GetTitleByKey('k_gimilthani').MakeScope.Var('loan_interest').GetValue|%0] interest/year#!\n$BULLET$The Prince of Karasalas is loaning at #X [GetTitleByKey('d_karasalas').MakeScope.Var('loan_interest').GetValue|%0] interest/year#!\n$BULLET$The Prince of $d_gimileth$ is loaning at #X [GetTitleByKey('d_gimileth').MakeScope.Var('loan_interest').GetValue|%0] interest/year#!\n$BULLET$The Prince of Alsarias is loaning at #X [GetTitleByKey('d_alsarias').MakeScope.Var('loan_interest').GetValue|%0] interest/year#!\n$BULLET$The Prince of Pél is loaning at #X [GetTitleByKey('k_pel').MakeScope.Var('loan_interest').GetValue|%0] interest/year#!\n$BULLET$The merchants of $d_inzilloni$ are loaning at #X [GetTitleByKey('d_inzilloni').MakeScope.Var('loan_interest').GetValue|%0] interest/year#!"
+ bankruptcy_alert: "#N Right now, your yearly interest is #V [GetPlayer.MakeScope.ScriptValue('interest_to_income_yearly')|1] times#! your yearly income!#!\n#help Once your yearly interest is 20 times your income, you will be forced to default on loans, which will likely lead to war.#!"
+ decision_seek_debt_confirm: "But who has the money to offer?"
+
  #############################
  #### Balan-Lai Decisions ####
  #############################
@@ -2381,7 +2408,12 @@
  decision_nazgul_alliance_confirm: "Let it be so."
  decision_nazgul_alliance_tt: "Form a [defensive_alliance|E] with a neighboring [nazgulcharacter|E] [ruler|E]."
  you_border_nazgul: "Your [realm|E] borders that of a fellow [nazgul|E]."
- 
+
+ decision_nazgul_return_to_mordor: "Return to Mordor"
+ decision_nazgul_return_to_mordor_tooltip: "Abandon your realm and travel to Mordor"
+ decision_nazgul_return_to_mordor_desc: "The time has come to abandon my machinations elsewhere in Middle-earth. I must return to [mordor|E] and prepare it for the coming of the [darklord|E]."
+ decision_nazgul_return_to_mordor_confirm: "Swift, Silent"
+ decision_nazgul_return_to_mordor.tt: "You [travel|E] to the [GetTitleByKey('k_gorgoroth').GetName], and establish a new [realm|E] in [mordor|E]."
  # Long Winter Decisions
  steward_of_morgul: "Steward of Morgul"
 
@@ -2477,6 +2509,7 @@
  decision_unify_the_orcs_desc: "For so long, the [orcs|E] have been scattered and disunited, beaten back at every turn by [men|E], [dwarves|E] and [elves|E]. We were unified under the Dark Lords, but they are not worthy of our swords! Orcs should rule Orcs, and the strongest of them all shall lead - me. \n\nBeneath my banner, the Orc Warhost shall spread across all the earth!"
  decision_unify_the_orcs_confirm: "The time of the Orc has come!"
 
+ orcs_access_to_hegemonys: "#warning You will lose access to the other Orc Hegemony!#!"
  found_hegemony_decision_three_empires_held: "You hold 3 or more [empires|E]"
  create_goblin_duchy: "Create a new Goblin Duchy"
 
@@ -2704,7 +2737,7 @@
  decision_haradrim_viceroy: "Form the Southern Confederacy"
  decision_haradrim_viceroy_tooltip: "Become a sanctioned viceroy under [gondor|E]"
  decision_haradrim_viceroy_desc: "The power of [gondor|E] is unquestionable, and their influence over the Southlands is undeniable. And yet, there are opportunities to be had in working with them, rather than against them. If I were to become a sanctioned viceroy under [gondor|E], I could gain access to their resources and support, while still maintaining a degree of autonomy over my own lands. It would be a delicate balance, but one that could pay off in the long run."
- decision_haradrim_viceroy_confirm: "I shall go to the White City." 
+ decision_haradrim_viceroy_confirm: "I shall go to the White City."
 
  ##################################
  #### Arysis / Maresh Decisions ###
@@ -2967,7 +3000,7 @@
  decision_angmar_dominion_over_langwell_effect_tt: "You will choose to what degree to exploit the land and people."
  decision_angmar_dominion_over_langwell_requirement: "There are no independent rulers in the [GetTitleByKey('k_langwell').GetName]."
  unlock_anduin_lowlands_decision: "Unlocks the [GetDecision('decision_angmar_anduin_lowlands').GetName] [decision|E]"
- 
+
  decision_angmar_anduin_lowlands: "Claim the Anduin Lowlands"
  decision_angmar_anduin_lowlands_tooltip: "Tooltip"
  decision_angmar_anduin_lowlands_desc: "Desc"
@@ -2988,7 +3021,7 @@
  decision_integrate_gundalok_confirm: "The Vale will know peace at last."
  gundabad_kingdom_doesnt_exist_or_is_dwarven: "There is no [orcish|E] [kingdom|E] in [gundabad|E]"
  decision_integrate_gundalok_tt: "Pacified the Pass of Gundabad"
- 
+
  decision_secure_the_high_pass: "Secure the High Pass"
  decision_secure_the_high_pass_desc: "The High Pass is one of the most important routes through the [mistymountains|E], and yet it is often threatened by the vile [goblins|E] that ambush travelers from their hidden caves and lairs. If we could collapse these caverns, we might ensure that no more orcish raiders come down from the mountains to harry our lands, and perhaps even secure a foothold in the mountains for ourselves."
  decision_secure_the_high_pass_tooltip: "Collapse the Goblin Caves in the High Pass"
@@ -3358,7 +3391,7 @@
  decision_fortify_northern_pass_tooltip: "Build a stronghold in the mountain pass leading to [dorwinion|E]"
  decision_fortify_northern_pass_desc: "Beyond the castle of [GetTitleByKey('c_dargeca').GetNameNoTier] lies a mountain pass leading into the lands held by the Men of [GetTitleByKey('k_dorwinion').GetNameNoTier]. While the Men of [dorwinion|E] have often traded with us, they are just as likely to invade our lands if the opportunity arises.\n\nIn order to safeguard against any threat from the north, we should fortify our borders north of Dargeca, building a stronghold right at the exit of the mountain pass - creating an easily defensible chokepoint."
  decision_fortify_northern_pass_confirm: "Begin construction immediately!"
- 
+
  decision_found_dragon_knights: "Found the Dragon Knights"
  decision_found_dragon_knights_desc: "The Order of the Black Dragon has long been a powerful force among the Easterlings, keeping the wild frontier under control and striking fear into the hearts of our enemies. With the time for war drawing near, it is time to formalize this order into a true knightly order, with its own hierarchy and traditions. The Dragon Knights will be a powerful tool in our arsenal, and a symbol of our strength and unity."
  decision_found_dragon_knights_confirm: "The Dragon Knights shall be born!"
@@ -3370,7 +3403,7 @@
  decision_build_dragon_knights_headquarters_confirm: "Begin construction immediately!"
  decision_build_dragon_knights_headquarters_tooltip: "Build a grand headquarters for the Dragon Knights"
  decision_build_dragon_knights_headquarters_tt: "Dragon Knights Headquarters Built"
- 
+
  decision_purchase_war_drakes: "Purchase War Drakes"
  decision_purchase_war_drakes_desc: "War Drakes of [rhun|E] are an extraordinarily rare sight, even in the eastern lands of [middleearth|E]. These territorial reptilian creatures harbour a vicious nature – their powerful jaws can snap a man’s arm in two and the venom they inject leaves their prey weakened and helpless. Sometimes, a particularly wealthy - or zealous - Easterling leader will purchase some of these beasts when they go to war. Not only are they dangerous creatures but they are also the pride of the Cult of Kerkassk."
  decision_purchase_war_drakes_tooltip: "Recruit fearsome monsters for your army"
@@ -3424,15 +3457,16 @@
  # Adapted from RICE Sponsor Tayee Site
 
  decision_sponsor_tayee_holy_building: "Sponsor a Tayee Religious Building"
- decision_sponsor_tayee_holy_building_tooltip: "Build a Tayee religious site in your [capital|E]"
+ decision_sponsor_tayee_holy_building_tooltip: "Build a Tayee religious site in a [domain|E] [county|E] with the [GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName] [core_tenet|E]"
  decision_sponsor_tayee_holy_building_desc: "As a [ROOT.Char.GetTitleAsNameNoTooltip] who wishes to show my devotion to the Tayee, or particularly my patron, I wish to donate funds to construct a religious building in my [domain|E]. The local community will spiritually benefit from this new structure, and everyone will know of my piety!"
- decision_sponsor_tayee_holy_building_effect_tooltip_1: "You will choose whether to sponsor a Wayshrine, Temple, or Monastery, which nets different boons of [piety|E], [prestige|E], and [dynasty_prestige|E], and a matching [character_modifier|E] as well as a [county_modifier|E] for your [realm_capital|E]"
+ decision_sponsor_tayee_holy_building_effect_tooltip_1: "You will choose whether to sponsor a Wayshrine, Temple, or Monastery, which nets different boons of [piety|E], [prestige|E], and [dynasty_prestige|E], and a matching [character_modifier|E] as well as a [county_modifier|E] for one of your [domain|E] [counties|E]"
  decision_sponsor_tayee_holy_building_effect_tooltip_2: "You will not receive these bonuses immediately, as the construction process will take anywhere from a year to two years"
  decision_sponsor_tayee_holy_building_effect_tooltip_3: "As you control the [GetBuilding('wonder_tarnet_barzain').GetName], you will receive the unique [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip] [character_modifier|E], which scales with the amount of sponsored buildings."
  decision_sponsor_tayee_holy_building_effect_tooltip_4: "As you control the [GetBuilding('wonder_tarnet_barzain').GetName], your [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip] [character_modifier|E] will #P improve#!"
- decision_sponsor_tayee_holy_building_confirm: "For the glory of [ROOT.Char.GetFaith.HighGodNameAlternate]!"
+ tayee_augar_prophet_changed_faith.tt: "New [faith|E] lacks the [GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName] [core_tenet|E]"
+ decision_sponsor_tayee_holy_building_confirm: "For the glory of [ROOT.Char.GetFaith.HighGodName2]!"
  decision_sponsor_tayee_holy_building_county_faith_req: "Your [realm_capital|E] has a [faith|E] with the [GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName] [core_tenet|E]"
- decision_sponsor_tayee_holy_building_county_mod_req: "Your [realm_capital|E] does not have a [county_modifier|E] indicating a Tayee religious site was recently built there"
+ decision_sponsor_tayee_holy_building_county_mod_req: "Any [domain|E] [county|E]:\n$EFFECT_LIST_BULLET$Has a [faith|E] with the [GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName] [core_tenet|E]\n$EFFECT_LIST_BULLET$Lacks a Tayee religious site [county_modifier|E]"
  decision_sponsor_tayee_holy_building_current_req: "Is not in the process of building a Tayee religious site"
 
  lotr_tayee_holy_building_type: "What shall we build?"
@@ -3892,7 +3926,7 @@
  decision_moria_northern_duchy_desc: "The northernmost [duchy|E] of [khazaddum|E], [GetTitleByKey('d_fuhmdusha').GetNameNoTier], has long been abandonded after the War of the [lastalliance|E]. But the [dwarves|E] of Durin's line have not forgotten the halls of our ancestors, and the time has come to reclaim them once more. We will march into the deeps, and set up new delvings in the northernmost reaches of [khazaddum|E], for we have need of new forges and smithies to fuel our war efforts and the protection of our realm!"
  decision_moria_northern_duchy_confirm: "For Khazad-dûm! For Durin's Folk!"
  decision_moria_northern_duchy_tooltip: "Reclaim the northernmost duchy of Khazad-dûm"
- 
+
  decision_moria_dwarven_trade: "Establish External Trade"
  decision_moria_dwarven_trade_desc: "The [dwarves|E] of [khazaddum|E] have long been reclusive, but the time has come to open our halls to the outside world once more, as it was in ages long past. We have much to offer, and much to gain from trade with the outside world. Let us establish trade routes with the nearby realms of [men|E] and [elves|E], and let us show them the value of our crafts and our wares!"
  decision_moria_dwarven_trade_confirm: "Open the gates of Khazad-dûm to the world!"
@@ -4071,7 +4105,7 @@
  lotr_is_in_regency: "Is in a [regency|E]"
  balan_lai_united_might_military_strength_min: "Your Current Military Strength is at least #V 5000#! @soldier_icon! [soldiers|E]"
  balan_lai_united_might_greater_military_strength: "Your Current Military Strength must be higher than that of the combined forces of the other [balan_lai|E]\n#help (This does #warning not#! include those that are your [allies|E], [tributaries|E] or [prisoners|E])#!"
- struggle_thani_hazad_unification_valid_tooltip_interloper: "You control at least #V 80%#! of the [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName] region"
+ struggle_thani_hazad_unification_valid_tooltip_interloper: "You control at least #V 80%#! of the [GetGeographicalRegion('custom_mannish_thani_hazad').GetName] region"
  balan_lai_united_might.dread.tt: "Your approach has earned you a bad reputation..."
  struggle_thani_hazad_unification_confederation_disband.tt: "You create an [empire|E] title, vassalizing all other [balan_lai|E] members"
 
@@ -4263,7 +4297,7 @@
  decision_yellow_mountains_igal_zaram_warrens_desc: "I have seen a vision in the still waters of the Igal-zâram. Great Warrens, weaving deep into the earth, a new home for our kind."
  decision_yellow_mountains_igal_zaram_warrens_confirm: "Dig!"
  decision_yellow_mountains_igal_zaram_warrens.tt: "Choose a location to build the [GetBuilding('wonder_igal_zaram_warrens').GetName]."
- 
+
  decision_desecrate_dwarven_capital: "Desecrate Dwarven Capital"
  decision_desecrate_dwarven_capital_tooltip: "Desecrate a Dwarven Capital."
  decision_desecrate_dwarven_capital_desc: "We've taken their precious capital from the Dwarves! We don't care so much for all their fancy statues and wall decoration, let's make this feel a bit more like home!"
@@ -4287,7 +4321,7 @@
  decision_aukuag_empire_desc: "With the Aukuag and Qarsag peoples now controlling all the land from the Auz Hulja to the [bayoftulwang|E], there is but one direction left to expand - west. By unifying the Aukuag and Qarsag, and conquering the Sîres valley, we could unite our ancient homeland of Unâv!"
  decision_aukuag_empire_confirm: "The Apysaics shall claim their own!"
 
- clan_vassals_will_convert: "As I am a mainline Akanali, Apysaic, or Talathrim person, my [tribal|E] vassals will change to [clan|E] government"
+ clan_vassals_will_convert: "My [tribal|E] vassals will change to [clan_government|E]"
 
  ##############################
  ##### Religious Decision #####
@@ -4443,28 +4477,37 @@
  decision_favor_overseers_desc: "As the Stormhost expands, its subjects must be kept in line, by the sword, if necessary. Installing a caste of loyal enforcers and overseers will see that Sîrayn is kept stable as the Army of the Southern Dragon marches onward."
  decision_favor_overseers_confirm: "Whom shall I seek?"
  decision_favor_overseers_effect.tt: "Gain access to unique [men_at_arms|E] and positive modifiers by aligning with Bulgans, Black Númenóreans, or Orcs."
- 
+
  decision_khorahil_fortify_west: "Fortify the Bay of Tûlwang"
  decision_khorahil_fortify_west_tooltip: "Establish defenses along the Tûlwangi Coast"
  decision_khorahil_fortify_west_desc: "The lands along the Bay of Tûlwang are vulnerable to a Bellakari landing. We must seize these lands and prepare them for the war to come."
  decision_khorahil_fortify_west_confirm: "Prepare the defenses."
  decision_khorahil_fortify_west_effect.tt: "Every [county|E] in the [GetGeographicalRegion('special_region_khorahil_fortify_coasts_west').GetName] [region|E] will recieve the [GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L] [county_modifier|E]."
  tulwang_building_3_tt: "At least 3 counties in the region of [GetGeographicalRegion('special_region_khorahil_fortify_coasts_west').GetName] have built [GetBuilding('march_01').GetName] or [GetBuilding('tunnel_network_01').GetName]."
- 
+
  decision_khorahil_fortify_east: "Fortify the Bay of Ormal"
  decision_khorahil_fortify_east_tooltip: "Establish defenses along the Ormal Coast"
  decision_khorahil_fortify_east_desc: "The lands along the Bay of Ormal are vulnerable to a Khyan landing. We must seize these lands and prepare them for the war to come."
  decision_khorahil_fortify_east_confirm: "Prepare the defenses."
  decision_khorahil_fortify_east_effect.tt: "Every [county|E] in the [GetGeographicalRegion('special_region_khorahil_fortify_coasts_east').GetName] [region|E] will recieve the [GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L] [county_modifier|E]."
  ormal_building_3_tt: "At least 3 counties in the region of [GetGeographicalRegion('special_region_khorahil_fortify_coasts_east').GetName] have built [GetBuilding('march_01').GetName] or [GetBuilding('tunnel_network_01').GetName]."
- 
+
  decision_khorahil_indoctrinate_harshandatt: "Indoctrinate Harshandatt"
  decision_khorahil_indoctrinate_harshandatt_tooltip: "Receive [special_troops|E] from Harshandatt."
  decision_khorahil_indoctrinate_harshandatt_desc: "The folk of Harshandatt have long memories. Though most worship their pitiful Nhazadh, the [GetFaithByKey('faith_sened').GetName] still remembers the terror I wrought in the [secondage|E]. I should promote this cult once more."
  decision_khorahil_indoctrinate_harshandatt_confirm: "Rise, Children of the Storm!"
  decision_khorahil_indoctrinate_harshandatt.tt: "All held [counties|E] in [GetTitleByKey('e_harshandatt').GetNameNoTier] will have a 50% chance to convert to [GetFaithByKey('faith_sened').GetName]."
  khorahil_zealots_army_name: "Senêdic Zealots"
- 
+
+ decision_khorahil_garrison_abrakhan: "Garrison Abrakhân"
+ decision_khorahil_garrison_abrakhan_tooltip: "Forge the Pûst into a weapon against Khy."
+ decision_khorahil_garrison_abrakhan_desc: "In deepest Abrakhân, forgotten by all the world, dwell men loyal to the Shadow. They are pitiful desert rats, but I will forge them into something more: a lance to strike at the heart of Khy."
+ decision_khorahil_garrison_abrakhan_confirm: "Arise, Men of Darkness"
+ decision_khorahil_garrison_abrakhan.tt: "All held [counties|E] in [GetTitleByKey('k_abrakhan').GetNameNoTier] convert to [GetCultureByKey('darsalai').GetName] and [GetCultureByKey('lushek_pust').GetName]."
+ decision_khorahil_garrison_abrakhan.tt2: "All held [counties|E] in [GetTitleByKey('k_abrakhan').GetNameNoTier] convert to [GetFaithByKey('faith_kanra').GetName]."
+ decision_khorahil_garrison_abrakhan_developed.tt: "At least 50% of [county|E] capitals in the [GetGeographicalRegion('middleearth_harad_dunesea_abrakhan').GetName] [region|E] are [castle_holdings|E]."
+ pustic_legion_army_name: "Pûstic Garrison"
+
  decision_khorahil_annex_an_balkumagan: "Annex An-Balkûmagân"
  decision_khorahil_annex_an_balkumagan_tooltip: "Vassalize An-Balkûmagân"
  decision_khorahil_annex_an_balkumagan_desc: "Long ago, I ruled [anbalkumagan|E] with an iron fist. My kin, the [black_numenoreans|E], dwell there still, rotting in their slow decay. They will submit before me."
@@ -4473,28 +4516,31 @@
  decision_khorahil_annex_an_balkumagan.tt_2: "The [ruler|E] of [GetTitleByKey('k_an_balkumagan').GetNameNoTier] is [alignment_evil|E] [alignment|E]."
  decision_khorahil_annex_an_balkumagan.tt_3: "You [vassalize|E] [GetTitleByKey('k_an_balkumagan').GetNameNoTier]"
  military_strength_more_than_an_balk: "Your Current Military Strength is stronger than that of [GetTitleByKey('k_an_balkumagan').GetNameNoTier]."
- 
+
  decision_khorahil_destroy_bellakar: "Destroy Bellakar"
  decision_khorahil_destroy_bellakar_tooltip: "Begin a war to devastate Bellakar"
  decision_khorahil_destroy_bellakar_desc: "Long ago, [bellakar|E] came to the aid of [gondor|E], during the [warlastalliance|E]. They must never be allowed to do so again."
  decision_khorahil_destroy_bellakar_confirm: "To War!"
  decision_khorahil_destroy_bellakar_effect.tt: "Begin a war against [GetTitleByKey('e_bellakar').GetNameNoTier]"
- military_strength_10000: "Your Current Military Strength is at least #V 10,000#! @soldier_icon! [soldiers|E]"
-
+ military_strength_15000: "Your Current Military Strength is at least #V 15,000#! @soldier_icon! [soldiers|E]"
+ decision_khorahil_vassals_join.tt: "All [direct_vassals|E] and [tributaries|E] of the [war_leaders|E] will join the war."
+ 
  decision_khorahil_destroy_khy: "Destroy Khy"
  decision_khorahil_destroy_khy_tooltip: "Begin a war to devastate Khy"
  decision_khorahil_destroy_khy_desc: "The [istariconcept|E] seek to challenge the [darklord|E] with their zealot-kings. Khy will be a monument to their failure."
  decision_khorahil_destroy_khy_confirm: "To War!"
  decision_khorahil_destroy_khy_effect.tt: "Begin a war against [GetTitleByKey('e_khy').GetNameNoTier]"
- 
+
  decision_khorahil_infiltrate_yellow_mountains: "Infiltrate the Yellow Mountains"
  decision_khorahil_infiltrate_yellow_mountains_tooltip: "Convert and build up the Orcish tribes of the mountains."
  decision_khorahil_infiltrate_yellow_mountains_desc: "The [orcish|E] tribes of the [yellowmountains|E] are scattered and weak, not even worthy of conquest. I must build them into something stronger."
  decision_khorahil_infiltrate_yellow_mountains_confirm: "Send envoys."
- decision_khorahil_infiltrate_yellow_mountains.tt: "Unlock the 'Promote Cult' [character_interaction|E]."
- decision_khorahil_infiltrate_yellow_mountains.tt2: "Unlock the 'Funnel Resources' [character_interaction|E]."
- decision_khorahil_infiltrate_yellow_mountains.tt3: "Orcish [rulers|E] converted to #V [GetFaithByKey('faith_murghuri').GetName]#! will periodically grant [piety|E] and [hooks|E] to nearby [nazgul|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt: "Unlock the 'Promote Cult' [character_interaction|E] against [orcish|E] [rulers|E] in the [yellowmountains|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt2: "Unlock the 'Funnel Resources' [character_interaction|E] against [orcish|E] [rulers|E] in the [yellowmountains|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt3: "[orcish|E] [rulers|E] converted to #V [GetFaithByKey('faith_murghuri').GetName]#! will periodically grant [piety|E] and [hooks|E] to nearby [nazgul|E]."
  decision_khorahil_infiltrate_yellow_mountains.tt4: "Your [realm|E] borders [GetTitleByKey('e_yellow_mountains').GetNameNoTier]
+ decision_khorahil_infiltrate_yellow_mountains.tt5: "Can unlock additional [orcish|E] and [monster|E] [men_at_arms|E] through the 'Stabilise Sîrayn' [decision|E]"
+ 
  decision_rebuild_lynerian_league: "Solidify the Lynerian League"
  decision_rebuild_lynerian_league_tooltip: "Help the fractured Lynerian city states unite"
  decision_rebuild_lynerian_league_desc: "Lyneria is fractured. The city states squabble over trade, ancient slights, and mundane provocations. They cannot unite on their own. If we were to lend diplomatic aid, mend broken bridges, and restore trust and build new friendships, we may be able to encourage a restoration of the Lynerian Leage of old, gaining a powerful ally in the process."
@@ -4537,7 +4583,7 @@
  decision_restore_taimaraud_desc: "For untold millenia, the [GetFaithByKey('faith_taimaraud').GetName] was dedicated to the somber task of shepherding the souls of the dead. [khorahil|E] has perverted his worship into something dark and terrible. We must restore the cult to its original, noble, purpose."
  decision_restore_taimaraud_tooltip: "Restore the Cult of Taimaraud"
  decision_restore_taimaraud_confirm: "Begone, Shadow!"
- 
+
  decision_choose_new_tayee_patron: "Choose a new Tayee Patron"
  decision_choose_new_tayee_patron_tooltip: "Set a new course in life by devoting yourself to a different deity"
  choose_mirsaya_name: "Cult of Mirsaya and Sîrsis"
@@ -4623,15 +4669,32 @@
  fervor_greater_than_70: "Your [faith|E] has greater than 70 [fervor|E]"
 
  decision_avatar_of_x_deity: "Become the Avatar of [ROOT.Char.GetFaith.HighGodName]"
- decision_avatar_of_x_deity_desc: "There is no follower of [ROOT.Char.GetFaith.HighGodName] more fervent and devoted than I. I shall become the embodiment of [ROOT.Char.GetFaith.HighGodName] for all to see!"
+ decision_avatar_of_x_deity_desc: "There is no follower of [ROOT.Char.GetFaith.HighGodName] more fervent and devoted than I. In a great rite of ascension, I shall mantle the power of [ROOT.Char.GetFaith.HighGodName2] for all to see!"
  decision_avatar_of_x_deity_tooltip: "Pledge yourself fully to [ROOT.Char.GetFaith.HighGodName]."
  decision_avatar_of_x_deity_confirm: "Let it be known."
  unlocks_tayee_mandala_decision: "Unlocks the [GetDecision('decision_reign_of_the_avatar').GetName] [decision|E]"
+ lotr_is_temporal_hof: "You are the [temporal_head_of_faith|E]"
+ lotr_strong_hook_on_spiritual_hof: "You have a [strong_hook|E] on your [spiritual_head_of_faith|E]"
+ lotr_spiritual_hof_high_opinion: "Your [spiritual_head_of_faith|E] has at least #V 80#! [opinion|E] of you"
+ lotr_no_spiritual_hof: "You have no [spiritual_head_of_faith|E]"
+ lotr_more_virtue_than_sin_traits: "Your @virtue_icon! [virtues|E] outnumber your @sin_icon! [sins|E]\n"
+ tayee_special_requirement_to_mantle_deity_tt: "#T Special Requirement to mantle [CHARACTER.GetFaith.HighGodName]:#!\n"
+ tayee_sponsored_three_sites_tt: "You have funded at least #V [GetPlayer.MakeScope.ScriptValue('sponsored_tayee_sites_count_avatar_max')]#! religious sites via the [GetDecision('decision_sponsor_tayee_holy_building').GetName] [decision|E] #weak (Currently [GetPlayer.MakeScope.ScriptValue('sponsored_tayee_sites_count_avatar')]/[GetPlayer.MakeScope.ScriptValue('sponsored_tayee_sites_count_avatar_max')])#!"
+ tayee_have_many_friends_tt: "You have at least #V [EmptyScope.ScriptValue('tayee_friends_count_max')]#! [friends|E] #weak (Currently [GetPlayer.MakeScope.ScriptValue('tayee_friends_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_friends_count_max')])#!"
+ tayee_have_many_lovers_tt: "You have at least #V [EmptyScope.ScriptValue('tayee_lovers_count_max')]#! [lovers|E] #weak (Currently [GetPlayer.MakeScope.ScriptValue('tayee_lovers_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_lovers_count_max')])#!"
+ tayee_have_many_murders_tt: "You have executed at least #V [GetPlayer.MakeScope.ScriptValue('tayee_successful_murders_count_max')]#! successful [GetScheme('murder').GetTypeName] [schemes|E] #weak (Currently [GetPlayer.MakeScope.ScriptValue('tayee_successful_murders_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_successful_murders_count_max')])#!"
+ tayee_high_capital_opinion_tt: "[county_opinion|E] in your [capital|E] [county|E] must be #P 50#! or higher"
+ tayee_have_many_followers_tt: "You have #V [GetPlayer.MakeScope.ScriptValue('tayee_followers_count_max')]#! or more [followers|E] #weak (Currently [GetPlayer.MakeScope.ScriptValue('tayee_followers_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_followers_count_max')])#!"
+ tayee_has_good_health_tt: "[health|E] is $HEALTH_GOOD$ or better"
+ tayee_mothered_many_kids_tt: "You have mothered #V [GetPlayer.MakeScope.ScriptValue('tayee_mothered_children_count_max')]#! or more [children|E] #weak (Currently [GetPlayer.MakeScope.ScriptValue('tayee_mothered_children_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_mothered_children_count_max')])#!"
+ tayee_sired_many_kids_tt: "You have sired #V [GetPlayer.MakeScope.ScriptValue('tayee_sired_children_count_max')]#! or more [children|E] #weak (Currently [GetPlayer.MakeScope.ScriptValue('tayee_sired_children_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_sired_children_count_max')])#!"
+ tayee_already_an_avatar_of_faith_tt: "There is already an [GetTrait('avatar').GetName(GetNullCharacter)] of your [faith|E]"
 
  decision_reign_of_the_avatar: "Establish Divine Rule"
- decision_reign_of_the_avatar_desc: "The time has come for the realm to become grounded in the worship of [ROOT.Char.GetFaith.HighGodName] and [ROOT.Char.GetFaith.HighGodHerHis|U] avatar who walks this earth. All shall worship and revere [ROOT.Char.GetFaith.HighGodName] incarnate!"
- decision_reign_of_the_avatar_tooltip: "Reform your [realm|E] to Manadala Government"
+ decision_reign_of_the_avatar_desc: "The time has come for the realm to become grounded in the worship of [ROOT.Char.GetFaith.HighGodName2] and [ROOT.Char.GetFaith.HighGodHerHis] [GetTrait('avatar').GetName(GetNullCharacter)] who walks this earth. All shall worship and revere [ROOT.Char.GetFaith.HighGodName] incarnate!"
+ decision_reign_of_the_avatar_tooltip: "Reform your [realm|E] to [mandala_i|E] [mandala_government|E]"
  decision_reign_of_the_avatar_confirm: "[ROOT.Char.GetFaith.HighGodName] shall rule."
+ lotr_must_have_mandala_culture_trigger: "Your [culture|E] is compatible with [mandala_i|E] [mandala_government|E] through one of these:\n$BULLET_WITH_TAB$[heritage|E] is #V $heritage_new_sirayni_name$#!\n$BULLET_WITH_TAB$[heritage|E] is in the #V $muranian$#! [heritage_group|E]\n$BULLET_WITH_TAB$[heritage|E] is in the #V Akanali#! [heritage_group|E]"
 
  decision_visit_ormalian_port: "Visit a Port in the Bay"
  decision_visit_ormalian_port_desc: "If I am to find the treasure map that I'm looking for, I must search the Bay of Ormal far and wide. The main ports here will make good starting points for my search. I should visit each one of them and see if I can't pick up the trail of Nhazadh Ahraser's treasure!"

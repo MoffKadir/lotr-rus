@@ -1,10 +1,12 @@
 ﻿l_english:
 
  sirayn.0001.t: "Favored Overseers"
- sirayn.0001.desc: "My dominion over the lands of the Sîresha is all but complete. From the arid highlands of the Tûr Betark to the humid jungles of the Sára Bask, all bow and pay obeisance to Khôrahil, Fifth of the Nine. As my vision turns west, towards new fronts, I know that if I am to attain victory abroad, I must demand stability here in Sîrayn. My grasp, though terrible, extends only so far, and so I must rely on loyal servants to keep the locals in line.\n\nThe obvious choice of enforcers are the Bulgan clans of the western mountains. Their bloodthirst and fanatical devotion were instrumental in gathering Pôwa and Chennacatt under the banner of the Southern Dragon. Already, installed as overseers across Sîrayn, they terrify the peasantry and procure regular tribute. What's more, they are culturally related to the other peoples of Sîrayn, and have historic claims to lordship. They have proven their loyalty already, to bequeath your favor officially would ensure that loyalty for generations.\n\nOn the other hand, my ambitions extend beyond merely Sîrayn. To the south and west march the legions of An-Balkûmagân and Tantûrak- Black Númenóreans, once my kin, and forever devoted to the Dark Lord. Though perhaps exuberant in their methods, they excel at extracting wealth from the lesser tribes of the Utter South, and are eager volunteers for my armies. If I were to promise the Adûnâi titles from among any conquered lands in Bôzisha-Mîraz and Bellakar, they would swell both my coffers and ranks.\n\nOf course, one could forgo the use of men at all. Though orcs make for poor administrators, they are a weapon my master has made use of time and time again. To unleash the orcs of the mountains upon my realm would surely mean chaos, but when the smoke clears, a new and terrible order may yet rise."
+ sirayn.0001.desc: "My dominion over [GetTitleByKey('e_sirayn').GetNameNoTier] is all but complete. From the arid highlands of the [yellowmountains|E] to the humid jungles of the [GetTitleByKey('d_sara_bask').GetNameNoTier], all bow to [khorahil|E], Fifth of the Nine. As my vision turns toward new fronts, I know that if I am to attain victory abroad, I must rely on loyal enforcers to keep the locals in line.\n\nThe obvious choice are the [GetCultureByKey('bulgan').GetCollectiveNoun] clans of the western mountains. Their bloodthirst and fanatical devotion have been instrumental in keeping Sîrayn pacified these past centuries. There are also the [adunai|E] of [anbalkumagan|E] and [GetTitleByKey('k_tanturak').GetNameNoTier], once my kin, and forever devoted to the Dark Lord. Though perhaps exuberant in their methods, they excel at extracting wealth from the lesser tribes of the Utter South, and are eager volunteers for my armies. Of course, one could forgo the use of men entirely. Though [orcs|E] are poor administrators, they are a weapon my master has made use of time and time again."
  sirayn.0001.a: "The Bulgan will be rewarded for their loyalty."
  sirayn.0001.b: "Send word to all Adûnâi of the south- fame and fortune await in the service of Khôrahil."
+ sirayn.0001.b.tt: "Did not aid Tantûrak"
  sirayn.0001.c: "Unleash the orcs. Let Sîrayn burn."
+ sirayn.0001.c.tt: "Did not infiltrate the Yellow Mountains"
  sirayn.0001.a.effect: "All controlled [counties|E] in [GetTitleByKey('e_sirayn').GetNameNoTier] gain [GetModifier( 'khorahil_bulgan_overseers_county_modifier' ).GetNameWithTooltip] for 50 years."
  sirayn.0001.b.effect: "All controlled [counties|E] in [GetTitleByKey('e_sirayn').GetNameNoTier] gain [GetModifier( 'khorahil_black_numenorean_overseers_county_modifier' ).GetNameWithTooltip] for 50 years."
  sirayn.0001.c.effect1: "Revoke all [counties|E] held by non-[orc|E] [vassals|E] in [GetTitleByKey('e_sirayn').GetNameNoTier] and replace them with orcs."
@@ -33,10 +35,10 @@
  sirayn.0006.desc: "Victory is ours!\n\nThe mongrel dogs flee before the fell banners of the [southerndragonarmy|E]. They are battered, their armies broken. Their lords hide now in distant holdfasts, waiting for the killing blow.\n\nThey are my servants now, however unruly, and my judgement will be swift. I could grant them the release that they so fear, and end this realm once and for all, to be left a shattered and smoking ruin, an empty husk of a land.\n\nOr, perhaps, I could find further use for them..."
  sirayn.0006.a: "They are a part of the Stormhost now, whether they wish it or no."
  sirayn.0006.b: "I will install a loyal puppet in Bellakar."
- sirayn.0006.c: "Bellakar will be no more."
+ sirayn.0006.c: "Let Bellakar burn."
  sirayn.0006.d: "They will join the Stormhost, or die."
  sirayn.0006.e: "My servant will govern Khy, in my stead."
- sirayn.0006.f: "Let Khy be ended, forever."
+ sirayn.0006.f: "Break them, utterly."
  sirayn.0006.tt_1: "All conquered lords will remain as [vassals|E] within your [realm|E]."
  sirayn.0006.tt_2: "Install a loyal [tributary|E] in the conquered [empire|E]."
  sirayn.0006.tt_3: "All [titles|E] in the conquered [empire|E] will be destroyed, shattering the realm."
@@ -59,7 +61,7 @@
  sirayn.0012.a: "Khy will shudder before the Storm."
  
  sirayn.0013.t: "The Blind Sorcerer's Home"
- sirayn.0013.desc: "Long ago, in the [secondage|E], [anbalkumagan|E] was home to a man named [khorahil|E] [GetScriptedCharacterByHistoryID('nazgul5').GetDynastyHouseName]. He sacrificed everything: his family, his honor, even his very eyes to hold it, but for naught. His lands, earned with blood, were stolen from him by the covetous lords of [numenor|E].\n\nWhat of mighty Númenor, now? She lies sunk in the Belegaer, while I persist.\n\nAs the [southerndragonarmy|E] strides into [GetTitleByKey('k_an_balkumagan').GetNameNoTier], her lords welcome us with open arms. They bear tribute of grain and steel, gathered to fuel the coming wars. Eager youths gather in throngs, eager to join the mighty [stormhost|E].\n\nSoon [bellakar|E] will come to fear the [GetCultureByKey('anbalukkhori').GetName]."
+ sirayn.0013.desc: "Long ago, in the [secondage|E], [anbalkumagan|E] was home to a man named [khorahil|E] [GetScriptedCharacterByHistoryID('nazgul5').GetDynastyHouseName]. He sacrificed everything: his family, his honor, even his very eyes to hold it, but for naught. His lands, earned with blood, were stolen from him by the covetous lords of [numenor|E].\n\nWhat of mighty Númenor, now? She lies sunk in the Belegaer, while I persist.\n\nAs the [southerndragonarmy|E] strides into [GetTitleByKey('k_an_balkumagan').GetNameNoTier], her lords welcome us with open arms. They bear tribute of grain and steel, brought to fuel the coming wars. Brash youths gather in throngs, eager to join the mighty [stormhost|E].\n\nSoon [bellakar|E] will come to fear the [GetCultureByKey('anbalukkhori').GetName]."
  sirayn.0013.a: "Mine, again."
  
  sirayn.0014.t: "The Calm Before the Storm"
@@ -71,6 +73,39 @@
  sirayn.0015.t: "The Shadow in the South"
  sirayn.0015.desc: "Darkness falls across the south of [middleearth|E]. From [bellakar|E] to [khy|E], across [farharad|E] and the [yellowmountains|E], all submit before the [stormhost|E].\n\nEverywhere, the enemies of [sauroncharacter|E] cower and flee. I have executed the [darklord|E]'s mission flawlessly, and there remain no true opponents to his will in the lands of [harad|E]. The time now comes for my final task.\n\nI must return to [mordor|E], and make ready the land for my master's return."
  sirayn.0015.a: "We march north."
+ 
+ sirayn.0016.t: "A New Emperor of Bellakar"
+ sirayn.0016.desc: "[bellakar|E] is defeated, but it will not be my burden to govern. I will install a puppet from among those most loyal to me, to extract the wealth from this land, and to lead them into the dark.\n\nI have many competent candidates to select from, but the right choice is a delicate one. The new emperor must be strong enough to withstand enemies both local and abroad, whether they be the forces of [gondor|E], or [GetCultureByKey('bellakaze').GetName] insurgents."
+ sirayn.0016.a: "The Bulgan served me well in Sîrayn."
+ sirayn.0016.b: "Send in the Orcs."
+ sirayn.0016.c: "The Tanturaki will have a new home."
+ sirayn.0016.d: "The Anbalukkhori have long coveted Bellakar."
+ sirayn.0016.e: "A local Bellakarani will keep the peace."
+ sirayn.0016.f: "The Tedjin will bring them in line."
+ 
+ sirayn.0017.t: "A New Emperor of Khy"
+ sirayn.0017.desc: "[khy|E] lies broken before me. It will be rebuilt, a monument to the failure of the [istariconcept|E]. While there is a certain pleasure that comes with seeing the realm reduced to such impotence, they cannot be allowed to remain so.\n\nI must install a strong hand to govern in Ormal, in my stead."
+ sirayn.0017.a: "The Bulgan served me well in Sîrayn."
+ sirayn.0017.b: "Send in the Orcs."
+ sirayn.0017.c: "The Tanturaki will have a new home."
+ sirayn.0017.d: "The Anbalukkhori have long coveted Bellakar."
+ sirayn.0017.e: "A local Khyan will keep the peace."
+ 
+ sirayn.0018.t: "News from Tantûrak"
+ sirayn.0018.desc: "Another tedious report from the southern border with [GetTitleByKey('k_tanturak').GetNameNoTier]: chaos and war.\n\nOnce, the [GetCultureByKey('tanturaki').GetName] were counted among the [darklord|E]'s most zealous servants, unrivaled in their veneration of the Shadow. Of late, however, they have become an annoyance. Tantûrak has spiraled into madness, her lords obsessed with ancient grudges and incessant infighting. Their slaves threaten open revolt, and yet the rival 'kings' of the land revel in their quagmire of butchery.\n\nIt would be prudent to simply look the other way, to allow the fools to slip away into memory, but I could intervene, if I so desired. Such an intervention would be expensive, however, and slow my efforts to consolidate the north."
+ sirayn.0018.a: "Tantûrak is not my concern."
+ sirayn.0018.b: "I will bolster Tantûrak."
+ sirayn.0018.tt: "Can unlock Adûnaic [men_at_arms|E] through the 'Stabilise Sîrayn' [decision|E]."
+ 
+ sirayn.0019.t: "Aid for Tantûrak"
+ sirayn.0019.desc: "Tantûrak is torn asunder, two rival claimants bleeding the realm dry whilst treacherous slaves plot their revolt. On one side is the ever-ambitious [tanturak_king_1.GetFirstName] [tanturak_king_1.GetDynastyHouseName], challenged by the bold [tanturak_king_2.GetFirstName] [tanturak_king_2.GetDynastyHouseName] on the other. For there to be lasting stability in Tantûrak, one king must fall.\n\nPlaying kingmaker is no idle thing, even for a realm so low as this. I should consider my options carefully."
+ sirayn.0019.a: "I will support [tanturak_king_1.GetFirstNameNoTooltip]."
+ sirayn.0019.b: "[tanturak_king_2.GetFirstNameNoTooltip] deserves the throne."
+ sirayn.0019.tt: "You form an [alliance|E] with the chosen king."
+ 
+ sirayn.0020.t: "Abrakhân Reforged"
+ sirayn.0020.desc: "From the sun-bleached sands of Abrakhân rise a legion of warriors, eager for blood.\n\nI have transformed the Pûst, bred them into something cruel, something strong. Where once there were wretched huts and meager warbands, now stand strong castles and organized hosts.\n\nA new kingdom is born on the borders of [khy|E], a new front in the war to come, and I will stand above it all as their golden king."
+ sirayn.0020.a: "Khy's days are numbered."
  
  sirayn.1001.t: "Sikentr's Dream"
  sirayn.1001.desc: "All Bulgan know the story of Sikentr the Great- born heir to a humble tribe nestled in the shadow of the [yellowmountains|E], he united our people under a single banner, and gave them a purpose. As an arrow loosed from a bow, he struck down the decrepit Masra Empire, and like a mighty hammer he crushed the Nhazadh of Harshandatt.\n\nNo nation could hinder him, not [khy|E] in the north, nor Lyneria in the south, not the cities of the east, nor the tribes of the west. It was not until his enemies conspired together that Great Sikentr, mightiest of men, finally fell. He died like his empire- sword drawn, fighting many foes at once.\n\nSince that day, the Bulgan have lived in the shadow of his glory, forced to toil under lesser lords as our heritage slowly dwindled into nothing. No longer! Today we declare Sikentr's dream realized, his ancient empire restored, and with it, the pride and glory of the Bulgan."
@@ -94,11 +129,11 @@
  
  sirayn.1006.t: "Restoration of Taimaraud"
  sirayn.1006.desc: "In ancient days, Taimaraud was known as the lord of fate, patron of magistrates and lawmakers, judge of the dead. His temples were silent places, it is true, but never grim.\n\nThis heresy of [khorahil|E], this murderous cabal, twisted the solemn duties of the Taimaraudani into a mockery of themselves. No more.\n\nThe [GetFaithByKey('faith_taimaraud').GetName] is once more restored, its sacred purpose reinstated. The [nazgul|E] must find some other wretched [faith|E] to proclaim."
- sirayn.1006.a: "Night is fading."
+ sirayn.1006.a: "Night is passing."
  
  # Sponsor Tayee Religious Building
  sirayn.1050.t: "A Tayee Religious Site"
- sirayn.1050.desc: "For those of status such as myself, one way for us to show our devotion to the Tayee is to found religious sites dedicated to the Tayee. In doing so, we not only improve the spiritual lives of the locals, but also earn the favour of the gods and demonstrate our piety.\n\nI have thus ordered for the construction of a"
+ sirayn.1050.desc: "For those of status such as myself, one way for us to show our devotion to the Tayee is to found religious sites dedicated to the Tayee. In doing so, we not only improve the spiritual lives of the locals, but also earn the favour of the gods and demonstrate our piety.\n\nAfter selecting [county.GetNameNoTier] as the ideal location, I have thus ordered for the construction of a"
  sirayn.1050.desc.wayshrine: "#Bold Tayee wayshrine#!. Though small places of worship that often lack any resident [faith.PriestNeuterPlural], wayshrines still have their role. In isolated areas, a wayshrine can serve as a place of contemplation for travellers arriving at a crossroads. Along the spice road, [namalo|E] and other merchants will often seek the gods' favour for their endeavours."
  sirayn.1050.desc.small_temple: "#Bold small Tayee temple#!. Petty temples like these serve the spiritual needs of smaller settlements, or, in some cases, countryside areas where people live far apart. These humble structures often feature shrines for dozens of gods, and all voices of the Tayee choir are welcome to praise their own patron."
  sirayn.1050.desc.small_monastery: "#Bold small [faith.GetAdjectiveNoTooltip] monastery#!. Here, devotees can focus on spiritual matters, study theology, and serve their patron in a peaceful environment. They can also provide a limited amount of services to the local community, thanks to the devotees’ knowledge and wisdom."
@@ -120,7 +155,26 @@
  sirayn.1052.a.tooltip: "Because you converted to a non-Tayee [faith|E], you have forfeited the right to the [character_modifier|E] you were originally going to receive."
  sirayn.1052.b: "Disavow that building - I am a true [ROOT.Char.GetFaith.GetAdherentName]!"
  sirayn.1052.b.tooltip: "To prove that your conversion to [THIS.Char.GetFaith.GetName] is genuine, you not only forfeit the right to the [character_modifier|E] you were originally going to receive, but the [county_modifier|E] in your [realm_capital|E] as well"
-
+ sirayn.1053.t: "Tayee Religious Site Cancelled"
+ sirayn.1053.desc: "Some time ago, I donated a significant sum towards the construction of a new Tayee religious site in [county.GetNameNoTier]. Unfortunately, the region is no longer under my rule, which has forced me to cancel the project prematurely."
+ sirayn.1053.a: "Unfortunate."
+ 
+ # Become Avatar of Faith
+ sirayn.1100.t: "Avatar of [ROOT.Char.GetFaith.HighGodName2]"
+ sirayn.1100.desc: "In a grand possession, I make my way through [capital.GetName], surrounded by an excited crowd. In the eyes of those below, an almost graspable shroud of divinity surrounds me, the holy [GetTrait('avatar').GetName(ROOT.Char)]. Finally, in a great ceremony, the [ROOT.Char.GetFaith.PriestNeuterPlural] proclaim me as the mortal incarnation of [ROOT.Char.GetFaith.HighGodNamePossessive] might."
+ sirayn.1100.desc.landless: "In a grand possession, I make my way through [capital.GetName], surrounded by an excited crowd. In the eyes of those below, an almost graspable shroud of divinity surrounds me, the holy [GetTrait('avatar').GetName(ROOT.Char)]. Finally, the [ROOT.Char.GetFaith.PriestNeuterPlural] proclaim me as the mortal incarnation of [ROOT.Char.GetFaith.HighGodNamePossessive] might."
+ sirayn.1100.a: "I am a vessel of [ROOT.Char.GetFaith.HighGodHerHis] Will!"
+ lotr_avatar_changed_faith.tt: "You abandoned your Faith"
+ lotr_avatar_changed_faith.tt2: "Every [old_faith.GetName] [ruler|E] looses #N 30#! [opinion|E]"
+ lotr_avatar_changed_faith.tt3: "Your Avatar abandoned your Faith"
+ lotr_avatar_changed_faith.tt4: "Every [old_faith.GetName] [ruler|E] looses #N 30#! [opinion|E] of [fake_avatar.GetFirstNameRegnal|E]"
+ 
+ sirayn.1101.opening: "[new_avatar.Custom2('AppropriateGreeting', ROOT.Char)]"
+ sirayn.1101.desc.hof: "You too have doubtlessly heard of my exceptional piousness and virtue among the [new_avatar.GetFaith.GetAdjective]. Now, with [avatars_hof.GetTitledFirstNamePossessive] recognition, I have mantled the divinity of [new_avatar.GetFaith.HighGodName] as [new_avatar.GetFaith.HighGodHerHis] mortal incarnation on earth. All shall bow before the [GetTrait('avatar').GetName(avatars_hof)]!"
+ sirayn.1101.desc: "You too have doubtlessly heard of my exceptional piousness and virtue among the [new_avatar.GetFaith.GetAdjective]. In truth, I have mantled the divinity of [new_avatar.GetFaith.HighGodName] as [new_avatar.GetFaith.HighGodHerHis] mortal incarnation on earth. All shall bow before the [GetTrait('avatar').GetName(new_avatar)]!"
+ sirayn.1101.a: "Praise [ROOT.Char.GetFaith.HighGodName]!"
+ sirayn.1101.b: "Interesting..."
+ sirayn.1101.c: "A cursed day!"
 
  sirayn.1600.t: "Traitors and Villains"
  sirayn.1600.desc: "I stir awake, roused by a whisper. [ROOT.Char.GetFaith.HighGodName], my faithful guide! She has been watching over me ever since I was born. And there! An assassin in my chamber, just as Yóm's providence fortold in my dream. I leap to my feet, drawing the blade I had laid next to me. Ere the would-be killer can react, I am upon him with all my fury. Soon, it is all over.\n\nI will not follow my father into an early grave, this I swear upon the silver rays of Yóm's gentle light. As I suspected, the assassin bears the symbol of my hated nemesis: a chain around his neck, with a sun-shaped pendant! It is one of my guardsmen I realize. Traitors! Traitors and villains, all around!\n\nI know who sent this man. It must have been my spiteful uncle, [uncle_arien.GetFirstName]. When my father ousted him from ruling Isra, he never forgave it. And neither shall I forgive this repeated transgression..."

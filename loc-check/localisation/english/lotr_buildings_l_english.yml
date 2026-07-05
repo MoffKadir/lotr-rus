@@ -694,7 +694,7 @@
  building_type_arsasan_mints_01_desc: "$building_arsasan_mints_01_desc$"
  building_arsasan_mints_01: "Arsasan Mints"
  building_arsasan_mints_01_desc: "For [trans_haradric_merchants|E] involved in the trade of gold, Arsasak is usually the next place they visit after a night of respite in the Oasis of Maresh. Local rulers have capitalized on the large amount of gold flowing through here to turn Maresh into a major minting center. The coins produced here are renowned throughout [harad|E] for their quality, and feature a hole so they may be worn on a string. The strings cost extra, of course."
- maresh_mint_decision_requirement_desc: "Can only be constructed by taking the [decision|E] to #V $decision_maresh_establish_mints$#!"
+ maresh_mint_decision_requirement_desc: "Can only be constructed by taking the [decision|E] to #V [GetDecisionWithKey('decision_maresh_establish_mints').GetName]#!"
 
  building_type_wonder_qarsa_palace_01: "Blue Palace of Qarsa"
  building_type_wonder_qarsa_palace_01_desc: "Built on top of a lone hill surrounded by steep cliffs stands the Blue Palace. Its walls are made of sandstone tiled with white and blue tiles, giving it a most unique appearance. Here reside the Kings of Qarsa, whenever one arises in this land of endless conflict, warfare, and upheaval."
@@ -1341,7 +1341,6 @@
  building_dragon_hoard_08: "Monument of Avarice"
  building_dragon_hoard_08_desc: "The hoard is now unimaginably vast, encompassing hundreds of chambers. It is home to the stolen wealth of a hundred kingdoms, a true monument of avarice."
 
-
  # Cochineal Industry Duchy Building
  building_type_cochineal_industry_01: "Cochineal Industry"
  building_type_cochineal_industry_01_desc: "Red dye is produced on plantations that harvest the larvae of the [cochineal|El] insect that is found throughout various [GetGeographicalRegion('special_cochineal_production_region').GetName]. This dye sells for high prices on international markets."
@@ -1468,7 +1467,7 @@
  building_type_wonder_tharagrondost_expanded_desc: "The mighty city of Tharagrondost, main city and citadel of Andrast"
  building_wonder_tharagrondost_expanded: "Great City of Tharagrondost"
  building_wonder_tharagrondost_expanded_desc: "Tharagrondost, once a lone citadel of [dunedain|E] in Andrast, became the center of the region. Greater havens and higher walls has been built with the support of finest architects of [gondorians|E]. Fur, honey and trees from Andrast are sailing from its port to the Gondorian heartlands. Its mighty citadel defends local people from the threat of raiders. After many years of wise stewardship, Tharagrondost truly became one of the greatest cities of [gondor|E]."
- tharagrondost_building: "Expand Tharagrondost decision is completed"
+ tharagrondost_building: "Expand Tharagrondost #V [GetDecisionWithKey('decision_expand_tharagrondost').GetName]#! [decision|E] is completed"
 
 #City of Serelond
  building_type_wonder_serelond: "Serelond"
@@ -2036,10 +2035,23 @@
 
 
 ### Eregion ###
- building_type_wonder_mirdairond: "Ost-in-Edhil"
- building_type_wonder_mirdairond_desc: "'City of the Eldar,' Ost-in-Edhil was the great city of the [noldorelves|E] in eastern [eriador|E], the capital of the realm of [eregion|E]. Founded originally by [celebrimbor|E] and his followers around [secondage|E] 750, the city was never truly finished but kept growing throughout its entire existence. \n\nAn orderly city, it could be divided into many different districts. Of these, the most well-known was the Ardhlarem (High-City), located in the center and on its highest hill. Here was located the greatest homes of the city, government buildings, Durin's Estate, the Prince's House, as well as the Mírdairond.\n\nThe city was destroyed by [sauroncharacter|E] in the [waroftheelvesandsauron|E], leaving only ruins and memories behind."
- building_wonder_mirdairond: "Mírdairond"
- building_wonder_mirdairond_desc: "The Mírdairond (Halls of the Jewel-Smiths) was sometimes considered a 'city within the city.' Located in the Ardhlarem district at Eregion's heart, it was a sprawling palatial complex of libraries, labouratories, debate halls, classrooms, forges, and craftsmen shops. Many claimed that there was never before or since such a gathering of the craftsmen of the Eldar in the Hither Lands, for this was the home of the legendary Gwaith-i-Mírdain.\n\nTheir halls were open to all aspirants, and it was considered one of the greatest honors to be awarded a place among their number. The Mírdain hosted classes and debates for all who wished to join them and fostered a vibrant and dynamic intellectual center. It was not uncommon to find apprentices running to and fro, or to find Dwarves from nearby [khazaddum|E] in its halls.\n\nPatronized, established, and led by [celebrimbor|E] himself, the works wrought in these halls are of no less legend than the makers themselves and created fabulous wealth and prestige for all involved."
+#  building_type_wonder_mirdairond: "Ost-in-Edhil"
+#  building_type_wonder_mirdairond_desc: "'City of the Eldar,' Ost-in-Edhil was the great city of the [noldorelves|E] in eastern [eriador|E], the capital of the realm of [eregion|E]. Founded originally by [celebrimbor|E] and his followers around [secondage|E] 750, the city was never truly finished but kept growing throughout its entire existence. \n\nAn orderly city, it could be divided into many different districts. Of these, the most well-known was the Ardhlarem (High-City), located in the center and on its highest hill. Here was located the greatest homes of the city, government buildings, Durin's Estate, the Prince's House, as well as the Mírdairond.\n\nThe city was destroyed by [sauroncharacter|E] in the [waroftheelvesandsauron|E], leaving only ruins and memories behind."
+#  building_wonder_mirdairond: "Mírdairond"
+#  building_wonder_mirdairond_desc: "The Mírdairond (Halls of the Jewel-Smiths) was sometimes considered a 'city within the city.' Located in the Ardhlarem district at Eregion's heart, it was a sprawling palatial complex of libraries, laboratories, debate halls, classrooms, forges, and craftsmen shops. Many claimed that there was never before or since such a gathering of the craftsmen of the Eldar in the Hither Lands, for this was the home of the legendary Gwaith-i-Mírdain.\n\nTheir halls were open to all aspirants, and it was considered one of the greatest honors to be awarded a place among their number. The Mírdain hosted classes and debates for all who wished to join them and fostered a vibrant and dynamic intellectual center. It was not uncommon to find apprentices running to and fro, or to find Dwarves from nearby [khazaddum|E] in its halls.\n\nPatronized, established, and led by [celebrimbor|E] himself, the works wrought in these halls are of no less legend than the makers themselves and created fabulous wealth and prestige for all involved."
+ building_type_wonder_ost_in_edhil_01: "Ost-in-Edhil"
+ building_type_wonder_ost_in_edhil_01_desc: "'City of the Eldar,' Ost-in-Edhil was the great city of the [noldorelves|E] in eastern [eriador|E], the capital of the realm of [eregion|E]. Founded originally by [celebrimbor|E] and his followers around [secondage|E] 750, the city was never truly finished but kept growing throughout its entire existence. \n\nAn orderly city, it could be divided into many different districts. Of these, the most well-known was the Ardhlarem (High-City), located in the center and on its highest hill. Here was located the greatest homes of the city, government buildings, Durin's Estate, the Prince's House, as well as the Mírdairond.\n\nThe city was destroyed by [sauroncharacter|E] in the [waroftheelvesandsauron|E], leaving only ruins and memories behind."
+ building_wonder_ost_in_edhil_01: "Ost-in-Edhil Ruins"
+ building_wonder_ost_in_edhil_01_desc: "After much effort, the Elves have dug out the remains of the ancient city of Ost-in-Edhil. The remains of most districts have been excavated and what was found there has been exposed for all to see."
+ building_wonder_ost_in_edhil_02: "Ost-in-Edhil Refounded"
+ building_wonder_ost_in_edhil_02_desc: "Old foundations have been reinforced, and new ones have been laid where the damage was too great. The city isn't yet much to look at but the Elves can now start building it back without fear."
+ building_wonder_ost_in_edhil_03: "Ost-in-Edhil - City of Arts"
+ building_wonder_ost_in_edhil_03_desc: "Though still dwarfed by the grandeur of the city of old, Ost-in-Edhil once more resonates with the sound of falling hammers of smiths, and with the intertwining songs of poets and songbirds. Its gardens and fountains surround the great forge at its heart, and each day the city grows in size and beauty."
+ building_wonder_ost_in_edhil_04: "Ost-in-Edhil - Bastion of Elvendom"
+ building_wonder_ost_in_edhil_04_desc: "Around the grounds of the city, great walls have been raised, shining in the sunlight. On their battlements stand vigil many sentinels, protecting the work of a great many smiths and jewelers. Its streets are decorated with many works of art, and the shine of Ithildin and Noldorin gems can be seen shining in the moonlight."
+ building_wonder_ost_in_edhil_05: "Ost-in-Edhil - Mírdairond"
+ building_wonder_ost_in_edhil_05_desc: "The Mírdairond (Halls of the Jewel-Smiths) is sometimes considered a 'city within the city.' Located in the Ardhlarem district at Eregion's heart, it is a sprawling palatial complex of libraries, laboratories, debate halls, classrooms, forges, and craftsmen shops. Many claim that there was never before or since such a gathering of the craftsmen of the Eldar in the Hither Lands, for this is the home of the legendary Gwaith-i-Mírdain.\n\nTheir halls are open to all aspirants, and it is considered one of the greatest honors to be awarded a place among their number. The Mírdain host classes and debates for all who wish to join them and foster a vibrant and dynamic intellectual center. It is not uncommon to find apprentices running to and from, or to find craftsmen from friendly Free Peoples in its halls.\n\nPatronized, established, and led by [celebrimbor|E] himself before its ruin, the works wrought in these halls were of no less legend than the makers themselves and created fabulous wealth and prestige for all involved."
+ 
 
 ### Sirgala ###
  building_type_wonder_edhelas_01: "Halls of Edhelas"
@@ -2191,11 +2203,17 @@
  building_wonder_wulfborg_03: "Tower of Tapestries"
  building_wonder_wulfborg_03_desc: "An imposing tower that looms over the great hall and keep, the Tower of Tapestries contains many fine threadworks that detail the history of the hall and the Frecalings. In it as well are many great banners and wall rugs that show the wide range of tributes that flow into Wulfborg from the other chieftains of Dunland - and beyond."
 
- #Red Dragon's Shrine
+ # Red Dragon's Shrine
  building_type_wonder_dunland_shrine: "Shrine of the Red Dragon"
  building_type_wonder_dunland_shrine_desc: "A wooden shrine dedicated to a mysterious red-scaled [dragon|El] that is said to once have haunted the vale of Thrór's Coomb."
  building_wonder_dunland_shrine: "Shrine of the Red Dragon"
  building_wonder_dunland_shrine_desc: "Legends and old tales tell of a [dragon|El] that, in ages long past, haunted the vale of Thrór's Coomb. The name of this dragon has been lost to time. Now, the mighty creature is simply known as "The Red" among those few who visit the shrine and tend to it, lest it fall into disrepair."
+ 
+ # Harabad
+ building_type_wonder_harabad_01: "Docks of Harabad"
+ building_type_wonder_harabad_01_desc: "On the southern banks of the Gwathló river lies Harabad, the smaller, more [gondorian|E]-influenced part of Tharbad. The docks here are more modest than their northern counterparts, but while the city was inhabited, trade was still flowing through Harabad and southwards along the Royal Road."
+ building_wonder_harabad_01: "Docks of Harabad"
+ building_wonder_harabad_01_desc: "$building_type_wonder_harabad_01_desc$"
 
  ### WHITE MOUNTAINS WONDERS ###
  # Paths of the Dead
@@ -4111,6 +4129,15 @@
  building_type_wonder_arpel_02_desc: "Arpél, capital of Pél"
  building_wonder_arpel_02: "City of Arpél"
  building_wonder_arpel_02_desc: "Following the [akallabeth|E], the ancient [colony|E] of [loni_hisekhor|E] laid abandoned and the Pél gave the name [arpel|E] to the ancient ruins. During the domination of Mag and Tûmag, the ruins were again renamed to Katerre, and utilised as a natural harbour to ensure Mag control over the area.\n\nThis all changed in [ageTA|E] 1203, when a coalition of Pél rebels invited the [balan_lai|E] to aid them in rebellion in exchange for fealty under limited [adunai|E] authority. This surprised the [balan_lai|E], who had long held the belief that Pél was a land better left independent, too isolated and underdeveloped to be worth ruling. However, it was agreed that they would aid the rebels and in exchange an [adunaic|E] noble would take the mantle of Prince of Pél. Thus Sapazûr Agathôhin, desdenced from the old nobilty and without other connections, was chosen as Prince and placed on the throne.\nArpél was rebuilt, and became a city of mixed influnences. The newly rebuilt Arpél would house the Council of Pél, where all the tribes of the Princedom would sent a representative to govern alongside the Adûnaic prince. The new Princedom and its capital would stay away from the intrigue and conflicts of the [thanihazad|E], rather being home to the restored and expanded Harbour of Arpél, aiding the ships of Thâni-Hazâd in trading with the eastern realms of [ardaconcept|E]."
+ 
+ building_type_azrathani_mines_01: "Azrathâni Mines"
+ building_type_azrathani_mines_01_desc: "These bountiful mines are in reality a full mining complex, integrating many different mines all across the mountain chain known in [adunaic|E] as the Lâikurîd, or Green Mountains. So called despite being mostly composed of black and white rock."
+ building_azrathani_mines_01: "Azrathâni Mines"
+ building_azrathani_mines_01_desc: "$building_type_azrathani_mines_01_desc$"
+ building_type_azrathani_mines_02: "Great Azrathâni Mines"
+ building_type_azrathani_mines_02_desc: "Lâikurîd seems to hold an inexhaustible wealth of emeralds. Ever the white rock yields precious bluish green gems from it's innards. It has far surpassed the [balan_lai|E]'s greatest expectations, and it has made the enterprising adventurers who first carved a realm in this foreign land fabulously rich."
+ building_azrathani_mines_02: "Great Azrathâni Mines"
+ building_azrathani_mines_02_desc: "$building_type_azrathani_mines_02_desc$"
 
  # Mag and Tûmag #
  building_type_wonder_akos: "$building_wonder_akos$"
@@ -4243,7 +4270,7 @@
  building_selena_mud_masons_01_desc: "The mason's guild of Selena are highly renowned for their skills in [mud_masonry|E], honed to perfection over many generations. Their knowledge, which has sacred dimensions, is greatly respected across the region."
  building_selena_mud_masons_02: "Temple-City of Selena"
  building_selena_mud_masons_02_desc: "Through the tireless efforts of the mason's guild, Selena has been transformed into a marvellous walled temple-city, each spire a testament to its' builders' skill in [mud_masonry|E]."
- selena_mud_masons_effect_desc: "$unlocks_building_desc$Unlocks the #V $decision_employ_mud_masons$#! [decision|E] even if your [culture|E] does not have the [GetCultureTradition('tradition_mud_masons').GetName] [tradition|E]\n\nImproves the #V $decision_employ_mud_masons$#! [decision|E] if your [culture|E] already has access to it"
+ selena_mud_masons_effect_desc: "$unlocks_building_desc$Unlocks the #V [GetDecisionWithKey('decision_employ_mud_masons').GetName]#! [decision|E] even if your [culture|E] does not have the [GetCultureTradition('tradition_mud_masons').GetName] [tradition|E]\n\nImproves the #V [GetDecisionWithKey('decision_employ_mud_masons').GetName]#! [decision|E] if your [culture|E] already has access to it"
 
  building_type_wonder_krythan: "Garden-Fortress of Aksari"
  building_type_wonder_krythan_desc: "$building_wonder_krythan_desc$"
@@ -4254,7 +4281,7 @@
  building_type_wonder_tarnet_barzain_desc: "Home of the Prophet Augar, Tarnet Barzain is venerated as the birthplace of the Tayee religion. Though the myriad gods of Sîrayn were likely worshipped in some form as far back as the Second Age, Augar formalized the faith in 5th century [ageTA|E], compiling the major rituals and prayers of the Tayee into a set of holy texts, the Tarat Balazayn."
  building_wonder_tarnet_barzain: "Temple of the Prophet"
  building_wonder_tarnet_barzain_desc: "Home of the Prophet Augar, Tarnet Barzain is venerated as the birthplace of the Tayee religion. Though the myriad gods of Sîrayn were likely worshipped in some form as far back as the Second Age, Augar formalized the faith in 5th century [ageTA|E], compiling the major rituals and prayers of the Tayee into a set of holy texts, the Tarat Balazayn.\n\nThe Temple of the Prophet maintains shrines to every god in the Tayee pantheon, as well as extensive libraries, gardens, and fountains. Most beloved, however, is the memorial to Augar himself, which stands at the center of the complex; from the prophet's heart radiates all other knowledge."
- tarnet_barzain_effect_desc: "$unlocks_building_desc$Use of the #V $decision_sponsor_tayee_holy_building$#! [decision|E] gives the unique [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip] [modifier|E], which scales with the amount of sponsored buildings."
+ tarnet_barzain_effect_desc: "$unlocks_building_desc$Use of the #V [GetDecisionWithKey('decision_sponsor_tayee_holy_building').GetName]#! [decision|E] gives the unique [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip] [modifier|E], which scales with the amount of sponsored buildings."
 
  building_type_wonder_tyarrett: "Tyarrett"
  building_type_wonder_tyarrett_desc: "$building_wonder_tyarrett_desc$"

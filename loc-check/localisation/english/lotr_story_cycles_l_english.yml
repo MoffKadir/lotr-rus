@@ -3,9 +3,21 @@
  ### Bountig Medlokan Story Cycle ###
  ####################################
  # Intro to his story - fight in the West against Rohan
+ bountig_medlokan_intro_to_story: "Your [domicile|E] will be moved to [contract_employer.GetName]'s capital.\n\n[contract_employer.GetName] will start a war with [GetTitleByKey('k_rohan').GetHolder.GetName] with #V you#! as their ally"
  story_cycle_bountig_medlokan: "Bountig's Travels"
  story_cycle_bountig_medlokan_desc: "Fate has torn [GetScriptedCharacterByHistoryID('bountigmedlokan').GetFirstName] from his home and family, and now he wanders through the wide lands of [middleearth|E]. His travels will touch many lands West and South before it is time to return again to his homeland. Look for special Story Contracts that will provide opportunies to grow in experience and wisdom durring his journey.\n\n$bountig_event_chain.0012.a.tt.2$"
- bountig_medlokan_intro_to_story: "Your [domicile|E] will be moved to [contract_employer.GetName]'s capital.\n\n[contract_employer.GetName] will start a war with [GetTitleByKey('k_rohan').GetHolder.GetName] with #V you#! as their ally"
+
+ #######################################
+ ### Azrathâni Expedition Story Cyle ###
+ #######################################
+ story_cycle_azrathani_expedition: "The Azrathâni Expedition"
+ story_cycle_azrathani_expedition_desc: "A sailor's tale about a rich emerald deposit in the exotic south was all that was needed to set the [sevenlands|E] aflame.\n\nThe enterprising would-be conquerors must now deal with heavy debt and a hostile native population if they are to bring this mine to fruition, and perhaps then realize their ambition of becoming a princely family of the [balan_lai|E]."
+ debt_breakdown: "#V Debt Breakdown:#!\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_karasalas').GetValue|0]#! to [GetTitleByKey('d_karasalas').GetHolder.GetFullName] at #X [GetTitleByKey('d_karasalas').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_alsarias').GetValue|0]#! to [GetTitleByKey('d_alsarias').GetHolder.GetFullName] at #X [GetTitleByKey('d_alsarias').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimileth').GetValue|0]#! to [GetTitleByKey('d_gimileth').GetHolder.GetFullName] at #X [GetTitleByKey('d_gimileth').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimilthani').GetValue|0]#! to [GetTitleByKey('k_gimilthani').GetHolder.GetFullName] at #X [GetTitleByKey('k_gimilthani').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_pel').GetValue|0]#! to [GetTitleByKey('k_pel').GetHolder.GetFullName] at #X [GetTitleByKey('k_pel').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_inzilloni').GetValue|0]#! to the merchants of [GetTitleByKey('d_inzilloni').GetNameNoTier] at #X [GetTitleByKey('d_inzilloni').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest."
+ ziranihin_brothers: "The Zîrânîhîn Brothers"
+ ziranihin_followers: "The Princely Scions"
+ label_native_acceptance: "#V Native Acceptance#!"
+ relaxed_natives: "#difficulty_easy Acceptance#!"
+ angry_natives: "#difficulty_hard Resistance#!"
  
  #################################
  ### Eradan - War in the North ###
@@ -45,3 +57,12 @@
  ################
  story_cycle_goblin_mask: "The Mask"
  story_cycle_goblin_mask_desc: "You have found a curious mask. It is unadorned except for a few animal horns, and it seems to fit perfectly to your face. It emanates a strange pull, as if it #italic wants#! to be worn. You find it difficult to withstand that pull. The mask sometimes offers boons, but sometimes, it might lead you astray. Beware the consequences of owning the mask... for at some point, it may begin owning #italic you...#!"
+ 
+ ##############################
+ ### Avatar of Sîrayn Deity ###
+ ##############################
+ story_cycle_avatar_of_faith: "Avatar of [GetPlayer.GetFaith.HighGodName]"
+ story_cycle_avatar_of_faith_desc: "You have ascended to embody [GetPlayer.GetFaith.HighGodNameAlternate] [GetPlayer.GetFaith.HighGodHerselfHimself]. As the embodiment of [GetPlayer.GetFaith.HighGodHerHis] will, all [GetPlayer.GetFaith.GetAdjective] look up to you with reverence. If you play your cards well, you could even establish a system of rule where this divine lineage is passed onto your descendants as well."
+ story_cycle_avatar_of_faith_info_tooltips: "$story_cycle_avatar_of_faith_warn_tt$\n$story_cycle_avatar_of_faith_warn_tt2$"
+ story_cycle_avatar_of_faith_warn_tt: "#warning @warning_icon! Converting away from your [faith|E] will remove your divinity and incur consequences#!"
+ story_cycle_avatar_of_faith_warn_tt2: "#help Creating a new [faith|E] will not incur this penalty#!"
