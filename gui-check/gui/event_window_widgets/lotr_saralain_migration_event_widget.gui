@@ -1,0 +1,30 @@
+vbox = {
+	name = "lotr_saralain_migration_event_widget"
+	layoutpolicy_horizontal = expanding
+	margin = { 10 0 }
+
+	datacontext = "[EventWindowWidget.GetScope.sC('scope_character')]"
+
+	divider_light = {
+		layoutpolicy_horizontal = expanding
+	}
+
+	hbox = {
+		layoutpolicy_horizontal = expanding
+		icon = {
+			name = "quest_icon"
+			size = { 50 50 }
+			framesize = { 80 80 }
+			texture = "gfx/interface/icons/widgets/RICE_normandy_northmen_warriors.dds"
+			tooltip = "event_window_widget_lotr_saralain_migration_tooltip_widget"
+		}
+
+		text_single = {
+			name = "lotr_saralain_migration_event_widget_text"
+			text = "lotr_saralain_migration_event_widget_text"
+			layoutpolicy_horizontal = expanding
+			autoresize = no
+		}
+	}
+}
+
