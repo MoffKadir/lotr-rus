@@ -1,10 +1,12 @@
 ﻿l_russian:
 
  sirayn.0001.t: "Выбор надзирателей"
- sirayn.0001.desc: "Мое господство над землями Сирешы практически абсолютно. От засушливых высокогорий Тур-Бетарка до влажных джунглей Сары-Баска - все склоняются и выражают покорность Хорахилю, Пятому из Девяти. Когда мой взор обращается на запад, к новым землях, я понимаю, что, если я хочу добиться победы за границей, мне нужно добиться стабильности здесь, в Сирайне. Моя хватка, хоть и ужасная, простирается не так далеко, поэтому я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] полагаться на верных слуг, чтобы держать местных жителей в узде.\n\nОчевидный выбор - булганские кланы в западных горах. Их кровожадность и фанатичная преданность помогли собрать Пову и Хеннакатт под знаменем Южного дракона. Уже сейчас, служа надзирателями по всему Сирайну, они наводят ужас на крестьян и регулярно взимают дань. Более того, они культурно родственны другим народам Сирайна и имеют исторические права на владычество. Они уже доказали свою преданность, и если вы официально проявите к ним свою благосклонность, это обеспечит их верность на многие поколения.\n\nС другой стороны, мои амбиции распространяются не только на Сирайн. На юге и западе маршируют легионы Ан-Балкумагана и Тантурака - чёрных нуменорцев, некогда моих родичей и навсегда преданных Тёмному властелину. Хотя они, возможно, чрезмерны в своих методах, они умеют добывать богатства у мелких племен Далёкого Юга и охотно идут добровольцами в мои войска. Если бы я [Select_CString(ROOT.Char.IsFemale, 'пообещала', 'пообещал' )] адунайцам титулы из числа завоеванных земель в Бозиша-Миразе и Беллакаре, они бы пополнили и мою казну, и ряды.\n\nКонечно, можно вообще отказаться от людей. Хотя орки - плохие управленцы, они - оружие, которым мой хозяин пользовался снова и снова. Если высвободить горных орков в моей державе, это, конечно, приведёт к хаосу, но когда дым рассеется, может возникнуть новый и ужасный порядок."
+ sirayn.0001.desc: "My dominion over [GetTitleByKey('e_sirayn').GetNameNoTier] is all but complete. From the arid highlands of the [yellowmountains|E] to the humid jungles of the [GetTitleByKey('d_sara_bask').GetNameNoTier], all bow to [khorahil|E], Fifth of the Nine. As my vision turns toward new fronts, I know that if I am to attain victory abroad, I must rely on loyal enforcers to keep the locals in line.\n\nThe obvious choice are the [GetCultureByKey('bulgan').GetCollectiveNoun] clans of the western mountains. Their bloodthirst and fanatical devotion have been instrumental in keeping Sîrayn pacified these past centuries. There are also the [adunai|E] of [anbalkumagan|E] and [GetTitleByKey('k_tanturak').GetNameNoTier], once my kin, and forever devoted to the Dark Lord. Though perhaps exuberant in their methods, they excel at extracting wealth from the lesser tribes of the Utter South, and are eager volunteers for my armies. Of course, one could forgo the use of men entirely. Though [orcs|E] are poor administrators, they are a weapon my master has made use of time and time again."
  sirayn.0001.a: "Булганцы будут вознаграждены за свою преданность."
  sirayn.0001.b: "Разослать весть всем адунайцам юга - слава и удача ждут вас на службе у Хорахиля."
+ sirayn.0001.b.tt: "Did not aid Tantûrak"
  sirayn.0001.c: "Высвободить орков. Пусть Сирайн сгорит."
+ sirayn.0001.c.tt: "Did not infiltrate the Yellow Mountains"
  sirayn.0001.a.effect: "Все подконтрольные [Concept('counties', 'графства')|E] в #L [GetTitleByKey('e_sirayn').GetNameNoTier]е#! получат модификатор [GetModifier( 'khorahil_bulgan_overseers_county_modifier' ).GetNameWithTooltip] на 50 лет."
  sirayn.0001.b.effect: "Все подконтрольные [Concept('counties', 'графства')|E] в #L [GetTitleByKey('e_sirayn').GetNameNoTier]е#! получат модификатор [GetModifier( 'khorahil_black_numenorean_overseers_county_modifier' ).GetNameWithTooltip] на 50 лет."
  sirayn.0001.c.effect1: "Отнять все [Concept('counties', 'графства')|E], принадлежащие [Concept('vassals', 'вассалам')|E], не являющимися [Concept('orc', 'орками')|E], в #L [GetTitleByKey('e_sirayn').GetNameNoTier]е#! и заменить их орками."
@@ -33,10 +35,10 @@
  sirayn.0006.desc: "Победа за нами!\n\nБеспородные псы разбегаются перед поверженными знамёнами [Concept('southerndragonarmy', 'Воинства Южного дракона')|E]. Они разбиты, их армии разгромлены. Их властители попрятались в отдалённых крепостях, ожидая смертельного удара.\n\nТеперь они мои слуги, какими бы своевольными они ни были, и мой суд будет скорым. Я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы даровать им освобождение, которого они так боятся, и покончить с этой державой раз и навсегда, оставив от неё лишь разрушенные и дымящиеся руины, пустую оболочку королевства.\n\nИли, возможно, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы найти им дальнейшее применение..."
  sirayn.0006.a: "Теперь они являются частью Грозового воинства, хотят они того или нет."
  sirayn.0006.b: "Я посажу верную марионетку на трон Беллакара."
- sirayn.0006.c: "Беллакар будет уничтожен."
+ sirayn.0006.c: "Беллакар сгорит."
  sirayn.0006.d: "Они присоединятся к Грозовому воинству или умрут."
  sirayn.0006.e: "Мои слуги будут править Кхаем от моего имени."
- sirayn.0006.f: "С Кхаем будет покончено навеки."
+ sirayn.0006.f: "Break them, utterly."
  sirayn.0006.tt_1: "Все покорённые властители останутся [Concept('vassals', 'вассалами')|E] в пределах вашей [Concept('realm', 'державы')|E]."
  sirayn.0006.tt_2: "Посадить верного [Concept('tributary', 'данника')|E] на трон завоёванной [Concept('empire', 'империи')|E]."
  sirayn.0006.tt_3: "Все [Concept('titles', 'титулы')|E] в завоёванной [Concept('empire', 'империи')|E] будут уничтожены, что приведёт к расколу державы."
@@ -88,6 +90,22 @@
  sirayn.0017.c: "Тантуракцы получат новый дом."
  sirayn.0017.d: "Анбалукхори давно мечтали о Беллакаре."
  sirayn.0017.e: "Местные кхайцы будут поддерживать мир."
+
+ sirayn.0018.t: "News from Tantûrak"
+ sirayn.0018.desc: "Another tedious report from the southern border with [GetTitleByKey('k_tanturak').GetNameNoTier]: chaos and war.\n\nOnce, the [GetCultureByKey('tanturaki').GetName] were counted among the [darklord|E]'s most zealous servants, unrivaled in their veneration of the Shadow. Of late, however, they have become an annoyance. Tantûrak has spiraled into madness, her lords obsessed with ancient grudges and incessant infighting. Their slaves threaten open revolt, and yet the rival 'kings' of the land revel in their quagmire of butchery.\n\nIt would be prudent to simply look the other way, to allow the fools to slip away into memory, but I could intervene, if I so desired. Such an intervention would be expensive, however, and slow my efforts to consolidate the north."
+ sirayn.0018.a: "Tantûrak is not my concern."
+ sirayn.0018.b: "I will bolster Tantûrak."
+ sirayn.0018.tt: "Can unlock Adûnaic [men_at_arms|E] through the 'Stabilise Sîrayn' [decision|E]."
+ 
+ sirayn.0019.t: "Aid for Tantûrak"
+ sirayn.0019.desc: "Tantûrak is torn asunder, two rival claimants bleeding the realm dry whilst treacherous slaves plot their revolt. On one side is the ever-ambitious [tanturak_king_1.GetFirstName] [tanturak_king_1.GetDynastyHouseName], challenged by the bold [tanturak_king_2.GetFirstName] [tanturak_king_2.GetDynastyHouseName] on the other. For there to be lasting stability in Tantûrak, one king must fall.\n\nPlaying kingmaker is no idle thing, even for a realm so low as this. I should consider my options carefully."
+ sirayn.0019.a: "I will support [tanturak_king_1.GetFirstNameNoTooltip]."
+ sirayn.0019.b: "[tanturak_king_2.GetFirstNameNoTooltip] deserves the throne."
+ sirayn.0019.tt: "You form an [alliance|E] with the chosen king."
+ 
+ sirayn.0020.t: "Abrakhân Reforged"
+ sirayn.0020.desc: "From the sun-bleached sands of Abrakhân rise a legion of warriors, eager for blood.\n\nI have transformed the Pûst, bred them into something cruel, something strong. Where once there were wretched huts and meager warbands, now stand strong castles and organized hosts.\n\nA new kingdom is born on the borders of [khy|E], a new front in the war to come, and I will stand above it all as their golden king."
+ sirayn.0020.a: "Khy's days are numbered."
 
  sirayn.1001.t: "Мечта Сикентра"
  sirayn.1001.desc: "Все булганцы знают историю Сикентра Великого - рождённый наследником скромного племени в тени [Concept('yellowmountains', 'Жёлтых гор')|E], он объединил наш народ под единым знаменем и дал ему цель. Как стрела, выпущенная из лука, он поразил дряхлеющую империю Масра и, как могучий молот, сокрушил нхазад Харшандатта.\n\nНи один народ не мог помешать ему - ни [Concept('khy', 'Кхай')|E] на севере, ни Линерия на юге, ни города на востоке, ни племена на западе. И только когда враги сговорились между собой, великий Сикентр, могущественнейший из людей, наконец пал. Он умер как его империя - с мечом наперевес, сражаясь со многими врагами одновременно.\n\nС того дня булганцы жили в тени его славы, вынужденные трудиться под началом низших владык, пока наше наследие медленно сходило на нет. Довольно! Сегодня мы объявляем мечту Сикентра осуществленной, его древняя империя восстановлена, а вместе с ней - гордость и слава булганцев."
@@ -157,7 +175,6 @@
  sirayn.1101.a: "Славься, [ROOT.Char.GetFaith.HighGodName]!"
  sirayn.1101.b: "Интересно..."
  sirayn.1101.c: "Будь проклят этот день!"
-
 
  sirayn.1600.t: "Изменники и злодеи"
  sirayn.1600.desc: "Я просыпаюсь, [Select_CString(ROOT.Char.IsFemale, 'разбуженная', 'разбуженный' )] шепотом. [ROOT.Char.GetFaith.HighGodName], моя верная проводница! Она присматривает за мной с самого моего рождения. И вот! Убийца в моих покоях, как и предсказывало провидение Йом в моем сне. Я вскакиваю на ноги и выхватываю клинок, который лежал рядом со мной. Прежде чем потенциальный убийца успевает среагировать, я обрушиваюсь на него со всей своей яростью. Скоро все будет кончено.\n\nЯ не последую за своим отцом в раннюю могилу, в этом я клянусь серебряными лучами мягкого света Йом. Как я и [Select_CString(ROOT.Char.IsFemale, 'предполагала', 'предполагал' )], убийца носит символ моего ненавистного заклятого врага: цепь на шее с кулоном в виде солнца! Я [Select_CString(ROOT.Char.IsFemale, 'поняла', 'понял' )], что это один из моих стражников. Изменники! Изменники и злодеи, везде!\n\nЯ знаю, кто послал этого человека. Должно быть, это мой злобный дядя, [uncle_arien.GetFirstName]. Когда мой отец отстранил его от управления Исрой, он так и не простил этого. Не прощу и я этого коварного проступка..."
