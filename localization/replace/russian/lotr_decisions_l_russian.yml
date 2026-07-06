@@ -376,15 +376,11 @@
 
  decision_dorwinion_confederation: "Создать лигу Винного края"
  decision_dorwinion_confederation_tooltip: "Создать [Concept('confederation', 'конфедерацию')|E] с другими [Concept('rulers', 'правителями')|E] [Concept('dorwinion', 'Дорвиниона')|E]"
- decision_dorwinion_confederation_desc: "[Concept('rulers', 'Правители')|E] [Concept('dorwinion', 'Дорвиниона')|E] долгое время были разделены, и каждый властитель и бургомистр руководствовался своими собственными землями и интересами. Хотя это обеспечило большую свободу и процветание, это также сделало нас уязвимыми перед внешними угрозами и внутренними раздорами.\n\nВозможно, пришло время забыть о наших разногласиях и создать [Concept('confederation', 'конфедерацию')|E], объединив наши силы и ресурсы под единым знаменем. Вместе мы сможем обеспечить безопасность и процветание всех народов, населяющих Винный край Дорвиниона."
+ decision_dorwinion_confederation_desc: "[Concept('rulers', 'Правители')|E] [Concept('dorwinion', 'Дорвиниона')|E] долгое время были разделены, и каждый властитель и бургомистр руководствовался своими собственными землями и интересами. Хотя это обеспечило большую свободу и процветание, это также сделало нас уязвимыми перед внешними угрозами и внутренними раздорами.\n\nВозможно, пришло время забыть о наших разногласиях и создать [Concept('confederation', 'конфедерацию')|E], объединив наши силы и ресурсы под единым знаменем. Вместе мы сможем обеспечить безопасность и процветание всех народов, населяющих Винный край."
  decision_dorwinion_confederation_confirm: "Вместе мы сильнее." # Vintners. Together. Strong.
- decision_dorwinion_confederation_tt: "Вы заключите [Concept('confederation', 'конфедерацию')|E] со всеми #high влиятельными#! [Concept('rulers', 'правителями')|E]"
+ decision_dorwinion_confederation_tt: "Вы заключите [Concept('confederation', 'конфедерацию')|E] со всеми #high влиятельными#! [Concept('rulers', 'правителями')|E] в #ONCLICK:TITLE,k_dorwinion #TOOLTIP:LANDED_TITLE,k_dorwinion #L Дорвинионе#!#!#!"
  LEAGUE_OF_THE_WINELANDS: "Лига Винного края"
- is_independent_human_in_dorwinion: "Является [Concept('independent', 'независимым')|E] [Concept('ruler', 'правителем')|E]-[Concept('human', 'человеком')|E]"
- you_have_strong_hook_on_tt: "Находится под #high вашим#! [Concept('hooked', 'влиянием')|E]"
- you_are_friends_with_tt: "Является вашим [Concept('friend', 'другом')|E]"
- you_are_allied_to_tt: "Является #high вашим#! [Concept('allied', 'союзником')|E]"
- all_indep_rulers_in_dorwinion_influenced: "Не менее #high 4#! [Concept('independent', 'независимых')|E] [Concept('rulers', 'правителей')|E]-[Concept('human', 'людей')|E] в регионе #high [GetGeographicalRegion('middleearth_west_rhovanion_dorwinion').GetName]#! соответствуют следующим требованиям:\n$EFFECT_LIST_BULLET$#high Ваши#! [Concept('friend', 'друзья')|E]\n$EFFECT_LIST_BULLET$#high Ваши#! [Concept('ally', 'союзники')|E]\n$EFFECT_LIST_BULLET$Находятся под #high вашим#! [Concept('hooked', 'влиянием')|E]\n$EFFECT_LIST_BULLET$Имеют о #high вас#! #P 80#! или больше [Concept('opinion', 'мнения')|E]"
+ indep_rulers_in_dorwinion_influenced_tt: "Не менее #high [GetPlayer.MakeScope.ScriptValue('lotr_dorwinion_influenced_rulers_count_max')]#! [Concept('independent', 'независимых')|E] [Concept('human', 'людских')|E] [Concept('counts', 'графов')|E] и [Concept('dukes', 'герцогов')|E] в #ONCLICK:TITLE,k_dorwinion #TOOLTIP:LANDED_TITLE,k_dorwinion #L Дорвинионе#!#!#! соответствуют следующим условиям: #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('lotr_dorwinion_influenced_rulers_count')]/[GetPlayer.MakeScope.ScriptValue('lotr_dorwinion_influenced_rulers_count_max')], всего [GetPlayer.MakeScope.ScriptValue('lotr_dorwinion_influencable_rulers_count')])#!\n$EFFECT_LIST_BULLET$Являются вашими [Concept('friend', 'друзьями')|E]\n$EFFECT_LIST_BULLET$Являются вашими [ally_i|E] [Concept('ally', 'союзниками')|E]\n$EFFECT_LIST_BULLET$Находятся под #bold вашим#! [strong_hook_i|E] [Concept('hooked', 'влиянием')|E]\n$EFFECT_LIST_BULLET$Имеют о #high вас#! не менее #P [GetPlayer.MakeScope.ScriptValue('very_high_positive_opinion')]#! [Concept('opinion', 'мнения')|E]"
 
  ###########################
  ### Activities Decision ###
@@ -665,14 +661,14 @@
  decision_adopt_arnorian_culture_get_innovations: "Арнорская [Concept('culture', 'культура')|E] получит все #L [culture.GetCollectiveNoun|l]ие#! [Concept('innovations', 'инновации')|E]"
 
  decision_adopt_new_arnorian_culture: "Создать ново-арнорскую культуру"
- decision_adopt_new_arnorian_culture_desc: "Когда-то люди [Concept('arnor', 'Арнора')|E] собирали могучие воинства и правили великими королевствами. Увы, столетия войн, разрухи и упадка превратили их в тех, кем они стали, - странников в дебрях, известных немногим и уважаемых ещё меньшим числом людей. Хотя такой образ жизни провёл [Concept('dunedain', 'дунэдайн')|E] Арнора через долгие годы лишений, он также привёл к тому, что они утратили связь со многими обычаями и традициями своих предков.\n\nОднако с воссоединением Арнора и [Concept('gondor', 'Гондора')|E] началась новая эпоха. Большое количество [Concept('gondorians', 'гондорцев')|E] поселилось в северных землях, и народы двух королевств всё больше смешивались. В результате этого союза в Арноре возникла обновлённая культура, сочетающая в себе стойкость и независимость северных дунэдайн с образованностью, традициями и государственным искусством юга."
+ decision_adopt_new_arnorian_culture_desc: "Когда-то люди [Concept('arnor', 'Арнора')|E] собирали могучие воинства и правили великими королевствами. Увы, столетия войн, разрухи и упадка превратили их в тех, кем они стали, - странников в дебрях, известных немногим и уважаемых ещё меньшим числом людей. Хотя такой образ жизни провёл [Concept('dunedain', 'дунэдайн')|E] Арнора через долгие годы лишений, он также привёл к тому, что они утратили связь со многими обычаями и традициями своих предков.\n\nОднако с воссоединением Арнора и [Concept('gondor', 'Гондора')|E] началась новая эпоха. Большое количество [Concept('gondorians', 'гондорцев')|E] поселилось в северных землях, и народы двух королевств всё больше смешивались. В результате этого союза в Арноре возникла обновлённая культура, сочетающая в себе стойкость и независимость северных дунэдайн с образованностью, традициями и государственным искусством юга.\n\nВ то время как гондорцы из Тарбада и уиалэдайн с холмов не интегрировались в эту культуру, они жили бок о бок со своими дальними родичами на остальной территории этих земель."
  decision_adopt_new_arnorian_culture_confirm: "Воспряньте, сыны Арнора!"
  decision_adopt_new_arnorian_culture_tooltip: "Принять ново-арнорскую культуру"
- decision_adopt_new_arnorian_culture_courtier_custom: "Все [Concept('courtier', 'придворные')|E] с происходящей от арнорской культурой"
- decision_adopt_new_arnorian_culture_vassal_custom: "Все [Concept('vassal', 'вассалы')|E] с происходящей от арнорской культурой"
+ decision_adopt_new_arnorian_culture_courtier_custom: "Все не-уиалэдайнские [Concept('courtier', 'придворные')|E] с происходящей от арнорской культурой"
+ decision_adopt_new_arnorian_culture_vassal_custom: "Все не-уиалэдайнские [Concept('vassal', 'вассалы')|E] с происходящей от арнорской культурой"
  decision_adopt_new_arnorian_gondorian_culture_vassal_custom: "Все [Concept('vassal', 'вассалы')|E] в [Concept('arnor', 'Арноре')|E] с [Concept('gondorian', 'гондорской')|E] [Concept('culture', 'культурой')|E]"
- decision_adopt_new_arnorian_culture_province_custom: "Все [Concept('county', 'графства')|E] в вашей [Concept('realm', 'державе')|E] с происходящей от арнорской культурой"
- decision_adopt_new_arnorian_gondorian_culture_province_custom: "Все [Concept('county', 'графства')|E] в [Concept('arnor', 'Арноре')|E] с [Concept('gondorian', 'гондорской')|E] [Concept('culture', 'культурой')|E]"
+ decision_adopt_new_arnorian_culture_province_custom: "Все [Concept('county', 'графства')|E] в вашей [Concept('realm', 'державе')|E] с происходящей от арнорской культурой за пределами провинций [GetTitleByKey('d_norinanya').GetNameNoTier] и [GetTitleByKey('d_eketya').GetNameNoTier]"
+ decision_adopt_new_arnorian_gondorian_culture_province_custom: "Все [Concept('county', 'графства')|E] в [Concept('arnor', 'Арноре')|E] с [Concept('gondorian', 'гондорской')|E] [Concept('culture', 'культурой')|E] за пределами владения [GetTitleByKey('c_tharbad').GetNameNoTier] и окружающих графств"
  decision_adopt_new_arnorian_culture_get_innovations: "Ново-арнорская [Concept('culture', 'культура')|E] получает все #L [culture.GetCollectiveNoun|l]ие#! [Concept('innovations', 'инновации')|E]"
  all_unlanded_family_members_new_arnor: "Все безземельные [Concept('family_members', 'члены семьи')|E] [Select_CString(THIS.GetCharacter.IsLocalPlayer, '', 'персонажа ' )][THIS.GetCharacter.GetShortUINamePossessive][Select_CString(THIS.GetCharacter.IsLocalPlayer, 'его персонажа', '' )] с происходящей от арнорской культурой"
  owns_40_percent_of_arnor: "Вы должны контролировать не менее #V 20%#! [Concept('counties', 'графств')|E] [Concept('region', 'региона')|E] [GetGeographicalRegion('middleearth_west_arnor').GetName]"
@@ -1440,13 +1436,13 @@
 
  decision_start_migration: "Призвать к переселению"
  decision_start_migration_tooltip: "Призвать к переселению"
- decision_start_migration_desc: "Placeholder - DEV POOL [GetGlobalVariable('saralain_dev_pool').GetValue]"
+ decision_start_migration_desc: "Энедвайт - край страданий и безысходности. Его народ находится под игом [Concept('sea_peoples', 'народов моря')|E], и его земля - бледная тень тех, что находятся как на севере, так и на юге. Нам пора покинуть пустоши и перебраться на более зелёные пастбища."
  decision_start_migration_confirm: "Разослать глашатаев!"
  decision_start_migration_effect: "К другим правителям энедвайтрим будут разосланы глашатаи, чтобы призвать их к переселению"
 
  decision_launch_migration: "Начать переселение"
  decision_launch_migration_tooltip: "Начать переселение"
- decision_launch_migration_desc: "Placeholder - DEV POOL [GetGlobalVariable('saralain_dev_pool').GetValue]"
+ decision_launch_migration_desc: "Время пришло! Теперь мы готовы начать наше переселение! Пришло время попрощаться со срединным краем и найти новый дом в большом мире! Нам просто нужно решить, куда отправиться..."
  decision_launch_migration_confirm: "Разослать глашатаев!"
  saralain_migration_name: "Саралайнцы"
  migrate_cardolan: "Эриадор"
@@ -1509,6 +1505,7 @@
  decision_eira_assassination_desc: "Губернатор Тарбада - самая могущественная фигура в [Concept('enedhwaith', 'Энедвайте')|E], и именно он отравил моего отца. Если бы я [Select_CString(ROOT.Char.IsFemale, 'убила', 'убил' )] его, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы нанести существенный удар по гондорской власти в регионе и отомстить за смерть моего отца. Однако это был бы рискованный шаг, поскольку губернатор хорошо защищён и у него много преданных сторонников. Тем не менее, если я смогу осуществить задуманное, это послужит серьёзным сигналом для народов Энедвайта и потенциально ослабит власть гондорцев в регионе."
  decision_eira_assassination_confirm: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] быть [Select_CString(ROOT.Char.IsFemale, 'мягка и быстра', 'мягок и быстр' )], как тень."
  decision_eira_assassination_tooltip: "Убить персонажа [GetTitleByKey('c_harabad').GetHolder.GetTitledFirstName]"
+ decision_eira_assassination_tt: "Вы отправитесь в Тарбад, чтобы попытаться убить Глормагиля"
 
  decision_rlain_confederation: "Объединить вождей"
  decision_rlain_confederation_desc: "Вожди [Concept('enedhwaith', 'Энедвайта')|E] долгое время бездействовали, спокойно терпя иго [Concept('gondor', 'Гондора')|E], словно стадо бесхребетных псов. Довольно, сегодня я покончу с этим! Я объединю вождей под единым знаменем, и вместе мы восстанем против наших угнетателей и вернём себе свободу... и в процессе завладеем несметными богатствами!"
@@ -2268,6 +2265,36 @@
  decision_reform_kharadunai_confirm: "К лучшему будущему!"
  balan_lai_reform_princes_percentage: "75% принцев [Concept('balan_lai', 'Балан-лай')|E] исповедуют [GetFaithByKey('faith_gimileth').GetAdjective]\n\n$BULLET_WITH_TAB$В настоящее время #V [GetPlayer.MakeScope.ScriptValue('lotr_derei_convinced_percentage')]%#! удовлетворяют этому требованию"
 
+ decision_tame_the_land: "Укротить землю"
+ decision_tame_the_land_tooltip: "Возможно, однажды в действительно станете властителями этой земли"
+ decision_tame_the_land_desc: "Азратани, морская земля. Издавна это был известный дикий край холмов к югу от густых джунглей Дрэла. Никогда ни один харадунаим не пытался приручить его. Население было сочтено слишком агрессивным, земля - слишком бедной, а гавани - слишком маленькими.\n\nНо теперь есть достаточный экономический стимул для создания державы в этом месте. Голубовато-зелёные самоцветы, которые находят в Лайкуриде, очень ценятся в [Concept('sevenlands', 'Семи землях')|E], и мы контролируем их."
+ full_native_acceptance: "Коренное население приняло вашу власть"
+ no_debts: "Вы расплатились со всеми своими долгами"
+ decision_tame_the_land_confirm: "Так родится Азратани!"
+
+ decision_explore_azrathani: "Исследовать землю"
+ decision_explore_azrathani_tooltip: "Проявив инициативу при обустройстве этой земли, вы можете разбогатеть"
+ decision_explore_azrathani_desc: "Просиживание в Азралони мало чем поможет. Это может быть рискованно, но если я хочу приручить эту землю и стать её [Select_CString(ROOT.Char.IsFemale, 'хозяйкой', 'хозяином' )], я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] это знать. И кто знает? Там могут быть неиспользованные ресурсы."
+ decision_explore_azrathani_confirm: "Взглянем на эту землю."
+
+ decision_repay_debt: "Оплатить свой долг"
+ decision_repay_debt_tooltip: "Возможно, вы захотите погасить долг досрочно"
+ decision_repay_debt_desc: "Экспедиция была профинансирована различными принцами [Concept('balan_lai', 'Балан-лай')|E].\n\nОни вложили значительные средства в это путешествие, но ожидают ежегодного погашения с процентами.\n\n#help Ожидается, что вы заплатите столько, сколько сможете, - от четверти, половины или полной стоимости займа с учётом процентов#!"
+ decision_repay_debt_confirm: "Заглянуть в учётные книги."
+ debt_karasalas: "$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_karasalas').GetValue|0]#! принцу #ONCLICK:TITLE,d_karasalas #TOOLTIP:LANDED_TITLE,d_karasalas #L Карасаласа#!#!#! с процентной ставкой в #X [GetTitleByKey('d_karasalas').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n"
+ debt_alsarias: "$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_alsarias').GetValue|0]#! принцу #ONCLICK:TITLE,d_alsarias #TOOLTIP:LANDED_TITLE,d_alsarias #L Алсариаса#!#!#! с процентной ставкой в #X [GetTitleByKey('d_alsarias').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n"
+ debt_gimileth: "$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimileth').GetValue|0]#! принцу #ONCLICK:TITLE,d_gimileth #TOOLTIP:LANDED_TITLE,d_gimileth #L Гимилета#!#!#! с процентной ставкой в #X [GetTitleByKey('d_gimileth').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n"
+ debt_gimilthani: "$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimilthani').GetValue|0]#! принцу #ONCLICK:TITLE,k_gimilthani #TOOLTIP:LANDED_TITLE,k_gimilthani #L Гимильтани#!#!#! с процентной ставкой в #X [GetTitleByKey('k_gimilthani').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n"
+ debt_inzilloni: "$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_inzilloni').GetValue|0]#! купцам #ONCLICK:TITLE,d_inzilloni #TOOLTIP:LANDED_TITLE,d_inzilloni #L Инзиллони#!#!#! с процентной ставкой в #X [GetTitleByKey('d_inzilloni').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n"
+ debt_pel: "$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_pel').GetValue|0]#! принцу #ONCLICK:TITLE,k_pel #TOOLTIP:LANDED_TITLE,k_pel #L Пэла#!#!#! с процентной ставкой в #X [GetTitleByKey('k_pel').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n"
+
+ decision_seek_debt: "Искать финансирование"
+ decision_seek_debt_tooltip: "Больше денег - это всегда хорошо"
+ decision_seek_debt_desc: "Золото всегда было и будет дефицитным ресурсом. Как только вы получаете то, о чём мечтали, вы обнаруживаете, что нуждаетесь в большем. Так было всегда.\n\nМне нужны вложения, если я хочу обустроить эту землю, но я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] быть [Select_CString(ROOT.Char.IsFemale, 'осторожна', 'осторожен' )], чтобы не накопить больше долгов, чем я могу себе позволить."
+ interest_breakdown: "#V Процентные ставки:#!\n$BULLET$Принц Гимильтани готов предоставить займ под #X [GetTitleByKey('k_gimilthani').MakeScope.Var('loan_interest').GetValue|%0] проц./год#!\n$BULLET$Принц Карасаласа готов предоставить займ под #X [GetTitleByKey('d_karasalas').MakeScope.Var('loan_interest').GetValue|%0] проц./год#!\n$BULLET$Принц Гимилета готов предоставить займ под #X [GetTitleByKey('d_gimileth').MakeScope.Var('loan_interest').GetValue|%0] проц./год#!\n$BULLET$Принц Алсариаса готов предоставить займ под #X [GetTitleByKey('d_alsarias').MakeScope.Var('loan_interest').GetValue|%0] проц./год#!\n$BULLET$Принц Пэла готов предоставить займ под #X [GetTitleByKey('k_pel').MakeScope.Var('loan_interest').GetValue|%0] проц./год#!\n$BULLET$Купцы Инзиллони готовы предоставить займ под #X [GetTitleByKey('d_inzilloni').MakeScope.Var('loan_interest').GetValue|%0] проц./год#!"
+ bankruptcy_alert: "#N В данный момент ваша процентная ставка в #V [GetPlayer.MakeScope.ScriptValue('interest_to_income_yearly')|1] раза#! превышает ваш годовой доход!#!\n#help Как только ваши годовые проценты превысят ваш доход в 20 раз, вы будете вынуждены объявить дефолт по займам, что, скорее всего, приведёт к войне.#!"
+ decision_seek_debt_confirm: "Но у кого есть деньги, чтобы предложить их?"
+
  #############################
  #### Balan-Lai Decisions ####
  #############################
@@ -2382,6 +2409,11 @@
  decision_nazgul_alliance_tt: "Заключить [Concept('defensive_alliance', 'оборонительный союз')|E] с соседним [Concept('ruler', 'правителем')|E]-[Concept('nazgulcharacter', 'назгул')|E]."
  you_border_nazgul: "Ваша [Concept('realm', 'держава')|E] граничит с владениями других [Concept('nazgul', 'назгул')|E]."
 
+ decision_nazgul_return_to_mordor: "Вернуться в Мордор"
+ decision_nazgul_return_to_mordor_tooltip: "Покинуть вашу державу и отправиться в Мордор"
+ decision_nazgul_return_to_mordor_desc: "Пришло время отказаться от своих происков в дальних уголках Средиземья. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] вернуться в [Concept('mordor', 'Мордор')|E] и подготовить его к возвращению [Concept('darklord', 'Тёмного властелина')|E]."
+ decision_nazgul_return_to_mordor_confirm: "Быстро и безмолвно."
+ decision_nazgul_return_to_mordor.tt: "Вы [Concept('travel', 'отправитесь')|E] в [GetTitleByKey('k_gorgoroth').GetName], и создадите новую [Concept('realm', 'державу')|E] в [Concept('mordor', 'Мордоре')|E]."
  # Long Winter Decisions
  steward_of_morgul: "Моргульский наместник"
 
@@ -2477,6 +2509,7 @@
  decision_unify_the_orcs_desc: "Долгое время [Concept('orcs', 'орки')|E] были разрозненными и разобщенными, отбиваясь на каждом шагу от [Concept('men', 'людей')|E], [Concept('dwarves', 'гномов')|E] и [Concept('elves', 'эльфов')|E]. Мы были объединены под властью Тёмных Властелинов, но они недостойны наших мечей! Орки должны править орками, и вести их должен [Select_CString(ROOT.Char.IsFemale, 'сильнейшая', 'сильнейший' )] из них - я. \Под моим знаменем воинство орков распространится по всей земле!"
  decision_unify_the_orcs_confirm: "Время орков пришло!"
 
+ orcs_access_to_hegemonys: "#warning Вы потеряете доступ к другим орочьим гегемониям!#!"
  found_hegemony_decision_three_empires_held: "Вы владеете 3 или более [Concept('empires', 'империями')|E]"
  create_goblin_duchy: "Создать новое гоблинское герцогство"
 
@@ -3424,15 +3457,16 @@
  # Adapted from RICE Sponsor Tayee Site
 
  decision_sponsor_tayee_holy_building: "Проспонсировать тайитское религиозное сооружение"
- decision_sponsor_tayee_holy_building_tooltip: "Построить тайитскую святыню в вашей [Concept('capital', 'столице')|E]"
+ decision_sponsor_tayee_holy_building_tooltip: "Построить тайитскую святыню в [Concept('county', 'графстве')|E] [Concept('domain', 'домена')|E] с [Concept('core_tenet', 'догматом')|E] «[GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName]»"
  decision_sponsor_tayee_holy_building_desc: "Как [ROOT.Char.GetTitleAsNameNoTooltip|l], [Select_CString(ROOT.Char.IsFemale, 'желающая', 'желающий' )] продемонстрировать свою преданность Тайи или, в частности, своему покровителю, я хочу пожертвовать средства на строительство религиозного сооружения в своих [Concept('domain', 'владениях')|E]. Местное сообщество духовно выиграет от этого нового сооружения, и все узнают о моём благочестии!"
- decision_sponsor_tayee_holy_building_effect_tooltip_1: "Вы сами выберете, что спонсировать - путевое святилище, храм или монастырь, которые будут приносить различные блага в виде [Concept('piety', 'благочестия')|E], [Concept('prestige', 'престижа')|E] и [Concept('dynasty_prestige', 'признания')|E], а также соответствующий [Concept('character_modifier', 'модификатор персонажа')|E] и [Concept('county_modifier', 'модификатор графства')|E] для вашей [Concept('realm_capital', 'столицы')|E]"
+ decision_sponsor_tayee_holy_building_effect_tooltip_1: "Вы сами выберете, что спонсировать - путевое святилище, храм или монастырь, которые будут приносить различные блага в виде [Concept('piety', 'благочестия')|E], [Concept('prestige', 'престижа')|E] и [Concept('dynasty_prestige', 'признания')|E], а также соответствующий [Concept('character_modifier', 'модификатор персонажа')|E] и [Concept('county_modifier', 'модификатор графства')|E] для одного из [Concept('counties', 'графств')|E] [Concept('domain', 'домена')|E]"
  decision_sponsor_tayee_holy_building_effect_tooltip_2: "Вы не получите эти бонусы сразу, так как процесс строительства займёт от года до двух лет"
  decision_sponsor_tayee_holy_building_effect_tooltip_3: "Поскольку вы контролируете [GetBuilding('wonder_tarnet_barzain').GetName], вы получите уникальный [Concept('character_modifier', 'модификатор персонажа')|E] [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip], который варьируется в зависимости от количества проспонсированных сооружений."
  decision_sponsor_tayee_holy_building_effect_tooltip_4: "Поскольку вы контролируете [GetBuilding('wonder_tarnet_barzain').GetName], ваш [GetModifier('tayee_worthy_of_augar_prophet').GetNameWithTooltip] [Concept('character_modifier', 'модификатор персонажа')|E] #P улучшится#!"
- decision_sponsor_tayee_holy_building_confirm: "Да славится [ROOT.Char.GetFaith.HighGodNameAlternate]!"
+ tayee_augar_prophet_changed_faith.tt: "У новой [Concept('faith', 'конфессии')|E] нет [Concept('core_tenet', 'догмата')|E] «[GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName]»"
+ decision_sponsor_tayee_holy_building_confirm: "Да славится [ROOT.Char.GetFaith.HighGodName2]!"
  decision_sponsor_tayee_holy_building_county_faith_req: "Ваша [Concept('realm_capital', 'столица')|E] принадлежит к [Concept('faith', 'конфессии')|E] с [Concept('core_tenet', 'догматом')|E] [GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName]"
- decision_sponsor_tayee_holy_building_county_mod_req: "В вашей [Concept('realm_capital', 'столице')|E] нет [Concept('county_modifier', 'модификатора графства')|E], указывающего на то, что там недавно была построена тайитская святыня"
+ decision_sponsor_tayee_holy_building_county_mod_req: "Любое [Concept('county', 'графство')|E] [Concept('domain', 'домена')|E]:\n$EFFECT_LIST_BULLET$Исповедует [Concept('faith', 'конфессию')|E] с [Concept('core_tenet', 'догматом')|E] «[GetFaithDoctrine('tenet_sirayn_syncretism').GetBaseName]»\n$EFFECT_LIST_BULLET$Не имеет [Concept('county_modifier', 'модификатора графства')|E] тайитской святыни"
  decision_sponsor_tayee_holy_building_current_req: "В настоящее время не ведётся строительство тайитской святыни"
 
  lotr_tayee_holy_building_type: "Что нам построить?"
@@ -4071,7 +4105,7 @@
  lotr_is_in_regency: "Находится в состоянии [Concept('regency', 'регентства')|E]"
  balan_lai_united_might_military_strength_min: "Ваша текущая военная мощь составляет не менее #V 5000#! @soldier_icon! [Concept('soldiers', 'солдат')|E]"
  balan_lai_united_might_greater_military_strength: "Ваша текущая военная мощь должна быть выше, чем у всех остальных членов [balan_lai|E]\n#help (В это число #warning не#! входят ваши [Concept('allies', 'союзники')|E], [Concept('tributaries', 'данники')|E] или [Concept('prisoners', 'пленники')|E])#!"
- struggle_thani_hazad_unification_valid_tooltip_interloper: "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('middleearth_thani_hazad_struggle_region').GetName]"
+ struggle_thani_hazad_unification_valid_tooltip_interloper: "Вы контролируете по крайней мере #V 80%#! региона [GetGeographicalRegion('custom_mannish_thani_hazad').GetName]"
  balan_lai_united_might.dread.tt: "Ваш подход снискал вам плохую репутацию..."
  struggle_thani_hazad_unification_confederation_disband.tt: "Вы создадите титул [Concept('empire', 'империи')|E], вассализировав всех других членов [Concept('balan_lai', 'Балан-лай')|E]"
 
@@ -4287,7 +4321,7 @@
  decision_aukuag_empire_desc: "Поскольку народы аукуагов и карсагов теперь контролируют все земли от Ауз-Ульджи до [Concept('bayoftulwang', 'залива Тулванг')|E], остаётся только одно направление для экспансии - на запад. Объединив аукуагов и карсагов и завоевав долину Сиреш, мы сможем объединить нашу древнюю родину Унав!"
  decision_aukuag_empire_confirm: "Аписайцы должны получить своё!"
 
- clan_vassals_will_convert: "Поскольку я принадлежу к основной аканалийской, аписайской или талатримской культуре, мои [Concept('tribal', 'племенные')|E] вассалы примут [Concept('clan', 'клановую')|E] форму правления"
+ clan_vassals_will_convert: "Мои [Concept('tribal', 'племенные')|E] вассалы примут [Concept('clan_government', 'клановую форму правления')|E]"
 
  ##############################
  ##### Religious Decision #####
@@ -4462,8 +4496,17 @@
  decision_khorahil_indoctrinate_harshandatt_tooltip: "Получить [Concept('special_troops', 'особые войска')|E] от Харшандатта."
  decision_khorahil_indoctrinate_harshandatt_desc: "У народов Харшандатта долгая память. Хотя большинство из них поклоняются своим жалким нхазадам, [GetFaithByKey('faith_sened').GetAdjective|l] всё ещё помнит ужас, который я [Select_CString(ROOT.Char.IsFemale, 'навела', 'навёл' )] во [Concept('secondage', 'Вторую эпоху')|E]. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] ещё раз продвинуть этот культ."
  decision_khorahil_indoctrinate_harshandatt_confirm: "Воспряньте, сыны Бури!"
- decision_khorahil_indoctrinate_harshandatt.tt: "Обратить большую часть #ONCLICK:TITLE,e_harshandatt #TOOLTIP:LANDED_TITLE,e_harshandatt #L Харшандатта#!#!#! в [GetFaithByKey('faith_sened').GetAdjective|l]."
+ decision_khorahil_indoctrinate_harshandatt.tt: "Все подконтрольные [Concept('counties', 'графства')|E] в #ONCLICK:TITLE,e_harshandatt #TOOLTIP:LANDED_TITLE,e_harshandatt #L Харшандатте#!#!#! с 50% вероятностью обратятся в [GetFaithByKey('faith_sened').GetAdjective|l]."
  khorahil_zealots_army_name: "Сенедийские фанатики"
+
+ decision_khorahil_garrison_abrakhan: "Гарнизоны Абрахана"
+ decision_khorahil_garrison_abrakhan_tooltip: "Перековать пустов в оружие против Кхая."
+ decision_khorahil_garrison_abrakhan_desc: "В глубинах Абрахана, забытые всем миром, обитают люди, верные Тьме. Это жалкие пустынные крысы, но я превращу их в нечто большее: копьё, которое поразит сердце Кхая."
+ decision_khorahil_garrison_abrakhan_confirm: "Восстаньте, люди тьмы!"
+ decision_khorahil_garrison_abrakhan.tt: "Все подконтрольные [Concept('counties', 'графства')|E] в регионе [GetTitleByKey('k_abrakhan').GetNameNoTier] примут #L [GetCultureByKey('darsalai').GetCollectiveNoun|l]ую#! и #L [GetCultureByKey('lushek_pust').GetCollectiveNoun|l]ую#! культуру."
+ decision_khorahil_garrison_abrakhan.tt2: "Все подконтрольные [Concept('counties', 'графства')|E] в регионе [GetTitleByKey('k_abrakhan').GetNameNoTier] примут #L [GetFaithByKey('faith_kanra').GetName|l]ую#! конфессию."
+ decision_khorahil_garrison_abrakhan_developed.tt: "Не менее 50% столиц [Concept('county', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('middleearth_harad_dunesea_abrakhan').GetName] являются [Concept('castle_holdings', 'замками')|E]."
+ pustic_legion_army_name: "Пустский гарнизон"
 
  decision_khorahil_annex_an_balkumagan: "Аннексировать Ан-Балкумаган"
  decision_khorahil_annex_an_balkumagan_tooltip: "Вассализировать Ан-Балкумаган"
@@ -4479,7 +4522,8 @@
  decision_khorahil_destroy_bellakar_desc: "Давным-давно, во времена [Concept('warlastalliance', 'Войны Последнего союза')|E], [Concept('bellakar', 'Беллакар')|E] пришёл на помощь [Concept('gondor', 'Гондору')|E]. Нельзя допустить, чтобы это повторилось."
  decision_khorahil_destroy_bellakar_confirm: "Война!"
  decision_khorahil_destroy_bellakar_effect.tt: "Начать войну против #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!"
- military_strength_10000: "Ваша текущая военная мощь - не менее #V 10,000#! @soldier_icon! [Concept('soldiers', 'солдат')|E]"
+ military_strength_15000: "Ваша текущая военная мощь - не менее #V 15,000#! @soldier_icon! [Concept('soldiers', 'солдат')|E]"
+ decision_khorahil_vassals_join.tt: "Все [Concept('direct_vassals', 'прямые вассалы')|E] и [Concept('tributaries', 'данники')|E] [Concept('war_leaders', 'лидеров войны')|E] присоединятся к войне."
 
  decision_khorahil_destroy_khy: "Уничтожить Кхай"
  decision_khorahil_destroy_khy_tooltip: "Начать войну за опустошение Кхая"
@@ -4491,10 +4535,12 @@
  decision_khorahil_infiltrate_yellow_mountains_tooltip: "Обратить в свою веру и укрепить орочьи племена в горах."
  decision_khorahil_infiltrate_yellow_mountains_desc: "[Concept('orcish', 'Орочьи')|E] племена [Concept('yellowmountains', 'Желтых гор')|E] разрознены и слабы, они даже не достойны завоевания. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] превратить их в нечто более сильное."
  decision_khorahil_infiltrate_yellow_mountains_confirm: "Разослать посланников."
- decision_khorahil_infiltrate_yellow_mountains.tt: "Открыто [Concept('character_interaction', 'взаимодействие персонажа')|E] «Продвигать культ»."
- decision_khorahil_infiltrate_yellow_mountains.tt2: "Открыто [Concept('character_interaction', 'взаимодействие персонажа')|E] «Направить ресурсы»."
- decision_khorahil_infiltrate_yellow_mountains.tt3: "[Concept('rulers', 'Правители')|E]-орки, обратившиеся в #V [GetFaithByKey('faith_murghuri').GetAdjective|l]#!, будут периодически предоставлять [Concept('piety', 'благочестие')|E] и [Concept('hooks', 'рычаги влияния')|E] ближайшим [Concept('nazgul', 'назгул')|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt: "Открыто [Concept('character_interaction', 'взаимодействие персонажа')|E] «Продвигать культ» на [Concept('orcish', 'орочьих')|E] [Concept('rulers', 'правителей')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt2: "Открыто [Concept('character_interaction', 'взаимодействие персонажа')|E] «Направить ресурсы» на [Concept('orcish', 'орочьих')|E] [Concept('rulers', 'правителей')|E] в [Concept('yellowmountains', 'Жёлтых горах')|E]."
+ decision_khorahil_infiltrate_yellow_mountains.tt3: "[Concept('rulers', 'Правители')|E]-[Concept('orcish', 'орки')|E], обратившиеся в #V [GetFaithByKey('faith_murghuri').GetAdjective|l]#!, будут периодически предоставлять [Concept('piety', 'благочестие')|E] и [Concept('hooks', 'рычаги влияния')|E] ближайшим [Concept('nazgul', 'назгул')|E]."
  decision_khorahil_infiltrate_yellow_mountains.tt4: "Ваша [Concept('realm', 'держава')|E] граничит с державой [GetTitleByKey('e_yellow_mountains').GetNameNoTier]"
+ decision_khorahil_infiltrate_yellow_mountains.tt5: "Можно разблокировать различных [Concept('orcish', 'орочьих')|E] и [Concept('monster', 'чудовищных')|E] [Concept('men_at_arms', 'профессионалов')|E] через [Concept('decision', 'решение')|E] «Стабилизировать Сирайн»"
+
  decision_rebuild_lynerian_league: "Объединить Линерийскую лигу"
  decision_rebuild_lynerian_league_tooltip: "Помочь раздробленным линерийским городам-государствам объединиться"
  decision_rebuild_lynerian_league_desc: "Линерия раздроблена. Города-государства ссорятся между собой из-за торговли, древних обид и обыденных провокаций. Они не могут объединиться сами по себе. Если мы окажем дипломатическую помощь, починим разрушенные мосты, восстановим доверие и установим новые дружеские отношения, то, возможно, сможем способствовать восстановлению былой Линерии, получив при этом могущественного союзника."
@@ -4602,9 +4648,9 @@
  RADYANI_WAR_TARGET_EXISTS: "По крайней мере один [Concept('ruler', 'правитель')|E] в регионе [GetTitleByKey('e_sirayn').GetNameNoTier] является ариэнистом"
  RADYANI_ARIENISTS_RALLY: "Все последователи Ариэн в Сирайне объединятся против вас"
 
- decision_radyani_avatar: "Стать аватаром Йом"
+ decision_radyani_avatar: "Стать воплощением Йом"
  decision_radyani_avatar_desc: "С самого рождения я [Select_CString(ROOT.Char.IsFemale, 'чувствовала', 'чувствовал' )] руководство Той, кто дарует сны, словно нежный голос в моем ухе, который направляет меня на путь праведности и мести тем, кто причинил мне зло. Йом оберегает меня. Йом присматривает за мной. Когда я чувствую, как она двигается, я тоже двигаюсь. В некотором смысле... она стала частью меня, а я - воплощением ее воли. Пришло время сообщить об этом всем."
- decision_radyani_avatar_tooltip: "Провозгласить свой статус аватара Йом"
+ decision_radyani_avatar_tooltip: "Провозгласить свой статус воплощения Йом"
  decision_radyani_avatar_confirm: "Нежный лунный свет, направь мои шаги."
 
  decision_secure_sirayn: "Обезопасить Сирайн"
@@ -4623,15 +4669,32 @@
  fervor_greater_than_70: "У вашей [Concept('faith', 'конфессии')|E] 70 или больше [Concept('fervor', 'рвения')|E]"
 
  decision_avatar_of_x_deity: "Стать воплощением [ROOT.Char.GetFaith.HighGodNamePossessive]"
- decision_avatar_of_x_deity_desc: "У [ROOT.Char.GetFaith.HighGodNamePossessive] нет более [Select_CString(ROOT.Char.IsFemale, 'ревностной и преданной последовательницы', 'ревностного и преданного последователя' )], чем я. Я стану видимым воплощением [ROOT.Char.GetFaith.HighGodNamePossessive]!"
+ decision_avatar_of_x_deity_desc: "У [ROOT.Char.GetFaith.HighGodNamePossessive] нет более [Select_CString(ROOT.Char.IsFemale, 'ревностной и преданной последовательницы', 'ревностного и преданного последователя' )], чем я. В великом обряде вознесения перед свидетелями я облачусь в мантию силы [ROOT.Char.GetFaith.HighGodNamePossessive]!"
  decision_avatar_of_x_deity_tooltip: "Полностью посвятить себя славе [ROOT.Char.GetFaith.HighGodNamePossessive]."
  decision_avatar_of_x_deity_confirm: "Да будет так."
  unlocks_tayee_mandala_decision: "Открывает [Concept('decision', 'решение')|E] «[GetDecision('decision_reign_of_the_avatar').GetName]»"
+ lotr_is_temporal_hof: "Вы являетесь [Concept('temporal_head_of_faith', 'светским главой конфессии')|E]"
+ lotr_strong_hook_on_spiritual_hof: "У вас есть [Concept('strong_hook', 'сильное влияние')|E] на вашего [Concept('spiritual_head_of_faith', 'духовного лидера')|E]"
+ lotr_spiritual_hof_high_opinion: "Ваш [Concept('spiritual_head_of_faith', 'духовный лидер')|E] имеет о вас не менее #V 80#! [Concept('opinion', 'мнения')|E]"
+ lotr_no_spiritual_hof: "У вас нет [Concept('spiritual_head_of_faith', 'духовного лидера')|E]"
+ lotr_more_virtue_than_sin_traits: "Ваши @virtue_icon! [Concept('virtues', 'добродетели')|E] перевешивают ваши @sin_icon! [Concept('sins', 'грехи')|E]\n"
+ tayee_special_requirement_to_mantle_deity_tt: "#T Особое требование к мантии [CHARACTER.GetFaith.HighGodNamePossessive]:#!\n"
+ tayee_sponsored_three_sites_tt: "Вы проспонсировали не менее #V [GetPlayer.MakeScope.ScriptValue('sponsored_tayee_sites_count_avatar_max')]#! святынь через [Concept('decision', 'решение')|E] «[GetDecision('decision_sponsor_tayee_holy_building').GetName]» #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('sponsored_tayee_sites_count_avatar')]/[GetPlayer.MakeScope.ScriptValue('sponsored_tayee_sites_count_avatar_max')])#!"
+ tayee_have_many_friends_tt: "У вас есть не менее #V [EmptyScope.ScriptValue('tayee_friends_count_max')]#! [Concept('friends', 'друзей')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_friends_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_friends_count_max')])#!"
+ tayee_have_many_lovers_tt: "У вас есть не менее #V [EmptyScope.ScriptValue('tayee_lovers_count_max')]#! [Concept('lovers', 'любовников')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_lovers_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_lovers_count_max')])#!"
+ tayee_have_many_murders_tt: "Вы совершили не менее #V [GetPlayer.MakeScope.ScriptValue('tayee_successful_murders_count_max')]#! успешных [Concept('schemes', 'происков')|E] «[GetScheme('murder').GetTypeName]» #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_successful_murders_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_successful_murders_count_max')])#!"
+ tayee_high_capital_opinion_tt: "[Concept('county_opinion', 'Мнение')|E] в вашем [Concept('capital', 'столичном')|E] [Concept('county', 'графстве')|E] - #P 50#! или выше"
+ tayee_have_many_followers_tt: "У вас есть #V [GetPlayer.MakeScope.ScriptValue('tayee_followers_count_max')]#! или более [Concept('followers', 'последователей')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_followers_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_followers_count_max')])#!"
+ tayee_has_good_health_tt: "Показатель вашего [Concept('health', 'здоровья')|E] - $HEALTH_GOOD$ или лучше"
+ tayee_mothered_many_kids_tt: "Вы породили #V [GetPlayer.MakeScope.ScriptValue('tayee_mothered_children_count_max')]#! или более [Concept('children', 'детей')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_mothered_children_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_mothered_children_count_max')])#!"
+ tayee_sired_many_kids_tt: "Вы зачали #V [GetPlayer.MakeScope.ScriptValue('tayee_sired_children_count_max')]#! или более [Concept('children', 'детей')|E] #weak (Текущее значение [GetPlayer.MakeScope.ScriptValue('tayee_sired_children_count')]/[GetPlayer.MakeScope.ScriptValue('tayee_sired_children_count_max')])#!"
+ tayee_already_an_avatar_of_faith_tt: "У вашей [Concept('faith', 'конфессии')|E] уже есть [GetTrait('avatar').GetName(GetNullCharacter)|l]"
 
  decision_reign_of_the_avatar: "Утвердить божественную власть"
- decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] и [ROOT.Char.GetFaith.HighGodHerHis|U] аватара, что ходит по этой земле. Все должны поклоняться и чтить воплощение [ROOT.Char.GetFaith.HighGodNamePossessive]!"
- decision_reign_of_the_avatar_tooltip: "Реформировать [Concept('realm', 'державу')|E] в соответствии с традициями мандалы"
+ decision_reign_of_the_avatar_desc: "Настало время утвердить на уровне державы почитание [ROOT.Char.GetFaith.HighGodNamePossessive] и [ROOT.Char.GetFaith.HighGodHerHis] воплощения, что ходит по этой земле. Все должны поклоняться и чтить воплощение [ROOT.Char.GetFaith.HighGodNamePossessive]!"
+ decision_reign_of_the_avatar_tooltip: "Реформировать [Concept('realm', 'державу')|E] в соответствии с традициями [mandala_i|E] [Concept('mandala_government', 'мандалы')|E]"
  decision_reign_of_the_avatar_confirm: "[ROOT.Char.GetFaith.HighGodName] будет править."
+ lotr_must_have_mandala_culture_trigger: "Ваша [Concept('culture', 'культура')|E] совместима с [mandala_i|E] [Concept('mandala_government', 'мандалой')|E] благодаря одному из следующих условий:\n$BULLET_WITH_TAB$ #V $heritage_new_sirayni_name$ое#! [Concept('heritage', 'наследие')|E]\n$BULLET_WITH_TAB$[Concept('heritage', 'Наследие')|E] входит #V $muranian$ую#! [Concept('heritage_group', 'группу наследия')|E]\n$BULLET_WITH_TAB$[Concept('heritage', 'Наследие')|E] входит в #V аканалийскую#! [Concept('heritage_group', 'группу наследия')|E]"
 
  decision_visit_ormalian_port: "Посетить порт в заливе"
  decision_visit_ormalian_port_desc: "Если я хочу найти карту сокровищ, которую ищу, я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] обыскать Ормальский залив вдоль и поперек. Основные порты здесь станут хорошей отправной точкой для моих поисков. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] посетить каждый из них и посмотреть, не смогу ли я напасть на след сокровищ нхазада Аразера!"

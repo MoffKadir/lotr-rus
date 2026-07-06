@@ -3,9 +3,21 @@
  ### Bountig Medlokan Story Cycle ###
  ####################################
  # Intro to his story - fight in the West against Rohan
+ bountig_medlokan_intro_to_story: "Ваше [Concept('domicile', 'имение')|E] будет перемещено в столицу персонажа [contract_employer.GetName].n\n[contract_employer.GetName] начнёт войну с персонажем [GetTitleByKey('k_rohan').GetHolder.GetName] в союзе с #V вами#!"
  story_cycle_bountig_medlokan: "Скитания Бунтига"
  story_cycle_bountig_medlokan_desc: "Судьба оторвала #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('bountigmedlokan').GetID] #L Бунтига#!#! от его дома и семьи, и теперь он скитается по обширным землям [Concept('middleearth', 'Средиземья')|E]. Его путешествия коснутся многих стран на западе и юге, прежде чем настанет время снова вернуться на родину. Ищите особые сюжетные контракты, которые позволят ему набраться опыта и мудрости во время путешествия.\n\n$bountig_event_chain.0012.a.tt.2$"
- bountig_medlokan_intro_to_story: "Ваше [Concept('domicile', 'имение')|E] будет перемещено в столицу персонажа [contract_employer.GetName].n\n[contract_employer.GetName] начнёт войну с персонажем [GetTitleByKey('k_rohan').GetHolder.GetName] в союзе с #V вами#!"
+
+ #######################################
+ ### Azrathâni Expedition Story Cyle ###
+ #######################################
+ story_cycle_azrathani_expedition: "Экспедиция Азратани"
+ story_cycle_azrathani_expedition_desc: "Рассказ моряка о богатом месторождении изумрудов на экзотическом юге - вот и всё, что было нужно, чтобы воспламенить [Concept('sevenlands', 'Семь земель')|E].\n\nПредприимчивым потенциальным завоевателям теперь придётся иметь дело с большими долгами и враждебным местным населением, если они хотят довести это месторождение до конца и, возможно, затем реализовать свои амбиции и стать княжеской семьей [Concept('balan_lai', 'Балан-лай')|E]."
+ debt_breakdown: "#V Распределение долга:#!\n$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_karasalas').GetValue|0]#! персонажу [GetTitleByKey('d_karasalas').GetHolder.GetFullName] с процентной ставкой в #X [GetTitleByKey('d_karasalas').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_alsarias').GetValue|0]#! персонажу [GetTitleByKey('d_alsarias').GetHolder.GetFullName] с процентной ставкой в #X [GetTitleByKey('d_alsarias').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimileth').GetValue|0]#! персонажу [GetTitleByKey('d_gimileth').GetHolder.GetFullName] с процентной ставкой в #X [GetTitleByKey('d_gimileth').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimilthani').GetValue|0]#! персонажу [GetTitleByKey('k_gimilthani').GetHolder.GetFullName] с процентной ставкой в #X [GetTitleByKey('k_gimilthani').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_pel').GetValue|0]#! персонажу [GetTitleByKey('k_pel').GetHolder.GetFullName] с процентной ставкой в #X [GetTitleByKey('k_pel').MakeScope.Var('loan_interest').GetValue|%0]/год#!.\n$BULLET$Вы должны #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_inzilloni').GetValue|0]#! купцам [GetTitleByKey('d_inzilloni').GetNameNoTier] с процентной ставкой в #X [GetTitleByKey('d_inzilloni').MakeScope.Var('loan_interest').GetValue|%0]/год#!."
+ ziranihin_brothers: "Братья Зиранихин"
+ ziranihin_followers: "Княжеские отпрыски"
+ label_native_acceptance: "#V Коренное принятие#!"
+ relaxed_natives: "#difficulty_easy Принятие#!"
+ angry_natives: "#difficulty_hard Сопротивление#!"
 
  #################################
  ### Eradan - War in the North ###
@@ -45,3 +57,12 @@
  ################
  story_cycle_goblin_mask: "Маска"
  story_cycle_goblin_mask_desc: "Вы нашли любопытную маску. На ней нет украшений, за исключением нескольких звериных рогов, и она, кажется, идеально подходит к вашему лицу. От неё исходит странное притяжение, словно она #italic хочет#!, чтобы её надели. Вам трудно противостоять этому притяжению. Маска иногда приносит пользу, но иногда она может сбить вас с пути истинного. Остерегайтесь последствий владения маской... потому что в какой-то момент она может начать владеть #italic вами...#!"
+
+ ##############################
+ ### Avatar of Sîrayn Deity ###
+ ##############################
+ story_cycle_avatar_of_faith: "Воплощение [GetPlayer.GetFaith.HighGodNamePossessive]"
+ story_cycle_avatar_of_faith_desc: "Вы вознеслись, чтобы воплотить в себе [GetPlayer.GetFaith.HighGodNameAlternatePossessive]. Как на воплощение [GetPlayer.GetFaith.HighGodHerHis] воли, все #L [GetPlayer.GetFaith.GetName|l]#! верующие смотрят на вас с почтением. Если вы хорошо разыграете свои карты, то сможете даже создать систему правления, в которой это божественное происхождение будет передаваться и вашим потомкам."
+ story_cycle_avatar_of_faith_info_tooltips: "$story_cycle_avatar_of_faith_warn_tt$\n$story_cycle_avatar_of_faith_warn_tt2$"
+ story_cycle_avatar_of_faith_warn_tt: "#warning @warning_icon! Отказ от вашей [Concept('faith', 'конфессии')|E] лишит вас божественности и повлечёт за собой последствия#!"
+ story_cycle_avatar_of_faith_warn_tt2: "#help Создание новой [Concept('faith', 'конфессии')|E] не повлечёт за собой такого наказания#!"
