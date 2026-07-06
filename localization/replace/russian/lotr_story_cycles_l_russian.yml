@@ -3,9 +3,21 @@
  ### Bountig Medlokan Story Cycle ###
  ####################################
  # Intro to his story - fight in the West against Rohan
+ bountig_medlokan_intro_to_story: "Ваше [Concept('domicile', 'имение')|E] будет перемещено в столицу персонажа [contract_employer.GetName].n\n[contract_employer.GetName] начнёт войну с персонажем [GetTitleByKey('k_rohan').GetHolder.GetName] в союзе с #V вами#!"
  story_cycle_bountig_medlokan: "Скитания Бунтига"
  story_cycle_bountig_medlokan_desc: "Судьба оторвала #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('bountigmedlokan').GetID] #L Бунтига#!#! от его дома и семьи, и теперь он скитается по обширным землям [Concept('middleearth', 'Средиземья')|E]. Его путешествия коснутся многих стран на западе и юге, прежде чем настанет время снова вернуться на родину. Ищите особые сюжетные контракты, которые позволят ему набраться опыта и мудрости во время путешествия.\n\n$bountig_event_chain.0012.a.tt.2$"
- bountig_medlokan_intro_to_story: "Ваше [Concept('domicile', 'имение')|E] будет перемещено в столицу персонажа [contract_employer.GetName].n\n[contract_employer.GetName] начнёт войну с персонажем [GetTitleByKey('k_rohan').GetHolder.GetName] в союзе с #V вами#!"
+
+ #######################################
+ ### Azrathâni Expedition Story Cyle ###
+ #######################################
+ story_cycle_azrathani_expedition: "The Azrathâni Expedition"
+ story_cycle_azrathani_expedition_desc: "A sailor's tale about a rich emerald deposit in the exotic south was all that was needed to set the [sevenlands|E] aflame.\n\nThe enterprising would-be conquerors must now deal with heavy debt and a hostile native population if they are to bring this mine to fruition, and perhaps then realize their ambition of becoming a princely family of the [balan_lai|E]."
+ debt_breakdown: "#V Debt Breakdown:#!\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_karasalas').GetValue|0]#! to [GetTitleByKey('d_karasalas').GetHolder.GetFullName] at #X [GetTitleByKey('d_karasalas').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_alsarias').GetValue|0]#! to [GetTitleByKey('d_alsarias').GetHolder.GetFullName] at #X [GetTitleByKey('d_alsarias').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimileth').GetValue|0]#! to [GetTitleByKey('d_gimileth').GetHolder.GetFullName] at #X [GetTitleByKey('d_gimileth').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_gimilthani').GetValue|0]#! to [GetTitleByKey('k_gimilthani').GetHolder.GetFullName] at #X [GetTitleByKey('k_gimilthani').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_pel').GetValue|0]#! to [GetTitleByKey('k_pel').GetHolder.GetFullName] at #X [GetTitleByKey('k_pel').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest.\n$BULLET$You owe #V @gold_icon![GetTitleByKey('c_gidwama').MakeScope.Var('debt_inzilloni').GetValue|0]#! to the merchants of [GetTitleByKey('d_inzilloni').GetNameNoTier] at #X [GetTitleByKey('d_inzilloni').MakeScope.Var('loan_interest').GetValue|%0]/year#! interest."
+ ziranihin_brothers: "The Zîrânîhîn Brothers"
+ ziranihin_followers: "The Princely Scions"
+ label_native_acceptance: "#V Native Acceptance#!"
+ relaxed_natives: "#difficulty_easy Acceptance#!"
+ angry_natives: "#difficulty_hard Resistance#!"
 
  #################################
  ### Eradan - War in the North ###
