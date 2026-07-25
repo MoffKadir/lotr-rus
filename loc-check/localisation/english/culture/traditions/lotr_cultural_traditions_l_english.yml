@@ -106,6 +106,7 @@
  rhovanion_heavy_cavalry_flavor: "The Aivathuida clan have ever been the foremost horsemen among the [northmen|E] of [rhovanion|E], and their steeds are said to be fast as wind, moving as one with their rider."
  rhovanion_royal_guard: "Royal Guard of Rhovanion"
  rhovanion_royal_guard_flavor: "The leal shields of the Kings of [rhovanion|E], the Royal Guard bears armor and weapons wrought by [dwarven|E]-smiths, the most elite foot-soldiers in the kingdom."
+ culture_parameter_stables_enabled_for_tribals: "The #V $building_type_stables_01$#! line of [buildings|E] can be constructed in [tribe|E] [holdings|E]"
 
  tradition_the_people_of_the_plains_old_name: "People of the Plains"
  tradition_the_people_of_the_plains_old_desc: "One with the wild and windswept plains of [rhovanion|E], this culture numbers as many as its blades of grass, proud and free. Born to ride, their people are one with their noble steads, ranging far and wide across the open plains."
@@ -153,7 +154,7 @@
  culture_parameter_unlock_trans_haradric_merchant_better_chances: "$lotr_haradrim_legacy_1_effect_1$"
  
  tradition_masters_of_the_nuar_name: "Masters of the Núar"
- tradition_masters_of_the_nuar_desc: "This culture's civilization has always been closely tied to the Núar River and its tributaries, which they navigate and fish on. As a result, they possess a natural understanding of it's behavior and 'moods'. This connection is so deep that mariners commonly address the Núar directly, as one would a close friend, sharing their mundane life and recent events with it."
+ tradition_masters_of_the_nuar_desc: "This culture's civilization has always been closely tied to the Núar River and its tributaries, which they navigate and fish on. As a result, they possess a natural understanding of its behavior and 'moods'. This connection is so deep that mariners commonly address the Núar directly, as one would a close friend, sharing their mundane life and recent events with it."
  culture_in_harshandatt_trigger_desc: "At least #V 40%#! of the [counties|E] of this [culture|E] must be in [GetGeographicalRegion('special_region_nuar_river_valley').GetName]"
 
  tradition_mud_masons_name: "Mud Masonry"
@@ -163,6 +164,9 @@
  culture_in_central_fiefs_desc: "At least #V 40%#! of the [counties|E] of this [culture|E] must be in the [GetGeographicalRegion('middleearth_west_gondor_centralfiefdoms').GetName] [region|E]"
  tradition_belfalathrim_chivalry_name: "Belfalathrim Chivalry"
  tradition_belfalathrim_chivalry_desc: "Since days long past, the [men|E] of Belfalas have stood unique in their tradition and courtesy among the [dunedain|E] of the South. Honor, nobility, duty - and great skill upon horseback."
+
+ culture_in_jungle_more_desc: "The [culture|E] is not present in any [county|E] with Jungle, Deep Forest, or Mallorn Forest [terrain|E]"
+ jungle_percentage_more_desc: "The [culture|E] does not have #V 30%#! of its [counties|E] in Jungle, Deep Forest, or Mallorn Forest [terrain|E]"
  
  ### Dunedain Traditions ###
  culture_in_gondor_desc: "At least #V 40%#! of the [counties|E] of this [culture|E] must be in the [GetGeographicalRegion('middleearth_west_gondor').GetName] [region|E]"
@@ -230,7 +234,7 @@
  culture_parameter_unlock_maa_easterling_pikemen: "Can recruit [GetMaA('easterling_pikemen').GetName] as [men_at_arms|E]"
  
  tradition_gorgoroth_plain_dwellers_name: "Gorgoroth Plain Dwellers"
- tradition_gorgoroth_plain_dwellers_desc: "This dry, volcanic & desolate plateau forms the northwestern third of [mordor|E] and is bordered by the ranges of the Ered Lithui and the Ephel Dúath. The landscape of Gorgoroth might as well be a different world altogether from it's neighboring lands, like Ithilien. Its landscape is hospitable only to the [orcs|E] dwelling in it's plains."
+ tradition_gorgoroth_plain_dwellers_desc: "This dry, volcanic & desolate plateau forms the northwestern third of [mordor|E] and is bordered by the ranges of the Ered Lithui and the Ephel Dúath. The landscape of Gorgoroth might as well be a different world altogether from its neighboring lands, like Ithilien. Its landscape is hospitable only to the [orcs|E] dwelling in its plains."
   
  tradition_mende_anduya_name: "Mendë Andúna"
  tradition_mende_anduya_desc: ""What is a [dunedain|E]? What makes a [numenorean|E]?"\n\nThis question has often consumed the [realms_in_exile|E]. Is it something cultural? Is it passed by blood? This answer has changed with time and place, but the fact remains that the urge to preserve intact the ancient ways of [numenor|E] runs deep in this culture. They do not often marry outside their own culture, instead preferring to reinforce and entrench their ancient heritage."
@@ -412,11 +416,18 @@
  tradition_hathorim_councils_desc: "This culture derives the legitimacy of its rulers from a council of tribal elders, assembled to make all major decisions - including the replcement of its leaders."
 
  tradition_safe_havens_name: "Safe Havens"
- tradition_safe_havens_desc: "This cultural has has adapted to the constant threat of pirates and raiders, and has developed spohisticated harbour defenses to ensure all passing merchants can find shelter from weather and warrior."
+ tradition_safe_havens_desc: "This culture has adapted to the constant threat of pirates and raiders, and has developed sophisticated harbour defenses to ensure all passing merchants can find shelter from weather and warrior."
  culture_parameter_lotr_lower_raid_capture_chance: "[raids|E] and [sieges|E] against [counties|E] of this [culture|E] are far less likely to take [prisoners|E]"
  culture_parameter_city_fort_level_bonus: "Coastal [city_holdings|E] in [counties|E] of this [culture|E] gain additional [fort_level|E]."
  culture_parameter_fortifications_in_cities: "#high Fortification Buildings#! can be constructed in [city_holdings|E] in [counties|E] of this [culture|E]"
  culture_parameter_can_build_protected_harbours: "Unlocks a [decision|E] to build [GetBuilding('wonder_protected_harbour').GetName]s"
+
+ tradition_river_rats_name: "River Rats"
+ tradition_river_rats_desc: "This culture has built itself around the many rivers running through its lands, for trade, for agrictulture, and for defense. Those around them mockingly say they live more like rats upon the water than men upon land."
+ culture_on_river_desc: "At least #V 30%#! of the [counties|E] of this [culture|E] are on a river"
+ riverside_percentage_desc: "Less than #V 50%#! of the [counties|E] of this culture are on a river"
+ culture_parameter_culture_can_raid_at_sea: "Can [raid|E] over water"
+ culture_parameter_riverside_agriculture_building_bonuses: "Agricultural buildings gain bonuses in province along rivers"
 
  # Vanilla Loc Overrides
  tradition_female_only_inheritance_requirements_lotr: "You must have a [GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName] [faith|E]"

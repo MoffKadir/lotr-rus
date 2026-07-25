@@ -7,7 +7,7 @@
  decision_try_for_elven_child_tooltip: "Talk to your spouse about having a child"
  decision_try_for_elven_child_desc: "[ROOT.Char.GetPrimarySpouse.GetFirstNameNoTooltip] and I know that the act of procreation and nurturing of an unborn child is an extremely special moment for any [elf|E]. I'm sure that such a time of union and love will give us great delight and joy, though maintaining a strong spiritual connection of our Fëa will require our utmost focus and attention."
  decision_try_for_elven_child_confirm: "Approach [ROOT.Char.GetPrimarySpouse.GetFirstNameNoTooltip]"
- decision_try_for_elven_child_effect: "You and [ROOT.Char.GetPrimarySpouse.GetFirstNameNoTooltip] will attempt to conceive a child, which will take much of your focus."
+ decision_try_for_elven_child_effect: "You and [THIS.Char.GetPrimarySpouse.GetFirstNameNoTooltip] will attempt to conceive a child, which will take much of your focus."
 
  decision_sail_to_valinor: "Sail to Valinor"
  decision_sail_to_valinor_tooltip: "Leave [middleearth|E] to join your kin in [valinor|E]"
@@ -1506,6 +1506,32 @@
  decision_eira_assassination_confirm: "Soft and quick as shadows I must be."
  decision_eira_assassination_tooltip: "Assassinate [GetTitleByKey('c_harabad').GetHolder.GetTitledFirstName]"
  decision_eira_assassination_tt: "You travel to Tharbad to attempt Glormagil's assassination"
+ 
+ decision_eira_call_moot: "Call a Great Moot"
+ decision_eira_call_moot_desc: "The [men|E] of Enedhwaith follow strength and valor. If I am to unite them and fulfill my father's lifelong dream, I must demonstrate my conviction and my might for all to see. By toppling the spider of Tharbad and freeing the land from [gondor|E]'s yoke, I will gain enough respect to call upon a great moot, and unite the clans under my banner in earnest."
+ decision_eira_call_moot_tooltip: "Unite the Dunmen Chieftains"
+ decision_eira_call_moot_confirm: "Send forth my invitations."
+ enedhwaith_rulers_may_join_you: "Every [GetCultureByKey('dunmen').GetName] or [GetCultureByKey('enedhwaithrim').GetName] in [enedhwaith|E] ruler has a #high 60%#! chance to become your [vassal|E]"
+ 
+ decision_maratar_defeat_rlain: "Topple the Brazen Brigand"
+ decision_maratar_defeat_rlain_desc: "The time has come to complete the task I set for myself when I left [gondor|E] to carry out this punitive expedition. The culprit of that terrible raid on Andrast's shores who styles himself "the Brazen Brigand" must be slain or captured. Only then will my mission in these lands be deemed complete."
+ decision_maratar_defeat_rlain_tooltip: "Deal justice to the Brazen Brigand"
+ decision_maratar_defeat_rlain_confirm: "Bring me my sword."
+ decision_maratar_defeat_rlain_tt: "If he lives, you will choose the fate of the Brazen Brigand"
+ 
+ decision_maratar_eira_alliance: "Forge an Unlikely Alliance"
+ decision_maratar_eira_alliance_desc: "My son has spoken in favor of this Éira of Magh Meala, a young chieftess that is uniting the eastern tribes in [enedhwaith|E]. If she can be trusted, she and her warriors would make for formidable allies in our fight against the Brazen Brigand - they know the land, and they know how their brethren fight!"
+ decision_maratar_eira_alliance_tooltip: "Form an Alliance with the Dunmen"
+ decision_maratar_eira_alliance_confirm: "I will ride to meet with her."
+ alliance_with_eira_formed: "You form a mutual [alliance|E] with Eíra of Magh Meala"
+ lotr_capture_rlain_name: "Capture the Brazen Brigand"
+ capture_rlain_cb: "Capture the Brazen Brigand"
+ 
+ decision_maratar_eira_justice: "Honour your Word"
+ decision_maratar_eira_justice_desc: "I gave young Éira, that dunmen chieftess my word that I would speak with the [king|E] of [gondor|E] on her behalf. I am not an oathbreaker, and I will honour my word. To Osgiliath!"
+ decision_maratar_eira_justice_tooltip: "Travel to Osgiliath to speak with the King"
+ decision_maratar_eira_justice_confirm: "Bring me my steed."
+ maratar_travel_to_osgiliath: "You will [travel|E] to [GetTitleByKey('c_osgiliath').GetNameNoTier] to speak with [GetTitleByKey('e_gondor').GetHolder.GetTitledFirstName]"
 
  decision_rlain_confederation: "Unite the Chieftains"
  decision_rlain_confederation_desc: "The chieftains of [enedhwaith|E] have long sat idle, quietly enduring the yoke of [gondor|E] like a bunch of spineless dogs. I say, this ends today! I will unite the chieftains under a single banner, and together we will rise up against our oppressors and reclaim our freedom... and gain untold riches in the process!"
@@ -1526,11 +1552,35 @@
  decision_rlain_convert_faith_confirm: "Let the Wolf-god guide us."
  decision_rlain_convert_faith_tooltip: "Convert to the worship of [GetFaithByKey('faith_angmar_azira').GetName]"
  is_terrified_of_you_tt: "Is [terrified_i|E] [cowed|E] by #high you#!"
+ 
+ decision_rlain_claim_coasts: "Claim the Coasts"
+ decision_rlain_claim_coasts_desc: "For too long have the [men|E] of [gondor|E] sat on the havens of [GetTitleByKey('c_lond_daer').GetNameNoTier] and [GetTitleByKey('c_angrast').GetNameNoTier], thwarting any attempt of [daen|E] shipbuilding. I have proven their weakness when I raided the unprotected shores of [GetTitleByKey('k_andrast').GetNameNoTier], and I say we throw these Gondorians back into the sea where they belong!\n\nOnce the ports have been plundered and seize, and that troublesome swan-knight dealt with, they shall find it rather difficult to maintain their supply lines..."
+ decision_rlain_claim_coasts_tooltip: "Seize the havens of [enedhwaith|E]"
+ decision_rlain_claim_coasts_confirm: "To victory!"
+ unlocks_claim_andrast_decision: "Unlocks the  [GetDecision('decision_rlain_claim_andrast').GetName] [decision|E]"
+ 
+ decision_rlain_claim_andrast: "Exploit Gondor's Weakness"
+ decision_rlain_claim_andrast_desc: "I have thrown back those foolish [gondorian|E]s into the sea they claim to love so much. And in doing so, I exposed their weakness for all the world to see. They are powerless to stop me! I shall lay claim to the coasts I raided once, for who shall stop me from taking what is mine by right of conquest?"
+ decision_rlain_claim_andrast_tooltip: "Gain a [claim|E] on the coasts of [GetTitleByKey('k_andrast').GetNameNoTier]"
+ decision_rlain_claim_andrast_confirm: "None can resist me."
 
  decision_purchase_tharbad: "Purchase Tharbad"
  decision_purchase_tharbad_desc: "[GetTitleByKey('c_tharbad').GetNameNoTier] has long been administered jointly by both [gondor|E] and [arnor|E], and it remains one of the richest cities in the north. Its port is full of traders, and its position on the Royal Road to [GetTitleByKey('c_minas_tirith').GetNameNoTier] ensures that steady traffic passes through it.\n\nI hold merely the southern, less prosperous half in [GetTitleByKey('c_harabad').GetNameNoTier], but [cardolan|E] is weak. Their realm is struggling. Surely they would appreciate my aid, both financial and militarily? For a small price such as the full control of Tharbad, and with the right words in the ears of [GetTitleByKey('k_cardolan').GetHolder.GetTopLiege.GetTitledFirstName] I'm sure we can find a most beneficial solution for all involved..."
  decision_purchase_tharbad_tooltip: "Buy ownership of [GetTitleByKey('c_tharbad').GetNameNoTier]"
  decision_purchase_tharbad_confirm: "A most profitable deal!"
+ 
+ decision_glormagil_call_moot: "Call a Great Moot"
+ decision_glormagil_call_moot_desc: "The [men|E] of Enedhwaith are a backwater, tribal society. They pay lip-service to the Winged Crown of [gondor|E], but most of the time, they keep to themselves. The tribes will squabble like children and often attempt to settle their childish disputes in something they call a Great Moot - a congregation of local chieftains and leaders that discuss matters of state - or so they claim.\n\nWhile their petty arguments are far beneath a man of my standing, there is merit in the Great Moots. If I were to call upon those chieftains more closely bound to Gondor, I might gain their respect - and in return, their warriors will be at my beck and call to unleash against the rebellious ringleaders in these lands..."
+ decision_glormagil_call_moot_tooltip: "Gather the Dunmen Chieftains"
+ decision_glormagil_call_moot_confirm: "Send forth my invitations."
+ decision_glormagil_call_moot_tt: "You invite your [tribal|E] [vassals|E] to gain their respect and their loyalty"
+ 
+ decision_glormagil_discredit_eira: "Discredit the Rebel Leader"
+ decision_glormagil_discredit_eira_desc: "The daughter of that troublesome chieftain I had assassinated has survived, and her influence is growing beyond what I expected of her. It is time for her to be brought back down to where she belongs, and I have just the right tool for a task such as this..."
+ decision_glormagil_discredit_eira_tooltip: "Greatly reduce the influence of Éira of the Dunlandfells"
+ decision_glormagil_discredit_eira_confirm: "Send word to her vassals."
+ decision_glormagil_discredit_eira_tt: "#N If you succeed:#!"
+ 
 
  #######################
  ### Shire Decisions ###
@@ -1745,7 +1795,7 @@
 
  decision_crush_isles_corsairs: "Crush the Lonely Isles Corsairs"
  decision_crush_isles_corsairs_tooltip: "Destroy the pirate havens on your western coast, centered around the Lonely Isles."
- decision_crush_isles_corsairs_desc: "Though the threat of corsairs is but a distant annoyance to the people of [GetTitleByKey('c_nilulonde').GetNameNoTier], to those that inhabit the western coast it is far too often an existential threat. Protecting the West, far from the center of battles on the [bayoftulwang|e], is costly and needlessly splits our already limited naval forces but we have no other choice than to protect our people. \n\nYet, the corsair havens have only survived due to them being more trouble to conquer than any reasonable lord would consider justified. As war to our south seems more and more innevitable, however, the time may be right for us to finally bring the strong arms of law and justice to the isles."
+ decision_crush_isles_corsairs_desc: "Though the threat of corsairs is but a distant annoyance to the people of [GetTitleByKey('c_nilulonde').GetNameNoTier], to those that inhabit the western coast it is far too often an existential threat. Protecting the West, far from the center of battles on the [bayoftulwang|e], is costly and needlessly splits our already limited naval forces but we have no other choice than to safeguard our people. \n\nYet, the corsair havens have only survived due to them being more trouble to conquer than any reasonable lord would consider justified. As war to our south seems more and more innevitable, however, the time may be right for us to finally bring the strong arms of law and justice to the isles."
  decision_crush_isles_corsairs_confirm: "Their havens shall be destroyed to the last."
  bellakar_crush_isles_corsairs_effects_tt: "You will decide how to handle the disloyal corsairs and locals of the newly conquered pirate isles."
 
@@ -1785,22 +1835,22 @@
 
  decision_bellakar_mardruak_corsairs: "Crush the Corsairs of Mardruak"
  decision_bellakar_mardruak_corsairs_tooltip: "Launch a conquest of [GetTitleByKey('k_mardruak').GetNameNoTier] to rid it of its corsairs."
- decision_bellakar_mardruak_corsairs_desc: "The foul corsair-lords of [GetTitleByKey('k_mardruak').GetNameNoTier] have long pestered the coast of [bellakar|e]: their raiders causing great damage to northern cities and sea routes alike. As long as they remain, they are sure to be a thorn on my side during my campaign north. \n\nWith these treacherous men, I know there will be no negotiation, or at least none that go beyond simple words on paper. When I will be ready, it will be war and ruin. The corsairs know no other way, after all."
+ decision_bellakar_mardruak_corsairs_desc: "The foul corsair-lords of [GetTitleByKey('k_mardruak').GetNameNoTier] have long pestered the coast of [bellakar|e]: their raiders causing great damage to northern cities and sea routes alike. As long as they remain, they are sure to be a thorn in my side during my campaign north. \n\nWith these treacherous men, I know there will be no negotiation, or at least none that go beyond simple words on paper. When I will be ready, it will be war and ruin. The corsairs know no other way, after all."
  decision_bellakar_mardruak_corsairs_confirm: "At last, I take the fight to them!"
  bellakar_mardruak_corsairs_effects_tt: "You will declare #V war#! one all independent rulers in #V [GetTitleByKey('k_mardruak').GetNameNoTier]#! that follow the #V [GetFaithByKey('faith_corsair').GetName].#!"
  mardruak_corsairs_must_exist: "Any ruler in #V [GetTitleByKey('k_mardruak').GetNameNoTier]#! follows the #V [GetFaithByKey('faith_corsair').GetName]#!"
 
  decision_bellakar_umbar_invasion: "Destroy Umbar"
  decision_bellakar_umbar_invasion_tooltip: "Begin an invasion of [GetTitleByKey('k_umbar').GetNameNoTier] to finally reach [gondor|e]."
- decision_bellakar_umbar_invasion_desc: "[GetTitleByKey('k_umbar').GetNameNoTier], long a scourge of all on the shores of [belegaer_sea|e], is the greatest obstacle standing in the way of renewing contact with [gondor|e]. As long as it stands, any attempt to restore our ancient ties with the North is doomed to failure. \n\nOnce the long land route from [GetTitleByKey('k_mardruak').GetNameNoTier] will have been secured, I will begin my invasion of the black kingdom of [GetTitleByKey('k_umbar').GetNameNoTier]. Soon, I hope, to world will be rid of the eternal corsair threat and the way north will be open."
+ decision_bellakar_umbar_invasion_desc: "[GetTitleByKey('k_umbar').GetNameNoTier], long a scourge of all on the shores of [belegaer_sea|e], is the greatest obstacle standing in the way of renewing contact with [gondor|e]. As long as it stands, any attempt to restore our ancient ties with the North is doomed to failure. \n\nOnce the long land route from [GetTitleByKey('k_mardruak').GetNameNoTier] has been secured, I will begin my invasion of the black kingdom of [GetTitleByKey('k_umbar').GetNameNoTier]. Soon, I hope, to world will be rid of the eternal corsair threat and the way north will be open."
  decision_bellakar_umbar_invasion_confirm: "I shall raze that foul haven!"
  umbar_must_not_be_good: "The [ruler|e] of #V [GetTitleByKey('k_umbar').GetNameNoTier]#! must #italic not#! follow a good-aligned [faith|e]"
  you_or_tributary_must_control_greater_mardruak: "#V You#! or your #V tributaries#! [completely_control|e] #V [GetGeographicalRegion('special_region_greater_mardruak').GetName]#!"
  bellakar_kingdom_cb: "Invasion"
 
- decision_bellakar_gondorian_ties: "Restore Ties to Gondor"
+ decision_bellakar_gondorian_ties: "Restore Ties With Gondor"
  decision_bellakar_gondorian_ties_tooltip: "From a defensive alliance with Gondor to form a common front against [GetTitleByKey('e_mordor').GetNameNoTier]."
- decision_bellakar_gondorian_ties_desc: "After almost half an age, [bellakar|e] and [gondor|e] are once more in contact. So long had our separation lasted that all but the most learned loremaster of the [dunedain|e] had forgotten of our realm: most deeming it a mere legend or a dream of a land of light lost somewhere in the shadows of [harad|e]. \n\nNo more! The [faithful|e] are, at last, reunited: our mission clear as day. Together, as we were in the days of the [warlastalliance|E], we will cast down the dark realm of [GetTitleByKey('e_mordor').GetNameNoTier] and end the tyranny of [GetScriptedCharacterByHistoryID('lineofsauron').GetTitledFirstName] once and for all!"
+ decision_bellakar_gondorian_ties_desc: "After almost half an age, [bellakar|e] and [gondor|e] are once more in contact. So long had our separation lasted that all but the most learned loremaster of the [dunedain|e] had forgotten about our realm: most deeming it a mere legend or a dream of a land of light lost somewhere in the shadows of [harad|e]. \n\nNo more! The [faithful|e] are, at last, reunited: our mission clear as day. Together, as we were in the days of the [warlastalliance|E], we will cast down the dark realm of [GetTitleByKey('e_mordor').GetNameNoTier] and end the tyranny of [GetScriptedCharacterByHistoryID('lineofsauron').GetTitledFirstName] once and for all!"
  decision_bellakar_gondorian_ties_confirm: "My coming must seem beyond any hope..."
  bellakar_gondorian_ties_effects_tt: "You will make contact with Gondor, seeking to restore the ancient alliance between your realms."
  no_stormhost_in_tulwang: "[GetTitleByKey('e_thon_an_kharlokh').GetNameNoTier] has fallen or has been pushed out of [GetTitleByKey('k_tulwang').GetNameNoTier]"
@@ -1810,7 +1860,6 @@
  decision_bellakar_gondorian_splinters_desc: "With the fall of [gondor|e] to the forces of [GetScriptedCharacterByHistoryID('lineofsauron').GetTitledFirstName], I now find myself with the difficult task of having to bring the last of the Free Peoples together. Left without king or steward, the lords of Gondor now rule their domains without any sense of wider unity: dooming them to fall to the ever encroaching shadow. \n\nYet, such a fate may still be avoided. With my support, the lords of [gondor|e] may brought together once more: this time under the care and arbitration of [bellakar|e] rather than under their own kings whose days have now long passed."
  decision_bellakar_gondorian_splinters_confirm: "All is not yet lost..."
  bellakar_gondorian_splinters_effects_tt: "You will form a defensive alliance with the remaining lords of Gondor."
-
 
  ###############################
  ##### Pharazain Decisions #####
@@ -2274,7 +2323,7 @@
 
  decision_explore_azrathani: "Explore the Land"
  decision_explore_azrathani_tooltip: "Being proactive while building up this land may yield riches"
- decision_explore_azrathani_desc: "Sitting around in Azralôni will only help so much. It might be risky, but if I am to tame this land, and become it's master I should know it. And who knows? There may be untapped resources out there."
+ decision_explore_azrathani_desc: "Sitting around in Azralôni will only help so much. It might be risky, but if I am to tame this land, and become its master I should know it. And who knows? There may be untapped resources out there."
  decision_explore_azrathani_confirm: "Let us look upon the land"
 
  decision_repay_debt: "Repay your Debt"
@@ -2413,7 +2462,8 @@
  decision_nazgul_return_to_mordor_tooltip: "Abandon your realm and travel to Mordor"
  decision_nazgul_return_to_mordor_desc: "The time has come to abandon my machinations elsewhere in Middle-earth. I must return to [mordor|E] and prepare it for the coming of the [darklord|E]."
  decision_nazgul_return_to_mordor_confirm: "Swift, Silent"
- decision_nazgul_return_to_mordor.tt: "You [travel|E] to the [GetTitleByKey('k_gorgoroth').GetName], and establish a new [realm|E] in [mordor|E]."
+ decision_nazgul_return_to_mordor.tt: "You [travel|E] to [mordor|E], abandoning your [realm|E] and seizing a random [county|E] in the [GetTitleByKey('k_gorgoroth').GetName]."
+ decision_nazgul_return_to_mordor.tt2: "#warning All titles in your current realm will be ceded to a powerful vassal.#!"
  # Long Winter Decisions
  steward_of_morgul: "Steward of Morgul"
 
@@ -2738,6 +2788,11 @@
  decision_haradrim_viceroy_tooltip: "Become a sanctioned viceroy under [gondor|E]"
  decision_haradrim_viceroy_desc: "The power of [gondor|E] is unquestionable, and their influence over the Southlands is undeniable. And yet, there are opportunities to be had in working with them, rather than against them. If I were to become a sanctioned viceroy under [gondor|E], I could gain access to their resources and support, while still maintaining a degree of autonomy over my own lands. It would be a delicate balance, but one that could pay off in the long run."
  decision_haradrim_viceroy_confirm: "I shall go to the White City."
+ 
+ decision_apysan_carving: "Rebuild the First Apysan Union"
+ decision_apysan_carving_tooltip: "Reforge a mythical realm from the [firstage|E]"
+ decision_apysan_carving_desc: "Having deciphered the ancient Apysan Carving, we now know the mythical tale of the First Apysan Union, the realm of the first [men|E] that came to dwell in [khand|E] and [harad|E] in the early years of the Sun. They were our longfathers, by thousands upon thousands of sons, and even though the names of their kings are lost to time - if we could bring together the lands that they once lived in, we might revive a certain memory of their splendour in our own times."
+ decision_apysan_carving_confirm: "The glory of the past, brought to the present."
 
  ##################################
  #### Arysis / Maresh Decisions ###
@@ -4291,7 +4346,8 @@
  decision_petition_nazgul_confirm: "Onward"
  decision_petition_nazgul.tt: "There is at least one [independent|E] [landed|E] [nazgulcharacter|E] in the [GetGeographicalRegion('custom_petition_murghuri_region').GetName] [region|E]."
  decision_petition_nazgul.tt2: "Travel to the court of a local [nazgulcharacter|E], earning [gold|E], [special_troops|E] or [development|E] [modifiers|E]."
-
+ decision_petition_nazgul.tt3: "You are not a [vassal|E] of a [nazgul|E]."
+ 
  decision_yellow_mountains_igal_zaram_warrens: "Hollow the Great Warrens"
  decision_yellow_mountains_igal_zaram_warrens_tooltip: "Construct a [great_building|E] to strengthen your [levies|E]."
  decision_yellow_mountains_igal_zaram_warrens_desc: "I have seen a vision in the still waters of the Igal-zâram. Great Warrens, weaving deep into the earth, a new home for our kind."
@@ -4367,7 +4423,7 @@
 
  request_ranger_contract_decision: "Request Ranger Contracts"
  request_ranger_contract_decision_desc: "It has been some time since your liege has sent work your way, and a ranger needs to stay active to hone their skills to perfection."
- request_ranger_contract_decision_tooltip: "Your liege will provide [ranger_task_contracts|E] for you to complete. If there are no targets for contracts around your position, it is possible no contracts will be created."
+ request_ranger_contract_decision_tooltip: "Your liege will provide [ranger_task_contracts|E] for you to complete. If there are no rulers of the opposite [alignment|E] bordering your liege, it is possible no contracts will be created."
  ranger_in_liege_lands_tooltip: "You are #bold not#! encamped on your liege's lands"
  request_ranger_contract_decision_confirm: "We have work to do"
 
@@ -4482,14 +4538,14 @@
  decision_khorahil_fortify_west_tooltip: "Establish defenses along the Tûlwangi Coast"
  decision_khorahil_fortify_west_desc: "The lands along the Bay of Tûlwang are vulnerable to a Bellakari landing. We must seize these lands and prepare them for the war to come."
  decision_khorahil_fortify_west_confirm: "Prepare the defenses."
- decision_khorahil_fortify_west_effect.tt: "Every [county|E] in the [GetGeographicalRegion('special_region_khorahil_fortify_coasts_west').GetName] [region|E] will recieve the [GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L] [county_modifier|E]."
+ decision_khorahil_fortify_west_effect.tt: "Every [county|E] in the [GetGeographicalRegion('special_region_khorahil_fortify_coasts_west').GetName] [region|E] will receive the [GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L] [county_modifier|E]."
  tulwang_building_3_tt: "At least 3 counties in the region of [GetGeographicalRegion('special_region_khorahil_fortify_coasts_west').GetName] have built [GetBuilding('march_01').GetName] or [GetBuilding('tunnel_network_01').GetName]."
 
  decision_khorahil_fortify_east: "Fortify the Bay of Ormal"
  decision_khorahil_fortify_east_tooltip: "Establish defenses along the Ormal Coast"
  decision_khorahil_fortify_east_desc: "The lands along the Bay of Ormal are vulnerable to a Khyan landing. We must seize these lands and prepare them for the war to come."
  decision_khorahil_fortify_east_confirm: "Prepare the defenses."
- decision_khorahil_fortify_east_effect.tt: "Every [county|E] in the [GetGeographicalRegion('special_region_khorahil_fortify_coasts_east').GetName] [region|E] will recieve the [GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L] [county_modifier|E]."
+ decision_khorahil_fortify_east_effect.tt: "Every [county|E] in the [GetGeographicalRegion('special_region_khorahil_fortify_coasts_east').GetName] [region|E] will receive the [GetModifier( 'khorahil_fortified_coasts_county_modifier' ).GetNameWithTooltip|L] [county_modifier|E]."
  ormal_building_3_tt: "At least 3 counties in the region of [GetGeographicalRegion('special_region_khorahil_fortify_coasts_east').GetName] have built [GetBuilding('march_01').GetName] or [GetBuilding('tunnel_network_01').GetName]."
 
  decision_khorahil_indoctrinate_harshandatt: "Indoctrinate Harshandatt"
@@ -4523,7 +4579,7 @@
  decision_khorahil_destroy_bellakar_confirm: "To War!"
  decision_khorahil_destroy_bellakar_effect.tt: "Begin a war against [GetTitleByKey('e_bellakar').GetNameNoTier]"
  military_strength_15000: "Your Current Military Strength is at least #V 15,000#! @soldier_icon! [soldiers|E]"
- decision_khorahil_vassals_join.tt: "All [direct_vassals|E] and [tributaries|E] of the [war_leaders|E] will join the war."
+ decision_khorahil_vassals_join.tt: "#warning @warning_icon! All [direct_vassals|E] and [tributaries|E] of the [war_leaders|E] will join the war.#!"
  
  decision_khorahil_destroy_khy: "Destroy Khy"
  decision_khorahil_destroy_khy_tooltip: "Begin a war to devastate Khy"
@@ -5100,7 +5156,7 @@
  decision_establish_lyneria_sea_trade_desc.conculsion: "As such, it might be better to consider alternative trade routes.\n\nThe $akanali_collective_noun$ do not typically love the sea, but the $lynerian_collective_noun$ have shown that should it be tamed, it can bring great wealth. Perhaps we too should turn out backs on the mountains, and look seaward instead for the route to $k_lyneria$."
  decision_establish_lyneria_sea_trade_desc.singapura: "Between my lands and the rich cities of $k_lyneria$ stand the ancient jungles of the [GetGeographicalRegion('custom_lyneria_coastline').GetName], which the local [GetFaithByKey('faith_degi').GetAdherentNamePlural] name 'Degi'. Dense, hostile, and nearly impenetrable, they have blocked trade along the coastline as long as can be remembered, sending it instead by the ships of the $lynerian_collective_noun$ and $sengani_collective_noun$.\nThe $akanali_collective_noun$ do not typically love the sea, but the $lynerian_collective_noun$ have show that should it be tamed, it can bring great wealth. Perhaps we too should cease our passivity, and look seaward instead for the route to $k_lyneria$."
  decision_establish_lyneria_sea_trade_desc.singapura_enemy: "Between my lands and the rich cities of $k_lyneria$ stand the ancient jungles of the [GetGeographicalRegion('custom_lyneria_coastline').GetName], which the local [GetFaithByKey('faith_degi').GetAdherentNamePlural] name 'Degi'. Dense, hostile, and nearly impenetrable, they have blocked trade along the coastline as long as can be remembered, sending it instead by the ships of the $lynerian_collective_noun$ and $sengani_collective_noun$.\nYet recently, others have cut a road through the jungles, and now our merchants are faced with high tarrifs whichever way they go. The $akanali_collective_noun$ do not typically love the sea, but the $lynerian_collective_noun$ have shown that should it be tamed, it can bring great wealth. Perhaps we too should cease our passivity, and look seaward instead for the route to $k_lyneria$."
- decision_establish_lyneria_sea_trade_desc.degi: "Across the coastal route to $k_lyneria$ sits #V Degi#!, my god and tester, dense, hostile, and impenetrable to those who do not learn his secrects. For years unnumbered trade has avoided his deep jungles, travelling instead by the sea in the ships of the $lynerian_collective_noun$ and $sengani_collective_noun$\n\nMy people have gained little for this arrangement, but to force a road through Degi for extensive trade is foolish. We do not generally love the sea, but the $lynerian_collective_noun$ have shown that should it be faced, it can bring great skill. Perhaps we too should turn from the forest, and look seaward instead for the route to $k_lyneria$."
+ decision_establish_lyneria_sea_trade_desc.degi: "Across the coastal route to $k_lyneria$ sits #V Degi#!, my god and tester, dense, hostile, and impenetrable to those who do not learn his secrets. For years unnumbered trade has avoided his deep jungles, travelling instead by the sea in the ships of the $lynerian_collective_noun$ and $sengani_collective_noun$\n\nMy people have gained little for this arrangement, but to force a road through Degi for extensive trade is foolish. We do not generally love the sea, but the $lynerian_collective_noun$ have shown that should it be faced, it can bring great skill. Perhaps we too should turn from the forest, and look seaward instead for the route to $k_lyneria$."
  decision_establish_lyneria_sea_trade_desc.pirate: "As long as can be remembered the [ROOT.Char.GetCulture.GetCollectiveNoun] have raided the ships of the $lynerian_collective_noun$, prefering to take our payment at the point of a sword. Yet this policy has won us few friends, and perhaps it is time to turn to other tactics.\nIf we were to establish #italic peaceful#! trade links with $k_lyneria$, we might greatly profit from the arrangement."
  decision_establish_lyneria_sea_trade_confirm: "Let the trade flow!"
  decision_establish_lyneria_sea_trade_tooltip: "Begin trading with $k_lyneria$ by sea"
@@ -5111,8 +5167,8 @@
 
  decision_establish_lyneria_coastal_trade: "Establish Coastal Trade with Lyneria"
  decision_establish_lyneria_coastal_trade_desc.wilderness: "Between my lands and the rich cities of $k_lyneria$ stand the ancient jungles of the [GetGeographicalRegion('custom_lyneria_coastline').GetName], which the local [GetFaithByKey('faith_degi').GetAdherentNamePlural] name 'Degi'. Dense, hostile, and nearly impenetrable, they have blocked trade along the coastline as long as can be remembered.\n\nYet perhaps, should they be tamed and a path cut through, I could direct much of $k_lyneria$'s southward trade through my own lands."
- decision_establish_lyneria_coastal_trade_desc.degi: "Across the coastal route to $k_lyneria$ sits #V Degi#!, my god and tester, dense, hostile, and impenetrable to those who do not learn his secrects. For years unnumbered trade has avoided his deep jungles, travelling instead by the sea. \n\nYet perhaps, should my people and I prove worthy enough, we might establish a secure path through his dangers, and bring $k_lyneria$'s southward trade into our lands."
- decision_establish_lyneria_coastal_trade_desc.degi_enemy: "Across the coastal route to $k_lyneria$ sits #V Degi#!, my god and tester, dense, hostile, and impenetrable to those who do not learn his secrects. For years unnumbered trade has avoided his deep jungles, travelling instead by the sea.\n\nNow though, others have braved his dangers and set up a road along the coast, paying little of the proper respect. My people and I should take back the jungles, to secure his respect and reap the benefit of this trade."
+ decision_establish_lyneria_coastal_trade_desc.degi: "Across the coastal route to $k_lyneria$ sits #V Degi#!, my god and tester, dense, hostile, and impenetrable to those who do not learn his secrets. For years unnumbered trade has avoided his deep jungles, travelling instead by the sea. \n\nYet perhaps, should my people and I prove worthy enough, we might establish a secure path through his dangers, and bring $k_lyneria$'s southward trade into our lands."
+ decision_establish_lyneria_coastal_trade_desc.degi_enemy: "Across the coastal route to $k_lyneria$ sits #V Degi#!, my god and tester, dense, hostile, and impenetrable to those who do not learn his secrets. For years unnumbered trade has avoided his deep jungles, travelling instead by the sea.\n\nNow though, others have braved his dangers and set up a road along the coast, paying little of the proper respect. My people and I should take back the jungles, to secure his respect and reap the benefit of this trade."
  decision_establish_lyneria_coastal_trade_desc.enemy: "Between my lands and the rich cities of $k_lyneria$ stand the ancient jungles of the [GetGeographicalRegion('custom_lyneria_coastline').GetName], which the local [GetFaithByKey('faith_degi').GetAdherentNamePlural] name 'Degi'. Dense, hostile, and nearly impenetrable, they have blocked trade along the coastline as long as can be remembered. \n\nNow however, others have cut a road through, and trade follows along the coast, at high costs to my merchants. Were I to sieze the path however, #bold I#! might be the one to benefit instead."
  decision_establish_lyneria_coastal_trade_confirm: "Let the trade flow!"
  decision_establish_lyneria_coastal_trade_tooltip: "Begin trading with $k_lyneria$ along the coastal road"
