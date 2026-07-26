@@ -7,7 +7,7 @@
  decision_try_for_elven_child_tooltip: "Поговорить со своей половинкой о том, чтобы завести ребёнка"
  decision_try_for_elven_child_desc: "[ROOT.Char.GetPrimarySpouse.GetFirstNameNoTooltip] и я понимаем, что рождение и поддержка нерождённого ребёнка занимают особое место в жизни любого [Concept('elf', 'эльфа')|E]. Мы понимаем, что такое единение в любви не может не принести счастья и радости, но поддержание устойчивой эмоциональной связи и соединение наших фэа потребуют огромной концентрации и внимания."
  decision_try_for_elven_child_confirm: "[ROOT.Char.GetPrimarySpouse.GetFirstNameNoTooltip], нам нужно поговорить."
- decision_try_for_elven_child_effect: "Вы и [ROOT.Char.GetPrimarySpouse.GetFirstNameNoTooltip] попытаетесь зачать ребёнка, на что уйдёт большая часть вашего внимания."
+ decision_try_for_elven_child_effect: "Вы и [THIS.Char.GetPrimarySpouse.GetFirstNameNoTooltip] попытаетесь зачать ребёнка, на что уйдёт большая часть вашего внимания."
 
  decision_sail_to_valinor: "Отплыть в Валинор"
  decision_sail_to_valinor_tooltip: "Покинуть [Concept('middleearth', 'Средиземье')|E] и присоединиться к своему народу в [Concept('valinor', 'Валиноре')|E]"
@@ -1507,6 +1507,32 @@
  decision_eira_assassination_tooltip: "Убить персонажа [GetTitleByKey('c_harabad').GetHolder.GetTitledFirstName]"
  decision_eira_assassination_tt: "Вы отправитесь в Тарбад, чтобы попытаться убить Глормагиля"
 
+ decision_eira_call_moot: "Call a Great Moot"
+ decision_eira_call_moot_desc: "The [men|E] of Enedhwaith follow strength and valor. If I am to unite them and fulfill my father's lifelong dream, I must demonstrate my conviction and my might for all to see. By toppling the spider of Tharbad and freeing the land from [gondor|E]'s yoke, I will gain enough respect to call upon a great moot, and unite the clans under my banner in earnest."
+ decision_eira_call_moot_tooltip: "Unite the Dunmen Chieftains"
+ decision_eira_call_moot_confirm: "Send forth my invitations."
+ enedhwaith_rulers_may_join_you: "Every [GetCultureByKey('dunmen').GetName] or [GetCultureByKey('enedhwaithrim').GetName] in [enedhwaith|E] ruler has a #high 60%#! chance to become your [vassal|E]"
+ 
+ decision_maratar_defeat_rlain: "Topple the Brazen Brigand"
+ decision_maratar_defeat_rlain_desc: "The time has come to complete the task I set for myself when I left [gondor|E] to carry out this punitive expedition. The culprit of that terrible raid on Andrast's shores who styles himself "the Brazen Brigand" must be slain or captured. Only then will my mission in these lands be deemed complete."
+ decision_maratar_defeat_rlain_tooltip: "Deal justice to the Brazen Brigand"
+ decision_maratar_defeat_rlain_confirm: "Bring me my sword."
+ decision_maratar_defeat_rlain_tt: "If he lives, you will choose the fate of the Brazen Brigand"
+ 
+ decision_maratar_eira_alliance: "Forge an Unlikely Alliance"
+ decision_maratar_eira_alliance_desc: "My son has spoken in favor of this Éira of Magh Meala, a young chieftess that is uniting the eastern tribes in [enedhwaith|E]. If she can be trusted, she and her warriors would make for formidable allies in our fight against the Brazen Brigand - they know the land, and they know how their brethren fight!"
+ decision_maratar_eira_alliance_tooltip: "Form an Alliance with the Dunmen"
+ decision_maratar_eira_alliance_confirm: "I will ride to meet with her."
+ alliance_with_eira_formed: "You form a mutual [alliance|E] with Eíra of Magh Meala"
+ lotr_capture_rlain_name: "Capture the Brazen Brigand"
+ capture_rlain_cb: "Capture the Brazen Brigand"
+ 
+ decision_maratar_eira_justice: "Honour your Word"
+ decision_maratar_eira_justice_desc: "I gave young Éira, that dunmen chieftess my word that I would speak with the [king|E] of [gondor|E] on her behalf. I am not an oathbreaker, and I will honour my word. To Osgiliath!"
+ decision_maratar_eira_justice_tooltip: "Travel to Osgiliath to speak with the King"
+ decision_maratar_eira_justice_confirm: "Bring me my steed."
+ maratar_travel_to_osgiliath: "You will [travel|E] to [GetTitleByKey('c_osgiliath').GetNameNoTier] to speak with [GetTitleByKey('e_gondor').GetHolder.GetTitledFirstName]"
+
  decision_rlain_confederation: "Объединить вождей"
  decision_rlain_confederation_desc: "Вожди [Concept('enedhwaith', 'Энедвайта')|E] долгое время бездействовали, спокойно терпя иго [Concept('gondor', 'Гондора')|E], словно стадо бесхребетных псов. Довольно, сегодня я покончу с этим! Я объединю вождей под единым знаменем, и вместе мы восстанем против наших угнетателей и вернём себе свободу... и в процессе завладеем несметными богатствами!"
  decision_rlain_confederation_confirm: "Вожди встанут под моё знамя!"
@@ -1527,10 +1553,33 @@
  decision_rlain_convert_faith_tooltip: "Начать почитать [GetFaithByKey('faith_angmar_azira').GetAdjective|l]"
  is_terrified_of_you_tt: "[terrified_i|E] [Concept('cowed', 'Устрашены')|E] #high вами#!"
 
+ decision_rlain_claim_coasts: "Claim the Coasts"
+ decision_rlain_claim_coasts_desc: "For too long have the [men|E] of [gondor|E] sat on the havens of [GetTitleByKey('c_lond_daer').GetNameNoTier] and [GetTitleByKey('c_angrast').GetNameNoTier], thwarting any attempt of [daen|E] shipbuilding. I have proven their weakness when I raided the unprotected shores of [GetTitleByKey('k_andrast').GetNameNoTier], and I say we throw these Gondorians back into the sea where they belong!\n\nOnce the ports have been plundered and seize, and that troublesome swan-knight dealt with, they shall find it rather difficult to maintain their supply lines..."
+ decision_rlain_claim_coasts_tooltip: "Seize the havens of [enedhwaith|E]"
+ decision_rlain_claim_coasts_confirm: "To victory!"
+ unlocks_claim_andrast_decision: "Unlocks the  [GetDecision('decision_rlain_claim_andrast').GetName] [decision|E]"
+ 
+ decision_rlain_claim_andrast: "Exploit Gondor's Weakness"
+ decision_rlain_claim_andrast_desc: "I have thrown back those foolish [gondorian|E]s into the sea they claim to love so much. And in doing so, I exposed their weakness for all the world to see. They are powerless to stop me! I shall lay claim to the coasts I raided once, for who shall stop me from taking what is mine by right of conquest?"
+ decision_rlain_claim_andrast_tooltip: "Gain a [claim|E] on the coasts of [GetTitleByKey('k_andrast').GetNameNoTier]"
+ decision_rlain_claim_andrast_confirm: "None can resist me."
+
  decision_purchase_tharbad: "Купить Тарбад"
  decision_purchase_tharbad_desc: "[GetTitleByKey('c_tharbad').GetNameNoTier] долгое время находился под совместным управлением [Concept('gondor', 'Гондора')|E] и [Concept('arnor', 'Арнора')|E] и остаётся одним из богатейших городов севера. В порту Тарбада много торговцев, а его расположение на Королевском тракте в [GetTitleByKey('c_minas_tirith').GetNameNoTier] обеспечивает постоянное движение через него.\n\nЯ контролирую лишь южную, менее процветающую часть #ONCLICK:TITLE,c_harabad #TOOLTIP:LANDED_TITLE,c_harabad #L Харабада#!#!#!, но [Concept('cardolan', 'Кардолан')|E] слаб. Их держава переживает трудности. Несомненно, они оценили бы мою помощь, как финансовую, так и военную? Я [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )], что за небольшую цену, такую как полный контроль над Тарбадом, и если [GetTitleByKey('k_cardolan').GetHolder.GetTopLiege.GetTitledFirstName] услышит от нас нужные слова, мы сможем найти наиболее выгодное решение для всех заинтересованных сторон..."
  decision_purchase_tharbad_tooltip: "Купить [GetTitleByKey('c_tharbad').GetNameNoTier] во владение"
  decision_purchase_tharbad_confirm: "Самая выгодная сделка!"
+
+ decision_glormagil_call_moot: "Call a Great Moot"
+ decision_glormagil_call_moot_desc: "The [men|E] of Enedhwaith are a backwater, tribal society. They pay lip-service to the Winged Crown of [gondor|E], but most of the time, they keep to themselves. The tribes will squabble like children and often attempt to settle their childish disputes in something they call a Great Moot - a congregation of local chieftains and leaders that discuss matters of state - or so they claim.\n\nWhile their petty arguments are far beneath a man of my standing, there is merit in the Great Moots. If I were to call upon those chieftains more closely bound to Gondor, I might gain their respect - and in return, their warriors will be at my beck and call to unleash against the rebellious ringleaders in these lands..."
+ decision_glormagil_call_moot_tooltip: "Gather the Dunmen Chieftains"
+ decision_glormagil_call_moot_confirm: "Send forth my invitations."
+ decision_glormagil_call_moot_tt: "You invite your [tribal|E] [vassals|E] to gain their respect and their loyalty"
+ 
+ decision_glormagil_discredit_eira: "Discredit the Rebel Leader"
+ decision_glormagil_discredit_eira_desc: "The daughter of that troublesome chieftain I had assassinated has survived, and her influence is growing beyond what I expected of her. It is time for her to be brought back down to where she belongs, and I have just the right tool for a task such as this..."
+ decision_glormagil_discredit_eira_tooltip: "Greatly reduce the influence of Éira of the Dunlandfells"
+ decision_glormagil_discredit_eira_confirm: "Send word to her vassals."
+ decision_glormagil_discredit_eira_tt: "#N If you succeed:#!"
 
  #######################
  ### Shire Decisions ###
@@ -2413,7 +2462,8 @@
  decision_nazgul_return_to_mordor_tooltip: "Покинуть вашу державу и отправиться в Мордор"
  decision_nazgul_return_to_mordor_desc: "Пришло время отказаться от своих происков в дальних уголках Средиземья. Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] вернуться в [Concept('mordor', 'Мордор')|E] и подготовить его к возвращению [Concept('darklord', 'Тёмного властелина')|E]."
  decision_nazgul_return_to_mordor_confirm: "Быстро и безмолвно."
- decision_nazgul_return_to_mordor.tt: "Вы [Concept('travel', 'отправитесь')|E] в [GetTitleByKey('k_gorgoroth').GetName], и создадите новую [Concept('realm', 'державу')|E] в [Concept('mordor', 'Мордоре')|E]."
+ decision_nazgul_return_to_mordor.tt: "You [travel|E] to [mordor|E], abandoning your [realm|E] and seizing a random [county|E] in the [GetTitleByKey('k_gorgoroth').GetName]."
+ decision_nazgul_return_to_mordor.tt2: "#warning All titles in your current realm will be ceded to a powerful vassal.#!"
  # Long Winter Decisions
  steward_of_morgul: "Моргульский наместник"
 
@@ -2738,6 +2788,11 @@
  decision_haradrim_viceroy_tooltip: "Стать [Select_CString(ROOT.Char.IsFemale, 'полномочной вице-королевой', 'полномочным вице-королём' )] под властью [Concept('gondor', 'Гондора')|E]"
  decision_haradrim_viceroy_desc: "Мощь [Concept('gondor', 'Гондора')|E] неоспорима, и их влияние на Южные земли неоспоримо. И всё же, есть возможности работать с ними, а не против них. Если бы я [Select_CString(ROOT.Char.IsFemale, 'стала полномочной вице-королевой', 'стал полномочным вице-королём' )] под властью Гондора, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы получить доступ к их ресурсам и поддержке, сохраняя при этом определённую автономию в своих владениях. Это был бы хрупкий баланс, но в долгосрочной перспективе он мог бы окупиться."
  decision_haradrim_viceroy_confirm: "Я отправлюсь в Белый город."
+
+ decision_apysan_carving: "Rebuild the First Apysan Union"
+ decision_apysan_carving_tooltip: "Reforge a mythical realm from the [firstage|E]"
+ decision_apysan_carving_desc: "Having deciphered the ancient Apysan Carving, we now know the mythical tale of the First Apysan Union, the realm of the first [men|E] that came to dwell in [khand|E] and [harad|E] in the early years of the Sun. They were our longfathers, by thousands upon thousands of sons, and even though the names of their kings are lost to time - if we could bring together the lands that they once lived in, we might revive a certain memory of their splendour in our own times."
+ decision_apysan_carving_confirm: "The glory of the past, brought to the present."
 
  ##################################
  #### Arysis / Maresh Decisions ###
@@ -4291,6 +4346,7 @@
  decision_petition_nazgul_confirm: "В путь."
  decision_petition_nazgul.tt: "В [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_petition_murghuri_region').GetName] есть хотя бы один [Concept('independent', 'независимый')|E] [Concept('nazgulcharacter', 'назгул')|E], [Concept('landed', 'владеющий землёй')|E]."
  decision_petition_nazgul.tt2: "Отправиться ко двору местного [Concept('nazgulcharacter', 'назгул')|E], получив [Concept('gold', 'золото')|E], [Concept('special_troops', 'особые войска')|E] или [Concept('modifiers', 'модификаторы')|E] [Concept('development', 'развития')|E]."
+ decision_petition_nazgul.tt3: "You are not a [vassal|E] of a [nazgul|E]."
 
  decision_yellow_mountains_igal_zaram_warrens: "Прорыть Великий муравейник"
  decision_yellow_mountains_igal_zaram_warrens_tooltip: "Построить [Concept('great_building', 'грандиозную постройку')|E] для усиления вашего [Concept('levies', 'ополчения')|E]."
@@ -4367,7 +4423,7 @@
 
  request_ranger_contract_decision: "Попросить контракты следопытов"
  request_ranger_contract_decision_desc: "Прошло уже некоторое время с тех пор, как ваш сюзерен поручал вам что-либо, а следопытам нужно быть всегда начеку, чтобы отточить свои навыки до совершенства."
- request_ranger_contract_decision_tooltip: "Ваш сюзерен предоставит вам [Concept('ranger_task_contracts', 'контракты следопыта')|E] для выполнения. Если вокруг вашего местоположения нет целей для контрактов, контракты могут не появиться."
+ request_ranger_contract_decision_tooltip: "Ваш сюзерен предоставит вам [Concept('ranger_task_contracts', 'контракты следопыта')|E] для выполнения. Если ваш сюзерен не граничит с правителями с противоположным [Concept('alignment', 'мировоззрением')|E], контракты могут не появиться."
  ranger_in_liege_lands_tooltip: "Вы #bold не#! разбили лагерь на землях своего сюзерена"
  request_ranger_contract_decision_confirm: "У нас много работы."
 
@@ -4523,7 +4579,7 @@
  decision_khorahil_destroy_bellakar_confirm: "Война!"
  decision_khorahil_destroy_bellakar_effect.tt: "Начать войну против #ONCLICK:TITLE,e_bellakar #TOOLTIP:LANDED_TITLE,e_bellakar #L Беллакара#!#!"
  military_strength_15000: "Ваша текущая военная мощь - не менее #V 15,000#! @soldier_icon! [Concept('soldiers', 'солдат')|E]"
- decision_khorahil_vassals_join.tt: "Все [Concept('direct_vassals', 'прямые вассалы')|E] и [Concept('tributaries', 'данники')|E] [Concept('war_leaders', 'лидеров войны')|E] присоединятся к войне."
+ decision_khorahil_vassals_join.tt: "#warning @warning_icon! Все [Concept('direct_vassals', 'прямые вассалы')|E] и [Concept('tributaries', 'данники')|E] [Concept('war_leaders', 'лидеров войны')|E] присоединятся к войне.#!"
 
  decision_khorahil_destroy_khy: "Уничтожить Кхай"
  decision_khorahil_destroy_khy_tooltip: "Начать войну за опустошение Кхая"
