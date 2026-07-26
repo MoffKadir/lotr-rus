@@ -106,6 +106,7 @@
  rhovanion_heavy_cavalry_flavor: "Воины клана Айватуида всегда были лучшими всадникоми среди [Concept('northmen', 'северян')|E] [Concept('rhovanion', 'Рованиона')|E], а их кони, как говорят, быстры как ветер и движутся как одно целое со своим всадником."
  rhovanion_royal_guard: "Королевская гвардия Рованиона"
  rhovanion_royal_guard_flavor: "Королевская гвардия - оплот королей [Concept('rhovanion', 'Рованиона')|E] - носит доспехи и оружие, выкованные в [Concept('dwarven', 'гномьих')|E] кузнях, и является самой элитной пешей ратью в королевстве."
+ culture_parameter_stables_enabled_for_tribals: "Цепочку [Concept('buildings', 'зданий')|E] #V $building_type_stables_01$#! можно строить в [Concept('tribe', 'племенных')|E] [Concept('holdings', 'владениях')|E]"
 
  tradition_the_people_of_the_plains_old_name: "Жители равнин"
  tradition_the_people_of_the_plains_old_desc: "Единая с дикими и продуваемыми ветрами равнинами [Concept('rhovanion', 'Рованиона')|E], эта культура насчитывает столько же, сколько и травинок, гордых и свободных людей. Рождённые ездить верхом, они едины со своими благородными конями, далеко разбросанными по открытым равнинам."
@@ -163,6 +164,9 @@
  culture_in_central_fiefs_desc: "Хотя бы #V 40%#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] должны располагаться в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('middleearth_west_gondor_central_fiefdoms').GetName]"
  tradition_belfalathrim_chivalry_name: "Рыцарство бельфалатрим"
  tradition_belfalathrim_chivalry_desc: "С незапамятных времен [Concept('men', 'народ')|E] Бельфаласа разительно отличался в своих традициях и манерах от всех [dunedain|El] Юга. Честь, благородство, долг, а также отточенное годами мастерство верховой езды."
+
+ culture_in_jungle_more_desc: "[culture|E] не распространена в [Concept('county', 'графстве')|E] с [Concept('terrain', 'джунглями, лесной чащей или лесом мэллорнов')|E]"
+ jungle_percentage_more_desc: "Менее #V 30%#! [Concept('counties', 'графств')|E] этой [Concept('culture', 'культуры')|E] располагается в [Concept('terrain', 'джунглях, лесной чаще или лесу мэллорнов')|E]"
 
  ### Dunedain Traditions ###
  culture_in_gondor_desc: "Хотя бы #V 40%#! [Concept( 'counties', 'графств' )|E] этой [Concept( 'culture', 'культуры' )|E] должны располагаться в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('middleearth_west_gondor').GetName]"
@@ -417,6 +421,13 @@
  culture_parameter_city_fort_level_bonus: "Прибрежные [Concept('city_holdings', 'города')|E] в [Concept('counties', 'графствах')|E] этой [Concept('culture', 'культуры')|E] получают дополнительный [Concept('fort_level', 'уровень фортификации')|E]."
  culture_parameter_fortifications_in_cities: "В [Concept('city_holdings', 'городах')|E], расположенных в [Concept('counties', 'графствах')|E] этой [Concept('culture', 'культуры')|E], можно возводить #high фортификационные сооружения#!"
  culture_parameter_can_build_protected_harbours: "Разблокировано [Concept('decision', 'решение')|E], позволяющее построить #TOOLTIP:BUILDING,wonder_protected_harbour #L защищённые гавани#!#!"
+
+ tradition_river_rats_name: "Речные крысы"
+ tradition_river_rats_desc: "Эта культура сформировалась вокруг многочисленных рек, протекающих по её землям, которые использовались для торговли, сельского хозяйства и обороны. Окружающие в насмешку говорят, что они живут скорее как крысы на воде, чем как люди на суше."
+ culture_on_river_desc: "Не менее #V 30%#! [Concept('counties', 'графств')|E] этой [Concept('culture', 'культуры')|E] расположены на берегах рек"
+ riverside_percentage_desc: "Менее #V 50%#! [Concept('counties', 'графств')|E] этой культуры расположены на берегах рек"
+ culture_parameter_culture_can_raid_at_sea: "Можно проводить [Concept('raid', 'налёты')|E] по воде"
+ culture_parameter_riverside_agriculture_building_bonuses: "Сельскохозяйственные постройки получают бонусы в провинциях, расположенных вдоль рек"
 
  # Vanilla Loc Overrides
  tradition_female_only_inheritance_requirements_lotr: "Вы должны следовать [Concept('faith', 'конфессии')|E] с доктриной «[GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName]»"
