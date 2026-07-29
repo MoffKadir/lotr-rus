@@ -59,7 +59,7 @@
  bloodworm_helmet_effect: "\n$EFFECT_LIST_BULLET$Empowers the $claim_corpse_name$ [spell|E]"
 
  #try CHARACTER instead of charwindow, it needs to be Character.MakeScope.Char as just Character is not recognised
- arcana_title: "#bold;high;size:18 [arcana|E]: [Character.MakeScope.ScriptValue('arcana')|0]#! #bold;italic;low;size:18 ([Character.Custom('ArcanaLevel')])#!"
+ arcana_title: "#bold;high;size:8 [arcana|E]: [Character.MakeScope.ScriptValue('arcana')|0]#! #bold;italic;low;size:8 ([Character.Custom('ArcanaLevel')])#!"
  arcana_base: "Base: #high [Character.MakeScope.ScriptValue('arcana_base')|0]#!"
  #education
  #arcana_education_magic: "[Character.Custom('arcana_education_magic')]"
@@ -70,9 +70,7 @@
  arcana_education_magic_5: "[GetTrait('education_magic_5').GetName(ROOT.Char)]"
  #lifestyle
  #arcana_mystic: "[Character.Custom('arcana_mystic')]"
- arcana_mystic_1: "[GetTrait('lifestyle_mystic').GetName(ROOT.Char)]"
- arcana_mystic_2: "[GetTrait('lifestyle_mystic').GetName(ROOT.Char)]"
- arcana_mystic_3: "[GetTrait('lifestyle_mystic').GetName(ROOT.Char)]"
+ arcana_mystic: "[GetTrait('lifestyle_mystic').GetName(ROOT.Char)]"
  arcana_scholar: "[GetTrait('scholar').GetName(ROOT.Char)]"
  #personality
  arcana_lazy: "[GetTrait('lazy').GetName(ROOT.Char)]"
@@ -111,6 +109,7 @@
  arcana_racial_blindness: "[GetTrait('racial_blindness').GetName(ROOT.Char)]"
  #health
  arcana_infirm: "[GetTrait('infirm').GetName(ROOT.Char)]"
+ arcana_withering_mind: "[GetTrait('withering_mind').GetName(ROOT.Char)]"
  arcana_incapable: "[GetTrait('incapable').GetName(ROOT.Char)]"
  arcana_lunatic: "[GetTrait('lunatic_1').GetName(ROOT.Char)]"
  arcana_possessed: "[GetTrait('possessed_1').GetName(ROOT.Char)]"
@@ -186,7 +185,6 @@
  magicka_modifier_spell_shock: "[GetModifier('modifier_spell_shock').GetName]"
  arcana_cloning_mastery: "[GetModifier('cloning_mastery').GetName]"
  # Buildings
- magicka_building_corrupted_heart: "[GetBuilding('heart_of_valenwood_01').GetName]"
  magicka_building_garlas_agea: "[GetBuilding('garlas_agea_02').GetName]"
  # Class traits
  arcana_battlemage: "[GetTrait('battlemage').GetName(ROOT.Char)]"
@@ -259,16 +257,16 @@
  LOSE_MAGICKA_EFFECT: "Loses [magicka_i]$VALUE|-0$"
 
  ARCANA_IS_AT_LEAST: "[arcana|E] is [arcana_i]$VALUE|V0$ or above"
- MY_ARCANA_IS_AT_LEAST:3 "Your [arcana|E] is [arcana_i]$VALUE|V0$ or above"
+ MY_ARCANA_IS_AT_LEAST: "Your [arcana|E] is [arcana_i]$VALUE|V0$ or above"
  THEIR_ARCANA_IS_AT_LEAST: "[CHARACTER.GetShortUINamePossessive|V] [arcana|E] is [arcana_i]$VALUE|V0$ or above"
  ARCANA_IS_NOT_AT_LEAST: "[arcana|E] is less than [arcana_i]$VALUE|V0$"
- MY_ARCANA_IS_NOT_AT_LEAST:3 "Your [arcana|E] is less than [arcana_i]$VALUE|V0$"
+ MY_ARCANA_IS_NOT_AT_LEAST: "Your [arcana|E] is less than [arcana_i]$VALUE|V0$"
  THEIR_ARCANA_IS_NOT_AT_LEAST: "[CHARACTER.GetShortUINamePossessive|V] [arcana|E] is less than [arcana_i]$VALUE|V0$"
  ARCANA_IS_LESS_THAN: "Has [arcana|E] below [arcana_i]$VALUE|V0$"
- MY_ARCANA_IS_LESS_THAN:3 "Your [arcana|E] is less than [arcana_i]$VALUE|V0$"
+ MY_ARCANA_IS_LESS_THAN: "Your [arcana|E] is less than [arcana_i]$VALUE|V0$"
  THEIR_ARCANA_IS_LESS_THAN: "[CHARACTER.GetShortUINamePossessive|V] [arcana|E] is less than [arcana_i]$VALUE|V0$"
  ARCANA_IS_NOT_LESS_THAN: "Has [arcana|E] above [arcana_i]$VALUE|V0$"
- MY_ARCANA_IS_NOT_LESS_THAN:3 "Your [arcana|E] is [arcana_i]$VALUE|V0$ or above"
+ MY_ARCANA_IS_NOT_LESS_THAN: "Your [arcana|E] is [arcana_i]$VALUE|V0$ or above"
  THEIR_ARCANA_IS_NOT_LESS_THAN: "[CHARACTER.GetShortUINamePossessive|V] [arcana|E] is [arcana_i]$VALUE|V0$ or above"
 
  MAGICKA_TRIGGER_GLOBAL: "Has [magicka_i]$VALUE|V0$"
@@ -390,7 +388,7 @@
  NO_SPELLS: "No Spells"
 
  spell_name: "[Localize( Concatenate( Scope.GetFlagName, '_name' ) )]"
- spell_cost: "#size:11 [magicka_i] #! [EmptyScope.ScriptValue(Concatenate( Scope.GetFlagName, '_petty_cost' ))|0]"
+ spell_cost: "#size:1 [magicka_i] #! [EmptyScope.ScriptValue(Concatenate( Scope.GetFlagName, '_petty_cost' ))|0]"
  spell_hostile: "[Localize( Concatenate( Scope.GetFlagName, '_name' ) )] is considered #n hostile!#!\n\nThis will reduce the target's [opinion|E] of you and is considered a [crime|E] [crime_i]. Additionally you will give the target a [casus_belli|E] against you."
  spell_province: "[Localize( Concatenate( Scope.GetFlagName, '_name' ) )] is cast on a [county|E]."
  spell_secret: "[Localize( Concatenate( Scope.GetFlagName, '_name' ) )] is cast #p secretly#! - the target will not know who cast it!\n\nThe penalties from casting a #n hostile#! spell will not apply."
@@ -666,7 +664,7 @@
  GRAND_RITUAL_COST: "Cost"
  GRAND_RITUAL_INIT: "Initiate Ritual"
 
- slot_title: "#bold;high;size:18 Ritual Slots: [GetPlayer.MakeScope.ScriptValue('ritual_slot_limit')|V0]#!"
+ slot_title: "#bold;high;size:8 Ritual Slots: [GetPlayer.MakeScope.ScriptValue('ritual_slot_limit')|V0]#!"
  slot_base: "Base: #high 1#!"
  slot_arcana: "[arcana|E]: [GetPlayer.MakeScope.ScriptValue('ritual_slots_arcana')|+=0]"
  slot_education_2: "[GetTrait('education_magic_2').GetName(GetPlayer)]: #P +1#!"

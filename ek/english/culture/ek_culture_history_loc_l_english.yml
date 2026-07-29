@@ -1,21 +1,21 @@
 ﻿l_english:
- mystery_history_loc: "The origins of these people is shrouded in mystery"
-#Atlmer
- altmer_history_loc: "Descended from fabled [Glossary( 'Aldmeris', 'ALDMERIS_GLOSS' )] in the [Glossary( 'Dawn Era', 'DAWN_ERA_GLOSS' )]"
- direnni_history_loc: "Descended from [CULTURE.GetName] kinholds that settled Balfiera in the [Glossary( 'Merethic Era', 'MERETHIC_GLOSS' )]"
- corelanya_history_loc: "Descended from [CULTURE.GetName] dissidents who left for Hammerfell in the [Glossary( 'First Era', 'FIRST_ERA_GLOSS' )]" #NOTE: Dissidents = daedra worshippers (too long for culture desc)
+ mystery_history_loc: "The origins of these people are shrouded in mystery"
+#Altmer
+ altmer_history_loc: "Refugees from fabled [Glossary( 'Aldmeris', 'ALDMERIS_GLOSS' )]"
+ direnni_history_loc: "Descendants of [GetCulturePillar('heritage_aldmeri').GetName] who settled High Rock in the [Glossary( 'Merethic Era', 'MERETHIC_GLOSS' )]"
+ corelanya_history_loc: "Descended from [GetCulturePillar('heritage_aldmeri').GetName] dissidents who left for Hammerfell in the [Glossary( 'First Era', 'FIRST_ERA_GLOSS' )]" #NOTE: Dissidents = daedra worshippers (too long for culture desc)
 #Khajiit
- pellitinian_history_loc: "Emerged in Southern Elsweyr following the collapse of the [Glossary( 'Sixteen Kingdoms', 'SIXTEEN_K_GLOSS' )]"
- anequinan_history_loc: "Emerged in Northern Elsweyr following the collapse of the [Glossary( 'Sixteen Kingdoms', 'SIXTEEN_K_GLOSS' )]"
+ pellitinian_history_loc: "Emerged in Southern Elsweyr after the [Glossary( 'Sixteen Kingdoms', 'SIXTEEN_K_GLOSS' )]"
+ anequinan_history_loc: "Emerged in Northern Elsweyr after the [Glossary( 'Sixteen Kingdoms', 'SIXTEEN_K_GLOSS' )]"
  malapiit_history_loc: "Descended from the ancient cat demons of the Niben"
  baandari_history_loc: "Descended from the wandering litter of Baan Dar"
 #Falmer
- betrayal_history_loc: "Evolved from [CULTURE.GetCollectiveNoun] over centuries after being betrayed by the Dwemer"
+ betrayal_history_loc: "Evolved from [GetCulturePillar('heritage_falmeri').GetName] over centuries after being betrayed by the Dwemer"
 #Akaviri
  ilniviri_history_loc: "Descendants of [CULTURE.GetName] invaders who adopted Imperial customs"
  rimmen_history_loc: "Descended from [CULTURE.GetName] exiles fleeing persecution in Cyrodiil"
 #Nord
- skyrim_history_loc: "Descended from [CULTURE.GetName] settlers in the late [Glossary( 'Merethic Era', 'MERETHIC_GLOSS' )]"
+ skyrim_history_loc: "Returned to Skyrim in the late [Glossary( 'Merethic Era', 'MERETHIC_GLOSS' )]"
  cyro_nord_history_loc: "Descendants of Nords who settled in Cyrodiil"
  skaal_history_loc: "Diverged from their Mainland cousins after years of isolation"
 #Breton
@@ -28,12 +28,12 @@
  chimer_history_loc: "Followed the Prophet Veloth into exile"
  cantemiric_history_loc: "Followed the Oracle Cantemir into Black Marsh"
 #Imperial
- heartlander_history_loc: "Formed from [CULTURE.GetName] under [TARGET_CULTURE.GetName] influence"
  nibenese_history_loc: "Developed out of [GetCulturePillar('heritage_cyrod').GetName] tribes under [CULTURE.GetName] rule"
  colovian_history_loc: "Developed out of [GetCulturePillar('heritage_cyrod').GetName] tribes under Nordic influence"
- strident_history_loc: "Formed from Gold Coast [CULTURE.GetCollectiveNoun] under [TARGET_CULTURE.GetName] influence" 
+ strident_history_loc: "[CULTURE.GetCollectiveNoun] who embarked on a mastery of the sea" 
  nibenu_history_loc: "The [CULTURE.GetName] who settled along the fertile lowlands of the Niben basin"
  rimmenese_history_loc: "Descended from [CULTURE.GetName] traders that settled in the Rim Territories" 
+ torell_history_loc: "[CULTURE.GetCollectiveNoun] who settled the highlands"
 #Dunmer
  chi_addun_history_loc: "Descendants of the great [CULTURE.GetName] wizards of the mystic east"
  gah_julan_history_loc: "Descendants of the hardy [CULTURE.GetName] warriors of the Velothi mountains"
@@ -45,34 +45,36 @@
  kogo_isra_history_loc: "Descendants of the Lost House"
 #Orc
  orc_history_loc: "Changed from their Aldmer forms after Trinimac's transformation"
- iron_orc_history_loc: "Renounced their peaceful ways after Nedic aggression"
+ malahk_orc_history_loc: "Pursued Velothi to [Glossary( 'Resdayn', 'RESDAYN_GLOSS' )]"
+ iron_orc_history_loc: "Renounced their peaceful ways after mannish aggression"
 #Redguard
  redguard_history_loc: "Descendants of the [Glossary( 'Ra Gada', 'RAGADA_GLOSS' )]"
  crown_history_loc: "Scions of the [Glossary( 'Na-Totambu', 'NATOTAMBU_GLOSS' )]"
  yokudan_history_loc: "Survivors of the sinking of Old Yokuda"
  abecean_history_loc: "Descendants of [Glossary( 'Na-Totambu', 'NATOTAMBU_GLOSS' )] mariners who settled the Abecean"
  alikr_history_loc: "Kept the traditions of old Yokuda in Tamriel"
- silverhoof_history_loc: "Crossed the seas to escape persecution."
  ragada_victim_history_loc: "Swept away by the [Glossary( 'Warrior Wave', 'RAGADA_GLOSS' )]"
 #Argonian
  argonian_history_loc: "Blessed with sapience by the Hist during the [Glossary( 'Merethic Era', 'MERETHIC_GLOSS' )]"
  ojel_history_loc: "Developed out of [CULTURE.GetName] tribes under [TARGET_CULTURE.GetName] rule"
 #Ayleid
- mathmeldi_history_loc: "[CULTURE.GetCollectiveNoun] driven from their homes in Ald-Cyrod"
- barsaebic_history_loc: "Descended from [CULTURE.GetName] refugees of the [Glossary( 'Narfinsel Schism', 'NARFINSEL_GLOSS' )]"
- dynari_history_loc: "Descended from the Nenalata [CULTURE.GetName]"
+ mathmeldi_history_loc: "[CULTURE.GetCollectiveNoun] driven out of Cyrodiil by the Alessian Rebellion"
+ barsaebic_history_loc: "[CULTURE.GetName] driven out of Cyrodiil by the [Glossary( 'Narfinsel Schism', 'NARFINSEL_GLOSS' )]"
+ dynari_history_loc: "[CULTURE.GetName] driven out of Cyrodiil by the Alessian Order"
 #Daedra
  daedra_history_loc: "Interlopers from the Planes of Oblivion"
 #Maormer
  maormer_history_loc: "Cast out from fabled [Glossary( 'Aldmeris', 'ALDMERIS_GLOSS' )] in the [Glossary( 'Dawn Era', 'DAWN_ERA_GLOSS' )]"
- beyonder_history_loc: "[CULTURE.GetName] adventurers and pirates far from their mythical home of Pyandonea"
+ beyonder_history_loc: "[GetCulturePillar('heritage_maormeri').GetName] adventurers and pirates exiled from Pyandonea"
+#Kothri
+ yespest_history_loc: "Kothri uplifted by worship of Sanguine under [CULTURE.GetName] yoke"
+ horwalli_history_loc: "Formed of mannish tribes who fled the Ayleid"
+ kothringi_history_loc: "Formed during the mannish exodus from Cyrod"
 #Nedic
  nedic_history_loc: "Descended from unknown Nedic tribal groups"
- yespest_history_loc: "Developed out of Nedic tribes under [CULTURE.GetName] rule"
  keptu_history_loc: "Descendants of [CULTURE.GetName] and [TARGET_CULTURE.GetName] tribes"
  cyrod_history_loc: "Lived in Cyrod, where men knew no freedom"
 #Imga
- imga_history_loc: "Nearly as old as Nirn itself, no one really knows their true origin."
 #Lilmothiit
  lilmothiit_history_loc: "Given shape by the fox-god Tseol"
 #Dwemer

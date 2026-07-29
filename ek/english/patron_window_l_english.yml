@@ -3,13 +3,8 @@
  PATRON_BUTTON: "#T Devotion#!"
  PATRON_VIEW_TITLE: "Devotion"
  COMMUNE: "Commune"
- #patron_commune_tt: "Commune with [GetPlayer.Custom('GetPatronName')]"
- #patron_commune_tt: "Commune with [Localize(Concatenate(Concatenate('patron_', GetVariableSystem.Get('active_patron')), '_name'))]"
  patron_commune_tt: "Commune with [Localize(Concatenate(Concatenate('patron', ValueBreakdown.GetName), '_name'))]"
  NO_PATRONS: "This [faith|E] does not have any [patron_deities|E].\nFaiths only receive Patrons if they have the [GetFaithDoctrine('doctrine_main_pantheon_type_polytheism').GetBaseName] or [GetFaithDoctrine('doctrine_main_pantheon_type_daedric_prince').GetBaseName] [doctrines|E], or if they have a Secondary Pantheon.\n\nThis Faith instead has the [GetFaithDoctrine('doctrine_main_pantheon_type_monolatrism').GetBaseName] [doctrine|E], and its followers worship an Aspect of their deity."
- PATRON_MINOR_BOONS: "Minor Boons"
- PATRON_OFFERINGS: "Offerings"
- PATRON_MAJOR_BOONS: "Major Boons"
  patron_back_tt: "Back"
  #Faith window
  FAITH_PATRONS: "Patrons"
@@ -22,29 +17,6 @@
  CONFIRM_PATRON_BUTTON: "Become a [Trait.GetNameNoTooltip(GetPlayer)]"
  PATRON_TIMEOUT: "You cannot select a new patron until [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'recent_patron_selected' ) )]"
  YOUR_PATRON: "Your [patron|E]"
- #pantheons
- PATRON_DAEDRIC_PRINCES: "Daedric Princes"
- show_hide_desc: "[Select_CString( GetVariableSystem.Exists('patron_hide_desc'), 'Hide', 'Show' )] Description"
- gain_ardor_effect: "You gain $VALUE|+0$ Ardor@ardor_icon!"
- lose_ardor_effect: "You lose $VALUE|-0$ Ardor@ardor_icon!"
- insufficient_ardor: "You do not have $VALUE|0$ Ardor@ardor_icon!"
- #customisable
- selected_patron_name: "[GetPlayer.Custom('GetPatronName')]"
- selected_patron_desc: "[GetPlayer.Custom('GetPatronDesc')]"
- selected_patron_long_desc: "[GetPlayer.Custom('GetPatronLongDesc')]"
- patron_ardor: "#T Ardor: [GetPlayer.MakeScope.Var(Concatenate('ardor', GetVariableSystem.Get('patron_active'))).GetValue|V0]#!"
- patron_status: "#T Status:#!\n[GetPlayer.Custom(Concatenate('GetPatronStatus', GetVariableSystem.Get('patron_active')))]"
- # global variable [patron]_status w/ flag
- patron_status_nominal: "Nominal"
- patron_status_ascendant: "#P Ascendant#!"
- patron_status_convalescing: "#Z Convalescing#!"
- patron_status_cataclysm: "#N Cataclym#!"
- patron_worship_type: "#T Worship Type:#!\n[GetPlayer.Custom(Concatenate('GetPatronWorshipType', GetVariableSystem.Get('patron_active')))]"
- # has_doctrine tenet_focused_worship - 
- patron_worship_type_focused: "#P [daedric_focused]#!"
- patron_worship_type_pantheon: "[daedric_pantheon|E]"
- patron_worship_type_allowed: "[daedric_allowed|E]"
- patron_worship_type_secret: "#N [daedric_secret]#!"
 
  game_concept_patron_trait: "Patron Trait"
  game_concept_patron_traits: "Patron Traits"
@@ -52,106 +24,42 @@
 
  patron_no_selection: "No Patron Selected"
 
- patron_azura_name: "[GetPlayer.Custom('GetObAzuraName')]"
- patron_azura_desc: "Queen of Dawn and Dusk"
- patron_azura_long_desc: "[GetPlayer.Custom('GetObAzuraDesc')]"
- patron_azura_summary: "Status: [GetPlayer.Custom('GetPatronStatus_azura')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_azura')]\nArdor: [GetPlayer.MakeScope.Var('ardor_azura').GetValue|+0]"
  desc_azura: "Daedric Prince of Dawn and Dusk, Azura rules over Moonshadow in Oblivion. She is typically depicted as a woman holding a star and cresent moon. Azura is known for the curse that transformed the Chimer into the Dunmer after the Battle of Red Mountain."
 
- patron_boethiah_name: "[GetPlayer.Custom('GetObBoethiahName')]"
- patron_boethiah_desc: "Deceiver of Nations"
- patron_boethiah_long_desc: "[GetPlayer.Custom('GetObBoethiahDesc')]"
- patron_boethiah_summary: "Status: [GetPlayer.Custom('GetPatronStatus_boethiah')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_boethiah')]\nArdor: [GetPlayer.MakeScope.Var('ardor_boethiah').GetValue|+0]"
  desc_boethiah: "Daedric Prince of Plots, Boethiah rules over the Realm of Boethia in Oblivion. She is typically depicted as a warrior - male or female. In the Merethic Era Boethiah is aledged to have 'eaten' Trinimac, giving rise to Malacath and the Orcs."
  
- patron_clavicus_name: "[GetPlayer.Custom('GetObClavicusName')]"
- patron_clavicus_desc: "Master of Insidious Wishes"
- patron_clavicus_long_desc: "[GetPlayer.Custom('GetObClavicusDesc')]"
- patron_clavicus_summary: "Status: [GetPlayer.Custom('GetPatronStatus_clavicus')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_clavicus')]\nArdor: [GetPlayer.MakeScope.Var('ardor_clavicus').GetValue|+0]"
  desc_clavicus: "Daedric Prince of Trickery and Bargains, Clavicus Vile rules over the Fields of Regret in Oblivion. He is typically depicted as a horned daedra, accompanied by Barbas. This depiction has endured since the Merethic Era, being found in cave paintings from the period." #cant actually find anything major he's done prior to the Khanaten Flu, everything is in the future, relative to the start date
  
- patron_hermaeus_name: "[GetPlayer.Custom('GetObHermaeusName')]"
- patron_hermaeus_desc: "Demon of Knowledge"
- patron_hermaeus_long_desc: "[GetPlayer.Custom('GetObHermaeusDesc')]"
- patron_hermaeus_summary: "Status: [GetPlayer.Custom('GetPatronStatus_hermaeus')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_hermaeus')]\nArdor: [GetPlayer.MakeScope.Var('ardor_hermaeus').GetValue|+0]"
  desc_hermaeus: "Daedric Prince of Forbidden Knowledge, Hermaeus Mora rules over Apocrypha in Oblivion. He is typically depicted as the Wretched Abyss, a swirling mass of eyes and tentacles. Nordic Myth tells that Ysgramor was almost tricked by Hermaeus Mora into becoming an Elf."
  
- patron_hircine_name: "[GetPlayer.Custom('GetObHircineName')]"
- patron_hircine_desc: "Father of Manbeasts"
- patron_hircine_long_desc: "[GetPlayer.Custom('GetObHircineDesc')]"
- patron_hircine_summary: "Status: [GetPlayer.Custom('GetPatronStatus_hircine')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_hircine')]\nArdor: [GetPlayer.MakeScope.Var('ardor_hircine').GetValue|+0]"
  desc_hircine: "Daedric Prince of the Hunt, Hircine rules over the Hunting Grounds in Oblivion. He is typically depicted as a humanoid figure with the head replaced by the skull of a buck deer."
  
  patron_jyggalag_name: "Jyggalag"
  patron_jyggalag_desc: "Prince of Order"
  patron_jyggalag_long_desc: "Daedric Prince of Order, Jyggalag currently exists in the form of Sheogorath. He is relatively unknown in Tamriel, thus few depictions of him exist. At the end of each Era Jyggalag assumes his original form and restores the Shivering Isles to order."
- 
- patron_malacath_name: "[GetPlayer.Custom('GetObMalacathName')]"
- patron_malacath_desc: "Defender of the Betrayed"
- patron_malacath_long_desc: "[GetPlayer.Custom('GetObMalacathDesc')]"
- patron_malacath_summary: "Status: [GetPlayer.Custom('GetPatronStatus_malacath')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_malacath')]\nArdor: [GetPlayer.MakeScope.Var('ardor_malacath').GetValue|+0]"
+
  desc_malacath: "Daedric Prince of the Spurned, Malacath rules over the Ashpit in Oblivion. He is typically depicted as an Orc wielding a sword or axe. Malacath has a dedicated following among the Orcs, with many living by his creed - The Code of Malacath."
  desc_malahk: "The god-king Malahk swore a blood oath of vengeance against the Velothi gods and their prophet, and chased his enemies to the ashen lands. His children honour this grudge, forever troubling the accursed elves."
  desc_muluk: "Boss Muluk is the protective big brother of all goblin-ken. An unkind master, he praises the strong and mocks the weak, but is nonetheless quick to anger when his folk are threatened or mistreated."
  
- patron_mehrunes_name: "[GetPlayer.Custom('GetObMehrunesName')]"
- patron_mehrunes_desc: "Most Puissant Lord"
- patron_mehrunes_long_desc: "[GetPlayer.Custom('GetObMehrunesDesc')]"
- patron_mehrunes_summary: "Status: [GetPlayer.Custom('GetPatronStatus_mehrunes')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_mehrunes')]\nArdor: [GetPlayer.MakeScope.Var('ardor_mehrunes').GetValue|+0]"
  desc_mehrunes: "Daedric Prince of Destruction, Mehrunes Dagon rules over the Deadlands in Oblivion. He is typically depicted as having four arms with features resembling an Orc. The destruction of Mournhold in the First Era was caused by Mehrunes Dagon." #if someone has a better description, please add it
  
- patron_mephala_name: "[GetPlayer.Custom('GetObMephalaName')]"
- patron_mephala_desc: "Teacher of the Secret Arts"
- patron_mephala_long_desc: "[GetPlayer.Custom('GetObMephalaDesc')]"
- patron_mephala_summary: "Status: [GetPlayer.Custom('GetPatronStatus_mephala')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_mephala')]\nArdor: [GetPlayer.MakeScope.Var('ardor_mephala').GetValue|+0]"
  desc_mephala: "Daedric Prince of an obscured sphere, Mephala rules over the Spiral Skein in Oblivion. She is typically depicted as a Dunmer woman with the legs of a spider growing from her back, but is known to assume other forms depending on her target."
- 
- patron_meridia_name: "[GetPlayer.Custom('GetObMeridiaName')]"
- patron_meridia_desc: "Lady of Infinite Energies"
- patron_meridia_long_desc: "[GetPlayer.Custom('GetObMeridiaDesc')]"
- patron_meridia_summary: "Status: [GetPlayer.Custom('GetPatronStatus_meridia')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_meridia')]\nArdor: [GetPlayer.MakeScope.Var('ardor_meridia').GetValue|+0]"
+
  desc_meridia: "Daedric Prince of Energy and Life, Meridia rules over the Colored Rooms in Oblivion. She is typically depicted as a woman with large feathered wings wearing a robe. She is considered to be one of the more benevolent Princes due to her hatred of the undead."
- 
- patron_molag_name: "[GetPlayer.Custom('GetObMolagName')]"
- patron_molag_desc: "Harvester of Souls"
- patron_molag_long_desc: "[GetPlayer.Custom('GetObMolagDesc')]"
- patron_molag_summary: "Status: [GetPlayer.Custom('GetPatronStatus_molag')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_molag')]\nArdor: [GetPlayer.MakeScope.Var('ardor_molag').GetValue|+0]"
+
  desc_molag: "Daedric Prince of Dominion, Molag Bal rules over Coldharbour in Oblivion. He is typically depicted with the rough form of a satyr and a lamprey like mouth. Also known as the Patriarch of Vampires, dedicated followers maybe rewarded with Pureblood Vampirism" #really really need better description
- 
- patron_namira_name: "[GetPlayer.Custom('GetObNamiraName')]"
- patron_namira_desc: "Lady of Decay"
- patron_namira_long_desc: "[GetPlayer.Custom('GetObNamiraDesc')]"
- patron_namira_summary: "Status: [GetPlayer.Custom('GetPatronStatus_namira')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_namira')]\nArdor: [GetPlayer.MakeScope.Var('ardor_namira').GetValue|+0]"
+
  desc_namira: "Daedric Prince of Ancient Darkness, Namira rules over the Scuttling Void in Oblivion. She is typically depicted as a woman in a heavy robe. She has a strong association with beggars, granting the Gift of Pity to the Beggar Prince according to the book by the same name."
- 
- patron_nocturnal_name: "[GetPlayer.Custom('GetObNocturnalName')]"
- patron_nocturnal_desc: "Mistress of Shadows"
- patron_nocturnal_long_desc: "[GetPlayer.Custom('GetObNocturnalDesc')]"
- patron_nocturnal_summary: "Status: [GetPlayer.Custom('GetPatronStatus_nocturnal')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_nocturnal')]\nArdor: [GetPlayer.MakeScope.Var('ardor_nocturnal').GetValue|+0]"
+
  desc_nocturnal: "Daedric Prince of Night and Darkness, Nocturnal rules over the Evergloam in Oblivion. She is typically depicted as a woman with two deep black ravens. She is recognized by many thieves as their patron, bringing them luck via the souls of departed Nightingales."
  
- patron_peryite_name: "[GetPlayer.Custom('GetObPeryiteName')]"
- patron_peryite_desc: "Bringer of Pestilence"
- patron_peryite_long_desc: "[GetPlayer.Custom('GetObPeryiteDesc')]"
- patron_peryite_summary: "Status: [GetPlayer.Custom('GetPatronStatus_peryite')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_peryite')]\nArdor: [GetPlayer.MakeScope.Var('ardor_peryite').GetValue|+0]"
  desc_peryite: "Daedric Prince of Natural Order, Peryite rules over the Pits in Oblivion. He is typically depicted as a six limbed dragon, despite being one of the weaker Princes. Followers of Peryite consider diseases and other maladies to be a blessing from the Prince."
  
- patron_sanguine_name: "[GetPlayer.Custom('GetObSanguineName')]"
- patron_sanguine_desc: "Lord of Dark Indulgence" #uesp didn't include an actual title, so made one up
- patron_sanguine_long_desc: "[GetPlayer.Custom('GetObSanguineDesc')]"
- patron_sanguine_summary: "Status: [GetPlayer.Custom('GetPatronStatus_sanguine')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_sanguine')]\nArdor: [GetPlayer.MakeScope.Var('ardor_sanguine').GetValue|+0]"
  desc_sanguine: "Daedric Prince of Hedonistic Revelry, Sanguine rules over the Myriad Realms of Revelry in Oblivion. He is typically depicted as corpulent dremora holding some form of alcohol. He is considered to be one of the more harmless Princes due to his Sphere."
  
- patron_sheogorath_name: "[GetPlayer.Custom('GetObSheogorathName')]"
- patron_sheogorath_desc: "Comforter of Men"
- patron_sheogorath_long_desc: "[GetPlayer.Custom('GetObSheogorathDesc')]"
- patron_sheogorath_summary: "Status: [GetPlayer.Custom('GetPatronStatus_sheogorath')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_sheogorath')]\nArdor: [GetPlayer.MakeScope.Var('ardor_sheogorath').GetValue|+0]"
  desc_sheogorath: "Daedric Prince of Madness, Sheogorath rules over the Shivering Isles in Oblivion. He is typically depicted as a man in fine clothes holding a cane. He was originally the Prince of Order, but was cursed to madness by the other Princes as they feared his power."
  
- patron_vaermina_name: "[GetPlayer.Custom('GetObVaerminaName')]"
- patron_vaermina_desc: "Weaver of the Panoply"
- patron_vaermina_long_desc: "[GetPlayer.Custom('GetObVaerminaDesc')]"
- patron_vaermina_summary: "Status: [GetPlayer.Custom('GetPatronStatus_vaermina')]\nWorship Type: [GetPlayer.Custom('GetPatronWorshipType_vaermina')]\nArdor: [GetPlayer.MakeScope.Var('ardor_vaermina').GetValue|+0]"
  desc_vaermina: "Daedric Prince of Dreams, Vaermina rules over Quagmire in Oblivion. She is typically depicted as an older woman wielding a staff, sometimes accompanied by a snake. Her followers are often alchemists, their most notable concoction being Vaermina's Torpor."
 
 #Divines
@@ -164,9 +72,10 @@
  desc_zenithar: "God of work, commerce, and wealth, invoked for success in business ventures. Teaches prosperity through honest industry, rather than violence or deceit."
  desc_stendarr: "God of mercy, justice, and righteousness. Patron of all those who wield righteous might to protect the weak, from emperors to holy warriors."
  desc_shezarr: "Shezarr, spirit of Human Undertaking, particularly against Aldmeri Aggression. Patron of the Imperial Battlemages, but since less popular due to the cosmopolitan nature of the Cult."
+ desc_dragonborn: "The hero-god of Mankind and the Empire. [GetGlobalVariable('dragonborn_emperor').GetCharacter.GetTitledFirstNameNoTooltip] brought peace to Tamriel and started the Third Era by uniting the world under the banner of the Dragon."
 
 #Kothri
- desc_arkay_nede: "Legends speak of a trader whose passion for secret knowledge brought his doom. His quest had however not gone unnoticed - at his deathbed the Mothers Dibe-Mara-Kin granted him time, time unending to seek his answers. In turn, Ark'ay bring us death, as death too is necessary for life, the neverending cycle."
+ desc_arkay_breton: "Legends speak of a trader whose passion for secret knowledge brought his doom. His quest had however not gone unnoticed - at his deathbed the Divines granted him time, time unending to seek his answers. In turn, Ark'ay bring us death, as death too is necessary for life, the neverending cycle."
  desc_dibe_nede: "Dibe, the first Mother Around-Us, brings us life from heaven. With her blessing we devote our energies to music, to creation, to love and greater purpose."
  desc_kin_nede: "Kin, the third Mother Around-Us, bring us life from water. With her blessing we are spared the terrible storm, yet gifted the wind in our sails."
  desc_mara_nede: "Mara, the second Mother Around-Us, brings us life from earth. With her blessing we toil the fields to grow produce, and from our flesh we multiply and again bring life."
@@ -193,25 +102,25 @@
  desc_zenithar_redguard: "Zenithar, the Pull It Together God, who rewards hard work and perseverance in everyday affairs, despite the circumstances."
 
 #Reach
- god_dibella_reach_name: "Dibella"
- desc_dibella_reach: "The Matron of Joy is a revered goddess of passion, carousing and the harvest. In a cruel world, Dibella provides a much welcome harbour of happiness."
- god_mara_reach_name: "Mara"
- desc_mara_reach: "None is beyond the reach of the Forgiving Mother, goddess of the hearth and medicine. Her devoted work hard at tempering the trials of Hircine."
- desc_lorkh: "It was Lorkh who convinced the Spirit Queen to allow him the creation of a realm for wayward spirits — the Mortal Realm, for which he sacrificed himself. Yet he walks among mortals and will in times of great need again reveal himself."
+ god_dibella_reach_name: "Mountain Mother, the Maiden"
+ desc_dibella_reach: "Splendid is the Mountain Mother, cow-eyed and briar-wreathed as she dances ceaselessly amidst a feast, amidst the couplings, amidst the birdsong of the flutes."
+ god_mara_reach_name: "Mountain Mother, the Matron"
+ desc_mara_reach: "Fruitful is the Mountain Mother, gently dreadful, bleeding rivers of milk and striking honey from veins of rock to rear a million children climbing down her breast."
+ desc_lorkh: "The Man-on-the-Moon was the great convincer who talked Nothing into becoming Everything and taught resulting men dangerous things that came of great use."
  god_hircine_reach_name: "Hircine"
- desc_hircine_reach: "The Hunt-Father rules over the Realm of Flesh and through harsh lessons teaches the Reachmen to be forever on guard, honing them in order to protect them."
+ desc_hircine_reach: "The unmerciful Huntsman's laws are plain and clear — make clean kills, take no more than your share, let beasts have you when you're dead."
  god_malacath_reach_name: "Malacath"
- desc_malacath_reach: "Patron to all pariahs and persecuted peoples, the lesson of the Lord of Ash and Bone is to grow the strength to exact vengeance upon your oppressors."
+ desc_malacath_reach: "The wrathful Orc-god Malacath smashes the skull of the enemy in righteous fury to defend those who have no corner from those who would take it away."
  god_mehrunes_reach_name: "Mehrunes Dagon"
- desc_mehrunes_reach: "Mehrunes Dagon, while a spirit of destruction, is also the Lord of Ambition. To forever strive for the betterment of yourself and your clan is greatly valued in the Reach."
- god_molag_reach_name: "Molag Bal"
- desc_molag_reach: "The Father of Torment is a schemer and trickster whose bargain with the Reachmen is simple: endure. Pain and suffering is inevitable in a harsh world, so resilience is the only way."
+ desc_mehrunes_reach: "The Wildfire god seeds the land with hope after burning it down and whittles men into new shapes with the edge of his razor."
  god_namira_reach_name: "Namira"
- desc_namira_reach: "As the Spirit Queen, goddess of death, her realm is the infinite World of Spirit, counterpart to the World of Flesh ruled by Hircine."
+ desc_namira_reach: "All begins from rot and all becomes as rot as Namira turns the cycles of decay and renewal: letting the world flourish, then wiping it all away."
  god_nocturnal_reach_name: "Nocturnal"
- desc_nocturnal_reach: "Spirit of the Night, Nocturnal is an enigmatic deity said to be always watching, with crows as her faithful servants."
- god_peryite_reach_name: "Peryite"
- desc_peryite_reach: "Often associated with pestilence, to the Reach clans Peryite is the Lord of Order. While conflict brings the world forward, a natural order must maintain the balance, culling the weak and checking the excesses of men."
+ desc_nocturnal_reach: "She — harpy, haruspex, augur; the nameless, faceless crone who brings tar-black night across her wings, and auspices in her wake, to learn and overcome the future."
+ god_magnus_reach_name: "Magnus"
+ desc_magnus_reach: "The Old Gloamer ripped his bright eye and hung it in the sky to gift mortals with light and sight, but spells and witchery spill out of his empty socket and pollute the world."
+ desc_karth: "Carry the spirits of the departed gently on your waters flush with memory, you child of two mothers; quench our thirst, quench our hunger, quench the land, quench the living."
+ desc_druadach: "Quake not the earth with your heart, O great bones of our homeland, honored and mourned in your slumber! Only by your bountiful body is the soul of our people spared from the enemy."
 
 #Aelf
  god_stendarr_mer_name: "Stendarr"
@@ -231,6 +140,10 @@
  god_phynaster_breton_name: "Phynaster"
  desc_phynaster_breton: "Phynaster, god of medicine and divine physician. He discovered many healing magicks that made our lives longer and cured many gods of their afflictions."
  desc_jephre: "Jephre, god of storytelling. Due to him, we remember our legends and deeds of the ancient heroes."
+ god_auriel_breton_name: "Auri-El"
+ desc_auriel_breton: "King Auri-El guides the heavens as an idealised form of what a worshipper of the Aedra should be - humble, pious, and firm in their beliefs."
+ god_kyne_breton_name: "Kyne"
+ desc_kyne_breton: "Marshal and warrior-wife, Kyne is the righteous arm of the ancestors. She teaches the pious nature of battle, and of the struggle that all worshippers of the gods must face with a stoic yet lax nature."
 
 #Aldmer
  desc_auriel: "[GetPlayer.Custom('GetAurielVerse')]"
@@ -258,6 +171,8 @@
  desc_xen: "[GetPlayer.Custom('GetXenVerse')]"
  poet_desc_xen: "Bountiful Xen\nBless our plows\nSeeds sowed again\nHeed our bows"
  normal_desc_xen: "The teachings of the hero-god Xen are invoked in all matters demanding an even exchange, be it trade or vengeance."
+ desc_cassimoran: "Cassimoran brought order to Auridon when she defeated a rebellion against the Aran-El, then instituted new codes of dueling to prevent further war and bloodshed."
+ desc_iric: "Iric was a steward of Crystal Tower as well as a great hunter — the legendary indric Naeryde willingly gave him its hide so it could be fashioned into a magical cloak."
 
 #Bosmer
  god_auriel_bosmer_name: "Auri-El"
@@ -433,8 +348,6 @@
  god_ta_peryite_name: "The Taskmaster"
  desc_ta_peryite: "Balance yourself as the Taskmaster does with universal order."
 
- #Satakal Patrons
-
 #Tribunal
  desc_vivec: "The Warrior-Poet has always represented the spirit and duality of the Dunmer people, which is reflected in his half-Dunmer, half-Chimer appearance."
  desc_almalexia: "Mother Morrowind is known as the source of compassion, sympathy, and forgiveness, the protector of the poor and weak, and the patron of teachers and healers."
@@ -473,6 +386,19 @@
  desc_necromancer_pre: "The Necromancer above is the mythic figure who brings undeath to mortal lands, ruling from the gaps in Arkay's light."
  desc_necromancer_post: "Through Mannimarco's ascension, the Necromancer has assumed a celestial visage to reflect Arkay's light. Now embodied and with a powerful will, the Necromancer strives to eclipse and disrupt Arkay's sphere to unleash the necromancers below."
  desc_mannimarco: "Mannimarco, greatest among necromancers, is Ascended, joining with the Necromancer above. Together, the God of Worms brings greater depths of undeath to all necromancers below."
+
+# Lorkhan
+ desc_lrkhn_warrior: "Lr'khn, the warrior, led the Horwalli in our war for freedom. We honor him with every battle we win and every enemy head we take."
+ desc_lrkhn_trickster: "Lr'khn, the trickster, used guile as well as strength to free the Horwalli. He tricked even death and will return again to lead us."
+ desc_lrkhn_king: "Lr'khn, the king, is our eternal divine leader. While he does not lead us directly anymore, his spirit is present in every righteous leader."
+
+# Sanguine
+ god_sg_birth_name: "Sanguine, of the Birth"
+ desc_sg_birth: ""...(he who is the) piebald bull-o-days, deliver (unto us) the harvest of the grain, the grapes, the cattle, a sea-bounty, a coin-bounty, uncomplicated motherhoods, fatherhoods...""
+ god_sg_feast_name: "Sanguine, of the Feast"
+ desc_sg_feast: ""...Three-times-three libations, liberations, (of the) goat-horned, vine-wreathed lord, flowering, ripening, merry and cornucopeaic, take (our) pain away, make (our) blood quicken...""
+ god_sg_wild_name: "Sanguine, of the Wild"
+ desc_sg_wild: ""...(come,) keeper, holy beast rapt in secrecy; prowling madly the silent groves and coves to see them left sacred; (your) leaden cup overfloweth with a sweet and deadening drink...""
 
 #Patron stuff
  action_pick_patron: "Choose a Patron"

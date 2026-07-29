@@ -431,22 +431,17 @@
 
  
  ###Orsimer
- race_orsimer_name: "Orc I"
- race_orsimer: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_name'), 'no' )]"
- race_orsimer_2_name: "Orc II"
- race_orsimer_2: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_2_name'), 'no' )]"
+ race_orc_name: "Orc"
+ race_orc: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orc_name'), 'no' )]"
  
- race_orsimer_wood_name: "Wood Orc I"
- race_orsimer_wood: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_wood_name'), 'no' )]"
- race_orsimer_wood_2_name: "Wood Orc II"
- race_orsimer_wood_2: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_wood_2_name'), 'no' )]"
+ race_orc_wood_name: "Wood Orc"
+ race_orc_wood: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orc_wood_name'), 'no' )]"
  
- race_orsimer_iron_name: "Iron Orc I"
- race_orsimer_iron: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_iron_name'), 'no' )]"
- race_orsimer_iron_2_name: "Iron Orc II"
- race_orsimer_iron_2: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_iron_2_name'), 'no' )]"
- race_orsimer_malahk_name: "Orsimer, Malahk"
- race_orsimer_malahk: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_malahk_name'), 'no' )]"
+ race_orc_iron_name: "Iron Orc"
+ race_orc_iron: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orc_iron_name'), 'no' )]"
+
+ race_orc_malahk_name: "Malahk Orc"
+ race_orc_malahk: "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orc_malahk_name'), 'no' )]"
 
 
 ### TO DO: proper up to date anatomy loc and gene loc ###
@@ -804,19 +799,7 @@
 
  gene_bs_nose_swollen: "Nose Swelling"
 
- beast_teeth_tusks: "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Tusk Size', '' )]"
-
- orc_teeth_bottom_size: "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Lower Teeth Size', '' )]"
-
- orc_teeth_broken: "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Tusks Broken', '' )]"
- tusks_not_broken: "Tusks Not Broken"
- left_tusk_broken: "Left Tusk Broken"
- right_tusk_broken: "Right Tusk Broken"
- both_tusk_broken: "Both Tusks Broken"
-
- orc_teeth_forward_angle: "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Tusks Forward Angle', '' )]"
-
- orc_teeth_outward_angle: "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Tusks Outward Angle', '' )]"
+ beast_teeth: "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Tusk Size', '' )]"
 
  gene_bs_mouth_center_curve: "Mouth Curve"
 

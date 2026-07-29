@@ -56,6 +56,12 @@
  trait_p_dv_shezarr_desc: "A follower of Shezarr"
  trait_p_dv_shezarr_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetDvShezarrName')]."
 
+ trait_p_dv_dragonborn: "Follower of the Dragonborn"
+ trait_p_dv_dragonborn_base: "Follower of the Dragonborn"
+ trait_p_dv_dragonborn_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_dv_dragonborn_desc' )]"
+ trait_p_dv_dragonborn_desc: "A follower of the Dragonborn"
+ trait_p_dv_dragonborn_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of the Dragonborn"
+
  # Aldmer
  trait_p_ae_auriel: "Follower of [ROOT.Char.Custom('GetAeAurielName')]"
  trait_p_ae_auriel_base: "Follower of Auriel"
@@ -110,6 +116,18 @@
  trait_p_ae_lorkhan_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ae_lorkhan_desc' )]"
  trait_p_ae_lorkhan_desc: "A follower of Lorkhan"
  trait_p_ae_lorkhan_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetAeLorkhanName')]."
+
+ trait_p_ae_cassimoran: "Follower of [ROOT.Char.Custom('GetAeCassimoranName')]"
+ trait_p_ae_cassimoran_base: "Follower of Cassimoran"
+ trait_p_ae_cassimoran_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ae_cassimoran_desc' )]"
+ trait_p_ae_cassimoran_desc: "A follower of Cassimoran"
+ trait_p_ae_cassimoran_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetAeCassimoranName')]."
+
+ trait_p_ae_iric: "Follower of [ROOT.Char.Custom('GetAeIricName')]"
+ trait_p_ae_iric_base: "Follower of Iric"
+ trait_p_ae_iric_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ae_iric_desc' )]"
+ trait_p_ae_iric_desc: "A follower of Iric"
+ trait_p_ae_iric_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetAeIricName')]."
  
  # Daedra
  trait_p_ob_azura: "Follower of [ROOT.Char.Custom('GetObAzuraName')]"
@@ -370,7 +388,7 @@
  trait_p_rc_reman_base: "Follower of Reman"
  trait_p_ch_reman_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ch_reman_desc' )]"
  trait_p_ch_reman_desc: "A follower of Reman Cyrodiil"
- trait_p_ch_reman_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Reman 'Light of Man', who defeated the Akaviri invaders and was blessed by Akatosh with the Dragonblood."
+ trait_p_ch_reman_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Reman 'Light of Man', who defeated the Akaviri invaders and founded the Second Empire."
  trait_p_rc_reman_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Reman, Son of the East."
  
  trait_p_ch_bendu: "Follower of Bendu Olo"
@@ -755,6 +773,39 @@
  trait_p_kw_mannimarco_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_kw_mannimarco_desc' )]"
  trait_p_kw_mannimarco_desc: "A servant of Mannimarco, the God of Worms"
  trait_p_kw_mannimarco_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a servant of Mannimarco, the God of Worms."
+
+#Lorkhan
+ trait_p_lk_king: "Follower of [ROOT.Char.Custom('GetLkKingName')]"
+ trait_p_lk_king_base: "Follower of Lorkhan, the King"
+ trait_p_lk_king_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_lk_king_desc' )]"
+ trait_p_lk_king_desc: "A follower of Lorkhan, the King"
+ trait_p_lk_king_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of [ROOT.Char.Custom('GetLkKingName')]."
+
+#Reach
+ trait_p_rf_karth: "Follower of Karth"
+ trait_p_rf_karth_base: "Follower of Karth"
+ trait_p_rf_karth_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_rf_karth_desc' )]"
+ trait_p_rf_karth_desc: "A follower of Karth"
+ trait_p_rf_karth_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Karth."
+
+# Sanguine
+ trait_p_sg_birth: "Follower of Sanguine, of the Birth"
+ trait_p_sg_birth_base: "Follower of Sanguine, of the Birth"
+ trait_p_sg_birth_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_sg_birth_desc' )]"
+ trait_p_sg_birth_desc: "A follower of Sanguine, of the Birth"
+ trait_p_sg_birth_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Sanguine, of the Birth."
+
+ trait_p_sg_feast: "Follower of Sanguine, of the Feast"
+ trait_p_sg_feast_base: "Follower of Sanguine, of the Feast"
+ trait_p_sg_feast_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_sg_feast_desc' )]"
+ trait_p_sg_feast_desc: "A follower of Sanguine, of the Feast"
+ trait_p_sg_feast_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Sanguine, of the Feast."
+
+ trait_p_sg_wild: "Follower of Sanguine, of the Wild"
+ trait_p_sg_wild_base: "Follower of Sanguine, of the Wild"
+ trait_p_sg_wild_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_sg_wild_desc' )]"
+ trait_p_sg_wild_desc: "A follower of Sanguine, of the Wild"
+ trait_p_sg_wild_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a follower of Sanguine, of the Wild."
 
 #Misc
  trait_birthsign: "Birthsign"

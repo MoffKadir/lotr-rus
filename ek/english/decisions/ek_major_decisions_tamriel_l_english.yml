@@ -13,15 +13,12 @@
  
  ### Attrebus/Interregnum decisions
  
- attrebus_draft_tsaesci_act_decision: "Draft the Tsaesci Act"
- attrebus_draft_tsaesci_act_decision_desc: "The Akaviri rule over Cyrodiil and Tamriel has been considered a dark part of the history of the province by most of the local rulers.\n\nEven after the Potentate fell, some provinces and rulers within the Imperial Province still cling to their old Akaviri ways, and the Elder Council tasked you with ensuring that none would be able to ever set foot in Cyrodiil and the Imperial Isle again, as to not once more see the province fall under Akaviri rule."
- attrebus_draft_tsaesci_act_decision_tooltip: "Officially expell the Akaviri from Cyrodiil"
- attrebus_draft_tsaesci_act_decision_confirm: "Behead the Snake!"
+ attrebus_draft_tsaesci_act_decision: "Pass the Tsaesci Act"
+ attrebus_draft_tsaesci_act_decision_desc: "Many of the surviving supporters of the Akaviri Potentate still refuse to recognize me as their Emperor. New measures are needed to combat the dissidents."
+ attrebus_draft_tsaesci_act_decision_tooltip: "Combat the Akaviri dissidents"
+ attrebus_draft_tsaesci_act_decision_confirm: "Demand their fealty."
  attrebus_draft_tsaesci_act_decision_no_tsaesci_ruler_imperial_isle: "No ruler in the Imperial Isle has the Tsaesci [heritage|E]"
- attrebus_draft_tsaesci_act_decision_no_tsaesci_province_imperial_isle: "No province in the Imperial Isle has the Tsaesci [heritage|E]"
- attrebus_draft_tsaesci_act_decision_effect_desc: "After the Akaviri Act is drafted, every Akaviri ruler within your realm will have their land seized and awarded to you. Every Akaviri county will see its [culture|E] changed, but its [development|E] halved.\nThis effect will also be applied to any county that becomes part of your realm after the Act is passed."
- attrebus_tsaesci_county_title: "Tsaesci County Expelled"
- attrebus_tsaesci_county_desc: "The county of [title.GetBaseName] is ours, and its Akaviri population has been expelled."
+ attrebus_draft_tsaesci_act_decision_effect_desc: "After the Tsaesci Act is enacted, your Akaviri vassals ([GetCulturePillar('heritage_tsaesci').GetName] [heritage|E] [culture|E] or [GetFaithByKey('court_dawnbeauty').GetName] [faith|E]) will have a choice between swearing fealty to you or refusing. If they refuse, you will gain an [imprisonment_reason|E] against them and will be able [banish|E] their kin from the [realm|E]."
   
  ### Orsinium
  create_orsinium_decision: "Reestablish Orsinium"
@@ -92,33 +89,16 @@
  integrate_nibenay_bravil_effect_de_jure_tt: "[GetTitleByKey('k_bravil').GetName] becomes [de_jure|E] liege of all duchies in the [region|E] of [GetGeographicalRegion('mundus_tamriel_cyrodiil_cisniben_north').GetName]"
 
  accept_colovia_nibenay_divide_decision: "The Seat of Sundered Kings"
- accept_colovia_nibenay_divide_decision_desc: "There hasn't been a proper Emperor on the Ruby Throne since the death of Emperor Reman III. Not even General Attrebus managed to establish a central authority. And without an Empire to keep the two halves of [GetTitleByKey('e_cyrodiil').GetNameNoTier] together, perhaps it is best if Colovia and Nibenay once again go their separate ways.\nPerhaps it is at the time to formaly recognize those two regions as separate, as they have last been before the days of the Second Empire."
+ accept_colovia_nibenay_divide_decision_desc: "Without an Empire to keep the two halves of [GetTitleByKey('e_cyrodiil').GetNameNoTier] together, perhaps it is best if Colovia and Nibenay once again go their separate ways."
  accept_colovia_nibenay_divide_decision_tooltip: "Divide Cyrodiil into two [de_jure|E] [empires|E]"
  accept_colovia_nibenay_divide_decision_confirm: "A Sundered Land of Sundered Kings"
- accept_colovia_nibenay_divide_decision.colovia_vassals.tt: "To Colovia go the following Kingdoms: #V Anvil#!, #V Kvatch#!, #V Skingrad#!, #V Chorrol#!, and #V Bruma#!"
- accept_colovia_nibenay_divide_decision.nibenay_vassals.tt: "To Nibenay go the following Kingdoms: #V Heartlands#!, #V Cheydinhal#!, #V Bravil#!, amd #V Leyawiin#!"
- accept_colovia_nibenay_divide_decision.create_de_jure_empires.tt: "Each half of Cyrodiil will now have its own [de_jure|E] Empire, claiming authority solely over the Imperial Counties it has been attributed to."
- accept_colovia_nibenay_divide_decision.reunite_cyrodiil.tt: "Should one half of Cyrodiil completely unite its region, it will be able to #V challenge the other half for the unity of the province#!, claiming the mantle of the #bold Empire of Cyrodiil#! should they succeed.\nAlternatively, through #V skillfull maneuvers of marriages and alliances#!, the one person to hold both [de_jure|E] Empires would reunite them too."
+ accept_colovia_nibenay_divide_decision.colovia_vassals.tt: "All [kingdoms|E] in the [GetGeographicalRegion('mundus_tamriel_cyrodiil_colovia_bruma').GetName] [region|E] will become [de_jure|E] vassals of [GetTitleByKey('e_colovian_estates').GetNameNoTier]"
+ accept_colovia_nibenay_divide_decision.nibenay_vassals.tt: "All [kingdoms|E] in the [GetGeographicalRegion('mundus_tamriel_cyrodiil_nibenay').GetName] and [GetGeographicalRegion('mundus_tamriel_cyrodiil_heartlands').GetName] [regions|E] will become [de_jure|E] vassals of [GetTitleByKey('e_nibenay').GetNameNoTier]"
+ accept_colovia_nibenay_divide_decision.reunite_cyrodiil.tt: "Rulers of [GetTitleByKey('e_nibenay').GetNameNoTier] or [GetTitleByKey('e_colovian_estates').GetNameNoTier] will be able to attempt to restore the #bold Empire of Cyrodiil#! and destroy other pretenders to the Imperial throne."
 
- colovia_march_east_decision: "Prepare to March East"
- colovia_march_east_decision_desc: "For too long Cyrodiil has been divided. Our hold over Colovia cannot be contested, and it is time to send our troops east, to claim the Nibenese Kingdoms and finally unite Cyrodiil."
- colovia_march_east_tooltip: "Cyrodiil needs a new Emperor!"
- colovia_march_east_decision_tooltip: "Cyrodiil needs a new Emperor!"
- colovia_march_east_decision_confirm: "For Cyrodiil!"
- colovia_march_east_decision.claim_nibenay.tt: "If you press your claim over the title of Nibenay via war, you will be crowned Emperor of Cyrodiil."
- colovia_march_east_decision.no_nibenay.tt: "In the event that no one claims the eastern half of Cyrodiil, you will be able to use a [casus_belli|E] over its parts, at an increased cost."
- 
- nibenay_march_west_decision: "Prepare to March West"
- nibenay_march_west_decision_desc: "For too long Cyrodiil has been divided. We stand strong in Nibenay, and it is time for the West to submit, as it did for centuries."
- nibenay_march_west_tooltip: "Cyrodiil needs a new Emperor!"
- nibenay_march_west_decision_tooltip: "Cyrodiil needs a new Emperor!"
- nibenay_march_west_decision_confirm: "For Cyrodiil!"
- nibenay_march_west_decision.claim_colovia.tt: "If you press your claim over the title of Colovia via war, you will be crowned Emperor of Cyrodiil."
- nibenay_march_west_decision.no_colovia.tt: "In the event that no one claims the western half of Cyrodiil, you will be able to use a [casus_belli|E] over its parts, at an increased cost."
-
- ###Nedic Confederation
- restore_nedic_kingdom_decision: "Unite Nedes"
- restore_nedic_kingdom_decision_desc: "Before the [Glossary( 'Ra Gada', 'RAGADA_GLOSS' )] came, our people were united in a loose confederation of tribes, swearing fealty to the High King in Skyreach. Although it is a distant memory for our people, I could claim to be an heir of that realm by returning our ancient lands."
- restore_nedic_kingdom_decision_tooltip: "You will create a new [empire|E] for Nedic people"
- restore_nedic_kingdom_decision_confirm: "Never again shall we be subjugated!"
+ ###Deathlands - high kingdom for Keptu
+ restore_deathlands_decision: "Unite Keptu"
+ restore_deathlands_decision_desc: "Before the [Glossary( 'Ra Gada', 'RAGADA_GLOSS' )] came, our people were united in a loose confederation of tribes, swearing fealty to the High King in Skyreach. Although it is a distant memory for our people, I could claim to be an heir of that realm by returning our ancient lands."
+ restore_deathlands_decision_tooltip: "You will create a new [empire|E] for Keptu"
+ restore_deathlands_decision_confirm: "Never again shall we be subjugated!"
  form_nedic_kingdom_scripted_effect_de_jure_tt: "All kingdoms within the [region|E] of [GetGeographicalRegion('ek_nedic_kingdom_region').GetName] will become [de_jure|E] vassals of [nedic_confederation.GetNameNoTier]"

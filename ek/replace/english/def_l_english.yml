@@ -89,3 +89,8 @@
  frontend_mp_game_setup_date_replace: "[MpBookmarkItem.GetDate.GetStringShortNoYear], $ERA_STRING_YEAR_MP_BOOKMARK_1_CONCAT$"
  # Default: [GameMpSetup.GetSelectedBookmark.GetDate.GetString]
  frontend_mp_game_setup_bookmark_date_replace: "[GameMpSetup.GetSelectedBookmark.GetDate.GetStringShortNoYear], $ERA_STRING_YEAR_MP_BOOKMARK_2_CONCAT$"
+
+ challenge_char_date_replace: "[ChallengeCharacter.GetStartDate.GetStringShortNoYear], $ERA_STRING_YEAR_CHALLENGE_CONCAT$"
+ ERA_STRING_NAME_CHALLENGE: "[AddTextIf(GreaterThan_int32(ChallengeCharacter.GetStartDate.GetYear, '$ERA_FIRST_END|q$'), '2E' )][AddTextIf( LessThanOrEqualTo_int32(ChallengeCharacter.GetStartDate.GetYear, '$ERA_FIRST_END|q$'), '1E' )]"
+ ERA_STRING_YEAR_CHALLENGE: "[Select_int32(GreaterThan_int32(ChallengeCharacter.GetStartDate.GetYear, '$ERA_FIRST_END|q$' ), Subtract_int32(ChallengeCharacter.GetStartDate.GetYear,'$ERA_FIRST_END|q$') , ChallengeCharacter.GetStartDate.GetYear)]"
+ ERA_STRING_YEAR_CHALLENGE_CONCAT: "$ERA_STRING_NAME_CHALLENGE$ $ERA_STRING_YEAR_CHALLENGE$"

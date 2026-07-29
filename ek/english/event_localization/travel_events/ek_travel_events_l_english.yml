@@ -13,112 +13,33 @@
  ek_travel_events.0001.d: ""That tavern sounds like quite the location. Where is it?""
  ek_travel_events.0001.e: ""Unfortunate, but we're in a hurry."" 
 
- ek_travel_events.0005.t.apprentice: "$travel_event_prefix$ Mundus Stone: The Apprentice"
- ek_travel_events.0005.desc.apprentice: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. Its magical aura promised to grant me the celestial powers of the Apprentice Constellation.\n\nA momentous choice lay before me: embrace its power or leave it untouched and carry on with my journey."
+ current_constellation: "[SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)1'), 'constellation_ritual', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)2'), 'constellation_lover', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)3'), 'constellation_lord', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)4'), 'constellation_mage', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)5'), 'constellation_shadow', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)6'), 'constellation_steed', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)7'), 'constellation_apprentice', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)8'), 'constellation_warrior', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)9'), 'constellation_lady', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)10'), 'constellation_tower', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)11'), 'constellation_atronach', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)12'), 'constellation_thief', '')][SelectLocalization(EqualTo_CFixedPoint(EmptyScope.ScriptValue('cycle_month'), '(CFixedPoint)13'), 'constellation_serpent', '')]"
+ ek_travel_events.0005.t: "$travel_event_prefix$ $current_constellation$ Stone"
+ ek_travel_events.0005.desc: "As my travels carry me through [ROOT.Char.GetCurrentLocation.GetName], I spot a beacon of blinding blue light piercing the sky like an impossibly long needle. As I approach its source, a remarking gathering of mystically-charged carving stones, I can distinctly identify a carving resembling $current_constellation$ constellation.\n\nIt's celestial power calls to me and I have trouble taking my eyes off of its marvel."
  ek_travel_events.0005.a: "Accept its boon."
- ek_travel_events.0005.a.tt.apprentice: "The Apprentice accepts you"
- add_apprentice: "You gain the [GetTrait('sign_apprentice').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.apprentice: "The Apprentice rejects you"
+ ek_travel_events.0005.a.tt: "$current_constellation$ accepts you"
+ add_birthsign_trait: "You gain the $current_constellation$ [trait|E]"
+ ek_travel_events.0005.a.tt_fail: "$current_constellation$ rejects you"
  ek_travel_events.0005.b: "Use its power to attune with its constellation."
- ek_travel_events.0005.c: "Carry on."
-
- ek_travel_events.0005.t.atronach: "$travel_event_prefix$ Mundus Stone: The Atronach"
- ek_travel_events.0005.desc.atronach: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Atronach Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.atronach: "The Atronach accepts you"
- add_atronach: "You gain the [GetTrait('sign_atronach').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.atronach: "The Atronach rejects you"
-
- ek_travel_events.0005.t.lady: "$travel_event_prefix$ Mundus Stone: The Lady"
- ek_travel_events.0005.desc.lady: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Lady Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.lady: "The Lady accepts you"
- add_lady: "You gain the [GetTrait('sign_lady').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.lady: "The Lady rejects you"
-
- ek_travel_events.0005.t.lord: "$travel_event_prefix$ Mundus Stone: The Lord"
- ek_travel_events.0005.desc.lord: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Lord Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.lord: "The Lord accepts you"
- add_lord: "You gain the [GetTrait('sign_lord').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.lord: "The Lord rejects you"
-
- ek_travel_events.0005.t.lover: "$travel_event_prefix$ Mundus Stone: The Lover"
- ek_travel_events.0005.desc.lover: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Lover Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.lover: "The Lover accepts you"
- add_lover: "You gain the [GetTrait('sign_lover').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.lover: "The Lover rejects you"
-
- ek_travel_events.0005.t.mage: "$travel_event_prefix$ Mundus Stone: The Mage"
- ek_travel_events.0005.desc.mage: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Mage Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.mage: "[ROOT.Char.Custom('GetConstellationNameMage')] accepts you"
- add_mage: "You gain the [GetTrait('sign_mage').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.mage: "[ROOT.Char.Custom('GetConstellationNameMage')] rejects you"
- ek_travel_events.0005.t.mage_reachfolk: "$travel_event_prefix$ Mundus Stone: The Witch"
- ek_travel_events.0005.desc.mage_reachfolk: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Witch Sky Tale.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
-
- ek_travel_events.0005.t.ritual: "$travel_event_prefix$ Mundus Stone: The Ritual"
- ek_travel_events.0005.desc.ritual: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Ritual Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.ritual: "The Ritual accepts you"
- add_ritual: "You gain the [GetTrait('sign_ritual').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.ritual: "The Ritual rejects you"
-
- ek_travel_events.0005.t.serpent: "$travel_event_prefix$ Mundus Stone: The Serpent"
- ek_travel_events.0005.desc.serpent: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Serpent Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.serpent: "[ROOT.Char.Custom('GetConstellationNameSerpent')] accepts you"
- add_serpent: "You gain the [GetTrait('sign_serpent').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.serpent: "[ROOT.Char.Custom('GetConstellationNameSerpent')] rejects you"
- ek_travel_events.0005.t.serpent_reachfolk: "$travel_event_prefix$ Mundus Stone: The Snake"
- ek_travel_events.0005.desc.serpent_reachfolk: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Snake Sky Tale.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
-
- ek_travel_events.0005.t.shadow: "$travel_event_prefix$ Mundus Stone: The Shadow"
- ek_travel_events.0005.desc.shadow: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Shadow Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.shadow: "The Shadow accepts you"
- add_shadow: "You gain the [GetTrait('sign_shadow').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.shadow: "The Shadow rejects you"
-
- ek_travel_events.0005.t.steed: "$travel_event_prefix$ Mundus Stone: The Steed"
- ek_travel_events.0005.desc.steed: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Steed Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.steed: "The Steed accepts you"
- add_steed: "You gain the [GetTrait('sign_steed').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.steed: "The Steed rejects you"
-
- ek_travel_events.0005.t.thief: "$travel_event_prefix$ Mundus Stone: The Thief"
- ek_travel_events.0005.desc.thief: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Thief Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.thief: "[ROOT.Char.Custom('GetConstellationNameThief')] accepts you"
- add_thief: "You gain the [GetTrait('sign_thief').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.thief: "[ROOT.Char.Custom('GetConstellationNameThief')] rejects you"
- ek_travel_events.0005.t.thief_reachfolk: "$travel_event_prefix$ Mundus Stone: The Hunter"
- ek_travel_events.0005.desc.thief_reachfolk: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Hunter Sky Tale.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
-
- ek_travel_events.0005.t.tower: "$travel_event_prefix$ Mundus Stone: The Tower"
- ek_travel_events.0005.desc.tower: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Tower Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.tower: "The Tower accepts you"
- add_tower: "You gain the [GetTrait('sign_tower').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.tower: "The Tower rejects you"
-
- ek_travel_events.0005.t.warrior: "$travel_event_prefix$ Mundus Stone: The Warrior"
- ek_travel_events.0005.desc.warrior: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Warrior Constellation.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
- ek_travel_events.0005.a.tt.warrior: "[ROOT.Char.Custom('GetConstellationNameWarrior')] accepts you"
- add_warrior: "You gain the [GetTrait('sign_warrior').GetName( GetNullCharacter )] [trait|E]"
- ek_travel_events.0005.a.tt_fail.warrior: "[ROOT.Char.Custom('GetConstellationNameWarrior')] rejects you"
- ek_travel_events.0005.t.warrior_reachfolk: "$travel_event_prefix$ Mundus Stone: The Headsman"
- ek_travel_events.0005.desc.warrior_reachfolk: "While venturing through the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a monolithic structure adorned with celestial engravings. This enigmatic stone bore celestial inscriptions that promised to grant me the celestial powers of the Headsman Sky Tale.\n\nA crucial decision loomed: embrace its potent influence or leave it undisturbed, contemplating the secrets of this celestial marvel."
+ ek_travel_events.0005.c: "Say a small prayer to thank the stars."
 
  ek_travel_events.0010.t: "$travel_event_prefix$ Winter Solace"
- ek_travel_events.0010.desc: "As I traversed the [ROOT.Char.GetCurrentLocation.GetName] [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip], a tranquil snowfall blanketed the landscape. All around, nature's creations glistened beneath their icy shroud.\n\nDelicate icicles adorned the surroundings, creating a lustrous cascade of frozen wonder. The gentle caress of a light wind filled the air with a melodious serenade.\n\nIt was as though winter had bestowed its serene embrace upon [ROOT.Char.GetCurrentLocation.GetNameNoTooltip], offering a glimpse of paradise."
- ek_travel_events.0010.a: "Let us stay a while and marvel at the scenery."
- ek_travel_events.0010.b: "The perfect opportunity for a training in those conditions."
- ek_travel_events.0010.b.success: "The training is a success"
+ ek_travel_events.0010.desc: "Crossing the cold [ROOT.Char.GetCurrentLocation.GetName] [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] during this time of the year is truly harsh. Snow gets in your boots, your feet get wet and cold like death. When I started rambling about my bones aching, a tiny snowflake passed right in front of my eyes.\n\nIt floated with grace until it was lost among its many siblings, every one of them a work of art crafted by the white sky above us."
+ ek_travel_events.0010.a: "Let us stay awhile and marvel at the scenery."
+ ek_travel_events.0010.b: "The perfect opportunity for training in these conditions."
+ ek_travel_events.0010.b.success: "The training is successful"
  ek_travel_events.0010.b.failure: "The training is exhausting"
  ek_travel_events.0010.c: "We have no time to lose!"
  
  ek_travel_events.0015.t: "$travel_event_prefix$ Wayshrines of Tamriel"
- ek_travel_events.0015.desc: "While journeying across [ROOT.Char.GetCurrentLocation.GetName], I stumbled upon a wayshrine: a sacred site devoted to the [ROOT.GetCharacter.GetFaith.HighGodName]. These shrines, scattered throughout the land, hold great spiritual importance, often serving as conduits to Aetherius.\n\nAdorned in honor of [ROOT.GetCharacter.GetFaith.HighGodName], wayshrines are believed to guide souls to the afterlife. Lord Corvus Direnni once theorized that these shrines could be used for swift travel, but the details of such a process remain elusive, hidden within the mystical tapestry of Tamriel's divine mysteries."
+ ek_travel_events.0015.desc: "While journeying across the [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip] in [ROOT.Char.GetCurrentLocation.GetName], I came across a sacred site devoted to [local_character.GetFaith.HighGodNameAlternate]. It was beautiful and piously decorated, qualities that immediately drew my attention. It took me a while to notice a local pilgrim, deep in prayer. The [local_character.GetWomanMan] greeted me and shared [local_character.GetHerHis] thoughts.\n\n"Rumors say that these shrines hide a powerful teleportation network, connecting all of Mundus... And perhaps beyond!"\n\nTall rumors... Or are they?"
  ek_travel_events.0015.a: "I should attempt to use this wayshrine as a portal!"
  ek_travel_events.0015.a.tt: "You succeed"
  ek_travel_events.0015.a.effect: "You teleport to your next destination!"
  ek_travel_events.0015.a.tt_fail: "Nothing happens"
  ek_travel_events.0015.a.tt_critical_fail: "You do something very wrong"
- ek_travel_events.0015.b: "Just leave a small prayer to the [ROOT.GetCharacter.GetFaith.HighGodName]"
- ek_travel_events.0015.c: "I'd rather travel by conventional means, thanks."
+ ek_travel_events.0015.b: "Leave a small prayer to [ROOT.GetCharacter.GetFaith.HighGodName]."
+ ek_travel_events.0015.c: "Thank the [local_character.GetWomanMan] and move on."
 
  ek_travel_events.0020.t: "$travel_event_prefix$ Spring's Blossom"
  ek_travel_events.0020.desc: "As I continue my journey through [ROOT.Char.GetCurrentLocation.GetName], nature unveils its enchanting tapestry. Honey bees hum lazily in the air, and swallow-tails gracefully flutter against the backdrop of the clear blue sky.\n\nBlossoms burst into vibrant colors, their fragrant aroma carried by the gentle breeze, creating a picturesque scene that welcomes the arrival of spring."
@@ -139,7 +60,7 @@
  ek_travel_events.0025.d: "Yes, yes, very impressive."
 
  ek_travel_events.0030.t: "$travel_event_prefix$ Old Soldiers"
- ek_travel_events.0030.desc: "While near [ROOT.Char.GetCurrentLocation.GetName], I encounter [soldier.GetFirstName], a somber soldier. [soldier.GetSheHe|U] shares the story of [soldier.GetHerHis] fallen comrade, who lost their life during a recent campaign. [soldier.GetFirstName] asks me for a favor: to deliver [soldier.GetHerHis] companion's sword and ring to their grieving family in [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]. Since [soldier.GetSheHe] is still on duty [soldier.GetSheHe] is not allowed to leave [soldier.GetHerHis] post and do it [soldier.GetHerselfHimself]."
+ ek_travel_events.0030.desc: "While near [ROOT.Char.GetCurrentLocation.GetName], I spot a soldier from afar. Curious about [soldier.GetHerHis] somber demeanor, I ask [soldier.GetHerHim] to share [soldier.GetHerHis] woes.\n\n"I dread thinking about the fate of my fallen comrade, who was lost during the last battle. If I could be so bold, could you please deliver a letter giving the news to the family? I'm not allowed to leave my post just yet.""
  ek_travel_events.0030.a: "How much is this worth to you?"
  ek_travel_events.0030.b: "No worries, I will deliver it."
  ek_travel_events.0030.c: "I am not a courier!"
@@ -218,7 +139,7 @@
  ek_travel_events.0070.d: "I have no use for such odd trinkets."
 
  ek_travel_events.0075.t: "$travel_event_prefix$ Shards of Aetherius"
- ek_travel_events.0075.desc: "While exploring the nearby [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip], I stumbled upon an extraordinary sight: a skyshard. These celestial shards contain the essence of Nirn itself.\n\nSkyshards fall from Aetherius to Nirn during specific lunar alignments forming a brilliant silvery prism, granting remarkable abilities. Today, I witnessed the radiance of one such skyshard, a source of untapped potential."
+ ek_travel_events.0075.desc: "Passing through the local [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip], a faint blue glow caught my attention among the [ROOT.Char.Custom('OutdoorsHidingPlace')]. Approaching it cautiously, I spot its source: A crater with a huge blue crystal inside. Surely a piece of the sky, fallen right before me.\n\nIts power sends waves through my body, and I can feel myself being transformed."
  ek_travel_events.0075.stewardship: "I feel like I can close every deal!"
  ek_travel_events.0075.intrigue: "I feel every secret revealing itself to me!"
  ek_travel_events.0075.magic: "I feel my magical potential being unveiled!"
@@ -365,12 +286,12 @@
  ek_travel_events.4030.d.tt: "You flee through the ranks of the undead, leaving your companions behind."
 
  ek_travel_events.4035.t: "$travel_danger_prefix$ Sandstorm!"
- ek_travel_events.4035.desc: "For those who brave the desert, peril lurks beyond hungry creatures, the scorching sun, and unrelenting thirst — it's the very sand itself. Suspended in the air by an abrupt storm, it carries the potential to engulf anything in its path, whether it be a structure, a caravan, or a solitary wanderer. I stand in awe, my heart pounding, as I behold such a tempest on the distant horizon, hurtling toward my location like a ferocious beast.\n\nIt may be wise the seek immediate shelter. However, waiting for it to subside might entail a lengthy delay in my travels."
- ek_travel_events.4035.a: "Push through this!"
+ ek_travel_events.4035.desc: "It takes courage and a lot of preparations in order to brave the desert. The scorching heat, the hateful sand spreading itself everywhere... The challenges are limitless. I'm in the middle of taking our travel inventory when I distinctly hear the screams of [scout.Custom2('MyCharacterIntroduction', ROOT.Char)]. Turning around startled, I notice a giant sand wave in the horizon, coming straight towards us.\n\n"#italic SANDSTORM! #!", [scout.GetSheHe] exclaims. It's time to act. Quick."
+ ek_travel_events.4035.a: ""Push through it!""
  ek_travel_events.4035.a.success: "You survive the storm."
  ek_travel_events.4035.a.failure: "[dead_character.GetFirstNameNoTooltip|U] gets lost in the storm."
  ek_travel_events.4035.a.critical_failure: "Everyone perishes in the storm."
- ek_travel_events.4035.b: "Build a shelter and wait till the storm is over."
+ ek_travel_events.4035.b: ""Everyone, find shelter!""
 
  ek_travel_events.4040.t: "$travel_danger_prefix$ Heavy Rain"
  ek_travel_events.4040.intro: "Dark clouds have gathered over [current_location.GetName], and what starts as a light drizzle suddenly turns into a torrential downpour. Visibility fades, and all of Mundus seems to be swallowed by the storm.\n\n"
@@ -437,12 +358,12 @@
 
 # Highrock Danger
  ek_travel_events_highrock.4000.t: "$travel_danger_prefix$ The Witches of Hag Fen"
- ek_travel_events_highrock.4000.desc: "While traversing [ROOT.Char.GetCurrentLocation.GetName], I accidentally stumbled upon the Hag Fens, a rather unpleasant surprise. As I tried to quietly backtrack and leave the area, I inadvertently stepped on a twig, causing a raucous noise that drew the attention of the resident hags.\n\nThese peculiar and deformed witches, armed with walking staffs, took offense at my presence. Quickly, I found myself on the run, leaving behind some of my gear as I sprinted through the fens. As I darted through the swamp, narrowly avoiding crocodiles, the relentless hags pursued me.\n\nThe hags' cackles and curses filled the air, echoing through the dense vegetation. I knew I needed to find a way out of this treacherous bog and escape the clutches of the swamp witches." #AI
- ek_travel_events_highrock.4000.a: "Enough running, time to fight!"
+ ek_travel_events_highrock.4000.desc: "While traversing Hag Fen you are bound to hear stories of ugly hags that kidnap disobedient children at night to eat their toes. Certainly a made up fairy tale, I thought to myself. Today, my skepticism was put to the test.\n\nWhile crossing the [ROOT.Char.GetCurrentLocation.GetName] [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip], our group distinctly hears a shriek, followed by a cackle. It is not long before my eyes spot hazy silhouettes of women surrounding our party. As some of our prized possessions vanish before our eyes, [savior.Custom2('MyCharacterIntroduction', ROOT.Char)] steps in, brandishing [savior.GetHerHis] weapon.\n\n"Get behind me, my [savior.Custom2('RelationToMeShort', ROOT.Char)]!""
+ ek_travel_events_highrock.4000.a: "Enough of this, time to fight!"
  ek_travel_events_highrock.4000.a.success: "You make it out alive"
  ek_travel_events_highrock.4000.a.failure: "The hags overpower you"
  ek_travel_events_highrock.4000.b: "Perhaps if I showed interest in their ways..."
- ek_travel_events_highrock.4000.c: "Keep running! Just keep running!"
+ ek_travel_events_highrock.4000.c: "Let's get out of here!"
 
  ek_travel_events_highrock.4005.t: "$travel_danger_prefix$ Feathered Fiends"
  ek_travel_events_highrock.4005.desc: "During my travels through [ROOT.Char.GetCurrentLocation.GetName], I found myself in a harrowing encounter with a group of aggressive harpies.\n\nThese winged creatures attacked suddenly, posing a significant threat to me on the road." 
@@ -629,11 +550,6 @@
 
 ### Blackmarsh
 # Blackmarsh Flavor
- ek_travel_events_blackmarsh.0001.t: "$travel_event_prefix$ Gideon and the Border"
- ek_travel_events_blackmarsh.0001.desc: "My travels led me to Gideon, a region blending Ayleid, Imperial, Kothringi, and Argonian cultures. Gladly, I met [local.GetFirstName], who was glad to tell me more about it.\n\nWhile this region has a cosmopolitan tradition, it's primarily inhabited by Argonians. These Argonians, shaped by their long exposure to Cyrodiil, are more adaptable in language, commerce and customs, though this comes at the expense of ancient traditions. They view outsiders with skepticism, a result of enduring border conflicts, making friendship hard-earned." #AI
- ek_travel_events_blackmarsh.0001.a: "How do those cultures get along so well?"
- ek_travel_events_blackmarsh.0001.b: "Securing proper alliances must be pivotal!"
- ek_travel_events_blackmarsh.0001.c: "Very interesting, but we must hurry."
 
  ek_travel_events_blackmarsh.0005.t: "$travel_event_prefix$ Red-Dream People"
  ek_travel_events_blackmarsh.0005.desc: "In Blackwood, border Argonian tribes embrace ancient ruins as housing options due to their defensible nature. For instance, the Red-Dream People and Hutsleel tribe creatively use Ayleid and Argonian ruins as shelters during dry seasons, conducting sap rituals to explore and integrate historical artifacts into their daily lives." #AI
@@ -689,19 +605,19 @@
 
 # Blackmarsh Location
  ek_travel_events_blackmarsh.8000.t: "$travel_event_prefix$ Scavenged Xanmeers"
- ek_travel_events_blackmarsh.8000.desc: "As I tread through the ruins of [ROOT.Char.GetCurrentLocation.GetName], I observe a stark reality in this land. [scavenger.GetFirstName] approaches me, and tells me that [scavenger.GetSheHe] survives by scavenging, akin to the actions of dung beetles or tick birds, sifting through the remnants of diverse cultures to eke out a living.\n\nNotably, this scavenger's existence unfolds amid the awe-inspiring backdrop of ancient ruins. Xal Ithix boasts some of the most ancient xanmeers to be found in all of Shadowfen. I slowly absorb the haunting beauty of this forsaken land, where the passage of time and the greed of previous opportunists may have already stripped away any ancient artifacts that once graced these hallowed grounds."
+ ek_travel_events_blackmarsh.8000.desc: "As I tread through the ruins of [ROOT.Char.GetCurrentLocation.GetName], I observe a stark reality in this land. [scavenger.GetFirstName] approaches me, and tells me that [scavenger.GetSheHe] survives by scavenging, akin to the actions of dung beetles or tick birds, sifting through the remnants of diverse cultures to eke out a living.\n\nNotably, this scavenger's existence unfolds amid the awe-inspiring backdrop of ancient ruins. Xal Ithix boasts some of the most ancient xanmeers to be found in all of Shadowfen. I slowly absorb the haunting beauty of this forsaken land, where the passage of time and the greed of previous opportunists may have already stripped away any ancient artifacts that once graced these hallowed grounds." #AI
  ek_travel_events_blackmarsh.8000.a: "I offer you alms and a prayer."
  ek_travel_events_blackmarsh.8000.b: "Why don't you join us?"
  ek_travel_events_blackmarsh.8000.c: "I'm sorry to hear that."
 
  ek_travel_events_blackmarsh.8005.t: "$travel_event_prefix$ Gateway to the Marshes"
- ek_travel_events_blackmarsh.8005.desc: "On my journey along the Blackwood Road, I reached the fascinating city of Gideon, where Blackwood and Black Marsh converge. This unique place has become a haven for hunters, loggers, herb dealers, and those in pursuit of exotic creatures from the nearby swamplands.\n\nGideon, once a mighty Imperial fortress during the Second Empire, has a captivating history waiting to be uncovered amid the ancient legion ruins and crumbling buildings. A single avenue, lined with homes and businesses, guides travelers to the governor's mansion, showcasing the enduring spirit of this city." #AI
+ ek_travel_events_blackmarsh.8005.desc: "I have reached [ROOT.Char.GetCurrentLocation.GetName], the largest Kothringi City for as long as living memory can recall. All around me are the signs of the trade — Kothri, Imperial, Argonian, and more — that this marketplace city has attracted."
  ek_travel_events_blackmarsh.8005.a: "Such an important trade center!"
  ek_travel_events_blackmarsh.8005.b: "I bet there are some rare herbs in here!"
  ek_travel_events_blackmarsh.8005.c: "Excuse me, where's the way out?"
 
  ek_travel_events_blackmarsh.8010.t: "$travel_event_prefix$ The Founding of Zuuk"
- ek_travel_events_blackmarsh.8010.desc: "Lord Zuuk's legacy in Shadowfen endures even today. After the fall of Reman Cyrodiil III, he returned to these marshlands and established a humble settlement. Over five generations, this settlement flourished, and in honor of the esteemed Lord Founder, it was renamed Zuuk, a name that now echoes through history. The original name of the settlement has been lost to the sands of time.\n\nAlthough the details of Zuuk's time in the Imperial Palace remain shrouded in mystery, his wealth, honor, and boundless generosity left an indelible mark on the Kothringi people. His name will continue to be revered by his descendants for generations to come."
+ ek_travel_events_blackmarsh.8010.desc: "Lord Zuuk's legacy in Shadowfen endures even today. After the fall of Reman Cyrodiil III, he returned to these marshlands and established a humble settlement. Over five generations, this settlement flourished, and in honor of the esteemed Lord Founder, it was renamed Zuuk, a name that now echoes through history. The original name of the settlement has been lost to the sands of time.\n\nAlthough the details of Zuuk's time in the Imperial Palace remain shrouded in mystery, his wealth, honor, and boundless generosity left an indelible mark on the Kothringi people. His name will continue to be revered by his descendants for generations to come." #AI
  ek_travel_events_blackmarsh.8010.a: "Such a glorious history!"
  ek_travel_events_blackmarsh.8010.b: "No time for folklore!"
 

@@ -13,10 +13,6 @@
  required_other_magical_innovations: "This [innovation|E] is required for all other magicka-related Military Innovations"
  innovation_basic_armor_forging: "Basic Armor Forging"
  innovation_basic_armor_forging_desc: "Basic materials and metals allow for light yet effective armor. Leather, Iron, and other simple materials can be widely used to outfit almost anyone."
- innovation_disorganized_military: "Disorganized Military"
- innovation_disorganized_military_desc: "While most cultures rely on elite soldiers and professional warriors, we rely on overwhelming numbers and vast armies. Our soldiers are cheap, numerous, and together we will flood the fields with our warriors!"
- cannot_research_men_at_arms_innovations: "#N Cannot research [innovations|E] unlocking new [men_at_arms|E], or increasing the size and raising the caps of [men_at_arms|E]#!"
- innovation_disorganized_military_can_be_reformed: "This innovation can be removed by a powerful [cultural_head|E] that is very well versed into the arts of war, by enacting the #V 'Reform the Military'#! [decision|E]"
  innovation_leather_armor: "Leather Armor"
  innovation_leather_armor_desc: "Sturdier than hide while still allowing more flexibility than metal, leather can be widely produced to fit our armies."
  unlock_maa_light_footmen: "Can recruit [GetMaA('light_footmen').GetName] as [men_at_arms|E]"
@@ -60,6 +56,9 @@
  innovation_black_marsh_natives: "Marsh-Steading"
  innovation_black_marsh_natives_desc: "Black Marsh is, to most people, inhospitable to the point of being a fetid hell. But still there are those who live here, those who have grown accustomed to the constant rot, who know what solid ground to trust, whose expectations are low and who use the eccentric and repulsive abundance of the bogs instead of civilisation as it can exist elsewhere, in less chaotic lands."
  innovation_automatically_given_natives_of_black_marsh: "This [innovation|E] is automatically given to any Culture that is [native|E] to any [nativity_region|E] in [GetGeographicalRegion('mundus_tamriel_black_marsh').GetName]"
+ innovation_sled_dogs: "Sled Dogs"
+ innovation_sled_dogs_desc: "In the cold and craggy north of High Rock, the fast and manœuvrable sled dog provides transport in both the domestic and military spheres of life."
+ ek_cheaper_to_adopt_dogs: "Adopting dogs is cheaper"
 ### Pariah innovations
 # Pariah Folk
  innovation_pariah_folk: "Pariah Folk"
@@ -138,6 +137,9 @@
  unlocks_empire_conquest_cb_mmr: "Unlocks the #V High Kingdom Conquest#! [casus_belli|E] for characters with a [prestige_level|E] equal or superior to [GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L] #weak (follows the other [might_makes_right|E] mechanics)#!"
  
  ### Special
+
+ culture_parameter_ek_more_cadet_branches_cultural_innovation_seigneurialism_innovation_parameter: "$ek_culture_parameter_innovations_and_tradition_more_cadet_branches$"
+ culture_parameter_ek_more_cadet_branches_cultural_innovation_primogeniture_innovation_parameter: "$ek_culture_parameter_innovations_and_tradition_more_cadet_branches$"
 
  innovation_migratory_culture: "Migratory Culture"
  innovation_migratory_culture_desc: "When most people choose to settle in a single place, we travel throughout the world and bring our people with us."

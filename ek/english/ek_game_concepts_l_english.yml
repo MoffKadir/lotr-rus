@@ -4,7 +4,7 @@
  game_concept_ek_feature: "EK2 Feature"
  game_concept_ek_features: "Elder Kings 2 Features"
  game_concept_ek_features_pg: "Page 1"
- game_concept_ek_features_desc: "This Game Concept serves as an overview of all EK2 features that have a game concept associated with it:\n\n$BULLET_WITH_TAB$ Religion\n$TAB$$BULLET_WITH_TAB$ [fervor_equilibrium|E]\n$TAB$$BULLET_WITH_TAB$ [purity|E]\n$TAB$$BULLET_WITH_TAB$ [pantheon|E]\n$TAB$$BULLET_WITH_TAB$ [pantheon_secondary|E]\n$TAB$$BULLET_WITH_TAB$ [patron_trait|E]\n$TAB$$BULLET_WITH_TAB$ [abomination|E]\n$TAB$$BULLET_WITH_TAB$ [liturgical_language|E]\n$BULLET_WITH_TAB$ Culture\n$TAB$$BULLET_WITH_TAB$ [pariah|E]\n$TAB$$BULLET_WITH_TAB$ [daedric_race|E]\n$TAB$$BULLET_WITH_TAB$ [nativity_region|E]\n$TAB$$BULLET_WITH_TAB$ [migratory_culture|E]\n$TAB$$BULLET_WITH_TAB$ [culture_revival|E]\n$TAB$$BULLET_WITH_TAB$ [core_traditions|E]\n$BULLET_WITH_TAB$ Government\n$TAB$$BULLET_WITH_TAB$ [academy|E]\n$TAB$$BULLET_WITH_TAB$ [autocracy|E]\n$TAB$$BULLET_WITH_TAB$ [ceremoniarchy|E]\n$TAB$$BULLET_WITH_TAB$ [praxis|E]\n$TAB$$BULLET_WITH_TAB$ [feudal_like_government|E]\n$TAB$$BULLET_WITH_TAB$ [pirate|E]\n$TAB$$BULLET_WITH_TAB$ [pirate_share|E]\n$TAB$$BULLET_WITH_TAB$ [expected_prestige_level|E]\n$TAB$$BULLET_WITH_TAB$ [might_makes_right|E]\n\n < #V Page 1#! - [ek_features_page2_pg|E] >"
+ game_concept_ek_features_desc: "This Game Concept serves as an overview of all EK2 features that have a game concept associated with it:\n\n$BULLET_WITH_TAB$ Religion\n$TAB$$BULLET_WITH_TAB$ [fervor_equilibrium|E]\n$TAB$$BULLET_WITH_TAB$ [pantheon|E]\n$TAB$$BULLET_WITH_TAB$ [pantheon_secondary|E]\n$TAB$$BULLET_WITH_TAB$ [patron_trait|E]\n$TAB$$BULLET_WITH_TAB$ [abomination|E]\n$TAB$$BULLET_WITH_TAB$ [liturgical_language|E]\n$BULLET_WITH_TAB$ Culture\n$TAB$$BULLET_WITH_TAB$ [pariah|E]\n$TAB$$BULLET_WITH_TAB$ [daedric_race|E]\n$TAB$$BULLET_WITH_TAB$ [nativity_region|E]\n$TAB$$BULLET_WITH_TAB$ [migratory_culture|E]\n$TAB$$BULLET_WITH_TAB$ [culture_revival|E]\n$TAB$$BULLET_WITH_TAB$ [core_traditions|E]\n$BULLET_WITH_TAB$ Government\n$TAB$$BULLET_WITH_TAB$ [academy|E]\n$TAB$$BULLET_WITH_TAB$ [autocracy|E]\n$TAB$$BULLET_WITH_TAB$ [ceremoniarchy|E]\n$TAB$$BULLET_WITH_TAB$ [praxis|E]\n$TAB$$BULLET_WITH_TAB$ [feudal_like_government|E]\n$TAB$$BULLET_WITH_TAB$ [might_makes_right|E]\n\n < #V Page 1#! - [ek_features_page2_pg|E] >"
  game_concept_ek_feature_page2: "EK2 Feature"
  game_concept_ek_features_page2: "Elder Kings 2 Features"
  game_concept_ek_features_page2_pg: "Page 2"
@@ -12,15 +12,7 @@
 
  game_concept_fervor_equilibrium: "Fervor Equilibrium"
  game_concept_fervor_equilibrium_desc: "The [fervor|E] Equilibrium of a [faith|E] goes from #V 0#! to #V 100%#!. The Faith's Fervor will slowly tick up or down until it reaches the Equilibrium.\n\nA Faith's Fervor Equilibrium is mostly defined by its size, as larger Faiths tend to have a lower Equilibrium compared to smaller Faiths.\n\nSome [core_tenets|E] and [doctrines|E] can also affect a Faith's Equilibrium, such as [GetFaithDoctrine('tenet_pentarchy').GetBaseName]."
- 
- game_concept_purity: "Purity"
- game_concept_pure: "Pure"
- game_concept_pures: "Pures"
- game_concept_impurity: "Impurity"
- game_concept_impure: "Impure"
- game_concept_impures: "Impures"
- game_concept_purity_desc: "'$game_concept_purity$' is shared by any faith with the Divine Purity tenet. Characters belonging to these faiths are expected to maintain a pure bloodline, requiring their children to not bear any bad congenital trait, such as Hunchback or Imbecile, and to ensure that no close relationships is formed with any Impure or Infidel character.\n\nAny character failing to ensure that their purity remains untainted will be given the [GetTrait('impure').GetName( GetNullCharacter )] trait."
- 
+
  game_concept_abomination: "Abomination"
  game_concept_abominations: "Abominations"
  game_concept_abomination_desc: "'$game_concept_abomination$' are characters considered so opposite to a faith's [doctrines|E] or [core_tenets|E] that other faiths can use the $CLEANSE_ABOMINATIONS_DUCHY_NAME$ Casus Belli against them, if their Doctrines and Tenets permit it.\n\n • Faiths considering Necromancy Criminal will see Undead and Necromancers as Abominations.\n • Faiths considering Vampirism Criminal will see Vampires as Abominations.\n • Faiths considering Lycanthropy Criminal will see Lycanthropes as Abominations."
@@ -67,12 +59,6 @@
  game_concept_secondary_pantheon: "Secondary Pantheon"
  game_concept_secondary: "Secondary"
  game_concept_pantheon_secondary_desc: "A Secondary Pantheon allows a faith to gain up to three Patrons from another [pantheon|E] than their Main Pantheon. This represents a certain degree of syncretism or outside influence. Having a Secondary Pantheon reduces [faith_hostility|E] with any [faith|E] with the Main Pantheon equivalent."
-
- game_concept_divines_pantheon_hostility: "Divines Pantheon Hostility"
- game_concept_divines_pantheon_hostility_desc: "For the purpose of [faith_hostility|E], the following [pantheons|E] are considered the same one, reducing hostility by #P -25#!:\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_divines').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_nord').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_redguard').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_breton').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_nedic_aedra').GetBaseName]"
-
- game_concept_aedric_pantheon_hostility: "Aedric Pantheon Hostility"
- game_concept_aedric_pantheon_hostility_desc: "For the purpose of [faith_hostility|E], the following [pantheons|E] are considered the same one, reducing hostility by #P -25#!:\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_aedra').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_falmer').GetBaseName]\n$BULLET_WITH_TAB$[GetFaithDoctrine('doctrine_pantheon_malada').GetBaseName]"
  
  game_concept_liturgical_language: "Liturgical Language"
  game_concept_liturgical_language_desc: "While most [faiths|E] prefer to use the [language|E] of their faithful to perform religious rites and sacrements, a few of them prefer to use forgotten or otherworldly tongues, which is known as their Liturgical Language.\n\nThe [clergy|E] of this Faith is expected to know this Language, and those who aren't part of it but know the Liturgical Language receive a [piety|E] and [clergy|E] [opinion|E] bonus.\n\n#F The deep tongue of Oblivion and the language used by the Dragons are some of these Liturgical Languages.#!"
@@ -82,11 +68,11 @@
  game_concept_clutch_raid_warring: "Clutch Raiding"
  game_concept_clutch_raid_war_desc: "This is a special type of [war|E], started by a [ruler|E] without any eligible heir. The primary goal of $game_concept_clutch_raid_warring$ is to capture [children|E] to adopt into their own dynasty, with either side able to get enough [war_score|E] through combat to win without ever having to [siege|E].\n\nAt the end of the $game_concept_war$, if the attacker is victorious, they will take several $game_concept_children$ from the [court|E] of the loser. The war is considered sacred, meaning that the victor will receive [piety|E].\n\nYou cannot conduct or continue a $game_concept_clutch_raid_war$ if you have an heir for your [title|E]."
 
- game_concept_nativity_region: "Nativity Region"
- game_concept_nativity_regions: "Nativity Regions"
+ game_concept_nativity_region: "Homeland"
+ game_concept_nativity_regions: "Homelands"
  game_concept_native: "Native"
  game_concept_natives: "Natives"
- game_concept_nativity_region_desc: "Most cultures are set to have been born, or to have lived for hundreds of years, in a specific part of the world, also known as a Nativity Region.\n\nIt is very difficult for them to be spread outside of their Nativity Regions, and it is usually easier for a ruler to spread a [local_culture|E] instead of their own.\n\nSome cultures are not tied to any specific part of the world and can make themselves at home no matter the environment. These cultures are considered [migratory|E]."
+ game_concept_nativity_region_desc: "Most cultures are set to have been born, or to have lived for hundreds of years, in a specific part of the world, also known as a Homeland.\n\nIt is very difficult for them to be spread outside of their Homeland, and it is usually easier for a ruler to spread a [local_culture|E] instead of their own.\n\nSome cultures are not tied to any specific part of the world and can make themselves at home no matter the environment. These cultures are considered [migratory|E]."
  
  game_concept_local_culture: "Local Culture"
  game_concept_local_cultures: "Local Cultures"
@@ -155,10 +141,10 @@
 
  game_concept_great_house_tomb: "Great House Tomb"
  game_concept_tomb: "Tomb"
- game_concept_great_house_tomb_desc: "The Dunmer of Morrowind place great emphasis on respecting their ancestors, and maintain great tombs in their honour, protected by powerful magic and strange rituals. This is also the case for the Great Houses, who each claim ancestral tombs, containing their greatest leaders and heroes.\n\nThese are the locations of each Great House Tomb:\n• Dres: $c_darmora$\n• Hlaalu: $c_molag_mar$\n• Indoril: $c_davon$\n• Redoran: $c_cormaris$\n• Telvanni: $c_shevik$"
+ game_concept_great_house_tomb_desc: "The Dunmer of Morrowind place great emphasis on respecting their ancestors, and maintain great tombs in their honour, protected by powerful magic and strange rituals. This is also the case for the Great Houses, who each claim ancestral tombs, containing their greatest leaders and heroes.\n\nThese are the locations of each Great House Tomb:\n• Dres: $c_darmora$\n• Hlaalu: $c_molag_mar$\n• Indoril: $c_darvonis$\n• Redoran: $c_cormaris$\n• Telvanni: $c_shevik$"
 
  game_concept_high_councilor: "High Councilor"
- game_concept_high_councilor_desc: "High Councilor is the head of the nation of Morrowind. They are responsible for the nation's internal and external politics, providing [writs_of_war|E] to other members of the [grand_council|E] and controlling distribution of [writs_of_execution|E]. In the more centralised periods, High Councilor can open Vvardenfell to colonisation or ban slavery throughout Morrowind."
+ game_concept_high_councilor_desc: "High Councilor is the head of the nation of Morrowind. They are responsible for the nation's internal and external politics, providing [writs_of_war|E] to other members of the [grand_council|E] and controlling distribution of [writs_of_execution|E]. In the more centralised periods, High Councilor can open Vvardenfell to colonisation or ban [slavery|E] throughout Morrowind."
 
  game_concept_alinor_isolationism: "Alinor Isolationism"
  game_concept_alinor_isolationism_desc: "$game_concept_alinor_isolationism$ represents the isolation of the High Elven Kingdom of Alinor from the rest of Tamriel. The [situation|E] has two [situation_phases|E]: $alinor_closed$ and $alinor_open$.\n\nIn $alinor_closed$ [situation_phase|E], Altmer forsake all interactions with other peoples and are unable to conduct diplomacy with or wage war on anyone outside of the Summerset Isles.\n\nIn $alinor_open$ [situation_phase|E], the Isles become open to outlanders, allowing new opportunities for diplomacy and expansion but angering native High Elves in the process."
@@ -167,13 +153,11 @@
  game_concept_feudal_like_government_desc: "[autocracy|E] and [feudalism|E] are highly institutionalised and are considered feudal-like, which unlocks courts and allows for the founding of certain kingdoms."
 
  game_concept_pirate: "Pirate"
+ game_concept_pirates: "Pirates"
  game_concept_pirate_i: "@government_type_pirate!"
  game_concept_pirate_government: "Pirate Government"
- game_concept_pirate_desc: "Pirate realms are a [government_form|E] centered around [raiding|E] and [loot|E]. Each pirate vassal provides a small tribute to their pirate liege, extracted from their raids.\n\n[holdings|E] under a pirate realm tend to give fewer [taxes|E], so a pirate ruler has to rely on constant raids and lootings to acquire gold.\nIn return, [counties|E] held by a Pirate ruler tend to ignore the wrong [culture|E] and [faith|E] impact on their [county_opinion|E], which in turns help the Pirate secure their bid in the [pirate_share|E] succession.\n\nAs Pirates heavily rely on overseas raiding and the control of the seas, any non-coastal county will be effectively independent, sending no tax or [levy|E] and breaking away from the realm upon succession.\n\nPirate rulers who wish for a more secure succession and a more peaceful life inland can abandon their pirate ways, and become a [feudal|E] or [autocratic|E] realm."
- 
- game_concept_pirate_share: "Pirate Share"
- game_concept_pirate_share_desc: "Under the $game_concept_pirate_share$ [succession_law|E], each [county|E] decides if it follows the former ruler's [heir|E], or if they elect one of their own to rule them. The county having a high [county_opinion|E] will help secure it during succession."
- 
+ game_concept_pirate_desc: "Pirate realms are a [government_form|E] centered around [raiding|E] and [loot|E]. The amount of [levies|E] and [taxes|E] given to a [liege|E] by their [vassals|E] is determined by the Liege's [dread|E]. Pirate rulers who wish for a more secure succession and a more peaceful life inland can abandon their pirate ways, and become a [feudal|E] or [autocratic|E] realm."
+
  game_concept_academy: "Academy"
  game_concept_academy_i: "@government_type_academy!"
  game_concept_academy_government: "Academy Government"
@@ -215,9 +199,6 @@
  game_concept_might_makes_right: "Might Makes Right"
  game_concept_might_makes_right_desc: "Some of the actions locked behind an [innovation|E] - such as [casus_bellis|E] - can be accessed and used by [rulers|E] if they have a high enough [prestige_level|E].\n\nSome faiths allow the use of [piety_level|E] and [piety|E], either as an optional or an additional requirement."
  
- game_concept_expected_prestige_level: "Expected Level of Fame"
- game_concept_expected_prestige_level_desc: "[tribal|E] [rulers|E] are only accepted and respected if their name is known and feared far and wide. Each [rank|E] has a [prestige_level|E] they are expected to have.\n\nFailing to meet this [prestige_level|E] incurs #N heavy penalties#! in [vassal|E] [opinion|E], [domain_limit|E], [vassal_limit|E], [control|E] growth, [county_opinion|E], [knight_effectiveness|E], and [men_at_arms|E] maintenance.\nExceeding this [prestige_level|E] #P gives bonuses#! in the same areas.\n\nThe expected [prestige_level|E] goes as follows:\n• [count|E]: [GetModifier( 'prestige_level_1' ).GetNameWithTooltip|L]\n• [duke|E]: [GetModifier( 'prestige_level_2' ).GetNameWithTooltip|L]\n• [king|E]: [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]\n• [emperor|E]: [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L]\n\n#weak The #V $a_life_of_glory_perk_name$#! [perk|E] decreases the Expected Level of Fame of [tribal|E] [rulers|E] by one [prestige_level|E].!"
- 
  game_concept_daedric_boon: "Boon"
  game_concept_daedric_boons: "Boons"
  game_concept_daedric_boon_desc: "A Boon is a gift from Oblivion, offered to you by a [Glossary( 'Daedric Prince', 'DAEDRA_GLOSS' )]. They have a wide range of power and usability, such as a small bump in [skills|E], to some additional troops from Oblivion, to claming the Prince's [daedric_artifact|E], or even launching a full-scale [daedric_invasion|E].\n\nBoons are paid with [daedric_ardor|E]."
@@ -250,11 +231,6 @@
  game_concept_daedric_secret: "Secret"
  #game_concept_daedric_secret_desc: "Not everyone sees the [Glossary( 'Daedric Prince', 'DAEDRA_GLOSS' )] in a good light. For some, their worship is considered dangerous, heretical, or even worthy of persecution. Some brave, or misguided, souls might still devote themselves to a Prince, no matter the danger or the cost.\n\nThey have access to a small selection of [daedric_boons|E] and [daedric_sacrifices|E] available to the Daedric Prince.\n\nThe [daedric_boons|E] tend to cost more [daedric_ardor|E], and the [daedric_sacrifices|E] tend to be less effective in giving [daedric_ardor|E].\n\nThe other status are: [daedric_focused|E], [daedric_pantheon|E], [daedric_allowed|E]." NOTE: commented out this for now as it either shows up broken ingame or is inaccurate. Added placeholder below:
  game_concept_daedric_secret_desc: "Not everyone sees the [Glossary( 'Daedric Prince', 'DAEDRA_GLOSS' )] in a good light. For some, their worship is considered dangerous, heretical, or even worthy of persecution. Some brave, or misguided, souls might still devote themselves to a Prince, no matter the danger or the cost."
- 
- game_concept_task_1_desc: "As you are now in control of Cyrodiil, both the Elder Council and your own ambitions can be fulfilled. The Elder Council has agreed to grant you special powers and authority over Cyrodiil, but it #N requires constant reassurance#!, as it is expected of you to hand back the Ruby Throne and let the High Chancellor rule, until a proper Dragonborn Emperor can be found."
- task_start: "#P Starting the task#!"
- task_fulfill: "#P Fulfilling the task#!"
- task_reward: "#P Reward for this task#!"
  
  game_concept_gc_lifespan: "Lifespan"
  game_concept_gc_longlived: "Longlived"

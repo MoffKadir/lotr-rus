@@ -1,6 +1,7 @@
 ﻿l_english:
  decision_group_type_ek_sb: "Special Buildings Decisions"
  decision_group_type_ek_magic: "Magic Decisions"
+ decision_group_type_ek_imperial: "Imperial Decisions"
  # Coping mechanisms
  stress_loss_skooma_drinker_decision: "Smoke or Drink Skooma"
  stress_loss_skooma_drinker_decision_desc: "As I light up my pipe I can already smell the refined moonsugar's odor filling up the room. I smile, as it is exactly what I need..."
@@ -293,6 +294,7 @@
  shadow_key_decision_tooltip: "The Shadowkey will unlock your true potential, giving you an education rank upgrade and a massive boost to your lifestyle experience. However, it will be spent and return once more to the shadows."
  shadow_key_decision_confirm: "Unlock your Potential!"
 
+#EK TODO: maybe adapt to magical emperors somehow?
  aok_decision: "Don the Amulet of Kings"
  aok_decision_tooltip: "Attempt to wear the Amulet of Kings and figure out if you are [GetTrait('dragonborn').GetName( Character.Self )]."
  aok_selection_tooltip: "Don the Amulet of Kings"
@@ -331,7 +333,7 @@
 
 # Invite Criminals
  invite_criminals_decision: "Invite Criminals"
- invite_criminals_decision_tooltip:3 "The word will be spread that your court is open to infamous individuals who may be unable to find another place suitable for their special... talents"
+ invite_criminals_decision_tooltip: "The word will be spread that your court is open to infamous individuals who may be unable to find another place suitable for their special... talents"
  invite_criminals_decision_desc: "I can always use additional henchmen to carry out my will, especially ones with unusual gifts. It may be time to gather some of them at my court and look among them for those who are the most promising."
  invite_criminals_decision_effect_tooltip: "You will be presented with a selection of outlaws and other shunned characters who are willing to join your court for free."
  invite_criminals_decision_confirm: "All are welcome!"
@@ -345,7 +347,7 @@
 # Adoption
  adopt_child_decision: "Visit Orphanage"
  tribal_adopt_child_decision_name: "Adopt Orphaned Child"
- adopt_child_decision_tooltip:3 "A nearby town holds an orphanage inside its walls. You may visit the orphanage in the hopes of finding a suitable heir for you to adopt."
+ adopt_child_decision_tooltip: "A nearby town holds an orphanage inside its walls. You may visit the orphanage in the hopes of finding a suitable heir for you to adopt."
  adopt_child_decision_desc: "A nearby town holds an orphanage inside its walls. You may visit the orphanage in the hopes of finding a suitable heir for you to adopt."
  tribal_adopt_child_decision_desc: "The tribe has many orphaned children. You may visit their caretaker in the hopes of finding a suitable heir for you to adopt."
  adopt_child_decision_effect_tooltip: "You will be presented with a group of children and may adopt one of them"
@@ -381,7 +383,7 @@
 
  visit_vineyard_requirement: "A [city|E] within your [domain|E] must contain an #V $building_type_amaya_vineyard_02$#! building"
 
- stop_being_pirate_government_decision: "Abandon Piracy?"
+ stop_being_pirate_government_decision: "Abandon Piracy"
  stop_being_pirate_government_decision_desc: "Being a Pirate might be lucrative but it lacks a certain legitimacy and authority more regular nobility holds, perhaps it is time to abandon our current governance and adopt a more centralized system? "
  stop_being_pirate_government_decision_confirm: "The time of Pirates is over."
  stop_being_pirate_government_decision_tooltip: "Perhaps it's time for change."
@@ -441,4 +443,31 @@
  tribute_mission_interaction_anticipated_rewards_tt_redguard_republic: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_redguard_republic').GetHolder.GetCulture.GetNameNoTooltip] [artifact_i][artifact|E]\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_redguard_republic').GetHolder.GetFaith.GetNameNoTooltip] @skill_learning_icon! Monk"
  neighboring_hegemon_title_redguard_republic: "[GetTitleByKey('h_redguard_republic').GetHolder.GetTitleAsNameNoTooltip]"
  neighboring_hegemon_definitive_name_redguard_republic: "[GetTitleByKey('h_redguard_republic').GetDefinitiveNameNoTooltip]"
+
+ tribute_mission_decision_imperatum_saliache: "$tribute_mission_decision$ to [GetTitleByKey('h_imperatum_saliache').GetNameNoTierNoTooltip]"
+ tribute_mission_decision_desc_imperatum_saliache: "The [GetTitleByKey('h_imperatum_saliache').GetHolder.GetTitleAsName] of [GetTitleByKey('h_imperatum_saliache').GetDefinitiveName] $tribute_mission_decision_hegemony_common$"
+ tribute_mission_decision_imperatum_saliache_tooltip: "$tribute_mission_decision_tooltip$"
+ tribute_mission_decision_imperatum_saliache_confirm: "$tribute_mission_decision_confirm$"
+ tribute_mission_decision_effects_imperatum_saliache_tt: "You [travel|E] to [GetTitleByKey('h_imperatum_saliache').GetHolder.GetTitledFirstNamePossessive] [court|E] to deliver your [tribute|E]"
+ tribute_mission_interaction_anticipated_rewards_tt_imperatum_saliache: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_imperatum_saliache').GetHolder.GetCulture.GetNameNoTooltip] [artifact_i][artifact|E]\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_imperatum_saliache').GetHolder.GetFaith.GetNameNoTooltip] @skill_learning_icon! Monk"
+ neighboring_hegemon_title_imperatum_saliache: "[GetTitleByKey('h_imperatum_saliache').GetHolder.GetTitleAsNameNoTooltip]"
+ neighboring_hegemon_definitive_name_imperatum_saliache: "[GetTitleByKey('h_imperatum_saliache').GetDefinitiveNameNoTooltip]"
+
+ tribute_mission_decision_aldmeri_dominion: "$tribute_mission_decision$ to [GetTitleByKey('h_aldmeri_dominion').GetNameNoTierNoTooltip]"
+ tribute_mission_decision_desc_aldmeri_dominion: "The [GetTitleByKey('h_aldmeri_dominion').GetHolder.GetTitleAsName] of [GetTitleByKey('h_aldmeri_dominion').GetDefinitiveName] $tribute_mission_decision_hegemony_common$"
+ tribute_mission_decision_aldmeri_dominion_tooltip: "$tribute_mission_decision_tooltip$"
+ tribute_mission_decision_aldmeri_dominion_confirm: "$tribute_mission_decision_confirm$"
+ tribute_mission_decision_effects_aldmeri_dominion_tt: "You [travel|E] to [GetTitleByKey('h_aldmeri_dominion').GetHolder.GetTitledFirstNamePossessive] [court|E] to deliver your [tribute|E]"
+ tribute_mission_interaction_anticipated_rewards_tt_aldmeri_dominion: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_aldmeri_dominion').GetHolder.GetCulture.GetNameNoTooltip] [artifact_i][artifact|E]\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_aldmeri_dominion').GetHolder.GetFaith.GetNameNoTooltip] @skill_learning_icon! Monk"
+ neighboring_hegemon_title_aldmeri_dominion: "[GetTitleByKey('h_aldmeri_dominion').GetHolder.GetTitleAsNameNoTooltip]"
+ neighboring_hegemon_definitive_name_aldmeri_dominion: "[GetTitleByKey('h_aldmeri_dominion').GetDefinitiveNameNoTooltip]"
+
+ tribute_mission_decision_direnni_hegemony: "$tribute_mission_decision$ to [GetTitleByKey('h_direnni_hegemony').GetNameNoTierNoTooltip]"
+ tribute_mission_decision_desc_direnni_hegemony: "The [GetTitleByKey('h_direnni_hegemony').GetHolder.GetTitleAsName] of [GetTitleByKey('h_direnni_hegemony').GetDefinitiveName] $tribute_mission_decision_hegemony_common$"
+ tribute_mission_decision_direnni_hegemony_tooltip: "$tribute_mission_decision_tooltip$"
+ tribute_mission_decision_direnni_hegemony_confirm: "$tribute_mission_decision_confirm$"
+ tribute_mission_decision_effects_direnni_hegemony_tt: "You [travel|E] to [GetTitleByKey('h_direnni_hegemony').GetHolder.GetTitledFirstNamePossessive] [court|E] to deliver your [tribute|E]"
+ tribute_mission_interaction_anticipated_rewards_tt_direnni_hegemony: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_direnni_hegemony').GetHolder.GetCulture.GetNameNoTooltip] [artifact_i][artifact|E]\n$BULLET_WITH_TAB$May gain a [GetTitleByKey('h_direnni_hegemony').GetHolder.GetFaith.GetNameNoTooltip] @skill_learning_icon! Monk"
+ neighboring_hegemon_title_direnni_hegemony: "[GetTitleByKey('h_direnni_hegemony').GetHolder.GetTitleAsNameNoTooltip]"
+ neighboring_hegemon_definitive_name_direnni_hegemony: "[GetTitleByKey('h_direnni_hegemony').GetDefinitiveNameNoTooltip]"
 

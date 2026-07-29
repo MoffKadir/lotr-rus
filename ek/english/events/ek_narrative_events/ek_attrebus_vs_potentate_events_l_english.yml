@@ -8,7 +8,7 @@
  attrebus_potentate_cb_victory_zenas_allies_deal_ct: "[current_zenas_ally.GetFirstName] receives all the land held by the former Potentate within all the [de_jure|E] Duchies [current_zenas_ally.GetSheHe] currently holds land in and becomes your [vassal|E]"
  ek_attrebus_potentate.0001.a: "I alone can save Cyrodiil."
  
- ek_attrebus_potentate.0002.desc: "Cyrodiil is in shock! The Warlord [attrebus.GetFirstName], a zealot bent on destroying the Akaviri Potentate, seized the Imperial City and with it the crown of Cyrodiil!\n\nWhile it is said that the Elder Council should soon get in power, and become the ruling body of the Imperial Isles along with it most of the province, the young Warlord will still stay in control for a few years, to deal with the aftermath of the war...\n\nThe Warlord's hatred for the Akaviri is known by everyone, and some whisper that [attrebus.GetFirstName] might use this time to further his own ambitions..."
+ ek_attrebus_potentate.0002.desc: "Cyrodiil is in shock! The Warlord [attrebus.GetFirstName] seized the Imperial City and  proclaimed his ambitions to restore the Empire of Reman. If he manages to unite the Cyrodiils behind him, perhaps the newfound independence of the people of Tamriel will not last."
  ek_attrebus_potentate.0002.a: "What fate awaits the rest of Cyrodiil?"
  
  ek_attrebus_potentate.0064.t: "The Renewed Imperial Legion"
@@ -17,10 +17,11 @@
  attrebus_potentate_first_legion_ec_loyalist_desc: "This choice will upset your $colovian$ [subjects|E]"
  ek_attrebus_potentate.0064.c: "[imperial_legion_attrebus_loyalist.GetFirstName] shall continue to serve me as the Grand Marshal."
  attrebus_potentate_attrebus_anger_elder_council_desc: "This choice will upset your $nibenese$ [subjects|E]."
- 
+
  ek_attrebus_potentate.0065.t: "The Tsaesci Act"
- ek_attrebus_potentate.0065.desc: "For centuries, Cyrodiil and most of Tamriel was ruled not by its native population, but by Tsaesci foreigners. While their service to the Reman Empire made them a worthy ally, their actions after the end of the Reman line have devastated most of Tamriel.\n\nNow, finally, we can make it right. The Akaviri Potentate had lost control over the other provinces over the last few decades, and the final blow has been dealt when Cyrodiil itself rose against them.\n\nThe only thing that is left to do is to ensure that never again should an Akaviri lord be allowed to rule over us...\nTo this end, the Tsaesci Act has been drafted and presented to the various lords of Cyrodiil. Any Tsaesci ruler immediately loses any right to any land, and every major Tsaesci settlement will be forcefully expelled from our land."
- ek_attrebus_potentate.0065.a: "Harsh, but necessary."
+ ek_attrebus_potentate.0065.desc: "[sosildor_emperor.GetFirstName] has sent [sosildor_emperor.GetHerHis] messengers to [akaviri_vassal.GetCapitalLocation.GetTitle.GetBaseNameNoTier]. In [sosildor_emperor.GetHerHis] paranoia, [sosildor_emperor.GetSheHe] has decreed that all those [sosildor_emperor.GetSheHe] has labelled as Tsaesci must immediately pledge loyalty to [sosildor_emperor.GetHerHim], or leave Cyrodiil forever ⸻ on pain of death.\n\nThe messengers have made it clear that I do not have much time to make my decision."
+ ek_attrebus_potentate.0065.a: "I submit."
+ ek_attrebus_potentate.0065.b: "I will never surrender."
  
  ############################
  #      POTENTATE VICTORY   #
@@ -31,10 +32,10 @@
  attrebus_potentate_potentate_win_colovian_estates_shattered: "The Colovian Estates are #v shattered#!, as Attrebus' failed rebellion marked the end of the confederacy."
  attrebus_potentate_potentate_win_only_control_heartlands: "After our victory over the Colovian lords, the Nibenese and other rulers of Cyrodiil who supported us #N have retracted their explicit vassalage#!.\nWe can keep the title of Potentate, #v but we will only keep control over the Heartlands#!."
  
- ek_attrebus_potentate.0102.desc: "The impossible happened. The Potentate, surrounded by all sides by our armies and our allies, managed to secure victory after victory, until we had no choice but to surrender. We have been brought to the Imperial City in chains, and we now rot in the Imperial dungeons, awaiting a trial from a Potentate that surely wish nothing but to see us dead.\n\nCyrodiil weeps, as the Snakes are still ruling her."
+ ek_attrebus_potentate.0102.desc: "The impossible happened. The Potentate, surrounded by all sides by our armies and our allies, managed to secure victory after victory, until we had no choice but to surrender. We have been brought to the Imperial City in chains, and we now rot in the Imperial dungeons, awaiting a trial from a Potentate that surely wish nothing but to see us dead."
  ek_attrebus_potentate.0102.a: "This is a nightmare..."
  
- ek_attrebus_potentate.0103.desc: "[attrebus.GetFirstName]' rebellion was not meant to last. As the Potentate and the Warlord clashed in violent battles, the rulers of the Imperial City defeated time and time again the leader of the rebellion.\n\nAs [attrebus.GetFirstName] has been brought to the Imperial dungeons under heavy guard, it seems the Potentate, by defeating this immediate threat, bought [potentate.GetHerHim]self a sizeable amount of time.\n\nDespite the crushing victory, the various Nibenese lords that joined the Potentate due to their fear of another Colovian Emperor have decided to leave the grasp of [potentate.GetFirstName]. With only the support of the Imperial Isle and some parts of the Rumare bank, nobody expects the Potentate to last for very long."
+ ek_attrebus_potentate.0103.desc: "[attrebus.GetFirstName]' rebellion was not meant to last. As the Potentate and the Warlord clashed in violent battles, the rulers of the Imperial City defeated time and time again the leader of the rebellion.\n\nAs [attrebus.GetFirstName] has been brought to the Imperial dungeons under heavy guard, it seems the Potentate, by defeating this immediate threat, bought [potentate.GetHerHim]self a sizeable amount of time."
  ek_attrebus_potentate.0103.a: "What fate awaits Cyrodiil, and the rest of the world?"
  
  ############################
@@ -42,27 +43,21 @@
  ############################
  ### Attrebus died
  ek_attrebus_potentate.0201.t: "The Death of a Warlord"
- 
- ek_attrebus_potentate.0202.desc: "Fate can be cruel sometimes. We were so sure of ourselves, of our cause, of our victory, that we never thought how what would happen if we were to leave Mundus before we could crush the Potentate. But as news of our tragic end reaches the other Lords of Cyrodiil, it seems our cause falters.\n\nThe Potentate, hidden in the Imperial City, must surely laugh at our end. Our allies and subjects, who swore an oath to never stop fighting until the end, chose to get back to their castles and cities.\n\nWithout us to lead Cyrodiil, it seems our people will stay under the Potentate."
+ ek_attrebus_potentate.0202.desc: "We were so sure of ourselves, of our cause, of our victory, that we never thought how what would happen if Attrebus was to die before the Potentate. His allies and subjects, who swore an oath to never stop fighting until the end, chose to get back to their homes. Without new Emperor to lead the Cyrodiil, it seems our people will stay under the Potentate."
  ek_attrebus_potentate.0202.a: "No! They need me!"
  
- ek_attrebus_potentate.0203.desc: "The upstart warlord [attrebus.GetFirstName] has been defeated. The lords who joined [attrebus.GetHerHis] cause have been forced to walk back to their home, their tail between their legs. The [Glossary( 'Akaviri Potentate', 'POTENTATE_GLOSS' )] survives, for now."
- 
- ek_attrebus_potentate.0204.desc: "News from the Imperial Province! The Warlord [attrebus.GetFirstName], who was leading a rebellion against the Potentate of Cyrodiil, has just died. Without [attrebus.GetHerHis] leadership it seems [attrebus.GetHerHis] cause died out, as lords and subject get back to their castles and cities.\n\nNot all is good for the former Potentate however, as the lords that were supporting [potentate.GetHerHim] have retracted their support and do not recognize [potentate.GetHerHim] as their rightful Potentate anymore.\n\nTroubled times are still ahead, as all of Tamriel seems to fall to chaos..."
- ek_attrebus_potentate.0204.a: "An uneasy peace..."
+ ek_attrebus_potentate.0203.desc: "The upstart warlord [attrebus.GetFirstName] has just died. Without [attrebus.GetHerHis] leadership it seems [attrebus.GetHerHis] cause died out, as lords and subject get back to their homes. The [Glossary( 'Akaviri Potentate', 'POTENTATE_GLOSS' )] survives, for now."
+ ek_attrebus_potentate.0203.a: "An uneasy peace..."
  
  ek_attrebus_potentate.0251.t: "A Snake Decapitated"
- 
- ek_attrebus_potentate.0252.desc: "It seems that our mortal enemy, [potentate.GetFirstName] was not meant to last. As our forces clashed, fate decided to take [potentate.GetHerHim] away from this world! Already the Nibenese lords decided to abandon this foolish cause, and in this chaos the Elder Council decided to step in and seize control of the Imperial Isle!\n\nAs our cause is now void, our allies decided to go back to their castles, and the confederacy that was to crush the Potentate has now dissolved peacefully.\n\nMany wonder what would have happened if we had been victorious before the death of the snake [potentate.GetFirstName], but that is a question better left to the Gods..."
+ ek_attrebus_potentate.0252.desc: "As the [attrebus.GetFirstName] and [potentate.GetFirstName] were ready to set fire to Cyrodiil to crush the other, it seems that fate decided to find a somewhat peaceful resolution to the conflict.\n\nAs news of the death of [potentate.GetFirstName] reached all parts of Cyrodiil, the Nibenese rulers declared independence and the Colovian lords disbanded their confederacy."
  ek_attrebus_potentate.0252.a: "What about my destiny?"
- attrebus_potentate_potentate_death_colovian_estates_disband: "The #V Colovian Estates#! disband as our allies travel back to their homes and families."
- attrebus_potentate_potentate_death_elder_council_imperial_isle: "The #V Elder Council#! seizes control of the Imperial Isle, and one of their own now rules the Imperial City."
- 
- ek_attrebus_potentate.0253.desc: "As the two titans [attrebus.GetFirstName] and [potentate.GetFirstName] were ready to set fire to Cyrodiil to crush the other, it seems that fate decided to find a somewhat peaceful resolution to the conflict.\n\nAs news of the death of [potentate.GetFirstName] reached the banks of the Rumare, the Elder Council dispatched envoys and small retinues to assume control over the important political buildings, before declaring the [Glossary( 'Akaviri Potentate', 'POTENTATE_GLOSS' )] finally destroyed.\n\nAs the war is now over, allies of the Warlord are back to their castles, and the supporters of the late Potentate are hoping that nothing will happen to them..."
- ek_attrebus_potentate.0253.a: "A surprising peace..."
+ ek_attrebus_potentate.0252.b: "A surprising peace..."
+ attrebus_potentate_potentate_death_colovian_estates_disband: "The #V Colovian Estates#! disband as the Potentate is dead."
+ attrebus_potentate_potentate_death_elder_council_imperial_isle: "The #V Potentate#! collapses and all [vassal|E] become [independent|E]."
 
  ek_attrebus_potentate.0300.t: "The End of a Potentate"
- ek_attrebus_potentate.0300.desc: "With neither the Warlord [attrebus.GetFirstName] nor the Potentate [potentate.GetFirstName] in charge of the Cyrodiilic Potentate, supporters of both sides have decided to go back to their castles and cities.\n\nWith the Akaviri scourge removed from power and no obligations towards the colovian warlord, the Elder Council has decided to step in and have declared the Potentate null and void."
+ ek_attrebus_potentate.0300.desc: "With neither the Warlord [attrebus.GetFirstName] nor the Potentate [potentate.GetFirstName] in charge of the Imperial City, supporters of both sides have decided to go back to their homes."
  ek_attrebus_potentate.0300.a: "What fate awaits Cyrodiil, and the rest of the world?"
 
  #############################
