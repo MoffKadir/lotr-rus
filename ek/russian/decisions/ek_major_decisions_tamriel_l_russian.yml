@@ -1,5 +1,5 @@
 ﻿l_russian:
- form_pirate_confederacy_the_isles_decision:0 "Основать Пиратскую конфедерацию Островов"
+ form_pirate_confederacy_the_isles_decision: "Основать Пиратскую конфедерацию Островов"
  form_pirate_confederacy_the_isles_decision_desc:0 "Острова Абесинского моря — дом для негодяев и флибустьеров всех мастей. Порознь мы лишь заноза в чьей-то заднице… Но если я смогу объединить нас, абесинских пиратов, мы будем ходить в такие налёты, какие Тамриэль ещё не видывал!"
  form_pirate_confederacy_the_isles_decision_tooltip:0 "Могущественный пират мог бы объединить Абесинское море…"
  form_pirate_confederacy_the_isles_decision_confirm:0 "Созвать флот и налётчиков!"
@@ -13,15 +13,12 @@
  
  ### Attrebus/Interregnum decisions
  
- attrebus_draft_tsaesci_act_decision:0 "Утвердить акт о цаэски"
- attrebus_draft_tsaesci_act_decision_desc:0 "Большинство местных правителей считает акавирское властвование над Сиродилом и Тамриэлем тёмной страницей в истории провинции.\n\nДаже после падения потентата некоторые графства и правители в Имперской провинции всё ещё придерживаются старых акавирских традиций, и Совет старейшин поручил вам удостовериться, что никто из них больше не ступит на сиродильскую землю и Имперский остров, дабы провинция вновь не попала в руки акавирцев."
- attrebus_draft_tsaesci_act_decision_tooltip:0 "Официально изгнать акавирцев из Сиродила"
- attrebus_draft_tsaesci_act_decision_confirm:0 "Обезглавить змею!"
- attrebus_draft_tsaesci_act_decision_no_tsaesci_ruler_imperial_isle:0 "Ни один из правителей на Имперском Острове не принадлежит к культуре с [Concept('heritage', 'наследием')|E] цаэски"
- attrebus_draft_tsaesci_act_decision_no_tsaesci_province_imperial_isle:0 "Ни в одной из провинций на Имперском Острове нет культуры с [Concept('heritage', 'наследием')|E] цаэски"
- attrebus_draft_tsaesci_act_decision_effect_desc:0 "После утверждения акта о цаэски все правители акавирского происхождения в вашей державе утратят свои владения в пользу вас. В каждом акавирском графстве изменится [culture|El], но при этом вдвое уменьшится [development|El].\nЭтот эффект также будет распространяться на любое другое графство, которое войдёт в состав важей державы после утверждения акта."
- attrebus_tsaesci_county_title:0 "Цаэски изгнаны из графства"
- attrebus_tsaesci_county_desc:0 "Графство [title.GetBaseName] наше, и его акавирское население изгнано."
+ attrebus_draft_tsaesci_act_decision: "Принять акт о цаэски"
+ attrebus_draft_tsaesci_act_decision_desc: "Многие из выживших сторонников Акавирского Потентата до сих пор отказываются признавать меня своим императором. Необходимы пойти на жёсткие меры для борьбы с этими непокорными изменниками."
+ attrebus_draft_tsaesci_act_decision_tooltip: "Борьба с акавирскими диссидентами"
+ attrebus_draft_tsaesci_act_decision_confirm: "Потребовать от них верности."
+ attrebus_draft_tsaesci_act_decision_no_tsaesci_ruler_imperial_isle: "Ни один из правителей на Имперском Острове не принадлежит к культуре с [Concept('heritage', 'наследием')|E] цаэски"
+ attrebus_draft_tsaesci_act_decision_effect_desc: "После принятия закона о цаэски ваши акавирские вассалы (с [GetCulturePillar('heritage_tsaesci').GetName]им [Concept('heritage', 'наследием')|E], [Concept( 'culture', 'культурой' )|E] или [GetFaithByKey('court_dawnbeauty').GetName]ой [Concept( 'faith', 'конфессией' )|E]) встанут перед выбором: присягнуть вам на верность или отказаться. В случае отказа вы получите [Concept( 'imprisonment_reason', 'повод для заключения в тюрьму' )|E] против них и сможете [Concept( 'banish', 'изгнать' )|E] их род из [Concept( 'realm', 'державы' )|E]."
   
  ### Orsinium
  create_orsinium_decision:0 "Возродить Орсиниум"
@@ -91,34 +88,17 @@
  integrate_nibenay_decision_confirm:0 "Расширить границы!"
  integrate_nibenay_bravil_effect_de_jure_tt:0 "[GetTitleByKey('k_bravil').GetName] станет [de_jure|El] сюзереном всех герцогств в [Concept('region', 'регионе')|E] [GetGeographicalRegion('mundus_tamriel_cyrodiil_cisniben_north').GetName]"
 
- accept_colovia_nibenay_divide_decision:0 "Трон Поверженных Королей"
- accept_colovia_nibenay_divide_decision_desc:0 "Со времён смерти Ремана III на Рубиновом троне не было достойного императора. Даже генералу Аттребу не удалось установить центральную власть. А в отсутствие Империи, возможно, для Коловии и Нибенея — двух половин, составляющих [GetTitleByKey('e_cyrodiil').GetNameNoTier] — лучше будет продолжать существовать как независимые державы.\nБыть может, пора формально признать два региона как отдельные друг от друга, как было в последний раз в дни, предшествовавшие Второй империи."
- accept_colovia_nibenay_divide_decision_tooltip:0 "Разделить Сиродил на две [de_jure|El] [empires|El]"
- accept_colovia_nibenay_divide_decision_confirm:0 "Поверженное единство земли Поверженных Королей"
- accept_colovia_nibenay_divide_decision.colovia_vassals.tt:0 "К Коловии отходят следующие королевства: #V Анвил#!, #V Кватч#!, #V Скинград#!, #V Коррол#! и #V Брума#!"
- accept_colovia_nibenay_divide_decision.nibenay_vassals.tt:0 "К Нибенею отходят следующие королевства: #V Румаре#!, #V Чейдинхол#!, #V Бравил#! и #V Лейавин#!"
- accept_colovia_nibenay_divide_decision.create_de_jure_empires.tt:0 "Обе половины Сиродила теперь станут [de_jure|El] империями, претендующими только на приписанные им Имперские графства."
- accept_colovia_nibenay_divide_decision.reunite_cyrodiil.tt:0 "Если одна из империй полностью объединит свою часть Сиродила, она сможет #V бросить вызов другой с целью объединить провинцию#!, завладев титулом #bold Империя Сиродил#!, если преуспеет.\nТот, кто при помощи #V умелой дипломатии и заключения династических браков#!, завладеет обеими [de_jure|El] империями, также сможет их объединить."
+ accept_colovia_nibenay_divide_decision: "Трон Поверженных Королей"
+ accept_colovia_nibenay_divide_decision_desc: "Поскольку Империи больше нет и некому объединить две половины, из которых состоит [GetTitleByKey('e_cyrodiil').GetNameNoTier], возможно, Коловии и Нибенею лучше вновь пойти своими путями."
+ accept_colovia_nibenay_divide_decision_tooltip: "Разделить Сиродил на две [de_jure|El] [empires|El]"
+ accept_colovia_nibenay_divide_decision_confirm: "Поверженное единство земли Поверженных Королей"
+ accept_colovia_nibenay_divide_decision.colovia_vassals.tt: "Все [Concept('kingdoms', 'королевства')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('mundus_tamriel_cyrodiil_colovia_bruma').GetName] станут [de_jure|El] вассалами титула [GetTitleByKey('e_colovian_estates').GetNameNoTier]"
+ accept_colovia_nibenay_divide_decision.nibenay_vassals.tt: "Все [Concept('kingdoms', 'королевства')|E] в [Concept('region', 'регионах')|E] [GetGeographicalRegion('mundus_tamriel_cyrodiil_nibenay').GetName] и [GetGeographicalRegion('mundus_tamriel_cyrodiil_heartlands').GetName] станут [de_jure|El] вассалами титула [GetTitleByKey('e_nibenay').GetNameNoTier]"
+ accept_colovia_nibenay_divide_decision.reunite_cyrodiil.tt: "Правители, возглавляющие [GetTitleByKey('e_nibenay').GetNameNoTier] или [GetTitleByKey('e_colovian_estates').GetNameNoTier], смогут попытаться восстановить #bold Сиродильскую Империю#! и уничтожить других претендентов на имперский трон."
 
- colovia_march_east_decision:0 "Приготовиться к походу на восток"
- colovia_march_east_decision_desc:0 "Слишком долго Сиродил был разделён. Наша власть над Коловией неоспорима, и пришло время отправить войска на восток, чтобы покорить нибенейские королевства и наконец объединить Сиродил."
- colovia_march_east_tooltip:0 "Сиродилу нужен новый император!"
- colovia_march_east_decision_tooltip:0 "Сиродилу нужен новый император!"
- colovia_march_east_decision_confirm:0 "За Сиродил!"
- colovia_march_east_decision.claim_nibenay.tt:0 "Если вы навяжете претензию на титул Нибенея войной, то будете коронованы как [Select_CString(ROOT.Char.IsFemale, 'императрица', 'император')] Сиродила."
- colovia_march_east_decision.no_nibenay.tt:0 "В случае, если восточная половина Сиродила останется без своего повелителя, у вас будет [casus_belli|El] на отдельные её части за увеличенную стоимость."
- 
- nibenay_march_west_decision:0 "Приготовиться к походу на запад"
- nibenay_march_west_decision_desc:0 "Слишком долго Сиродил был разделён. Наши позиции в Нибенее сильны, и пришло время западу покориться, как было раньше в течение многих веков."
- nibenay_march_west_tooltip:0 "Сиродилу нужен новый император!"
- nibenay_march_west_decision_tooltip:0 "Сиродилу нужен новый император!"
- nibenay_march_west_decision_confirm:0 "За Сиродил!"
- nibenay_march_west_decision.claim_colovia.tt:0 "Если вы навяжете претензию на титул Коловии войной, то будете коронованы как [Select_CString(ROOT.Char.IsFemale, 'императрица', 'император')] Сиродила."
- nibenay_march_west_decision.no_colovia.tt:0 "В случае, если западная половина Сиродила останется без своего повелителя, у вас будет [casus_belli|El] на отдельные её части за увеличенную стоимость."
-
- ###Nedic Confederation
- restore_nedic_kingdom_decision:0 "Объединить недов"
- restore_nedic_kingdom_decision_desc:0 "До нашествия [Glossary( 'Ра Гада', 'RAGADA_GLOSS' )] наш народ был объединён в конфедерацию свободных племён, которые клялись в верности верховному королю из Небесного Предела. Сейчас для нашего народа всё это — лишь далёкое прошлое, но я могу объявить себя [Select_CString(ROOT.Char.IsFemale, 'наследницей', 'наследником' )] этой древней державы, объединив земли наших предков."
- restore_nedic_kingdom_decision_tooltip:0 "Вы создадите новое [empire|El] недов"
- restore_nedic_kingdom_decision_confirm:0 "Больше мы никому не покоримся!"
- form_nedic_kingdom_scripted_effect_de_jure_tt:0 "Все королевства в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('ek_nedic_kingdom_region').GetName] станут [de_jure|El] вассалами верховного королевства [nedic_confederation.GetNameNoTier]"
+ ###Deathlands - high kingdom for Keptu
+ restore_deathlands_decision: "Объединить кепту"
+ restore_deathlands_decision_desc: "До нашествия [Glossary( 'Ра Гада', 'RAGADA_GLOSS' )] наш народ был объединён в конфедерацию свободных племён, которые клялись в верности верховному королю из Небесного Предела. Сейчас для нашего народа всё это — лишь далёкое прошлое, но я могу объявить себя [Select_CString(ROOT.Char.IsFemale, 'наследницей', 'наследником' )] этой древней державы, объединив земли наших предков."
+ restore_deathlands_decision_tooltip: "Вы создадите новое [empire|El] кепту"
+ restore_deathlands_decision_confirm: "Больше мы никому не покоримся!"
+ form_nedic_kingdom_scripted_effect_de_jure_tt: "Все королевства в [Concept( 'region', 'регионе' )|E] [GetGeographicalRegion('ek_nedic_kingdom_region').GetName] станут [de_jure|El] вассалами верховного королевства [nedic_confederation.GetNameNoTier]"

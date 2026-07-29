@@ -1,6 +1,7 @@
 ﻿l_russian:
  decision_group_type_ek_sb:0 "Особые постройки"
  decision_group_type_ek_magic:0 "Магические решения"
+ decision_group_type_ek_imperial: "Имперские решения"
  # Coping mechanisms
  stress_loss_skooma_drinker_decision:1 "Выкурить или выпить скумы"
  stress_loss_skooma_drinker_decision_desc:1 "Зажигая трубку, я начинаю чувствовать заполняющий комнату запах переработанного лунного сахара. Я улыбаюсь, ибо это то, что мне было нужно…"
@@ -239,7 +240,6 @@
  proclaim_disease_decision_confirm:0 "Благослови меня, Чумной Лорд!"
 
 # Artifacts
-
  crown_verity_decision:0 "Суд Истинности"
  crown_verity_decision_desc:0 "Коронация Кьорика Белого положила начало традиции, согласно которой каждый нордский правитель должен предстать перед судом Истинности, во время которого он докажет, что достоин носить корону своих праотцов."
  crown_verity_judgement_tooltip:0 "Вы предстанете перед судом Короны Истинности, чтобы утвердить свою легитимность правления владениями!"
@@ -294,6 +294,7 @@
  shadow_key_decision_tooltip:0 "Ключ теней откроет ваш настоящий потенциал, даруя увеличение уровня образования и огромный жизненный опыт. Однако ключ после этого вернётся обратно к теням."
  shadow_key_decision_confirm:0 "Раскрыть свой потенциал!"
 
+#EK TODO: maybe adapt to magical emperors somehow?
  aok_decision:0 "Надеть Амулет Королей"
  aok_decision_tooltip:0 "Попытаться надеть Амулет Королей и узнать, не [GetTrait('dragonborn').GetName( Character.Self )] ли вы."
  aok_selection_tooltip:0 "Надеть Амулет Королей"
@@ -382,7 +383,7 @@
 
  visit_vineyard_requirement:0 "В [Concept('city', 'городе')|E] в пределах вашего [Concept('domain', 'домена')|E] должно быть здание #V $building_type_amaya_vineyard_02$#!"
 
- stop_being_pirate_government_decision:0 "Оставить пиратство?"
+ stop_being_pirate_government_decision:0 "Оставить пиратство"
  stop_being_pirate_government_decision_desc:0 "Пиратство может и прибыльно, но некоторой легитимности и авторитета, которыми пользуются более привычная знать, ему не хватает. Возможно, пора оставить в прошлом нашу текущую систему управления и перейти на более централизованную?"
  stop_being_pirate_government_decision_confirm:0 "Времена пиратства подошли к концу."
  stop_being_pirate_government_decision_tooltip:0 "Полагаю, настало время перемен."
@@ -442,4 +443,31 @@
  tribute_mission_interaction_anticipated_rewards_tt_redguard_republic:0 "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$Возможность получить [GetTitleByKey('h_redguard_republic').GetHolder.GetCulture.GetCollectiveNounNoTooltip|l]ий [artifact_i][artifact|E]\n$BULLET_WITH_TAB$Возможность получить [GetTitleByKey('h_redguard_republic').GetHolder.GetFaith.GetNameNoTooltip|l]ого @skill_learning_icon! монаха"
  neighboring_hegemon_title_redguard_republic:0 "[GetTitleByKey('h_redguard_republic').GetHolder.GetTitleAsNameNoTooltip]"
  neighboring_hegemon_definitive_name_redguard_republic:0 "[GetTitleByKey('h_redguard_republic').GetDefinitiveNameNoTooltip]"
+ 
+ tribute_mission_decision_imperatum_saliache: "$tribute_mission_decision$ державе [GetTitleByKey('h_imperatum_saliache').GetNameNoTierNoTooltip]"
+ tribute_mission_decision_desc_imperatum_saliache: "[GetTitleByKey('h_imperatum_saliache').GetHolder.GetTitleAsName] [GetTitleByKey('h_imperatum_saliache').GetDefinitiveName] $tribute_mission_decision_hegemony_common$"
+ tribute_mission_decision_imperatum_saliache_tooltip: "$tribute_mission_decision_tooltip$"
+ tribute_mission_decision_imperatum_saliache_confirm: "$tribute_mission_decision_confirm$"
+ tribute_mission_decision_effects_imperatum_saliache_tt: "Вы [Concept('travel', 'отправляетесь')|E] ко [Concept('court', 'двору')|E] персонажа [GetTitleByKey('h_imperatum_saliache').GetHolder.GetTitledFirstNamePossessive], чтобы выплатить [Concept('tribute','дань')|E]"
+ tribute_mission_interaction_anticipated_rewards_tt_imperatum_saliache: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$Возможность получить [GetTitleByKey('h_imperatum_saliache').GetHolder.GetCulture.GetCollectiveNounNoTooltip|l]ий [artifact_i][artifact|E]\n$BULLET_WITH_TAB$Возможность получить [GetTitleByKey('h_imperatum_saliache').GetHolder.GetFaith.GetNameNoTooltip|l]ого @skill_learning_icon! монаха"
+ neighboring_hegemon_title_imperatum_saliache: "[GetTitleByKey('h_imperatum_saliache').GetHolder.GetTitleAsNameNoTooltip]"
+ neighboring_hegemon_definitive_name_imperatum_saliache: "[GetTitleByKey('h_imperatum_saliache').GetDefinitiveNameNoTooltip]"
+
+ tribute_mission_decision_aldmeri_dominion: "$tribute_mission_decision$ державе [GetTitleByKey('h_aldmeri_dominion').GetNameNoTierNoTooltip]"
+ tribute_mission_decision_desc_aldmeri_dominion: "[GetTitleByKey('h_aldmeri_dominion').GetHolder.GetTitleAsName] [GetTitleByKey('h_aldmeri_dominion').GetDefinitiveName] $tribute_mission_decision_hegemony_common$"
+ tribute_mission_decision_aldmeri_dominion_tooltip: "$tribute_mission_decision_tooltip$"
+ tribute_mission_decision_aldmeri_dominion_confirm: "$tribute_mission_decision_confirm$"
+ tribute_mission_decision_effects_aldmeri_dominion_tt: "Вы [Concept('travel', 'отправляетесь')|E] ко [Concept('court', 'двору')|E] персонажа [GetTitleByKey('h_aldmeri_dominion').GetHolder.GetTitledFirstNamePossessive], чтобы выплатить [Concept('tribute','дань')|E]"
+ tribute_mission_interaction_anticipated_rewards_tt_aldmeri_dominion: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$Возможность получить [GetTitleByKey('h_aldmeri_dominion').GetHolder.GetCulture.GetCollectiveNounNoTooltip|l]ий [artifact_i][artifact|E]\n$BULLET_WITH_TAB$Возможность получить [GetTitleByKey('h_aldmeri_dominion').GetHolder.GetFaith.GetNameNoTooltip|l]ого @skill_learning_icon! монаха"
+ neighboring_hegemon_title_aldmeri_dominion: "[GetTitleByKey('h_aldmeri_dominion').GetHolder.GetTitleAsNameNoTooltip]"
+ neighboring_hegemon_definitive_name_aldmeri_dominion: "[GetTitleByKey('h_aldmeri_dominion').GetDefinitiveNameNoTooltip]"
+
+ tribute_mission_decision_direnni_hegemony: "$tribute_mission_decision$ державе [GetTitleByKey('h_direnni_hegemony').GetNameNoTierNoTooltip]"
+ tribute_mission_decision_desc_direnni_hegemony: "[GetTitleByKey('h_direnni_hegemony').GetHolder.GetTitleAsName] [GetTitleByKey('h_direnni_hegemony').GetDefinitiveName] $tribute_mission_decision_hegemony_common$"
+ tribute_mission_decision_direnni_hegemony_tooltip: "$tribute_mission_decision_tooltip$"
+ tribute_mission_decision_direnni_hegemony_confirm: "$tribute_mission_decision_confirm$"
+ tribute_mission_decision_effects_direnni_hegemony_tt: "Вы [Concept('travel', 'отправляетесь')|E] ко [Concept('court', 'двору')|E] персонажа [GetTitleByKey('h_direnni_hegemony').GetHolder.GetTitledFirstNamePossessive], чтобы выплатить [Concept('tribute','дань')|E]"
+ tribute_mission_interaction_anticipated_rewards_tt_direnni_hegemony: "$tribute_mission_interaction_anticipated_rewards_tt_subject_standing$\n$tribute_mission_interaction_anticipated_rewards_tt_common$\n$BULLET_WITH_TAB$Возможность получить [GetTitleByKey('h_direnni_hegemony').GetHolder.GetCulture.GetCollectiveNounNoTooltip|l]ий [artifact_i][artifact|E]\n$BULLET_WITH_TAB$Возможность получить [GetTitleByKey('h_direnni_hegemony').GetHolder.GetFaith.GetNameNoTooltip|l]ого @skill_learning_icon! монаха"
+ neighboring_hegemon_title_direnni_hegemony: "[GetTitleByKey('h_direnni_hegemony').GetHolder.GetTitleAsNameNoTooltip]"
+ neighboring_hegemon_definitive_name_direnni_hegemony: "[GetTitleByKey('h_direnni_hegemony').GetDefinitiveNameNoTooltip]"
 

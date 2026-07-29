@@ -7,9 +7,8 @@
  ### Vanilla perk tree edits
  # Diplomacy: Majesty Tree
  TRUE_RULER_PERK_BYPASS_OFFER_VASSALIZATION_REQUIREMENTS_EFFECT:0 "Вы можете [offer_vassalization_interaction|El] не имея [Concept('dynasty', 'династических')|E] связей, необходимой [Concept('innovation', 'инновации')|E] или необходимого [Concept('prestige_level', 'уровне репутации')|E]"
- A_LIFE_OF_GLORY_TRIBAL_RULER_PRESTIGE_LEVEL_INCREASE_EFFECT:0 "[expected_prestige_level|E] для [Concept('tribal', 'племенных')|E] [Concept('rulers', 'правителей')|E] снижен на один [prestige_level|El]"
  # Learning: Theology Tree
- ENABLE_EK_LEARN_LITURGICAL_LANGUAGE_SCHEME:0 "Открывает [schemes|El] «[GetScheme('ek_learn_liturgical_language').GetTypeName]», если ваша [faith|El] имеет [Concept('doctrine', 'доктрину')|E] $doctrine_liturgical_language_name$"
+ ENABLE_EK_LEARN_LITURGICAL_LANGUAGE_SCHEME:0 "Открывает [schemes|El] «[GetScheme('ek_learn_liturgical_language').GetTypeName]», если ваша [faith|El] имеет [Concept('doctrine', 'доктрину')|E] $tenet_tsaescence_name$ или [Concept('pantheon', 'пантеон')|E] $doctrine_pantheon_dragons_name$"
  RADIANT_PERK_RELIGIONS_PIETY_LEVEL_INCREASE_EFFECT:0 "Эффекты монолатрических аспектов выдаются согласно следующему [Concept('piety_level', 'уровню набожности')|E]\nПравители с [Concept('piety_level', 'уровнем набожности')|E] [GetModifier( 'piety_level_5' ).GetNameWithTooltip|L] получают ещё более сильный модификатор"
  ### EK2 perk trees
  # Martial: Plunderer Tree
@@ -65,3 +64,6 @@
  steal_back_artifact_scheme_power_add:0 "[scheme_power|E] «[GetScheme('steal_back_artifact').GetTypeName]»"
  steal_back_artifact_scheme_resistance_add:0 "[scheme_resistance|E] «[GetScheme('steal_back_artifact').GetTypeName]»"
  imprison_random_lowborn_01:0 "[new_prisoner.GetFirstNameNoTooltip|U] [Select_CString(new_prisoner.IsFemale, 'брошена', 'брошен')] в вашу темницу."
+ 
+ ek_mystery_meat_fear_tax_perk_adventurer_name: "[Glossary('Тёмное мясо', 'DARK_MEAT_GLOSS')]"
+ ek_adventurer_fear_tax_perk_effect_double_meat_yum_yum: "Даёт вдвое больше [Concept( 'provisions', 'припасов лагеря' )|E] при использовании метода [Concept('execution', 'казни')|E] «#V Превратить в загадочное мясо#!»"

@@ -3,13 +3,8 @@
  PATRON_BUTTON:0 "#T Набожность#!"
  PATRON_VIEW_TITLE:0 "Набожность"
  COMMUNE:0 "Установить связь"
- #patron_commune_tt:0 "Commune with [GetPlayer.Custom('GetPatronName')]"
- #patron_commune_tt:0 "Commune with [Localize(Concatenate(Concatenate('patron_', GetVariableSystem.Get('active_patron')), '_name'))]"
  patron_commune_tt:0 "[Localize(Concatenate(Concatenate('patron', ValueBreakdown.GetName), '_name'))]: установить связь с покровителем"
  NO_PATRONS:0 "У этой [faiths|El] нет доступных [Concept('patron_deity', 'божеств-покровителей')|E].\nПокровители присутствуют только в конфессиях с [Concept( 'doctrines', 'доктринами' )|E] «[GetFaithDoctrine('doctrine_main_pantheon_type_polytheism').GetBaseName]» либо «[GetFaithDoctrine('doctrine_main_pantheon_type_daedric_prince').GetBaseName]» или в конфессиях со второстепенным пантеоном.\n\nДоктрина этой конфессии — «[GetFaithDoctrine('doctrine_main_pantheon_type_monolatrism').GetBaseName]», и её последователи поклоняются аспекту своего божества."
- PATRON_MINOR_BOONS:0 "Малые благодати"
- PATRON_OFFERINGS:0 "Подношения"
- PATRON_MAJOR_BOONS:0 "Великие благодати"
  patron_back_tt:0 "Назад"
  #Faith window
  FAITH_PATRONS:0 "Покровители"
@@ -22,136 +17,49 @@
  CONFIRM_PATRON_BUTTON:0 "Получить свойство «[Trait.GetNameNoTooltip(GetPlayer)]»"
  PATRON_TIMEOUT:0 "Вы не можете выбрать нового покровителя до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'recent_patron_selected' ) )]"
  YOUR_PATRON:0 "Ваш [patron|El]"
- #pantheons
- PATRON_DAEDRIC_PRINCES:0 "Даэдрические князья"
- show_hide_desc:0 "[Select_CString( GetVariableSystem.Exists('patron_hide_desc'), 'Скрыть', 'Показать' )] описание"
- gain_ardor_effect:0 "Вы получите $VALUE|+0$ благосклонности@ardor_icon!"
- lose_ardor_effect:0 "Вы потратите $VALUE|-0$ благосклонности@ardor_icon!"
- insufficient_ardor:0 "У вас нет $VALUE|0$ благосклонности@ardor_icon!"
- #customisable
- selected_patron_name:0 "[GetPlayer.Custom('GetPatronName')]"
- selected_patron_desc:0 "[GetPlayer.Custom('GetPatronDesc')]"
- selected_patron_long_desc:0 "[GetPlayer.Custom('GetPatronLongDesc')]"
- patron_ardor:0 "#T Благосклонность: [GetPlayer.MakeScope.Var(Concatenate('ardor', GetVariableSystem.Get('patron_active'))).GetValue|V0]#!"
- patron_status:0 "#T Статус:#!\n[GetPlayer.Custom(Concatenate('GetPatronStatus', GetVariableSystem.Get('patron_active')))]"
- # global variable [patron]_status w/ flag
- patron_status_nominal:0 "Номинальный"
- patron_status_ascendant:0 "#P Вознесение#!"
- patron_status_convalescing:0 "#Z Исцеление#!"
- patron_status_cataclysm:0 "#N Катаклизм#!"
- patron_worship_type:0 "#T Тип поклонения:#!\n[GetPlayer.Custom(Concatenate('GetPatronWorshipType', GetVariableSystem.Get('patron_active')))]"
- # has_doctrine tenet_focused_worship - 
- patron_worship_type_focused:0 "#P [daedric_focused]#!"
- patron_worship_type_pantheon:0 "[daedric_pantheon|E]"
- patron_worship_type_allowed:0 "[daedric_allowed|E]"
- patron_worship_type_secret:0 "#N [daedric_secret|E]#!"
-
+ 
  game_concept_patron_trait:0 "Свойство покровителя"
  game_concept_patron_traits:0 "Свойства покровителя"
  game_concept_patron_trait_desc:1 "$game_concept_patron_trait$ — [trait|El], отображающее божество, которое персонаж выбрал покровителем среди доступных божеств из  [Concept('pantheon', 'пантеона')|E] этой [faiths|El]. Не все [faiths|El] позволяют выбрать [Concept('patrons', 'покровителя')|E]."
 
  patron_no_selection:0 "Покровитель не выбран"
 
- patron_azura_name:0 "[GetPlayer.Custom('GetObAzuraName')]"
- patron_azura_desc:0 "Королева Рассвета и Заката"
- patron_azura_long_desc:0 "[GetPlayer.Custom('GetObAzuraDesc')]"
- patron_azura_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_azura')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_azura')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_azura').GetValue|+0]"
  desc_azura:0 "Азура, Даэдрический Князь Рассвета и Заката, правит Лунной Тенью в Обливионе. Её изображают в виде женщины, держащей в руках звезду и полумесяц. Проклятие, превратившее каймеров в данмеров, наложила после битвы у Красной горы Азура."
 
- patron_boethiah_name:0 "[GetPlayer.Custom('GetObBoethiahName')]"
- patron_boethiah_desc:0 "Обманщица Народов"
- patron_boethiah_long_desc:0 "[GetPlayer.Custom('GetObBoethiahDesc')]"
- patron_boethiah_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_boethiah')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_boethiah')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_boethiah').GetValue|+0]"
  desc_boethiah:0 "Боэтия, Даэдрический Князь Заговоров, правит Долей Принадлежности в Обливионе. Боэтию изображают как воина — женского или мужского пола. В Меретическую эру Боэтия «пожрала» Тринимака, что, как считается, привело к появлению Малаката и орков."
  
- patron_clavicus_name:0 "[GetPlayer.Custom('GetObClavicusName')]"
- patron_clavicus_desc:0 "Повелитель Пагубных Желаний"
- patron_clavicus_long_desc:0 "[GetPlayer.Custom('GetObClavicusDesc')]"
- patron_clavicus_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_clavicus')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_clavicus')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_clavicus').GetValue|+0]"
  desc_clavicus:0 "Клавикус Вайл, Даэдрический Князь Сделок и Обмана, правит Полями Сожалений в Обливионе. Его представляют в виде рогатого даэдрота вместе со спутником Барбасом. Это изображение встречается ещё на наскальных рисунках времён Меретической эры." # cant actually find anything major he's done prior to the Khanaten Flu, everything is in the future, relative to the start date 
- 
- patron_hermaeus_name:0 "[GetPlayer.Custom('GetObHermaeusName')]"
- patron_hermaeus_desc:0 "Демон Знаний"
- patron_hermaeus_long_desc:0 "[GetPlayer.Custom('GetObHermaeusDesc')]"
- patron_hermaeus_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_hermaeus')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_hermaeus')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_hermaeus').GetValue|+0]"
+
  desc_hermaeus:0 "Хермеус Мора, Даэдрический Князь Запретных Знаний, правит Апокрифом в Обливионе. Его образ — скопище глаз и щупалец, Отвратительная Бездна. В нордских мифах Исграмор едва избежал уловки Херма-Моры, хотевшего обманом превратить его в эльфа."
- 
- patron_hircine_name:0 "[GetPlayer.Custom('GetObHircineName')]"
- patron_hircine_desc:0 "Отец Зверолюдей"
- patron_hircine_long_desc:0 "[GetPlayer.Custom('GetObHircineDesc')]"
- patron_hircine_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_hircine')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_hircine')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_hircine').GetValue|+0]"
+
  desc_hircine:0 "Хирсин, Даэдрический Князь Охоты, правит Охотничьими Угодьями в Обливионе. Его изображают в виде человекоподобного существа с оленьим черепом вместо головы."
  
  patron_jyggalag_name:0 "Джиггалаг"
  patron_jyggalag_desc:0 "Князь Порядка"
  patron_jyggalag_long_desc:0 "Джиггалаг, Даэдрический Князь Порядка, в данный момент существует в виде Шеогората. Он слабо известен в Тамриэле, и потому число его изображений очень немногочисленно. В конце каждой эры Джиггалаг принимает свой первоначальный облик и возвращает порядок на Дрожащие Острова."
- 
- patron_malacath_name:0 "[GetPlayer.Custom('GetObMalacathName')]"
- patron_malacath_desc:0 "Защитник Преданных"
- patron_malacath_long_desc:0 "[GetPlayer.Custom('GetObMalacathDesc')]"
- patron_malacath_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_malacath')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_malacath')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_malacath').GetValue|+0]"
- desc_malacath:0 "Малакат, Даэдрический Князь Отвергнутых правит Зольником в Обливионе. Его изображают в образе орка с мечом или топором в руках. Почитание именно Малаката распространено среди орсимеров, многие из которых живут по его заветам — Кодексу Малаката."#
+
+ desc_malacath:0 "Малакат, Даэдрический Князь Отвергнутых правит Зольником в Обливионе. Его изображают в образе орка с мечом или топором в руках. Почитание именно Малаката распространено среди орков, многие из которых живут по его заветам — Кодексу Малаката."
  desc_malahk:0 "Король-бог Малак поклялся на крови отомстить богам велотийцев и их пророку, после чего гнал своих врагов до самых пепельных земель. Его дети чтят эту вражду, продолжая вечно терзать своими налётами проклятых эльфов."
  desc_muluk:0 "Главарь Мулук — защитник и старший брат всех гоблинкенов. Он ведёт себя как суровый повелитель, превознося силу и насмехаясь над слабыми, но немедленно гневается, если его народу грозит опасность или унижение."
- 
- patron_mehrunes_name:0 "[GetPlayer.Custom('GetObMehrunesName')]"
- patron_mehrunes_desc:0 "Могущественнейший Владыка"
- patron_mehrunes_long_desc:0 "[GetPlayer.Custom('GetObMehrunesDesc')]"
- patron_mehrunes_summary:0 "Status: [GetPlayer.Custom('GetPatronStatus_mehrunes')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_mehrunes')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_mehrunes').GetValue|+0]"
+
  desc_mehrunes:0 "Даэдрический Князь Разрушения Мерунес Дагон правит Мёртвыми Землями в Обливионе. Его изображают четырёхруким. В Первую эру Морнхолд уничтожил Мерунес Дагон."
- 
- patron_mephala_name:0 "[GetPlayer.Custom('GetObMephalaName')]"
- patron_mephala_desc:0 "Учитель Тайных Искусств"
- patron_mephala_long_desc:0 "[GetPlayer.Custom('GetObMephalaDesc')]"
- patron_mephala_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_mephala')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_mephala')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_mephala').GetValue|+0]"
+
  desc_mephala:0 "Мефала, Даэдрический Князь, чей домен скрыт и непонятен, правит Спиральным Сплетением в Обливионе. Её обычно изображают в образе данмерки с паучьими лапами, растущими из спины, но она может принимать и другие облики."
- 
- patron_meridia_name:0 "[GetPlayer.Custom('GetObMeridiaName')]"
- patron_meridia_desc:0 "Госпожа Бесконечных Энергий"
- patron_meridia_long_desc:0 "[GetPlayer.Custom('GetObMeridiaDesc')]"
- patron_meridia_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_meridia')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_meridia')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_meridia').GetValue|+0]"
+
  desc_meridia:0 "Меридия, Даэдрический Князь Энергии и Жизни, правит Цветными Комнатами в Обливионе. Её изображают как женщину в робе с огромными оперёнными крыльями. Меридия ненавидит нежить и потому считается одним из более доброжелательных князей."
- 
- patron_molag_name:0 "[GetPlayer.Custom('GetObMolagName')]"
- patron_molag_desc:0 "Жнец Душ"
- patron_molag_long_desc:0 "[GetPlayer.Custom('GetObMolagDesc')]"
- patron_molag_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_molag')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_molag')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_molag').GetValue|+0]"
+
  desc_molag:0 "Молаг Бал, Даэдрический Князь Порабощения, правит Хладной Гаванью в Обливионе. Его изображают со ртом как у миноги. Молаг Бал — Патриарх Вампиров, и наиболее преданные его почитатели в награду могут стать чистокровными вампирами." 
- 
- patron_namira_name:0 "[GetPlayer.Custom('GetObNamiraName')]"
- patron_namira_desc:0 "Госпожа Разложения"
- patron_namira_long_desc:0 "[GetPlayer.Custom('GetObNamiraDesc')]"
- patron_namira_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_namira')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_namira')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_namira').GetValue|+0]"
+
  desc_namira:0 "Намира, Даэдрический Князь Древней Тьмы, правит Гибельной Пустотой в Обливионе. Её изображают в образе женщины в тяжёлой робе. Намира тесно связана с нищими: так, Принцу Нищих из одноимённой книги она даровала силу жалости."
- 
- patron_nocturnal_name:0 "[GetPlayer.Custom('GetObNocturnalName')]"
- patron_nocturnal_desc:0 "Госпожа Теней"
- patron_nocturnal_long_desc:0 "[GetPlayer.Custom('GetObNocturnalDesc')]"
- patron_nocturnal_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_nocturnal')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_nocturnal')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_nocturnal').GetValue|+0]"
+
  desc_nocturnal:0 "Ноктюрнал, Даэдрический Князь Ночи и Тьмы, правит Вечнотенью в Обливионе. Её изображают в облике женщины с двумя иссиня-чёрными воронами. Многие воры почитают её как свою покровительницу, которая дарует им удачу при помощи душ усопших Соловьёв."
- 
- patron_peryite_name:0 "[GetPlayer.Custom('GetObPeryiteName')]"
- patron_peryite_desc:0 "Вестник Чумы"
- patron_peryite_long_desc:0 "[GetPlayer.Custom('GetObPeryiteDesc')]"
- patron_peryite_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_peryite')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_peryite')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_peryite').GetValue|+0]"
+
  desc_peryite:0 "Периайт, Даэдрический Князь Естественного Порядка, правит в Ямах в Обливионе. Хотя Периайт считается одним из слабейших князей, его изображают как дракона с шестью конечностями. Последователи Периайта считают болезни и прочие хвори его благословениями."
- 
- patron_sanguine_name:0 "[GetPlayer.Custom('GetObSanguineName')]"
- patron_sanguine_desc:0 "Владыка Сладострастия" #uesp didn't include an actual title, so made one up
- patron_sanguine_long_desc:0 "[GetPlayer.Custom('GetObSanguineDesc')]"
- patron_sanguine_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_sanguine')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_sanguine')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_sanguine').GetValue|+0]"
+
  desc_sanguine:0 "Сангвин, Даэдрический Князь Гедонизма и Разгула, правит Мириадами Царств Шумного Веселья в Обливионе. Его изображают как тучного дремору с алкогольным напитком в руке. Из-за его сферы Сангвин считается одним из более безобидных князей."
- 
- patron_sheogorath_name:0 "[GetPlayer.Custom('GetObSheogorathName')]"
- patron_sheogorath_desc:0 "Утешитель Людей"
- patron_sheogorath_long_desc:0 "[GetPlayer.Custom('GetObSheogorathDesc')]"
- patron_sheogorath_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_sheogorath')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_sheogorath')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_sheogorath').GetValue|+0]"
+
  desc_sheogorath:0 "Шеогорат, Даэдрический Князь Безумия, правит на Дрожащих Островах в Обливионе. Его изображают как богато разодетого человека с тростью. Изначально Шеогорат был Князем Порядка, но другие князья из страха перед его мощью прокляли его безумием."
- 
- patron_vaermina_name:0 "[GetPlayer.Custom('GetObVaerminaName')]"
- patron_vaermina_desc:0 "Ткачиха Доспехов"
- patron_vaermina_long_desc:0 "[GetPlayer.Custom('GetObVaerminaDesc')]"
- patron_vaermina_summary:0 "Статус: [GetPlayer.Custom('GetPatronStatus_vaermina')]\nТип поклонения: [GetPlayer.Custom('GetPatronWorshipType_vaermina')]\nБлагосклонность: [GetPlayer.MakeScope.Var('ardor_vaermina').GetValue|+0]"
+
  desc_vaermina:0 "Вермина, Даэдрический Князь Снов, правит Трясиной в Обливионе. Её изображают в образе старухи с посохом, часто вместе со змеёй. Среди последователей Вермины часто встречаются алхимики. Их самое примечательное творение — «Апатия Вермины»."
 
 #Divines
@@ -164,14 +72,15 @@
  desc_zenithar:0 "Бог работы, торговли и достатка, полученного благодаря преуспеванию в делах. Учит достижению благосостояния не через подлость и насилие, но через честный труд."
  desc_stendarr:0 "Бог милосердия, справедливости и праведности. Покровитель всех праведных, кто применяет силу ради защиты слабых — от императоров до воинов за веру."
  desc_shezarr:0 "Шезарр, дух Человеческих Свершений, в частности в борьбе с альдмерской агрессией. Покровитель имперских боевых магов. Шезарр малопопулярен из-за космополитичной природы Имперского культа."
+ desc_dragonborn: "[Select_CString(GetGlobalVariable('dragonborn_emperor').Char.IsFemale, 'Богиня-героиня', 'Бог-герой' )] человечества и Империи. [GetGlobalVariable('dragonborn_emperor').GetCharacter.GetTitledFirstNameNoTooltip] [Select_CString(GetGlobalVariable('dragonborn_emperor').Char.IsFemale, 'принесла мир в Тамриэль и положила', 'принёс мир в Тамриэль и положил' )] начало Третьей эре, объединив мир под знаменем дракона."
 
 #Kothri
- desc_arkay_nede:0 "Легенды говорят о торговце, которого сгубила страсть к тайным знаниям. Однако его свершения заметили, и на смертном одре он получил от Матерей бесконечное время на поиск ответов. Взамен Арк'эй приносит нам смерть, необходимую, чтобы была жизнь — таков вечный цикл."
- desc_dibe_nede:0 "Дибе, первая из Матерей Вокруг Нас, приносит нам жизнь с небес. С её благословения мы посвящаем свои силы музыке, творению, любви и высшей цели."
- desc_kin_nede:0 "Кин, третья Мать Вокруг Нас, приносит нам жизнь из воды. Её благословение спасает нас от страшных штормов, но меж тем дарует попутный ветер."
- desc_mara_nede:0 "Мара, вторая Мать Вокруг Нас, приносит нам жизнь из земли. С её благословения наш труд в полях приносит плоды, а из нашей плоти мы создаём себе подобных и точно так же приносим жизнь."
- desc_zen_nede:0 "В религии недов верховным богом считается З'ен — уникальный случай среди аэдрических конфессий. Бог обмена наставляет: все сделки должны быть честными, все дары должны быть преподнесены, все долги — уплачены, а все смерти — отмщены."
- desc_lrkhn:0 "Лр'хн, Обманщик-Воин, умными словесами и навязыванием воли приведший к сотворению нашего дома в мире Вокруг Нас. Когда Лр'хн пожертвовал собой во время сотворения, его место занял З'ен, возглавив богов. И хотя Лр'хн мёртв, его сердце продолжает жить внутри нас."
+ desc_arkay_breton: "Легенды говорят о торговце, которого сгубила страсть к тайным знаниям. Однако его свершения заметили, и на смертном одре он получил от Божеств бесконечное время на поиск ответов. Взамен Арк'эй приносит нам смерть, необходимую, чтобы была жизнь — таков вечный цикл."
+ desc_dibe_nede: "Дибе, первая из Матерей Вокруг Нас, приносит нам жизнь с небес. С её благословения мы посвящаем свои силы музыке, творению, любви и высшей цели."
+ desc_kin_nede: "Кин, третья Мать Вокруг Нас, приносит нам жизнь из воды. Её благословение спасает нас от страшных штормов, но меж тем дарует попутный ветер."
+ desc_mara_nede: "Мара, вторая Мать Вокруг Нас, приносит нам жизнь из земли. С её благословения наш труд в полях приносит плоды, а из нашей плоти мы создаём себе подобных и точно так же приносим жизнь."
+ desc_zen_nede: "В религии недов верховным богом считается З'ен — уникальный случай среди аэдрических конфессий. Бог обмена наставляет: все сделки должны быть честными, все дары должны быть преподнесены, все долги — уплачены, а все смерти — отмщены."
+ desc_lrkhn: "Лр'хн, Обманщик-Воин, умными словесами и навязыванием воли приведший к сотворению нашего дома в мире Вокруг Нас. Когда Лр'хн пожертвовал собой во время сотворения, его место занял З'ен, возглавив богов. И хотя Лр'хн мёртв, его сердце продолжает жить внутри нас."
 
 #Yokudan 
  desc_tuwhacca: "Ту'вакка, Хитрый Бог Мёртвых, — пастырь мертвецов. Будучи стражем Дальних Берегов, он сопровождает нас на пути к ним после смерти. До создания Обхода Ту'вакка был богом того, Что Никому Не Нужно."
@@ -193,30 +102,30 @@
  desc_zenithar_redguard: "Зенитар, Созидающий бог, вознаграждает тяжкий труд и упорство в повседневных делах вопреки любым обстоятельствам."
 
 #Reach
- god_dibella_reach_name:0 "Дибелла"
- desc_dibella_reach:0 "Возлюбленная богиня страсти, веселья и урожая. К «Матроне Радости» взывают по радостным поводам и во время праздников сбора урожая. В мире, где правит хоть и доброжелательный, но жестокий Хирсин, Дибелла хранит пристанище счастья."
- god_mara_reach_name:0 "Мара"
- desc_mara_reach:0 "Никто не останется без прощения от Всепрощающей Матери, богини очага и целительства. Во всех кланах предельцев встречаются те, кто посвящает себя Маре; в основном это лекари, учителя и судьи, которые смягчают — но не устраняют — испытания, посланные Хирсином."
- desc_lorkh:0 "Лорх, Дух Человека. Именно Лорх убедил Намиру, Королеву Духов, позволить ему начать создание мира для заблудших духов — Мира Смертных, ради которого он пожертвовал собой. И всё же он ходит среди смертных и в час великой нужды вновь явит себя."
- god_hircine_reach_name:0 "Хирсин"
- desc_hircine_reach:0 "Отец Охоты властвует над Царством Плоти и через суровые наставления учит предельцев быть вечно настороже, закаляя их, чтобы тем самым защитить."
- god_malacath_reach_name:0 "Малакат"
- desc_malacath_reach:0 "Покровитель всех отверженных и гонимых, Владыка Пепла и Кости учит тому, что сила должна быть тщательно взращена, чтобы однажды отомстить своим притеснителям."
- god_mehrunes_reach_name:0 "Мерунес Дагон"
- desc_mehrunes_reach:0 "Мерунес Дагон, являясь духом разрушения, также считается Лордом Амбиций. А народ Предела ценит извечное стремление к личному благу и благу для своего клана."
- god_molag_reach_name:0 "Молаг Бал"
- desc_molag_reach:0 "Отец Мучений — коварный интриган и обманщик, и условия его сделки с предельцами просты: претерпевание. В мире, где боль и страдания неизбежны, не обойтись без стойкости."
- god_namira_reach_name:0 "Намира"
- desc_namira_reach:0 "Царство Королевы Духов и богини смерти – бесконечный Мир Духов, в противовес Миру Плоти, которым управляет Хирсин."
- god_nocturnal_reach_name:0 "Ноктюрнал"
- desc_nocturnal_reach:0 "Ноктюрнал, Дух Ночи. Говорят, что загадочная и непостижимая богиня Ноктюрнал беспрестанно наблюдает, а вороны — её верные слуги."
- god_peryite_reach_name:0 "Периайт"
- desc_peryite_reach:0 "Хотя его часто связывают с чумой, для кланов предельцев Периайт — Лорд Порядка. Конфликт необходим для прогресса, но должен соблюдаться баланс, которые отсекает слабых и обуздывает излишества."
+ god_dibella_reach_name: "Горная Мать, Дева"
+ desc_dibella_reach: "Великолепна Горная Мать, волоокая и облачённая в терновый венец. Без устали кружится она в танце среди пиршеств, соитий и флейт, поющих подобно птицам."
+ god_mara_reach_name: "Горная Мать, Матрона"
+ desc_mara_reach: "Плодородна Горная Мать, в меру нежная, но и в то же время внушающая страх. Источая реки молока и высекая мёд из каменных жил, она вскармливает миллионы детей, спускающихся с её грудей."
+ desc_lorkh: "Человек-на-Луне был великим искусителем: он убедил Ничто стать Всем и обучил рождённых в результате людей опасным вещам, сослужившим им добрую службу."
+ god_hircine_reach_name: "Хирсин"
+ desc_hircine_reach: "Законы не ведающего милости Охотника просты и ясны: убивай быстро, бери не больше нужного и отдай своё тело зверям, когда придёт срок."
+ god_malacath_reach_name: "Малакат"
+ desc_malacath_reach: "Гневный орочий бог Малакат в праведной ярости крушит черепа врагов, защищая отверженных, кому не осталось места в этом мире, от извергов, желающих отнять последнее."
+ god_mehrunes_reach_name: "Мерунес Дагон"
+ desc_mehrunes_reach: "Бог Дикого огня засевает предварительно выжженную дотла землю надеждой, а после остриём своей бритвы вытачивает из людей новые формы."
+ god_namira_reach_name: "Намира"
+ desc_namira_reach: "Всё берет начало в гнили и всё гнилью станет. Намира отвечает за циклы распада и обновления, давая миру расцвести лишь для того, чтобы после стереть его в прах."
+ god_nocturnal_reach_name: "Ноктюрнал"
+ desc_nocturnal_reach: "Она — гарпия, гадательница-гаруспик и авгур; безликая и безымянная старуха, несущая на своих крыльях чернильно-чёрную ночь и знамения, дабы познать грядущее и превозмочь его испытания."
+ god_magnus_reach_name: "Магнус"
+ desc_magnus_reach: "Старый Тьманник вырвал свой сияющий глаз и повесил его в небесах, даруя смертным свет и зрение. Однако чары и ведовство изливаются из его пустой глазницы, оскверняя мир."
+ desc_karth: "О дитя двух матерей, неси духи ушедших бережно в своих водах, полных памяти; утоли нашу жажду и голод, напои землю и живых."
+ desc_druadach: "Не сотрясайте землю своим сердцем, о великие кости нашей родины, почитаемые и оплакиваемые в вашем сне! Лишь благодаря вашему щедрому телу душа нашего народа находит спасение от врага."
 
 #Aelf
  god_stendarr_mer_name:0 "Стендарр"
  desc_stendarr_mer:0 "Стендарр — бог милосердия и покровитель всех смертных. За эту роль он получил эпитет Защитник Людей. Последователи Стендарра помогают раненым и борются с нечистью."
- desc_lorkhan:0 "Лорхан создал Мундус как тренировочную площадку; одни за это его ненавидят, другие же восхваляют. Он позволил нам через преодоление скорбей смертности и устремление вперёд огранить себя до состояния великолепия и совершенства, познать радость, печаль и истинную красоту."
+ desc_lorkhan: "Лорхан создал Мундус как тренировочную площадку; одни за это его ненавидят, другие же восхваляют. Он позволил нам через преодоление скорбей смертности и устремление вперёд огранить себя до состояния великолепия и совершенства, познать радость, печаль и истинную красоту."
  god_mara_altmer_name:0 "Мара"
  desc_mara_altmer:0 "Как супруга Аури-Эля, сострадательная королева альдмеров смягчает тяготы смертного мира, разделяя со своими детьми скорби Творения."
 #Breton
@@ -231,6 +140,10 @@
  god_phynaster_breton_name:0 "Финастер"
  desc_phynaster_breton:0 "Финастер, бог врачевания и божественный лекарь. Он открыл множество целительных чар, продливших наши жизни и исцеливших многих богов от их недугов."
  desc_jephre:0 "Джефре, бог повествования. Благодаря ему мы помним наши легенды и деяния древних героев."
+ god_auriel_breton_name: "Аури-Эль"
+ desc_auriel_breton: "Король Аури-Эль правит небесами, воплощая в себе идеал истинного последователя Аэдра: смиренного, благочестивого и непоколебимого в своей вере монарха."
+ god_kyne_breton_name: "Кин"
+ desc_kyne_breton: "Кин, командующая воинствами жена-воительница, праведная десница предков. Она учит благочестию битвы и наставляет перед испытаниями, что уготованы каждому верующему: встречать их надлежит со стоическим спокойствием, но не теряя при этом душевной лёгкости."
 
 #Aldmer
  desc_auriel:0 "[GetPlayer.Custom('GetAurielVerse')]"
@@ -258,6 +171,8 @@
  desc_xen:0 "[GetPlayer.Custom('GetXenVerse')]"
  poet_desc_xen:0 "О, наищедрейший Зен,\nБлагослови наши плуги.\nСемена снова посеем,\nСклонив голову за твои заслуги"
  normal_desc_xen:0 "Без учений героя-бога Зена не обойтись в любых делах, требующих равного обмена, будь то торговли или возмездия."
+ desc_cassimoran: "Кассиморан принесла порядок на Ауридон, когда подавила восстание против Аран-Эля, а затем ввела новые правила дуэлей, дабы предотвратить дальнейшие войны и кровопролитие."
+ desc_iric: "Ирик был управляющим Кристальной башни, а также великим охотником — легендарный индрик Наэрид добровольно отдал ему свою шкуру, чтобы из неё можно было сшить магический плащ."
 
 #Bosmer
  god_auriel_bosmer_name:0 "Аури-Эль"
@@ -433,8 +348,6 @@
  god_ta_peryite_name:0 "Надзиратель"
  desc_ta_peryite:0 "Как Надзиратель устанавливает равновесие во вселенском порядке, так и ты стремись к равновесию внутри себя."
 
- #Satakal Patrons
-
 #Tribunal
  desc_vivec:0 "Воин-Поэт всегда отображал дух и двойственность народа данмеров — что выражается в его облике: наполовину данмерском, наполовину каймерском."
  desc_almalexia:0 "Мать Морровинда — источник сострадания, милосердия и прощения, защитница слабых и обездоленных, покровительница учителей и лекарей."
@@ -464,8 +377,8 @@
  desc_blade_of_courage:0 "Тринимак Клинок Отваги помнит про зло, причинённое ему и его народу, и не забудет его."
 
 #Satakal
- desc_first_serpent:0 "Как Первый Змей, Сатакаал символизирует дар творения и клубящуюся голову, что вдыхает в мир жизнь."
- desc_hungry_serpent:0 "Как Голодный Змей, Сатакаал скользит по коже мира и пожирает всё на своём пути, будучи по природе своей как пожирателем миров, так и самоуничтожающейся силой."
+ desc_first_serpent:0 "Как Первый Змей, Сатакал — это дар творения, и, тряся головой, он скидывает кожу, что наполняет мир жизнью."
+ desc_hungry_serpent:0 "Как Голодный Змей, Сатакал скользит по коже мира и пожирает всё на своём пути, будучи по природе своей как пожирателем миров, так и самоуничтожающейся силой."
 
 #King of Worms
  desc_wormking_pre:0 "Маннимарко — первый некромант, присвоивший титул Короля Червей, почитаемый за своё магическое мастерство и несравненное коварство."
@@ -473,6 +386,19 @@
  desc_necromancer_pre:0 "Некромант-над-всеми — мифический образ, влекущий нежить в земли смертных и властвующий там, куда не дотягивается свет Аркея."
  desc_necromancer_post:0 "Благодаря вознесению Маннимарко Некромант обрёл небесный облик, отражающий свет Аркея. Теперь, воплощённый и преисполненный могучей воли, он стремится затмить и расколоть сферу Аркея, чтобы высвободить силу некромантов в смертном мире."
  desc_mannimarco:0 "Маннимарко, величайший из некромантов, вознёсся, слившись с Некромантом-над-всеми. Новый единый Бог Червей дарует ещё более глубокие тайны некромантии всем некромантам."
+
+# Lorkhan
+ desc_lrkhn_warrior: "Лр'хн-воин вёл за собой Хорвалли в нашей борьбе за свободу. Мы чтим его каждой своей победой и каждой отрезанной головой врага."
+ desc_lrkhn_trickster: "Лр'хн-обманщик прибегнул к коварству наряду с силой, чтобы освободить Хорвалли. Он обманул даже саму смерть и вернётся в будущем, чтобы вести нас за собой снова."
+ desc_lrkhn_king: "Лр'хн-король — наш вечный божественный предводитель. Пусть он больше и не руководит нами напрямую, дух его присутствует в каждом праведном властителе."
+
+# Sanguine
+ god_sg_birth_name: "Сангвин Урожайный"
+ desc_sg_birth: "«... (тот, кто есть) пегий бык былых дней, ниспошли (нам) урожай зерна, винограда и скота, изобилие морское, изобилие чеканное, незабвенное материнство и отцовство...»"
+ god_sg_feast_name: "Сангвин Пирующий"
+ desc_sg_feast: "«...Трижды по три возлияния, освобождения (во имя) увенчанного лозами козлорогого владыки, цветущего, зреющего, весёлого и щедрого, утешь (нашу) боль, заставь (нашу) кровь бежать быстрее...»"
+ god_sg_wild_name: "Сангвин Дикий"
+ desc_sg_wild: "«... (приди,) о хранитель, святой зверь, сокрытый тайною; безумно рыщущий по безмолвным рощам и заводям, дабы сберечь их святость; свинец чаши (твоей) полнится сладким и дурманящим питьём...»"
 
 #Patron stuff
  action_pick_patron:0 "Выберите покровителя"

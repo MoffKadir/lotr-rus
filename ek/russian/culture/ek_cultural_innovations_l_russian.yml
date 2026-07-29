@@ -13,10 +13,6 @@
  required_other_magical_innovations:0 "Эта [innovation|El] необходима для открытия остальных магических военных инноваций"
  innovation_basic_armor_forging:0 "Примитивная ковка брони"
  innovation_basic_armor_forging_desc:0 "Из простых материалов и металла можно сделать лёгкую, но эффективную броню. Используя кожу, железо и другие примитивные компоненты, можно снарядить кого угодно."
- innovation_disorganized_military:0 "Неорганизованные войска"
- innovation_disorganized_military_desc:0 "В то время как в большинстве культур принято полагаться на высококлассных солдат и профессиональных воителей, мы берём числом и масштабом наших армий. Наши солдаты бесчисленны и дешевы в содержании — сообща мы наводняем поле битвы нашими воинами!"
- cannot_research_men_at_arms_innovations:0 "#N Нельзя исследовать [innovations|El], открывающие новые типы [Concept( 'men_at_arms', 'профессионалов' )|E] или увеличивающие размер и максимальное количество существующих [Concept( 'men_at_arms', 'профессионалов' )|E]#!"
- innovation_disorganized_military_can_be_reformed:0 "Эта инновация может быть удалена могущественным [Concept( 'cultural_head', 'культурным идеологом' )|E], глубоко разбирающемся в военном искусстве, если он примет [Concept( 'decision', 'решение' )|E] #V Реформировать войска#!"
  innovation_leather_armor:0 "Кожаная броня"
  innovation_leather_armor_desc:0 "Кожа прочнее шкур, но даёт больше пространства для манёвра, чем металл. Мы можем организовать её широкое производство для снаряжения наших армий."
  unlock_maa_light_footmen:0 "Доступны [men_at_arms|El] — [GetMaA('light_footmen').GetName]"
@@ -59,7 +55,10 @@
  unlocks_county_conquest_cb_mmr:0 "Открывает [casus_belli|El] #V завоевание графства#! для персонажей с [Concept( 'prestige_level', 'уровнем репутации' )|E] равным или превышающим «[GetModifier( 'prestige_level_2' ).GetNameWithTooltip|L]» #weak (подчиняется другим правилам [Concept( 'might_makes_right', 'права сильного' )|E])#!"
  innovation_black_marsh_natives:0 "Жители топей"
  innovation_black_marsh_natives_desc:0 "Для большинства Чернотопье негостеприимно настолько, что пребывание в нём — сродни зловонному кошмару наяву. Но находятся те, кто в нём живёт, кто свыкся с постоянным гниением вокруг, кто знает куда ступать на болоте, кто нетребователен и для кого выразительное и омерзительное многообразие топей предпочтительнее, чем цивилизация в том виде, в котором она существует в землях с условиями более благоприятными."
- innovation_automatically_given_natives_of_black_marsh:0 "Эту [Concept( 'innovation', 'инновацию' )|E] автоматически получают все культуры с [Concept( 'nativity_region', 'родным регионом' )|E] в [GetGeographicalRegion('mundus_tamriel_black_marsh').GetName]"
+ innovation_automatically_given_natives_of_black_marsh:0 "Эту [Concept( 'innovation', 'инновацию' )|E] автоматически получают все культуры с [Concept( 'nativity_region', 'родным регионом' )|E] [GetGeographicalRegion('mundus_tamriel_black_marsh').GetName]"
+ innovation_sled_dogs: "Ездовые собаки"
+ innovation_sled_dogs_desc: "На холодном и скалистом севере Хай-Рока не обойтись без быстрых и ловких ездовых собак, которые предоставляют надёжный транспорт как в повседневной, так и в военной сферах жизни."
+ ek_cheaper_to_adopt_dogs: "Собаки-питомцы обходится дешевле"
 ### Pariah innovations
 # Pariah Folk
  innovation_pariah_folk:0 "Гонимый народ"
@@ -138,6 +137,9 @@
  unlocks_empire_conquest_cb_mmr:0 "Открывает [casus_belli|El] #V завоевание верховного королевства#! для персонажей с [Concept( 'prestige_level', 'уровнем репутации' )|E] равным или превышающим «[GetModifier( 'prestige_level_5' ).GetNameWithTooltip|L]» #weak (подчиняется другим правилам [Concept( 'might_makes_right', 'права сильного' )|E])#!"
  
  ### Special
+ 
+ culture_parameter_ek_more_cadet_branches_cultural_innovation_seigneurialism_innovation_parameter: "$ek_culture_parameter_innovations_and_tradition_more_cadet_branches$"
+ culture_parameter_ek_more_cadet_branches_cultural_innovation_primogeniture_innovation_parameter: "$ek_culture_parameter_innovations_and_tradition_more_cadet_branches$"
 
  innovation_migratory_culture:0 "Скитающаяся культура"
  innovation_migratory_culture_desc:0 "Большинство предпочитает осесть в одном месте, мы же путешествуем по миру, а вместе с нами — и наш народ."

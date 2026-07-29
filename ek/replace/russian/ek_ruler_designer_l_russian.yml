@@ -439,22 +439,17 @@
 
  
  ###Orsimer
- race_orsimer_name:0 "Орк I"
- race_orsimer:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_name'), 'no' )]"
- race_orsimer_2_name:0 "Орк II"
- race_orsimer_2:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_2_name'), 'no' )]"
+ race_orc_name:0 "Орк"
+ race_orc:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orc_name'), 'no' )]"
  
- race_orsimer_wood_name:0 "Лесной орк I"
- race_orsimer_wood:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_wood_name'), 'no' )]"
- race_orsimer_wood_2_name:0 "Лесной орк II"
- race_orsimer_wood_2:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_wood_2_name'), 'no' )]"
+ race_orc_wood_name:0 "Лесной орк"
+ race_orc_wood:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orc_wood_name'), 'no' )]"
  
- race_orsimer_iron_name:0 "Железный орк I"
- race_orsimer_iron:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_iron_name'), 'no' )]"
- race_orsimer_iron_2_name:0 "Железный орк II"
- race_orsimer_iron_2:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_iron_2_name'), 'no' )]"
- race_orsimer_malahk_name:0 "Орк Малака"
- race_orsimer_malahk:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orsimer_malahk_name'), 'no' )]"
+ race_orc_iron_name:0 "Железный орк"
+ race_orc_iron:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orc_iron_name'), 'no' )]"
+
+ race_orc_malahk_name:0 "Орк Малака"
+ race_orc_malahk:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' )), GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ) ), Localize('race_orc_malahk_name'), 'no' )]"
 
 
 ### TO DO: proper up to date anatomy loc and gene loc ###
@@ -489,7 +484,7 @@
  chimer_skin:0 "Каймерский цвет"
  altmer_skin:0 "Альтмерский цвет"
  bosmer_skin:0 "Босмерский цвет"
- orsimer_skin:0 "Орсимерский цвет"
+ orsimer_skin:0 "Орочий цвет"
  falmer_skin:0 "Фалмерский цвет"
  maormer_skin:0 "Маормерский цвет"
  dwemer_skin:0 "Двемерский цвет"
@@ -812,19 +807,7 @@
 
  gene_bs_nose_swollen:0 "Раздутость носа"
 
- beast_teeth_tusks:0 "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Размер клыков', '' )]"
-
- orc_teeth_bottom_size:0 "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Размер нижних зубов', '' )]"
-
- orc_teeth_broken:0 "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Клыки сломаны', '' )]"
- tusks_not_broken:0 "Клыки не сломаны"
- left_tusk_broken:0 "Левый клык сломан"
- right_tusk_broken:0 "Правый клык сломан"
- both_tusk_broken:0 "Оба клыка сломаны"
-
- orc_teeth_forward_angle:0 "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Наклон клыков вперёд', '' )]"
-
- orc_teeth_outward_angle:0 "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Наклон клыков наружу', '' )]"
+ beast_teeth:0 "[Select_CString( GetVariableSystem.HasValue( 'ek_tusks_enabled', 'true' ), 'Размер клыков', '' )]"
 
  gene_bs_mouth_center_curve:0 "Изгиб рта"
 

@@ -1,11 +1,7 @@
 ﻿l_russian:
- trait_impure:0 "Порочность"
- trait_impure_desc:0 "Порочные персонажи оскверняют свою веру и божественное наследие либо неся проклятие безобразного облика, либо вступая в отношения с другими осквернёнными."
- trait_impure_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] оскверняет свою веру и божественное наследие либо неся проклятие безобразного облика, либо вступая в отношения с другими осквернёнными."
- 
- trait_pirate:0 "Пират"
- trait_pirate_desc:0 "Персонаж — Пират. Свистать всех наверх!\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать играть за [Concept('pirate_government', 'пиратское правительство')|E].#!"   #ИСПАНЦЫЫЫЫ!
- trait_pirate_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — Пират. Свистать всех наверх!"
+ trait_pirate: "Пират"
+ trait_pirate_desc: "Персонаж — пират. Свистать всех наверх!\n\n#I Если вы выберите это свойство в редакторе правителя, то при начале игры появится событие, которые позволит вам начать играть за [Concept('pirate_government', 'пиратское правительство')|E].#!"   #ИСПАНЦЫЫЫЫ!
+ trait_pirate_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — пират. Свистать всех наверх!"
 
  trait_plunderer:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Налётчица', 'Налётчик' )]"
  trait_plunderer_desc:0 "Только забрав силой то, что твоё по праву, можно достичь настоящего могущества. А весь мир и его богатства — по праву твои."
@@ -135,8 +131,9 @@
  trait_experimentalist_necromancer_player:0 "Тайный некромант"
  trait_experimentalist_necromancer_player_desc:0 "Этот персонаж в тайне от всех является некромантом. Однако настоящая природа [ROOT.GetCharacter.GetHerHis|l] тёмного увлечения всё ещё скрыта от мира."
 
- trait_dragonborn:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Драконорождённая', 'Драконорождённый' )]"
- trait_dragonborn_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'родилась', 'родился' )] с кровью и душой дракона. Известно, что Боги особенно благосклонны к таким как [ROOT.GetCharacter.GetSheHe|l]."
+ trait_dragonborn: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Драконорождённая', 'Драконорождённый' )]"
+ trait_dragonborn_desc: "Этот персонаж объединил Тамриэль под знаменем дракона."
+ trait_dragonborn_character_desc: "[ROOT.GetCharacter.GetTitledFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'объединила', 'объединил' )] Тамриэль под знаменем дракона."
 
  trait_bagarn:0 "[Select_CString(ROOT.GetCharacter.IsFemale, 'Последняя', 'Последний' )] из своего рода"
  trait_bagarn_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.GetCharacter.IsFemale, 'последняя', 'последний' )] из своего рода. [ROOT.GetCharacter.GetSheHe|U] больше никогда не увидит подобных себе."
@@ -506,7 +503,7 @@
  trait_clone_desc:0 "Этот персонаж — чей-то клон. Он не вылупился из яйца и не был рождён, вместо этого он появился на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
  trait_clone_character_desc_hatched_creator:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — клон персонажа [ROOT.Var('clone_creator').Char.GetTitledFirstName]. [ROOT.GetCharacter.GetSheHe|U] не [Select_CString(ROOT.GetCharacter.IsFemale, 'вылупилась', 'вылупился' )] из яйца, вместо этого [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'появилась', 'появился' )] на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
  trait_clone_character_desc_creator:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — чей-то клон. [ROOT.GetCharacter.GetSheHe|U] не [Select_CString(ROOT.GetCharacter.IsFemale, 'была никем рождена', 'был никем рождён' )], вместо этого [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'появилась', 'появился' )] на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
- trait_clone_character_desc_hatched:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] ROOT.GetCharacter.GetFirstNameNoTooltip] — клон персонажа [ROOT.Var('clone_creator').Char.GetTitledFirstName]. [ROOT.GetCharacter.GetSheHe|U] не [Select_CString(ROOT.GetCharacter.IsFemale, 'вылупилась', 'вылупился' )] из яйца, вместо этого [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'появилась', 'появился' )] на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
+ trait_clone_character_desc_hatched:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — клон персонажа [ROOT.Var('clone_creator').Char.GetTitledFirstName]. [ROOT.GetCharacter.GetSheHe|U] не [Select_CString(ROOT.GetCharacter.IsFemale, 'вылупилась', 'вылупился' )] из яйца, вместо этого [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'появилась', 'появился' )] на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
  trait_clone_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — чей-то клон. [ROOT.Var('clone_creator').Char.GetTitledFirstName]. [ROOT.GetCharacter.GetSheHe|U] не [Select_CString(ROOT.GetCharacter.IsFemale, 'была никем рождена', 'был никем рождён' )], вместо этого [ROOT.GetCharacter.GetSheHe] [Select_CString(ROOT.GetCharacter.IsFemale, 'появилась', 'появился' )] на свет при помощи малоизвестного магического процесса [Concept('self_replication', 'самовоспроизведения')|E], или [Concept('cloning', 'клонирования')|E]."
 
 

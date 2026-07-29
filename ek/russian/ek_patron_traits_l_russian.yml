@@ -56,6 +56,12 @@
  trait_p_dv_shezarr_desc:0 "Последователь Шезарра"
  trait_p_dv_shezarr_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(Character.IsFemale, 'последовательница', 'последователь')] [ROOT.Char.Custom('GetDvShezarrNamePossessive')]."
 
+ trait_p_dv_dragonborn: "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] Драконорождённого"
+ trait_p_dv_dragonborn_base: "Последователь Драконорождённого"
+ trait_p_dv_dragonborn_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_dv_dragonborn_desc' )]"
+ trait_p_dv_dragonborn_desc: "Последователь Драконорождённого"
+ trait_p_dv_dragonborn_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(Character.IsFemale, 'последовательница', 'последователь')] Драконорождённого"
+
  # Aldmer
  trait_p_ae_auriel:0 "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] [ROOT.Char.Custom('GetAeAurielNamePossessive')]"
  trait_p_ae_auriel_base:0 "Последователь Ауриэля"
@@ -110,6 +116,18 @@
  trait_p_ae_lorkhan_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ae_lorkhan_desc' )]"
  trait_p_ae_lorkhan_desc:0 "Последователь Лорхана"
  trait_p_ae_lorkhan_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(Character.IsFemale, 'последовательница', 'последователь')] [ROOT.Char.Custom('GetAeLorkhanNamePossessive')]."
+
+ trait_p_ae_cassimoran:0 "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] [ROOT.Char.Custom('GetAeCassimoranNamePossessive')]"
+ trait_p_ae_cassimoran_base:0 "Последователь Кассиморан"
+ trait_p_ae_cassimoran_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ae_cassimoran_desc' )]"
+ trait_p_ae_cassimoran_desc:0 "Последователь Кассиморан"
+ trait_p_ae_cassimoran_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(Character.IsFemale, 'последовательница', 'последователь')] [ROOT.Char.Custom('GetAeCassimoranNamePossessive')]."
+
+ trait_p_ae_iric:0 "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] [ROOT.Char.Custom('GetAeIricNamePossessive')]"
+ trait_p_ae_iric_base:0 "Последователь Ирика"
+ trait_p_ae_iric_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ae_iric_desc' )]"
+ trait_p_ae_iric_desc:0 "Последователь Ирика"
+ trait_p_ae_iric_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(Character.IsFemale, 'последовательница', 'последователь')] [ROOT.Char.Custom('GetAeIricNamePossessive')]."
  
  # Daedra
  trait_p_ob_azura:0 "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] [ROOT.Char.Custom('GetObAzuraNamePossessive')]"
@@ -370,7 +388,7 @@
  trait_p_rc_reman_base:0 "Последователь Ремана"
  trait_p_ch_reman_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_ch_reman_desc' )]"
  trait_p_ch_reman_desc:0 "Последователь Ремана Сиродила"
- trait_p_ch_reman_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(Character.IsFemale, 'последовательница', 'последователь')] Ремана Свет Людей, победителя акавирских захватчиков, благословлённого Акатошем драконьей кровью."
+ trait_p_ch_reman_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(Character.IsFemale, 'последовательница', 'последователь')] Ремана Свет Людей, победителя акавирских захватчиков и основателя Второй Империи."
  trait_p_rc_reman_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(Character.IsFemale, 'последовательница', 'последователь')] Ремана, сына востока."
  
  trait_p_ch_bendu:0 "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] Бенду Оло"
@@ -709,7 +727,7 @@
  trait_p_tm_paragon:0 "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] Тринимака Парагона"
  trait_p_tm_paragon_base:0 "Последователь Тринимака Парагона"
  trait_p_tm_paragon_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_tm_paragon_desc' )]"
- trait_p_tm_paragon_desc:0 "A follower of Trinimac, the Paragon"
+ trait_p_tm_paragon_desc:0 "Последователь Тринимака Парагона"
  trait_p_tm_paragon_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.Char.IsFemale, 'последовательница', 'последователь')] Тринимака Парагона."
 
  trait_p_tm_gold_champ:0 "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] Тринимака Золотого Героя"
@@ -755,6 +773,39 @@
  trait_p_kw_mannimarco_null:0 "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_kw_mannimarco_desc' )]"
  trait_p_kw_mannimarco_desc:0 "Слуга Некроманта, Бога Червей"
  trait_p_kw_mannimarco_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] — слуга Некроманта, Бога Червей."
+
+#Lorkhan
+ trait_p_lk_king: "[ROOT.Char.Custom('GetLkKingName')]: [Select_CString(ROOT.Char.IsFemale, 'последовательница', 'последователь')]"
+ trait_p_lk_king_base: "Последователь Лорхана Короля"
+ trait_p_lk_king_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_lk_king_desc' )]"
+ trait_p_lk_king_desc:0 "Последователь Лорхана Короля"
+ trait_p_lk_king_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.Char.IsFemale, 'последовательница', 'последователь')] сущности, что известна как [ROOT.Char.Custom('GetLkKingName')]."
+
+#Reach
+ trait_p_rf_karth: "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] Карта"
+ trait_p_rf_karth_base: "Последователь Карта"
+ trait_p_rf_karth_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_rf_karth_desc' )]"
+ trait_p_rf_karth_desc:0 "Последователь Карта"
+ trait_p_rf_karth_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.Char.IsFemale, 'последовательница', 'последователь')] Карта."
+
+# Sanguine
+ trait_p_sg_birth: "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] Сангвина Урожайного"
+ trait_p_sg_birth_base: "Последователь Сангвина Урожайного"
+ trait_p_sg_birth_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_sg_birth_desc' )]"
+ trait_p_sg_birth_desc: "Последователь Сангвина Урожайного"
+ trait_p_sg_birth_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.Char.IsFemale, 'последовательница', 'последователь')] Сангвина Урожайного."
+
+ trait_p_sg_feast: "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] Сангвина Пирующего"
+ trait_p_sg_feast_base: "Последователь Сангвина Пирующего"
+ trait_p_sg_feast_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_sg_feast_desc' )]"
+ trait_p_sg_feast_desc: "Последователь Сангвина Пирующего"
+ trait_p_sg_feast_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.Char.IsFemale, 'последовательница', 'последователь')] Сангвина Пирующего."
+
+ trait_p_sg_wild: "[Select_CString(ROOT.Char.IsFemale, 'Последовательница', 'Последователь')] Сангвина Дикого"
+ trait_p_sg_wild_base: "Последователь Сангвина Дикого"
+ trait_p_sg_wild_null: "[SelectLocalization( GetVariableSystem.HasValue( 'faith_view_tabs', 'patrons' ), '', 'trait_p_sg_wild_desc' )]"
+ trait_p_sg_wild_desc: "Последователь Сангвина Дикого"
+ trait_p_sg_wild_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] — [Select_CString(ROOT.Char.IsFemale, 'последовательница', 'последователь')] Сангвина Дикого."
 
 #Misc
  trait_birthsign:0 "Знак рождения"
