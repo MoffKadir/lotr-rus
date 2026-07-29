@@ -90,6 +90,7 @@ window = {
 					layoutpolicy_horizontal = expanding
 
 					button_tab = {
+						shortcut = "tab_1"
 						name = "contest_info_contents_tabs_overview"
 						layoutpolicy_horizontal = expanding
 
@@ -100,6 +101,7 @@ window = {
 					}
 
 					button_tab = {
+						shortcut = "tab_2"
 						name = "contest_info_contents_tabs_participants"
 						layoutpolicy_horizontal = expanding
 						visible = "[And( Or( Activity.IsPhaseInTheFuture(PlannedActivityPhase.Self), Activity.IsPhaseOngoing(PlannedActivityPhase.Self) ), Not( Activity.IsComplete ) )]"
@@ -111,6 +113,7 @@ window = {
 					}
 
 					button_tab = {
+						shortcut = "tab_3"
 						name = "contest_info_contents_tabs_log"
 						layoutpolicy_horizontal = expanding
 						visible = "[Or( Activity.IsPhaseInThePast(PlannedActivityPhase.Self), Activity.IsComplete )]"
@@ -123,6 +126,7 @@ window = {
 					}
 
 					button_tab = {
+						shortcut = "tab_4"
 						name = "contest_info_contents_tabs_debugging"
 						layoutpolicy_horizontal = expanding
 						visible = "[AIWatchWindowsEnabled]"

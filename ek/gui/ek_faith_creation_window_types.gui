@@ -18,7 +18,7 @@ types EKFaithCreationWindow
 
 		fixedgridbox = {
 			name = "doctrines_grid_pantheon"
-			datamodel = "[FaithCreationWindow.GetGroupingHelper( 'pantheon' ).GetGrouping]"
+			datamodel = "[FaithCreationWindow.GetCategoryHelper( 'pantheon' ).GetCategory]"
 			datacontext = "[GetScriptedGui('show_second_pantheon_doctrines')]"
 			flipdirection = yes
 			addcolumn = 270
@@ -27,7 +27,7 @@ types EKFaithCreationWindow
 
 			item = {
 				widget_doctrine_selection_item = {
-					#visible = "[And( Not( And( Not( FaithCreationWindow.HasParameter( 'uses_monolatry_aspect_active' )), EqualTo_string(FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith ), Localize('doctrine_pantheon_no_aspect_name')) )), Not( And( FaithCreationWindow.HasParameter( 'no_secondary_pantheon_active' ), EqualTo_string(FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith ), Localize('doctrine_sp_no_deity_name')) )))]"
+					#visible = "[And( Not( And( Not( FaithCreationWindow.HasParameter( 'uses_monolatry_aspect_active' )), EqualTo_string(FaithDoctrine.GetNameNoTooltip( DoctrineItem.GetFaith ), Localize('doctrine_pantheon_no_aspect_name')) )), Not( And( FaithCreationWindow.HasParameter( 'no_secondary_pantheon_active' ), EqualTo_string(FaithDoctrine.GetNameNoTooltip( DoctrineItem.GetFaith ), Localize('doctrine_sp_no_deity_name')) )))]"
 					blockoverride "doctrine_icon_texture"
 					{
 						texture = "[FaithDoctrine.GetIcon]"
@@ -38,7 +38,7 @@ types EKFaithCreationWindow
 
 		fixedgridbox = {
 			name = "doctrines_grid_secondary_pantheon"
-			datamodel = "[FaithCreationWindow.GetGroupingHelper( 'secondary_pantheon' ).GetGrouping]"
+			datamodel = "[FaithCreationWindow.GetCategoryHelper( 'secondary_pantheon' ).GetCategory]"
 			datacontext = "[GetScriptedGui('show_second_pantheon_doctrines')]"
 
 			flipdirection = yes
@@ -48,7 +48,7 @@ types EKFaithCreationWindow
 
 			item = {
 				widget_doctrine_selection_item = {
-					visible = "[And( Not( And( Not( FaithCreationWindow.HasParameter( 'uses_monolatry_aspect_active' )), EqualTo_string(FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith ), Localize('doctrine_pantheon_no_aspect_name')) )), Not( And( FaithCreationWindow.HasParameter( 'no_secondary_pantheon_active' ), EqualTo_string(FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith ), Localize('doctrine_sp_no_deity_name')) )))]"
+					visible = "[And( Not( And( Not( FaithCreationWindow.HasParameter( 'uses_monolatry_aspect_active' )), EqualTo_string(FaithDoctrine.GetNameNoTooltip( DoctrineItem.GetFaith ), Localize('doctrine_pantheon_no_aspect_name')) )), Not( And( FaithCreationWindow.HasParameter( 'no_secondary_pantheon_active' ), EqualTo_string(FaithDoctrine.GetNameNoTooltip( DoctrineItem.GetFaith ), Localize('doctrine_sp_no_deity_name')) )))]"
 					blockoverride "doctrine_icon_texture"
 					{
 						texture = "[FaithDoctrine.GetIcon]"
@@ -75,7 +75,7 @@ types EKFaithCreationWindow
 		fixedgridbox = {
 			name = "doctrines_grid_daedric_princes"
 			visible = "[Not(VariableSystem.Exists('show_hide_daedric_princes'))]"
-			datamodel = "[FaithCreationWindow.GetGroupingHelper( 'daedric_princes' ).GetGrouping]"
+			datamodel = "[FaithCreationWindow.GetCategoryHelper( 'daedric_princes' ).GetCategory]"
 
 			flipdirection = yes
 			addcolumn = 270
@@ -104,7 +104,7 @@ types EKFaithCreationWindow
 
 		fixedgridbox = {
 			name = "doctrines_grid_virtues_sins"
-			datamodel = "[FaithCreationWindow.GetGroupingHelper( 'virtues_sins' ).GetGrouping]"
+			datamodel = "[FaithCreationWindow.GetCategoryHelper( 'virtues_sins' ).GetCategory]"
 
 			flipdirection = yes
 			addcolumn = 270

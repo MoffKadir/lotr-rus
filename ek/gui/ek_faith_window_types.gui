@@ -393,7 +393,7 @@ types EKFaithWindow
 	}
 	
 	type ek_doctrine_gridbox = dynamicgridbox {
-		datamodel = "[FaithWindow.GetGroupingHelper( 'main_group' ).GetGrouping]"
+		datamodel = "[FaithWindow.GetCategoryHelper( 'main_group' ).GetCategory]"
 		flipdirection = yes
 		datamodel_wrap = 6
 
@@ -401,7 +401,7 @@ types EKFaithWindow
 			widget = {
 				size = { 100 100 }
 				name = "doctrine_list_item"
-				datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
+				datacontext = "[DoctrineItem.GetDoctrine]"
 				visible = "[FaithDoctrine.IsVisible]"
 				tooltip = "FAITH_WINDOW_DOCTRINE_TOOLTIP"
 				using = tooltip_se
@@ -418,7 +418,7 @@ types EKFaithWindow
 					margin_bottom = 15
 					name = "doctrine_name"
 					align = center
-					text = "[FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith )]"
+					text = "[FaithDoctrine.GetNameNoTooltip( DoctrineItem.GetFaith )]"
 					default_format = "#high"
 					multiline = yes
 					max_width = 119   ##### minimum in order to look good in german
@@ -444,18 +444,19 @@ types EKFaithWindow
 
 			hbox = {
 				name = "important_doctrines"
-				datamodel = "[FaithWindow.GetGroupingHelper( 'pantheon' ).GetGrouping]"
-				#spacing = 15
+				datamodel = "[FaithWindow.GetCategoryHelper( 'pantheon' ).GetCategory]"
+				spacing = 6
 				layoutpolicy_vertical = expanding
 				minimumsize = { 0 108 }
 
 				item = {
 					vbox = {
-						layoutpolicy_vertical = expanding
-						minimumsize = { 100 0 }
 						name = "doctrine_list_item"
-						datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
+						datacontext = "[DoctrineItem.GetDoctrine]"
 						visible = "[FaithDoctrine.IsVisible]"
+						minimumsize = { 80 0 }
+						layoutpolicy_vertical = expanding
+
 						tooltip = "FAITH_WINDOW_DOCTRINE_TOOLTIP"
 						using = tooltip_se
 
@@ -468,7 +469,7 @@ types EKFaithWindow
 						text_single = {
 							name = "doctrine_name"
 							align = center
-							text = "[FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith )]"
+							text = "[FaithDoctrine.GetNameNoTooltip( DoctrineItem.GetFaith )]"
 							default_format = "#high"
 							multiline = yes
 							max_width = 101   ##### minimum in order to look good in german
@@ -478,7 +479,7 @@ types EKFaithWindow
 					}
 				}
 			}
-		}	
+		}
 	}
 	
 	type ek_virtues_sins = vbox {
@@ -493,7 +494,7 @@ types EKFaithWindow
 		}
 
 		fixedgridbox = {
-			datamodel = "[FaithWindow.GetGroupingHelper( 'virtues_sins' ).GetGrouping]"
+			datamodel = "[FaithWindow.GetCategoryHelper( 'virtues_sins' ).GetCategory]"
 			flipdirection = yes
 			addcolumn = 230
 			addrow = 65
@@ -517,7 +518,7 @@ types EKFaithWindow
 		}
 
 		fixedgridbox = {
-			datamodel = "[FaithWindow.GetGroupingHelper( 'daedric_princes' ).GetGrouping]"
+			datamodel = "[FaithWindow.GetCategoryHelper( 'daedric_princes' ).GetCategory]"
 			flipdirection = yes
 			addcolumn = 225
 			addrow = 67
@@ -540,17 +541,17 @@ types EKFaithWindow
 			text = "FAITH_DOCTRINES_SECONDARY_PANTHEON"
 			default_format = "#low"
 
-			visible = "[DataModelHasItems(FaithWindow.GetGroupingHelper( 'secondary_pantheon' ).GetGrouping)]"
+			visible = "[DataModelHasItems(FaithWindow.GetCategoryHelper( 'secondary_pantheon' ).GetCategory)]"
 		}
 
 		hbox = {
 			layoutpolicy_horizontal = expanding
 
-			visible = "[DataModelHasItems(FaithWindow.GetGroupingHelper( 'secondary_pantheon' ).GetGrouping)]"
+			visible = "[DataModelHasItems(FaithWindow.GetCategoryHelper( 'secondary_pantheon' ).GetCategory)]"
 
 			hbox = {
 				name = "important_doctrines"
-				datamodel = "[FaithWindow.GetGroupingHelper( 'secondary_pantheon' ).GetGrouping]"
+				datamodel = "[FaithWindow.GetCategoryHelper( 'secondary_pantheon' ).GetCategory]"
 				#spacing = 15
 				layoutpolicy_vertical = expanding
 				minimumsize = { 0 108 }
@@ -560,7 +561,7 @@ types EKFaithWindow
 						layoutpolicy_vertical = expanding
 						minimumsize = { 100 0 }
 						name = "doctrine_list_item"
-						datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
+						datacontext = "[DoctrineItem.GetDoctrine]"
 						visible = "[FaithDoctrine.IsVisible]"
 						tooltip = "FAITH_WINDOW_DOCTRINE_TOOLTIP"
 						using = tooltip_se
@@ -575,7 +576,7 @@ types EKFaithWindow
 							name = "doctrine_name"
 							align = center
 							#raw_text = "Bingo Bongo Tongo gyngo"
-							text = "[FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith )]"
+							text = "[FaithDoctrine.GetNameNoTooltip( DoctrineItem.GetFaith )]"
 							default_format = "#high"
 							multiline = yes
 							max_width = 101   ##### minimum in order to look good in german
@@ -589,7 +590,7 @@ types EKFaithWindow
 	}
 
 	type ek_tolerance_doctrines = vbox {
-		visible = "[DataModelHasItems(FaithWindow.GetGroupingHelper( 'ek_special' ).GetGrouping)]"
+		visible = "[DataModelHasItems(FaithWindow.GetCategoryHelper( 'ek_special' ).GetCategory)]"
 		layoutpolicy_horizontal = expanding
 		spacing = 7
 
@@ -600,7 +601,7 @@ types EKFaithWindow
 		}
 
 		hbox = {
-			datamodel = "[FaithWindow.GetGroupingHelper( 'ek_special' ).GetGrouping]"
+			datamodel = "[FaithWindow.GetCategoryHelper( 'ek_special' ).GetCategory]"
 			layoutpolicy_horizontal = expanding
 			minimumsize = { 0 108 }
 
@@ -608,13 +609,13 @@ types EKFaithWindow
 
 			item = {
 				vbox = {
-					datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
-					datacontext = "[GuiFaithDoctrineItem.GetFaith]"
+					datacontext = "[DoctrineItem.GetDoctrine]"
+					datacontext = "[DoctrineItem.GetFaith]"
 					layoutpolicy_vertical = expanding
 					#EK EDIT: changed size slightly to fit all doctrines comfortably // Might not work completely fine with the german translation
 					minimumsize = { 80 0 }
 					name = "doctrine_list_item"
-					datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
+					datacontext = "[DoctrineItem.GetDoctrine]"
 					visible = "[FaithDoctrine.IsVisible]"
 					tooltip = "FAITH_WINDOW_DOCTRINE_TOOLTIP"
 					using = tooltip_se
@@ -629,7 +630,7 @@ types EKFaithWindow
 						name = "doctrine_name"
 						align = center
 						#raw_text = "Bingo Bongo Tongo gyngo"
-						text = "[FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith )]"
+						text = "[FaithDoctrine.GetNameNoTooltip( DoctrineItem.GetFaith )]"
 						default_format = "#high"
 						multiline = yes
 						max_width = 101   ##### minimum in order to look good in german
